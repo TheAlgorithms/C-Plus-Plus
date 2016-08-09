@@ -5,7 +5,7 @@ int queue[10];
 int front=0;
 int rear=0;
 
-void push(int x)
+void Enque(int x)
 {
 	if(rear==10)
 	{
@@ -17,7 +17,7 @@ void push(int x)
 	}
 }
 
-void pop()
+void Deque()
 {
 	if (front==rear)
 	{
@@ -51,8 +51,8 @@ int main()
 	int ch, x;
 	do
 	{
-		cout<<"\n1. Push";
-		cout<<"\n2. Pop";
+		cout<<"\n1. Enque";
+		cout<<"\n2. Deque";
 		cout<<"\n3. Print";
 		cout<<"\nEnter Your Choice : ";
 		cin>>ch;
@@ -60,11 +60,11 @@ int main()
 		{
 			cout<<"\nInsert : ";
 			cin>>x;
-			push(x);
+			Enque(x);
 		}
 		else if (ch==2)
 		{
-			pop();
+			Deque();
 		}
 		else if (ch==3)
 		{

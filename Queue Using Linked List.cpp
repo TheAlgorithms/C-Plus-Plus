@@ -11,7 +11,7 @@ struct node
 node *front, *rear;
 
 
-void push(int x)
+void Enque(int x)
 {
 	if (rear==NULL)
 	{
@@ -33,7 +33,7 @@ void push(int x)
 	}
 }
 
-void pop()
+void Deque()
 {
 	if (rear==front)
 	{
@@ -63,8 +63,8 @@ int main()
 	int ch, x;
 	do
 	{
-		cout<<"\n1. Push";
-		cout<<"\n2. Pop";
+		cout<<"\n1. Enque";
+		cout<<"\n2. Deque";
 		cout<<"\n3. Print";
 		cout<<"\nEnter Your Choice : ";
 		cin>>ch;
@@ -72,11 +72,11 @@ int main()
 		{
 			cout<<"\nInsert : ";
 			cin>>x;
-			push(x);
+			Enque(x);
 		}
 		else if (ch==2)
 		{
-			pop();
+			Deque();
 		}
 		else if (ch==3)
 		{
