@@ -4,7 +4,6 @@ using namespace std;
 struct node
 {
 	int val;
-	node *prev;
 	node *next;
 };
 
@@ -13,37 +12,37 @@ node *start;
 void insert(int x)
 {
 	node *t=start;
+	
 	if (start!=NULL)
 	{
-			while(t->next!=NULL)
+		while(t->next!=start)
 		{
 			t=t->next;
 		}
 		node *n= new node;
 		t->next=n;
-		n->prev=t;
 		n->val=x;
-		n->next=NULL;
+		n->next=start;
 	}
 	else
 	{
 		node *n= new node;
 		n->val=x;
-		n->prev=NULL;
-		n->next=NULL;
 		start=n;
+		n->next=start;
 	}
 }
 
 void remove(int x)
 {
 	node *t=start;
+	node *p;
 	while(t->val!=x)
 	{
+		p=t;
 		t=t->next;
 	}
-	t->prev->next=t->next;
-	t->next->prev=t->prev;
+	p->next=t->next;
 	delete t;
 }
 
@@ -51,7 +50,7 @@ void search(int x)
 {
 	node *t= start;
 	int found =0;
-	while(t!=NULL)
+	while(t->next!=start)
 	{
 		if(t->val==x)
 		{
@@ -70,26 +69,13 @@ void search(int x)
 void show()
 {
 	node *t=start;
-	while(t!=NULL)
+	do
 	{
 		cout<<t->val<<"\t";
 		t=t->next;
 	}
+	while(t!=start);
 
-}
-
-void reverseShow()
-{
-	node *t=start;
-	while(t->next!=NULL)
-	{
-		t=t->next;
-	}
-	while(t!=NULL)
-	{
-		cout<<t->val<<"\t";
-		t=t->prev;
-	}
 }
 
 int main()
@@ -100,14 +86,13 @@ int main()
 		cout<<"\n1. Insert";
 		cout<<"\n2. Delete";
 		cout<<"\n3. Search";
-		cout<<"\n4. Forward print";
-		cout<<"\n5. Reverse print";
+		cout<<"\n4. Print";
 		cout<<"\n\nEnter you choice : ";
 		cin>>choice; 
 		switch (choice)
 		{
 			case 1 : 	cout<<"\nEnter the element to be inserted : ";
-					 	cin>>x;;
+					 	cin>>x;
 					 	insert(x);	break;
 			case 2 : 	cout<<"\nEnter the element to be removed : ";
 						cin>>x;
@@ -115,8 +100,7 @@ int main()
 			case 3 : 	cout<<"\nEnter the element to be searched : ";
 						cin>>x;
 						search(x); 	break;
-			case 4 : 	show();		break;
-			case 5 : 	reverseShow();	break;
+			case 4 : show();	break;
 		}
 	}
 	while(choice!=0);

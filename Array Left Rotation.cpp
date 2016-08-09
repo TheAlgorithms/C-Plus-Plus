@@ -6,7 +6,8 @@ int main(){
 	cin>>n;
 	cout<<"Enter Number of indeces u want to rotate the array to left=\t";
 	cin>>k;
-	int a[n];cout<<"Enter  elements of array=\t";
+	int a[n];
+	cout<<"Enter  elements of array=\t";
 	for(int i=0;i<n;i++){
 		cin>>a[i];
 	}
