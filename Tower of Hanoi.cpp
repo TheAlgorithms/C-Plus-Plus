@@ -65,7 +65,7 @@ int main()
 
 	int no;
 
-	cout << "Enter number of discs : " ;
+	cout << "\nEnter number of discs : " ;
 	cin >> no;
 	
 	for (int i = no; i >0; i--)
@@ -74,10 +74,7 @@ int main()
 	};
 
 	
-	for (int i = (F.top)-1; i >=0; i--)
-	{
-		cout<<F.values[i]<<"\n";
-	}
+
 	
 	
 	show();
@@ -85,10 +82,7 @@ int main()
 	
 
 	
-	for (int i = (T.top)-1; i >=0; i--)
-	{
-		cout<<"\n"<<T.values[i];
-	}
+
 	
 	return 0;
 }

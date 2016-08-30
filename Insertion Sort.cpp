@@ -1,21 +1,22 @@
-//Bubble Sort
+//Insertion Sort
 
 #include<iostream>
 using namespace std;
 
 int main()
 {
-	int Array[6];
+	int n;
+	int Array[n];
 	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
 	
 	//Input
-	for(int i=0; i<6; i++)
+	for(int i=0; i<n; i++)
 	{
 		cin>>Array[i];
 	}
 	
 	//Sorting
-	for(int i=1; i<6; i++)
+	for(int i=1; i<n; i++)
 	{
 		int temp=Array[i];
 		int j=i-1;
@@ -29,7 +30,7 @@ int main()
 	
 	//Output
 	cout<<"\nSorted Array : ";
-	for(int i=0; i<6; i++)
+	for(int i=0; i<n; i++)
 	{
 		cout<<Array[i]<<"\t";
 	}
