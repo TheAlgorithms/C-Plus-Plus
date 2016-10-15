@@ -19,7 +19,7 @@ char pop()
 
 bool check(char x, char y)
 {
-	if (	(	x=='(' && y==')' )		||		(	x=='{' && y=='}'	)		|| 		(	x=='[' && y==']'	)		||		(	x=='<' && y=='>' )	)
+	if ((x=='(' && y==')') || (x=='{' && y=='}') || (x=='[' && y==']') || (x=='<' && y=='>'))
 	{
 		return true;
 	}
@@ -38,12 +38,11 @@ int main()
 	gets(exp);
 	for (int i = 0; i < strlen(exp); i++)
 	{
-			if (exp[i]=='(' || exp[i]=='{'	||	exp[i]=='['	||	exp[i]=='<')
+			if (exp[i]=='(' || exp[i]=='{' || exp[i]=='[' || exp[i]=='<')
 			{
 				push(exp[i]);
-				//show();
 			}
-			else if (exp[i]==')' || exp[i]=='}'	||	exp[i]==']'	||	exp[i]=='>')
+			else if (exp[i]==')' || exp[i]=='}' || exp[i]==']' || exp[i]=='>')
 			{
 				if(!check(pop(), exp[i]))
 				{
