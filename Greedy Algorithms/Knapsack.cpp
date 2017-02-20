@@ -10,7 +10,8 @@ struct Item
 
 float profitPerUnit(Item x)
 {
-	return (float)(x.profit/x.weight);
+//	cout<<(float)x.profit/(float)x.weight<<"\n";
+	return (float)x.profit/(float)x.weight;
 }
 
 int partition (Item arr[], int low, int high)
@@ -37,7 +38,7 @@ int partition (Item arr[], int low, int high)
 }
  
 
-void quickSort(int arr[], int low, int high)
+void quickSort(Item arr[], int low, int high)
 {
     if (low < high)
     {
@@ -51,29 +52,39 @@ void quickSort(int arr[], int low, int high)
  
 
 
+
+// void show(Item arr[], int size)
+// {
+//     for (int i=0; i < size; i++)
+//     cout<<arr[i].weight<<"\t"<<arr[i].profit<<"\n";
+// }
+
+
 int main()
 {
 	cout<<"\nEnter the capacity of the knapsack : ";
-	int capacity;
-	cin<<capacity;
+	float capacity;
+	cin>>capacity;
 	cout<<"\n Enter the number of Items : ";
 	int n;
-	cin<<n;
-	Items itemArray[n];
+	cin>>n;
+	Item itemArray[n];
 	for (int i = 0; i < n; i++)
 	{
-		cout<<"\nEnter the weight and profit of item "<<i<<" : ";
-		cin>itemArray[i].weight;
+		cout<<"\nEnter the weight and profit of item "<<i+1<<" : ";
+		cin>>itemArray[i].weight;
 		cin>>itemArray[i].profit;
 	}
 
-	quickSort(itemArray, 0, n);
+	quickSort(itemArray, 0, n-1);
+
+	// show(itemArray, n);
 
 	float maxProfit=0;
-	int i=0;
-	while(capacity>0 && i<n)
+	int i=n;
+	while(capacity>0 && --i>=0)
 	{
-		if(capacity>itemArray[i].weight)
+		if(capacity>=itemArray[i].weight)
 		{
 			maxProfit+=itemArray[i].profit;
 			capacity-=itemArray[i].weight;
@@ -82,8 +93,8 @@ int main()
 		else
 		{
 			maxProfit+=profitPerUnit(itemArray[i])*capacity;
-			capacity=0;
 			cout<<"\n\t"<<capacity<<"\t"<<profitPerUnit(itemArray[i])*capacity;
+			capacity=0;
 			break;
 		}
 	}
