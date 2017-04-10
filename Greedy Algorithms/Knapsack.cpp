@@ -10,7 +10,6 @@ struct Item
 
 float profitPerUnit(Item x)
 {
-//	cout<<(float)x.profit/(float)x.weight<<"\n";
 	return (float)x.profit/(float)x.weight;
 }
 
@@ -51,13 +50,6 @@ void quickSort(Item arr[], int low, int high)
 }
  
 
-
-
-// void show(Item arr[], int size)
-// {
-//     for (int i=0; i < size; i++)
-//     cout<<arr[i].weight<<"\t"<<arr[i].profit<<"\n";
-// }
 
 
 int main()

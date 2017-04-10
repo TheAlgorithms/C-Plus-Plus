@@ -18,7 +18,7 @@ int lcs(string a, string b){
 	}
 	return res[m][n];
 }
-int main(int argc, char const *argv[])
+int main()
 {
 	string a,b;
 	cin>>a>>b;
