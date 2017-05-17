@@ -36,6 +36,10 @@ void show()
 	}
 }
 
+void topmost()
+{
+    cout << "\nTopmost element: "<<stack[top-1];
+}
 int main()
 {
 	int ch, x;
@@ -44,7 +48,8 @@ int main()
 		cout<<"\n1. Push";
 		cout<<"\n2. Pop";
 		cout<<"\n3. Print";
-		cout<<"\nEnter Your Choice : ";
+        cout<<"\n4. Print topmost element:";
+        cout<<"\nEnter Your Choice : ";
 		cin>>ch;
 		if (ch==1)
 		{
@@ -60,6 +65,10 @@ int main()
 		{
 			show();
 		}
+        else if(ch==4)
+        {
+            topmost();
+        }
 	}
 	while(ch!=0);
 
