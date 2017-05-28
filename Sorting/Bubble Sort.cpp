@@ -5,19 +5,21 @@ using namespace std;
 
 int main()
 {
-	int Array[6];
+	int n;
+	cin >> n;
+	int Array[n];
 	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
-	
+
 	//Input
-	for(int i=0; i<6; i++)
+	for(int i=0; i<n; i++)
 	{
 		cin>>Array[i];
 	}
-	
+
 	//Bubble Sorting
-	for(int i=0; i<6; i++)
+	for(int i=0; i<n; i++)
 	{
-		for(int j=0; j<5; j++)
+		for(int j=0; j<n-1; j++)
 		{
 			if(Array[j]>Array[j+1])
 			{
@@ -27,10 +29,10 @@ int main()
 			}
 		}
 	}
-	
+
 	//Output
 	cout<<"\nSorted Array : ";
-	for(int i=0; i<6; i++)
+	for(int i=0; i<n; i++)
 	{
 		cout<<Array[i]<<"\t";
 	}
