@@ -2,6 +2,7 @@
 using namepsace std;
 int main()
 {
+  cout <<"Enter value of n:"<<endl;
   cin >> n;
   int a[n];
   int i,j,gcd;
