@@ -66,6 +66,5 @@ int main()
 {		string s;
 		cin>>s;
 		converttopostfix(s);
-	}
 	return 0;
 }
