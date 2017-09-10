@@ -95,4 +95,6 @@ int main()
 		power_rec(n-1);
 		cout <<"Ans :"<<ans[0][1]<<endl;
 	}
+	return 0;
 }
+
