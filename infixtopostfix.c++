@@ -3,7 +3,7 @@
 #include <stack>
 using namespace std;
 
-int precedence(char c)
+int precedence(char c) //to check the priority of characters
 {
 	if(c=='^')
 	return 3;
@@ -18,7 +18,7 @@ int precedence(char c)
 void converttopostfix(string s)
 {
 	stack<char> st;
-	st.push('N');
+	st.push('N'); // an arbitrary character pushed to stack
 	int l=s.length();
 	string ns;
 	for(int i=0;i<l;i++)
@@ -27,7 +27,7 @@ void converttopostfix(string s)
 		ns=ns+s[i];
 		else if(s[i] == '(')
 		st.push('(');
-		else if(s[i] == ')')
+		else if(s[i] == ')') //pop until we get left parenthesis
 		{
 			while(st.top() != 'N' && st.top() != '(')
 			{
@@ -52,7 +52,7 @@ void converttopostfix(string s)
 			st.push(s[i]);
 		}
 	}
-	while(st.top() != 'N')
+	while(st.top() != 'N') //keep popping until stack top is N
 	{
 		char c=st.top();
 		st.pop();
@@ -63,8 +63,9 @@ void converttopostfix(string s)
 }
 
 int main()
-{		string s;
-		cin>>s;
-		converttopostfix(s);
+{		
+	string s;
+        cin>>s;
+        converttopostfix(s);
 	return 0;
 }
