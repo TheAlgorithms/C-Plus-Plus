@@ -7,14 +7,14 @@ int main()
   int n,k,s=0,d;
   cout << "Enter a number:";
   cin >> n;
-  s=n;k=n;
+  s=0;k=n;
   while(k>9)
   {
     while(k!=0)
     {
-      d=n%10;
+      d=k%10;
       s+=d;
-      n/=10;
+      k/=10;
     }
     k=s;
     s=0;
