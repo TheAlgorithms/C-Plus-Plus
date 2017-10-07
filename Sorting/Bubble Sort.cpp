@@ -7,13 +7,15 @@ int main()
 {
 	int n;
 	cin >> n;
-	int Array[n];
-	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
+    
+    int *arrayPtr = new int[n];
+    
+	cout << "\nEnter any " << n << " Numbers for Unsorted Array: \n";
 
 	//Input
 	for(int i=0; i<n; i++)
 	{
-		cin>>Array[i];
+		cin >> arrayPtr[i];
 	}
 
 	//Bubble Sorting
@@ -21,11 +23,11 @@ int main()
 	{
 		for(int j=0; j<n-1; j++)
 		{
-			if(Array[j]>Array[j+1])
+			if (arrayPtr[j] > arrayPtr[j+1])
 			{
-				int temp=Array[j];
-				Array[j]=Array[j+1];
-				Array[j+1]=temp;
+				int temp = arrayPtr[j];
+				arrayPtr[j] = arrayPtr[j + 1];
+				arrayPtr[j + 1] = temp;
 			}
 		}
 	}
@@ -34,6 +36,6 @@ int main()
 	cout<<"\nSorted Array : ";
 	for(int i=0; i<n; i++)
 	{
-		cout<<Array[i]<<"\t";
+		cout << arrayPtr[i] << " ";
 	}
 }
