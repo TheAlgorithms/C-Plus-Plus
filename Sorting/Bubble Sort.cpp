@@ -6,6 +6,8 @@ using namespace std;
 int main()
 {
 	int n;
+    
+    cout << "Enter an array size: ";
 	cin >> n;
     
     int *arrayPtr = new int[n];
@@ -13,15 +15,16 @@ int main()
 	cout << "\nEnter any " << n << " Numbers for Unsorted Array: \n";
 
 	//Input
-	for(int i=0; i<n; i++)
+	for (int i = 0; i < n; i ++)
 	{
+        cout << i + 1 << ") ";
 		cin >> arrayPtr[i];
 	}
 
 	//Bubble Sorting
-	for(int i=0; i<n; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for(int j=0; j<n-1; j++)
+		for (int j = 0; j < n - 1; j++)
 		{
 			if (arrayPtr[j] > arrayPtr[j+1])
 			{
@@ -33,8 +36,9 @@ int main()
 	}
 
 	//Output
-	cout<<"\nSorted Array : ";
-	for(int i=0; i<n; i++)
+	cout << "\nSorted Array: ";
+    
+	for (int i = 0; i < n; i++)
 	{
 		cout << arrayPtr[i] << " ";
 	}
