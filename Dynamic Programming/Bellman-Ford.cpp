@@ -39,8 +39,12 @@ class Graph{
 //Utility function to print distances
 void print(int dist[], int V){
 	cout<<"\nVertex  Distance"<<endl;
-	for(int i = 0; i < V; i++)
-		cout<<i<<"\t"<<dist[i]<<endl;
+	for(int i = 0; i < V; i++){
+		if( dist[i] != INT_MAX)
+			cout<<i<<"\t"<<dist[i]<<endl;
+		else
+			cout<<i<<"\tINF"<<endl;
+	}
 }
 
 //The main function that finds the shortest path from given source
