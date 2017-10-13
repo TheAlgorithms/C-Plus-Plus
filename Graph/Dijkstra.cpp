@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define INF 10000010
 vector < pair <int,int> > graph[5*100001];
 int m,n,l,x,y;
 int dis[5*100001];
@@ -27,6 +28,16 @@ int main() {
         graph[x].push_back(make_pair(l,y));
         graph[y].push_back(make_pair(l,x));
     }
-    dij(graph,1,dis);
-   
+    
+    scanf("%d",&s);
+    for(int i = 0;i < n;i++)
+        dis[i] = INF;
+    dij(graph,s,dis);
+    
+    for(int i = 0;i < n;i++)
+        if(dis[i] == INF)
+            cout<<"-1 ";
+        else
+            cout<<dis[i]<<" ";
+    return 0;
 }
