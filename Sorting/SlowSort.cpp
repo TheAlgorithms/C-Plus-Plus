@@ -1,6 +1,8 @@
 //Returns the sorted vector after performing SlowSort//
 //This algorithm works on multiply and surrender principle
 
+#include <bits/stdc++.h>
+using namespace std;
 
 
 void SlowSort(int a[], int i, int j)
