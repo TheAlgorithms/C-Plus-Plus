@@ -15,8 +15,8 @@ using namespace std;
 	.
 	.
 */
-int a[2][2] = {{1,1},{1,0}};//fibonacci matrix
-int ans[2][2] = {{1,1},{1,0}};//final ans matrix
+long long a[2][2] = {{1,1},{1,0}};//fibonacci matrix
+long long ans[2][2] = {{1,1},{1,0}};//final ans matrix
 /*
 	Working Principal:
 
@@ -29,7 +29,7 @@ int ans[2][2] = {{1,1},{1,0}};//final ans matrix
 
 */
 
-void product(int b[][2],int k[][2])
+void product(long long b[][2],long long k[][2])
 {
 	/*
 		Function for computing product of the two matrices b and k
@@ -38,7 +38,7 @@ void product(int b[][2],int k[][2])
 		Implementation :
 		Simple matrix multiplication of two (2X2) matrices.
 	*/
-	int c[2][2];//temporary stores the answer
+	long long c[2][2];//temporary stores the answer
 	c[0][0] = b[0][0]*k[0][0]+b[0][1]*k[1][0];
 	c[0][1] = b[0][0]*k[0][1]+b[0][1]*k[1][1];
 	c[1][0] = b[1][0]*k[0][0]+b[1][1]*k[1][0];
@@ -50,7 +50,7 @@ void product(int b[][2],int k[][2])
 	
 } 
 
-void power_rec(int n)
+void power_rec(long long n)
 {	
 
 	/*
@@ -84,7 +84,7 @@ int main()
 {
 	//Main Function
 	cout <<"Enter the value of n\n";
-	int n;
+	long long n;
 	cin >>n;
 	if(n == 1)
 	{
