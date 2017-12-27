@@ -8,9 +8,9 @@
 
 using namespace std;
 
-std::string add(std::string a, std::string b) 
+string add(string a, string b) 
 { 
-    std::string temp = "";
+    string temp = "";
     while ((int)a.length() < (int)b.length()) 
     {
         a = "0" + a;
@@ -46,10 +46,9 @@ std::string add(std::string a, std::string b)
 
 void fib_Accurate(long long n) 
 {
-    std::string tmp = "";
-    std::string fibMinus1 = "1";
-    std::string fibMinus2 = "0";
-    std::string comma = ", ";
+    string tmp = "";
+    string fibMinus1 = "1";
+    string fibMinus2 = "0";
         for (long long i = 0; i < n; i++) 
         {
             tmp = add(fibMinus1, fibMinus2);
@@ -57,7 +56,7 @@ void fib_Accurate(long long n)
             fibMinus2 = fibMinus1;
             fibMinus1 = tmp;
     	}
-    std::cout <<  fibMinus2;
+    cout <<  fibMinus2;
 }
 
 
