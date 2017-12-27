@@ -6,33 +6,40 @@ using namespace std;
 int main()
 {
 	int n;
-	int Array[n];
-	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
+    
+    cout << "Enter an array size: ";
+    cin >> n;
+    
+	int *arrayPtr = new int[n];
+	cout << "\nEnter any " << n << " Numbers for Unsorted Array: \n";
 	
 	//Input
-	for(int i=0; i<n; i++)
+	for (int i = 0; i < n; i++)
 	{
-		cin>>Array[i];
+        cout << i + 1 << ") ";
+		cin >> arrayPtr[i];
 	}
 	
 	//Sorting
-	for(int i=1; i<n; i++)
+	for (int i = 1; i < n; i++)
 	{
-		int temp=Array[i];
-		int j=i-1;
-		while(j>=0 && temp<Array[j])
+		int temp = arrayPtr[i];
+		int j = i-1;
+        
+        for (; j >= 0 && temp < arrayPtr[j]; j--)
 		{
-			Array[j+1]=Array[j];
-			j--;
+			arrayPtr[j + 1] = arrayPtr[j];
 		}
-		Array[j+1]=temp;
+        
+		arrayPtr[j + 1] = temp;
 	}
 	
 	//Output
-	cout<<"\nSorted Array : ";
-	for(int i=0; i<n; i++)
+	cout << "\nSorted Array: ";
+    
+	for (int i = 0; i < n; i++)
 	{
-		cout<<Array[i]<<"\t";
+		cout << arrayPtr[i] << " ";
 	}
 }
 
