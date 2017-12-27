@@ -1,4 +1,4 @@
-## C++ 
+# C++ 
 
 This repository contains some useful algorithms and data structures. 
 
