@@ -3,7 +3,7 @@
 //Best case: O(n)
 //Worst case: O(n ^ 2)
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
@@ -41,7 +41,6 @@ void CombSort(int a[], int l, int r) {
 }
 
 int main() {
-    ios_base::sync_with_stdio(false); cin.tie(NULL);
     cin >> n;
     for(int i = 1; i <= n; ++i) cin >> a[i];
 
