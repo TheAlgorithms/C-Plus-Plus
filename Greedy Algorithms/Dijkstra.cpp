@@ -45,7 +45,7 @@ public:
 //Utility function to find minimum distance vertex in mdist
 int minDistance(int mdist[], bool vset[], int V)
 {
-    int minVal = mdist[0], minInd = 0;
+    int minVal = INT_MAX, minInd = 0;
     for(int i=0; i<V; i++)
     {
         if(!vset[i] && (mdist[i] < minVal))
