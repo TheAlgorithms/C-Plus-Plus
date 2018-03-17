@@ -1,4 +1,4 @@
-//This Programme Converts a given decimal number in the range [0,4000)  
+//This Programme Converts a given decimal number in the range [0,4000)
 //to both Lower case and Upper case Roman Numeral
 
 #include <cmath>
@@ -10,13 +10,13 @@ using namespace std;
 //This functions fills a string with character c, n times and returns it
 string fill( char c, int n )
 {
-    string s;
+    string s = "";
     while( n-- ) s += c;
     return s;
 }
 
 //to convert to lowercase Roman Numeral
-
+// the function works recursively
 string tolowerRoman( int n )
 {
     if( n < 4 ) return fill( 'i', n );
@@ -36,7 +36,7 @@ string tolowerRoman( int n )
 }
 
 //to convert to uppercase Roman Numeral
-
+// the function works recursively
 string toupperRoman( int n )
 {
     if( n < 4 ) return fill( 'I', n );
@@ -61,6 +61,8 @@ int main()
 {
 
 int n;
+cout << "\t\tRoman numbers converter\n\n";
+cout << "Type in decimal number between 0 up to 4000 (exclusive): ";
 cin >> n;
 cout << n << " in Upper Roman Numerals is " << toupperRoman(n)  << "\n";
 cout << n << " in Lower Roman Numerals is " << tolowerRoman(n) << "\n";
