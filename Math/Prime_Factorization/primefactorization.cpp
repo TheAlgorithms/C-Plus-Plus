@@ -34,33 +34,34 @@ void SieveOfEratosthenes(int N)
 void prime_factorization(int num)
 {
 
-    vector<int>::iterator it;
+    int number = num;
 
-    // make sure num is not a prime number
-    it = find (prime_numbers.begin(), prime_numbers.end(), num);
-    if (it == prime_numbers.end())
+    for(int i=0; prime_numbers[i]<=num; i++)
     {
-        for(int i=0; prime_numbers[i]<=num; i++)
+        int count=0;
+
+        // termination condition
+        if (number == 1)
         {
-            int count=0;
-
-            while(num%prime_numbers[i] == 0)
-            {
-                count++;
-                num = num/prime_numbers[i];
-            }
-
-            if(count)
-                factors.push_back(make_pair(prime_numbers[i],count));
+            break;
         }
+
+        while(number%prime_numbers[i] == 0)
+        {
+            count++;
+            number = number/prime_numbers[i];
+        }
+
+        if(count)
+            factors.push_back(make_pair(prime_numbers[i],count));
     }
-    else
-    {
-        factors.push_back(make_pair(num,1));
-    }
+
 
 }
 
+/*
+    I added a simple UI.
+*/
 int main()
 {
     int num;
