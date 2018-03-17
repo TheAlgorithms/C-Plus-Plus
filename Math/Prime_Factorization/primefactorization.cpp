@@ -44,6 +44,8 @@ void prime_factorization(int num)
 {
 
     vector<int>::iterator it;
+
+    // make sure num is not a prime number
     it = find (prime_numbers.begin(), prime_numbers.end(), num);
     if (it == prime_numbers.end())
     {
@@ -66,9 +68,6 @@ void prime_factorization(int num)
         factors.push_back(make_pair(num,1));
     }
 
-
-//    if(num>2)
-//        factors.push_back(make_pair(num,1));
 }
 
 int main()
