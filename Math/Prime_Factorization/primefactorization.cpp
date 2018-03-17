@@ -30,15 +30,6 @@ void SieveOfEratosthenes(int N)
 
 }
 
-void printDebug()
-{
-    // Prime factors with their powers in the given number in new line
-    for(auto it: prime_numbers)
-    {
-        cout<< it << endl;
-    }
-}
-
 // Prime factorization of a number
 void prime_factorization(int num)
 {
