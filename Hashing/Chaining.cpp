@@ -1,43 +1,45 @@
+// 
 #include<iostream>
 #include<math.h>
 using namespace std;
-struct node{
+
+struct Node {
 	int data;
-	struct node *next;
+	struct Node *next;
 } *head[100],*curr;
 
-void init(){
+void init() {
 	for(int i=0;i<100;i++)
 		head[i]=NULL;
 }
 
-void add(int x,int h){
-	struct node *temp = new node;
+void add(int x,int h) {
+	struct Node *temp = new Node;
 	temp->data = x;
 	temp->next = NULL;
-	if(head[h]==NULL){
+	if(!head[h]) {
 		head[h] = temp;
-		curr=head[h];
+		curr = head[h];
 	}
-	else{
+	else {
 		curr=head[h];
-		while(curr->next!=NULL)
-			curr=curr->next;
+		while(curr->next)
+			curr = curr->next;
 		curr->next = temp;
 	}
 }
 
-void display(int mod){
-	struct node *temp;
+void display(int mod) {
+	struct Node *temp;
 	int i;
-	for(i=0;i<mod;i++){
-		if(head[i]==NULL){
-			cout<<"Key = "<<i<<" is empty"<<endl;
+	for(i=0;i<mod;i++) {
+		if(!head[i]) {
+			cout<<"Key "<<i<<" is empty"<<endl;
 		}
-		else{
-			cout<<"Key = "<<i<<" Value = ";
+		else {
+			cout<<"Key "<<i<<" has values = ";
 			temp = head[i];
-			while(temp->next!=NULL){
+			while(temp->next) {
 				cout<<temp->data<<" ";
 				temp=temp->next;
 			}
@@ -47,39 +49,35 @@ void display(int mod){
 	}
 }
 
-int hash(int x,int mod){
+int hash(int x,int mod) {
 	return x%mod;
 }
 
-void find(int x,int h){
-	struct node *temp =head[h];
-	if(head[h]==NULL){
+void find(int x,int h) {
+	struct Node *temp =head[h];
+	if(!head[h]) {
 		cout<<"Element not found";
 		return;
 	}
-	while(1){
-		if(temp->data==x)
-			break;
-		else if(temp->next==NULL)
-			break;
+	while(temp->data !=x && temp->next)
 		temp=temp->next;
-	}
-	if(temp->next!=NULL)
+	if(temp->next)
 		cout<<"Element found";
 	else{
-		if(temp->data==x)
+		if(temp->data == x)
 			cout<<"Element found";
 		else
-			cout<<"Element not found";
+			cout<< "Element not found";
 	}
 }	
 
-int main(void){
+int main(void) {
 	init();
-	int c,x,mod;
+	int c,x,mod,h;
 	cout<<"Enter the size of Hash Table. = ";
 	cin>>mod;
-	while(1){
+	bool loop = true;
+	while(loop) {
 		cout<<endl;
 		cout<<"PLEASE CHOOSE -"<<endl;
 		cout<<"1. Add element."<<endl;
@@ -88,38 +86,32 @@ int main(void){
 		cout<<"4. Display Hash table."<<endl;
 		cout<<"5. Exit."<<endl;
 		cin>>c;
-		switch(c){
-			case 1:{
+		switch(c) {
+			case 1:
 				cout<<"Enter element to add = ";
 				cin>>x;
-				int h = hash(x,mod);
-				if(h<0)
-					h=fabs(h);
+				h = hash(x,mod);
+				h = fabs(h);
 				add(x,h);
 				break;
-			}
-			case 2:{
+			case 2:
 				cout<<"Enter element to search = ";
 				cin>>x;
-				int h=hash(x,mod);
+				h = hash(x,mod);
 				find(x,h);
 				break;
-			}
-			case 3:{
+			case 3:
 				cout<<"Enter element to generate hash = ";
 				cin>>x;
 				cout<<"Hash of "<<x<<" is = "<<hash(x,mod);
 				break;
-			}
-			case 4:{
+			case 4:
 				display(mod);
-			}
-			default:{
 				break;
-			}
+			default:
+				loop = false;
+				break;
 		}
-		if(c>4)
-			break;
 		cout<<endl;
 	}
 	/*add(1,&head1);
