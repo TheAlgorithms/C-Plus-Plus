@@ -30,7 +30,7 @@ int editDist(string str1, string str2, int m, int n) {
     
         //If last characters are same then continue
         //for the rest of them.
-        if(str1[m-1] == str2[n-2])
+        if(str1[m-1] == str2[n-1])
             return editDist(str1, str2, m-1, n-1);
 
         //If last not same, then 3 possibilities
@@ -63,7 +63,7 @@ int editDistDP(string str1, string str2, int m, int n) {
 
             //If character same. Recur for remaining 
             else if(str1[i-1] == str2[j-1])
-                dp[i][j] == dp[i-1][j-1];
+                dp[i][j] = dp[i-1][j-1];
 
             else
                 dp[i][j] = 1 + min(dp[i][j-1],//Insert
@@ -80,8 +80,8 @@ int main() {
     string str1 = "sunday";
     string str2 = "saturday";
     
-    cout << editDist(str1, str1, str1.length(), str2.length()) << endl;
-    cout << editDistDP(str1, str1, str1.length(), str2.length()) << endl;
+    cout << editDist(str1, str2, str1.length(), str2.length()) << endl;
+    cout << editDistDP(str1, str2, str1.length(), str2.length()) << endl;
 
     return 0;
 }
