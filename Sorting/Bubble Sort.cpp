@@ -6,9 +6,10 @@ using namespace std;
 int main()
 {
 	int n;
+	short swap=0;
 	cin >> n;
 	int Array[n];
-	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
+	cout<<"\nEnter any "<<n<<" Numbers for Unsorted Array : ";
 
 	//Input
 	for(int i=0; i<n; i++)
@@ -19,14 +20,20 @@ int main()
 	//Bubble Sorting
 	for(int i=0; i<n; i++)
 	{
-		for(int j=0; j<n-1; j++)
+		swap=0;
+		for(int j=0; j<n-1-i; j++)
 		{
 			if(Array[j]>Array[j+1])
 			{
+				swap=1;
 				int temp=Array[j];
 				Array[j]=Array[j+1];
 				Array[j+1]=temp;
 			}
+		}
+		if(swap == 0)
+		{	
+			break;
 		}
 	}
 
