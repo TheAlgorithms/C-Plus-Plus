@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int LinearSearch(int *array, int size, int key)
+int LinearSearch(int array[], int size, int key)
 {
 	for (int i = 0; i < size; ++i)
 	{
@@ -18,6 +18,7 @@ int LinearSearch(int *array, int size, int key)
 int main()
 {
 	int size;
+	//Entering size
 	cout<<"\nEnter the size of the Array : ";
 	cin >> size;
 	
@@ -27,13 +28,12 @@ int main()
 	//Input array
 	cout<<"\nEnter the Array of " << size << " numbers : ";
 	for (int i = 0; i < size; i++)
-	{
-		cin>>array[i];
-	}
+	         cin>>array[i];
 	
 	cout<<"\nEnter the number to be searched : ";
 	cin>>key;
-
+         
+	//Searching...
 	int index=LinearSearch(array, size, key);
 	if (index!=-1)
 	{
