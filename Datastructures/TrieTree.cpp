@@ -2,13 +2,13 @@
 #include<string.h>
 #include<stdbool.h>
 using namespace std;
-
+// structure definition
 typedef struct trie
 {
     struct trie *arr[26];
     bool isEndofWord;
 } trie;
-
+// create a new node for trie 
 trie *createNode()
 {
     trie *nn = new trie();
@@ -18,6 +18,7 @@ trie *createNode()
     return nn;
 }
 
+// insert string into the trie 
 void insert(trie *root, char* str)
 {
     for (int i = 0; i < strlen(str); i++)
@@ -36,6 +37,7 @@ void insert(trie *root, char* str)
     root->isEndofWord = true;
 }
 
+// search a string exists inside the trie
 bool search(trie *root, char* str, int index)
 {
     if (index == strlen(str))
@@ -49,7 +51,9 @@ bool search(trie *root, char* str, int index)
         return false;
     return search(root->arr[j], str, index + 1);
 }
-
+/* removes the string if it is not a prefix of any  other 
+ string, if it is then just sets the endofword to false, else 
+ removes the given string*/
 bool deleteString (trie *root, char* str, int index)
 {
     if (index == strlen(str))
