@@ -1,7 +1,3 @@
-/**********************
- author: shrutisheoran
-***********************/
-
 #include <iostream>
 #include <queue>
 
@@ -18,6 +14,8 @@ int max(int a, int b) {
 	return a > b ? a : b;
 }
 
+// Returns a new Node
+
 node* createNode(int data) {
 	node *nn = new node();
 	nn->data = data;
@@ -28,6 +26,7 @@ node* createNode(int data) {
 }
 
 // Returns height of tree
+
 int height(node *root) {
 	if(root==NULL)
 		return 0;
@@ -35,13 +34,13 @@ int height(node *root) {
 }
 
 // Returns difference between height of left and right subtree
+
 int getBalance(node *root) {
 	return height(root->left) - height(root->right);
 }
 
-/************************************
-	Returns Node after Right Rotation
-*************************************/
+// Returns Node after Right Rotation
+
 node* rightRotate(node *root) {
 	node *t = root->left;
 	node *u = t->right;
@@ -50,9 +49,8 @@ node* rightRotate(node *root) {
 	return t;
 }
 
-/************************************
-	Returns Node after Left Rotation
-*************************************/
+// Returns Node after Left Rotation
+
 node* leftRotate(node *root) {
 	node *t = root->right;
 	node *u = t->left;
@@ -61,9 +59,16 @@ node* leftRotate(node *root) {
 	return t;
 }
 
-/************************
-	Balanced Insertion
-************************/
+// Returns node with minimum value in the tree
+
+node* minValue(node* root) {
+	if(root->left==NULL)
+		return root;
+	return minValue(root->left);
+}
+
+// Balanced Insertion
+
 node* insert(node* root, int item) {
 	node *nn = createNode(item);
 	if(root == NULL)
@@ -86,9 +91,42 @@ node* insert(node* root, int item) {
 	return root;
 }
 
-/**************************************
-	LevelOrder (Breadth First Search)
-*************************************/
+// Balanced Deletion
+
+node* deleteNode(node *root, int key) {
+	if(root == NULL)
+		return root;
+	if(key < root->data)
+		root->left = deleteNode(root->left, key);
+	else if(key >  root->data)
+		root->right = deleteNode(root->right, key);
+
+	else {
+		// Node to be deleted is leaf node or have only one Child
+		if(!root->right) {
+			node* temp = root->left;
+			delete(root);
+			root = NULL;
+			return temp;
+		}
+		else if(!root->left) {
+			node* temp = root->right;
+			delete(root);
+			root = NULL;
+			return temp;
+		}
+		// Node to be deleted have both left and right subtrees
+		node *temp = minValue(root->right);
+		root->data = temp->data;
+		root->right = deleteNode(root->right, temp->data);
+	}
+	// Balancing Tree after deletion
+	return root;
+}
+
+
+// LevelOrder (Breadth First Search)
+
 void levelOrder(node* root) {
 	queue<node*> q;
 	q.push(root);
@@ -104,12 +142,18 @@ void levelOrder(node* root) {
 }
 
 int main() {
-	node *root = NULL;
 	// Testing AVL Tree
+	node *root = NULL;
 	int i;
 	for(i = 1 ; i <= 7 ; i++)
 		root = insert(root, i);
 	cout<<"LevelOrder: ";
+	levelOrder(root);
+	root = deleteNode(root, 1); // Deleting key with value 1
+	cout<<"\nLevelOrder: ";
+	levelOrder(root);
+    root = deleteNode(root, 4); // Deletin key with value 4
+	cout<<"\nLevelOrder: ";
 	levelOrder(root);
 	return 0;
 }
