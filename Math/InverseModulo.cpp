@@ -1,12 +1,9 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
-typedef long long ll;
 //Given two integers ‘a’ and ‘m’, find modular multiplicative inverse of ‘a’ under modulo ‘m’
 
 // Function for calculating Inverse modulo and power %mod in O(log(n)) Time Complexity
-ll InverseModulo(ll  base,ll p,ll mod)
+long long InverseModulo(long long  base,long long p,long long mod)
 {
     if(p ==0)
         return 1;
@@ -25,17 +22,19 @@ ll InverseModulo(ll  base,ll p,ll mod)
 
 int main()
 {
-    ll num,mod;
+    //Declarations
+    long long num,mod;
     cout << "\t\tComputes the Inverse Modulo\n\n";
-
+	
+    // Value of base
     cout << "Input the base: ";
     cin>>num;
-
-	cout << "Input the value of modulo: ";
-	cin>>mod;
 	
-	cout<<"Inverse modulo of num under modulo mod is: "<<InverseModulo(num,mod-2,mod);
-
-
+    // Input for mod
+    cout << "Input the value of modulo: ";
+    cin>>mod;
+	
+    //Output
+    cout<<"Inverse modulo of num under modulo mod is: "<<InverseModulo(num,mod-2,mod);
     return 0;
 }
