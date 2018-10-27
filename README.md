@@ -12,3 +12,4 @@ How you can contribute? See this small guide.
 * Put in comments in your code.
 * Avoid **struct** uses instead the **class** keyword.
 * Add some test cases in the main-function.
+* Can suggest any change in present algorithms(if needed).
