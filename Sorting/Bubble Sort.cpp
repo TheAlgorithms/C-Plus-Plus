@@ -1,19 +1,22 @@
 //Bubble Sort
 
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main()
 {
 	int n;
+	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
-	int Array[n];
-	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
-
+	vector<int> numbers;
+	cout << "Enter " << n << " numbers: ";
+	int num;
 	//Input
 	for(int i=0; i<n; i++)
 	{
-		cin>>Array[i];
+		cin >> num;
+		numbers.push_back(num);
 	}
 
 	//Bubble Sorting
@@ -21,19 +24,23 @@ int main()
 	{
 		for(int j=0; j<n-1; j++)
 		{
-			if(Array[j]>Array[j+1])
+			if(numbers[j]>numbers[j+1])
 			{
-				int temp=Array[j];
-				Array[j]=Array[j+1];
-				Array[j+1]=temp;
+				swap(numbers[j], numbers[j+1]);
 			}
 		}
 	}
 
 	//Output
 	cout<<"\nSorted Array : ";
-	for(int i=0; i<n; i++)
+	for(int i=0; i<numbers.size(); i++)
 	{
-		cout<<Array[i]<<"\t";
+		if(i != numbers.size() -1)
+		{
+			cout << numbers[i] << ", ";
+		}else
+		{
+			cout << numbers[i] << endl;
+		}
 	}
 }
