@@ -1,35 +1,55 @@
 //Bubble Sort
 
 #include<iostream>
+#include<vector>
 using namespace std;
 
-int main(){
-	int n, temp;
-	cout<<"Enter size of Array = ";
+int main()
+{
+	int n;
+	short swap_check=0;
+  	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
-	int *Array = new int[n];
-	cout<<"\nEnter any " <<n <<" Numbers for Unsorted Array :\n";
+	vector<int> numbers;
+	cout << "Enter " << n << " numbers: ";
+	int num;
 
-	//Input
-	for(int i=0; i<n; i++){
-		cout<<"value " <<(i+1) <<" = ";
-		cin>>Array[i];
+  	//Input
+	for(int i=0; i<n; i++)
+	{
+		cin >> num;
+		numbers.push_back(num);
 	}
 
 	//Bubble Sorting
-	for(int i=n; i>0; i--){
-		for(int j=0; j<i; j++){ // Array[i..n] is already sorted
-			if(Array[j]>Array[j+1]){
-				temp=Array[j];
-				Array[j]=Array[j+1];
-				Array[j+1]=temp;
+	for(int i=0; i<n; i++)
+	{
+		swap_check=0;
+		for(int j=0; j<n-1-i; j++)
+		{
+			if(numbers[j]>numbers[j+1])
+			{
+				swap_check=1;
+				swap(numbers[j], numbers[j+1]);
 			}
+		}
+		if(swap_check == 0)
+		{	
+			break;
 		}
 	}
 
 	//Output
 	cout<<"\nSorted Array : ";
-	for(int i=0; i<n; i++)
-		cout<<Array[i]<<"\t";
-	return 0;
+	for(int i=0; i<numbers.size(); i++)
+	{
+		if(i != numbers.size() -1)
+		{
+			cout << numbers[i] << ", ";
+		}else
+		{
+			cout << numbers[i] << endl;
+		}
+	}
+  return 0;
 }
