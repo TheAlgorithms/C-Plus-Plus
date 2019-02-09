@@ -1,6 +1,5 @@
 // This function convert decimal to binary number 
 //
-#include "stdafx.h"
 #include <iostream>
 using namespace std;
 
@@ -21,4 +20,5 @@ int main()
 	cout << "the binary is :";
 	cout << binary;
 	cout << endl;
+	return 0;
 }
