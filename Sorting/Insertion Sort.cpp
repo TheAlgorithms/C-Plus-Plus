@@ -9,7 +9,7 @@ int main()
 	cout<<"\nEnter the length of your array : ";
 	cin>>n;
 	int Array[n];
-	cout<<"\nEnter the Numbers for Unsorted Array : ";
+	cout<<"\nEnter any "<<n<<" Numbers for Unsorted Array : ";
 	
 	//Input
 	for(int i=0; i<n; i++)
@@ -36,5 +36,6 @@ int main()
 	{
 		cout<<Array[i]<<"\t";
 	}
+  return 0;
 }
 
