@@ -6,8 +6,10 @@ using namespace std;
 int main()
 {
 	int n;
+	cout<<"\nEnter the length of your array : ";
+	cin>>n;
 	int Array[n];
-	cout<<"\nEnter any 6 Numbers for Unsorted Array : ";
+	cout<<"\nEnter any "<<n<<" Numbers for Unsorted Array : ";
 	
 	//Input
 	for(int i=0; i<n; i++)
@@ -34,5 +36,6 @@ int main()
 	{
 		cout<<Array[i]<<"\t";
 	}
+  return 0;
 }
 
