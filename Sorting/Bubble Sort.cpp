@@ -8,13 +8,13 @@ int main()
 {
 	int n;
 	short swap_check=0;
-  cout << "Enter the amount of numbers to sort: ";
+  	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
 	vector<int> numbers;
 	cout << "Enter " << n << " numbers: ";
 	int num;
 
-  //Input
+  	//Input
 	for(int i=0; i<n; i++)
 	{
 		cin >> num;
