@@ -85,6 +85,7 @@ int main()
 		cout<<"\n2. Delete";
 		cout<<"\n3. Search";
 		cout<<"\n4. Print";
+		cout<<"\n0. Exit";
 		cout<<"\n\nEnter you choice : ";
 		cin>>choice; 
 		switch (choice)
@@ -98,7 +99,8 @@ int main()
 			case 3 : 	cout<<"\nEnter the element to be searched : ";
 						cin>>x;
 						search(x); 	break;
-			case 4 : show();	break;
+			case 4 : 	show();	
+					cout<<"\n";	break;
 		}
 	}
 	while(choice!=0);

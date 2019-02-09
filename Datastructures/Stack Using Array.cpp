@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 
-int stack[10];
-int top=0;
+int *stack;
+int top=0, size;
 
 void push(int x)
 {
-	if(top==10)
+	if(top==size)
 	{
 		cout<<"\nOverflow";
 	}
@@ -42,6 +42,9 @@ void topmost()
 }
 int main()
 {
+	cout<<"\nEnter Size of stack : ";
+	cin>>size;
+	stack = new int[size];
 	int ch, x;
 	do
 	{
