@@ -1,25 +1,20 @@
 /* C++ implementation Odd Even Sort */
-#include<iostream>
+#include <iostream>
+#include <vector>
+
 using namespace std;
 
-void switchElmts(int arr[], int i, int j)
-{
-	int tmp = arr[i];
-	arr[i] = arr[j];
-	arr[j] = tmp;
-}
-
-void oddEven(int arr[], int size)
+void oddEven(vector<int> &arr, int size)
 {
 	bool sorted = false;
-	while(!sorted)
+	while( ! sorted )
 	{
 		sorted = true;
 		for(int i = 1; i < size-1; i += 2)//Odd
 		{
 			if(arr[i] > arr[i+1])
 			{
-				switchElmts(arr,i,i+1);
+				swap(arr[i], arr[i+1]);
 				sorted = false;
 			}
 		}
@@ -28,36 +23,35 @@ void oddEven(int arr[], int size)
 		{
 			if(arr[i] > arr[i+1])
 			{
-				switchElmts(arr,i,i+1);
+				swap(arr[i], arr[i+1]);
 				sorted = false;
 			}
 		}
 	}
 }
 
-void show(int A[], int size)
+void show(vector<int> A, int size)
 {
 	int i;
 	for (i = 0; i < size; i++)
-	cout<<A[i]<<"\n";
+		cout << A[i] << "\n";
 }
 
 
 int main()
 {
-	int size;
-	cout<<"\nEnter the number of elements : ";
+	int size, temp;
+	cout << "\nEnter the number of elements : ";
+	cin >> size;
 
-	cin>>size;
+	vector<int> arr;
 
-	int arr[size];
-
-	cout<<"\nEnter the unsorted elements : ";
+	cout<<"\nEnter the unsorted elements : \n";
 
 	for (int i = 0; i < size; ++i)
 	{
-		cout<<"\n";
-		cin>>arr[i];
+		cin >> temp;
+		arr.push_back(temp);
 	}
 
 	oddEven(arr, size);
