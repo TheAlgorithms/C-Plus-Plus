@@ -30,7 +30,7 @@ void graph::printgraph(){
 }
 void graph::bfs(int s){
 	bool *visited = new bool[this->v+1];
-	memset(visited,false,sizeof(visited));
+	memset(visited,false,sizeof(bool)*(this->v+1));
 	visited[s]=true;
 	list<int> q;
 	q.push_back(s);
