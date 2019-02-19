@@ -59,7 +59,7 @@ long long int karatsubaMultiply(string x, string y)
     if (n == 0) return 0; 
     if (n == 1){
     	// Single bit multiplication. 
-    	return (x[0] - '0')*(y[0] - '0');
+    	return (x[0] - '0') * (y[0] - '0');
     }
 
     int firstHalfLen = n/2;    
@@ -72,17 +72,25 @@ long long int karatsubaMultiply(string x, string y)
 
     long long int product1 = karatsubaMultiply(Xleft, Yleft);
     long long int product2 = karatsubaMultiply(Xright, Yright);
-    long long int product3 = karatsubaMultiply(addBitStrings(Xleft, Xright), 
-    										   addBitStrings(Yleft, Yright));
+    long long int product3 = karatsubaMultiply(addBitStrings(Xleft, Xright), addBitStrings(Yleft, Yright));
 
-    return product1*(1<<(2*secondHalfLen)) +
-           (product3 - product1 - product2) * (1<<secondHalfLen) + product2;
+    return product1 * (1 << (2 * secondHalfLen)) +
+           (product3 - product1 - product2) * (1 << secondHalfLen) + product2;
 }
 
 int main()
-{
+{   
+    // Product of 1011 and 110 = 66
     cout<<"Product of 1011 and 110 = "<<karatsubaMultiply("1011", "110")<<endl;
+    
+    // Product of 1111 and 0 = 0
     cout<<"Product of 1111 and 0 = "<<karatsubaMultiply("1111", "0")<<endl;
+    
+    // Product of 100000 and 10 = 64
     cout<<"Product of 100000 and 10 = "<<karatsubaMultiply("100000", "10")<<endl;
+    
+    // Product of 101 and 101101 = 225
     cout<<"Product of 101 and 101101 = "<<karatsubaMultiply("101", "101101")<<endl;
+
+    return 0;
 }
