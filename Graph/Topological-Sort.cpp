@@ -27,18 +27,19 @@ void topological_sort() {
   reverse(ans.begin(), ans.end());
 }
 int main(){
+  cout << "Enter the number of vertices and the number of directed edges\n";
   cin >> n >> m;
   int x , y;
   G.resize(n , vector<int>());
   for(int i = 0 ; i < n ; ++i) {
     cin >> x >> y;
-    x-- , y--; //to convert 1-indexed to 0-indexed
+    x-- , y--; // to convert 1-indexed to 0-indexed
     G[x].push_back(y);
   }
   topological_sort();
   cout << "Topological Order : \n";
   for(int v : ans) {
-    cout << v << ' ';
+    cout << v + 1 << ' '; // converting zero based indexing back to one based.
   }
   cout << '\n';
   return 0;
