@@ -120,11 +120,11 @@ int main()
         cout<<"\n5. Size";
         cout<<"\n0. Exit";
         cout<<"\n\nEnter you choice : ";
-        cin>>choice; 
+        cin>>choice;
         switch (choice)
         {
             case 1 :    cout<<"\nEnter the element to be inserted : ";
-                        cin>>x;;
+                        cin>>x;
                         insert(x);  break;
             case 2 :    cout<<"\nEnter the element to be removed : ";
                         cin>>x;
@@ -132,9 +132,9 @@ int main()
             case 3 :    cout<<"\nEnter the element to be searched : ";
                         cin>>x;
                         search(x);  break;
-            case 4 :    show(); 
+            case 4 :    show();
                         cout<<"\n"; break;
-            case 5 :    cout<<"\n"<<showSize(); break;  
+            case 5 :    cout<<"\n"<<showSize(); break;
         }
     }
     while(choice!=0);
