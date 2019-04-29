@@ -2,7 +2,7 @@
  * Sieve of Eratosthenes is an algorithm to find the primes 
  * that is between 2 to N (as defined in main).
  *
- * Time Complexity  : O(N)
+ * Time Complexity  : O(NloglogN)
  * Space Complexity : O(N)
  */
 
