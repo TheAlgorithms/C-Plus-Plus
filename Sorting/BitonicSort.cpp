@@ -4,7 +4,7 @@
    works only when size of input is a power of 2. */
    
 #include<stdio.h>
-#include<algorithm.h>
+#include<algorithm>
 using namespace std; 
   
 /*The parameter dir indicates the sorting direction, ASCENDING 
