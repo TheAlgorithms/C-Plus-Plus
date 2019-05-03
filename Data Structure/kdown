@@ -1,0 +1,85 @@
+// It prints all the nodes which are 'k' distance down from the root node. 
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Node
+{
+public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int data)
+    {
+        this->data = data;
+        this->left = NULL;
+        this->right = NULL;
+    }
+};
+
+Node *construct(vector<int> &datalist)
+{
+    Node *root = NULL;
+    vector<Node *> newlist;
+
+    for (int i = 0; i < datalist.size(); i++)
+    {
+        if (datalist[i] == -1)
+        {
+            newlist.pop_back();
+        }
+
+        else
+        {
+            Node *newnode = new Node(datalist[i]);
+            if (newlist.size() == 0)
+            {
+                root = newnode;
+            }
+
+            else
+            {
+                Node *top_of_stack = newlist.back();
+                if (top_of_stack->left == NULL)
+                {
+                    top_of_stack->left = newnode;
+                }
+
+                else
+                {
+                    top_of_stack->right = newnode;
+                }
+            }
+            newlist.push_back(newnode);
+        }
+    }
+    return (root);
+}
+
+void kdown(Node *root, int key)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    if (key == 0)
+    {
+        cout << root->data << endl;
+        return;
+    }
+
+    kdown(root->left, key - 1);
+    kdown(root->right, key - 1);
+}
+
+int main(int argc, char **argv)
+{
+    vector<int> list{50, 25, 12, -1, 37, 30, -1, 40, -1, -1, -1, 75, 62, 60, -1, 70, -1, -1, 87, -1, -1, -1};
+    Node *root = construct(list);
+    cout << "K_down" << endl;
+    kdown(root, 3);
+
+}
