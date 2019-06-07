@@ -1,0 +1,190 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void InsertionSort(int *A, int n)
+{
+	int i, temp, j;
+	for (i = 0; i < n; i++) {
+
+		temp = A[i];
+		j = i;
+
+		while (j > 0 && temp < A[j - 1]) {
+			A[j] = A[j - 1];
+			j = j - 1;
+
+		}
+		A[j] = temp;
+	}
+}
+int medianOfThree(int *d, int low, int high)
+{
+	int mid = low + (high - low) / 2;
+	if (d[low] <= d[mid] && d[mid] <= d[high]) return d[mid];
+	if (d[high] <= d[mid] && d[mid] <= d[low]) return d[mid];
+
+	if (d[mid] <= d[low] && d[low] <= d[high]) return d[low];
+	if (d[high] <= d[low] && d[low] <= d[low]) return d[low];
+
+	return d[high];
+
+}
+
+void quicksort(int* d, int fir, int last) {
+	int left = fir;
+	int right = last;
+	int pivot = medianOfThree(d, fir, last);
+
+	do {
+		while (d[left] < pivot) left++;
+		while (d[right] > pivot) right--;
+		if (left <= right) {
+			int temp = d[left];
+			d[left] = d[right];
+			d[right] = temp;
+			left++;
+			right--;
+		}
+	} while (left <= right);
+
+	if (fir < right) {
+		int temp;
+		if (right - fir == 1)
+		{
+			if (d[fir] > d[right])
+			{
+				temp = d[fir];
+				d[fir] = d[right];
+				d[right] = temp;
+			}
+		}
+		else if (right - fir == 2) // 132,213,231,312,321 
+		{
+			if (d[fir] <= d[right])
+			{
+				if (d[right] <= d[fir + 1]) // 132 case
+				{
+					temp = d[fir + 1];
+					d[fir + 1] = d[right];
+					d[right] = temp;
+				}
+				else if (d[fir + 1] <= d[fir]) // 213 case
+				{
+					temp = d[fir];
+					d[fir] = d[fir + 1];
+					d[fir + 1] = temp;
+				}
+
+			}
+			else if (d[right] <= d[fir])
+			{
+				if (d[fir] <= d[fir + 1])// 231 case
+				{
+					temp = d[right];
+					d[right] = d[fir + 1];
+					d[fir + 1] = d[fir];
+					d[fir] = temp;
+				}
+				else if (d[fir + 1] <= d[right]) //312 case
+				{
+					temp = d[fir];
+					d[fir] = d[fir + 1];
+					d[fir + 1] = d[right];
+					d[right] = temp;
+				}
+				else// 321 case
+				{
+					temp = d[fir];
+					d[fir] = d[right];
+					d[right] = temp;
+				}
+			}
+		}
+		else if (right - fir <= 47)
+			InsertionSort(&d[fir], right - fir + 1);
+		else
+			quicksort(d, fir, right);
+	}
+	if (last > left) {
+		int temp;
+		if (last - left == 1)
+		{
+			if (d[left] > d[last])
+			{
+				temp = d[left];
+				d[left] = d[last];
+				d[last] = temp;
+			}
+		}
+		else if (last - left == 2) // 132,213,231,312,321 
+		{
+			if (d[left] <= d[last])
+			{
+				if (d[last] <= d[left + 1]) // 132 case
+				{
+					temp = d[left + 1];
+					d[left + 1] = d[last];
+					d[last] = temp;
+				}
+				else if (d[left + 1] <= d[left]) // 213 case
+				{
+					temp = d[left];
+					d[left] = d[left + 1];
+					d[left + 1] = temp;
+				}
+
+			}
+			else if (d[last] <= d[left])
+			{
+				if (d[left] <= d[left + 1])// 231 case
+				{
+					temp = d[last];
+					d[last] = d[left + 1];
+					d[left + 1] = d[left];
+					d[left] = temp;
+				}
+				else if (d[left + 1] <= d[last]) //312 case
+				{
+					temp = d[left];
+					d[left] = d[left + 1];
+					d[left + 1] = d[last];
+					d[last] = temp;
+				}
+				else// 321 case
+				{
+					temp = d[left];
+					d[left] = d[last];
+					d[last] = temp;
+				}
+			}
+
+
+		}
+		else if (last - left <= 47)
+			InsertionSort(&d[left], last - left + 1);
+		else
+			quicksort(d, left, last);
+	}
+}
+int main()
+{
+	int size = 10;
+	int *_array = new int[size];
+	//input
+	for (int i = 0; i < size; i++)
+	{
+		cin >> _array[i];
+	}
+	quicksort(_array, 0, size - 1);
+
+	//output
+	for (int i = 0; i < size; ++i)
+	{
+		cout << _array[i] << "\t";
+	}
+
+
+	delete[] _array;
+	return 0;
+}
