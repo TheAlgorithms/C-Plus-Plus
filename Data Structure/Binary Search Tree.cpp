@@ -1,232 +1,354 @@
 #include<iostream>
 using namespace std;
 
+//*****************************************************************************************************
 
-struct node
+template <typename T>
+struct Node
 {
-	int val;
-	node *left;
-	node *right;
+	T val;
+	Node <T> * left;
+	Node <T> * right;
+	Node();
+	Node(const T & dataIn, Node <T> * l = nullptr, Node <T> * r = nullptr);
 };
 
-struct queue
+template <typename T>
+Node <T> :: Node()
 {
-	node *t[100];
-	int front;
-	int rear;
+	val = 0;
+	left = nullptr;
+	right = nullptr;
+}
+
+template <typename T>
+Node <T> :: Node(const T & dataIn, Node <T> * l, Node <T> * r)
+{
+	val = dataIn;
+	left = l;
+	right = r;
+}
+
+//*****************************************************************************************************
+
+template <typename T>
+class BST
+{
+private:
+		Node <T> * root;
+		void _destruct(Node <T> * pRoot);
+		Node <T> * _retrieve(Node <T> * pRoot, const T & dataOut)	const;
+		Node <T> * _insert(Node <T> * pRoot, const T & dataOut)	const;
+		Node <T> * _remove(Node <T> * pRoot, const T & dataOut)	const;
+		void _findMaxInLeftST(Node <T> * pRoot, T & pMax) const;
+		void _preOrder(Node <T> * pRoot)	const;
+		void _inOrder(Node <T> * pRoot)	const;
+		void _postOrder(Node <T> * pRoot)	const;
+public:
+	BST();
+	~BST();
+	bool retrieve(T & dataOut)	const;
+	bool insert(const T & dataIn);
+	bool remove (T & dataOut);
+	T findMaxInLeftST() const;
+	void preOrder()	const;
+	void inOrder()	const;
+	void postOrder()	const;
 };
 
-queue q;
-
-
-void enqueue(node *n)
+template <typename T>
+BST <T> :: BST ()
 {
-	q.t[q.rear++]=n;
+	root = nullptr;
 }
 
-node * dequeue()
+template <typename T>
+BST <T> :: ~BST()
 {
-	return (q.t[q.front++]);
+	_destruct(root);
 }
 
-
-
-void Insert(node *n, int x)
+template <typename T>
+void BST <T> ::_destruct(Node <T> * pRoot)
 {
-	if (x<n->val)
+	if (pRoot)
 	{
-		if (n->left==NULL)
-		{
-			node *temp=new node;
-			temp->val=x;
-			temp->left=NULL;
-			temp->right=NULL;
-			n->left=temp;
-		}
+		_destruct(pRoot->left);
+		_destruct(pRoot->right);
+		delete pRoot;
+	}
+}
+
+template <typename T>
+bool BST <T> ::retrieve(T & dataOut)	const
+{
+	bool success = false;
+	Node <T> * pFound;
+
+	pFound = _retrieve(root, dataOut);
+
+	if (pFound)
+	{
+		dataOut = pFound->val;
+		success = true;
+	}
+
+	return success;
+}
+
+template <typename T>
+Node <T> * BST <T> ::_retrieve(Node <T> * pRoot, const T & dataOut)	const
+{
+	if (pRoot)
+	{
+		if (pRoot->val > dataOut)
+			pRoot = _retrieve(pRoot->left, dataOut);
+		else if (pRoot->val < dataOut)
+			pRoot = _retrieve(pRoot->right, dataOut);
+	}
+
+	return pRoot;
+}
+
+template <typename T>
+bool BST <T> :: insert(const T & dataIn)
+{
+	bool success = false;
+	Node <T> * pFound;
+
+	pFound = _retrieve(root, dataIn);
+
+	if (!pFound)
+	{
+		root = _insert(root, dataIn);
+		success = true;
+	}
+
+	return success;
+}
+
+template <typename T>
+Node <T> * BST <T> ::_insert(Node <T> * pRoot, const T & dataIn)	const
+{
+	if (pRoot)
+	{
+		if (pRoot->val > dataIn)
+			pRoot->left = _insert(pRoot->left, dataIn);
 		else
-		{
-			Insert(n->left, x);
-		}
+			pRoot->right = _insert(pRoot->right, dataIn);
 	}
 	else
+		pRoot = new (nothrow) Node <T>(dataIn);
+
+	return pRoot;
+}
+
+template <typename T>
+bool BST <T> :: remove(T & dataOut)
+{
+	bool success = false;
+	Node <T> * pFound;
+
+	pFound = _retrieve(root, dataOut);
+
+	if (pFound)
 	{
-		if (n->right==NULL)
-		{
-			node *temp=new node;
-			temp->val=x;
-			temp->left=NULL;
-			temp->right=NULL;
-			n->left=temp;
-		}
+		dataOut = pFound->val;
+		root = _remove(root, dataOut);
+		success = true;
+	}
+
+	return success;
+}
+
+template <typename T>
+Node <T> * BST <T> ::_remove(Node <T> * pRoot, const T & dataOut)	const
+{
+	Node <T> * pMax;
+	Node <T> * pDel;
+
+	if (pRoot)
+	{
+		if (pRoot->val > dataOut)
+			pRoot->left = _remove(pRoot->left, dataOut);
+		else if (pRoot->val < dataOut)
+			pRoot->right = _remove(pRoot->right, dataOut);
 		else
 		{
-			Insert(n->right, x);
+			if ((pRoot->left) && (pRoot->right))
+			{
+				pMax = pRoot->left;
+
+				while ((pMax) && (pMax->right))
+					pMax = pMax->right;
+
+				pRoot->val = pMax->val;
+				pRoot->left = _remove(pRoot->left, pMax->val);
+			}
+			else
+			{
+				pDel = pRoot;
+
+				if (pRoot->left)
+					pRoot = pRoot->left;
+				else
+					pRoot = pRoot->right;
+
+				delete pDel;
+			}
 		}
 	}
+
+	return pRoot;
 }
 
-
-
-
-int findMaxInLeftST(node *n)
+template <typename T>
+T BST <T>::findMaxInLeftST()	const
 {
-	while(n->right!=NULL)
-	{
-		n=n->right;
-	}
-	return n->val;
+	T max = root->val;
+
+	_findMaxInLeftST(root->left, max);
+
+	return max;
 }
 
-void Remove(node *p, node *n, int x)
+template <typename T>
+void BST <T>::_findMaxInLeftST(Node <T> * pRoot, T & pMax)	const
 {
-	if (n->val==x)
+	if (pRoot)
 	{
-		if (n->right==NULL && n->left==NULL)
+		if (pRoot->right)
 		{
-			if (x<p->val)
-			{
-				p->right=NULL;
-			}
-			else
-			{
-				p->left=NULL;
-			}	
-		}
-		else if (n->right==NULL)
-		{
-			if (x<p->val)
-			{
-				p->right=n->left;
-			}
-			else
-			{
-				p->left=n->left;
-			}
-		}
-		else if (n->left==NULL)
-		{
-			if (x<p->val)
-			{
-				p->right=n->right;
-			}
-			else
-			{
-				p->left=n->right;
-			}
+			_findMaxInLeftST(pRoot->right, pMax);
 		}
 		else
-		{
-			int y=findMaxInLeftST(n->left);
-			n->val=y;
-			Remove(n, n->right, y);
-		}
-	}
-	else if (x<n->val)
-	{
-		Remove(n, n->left, x);
-	}
-	else
-	{
-		Remove(n, n->right, x);
+			pMax = pRoot->val;
 	}
 }
 
-
-
-
-void BFT(node *n)
+template <typename T>
+void BST <T> ::preOrder()	const
 {
-	if(n!=NULL)
-	{
-		cout<<n->val<<"  ";
-		enqueue(n->left);
-		enqueue(n->right);
-		BFT(dequeue());
-	}
+	_preOrder(root);
+	cout << "\n";
 }
 
-void Pre(node *n)
+template <typename T>
+void BST <T>:: _preOrder(Node <T> * pRoot)	const
 {
-	if (n!=NULL)
+	if (pRoot)
 	{
-		cout<<n->val<<"  ";
-		Pre(n->left);
-		Pre(n->right);
+		cout << pRoot->val<< "  ";
+		_preOrder(pRoot->left);
+		_preOrder(pRoot->right);
 	}
 }
 
-void In(node *n)
+template <typename T>
+void BST <T> ::inOrder()	const
 {
-	if (n!=NULL)
-	{
-		In(n->left);
-		cout<<n->val<<"  ";
-		In(n->right);
-	}
+	_inOrder(root);
+	cout << "\n";
 }
 
-
-void Post(node *n)
+template <typename T>
+void BST <T> :: _inOrder(Node <T> * pRoot)	const
 {
-	if (n!=NULL)
+	if (pRoot)
 	{
-		Post(n->left);
-		Post(n->right);
-		cout<<n->val<<"  ";
+		_inOrder(pRoot->left);
+		cout << pRoot->val << "  ";
+		_inOrder(pRoot->right);
 	}
 }
 
+template <typename T>
+void BST <T> ::postOrder()	const
+{
+	_postOrder(root);
+	cout << "\n";
+}
 
+template <typename T>
+void BST <T> :: _postOrder(Node <T> * pRoot)	const
+{
+	if (pRoot)
+	{
+		_postOrder(pRoot->left);
+		_postOrder(pRoot->right);
+		cout << pRoot->val<< "  ";
+	}
+}
+
+//*****************************************************************************************************
 
 int main()
 {
-	q.front=0;
-	q.rear=0;
+	BST <int> tree;
 	int value;
-	int ch;
-	node *root=new node;
-	cout<<"\nEnter the value of root node :";
-	cin>>value;
-	root->val=value;
-	root->left=NULL;
-	root->right=NULL;
+	int choice;
+
+	cout<<"Enter the value of root node : ";
+	cin >> value;
+
+	if (!tree.insert(value))
+		cout << "Could not insert value \n";
+
 	do
 	{
-		cout<<"\n1. Insert";
-		cout<<"\n2. Delete";
-		cout<<"\n3. Breadth First";
-		cout<<"\n4. Preorder Depth First";
-		cout<<"\n5. Inorder Depth First";
-		cout<<"\n6. Postorder Depth First";
+		cout << "\n1. Insert";
+		cout << "\n2. Delete";
+		cout << "\n3. Retrieve";
+		cout << "\n4. Display Max Left Subtree";
+		cout << "\n5. Display Preorder Depth First";
+		cout << "\n6. Display Inorder Depth First";
+		cout << "\n7. Display Postorder Depth First";
+		cout << "\n\n0. Quit \n";
 
-		cout<<"\nEnter Your Choice : ";
-		cin>>ch;
-		int x;
-		switch(ch)
+		cout << "\nEnter Your Choice : ";
+		cin >> choice;
+
+		switch(choice)
 		{
 			case 1:
 				cout<<"\nEnter the value to be Inserted : ";
-				cin>>x;
-				Insert(root, x);
+				cin >> value;
+				if (!tree.insert(value))
+					cout << "Could not insert value! \n";
 				break;
 			case 2:
 				cout<<"\nEnter the value to be Deleted : ";
-				cin>>x;
-				Remove(root, root, x);
+				cin >> value;
+				if (!tree.remove(value))
+					cout << "Could not remove value! \n";
 				break;
 			case 3:
-				BFT(root);
+				cout << "\nEnter the value to be retrieved : ";
+				cin >> value;
+				if (!tree.retrieve(value))
+					cout << "Value could not be retrieved! \n";
+				else
+				{
+					cout << "Value found! \n";
+					cout << "Value: " << value << "\n";
+				}
 				break;
 			case 4:
-				Pre(root);
+				value = tree.findMaxInLeftST();
+				cout << "Max value in left subtree: " << value << "\n";
 				break;
 			case 5:
-				In(root);
+				tree.preOrder();
 				break;
 			case 6:
-				Post(root);
+				tree.inOrder();
+				break;
+			case 7:
+				tree.postOrder();
 				break;
 		}
 	}
-	while(ch!=0);
+	while(choice != 0);
+
+	return 0;
 }
