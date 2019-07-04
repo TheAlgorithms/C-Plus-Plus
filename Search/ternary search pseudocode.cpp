@@ -1,3 +1,5 @@
+// This is the pseudocode for Ternary Search 
+
 int three_part_binary_search(int a[], int x, int low, int high){
 	if (low < high){
 		int m1 = (low + high) / 3 + 1;
