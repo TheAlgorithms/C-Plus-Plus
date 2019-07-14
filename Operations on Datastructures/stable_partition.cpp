@@ -15,7 +15,7 @@ std::ostream& operator<<(std::ostream& os, const Container<Type>& values)
 }
 
 template<typename I, typename P>
-decltype(auto) stable_partition(I f, I l, P& p)
+auto stable_partition(I f, I l, P& p)
 {
     auto n = l - f;
     if (n == 0)
