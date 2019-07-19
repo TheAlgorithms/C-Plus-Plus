@@ -1,0 +1,4 @@
+# https://docs.travis-ci.com/user/languages/cpp/
+language: cpp
+install: pip install cpplint
+script: cpplint .
