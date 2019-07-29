@@ -32,17 +32,33 @@ void insert(int x)
 	}
 }
 
-void remove(int x)
-{
-	node *t=start;
-	node *p;
-	while(t->val!=x)
-	{
-		p=t;
-		t=t->next;
+void remove(int x){
+
+	if( start == NULL ){
+		cout<<"\nLinked List is empty\n";
+		return ;
 	}
-	p->next=t->next;
-	delete t;
+	else if( start->val == x ){
+		node *temp = start;
+		start = start->next;
+		delete temp;
+		return ;
+	}
+
+	node *temp = start, *parent = start;
+
+	while( temp != NULL && temp->val != x ){
+		parent = temp;
+		temp = temp->next;
+	}
+
+	if( temp == NULL ){
+		cout <<endl <<x <<" not found in list\n";
+		return ;
+	}
+
+	parent->next = temp->next;
+	delete temp;
 }
 
 void search(int x)
@@ -85,6 +101,7 @@ int main()
 		cout<<"\n2. Delete";
 		cout<<"\n3. Search";
 		cout<<"\n4. Print";
+		cout<<"\n0. Exit";
 		cout<<"\n\nEnter you choice : ";
 		cin>>choice; 
 		switch (choice)
@@ -98,7 +115,8 @@ int main()
 			case 3 : 	cout<<"\nEnter the element to be searched : ";
 						cin>>x;
 						search(x); 	break;
-			case 4 : show();	break;
+			case 4 : 	show();	
+					cout<<"\n";	break;
 		}
 	}
 	while(choice!=0);
