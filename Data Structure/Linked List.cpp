@@ -92,6 +92,20 @@ void show()
 
 }
 
+void reverse(){
+    node* first = start;
+    node* second = first->next;
+    while(second != NULL){
+        node* tem = second->next;
+        second->next = first;
+        first = second;
+        second = tem;
+    }
+
+    start->next = NULL;
+    start = first;
+}
+
 int main()
 {
 	int choice, x;
@@ -101,9 +115,10 @@ int main()
 		cout<<"\n2. Delete";
 		cout<<"\n3. Search";
 		cout<<"\n4. Print";
+		cout<<"\n5. Reverse";
 		cout<<"\n0. Exit";
 		cout<<"\n\nEnter you choice : ";
-		cin>>choice; 
+		cin>>choice;
 		switch (choice)
 		{
 			case 1 : 	cout<<"\nEnter the element to be inserted : ";
@@ -115,8 +130,11 @@ int main()
 			case 3 : 	cout<<"\nEnter the element to be searched : ";
 						cin>>x;
 						search(x); 	break;
-			case 4 : 	show();	
-					cout<<"\n";	break;
+			case 4 : 	show();
+			      		cout<<"\n";	break;
+			case 5 :    cout<<"The reversed list: \n";
+                        reverse(); show();
+                        cout<<"\n"; break;
 		}
 	}
 	while(choice!=0);
