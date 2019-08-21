@@ -35,7 +35,7 @@ void Enque(int x)
 
 void Deque()
 {
-	if (rear==front)
+	if (rear == NULL && front == NULL)
 	{
 		cout<<"\nUnderflow";
 	}
@@ -45,6 +45,8 @@ void Deque()
 		cout<<"\n"<<t->val<<" deleted";
 		front=front->next;
 		delete t;
+		if(front == NULL)
+			rear = NULL;
 	}
 }
 
