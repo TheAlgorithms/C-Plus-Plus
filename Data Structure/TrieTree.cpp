@@ -1,6 +1,6 @@
-#include<iostream>
-#include<string.h>
-#include<stdbool.h>
+#include <iostream>
+#include <string.h>
+#include <stdbool.h>
 using namespace std;
 // structure definition
 typedef struct trie
@@ -8,7 +8,7 @@ typedef struct trie
     struct trie *arr[26];
     bool isEndofWord;
 } trie;
-// create a new node for trie 
+// create a new node for trie
 trie *createNode()
 {
     trie *nn = new trie();
@@ -18,8 +18,8 @@ trie *createNode()
     return nn;
 }
 
-// insert string into the trie 
-void insert(trie *root, char* str)
+// insert string into the trie
+void insert(trie *root, char *str)
 {
     for (int i = 0; i < strlen(str); i++)
     {
@@ -38,7 +38,7 @@ void insert(trie *root, char* str)
 }
 
 // search a string exists inside the trie
-bool search(trie *root, char* str, int index)
+bool search(trie *root, char *str, int index)
 {
     if (index == strlen(str))
     {
@@ -54,7 +54,7 @@ bool search(trie *root, char* str, int index)
 /* removes the string if it is not a prefix of any  other 
  string, if it is then just sets the endofword to false, else 
  removes the given string*/
-bool deleteString (trie *root, char* str, int index)
+bool deleteString(trie *root, char *str, int index)
 {
     if (index == strlen(str))
     {
@@ -68,7 +68,7 @@ bool deleteString (trie *root, char* str, int index)
     int j = str[index] - 'a';
     if (!root->arr[j])
         return false;
-    bool var = deleteString (root, str, index + 1);
+    bool var = deleteString(root, str, index + 1);
     if (var)
     {
         root->arr[j] = NULL;

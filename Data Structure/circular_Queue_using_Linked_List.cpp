@@ -1,36 +1,44 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-struct node{
+struct node
+{
     int data;
     struct node *next;
 };
-class Queue{
+class Queue
+{
     node *front;
     node *rear;
+
 public:
-    Queue(){
+    Queue()
+    {
         front = NULL;
         rear = NULL;
     }
-    void createNode(int val){
+    void createNode(int val)
+    {
         node *ptr;
         node *nn;
         nn = new node;
         ptr = front;
         nn->data = val;
         nn->next = NULL;
-        front=nn;
-        rear=nn;
+        front = nn;
+        rear = nn;
     }
-    void enqueue(int val){
-        if(front==NULL || rear==NULL){
+    void enqueue(int val)
+    {
+        if (front == NULL || rear == NULL)
+        {
             createNode(val);
         }
-        else{
+        else
+        {
             node *ptr;
             node *nn;
-            ptr=front;
+            ptr = front;
             nn = new node;
             nn->data = val;
             rear->next = nn;
@@ -38,24 +46,28 @@ public:
             rear = nn;
         }
     }
-    void dequeue(){
+    void dequeue()
+    {
         node *n;
         n = front;
         front = front->next;
-        delete(n);
+        delete (n);
     }
-    void traverse(){
+    void traverse()
+    {
         node *ptr;
-        ptr=front;
-        do{
-            cout<<ptr->data<<" ";
-            ptr=ptr->next;
-        }while(ptr!=rear->next);
-        cout<<front->data;
-        cout<<endl;
+        ptr = front;
+        do
+        {
+            cout << ptr->data << " ";
+            ptr = ptr->next;
+        } while (ptr != rear->next);
+        cout << front->data;
+        cout << endl;
     }
 };
-int main(void){
+int main(void)
+{
     Queue q;
     q.enqueue(10);
     q.enqueue(20);

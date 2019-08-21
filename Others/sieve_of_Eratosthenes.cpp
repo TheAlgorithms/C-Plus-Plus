@@ -13,7 +13,6 @@ using namespace std;
 
 int primes[MAX];
 
-
 /*
  * This is the function that finds the primes and eliminates 
  * the multiples.
@@ -22,12 +21,13 @@ void sieve(int N)
 {
   primes[0] = 1;
   primes[1] = 1;
-  for(int i=2;i<=N;i++)
-    {
-      if(primes[i] == 1) continue;
-      for(int j=i+i;j<=N;j+=i)
-	primes[j] = 1;
-    }
+  for (int i = 2; i <= N; i++)
+  {
+    if (primes[i] == 1)
+      continue;
+    for (int j = i + i; j <= N; j += i)
+      primes[j] = 1;
+  }
 }
 
 /*
@@ -35,8 +35,8 @@ void sieve(int N)
  */
 void print(int N)
 {
-  for(int i=0;i<=N;i++)
-    if(primes[i] == 0)
+  for (int i = 0; i <= N; i++)
+    if (primes[i] == 0)
       cout << i << ' ';
   cout << '\n';
 }
@@ -47,7 +47,7 @@ void print(int N)
  */
 void init()
 {
-  for(int i=0;i<MAX;i++)
+  for (int i = 0; i < MAX; i++)
     primes[i] = 0;
 }
 

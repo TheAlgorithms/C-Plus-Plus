@@ -18,7 +18,7 @@ int MatrixChainMultiplication(int dim[], int i, int j)
 	// needed to compute the matrix M[i+1]...M[j] = M[i..j]
 	int min = INT_MAX;
 
-	// if dp[i][j] is not calculated (calculate it!!) 
+	// if dp[i][j] is not calculated (calculate it!!)
 
 	if (dp[i][j] == 0)
 	{
@@ -34,7 +34,7 @@ int MatrixChainMultiplication(int dim[], int i, int j)
 			cost += MatrixChainMultiplication(dim, k, j);
 
 			// cost to multiply two (i x k) and (k x j) matrix
-			cost +=	dim[i] * dim[k] * dim[j];
+			cost += dim[i] * dim[k] * dim[j];
 
 			if (cost < min)
 				min = cost; // store the minimum cost
@@ -51,7 +51,7 @@ int main()
 {
 	// Matrix i has Dimensions dim[i-1] & dim[i] for i=1..n
 	// input is 10 x 30 matrix, 30 x 5 matrix, 5 x 60 matrix
-	int dim[] = { 10, 30, 5, 60 };
+	int dim[] = {10, 30, 5, 60};
 	int n = sizeof(dim) / sizeof(dim[0]);
 
 	// Function Calling: MatrixChainMultiplications(dimensions_array, starting, ending);

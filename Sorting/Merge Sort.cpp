@@ -1,20 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
     int n1 = m - l + 1;
-    int n2 =  r - m;
- 
+    int n2 = r - m;
+
     int L[n1], R[n2];
- 
-   
+
     for (i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (j = 0; j < n2; j++)
-        R[j] = arr[m + 1+ j];
- 
+        R[j] = arr[m + 1 + j];
+
     i = 0;
     j = 0;
     k = l;
@@ -32,14 +31,13 @@ void merge(int arr[], int l, int m, int r)
         }
         k++;
     }
- 
+
     while (i < n1)
     {
         arr[k] = L[i];
         i++;
         k++;
     }
- 
 
     while (j < n2)
     {
@@ -48,52 +46,48 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
- 
 
 void mergeSort(int arr[], int l, int r)
 {
     if (l < r)
     {
-       
-        int m = l+(r-l)/2;
- 
-        
+
+        int m = l + (r - l) / 2;
+
         mergeSort(arr, l, m);
-        mergeSort(arr, m+1, r);
- 
+        mergeSort(arr, m + 1, r);
+
         merge(arr, l, m, r);
     }
 }
- 
 
 void show(int A[], int size)
 {
     int i;
-    for (i=0; i < size; i++)
-    cout<<A[i]<<"\n";
+    for (i = 0; i < size; i++)
+        cout << A[i] << "\n";
 }
- 
 
 int main()
 {
-     int size;
-    cout<<"\nEnter the number of elements : ";
+    int size;
+    cout << "\nEnter the number of elements : ";
 
-    cin>>size;
+    cin >> size;
 
     int arr[size];
-    
-    cout<<"\nEnter the unsorted elements : ";
+
+    cout << "\nEnter the unsorted elements : ";
 
     for (int i = 0; i < size; ++i)
     {
-        cout<<"\n";
-        cin>>arr[i];
+        cout << "\n";
+        cin >> arr[i];
     }
 
     mergeSort(arr, 0, size);
- 
-    cout<<"Sorted array\n";
+
+    cout << "Sorted array\n";
     show(arr, size);
     return 0;
 }
