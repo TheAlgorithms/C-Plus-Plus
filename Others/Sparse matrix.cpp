@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-  int m,n;
-  int counterZeros=0;
+  int m, n;
+  int counterZeros = 0;
   cout << "Enter dimensions of matrix (seperated with space): ";
   cin >> m >> n;
   int a[m][n];
@@ -14,28 +14,28 @@ int main()
   cout << "\n";
 
   // reads the matrix from stdin
-  for(int i=0;i<m;i++)
+  for (int i = 0; i < m; i++)
   {
-    for(int j=0;j<n;j++)
+    for (int j = 0; j < n; j++)
     {
-        cout << "element? ";
-        cin >> a[i][j];
+      cout << "element? ";
+      cin >> a[i][j];
     }
   }
 
   // counts the zero's
-  for(int i=0;i<m;i++)
+  for (int i = 0; i < m; i++)
   {
-    for(int j=0;j<n;j++)
+    for (int j = 0; j < n; j++)
     {
-      if(a[i][j]==0)
-       counterZeros++; //Counting number of zeroes
+      if (a[i][j] == 0)
+        counterZeros++; //Counting number of zeroes
     }
   }
 
   // makes sure the matrix is a sparse matrix
-  if(counterZeros>((m*n)/2)) //Checking for sparse matrix
-   cout << "Sparse matrix";
+  if (counterZeros > ((m * n) / 2)) //Checking for sparse matrix
+    cout << "Sparse matrix";
   else
-   cout << "Not a sparse matrix";
+    cout << "Not a sparse matrix";
 }

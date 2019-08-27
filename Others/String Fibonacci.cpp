@@ -2,7 +2,6 @@
 //The method used is manual addition with carry and placing it in a string which is called string addition
 //This makes it have no bounds or limits
 
-
 #include <iostream>
 #include <string>
 
@@ -69,9 +68,8 @@ void fib_Accurate(long long n)
         fibMinus2 = fibMinus1;
         fibMinus1 = tmp;
     }
-    cout <<  fibMinus2;
+    cout << fibMinus2;
 }
-
 
 int main()
 {

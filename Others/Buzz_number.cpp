@@ -3,15 +3,15 @@
 using namespace std;
 int main()
 {
-  int n,t;
+  int n, t;
   cin >> t;
-  while(t--)
+  while (t--)
   {
-   cin >> n;
-   if((n%7==0)||(n%10==7))
-    cout << n << " is a buzz number" << endl;
-   else
-    cout << n << " is not a buzz number" << endl;
+    cin >> n;
+    if ((n % 7 == 0) || (n % 10 == 7))
+      cout << n << " is a buzz number" << endl;
+    else
+      cout << n << " is not a buzz number" << endl;
   }
   return 0;
 }

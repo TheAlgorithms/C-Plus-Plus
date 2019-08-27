@@ -1,6 +1,6 @@
 //0-1 Knapsack problem - Dynamic programming
 //#include <bits/stdc++.h>
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 //void Print(int res[20][20], int i, int j, int capacity)
@@ -15,7 +15,7 @@ using namespace std;
 //		{
 //			cout<<i<<" ";
 //		}
-//		
+//
 //		Print(res, i-1, j-1, capacity-i);
 //	}
 //	else if(res[i-1][j]>res[i][j-1])
@@ -28,43 +28,44 @@ using namespace std;
 //	}
 //}
 
-int Knapsack(int capacity,int n,int weight[],int value[]){
+int Knapsack(int capacity, int n, int weight[], int value[])
+{
 	int res[20][20];
-	for (int i = 0; i < n+1; ++i)
+	for (int i = 0; i < n + 1; ++i)
 	{
-		for (int j = 0; j < capacity+1; ++j)
+		for (int j = 0; j < capacity + 1; ++j)
 		{
-			if(i==0||j==0)
+			if (i == 0 || j == 0)
 				res[i][j] = 0;
-			else if(weight[i-1]<=j)
-				res[i][j] = max(value[i-1]+res[i-1][j-weight[i-1]], res[i-1][j]);
+			else if (weight[i - 1] <= j)
+				res[i][j] = max(value[i - 1] + res[i - 1][j - weight[i - 1]], res[i - 1][j]);
 			else
-				res[i][j] = res[i-1][j];
+				res[i][j] = res[i - 1][j];
 		}
 	}
-//	Print(res, n, capacity, capacity);
-//	cout<<"\n";
+	//	Print(res, n, capacity, capacity);
+	//	cout<<"\n";
 	return res[n][capacity];
 }
 int main()
 {
 	int n;
-	cout<<"Enter number of items: ";
-	cin>>n;
+	cout << "Enter number of items: ";
+	cin >> n;
 	int weight[n], value[n];
-	cout<<"Enter weights: ";
+	cout << "Enter weights: ";
 	for (int i = 0; i < n; ++i)
 	{
-		cin>>weight[i];
+		cin >> weight[i];
 	}
-	cout<<"Enter values: ";
+	cout << "Enter values: ";
 	for (int i = 0; i < n; ++i)
 	{
-		cin>>value[i];
+		cin >> value[i];
 	}
 	int capacity;
-	cout<<"Enter capacity: ";
-	cin>>capacity;
-	cout<<Knapsack(capacity,n,weight,value);
+	cout << "Enter capacity: ";
+	cin >> capacity;
+	cout << Knapsack(capacity, n, weight, value);
 	return 0;
 }

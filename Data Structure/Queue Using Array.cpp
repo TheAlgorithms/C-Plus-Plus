@@ -1,48 +1,47 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int queue[10];
-int front=0;
-int rear=0;
+int front = 0;
+int rear = 0;
 
 void Enque(int x)
 {
-	if(rear==10)
+	if (rear == 10)
 	{
-		cout<<"\nOverflow";
+		cout << "\nOverflow";
 	}
 	else
 	{
-		queue[rear++]=x;
+		queue[rear++] = x;
 	}
 }
 
 void Deque()
 {
-	if (front==rear)
+	if (front == rear)
 	{
-		cout<<"\nUnderflow";
+		cout << "\nUnderflow";
 	}
-	
+
 	else
 	{
-		cout<<"\n"<<queue[front++]<<" deleted";
+		cout << "\n"
+			 << queue[front++] << " deleted";
 		for (int i = front; i < rear; i++)
 		{
-			queue[i-front]=queue[i];
+			queue[i - front] = queue[i];
 		}
-		rear=rear-front;
-		front=0;
+		rear = rear - front;
+		front = 0;
 	}
-
-
 }
 
 void show()
 {
 	for (int i = front; i < rear; i++)
 	{
-		cout<<queue[i]<<"\t";
+		cout << queue[i] << "\t";
 	}
 }
 
@@ -51,28 +50,26 @@ int main()
 	int ch, x;
 	do
 	{
-		cout<<"\n1. Enque";
-		cout<<"\n2. Deque";
-		cout<<"\n3. Print";
-		cout<<"\nEnter Your Choice : ";
-		cin>>ch;
-		if (ch==1)
+		cout << "\n1. Enque";
+		cout << "\n2. Deque";
+		cout << "\n3. Print";
+		cout << "\nEnter Your Choice : ";
+		cin >> ch;
+		if (ch == 1)
 		{
-			cout<<"\nInsert : ";
-			cin>>x;
+			cout << "\nInsert : ";
+			cin >> x;
 			Enque(x);
 		}
-		else if (ch==2)
+		else if (ch == 2)
 		{
 			Deque();
 		}
-		else if (ch==3)
+		else if (ch == 3)
 		{
 			show();
 		}
-	}
-	while(ch!=0);
+	} while (ch != 0);
 
 	return 0;
 }
-
