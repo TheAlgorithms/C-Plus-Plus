@@ -1,4 +1,5 @@
 #include<iostream>
+#include <list>
 using namespace std;
 
 
@@ -8,27 +9,6 @@ struct node
 	node *left;
 	node *right;
 };
-
-struct queue
-{
-	node *t[100];
-	int front;
-	int rear;
-};
-
-queue q;
-
-
-void enqueue(node *n)
-{
-	q.t[q.rear++]=n;
-}
-
-node * dequeue()
-{
-	return (q.t[q.front++]);
-}
-
 
 
 void CreateTree(node *curr, node *n, int x, char pos)
@@ -64,13 +44,21 @@ void CreateTree(node *curr, node *n, int x, char pos)
 
 void BFT(node *n)
 {
-	if(n!=NULL)
-	{
-		cout<<n->val<<"  ";
-		enqueue(n->left);
-		enqueue(n->right);
-		BFT(dequeue());
-	}
+    list<node*> queue;
+
+    queue.push_back(n);
+
+    while(!queue.empty())
+    {
+        n = queue.front();
+        cout << n->val << "  ";
+        queue.pop_front();
+
+        if(n->left != NULL)
+            queue.push_back(n->left);
+        if(n->right != NULL)
+            queue.push_back(n->right);
+    }
 }
 
 void Pre(node *n)
@@ -108,8 +96,6 @@ void Post(node *n)
 
 int main()
 {
-	q.front=0;
-	q.rear=0;
 	int value;
 	int ch;
 	node *root=new node;
