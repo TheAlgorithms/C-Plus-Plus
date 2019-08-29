@@ -2,14 +2,16 @@
 using namespace std;
 int fib(int n)
 {
-	int res[n + 1];
+	int res[3];
 	res[0] = 0;
 	res[1] = 1;
 	for (int i = 2; i <= n; i++)
 	{
-		res[i] = res[i - 1] + res[i - 2];
+		res[2] = res[1] + res[0];
+		res[0] = res[1];
+		res[1] = res[2];
 	}
-	return res[n];
+	return res[1];
 }
 int main(int argc, char const *argv[])
 {
