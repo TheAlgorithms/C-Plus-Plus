@@ -1,7 +1,7 @@
 #include <iostream>
 #include "ClassWithSingleType.hpp"
 #include <string>
-#include <vector>
+
 using namespace std;
 int main(){
     SingleType<int> myInt(3);

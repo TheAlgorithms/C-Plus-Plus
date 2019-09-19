@@ -18,10 +18,7 @@ class SingleType
 	SingleType() {}
 
 	~SingleType() {}
-#ifdef __STL_MEMBER_TEMPLATES
-template <class U>
-  SingleType(const SingleType<_U>& p) : value(p.value){}
-#endif
+
 	SingleType& operator=(const SingleType& x) {
 		value = x.value;
 		return *this;
