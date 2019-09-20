@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	int n;
-	short swap_check = 0;
+	short swap_check = 1;
 	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
 	vector<int> numbers;
@@ -22,7 +22,7 @@ int main()
 	}
 
 	//Bubble Sorting
-	for (int i = 0; i < n; i++)
+	for (int i = 0; (i < n) && (swap_check == 1); i++)
 	{
 		swap_check = 0;
 		for (int j = 0; j < n - 1 - i; j++)
@@ -32,10 +32,6 @@ int main()
 				swap_check = 1;
 				swap(numbers[j], numbers[j + 1]);
 			}
-		}
-		if (swap_check == 0)
-		{
-			break;
 		}
 	}
 
