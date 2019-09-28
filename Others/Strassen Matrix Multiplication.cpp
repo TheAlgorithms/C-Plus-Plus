@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
-Multiply(int A[][], int B[][], int n)
+//TODO I don't even know where to start with this to make it compile.
+// It misses the core aspect of the algorithm (split into sub-matrices and recurse) completely
+// see https://en.wikipedia.org/wiki/Strassen_algorithm
+
+/*Multiply(int A[][], int B[][], int n)
 {
 	if (n == 2)
 	{
@@ -53,4 +57,4 @@ int main()
 
 	Multiply(A, B, n);
 	return 0;
-}
+}*/
