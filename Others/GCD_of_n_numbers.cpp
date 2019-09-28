@@ -1,9 +1,11 @@
 //This program aims at calculating the GCD of n numbers by division method
 #include <iostream>
-using namepsace std;
+using namespace std;
 int main()
 {
+  unsigned int n;
   cout << "Enter value of n:" << endl;
+
   cin >> n;
   int a[n];
   int i, j, gcd;

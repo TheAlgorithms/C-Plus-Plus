@@ -3,11 +3,12 @@
 //and swaps it with the lowest and highest available position iteratively or recursively
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 //Iterative Version
 
-void CocktailSelectionSort(vector<int> &vec, int low, int high)
+void CocktailSelectionSortIterative(vector<int> &vec, int low, int high)
 {
   while (low <= high)
   {
@@ -46,7 +47,7 @@ void CocktailSelectionSort(vector<int> &vec, int low, int high)
 
 //Recursive Version
 
-void CocktailSelectionSort(vector<int> &vec, int low, int high)
+void CocktailSelectionSortRecursive(vector<int> &vec, int low, int high)
 {
 
   if (low >= high)
@@ -80,7 +81,7 @@ void CocktailSelectionSort(vector<int> &vec, int low, int high)
     swap(vec[low], vec[high]);
   }
 
-  CocktailSelectionSort(vec, low + 1, high - 1);
+  CocktailSelectionSortRecursive(vec, low + 1, high - 1);
 }
 
 //main function, select any one of iterative or recursive version
@@ -98,7 +99,9 @@ int main()
     cin >> v[i];
   }
 
-  CocktailSelectionSort(v, 0, n - 1);
+  // Todo add switch/selection for algorithm here CocktailSelectionSortRecursive(v, 0, n - 1);
+  CocktailSelectionSortIterative(v, 0, n - 1);
+
   cout << "Sorted elements are\n";
   for (int i = 0; i < n; ++i)
   {

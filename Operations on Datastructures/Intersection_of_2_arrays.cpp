@@ -2,17 +2,17 @@
 int main()
 {
   int i, j, m, n;
-  cout << "Enter size of array 1:";
-  cin >> m;
-  cout << "Enter size of array 2:";
-  cin >> n;
+  std::cout << "Enter size of array 1:";
+  std::cin >> m;
+  std::cout << "Enter size of array 2:";
+  std::cin >> n;
   int a[m];
   int b[n];
-  cout << "Enter elements of array 1:";
+  std::cout << "Enter elements of array 1:";
   for (i = 0; i < m; i++)
-    cin >> a[i];
+    std::cin >> a[i];
   for (i = 0; i < n; i++)
-    cin >> b[i];
+    std::cin >> b[i];
   i = 0;
   j = 0;
   while ((i < m) && (j < n))
@@ -23,7 +23,7 @@ int main()
       j++;
     else
     {
-      cout << a[i++] << " ";
+      std::cout << a[i++] << " ";
       j++;
     }
   }

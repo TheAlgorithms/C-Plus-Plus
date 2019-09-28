@@ -58,7 +58,7 @@ void display(int mod)
 	}
 }
 
-int hash(int x, int mod)
+int modhash(int x, int mod)
 {
 	return x % mod;
 }
@@ -106,20 +106,20 @@ int main(void)
 		case 1:
 			cout << "Enter element to add = ";
 			cin >> x;
-			h = hash(x, mod);
+			h = modhash(x, mod);
 			h = fabs(h);
 			add(x, h);
 			break;
 		case 2:
 			cout << "Enter element to search = ";
 			cin >> x;
-			h = hash(x, mod);
+			h = modhash(x, mod);
 			find(x, h);
 			break;
 		case 3:
 			cout << "Enter element to generate hash = ";
 			cin >> x;
-			cout << "Hash of " << x << " is = " << hash(x, mod);
+			cout << "Hash of " << x << " is = " << modhash(x, mod);
 			break;
 		case 4:
 			display(mod);
