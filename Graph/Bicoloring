@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+vector<int> resp;
+vector<vector<int> > adj;
+vector<int> vis;
+
+bool dfs(int x){
+	int tam = adj[x].size();
+	bool ans = true;
+	for(int i=0; i<tam; i++){
+		int v = adj[x][i];
+		if(vis[v] == -1){
+			vis[v] = 1-vis[x];
+			ans = ans && dfs(v);
+		}
+		else if(vis[v] == vis[x]){
+			return false;
+		}	
+	}
+	return ans;
+}
+
+ 
+int main(){
+  vector<pair<int, int> > aux;
+	int nodes, edges;
+	cin >> nodes >> edges;
+	resp.resize(edges);
+	adj.resize(nodes);
+	for(int i=0; i<edges; i++){
+		int a, b;
+		cin >> a >> b;
+		a--;b--;
+		aux.push_back({a, b});
+		adj[a].push_back(b);
+		adj[b].push_back(a);
+	}
+	vis.resize(nodes);
+	for(int i=0; i<nodes; i++){
+		vis[i] = -1;
+	}
+	vis[0] = 1;
+	bool ans = dfs(0);
+	if(!ans){
+		printf("NOT BICOLORABLE\n");
+	}
+	else{
+		printf("BICOLORABLE\n");
+	}
+	
+	
+	
+ 
+ 
+	return 0;
+} 	
