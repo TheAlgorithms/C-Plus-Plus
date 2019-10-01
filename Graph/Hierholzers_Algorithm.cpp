@@ -1,5 +1,8 @@
+
 using namespace std;
+
 #include <bits/stdc++.h>//to implement stacks 
+
 void circuit(vector<vector<int> > adj)
 {
     map<int,int> edge;
@@ -57,6 +60,7 @@ int main(){
     adj1[5].push_back(0); 
     adj1[6].push_back(4); 
     circuit(adj1); 
-  
+    //expected output
+    // 0 -> 6 -> 4 -> 5 -> 0 -> 1 -> 2 -> 3 -> 4 -> 2 -> 0
     return 0; 
 }
