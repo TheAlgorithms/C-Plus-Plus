@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const int N = 1e5;
+int sieve[N];
+
+int main(){
+  memset(sieve, 0, sizeof(sieve));
+  
+  for(int i=2; i*i<N; i++){
+    for(int j=i+1; j<N; j++){
+      if(sieve[j] == 0){
+        if(j%i == 0){
+          sieve[j] = 1;
+        }
+      }
+    }
+  }
+
+  for(int i=2; i<N; i++){
+    if(sieve[i] == 0){
+      printf("%d\n", i);
+    }
+  }
+
+
+}
