@@ -1,0 +1,32 @@
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+
+int jumpSearch(int* search_space, int search_value, int search_space_size) {
+  int block_size = sqrt(search_space_size);
+  int prev = 0;
+  while (search_space[std::min(block_size, search_space_size) - 1] <
+         search_value) {
+    prev = block_size;
+    block_size += sqrt(search_space_size);
+    if (prev >= search_space_size) return -1;
+  }
+  
+  while (search_space[prev] < search_value) {
+    prev++;
+    if (prev == std::min(block_size, search_space_size)) return -1;
+  }
+  if (search_space[prev] == search_value) return prev;
+  return -1;
+}
+
+int main() {
+  int search_space[] = {0,  1,  1,  2,  3,   5,   8,   13,
+                        21, 34, 55, 89, 144, 233, 377, 610};
+  int search_value = 55;
+  int search_space_size = sizeof(search_space) / sizeof(search_space[0]);
+  int index = jumpSearch(search_space, search_value, search_space_size);
+  std::cout << "Number " << search_value << " is at index " << index
+            << std::endl;
+  return 0;
+}
