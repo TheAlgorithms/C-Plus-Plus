@@ -9,6 +9,7 @@ class linked_list {
     node *next;
   };
 
+ protected:
   node *start;
 
  public:
