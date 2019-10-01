@@ -7,7 +7,7 @@ struct node
 	node *next;
 };
 
-node *start;
+node *start,*ch;
 
 void insert(int x)
 {
@@ -113,6 +113,28 @@ void reverse()
 	start = first;
 }
 
+int pa_check(node *t,int con){
+  if(t==NULL)
+    return 1;
+  con=pa_check(t->next,con);
+  if(con==0)
+    return 0;
+  if(t->val!=ch->val){
+    con=0;
+  }
+  ch=ch->next;
+  return con;
+}
+void palindrome(){
+  node *t=start;
+  ch=start;
+  int con=pa_check(t,1);
+  if(con==1)
+    cout<<"Palindrome"<<endl;
+  else 
+    cout<<"NOT Palindrome"<<endl;
+}
+
 int main()
 {
 	int choice, x;
@@ -123,6 +145,7 @@ int main()
 		cout << "\n3. Search";
 		cout << "\n4. Print";
 		cout << "\n5. Reverse";
+    cout << "\n6. Palindrome Check";
 		cout << "\n0. Exit";
 		cout << "\n\nEnter you choice : ";
 		cin >> choice;
@@ -154,6 +177,8 @@ int main()
 			show();
 			cout << "\n";
 			break;
+    case 6:
+      palindrome();
 		}
 	} while (choice != 0);
 
