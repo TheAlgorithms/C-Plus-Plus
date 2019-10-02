@@ -1,18 +1,24 @@
 #include <iostream>
 using namespace std;
-int binary_search(int a[], int l, int r, int key)
+int binary_search(int *a, int s, int e, int key)  //'s' is left most element and 'e' is right most element of the array to be searched
 {
-	while (l <= r)
-	{
-		int m = l + (r - l) / 2;
-		if (key == a[m])
-			return m;
-		else if (key < a[m])
-			r = m - 1;
-		else
-			l = m + 1;
-	}
-	return -1;
+    int mid=(s+e)/2;
+    if(s>e)
+    {
+        return -1;
+    }
+    if(key==a[mid])
+    {
+        return mid;
+    }
+    if(key>a[mid])
+    {
+         binary_search(a,mid+1,e,key);
+    }
+    else if(key<a[mid])
+    {
+         binary_search(a,s,mid-1,key);
+    }
 }
 int main(int argc, char const *argv[])
 {
