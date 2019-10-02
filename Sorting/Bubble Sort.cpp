@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	int n;
+	long int n;  
 	short swap_check = 1;
 	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
@@ -15,14 +15,14 @@ int main()
 	int num;
 
 	//Input
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)    // Entering all inputs in the vector 'numbers' 
 	{
 		cin >> num;
 		numbers.push_back(num);
 	}
 
 	//Bubble Sorting
-	for (int i = 0; (i < n) && (swap_check == 1); i++)
+	for (int i = 0; (i < n-1) && (swap_check == 1); i++)
 	{
 		swap_check = 0;
 		for (int j = 0; j < n - 1 - i; j++)
@@ -31,6 +31,10 @@ int main()
 			{
 				swap_check = 1;
 				swap(numbers[j], numbers[j + 1]);
+			}
+			if(swap_check==0)
+			{
+				break;
 			}
 		}
 	}
