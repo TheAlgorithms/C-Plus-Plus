@@ -4,25 +4,30 @@
 using namespace std; 
   
 
-struct Node { 
+class Node { 
+    public:
     int data; 
     struct Node* next; 
 }; 
   
-void push(struct Node** head_ref, int new_data) 
+void push(Node** head_ref, int new_data) 
 { 
     
-    struct Node* new_node = new Node; 
+    Node* new_node = new Node; 
+
     new_node->data = new_data; 
+
     new_node->next = (*head_ref); 
+  
     (*head_ref) = new_node; 
 } 
   
- 
+// Returns true if there is a loop in linked list 
+// else returns false. 
 bool detectLoop(struct Node* h) 
 { 
-    struct Node* temp1 = h;
-    struct Node* temp2 = h;
+    Node* temp1 = h;
+    Node* temp2 = h;
     if (h == NULL){
             return false;
         }
@@ -40,7 +45,7 @@ bool detectLoop(struct Node* h)
 int main() 
 { 
     
-    struct Node* head = NULL; 
+    Node* head = NULL; 
   
     push(&head, 20); 
     push(&head, 4); 
