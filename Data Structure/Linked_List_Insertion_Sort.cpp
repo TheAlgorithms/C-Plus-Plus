@@ -1,5 +1,5 @@
 /*
-Author: Nirmal Kumar Joshi
+Author: Anshu Kumar
 Sorting a Linked List using Insertion Sort in C++.
 Example:
 Consider a singly linked list
