@@ -1,0 +1,51 @@
+
+//To Check a number is Prime or not.
+int isprime(long int n)
+{
+  
+  //if n is 2 or 3 than it is a prime and the function will return 1.
+    if(n == 2)
+        return 1;
+    if(n == 3)
+        return 1;
+        
+   //if n has 2 or 3 as it's factor than it is a not prime and the function will return 0.
+    if(n % 2 == 0)
+        return 0;
+    if(n % 3 == 0)
+        return 0;
+
+//All even factors are eliminated because we have checked for n%2.
+//now we have to check for odd numbers ,which are not a multiple of 3.
+//Because we have already checked for n%3 ,so the number will not have a factor which is multiple of 3.
+
+    long int i = 5;
+    long int w = 2;
+
+//we are running a while loop till square root of n
+    while(i * i <= n)
+    {
+      //To check if i divides n or not.
+       if(n % i == 0)
+            return 0;
+  `   //to skip the even factors we are adding a even number to i which is odd.
+      //odd + even results odd
+        i += w;
+        
+       //each time we are changing value of w to skip multiples of 3
+       //initially w is 2 and i is 5
+       // After first iteration i becomes 5+2 = 7
+       //if we do not change the value of w and add 2 to 7,
+       //it will result to 9 which is a factor of 3, that is what we want to avoid.
+       //So we are toggling the value of w between 2,4 
+       //7+4 = 11
+       //then again w becomes 2
+       //i=11+2=13 and so on.
+       
+       
+        w = 6 - w;
+    }
+    
+    
+    return 1;
+}
