@@ -1,77 +1,63 @@
 #include <iostream>
-#define N 4
+#include <vector>
+#include <set>
 using namespace std;
 
-void printSolution(int board[N][N])
-{
-    cout << "\n";
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-            cout << "" << board[i][j];
+class NQueen{
+    vector<vector<int> > board;
+    set<int> column,main_diagonal,opposite_diagonal;
+    void printSolution() {
+        int N = board.size();
         cout << "\n";
-    }
-}
-
-bool isSafe(int board[N][N], int row, int col)
-{
-    int i, j;
-
-    /* Check this row on left side */
-    for (i = 0; i < col; i++)
-        if (board[row][i])
-            return false;
-
-    /* Check upper diagonal on left side */
-    for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
-        if (board[i][j])
-            return false;
-
-    /* Check lower diagonal on left side */
-    for (i = row, j = col; j >= 0 && i < N; i++, j--)
-        if (board[i][j])
-            return false;
-
-    return true;
-}
-
-void solveNQ(int board[N][N], int col)
-{
-
-    if (col >= N)
-    {
-        printSolution(board);
-        return;
-    }
-
-    /* Consider this column and try placing
-       this queen in all rows one by one */
-    for (int i = 0; i < N; i++)
-    {
-        /* Check if queen can be placed on
-          board[i][col] */
-        if (isSafe(board, i, col))
-        {
-            /* Place this queen in board[i][col] */
-            //            cout<<"\n"<<col<<"can place"<<i;
-            board[i][col] = 1;
-
-            /* recur to place rest of the queens */
-            solveNQ(board, col + 1);
-
-            board[i][col] = 0; // BACKTRACK
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                cout << board[i][j]<<" ";
+            cout << "\n";
         }
     }
-}
+    bool addParameters(int row,int col){
+        if(column.find(col)!=column.end() 
+            || main_diagonal.find(row-col)!=main_diagonal.end() 
+            || opposite_diagonal.find(row+col)!=opposite_diagonal.end()){
+            return false;
+        }
+        column.insert(col);
+        main_diagonal.insert(row-col);
+        opposite_diagonal.insert(row+col);
+        return true;
+    }
+    void removeParameters(int row,int col){
+        column.erase(col);
+        main_diagonal.erase(row-col);
+        opposite_diagonal.erase(row+col);
+    }
+    void _solveNQ(int row){
+        if(row==board.size()){
+            printSolution();
+            return;
+        }
+        for(int i=0;i<board.size();i++){
+            board[row][i] = 1;
+            if(addParameters(row,i)){
+                _solveNQ(row+1);
+                removeParameters(row,i);
+            }
+            board[row][i] = 0;
+        }
+    }
+public:
+    void solveNQ(int size=8){
+        board = vector<vector<int> >(size,vector<int>(size,0));
+        column.clear();
+        main_diagonal.clear();
+        opposite_diagonal.clear();
+        _solveNQ(0);
+    }
+};
 
 int main()
 {
-
-    int board[N][N] = {{0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0}};
-
-    solveNQ(board, 0);
+    NQueen nqueen;
+    nqueen.solveNQ(8);
     return 0;
 }
