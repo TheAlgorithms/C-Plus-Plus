@@ -2,7 +2,7 @@
 #define N 4
 using namespace std;
 
-void printSolution(int board[N][N])
+void printSolution(int board[N][N])  // To Print The Position Of Queens On 4x4 Board Where 1 Represents Queen's Position 
 {
     cout << "\n";
     for (int i = 0; i < N; i++)
@@ -13,7 +13,7 @@ void printSolution(int board[N][N])
     }
 }
 
-bool isSafe(int board[N][N], int row, int col)
+bool isSafe(int board[N][N], int row, int col) // Function To Check Whether We Can Place Queen at Row - row and Column - col 
 {
     int i, j;
 
@@ -35,7 +35,7 @@ bool isSafe(int board[N][N], int row, int col)
     return true;
 }
 
-void solveNQ(int board[N][N], int col)
+void solveNQ(int board[N][N], int col) // Main Recursive Function To Print All Possible 4x4 Matrix 
 {
 
     if (col >= N)
@@ -67,7 +67,7 @@ void solveNQ(int board[N][N], int col)
 int main()
 {
 
-    int board[N][N] = {{0, 0, 0, 0},
+    int board[N][N] = {{0, 0, 0, 0},     // Declaring 4x4 Matrix 
                        {0, 0, 0, 0},
                        {0, 0, 0, 0},
                        {0, 0, 0, 0}};
