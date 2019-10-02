@@ -1,0 +1,156 @@
+// Demonstrate Sorting in vector of pairs in c++.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+//Sort vector by first element in descending order.
+bool sortinrev(pair<long int,long int> &a,  
+               pair<long int,long int> &b) 
+{ 
+    //return the larger of two number i.e. max(a.first,b.first).
+       return (a.first > b.first); 
+} 
+
+
+//Sort vector by Second element in ascending order.
+bool sortbysecinasc(pair<long int,long int> &a,  
+               pair<long int,long int> &b) 
+{ 
+    //return the Smaller of two number i.e. min(a.second,b.second).
+       return (a.second < b.second); 
+} 
+
+
+//Sort vector by Second element in descending order.
+bool sortbysecinrev(pair<long int,long int> &a,  
+               pair<long int,long int> &b) 
+{ 
+    //return the larger of two number i.e. max(a.second,b.second).
+       return (a.second > b.second); 
+} 
+
+//Sort vector by Second element in descending order and sort the same elements in ascending order of their
+//first element.
+bool sortrepeating(pair<long int,long int> &a,  
+               pair<long int,long int> &b) 
+{ 
+    //if the second element is same for a and b ,then it will check the first element.
+    if(a.second==b.second)
+        return (a.first < b.first);
+    else
+       return (a.second > b.second); 
+} 
+
+
+int main(){
+    
+    vector<pair<long int,long int>> v;
+    long int a,b;
+    
+    for(int i=0;i<9;i++){
+        
+        //Take Input from user.
+        cin>>a>>b;
+        // Insert a pair of numbers using push_back for insertion in vector.
+        //make_pair to make pair of two datatypes(may be different).
+        v.push_back(make_pair(a,b));  
+        
+    }
+    
+    //To calculate the size of a vector we use the function size()
+    int len = v.size();
+    
+    //display elements of the vector pair before sorting.
+    cout<<"--------Vector Before Sorting--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in the order they were entered.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+
+//-----------------------------------------------------------------------------------------------   
+   
+    //Sorting the elements in Ascending order by first element of the pair.
+    //We will use sort function to sort the vector pair.
+    //sort(iterator pointing to the start of the list,iterator pointing to the end of the list,condition if any for sorting);
+    //By default sort() function sorts the list in Ascending order.
+    //For vector pair it sorts by first element if nothing is mentioned.
+    sort(v.begin(),v.end());
+    
+    //display elements of the vector pair After sorting in Ascending order by first element.
+    cout<<"--------Vector After Sorting in Ascending order by First element--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in Ascending order of First Element.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+ 
+//-----------------------------------------------------------------------------------------------   
+    
+    //Sorting the elements in Ascending order by second element of the pair.
+    //We will use the sortbysecinasc() function that we have created.
+    //It will compare the second element of the pair for sorting.
+    sort(v.begin(),v.end(),sortbysecinasc);
+    
+    //display elements of the vector pair After sorting in Ascending order by Second element.
+    cout<<"--------Vector After Sorting in Ascending order by Second element--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in Ascending order of Second Elements.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+    
+//-----------------------------------------------------------------------------------------------   
+
+    //Sorting the elements in Descending order by First element of the pair.
+    //We will use the sortinrev() function that we have created.
+    //It will compare the First element of the pair for sorting in Descending order.
+    sort(v.begin(),v.end(),sortinrev);
+    
+    //display elements of the vector pair After sorting in Descending order by First element.
+    cout<<"--------Vector After Sorting in Descending order by First element--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in Descending order of First element.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+    
+//-----------------------------------------------------------------------------------------------   
+    
+    //Sorting the elements in Descending order by Second element of the pair.
+    //We will use the sortbysecinrev() function that we have created.
+    //It will compare the Second element of the pair for sorting in Descending order.
+    sort(v.begin(),v.end(),sortbysecinrev);
+    
+    //display elements of the vector pair After sorting in Descending order by Second element.
+    cout<<"--------Vector After Sorting in Descending order by Second element--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in Descending order of Second element.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+
+//-----------------------------------------------------------------------------------------------   
+
+    //Till now we have sorted the elements by either first or second element of the pair.
+    //what if v[0].second and v[1].second are same or any number of elements are same 
+    //in the first or second element of the pair.
+    //we will Slightly modify the function to check for the condition when the elements are same.
+    sort(v.begin(),v.end(),sortrepeating);
+    
+    //display elements of the vector pair After sorting in Descending order by Second element.
+    //Repeations sorted.
+    cout<<"--------Vector After Sorting in Descending order by Second elemen with Repeations sortedt--------"<<endl;
+    cout<<"First"<<"    "<<"Second"<<endl;
+    for(int i=0;i<len;i++){
+        //To Display elements in Descending order of Second element with Repeations sorted.
+        cout<<v[i].first<<"          "<<v[i].second<<endl;
+    }
+    
+//-----------------------------------------------------------------------------------------------   
+    
+    //We can modify the function inside sort according to our requirements.
+    
+    
+    
+}
