@@ -2,11 +2,14 @@
 
 #include <iostream>
 using namespace std;
+#define LOG(x) cout<< x << endl;
+
 
 int main()
 {
 	int n;
-	cout << "\nEnter the length of your array : ";
+	LOG("\nEnter the length of your array : ")
+	// cout << "\nEnter the length of your array : ";
 	cin >> n;
 	int Array[n];
 	cout << "\nEnter any " << n << " Numbers for Unsorted Array : ";
@@ -31,7 +34,7 @@ int main()
 	}
 
 	//Output
-	cout << "\nSorted Array : ";
+	LOG("\nSorted Array : ");
 	for (int i = 0; i < n; i++)
 	{
 		cout << Array[i] << "\t";
