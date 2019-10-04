@@ -12,8 +12,9 @@ long long int solve(long long int b, long long int p, long long int m) {
 }
 int main(int argc, char const *argv[]) {
     // Compute the result of (b^p) % m
-	long long int b, p, m;
-	while (cin >> b >> p >> m)
-		cout << solve(b%m, p, m) << endl;
+    // b and p are the maximum value of long long int
+    // m is sqrt(2^63 - 1)
+    long long int b = (1ll<<63) - 1, p = b, m = 3037000499;
+    cout << solve(b, p, m) << endl;
 	return 0;
 }
