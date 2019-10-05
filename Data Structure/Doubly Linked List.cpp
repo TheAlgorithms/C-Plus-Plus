@@ -70,11 +70,12 @@ void search(int x)
 void show()
 {
 	node *t = start;
-	while (t != NULL)
+	while (t->next != NULL)
 	{
-		cout << t->val << "\t";
+		cout << t->val << "->";
 		t = t->next;
 	}
+	cout << t->val;
 }
 
 void reverseShow()
@@ -84,13 +85,29 @@ void reverseShow()
 	{
 		t = t->next;
 	}
-	while (t != NULL)
+	while (t != start)
 	{
-		cout << t->val << "\t";
+		cout << t->val << "->";
 		t = t->prev;
 	}
+	cout << start->val;
 }
-
+void reverse()
+{
+	node *temp = NULL;
+	node *ptr = start;
+	while(ptr != NULL)
+	{
+		temp = ptr->prev;
+		ptr->prev = ptr->next;
+		ptr->next = temp;
+		ptr = ptr->prev;
+	}
+	if(temp !=NULL)
+	{
+		start = temp->prev;
+	}
+}
 int main()
 {
 	int choice, x;
@@ -101,6 +118,7 @@ int main()
 		cout << "\n3. Search";
 		cout << "\n4. Forward print";
 		cout << "\n5. Reverse print";
+		cout << "\n6. Reverse";
 		cout << "\n\nEnter you choice : ";
 		cin >> choice;
 		switch (choice)
@@ -122,10 +140,16 @@ int main()
 			search(x);
 			break;
 		case 4:
+			cout<<"\nThe linked list is : ";
 			show();
 			break;
 		case 5:
+			cout<<"\nThe linked list when printed in reverse is : ";
 			reverseShow();
+			break;
+		case 6:
+			cout<<"\nThe linked list when reversed is : ";
+			reverse();
 			break;
 		}
 	} while (choice != 0);
