@@ -1,3 +1,4 @@
+// Time complexity of these algorithm is O(n) 
 #include <iostream>
 using namespace std;
 
