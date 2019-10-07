@@ -22,7 +22,7 @@ int main()
 	}
 
 	//Bubble Sorting
-	for (int i = 0; (i < n) && (swap_check == 1); i++)
+	for (int i = 0; (i < n) && (swap_check == 1); i++)            //complexity is O(n2)
 	{
 		swap_check = 0;
 		for (int j = 0; j < n - 1 - i; j++)
