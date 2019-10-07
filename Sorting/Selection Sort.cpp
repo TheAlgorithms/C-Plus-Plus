@@ -18,7 +18,7 @@ int main()
 	for (int i = 0; i < 6; i++)
 	{
 		int min = i;
-		for (int j = i + 1; j < 6; j++)
+		for (int j = i + 1; j < 6; j++)             //complexity is O(n2)
 		{
 			if (Array[j] < Array[min])
 			{
