@@ -9,7 +9,7 @@
 #include <cstdio>
 using namespace std;
 
-const long long MAX = 93;
+const long long MAX = 93;            //const means MAX cannot be changed during execution of program
 
 long long f[MAX] = {0};
 
