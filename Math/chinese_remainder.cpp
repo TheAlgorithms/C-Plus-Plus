@@ -31,7 +31,6 @@ ll inverse(ll p, ll q) {
         r2 = r;
         t1 = t2;
         t2 = t;
-        cout<<"hi"<<endl;
     } 
     if(r1 != 1 || r2 == 0) {
         cout<< "Inverse doesn't exist" << endl;
