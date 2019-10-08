@@ -131,7 +131,6 @@ int main()
 		case 1:
 			cout << "\nEnter the element to be inserted : ";
 			cin >> x;
-			;
 			insert(x);
 			break;
 		case 2:
