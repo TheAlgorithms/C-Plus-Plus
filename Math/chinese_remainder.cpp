@@ -23,7 +23,7 @@ Calculating inverse p^-1 mod q using extended Euclid's algorithm.
 */
 ll inverse(ll p, ll q) {
     ll r1 = q, r2 = p, quo, r, t1 = 0, t2 = 1, t;
-    while(r1 > 1 || r2 != 0) {
+    while(r1 > 1 && r2 != 0) {
         quo = r1 / r2;
         r = r1 - quo * r2;
         t = t1 - quo * t2;
@@ -31,8 +31,9 @@ ll inverse(ll p, ll q) {
         r2 = r;
         t1 = t2;
         t2 = t;
+        cout<<"hi"<<endl;
     } 
-    if(r1 != 1 || r2 != 0) {
+    if(r1 != 1 || r2 == 0) {
         cout<< "Inverse doesn't exist" << endl;
         exit(0);
     }
