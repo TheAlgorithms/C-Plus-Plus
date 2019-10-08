@@ -6,7 +6,7 @@ using namespace std;
 class Bit
 {
     int n;
-    vector < int > bit;
+    vector<int> bit;
     inline int offset(int x)
     {
         return (x & (-x));
@@ -14,7 +14,7 @@ class Bit
 
     public:
 
-        Bit(vector < int > & arr)
+        Bit(vector<int>& arr)
 	{
             n = arr.size();
             bit.assign(n + 1, 0);
@@ -62,7 +62,7 @@ class Bit
 int main()
 {
     int n = 5;
-    vector <int> arr = { 1, 2, 3, 4, 5 };
+    vector<int> arr = { 1, 2, 3, 4, 5 };
     Bit x(arr);
 
     assert(x.sum_range(0, 0) == 1);
