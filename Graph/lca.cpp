@@ -9,7 +9,7 @@ const int LG = log2(N) + 1;
 struct lca
 {
     int n;
-    vector < int > adj[N]; // Graph
+    vector<int> adj[N]; // Graph
     int up[LG][N]; // build this table
     int level[N]; // get the levels of all of them
 
