@@ -1,52 +1,44 @@
-//Bubble Sort
-
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
+//function definations
+void swap(int* ,int*);
+void bubbleSort(int[],int);
 
-int main()
-{
-	int n;
-	short swap_check = 1;
-	cout << "Enter the amount of numbers to sort: ";
-	cin >> n;
-	vector<int> numbers;
-	cout << "Enter " << n << " numbers: ";
-	int num;
-
-	//Input
-	for (int i = 0; i < n; i++)
-	{
-		cin >> num;
-		numbers.push_back(num);
-	}
-
-	//Bubble Sorting
-	for (int i = 0; (i < n) && (swap_check == 1); i++)
-	{
-		swap_check = 0;
-		for (int j = 0; j < n - 1 - i; j++)
-		{
-			if (numbers[j] > numbers[j + 1])
-			{
-				swap_check = 1;
-				swap(numbers[j], numbers[j + 1]);
-			}
-		}
-	}
-
-	//Output
-	cout << "\nSorted Array : ";
-	for (int i = 0; i < numbers.size(); i++)
-	{
-		if (i != numbers.size() - 1)
-		{
-			cout << numbers[i] << ", ";
-		}
-		else
-		{
-			cout << numbers[i] << endl;
-		}
-	}
-	return 0;
+//the driver code
+int main()  
+{  
+    int arr[] = {35,9,246,5,79,12,0,125,1,68,42,6};  
+    int n = sizeof(arr)/sizeof(arr[0]);
+    cout<<"Original Array:- \n";
+    int i;  
+    for (i = 0; i <n; i++)  
+        cout << arr[i] << " ";  
+    cout << endl;  
+    bubbleSort(arr, n);  
+    cout<<"Sorted array: \n";
+    for (i = 0; i < n; i++)  
+        cout << arr[i] << " ";   
+    return 0;  
 }
+
+//Function to swap the values of two given pointers 
+void swap(int *a, int *b)  
+{  
+    int temp = *a;  
+    *a = *b;  
+    *b = temp;  
+}  
+  
+// the solo function to implement bubble sort  
+void bubbleSort(int arr[], int n)  
+{  
+    int i, j;  
+    for (i = 0; i < n-1; i++)
+    {
+    	for (j = 0; j < n-i-1; j++)  
+            if (arr[j] > arr[j+1])  
+            	swap(&arr[j], &arr[j+1]); 
+    }
+}  
+//-------------------------THANK YOU-------------------------------
