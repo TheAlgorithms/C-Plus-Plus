@@ -22,6 +22,7 @@ void sieve(int N)
     isprime[0] = 0;
     isprime[1] = 0;
     for (int i = 2; i <= N; i++)
+        {
     {
         if (isprime[i])
         {
@@ -45,6 +46,7 @@ void print(int N)
             cout << i << ' ';
         }
     }
+}
     cout << '\n';
 }
 
