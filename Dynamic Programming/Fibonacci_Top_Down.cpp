@@ -17,10 +17,7 @@ int main(int argc, char const *argv[])
 	int n;
 	cout << "Enter n: ";
 	cin >> n;
-	for (int i = 0; i < n + 1; ++i)
-	{
-		arr[i] = -1;
-	}
+	memset(arr,-1,sizeof(arr));
 	cout << "Fibonacci number is " << fib(n) << endl;
 	return 0;
 }
