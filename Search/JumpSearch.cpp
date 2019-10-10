@@ -2,7 +2,8 @@
 //Contributed by Arpit Godghate
 //Github: @arpitg24
 
-#include <bits/stdc++.h> 
+#include<iostream> 
+#include<cmath>
 using namespace std; 
 
 int jumpSearch(int arr[], int x, int n) 
