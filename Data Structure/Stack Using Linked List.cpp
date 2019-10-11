@@ -11,7 +11,9 @@ node *top;
 
 void push(int x)
 {
-	node *n = new node;
+	node *n = new node();
+	if(n == NULL)        // unable to allocate memory  otherwise can cause program crash
+		return;
 	n->val = x;
 	n->next = top;
 	top = n;
@@ -26,8 +28,7 @@ void pop()
 	else
 	{
 		node *t = top;
-		cout << "\n"
-			 << t->val << " deleted";
+		cout << "\n"<< t->val << " deleted";
 		top = top->next;
 		delete t;
 	}
@@ -46,6 +47,7 @@ void show()
 int main()
 {
 	int ch, x;
+	top = NULL;   // initialise stack pointer;
 	do
 	{
 		cout << "\n1. Push";
@@ -67,6 +69,8 @@ int main()
 		{
 			show();
 		}
+		else 
+			cout<<"\n Invalid Input !";
 	} while (ch != 0);
 
 	return 0;
