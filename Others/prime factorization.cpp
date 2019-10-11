@@ -39,7 +39,7 @@ int prime(int n)
 			  sum++;
 		    }
 		    product*=i;
-		    prime(n/i);
+		    prime(n/i);  //recusion
 		}
 		
 	}
