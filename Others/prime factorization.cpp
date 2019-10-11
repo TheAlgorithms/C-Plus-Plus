@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 int prime(int i);
-int sum=0,product=1,k;     //sum is used for not printing last comma
+int sum=0,product=1,number;     //sum is used for not printing last comma
 int main()
 {
 	int n;
 	cout<<"\t Enter A Number ";
 	cin>>n;
-	k=n;
+	number=n;
 	cout<<"\tPrime Factorization Of "<<n<<" = ";
 	prime(n);
 	return 0;
@@ -26,7 +26,7 @@ int prime(int n)
 			}
 			
 		}
-		if(flag==1&&n%i==0&&product!=k)
+		if(flag==1&&n%i==0&&product!=number)
 		{  
 			if(n%i==0&&sum==0)   //for not printing last comma
 			{
