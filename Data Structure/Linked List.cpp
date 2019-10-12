@@ -1,160 +1,220 @@
 #include <iostream>
 using namespace std;
 
-struct node
-{
-	int val;
-	node *next;
+struct Node{
+public:
+	int data;
+	Node* next;
 };
 
-node *start;
-
-void insert(int x)
+class LinkedList
 {
-	node *t = start;
-	if (start != NULL)
-	{
-		while (t->next != NULL)
-		{
-			t = t->next;
+private:
+	Node *head,*tail;
+public:
+	LinkedList(){
+		head=NULL;
+		tail=NULL;
+	}
+	Node *getHead(){
+		return head;
+	}
+	int getSize(){
+		int count=0;
+		for(Node *n=head;n!=NULL;n=n->next)
+			count++;
+
+		return count;
+	}
+	void display(Node *n){
+		cout<<"Linked List :\t";
+		while(n!=NULL){
+			cout<<n->data<<"\t";
+			n=n->next;
 		}
-		node *n = new node;
-		t->next = n;
-		n->val = x;
-		n->next = NULL;
+		cout<<"\n";
 	}
-	else
-	{
-		node *n = new node;
-		n->val = x;
-		n->next = NULL;
-		start = n;
-	}
-}
-
-void remove(int x)
-{
-
-	if (start == NULL)
-	{
-		cout << "\nLinked List is empty\n";
-		return;
-	}
-	else if (start->val == x)
-	{
-		node *temp = start;
-		start = start->next;
-		delete temp;
-		return;
-	}
-
-	node *temp = start, *parent = start;
-
-	while (temp != NULL && temp->val != x)
-	{
-		parent = temp;
-		temp = temp->next;
-	}
-
-	if (temp == NULL)
-	{
-		cout << endl
-			 << x << " not found in list\n";
-		return;
-	}
-
-	parent->next = temp->next;
-	delete temp;
-}
-
-void search(int x)
-{
-	node *t = start;
-	int found = 0;
-	while (t != NULL)
-	{
-		if (t->val == x)
-		{
-			cout << "\nFound";
-			found = 1;
-			break;
+	void addNodeAtEnd(int element){
+		Node *temp=new Node;
+		temp->data=element;
+		temp->next=NULL;
+		if(head==NULL){
+			head=temp;
+			tail=temp;
 		}
-		t = t->next;
+		else{
+			tail->next=temp;
+			tail=tail->next;
+		}
 	}
-	if (found == 0)
-	{
-		cout << "\nNot Found";
+	void addNodeAtFront(int element){
+		Node *temp=new Node;
+		temp->data=element;
+		if(head==NULL){
+			temp->next=NULL;
+			head=temp;
+			tail=temp;
+		}
+		else{
+			temp->next=head;
+			head=temp;
+		}
 	}
-}
+	void addNodeAtAnyPosition(int element,int position){
+		if(position>LinkedList::getSize()||position<=0)
+			cout<<"Size Not Possible\n";
+		else{
+			Node *temp=new Node;
+			temp->data=element;
 
-void show()
-{
-	node *t = start;
-	while (t != NULL)
-	{
-		cout << t->val << "\t";
-		t = t->next;
+			Node *n = head;
+        		while (--position>0){
+            		n=n->next;
+        		}
+        	temp->next=n->next;
+        	n->next=temp;
+    	}
 	}
-}
-
-void reverse()
-{
-	node *first = start;
-	node *second = first->next;
-	while (second != NULL)
-	{
-		node *tem = second->next;
-		second->next = first;
-		first = second;
-		second = tem;
+	void deleteNodeAtHead(){
+		if(head->next==NULL){
+			cout<<"List cannot be empty. It only contains one element";
+			return;
+		}
+		Node *n=head;
+		n=n->next;
+		delete head;
+		head=n;
 	}
-
-	start->next = NULL;
-	start = first;
-}
-
+	void deleteNodeAtTail(){
+		if(head->next==NULL){
+			cout<<"List cannot be empty. It only contains one element";
+			return;
+		}
+		Node *n=head;
+		Node *temp;
+		while(n->next!=NULL){
+			temp=n;
+			n=n->next;
+		}
+		delete n;
+		temp->next=NULL;
+		tail=temp;
+	}
+	void deleteNodeAtPosition(int position){
+		if(head->next==NULL){
+			cout<<"List cannot be empty. It only contains one element";
+			return;
+		}
+		if(position>LinkedList::getSize()||position<0)
+			cout<<"Size Not Possible\n";
+		else{
+			Node *n=head;
+			while(position-1>0){
+				n=n->next;
+				position--;
+			}
+			n->next=n->next->next;
+			delete n;
+		}
+	}
+	void searchAnElement(int element){
+		bool tf=false;
+		for(Node *n=head;n!=NULL;n=n->next){
+			if(n->data==element) tf=true;
+		}
+		tf==true?cout<<"Element Found\n":cout<<"Element not Found\n";
+	}
+	void reverseDisplay(Node *n){
+		if(n==NULL)
+			return;
+		else{
+			reverseDisplay(n->next);
+			cout<<n->data<<"\t";
+		}
+	}
+};
 int main()
 {
-	int choice, x;
-	do
-	{
-		cout << "\n1. Insert";
-		cout << "\n2. Delete";
-		cout << "\n3. Search";
-		cout << "\n4. Print";
-		cout << "\n5. Reverse";
-		cout << "\n0. Exit";
-		cout << "\n\nEnter you choice : ";
-		cin >> choice;
-		switch (choice)
-		{
-		case 1:
-			cout << "\nEnter the element to be inserted : ";
-			cin >> x;
-			insert(x);
-			break;
-		case 2:
-			cout << "\nEnter the element to be removed : ";
-			cin >> x;
-			remove(x);
-			break;
-		case 3:
-			cout << "\nEnter the element to be searched : ";
-			cin >> x;
-			search(x);
-			break;
-		case 4:
-			show();
-			cout << "\n";
-			break;
-		case 5:
-			cout << "The reversed list: \n";
-			reverse();
-			show();
-			cout << "\n";
-			break;
-		}
-	} while (choice != 0);
+	cout<<"Enter the number of nodes you want to create\n";
+	int size;cin>>size;
+
+	cout<<"Enter the elements of Node\n";
+	LinkedList list;
+	int element;int position;
+	for(int i=0;i<size;i++){
+		cin>>element;
+		list.addNodeAtEnd(element);
+	}
+
+	list.display(list.getHead());
+
+	cout<<"Enter element to be inserted at front\n";
+	cin>>element;
+	list.addNodeAtFront(element);
+	list.display(list.getHead());
+
+	cout<<"Enter element to be inserted at end\n";
+	cin>>element;
+	list.addNodeAtEnd(element);
+	list.display(list.getHead());
+
+	cout<<"Enter element and its position\n";
+	cin>>element;
+	cin>>position;
+	list.addNodeAtAnyPosition(element,position);
+	list.display(list.getHead());
+
+	cout<<"Deleting node at head\n";
+	list.deleteNodeAtHead();
+	list.display(list.getHead()	);
+
+	cout<<"Deleting node at tail\n";
+	list.deleteNodeAtTail();
+	list.display(list.getHead()	);
+
+ 	cout<<"Enter the element position to be deleted\n";
+	cin>>position;
+	list.deleteNodeAtPosition(position);
+	list.display(list.getHead());
+
+	cout<<"Enter the element to be searched\n";
+	cin>>element;
+	list.searchAnElement(element);
+
+	cout<<"Reverse display of linked list\n";
+	list.reverseDisplay(list.getHead());
 
 	return 0;
 }
+/*
+Test Run
+Enter the number of nodes you want to create
+3
+Enter the elements of Node
+10
+100
+1000
+Linked List :   10      100     1000
+Enter element to be inserted at front
+0
+Linked List :   0       10      100     1000
+Enter element to be inserted at end
+10000
+Linked List :   0       10      100     1000    10000
+Enter element and its position
+130120
+3
+Linked List :   0       10      100     130120  1000    10000
+Deleting node at head
+Linked List :   10      100     130120  1000    10000
+Deleting node at tail
+Linked List :   10      100     130120  1000
+Enter the element position to be deleted
+2
+Linked List :   10      100     1000
+Enter the element to be searched
+100
+Element Found
+Reverse display of linked list
+1000    100     10
+*/
