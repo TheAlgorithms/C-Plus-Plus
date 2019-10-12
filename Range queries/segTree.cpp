@@ -1,91 +1,99 @@
-#include <bits/stdc++.h>
-#define MAX 4000000
-using namespace std;
-typedef long long ll;
-void ConsTree(ll arr[], ll segtree[], ll low, ll high, ll pos)
-{
-	if (low == high)
-	{
-		segtree[pos] = arr[low];
-		return;
+typedef int Value;
+
+struct SegmentTree
+{	
+	static const int MAXN = 1e5 + 10;
+	int n;
+	int TYPE;
+	vector<Value> st;
+	vector<Value> a;
+	SegmentTree(int num, string type) : n(num), st(4*num + 10), a(num + 10) {
+		if(type == "SUM") TYPE = 1;
+		if(type == "MIN") TYPE = 2;
+		if(type == "MAX") TYPE = 3;
+		if(type == "GCD") TYPE = 4;
 	}
-	ll mid = (low + high) / 2;
-	ConsTree(arr, segtree, low, mid, 2 * pos + 1);
-	ConsTree(arr, segtree, mid + 1, high, 2 * pos + 2);
-	segtree[pos] = segtree[2 * pos + 1] + segtree[2 * pos + 2];
-}
-ll query(ll segtree[], ll lazy[], ll qlow, ll qhigh, ll low, ll high, ll pos)
-{
-	if (low > high)
+
+	inline Value nullval()
+	{
+		if(TYPE == 1) return 0;
+		if(TYPE == 2) return inf;
+		if(TYPE == 3) return -inf;
+		if(TYPE == 4) return 0;
 		return 0;
-	if (qlow > high || qhigh < low)
+	}
+
+	inline Value merge(Value x, Value y)
+	{
+		if(TYPE == 1) return x + y;
+		if(TYPE == 2) return min(x, y);
+		if(TYPE == 3) return max(x, y);
+		if(TYPE == 4) return __gcd(x, y);
 		return 0;
-	if (lazy[pos] != 0)
-	{
-		segtree[pos] += lazy[pos] * (high - low + 1);
-		if (low != high)
-		{
-			lazy[2 * pos + 1] += lazy[pos];
-			lazy[2 * pos + 2] += lazy[pos];
-		}
-		lazy[pos] = 0;
 	}
-	if (qlow <= low && qhigh >= high)
-		return segtree[pos];
-	ll mid = (low + high) / 2;
-	return query(segtree, lazy, qlow, qhigh, low, mid, 2 * pos + 1) + query(segtree, lazy, qlow, qhigh, mid + 1, high, 2 * pos + 2);
-}
-void update(ll segtree[], ll lazy[], ll start, ll end, ll delta, ll low, ll high, ll pos)
-{
-	if (low > high)
-		return;
-	if (lazy[pos] != 0)
+
+	void build(int id, int l, int r)
 	{
-		segtree[pos] += lazy[pos] * (high - low + 1);
-		if (low != high)
+		if(l == r)
 		{
-			lazy[2 * pos + 1] += lazy[pos];
-			lazy[2 * pos + 2] += lazy[pos];
+			st[id] = a[l];
+			return;
 		}
-		lazy[pos] = 0;
+		int mid = (l + r) >> 1;
+		build(id << 1, l, mid);
+		build(id << 1 | 1, mid + 1, r);
+		st[id] = merge(st[id << 1], st[id << 1 | 1]);
 	}
-	if (start > high || end < low)
-		return;
-	if (start <= low && end >= high)
+
+	void update(int id, int l, int r, int pos, Value val, bool increment = false)
 	{
-		segtree[pos] += delta * (high - low + 1);
-		if (low != high)
+		if(l == r)
 		{
-			lazy[2 * pos + 1] += delta;
-			lazy[2 * pos + 2] += delta;
+			if(increment) st[id] += val;
+			else st[id] = val;
+			return;
 		}
-		return;
-	}
-	ll mid = (low + high) / 2;
-	update(segtree, lazy, start, end, delta, low, mid, 2 * pos + 1);
-	update(segtree, lazy, start, end, delta, mid + 1, high, 2 * pos + 2);
-	segtree[pos] = segtree[2 * pos + 1] + segtree[2 * pos + 2];
-}
-int main()
-{
-	ll n, c;
-	scanf("%lld %lld", &n, &c);
-	ll arr[n] = {0}, p, q, v, choice;
-	ll segtree[MAX], lazy[MAX] = {0};
-	ConsTree(arr, segtree, 0, n - 1, 0);
-	while (c--)
-	{
-		scanf("%lld", &choice);
-		if (choice == 0)
+		int mid = (l + r) >> 1;
+		if(pos <= mid)
 		{
-			scanf("%lld %lld %lld", &p, &q, &v);
-			update(segtree, lazy, p - 1, q - 1, v, 0, n - 1, 0);
+			update(id << 1, l, mid, pos, val, increment);
 		}
 		else
 		{
-			scanf("%lld %lld", &p, &q);
-			printf("%lld\n", query(segtree, lazy, p - 1, q - 1, 0, n - 1, 0));
+			update(id << 1 | 1, mid + 1, r, pos, val, increment);
 		}
+		st[id] = merge(st[id << 1], st[id << 1 | 1]);
 	}
-	return 0;
-}
+
+	Value query(int id, int l, int r, int s, int e)
+	{
+		if(s > r or e < l)
+		{
+			return nullval();
+		}
+		if(l >= s and r <= e)
+		{
+			return st[id];
+		}
+		int mid = (l + r) >> 1;
+		Value q1 = query(id << 1, l, mid, s, e);
+		Value q2 = query(id << 1 | 1, mid + 1, r, s, e);
+		return merge(q1, q2);
+	}
+
+	void build()
+	{
+		build(1, 1, n);
+	}
+
+	void update(int pos, Value val, bool increment = false)
+	{
+		update(1, 1, n, pos, val, increment);
+	}
+
+	Value query(int s, int e)
+	{
+		return query(1, 1, n, s, e);
+	}
+};
+
