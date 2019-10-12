@@ -14,13 +14,14 @@ int LinearSearch(int *array, int size, int key)
 	return -1;
 }
 
+// beginning of main 
 int main()
 {
-	int size;
+	int size;      //declaration of variable size
 	cout << "\nEnter the size of the Array : ";
 	cin >> size;
 
-	int array[size];
+	int array[size];     // declaring an array of size 'size'
 	int key;
 
 	//Input array
@@ -44,4 +45,4 @@ int main()
 	}
 
 	return 0;
-}
+} // closing of main
