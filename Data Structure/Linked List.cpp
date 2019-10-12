@@ -103,6 +103,7 @@ void reverse()
 	node *second = first->next;
 	while (second != NULL)
 	{
+		//tem is used because we dont want to loose the original value
 		node *tem = second->next;
 		second->next = first;
 		first = second;
@@ -118,6 +119,7 @@ int main()
 	int choice, x;
 	do
 	{
+		//Now we add a switch case
 		cout << "\n1. Insert";
 		cout << "\n2. Delete";
 		cout << "\n3. Search";
