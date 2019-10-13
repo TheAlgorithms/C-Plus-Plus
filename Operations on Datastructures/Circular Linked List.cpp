@@ -50,7 +50,7 @@ void search(int x)
 {
 	node *t = start;
 	int found = 0;
-	while (t->next != start)
+	do
 	{
 		if (t->val == x)
 		{
@@ -60,10 +60,11 @@ void search(int x)
 		}
 		t = t->next;
 
-		if (found == 0)
+	}while (t != start);
+
+			if (found == 0)
 	{
 		cout << "\nNot Found";
-	}
 	}
 
 }
