@@ -59,11 +59,13 @@ void search(int x)
 			break;
 		}
 		t = t->next;
-	}
-	if (found == 0)
+
+		if (found == 0)
 	{
 		cout << "\nNot Found";
 	}
+	}
+
 }
 
 void show()
