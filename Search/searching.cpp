@@ -31,8 +31,7 @@ int main()
             }
             else
             {
-                cout << "The word " << word << " is now found at location " << paragraph.find(word) << endl
-                     << endl;
+                cout << "The word " << word << " is now found at location " << paragraph.find(word) << endl;
             }
             system("pause");
         }
