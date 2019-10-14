@@ -1,0 +1,52 @@
+#include<stdio.h>
+void main()
+{   struct sparse
+    {
+        int row,column;
+        int value;
+    };
+    struct sparse sm[50];
+    int a,b,c=0,k=0,m[20][20];
+    printf("Enter the number of rows: ");
+    scanf("%d",&a);
+    printf("Enter the number of columns: ");
+    scanf("%d",&b);
+    printf("Enter the sparse matrix: ");
+    for(int i=0;i<a;++i)
+    {
+        for(int j=0;j<b;++j)
+        {
+            scanf("%d",&m[i][j]);
+        }
+    }
+    for(int i=0;i<a;++i)
+            {
+                  for(int j=0;j<b;++j)
+                   {    if(m[i][j]!=0)
+
+
+                        {   sm[c].row=i;
+                            sm[c].column=j;
+                            sm[c].value=m[i][j];
+                            ++c;
+                        }
+                   }
+            }
+    printf("The sparse matrix is:\n");
+    for(int i=0;i<a;++i)
+    {
+        for(int j=0;j<b;++j)
+        {
+            if(i==sm[k].row && j==sm[k].column)
+            {
+                printf("%d ",sm[k].value);
+                ++k;
+            }
+            else
+            {
+                printf("0 ");
+            }
+        }
+        printf("\n");
+    }
+}
