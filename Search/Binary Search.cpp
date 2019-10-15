@@ -26,6 +26,7 @@ int main(int argc, char const *argv[])
 		cin >> a[i];
 	}
 	cout << "Enter search key: ";
+        //Taking Search key input
 	cin >> key;
 	int res = binary_search(a, 0, n - 1, key);
 	if (res != -1)
