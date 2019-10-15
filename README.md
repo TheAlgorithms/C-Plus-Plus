@@ -11,5 +11,7 @@ How you can contribute? See this small guide.
 * Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compiler process.
 * Put comments in your code.
 * Avoid **struct**. Instead use the **class** keyword.
+* Try to use typedef.
+* Try to use #define.
 * Add some test cases in the main-function.
 * Can suggest any change in present algorithms(if needed).
