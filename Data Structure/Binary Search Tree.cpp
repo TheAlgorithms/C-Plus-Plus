@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//declare datastructures
 struct node
 {
 	int val;
