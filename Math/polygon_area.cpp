@@ -10,6 +10,8 @@
  * and add the trapezoid areas bounded by each edge.
  * Area = Sum(edges in P) (((P[i].x - P[i+1].x) * (P[i].y - P[i+1].y)) / 2)
  *
+ * Time Complexity: O(number of polygon vertices)
+ *
  */
 
 #include <iostream>
