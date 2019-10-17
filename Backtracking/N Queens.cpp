@@ -1,77 +1,52 @@
-#include <iostream>
-#define N 4
+#include <cstdio>
 using namespace std;
 
-void printSolution(int board[N][N])
-{
-    cout << "\n";
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-            cout << "" << board[i][j];
-        cout << "\n";
-    }
+int useC[8], A[8], ht, useS[20], useG[20], N;
+bool found = false;
+
+bool proveri(){
+	for (int i=0; i<N; i++) if (useC[i] > 1) return false;
+	for (int i=0; i<2*N; i++) if (useS[i] > 1) return false;
+	for (int i=0; i<2*N; i++) if (useG[i] > 1) return false;
+	return true;
 }
 
-bool isSafe(int board[N][N], int row, int col)
-{
-    int i, j;
-
-    /* Check this row on left side */
-    for (i = 0; i < col; i++)
-        if (board[row][i])
-            return false;
-
-    /* Check upper diagonal on left side */
-    for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
-        if (board[i][j])
-            return false;
-
-    /* Check lower diagonal on left side */
-    for (i = row, j = col; j >= 0 && i < N; i++, j--)
-        if (board[i][j])
-            return false;
-
-    return true;
+void zavrsi(){
+	if (found) printf("\n");
+	found = true;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){
+			printf("%s%s", j==A[i] ? "Q" : "-", j==N-1 ? "\n" : "\t");
+		}
+	}
 }
 
-void solveNQ(int board[N][N], int col)
-{
-
-    if (col >= N)
-    {
-        printSolution(board);
-        return;
-    }
-
-    /* Consider this column and try placing
-       this queen in all rows one by one */
-    for (int i = 0; i < N; i++)
-    {
-        /* Check if queen can be placed on
-          board[i][col] */
-        if (isSafe(board, i, col))
-        {
-            /* Place this queen in board[i][col] */
-            //            cout<<"\n"<<col<<"can place"<<i;
-            board[i][col] = 1;
-
-            /* recur to place rest of the queens */
-            solveNQ(board, col + 1);
-
-            board[i][col] = 0; // BACKTRACK
-        }
-    }
+void rek(){
+	if (!proveri()) return;
+	if (ht == N){
+		zavrsi();
+		return;
+	}
+	ht++;
+	int i = ht-1;
+	for (int j=0; j<N; j++){
+		A[i] = j;
+		useC[j]++;
+		useS[i+j]++;
+		useG[i-j+N]++;
+		rek();
+		useC[j]--;
+		useS[i+j]--;
+		useG[i-j+N]--;
+	}
+	ht--;
 }
 
-int main()
-{
-
-    int board[N][N] = {{0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0}};
-
-    solveNQ(board, 0);
-    return 0;
+int main(){
+	scanf("%d", &N);
+	rek();
+	if (!found){
+		printf("Not Possible\n");
+	}
+	return 0;
 }

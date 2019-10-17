@@ -1,82 +1,77 @@
-//Longest common subsequence - Dynamic Programming
-#include <iostream>
-using namespace std;
 
-void Print(int trace[20][20], int m, int n, string a)
-{
-    if (m == 0 || n == 0)
+// C++ implementation to find longest increasing subsequence 
+// in O(n Log n) time. 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Binary search 
+int GetCeilIndex(int arr[], vector<int>& T, int l, int r, 
+                 int key) 
+{ 
+    while (r - l > 1) { 
+        int m = l + (r - l) / 2; 
+        if (arr[T[m]] >= key) 
+            r = m; 
+        else
+            l = m; 
+    } 
+  
+    return r; 
+} 
+  
+int LongestIncreasingSubsequence(int arr[], int n) 
+{ 
+    // Add boundary case, when array n is zero 
+    // Depend on smart pointers 
+  
+    vector<int> tailIndices(n, 0); // Initialized with 0 
+    vector<int> prevIndices(n, -1); // initialized with -1 
+  
+    int len = 1; // it will always point to empty location 
+    for (int i = 1; i < n; i++) { 
+        if (arr[i] < arr[tailIndices[0]]) { 
+            // new smallest value 
+            tailIndices[0] = i; 
+        } 
+        else if (arr[i] > arr[tailIndices[len - 1]]) { 
+            // arr[i] wants to extend largest subsequence 
+            prevIndices[i] = tailIndices[len - 1]; 
+            tailIndices[len++] = i; 
+        } 
+        else { 
+            // arr[i] wants to be a potential condidate of 
+            // future subsequence 
+            // It will replace ceil value in tailIndices 
+            int pos = GetCeilIndex(arr, tailIndices, -1, 
+                                   len - 1, arr[i]); 
+  
+            prevIndices[i] = tailIndices[pos - 1]; 
+            tailIndices[pos] = i; 
+        } 
+    } 
+  
+    cout << "LIS of given input" << endl; 
+    for (int i = tailIndices[len - 1]; i >= 0; i = prevIndices[i]) 
+        cout << arr[i] << " "; 
+    cout << endl; 
+  
+    return len; 
+} 
+  
+int main() 
+{  cout<<"Enter size of array"<<endl;
+    int n;
+    cin>>n;
+    cout<<"Enter array elements"<<endl;
+    int arr[n];
+    for(int i=0;i<n;i++)
     {
-        return;
-    }
-    if (trace[m][n] == 1)
-    {
-        Print(trace, m - 1, n - 1, a);
-        cout << a[m - 1];
-    }
-    else if (trace[m][n] == 2)
-    {
-        Print(trace, m - 1, n, a);
-    }
-    else if (trace[m][n] == 3)
-    {
-        Print(trace, m, n - 1, a);
-    }
-}
+    	cin>>arr[i];
+	}
+    
+  
+    printf("LIS size %d\n", LongestIncreasingSubsequence(arr, n)); 
+  
+    return 0; 
+} 
 
-int lcs(string a, string b)
-{
-    int m = a.length(), n = b.length();
-    int res[m + 1][n + 1];
-    int trace[20][20];
-
-    // fills up the arrays with zeros.
-    for (int i = 0; i < m + 1; i++)
-    {
-        for (int j = 0; j < n + 1; j++)
-        {
-            res[i][j] = 0;
-            trace[i][j] = 0;
-        }
-    }
-
-    for (int i = 0; i < m + 1; ++i)
-    {
-        for (int j = 0; j < n + 1; ++j)
-        {
-            if (i == 0 || j == 0)
-            {
-                res[i][j] = 0;
-                trace[i][j] = 0;
-            }
-
-            else if (a[i - 1] == b[j - 1])
-            {
-                res[i][j] = 1 + res[i - 1][j - 1];
-                trace[i][j] = 1; // 1 means trace the matrix in upper left diagonal direction.
-            }
-            else
-            {
-                if (res[i - 1][j] > res[i][j - 1])
-                {
-                    res[i][j] = res[i - 1][j];
-                    trace[i][j] = 2; // 2 means trace the matrix in upwards direction.
-                }
-                else
-                {
-                    res[i][j] = res[i][j - 1];
-                    trace[i][j] = 3; //  means trace the matrix in left direction.
-                }
-            }
-        }
-    }
-    Print(trace, m, n, a);
-    return res[m][n];
-}
-
-int main()
-{
-    string a, b;
-    cin >> a >> b;
-    cout << lcs(a, b);
-    return 0;
-}
