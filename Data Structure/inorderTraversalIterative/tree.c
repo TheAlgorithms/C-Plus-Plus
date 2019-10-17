@@ -28,32 +28,12 @@ tree *insert(tree *root, int data)
   return root;
 }
 
-void inorder(tree *root)
+void inorderFake(tree *root)
 {
   if (root)
   {
-    inorder(root->left);
+    inorderFake(root->left);
     printf("%d ", root->data);
-    inorder(root->right);
-  }
-}
-
-void preorder(tree *root)
-{
-  if (root)
-  {
-    printf("%d ", root->data);
-    preorder(root->left);
-    preorder(root->right);
-  }
-}
-
-void postorder(tree *root)
-{
-  if (root)
-  {
-    postorder(root->left);
-    postorder(root->right);
-    printf("%d ", root->data);
+    inorderFake(root->right);
   }
 }

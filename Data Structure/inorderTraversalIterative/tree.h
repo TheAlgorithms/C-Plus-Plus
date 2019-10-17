@@ -8,9 +8,6 @@ typedef struct Tree
 } tree;
 
 tree *insert(tree *root, int data);
-void inorder(tree *root);
-void postorder(tree *root);
-void preorder(tree *root);
-void inorder(tree *root);
+void inorderFake(tree *root);
 
 #endif
