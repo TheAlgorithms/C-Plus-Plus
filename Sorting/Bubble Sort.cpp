@@ -1,4 +1,4 @@
-//Bubble Sort
+//Bubble Sort made by archit vashist
 
 #include <iostream>
 #include <vector>
