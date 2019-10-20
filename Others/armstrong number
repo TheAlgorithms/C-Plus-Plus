@@ -1,0 +1,27 @@
+// an armsrtong number is a number whose sum of cube of its digits gives the number itself .
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ int inputnum,num,rem,sum=0;
+ cout<<" enter a positive integer : ";
+ cin>>inputnum;
+
+ num=inputnum; // here , we will use the value passed to 'num' to check the condition.
+
+ (while num!=0)
+ {
+  rem=num%10;
+  sum+=rem*rem*rem; // here is the sum of the cube of each digit in the number given as input.
+  num/=10;
+ }
+ 
+ if (sum==inputnum)
+ cout<<inputnum<<" is an armstong number.";
+ 
+ else
+ cout<<inputnum<<" is not an armstrong number.";
+ 
+ return 0;
+ }
