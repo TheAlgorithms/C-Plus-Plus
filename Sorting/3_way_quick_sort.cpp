@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
 void print(long long arr[],long long n)
@@ -66,28 +67,3 @@ int main()
 	// partition3(arr,0,n-1);
 	return 0;
 }
-
-// int main()
-// {
-// 	long long n,ini[1000],temp,arr[1000],i;
-// 	n=100;
-// 	while(1)
-// 	{
-// 		srand(time(0));
-// 		for(i=0;i<n;i++)
-// 		{
-// 			temp=rand()%4;
-// 			arr[i]=temp;
-// 			ini[i]=temp;
-// 		}
-// 		sort(arr,0,n-1);
-// 		if(checkSorted(arr,n)==false)
-// 		{
-// 			print(ini,n);
-// 			cout<<endl;
-// 			print(arr,n);
-// 			return 0;
-// 		}
-// 	}
-// 	return 0;
-// }
