@@ -85,7 +85,7 @@ int main()
     
     cout<<"\nEnter the unsorted elements : ";
 
-    for (int i = 0; i < size; ++i)
+    for (int i = 0; i < size; i++)
     {
         cout<<"\n";
         cin>>arr[i];
