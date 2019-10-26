@@ -1,3 +1,22 @@
+
+//An implementation of a singly linked list in C++.
+//Each element of the linked list, called node , is an object having private members of data and nextPtr.   
+//data stores the node value and the nextPtr points to the next node of the linked list. 
+//The nodes of a linked list are not stored successively in memory.
+//The linked list has two private members. firstPtr points to the end node at the back of the linked list. 
+//lastPtr points to the end node at the front of the linked list. 
+//The size of linked list is variable. A linked list can grow or shrink from both sides (back and front) 
+//the nextPtr of the  end node at front of the linked list is set to null. 
+//Several features have been provided for the linked list.  
+//insertAtFront(removeFromFront) adds (removes) a node at (from) the front of the linked list.
+//insertAtBack(removeFromBack) adds (removes) a node at (from) the back of the linked list.
+//insertAtPos()(removeFromPos()) adds (removes) a node at a (from a) position determined by user. 
+//search() looks for a specified value in the linked list. 
+//sort() sorts  the linked list in ascending order
+//update() assigns a new value to a node. 
+//revers() reverses the linked list. 
+//size () retunes number of nodes in linked list
+//Referenc: C++,  How to program.  
 #include <iostream> 
 using namespace std;
 class Node
