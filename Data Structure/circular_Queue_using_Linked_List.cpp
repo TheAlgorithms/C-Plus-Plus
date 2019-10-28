@@ -1,11 +1,13 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
+// Defining Node type and contents
 struct node
 {
     int data;
-    struct node *next;
+    struct node *next; //link to next node
 };
+// Defining a Class queue with front and rear elements
 class Queue
 {
     node *front;
@@ -17,28 +19,25 @@ public:
         front = NULL;
         rear = NULL;
     }
-    void createNode(int val)
+    
+	void createNode(int val) // Creating a new node for inserting in array
     {
-        node *ptr;
         node *nn;
         nn = new node;
-        ptr = front;
-        nn->data = val;
-        nn->next = NULL;
+        nn -> data = val;
+        nn -> next = NULL;
         front = nn;
         rear = nn;
     }
-    void enqueue(int val)
+    void inqueue(int val) // Insert value at rear
     {
-        if (front == NULL || rear == NULL)
+        if ( !front )
         {
-            createNode(val);
+            createNode( val );
         }
         else
         {
-            node *ptr;
-            node *nn;
-            ptr = front;
+            node *nn; 
             nn = new node;
             nn->data = val;
             rear->next = nn;
@@ -46,36 +45,38 @@ public:
             rear = nn;
         }
     }
-    void dequeue()
+    void delqueue()
     {
-        node *n;
-        n = front;
-        front = front->next;
-        delete (n);
+        node * del;
+        del = front;
+		cout << "Deleted value is  " << del -> data
+		front = front -> next;
+        delete ( del );
     }
-    void traverse()
+    // Traversing through the Circular Queue
+	void traverse()
     {
-        node *ptr;
+        node * ptr;
         ptr = front;
         do
-        {
-            cout << ptr->data << " ";
-            ptr = ptr->next;
-        } while (ptr != rear->next);
-        cout << front->data;
-        cout << endl;
+        {									
+            cout << ptr -> data << " ";
+            ptr = ptr -> next;
+        } while ( ptr != rear -> next );	// Display values till rear from front
+        cout << front -> data;
+        cout << endl ;
     }
 };
 int main(void)
 {
     Queue q;
-    q.enqueue(10);
-    q.enqueue(20);
-    q.enqueue(30);
-    q.enqueue(40);
-    q.enqueue(50);
-    q.enqueue(60);
-    q.enqueue(70);
+    q.inqueue(10);
+    q.inqueue(20);
+    q.inqueue(30);
+    q.inqueue(40);
+    q.inqueue(50);
+    q.inqueue(60);
+    q.inqueue(70);
     q.traverse();
     q.dequeue();
     q.traverse();
