@@ -1,0 +1,145 @@
+#include<iostream>
+#define SIZE 100
+
+using namespace std;
+
+void enQueue(int);
+int deQueueFront();
+int deQueueRear();
+void enQueueRear(int);
+void enQueueFront(int);
+void display();
+
+int queue[SIZE];
+int rear = 0, front = 0;
+
+int main(){
+    char ch;
+    int choice1, choice2, value;
+    cout<<"\n******* Type of Double Ended Queue *******\n";
+     do{
+          cout<<"\n1.Input-restricted deque \n";
+          cout<<"2.Output-restricted deque \n";
+          cout<<"\nEnter your choice of Queue Type : ";
+          cin>>choice1;
+          switch(choice1){
+               case 1: 
+                    cout<<"\nSelect the Operation\n";
+                    cout<<"1.Insert\n2.Delete from Rear\n3.Delete from Front\n4. Display";
+                    do{
+                       cout<<"\nEnter your choice for the operation in deque: ";
+                       cin>>choice2;
+                       switch(choice2){   
+                          case 1: enQueueRear(value);
+                                  display();
+                       		  break;
+                       	  case 2: value = deQueueRear();
+                       		  cout<<"\nThe value deleted is "<<value<<"\n";
+                                  display();
+                       		  break;
+                          case 3: value=deQueueFront();
+                       	          cout<<"\nThe value deleted is "<<value<<"\n";
+                                  display();
+                       	          break;
+                          case 4: display();
+                                  break;
+                          default:cout<<"Invalid choice";
+                       }
+                       cout<<"\nDo you want to perform another operation (Y/N): ";
+                       cin>>ch;
+                    }while(ch=='y'||ch=='Y');
+                    break; 
+     
+               case 2 :
+                   cout<<"\n---- Select the Operation ----\n";
+                   cout<<"1. Insert at Rear\n2. Insert at Front\n3. Delete\n4. Display";
+                   do{
+                      cout<<"\nEnter your choice for the operation: ";
+                      cin>>choice2;
+                      switch(choice2){   
+                         case 1: enQueueRear(value);
+                                 display();
+                                 break;
+                         case 2: enQueueFront(value);
+                                 display();
+                                 break;
+                         case 3: value = deQueueFront();
+                                 cout<<"\nThe value deleted is "<<value<<"\n"; 
+                                 display();
+                                 break;
+                         case 4: display();
+                                 break;
+                         default:cout<<"Invalid choice";
+                       }
+                       cout<<"\nDo you want to perform another operation (Y/N):";
+                       cin>>ch;
+                    }while(ch=='y'||ch=='Y'); 
+                    break ;
+            }
+            cout<<"\nDo you want to continue(y/n):";
+            cin>>ch;
+      }while(ch=='y'||ch=='Y');
+}
+
+void enQueueRear(int value){   
+     char ch;
+     if(front == SIZE/2){
+            cout<<"\nQueue is full!!!\nInsertion is not possible!!! ";
+            return;
+      }
+      do{
+            cout<<"\nEnter the value to be inserted:";
+            cin>>value;
+            queue[front] = value;
+            front++;
+            cout<<"Do you want to continue insertion (Y/N):";
+            cin>>ch;
+      }while(ch=='y'||ch=='Y');
+}
+
+void enQueueFront(int value){   
+     char ch;
+     if(front==SIZE/2){
+            cout<<"\nQueue is full!!!\nInsertion is not possible!!!";
+            return;
+      }
+      do{
+            cout<<"\nEnter the value to be inserted:";
+            cin>>value;
+            rear--;
+            queue[rear] = value;
+            cout<<"Do you want to continue insertion (Y/N):";
+            cin>>ch;
+      }while(ch=='y'||ch=='Y');
+}
+int deQueueRear(){
+     int deleted;
+     if(front == rear){
+            cout<<"\nQueue is Empty!!!\nDeletion is not possible!!!";
+            return 0;
+     }
+     front--;
+     deleted = queue[front+1];
+     return deleted;
+}
+int deQueueFront(){
+     int deleted;
+     if(front == rear){
+            cout<<"\nQueue is Empty!!!\nDeletion is not possible!!!";
+            return 0;
+     }
+     rear++;
+     deleted = queue[rear-1];
+     return deleted;
+}
+
+void display(){
+     int i;
+     if(front == rear)
+        cout<<"\nQueue is Empty!!!\nDeletion is not possible!!!";
+     else{
+        cout<<"\nThe Queue elements are:";
+        for(i=rear; i < front; i++)
+           cout<<queue[i]<<" ";
+     }
+}
