@@ -60,7 +60,7 @@ int main(){
                        cin>>ele;
                        key = ele%mod;
                        while(hashTable[key]!=-1){
-                            key += 1;
+                            key = (key+1)%mod;
                             count1++; 
                             if(count1 == mod)
                             return 0;
@@ -76,7 +76,7 @@ int main(){
                        cin>>ele;
                        key = ele%mod;
                        while(hashTable[key] != ele){
-                           key++;
+                           key = (key+1)%mod;
                            count2++;
                            if(count2 == mod){
                                cout<<"\nNo such element present!!\n";
