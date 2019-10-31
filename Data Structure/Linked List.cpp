@@ -9,7 +9,7 @@ struct node
 
 node *start;
 
-void insert(int x)
+void insert (int x) //insertion into linked list
 {
 	node *t = start;
 	if (start != NULL)
@@ -32,7 +32,7 @@ void insert(int x)
 	}
 }
 
-void remove(int x)
+void remove (int x) //deletion from linked list
 {
 
 	if (start == NULL)
@@ -67,7 +67,7 @@ void remove(int x)
 	delete temp;
 }
 
-void search(int x)
+void search (int x)
 {
 	node *t = start;
 	int found = 0;
@@ -87,7 +87,7 @@ void search(int x)
 	}
 }
 
-void show()
+void show ()
 {
 	node *t = start;
 	while (t != NULL)
@@ -97,7 +97,7 @@ void show()
 	}
 }
 
-void reverse()
+void reverse ()
 {
 	node *first = start;
 	node *second = first->next;
