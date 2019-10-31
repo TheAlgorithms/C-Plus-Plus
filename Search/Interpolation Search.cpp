@@ -32,7 +32,7 @@ int main()
     if (index != -1)
         std::cout << "Number " << x << " is at " << index;
     else
-        std::cout << "Number " << x << " not found";  // No element found
+        std::cout << "Number " << x << " not found";  // No element found 
 }
 
 // randomly set x bcoz array was defined by us , therefore not reasonable for asking input.
