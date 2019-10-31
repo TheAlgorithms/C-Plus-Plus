@@ -11,7 +11,7 @@ node *front, *rear;
 
 void Enque(int x)
 {
-    if (rear == NULL)
+    if (rear == NULL) //List is empty
     {
         node *n = new node;
         n->val = x;
@@ -22,7 +22,6 @@ void Enque(int x)
 
     else
     {
-
         node *n = new node;
         n->val = x;
         n->next = NULL;
@@ -33,7 +32,7 @@ void Enque(int x)
 
 void Deque()
 {
-    if (rear == NULL && front == NULL)
+    if (rear == NULL && front == NULL) //List is empty
     {
         cout << "\nUnderflow";
     }
