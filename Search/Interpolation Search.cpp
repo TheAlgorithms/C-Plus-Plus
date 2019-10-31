@@ -17,10 +17,18 @@ int InterpolationSearch(int A[], int n, int x)
 }
 
 int main()
-{
-    int A[] = {2, 4, 5, 7, 13, 14, 15, 23};
-    int x = 17;
-    int index = InterpolationSearch(A, 8, x); // passed array A inside the InterpolationSearch function
+{  
+    int n;
+    cout<<"size of array"<<endl;
+    cin>>n;
+    int A[n];
+    int x;
+    cout<<"enter elements of array"<<endl;
+    for(int i=0;i<n;i++)
+        cin>>A[i];
+    cout<<"element to find "<<endl;
+    cin>>x;
+    int index = InterpolationSearch(A, n, x); // passed array A inside the InterpolationSearch function
     if (index != -1)
         std::cout << "Number " << x << " is at " << index;
     else
