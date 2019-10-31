@@ -1,0 +1,86 @@
+/*
+
+
+Algorithm name-Suffix tree for serching some pattern  in a string
+this is suffix tree data structure implementation in c++ for serching some
+pattern inside string
+
+*/
+
+/*
+HACKTOBERFEST
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+struct suffix//creating structure name suffix
+{
+	struct suffix*  m[26];//creating mapping for the 26 small latters alphabet
+	int end=0;//0 means not a leaf node  and 1 means it is a leaf node
+	
+};
+struct suffix * BuildSuffixTree(struct suffix * root,string s, int start, int size){
+	if(start==size&&root==NULL){//cheking if this is last char of string and that node does not exist already
+		struct suffix *temp;
+		temp=(struct suffix*)malloc(sizeof(struct suffix));//dynamically allocating memory
+		temp->end=1;
+		root=temp;
+	}
+	else if(start==size){//cheking if this is last char of string but node exist already 
+
+	}
+	else if(root!=NULL){//cheking for this is not last char in string and node for that char does not exist
+		//cout<<s;
+		root->end=0;
+		root->m[s[start]-'a']=BuildSuffixTree( root->m[s[start]-'a'], s, start+1, size );//recursivly calling child node
+
+	}
+	else {// finally cheking for this is not last char but that char node exist already
+		struct suffix *temp;
+		temp=(struct suffix*)malloc(sizeof(struct suffix));
+		temp->end=1;
+		root=temp;
+		root->m[s[start]-'a']=BuildSuffixTree( root->m[s[start]-'a'], s, start+1, size );
+
+	}
+	
+	
+	return root;
+}
+void checkPatter(struct suffix *root, string pattern,int start ,int size){
+	if(start==size){// if the start pointer has reached to the end 
+		cout<<"YES this pattern exist in the string ";
+	}
+	else if(root->m[pattern[start]-'a']!=NULL){//start pointer has not reached to the end and there are more 
+												//char left in pattern string to be searched
+		checkPatter(root->m[pattern[start]-'a'],pattern,start+1,size);//recursivly calling there child node
+	}
+	else{//start pointer has not reached to the end and there is some charecter missing in string 
+		cout<<"SORRY, this pattern does not exist in the string";
+	}
+
+}
+int main(){
+	struct suffix *root = NULL;
+
+	//dynamcally alocating the first root node
+	root=(struct suffix*)malloc(sizeof(struct suffix));
+	root->end=1;
+
+	string s;
+	cout<<"Enter your  string :";
+	cin>>s;
+
+	int n=s.length();
+	for(int i=0;i<n;i++)
+	root=BuildSuffixTree(root,s,i,n);
+
+	cout<<endl<<"enter the pattern you want to search :";
+	string pattern;
+	cin>>pattern;
+	checkPatter(root,pattern,0,pattern.length());
+
+
+
+}
