@@ -2,7 +2,7 @@
 using namespace std;
 
 #define V 6
-#define INFINITY 99999
+#define INFINITY 999
 
 int graph[V][V] = {
 	{0, 4, 1, 4, INFINITY, INFINITY},
