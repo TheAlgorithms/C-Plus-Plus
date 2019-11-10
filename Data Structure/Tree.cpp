@@ -99,7 +99,7 @@ int main()
     root->right = NULL;
     do
     {
-        cout << "\n1. Insert : ";
+        cout << "\n1. Insert";
         cout << "\n2. Breadth First";
         cout << "\n3. Preorder Depth First";
         cout << "\n4. Inorder Depth First";
