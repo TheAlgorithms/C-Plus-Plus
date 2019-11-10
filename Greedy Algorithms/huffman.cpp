@@ -1,5 +1,6 @@
 // C++ program for Huffman Coding 
-#include <bits/stdc++.h> 
+#include <iostream>
+#include <queue> 
 using namespace std; 
   
 // A Huffman tree node 
