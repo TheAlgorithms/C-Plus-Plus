@@ -1,15 +1,13 @@
-# C++ 
+# The Algorithms - C++ 
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md)&nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C-Plus-Plus?color=red&style=flat-square)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TheAlgorithms/C-Plus-Plus?color=green&style=flat-square)
 
-This repository contains some useful algorithms and data structures. 
+### All algorithms implemented in C++ (for education)
+The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
 
-### Contribute
+### Contribute Guidelines
+Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) before you contribute
 
 How you can contribute? See this small guide.
 
-* Use the directory structure of the repository.
-* Please describe your pull requests. 
-* Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compiler process.
-* Put comments in your code.
-* Avoid **struct**. Instead use the **class** keyword.
-* Add some test cases in the main-function.
-* Can suggest any change in present algorithms(if needed).
