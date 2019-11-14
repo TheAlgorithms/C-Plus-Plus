@@ -7,7 +7,4 @@
 The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
 
 ### Contribute Guidelines
-Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) before you contribute
-
-How you can contribute? See this small guide.
-
+Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) before you contribute.
