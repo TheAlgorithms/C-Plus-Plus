@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 using namespace std;
 
 void primefactors (int n)
@@ -12,7 +13,7 @@ void primefactors (int n)
     }
 
     if (count)
-        cout << 2 << "  " << count << endl;
+        cout << 2 << "  " << count << "\n";
 
     for (int i = 3; i <= sqrt(n); i += 2) {
         count = 0;
@@ -21,12 +22,36 @@ void primefactors (int n)
             n = n / i;
         }
         if (count)
-            cout << i << "  " << count << endl;
+            cout << i << "  " << count << "\n";
     }
 
     if (n > 2)
-        cout << n << "  " << 1 << endl;
+        cout << n << "  " << 1 << "\n";
 }
+
+void printDivisors(int n)
+{
+    vector<int> v;
+    for (int i=1; i<=sqrt(n); i++)
+    {
+        if (n%i==0)
+        {
+            if (n/i == i)
+                cout << i << " ";
+            else
+            {
+                cout << i << " ";
+
+                v.push_back(n/i);
+            }
+        }
+    }
+
+
+    for (int i=v.size()-1; i>=0; i--)
+        cout << v[i] << " " ;
+}
+
 
 int main()
 {
@@ -37,5 +62,7 @@ int main()
 
 
     primefactors(number);
+    cout << "\n";
+    printDivisors(number);
     return 0;
 }
