@@ -1,12 +1,20 @@
 /* Implementation of Kosaraju's Algorithm to find out the strongly connected components (SCCs) in a graph. 
    Author:Anirban166
-*/
+*/   
 
 #include<iostream>
 #include<vector>
 
 using namespace std;
 
+/*Common terms/anotations used as parameters in functions below:
+  V: number of vertices,
+  adj[]: array of vectors to represent graph,
+  vis[]: array to keep track of visited nodes, (boolean type)
+  grev[]: graph with reverse edges.
+*/  
+
+//iterative function/method to print graph:
 void print(vector<int> a[],int V)
 {
     for(int i=0;i<V;i++)
@@ -19,16 +27,20 @@ void print(vector<int> a[],int V)
             cout<<endl;
     }
 }
-void calculate_time(int v,stack<int> &st,bool vis[],vector<int> adj[])
+
+//recursive function/method to push vertices into stack passed as parameter: (referenced)
+void push_vertex(int v,stack<int> &st,bool vis[],vector<int> adj[])
 {
     vis[v]=true;
     for(auto i=adj[v].begin();i!=adj[v].end();i++)
     {
         if(vis[*i]==false)
-            calculate_time(*i,st,vis,adj);
+            push_vertex(*i,st,vis,adj);
     }
     st.push(v);
 }
+
+//recursive function/method to implement depth first traversal(dfs):
 void dfs(int v,bool vis[],vector<int> grev[])
 {
     vis[v]=true;
@@ -39,18 +51,18 @@ void dfs(int v,bool vis[],vector<int> grev[])
             dfs(*i,vis,grev);
     }
 }
+
+//function/method to implement Kosaraju's Algorithm:
 int kosaraju(int V, vector<int> adj[])
 {
-    // print(adj,V);
     bool vis[V]={};
     stack<int> st;
     for(int v=0;v<V;v++)
     {
         if(vis[v]==false)
-            calculate_time(v,st,vis,adj);
+            push_vertex(v,st,vis,adj);
     }
-    // cout<<"stack_size="<<st.size()<<endl;
-    //making new graph (grev) with reverse edges as in adj[]
+    //making new graph (grev) with reverse edges as in adj[]:
     vector<int> grev[V];
     for(int i=0;i<V+1;i++)
     {
@@ -59,12 +71,12 @@ int kosaraju(int V, vector<int> adj[])
             grev[*j].push_back(i);
         }
     }
-    // cout<<"grev="<<endl;
-    // print(grev,V);
+    // cout<<"grev="<<endl; ->debug statement
+    // print(grev,V);       ->debug statement
     //reinitialise visited to 0
     for(int i=0;i<V;i++)
         vis[i]=false;
-    int cnt_scc=0;
+    int count_scc=0;
     while(!st.empty())
     {
         int t=st.top();
@@ -72,13 +84,13 @@ int kosaraju(int V, vector<int> adj[])
         if(vis[t]==false)
         {
             dfs(t,vis,grev);
-            cnt_scc++;
+            count_scc++;
         }
     }
-    // cout<<"cnt_scc="<<cnt_scc<<endl;
-    return cnt_scc;
-
+    // cout<<"count_scc="<<count_scc<<endl; //in case you want to print here itself, uncomment & change return type of function to void.
+    return count_scc;
 }
+
 //All critical/corner cases have been taken care of.
 //Input your required values: (not hardcoded)
 int main()
@@ -87,16 +99,16 @@ int main()
     cin>>t; 
     while(t--)
     {
-        int a,b ;
-   	    cin>>a>>b;
-   	    int m,n;
-   	    vector<int> adj[a+1];
-        for(int i=0;i<b;i++)
+        int a,b ; //a->number of nodes, b->directed edges.
+   	  cin>>a>>b;
+   	  int m,n;
+   	  vector<int> adj[a+1];
+        for(int i=0;i<b;i++) //take total b inputs of 2 vertices each required to form an edge.
         {
-            cin>>m>>n;
+            cin>>m>>n; //take input m,n denoting edge from m->n.
             adj[m].push_back(n);
         }
-        // exit(0);
+        //pass number of nodes and adjacency array as parameters to function:
         cout<<kosaraju(a, adj)<<endl;
     }
     return 0;
