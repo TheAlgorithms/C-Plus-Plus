@@ -7,14 +7,12 @@
 
 using namespace std;
 
-/*Common terms/anotations used as parameters in functions below:
-  V: number of vertices,
-  adj[]: array of vectors to represent graph,
-  vis[]: array to keep track of visited nodes, (boolean type)
-  grev[]: graph with reverse edges.
-*/  
-
-//iterative function/method to print graph:
+/**
+* Iterative function/method to print graph:
+* @param a[] : array of vectors (2D)
+* @param V : vertices
+* @return void 
+**/
 void print(vector<int> a[],int V)
 {
     for(int i=0;i<V;i++)
@@ -28,7 +26,14 @@ void print(vector<int> a[],int V)
     }
 }
 
-//recursive function/method to push vertices into stack passed as parameter: (referenced)
+/**
+* //Recursive function/method to push vertices into stack passed as parameter:
+* @param v : vertices
+* @param &st : stack passed by reference
+* @param vis[] : array to keep track of visited nodes (boolean type)
+* @param adj[] : array of vectors to represent graph
+* @return void 
+**/
 void push_vertex(int v,stack<int> &st,bool vis[],vector<int> adj[])
 {
     vis[v]=true;
@@ -40,7 +45,14 @@ void push_vertex(int v,stack<int> &st,bool vis[],vector<int> adj[])
     st.push(v);
 }
 
-//recursive function/method to implement depth first traversal(dfs):
+
+/**
+* //Recursive function/method to implement depth first traversal(dfs):
+* @param v : vertices
+* @param vis[] : array to keep track of visited nodes (boolean type)
+* @param grev[] : graph with reversed edges
+* @return void 
+**/
 void dfs(int v,bool vis[],vector<int> grev[])
 {
     vis[v]=true;
@@ -53,6 +65,13 @@ void dfs(int v,bool vis[],vector<int> grev[])
 }
 
 //function/method to implement Kosaraju's Algorithm:
+/**
+* Info about the method
+* @param V : vertices in graph
+* @param adj[] : array of vectors that represent a graph (adjacency list/array)
+* @return int ( 0, 1, 2..and so on, only unsigned values as either there can be no SCCs i.e. none(0) or there will be x no. of SCCs (x>0))
+   i.e. it returns the count of (number of) strongly connected components (SCCs) in the graph. (variable 'count_scc' within function)
+**/
 int kosaraju(int V, vector<int> adj[])
 {
     bool vis[V]={};
