@@ -7,11 +7,5 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-python@v1
     - run: pip install cpplint
-    - run: |
-        cpplint --filter=-build/include_order,-build/namespaces,-legal/copyright,
-          -readability/casting,-readability/todo,-runtime/arrays,-runtime/explicit,
-          -runtime/int,-runtime/references,-runtime/threadsafe_fn,-whitespace --recursive .
-# whitespace/blank_line,-whitespace/braces,-whitespace/comma,-whitespace/comments
-# whitespace/empty_loop_body,-whitespace/end_of_line,-whitespace/ending_newline
-# whitespace/forcolon,-whitespace/indent,-whitespace/line_length,-whitespace/newline
-# whitespace/operators,-whitespace/parens,-whitespace/semicolon,-whitespace/tab --recursive .
+    - run: cpplint --filter=
+    - run: cpplint --filter=-build,-legal,-readability,-runtime,-whitespace --recursive .
