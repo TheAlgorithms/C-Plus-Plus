@@ -8,8 +8,8 @@ jobs:
     - uses: actions/setup-python@v1
     - run: pip install cpplint
     - run: |
-        cpplint --filter=-build/include_order,-build/namespaces,-legal/copyright,\
-          -readability/casting,-readability/todo,-runtime/arrays,-runtime/explicit,\
+        cpplint --filter=-build/include_order,-build/namespaces,-legal/copyright,
+          -readability/casting,-readability/todo,-runtime/arrays,-runtime/explicit,
           -runtime/int,-runtime/references,-runtime/threadsafe_fn,-whitespace --recursive .
 # whitespace/blank_line,-whitespace/braces,-whitespace/comma,-whitespace/comments
 # whitespace/empty_loop_body,-whitespace/end_of_line,-whitespace/ending_newline
