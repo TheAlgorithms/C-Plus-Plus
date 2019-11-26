@@ -7,4 +7,4 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-python@v1
     - run: pip install cpplint
-    - run: cpplint --recursive .
+    - run: cpplint --counting=detailed --recursive .
