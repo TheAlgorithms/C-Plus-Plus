@@ -17,12 +17,12 @@ jobs:
             cpp_files = sorted(line.strip() for line in in_file
                                if line.strip().lower().endswith(".cpp"))
 
-          upper_files = [file for file in cpp_files if file != file.lower()]
+          upper_files = [file for file in cpp_files if os.path.basename(file) != os.path.basename(file).lower()]
           if upper_files:
             print("{} files contain uppercase characters:".format(len(upper_files)))
             print("\n".join(upper_files) + "\n")
 
-          space_files = [file for file in cpp_files if " " in file or "-" in file]
+          space_files = [file for file in cpp_files if " " in os.path.basename(file) or "-" in file]
           if space_files:
             print("{} files contain space or dash characters:".format(len(space_files)))
             print("\n".join(space_files) + "\n")
