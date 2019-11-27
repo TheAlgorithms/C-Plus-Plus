@@ -8,5 +8,6 @@ jobs:
     - uses: actions/setup-python@v1
     - run: pip install cpplint
     # - run: cpplint --filter=  # print out all cpplint rules
+    - run: cpplint --recursive . || true  # all issues to be fixed
     # TODO: Remove each filter one at a time and fix those failures
     - run: cpplint --filter=-build,-legal,-readability,-runtime,-whitespace --recursive .
