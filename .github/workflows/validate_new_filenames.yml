@@ -1,0 +1,37 @@
+name: validate_new_filenames
+on: [push, pull_request]
+jobs:
+  validate_new_filenames:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - run: git diff origin/master --name-only > git_diff.txt
+      - name: Validate new filenames
+        shell: python
+        run: |
+          import os
+          import sys
+          print(sys.version_info)  # legacy Python :-(
+          with open("git_diff.txt") as in_file:
+            cpp_files = sorted(line.strip() for line in in_file
+                               if line.strip().lower().endswith(".cpp"))
+
+          upper_files = [file for file in cpp_files if file != file.lower()]
+          if upper_files:
+            print("{} files contain uppercase characters:".format(len(upper_files)))
+            print("\n".join(upper_files) + "\n")
+
+          space_files = [file for file in cpp_files if " " in file or "-" in file]
+          if space_files:
+            print("{} files contain space or dash characters:".format(len(space_files)))
+            print("\n".join(space_files) + "\n")
+
+          nodir_files = [file for file in cpp_files if os.sep not in file]
+          if nodir_files:
+            print("{} files are not in a directory:".format(len(nodir_files)))
+            print("\n".join(nodir_files) + "\n")
+
+          bad_files = len(upper_files + space_files + nodir_files)
+          if bad_files:
+            sys.exit(bad_files)
