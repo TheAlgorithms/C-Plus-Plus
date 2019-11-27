@@ -1,0 +1,9 @@
+name: validate_filenames
+on: [push, pull_request]
+jobs:
+  validate_filenames:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+      - run: python ./.scripts/validate_filenames.py
