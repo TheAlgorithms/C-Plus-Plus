@@ -37,6 +37,16 @@ my_new_cpp_class.cpp    is correct format
 - It will be used to dynamically create a directory of files and implementation.
 - File name validation will run on docker to ensure the validity.
 
+#### New Directory guidelines 
+- Use lowercase words with ``"_"`` as separator ( no spaces or '-' allowed )
+- For instance
+```
+SomeNew Fancy-Category          is incorrect
+some_new_fancy_category         is correct
+
+- It will be used to dynamically create a directory of files and implementation.
+- File name validation will run on docker to ensure the validity.
+
 #### Commit Guidelines
 - It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to review changes that are split across multiple commits.
 ```
