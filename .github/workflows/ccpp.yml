@@ -1,0 +1,12 @@
+name: cpplint
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+    - run: pip install cpplint
+    # - run: cpplint --filter=  # print out all cpplint rules
+    # TODO: Remove each filter one at a time and fix those failures
+    - run: cpplint --filter=-build,-legal,-readability,-runtime,-whitespace --recursive .
