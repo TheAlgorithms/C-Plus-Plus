@@ -11,11 +11,15 @@ jobs:
         shell: python
         run: |
           import os
+          import subprocess
           import sys
           print(sys.version_info)  # legacy Python :-(
           with open("git_diff.txt") as in_file:
             cpp_files = sorted(line.strip() for line in in_file
                                if line.strip().lower().endswith(".cpp"))
+          print("{} C++ files were modified...".format(len(cpp_files)))
+          if not cpp_files:
+            sys.exit(0)
 
           upper_files = [file for file in cpp_files if os.path.basename(file) != os.path.basename(file).lower()]
           if upper_files:
@@ -35,3 +39,4 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
+          print(subprocess.check_output(['cpplint'] + cpp_files).decode("utf-8"))
