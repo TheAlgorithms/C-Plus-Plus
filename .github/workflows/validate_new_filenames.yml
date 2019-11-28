@@ -6,9 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-python@v1
+      - run: python -m pip install cpplint
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
-      - run: python3 -m pip install cpplint
       - name: Validate new filenames
         shell: python
         run: |
@@ -18,8 +18,13 @@ jobs:
 
           print("Python {}.{}.{}".format(*sys.version_info))  # legacy Python :-(
           with open("git_diff.txt") as in_file:
-            cpp_files = sorted(line.strip() for line in in_file
-                               if line.strip().lower().endswith(".cpp"))
+            modified_files = sorted(in_file.read().splitlines())
+
+          cpplint_cmd = ["cpplint"] + modified_files
+          print(cpplint_cmd)
+          print(subprocess.check_output(cpplint_cmd).decode("utf-8"))
+
+          cpp_files = [file for file in modified_files if file.strip().lower().endswith(".cpp")]
           print("{} C++ files were modified...".format(len(cpp_files)))
           if not cpp_files:
             sys.exit(0)
@@ -42,7 +47,3 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
-          print(subprocess.check_output("cpplint --version").decode("utf-8"))
-          cpplint_cmd = ["cpplint"] + cpp_files
-          print(cpplint_cmd)
-          print(subprocess.check_output(cpplint_cmd).decode("utf-8"))
