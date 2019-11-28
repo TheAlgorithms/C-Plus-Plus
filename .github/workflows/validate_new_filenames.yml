@@ -39,4 +39,6 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
-          print(subprocess.check_output(['cpplint'] + cpp_files).decode("utf-8"))
+          cpplint_cmd = ["cpplint"] + cpp_files
+          print(cpplint_cmd)
+          print(subprocess.check_output(cpplint_cmd).decode("utf-8"))
