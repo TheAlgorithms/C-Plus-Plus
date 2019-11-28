@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
-      - run: python3 -m pip install --upgrade pip
-      - run: sudo python3 -m pip install cpplint
+      - run: python3 -m pip install cpplint
       - name: Validate new filenames
         shell: python
         run: |
