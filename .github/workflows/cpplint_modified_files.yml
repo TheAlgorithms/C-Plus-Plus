@@ -1,7 +1,7 @@
-name: validate_new_filenames
+name: cpplint_modified_files
 on: [push, pull_request]
 jobs:
-  validate_new_filenames:
+  cpplint_modified_files:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -9,7 +9,7 @@ jobs:
       - run: python -m pip install cpplint
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
-      - name: Validate new filenames
+      - name: cpplint_modified_files
         shell: python
         run: |
           import os
@@ -27,6 +27,7 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
+          print("cpplint:")
           print(subprocess.check_output(["cpplint"] + cpp_files).decode("utf-8"))
 
           upper_files = [file for file in cpp_files if os.path.basename(file) != os.path.basename(file).lower()]
