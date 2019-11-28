@@ -7,13 +7,21 @@ jobs:
       - uses: actions/checkout@v1
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
+      - run: python --version || true
+      - run: python2 --version || true
+      - run: python3 --version || true
+      - run: python -m pip --version || true
+      - run: python2 -m pip --version || true
+      - run: python3 -m pip --version || true
+      - run: pip install cpplint || true
+      - run: pip install --user cpplint || true
       - name: Validate new filenames
         shell: python
         run: |
           import os
           import subprocess
           import sys
-          print(sys.version_info)  # legacy Python :-(
+          print("Python {}.{}.{}".format(*sys.version_info))  # legacy Python :-(
           with open("git_diff.txt") as in_file:
             cpp_files = sorted(line.strip() for line in in_file
                                if line.strip().lower().endswith(".cpp"))
@@ -39,6 +47,7 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
+          print(subprocess.check_output("cpplint --version").decode("utf-8"))
           cpplint_cmd = ["cpplint"] + cpp_files
           print(cpplint_cmd)
           print(subprocess.check_output(cpplint_cmd).decode("utf-8"))
