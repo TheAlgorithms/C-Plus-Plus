@@ -19,15 +19,15 @@ jobs:
           print("Python {}.{}.{}".format(*sys.version_info))  # legacy Python :-(
           with open("git_diff.txt") as in_file:
             modified_files = sorted(in_file.read().splitlines())
+          print("{} files were modified.".format(len(modified_files)))
 
-          cpplint_cmd = ["cpplint"] + modified_files
-          print(cpplint_cmd)
-          print(subprocess.check_output(cpplint_cmd).decode("utf-8"))
-
-          cpp_files = [file for file in modified_files if file.strip().lower().endswith(".cpp")]
-          print("{} C++ files were modified...".format(len(cpp_files)))
+          cpp_exts = ".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split()
+          cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
+          print("{} C++ files were modified.".format(len(cpp_files)))
           if not cpp_files:
             sys.exit(0)
+
+          print(subprocess.check_output(["cpplint"] + cpp_files).decode("utf-8"))
 
           upper_files = [file for file in cpp_files if os.path.basename(file) != os.path.basename(file).lower()]
           if upper_files:
