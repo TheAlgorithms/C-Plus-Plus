@@ -20,7 +20,7 @@ int main() {
     scanf("%d%d", & n, & m);
     int a[n], b[m];
     for (int i = 0; i < n; i++)
-        a[i] = i + 1; //It can be assigned according to the actual situation
+        a[i] = i + 1;  //It can be assigned according to the actual situation
     const int M = m;
     combine(n, m, a, b, M);
     return 0;
