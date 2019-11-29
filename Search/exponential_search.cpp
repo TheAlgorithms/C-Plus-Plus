@@ -3,10 +3,10 @@
 #include <assert.h>
 using namespaces std;
 
-//-----------------Binary Search Algorithm(use by struziki algorithm//-----------------
+//-----------------Binary Search Algorithm(use by struzik algorithm)-----------------
 //Time Complexity O(log n) where 'n' is the number of elements
 //Worst Time Complexity O(log n)
-//Best Time Complexity Ω(1)
+//Best Time Complexity O(1)
 //Space Complexity O(1)
 //Auxiliary Space Complexity O(1)
 
@@ -22,10 +22,10 @@ template<class Type> inline Type* binary_search(Type *array, size_t size, Type k
         return nullptr;
 }
 
-//-----------------Struzik Search Algorithm(Exponential//-----------------
+//-----------------Struzik Search Algorithm(Exponential)-----------------
 //Time Complexity O(log i)where i is the position of the search key in the list
 //Worst Time Complexity O(log i)
-//Best Time Complexity Ω(1)
+//Best Time Complexity O(1)
 //Space Complexity O(1)
 //Auxiliary Space Complexity O(1)
 
