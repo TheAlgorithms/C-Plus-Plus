@@ -1,9 +1,9 @@
-// Copyright 2020 Divide-et-Impera-11
+// Copyright 2020 Divide-et-impera-11
 #include <assert.h>
 #include <iostream>
 #include <string>
 using namespaces std;
-// Binary Search Algorithm(use by struziki algorithm)
+// Binary Search Algorithm(use by struzik algorithm)
 // Time Complexity O(log n) where 'n' is the number of elements
 // Worst Time Complexity O(log n)
 // Best Time Complexity Ω(1)
@@ -25,6 +25,13 @@ return nullptr;
 // Best Time Complexity Ω(1)
 // Space Complexity O(1)
 // Auxiliary Space Complexity O(1)
+/* Tha algorithm try to search the range where the key should be.
+If it has been found we do a binary search there.
+The range of the search grows by exponential every time.
+If the key is larger than the last element of array,
+the start of block(block_front) will be equal to the end of block(block_size)
+and the algorithm return null ponter,
+every other cases the algoritm return fom the loop. */
 template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
   uint32_t block_front(0), block_size = size == 0 ? 0 : 1;
   while (block_front != block_size) {
@@ -38,10 +45,12 @@ template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
 return nullptr;
 }
 int main() {
+// TEST CASES     
 int *sorted_array = new int[7]{7, 10, 15, 23, 70, 105, 203};
 assert(struzik_search<int>(sorted_array, 7, 0) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 1000) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 50) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 7) == sorted_array);
+// TEST CASES     
 return 0;
 }
