@@ -26,10 +26,10 @@ template<class Type> Type* Struzik_Search(Type* array, size_t size, Type key) {
 return nullptr;
 }
 int main() {
-   int *sorted_array = new int[7]{7, 10, 15, 23, 70, 105, 203};
-   assert(Struzik_Search<int>(sorted_array, 7, 0) == nullptr);
-   assert(Struzik_Search<int>(sorted_array, 7, 1000) == nullptr);
-   assert(Struzik_Search<int>(sorted_array, 7, 50) == nullptr);
-   assert(Struzik_Search<int>(sorted_array, 7, 7) == sorted_array);
+int *sorted_array = new int[7]{7, 10, 15, 23, 70, 105, 203};
+assert(Struzik_Search<int>(sorted_array, 7, 0) == nullptr);
+assert(Struzik_Search<int>(sorted_array, 7, 1000) == nullptr);
+assert(Struzik_Search<int>(sorted_array, 7, 50) == nullptr);
+assert(Struzik_Search<int>(sorted_array, 7, 7) == sorted_array);
 return EXIT_SUCCESS;
 }
