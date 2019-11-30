@@ -1,9 +1,9 @@
-// Copyright 2020 Divide-et-impera-11
+// copyright 2020 divide-et-impera-11
 #include <assert.h>
 #include <iostream>
 #include <string>
 using namespaces std;
-template<class Type> inline Type* binary_s(Type *array, size_t size, Type key) {
+template<class type> inline type* binary_s(type *array, size_t size, type key) {
 int32_t lower_index(0), upper_index(size - 1), middle_index;
 while (lower_index <= upper_index) {
      middle_index = floor((lower_index + upper_index) / 2);
@@ -13,7 +13,7 @@ while (lower_index <= upper_index) {
      }
 return nullptr;
 }
-template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
+template<class type> type* struzik_search(type* array, size_t size, type key) {
   uint32_t block_front(0), block_size = size == 0 ? 0 : 1;
   while (block_front != block_size) {
         if (*(array + block_size - 1) < key) {
@@ -21,7 +21,7 @@ template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
            (block_size * 2 - 1 < size) ? (block_size *= 2) : block_size = size;
            continue;
         }
-  return binary_s<Type>(array + block_front, (block_size - block_front), key);
+  return binary_s<type>(array + block_front, (block_size - block_front), key);
   }
 return nullptr;
 }
