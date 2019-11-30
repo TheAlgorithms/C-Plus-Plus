@@ -13,7 +13,7 @@ while (lower_index <= upper_index) {
      }
 return nullptr;
 }
-template<class Type> Type* Struzik_Search(Type* array, size_t size, Type key) {
+template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
   uint32_t block_front(0), block_size = size == 0 ? 0 : 1;
   while (block_front != block_size) {
         if (*(array + block_size - 1) < key) {
@@ -27,9 +27,9 @@ return nullptr;
 }
 int main() {
 int *sorted_array = new int[7]{7, 10, 15, 23, 70, 105, 203};
-assert(Struzik_Search<int>(sorted_array, 7, 0) == nullptr);
-assert(Struzik_Search<int>(sorted_array, 7, 1000) == nullptr);
-assert(Struzik_Search<int>(sorted_array, 7, 50) == nullptr);
-assert(Struzik_Search<int>(sorted_array, 7, 7) == sorted_array);
-return EXIT_SUCCESS;
+assert(struzik_search<int>(sorted_array, 7, 0) == nullptr);
+assert(struzik_search<int>(sorted_array, 7, 1000) == nullptr);
+assert(struzik_search<int>(sorted_array, 7, 50) == nullptr);
+assert(struzik_search<int>(sorted_array, 7, 7) == sorted_array);
+return 0;
 }
