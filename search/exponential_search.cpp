@@ -45,12 +45,12 @@ template<class Type> Type* struzik_search(Type* array, size_t size, Type key) {
 return nullptr;
 }
 int main() {
-//TEST CASES
+// TEST CASES
 int *sorted_array = new int[7]{7, 10, 15, 23, 70, 105, 203};
 assert(struzik_search<int>(sorted_array, 7, 0) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 1000) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 50) == nullptr);
 assert(struzik_search<int>(sorted_array, 7, 7) == sorted_array);
-//TEST CASES
+// TEST CASES
 return 0;
 }
