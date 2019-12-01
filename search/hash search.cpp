@@ -5,14 +5,7 @@
     # define HASHMAX 5
     // Hash Search Algorithm
     // Best Time Complexity Ω(1)
-    int data[MAX] = {
-        12,
-        160,
-        219,
-        522,
-        725,
-        9997
-    };
+    int data[MAX] = { 12, 160, 219, 522, 725, 9997 };
     int hashtab[HASHMAX];
     int counter = 1;
     int h(int key) {  // hash function 
@@ -34,8 +27,7 @@
                     printf("[%d]", hashtab[i]);
                 printf("\n");
                 return 1;
-            } 
-            else {
+            } else {
                 collisiontime++;
                 printf("collision:%d=>address%d\n", collisiontime, * address);
                 * address = collision(address);
