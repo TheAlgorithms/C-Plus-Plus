@@ -1,10 +1,7 @@
     // Copyright 2020 Arctic2333
     #include <stdlib.h>
-
     #include <stdio.h>
-
     # define MAX 6
-
     # define HASHMAX 5
     // Hash Search Algorithm
     // Best Time Complexity Ω(1)
@@ -37,7 +34,8 @@
                     printf("[%d]", hashtab[i]);
                 printf("\n");
                 return 1;
-            } else {
+            } 
+            else {
                 collisiontime++;
                 printf("collision:%d=>address%d\n", collisiontime, * address);
                 * address = collision(address);
@@ -54,9 +52,8 @@
             counter++;
             if (hashtab[ * address] == key)
                 return 1;
-            else {
+            else 
                 * address = collision(address);
-            }
         }
         return 0;
     }
@@ -73,9 +70,8 @@
         while (index < MAX) {
             if (create_list(data[index]))
                 printf("hash success!\n");
-            else {
+            else 
                 printf("hash fulled!\n");
-            }
             index++;
         }
         for (i = 0; i < HASHMAX; i++)
@@ -86,10 +82,7 @@
             scanf("%d", & key);
             if (hash_search(key))
                 printf("search time = %d\n", counter);
-            else {
+            else 
                 printf("no found!\n");
-            }
-
         }
-
     }
