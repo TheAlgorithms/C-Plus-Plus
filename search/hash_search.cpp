@@ -16,7 +16,10 @@ int counter = 1;
 int h(int key) {
     return key % HASHMAX;
 }
-void create_list(int key) {
+// In this algorithm, we use the method of division and reservation remainder to construct the hash function, 
+// and use the method of chain address to solve the conflict, that is, we link a chain list after the data, 
+// and store all the records whose keywords are synonyms in the same linear chain list.
+void create_list(int key) {  // Construct hash table
     link p, n;
     int index;
     n = (link) malloc(sizeof(node));
@@ -30,7 +33,7 @@ void create_list(int key) {
     } else {
         hashtab[index].next = n; }
 }
-int hash_search(int key) {
+int hash_search(int key) {  // Hash lookup function
     link pointer;
     int index;
     counter = 0;
@@ -55,11 +58,11 @@ int main() {
     for (i = 0; i < HASHMAX; i++)
         scanf("%d", & data[i]);
     printf("\n");
-    while (index < MAX) {
+    while (index < MAX) {  // Construct hash table
         create_list(data[index]);
         index++;
     }
-    for (i = 0; i < HASHMAX; i++) {
+    for (i = 0; i < HASHMAX; i++) {  // Output hash table
         printf("hashtab [%d]", i);
         printf("n");
         p = hashtab[i].next;
