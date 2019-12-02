@@ -3,6 +3,8 @@
 #include<stdio.h>
 #define MAX 6
 # define HASHMAX 5
+// Hash Search Algorithm
+// Best Time Complexity Ω(1)
 int data[MAX] = { 12, 160, 219, 522, 725, 9997};
 typedef struct list {
     int key;
