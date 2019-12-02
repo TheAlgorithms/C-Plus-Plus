@@ -16,9 +16,9 @@ int counter = 1;
 int h(int key) {
     return key % HASHMAX;
 }
-// In this algorithm, we use the method of division and reservation remainder to construct the hash function, 
-// and use the method of chain address to solve the conflict, that is, we link a chain list after the data, 
-// and store all the records whose keywords are synonyms in the same linear chain list.
+/* In this algorithm, we use the method of division and reservation remainder to construct the hash function, 
+   and use the method of chain address to solve the conflict, that is, we link a chain list after the data, 
+   and store all the records whose keywords are synonyms in the same linear chain list. */
 void create_list(int key) {  // Construct hash table
     link p, n;
     int index;
