@@ -25,7 +25,8 @@ void create_list(int key) {
     if (p != NULL) {
         n -> next = p;
         hashtab[index].next = n;
-    } else
+    } 
+    else
         hashtab[index].next = n;
 }
 int hash_search(int key) {
@@ -76,7 +77,6 @@ int main() {
             printf("search time = %d\n", counter);
         else
             printf("no found!\n");
-
     }
     return 0;
 }
