@@ -38,7 +38,8 @@ my_new_cpp_class.cpp    is correct format
 - File name validation will run on docker to ensure the validity.
 
 #### New Directory guidelines 
-- Use lowercase words with ``"_"`` as separator ( no spaces or '-' allowed )
+- We recommend adding files to existing directories as mush as possible.
+- Use lowercase words with ``"_"`` as separator ( no spaces or ```"-"``` allowed )
 - For instance
 ```
 SomeNew Fancy-Category          is incorrect
