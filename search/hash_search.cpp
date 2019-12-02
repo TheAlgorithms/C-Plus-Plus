@@ -25,8 +25,8 @@ void create_list(int key) {
     if (p != NULL) {
         n -> next = p;
         hashtab[index].next = n;
-    } else
-        hashtab[index].next = n;
+    } else {
+        hashtab[index].next = n; }
 }
 int hash_search(int key) {
     link pointer;
