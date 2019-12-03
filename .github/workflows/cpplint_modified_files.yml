@@ -48,3 +48,11 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
+      - run: |
+          gcc -v
+          g++ -v
+          ls
+          g++ backtracking/n_queens.cpp
+          ls
+          chmod +x a.out
+          ./a.out
