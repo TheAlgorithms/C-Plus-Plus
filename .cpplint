@@ -1,7 +1,0 @@
-set noparent
-filter=-legal/copyright
-linelength=80
-
-# See:  cpplint --help  # for all options
-# Also: cpplint.py --filter=  # for all filters
-# Use - to turn off the requirement for a copyright comment
