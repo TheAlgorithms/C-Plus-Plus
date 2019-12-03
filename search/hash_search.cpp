@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include<stdio.h>
 #define MAX 6  // Determines how much data
-# define HASHMAX 5  // Determines the length of the hash table 
+# define HASHMAX 5  // Determines the length of the hash table
 /**
   * Hash Search Algorithm
   * Best Time Complexity Ω(1)
