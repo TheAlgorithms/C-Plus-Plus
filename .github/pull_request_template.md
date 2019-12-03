@@ -10,7 +10,8 @@ Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/CONTRIBUTION.md
 <!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->
 
 - [ ] Added description of change
-- [ ] Added tests and example, test passes
+- [ ] Added file name matches [File name guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md#New-File-Name-guidelines)
+- [ ] Added tests and example, test must pass
 - [ ] Relevant documentation/comments is changed or added
 - [ ] PR title follows semantic [commit guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md#Commit-Guidelines)
 - [ ] Search previous suggestions before making a new one, as yours may be a duplicate.

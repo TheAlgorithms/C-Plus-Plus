@@ -28,7 +28,7 @@ jobs:
             sys.exit(0)
 
           print("cpplint:")
-          print(subprocess.check_output(["cpplint"] + cpp_files).decode("utf-8"))
+          print(subprocess.check_output(["cpplint", "--filter=-legal/copyright"] + cpp_files).decode("utf-8"))
 
           upper_files = [file for file in cpp_files if file != file.lower()]
           if upper_files:

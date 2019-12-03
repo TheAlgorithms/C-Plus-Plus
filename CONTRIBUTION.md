@@ -27,8 +27,29 @@ We are very happy that you consider implementing algorithms and data structures 
 - Our automated testing runs [__cpplint__](https://github.com/cpplint/cpplint) on all pull requests so please be sure that your code passes before submitting.
 - **Be consistent in use of these guidelines.**
 
+#### New File Name guidelines
+- Use lowercase words with ``"_"`` as separator
+- For instance 
+```
+MyNewCppClass.CPP       is incorrect
+my_new_cpp_class.cpp    is correct format
+```
+- It will be used to dynamically create a directory of files and implementation.
+- File name validation will run on docker to ensure the validity.
+
+#### New Directory guidelines 
+- We recommend adding files to existing directories as much as possible.
+- Use lowercase words with ``"_"`` as separator ( no spaces or ```"-"``` allowed )
+- For instance
+```
+SomeNew Fancy-Category          is incorrect
+some_new_fancy_category         is correct
+
+- It will be used to dynamically create a directory of files and implementation.
+- File name validation will run on docker to ensure the validity.
+
 #### Commit Guidelines
-- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to review changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
+- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
 ```
 git add file_xyz.cpp
 git commit -m "your message"
