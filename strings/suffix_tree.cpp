@@ -1,14 +1,5 @@
 /*
-
-
-Algorithm name-Suffix tree for serching some pattern  in a string
-this is suffix tree data structure implementation in c++ for serching some
-pattern inside string
-
-*/
-
-/*
-HACKTOBERFEST
+Suffix tree facilitates searching for patterns in a string
 */
 
 #include<bits/stdc++.h>
@@ -20,6 +11,7 @@ struct suffix//creating structure name suffix
 	int end=0;//0 means not a leaf node  and 1 means it is a leaf node
 	
 };
+
 struct suffix * BuildSuffixTree(struct suffix * root,string s, int start, int size){
 	if(start==size&&root==NULL){//cheking if this is last char of string and that node does not exist already
 		struct suffix *temp;
@@ -27,8 +19,8 @@ struct suffix * BuildSuffixTree(struct suffix * root,string s, int start, int si
 		temp->end=1;
 		root=temp;
 	}
-	else if(start==size){//cheking if this is last char of string but node exist already 
-
+	else if(start==size){
+		//cheking if this is last char of string but node exist already 
 	}
 	else if(root!=NULL){//cheking for this is not last char in string and node for that char does not exist
 		//cout<<s;
@@ -44,10 +36,9 @@ struct suffix * BuildSuffixTree(struct suffix * root,string s, int start, int si
 		root->m[s[start]-'a']=BuildSuffixTree( root->m[s[start]-'a'], s, start+1, size );
 
 	}
-	
-	
 	return root;
 }
+
 void checkPatter(struct suffix *root, string pattern,int start ,int size){
 	if(start==size){// if the start pointer has reached to the end 
 		cout<<"YES this pattern exist in the string ";
@@ -61,6 +52,7 @@ void checkPatter(struct suffix *root, string pattern,int start ,int size){
 	}
 
 }
+
 int main(){
 	struct suffix *root = NULL;
 
@@ -80,7 +72,4 @@ int main(){
 	string pattern;
 	cin>>pattern;
 	checkPatter(root,pattern,0,pattern.length());
-
-
-
 }
