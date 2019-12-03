@@ -53,7 +53,7 @@ jobs:
           g++ -v
           ls
           # g++ backtracking/n_queens.cpp
-          g++ **/.cpp
+          g++ **/*.cpp
           ls
           chmod +x a.out
           ./a.out
