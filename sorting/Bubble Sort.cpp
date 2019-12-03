@@ -1,4 +1,4 @@
-//Bubble Sort
+// Bubble Sort
 
 #include <iostream>
 #include <vector>
@@ -6,12 +6,12 @@ using namespace std;
 
 int main()
 {
-	//Input size
+	// Input size
 	size_t n;
 	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
 
-	//Input data
+	// Input data
 	vector<int> numbers(n);
 	cout << "Enter " << n << " numbers: ";
 	for (size_t i = 0; i < n; ++i)
@@ -19,7 +19,7 @@ int main()
 		cin >> numbers[i];
 	}
 
-	//Bubble Sorting
+	// Bubble Sorting
 	bool swapped;
 	for (size_t i = 0; (i < n) && (swap_check); ++i)
 	{
@@ -34,7 +34,7 @@ int main()
 		}
 	}
 
-	//Output
+	// Output
 	cout << "\nSorted Array : ";
 	cout << numbers[0];
 	for (size_t i = 0; i < n; ++i)
