@@ -27,8 +27,29 @@ We are very happy that you consider implementing algorithms and data structure f
 - If you have modified/added code work, make sure the code compiles before submitting.
 - **Be consistent in use of there guidelines when submitting**
 
+#### New File Name guidelines
+- Use lowercase words with ``"_"`` as separator
+- For instance 
+```
+MyNewCppClass.CPP       is incorrect
+my_new_cpp_class.cpp    is correct format
+```
+- It will be used to dynamically create a directory of files and implementation.
+- File name validation will run on docker to ensure the validity.
+
+#### New Directory guidelines 
+- We recommend adding files to existing directories as much as possible.
+- Use lowercase words with ``"_"`` as separator ( no spaces or ```"-"``` allowed )
+- For instance
+```
+SomeNew Fancy-Category          is incorrect
+some_new_fancy_category         is correct
+
+- It will be used to dynamically create a directory of files and implementation.
+- File name validation will run on docker to ensure the validity.
+
 #### Commit Guidelines
-- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to review changes that are silt across multiple commits.
+- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to review changes that are split across multiple commits.
 ```
 git add file_xyz.cpp
 git commit -m "your message"
