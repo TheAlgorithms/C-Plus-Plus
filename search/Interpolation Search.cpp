@@ -19,15 +19,15 @@ int InterpolationSearch(int A[], int n, int x)
 int main()
 {  
     int n;
-    cout<<"size of array"<<endl;
-    cin>>n;
+    std::cout<<"size of array"<<std::endl;
+    std::cin>>n;
     int A[n];
     int x;
-    cout<<"enter elements of array"<<endl;
+    std::cout<<"enter elements of array"<<std::endl;
     for(int i=0;i<n;i++)
-        cin>>A[i];
-    cout<<"element to find "<<endl;
-    cin>>x;
+        std::cin>>A[i];
+    std::cout<<"element to find "<<std::endl;
+    std::cin>>x;
     int index = InterpolationSearch(A, n, x); // passed array A inside the InterpolationSearch function
     if (index != -1)
         std::cout << "Number " << x << " is at " << index;
