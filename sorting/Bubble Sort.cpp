@@ -6,47 +6,40 @@ using namespace std;
 
 int main()
 {
-	int n;
-	short swap_check = 1;
+	//Input size
+	size_t n;
 	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
-	vector<int> numbers;
-	cout << "Enter " << n << " numbers: ";
-	int num;
 
-	//Input
-	for (int i = 0; i < n; i++)
+	//Input data
+	vector<int> numbers(n);
+	cout << "Enter " << n << " numbers: ";
+	for (size_t i = 0; i < n; ++i)
 	{
-		cin >> num;
-		numbers.push_back(num);
+		cin >> numbers[i];
 	}
 
 	//Bubble Sorting
-	for (int i = 0; (i < n) && (swap_check == 1); i++)
+	bool swapped;
+	for (size_t i = 0; (i < n) && (swap_check); ++i)
 	{
-		swap_check = 0;
-		for (int j = 0; j < n - 1 - i; j++)
+		swapped = false;
+		for (size_t j = 0; j < n - 1 - i; ++j)
 		{
 			if (numbers[j] > numbers[j + 1])
 			{
-				swap_check = 1;
 				swap(numbers[j], numbers[j + 1]);
+				swapped = true;
 			}
 		}
 	}
 
 	//Output
 	cout << "\nSorted Array : ";
-	for (int i = 0; i < numbers.size(); i++)
+	cout << numbers[0];
+	for (size_t i = 0; i < n; ++i)
 	{
-		if (i != numbers.size() - 1)
-		{
-			cout << numbers[i] << ", ";
-		}
-		else
-		{
-			cout << numbers[i] << endl;
-		}
+		cout << ", " << numbers[i];
 	}
 	return 0;
 }
