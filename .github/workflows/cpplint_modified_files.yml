@@ -52,7 +52,8 @@ jobs:
           gcc -v
           g++ -v
           ls
-          g++ backtracking/n_queens.cpp
+          # g++ backtracking/n_queens.cpp
+          g++ **/.py
           ls
           chmod +x a.out
           ./a.out
