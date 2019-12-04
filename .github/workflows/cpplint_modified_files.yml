@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-python@v1
+      - uses: actions/setup-python@v1  # Upgrade shell: python to Python 3.8
+      - run: sudo update-alternatives --install /usr/bin/python python ${pythonLocation}/bin/python3.8 10
       - run: python -m pip install cpplint
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
@@ -16,7 +17,7 @@ jobs:
           import subprocess
           import sys
 
-          print("Python {}.{}.{}".format(*sys.version_info))  # legacy Python :-(
+          print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8.0
           with open("git_diff.txt") as in_file:
             modified_files = sorted(in_file.read().splitlines())
           print("{} files were modified.".format(len(modified_files)))
@@ -28,7 +29,12 @@ jobs:
             sys.exit(0)
 
           print("cpplint:")
-          print(subprocess.check_output(["cpplint", "--filter=-legal/copyright"] + cpp_files).decode("utf-8"))
+          subprocess.run(["cpplint", "--filter=-legal/copyright"] + cpp_files, check=True, text=True)
+
+          print("g++:")
+          # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
+          # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
+          subprocess.run(["g++"] + cpp_files, check=True, text=True)
 
           upper_files = [file for file in cpp_files if file != file.lower()]
           if upper_files:
