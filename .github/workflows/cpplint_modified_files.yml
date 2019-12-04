@@ -34,7 +34,7 @@ jobs:
           print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
           # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
-          subprocess.run(["g++"] + cpp_files, check=True, text=True))
+          subprocess.run(["g++"] + cpp_files, check=True, text=True)
 
           upper_files = [file for file in cpp_files if file != file.lower()]
           if upper_files:
