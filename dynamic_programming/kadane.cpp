@@ -21,7 +21,7 @@ int main() {
     std::cout << "Enter the number of elements \n";
     std::cin >> n;
     int kA[n];
-    for(i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         std::cin >> kA[i];
     }
     int max_sum = maxSubArraySum(kA, n);
