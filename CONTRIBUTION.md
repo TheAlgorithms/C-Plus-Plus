@@ -1,31 +1,31 @@
 # CONTRIBUTION GUIDELINES
 
 ## Before contributing
-Welcome to [TheAlgorithms/c-plus-plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contribution guide, please feel free to state it clearly in [an issues](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose).
+Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose) and clearly state your concerns.
 
 ## Contributing
-### Contributor 
-We are very happy that you consider implementing algorithms and data structure for others! This repository is referenced and used by learners from all over the globe. Being one of our contributors, you agree and confirm that:
-
-- You did your work.
-    - No plagiarism allowed. Any plagiarized work  will not be merged.
-- Your work will be distributed under [MIT License](License) Once your pull request is merged.
+### Contributor
+We are very happy that you consider implementing algorithms and data structures for others! This repository is referred to and used by learners from around the globe. Being one of our contributors, you agree and confirm that:
+- You did your own work.
+    - No plagiarism allowed.  Any plagiarized work will not be merged.
+- Your work will be distributed under [MIT License](License) once your pull request has been merged.
 - You submitted work fulfils or mostly fulfils our styles and standards.
 
-**New implementation** New implementation are welcome! 
-**Improving comments** and **Adding test cases** are also highly welcome.
+**New implementation** New implementation are welcome!
+**Improving comments** and **adding tests** to existing algorithms are much appreciated.
 
 ### Making Changes
 
 #### Code
-- Use the directory structure of the repository.
+- Please use the directory structure of the repository.
 - File extension for code should be *.h *.cpp.
-- Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compiler process.
-- Avoid using **struct**. Instead use the **class** keyword.
-- You can suggest any change in present algorithms(if needed).
-- Strictly use snake_case (underscore_separated) in your file names, later to be used by a script.
-- If you have modified/added code work, make sure the code compiles before submitting.
-- **Be consistent in use of there guidelines when submitting**
+- Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compilation process.
+- Avoid using **struct** and instead use the **class** keyword.
+- You can suggest reasonable changes to existing algorithms.
+- Strictly use snake_case (underscore_separated) in filenames.
+- If you have added or modified code, please make sure the code compiles before submitting.
+- Our automated testing runs [__cpplint__](https://github.com/cpplint/cpplint) on all pull requests so please be sure that your code passes before submitting.
+- **Be consistent in use of these guidelines.**
 
 #### New File Name guidelines
 - Use lowercase words with ``"_"`` as separator
@@ -49,7 +49,7 @@ some_new_fancy_category         is correct
 - File name validation will run on docker to ensure the validity.
 
 #### Commit Guidelines
-- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to review changes that are split across multiple commits.
+- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
 ```
 git add file_xyz.cpp
 git commit -m "your message"
@@ -65,20 +65,30 @@ Common prefixes:
 - fix: A bug fix
 - feat: A new feature
 - docs: Documentation changes
-- test: Adding missing tests or correcting existing tests
+- test: Correct existing tests or add new ones
 
 #### Documentation
-- Make sure you put comments in your code.
-- Please avoid creating a new directories if at all possible. Try to fit your work into existing directory structure. If you want to create one, please check if the same category has been recently suggested or created by another pull request. 
-- If you have modified/added documentation work, ensure your language is concise and contains no grammar errors.
-- Do not update the README.md along with other changes, first create an issue and link that issue with the pull request to suggest specific changes to README.md
+- Make sure you put useful comments in your code.  Do not comment things that are obvious.
+- Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
+- If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.
+- Do not update README.md along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md
 
 #### Test
-- Make sure you add test cases and examples in the main-function.
-- If you find any algorithm or document without tests please feel free to create issue of suggest changes.
+- Make sure to add examples and test cases in your main() function.
+- If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
 
 ### Pull Requests
 - Checkout our [pull request template](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md)
+
+#### cpplint
+To see if [__cpplint__](https://github.com/cpplint/cpplint) is already installed, do:
+* `cpplint --version`  # currently returns "cpplint 1.4.4"
+If cpplint is ___not___ installed then do:
+* `python3 -m pip install cpplint`  # If that does not work then try...
+* `py -m pip install cpplint`  # If that does not work then try...
+* `pip install cpplint`
+Once cpplint is installed, test your file(s) with:
+* `cpplint --filter=-legal my_file.cpp my_other_file.cpp`  # Fix any issues and try again.
 
 - Most importantly,
     - Happy coding!
