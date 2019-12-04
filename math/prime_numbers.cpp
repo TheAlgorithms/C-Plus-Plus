@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-vector<int> primes(int max) {
+std::vector<int> primes(int max) {
     max++;
-    vector<int> res;
-    vector<bool> numbers(max, false);
+    std::vector<int> res;
+    std::vector<bool> numbers(max, false);
     for (int i = 2; i < max; i++) {
         if (!numbers[i]) {
             for (int j = i; j < max; j += i)
