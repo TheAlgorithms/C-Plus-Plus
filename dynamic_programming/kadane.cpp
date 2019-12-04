@@ -20,11 +20,11 @@ int main() {
     int n, i;
     std::cout << "Enter the number of elements \n";
     std::cin >> n;
-    int kA[n];
+    int a[n];  // NOLINT
     for (i = 0; i < n; i++) {
-        std::cin >> kA[i];
+        std::cin >> a[i];
     }
-    int max_sum = maxSubArraySum(kA, n);
+    int max_sum = maxSubArraySum(a, n);
     std::cout << "Maximum contiguous sum is " << max_sum;
     return 0;
 }
