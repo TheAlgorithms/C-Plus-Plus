@@ -1,8 +1,8 @@
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> v;
-        map<int, int> m;
+    std::vector<int> twoSum(std::vector<int>& nums, int target) {
+        std::vector<int> v;
+        std::map<int, int> m;
         for (int i = 0; i < nums.size(); i++) {
             int complement = target - nums[i];
             if (m.find(complement) != m.end()) {
