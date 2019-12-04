@@ -19,7 +19,7 @@ int main() {
     std::cout << "Calculate primes up to:\n>> ";
     int n;
     std::cin >> n;
-    vector<int> ans = primes(n);
+    std::vector<int> ans = primes(n);
     for (int i = 0; i < ans.size(); i++)
         std::cout << ans[i] << ' ';
     std::cout << std::endl;
