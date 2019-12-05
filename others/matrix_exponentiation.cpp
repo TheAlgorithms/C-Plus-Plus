@@ -1,6 +1,6 @@
 /*
-Matrix Exponentiation. If the problem can be solved with DP but constraints are
-high.
+Matrix Exponentiation.
+The problem can be solved with DP but constraints are high.
 ai = bi (for i <= k)
 ai = c1*ai-1 + c2*ai-2 + ... + ck*ai-k (for i > k)
 Taking the example of Fibonacci series, K=2
@@ -10,7 +10,6 @@ a = 0 1 1 2 ....
 This way you can find the 10^18 fibonacci number%MOD.
 I have given a general way to use it. The program takes the input of B and C
 matrix.
-
 Steps for Matrix Expo
 1. Create vector F1 : which is the copy of B.
 2. Create transpose matrix (Learn more about it on the internet)
