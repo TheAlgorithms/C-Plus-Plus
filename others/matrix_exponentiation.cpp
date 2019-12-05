@@ -70,9 +70,9 @@ vector<vector<ll>> multiply(vector<vector<ll>> A, vector<vector<ll>> B) {
 vector<vector<ll>> power(vector<vector<ll>> A, ll p) {
     if (p == 1)
         return A;
-    if (p % 2 == 1)
+    if (p % 2 == 1) {
         return multiply(A, power(A, p - 1));
-    else {
+    } else {
         vector<vector<ll>> X = power(A, p / 2);
         return multiply(X, X);
     }
