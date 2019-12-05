@@ -44,12 +44,12 @@ my_new_cpp_class.cpp    is correct format
 ```
 SomeNew Fancy-Category          is incorrect
 some_new_fancy_category         is correct
-
-- It will be used to dynamically create a directory of files and implementation.
-- File name validation will run on docker to ensure the validity.
+```
+- Filepaths will be used to dynamically create a directory of our algorithms.
+- Filepath validation will run on GitHub Actions to ensure compliance.
 
 #### Commit Guidelines
-- It is recommended to keep your changes grouped logically within individual commits. Contributors find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
+- It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
 ```
 git add file_xyz.cpp
 git commit -m "your message"
