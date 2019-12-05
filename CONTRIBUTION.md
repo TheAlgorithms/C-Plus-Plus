@@ -90,5 +90,9 @@ If cpplint is ___not___ installed then do:
 Once cpplint is installed, test your file(s) with:
 * `cpplint --filter=-legal my_file.cpp my_other_file.cpp`  # Fix any issues and try again.
 
+The [__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) tool can fix many but not all _cpplint_ issues.
+* On Macs only: `brew install clang-format`  # Only needs to be installed once.
+* All platforms: `clang-format --style=Google -i my_file.cpp`
+
 - Most importantly,
     - Happy coding!
