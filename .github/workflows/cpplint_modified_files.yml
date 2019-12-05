@@ -1,3 +1,9 @@
+# GitHub Action that allows for gradual compliance with cpplint as only files added or
+#     modified are checked.
+# 1. runs cpplint only on those files that have been modified vs. origin/master
+# 2. compiles with g++ only on those files that have been modified vs. origin/master
+# 3. Other optional filepath verifications can be commented out at the end of this file.
+
 name: cpplint_modified_files
 on: [push, pull_request]
 jobs:
@@ -5,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-python@v1  # Upgrade shell: python to Python 3.8
+      - uses: actions/setup-python@v1
+      - shell: python  # Show shell: python version and then upgrade shell: python to Python 3.8
+        run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))  # Legacy Python :-(
       - run: sudo update-alternatives --install /usr/bin/python python ${pythonLocation}/bin/python3.8 10
       - run: python -m pip install cpplint
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
