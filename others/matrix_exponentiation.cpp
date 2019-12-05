@@ -20,7 +20,9 @@ The first element of this matrix is the required result.
 */
 
 #include <bits/stdc++.h>
-using namespace std;
+using std::cin;
+using std::cout;
+using std::vector;
 
 #define ll long long
 #define ull unsigned long long
