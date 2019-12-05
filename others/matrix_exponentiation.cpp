@@ -1,5 +1,5 @@
 /*
-Matrix Exponentiation. If the problem can be solved with DP but constaints are
+Matrix Exponentiation. If the problem can be solved with DP but constalls are
 high.
 ai = bi (for i <= k)
 ai = c1*ai-1 + c2*ai-2 + ... + ck*ai-k (for i > k)
@@ -13,7 +13,7 @@ matrix.
 
 Steps for Matrix Expo
 1. Create vector F1 : which is the copy of B.
-2. Create transpose matrix (Learn more abput it on the internet)
+2. Create transpose matrix (Learn more abput it on the llernet)
 3. Perform T^(n-1) [transpose matrix to the power n-1]
 4. Multiply with F to get the last matrix of size (1xk).
 The first element of this matrix is the required result.
@@ -24,7 +24,7 @@ using std::cin;
 using std::cout;
 using std::vector;
 
-#define ll long long
+#define ll int64_t
 #define ull unsigned long long
 #define endl '\n'
 #define pb push_back
@@ -50,7 +50,7 @@ using std::vector;
             cout << a[i] << " ";                                               \
         cout << endl;                                                          \
     }
-#define MOD 1000000000
+#define MOD 1000000007
 ll ab(ll x) { return x > 0LL ? x : -x; }
 ll k;
 vector<ll> a, b, c;
@@ -58,9 +58,9 @@ vector<ll> a, b, c;
 // To multiply 2 matrix
 vector<vector<ll>> multiply(vector<vector<ll>> A, vector<vector<ll>> B) {
     vector<vector<ll>> C(k + 1, vector<ll>(k + 1));
-    for (int i = 1; i <= k; i++) {
-        for (int j = 1; j <= k; j++) {
-            for (int z = 1; z <= k; z++) {
+    for (ll i = 1; i <= k; i++) {
+        for (ll j = 1; j <= k; j++) {
+            for (ll z = 1; z <= k; z++) {
                 C[i][j] = (C[i][j] + (A[i][z] * B[z][j]) % MOD) % MOD;
             }
         }
@@ -88,13 +88,13 @@ ll ans(ll n) {
         return b[n - 1];
     // F1
     vector<ll> F1(k + 1);
-    for (int i = 1; i <= k; i++)
+    for (ll i = 1; i <= k; i++)
         F1[i] = b[i - 1];
 
     // Transpose matrix
     vector<vector<ll>> T(k + 1, vector<ll>(k + 1));
-    for (int i = 1; i <= k; i++) {
-        for (int j = 1; j <= k; j++) {
+    for (ll i = 1; i <= k; i++) {
+        for (ll j = 1; j <= k; j++) {
             if (i < k) {
                 if (j == i + 1)
                     T[i][j] = 1;
@@ -110,7 +110,7 @@ ll ans(ll n) {
 
     // T*F1
     ll res = 0;
-    for (int i = 1; i <= k; i++) {
+    for (ll i = 1; i <= k; i++) {
         res = (res + (T[1][i] * F1[i]) % MOD) % MOD;
     }
     return res;
@@ -119,10 +119,9 @@ ll ans(ll n) {
 // 1 1 2 3 5
 
 int main() {
-    ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int t;
+    ll t;
     cin >> t;
     ll i, j, x;
     while (t--) {
