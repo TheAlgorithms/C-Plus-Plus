@@ -19,9 +19,9 @@ void Sieve(int64_t n) {
 int main() {
     Sieve(100000000);
     int64_t n;
-    std:cin >> n;  // 10006187
+    std::cin >> n;  // 10006187
     if (prime[n] == '1')
-        std:cout << "YES\n";
+        std::cout << "YES\n";
     else
-        std:cout << "NO\n";
+        std::cout << "NO\n";
 }
