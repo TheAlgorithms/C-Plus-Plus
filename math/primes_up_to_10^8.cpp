@@ -3,7 +3,7 @@
 
 char prime[100000000];
 
-void Sieve(cstdint::int64_t n) {
+void Sieve(int64_t n) {
     memset(prime, '1', sizeof(prime));  // intitize '1' to every index
     prime[0] = '0';  // 0 is not prime
     prime[1] = '0';  // 1 is not prime
