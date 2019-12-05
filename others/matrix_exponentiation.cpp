@@ -3,7 +3,7 @@ Matrix Exponentiation. If the problem can be solved with DP but constaints are h
 ai = bi (for i <= k)
 ai = c1*ai-1 + c2*ai-2 + ... + ck*ai-k (for i > k)
 Taking the example of Fibonacci series, K=2
-b1 = 0, b2=1
+b1 = 1, b2=1
 c1 = 1, c2=1
 a = 0 1 1 2 ....
 This way you can find the 10^18 fibonacci number%MOD.
@@ -23,16 +23,25 @@ using namespace std;
 #define endl '\n'
 #define pb push_back
 #define mp make_pair
-#define MOD 1000000007
+#define trace1(x)                cout<<#x<<": "<<x<<endl
+#define trace2(x, y)             cout<<#x<<": "<<x<<" | "<<#y<<": "<<y<<endl
+#define trace3(x, y, z)          cout<<#x<<":" <<x<<" | "<<#y<<": "<<y<<" | "<<#z<<": "<<z<<endl
+#define trace4(a, b, c, d)       cout<<#a<<": "<<a<<" | "<<#b<<": "<<b<<" | "<<#c<<": "<<c<<" | "<<#d<<": "<<d<<endl
+#define trace5(a, b, c, d, e)    cout<<#a<<": "<<a<<" | "<<#b<<": "<<b<<" | "<<#c<<": "<<c<<" | "<<#d<<": "<<d<<" | "<<#e<< ": "<<e<<endl
+#define trace6(a, b, c, d, e, f) cout<<#a<<": "<<a<<" | "<<#b<<": "<<b<<" | "<<#c<<": "<<c<<" | "<<#d<<": "<<d<<" | "<<#e<< ": "<<e<<" | "<<#f<<": "<<f<<endl
+#define traceloop(x,a) {for(ll i=0;i<x;i++) cout<<a[i]<<" "; cout<<endl;}
+#define MOD 1000000000
+ll ab(ll x) {return x>0LL?x:-x;}
 ll k;
 vector<ll> a,b,c;
 
 //To multiply 2 matrix
-vector<vector<ll> > multiply(vector<vector<ll> > A, vector<vector<ll> > B) {
+vector<vector<ll> > multiply(vector<vector<ll> > A, vector<vector<ll> > B)
+{
 	vector<vector<ll> > C(k+1,vector<ll>(k+1));
-	for (int i=1; i<=k; i++) {
-		for (int j=1; j<=k; j++) {
-			for (int z=1; z<=k; z++) {
+	for(int i=1; i<=k; i++){
+		for(int j=1; j<=k; j++){
+			for(int z=1; z<=k; z++){
 				C[i][j] = (C[i][j]+ (A[i][z]*B[z][j])%MOD)%MOD;
 			}
 		}
@@ -41,34 +50,37 @@ vector<vector<ll> > multiply(vector<vector<ll> > A, vector<vector<ll> > B) {
 }
 
 //computing power of a matrix
-vector<vector<ll> > power(vector<vector<ll> > A, ll p) {
-	if (p==1)
+vector<vector<ll> > power(vector<vector<ll> > A, ll p)
+{
+	if(p==1)
 		return A;
-	if (p%2==1)
+	if(p%2==1)
 		return multiply(A,power(A,p-1));
-	else {
+	else{
 		vector<vector<ll> > X = power(A,p/2);
 		return multiply(X,X);
 	}
+
 }
 
 //main function
-ll ans(ll n) {
-	if (n==0)
+ll ans(ll n)
+{
+	if(n==0)
 		return 0;
-	if (n<=k)
+	if(n<=k)
 		return b[n-1];
 	//F1
 	vector<ll> F1(k+1);
-	for (int i=1; i<=k; i++)
+	for(int i=1; i<=k; i++)
 		F1[i]=b[i-1];
 
 	//Transpose matrix
 	vector<vector<ll> > T(k+1,vector<ll>(k+1));
-	for (int i=1; i<=k; i++) {
-		for (int j=1; j<=k; j++) {
-			if (i<k){
-				if (j==i+1)
+	for(int i=1; i<=k; i++){
+		for(int j=1; j<=k; j++){
+			if(i<k){
+				if(j==i+1)
 					T[i][j]=1;
 				else
 					T[i][j]=0;
@@ -82,11 +94,16 @@ ll ans(ll n) {
 
 	// T*F1
 	ll res=0;
-	for (int i=1; i<=k; i++) {
+	for(int i=1; i<=k; i++)
+	{
 		res= (res + (T[1][i]*F1[i])%MOD)%MOD;
 	}
 	return res;
 }
+
+
+//1 1 2 3 5
+
 
 int main()
 {
@@ -95,13 +112,16 @@ int main()
 	int t;
 	cin>>t;
 	ll i,j,x;
-	while (t--) {
+	while(t--)
+	{
 		cin>>k;
-		for (i=0; i<k; i++) {
+		for(i=0; i<k; i++)
+		{
 			cin>>x;
 			b.pb(x);
 		}
-		for(i=0; i<k; i++) {
+		for(i=0; i<k; i++)
+		{
 			cin>>x;
 			c.pb(x);
 		}
@@ -111,4 +131,4 @@ int main()
 		c.clear();
 	}
 	return 0;
-}
+} 
