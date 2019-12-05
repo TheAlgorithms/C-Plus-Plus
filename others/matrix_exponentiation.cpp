@@ -1,5 +1,5 @@
 /*
-Matrix Exponentiation. If the problem can be solved with DP but constalls are
+Matrix Exponentiation. If the problem can be solved with DP but constraints are
 high.
 ai = bi (for i <= k)
 ai = c1*ai-1 + c2*ai-2 + ... + ck*ai-k (for i > k)
@@ -13,7 +13,7 @@ matrix.
 
 Steps for Matrix Expo
 1. Create vector F1 : which is the copy of B.
-2. Create transpose matrix (Learn more abput it on the llernet)
+2. Create transpose matrix (Learn more about it on the internet)
 3. Perform T^(n-1) [transpose matrix to the power n-1]
 4. Multiply with F to get the last matrix of size (1xk).
 The first element of this matrix is the required result.
@@ -25,31 +25,8 @@ using std::cout;
 using std::vector;
 
 #define ll int64_t
-#define ull unsigned long long
 #define endl '\n'
 #define pb push_back
-#define mp make_pair
-#define trace1(x) cout << #x << ": " << x << endl
-#define trace2(x, y) cout << #x << ": " << x << " | " << #y << ": " << y << endl
-#define trace3(x, y, z)                                                        \
-    cout << #x << ":" << x << " | " << #y << ": " << y << " | " << #z << ": "  \
-         << z << endl
-#define trace4(a, b, c, d)                                                     \
-    cout << #a << ": " << a << " | " << #b << ": " << b << " | " << #c << ": " \
-         << c << " | " << #d << ": " << d << endl
-#define trace5(a, b, c, d, e)                                                  \
-    cout << #a << ": " << a << " | " << #b << ": " << b << " | " << #c << ": " \
-         << c << " | " << #d << ": " << d << " | " << #e << ": " << e << endl
-#define trace6(a, b, c, d, e, f)                                               \
-    cout << #a << ": " << a << " | " << #b << ": " << b << " | " << #c << ": " \
-         << c << " | " << #d << ": " << d << " | " << #e << ": " << e << " | " \
-         << #f << ": " << f << endl
-#define traceloop(x, a)                                                        \
-    {                                                                          \
-        for (ll i = 0; i < x; i++)                                             \
-            cout << a[i] << " ";                                               \
-        cout << endl;                                                          \
-    }
 #define MOD 1000000007
 ll ab(ll x) { return x > 0LL ? x : -x; }
 ll k;
