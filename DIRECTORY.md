@@ -77,6 +77,7 @@
   * [Power For Huge Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_for_huge_numbers.cpp)
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_factorization.cpp)
   * [Prime Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_numbers.cpp)
+  * [Primes Up To 10^8](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/primes_up_to_10^8.cpp)
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
 
 ## Operations On Datastructures
