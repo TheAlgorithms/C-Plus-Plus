@@ -34,7 +34,6 @@
 
 ## Dynamic Programming
   * [0-1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0-1%20Knapsack.cpp)
-  * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Armstrong%20Number.cpp)
   * [Bellman-Ford](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Bellman-Ford.cpp)
   * [Catalan-Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Catalan-Numbers.cpp)
   * [Coin-Change](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Coin-Change.cpp)
@@ -48,6 +47,7 @@
   * [Longest Increasing Subsequence (Nlogn)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Longest%20Increasing%20Subsequence%20(nlogn).cpp)
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Longest%20Increasing%20Subsequence.cpp)
   * [Matrix-Chain-Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Matrix-Chain-Multiplication.cpp)
+  * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/armstrong_number.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_string.cpp)
 
