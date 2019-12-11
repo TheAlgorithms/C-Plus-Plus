@@ -1,5 +1,4 @@
 // Program to check whether a number is an armstrong number or not
-#include <math.h>
 #include <iostream>
 
 using std::cout;
@@ -12,7 +11,7 @@ int main() {
   k = n;
   while (k != 0) {
     d = k % 10;
-    s +=  static_cast<int> (pow(d, 3));
+    s +=  d * d * d;
     k /= 10;
   }
   if (s == n)
