@@ -11,7 +11,7 @@ int main() {
   k = n;
   while (k != 0) {
     d = k % 10;
-    s +=  d * d * d;
+    s += d * d * d;
     k /= 10;
   }
   if (s == n)
