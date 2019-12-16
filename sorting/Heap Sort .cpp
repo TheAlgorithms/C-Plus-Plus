@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+
 using namespace std;
 void max_heapify(int *a, int i, int n)
 {
@@ -58,5 +58,5 @@ int main()
 	{
 		cout << a[i] << endl;
 	}
-	getch();
+	getchar();
 }
