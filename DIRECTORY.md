@@ -134,7 +134,6 @@
   * [Cocktailselectionsort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/CocktailSelectionSort.cpp)
   * [Countingsortstring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/CountingSortString.cpp)
   * [Counting Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Counting_Sort.cpp)
-  * [Heap Sort ](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Heap%20Sort%20.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Insertion%20Sort.cpp)
   * [Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Merge%20Sort.cpp)
   * [Numericstringsort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/NumericStringSort.cpp)
@@ -147,6 +146,7 @@
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Tim%20Sort.cpp)
   * [Bucketsort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bucketSort.cpp)
   * [Combsort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/combsort.cpp)
+  * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/heap_sort.cpp)
 
 ## Strings
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
