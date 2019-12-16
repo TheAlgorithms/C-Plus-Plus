@@ -1,6 +1,5 @@
 #include <iostream>
 
-using namespace std;
 void max_heapify(int *a, int i, int n)
 {
 	int j, temp;
@@ -43,20 +42,20 @@ void build_maxheap(int *a, int n)
 int main()
 {
 	int n, i, x;
-	cout << "Enter number of elements of array\n";
-	cin >> n;
+	std::cout << "Enter number of elements of array\n";
+	std::cin >> n;
 	int a[20];
 	for (i = 1; i <= n; i++)
 	{
-		cout << "Enter Element " << (i) << endl;
-		cin >> a[i];
+		std::cout << "Enter Element " << (i) << endl;
+		std::cin >> a[i];
 	}
 	build_maxheap(a, n);
 	heapsort(a, n);
-	cout << "Sorted Output\n";
+	std::cout << "Sorted Output\n";
 	for (i = 1; i <= n; i++)
 	{
-		cout << a[i] << endl;
+		std::cout << a[i] << endl;
 	}
-	getchar();
+	std::getchar();
 }
