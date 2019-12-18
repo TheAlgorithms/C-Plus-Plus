@@ -80,10 +80,10 @@ bool deleteString(trie * root, char * str, int index) {
 
 int main() {
     trie * root = createNode();
-    insert(root, (char *) "hello");
-    insert(root, (char *) "world");
-    int a = search(root, (char *) "hello", 0);
-    int b = search(root, (char *) "word", 0);
+    insert(root, const_cast < char * > ("hello"));
+    insert(root, const_cast < char * > ("world"));
+    int a = search(root, const_cast < char * > ("hello"), 0);
+    int b = search(root, const_cast < char * > ("word"), 0);
     printf("%d %d ", a, b);
     return 0;
 }
