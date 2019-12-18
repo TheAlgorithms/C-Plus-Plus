@@ -1,10 +1,10 @@
-#include <iostream>
-
 #include <stdio.h>
 
 #include <string.h>
 
 #include <stdbool.h>
+
+#include <iostream>
 
 using namespace std;
 // structure definition
@@ -67,8 +67,9 @@ bool deleteString(trie * root, char * str, int index) {
     var = deleteString(root, str, index + 1);
     if (var) {
         root -> arr[j] = NULL;
-        if (root -> isEndofWord)
+        if (root -> isEndofWord){
             return false;
+        }
         else {
             int i;
             for (i = 0; i < 26; i++)
