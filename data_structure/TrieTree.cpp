@@ -6,7 +6,6 @@
 
 #include <iostream>
 
-using namespace std;
 // structure definition
 typedef struct trie {
     struct trie * arr[26];
@@ -67,10 +66,9 @@ bool deleteString(trie * root, char * str, int index) {
     var = deleteString(root, str, index + 1);
     if (var) {
         root -> arr[j] = NULL;
-        if (root -> isEndofWord){
+        if (root -> isEndofWord) {
             return false;
-        }
-        else {
+        } else {
             int i;
             for (i = 0; i < 26; i++)
                 if (root -> arr[i])
