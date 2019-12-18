@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 #include <string.h>
 #include <stdbool.h>
 using namespace std;
