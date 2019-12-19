@@ -1,9 +1,6 @@
 #include <stdio.h>
-
 #include <string.h>
-
 #include <stdbool.h>
-
 #include <iostream>
 
 // structure definition
@@ -12,6 +9,7 @@ typedef struct trie {
     bool isEndofWord;
 }
 trie;
+
 // create a new node for trie
 trie * createNode() {
     trie * nn = new trie();
@@ -22,7 +20,7 @@ trie * createNode() {
 }
 
 // insert string into the trie
-void insert(trie * root, char * str) {
+void insert(trie * root, string str) {
     for (int i = 0; i < strlen(str); i++) {
         int j = str[i] - 'a';
         if (root -> arr[j]) {
@@ -36,7 +34,7 @@ void insert(trie * root, char * str) {
 }
 
 // search a string exists inside the trie
-bool search(trie * root, char * str, int index) {
+bool search(trie * root, string str, int index) {
     if (index == strlen(str)) {
         if (!root -> isEndofWord)
             return false;
@@ -47,10 +45,11 @@ bool search(trie * root, char * str, int index) {
         return false;
     return search(root -> arr[j], str, index + 1);
 }
+
 /* removes the string if it is not a prefix of any  other 
  string, if it is then just sets the endofword to false, else 
  removes the given string*/
-bool deleteString(trie * root, char * str, int index) {
+bool deleteString(trie * root, string str, int index) {
     if (index == strlen(str)) {
         if (!root -> isEndofWord)
             return false;
@@ -80,10 +79,10 @@ bool deleteString(trie * root, char * str, int index) {
 
 int main() {
     trie * root = createNode();
-    insert(root, const_cast < char * > ("hello"));
-    insert(root, const_cast < char * > ("world"));
-    int a = search(root, const_cast < char * > ("hello"), 0);
-    int b = search(root, const_cast < char * > ("word"), 0);
+    insert(root, const_cast < string > ("hello"));
+    insert(root, const_cast < string > ("world"));
+    int a = search(root, const_cast < string > ("hello"), 0);
+    int b = search(root, const_cast < string > ("word"), 0);
     printf("%d %d ", a, b);
     return 0;
 }
