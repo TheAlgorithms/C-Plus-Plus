@@ -20,7 +20,7 @@ trie * createNode() {
 }
 
 // insert string into the trie
-void insert(trie * root, string str) {
+void insert(trie * root, std::string str) {
     for (int i = 0; i < str.length(); i++) {
         int j = str[i] - 'a';
         if (root -> arr[j]) {
@@ -34,7 +34,7 @@ void insert(trie * root, string str) {
 }
 
 // search a string exists inside the trie
-bool search(trie * root, string str, int index) {
+bool search(trie * root, std::string str, int index) {
     if (index == str.length()) {
         if (!root -> isEndofWord)
             return false;
@@ -51,7 +51,7 @@ removes the string if it is not a prefix of any  other
 string, if it is then just sets the endofword to false, else 
 removes the given string
 */
-bool deleteString(trie * root, string str, int index) {
+bool deleteString(trie * root, std::string str, int index) {
     if (index == str.length()) {
         if (!root -> isEndofWord)
             return false;
