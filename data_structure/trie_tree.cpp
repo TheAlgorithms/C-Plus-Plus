@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdbool.h>
+
 #include <iostream>
+#include <string>
 
 // structure definition
 typedef struct trie {
     struct trie * arr[26];
     bool isEndofWord;
-}
-trie;
+} trie;
 
 // create a new node for trie
 trie * createNode() {
@@ -20,8 +20,8 @@ trie * createNode() {
 }
 
 // insert string into the trie
-void insert(trie * root, char * str) {
-    for (int i = 0; i < strlen(str); i++) {
+void insert(trie * root, string str) {
+    for (int i = 0; i < str.length(); i++) {
         int j = str[i] - 'a';
         if (root -> arr[j]) {
             root = root -> arr[j];
@@ -34,8 +34,8 @@ void insert(trie * root, char * str) {
 }
 
 // search a string exists inside the trie
-bool search(trie * root, char * str, int index) {
-    if (index == strlen(str)) {
+bool search(trie * root, string str, int index) {
+    if (index == str.length()) {
         if (!root -> isEndofWord)
             return false;
         return true;
@@ -46,11 +46,13 @@ bool search(trie * root, char * str, int index) {
     return search(root -> arr[j], str, index + 1);
 }
 
-/* removes the string if it is not a prefix of any  other 
- string, if it is then just sets the endofword to false, else 
- removes the given string*/
-bool deleteString(trie * root, char * str, int index) {
-    if (index == strlen(str)) {
+/*
+removes the string if it is not a prefix of any  other 
+string, if it is then just sets the endofword to false, else 
+removes the given string
+*/
+bool deleteString(trie * root, string str, int index) {
+    if (index == str.length()) {
         if (!root -> isEndofWord)
             return false;
         root -> isEndofWord = false;
@@ -79,13 +81,10 @@ bool deleteString(trie * root, char * str, int index) {
 
 int main() {
     trie * root = createNode();
-    char hello[] = "hello";
-    char world[] = "world";
-    char word[] = "word";
-    insert(root, hello);
-    insert(root, world);
-    int a = search(root, hello, 0);
-    int b = search(root, word, 0);
+    insert(root, "hello");
+    insert(root, "world");
+    int a = search(root, "hello", 0);
+    int b = search(root, "word", 0);
     printf("%d %d ", a, b);
     return 0;
 }
