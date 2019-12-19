@@ -28,9 +28,9 @@
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Stack%20Using%20Array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Stack%20Using%20Linked%20List.cpp)
   * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Tree.cpp)
-  * [Trietree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/TrieTree.cpp)
   * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/circular_Queue_using_Linked_List.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
+  * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_tree.cpp)
 
 ## Dynamic Programming
   * [0-1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0-1%20Knapsack.cpp)
