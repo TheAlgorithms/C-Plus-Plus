@@ -1,33 +1,29 @@
-#include <iostream.h>
+#include<stdlib.h>
 #include <conio.h>
 #include <math.h>
+#include <iostream>
 
-float eq(float i)
-{
-	return (pow(i, 3) - (4 * i) - 9); // origial equation
+float eq(float i) {
+	return (pow(i, 3) - (4 * i) - 9); //  origial equation
 }
 
-void main()
-{
+int main() {
 	float a, b, z, c, m, n;
-	clrscr();
-	for (int i = 0; i < 100; i++)
-	{
+	system("cls");
+	for (int i = 0; i < 100; i++) {
 		z = eq(i);
-		if (z >= 0)
-		{
+		if (z >= 0) {
 			b = i;
 			a = --i;
 			goto START;
 		}
 	}
 
-START:
+	START:
 
-	cout << "\nFirst initial: " << a;
-	cout << "\nSecond initial: " << b;
-	for (i = 0; i < 100; i++)
-	{
+		std::cout << "\nFirst initial: " << a;
+	std::cout << "\nSecond initial: " << b;
+	for (int i = 0; i < 100; i++) {
 
 		float h, d;
 		m = eq(a);
@@ -43,7 +39,7 @@ START:
 		}
 	}
 
-END:
-	cout << "\n\nRoot: " << c;
+	END:
+		std::cout << "\n\nRoot: " << c;
 	getch();
 }
