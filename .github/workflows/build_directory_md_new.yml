@@ -46,7 +46,7 @@ jobs:
                 return new_path
 
 
-            def print_directory_md(top_dir: str = ".") -> None:
+            def write_directory_md(top_dir: str = ".") -> None:
                 old_path = ""
                 for filepath in sorted(good_filepaths()):
                     filepath, filename = os.path.split(filepath)
@@ -55,15 +55,16 @@ jobs:
                     indent = (filepath.count(os.sep) + 1) if filepath else 0
                     url = "/".join((URL_BASE, filepath, filename)).replace(" ", "%20")
                     filename = os.path.splitext(filename.replace("_", " ").title())[0]
-                    print(f"{md_prefix(indent)} [{filename}]({url})")
+                    with open("DIRECTORY.md", "w") as out_file:
+                        print(f"{md_prefix(indent)} [{filename}]({url})", file=out_file)
 
 
-            # if __name__ == "__main__":
-            print_directory_md(".")
+            write_directory_md(".")
 
       - name: Update DIRECTORY.md
         run: |
           # .github/scripts/build_directory_md.py 2>&1 | tee DIRECTORY.md
+          cat DIRECTORY.md
           git config --global user.name github-actions
           git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
