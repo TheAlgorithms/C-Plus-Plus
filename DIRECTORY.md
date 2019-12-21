@@ -70,6 +70,9 @@
 
 ## Hashing
   * [Chaining](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/Chaining.cpp)
+  * [Double Hash Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/double_hash_hash_table.cpp)
+  * [Linear Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/linear_probing_hash_table.cpp)
+  * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
 
 ## Math
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
