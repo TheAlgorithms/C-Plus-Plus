@@ -28,7 +28,7 @@ jobs:
                 cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
                 for dirpath, dirnames, filenames in os.walk(top_dir):
                     dirnames[:] = [d for d in dirnames if d[0] not in "._"]
-                    for filename in sorted(filenames):
+                    for filename in filenames:
                         if os.path.splitext(filename)[1].lower() in cpp_exts:
                             yield os.path.join(dirpath, filename).lstrip("./")
 
@@ -51,7 +51,7 @@ jobs:
             def build_directory_md(top_dir: str = ".") -> str:
                 global g_output
                 old_path = ""
-                for filepath in sorted(good_filepaths()):
+                for filepath in sorted(good_filepaths(), key=str.lower):
                     filepath, filename = os.path.split(filepath)
                     if filepath != old_path:
                         old_path = print_path(old_path, filepath)
