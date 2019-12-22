@@ -6,9 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-python@v1
-        with:
-          python-version: 3.x
       - shell: python
         run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))
       - name: Upgrade to Python 3.8
@@ -44,7 +41,6 @@ jobs:
                     if i + 1 > len(old_parts) or old_parts[i] != new_part:
                         if new_part:
                             g_output.append(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
-                            # print(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
                 return new_path
 
 
