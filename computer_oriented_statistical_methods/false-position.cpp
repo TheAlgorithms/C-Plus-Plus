@@ -6,7 +6,7 @@ float eq(float i) {
 }
 int main() {
     float a, b, z, c, m, n;
-    system("cls");
+    system("clear");
     for (int i = 0; i < 100; i++) {
         z = eq(i);
         if (z >= 0) {
