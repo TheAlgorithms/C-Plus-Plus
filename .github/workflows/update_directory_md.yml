@@ -1,9 +1,8 @@
-# The objective of this GitHub Action is to update the DIRECTORY.md file (if needed)
-# when doing a git push
-name: directory_writer
+# This GitHub Action updates the DIRECTORY.md file (if needed) when doing a git push
+name: update_directory_md
 on: [push]
 jobs:
-  build:
+  update_directory_md:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -68,7 +67,6 @@ jobs:
 
       - name: Update DIRECTORY.md
         run: |
-          # .github/scripts/build_directory_md.py 2>&1 | tee DIRECTORY.md
           cat DIRECTORY.md
           git config --global user.name github-actions
           git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
