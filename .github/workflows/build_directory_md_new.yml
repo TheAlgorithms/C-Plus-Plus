@@ -64,7 +64,7 @@ jobs:
 
 
             with open("DIRECTORY.md", "w") as out_file:
-                out_file.write(build_directory_md("."))
+                out_file.write(build_directory_md(".") + "\n")
 
       - name: Update DIRECTORY.md
         run: |
