@@ -116,11 +116,12 @@ class Pred_Local_Opt : public binary_function<Arg1, Arg2, Result> {
                 min_avg_dte = avg_dte(*city_css.begin());
         }
         ~Pred_Local_Opt() = default;
-        inline result_type
-        operator()(first_argument_type local_opt, const second_argument_type &city) {
+  inline result_type
+  operator()(first_argument_type local_opt, const second_argument_type &city) {
              avg_dte(city) < this->min_avg_dte ? local_opt._Ptr = &city : NULL;
              return local_opt;
         }
+        
  private:
         vector<City*>& city_ccs;
         uint64_t min_avg_dte;
@@ -162,13 +163,15 @@ vector<City>& k_center(const vector<City>& cts, uint32_t Servers) {
                    ccs.back().push_back(cls_c._Ptr);
                 }
           }
-          else {
-           for( typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++) {
-               if( c_iter->is_on())
+        else {
+        for (typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++) {
+               if (c_iter->is_on()) {
                ccs.back().push_back(c_iter._Ptr);
+               }
            }
           break;
-          }
+        }
+          
 }
 for (typd::CPV::iterator i = ccs.begin(); i != ccs.end(); ++i)
 (*accumulate(i->begin(), i->end(), i->begin(), typd::PLO(*i)))->set_CS(true);
@@ -184,7 +187,7 @@ int main() {
     City("Tokyio", 35, 139),
     City("Rio", 22, 43),
     City("Budapest", 47, 18)};
-    k_center(cities,SERVERS);
+    k_center(cities, SERVERS);
     system("pause");
     return 0;
 }
