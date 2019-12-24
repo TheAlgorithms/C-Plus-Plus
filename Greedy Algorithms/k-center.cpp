@@ -171,7 +171,6 @@ vector<City>& k_center(const vector<City>& cts, uint32_t Servers) {
            }
           break;
         }
-          
 }
 for (typd::CPV::iterator i = ccs.begin(); i != ccs.end(); ++i)
 (*accumulate(i->begin(), i->end(), i->begin(), typd::PLO(*i)))->set_CS(true);
