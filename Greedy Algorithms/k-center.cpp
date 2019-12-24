@@ -3,7 +3,6 @@
 #include <vector>
 #include <algorithm>
 #include <numeric>
-using namespace std;
 // --------------------K-Center Problem--------------------
 // This is a Greedy Algorithm, what try to solve the K-Center
 // NP-Hard Problem in Polinomal Time.
@@ -23,7 +22,7 @@ using namespace std;
 // y = coordinate y of city
 // cloud_server = true, if it is a marked point in graph
 class City {
-public:
+ public:
         City(const string, const uint32_t, const uint32_t);
         ~City();
         const string& c_name() const;
@@ -35,13 +34,13 @@ public:
         bool& is_CS();
         bool& set_CS(const bool);
         static unsigned int REMAINDER_;
-private:
+ private:
         const string city;
         const int32_t x_cor;
         const int32_t y_cor;
         bool checked;
         bool cloud_server;
-protected:
+ protected:
 };
 unsigned int City::REMAINDER_(0);
 City::City(const string city, const uint32_t x_cor, const uint32_t y_cor) :
@@ -86,19 +85,19 @@ bool& City::set_CS(const bool enable) {
 // Make the 2 cities group. 2-2 closest cities.
 template<class Arg1, class Arg2, class Result>
 class Pred_Min_Dte : public binary_function<Arg1, Arg2, Result> {
-public:
-    Pred_Min_Dte(first_argument_type pin) : binary_function(), pin(pin) {
+ public:
+explicit Pred_Min_Dte(first_argument_type pin) : binary_function(), pin(pin) {
     }
     ~Pred_Min_Dte() = default;
     inline result_type
-    operator()(first_argument_type cls_c, second_argument_type &city) {
+    operator()(first_argument_type cls_c, const second_argument_type &city) {
     uint32_t dte, min_dte;
     dte = pyth_thm(abs(pin->x() - city.x()), abs(pin->y() - city.y()));
     min_dte = pyth_thm(abs(pin->x() - cls_c->x()), abs(pin->y() - cls_c->y()));
     dte < min_dte ? cls_c._Ptr = &city : NULL;
     return cls_c;
 }
-private:
+ private:
         first_argument_type pin;
         inline double pyth_thm(unsigned int a, unsigned int b) {
                 return sqrt(a ^ 2 + b ^ 2);
@@ -110,19 +109,19 @@ private:
 // It will be the local optimum.
 template<class Arg1, class Arg2, class Result>
 class Pred_Local_Opt : public binary_function<Arg1, Arg2, Result> {
-public:
-        Pred_Local_Opt(vector<City*> &city_css) :
+ public:
+       explicit Pred_Local_Opt(const vector<City*> &city_css) :
                 binary_function(),
                 city_ccs(city_css) {
                 min_avg_dte = avg_dte(*city_css.begin());
         }
         ~Pred_Local_Opt() = default;
         inline result_type
-        operator()(first_argument_type local_opt, second_argument_type &city) {
+        operator()(first_argument_type local_opt, const second_argument_type &city) {
              avg_dte(city) < this->min_avg_dte ? local_opt._Ptr = &city : NULL;
              return local_opt;
         }
-private:
+ private:
         vector<City*>& city_ccs;
         uint64_t min_avg_dte;
         inline double pyth_thm(unsigned int a, unsigned int b) {
@@ -132,10 +131,10 @@ inline double avg_dte(second_argument_type city) {
     double avg_dte = 0;
     first_argument_type ir;
     for (ir = city_ccs.begin(); ir != this->city_ccs.end(); ++ir) {
- avg_dte += pyth_thm(abs(city->x() - (*ir)->x()), abs(city->y() - (*ir)->y()));
+avg_dte += pyth_thm(abs(city->x() - (*ir)->x()), abs(city->y() - (*ir)->y()));
     }
     return avg_dte /= this->city_ccs.size();
-   }
+}
 };
 namespace typd {
         typedef vector<City>::iterator CI;
@@ -146,13 +145,13 @@ namespace typd {
         typedef Pred_Min_Dte<CI, City, CI> PMD;
 }
 // function k_center
-vector<City>& k_center(vector<City>& cts, uint32_t Servers) {
+vector<City>& k_center(const vector<City>& cts, uint32_t Servers) {
   typd::CPV ccs;
   typd::CI c_itr;
   uint32_t ratio = floor(cts.size() / Servers);
   auto lmb_fo = [](const City &city) -> bool {return city.is_on();};
   while ((c_itr = find_if(cts.begin(), cts.end(), lmb_fo)) != cts.end()) {
-          ccs.push_back(vector<City*>(1,c_itr._Ptr));
+          ccs.push_back(vector<City*>(1, c_itr._Ptr));
           if (City::REMAINDER_ / ratio > 1) {
                 c_itr->set_off();
                 typd::CI cls_c;
@@ -164,26 +163,27 @@ vector<City>& k_center(vector<City>& cts, uint32_t Servers) {
                 }
           }
           else {
-           for(typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++)
-               if(c_iter->is_on())
+           for( typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++) {
+               if( c_iter->is_on())
                ccs.back().push_back(c_iter._Ptr);
+           }
           break;
-        }
-   }
-   for (typd::CPV::iterator i = ccs.begin(); i != ccs.end(); ++i)
-   (*accumulate(i->begin(), i->end(), i->begin(),typd::PLO(*i)))->set_CS(true);
-   return cts;
+          }
+}
+for (typd::CPV::iterator i = ccs.begin(); i != ccs.end(); ++i)
+(*accumulate(i->begin(), i->end(), i->begin(), typd::PLO(*i)))->set_CS(true);
+return cts;
 }
 // k_center Greedy Algorithm try solve the best placement 2 servers
 // between New York, Tokyio, Rio and Budapest.
 // You have to locate a city in a coordinate system.(x,y)
 #define SERVERS 2
-int main(){
+int main() {
     vector<City> cities = {
-    City("New York",40,74),
-    City("Tokyio",35,139),
-    City("Rio",22,43),
-    City("Budapest",47,18)};
+    City("New York", 40, 74),
+    City("Tokyio", 35, 139),
+    City("Rio", 22, 43),
+    City("Budapest", 47, 18)};
     k_center(cities,SERVERS);
     system("pause");
     return 0;
