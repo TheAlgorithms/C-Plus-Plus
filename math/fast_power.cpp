@@ -13,19 +13,19 @@ using namespace std;
 
 int64_t fast_power_recursive(int64_t a, int64_t b) {
     if (b == 0) return 1;
-    int64_t bottom = fast_power_recursive(a, b >> 1); 
-    // Since it is integer division b/2 = (b-1)/2 where b is odd. 
+    int64_t bottom = fast_power_recursive(a, b >> 1);
+    // Since it is integer division b/2 = (b-1)/2 where b is odd.
     // Therefore, case2 is easily solved by integer division.
 
     int64_t result;
-    if ((b & 1) == 0) // case1
+    if ((b & 1) == 0)  // case1
         result = bottom * bottom;
-    else // case2
+    else  // case2
         result = bottom * bottom * a;
     return result;
 }
 
-/* 
+/*
     Same algorithm with little different formula.
     It still calculates in O(logN)
 */
