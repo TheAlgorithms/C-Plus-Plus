@@ -9,8 +9,6 @@
     We can compute a^b recursively using above algorithm.
 */
 
-using namespace std;
-
 int64_t fast_power_recursive(int64_t a, int64_t b) {
     if (b == 0) return 1;
     int64_t bottom = fast_power_recursive(a, b >> 1);
@@ -40,14 +38,13 @@ int64_t fast_power_linear(int64_t a, int64_t b) {
 }
 
 int main() {
-
-    ios_base::sync_with_stdio(false);
+    std::ios_base::sync_with_stdio(false);
 
     int64_t a, b;
-    cin >> a >> b;
+    std::cin >> a >> b;
 
-    cout << "a^b is = " << fast_power_recursive(a, b) << endl;
-    cout << "a^b is = " << fast_power_linear(a, b) << endl;
+    std::cout << "a^b is = " << fast_power_recursive(a, b) << std::endl;
+    std::cout << "a^b is = " << fast_power_linear(a, b) << std::endl;
 
 
     return 0;
