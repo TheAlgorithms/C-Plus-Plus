@@ -40,12 +40,16 @@ int64_t fast_power_linear(int64_t a, int64_t b) {
 int main() {
     std::ios_base::sync_with_stdio(false);
 
+    std::cout << "3^5 is = " << fast_power_recursive(3, 5) << std::endl;
+    std::cout << "6^4 is = " << fast_power_recursive(6, 4) << std::endl;
+    std::cout << "2^7 is = " << fast_power_recursive(2, 7) << std::endl;
+    std::cout << "10^3 is = " << fast_power_recursive(10, 3) << std::endl;
+
     int64_t a, b;
     std::cin >> a >> b;
 
     std::cout << "a^b is = " << fast_power_recursive(a, b) << std::endl;
     std::cout << "a^b is = " << fast_power_linear(a, b) << std::endl;
-
 
     return 0;
 }
