@@ -23,9 +23,9 @@
 // cloud_server = true, if it is a marked point in graph
 class City {
  public:
-        City(const string, const uint32_t, const uint32_t);
+        City(const std::string, const uint32_t, const uint32_t);
         ~City();
-        const string& c_name() const;
+        const std::string& c_name() const;
         const int32_t& x() const;
         const int32_t& y() const;
         const bool& is_on() const;
@@ -35,7 +35,7 @@ class City {
         bool& set_CS(const bool);
         static unsigned int REMAINDER_;
  private:
-        const string city;
+        const std::string city;
         const int32_t x_cor;
         const int32_t y_cor;
         bool checked;
@@ -43,7 +43,7 @@ class City {
  protected:
 };
 unsigned int City::REMAINDER_(0);
-City::City(const string city, const uint32_t x_cor, const uint32_t y_cor) :
+City::City(const std::string city, const uint32_t x_cor, const uint32_t y_cor) :
         city(city),
         x_cor(x_cor),
         y_cor(y_cor),
@@ -52,7 +52,7 @@ City::City(const string city, const uint32_t x_cor, const uint32_t y_cor) :
         City::REMAINDER_++;
 }
 City::~City() = default;
-const string& City::c_name() const {
+const std::string& City::c_name() const {
       return this->city;
 }
 const int32_t& City::x() const {
@@ -138,15 +138,15 @@ avg_dte += pyth_thm(abs(city->x() - (*ir)->x()), abs(city->y() - (*ir)->y()));
 }
 };
 namespace typd {
-        typedef vector<City>::iterator CI;
-        typedef vector<City>::const_iterator CCI;
-        typedef vector<City*>::iterator CPI;
-        typedef vector<vector<City*>> CPV;
+        typedef std::vector<City>::iterator CI;
+        typedef std::vector<City>::const_iterator CCI;
+        typedef std::vector<City*>::iterator CPI;
+        typedef std::vector<vector<City*>> CPV;
         typedef Pred_Local_Opt<CPI, City*, CPI> PLO;
         typedef Pred_Min_Dte<CI, City, CI> PMD;
 }
 // function k_center
-vector<City>& k_center(const vector<City>& cts, uint32_t Servers) {
+std::vector<City>& k_center(const std::vector<City>& cts, uint32_t Servers) {
   typd::CPV ccs;
   typd::CI c_itr;
   uint32_t ratio = floor(cts.size() / Servers);
