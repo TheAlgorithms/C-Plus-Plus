@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 /*
     Program that computes a^b in O(logN) time.
@@ -10,10 +11,13 @@
 
 using namespace std;
 
-long long fast_power_recursive(long long a, long long b) {
+int64_t fast_power_recursive(int64_t a, int64_t b) {
     if (b == 0) return 1;
-    long long bottom = fast_power_recursive(a, b >> 1); // since it is integer division b/2 = (b-1)/2 where b is odd. Therefore, case2 is easily solved by integer division.
-    long long result;
+    int64_t bottom = fast_power_recursive(a, b >> 1); 
+    // Since it is integer division b/2 = (b-1)/2 where b is odd. 
+    // Therefore, case2 is easily solved by integer division.
+
+    int64_t result;
     if ((b & 1) == 0) // case1
         result = bottom * bottom;
     else // case2
@@ -25,8 +29,8 @@ long long fast_power_recursive(long long a, long long b) {
     Same algorithm with little different formula.
     It still calculates in O(logN)
 */
-long long fast_power_linear(long long a, long long b) {
-    long long result = 1;
+int64_t fast_power_linear(int64_t a, int64_t b) {
+    int64_t result = 1;
     while (b) {
         if (b & 1) result = result * a;
         a = a * a;
@@ -39,7 +43,7 @@ int main() {
 
     ios_base::sync_with_stdio(false);
 
-    long long a, b;
+    int64_t a, b;
     cin >> a >> b;
 
     cout << "a^b is = " << fast_power_recursive(a, b) << endl;
