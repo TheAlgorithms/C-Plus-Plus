@@ -163,14 +163,10 @@ vector<City>& k_center(const vector<City>& cts, uint32_t Servers) {
                    ccs.back().push_back(cls_c._Ptr);
                 }
           }
-else {
- for (typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++) {
-     if (c_iter->is_on()) {
+     else
+        for (typd::CCI c_iter = cts.cbegin(); c_iter != cts.cend(); c_iter++) {
+        if (c_iter->is_on())
         ccs.back().push_back(c_iter._Ptr);
-     }
- }
- break;
-}
 }
 for (typd::CPV::iterator i = ccs.begin(); i != ccs.end(); ++i)
 (*accumulate(i->begin(), i->end(), i->begin(), typd::PLO(*i)))->set_CS(true);
