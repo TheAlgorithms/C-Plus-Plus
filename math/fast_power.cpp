@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cstdint>
+#include <cassert>
+#include <ctime>
+#include <cmath>
 
 /*
     Program that computes a^b in O(logN) time.
@@ -9,7 +12,11 @@
     We can compute a^b recursively using above algorithm.
 */
 
-int64_t fast_power_recursive(int64_t a, int64_t b) {
+double fast_power_recursive(int64_t a, int64_t b) {
+    // negative power. a^b = 1 / (a^-b)
+    if (b < 0)
+        return 1.0 / fast_power_recursive(a, -b);
+    
     if (b == 0) return 1;
     int64_t bottom = fast_power_recursive(a, b >> 1);
     // Since it is integer division b/2 = (b-1)/2 where b is odd.
@@ -27,8 +34,12 @@ int64_t fast_power_recursive(int64_t a, int64_t b) {
     Same algorithm with little different formula.
     It still calculates in O(logN)
 */
-int64_t fast_power_linear(int64_t a, int64_t b) {
-    int64_t result = 1;
+double fast_power_linear(int64_t a, int64_t b) {
+    // negative power. a^b = 1 / (a^-b)
+    if (b < 0)
+        return 1.0 / fast_power_linear(a, -b);
+    
+    double result = 1;
     while (b) {
         if (b & 1) result = result * a;
         a = a * a;
@@ -38,18 +49,24 @@ int64_t fast_power_linear(int64_t a, int64_t b) {
 }
 
 int main() {
+    std::srand(time(NULL));
     std::ios_base::sync_with_stdio(false);
 
-    std::cout << "3^5 is = " << fast_power_recursive(3, 5) << std::endl;
-    std::cout << "6^4 is = " << fast_power_recursive(6, 4) << std::endl;
-    std::cout << "2^7 is = " << fast_power_recursive(2, 7) << std::endl;
-    std::cout << "10^3 is = " << fast_power_recursive(10, 3) << std::endl;
+    std::cout << "Testing..." << std::endl;
+    for (int i = 0; i < 20; i++) {
+        int a = rand() % 20 - 10;
+        int b = rand() % 20 - 10;
+        std::cout << std::endl << "Calculating " << a << "^" << b << std::endl;
+        assert(fast_power_recursive(a, b) == std::pow(a, b));
+        assert(fast_power_linear(a, b) == std::pow(a, b));
+        std::cout << "------ " << a << "^" << b << " = "<< fast_power_recursive(a, b) << std::endl;
+    }
 
     int64_t a, b;
     std::cin >> a >> b;
 
-    std::cout << "a^b is = " << fast_power_recursive(a, b) << std::endl;
-    std::cout << "a^b is = " << fast_power_linear(a, b) << std::endl;
+    std::cout << a << "^" << b << " = "<< fast_power_recursive(a, b) << std::endl;
+    std::cout << a << "^" << b << " = "<< fast_power_linear(a, b) << std::endl;
 
     return 0;
 }
