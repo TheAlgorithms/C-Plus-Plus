@@ -62,17 +62,17 @@ int main() {
         assert(fast_power_recursive(a, b) == std::pow(a, b));
         assert(fast_power_linear(a, b) == std::pow(a, b));
 
-        std::cout << "------ " << a << "^" << b << " = "<< 
+        std::cout << "------ " << a << "^" << b << " = "<<
             fast_power_recursive(a, b) << std::endl;
     }
 
     int64_t a, b;
     std::cin >> a >> b;
 
-    std::cout << a << "^" << b << " = "<< 
+    std::cout << a << "^" << b << " = "<<
         fast_power_recursive(a, b) << std::endl;
 
-    std::cout << a << "^" << b << " = "<< 
+    std::cout << a << "^" << b << " = "<<
         fast_power_linear(a, b) << std::endl;
 
     return 0;
