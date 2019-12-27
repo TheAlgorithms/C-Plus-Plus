@@ -6,9 +6,9 @@ void PrintSol(int Board[n][n]) {
         for (int j = 0; j < n; j++) {
             std::cout << Board[i][j] << " ";
         }
-        std::cout << endl;
+        std::cout << std::endl;
     }
-    std::cout << endl;
+    std::cout << std::endl;
 }
 
 bool CanIMove(int Board[n][n], int row, int col) {
