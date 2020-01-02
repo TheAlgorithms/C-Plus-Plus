@@ -1,21 +1,28 @@
 // Program to check whether a number is an armstrong number or not
 #include <iostream>
-
-using std::cout;
-using std::cin;
+#include<bits/stdc++.h>
+using namespace std;
 
 int main() {
-  int n, k, d, s = 0;
+  int n, k, d, s = 0, rem;
   cout << "Enter a number:";
   cin >> n;
-  k = n;
-  while (k != 0) {
-    d = k % 10;
-    s += d * d * d;
-    k /= 10;
+  int n1 = n,count = 0;
+  while(n1 != 0){
+	  count++;
+	  n1 = n1/10;
   }
-  if (s == n)
-    cout << n << "is an armstrong number";
+  d = n;
+  while(n != 0){
+	  rem = n%10;
+	  s += pow(rem,count);
+	  n = n/10;
+  }
+  if(s == d)
+	  cout<<"yes, the number is an armstrong number";
   else
-    cout << n << "is not an armstrong number";
+	  cout<<"no, the number is not an armstrong number";
+  return 0;
 }
+
+
