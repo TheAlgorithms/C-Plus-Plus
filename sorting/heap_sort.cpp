@@ -1,5 +1,7 @@
 #include <iostream>
 
+using std::endl;
+
 void max_heapify(int *a, int i, int n) {
     int j, temp;
     temp = a[i];
@@ -33,7 +35,7 @@ void build_maxheap(int *a, int n) {
     }
 }
 int main() {
-    int n, i, x;
+    int n, i;
     std::cout << "Enter number of elements of array\n";
     std::cin >> n;
     int a[20];
