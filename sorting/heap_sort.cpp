@@ -1,7 +1,5 @@
 #include <iostream>
 
-using std::endl;
-
 void max_heapify(int *a, int i, int n) {
     int j, temp;
     temp = a[i];
@@ -19,6 +17,7 @@ void max_heapify(int *a, int i, int n) {
     a[j / 2] = temp;
     return;
 }
+
 void heapsort(int *a, int n) {
     int i, temp;
     for (i = n; i >= 2; i--) {
@@ -28,26 +27,28 @@ void heapsort(int *a, int n) {
         max_heapify(a, 1, i - 1);
     }
 }
+
 void build_maxheap(int *a, int n) {
     int i;
     for (i = n / 2; i >= 1; i--) {
         max_heapify(a, i, n);
     }
 }
+
 int main() {
     int n, i;
     std::cout << "Enter number of elements of array\n";
     std::cin >> n;
     int a[20];
     for (i = 1; i <= n; i++) {
-        std::cout << "Enter Element " << (i) << endl;
+        std::cout << "Enter Element " << (i) << std::endl;
         std::cin >> a[i];
     }
     build_maxheap(a, n);
     heapsort(a, n);
     std::cout << "Sorted Output\n";
     for (i = 1; i <= n; i++) {
-        std::cout << a[i] << endl;
+        std::cout << a[i] << std::endl;
     }
     std::getchar();
 }
