@@ -1,54 +1,52 @@
+#include <algorithm>
 #include <iostream>
 
-void max_heapify(int *a, int i, int n) {
-    int j, temp;
-    temp = a[i];
-    j = 2 * i;
-    while (j <= n) {
-        if (j < n && a[j + 1] > a[j])
-            j = j + 1;
-        if (temp > a[j]) {
-            break;
-        } else if (temp <= a[j]) {
-            a[j / 2] = a[j];
-            j = 2 * j;
-        }
+void heapify(int *a, int i, int n) {
+    int largest = i;
+    const int l = 2 * i + 1;
+    const int r = 2 * i + 2;
+
+    if (l < n && a[l] > a[largest])
+        largest = l;
+
+    if (r < n && a[r] > a[largest])
+        largest = r;
+
+    if (largest != i) {
+        std::swap(a[i], a[largest]);
+        heapify(a, n, largest);
     }
-    a[j / 2] = temp;
-    return;
 }
 
 void heapsort(int *a, int n) {
-    int i, temp;
-    for (i = n; i >= 2; i--) {
-        temp = a[i];
-        a[i] = a[1];
-        a[1] = temp;
-        max_heapify(a, 1, i - 1);
+    for (int i = n - 1; i >= 0; --i) {
+        std::swap(a[0], a[i]);
+        heapify(a, 0, i);
     }
 }
 
 void build_maxheap(int *a, int n) {
-    int i;
-    for (i = n / 2; i >= 1; i--) {
-        max_heapify(a, i, n);
+    for (int i = n / 2 - 1; i >= 0; --i) {
+        heapify(a, i, n);
     }
 }
 
 int main() {
-    int n, i;
+    int n;
     std::cout << "Enter number of elements of array\n";
     std::cin >> n;
     int a[20];
-    for (i = 1; i <= n; i++) {
-        std::cout << "Enter Element " << (i) << std::endl;
+    for (int i = 0; i < n; ++i) {
+        std::cout << "Enter Element " << i << std::endl;
         std::cin >> a[i];
     }
+
     build_maxheap(a, n);
     heapsort(a, n);
     std::cout << "Sorted Output\n";
-    for (i = 1; i <= n; i++) {
+    for (int i = 0; i < n; ++i) {
         std::cout << a[i] << std::endl;
     }
+
     std::getchar();
 }
