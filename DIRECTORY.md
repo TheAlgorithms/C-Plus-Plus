@@ -4,12 +4,13 @@
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/knight_tour.cpp)
   * [Minimax](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/minimax.cpp)
   * [N Queens](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens.cpp)
+  * [Nqueen Print All Solutions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/nqueen_print_all_solutions.cpp)
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
 ## Computer Oriented Statistical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Bisection_method.CPP)
-  * [False-Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false-position.CPP)
+  * [False-Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false-position.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Gaussian_elimination.cpp)
   * [Newton Raphson](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Newton_Raphson.CPP)
   * [Secant Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Secant_method.CPP)
@@ -20,6 +21,10 @@
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Binary%20Search%20Tree.cpp)
   * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Binaryheap.cpp)
   * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/circular_Queue_using_Linked_List.cpp)
+  * Cll
+    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.cpp)
+    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.h)
+    * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/main_cll.cpp)
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Doubly%20Linked%20List.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Linked%20List.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
@@ -76,6 +81,7 @@
 
 ## Math
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
+  * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fast_power.cpp)
   * [Greatest Common Divisor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/greatest_common_divisor.cpp)
   * [Power For Huge Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_for_huge_numbers.cpp)
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_factorization.cpp)
