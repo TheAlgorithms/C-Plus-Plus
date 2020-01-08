@@ -6,14 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - shell: python
+      - shell: python  # Legacy Python 2.7.15 :-(
         run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))
-      #-  name: Upgrade to Python 3.8
-      #   run: sudo update-alternatives --install /usr/bin/python python ${pythonLocation}/bin/python3.8 10
-      #   shell: bash -c "$RUNNER_TOOL_CACHE/Python/3.8.0/x64/python {0}"
       - shell: bash -c "$RUNNER_TOOL_CACHE/Python/3.8.0/x64/python {0}"
-        run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))
-      - shell: python
         run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))
       - shell: bash -c "$RUNNER_TOOL_CACHE/Python/3.8.0/x64/python {0}"
         run: |
