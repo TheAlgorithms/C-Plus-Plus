@@ -9,18 +9,19 @@ int search(int arr[], int value, int len) {
             mid = (low + ((value-arr[low])*(high-low)) / (arr[high]-arr[low]));
             if (arr[mid] > value)
                      high = mid-1;
-            else if (arr[mid] < value)
+            else { if (arr[mid] < value)
                      low = mid+1;
-                 else
+                   else
                      return mid; 
-         }
-         if(arr[low] == value)
+                 }
+        }
+        if (arr[low] == value)
                 return low;
-         return 0;
+        return 0;
 }
 
 int main() {
-        int n ,value ,array[100] ,re;
+        int n, value, array[100], re;
         cout << "Enter the size of array(less than 100) : ";
         cin >> n;
         cout << "array in ascending (increasing) order : " << endl;
@@ -31,7 +32,7 @@ int main() {
         re = search(array, value, n);
         if (re == 0)
                 cout << "Entered value is not in the array" << endl;
-        else	
+        else
                 cout << "The value is at the position " << re << endl;
         return 0;
 }
