@@ -132,6 +132,7 @@
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Interpolation%20Search.cpp)
+  * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Linear%20Search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search.cpp)
   * [Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/searching.cpp)
