@@ -32,7 +32,7 @@ int main() 		//main function
 
 	cout<<"Enter the value you want to search : ";
 	cin>>value;
-	re=search(array,value,n)
+	re=search(array,value,n);
 
 	if(re==0)
 		cout<<"Entered value is not in the array"<<endl;
