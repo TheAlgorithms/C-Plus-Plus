@@ -1,5 +1,4 @@
 #include<iostream>
-using-namespace std;
 
 // function to search the value in an array using interpolation search
 int search(int arr[], int value, int len) {
