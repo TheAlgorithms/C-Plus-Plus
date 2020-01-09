@@ -13,7 +13,6 @@ int search(int arr[], int value, int len) {
             else
                      return mid;
             }
-        }
         if (arr[low] == value)
                 return low;
         return 0;
