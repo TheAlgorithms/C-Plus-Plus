@@ -1,6 +1,5 @@
 // Read integers in the fastest way in c plus plus
 #include<iostream>
-using namespace std;
 void fastinput(int *number) {
 // variable to indicate sign of input integer
     bool negative = false;
@@ -8,18 +7,18 @@ void fastinput(int *number) {
     *number = 0;
 
     // extract current character from buffer
-    c = getchar();
+    c = std::getchar();
     if (c == '-') {
         // number is negative
         negative = true;
 
         // extract the next character from the buffer
-        c = getchar();
+        c = std::getchar();
     }
 
     // Keep on extracting characters if they are integers
     // i.e ASCII Value lies from '0'(48) to '9' (57)
-    for (; (c > 47 && c < 58); c = getchar())
+    for (; (c > 47 && c < 58); c = std::getchar())
         *number = *number *10 + c - 48;
 
     // if scanned input has a negative sign, negate the
@@ -28,10 +27,10 @@ void fastinput(int *number) {
         *(number) *= -1;
 }
 
-// Function Call 
-int main(){
+// Function Call
+int main() {
     int number;
     fastinput(&number);
-    cout << number << "\n";
+    std::cout << number << "\n";
     return 0;
 }
