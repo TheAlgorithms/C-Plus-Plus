@@ -104,6 +104,7 @@
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Decimal%20To%20Binary.cpp)
   * [Decimal To Hexadecimal ](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Decimal%20To%20Hexadecimal%20.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Decimal%20to%20Roman%20Numeral.cpp)
+  * [Fast Interger Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_interger_input.cpp)
   * [Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fibonacci.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/GCD_of_n_numbers.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
