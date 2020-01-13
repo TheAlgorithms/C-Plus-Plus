@@ -34,6 +34,11 @@
   * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Queue%20Using%20Linked%20List.cpp)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Stack%20Using%20Array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Stack%20Using%20Linked%20List.cpp)
+  * Stk
+    * [Main](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/main.cpp)
+    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.cpp)
+    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.h)
+    * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/test_stack.cpp)
   * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Tree.cpp)
   * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_tree.cpp)
 
