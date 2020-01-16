@@ -1,0 +1,65 @@
+# GitHub Action that enables a repo to achieve gradual compliance with cpplint by
+#     linting only those files that have been added or modified (vs. origin/master).
+# 1. runs cpplint only on those files that have been modified vs. origin/master.
+# 2. compiles with g++ only those files that have been modified vs. origin/master.
+# 3. other optional filepath verifications may be commented out at the end of this file.
+# From: https://github.com/cpplint/GitHub-Action-for-cpplint
+
+name: cpplint_modified_files
+on: [push, pull_request]
+jobs:
+  cpplint_modified_files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+      - shell: python  # Show the version of shell: python and then upgrade shell: python to Python 3.8
+        run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))  # Legacy Python :-(
+      - run: sudo update-alternatives --install /usr/bin/python python ${pythonLocation}/bin/python3.8 10
+      - run: python -m pip install cpplint
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - run: git diff origin/master --name-only > git_diff.txt
+      - name: cpplint_modified_files
+        shell: python
+        run: |
+          import os
+          import subprocess
+          import sys
+
+          print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
+          with open("git_diff.txt") as in_file:
+            modified_files = sorted(in_file.read().splitlines())
+          print("{} files were modified.".format(len(modified_files)))
+
+          cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+          cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
+          print(f"{len(cpp_files)} C++ files were modified.")
+          if not cpp_files:
+            sys.exit(0)
+
+          print("cpplint:")
+          subprocess.run(["cpplint", "--filter=-legal/copyright"] + cpp_files, check=True, text=True)
+
+          print("g++:")
+          # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
+          # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
+          subprocess.run(["g++"] + cpp_files, check=True, text=True)
+
+          upper_files = [file for file in cpp_files if file != file.lower()]
+          if upper_files:
+            print(f"{len(upper_files)} files contain uppercase characters:")
+            print("\n".join(upper_files) + "\n")
+
+          space_files = [file for file in cpp_files if " " in file or "-" in file]
+          if space_files:
+            print(f"{len(space_files)} files contain space or dash characters:")
+            print("\n".join(space_files) + "\n")
+
+          nodir_files = [file for file in cpp_files if file.count(os.sep) != 1]
+          if nodir_files:
+            print(f"{len(nodir_files)} files are not in one and only one directory:")
+            print("\n".join(nodir_files) + "\n")
+
+          bad_files = len(upper_files + space_files + nodir_files)
+          if bad_files:
+            sys.exit(bad_files)
