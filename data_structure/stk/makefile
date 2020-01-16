@@ -1,7 +1,7 @@
 CC= g++
 CFLAGS = -c -Wall
 
-all: clean main test_stack
+all: main test_stack
 stack.o: stack.cpp
 	$(CC) $(CFLAGS) stack.cpp
 test_stack: stack.o
