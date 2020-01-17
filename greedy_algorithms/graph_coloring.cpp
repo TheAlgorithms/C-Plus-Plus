@@ -3,19 +3,17 @@
 #include <algorithm>
 #include <numeric>
 #include <list>
-using namespace std;
 // Class Graph for modelling a graph
 class Graph {
-public:
+ public:
         list<uint32_t>* adj;
         const size_t vrtx;
         int32_t *colors;
         int32_t chromatic;
-        Graph(const uint32_t);
+        explicit Graph(const uint32_t);
         ~Graph();
         Graph& addEdge(const uint32_t, const uint32_t);
-        enum  Color
-        {
+        enum  Color {
                 BLANK = -1
         };
 };
@@ -47,7 +45,7 @@ Graph& Graph::addEdge(const uint32_t v0, const uint32_t v1) {
  * chromotic number = the lowest color what enought to make
  * a "good" color on the graph.
 */
-void graph_coloring(Graph &graph) {
+void graph_coloring(const Graph &graph) {
 bool *ava_clrs;
 auto srt = [](list<uint32_t> &ls0, list<uint32_t> &ls1) -> bool {
         return ls0.size() < ls1.size();
@@ -66,8 +64,8 @@ for (uint32_t off(0); off < graph.vrtx; ++off) {
         }
    for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
              if (ava_clrs[color_idx]) {
-                     graph.colors[off] = color_idx;
-                      break;
+                 graph.colors[off] = color_idx;
+                 break;
              }
        }
 }
