@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <numeric>
 #include <list>
+#include <stdio.h>
 // Class Graph for modelling a graph
 class Graph {
  public:
@@ -22,7 +23,7 @@ Graph::Graph(const uint32_t vrtx) :
         vrtx(vrtx),
         colors(new int32_t[vrtx]),
         chrom(0) {
-        memset(colors, BLANK, sizeof(int32_t) * vrtx);
+        wmemset(colors, BLANK, sizeof(int32_t) * vrtx);
 }
 Graph::~Graph() {
         delete[] this->adj;
@@ -53,28 +54,28 @@ auto srt = [](std::list<uint32_t> &ls0, std::list<uint32_t> &ls1) -> bool {
 auto chr = [](int32_t &max, int32_t &clr_i) -> int32_t {
         return clr_i > max ? clr_i : max;
 };
-std::sort(*graph.adj, *graph.adj + *graph.vrtx, srt);
-ava_clrs = new bool[*graph.adj->size() + 1];
-for (uint32_t off(0); off < *graph.vrtx; ++off) {
-  memset(ava_clrs, true, sizeof(ava_clrs) - 1);
-for (auto itr = *graph.adj[off].begin(); itr != *graph.adj[off].end(); ++itr) {
-         if (*graph.colors[*itr] != *graph.BLANK) {
-                ava_clrs[*graph.colors[*itr]] = false;
+std::sort(graph->adj, graph->adj + graph->vrtx, srt);
+ava_clrs = new bool[graph->adj->size() + 1];
+for (uint32_t off(0); off < graph->vrtx; ++off) {
+  wmemset(ava_clrs, true, sizeof(ava_clrs) - 1);
+for (auto itr = graph->adj[off].begin(); itr != graph->adj[off].end(); ++itr) {
+         if (graph->colors[*itr] != graph->BLANK) {
+                ava_clrs[graph->colors[*itr]] = false;
          }
       }
 for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
            if (ava_clrs[color_idx]) {
-               *graph.colors[off] = color_idx;
+               graph->colors[off] = color_idx;
                break;
            }
      }
 }
-int32_t c(std::accumulate(*graph.colors, *graph.colors + *graph.vrtx, 0, chr));
-*graph.chrom = c;
-for (uint32_t idx(0); idx < *graph.vrtx; ++idx) {
-std::cout << "Node index:" << idx << " " << *graph.colors[idx] << std::endl;
+int32_t c(std::accumulate(graph->colors, graph->colors + graph->vrtx, 0, chr));
+graph->chrom = c;
+for (uint32_t idx(0); idx < graph->vrtx; ++idx) {
+std::cout << "Node index:" << idx << " " << graph->colors[idx] << std::endl;
 }
-std::cout << "chromotic (estimation) ~ " << *graph.chrom << std::endl;
+std::cout << "chromotic (estimation) ~ " << graph->chrom << std::endl;
 }
 int main() {
 Graph g1(7);
