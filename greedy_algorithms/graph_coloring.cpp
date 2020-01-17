@@ -6,7 +6,7 @@
 // Class Graph for modelling a graph
 class Graph {
  public:
-        list<uint32_t>* adj;
+        std::list<uint32_t>* adj;
         const size_t vrtx;
         int32_t *colors;
         int32_t chromatic;
@@ -18,11 +18,11 @@ class Graph {
         };
 };
 Graph::Graph(const uint32_t vrtx) :
-        adj(new list<uint32_t>[vrtx]),
+        adj(new std::list<uint32_t>[vrtx]),
         vrtx(vrtx),
         colors(new int32_t[vrtx]),
         chromatic(0) {
-        memset(colors, BLANK, sizeof(int32_t) * vrtx);
+        std::memset(colors, BLANK, sizeof(int32_t) * vrtx);
 }
 Graph::~Graph() {
         delete[] this->adj;
@@ -47,16 +47,16 @@ Graph& Graph::addEdge(const uint32_t v0, const uint32_t v1) {
 */
 void graph_coloring(const Graph &graph) {
 bool *ava_clrs;
-auto srt = [](list<uint32_t> &ls0, list<uint32_t> &ls1) -> bool {
+auto srt = [](std::list<uint32_t> &ls0, std::list<uint32_t> &ls1) -> bool {
         return ls0.size() < ls1.size();
 };
 auto chr = [](int32_t &max, int32_t &clr_i) -> int32_t {
         return clr_i > max ? clr_i : max;
 };
-sort(graph.adj, graph.adj + graph.vrtx, srt);
+std::sort(graph.adj, graph.adj + graph.vrtx, srt);
 ava_clrs = new bool[graph.adj->size() + 1];
 for (uint32_t off(0); off < graph.vrtx; ++off) {
-  memset(ava_clrs, true, sizeof(ava_clrs) - 1);
+  std::memset(ava_clrs, true, sizeof(ava_clrs) - 1);
   for (auto itr = graph.adj[off].begin(); itr != graph.adj[off].end(); ++itr) {
            if (graph.colors[*itr] != graph.BLANK) {
                   ava_clrs[graph.colors[*itr]] = false;
@@ -69,11 +69,11 @@ for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
            }
      }
 }
-graph.chromatic = accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
+graph.chromatic = std::accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
 for (uint32_t idx(0); idx < graph.vrtx; ++idx) {
-        cout << "Node index:" << idx << " " << graph.colors[idx] << endl;
+        std::cout << "Node index:" << idx << " " << graph.colors[idx] << std::endl;
 }
-cout << "Coloring chromotic number (estimation) ~ " << graph.chromatic << endl;
+std::cout << "Coloring chromotic number (estimation) ~ " << graph.chromatic << std::endl;
 }
 int main() {
 Graph g1(7);
