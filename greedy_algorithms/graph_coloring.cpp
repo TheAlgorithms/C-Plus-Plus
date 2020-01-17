@@ -22,7 +22,7 @@ Graph::Graph(const uint32_t vrtx) :
         vrtx(vrtx),
         colors(new int32_t[vrtx]),
         chrom(0) {
-        std::memset(colors, BLANK, sizeof(int32_t) * vrtx);
+        memset(colors, BLANK, sizeof(int32_t) * vrtx);
 }
 Graph::~Graph() {
         delete[] this->adj;
@@ -45,7 +45,7 @@ Graph& Graph::addEdge(const uint32_t v0, const uint32_t v1) {
  * chromotic number = the lowest color what enought to make
  * a "good" color on the graph.
 */
-void graph_coloring(const Graph &graph) {
+void graph_coloring(Graph &graph) {
 bool *ava_clrs;
 auto srt = [](std::list<uint32_t> &ls0, std::list<uint32_t> &ls1) -> bool {
         return ls0.size() < ls1.size();
@@ -56,7 +56,7 @@ auto chr = [](int32_t &max, int32_t &clr_i) -> int32_t {
 std::sort(graph.adj, graph.adj + graph.vrtx, srt);
 ava_clrs = new bool[graph.adj->size() + 1];
 for (uint32_t off(0); off < graph.vrtx; ++off) {
-  std::memset(ava_clrs, true, sizeof(ava_clrs) - 1);
+  memset(ava_clrs, true, sizeof(ava_clrs) - 1);
   for (auto itr = graph.adj[off].begin(); itr != graph.adj[off].end(); ++itr) {
            if (graph.colors[*itr] != graph.BLANK) {
                   ava_clrs[graph.colors[*itr]] = false;
