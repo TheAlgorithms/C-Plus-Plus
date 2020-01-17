@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <numeric>
 #include <list>
-#include <stdio>
 // Class Graph for modelling a graph
 class Graph {
  public:
