@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <numeric>
 #include <list>
+#include <stdio>
 // Class Graph for modelling a graph
 class Graph {
  public:
@@ -22,7 +23,7 @@ Graph::Graph(const uint32_t vrtx) :
         vrtx(vrtx),
         colors(new int32_t[vrtx]),
         chrom(0) {
-        wmemset(colors, BLANK, sizeof(int32_t) * vrtx);
+        memset(colors, BLANK, sizeof(int32_t) * vrtx);
 }
 Graph::~Graph() {
         delete[] this->adj;
@@ -56,7 +57,7 @@ auto chr = [](int32_t &max, int32_t &clr_i) -> int32_t {
 std::sort(graph->adj, graph->adj + graph->vrtx, srt);
 ava_clrs = new bool[graph->adj->size() + 1];
 for (uint32_t off(0); off < graph->vrtx; ++off) {
-  wmemset(ava_clrs, true, sizeof(ava_clrs) - 1);
+  memset(ava_clrs, true, sizeof(ava_clrs) - 1);
 for (auto itr = graph->adj[off].begin(); itr != graph->adj[off].end(); ++itr) {
          if (graph->colors[*itr] != graph->BLANK) {
                 ava_clrs[graph->colors[*itr]] = false;
