@@ -62,12 +62,12 @@ for (uint32_t off(0); off < graph.vrtx; ++off) {
                   ava_clrs[graph.colors[*itr]] = false;
            }
         }
-   for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
-             if (ava_clrs[color_idx]) {
-                 graph.colors[off] = color_idx;
-                 break;
-             }
-       }
+for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
+           if (ava_clrs[color_idx]) {
+               graph.colors[off] = color_idx;
+               break;
+           }
+     }
 }
 graph.chromatic = accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
 for (uint32_t idx(0); idx < graph.vrtx; ++idx) {
