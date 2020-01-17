@@ -50,7 +50,7 @@ bool *ava_clrs;
 auto srt = [](std::list<uint32_t> &ls0, std::list<uint32_t> &ls1) -> bool {
         return ls0.size() < ls1.size();
 };
-auto ch = [](int32_t &max, int32_t &clr_i) -> int32_t {
+auto chr = [](int32_t &max, int32_t &clr_i) -> int32_t {
         return clr_i > max ? clr_i : max;
 };
 std::sort(*graph.adj, *graph.adj + *graph.vrtx, srt);
@@ -69,7 +69,8 @@ for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
            }
      }
 }
-*graph.chrom = std::accumulate(*graph.colors,*graph.colors + *graph.vrtx,0,ch);
+int32_t c(std::accumulate(*graph.colors, *graph.colors + *graph.vrtx, 0, chr));
+*graph.chrom = c;
 for (uint32_t idx(0); idx < *graph.vrtx; ++idx) {
 std::cout << "Node index:" << idx << " " << *graph.colors[idx] << std::endl;
 }
