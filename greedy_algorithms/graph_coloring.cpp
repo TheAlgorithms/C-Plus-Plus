@@ -9,7 +9,7 @@ class Graph {
         std::list<uint32_t>* adj;
         const size_t vrtx;
         int32_t *colors;
-        int32_t chromatic;
+        int32_t chrom;
         explicit Graph(const uint32_t);
         ~Graph();
         Graph& addEdge(const uint32_t, const uint32_t);
@@ -21,7 +21,7 @@ Graph::Graph(const uint32_t vrtx) :
         adj(new std::list<uint32_t>[vrtx]),
         vrtx(vrtx),
         colors(new int32_t[vrtx]),
-        chromatic(0) {
+        chrom(0) {
         std::memset(colors, BLANK, sizeof(int32_t) * vrtx);
 }
 Graph::~Graph() {
@@ -69,11 +69,11 @@ for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
            }
      }
 }
-graph.chromatic = std::accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
+graph.chrom = std::accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
 for (uint32_t idx(0); idx < graph.vrtx; ++idx) {
-        std::cout << "Node index:" << idx << " " << graph.colors[idx] << std::endl;
+ std::cout << "Node index:" << idx << " " << graph.colors[idx] << std::endl;
 }
-std::cout << "Coloring chromotic number (estimation) ~ " << graph.chromatic << std::endl;
+std::cout << "chromotic (estimation) ~ " << graph.chrom << std::endl;
 }
 int main() {
 Graph g1(7);
