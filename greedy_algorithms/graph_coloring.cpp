@@ -71,7 +71,7 @@ for (uint32_t color_idx(0); color_idx < sizeof(ava_clrs) - 1; ++color_idx) {
 }
 graph.chrom = std::accumulate(graph.colors, graph.colors + graph.vrtx, 0, chr);
 for (uint32_t idx(0); idx < graph.vrtx; ++idx) {
- std::cout << "Node index:" << idx << " " << graph.colors[idx] << std::endl;
+std::cout << "Node index:" << idx << " " << graph.colors[idx] << std::endl;
 }
 std::cout << "chromotic (estimation) ~ " << graph.chrom << std::endl;
 }
