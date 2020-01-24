@@ -3,23 +3,23 @@
 
 std::vector<int> primes(int max) {
     max++;
-    std::vector<int> res;
+    std::vector<int> vec;
     std::vector<bool> numbers(max, false);
-    for (int i = 2; i < max; i++) {
+    for (int i = 2; i < max; i++) {   //To check till the given input
         if (!numbers[i]) {
-            for (int j = i; j < max; j += i)
+            for (int j = i; j < max; j = j+i)
                 numbers[j] = true;
-            res.push_back(i);
+            vec.push_back(i); //To push the value to vector
         }
     }
-    return res;
+    return vec; //returning the vector
 }
-
+//Driver function
 int main() {
     std::cout << "Calculate primes up to:\n>> ";
     int n;
-    std::cin >> n;
-    std::vector<int> ans = primes(n);
+    std::cin >> n; //To take the input
+    std::vector<int> ans = primes(n); //Function call
     for (int i = 0; i < ans.size(); i++)
         std::cout << ans[i] << ' ';
     std::cout << std::endl;
