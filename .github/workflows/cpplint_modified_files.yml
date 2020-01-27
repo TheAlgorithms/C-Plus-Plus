@@ -11,11 +11,8 @@ jobs:
   cpplint_modified_files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
-      - shell: python  # Show the version of shell: python and then upgrade shell: python to Python 3.8
-        run: import sys ; print("Python {}.{}.{}".format(*sys.version_info))  # Legacy Python :-(
-      - run: sudo update-alternatives --install /usr/bin/python python ${pythonLocation}/bin/python3.8 10
       - run: python -m pip install cpplint
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master --name-only > git_diff.txt
