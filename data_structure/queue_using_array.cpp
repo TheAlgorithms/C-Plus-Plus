@@ -88,5 +88,6 @@ int main() {
             exit(0);
         } else {
             std::cout << "\nWrong choice ";
+        }
     }
 }
