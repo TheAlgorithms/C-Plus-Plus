@@ -16,11 +16,11 @@ class Queue_Array {
     int size;
 
     public:
-    Queue_Array() {
-        front = -1;
-        rear = -1;
-        size = MAXSIZE;
-    }
+        Queue_Array() {
+            front = -1;
+            rear = -1;
+            size = MAXSIZE;
+        }
     int *arr = new int[size];
     void enqueue(int);
     int dequeue();
