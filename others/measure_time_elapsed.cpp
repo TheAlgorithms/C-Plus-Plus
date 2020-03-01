@@ -11,7 +11,7 @@ int64 getTimeInMicroseconds() {
 // write function sample(args)
 
 int main() {
-    // write code 
+    // write code
     int64 starttime = getTimeInMicroseconds();
     // sample(args) function run
     // Any other functions (if present) run
