@@ -9,14 +9,14 @@ long getTimeInMicroseconds()
     return start.tv_sec * 1000000 + start.tv_usec;
 }
 
-//write function sample(args)
+// write function sample(args)
 
 int main()
 {
-    //write code 
+    // write code 
     long starttime = getTimeInMicroseconds();
-    //sample(args) function run
-    //Any other functions (if present) run
+    // sample(args) function run
+    // Any other functions (if present) run
     long endtime = getTimeInMicroseconds();
     long time = endtime - starttime;
     std:cout << time;
