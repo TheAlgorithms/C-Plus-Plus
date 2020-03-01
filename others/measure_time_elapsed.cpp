@@ -1,9 +1,10 @@
 // To calculate the time taken by a code to execute
 #include <sys/time.h>
+#include <iostream>
 
 __int64_t getTimeInMicroseconds() {
     struct timeval start;
-    gettimeofday(&start, std::nullptr);
+    gettimeofday(&start, NULL);
     return start.tv_sec * 1000000 + start.tv_usec;
 }
 
