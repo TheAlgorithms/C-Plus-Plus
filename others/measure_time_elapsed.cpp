@@ -1,4 +1,4 @@
-//To calculate the time taken by a code to execute
+// To calculate the time taken by a code to execute
 #include<iostream>
 #include<sys/time.h>
 
