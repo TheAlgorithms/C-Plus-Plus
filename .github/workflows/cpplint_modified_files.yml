@@ -17,7 +17,7 @@ jobs:
       - run: git remote -v
       - run: git branch
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-      - run: git diff origin/master --name-only > git_diff.txt
+      - run: git diff --diff-filter=am --name-only origin/master > git_diff.txt
       - name: cpplint_modified_files
         shell: python
         run: |
