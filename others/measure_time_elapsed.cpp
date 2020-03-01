@@ -17,7 +17,5 @@ int main()
     long starttime = getTimeInMicroseconds();
     // sample(args) function run
     // Any other functions (if present) run
-    long endtime = getTimeInMicroseconds();
-    long time = endtime - starttime;
-    std:cout << time;
+    std:cout << getTimeInMicroseconds() - starttime;
 }
