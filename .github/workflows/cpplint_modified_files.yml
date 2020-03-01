@@ -11,16 +11,12 @@ jobs:
   cpplint_modified_files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1  # v2 is broken for git diff
       - uses: actions/setup-python@v1
       - run: python -m pip install cpplint
       - run: git remote -v
       - run: git branch
-      #- run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-      - run: git diff --diff-filter=am --name-only master HEAD || true
-      - run: git diff --name-only origin/master HEAD || true
-      - run: git diff --name-only upstream/master HEAD || true
-      - run: git diff origin/master HEAD --name-only || true
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git diff origin/master HEAD --name-only > git_diff.txt
       - name: cpplint_modified_files
         shell: python
