@@ -5,7 +5,7 @@
 long getTimeInMicroseconds()
 {
     struct timeval start;
-    gettimeofday(&start,NULL);
+    gettimeofday(&start, NULL);
     return start.tv_sec * 1000000 + start.tv_usec;
 }
 
