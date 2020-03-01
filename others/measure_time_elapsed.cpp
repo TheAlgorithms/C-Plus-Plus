@@ -2,8 +2,6 @@
 #include<iostream>
 #include<sys/time.h>
 
-using namespace std;
-
 long getTimeInMicroseconds()
 {
     struct timeval start;
@@ -21,5 +19,5 @@ int main()
     //Any other functions (if present) run
     long endtime = getTimeInMicroseconds();
     long time = endtime - starttime;
-    cout<<time;
+    std:cout << time;
 }
