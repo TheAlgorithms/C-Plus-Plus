@@ -1,5 +1,5 @@
 // To calculate the time taken by a code to execute
-#include<sys/time.h>
+#include <sys/time.h>
 
 int64_t getTimeInMicroseconds() {
     struct timeval start;
