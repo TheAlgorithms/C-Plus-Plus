@@ -1,0 +1,17 @@
+3.4 Tom
+3.2 Kathy
+2.5 Hoang
+3.4 Tom
+3.8 Randy
+3.9 Kingston
+3.8 Mickey
+3.6 Peter
+3.5 Donald
+3.8 Cindy
+3.7 Dome
+3.9 Andy
+3.8 Hai
+3.9 Minnie
+2.7 Gilda
+3.9 Vinay
+3.4 Hiral
