@@ -3,8 +3,8 @@
 
 void librarySort(int *index, int n) {
     int lib_size, index_pos,
-        *gaps,       // gaps
-        *library[2]; // libraries
+        *gaps,        // gaps
+        *library[2];  // libraries
 
     bool target_lib, *numbered;
 
