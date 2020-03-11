@@ -14,7 +14,7 @@ void heapify(int *a, int i, int n) {
 
     if (largest != i) {
         std::swap(a[i], a[largest]);
-        heapify(a, n, largest);
+        heapify(a, largest, n);
     }
 }
 
