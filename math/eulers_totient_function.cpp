@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-typedef long long int ll;
 
 /**
 
@@ -23,26 +22,22 @@ Hence Implementation in O(sqrt(n)).
 
 */
 
-ll phiFunction(ll n){
-    ll res = n;
-    for(ll i=2;i*i<=n;i++){
-        if(n%i==0){
-            while(n%i==0){
-                n/=i;
+int phiFunction (int n ) {
+    int result = n ;
+    for ( ll i=2 ; i*i <= n ; i++ ) {
+        if ( n%i == 0 ) {
+            while ( n%i == 0 ) {
+                n /= i ;
             }
-            res-=res/i;
+            result -= result/i ;
         }
     }
-    if(n>1)res-=res/n;
-    return res;
+    if ( n > 1 ) result -= result/n ;
+    return result ;
 }
 
-int main(){
-    ll t;
-    cin>>t;
-    while(t--){
-        ll n;
-        cin>>n;
-        cout<<phiFunction(n)<<endl;
-    }
+int main() {
+    int n ;
+    cin >> n ;
+    cout << phiFunction ( n ) << endl ;
 }
