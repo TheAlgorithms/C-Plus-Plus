@@ -1,6 +1,5 @@
-#include<bits/stdc++.h>
-
-using namespace std;
+/// C++ Program to find Euler Totient Function
+#include<iostream>
 
 /**
 
@@ -22,6 +21,7 @@ Hence Implementation in O(sqrt(n)).
 
 */
 
+/// Function to caculate euler totient function
 int phiFunction(int n) {
     int result = n;
     for (ll i=2; i*i <= n; i++) {
@@ -38,6 +38,6 @@ int phiFunction(int n) {
 
 int main() {
     int n;
-    cin >> n;
-    cout << phiFunction(n) << endl;
+    std::cin >> n;
+    std::cout << phiFunction(n) << endl;
 }
