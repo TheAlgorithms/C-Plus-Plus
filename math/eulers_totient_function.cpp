@@ -24,7 +24,7 @@ Hence Implementation in O(sqrt(n)).
 /// Function to caculate euler totient function
 int phiFunction(int n) {
     int result = n;
-    for (ll i=2; i*i <= n; i++) {
+    for (int i=2; i*i <= n; i++) {
         if (n%i == 0) {
             while (n%i == 0) {
                 n /= i;
@@ -39,5 +39,5 @@ int phiFunction(int n) {
 int main() {
     int n;
     std::cin >> n;
-    std::cout << phiFunction(n) << endl;
+    std::cout << phiFunction(n);
 }
