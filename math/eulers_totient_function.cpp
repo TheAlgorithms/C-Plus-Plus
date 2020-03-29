@@ -22,22 +22,22 @@ Hence Implementation in O(sqrt(n)).
 
 */
 
-int phiFunction (int n ) {
-    int result = n ;
-    for ( ll i=2 ; i*i <= n ; i++ ) {
-        if ( n%i == 0 ) {
-            while ( n%i == 0 ) {
-                n /= i ;
+int phiFunction(int n) {
+    int result = n;
+    for (ll i=2; i*i <= n; i++) {
+        if (n%i == 0) {
+            while (n%i == 0) {
+                n /= i;
             }
-            result -= result/i ;
+            result -= result/i;
         }
     }
-    if ( n > 1 ) result -= result/n ;
-    return result ;
+    if (n > 1) result -= result/n;
+    return result;
 }
 
 int main() {
-    int n ;
-    cin >> n ;
-    cout << phiFunction ( n ) << endl ;
+    int n;
+    cin >> n;
+    cout << phiFunction(n) << endl;
 }
