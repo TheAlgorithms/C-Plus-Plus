@@ -16,8 +16,7 @@ int binExpo(int a, int b) {
     int res = binExpo(a, b/2);
     if (b%2) {
         return res*res*a;
-    }
-    else {
+    } else {
         return res*res;
     }
 }
