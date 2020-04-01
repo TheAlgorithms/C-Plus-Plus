@@ -18,7 +18,7 @@ int binExpo(int a,int b) {
 
 int main() {
     int a,b;
-    /// Give two nos as a^b (where '^' denotes power exponent operation
+    /// Give two nos as a^b (where '^' denotes power exponent operation)
     std::cin >> a >> b;
     ///Result of a^b
     std::cout << binExpo(a,b) << std::endl;
