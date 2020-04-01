@@ -1,4 +1,4 @@
-/// C++ Program to find Binary Exponent recursively.
+///C++ Program to find Binary Exponent recursively.
 
 #include<iostream>
 /*
@@ -8,6 +8,7 @@
  * (instead of O(n) multiplications required by the naive approach).
 */
 
+///Function to calculate exponent in O(log(n)) using binary exponent.
 int binExpo(int a,int b) {
     if (b == 0) return 1;
     int res = binExpo(a,b/2);
