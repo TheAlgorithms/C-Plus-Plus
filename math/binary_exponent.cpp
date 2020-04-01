@@ -10,10 +10,16 @@
 
 /// Function to calculate exponent in O(log(n)) using binary exponent.
 int binExpo(int a, int b) {
-    if (b == 0) return 1;
+    if (b == 0) {
+        return 1;
+    }
     int res = binExpo(a, b/2);
-    if (b%2) return res*res*a;
-    else return res*res;
+    if (b%2) {
+        return res*res*a;
+    }
+    else {
+        return res*res;
+    }
 }
 
 int main() {
@@ -23,4 +29,3 @@ int main() {
     /// Result of a^b
     std::cout << binExpo(a, b) << std::endl;
 }
-
