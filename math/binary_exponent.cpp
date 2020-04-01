@@ -20,6 +20,6 @@ int main() {
     /// Give two nos as a^b (where '^' denotes power exponent operation
     std::cin >> a >> b;
     ///Result of a^b
-    std::cout << binExpo(a,b) << endl;
+    std::cout << binExpo(a,b) << std::endl;
 }
 
