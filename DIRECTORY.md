@@ -91,6 +91,7 @@
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
 
 ## Math
+  * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
   * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fast_power.cpp)
