@@ -12,7 +12,7 @@
  *
  * Example:- N=36
  * 36 = (3^2 * 2^2)
- * numbe-of-divisors(36) = (2+1) * (2+1) = 9.
+ * number-of-divisors(36) = (2+1) * (2+1) = 9.
  * list of divisors of 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.
 **/
 
@@ -30,10 +30,10 @@ int number_of_divisors(int n) {
     }
     int divisors_count = 1;
     // If n is prime at that time vector prime_exponent_count will remain empty.
-    for (int i=0; i<prime_exponent_count.size(); i++) {
+    for (int i=0; i < prime_exponent_count.size(); i++) {
         divisors_count = divisors_count * (prime_exponent_count[i]+1);
     }
-    if(divisors_count == 1 and n != 1) {
+    if (divisors_count == 1 && n != 1) {
         // Prime number has exactly 2 divisors 1 and itself.
         divisors_count = 2;
     }
