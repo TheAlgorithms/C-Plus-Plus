@@ -28,7 +28,7 @@ int number_of_positive_divisors(int n) {
             prime_exponent_count.push_back(prime_count);
         }
     }
-    if(n > 1) {
+    if (n > 1) {
         prime_exponent_count.push_back(1);
     }
 
@@ -44,12 +44,13 @@ int number_of_positive_divisors(int n) {
 int main() {
     int n;
     std::cin >> n;
-    if(n < 0) {
+    if (n < 0) {
         n = -n;
     }
-    if(n == 0) {
+    if (n == 0) {
         std::cout << "All non-zero numbers are divisors of 0 !" << std::endl;
     } else {
-        std::cout << "Number of positive divisors is : " << number_of_positive_divisors(n) << std::endl;
+        std::cout << "Number of positive divisors is : ";
+        std::cout << number_of_positive_divisors(n) << std::endl;
     }
 }
