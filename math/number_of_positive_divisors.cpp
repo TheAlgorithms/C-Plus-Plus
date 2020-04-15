@@ -10,10 +10,20 @@
  * Therefore. number-of-divisors(N) = (E1+1) * (E2+1) ... (Ek+1).
  * Where P1, P2 ... Pk are prime factors and E1, E2 ... Ek are exponents respectively.
  *
- * Example:- N=36
+ * Example:-
+ * N = 36
  * 36 = (3^2 * 2^2)
  * number_of_positive_divisors(36) = (2+1) * (2+1) = 9.
  * list of positive divisors of 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.
+ *
+ * Similarly if N is -36 at that time number of positive divisors remain same.
+ *
+ * Example:-
+ * N = -36
+ * -36 = -1 * (3^2 * 2^2)
+ * number_of_positive_divisors(-36) = (2+1) * (2+1) = 9.
+ * list of positive divisors of -36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.
+ *
 **/
 
 int number_of_positive_divisors(int n) {
