@@ -12,11 +12,11 @@
  *
  * Example:- N=36
  * 36 = (3^2 * 2^2)
- * number-of-divisors(36) = (2+1) * (2+1) = 9.
- * list of divisors of 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.
+ * number_of_positive_divisors(36) = (2+1) * (2+1) = 9.
+ * list of positive divisors of 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.
 **/
 
-int number_of_divisors(int n) {
+int number_of_positive_divisors(int n) {
     std::vector<int> prime_exponent_count;
     for (int i=2; i*i <= n; i++) {
         int prime_count = 0;
@@ -28,20 +28,28 @@ int number_of_divisors(int n) {
             prime_exponent_count.push_back(prime_count);
         }
     }
+    if(n > 1) {
+        prime_exponent_count.push_back(1);
+    }
+
     int divisors_count = 1;
-    // If n is prime at that time vector prime_exponent_count will remain empty.
+
     for (int i=0; i < prime_exponent_count.size(); i++) {
         divisors_count = divisors_count * (prime_exponent_count[i]+1);
     }
-    if (divisors_count == 1 && n != 1) {
-        // Prime number has exactly 2 divisors 1 and itself.
-        divisors_count = 2;
-    }
+
     return divisors_count;
 }
 
 int main() {
     int n;
     std::cin >> n;
-    std::cout << number_of_divisors(n) << std::endl;
+    if(n < 0) {
+        n = -n;
+    }
+    if(n == 0) {
+        std::cout << "All non-zero numbers are divisors of 0 !" << std::endl;
+    } else {
+        std::cout << "Number of positive divisors is : " << number_of_positive_divisors(n) << std::endl;
+    }
 }
