@@ -177,4 +177,5 @@
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Tim%20Sort.cpp)
 
 ## Strings
+  * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
