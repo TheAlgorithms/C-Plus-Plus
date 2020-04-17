@@ -25,7 +25,7 @@ std::vector<int> dp;
 void dp_with_dfs(int u) {
     visited[u] = true;
     int child_height = 1;
-    for(int v : adj[u]) {
+    for (int v : adj[u]) {
         if (!visited[v]) {
             dp_with_dfs(v);
 
@@ -43,7 +43,7 @@ int main() {
     std::cin >> n;
     int u, v;
     /// Tree contains exactly n-1 edges where n denotes the nodes.
-    for(int i=0; i < n-1; i++) {
+    for (int i = 0; i < n-1; i++) {
         std::cin >> u >> v;
         /// undirected tree u -> v and v -> u.
         adj[u].push_back(v);
@@ -54,7 +54,7 @@ int main() {
     /// initialize depth of all nodes to 0.
     dp.assign(n+1, 0);
     /// function call which will initialize the height of all nodes.
-    dp_with_dfs (1);
+    dp_with_dfs(1);
     std::cout << "Height of the Tree : " << dp[1] << std::endl;
 }
 
