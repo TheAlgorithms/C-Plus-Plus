@@ -29,7 +29,7 @@ void dp_with_dfs(int u) {
         if (!visited[v]) {
             dp_with_dfs(v);
 
-            // selected maximum subtree height from all child.
+            // select maximum sub-tree height from all children.
             child_height = std::max(child_height, dp[v]+1);
         }
     }
@@ -57,4 +57,3 @@ int main() {
     dp_with_dfs(1);
     std::cout << "Height of the Tree : " << dp[1] << std::endl;
 }
-
