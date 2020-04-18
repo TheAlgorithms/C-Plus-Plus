@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int v = 4;
 void DFSUtil_(int graph[4][4], bool visited[], int s)

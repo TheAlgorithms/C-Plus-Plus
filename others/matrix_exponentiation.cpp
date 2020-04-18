@@ -18,7 +18,7 @@ Steps for Matrix Expo
 The first element of this matrix is the required result.
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
 using std::cin;
 using std::cout;
 using std::vector;

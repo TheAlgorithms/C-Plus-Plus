@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <iostream>
 # define n 8
 
 /**

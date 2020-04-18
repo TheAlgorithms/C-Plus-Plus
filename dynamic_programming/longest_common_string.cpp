@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <iosrteam>
 using namespace std;
 
 int max(int a,int b)

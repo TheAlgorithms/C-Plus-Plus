@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <iostream>
 //#include <boost/multiprecision/cpp_int.hpp>
 //using namespace boost::multiprecision;
 const int mx = 1e6 + 5;

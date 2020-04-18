@@ -1,4 +1,4 @@
-#include "bits/stdc++.h"
+#include <iostream>
 using namespace std;
 const int N = 1e6 + 5;
 int a[N], bucket[N], cnt[N];
