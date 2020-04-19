@@ -11,7 +11,6 @@ This program is use to print the following pattern
 where number of pairs line is given by user 
 */
 #include <iostream>  
-using namespace std;
 int main(){
 int l, st = 2, x, r, z, n, sp;
 std::cout << "enter Index ";
