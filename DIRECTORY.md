@@ -133,6 +133,7 @@
   * [Smallest-Circle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/smallest-circle.cpp)
   * [Sparse Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Sparse%20matrix.cpp)
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
+  * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/stairs_pattern.cpp)
   * [Strassen Matrix Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Strassen%20Matrix%20Multiplication.cpp)
   * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/String%20Fibonacci.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Tower%20of%20Hanoi.cpp)
