@@ -22,7 +22,7 @@ std::vector<int> adj[MAX];
 std::vector<bool> visited;
 std::vector<int> dp;
 
-void dp_with_dfs(int u) {
+void depth_first_search(int u) {
     visited[u] = true;
     int child_height = 1;
     for (int v : adj[u]) {
