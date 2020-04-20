@@ -36,7 +36,9 @@ int main() {
 int64_t r, mr = 0, x, q, i, z;
 std::cout << "Enter Number of array you want to Store :";
 std::cin >> x;
-std::cout << "Enter Number of Question or Quary you want to do Related to Array :";
+std::cout << "Enter Number of ";
+std::cout<<"Question or Quary you ";
+std::cout<<"want to do Related to Array :";
 std::cin >> q;
 // create a Array in run time because use can
 // change the size of each array which he/she is going to store
