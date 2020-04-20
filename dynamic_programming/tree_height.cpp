@@ -49,7 +49,7 @@ int main() {
     int no_of_nodes;
     std::cout << "Enter number of nodes of the tree : " << std::endl;
     std::cin >> no_of_nodes;
-    
+
     // u,v denotes an undirected edge of tree.
     int u, v;
     // Tree contains exactly n-1 edges where n denotes the nodes.
