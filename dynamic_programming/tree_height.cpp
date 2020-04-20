@@ -46,24 +46,24 @@ void depth_first_search(int u) {
 
 int main() {
     // number of nodes
-    int no_of_nodes;
+    int number_of_nodes;
     std::cout << "Enter number of nodes of the tree : " << std::endl;
-    std::cin >> no_of_nodes;
+    std::cin >> number_of_nodes;
 
-    // u,v denotes an undirected edge of tree.
+    // u, v denotes an undirected edge of tree.
     int u, v;
-    // Tree contains exactly n-1 edges where n denotes the nodes.
+    // Tree contains exactly n-1 edges where n denotes the number of nodes.
     std::cout << "Enter edges of the tree : " << std::endl;
-    for (int i = 0; i < no_of_nodes-1; i++) {
+    for (int i = 0; i < number_of_nodes - 1; i++) {
         std::cin >> u >> v;
         // undirected tree u -> v and v -> u.
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
     // initialize all nodes as unvisited.
-    visited.assign(no_of_nodes+1, false);
+    visited.assign(number_of_nodes+1, false);
     // initialize depth of all nodes to 0.
-    dp.assign(no_of_nodes+1, 0);
+    dp.assign(number_of_nodes+1, 0);
     // function call which will initialize the height of all nodes.
     depth_first_search(1);
     std::cout << "Height of the Tree : " << dp[1] << std::endl;
