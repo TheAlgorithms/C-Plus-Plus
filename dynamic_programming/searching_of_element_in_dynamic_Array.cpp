@@ -63,7 +63,7 @@ std::cout << "enter the number of row which element You want to find :";
 std::cin >> r1;
 r1 = r1 - 1;
 std::cout << "enter the position of element which You want to find :";
-std::cin>> q1;
+std::cin >> q1;
 q1 = q1 - 1;
 // use this to find desire position of element in desire array
 std::cout <<"The element is "<< ar[r1][q1] <<std::endl;
