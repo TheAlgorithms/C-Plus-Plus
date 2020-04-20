@@ -1,4 +1,4 @@
-// C++ Program to find height of the tree using bottom - up DP.
+// C++ Program to find height of the tree using bottom-up dynamic programming.
 
 /*
  * Given a rooted tree with node 1.
@@ -8,7 +8,14 @@
  * 1 2
  * 1 3
  * 2 4
- * Height of the tree : - 3
+ * which can be represented as                 
+ *   1                      
+ *  / \                     
+ * 2   3                    
+ * |                        
+ * 4            
+ * 
+ * Height of the tree : - 2
 */
 
 #include<iostream>
@@ -42,6 +49,7 @@ int main() {
     int no_of_nodes;
     std::cout << "Enter number of nodes of the tree : " << std::endl;
     std::cin >> no_of_nodes;
+    
     // u,v denotes an undirected edge of tree.
     int u, v;
     // Tree contains exactly n-1 edges where n denotes the nodes.
