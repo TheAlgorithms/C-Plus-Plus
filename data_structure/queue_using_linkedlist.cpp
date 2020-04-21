@@ -94,4 +94,5 @@ int main(){
             std::cout<<"\nWrong choice ";
 
     }
+    return 0;
 }
