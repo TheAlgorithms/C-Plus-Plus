@@ -66,6 +66,7 @@
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Longest%20Increasing%20Subsequence.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_string.cpp)
   * [Matrix-Chain-Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/Matrix-Chain-Multiplication.cpp)
+  * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
 
 ## Graph
   * [Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/BFS.cpp)
