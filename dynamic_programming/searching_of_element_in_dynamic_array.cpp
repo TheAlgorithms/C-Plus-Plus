@@ -32,47 +32,54 @@
 *****The element is 5
 */
 #include <iostream>
+
 // this is main fuction
 // ***
-int main() {
-int64_t r, mr = 0, x, q, i, z;
-std::cout << "Enter Number of array you want to Store :";
-std::cin >> x;
-std::cout << "Enter Number of ";
-std::cout << "Question or Quary you ";
-std::cout << "want to do Related to Array :";
-std::cin >> q;
-// create a Array in run time because use can
-// change the size of each array which he/she is going to store
-// create a 2D array
-int** ar = new int* [x]();
-// this for loop is use for entering different variable size array
-// ***
-for (r = 0; r < x; r++) {
-std::cout << "Enter number of element in " << r + 1 << " rows :";
-std::cin >> mr;
-// creating a 1D array
-int* ac = new int[mr]();
-std::cout << "Enter the element of Array ";
-// this for loop is use for storing values in array
-// ***
-for (i = 0; i < mr; i++) {
-// entering the value of rows in array in Horizontal
-std::cin >> ac[i];
+int main()
+{
+    int64_t r, mr = 0, x, q, i, z;
+    std::cout << "Enter Number of array you want to Store :";
+    std::cin >> x;
+    std::cout << "Enter Number of ";
+    std::cout << "Question or Quary you ";
+    std::cout << "want to do Related to Array :";
+    std::cin >> q;
+    
+    // create a Array in run time because use can
+    // change the size of each array which he/she is going to store
+    // create a 2D array
+    int** ar = new int* [x]();
+  
+    // this for loop is use for entering different variable size array
+    // ***
+    for (r = 0; r < x; r++) {
+        std::cout << "Enter number of element in " << r + 1 << " rows :";
+        std::cin >> mr;
+        // creating a 1D array
+        int* ac = new int[mr]();
+        std::cout << "Enter the element of Array ";
+      
+        // this for loop is use for storing values in array
+        // ***
+        for (i = 0; i < mr; i++) {
+            // entering the value of rows in array in Horizontal
+            std::cin >> ac[i];
+                                 }
+            // Change the position of Array so that new arrays entery will be done
+            ar[r] = ac;
+                            }
+  
+        // this for loop is use for display result of querry
+        // ***
+        for (z = 0; z < q; z++) {
+            int64_t r1 = 0, q1 = 0;
+            std::cout << "enter the number of row which element You want to find :";
+            std::cin >> r1;
+            r1 = r1 - 1;
+            std::cout << "enter the position of element which You want to find :";
+            std::cin >> q1;
+            q1 = q1 - 1;
+            // use this to find desire position of element in desire array
+            std::cout <<"The element is "<< ar[r1][q1] <<std::endl;
+                                }
 }
-// Change the position of Array so that new arrays entery will be done
-ar[r] = ac;
-}
-// this for loop is use for display result of querry
-// ***
-for (z = 0; z < q; z++) {
-int64_t r1 = 0, q1 = 0;
-std::cout << "enter the number of row which element You want to find :";
-std::cin >> r1;
-r1 = r1 - 1;
-std::cout << "enter the position of element which You want to find :";
-std::cin >> q1;
-q1 = q1 - 1;
-// use this to find desire position of element in desire array
-std::cout <<"The element is "<< ar[r1][q1] <<std::endl;
-}}
