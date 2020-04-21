@@ -64,10 +64,11 @@ int main()
         for (i = 0; i < mr; i++) {
             // entering the value of rows in array in Horizontal
             std::cin >> ac[i];
-                                 }
+        }
+        
             // Change the position of Array so that new arrays entery will be done
             ar[r] = ac;
-                            }
+    }
   
         // this for loop is use for display result of querry
         // ***
@@ -81,5 +82,5 @@ int main()
             q1 = q1 - 1;
             // use this to find desire position of element in desire array
             std::cout <<"The element is "<< ar[r1][q1] <<std::endl;
-                                }
+        }
 }
