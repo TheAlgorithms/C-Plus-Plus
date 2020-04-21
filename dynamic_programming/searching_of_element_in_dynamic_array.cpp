@@ -61,8 +61,7 @@ int main() {
             // entering the value of rows in array in Horizontal
             std::cin >> ac[i];
         }
-        
-      // Change the position of Array so that new arrays entery will be done
+        // Change the position of Array so that new arrays entery will be done
             ar[r] = ac;
     }
         // this for loop is use for display result of querry
