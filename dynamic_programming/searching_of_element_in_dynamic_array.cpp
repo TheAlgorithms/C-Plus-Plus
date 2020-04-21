@@ -35,8 +35,7 @@
 
 // this is main fuction
 // ***
-int main()
-{
+int main() {
     int64_t r, mr = 0, x, q, i, z;
     std::cout << "Enter Number of array you want to Store :";
     std::cin >> x;
