@@ -43,12 +43,10 @@ int main() {
     std::cout << "Question or Quary you ";
     std::cout << "want to do Related to Array :";
     std::cin >> q;
-    
     // create a Array in run time because use can
     // change the size of each array which he/she is going to store
     // create a 2D array
     int** ar = new int* [x]();
-  
     // this for loop is use for entering different variable size array
     // ***
     for (r = 0; r < x; r++) {
@@ -57,7 +55,6 @@ int main() {
         // creating a 1D array
         int* ac = new int[mr]();
         std::cout << "Enter the element of Array ";
-      
         // this for loop is use for storing values in array
         // ***
         for (i = 0; i < mr; i++) {
@@ -65,18 +62,17 @@ int main() {
             std::cin >> ac[i];
         }
         
-            // Change the position of Array so that new arrays entery will be done
+      // Change the position of Array so that new arrays entery will be done
             ar[r] = ac;
     }
-  
         // this for loop is use for display result of querry
         // ***
         for (z = 0; z < q; z++) {
             int64_t r1 = 0, q1 = 0;
-            std::cout << "enter the number of row which element You want to find :";
+      std::cout << "enter the number of row which element You want to find :";
             std::cin >> r1;
             r1 = r1 - 1;
-            std::cout << "enter the position of element which You want to find :";
+        std::cout << "enter the position of element which You want to find :";
             std::cin >> q1;
             q1 = q1 - 1;
             // use this to find desire position of element in desire array
