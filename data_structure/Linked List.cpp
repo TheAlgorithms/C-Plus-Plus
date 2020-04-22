@@ -100,17 +100,19 @@ void show()
 void reverse()
 {
 	node *first = start;
-	node *second = first->next;
-	while (second != NULL)
-	{
-		node *tem = second->next;
-		second->next = first;
-		first = second;
-		second = tem;
-	}
+	if (first != NULL){
+		node *second = first->next;
+		while (second != NULL)
+		{
+			node *tem = second->next;
+			second->next = first;
+			first = second;
+			second = tem;
+		}
 
-	start->next = NULL;
-	start = first;
+		start->next = NULL;
+		start = first;
+	}
 }
 
 int main()
