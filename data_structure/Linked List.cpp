@@ -44,7 +44,7 @@ void remove(int x) {
         }
 
         if (temp == NULL) {
-                std::cout << endl << x << " not found in list\n";
+                std::cout << std::endl << x << " not found in list\n";
                 return;
         }
 
