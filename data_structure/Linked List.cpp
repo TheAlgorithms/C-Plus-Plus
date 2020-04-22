@@ -88,9 +88,8 @@ void reverse() {
                 }
                 start->next = NULL;
                 start = first;
-        }
-        else {
-                cout<<"\nEmpty list";
+        } else {
+                cout << "\nEmpty list";
         }
 }
 
