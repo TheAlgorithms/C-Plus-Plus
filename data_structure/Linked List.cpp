@@ -101,15 +101,14 @@ void reverse()
 {
 	node *first = start;
 	if (first != NULL){
-		node *second = first->next;
-		while (second != NULL)
-		{
-			node *tem = second->next;
-			second->next = first;
-			first = second;
-			second = tem;
-		}
-
+                node *second = first->next;
+                while (second != NULL)
+                {
+                        node *tem = second->next;
+                        second->next = first;
+                        first = second;
+                        second = tem;
+                }
 		start->next = NULL;
 		start = first;
 	}
