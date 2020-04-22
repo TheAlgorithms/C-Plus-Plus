@@ -27,7 +27,7 @@
     * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/main_cll.cpp)
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/disjoint_set.cpp)
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Doubly%20Linked%20List.cpp)
-  * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Linked%20List.cpp)
+  * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/List%20Array.cpp)
   * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/MorrisInorder.cpp)
