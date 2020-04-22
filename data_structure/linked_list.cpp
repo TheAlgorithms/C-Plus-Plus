@@ -9,18 +9,18 @@ node *start;
 
 void insert(int x) {
         node *t = start;
+        node *n = new node;
+        n->val = x;
+        n->next = NULL;
         if (start != NULL) {
                 while (t->next != NULL) {
                         t = t->next;
                 }
-                node *n = new node;
                 t->next = n;             
         } else {
-                node *n = new node;
                 start = n;
         }
-        n->val = x;
-        n->next = NULL;
+        
 }
 
 void remove(int x) {
