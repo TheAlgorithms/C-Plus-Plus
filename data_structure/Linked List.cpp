@@ -27,7 +27,7 @@ void insert(int x) {
 
 void remove(int x) {
         if (start == NULL) {
-                cout << "\nLinked List is empty\n";
+                std::cout << "\nLinked List is empty\n";
                 return;
         } else if (start->val == x) {
                 node *temp = start;
@@ -44,7 +44,7 @@ void remove(int x) {
         }
 
         if (temp == NULL) {
-                cout << endl << x << " not found in list\n";
+                std::cout << endl << x << " not found in list\n";
                 return;
         }
 
@@ -57,21 +57,21 @@ void search(int x) {
         int found = 0;
         while (t != NULL) {
                 if (t->val == x) {
-                        cout << "\nFound";
+                        std::cout << "\nFound";
                         found = 1;
                         break;
                 }
                 t = t->next;
         }
         if (found == 0) {
-                cout << "\nNot Found";
+                std::cout << "\nNot Found";
         }
 }
 
 void show() {
         node *t = start;
         while (t != NULL) {
-                cout << t->val << "\t";
+                std::cout << t->val << "\t";
                 t = t->next;
         }
 }
@@ -89,46 +89,46 @@ void reverse() {
                 start->next = NULL;
                 start = first;
         } else {
-                cout << "\nEmpty list";
+                std::cout << "\nEmpty list";
         }
 }
 
 int main() {
         int choice, x;
         do {
-                cout << "\n1. Insert";
-                cout << "\n2. Delete";
-                cout << "\n3. Search";
-                cout << "\n4. Print";
-                cout << "\n5. Reverse";
-                cout << "\n0. Exit";
-                cout << "\n\nEnter you choice : ";
-                cin >> choice;
+                std::cout << "\n1. Insert";
+                std::cout << "\n2. Delete";
+                std::cout << "\n3. Search";
+                std::cout << "\n4. Print";
+                std::cout << "\n5. Reverse";
+                std::cout << "\n0. Exit";
+                std::cout << "\n\nEnter you choice : ";
+                std::cin >> choice;
                 switch (choice) {
                 case 1:
-                        cout << "\nEnter the element to be inserted : ";
-                        cin >> x;
+                        std::cout << "\nEnter the element to be inserted : ";
+                        std::cin >> x;
                         insert(x);
                         break;
                 case 2:
-                        cout << "\nEnter the element to be removed : ";
-                        cin >> x;
+                        std::cout << "\nEnter the element to be removed : ";
+                        std::cin >> x;
                         remove(x);
                         break;
                  case 3:
-                        cout << "\nEnter the element to be searched : ";
-                        cin >> x;
+                        std::cout << "\nEnter the element to be searched : ";
+                        std::cin >> x;
                         search(x);
                         break;
                  case 4:
                         show();
-                        cout << "\n";
+                        std::cout << "\n";
                         break;
                  case 5:
-                        cout << "The reversed list: \n";
+                        std::cout << "The reversed list: \n";
                         reverse();
                         show();
-                        cout << "\n";
+                        std::cout << "\n";
                         break;
                }
         } while (choice != 0);
