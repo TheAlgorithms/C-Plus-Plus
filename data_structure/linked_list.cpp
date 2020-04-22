@@ -14,15 +14,13 @@ void insert(int x) {
                         t = t->next;
                 }
                 node *n = new node;
-                t->next = n;
-                n->val = x;
-                n->next = NULL;
+                t->next = n;             
         } else {
                 node *n = new node;
-                n->val = x;
-                n->next = NULL;
                 start = n;
         }
+        n->val = x;
+        n->next = NULL;
 }
 
 void remove(int x) {
