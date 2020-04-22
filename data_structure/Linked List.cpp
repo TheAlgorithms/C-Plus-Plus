@@ -1,29 +1,23 @@
 #include <iostream>
-using namespace std;
-struct node
-{
+
+struct node {
         int val;
         node *next;
 };
 
 node *start;
 
-void insert(int x)
-{
+void insert(int x) {
         node *t = start;
-        if (start != NULL)
-        {
-                while (t->next != NULL)
-                {
+        if (start != NULL) {
+                while (t->next != NULL) {
                         t = t->next;
                 }
                 node *n = new node;
                 t->next = n;
                 n->val = x;
                 n->next = NULL;
-        }
-        else
-        {
+        } else {
                 node *n = new node;
                 n->val = x;
                 n->next = NULL;
@@ -31,77 +25,62 @@ void insert(int x)
         }
 }
 
-void remove(int x)
-{
-        if (start == NULL)
-        {
+void remove(int x) {
+        if (start == NULL) {
                 cout << "\nLinked List is empty\n";
                 return;
-        }
-        else if (start->val == x)
-        {
+        } else if (start->val == x) {
                 node *temp = start;
                 start = start->next;
                 delete temp;
                 return;
         }
-	
+
         node *temp = start, *parent = start;
 
-        while (temp != NULL && temp->val != x)
-        {
+        while (temp != NULL && temp->val != x) {
                 parent = temp;
                 temp = temp->next;
         }
 
-        if (temp == NULL)
-        {
+        if (temp == NULL) {
                 cout << endl << x << " not found in list\n";
                 return;
         }
-        
-	parent->next = temp->next;
+
+        parent->next = temp->next;
         delete temp;
 }
 
-void search(int x)
-{
+void search(int x) {
         node *t = start;
         int found = 0;
-        while (t != NULL)
-        {
-                if (t->val == x)
-                {
+        while (t != NULL) {
+                if (t->val == x) {
                         cout << "\nFound";
                         found = 1;
                         break;
                 }
                 t = t->next;
         }
-        if (found == 0)
-        {
+        if (found == 0) {
                 cout << "\nNot Found";
         }
 }
 
-void show()
-{
+void show() {
         node *t = start;
-        while (t != NULL)
-        {
+        while (t != NULL) {
                 cout << t->val << "\t";
                 t = t->next;
         }
 }
 
-void reverse()
-{
+void reverse() {
         node *first = start;
-        if (first != NULL)
-        {
+        if (first != NULL) {
                 node *second = first->next;
-                while (second != NULL)
-                {
+                while (second != NULL) {
                         node *tem = second->next;
                         second->next = first;
                         first = second;
@@ -110,18 +89,14 @@ void reverse()
                 start->next = NULL;
                 start = first;
         }
-        else 
-        {
+        else {
                 cout<<"\nEmpty list";
-
-	}
+        }
 }
 
-int main()
-{
+int main() {
         int choice, x;
-        do
-        {
+        do {
                 cout << "\n1. Insert";
                 cout << "\n2. Delete";
                 cout << "\n3. Search";
@@ -130,8 +105,7 @@ int main()
                 cout << "\n0. Exit";
                 cout << "\n\nEnter you choice : ";
                 cin >> choice;
-                switch (choice)
-                {
+                switch (choice) {
                 case 1:
                         cout << "\nEnter the element to be inserted : ";
                         cin >> x;
