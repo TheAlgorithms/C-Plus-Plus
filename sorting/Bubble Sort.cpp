@@ -48,7 +48,7 @@ int main()
 			cout << numbers[i] << endl;
 		}
 	}
- 	return 0;
+	return 0;
 }
 
 /*The working principle of the Bubble sort algorithm:
