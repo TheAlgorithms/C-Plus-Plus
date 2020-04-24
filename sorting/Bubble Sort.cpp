@@ -1,9 +1,7 @@
 //Bubble Sort
 
-
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 int main()
@@ -16,7 +14,6 @@ int main()
 	cout << "Enter " << n << " numbers: ";
 	int num;
 
-
 	//Input
 	for (int i = 0; i < n; i++)
 	{
@@ -25,7 +22,6 @@ int main()
 	}
 
 	//Bubble Sorting
-
 	for (int i = 0; (i < n) && (swap_check == 1); i++)
 	{
 		swap_check = 0;
@@ -52,7 +48,7 @@ int main()
 			cout << numbers[i] << endl;
 		}
 	}
-  return 0;
+ 	return 0;
 }
 
 /*The working principle of the Bubble sort algorithm:
