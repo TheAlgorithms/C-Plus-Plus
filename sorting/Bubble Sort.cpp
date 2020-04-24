@@ -1,53 +1,53 @@
 //Bubble Sort
 
-#include<iostream>
-#include<vector>
+
+#include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main()
 {
 	int n;
-	short swap_check=0;
-  	cout << "Enter the amount of numbers to sort: ";
+	short swap_check = 1;
+	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
 	vector<int> numbers;
 	cout << "Enter " << n << " numbers: ";
 	int num;
 
-  	//Input
-	for(int i=0; i<n; i++)
+
+	//Input
+	for (int i = 0; i < n; i++)
 	{
 		cin >> num;
 		numbers.push_back(num);
 	}
 
 	//Bubble Sorting
-	for(int i=0; i<n; i++)
+
+	for (int i = 0; (i < n) && (swap_check == 1); i++)
 	{
-	    swap_check=0;
-		
-		for(int j=0; j<n-1-i; j++)
+		swap_check = 0;
+		for (int j = 0; j < n - 1 - i; j++)
 		{
-			if(numbers[j]>numbers[j+1])
+			if (numbers[j] > numbers[j + 1])
 			{
-				swap_check=1;
-				swap(numbers[j], numbers[j+1]);// by changing swap location. I mean, j. If the number is greater than j + 1, then it means the location.
+				swap_check = 1;
+				swap(numbers[j], numbers[j + 1]);// by changing swap location. I mean, j. If the number is greater than j + 1, then it means the location.
 			}
-		}
-		if(swap_check == 0)
-		{	
-			break;
 		}
 	}
 
 	//Output
-	cout<<"\nSorted Array : ";
-	for(int i=0; i<numbers.size(); i++)
+	cout << "\nSorted Array : ";
+	for (int i = 0; i < numbers.size(); i++)
 	{
-		if(i != numbers.size() -1)
+		if (i != numbers.size() - 1)
 		{
 			cout << numbers[i] << ", ";
-		}else
+		}
+		else
 		{
 			cout << numbers[i] << endl;
 		}
