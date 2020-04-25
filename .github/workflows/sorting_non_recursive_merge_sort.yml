@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: mattnotmitt/doxygen-action@master
         with:
-          working-directory: 'sorting/'
+          working-directory: '.'
           doxyfile-path: 'sorting/doxy.txt'
       - run: |
           cd sorting
