@@ -13,7 +13,7 @@ double Sqrt(double x) {
     double epsilon = 1e-12;
     */
     while ( l <= r ) {
-        double mid = ( l + r ) / 2;
+        double mid = (l + r) / 2;
         if ( mid * mid > x ) {
             r = mid;
         } else {
