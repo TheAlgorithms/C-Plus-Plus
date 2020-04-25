@@ -1,0 +1,14 @@
+name: sorting_non_recursive_merge_sort
+on:
+  pull_request:
+  push:
+  #  branches: [master]
+jobs:
+  sorting_non_recursive_merge_sort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: |
+        cd sorting
+        make test
+        make doc
