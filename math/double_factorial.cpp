@@ -8,23 +8,22 @@ that have the same parity (odd or even) as n.
 It is also called as semifactorial 
 of a number and is denoted by !! */
 
-unsigned long long double_factorial_iterative(unsigned int n){
+uint64_t double_factorial_iterative(unsigned int n){
   unsigned long long res = 1;
-  for( unsigned long long i = n; i >= 0; i -= 2 ){
-    if(i == 0 || i == 1) return res;
+  for ( unsigned long long i = n; i >= 0; i -= 2 ) {
+    if (i == 0 || i == 1) return res;
     res *= i;
   }
 }
 
 /* Recursion can be costly for large numbers */
 
-unsigned long long double_factorial_recursive(unsigned int n){
-  if(n <= 1) return 1;
+uint64_t double_factorial_recursive(unsigned int n){
+  if (n <= 1) return 1;
   return n * double_factorial_recursive(n - 2);
 }
 
-int main()
-{
+int main() {
   int n{};
   std::cin >> n;
   assert(n >= 0);
