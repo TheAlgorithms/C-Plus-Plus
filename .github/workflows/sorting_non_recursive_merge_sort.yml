@@ -14,5 +14,6 @@ jobs:
           doxyfile-path: 'doxy.txt'
       - run: |
           cd sorting
+          ls -la  # What files did doxygen-action generate?
           make test
-          make doc
+          # make doc  # Done by mattnotmitt/doxygen-action
