@@ -12,8 +12,8 @@ double Sqrt(double x) {
     between 1e-7 and 1e-12.
     double epsilon = 1e-12;
     */
-    while ( l <= r) {
-        double mid = (l + r) / 2;
+    while ( l <= r ) {
+        double mid = ( l + r ) / 2;
         if ( mid * mid > x ) {
             r = mid;
         } else {
@@ -25,7 +25,6 @@ double Sqrt(double x) {
     }
     return -1;
 }
-
 int main() {
   double n{};
   std::cin >> n;
