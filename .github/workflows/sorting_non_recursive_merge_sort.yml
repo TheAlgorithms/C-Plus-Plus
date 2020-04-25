@@ -15,5 +15,6 @@ jobs:
       - run: |
           cd sorting
           ls -la  # What files did doxygen-action generate?
+          ls -la html
           make test
           # make doc  # Done by mattnotmitt/doxygen-action
