@@ -12,6 +12,11 @@ jobs:
         with:
           working-directory: 'sorting/'
           doxyfile-path: 'doxy.txt'
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./sorting/html
+          enable_jekyll: true
       - run: |
           cd sorting
           ls -la  # What files did doxygen-action generate?
