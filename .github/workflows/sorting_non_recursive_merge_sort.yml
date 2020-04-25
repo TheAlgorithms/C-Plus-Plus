@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - run: |
-        cd sorting
-        make test
-        make doc
+          cd sorting
+          make test
+          make doc
