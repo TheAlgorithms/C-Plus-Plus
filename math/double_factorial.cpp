@@ -8,8 +8,8 @@ that have the same parity (odd or even) as n.
 It is also called as semifactorial 
 of a number and is denoted by !! */
 
-uint64_t double_factorial_iterative(unsigned int n){
-  unsigned long long res = 1;
+uint64_t double_factorial_iterative(uint64_t n) {
+  uint64_t res = 1;
   for ( unsigned long long i = n; i >= 0; i -= 2 ) {
     if (i == 0 || i == 1) return res;
     res *= i;
@@ -18,13 +18,13 @@ uint64_t double_factorial_iterative(unsigned int n){
 
 /* Recursion can be costly for large numbers */
 
-uint64_t double_factorial_recursive(unsigned int n){
+uint64_t double_factorial_recursive(uint64_t n) {
   if (n <= 1) return 1;
   return n * double_factorial_recursive(n - 2);
 }
 
 int main() {
-  int n{};
+  uint64_t n{};
   std::cin >> n;
   assert(n >= 0);
   std::cout << double_factorial_iterative(n);
