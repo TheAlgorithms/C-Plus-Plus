@@ -16,8 +16,7 @@ double Sqrt(double x) {
         double mid = (l + r) / 2;
         if ( mid * mid > x ) {
             r = mid;
-        } 
-        else {
+        } else {
             if ( x - mid * mid < epsilon ) {
                 return mid;
             }
@@ -25,7 +24,6 @@ double Sqrt(double x) {
         }
     }
     return -1;
-    
 }
 
 int main() {
