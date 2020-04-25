@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - uses: mattnotmitt/doxygen-action@master
+        with:
+          working-directory: 'sorting/'
+          doxyfile-path: 'docs/Doxygen'
       - run: |
           cd sorting
           make test
