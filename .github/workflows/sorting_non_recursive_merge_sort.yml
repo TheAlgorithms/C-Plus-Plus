@@ -11,7 +11,7 @@ jobs:
       - uses: mattnotmitt/doxygen-action@master
         with:
           working-directory: 'sorting/'
-          doxyfile-path: 'docs/Doxygen'
+          doxyfile-path: 'sorting/'
       - run: |
           cd sorting
           make test
