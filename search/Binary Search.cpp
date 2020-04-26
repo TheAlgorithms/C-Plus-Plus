@@ -20,7 +20,13 @@ int main(int argc, char const *argv[])
 	cout << "Enter size of array: ";
 	cin >> n;
 	cout << "Enter array elements: ";
+	/*
 	int a[n];
+	getting error size must be declare
+	so for rectifying this use pointer.
+	int a[n]; replace by int* a = new int[n];
+	*/
+	int* a = new int[n];
 	for (int i = 0; i < n; ++i)
 	{
 		cin >> a[i];
