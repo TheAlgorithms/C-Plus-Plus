@@ -1,9 +1,6 @@
 #include <iostream>
-using namespace std;
-int binary_search(int a[], int l, int r, int key)
-{
-	while (l <= r)
-	{
+int binary_search(int a[], int l, int r, int key) {
+	while (l <= r) {
 		int m = l + (r - l) / 2;
 		if (key == a[m])
 			return m;
@@ -14,21 +11,13 @@ int binary_search(int a[], int l, int r, int key)
 	}
 	return -1;
 }
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
 	int n, key;
 	cout << "Enter size of array: ";
 	cin >> n;
 	cout << "Enter array elements: ";
-	/*
-	int a[n];
-	getting error size must be declare
-	so for rectifying this use pointer.
-	int a[n]; replace by int* a = new int[n];
-	*/
 	int* a = new int[n];
-	for (int i = 0; i < n; ++i)
-	{
+	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
 	cout << "Enter search key: ";
