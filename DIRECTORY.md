@@ -142,6 +142,9 @@
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Tower%20of%20Hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
 
+## Probability
+  * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
+
 ## Range Queries
   * [Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/bit.cpp)
   * [Fenwicktree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/FenwickTree.cpp)
