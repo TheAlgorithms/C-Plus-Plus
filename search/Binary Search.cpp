@@ -26,6 +26,6 @@ int res = binary_search(a, 0, n - 1, key);
 if (res != -1)
 std::cout << key << " found at index " << res << std::endl;
 else
-std::cout << key << " not found" << endl::endl;
+std::cout << key << " not found" << std::endl;
 return 0;
 }
