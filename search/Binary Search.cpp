@@ -13,19 +13,19 @@ int binary_search(int a[], int l, int r, int key) {
 }
 int main(int argc, char const *argv[]) {
 	int n, key;
-	cout << "Enter size of array: ";
-	cin >> n;
-	cout << "Enter array elements: ";
+	std::cout << "Enter size of array: ";
+	std::cin >> n;
+	std::cout << "Enter array elements: ";
 	int* a = new int[n];
 	for (int i = 0; i < n; i++) {
-		cin >> a[i];
+		std::cin >> a[i];
 	}
-	cout << "Enter search key: ";
-	cin >> key;
+	std::cout << "Enter search key: ";
+	std::cin >> key;
 	int res = binary_search(a, 0, n - 1, key);
 	if (res != -1)
-		cout << key << " found at index " << res << endl;
+		std::cout << key << " found at index " << res << endl;
 	else
-		cout << key << " not found" << endl;
+		std::cout << key << " not found" << endl;
 	return 0;
 }
