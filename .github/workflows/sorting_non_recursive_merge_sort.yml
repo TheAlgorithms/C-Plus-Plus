@@ -16,6 +16,8 @@ jobs:
       #  with:
       #    github_token: ${{ secrets.GITHUB_TOKEN }}
       #    publish_dir: ./sorting
+      #    external_repository: TheAlgorithms/C-Plus-Plus
+      #    publish_branch: master
       #    enable_jekyll: true
       - run: |
           cd sorting
