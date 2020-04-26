@@ -11,7 +11,7 @@ l = m + 1;
 }
 return -1;
 }
-int main(int argc, char const *argv[]) {
+int main() {
 int n, key;
 std::cout << "Enter size of array: ";
 std::cin >> n;
@@ -24,7 +24,7 @@ std::cout << "Enter search key: ";
 std::cin >> key;
 int res = binary_search(a, 0, n - 1, key);
 if (res != -1)
-std::cout << key << " found at index " << res << endl;
+std::cout << key << " found at index " << res << std::endl;
 else
 std::cout << key << " not found" << endl;
 return 0;
