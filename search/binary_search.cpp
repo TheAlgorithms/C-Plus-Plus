@@ -1,5 +1,5 @@
 #include <iostream>
-//binary_search function
+// binary_search function
 int binary_search(int a[], int l, int r, int key) {
     while (l <= r) {
           int m = l + (r - l) / 2;
@@ -18,13 +18,13 @@ int main(int argc, char const* argv[]) {
     std::cin >> n;
     std::cout << "Enter array elements: ";
     int* a = new int[n];
-//this loop use for store value in Array
+// this loop use for store value in Array
     for (int i = 0; i < n; i++) {
         std::cin >> a[i];
         }
     std::cout << "Enter search key: ";
     std::cin >> key;
-//this is use for find value in given array
+// this is use for find value in given array
     int res = binary_search(a, 0, n - 1, key);
     if (res != -1)
        std::cout << key << " found at index " << res << std::endl;
