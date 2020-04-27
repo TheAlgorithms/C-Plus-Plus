@@ -13,16 +13,16 @@ pigeonhole_sort(min, max, a);
 for (i = 0; i < MAX; i++) {
 cout<< a[i]<< "\t";}
 void pigeonhole_sort(int mi, int ma, int * a) {
-int size, count = 0, i;
+int k, count = 0, i;
 int *current;
 current = a;
-size = ma - mi + 1;
-int holes[size];
-for (i = 0; i < size; i++) {
+k = ma - mi + 1;
+int holes[k];
+for (i = 0; i < k; i++) {
 holes[i] = 0;}
-for (i = 0; i < size; i++, current++) {
+for (i = 0; i < k; i++, current++) {
 holes[*current-mi] += 1;}
-for (count = 0, current = &a[0]; count < size; count++) {
+for (count = 0, current = &a[0]; count < k; count++) {
 while (holes[count]--> 0) {
 *current++ = count + mi;}}}
 
