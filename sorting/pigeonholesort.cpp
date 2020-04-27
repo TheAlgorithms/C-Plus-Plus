@@ -1,7 +1,7 @@
 void pigeonhole_sort(int, int, int *);
 int main() {
 int i, min, max;
-int a[]={7,4,2,6,3,1,5};
+int a[]={7, 4, 2, 6, 3, 1, 5};
 min = a[0];
 max = a[0];
 for (i = 1; i < MAX; i++) {
@@ -11,7 +11,7 @@ if (a[i] > max) {
 max = a[i];}}
 pigeonhole_sort(min, max, a);
 for (i = 0; i < MAX; i++) {
-cout<< a[i]<<"\t";}
+cout<< a[i]<< "\t";}
 void pigeonhole_sort(int mi, int ma, int * a) {
 int size, count = 0, i;
 int *current;
