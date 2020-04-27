@@ -1,0 +1,24 @@
+name: sorting_non_recursive_merge_sort
+on:
+  pull_request:
+  push:
+  #  branches: [master]
+jobs:
+  sorting_non_recursive_merge_sort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: mattnotmitt/doxygen-action@master
+        with:
+          working-directory: 'sorting/'
+          doxyfile-path: 'doxy.txt'
+      #- uses: peaceiris/actions-gh-pages@v3
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: ./sorting
+      #    external_repository: TheAlgorithms/C-Plus-Plus
+      #    publish_branch: master
+      #    enable_jekyll: true
+      - run: |
+          cd sorting
+          make test
