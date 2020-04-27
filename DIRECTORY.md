@@ -106,6 +106,7 @@
   * [Prime Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_numbers.cpp)
   * [Primes Up To 10^8](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/primes_up_to_10^8.cpp)
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
+  * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
 
 ## Operations On Datastructures
   * [Array Left Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Array%20Left%20Rotation.cpp)
