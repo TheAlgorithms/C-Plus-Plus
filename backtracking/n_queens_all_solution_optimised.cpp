@@ -1,7 +1,7 @@
 #include <iostream>
 #define n 4
-#define inc_loop(var,start,stop,step) for(int var=start;var<=stop;var+=step)
-#define dec_loop(var,start,stop,step) for(int var=start;var>=stop;var-=step)
+#define inc_loop(var, start, stop, step) for (int var=start; var <= stop; var+=step)
+#define dec_loop(var, start, stop, step) for (int var=start; var >= stop; var-=step)
 
 void PrintSol(int Board[n][n]) 
 {
