@@ -80,4 +80,4 @@ Bubble Sort (Avarage Case) Performance. Bubble Sort is not an optimal algorithm.
 in average, O (n²) performance is taken.
 Bubble Sort Best Case Performance. O (n).
 However, you can't get the best status in the code we shared above. This happens on the optimized bubble sort algorithm. It's right down there.
-* /
+*/
