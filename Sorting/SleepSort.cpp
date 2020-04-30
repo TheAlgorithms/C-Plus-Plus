@@ -27,12 +27,10 @@ int main() {
     // the largest number in the list.
     // this ensures all the threads are over before main finishes execution.
     std::this_thread::sleep_for(std::chrono::seconds(max));
-
-
     return(0);
 }
 
-void sleep( int i) {
+void sleep(int i) {
     // make the thread to sleep for I seconds.
     std::this_thread::sleep_for(std::chrono::seconds(i));
     std::cout << i << " ";
