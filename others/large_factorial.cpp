@@ -92,6 +92,70 @@ private:
     vector<unsigned char> _digits; /**< where individual digits are stored */
 };
 
+bool test1()
+{
+    cout << "---- Check 1\t";
+    unsigned int i, number = 10;
+    large_number result;
+    for (i = 2; i <= number; i++)
+        /* Multiply every number from 2 thru N */
+        result.multiply(i);
+
+    const char *known_reslt = "3628800";
+
+    /* check 1 */
+    if (strlen(known_reslt) != result.num_digits())
+    {
+        cerr << "Result lengths dont match! " << strlen(known_reslt) << " != " << result.num_digits() << endl;
+        return false;
+    }
+
+    size_t N = result.num_digits();
+    for (i = 0; i < N; i++)
+    {
+        if (known_reslt[i] != (result[N - i - 1] + '0'))
+        {
+            cerr << i << "^th digit mismatch! " << known_reslt[i] << " != " << result[N - i - 1] << endl;
+            return false;
+        }
+    }
+
+    cout << "Passed!" << endl;
+    return true;
+}
+
+bool test2()
+{
+    cout << "---- Check 2\t";
+    unsigned int i, number = 100;
+    large_number result;
+    for (i = 2; i <= number; i++)
+        /* Multiply every number from 2 thru N */
+        result.multiply(i);
+
+    const char *known_reslt = "93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000";
+
+    /* check 1 */
+    if (strlen(known_reslt) != result.num_digits())
+    {
+        cerr << "Result lengths dont match! " << strlen(known_reslt) << " != " << result.num_digits() << endl;
+        return false;
+    }
+
+    size_t N = result.num_digits();
+    for (i = 0; i < N; i++)
+    {
+        if (known_reslt[i] != (result[N - i - 1] + '0'))
+        {
+            cerr << i << "^th digit mismatch! " << known_reslt[i] << " != " << result[N - i - 1] << endl;
+            return false;
+        }
+    }
+
+    cout << "Passed!" << endl;
+    return true;
+}
+
 /**
  * Main program
  **/
@@ -123,6 +187,9 @@ int main(int argc, char *argv[])
          << "Number of digits: " << result.num_digits() << endl
          << "Time taken: " << time_taken.count() << " s"
          << endl;
+
+    test1();
+    test2();
 
     return 0;
 }
