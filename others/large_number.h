@@ -240,6 +240,14 @@ public:
     }
 
     /**
+     * assignment operator
+     **/
+    void operator=(const large_number &b)
+    {
+        _digits = b._digits;
+    }
+
+    /**
      * operator overload to increment
      **/
     template <class T>
