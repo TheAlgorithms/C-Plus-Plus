@@ -48,7 +48,11 @@ public:
     large_number(const char *number_str) /**< initializer from a string */
     {
         for (size_t i = strlen(number_str); i > 0; i--)
-            _digits.push_back(number_str[i - 1] - '0');
+        {
+            unsigned char a = number_str[i - 1] - '0';
+            if (a >= 0 && a <= 9)
+                _digits.push_back(a);
+        }
     }
 
     /**
