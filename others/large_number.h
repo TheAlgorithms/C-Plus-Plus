@@ -8,6 +8,7 @@
 #include <type_traits>
 #include <iostream>
 #include <cassert>
+#include <cstring>
 #include <vector>
 
 /**
@@ -19,12 +20,12 @@
 class large_number
 {
 public:
-    large_number() /**< initializer */
+    large_number() /**< initializer with value = 1 */
     {
         _digits.push_back(1);
     }
 
-    large_number(unsigned long n) /**< initializer */
+    large_number(unsigned long n) /**< initializer from an integer */
     {
         unsigned long carry = n;
         do
@@ -34,14 +35,20 @@ public:
         } while (carry != 0);
     }
 
-    large_number(const large_number &a) /**< initializer */
+    large_number(const large_number &a) /**< initializer from another large_number */
     {
         _digits = a._digits;
     }
 
-    large_number(const std::vector<unsigned char> &vec) /**< initializer */
+    large_number(const std::vector<unsigned char> &vec) /**< initializer from a vector */
     {
         _digits = vec;
+    }
+
+    large_number(const char *number_str) /**< initializer from a string */
+    {
+        for (size_t i = strlen(number_str); i > 0; i--)
+            _digits.push_back(number_str[i - 1] - '0');
     }
 
     /**
@@ -51,41 +58,54 @@ public:
     {
         std::cout << "------ Checking `large_number` class implementations\t" << std::endl;
         large_number a(40);
+        // 1. test multiplication
         a *= 10;
         if (a != large_number(400))
         {
-            std::cerr << "\tFailed 1/5 (" << a << "!=400)" << std::endl;
+            std::cerr << "\tFailed 1/6 (" << a << "!=400)" << std::endl;
             return false;
         }
-        std::cout << "\tPassed 1/5...";
+        std::cout << "\tPassed 1/6...";
+        // 2. test compound addition with integer
         a += 120;
         if (a != large_number(520))
         {
-            std::cerr << "\tFailed 2/5 (" << a << "!=520)" << std::endl;
+            std::cerr << "\tFailed 2/6 (" << a << "!=520)" << std::endl;
             return false;
         }
-        std::cout << "\tPassed 2/5...";
+        std::cout << "\tPassed 2/6...";
+        // 3. test compound multiplication again
         a *= 10;
         if (a != large_number(5200))
         {
-            std::cerr << "\tFailed 3/5 (" << a << "!=5200)" << std::endl;
+            std::cerr << "\tFailed 3/6 (" << a << "!=5200)" << std::endl;
             return false;
         }
-        std::cout << "\tPassed 3/5...";
+        std::cout << "\tPassed 3/6...";
+        // 4. test increment (prefix)
         ++a;
         if (a != large_number(5201))
         {
-            std::cerr << "\tFailed 4/5 (" << a << "!=5201)" << std::endl;
+            std::cerr << "\tFailed 4/6 (" << a << "!=5201)" << std::endl;
             return false;
         }
-        std::cout << "\tPassed 4/5...";
+        std::cout << "\tPassed 4/6...";
+        // 5. test increment (postfix)
         a++;
         if (a != large_number(5202))
         {
-            std::cerr << "\tFailed 5/5 (" << a << "!=5202)" << std::endl;
+            std::cerr << "\tFailed 5/6 (" << a << "!=5202)" << std::endl;
             return false;
         }
-        std::cout << "\tPassed 5/5..." << std::endl;
+        std::cout << "\tPassed 5/6...";
+        // 6. test addition with another large number
+        a = a + large_number("7000000000000000000000000000000");
+        if (a != large_number("7000000000000000000000000005202"))
+        {
+            std::cerr << "\tFailed 6/6 (" << a << "!=7000000000000000000000000005202)" << std::endl;
+            return false;
+        }
+        std::cout << "\tPassed 6/6..." << std::endl;
         return true;
     }
 
@@ -132,14 +152,14 @@ public:
     friend std::ostream &operator<<(std::ostream &out, const large_number &a)
     {
         for (size_t i = a.num_digits(); i > 0; i--)
-            out << a[i - 1] + '0';
+            out << static_cast<int>(a[i - 1]);
         return out;
     }
 
     /**
      * operator overload to compare two numbers
      **/
-    friend bool operator==(const large_number &a, const large_number b)
+    friend bool operator==(const large_number &a, const large_number &b)
     {
         size_t N = a.num_digits();
         if (N != b.num_digits())
@@ -153,7 +173,7 @@ public:
     /**
      * operator overload to compare two numbers
      **/
-    friend bool operator!=(const large_number &a, const large_number b)
+    friend bool operator!=(const large_number &a, const large_number &b)
     {
         return !(a == b);
     }
@@ -163,14 +183,14 @@ public:
      **/
     large_number &operator++()
     {
-        this->add((unsigned int)1);
+        (*this) += 1;
         return *this;
     }
 
     /**
      * operator overload to increment (postfix)
      **/
-    large_number &operator++(int)
+    large_number operator++(int)
     {
         large_number tmp(_digits);
         ++(*this);
@@ -181,59 +201,43 @@ public:
      * operator overload to add
      **/
     template <class T>
-    large_number &operator+=(T &n)
+    large_number &operator+=(T n)
     {
-        if (std::is_same<T, large_number>::value) // if adding with another large_number
+        if (typeid(T) == typeid(large_number)) // if adding with another large_number
         {
-            large_number *b = &n;
+            large_number *b = (large_number *)&n;
             const size_t max_L = std::max(this->num_digits(), b->num_digits());
-            unsigned int carry = 0, temp;
-            for (size_t i = 0; i < max_L; i++)
+            unsigned int carry = 0;
+            size_t i;
+            for (i = 0; i < max_L || carry != 0; i++)
             {
-                temp += carry;
                 if (i < b->num_digits())
-                    temp += (*b)[i];
+                    carry += (*b)[i];
                 if (i < this->num_digits())
-                    temp += (*this)[i];
-                if (temp < 10)
-                    carry = 0;
-                else
-                {
-                    carry = temp / 10;
-                    temp = temp % 10;
-                }
-                if (i < this->num_digits())
-                    (*this)[i] = temp;
-                else
-                    this->add_digit(temp);
-            }
-            while (carry != 0)
-            {
+                    carry += (*this)[i];
                 if (i < this->num_digits())
                     (*this)[i] = carry % 10;
                 else
                     this->add_digit(carry % 10);
                 carry /= 10;
             }
-
-            return *this;
         }
-
-        static_assert(std::is_integral<T>::value, "Must be integer addition unsigned integer types.");
-        // typedef typename std::make_unsigned<T>::type T2;
-        this->add(b);
+        else if (std::is_integral<T>::value)
+            return (*this) += large_number(n);
+        else
+            std::cerr << "Must be integer addition unsigned integer types." << std::endl;
         return *this;
     }
 
-    // /**
-    //  * operator overload to increment
-    //  **/
-    // friend large_number &operator+(large_number a, const large_number b)
-    // {
-    //     const size_t max_L = std::max(a.num_digits(), b.num_digits());
-
-    //     return a;
-    // }
+    /**
+     * operator overload to perform addition
+     **/
+    template <class T>
+    friend large_number &operator+(large_number &a, const T &b)
+    {
+        a += b;
+        return a;
+    }
 
     /**
      * operator overload to increment
@@ -285,35 +289,6 @@ private:
         {
             this->add_digit(carry % 10);
             carry /= 10;
-        }
-    };
-
-    /**
-     * add large number with another integer and
-     * store the result in the same large number
-     **/
-    template <class T>
-    void add(const T n)
-    {
-        static_assert(std::is_integral<T>::value, "Can only have integer types.");
-        // static_assert(!(std::is_signed<T>::value), "Implemented only for unsigned integer types.");
-
-        size_t i = 0;
-        long long carry = n;
-
-        while (carry != 0)
-        {
-            if (i < this->num_digits())
-            {
-                carry += (*this)[i];
-                (*this)[i] = carry % 10;
-                i++;
-            }
-            else
-                this->add_digit(carry % 10);
-            carry /= 10;
-            if (carry == 0)
-                return;
         }
     };
 
