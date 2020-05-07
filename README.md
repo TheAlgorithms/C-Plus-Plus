@@ -1,31 +1,10 @@
-# C++ 
+# The Algorithms - C++ 
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md)&nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C-Plus-Plus?color=red&style=flat-square)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TheAlgorithms/C-Plus-Plus?color=green&style=flat-square)
 
-This repository contains some useful algorithms and data structures. 
+### All algorithms implemented in C++ (for education)
+The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
 
-### Contribute
-
-How you can contribute? See this small guide.
-
-* Use the directory structure of the repository.
-* Please describe your pull requests. 
-* Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compiler process.
-* Put comments in your code.
-* Avoid **struct**. Instead use the **class** keyword.
-* Try to use typedef.
-* Try to use #define.
-* Add some test cases in the main-function.
-* Can suggest any change in present algorithms(if needed).
-
-***PR***
-#How to do a pull request in easy way
-*First step fork into your repositories (copy that in your repositories)
-  1) At top right side you will find fork key click on it .
-  
-*Then go to your repository and select that you forked.
-*Choose the folder in which you want to add a data.
-*Goto upload file , At right side top .
-*Choose file and click on upload button after writing some commits.
-*Go back to your repository and select that repository and click on pull request (left side top)
-*Click on create Pull request.
-***DONE***
-
+### Contribute Guidelines
+Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md) before you contribute.
