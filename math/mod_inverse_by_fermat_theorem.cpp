@@ -1,6 +1,7 @@
-// C++ Program to find the modular inverse using Fermat's Little Theorem.
-// Fermat's Little Theorem state that => ϕ(m) = m-1, where m is prime number.
-/*
+/* 
+ * C++ Program to find the modular inverse using Fermat's Little Theorem.
+ * Fermat's Little Theorem state that => ϕ(m) = m-1, where m is prime number.
+ *
  * (a * x) ≡ 1 mod m.
  * x ≡ (a^(-1)) mod m.
  *
@@ -55,7 +56,3 @@ int main() {
     std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
     std::cout << binExpo(a, m-2) << std::endl;
 }
-
-
-
-
