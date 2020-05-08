@@ -23,16 +23,16 @@
  *
  */
 
- #include<iostream>
- #include<vector>
+#include<iostream>
+#include<vector>
 
- // m is large prime number.
- const long long int m = 1000000007;
+// m is large prime number.
+const int64_t m = 1000000007;
 
 // Recursive function to calculate exponent in O(log(n)) using binary exponent.
-long long int binExpo(long long int a, long long int b) {
+int64_t binExpo(int64_t a, int64_t b) {
     a %= m;
-    long long int res = 1;
+    int64_t res = 1;
     while (b > 0) {
         if (b%2) {
             res = res * a % m;
@@ -46,7 +46,7 @@ long long int binExpo(long long int a, long long int b) {
 
 int main() {
     // Take input of  a. (A number for which we want to find modular inverse with m)
-    long long int a;
+    int64_t a;
     std::cout << "Give input a for computing ((a^(-1))%(m)) : ";
     std::cin >> a;
 
