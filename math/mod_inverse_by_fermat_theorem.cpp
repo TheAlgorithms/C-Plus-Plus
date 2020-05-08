@@ -45,16 +45,13 @@ int64_t binExpo(int64_t a, int64_t b) {
 }
 
 int main() {
-
     int64_t a;
     /*
         Take input of  a.
         (A number for which we want to find modular inverse with m)
     */
-
     std::cout << "Give input a for computing ((a^(-1))%(m)) : ";
     std::cin >> a;
-
     std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
     std::cout << binExpo(a, m-2) << std::endl;
 }
