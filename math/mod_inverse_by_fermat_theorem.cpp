@@ -53,7 +53,7 @@ bool isPrime(int64_t m) {
     if (m <= 1) {
         return false;
     } else {
-        for(int i=2; i*i <= m; i++) {
+        for (int i=2; i*i <= m; i++) {
             if (m%i == 0) {
                 return false;
             }
@@ -65,13 +65,15 @@ bool isPrime(int64_t m) {
 int main() {
     int64_t a, m;
     // Take input of  a and m.
-    std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem" << std::endl;
-    std::cout << "Give input 'a' and 'm' space separated (m must be a prime number) : ";
+    std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem";
+    std:: cout << std::endl << std::endl;
+    std::cout << "Give input 'a' and 'm' space separated : ";
     std::cin >> a >> m;
     if (isPrime(m)) {
         std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
         std::cout << binExpo(a, m-2, m) << std::endl;
     } else {
-        std::cout << "m must be a prime number to apply Fermat's Little Theorem." << std::endl;
+        std::cout << "m must be a prime number to apply Fermat's Little Theorem.";
+        std::cout << std::endl;
     }
 }
