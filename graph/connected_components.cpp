@@ -9,12 +9,11 @@
 #include<cstring>
 #include<vector>
 #define MAX 1001
-using namespace std;
 
 int nodes, edges, u, v;
-vector<int> graph[MAX];
+std::vector<int> graph[MAX];
 bool visited[MAX]; // Checks a node is visited or not.
-vector<int> conctdComp; // Stores the nodes connected together (connected components).
+std::vector<int> conctdComp; // Stores the nodes connected together (connected components).
 
 void dfs(int source) {
     visited[source] = true;
@@ -27,10 +26,10 @@ void dfs(int source) {
 }
 
 void PRINT_COMPONENTS() {
-    cout << "Component: ";
+    std::cout << "Component: ";
     for(int j=0; j<conctdComp.size(); j++) 
-        cout << conctdComp[j] << " ";
-    cout << endl;
+        std::cout << conctdComp[j] << " ";
+    std::cout << "\n";
 }
 
 void find_connected_components() {
@@ -51,14 +50,30 @@ void find_connected_components() {
 }
 
 int main() {
-    cout << "Total number of nodes:\n";
-    cin >> nodes;
-    cout << "Total number of edges:\n";
-    cin >> edges;
+    // Sample input output:
+    // Input:
+    // Total number of nodes:
+    // 4
+    // Total number of edges:
+    // 4
+    // Two nodes which contains an edge between them:
+    // 1 2
+    // 3 4
+    // 1 1
+    // 3 3
+    // Output:    
+    // Component: 1 2 
+    // Component: 3 4
 
-    cout << "Two nodes which contains an edge between them:\n";
+
+    std::cout << "Total number of nodes:\n";
+    std::cin >> nodes;
+    std::cout << "Total number of edges:\n";
+    std::cin >> edges;
+
+    std::cout << "Two nodes which contains an edge between them:\n";
     for(int i=0; i<edges; i++) {
-        cin >> u >> v;
+        std::cin >> u >> v;
         graph[u].push_back(v);
         graph[v].push_back(u); // For undirected graph.
     }
