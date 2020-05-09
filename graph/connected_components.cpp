@@ -40,6 +40,7 @@ void find_connected_components() {
     // Then we will find the first unvisited node of the remaining nodes and run dfs on it. 
     // As a result we will find its connected components.
     // This process continues untill all nodes are visited. 
+
     for(int i=1; i<=nodes; i++) {
         if(!visited[i]) {
             conctdComp.clear(); // Clear previously stored components(nodes).
@@ -85,6 +86,8 @@ int main() {
         Component: 6 7
         Component: 8         
     */
+
+   
     cout << "Total number of nodes:\n";
     cin >> nodes;
     cout << "Total number of edges:\n";
