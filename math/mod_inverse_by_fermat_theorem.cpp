@@ -1,6 +1,6 @@
-/* 
+/*
  * C++ Program to find the modular inverse using Fermat's Little Theorem.
- * Fermat's Little Theorem state that => ϕ(m) = m-1, where m is prime number.
+ * Fermat's Little Theorem state that => ϕ(m) = m-1, where m is a prime number.
  *
  * (a * x) ≡ 1 mod m.
  * x ≡ (a^(-1)) mod m.
@@ -22,16 +22,19 @@
  *
  * We will find the exponent using binary exponentiation. Such that the algorithm works in O(log(m)) time.
  *
+ * Example: -
+ * a = 3 and m = 7
+ * (a^(-1) mod m) is equivalent to (a^(m-2) mod m)
+ * (3^(5) mod 7) = (243 mod 7) = 5
+ * Hence, ( 3^(-1) mod 7 ) = 5
+ * or ( 3 * 5 ) mod 7 = 1 mod 7 (as a*(a^(-1)) = 1)
  */
 
 #include<iostream>
 #include<vector>
 
-// m is large prime number.
-const int64_t m = 1000000007;
-
 // Recursive function to calculate exponent in O(log(n)) using binary exponent.
-int64_t binExpo(int64_t a, int64_t b) {
+int64_t binExpo(int64_t a, int64_t b, int64_t m) {
     a %= m;
     int64_t res = 1;
     while (b > 0) {
@@ -45,14 +48,30 @@ int64_t binExpo(int64_t a, int64_t b) {
     return res;
 }
 
+// Prime check in O(sqrt(m)) time.
+bool isPrime(int64_t m) {
+    if (m <= 1) {
+        return false;
+    } else {
+        for(int i=2; i*i <= m; i++) {
+            if (m%i == 0) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 int main() {
-    int64_t a;
-    /*
-        Take input of  a.
-        (A number for which we want to find modular inverse with m)
-    */
-    std::cout << "Give input a for computing ((a^(-1))%(m)) : ";
-    std::cin >> a;
-    std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
-    std::cout << binExpo(a, m-2) << std::endl;
+    int64_t a, m;
+    // Take input of  a and m.
+    std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem" << std::endl;
+    std::cout << "Give input 'a' and 'm' space separated (m must be a prime number) : ";
+    std::cin >> a >> m;
+    if (isPrime(m)) {
+        std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
+        std::cout << binExpo(a, m-2, m) << std::endl;
+    } else {
+        std::cout << "m must be a prime number to apply Fermat's Little Theorem." << std::endl;
+    }
 }
