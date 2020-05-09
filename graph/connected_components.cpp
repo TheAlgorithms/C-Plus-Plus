@@ -51,43 +51,6 @@ void find_connected_components() {
 }
 
 int main() {
-    /*Sample test cases & outputs
-
-    Sample input 1:
-        Total number of nodes:
-        4
-        Total number of edges:
-        4
-        Two nodes which contains an edge between them:
-        1 2
-        3 4
-        1 1
-        4 4
-    Sample output 1:
-        component: 1 2
-        component: 3 4
-
-
-    Sample input 2:
-        Total number of nodes:
-        8
-        Total number of edges:
-        7
-        Two nodes which contains an edge between them:
-        1 2
-        1 4
-        2 3
-        2 4
-        4 5
-        6 7
-        8 8
-    Sample output 2:
-        Component: 1 2 3 4 5
-        Component: 6 7
-        Component: 8         
-    */
-
-   
     cout << "Total number of nodes:\n";
     cin >> nodes;
     cout << "Total number of edges:\n";
