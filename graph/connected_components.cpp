@@ -12,13 +12,15 @@
 
 int nodes, edges, u, v;
 std::vector<int> graph[MAX];
-bool visited[MAX]; // Checks a node is visited or not.
-std::vector<int> conctdComp; // Stores the nodes connected together (connected components).
+bool visited[MAX];  // Checks a node is visited or not.
+
+// Stores the nodes connected together (connected components).
+std::vector<int> conctdComp;  
 
 void dfs(int source) {
     visited[source] = true;
     conctdComp.push_back(source);
-    for(int i=0; i<graph[source].size(); i++) {
+    for(int i = 0; i < graph[source].size(); i++) {
         int nod = graph[source][i];
         if(!visited[nod])
             dfs(nod);
@@ -27,22 +29,22 @@ void dfs(int source) {
 
 void PRINT_COMPONENTS() {
     std::cout << "Component: ";
-    for(int j=0; j<conctdComp.size(); j++) 
+    for(int j = 0; j < conctdComp.size(); j++) 
         std::cout << conctdComp[j] << " ";
     std::cout << "\n";
 }
 
 void find_connected_components() {
-    memset(visited, false, sizeof visited); // Initially all nodes are unvisited
+    memset(visited, false, sizeof visited);  // Initially all nodes are unvisited
 
     // Run dfs on one node and find all its connected components(nodes) and they are all now visited.
-    // Then we will find the first unvisited node of the remaining nodes and run dfs on it. 
+    // Then we will find the first unvisited node of the remaining nodes and run dfs on it.
     // As a result we will find its connected components.
-    // This process continues untill all nodes are visited. 
+    // This process continues untill all nodes are visited.
 
-    for(int i=1; i<=nodes; i++) {
+    for(int i = 1; i <= nodes; i++) {
         if(!visited[i]) {
-            conctdComp.clear(); // Clear previously stored components(nodes).
+            conctdComp.clear();  // Clear previously stored components(nodes).
             dfs(i);
             PRINT_COMPONENTS();
         }
@@ -61,8 +63,8 @@ int main() {
     // 3 4
     // 1 1
     // 3 3
-    // Output:    
-    // Component: 1 2 
+    // Output:   
+    // Component: 1 2
     // Component: 3 4
 
 
@@ -75,7 +77,7 @@ int main() {
     for(int i=0; i<edges; i++) {
         std::cin >> u >> v;
         graph[u].push_back(v);
-        graph[v].push_back(u); // For undirected graph.
+        graph[v].push_back(u);  // For undirected graph.
     }
 
     find_connected_components();
