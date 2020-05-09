@@ -5,7 +5,9 @@
  >> The algorithm works in O(V+E) time. Where V is the number of vertices(nodes) and E is the number of edges.
 */
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<cstring>
+#include<vector>
 #define MAX 1001
 using namespace std;
 
