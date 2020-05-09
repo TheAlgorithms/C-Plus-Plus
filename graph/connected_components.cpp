@@ -50,25 +50,7 @@ void find_connected_components() {
 }
 
 int main() {
-    cout << "Total number of nodes:\n";
-    cin >> nodes;
-    cout << "Total number of edges:\n";
-    cin >> edges;
-
-    cout << "Two nodes which contains an edge between them:\n";
-    for(int i=0; i<edges; i++) {
-        cin >> u >> v;
-        graph[u].push_back(v);
-        graph[v].push_back(u); // For undirected graph.
-    }
-
-    find_connected_components();
-
-    return 0;
-}
-
-
-/* ///Sample test cases & outputs///
+    /*Sample test cases & outputs
 
     Sample input 1:
         Total number of nodes:
@@ -102,4 +84,22 @@ int main() {
         Component: 1 2 3 4 5
         Component: 6 7
         Component: 8         
-*/
+    */
+    cout << "Total number of nodes:\n";
+    cin >> nodes;
+    cout << "Total number of edges:\n";
+    cin >> edges;
+
+    cout << "Two nodes which contains an edge between them:\n";
+    for(int i=0; i<edges; i++) {
+        cin >> u >> v;
+        graph[u].push_back(v);
+        graph[v].push_back(u); // For undirected graph.
+    }
+
+    find_connected_components();
+
+    return 0;
+}
+
+
