@@ -73,7 +73,7 @@ int main() {
         std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
         std::cout << binExpo(a, m-2, m) << std::endl;
     } else {
-        std::cout << "m must be a prime number to apply Fermat's Little Theorem.";
+        std::cout << "m must be a prime number.";
         std::cout << std::endl;
     }
 }
