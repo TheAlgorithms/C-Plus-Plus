@@ -66,7 +66,7 @@ int main() {
     int64_t a, m;
     // Take input of  a and m.
     std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem";
-    std:: cout << std::endl << std::endl;
+    std::cout << std::endl << std::endl;
     std::cout << "Give input 'a' and 'm' space separated : ";
     std::cin >> a >> m;
     if (isPrime(m)) {
