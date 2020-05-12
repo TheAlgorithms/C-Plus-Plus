@@ -1,280 +1,279 @@
-#include <vector>
+/**
+ * Program that gets the number of data samples and number of features per
+ * sample along with output per sample. It applies OLS regression to compute
+ * the regression output for additional test data samples.
+ **/
 #include <iomanip>
 #include <iostream>
-using namespace std;
+#include <vector>
 
 template <typename T>
-ostream &operator<<(ostream &out, vector<vector<T>> const &v)
-{
-    const int width = 10;
-    const char separator = ' ';
+std::ostream &operator<<(std::ostream &out,
+                         std::vector<std::vector<T>> const &v) {
+  const int width = 10;
+  const char separator = ' ';
 
-    for (size_t row = 0; row < v.size(); row++)
-    {
-        for (size_t col = 0; col < v[row].size(); col++)
-            out
-                << left << setw(width) << setfill(separator) << v[row][col];
-        out << endl;
-    }
+  for (size_t row = 0; row < v.size(); row++) {
+    for (size_t col = 0; col < v[row].size(); col++)
+      out << std::left << std::setw(width) << std::setfill(separator)
+          << v[row][col];
+    out << std::endl;
+  }
 
-    return out;
+  return out;
 }
 
 template <typename T>
-ostream &operator<<(ostream &out, vector<T> const &v)
-{
-    const int width = 15;
-    const char separator = ' ';
+std::ostream &operator<<(std::ostream &out, std::vector<T> const &v) {
+  const int width = 15;
+  const char separator = ' ';
 
-    for (size_t row = 0; row < v.size(); row++)
-        out
-            << left << setw(width) << setfill(separator) << v[row];
+  for (size_t row = 0; row < v.size(); row++)
+    out << std::left << std::setw(width) << std::setfill(separator) << v[row];
 
-    return out;
+  return out;
 }
 
 template <typename T>
-inline bool is_square(vector<vector<T>> const &A)
-{
-    size_t N = A.size(); // Assuming A is square matrix
-    for (size_t i = 0; i < N; i++)
-        if (A[i].size() != N)
-            return false;
-    return true;
+inline bool is_square(std::vector<std::vector<T>> const &A) {
+  // Assuming A is square matrix
+  size_t N = A.size();
+  for (size_t i = 0; i < N; i++)
+    if (A[i].size() != N)
+      return false;
+  return true;
 }
 
 /**
  * matrix multiplication
  **/
 template <typename T>
-vector<vector<T>> operator*(vector<vector<T>> const &A, vector<vector<T>> const &B)
-{
-    size_t N_A = A.size();    // Number of rows in A
-    size_t N_B = B[0].size(); // Number of columns in B
+std::vector<std::vector<T>> operator*(std::vector<std::vector<T>> const &A,
+                                      std::vector<std::vector<T>> const &B) {
+  // Number of rows in A
+  size_t N_A = A.size();
+  // Number of columns in B
+  size_t N_B = B[0].size();
 
-    vector<vector<T>> result(N_A);
+  std::vector<std::vector<T>> result(N_A);
 
-    if (A[0].size() != B.size())
-    {
-        cerr << "Number of columns in A != Number of rows in B (" << A[0].size() << ", " << B.size() << ")" << endl;
-        return result;
-    }
-
-    for (size_t row = 0; row < N_A; row++)
-    {
-        vector<T> v(N_B);
-        for (size_t col = 0; col < N_B; col++)
-        {
-            v[col] = static_cast<T>(0);
-            for (size_t j = 0; j < B.size(); j++)
-                v[col] += A[row][j] * B[j][col];
-        }
-        result[row] = v;
-    }
-
+  if (A[0].size() != B.size()) {
+    std::cerr << "Number of columns in A != Number of rows in B ("
+              << A[0].size() << ", " << B.size() << ")" << std::endl;
     return result;
+  }
+
+  for (size_t row = 0; row < N_A; row++) {
+    std::vector<T> v(N_B);
+    for (size_t col = 0; col < N_B; col++) {
+      v[col] = static_cast<T>(0);
+      for (size_t j = 0; j < B.size(); j++)
+        v[col] += A[row][j] * B[j][col];
+    }
+    result[row] = v;
+  }
+
+  return result;
 }
 
 template <typename T>
-vector<T> operator*(vector<vector<T>> const &A, vector<T> const &B)
-{
-    size_t N_A = A.size(); // Number of rows in A
+std::vector<T> operator*(std::vector<std::vector<T>> const &A,
+                         std::vector<T> const &B) {
+  // Number of rows in A
+  size_t N_A = A.size();
 
-    vector<T> result(N_A);
+  std::vector<T> result(N_A);
 
-    if (A[0].size() != B.size())
-    {
-        cerr << "Number of columns in A != Number of rows in B (" << A[0].size() << ", " << B.size() << ")" << endl;
-        return result;
-    }
-
-    for (size_t row = 0; row < N_A; row++)
-    {
-        result[row] = static_cast<T>(0);
-        for (size_t j = 0; j < B.size(); j++)
-            result[row] += A[row][j] * B[j];
-    }
-
+  if (A[0].size() != B.size()) {
+    std::cerr << "Number of columns in A != Number of rows in B ("
+              << A[0].size() << ", " << B.size() << ")" << std::endl;
     return result;
+  }
+
+  for (size_t row = 0; row < N_A; row++) {
+    result[row] = static_cast<T>(0);
+    for (size_t j = 0; j < B.size(); j++)
+      result[row] += A[row][j] * B[j];
+  }
+
+  return result;
 }
 
 template <typename T>
-vector<float> operator*(float const scalar, vector<T> const &A)
-{
-    size_t N_A = A.size(); // Number of rows in A
+std::vector<float> operator*(float const scalar, std::vector<T> const &A) {
+  // Number of rows in A
+  size_t N_A = A.size();
 
-    vector<float> result(N_A);
+  std::vector<float> result(N_A);
 
-    for (size_t row = 0; row < N_A; row++)
-    {
-        result[row] += A[row] * static_cast<float>(scalar);
-    }
+  for (size_t row = 0; row < N_A; row++) {
+    result[row] += A[row] * static_cast<float>(scalar);
+  }
 
-    return result;
+  return result;
 }
 
 template <typename T>
-vector<float> operator*(vector<T> const &A, float const scalar)
-{
-    size_t N_A = A.size(); // Number of rows in A
+std::vector<float> operator*(std::vector<T> const &A, float const scalar) {
+  // Number of rows in A
+  size_t N_A = A.size();
 
-    vector<float> result(N_A);
+  std::vector<float> result(N_A);
 
-    for (size_t row = 0; row < N_A; row++)
-        result[row] = A[row] * static_cast<float>(scalar);
+  for (size_t row = 0; row < N_A; row++)
+    result[row] = A[row] * static_cast<float>(scalar);
 
-    return result;
+  return result;
 }
 
 template <typename T>
-vector<float> operator/(vector<T> const &A, float const scalar)
-{
-    return (1.f / scalar) * A;
+std::vector<float> operator/(std::vector<T> const &A, float const scalar) {
+  return (1.f / scalar) * A;
 }
 
 template <typename T>
-vector<T> operator-(vector<T> const &A, vector<T> const &B)
-{
-    size_t N = A.size(); // Number of rows in A
+std::vector<T> operator-(std::vector<T> const &A, std::vector<T> const &B) {
+  // Number of rows in A
+  size_t N = A.size();
 
-    vector<T> result(N);
+  std::vector<T> result(N);
 
-    if (B.size() != N)
-    {
-        cerr << "Vector dimensions shouldbe identical!" << endl;
-        return A;
-    }
+  if (B.size() != N) {
+    std::cerr << "Vector dimensions shouldbe identical!" << std::endl;
+    return A;
+  }
 
-    for (size_t row = 0; row < N; row++)
-        result[row] = A[row] - B[row];
+  for (size_t row = 0; row < N; row++)
+    result[row] = A[row] - B[row];
 
-    return result;
+  return result;
 }
 
 template <typename T>
-vector<T> operator+(vector<T> const &A, vector<T> const &B)
-{
-    size_t N = A.size(); // Number of rows in A
+std::vector<T> operator+(std::vector<T> const &A, std::vector<T> const &B) {
+  // Number of rows in A
+  size_t N = A.size();
 
-    vector<T> result(N);
+  std::vector<T> result(N);
 
-    if (B.size() != N)
-    {
-        cerr << "Vector dimensions shouldbe identical!" << endl;
-        return A;
-    }
+  if (B.size() != N) {
+    std::cerr << "Vector dimensions shouldbe identical!" << std::endl;
+    return A;
+  }
 
-    for (size_t row = 0; row < N; row++)
-        result[row] = A[row] + B[row];
+  for (size_t row = 0; row < N; row++)
+    result[row] = A[row] + B[row];
 
-    return result;
+  return result;
 }
 
 /**
  * Get matrix inverse using Row-trasnformations
  **/
 template <typename T>
-vector<vector<float>> get_inverse(vector<vector<T>> const &A)
-{
-    size_t N = A.size(); // Assuming A is square matrix
+std::vector<std::vector<float>>
+get_inverse(std::vector<std::vector<T>> const &A) {
+  // Assuming A is square matrix
+  size_t N = A.size();
 
-    vector<vector<float>> inverse(N);
-    for (size_t row = 0; row < N; row++) // preallocatae a resultant identity matrix
-    {
-        inverse[row] = vector<float>(N);
-        for (size_t col = 0; col < N; col++)
-            inverse[row][col] = (row == col) ? 1.f : 0.f;
-    }
+  std::vector<std::vector<float>> inverse(N);
+  for (size_t row = 0; row < N; row++) {
+    // preallocatae a resultant identity matrix
+    inverse[row] = std::vector<float>(N);
+    for (size_t col = 0; col < N; col++)
+      inverse[row][col] = (row == col) ? 1.f : 0.f;
+  }
 
-    if (!is_square(A))
-    {
-        cerr << "A must be a square matrix!" << endl;
-        return inverse;
-    }
-
-    vector<vector<float>> temp(N); // preallocatae a temporary matrix identical to A
-    for (size_t row = 0; row < N; row++)
-    {
-        vector<float> v(N);
-        for (size_t col = 0; col < N; col++)
-            v[col] = static_cast<float>(A[row][col]);
-        temp[row] = v;
-    }
-
-    // start transformations
-    for (size_t row = 0; row < N; row++)
-    {
-        for (size_t row2 = row; row2 < N && temp[row][row] == 0; row2++) // this to ensure diagonal elements are not 0
-        {
-            temp[row] = temp[row] + temp[row2];
-            inverse[row] = inverse[row] + inverse[row2];
-        }
-
-        for (size_t col2 = row; col2 < N && temp[row][row] == 0; col2++) // this to further ensure diagonal elements are not 0
-        {
-            for (size_t row2 = 0; row2 < N; row2++)
-            {
-                temp[row2][row] = temp[row2][row] + temp[row2][col2];
-                inverse[row2][row] = inverse[row2][row] + inverse[row2][col2];
-            }
-        }
-
-        if (temp[row][row] == 0)
-        {
-            // Probably a low-rank matrix and hence singular
-            cerr << "Low-rank matrix, no inverse!" << endl;
-            return inverse;
-        }
-
-        // set diagonal to 1
-        float divisor = static_cast<float>(temp[row][row]);
-        temp[row] = temp[row] / divisor;
-        inverse[row] = inverse[row] / divisor;
-        // Row transformations
-        for (size_t row2 = 0; row2 < N; row2++)
-        {
-            if (row2 == row)
-                continue;
-            float factor = temp[row2][row];
-            temp[row2] = temp[row2] - factor * temp[row];
-            inverse[row2] = inverse[row2] - factor * inverse[row];
-        }
-    }
-
+  if (!is_square(A)) {
+    std::cerr << "A must be a square matrix!" << std::endl;
     return inverse;
+  }
+
+  // preallocatae a temporary matrix identical to A
+  std::vector<std::vector<float>> temp(N);
+  for (size_t row = 0; row < N; row++) {
+    std::vector<float> v(N);
+    for (size_t col = 0; col < N; col++)
+      v[col] = static_cast<float>(A[row][col]);
+    temp[row] = v;
+  }
+
+  // start transformations
+  for (size_t row = 0; row < N; row++) {
+    for (size_t row2 = row; row2 < N && temp[row][row] == 0; row2++) {
+      // this to ensure diagonal elements are not 0
+      temp[row] = temp[row] + temp[row2];
+      inverse[row] = inverse[row] + inverse[row2];
+    }
+
+    for (size_t col2 = row; col2 < N && temp[row][row] == 0; col2++) {
+      // this to further ensure diagonal elements are not 0
+      for (size_t row2 = 0; row2 < N; row2++) {
+        temp[row2][row] = temp[row2][row] + temp[row2][col2];
+        inverse[row2][row] = inverse[row2][row] + inverse[row2][col2];
+      }
+    }
+
+    if (temp[row][row] == 0) {
+      // Probably a low-rank matrix and hence singular
+      std::cerr << "Low-rank matrix, no inverse!" << std::endl;
+      return inverse;
+    }
+
+    // set diagonal to 1
+    float divisor = static_cast<float>(temp[row][row]);
+    temp[row] = temp[row] / divisor;
+    inverse[row] = inverse[row] / divisor;
+    // Row transformations
+    for (size_t row2 = 0; row2 < N; row2++) {
+      if (row2 == row)
+        continue;
+      float factor = temp[row2][row];
+      temp[row2] = temp[row2] - factor * temp[row];
+      inverse[row2] = inverse[row2] - factor * inverse[row];
+    }
+  }
+
+  return inverse;
 }
 
 /**
  * matrix transpose
  **/
 template <typename T>
-vector<vector<T>> get_transpose(vector<vector<T>> const &A)
-{
-    vector<vector<T>> result(A[0].size());
+std::vector<std::vector<T>>
+get_transpose(std::vector<std::vector<T>> const &A) {
+  std::vector<std::vector<T>> result(A[0].size());
 
-    for (size_t row = 0; row < A[0].size(); row++)
-    {
-        vector<T> v(A.size());
-        for (size_t col = 0; col < A.size(); col++)
-            v[col] = A[col][row];
+  for (size_t row = 0; row < A[0].size(); row++) {
+    std::vector<T> v(A.size());
+    for (size_t col = 0; col < A.size(); col++)
+      v[col] = A[col][row];
 
-        result[row] = v;
-    }
-    return result;
+    result[row] = v;
+  }
+  return result;
 }
 
 template <typename T>
-vector<float> fit_OLS_regressor(vector<vector<T>> const &X, vector<T> const &Y)
-{
-    vector<vector<T>> X2 = X; //NxF
-    for (size_t i = 0; i < X2.size(); i++)
-        X2[i].push_back(1);                       // add Y-intercept -> Nx(F+1)
-    vector<vector<T>> Xt = get_transpose(X2);     // (F+1)xN
-    vector<vector<T>> tmp = get_inverse(Xt * X2); // (F+1)x(F+1)
-    vector<vector<float>> out = tmp * Xt;         // (F+1)xN
-    // cout << endl
-    //      << "Projection matrix: " << X2 * out << endl;
-    return out * Y; // Fx1,1    -> (F+1)^th element is the independent constant
+std::vector<float> fit_OLS_regressor(std::vector<std::vector<T>> const &X,
+                                     std::vector<T> const &Y) {
+  // NxF
+  std::vector<std::vector<T>> X2 = X;
+  for (size_t i = 0; i < X2.size(); i++)
+    // add Y-intercept -> Nx(F+1)
+    X2[i].push_back(1);
+  // (F+1)xN
+  std::vector<std::vector<T>> Xt = get_transpose(X2);
+  // (F+1)x(F+1)
+  std::vector<std::vector<T>> tmp = get_inverse(Xt * X2);
+  // (F+1)xN
+  std::vector<std::vector<float>> out = tmp * Xt;
+  // cout << endl
+  //      << "Projection matrix: " << X2 * out << endl;
+
+  // Fx1,1    -> (F+1)^th element is the independent constant
+  return out * Y;
 }
 
 /**
@@ -282,59 +281,69 @@ vector<float> fit_OLS_regressor(vector<vector<T>> const &X, vector<T> const &Y)
  * regression estimates
  **/
 template <typename T>
-vector<float> predict_OLS_regressor(vector<vector<T>> const &X, vector<float> const &beta)
-{
-    vector<float> result(X.size());
+std::vector<float> predict_OLS_regressor(std::vector<std::vector<T>> const &X,
+                                         std::vector<float> const &beta) {
+  std::vector<float> result(X.size());
 
-    for (size_t rows = 0; rows < X.size(); rows++)
-    {
-        result[rows] = beta[X[0].size()]; // -> start with constant term
-        for (size_t cols = 0; cols < X[0].size(); cols++)
-            result[rows] += beta[cols] * X[rows][cols];
-    }
-    return result; // Nx1
+  for (size_t rows = 0; rows < X.size(); rows++) {
+    // -> start with constant term
+    result[rows] = beta[X[0].size()];
+    for (size_t cols = 0; cols < X[0].size(); cols++)
+      result[rows] += beta[cols] * X[rows][cols];
+  }
+  // Nx1
+  return result;
 }
 
-int main()
-{
-    size_t N, F;
+int main() {
+  size_t N, F;
 
-    cin >> F; // number of features = columns
-    cin >> N; // number of samples = rows
+  std::cout << "Enter number of features: ";
+  // number of features = columns
+  std::cin >> F;
+  std::cout << "Enter number of samples: ";
+  // number of samples = rows
+  std::cin >> N;
 
-    vector<vector<float>> data(N);
-    vector<float> Y(N);
+  std::vector<std::vector<float>> data(N);
+  std::vector<float> Y(N);
 
-    for (size_t rows = 0; rows < N; rows++)
-    {
-        vector<float> v(F);
-        for (size_t cols = 0; cols < F; cols++)
-            cin >> v[cols]; // get the F features
-        data[rows] = v;
-        cin >> Y[rows]; // get the corresponding output
-    }
+  std::cout
+      << "Enter training data. Per sample, provide features ad one output."
+      << std::endl;
 
-    vector<float> beta = fit_OLS_regressor(data, Y);
-    cout << endl
-         << endl
-         << "beta:" << beta << endl;
+  for (size_t rows = 0; rows < N; rows++) {
+    std::vector<float> v(F);
+    std::cout << "Sample# " << rows + 1 << ": ";
+    for (size_t cols = 0; cols < F; cols++)
+      // get the F features
+      std::cin >> v[cols];
+    data[rows] = v;
+    // get the corresponding output
+    std::cin >> Y[rows];
+  }
 
-    size_t T;
-    cin >> T; // number of test sample inputs
-    vector<vector<float>> data2(T);
-    // vector<float> Y2(T);
+  std::vector<float> beta = fit_OLS_regressor(data, Y);
+  std::cout << std::endl << std::endl << "beta:" << beta << std::endl;
 
-    for (size_t rows = 0; rows < T; rows++)
-    {
-        vector<float> v(F);
-        for (size_t cols = 0; cols < F; cols++)
-            cin >> v[cols];
-        data2[rows] = v;
-    }
+  size_t T;
+  std::cout << "Enter number of test samples: ";
+  // number of test sample inputs
+  std::cin >> T;
+  std::vector<std::vector<float>> data2(T);
+  // vector<float> Y2(T);
 
-    vector<float> out = predict_OLS_regressor(data2, beta);
-    for (size_t rows = 0; rows < T; rows++)
-        cout << out[rows] << endl;
+  for (size_t rows = 0; rows < T; rows++) {
+    std::cout << "Sample# " << rows + 1 << ": ";
+    std::vector<float> v(F);
+    for (size_t cols = 0; cols < F; cols++)
+      std::cin >> v[cols];
+    data2[rows] = v;
+  }
 
-    return 0;
+  std::vector<float> out = predict_OLS_regressor(data2, beta);
+  for (size_t rows = 0; rows < T; rows++)
+    std::cout << out[rows] << std::endl;
+
+  return 0;
 }
