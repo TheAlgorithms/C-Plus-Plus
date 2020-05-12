@@ -10,8 +10,7 @@ typedef pair<int, int> PII;
 bool marked[MAX];
 vector <PII> adj[MAX];
 
-int prim(int x)
-{
+int prim(int x) {
     // priority queue to maintain edges with respect to weights
     priority_queue<PII, vector<PII>, greater<PII> > Q;
     int y;
@@ -19,23 +18,20 @@ int prim(int x)
     PII p;
 
     Q.push(make_pair(0, x));
-    while(!Q.empty())
-    {
+    while (!Q.empty()) {
         // Select the edge with minimum weight
         p = Q.top();
         Q.pop();
         x = p.second;
         // Checking for cycle
-        if(marked[x] == true)
+        if (marked[x] == true)
             continue;
-        
         minimumCost += p.first;
         marked[x] = true;
-
-        for(int i = 0;i < adj[x].size();++i)
-        {
+        
+        for (int i = 0;i < adj[x].size();++i) {
             y = adj[x][i].second;
-            if(marked[y] == false)
+            if (marked[y] == false)
                 Q.push(adj[x][i]);
         }
     }
@@ -47,11 +43,10 @@ int main()
     int nodes, edges, x, y;
     int weight, minimumCost;
 
-    cin >> nodes >> edges; //number of nodes & edges in graph
+    cin >> nodes >> edges;  // number of nodes & edges in graph
 
-    //Edges with their nodes & weight
-    for(int i = 0;i < edges;++i)
-    {
+    // Edges with their nodes & weight
+    for (int i = 0;i < edges;++i) {
         cin >> x >> y >> weight;
         adj[x].push_back(make_pair(weight, y));
         adj[y].push_back(make_pair(weight, x));
