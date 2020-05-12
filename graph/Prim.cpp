@@ -27,7 +27,6 @@ int prim(int x) {
             continue;
         minimumCost += p.first;
         marked[x] = true;
-        
         for (int i = 0; i < adj[x].size(); ++i) {
             y = adj[x][i].second;
             if (marked[y] == false)
@@ -38,16 +37,11 @@ int prim(int x) {
 }
 
 int main() {
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt","r", stdin);
-    freopen("output.txt","w", stdout);
-    #endif
-
     int nodes, edges, x, y;
     int weight, minimumCost;
 
     std:: cin >> nodes >> edges;  // number of nodes & edges in graph
-    if (nodes==0 || edges==0)
+    if (nodes == 0 || edges == 0)
         return 0;
 
     // Edges with their nodes & weight
@@ -60,6 +54,5 @@ int main() {
     // Selecting 1 as the starting node
     minimumCost = prim(1);
     std:: cout << minimumCost << std:: endl;
-    
     return 0;
 }
