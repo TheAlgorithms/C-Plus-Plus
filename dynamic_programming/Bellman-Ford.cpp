@@ -22,7 +22,7 @@ public:
 	{
 		this->vertexNum = V;
 		this->edgeNum = E;
-		this->edges = (Edge *)malloc(E * sizeof(Edge));
+		this->edges = (Edge *)malloc(E * sizeof(Edge)); //allocate a block of uninitialised memory
 	}
 
 	//Adds the given edge to the graph
