@@ -4,20 +4,20 @@
 using std::vector;
 
 class graph {
-private:
-  vector<vector<int>> adj;
-  int connected_components;
-  void depth_first_search();
-  void explore(int, vector<bool>&);
-public:
-  explicit graph(int n): adj(n, vector<int>()) {
-    connected_components = 0;
-  }
-  void addEdge(int, int);
-  int getConnectedComponents() {
-    depth_first_search();
-    return connected_components;
-  }
+ private:
+    vector<vector<int>> adj;
+    int connected_components;
+    void depth_first_search();
+    void explore(int, vector<bool>&);
+ public:
+    explicit graph(int n): adj(n, vector<int>()) {
+      connected_components = 0;
+    }
+    void addEdge(int, int);
+    int getConnectedComponents() {
+      depth_first_search();
+      return connected_components;
+    }
 };
 
 void graph::addEdge(int u, int v) {
