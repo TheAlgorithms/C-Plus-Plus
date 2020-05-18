@@ -1,61 +1,55 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
+using std::vector;
 
-class graph
-{
+class graph {
   private:
-    vector<vector<int>> adj;
-    int cc;
-    void dfs();
-    void explore(int, vector<bool>&);
+   vector<vector<int>> adj;
+   int connected_components;
+   void depth_first_search();
+   void explore(int, vector<bool>&);
   public:
-    graph(int n): adj(n,vector<int>()), cc(0) {}
-    void addEdge(int,int);
-    int getConnectedComponents()
-    {
-      dfs();
-      return cc;
+   graph(int n): adj(n, vector<int>()) {
+    connected_components = 0;
+   }
+   void addEdge(int, int);
+   int getConnectedComponents() {
+      depth_first_search();
+      return connected_components;
     }
 };
 
-void graph::addEdge(int u, int v)
-{
+void graph::addEdge(int u, int v) {
   adj[u-1].push_back(v-1);
   adj[v-1].push_back(u-1);
 }
 
-void graph::dfs()
-{
+void graph::depth_first_search() {
   int n = adj.size();
-  vector<bool> visited(n,false);
+  vector<bool> visited(n, false);
 
-  for(int i = 0;i<n;i++)
-  {
-    if (!visited[i])
-    {
-      explore(i,visited);
-      cc++;
+  for (int i = 0 ; i < n ; i++) {
+    if (!visited[i]) {
+      explore(i, visited);
+      connected_components++;
     }
   }
 }
 
-void graph::explore(int u, vector<bool> &visited)
-{
+void graph::explore(int u, vector<bool> &visited) {
   visited[u] = true;
-  for(auto v : adj[u])
-  {
-    if(!visited[v])
-      explore(v,visited);
+  for (auto v : adj[u]) {
+    if (!visited[v]) {
+      explore(v, visited);
+    }
   }
 }
 
-int main()
-{
+int main() {
   graph g(4);
   g.addEdge(1,2);
   g.addEdge(3,2);
-  cout<<g.getConnectedComponents();
+  std::cout << g.getConnectedComponents();
   return 0;
 }
