@@ -1,4 +1,3 @@
-  
 // C++ program to find minimum number of swaps required to sort an array
 #include <algorithm>
 #include <iostream>
