@@ -115,6 +115,7 @@
   * [Array Right Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Array%20Right%20Rotation.cpp)
   * [Circular Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Circular%20Linked%20List.cpp)
   * [Circular Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Circular%20Queue%20Using%20Array.cpp)
+  * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Reverse%20a%20Linked%20List%20using%20Recusion.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionSortLinkedList.cpp)
