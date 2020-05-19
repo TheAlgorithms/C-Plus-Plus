@@ -1,8 +1,11 @@
 // C++ program to find minimum number of swaps 
 // required to sort an array 
-#include<bits/stdc++.h> 
+#include<iostream>
+#include<vector>
+#include<utility>
+#include<algorithm>
 
-using namespace std; 
+
 
 // Function returns the minimum number of swaps 
 // required to sort the array 
@@ -11,7 +14,7 @@ int minSwaps(int arr[], int n)
 	// Create an array of pairs where first 
 	// element is array element and second element 
 	// is position of first element 
-	pair<int, int> arrPos[n]; 
+	std::pair<int, int> arrPos[n]; 
 	for (int i = 0; i < n; i++) 
 	{ 
 		arrPos[i].first = arr[i]; 
@@ -21,11 +24,11 @@ int minSwaps(int arr[], int n)
 	// Sort the array by array element values to 
 	// get right position of every element as second 
 	// element of pair. 
-	sort(arrPos, arrPos + n); 
+	std::sort(arrPos, arrPos + n); 
 
 	// To keep track of visited elements. Initialize 
 	// all elements as not visited or false. 
-	vector<bool> vis(n, false); 
+	std::vector<bool> vis(n, false); 
 
 	// Initialize result 
 	int ans = 0; 
@@ -62,11 +65,11 @@ int minSwaps(int arr[], int n)
 	return ans; 
 } 
 
-// Driver program to test the above function 
+//program to test  
 int main() 
 { 
-	int arr[] = {1, 5, 4, 3, 2}; 
+	int arr[] = {6, 7 ,8 ,1, 2, 3, 9, 12}; 
 	int n = (sizeof(arr) / sizeof(int)); 
-	cout << minSwaps(arr, n); 
+	std::cout << minSwaps(arr, n); 
 	return 0; 
 } 
