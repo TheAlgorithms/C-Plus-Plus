@@ -1,5 +1,4 @@
-// C++ program to find minimum number of swaps 
-// required to sort an array 
+// C++ program to find minimum number of swaps required to sort an array 
 #include<iostream>
 #include<vector>
 #include<utility>
