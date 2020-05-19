@@ -14,7 +14,7 @@ int fibonacci(uint n) {
      This will set the first 2 values of the sequence*/
     if (n <= 1) {
         return n;
-    }else {
+    } else {
         /*Add the last 2 values of the sequence to get next*/
         retval = fibonacci(n-1) + fibonacci(n-2);
     }
@@ -26,5 +26,4 @@ int main() {
     std::cin >> n;
     assert(n >= 0);
     std::cout << "F(" << n << ")= " << fibonacci(n) << std::endl;
-
 }
