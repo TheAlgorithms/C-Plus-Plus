@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 // a vector to store graph.
 std::vector<int> arr[100001];
 // an array that maintains that a node is vidited or not.
@@ -35,10 +34,12 @@ int main() {
     }
     maxd = -1;
     dfs(1, 0);
+
     for (int i = 1; i < n; i++) {
         vis[i] = 0;
     }
     maxd = -1;
+
     dfs(maxNode, 0);
     std::cout << maxd << "\n";
     return 0;
