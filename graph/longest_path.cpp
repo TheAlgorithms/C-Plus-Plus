@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 // a vector to store graph.
+
 std::vector<int> arr[100001];
 // an array that maintains that a node is vidited or not.
 int vis[100001];
