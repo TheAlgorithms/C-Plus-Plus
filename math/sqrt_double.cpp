@@ -6,6 +6,9 @@ number in O(logn) time,
 with precision fixed */
 
 double Sqrt(double x) {
+    if ( x > 0 && x < 1 ) {
+        return 1/Sqrt(1/x);
+    }
     double l = 0, r = x;
     /* Epsilon is the precision. 
     A great precision is 
