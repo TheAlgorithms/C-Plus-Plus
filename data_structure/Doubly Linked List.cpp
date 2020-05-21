@@ -38,13 +38,37 @@ void insert(int x)
 void remove(int x)
 {
 	node *t = start;
-	while (t->val != x)
+	while (t != NULL && t->val != x)
 	{
-		t = t->next;
+		t = t-> next;
 	}
-	t->prev->next = t->next;
-	t->next->prev = t->prev;
-	delete t;
+	if (t == NULL)
+	{
+		return;
+	}
+	// if first element is removed
+	if (t->prev == NULL)
+	{
+		if (t->next == NULL)
+		{
+			start = NULL;
+		}
+		else
+		{
+			start = t->next;
+			start->prev = NULL;
+		}
+	}
+	else if (t->next == NULL)
+	{
+		t->prev->next = NULL;
+	}
+	else
+	{
+		t->prev->next = t->next;
+		t->next->prev = t->prev;
+	}
+	delete t;	
 }
 
 void search(int x)
