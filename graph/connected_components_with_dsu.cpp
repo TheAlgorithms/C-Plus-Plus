@@ -38,7 +38,7 @@ int no_of_connected_components() {  // To find total no of connected components
 
 // All critical/corner cases have been taken care of.
 // Input your required values: (not hardcoded)
-int32_t main() {
+int main() {
     std::cin >> N;
     make_set();
     int edges;
