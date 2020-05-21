@@ -73,6 +73,7 @@
 ## Graph
   * [Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/BFS.cpp)
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
+  * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
   * [Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/DFS.cpp)
   * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/DFS_with_stack.cc)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Dijkstra.cpp)
