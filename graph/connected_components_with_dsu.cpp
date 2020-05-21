@@ -3,8 +3,8 @@
 #include <set>
 
 int N;  // denotes number of nodes;
-int parent[1000001];
-int siz[1000001];
+std::vector<int> parent;
+std::vector<int> siz;
 void make_set() {  // function the initialize every node as it's own parent
     for (int i = 1; i <= N; i++) {
         parent[i] = i;
@@ -40,6 +40,8 @@ int no_of_connected_components() {  // To find total no of connected components
 // Input your required values: (not hardcoded)
 int main() {
     std::cin >> N;
+    parent.resize(N + 1);
+    siz.resize(N + 1);
     make_set();
     int edges;
     std::cin >> edges;  // no of edges in the graph
