@@ -26,7 +26,7 @@
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.h)
     * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/main_cll.cpp)
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/disjoint_set.cpp)
-  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Doubly%20Linked%20List.cpp)
+  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/doubly_linked_list.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/List%20Array.cpp)
@@ -198,3 +198,4 @@
 ## Strings
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
+  * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
