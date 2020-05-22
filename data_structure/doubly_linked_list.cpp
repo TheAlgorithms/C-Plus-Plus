@@ -9,15 +9,15 @@ struct node {
 }*start;
 
 class double_linked_list {
-  public:
-    double_linked_list() {
-      start = NULL;
-    }
-    void insert(int x);
-    void remove(int x);
-    void search(int x);
-    void show();
-    void reverseShow();
+   public:
+     double_linked_list() {
+       start = NULL;
+     }
+     void insert(int x);
+     void remove(int x);
+     void search(int x);
+     void show();
+     void reverseShow();
 };
 
 void double_linked_list::insert(int x) {
