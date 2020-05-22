@@ -1,8 +1,9 @@
+#include <stdio.h>
+#include<string.h>
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <stdio.h>
-#include<string.h>
+
 
 using namespace std;
 
