@@ -11,7 +11,7 @@ struct node {
 class double_linked_list {
  public:
   double_linked_list() {
-   start = NULL;
+    start = NULL;
   }
   void insert(int x);
   void remove(int x);
