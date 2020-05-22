@@ -4,10 +4,10 @@
  * Copyright : 2020 , Amit Kumar 
  * version   : 1.0
  */
-#include<iostream>
-#include<string>
 #include<cassert>
 #include<cmath>
+#include<iostream>
+#include<string>
 
 using std::string;
 using std::pow;
@@ -50,9 +50,7 @@ bool check_if_equal(string str1 , string str2 ,
  *  @description : search pattern in the given text 
  *  @param : string str
  *  @param : string pat
- *  @return -1 , if pattern not found 
- *  @return index , index of first occurrence of pattern 
- *
+ *  @return index of first occurrence of pattern or -1 if pattern not found
  */
 
 int rabin_karp(const string &str , const string& pat) {
@@ -72,13 +70,9 @@ int rabin_karp(const string &str , const string& pat) {
 }
 
 int main(void) {
-    // test 1
     assert(rabin_karp("helloWorld", "world")    == -1);
-    // test 2
     assert(rabin_karp("helloWorld", "World")    ==  5);
-    // test 3
     assert(rabin_karp("this_is_c++" , "c++")   ==  8);
-    // test 4
     assert(rabin_karp("happy_coding", "happy") ==  0);
     return 0;
 }
