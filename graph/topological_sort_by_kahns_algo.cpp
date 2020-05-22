@@ -1,8 +1,8 @@
+#include <iostream>
+#include <queue>
 #include <stdio.h>
 #include <string.h>
-#include <iostream>
 #include <vector>
-#include <queue>
 
 int *topoSortKahn(int N, std::vector<int> adj[]);
 
@@ -10,7 +10,7 @@ int main() {
     int nodes, edges;
     std::cin >> edges >> nodes;
     if (edges == 0 || nodes == 0)
-    return 0;
+        return 0;
     int u, v;
 
     std::vector<int>graph[nodes];
@@ -27,7 +27,7 @@ int main() {
     int *topo = topoSortKahn(nodes, graph);
     // topologically sorted nodes
     for (int i = 0; i < nodes; i++) {
-    std::cout << topo[i] << " ";
+        std::cout << topo[i] << " ";
     }
 }
 
@@ -56,7 +56,7 @@ int* topoSortKahn(int V, std::vector<int> adj[]) {
         count++;
         for (int i = 0; i < adj[cur].size(); i++) {
             if (!vis[adj[cur][i]]) {
-            deg[adj[cur][i]]--;
+                deg[adj[cur][i]]--;
                 if (deg[adj[cur][i]] == 0) {
                     q.push(adj[cur][i]);
                     vis[adj[cur][i]] = true;
