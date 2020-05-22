@@ -1,8 +1,8 @@
-#include <iostream>
-#include <queue>
 #include <stdio.h>
 #include <string.h>
+#include <iostream>
 #include <vector>
+#include <queue>
 
 int *topoSortKahn(int N, std::vector<int> adj[]);
 
