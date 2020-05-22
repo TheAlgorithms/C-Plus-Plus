@@ -9,6 +9,9 @@
 #include<cassert>
 #include<cmath>
 
+using std::string;
+using std::pow;
+
 #define PRIME 5
 
 int64_t create_hash(string s , int n) {
