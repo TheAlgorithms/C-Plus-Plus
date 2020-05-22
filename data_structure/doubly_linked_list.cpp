@@ -1,14 +1,26 @@
 #include <iostream>
+#include<cstdio>
+#include<cstdlib>
 
 struct node {
   int val;
   node *prev;
   node *next;
+}*start;
+
+class double_linked_list {
+  public:
+    double_linked_list() {
+      start = NULL;
+    }
+    void insert(int x);
+    void remove(int x);
+    void search(int x);
+    void show();
+    void reverseShow();
 };
 
-node *start;
-
-void insert(int x) {
+void double_linked_list::insert(int x) {
   node *t = start;
   if (start != NULL) {
     while (t->next != NULL) {
@@ -28,7 +40,7 @@ void insert(int x) {
   }
 }
 
-void remove(int x) {
+void double_linked_list::remove(int x) {
   node *t = start;
   while (t != NULL && t->val != x) {
     t = t-> next;
@@ -51,7 +63,7 @@ void remove(int x) {
   }
 }
 
-void search(int x) {
+void double_linked_list::search(int x) {
   node *t = start;
   int found = 0;
   while (t != NULL) {
@@ -67,7 +79,7 @@ void search(int x) {
   }
 }
 
-void show() {
+void double_linked_list::show() {
   node *t = start;
   while (t != NULL) {
     std::cout << t->val << "\t";
@@ -75,9 +87,9 @@ void show() {
   }
 }
 
-void reverseShow() {
+void double_linked_list::reverseShow() {
   node *t = start;
-  while (t->next != NULL) {
+  while (t != NULL && t->next != NULL) {
     t = t->next;
   }
   while (t != NULL) {
@@ -88,6 +100,7 @@ void reverseShow() {
 
 int main() {
   int choice, x;
+  double_linked_list ob;
   do {
     std::cout << "\n1. Insert";
     std::cout << "\n2. Delete";
@@ -100,23 +113,23 @@ int main() {
       case 1:
         std::cout << "\nEnter the element to be inserted : ";
         std::cin >> x;
-        insert(x);
+        ob.insert(x);
         break;
       case 2:
         std::cout << "\nEnter the element to be removed : ";
         std::cin >> x;
-        remove(x);
+        ob.remove(x);
         break;
       case 3:
         std::cout << "\nEnter the element to be searched : ";
         std::cin >> x;
-        search(x);
+        ob.search(x);
         break;
       case 4:
-        show();
+        ob.show();
         break;
       case 5:
-        reverseShow();
+        ob.reverseShow();
         break;
     }
   } while (choice != 0);
