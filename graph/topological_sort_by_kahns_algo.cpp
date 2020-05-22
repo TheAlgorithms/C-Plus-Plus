@@ -57,10 +57,10 @@ int* topoSortKahn(int V, std::vector<int> adj[]) {
         for (int i = 0; i < adj[cur].size(); i++) {
             if (!vis[adj[cur][i]]) {
             deg[adj[cur][i]]--;
-            if (deg[adj[cur][i]] == 0) {
-            q.push(adj[cur][i]);
-            vis[adj[cur][i]] = true;
-            }
+                if (deg[adj[cur][i]] == 0) {
+                    q.push(adj[cur][i]);
+                    vis[adj[cur][i]] = true;
+                }
             }
         }
     }
