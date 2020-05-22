@@ -38,13 +38,25 @@ void insert(int x)
 void remove(int x)
 {
 	node *t = start;
-	while (t->val != x)
+	while (t && t->val != x)
 	{
 		t = t->next;
 	}
-	t->prev->next = t->next;
-	t->next->prev = t->prev;
-	delete t;
+	if (t){
+		if (!(t->prev || t->next)){
+			start = NULL;
+		}
+		if (t->prev){
+			t->prev->next = t->next;
+		}
+		else{
+			start = t->next;
+		}
+		if (t->next){
+			t->next->prev = t->prev;
+		}
+		delete t;
+	}
 }
 
 void search(int x)
@@ -80,7 +92,7 @@ void show()
 void reverseShow()
 {
 	node *t = start;
-	while (t->next != NULL)
+	while (t && t->next != NULL)
 	{
 		t = t->next;
 	}
