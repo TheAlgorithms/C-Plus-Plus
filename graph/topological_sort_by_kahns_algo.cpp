@@ -13,7 +13,7 @@ int main() {
     return 0;
     int u, v;
 
-    std:vector<int>graph[nodes];
+    std::vector<int>graph[nodes];
     // create graph
     // example
     // 6 6
