@@ -26,7 +26,7 @@
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.h)
     * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/main_cll.cpp)
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/disjoint_set.cpp)
-  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Doubly%20Linked%20List.cpp)
+  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/doubly_linked_list.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/List%20Array.cpp)
@@ -72,13 +72,17 @@
 
 ## Graph
   * [Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/BFS.cpp)
+  * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
+  * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
   * [Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/DFS.cpp)
   * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/DFS_with_stack.cc)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Dijkstra.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Kruskal.cpp)
   * [Lca](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lca.cpp)
+  * [Prim](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/prim.cpp)
   * [Topological-Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Topological-Sort.cpp)
+  * [Topological Sort By Kahns Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort_by_kahns_algo.cpp)
 
 ## Greedy Algorithms
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/Dijkstra.cpp)
@@ -96,8 +100,10 @@
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
+  * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/extended_euclid_algorithm.cpp)
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
   * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fast_power.cpp)
+  * [Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci.cpp)
   * [Greatest Common Divisor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/greatest_common_divisor.cpp)
   * [Greatest Common Divisor Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/greatest_common_divisor_euclidean.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
@@ -114,6 +120,7 @@
   * [Array Right Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Array%20Right%20Rotation.cpp)
   * [Circular Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Circular%20Linked%20List.cpp)
   * [Circular Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Circular%20Queue%20Using%20Array.cpp)
+  * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Reverse%20a%20Linked%20List%20using%20Recusion.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionSortLinkedList.cpp)
@@ -146,6 +153,7 @@
 
 ## Probability
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
+  * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/poisson_dist.cpp)
 
 ## Range Queries
   * [Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/bit.cpp)
@@ -154,7 +162,7 @@
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segTree.cpp)
 
 ## Search
-  * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Binary%20Search.cpp)
+  * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Interpolation%20Search.cpp)
@@ -185,8 +193,10 @@
   * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Selection%20Sort.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Shell%20Sort.cpp)
   * [Slow Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Slow%20Sort.cpp)
+  * [Swap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/swap_sort.cpp)
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Tim%20Sort.cpp)
 
 ## Strings
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
+  * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
