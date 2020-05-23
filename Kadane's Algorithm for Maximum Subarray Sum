@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
   int n;
-  int cs=0,ms=0;//Stores current sum and maximum sum
+  int currentsum=0,maxsum=0;//Stores current sum and maximum sum
   cin>>n;
   vector<int> a;
   for(int i=0;i<n;++i)
@@ -15,13 +15,13 @@ int main()
   }
   for(int i=0;i<n;++i)
   {
-     cs=cs+a[i];
+     currentsum=currentsum+a[i];
      //If current sum becomes negative make it zero
-     if(cs<0) 
-      cs=0;
+     if(currentsum<0) 
+      currentsum=0;
      
-     ms=max(cs,ms);
+     maxsum=max(currentsum,maxsum);
   }
-  cout<<ms<<endl;
+  cout<<maxsum<<endl;
   return 0;
 }
