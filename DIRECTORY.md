@@ -4,6 +4,7 @@
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/knight_tour.cpp)
   * [Minimax](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/minimax.cpp)
   * [N Queens](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens.cpp)
+  * [N Queens All Solution Optimised](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens_all_solution_optimised.cpp)
   * [Nqueen Print All Solutions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/nqueen_print_all_solutions.cpp)
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
@@ -13,6 +14,7 @@
   * [False-Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false-position.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Gaussian_elimination.cpp)
   * [Newton Raphson](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Newton_Raphson.CPP)
+  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/ordinary_least_squares_regressor.cpp)
   * [Secant Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Secant_method.CPP)
   * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/successive_approximation.CPP)
 
@@ -99,8 +101,14 @@
 
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
+  * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/double_factorial.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/extended_euclid_algorithm.cpp)
+
+## Math
+  * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/Math/factorial.cpp)
+
+## Math
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
   * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fast_power.cpp)
   * [Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci.cpp)
@@ -153,6 +161,8 @@
 
 ## Probability
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
+  * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/bayes_theorem.cpp)
+  * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/binomial_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/poisson_dist.cpp)
 
 ## Range Queries
@@ -167,6 +177,12 @@
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Interpolation%20Search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search.cpp)
+
+## Search
+  * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/Search/jump_search.cpp)
+  * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/Search/Jump_Search.cpp)
+
+## Search
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/Linear%20Search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search.cpp)
   * [Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/searching.cpp)
