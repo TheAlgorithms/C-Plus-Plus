@@ -6,6 +6,7 @@
 #ifndef OTHERS_LARGE_NUMBER_H_
 #define OTHERS_LARGE_NUMBER_H_
 #include <cassert>
+#include <cinttypes>
 #include <cstring>
 #include <iostream>
 #include <type_traits>
@@ -21,9 +22,9 @@ class large_number {
 public:
     large_number() /**< initializer with value = 1 */ { _digits.push_back(1); }
 
-    large_number(unsigned long n) /**< initializer from an integer */
+    large_number(uint64_t n) /**< initializer from an integer */
     {
-        unsigned long carry = n;
+        uint64_t carry = n;
         do {
             add_digit(carry % 10);
             carry /= 10;
