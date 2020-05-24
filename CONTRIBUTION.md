@@ -12,7 +12,9 @@ We are very happy that you consider implementing algorithms and data structures 
 - You submitted work fulfils or mostly fulfils our styles and standards.
 
 **New implementation** New implementation are welcome!
+
 **Improving comments** and **adding tests** to existing algorithms are much appreciated.
+
 **Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm.  This merely creates unnecessary noise for maintainers.  Instead, please submit your implementation in a pull request and it will be evaluated by project maintainers.
 
 ### Making Changes
