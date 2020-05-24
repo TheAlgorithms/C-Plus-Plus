@@ -3,17 +3,9 @@
  * Created: May 24, 2020
  * Copyright: 2020, Open-Source
  * 
- * As cpplint checker doesn't allow me to use more then 80 columns 
+ * As cpplint checker doesn'sink allow me to use more then 80 columns 
  * so i used some naming convention , which can be expended as: 
  *
- * r_capacity   -> residual_capacity 
- * capacity     -> original edge capacity 
- * vis          -> visited node 
- * c_n          -> current_node
- * n            -> total number of nodes
- * m            -> total number of edges
- * s            -> source 
- * t            -> sink 
  *
  */
 #include <iostream>
@@ -25,46 +17,32 @@
 #include <cstring>
 #include <vector>
 #include <utility>
-//  standard utility used
-using std::min;
-using std::max;
-using std::tie;
-using std::make_tuple;
-using std::make_pair;
-// standard containers used
-using std::vector;
-using std::queue;
-using std::bitset;
-using std::tuple;
-// standard streams used
-using std::cout;
-using std::cin;
-// max capacity of node in graph
+// std::max capacity of node in graph
 const int MAXN = 505;
 class Graph {
-    int r_capacity[MAXN][MAXN];
+    int residual_capacity[MAXN][MAXN];
     int capacity[MAXN][MAXN];  //  used while checking the flow of edge
-    int n;
-    int m, s, t;
+    int total_nodes;
+    int total_edges, source, sink;
     int parent[MAXN];
-    vector <tuple <int, int, int> >edge_participated;  //  print edges present
-    bitset <MAXN> vis;
+    std::vector <std::tuple <int, int, int> >edge_participated;
+    std::bitset <MAXN> visited;
     int max_flow = 0;
-    bool bfs(int s, int t) {  //  to find the augmented - path
+    bool bfs(int source, int sink) {  //  to find the augmented - path
         memset(parent, -1, sizeof(parent));
-        vis.reset();
-        queue<int>q;
-        q.push(s);
+        visited.reset();
+        std::queue<int>q;
+        q.push(source);
         bool is_path_found = false;
         while (q.empty() == false && is_path_found == false) {
-            int c_n = q.front();
-            vis.set(c_n);
+            int current_node = q.front();
+            visited.set(current_node);
             q.pop();
-            for (int i = 0; i < n; ++i) {
-                if (r_capacity[c_n][i] > 0 && !vis[i]) {
-                    vis.set(i);
-                    parent[i] = c_n;
-                    if (i == t) {
+            for (int i = 0; i < total_nodes; ++i) {
+                if (residual_capacity[current_node][i] > 0 && !visited[i]) {
+                    visited.set(i);
+                    parent[i] = current_node;
+                    if (i == sink) {
                         return true;
                     }
                     q.push(i);
@@ -76,53 +54,55 @@ class Graph {
 
  public:
     Graph() {
-        memset(r_capacity, 0, sizeof(r_capacity));
+        memset(residual_capacity, 0, sizeof(residual_capacity));
     }
     void set_graph(void) {
-        cin >> n >> m >> s >> t;
-        for (int u, v, c, i = 0; i < m; ++i) {
-            cin >> u >> v >> c;
-            r_capacity[u][v] = c;
+        std::cin >> total_nodes >> total_edges >> source >> sink;
+        for (int u, v, c, i = 0; i < total_edges; ++i) {
+            std::cin >> u >> v >> c;
+            residual_capacity[u][v] = c;
             capacity[u][v] = c;
         }
     }
     void ford_fulkerson(void) {
-        while (bfs(s, t)) {
-            int v = t;
+        while (bfs(source, sink)) {
+            int v = sink;
             int flow = std::numeric_limits<int>::max();
-            while (v != s) {
+            while (v != source) {
                 int u = parent[v];
-                flow = min(flow, r_capacity[u][v]);
+                flow = std::min(flow, residual_capacity[u][v]);
                 v = u;
             }
-            v = t;
+            v = sink;
             max_flow += flow;
-            while ( v != s ) {
+            while ( v != source ) {
                 int u = parent[v];
-                r_capacity[u][v] -= flow;
-                r_capacity[v][u] += flow;
+                residual_capacity[u][v] -= flow;
+                residual_capacity[v][u] += flow;
                 v = u;
             }
         }
     }
     void print_flow_info(void) {
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (capacity[i][j] && r_capacity[i][j] < capacity[i][j]) {
+        for (int i = 0; i < total_nodes; ++i) {
+            for (int j = 0; j < total_nodes; ++j) {
+                if (capacity[i][j] &&
+                        residual_capacity[i][j] < capacity[i][j]) {
                     edge_participated.push_back(
-                            make_tuple(i, j, capacity[i][j]-r_capacity[i][j]));
+                            std::make_tuple(i, j,
+                                capacity[i][j]-residual_capacity[i][j]));
                 }
             }
         }
-        cout << "\nNodes : " << n
+        std::cout << "\nNodes : " << total_nodes
             << "\nMax flow: " << max_flow
             << "\nEdge present in flow: " << edge_participated.size()
             << '\n';
-        cout<< "\nSource\tDestination\tCapacity\n";
+        std::cout<< "\nSource\tDestination\tCapacity\total_nodes";
         for (auto&itr : edge_participated) {
             int a, b, c;
-            tie(a, b, c) = itr;
-            cout << a << "\t" << b << "\t\t" << c <<'\n';
+            std::tie(a, b, c) = itr;
+            std::cout << a << "\t" << b << "\t\t" << c <<'\t';
         }
     }
 };
@@ -136,10 +116,10 @@ int main(void) {
         0 2 1
         2 3 10
      */
-    Graph g1;
-    g1.set_graph();
-    g1.ford_fulkerson();
-    g1.print_flow_info();
+    Graph graph;
+    graph.set_graph();
+    graph.ford_fulkerson();
+    graph.print_flow_info();
     return 0;
 }
 
