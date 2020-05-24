@@ -20,6 +20,6 @@ int main() {
       currentsum = 0;
      maxsum = std::max(currentsum , maxsum);
   }
-  std::cout<< maxsum << endl;
+  std::cout<< maxsum;
   return 0;
 }
