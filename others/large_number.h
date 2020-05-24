@@ -207,7 +207,7 @@ class large_number {
    * operator overload to perform addition
    **/
   template <class T>
-  friend large_number &operator+(const large_number &a, const T &b) {
+  friend large_number &operator+(large_number &a, const T &b) {
     a += b;
     return a;
   }
