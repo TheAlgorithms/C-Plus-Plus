@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 int main() {
   using std::vector;
@@ -17,7 +18,7 @@ int main() {
      //  If current sum becomes negative make it zero
      if ( currentsum < 0 )
       currentsum = 0;
-     maxsum = max(currentsum , maxsum);
+     maxsum = std::max(currentsum , maxsum);
   }
   std::cout<< maxsum << endl;
   return 0;
