@@ -116,6 +116,7 @@
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_factorization.cpp)
   * [Prime Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_numbers.cpp)
   * [Primes Up To 10^8](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/primes_up_to_10^8.cpp)
+  * [Realtime Stats](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/realtime_stats.cpp)
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
 
