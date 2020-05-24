@@ -104,11 +104,6 @@
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/double_factorial.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/extended_euclid_algorithm.cpp)
-
-## Math
-  * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/Math/factorial.cpp)
-
-## Math
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/factorial.cpp)
   * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fast_power.cpp)
   * [Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci.cpp)
