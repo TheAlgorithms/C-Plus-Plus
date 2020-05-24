@@ -7,12 +7,13 @@
  * number that contains 10450 digits!
  **/
 
+#include <cinttypes>
 #include <ctime>
 #include <iostream>
 
-#include "large_number.h"
+#include "./large_number.h"
 
-large_number fib(unsigned long long n) {
+large_number fib(uint64_t n) {
     large_number f0(1);
     large_number f1(1);
 
@@ -26,10 +27,10 @@ large_number fib(unsigned long long n) {
 }
 
 int main(int argc, char *argv[]) {
-    unsigned long long N;
-    if (argc == 2)
+    uint64_t N;
+    if (argc == 2) {
         N = strtoull(argv[1], NULL, 10);
-    else {
+    } else {
         std::cout << "Enter N: ";
         std::cin >> N;
     }

@@ -3,7 +3,7 @@
 #include <ctime>
 #include <iostream>
 
-#include "large_number.h"
+#include "./large_number.h"
 
 bool test1() {
     std::cout << "---- Check 1\t";
@@ -72,9 +72,9 @@ bool test2() {
 int main(int argc, char *argv[]) {
     int number, i;
 
-    if (argc == 2)
+    if (argc == 2) {
         number = atoi(argv[1]);
-    else {
+    } else {
         std::cout << "Enter the value of n(n starts from 0 ): ";
         std::cin >> number;
     }
