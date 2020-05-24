@@ -1,8 +1,7 @@
 #include<iostream>
 #include<vector>
 
-int main()
-{
+int main() {
   using std::vector;
   int n;
   int currentsum = 0, maxsum = 0;  // Stores current sum and maximum sum
