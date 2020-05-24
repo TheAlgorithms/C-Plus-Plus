@@ -3,8 +3,8 @@
  * @email krishna (dot) vedala (at) ieee (dot) org
  **/
 
-#ifndef __LARGE_NUMBER__
-#define __LARGE_NUMBER__
+#ifndef OTHERS_LARGE_NUMBER_H_
+#define OTHERS_LARGE_NUMBER_H_
 #include <cassert>
 #include <cstring>
 #include <iostream>
@@ -18,11 +18,8 @@
  * large number with long unsigned integers.
  **/
 class large_number {
-   public:
-    large_number() /**< initializer with value = 1 */
-    {
-        _digits.push_back(1);
-    }
+public:
+    large_number() /**< initializer with value = 1 */ { _digits.push_back(1); }
 
     large_number(unsigned long n) /**< initializer from an integer */
     {
@@ -49,7 +46,8 @@ class large_number {
     {
         for (size_t i = strlen(number_str); i > 0; i--) {
             unsigned char a = number_str[i - 1] - '0';
-            if (a >= 0 && a <= 9) _digits.push_back(a);
+            if (a >= 0 && a <= 9)
+                _digits.push_back(a);
         }
     }
 
@@ -148,9 +146,11 @@ class large_number {
      **/
     friend bool operator==(large_number const &a, large_number const &b) {
         size_t N = a.num_digits();
-        if (N != b.num_digits()) return false;
+        if (N != b.num_digits())
+            return false;
         for (size_t i = 0; i < N; i++)
-            if (a[i] != b[i]) return false;
+            if (a[i] != b[i])
+                return false;
         return true;
     }
 
@@ -191,8 +191,10 @@ class large_number {
             unsigned int carry = 0;
             size_t i;
             for (i = 0; i < max_L || carry != 0; i++) {
-                if (i < b->num_digits()) carry += (*b)[i];
-                if (i < this->num_digits()) carry += (*this)[i];
+                if (i < b->num_digits())
+                    carry += (*b)[i];
+                if (i < this->num_digits())
+                    carry += (*this)[i];
                 if (i < this->num_digits())
                     (*this)[i] = carry % 10;
                 else
@@ -239,7 +241,7 @@ class large_number {
         return _digits[num_digits() - i - 1] + '0';
     }
 
-   private:
+private:
     /**
      * multiply large number with another integer and
      * store the result in the same large number
@@ -275,4 +277,4 @@ class large_number {
         _digits; /**< where individual digits are stored */
 };
 
-#endif
+#endif  // OTHERS_LARGE_NUMBER_H_
