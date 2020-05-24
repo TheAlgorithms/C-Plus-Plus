@@ -2,11 +2,6 @@
  * Author: Amit Kumar
  * Created: May 24, 2020
  * Copyright: 2020, Open-Source
- * 
- * As cpplint checker doesn'sink allow me to use more then 80 columns 
- * so i used some naming convention , which can be expended as: 
- *
- *
  */
 #include <iostream>
 #include <queue>
