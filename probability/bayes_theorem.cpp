@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // bayes' theorem > https://en.wikipedia.org/wiki/Bayes%27_theorem
 
@@ -24,7 +25,7 @@ int main() {
     double B = 0.1;
     double BgivenA = 0.9;
     double AgivenB = bayes_AgivenB(BgivenA, A, B);
-    std::cout << "A given B = " << AgivenB << std::endl;
-    std::cout << "B given A = " << bayes_BgivenA(AgivenB, A, B) << std::endl;
+    cout << "A given B = " << AgivenB<<endl;
+    cout << "B given A = " << bayes_BgivenA(AgivenB, A, B)<<endl;
     return 0;
 }
