@@ -2,6 +2,7 @@
  * Author: Amit Kumar
  * Created: May 24, 2020
  * Copyright: 2020, Open-Source
+ * Last Modified: May 25, 2020
  */
 #include <iostream>
 #include <queue>
@@ -53,28 +54,28 @@ class Graph {
     }
     void set_graph(void) {
         std::cin >> total_nodes >> total_edges >> source >> sink;
-        for (int u, v, c, i = 0; i < total_edges; ++i) {
-            std::cin >> u >> v >> c;
-            residual_capacity[u][v] = c;
-            capacity[u][v] = c;
+        for (int start, destination, capacity_, i = 0; i < total_edges; ++i) {
+            std::cin >> start >> destination >> capacity_;
+            residual_capacity[start][destination] = capacity_;
+            capacity[start][destination] = capacity_;
         }
     }
     void ford_fulkerson(void) {
         while (bfs(source, sink)) {
-            int v = sink;
+            int current_node = sink;
             int flow = std::numeric_limits<int>::max();
-            while (v != source) {
-                int u = parent[v];
-                flow = std::min(flow, residual_capacity[u][v]);
-                v = u;
+            while (current_node != source) {
+                int parent_ = parent[current_node];
+                flow = std::min(flow, residual_capacity[parent_][current_node]);
+                current_node = parent_;
             }
-            v = sink;
+            current_node = sink;
             max_flow += flow;
-            while ( v != source ) {
-                int u = parent[v];
-                residual_capacity[u][v] -= flow;
-                residual_capacity[v][u] += flow;
-                v = u;
+            while ( current_node != source ) {
+                int parent_ = parent[current_node];
+                residual_capacity[parent_][current_node] -= flow;
+                residual_capacity[current_node][parent_] += flow;
+                current_node = parent_;
             }
         }
     }
@@ -94,10 +95,11 @@ class Graph {
             << "\nEdge present in flow: " << edge_participated.size()
             << '\n';
         std::cout<< "\nSource\tDestination\tCapacity\total_nodes";
-        for (auto&itr : edge_participated) {
-            int a, b, c;
-            std::tie(a, b, c) = itr;
-            std::cout << a << "\t" << b << "\t\t" << c <<'\t';
+        for (auto&edge_data : edge_participated) {
+            int source, destination, capacity_;
+            std::tie(source, destination, capacity_) = edge_data;
+            std::cout << source << "\t" << destination << "\t\t"
+                      << capacity_ <<'\t';
         }
     }
 };
