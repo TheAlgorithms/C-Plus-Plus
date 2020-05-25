@@ -6,8 +6,8 @@
 
 int main() {
   int n , ans = 0;
-  std::cout<<"Enter number of elements :";
-  std::cin>>n;
+  std::cout << "Enter number of elements :";
+  std::cin >> n;
   for ( int i = 0 ; i < n ; ++i ) {
     int no;
     // Performing xor of a number with itself gives 0
