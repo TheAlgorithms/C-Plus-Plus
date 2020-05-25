@@ -1,11 +1,12 @@
-/* Given array with each element occuring twice and one unique element. Find unique element. */
+/* Given array with each element occuring twice and one unique element.*/
+/* Find unique element. */
 /* Using Bit Manipulation */
 
 #include<iostream>
 
 int main() {
   int n , ans = 0;
-  std::cout<< "Enter number of elements :";
+  std::cout<<"Enter number of elements :";
   std::cin>>n;
   for ( int i = 0 ; i < n ; ++i ) {
     int no;
