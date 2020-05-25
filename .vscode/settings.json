@@ -64,7 +64,7 @@
           "valarray": "cpp",
           "algorithm": "cpp"
      },
-     "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4,, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, AccessModifierOffset: -4, NamespaceIndentation: All }",
+     "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, AccessModifierOffset: -4, NamespaceIndentation: All }",
      "editor.formatOnSave": true,
      "editor.formatOnType": true,
      "editor.formatOnPaste": true
