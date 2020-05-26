@@ -2,6 +2,7 @@
 // While Bubble sort is comparering adjacent value, Combsort is using gap larger
 // than 1 Best case: O(n) Worst case: O(n ^ 2)
 
+#include <algorithm>
 #include <iostream>
 
 int a[100005];
