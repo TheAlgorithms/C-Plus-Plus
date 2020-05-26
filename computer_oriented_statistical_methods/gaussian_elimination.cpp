@@ -6,7 +6,11 @@ int main() {
     std::cout << "Matrix size: ";
     std::cin >> mat_size;
 
-    double mat[mat_size + 1][mat_size + 1], x[mat_size][mat_size + 1];
+    double **mat = new double *[mat_size + 1], **x = new double *[mat_size];
+    for (i = 0; i <= mat_size; i++) {
+        mat[i] = new double[mat_size + 1];
+        if (i < mat_size) x[i] = new double[mat_size + 1];
+    }
 
     std::cout << std::endl << "Enter value of the matrix: " << std::endl;
     for (i = 0; i < mat_size; i++) {
@@ -49,5 +53,13 @@ int main() {
 
         std::cout << "x" << i << "= " << x[i][i] << std::endl;
     }
+
+    for (i = 0; i <= mat_size; i++) {
+        delete[] mat[i];
+        if (i < mat_size) delete[] x[i];
+    }
+    delete[] mat;
+    delete[] x;
+
     return 0;
 }
