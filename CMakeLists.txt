@@ -45,7 +45,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-    add_compile_options(/Za)
 endif(MSVC)
 
 add_subdirectory(math)
