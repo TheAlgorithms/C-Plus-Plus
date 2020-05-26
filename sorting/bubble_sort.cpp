@@ -42,7 +42,7 @@ optimized bubble sort algorithm. It's right down there.
 
 int main() {
     int n;
-    short swap_check = 1;
+    bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
     std::vector<int> numbers;
@@ -56,11 +56,11 @@ int main() {
     }
 
     // Bubble Sorting
-    for (int i = 0; (i < n) && (swap_check == 1); i++) {
-        swap_check = 0;
+    for (int i = 0; (i < n) && (swap_check); i++) {
+        swap_check = false;
         for (int j = 0; j < n - 1 - i; j++) {
             if (numbers[j] > numbers[j + 1]) {
-                swap_check = 1;
+                swap_check = true;
                 std::swap(numbers[j],
                           numbers[j + 1]);  // by changing swap location.
                                             // I mean, j. If the number is

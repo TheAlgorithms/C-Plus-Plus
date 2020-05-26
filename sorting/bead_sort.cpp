@@ -34,8 +34,8 @@ void beadSort(int *a, int len) {
     // Put sorted values in array using beads
     for (int i = 0; i < len; i++) {
         int j;
-        for (j = 0; j < max && BEAD(i, j); j++)
-            ;
+        for (j = 0; j < max && BEAD(i, j); j++) {
+        }
 
         a[i] = j;
     }
