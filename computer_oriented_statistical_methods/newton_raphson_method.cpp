@@ -4,9 +4,12 @@
 float eq(float i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
+float eq_der(float i) {
+    return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
+}
 
 int main() {
-    float a, b, x, z;
+    float a, b, z, c, m, n;
 
     for (int i = 0; i < 100; i++) {
         z = eq(i);
@@ -19,22 +22,20 @@ int main() {
 
     std::cout << "\nFirst initial: " << a;
     std::cout << "\nSecond initial: " << b;
+    c = (a + b) / 2;
+
     for (int i = 0; i < 100; i++) {
-        x = (a + b) / 2;
-        z = eq(x);
-        std::cout << "\n\nz: " << z << "\t[" << a << " , " << b
-                  << " | Bisect: " << x << "]";
+        float h;
+        m = eq(c);
+        n = eq_der(c);
 
-        if (z < 0) {
-            a = x;
-        } else {
-            b = x;
-        }
+        z = c - (m / n);
+        c = z;
 
-        if (z > 0 && z < 0.0009)  // stoping criteria
+        if (m > 0 && m < 0.009)  // stoping criteria
             break;
     }
 
-    std::cout << "\n\nRoot: " << x;
+    std::cout << "\n\nRoot: " << z << std::endl;
     return 0;
 }
