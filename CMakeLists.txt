@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.3)
-project(Algorithms_in_C
-    LANGUAGES C CXX
+project(Algorithms_in_C++
+    LANGUAGES CXX
     VERSION 1.0.0
     DESCRIPTION "Set of algorithms implemented in C."
 )
+
+# set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
+# find_program(CLANG_FORMAT "clang-format")
 
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 
@@ -34,32 +37,17 @@ if(DOXYGEN_FOUND)
     )
 endif()
 
-function(function_timer)
-    set(CMAKE_BUILD_TYPE "Release")         # This is local to function
-    add_subdirectory(function_timer EXCLUDE_FROM_ALL)
-endfunction()
-
-function_timer()
-
-include_directories(function_timer/include)
-# link_libraries(function_timer)
-# include_directories(${CMAKE_BINARY_DIR}/include)
-# link_directories(${CMAKE_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE})
-
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
     add_compile_options(/Za)
 endif(MSVC)
 
-add_subdirectory(conversions)
-add_subdirectory(misc)
-add_subdirectory(project_euler)
-add_subdirectory(sorting)
-add_subdirectory(searching)
-add_subdirectory(numerical_methods)
+add_subdirectory(math)
+add_subdirectory(others)
+add_subdirectory(computer_oriented_statistical_methods)
 
 if(USE_OPENMP)
     find_package(OpenMP)
