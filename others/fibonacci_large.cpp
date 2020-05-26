@@ -18,11 +18,12 @@ large_number fib(uint64_t n) {
     large_number f1(1);
 
     do {
-        large_number f2 = f0 + f1;
-        f0 = f1;
-        f1 = f2;
+        large_number f2 = f1;
+        f1 += f0;
+        f0 = f2;
         n--;
     } while (n > 2);  // since we start from 2
+
     return f1;
 }
 
