@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['non_5frecursive_5fmerge_5fsort_2ecpp',['non_recursive_merge_sort.cpp',['../d0/db6/non__recursive__merge__sort_8cpp.html',1,'']]]
+  ['fast_5fpower_2ecpp',['fast_power.cpp',['../d2/d0b/fast__power_8cpp.html',1,'']]]
 ];
