@@ -294,7 +294,8 @@ std::vector<std::vector<T>> get_transpose(
 }
 
 /**
- * Perform Ordinary Least Squares curve fit.
+ * Perform Ordinary Least Squares curve fit. This operation is defined as
+ * \f[\beta = \left(X^TXX^T\right)Y\f]
  * \param X feature matrix with rows representing sample vector of features
  * \param Y known regression value for each sample
  * \returns fitted regression model polynomial coefficients
@@ -322,9 +323,11 @@ std::vector<float> fit_OLS_regressor(std::vector<std::vector<T>> const &X,
 
 /**
  * Given data and OLS model coeffficients, predict
- * regression estimates.
+ * regression estimates. This operation is defined as
+ * \f[y_{\text{row}=i} = \sum_{j=\text{columns}}\beta_j\cdot X_{i,j}\f]
+ *
  * \param X feature matrix with rows representing sample vector of features
- * \param \f$\beta\f$ fitted regression model
+ * \param beta fitted regression model
  * \return vector with regression values for each sample
  **/
 template <typename T>
