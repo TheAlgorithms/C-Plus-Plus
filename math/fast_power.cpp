@@ -50,30 +50,28 @@ double fast_power_linear(int64_t a, int64_t b) {
 }
 
 int main() {
-    std::srand(time(NULL));
+    std::srand(std::time(nullptr));
     std::ios_base::sync_with_stdio(false);
 
     std::cout << "Testing..." << std::endl;
     for (int i = 0; i < 20; i++) {
-        unsigned int *rand1, *rand2;
-        int a = rand_r(rand1) % 20 - 10;
-        int b = rand_r(rand2) % 20 - 10;
+        int a = std::rand() % 20 - 10;
+        int b = std::rand() % 20 - 10;
         std::cout << std::endl << "Calculating " << a << "^" << b << std::endl;
         assert(fast_power_recursive(a, b) == std::pow(a, b));
         assert(fast_power_linear(a, b) == std::pow(a, b));
 
-        std::cout << "------ " << a << "^" << b << " = "<<
-            fast_power_recursive(a, b) << std::endl;
+        std::cout << "------ " << a << "^" << b << " = "
+                  << fast_power_recursive(a, b) << std::endl;
     }
 
     int64_t a, b;
     std::cin >> a >> b;
 
-    std::cout << a << "^" << b << " = "<<
-        fast_power_recursive(a, b) << std::endl;
+    std::cout << a << "^" << b << " = " << fast_power_recursive(a, b)
+              << std::endl;
 
-    std::cout << a << "^" << b << " = "<<
-        fast_power_linear(a, b) << std::endl;
+    std::cout << a << "^" << b << " = " << fast_power_linear(a, b) << std::endl;
 
     return 0;
 }
