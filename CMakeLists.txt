@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.3)
 project(Algorithms_in_C++
     LANGUAGES CXX
     VERSION 1.0.0
-    DESCRIPTION "Set of algorithms implemented in C."
+    DESCRIPTION "Set of algorithms implemented in C++."
 )
 
 # set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
