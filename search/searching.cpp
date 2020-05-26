@@ -1,38 +1,32 @@
+#include <cstdlib>
 #include <iostream>
 #include <string>
-#include <cstdlib>
 
-using namespace std;
 char paragraph;
 
-int main()
-{
-    string paragraph;
-    cout << "Please enter your paragraph: \n";
-    getline(cin, paragraph);
-    cout << "\nHello, your paragraph is:\n " << paragraph << "!\n";
-    cout << "\nThe size of your paragraph = " << paragraph.size() << " characters. \n\n";
+int main() {
+    std::string paragraph;
+    std::cout << "Please enter your paragraph: \n";
+    std::getline(std::cin, paragraph);
+    std::cout << "\nHello, your paragraph is:\n " << paragraph << "!\n";
+    std::cout << "\nThe size of your paragraph = " << paragraph.size()
+              << " characters. \n\n";
 
-    if (paragraph.empty())
-    {
-        cout << "\nThe paragraph is empty" << endl;
-    }
-    else
-    {
-        while (true)
-        {
-            string word;
-            cout << "Please enter the word you are searching for: ";
-            getline(cin, word);
-            cout << "Hello, your word is " << word << "!\n";
-            if (paragraph.find(word) == string::npos)
-            {
-                cout << word << " does not exist in the sentence" << endl;
-            }
-            else
-            {
-                cout << "The word " << word << " is now found at location " << paragraph.find(word) << endl
-                     << endl;
+    if (paragraph.empty()) {
+        std::cout << "\nThe paragraph is empty" << std::endl;
+    } else {
+        while (true) {
+            std::string word;
+            std::cout << "Please enter the word you are searching for: ";
+            std::getline(std::cin, word);
+            std::cout << "Hello, your word is " << word << "!\n";
+            if (paragraph.find(word) == std::string::npos) {
+                std::cout << word << " does not exist in the sentence"
+                          << std::endl;
+            } else {
+                std::cout << "The word " << word << " is now found at location "
+                          << paragraph.find(word) << std::endl
+                          << std::endl;
             }
             system("pause");
         }
