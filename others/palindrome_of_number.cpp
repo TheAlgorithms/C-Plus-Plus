@@ -1,6 +1,12 @@
 #include <algorithm>
-#include <cstring>
 #include <iostream>
+
+#ifdef _MSC_VER
+// Required to compile std::toString function using MSVC
+#include <string>
+#else
+#include <cstring>
+#endif
 
 int main() {
     int num;
