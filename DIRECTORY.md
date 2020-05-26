@@ -11,8 +11,8 @@
 
 ## Computer Oriented Statistical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/bisection_method.cpp)
-  * [False-Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false-position.cpp)
-  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/Gaussian_elimination.cpp)
+  * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false_position.cpp)
+  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/gaussian_elimination.cpp)
   * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/newton_raphson_method.cpp)
   * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/ordinary_least_squares_regressor.cpp)
   * [Secant Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/secant_method.cpp)
@@ -132,13 +132,13 @@
   * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Union_of_2_arrays.cpp)
 
 ## Others
-  * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/Buzz_number.cpp)
+  * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
   * [Fast Interger Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_interger_input.cpp)
   * [Fibonacci Fast](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fibonacci_fast.cpp)
-  * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/GCD_of_n_numbers.cpp)
+  * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/gcd_of_n_numbers.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Measure Time Elapsed](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/measure_time_elapsed.cpp)
