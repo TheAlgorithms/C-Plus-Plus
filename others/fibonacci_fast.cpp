@@ -9,7 +9,6 @@
 
 #include <cstdio>
 #include <iostream>
-using namespace std;
 
 const long long MAX = 93;
 
@@ -31,7 +30,7 @@ long long fib(long long n) {
 int main() {
     // Main Function
     for (long long i = 1; i < 93; i++) {
-        cout << i << " th fibonacci number is " << fib(i) << "\n";
+        std::cout << i << " th fibonacci number is " << fib(i) << "\n";
     }
     return 0;
 }

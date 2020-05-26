@@ -2,13 +2,12 @@
 #include <cstring>
 #include <iostream>
 #include <vector>
-using namespace std;
 
 // Declaring variables for maintaing prime numbers and to check whether a number
 // is prime or not
 bool isprime[1000006];
-vector<int> prime_numbers;
-vector<pair<int, int>> factors;
+std::vector<int> prime_numbers;
+std::vector<std::pair<int, int>> factors;
 
 // Calculating prime number upto a given range
 void SieveOfEratosthenes(int N) {
@@ -43,7 +42,7 @@ void prime_factorization(int num) {
             number = number / prime_numbers[i];
         }
 
-        if (count) factors.push_back(make_pair(prime_numbers[i], count));
+        if (count) factors.push_back(std::make_pair(prime_numbers[i], count));
     }
 }
 
@@ -52,9 +51,9 @@ void prime_factorization(int num) {
 */
 int main() {
     int num;
-    cout << "\t\tComputes the prime factorization\n\n";
-    cout << "Type in a number: ";
-    cin >> num;
+    std::cout << "\t\tComputes the prime factorization\n\n";
+    std::cout << "Type in a number: ";
+    std::cin >> num;
 
     SieveOfEratosthenes(num);
 
@@ -62,7 +61,7 @@ int main() {
 
     // Prime factors with their powers in the given number in new line
     for (auto it : factors) {
-        cout << it.first << " " << it.second << endl;
+        std::cout << it.first << " " << it.second << std::endl;
     }
 
     return 0;

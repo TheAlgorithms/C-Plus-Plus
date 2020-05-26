@@ -5,7 +5,7 @@ int main() {
     int n;
     std::cout << "Enter value of n:" << std::endl;
     std::cin >> n;
-    int a[n];
+    int *a = new int[n];
     int i, j, gcd;
     std::cout << "Enter the n numbers:" << std::endl;
     for (i = 0; i < n; i++) std::cin >> a[i];
@@ -18,5 +18,6 @@ int main() {
             gcd = a[j] % gcd;  // calculating GCD by division method
     }
     std::cout << "GCD of entered n numbers:" << gcd;
+    delete[] a;
     return 0;
 }
