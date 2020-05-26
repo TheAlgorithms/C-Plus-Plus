@@ -18,6 +18,6 @@ jobs:
         with:
           submodules: true
       - name: configure
-        run: cmake -G Ninja -B ./build -S .
+        run: cmake -B ./build -S .
       - name: build
         run: cmake --build build
