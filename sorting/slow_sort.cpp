@@ -9,7 +9,6 @@
 // while being slow, must still all the time be working towards a result.
 
 #include <iostream>
-using namespace std;
 
 void SlowSort(int a[], int i, int j) {
     if (i >= j) return;
@@ -30,26 +29,27 @@ void SlowSort(int a[], int i, int j) {
 
 int main() {
     int size;
-    cout << "\nEnter the number of elements : ";
+    std::cout << "\nEnter the number of elements : ";
 
-    cin >> size;
+    std::cin >> size;
 
     int *arr = new int[size];
 
-    cout << "\nEnter the unsorted elements : ";
+    std::cout << "\nEnter the unsorted elements : ";
 
     for (int i = 0; i < size; ++i) {
-        cout << "\n";
-        cin >> arr[i];
+        std::cout << "\n";
+        std::cin >> arr[i];
     }
 
     SlowSort(arr, 0, size);
 
-    cout << "Sorted array\n";
+    std::cout << "Sorted array\n";
 
     for (int i = 0; i < size; ++i) {
-        cout << arr[i] << " ";
+        std::cout << arr[i] << " ";
     }
+
     delete[] arr;
     return 0;
 }
