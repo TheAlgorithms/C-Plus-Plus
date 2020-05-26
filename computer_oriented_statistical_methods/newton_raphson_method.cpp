@@ -1,14 +1,17 @@
 #include <cmath>
-#include <cstdlib>
 #include <iostream>
 
 static float eq(float i) {
-    return (pow(i, 3) - (4 * i) - 9);  // origial equation
+    return (std::pow(i, 3) - (4 * i) - 9);  // original equation
+}
+
+static float eq_der(float i) {
+    return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
 }
 
 int main() {
     float a, b, z, c, m, n;
-    system("clear");
+
     for (int i = 0; i < 100; i++) {
         z = eq(i);
         if (z >= 0) {
@@ -20,19 +23,20 @@ int main() {
 
     std::cout << "\nFirst initial: " << a;
     std::cout << "\nSecond initial: " << b;
+    c = (a + b) / 2;
 
     for (int i = 0; i < 100; i++) {
-        float h, d;
-        m = eq(a);
-        n = eq(b);
-        c = ((a * n) - (b * m)) / (n - m);
-        a = c;
-        z = eq(c);
-        if (z > 0 && z < 0.09) {  // stoping criteria
+        float h;
+        m = eq(c);
+        n = eq_der(c);
+
+        z = c - (m / n);
+        c = z;
+
+        if (m > 0 && m < 0.009)  // stoping criteria
             break;
-        }
     }
 
-    std::cout << "\n\nRoot: " << c;
+    std::cout << "\n\nRoot: " << z << std::endl;
     return 0;
 }
