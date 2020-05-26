@@ -1,0 +1,35 @@
+name: Doxygen CI
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Install requirements
+        run: |
+          sudo apt -qq -y update
+          sudo apt -qq install doxygen graphviz ninja-build
+      - name: configure
+        run: cmake -G Ninja -B ./build -S .
+      - name: build
+        run: cmake --build build -t doc
+      - name: gh-pages
+        uses: actions/checkout@master
+        with:
+          ref: "gh-pages"
+          clean: false
+      - name: Move & Commit files
+        run: |
+          cp -rp ./build/html/* . && rm -rf ./build && ls -lah
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git add *
+          git commit -m "Documentation for $GITHUB_SHA" ||  true
+          git push --force || true

@@ -19,6 +19,8 @@ The first element of this matrix is the required result.
 */
 
 #include <iostream>
+#include <vector>
+
 using std::cin;
 using std::cout;
 using std::vector;
@@ -46,8 +48,7 @@ vector<vector<ll>> multiply(vector<vector<ll>> A, vector<vector<ll>> B) {
 
 // computing power of a matrix
 vector<vector<ll>> power(vector<vector<ll>> A, ll p) {
-    if (p == 1)
-        return A;
+    if (p == 1) return A;
     if (p % 2 == 1) {
         return multiply(A, power(A, p - 1));
     } else {
@@ -58,14 +59,11 @@ vector<vector<ll>> power(vector<vector<ll>> A, ll p) {
 
 // main function
 ll ans(ll n) {
-    if (n == 0)
-        return 0;
-    if (n <= k)
-        return b[n - 1];
+    if (n == 0) return 0;
+    if (n <= k) return b[n - 1];
     // F1
     vector<ll> F1(k + 1);
-    for (ll i = 1; i <= k; i++)
-        F1[i] = b[i - 1];
+    for (ll i = 1; i <= k; i++) F1[i] = b[i - 1];
 
     // Transpose matrix
     vector<vector<ll>> T(k + 1, vector<ll>(k + 1));

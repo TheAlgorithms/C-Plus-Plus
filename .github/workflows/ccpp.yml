@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on: [push]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: configure
+        run: cmake -B ./build -S .
+      - name: build
+        run: cmake --build build
