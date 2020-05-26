@@ -7,20 +7,21 @@
 // have already found n/2th or (n+1)/2th fibonacci It is a property of fibonacci
 // similar to matrix exponentiation.
 
+#include <cinttypes>
 #include <cstdio>
 #include <iostream>
 
-const long long MAX = 93;
+const uint64_t MAX = 93;
 
-long long f[MAX] = {0};
+uint64_t f[MAX] = {0};
 
-long long fib(long long n) {
+uint64_t fib(uint64_t n) {
     if (n == 0) return 0;
     if (n == 1 || n == 2) return (f[n] = 1);
 
     if (f[n]) return f[n];
 
-    long long k = (n % 2 != 0) ? (n + 1) / 2 : n / 2;
+    uint64_t k = (n % 2 != 0) ? (n + 1) / 2 : n / 2;
 
     f[n] = (n % 2 != 0) ? (fib(k) * fib(k) + fib(k - 1) * fib(k - 1))
                         : (2 * fib(k - 1) + fib(k)) * fib(k);
@@ -29,7 +30,7 @@ long long fib(long long n) {
 
 int main() {
     // Main Function
-    for (long long i = 1; i < 93; i++) {
+    for (uint64_t i = 1; i < 93; i++) {
         std::cout << i << " th fibonacci number is " << fib(i) << "\n";
     }
     return 0;
