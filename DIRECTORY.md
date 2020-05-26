@@ -141,7 +141,6 @@
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/gcd_of_n_numbers.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
-  * [Measure Time Elapsed](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/measure_time_elapsed.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/paranthesis_matching.cpp)
   * [Pascal Triangle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/pascal_triangle.cpp)
