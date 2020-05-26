@@ -13,7 +13,9 @@ int main() {
     std::cin >> m;
     std::cin >> n;
 
-    int a[m][n];
+    int **a = new int *[m];
+    for (int i = 0; i < m; i++) a[i] = new int[n];
+
     std::cout << "Enter matrix elements:";
     std::cout << "\n";
 
@@ -37,4 +39,8 @@ int main() {
         std::cout << "Sparse matrix";
     else
         std::cout << "Not a sparse matrix";
+
+    for (int i = 0; i < m; i++) delete[] a[i];
+    delete[] a;
+    return 0;
 }
