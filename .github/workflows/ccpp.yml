@@ -17,8 +17,6 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - name: Install requirements
-        run: sudo apt -qq install ninja-build
       - name: configure
         run: cmake -G Ninja -B ./build -S .
       - name: build
