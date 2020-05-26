@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(MSVC)
-    set(CMAKE_CXX_STANDARD 14)
+    # set(CMAKE_CXX_STANDARD 14)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
 endif(MSVC)
 
@@ -50,6 +50,7 @@ endif()
 
 add_subdirectory(math)
 add_subdirectory(others)
+add_subdirectory(strings)
 add_subdirectory(computer_oriented_statistical_methods)
 
 if(USE_OPENMP)
