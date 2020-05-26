@@ -8,6 +8,14 @@ project(Algorithms_in_C++
 # set(CMAKE_CXX_CPPLINT "~/anaconda3/bin/cpplint --filter=-legal/copyright --std=c++11")
 # find_program(CLANG_FORMAT "clang-format")
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+if(MSVC)
+    set(CMAKE_CXX_STANDARD 14)
+    add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
+endif(MSVC)
+
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 
 cmake_policy(SET CMP0054 NEW)
@@ -40,21 +48,13 @@ if(DOXYGEN_FOUND)
     )
 endif()
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-if(MSVC)
-    add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
-    add_compile_options(/Za)
-endif(MSVC)
-
 add_subdirectory(math)
 add_subdirectory(others)
 add_subdirectory(computer_oriented_statistical_methods)
 
 if(USE_OPENMP)
     find_package(OpenMP)
-    if (OpenMP_C_FOUND)
+    if (OpenMP_CXX_FOUND)
         message(STATUS "Building with OpenMP Multithreading.")
     else()
         message(STATUS "No OpenMP found, no multithreading.")

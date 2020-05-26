@@ -1,22 +1,29 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstdint>
-#include <cassert>
-#include <ctime>
-#include <cmath>
-
-/*
-    Program that computes a^b in O(logN) time.
+/**
+ * @file
+    Program that computes \f$a^b\f$ in \f$O(logN)\f$ time.
     It is based on formula that:
-        case1) if b is even: a^b = a^(b/2) * a^(b/2) = (a^(b/2))ˆ2
-        case2) if b is odd: a^b = a^((b-1)/2) * a^((b-1)/2) * a = (a^((b-1)/2))^2 * a
-    We can compute a^b recursively using above algorithm.
+    1. if \f$b\f$ is even: \f$a^b = a^\frac{b}{2} \cdot a^\frac{b}{2} =
+ {a^\frac{b}{2}}^2\f$
+    2. if \f$b\f$ is odd: \f$a^b = a^\frac{b-1}{2} \cdot
+ a^\frac{b-1}{2} \cdot a = {a^\frac{b-1}{2}}^2 \cdot a\f$
+
+ We can compute \f$a^b\f$
+ recursively using above algorithm.
 */
 
+#include <cassert>
+#include <cmath>
+#include <cstdint>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+/**
+ * algorithm implementation for \f$a^b\f$
+ */
 double fast_power_recursive(int64_t a, int64_t b) {
     // negative power. a^b = 1 / (a^-b)
-    if (b < 0)
-        return 1.0 / fast_power_recursive(a, -b);
+    if (b < 0) return 1.0 / fast_power_recursive(a, -b);
 
     if (b == 0) return 1;
     int64_t bottom = fast_power_recursive(a, b >> 1);
@@ -31,14 +38,13 @@ double fast_power_recursive(int64_t a, int64_t b) {
     return result;
 }
 
-/*
+/**
     Same algorithm with little different formula.
     It still calculates in O(logN)
 */
 double fast_power_linear(int64_t a, int64_t b) {
     // negative power. a^b = 1 / (a^-b)
-    if (b < 0)
-        return 1.0 / fast_power_linear(a, -b);
+    if (b < 0) return 1.0 / fast_power_linear(a, -b);
 
     double result = 1;
     while (b) {
@@ -50,30 +56,28 @@ double fast_power_linear(int64_t a, int64_t b) {
 }
 
 int main() {
-    std::srand(time(NULL));
+    std::srand(std::time(nullptr));
     std::ios_base::sync_with_stdio(false);
 
     std::cout << "Testing..." << std::endl;
     for (int i = 0; i < 20; i++) {
-        unsigned int *rand1, *rand2;
-        int a = rand_r(rand1) % 20 - 10;
-        int b = rand_r(rand2) % 20 - 10;
+        int a = std::rand() % 20 - 10;
+        int b = std::rand() % 20 - 10;
         std::cout << std::endl << "Calculating " << a << "^" << b << std::endl;
         assert(fast_power_recursive(a, b) == std::pow(a, b));
         assert(fast_power_linear(a, b) == std::pow(a, b));
 
-        std::cout << "------ " << a << "^" << b << " = "<<
-            fast_power_recursive(a, b) << std::endl;
+        std::cout << "------ " << a << "^" << b << " = "
+                  << fast_power_recursive(a, b) << std::endl;
     }
 
     int64_t a, b;
     std::cin >> a >> b;
 
-    std::cout << a << "^" << b << " = "<<
-        fast_power_recursive(a, b) << std::endl;
+    std::cout << a << "^" << b << " = " << fast_power_recursive(a, b)
+              << std::endl;
 
-    std::cout << a << "^" << b << " = "<<
-        fast_power_linear(a, b) << std::endl;
+    std::cout << a << "^" << b << " = " << fast_power_linear(a, b) << std::endl;
 
     return 0;
 }
