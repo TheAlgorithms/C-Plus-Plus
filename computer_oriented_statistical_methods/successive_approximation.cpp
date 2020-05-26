@@ -1,9 +1,8 @@
-
 #include <cmath>
 #include <iostream>
 
-float eq(float y) { return ((3 * y) - (cos(y)) - 2); }
-float eqd(float y) { return ((0.5) * ((cos(y)) + 2)); }
+static float eq(float y) { return ((3 * y) - (cos(y)) - 2); }
+static float eqd(float y) { return ((0.5) * ((cos(y)) + 2)); }
 
 int main() {
     float y, x1, x2, x3, sum, s, a, f1, f2, gd;

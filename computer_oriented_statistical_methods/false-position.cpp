@@ -1,9 +1,11 @@
-#include<stdlib.h>
-#include <math.h>
+#include <cmath>
+#include <cstdlib>
 #include <iostream>
-float eq(float i) {
+
+static float eq(float i) {
     return (pow(i, 3) - (4 * i) - 9);  // origial equation
 }
+
 int main() {
     float a, b, z, c, m, n;
     system("clear");
@@ -12,12 +14,13 @@ int main() {
         if (z >= 0) {
             b = i;
             a = --i;
-            goto START;
-            }
+            break;
         }
-    START:
+    }
+
     std::cout << "\nFirst initial: " << a;
     std::cout << "\nSecond initial: " << b;
+
     for (int i = 0; i < 100; i++) {
         float h, d;
         m = eq(a);
@@ -26,10 +29,10 @@ int main() {
         a = c;
         z = eq(c);
         if (z > 0 && z < 0.09) {  // stoping criteria
-            goto END;
+            break;
         }
     }
-    END:
+
     std::cout << "\n\nRoot: " << c;
-    system("pause");
+    return 0;
 }

@@ -1,7 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-float eq(float i) {
+static float eq(float i) {
     return (pow(i, 3) - (4 * i) - 9);  // original equation
 }
 

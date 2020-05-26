@@ -1,10 +1,11 @@
 #include <cmath>
 #include <iostream>
 
-float eq(float i) {
+static float eq(float i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
-float eq_der(float i) {
+
+static float eq_der(float i) {
     return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
 }
 
