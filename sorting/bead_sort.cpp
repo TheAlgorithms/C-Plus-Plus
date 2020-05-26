@@ -12,8 +12,8 @@ void beadSort(int *a, int len) {
         if (a[i] > max) max = a[i];
 
     // allocating memory
-    unsigned char beads[max * len];
-    memset(beads, 0, sizeof(beads));
+    unsigned char *beads = new unsigned char[max * len];
+    memset(beads, 0, max * len);
 
     // mark the beads
     for (int i = 0; i < len; i++)
@@ -39,6 +39,7 @@ void beadSort(int *a, int len) {
 
         a[i] = j;
     }
+    delete[] beads;
 }
 
 // driver function to test the algorithm
