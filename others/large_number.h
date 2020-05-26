@@ -177,7 +177,7 @@ class large_number {
      * operator overload to increment (postfix)
      **/
     large_number &operator++(int) {
-        large_number tmp(_digits);
+        static large_number tmp(_digits);
         ++(*this);
         return tmp;
     }
@@ -212,7 +212,7 @@ class large_number {
      **/
     template <class T>
     friend large_number &operator+(const large_number &a, const T &b) {
-        large_number c = a;
+        static large_number c = a;
         c += b;
         return c;
     }
