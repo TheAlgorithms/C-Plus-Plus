@@ -11,10 +11,11 @@
 /// Compute double factorial using iterative method
 uint64_t double_factorial_iterative(uint64_t n) {
     uint64_t res = 1;
-    for (uint64_t i = n; i >= 0; i -= 2) {
+    for (uint64_t i = n;; i -= 2) {
         if (i == 0 || i == 1) return res;
         res *= i;
     }
+    return res;
 }
 
 /// Compute double factorial using resursive method.
