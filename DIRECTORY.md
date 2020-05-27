@@ -140,6 +140,8 @@
   * [Fibonacci Fast](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fibonacci_fast.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/gcd_of_n_numbers.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
+  * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/large_factorial.cpp)
+  * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/large_number.h)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/paranthesis_matching.cpp)
