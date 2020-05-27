@@ -61,6 +61,7 @@ void double_linked_list::remove(int x) {
     t->prev->next = t->next;
     t->next->prev = t->prev;
   }
+  delete t;
 }
 
 void double_linked_list::search(int x) {
