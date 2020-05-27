@@ -1,11 +1,14 @@
 /**
- * Computes N^th Fibonacci number given as
+ * @file
+ * @brief Computes N^th Fibonacci number given as
  * input argument. Uses custom build arbitrary integers library
  * to perform additions and other operations.
  *
  * Took 0.608246 seconds to compute 50,000^th Fibonacci
  * number that contains 10450 digits!
- **/
+ *
+ * @see fibonacci.cpp
+ */
 
 #include <cinttypes>
 #include <ctime>
@@ -13,6 +16,10 @@
 
 #include "./large_number.h"
 
+/** Compute fibonacci numbers using the relation
+ * \f[f(n)=f(n-1)+f(n-2)\f]
+ * and returns the result as a large_number type.
+ */
 large_number fib(uint64_t n) {
     large_number f0(1);
     large_number f1(1);
