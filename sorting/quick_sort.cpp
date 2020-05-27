@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-/* C implementation QuickSort */
-#include <iostream>
-
-int partition(int arr[], int low, int high) {
-    int pivot = arr[high];  // pivot
-    int i = (low - 1);      // Index of smaller element
-=======
 /**
- *
- *      copyright The Algorithms
- *      Author - 
- *      Correction - ayaankhan98
+ * @file
+ * @brief Quick sort algorithm
  *
  * Implementation Details -
  *      Quick Sort is a divide and conquer algorithm. It picks and element as
@@ -35,28 +25,23 @@ int partition(int arr[], int low, int high) {
 #include <iostream>
 
 /**
- *      This function takes last element as pivot, places  
- *      the pivot element at its correct position in sorted  
- *      array, and places all smaller (smaller than pivot)  
- *      to left of pivot and all greater elements to right  
- *      of pivot 
+ *      This function takes last element as pivot, places
+ *      the pivot element at its correct position in sorted
+ *      array, and places all smaller (smaller than pivot)
+ *      to left of pivot and all greater elements to right
+ *      of pivot
  *
  */
 
 int partition(int arr[], int low, int high) {
-    int pivot = arr[high];    // taking the last element as pivot
-    int i = (low - 1);        // Index of smaller element
->>>>>>> major-corrections-to-files
+    int pivot = arr[high];  // taking the last element as pivot
+    int i = (low - 1);      // Index of smaller element
 
     for (int j = low; j < high; j++) {
         // If current element is smaller than or
         // equal to pivot
         if (arr[j] <= pivot) {
-<<<<<<< HEAD
             i++;  // increment index of smaller element
-=======
-            i++;   // increment index of smaller element
->>>>>>> major-corrections-to-files
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
@@ -68,41 +53,27 @@ int partition(int arr[], int low, int high) {
     return (i + 1);
 }
 
-<<<<<<< HEAD
+/**
+ *      The main function that implements QuickSort
+ *      arr[] --> Array to be sorted,
+ *      low --> Starting index,
+ *      high --> Ending index
+ */
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int p = partition(arr, low, high);
-
-=======
-
-/** 
- *      The main function that implements QuickSort  
- *      arr[] --> Array to be sorted,  
- *      low --> Starting index,  
- *      high --> Ending index 
-*/
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
-        int p = partition(arr, low, high);
->>>>>>> major-corrections-to-files
         quickSort(arr, low, p - 1);
         quickSort(arr, p + 1, high);
     }
 }
 
-<<<<<<< HEAD
-void show(int arr[], int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << "\n";
-=======
 // prints the array after sorting
 void show(int arr[], int size) {
-    for (int i = 0; i < size; i++)
-        std::cout << arr[i] << " ";
+    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
->>>>>>> major-corrections-to-files
 }
 
-// Driver program to test above functions
+/** Driver program to test above functions */
 int main() {
     int size;
     std::cout << "\nEnter the number of elements : ";
