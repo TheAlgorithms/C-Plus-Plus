@@ -4,7 +4,7 @@
  * *recursive form* of
  * [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
  *
- * @see gcd_iterative_euclidean.cpp
+ * @see gcd_iterative_euclidean.cpp, gcd_of_n_numbers.cpp
  */
 #include <iostream>
 
@@ -21,14 +21,18 @@ int gcd(int num1, int num2) {
     }
 
     // Everything divides 0
-    if (num1 == 0) return num2;
-    if (num2 == 0) return num1;
+    if (num1 == 0)
+        return num2;
+    if (num2 == 0)
+        return num1;
 
     // base case
-    if (num1 == num2) return num1;
+    if (num1 == num2)
+        return num1;
 
     // a is greater
-    if (num1 > num2) return gcd(num1 - num2, num2);
+    if (num1 > num2)
+        return gcd(num1 - num2, num2);
     return gcd(num1, num2 - num1);
 }
 

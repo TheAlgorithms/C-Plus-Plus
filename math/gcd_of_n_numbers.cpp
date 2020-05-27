@@ -3,8 +3,7 @@
  * @brief This program aims at calculating the GCD of n numbers by division
  * method
  *
- * @see ../math/greatest_common_divisor.cpp
- * greatest_common_divisor_euclidean.cpp
+ * @see gcd_iterative_euclidean.cpp, gcd_recursive_euclidean.cpp
  */
 #include <iostream>
 

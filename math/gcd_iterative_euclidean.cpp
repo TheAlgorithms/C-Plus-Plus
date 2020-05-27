@@ -4,7 +4,7 @@
  * *iterative form* of
  * [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
  *
- * @see gcd_recursive_euclidean.cpp
+ * @see gcd_recursive_euclidean.cpp, gcd_of_n_numbers.cpp
  */
 #include <iostream>
 #include <stdexcept>
