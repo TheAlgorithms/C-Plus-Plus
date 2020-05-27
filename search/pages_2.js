@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contribution_20guidelines',['CONTRIBUTION GUIDELINES',['../d8/d08/md_CONTRIBUTION.html',1,'']]]
+  ['readme',['README',['../d9/d2a/md_math_README.html',1,'']]]
 ];

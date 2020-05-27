@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sparse_5fmatrix_2ecpp',['sparse_matrix.cpp',['../d3/d19/sparse__matrix_8cpp.html',1,'']]]
+  ['ordinary_5fleast_5fsquares_5fregressor_2ecpp',['ordinary_least_squares_regressor.cpp',['../dc/d38/ordinary__least__squares__regressor_8cpp.html',1,'']]]
 ];

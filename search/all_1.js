@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bit',['Bit',['../d7/d1e/classBit.html',1,'']]],
-  ['btree',['Btree',['../dd/db3/structBtree.html',1,'']]],
-  ['backtracking',['Backtracking',['../d3/dd7/md_DIRECTORY.html',1,'']]]
+  ['cll',['cll',['../d5/d15/classcll.html',1,'']]],
+  ['compare',['compare',['../d1/db3/structcompare.html',1,'']]],
+  ['contribution_20guidelines',['CONTRIBUTION GUIDELINES',['../d8/d08/md_CONTRIBUTION.html',1,'']]]
 ];

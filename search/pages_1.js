@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['backtracking',['Backtracking',['../d3/dd7/md_DIRECTORY.html',1,'']]]
+  ['contribution_20guidelines',['CONTRIBUTION GUIDELINES',['../d8/d08/md_CONTRIBUTION.html',1,'']]]
 ];

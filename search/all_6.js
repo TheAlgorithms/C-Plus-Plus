@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get_5finverse',['get_inverse',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a98ab8f75d981088369b89b8be2182483',1,'ordinary_least_squares_regressor.cpp']]],
-  ['get_5ftranspose',['get_transpose',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a889f9de199fa793497c864d8e493af05',1,'ordinary_least_squares_regressor.cpp']]],
-  ['graph',['Graph',['../d2/d62/classGraph.html',1,'Graph'],['../dd/d9b/classgraph.html',1,'graph']]]
+  ['is_5fsquare',['is_square',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f',1,'ordinary_least_squares_regressor.cpp']]],
+  ['item',['Item',['../d1/d83/structItem.html',1,'']]]
 ];
