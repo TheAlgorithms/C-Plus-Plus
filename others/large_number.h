@@ -1,8 +1,8 @@
 /**
  * @file
- * @author Krishna Vedala
- * @email krishna (dot) vedala (at) ieee (dot) org
- **/
+ * @brief Library to perform arithmatic operations on arbitrarily large
+ * numbers.
+ */
 
 #ifndef OTHERS_LARGE_NUMBER_H_
 #define OTHERS_LARGE_NUMBER_H_
@@ -53,7 +53,8 @@ class large_number {
     explicit large_number(char const *number_str) {
         for (size_t i = strlen(number_str); i > 0; i--) {
             unsigned char a = number_str[i - 1] - '0';
-            if (a >= 0 && a <= 9) _digits.push_back(a);
+            if (a >= 0 && a <= 9)
+                _digits.push_back(a);
         }
     }
 
@@ -152,9 +153,11 @@ class large_number {
      **/
     friend bool operator==(large_number const &a, large_number const &b) {
         size_t N = a.num_digits();
-        if (N != b.num_digits()) return false;
+        if (N != b.num_digits())
+            return false;
         for (size_t i = 0; i < N; i++)
-            if (a[i] != b[i]) return false;
+            if (a[i] != b[i])
+                return false;
         return true;
     }
 
@@ -192,8 +195,10 @@ class large_number {
         unsigned int carry = 0;
         size_t i;
         for (i = 0; i < max_L || carry != 0; i++) {
-            if (i < b->num_digits()) carry += (*b)[i];
-            if (i < this->num_digits()) carry += (*this)[i];
+            if (i < b->num_digits())
+                carry += (*b)[i];
+            if (i < this->num_digits())
+                carry += (*this)[i];
             if (i < this->num_digits())
                 (*this)[i] = carry % 10;
             else
