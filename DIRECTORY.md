@@ -148,7 +148,6 @@
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/paranthesis_matching.cpp)
   * [Pascal Triangle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/pascal_triangle.cpp)
   * [Primality Test](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/primality_test.cpp)
-  * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/sieve_of_Eratosthenes.cpp)
   * [Smallest-Circle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/smallest-circle.cpp)
   * [Sparse Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/sparse_matrix.cpp)
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
