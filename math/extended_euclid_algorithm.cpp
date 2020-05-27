@@ -16,15 +16,15 @@
  * function to update the coefficients per iteration
  * \f[r_0,\,r = r,\, r_0 - \text{quotient}\times r\f]
  *
- * @param[in,out] r signed
- * @param[in,out] r0 signed
- * @param[in] quotient  unsigned input
+ * @param[in,out] r signed or unsigned
+ * @param[in,out] r0 signed or unsigned
+ * @param[in] quotient  unsigned
  */
 template <typename T, typename T2>
-inline void update_step(T &r, T &r0, const T2 quotient) {
-    T temp = r;
-    r = r0 - (quotient * temp);
-    r0 = temp;
+inline void update_step(T *r, T *r0, const T2 quotient) {
+    T temp = *r;
+    *r = *r0 - (quotient * temp);
+    *r0 = temp;
 }
 
 /**
@@ -47,9 +47,9 @@ void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
 
     while (r != 0) {
         T1 quotient = r0 / r;
-        update_step(r, r0, quotient);
-        update_step(s, s0, quotient);
-        update_step(t, t0, quotient);
+        update_step(&r, &r0, quotient);
+        update_step(&s, &s0, quotient);
+        update_step(&t, &t0, quotient);
     }
     *GCD = r0;
     *x = s0;
