@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['main',['main',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'ordinary_least_squares_regressor.cpp']]],
-  ['merge',['merge',['../d0/db6/non__recursive__merge__sort_8cpp.html#aee1ab42c3a838aa040efd8e784f4a9ab',1,'non_recursive_merge_sort.cpp']]],
-  ['minheap',['MinHeap',['../dc/d1f/classMinHeap.html',1,'']]],
-  ['minheapnode',['MinHeapNode',['../db/d22/structMinHeapNode.html',1,'']]],
-  ['mst',['mst',['../d1/d77/structmst.html',1,'']]]
+  ['large_5ffactorial_2ecpp',['large_factorial.cpp',['../d6/d9d/large__factorial_8cpp.html',1,'']]],
+  ['large_5fnumber',['large_number',['../db/d82/classlarge__number.html',1,'large_number'],['../db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337',1,'large_number::large_number()'],['../db/d82/classlarge__number.html#af4598f1f2794b5e17e10c25e0501e41a',1,'large_number::large_number(int n)'],['../db/d82/classlarge__number.html#a0b1efd203274e38a67b78937dfb9b872',1,'large_number::large_number(const large_number &amp;a)'],['../db/d82/classlarge__number.html#a76ddf1ed1b00fb8c107ea56f7f91e42f',1,'large_number::large_number(std::vector&lt; unsigned char &gt; &amp;vec)']]],
+  ['large_5fnumber_2eh',['large_number.h',['../d4/d86/large__number_8h.html',1,'']]],
+  ['lca',['lca',['../dd/df4/structlca.html',1,'']]],
+  ['linkedlist',['linkedlist',['../d0/dff/structlinkedlist.html',1,'']]],
+  ['list',['list',['../d8/d10/structlist.html',1,'']]],
+  ['list_3c_20int_20_3e',['list&lt; int &gt;',['../d8/d10/structlist.html',1,'']]]
 ];

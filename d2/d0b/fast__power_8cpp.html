@@ -76,6 +76,9 @@ $(function() {
 <div class="title">fast_power.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Faster computation for \(a^b\).  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
@@ -91,37 +94,41 @@ Include dependency graph for fast_power.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a39936d17cc4eeb3b366285bd1eb01456"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d0b/fast__power_8cpp.html#a39936d17cc4eeb3b366285bd1eb01456">fast_power_recursive</a> (int64_t a, int64_t b)</td></tr>
-<tr class="separator:a39936d17cc4eeb3b366285bd1eb01456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34f03844368ff7e99b683e53018b21a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d0b/fast__power_8cpp.html#ae34f03844368ff7e99b683e53018b21a">fast_power_linear</a> (int64_t a, int64_t b)</td></tr>
-<tr class="separator:ae34f03844368ff7e99b683e53018b21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="memitem:a8399b847626e5bba983cab7c7918b445"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8399b847626e5bba983cab7c7918b445"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a> (T a, T b)</td></tr>
+<tr class="separator:a8399b847626e5bba983cab7c7918b445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4e3f0099a6975b74a314a35bd0f94d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0d4e3f0099a6975b74a314a35bd0f94d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a> (T a, T b)</td></tr>
+<tr class="separator:a0d4e3f0099a6975b74a314a35bd0f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d0b/fast__power_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Program that computes \(a^b\) in \(O(logN)\) time. It is based on formula that:</p><ol type="1">
+<div class="textblock"><p>Faster computation for \(a^b\). </p>
+<p>Program that computes \(a^b\) in \(O(logN)\) time. It is based on formula that:</p><ol type="1">
 <li>if \(b\) is even: \(a^b = a^\frac{b}{2} \cdot a^\frac{b}{2} = {a^\frac{b}{2}}^2\)</li>
 <li>if \(b\) is odd: \(a^b = a^\frac{b-1}{2} \cdot a^\frac{b-1}{2} \cdot a = {a^\frac{b-1}{2}}^2 \cdot a\)</li>
 </ol>
 <p>We can compute \(a^b\) recursively using above algorithm. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae34f03844368ff7e99b683e53018b21a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae34f03844368ff7e99b683e53018b21a">&#9670;&nbsp;</a></span>fast_power_linear()</h2>
+<a id="a0d4e3f0099a6975b74a314a35bd0f94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4e3f0099a6975b74a314a35bd0f94d">&#9670;&nbsp;</a></span>fast_power_linear()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">double fast_power_linear </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -131,33 +138,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Same algorithm with little different formula. It still calculates in O(logN) </p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                               {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// negative power. a^b = 1 / (a^-b)</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (b &lt; 0) <span class="keywordflow">return</span> 1.0 / <a class="code" href="../../d2/d0b/fast__power_8cpp.html#ae34f03844368ff7e99b683e53018b21a">fast_power_linear</a>(a, -b);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> result = 1;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">while</span> (b) {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (b &amp; 1) result = result * a;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        a = a * a;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        b = b &gt;&gt; 1;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="fast__power_8cpp_html_ae34f03844368ff7e99b683e53018b21a"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#ae34f03844368ff7e99b683e53018b21a">fast_power_linear</a></div><div class="ttdeci">double fast_power_linear(int64_t a, int64_t b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:45</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d0b/fast__power_8cpp_ae34f03844368ff7e99b683e53018b21a_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<p>Same algorithm with little different formula. It still calculates in \(O(\log N)\) </p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                   {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// negative power. a^b = 1 / (a^-b)</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (b &lt; 0) <span class="keywordflow">return</span> 1.0 / <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a>(a, -b);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">double</span> result = 1;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (b) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (b &amp; 1) result = result * a;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        a = a * a;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        b = b &gt;&gt; 1;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="fast__power_8cpp_html_a0d4e3f0099a6975b74a314a35bd0f94d"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a></div><div class="ttdeci">double fast_power_linear(T a, T b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:48</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-
-</div>
-</div>
-<a id="a39936d17cc4eeb3b366285bd1eb01456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39936d17cc4eeb3b366285bd1eb01456">&#9670;&nbsp;</a></span>fast_power_recursive()</h2>
+<a id="a8399b847626e5bba983cab7c7918b445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8399b847626e5bba983cab7c7918b445">&#9670;&nbsp;</a></span>fast_power_recursive()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">double fast_power_recursive </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -168,8 +171,35 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>algorithm implementation for \(a^b\) </p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                  {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// negative power. a^b = 1 / (a^-b)</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (b &lt; 0) <span class="keywordflow">return</span> 1.0 / <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a39936d17cc4eeb3b366285bd1eb01456">fast_power_recursive</a>(a, -b);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (b == 0) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    int64_t bottom = <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a39936d17cc4eeb3b366285bd1eb01456">fast_power_recursive</a>(a, b &gt;&gt; 1);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Since it is integer division b/2 = (b-1)/2 where b is odd.</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Therefore, case2 is easily solved by integer division.</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    int64_t result;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> ((b &amp; 1) == 0)  <span class="comment">// case1</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        result = bottom * bottom;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">else</span>  <span class="comment">// case2</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        result = bottom * bottom * a;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="fast__power_8cpp_html_a39936d17cc4eeb3b366285bd1eb01456"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#a39936d17cc4eeb3b366285bd1eb01456">fast_power_recursive</a></div><div class="ttdeci">double fast_power_recursive(int64_t a, int64_t b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:24</div></div>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                      {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// negative power. a^b = 1 / (a^-b)</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (b &lt; 0) <span class="keywordflow">return</span> 1.0 / <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a>(a, -b);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (b == 0) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    T bottom = <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a>(a, b &gt;&gt; 1);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Since it is integer division b/2 = (b-1)/2 where b is odd.</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Therefore, case2 is easily solved by integer division.</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> result;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> ((b &amp; 1) == 0)  <span class="comment">// case1</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        result = bottom * bottom;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">else</span>  <span class="comment">// case2</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        result = bottom * bottom * a;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="fast__power_8cpp_html_a8399b847626e5bba983cab7c7918b445"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a></div><div class="ttdeci">double fast_power_recursive(T a, T b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:26</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Main function </p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;           {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::srand(std::time(<span class="keyword">nullptr</span>));</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::ios_base::sync_with_stdio(<span class="keyword">false</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Testing...&quot;</span> &lt;&lt; std::endl;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> a = std::rand() % 20 - 10;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> b = std::rand() % 20 - 10;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Calculating &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; b &lt;&lt; std::endl;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        assert(<a class="code" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a>(a, b) == std::pow(a, b));</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        assert(<a class="code" href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a>(a, b) == std::pow(a, b));</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;------ &quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot; = &quot;</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                  &lt;&lt; <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a>(a, b) &lt;&lt; std::endl;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    int64_t a, b;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::cin &gt;&gt; a &gt;&gt; b;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a>(a, b)</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;              &lt;&lt; std::endl;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; <a class="code" href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a>(a, b) &lt;&lt; std::endl;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="fast__power_8cpp_html_a8399b847626e5bba983cab7c7918b445"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445">fast_power_recursive</a></div><div class="ttdeci">double fast_power_recursive(T a, T b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:26</div></div>
+<div class="ttc" id="fast__power_8cpp_html_a0d4e3f0099a6975b74a314a35bd0f94d"><div class="ttname"><a href="../../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d">fast_power_linear</a></div><div class="ttdeci">double fast_power_linear(T a, T b)</div><div class="ttdef"><b>Definition:</b> fast_power.cpp:48</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d0b/fast__power_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="256" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->

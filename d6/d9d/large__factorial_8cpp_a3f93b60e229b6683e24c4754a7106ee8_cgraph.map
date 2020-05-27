@@ -1,0 +1,5 @@
+<map id="test1" name="test1">
+<area shape="rect" id="node2" href="$db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d" title="large_number::num_digits" alt="" coords="316,5,487,32"/>
+<area shape="rect" id="node3" href="$db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98" title="large_number::digit_char" alt="" coords="104,56,268,83"/>
+<area shape="rect" id="node4" href="$db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615" title="large_number::add_digit" alt="" coords="321,56,481,83"/>
+</map>

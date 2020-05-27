@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fast_5fpower_2ecpp',['fast_power.cpp',['../d2/d0b/fast__power_8cpp.html',1,'']]]
+  ['double_5ffactorial_2ecpp',['double_factorial.cpp',['../d7/d89/double__factorial_8cpp.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['non_5frecursive_5fmerge_5fsort_2ecpp',['non_recursive_merge_sort.cpp',['../d0/db6/non__recursive__merge__sort_8cpp.html',1,'']]]
+  ['eulers_5ftotient_5ffunction_2ecpp',['eulers_totient_function.cpp',['../da/d23/eulers__totient__function_8cpp.html',1,'']]],
+  ['extended_5feuclid_5falgorithm_2ecpp',['extended_euclid_algorithm.cpp',['../d9/d5d/extended__euclid__algorithm_8cpp.html',1,'']]]
 ];

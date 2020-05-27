@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['bit',['Bit',['../d7/d1e/classBit.html',1,'']]],
-  ['btree',['Btree',['../dd/db3/structBtree.html',1,'']]],
-  ['bubble_5fsort_2ecpp',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
-  ['backtracking',['Backtracking',['../d3/dd7/md_DIRECTORY.html',1,'']]]
+  ['add_5fdigit',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]]
 ];

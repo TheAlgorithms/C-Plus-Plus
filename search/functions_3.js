@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'ordinary_least_squares_regressor.cpp']]],
-  ['merge',['merge',['../d0/db6/non__recursive__merge__sort_8cpp.html#aee1ab42c3a838aa040efd8e784f4a9ab',1,'non_recursive_merge_sort.cpp']]]
+  ['extendedeuclid',['extendedEuclid',['../d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d',1,'extended_euclid_algorithm.cpp']]],
+  ['extendedeuclid_5f1',['extendedEuclid_1',['../d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25',1,'extended_euclid_algorithm.cpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../d9/d2a/md_math_README.html',1,'']]]
+  ['prime_20factorization',['Prime factorization',['../d7/d7f/section.html',1,'']]]
 ];

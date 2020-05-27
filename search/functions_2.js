@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['is_5fsquare',['is_square',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f',1,'ordinary_least_squares_regressor.cpp']]]
+  ['digit_5fchar',['digit_char',['../db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98',1,'large_number']]],
+  ['double_5ffactorial_5fiterative',['double_factorial_iterative',['../d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26',1,'double_factorial.cpp']]],
+  ['double_5ffactorial_5frecursive',['double_factorial_recursive',['../d7/d89/double__factorial_8cpp.html#a68ba20fed2ce427f6469c7689437829d',1,'double_factorial.cpp']]]
 ];

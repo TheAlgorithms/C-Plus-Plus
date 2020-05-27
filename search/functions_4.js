@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['non_5frecursive_5fmerge_5fsort',['non_recursive_merge_sort',['../d0/db6/non__recursive__merge__sort_8cpp.html#a797be8541ef8748f02c5ef74b3523e4b',1,'non_recursive_merge_sort(const Iterator first, const Iterator last, const size_t n):&#160;non_recursive_merge_sort.cpp'],['../d0/db6/non__recursive__merge__sort_8cpp.html#af9efd27abc01f33180960004cd0009d9',1,'non_recursive_merge_sort(const Iterator first, const size_t n):&#160;non_recursive_merge_sort.cpp'],['../d0/db6/non__recursive__merge__sort_8cpp.html#a53daee11a3b0d34cf186b161edb77a5e',1,'non_recursive_merge_sort(const Iterator first, const Iterator last):&#160;non_recursive_merge_sort.cpp']]]
+  ['fast_5fpower_5flinear',['fast_power_linear',['../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d',1,'fast_power.cpp']]],
+  ['fast_5fpower_5frecursive',['fast_power_recursive',['../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445',1,'fast_power.cpp']]],
+  ['fibonacci',['fibonacci',['../d9/d89/fibonacci_8cpp.html#a4bc27e88a3da5cc590f1f78622019a7b',1,'fibonacci.cpp']]],
+  ['fit_5fols_5fregressor',['fit_OLS_regressor',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045',1,'ordinary_least_squares_regressor.cpp']]]
 ];
