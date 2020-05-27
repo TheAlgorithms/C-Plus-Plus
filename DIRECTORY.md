@@ -197,6 +197,7 @@
   * [Numericstringsort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/NumericStringSort.cpp)
   * [Oddeven Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/OddEven%20Sort.cpp)
   * [Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Quick%20Sort.cpp)
+  * [Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp)
   * [Radix Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Radix%20Sort.cpp)
   * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Selection%20Sort.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Shell%20Sort.cpp)
