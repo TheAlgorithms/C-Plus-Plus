@@ -1,4 +1,9 @@
-/// Copyright 2020 @author Albirair
+/**
+ * Copyright 2020 @author Albirair
+ * @file
+ *
+ * A generic implementation of binary_search.
+ */
 #include "./binary_search.h"
 #include <iostream>
 #include <vector>
