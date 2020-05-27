@@ -4,25 +4,27 @@
 // This is also used in finding Modular multiplicative inverse of a number.
 // (A * B)%M == 1 Here B is the MMI of A for given M,
 // so extendedEuclid (A, M) gives B.
+template <typename T, typename T2>
+void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
+    if (B > A) std::swap(A, B);  // Ensure that A >= B
 
-int d, x, y;
-void extendedEuclid(int A, int B) {
     if (B == 0) {
-        d = A;
-        x = 1;
-        y = 0;
+        *GCD = A;
+        *x = 1;
+        *y = 0;
     } else {
-        extendedEuclid(B, A%B);
-        int temp = x;
-        x = y;
-        y = temp - (A/B)*y;
+        extendedEuclid(B, A % B, GCD, x, y);
+        T2 temp = *x;
+        *x = *y;
+        *y = temp - (A / B) * (*y);
     }
 }
 
 int main() {
-    int a, b;
+    uint32_t a, b, gcd;
+    int32_t x, y;
     std::cin >> a >> b;
-    extendedEuclid(a, b);
-    std::cout << x << " " << y << std::endl;
+    extendedEuclid(a, b, &gcd, &x, &y);
+    std::cout << gcd << " " << x << " " << y << std::endl;
     return 0;
 }
