@@ -1,10 +1,18 @@
-#include <string.h>
-
+/**
+ * @file
+ * @brief Compute factorial of any arbitratily large number/
+ *
+ * @see factorial.cpp
+ */
+#include <cstring>
 #include <ctime>
 #include <iostream>
 
 #include "./large_number.h"
 
+/** Test implementation for 10! Result must be 3628800.
+ * @returns True if test pass else False
+ */
 bool test1() {
     std::cout << "---- Check 1\t";
     unsigned int i, number = 10;
@@ -34,6 +42,14 @@ bool test1() {
     return true;
 }
 
+/** Test implementation for 100! The result is the 156 digit number:
+ * ```
+ * 9332621544394415268169923885626670049071596826438162146859296389521759
+ * 9993229915608941463976156518286253697920827223758251185210916864000000
+ * 000000000000000000
+ * ```
+ * @returns True if test pass else False
+ */
 bool test2() {
     std::cout << "---- Check 2\t";
     unsigned int i, number = 100;
