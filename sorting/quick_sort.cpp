@@ -1,8 +1,25 @@
-/*
+/**
  *
  *      copyright The Algorithms
  *      Author - 
  *      Correction - ayaankhan98
+ *
+ * Implementation Details -
+ *      Quick Sort is a divide and conquer algorithm. It picks and element as
+ *      pivot and partition the given array around the picked pivot. There
+ *      are many different versions of quickSort that pick pivot in different
+ *      ways.
+ *
+ *      1. Always pick the first element as pivot
+ *      2. Always pick the last element as pivot (implemented below)
+ *      3. Pick a random element as pivot
+ *      4. Pick median as pivot
+ *
+ *      The key process in quickSort is partition(). Target of partition is,
+ *      given an array and an element x(say) of array as pivot, put x at it's
+ *      correct position in sorted array and put all smaller elements (samller
+ *      than x) before x, and put all greater elements (greater than x) after
+ *      x. All this should be done in linear time
  *
  */
 
@@ -10,7 +27,7 @@
 #include <iostream>
 
 int partition(int arr[], int low, int high) {
-    int pivot = arr[high];    // pivot
+    int pivot = arr[high];    // taking the last element as pivot
     int i = (low - 1);        // Index of smaller element
 
     for (int j = low; j < high; j++) {
@@ -44,7 +61,6 @@ void show(int arr[], int size) {
 }
 
 // Driver program to test above functions
-
 int main() {
     int size;
     std::cout << "\nEnter the number of elements : ";
