@@ -1,15 +1,25 @@
+/**
+ * @file
+ * @brief Prime factorization of positive integers
+ */
 #include <algorithm>
 #include <cstring>
 #include <iostream>
 #include <vector>
 
-// Declaring variables for maintaing prime numbers and to check whether a number
-// is prime or not
+/** Declaring variables for maintaing prime numbers and to check whether a
+ * number is prime or not
+ */
 bool isprime[1000006];
+
+/** list of prime numbers */
 std::vector<int> prime_numbers;
+
+/** list of prime factor-pairs */
 std::vector<std::pair<int, int>> factors;
 
-// Calculating prime number upto a given range
+/** Calculating prime number upto a given range
+ */
 void SieveOfEratosthenes(int N) {
     // initializes the array isprime
     memset(isprime, true, sizeof isprime);
@@ -25,7 +35,7 @@ void SieveOfEratosthenes(int N) {
     }
 }
 
-// Prime factorization of a number
+/** Prime factorization of a number */
 void prime_factorization(int num) {
     int number = num;
 
@@ -46,9 +56,7 @@ void prime_factorization(int num) {
     }
 }
 
-/*
-    I added a simple UI.
-*/
+/** Main program */
 int main() {
     int num;
     std::cout << "\t\tComputes the prime factorization\n\n";
