@@ -2,7 +2,8 @@
  * @file
  * Double factorial of a non-negative integer n, is defined as the product of
  * all the integers from 1 to n that have the same parity (odd or even) as n.
- * <br/>It is also called as semifactorial of a number and is denoted by `!!`
+ * <br/>It is also called as semifactorial of a number and is denoted by
+ * \f$n!!\f$
  */
 
 #include <cassert>
@@ -27,7 +28,7 @@ uint64_t double_factorial_recursive(uint64_t n) {
 
 /// main function
 int main() {
-    uint64_t n{};
+    uint64_t n;
     std::cin >> n;
     assert(n >= 0);
     std::cout << double_factorial_iterative(n);
