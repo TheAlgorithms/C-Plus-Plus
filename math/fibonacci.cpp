@@ -6,7 +6,7 @@
  * integer as input.
  * \f[\text{fib}(n) = \text{fib}(n-1) + \text{fib}(n-2)\f]
  *
- * @see fibonacci_large.cpp
+ * @see fibonacci_large.cpp, fibonacci_fast.cpp
  */
 #include <cassert>
 #include <iostream>
