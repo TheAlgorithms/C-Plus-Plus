@@ -1,15 +1,16 @@
 /**
  * @file
-    Program that computes \f$a^b\f$ in \f$O(logN)\f$ time.
-    It is based on formula that:
-    1. if \f$b\f$ is even: \f$a^b = a^\frac{b}{2} \cdot a^\frac{b}{2} =
- {a^\frac{b}{2}}^2\f$
-    2. if \f$b\f$ is odd: \f$a^b = a^\frac{b-1}{2} \cdot
- a^\frac{b-1}{2} \cdot a = {a^\frac{b-1}{2}}^2 \cdot a\f$
-
- We can compute \f$a^b\f$
- recursively using above algorithm.
-*/
+ * @brief Faster computation for \f$a^b\f$
+ *
+ * Program that computes \f$a^b\f$ in \f$O(logN)\f$ time.
+ * It is based on formula that:
+ * 1. if \f$b\f$ is even:
+ *  \f$a^b = a^\frac{b}{2} \cdot a^\frac{b}{2} = {a^\frac{b}{2}}^2\f$
+ * 2. if \f$b\f$ is odd: \f$a^b = a^\frac{b-1}{2}
+ *  \cdot a^\frac{b-1}{2} \cdot a = {a^\frac{b-1}{2}}^2 \cdot a\f$
+ *
+ * We can compute \f$a^b\f$ recursively using above algorithm.
+ */
 
 #include <cassert>
 #include <cmath>
@@ -41,7 +42,7 @@ double fast_power_recursive(T a, T b) {
 
 /**
     Same algorithm with little different formula.
-    It still calculates in O(logN)
+    It still calculates in \f$O(\log N)\f$
 */
 template <typename T>
 double fast_power_linear(T a, T b) {
@@ -57,6 +58,9 @@ double fast_power_linear(T a, T b) {
     return result;
 }
 
+/**
+ * Main function
+ */
 int main() {
     std::srand(std::time(nullptr));
     std::ios_base::sync_with_stdio(false);
