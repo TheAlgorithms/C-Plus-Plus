@@ -6,15 +6,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@master
         with:
           submodules: true
       - name: Install requirements
         run: |
-          sudo apt -qq -y update
-          sudo apt -qq install doxygen graphviz ninja-build
+          brew install graphviz ninja doxygen
       - name: configure
         run: cmake -G Ninja -B ./build -S .
       - name: build
