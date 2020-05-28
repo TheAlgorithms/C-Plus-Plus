@@ -12,6 +12,7 @@ struct Point {
 struct SegmentIntersection {
     inline bool intersect(Point first_point, Point second_point,
                                     Point third_point, Point forth_point) {
+        // check whether two line intersect or not...
         int direction1 = direction(third_point, forth_point, first_point);
         int direction2 = direction(third_point, forth_point, second_point);
         int direction3 = direction(first_point, second_point, third_point);
@@ -43,12 +44,14 @@ struct SegmentIntersection {
 
     inline int direction(Point first_point, Point second_point,
                                                     Point third_point) {
+        // check whether points are colinear, clockwise or counterclockwise...
         return ((third_point.x-first_point.x)*(second_point.y-first_point.y))-
             ((second_point.x-first_point.x) * (third_point.y-first_point.y));
     }
 
     inline bool on_segment(Point first_point, Point second_point,
                                                         Point third_point) {
+        // check whether two line overlap or not...
         if (std::min(first_point.x, second_point.x) <= third_point.x &&
             third_point.x <= std::max(first_point.x, second_point.x) &&
             std::min(first_point.y, second_point.y) <= third_point.y &&
