@@ -1,19 +1,38 @@
+/**
+ * @file
+ * @brief Pascal's triangle implementation
+ */
+#ifdef _MSC_VER
+#include <string>  // required for Visual C
+#else
 #include <cstring>
+#endif
+#include <iomanip>
 #include <iostream>
 
+/**
+ * Print the triangle
+ * \param [in] arr  2D-array containing Pascal numbers
+ * \param [in] n    depth of Pascal triangle to print
+ */
 void show_pascal(int **arr, int n) {
-    // pint Pascal's Triangle
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n + i; ++j) {
             if (arr[i][j] == 0)
-                std::cout << " ";
+                std::cout << std::setw(4) << " ";
             else
-                std::cout << arr[i][j];
+                std::cout << std::setw(4) << arr[i][j];
         }
         std::cout << std::endl;
     }
 }
 
+/**
+ * Print the triangle
+ * \param [in,out] arr  array containing Pascal numbers
+ * \param [in] n    depth of Pascal triangle to print
+ * \result arr pointer returned
+ */
 int **pascal_triangle(int **arr, int n) {
     for (int i = 0; i < n; ++i) {
         for (int j = n - i - 1; j < n + i; ++j) {
@@ -27,6 +46,9 @@ int **pascal_triangle(int **arr, int n) {
     return arr;
 }
 
+/**
+ * main function
+ */
 int main() {
     int n = 0;
 
