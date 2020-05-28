@@ -38,7 +38,7 @@ jobs:
 
           print("cpplint:")
           for cpp_file in cpp_files:
-            subprocess.run(["cpplint", "--filter=-legal/copyright"] + cpp_file, check=True, text=True)
+            subprocess.run(["cpplint", "--filter=-legal/copyright", cpp_file], check=True, text=True)
 
           print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
