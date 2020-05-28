@@ -1,10 +1,11 @@
 /** @file
  * A sparse matrix is a matrix which has number of zeroes greater than
- * \f$\frac{m*n}{2}\f$, where m and n are the dimensions of the matrix.
+ * \f$\frac{m\times n}{2}\f$, where m and n are the dimensions of the matrix.
  */
 
 #include <iostream>
 
+/** main function */
 int main() {
     int m, n;
     int counterZeros = 0;
@@ -30,7 +31,8 @@ int main() {
     // counts the zero's
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            if (a[i][j] == 0) counterZeros++;  // Counting number of zeroes
+            if (a[i][j] == 0)
+                counterZeros++;  // Counting number of zeroes
         }
     }
 

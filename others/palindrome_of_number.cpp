@@ -1,3 +1,10 @@
+/**
+ * @file
+ * @brief Check if a number is
+ * [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
+ *
+ * This program cheats by using the STL library's std::reverse function.
+ */
 #include <algorithm>
 #include <iostream>
 
@@ -8,17 +15,18 @@
 #include <cstring>
 #endif
 
+/** Main function */
 int main() {
     int num;
     std::cout << "Enter number = ";
     std::cin >> num;
 
-    std::string s1 = std::to_string(num);
+    std::string s1 = std::to_string(num);  // convert number to string
     std::string s2 = s1;
 
-    reverse(s1.begin(), s1.end());
+    std::reverse(s1.begin(), s1.end());  // reverse the string
 
-    if (s1 == s2)
+    if (s1 == s2)  // check if reverse and original string are identical
         std::cout << "true";
     else
         std::cout << "false";
