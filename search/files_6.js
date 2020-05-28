@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrix_5fexponentiation_2ecpp',['matrix_exponentiation.cpp',['../d7/d35/matrix__exponentiation_8cpp.html',1,'']]],
-  ['modular_5finverse_5ffermat_5flittle_5ftheorem_2ecpp',['modular_inverse_fermat_little_theorem.cpp',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html',1,'']]]
+  ['large_5ffactorial_2ecpp',['large_factorial.cpp',['../d6/d9d/large__factorial_8cpp.html',1,'']]],
+  ['large_5fnumber_2eh',['large_number.h',['../d4/d86/large__number_8h.html',1,'']]]
 ];

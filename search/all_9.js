@@ -67,6 +67,7 @@ var searchData=
   ['is_5ffloating_5fpoint',['is_floating_point',['http://en.cppreference.com/w/cpp/types/is_floating_point.html',1,'std']]],
   ['is_5ffunction',['is_function',['http://en.cppreference.com/w/cpp/types/is_function.html',1,'std']]],
   ['is_5ffundamental',['is_fundamental',['http://en.cppreference.com/w/cpp/types/is_fundamental.html',1,'std']]],
+  ['is_5fhappy',['is_happy',['../db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7',1,'happy_number.cpp']]],
   ['is_5fheap',['is_heap',['http://en.cppreference.com/w/cpp/algorithm/is_heap.html',1,'std']]],
   ['is_5fheap_5funtil',['is_heap_until',['http://en.cppreference.com/w/cpp/algorithm/is_heap_until.html',1,'std']]],
   ['is_5fintegral',['is_integral',['http://en.cppreference.com/w/cpp/types/is_integral.html',1,'std']]],

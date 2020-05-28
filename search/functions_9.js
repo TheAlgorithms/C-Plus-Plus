@@ -26,6 +26,7 @@ var searchData=
   ['iostream',['iostream',['http://en.cppreference.com/w/cpp/io/basic_iostream/basic_iostream.html',1,'std::iostream']]],
   ['iota',['iota',['http://en.cppreference.com/w/cpp/algorithm/iota.html',1,'std']]],
   ['is',['is',['http://en.cppreference.com/w/cpp/locale/ctype/is.html',1,'std::ctype_byname::is()'],['http://en.cppreference.com/w/cpp/locale/ctype/is.html',1,'std::ctype::is()']]],
+  ['is_5fhappy',['is_happy',['../db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7',1,'happy_number.cpp']]],
   ['is_5fheap',['is_heap',['http://en.cppreference.com/w/cpp/algorithm/is_heap.html',1,'std']]],
   ['is_5fheap_5funtil',['is_heap_until',['http://en.cppreference.com/w/cpp/algorithm/is_heap_until.html',1,'std']]],
   ['is_5flock_5ffree',['is_lock_free',['http://en.cppreference.com/w/cpp/atomic/atomic/is_lock_free.html',1,'std::atomic']]],
