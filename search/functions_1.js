@@ -1,12 +1,14 @@
 var searchData=
 [
   ['a',['a',['http://en.cppreference.com/w/cpp/numeric/random/extreme_value_distribution/params.html',1,'std::extreme_value_distribution::a()'],['http://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution/params.html',1,'std::uniform_real_distribution::a()'],['http://en.cppreference.com/w/cpp/numeric/random/weibull_distribution/params.html',1,'std::weibull_distribution::a()'],['http://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution/params.html',1,'std::uniform_int_distribution::a()'],['http://en.cppreference.com/w/cpp/numeric/random/cauchy_distribution/params.html',1,'std::cauchy_distribution::a()']]],
+  ['ab',['ab',['../d7/d35/matrix__exponentiation_8cpp.html#a8bcf0bfddddfd7f6d0848703632d795d',1,'matrix_exponentiation.cpp']]],
   ['abort',['abort',['http://en.cppreference.com/w/cpp/utility/program/abort.html',1,'std']]],
   ['abs_28float_29',['abs(float)',['http://en.cppreference.com/w/cpp/numeric/math/fabs.html',1,'std']]],
   ['abs_28int_29',['abs(int)',['http://en.cppreference.com/w/cpp/numeric/math/abs.html',1,'std']]],
   ['accumulate',['accumulate',['http://en.cppreference.com/w/cpp/algorithm/accumulate.html',1,'std']]],
   ['acos',['acos',['http://en.cppreference.com/w/cpp/numeric/math/acos.html',1,'std']]],
   ['acosh',['acosh',['http://en.cppreference.com/w/cpp/numeric/math/acosh.html',1,'std']]],
+  ['add',['add',['../de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35',1,'string_fibonacci.cpp']]],
   ['add_5fdigit',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]],
   ['address',['address',['http://en.cppreference.com/w/cpp/memory/allocator/address.html',1,'std::allocator']]],
   ['addressof',['addressof',['http://en.cppreference.com/w/cpp/memory/addressof.html',1,'std']]],
@@ -21,6 +23,7 @@ var searchData=
   ['allocator',['allocator',['http://en.cppreference.com/w/cpp/memory/allocator/allocator.html',1,'std::allocator']]],
   ['alpha',['alpha',['http://en.cppreference.com/w/cpp/numeric/random/gamma_distribution/params.html',1,'std::gamma_distribution']]],
   ['always_5fnoconv',['always_noconv',['http://en.cppreference.com/w/cpp/locale/codecvt/always_noconv.html',1,'std::codecvt::always_noconv()'],['http://en.cppreference.com/w/cpp/locale/codecvt/always_noconv.html',1,'std::codecvt_byname::always_noconv()'],['http://en.cppreference.com/w/cpp/locale/codecvt/always_noconv.html',1,'std::codecvt_utf8::always_noconv()'],['http://en.cppreference.com/w/cpp/locale/codecvt/always_noconv.html',1,'std::codecvt_utf8_utf16::always_noconv()'],['http://en.cppreference.com/w/cpp/locale/codecvt/always_noconv.html',1,'std::codecvt_utf16::always_noconv()']]],
+  ['ans',['ans',['../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa',1,'matrix_exponentiation.cpp']]],
   ['any',['any',['http://en.cppreference.com/w/cpp/utility/bitset/all_any_none.html',1,'std::bitset']]],
   ['any_5fof',['any_of',['http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html',1,'std']]],
   ['append',['append',['http://en.cppreference.com/w/cpp/string/basic_string/append.html',1,'std::string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',1,'std::basic_string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',1,'std::wstring::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',1,'std::u16string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',1,'std::u32string::append()']]],

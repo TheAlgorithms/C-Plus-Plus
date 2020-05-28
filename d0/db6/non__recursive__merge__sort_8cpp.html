@@ -163,13 +163,7 @@ template&lt;class Iterator &gt; </div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                               {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// create 2 pointers to point at the buffer</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span> p(<span class="keyword">reinterpret_cast&lt;</span>std::remove_reference_t&lt;decltype(*l)&gt;*<span class="keyword">&gt;</span>(b)), c(p);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// move the left part of the segment</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (Iterator t(l); r != t; ++t) *p++ = <a class="codeRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*t);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// while neither the buffer nor the right part has been exhausted</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// move the smallest element of the two back to the container</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">while</span> (e != r &amp;&amp; c != p) *l++ = <a class="codeRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r &lt; *c ? *r++ : *c++);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// notice only one of the two following loops will be executed</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// while the right part hasn&#39;t bee exhausted, move it back</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">while</span> (e != r) *l++ = <a class="codeRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r++);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// while the buffer hasn&#39;t bee exhausted, move it back</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">while</span> (c != p) *l++ = <a class="codeRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*c++);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="move_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_aee1ab42c3a838aa040efd8e784f4a9ab_cgraph.svg" width="198" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a797be8541ef8748f02c5ef74b3523e4b"></a>
@@ -221,7 +215,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_a797be8541ef8748f02c5ef74b3523e4b_cgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_a797be8541ef8748f02c5ef74b3523e4b_cgraph.svg" width="292" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -267,7 +261,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_af9efd27abc01f33180960004cd0009d9_cgraph.svg" width="643" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_af9efd27abc01f33180960004cd0009d9_cgraph.svg" width="515" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -313,7 +307,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_a53daee11a3b0d34cf186b161edb77a5e_cgraph.svg" width="643" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/db6/non__recursive__merge__sort_8cpp_a53daee11a3b0d34cf186b161edb77a5e_cgraph.svg" width="515" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

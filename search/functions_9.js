@@ -47,7 +47,7 @@ var searchData=
   ['islower',['islower',['http://en.cppreference.com/w/cpp/string/byte/islower.html',1,'std']]],
   ['isnan',['isnan',['http://en.cppreference.com/w/cpp/numeric/math/isnan.html',1,'std']]],
   ['isnormal',['isnormal',['http://en.cppreference.com/w/cpp/numeric/math/isnormal.html',1,'std']]],
-  ['isprime',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'modular_inverse_fermat_little_theorem.cpp']]],
+  ['isprime',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'isPrime(int64_t m):&#160;modular_inverse_fermat_little_theorem.cpp'],['../da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf',1,'IsPrime(int number):&#160;primality_test.cpp']]],
   ['isprint',['isprint',['http://en.cppreference.com/w/cpp/string/byte/isprint.html',1,'std']]],
   ['ispunct',['ispunct',['http://en.cppreference.com/w/cpp/string/byte/ispunct.html',1,'std']]],
   ['isspace',['isspace',['http://en.cppreference.com/w/cpp/string/byte/isspace.html',1,'std']]],

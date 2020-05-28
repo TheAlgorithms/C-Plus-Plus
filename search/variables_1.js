@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factors',['factors',['../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b',1,'prime_factorization.cpp']]]
+  ['a',['a',['../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72',1,'matrix_exponentiation.cpp']]]
 ];
