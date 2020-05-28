@@ -59,5 +59,6 @@ int main() {
     assert(struzik_search<int>(sorted_array, 7, 50) == nullptr);
     assert(struzik_search<int>(sorted_array, 7, 7) == sorted_array);
     // TEST CASES
+    delete[] sorted_array;
     return 0;
 }
