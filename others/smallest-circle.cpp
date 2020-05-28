@@ -155,12 +155,12 @@ double circle(const std::vector<Point> &P) {
  * \n centre at (3.0454545454545454, 1.3181818181818181)
  */
 void test() {
+    std::vector<Point> Pv;
     Pv.push_back(Point(0, 0));
+    Pv.push_back(Point(5, 4));
     Pv.push_back(Point(1, 3));
     Pv.push_back(Point(4, 1));
-    Pv.push_back(Point(5, 4));
     Pv.push_back(Point(3, -2));
-    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
@@ -170,11 +170,11 @@ void test() {
  * \n centre at (1.0, 1.0)
  */
 void test2() {
+    std::vector<Point> Pv;
     Pv.push_back(Point(0, 0));
     Pv.push_back(Point(0, 2));
     Pv.push_back(Point(2, 2));
     Pv.push_back(Point(2, 0));
-    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
@@ -184,10 +184,10 @@ void test2() {
  * \n centre at (2.142857142857143, 1.7857142857142856)
  */
 void test3() {
+    std::vector<Point> Pv;
     Pv.push_back(Point(0.5, 1));
     Pv.push_back(Point(3.5, 3));
     Pv.push_back(Point(2.5, 0));
-    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
