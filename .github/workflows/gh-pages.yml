@@ -14,7 +14,7 @@ jobs:
           submodules: true
       - name: Install requirements
         run: |
-          brew install graphviz ninja-build
+          brew install graphviz ninja
           brew install doxygen
       - name: configure
         run: cmake -G Ninja -B ./build -S .
