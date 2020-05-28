@@ -15,7 +15,8 @@ jobs:
       - name: Install requirements
         run: |
           sudo apt -qq -y update
-          sudo apt -qq install doxygen graphviz ninja-build
+          sudo apt -qq install graphviz ninja-build
+          sudo brew install doxygen
       - name: configure
         run: cmake -G Ninja -B ./build -S .
       - name: build
