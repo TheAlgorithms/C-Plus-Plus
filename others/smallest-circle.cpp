@@ -85,7 +85,7 @@ bool PointInCircle(const std::vector<Point> &P, const Point &Center, double R) {
  * \returns radius of the circle
  */
 double circle(const std::vector<Point> &P) {
-    double minR = INT8_MAX;
+    double minR = INFINITY;
     double R;
     Point C;
     Point minC;
@@ -134,6 +134,7 @@ double circle(const std::vector<Point> &P) {
     for (size_t i = 0; i < P.size() - 1; i++)
         // for every subsequent point in the list
         for (size_t j = i + 1; j < P.size(); j++) {
+            // check for diameterically opposite points
             C.x = (P[i].x + P[j].x) / 2;
             C.y = (P[i].y + P[j].y) / 2;
             R = LenghtLine(C, P[i]);
@@ -182,12 +183,14 @@ void test2() {
  * \n Circle with
  * \n radius 1.821078397711709
  * \n centre at (2.142857142857143, 1.7857142857142856)
+ * @todo This test fails
  */
 void test3() {
     std::vector<Point> Pv;
     Pv.push_back(Point(0.5, 1));
     Pv.push_back(Point(3.5, 3));
     Pv.push_back(Point(2.5, 0));
+    Pv.push_back(Point(2, 1.5));
     std::cout << circle(Pv) << std::endl;
 }
 
