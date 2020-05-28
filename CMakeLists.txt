@@ -57,6 +57,7 @@ add_subdirectory(others)
 add_subdirectory(search)
 add_subdirectory(strings)
 add_subdirectory(sorting)
+add_subdirectory(probability)
 add_subdirectory(computer_oriented_statistical_methods)
 
 if(USE_OPENMP)
