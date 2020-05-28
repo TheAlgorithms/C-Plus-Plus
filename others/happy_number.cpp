@@ -1,7 +1,7 @@
 /**
- * A [happy number](https://en.wikipedia.org/wiki/Happy_number) is a decimal
- * number whose sum of digits is calculated until the sum is a single digit, and
- * this sum turns out to be 1.
+ * @file
+ * @brief A happy number is a number whose sum of digits is calculated until the
+ * sum is a single digit, and this sum turns out to be 1
  */
 
 #include <iostream>
