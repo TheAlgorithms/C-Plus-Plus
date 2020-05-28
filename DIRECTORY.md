@@ -124,6 +124,7 @@
   * [Primes Up To Billion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/primes_up_to_billion.cpp)
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
+  * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/string_fibonacci.cpp)
 
 ## Operations On Datastructures
   * [Array Left Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/Array%20Left%20Rotation.cpp)
@@ -152,7 +153,6 @@
   * [Sparse Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/sparse_matrix.cpp)
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
   * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/stairs_pattern.cpp)
-  * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/string_fibonacci.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tower_of_hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
 
