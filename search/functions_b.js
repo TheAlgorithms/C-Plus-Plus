@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['phifunction',['phiFunction',['../da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0',1,'eulers_totient_function.cpp']]],
-  ['power',['power',['../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f',1,'power_for_huge_numbers.cpp']]],
-  ['predict_5fols_5fregressor',['predict_OLS_regressor',['../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7',1,'ordinary_least_squares_regressor.cpp']]],
-  ['prime_5ffactorization',['prime_factorization',['../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46',1,'prime_factorization.cpp']]],
-  ['primes',['primes',['../de/d9b/prime__numbers_8cpp.html#a3b91f208e8365c95a295cfe3e67df5c3',1,'prime_numbers.cpp']]],
-  ['print',['print',['../d8/ddf/sieve__of__eratosthenes_8cpp.html#af50a5c87d27cfd3462745b37fb9b0f46',1,'sieve_of_eratosthenes.cpp']]]
+  ['k',['k',['http://en.cppreference.com/w/cpp/numeric/random/negative_binomial_distribution/params.html',1,'std::negative_binomial_distribution']]],
+  ['key_5fcomp',['key_comp',['http://en.cppreference.com/w/cpp/container/multiset/key_comp.html',1,'std::multiset::key_comp()'],['http://en.cppreference.com/w/cpp/container/set/key_comp.html',1,'std::set::key_comp()'],['http://en.cppreference.com/w/cpp/container/map/key_comp.html',1,'std::map::key_comp()'],['http://en.cppreference.com/w/cpp/container/multimap/key_comp.html',1,'std::multimap::key_comp()']]],
+  ['key_5feq',['key_eq',['http://en.cppreference.com/w/cpp/container/unordered_map/key_eq.html',1,'std::unordered_map::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/key_eq.html',1,'std::unordered_multimap::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/key_eq.html',1,'std::unordered_multiset::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_set/key_eq.html',1,'std::unordered_set::key_eq()']]],
+  ['kill_5fdependency',['kill_dependency',['http://en.cppreference.com/w/cpp/atomic/kill_dependency.html',1,'std']]],
+  ['knuth_5fb',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',1,'std::knuth_b']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['add_5fdigit',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]]
+  ['_5fdigits',['_digits',['../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57',1,'large_number']]],
+  ['_5fexit',['_Exit',['http://en.cppreference.com/w/cpp/utility/program/_Exit.html',1,'std']]]
 ];

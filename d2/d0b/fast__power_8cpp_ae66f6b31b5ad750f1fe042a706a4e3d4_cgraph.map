@@ -1,4 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title="fast_power_recursive" alt="" coords="104,5,251,32"/>
-<area shape="rect" id="node3" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title="fast_power_linear" alt="" coords="115,56,239,83"/>
+<area shape="rect" id="node2" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title="std::srand" alt="" coords="137,5,217,32"/>
+<area shape="rect" id="node3" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title="std::time" alt="" coords="141,56,214,83"/>
+<area shape="rect" id="node4" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/ios_base/sync_with_stdio.html#" title="std::ios_base::sync\l_with_stdio" alt="" coords="109,107,245,149"/>
+<area shape="rect" id="node5" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title="std::endl" alt="" coords="141,173,213,200"/>
+<area shape="rect" id="node6" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title="std::rand" alt="" coords="141,224,214,251"/>
+<area shape="rect" id="node7" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title="fast_power_recursive" alt="" coords="104,275,251,301"/>
+<area shape="rect" id="node8" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title="std::pow" alt="" coords="141,325,213,352"/>
+<area shape="rect" id="node9" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title="fast_power_linear" alt="" coords="115,376,239,403"/>
 </map>

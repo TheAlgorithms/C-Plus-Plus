@@ -68,11 +68,19 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d8/d9b/classgraph-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graph Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for graph:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d80/classgraph__coll__graph.svg" width="279" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -97,6 +105,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addEdge</b> (int, int
 <tr class="memitem:af9b34bbae0f618e2128c501b69339bb0"><td class="memItemLeft" align="right" valign="top"><a id="af9b34bbae0f618e2128c501b69339bb0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getConnectedComponents</b> ()</td></tr>
 <tr class="separator:af9b34bbae0f618e2128c501b69339bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a135921a59082b669678b029b301b8a1c"><td class="memItemLeft" align="right" valign="top"><a id="a135921a59082b669678b029b301b8a1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>depth_first_search</b> ()</td></tr>
+<tr class="separator:a135921a59082b669678b029b301b8a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6398e513b9574e029fbee07c6ac6e028"><td class="memItemLeft" align="right" valign="top"><a id="a6398e513b9574e029fbee07c6ac6e028"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>explore</b> (int, <a class="elRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; bool &gt; &amp;)</td></tr>
+<tr class="separator:a6398e513b9574e029fbee07c6ac6e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af77d6c400ef60f882b8beca48db8017d"><td class="memItemLeft" align="right" valign="top"><a id="af77d6c400ef60f882b8beca48db8017d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
+<tr class="separator:af77d6c400ef60f882b8beca48db8017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf45919942312aee0679dcd56e8aae9a"><td class="memItemLeft" align="right" valign="top"><a id="abf45919942312aee0679dcd56e8aae9a"></a>
+<a class="elRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/list.html">list</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>adj</b></td></tr>
+<tr class="separator:abf45919942312aee0679dcd56e8aae9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45045da3d080cb81472ce6d5cc02b911"><td class="memItemLeft" align="right" valign="top"><a id="a45045da3d080cb81472ce6d5cc02b911"></a>
+<a class="elRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; <a class="elRef" doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>adj</b></td></tr>
+<tr class="separator:a45045da3d080cb81472ce6d5cc02b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822dcbe7978a9fa026f2b37f1a52f5e9"><td class="memItemLeft" align="right" valign="top"><a id="a822dcbe7978a9fa026f2b37f1a52f5e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>connected_components</b></td></tr>
+<tr class="separator:a822dcbe7978a9fa026f2b37f1a52f5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>graph/BFS.cpp</li>

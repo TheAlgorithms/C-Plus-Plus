@@ -1,3 +1,6 @@
 <map id="Graph" name="Graph">
-<area shape="rect" id="node2" href="$d8/d8c/classEdge.html" title="Edge" alt="" coords="8,5,60,32"/>
+<area shape="rect" id="node2" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/bitset.html" title="std::bitset\&lt; MAXN \&gt;" alt="" coords="5,117,148,143"/>
+<area shape="rect" id="node3" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title="std::vector\&lt; std::tuple\l\&lt; int, int, int \&gt; \&gt;" alt="" coords="172,109,323,151"/>
+<area shape="rect" id="node4" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple.html" title="std::tuple\&lt; int, int,\l int \&gt;" alt="" coords="183,5,311,47"/>
+<area shape="rect" id="node5" href="$d8/d8c/classEdge.html" title="Edge" alt="" coords="352,117,404,143"/>
 </map>

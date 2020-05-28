@@ -1,9 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d" title="large_number::num_digits" alt="" coords="495,86,665,112"/>
-<area shape="rect" id="node3" href="$d6/d9d/large__factorial_8cpp.html#a3f93b60e229b6683e24c4754a7106ee8" title="test1" alt="" coords="144,35,195,62"/>
-<area shape="rect" id="node6" href="$d6/d9d/large__factorial_8cpp.html#a76aae4778fbe89a3d59fd61fbc050cfa" title="test2" alt="" coords="144,86,195,112"/>
-<area shape="rect" id="node7" href="$db/d82/classlarge__number.html#a959c5c1a982949bbf98e1ea0f9afe6a9" title="large_number::test" alt="" coords="104,191,235,218"/>
-<area shape="rect" id="node4" href="$db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98" title="large_number::digit_char" alt="" coords="283,35,447,62"/>
-<area shape="rect" id="node5" href="$db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615" title="large_number::add_digit" alt="" coords="500,35,660,62"/>
-<area shape="rect" id="node8" href="$db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337" title="large_number::large\l_number" alt="" coords="297,188,433,229"/>
+<area shape="rect" id="node2" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title="std::clock" alt="" coords="130,5,209,32"/>
+<area shape="rect" id="node3" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title="std::endl" alt="" coords="329,259,401,285"/>
+<area shape="rect" id="node4" href="$db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d" title="large_number::num_digits" alt="" coords="495,132,665,159"/>
+<area shape="rect" id="node6" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/fixed.html#" title="std::scientific" alt="" coords="119,157,219,184"/>
+<area shape="rect" id="node7" href="$d6/d9d/large__factorial_8cpp.html#a3f93b60e229b6683e24c4754a7106ee8" title="test1" alt="" coords="144,208,195,235"/>
+<area shape="rect" id="node9" href="$d6/d9d/large__factorial_8cpp.html#a76aae4778fbe89a3d59fd61fbc050cfa" title="test2" alt="" coords="144,107,195,133"/>
+<area shape="rect" id="node10" href="$db/d82/classlarge__number.html#a959c5c1a982949bbf98e1ea0f9afe6a9" title="large_number::test" alt="" coords="104,309,235,336"/>
+<area shape="rect" id="node5" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title="std::vector::size" alt="" coords="713,132,829,159"/>
+<area shape="rect" id="node8" href="$db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98" title="large_number::digit_char" alt="" coords="283,157,447,184"/>
+<area shape="rect" id="node11" href="$db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337" title="large_number::large\l_number" alt="" coords="297,310,433,351"/>
+<area shape="rect" id="node12" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title="std::vector::push_back" alt="" coords="503,317,657,344"/>
 </map>

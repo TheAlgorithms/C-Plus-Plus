@@ -18,8 +18,11 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="0,-67.5 0,-86.5 92,-86.5 92,-67.5 0,-67.5"/>
+<g id="a_node2"><a doxygen="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title="std::vector\&lt; int \&gt;">
+<polygon fill="#ffffff" stroke="#000000" points="0,-67.5 0,-86.5 92,-86.5 92,-67.5 0,-67.5"/>
 <text text-anchor="middle" x="46" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">std::vector&lt; int &gt;</text>
+</a>
+</g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">

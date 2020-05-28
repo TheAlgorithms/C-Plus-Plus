@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['prime',['prime',['../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95',1,'primes_up_to_billion.cpp']]],
-  ['prime_5fnumbers',['prime_numbers',['../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe',1,'prime_factorization.cpp']]]
+  ['isprime',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'isprime():&#160;prime_factorization.cpp'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a0560e21edb54d5ad8d80b2d80348ce22',1,'isprime():&#160;sieve_of_eratosthenes.cpp']]]
 ];

@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['large_5ffactorial_2ecpp',['large_factorial.cpp',['../d6/d9d/large__factorial_8cpp.html',1,'']]],
-  ['large_5fnumber',['large_number',['../db/d82/classlarge__number.html',1,'large_number'],['../db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337',1,'large_number::large_number()'],['../db/d82/classlarge__number.html#af4598f1f2794b5e17e10c25e0501e41a',1,'large_number::large_number(int n)'],['../db/d82/classlarge__number.html#a0b1efd203274e38a67b78937dfb9b872',1,'large_number::large_number(const large_number &amp;a)'],['../db/d82/classlarge__number.html#a76ddf1ed1b00fb8c107ea56f7f91e42f',1,'large_number::large_number(std::vector&lt; unsigned char &gt; &amp;vec)']]],
-  ['large_5fnumber_2eh',['large_number.h',['../d4/d86/large__number_8h.html',1,'']]],
-  ['lca',['lca',['../dd/df4/structlca.html',1,'']]],
-  ['linkedlist',['linkedlist',['../d0/dff/structlinkedlist.html',1,'']]],
-  ['list',['list',['../d8/d10/structlist.html',1,'']]],
-  ['list_3c_20int_20_3e',['list&lt; int &gt;',['../d8/d10/structlist.html',1,'']]]
+  ['hardware_5fconcurrency',['hardware_concurrency',['http://en.cppreference.com/w/cpp/thread/thread/hardware_concurrency.html',1,'std::thread']]],
+  ['has_5ffacet',['has_facet',['http://en.cppreference.com/w/cpp/locale/has_facet.html',1,'std']]],
+  ['has_5fvirtual_5fdestructor',['has_virtual_destructor',['http://en.cppreference.com/w/cpp/types/has_virtual_destructor.html',1,'std']]],
+  ['hash',['hash',['http://en.cppreference.com/w/cpp/utility/hash.html',1,'std::hash'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',1,'std::collate_byname::hash()'],['http://en.cppreference.com/w/cpp/utility/hash/hash.html',1,'std::hash::hash()'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',1,'std::collate::hash()']]],
+  ['hash_5fcode',['hash_code',['http://en.cppreference.com/w/cpp/types/type_info/hash_code.html',1,'std::type_info::hash_code()'],['http://en.cppreference.com/w/cpp/types/type_index/hash_code.html',1,'std::type_index::hash_code()']]],
+  ['hash_5ffunction',['hash_function',['http://en.cppreference.com/w/cpp/container/unordered_map/hash_function.html',1,'std::unordered_map::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/hash_function.html',1,'std::unordered_multimap::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/hash_function.html',1,'std::unordered_multiset::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_set/hash_function.html',1,'std::unordered_set::hash_function()']]],
+  ['hecto',['hecto',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['hex',['hex',['http://en.cppreference.com/w/cpp/io/manip/hex.html',1,'std']]],
+  ['hexfloat',['hexfloat',['http://en.cppreference.com/w/cpp/io/manip/fixed.html',1,'std']]],
+  ['high_5fresolution_5fclock',['high_resolution_clock',['http://en.cppreference.com/w/cpp/chrono/high_resolution_clock.html',1,'std::chrono']]],
+  ['hours',['hours',['http://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono::hours'],['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',1,'std::chrono::hours::hours()']]],
+  ['hypot',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',1,'std']]]
 ];
