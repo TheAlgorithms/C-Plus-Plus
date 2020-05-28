@@ -1,10 +1,5 @@
 #include <iostream>
 
-/*
-* A algorithm to find whether two line intersect where "on_segment" finds
-* the cross multiplication and direction find whether line is in clockwise or not....
-*/
-
 struct Point {
     int x, y;
 };
