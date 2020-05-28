@@ -20,7 +20,7 @@ struct Point {
      * \param [in] a absicca (default = 0.0)
      * \param [in] b ordinate (default = 0.0)
      */
-    Point(double a = 0.0, double b = 0.0) {
+    Point(double a = 0.f, double b = 0.f) {
         x = a;
         y = b;
     }
@@ -90,38 +90,45 @@ double circle(const std::vector<Point> &P) {
     Point C;
     Point minC;
 
-    /* This code is invalid and does not give correct result for TEST 3
-        // for each point in the list
-        for (size_t i = 0; i < P.size() - 2; i++)
+    /* This code is invalid and does not give correct result for TEST 3 */
+    // for each point in the list
+    for (size_t i = 0; i < P.size() - 2; i++)
+        // for every subsequent point in the list
+        for (size_t j = i + 1; j < P.size(); j++)
             // for every subsequent point in the list
-            for (size_t j = i + 1; j < P.size(); j++)
-                // for every subsequent point in the list
-                for (size_t k = j + 1; k < P.size(); k++) {
-                    // here, we now have picked three points from the given set
-       of
-                    // points that we can use
-                    // viz., P[i], P[j] and P[k]
-                    C.x = -0.5 * ((P[i].y * (P[j].x * P[j].x + P[j].y * P[j].y -
-                                             P[k].x * P[k].x - P[k].y * P[k].y)
-       + P[j].y * (P[k].x * P[k].x + P[k].y * P[k].y - P[i].x * P[i].x - P[i].y
-       * P[i].y) + P[k].y * (P[i].x * P[i].x + P[i].y * P[i].y - P[j].x * P[j].x
-       - P[j].y * P[j].y)) / (P[i].x * (P[j].y - P[k].y) + P[j].x * (P[k].y -
-       P[i].y) + P[k].x * (P[i].y - P[j].y))); C.y = 0.5 * ((P[i].x * (P[j].x *
-       P[j].x + P[j].y * P[j].y - P[k].x * P[k].x - P[k].y * P[k].y) + P[j].x *
-       (P[k].x * P[k].x + P[k].y * P[k].y - P[i].x * P[i].x - P[i].y * P[i].y) +
-                                  P[k].x * (P[i].x * P[i].x + P[i].y * P[i].y -
-                                            P[j].x * P[j].x - P[j].y * P[j].y))
-       / (P[i].x * (P[j].y - P[k].y) + P[j].x * (P[k].y - P[i].y) + P[k].x *
-       (P[i].y - P[j].y))); R = (LenghtLine(P[i], P[j]) * LenghtLine(P[j], P[k])
-       * LenghtLine(P[k], P[i])) / (4 * TriangleArea(P[i], P[j], P[k])); if
-       (!PointInCircle(P, C, R)) { continue;
-                    }
-                    if (R <= minR) {
-                        minR = R;
-                        minC = C;
-                    }
+            for (size_t k = j + 1; k < P.size(); k++) {
+                // here, we now have picked three points from the given set of
+                // points that we can use
+                // viz., P[i], P[j] and P[k]
+                C.x = -0.5 * ((P[i].y * (P[j].x * P[j].x + P[j].y * P[j].y -
+                                         P[k].x * P[k].x - P[k].y * P[k].y) +
+                               P[j].y * (P[k].x * P[k].x + P[k].y * P[k].y -
+                                         P[i].x * P[i].x - P[i].y * P[i].y) +
+                               P[k].y * (P[i].x * P[i].x + P[i].y * P[i].y -
+                                         P[j].x * P[j].x - P[j].y * P[j].y)) /
+                              (P[i].x * (P[j].y - P[k].y) +
+                               P[j].x * (P[k].y - P[i].y) +
+                               P[k].x * (P[i].y - P[j].y)));
+                C.y = 0.5 * ((P[i].x * (P[j].x * P[j].x + P[j].y * P[j].y -
+                                        P[k].x * P[k].x - P[k].y * P[k].y) +
+                              P[j].x * (P[k].x * P[k].x + P[k].y * P[k].y -
+                                        P[i].x * P[i].x - P[i].y * P[i].y) +
+                              P[k].x * (P[i].x * P[i].x + P[i].y * P[i].y -
+                                        P[j].x * P[j].x - P[j].y * P[j].y)) /
+                             (P[i].x * (P[j].y - P[k].y) +
+                              P[j].x * (P[k].y - P[i].y) +
+                              P[k].x * (P[i].y - P[j].y)));
+                R = (LenghtLine(P[i], P[j]) * LenghtLine(P[j], P[k]) *
+                     LenghtLine(P[k], P[i])) /
+                    (4 * TriangleArea(P[i], P[j], P[k]));
+                if (!PointInCircle(P, C, R)) {
+                    continue;
                 }
-    */
+                if (R <= minR) {
+                    minR = R;
+                    minC = C;
+                }
+            }
 
     // for each point in the list
     for (size_t i = 0; i < P.size() - 1; i++)
@@ -145,42 +152,42 @@ double circle(const std::vector<Point> &P) {
 /** Test case: result should be:
  * \n Circle with
  * \n radius 3.318493136080724
- * \n centre at (3.0454545454545454 1.3181818181818181)
+ * \n centre at (3.0454545454545454, 1.3181818181818181)
  */
 void test() {
-    std::vector<Point> Pv(5);
     Pv.push_back(Point(0, 0));
     Pv.push_back(Point(1, 3));
     Pv.push_back(Point(4, 1));
     Pv.push_back(Point(5, 4));
     Pv.push_back(Point(3, -2));
+    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
 /** Test case: result should be:
  * \n Circle with
  * \n radius 1.4142135623730951
- * \n centre at (1.0 1.0)
+ * \n centre at (1.0, 1.0)
  */
 void test2() {
-    std::vector<Point> Pv(4);
     Pv.push_back(Point(0, 0));
     Pv.push_back(Point(0, 2));
     Pv.push_back(Point(2, 2));
     Pv.push_back(Point(2, 0));
+    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
 /** Test case: result should be:
  * \n Circle with
  * \n radius 1.821078397711709
- * \n centre at (2.142857142857143 1.7857142857142856)
+ * \n centre at (2.142857142857143, 1.7857142857142856)
  */
 void test3() {
-    std::vector<Point> Pv(3);
     Pv.push_back(Point(0.5, 1));
     Pv.push_back(Point(3.5, 3));
     Pv.push_back(Point(2.5, 0));
+    std::vector<Point> Pv;
     std::cout << circle(Pv) << std::endl;
 }
 
