@@ -81,10 +81,10 @@ void power(int x, int n) {
 /** Main function */
 int main() {
     int exponent, base;
-    printf("Enter base ");
-    scanf("%id \n", &base);
-    printf("Enter exponent ");
-    scanf("%id", &exponent);
+    std::cout << "Enter base ";
+    std::cin >> base;
+    std::cout << "Enter exponent ";
+    std::cin >> exponent;
     power(base, exponent);
     return 0;
 }
