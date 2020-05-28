@@ -1,9 +1,8 @@
 name: Doxygen CI
 
 on:
-  [push]
-  # push:
-  #   branches: [master]
+  push:
+    branches: [master]
 
 jobs:
   build:
@@ -14,8 +13,7 @@ jobs:
           submodules: true
       - name: Install requirements
         run: |
-          brew install graphviz ninja
-          brew install doxygen
+          brew install graphviz ninja doxygen
       - name: configure
         run: cmake -G Ninja -B ./build -S .
       - name: build
