@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['eulers_5ftotient_5ffunction_2ecpp',['eulers_totient_function.cpp',['../da/d23/eulers__totient__function_8cpp.html',1,'']]],
-  ['extended_5feuclid_5falgorithm_2ecpp',['extended_euclid_algorithm.cpp',['../d9/d5d/extended__euclid__algorithm_8cpp.html',1,'']]]
+  ['decimal_5fto_5fbinary_2ecpp',['decimal_to_binary.cpp',['../df/d06/decimal__to__binary_8cpp.html',1,'']]],
+  ['decimal_5fto_5fhexadecimal_2ecpp',['decimal_to_hexadecimal.cpp',['../da/de7/decimal__to__hexadecimal_8cpp.html',1,'']]],
+  ['decimal_5fto_5froman_5fnumeral_2ecpp',['decimal_to_roman_numeral.cpp',['../de/d85/decimal__to__roman__numeral_8cpp.html',1,'']]],
+  ['double_5ffactorial_2ecpp',['double_factorial.cpp',['../d7/d89/double__factorial_8cpp.html',1,'']]]
 ];

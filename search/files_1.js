@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['decimal_5fto_5fbinary_2ecpp',['decimal_to_binary.cpp',['../df/d06/decimal__to__binary_8cpp.html',1,'']]],
-  ['decimal_5fto_5fhexadecimal_2ecpp',['decimal_to_hexadecimal.cpp',['../da/de7/decimal__to__hexadecimal_8cpp.html',1,'']]],
-  ['decimal_5fto_5froman_5fnumeral_2ecpp',['decimal_to_roman_numeral.cpp',['../de/d85/decimal__to__roman__numeral_8cpp.html',1,'']]],
-  ['double_5ffactorial_2ecpp',['double_factorial.cpp',['../d7/d89/double__factorial_8cpp.html',1,'']]]
+  ['bayes_5ftheorem_2ecpp',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],
+  ['binary_5fexponent_2ecpp',['binary_exponent.cpp',['../de/dcf/binary__exponent_8cpp.html',1,'']]],
+  ['binomial_5fdist_2ecpp',['binomial_dist.cpp',['../d6/db0/binomial__dist_8cpp.html',1,'']]],
+  ['bubble_5fsort_2ecpp',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
+  ['buzz_5fnumber_2ecpp',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

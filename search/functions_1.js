@@ -10,6 +10,8 @@ var searchData=
   ['acosh',['acosh',['http://en.cppreference.com/w/cpp/numeric/math/acosh.html',1,'std']]],
   ['add',['add',['../de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35',1,'string_fibonacci.cpp']]],
   ['add_5fdigit',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]],
+  ['addition_5frule_5fdependent',['addition_rule_dependent',['../d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0',1,'addition_rule.cpp']]],
+  ['addition_5frule_5findependent',['addition_rule_independent',['../d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d',1,'addition_rule.cpp']]],
   ['address',['address',['http://en.cppreference.com/w/cpp/memory/allocator/address.html',1,'std::allocator']]],
   ['addressof',['addressof',['http://en.cppreference.com/w/cpp/memory/addressof.html',1,'std']]],
   ['adjacent_5fdifference',['adjacent_difference',['http://en.cppreference.com/w/cpp/algorithm/adjacent_difference.html',1,'std']]],

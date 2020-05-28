@@ -3,6 +3,7 @@ var searchData=
   ['f',['f',['../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9',1,'fibonacci_fast.cpp']]],
   ['fabs',['fabs',['http://en.cppreference.com/w/cpp/numeric/math/fabs.html',1,'std']]],
   ['facet',['facet',['http://en.cppreference.com/w/cpp/locale/locale/facet.html',1,'std::locale::facet'],['http://en.cppreference.com/w/cpp/locale/locale/facet/facet.html',1,'std::locale::facet::facet()']]],
+  ['fact',['fact',['../d9/d24/poisson__dist_8cpp.html#a63ffd347e75d5ed7a518cbcfbfeec71a',1,'poisson_dist.cpp']]],
   ['factorial',['factorial',['../d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4',1,'factorial.cpp']]],
   ['factorial_2ecpp',['factorial.cpp',['../d9/d00/factorial_8cpp.html',1,'']]],
   ['factors',['factors',['../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b',1,'prime_factorization.cpp']]],

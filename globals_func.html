@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
+    extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
@@ -75,6 +75,12 @@ $(function() {
 <li>add()
 : <a class="el" href="de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35">string_fibonacci.cpp</a>
 </li>
+<li>addition_rule_dependent()
+: <a class="el" href="d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0">addition_rule.cpp</a>
+</li>
+<li>addition_rule_independent()
+: <a class="el" href="d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d">addition_rule.cpp</a>
+</li>
 <li>ans()
 : <a class="el" href="d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">matrix_exponentiation.cpp</a>
 </li>
@@ -82,12 +88,33 @@ $(function() {
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>bayes_AgivenB()
+: <a class="el" href="d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba">bayes_theorem.cpp</a>
+</li>
+<li>bayes_BgivenA()
+: <a class="el" href="d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f">bayes_theorem.cpp</a>
+</li>
 <li>binExpo()
-: <a class="el" href="de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73">binary_exponent.cpp</a>
-, <a class="el" href="d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a4c6eefd1254eab3e8d34bf02c205e0f4">modular_inverse_fermat_little_theorem.cpp</a>
+: <a class="el" href="d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a4c6eefd1254eab3e8d34bf02c205e0f4">modular_inverse_fermat_little_theorem.cpp</a>
+, <a class="el" href="de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73">binary_exponent.cpp</a>
 </li>
 <li>binExpo_alt()
 : <a class="el" href="de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f">binary_exponent.cpp</a>
+</li>
+<li>binomial_expected()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813">binomial_dist.cpp</a>
+</li>
+<li>binomial_range_successes()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25">binomial_dist.cpp</a>
+</li>
+<li>binomial_standard_deviation()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#af09e51f513cee647d41192ab0a872cdc">binomial_dist.cpp</a>
+</li>
+<li>binomial_variance()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861">binomial_dist.cpp</a>
+</li>
+<li>binomial_x_successes()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76">binomial_dist.cpp</a>
 </li>
 </ul>
 
@@ -120,6 +147,9 @@ $(function() {
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>fact()
+: <a class="el" href="d9/d24/poisson__dist_8cpp.html#a63ffd347e75d5ed7a518cbcfbfeec71a">poisson_dist.cpp</a>
+</li>
 <li>factorial()
 : <a class="el" href="d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4">factorial.cpp</a>
 </li>
@@ -133,8 +163,8 @@ $(function() {
 : <a class="el" href="d4/de8/fast__interger__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82">fast_interger_input.cpp</a>
 </li>
 <li>fib()
-: <a class="el" href="d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f">fibonacci_fast.cpp</a>
-, <a class="el" href="de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db">fibonacci_large.cpp</a>
+: <a class="el" href="de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db">fibonacci_large.cpp</a>
+, <a class="el" href="d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f">fibonacci_fast.cpp</a>
 </li>
 <li>fib_Accurate()
 : <a class="el" href="de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca">string_fibonacci.cpp</a>
@@ -199,19 +229,23 @@ $(function() {
 <li>main()
 : <a class="el" href="dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">ordinary_least_squares_regressor.cpp</a>
 , <a class="el" href="de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">binary_exponent.cpp</a>
-, <a class="el" href="da/d23/eulers__totient__function_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">eulers_totient_function.cpp</a>
-, <a class="el" href="d9/d89/fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fibonacci.cpp</a>
+, <a class="el" href="d9/d5d/extended__euclid__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">extended_euclid_algorithm.cpp</a>
 , <a class="el" href="df/def/power__for__huge__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">power_for_huge_numbers.cpp</a>
-, <a class="el" href="d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">modular_inverse_fermat_little_theorem.cpp</a>
-, <a class="el" href="d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">sparse_matrix.cpp</a>
-, <a class="el" href="d1/d21/quick__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">quick_sort.cpp</a>
-, <a class="el" href="d9/d00/factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">factorial.cpp</a>
-, <a class="el" href="db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">tower_of_hanoi.cpp</a>
-, <a class="el" href="db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">prime_factorization.cpp</a>
-, <a class="el" href="db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">spiral_print.cpp</a>
-, <a class="el" href="d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">stairs_pattern.cpp</a>
-, <a class="el" href="d3/d61/vector__important__functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">vector_important_functions.cpp</a>
+, <a class="el" href="da/d23/eulers__totient__function_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">eulers_totient_function.cpp</a>
 , <a class="el" href="da/d7b/primality__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">primality_test.cpp</a>
+, <a class="el" href="d6/db0/binomial__dist_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">binomial_dist.cpp</a>
+, <a class="el" href="db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">spiral_print.cpp</a>
+, <a class="el" href="d0/d01/smallest__circle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">smallest_circle.cpp</a>
+, <a class="el" href="d2/d0b/fast__power_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fast_power.cpp</a>
+, <a class="el" href="d5/d67/bayes__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">bayes_theorem.cpp</a>
+, <a class="el" href="d6/d4a/addition__rule_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">addition_rule.cpp</a>
+, <a class="el" href="d3/d61/vector__important__functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">vector_important_functions.cpp</a>
+, <a class="el" href="db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">tower_of_hanoi.cpp</a>
+, <a class="el" href="d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">stairs_pattern.cpp</a>
+, <a class="el" href="d9/d89/fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fibonacci.cpp</a>
+, <a class="el" href="d0/da2/number__of__positive__divisors_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">number_of_positive_divisors.cpp</a>
+, <a class="el" href="d9/d00/factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">factorial.cpp</a>
+, <a class="el" href="d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fibonacci_fast.cpp</a>
 , <a class="el" href="dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">pascal_triangle.cpp</a>
 , <a class="el" href="da/d9a/palindrome__of__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">palindrome_of_number.cpp</a>
 , <a class="el" href="d7/d35/matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">matrix_exponentiation.cpp</a>
@@ -223,18 +257,18 @@ $(function() {
 , <a class="el" href="de/d47/string__fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">string_fibonacci.cpp</a>
 , <a class="el" href="da/d24/sqrt__double_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">sqrt_double.cpp</a>
 , <a class="el" href="d8/ddf/sieve__of__eratosthenes_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">sieve_of_eratosthenes.cpp</a>
+, <a class="el" href="d9/d24/poisson__dist_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">poisson_dist.cpp</a>
 , <a class="el" href="de/d9b/prime__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">prime_numbers.cpp</a>
-, <a class="el" href="d4/d9c/primes__up__to__billion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">primes_up_to_billion.cpp</a>
-, <a class="el" href="d9/d5d/extended__euclid__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">extended_euclid_algorithm.cpp</a>
-, <a class="el" href="d4/da0/gcd__iterative__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">gcd_iterative_euclidean.cpp</a>
-, <a class="el" href="d0/da2/number__of__positive__divisors_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">number_of_positive_divisors.cpp</a>
-, <a class="el" href="d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fibonacci_fast.cpp</a>
+, <a class="el" href="d7/d89/double__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">double_factorial.cpp</a>
+, <a class="el" href="d1/d21/quick__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">quick_sort.cpp</a>
+, <a class="el" href="db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">prime_factorization.cpp</a>
+, <a class="el" href="d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">modular_inverse_fermat_little_theorem.cpp</a>
 , <a class="el" href="d6/d9d/large__factorial_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">large_factorial.cpp</a>
 , <a class="el" href="d4/d45/gcd__recursive__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">gcd_recursive_euclidean.cpp</a>
 , <a class="el" href="d1/d11/gcd__of__n__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">gcd_of_n_numbers.cpp</a>
-, <a class="el" href="d7/d89/double__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">double_factorial.cpp</a>
-, <a class="el" href="d0/d01/smallest__circle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">smallest_circle.cpp</a>
-, <a class="el" href="d2/d0b/fast__power_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">fast_power.cpp</a>
+, <a class="el" href="d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">sparse_matrix.cpp</a>
+, <a class="el" href="d4/d9c/primes__up__to__billion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">primes_up_to_billion.cpp</a>
+, <a class="el" href="d4/da0/gcd__iterative__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">gcd_iterative_euclidean.cpp</a>
 </li>
 <li>merge()
 : <a class="el" href="d0/db6/non__recursive__merge__sort_8cpp.html#aee1ab42c3a838aa040efd8e784f4a9ab">non_recursive_merge_sort.cpp</a>
@@ -256,6 +290,9 @@ $(function() {
 
 
 <h3><a id="index_n"></a>- n -</h3><ul>
+<li>nCr()
+: <a class="el" href="d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a">binomial_dist.cpp</a>
+</li>
 <li>non_recursive_merge_sort()
 : <a class="el" href="d0/db6/non__recursive__merge__sort_8cpp.html#a797be8541ef8748f02c5ef74b3523e4b">non_recursive_merge_sort.cpp</a>
 </li>
@@ -299,6 +336,18 @@ $(function() {
 </li>
 <li>PointInCircle()
 : <a class="el" href="d0/d01/smallest__circle_8cpp.html#aee6d48762c1dfb9f14627927f0c16fad">smallest_circle.cpp</a>
+</li>
+<li>poisson_expected()
+: <a class="el" href="d9/d24/poisson__dist_8cpp.html#ad0aa718023ce802dd5899f0e03a7ac71">poisson_dist.cpp</a>
+</li>
+<li>poisson_range_successes()
+: <a class="el" href="d9/d24/poisson__dist_8cpp.html#ad9c9e74079278ca10e3b97a8d5391c9a">poisson_dist.cpp</a>
+</li>
+<li>poisson_rate()
+: <a class="el" href="d9/d24/poisson__dist_8cpp.html#ac217ab9a06291f360d816700a6958ca8">poisson_dist.cpp</a>
+</li>
+<li>poisson_x_successes()
+: <a class="el" href="d9/d24/poisson__dist_8cpp.html#a69a136b32707bdc7950fb9057b5fa1e1">poisson_dist.cpp</a>
 </li>
 <li>pop()
 : <a class="el" href="dc/dc5/paranthesis__matching_8cpp.html#a6d25c7dfbfeb52c3cb9d1b56ab49b664">paranthesis_matching.cpp</a>
