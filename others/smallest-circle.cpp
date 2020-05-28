@@ -20,7 +20,7 @@ struct Point {
      * \param [in] a absicca (default = 0.0)
      * \param [in] b ordinate (default = 0.0)
      */
-    Point(double a = 0.f, double b = 0.f) {
+    explicit Point(double a = 0.f, double b = 0.f) {
         x = a;
         y = b;
     }
