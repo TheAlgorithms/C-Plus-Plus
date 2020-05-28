@@ -1,34 +1,37 @@
-/**
- * The code below is based on SVGPan Library 1.2 and was modified for doxygen
- * to support both zooming and panning via the mouse and via embedded bottons.
- *
- * This code is licensed under the following BSD license:
- *
- * Copyright 2009-2010 Andrea Leofreddi <a.leofreddi@itcharm.com>. All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, are
- * permitted provided that the following conditions are met:
- * 
- *    1. Redistributions of source code must retain the above copyright notice, this list of
- *       conditions and the following disclaimer.
- * 
- *    2. Redistributions in binary form must reproduce the above copyright notice, this list
- *       of conditions and the following disclaimer in the documentation and/or other materials
- *       provided with the distribution.
- * 
- * THIS SOFTWARE IS PROVIDED BY Andrea Leofreddi ``AS IS'' AND ANY EXPRESS OR IMPLIED
- * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
- * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Andrea Leofreddi OR
- * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
- * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- * 
- * The views and conclusions contained in the software and documentation are those of the
- * authors and should not be interpreted as representing official policies, either expressed
- * or implied, of Andrea Leofreddi.
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+ The code below is based on SVGPan Library 1.2 and was modified for doxygen
+ to support both zooming and panning via the mouse and via embedded buttons.
+
+ This code is licensed under the following BSD license:
+
+ Copyright 2009-2010 Andrea Leofreddi <a.leofreddi@itcharm.com>. All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+
+    1. Redistributions of source code must retain the above copyright notice, this list of
+       conditions and the following disclaimer.
+
+    2. Redistributions in binary form must reproduce the above copyright notice, this list
+       of conditions and the following disclaimer in the documentation and/or other materials
+       provided with the distribution.
+
+ THIS SOFTWARE IS PROVIDED BY Andrea Leofreddi ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Andrea Leofreddi OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ The views and conclusions contained in the software and documentation are those of the
+ authors and should not be interpreted as representing official policies, either expressed
+ or implied, of Andrea Leofreddi.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
  */
 
 var root = document.documentElement;
@@ -47,7 +50,7 @@ var maxZoom;
 if (!window) window=this;
 
 /**
- * Show the graph in the middle of the view, scaled to fit 
+ * Show the graph in the middle of the view, scaled to fit
  */
 function show()
 {
@@ -86,7 +89,7 @@ function show()
 /**
  * Register handlers
  */
-function init(evt) 
+function init(evt)
 {
   svgDoc = evt.target.ownerDocument;
   try {
@@ -107,8 +110,8 @@ function init(evt)
 
   if (window.addEventListener)
   {
-    if (navigator.userAgent.toLowerCase().indexOf('webkit') >= 0 || 
-        navigator.userAgent.toLowerCase().indexOf("opera") >= 0 || 
+    if (navigator.userAgent.toLowerCase().indexOf('webkit') >= 0 ||
+        navigator.userAgent.toLowerCase().indexOf("opera") >= 0 ||
         navigator.appVersion.indexOf("MSIE") != -1)
     {
       window.addEventListener('mousewheel', handleMouseWheel, false); // Chrome/Safari/IE9
@@ -128,7 +131,7 @@ window.onresize=function()
 /**
  * Instance an SVGPoint object with given event coordinates.
  */
-function getEventPoint(evt) 
+function getEventPoint(evt)
 {
   var p = root.createSVGPoint();
   p.x = evt.clientX;
@@ -139,7 +142,7 @@ function getEventPoint(evt)
 /**
  * Sets the current transform matrix of an element.
  */
-function setCTM(element, matrix) 
+function setCTM(element, matrix)
 {
   var s = "matrix(" + matrix.a + "," + matrix.b + "," + matrix.c + "," + matrix.d + "," + matrix.e + "," + matrix.f + ")";
   element.setAttribute("transform", s);
@@ -169,7 +172,7 @@ function doZoom(g,point,zoomFactor)
 /**
  * Handle mouse move event.
  */
-function handleMouseWheel(evt) 
+function handleMouseWheel(evt)
 {
   if (!evt) evt = window.evt;
   if (!evt.shiftKey) return; // only zoom when shift is pressed
@@ -197,7 +200,7 @@ function handleMouseWheel(evt)
 /**
  * Handle mouse move event.
  */
-function handleMouseMove(evt) 
+function handleMouseMove(evt)
 {
   if(evt.preventDefault)
     evt.preventDefault();
@@ -206,18 +209,18 @@ function handleMouseMove(evt)
 
   var g = svgDoc.getElementById("viewport");
 
-  if (state == 'pan') 
+  if (state == 'pan')
   {
     // Pan mode
     var p = getEventPoint(evt).matrixTransform(stateTf);
     setCTM(g,stateTf.inverse().translate(p.x - stateOrigin.x, p.y - stateOrigin.y));
-  } 
+  }
 }
 
 /**
  * Handle click event.
  */
-function handleMouseDown(evt) 
+function handleMouseDown(evt)
 {
   if(evt.preventDefault)
     evt.preventDefault();
@@ -232,7 +235,7 @@ function handleMouseDown(evt)
 /**
  * Handle mouse button release event.
  */
-function handleMouseUp(evt) 
+function handleMouseUp(evt)
 {
   if (evt.preventDefault) evt.preventDefault();
   evt.returnValue = false;
@@ -245,7 +248,7 @@ function handleMouseUp(evt)
 /**
  * Dumps a matrix to a string (useful for debug).
  */
-function dumpMatrix(matrix) 
+function dumpMatrix(matrix)
 {
   var s = "[ " + matrix.a + ", " + matrix.c + ", " + matrix.e + "\n  " + matrix.b + ", " + matrix.d + ", " + matrix.f + "\n  0, 0, 1 ]";
   return s;
@@ -282,7 +285,7 @@ function handleZoom(evt,direction)
   doZoom(g,p,factor);
 }
 
-function serializeXmlNode(xmlNode) 
+function serializeXmlNode(xmlNode)
 {
   if (typeof window.XMLSerializer != "undefined") {
     return (new window.XMLSerializer()).serializeToString(xmlNode);
@@ -292,7 +295,7 @@ function serializeXmlNode(xmlNode)
   return "";
 }
 
-/** 
+/**
  * Handler for print function
  */
 function handlePrint(evt)
@@ -317,7 +320,4 @@ function handlePrint(evt)
     alert('Failed to open popup window needed for printing!\n'+e.message);
   }
 }
-
-
-
-
+/* @license-end */

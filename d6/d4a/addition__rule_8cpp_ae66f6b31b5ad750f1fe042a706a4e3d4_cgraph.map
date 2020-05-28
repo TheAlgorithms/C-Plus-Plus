@@ -1,5 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d" title="addition_rule_independent" alt="" coords="104,5,276,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title="std::endl" alt="" coords="154,56,226,83"/>
-<area shape="rect" id="node4" href="$d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0" title="addition_rule_dependent" alt="" coords="109,107,271,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$d6/d4a/addition__rule_8cpp.html#a565ffcbbdbe496ced37250bc8dc36bc0" title=" " alt="" coords="109,5,271,32"/>
+<area shape="rect" id="node3" href="$d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d" title=" " alt="" coords="104,56,276,83"/>
+<area shape="rect" id="node4" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="154,107,226,133"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="operator*" name="operator*">
-<area shape="rect" id="node2" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title="std::vector::size" alt="" coords="128,5,244,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title="std::endl" alt="" coords="150,56,222,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" id="node2" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="150,5,222,32"/>
+<area shape="rect" id="node3" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="128,56,244,83"/>
 </map>
