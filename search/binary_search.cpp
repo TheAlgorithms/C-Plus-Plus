@@ -30,5 +30,7 @@ int main(int argc, char const* argv[]) {
        std::cout << key << " found at index " << res << std::endl;
     else
        std::cout << key << " not found" << std::endl;
+
+    delete[] a;
     return 0;
 }
