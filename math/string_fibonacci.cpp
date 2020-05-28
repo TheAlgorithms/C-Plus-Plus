@@ -28,18 +28,18 @@ std::string add(std::string a, std::string b) {
     int carry = 0;
 
     // fills up with zeros
-    while ((int)a.length() < (int)b.length()) {
+    while (a.length() < b.length()) {
         a = "0" + a;
     }
 
     // fills up with zeros
-    while ((int)b.length() < (int)a.length()) {
+    while (b.length() < a.length()) {
         b = "0" + b;
     }
 
     // adds the numbers a and b
     for (int i = a.length() - 1; i >= 0; i--) {
-        char val = (char)(((a[i] - 48) + (b[i] - 48)) + 48 + carry);
+        char val = static_cast<char>(((a[i] - 48) + (b[i] - 48)) + 48 + carry);
         if (val > 57) {
             carry = 1;
             val -= 10;
@@ -65,11 +65,11 @@ std::string add(std::string a, std::string b) {
 /** Fibonacci iterator
  * \param [in] n n^th Fibonacci number
  */
-void fib_Accurate(long long n) {
+void fib_Accurate(uint64_t n) {
     std::string tmp = "";
     std::string fibMinus1 = "1";
     std::string fibMinus2 = "0";
-    for (long long i = 0; i < n; i++) {
+    for (uint64_t i = 0; i < n; i++) {
         tmp = add(fibMinus1, fibMinus2);
         fibMinus2 = fibMinus1;
         fibMinus1 = tmp;
