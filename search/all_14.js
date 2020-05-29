@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['the_20algorithms_20_2d_20c_2b_2b_1351',['The Algorithms - C++',['../index.html',1,'']]],
   ['t_1352',['t',['http://en.cppreference.com/w/cpp/numeric/random/binomial_distribution/params.html',1,'std::binomial_distribution']]],
   ['tan_1353',['tan',['http://en.cppreference.com/w/cpp/numeric/math/tan.html',1,'std']]],
   ['tanh_1354',['tanh',['http://en.cppreference.com/w/cpp/numeric/math/tanh.html',1,'std']]],
