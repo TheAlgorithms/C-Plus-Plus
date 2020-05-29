@@ -7,7 +7,7 @@ struct Point {
 struct SegmentIntersection {
     inline bool intersect(Point first_point, Point second_point,
                                     Point third_point, Point forth_point) {
-        /*
+       /**
         * intersect returns true if segments of two line intersects and
         * false if they do not. It calls the subroutines direction
         * which computes the orientation.
@@ -43,7 +43,7 @@ struct SegmentIntersection {
 
     inline int direction(Point first_point, Point second_point,
                                                     Point third_point) {
-        /*
+       /**
         * We will find direction of line here respect to @first_point.
         * Here @second_point and @third_point is first and second points
         * of the line respectively. we want a method to determine which way a
@@ -58,7 +58,7 @@ struct SegmentIntersection {
 
     inline bool on_segment(Point first_point, Point second_point,
                                                         Point third_point) {
-        /*
+       /**
         * This method determines whether a point known to be colinear
         * with a segment lies on that segment.
         */
