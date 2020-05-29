@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_3551',['x',['../d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7',1,'Point']]]
+  ['stack_3607',['stack',['../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7',1,'paranthesis_matching.cpp']]]
 ];

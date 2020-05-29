@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['values_3550',['values',['../d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9',1,'tower']]]
+  ['prime_3605',['prime',['../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95',1,'primes_up_to_billion.cpp']]],
+  ['prime_5fnumbers_3606',['prime_numbers',['../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe',1,'prime_factorization.cpp']]]
 ];

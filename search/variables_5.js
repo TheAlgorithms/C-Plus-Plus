@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['max_3545',['MAX',['../d4/d32/fibonacci__fast_8cpp.html#a692ac7187ee88621a9f78fca78ec498d',1,'fibonacci_fast.cpp']]]
+  ['isprime_3600',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'isprime():&#160;prime_factorization.cpp'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a0560e21edb54d5ad8d80b2d80348ce22',1,'isprime():&#160;sieve_of_eratosthenes.cpp']]]
 ];

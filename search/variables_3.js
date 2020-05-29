@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['isprime_3543',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'isprime():&#160;prime_factorization.cpp'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a0560e21edb54d5ad8d80b2d80348ce22',1,'isprime():&#160;sieve_of_eratosthenes.cpp']]]
+  ['f_3597',['f',['../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9',1,'fibonacci_fast.cpp']]],
+  ['factors_3598',['factors',['../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b',1,'prime_factorization.cpp']]]
 ];

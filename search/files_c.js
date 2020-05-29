@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quick_5fsort_2ecpp_2231',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]]
+  ['ordinary_5fleast_5fsquares_5fregressor_2ecpp_2260',['ordinary_least_squares_regressor.cpp',['../dc/d38/ordinary__least__squares__regressor_8cpp.html',1,'']]]
 ];
