@@ -26,7 +26,7 @@ jobs:
         run: |
           for fname in $(find . -type f -name '*.cpp' -o -name '*.h')
           do 
-            new_fname="$(echo -e \"${fname}\" | tr ' ' '_')"
+            new_fname="$(echo -e '${fname}' | tr ' ' '_')"
             new_fname="$(echo -e ${new_fname} | tr 'A-Z' 'a-z')"
             if [ $fname != $new_fname ]
             then
