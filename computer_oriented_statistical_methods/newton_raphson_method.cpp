@@ -1,42 +1,57 @@
+/**
+ * \file
+ * \brief Solve the equation \f$f(x)=0\f$ using [Newton-Raphson
+ * method](https://en.wikipedia.org/wiki/Newton%27s_method)
+ *
+ * The \f$(i+1)^\text{th}\f$ approximation is given by:
+ * \f[
+ * x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}
+ * \f]
+ *
+ * \see bisection_method.cpp, false_position.cpp
+ */
 #include <cmath>
+#include <ctime>
 #include <iostream>
+#include <limits>
 
-static float eq(float i) {
+#define EPSILON \
+    1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
+#define MAX_ITERATIONS 50000  ///< Maximum number of iterations to check
+
+/** define \f$f(x)\f$ to find root for
+ */
+static double eq(double i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
 
-static float eq_der(float i) {
+/** define the derivative function \f$f'(x)\f$
+ */
+static double eq_der(double i) {
     return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
 }
 
+/** Main function */
 int main() {
-    float a, b, z, c, m, n;
+    std::srand(std::time(nullptr));  // initialize randomizer
 
-    for (int i = 0; i < 100; i++) {
-        z = eq(i);
-        if (z >= 0) {
-            b = i;
-            a = --i;
-            break;
-        }
-    }
+    double z, c = std::rand() % 100, m, n;
+    int i;
 
-    std::cout << "\nFirst initial: " << a;
-    std::cout << "\nSecond initial: " << b;
-    c = (a + b) / 2;
+    std::cout << "\nInitial approximation: " << c;
 
-    for (int i = 0; i < 100; i++) {
-        float h;
+    // start iterations
+    for (i = 0; i < MAX_ITERATIONS; i++) {
         m = eq(c);
         n = eq_der(c);
 
         z = c - (m / n);
         c = z;
 
-        if (m > 0 && m < 0.009)  // stoping criteria
+        if (std::abs(m) < EPSILON)  // stoping criteria
             break;
     }
 
-    std::cout << "\n\nRoot: " << z << std::endl;
+    std::cout << "\n\nRoot: " << z << "\t\tSteps: " << i << std::endl;
     return 0;
 }
