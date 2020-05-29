@@ -93,7 +93,7 @@ class Trie {
 
  public:
     // constructor to initialise the root of the trie.
-    Trie() : m_root(std::make_shared<TrieNode>()){};
+    Trie() : m_root(std::make_shared<TrieNode>()) {}
 
     /**
      * Insert a word into the trie.
