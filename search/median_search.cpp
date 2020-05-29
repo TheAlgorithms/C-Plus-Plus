@@ -14,16 +14,16 @@
  * @todo add documentation
  */
 template <class X>
-void comp(X x, std::vector<int> &s1, std::vector<int> &s2,
-          std::vector<int> &s3) {
-    if (s1.size() >= x && s1.size() + s2.size() < x) {
-        std::cout << s2[0] << " is the " << x + 1 << "th element from front";
-    } else if (s1.size() > x) {
-        std::sort(s1.begin(), s1.end());
-        std::cout << s1[x] << " is the " << x + 1 << "th element from front";
-    } else if (s1.size() + s2.size() <= x && s3.size() > x) {
-        std::sort(s3.begin(), s3.end());
-        std::cout << s3[x - s1.size() - s2.size()] << " is the " << x + 1
+void comp(X x, std::vector<int> *s1, std::vector<int> *s2,
+          std::vector<int> *s3) {
+    if (s1->size() >= x && s1->size() + s2->size() < x) {
+        std::cout << (*s2)[0] << " is the " << x + 1 << "th element from front";
+    } else if (s1->size() > x) {
+        std::sort(s1->begin(), s1->end());
+        std::cout << (*s1)[x] << " is the " << x + 1 << "th element from front";
+    } else if (s1->size() + s2->size() <= x && s3->size() > x) {
+        std::sort(s3->begin(), s3->end());
+        std::cout << (*s3)[x - s1->size() - s2->size()] << " is the " << x + 1
                   << "th element from front";
     } else {
         std::cout << x + 1 << " is invalid location";
@@ -71,7 +71,7 @@ int main() {
     int x;
     std::cout << "enter the no. to be searched form begining:- ";
     std::cin >> x;
-    comp(x - 1, s1, s2, s3);
+    comp(x - 1, &s1, &s2, &s3);
 
     return 0;
 }
