@@ -13,7 +13,8 @@
 /** Test implementation for 10! Result must be 3628800.
  * @returns True if test pass else False
  */
-bool test1() {
+bool test1()
+{
     std::cout << "---- Check 1\t";
     unsigned int i, number = 10;
     large_number result;
@@ -23,15 +24,18 @@ bool test1() {
     const char *known_reslt = "3628800";
 
     /* check 1 */
-    if (strlen(known_reslt) != result.num_digits()) {
+    if (strlen(known_reslt) != result.num_digits())
+    {
         std::cerr << "Result lengths dont match! " << strlen(known_reslt)
                   << " != " << result.num_digits() << std::endl;
         return false;
     }
 
     const size_t N = result.num_digits();
-    for (i = 0; i < N; i++) {
-        if (known_reslt[i] != result.digit_char(i)) {
+    for (i = 0; i < N; i++)
+    {
+        if (known_reslt[i] != result.digit_char(i))
+        {
             std::cerr << i << "^th digit mismatch! " << known_reslt[i]
                       << " != " << result.digit_char(i) << std::endl;
             return false;
@@ -50,7 +54,8 @@ bool test1() {
  * ```
  * @returns True if test pass else False
  */
-bool test2() {
+bool test2()
+{
     std::cout << "---- Check 2\t";
     unsigned int i, number = 100;
     large_number result;
@@ -63,15 +68,18 @@ bool test2() {
         "000000000000000000";
 
     /* check 1 */
-    if (strlen(known_reslt) != result.num_digits()) {
+    if (strlen(known_reslt) != result.num_digits())
+    {
         std::cerr << "Result lengths dont match! " << strlen(known_reslt)
                   << " != " << result.num_digits() << std::endl;
         return false;
     }
 
     const size_t N = result.num_digits();
-    for (i = 0; i < N; i++) {
-        if (known_reslt[i] != result.digit_char(i)) {
+    for (i = 0; i < N; i++)
+    {
+        if (known_reslt[i] != result.digit_char(i))
+        {
             std::cerr << i << "^th digit mismatch! " << known_reslt[i]
                       << " != " << result.digit_char(i) << std::endl;
             return false;
@@ -85,12 +93,16 @@ bool test2() {
 /**
  * Main program
  **/
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     int number, i;
 
-    if (argc == 2) {
+    if (argc == 2)
+    {
         number = atoi(argv[1]);
-    } else {
+    }
+    else
+    {
         std::cout << "Enter the value of n(n starts from 0 ): ";
         std::cin >> number;
     }

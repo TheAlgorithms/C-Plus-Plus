@@ -9,8 +9,7 @@ int main()
     cin >> k;
     int a[n];
     cout << "Enter elements of array=\t";
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
+    for (int i = 0; i < n; i++) cin >> a[i];
     int temp = 0;
     for (int i = 0; i < k; i++)
     {

@@ -6,7 +6,8 @@
 #include <iostream>
 
 /** main function */
-int main() {
+int main()
+{
     int m, n;
     int counterZeros = 0;
 
@@ -21,16 +22,20 @@ int main() {
     std::cout << "\n";
 
     // reads the matrix from stdin
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             std::cout << "element? ";
             std::cin >> a[i][j];
         }
     }
 
     // counts the zero's
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             if (a[i][j] == 0)
                 counterZeros++;  // Counting number of zeroes
         }

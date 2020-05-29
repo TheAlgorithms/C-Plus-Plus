@@ -14,7 +14,8 @@
 /**
  * Recursively compute sequences
  */
-int fibonacci(unsigned int n) {
+int fibonacci(unsigned int n)
+{
     /* If the input is 0 or 1 just return the same
        This will set the first 2 values of the sequence */
     if (n <= 1)
@@ -25,7 +26,8 @@ int fibonacci(unsigned int n) {
 }
 
 /// Main function
-int main() {
+int main()
+{
     int n;
     std::cin >> n;
     assert(n >= 0);

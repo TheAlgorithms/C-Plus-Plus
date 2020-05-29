@@ -49,11 +49,14 @@
 /** Recursive function to calculate exponent in \f$O(\log n)\f$ using binary
  * exponent.
  */
-int64_t binExpo(int64_t a, int64_t b, int64_t m) {
+int64_t binExpo(int64_t a, int64_t b, int64_t m)
+{
     a %= m;
     int64_t res = 1;
-    while (b > 0) {
-        if (b % 2) {
+    while (b > 0)
+    {
+        if (b % 2)
+        {
             res = res * a % m;
         }
         a = a * a % m;
@@ -65,12 +68,18 @@ int64_t binExpo(int64_t a, int64_t b, int64_t m) {
 
 /** Prime check in \f$O(\sqrt{m})\f$ time.
  */
-bool isPrime(int64_t m) {
-    if (m <= 1) {
+bool isPrime(int64_t m)
+{
+    if (m <= 1)
+    {
         return false;
-    } else {
-        for (int64_t i = 2; i * i <= m; i++) {
-            if (m % i == 0) {
+    }
+    else
+    {
+        for (int64_t i = 2; i * i <= m; i++)
+        {
+            if (m % i == 0)
+            {
                 return false;
             }
         }
@@ -81,17 +90,21 @@ bool isPrime(int64_t m) {
 /**
  * Main function
  */
-int main() {
+int main()
+{
     int64_t a, m;
     // Take input of  a and m.
     std::cout << "Computing ((a^(-1))%(m)) using Fermat's Little Theorem";
     std::cout << std::endl << std::endl;
     std::cout << "Give input 'a' and 'm' space separated : ";
     std::cin >> a >> m;
-    if (isPrime(m)) {
+    if (isPrime(m))
+    {
         std::cout << "The modular inverse of a with mod m is (a^(m-2)) : ";
         std::cout << binExpo(a, m - 2, m) << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "m must be a prime number.";
         std::cout << std::endl;
     }

@@ -31,25 +31,31 @@ respectively.
 /**
  * Algorithm
  */
-int number_of_positive_divisors(int n) {
+int number_of_positive_divisors(int n)
+{
     std::vector<int> prime_exponent_count;
-    for (int i = 2; i * i <= n; i++) {
+    for (int i = 2; i * i <= n; i++)
+    {
         int prime_count = 0;
-        while (n % i == 0) {
+        while (n % i == 0)
+        {
             prime_count += 1;
             n /= i;
         }
-        if (prime_count != 0) {
+        if (prime_count != 0)
+        {
             prime_exponent_count.push_back(prime_count);
         }
     }
-    if (n > 1) {
+    if (n > 1)
+    {
         prime_exponent_count.push_back(1);
     }
 
     int divisors_count = 1;
 
-    for (int i = 0; i < prime_exponent_count.size(); i++) {
+    for (int i = 0; i < prime_exponent_count.size(); i++)
+    {
         divisors_count = divisors_count * (prime_exponent_count[i] + 1);
     }
 
@@ -59,15 +65,20 @@ int number_of_positive_divisors(int n) {
 /**
  * Main function
  */
-int main() {
+int main()
+{
     int n;
     std::cin >> n;
-    if (n < 0) {
+    if (n < 0)
+    {
         n = -n;
     }
-    if (n == 0) {
+    if (n == 0)
+    {
         std::cout << "All non-zero numbers are divisors of 0 !" << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "Number of positive divisors is : ";
         std::cout << number_of_positive_divisors(n) << std::endl;
     }

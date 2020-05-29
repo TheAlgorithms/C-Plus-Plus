@@ -15,9 +15,12 @@
  * \param [in] arr  2D-array containing Pascal numbers
  * \param [in] n    depth of Pascal triangle to print
  */
-void show_pascal(int **arr, int n) {
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n + i; ++j) {
+void show_pascal(int **arr, int n)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n + i; ++j)
+        {
             if (arr[i][j] == 0)
                 std::cout << std::setw(4) << " ";
             else
@@ -33,9 +36,12 @@ void show_pascal(int **arr, int n) {
  * \param [in] n    depth of Pascal triangle to print
  * \result arr pointer returned
  */
-int **pascal_triangle(int **arr, int n) {
-    for (int i = 0; i < n; ++i) {
-        for (int j = n - i - 1; j < n + i; ++j) {
+int **pascal_triangle(int **arr, int n)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = n - i - 1; j < n + i; ++j)
+        {
             if (j == n - i - 1 || j == n + i - 1)
                 arr[i][j] = 1;  // The edge of the Pascal triangle goes in 1
             else
@@ -49,7 +55,8 @@ int **pascal_triangle(int **arr, int n) {
 /**
  * main function
  */
-int main() {
+int main()
+{
     int n = 0;
 
     std::cout << "Set Pascal's Triangle Height" << std::endl;
@@ -57,7 +64,8 @@ int main() {
 
     // memory allocation (Assign two-dimensional array to store Pascal triangle)
     int **arr = new int *[n];
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i)
+    {
         arr[i] = new int[2 * n - 1];
         memset(arr[i], 0, sizeof(int) * (2 * n - 1));
     }
@@ -66,7 +74,8 @@ int main() {
     show_pascal(arr, n);
 
     // deallocation
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i)
+    {
         delete[] arr[i];
     }
     delete[] arr;

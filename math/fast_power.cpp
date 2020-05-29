@@ -23,11 +23,14 @@
  * algorithm implementation for \f$a^b\f$
  */
 template <typename T>
-double fast_power_recursive(T a, T b) {
+double fast_power_recursive(T a, T b)
+{
     // negative power. a^b = 1 / (a^-b)
-    if (b < 0) return 1.0 / fast_power_recursive(a, -b);
+    if (b < 0)
+        return 1.0 / fast_power_recursive(a, -b);
 
-    if (b == 0) return 1;
+    if (b == 0)
+        return 1;
     T bottom = fast_power_recursive(a, b >> 1);
     // Since it is integer division b/2 = (b-1)/2 where b is odd.
     // Therefore, case2 is easily solved by integer division.
@@ -45,13 +48,17 @@ double fast_power_recursive(T a, T b) {
     It still calculates in \f$O(\log N)\f$
 */
 template <typename T>
-double fast_power_linear(T a, T b) {
+double fast_power_linear(T a, T b)
+{
     // negative power. a^b = 1 / (a^-b)
-    if (b < 0) return 1.0 / fast_power_linear(a, -b);
+    if (b < 0)
+        return 1.0 / fast_power_linear(a, -b);
 
     double result = 1;
-    while (b) {
-        if (b & 1) result = result * a;
+    while (b)
+    {
+        if (b & 1)
+            result = result * a;
         a = a * a;
         b = b >> 1;
     }
@@ -61,12 +68,14 @@ double fast_power_linear(T a, T b) {
 /**
  * Main function
  */
-int main() {
+int main()
+{
     std::srand(std::time(nullptr));
     std::ios_base::sync_with_stdio(false);
 
     std::cout << "Testing..." << std::endl;
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 20; i++)
+    {
         int a = std::rand() % 20 - 10;
         int b = std::rand() % 20 - 10;
         std::cout << std::endl << "Calculating " << a << "^" << b << std::endl;

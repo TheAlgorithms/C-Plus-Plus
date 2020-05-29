@@ -1,6 +1,6 @@
-#include <iostream>
-#include <assert.h>
 #include "stack.h"
+#include <assert.h>
+#include <iostream>
 
 using namespace std;
 
@@ -24,11 +24,12 @@ void stack<Type>::display()
 {
     node<Type> *current = stackTop;
     cout << "Top --> ";
-    while(current != NULL) {
-        cout<<current->data<< "  ";
-        current = current -> next;
+    while (current != NULL)
+    {
+        cout << current->data << "  ";
+        current = current->next;
     }
-    cout <<endl;
+    cout << endl;
     cout << "Size of stack: " << size << endl;
 }
 
@@ -71,19 +72,22 @@ template <class Type>
 void stack<Type>::pop()
 {
     node<Type> *temp;
-    if(!isEmptyStack()) {
+    if (!isEmptyStack())
+    {
         temp = stackTop;
         stackTop = stackTop->next;
         delete temp;
         size--;
-    } else {
+    }
+    else
+    {
         cout << "Stack is empty !" << endl;
     }
 }
 
 /* Operator "=" */
 template <class Type>
-stack<Type> stack<Type>::operator=(stack<Type> & otherStack)
+stack<Type> stack<Type>::operator=(stack<Type> &otherStack)
 {
     node<Type> *newNode, *current, *last;
 
@@ -91,13 +95,14 @@ stack<Type> stack<Type>::operator=(stack<Type> & otherStack)
         stackTop = NULL;
     if (otherStack.stackTop == NULL)
         stackTop = NULL;
-    else {
+    else
+    {
         current = otherStack.stackTop;
         stackTop = new node<Type>;
         stackTop->data = current->data;
         stackTop->next = NULL;
         last = stackTop;
-        current = current ->next;
+        current = current->next;
         /* Copy the remaining stack */
         while (current != NULL)
         {

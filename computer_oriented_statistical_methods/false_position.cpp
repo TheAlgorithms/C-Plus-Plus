@@ -25,29 +25,36 @@
 
 /** define \f$f(x)\f$ to find root for
  */
-static double eq(double i) {
+static double eq(double i)
+{
     return (std::pow(i, 3) - (4 * i) - 9);  // origial equation
 }
 
 /** get the sign of any given number */
 template <typename T>
-int sgn(T val) {
+int sgn(T val)
+{
     return (T(0) < val) - (val < T(0));
 }
 
 /** main function */
-int main() {
+int main()
+{
     double a = -1, b = 1, x, z, m, n, c;
     int i;
 
     // loop to find initial intervals a, b
-    for (int i = 0; i < MAX_ITERATIONS; i++) {
+    for (int i = 0; i < MAX_ITERATIONS; i++)
+    {
         z = eq(a);
         x = eq(b);
-        if (sgn(z) == sgn(x)) {  // same signs, increase interval
+        if (sgn(z) == sgn(x))
+        {  // same signs, increase interval
             b++;
             a--;
-        } else {  // if opposite signs, we got our interval
+        }
+        else
+        {  // if opposite signs, we got our interval
             break;
         }
     }
@@ -55,7 +62,8 @@ int main() {
     std::cout << "\nFirst initial: " << a;
     std::cout << "\nSecond initial: " << b;
 
-    for (i = 0; i < MAX_ITERATIONS; i++) {
+    for (i = 0; i < MAX_ITERATIONS; i++)
+    {
         m = eq(a);
         n = eq(b);
 
@@ -64,7 +72,8 @@ int main() {
         a = c;
         z = eq(c);
 
-        if (std::abs(z) < EPSILON) {  // stoping criteria
+        if (std::abs(z) < EPSILON)
+        {  // stoping criteria
             break;
         }
     }

@@ -14,22 +14,21 @@ struct node
 template <class Type>
 class stack
 {
-    public:
-        void display();        /* Show stack */
-        stack();               /* Default constructor*/
-        ~stack();              /* Destructor */
-        bool isEmptyStack();   /* Determine whether the stack is empty */
-        void push (Type item); /* Add new item to the stack */
-        Type top();            /* Return the top element of the stack */
-        void pop();            /* Remove the top element of the stack */
-        void clear();
+ public:
+    void display();       /* Show stack */
+    stack();              /* Default constructor*/
+    ~stack();             /* Destructor */
+    bool isEmptyStack();  /* Determine whether the stack is empty */
+    void push(Type item); /* Add new item to the stack */
+    Type top();           /* Return the top element of the stack */
+    void pop();           /* Remove the top element of the stack */
+    void clear();
 
-        stack<Type> operator=(stack<Type> & otherStack);
-        // Overload "=" the assignment operator.
-    private:
-        node<Type> *stackTop;  /* Pointer to the stack */
-        int size;
+    stack<Type> operator=(stack<Type> &otherStack);
+    // Overload "=" the assignment operator.
+ private:
+    node<Type> *stackTop; /* Pointer to the stack */
+    int size;
 };
 
 #endif
-

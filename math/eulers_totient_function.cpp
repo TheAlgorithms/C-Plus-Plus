@@ -29,26 +29,35 @@
 
 /** Function to caculate Euler's totient phi
  */
-uint64_t phiFunction(uint64_t n) {
+uint64_t phiFunction(uint64_t n)
+{
     uint64_t result = n;
-    for (uint64_t i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            while (n % i == 0) {
+    for (uint64_t i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+        {
+            while (n % i == 0)
+            {
                 n /= i;
             }
             result -= result / i;
         }
     }
-    if (n > 1) result -= result / n;
+    if (n > 1)
+        result -= result / n;
     return result;
 }
 
 /// Main function
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     uint64_t n;
-    if (argc < 2) {
+    if (argc < 2)
+    {
         std::cout << "Enter the number: ";
-    } else {
+    }
+    else
+    {
         n = strtoull(argv[1], nullptr, 10);
     }
     std::cin >> n;

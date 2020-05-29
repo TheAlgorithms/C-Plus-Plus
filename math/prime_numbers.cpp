@@ -9,12 +9,15 @@
 /** Generate an increasingly large number of primes
  * and store in a list
  */
-std::vector<int> primes(int max) {
+std::vector<int> primes(int max)
+{
     max++;
     std::vector<int> res;
     std::vector<bool> numbers(max, false);
-    for (int i = 2; i < max; i++) {
-        if (!numbers[i]) {
+    for (int i = 2; i < max; i++)
+    {
+        if (!numbers[i])
+        {
             for (int j = i; j < max; j += i) numbers[j] = true;
             res.push_back(i);
         }
@@ -23,7 +26,8 @@ std::vector<int> primes(int max) {
 }
 
 /** main function */
-int main() {
+int main()
+{
     std::cout << "Calculate primes up to:\n>> ";
     int n;
     std::cin >> n;

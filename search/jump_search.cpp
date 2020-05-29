@@ -9,14 +9,16 @@
 
 /** jump search implementation
  */
-int jumpSearch(int arr[], int x, int n) {
+int jumpSearch(int arr[], int x, int n)
+{
     // Finding block size to be jumped
     int step = std::sqrt(n);
 
     // Finding the block where element is
     // present (if it is present)
     int prev = 0;
-    while (arr[std::min(step, n) - 1] < x) {
+    while (arr[std::min(step, n) - 1] < x)
+    {
         prev = step;
         step += std::sqrt(n);
         if (prev >= n)
@@ -25,7 +27,8 @@ int jumpSearch(int arr[], int x, int n) {
 
     // Doing a linear search for x in block
     // beginning with prev.
-    while (arr[prev] < x) {
+    while (arr[prev] < x)
+    {
         prev++;
 
         // If we reached next block or end of
@@ -41,7 +44,8 @@ int jumpSearch(int arr[], int x, int n) {
 }
 
 // Driver program to test function
-int main() {
+int main()
+{
     int arr[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610};
     int x = 55;
     int n = sizeof(arr) / sizeof(arr[0]);

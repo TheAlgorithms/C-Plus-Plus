@@ -11,10 +11,13 @@
  * \returns true if happy else false
  */
 template <typename T>
-bool is_happy(T n) {
-    T s = 0;              // stores sum of digits
-    while (n > 9) {       // while number is > 9, there are more than 1 digit
-        while (n != 0) {  // get digit
+bool is_happy(T n)
+{
+    T s = 0;  // stores sum of digits
+    while (n > 9)
+    {  // while number is > 9, there are more than 1 digit
+        while (n != 0)
+        {  // get digit
             T d = n % 10;
             s += d;
             n /= 10;
@@ -26,7 +29,8 @@ bool is_happy(T n) {
 }
 
 /** Main function */
-int main() {
+int main()
+{
     int n;
     std::cout << "Enter a number:";
     std::cin >> n;

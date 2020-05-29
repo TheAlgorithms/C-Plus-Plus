@@ -8,7 +8,8 @@
 /**
  * Define the state of tower
  */
-struct tower {
+struct tower
+{
     //! Values in the tower
     int values[10];
     //! top tower ID
@@ -17,17 +18,21 @@ struct tower {
 
 /** Display the towers */
 void show(const struct tower *const F, const struct tower *const T,
-          const struct tower *const U) {
+          const struct tower *const U)
+{
     std::cout << "\n\n\tF : ";
-    for (int i = 0; i < F->top; i++) {
+    for (int i = 0; i < F->top; i++)
+    {
         std::cout << F->values[i] << "\t";
     }
     std::cout << "\n\tU : ";
-    for (int i = 0; i < U->top; i++) {
+    for (int i = 0; i < U->top; i++)
+    {
         std::cout << U->values[i] << "\t";
     }
     std::cout << "\n\tT : ";
-    for (int i = 0; i < T->top; i++) {
+    for (int i = 0; i < T->top; i++)
+    {
         std::cout << T->values[i] << "\t";
     }
 }
@@ -36,7 +41,8 @@ void show(const struct tower *const F, const struct tower *const T,
  * \param [in,out] From tower to move disk *from*
  * \param [in,out] To  tower to move disk *to*
  */
-void mov(tower *From, tower *To) {
+void mov(tower *From, tower *To)
+{
     --From->top;
     To->values[To->top] = From->values[From->top];
     ++To->top;
@@ -49,11 +55,15 @@ void mov(tower *From, tower *To) {
  * \param [in,out] Using temporary tower for the puzzle
  * \param [in,out] To  tower to move disk to
  */
-void TH(int n, tower *From, tower *Using, tower *To) {
-    if (n == 1) {
+void TH(int n, tower *From, tower *Using, tower *To)
+{
+    if (n == 1)
+    {
         mov(From, To);
         show(From, To, Using);
-    } else {
+    }
+    else
+    {
         TH(n - 1, From, To, Using);
         mov(From, To);
         show(From, To, Using);
@@ -62,7 +72,8 @@ void TH(int n, tower *From, tower *Using, tower *To) {
 }
 
 /** Main function */
-int main() {
+int main()
+{
     struct tower F, U, T;
 
     F.top = 0;
@@ -74,7 +85,8 @@ int main() {
     std::cout << "\nEnter number of discs : ";
     std::cin >> no;
 
-    for (int i = no; i > 0; i--) {
+    for (int i = no; i > 0; i--)
+    {
         F.values[F.top++] = i;
     }
 

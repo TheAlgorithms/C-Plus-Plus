@@ -1,13 +1,13 @@
 // Copyright 2019
 
-#include<stdlib.h>
-#include<iostream>
-#include<functional>
-#include<string>
+#include <stdlib.h>
+#include <functional>
+#include <iostream>
+#include <string>
 
-using std::endl;
-using std::cout;
 using std::cin;
+using std::cout;
+using std::endl;
 using std::string;
 
 // fwd declarations
@@ -25,53 +25,70 @@ int size;
 bool rehashing;
 
 // Node that holds key
-struct Entry {
+struct Entry
+{
     explicit Entry(int key = notPresent) : key(key) {}
     int key;
 };
 
 // Hash a key
-int hashFxn(int key) {
+int hashFxn(int key)
+{
     std::hash<int> hash;
     return hash(key);
 }
 
 // Used for second hash function
-int otherHashFxn(int key) {
+int otherHashFxn(int key)
+{
     std::hash<int> hash;
     return 1 + (7 - (hash(key) % 7));
 }
 
 // Performs double hashing to resolve collisions
-int doubleHash(int key, bool searching) {
+int doubleHash(int key, bool searching)
+{
     int hash = static_cast<int>(fabs(hashFxn(key)));
     int i = 0;
     Entry entry;
-    do {
-        int index = static_cast<int>(fabs((hash +
-            (i * otherHashFxn(key))))) % totalSize;
+    do
+    {
+        int index = static_cast<int>(fabs((hash + (i * otherHashFxn(key))))) %
+                    totalSize;
         entry = table[index];
-        if (searching) {
-            if (entry.key == notPresent) {
+        if (searching)
+        {
+            if (entry.key == notPresent)
+            {
                 return notPresent;
             }
-            if (searchingProber(entry, key)) {
+            if (searchingProber(entry, key))
+            {
                 cout << "Found key!" << endl;
                 return index;
             }
             cout << "Found tombstone or equal hash, checking next" << endl;
             i++;
-        } else {
-            if (putProber(entry, key)) {
-                if (!rehashing) cout << "Spot found!" << endl;
+        }
+        else
+        {
+            if (putProber(entry, key))
+            {
+                if (!rehashing)
+                    cout << "Spot found!" << endl;
                 return index;
             }
-            if (!rehashing) cout << "Spot taken, looking at next (next index:"
-                << " " << static_cast<int>(fabs((hash +
-                (i * otherHashFxn(key))))) % totalSize << ")" << endl;
+            if (!rehashing)
+                cout << "Spot taken, looking at next (next index:"
+                     << " "
+                     << static_cast<int>(
+                            fabs((hash + (i * otherHashFxn(key))))) %
+                            totalSize
+                     << ")" << endl;
             i++;
         }
-        if (i == totalSize * 100) {
+        if (i == totalSize * 100)
+        {
             cout << "DoubleHash probe failed" << endl;
             return notPresent;
         }
@@ -80,27 +97,38 @@ int doubleHash(int key, bool searching) {
 }
 
 // Finds empty spot
-bool putProber(Entry entry, int key) {
-    if (entry.key == notPresent || entry.key == tomb) {
+bool putProber(Entry entry, int key)
+{
+    if (entry.key == notPresent || entry.key == tomb)
+    {
         return true;
     }
     return false;
 }
 
 // Looks for a matching key
-bool searchingProber(Entry entry, int key) {
-    if (entry.key == key) return true;
+bool searchingProber(Entry entry, int key)
+{
+    if (entry.key == key)
+        return true;
     return false;
 }
 
 // Displays the table
-void display() {
-    for (int i = 0; i < totalSize; i++) {
-        if (table[i].key == notPresent) {
+void display()
+{
+    for (int i = 0; i < totalSize; i++)
+    {
+        if (table[i].key == notPresent)
+        {
             cout << " Empty ";
-        } else if (table[i].key == tomb) {
+        }
+        else if (table[i].key == tomb)
+        {
             cout << " Tomb ";
-        } else {
+        }
+        else
+        {
             cout << " ";
             cout << table[i].key;
             cout << " ";
@@ -110,7 +138,8 @@ void display() {
 }
 
 // Rehashes the table into a bigger table
-void rehash() {
+void rehash()
+{
     // Necessary so wall of add info isn't printed all at once
     rehashing = true;
     int oldSize = totalSize;
@@ -118,8 +147,10 @@ void rehash() {
     // Really this should use the next prime number greater than totalSize * 2
     table = new Entry[totalSize * 2];
     totalSize *= 2;
-    for (int i = 0; i < oldSize; i++) {
-        if (oldTable[i].key != -1 && oldTable[i].key != notPresent) {
+    for (int i = 0; i < oldSize; i++)
+    {
+        if (oldTable[i].key != -1 && oldTable[i].key != notPresent)
+        {
             size--;  // Size stays the same (add increments size)
             add(oldTable[i].key);
         }
@@ -130,21 +161,25 @@ void rehash() {
 }
 
 // Checks for load factor here
-void add(int key) {
-    Entry * entry = new Entry();
+void add(int key)
+{
+    Entry* entry = new Entry();
     entry->key = key;
     int index = doubleHash(key, false);
     table[index] = *entry;
     // Load factor greater than 0.5 causes resizing
-    if (++size/ static_cast<double>(totalSize) >= 0.5) {
+    if (++size / static_cast<double>(totalSize) >= 0.5)
+    {
         rehash();
     }
 }
 
 // Removes key. Leaves tombstone upon removal.
-void remove(int key) {
+void remove(int key)
+{
     int index = doubleHash(key, true);
-    if (index == notPresent) {
+    if (index == notPresent)
+    {
         cout << "key not found" << endl;
     }
     table[index].key = tomb;
@@ -153,12 +188,13 @@ void remove(int key) {
 }
 
 // Information about the adding process
-void addInfo(int key) {
+void addInfo(int key)
+{
     cout << "Initial table: ";
     display();
     cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key)
-        << " % " << totalSize << " == " << fabs(hashFxn(key) % totalSize);
+    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
+         << " == " << fabs(hashFxn(key) % totalSize);
     cout << endl;
     add(key);
     cout << "New table: ";
@@ -166,12 +202,13 @@ void addInfo(int key) {
 }
 
 // Information about removal process
-void removalInfo(int key) {
+void removalInfo(int key)
+{
     cout << "Initial table: ";
     display();
     cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key)
-        << " % " << totalSize << " == " << hashFxn(key) % totalSize;
+    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
+         << " == " << hashFxn(key) % totalSize;
     cout << endl;
     remove(key);
     cout << "New table: ";
@@ -179,13 +216,15 @@ void removalInfo(int key) {
 }
 
 // I/O
-int main(void) {
+int main(void)
+{
     int cmd, hash, key;
     cout << "Enter the initial size of Hash Table. = ";
     cin >> totalSize;
     table = new Entry[totalSize];
     bool loop = true;
-    while (loop) {
+    while (loop)
+    {
         system("pause");
         cout << endl;
         cout << "PLEASE CHOOSE -" << endl;
@@ -196,7 +235,8 @@ int main(void) {
         cout << "5. Display Hash table." << endl;
         cout << "6. Exit." << endl;
         cin >> cmd;
-        switch (cmd) {
+        switch (cmd)
+        {
         case 1:
             cout << "Enter key to add = ";
             cin >> key;
@@ -207,11 +247,13 @@ int main(void) {
             cin >> key;
             removalInfo(key);
             break;
-        case 3: {
+        case 3:
+        {
             cout << "Enter key to search = ";
             cin >> key;
             Entry entry = table[doubleHash(key, true)];
-            if (entry.key == notPresent) {
+            if (entry.key == notPresent)
+            {
                 cout << "Key not present";
             }
             break;

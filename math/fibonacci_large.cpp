@@ -20,11 +20,13 @@
  * \f[f(n)=f(n-1)+f(n-2)\f]
  * and returns the result as a large_number type.
  */
-large_number fib(uint64_t n) {
+large_number fib(uint64_t n)
+{
     large_number f0(1);
     large_number f1(1);
 
-    do {
+    do
+    {
         large_number f2 = f1;
         f1 += f0;
         f0 = f2;
@@ -34,11 +36,15 @@ large_number fib(uint64_t n) {
     return f1;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     uint64_t N;
-    if (argc == 2) {
+    if (argc == 2)
+    {
         N = strtoull(argv[1], NULL, 10);
-    } else {
+    }
+    else
+    {
         std::cout << "Enter N: ";
         std::cin >> N;
     }

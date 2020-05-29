@@ -14,7 +14,8 @@
  * calculate the events per unit time\n
  * e.g 5 dollars every 2 mins = 5 / 2 = 2.5
  */
-double poisson_rate(double events, double timeframe) {
+double poisson_rate(double events, double timeframe)
+{
     return events / timeframe;
 }
 
@@ -27,13 +28,16 @@ double poisson_expected(double rate, double time) { return rate * time; }
 /**
  * Compute factorial of a given number
  */
-double fact(double x) {
+double fact(double x)
+{
     double x_fact = x;
-    for (int i = x - 1; i > 0; i--) {
+    for (int i = x - 1; i > 0; i--)
+    {
         x_fact *= i;
     }
 
-    if (x_fact <= 0) {
+    if (x_fact <= 0)
+    {
         x_fact = 1;
     }
     return x_fact;
@@ -43,7 +47,8 @@ double fact(double x) {
  * Find the probability of x successes in a Poisson dist.
  * \f[p(\mu,x) = \frac{\mu^x e^{-\mu}}{x!}\f]
  */
-double poisson_x_successes(double expected, double x) {
+double poisson_x_successes(double expected, double x)
+{
     return (std::pow(expected, x) * std::exp(-expected)) / fact(x);
 }
 
@@ -51,9 +56,11 @@ double poisson_x_successes(double expected, double x) {
  * probability of a success in range for Poisson dist (inclusive, inclusive)
  * \f[P = \sum_i p(\mu,i)\f]
  */
-double poisson_range_successes(double expected, double lower, double upper) {
+double poisson_range_successes(double expected, double lower, double upper)
+{
     double probability = 0;
-    for (int i = lower; i <= upper; i++) {
+    for (int i = lower; i <= upper; i++)
+    {
         probability += poisson_x_successes(expected, i);
     }
     return probability;
@@ -62,7 +69,8 @@ double poisson_range_successes(double expected, double lower, double upper) {
 /**
  * main function
  */
-int main() {
+int main()
+{
     double rate, expected;
     rate = poisson_rate(3, 1);
     std::cout << "Poisson rate : " << rate << std::endl;

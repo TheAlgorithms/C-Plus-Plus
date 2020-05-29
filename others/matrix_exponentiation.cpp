@@ -58,11 +58,15 @@ vector<ll> a, b, c;
  * \result matrix of dimension (m\f$\times\f$q)
  */
 vector<vector<ll>> multiply(const vector<vector<ll>> &A,
-                            const vector<vector<ll>> &B) {
+                            const vector<vector<ll>> &B)
+{
     vector<vector<ll>> C(k + 1, vector<ll>(k + 1));
-    for (ll i = 1; i <= k; i++) {
-        for (ll j = 1; j <= k; j++) {
-            for (ll z = 1; z <= k; z++) {
+    for (ll i = 1; i <= k; i++)
+    {
+        for (ll j = 1; j <= k; j++)
+        {
+            for (ll z = 1; z <= k; z++)
+            {
                 C[i][j] = (C[i][j] + (A[i][z] * B[z][j]) % MOD) % MOD;
             }
         }
@@ -76,12 +80,16 @@ vector<vector<ll>> multiply(const vector<vector<ll>> &A,
  * \param [in] p exponent
  * \return matrix of same dimension as A
  */
-vector<vector<ll>> power(const vector<vector<ll>> &A, ll p) {
+vector<vector<ll>> power(const vector<vector<ll>> &A, ll p)
+{
     if (p == 1)
         return A;
-    if (p % 2 == 1) {
+    if (p % 2 == 1)
+    {
         return multiply(A, power(A, p - 1));
-    } else {
+    }
+    else
+    {
         vector<vector<ll>> X = power(A, p / 2);
         return multiply(X, X);
     }
@@ -91,7 +99,8 @@ vector<vector<ll>> power(const vector<vector<ll>> &A, ll p) {
  * \param[in] n \f$n^\text{th}\f$ Fibonacci number
  * \return \f$n^\text{th}\f$ Fibonacci number
  */
-ll ans(ll n) {
+ll ans(ll n)
+{
     if (n == 0)
         return 0;
     if (n <= k)
@@ -102,9 +111,12 @@ ll ans(ll n) {
 
     // Transpose matrix
     vector<vector<ll>> T(k + 1, vector<ll>(k + 1));
-    for (ll i = 1; i <= k; i++) {
-        for (ll j = 1; j <= k; j++) {
-            if (i < k) {
+    for (ll i = 1; i <= k; i++)
+    {
+        for (ll j = 1; j <= k; j++)
+        {
+            if (i < k)
+            {
                 if (j == i + 1)
                     T[i][j] = 1;
                 else
@@ -119,26 +131,31 @@ ll ans(ll n) {
 
     // T*F1
     ll res = 0;
-    for (ll i = 1; i <= k; i++) {
+    for (ll i = 1; i <= k; i++)
+    {
         res = (res + (T[1][i] * F1[i]) % MOD) % MOD;
     }
     return res;
 }
 
 /** Main function */
-int main() {
+int main()
+{
     cin.tie(0);
     cout.tie(0);
     ll t;
     cin >> t;
     ll i, j, x;
-    while (t--) {
+    while (t--)
+    {
         cin >> k;
-        for (i = 0; i < k; i++) {
+        for (i = 0; i < k; i++)
+        {
             cin >> x;
             b.pb(x);
         }
-        for (i = 0; i < k; i++) {
+        for (i = 0; i < k; i++)
+        {
             cin >> x;
             c.pb(x);
         }

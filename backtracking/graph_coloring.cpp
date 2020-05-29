@@ -48,8 +48,7 @@ void graphColoring(bool graph[V][V], int m, int color[], int v)
 void printSolution(int color[])
 {
     printf(" Following are the assigned colors \n");
-    for (int i = 0; i < V; i++)
-        printf(" %d ", color[i]);
+    for (int i = 0; i < V; i++) printf(" %d ", color[i]);
     printf("\n");
 }
 
@@ -69,12 +68,11 @@ int main()
         {1, 1, 0, 1},
         {1, 0, 1, 0},
     };
-    int m = 3; // Number of colors
+    int m = 3;  // Number of colors
 
     int color[V];
 
-    for (int i = 0; i < V; i++)
-        color[i] = 0;
+    for (int i = 0; i < V; i++) color[i] = 0;
 
     graphColoring(graph, m, color, 0);
     return 0;

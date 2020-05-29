@@ -1,6 +1,6 @@
-#include <iostream>
-#include <assert.h>
 #include "queue.h"
+#include <assert.h>
+#include <iostream>
 
 using namespace std;
 
@@ -25,11 +25,12 @@ void queue<Kind>::display()
 {
     node<Kind> *current = queueFront;
     cout << "Front --> ";
-    while(current != NULL) {
-        cout<<current->data<< "    ";
-        current = current -> next;
+    while (current != NULL)
+    {
+        cout << current->data << "    ";
+        current = current->next;
     }
-    cout <<endl;
+    cout << endl;
     cout << "Size of queue: " << size << endl;
 }
 
@@ -55,10 +56,13 @@ void queue<Kind>::enQueue(Kind item)
     newNode = new node<Kind>;
     newNode->data = item;
     newNode->next = NULL;
-    if (queueFront == NULL) {
+    if (queueFront == NULL)
+    {
         queueFront = newNode;
         queueRear = newNode;
-    } else {
+    }
+    else
+    {
         queueRear->next = newNode;
         queueRear = queueRear->next;
     }
@@ -78,13 +82,15 @@ template <class Kind>
 void queue<Kind>::deQueue()
 {
     node<Kind> *temp;
-    if(!isEmptyQueue()) {
+    if (!isEmptyQueue())
+    {
         temp = queueFront;
         queueFront = queueFront->next;
         delete temp;
         size--;
-    } else {
+    }
+    else
+    {
         cout << "Queue is empty !" << endl;
     }
 }
-

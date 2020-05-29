@@ -11,7 +11,7 @@ class Queue
     node *front;
     node *rear;
 
-public:
+ public:
     Queue()
     {
         front = NULL;

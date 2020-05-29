@@ -11,7 +11,8 @@
  * \parama [in] B probability of event B
  * \returns probability of A and B
  */
-double addition_rule_independent(double A, double B) {
+double addition_rule_independent(double A, double B)
+{
     return (A + B) - (A * B);
 }
 
@@ -22,12 +23,14 @@ double addition_rule_independent(double A, double B) {
  * \parama [in] B_given_A probability of event B condition A
  * \returns probability of A and B
  */
-double addition_rule_dependent(double A, double B, double B_given_A) {
+double addition_rule_dependent(double A, double B, double B_given_A)
+{
     return (A + B) - (A * B_given_A);
 }
 
 /** Main function */
-int main() {
+int main()
+{
     double A = 0.5;
     double B = 0.25;
     double B_given_A = 0.05;

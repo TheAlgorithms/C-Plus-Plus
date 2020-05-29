@@ -7,8 +7,7 @@ void printSolution(int board[N][N])
     cout << "\n";
     for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j < N; j++)
-            cout << "" << board[i][j];
+        for (int j = 0; j < N; j++) cout << "" << board[i][j];
         cout << "\n";
     }
 }
@@ -37,7 +36,6 @@ bool isSafe(int board[N][N], int row, int col)
 
 void solveNQ(int board[N][N], int col)
 {
-
     if (col >= N)
     {
         printSolution(board);
@@ -59,18 +57,14 @@ void solveNQ(int board[N][N], int col)
             /* recur to place rest of the queens */
             solveNQ(board, col + 1);
 
-            board[i][col] = 0; // BACKTRACK
+            board[i][col] = 0;  // BACKTRACK
         }
     }
 }
 
 int main()
 {
-
-    int board[N][N] = {{0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0},
-                       {0, 0, 0, 0}};
+    int board[N][N] = {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
 
     solveNQ(board, 0);
     return 0;

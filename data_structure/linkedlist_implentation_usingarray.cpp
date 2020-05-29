@@ -1,6 +1,8 @@
-/* The difference between the pointer implementation of linked list and array implementation of linked list:
+/* The difference between the pointer implementation of linked list and array
+ implementation of linked list:
  1. The NULL is represented by -1;
- 2. Limited size. (in the following case it is 100 nodes at max). But we can reuse the nodes that are to be deleted by again linking it bacj to the list.
+ 2. Limited size. (in the following case it is 100 nodes at max). But we can
+ reuse the nodes that are to be deleted by again linking it bacj to the list.
 */
 
 #include <iostream>
@@ -10,7 +12,7 @@ struct Node
     int data;
     int next;
 };
-Node AvailArray[100]; //array that will act as nodes of a linked list.
+Node AvailArray[100];  // array that will act as nodes of a linked list.
 int head = -1;
 int avail = 0;
 void initialise_list()
@@ -19,23 +21,28 @@ void initialise_list()
     {
         AvailArray[i].next = i + 1;
     }
-    AvailArray[99].next = -1; //indicating the end of the linked list.
+    AvailArray[99].next = -1;  // indicating the end of the linked list.
 }
 
-int getnode() //This will return the index of the first free node present in the avail list
+int getnode()  // This will return the index of the first free node present in
+               // the avail list
 {
     int NodeIndexToBeReturned = avail;
     avail = AvailArray[avail].next;
     return NodeIndexToBeReturned;
 }
 
-void freeNode(int nodeToBeDeleted) //This function when called will delete the node with the index presented as an argument, and will put back that node into the array.
+void freeNode(
+    int nodeToBeDeleted)  // This function when called will delete the node with
+                          // the index presented as an argument, and will put
+                          // back that node into the array.
 {
     AvailArray[nodeToBeDeleted].next = avail;
     avail = nodeToBeDeleted;
 }
 
-void insertAtTheBeginning(int data) //The function will insert the given data into the front of the linked list.
+void insertAtTheBeginning(int data)  // The function will insert the given data
+                                     // into the front of the linked list.
 {
     int newNode = getnode();
     AvailArray[newNode].data = data;
@@ -51,7 +58,7 @@ void insertAtTheEnd(int data)
     {
         temp = AvailArray[temp].next;
     }
-    //temp is now pointing to the end node.
+    // temp is now pointing to the end node.
     AvailArray[newNode].data = data;
     AvailArray[newNode].next = -1;
     AvailArray[temp].next = newNode;
@@ -94,7 +101,8 @@ int main()
             insertAtTheEnd(y);
             break;
         case 3:
-            cout << "The linked list contains the following element in order" << endl;
+            cout << "The linked list contains the following element in order"
+                 << endl;
             display();
             break;
         case 4:

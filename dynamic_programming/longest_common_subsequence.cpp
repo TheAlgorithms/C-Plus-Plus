@@ -1,4 +1,4 @@
-//Longest common subsequence - Dynamic Programming
+// Longest common subsequence - Dynamic Programming
 #include <iostream>
 using namespace std;
 
@@ -52,19 +52,22 @@ int lcs(string a, string b)
             else if (a[i - 1] == b[j - 1])
             {
                 res[i][j] = 1 + res[i - 1][j - 1];
-                trace[i][j] = 1; // 1 means trace the matrix in upper left diagonal direction.
+                trace[i][j] = 1;  // 1 means trace the matrix in upper left
+                                  // diagonal direction.
             }
             else
             {
                 if (res[i - 1][j] > res[i][j - 1])
                 {
                     res[i][j] = res[i - 1][j];
-                    trace[i][j] = 2; // 2 means trace the matrix in upwards direction.
+                    trace[i][j] =
+                        2;  // 2 means trace the matrix in upwards direction.
                 }
                 else
                 {
                     res[i][j] = res[i][j - 1];
-                    trace[i][j] = 3; //  means trace the matrix in left direction.
+                    trace[i][j] =
+                        3;  //  means trace the matrix in left direction.
                 }
             }
         }

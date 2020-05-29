@@ -22,7 +22,6 @@ void Enque(int x)
 
     else
     {
-
         node *n = new node;
         n->val = x;
         n->next = NULL;
@@ -40,8 +39,7 @@ void Deque()
     else
     {
         node *t = front;
-        cout << "\n"
-             << t->val << " deleted";
+        cout << "\n" << t->val << " deleted";
         front = front->next;
         delete t;
         if (front == NULL)

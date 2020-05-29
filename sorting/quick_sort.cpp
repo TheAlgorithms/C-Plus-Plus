@@ -33,14 +33,17 @@
  *
  */
 
-int partition(int arr[], int low, int high) {
+int partition(int arr[], int low, int high)
+{
     int pivot = arr[high];  // taking the last element as pivot
     int i = (low - 1);      // Index of smaller element
 
-    for (int j = low; j < high; j++) {
+    for (int j = low; j < high; j++)
+    {
         // If current element is smaller than or
         // equal to pivot
-        if (arr[j] <= pivot) {
+        if (arr[j] <= pivot)
+        {
             i++;  // increment index of smaller element
             int temp = arr[i];
             arr[i] = arr[j];
@@ -59,8 +62,10 @@ int partition(int arr[], int low, int high) {
  *      low --> Starting index,
  *      high --> Ending index
  */
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high)
+    {
         int p = partition(arr, low, high);
         quickSort(arr, low, p - 1);
         quickSort(arr, p + 1, high);
@@ -68,13 +73,15 @@ void quickSort(int arr[], int low, int high) {
 }
 
 // prints the array after sorting
-void show(int arr[], int size) {
+void show(int arr[], int size)
+{
     for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
 }
 
 /** Driver program to test above functions */
-int main() {
+int main()
+{
     int size;
     std::cout << "\nEnter the number of elements : ";
 
@@ -84,7 +91,8 @@ int main() {
 
     std::cout << "\nEnter the unsorted elements : ";
 
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; ++i)
+    {
         std::cout << "\n";
         std::cin >> arr[i];
     }

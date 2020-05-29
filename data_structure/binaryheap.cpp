@@ -1,6 +1,6 @@
 // A C++ program to demonstrate common Binary Heap Operations
-#include <iostream>
 #include <climits>
+#include <iostream>
 using namespace std;
 
 // Prototype of a utility function to swap two integers
@@ -9,10 +9,10 @@ void swap(int *x, int *y);
 // A class for Min Heap
 class MinHeap
 {
-    int *harr;     // pointer to array of elements in heap
-    int capacity;  // maximum possible size of min heap
-    int heap_size; // Current number of elements in min heap
-public:
+    int *harr;      // pointer to array of elements in heap
+    int capacity;   // maximum possible size of min heap
+    int heap_size;  // Current number of elements in min heap
+ public:
     // Constructor
     MinHeap(int capacity);
 

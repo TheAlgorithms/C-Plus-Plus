@@ -8,7 +8,8 @@
 /**
  * Main program
  */
-int main(void) {
+int main(void)
+{
     int valueToConvert = 0;  // Holds user input
     int hexArray[8];         // Contains hex values backwards
     int i = 0;               // counter
@@ -19,7 +20,8 @@ int main(void) {
     std::cin >>
         valueToConvert;  // Stores value into valueToConvert via user input
 
-    while (valueToConvert > 15) {             // Dec to Hex Algorithm
+    while (valueToConvert > 15)
+    {                                         // Dec to Hex Algorithm
         hexArray[i++] = valueToConvert % 16;  // Gets remainder
         valueToConvert /= 16;
         // valueToConvert >>= 4;  // This will divide by 2^4=16 and is faster

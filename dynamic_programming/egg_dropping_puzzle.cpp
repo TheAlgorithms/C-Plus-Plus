@@ -1,9 +1,9 @@
-/* Function to get minimun number of trials needed 
- * in worst case with n eggs and k floors 
+/* Function to get minimun number of trials needed
+ * in worst case with n eggs and k floors
  */
 
-#include <iostream>
 #include <climits>
+#include <iostream>
 using namespace std;
 
 int eggDrop(int n, int k)
@@ -13,8 +13,8 @@ int eggDrop(int n, int k)
 
     for (int i = 1; i <= n; i++)
     {
-        eggFloor[i][1] = 1; //n eggs..1 Floor
-        eggFloor[i][0] = 0; //n eggs..0 Floor
+        eggFloor[i][1] = 1;  // n eggs..1 Floor
+        eggFloor[i][0] = 0;  // n eggs..0 Floor
     }
 
     // Only one egg available

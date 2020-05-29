@@ -1,19 +1,18 @@
-#include <iostream>
 #include <limits.h>
+#include <iostream>
 
 using namespace std;
 
-//Wrapper class for storing a graph
+// Wrapper class for storing a graph
 class Graph
 {
-public:
+ public:
     int vertexNum;
     int **edges;
 
-    //Constructs a graph with V vertices and E edges
+    // Constructs a graph with V vertices and E edges
     Graph(const int V)
     {
-
         // initializes the array edges.
         this->edges = new int *[V];
         for (int i = 0; i < V; i++)
@@ -33,13 +32,13 @@ public:
         this->vertexNum = V;
     }
 
-    //Adds the given edge to the graph
+    // Adds the given edge to the graph
     void addEdge(int src, int dst, int weight)
     {
         this->edges[src][dst] = weight;
     }
 };
-//Utility function to find minimum distance vertex in mdist
+// Utility function to find minimum distance vertex in mdist
 int minDistance(int mdist[], bool vset[], int V)
 {
     int minVal = INT_MAX, minInd = 0;
@@ -55,7 +54,7 @@ int minDistance(int mdist[], bool vset[], int V)
     return minInd;
 }
 
-//Utility function to print distances
+// Utility function to print distances
 void print(int dist[], int V)
 {
     cout << "\nVertex  Distance" << endl;
@@ -68,17 +67,17 @@ void print(int dist[], int V)
     }
 }
 
-//The main function that finds the shortest path from given source
-//to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
-//weights
+// The main function that finds the shortest path from given source
+// to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
+// weights
 void Dijkstra(Graph graph, int src)
 {
     int V = graph.vertexNum;
-    int mdist[V]; //Stores updated distances to vertex
-    bool vset[V]; // vset[i] is true if the vertex i included
+    int mdist[V];  // Stores updated distances to vertex
+    bool vset[V];  // vset[i] is true if the vertex i included
     // in the shortest path tree
 
-    //Initialise mdist and vset. Set distance of source as zero
+    // Initialise mdist and vset. Set distance of source as zero
     for (int i = 0; i < V; i++)
     {
         mdist[i] = INT_MAX;
@@ -87,7 +86,7 @@ void Dijkstra(Graph graph, int src)
 
     mdist[src] = 0;
 
-    //iterate to find shortest path
+    // iterate to find shortest path
     for (int count = 0; count < V - 1; count++)
     {
         int u = minDistance(mdist, vset, V);
@@ -96,7 +95,8 @@ void Dijkstra(Graph graph, int src)
 
         for (int v = 0; v < V; v++)
         {
-            if (!vset[v] && graph.edges[u][v] && mdist[u] + graph.edges[u][v] < mdist[v])
+            if (!vset[v] && graph.edges[u][v] &&
+                mdist[u] + graph.edges[u][v] < mdist[v])
             {
                 mdist[v] = mdist[u] + graph.edges[u][v];
             }
@@ -106,7 +106,7 @@ void Dijkstra(Graph graph, int src)
     print(mdist, V);
 }
 
-//Driver Function
+// Driver Function
 int main()
 {
     int V, E, gsrc;

@@ -4,12 +4,14 @@
 #include <vector>
 
 // Function to sort arr[] of size n using bucket sort
-void bucketSort(float arr[], int n) {
+void bucketSort(float arr[], int n)
+{
     // 1) Create n empty buckets
     std::vector<float> *b = new std::vector<float>[n];
 
     // 2) Put array elements in different buckets
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         int bi = n * arr[i];  // Index in bucket
         b[bi].push_back(arr[i]);
     }
@@ -25,7 +27,8 @@ void bucketSort(float arr[], int n) {
 }
 
 /* Driver program to test above funtion */
-int main() {
+int main()
+{
     float arr[] = {0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
     int n = sizeof(arr) / sizeof(arr[0]);
     bucketSort(arr, n);

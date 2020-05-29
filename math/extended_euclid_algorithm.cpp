@@ -21,7 +21,8 @@
  * @param[in] quotient  unsigned
  */
 template <typename T, typename T2>
-inline void update_step(T *r, T *r0, const T2 quotient) {
+inline void update_step(T *r, T *r0, const T2 quotient)
+{
     T temp = *r;
     *r = *r0 - (quotient * temp);
     *r0 = temp;
@@ -38,14 +39,17 @@ inline void update_step(T *r, T *r0, const T2 quotient) {
  * @param[out] y signed
  */
 template <typename T1, typename T2>
-void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
-    if (B > A) std::swap(A, B);  // Ensure that A >= B
+void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y)
+{
+    if (B > A)
+        std::swap(A, B);  // Ensure that A >= B
 
     T2 s = 0, s0 = 1;
     T2 t = 1, t0 = 0;
     T1 r = B, r0 = A;
 
-    while (r != 0) {
+    while (r != 0)
+    {
         T1 quotient = r0 / r;
         update_step(&r, &r0, quotient);
         update_step(&s, &s0, quotient);
@@ -66,14 +70,19 @@ void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
  * @param[in,out] y signed
  */
 template <typename T, typename T2>
-void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
-    if (B > A) std::swap(A, B);  // Ensure that A >= B
+void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y)
+{
+    if (B > A)
+        std::swap(A, B);  // Ensure that A >= B
 
-    if (B == 0) {
+    if (B == 0)
+    {
         *GCD = A;
         *x = 1;
         *y = 0;
-    } else {
+    }
+    else
+    {
         extendedEuclid(B, A % B, GCD, x, y);
         T2 temp = *x;
         *x = *y;
@@ -82,7 +91,8 @@ void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
 }
 
 /// Main function
-int main() {
+int main()
+{
     uint32_t a, b, gcd;
     int32_t x, y;
     std::cin >> a >> b;

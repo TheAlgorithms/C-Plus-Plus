@@ -45,10 +45,14 @@ void get_input() {}
  * \returns index where the target value was found
  * \returns -1 if target value not found
  */
-int it_ternary_search(int left, int right, int A[], int target) {
-    while (1) {
-        if (left < right) {
-            if (right - left < absolutePrecision) {
+int it_ternary_search(int left, int right, int A[], int target)
+{
+    while (1)
+    {
+        if (left < right)
+        {
+            if (right - left < absolutePrecision)
+            {
                 for (int i = left; i <= right; i++)
                     if (A[i] == target)
                         return i;
@@ -71,7 +75,9 @@ int it_ternary_search(int left, int right, int A[], int target) {
 
             else
                 left = oneThird + 1, right = twoThird - 1;
-        } else {
+        }
+        else
+        {
             return -1;
         }
     }
@@ -87,9 +93,12 @@ int it_ternary_search(int left, int right, int A[], int target) {
  * \returns index where the target value was found
  * \returns -1 if target value not found
  */
-int rec_ternary_search(int left, int right, int A[], int target) {
-    if (left < right) {
-        if (right - left < absolutePrecision) {
+int rec_ternary_search(int left, int right, int A[], int target)
+{
+    if (left < right)
+    {
+        if (right - left < absolutePrecision)
+        {
             for (int i = left; i <= right; i++)
                 if (A[i] == target)
                     return i;
@@ -111,7 +120,9 @@ int rec_ternary_search(int left, int right, int A[], int target) {
             return rec_ternary_search(twoThird + 1, right, A, target);
 
         return rec_ternary_search(oneThird + 1, twoThird - 1, A, target);
-    } else {
+    }
+    else
+    {
         return -1;
     }
 }
@@ -124,14 +135,16 @@ int rec_ternary_search(int left, int right, int A[], int target) {
  * \param[in] A array to search in
  * \param[in] target value to search for
  */
-void ternary_search(int N, int A[], int target) {
+void ternary_search(int N, int A[], int target)
+{
     std::cout << it_ternary_search(0, N - 1, A, target) << '\t';
     std::cout << rec_ternary_search(0, N - 1, A, target) << '\t';
     std::cout << std::endl;
 }
 
 /** Main function */
-int main() {
+int main()
+{
     int N = 21;
     int A[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 10};
     get_input();

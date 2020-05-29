@@ -12,10 +12,12 @@
  * \returns index where the value is found
  * \returns -1 if not found
  */
-int InterpolationSearch(int A[], int n, int x) {
+int InterpolationSearch(int A[], int n, int x)
+{
     int low = 0;
     int high = n - 1;
-    while (low <= high) {
+    while (low <= high)
+    {
         int mid = low + (((high - 1) * (x - A[low])) / (A[high] - A[low]));
         if (x == A[mid])
             return mid;  // Found x, return (exit)
@@ -29,7 +31,8 @@ int InterpolationSearch(int A[], int n, int x) {
 }
 
 /** main function */
-int main() {
+int main()
+{
     int A[] = {2, 4, 5, 7, 13, 14, 15, 23};
     int x = 17;
 

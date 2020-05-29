@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-int *cat; // global array to hold catalan numbers
+int *cat;  // global array to hold catalan numbers
 
 unsigned long int catalan_dp(int n)
 {
@@ -33,7 +33,7 @@ unsigned long int catalan_dp(int n)
     {
         cat[i] = 0;
         for (int j = 0; j < i; j++)
-            cat[i] += cat[j] * cat[i - j - 1]; // applying the definition here
+            cat[i] += cat[j] * cat[i - j - 1];  // applying the definition here
     }
 
     // Return the result

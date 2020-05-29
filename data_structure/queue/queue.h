@@ -14,21 +14,20 @@ struct node
 template <class Kind>
 class queue
 {
-    public:
-        void display();        /* Show queue */
-        queue();               /* Default constructor*/
-        ~queue();              /* Destructor */
-        bool isEmptyQueue();   /* Determine whether the queue is empty */
-        void enQueue (Kind item); /* Add new item to the queue */
-        Kind front();            /* Return the first element of the queue */
-        void deQueue();        /* Remove the top element of the queue */
-        void clear();
+ public:
+    void display();          /* Show queue */
+    queue();                 /* Default constructor*/
+    ~queue();                /* Destructor */
+    bool isEmptyQueue();     /* Determine whether the queue is empty */
+    void enQueue(Kind item); /* Add new item to the queue */
+    Kind front();            /* Return the first element of the queue */
+    void deQueue();          /* Remove the top element of the queue */
+    void clear();
 
-    private:
-        node<Kind> *queueFront;  /* Pointer to the front of the queue */
-        node<Kind> *queueRear;   /* Pointer to the rear of the queue  */
-        int size;
+ private:
+    node<Kind> *queueFront; /* Pointer to the front of the queue */
+    node<Kind> *queueRear;  /* Pointer to the rear of the queue  */
+    int size;
 };
 
 #endif
-

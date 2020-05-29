@@ -14,12 +14,12 @@ void CreateTree(node *curr, node *n, int x, char pos)
     if (n != NULL)
     {
         char ch;
-    cout << "\nLeft or Right of " << n->val << " : ";
-    cin >> ch;
-    if (ch == 'l')
-        CreateTree(n, n->left, x, ch);
-    else if (ch == 'r')
-        CreateTree(n, n->right, x, ch);
+        cout << "\nLeft or Right of " << n->val << " : ";
+        cin >> ch;
+        if (ch == 'l')
+            CreateTree(n, n->left, x, ch);
+        else if (ch == 'r')
+            CreateTree(n, n->right, x, ch);
     }
     else
     {
@@ -40,19 +40,19 @@ void CreateTree(node *curr, node *n, int x, char pos)
 
 void BFT(node *n)
 {
-    list<node*> queue;
+    list<node *> queue;
 
     queue.push_back(n);
 
-    while(!queue.empty())
+    while (!queue.empty())
     {
         n = queue.front();
         cout << n->val << "  ";
         queue.pop_front();
 
-        if(n->left != NULL)
+        if (n->left != NULL)
             queue.push_back(n->left);
-        if(n->right != NULL)
+        if (n->right != NULL)
             queue.push_back(n->right);
     }
 }

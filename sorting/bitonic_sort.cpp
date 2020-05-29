@@ -9,16 +9,20 @@
 /*The parameter dir indicates the sorting direction, ASCENDING
    or DESCENDING; if (a[i] > a[j]) agrees with the direction,
    then a[i] and a[j] are interchanged.*/
-void compAndSwap(int a[], int i, int j, int dir) {
-    if (dir == (a[i] > a[j])) std::swap(a[i], a[j]);
+void compAndSwap(int a[], int i, int j, int dir)
+{
+    if (dir == (a[i] > a[j]))
+        std::swap(a[i], a[j]);
 }
 
 /*It recursively sorts a bitonic sequence in ascending order,
   if dir = 1, and in descending order otherwise (means dir=0).
   The sequence to be sorted starts at index position low,
   the parameter cnt is the number of elements to be sorted.*/
-void bitonicMerge(int a[], int low, int cnt, int dir) {
-    if (cnt > 1) {
+void bitonicMerge(int a[], int low, int cnt, int dir)
+{
+    if (cnt > 1)
+    {
         int k = cnt / 2;
         for (int i = low; i < low + k; i++) compAndSwap(a, i, i + k, dir);
         bitonicMerge(a, low, k, dir);
@@ -29,8 +33,10 @@ void bitonicMerge(int a[], int low, int cnt, int dir) {
 /* This function first produces a bitonic sequence by recursively
     sorting its two halves in opposite sorting orders, and then
     calls bitonicMerge to make them in the same order */
-void bitonicSort(int a[], int low, int cnt, int dir) {
-    if (cnt > 1) {
+void bitonicSort(int a[], int low, int cnt, int dir)
+{
+    if (cnt > 1)
+    {
         int k = cnt / 2;
 
         // sort in ascending order since dir here is 1
@@ -50,7 +56,8 @@ void bitonicSort(int a[], int low, int cnt, int dir) {
 void sort(int a[], int N, int up) { bitonicSort(a, 0, N, up); }
 
 // Driver code
-int main() {
+int main()
+{
     int a[] = {3, 7, 4, 8, 6, 2, 1, 5};
     int N = sizeof(a) / sizeof(a[0]);
 
