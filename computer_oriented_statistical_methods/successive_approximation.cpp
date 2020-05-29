@@ -1,9 +1,22 @@
+/**
+ * \file
+ * \brief Method of successive approximations using [fixed-point
+ * iteration](https://en.wikipedia.org/wiki/Fixed-point_iteration) method
+ */
 #include <cmath>
 #include <iostream>
 
-static float eq(float y) { return ((3 * y) - (cos(y)) - 2); }
-static float eqd(float y) { return ((0.5) * ((cos(y)) + 2)); }
+/** equation 1
+ * \f[f(y) = 3y - \cos y -2\f]
+ */
+static float eq(float y) { return (3 * y) - cos(y) - 2; }
 
+/** equation 2
+ * \f[f(y) = \frac{\cos y+2}{2}\f]
+ */
+static float eqd(float y) { return 0.5 * (cos(y) + 2); }
+
+/** Main function */
 int main() {
     float y, x1, x2, x3, sum, s, a, f1, f2, gd;
     int i, n;

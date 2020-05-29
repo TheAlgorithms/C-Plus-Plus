@@ -1,11 +1,13 @@
 /**
  * @file
+ * \brief Linear regression example using [Ordinary least
+ * squares](https://en.wikipedia.org/wiki/Ordinary_least_squares)
  *
  * Program that gets the number of data samples and number of features per
  * sample along with output per sample. It applies OLS regression to compute
  * the regression output for additional test data samples.
  */
-#include <iomanip>
+#include <iomanip>  // for print formatting
 #include <iostream>
 #include <vector>
 
@@ -52,7 +54,8 @@ inline bool is_square(std::vector<std::vector<T>> const &A) {
     // Assuming A is square matrix
     size_t N = A.size();
     for (size_t i = 0; i < N; i++)
-        if (A[i].size() != N) return false;
+        if (A[i].size() != N)
+            return false;
     return true;
 }
 
@@ -265,7 +268,8 @@ std::vector<std::vector<float>> get_inverse(
         inverse[row] = inverse[row] / divisor;
         // Row transformations
         for (size_t row2 = 0; row2 < N; row2++) {
-            if (row2 == row) continue;
+            if (row2 == row)
+                continue;
             float factor = temp[row2][row];
             temp[row2] = temp[row2] - factor * temp[row];
             inverse[row2] = inverse[row2] - factor * inverse[row];
