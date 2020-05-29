@@ -1,17 +1,26 @@
+/**
+ * \file
+ * \brief [Gaussian elimination
+ * method](https://en.wikipedia.org/wiki/Gaussian_elimination)
+ */
 #include <iostream>
 
+/** Main function */
 int main() {
     int mat_size, i, j, step;
 
     std::cout << "Matrix size: ";
     std::cin >> mat_size;
 
+    // create a 2D matrix by dynamic memory allocation
     double **mat = new double *[mat_size + 1], **x = new double *[mat_size];
     for (i = 0; i <= mat_size; i++) {
         mat[i] = new double[mat_size + 1];
-        if (i < mat_size) x[i] = new double[mat_size + 1];
+        if (i < mat_size)
+            x[i] = new double[mat_size + 1];
     }
 
+    // get the matrix elements from user
     std::cout << std::endl << "Enter value of the matrix: " << std::endl;
     for (i = 0; i < mat_size; i++) {
         for (j = 0; j <= mat_size; j++) {
@@ -20,6 +29,7 @@ int main() {
         }
     }
 
+    // perform Gaussian elimination
     for (step = 0; step < mat_size - 1; step++) {
         for (i = step; i < mat_size - 1; i++) {
             double a = (mat[i + 1][step] / mat[step][step]);
@@ -56,7 +66,8 @@ int main() {
 
     for (i = 0; i <= mat_size; i++) {
         delete[] mat[i];
-        if (i < mat_size) delete[] x[i];
+        if (i < mat_size)
+            delete[] x[i];
     }
     delete[] mat;
     delete[] x;
