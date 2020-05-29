@@ -4,8 +4,8 @@
  * numbers.
  */
 
-#ifndef OTHERS_LARGE_NUMBER_H_
-#define OTHERS_LARGE_NUMBER_H_
+#ifndef MATH_LARGE_NUMBER_H_
+#define MATH_LARGE_NUMBER_H_
 #include <algorithm>
 #include <cassert>
 #include <cinttypes>
@@ -284,4 +284,4 @@ class large_number {
         _digits; /**< where individual digits are stored */
 };
 
-#endif  // OTHERS_LARGE_NUMBER_H_
+#endif  // MATH_LARGE_NUMBER_H_
