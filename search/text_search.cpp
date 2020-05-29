@@ -28,7 +28,7 @@ int main() {
                           << paragraph.find(word) << std::endl
                           << std::endl;
             }
-            system("pause");
+            std::cin.get();
         }
     }
 }
