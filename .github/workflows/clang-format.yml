@@ -24,7 +24,8 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Filename Formatter
         run: |
-          find . -type f -name '*.cpp' -o -name '*.h' -print0 | while read -d $'\0' fname
+          IFS=$'\n'
+          for fname in `find . -type f -name '*.cpp' -o -name '*.h'`
           do 
             echo "${fname}"
             new_fname=`echo ${fname} | tr ' ' '_'`
