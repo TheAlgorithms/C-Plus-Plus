@@ -32,7 +32,7 @@
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedList_implentation_usingArray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/List%20Array.cpp)
   * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/MorrisInorder.cpp)
-  * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Queue%20Using%20Array.cpp)
+  * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Queue%20Using%20Array2.cpp)
   * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Queue%20Using%20Linked%20List.cpp)
   * Queue
     * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue/queue.cpp)
