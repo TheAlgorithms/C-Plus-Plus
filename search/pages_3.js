@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readme_3647',['README',['../d3/dcc/md__r_e_a_d_m_e.html',1,'']]]
+  ['the_20algorithms_20_2d_20c_2b_2b_3670',['The Algorithms - C++',['../index.html',1,'']]],
+  ['todo_20list_3671',['Todo List',['../dd/da0/todo.html',1,'']]]
 ];
