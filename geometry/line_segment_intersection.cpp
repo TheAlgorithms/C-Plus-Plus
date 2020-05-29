@@ -3,7 +3,9 @@
  * @brief check whether two line segments intersect each other
  * or not.
  */
+
 #include <iostream>
+
 /*
  * Define a Point.
  */
@@ -11,6 +13,7 @@ struct Point {
     int x;  /// Point respect to x coordinate
     int y;  /// Point respect to y coordinate
 };
+
 /**
  * intersect returns true if segments of two line intersects and
  * false if they do not. It calls the subroutines direction
@@ -47,6 +50,7 @@ struct SegmentIntersection {
         else
             return false;
     }
+    
    /**
     * We will find direction of line here respect to @first_point.
     * Here @second_point and @third_point is first and second points
@@ -61,6 +65,7 @@ struct SegmentIntersection {
         return ((third_point.x-first_point.x)*(second_point.y-first_point.y))-
             ((second_point.x-first_point.x) * (third_point.y-first_point.y));
     }
+    
    /**
     * This method determines whether a point known to be colinear
     * with a segment lies on that segment.
@@ -77,6 +82,7 @@ struct SegmentIntersection {
             return false;
     }
 };
+
 /*
  * This is the main function to test whether the algorithm is
  * working well.
