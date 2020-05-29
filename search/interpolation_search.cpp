@@ -30,7 +30,7 @@ int interpolation_search(int arr[], int value, int len) {
     if (arr[low] == value)
         return low;
 
-    return 0;
+    return -1;
 }
 
 /** main function */
@@ -51,7 +51,7 @@ int main() {
 
     re = interpolation_search(array, value, n);
 
-    if (re == 0)
+    if (re == -1)
         std::cout << "Entered value is not in the array" << std::endl;
     else
         std::cout << "The value is at the position " << re << std::endl;
