@@ -29,6 +29,7 @@ jobs:
             new_fname="$(echo -e "${fname}" | tr ' ' '_')"
             new_fname="$(echo -e "${new_fname}"tr'A-Z' 'a-z')"
             echo $new_fname
+            git mv $fname $new_fname
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
       - name: Clang Formatter
