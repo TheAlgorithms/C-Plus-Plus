@@ -26,8 +26,8 @@ jobs:
         run: |
           for fname in $(find . -name '*.cpp' -o -name '*.h')
           do 
-            new_fname = tr ' ' '_' $fname
-            new_fname = tr 'A-Z' 'a-z' $fname
+            $new_fname = tr ' ' '_' $fname
+            $new_fname = tr 'A-Z' 'a-z' $new_fname
             echo $new_fname
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
