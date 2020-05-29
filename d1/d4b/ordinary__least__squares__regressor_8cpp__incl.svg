@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Linear regression example using Ordinary least squares">
 <polygon fill="#bfbfbf" stroke="black" points="13.5,-56.5 13.5,-97.5 176.5,-97.5 176.5,-56.5 13.5,-56.5"/>
 <text text-anchor="start" x="21.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">computer_oriented_statistical</text>
 <text text-anchor="start" x="21.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_methods/ordinary_least_squares</text>
