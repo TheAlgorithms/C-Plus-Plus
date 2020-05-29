@@ -1,9 +1,17 @@
+/**
+ * \file
+ * \brief Search for words in a long textual paragraph.
+ */
 #include <cstdlib>
 #include <iostream>
-#include <string>
+#ifdef _MSC_VER
+#include <string>  // required for MS Visual C++
+#else
+#include <cstring>
+#endif
 
-char paragraph;
-
+/** Main function
+ */
 int main() {
     std::string paragraph;
     std::cout << "Please enter your paragraph: \n";
