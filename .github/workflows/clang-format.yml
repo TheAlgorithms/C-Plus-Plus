@@ -35,7 +35,7 @@ jobs:
             if [ ${fname} != ${new_fname} ]
             then
               echo "      ${fname} --> ${new_fname}"
-              git mv "${fname}" ${new_fname}
+              git mv \"${fname}\" ${new_fname}
             fi
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
