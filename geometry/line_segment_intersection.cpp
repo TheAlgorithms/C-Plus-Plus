@@ -7,7 +7,11 @@ struct Point {
 struct SegmentIntersection {
     inline bool intersect(Point first_point, Point second_point,
                                     Point third_point, Point forth_point) {
-        // check whether two line intersect or not...
+        /*
+        * intersect returns true if segments of two line intersects and
+        * false if they do not. It calls the subroutines direction
+        * which computes the orientation.
+        */
         int direction1 = direction(third_point, forth_point, first_point);
         int direction2 = direction(third_point, forth_point, second_point);
         int direction3 = direction(first_point, second_point, third_point);
@@ -39,14 +43,25 @@ struct SegmentIntersection {
 
     inline int direction(Point first_point, Point second_point,
                                                     Point third_point) {
-        // check whether points are colinear, clockwise or counterclockwise...
+        /*
+        * We will find direction of line here respect to @first_point.
+        * Here @second_point and @third_point is first and second points
+        * of the line respectively. we want a method to determine which way a
+        * given angle these three points turns. If returned number is negative,
+        * then the angle is counter-clockwise. That means the line is going to
+        * right to left. We will fount angle as clockwise if the method returns
+        * positive number.
+        */
         return ((third_point.x-first_point.x)*(second_point.y-first_point.y))-
             ((second_point.x-first_point.x) * (third_point.y-first_point.y));
     }
 
     inline bool on_segment(Point first_point, Point second_point,
                                                         Point third_point) {
-        // check whether two line overlap or not...
+        /*
+        * This method determines whether a point known to be colinear
+        * with a segment lies on that segment.
+        */
         if (std::min(first_point.x, second_point.x) <= third_point.x &&
             third_point.x <= std::max(first_point.x, second_point.x) &&
             std::min(first_point.y, second_point.y) <= third_point.y &&
