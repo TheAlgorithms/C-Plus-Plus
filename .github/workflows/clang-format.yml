@@ -26,11 +26,14 @@ jobs:
         run: |
           for fname in $(find . -type f -name '*.cpp' -o -name '*.h')
           do 
+            echo "${fname}"
             new_fname=`echo ${fname} | tr ' ' '_'`
+            echo "      ${new_fname}"
             new_fname=`echo ${new_fname} | tr 'A-Z' 'a-z'`
+            echo "      ${new_fname}"
             if [ ${fname} != ${new_fname} ]
             then
-              echo "${fname} --> ${new_fname}"
+              echo "      ${fname} --> ${new_fname}"
               git mv "${fname}" ${new_fname}
             fi
           done
