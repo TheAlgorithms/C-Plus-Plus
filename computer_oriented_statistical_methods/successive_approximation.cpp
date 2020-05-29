@@ -9,12 +9,12 @@
 /** equation 1
  * \f[f(y) = 3y - \cos y -2\f]
  */
-static float eq(float y) { return ((3 * y) - (cos(y)) - 2); }
+static float eq(float y) { return (3 * y) - cos(y) - 2; }
 
 /** equation 2
- * \f[f(y) = \frac{\cos y}{2} +2\f]
+ * \f[f(y) = \frac{\cos y+2}{2}\f]
  */
-static float eqd(float y) { return ((0.5) * ((cos(y)) + 2)); }
+static float eqd(float y) { return 0.5 * (cos(y) + 2); }
 
 /** Main function */
 int main() {
