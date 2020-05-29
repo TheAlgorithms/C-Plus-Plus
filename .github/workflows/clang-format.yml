@@ -27,7 +27,7 @@ jobs:
           for fname in $(find . -name '*.cpp' -o -name '*.h')
           do 
             new_fname="$(echo -e "${fname}" | tr ' ' '_')"
-            new_fname="$(echo -e "${new_fname}" | tr'A-Z' 'a-z')"
+            new_fname="$(echo -e "${new_fname}" | tr 'A-Z' 'a-z')"
             echo $new_fname
             git mv $fname $new_fname
           done
