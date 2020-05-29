@@ -11,7 +11,7 @@ This is for Doxygen to recognize as the index file for the complete documentatio
 
 [Online Documentation](https://kvedala.github.io/C-Plus-Plus).
 
-Click on [Files menu](https://kvedala.github.io/C-Plus-Plus/build/html/files.html) to see the list of all the files documented with the code.
+Click on [Files menu](https://kvedala.github.io/C-Plus-Plus/html/files.html) to see the list of all the files documented with the code.
 
 ### Algorithms implemented in C++ (for education)
 The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
