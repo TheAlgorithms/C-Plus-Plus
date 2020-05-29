@@ -50,7 +50,7 @@ jobs:
           git commit -am "formatting source-code for $GITHUB_SHA" ||  true
         env:
           line1: "{ BasedOnStyle: Google, UseTab: Never,"
-          line2: "IndentWidth: 4, TabWidth: 4"
+          line2: "IndentWidth: 4, TabWidth: 4, "
           line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
           line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
       - name: Git Push
