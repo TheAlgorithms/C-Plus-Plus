@@ -53,5 +53,5 @@ jobs:
           line2: "IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Allman,"
           line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
           line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
-      # -name: Git Push
-      #   run: git push
+      - name: Git Push
+        run: git push
