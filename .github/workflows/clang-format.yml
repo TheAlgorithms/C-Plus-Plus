@@ -24,14 +24,14 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Filename Formatter
         run: |
-          for fname in $(find . -name '*.cpp' -o -name '*.h')
+          for fname in $(find . -type f -name '*.cpp' -o -name '*.h')
           do 
             new_fname="$(echo -e "${fname}" | tr ' ' '_')"
             new_fname="$(echo -e "${new_fname}" | tr 'A-Z' 'a-z')"
             if [ $fname != $new_fname ]
             then
-              echo -e "'"$fname"' --> '"$new_fname"'"
-              git mv "$(echo -e "$fname")" $new_fname
+              echo -e "$(echo -e "$fname")" --> '"$new_fname"'"
+              git mv "$fname" $new_fname
             fi
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
