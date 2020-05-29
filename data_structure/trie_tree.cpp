@@ -3,7 +3,7 @@
 #include <string>
 
 class Trie {
-   private:
+private:
     static constexpr size_t ALPHABETS = 26;
 
     // Structure of trie node
@@ -53,7 +53,7 @@ class Trie {
         return nullptr;
     }
 
-   public:
+public:
     // constructor to initialise the root of the trie.
     Trie() : m_root(std::make_shared<TrieNode>()){};
 
@@ -93,7 +93,7 @@ class Trie {
         m_root = removeWordHelper(word, m_root, 0);
     }
 
-   private:
+private:
     std::shared_ptr<TrieNode> m_root;
 };
 
