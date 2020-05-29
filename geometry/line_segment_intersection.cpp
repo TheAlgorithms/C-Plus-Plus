@@ -3,7 +3,6 @@
  * @brief check whether two line segments intersect each other
  * or not.
  */
-
 #include <iostream>
 
 /*
@@ -50,7 +49,7 @@ struct SegmentIntersection {
         else
             return false;
     }
-    
+
    /**
     * We will find direction of line here respect to @first_point.
     * Here @second_point and @third_point is first and second points
@@ -65,7 +64,7 @@ struct SegmentIntersection {
         return ((third_point.x-first_point.x)*(second_point.y-first_point.y))-
             ((second_point.x-first_point.x) * (third_point.y-first_point.y));
     }
-    
+
    /**
     * This method determines whether a point known to be colinear
     * with a segment lies on that segment.
