@@ -1,9 +1,14 @@
-// C++ program to implement Jump Search
-
+/**
+ * \file
+ * \brief C++ program to implement [Jump
+ * Search](https://en.wikipedia.org/wiki/Jump_search)
+ */
 #include <algorithm>
 #include <cmath>
 #include <iostream>
 
+/** jump search implementation
+ */
 int jumpSearch(int arr[], int x, int n) {
     // Finding block size to be jumped
     int step = std::sqrt(n);
@@ -14,7 +19,8 @@ int jumpSearch(int arr[], int x, int n) {
     while (arr[std::min(step, n) - 1] < x) {
         prev = step;
         step += std::sqrt(n);
-        if (prev >= n) return -1;
+        if (prev >= n)
+            return -1;
     }
 
     // Doing a linear search for x in block
@@ -24,10 +30,12 @@ int jumpSearch(int arr[], int x, int n) {
 
         // If we reached next block or end of
         // array, element is not present.
-        if (prev == std::min(step, n)) return -1;
+        if (prev == std::min(step, n))
+            return -1;
     }
     // If element is found
-    if (arr[prev] == x) return prev;
+    if (arr[prev] == x)
+        return prev;
 
     return -1;
 }
