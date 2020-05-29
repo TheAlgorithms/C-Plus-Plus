@@ -1,6 +1,12 @@
-#include <iostream>
-#include <memory>  // for std::shared_ptr<>
-#include <string>  // for std::string class
+/**
+ * Copyright 2020 @author Anmol3299
+ * @file
+ *
+ * A basic implementation of trie class to store only lower-case strings.
+ */
+#include <iostream>  // for io operations
+#include <memory>    // for std::shared_ptr<>
+#include <string>    // for std::string class
 
 /**
  * A basic implementation of trie class to store only lower-case strings.
@@ -51,8 +57,8 @@ class Trie {
      * @param curr is the current node we are at.
      * @param index is the index of the @word we are at.
      * @return if current node has childern, it returns @ curr, else it returns
-     * nullptr. In case @ word is not found in the trie, the program stops and
-     * gives a runtime error.
+     * nullptr.
+     * @throw a runtime error in case @ word is not found in the trie.
      */
     std::shared_ptr<TrieNode> removeWordHelper(const std::string& word,
                                                std::shared_ptr<TrieNode> curr,
@@ -118,8 +124,9 @@ class Trie {
     /**
      * Search if a word is present in trie or not.
      * @param word which is needed to be searched in the trie.
-     * @return if the word is found in the trie and isEndOfWord is set to true,
-     * then it returns @ true, else it returns @ false.
+     * @return True if the word is found in trie and isEndOfWord is set to true.
+     * @return False if word is not found in trie or isEndOfWord is set to
+     * false.
      */
     bool search(const std::string& word) {
         auto curr = m_root;
@@ -142,9 +149,13 @@ class Trie {
     }
 
  private:
+    // data member to store the root of the trie.
     std::shared_ptr<TrieNode> m_root;
 };
 
+/**
+ * Main function
+ */
 int main() {
     Trie trie;
     trie.insert("hel");
