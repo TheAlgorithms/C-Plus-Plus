@@ -28,10 +28,10 @@ jobs:
           do 
             new_fname=`echo -e ${fname} | tr ' ' '_'`
             new_fname=`echo -e ${new_fname} | tr 'A-Z' 'a-z'`
-            if [ $fname != $new_fname ]
+            if [ ${fname} != ${new_fname} ]
             then
-              echo -e "$fname --> $new_fname"
-              git mv "$fname" $new_fname
+              echo -e "${fname} --> ${new_fname}"
+              git mv "${fname}" ${new_fname}
             fi
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
