@@ -8,8 +8,8 @@
  * Define a Point.
  */
 struct Point {
-    int x; /// Point respect to x coordinate
-    int y; /// Point respect to y coordinate
+    int x;  /// Point respect to x coordinate
+    int y;  /// Point respect to y coordinate
 };
 /**
  * intersect returns true if segments of two line intersects and
