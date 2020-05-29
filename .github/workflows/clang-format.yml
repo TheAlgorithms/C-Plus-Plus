@@ -27,7 +27,7 @@ jobs:
           line1: "{ BasedOnStyle: Google, UseTab: Never,"
           line2: "IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Allman,"
           line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
-          line4: "ColumnLimit: 80, AccessModifierOffset: -4 }"
+          line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
       - name: Commit files
         run: |
           cp -rp ./build/html/* . && rm -rf ./build && ls -lah
