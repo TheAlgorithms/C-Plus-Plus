@@ -64,6 +64,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
+      - name: pull latest commit
+        run: git pull
       - name: Update DIRECTORY.md
         shell: python
         run: |
@@ -125,7 +127,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-python@v1
-      - run: pip install cpplint
+      - run: |
+        pip install cpplint
+        git pull
       - run: cpplint --filter=-legal --recursive .
 
   build:
@@ -139,6 +143,8 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
+      - name: git pull
+        run: git pull
       - name: configure
         run: cmake -B ./build -S .
       - name: build
