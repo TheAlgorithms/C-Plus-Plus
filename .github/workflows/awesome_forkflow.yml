@@ -138,8 +138,8 @@ jobs:
     needs: code_format
     name: CPPLINT
     steps:
-      - uses: actions/checkout@v1 # v2 is broken for git diff
-      - uses: actions/setup-python@v1
+      - uses: actions/checkout@master # v2 is broken for git diff
+      - uses: actions/setup-python@master
       - run: python -m pip install cpplint
       - run: git remote -v
       - run: git branch
