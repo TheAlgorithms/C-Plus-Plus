@@ -127,7 +127,7 @@ jobs:
     name: CPPLINT
     needs: code_format
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-python@v1
       - run: pip install cpplint
