@@ -5,7 +5,7 @@
  */
 #include <iostream>
 
-/*
+/**
  * Define a Point.
  */
 struct Point {
@@ -82,7 +82,7 @@ struct SegmentIntersection {
     }
 };
 
-/*
+/**
  * This is the main function to test whether the algorithm is
  * working well.
  */
