@@ -23,7 +23,8 @@ class stats_computer1 {
      * \param[in] x new data sample
      */
     void new_val(T x) {
-        if (n == 0) K = x;
+        if (n == 0)
+            K = x;
         n++;
         T tmp = x - K;
         Ex += tmp;
@@ -160,7 +161,8 @@ int main(int argc, char **argv) {
 
         // check for failure to read input. Happens for
         // non-numeric data
-        if (std::cin.fail()) break;
+        if (std::cin.fail())
+            break;
 
         stats1.new_val(val);
         stats2.new_val(val);
