@@ -26,7 +26,7 @@ jobs:
       - name: Filename Formatter
         run: |
           IFS=$'\n'
-          for fname in `find . -type f -name '*.cpp' -o -name '*.h'`
+          for fname in `find . -type f -name '*.cpp' -o -name '*.cc' -o -name '*.h'`
           do 
             echo "${fname}"
             new_fname=`echo ${fname} | tr ' ' '_'`
@@ -34,6 +34,8 @@ jobs:
             new_fname=`echo ${new_fname} | tr 'A-Z' 'a-z'`
             echo "      ${new_fname}"
             new_fname=`echo ${new_fname} | tr '-' '_'`
+            echo "      ${new_fname}"
+            new_fname=${new_fname/.cc/.cpp}
             echo "      ${new_fname}"
             if [ ${fname} != ${new_fname} ]
             then
