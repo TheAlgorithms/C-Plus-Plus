@@ -146,7 +146,7 @@ jobs:
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git pull
       - run: git diff --diff-filter=dr --name-only origin/master > git_diff.txt
-      - run: echo "Files changed-- `cat diff.txt`"
+      - run: echo "Files changed-- `cat git_diff.txt`"
       - name: cpplint_modified_files
         shell: python
         run: |
