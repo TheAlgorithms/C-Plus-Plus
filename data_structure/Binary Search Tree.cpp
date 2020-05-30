@@ -1,218 +1,107 @@
-#include <iostream>
-using namespace std;
-
+#include<iostream>
+#include<queue>
 struct node
 {
-	int val;
-	node *left;
-	node *right;
+	int data;
+	node *left;   // left pointer
+	node *right; // right pointer
 };
-
-struct queue
+node *creat_node(int data)
 {
-	node *t[100];
-	int front;
-	int rear;
+	node *root=new node;
+	root->data=data;
+	root->left=NULL;
+	return root;
+}
+class tree{
+	public:
+		virtual node *insert(node *root,int data)=0;
+		virtual void preorder(node *root)=0;
+		virtual void inorder(node *root)=0;
+		virtual void postorder(node *root)=0;
+		virtual void BFS(node *root)=0;
+		virtual remove(int data)=0;
 };
-
-queue q;
-
-void enqueue(node *n)
-{
-	q.t[q.rear++] = n;
-}
-
-node *dequeue()
-{
-	return (q.t[q.front++]);
-}
-
-void Insert(node *n, int x)
-{
-	if (x < n->val)
-	{
-		if (n->left == NULL)
+class BST:public tree{
+	public:
+		node *insert(node *root,int data)
 		{
-			node *temp = new node;
-			temp->val = x;
-			temp->left = NULL;
-			temp->right = NULL;
-			n->left = temp;
-		}
-		else
-		{
-			Insert(n->left, x);
-		}
-	}
-	else
-	{
-		if (n->right == NULL)
-		{
-			node *temp = new node;
-			temp->val = x;
-			temp->left = NULL;
-			temp->right = NULL;
-			n->left = temp;
-		}
-		else
-		{
-			Insert(n->right, x);
-		}
-	}
-}
-
-int findMaxInLeftST(node *n)
-{
-	while (n->right != NULL)
-	{
-		n = n->right;
-	}
-	return n->val;
-}
-
-void Remove(node *p, node *n, int x)
-{
-	if (n->val == x)
-	{
-		if (n->right == NULL && n->left == NULL)
-		{
-			if (x < p->val)
+			if(root==NULL)
 			{
-				p->right = NULL;
+				return creat_node(data);
 			}
 			else
 			{
-				p->left = NULL;
+				if(root->data<data)
+				{
+					root->right=insert(root->right,data);
+				}
+				else
+				{
+					root->left=insert(root->left,data);
+				}
+				return root; // default return
 			}
 		}
-		else if (n->right == NULL)
+		void inorder(node *root)
 		{
-			if (x < p->val)
+			if(root==NULL)
 			{
-				p->right = n->left;
+				return ;// to return void 
 			}
 			else
 			{
-				p->left = n->left;
+				inorder(root->left); // to travel to left of root
+				cout<<roor->data<<" ";
+				inorder(root->right); // back tracking all right node
 			}
 		}
-		else if (n->left == NULL)
+		void preorder(node *root)
 		{
-			if (x < p->val)
+			if(root==NULL)
 			{
-				p->right = n->right;
+				return ;// to return void 
 			}
 			else
 			{
-				p->left = n->right;
+				cout<<roor->data<<" ";
+				preorder(root->left); // to travel to left of root
+				preorder(root->right); // back tracking all right node
 			}
 		}
-		else
+		void postorder(node *root)
 		{
-			int y = findMaxInLeftST(n->left);
-			n->val = y;
-			Remove(n, n->right, y);
+			if(root==NULL)
+			{
+				return ;// to return void 
+			}
+			else
+			{
+				postorder(root->left); // to travel to left of root
+				postorder(root->right); // back tracking all right node
+				cout<<roor->data<<" ";
+			}
 		}
-	}
-	else if (x < n->val)
-	{
-		Remove(n, n->left, x);
-	}
-	else
-	{
-		Remove(n, n->right, x);
-	}
-}
-
-void BFT(node *n)
-{
-	if (n != NULL)
-	{
-		cout << n->val << "  ";
-		enqueue(n->left);
-		enqueue(n->right);
-		BFT(dequeue());
-	}
-}
-
-void Pre(node *n)
-{
-	if (n != NULL)
-	{
-		cout << n->val << "  ";
-		Pre(n->left);
-		Pre(n->right);
-	}
-}
-
-void In(node *n)
-{
-	if (n != NULL)
-	{
-		In(n->left);
-		cout << n->val << "  ";
-		In(n->right);
-	}
-}
-
-void Post(node *n)
-{
-	if (n != NULL)
-	{
-		Post(n->left);
-		Post(n->right);
-		cout << n->val << "  ";
-	}
-}
-
-int main()
-{
-	q.front = 0;
-	q.rear = 0;
-	int value;
-	int ch;
-	node *root = new node;
-	cout << "\nEnter the value of root node :";
-	cin >> value;
-	root->val = value;
-	root->left = NULL;
-	root->right = NULL;
-	do
-	{
-		cout << "\n1. Insert";
-		cout << "\n2. Delete";
-		cout << "\n3. Breadth First";
-		cout << "\n4. Preorder Depth First";
-		cout << "\n5. Inorder Depth First";
-		cout << "\n6. Postorder Depth First";
-
-		cout << "\nEnter Your Choice : ";
-		cin >> ch;
-		int x;
-		switch (ch)
+		void BFS(node *root)
 		{
-		case 1:
-			cout << "\nEnter the value to be Inserted : ";
-			cin >> x;
-			Insert(root, x);
-			break;
-		case 2:
-			cout << "\nEnter the value to be Deleted : ";
-			cin >> x;
-			Remove(root, root, x);
-			break;
-		case 3:
-			BFT(root);
-			break;
-		case 4:
-			Pre(root);
-			break;
-		case 5:
-			In(root);
-			break;
-		case 6:
-			Post(root);
-			break;
+			if(root!=NULL)
+			{
+				queue<node*> q;
+				q.push(root);
+				while(!q.empty())
+				{
+					node *temp=q.front();
+					cout<<temp->data<<" ";
+					if(temp->left!=NULL)
+					{
+						q.push(temp->left) // pushing left child into the queue
+					}
+					if(temp->right!=NULL)
+					{
+						q.push(temp->right) // to push right child into the queue
+					}
+					q.pop() // popping out the present root from the queue
+				}
+			}
 		}
-	} while (ch != 0);
-}
+};
