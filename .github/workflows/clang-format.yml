@@ -127,9 +127,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-python@v1
-      - run: |
-        pip install cpplint
-        git pull
+      - run: pip install cpplint
+      - run: git pull
       - run: cpplint --filter=-legal --recursive .
 
   build:
@@ -143,9 +142,6 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - name: git pull
-        run: git pull
-      - name: configure
-        run: cmake -B ./build -S .
-      - name: build
-        run: cmake --build build
+      - run: git pull
+      - run: cmake -B ./build -S .
+      - run: cmake --build build
