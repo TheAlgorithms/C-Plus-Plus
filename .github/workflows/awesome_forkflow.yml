@@ -1,0 +1,211 @@
+name: Awesome CI Workflow
+
+on: [push]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+
+jobs:
+  code_format:
+    name: Code Formatter
+    runs-on: ubuntu-latest
+    steps:
+      - name: requirements
+        run: | 
+          sudo apt -qq -y update
+          sudo apt -qq install clang-format 
+      - uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Setup Git Specs
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - name: Filename Formatter
+        run: |
+          IFS=$'\n'
+          for fname in `find . -type f -name '*.cpp' -o -name '*.cc' -o -name '*.h'`
+          do 
+            echo "${fname}"
+            new_fname=`echo ${fname} | tr ' ' '_'`
+            echo "      ${new_fname}"
+            new_fname=`echo ${new_fname} | tr 'A-Z' 'a-z'`
+            echo "      ${new_fname}"
+            new_fname=`echo ${new_fname} | tr '-' '_'`
+            echo "      ${new_fname}"
+            new_fname=${new_fname/.cc/.cpp}
+            echo "      ${new_fname}"
+            if [ ${fname} != ${new_fname} ]
+            then
+              echo "      ${fname} --> ${new_fname}"
+              git "mv" "${fname}" ${new_fname}
+            fi
+          done
+          git commit -am "formatting filenames $GITHUB_SHA" ||  true
+      - name: Clang Formatter
+        run: |
+          for fname in $(find . -name '*.cpp' -o -name '*.h')
+          do 
+            clang-format --verbose -i --style="$line1 $line2 $line3 $line4" "$fname"
+          done
+          git commit -am "formatting source-code for $GITHUB_SHA" ||  true
+        env:
+          line1: "{ BasedOnStyle: Google, UseTab: Never,"
+          line2: "IndentWidth: 4, TabWidth: 4, "
+          line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
+          line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
+      - name: Git Push
+        run: git push --force origin HEAD:$GITHUB_REF || true
+  
+  update_directory_md:
+    name: Update Directory.md
+    needs: code_format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+      - name: pull latest commit
+        run: git pull
+      - name: Update DIRECTORY.md
+        shell: python
+        run: |
+            import os
+            from typing import Iterator
+
+            URL_BASE = "https://github.com/TheAlgorithms/C-Plus-Plus/blob/master"
+            g_output = []
+
+            def good_filepaths(top_dir: str = ".") -> Iterator[str]:
+                cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+                for dirpath, dirnames, filenames in os.walk(top_dir):
+                    dirnames[:] = [d for d in dirnames if d[0] not in "._"]
+                    for filename in filenames:
+                        if os.path.splitext(filename)[1].lower() in cpp_exts:
+                            yield os.path.join(dirpath, filename).lstrip("./")
+
+            def md_prefix(i):
+                return f"{i * '  '}*" if i else "\n##"
+
+            def print_path(old_path: str, new_path: str) -> str:
+                global g_output
+                old_parts = old_path.split(os.sep)
+                for i, new_part in enumerate(new_path.split(os.sep)):
+                    if i + 1 > len(old_parts) or old_parts[i] != new_part:
+                        if new_part:
+                            g_output.append(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
+                return new_path
+
+            def build_directory_md(top_dir: str = ".") -> str:
+                global g_output
+                old_path = ""
+                for filepath in sorted(good_filepaths(), key=str.lower):
+                    filepath, filename = os.path.split(filepath)
+                    if filepath != old_path:
+                        old_path = print_path(old_path, filepath)
+                    indent = (filepath.count(os.sep) + 1) if filepath else 0
+                    url = "/".join((URL_BASE, filepath, filename)).replace(" ", "%20")
+                    filename = os.path.splitext(filename.replace("_", " ").title())[0]
+                    g_output.append(f"{md_prefix(indent)} [{filename}]({url})")
+                return "# List of all files\n" + "\n".join(g_output)
+
+            with open("DIRECTORY.md", "w") as out_file:
+                out_file.write(build_directory_md(".") + "\n")
+      - name: Update DIRECTORY.md
+        run: |
+          cat DIRECTORY.md
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git add DIRECTORY.md
+          git commit -am "updating DIRECTORY.md" ||  true
+          git push --force origin HEAD:$GITHUB_REF || true
+
+  # cpplint:
+  #   name: CPPLINT
+  #   needs: code_format
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@master
+  #     - uses: actions/setup-python@master
+  #     - run: pip install cpplint
+  #     - run: git pull
+  #     - run: cpplint --filter=-legal --recursive .
+
+  cpplint_modified_files:
+    runs-on: ubuntu-latest
+    needs: code_format
+    name: CPPLINT
+    steps:
+      - uses: actions/checkout@master # v2 is broken for git diff
+      - uses: actions/setup-python@master
+      - run: python -m pip install cpplint
+      - run: git remote -v
+      - run: git branch
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - run: git pull
+      - run: git diff --diff-filter=dr --name-only origin/master > git_diff.txt
+      - run: echo "Files changed-- `cat git_diff.txt`"
+      - name: cpplint_modified_files
+        shell: python
+        run: |
+          import os
+          import subprocess
+          import sys
+
+          print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
+          with open("git_diff.txt") as in_file:
+            modified_files = sorted(in_file.read().splitlines())
+          print("{} files were modified.".format(len(modified_files)))
+
+          cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+          cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
+          print(f"{len(cpp_files)} C++ files were modified.")
+          if not cpp_files:
+            sys.exit(0)
+
+          print("cpplint:")
+          for cpp_file in cpp_files:
+            subprocess.run(["cpplint", "--filter=-legal/copyright", cpp_file], check=True, text=True)
+
+          print("g++:")
+          # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
+          # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
+          for cpp_file in cpp_files:
+            subprocess.run(["g++", cpp_file], check=True, text=True)
+
+          upper_files = [file for file in cpp_files if file != file.lower()]
+          if upper_files:
+            print(f"{len(upper_files)} files contain uppercase characters:")
+            print("\n".join(upper_files) + "\n")
+
+          space_files = [file for file in cpp_files if " " in file or "-" in file]
+          if space_files:
+            print(f"{len(space_files)} files contain space or dash characters:")
+            print("\n".join(space_files) + "\n")
+
+          nodir_files = [file for file in cpp_files if file.count(os.sep) != 1]
+          if nodir_files:
+            print(f"{len(nodir_files)} files are not in one and only one directory:")
+            print("\n".join(nodir_files) + "\n")
+
+          bad_files = len(upper_files + space_files + nodir_files)
+          if bad_files:
+            sys.exit(bad_files)
+
+  build:
+    name: Compile checks
+    runs-on: ${{ matrix.os }}
+    # needs: [cpplint, update_directory_md, cpplint_modified_files]
+    needs: [update_directory_md]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: true
+      - run: git pull
+      - run: cmake -B ./build -S .
+      - run: cmake --build build
