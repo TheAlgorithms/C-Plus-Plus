@@ -55,7 +55,7 @@ jobs:
           line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
           line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
       - name: Git Push
-        run: git pull && git push
+        run: git push --force origin HEAD:$GITHUB_REF || true
   
   update_directory_md:
     name: Update Directory.md
@@ -64,7 +64,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
-      - name: update_directory_md
+      - name: Update DIRECTORY.md
         shell: python
         run: |
             import os
@@ -72,7 +72,6 @@ jobs:
 
             URL_BASE = "https://github.com/TheAlgorithms/C-Plus-Plus/blob/master"
             g_output = []
-
 
             def good_filepaths(top_dir: str = ".") -> Iterator[str]:
                 cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
@@ -82,10 +81,8 @@ jobs:
                         if os.path.splitext(filename)[1].lower() in cpp_exts:
                             yield os.path.join(dirpath, filename).lstrip("./")
 
-
             def md_prefix(i):
                 return f"{i * '  '}*" if i else "\n##"
-
 
             def print_path(old_path: str, new_path: str) -> str:
                 global g_output
@@ -95,7 +92,6 @@ jobs:
                         if new_part:
                             g_output.append(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
                 return new_path
-
 
             def build_directory_md(top_dir: str = ".") -> str:
                 global g_output
@@ -108,8 +104,7 @@ jobs:
                     url = "/".join((URL_BASE, filepath, filename)).replace(" ", "%20")
                     filename = os.path.splitext(filename.replace("_", " ").title())[0]
                     g_output.append(f"{md_prefix(indent)} [{filename}]({url})")
-                return "\n".join(g_output)
-
+                return "# List of all files\n" + "\n".join(g_output)
 
             with open("DIRECTORY.md", "w") as out_file:
                 out_file.write(build_directory_md(".") + "\n")
@@ -134,6 +129,7 @@ jobs:
       - run: cpplint --filter=-legal --recursive .
 
   build:
+    name: Compile checks
     runs-on: ${{ matrix.os }}
     needs: [cpplint, update_directory_md]
     strategy:
