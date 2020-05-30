@@ -146,6 +146,7 @@ jobs:
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - run: git pull
       - run: git diff --diff-filter=dr --name-only origin/master > git_diff.txt
+      - run: echo "Files changed-- `cat diff.txt`"
       - name: cpplint_modified_files
         shell: python
         run: |
@@ -193,12 +194,11 @@ jobs:
           if bad_files:
             sys.exit(bad_files)
 
-
   build:
     name: Compile checks
     runs-on: ${{ matrix.os }}
     # needs: [cpplint, update_directory_md, cpplint_modified_files]
-    needs: [update_directory_md, cpplint_modified_files]
+    needs: [update_directory_md]
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]

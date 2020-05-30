@@ -9,25 +9,23 @@ square (so that it could tour the board again immediately, following
 the same path), the tour is closed; otherwise, it is open.
 **/
 
-using namespace std;
-bool issafe(int x, int y, int sol[n][n])
-{
+using std::cin;
+using std::cout;
+
+bool issafe(int x, int y, int sol[n][n]) {
     return (x < n && x >= 0 && y < n && y >= 0 && sol[x][y] == -1);
 }
-bool solve(int x, int y, int mov, int sol[n][n], int xmov[n], int ymov[n])
-{
+bool solve(int x, int y, int mov, int sol[n][n], int xmov[n], int ymov[n]) {
     int k, xnext, ynext;
 
     if (mov == n * n)
         return true;
 
-    for (k = 0; k < 8; k++)
-    {
+    for (k = 0; k < 8; k++) {
         xnext = x + xmov[k];
         ynext = y + ymov[k];
 
-        if (issafe(xnext, ynext, sol))
-        {
+        if (issafe(xnext, ynext, sol)) {
             sol[xnext][ynext] = mov;
 
             if (solve(xnext, ynext, mov + 1, sol, xmov, ymov) == true)
@@ -38,8 +36,7 @@ bool solve(int x, int y, int mov, int sol[n][n], int xmov[n], int ymov[n])
     }
     return false;
 }
-int main()
-{
+int main() {
     // initialize();
 
     int sol[n][n];
@@ -54,10 +51,8 @@ int main()
     bool flag = solve(0, 0, 1, sol, xmov, ymov);
     if (flag == false)
         cout << "solution doesnot exist \n";
-    else
-    {
-        for (i = 0; i < n; i++)
-        {
+    else {
+        for (i = 0; i < n; i++) {
             for (j = 0; j < n; j++) cout << sol[i][j] << "  ";
             cout << "\n";
         }
