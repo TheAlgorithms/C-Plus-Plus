@@ -131,23 +131,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main program </p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;           {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> num;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t\tComputes the prime factorization\n\n&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Type in a number: &quot;</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; num;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a>(num);</div>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> num;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t\tComputes the prime factorization\n\n&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Type in a number: &quot;</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; num;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a>(num);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a>(num);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Prime factors with their powers in the given number in new line</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b">factors</a>) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; it.first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it.second &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a>(num);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Prime factors with their powers in the given number in new line</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b">factors</a>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; it.first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it.second &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -173,25 +173,26 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Prime factorization of a number </p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> number = num;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i] &lt;= num; i++) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// termination condition</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (number == 1) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">while</span> (number % <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i] == 0) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            count++;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            number = number / <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i];</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (count) <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b">factors</a>.push_back(<a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(<a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i], count));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                  {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> number = num;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i] &lt;= num; i++) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// termination condition</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (number == 1) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">while</span> (number % <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i] == 0) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            count++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            number = number / <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (count)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b">factors</a>.push_back(<a class="codeRef" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(<a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>[i], count));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -228,9 +229,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= N; i++) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>[i]) <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>.<a class="codeRef" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23">isprime</a>[i])</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="../../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe">prime_numbers</a>.<a class="codeRef" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -293,7 +295,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aprime__factorization_8cpp_html_affe577b9bce8f604f5e2f861c63c7099"><div class="ttname"><a href="../../db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099">SieveOfEratosthenes</a></div><div class="ttdeci">void SieveOfEratosthenes(int N)</div><div class="ttdef"><b>Definition:</b> prime_factorization.cpp:23</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aprime__factorization_8cpp_html_a0ece0145fb29a5cf48378c23dde2da46"><div class="ttname"><a href="../../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a></div><div class="ttdeci">void prime_factorization(int num)</div><div class="ttdef"><b>Definition:</b> prime_factorization.cpp:39</div></div>
+<div class="ttc" id="aprime__factorization_8cpp_html_a0ece0145fb29a5cf48378c23dde2da46"><div class="ttname"><a href="../../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46">prime_factorization</a></div><div class="ttdeci">void prime_factorization(int num)</div><div class="ttdef"><b>Definition:</b> prime_factorization.cpp:40</div></div>
 <div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="amemset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/memset.html">std::memset</a></div><div class="ttdeci">T memset(T... args)</div></div>

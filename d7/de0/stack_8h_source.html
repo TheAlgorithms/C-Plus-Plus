@@ -84,57 +84,54 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/* Definition of the node */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    Type data;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Type&gt;</a> *next;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/* Definition of the stack class */</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/dc2/classstack.html">stack</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> display();        <span class="comment">/* Show stack */</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>();               <span class="comment">/* Default constructor*/</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="../../d1/dc2/classstack.html">stack</a>();              <span class="comment">/* Destructor */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> isEmptyStack();   <span class="comment">/* Determine whether the stack is empty */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> push (Type item); <span class="comment">/* Add new item to the stack */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Type top();            <span class="comment">/* Return the top element of the stack */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> pop();            <span class="comment">/* Remove the top element of the stack */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack&lt;Type&gt;</a> operator=(<a class="code" href="../../d1/dc2/classstack.html">stack&lt;Type&gt;</a> &amp; otherStack);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// Overload &quot;=&quot; the assignment operator.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../d5/da1/structnode.html">node&lt;Type&gt;</a> *stackTop;  <span class="comment">/* Pointer to the stack */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Type data;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Type&gt;</a> *next;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* Definition of the stack class */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d1/dc2/classstack.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/dc2/classstack.html">stack</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> display();       <span class="comment">/* Show stack */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack</a>();              <span class="comment">/* Default constructor*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="../../d1/dc2/classstack.html">stack</a>();             <span class="comment">/* Destructor */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> isEmptyStack();  <span class="comment">/* Determine whether the stack is empty */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> push(Type item); <span class="comment">/* Add new item to the stack */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Type top();           <span class="comment">/* Return the top element of the stack */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> pop();           <span class="comment">/* Remove the top element of the stack */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack&lt;Type&gt;</a> operator=(<a class="code" href="../../d1/dc2/classstack.html">stack&lt;Type&gt;</a> &amp;otherStack);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Overload &quot;=&quot; the assignment operator.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Type&gt;</a> *stackTop; <span class="comment">/* Pointer to the stack */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ashowpoint_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/showpoint.html">std::showpoint</a></div><div class="ttdeci">T showpoint(T... args)</div></div>
 <div class="ttc" id="asetprecision_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setprecision.html">std::setprecision</a></div><div class="ttdeci">T setprecision(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/size.html">std::stack::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="astack_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a></div><div class="ttdoc">STL class.</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> AVLtree.cpp:7</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:6</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a8ca8dcb494104d273679e219e53d0555"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a></div><div class="ttdeci">struct list node</div></div>
 <div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
 <div class="ttc" id="aparanthesis__matching_8cpp_html_af93f4f37fc2ad9c37af4a715423b110c"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#af93f4f37fc2ad9c37af4a715423b110c">top</a></div><div class="ttdeci">int top</div><div class="ttdoc">pointer to track stack index</div><div class="ttdef"><b>Definition:</b> paranthesis_matching.cpp:23</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassstack__linked_list_html"><div class="ttname"><a href="../../d2/dc4/classstack__linked_list.html">stack_linkedList</a></div><div class="ttdef"><b>Definition:</b> queue_using_linkedlist.cpp:12</div></div>
+<div class="ttc" id="aclassstack__linked_list_html"><div class="ttname"><a href="../../d2/dc4/classstack__linked_list.html">stack_linkedList</a></div><div class="ttdef"><b>Definition:</b> queue_using_linkedlist.cpp:10</div></div>
 <div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/pop.html">std::stack::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
 <div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/top.html">std::stack::top</a></div><div class="ttdeci">T top(T... args)</div></div>
-<div class="ttc" id="astructlinkedlist_html"><div class="ttname"><a href="../../d0/dff/structlinkedlist.html">linkedlist</a></div><div class="ttdef"><b>Definition:</b> queue_using_linkedlist.cpp:7</div></div>
+<div class="ttc" id="astructlinkedlist_html"><div class="ttname"><a href="../../d0/dff/structlinkedlist.html">linkedlist</a></div><div class="ttdef"><b>Definition:</b> queue_using_linkedlist.cpp:6</div></div>
 <div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ifstream/open.html">std::ifstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="aoperator=_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/operator=.html">std::stack::operator=</a></div><div class="ttdeci">T operator=(T... args)</div></div>
 <div class="ttc" id="atower__of__hanoi_8cpp_html_a746d9a3984bba88fd6dd91978f6931ed"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed">show</a></div><div class="ttdeci">void show(const struct tower *const F, const struct tower *const T, const struct tower *const U)</div><div class="ttdef"><b>Definition:</b> tower_of_hanoi.cpp:19</div></div>
-<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdef"><b>Definition:</b> stack.h:16</div></div>
+<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdef"><b>Definition:</b> stack.h:14</div></div>
 <div class="ttc" id="aclass_queue___array_html"><div class="ttname"><a href="../../d0/dd2/class_queue___array.html">Queue_Array</a></div><div class="ttdef"><b>Definition:</b> queue_using_array.cpp:13</div></div>
 <div class="ttc" id="afixed_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/fixed.html">std::fixed</a></div><div class="ttdeci">T fixed(T... args)</div></div>
 <div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack/push.html">std::stack::push</a></div><div class="ttdeci">T push(T... args)</div></div>

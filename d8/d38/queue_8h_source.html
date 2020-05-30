@@ -84,48 +84,45 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/* Definition of the node */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Kind&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    Kind data;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *next;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/* Definition of the queue class */</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Kind&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d36/structqueue.html">queue</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> display();        <span class="comment">/* Show queue */</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d2/d36/structqueue.html">queue</a>();               <span class="comment">/* Default constructor*/</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="../../d2/d36/structqueue.html">queue</a>();              <span class="comment">/* Destructor */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> isEmptyQueue();   <span class="comment">/* Determine whether the queue is empty */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> enQueue (Kind item); <span class="comment">/* Add new item to the queue */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Kind front();            <span class="comment">/* Return the first element of the queue */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> deQueue();        <span class="comment">/* Remove the top element of the queue */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *queueFront;  <span class="comment">/* Pointer to the front of the queue */</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *queueRear;   <span class="comment">/* Pointer to the rear of the queue  */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Kind data;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *next;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* Definition of the queue class */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Kind&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d36/structqueue.html">queue</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> display();          <span class="comment">/* Show queue */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d2/d36/structqueue.html">queue</a>();                 <span class="comment">/* Default constructor*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="../../d2/d36/structqueue.html">queue</a>();                <span class="comment">/* Destructor */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> isEmptyQueue();     <span class="comment">/* Determine whether the queue is empty */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> enQueue(Kind item); <span class="comment">/* Add new item to the queue */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Kind front();            <span class="comment">/* Return the first element of the queue */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> deQueue();          <span class="comment">/* Remove the top element of the queue */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *queueFront; <span class="comment">/* Pointer to the front of the queue */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node&lt;Kind&gt;</a> *queueRear;  <span class="comment">/* Pointer to the rear of the queue  */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="alist_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="a~queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/~queue.html">std::queue::~queue</a></div><div class="ttdeci">T ~queue(T... args)</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> AVLtree.cpp:7</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:6</div></div>
 <div class="ttc" id="asearch_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/search.html">std::search</a></div><div class="ttdeci">T search(T... args)</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a8ca8dcb494104d273679e219e53d0555"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a></div><div class="ttdeci">struct list node</div></div>
 <div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
 <div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> linkedList_implentation_usingArray.cpp:9</div></div>
-<div class="ttc" id="astructqueue_html"><div class="ttname"><a href="../../d2/d36/structqueue.html">queue</a></div><div class="ttdef"><b>Definition:</b> Binary Search Tree.cpp:12</div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:10</div></div>
+<div class="ttc" id="astructqueue_html"><div class="ttname"><a href="../../d2/d36/structqueue.html">queue</a></div><div class="ttdef"><b>Definition:</b> binary_search_tree.cpp:10</div></div>
 <div class="ttc" id="aparanthesis__matching_8cpp_html_af93f4f37fc2ad9c37af4a715423b110c"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#af93f4f37fc2ad9c37af4a715423b110c">top</a></div><div class="ttdeci">int top</div><div class="ttdoc">pointer to track stack index</div><div class="ttdef"><b>Definition:</b> paranthesis_matching.cpp:23</div></div>
-<div class="ttc" id="aclasscll_html"><div class="ttname"><a href="../../d5/d15/classcll.html">cll</a></div><div class="ttdef"><b>Definition:</b> cll.h:19</div></div>
+<div class="ttc" id="aclasscll_html"><div class="ttname"><a href="../../d5/d15/classcll.html">cll</a></div><div class="ttdef"><b>Definition:</b> cll.h:17</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/pop.html">std::queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div><div class="ttdoc">STL class.</div></div>
@@ -142,7 +139,7 @@ $(function() {
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/empty.html">std::queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/push.html">std::queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="astruct_btree_html"><div class="ttname"><a href="../../d9/d90/struct_btree.html">Btree</a></div><div class="ttdef"><b>Definition:</b> MorrisInorder.cpp:11</div></div>
+<div class="ttc" id="astruct_btree_html"><div class="ttname"><a href="../../d9/d90/struct_btree.html">Btree</a></div><div class="ttdef"><b>Definition:</b> morrisinorder.cpp:10</div></div>
 <div class="ttc" id="aclassdouble__linked__list_html"><div class="ttname"><a href="../../d9/dee/classdouble__linked__list.html">double_linked_list</a></div><div class="ttdef"><b>Definition:</b> doubly_linked_list.cpp:11</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:37</div></div>
 <div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>

@@ -81,48 +81,46 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Simple data structure CLL (Cicular Linear Linked List)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * */</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CLL_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CLL_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*The data structure is a linear linked list of integers */</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span>  data;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node</a> * next;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d5/d15/classcll.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d15/classcll.html">cll</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d5/d15/classcll.html">cll</a>();                       <span class="comment">/* Construct without parameter */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        ~<a class="code" href="../../d5/d15/classcll.html">cll</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> display();              <span class="comment">/* Show the list */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">        /******************************************************</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        * Useful method for list</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">        *******************************************************/</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> insert_front(<span class="keywordtype">int</span> new_data);  <span class="comment">/* Insert a new value at head  */</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> insert_tail(<span class="keywordtype">int</span> new_data);   <span class="comment">/* Insert a new value at tail */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> get_size();              <span class="comment">/* Get total element in list */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">bool</span> find_item(<span class="keywordtype">int</span> item_to_find); <span class="comment">/* Find an item in list */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        /******************************************************</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">         * Overloading method for list</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">         *******************************************************/</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;         <span class="keywordtype">int</span> operator*();           <span class="comment">/* Returns the info contained in head */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;         <span class="comment">/* Overload the pre-increment operator.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">            The iterator is advanced to the next node. */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;         <span class="keywordtype">void</span> operator++();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d5/da1/structnode.html">node</a> * head;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">int</span> total;      <span class="comment">/* Total element in a list */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/da1/structnode.html">node</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> data;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node</a>* next;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d5/d15/classcll.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d15/classcll.html">cll</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d5/d15/classcll.html">cll</a>(); <span class="comment">/* Construct without parameter */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~<a class="code" href="../../d5/d15/classcll.html">cll</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> display(); <span class="comment">/* Show the list */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    /******************************************************</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * Useful method for list</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     *******************************************************/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> insert_front(<span class="keywordtype">int</span> new_data);  <span class="comment">/* Insert a new value at head  */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> insert_tail(<span class="keywordtype">int</span> new_data);   <span class="comment">/* Insert a new value at tail */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> get_size();                   <span class="comment">/* Get total element in list */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> find_item(<span class="keywordtype">int</span> item_to_find); <span class="comment">/* Find an item in list */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    /******************************************************</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * Overloading method for list</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *******************************************************/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> operator*(); <span class="comment">/* Returns the info contained in head */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* Overload the pre-increment operator.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">       The iterator is advanced to the next node. */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> operator++();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d5/da1/structnode.html">node</a>* head;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> total; <span class="comment">/* Total element in a list */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition:</b> tower_of_hanoi.cpp:39</div></div>
 <div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
@@ -131,12 +129,12 @@ $(function() {
 <div class="ttc" id="afibonacci__fast_8cpp_html_a3ba232425d45f9e9c0b87a8cf7ab69d9"><div class="ttname"><a href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a></div><div class="ttdeci">uint64_t f[MAX]</div><div class="ttdef"><b>Definition:</b> fibonacci_fast.cpp:26</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a67249e31221231cf3aaf3cfd870372d0"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a67249e31221231cf3aaf3cfd870372d0">operator+</a></div><div class="ttdeci">std::vector&lt; T &gt; operator+(std::vector&lt; T &gt; const &amp;A, std::vector&lt; T &gt; const &amp;B)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:194</div></div>
 <div class="ttc" id="anewton__raphson__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:24</div></div>
-<div class="ttc" id="aclassgraph_html"><div class="ttname"><a href="../../dd/d9b/classgraph.html">graph</a></div><div class="ttdef"><b>Definition:</b> BFS.cpp:4</div></div>
+<div class="ttc" id="aclassgraph_html"><div class="ttname"><a href="../../dd/d9b/classgraph.html">graph</a></div><div class="ttdef"><b>Definition:</b> bfs.cpp:3</div></div>
 <div class="ttc" id="anewton__raphson__method_8cpp_html_a3d3f7f41977394680af6ebbed96f3386"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a></div><div class="ttdeci">static double eq_der(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:30</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="aclass_min_heap_html"><div class="ttname"><a href="../../d2/d05/class_min_heap.html">MinHeap</a></div><div class="ttdef"><b>Definition:</b> Binaryheap.cpp:11</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> AVLtree.cpp:7</div></div>
+<div class="ttc" id="aclass_min_heap_html"><div class="ttname"><a href="../../d2/d05/class_min_heap.html">MinHeap</a></div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:10</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:6</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a8ca8dcb494104d273679e219e53d0555"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a></div><div class="ttdeci">struct list node</div></div>
 <div class="ttc" id="asetfill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a></div><div class="ttdeci">T setfill(T... args)</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_a1ab31b90bc584c635ec159468ceed9b2"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2">sgn</a></div><div class="ttdeci">int sgn(T val)</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:32</div></div>
@@ -146,7 +144,7 @@ $(function() {
 <div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ab6171f4db68a5e50ae0f3500a63acd26"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ab6171f4db68a5e50ae0f3500a63acd26">operator*</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; operator*(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;A, std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;B)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:70</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a98eb5807f21b783c341cab402ced6732"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a98eb5807f21b783c341cab402ced6732">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:18</div></div>
-<div class="ttc" id="aclasscll_html"><div class="ttname"><a href="../../d5/d15/classcll.html">cll</a></div><div class="ttdef"><b>Definition:</b> cll.h:19</div></div>
+<div class="ttc" id="aclasscll_html"><div class="ttname"><a href="../../d5/d15/classcll.html">cll</a></div><div class="ttdef"><b>Definition:</b> cll.h:17</div></div>
 <div class="ttc" id="afprintf_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:45</div></div>
@@ -180,7 +178,7 @@ $(function() {
 <div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:26</div></div>
-<div class="ttc" id="aclass_queue_html"><div class="ttname"><a href="../../d4/da4/class_queue.html">Queue</a></div><div class="ttdef"><b>Definition:</b> circular_Queue_using_Linked_List.cpp:10</div></div>
+<div class="ttc" id="aclass_queue_html"><div class="ttname"><a href="../../d4/da4/class_queue.html">Queue</a></div><div class="ttdef"><b>Definition:</b> circular_queue_using_linked_list.cpp:8</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/data.html">std::vector::data</a></div><div class="ttdeci">T data(T... args)</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:37</div></div>
