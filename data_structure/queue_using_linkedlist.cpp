@@ -3,13 +3,11 @@
 */
 #include <iostream>
 
-struct linkedlist
-{
+struct linkedlist {
     int data;
     linkedlist *next;
 };
-class stack_linkedList
-{
+class stack_linkedList {
  public:
     linkedlist *front;
     linkedlist *rear;
@@ -19,28 +17,24 @@ class stack_linkedList
     int dequeue();
     void display();
 };
-void stack_linkedList::enqueue(int ele)
-{
+void stack_linkedList::enqueue(int ele) {
     linkedlist *temp = new linkedlist();
     temp->data = ele;
     temp->next = NULL;
 
     if (front == NULL)
         front = rear = temp;
-    else
-    {
+    else {
         rear->next = temp;
         rear = temp;
     }
 }
-int stack_linkedList::dequeue()
-{
+int stack_linkedList::dequeue() {
     linkedlist *temp;
     int ele;
     if (front == NULL)
         std::cout << "\nStack is empty";
-    else
-    {
+    else {
         temp = front;
         ele = temp->data;
         if (front == rear)  // if length of queue is 1;
@@ -50,25 +44,21 @@ int stack_linkedList::dequeue()
     }
     return ele;
 }
-void stack_linkedList::display()
-{
+void stack_linkedList::display() {
     if (front == NULL)
         std::cout << "\nStack is empty";
 
-    else
-    {
+    else {
         linkedlist *temp;
         temp = front;
-        while (temp != NULL)
-        {
+        while (temp != NULL) {
             std::cout << temp->data << " ";
             temp = temp->next;
         }
     }
 }
 
-int main()
-{
+int main() {
     int op, data;
     stack_linkedList ob;
     std::cout << "\n1. enqueue(Insertion) ";
@@ -76,17 +66,14 @@ int main()
     std::cout << "\n3. Display";
     std::cout << "\n4. Exit";
 
-    while (1)
-    {
+    while (1) {
         std::cout << "\nEnter your choice ";
         std::cin >> op;
-        if (op == 1)
-        {
+        if (op == 1) {
             std::cout << "Enter data ";
             std::cin >> data;
             ob.enqueue(data);
-        }
-        else if (op == 2)
+        } else if (op == 2)
             data = ob.dequeue();
         else if (op == 3)
             ob.display();

@@ -5,8 +5,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     queue<string> q;
     cout << "---------------------- Test construct ----------------------"
          << endl;

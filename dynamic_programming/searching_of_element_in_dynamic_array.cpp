@@ -35,8 +35,7 @@
 
 // this is main fuction
 // ***
-int main()
-{
+int main() {
     int64_t r, mr = 0, x, q, i, z;
     std::cout << "Enter Number of array you want to Store :";
     std::cin >> x;
@@ -50,8 +49,7 @@ int main()
     int** ar = new int*[x]();
     // this for loop is use for entering different variable size array
     // ***
-    for (r = 0; r < x; r++)
-    {
+    for (r = 0; r < x; r++) {
         std::cout << "Enter number of element in " << r + 1 << " rows :";
         std::cin >> mr;
         // creating a 1D array
@@ -59,8 +57,7 @@ int main()
         std::cout << "Enter the element of Array ";
         // this for loop is use for storing values in array
         // ***
-        for (i = 0; i < mr; i++)
-        {
+        for (i = 0; i < mr; i++) {
             // entering the value of rows in array in Horizontal
             std::cin >> ac[i];
         }
@@ -69,8 +66,7 @@ int main()
     }
     // this for loop is use for display result of querry
     // ***
-    for (z = 0; z < q; z++)
-    {
+    for (z = 0; z < q; z++) {
         int64_t r1 = 0, q1 = 0;
         std::cout << "enter the number of row which element you want to find :";
         std::cin >> r1;

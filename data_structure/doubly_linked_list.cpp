@@ -2,15 +2,13 @@
 #include <cstdlib>
 #include <iostream>
 
-struct node
-{
+struct node {
     int val;
     node *prev;
     node *next;
 } * start;
 
-class double_linked_list
-{
+class double_linked_list {
  public:
     double_linked_list() { start = NULL; }
     void insert(int x);
@@ -20,13 +18,10 @@ class double_linked_list
     void reverseShow();
 };
 
-void double_linked_list::insert(int x)
-{
+void double_linked_list::insert(int x) {
     node *t = start;
-    if (start != NULL)
-    {
-        while (t->next != NULL)
-        {
+    if (start != NULL) {
+        while (t->next != NULL) {
             t = t->next;
         }
         node *n = new node;
@@ -34,9 +29,7 @@ void double_linked_list::insert(int x)
         n->prev = t;
         n->val = x;
         n->next = NULL;
-    }
-    else
-    {
+    } else {
         node *n = new node;
         n->val = x;
         n->prev = NULL;
@@ -45,91 +38,69 @@ void double_linked_list::insert(int x)
     }
 }
 
-void double_linked_list::remove(int x)
-{
+void double_linked_list::remove(int x) {
     node *t = start;
-    while (t != NULL && t->val != x)
-    {
+    while (t != NULL && t->val != x) {
         t = t->next;
     }
-    if (t == NULL)
-    {
+    if (t == NULL) {
         return;
     }
-    if (t->prev == NULL)
-    {
-        if (t->next == NULL)
-        {
+    if (t->prev == NULL) {
+        if (t->next == NULL) {
             start = NULL;
-        }
-        else
-        {
+        } else {
             start = t->next;
             start->prev = NULL;
         }
-    }
-    else if (t->next == NULL)
-    {
+    } else if (t->next == NULL) {
         t->prev->next = NULL;
-    }
-    else
-    {
+    } else {
         t->prev->next = t->next;
         t->next->prev = t->prev;
     }
     delete t;
 }
 
-void double_linked_list::search(int x)
-{
+void double_linked_list::search(int x) {
     node *t = start;
     int found = 0;
-    while (t != NULL)
-    {
-        if (t->val == x)
-        {
+    while (t != NULL) {
+        if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
             break;
         }
         t = t->next;
     }
-    if (found == 0)
-    {
+    if (found == 0) {
         std::cout << "\nNot Found";
     }
 }
 
-void double_linked_list::show()
-{
+void double_linked_list::show() {
     node *t = start;
-    while (t != NULL)
-    {
+    while (t != NULL) {
         std::cout << t->val << "\t";
         t = t->next;
     }
 }
 
-void double_linked_list::reverseShow()
-{
+void double_linked_list::reverseShow() {
     node *t = start;
-    while (t != NULL && t->next != NULL)
-    {
+    while (t != NULL && t->next != NULL) {
         t = t->next;
     }
-    while (t != NULL)
-    {
+    while (t != NULL) {
         std::cout << t->val << "\t";
         t = t->prev;
     }
 }
 
-int main()
-{
+int main() {
     int choice, x;
     double_linked_list ob;
-    do
-    {
+    do {
         std::cout << "\n1. Insert";
         std::cout << "\n2. Delete";
         std::cout << "\n3. Search";
@@ -137,8 +108,7 @@ int main()
         std::cout << "\n5. Reverse print";
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> x;

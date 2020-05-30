@@ -11,8 +11,7 @@ using namespace std;
 
 int checked[999] = {WHITE};
 
-void dfs(const list<int> lista[], int start)
-{
+void dfs(const list<int> lista[], int start) {
     stack<int> stack;
 
     int checked[999] = {WHITE};
@@ -20,33 +19,28 @@ void dfs(const list<int> lista[], int start)
     stack.push(start);
 
     checked[start] = GREY;
-    while (!stack.empty())
-    {
+    while (!stack.empty()) {
         int act = stack.top();
         stack.pop();
 
-        if (checked[act] == GREY)
-        {
+        if (checked[act] == GREY) {
             cout << act << ' ';
-            for (auto it = lista[act].begin(); it != lista[act].end(); ++it)
-            {
+            for (auto it = lista[act].begin(); it != lista[act].end(); ++it) {
                 stack.push(*it);
                 if (checked[*it] != BLACK)
                     checked[*it] = GREY;
             }
-            checked[act] = BLACK; //nodo controllato
+            checked[act] = BLACK;  // nodo controllato
         }
     }
 }
 
-int main()
-{
+int main() {
     int u, w;
     int n;
     cin >> n;
     list<int> lista[INF];
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         cin >> u >> w;
         lista[u].push_back(w);
     }

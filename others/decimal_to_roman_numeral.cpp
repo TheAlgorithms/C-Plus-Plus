@@ -12,8 +12,7 @@
 /** This functions fills a string with character c, n times and returns it
  * @note This can probably be replace by `memcpy` function.
  */
-std::string fill(char c, int n)
-{
+std::string fill(char c, int n) {
     std::string s = "";
     while (n--) s += c;
     return s;
@@ -22,8 +21,7 @@ std::string fill(char c, int n)
 /** to convert to lowercase Roman Numeral
  * the function works recursively
  */
-std::string tolowerRoman(int n)
-{
+std::string tolowerRoman(int n) {
     if (n < 4)
         return fill('i', n);
     if (n < 6)
@@ -57,8 +55,7 @@ std::string tolowerRoman(int n)
 /** to convert to uppercase Roman Numeral
  * the function works recursively
  */
-std::string toupperRoman(int n)
-{
+std::string toupperRoman(int n) {
     if (n < 4)
         return fill('I', n);
     if (n < 6)
@@ -90,8 +87,7 @@ std::string toupperRoman(int n)
 }
 
 /** main function */
-int main()
-{
+int main() {
     int n;
     std::cout << "\t\tRoman numbers converter\n\n";
     std::cout << "Type in decimal number between 0 up to 4000 (exclusive): ";

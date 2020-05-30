@@ -2,24 +2,20 @@
 using namespace std;
 
 // node defined
-class node
-{
+class node {
  public:
     int data;
     node *link;
-    node(int d)
-    {
+    node(int d) {
         data = d;
         link = NULL;
     }
 };
 
 // printing the linked list
-void print(node *head)
-{
+void print(node *head) {
     node *current = head;
-    while (current != NULL)
-    {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->link;
     }
@@ -27,18 +23,15 @@ void print(node *head)
 }
 
 // creating the linked list with 'n' nodes
-node *createlist(int n)
-{
+node *createlist(int n) {
     node *head = NULL;
     node *t = NULL;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         node *temp = NULL;
         int num;
         cin >> num;
         temp = new node(num);
-        if (head == NULL)
-        {
+        if (head == NULL) {
             head = temp;
             t = temp;
             continue;
@@ -51,8 +44,7 @@ node *createlist(int n)
 }
 
 // performing selection sort on the linked list in an iterative manner
-void my_selection_sort_linked_list(node *&head)
-{
+void my_selection_sort_linked_list(node *&head) {
     node *min = head;  // throughout the algorithm 'min' is used to denote the
                        // node with min value out of all the nodes left for
                        // scanning while scanning if we find a node 'X' with
@@ -61,7 +53,7 @@ void my_selection_sort_linked_list(node *&head)
     node *current =
         min->link;  // 'current' refers to the current node we are scanning
     node *previous = min;  //'previous' refers to the node that is previous to
-                           //the current node
+                           // the current node
     node *temp =
         NULL;  // 'temp' in this algo is used to point to the last node of the
                // sorted part of the linked list.
@@ -102,8 +94,8 @@ void my_selection_sort_linked_list(node *&head)
                         current->link = previous;
                         min = current;
                         current = previous->link;
-                    }
-                    else  // if the 'previous' is not pointing to the 'min' node
+                    } else  // if the 'previous' is not pointing to the 'min'
+                            // node
                     {
                         // Update the pointers
                         head = current;  // update the head pointer with the
@@ -113,8 +105,8 @@ void my_selection_sort_linked_list(node *&head)
                         min = current;
                         current = previous->link;
                     }
-                }
-                else  // if 'temp' is not NULL, i.e., its not the 1st iteration
+                } else  // if 'temp' is not NULL, i.e., its not the 1st
+                        // iteration
                 {
                     temp->link = current;
                     previous->link = current->link;
@@ -122,9 +114,8 @@ void my_selection_sort_linked_list(node *&head)
                     min = current;
                     current = previous->link;
                 }
-            }
-            else  // if the current node is greater than min, just move the
-                  // previous and the current pointer a step further
+            } else  // if the current node is greater than min, just move the
+                    // previous and the current pointer a step further
             {
                 previous = previous->link;
                 current = current->link;
@@ -132,8 +123,8 @@ void my_selection_sort_linked_list(node *&head)
         }
 
         // update the pointers. Set 'temp' to the last node in the sorted part.
-        // Make 'min' move a step further so that 'min' points to the 1st node of
-        // the unsorted part start the iteration again
+        // Make 'min' move a step further so that 'min' points to the 1st node
+        // of the unsorted part start the iteration again
         temp = min;
         min = min->link;
         previous = min;
@@ -163,8 +154,7 @@ void my_selection_sort_linked_list(node *&head)
 // original list is : 5 3 4 1 -2 -4
 // sorted list is : -4 -2 1 3 4 5
 
-int main()
-{
+int main() {
     node *head = NULL;
     int n;
     cout << "enter the no. of nodes : ";  // taking input from user about the

@@ -14,25 +14,18 @@
  * @todo add documentation
  */
 template <class X>
-void comp(X x, std::vector<int> *s1, std::vector<int> *s2, std::vector<int> *s3)
-{
-    if (s1->size() >= x && s1->size() + s2->size() < x)
-    {
+void comp(X x, std::vector<int> *s1, std::vector<int> *s2,
+          std::vector<int> *s3) {
+    if (s1->size() >= x && s1->size() + s2->size() < x) {
         std::cout << (*s2)[0] << " is the " << x + 1 << "th element from front";
-    }
-    else if (s1->size() > x)
-    {
+    } else if (s1->size() > x) {
         std::sort(s1->begin(), s1->end());
         std::cout << (*s1)[x] << " is the " << x + 1 << "th element from front";
-    }
-    else if (s1->size() + s2->size() <= x && s3->size() > x)
-    {
+    } else if (s1->size() + s2->size() <= x && s3->size() > x) {
         std::sort(s3->begin(), s3->end());
         std::cout << (*s3)[x - s1->size() - s2->size()] << " is the " << x + 1
                   << "th element from front";
-    }
-    else
-    {
+    } else {
         std::cout << x + 1 << " is invalid location";
     }
 }
@@ -42,8 +35,7 @@ void comp(X x, std::vector<int> *s1, std::vector<int> *s2, std::vector<int> *s3)
 /**
  * Main function
  */
-int main()
-{
+int main() {
     std::vector<int> v{25, 21, 98, 100, 76, 22, 43, 60, 89, 87};
     std::vector<int> s1;
     std::vector<int> s2;
@@ -62,20 +54,14 @@ int main()
     std::cout << "\nmedian=" << median << std::endl;
     int avg1, avg2, avg3, sum1 = 0, sum2 = 0, sum3 = 0;
 
-    for (int i = 0; i < v.size(); i++)
-    {  // iterate through all numbers
-        if (v.back() == v[median])
-        {
+    for (int i = 0; i < v.size(); i++) {  // iterate through all numbers
+        if (v.back() == v[median]) {
             avg1 = sum1 + v.back();
             s2.push_back(v.back());
-        }
-        else if (v.back() < v[median])
-        {
+        } else if (v.back() < v[median]) {
             avg2 = sum2 + v.back();
             s1.push_back(v.back());
-        }
-        else
-        {
+        } else {
             avg3 = sum3 + v.back();
             s3.push_back(v.back());
         }

@@ -10,8 +10,7 @@
 
 #include <iostream>
 
-void SlowSort(int a[], int i, int j)
-{
+void SlowSort(int a[], int i, int j) {
     if (i >= j)
         return;
     int m = i + (j - i) / 2;  // midpoint, implemented this way to avoid
@@ -19,8 +18,7 @@ void SlowSort(int a[], int i, int j)
     int temp;
     SlowSort(a, i, m);
     SlowSort(a, m + 1, j);
-    if (a[j] < a[m])
-    {
+    if (a[j] < a[m]) {
         temp = a[j];  // swapping a[j] & a[m]
         a[j] = a[m];
         a[m] = temp;
@@ -30,8 +28,7 @@ void SlowSort(int a[], int i, int j)
 
 // Sample Main function
 
-int main()
-{
+int main() {
     int size;
     std::cout << "\nEnter the number of elements : ";
 
@@ -41,8 +38,7 @@ int main()
 
     std::cout << "\nEnter the unsorted elements : ";
 
-    for (int i = 0; i < size; ++i)
-    {
+    for (int i = 0; i < size; ++i) {
         std::cout << "\n";
         std::cin >> arr[i];
     }
@@ -51,8 +47,7 @@ int main()
 
     std::cout << "Sorted array\n";
 
-    for (int i = 0; i < size; ++i)
-    {
+    for (int i = 0; i < size; ++i) {
         std::cout << arr[i] << " ";
     }
 

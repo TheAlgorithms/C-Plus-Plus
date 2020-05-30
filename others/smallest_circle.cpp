@@ -12,8 +12,7 @@
 #include <vector>
 
 /** Define a point */
-struct Point
-{
+struct Point {
     double x, /**< abscissa */
         y;    /**< ordinate */
 
@@ -21,8 +20,7 @@ struct Point
      * \param [in] a absicca (default = 0.0)
      * \param [in] b ordinate (default = 0.0)
      */
-    explicit Point(double a = 0.f, double b = 0.f)
-    {
+    explicit Point(double a = 0.f, double b = 0.f) {
         x = a;
         y = b;
     }
@@ -36,8 +34,7 @@ struct Point
  * \param [in] B point B
  * \return ditance
  */
-double LenghtLine(const Point &A, const Point &B)
-{
+double LenghtLine(const Point &A, const Point &B) {
     double dx = B.x - A.x;
     double dy = B.y - A.y;
     return std::sqrt((dx * dx) + (dy * dy));
@@ -54,8 +51,7 @@ double LenghtLine(const Point &A, const Point &B)
  * \param [in] C vertex C
  * \returns area of triangle
  */
-double TriangleArea(const Point &A, const Point &B, const Point &C)
-{
+double TriangleArea(const Point &A, const Point &B, const Point &C) {
     double a = LenghtLine(A, B);
     double b = LenghtLine(B, C);
     double c = LenghtLine(C, A);
@@ -73,10 +69,8 @@ double TriangleArea(const Point &A, const Point &B, const Point &C)
  * \returns True if P lies on or within the circle
  * \returns False if P lies outside the circle
  */
-bool PointInCircle(const std::vector<Point> &P, const Point &Center, double R)
-{
-    for (size_t i = 0; i < P.size(); i++)
-    {
+bool PointInCircle(const std::vector<Point> &P, const Point &Center, double R) {
+    for (size_t i = 0; i < P.size(); i++) {
         if (LenghtLine(P[i], Center) > R)
             return false;
     }
@@ -90,8 +84,7 @@ bool PointInCircle(const std::vector<Point> &P, const Point &Center, double R)
  * \param [in] P vector of points
  * \returns radius of the circle
  */
-double circle(const std::vector<Point> &P)
-{
+double circle(const std::vector<Point> &P) {
     double minR = INFINITY;
     double R;
     Point C;
@@ -103,8 +96,7 @@ double circle(const std::vector<Point> &P)
         // for every subsequent point in the list
         for (size_t j = i + 1; j < P.size(); j++)
             // for every subsequent point in the list
-            for (size_t k = j + 1; k < P.size(); k++)
-            {
+            for (size_t k = j + 1; k < P.size(); k++) {
                 // here, we now have picked three points from the given set of
                 // points that we can use
                 // viz., P[i], P[j] and P[k]
@@ -129,12 +121,10 @@ double circle(const std::vector<Point> &P)
                 R = (LenghtLine(P[i], P[j]) * LenghtLine(P[j], P[k]) *
                      LenghtLine(P[k], P[i])) /
                     (4 * TriangleArea(P[i], P[j], P[k]));
-                if (!PointInCircle(P, C, R))
-                {
+                if (!PointInCircle(P, C, R)) {
                     continue;
                 }
-                if (R <= minR)
-                {
+                if (R <= minR) {
                     minR = R;
                     minC = C;
                 }
@@ -143,18 +133,15 @@ double circle(const std::vector<Point> &P)
     // for each point in the list
     for (size_t i = 0; i < P.size() - 1; i++)
         // for every subsequent point in the list
-        for (size_t j = i + 1; j < P.size(); j++)
-        {
+        for (size_t j = i + 1; j < P.size(); j++) {
             // check for diameterically opposite points
             C.x = (P[i].x + P[j].x) / 2;
             C.y = (P[i].y + P[j].y) / 2;
             R = LenghtLine(C, P[i]);
-            if (!PointInCircle(P, C, R))
-            {
+            if (!PointInCircle(P, C, R)) {
                 continue;
             }
-            if (R <= minR)
-            {
+            if (R <= minR) {
                 minR = R;
                 minC = C;
             }
@@ -168,8 +155,7 @@ double circle(const std::vector<Point> &P)
  * \n radius 3.318493136080724
  * \n centre at (3.0454545454545454, 1.3181818181818181)
  */
-void test()
-{
+void test() {
     std::vector<Point> Pv;
     Pv.push_back(Point(0, 0));
     Pv.push_back(Point(5, 4));
@@ -184,8 +170,7 @@ void test()
  * \n radius 1.4142135623730951
  * \n centre at (1.0, 1.0)
  */
-void test2()
-{
+void test2() {
     std::vector<Point> Pv;
     Pv.push_back(Point(0, 0));
     Pv.push_back(Point(0, 2));
@@ -200,8 +185,7 @@ void test2()
  * \n centre at (2.142857142857143, 1.7857142857142856)
  * @todo This test fails
  */
-void test3()
-{
+void test3() {
     std::vector<Point> Pv;
     Pv.push_back(Point(0.5, 1));
     Pv.push_back(Point(3.5, 3));
@@ -211,8 +195,7 @@ void test3()
 }
 
 /** Main program */
-int main()
-{
+int main() {
     test();
     std::cout << std::endl;
     test2();

@@ -12,12 +12,10 @@
  * @param[in] a array of integers to compute GCD for
  * @param[in] n number of integers in array `a`
  */
-int gcd(int *a, int n)
-{
+int gcd(int *a, int n) {
     int j = 1;  // to access all elements of the array starting from 1
     int gcd = a[0];
-    while (j < n)
-    {
+    while (j < n) {
         if (a[j] % gcd == 0)  // value of gcd is as needed so far
             j++;              // so we check for next element
         else
@@ -27,8 +25,7 @@ int gcd(int *a, int n)
 }
 
 /** Main function */
-int main()
-{
+int main() {
     int n;
     std::cout << "Enter value of n:" << std::endl;
     std::cin >> n;

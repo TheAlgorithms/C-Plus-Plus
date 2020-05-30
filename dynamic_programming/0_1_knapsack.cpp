@@ -28,13 +28,10 @@ using namespace std;
 //	}
 //}
 
-int Knapsack(int capacity, int n, int weight[], int value[])
-{
+int Knapsack(int capacity, int n, int weight[], int value[]) {
     int res[20][20];
-    for (int i = 0; i < n + 1; ++i)
-    {
-        for (int j = 0; j < capacity + 1; ++j)
-        {
+    for (int i = 0; i < n + 1; ++i) {
+        for (int j = 0; j < capacity + 1; ++j) {
             if (i == 0 || j == 0)
                 res[i][j] = 0;
             else if (weight[i - 1] <= j)
@@ -48,20 +45,17 @@ int Knapsack(int capacity, int n, int weight[], int value[])
     //	cout<<"\n";
     return res[n][capacity];
 }
-int main()
-{
+int main() {
     int n;
     cout << "Enter number of items: ";
     cin >> n;
     int weight[n], value[n];
     cout << "Enter weights: ";
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         cin >> weight[i];
     }
     cout << "Enter values: ";
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         cin >> value[i];
     }
     int capacity;

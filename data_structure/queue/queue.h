@@ -4,16 +4,14 @@
 
 /* Definition of the node */
 template <class Kind>
-struct node
-{
+struct node {
     Kind data;
     node<Kind> *next;
 };
 
 /* Definition of the queue class */
 template <class Kind>
-class queue
-{
+class queue {
  public:
     void display();          /* Show queue */
     queue();                 /* Default constructor*/

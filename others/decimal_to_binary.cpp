@@ -8,12 +8,10 @@
  * This method converts the bit representation and stores it as a decimal
  * number.
  */
-void method1(int number)
-{
+void method1(int number) {
     int remainder, binary = 0, var = 1;
 
-    do
-    {
+    do {
         remainder = number % 2;
         number = number / 2;
         binary = binary + (remainder * var);
@@ -26,13 +24,11 @@ void method1(int number)
  * This method stores each bit value from LSB to MSB and then prints them back
  * from MSB to LSB
  */
-void method2(int number)
-{
+void method2(int number) {
     int num_bits = 0;
     char bit_string[50];
 
-    do
-    {
+    do {
         bool bit = number & 0x01;  // get last bit
         if (bit)
             bit_string[num_bits++] = '1';
@@ -47,8 +43,7 @@ void method2(int number)
     std::cout << std::endl;
 }
 
-int main()
-{
+int main() {
     int number;
     std::cout << "Enter a number:";
     std::cin >> number;

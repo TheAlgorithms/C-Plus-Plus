@@ -1,30 +1,24 @@
 #include <iostream>
 using namespace std;
 
-struct node
-{
+struct node {
     int val;
     node *next;
 };
 
 node *top;
 
-void push(int x)
-{
+void push(int x) {
     node *n = new node;
     n->val = x;
     n->next = top;
     top = n;
 }
 
-void pop()
-{
-    if (top == NULL)
-    {
+void pop() {
+    if (top == NULL) {
         cout << "\nUnderflow";
-    }
-    else
-    {
+    } else {
         node *t = top;
         cout << "\n" << t->val << " deleted";
         top = top->next;
@@ -32,38 +26,29 @@ void pop()
     }
 }
 
-void show()
-{
+void show() {
     node *t = top;
-    while (t != NULL)
-    {
+    while (t != NULL) {
         cout << t->val << "\n";
         t = t->next;
     }
 }
 
-int main()
-{
+int main() {
     int ch, x;
-    do
-    {
+    do {
         cout << "\n1. Push";
         cout << "\n2. Pop";
         cout << "\n3. Print";
         cout << "\nEnter Your Choice : ";
         cin >> ch;
-        if (ch == 1)
-        {
+        if (ch == 1) {
             cout << "\nInsert : ";
             cin >> x;
             push(x);
-        }
-        else if (ch == 2)
-        {
+        } else if (ch == 2) {
             pop();
-        }
-        else if (ch == 3)
-        {
+        } else if (ch == 3) {
             show();
         }
     } while (ch != 0);

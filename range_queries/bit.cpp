@@ -3,46 +3,38 @@
 
 using namespace std;
 
-class Bit
-{
+class Bit {
     int n;
     vector<int> bit;
     inline int offset(int x) { return (x & (-x)); }
 
  public:
-    Bit(vector<int>& arr)
-    {
+    Bit(vector<int>& arr) {
         n = arr.size();
         bit.assign(n + 1, 0);
-        for (int i = 0; i < n; ++i)
-        {
+        for (int i = 0; i < n; ++i) {
             update(i, arr[i]);
         }
     }
-    Bit(int x)
-    {
+    Bit(int x) {
         n = x;
         bit.assign(n + 1, 0);
     }
 
-    void update(int id, int val)
-    {
+    void update(int id, int val) {
         // Add val at id
         id++;
-        while (id <= n)
-        {
+        while (id <= n) {
             bit[id] += val;
             id += offset(id);
         }
     }
 
-    int sum(int id)
-    {
+    int sum(int id) {
         // Get prefix sum upto id.
         id++;
         int res = 0;
-        while (id > 0)
-        {
+        while (id > 0) {
             res += bit[id];
             id -= offset(id);
         }
@@ -52,8 +44,7 @@ class Bit
     int sum_range(int l, int r) { return sum(r) - sum(l - 1); }
 };
 
-int main()
-{
+int main() {
     int n = 5;
     vector<int> arr = {1, 2, 3, 4, 5};
     Bit x(arr);

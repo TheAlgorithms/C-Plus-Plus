@@ -9,8 +9,7 @@ int dp[MAX][MAX];
 
 // Function to find the most efficient way to multiply the given sequence of
 // matrices
-int MatrixChainMultiplication(int dim[], int i, int j)
-{
+int MatrixChainMultiplication(int dim[], int i, int j) {
     // base case: one matrix
     if (j <= i + 1)
         return 0;
@@ -21,13 +20,11 @@ int MatrixChainMultiplication(int dim[], int i, int j)
 
     // if dp[i][j] is not calculated (calculate it!!)
 
-    if (dp[i][j] == 0)
-    {
+    if (dp[i][j] == 0) {
         // take the minimum over each possible position at which the
         // sequence of matrices can be split
 
-        for (int k = i + 1; k <= j - 1; k++)
-        {
+        for (int k = i + 1; k <= j - 1; k++) {
             // recur for M[i+1]..M[k] to get a i x k matrix
             int cost = MatrixChainMultiplication(dim, i, k);
 
@@ -48,8 +45,7 @@ int MatrixChainMultiplication(int dim[], int i, int j)
 }
 
 // main function
-int main()
-{
+int main() {
     // Matrix i has Dimensions dim[i-1] & dim[i] for i=1..n
     // input is 10 x 30 matrix, 30 x 5 matrix, 5 x 60 matrix
     int dim[] = {10, 30, 5, 60};

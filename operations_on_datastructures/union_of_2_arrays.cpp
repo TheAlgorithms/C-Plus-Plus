@@ -1,6 +1,5 @@
 #include <iostream>
-int main()
-{
+int main() {
     int m, n, i = 0, j = 0;
     cout << "Enter size of both arrays:";
     cin >> m >> n;
@@ -12,14 +11,12 @@ int main()
     for (i = 0; i < n; i++) cin >> b[i];
     i = 0;
     j = 0;
-    while ((i < m) && (j < n))
-    {
+    while ((i < m) && (j < n)) {
         if (a[i] < b[j])
             cout << a[i++] << " ";
         else if (a[i] > b[j])
             cout << b[j++] << " ";
-        else
-        {
+        else {
             cout << a[i++];
             j++;
         }

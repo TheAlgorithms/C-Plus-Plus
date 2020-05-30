@@ -8,8 +8,7 @@
 /** Function to read the number from stdin. The function reads input until a non
  * numeric character is entered.
  */
-void fastinput(int *number)
-{
+void fastinput(int *number) {
     // variable to indicate sign of input integer
     bool negative = false;
     register int c;
@@ -17,8 +16,7 @@ void fastinput(int *number)
 
     // extract current character from buffer
     c = std::getchar();
-    if (c == '-')
-    {
+    if (c == '-') {
         // number is negative
         negative = true;
 
@@ -38,8 +36,7 @@ void fastinput(int *number)
 }
 
 /** Main function */
-int main()
-{
+int main() {
     int number;
     fastinput(&number);
     std::cout << number << std::endl;

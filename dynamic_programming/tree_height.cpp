@@ -29,14 +29,11 @@ std::vector<int> adj[MAX];
 std::vector<bool> visited;
 std::vector<int> dp;
 
-void depth_first_search(int u)
-{
+void depth_first_search(int u) {
     visited[u] = true;
     int child_height = 1;
-    for (int v : adj[u])
-    {
-        if (!visited[v])
-        {
+    for (int v : adj[u]) {
+        if (!visited[v]) {
             depth_first_search(v);
 
             // select maximum sub-tree height from all children.
@@ -47,8 +44,7 @@ void depth_first_search(int u)
     dp[u] = child_height;
 }
 
-int main()
-{
+int main() {
     // number of nodes
     int number_of_nodes;
     std::cout << "Enter number of nodes of the tree : " << std::endl;
@@ -58,8 +54,7 @@ int main()
     int u, v;
     // Tree contains exactly n-1 edges where n denotes the number of nodes.
     std::cout << "Enter edges of the tree : " << std::endl;
-    for (int i = 0; i < number_of_nodes - 1; i++)
-    {
+    for (int i = 0; i < number_of_nodes - 1; i++) {
         std::cin >> u >> v;
         // undirected tree u -> v and v -> u.
         adj[u].push_back(v);

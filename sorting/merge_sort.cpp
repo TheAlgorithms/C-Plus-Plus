@@ -1,7 +1,6 @@
 #include <iostream>
 
-void merge(int arr[], int l, int m, int r)
-{
+void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -14,30 +13,24 @@ void merge(int arr[], int l, int m, int r)
     i = 0;
     j = 0;
     k = l;
-    while (i < n1 && j < n2)
-    {
-        if (L[i] <= R[j])
-        {
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
             arr[k] = L[i];
             i++;
-        }
-        else
-        {
+        } else {
             arr[k] = R[j];
             j++;
         }
         k++;
     }
 
-    while (i < n1)
-    {
+    while (i < n1) {
         arr[k] = L[i];
         i++;
         k++;
     }
 
-    while (j < n2)
-    {
+    while (j < n2) {
         arr[k] = R[j];
         j++;
         k++;
@@ -47,10 +40,8 @@ void merge(int arr[], int l, int m, int r)
     delete[] R;
 }
 
-void mergeSort(int arr[], int l, int r)
-{
-    if (l < r)
-    {
+void mergeSort(int arr[], int l, int r) {
+    if (l < r) {
         int m = l + (r - l) / 2;
 
         mergeSort(arr, l, m);
@@ -60,14 +51,12 @@ void mergeSort(int arr[], int l, int r)
     }
 }
 
-void show(int A[], int size)
-{
+void show(int A[], int size) {
     int i;
     for (i = 0; i < size; i++) std::cout << A[i] << "\n";
 }
 
-int main()
-{
+int main() {
     int size;
     std::cout << "\nEnter the number of elements : ";
 
@@ -77,8 +66,7 @@ int main()
 
     std::cout << "\nEnter the unsorted elements : ";
 
-    for (int i = 0; i < size; ++i)
-    {
+    for (int i = 0; i < size; ++i) {
         std::cout << "\n";
         std::cin >> arr[i];
     }

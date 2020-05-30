@@ -7,18 +7,15 @@
 
 #include <iostream>
 using namespace std;
-struct Node
-{
+struct Node {
     int data;
     int next;
 };
 Node AvailArray[100];  // array that will act as nodes of a linked list.
 int head = -1;
 int avail = 0;
-void initialise_list()
-{
-    for (int i = 0; i <= 98; i++)
-    {
+void initialise_list() {
+    for (int i = 0; i <= 98; i++) {
         AvailArray[i].next = i + 1;
     }
     AvailArray[99].next = -1;  // indicating the end of the linked list.
@@ -50,12 +47,10 @@ void insertAtTheBeginning(int data)  // The function will insert the given data
     head = newNode;
 }
 
-void insertAtTheEnd(int data)
-{
+void insertAtTheEnd(int data) {
     int newNode = getnode();
     int temp = head;
-    while (AvailArray[temp].next != -1)
-    {
+    while (AvailArray[temp].next != -1) {
         temp = AvailArray[temp].next;
     }
     // temp is now pointing to the end node.
@@ -64,11 +59,9 @@ void insertAtTheEnd(int data)
     AvailArray[temp].next = newNode;
 }
 
-void display()
-{
+void display() {
     int temp = head;
-    while (temp != -1)
-    {
+    while (temp != -1) {
         cout << AvailArray[temp].data << "->";
         temp = AvailArray[temp].next;
     }
@@ -76,20 +69,17 @@ void display()
     ;
 }
 
-int main()
-{
+int main() {
     initialise_list();
     int x, y, z;
-    for (;;)
-    {
+    for (;;) {
         cout << "1. Insert At The Beginning" << endl;
         cout << "2. Insert At The End" << endl;
         cout << "3. Display" << endl;
         cout << "4.Exit" << endl;
         cout << "Enter Your choice" << endl;
         cin >> z;
-        switch (z)
-        {
+        switch (z) {
         case 1:
             cout << "Enter the number you want to enter" << endl;
             cin >> x;

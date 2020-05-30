@@ -4,27 +4,22 @@
 using namespace std;
 
 // Wrapper class for storing a graph
-class Graph
-{
+class Graph {
  public:
     int vertexNum;
     int **edges;
 
     // Constructs a graph with V vertices and E edges
-    Graph(const int V)
-    {
+    Graph(const int V) {
         // initializes the array edges.
         this->edges = new int *[V];
-        for (int i = 0; i < V; i++)
-        {
+        for (int i = 0; i < V; i++) {
             edges[i] = new int[V];
         }
 
         // fills the array with zeros.
-        for (int i = 0; i < V; i++)
-        {
-            for (int j = 0; j < V; j++)
-            {
+        for (int i = 0; i < V; i++) {
+            for (int j = 0; j < V; j++) {
                 edges[i][j] = 0;
             }
         }
@@ -33,19 +28,15 @@ class Graph
     }
 
     // Adds the given edge to the graph
-    void addEdge(int src, int dst, int weight)
-    {
+    void addEdge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
     }
 };
 // Utility function to find minimum distance vertex in mdist
-int minDistance(int mdist[], bool vset[], int V)
-{
+int minDistance(int mdist[], bool vset[], int V) {
     int minVal = INT_MAX, minInd = 0;
-    for (int i = 0; i < V; i++)
-    {
-        if (!vset[i] && (mdist[i] < minVal))
-        {
+    for (int i = 0; i < V; i++) {
+        if (!vset[i] && (mdist[i] < minVal)) {
             minVal = mdist[i];
             minInd = i;
         }
@@ -55,11 +46,9 @@ int minDistance(int mdist[], bool vset[], int V)
 }
 
 // Utility function to print distances
-void print(int dist[], int V)
-{
+void print(int dist[], int V) {
     cout << "\nVertex  Distance" << endl;
-    for (int i = 0; i < V; i++)
-    {
+    for (int i = 0; i < V; i++) {
         if (dist[i] < INT_MAX)
             cout << i << "\t" << dist[i] << endl;
         else
@@ -70,16 +59,14 @@ void print(int dist[], int V)
 // The main function that finds the shortest path from given source
 // to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
 // weights
-void Dijkstra(Graph graph, int src)
-{
+void Dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
     int mdist[V];  // Stores updated distances to vertex
     bool vset[V];  // vset[i] is true if the vertex i included
     // in the shortest path tree
 
     // Initialise mdist and vset. Set distance of source as zero
-    for (int i = 0; i < V; i++)
-    {
+    for (int i = 0; i < V; i++) {
         mdist[i] = INT_MAX;
         vset[i] = false;
     }
@@ -87,17 +74,14 @@ void Dijkstra(Graph graph, int src)
     mdist[src] = 0;
 
     // iterate to find shortest path
-    for (int count = 0; count < V - 1; count++)
-    {
+    for (int count = 0; count < V - 1; count++) {
         int u = minDistance(mdist, vset, V);
 
         vset[u] = true;
 
-        for (int v = 0; v < V; v++)
-        {
+        for (int v = 0; v < V; v++) {
             if (!vset[v] && graph.edges[u][v] &&
-                mdist[u] + graph.edges[u][v] < mdist[v])
-            {
+                mdist[u] + graph.edges[u][v] < mdist[v]) {
                 mdist[v] = mdist[u] + graph.edges[u][v];
             }
         }
@@ -107,8 +91,7 @@ void Dijkstra(Graph graph, int src)
 }
 
 // Driver Function
-int main()
-{
+int main() {
     int V, E, gsrc;
     int src, dst, weight;
     cout << "Enter number of vertices: ";
@@ -116,8 +99,7 @@ int main()
     cout << "Enter number of edges: ";
     cin >> E;
     Graph G(V);
-    for (int i = 0; i < E; i++)
-    {
+    for (int i = 0; i < E; i++) {
         cout << "\nEdge " << i + 1 << "\nEnter source: ";
         cin >> src;
         cout << "Enter destination: ";
@@ -126,12 +108,9 @@ int main()
         cin >> weight;
 
         // makes sure source and destionation are in the proper bounds.
-        if (src >= 0 && src < V && dst >= 0 && dst < V)
-        {
+        if (src >= 0 && src < V && dst >= 0 && dst < V) {
             G.addEdge(src, dst, weight);
-        }
-        else
-        {
+        } else {
             cout << "source and/or destination out of bounds" << endl;
             i--;
             continue;

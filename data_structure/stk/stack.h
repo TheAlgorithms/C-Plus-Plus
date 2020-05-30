@@ -4,16 +4,14 @@
 
 /* Definition of the node */
 template <class Type>
-struct node
-{
+struct node {
     Type data;
     node<Type> *next;
 };
 
 /* Definition of the stack class */
 template <class Type>
-class stack
-{
+class stack {
  public:
     void display();       /* Show stack */
     stack();              /* Default constructor*/

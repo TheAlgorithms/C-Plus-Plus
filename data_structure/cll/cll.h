@@ -9,14 +9,12 @@
 #ifndef CLL_H
 #define CLL_H
 /*The data structure is a linear linked list of integers */
-struct node
-{
+struct node {
     int data;
     node* next;
 };
 
-class cll
-{
+class cll {
  public:
     cll(); /* Construct without parameter */
     ~cll();

@@ -3,8 +3,7 @@
 using namespace std;
 
 // Function to find the Minimum number of coins required to get Sum S
-int findMinCoins(int arr[], int n, int N)
-{
+int findMinCoins(int arr[], int n, int N) {
     // dp[i] = no of coins required to get a total of i
     int dp[N + 1];
 
@@ -12,15 +11,13 @@ int findMinCoins(int arr[], int n, int N)
 
     dp[0] = 0;
 
-    for (int i = 1; i <= N; i++)
-    {
+    for (int i = 1; i <= N; i++) {
         // initialize minimum number of coins needed to infinity
         dp[i] = INT_MAX;
         int res = INT_MAX;
 
         // do for each coin
-        for (int c = 0; c < n; c++)
-        {
+        for (int c = 0; c < n; c++) {
             if (i - arr[c] >=
                 0)  // check if coins doesn't become negative by including it
                 res = dp[i - arr[c]];
@@ -36,8 +33,7 @@ int findMinCoins(int arr[], int n, int N)
     return dp[N];
 }
 
-int main()
-{
+int main() {
     // No of Coins We Have
     int arr[] = {1, 2, 3, 4};
     int n = sizeof(arr) / sizeof(arr[0]);

@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int Max(int Arr[], int N)
-{
+int Max(int Arr[], int N) {
     int max = Arr[0];
     for (int i = 1; i < N; i++)
         if (Arr[i] > max)
@@ -10,8 +9,7 @@ int Max(int Arr[], int N)
     return max;
 }
 
-int Min(int Arr[], int N)
-{
+int Min(int Arr[], int N) {
     int min = Arr[0];
     for (int i = 1; i < N; i++)
         if (Arr[i] < min)
@@ -19,13 +17,11 @@ int Min(int Arr[], int N)
     return min;
 }
 
-void Print(int Arr[], int N)
-{
+void Print(int Arr[], int N) {
     for (int i = 0; i < N; i++) cout << Arr[i] << ", ";
 }
 
-int *Counting_Sort(int Arr[], int N)
-{
+int *Counting_Sort(int Arr[], int N) {
     int max = Max(Arr, N);
     int min = Min(Arr, N);
     int *Sorted_Arr = new int[N];
@@ -36,8 +32,7 @@ int *Counting_Sort(int Arr[], int N)
 
     for (int i = 1; i < (max - min + 1); i++) Count[i] += Count[i - 1];
 
-    for (int i = N - 1; i >= 0; i--)
-    {
+    for (int i = N - 1; i >= 0; i--) {
         Sorted_Arr[Count[Arr[i] - min] - 1] = Arr[i];
         Count[Arr[i] - min]--;
     }
@@ -45,8 +40,7 @@ int *Counting_Sort(int Arr[], int N)
     return Sorted_Arr;
 }
 
-int main()
-{
+int main() {
     int Arr[] = {47, 65, 20, 66, 25, 53, 64, 69, 72, 22,
                  74, 25, 53, 15, 42, 36, 4,  69, 86, 19},
         N = 20;

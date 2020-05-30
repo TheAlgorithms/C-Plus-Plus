@@ -4,8 +4,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     stack<int> stk;
     cout << "---------------------- Test construct ----------------------"
          << endl;

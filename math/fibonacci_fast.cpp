@@ -26,8 +26,7 @@ const uint64_t MAX = 93;
 uint64_t f[MAX] = {0};
 
 /** Algorithm */
-uint64_t fib(uint64_t n)
-{
+uint64_t fib(uint64_t n) {
     if (n == 0)
         return 0;
     if (n == 1 || n == 2)
@@ -44,11 +43,9 @@ uint64_t fib(uint64_t n)
 }
 
 /** Main function */
-int main()
-{
+int main() {
     // Main Function
-    for (uint64_t i = 1; i < 93; i++)
-    {
+    for (uint64_t i = 1; i < 93; i++) {
         std::cout << i << " th fibonacci number is " << fib(i) << std::endl;
     }
     return 0;

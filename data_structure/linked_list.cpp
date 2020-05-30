@@ -1,42 +1,32 @@
 #include <iostream>
 
-struct node
-{
+struct node {
     int val;
     node *next;
 };
 
 node *start;
 
-void insert(int x)
-{
+void insert(int x) {
     node *t = start;
     node *n = new node;
     n->val = x;
     n->next = NULL;
-    if (start != NULL)
-    {
-        while (t->next != NULL)
-        {
+    if (start != NULL) {
+        while (t->next != NULL) {
             t = t->next;
         }
         t->next = n;
-    }
-    else
-    {
+    } else {
         start = n;
     }
 }
 
-void remove(int x)
-{
-    if (start == NULL)
-    {
+void remove(int x) {
+    if (start == NULL) {
         std::cout << "\nLinked List is empty\n";
         return;
-    }
-    else if (start->val == x)
-    {
+    } else if (start->val == x) {
         node *temp = start;
         start = start->next;
         delete temp;
@@ -45,14 +35,12 @@ void remove(int x)
 
     node *temp = start, *parent = start;
 
-    while (temp != NULL && temp->val != x)
-    {
+    while (temp != NULL && temp->val != x) {
         parent = temp;
         temp = temp->next;
     }
 
-    if (temp == NULL)
-    {
+    if (temp == NULL) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
@@ -61,44 +49,35 @@ void remove(int x)
     delete temp;
 }
 
-void search(int x)
-{
+void search(int x) {
     node *t = start;
     int found = 0;
-    while (t != NULL)
-    {
-        if (t->val == x)
-        {
+    while (t != NULL) {
+        if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
             break;
         }
         t = t->next;
     }
-    if (found == 0)
-    {
+    if (found == 0) {
         std::cout << "\nNot Found";
     }
 }
 
-void show()
-{
+void show() {
     node *t = start;
-    while (t != NULL)
-    {
+    while (t != NULL) {
         std::cout << t->val << "\t";
         t = t->next;
     }
 }
 
-void reverse()
-{
+void reverse() {
     node *first = start;
-    if (first != NULL)
-    {
+    if (first != NULL) {
         node *second = first->next;
-        while (second != NULL)
-        {
+        while (second != NULL) {
             node *tem = second->next;
             second->next = first;
             first = second;
@@ -106,18 +85,14 @@ void reverse()
         }
         start->next = NULL;
         start = first;
-    }
-    else
-    {
+    } else {
         std::cout << "\nEmpty list";
     }
 }
 
-int main()
-{
+int main() {
     int choice, x;
-    do
-    {
+    do {
         std::cout << "\n1. Insert";
         std::cout << "\n2. Delete";
         std::cout << "\n3. Search";
@@ -126,8 +101,7 @@ int main()
         std::cout << "\n0. Exit";
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> x;

@@ -3,8 +3,7 @@ using namespace std;
 
 int max(int a, int b) { return (a > b) ? a : b; }
 
-int main()
-{
+int main() {
     char str1[] = "DEFBCD";
     char str2[] = "ABDEFJ";
     int i, j, k;
@@ -13,10 +12,8 @@ int main()
     // cout<<n<<" "<<m<<"\n";
     int a[m][n];
 
-    for (i = 0; i < m; i++)
-    {
-        for (j = 0; j < n; j++)
-        {
+    for (i = 0; i < m; i++) {
+        for (j = 0; j < n; j++) {
             if (i == 0 || j == 0)
                 a[i][j] = 0;
 
@@ -37,12 +34,9 @@ int main()
 
     int ma = -1;
     int indi, indj;
-    for (i = 0; i < m; i++)
-    {
-        for (j = 0; j < n; j++)
-        {
-            if (a[i][j] > ma)
-            {
+    for (i = 0; i < m; i++) {
+        for (j = 0; j < n; j++) {
+            if (a[i][j] > ma) {
                 ma = a[i][j];
                 indi = i;
                 indj = j;

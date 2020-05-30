@@ -21,21 +21,18 @@
 
 /** define \f$f(x)\f$ to find root for
  */
-static double eq(double i)
-{
+static double eq(double i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
 
 /** define the derivative function \f$f'(x)\f$
  */
-static double eq_der(double i)
-{
+static double eq_der(double i) {
     return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
 }
 
 /** Main function */
-int main()
-{
+int main() {
     std::srand(std::time(nullptr));  // initialize randomizer
 
     double z, c = std::rand() % 100, m, n;
@@ -44,8 +41,7 @@ int main()
     std::cout << "\nInitial approximation: " << c;
 
     // start iterations
-    for (i = 0; i < MAX_ITERATIONS; i++)
-    {
+    for (i = 0; i < MAX_ITERATIONS; i++) {
         m = eq(c);
         n = eq_der(c);
 

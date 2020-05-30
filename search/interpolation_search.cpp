@@ -12,13 +12,11 @@
  * \returns index where the value is found
  * \returns 0 if not found
  */
-int interpolation_search(int arr[], int value, int len)
-{
+int interpolation_search(int arr[], int value, int len) {
     int low = 0, high, mid;
     high = len - 1;
 
-    while (arr[low] <= value && arr[high] >= value)
-    {
+    while (arr[low] <= value && arr[high] >= value) {
         mid = (low +
                ((value - arr[low]) * (high - low)) / (arr[high] - arr[low]));
         if (arr[mid] > value)
@@ -36,8 +34,7 @@ int interpolation_search(int arr[], int value, int len)
 }
 
 /** main function */
-int main()
-{
+int main() {
     int n, value, re;
 
     std::cout << "Enter the size of array(less than 100) : ";

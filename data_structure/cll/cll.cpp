@@ -5,25 +5,22 @@
 using namespace std;
 
 /* Constructor */
-cll::cll()
-{
+cll::cll() {
     head = NULL;
     total = 0;
 }
 
-cll::~cll() { /* Desstructure, no need to fill */ }
+cll::~cll() { /* Desstructure, no need to fill */
+}
 
 /* Display a list. and total element */
-void cll::display()
-{
+void cll::display() {
     if (head == NULL)
         cout << "List is empty !" << endl;
-    else
-    {
+    else {
         cout << "CLL list: ";
         node *current = head;
-        for (int i = 0; i < total; i++)
-        {
+        for (int i = 0; i < total; i++) {
             cout << current->data << " -> ";
             current = current->next;
         }
@@ -33,22 +30,17 @@ void cll::display()
 }
 
 /* List insert a new value at head in list */
-void cll::insert_front(int new_data)
-{
+void cll::insert_front(int new_data) {
     node *newNode;
     newNode = new node;
     newNode->data = new_data;
     newNode->next = NULL;
-    if (head == NULL)
-    {
+    if (head == NULL) {
         head = newNode;
         head->next = head;
-    }
-    else
-    {
+    } else {
         node *current = head;
-        while (current->next != head)
-        {
+        while (current->next != head) {
             current = current->next;
         }
         newNode->next = head;
@@ -59,22 +51,17 @@ void cll::insert_front(int new_data)
 }
 
 /* List insert a new value at head in list */
-void cll::insert_tail(int new_data)
-{
+void cll::insert_tail(int new_data) {
     node *newNode;
     newNode = new node;
     newNode->data = new_data;
     newNode->next = NULL;
-    if (head == NULL)
-    {
+    if (head == NULL) {
         head = newNode;
         head->next = head;
-    }
-    else
-    {
+    } else {
         node *current = head;
-        while (current->next != head)
-        {
+        while (current->next != head) {
             current = current->next;
         }
         current->next = newNode;
@@ -88,18 +75,13 @@ int cll::get_size() { return total; }
 
 /* Return true if the requested item (sent in as an argument)
 is in the list, otherwise return false */
-bool cll::find_item(int item_to_find)
-{
-    if (head == NULL)
-    {
+bool cll::find_item(int item_to_find) {
+    if (head == NULL) {
         cout << "List is empty !" << endl;
         return false;
-    }
-    else
-    {
+    } else {
         node *current = head;
-        while (current->next != head)
-        {
+        while (current->next != head) {
             if (current->data == item_to_find)
                 return true;
             current = current->next;
@@ -113,17 +95,12 @@ int cll::operator*() { return head->data; }
 
 /* Overload the pre-increment operator.
    The iterator is advanced to the next node. */
-void cll::operator++()
-{
-    if (head == NULL)
-    {
+void cll::operator++() {
+    if (head == NULL) {
         cout << "List is empty !" << endl;
-    }
-    else
-    {
+    } else {
         node *current = head;
-        while (current->next != head)
-        {
+        while (current->next != head) {
             current = current->next;
         }
         current->next = head->next;

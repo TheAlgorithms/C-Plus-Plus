@@ -25,32 +25,24 @@
 
 /// Recursive function to calculate exponent in \f$O(\log(n))\f$ using binary
 /// exponent.
-int binExpo(int a, int b)
-{
-    if (b == 0)
-    {
+int binExpo(int a, int b) {
+    if (b == 0) {
         return 1;
     }
     int res = binExpo(a, b / 2);
-    if (b % 2)
-    {
+    if (b % 2) {
         return res * res * a;
-    }
-    else
-    {
+    } else {
         return res * res;
     }
 }
 
 /// Iterative function to calculate exponent in \f$O(\log(n))\f$ using binary
 /// exponent.
-int binExpo_alt(int a, int b)
-{
+int binExpo_alt(int a, int b) {
     int res = 1;
-    while (b > 0)
-    {
-        if (b % 2)
-        {
+    while (b > 0) {
+        if (b % 2) {
             res = res * a;
         }
         a = a * a;
@@ -60,21 +52,15 @@ int binExpo_alt(int a, int b)
 }
 
 /// Main function
-int main()
-{
+int main() {
     int a, b;
     /// Give two numbers a, b
     std::cin >> a >> b;
-    if (a == 0 && b == 0)
-    {
+    if (a == 0 && b == 0) {
         std::cout << "Math error" << std::endl;
-    }
-    else if (b < 0)
-    {
+    } else if (b < 0) {
         std::cout << "Exponent must be positive !!" << std::endl;
-    }
-    else
-    {
+    } else {
         int resRecurse = binExpo(a, b);
         /// int resIterate = binExpo_alt(a, b);
 

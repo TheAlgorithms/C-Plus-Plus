@@ -1,31 +1,25 @@
 #include <iostream>
 using namespace std;
 
-struct node
-{
+struct node {
     int val;
     node *next;
 };
 
 node *start;
 
-void insert(int x)
-{
+void insert(int x) {
     node *t = start;
 
-    if (start != NULL)
-    {
-        while (t->next != start)
-        {
+    if (start != NULL) {
+        while (t->next != start) {
             t = t->next;
         }
         node *n = new node;
         t->next = n;
         n->val = x;
         n->next = start;
-    }
-    else
-    {
+    } else {
         node *n = new node;
         n->val = x;
         start = n;
@@ -33,12 +27,10 @@ void insert(int x)
     }
 }
 
-void remove(int x)
-{
+void remove(int x) {
     node *t = start;
     node *p;
-    while (t->val != x)
-    {
+    while (t->val != x) {
         p = t;
         t = t->next;
     }
@@ -46,49 +38,40 @@ void remove(int x)
     delete t;
 }
 
-void search(int x)
-{
+void search(int x) {
     node *t = start;
     int found = 0;
-    while (t->next != start)
-    {
-        if (t->val == x)
-        {
+    while (t->next != start) {
+        if (t->val == x) {
             cout << "\nFound";
             found = 1;
             break;
         }
         t = t->next;
     }
-    if (found == 0)
-    {
+    if (found == 0) {
         cout << "\nNot Found";
     }
 }
 
-void show()
-{
+void show() {
     node *t = start;
-    do
-    {
+    do {
         cout << t->val << "\t";
         t = t->next;
     } while (t != start);
 }
 
-int main()
-{
+int main() {
     int choice, x;
-    do
-    {
+    do {
         cout << "\n1. Insert";
         cout << "\n2. Delete";
         cout << "\n3. Search";
         cout << "\n4. Print";
         cout << "\n\nEnter you choice : ";
         cin >> choice;
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
             cout << "\nEnter the element to be inserted : ";
             cin >> x;

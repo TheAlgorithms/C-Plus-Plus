@@ -11,16 +11,12 @@ int graph[V][V] = {{0, 4, 1, 4, INFINITY, INFINITY},
                    {INFINITY, 3, 1, 5, 0, INFINITY},
                    {INFINITY, INFINITY, INFINITY, 7, INFINITY, 0}};
 
-void findMinimumEdge()
-{
-    for (int i = 0; i < V; i++)
-    {
+void findMinimumEdge() {
+    for (int i = 0; i < V; i++) {
         int min = INFINITY;
         int minIndex = 0;
-        for (int j = 0; j < V; j++)
-        {
-            if (graph[i][j] != 0 && graph[i][j] < min)
-            {
+        for (int j = 0; j < V; j++) {
+            if (graph[i][j] != 0 && graph[i][j] < min) {
                 min = graph[i][j];
                 minIndex = j;
             }
@@ -29,8 +25,7 @@ void findMinimumEdge()
     }
 }
 
-int main()
-{
+int main() {
     findMinimumEdge();
     return 0;
 }

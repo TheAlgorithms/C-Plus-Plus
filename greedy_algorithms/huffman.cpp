@@ -4,8 +4,7 @@
 using namespace std;
 
 // A Huffman tree node
-struct MinHeapNode
-{
+struct MinHeapNode {
     // One of the input characters
     char data;
 
@@ -26,8 +25,7 @@ struct MinHeapNode
 
 // For comparison of
 // two heap nodes (needed in min heap)
-struct compare
-{
+struct compare {
     bool operator()(MinHeapNode* l, MinHeapNode* r)
 
     {
@@ -37,8 +35,7 @@ struct compare
 
 // Prints huffman codes from
 // the root of Huffman Tree.
-void printCodes(struct MinHeapNode* root, string str)
-{
+void printCodes(struct MinHeapNode* root, string str) {
     if (!root)
         return;
 
@@ -51,8 +48,7 @@ void printCodes(struct MinHeapNode* root, string str)
 
 // The main function that builds a Huffman Tree and
 // print codes by traversing the built Huffman Tree
-void HuffmanCodes(char data[], int freq[], int size)
-{
+void HuffmanCodes(char data[], int freq[], int size) {
     struct MinHeapNode *left, *right, *top;
 
     // Create a min heap & inserts all characters of data[]
@@ -62,8 +58,7 @@ void HuffmanCodes(char data[], int freq[], int size)
         minHeap.push(new MinHeapNode(data[i], freq[i]));
 
     // Iterate while size of heap doesn't become 1
-    while (minHeap.size() != 1)
-    {
+    while (minHeap.size() != 1) {
         // Extract the two minimum
         // freq items from min heap
         left = minHeap.top();
@@ -93,8 +88,7 @@ void HuffmanCodes(char data[], int freq[], int size)
 }
 
 // Driver program to test above functions
-int main()
-{
+int main() {
     char arr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
     int freq[] = {5, 9, 12, 13, 16, 45};
 

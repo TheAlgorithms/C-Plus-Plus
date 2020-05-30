@@ -1,16 +1,13 @@
 #include <iostream>
 using namespace std;
 
-struct list
-{
+struct list {
     int data[50];
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(int *array, int first, int last, int x)
-    {
-        if (last < first)
-        {
+    int BinarySearch(int *array, int first, int last, int x) {
+        if (last < first) {
             return -1;
         }
         int mid = (first + last) / 2;
@@ -22,12 +19,9 @@ struct list
             return (BinarySearch(array, mid + 1, last, x));
     }
 
-    int LinarSearch(int *array, int x)
-    {
-        for (int i = 0; i < top; i++)
-        {
-            if (array[i] == x)
-            {
+    int LinarSearch(int *array, int x) {
+        for (int i = 0; i < top; i++) {
+            if (array[i] == x) {
                 return i;
             }
         }
@@ -35,41 +29,31 @@ struct list
         return -1;
     }
 
-    int Search(int x)
-    {
+    int Search(int x) {
         int pos = -1;
 
-        if (isSorted)
-        {
+        if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, x);
         }
 
-        else
-        {
+        else {
             pos = LinarSearch(data, x);
         }
 
-        if (pos != -1)
-        {
+        if (pos != -1) {
             cout << "\nElement found at position : " << pos;
-        }
-        else
-        {
+        } else {
             cout << "\nElement not found";
         }
         return pos;
     }
 
-    void Sort()
-    {
+    void Sort() {
         int i, j, pos;
-        for (i = 0; i < top; i++)
-        {
+        for (i = 0; i < top; i++) {
             int min = data[i];
-            for (j = i + 1; j < top; j++)
-            {
-                if (data[j] < min)
-                {
+            for (j = i + 1; j < top; j++) {
+                if (data[j] < min) {
                     pos = j;
                     min = data[pos];
                 }
@@ -82,40 +66,30 @@ struct list
         isSorted = true;
     }
 
-    void insert(int x)
-    {
-        if (!isSorted)
-        {
-            if (top == 49)
-            {
+    void insert(int x) {
+        if (!isSorted) {
+            if (top == 49) {
                 cout << "\nOverflow";
-            }
-            else
-            {
+            } else {
                 data[top] = x;
                 top++;
             }
         }
 
-        else
-        {
+        else {
             int pos = 0;
 
-            for (int i = 0; i < top - 1; i++)
-            {
-                if (data[i] <= x && x <= data[i + 1])
-                {
+            for (int i = 0; i < top - 1; i++) {
+                if (data[i] <= x && x <= data[i + 1]) {
                     pos = i + 1;
                     break;
                 }
             }
-            if (pos == 0)
-            {
+            if (pos == 0) {
                 pos = top - 1;
             }
 
-            for (int i = top; i > pos; i--)
-            {
+            for (int i = top; i > pos; i--) {
                 data[i] = data[i - 1];
             }
             top++;
@@ -123,33 +97,27 @@ struct list
         }
     }
 
-    void Remove(int x)
-    {
+    void Remove(int x) {
         int pos = Search(x);
         cout << "\n" << data[pos] << " deleted";
-        for (int i = pos; i < top; i++)
-        {
+        for (int i = pos; i < top; i++) {
             data[i] = data[i + 1];
         }
         top--;
     }
 
-    void Show()
-    {
-        for (int i = 0; i < top; i++)
-        {
+    void Show() {
+        for (int i = 0; i < top; i++) {
             cout << data[i] << "\t";
         }
     }
 };
 
-int main()
-{
+int main() {
     list L;
     int choice;
     int x;
-    do
-    {
+    do {
         cout << "\n1.Insert";
         cout << "\n2.Delete";
         cout << "\n3.Search";
@@ -157,8 +125,7 @@ int main()
         cout << "\n5.Print";
         cout << "\n\nEnter Your Choice : ";
         cin >> choice;
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
             cout << "\nEnter the element to be inserted : ";
             cin >> x;

@@ -26,8 +26,7 @@ int data[MAX] = {1, 10, 15, 5, 8, 7};  //!< test data
 /**
  * a one-way linked list
  */
-typedef struct list
-{
+typedef struct list {
     int key;            //!< key value for node
     struct list* next;  //!< pointer to next link in the chain
 } node,                 /**< define node as one item list */
@@ -53,8 +52,7 @@ int h(int key) { return key % HASHMAX; }
  * \warning dynamic memory allocated to `n` never gets freed.
  * \todo fix memory leak
  */
-void create_list(int key)
-{  // Construct hash table
+void create_list(int key) {  // Construct hash table
     link p, n;
     int index;
     n = (link)malloc(sizeof(node));
@@ -62,13 +60,10 @@ void create_list(int key)
     n->next = NULL;
     index = h(key);
     p = hashtab[index].next;
-    if (p != NULL)
-    {
+    if (p != NULL) {
         n->next = p;
         hashtab[index].next = n;
-    }
-    else
-    {
+    } else {
         hashtab[index].next = n;
     }
 }
@@ -78,8 +73,7 @@ void create_list(int key)
  * (int key) function, then one-dimensional linear search. If found @return
  * element depth and number of searches If not found @return -1
  */
-int hash_search(int key, int* counter)
-{  // Hash lookup function
+int hash_search(int key, int* counter) {  // Hash lookup function
     link pointer;
     int index;
 
@@ -89,8 +83,7 @@ int hash_search(int key, int* counter)
 
     std::cout << "data[" << index << "]:";
 
-    while (pointer != NULL)
-    {
+    while (pointer != NULL) {
         counter[0]++;
         std::cout << "data[" << pointer->key << "]:";
         if (pointer->key == key)
@@ -103,27 +96,23 @@ int hash_search(int key, int* counter)
 }
 
 /** main function */
-int main()
-{
+int main() {
     link p;
     int key, index, i, counter;  // Key is the value to be found
     index = 0;
 
     // You can write the input mode here
-    while (index < MAX)
-    {  // Construct hash table
+    while (index < MAX) {  // Construct hash table
         create_list(data[index]);
         index++;
     }
 
-    for (i = 0; i < HASHMAX; i++)
-    {  // Output hash table
+    for (i = 0; i < HASHMAX; i++) {  // Output hash table
         std::cout << "hashtab [" << i << "]\n";
 
         p = hashtab[i].next;
 
-        while (p != NULL)
-        {
+        while (p != NULL) {
             std::cout << "please int key:";
             if (p->key > 0)
                 std::cout << "[" << p->key << "]";
@@ -132,8 +121,7 @@ int main()
         std::cout << std::endl;
     }
 
-    while (key != -1)
-    {
+    while (key != -1) {
         // You can write the input mode here
         // test key = 10
         key = 10;

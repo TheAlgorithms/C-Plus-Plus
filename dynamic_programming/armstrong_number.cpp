@@ -4,14 +4,12 @@
 using std::cin;
 using std::cout;
 
-int main()
-{
+int main() {
     int n, k, d, s = 0;
     cout << "Enter a number:";
     cin >> n;
     k = n;
-    while (k != 0)
-    {
+    while (k != 0) {
         d = k % 10;
         s += d * d * d;
         k /= 10;

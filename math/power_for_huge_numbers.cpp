@@ -22,15 +22,13 @@
  * @param res large number representation using array
  * @param res_size number of digits in `res`
  */
-int multiply(int x, int res[], int res_size)
-{
+int multiply(int x, int res[], int res_size) {
     // Initialize carry
     int carry = 0;
 
     // One by one multiply n with
     // individual digits of res[]
-    for (int i = 0; i < res_size; i++)
-    {
+    for (int i = 0; i < res_size; i++) {
         int prod = res[i] * x + carry;
 
         // Store last digit of
@@ -43,8 +41,7 @@ int multiply(int x, int res[], int res_size)
 
     // Put carry in res and
     // increase result size
-    while (carry)
-    {
+    while (carry) {
         res[res_size] = carry % 10;
         carry = carry / 10;
         res_size++;
@@ -56,11 +53,9 @@ int multiply(int x, int res[], int res_size)
  * @param x base
  * @param n exponent
  */
-void power(int x, int n)
-{
+void power(int x, int n) {
     // printing value "1" for power = 0
-    if (n == 0)
-    {
+    if (n == 0) {
         std::cout << "1";
         return;
     }
@@ -70,8 +65,7 @@ void power(int x, int n)
     int temp = x;
 
     // Initialize result
-    while (temp != 0)
-    {
+    while (temp != 0) {
         res[res_size++] = temp % 10;
         temp = temp / 10;
     }
@@ -85,8 +79,7 @@ void power(int x, int n)
 }
 
 /** Main function */
-int main()
-{
+int main() {
     int exponent, base;
     std::cout << "Enter base ";
     std::cin >> base;

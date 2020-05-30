@@ -7,8 +7,7 @@
 #include <utility>
 
 template <class T>
-void show_data(T *arr, size_t LEN)
-{
+void show_data(T *arr, size_t LEN) {
     size_t i;
 
     for (i = 0; i < LEN; i++) std::cout << arr[i] << ", ";
@@ -16,8 +15,7 @@ void show_data(T *arr, size_t LEN)
 }
 
 template <class T, size_t N>
-void show_data(T (&arr)[N])
-{
+void show_data(T (&arr)[N]) {
     show_data(arr, N);
 }
 
@@ -26,17 +24,14 @@ void show_data(T (&arr)[N])
  * Mar
  **/
 template <class T>
-void shell_sort(T *arr, size_t LEN)
-{
+void shell_sort(T *arr, size_t LEN) {
     const unsigned int gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};
     const unsigned int gap_len = 8;
     size_t i, j, g;
 
-    for (g = 0; g < gap_len; g++)
-    {
+    for (g = 0; g < gap_len; g++) {
         unsigned int gap = gaps[g];
-        for (i = gap; i < LEN; i++)
-        {
+        for (i = gap; i < LEN; i++) {
             T tmp = arr[i];
 
             for (j = i; j >= gap && (arr[j - gap] - tmp) > 0; j -= gap)
@@ -48,16 +43,14 @@ void shell_sort(T *arr, size_t LEN)
 }
 
 template <class T, size_t N>
-void shell_sort(T (&arr)[N])
-{
+void shell_sort(T (&arr)[N]) {
     shell_sort(arr, N);
 }
 
 /**
  * function to compare sorting using cstdlib's qsort
  **/
-int compare(const void *a, const void *b)
-{
+int compare(const void *a, const void *b) {
     int arg1 = *static_cast<const int *>(a);
     int arg2 = *static_cast<const int *>(b);
 
@@ -71,8 +64,7 @@ int compare(const void *a, const void *b)
     //  return arg1 - arg2; // erroneous shortcut (fails if INT_MIN is present)
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     int i, NUM_DATA;
 
     if (argc == 2)

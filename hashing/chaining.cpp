@@ -2,51 +2,39 @@
 #include <iostream>
 using namespace std;
 
-struct Node
-{
+struct Node {
     int data;
     struct Node *next;
 } * head[100], *curr;
 
-void init()
-{
+void init() {
     for (int i = 0; i < 100; i++) head[i] = NULL;
 }
 
-void add(int x, int h)
-{
+void add(int x, int h) {
     struct Node *temp = new Node;
     temp->data = x;
     temp->next = NULL;
-    if (!head[h])
-    {
+    if (!head[h]) {
         head[h] = temp;
         curr = head[h];
-    }
-    else
-    {
+    } else {
         curr = head[h];
         while (curr->next) curr = curr->next;
         curr->next = temp;
     }
 }
 
-void display(int mod)
-{
+void display(int mod) {
     struct Node *temp;
     int i;
-    for (i = 0; i < mod; i++)
-    {
-        if (!head[i])
-        {
+    for (i = 0; i < mod; i++) {
+        if (!head[i]) {
             cout << "Key " << i << " is empty" << endl;
-        }
-        else
-        {
+        } else {
             cout << "Key " << i << " has values = ";
             temp = head[i];
-            while (temp->next)
-            {
+            while (temp->next) {
                 cout << temp->data << " ";
                 temp = temp->next;
             }
@@ -58,19 +46,16 @@ void display(int mod)
 
 int hash(int x, int mod) { return x % mod; }
 
-void find(int x, int h)
-{
+void find(int x, int h) {
     struct Node *temp = head[h];
-    if (!head[h])
-    {
+    if (!head[h]) {
         cout << "Element not found";
         return;
     }
     while (temp->data != x && temp->next) temp = temp->next;
     if (temp->next)
         cout << "Element found";
-    else
-    {
+    else {
         if (temp->data == x)
             cout << "Element found";
         else
@@ -78,15 +63,13 @@ void find(int x, int h)
     }
 }
 
-int main(void)
-{
+int main(void) {
     init();
     int c, x, mod, h;
     cout << "Enter the size of Hash Table. = ";
     cin >> mod;
     bool loop = true;
-    while (loop)
-    {
+    while (loop) {
         cout << endl;
         cout << "PLEASE CHOOSE -" << endl;
         cout << "1. Add element." << endl;
@@ -95,8 +78,7 @@ int main(void)
         cout << "4. Display Hash table." << endl;
         cout << "5. Exit." << endl;
         cin >> c;
-        switch (c)
-        {
+        switch (c) {
         case 1:
             cout << "Enter element to add = ";
             cin >> x;

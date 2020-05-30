@@ -12,12 +12,10 @@
  * \returns index if T is found
  * \return -1 if T is not found
  */
-int binary_search(int a[], int r, int key)
-{
+int binary_search(int a[], int r, int key) {
     int l = 0;
 
-    while (l <= r)
-    {
+    while (l <= r) {
         int m = l + (r - l) / 2;
         if (key == a[m])
             return m;
@@ -30,8 +28,7 @@ int binary_search(int a[], int r, int key)
 }
 
 /** main function */
-int main(int argc, char const* argv[])
-{
+int main(int argc, char const* argv[]) {
     int n, key;
     std::cout << "Enter size of array: ";
     std::cin >> n;
@@ -40,8 +37,7 @@ int main(int argc, char const* argv[])
     int* a = new int[n];
 
     // this loop use for store value in Array
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         std::cin >> a[i];
     }
 

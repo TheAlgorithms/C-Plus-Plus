@@ -3,8 +3,7 @@
 
 using namespace std;
 
-typedef struct node
-{
+typedef struct node {
     int data;
     int height;
     struct node *left;
@@ -15,8 +14,7 @@ int max(int a, int b) { return a > b ? a : b; }
 
 // Returns a new Node
 
-node *createNode(int data)
-{
+node *createNode(int data) {
     node *nn = new node();
     nn->data = data;
     nn->height = 0;
@@ -27,8 +25,7 @@ node *createNode(int data)
 
 // Returns height of tree
 
-int height(node *root)
-{
+int height(node *root) {
     if (root == NULL)
         return 0;
     return 1 + max(height(root->left), height(root->right));
@@ -40,8 +37,7 @@ int getBalance(node *root) { return height(root->left) - height(root->right); }
 
 // Returns Node after Right Rotation
 
-node *rightRotate(node *root)
-{
+node *rightRotate(node *root) {
     node *t = root->left;
     node *u = t->right;
     t->right = root;
@@ -51,8 +47,7 @@ node *rightRotate(node *root)
 
 // Returns Node after Left Rotation
 
-node *leftRotate(node *root)
-{
+node *leftRotate(node *root) {
     node *t = root->right;
     node *u = t->left;
     t->left = root;
@@ -62,8 +57,7 @@ node *leftRotate(node *root)
 
 // Returns node with minimum value in the tree
 
-node *minValue(node *root)
-{
+node *minValue(node *root) {
     if (root->left == NULL)
         return root;
     return minValue(root->left);
@@ -71,8 +65,7 @@ node *minValue(node *root)
 
 // Balanced Insertion
 
-node *insert(node *root, int item)
-{
+node *insert(node *root, int item) {
     node *nn = createNode(item);
     if (root == NULL)
         return nn;
@@ -81,14 +74,11 @@ node *insert(node *root, int item)
     else
         root->right = insert(root->right, item);
     int b = getBalance(root);
-    if (b > 1)
-    {
+    if (b > 1) {
         if (getBalance(root->left) < 0)
             root->left = leftRotate(root->left);  // Left-Right Case
         return rightRotate(root);                 // Left-Left Case
-    }
-    else if (b < -1)
-    {
+    } else if (b < -1) {
         if (getBalance(root->right) > 0)
             root->right = rightRotate(root->right);  // Right-Left Case
         return leftRotate(root);                     // Right-Right Case
@@ -98,8 +88,7 @@ node *insert(node *root, int item)
 
 // Balanced Deletion
 
-node *deleteNode(node *root, int key)
-{
+node *deleteNode(node *root, int key) {
     if (root == NULL)
         return root;
     if (key < root->data)
@@ -107,18 +96,14 @@ node *deleteNode(node *root, int key)
     else if (key > root->data)
         root->right = deleteNode(root->right, key);
 
-    else
-    {
+    else {
         // Node to be deleted is leaf node or have only one Child
-        if (!root->right)
-        {
+        if (!root->right) {
             node *temp = root->left;
             delete (root);
             root = NULL;
             return temp;
-        }
-        else if (!root->left)
-        {
+        } else if (!root->left) {
             node *temp = root->right;
             delete (root);
             root = NULL;
@@ -135,12 +120,10 @@ node *deleteNode(node *root, int key)
 
 // LevelOrder (Breadth First Search)
 
-void levelOrder(node *root)
-{
+void levelOrder(node *root) {
     queue<node *> q;
     q.push(root);
-    while (!q.empty())
-    {
+    while (!q.empty()) {
         root = q.front();
         cout << root->data << " ";
         q.pop();
@@ -151,8 +134,7 @@ void levelOrder(node *root)
     }
 }
 
-int main()
-{
+int main() {
     // Testing AVL Tree
     node *root = NULL;
     int i;

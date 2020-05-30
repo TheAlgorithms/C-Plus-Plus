@@ -1,18 +1,15 @@
 #include <iostream>
 using namespace std;
 
-struct node
-{
+struct node {
     int val;
     node *next;
 };
 
 node *front, *rear;
 
-void Enque(int x)
-{
-    if (rear == NULL)
-    {
+void Enque(int x) {
+    if (rear == NULL) {
         node *n = new node;
         n->val = x;
         n->next = NULL;
@@ -20,8 +17,7 @@ void Enque(int x)
         front = n;
     }
 
-    else
-    {
+    else {
         node *n = new node;
         n->val = x;
         n->next = NULL;
@@ -30,14 +26,10 @@ void Enque(int x)
     }
 }
 
-void Deque()
-{
-    if (rear == NULL && front == NULL)
-    {
+void Deque() {
+    if (rear == NULL && front == NULL) {
         cout << "\nUnderflow";
-    }
-    else
-    {
+    } else {
         node *t = front;
         cout << "\n" << t->val << " deleted";
         front = front->next;
@@ -47,38 +39,29 @@ void Deque()
     }
 }
 
-void show()
-{
+void show() {
     node *t = front;
-    while (t != NULL)
-    {
+    while (t != NULL) {
         cout << t->val << "\t";
         t = t->next;
     }
 }
 
-int main()
-{
+int main() {
     int ch, x;
-    do
-    {
+    do {
         cout << "\n1. Enque";
         cout << "\n2. Deque";
         cout << "\n3. Print";
         cout << "\nEnter Your Choice : ";
         cin >> ch;
-        if (ch == 1)
-        {
+        if (ch == 1) {
             cout << "\nInsert : ";
             cin >> x;
             Enque(x);
-        }
-        else if (ch == 2)
-        {
+        } else if (ch == 2) {
             Deque();
-        }
-        else if (ch == 3)
-        {
+        } else if (ch == 3) {
             show();
         }
     } while (ch != 0);

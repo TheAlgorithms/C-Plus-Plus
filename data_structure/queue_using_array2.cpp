@@ -5,30 +5,22 @@ int queue[10];
 int front = 0;
 int rear = 0;
 
-void Enque(int x)
-{
-    if (rear == 10)
-    {
+void Enque(int x) {
+    if (rear == 10) {
         cout << "\nOverflow";
-    }
-    else
-    {
+    } else {
         queue[rear++] = x;
     }
 }
 
-void Deque()
-{
-    if (front == rear)
-    {
+void Deque() {
+    if (front == rear) {
         cout << "\nUnderflow";
     }
 
-    else
-    {
+    else {
         cout << "\n" << queue[front++] << " deleted";
-        for (int i = front; i < rear; i++)
-        {
+        for (int i = front; i < rear; i++) {
             queue[i - front] = queue[i];
         }
         rear = rear - front;
@@ -36,36 +28,27 @@ void Deque()
     }
 }
 
-void show()
-{
-    for (int i = front; i < rear; i++)
-    {
+void show() {
+    for (int i = front; i < rear; i++) {
         cout << queue[i] << "\t";
     }
 }
 
-int main()
-{
+int main() {
     int ch, x;
-    do
-    {
+    do {
         cout << "\n1. Enque";
         cout << "\n2. Deque";
         cout << "\n3. Print";
         cout << "\nEnter Your Choice : ";
         cin >> ch;
-        if (ch == 1)
-        {
+        if (ch == 1) {
             cout << "\nInsert : ";
             cin >> x;
             Enque(x);
-        }
-        else if (ch == 2)
-        {
+        } else if (ch == 2) {
             Deque();
-        }
-        else if (ch == 3)
-        {
+        } else if (ch == 3) {
             show();
         }
     } while (ch != 0);

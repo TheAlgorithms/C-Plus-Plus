@@ -13,12 +13,9 @@
  * \returns index where the key-value occurs in the array
  * \returns -1 if key-value not found
  */
-int LinearSearch(int *array, int size, int key)
-{
-    for (int i = 0; i < size; ++i)
-    {
-        if (array[i] == key)
-        {
+int LinearSearch(int *array, int size, int key) {
+    for (int i = 0; i < size; ++i) {
+        if (array[i] == key) {
             return i;
         }
     }
@@ -27,8 +24,7 @@ int LinearSearch(int *array, int size, int key)
 }
 
 /** main function */
-int main()
-{
+int main() {
     int size;
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
@@ -38,8 +34,7 @@ int main()
 
     // Input array
     std::cout << "\nEnter the Array of " << size << " numbers : ";
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++) {
         std::cin >> array[i];
     }
 
@@ -47,12 +42,9 @@ int main()
     std::cin >> key;
 
     int index = LinearSearch(array, size, key);
-    if (index != -1)
-    {
+    if (index != -1) {
         std::cout << "\nNumber found at index : " << index;
-    }
-    else
-    {
+    } else {
         std::cout << "\nNot found";
     }
 

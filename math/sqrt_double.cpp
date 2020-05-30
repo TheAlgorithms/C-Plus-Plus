@@ -13,10 +13,8 @@
 /** Bisection method implemented for the function \f$x^2-a=0\f$
  * whose roots are \f$\pm\sqrt{a}\f$ and only the positive root is returned.
  */
-double Sqrt(double a)
-{
-    if (a > 0 && a < 1)
-    {
+double Sqrt(double a) {
+    if (a > 0 && a < 1) {
         return 1 / Sqrt(1 / a);
     }
     double l = 0, r = a;
@@ -26,17 +24,12 @@ double Sqrt(double a)
     double epsilon = 1e-12;
     */
     double epsilon = 1e-12;
-    while (l <= r)
-    {
+    while (l <= r) {
         double mid = (l + r) / 2;
-        if (mid * mid > a)
-        {
+        if (mid * mid > a) {
             r = mid;
-        }
-        else
-        {
-            if (a - mid * mid < epsilon)
-            {
+        } else {
+            if (a - mid * mid < epsilon) {
                 return mid;
             }
             l = mid;
@@ -46,8 +39,7 @@ double Sqrt(double a)
 }
 
 /** main function */
-int main()
-{
+int main() {
     double n{};
     std::cin >> n;
     assert(n >= 0);

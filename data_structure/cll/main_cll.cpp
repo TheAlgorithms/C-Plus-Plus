@@ -1,8 +1,7 @@
 #include "cll.h"
 using namespace std;
 
-int main()
-{
+int main() {
     /* Test CLL */
     cout << "----------- Test construct -----------" << endl;
     cll list1;

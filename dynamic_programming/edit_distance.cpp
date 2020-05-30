@@ -22,8 +22,7 @@ int min(int x, int y, int z) { return min(min(x, y), z); }
  * str1 to str2.
  * O(3^m)
  */
-int editDist(string str1, string str2, int m, int n)
-{
+int editDist(string str1, string str2, int m, int n) {
     if (m == 0)
         return n;
     if (n == 0)
@@ -45,16 +44,13 @@ int editDist(string str1, string str2, int m, int n)
 /* A DP based program
  * O(m x n)
  */
-int editDistDP(string str1, string str2, int m, int n)
-{
+int editDistDP(string str1, string str2, int m, int n) {
     // Create Table for SubProblems
     int dp[m + 1][n + 1];
 
     // Fill d[][] in bottom up manner
-    for (int i = 0; i <= m; i++)
-    {
-        for (int j = 0; j <= n; j++)
-        {
+    for (int i = 0; i <= m; i++) {
+        for (int j = 0; j <= n; j++) {
             // If str1 empty. Then add all of str2
             if (i == 0)
                 dp[i][j] = j;
@@ -78,8 +74,7 @@ int editDistDP(string str1, string str2, int m, int n)
     return dp[m][n];
 }
 
-int main()
-{
+int main() {
     string str1 = "sunday";
     string str2 = "saturday";
 

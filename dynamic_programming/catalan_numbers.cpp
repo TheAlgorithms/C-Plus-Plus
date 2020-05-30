@@ -11,8 +11,7 @@ using namespace std;
 
 int *cat;  // global array to hold catalan numbers
 
-unsigned long int catalan_dp(int n)
-{
+unsigned long int catalan_dp(int n) {
     /** Using the tabulation technique in dynamic programming,
         this function computes the first `n+1` Catalan numbers
 
@@ -29,8 +28,7 @@ unsigned long int catalan_dp(int n)
     cat[0] = cat[1] = 1;
 
     // Compute the remaining numbers from index 2 to index n, using tabulation
-    for (int i = 2; i <= n; i++)
-    {
+    for (int i = 2; i <= n; i++) {
         cat[i] = 0;
         for (int j = 0; j < i; j++)
             cat[i] += cat[j] * cat[i - j - 1];  // applying the definition here
@@ -40,8 +38,7 @@ unsigned long int catalan_dp(int n)
     return cat[n];
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     int n;
     cout << "Enter n: ";
     cin >> n;
@@ -49,8 +46,7 @@ int main(int argc, char *argv[])
     cat = new int[n + 1];
 
     cout << "Catalan numbers from 0 to " << n << " are:\n";
-    for (int i = 0; i <= n; i++)
-    {
+    for (int i = 0; i <= n; i++) {
         cout << "catalan (" << i << ") = " << catalan_dp(i) << endl;
         // NOTE: Since `cat` is a global array, calling `catalan_dp`
         // repeatedly will not recompute the the values already computed
