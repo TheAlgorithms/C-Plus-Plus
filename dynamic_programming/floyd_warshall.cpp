@@ -1,44 +1,44 @@
-#include <limits.h>
-#include <string.h>
+#include <climits>
 #include <iostream>
+#include <string>
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 // Wrapper class for storing a graph
-class Graph
-{
+class Graph {
  public:
     int vertexNum;
     int **edges;
 
     // Constructs a graph with V vertices and E edges
-    Graph(int V)
-    {
+    Graph(int V) {
         this->vertexNum = V;
-        this->edges = (int **)malloc(V * sizeof(int *));
-        for (int i = 0; i < V; i++)
-        {
-            this->edges[i] = (int *)malloc(V * sizeof(int));
+        this->edges = new int *[V];
+        for (int i = 0; i < V; i++) {
+            this->edges[i] = new int[V];
             for (int j = 0; j < V; j++) this->edges[i][j] = INT_MAX;
             this->edges[i][i] = 0;
         }
     }
 
+    ~Graph() {
+        for (int i = 0; i < vertexNum; i++) delete[] edges[i];
+        delete[] edges;
+    }
+
     // Adds the given edge to the graph
-    void addEdge(int src, int dst, int weight)
-    {
+    void addEdge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
     }
 };
 
 // Utility function to print distances
-void print(int dist[], int V)
-{
+void print(int dist[], int V) {
     cout << "\nThe Distance matrix for Floyd - Warshall" << endl;
-    for (int i = 0; i < V; i++)
-    {
-        for (int j = 0; j < V; j++)
-        {
+    for (int i = 0; i < V; i++) {
+        for (int j = 0; j < V; j++) {
             if (dist[i * V + j] != INT_MAX)
                 cout << dist[i * V + j] << "\t";
             else
@@ -51,8 +51,7 @@ void print(int dist[], int V)
 
 // The main function that finds the shortest path from a vertex
 // to all other vertices using Floyd-Warshall Algorithm.
-void FloydWarshall(Graph graph)
-{
+void FloydWarshall(Graph graph) {
     int V = graph.vertexNum;
     int dist[V][V];
 
@@ -85,8 +84,7 @@ void FloydWarshall(Graph graph)
 }
 
 // Driver Function
-int main()
-{
+int main() {
     int V, E;
     int src, dst, weight;
     cout << "Enter number of vertices: ";
@@ -94,8 +92,7 @@ int main()
     cout << "Enter number of edges: ";
     cin >> E;
     Graph G(V);
-    for (int i = 0; i < E; i++)
-    {
+    for (int i = 0; i < E; i++) {
         cout << "\nEdge " << i + 1 << "\nEnter source: ";
         cin >> src;
         cout << "Enter destination: ";
