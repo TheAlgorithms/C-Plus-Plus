@@ -22,7 +22,8 @@ bool NumericSort(std::string a, std::string b) {
     }
     int n = a.length();
     int m = b.length();
-    if (n == m) return a < b;
+    if (n == m)
+        return a < b;
     return n < m;
 }
 

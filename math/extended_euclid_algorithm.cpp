@@ -39,7 +39,8 @@ inline void update_step(T *r, T *r0, const T2 quotient) {
  */
 template <typename T1, typename T2>
 void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
-    if (B > A) std::swap(A, B);  // Ensure that A >= B
+    if (B > A)
+        std::swap(A, B);  // Ensure that A >= B
 
     T2 s = 0, s0 = 1;
     T2 t = 1, t0 = 0;
@@ -67,7 +68,8 @@ void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
  */
 template <typename T, typename T2>
 void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
-    if (B > A) std::swap(A, B);  // Ensure that A >= B
+    if (B > A)
+        std::swap(A, B);  // Ensure that A >= B
 
     if (B == 0) {
         *GCD = A;

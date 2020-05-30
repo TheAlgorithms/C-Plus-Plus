@@ -35,14 +35,14 @@ char pop() { return stack[top--]; }
  */
 char opening(char ch) {
     switch (ch) {
-        case '}':
-            return '{';
-        case ']':
-            return '[';
-        case ')':
-            return '(';
-        case '>':
-            return '<';
+    case '}':
+        return '{';
+    case ']':
+        return '[';
+    case ')':
+        return '(';
+    case '>':
+        return '<';
     }
     return '\0';
 }

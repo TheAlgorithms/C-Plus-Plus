@@ -11,7 +11,8 @@
 #include <iostream>
 
 void SlowSort(int a[], int i, int j) {
-    if (i >= j) return;
+    if (i >= j)
+        return;
     int m = i + (j - i) / 2;  // midpoint, implemented this way to avoid
                               // overflow
     int temp;

@@ -31,7 +31,8 @@ void SieveOfEratosthenes(int N) {
     }
 
     for (int i = 2; i <= N; i++) {
-        if (isprime[i]) prime_numbers.push_back(i);
+        if (isprime[i])
+            prime_numbers.push_back(i);
     }
 }
 
@@ -52,7 +53,8 @@ void prime_factorization(int num) {
             number = number / prime_numbers[i];
         }
 
-        if (count) factors.push_back(std::make_pair(prime_numbers[i], count));
+        if (count)
+            factors.push_back(std::make_pair(prime_numbers[i], count));
     }
 }
 

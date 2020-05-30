@@ -31,7 +31,8 @@ void fastinput(int *number) {
 
     // if scanned input has a negative sign, negate the
     // value of the input number
-    if (negative) *(number) *= -1;
+    if (negative)
+        *(number) *= -1;
 }
 
 /** Main function */

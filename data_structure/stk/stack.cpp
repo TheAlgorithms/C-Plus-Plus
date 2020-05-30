@@ -1,55 +1,48 @@
-#include <iostream>
-#include <assert.h>
 #include "stack.h"
+#include <assert.h>
+#include <iostream>
 
 using namespace std;
 
 /* Default constructor*/
 template <class Type>
-stack<Type>::stack()
-{
+stack<Type>::stack() {
     stackTop = NULL;
     size = 0;
 }
 
 /* Destructor */
 template <class Type>
-stack<Type>::~stack()
-{
-}
+stack<Type>::~stack() {}
 
 /* Display for testing */
 template <class Type>
-void stack<Type>::display()
-{
+void stack<Type>::display() {
     node<Type> *current = stackTop;
     cout << "Top --> ";
-    while(current != NULL) {
-        cout<<current->data<< "  ";
-        current = current -> next;
+    while (current != NULL) {
+        cout << current->data << "  ";
+        current = current->next;
     }
-    cout <<endl;
+    cout << endl;
     cout << "Size of stack: " << size << endl;
 }
 
 /* Determine whether the stack is empty */
 template <class Type>
-bool stack<Type>::isEmptyStack()
-{
+bool stack<Type>::isEmptyStack() {
     return (stackTop == NULL);
 }
 
 /* Clear stack */
 template <class Type>
-void stack<Type>::clear()
-{
+void stack<Type>::clear() {
     stackTop = NULL;
 }
 
 /* Add new item to the stack */
 template <class Type>
-void stack<Type>::push(Type item)
-{
+void stack<Type>::push(Type item) {
     node<Type> *newNode;
     newNode = new node<Type>;
     newNode->data = item;
@@ -60,18 +53,16 @@ void stack<Type>::push(Type item)
 
 /* Return the top element of the stack */
 template <class Type>
-Type stack<Type>::top()
-{
+Type stack<Type>::top() {
     assert(stackTop != NULL);
     return stackTop->data;
 }
 
 /* Remove the top element of the stack */
 template <class Type>
-void stack<Type>::pop()
-{
+void stack<Type>::pop() {
     node<Type> *temp;
-    if(!isEmptyStack()) {
+    if (!isEmptyStack()) {
         temp = stackTop;
         stackTop = stackTop->next;
         delete temp;
@@ -83,8 +74,7 @@ void stack<Type>::pop()
 
 /* Operator "=" */
 template <class Type>
-stack<Type> stack<Type>::operator=(stack<Type> & otherStack)
-{
+stack<Type> stack<Type>::operator=(stack<Type> &otherStack) {
     node<Type> *newNode, *current, *last;
 
     if (stackTop != NULL) /* If stack is no empty, make it empty */
@@ -97,10 +87,9 @@ stack<Type> stack<Type>::operator=(stack<Type> & otherStack)
         stackTop->data = current->data;
         stackTop->next = NULL;
         last = stackTop;
-        current = current ->next;
+        current = current->next;
         /* Copy the remaining stack */
-        while (current != NULL)
-        {
+        while (current != NULL) {
             newNode = new node<Type>;
             newNode->data = current->data;
             newNode->next = NULL;

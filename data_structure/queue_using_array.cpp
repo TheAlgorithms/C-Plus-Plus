@@ -58,8 +58,7 @@ void Queue_Array::display() {
     if (front == -1) {
         std::cout << "\nStack is empty";
     } else {
-        for (int i = front; i <= rear; i++)
-            std::cout << arr[i] << " ";
+        for (int i = front; i <= rear; i++) std::cout << arr[i] << " ";
     }
 }
 

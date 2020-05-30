@@ -39,7 +39,8 @@ uint64_t phiFunction(uint64_t n) {
             result -= result / i;
         }
     }
-    if (n > 1) result -= result / n;
+    if (n > 1)
+        result -= result / n;
     return result;
 }
 

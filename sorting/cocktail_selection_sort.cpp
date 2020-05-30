@@ -41,7 +41,8 @@ void CocktailSelectionSort(std::vector<int> *vec, int low, int high) {
 // Recursive Version
 
 void CocktailSelectionSort_v2(std::vector<int> *vec, int low, int high) {
-    if (low >= high) return;
+    if (low >= high)
+        return;
 
     int minimum = (*vec)[low];
     int minimumindex = low;

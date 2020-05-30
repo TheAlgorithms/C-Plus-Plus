@@ -10,7 +10,8 @@
    or DESCENDING; if (a[i] > a[j]) agrees with the direction,
    then a[i] and a[j] are interchanged.*/
 void compAndSwap(int a[], int i, int j, int dir) {
-    if (dir == (a[i] > a[j])) std::swap(a[i], a[j]);
+    if (dir == (a[i] > a[j]))
+        std::swap(a[i], a[j]);
 }
 
 /*It recursively sorts a bitonic sequence in ascending order,

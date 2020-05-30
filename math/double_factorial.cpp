@@ -16,7 +16,8 @@
 uint64_t double_factorial_iterative(uint64_t n) {
     uint64_t res = 1;
     for (uint64_t i = n;; i -= 2) {
-        if (i == 0 || i == 1) return res;
+        if (i == 0 || i == 1)
+            return res;
         res *= i;
     }
     return res;
@@ -26,7 +27,8 @@ uint64_t double_factorial_iterative(uint64_t n) {
  * <br/>Recursion can be costly for large numbers.
  */
 uint64_t double_factorial_recursive(uint64_t n) {
-    if (n <= 1) return 1;
+    if (n <= 1)
+        return 1;
     return n * double_factorial_recursive(n - 2);
 }
 
