@@ -85,7 +85,7 @@ class adaline {
         // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
         y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
 
-        return y >= 0 ? 1 : -1;  // quantizer: apply ADALINE threshold function
+        return activation(y);  // quantizer: apply ADALINE threshold function
     }
 
     /**
@@ -149,6 +149,8 @@ class adaline {
             std::cout << "Did not converge after " << iter << " iterations."
                       << std::endl;
     }
+
+    friend int activation(double x) { return x > 0 ? 1 : -1; }
 
  private:
     /**
