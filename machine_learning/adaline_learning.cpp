@@ -22,10 +22,11 @@
 
 #include <cassert>
 #include <climits>
-#include <cstdlib>
 #include <ctime>
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <cstdlib>
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
 
