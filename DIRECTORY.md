@@ -72,6 +72,9 @@
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
 
+## Geometry
+  * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
+
 ## Graph
   * [Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bfs.cpp)
   * [Bridge Finding With Tarjan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bridge_finding_with_tarjan_algorithm.cpp)
