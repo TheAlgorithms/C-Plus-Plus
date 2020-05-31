@@ -222,8 +222,10 @@ void test2(double eta = 0.01) {
     std::vector<double> X[N];
     int Y[N];  // corresponding y-values
 
-    int range = 500;  // sample points range
-    int range2 = range >> 1;
+    // generate sample points in the interval
+    // [-range2/100 , (range2-1)/100]
+    int range = 500;          // sample points full-range
+    int range2 = range >> 1;  // sample points half-range
     for (int i = 0; i < N; i++) {
         double x0 = ((std::rand() % range) - range2) / 100.f;
         double x1 = ((std::rand() % range) - range2) / 100.f;
