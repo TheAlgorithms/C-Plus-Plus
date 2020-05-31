@@ -232,7 +232,7 @@ void test2(double eta = 0.01) {
         double x0 = ((std::rand() % range) - range2) / 100.f;
         double x1 = ((std::rand() % range) - range2) / 100.f;
         X[i] = {x0, x1};
-        Y[i] = (x0 + x1) > -1 ? 1 : -1;
+        Y[i] = (x0 + 3. * x1) > -1 ? 1 : -1;
     }
 
     std::cout << "------- Test 2 -------" << std::endl;
