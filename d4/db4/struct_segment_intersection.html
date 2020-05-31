@@ -131,12 +131,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>intersect</b> (<a cla
 </table>
 </div><div class="memdoc">
 <p>We will find direction of line here respect to @first_point. Here @second_point and @third_point is first and second points of the line respectively. we want a method to determine which way a given angle these three points turns. If returned number is negative, then the angle is counter-clockwise. That means the line is going to right to left. We will fount angle as clockwise if the method returns positive number. </p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                            {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> ((third_point.x - first_point.x) *</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                (second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>)) -</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;               ((second_point.x - first_point.x) *</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                (third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                            {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> ((third_point.x - first_point.x) *</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                (second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>)) -</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;               ((second_point.x - first_point.x) *</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                (third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,16 +180,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>intersect</b> (<a cla
 </table>
 </div><div class="memdoc">
 <p>This method determines whether a point known to be colinear with a segment lies on that segment. </p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                              {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (<a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(first_point.x, second_point.x) &lt;= third_point.x &amp;&amp;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            third_point.x &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(first_point.x, second_point.x) &amp;&amp;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>, second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) &lt;= third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> &amp;&amp;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>, second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>))</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                              {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (<a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(first_point.x, second_point.x) &lt;= third_point.x &amp;&amp;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            third_point.x &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(first_point.x, second_point.x) &amp;&amp;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>, second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) &lt;= third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> &amp;&amp;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            third_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(first_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>, second_point.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>))</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -203,7 +203,7 @@ Here is the call graph for this function:</div>
 <li>geometry/<a class="el" href="../../d8/d6c/line__segment__intersection_8cpp.html">line_segment_intersection.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition:</b> line_segment_intersection.cpp:13</div></div>
+<div class="ttc" id="astruct_point_html_a2e1b5fb2b2a83571f5c0bc0f66a73cf7"><div class="ttname"><a href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">Point::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Point respect to x coordinate.</div><div class="ttdef"><b>Definition:</b> line_segment_intersection.cpp:14</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <!-- start footer part -->
