@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stack_3658',['stack',['../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7',1,'paranthesis_matching.cpp']]]
+  ['prime_3674',['prime',['../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95',1,'primes_up_to_billion.cpp']]],
+  ['prime_5fnumbers_3675',['prime_numbers',['../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe',1,'prime_factorization.cpp']]]
 ];
