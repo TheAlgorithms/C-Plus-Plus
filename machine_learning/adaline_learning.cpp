@@ -150,7 +150,7 @@ class adaline {
                       << std::endl;
     }
 
-    friend int activation(double x) { return x > 0 ? 1 : -1; }
+    int activation(double x) { return x > 0 ? 1 : -1; }
 
  private:
     /**
