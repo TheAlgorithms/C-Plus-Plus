@@ -26,8 +26,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
-#include <vector>
 #include <numeric>
+#include <vector>
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
 
