@@ -74,9 +74,11 @@ class adaline {
     /**
      * predict the output of the model for given set of features
      * \param[in] x input vector
+     * \param[out] out optional argument to return neuron output before applying
+     * activation function (optional, `nullptr` to ignore)
      * \returns model prediction output
      */
-    int predict(const std::vector<double> &x) {
+    int predict(const std::vector<double> &x, double *out = nullptr) {
         if (!check_size_match(x))
             return 0;
 
@@ -84,6 +86,9 @@ class adaline {
 
         // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
         y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
+
+        if (out != nullptr)  // if out variable is provided
+            *out = y;
 
         return activation(y);  // quantizer: apply ADALINE threshold function
     }
