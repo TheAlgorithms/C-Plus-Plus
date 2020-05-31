@@ -266,6 +266,10 @@ void test2(double eta = 0.01) {
  * sphere of radius 1 and centre at origin as +1 and others as -1. Note that
  * each point is defined by 3 values but we use 6 features. The function will
  * create random sample points for training and test purposes.
+ * The sphere centred at origin and radius 1 is defined as:
+ * \f$x^2+y^2+z^2=r^2=1\f$ and if the \f$r^2<1\f$, point lies within the sphere
+ * else, outside.
+ *
  * \param[in] eta learning rate (optional, default=0.01)
  */
 void test3(double eta = 0.01) {
