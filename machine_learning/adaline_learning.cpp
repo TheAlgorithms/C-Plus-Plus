@@ -53,8 +53,8 @@ class adaline {
             1);  // additional weight is for the constant bias term
 
         // initialize with random weights in the range [-50, 49]
-        for (int i = 0; i < weights.size(); i++)
-            weights[i] = (static_cast<double>(std::rand() % 100) - 50);
+        for (int i = 0; i < weights.size(); i++) weights[i] = 1.f;
+        // weights[i] = (static_cast<double>(std::rand() % 100) - 50);
     }
 
     /**
