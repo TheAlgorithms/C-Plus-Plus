@@ -3,6 +3,7 @@
  * @brief check whether two line segments intersect each other
  * or not.
  */
+#include <algorithm>
 #include <iostream>
 
 /**
