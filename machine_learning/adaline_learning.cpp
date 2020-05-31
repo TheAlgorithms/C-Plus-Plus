@@ -26,6 +26,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <numeric>
 #include <vector>
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
@@ -52,8 +53,8 @@ class adaline {
             1);  // additional weight is for the constant bias term
 
         // initialize with random weights in the range [-50, 49]
-        for (int i = 0; i < weights.size(); i++)
-            weights[i] = (static_cast<double>(std::rand() % 100) - 50);
+        for (int i = 0; i < weights.size(); i++) weights[i] = 1.f;
+        // weights[i] = (static_cast<double>(std::rand() % 100) - 50);
     }
 
     /**
@@ -73,17 +74,23 @@ class adaline {
     /**
      * predict the output of the model for given set of features
      * \param[in] x input vector
+     * \param[out] out optional argument to return neuron output before applying
+     * activation function (optional, `nullptr` to ignore)
      * \returns model prediction output
      */
-    int predict(const std::vector<double> &x) {
+    int predict(const std::vector<double> &x, double *out = nullptr) {
         if (!check_size_match(x))
             return 0;
 
         double y = weights.back();  // assign bias value
 
-        for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
+        // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
+        y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
 
-        return y >= 0 ? 1 : -1;  // quantizer: apply ADALINE threshold function
+        if (out != nullptr)  // if out variable is provided
+            *out = y;
+
+        return activation(y);  // quantizer: apply ADALINE threshold function
     }
 
     /**
@@ -148,6 +155,8 @@ class adaline {
                       << std::endl;
     }
 
+    int activation(double x) { return x > 0 ? 1 : -1; }
+
  private:
     /**
      * convenient function to check if input feature vector size matches the
@@ -207,7 +216,7 @@ void test1(double eta = 0.01) {
 
 /**
  * test function to predict points in a 2D coordinate system above the line
- * \f$x+y=-1\f$ as +1 and others as -1.
+ * \f$x+3y=-1\f$ as +1 and others as -1.
  * Note that each point is defined by 2 values or 2 features.
  * The function will create random sample points for training and test purposes.
  * \param[in] eta learning rate (optional, default=0.01)
@@ -220,16 +229,18 @@ void test2(double eta = 0.01) {
     std::vector<double> X[N];
     int Y[N];  // corresponding y-values
 
-    int range = 500;  // sample points range
-    int range2 = range >> 1;
+    // generate sample points in the interval
+    // [-range2/100 , (range2-1)/100]
+    int range = 500;          // sample points full-range
+    int range2 = range >> 1;  // sample points half-range
     for (int i = 0; i < N; i++) {
         double x0 = ((std::rand() % range) - range2) / 100.f;
         double x1 = ((std::rand() % range) - range2) / 100.f;
         X[i] = {x0, x1};
-        Y[i] = (x0 + x1) > -1 ? 1 : -1;
+        Y[i] = (x0 + 3. * x1) > -1 ? 1 : -1;
     }
 
-    std::cout << "------- Test 1 -------" << std::endl;
+    std::cout << "------- Test 2 -------" << std::endl;
     std::cout << "Model before fit: " << ada << std::endl;
 
     ada.fit(X, Y);
@@ -244,7 +255,57 @@ void test2(double eta = 0.01) {
 
         std::cout << "Predict for x=(" << x0 << "," << x1 << "): " << predict;
 
-        int expected_val = (x0 + x1) > -1 ? 1 : -1;
+        int expected_val = (x0 + 3. * x1) > -1 ? 1 : -1;
+        assert(predict == expected_val);
+        std::cout << " ...passed" << std::endl;
+    }
+}
+
+/**
+ * test function to predict points in a 3D coordinate system lying within the
+ * sphere of radius 1 and centre at origin as +1 and others as -1. Note that
+ * each point is defined by 3 values but we use 6 features. The function will
+ * create random sample points for training and test purposes.
+ * \param[in] eta learning rate (optional, default=0.01)
+ */
+void test3(double eta = 0.01) {
+    adaline ada(6, eta);  // 2 features
+
+    const int N = 100;  // number of sample points
+
+    std::vector<double> X[N];
+    int Y[N];  // corresponding y-values
+
+    // generate sample points in the interval
+    // [-range2/100 , (range2-1)/100]
+    int range = 200;          // sample points full-range
+    int range2 = range >> 1;  // sample points half-range
+    for (int i = 0; i < N; i++) {
+        double x0 = ((std::rand() % range) - range2) / 100.f;
+        double x1 = ((std::rand() % range) - range2) / 100.f;
+        double x2 = ((std::rand() % range) - range2) / 100.f;
+        X[i] = {x0, x1, x2, x0 * x0, x1 * x1, x2 * x2};
+        Y[i] = ((x0 * x0) + (x1 * x1) + (x2 * x2)) <= 1.f ? 1 : -1;
+    }
+
+    std::cout << "------- Test 3 -------" << std::endl;
+    std::cout << "Model before fit: " << ada << std::endl;
+
+    ada.fit(X, Y);
+    std::cout << "Model after fit: " << ada << std::endl;
+
+    int N_test_cases = 5;
+    for (int i = 0; i < N_test_cases; i++) {
+        double x0 = ((std::rand() % range) - range2) / 100.f;
+        double x1 = ((std::rand() % range) - range2) / 100.f;
+        double x2 = ((std::rand() % range) - range2) / 100.f;
+
+        int predict = ada.predict({x0, x1, x2, x0 * x0, x1 * x1, x2 * x2});
+
+        std::cout << "Predict for x=(" << x0 << "," << x1 << "," << x2
+                  << "): " << predict;
+
+        int expected_val = ((x0 * x0) + (x1 * x1) + (x2 * x2)) <= 1.f ? 1 : -1;
         assert(predict == expected_val);
         std::cout << " ...passed" << std::endl;
     }
@@ -254,7 +315,7 @@ void test2(double eta = 0.01) {
 int main(int argc, char **argv) {
     std::srand(std::time(nullptr));  // initialize random number generator
 
-    double eta = 0.2;  // default value of eta
+    double eta = 0.1;  // default value of eta
     if (argc == 2)     // read eta value from commandline argument if present
         eta = strtof(argv[1], nullptr);
 
@@ -264,6 +325,11 @@ int main(int argc, char **argv) {
     std::cin.get();
 
     test2(eta);
+
+    std::cout << "Press ENTER to continue..." << std::endl;
+    std::cin.get();
+
+    test3(eta);
 
     return 0;
 }
