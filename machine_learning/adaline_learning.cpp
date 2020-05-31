@@ -27,6 +27,7 @@
 #include <ctime>
 #include <iostream>
 #include <vector>
+#include <numeric>
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
 
@@ -81,7 +82,8 @@ class adaline {
 
         double y = weights.back();  // assign bias value
 
-        for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
+        // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
+        y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
 
         return y >= 0 ? 1 : -1;  // quantizer: apply ADALINE threshold function
     }
@@ -229,7 +231,7 @@ void test2(double eta = 0.01) {
         Y[i] = (x0 + x1) > -1 ? 1 : -1;
     }
 
-    std::cout << "------- Test 1 -------" << std::endl;
+    std::cout << "------- Test 2 -------" << std::endl;
     std::cout << "Model before fit: " << ada << std::endl;
 
     ada.fit(X, Y);
