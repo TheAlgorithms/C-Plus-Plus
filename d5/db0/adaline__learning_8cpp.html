@@ -155,27 +155,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize random number generator</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">double</span> eta = 0.1;  <span class="comment">// default value of eta</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">if</span> (argc == 2)     <span class="comment">// read eta value from commandline argument if present</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        eta = <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/byte/strtof.html">strtof</a>(argv[1], <span class="keyword">nullptr</span>);</div>
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize random number generator</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a52053d88ea1bcbbed9aca67ab4eeb499">test1</a>(eta);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Press ENTER to continue...&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.get();</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a>(eta);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Press ENTER to continue...&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.get();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a992bdf1fdb0b9d414bcf7981d2d87aa9">test3</a>(eta);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">double</span> eta = 0.1;  <span class="comment">// default value of eta</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (argc == 2)     <span class="comment">// read eta value from commandline argument if present</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        eta = <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/byte/strtof.html">strtof</a>(argv[1], <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a52053d88ea1bcbbed9aca67ab4eeb499">test1</a>(eta);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Press ENTER to continue...&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.get();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a>(eta);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Press ENTER to continue...&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>.get();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a992bdf1fdb0b9d414bcf7981d2d87aa9">test3</a>(eta);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -325,54 +325,55 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>test function to predict points in a 3D coordinate system lying within the sphere of radius 1 and centre at origin as +1 and others as -1. Note that each point is defined by 3 values but we use 6 features. The function will create random sample points for training and test purposes. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>test function to predict points in a 3D coordinate system lying within the sphere of radius 1 and centre at origin as +1 and others as -1. Note that each point is defined by 3 values but we use 6 features. The function will create random sample points for training and test purposes. The sphere centred at origin and radius 1 is defined as: \(x^2+y^2+z^2=r^2=1\) and if the \(r^2&lt;1\), point lies within the sphere else, outside.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">eta</td><td>learning rate (optional, default=0.01) </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                              {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="../../d8/df2/classadaline.html">adaline</a> ada(6, eta);  <span class="comment">// 2 features</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = 100;  <span class="comment">// number of sample points</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> X[N];</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">int</span> Y[N];  <span class="comment">// corresponding y-values</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="comment">// generate sample points in the interval</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// [-range2/100 , (range2-1)/100]</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">int</span> range = 200;          <span class="comment">// sample points full-range</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">int</span> range2 = range &gt;&gt; 1;  <span class="comment">// sample points half-range</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordtype">double</span> x0 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordtype">double</span> x1 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordtype">double</span> x2 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        X[i] = {x0, x1, x2, x0 * x0, x1 * x1, x2 * x2};</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        Y[i] = ((x0 * x0) + (x1 * x1) + (x2 * x2)) &lt;= 1.f ? 1 : -1;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;------- Test 3 -------&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Model before fit: &quot;</span> &lt;&lt; ada &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    ada.fit(X, Y);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Model after fit: &quot;</span> &lt;&lt; ada &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> N_test_cases = 5;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N_test_cases; i++) {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordtype">double</span> x0 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordtype">double</span> x1 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordtype">double</span> x2 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordtype">int</span> predict = ada.predict({x0, x1, x2, x0 * x0, x1 * x1, x2 * x2});</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Predict for x=(&quot;</span> &lt;&lt; x0 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; x1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; x2</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> &lt;&lt; predict;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordtype">int</span> expected_val = ((x0 * x0) + (x1 * x1) + (x2 * x2)) &lt;= 1.f ? 1 : -1;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        assert(predict == expected_val);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; ...passed&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                              {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="../../d8/df2/classadaline.html">adaline</a> ada(6, eta);  <span class="comment">// 2 features</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = 100;  <span class="comment">// number of sample points</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> X[N];</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">int</span> Y[N];  <span class="comment">// corresponding y-values</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">// generate sample points in the interval</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="comment">// [-range2/100 , (range2-1)/100]</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">int</span> range = 200;          <span class="comment">// sample points full-range</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">int</span> range2 = range &gt;&gt; 1;  <span class="comment">// sample points half-range</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordtype">double</span> x0 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordtype">double</span> x1 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordtype">double</span> x2 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        X[i] = {x0, x1, x2, x0 * x0, x1 * x1, x2 * x2};</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        Y[i] = ((x0 * x0) + (x1 * x1) + (x2 * x2)) &lt;= 1.f ? 1 : -1;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;------- Test 3 -------&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Model before fit: &quot;</span> &lt;&lt; ada &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    ada.fit(X, Y);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Model after fit: &quot;</span> &lt;&lt; ada &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">int</span> N_test_cases = 5;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N_test_cases; i++) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordtype">double</span> x0 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordtype">double</span> x1 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordtype">double</span> x2 = ((<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % range) - range2) / 100.f;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordtype">int</span> predict = ada.predict({x0, x1, x2, x0 * x0, x1 * x1, x2 * x2});</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Predict for x=(&quot;</span> &lt;&lt; x0 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; x1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; x2</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> &lt;&lt; predict;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">int</span> expected_val = ((x0 * x0) + (x1 * x1) + (x2 * x2)) &lt;= 1.f ? 1 : -1;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        assert(predict == expected_val);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; ...passed&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -394,7 +395,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="aadaline__learning_8cpp_html_a379f7488a305f2571f2932b319931f82"><div class="ttname"><a href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a></div><div class="ttdeci">void test2(double eta=0.01)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:224</div></div>
-<div class="ttc" id="aadaline__learning_8cpp_html_a992bdf1fdb0b9d414bcf7981d2d87aa9"><div class="ttname"><a href="../../d5/db0/adaline__learning_8cpp.html#a992bdf1fdb0b9d414bcf7981d2d87aa9">test3</a></div><div class="ttdeci">void test3(double eta=0.01)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:271</div></div>
+<div class="ttc" id="aadaline__learning_8cpp_html_a992bdf1fdb0b9d414bcf7981d2d87aa9"><div class="ttname"><a href="../../d5/db0/adaline__learning_8cpp.html#a992bdf1fdb0b9d414bcf7981d2d87aa9">test3</a></div><div class="ttdeci">void test3(double eta=0.01)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:275</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
