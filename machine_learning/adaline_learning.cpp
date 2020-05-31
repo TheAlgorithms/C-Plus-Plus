@@ -211,7 +211,7 @@ void test1(double eta = 0.01) {
 
 /**
  * test function to predict points in a 2D coordinate system above the line
- * \f$x+y=-1\f$ as +1 and others as -1.
+ * \f$x+3y=-1\f$ as +1 and others as -1.
  * Note that each point is defined by 2 values or 2 features.
  * The function will create random sample points for training and test purposes.
  * \param[in] eta learning rate (optional, default=0.01)
