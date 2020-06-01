@@ -11,94 +11,105 @@
 #include <iostream>
 
 /**
- * continuous mean and variance computance using
- * first value as an approximation for the mean.
- * If the first number is much far form the mean, the algorithm becomes very
- * inaccurate to compute variance and standard deviation.
+ * \namespace statistics
+ * \brief Statistical algorithms
  */
-template <typename T>
-class stats_computer1 {
- public:
-    /** Constructor
-     * \param[in] x new data sample
+namespace statistics {
+
+    /**
+     * continuous mean and variance computance using
+     * first value as an approximation for the mean.
+     * If the first number is much far form the mean, the algorithm becomes very
+     * inaccurate to compute variance and standard deviation.
      */
-    void new_val(T x) {
-        if (n == 0)
-            K = x;
-        n++;
-        T tmp = x - K;
-        Ex += tmp;
-        Ex2 += tmp * tmp;
-    }
+    template <typename T>
+    class stats_computer1 {
+     public:
+        /** Constructor
+         * \param[in] x new data sample
+         */
+        void new_val(T x) {
+            if (n == 0)
+                K = x;
+            n++;
+            T tmp = x - K;
+            Ex += tmp;
+            Ex2 += tmp * tmp;
+        }
 
-    /** return sample mean computed till last sample */
-    double mean() const { return K + Ex / n; }
+        /** return sample mean computed till last sample */
+        double mean() const { return K + Ex / n; }
 
-    /** return data variance computed till last sample */
-    double variance() const { return (Ex2 - (Ex * Ex) / n) / (n - 1); }
+        /** return data variance computed till last sample */
+        double variance() const { return (Ex2 - (Ex * Ex) / n) / (n - 1); }
 
-    /** return sample standard deviation computed till last sample */
-    double std() const { return std::sqrt(this->variance()); }
+        /** return sample standard deviation computed till last sample */
+        double std() const { return std::sqrt(this->variance()); }
 
-    /** short-hand operator to read new sample from input stream
-     * \n e.g.: `std::cin >> stats1;`
+        /** short-hand operator to read new sample from input stream
+         * \n e.g.: `std::cin >> stats1;`
+         */
+        friend std::istream &operator>>(std::istream &input,
+                                        stats_computer1 &stat) {
+            T val;
+            input >> val;
+            stat.new_val(val);
+            return input;
+        }
+
+     private:
+        unsigned int n = 0;
+        double Ex, Ex2;
+        T K;
+    };
+
+    /**
+     * continuous mean and variance computance using
+     * Welford's algorithm  (very accurate)
      */
-    friend std::istream &operator>>(std::istream &input,
-                                    stats_computer1 &stat) {
-        T val;
-        input >> val;
-        stat.new_val(val);
-        return input;
-    }
+    template <typename T>
+    class stats_computer2 {
+     public:
+        /** Constructor
+         * \param[in] x new data sample
+         */
+        void new_val(T x) {
+            n++;
+            double delta = x - mu;
+            mu += delta / n;
+            double delta2 = x - mu;
+            M += delta * delta2;
+        }
 
- private:
-    unsigned int n = 0;
-    double Ex, Ex2;
-    T K;
-};
+        /** return sample mean computed till last sample */
+        double mean() const { return mu; }
 
-/**
- * continuous mean and variance computance using
- * Welford's algorithm  (very accurate)
- */
-template <typename T>
-class stats_computer2 {
- public:
-    /** Constructor
-     * \param[in] x new data sample
-     */
-    void new_val(T x) {
-        n++;
-        double delta = x - mu;
-        mu += delta / n;
-        double delta2 = x - mu;
-        M += delta * delta2;
-    }
+        /** return data variance computed till last sample */
+        double variance() const { return M / n; }
 
-    /** return sample mean computed till last sample */
-    double mean() const { return mu; }
+        /** return sample standard deviation computed till last sample */
+        double std() const { return std::sqrt(this->variance()); }
 
-    /** return data variance computed till last sample */
-    double variance() const { return M / n; }
+        /** short-hand operator to read new sample from input stream
+         * \n e.g.: `std::cin >> stats1;`
+         */
+        friend std::istream &operator>>(std::istream &input,
+                                        stats_computer2 &stat) {
+            T val;
+            input >> val;
+            stat.new_val(val);
+            return input;
+        }
 
-    /** return sample standard deviation computed till last sample */
-    double std() const { return std::sqrt(this->variance()); }
+     private:
+        unsigned int n = 0;
+        double mu = 0, var = 0, M = 0;
+    };
 
-    /** short-hand operator to read new sample from input stream
-     * \n e.g.: `std::cin >> stats1;`
-     */
-    friend std::istream &operator>>(std::istream &input,
-                                    stats_computer2 &stat) {
-        T val;
-        input >> val;
-        stat.new_val(val);
-        return input;
-    }
+}  // namespace statistics
 
- private:
-    unsigned int n = 0;
-    double mu = 0, var = 0, M = 0;
-};
+using statistics::stats_computer1;
+using statistics::stats_computer2;
 
 /** Test the algorithm implementation
  * \param[in] test_data array of data to test the algorithms
