@@ -33,35 +33,35 @@ void show_data(T (&arr)[N]) {
  * \brief Sorting algorithms
  */
 namespace sorting {
-    /**
-     * Optimized algorithm - takes half the time by utilizing
-     * Mar
-     **/
-    template <class T>
-    void shell_sort(T *arr, size_t LEN) {
-        const unsigned int gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};
-        const unsigned int gap_len = 8;
-        size_t i, j, g;
+/**
+ * Optimized algorithm - takes half the time by utilizing
+ * Mar
+ **/
+template <class T>
+void shell_sort(T *arr, size_t LEN) {
+    const unsigned int gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};
+    const unsigned int gap_len = 8;
+    size_t i, j, g;
 
-        for (g = 0; g < gap_len; g++) {
-            unsigned int gap = gaps[g];
-            for (i = gap; i < LEN; i++) {
-                T tmp = arr[i];
+    for (g = 0; g < gap_len; g++) {
+        unsigned int gap = gaps[g];
+        for (i = gap; i < LEN; i++) {
+            T tmp = arr[i];
 
-                for (j = i; j >= gap && (arr[j - gap] - tmp) > 0; j -= gap)
-                    arr[j] = arr[j - gap];
+            for (j = i; j >= gap && (arr[j - gap] - tmp) > 0; j -= gap)
+                arr[j] = arr[j - gap];
 
-                arr[j] = tmp;
-            }
+            arr[j] = tmp;
         }
     }
+}
 
-    /** function overload - when input array is of a known length array type
-     */
-    template <class T, size_t N>
-    void shell_sort(T (&arr)[N]) {
-        shell_sort(arr, N);
-    }
+/** function overload - when input array is of a known length array type
+ */
+template <class T, size_t N>
+void shell_sort(T (&arr)[N]) {
+    shell_sort(arr, N);
+}
 
 }  // namespace sorting
 
