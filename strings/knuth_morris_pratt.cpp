@@ -20,6 +20,9 @@
 #endif
 #include <vector>
 
+/** \namespace string_search
+ * \brief String search algorithms
+ */
 namespace string_search {
 /**
  * Generate the partial match table aka failure function for a pattern to
