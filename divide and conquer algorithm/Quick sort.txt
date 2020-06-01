@@ -1,0 +1,37 @@
+Quick sort-Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. 
+           A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on
+           which the partition is made and another array holds values greater than the pivot value.
+
+Algorithm-
+Step 1 − Make the right-most index value pivot
+Step 2 − partition the array using pivot value
+Step 3 − quicksort left partition recursively
+Step 4 − quicksort right partition recursively
+
+
+Psuedocode-
+function partitionFunc(left, right, pivot)
+   leftPointer = left
+   rightPointer = right - 1
+
+   while True do
+      while A[++leftPointer] < pivot do
+         //do-nothing            
+      end while
+		
+      while rightPointer > 0 && A[--rightPointer] > pivot do
+         //do-nothing         
+      end while
+		
+      if leftPointer >= rightPointer
+         break
+      else                
+         swap leftPointer,rightPointer
+      end if
+		
+   end while 
+	
+   swap leftPointer,right
+   return leftPointer
+	
+end function

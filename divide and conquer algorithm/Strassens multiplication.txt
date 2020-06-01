@@ -1,0 +1,28 @@
+Naive method-
+Algorithm: Matrix-Multiplication (X, Y, Z) 
+for i = 1 to p do 
+   for j = 1 to r do 
+      Z[i,j] := 0 
+      for k = 1 to q do 
+         Z[i,j] := Z[i,j] + X[i,k] × Y[k,j] 
+Strassen’s Matrix multiplication can be performed only on square matrices where n is a power of 2.
+Order of both of the matrices are n × n.
+Divide X, Y and Z into four (n/2)×(n/2) matrices as represented below −
+
+Z=[IKJL] X=[ACBD] and Y=[EGFH]
+
+Using Strassen’s Algorithm compute the following −
+
+M1:=(A+C)×(E+F)
+M2:=(B+D)×(G+H)
+M3:=(A−D)×(E+H)
+M4:=A×(F−H)
+M5:=(C+D)×(E)
+M6:=(A+B)×(H)
+M7:=D×(G−E)
+Then,
+
+I:=M2+M3−M6−M7
+J:=M4+M6
+K:=M5+M7
+L:=M1−M3−M4−M5

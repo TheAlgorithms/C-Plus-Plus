@@ -1,0 +1,57 @@
+A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties −
+
+1.The left sub-tree of a node has a key less than or equal to its parent node's key.
+
+2.The right sub-tree of a node has a key greater than to its parent node's key.
+
+BST is a collection of nodes arranged in a way where they maintain BST properties. Each node has a key and an associated value. 
+While searching, the desired key is compared to the keys in BST and if found, the associated value is retrieved.
+
+Defining a node-
+struct node {
+   int data;   
+   struct node *leftChild;
+   struct node *rightChild;
+};
+Inserting nodes-
+void insert(int data) {
+   struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   struct node *current;
+   struct node *parent;
+
+   tempNode->data = data;
+   tempNode->leftChild = NULL;
+   tempNode->rightChild = NULL;
+
+   //if tree is empty
+   if(root == NULL) {
+      root = tempNode;
+   } else {
+      current = root;
+      parent = NULL;
+
+      while(1) {                
+         parent = current;
+			
+         //go to left of the tree
+         if(data < parent->data) {
+            current = current->leftChild;                
+            //insert to the left
+				
+            if(current == NULL) {
+               parent->leftChild = tempNode;
+               return;
+            }
+         }  //go to right of the tree
+         else {
+            current = current->rightChild;
+            
+            //insert to the right
+            if(current == NULL) {
+               parent->rightChild = tempNode;
+               return;
+            }
+         }
+      }            
+   }
+}        
