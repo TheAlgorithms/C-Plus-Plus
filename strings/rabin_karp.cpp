@@ -15,6 +15,7 @@
 
 #define PRIME 5  ///< Prime modulus for hash functions
 
+namespace string_search {
 /**
  * convert a string to an intger - called as hashing function
  * \param[in] s source of string to hash
@@ -95,6 +96,10 @@ int rabin_karp(const std::string& str, const std::string& pat) {
     }
     return -1;  // return -1 if given pattern not found
 }
+
+}  // namespace string_search
+
+using string_search::rabin_karp;
 
 /** Main function */
 int main(void) {

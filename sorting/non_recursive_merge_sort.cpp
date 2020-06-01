@@ -8,13 +8,14 @@
 #include <iostream>
 #include <utility>  // for std::move & std::remove_reference_t
 
+namespace sorting {
 template <class Iterator>
 void merge(Iterator, Iterator, const Iterator, char[]);
 /// bottom-up merge sort which sorts elements in a non-decreasing order
 /**
- * sorts elements non-recursively by breaking them into small segments, merging
- * adjacent segments into larger sorted segments, then increasing the sizes of
- * segments by factors of 2 and repeating the same process.
+ * sorts elements non-recursively by breaking them into small segments,
+ * merging adjacent segments into larger sorted segments, then increasing
+ * the sizes of segments by factors of 2 and repeating the same process.
  * best-case = worst-case = O(n log(n))
  * @param first points to the first element
  * @param last points to 1-step past the last element
@@ -26,9 +27,9 @@ void non_recursive_merge_sort(const Iterator first, const Iterator last,
     // create a buffer large enough to store all elements
     // dynamically allocated to comply with cpplint
     char* buffer = new char[n * sizeof(*first)];
-    // buffer size can be optimized to largest power of 2 less than n elements
-    // divide the container into equally-sized segments whose length start at 1
-    // and keeps increasing by factors of 2
+    // buffer size can be optimized to largest power of 2 less than n
+    // elements divide the container into equally-sized segments whose
+    // length start at 1 and keeps increasing by factors of 2
     for (size_t length(1); length < n; length <<= 1) {
         // merge adjacent segments whose number is n / (length * 2)
         Iterator left(first);
@@ -85,6 +86,10 @@ template <class Iterator>
 void non_recursive_merge_sort(const Iterator first, const Iterator last) {
     non_recursive_merge_sort(first, last, last - first);
 }
+
+}  // namespace sorting
+
+using sorting::non_recursive_merge_sort;
 
 int main(int argc, char** argv) {
     int size;

@@ -31,13 +31,18 @@
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
 
+/** \namespace machine_learning
+ * \brief Machine learning algorithms
+ */
+namespace machine_learning {
 class adaline {
  public:
     /**
      * Default constructor
      * \param[in] num_features number of features present
      * \param[in] eta learning rate (optional, default=0.1)
-     * \param[in] convergence accuracy (optional, default=\f$1\times10^{-5}\f$)
+     * \param[in] convergence accuracy (optional,
+     * default=\f$1\times10^{-5}\f$)
      */
     adaline(int num_features, const double eta = 0.01f,
             const double accuracy = 1e-5)
@@ -74,9 +79,9 @@ class adaline {
     /**
      * predict the output of the model for given set of features
      * \param[in] x input vector
-     * \param[out] out optional argument to return neuron output before applying
-     * activation function (optional, `nullptr` to ignore)
-     * \returns model prediction output
+     * \param[out] out optional argument to return neuron output before
+     * applying activation function (optional, `nullptr` to ignore) \returns
+     * model prediction output
      */
     int predict(const std::vector<double> &x, double *out = nullptr) {
         if (!check_size_match(x))
@@ -94,11 +99,9 @@ class adaline {
     }
 
     /**
-     * Update the weights of the model using supervised learning for one feature
-     * vector
-     * \param[in] x feature vector
-     * \param[in] y known output  value
-     * \returns correction factor
+     * Update the weights of the model using supervised learning for one
+     * feature vector \param[in] x feature vector \param[in] y known output
+     * value \returns correction factor
      */
     double fit(const std::vector<double> &x, const int &y) {
         if (!check_size_match(x))
@@ -119,10 +122,9 @@ class adaline {
     }
 
     /**
-     * Update the weights of the model using supervised learning for an array of
-     * vectors.
-     * \param[in] X array of feature vector
-     * \param[in] y known output value for each feature vector
+     * Update the weights of the model using supervised learning for an
+     * array of vectors. \param[in] X array of feature vector \param[in] y
+     * known output value for each feature vector
      */
     template <int N>
     void fit(std::vector<double> const (&X)[N], const int *y) {
@@ -180,6 +182,10 @@ class adaline {
     const double accuracy;        ///< model fit convergence accuracy
     std::vector<double> weights;  ///< weights of the neural network
 };
+
+}  // namespace machine_learning
+
+using machine_learning::adaline;
 
 /**
  * test function to predict points in a 2D coordinate system above the line

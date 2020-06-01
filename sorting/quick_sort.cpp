@@ -24,6 +24,7 @@
 #include <cstdlib>
 #include <iostream>
 
+namespace sorting {
 /**
  *      This function takes last element as pivot, places
  *      the pivot element at its correct position in sorted
@@ -66,6 +67,10 @@ void quickSort(int arr[], int low, int high) {
         quickSort(arr, p + 1, high);
     }
 }
+
+}  // namespace sorting
+
+using sorting::quickSort;
 
 // prints the array after sorting
 void show(int arr[], int size) {

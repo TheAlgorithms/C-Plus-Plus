@@ -1,11 +1,17 @@
+/**
+ * \file
+ * \brief [Shell sort](https://en.wikipedia.org/wiki/Shell_sort) algorithm
+ */
 #include <array>
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <utility>  // for std::swap
 
-// for std::swap
-#include <utility>
-
+/** pretty print array
+ * \param[in] arr array to print
+ * \param[in] LEN length of array to print
+ */
 template <class T>
 void show_data(T *arr, size_t LEN) {
     size_t i;
@@ -14,11 +20,19 @@ void show_data(T *arr, size_t LEN) {
     std::cout << std::endl;
 }
 
+/** pretty print array
+ * \param[in] arr array to print
+ * \param[in] N length of array to print
+ */
 template <class T, size_t N>
 void show_data(T (&arr)[N]) {
     show_data(arr, N);
 }
 
+/** \namespace sorting
+ * \brief Sorting algorithms
+ */
+namespace sorting {
 /**
  * Optimized algorithm - takes half the time by utilizing
  * Mar
@@ -42,10 +56,16 @@ void shell_sort(T *arr, size_t LEN) {
     }
 }
 
+/** function overload - when input array is of a known length array type
+ */
 template <class T, size_t N>
 void shell_sort(T (&arr)[N]) {
     shell_sort(arr, N);
 }
+
+}  // namespace sorting
+
+using sorting::shell_sort;
 
 /**
  * function to compare sorting using cstdlib's qsort

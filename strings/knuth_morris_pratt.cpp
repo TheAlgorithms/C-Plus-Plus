@@ -20,6 +20,7 @@
 #endif
 #include <vector>
 
+namespace string_search {
 /**
  * Generate the partial match table aka failure function for a pattern to
  * search.
@@ -64,6 +65,9 @@ bool kmp(const std::string &pattern, const std::string &text) {
     }
     return false;
 }
+}  // namespace string_search
+
+using string_search::kmp;
 
 /** Main function */
 int main() {

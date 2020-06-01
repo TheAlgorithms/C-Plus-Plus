@@ -11,6 +11,12 @@
 #include <iostream>
 
 /**
+ * \namespace statistics
+ * \brief Statistical algorithms
+ */
+namespace statistics {
+
+/**
  * continuous mean and variance computance using
  * first value as an approximation for the mean.
  * If the first number is much far form the mean, the algorithm becomes very
@@ -99,6 +105,11 @@ class stats_computer2 {
     unsigned int n = 0;
     double mu = 0, var = 0, M = 0;
 };
+
+}  // namespace statistics
+
+using statistics::stats_computer1;
+using statistics::stats_computer2;
 
 /** Test the algorithm implementation
  * \param[in] test_data array of data to test the algorithms

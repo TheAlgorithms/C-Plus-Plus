@@ -10,6 +10,7 @@
 #endif
 #include <vector>
 
+namespace string_search {
 /**
  * Find a pattern in a string by comparing the pattern to every substring.
  * @param text     Any string that might contain the pattern.
@@ -32,6 +33,9 @@ int brute_force(const std::string &text, const std::string &pattern) {
     }
     return index;
 }
+}  // namespace string_search
+
+using string_search::brute_force;
 
 /** set of test cases */
 const std::vector<std::vector<std::string>> test_set = {
