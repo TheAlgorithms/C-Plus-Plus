@@ -10,28 +10,32 @@
 #endif
 #include <vector>
 
-/**
- * Find a pattern in a string by comparing the pattern to every substring.
- * @param text     Any string that might contain the pattern.
- * @param pattern  String that we are searching for.
- * @return         Index where the pattern starts in the text
- * @return         -1 if the pattern was not found.
- */
-int brute_force(const std::string &text, const std::string &pattern) {
-    size_t pat_l = pattern.length();
-    size_t txt_l = text.length();
-    int index = -1;
-    if (pat_l <= txt_l) {
-        for (size_t i = 0; i < txt_l - pat_l + 1; i++) {
-            std::string s = text.substr(i, pat_l);
-            if (s == pattern) {
-                index = i;
-                break;
+namespace string_search {
+    /**
+     * Find a pattern in a string by comparing the pattern to every substring.
+     * @param text     Any string that might contain the pattern.
+     * @param pattern  String that we are searching for.
+     * @return         Index where the pattern starts in the text
+     * @return         -1 if the pattern was not found.
+     */
+    int brute_force(const std::string &text, const std::string &pattern) {
+        size_t pat_l = pattern.length();
+        size_t txt_l = text.length();
+        int index = -1;
+        if (pat_l <= txt_l) {
+            for (size_t i = 0; i < txt_l - pat_l + 1; i++) {
+                std::string s = text.substr(i, pat_l);
+                if (s == pattern) {
+                    index = i;
+                    break;
+                }
             }
         }
+        return index;
     }
-    return index;
-}
+}  // namespace string_search
+
+using string_search::brute_force;
 
 /** set of test cases */
 const std::vector<std::vector<std::string>> test_set = {
