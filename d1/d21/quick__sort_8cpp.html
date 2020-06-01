@@ -75,6 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">quick_sort.cpp File Reference</div>  </div>
@@ -92,12 +93,18 @@ Include dependency graph for quick_sort.cpp:</div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d5/d91/namespacesorting"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
+<tr class="memdesc:d5/d91/namespacesorting"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting algorithms. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2f0658d814c1e14b49d419add95c79b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a2f0658d814c1e14b49d419add95c79b9">partition</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a2f0658d814c1e14b49d419add95c79b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6deda3bd254bf5da0c533d0a02b81922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a6deda3bd254bf5da0c533d0a02b81922">quickSort</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a6deda3bd254bf5da0c533d0a02b81922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7f25f31c50523990437abf2ac3907e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a> (int arr[], int low, int high)</td></tr>
+<tr class="separator:a7e7f25f31c50523990437abf2ac3907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b66a1c652291b9a346ec7342967178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a> (int arr[], int low, int high)</td></tr>
+<tr class="separator:a50b66a1c652291b9a346ec7342967178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34859945724cc7de3cc71936715aec6"><td class="memItemLeft" align="right" valign="top"><a id="ad34859945724cc7de3cc71936715aec6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (int arr[], int size)</td></tr>
 <tr class="separator:ad34859945724cc7de3cc71936715aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,7 +120,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (int arr[], 
 <li>Pick a random element as pivot</li>
 <li>Pick median as pivot</li>
 </ol>
-<p>The key process in quickSort is <a class="el" href="../../d1/d21/quick__sort_8cpp.html#a2f0658d814c1e14b49d419add95c79b9">partition()</a>. Target of partition is, given an array and an element x(say) of array as pivot, put x at it's correct position in sorted array and put all smaller elements (samller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time </p>
+<p>The key process in quickSort is <a class="el" href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">partition()</a>. Target of partition is, given an array and an element x(say) of array as pivot, put x at it's correct position in sorted array and put all smaller elements (samller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
@@ -130,144 +137,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (int arr[], 
       </table>
 </div><div class="memdoc">
 <p>Driver program to test above functions </p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;           {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number of elements : &quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> *arr = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the unsorted elements : &quot;</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d1/d21/quick__sort_8cpp.html#a6deda3bd254bf5da0c533d0a02b81922">quickSort</a>(arr, 0, size);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted array\n&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed">show</a>(arr, size);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">delete</span>[] arr;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;           {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number of elements : &quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> *arr = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the unsorted elements : &quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">quickSort</a>(arr, 0, size);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted array\n&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed">show</a>(arr, size);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">delete</span>[] arr;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="303" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a2f0658d814c1e14b49d419add95c79b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f0658d814c1e14b49d419add95c79b9">&#9670;&nbsp;</a></span>partition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int partition </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arr</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot </p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                            {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> pivot = arr[high];  <span class="comment">// taking the last element as pivot</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> i = (low - 1);      <span class="comment">// Index of smaller element</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = low; j &lt; high; j++) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// If current element is smaller than or</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// equal to pivot</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (arr[j] &lt;= pivot) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            i++;  <span class="comment">// increment index of smaller element</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">int</span> temp = arr[i];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            arr[i] = arr[j];</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            arr[j] = temp;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> temp = arr[i + 1];</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    arr[i + 1] = arr[high];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    arr[high] = temp;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> (i + 1);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6deda3bd254bf5da0c533d0a02b81922"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6deda3bd254bf5da0c533d0a02b81922">&#9670;&nbsp;</a></span>quickSort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void quickSort </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arr</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The main function that implements QuickSort arr[] --&gt; Array to be sorted, low --&gt; Starting index, high --&gt; Ending index </p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                             {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (low &lt; high) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">int</span> p = <a class="code" href="../../d1/d21/quick__sort_8cpp.html#a2f0658d814c1e14b49d419add95c79b9">partition</a>(arr, low, high);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d1/d21/quick__sort_8cpp.html#a6deda3bd254bf5da0c533d0a02b81922">quickSort</a>(arr, low, p - 1);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d1/d21/quick__sort_8cpp.html#a6deda3bd254bf5da0c533d0a02b81922">quickSort</a>(arr, p + 1, high);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_a6deda3bd254bf5da0c533d0a02b81922_cgraph.svg" width="204" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aquick__sort_8cpp_html_a2f0658d814c1e14b49d419add95c79b9"><div class="ttname"><a href="../../d1/d21/quick__sort_8cpp.html#a2f0658d814c1e14b49d419add95c79b9">partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:36</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aquick__sort_8cpp_html_a6deda3bd254bf5da0c533d0a02b81922"><div class="ttname"><a href="../../d1/d21/quick__sort_8cpp.html#a6deda3bd254bf5da0c533d0a02b81922">quickSort</a></div><div class="ttdeci">void quickSort(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:62</div></div>
 <div class="ttc" id="atower__of__hanoi_8cpp_html_a746d9a3984bba88fd6dd91978f6931ed"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed">show</a></div><div class="ttdeci">void show(const struct tower *const F, const struct tower *const T, const struct tower *const U)</div><div class="ttdef"><b>Definition:</b> tower_of_hanoi.cpp:19</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
+<div class="ttc" id="anamespacesorting_html_a50b66a1c652291b9a346ec7342967178"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a></div><div class="ttdeci">void quickSort(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:63</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

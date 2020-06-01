@@ -1,7 +1,4 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,56,32"/>
 <area shape="rect" id="node2" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="104,5,176,32"/>
-<area shape="rect" id="node3" href="$de/d6a/knuth__morris__pratt_8cpp.html#a1e46810ccc39711f00b098fc291bb7c1" title=" " alt="" coords="117,56,163,83"/>
-<area shape="rect" id="node4" href="$de/d6a/knuth__morris__pratt_8cpp.html#af6b8722c6c238773e58b1d595f712e53" title=" " alt="" coords="224,31,335,57"/>
-<area shape="rect" id="node5" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="383,56,495,83"/>
 </map>

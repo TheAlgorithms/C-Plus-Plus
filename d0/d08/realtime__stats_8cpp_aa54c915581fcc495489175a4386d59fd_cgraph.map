@@ -1,13 +1,13 @@
 <map id="test_function" name="test_function">
-<area shape="rect" id="node1" title=" " alt="" coords="5,208,103,235"/>
-<area shape="rect" id="node2" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="202,5,274,32"/>
-<area shape="rect" id="node3" href="$d2/d0f/classstats__computer1.html#a4a277cbba67a6df8d5664c534a50f2a0" title=" " alt="" coords="159,56,317,83"/>
-<area shape="rect" id="node4" href="$dc/d02/classstats__computer2.html#aa8f654b856e649849cfcf1ec99a8a809" title=" " alt="" coords="159,107,317,133"/>
-<area shape="rect" id="node5" href="$d2/d0f/classstats__computer1.html#a9e41b44338568b77a937b2f6338826df" title=" " alt="" coords="151,157,325,184"/>
-<area shape="rect" id="node6" href="$dc/d02/classstats__computer2.html#a2b26832811bb8c4fff747a68923f9c0a" title=" " alt="" coords="151,208,325,235"/>
-<area shape="rect" id="node7" href="$d2/d0f/classstats__computer1.html#a661caeb92f12b585a74abb15274154ba" title=" " alt="" coords="165,309,311,336"/>
-<area shape="rect" id="node9" href="$d2/d0f/classstats__computer1.html#ac243048ca475adc0ecb81d414791b624" title=" " alt="" coords="373,265,549,292"/>
-<area shape="rect" id="node10" href="$dc/d02/classstats__computer2.html#af42ab9133ead4806ea9ff821261bd09f" title=" " alt="" coords="165,360,311,387"/>
-<area shape="rect" id="node11" href="$dc/d02/classstats__computer2.html#a0973f6b8fe1108bde3265d3f9b8e604f" title=" " alt="" coords="373,404,549,431"/>
-<area shape="rect" id="node8" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="426,341,497,368"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,260,103,287"/>
+<area shape="rect" id="node2" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="218,5,290,32"/>
+<area shape="rect" id="node3" href="$d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b" title=" " alt="" coords="164,57,344,98"/>
+<area shape="rect" id="node4" href="$d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e" title=" " alt="" coords="164,122,344,163"/>
+<area shape="rect" id="node5" href="$d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2" title=" " alt="" coords="164,187,344,229"/>
+<area shape="rect" id="node6" href="$d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534" title=" " alt="" coords="164,253,344,294"/>
+<area shape="rect" id="node7" href="$d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1" title=" " alt="" coords="151,369,357,396"/>
+<area shape="rect" id="node9" href="$d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92" title=" " alt="" coords="405,317,585,358"/>
+<area shape="rect" id="node10" href="$d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e" title=" " alt="" coords="151,420,357,447"/>
+<area shape="rect" id="node11" href="$d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555" title=" " alt="" coords="405,446,585,487"/>
+<area shape="rect" id="node8" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="460,387,531,413"/>
 </map>

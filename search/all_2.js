@@ -67,7 +67,7 @@ var searchData=
   ['bitset_156',['bitset',['http://en.cppreference.com/w/cpp/utility/bitset.html',1,'std::bitset&lt; Bits &gt;'],['http://en.cppreference.com/w/cpp/utility/bitset/bitset.html',1,'std::bitset::bitset()']]],
   ['bitset_3c_20maxn_20_3e_157',['bitset&lt; MAXN &gt;',['http://en.cppreference.com/w/cpp/utility/bitset.html',1,'std']]],
   ['boolalpha_158',['boolalpha',['http://en.cppreference.com/w/cpp/io/manip/boolalpha.html',1,'std']]],
-  ['brute_5fforce_159',['brute_force',['../d3/d7d/brute__force__string__searching_8cpp.html#a59b1155190e2813a097009a1992e72f0',1,'brute_force_string_searching.cpp']]],
+  ['brute_5fforce_159',['brute_force',['../d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search']]],
   ['brute_5fforce_5fstring_5fsearching_2ecpp_160',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
   ['bsearch_161',['bsearch',['http://en.cppreference.com/w/cpp/algorithm/bsearch.html',1,'std']]],
   ['btowc_162',['btowc',['http://en.cppreference.com/w/cpp/string/multibyte/btowc.html',1,'std']]],
