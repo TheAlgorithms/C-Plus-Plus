@@ -1,11 +1,17 @@
+/**
+ * \file
+ * \brief [Shell sort](https://en.wikipedia.org/wiki/Shell_sort) algorithm
+ */
 #include <array>
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <utility>  // for std::swap
 
-// for std::swap
-#include <utility>
-
+/** pretty print array
+ * \param[in] arr array to print
+ * \param[in] LEN length of array to print
+ */
 template <class T>
 void show_data(T *arr, size_t LEN) {
     size_t i;
@@ -14,38 +20,52 @@ void show_data(T *arr, size_t LEN) {
     std::cout << std::endl;
 }
 
+/** pretty print array
+ * \param[in] arr array to print
+ * \param[in] N length of array to print
+ */
 template <class T, size_t N>
 void show_data(T (&arr)[N]) {
     show_data(arr, N);
 }
 
-/**
- * Optimized algorithm - takes half the time by utilizing
- * Mar
- **/
-template <class T>
-void shell_sort(T *arr, size_t LEN) {
-    const unsigned int gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};
-    const unsigned int gap_len = 8;
-    size_t i, j, g;
+/** \namespace sorting
+ * \brief Sorting algorithms
+ */
+namespace sorting {
+    /**
+     * Optimized algorithm - takes half the time by utilizing
+     * Mar
+     **/
+    template <class T>
+    void shell_sort(T *arr, size_t LEN) {
+        const unsigned int gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};
+        const unsigned int gap_len = 8;
+        size_t i, j, g;
 
-    for (g = 0; g < gap_len; g++) {
-        unsigned int gap = gaps[g];
-        for (i = gap; i < LEN; i++) {
-            T tmp = arr[i];
+        for (g = 0; g < gap_len; g++) {
+            unsigned int gap = gaps[g];
+            for (i = gap; i < LEN; i++) {
+                T tmp = arr[i];
 
-            for (j = i; j >= gap && (arr[j - gap] - tmp) > 0; j -= gap)
-                arr[j] = arr[j - gap];
+                for (j = i; j >= gap && (arr[j - gap] - tmp) > 0; j -= gap)
+                    arr[j] = arr[j - gap];
 
-            arr[j] = tmp;
+                arr[j] = tmp;
+            }
         }
     }
-}
 
-template <class T, size_t N>
-void shell_sort(T (&arr)[N]) {
-    shell_sort(arr, N);
-}
+    /** function overload - when input array is of a known length array type
+     */
+    template <class T, size_t N>
+    void shell_sort(T (&arr)[N]) {
+        shell_sort(arr, N);
+    }
+
+}  // namespace sorting
+
+using sorting::shell_sort;
 
 /**
  * function to compare sorting using cstdlib's qsort
