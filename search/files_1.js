@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['bayes_5ftheorem_2ecpp_2279',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],
-  ['binary_5fexponent_2ecpp_2280',['binary_exponent.cpp',['../de/dcf/binary__exponent_8cpp.html',1,'']]],
-  ['binary_5fsearch_2ecpp_2281',['binary_search.cpp',['../df/dd5/binary__search_8cpp.html',1,'']]],
-  ['binomial_5fdist_2ecpp_2282',['binomial_dist.cpp',['../d6/db0/binomial__dist_8cpp.html',1,'']]],
-  ['bisection_5fmethod_2ecpp_2283',['bisection_method.cpp',['../d7/d6a/bisection__method_8cpp.html',1,'']]],
-  ['brute_5fforce_5fstring_5fsearching_2ecpp_2284',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
-  ['bubble_5fsort_2ecpp_2285',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
-  ['buzz_5fnumber_2ecpp_2286',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
+  ['bayes_5ftheorem_2ecpp_2281',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],
+  ['binary_5fexponent_2ecpp_2282',['binary_exponent.cpp',['../de/dcf/binary__exponent_8cpp.html',1,'']]],
+  ['binary_5fsearch_2ecpp_2283',['binary_search.cpp',['../df/dd5/binary__search_8cpp.html',1,'']]],
+  ['binomial_5fdist_2ecpp_2284',['binomial_dist.cpp',['../d6/db0/binomial__dist_8cpp.html',1,'']]],
+  ['bisection_5fmethod_2ecpp_2285',['bisection_method.cpp',['../d7/d6a/bisection__method_8cpp.html',1,'']]],
+  ['brute_5fforce_5fstring_5fsearching_2ecpp_2286',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
+  ['bubble_5fsort_2ecpp_2287',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
+  ['buzz_5fnumber_2ecpp_2288',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

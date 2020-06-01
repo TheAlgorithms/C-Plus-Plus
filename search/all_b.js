@@ -6,7 +6,7 @@ var searchData=
   ['key_5feq_742',['key_eq',['http://en.cppreference.com/w/cpp/container/unordered_map/key_eq.html',1,'std::unordered_map::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/key_eq.html',1,'std::unordered_multimap::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/key_eq.html',1,'std::unordered_multiset::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_set/key_eq.html',1,'std::unordered_set::key_eq()']]],
   ['kill_5fdependency_743',['kill_dependency',['http://en.cppreference.com/w/cpp/atomic/kill_dependency.html',1,'std']]],
   ['kilo_744',['kilo',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
-  ['kmp_745',['kmp',['../de/d6a/knuth__morris__pratt_8cpp.html#a26a58225ce7d3fa9d4c2f5349a65ed93',1,'string_search']]],
+  ['kmp_745',['kmp',['../d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93',1,'string_search']]],
   ['knuth_5fb_746',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine.html',1,'std::knuth_b'],['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',1,'std::knuth_b::knuth_b()']]],
   ['knuth_5fmorris_5fpratt_2ecpp_747',['knuth_morris_pratt.cpp',['../de/d6a/knuth__morris__pratt_8cpp.html',1,'']]]
 ];

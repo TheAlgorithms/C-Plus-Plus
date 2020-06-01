@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rabin_5fkarp_1110',['rabin_karp',['../d6/dce/rabin__karp_8cpp.html#a21c673d56cbf67b1d2ee4d869185b7d9',1,'string_search']]],
+  ['rabin_5fkarp_1110',['rabin_karp',['../d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9',1,'string_search']]],
   ['rabin_5fkarp_2ecpp_1111',['rabin_karp.cpp',['../d6/dce/rabin__karp_8cpp.html',1,'']]],
   ['raise_1112',['raise',['http://en.cppreference.com/w/cpp/utility/program/raise.html',1,'std']]],
   ['rand_1113',['rand',['http://en.cppreference.com/w/cpp/numeric/random/rand.html',1,'std']]],
@@ -35,7 +35,7 @@ var searchData=
   ['realloc_1142',['realloc',['http://en.cppreference.com/w/cpp/memory/c/realloc.html',1,'std']]],
   ['realtime_5fstats_2ecpp_1143',['realtime_stats.cpp',['../d0/d08/realtime__stats_8cpp.html',1,'']]],
   ['rec_5fternary_5fsearch_1144',['rec_ternary_search',['../dc/dfe/ternary__search_8cpp.html#a93d0099db95022f1eb90ddfd68f73ead',1,'ternary_search.cpp']]],
-  ['recalculate_5fhash_1145',['recalculate_hash',['../d6/dce/rabin__karp_8cpp.html#aed769d565b705a9b3e0eb1ec74088893',1,'string_search']]],
+  ['recalculate_5fhash_1145',['recalculate_hash',['../d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893',1,'string_search']]],
   ['recursive_5fmutex_1146',['recursive_mutex',['http://en.cppreference.com/w/cpp/thread/recursive_mutex.html',1,'std::recursive_mutex'],['http://en.cppreference.com/w/cpp/thread/recursive_mutex/recursive_mutex.html',1,'std::recursive_mutex::recursive_mutex()']]],
   ['recursive_5ftimed_5fmutex_1147',['recursive_timed_mutex',['http://en.cppreference.com/w/cpp/thread/recursive_timed_mutex.html',1,'std::recursive_timed_mutex'],['http://en.cppreference.com/w/cpp/thread/recursive_timed_mutex/recursive_timed_mutex.html',1,'std::recursive_timed_mutex::recursive_timed_mutex()']]],
   ['ref_1148',['ref',['http://en.cppreference.com/w/cpp/utility/functional/ref.html',1,'std']]],
