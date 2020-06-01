@@ -31,155 +31,164 @@
 
 #define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
 
-class adaline {
- public:
-    /**
-     * Default constructor
-     * \param[in] num_features number of features present
-     * \param[in] eta learning rate (optional, default=0.1)
-     * \param[in] convergence accuracy (optional, default=\f$1\times10^{-5}\f$)
-     */
-    adaline(int num_features, const double eta = 0.01f,
-            const double accuracy = 1e-5)
-        : eta(eta), accuracy(accuracy) {
-        if (eta <= 0) {
-            std::cerr << "learning rate should be positive and nonzero"
-                      << std::endl;
-            std::exit(EXIT_FAILURE);
-        }
-
-        weights = std::vector<double>(
-            num_features +
-            1);  // additional weight is for the constant bias term
-
-        // initialize with random weights in the range [-50, 49]
-        for (int i = 0; i < weights.size(); i++) weights[i] = 1.f;
-        // weights[i] = (static_cast<double>(std::rand() % 100) - 50);
-    }
-
-    /**
-     * Operator to print the weights of the model
-     */
-    friend std::ostream &operator<<(std::ostream &out, const adaline &ada) {
-        out << "<";
-        for (int i = 0; i < ada.weights.size(); i++) {
-            out << ada.weights[i];
-            if (i < ada.weights.size() - 1)
-                out << ", ";
-        }
-        out << ">";
-        return out;
-    }
-
-    /**
-     * predict the output of the model for given set of features
-     * \param[in] x input vector
-     * \param[out] out optional argument to return neuron output before applying
-     * activation function (optional, `nullptr` to ignore)
-     * \returns model prediction output
-     */
-    int predict(const std::vector<double> &x, double *out = nullptr) {
-        if (!check_size_match(x))
-            return 0;
-
-        double y = weights.back();  // assign bias value
-
-        // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
-        y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
-
-        if (out != nullptr)  // if out variable is provided
-            *out = y;
-
-        return activation(y);  // quantizer: apply ADALINE threshold function
-    }
-
-    /**
-     * Update the weights of the model using supervised learning for one feature
-     * vector
-     * \param[in] x feature vector
-     * \param[in] y known output  value
-     * \returns correction factor
-     */
-    double fit(const std::vector<double> &x, const int &y) {
-        if (!check_size_match(x))
-            return 0;
-
-        /* output of the model with current weights */
-        int p = predict(x);
-        int prediction_error = y - p;  // error in estimation
-        double correction_factor = eta * prediction_error;
-
-        /* update each weight, the last weight is the bias term */
-        for (int i = 0; i < x.size(); i++) {
-            weights[i] += correction_factor * x[i];
-        }
-        weights[x.size()] += correction_factor;  // update bias
-
-        return correction_factor;
-    }
-
-    /**
-     * Update the weights of the model using supervised learning for an array of
-     * vectors.
-     * \param[in] X array of feature vector
-     * \param[in] y known output value for each feature vector
-     */
-    template <int N>
-    void fit(std::vector<double> const (&X)[N], const int *y) {
-        double avg_pred_error = 1.f;
-
-        int iter;
-        for (iter = 0; (iter < MAX_ITER) && (avg_pred_error > accuracy);
-             iter++) {
-            avg_pred_error = 0.f;
-
-            // perform fit for each sample
-            for (int i = 0; i < N; i++) {
-                double err = fit(X[i], y[i]);
-                avg_pred_error += std::abs(err);
+/** \namespace machine_learning
+ * \brief Machine learning algorithms
+ */
+namespace machine_learning {
+    class adaline {
+     public:
+        /**
+         * Default constructor
+         * \param[in] num_features number of features present
+         * \param[in] eta learning rate (optional, default=0.1)
+         * \param[in] convergence accuracy (optional,
+         * default=\f$1\times10^{-5}\f$)
+         */
+        adaline(int num_features, const double eta = 0.01f,
+                const double accuracy = 1e-5)
+            : eta(eta), accuracy(accuracy) {
+            if (eta <= 0) {
+                std::cerr << "learning rate should be positive and nonzero"
+                          << std::endl;
+                std::exit(EXIT_FAILURE);
             }
-            avg_pred_error /= N;
 
-            // Print updates every 200th iteration
-            // if (iter % 100 == 0)
-            std::cout << "\tIter " << iter << ": Training weights: " << *this
-                      << "\tAvg error: " << avg_pred_error << std::endl;
+            weights = std::vector<double>(
+                num_features +
+                1);  // additional weight is for the constant bias term
+
+            // initialize with random weights in the range [-50, 49]
+            for (int i = 0; i < weights.size(); i++) weights[i] = 1.f;
+            // weights[i] = (static_cast<double>(std::rand() % 100) - 50);
         }
 
-        if (iter < MAX_ITER)
-
-            std::cout << "Converged after " << iter << " iterations."
-                      << std::endl;
-        else
-            std::cout << "Did not converge after " << iter << " iterations."
-                      << std::endl;
-    }
-
-    int activation(double x) { return x > 0 ? 1 : -1; }
-
- private:
-    /**
-     * convenient function to check if input feature vector size matches the
-     * model weights size
-     * \param[in] x fecture vector to check
-     * \returns `true` size matches
-     * \returns `false` size does not match
-     */
-    bool check_size_match(const std::vector<double> &x) {
-        if (x.size() != (weights.size() - 1)) {
-            std::cerr << __func__ << ": "
-                      << "Number of features in x does not match the feature "
-                         "dimension in model!"
-                      << std::endl;
-            return false;
+        /**
+         * Operator to print the weights of the model
+         */
+        friend std::ostream &operator<<(std::ostream &out, const adaline &ada) {
+            out << "<";
+            for (int i = 0; i < ada.weights.size(); i++) {
+                out << ada.weights[i];
+                if (i < ada.weights.size() - 1)
+                    out << ", ";
+            }
+            out << ">";
+            return out;
         }
-        return true;
-    }
 
-    const double eta;             ///< learning rate of the algorithm
-    const double accuracy;        ///< model fit convergence accuracy
-    std::vector<double> weights;  ///< weights of the neural network
-};
+        /**
+         * predict the output of the model for given set of features
+         * \param[in] x input vector
+         * \param[out] out optional argument to return neuron output before
+         * applying activation function (optional, `nullptr` to ignore) \returns
+         * model prediction output
+         */
+        int predict(const std::vector<double> &x, double *out = nullptr) {
+            if (!check_size_match(x))
+                return 0;
+
+            double y = weights.back();  // assign bias value
+
+            // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
+            y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
+
+            if (out != nullptr)  // if out variable is provided
+                *out = y;
+
+            return activation(
+                y);  // quantizer: apply ADALINE threshold function
+        }
+
+        /**
+         * Update the weights of the model using supervised learning for one
+         * feature vector \param[in] x feature vector \param[in] y known output
+         * value \returns correction factor
+         */
+        double fit(const std::vector<double> &x, const int &y) {
+            if (!check_size_match(x))
+                return 0;
+
+            /* output of the model with current weights */
+            int p = predict(x);
+            int prediction_error = y - p;  // error in estimation
+            double correction_factor = eta * prediction_error;
+
+            /* update each weight, the last weight is the bias term */
+            for (int i = 0; i < x.size(); i++) {
+                weights[i] += correction_factor * x[i];
+            }
+            weights[x.size()] += correction_factor;  // update bias
+
+            return correction_factor;
+        }
+
+        /**
+         * Update the weights of the model using supervised learning for an
+         * array of vectors. \param[in] X array of feature vector \param[in] y
+         * known output value for each feature vector
+         */
+        template <int N>
+        void fit(std::vector<double> const (&X)[N], const int *y) {
+            double avg_pred_error = 1.f;
+
+            int iter;
+            for (iter = 0; (iter < MAX_ITER) && (avg_pred_error > accuracy);
+                 iter++) {
+                avg_pred_error = 0.f;
+
+                // perform fit for each sample
+                for (int i = 0; i < N; i++) {
+                    double err = fit(X[i], y[i]);
+                    avg_pred_error += std::abs(err);
+                }
+                avg_pred_error /= N;
+
+                // Print updates every 200th iteration
+                // if (iter % 100 == 0)
+                std::cout << "\tIter " << iter
+                          << ": Training weights: " << *this
+                          << "\tAvg error: " << avg_pred_error << std::endl;
+            }
+
+            if (iter < MAX_ITER)
+
+                std::cout << "Converged after " << iter << " iterations."
+                          << std::endl;
+            else
+                std::cout << "Did not converge after " << iter << " iterations."
+                          << std::endl;
+        }
+
+        int activation(double x) { return x > 0 ? 1 : -1; }
+
+     private:
+        /**
+         * convenient function to check if input feature vector size matches the
+         * model weights size
+         * \param[in] x fecture vector to check
+         * \returns `true` size matches
+         * \returns `false` size does not match
+         */
+        bool check_size_match(const std::vector<double> &x) {
+            if (x.size() != (weights.size() - 1)) {
+                std::cerr
+                    << __func__ << ": "
+                    << "Number of features in x does not match the feature "
+                       "dimension in model!"
+                    << std::endl;
+                return false;
+            }
+            return true;
+        }
+
+        const double eta;             ///< learning rate of the algorithm
+        const double accuracy;        ///< model fit convergence accuracy
+        std::vector<double> weights;  ///< weights of the neural network
+    };
+
+}  // namespace machine_learning
+
+using machine_learning::adaline;
 
 /**
  * test function to predict points in a 2D coordinate system above the line
