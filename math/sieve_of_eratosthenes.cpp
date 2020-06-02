@@ -1,5 +1,5 @@
 /*
- * Sieve of Eratosthenes is an algorithm to find the primes 
+ * Sieve of Eratosthenes is an algorithm to find the primes
  * that is between 2 to N (as defined in main).
  *
  * Time Complexity  : O(N * log N)
@@ -11,26 +11,26 @@ using namespace std;
 
 #define MAX 10000000
 
-int isprime[MAX];
+bool isprime[MAX];
 
 /*
- * This is the function that finds the primes and eliminates 
+ * This is the function that finds the primes and eliminates
  * the multiples.
  */
 void sieve(int N)
 {
-    isprime[0] = 0;
-    isprime[1] = 0;
-    for (int i = 2; i <= N; i++)
-    {
-        if (isprime[i])
-        {
-            for (int j = i * 2; j <= N; j += i)
-            {
-                isprime[j] = 0;
-            }
-        }
-    }
+	isprime[0] = true;
+	isprime[1] = true;
+	for (int i = 2; i * i <= N; ++i)
+	{
+		if (!isprime[i])
+		{
+			for (int j = i * i; j <= N; j = j + i)
+			{
+				isprime[j] = true;
+			}
+		}
+	}
 }
 
 /*
@@ -38,32 +38,19 @@ void sieve(int N)
  */
 void print(int N)
 {
-    for (int i = 1; i <= N; i++)
-    {
-        if (isprime[i] == 1)
-        {
-            cout << i << ' ';
-        }
-    }
-    cout << '\n';
-}
-
-/*
- * NOTE: This function is important for the 
- * initialization of the array.
- */
-void init()
-{
-    for (int i = 1; i < MAX; i++)
-    {
-        isprime[i] = 1;
-    }
+	for (int i = 1; i <= N; i++)
+	{
+		if (!isprime[i])
+		{
+			cout << i << ' ';
+		}
+	}
+	cout << '\n';
 }
 
 int main()
 {
-    int N = 100;
-    init();
-    sieve(N);
-    print(N);
+	int N = 100;
+	sieve(N);
+	print(N);
 }
