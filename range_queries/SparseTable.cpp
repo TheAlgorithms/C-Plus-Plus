@@ -25,7 +25,7 @@ void computeLogs(int n) {
 void buildTable(int n) {
     int i, j, curLen;
     for (i = 0 ; i <= logs[n] ; i++) {
-        curLen = 1LL<<i;
+        curLen = 1LL << i;
         for (j = 0 ; j + curLen < n ; j++) {
             if (curLen == 1)
                 table[i][j] = A[j];
