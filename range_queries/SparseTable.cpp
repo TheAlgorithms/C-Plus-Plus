@@ -6,7 +6,6 @@
 
 
 #include<iostream>
-using namespace std;
 
 const int N = 100005;
 const int LOGN = 20;
@@ -30,7 +29,7 @@ void buildTable(int n) {
             if (curLen == 1)
                 table[i][j] = A[j];
             else
-                table[i][j] = min(table[i-1][j], table[i-1][j + curLen/2]);
+                table[i][j] = std::min(table[i-1][j], table[i-1][j + curLen/2]);
         }
     }
 }
@@ -38,13 +37,11 @@ void buildTable(int n) {
 int getMinimum(int beg, int end) {
     int p = logs[end - beg + 1];
     int pLen = 1LL << p;
-    return min(table[p][beg], table[p][end - pLen + 1]);
+    return std::min(table[p][beg], table[p][end - pLen + 1]);
 }
 
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-
     int i, n, x;
     scanf("%d", &n);
     for (i = 0 ; i < n ; i++)
