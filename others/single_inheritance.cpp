@@ -1,4 +1,4 @@
-// A simple program to demonstrate single inheritance 
+// A simple program to demonstrate single inheritance
 #include<iostream>
 
 using std::cout;
@@ -6,16 +6,16 @@ using std::cout;
 class A{
     int a = 4;
     int b = 9;
-public:
+ public:
     int mul() {
             int c = a*b;
             return c;
     }
 };
 // class B inherits the objects from class A
-class B: private A{
-public:
-    void display(){
+class B: private A {
+ public:
+    void display() {
                 int res = mul();
                 std::cout << "Product: " << res << endl;
 	}
