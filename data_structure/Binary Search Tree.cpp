@@ -99,14 +99,39 @@ class BST:public tree // inheriting all function of tree class
 		node *rootNode=NULL; // to store the root node
 		
 	public:
-		node *get_root(){
-			return this->rootNode;
-		}
+		node *parent(node *root,node *child); // helpher function to find parent of the node
 		node *min(node *root);
 		node *max(node *root); // return node which has max value
-		node *insert(node *root,int data);
-		void remove(node *root,int data);
+		node *insert(node *root,int data); // recurcive insert method that can be extended for AVL tree
+		void remove(node *root,int data); //BST deletion
 };
+node *BST::parent(node *root,node *child)
+{
+	if(root==NULL)
+	{
+		return NULL;
+	}
+	else if(root->left!=NULL and root->left->data==child->data)
+	{
+		return root;
+	}
+	else if(root->right!=NULL and root->right->data==child->data)
+	{
+		return root;
+	}
+	else
+	{
+		if(root->data>child->data)
+		{
+			return parent(root->left,child);
+		}
+		else
+		{
+			return parent(root->right,child);
+		}
+		return root;
+	}
+}
 node * BST::max(node *root)
 {
 	if(root==NULL)
@@ -202,7 +227,9 @@ void BST::remove(node *root,int data)
 	{
 		return ;
 	}
-	// not considering root deletion and we are reaching the parent of the node that is to be deleted 
+	// not considering root deletion and we are reaching the parent of the node that is to be deleted
+	
+	// by reaching the parent of that node we can perform deletion  
 	else if(!this->isleaf(root) and data!=this->rootNode->data) 
 	{
 		node *temp;
@@ -237,13 +264,15 @@ void BST::remove(node *root,int data)
 				node *y=min(temp->right); // left most element of right sub tree;
 				if(x!=NULL)
 				{
+					node *parent_element=this->parent(root,x);
 					swap(x->data,temp->data); 
-					this->remove(this->rootNode,data);
+					this->remove(parent_element,data);
 				}
 				else if(y!=NULL)
 				{
+					node *parent_element=this->parent(root,y);
 					swap(y->data,temp->data);
-					this->remove(this->rootNode,data);
+					this->remove(parent_element,data);
 				}
 				return ;
 			}
@@ -278,13 +307,15 @@ void BST::remove(node *root,int data)
 				node *y=min(temp->right); // left most element of right sub tree;
 				if(x!=NULL)
 				{
-					swap(x->data,temp->data); 
-					this->remove(this->rootNode,data);
+					node *parent_element=this->parent(root,x);
+					swap(x->data,temp->data); // replaing x with temp
+					this->remove(parent_element,data); // know as temp parent is know and x is leaf node again call remove function
 				}
 				else if(y!=NULL)
 				{
-					swap(y->data,temp->data);
-					this->remove(this->rootNode,data);
+					node *parent_element=this->parent(root,y);
+					swap(y->data,temp->data);  //replaing y with temp
+					this->remove(parent_element,data); // know as temp parent is know and x is leaf node again call remove function
 				}
 			}
 		}
@@ -312,16 +343,18 @@ void BST::remove(node *root,int data)
 		node *y=min(root->right); // left most element of right sub tree;
 		if(x!=NULL)
 		{
-			swap(x->data,root->data); 
-			this->remove(this->rootNode,data);
-			this->rootNode=x; // after removing the old root we have to set new root
+			node *parent_element=this->parent(this->rootNode,x);
+			swap(x->data,root->data);
+			this->remove(parent_element,data);
+			this->rootNode->data=root->data;
 			return ;
 		}
 		else if(y!=NULL)
 		{
+			node *parent_element=this->parent(this->rootNode,y);
 			swap(y->data,root->data);
-			this->remove(this->rootNode,data);
-			this->rootNode=y; // after removing the old root we have to set new root
+			this->remove(parent_element,data);
+			this->rootNode->data=root->data;
 			return ;
 		}
 	}
@@ -334,17 +367,15 @@ void test()
 	root=B->insert(root,7);
 	root=B->insert(root,10);
 	root=B->insert(root,5);
-	root=B->insert(root,8);
 	root=B->insert(root,11);
 	root=B->insert(root,13);
-	root=B->insert(root,12);
-	B->BFS(root);
-	B->remove(root,7);cout<<endl;
-	B->BFS(root);
-	B->remove(root,10);cout<<endl;
-	B->BFS(root);
-	B->remove(root,9);cout<<endl;
-	B->BFS(root);
+	B->BFS(root);cout<<endl;
+	B->inorder(root);cout<<endl;
+	B->remove(root,8); // removing the leaft element
+	B->remove(root,7); // removing the element with only one child
+	B->remove(root,9); // removing the root and node with two elements
+	B->inorder(root);cout<<endl;
+	B->BFS(root);cout<<endl; // all corner cases are verified please let me know if i missed any
 }
 int main()
 {
