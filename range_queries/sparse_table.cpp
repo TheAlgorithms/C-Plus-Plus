@@ -6,6 +6,7 @@
 
 
 #include<iostream>
+#include<algorithm>
 
 const int N = 100005;
 const int LOGN = 20;
