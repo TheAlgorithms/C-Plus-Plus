@@ -292,7 +292,7 @@ class CycleCheck {
  */
 int main() {
     // Instantiate the graph.
-    Graph g(7, {{0, 1}, {1, 2}, {2, 0}, {2, 5}, {3, 5}});
+    Graph g(7, std::vector<Edge>{{0, 1}, {1, 2}, {2, 0}, {2, 5}, {3, 5}});
     // Check for cycle using BFS method.
     std::cout << CycleCheck::isCyclicBFS(g) << '\n';
 
