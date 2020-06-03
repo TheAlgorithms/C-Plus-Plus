@@ -109,7 +109,7 @@ class Graph {
      */
     Graph(unsigned int vertices, std::vector<Edge>&& edges)
         : m_vertices(vertices) {
-        for (auto&& edge : std::move(edges)) {
+        for (auto&& edge : edges) {
             if (edge.src >= vertices || edge.dest >= vertices) {
                 throw std::range_error(
                     "Either src or dest of edge out of range");
