@@ -183,10 +183,10 @@ class CycleCheck {
      * @return true if graph has a cycle, else false.
      */
     static bool isCyclicDFSHelper(AdjList const& adjList,
-                                  std::vector<nodeStates>& state,
+                                  std::vector<nodeStates>* state,
                                   unsigned int node) {
         // Add node "in_stack" state.
-        state[node] = in_stack;
+        (*state)[node] = in_stack;
 
         // If the node has children, then recursively visit all children of the
         // node.
@@ -194,7 +194,7 @@ class CycleCheck {
             for (auto child : it->second) {
                 // If state of child node is "not_visited", evaluate that child
                 // for presence of cycle.
-                if (auto state_of_child = state[child];
+                if (auto state_of_child = (*state)[child];
                     state_of_child == not_visited) {
                     if (isCyclicDFSHelper(adjList, state, child)) {
                         return true;
@@ -210,7 +210,7 @@ class CycleCheck {
 
         // Current node has been evaluated for the presence of cycle and had no
         // cycle. Mark current node as "visited".
-        state[node] = visited;
+        (*state)[node] = visited;
         // Return that current node didn't result in any cycles.
         return false;
     }
@@ -240,7 +240,7 @@ class CycleCheck {
             // node as it has already been checked for presence of cycle.
             if (state[node] == not_visited) {
                 // Check for cycle.
-                if (isCyclicDFSHelper(graph.getAdjList(), state, node)) {
+                if (isCyclicDFSHelper(graph.getAdjList(), &state, node)) {
                     return true;
                 }
             }
