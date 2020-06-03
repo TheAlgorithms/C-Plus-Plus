@@ -98,26 +98,6 @@ class Graph {
         }
     }
 
-    /** Create a graph from vertices and a set of edges.
-     *
-     * Adjacency list of the graph would be created from the set of edges. If
-     * the source or destination of any edge has a value greater or equal to
-     * number of vertices, then it would throw a range_error.
-     *
-     * @param vertices specify the number of vertices the graph would contain.
-     * @param edges is a vector of edges.
-     */
-    Graph(unsigned int vertices, std::vector<Edge>&& edges)
-        : m_vertices(vertices) {
-        for (auto&& edge : edges) {
-            if (edge.src >= vertices || edge.dest >= vertices) {
-                throw std::range_error(
-                    "Either src or dest of edge out of range");
-            }
-            m_adjList[edge.src].emplace_back(std::move(edge.dest));
-        }
-    }
-
     /** Return a const reference of the adjacency list.
      *
      * @return const reference to the adjacency list
