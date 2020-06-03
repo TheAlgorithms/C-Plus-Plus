@@ -41,7 +41,6 @@ void print(int N) {
 }
 
 int main() {
-  fastio();
   int N = 100;
   sieve(N);
   print(N);
