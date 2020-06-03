@@ -39,7 +39,7 @@ struct Edge {
      * @param source is the source vertex of the edge.
      * @param destination is the destination vertex of the edge.
      */
-    Edge(unsigned int const& source, unsigned int const& destination)
+    Edge(unsigned int source, unsigned int destination)
         : src(source), dest(destination) {}
 };
 
@@ -67,7 +67,7 @@ class Graph {
      * @param vertices specify the number of vertices the graph would contain.
      * @param adjList is the adjacency list representation of graph.
      */
-    Graph(unsigned int const& vertices, AdjList const& adjList)
+    Graph(unsigned int vertices, AdjList const& adjList)
         : m_vertices(vertices), m_adjList(adjList) {}
 
     /** Create a graph from vertices and adjacency list.
@@ -75,7 +75,7 @@ class Graph {
      * @param vertices specify the number of vertices the graph would contain.
      * @param adjList is the adjacency list representation of graph.
      */
-    Graph(unsigned int const& vertices, AdjList&& adjList)
+    Graph(unsigned int vertices, AdjList&& adjList)
         : m_vertices(std::move(vertices)), m_adjList(std::move(adjList)) {}
 
     /** Create a graph from vertices and a set of edges.
@@ -87,7 +87,7 @@ class Graph {
      * @param vertices specify the number of vertices the graph would contain.
      * @param edges is a vector of edges.
      */
-    Graph(unsigned int const& vertices, std::vector<Edge> const& edges)
+    Graph(unsigned int vertices, std::vector<Edge> const& edges)
         : m_vertices(vertices) {
         for (auto const& edge : edges) {
             if (edge.src >= vertices || edge.dest >= vertices) {
@@ -107,7 +107,7 @@ class Graph {
      * @param vertices specify the number of vertices the graph would contain.
      * @param edges is a vector of edges.
      */
-    Graph(unsigned int const& vertices, std::vector<Edge>&& edges)
+    Graph(unsigned int vertices, std::vector<Edge>&& edges)
         : m_vertices(vertices) {
         for (auto&& edge : std::move(edges)) {
             if (edge.src >= vertices || edge.dest >= vertices) {
@@ -157,7 +157,7 @@ class Graph {
      * @param source is source vertex of the edge.
      * @param destination is the destination vertex of the edge.
      */
-    void addEdge(unsigned int const& source, unsigned int const& destination) {
+    void addEdge(unsigned int source, unsigned int destination) {
         if (source >= m_vertices || destination >= m_vertices) {
             throw std::range_error(
                 "Either source or destination of edge out of range");
