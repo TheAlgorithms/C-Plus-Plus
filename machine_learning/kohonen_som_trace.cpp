@@ -413,6 +413,8 @@ int main(int argc, char **argv) {
     std::cout << "NOT using OpenMP based parallelization\n";
 #endif
 
+    std::srand(std::time(nullptr));
+
     std::clock_t start_clk = std::clock();
     test1();
     auto end_clk = std::clock();
