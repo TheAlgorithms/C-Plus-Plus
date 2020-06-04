@@ -1,9 +1,0 @@
-<map id="fast_power_linear" name="fast_power_linear">
-<area shape="rect" id="node2" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="225,56,276,83"/>
-<area shape="rect" id="node8" href="$d2/d0b/fast__power_8cpp.html#a39936d17cc4eeb3b366285bd1eb01456" title="fast_power_recursive" alt="" coords="177,107,324,133"/>
-<area shape="rect" id="node3" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045" title="fit_OLS_regressor" alt="" coords="386,31,513,57"/>
-<area shape="rect" id="node7" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7" title="predict_OLS_regressor" alt="" coords="372,81,527,108"/>
-<area shape="rect" id="node4" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a889f9de199fa793497c864d8e493af05" title="get_transpose" alt="" coords="575,5,679,32"/>
-<area shape="rect" id="node5" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a98ab8f75d981088369b89b8be2182483" title="get_inverse" alt="" coords="582,56,671,83"/>
-<area shape="rect" id="node6" href="$dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f" title="is_square" alt="" coords="727,56,805,83"/>
-</map>
