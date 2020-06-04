@@ -1,12 +1,11 @@
 #include <iostream>
-using namespace std;
 
 int *stack;
-int top = 0, size;
+int top = 0, stack_size;
 
 void push(int x) {
-    if (top == size) {
-        cout << "\nOverflow";
+    if (top == stack_size) {
+        std::cout << "\nOverflow";
     } else {
         stack[top++] = x;
     }
@@ -14,34 +13,34 @@ void push(int x) {
 
 void pop() {
     if (top == 0) {
-        cout << "\nUnderflow";
+        std::cout << "\nUnderflow";
     } else {
-        cout << "\n" << stack[--top] << " deleted";
+        std::cout << "\n" << stack[--top] << " deleted";
     }
 }
 
 void show() {
     for (int i = 0; i < top; i++) {
-        cout << stack[i] << "\n";
+        std::cout << stack[i] << "\n";
     }
 }
 
-void topmost() { cout << "\nTopmost element: " << stack[top - 1]; }
+void topmost() { std::cout << "\nTopmost element: " << stack[top - 1]; }
 int main() {
-    cout << "\nEnter Size of stack : ";
-    cin >> size;
-    stack = new int[size];
+    std::cout << "\nEnter stack_size of stack : ";
+    std::cin >> stack_size;
+    stack = new int[stack_size];
     int ch, x;
     do {
-        cout << "\n1. Push";
-        cout << "\n2. Pop";
-        cout << "\n3. Print";
-        cout << "\n4. Print topmost element:";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n1. Push";
+        std::cout << "\n2. Pop";
+        std::cout << "\n3. Print";
+        std::cout << "\n4. Print topmost element:";
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         if (ch == 1) {
-            cout << "\nInsert : ";
-            cin >> x;
+            std::cout << "\nInsert : ";
+            std::cin >> x;
             push(x);
         } else if (ch == 2) {
             pop();
