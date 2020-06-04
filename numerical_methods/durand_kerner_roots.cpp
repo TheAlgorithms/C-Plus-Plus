@@ -63,9 +63,10 @@ std::complex<double> poly_function(const std::valarray<double> &coeffs,
  * \returns pointer to converted string
  */
 const char *complex_str(const std::complex<double> &x) {
-    static char msg[50];
+#define MAX_BUFF_SIZE 50
+    static char msg[MAX_BUFF_SIZE];
 
-    sprintf(msg, "% 7.04g%+7.04gj", x.real(), x.imag());
+    std::snprintf(msg, MAX_BUFF_SIZE, "% 7.04g%+7.04gj", x.real(), x.imag());
 
     return msg;
 }
@@ -148,7 +149,10 @@ int main(int argc, char **argv) {
 
     // numerical errors less when the first coefficient is "1"
     // hence, we normalize the first coefficient
-    coeffs /= coeffs[0];
+    {
+        double tmp = coeffs[0];
+        coeffs /= tmp;
+    }
 
 #if defined(DEBUG) || !defined(NDEBUG)
     log_file << "avg. correction";
@@ -157,7 +161,7 @@ int main(int argc, char **argv) {
 #endif
 
     double tol_condition = 1;
-    unsigned long iter = 0;
+    uint32_t iter = 0;
 
     clock_t end_time, start_time = clock();
     while (!check_termination(tol_condition) && iter < INT_MAX) {
@@ -220,7 +224,8 @@ end:
         std::cout << "\t" << complex_str(s0[n]) << "\n";
     std::cout << "absolute average change: " << tol_condition << "\n";
     std::cout << "Time taken: "
-              << (end_time - start_time) / (double)CLOCKS_PER_SEC << " sec\n";
+              << static_cast<double>(end_time - start_time) / CLOCKS_PER_SEC
+              << " sec\n";
 
     return 0;
 }
