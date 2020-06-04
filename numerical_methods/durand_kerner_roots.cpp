@@ -130,7 +130,7 @@ int main(int argc, char **argv) {
     for (n = 0; n < degree; n++) {
         coeffs[n] = strtod(argv[n + 1], nullptr);
         if (n < degree - 1 && coeffs[n] != 0)
-            std::cout << "(" << coeffs[n] << ") x^" << degree - n - 1 << " + ,";
+            std::cout << "(" << coeffs[n] << ") x^" << degree - n - 1 << " + ";
         else if (coeffs[n] != 0)
             std::cout << "(" << coeffs[n] << ") x^" << degree - n - 1
                       << " = 0\n";
