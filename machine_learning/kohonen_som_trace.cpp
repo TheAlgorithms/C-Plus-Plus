@@ -402,7 +402,7 @@ void test3() {
  * \returns time difference in seconds
  */
 double get_clock_diff(clock_t start_t, clock_t end_t) {
-    return (double)(end_t - start_t) / (double)CLOCKS_PER_SEC;
+    return static_cast<double>(end_t - start_t) / CLOCKS_PER_SEC;
 }
 
 /** Main function */
