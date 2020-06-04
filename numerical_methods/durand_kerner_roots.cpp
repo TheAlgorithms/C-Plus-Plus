@@ -166,7 +166,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
         // tol_condition /= (degree - 1);
 
         if (break_loop)
-            break;
+            continue;
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
