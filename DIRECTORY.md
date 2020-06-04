@@ -10,6 +10,14 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
+## Computer Oriented Statistical Methods
+  * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/bisection_method.cpp)
+  * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false_position.cpp)
+  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/gaussian_elimination.cpp)
+  * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/newton_raphson_method.cpp)
+  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/ordinary_least_squares_regressor.cpp)
+  * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/successive_approximation.cpp)
+
 ## Data Structure
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/avltree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/binary_search_tree.cpp)
@@ -40,7 +48,7 @@
     * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.cpp)
     * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.h)
     * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/test_stack.cpp)
-  * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/Tree.cpp)
+  * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/tree.cpp)
   * [Trie Modern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_modern.cpp)
   * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_tree.cpp)
 
@@ -73,6 +81,7 @@
   * [Bridge Finding With Tarjan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bridge_finding_with_tarjan_algorithm.cpp)
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
   * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
+  * [Cycle Check Directed Graph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/cycle_check_directed_graph.cpp)
   * [Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs.cpp)
   * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs_with_stack.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dijkstra.cpp)
@@ -99,7 +108,6 @@
 
 ## Machine Learning
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
-  * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
 
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
@@ -126,15 +134,6 @@
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
   * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/string_fibonacci.cpp)
-
-## Numerical Methods
-  * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
-  * [Durand Kerner Roots](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/durand_kerner_roots.cpp)
-  * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/false_position.cpp)
-  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
-  * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
-  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ordinary_least_squares_regressor.cpp)
-  * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/successive_approximation.cpp)
 
 ## Operations On Datastructures
   * [Array Left Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/array_left_rotation.cpp)
