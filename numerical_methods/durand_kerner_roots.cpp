@@ -20,6 +20,7 @@
  * \f$x^4-1=0\f$:\n
  * ![Error
  * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_error.svg)
+ *
  * ![Roots
  * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_roots.svg)
  */
@@ -168,17 +169,15 @@ std::pair<uint32_t, double> durand_kerner_algo(
 #pragma omp critical
 #endif
             tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));
-
-            if (log_file.is_open())
-#ifdef _OPENMP
-#pragma omp critical
-#endif
-                log_file << complex_str((*roots)[n]) << ",";
         }
         // tol_condition /= (degree - 1);
 
         if (break_loop)
             break;
+
+        if (log_file.is_open())
+            for (n = 0; n < roots->size(); n++)
+                log_file << complex_str((*roots)[n]) << ",";
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
