@@ -15,7 +15,6 @@
  */
 #define _USE_MATH_DEFINES  // required for MS Visual C++
 #include <algorithm>
-#include <chrono>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
@@ -395,6 +394,17 @@ void test3() {
     save_nd_data("w32.csv", W);       // save the resultant weights
 }
 
+/**
+ * Convert clock cycle difference to time in seconds
+ *
+ * \param[in] start_t start clock
+ * \param[in] end_t end clock
+ * \returns time difference in seconds
+ */
+double get_clock_diff(clock_t start_t, clock_t end_t) {
+    return (double)(end_t - start_t) / (double)CLOCKS_PER_SEC;
+}
+
 /** Main function */
 int main(int argc, char **argv) {
 #ifdef _OPENMP
@@ -403,23 +413,23 @@ int main(int argc, char **argv) {
     std::cout << "NOT using OpenMP based parallelization\n";
 #endif
 
-    auto start_clk = std::chrono::steady_clock::now();
+    std::clock_t start_clk = std::clock();
     test1();
-    auto end_clk = std::chrono::steady_clock::now();
-    std::chrono::duration<double> time_diff = end_clk - start_clk;
-    std::cout << "Test 1 completed in " << time_diff.count() << " sec\n";
+    auto end_clk = std::clock();
+    std::cout << "Test 1 completed in " << get_clock_diff(start_clk, end_clk)
+              << " sec\n";
 
-    start_clk = std::chrono::steady_clock::now();
+    start_clk = std::clock();
     test2();
-    end_clk = std::chrono::steady_clock::now();
-    time_diff = end_clk - start_clk;
-    std::cout << "Test 2 completed in " << time_diff.count() << " sec\n";
+    end_clk = std::clock();
+    std::cout << "Test 2 completed in " << get_clock_diff(start_clk, end_clk)
+              << " sec\n";
 
-    start_clk = std::chrono::steady_clock::now();
+    start_clk = std::clock();
     test3();
-    end_clk = std::chrono::steady_clock::now();
-    time_diff = end_clk - start_clk;
-    std::cout << "Test 3 completed in " << time_diff.count() << " sec\n";
+    end_clk = std::clock();
+    std::cout << "Test 3 completed in " << get_clock_diff(start_clk, end_clk)
+              << " sec\n";
 
     std::cout
         << "(Note: Calculated times include: creating test sets, training "
