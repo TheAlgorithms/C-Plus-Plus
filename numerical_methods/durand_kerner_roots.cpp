@@ -19,14 +19,13 @@
  */
 
 #include <algorithm>
-#include <climits>
+#include <cassert>
 #include <cmath>
 #include <complex>
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
 #include <iostream>
-#include <string>
 #include <valarray>
 #ifdef _OPENMP
 #include <omp.h>
@@ -37,7 +36,6 @@
 /**
  * Evaluate the value of a polynomial with given coefficients
  * \param[in] coeffs coefficients of the polynomial
- * \param[in] degree degree of polynomial
  * \param[in] x point at which to evaluate the polynomial
  * \returns \f$f(x)\f$
  **/
@@ -177,27 +175,89 @@ std::pair<uint32_t, double> durand_kerner_algo(
     return std::pair<uint32_t, double>(iter, tol_condition);
 }
 
+/**
+ * Self test the algorithm by checking the roots for \f$x^2+4=0\f$ to which the
+ * roots are \f$0 \pm 2i\f$
+ */
+void test1() {
+    const std::valarray<double> coeffs = {1, 0, 4};  // x^2 - 2 = 0
+    std::valarray<std::complex<double>> roots = {
+        std::complex<double>(-100., 100.),
+        std::complex<double>(100., -100.)  // initial approximate roots
+    };
+    std::valarray<std::complex<double>> expected = {
+        std::complex<double>(0., 2.),
+        std::complex<double>(0., -2.)  // known expected roots
+    };
+
+    auto result = durand_kerner_algo(coeffs, &roots, false);
+
+    for (int i = 0; i < roots.size(); i++) {
+        // check if approximations are have < 0.1% error with one of the
+        // expected roots
+        bool err1 = false;
+        for (int j = 0; j < roots.size(); j++)
+            err1 |= std::abs(std::abs(roots[i] - expected[j])) < 1e-3;
+        assert(err1);
+    }
+
+    std::cout << "Test 1 passed! - " << result.first << " iterations, "
+              << result.second << " accuracy"
+              << "\n";
+}
+
+/**
+ * Self test the algorithm by checking the roots for \f$0.015625x^3-1=0\f$ to
+ * which the roots are \f$(4+0i),\,(-2\pm3.464i)\f$
+ */
+void test2() {
+    const std::valarray<double> coeffs = {// 0.015625 x^3 - 1 = 0
+                                          1. / 64., 0., 0., -1.};
+    std::valarray<std::complex<double>> roots = {
+        std::complex<double>(-100., 100.), std::complex<double>(-101., 101.),
+        std::complex<double>(2., -2.)  // initial approximate roots
+    };
+    std::valarray<std::complex<double>> expected = {
+        std::complex<double>(4., 0.), std::complex<double>(-2., 3.46410162),
+        std::complex<double>(-2., -3.46410162)  // known expected roots
+    };
+
+    auto result = durand_kerner_algo(coeffs, &roots, false);
+
+    for (int i = 0; i < roots.size(); i++) {
+        // check if approximations are have < 0.1% error with one of the
+        // expected roots
+        bool err1 = false;
+        for (int j = 0; j < roots.size(); j++)
+            err1 |= std::abs(std::abs(roots[i] - expected[j])) < 1e-3;
+        assert(err1);
+    }
+    std::cout << "Test 2 passed! - " << result.first << " iterations, "
+              << result.second << " accuracy"
+              << "\n";
+}
+
 /***
  * Main function.
- * The comandline input arguments are taken as coeffiecients of a polynomial.
- * For example, this command
+ * The comandline input arguments are taken as coeffiecients of a
+ *polynomial. For example, this command
  * ```sh
  * ./durand_kerner_roots 1 0 -4
  * ```
  * will find roots of the polynomial \f$1\cdot x^2 + 0\cdot x^1 + (-4)=0\f$
  **/
 int main(int argc, char **argv) {
-    unsigned int degree = 0;
-    unsigned int n;
+    test1();
+    test2();
 
     if (argc < 2) {
-        std::cout
-            << "Please pass the coefficients of the polynomial as commandline "
-               "arguments.\n";
+        std::cout << "Please pass the coefficients of the polynomial as "
+                     "commandline "
+                     "arguments.\n";
         return 0;
     }
 
-    degree = argc - 1;                     // detected polynomial degree
+    int n, degree = argc - 1;              // detected polynomial degree
     std::valarray<double> coeffs(degree);  // create coefficiencts array
 
     /* initialize random seed: */
