@@ -257,10 +257,9 @@ void test2() {
  * will find roots of the polynomial \f$1\cdot x^2 + 0\cdot x^1 + (-4)=0\f$
  **/
 int main(int argc, char **argv) {
-    test1();
-    test2();
-
     if (argc < 2) {
+        test1();  // run tests when no input is provided
+        test2();  // and skip tests when input polynomial is provided
         std::cout << "Please pass the coefficients of the polynomial as "
                      "commandline "
                      "arguments.\n";
