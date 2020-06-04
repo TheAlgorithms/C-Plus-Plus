@@ -7,7 +7,7 @@ var searchData=
   ['abs_28int_29_8',['abs(int)',['http://en.cppreference.com/w/cpp/numeric/math/abs.html',1,'std']]],
   ['absoluteprecision_9',['absolutePrecision',['../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc',1,'ternary_search.cpp']]],
   ['accumulate_10',['accumulate',['http://en.cppreference.com/w/cpp/algorithm/accumulate.html',1,'std']]],
-  ['accuracy_11',['accuracy',['../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3',1,'machine_learning::adaline']]],
+  ['accuracy_11',['accuracy',['../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3',1,'machine_learning::adaline::accuracy()'],['../da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689',1,'ACCURACY():&#160;durand_kerner_roots.cpp']]],
   ['acos_12',['acos',['http://en.cppreference.com/w/cpp/numeric/math/acos.html',1,'std']]],
   ['acosh_13',['acosh',['http://en.cppreference.com/w/cpp/numeric/math/acosh.html',1,'std']]],
   ['adaline_14',['adaline',['../d6/d30/classmachine__learning_1_1adaline.html',1,'machine_learning::adaline'],['../d6/d30/classmachine__learning_1_1adaline.html#a0acbe32aaab897e7939e5b0454035b8c',1,'machine_learning::adaline::adaline()']]],
