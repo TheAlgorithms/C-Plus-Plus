@@ -134,9 +134,12 @@ std::pair<uint32_t, double> durand_kerner_algo(
             log_file << "\n" << iter << ",";
 
 #ifdef _OPENMP
-#pragma omp for
+#pragma omp parallel for shared(break_loop)
 #endif
         for (n = 0; n < roots->size(); n++) {
+            if (break_loop)
+                continue;
+
             std::complex<double> numerator, denominator;
             numerator = poly_function(coeffs, (*roots)[n]);
             denominator = 1.0;
@@ -153,9 +156,6 @@ std::pair<uint32_t, double> durand_kerner_algo(
                 break_loop = true;
             }
 
-            if (break_loop)
-                break;
-
             (*roots)[n] -= delta;
 
             tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));
@@ -166,7 +166,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
         // tol_condition /= (degree - 1);
 
         if (break_loop)
-            continue;
+            break;
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
