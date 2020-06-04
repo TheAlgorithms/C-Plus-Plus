@@ -100,7 +100,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
     std::valarray<std::complex<double>> *roots, bool write_log = false) {
     double tol_condition = 1;
     uint32_t iter = 0;
-    int i, n, degree = coeffs.size();
+    int i, n;
     std::ofstream log_file;
 
     if (write_log) {
@@ -114,15 +114,15 @@ std::pair<uint32_t, double> durand_kerner_algo(
         }
         log_file << "iter#,";
 
-        for (n = 0; n < degree - 1; n++) log_file << "root_" << n << ",";
+        for (n = 0; n < roots->size(); n++) log_file << "root_" << n << ",";
 
         log_file << "avg. correction";
         log_file << "\n0,";
-        for (n = 0; n < degree - 1; n++)
+        for (n = 0; n < roots->size(); n++)
             log_file << complex_str((*roots)[n]) << ",";
     }
 
-    while (!check_termination(tol_condition) && iter < INT_MAX) {
+    while (!check_termination(tol_condition) && iter < INT16_MAX) {
         std::complex<double> delta = 0;
         tol_condition = 0;
         iter++;
@@ -133,11 +133,11 @@ std::pair<uint32_t, double> durand_kerner_algo(
 #ifdef _OPENMP
 #pragma omp for
 #endif
-        for (n = 0; n < degree - 1; n++) {
+        for (n = 0; n < roots->size(); n++) {
             std::complex<double> numerator, denominator;
             numerator = poly_function(coeffs, (*roots)[n]);
             denominator = 1.0;
-            for (i = 0; i < degree - 1; i++)
+            for (i = 0; i < roots->size(); i++)
                 if (i != n)
                     denominator *= (*roots)[n] - (*roots)[i];
 
@@ -161,7 +161,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
             std::cout << "Iter: " << iter << "\t";
-            for (n = 0; n < degree - 1; n++)
+            for (n = 0; n < roots->size(); n++)
                 std::cout << "\t" << complex_str((*roots)[n]);
             std::cout << "\t\tabsolute average change: " << tol_condition
                       << "\n";
