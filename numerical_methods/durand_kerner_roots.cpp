@@ -1,6 +1,8 @@
 /**
  * @file
- * Compute riots of any given polynomial.
+ * \brief Compute all possible approximate roots of any given polynomial using
+ * [Durand Kerner
+ * algorithm](https://en.wikipedia.org/wiki/Durand%E2%80%93Kerner_method)
  *
  * Test the algorithm online:
  * https://gist.github.com/kvedala/27f1b0b6502af935f6917673ec43bcd7
@@ -85,6 +87,16 @@ bool check_termination(long double delta) {
     return false;
 }
 
+/**
+ * Implements Durand Kerner iterative algorithm to compute all roots of a
+ * polynomial.
+ *
+ * \param[in] coeffs coefficients of the polynomial
+ * \param[out] roots the computed roots of the polynomial
+ * \param[in] write_log flag whether to save the log file (default = `false`)
+ * \returns pair of values - number of iterations taken and final accuracy
+ * achieved
+ */
 std::pair<uint32_t, double> durand_kerner_algo(
     const std::valarray<double> &coeffs,
     std::valarray<std::complex<double>> *roots, bool write_log = false) {
