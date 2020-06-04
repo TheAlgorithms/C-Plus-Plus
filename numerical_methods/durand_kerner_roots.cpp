@@ -106,7 +106,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
     std::valarray<std::complex<double>> *roots, bool write_log = false) {
     long double tol_condition = 1;
     uint32_t iter = 0;
-    int i, n;
+    int n;
     std::ofstream log_file;
 
     if (write_log) {
@@ -149,7 +149,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
             std::complex<double> numerator, denominator;
             numerator = poly_function(coeffs, (*roots)[n]);
             denominator = 1.0;
-            for (i = 0; i < roots->size(); i++)
+            for (int i = 0; i < roots->size(); i++)
                 if (i != n)
                     denominator *= (*roots)[n] - (*roots)[i];
 
