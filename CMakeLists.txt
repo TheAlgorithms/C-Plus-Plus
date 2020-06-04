@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.9)
 project(Algorithms_in_C++
     LANGUAGES CXX
     VERSION 1.0.0
@@ -53,6 +53,15 @@ if(DOXYGEN_FOUND)
     )
 endif()
 
+if(USE_OPENMP)
+    find_package(OpenMP)
+    if (OpenMP_CXX_FOUND)
+        message(STATUS "Building with OpenMP Multithreading.")
+    else()
+        message(STATUS "No OpenMP found, no multithreading.")
+    endif()
+endif()
+
 add_subdirectory(math)
 add_subdirectory(others)
 add_subdirectory(search)
@@ -62,15 +71,6 @@ add_subdirectory(geometry)
 add_subdirectory(probability)
 add_subdirectory(machine_learning)
 add_subdirectory(computer_oriented_statistical_methods)
-
-if(USE_OPENMP)
-    find_package(OpenMP)
-    if (OpenMP_CXX_FOUND)
-        message(STATUS "Building with OpenMP Multithreading.")
-    else()
-        message(STATUS "No OpenMP found, no multithreading.")
-    endif()
-endif()
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
