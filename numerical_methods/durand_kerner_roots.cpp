@@ -46,9 +46,9 @@ std::complex<double> poly_function(const std::valarray<double> &coeffs,
     double real = 0.f, imag = 0.f;
     int n;
 
-#ifdef _OPENMP
-#pragma omp parallel for reduction(+ : real, imag)
-#endif
+    // #ifdef _OPENMP
+    // #pragma omp parallel for reduction(+ : real, imag)
+    // #endif
     for (n = 0; n < coeffs.size(); n++) {
         std::complex<double> tmp =
             coeffs[n] * std::pow(x, coeffs.size() - n - 1);
@@ -132,6 +132,9 @@ std::pair<uint32_t, double> durand_kerner_algo(
         if (log_file.is_open())
             log_file << "\n" << iter << ",";
 
+#ifdef _OPENMP
+#pragma omp for
+#endif
         for (n = 0; n < degree - 1; n++) {
             std::complex<double> numerator, denominator;
             numerator = poly_function(coeffs, (*roots)[n]);
