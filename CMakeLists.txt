@@ -69,6 +69,7 @@ add_subdirectory(strings)
 add_subdirectory(sorting)
 add_subdirectory(geometry)
 add_subdirectory(probability)
+add_subdirectory(data_structures)
 add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
 
