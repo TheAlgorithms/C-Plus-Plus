@@ -1,6 +1,6 @@
 name: Doxygen CI
 
-on:
+on: 
   push:
     branches: [master]
 
@@ -25,10 +25,12 @@ jobs:
           clean: false
       - name: Move & Commit files
         run: |
-          cp -rp ./build/html/* . && rm -rf ./build && ls -lah
           git config --global user.name github-actions
           git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git add *
+          rm -rf d* && rm *.html && rm *.svg && rm *.map && rm *.md5 && rm *.png && rm *.js && rm *.css
+          git add .
+          cp -rp ./build/html/* . && rm -rf ./build && ls -lah
+          git add .
           git commit -m "Documentation for $GITHUB_SHA" ||  true
           git push --force || true
