@@ -10,47 +10,41 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
-## Computer Oriented Statistical Methods
-  * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/bisection_method.cpp)
-  * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/false_position.cpp)
-  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/gaussian_elimination.cpp)
-  * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/newton_raphson_method.cpp)
-  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/ordinary_least_squares_regressor.cpp)
-  * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/computer_oriented_statistical_methods/successive_approximation.cpp)
-
 ## Data Structure
-  * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/avltree.cpp)
-  * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/binary_search_tree.cpp)
-  * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/binaryheap.cpp)
-  * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/circular_queue_using_linked_list.cpp)
-  * Cll
-    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.cpp)
-    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/cll.h)
-    * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/cll/main_cll.cpp)
-  * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/disjoint_set.cpp)
-  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/doubly_linked_list.cpp)
-  * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linked_list.cpp)
-  * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/linkedlist_implentation_usingarray.cpp)
-  * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/list_array.cpp)
-  * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/morrisinorder.cpp)
-  * Queue
-    * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue/queue.cpp)
-    * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue/queue.h)
-    * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue/test_queue.cpp)
-  * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue_using_array.cpp)
-  * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue_using_array2.cpp)
-  * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue_using_linked_list.cpp)
-  * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/queue_using_linkedlist.cpp)
-  * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stack_using_array.cpp)
-  * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stack_using_linked_list.cpp)
-  * Stk
-    * [Main](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/main.cpp)
-    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.cpp)
-    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/stack.h)
-    * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/stk/test_stack.cpp)
-  * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/tree.cpp)
   * [Trie Modern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_modern.cpp)
-  * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structure/trie_tree.cpp)
+
+## Data Structures
+  * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
+  * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
+  * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binaryheap.cpp)
+  * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/circular_queue_using_linked_list.cpp)
+  * Cll
+    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/cll.cpp)
+    * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/cll.h)
+    * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/main_cll.cpp)
+  * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/disjoint_set.cpp)
+  * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/doubly_linked_list.cpp)
+  * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list.cpp)
+  * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linkedlist_implentation_usingarray.cpp)
+  * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/list_array.cpp)
+  * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/morrisinorder.cpp)
+  * Queue
+    * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue/queue.cpp)
+    * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue/queue.h)
+    * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue/test_queue.cpp)
+  * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array.cpp)
+  * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array2.cpp)
+  * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linked_list.cpp)
+  * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linkedlist.cpp)
+  * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
+  * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_linked_list.cpp)
+  * Stk
+    * [Main](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stk/main.cpp)
+    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stk/stack.cpp)
+    * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stk/stack.h)
+    * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stk/test_stack.cpp)
+  * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/tree.cpp)
+  * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_tree.cpp)
 
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0_1_knapsack.cpp)
@@ -108,6 +102,7 @@
 
 ## Machine Learning
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
+  * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
 
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
@@ -134,6 +129,15 @@
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
   * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/string_fibonacci.cpp)
+
+## Numerical Methods
+  * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
+  * [Durand Kerner Roots](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/durand_kerner_roots.cpp)
+  * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/false_position.cpp)
+  * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
+  * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
+  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ordinary_least_squares_regressor.cpp)
+  * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/successive_approximation.cpp)
 
 ## Operations On Datastructures
   * [Array Left Rotation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/array_left_rotation.cpp)
