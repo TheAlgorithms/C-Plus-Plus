@@ -85,6 +85,83 @@ bool check_termination(long double delta) {
     return false;
 }
 
+std::pair<uint32_t, double> durand_kerner_algo(
+    const std::valarray<double> &coeffs,
+    std::valarray<std::complex<double>> *roots, bool write_log = false) {
+    double tol_condition = 1;
+    uint32_t iter = 0;
+    int i, n, degree = coeffs.size();
+    std::ofstream log_file;
+
+    if (write_log) {
+        /*
+         * store intermediate values to a CSV file
+         */
+        log_file.open("durand_kerner.log.csv");
+        if (!log_file.is_open()) {
+            perror("Unable to create a storage log file!");
+            std::exit(EXIT_FAILURE);
+        }
+        log_file << "iter#,";
+
+        for (n = 0; n < degree - 1; n++) log_file << "root_" << n << ",";
+
+        log_file << "avg. correction";
+        log_file << "\n0,";
+        for (n = 0; n < degree - 1; n++)
+            log_file << complex_str((*roots)[n]) << ",";
+    }
+
+    while (!check_termination(tol_condition) && iter < INT_MAX) {
+        std::complex<double> delta = 0;
+        tol_condition = 0;
+        iter++;
+
+        if (log_file.is_open())
+            log_file << "\n" << iter << ",";
+
+        for (n = 0; n < degree - 1; n++) {
+            std::complex<double> numerator, denominator;
+            numerator = poly_function(coeffs, (*roots)[n]);
+            denominator = 1.0;
+            for (i = 0; i < degree - 1; i++)
+                if (i != n)
+                    denominator *= (*roots)[n] - (*roots)[i];
+
+            delta = numerator / denominator;
+
+            if (std::isnan(std::abs(delta)) || std::isinf(std::abs(delta))) {
+                std::cerr << "\n\nOverflow/underrun error - got value = "
+                          << std::abs(delta);
+                return std::pair<uint32_t, double>(iter, tol_condition);
+            }
+
+            (*roots)[n] -= delta;
+
+            tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));
+
+            if (log_file.is_open())
+                log_file << complex_str((*roots)[n]) << ",";
+        }
+        // tol_condition /= (degree - 1);
+
+#if defined(DEBUG) || !defined(NDEBUG)
+        if (iter % 500 == 0) {
+            std::cout << "Iter: " << iter << "\t";
+            for (n = 0; n < degree - 1; n++)
+                std::cout << "\t" << complex_str((*roots)[n]);
+            std::cout << "\t\tabsolute average change: " << tol_condition
+                      << "\n";
+        }
+#endif
+
+        if (log_file.is_open())
+            log_file << tol_condition;
+    }
+
+    return std::pair<uint32_t, double>(iter, tol_condition);
+}
+
 /***
  * Main function.
  * The comandline input arguments are taken as coeffiecients of a polynomial.
@@ -96,7 +173,7 @@ bool check_termination(long double delta) {
  **/
 int main(int argc, char **argv) {
     unsigned int degree = 0;
-    unsigned int n, i;
+    unsigned int n;
 
     if (argc < 2) {
         std::cout
@@ -110,19 +187,6 @@ int main(int argc, char **argv) {
 
     /* initialize random seed: */
     std::srand(std::time(nullptr));
-
-#if defined(DEBUG) || !defined(NDEBUG)
-    /*
-     * store intermediate values to a CSV file
-     */
-    std::ofstream log_file;
-    log_file.open("durand_kerner.log.csv");
-    if (!log_file.is_open()) {
-        perror("Unable to create a storage log file!");
-        return EXIT_FAILURE;
-    }
-    log_file << "iter#,";
-#endif
 
     // number of roots = degree - 1
     std::valarray<std::complex<double>> s0(degree - 1);
@@ -141,9 +205,6 @@ int main(int argc, char **argv) {
             s0[n] = std::complex<double>(std::rand() % 100, std::rand() % 100);
             s0[n] -= 50.f;
             s0[n] /= 50.f;
-#if defined(DEBUG) || !defined(NDEBUG)
-            log_file << "root_" << n << ",";
-#endif
         }
     }
 
@@ -154,75 +215,14 @@ int main(int argc, char **argv) {
         coeffs /= tmp;
     }
 
-#if defined(DEBUG) || !defined(NDEBUG)
-    log_file << "avg. correction";
-    log_file << "\n0,";
-    for (n = 0; n < degree - 1; n++) log_file << complex_str(s0[n]) << ",";
-#endif
-
-    double tol_condition = 1;
-    uint32_t iter = 0;
-
     clock_t end_time, start_time = clock();
-    while (!check_termination(tol_condition) && iter < INT_MAX) {
-        std::complex<double> delta = 0;
-        tol_condition = 0;
-        iter++;
-
-#if defined(DEBUG) || !defined(NDEBUG)
-        log_file << "\n" << iter << ",";
-#endif
-
-        for (n = 0; n < degree - 1; n++) {
-            std::complex<double> numerator, denominator;
-            numerator = poly_function(coeffs, s0[n]);
-            denominator = 1.0;
-            for (i = 0; i < degree - 1; i++)
-                if (i != n)
-                    denominator *= s0[n] - s0[i];
-
-            delta = numerator / denominator;
-
-            if (std::isnan(std::abs(delta)) || std::isinf(std::abs(delta))) {
-                std::cerr << "\n\nOverflow/underrun error - got value = "
-                          << std::abs(delta);
-                goto end;
-            }
-
-            s0[n] -= delta;
-
-            tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));
-
-#if defined(DEBUG) || !defined(NDEBUG)
-            log_file << complex_str(s0[n]) << ",";
-#endif
-        }
-        // tol_condition /= (degree - 1);
-
-#if defined(DEBUG) || !defined(NDEBUG)
-        if (iter % 500 == 0) {
-            std::cout << "Iter: " << iter << "\t";
-            for (n = 0; n < degree - 1; n++)
-                std::cout << "\t" << complex_str(s0[n]);
-            std::cout << "\t\tabsolute average change: " << tol_condition
-                      << "\n";
-        }
-
-        log_file << tol_condition;
-#endif
-    }
-end:
-
+    auto result = durand_kerner_algo(coeffs, &s0, true);
     end_time = clock();
 
-#if defined(DEBUG) || !defined(NDEBUG)
-    log_file.close();
-#endif
-
-    std::cout << "\nIterations: " << iter << "\n";
+    std::cout << "\nIterations: " << result.first << "\n";
     for (n = 0; n < degree - 1; n++)
         std::cout << "\t" << complex_str(s0[n]) << "\n";
-    std::cout << "absolute average change: " << tol_condition << "\n";
+    std::cout << "absolute average change: " << result.second << "\n";
     std::cout << "Time taken: "
               << static_cast<double>(end_time - start_time) / CLOCKS_PER_SEC
               << " sec\n";
