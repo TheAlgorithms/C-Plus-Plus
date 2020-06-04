@@ -70,7 +70,7 @@ add_subdirectory(sorting)
 add_subdirectory(geometry)
 add_subdirectory(probability)
 add_subdirectory(machine_learning)
-add_subdirectory(computer_oriented_statistical_methods)
+add_subdirectory(numerical_methods)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
