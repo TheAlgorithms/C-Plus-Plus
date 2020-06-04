@@ -16,6 +16,12 @@
  * -12870931245150988800 13803759753640704000 -8752948036761600000
  * 2432902008176640000
  * ```
+ * Sample implementation results to compute approximate roots of the equation
+ * \f$x^4-1=0\f$:\n
+ * ![Error
+ * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_error.svg)
+ * ![Roots
+ * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_roots.svg)
  */
 
 #include <algorithm>
