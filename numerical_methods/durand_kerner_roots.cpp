@@ -140,7 +140,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
             log_file << "\n" << iter << ",";
 
 #ifdef _OPENMP
-#pragma omp parallel for shared(break_loop)
+#pragma omp parallel for shared(break_loop, tol_condition)
 #endif
         for (n = 0; n < roots->size(); n++) {
             if (break_loop)
@@ -164,9 +164,15 @@ std::pair<uint32_t, double> durand_kerner_algo(
 
             (*roots)[n] -= delta;
 
+#ifdef _OPENMP
+#pragma omp critical
+#endif
             tol_condition = std::max(tol_condition, std::abs(std::abs(delta)));
 
             if (log_file.is_open())
+#ifdef _OPENMP
+#pragma omp critical
+#endif
                 log_file << complex_str((*roots)[n]) << ",";
         }
         // tol_condition /= (degree - 1);
@@ -247,9 +253,6 @@ void test2() {
     }
 
     auto result = durand_kerner_algo(coeffs, &roots, false);
-
-    for (int n = 0; n < roots.size(); n++)
-        std::cout << "\t" << complex_str(roots[n]) << "\n";
 
     for (int i = 0; i < roots.size(); i++) {
         // check if approximations are have < 0.1% error with one of the
