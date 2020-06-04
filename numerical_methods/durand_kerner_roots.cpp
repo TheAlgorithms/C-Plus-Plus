@@ -122,10 +122,13 @@ std::pair<uint32_t, double> durand_kerner_algo(
             log_file << complex_str((*roots)[n]) << ",";
     }
 
-    while (!check_termination(tol_condition) && iter < INT16_MAX) {
+    bool break_loop = false;
+    while (!check_termination(tol_condition) && iter < INT16_MAX &&
+           !break_loop) {
         std::complex<double> delta = 0;
         tol_condition = 0;
         iter++;
+        break_loop = false;
 
         if (log_file.is_open())
             log_file << "\n" << iter << ",";
@@ -146,8 +149,12 @@ std::pair<uint32_t, double> durand_kerner_algo(
             if (std::isnan(std::abs(delta)) || std::isinf(std::abs(delta))) {
                 std::cerr << "\n\nOverflow/underrun error - got value = "
                           << std::abs(delta);
-                return std::pair<uint32_t, double>(iter, tol_condition);
+                // return std::pair<uint32_t, double>(iter, tol_condition);
+                break_loop = true;
             }
+
+            if (break_loop)
+                break;
 
             (*roots)[n] -= delta;
 
@@ -157,6 +164,9 @@ std::pair<uint32_t, double> durand_kerner_algo(
                 log_file << complex_str((*roots)[n]) << ",";
         }
         // tol_condition /= (degree - 1);
+
+        if (break_loop)
+            break;
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
