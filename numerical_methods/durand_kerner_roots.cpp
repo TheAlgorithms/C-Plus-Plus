@@ -104,7 +104,7 @@ bool check_termination(long double delta) {
 std::pair<uint32_t, double> durand_kerner_algo(
     const std::valarray<double> &coeffs,
     std::valarray<std::complex<double>> *roots, bool write_log = false) {
-    double tol_condition = 1;
+    long double tol_condition = 1;
     uint32_t iter = 0;
     int i, n;
     std::ofstream log_file;
@@ -153,11 +153,11 @@ std::pair<uint32_t, double> durand_kerner_algo(
                 if (i != n)
                     denominator *= (*roots)[n] - (*roots)[i];
 
-            delta = numerator / denominator;
+            std::complex<long double> delta = numerator / denominator;
 
             if (std::isnan(std::abs(delta)) || std::isinf(std::abs(delta))) {
                 std::cerr << "\n\nOverflow/underrun error - got value = "
-                          << std::abs(delta);
+                          << std::abs(delta) << "\n";
                 // return std::pair<uint32_t, double>(iter, tol_condition);
                 break_loop = true;
             }
@@ -188,7 +188,7 @@ std::pair<uint32_t, double> durand_kerner_algo(
             log_file << tol_condition;
     }
 
-    return std::pair<uint32_t, double>(iter, tol_condition);
+    return std::pair<uint32_t, long double>(iter, tol_condition);
 }
 
 /**
@@ -197,14 +197,18 @@ std::pair<uint32_t, double> durand_kerner_algo(
  */
 void test1() {
     const std::valarray<double> coeffs = {1, 0, 4};  // x^2 - 2 = 0
-    std::valarray<std::complex<double>> roots = {
-        std::complex<double>(-100., 100.),
-        std::complex<double>(100., -100.)  // initial approximate roots
-    };
+    std::valarray<std::complex<double>> roots(2);
     std::valarray<std::complex<double>> expected = {
         std::complex<double>(0., 2.),
         std::complex<double>(0., -2.)  // known expected roots
     };
+
+    /* initialize root approximations with random values */
+    for (int n = 0; n < roots.size(); n++) {
+        roots[n] = std::complex<double>(std::rand() % 100, std::rand() % 100);
+        roots[n] -= 50.f;
+        roots[n] /= 25.f;
+    }
 
     auto result = durand_kerner_algo(coeffs, &roots, false);
 
@@ -229,16 +233,23 @@ void test1() {
 void test2() {
     const std::valarray<double> coeffs = {// 0.015625 x^3 - 1 = 0
                                           1. / 64., 0., 0., -1.};
-    std::valarray<std::complex<double>> roots = {
-        std::complex<double>(-100., 100.), std::complex<double>(-101., 101.),
-        std::complex<double>(2., -2.)  // initial approximate roots
-    };
-    std::valarray<std::complex<double>> expected = {
+    std::valarray<std::complex<double>> roots(3);
+    const std::valarray<std::complex<double>> expected = {
         std::complex<double>(4., 0.), std::complex<double>(-2., 3.46410162),
         std::complex<double>(-2., -3.46410162)  // known expected roots
     };
 
+    /* initialize root approximations with random values */
+    for (int n = 0; n < roots.size(); n++) {
+        roots[n] = std::complex<double>(std::rand() % 100, std::rand() % 100);
+        roots[n] -= 50.f;
+        roots[n] /= 25.f;
+    }
+
     auto result = durand_kerner_algo(coeffs, &roots, false);
+
+    for (int n = 0; n < roots.size(); n++)
+        std::cout << "\t" << complex_str(roots[n]) << "\n";
 
     for (int i = 0; i < roots.size(); i++) {
         // check if approximations are have < 0.1% error with one of the
@@ -248,6 +259,7 @@ void test2() {
             err1 |= std::abs(std::abs(roots[i] - expected[j])) < 1e-3;
         assert(err1);
     }
+
     std::cout << "Test 2 passed! - " << result.first << " iterations, "
               << result.second << " accuracy"
               << "\n";
@@ -263,6 +275,9 @@ void test2() {
  * will find roots of the polynomial \f$1\cdot x^2 + 0\cdot x^1 + (-4)=0\f$
  **/
 int main(int argc, char **argv) {
+    /* initialize random seed: */
+    std::srand(std::time(nullptr));
+
     if (argc < 2) {
         test1();  // run tests when no input is provided
         test2();  // and skip tests when input polynomial is provided
@@ -274,9 +289,6 @@ int main(int argc, char **argv) {
 
     int n, degree = argc - 1;              // detected polynomial degree
     std::valarray<double> coeffs(degree);  // create coefficiencts array
-
-    /* initialize random seed: */
-    std::srand(std::time(nullptr));
 
     // number of roots = degree - 1
     std::valarray<std::complex<double>> s0(degree - 1);
