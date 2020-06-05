@@ -18,11 +18,14 @@
  * ```
  * Sample implementation results to compute approximate roots of the equation
  * \f$x^4-1=0\f$:\n
- * ![Error
- * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_error.svg)
- *
- * ![Roots
- * evolution](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_roots.svg)
+ * <img
+ * src="https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_error.svg"
+ * width="400" alt="Error evolution during root approximations computed every
+ * iteration."/> <img
+ * src="https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/durand_kerner_roots.svg"
+ * width="400" alt="Roots evolution - shows the initial approximation of the
+ * roots and their convergence to a final approximation along with the iterative
+ * approximations" />
  */
 
 #include <algorithm>
@@ -52,7 +55,7 @@ std::complex<double> poly_function(const std::valarray<double> &coeffs,
     int n;
 
     // #ifdef _OPENMP
-    // #pragma omp parallel for reduction(+ : real, imag)
+    // #pragma omp target teams distribute reduction(+ : real, imag)
     // #endif
     for (n = 0; n < coeffs.size(); n++) {
         std::complex<double> tmp =
@@ -132,7 +135,6 @@ std::pair<uint32_t, double> durand_kerner_algo(
     bool break_loop = false;
     while (!check_termination(tol_condition) && iter < INT16_MAX &&
            !break_loop) {
-        std::complex<double> delta = 0;
         tol_condition = 0;
         iter++;
         break_loop = false;
@@ -175,9 +177,10 @@ std::pair<uint32_t, double> durand_kerner_algo(
         if (break_loop)
             break;
 
-        if (log_file.is_open())
+        if (log_file.is_open()) {
             for (n = 0; n < roots->size(); n++)
                 log_file << complex_str((*roots)[n]) << ",";
+        }
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
