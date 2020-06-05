@@ -7,6 +7,7 @@
 **/
 
 #include <iostream>
+#include <climits>
 
 bool isprime[INT_MAX];
 
