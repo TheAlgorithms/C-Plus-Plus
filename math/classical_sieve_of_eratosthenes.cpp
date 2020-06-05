@@ -37,7 +37,6 @@ void print(int N, bool* isprime ) {
 }
 
 int main() {
-  fastio();
   int N = 100;
   bool* isprime = new bool[N];
   sieve(N, isprime);
