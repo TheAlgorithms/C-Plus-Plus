@@ -7,9 +7,8 @@
 **/
 
 #include <iostream>
-#include <climits>
 
-bool isprime[INT_MAX];
+bool* isprime = new bool[100000];
 
 /**
  * This is the function that finds the primes and eliminates
@@ -43,4 +42,5 @@ int main() {
   int N = 100;
   sieve(N);
   print(N);
+  delete[] isprime;
 }
