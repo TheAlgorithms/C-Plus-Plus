@@ -12,10 +12,10 @@
 
 int isprime[MAX];
 
-/*
+/**
  * This is the function that finds the primes and eliminates
  * the multiples.
- */
+**/
 void sieve(int N) {
     isprime[0] = 0;
     isprime[1] = 0;
@@ -28,9 +28,9 @@ void sieve(int N) {
     }
 }
 
-/*
+/**
  * This function prints out the primes to STDOUT
- */
+**/
 void print(int N) {
     for (int i = 1; i <= N; i++) {
         if (isprime[i] == 1) {
@@ -40,10 +40,10 @@ void print(int N) {
     std::cout << '\n';
 }
 
-/*
+/**
  * NOTE: This function is important for the
  * initialization of the array.
- */
+**/
 void init() {
     for (int i = 1; i < MAX; i++) {
         isprime[i] = 1;
