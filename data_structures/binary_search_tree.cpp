@@ -1,5 +1,12 @@
+/**
+ * \file
+ * \brief A simple tree implementation using structured nodes
+ *
+ * \todo update code to use C++ STL library features and OO structure
+ * \warning This program is a poor implementation - C style - and does not
+ * utilize any of the C++ STL features.
+ */
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
@@ -84,7 +91,7 @@ void Remove(node *p, node *n, int x) {
 
 void BFT(node *n) {
     if (n != NULL) {
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
         enqueue(n->left);
         enqueue(n->right);
         BFT(dequeue());
@@ -93,7 +100,7 @@ void BFT(node *n) {
 
 void Pre(node *n) {
     if (n != NULL) {
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
         Pre(n->left);
         Pre(n->right);
     }
@@ -102,7 +109,7 @@ void Pre(node *n) {
 void In(node *n) {
     if (n != NULL) {
         In(n->left);
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
         In(n->right);
     }
 }
@@ -111,7 +118,7 @@ void Post(node *n) {
     if (n != NULL) {
         Post(n->left);
         Post(n->right);
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
     }
 }
 
@@ -121,45 +128,47 @@ int main() {
     int value;
     int ch;
     node *root = new node;
-    cout << "\nEnter the value of root node :";
-    cin >> value;
+    std::cout << "\nEnter the value of root node :";
+    std::cin >> value;
     root->val = value;
     root->left = NULL;
     root->right = NULL;
     do {
-        cout << "\n1. Insert";
-        cout << "\n2. Delete";
-        cout << "\n3. Breadth First";
-        cout << "\n4. Preorder Depth First";
-        cout << "\n5. Inorder Depth First";
-        cout << "\n6. Postorder Depth First";
+        std::cout << "\n1. Insert"
+                  << "\n2. Delete"
+                  << "\n3. Breadth First"
+                  << "\n4. Preorder Depth First"
+                  << "\n5. Inorder Depth First"
+                  << "\n6. Postorder Depth First";
 
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         int x;
         switch (ch) {
-        case 1:
-            cout << "\nEnter the value to be Inserted : ";
-            cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            cout << "\nEnter the value to be Deleted : ";
-            cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                Insert(root, x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                Remove(root, root, x);
+                break;
+            case 3:
+                BFT(root);
+                break;
+            case 4:
+                Pre(root);
+                break;
+            case 5:
+                In(root);
+                break;
+            case 6:
+                Post(root);
+                break;
         }
     } while (ch != 0);
+
+    return 0;
 }

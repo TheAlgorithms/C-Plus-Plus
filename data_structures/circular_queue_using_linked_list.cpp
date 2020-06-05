@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct node {
     int data;
@@ -48,11 +47,10 @@ class Queue {
         node *ptr;
         ptr = front;
         do {
-            cout << ptr->data << " ";
+            std::cout << ptr->data << " ";
             ptr = ptr->next;
         } while (ptr != rear->next);
-        cout << front->data;
-        cout << endl;
+        std::cout << front->data << std::endl;
     }
 };
 int main(void) {

@@ -1,17 +1,23 @@
-/* The difference between the pointer implementation of linked list and array
- implementation of linked list:
- 1. The NULL is represented by -1;
- 2. Limited size. (in the following case it is 100 nodes at max). But we can
- reuse the nodes that are to be deleted by again linking it bacj to the list.
-*/
+/**
+ * \file
+ * \brief Linked list implementation using Arrays
+ *
+ * The difference between the pointer implementation of linked list and array
+ * implementation of linked list:
+ * 1. The NULL is represented by -1;
+ * 2. Limited size. (in the following case it is 100 nodes at max). But we can
+ * reuse the nodes that are to be deleted by again linking it bacj to the list.
+ */
 
 #include <iostream>
-using namespace std;
+
 struct Node {
     int data;
     int next;
 };
-Node AvailArray[100];  // array that will act as nodes of a linked list.
+
+Node AvailArray[100];  ///< array that will act as nodes of a linked list.
+
 int head = -1;
 int avail = 0;
 void initialise_list() {
@@ -21,26 +27,27 @@ void initialise_list() {
     AvailArray[99].next = -1;  // indicating the end of the linked list.
 }
 
-int getnode()  // This will return the index of the first free node present in
-               // the avail list
-{
+/** This will return the index of the first free node present in the avail list
+ */
+int getnode() {
     int NodeIndexToBeReturned = avail;
     avail = AvailArray[avail].next;
     return NodeIndexToBeReturned;
 }
 
-void freeNode(
-    int nodeToBeDeleted)  // This function when called will delete the node with
-                          // the index presented as an argument, and will put
-                          // back that node into the array.
-{
+/** This function when called will delete the node with
+ * the index presented as an argument, and will put
+ * back that node into the array.
+ */
+void freeNode(int nodeToBeDeleted) {
     AvailArray[nodeToBeDeleted].next = avail;
     avail = nodeToBeDeleted;
 }
 
-void insertAtTheBeginning(int data)  // The function will insert the given data
-                                     // into the front of the linked list.
-{
+/** The function will insert the given data
+ * into the front of the linked list.
+ */
+void insertAtTheBeginning(int data) {
     int newNode = getnode();
     AvailArray[newNode].data = data;
     AvailArray[newNode].next = head;
@@ -62,43 +69,46 @@ void insertAtTheEnd(int data) {
 void display() {
     int temp = head;
     while (temp != -1) {
-        cout << AvailArray[temp].data << "->";
+        std::cout << AvailArray[temp].data << "->";
         temp = AvailArray[temp].next;
     }
-    cout << "-1" << endl;
-    ;
+    std::cout << "-1" << std::endl;
 }
 
+/** Main function */
 int main() {
     initialise_list();
     int x, y, z;
     for (;;) {
-        cout << "1. Insert At The Beginning" << endl;
-        cout << "2. Insert At The End" << endl;
-        cout << "3. Display" << endl;
-        cout << "4.Exit" << endl;
-        cout << "Enter Your choice" << endl;
-        cin >> z;
+        std::cout << "1. Insert At The Beginning" << std::endl;
+        std::cout << "2. Insert At The End" << std::endl;
+        std::cout << "3. Display" << std::endl;
+        std::cout << "4.Exit" << std::endl;
+        std::cout << "Enter Your choice" << std::endl;
+        std::cin >> z;
         switch (z) {
-        case 1:
-            cout << "Enter the number you want to enter" << endl;
-            cin >> x;
-            insertAtTheBeginning(x);
-            break;
-        case 2:
-            cout << "Enter the number you want to enter" << endl;
-            cin >> y;
-            insertAtTheEnd(y);
-            break;
-        case 3:
-            cout << "The linked list contains the following element in order"
-                 << endl;
-            display();
-            break;
-        case 4:
-            exit(0);
-        default:
-            cout << "The entered choice is not correct" << endl;
+            case 1:
+                std::cout << "Enter the number you want to enter" << std::endl;
+                std::cin >> x;
+                insertAtTheBeginning(x);
+                break;
+            case 2:
+                std::cout << "Enter the number you want to enter" << std::endl;
+                std::cin >> y;
+                insertAtTheEnd(y);
+                break;
+            case 3:
+                std::cout
+                    << "The linked list contains the following element in order"
+                    << std::endl;
+                display();
+                break;
+            case 4:
+                return 0;
+            default:
+                std::cout << "The entered choice is not correct" << std::endl;
         }
     }
+
+    return 0;
 }

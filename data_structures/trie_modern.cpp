@@ -1,8 +1,8 @@
 /**
- * Copyright 2020 @author Anmol3299
  * @file
  *
- * A basic implementation of trie class to store only lower-case strings.
+ * Copyright 2020 @author Anmol3299
+ * \brief A basic implementation of trie class to store only lower-case strings.
  */
 #include <iostream>  // for io operations
 #include <memory>    // for std::shared_ptr<>
@@ -35,7 +35,8 @@ class Trie {
      * Function to check if a node has some children which can form words.
      * @param node whose character array of pointers need to be checked for
      * children.
-     * @return if a child is found, it returns @ true, else it returns @ false.
+     * @return `true` if a child is found
+     * @return `false` if a child is not found
      */
     inline static bool hasChildren(std::shared_ptr<TrieNode> node) {
         for (size_t i = 0; i < ALPHABETS; i++) {
@@ -98,7 +99,7 @@ class Trie {
     }
 
  public:
-    // constructor to initialise the root of the trie.
+    /// constructor to initialise the root of the trie.
     Trie() : m_root(std::make_shared<TrieNode>()) {}
 
     /**
