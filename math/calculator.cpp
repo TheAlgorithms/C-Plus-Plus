@@ -13,8 +13,9 @@ struct Node {
     float datatype;
 };
 
-// Prototype
+// Prototypes
 void requestData();
+void pause();
 
 Node* new_node = new Node();
 
@@ -26,6 +27,11 @@ int main() {
 
     _getch();
     return 0;
+}
+
+void pause() {
+    std::cout << "Press any key to continue . . . ";
+    _getch();
 }
 
 void requestData() {
@@ -70,7 +76,7 @@ void requestData() {
             std::cout << "\nThe sum of the numbers is: "
                 << new_node->datatype << std::endl;
 
-            system("pause");
+            pause();
             break;
 
         case 2:
@@ -99,7 +105,7 @@ void requestData() {
             std::cout << "\nThe subtraction of the numbers is: "
                 << new_node->datatype << std::endl;
 
-            system("pause");
+            pause();
             break;
 
         case 3:
@@ -128,7 +134,7 @@ void requestData() {
             std::cout << "\nThe multiply result of the numbers is: "
                 << new_node->datatype << std::endl;
 
-            system("pause");
+            pause();
             break;
 
         case 4:
@@ -157,7 +163,7 @@ void requestData() {
             std::cout << "\nThe division of the numbers is: "
                 << new_node->datatype << std::endl;
 
-            system("pause");
+            pause();
             break;
         }
 
