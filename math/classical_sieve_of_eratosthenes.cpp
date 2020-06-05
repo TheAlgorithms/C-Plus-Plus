@@ -1,21 +1,19 @@
-/*
+/**
  * Classical Sieve of Eratosthenes is an algorithm to find the primes
  * that is between 2 to N (as defined in main) in fastest way.
  *
  * Time Complexity  : O(N * log(log(N)))
  * Space Complexity : O(N)
- */
+**/
 
 #include <iostream>
 
-#define MAX 10000000
+bool isprime[INT_MAX];
 
-bool isprime[MAX];
-
-/*
+/**
  * This is the function that finds the primes and eliminates
  * the multiples.
- */
+**/
 void sieve(int N) {
   isprime[0] = true;
   isprime[1] = true;
@@ -28,9 +26,9 @@ void sieve(int N) {
   }
 }
 
-/*
+/**
  * This function prints out the primes to STDOUT
- */
+**/
 void print(int N) {
   for (int i = 1; i <= N; i++) {
     if (!isprime[i]) {
