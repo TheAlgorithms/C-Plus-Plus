@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <conio.h>
-#include <stdlib.h>
+#include <cstdlib>
 
 struct Node {
     float datatype;
