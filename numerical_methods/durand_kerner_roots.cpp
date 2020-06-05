@@ -177,9 +177,10 @@ std::pair<uint32_t, double> durand_kerner_algo(
         if (break_loop)
             break;
 
-        if (log_file.is_open())
+        if (log_file.is_open()) {
             for (n = 0; n < roots->size(); n++)
                 log_file << complex_str((*roots)[n]) << ",";
+        }
 
 #if defined(DEBUG) || !defined(NDEBUG)
         if (iter % 500 == 0) {
