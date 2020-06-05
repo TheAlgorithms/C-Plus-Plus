@@ -64,11 +64,10 @@ void requestData() {
                 // Save it in the new node so it's not re-writed
                 if (i == 1) {
                     new_node->datatype = number;
-                }
 
                 // If the current number is not the first one,
                 // sum the current one with the previous one
-                else {
+                } else {
                     new_node->datatype += number;
                 }
             }
@@ -93,11 +92,10 @@ void requestData() {
                 // Save it in the new node so it's not re-writed
                 if (i == 1) {
                     new_node->datatype = number;
-                }
 
                 // If the current number is not the first one,
                 // subtract the current one with the previous one
-                else {
+                } else {
                     new_node->datatype -= number;
                 }
             }
@@ -122,11 +120,10 @@ void requestData() {
                 // Save it in the new node so it's not re-writed
                 if (i == 1) {
                     new_node->datatype = number;
-                }
 
                 // If the current number is not the first one,
                 // multiply the current one with the previous one
-                else {
+                } else {
                     new_node->datatype *= number;
                 }
             }
@@ -151,11 +148,10 @@ void requestData() {
                 // Save it in the new node so it's not re-writed
                 if (i == 1) {
                     new_node->datatype = number;
-                }
 
                 // If the current number is not the first one,
                 // divide the previous number with the current one
-                else {
+                } else {
                     new_node->datatype /= number;
                 }
             }
