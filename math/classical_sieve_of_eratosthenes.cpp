@@ -13,7 +13,6 @@
  * the multiples.
 **/
 void sieve(int N, bool* isprime ) {
-
   isprime[0] = true;
   isprime[1] = true;
   for (int i = 2; i * i <= N; ++i) {
