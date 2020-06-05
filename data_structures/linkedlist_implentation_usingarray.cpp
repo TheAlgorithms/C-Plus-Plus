@@ -87,26 +87,26 @@ int main() {
         std::cout << "Enter Your choice" << std::endl;
         std::cin >> z;
         switch (z) {
-            case 1:
-                std::cout << "Enter the number you want to enter" << std::endl;
-                std::cin >> x;
-                insertAtTheBeginning(x);
-                break;
-            case 2:
-                std::cout << "Enter the number you want to enter" << std::endl;
-                std::cin >> y;
-                insertAtTheEnd(y);
-                break;
-            case 3:
-                std::cout
-                    << "The linked list contains the following element in order"
-                    << std::endl;
-                display();
-                break;
-            case 4:
-                return 0;
-            default:
-                std::cout << "The entered choice is not correct" << std::endl;
+        case 1:
+            std::cout << "Enter the number you want to enter" << std::endl;
+            std::cin >> x;
+            insertAtTheBeginning(x);
+            break;
+        case 2:
+            std::cout << "Enter the number you want to enter" << std::endl;
+            std::cin >> y;
+            insertAtTheEnd(y);
+            break;
+        case 3:
+            std::cout
+                << "The linked list contains the following element in order"
+                << std::endl;
+            display();
+            break;
+        case 4:
+            return 0;
+        default:
+            std::cout << "The entered choice is not correct" << std::endl;
         }
     }
 
