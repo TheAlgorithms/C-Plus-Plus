@@ -38,7 +38,7 @@ void print(int N, bool* isprime ) {
 
 int main() {
   int N = 100;
-  bool* isprime = new bool[N];
+  bool *isprime = new bool[N];
   sieve(N, isprime);
   print(N, isprime);
   delete[] isprime;
