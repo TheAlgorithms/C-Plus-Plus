@@ -131,21 +131,21 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> m, n;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> counterZeros = 0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter dimensions of matrix (seperated with space): &quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; m;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter dimensions of matrix (seperated with space): &quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; m;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> **<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = <span class="keyword">new</span> <span class="keywordtype">int</span> *[m];</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m; i++) <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i] = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter matrix elements:&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter matrix elements:&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// reads the matrix from stdin</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m; i++) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n; j++) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;element? &quot;</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i][j];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;element? &quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i][j];</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -159,9 +159,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// makes sure the matrix is a sparse matrix</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (counterZeros &gt; ((m * n) / 2))  <span class="comment">// Checking for sparse matrix</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sparse matrix&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sparse matrix&quot;</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Not a sparse matrix&quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Not a sparse matrix&quot;</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m; i++) <span class="keyword">delete</span>[] <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9510827d0b234b3cc54b29892f217477.html">others</a></li><li class="navelem"><a class="el" href="../../d3/d19/sparse__matrix_8cpp.html">sparse_matrix.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "data_structure", "dir_b8d8e9e6d882cbdac7436f7026baf609.html", "dir_b8d8e9e6d882cbdac7436f7026baf609" ],
+    [ "data_structures", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc" ],
     [ "geometry", "dir_e3380d2178455503f266746fb14246a5.html", "dir_e3380d2178455503f266746fb14246a5" ],
     [ "machine_learning", "dir_3343723ae086de42ee4ca9774da3a13f.html", "dir_3343723ae086de42ee4ca9774da3a13f" ],
     [ "math", "dir_296d53ceaeaa7e099814a6def439fe8a.html", "dir_296d53ceaeaa7e099814a6def439fe8a" ],

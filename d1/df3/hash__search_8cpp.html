@@ -164,7 +164,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <dl class="section copyright"><dt>Copyright</dt><dd>2020 Arctic2333</dd></dl>
 <p>In this algorithm, we use the method of division and reservation remainder to construct the hash function, and use the method of chain address to solve the conflict, that is, we link a chain list after the data, and store all the records whose keywords are synonyms in the same linear chain list.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This program is only for educational purposes. It has serious flaws in implementation with regards to memory management resulting in large amounts of memory leaks. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Todo:</a></b></dt><dd>fix the program for memory leaks and better structure in C++ and not C fashion </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo:</a></b></dt><dd>fix the program for memory leaks and better structure in C++ and not C fashion </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a8ca8dcb494104d273679e219e53d0555"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ca8dcb494104d273679e219e53d0555">&#9670;&nbsp;</a></span>node</h2>
@@ -204,11 +204,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>dynamic memory allocated to <code>n</code> never gets freed. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000006">Todo:</a></b></dt><dd>fix memory leak </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Todo:</a></b></dt><dd>fix memory leak </dd></dl>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          {  <span class="comment">// Construct hash table</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p, n;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p, n;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> index;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    n = (<a class="code" href="../../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6">link</a>)<a class="codeRef" href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="../../d5/da1/structnode.html">node</a>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    n = (<a class="code" href="../../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6">link</a>)<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="../../d5/da1/structnode.html">node</a>));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    n-&gt;key = key;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    n-&gt;next = NULL;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    index = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>(key);</div>
@@ -284,18 +284,18 @@ Here is the call graph for this function:</div>
 <dd>
 -1 </dd></dl>
 <div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                       {  <span class="comment">// Hash lookup function</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> pointer;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> pointer;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> index;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    *counter = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    index = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>(key);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    pointer = <a class="code" href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a>[index].next;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span> (pointer != NULL) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        counter[0]++;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; pointer-&gt;key &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; pointer-&gt;key &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (pointer-&gt;key == key)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">else</span></div>
@@ -329,7 +329,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>main function </p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;           {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> key, index, i, counter;  <span class="comment">// Key is the value to be found</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    index = 0;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
@@ -340,17 +340,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d1/df3/hash__search_8cpp.html#a77c722016053a1d484aa177ce205b367">HASHMAX</a>; i++) {  <span class="comment">// Output hash table</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;hashtab [&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;hashtab [&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        p = <a class="code" href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a>[i].next;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">while</span> (p != NULL) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;please int key:&quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;please int key:&quot;</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (p-&gt;key &gt; 0)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; p-&gt;key &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; p-&gt;key &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            p = p-&gt;next;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">while</span> (key != -1) {</div>
@@ -358,9 +358,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// test key = 10</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        key = 10;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d1/df3/hash__search_8cpp.html#a36ea13c16028f18ef2d5ff47f3fda7a2">hash_search</a>(key, &amp;counter))</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;search time = &quot;</span> &lt;&lt; counter &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;search time = &quot;</span> &lt;&lt; counter &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;no found!\n&quot;</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;no found!\n&quot;</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        key = -1;  <span class="comment">// Exit test</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">/* The test sample is returned as:</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">         * data[0]:data[5]:data[15]:data[10]:search time = 3 The search is</span></div>
@@ -383,7 +383,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="ahash__search_8cpp_html_a36ea13c16028f18ef2d5ff47f3fda7a2"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a36ea13c16028f18ef2d5ff47f3fda7a2">hash_search</a></div><div class="ttdeci">int hash_search(int key, int *counter)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:76</div></div>
 <div class="ttc" id="alist_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a77c722016053a1d484aa177ce205b367"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a77c722016053a1d484aa177ce205b367">HASHMAX</a></div><div class="ttdeci">#define HASHMAX</div><div class="ttdoc">Determines the length of the hash table.</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:22</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:6</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:13</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a392fb874e547e582e9c66a08a1f23326"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a392fb874e547e582e9c66a08a1f23326">MAX</a></div><div class="ttdeci">#define MAX</div><div class="ttdoc">Determines how much data.</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:21</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:45</div></div>
@@ -397,7 +397,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_19b2bf9199a15c634a08b1ede1dd896a.html">search</a></li><li class="navelem"><a class="el" href="../../d1/df3/hash__search_8cpp.html">hash_search.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:20 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

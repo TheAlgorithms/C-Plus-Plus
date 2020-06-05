@@ -143,11 +143,11 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;           {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#a031cada84819ed6426f58e4f7e81261c">Sieve</a>(100000000);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    int64_t n;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;  <span class="comment">// 10006187</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;  <span class="comment">// 10006187</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[n] == <span class="charliteral">&#39;1&#39;</span>)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;YES\n&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;YES\n&quot;</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;NO\n&quot;</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;NO\n&quot;</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
@@ -177,7 +177,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Perform Sieve algorithm </p>
 <div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                      {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>, <span class="charliteral">&#39;1&#39;</span>, <span class="keyword">sizeof</span>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>));  <span class="comment">// intitize &#39;1&#39; to every index</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>, <span class="charliteral">&#39;1&#39;</span>, <span class="keyword">sizeof</span>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>));  <span class="comment">// intitize &#39;1&#39; to every index</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[0] = <span class="charliteral">&#39;0&#39;</span>;                     <span class="comment">// 0 is not prime</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[1] = <span class="charliteral">&#39;0&#39;</span>;                     <span class="comment">// 1 is not prime</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> p = 2; p * p &lt;= n; p++) {</div>
@@ -217,7 +217,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../d4/d9c/primes__up__to__billion_8cpp.html">primes_up_to_billion.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

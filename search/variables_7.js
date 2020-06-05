@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['k_3720',['k',['../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0',1,'matrix_exponentiation.cpp']]],
-  ['key_3721',['key',['../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c',1,'list']]]
+  ['isprime_3802',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'isprime():&#160;prime_factorization.cpp'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a0560e21edb54d5ad8d80b2d80348ce22',1,'isprime():&#160;sieve_of_eratosthenes.cpp']]]
 ];

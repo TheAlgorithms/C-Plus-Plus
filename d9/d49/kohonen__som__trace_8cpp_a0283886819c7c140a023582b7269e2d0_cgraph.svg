@@ -51,7 +51,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="385.5,-86.5 385.5,-105.5 440.5,-105.5 440.5,-86.5 385.5,-86.5"/>
 <text text-anchor="middle" x="413" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="383.5,-276.5 383.5,-295.5 442.5,-295.5 442.5,-276.5 383.5,-276.5"/>
 <text text-anchor="middle" x="413" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::begin</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="376.5,-238.5 376.5,-257.5 449.5,-257.5 449.5,-238.5 376.5,-238.5"/>
 <text text-anchor="middle" x="413" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::distance</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="387,-200.5 387,-219.5 439,-219.5 439,-200.5 387,-200.5"/>
 <text text-anchor="middle" x="413" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::end</text>
 </a>
@@ -162,7 +162,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="387,-162.5 387,-181.5 439,-181.5 439,-162.5 387,-162.5"/>
 <text text-anchor="middle" x="413" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
@@ -177,7 +177,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="367,-124.5 367,-143.5 459,-143.5 459,-124.5 367,-124.5"/>
 <text text-anchor="middle" x="413" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min_element</text>
 </a>
@@ -192,7 +192,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="222,-76.5 222,-95.5 326,-95.5 326,-76.5 222,-76.5"/>
 <text text-anchor="middle" x="274" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -207,7 +207,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="217,-38.5 217,-57.5 331,-57.5 331,-38.5 217,-38.5"/>
 <text text-anchor="middle" x="274" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -222,7 +222,7 @@
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a target="_parent" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node14"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="223.5,-0.5 223.5,-19.5 324.5,-19.5 324.5,-0.5 223.5,-0.5"/>
 <text text-anchor="middle" x="274" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>

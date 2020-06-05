@@ -185,7 +185,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>get_input function is to receive input from standard IO </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Todo:</a></b></dt><dd>@christianbender Get input from STDIO or write input to memory as done above. </dd></dl>
+<p>get_input function is to receive input from standard IO </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000010">Todo:</a></b></dt><dd>@christianbender Get input from STDIO or write input to memory as done above. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
@@ -243,15 +243,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (left &lt; right) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (right - left &lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc">absolutePrecision</a>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">if</span> (A[i] == target)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="keywordflow">return</span> i;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">int</span> oneThird = (<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">int</span> twoThird = (<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">int</span> oneThird = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">int</span> twoThird = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (A[oneThird] == target)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">return</span> oneThird;</div>
@@ -259,12 +259,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">return</span> twoThird;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target &gt; A[twoThird])</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = twoThird + 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = twoThird + 1;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target &lt; A[oneThird])</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = oneThird - 1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = oneThird - 1;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = oneThird + 1, <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = twoThird - 1;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = oneThird + 1, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = twoThird - 1;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
@@ -356,15 +356,15 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                 {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (left &lt; right) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (right - left &lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc">absolutePrecision</a>) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span> (A[i] == target)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordflow">return</span> i;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> oneThird = (<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">int</span> twoThird = (<a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> oneThird = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">int</span> twoThird = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (A[oneThird] == target)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> oneThird;</div>
@@ -424,9 +424,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0">it_ternary_search</a>(0, N - 1, A, target) &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#a93d0099db95022f1eb90ddfd68f73ead">rec_ternary_search</a>(0, N - 1, A, target) &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0">it_ternary_search</a>(0, N - 1, A, target) &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/dfe/ternary__search_8cpp.html#a93d0099db95022f1eb90ddfd68f73ead">rec_ternary_search</a>(0, N - 1, A, target) &lt;&lt; <span class="charliteral">&#39;\t&#39;</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -452,7 +452,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_19b2bf9199a15c634a08b1ede1dd896a.html">search</a></li><li class="navelem"><a class="el" href="../../dc/dfe/ternary__search_8cpp.html">ternary_search.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:20 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -139,14 +139,14 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;           {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> n = 0;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Set Pascal&#39;s Triangle Height&quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Set Pascal&#39;s Triangle Height&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// memory allocation (Assign two-dimensional array to store Pascal triangle)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> **arr = <span class="keyword">new</span> <span class="keywordtype">int</span> *[n];</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        arr[i] = <span class="keyword">new</span> <span class="keywordtype">int</span>[2 * n - 1];</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(arr[i], 0, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * (2 * n - 1));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(arr[i], 0, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * (2 * n - 1));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../dc/d1a/pascal__triangle_8cpp.html#afd3f52dd56ddedbf7af5d26a202a199e">pascal_triangle</a>(arr, n);</div>
@@ -253,11 +253,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n + i; ++j) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span> (arr[i][j] == 0)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(4) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(4) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(4) &lt;&lt; arr[i][j];</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(4) &lt;&lt; arr[i][j];</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -282,7 +282,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9510827d0b234b3cc54b29892f217477.html">others</a></li><li class="navelem"><a class="el" href="../../dc/d1a/pascal__triangle_8cpp.html">pascal_triangle.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -133,8 +133,8 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;           {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> mat_size, i, j, step;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Matrix size: &quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; mat_size;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Matrix size: &quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; mat_size;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// create a 2D matrix by dynamic memory allocation</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">double</span> **mat = <span class="keyword">new</span> <span class="keywordtype">double</span> *[mat_size + 1], **x = <span class="keyword">new</span> <span class="keywordtype">double</span> *[mat_size];</div>
@@ -145,10 +145,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// get the matrix elements from user</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of the matrix: &quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of the matrix: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; mat_size; i++) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt;= mat_size; j++) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                mat[i][j];  <span class="comment">// Enter (mat_size*mat_size) value of the matrix.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
@@ -163,17 +163,17 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Matrix using Gaussian Elimination method: &quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Matrix using Gaussian Elimination method: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; mat_size; i++) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt;= mat_size; j++) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            x[i][j] = mat[i][j];</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; mat[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; mat[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Value of the Gaussian Elimination method: &quot;</span> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Value of the Gaussian Elimination method: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (i = mat_size - 1; i &gt;= 0; i--) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">double</span> sum = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span> (j = mat_size - 1; j &gt; i; j--) {</div>
@@ -185,7 +185,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            x[i][i] = (x[i][mat_size] - sum) / (x[i][i]);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;= &quot;</span> &lt;&lt; x[i][i] &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;= &quot;</span> &lt;&lt; x[i][i] &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt;= mat_size; i++) {</div>
@@ -217,7 +217,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9c6faab82c22511b50177aa2e38e2780.html">numerical_methods</a></li><li class="navelem"><a class="el" href="../../d0/de2/gaussian__elimination_8cpp.html">gaussian_elimination.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

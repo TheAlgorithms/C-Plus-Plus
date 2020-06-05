@@ -158,10 +158,10 @@ Functions</h2></td></tr>
 <p>Main function </p>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;           {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> exponent, base;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter base &quot;</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; base;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter exponent &quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; exponent;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter base &quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; base;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter exponent &quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; exponent;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f">power</a>(base, exponent);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
@@ -277,7 +277,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// printing value &quot;1&quot; for power = 0</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (n == 0) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1&quot;</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
@@ -295,8 +295,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// (x^n = x*x*x....n times)</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt;= n; i++) res_size = <a class="code" href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9">multiply</a>(x, res, res_size);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = res_size - 1; i &gt;= 0; i--) <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; res[i];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;^&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = res_size - 1; i &gt;= 0; i--) <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; res[i];</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -318,7 +318,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../df/def/power__for__huge__numbers_8cpp.html">power_for_huge_numbers.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

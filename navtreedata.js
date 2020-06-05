@@ -47,7 +47,7 @@ var NAVTREE =
     ] ],
     [ "List of all files", "d5/d88/md__d_i_r_e_c_t_o_r_y.html", [
       [ "Backtracking", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md14", null ],
-      [ "Data Structure", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md15", null ],
+      [ "Data Structures", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md15", null ],
       [ "Dynamic Programming", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md16", null ],
       [ "Geometry", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md17", null ],
       [ "Graph", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md18", null ],
@@ -99,9 +99,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d5/db0/adaline__learning_8cpp.html#acd517c6f195c75b9dd0f3aad65326f3b",
-"db/d66/struct_item.html",
-"index.html#autotoc_md34"
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md23",
+"da/d9a/class_graph.html#a13e73168c59bf97020bbc28a34b115bc",
+"df/d27/class_bit.html#ab304c3bfc76f08016188653ff54605e5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

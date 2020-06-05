@@ -154,14 +154,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <p>jump search implementation </p>
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                        {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Finding block size to be jumped</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> step = <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> step = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// Finding the block where element is</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// present (if it is present)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">while</span> (arr[<a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n) - 1] &lt; x) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = step;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        step += <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">while</span> (arr[<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n) - 1] &lt; x) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a> = step;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        step += <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(n);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">if</span> (prev &gt;= n)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
@@ -169,16 +169,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Doing a linear search for x in block</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// beginning with prev.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span> (arr[prev] &lt; x) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>++;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>++;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// If we reached next block or end of</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// array, element is not present.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (prev == <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (prev == <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(step, n))</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// If element is found</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (arr[prev] == x)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/prev.html">prev</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
@@ -200,7 +200,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_19b2bf9199a15c634a08b1ede1dd896a.html">search</a></li><li class="navelem"><a class="el" href="../../d2/d22/jump__search_8cpp.html">jump_search.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:20 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

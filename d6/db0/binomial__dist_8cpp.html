@@ -211,8 +211,8 @@ Functions</h2></td></tr>
 <p>calculates the probability of a result within a range (inclusive, inclusive) </p><dl class="section return"><dt>Returns</dt><dd>\(\displaystyle \left.P(n,p)\right|_{x_0}^{x_1} = \sum_{i=x_0}^{x_1} P(i) =\sum_{i=x_0}^{x_1} {n\choose i} p^i (1-p)^{n-i}\) </dd></dl>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                    {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> probability = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = lower_bound; i &lt;= <a class="codeRef" href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">upper_bound</a>; i++) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        probability += <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a">nCr</a>(n, i) * <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(p, i) * <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(1 - p, n - i);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = lower_bound; i &lt;= <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/upper_bound.html">upper_bound</a>; i++) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        probability += <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a">nCr</a>(n, i) * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(p, i) * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(1 - p, n - i);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> probability;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
@@ -259,7 +259,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>\(\sigma = \sqrt{\sigma^2} = \sqrt{n\cdot p\cdot (1-p)}\) </dd></dl>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                       {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(<a class="code" href="../../d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861">binomial_variance</a>(n, p));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(<a class="code" href="../../d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861">binomial_variance</a>(n, p));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -340,7 +340,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>calculates the probability of exactly x successes </p><dl class="section return"><dt>Returns</dt><dd>\(\displaystyle P(n,p,x) = {n\choose x} p^x (1-p)^{n-x}\) </dd></dl>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                          {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a">nCr</a>(n, x) * <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(p, x) * <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(1 - p, n - x);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a78d36635232e54b5d71fcbf1eac9a49a">nCr</a>(n, x) * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(p, x) * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(1 - p, n - x);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -367,19 +367,19 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>main function </p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;           {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;expected value : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813">binomial_expected</a>(100, 0.5)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;expected value : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813">binomial_expected</a>(100, 0.5)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;variance : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861">binomial_variance</a>(100, 0.5) &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;variance : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#acd4dd4558031e4c5d045c801f73d8861">binomial_variance</a>(100, 0.5) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;standard deviation : &quot;</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#af09e51f513cee647d41192ab0a872cdc">binomial_standard_deviation</a>(100, 0.5) &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;standard deviation : &quot;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#af09e51f513cee647d41192ab0a872cdc">binomial_standard_deviation</a>(100, 0.5) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;exactly 30 successes : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76">binomial_x_successes</a>(100, 0.5, 30)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;              &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;exactly 30 successes : &quot;</span> &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76">binomial_x_successes</a>(100, 0.5, 30)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;45 or more successes : &quot;</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25">binomial_range_successes</a>(100, 0.5, 45, 100) &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;45 or more successes : &quot;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              &lt;&lt; <a class="code" href="../../d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25">binomial_range_successes</a>(100, 0.5, 45, 100) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
@@ -459,7 +459,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_82e494173a87936756866de2fa774307.html">probability</a></li><li class="navelem"><a class="el" href="../../d6/db0/binomial__dist_8cpp.html">binomial_dist.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:20 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

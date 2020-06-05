@@ -137,15 +137,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 </div><div class="memdoc">
 <p>This method converts the bit representation and stores it as a decimal number. </p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                         {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a>, binary = 0, var = 1;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a>, binary = 0, var = 1;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a> = number % 2;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a> = number % 2;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        number = number / 2;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        binary = binary + (<a class="codeRef" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a> * var);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        binary = binary + (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/remainder.html">remainder</a> * var);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        var = var * 10;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    } <span class="keywordflow">while</span> (number &gt; 0);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Method 1 : &quot;</span> &lt;&lt; binary &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Method 1 : &quot;</span> &lt;&lt; binary &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -185,10 +185,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        number &gt;&gt;= 1;  <span class="comment">// right shift bit 1 bit</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keywordflow">while</span> (number &gt; 0);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Method 2 : &quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Method 2 : &quot;</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">while</span> (num_bits &gt;= 0)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; bit_string[num_bits--];  <span class="comment">// print from MSB to LSB</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; bit_string[num_bits--];  <span class="comment">// print from MSB to LSB</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -208,7 +208,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9510827d0b234b3cc54b29892f217477.html">others</a></li><li class="navelem"><a class="el" href="../../df/d06/decimal__to__binary_8cpp.html">decimal_to_binary.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 00:36:19 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
