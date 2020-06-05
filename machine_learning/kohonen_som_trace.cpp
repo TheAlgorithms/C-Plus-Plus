@@ -130,7 +130,6 @@ void update_weights(const std::valarray<double> &x,
  *
  * \param[in] X data set
  * \param[in,out] W weights matrix
- * \param[in] D temporary vector to store distances
  * \param[in] alpha_min terminal value of alpha
  */
 void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
