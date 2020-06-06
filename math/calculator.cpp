@@ -9,11 +9,19 @@
 #include <conio.h>
 #include <cstdlib>
 
+/**
+ * Same as the number typed by the user, but it's saved
+ * in the new node so it won't be re-writed.
+ */
+
 struct Node {
     float datatype;
 };
 
-// Prototypes
+/** 
+ * Prototypes
+ */
+
 void requestData();
 void pause();
 
@@ -22,6 +30,12 @@ Node* new_node = new Node();
 int opt = 0;
 float number;
 
+/**
+ * --------------
+ * Main function
+ * --------------
+ */
+
 int main() {
     requestData();
 
@@ -29,10 +43,18 @@ int main() {
     return 0;
 }
 
+/**
+ * Similar as system("pause"), but secure.
+ */
+
 void pause() {
     std::cout << "Press any key to continue . . . ";
     _getch();
 }
+
+/**
+ * Function to call the calculator.
+ */
 
 void requestData() {
     int amount_to_sum = 0, amount_to_subtract = 0, amount_to_multiply = 0,
@@ -60,13 +82,19 @@ void requestData() {
                 std::cout << "Type a number: ";
                 std::cin >> number;
 
-                // Set the first number as the main number
-                // Save it in the new node so it's not re-writed
+                /**
+                 * Set the first number as the main number.
+                 * Save it in the new node so it's not re-writed.
+                 */
+
                 if (i == 1) {
                     new_node->datatype = number;
 
-                // If the current number is not the first one,
-                // sum the current one with the previous one
+                /**
+                 * If the current number is not the first one,
+                 * sum the current one with the previous one.
+                 */
+
                 } else {
                     new_node->datatype += number;
                 }
@@ -88,13 +116,19 @@ void requestData() {
                 std::cout << "Type a number: ";
                 std::cin >> number;
 
-                // Set the first number as the main number
-                // Save it in the new node so it's not re-writed
+                /**
+                 * Set the first number as the main number.
+                 * Save it in the new node so it's not re-writed.
+                 */
+
                 if (i == 1) {
                     new_node->datatype = number;
 
-                // If the current number is not the first one,
-                // subtract the current one with the previous one
+                /**
+                 * If the current number is not the first one,
+                 * subtract the current one with the previous one.
+                 */
+
                 } else {
                     new_node->datatype -= number;
                 }
@@ -116,13 +150,19 @@ void requestData() {
                 std::cout << "Type a number: ";
                 std::cin >> number;
 
-                // Set the first number as the main number
-                // Save it in the new node so it's not re-writed
+                /**
+                 * Set the first number as the main number.
+                 * Save it in the new node so it's not re-writed.
+                 */
+
                 if (i == 1) {
                     new_node->datatype = number;
 
-                // If the current number is not the first one,
-                // multiply the current one with the previous one
+                /**
+                 * If the current number is not the first one,
+                 * multiply the current one with the previous one.
+                 */
+
                 } else {
                     new_node->datatype *= number;
                 }
@@ -144,13 +184,19 @@ void requestData() {
                 std::cout << "Type a number: ";
                 std::cin >> number;
 
-                // Set the first number as the main number
-                // Save it in the new node so it's not re-writed
+                /**
+                 * Set the first number as the main number.
+                 * Save it in the new node so it's not re-writed.
+                 */
+
                 if (i == 1) {
                     new_node->datatype = number;
 
-                // If the current number is not the first one,
-                // divide the previous number with the current one
+                /**
+                 * If the current number is not the first one,
+                 * divide the previous number with the current one.
+                 */
+
                 } else {
                     new_node->datatype /= number;
                 }
@@ -163,12 +209,18 @@ void requestData() {
             break;
         }
 
-        // Check user's OS
-        // Uses system("cls") if OS is Windows
+        /**
+         * Check user's OS
+         * Uses system("cls") if OS is Windows
+         */
+
         #ifdef __linux__
         system("clear");
 
-        // Uses system("clear") if OS is Linux
+        /**
+         * Uses system("clear") if OS is Linux
+         */
+
         #elif _WIN32
         system("cls");
         #endif
