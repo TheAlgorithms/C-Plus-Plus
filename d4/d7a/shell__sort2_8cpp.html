@@ -140,6 +140,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Shell_sort">Shell sort</a> algorithm </p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala">Krishna Vedala</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ac70138609ef6aa6fabca57aca8681e83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac70138609ef6aa6fabca57aca8681e83">&#9670;&nbsp;</a></span>compare()</h2>
@@ -167,19 +168,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
       </table>
 </div><div class="memdoc">
 <p>function to compare sorting using cstdlib's qsort </p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                          {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> arg1 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> arg2 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(b);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (arg1 &lt; arg2)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (arg1 &gt; arg2)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//  return (arg1 &gt; arg2) - (arg1 &lt; arg2); // possible shortcut</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//  return arg1 - arg2; // erroneous shortcut (fails if INT_MIN is present)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                          {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> arg1 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> arg2 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">int</span> *<span class="keyword">&gt;</span>(b);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (arg1 &lt; arg2)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (arg1 &gt; arg2)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//  return (arg1 &gt; arg2) - (arg1 &lt; arg2); // possible shortcut</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//  return arg1 - arg2; // erroneous shortcut (fails if INT_MIN is present)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,12 +218,12 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                   {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">size_t</span> i;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; LEN; i++) <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                   {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">size_t</span> i;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; LEN; i++) <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -256,9 +257,9 @@ template&lt;class T , size_t N&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                            {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d4/d7a/shell__sort2_8cpp.html#a951127aea9d7e1e53ea9ae0868633246">show_data</a>(arr, N);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                            {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d4/d7a/shell__sort2_8cpp.html#a951127aea9d7e1e53ea9ae0868633246">show_data</a>(arr, N);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -270,7 +271,7 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ashell__sort2_8cpp_html_a951127aea9d7e1e53ea9ae0868633246"><div class="ttname"><a href="../../d4/d7a/shell__sort2_8cpp.html#a951127aea9d7e1e53ea9ae0868633246">show_data</a></div><div class="ttdeci">void show_data(T *arr, size_t LEN)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:16</div></div>
+<div class="ttc" id="ashell__sort2_8cpp_html_a951127aea9d7e1e53ea9ae0868633246"><div class="ttname"><a href="../../d4/d7a/shell__sort2_8cpp.html#a951127aea9d7e1e53ea9ae0868633246">show_data</a></div><div class="ttdeci">void show_data(T *arr, size_t LEN)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:17</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
@@ -278,7 +279,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bb1b521853a9c46347182a9d10420771.html">sorting</a></li><li class="navelem"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html">shell_sort2.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
+    <li class="footer">Generated on Sat Jun 6 2020 00:28:19 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

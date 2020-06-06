@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('de/dd3/newton__raphson__method_8cpp.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Solve the equation \(f(x)=0\) using <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a>  
+<p>Solve the equation \(f(x)=0\) using <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a> for both real and complex solutions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
@@ -131,10 +131,11 @@ Functions</h2></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Solve the equation \(f(x)=0\) using <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a> </p>
+<div class="textblock"><p>Solve the equation \(f(x)=0\) using <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a> for both real and complex solutions. </p>
 <p>The \((i+1)^\text{th}\) approximation is given by: </p><p class="formulaDsp">
 \[ x_{i+1} = x_i - \frac{f(x_i)}{f&#39;(x_i)} \]
 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/kvedala">Krishna Vedala</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d6a/bisection__method_8cpp.html" title="Solve the equation  using bisection method">bisection_method.cpp</a>, <a class="el" href="../../dd/d29/false__position_8cpp.html" title="Solve the equation  using false position method, also known as the Secant method.">false_position.cpp</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a2003b5b2dcfff0769b957ab5c968b03d"></a>
@@ -161,9 +162,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>define \(f(x)\) to find root for </p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                           {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(i, 3) - (4 * i) - 9);  <span class="comment">// original equation</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                           {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(i, 3) - (4 * i) - 9);  <span class="comment">// original equation</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -197,9 +198,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>define the derivative function \(f&#39;(x)\) </p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                               {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> ((3 * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(i, 2)) - 4);  <span class="comment">// derivative of equation</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                               {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> ((3 * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(i, 2)) - 4);  <span class="comment">// derivative of equation</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -224,29 +225,29 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;           {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize randomizer</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> z, c = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, m, n;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInitial approximation: &quot;</span> &lt;&lt; c;</div>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;           {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize randomizer</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">double</span> z, c = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, m, n;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// start iterations</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a>; i++) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        m = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(c);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        n = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a>(c);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        z = c - (m / n);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        c = z;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (std::abs(m) &lt; EPSILON)  <span class="comment">// stoping criteria</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nRoot: &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;\t\tSteps: &quot;</span> &lt;&lt; i &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInitial approximation: &quot;</span> &lt;&lt; c;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// start iterations</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a>; i++) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        m = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(c);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        n = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a>(c);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        z = c - (m / n);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        c = z;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (std::abs(m) &lt; EPSILON)  <span class="comment">// stoping criteria</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nRoot: &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;\t\tSteps: &quot;</span> &lt;&lt; i &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -259,9 +260,9 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
-<div class="ttc" id="anewton__raphson__method_8cpp_html_a0a3abbca80bc98e7abcb3ae73abe0f14"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a></div><div class="ttdeci">#define MAX_ITERATIONS</div><div class="ttdoc">Maximum number of iterations to check.</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:20</div></div>
-<div class="ttc" id="anewton__raphson__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:24</div></div>
-<div class="ttc" id="anewton__raphson__method_8cpp_html_a3d3f7f41977394680af6ebbed96f3386"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a></div><div class="ttdeci">static double eq_der(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:30</div></div>
+<div class="ttc" id="anewton__raphson__method_8cpp_html_a0a3abbca80bc98e7abcb3ae73abe0f14"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a></div><div class="ttdeci">#define MAX_ITERATIONS</div><div class="ttdoc">Maximum number of iterations to check.</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:22</div></div>
+<div class="ttc" id="anewton__raphson__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:26</div></div>
+<div class="ttc" id="anewton__raphson__method_8cpp_html_a3d3f7f41977394680af6ebbed96f3386"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a></div><div class="ttdeci">static double eq_der(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:32</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
@@ -271,7 +272,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9c6faab82c22511b50177aa2e38e2780.html">numerical_methods</a></li><li class="navelem"><a class="el" href="../../de/dd3/newton__raphson__method_8cpp.html">newton_raphson_method.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
+    <li class="footer">Generated on Sat Jun 6 2020 00:28:19 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

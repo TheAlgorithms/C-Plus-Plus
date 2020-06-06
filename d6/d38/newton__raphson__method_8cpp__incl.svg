@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Solve the equation &#160;using Newton&#45;Raphson method">
+<g id="a_node1"><a xlink:title="Solve the equation &#160;using Newton&#45;Raphson method for both real and complex solutions.">
 <polygon fill="#bfbfbf" stroke="black" points="48,-56.5 48,-86.5 184,-86.5 184,-56.5 48,-56.5"/>
 <text text-anchor="start" x="56" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">numerical_methods/newton</text>
 <text text-anchor="middle" x="116" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">_raphson_method.cpp</text>

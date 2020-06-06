@@ -162,7 +162,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>return sample mean computed till last sample </p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{ <span class="keywordflow">return</span> K + Ex / n; }</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{ <span class="keywordflow">return</span> K + Ex / n; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,14 +197,14 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                      {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            K = x;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        n++;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        T tmp = x - K;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        Ex += tmp;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        Ex2 += tmp * tmp;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                      {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            K = x;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        n++;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        T tmp = x - K;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        Ex += tmp;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        Ex2 += tmp * tmp;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,7 +233,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>return sample standard deviation computed till last sample </p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(this-&gt;<a class="code" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">variance</a>()); }</div>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(this-&gt;<a class="code" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">variance</a>()); }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -268,7 +268,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>return data variance computed till last sample </p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{ <span class="keywordflow">return</span> (Ex2 - (Ex * Ex) / n) / (n - 1); }</div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{ <span class="keywordflow">return</span> (Ex2 - (Ex * Ex) / n) / (n - 1); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -310,12 +310,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>short-hand operator to read new sample from input stream <br  />
  e.g.: <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; stats1;</code> </p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                           {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        T val;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        input &gt;&gt; val;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        stat.<a class="code" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">new_val</a>(val);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> input;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                           {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        T val;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        input &gt;&gt; val;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        stat.<a class="code" href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">new_val</a>(val);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> input;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,13 +325,13 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_aa13bf7c38de112f71921a5525d71a2f2"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">statistics::stats_computer1::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition:</b> realtime_stats.cpp:31</div></div>
-<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a27f0a03e2fd2254f1c81fe668226bd92"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">statistics::stats_computer1::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition:</b> realtime_stats.cpp:44</div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_aa13bf7c38de112f71921a5525d71a2f2"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2">statistics::stats_computer1::new_val</a></div><div class="ttdeci">void new_val(T x)</div><div class="ttdef"><b>Definition:</b> realtime_stats.cpp:32</div></div>
+<div class="ttc" id="aclassstatistics_1_1stats__computer1_html_a27f0a03e2fd2254f1c81fe668226bd92"><div class="ttname"><a href="../../d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92">statistics::stats_computer1::variance</a></div><div class="ttdeci">double variance() const</div><div class="ttdef"><b>Definition:</b> realtime_stats.cpp:45</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dcf/namespacestatistics.html">statistics</a></li><li class="navelem"><a class="el" href="../../d7/d7c/classstatistics_1_1stats__computer1.html">stats_computer1</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 03:33:12 for Algorithms_in_C++ by
+    <li class="footer">Generated on Sat Jun 6 2020 00:28:19 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
