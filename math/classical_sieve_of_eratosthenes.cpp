@@ -9,7 +9,7 @@
 /** This is the function that finds the primes and eliminates
  * the multiples.
  */
-void sieve(int N, bool* isprime ) {
+void sieve(int N, bool *isprime ) {
   isprime[0] = true;
   isprime[1] = true;
   for (int i = 2; i * i <= N; ++i) {
@@ -23,7 +23,7 @@ void sieve(int N, bool* isprime ) {
 
 /** This function prints out the primes to STDOUT
  */
-void print(int N, bool* isprime ) {
+void print(int N, bool *isprime ) {
   for (int i = 1; i <= N; i++) {
     if (!isprime[i]) {
       std::cout << i << ' ';
