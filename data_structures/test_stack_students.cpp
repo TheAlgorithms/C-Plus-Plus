@@ -8,29 +8,26 @@
  *     ./main student.txt
  ************************************************************
  * */
-#include <assert.h>
+#include <cassert>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
 
-#include "stack.cpp"
-#include "stack.h"
-
-using namespace std;
+#include "./stack.h"
 
 int main(int argc, char* argv[]) {
     double GPA;
     double highestGPA;
-    string name;
+    std::string name;
 
     assert(argc == 2);
-    ifstream infile;
-    stack<string> stk;
+    std::ifstream infile;
+    stack<std::string> stk;
 
     infile.open(argv[1]);
-    cout << fixed << showpoint;
-    cout << setprecision(2);
+    std::cout << std::fixed << std::showpoint;
+    std::cout << std::setprecision(2);
     infile >> GPA >> name;
     highestGPA = GPA;
 
@@ -44,12 +41,12 @@ int main(int argc, char* argv[]) {
         }
         infile >> GPA >> name;
     }
-    cout << "Highest GPA: " << highestGPA << endl;
-    cout << "Students the highest GPA are: " << endl;
+    std::cout << "Highest GPA: " << highestGPA << std::endl;
+    std::cout << "Students the highest GPA are: " << std::endl;
     while (!stk.isEmptyStack()) {
-        cout << stk.top() << endl;
+        std::cout << stk.top() << std::endl;
         stk.pop();
     }
-    cout << endl;
+    std::cout << std::endl;
     return 0;
 }
