@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 int is_prime(int);
 int is_prime(int no) {
     int is_prime = 1;
@@ -22,7 +22,7 @@ int is_prime(int no) {
 
 int main() {
     int n;
-    std::cout << "Enter the number to check if it is prime or not" << std::endl;
+    std::cout << "enter the number to check if it is prime or not" << std::endl;
     std::cin >> n;
     int result = is_prime(n);
     if (result) {
