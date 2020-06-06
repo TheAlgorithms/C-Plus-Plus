@@ -163,6 +163,14 @@ void requestData() {
             break;
         }
 
+        // Check user's OS
+        // Uses system("cls") if OS is Windows
+        #ifdef __linux__
+        system("clear");
+
+        // Uses system("clear") if OS is Linux
+        #elif _WIN32
         system("cls");
+        #endif
     } while (opt != 5);
 }
