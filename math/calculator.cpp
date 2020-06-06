@@ -6,7 +6,6 @@
  */
 
 #include <iostream>
-#include <conio.h>
 #include <cstdlib>
 
 /**
@@ -39,7 +38,7 @@ float number;
 int main() {
     requestData();
 
-    _getch();
+    pause();
     return 0;
 }
 
@@ -48,8 +47,10 @@ int main() {
  */
 
 void pause() {
-    std::cout << "Press any key to continue . . . ";
-    _getch();
+    std::cout << "Press Enter key to continue . . . ";
+
+    std::cin.get();
+    std::cin.get();
 }
 
 /**
