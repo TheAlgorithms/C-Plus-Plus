@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-#include "stack.h"
+#include "./stack.h"
 
 int main(int argc, char* argv[]) {
     double GPA;

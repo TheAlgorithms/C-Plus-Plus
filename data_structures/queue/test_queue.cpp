@@ -1,41 +1,41 @@
 #include <iostream>
 #include <string>
-#include "queue.cpp"
-#include "queue.h"
 
-using namespace std;
+#include "./queue.h"
 
 int main() {
-    queue<string> q;
-    cout << "---------------------- Test construct ----------------------"
-         << endl;
+    queue<std::string> q;
+    std::cout << "---------------------- Test construct ----------------------"
+              << std::endl;
     q.display();
-    cout << "---------------------- Test isEmptyQueue ----------------------"
-         << endl;
+    std::cout
+        << "---------------------- Test isEmptyQueue ----------------------"
+        << std::endl;
     if (q.isEmptyQueue())
-        cout << "PASS" << endl;
+        std::cout << "PASS" << std::endl;
     else
-        cout << "FAIL" << endl;
-    cout << "---------------------- Test enQueue ----------------------"
-         << endl;
-    cout << "After Hai, Jeff, Tom, Jkingston go into queue: " << endl;
+        std::cout << "FAIL" << std::endl;
+    std::cout << "---------------------- Test enQueue ----------------------"
+              << std::endl;
+    std::cout << "After Hai, Jeff, Tom, Jkingston go into queue: " << std::endl;
     q.enQueue("Hai");
     q.enQueue("Jeff");
     q.enQueue("Tom");
     q.enQueue("Jkingston");
     q.display();
-    cout << "---------------------- Test front ----------------------" << endl;
-    string value = q.front();
+    std::cout << "---------------------- Test front ----------------------"
+              << std::endl;
+    std::string value = q.front();
     if (value == "Hai")
-        cout << "PASS" << endl;
+        std::cout << "PASS" << std::endl;
     else
-        cout << "FAIL" << endl;
-    cout << "---------------------- Test deQueue ----------------------"
-         << endl;
+        std::cout << "FAIL" << std::endl;
+    std::cout << "---------------------- Test deQueue ----------------------"
+              << std::endl;
     q.display();
     q.deQueue();
     q.deQueue();
-    cout << "After Hai, Jeff left the queue: " << endl;
+    std::cout << "After Hai, Jeff left the queue: " << std::endl;
     q.display();
     return 0;
 }

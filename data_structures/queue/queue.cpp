@@ -1,8 +1,7 @@
-#include "queue.h"
-#include <assert.h>
-#include <iostream>
+#include "./queue.h"
 
-using namespace std;
+#include <cassert>
+#include <iostream>
 
 /* Default constructor*/
 template <class Kind>
@@ -20,13 +19,13 @@ queue<Kind>::~queue() {}
 template <class Kind>
 void queue<Kind>::display() {
     node<Kind> *current = queueFront;
-    cout << "Front --> ";
+    std::cout << "Front --> ";
     while (current != NULL) {
-        cout << current->data << "    ";
+        std::cout << current->data << "    ";
         current = current->next;
     }
-    cout << endl;
-    cout << "Size of queue: " << size << endl;
+    std::cout << std::endl;
+    std::cout << "Size of queue: " << size << std::endl;
 }
 
 /* Determine whether the queue is empty */
@@ -75,6 +74,10 @@ void queue<Kind>::deQueue() {
         delete temp;
         size--;
     } else {
-        cout << "Queue is empty !" << endl;
+        std::cout << "Queue is empty !" << std::endl;
     }
 }
+
+#include <string>
+/** force instantiate to export the type class */
+template class queue<std::string>;
