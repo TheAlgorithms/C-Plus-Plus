@@ -1,6 +1,6 @@
 #include<iostream>
-int isPrime (int);
-int isPrime (int no) {
+int isPrime(int);
+int isPrime(int no) {
     int isPrime = 1;
     if (no <= 1) {
         return 0;
@@ -20,7 +20,7 @@ int isPrime (int no) {
     return isPrime;
 }
 
-int main () {
+int main() {
     int n;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> n;
