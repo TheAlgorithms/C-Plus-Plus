@@ -1,5 +1,5 @@
 #include <iostream>
-int is_prime(int);
+
 int is_prime(int no) {
     int is_prime = 1;
     if (no <= 1) {
@@ -30,5 +30,4 @@ int main() {
     } else {
         std::cout << n << " is not a prime number" << std::endl;
     }
-    return 0;
 }
