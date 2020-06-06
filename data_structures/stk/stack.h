@@ -1,6 +1,6 @@
 /* This class specifies the basic operation on a stack as a linked list */
-#ifndef STACK_H
-#define STACK_H
+#ifndef DATA_STRUCTURES_STK_STACK_H_
+#define DATA_STRUCTURES_STK_STACK_H_
 
 /* Definition of the node */
 template <class Type>
@@ -22,11 +22,11 @@ class stack {
     void pop();           /* Remove the top element of the stack */
     void clear();
 
-    stack<Type> operator=(stack<Type> &otherStack);
+    stack<Type> &operator=(const stack<Type> &otherStack);
     // Overload "=" the assignment operator.
  private:
     node<Type> *stackTop; /* Pointer to the stack */
     int size;
 };
 
-#endif
+#endif  // DATA_STRUCTURES_STK_STACK_H_

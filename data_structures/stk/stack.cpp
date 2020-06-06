@@ -1,8 +1,7 @@
-#include "stack.h"
-#include <assert.h>
-#include <iostream>
+#include "./stack.h"
 
-using namespace std;
+#include <cassert>
+#include <iostream>
 
 /* Default constructor*/
 template <class Type>
@@ -19,13 +18,13 @@ stack<Type>::~stack() {}
 template <class Type>
 void stack<Type>::display() {
     node<Type> *current = stackTop;
-    cout << "Top --> ";
+    std::cout << "Top --> ";
     while (current != NULL) {
-        cout << current->data << "  ";
+        std::cout << current->data << "  ";
         current = current->next;
     }
-    cout << endl;
-    cout << "Size of stack: " << size << endl;
+    std::cout << std::endl;
+    std::cout << "Size of stack: " << size << std::endl;
 }
 
 /* Determine whether the stack is empty */
@@ -68,20 +67,22 @@ void stack<Type>::pop() {
         delete temp;
         size--;
     } else {
-        cout << "Stack is empty !" << endl;
+        std::cout << "Stack is empty !" << std::endl;
     }
 }
 
 /* Operator "=" */
 template <class Type>
-stack<Type> stack<Type>::operator=(stack<Type> &otherStack) {
+stack<Type> &stack<Type>::operator=(const stack<Type> &otherStack) {
     node<Type> *newNode, *current, *last;
 
-    if (stackTop != NULL) /* If stack is no empty, make it empty */
+    /* If stack is no empty, make it empty */
+    if (stackTop != NULL) {
         stackTop = NULL;
-    if (otherStack.stackTop == NULL)
+    }
+    if (otherStack.stackTop == NULL) {
         stackTop = NULL;
-    else {
+    } else {
         current = otherStack.stackTop;
         stackTop = new node<Type>;
         stackTop->data = current->data;
@@ -101,3 +102,8 @@ stack<Type> stack<Type>::operator=(stack<Type> &otherStack) {
     size = otherStack.size;
     return *this;
 }
+
+#include <string>
+/** force instantiate to export the type class */
+template class stack<std::string>;
+template class stack<int>;
