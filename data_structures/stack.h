@@ -1,6 +1,6 @@
 /* This class specifies the basic operation on a stack as a linked list */
-#ifndef DATA_STRUCTURES_STK_STACK_H_
-#define DATA_STRUCTURES_STK_STACK_H_
+#ifndef DATA_STRUCTURES_STACK_H_
+#define DATA_STRUCTURES_STACK_H_
 
 #include <cassert>
 #include <iostream>
@@ -108,4 +108,4 @@ class stack {
     int size;
 };
 
-#endif  // DATA_STRUCTURES_STK_STACK_H_
+#endif  // DATA_STRUCTURES_STACK_H_

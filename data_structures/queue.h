@@ -1,6 +1,6 @@
 /* This class specifies the basic operation on a queue as a linked list */
-#ifndef DATA_STRUCTURES_QUEUE_QUEUE_H_
-#define DATA_STRUCTURES_QUEUE_QUEUE_H_
+#ifndef DATA_STRUCTURES_QUEUE_H_
+#define DATA_STRUCTURES_QUEUE_H_
 
 #include <cassert>
 #include <iostream>
@@ -85,4 +85,4 @@ class queue {
     int size;
 };
 
-#endif  // DATA_STRUCTURES_QUEUE_QUEUE_H_
+#endif  // DATA_STRUCTURES_QUEUE_H_
