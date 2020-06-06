@@ -11,7 +11,7 @@ int isPrime(int no) {
     }
     if (no >= 3) {
         for (int i = 3 ; i < (no / 2 + 1) ; i = i + 2) {
-            if ( no % i  == 0) {
+            if (no % i  == 0) {
                 isPrime = 0;
                 break;
             }
