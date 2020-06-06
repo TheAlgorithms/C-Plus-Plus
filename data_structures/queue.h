@@ -26,20 +26,20 @@ class queue {
         }
         std::cout << std::endl;
         std::cout << "Size of queue: " << size << std::endl;
-    };
+    }
 
     /** Default constructor*/
     queue() {
         queueFront = NULL;
         queueRear = NULL;
         size = 0;
-    };
+    }
 
     /** Destructor */
-    ~queue(){};
+    ~queue() {}
 
     /** Determine whether the queue is empty */
-    bool isEmptyQueue() { return (queueFront == NULL); };
+    bool isEmptyQueue() { return (queueFront == NULL); }
 
     /** Add new item to the queue */
     void enQueue(Kind item) {
@@ -55,13 +55,13 @@ class queue {
             queueRear = queueRear->next;
         }
         size++;
-    };
+    }
 
     /** Return the first element of the queue */
     Kind front() {
         assert(queueFront != NULL);
         return queueFront->data;
-    };
+    }
 
     /** Remove the top element of the queue */
     void deQueue() {
@@ -74,10 +74,10 @@ class queue {
         } else {
             std::cout << "Queue is empty !" << std::endl;
         }
-    };
+    }
 
     /** Clear queue */
-    void clear() { queueFront = NULL; };
+    void clear() { queueFront = NULL; }
 
  private:
     node<Kind> *queueFront; /**< Pointer to the front of the queue */

@@ -26,16 +26,16 @@ class stack {
         }
         std::cout << std::endl;
         std::cout << "Size of stack: " << size << std::endl;
-    };
+    }
 
     /** Default constructor*/
     stack() {
         stackTop = NULL;
         size = 0;
-    };
+    }
 
     /** Destructor */
-    ~stack(){};
+    ~stack() {}
 
     /** Determine whether the stack is empty */
     bool isEmptyStack() { return (stackTop == NULL); };
@@ -48,13 +48,13 @@ class stack {
         newNode->next = stackTop;
         stackTop = newNode;
         size++;
-    };
+    }
 
     /** Return the top element of the stack */
     Type top() {
         assert(stackTop != NULL);
         return stackTop->data;
-    };
+    }
 
     /** Remove the top element of the stack */
     void pop() {
@@ -67,10 +67,10 @@ class stack {
         } else {
             std::cout << "Stack is empty !" << std::endl;
         }
-    };
+    }
 
     /** Clear stack */
-    void clear() { stackTop = NULL; };
+    void clear() { stackTop = NULL; }
 
     /** Overload "=" the assignment operator */
     stack<Type> &operator=(const stack<Type> &otherStack) {
@@ -101,7 +101,7 @@ class stack {
         }
         size = otherStack.size;
         return *this;
-    };
+    }
 
  private:
     node<Type> *stackTop; /**< Pointer to the stack */
