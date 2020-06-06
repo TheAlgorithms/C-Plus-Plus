@@ -16,3 +16,7 @@ foreach( testsourcefile ${APP_SOURCES} )
     install(TARGETS ${testname} DESTINATION "bin/data_structures")
 
 endforeach( testsourcefile ${APP_SOURCES} )
+
+add_subdirectory(cll)
+add_subdirectory(queue)
+add_subdirectory(stk)
