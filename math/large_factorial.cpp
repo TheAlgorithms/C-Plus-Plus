@@ -2,6 +2,7 @@
  * @file
  * @brief Compute factorial of any arbitratily large number/
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
  * @see factorial.cpp
  */
 #include <cstring>

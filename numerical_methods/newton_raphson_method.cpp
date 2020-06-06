@@ -1,13 +1,15 @@
 /**
  * \file
  * \brief Solve the equation \f$f(x)=0\f$ using [Newton-Raphson
- * method](https://en.wikipedia.org/wiki/Newton%27s_method)
+ * method](https://en.wikipedia.org/wiki/Newton%27s_method) for both real and
+ * complex solutions
  *
  * The \f$(i+1)^\text{th}\f$ approximation is given by:
  * \f[
  * x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}
  * \f]
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
  * \see bisection_method.cpp, false_position.cpp
  */
 #include <cmath>

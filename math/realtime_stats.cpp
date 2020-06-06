@@ -5,6 +5,7 @@
  * This algorithm is really beneficial to compute statistics on data read in
  * realtime. For example, devices reading biometrics data. The algorithm is
  * simple enough to be easily implemented in an embedded system.
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #include <cassert>
 #include <cmath>

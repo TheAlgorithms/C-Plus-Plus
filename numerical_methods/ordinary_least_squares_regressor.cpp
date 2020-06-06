@@ -3,6 +3,7 @@
  * \brief Linear regression example using [Ordinary least
  * squares](https://en.wikipedia.org/wiki/Ordinary_least_squares)
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
  * Program that gets the number of data samples and number of features per
  * sample along with output per sample. It applies OLS regression to compute
  * the regression output for additional test data samples.

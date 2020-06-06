@@ -1,6 +1,7 @@
 /**
  * \file
  * \brief [Shell sort](https://en.wikipedia.org/wiki/Shell_sort) algorithm
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #include <array>
 #include <cstdlib>

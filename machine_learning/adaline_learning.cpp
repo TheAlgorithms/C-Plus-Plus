@@ -3,6 +3,8 @@
  * \brief [Adaptive Linear Neuron
  * (ADALINE)](https://en.wikipedia.org/wiki/ADALINE) implementation
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ *
  * <img
  * src="https://upload.wikimedia.org/wikipedia/commons/b/be/Adaline_flow_chart.gif"
  * width="200px">

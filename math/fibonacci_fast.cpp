@@ -11,6 +11,7 @@
  * found if we have already found n/2th or (n+1)/2th fibonacci It is a property
  * of fibonacci similar to matrix exponentiation.
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
  * @see fibonacci_large.cpp, fibonacci.cpp, string_fibonacci.cpp
  */
 

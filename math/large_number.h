@@ -2,6 +2,7 @@
  * @file
  * @brief Library to perform arithmatic operations on arbitrarily large
  * numbers.
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 
 #ifndef MATH_LARGE_NUMBER_H_

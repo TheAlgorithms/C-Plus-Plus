@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Calculate the square root of any positive number in \f$O(\log N)\f$
- * time, with precision fixed using [bisection
+ * @brief Calculate the square root of any positive real number in \f$O(\log
+ * N)\f$ time, with precision fixed using [bisection
  * method](https://en.wikipedia.org/wiki/Bisection_method) of root-finding.
  *
  * @see Can be implemented using faster and better algorithms like

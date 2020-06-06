@@ -8,6 +8,8 @@
  * follows the given data points. This this creates a chain of nodes that
  * resembles the given input shape.
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ *
  * \note This C++ version of the program is considerable slower than its [C
  * counterpart](https://github.com/kvedala/C/blob/master/machine_learning/kohonen_som_trace.c)
  * \note The compiled code is much slower when compiled with MS Visual C++ 2019

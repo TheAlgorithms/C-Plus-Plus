@@ -7,6 +7,7 @@
  * Took 0.608246 seconds to compute 50,000^th Fibonacci
  * number that contains 10450 digits!
  *
+ * \author [Krishna Vedala](https://github.com/kvedala)
  * @see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 
