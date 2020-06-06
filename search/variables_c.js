@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stack_3809',['stack',['../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7',1,'paranthesis_matching.cpp']]]
+  ['queuefront_3822',['queueFront',['../d2/d36/structqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5',1,'queue']]],
+  ['queuerear_3823',['queueRear',['../d2/d36/structqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5',1,'queue']]]
 ];
