@@ -4,7 +4,6 @@
     * if number is <= 1 or if it is even except 2, return false telling number is no prime.
 */
 #include<iostream>
-using namespace std;
 
 int isPrime(int);
 
@@ -33,13 +32,14 @@ int isPrime(int no) {
 
 int main() {
     int n;
-    cout<<"Enter the number to check if it is prime or not"<<endl;
-    cin>>n;
+    std::cout<<"Enter the number to check if it is prime or not"<<std::endl;
+    std::cin>>n;
+    
     int result = isPrime(n);
     if(result) {
-        cout<<n<<" is a prime number"<<endl;
+        std::cout<<n<<" is a prime number"<<std::endl;
     } else {
-        cout<<n<<" is not a prime number"<<endl;
+        std::cout<<n<<" is not a prime number"<<std::endl;
     }
     return(0);
 }
