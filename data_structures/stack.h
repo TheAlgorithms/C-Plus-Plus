@@ -38,7 +38,7 @@ class stack {
     ~stack() {}
 
     /** Determine whether the stack is empty */
-    bool isEmptyStack() { return (stackTop == NULL); };
+    bool isEmptyStack() { return (stackTop == NULL); }
 
     /** Add new item to the stack */
     void push(Type item) {
