@@ -18,5 +18,3 @@ foreach( testsourcefile ${APP_SOURCES} )
 endforeach( testsourcefile ${APP_SOURCES} )
 
 add_subdirectory(cll)
-add_subdirectory(queue)
-add_subdirectory(stk)
