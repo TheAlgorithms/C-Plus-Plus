@@ -1,16 +1,22 @@
+/**
+ * Copyright 2020 @author omkarlanghe
+ * Reduced all possibilities of a number which cannot be prime.
+ * Eg: No even number, except 2 can be a prime number, hence we will increment our loop with i+2 jumping on all odd numbers only.
+ * If number is <= 1 or if it is even except 2, break the loop and return false telling number is not prime.
+ */
 #include <iostream>
 int is_prime(int no) {
     int is_prime = 1;
-    if (no <= 1) {  // If number is 1 or negetive, return false
+    if (no <= 1) {
         return 0;
-    } else if (no == 2) {  // 2 is the only even prime, number return true
+    } else if (no == 2) {
         return 1;
-    } else if (no & 1 == 0) {  // otherwise if other even numbers, return false
+    } else if ((no & 1) == 0) {
         return 0;
     }
-    if (no >= 3) {  // Start with 3
-        for (int i = 3; i < (no / 2 + 1); i = i + 2) {
-            if (no % i == 0) {
+    if (no >= 3) {
+        for (int i = 3; (i*i) < (no / 2 + 1); i = i + 2) {
+            if ((no % i) == 0) {
                 is_prime = 0;
                 break;
             }
