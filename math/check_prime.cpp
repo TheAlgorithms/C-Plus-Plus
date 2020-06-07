@@ -5,6 +5,12 @@
  * If number is <= 1 or if it is even except 2, break the loop and return false telling number is not prime.
  */
 #include <iostream>
+
+ /**
+ * Function to check if the given number is prime or not.
+ * @param no number to be checked.
+ * @return if number is prime, it returns @ true, else it returns @ false.
+ */
 int is_prime(int no) {
     int is_prime = 1;
     if (no <= 1) {
@@ -25,6 +31,9 @@ int is_prime(int no) {
     return (is_prime);
 }
 
+/**
+ * Main function
+ */
 int main() {
     int n;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
