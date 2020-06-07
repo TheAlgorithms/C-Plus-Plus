@@ -15,19 +15,19 @@ int is_prime(int no) {
         return 0;
     }
     if (no >= 3) {
-        for (int i = 3; (i*i) < (no / 2 + 1); i = i + 2) {
+        for (int i = 3 ; (i*i) < (no) ; i = (i + 2)) {
             if ((no % i) == 0) {
                 is_prime = 0;
                 break;
             }
         }
     }
-    return is_prime;
+    return (is_prime);
 }
 
 int main() {
     int n;
-    std::cout << "enter the number to check if it is prime or not" << std::endl;
+    std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> n;
     int result = is_prime(n);
     if (result) {
