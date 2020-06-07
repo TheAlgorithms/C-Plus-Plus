@@ -1,3 +1,6 @@
+/*
+* Copyright 2020
+*/
 #include <iostream>
 
 int is_prime(int no) {
