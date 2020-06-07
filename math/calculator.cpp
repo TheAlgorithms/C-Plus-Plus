@@ -43,7 +43,7 @@ int main() {
  */
 
 void pause() {
-    std::cout << "Press Enter key to continue . . . ";
+    std::cout << "Press ENTER key to continue . . . ";
 
     std::cin.get();
     std::cin.get();
