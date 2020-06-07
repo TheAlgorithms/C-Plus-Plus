@@ -21,13 +21,8 @@ struct Node {
  * Prototypes
  */
 
-void requestData();
+void requestData(Node*);
 void pause();
-
-Node* new_node = new Node();
-
-int opt = 0;
-float number;
 
 /**
  * --------------
@@ -36,7 +31,8 @@ float number;
  */
 
 int main() {
-    requestData();
+    Node* new_node = new Node();
+    requestData(new_node);
 
     pause();
     return 0;
@@ -57,7 +53,8 @@ void pause() {
  * Function to call the calculator.
  */
 
-void requestData() {
+void requestData(Node* new_node) {
+    int opt = 0; float number;
     int amount_to_sum = 0, amount_to_subtract = 0, amount_to_multiply = 0,
         amount_to_divide = 0;
 
