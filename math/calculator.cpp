@@ -34,6 +34,8 @@ int main() {
     Node* new_node = new Node();
     requestData(new_node);
 
+    delete[] new_node;
+
     pause();
     return 0;
 }
