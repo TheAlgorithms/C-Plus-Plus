@@ -34,6 +34,10 @@ int main() {
     Node* new_node = new Node();
     requestData(new_node);
 
+    /**
+     * Release allocated memory used in `new_node`.
+     */
+
     delete[] new_node;
 
     pause();
