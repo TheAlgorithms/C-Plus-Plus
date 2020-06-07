@@ -1,14 +1,14 @@
 #include <iostream>
 int is_prime(int no) {
     int is_prime = 1;
-    if (no <= 1) {
+    if (no <= 1) {  // If number is 1 or negetive, return false
         return 0;
-    } else if (no == 2) {
+    } else if (no == 2) {  // 2 is the only even prime, number return true
         return 1;
-    } else if (no & 1 == 0) {
+    } else if (no & 1 == 0) {  // otherwise if other even numbers, return false
         return 0;
     }
-    if (no >= 3) {
+    if (no >= 3) {  // Start with 3
         for (int i = 3; i < (no / 2 + 1); i = i + 2) {
             if (no % i == 0) {
                 is_prime = 0;
