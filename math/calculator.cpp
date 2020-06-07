@@ -38,7 +38,7 @@ int main() {
      * Release allocated memory used in `new_node`.
      */
 
-    delete[] new_node;
+    delete new_node;
 
     pause();
     return 0;
