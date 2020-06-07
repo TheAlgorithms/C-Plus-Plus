@@ -1,5 +1,4 @@
 #include <iostream>
-
 int is_prime(int no) {
     int is_prime = 1;
     if (no <= 1) {
