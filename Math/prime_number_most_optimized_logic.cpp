@@ -1,6 +1,6 @@
 /*
-* Copyright 2020
-*/
+ * Copyright 2020
+ */
 #include <iostream>
 
 int is_prime(int no) {
@@ -13,8 +13,8 @@ int is_prime(int no) {
         return 0;
     }
     if (no >= 3) {
-        for (int i = 3 ; i < (no / 2 + 1) ; i = i + 2) {
-            if (no % i  == 0) {
+        for (int i = 3; i < (no / 2 + 1); i = i + 2) {
+            if (no % i == 0) {
                 is_prime = 0;
                 break;
             }
