@@ -209,14 +209,14 @@ void requestData(Node* new_node) {
 
         /**
          * Check user's OS
-         * Uses system("cls") if OS is Windows
+         * Use system("clear") if OS is GNU/Linux based
          */
 
         #ifdef __linux__
         system("clear");
 
         /**
-         * Uses system("clear") if OS is Linux
+         * Use system("cls") if OS is Windows
          */
 
         #elif _WIN32
