@@ -1,13 +1,13 @@
 #include <iostream>
 int main() {
   int n, k;
-  ::std::cout << "Enter size of array=\t";
+  ::std::cout << "Enter size of array=";
   ::std::cin >> n;
-  ::std::cout
-      << "Enter Number of indeces u want to rotate the array to left=\t";
+  ::std::cout << "Enter Number of indeces u want to rotate the array to left=";
   ::std::cin >> k;
-  int a[n];
-  ::std::cout << "Enter  elements of array=\t";
+  // int a[n];
+  int *a = new int[n];
+  ::std::cout << "Enter  elements of array=";
   for (int i = 0; i < n; i++) {
     ::std::cin >> a[i];
   }
@@ -26,6 +26,6 @@ int main() {
   for (int j = 0; j < n; j++) {
     ::std::cout << a[j] << " ";
   }
-  getchar();
+  ::std::cout << "\n";
   return 0;
 }

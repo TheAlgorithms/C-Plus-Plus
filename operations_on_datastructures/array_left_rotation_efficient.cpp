@@ -17,17 +17,16 @@ arrays.
 */
 int main() {
   int n, d;
-  ::std::cout << "Enter size of array=\t";
+  ::std::cout << "Enter size of array=";
   ::std::cin >> n;
-  ::std::cout
-      << "Enter Number of indeces u want to rotate the array to left=\t";
+  ::std::cout << "Enter Number of indeces u want to rotate the array to left=";
   ::std::cin >> d;
-  int a[n];
+  int *a = new int[n];
   ::std::cout << "Enter  elements of array=\t";
   for (int i = 0; i < n; i++) {
     ::std::cin >> a[i];
   }
-  int arr[d];
+  int *arr = new int[d];
   for (int i = 0; i < d; i++) {
     arr[i] = a[i];
   }
@@ -41,9 +40,11 @@ int main() {
     a[i] = arr[j];
     j++;
   }
-  cout << "Your rotated array is=\t";
+
+  ::std::cout << "Your rotated array is=";
   for (int j = 0; j < n; j++) {
     ::std::cout << a[j] << " ";
   }
+  ::std::cout << "\n";
   return 0;
 }
