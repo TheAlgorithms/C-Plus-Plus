@@ -1,10 +1,9 @@
-#include <math.h>
-
 #include <iostream>
+#include <math.h>
 
 // Our class for point coordinates.
 class Point {
-   public:
+    public:
     int x;
     int y;
     int z;
