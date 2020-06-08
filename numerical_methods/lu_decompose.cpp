@@ -109,7 +109,7 @@ int main(int argc, char **argv) {
         U[i] = std::vector<double>(mat_size);
         for (int j = 0; j < mat_size; j++)
             /* create random values in the limits [-range2, range-1] */
-            A[i][j] = static_cast<double>(rand() % range - range2);
+            A[i][j] = static_cast<double>(std::rand() % range - range2);
     }
 
     std::clock_t start_t = std::clock();
