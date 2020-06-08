@@ -28,7 +28,6 @@ using qr_algorithm::operator<<;
 void create_matrix(std::valarray<std::valarray<double>> *A) {
     int i, j, tmp, lim2 = LIMS >> 1;
     int N = A->size();
-    std::srand(std::time(nullptr));
 
 #ifdef _OPENMP
 #pragma omp for
@@ -241,6 +240,9 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Matrix size should be > 2\n");
         return -1;
     }
+
+    // initialize random number generator
+    std::srand(std::time(nullptr));
 
     int i, rows = mat_size, columns = mat_size;
 
