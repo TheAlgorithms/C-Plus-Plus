@@ -129,8 +129,12 @@
   * [Durand Kerner Roots](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/durand_kerner_roots.cpp)
   * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/false_position.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
+  * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
   * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ordinary_least_squares_regressor.cpp)
+  * [Qr Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decompose.h)
+  * [Qr Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decomposition.cpp)
+  * [Qr Eigen Values](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_eigen_values.cpp)
   * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/successive_approximation.cpp)
 
 ## Operations On Datastructures
