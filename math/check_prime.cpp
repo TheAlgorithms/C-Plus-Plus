@@ -8,21 +8,21 @@
 
  /**
  * Function to check if the given number is prime or not.
- * @param no number to be checked.
+ * @param num number to be checked.
  * @return if number is prime, it returns @ true, else it returns @ false.
  */
-int is_prime(int no) {
+int is_prime(int num) {
     int is_prime = 1;
-    if (no <= 1) {
+    if (num <= 1) {
         return 0;
-    } else if (no == 2) {
+    } else if (num == 2) {
         return 1;
-    } else if ((no & 1) == 0) {
+    } else if ((num & 1) == 0) {
         return 0;
     }
-    if (no >= 3) {
-        for (int i = 3 ; (i*i) < (no) ; i = (i + 2)) {
-            if ((no % i) == 0) {
+    if (num >= 3) {
+        for (int i = 3 ; (i*i) < (num) ; i = (i + 2)) {
+            if ((num % i) == 0) {
                 is_prime = 0;
                 break;
             }
@@ -35,13 +35,16 @@ int is_prime(int no) {
  * Main function
  */
 int main() {
-    int n;
-    std::cout << "Enter the number to check if it is prime or not" << std::endl;
-    std::cin >> n;
-    int result = is_prime(n);
+    int num;
+    std::cout << "Enter the number to check if it is prime or not" <<
+    std::endl;
+    std::cin >> num;
+    int result = is_prime(num);
     if (result) {
-        std::cout << n << " is a prime number" << std::endl;
+        std::cout << num << " is a prime number" <<
+        std::endl;
     } else {
-        std::cout << n << " is not a prime number" << std::endl;
+        std::cout << num << " is not a prime number" <<
+        std::endl;
     }
 }
