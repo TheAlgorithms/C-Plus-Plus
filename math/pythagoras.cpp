@@ -1,12 +1,13 @@
-#include <iostream>
 #include <math.h>
+
+#include <iostream>
 
 // Our class for point coordinates.
 class Point {
     public:
-    int x;
-    int y;
-    int z;
+        int x;
+        int y;
+        int z;
 };
 
 // This method just calculate pythagorian distance from a point to b.
