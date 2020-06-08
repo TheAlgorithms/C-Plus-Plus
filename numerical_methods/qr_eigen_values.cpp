@@ -227,9 +227,9 @@ void test2() {
  */
 int main(int argc, char **argv) {
     int mat_size = 5;
-    if (argc == 2)
+    if (argc == 2) {
         mat_size = atoi(argv[1]);
-    else {  // if invalid input argument is given run tests
+    } else {  // if invalid input argument is given run tests
         test1();
         test2();
         std::cout << "Usage: ./qr_eigen_values [mat_size]\n";
