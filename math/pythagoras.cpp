@@ -3,8 +3,7 @@
 #include <iostream>
 
 // Our class for point coordinates.
-class Point {
-public:
+struct  Point {
     int x;
     int y;
     int z;
