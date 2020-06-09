@@ -1,8 +1,9 @@
 tasks:
-  - init: >
-    pip install cpplint
-    cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON &&
-    cmake --build build -t all 
+  - command: pip install cpplint 
+    name: Install CPPLINT
+  - command: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+    name: Configure project
+
 vscode:
   extensions:
     - ms-vscode.cpptools@0.28.3:mjRj37VUK0nY2ZeDXzxOJA==
