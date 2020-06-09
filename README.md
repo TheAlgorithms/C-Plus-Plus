@@ -1,6 +1,6 @@
 # The Algorithms - C++ # {#mainpage}
 
-<a href="https://github.com/kvedala/C-Plus-Plus/blob/master/CONTRIBUTION.md">![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)]</a>
+<a href="https://github.com/kvedala/C-Plus-Plus/blob/master/CONTRIBUTING.md">![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)]</a>
 ![GitHub repo size](https://img.shields.io/github/repo-size/kvedala/C-Plus-Plus?color=red&style=flat-square)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/kvedala/C-Plus-Plus?color=green&style=flat-square)
 <a href="https://kvedala.github.io/C-Plus-Plus">![Doxygen CI](https://github.com/kvedala/C-Plus-Plus/workflows/Doxygen%20CI/badge.svg)</a>
@@ -14,4 +14,4 @@ Click on [Files menu](https://kvedala.github.io/C-Plus-Plus/files.html) to see t
 The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
 
 ### Contribute Guidelines
-Read our [Contribution Guidelines](https://github.com/kvedala/C-Plus-Plus/blob/master/CONTRIBUTION.md) before you contribute.
+Read our [Contribution Guidelines](https://github.com/kvedala/C-Plus-Plus/blob/master/CONTRIBUTING.md) before you contribute.
