@@ -1,25 +1,21 @@
-/// c++ program to calculate de modulus and argument of a complex number
+/// c++ program to calculate the modulus and argument of a complex number
 #include <cmath>
 #include <iostream>
 /**
  *Calculate the modulus and argument(radians) value for a complex number
  *the form of a complex number be like z=x+iy
  *so for a pair of numbers (a,b) that a represents x and b y
- *the program can calculate the modulus like 
+ *the program can calculate the modulus like
  *|z|=sqrt(a^2+b^2)
- *and the argument like 
+ *and the argument like
  *arg=arctan(y/x)
  */
 struct  Numcpx {
     double x , y;
-    Point(double p = 0.0, double o = 0.0){
-        x = p;
-        y = o;
-    }
 };
 
 /**
- *The metod use the Pythagorean theorem to calcule the modulus.
+ *The method use the Pythagorean theorem to calculate the modulus.
  */
 double modulus(Numcpx a) {
     double x_2 = std::pow(std::abs(a.x), 2);
