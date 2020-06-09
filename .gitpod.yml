@@ -1,6 +1,14 @@
 image:
   file: .gitpod.dockerfile
 
+github:
+  prebuilds:
+    addBadge: true
+    addComment: true
+    addCheck: false
+    master: true
+    pullRequestsFromForks: true
+
 vscode:
   extensions:
     - ms-vscode.cpptools@0.28.3:mjRj37VUK0nY2ZeDXzxOJA==
