@@ -1,6 +1,9 @@
 tasks:
-- init: >
-  pip install cpplint
-  cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON &&
-  cmake --build build -t all 
-  
+  - init: >
+    pip install cpplint
+    cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON &&
+    cmake --build build -t all 
+vscode:
+  extensions:
+    - twxs.cmake@0.0.17  
+    -ms-vscode.cpptools@0.28.3
