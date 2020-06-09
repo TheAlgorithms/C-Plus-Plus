@@ -1,6 +1,7 @@
+image:
+  file: .gitpod.dockerfile
+
 tasks:
-  - init: sudo apt -qq update && sudo apt -qq install doxygen graphviz && pip install cpplint 
-    name: Install CPPLINT
   - command: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
     name: Configure project
 
