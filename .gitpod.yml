@@ -4,7 +4,7 @@ image:
 github:
   prebuilds:
     addBadge: true
-    addComment: true
+    addComment: false
     addCheck: false
     master: true
     pullRequestsFromForks: true
