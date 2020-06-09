@@ -74,9 +74,24 @@ void mat_mul(const std::valarray<std::valarray<double>> &A,
 }
 
 namespace qr_algorithm {
-/** Compute eigen values
- * \param[in,out] A matric to compute eigen values for \note This matrix gets
- * modified
+/** Compute eigen values using iterative shifted QR decomposition algorithm as
+ * follows:
+ * 1. Use last diagonal element of A as eigen value approximation \f$c\f$
+ * 2. Shift diagonals of matrix \f$A' = A + cI\f$
+ * 3. Decompose matrix \f$A'=QR\f$
+ * 4. Compute next approximation \f$A'_1 = RQ \f$
+ * 5. Shift diagonals back \f$A_1 = A'_1 - cI\f$
+ * 6. Termination condition check: last element below diagonal is almost 0
+ *   1. If not 0, go back to step 1 with the new approximation \f$A_1\f$
+ *   2. If 0, continue to step 7
+ * 7. Save last known \f$c\f$ as the eigen value.
+ * 8. Are all eigen values found?
+ *   1. If not, remove last row and column of \f$A_1\f$ and go back to step 1.
+ *   2. If yes, stop.
+ *
+ * \note The matrix \f$A\f$ gets modified
+ *
+ * \param[in,out] A matrix to compute eigen values for
  * \param[in] print_intermediates (optional) whether to print intermediate A, Q
  * and R matrices (default = `false`)
  */
