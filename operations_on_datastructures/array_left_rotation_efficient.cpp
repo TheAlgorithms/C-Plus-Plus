@@ -13,35 +13,35 @@
  * is roated d times in only single iteration. This uses less time for more long
  * arrays. */
 int main() {
-  int n, d;
-  std::cout << "Enter size of array=";
-  std::cin >> n;
-  std::cout << "Enter Number of indeces u want to rotate the array to left=";
-  std::cin >> d;
-  int *a = new int[n];
-  std::cout << "Enter elements of array(seprated by space)=";
-  for (int i = 0; i < n; i++) {
-    std::cin >> a[i];
-  }
-  int *arr = new int[d];
-  for (int i = 0; i < d; i++) {
-    arr[i] = a[i];
-  }
-  int j = 0;
-  for (int i = d; i < n; i++) {
-    a[j] = a[i];
-    j++;
-  }
-  j = 0;
-  for (int i = n - d; i < n; i++) {
-    a[i] = arr[j];
-    j++;
-  }
+    int n, d;
+    std::cout << "Enter size of array=";
+    std::cin >> n;
+    std::cout << "Enter Number of indeces u want to rotate the array to left=";
+    std::cin >> d;
+    int *a = new int[n];
+    std::cout << "Enter elements of array(seprated by space)=";
+    for (int i = 0; i < n; i++) {
+        std::cin >> a[i];
+    }
+    int *arr = new int[d];
+    for (int i = 0; i < d; i++) {
+        arr[i] = a[i];
+    }
+    int j = 0;
+    for (int i = d; i < n; i++) {
+        a[j] = a[i];
+        j++;
+    }
+    j = 0;
+    for (int i = n - d; i < n; i++) {
+        a[i] = arr[j];
+        j++;
+    }
 
-  std::cout << "Your rotated array is=";
-  for (int j = 0; j < n; j++) {
-    std::cout << a[j] << " ";
-  }
-  std::cout << "\n";
-  return 0;
+    std::cout << "Your rotated array is=";
+    for (int j = 0; j < n; j++) {
+        std::cout << a[j] << " ";
+    }
+    std::cout << "\n";
+    return 0;
 }
