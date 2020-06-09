@@ -77,10 +77,10 @@ namespace qr_algorithm {
 /** Compute eigen values using iterative shifted QR decomposition algorithm as
  * follows:
  * 1. Use last diagonal element of A as eigen value approximation \f$c\f$
- * 2. Shift diagonals of matrix \f$A' = A + cI\f$
+ * 2. Shift diagonals of matrix \f$A' = A - cI\f$
  * 3. Decompose matrix \f$A'=QR\f$
  * 4. Compute next approximation \f$A'_1 = RQ \f$
- * 5. Shift diagonals back \f$A_1 = A'_1 - cI\f$
+ * 5. Shift diagonals back \f$A_1 = A'_1 + cI\f$
  * 6. Termination condition check: last element below diagonal is almost 0
  *   1. If not 0, go back to step 1 with the new approximation \f$A_1\f$
  *   2. If 0, continue to step 7
