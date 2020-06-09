@@ -12,6 +12,7 @@ Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/CONTRIBUTING.md
 - [ ] Added description of change
 - [ ] Added file name matches [File name guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md#New-File-Name-guidelines)
 - [ ] Added tests and example, test must pass
+- [ ] Added documentation so that the program is self-explanatory and educational - [Doxygen guidelines](https://www.doxygen.nl/manual/docblocks.html)
 - [ ] Relevant documentation/comments is changed or added
 - [ ] PR title follows semantic [commit guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md#Commit-Guidelines)
 - [ ] Search previous suggestions before making a new one, as yours may be a duplicate.
