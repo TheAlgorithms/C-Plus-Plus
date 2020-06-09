@@ -26,22 +26,22 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", null ],
-    [ "CONTRIBUTION GUIDELINES", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html", [
-      [ "Before contributing", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md1", null ],
-      [ "Contributing", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md2", [
+    [ "CONTRIBUTION GUIDELINES", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
+      [ "Before contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
+      [ "Contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", [
         [ "Algorithms implemented in C++ (for education)", "index.html#autotoc_md33", null ],
         [ "Contribute Guidelines", "index.html#autotoc_md34", null ],
-        [ "Contributor", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md3", null ],
-        [ "Making Changes", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md4", [
-          [ "Code", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md5", null ],
-          [ "New File Name guidelines", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md6", null ],
-          [ "New Directory guidelines", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md7", null ],
-          [ "Commit Guidelines", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md8", null ],
-          [ "Documentation", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md9", null ],
-          [ "Test", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md10", null ]
+        [ "Contributor", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", null ],
+        [ "Making Changes", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", [
+          [ "Code", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5", null ],
+          [ "New File Name guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md6", null ],
+          [ "New Directory guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7", null ],
+          [ "Commit Guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md8", null ],
+          [ "Documentation", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md9", null ],
+          [ "Test", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md10", null ]
         ] ],
-        [ "Pull Requests", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md11", [
-          [ "cpplint", "d1/d5e/md__c_o_n_t_r_i_b_u_t_i_o_n.html#autotoc_md12", null ]
+        [ "Pull Requests", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11", [
+          [ "cpplint", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md12", null ]
         ] ]
       ] ]
     ] ],
@@ -99,7 +99,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d5/d67/bayes__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md25",
 "da/d24/sqrt__double_8cpp.html",
 "de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"
 ];
