@@ -153,10 +153,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Compute eigen values using iterative shifted QR decomposition algorithm as follows:</p><ol type="1">
 <li>Use last diagonal element of A as eigen value approximation \(c\)</li>
-<li>Shift diagonals of matrix \(A&#39; = A + cI\)</li>
+<li>Shift diagonals of matrix \(A&#39; = A - cI\)</li>
 <li>Decompose matrix \(A&#39;=QR\)</li>
 <li>Compute next approximation \(A&#39;_1 = RQ \)</li>
-<li>Shift diagonals back \(A_1 = A&#39;_1 - cI\)</li>
+<li>Shift diagonals back \(A_1 = A&#39;_1 + cI\)</li>
 <li>Termination condition check: last element below diagonal is almost 0<ol type="a">
 <li>If not 0, go back to step 1 with the new approximation \(A_1\)</li>
 <li>If 0, continue to step 7</li>
@@ -625,7 +625,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d3b/namespaceqr__algorithm.html">qr_algorithm</a></li>
-    <li class="footer">Generated on Tue Jun 9 2020 00:20:56 for Algorithms_in_C++ by
+    <li class="footer">Generated on Tue Jun 9 2020 00:23:40 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
