@@ -15,7 +15,6 @@ Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/CONTRIBUTING.md
 - [ ] Relevant documentation/comments is changed or added
 - [ ] PR title follows semantic [commit guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md#Commit-Guidelines)
 - [ ] Search previous suggestions before making a new one, as yours may be a duplicate.
-- [ ] Sort by alphabetical order
 - [ ] I acknowledge that all my contributions will be made under the project's license.
 
 Notes: <!-- Please add a one-line description for developers or pull request viewers -->
