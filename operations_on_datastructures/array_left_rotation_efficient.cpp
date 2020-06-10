@@ -11,7 +11,14 @@
  *
  * This program uses a more efficient logic to rotate the array as each element
  * is roated d times in only single iteration. This uses less time for more long
- * arrays. */
+ * arrays. 
+ *
+ * The Algorithm used is:
+ * 1) Input array, size, and no of times to rotate.
+ * 2) Create a new array and save first no_of_rotate elements into it.
+ * 3) Copy the remaining elements from starting index of the input array.
+ * 4) Copy back the elements saved in the new array to the input array.
+ * 5) Print the array. */
 
 void rotateArray(int *a, int size, int no_of_rotate) {    // Rotating the Array
   int *arr = new int[no_of_rotate];
@@ -56,10 +63,4 @@ int main() {
   return 0;
 }
 
-/**
- * The Algorithm used is:
- * 1) Input array, size, and no of times to rotate.
- * 2) Create a new array and save first no_of_rotate elements into it.
- * 3) Copy the remaining elements from starting index of the input array.
- * 4) Copy back the elements saved in the new array to the input array.
- * 5) Print the array. */
+
