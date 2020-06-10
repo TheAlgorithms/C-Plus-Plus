@@ -13,8 +13,7 @@
  * is roated d times in only single iteration. This uses less time for more long
  * arrays. */
 
-
-void rotateArray(int * a,int size, int no_of_rotate){  //Rotating the Array
+void rotateArray(int *a, int size, int no_of_rotate) { // Rotating the Array
     int *arr = new int[no_of_rotate];
     for (int i = 0; i < no_of_rotate; i++) {
         arr[i] = a[i];
@@ -31,11 +30,11 @@ void rotateArray(int * a,int size, int no_of_rotate){  //Rotating the Array
     }
 }
 
-void printArray(int * a, int size){  //Printing the Array
-   for (int j = 0; j < size; j++) {
+void printArray(int *a, int size) { // Printing the Array
+    for (int j = 0; j < size; j++) {
         std::cout << a[j] << " ";
     }
-    std::cout << "\n"; 
+    std::cout << "\n";
 }
 
 int main() {
@@ -50,10 +49,10 @@ int main() {
         std::cin >> a[i];
     }
 
-    rotateArray(a,size,no_of_rotate);
-  
+    rotateArray(a, size, no_of_rotate);
+
     std::cout << "Your rotated array is=";
-    printArray(a,size);
+    printArray(a, size);
     return 0;
 }
 
