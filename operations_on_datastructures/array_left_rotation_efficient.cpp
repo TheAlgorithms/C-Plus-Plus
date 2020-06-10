@@ -11,7 +11,7 @@
  *
  * This program uses a more efficient logic to rotate the array as each element
  * is roated d times in only single iteration. This uses less time for more long
- * arrays. 
+ * arrays.
  *
  * The Algorithm used is:
  * 1) Input array, size, and no of times to rotate.
@@ -20,7 +20,7 @@
  * 4) Copy back the elements saved in the new array to the input array.
  * 5) Print the array. */
 
-void rotateArray(int *a, int SIZE, int no_of_rotate) {    // Rotating the Array
+void rotateArray(int *a, int SIZE, int no_of_rotate) { /** Rotating the Array */
   int *arr = new int[no_of_rotate];
   for (int i = 0; i < no_of_rotate; i++) {
     arr[i] = a[i];
@@ -37,7 +37,7 @@ void rotateArray(int *a, int SIZE, int no_of_rotate) {    // Rotating the Array
   }
 }
 
-void printArray(int *a, int SIZE) {             // Printing the Array
+void printArray(int *a, int SIZE) { /** Printing the Array */
   for (int j = 0; j < SIZE; j++) {
     std::cout << a[j] << " ";
   }
@@ -62,5 +62,3 @@ int main() {
   printArray(a, SIZE);
   return 0;
 }
-
-
