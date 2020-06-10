@@ -175,6 +175,8 @@ void requestData(float *new_val) {
             pause();
             break;
 
+            case 5: break;
+
             default:
                 std::cout << "Wrong option, please choose a valid option: ";
                 std::cin >> opt;
