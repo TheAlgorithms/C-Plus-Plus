@@ -8,30 +8,18 @@
 #include <iostream>
 #include <cstdlib>
 
-/**
- * Same as the number typed by the user, but it's saved
- * in the new node so it won't be re-writed.
- */
-struct Node {
-    float datatype;
-};
-
 /** 
  * Prototypes
  */
-void requestData(Node*);
+void requestData(float*);
 void pause();
 
 /**
  * Main function
  */
 int main() {
-    Node* new_node = new Node();
-    requestData(new_node);
-
-    // Release allocated memory used in `new_node`.
-
-    delete new_node;
+    float global_var;
+    requestData(&global_var);
 
     pause();
     return 0;
@@ -50,7 +38,7 @@ void pause() {
 /**
  * Function to call the calculator.
  */
-void requestData(Node* new_node) {
+void requestData(float *new_val) {
     int opt = 0; float number;
     int amount_to_sum = 0, amount_to_subtract = 0, amount_to_multiply = 0,
         amount_to_divide = 0;
@@ -81,18 +69,18 @@ void requestData(Node* new_node) {
                 // Save it in the new node so it's not re-writed.
 
                 if (i == 1) {
-                    new_node->datatype = number;
+                    *new_val = number;
 
                     // If the current number is not the first one,
                     // sum the current one with the previous one.
 
                 } else {
-                    new_node->datatype += number;
+                    *new_val += number;
                 }
             }
 
             std::cout << "\nThe sum of the numbers is: "
-                << new_node->datatype << std::endl;
+                << *new_val << std::endl;
 
             pause();
             break;
@@ -111,18 +99,18 @@ void requestData(Node* new_node) {
                 // Save it in the new node so it's not re-writed.
 
                 if (i == 1) {
-                    new_node->datatype = number;
+                    *new_val = number;
 
                     // If the current number is not the first one,
                     // subtract the current one with the previous one.
 
                 } else {
-                    new_node->datatype -= number;
+                    *new_val -= number;
                 }
             }
 
             std::cout << "\nThe subtraction of the numbers is: "
-                << new_node->datatype << std::endl;
+                << *new_val << std::endl;
 
             pause();
             break;
@@ -141,18 +129,18 @@ void requestData(Node* new_node) {
                 // Save it in the new node so it's not re-writed.
 
                 if (i == 1) {
-                    new_node->datatype = number;
+                    *new_val = number;
 
                     // If the current number is not the first one,
                     // multiply the current one with the previous one.
 
                 } else {
-                    new_node->datatype *= number;
+                    *new_val *= number;
                 }
             }
 
             std::cout << "\nThe multiply result of the numbers is: "
-                << new_node->datatype << std::endl;
+                << *new_val << std::endl;
 
             pause();
             break;
@@ -171,21 +159,27 @@ void requestData(Node* new_node) {
                 // Save it in the new node so it's not re-writed.
 
                 if (i == 1) {
-                    new_node->datatype = number;
+                    *new_val = number;
 
                     // If the current number is not the first one,
                     // divide the previous number with the current one.
 
                 } else {
-                    new_node->datatype /= number;
+                    *new_val /= number;
                 }
             }
 
             std::cout << "\nThe division of the numbers is: "
-                << new_node->datatype << std::endl;
+                << *new_val << std::endl;
 
             pause();
             break;
+
+            default:
+                std::cout << "Wrong option, please choose a valid option: ";
+                std::cin >> opt;
+
+                break;
         }
 
         // Check user's OS
