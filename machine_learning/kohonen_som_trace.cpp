@@ -162,7 +162,12 @@ void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
 /** Creates a random set of points distributed *near* the circumference
  * of a circle and trains an SOM that finds that circular pattern. The
  * generating function is
- * \f{eqnarray*}{ \f}
+ * \f{eqnarray*}{
+ * r &\in& [1-\delta r, 1+\delta r)\\
+ * \theta &\in& [0, 2\pi)\\
+ * x &=& r\cos\theta\\
+ * y &=& r\sin\theta
+ * \f}
  *
  * \param[out] data matrix to store data in
  */
@@ -234,8 +239,15 @@ void test1() {
 
 /** Creates a random set of points distributed *near* the locus
  * of the [Lamniscate of
- * Gerono](https://en.wikipedia.org/wiki/Lemniscate_of_Gerono) and trains an SOM
- * that finds that circular pattern.
+ * Gerono](https://en.wikipedia.org/wiki/Lemniscate_of_Gerono).
+ * \f{eqnarray*}{
+ * \delta r &=& 0.2\\
+ * \delta x &\in& [-\delta r, \delta r)\\
+ * \delta y &\in& [-\delta r, \delta r)\\
+ * \theta &\in& [0, \pi)\\
+ * x &=& \delta x + \cos\theta\\
+ * y &=& \delta y + \frac{\sin(2\theta)}{2}
+ * \f}
  * \param[out] data matrix to store data in
  */
 void test_lamniscate(std::vector<std::valarray<double>> *data) {
@@ -305,10 +317,17 @@ void test2() {
     save_nd_data("w22.csv", W);       // save the resultant weights
 }
 
-/** Creates a random set of points distributed *near* the locus
- * of the [Lamniscate of
- * Gerono](https://en.wikipedia.org/wiki/Lemniscate_of_Gerono) and trains an SOM
- * that finds that circular pattern.
+/** Creates a random set of points distributed in six clusters in
+ * 3D space with centroids at the points
+ * * \f${0.5, 0.5, 0.5}\f$
+ * * \f${0.5, 0.5, -0.5}\f$
+ * * \f${0.5, -0.5, 0.5}\f$
+ * * \f${0.5, -0.5, -0.5}\f$
+ * * \f${-0.5, 0.5, 0.5}\f$
+ * * \f${-0.5, 0.5, -0.5}\f$
+ * * \f${-0.5, -0.5, 0.5}\f$
+ * * \f${-0.5, -0.5, -0.5}\f$
+ *
  * \param[out] data matrix to store data in
  */
 void test_3d_classes(std::vector<std::valarray<double>> *data) {
