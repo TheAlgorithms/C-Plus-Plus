@@ -82,14 +82,12 @@ void exact_solution(const double &x, std::valarray<double> *y) {
 void semi_implicit_euler_step(const double dx, const double &x,
                               std::valarray<double> *y,
                               std::valarray<double> *dy) {
-    problem(x, y, dy);
-    double tmp_x = x + 0.5 * dx;
+    problem(x, y, dy);         // update dy once
+    y[0][0] += dx * dy[0][0];  // update y0
+    problem(x, y, dy);         // update dy once more
 
-    std::valarray<double> tmp_y = y[0] + dy[0] * (0.5 * dx);
-
-    problem(tmp_x, &tmp_y, dy);
-
-    y[0] += dy[0] * dx;
+    dy[0][0] = 0.f;      // ignore y0
+    y[0] += dy[0] * dx;  // update remaining using new dy
 }
 
 /**
