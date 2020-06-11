@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qr_5falgorithm_2350',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]]
+  ['qr_5falgorithm_2363',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]]
 ];
