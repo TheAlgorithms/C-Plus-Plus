@@ -1,8 +1,9 @@
 #include <iostream>
 
-struct node {
-        int val;
-        node *next;
+class node {
+        public:
+            int val;
+            node *next;
 };
 
 node *start;
@@ -16,11 +17,11 @@ void insert(int x) {
                 while (t->next != NULL) {
                         t = t->next;
                 }
-                t->next = n;             
+                t->next = n;
         } else {
                 start = n;
         }
-        
+
 }
 
 void remove(int x) {
