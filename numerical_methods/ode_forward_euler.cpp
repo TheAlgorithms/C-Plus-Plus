@@ -70,6 +70,9 @@ void exact_solution(const double &x, std::valarray<double> *y) {
 }
 
 /** \addtogroup ode Ordinary Differential Equations
+ * Integration functions for implementations with solving [ordinary differential
+ * equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation)
+ * (ODEs) of any order and and any number of independent variables.
  * @{
  */
 /**
