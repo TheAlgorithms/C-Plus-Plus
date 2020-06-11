@@ -32,7 +32,7 @@
  * dy[0] = y[1];
  * dy[1] = mu * (1.f - y[0] * y[0]) * y[1] - y[0];
  * ```
- * \see ode_midpoint_euler.cpp, ode_semi_implicit_euler.cpp
+ * \see ode_forward_euler.cpp, ode_semi_implicit_euler.cpp
  */
 
 #include <cmath>
@@ -73,7 +73,10 @@ void exact_solution(const double &x, std::valarray<double> *y) {
  */
 /**
  * @brief Compute next step approximation using the midpoint-Euler
- * method. @f[y_{n+1}=y_n + dx\cdot f\left(x_n,y_n\right)@f]
+ * method.
+ * @f[y_{n+1} = y_n + dx\, f\left(x_n+\frac{1}{2}dx,
+ * y_n + \frac{1}{2}dx\,f\left(x_n,y_n\right)\right)@f]
+ *
  * @param[in] 		dx	step size
  * @param[in] 	    x	take \f$x_n\f$ and compute \f$x_{n+1}\f$
  * @param[in,out] 	y	take \f$y_n\f$ and compute \f$y_{n+1}\f$
@@ -81,9 +84,6 @@ void exact_solution(const double &x, std::valarray<double> *y) {
  */
 void midpoint_euler_step(const double dx, const double &x,
                          std::valarray<double> *y, std::valarray<double> *dy) {
-    problem(x, y, dy);
-    y[0] += dy[0] * dx;
-
     problem(x, y, dy);
     double tmp_x = x + 0.5 * dx;
 
