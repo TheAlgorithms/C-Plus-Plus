@@ -120,8 +120,7 @@ double semi_implicit_euler(double dx, double x0, double x_max,
     /* start integration */
     std::clock_t t1 = std::clock();
     double x = x0;
-    do  // iterate for each step of independent variable
-    {
+    do {  // iterate for each step of independent variable
         if (save_to_file && fp.is_open()) {
             // write to file
             fp << x << ",";
