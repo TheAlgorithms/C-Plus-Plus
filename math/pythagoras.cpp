@@ -5,9 +5,9 @@
  * A basic implementation of 3d distance between two point.
  */
 
-#include <cassert>  // For testing(assert)
-#include <cmath>    // For std::pow(), std::sqrt() and so on
-#include <iostream> // For io operations
+#include <cassert>   // For testing(assert)
+#include <cmath>     // For std::pow(), std::sqrt() and so on
+#include <iostream>  // For io operations
 
 /**
  * The distance between two points in a three dimensional - 3D - coordinate
