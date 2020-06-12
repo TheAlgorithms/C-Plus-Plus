@@ -183,17 +183,5 @@ void requestData(float *new_val) {
 
                 break;
         }
-
-        // Check user's OS
-        // Use system("clear") if OS is GNU/Linux based
-
-        #ifdef __linux__
-        system("clear");
-
-        // Use system("cls") if OS is Windows
-
-        #elif _WIN32
-        system("cls");
-        #endif
     } while (opt != 5);
 }
