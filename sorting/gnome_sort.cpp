@@ -1,6 +1,27 @@
-#include <iostream>
+/**
+ * Copyright 2020 @author beqakd
+ * @file
+ * A basic implementation of gnome sort algorithm.
+ */
 
-void gnomesort(int arr[], int size) {
+#include <iostream>  // for io operations
+
+
+/**
+ * Copyright 2020 @author beqakd
+ * @file
+ * A basic implementation of gnome sort algorithm.
+ * Gnome sort algorithm is not the best one. But it is used widely
+ * it looks two elements prev one and next one. If they are on 
+ * right order it forwards, otherwise it swaps elements.
+ * @param arr our array of elements.
+ * @param size size of given array
+ * @return it just changes array of pointer so it does not needs to return.
+ * time Complexity:
+ *      O(n^2)
+ *      Some cases it works on O(n), but overall time is O(n^2)
+ */
+void gnomeSort(int arr[], int size) {
     // few easy cases
     if (size <= 1) return;
 
@@ -16,12 +37,14 @@ void gnomesort(int arr[], int size) {
     }
 }
 
-// Our main function
+/**
+ * Our main function with example of sort method.
+ */
 int main() {
     int arr[] = {-22, 100, 150, 35, -10, 99};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    gnomesort(arr, size);
+    gnomeSort(arr, size);
 
     for (int i = 0; i < size; i++) printf("%d ", arr[i]);
 
