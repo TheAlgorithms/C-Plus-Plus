@@ -122,12 +122,15 @@ Functions</h2></td></tr>
 <tr class="separator:a7e7f25f31c50523990437abf2ac3907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b66a1c652291b9a346ec7342967178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">quickSort</a> (int arr[], int low, int high)</td></tr>
 <tr class="separator:a50b66a1c652291b9a346ec7342967178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa">shell_sort</a> (T *arr, size_t LEN)</td></tr>
 <tr class="separator:a5669396c6a6b1e14b97589b6e37980aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d76603c54d3dc56146e92d10a043924"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
+<tr class="memitem:a4d76603c54d3dc56146e92d10a043924"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:a4d76603c54d3dc56146e92d10a043924"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924">shell_sort</a> (T(&amp;arr)[N])</td></tr>
 <tr class="separator:a4d76603c54d3dc56146e92d10a043924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">shell_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
+<tr class="separator:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
@@ -471,13 +474,43 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a5669396c6a6b1e14b97589b6e37980aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5669396c6a6b1e14b97589b6e37980aa">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[1/2]</span></h2>
+<a id="af2c5b92cbfe73f63f6074c61b0a45331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c5b92cbfe73f63f6074c61b0a45331">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T &gt; </div>
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::shell_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>function overload - when input array is of type <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a>, simply send the data content and the data length to the above function. </p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                   {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">shell_sort</a>(arr-&gt;data(), arr-&gt;size());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af2c5b92cbfe73f63f6074c61b0a45331_cgraph.svg" width="310" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5669396c6a6b1e14b97589b6e37980aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5669396c6a6b1e14b97589b6e37980aa">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void sorting::shell_sort </td>
@@ -499,33 +532,34 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Optimized algorithm - takes half the time by utilizing Mar </p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap_len = 8;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">size_t</span> i, j, g;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">for</span> (g = 0; g &lt; gap_len; g++) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap = gaps[g];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (i = gap; i &lt; LEN; i++) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            T tmp = arr[i];</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">for</span> (j = i; j &gt;= gap &amp;&amp; (arr[j - gap] - tmp) &gt; 0; j -= gap)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                arr[j] = arr[j - gap];</div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap_len = 8;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">size_t</span> i, j, g;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (g = 0; g &lt; gap_len; g++) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap = gaps[g];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">for</span> (i = gap; i &lt; LEN; i++) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            T tmp = arr[i];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            arr[j] = tmp;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">for</span> (j = i; j &gt;= gap &amp;&amp; (arr[j - gap] - tmp) &gt; 0; j -= gap) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                arr[j] = arr[j - gap];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            arr[j] = tmp;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <a id="a4d76603c54d3dc56146e92d10a043924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d76603c54d3dc56146e92d10a043924">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d76603c54d3dc56146e92d10a043924">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , size_t N&gt; </div>
+template&lt;typename T , size_t N&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void sorting::shell_sort </td>
@@ -537,9 +571,9 @@ template&lt;class T , size_t N&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>function overload - when input array is of a known length array type </p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924">shell_sort</a>(arr, N);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                             {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">shell_sort</a>(arr, N);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -555,15 +589,15 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="anamespacesorting_html_a7e7f25f31c50523990437abf2ac3907e"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:37</div></div>
 <div class="ttc" id="anamespacesorting_html_aa26de383227859210f14dcf12201a079"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">sorting::merge</a></div><div class="ttdeci">void merge(Iterator, Iterator, const Iterator, char[])</div><div class="ttdoc">merges 2 sorted adjacent segments into a larger sorted segment</div><div class="ttdef"><b>Definition:</b> non_recursive_merge_sort.cpp:57</div></div>
 <div class="ttc" id="anamespacesorting_html_ae97f4dd815654c4682f564afd718e824"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae97f4dd815654c4682f564afd718e824">sorting::non_recursive_merge_sort</a></div><div class="ttdeci">void non_recursive_merge_sort(const Iterator first, const Iterator last)</div><div class="ttdoc">bottom-up merge sort which sorts elements in a non-decreasing order</div><div class="ttdef"><b>Definition:</b> non_recursive_merge_sort.cpp:86</div></div>
-<div class="ttc" id="anamespacesorting_html_a4d76603c54d3dc56146e92d10a043924"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924">sorting::shell_sort</a></div><div class="ttdeci">void shell_sort(T(&amp;arr)[N])</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:63</div></div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a50b66a1c652291b9a346ec7342967178"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a></div><div class="ttdeci">void quickSort(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:63</div></div>
+<div class="ttc" id="anamespacesorting_html_af2c5b92cbfe73f63f6074c61b0a45331"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a></div><div class="ttdeci">void shell_sort(std::vector&lt; T &gt; *arr)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></li>
-    <li class="footer">Generated on Thu Jun 11 2020 16:31:56 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 12 2020 15:20:41 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
