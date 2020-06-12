@@ -15,7 +15,7 @@
  * and later on calculate the distance as mentioned.
  */
 class Distance {
-public:
+ public:
     /**
     * Point struct to save 3D coordinates.
     */
@@ -35,8 +35,11 @@ public:
     * @param point_sec 3d coordinates of second point.
     */
     Distance(const int point_fir[], const int point_sec[]) {
-        this -> a = *(const_cast<Point *>(reinterpret_cast<const Point *>(point_fir)));
-        this -> b = *(const_cast<Point *>(reinterpret_cast<const Point *>(point_sec)));
+        Point const *temp1 = reinterpret_cast<const Point *>(point_fir);
+        this->a = *(const_cast<Point *>(temp1));
+
+        Point const *temp2 = reinterpret_cast<const Point *>(point_sec);
+        this->b = *(const_cast<Point *>(temp2));
     }
 
     /**
