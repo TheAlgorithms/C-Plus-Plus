@@ -269,7 +269,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">double</span> elapsed_time = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - start) * 1.<a class="code" href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a> / CLOCKS_PER_SEC;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Time spent sorting: &quot;</span> &lt;&lt; elapsed_time &lt;&lt; <span class="stringliteral">&quot;s\n&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(<a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -417,8 +417,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                      <span class="comment">// the standard results</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(<a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(data2);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">delete</span>[] data2;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -477,8 +477,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                      <span class="comment">// the standard results</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(<a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(data2);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">delete</span>[] data2;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -506,7 +506,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="astructcompare_html"><div class="ttname"><a href="../../d1/db3/structcompare.html">compare</a></div><div class="ttdef"><b>Definition:</b> huffman.cpp:28</div></div>
-<div class="ttc" id="afree_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/c/free.html">std::free</a></div><div class="ttdeci">T free(T... args)</div></div>
 <div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_af2c5b92cbfe73f63f6074c61b0a45331"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a></div><div class="ttdeci">void shell_sort(std::vector&lt; T &gt; *arr)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:75</div></div>
@@ -514,7 +513,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bb1b521853a9c46347182a9d10420771.html">sorting</a></li><li class="navelem"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html">shell_sort2.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 12 2020 15:20:41 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 12 2020 16:46:52 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
