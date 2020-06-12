@@ -1,5 +1,13 @@
-// Copyright 2020 @author tjgurwara99
+/**
+ * Copyright 2020 @author tjgurwara99
+ * @file
+ *
+ * A simple function that finds the least common multiple
+ * of two numbers using the algorithm greatest common
+ * divisor of those two numbers.
+ */
 
+#include <cassert>
 #include <iostream>
 
 /*
@@ -34,8 +42,29 @@ unsigned int gcd(unsigned int x, unsigned int y) {
  */
 unsigned int lcm(unsigned int x, unsigned int y) { return x * y / gcd(x, y); }
 
+void tests() {
+    /*
+     * First test on lcm(5,10) == 10
+     */
+
+    assert(((void)"LCM of 5 and 10 is 10 but lcm function gives a different "
+                  "result.\n",
+            lcm(5, 10) == 10));
+    std::cout << "First assertion passes: LCM of 5 and 10 is " << lcm(5, 10)
+              << std::endl;
+
+    /*
+     * Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)
+     */
+
+    assert(((void)"LCM of 2 and 3 is 6 but lcm function gives a different "
+                  "result.\n",
+            lcm(2, 3) == 6));
+    std::cout << "Second assertion passes: LCM of 2 and 3 is " << lcm(2, 3)
+              << std::endl;
+}
+
 int main() {
-    int ans = lcm(5, 10);
-    std::cout << ans << std::endl;
+    tests();
     return 0;
 }
