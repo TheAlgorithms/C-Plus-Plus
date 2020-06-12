@@ -43,7 +43,7 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
     gnomeSort(arr, size);
     for (int i = 0; i < size; i++)
-        std::printf("%d ", arr[i]);
+        std::cout << arr[i] << " ";
     std::cout << "\n" << std::endl;
 
     // Example 2. Creating array of doubles.
