@@ -2,18 +2,16 @@
  * Copyright 2020 @author tjgurwara99
  * @file
  *
- * A simple function that finds the least common multiple
- * of two numbers using the algorithm greatest common
- * divisor of those two numbers.
+ * A basic implementation of LCM function
  */
 
 #include <cassert>
 #include <iostream>
 
 /**
- * First we create a function for greatest common divisor,
- * there are many ways of implementing this function. I chose to
- * use recursive function to reduce unnecessary loops.
+ * Function for finding greatest common divisor of two numbers.
+ * @params two integers x and y whose gcd we want to find.
+ * @return greatest common divisor of x and y.
  */
 unsigned int gcd(unsigned int x, unsigned int y) {
     if (x == 0) {
@@ -38,28 +36,24 @@ unsigned int gcd(unsigned int x, unsigned int y) {
 }
 
 /**
- * Now we use the fact that lcm(x,y) * gcd(x,y)  = x * y
+ * Function for finding the least common multiple of two numbers.
+ * @params integer x and y whose lcm we want to find.
+ * @return lcm of x and y using the relation x * y = gcd(x, y) * lcm(x, y)
  */
 unsigned int lcm(unsigned int x, unsigned int y) { return x * y / gcd(x, y); }
 
 /**
- * Tests function for asserting correct behavior of the lcm() function
+ * Function for testing the lcm() functions with some assert statements.
  */
 void tests() {
-    /**
-     * First test on lcm(5,10) == 10
-     */
-
+    // First test on lcm(5,10) == 10
     assert(((void)"LCM of 5 and 10 is 10 but lcm function gives a different "
                   "result.\n",
             lcm(5, 10) == 10));
     std::cout << "First assertion passes: LCM of 5 and 10 is " << lcm(5, 10)
               << std::endl;
 
-    /**
-     * Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)
-     */
-
+    // Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)
     assert(((void)"LCM of 2 and 3 is 6 but lcm function gives a different "
                   "result.\n",
             lcm(2, 3) == 6));
@@ -69,7 +63,6 @@ void tests() {
 
 /**
  * Main function
- * Just calls the tests() function
  */
 int main() {
     tests();
