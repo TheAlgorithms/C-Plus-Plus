@@ -5,9 +5,9 @@
  * A basic implementation of 3d distance between two point.
  */
 
-#include <iostream> // For io operations
-#include <cassert> // For testing(assert)
-#include <cmath> // For std::pow(), std::sqrt() and so on
+#include <cassert>   // For testing(assert)
+#include <cmath>     // For std::pow(), std::sqrt() and so on
+#include <iostream>  // For io operations
 
 /**
  * The distance between two points in a three dimensional - 3D - coordinate
@@ -30,14 +30,13 @@ public:
     Point b;
 
     /**
-    * Constructor of this class. 
+    * Constructor of this class.
     * @param point_fir 3D coordinates of first point.
     * @param point_sec 3d coordinates of second point.
     */
-    Distance(const int point_fir[], const int point_sec[])
-    {
-        this->a = *(Point*)point_fir;
-        this->b = *(Point*)point_sec;
+    Distance(const int point_fir[], const int point_sec[]) {
+        this->a = *(Point *)point_fir;
+        this->b = *(Point *)point_sec;
         ;
     }
 
@@ -46,8 +45,7 @@ public:
     * and return result of distance.
     * @return distance between two given 3D point.
     */
-    double calculateDistance()
-    {
+    double calculateDistance() {
         double result = distance();
         return result;
     }
@@ -59,8 +57,7 @@ private:
     * method.
     * @return distance between two given 3D point.
     */
-    int distance()
-    {
+    int distance() {
         // initialaize Point a and b
         Point a = this->a;
         Point b = this->b;
@@ -77,16 +74,14 @@ private:
  * In this method we will test distance between 3D coordinates.
  * This one is very basic tests
  */
-void test_1()
-{
-
-    int point_fir[3] = { 2, 1, 7 };
-    int point_sec[3] = { 1, 3, 5 };
+void test_1() {
+    int point_fir[3] = {2, 1, 7};
+    int point_sec[3] = {1, 3, 5};
     Distance dist(point_fir, point_sec);
     assert(dist.calculateDistance() == 3);
 
-    int fir_basic[3] = { 0, 0, 7 };
-    int sec_basic[3] = { 1, 0, 0 };
+    int fir_basic[3] = {0, 0, 7};
+    int sec_basic[3] = {1, 0, 0};
     Distance dist_basic(fir_basic, sec_basic);
     assert(dist_basic.calculateDistance() == 7);
 }
@@ -95,20 +90,19 @@ void test_1()
  * In this method we will test distance between 3D coordinates.
  * This one is more advanced tests looking edge cases and other ones.
  */
-void test_2()
-{
-    int point_fir[3] = { -7, 0, 7 };
-    int point_sec[3] = { -1, 0, 1 };
+void test_2() {
+    int point_fir[3] = {-7, 0, 7};
+    int point_sec[3] = {-1, 0, 1};
     Distance dist(point_fir, point_sec);
     assert(dist.calculateDistance() == 8);
 
-    int fir_high[3] = { 100, 200, 300 };
-    int sec_high[3] = { 400, 500, 600 };
+    int fir_high[3] = {100, 200, 300};
+    int sec_high[3] = {400, 500, 600};
     Distance dist_high(fir_high, sec_high);
     assert(dist_high.calculateDistance() == 519);
 
-    int equal_fir[3] = { -1, -2, -3 };
-    int equal_sec[3] = { -1, -2, -3 };
+    int equal_fir[3] = {-1, -2, -3};
+    int equal_sec[3] = {-1, -2, -3};
     Distance dist_equal(equal_fir, equal_sec);
     assert(dist_equal.calculateDistance() == 0);
 }
@@ -116,8 +110,7 @@ void test_2()
 /**
  * Our main function from where we will check our method.
  */
-int main()
-{
+int main() {
     test_1();
     test_2();
     return 0;
