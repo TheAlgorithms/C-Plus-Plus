@@ -4,7 +4,7 @@
  * A basic implementation of gnome sort algorithm.
  */
 
-#include <iostream> // for io operations
+#include <iostream>  // for io operations
 
 /**
  * Copyright 2020 @author beqakd
@@ -25,13 +25,13 @@ template <class T> void gnomeSort(T arr[], int size) {
     if (size <= 1)
         return;
 
-    int index = 0; // initialize some variables.
+    int index = 0;  // initialize some variables.
     while (index < size) {
         // check for swap
         if ((index == 0) || (arr[index] >= arr[index - 1])) {
         index++;
         } else {
-        std::swap(arr[index], arr[index - 1]); // swap
+        std::swap(arr[index], arr[index - 1]);  // swap
         index--;
         }
     }
