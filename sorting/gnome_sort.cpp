@@ -7,9 +7,6 @@
 #include <iostream>  // for io operations
 
 /**
- * Copyright 2020 @author beqakd
- * @file
- * A basic implementation of gnome sort algorithm.
  * Gnome sort algorithm is not the best one. But it is used widely
  * it looks two elements prev one and next one. If they are on
  * right order it forwards, otherwise it swaps elements.
