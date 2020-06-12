@@ -1,7 +1,7 @@
 #include <iostream>
 template  <class X>
 class node {
-public:
+ public:
     X val;
     node<X> *next;
 };
@@ -9,19 +9,24 @@ public:
 
 template  <class X>
 class linked_list
-{
-private:
+ {
+ private:
     node<X> *start;
-public:
-    linked_list()
-    {
-        start=NULL;
+ public:
+    linked_list(){
+        start = NULL;
     }
-    void insert (X);
-    void remove (X);
-    void search (X);
+
+    void insert(X);
+    void remove(X);
+    void search(X);
     void show();
     void reverse();
+    ~linked_list()
+    {
+
+    }
+
 };
 
 
@@ -144,6 +149,11 @@ int main() {
                         object.reverse();
                         object.show();
                         std::cout << "\n";
+                        break;
+                 default:
+                        if(choice!=0){
+                            std::cout<<"Invalid Input\n";
+                        }
                         break;
                }
         } while (choice != 0);
