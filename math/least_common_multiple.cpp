@@ -10,7 +10,7 @@
 #include <cassert>
 #include <iostream>
 
-/*
+/**
  * First we create a function for greatest common divisor,
  * there are many ways of implementing this function. I chose to
  * use recursive function to reduce unnecessary loops.
@@ -37,13 +37,16 @@ unsigned int gcd(unsigned int x, unsigned int y) {
     return gcd(x, y - temp * x);
 }
 
-/*
+/**
  * Now we use the fact that lcm(x,y) * gcd(x,y)  = x * y
  */
 unsigned int lcm(unsigned int x, unsigned int y) { return x * y / gcd(x, y); }
 
+/**
+ * Tests function for asserting correct behavior of the lcm() function
+ */
 void tests() {
-    /*
+    /**
      * First test on lcm(5,10) == 10
      */
 
@@ -53,7 +56,7 @@ void tests() {
     std::cout << "First assertion passes: LCM of 5 and 10 is " << lcm(5, 10)
               << std::endl;
 
-    /*
+    /**
      * Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)
      */
 
@@ -64,6 +67,10 @@ void tests() {
               << std::endl;
 }
 
+/**
+ * Main function
+ * Just calls the tests() function
+ */
 int main() {
     tests();
     return 0;
