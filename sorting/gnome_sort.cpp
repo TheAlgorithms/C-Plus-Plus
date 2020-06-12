@@ -21,14 +21,15 @@
  *      O(n^2)
  *      Some cases it works on O(n), but overall time is O(n^2)
  */
-void gnomeSort(int arr[], int size) {
+template <class T>
+void gnomeSort(T arr[], int size) {
     // few easy cases
     if (size <= 1) return;
 
     int index = 0;  // initialize some variables.
     while (index < size) {
         // check for swap
-        if ((index == 0) || (arr[index] >= arr[index - 1])) {
+         if ((index == 0) || (arr[index] >= arr[index - 1])) {
             index++;
         } else {
             std::swap(arr[index], arr[index - 1]);  // swap
@@ -41,12 +42,17 @@ void gnomeSort(int arr[], int size) {
  * Our main function with example of sort method.
  */
 int main() {
+    // Example 1. Creating array of int,
     int arr[] = {-22, 100, 150, 35, -10, 99};
     int size = sizeof(arr) / sizeof(arr[0]);
-
     gnomeSort(arr, size);
-
-    for (int i = 0; i < size; i++) printf("%d ", arr[i]);
-
+    for (int i = 0; i < size; i++) std::printf("%d ", arr[i]);
+    std:: cout << "\n" << std:: endl;
+    
+    // Example 2. Creating array of doubles.
+    double double_arr[6] = {-100.2, 10.2, 20.0, 9.0, 7.5, 7.2}; 
+    size = sizeof(double_arr) / sizeof(double_arr[0]);
+    gnomeSort(double_arr, size);
+    for (int i = 0; i < size; i++) std::cout << double_arr[i] << " ";
     return 0;
 }
