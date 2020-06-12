@@ -134,8 +134,8 @@ void test_int(const int NUM_DATA) {
                                       // the standard results
     }
 
-    free(data);
-    free(data2);
+    delete[] data;
+    delete[] data2;
 }
 
 /**
@@ -175,8 +175,8 @@ void test_f(const int NUM_DATA) {
                                       // the standard results
     }
 
-    free(data);
-    free(data2);
+    delete[] data;
+    delete[] data2;
 }
 
 /** Main function */
@@ -229,6 +229,6 @@ int main(int argc, char *argv[]) {
     double elapsed_time = (end - start) * 1.f / CLOCKS_PER_SEC;
     std::cout << "Time spent sorting: " << elapsed_time << "s\n" << std::endl;
 
-    free(data);
+    delete[] data;
     return 0;
 }
