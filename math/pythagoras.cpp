@@ -35,9 +35,8 @@ public:
     * @param point_sec 3d coordinates of second point.
     */
     Distance(const int point_fir[], const int point_sec[]) {
-        this->a = *(Point *)point_fir;
-        this->b = *(Point *)point_sec;
-        ;
+        this -> a = *(const_cast<Point *>(reinterpret_cast<const Point *>(point_fir)));
+        this -> b = *(const_cast<Point *>(reinterpret_cast<const Point *>(point_sec)));
     }
 
     /**
@@ -50,7 +49,7 @@ public:
         return result;
     }
 
-private:
+ private:
     /**
     * The distance between two points in a three dimensional - 3D - coordinate
     * system. This method is private so it will be called from public class
