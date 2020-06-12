@@ -5,9 +5,9 @@
  * A basic implementation of 3d distance between two point.
  */
 
-#include <iostream> // For io operations
-#include <cassert> // For testing(assert)
-#include <cmath> // For std::pow(), std::sqrt() and so on
+#include <iostream>  // For io operations
+#include <cassert>   // For testing(assert)
+#include <cmath>     // For std::pow(), std::sqrt() and so on
 
 /**
  * The distance between two points in a three dimensional - 3D - coordinate
@@ -25,8 +25,7 @@ public:
  * The distance between two points in a three dimensional - 3D - coordinate
  * system
  */
-int distance(Point a, Point b)
-{
+int distance(Point a, Point b) {
     int x_2 = std::pow(std::abs(b.x - a.x), 2);
     int y_2 = std::pow(std::abs(b.y - a.y), 2);
     int z_2 = std::pow(std::abs(b.z - a.z), 2);
@@ -36,8 +35,7 @@ int distance(Point a, Point b)
 /**
  * In this method we will test distance between 3D coordinates.
  */
-void tests()
-{
+void tests() {
     Point point_fir = { 2, 1, 7 };
     Point point_sec = { 1, 3, 5 };
     assert(distance(point_fir, point_sec) == 3);
@@ -61,8 +59,7 @@ void tests()
 /**
  * Our main function from where we will check our method.
  */
-int main()
-{
+int main() {
     tests();
     return 0;
 }
