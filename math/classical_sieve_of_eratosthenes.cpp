@@ -5,7 +5,7 @@
  * Space Complexity : O(N)
  */
 
-#include <iostream> // for io operations
+#include <iostream>  // for io operations
 
 /**
  * This is the function that finds the primes and eliminates
@@ -42,6 +42,6 @@ int main() {
   sieve(N, isprime);
   print(N, isprime);
   delete[] isprime;
-  
+
   return 0;
 }
