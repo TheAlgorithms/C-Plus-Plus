@@ -18,7 +18,7 @@
  */
 template<typename T>
 bool is_prime(T num) {
-    bool is_prime = true;
+    bool result = true;
     if (num <= 1) {
         return 0;
     } else if (num == 2) {
@@ -29,12 +29,12 @@ bool is_prime(T num) {
     if (num >= 3) {
         for (int i = 3 ; (i*i) < (num) ; i = (i + 2)) {
             if ((num % i) == 0) {
-                is_prime = false;
+                result = false;
                 break;
             }
         }
     }
-    return (is_prime);
+    return (result);
 }
 
 /**
