@@ -59,7 +59,8 @@ T modular_exponentiation(T base, std::vector<T> rev_binary_exponent, T mod) {
 
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param d number such that d * 2 ^ r = num - 1 for some r >= 1
+ * 	@param d number such that $d \cdot 2^r = n - 1$ where $n = num$
+ * parameter and r >= 1
  * 	@param num number being tested for primality.
  * 	@return false if n is composite and true if n is probably prime.
  */
@@ -105,7 +106,7 @@ template <typename T> bool miller_test(T d, T num) {
  * First we check whether the num input is less than 4, if so we can determine
  * whther this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
- * Next we write our num in the following format num = 2^r * d + 1. After
+ * Next we write our num in the following format $num = 2^r \cdot d + 1$. After
  * finding r and d for our input num, we use for loop repeat number of times
  * inside which we check the miller conditions using the function miller_test.
  * If miller_test returns false then the number is composite
