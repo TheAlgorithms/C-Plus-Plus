@@ -34,8 +34,8 @@ template <typename T> std::vector<T> reverse_binary(T num) {
  * @param rev_binary_exponent reverse binary of the power the base is being
  * raised to
  * @param mod modulo
- * @return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}$ where
- * \f$n$ is the base 10 representation of rev_binary_exponent and $m = mod$
+ * @return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}\f$ where
+ * \f$n\f$ is the base 10 representation of rev_binary_exponent and \f$m = mod \f$
  * parameter.
  */
 template <typename T>
@@ -62,8 +62,8 @@ T modular_exponentiation(T base, const std::vector<T> &rev_binary_exponent,
 
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param d number such that \f$d \cdot 2^r = n - 1$ where \f$n = num$
- * parameter and \f$r \geq 1$
+ * 	@param d number such that \f$d \cdot 2^r = n - 1\f$ where \f$n = num\f$
+ * parameter and \f$r \geq 1\f$
  * 	@param num number being tested for primality.
  * 	@return 'false' if n is composite
  * 	@return 'true' if n is (probably) prime.
@@ -112,7 +112,7 @@ template <typename T> bool miller_test(T d, T num) {
  * First we check whether the num input is less than 4, if so we can determine
  * whther this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
- * Next we write our num in the following format $num = 2^r \cdot d + 1$. After
+ * Next we write our num in the following format \f$num = 2^r \cdot d + 1\f$. After
  * finding r and d for our input num, we use for loop repeat number of times
  * inside which we check the miller conditions using the function miller_test.
  * If miller_test returns false then the number is composite
