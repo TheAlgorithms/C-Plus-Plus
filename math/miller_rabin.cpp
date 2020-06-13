@@ -5,6 +5,7 @@
 #include <iostream>
 #include <random>
 #include <vector>
+#include <cassert>
 
 /**
  * Function to give a binary representation of a number in reverse order
