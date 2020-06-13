@@ -106,7 +106,7 @@ bool miller_test(int d, int num) {
  * based on the Miller-Rabin Primality Test.
  * @param number to be tested
  * @param number of repetitions for the test.
- * @return false is num is composite and true if its probably prime
+ * @return false if num is composite and true if its probably prime
  *
  * First we check whether the num input is less than 4, if so we can determine
  * whther this is a prime or composite by checking for 2 and 3.
