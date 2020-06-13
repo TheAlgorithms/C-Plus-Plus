@@ -34,11 +34,13 @@ template <typename T> std::vector<T> reverse_binary(T num) {
  * @param rev_binary_exponent reverse binary of the power the base is being
  * raised to
  * @param mod modulo
- * @return r the modular exponentiation of $a^{n} \equiv r \mod{m}$ where $n$ is
- * the base 10 representation of rev_binary_exponent and $m = mod$ parameter.
+ * @return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}$ where
+ * \f$n$ is the base 10 representation of rev_binary_exponent and $m = mod$
+ * parameter.
  */
 template <typename T>
-T modular_exponentiation(T base, std::vector<T> rev_binary_exponent, T mod) {
+T modular_exponentiation(T base, const std::vector<T> &rev_binary_exponent,
+                         T mod) {
     if (mod == 1)
         return 0;
     T b = 1;
@@ -48,8 +50,9 @@ T modular_exponentiation(T base, std::vector<T> rev_binary_exponent, T mod) {
     if (rev_binary_exponent[0] == 1)
         b = base;
 
-    for (typename std::vector<T>::iterator it = rev_binary_exponent.begin() + 1;
-         it != rev_binary_exponent.end(); ++it) {
+    for (typename std::vector<T>::const_iterator it =
+             rev_binary_exponent.cbegin() + 1;
+         it != rev_binary_exponent.cend(); ++it) {
         A = A * A % mod;
         if (*it == 1)
             b = A * b % mod;
@@ -59,10 +62,11 @@ T modular_exponentiation(T base, std::vector<T> rev_binary_exponent, T mod) {
 
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param d number such that $d \cdot 2^r = n - 1$ where $n = num$
- * parameter and r >= 1
+ * 	@param d number such that \f$d \cdot 2^r = n - 1$ where \f$n = num$
+ * parameter and \f$r \geq 1$
  * 	@param num number being tested for primality.
- * 	@return false if n is composite and true if n is probably prime.
+ * 	@return 'false' if n is composite
+ * 	@return 'true' if n is (probably) prime.
  */
 template <typename T> bool miller_test(T d, T num) {
     // random number seed
@@ -101,8 +105,10 @@ template <typename T> bool miller_test(T d, T num) {
  * @param num number to be tested for primality.
  * @param repeats number of repetitions for the test to increase probability of
  * correct result.
- * @return false if num is composite and true if its probably prime
+ * @return 'false' if num is composite
+ * @return 'true' if num is (probably) prime
  *
+ * \detail
  * First we check whether the num input is less than 4, if so we can determine
  * whther this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
