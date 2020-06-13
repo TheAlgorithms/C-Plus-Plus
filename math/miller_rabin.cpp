@@ -5,19 +5,19 @@
  * A basic implementation of Miller-Rabin primality test.
  */
 
+#include <cassert>
 #include <iostream>
 #include <random>
 #include <vector>
-#include <cassert>
 
 /**
  * Function to give a binary representation of a number in reverse order
- * @param integer number that we want to convert
- * @return vector of the number input in reverse binary
+ * @param num integer number that we want to convert
+ * @return result vector of the number input in reverse binary
  */
-std::vector<int> reverse_binary(int num) {
-    std::vector<int> result;
-    int temp = num;
+template <typename T> std::vector<T> reverse_binary(T num) {
+    std::vector<T> result;
+    T temp = num;
     while (temp > 0) {
         result.push_back(temp % 2);
         temp = temp / 2;
@@ -30,50 +30,40 @@ std::vector<int> reverse_binary(int num) {
  * This function is an efficient modular exponentation function.
  * It can be used with any big integer library such as Boost multiprecision
  * to give result any modular exponentation problem reletively quickly.
- * @param base that is being raised to a power as integer
- * @param reverse binary of the power the base is being raised to
- * @param modulo
- * @return the modular exponentiation of a^(reverse_binary) % n
+ * @param base number being raised to a power as integer
+ * @param rev_binary_exponent reverse binary of the power the base is being
+ * raised to
+ * @param mod modulo
+ * @return r the modular exponentiation of $a^{n} \equiv r \mod{m}$ where $n$ is
+ * the base 10 representation of rev_binary_exponent and $m = mod$ parameter.
  */
-int modular_exponentiation(int a, std::vector<int> rev_binary, int n) {
-    if (n == 1)
+template <typename T>
+T modular_exponentiation(T base, std::vector<T> rev_binary_exponent, T mod) {
+    if (mod == 1)
         return 0;
-    int b = 1;
-    if (rev_binary.size() == 0)
+    T b = 1;
+    if (rev_binary_exponent.size() == 0)
         return b;
-    int A = a;
-    if (rev_binary[0] == 1)
-        b = a;
+    T A = base;
+    if (rev_binary_exponent[0] == 1)
+        b = base;
 
-    for (std::vector<int>::iterator it = rev_binary.begin() + 1;
-         it != rev_binary.end(); ++it) {
-        A = A * A % n;
+    for (typename std::vector<T>::iterator it = rev_binary_exponent.begin() + 1;
+         it != rev_binary_exponent.end(); ++it) {
+        A = A * A % mod;
         if (*it == 1)
-            b = A * b % n;
+            b = A * b % mod;
     }
     return b;
 }
 
-/**
- * Function to raise a number to a power
- * @param base
- * @param power
- * @return base^power
- */
-int power(int num, int pow) {
-    if (pow == 1) {
-        return num;
-    }
-    return num * power(num, pow - 1);
-}
-
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param number d such that d * 2 ^ r = num - 1 for some r >= 1
- * 	@param number being tested.
+ * 	@param d number such that d * 2 ^ r = num - 1 for some r >= 1
+ * 	@param num number being tested for primality.
  * 	@return false if n is composite and true if n is probably prime.
  */
-bool miller_test(int d, int num) {
+template <typename T> bool miller_test(T d, T num) {
     // random number seed
     std::random_device rd_seed;
     // random number generator
@@ -81,11 +71,11 @@ bool miller_test(int d, int num) {
     // Uniformly distributed range [2, num - 2] for random numbers
     std::uniform_int_distribution<> distribution(2, num - 2);
     // Random number generated in the range [2, num -2].
-    int random = distribution(gen);
+    T random = distribution(gen);
     // vector for reverse binary of the power
-    std::vector<int> power = reverse_binary(d);
+    std::vector<T> power = reverse_binary(d);
     // x = random ^ d % num
-    int x = modular_exponentiation(random, power, num);
+    T x = modular_exponentiation(random, power, num);
     // miller conditions
     if (x == 1 || x == num - 1) {
         return true;
@@ -107,8 +97,9 @@ bool miller_test(int d, int num) {
 /**
  * Function that test (probabilistically) whether a given number is a prime
  * based on the Miller-Rabin Primality Test.
- * @param number to be tested
- * @param number of repetitions for the test.
+ * @param num number to be tested for primality.
+ * @param repeats number of repetitions for the test to increase probability of
+ * correct result.
  * @return false if num is composite and true if its probably prime
  *
  * First we check whether the num input is less than 4, if so we can determine
@@ -121,7 +112,7 @@ bool miller_test(int d, int num) {
  * After the loop finishes completely without issueing a false return call,
  * we can conclude that this number is probably prime.
  */
-bool miller_rabin_primality_test(unsigned int num, unsigned int repeats) {
+template <typename T> bool miller_rabin_primality_test(T num, T repeats) {
     if (num <= 4) {
         // If num == 2 or num == 3 then prime
         if (num == 2 || num == 3) {
@@ -135,13 +126,13 @@ bool miller_rabin_primality_test(unsigned int num, unsigned int repeats) {
         return false;
     }
     // Finding d and r in num = 2^r * d + 1
-    unsigned int d = num - 1, r = 0;
+    T d = num - 1, r = 0;
     while (d % 2 == 0) {
         d = d / 2;
         r++;
     }
 
-    for (int i = 0; i < repeats; ++i) {
+    for (T i = 0; i < repeats; ++i) {
         if (!miller_test(d, num)) {
             return false;
         }
