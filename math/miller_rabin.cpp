@@ -65,8 +65,8 @@ int power(int num, int pow) {
 
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param number d such that d * 2 ^ r = num - 1
- * 	@param number of repeats.
+ * 	@param number d such that d * 2 ^ r = num - 1 for some r >= 1
+ * 	@param number being tested.
  * 	@return false if n is composite and true if n is probably prime.
  */
 bool miller_test(int d, int num) {
@@ -76,9 +76,13 @@ bool miller_test(int d, int num) {
     std::mt19937 gen(rd_seed());
     // Uniformly distributed range [2, num - 2] for random numbers
     std::uniform_int_distribution<> distribution(2, num - 2);
+    // Random number generated in the range [2, num -2].
     int random = distribution(gen);
+    // vector for reverse binary of the power
     std::vector<int> power = reverse_binary(d);
+    // x = random ^ d % num
     int x = modular_exponentiation(random, power, num);
+    // miller conditions
     if (x == 1 || x == num - 1) {
         return true;
     }
@@ -101,21 +105,20 @@ bool miller_test(int d, int num) {
  * based on the Miller-Rabin Primality Test.
  * @param number to be tested
  * @param number of repetitions for the test.
- * @return
+ * @return false is num is composite and true if its probably prime
  *
  * First we check whether the num input is less than 4, if so we can determine
  * whther this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
  * Next we write our num in the following format num = 2^r * d + 1. After
- * finding r and d for our input num, we use repeat(second param) number of
- * random number in range [2,num - 2] inclusive. Within this loop we write d in
- * reverse binary form and use this to calculate mod which is mod = random^d %
- * num. We check the conditions necessary for Miller-Rabin test and continue
- * and/or skip a loop depending on the conditions. If we exit all loops with no
- * issues, then the num is probably prime.
+ * finding r and d for our input num, we use for loop repeat number of times
+ * inside which we check the miller conditions using the function miller_test.
+ * If miller_test returns false then the number is composite
+ * After the loop finishes completely without issueing a false return call,
+ * we can conclude that this number is probably prime.
  */
 bool miller_rabin_primality_test(unsigned int num, unsigned int repeats) {
-    if (num < 4) {
+    if (num <= 4) {
         // If num == 2 or num == 3 then prime
         if (num == 2 || num == 3) {
             return true;
@@ -163,8 +166,8 @@ void tests() {
     assert(((void)"16 is not a prime but the function says otherwise.\n",
             miller_rabin_primality_test(16, 3) == false));
     std::cout << "Fourth test passes." << std::endl;
-    // Fifth test on 25
-    assert(((void)"25 is not a prime but the function says otherwise.\n",
+    // Fifth test on 27
+    assert(((void)"27 is not a prime but the function says otherwise.\n",
             miller_rabin_primality_test(27, 3) == false));
     std::cout << "Fifth test passes." << std::endl;
 }
