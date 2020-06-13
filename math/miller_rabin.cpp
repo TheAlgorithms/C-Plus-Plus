@@ -1,5 +1,8 @@
 /**
  * Copyright 2020 @author tjgurwara99
+ * @file
+ *
+ * A basic implementation of Miller-Rabin primality test.
  */
 
 #include <iostream>
