@@ -116,7 +116,7 @@ template <typename T> bool miller_test(T d, T num) {
  * finding r and d for our input num, we use for loop repeat number of times
  * inside which we check the miller conditions using the function miller_test.
  * If miller_test returns false then the number is composite
- * After the loop finishes completely without issueing a false return call,
+ * After the loop finishes completely without issuing a false return call,
  * we can conclude that this number is probably prime.
  */
 template <typename T> bool miller_rabin_primality_test(T num, T repeats) {
