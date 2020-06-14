@@ -6,9 +6,9 @@
  * A basic implementation of 3d distance between two point.
  */
 
-#include <cassert>  // For testing(assert)
-#include <cmath>    // For std::pow(), std::sqrt() and so on
-#include <iostream> // For io operations
+#include <cassert>   // For testing(assert)
+#include <cmath>     // For std::pow(), std::sqrt() and so on
+#include <iostream>  // For io operations
 
 /**
  * The distance between two points in a three dimensional - 3D - coordinate
@@ -27,9 +27,9 @@ template <typename T> class point {
     * and save it to our calss. Second one takes only 2 T type value and third
     * one is defoult 0 and save it into the class too.
     */
-    point(T a, T b, T c) : x(a), y(b), z(c) {} // Consructor for 3D points.
-    point(T a, T b) : x(a), y(b), z(0) {} // Second constructor for 2D points.
-    double distance(const point &);       // Our prototype of distance method.
+    point(T a, T b, T c) : x(a), y(b), z(c) {}  // Consructor for 3D points.
+    point(T a, T b) : x(a), y(b), z(0) {}       // Second constructor for 2D points.
+    double distance(const point &);             // Our prototype of distance method.
 };
 
 /**
@@ -44,7 +44,7 @@ template <typename T> double point<T>::distance(const point &other) {
     int x_2 = std::pow(std::abs(other.x - this->x), 2);
     int y_2 = std::pow(std::abs(other.y - this->y), 2);
     int z_2 = std::pow(std::abs(other.z - this->z), 2);
-    double result = (double)std::sqrt(x_2 + y_2 + z_2);
+    double result = std::sqrt(x_2 + y_2 + z_2);
     return result;
 }
 
@@ -59,7 +59,7 @@ void test_1() {
 
     point<int> fir_basic(0, 0, 7);
     point<int> sec_basic(1, 0, 0);
-    assert((int)fir_basic.distance(sec_basic) == 7);
+    assert(static_cast<int>(fir_basic.distance(sec_basic)) == 7);
 }
 
 /**
@@ -69,19 +69,19 @@ void test_1() {
 void test_2() {
     point<double> p_fir(-7.5, 0.0, 7.2);
     point<double> p_sec(-1.0, 0.0, 1.5);
-    assert((int)p_fir.distance(p_sec) == 8);
+    assert(static_cast<int>(p_fir.distance(p_sec)) == 8);
 
     point<int> fir_high(100, 200, 300);
     point<int> sec_high(400, 500, 600);
-    assert((int)fir_high.distance(sec_high) == 519);
+    assert(static_cast<int>(fir_high.distance(sec_high)) == 519);
 
     point<int> equal_fir(-1, -2, -3);
     point<int> equal_sec(-1, -2, -3);
-    assert((int)equal_fir.distance(equal_sec) == 0);
+    assert(static_cast<int>(equal_fir.distance(equal_sec)) == 0);
 
     point<double> two_fir(-1.9, -2.5);
     point<double> two_sec(-19.2, -10.5);
-    assert((int)two_fir.distance(two_sec) == 19);
+    assert(static_cast<int>(two_fir.distance(two_sec)) == 19);
 }
 
 /**
