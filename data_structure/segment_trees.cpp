@@ -1,33 +1,46 @@
-/* Program describes usage of a popular Data Structure: Segment Trees
- *  in Finding maximum number and its index on a given Interval
- *  in logarithmic = Log(N) Time using SegmentTree Data Structures
- *  with PreProcessing O(N * Log(N)) Time
+/**
+ * Copyright 2020 @author Lasha Bukhnikashvili
+ * @file
+ * Program describes usage of a popular Data Structure: Segment Trees
+ * in Finding maximum number and its index on a given Interval
+ * in logarithmic = Log(N) Time using SegmentTree Data Structures
+ * with PreProcessing O(N * Log(N)) Time
  */
 
-#include <assert.h>
-#include <math.h>
 #include <stdio.h>
 
 #include <algorithm>
+#include <cassert>
+#include <cmath>
 #include <iomanip>
 #include <iostream>
 #include <vector>
 
-// Each Node contains it's value and index
+/**
+ * Each Node contains corresponding value
+ * in array and it's index
+ */
 struct Node {
     int val;
     int ind;
 } null;
 
-// Data Structure stores initial array and its nodes, which has the 4th size of
-// the array = 4*N
+/**
+ * Data Structure stores initial array and its nodes,
+ * which has the 4th size of the array = 4*N
+ */
 struct SegmentTree {
     int N;
     std::vector<int> arr;
     std::vector<Node> nodes;
 } ST;
 
-// PreProcessing
+/**
+ * This is a recursive method, which
+ * Builds the Tree in ST struct variable.
+ * It should be called only once for each array.
+ * Works in O(N * log N)
+ */
 void BuildTree_Procedural(int v, int tl, int tr) {
     if (tl == tr) {
         ST.nodes[v].val = ST.arr[tl - 1], ST.nodes[v].ind = tl;
@@ -42,6 +55,11 @@ void BuildTree_Procedural(int v, int tl, int tr) {
     }
 }
 
+/**
+ * This method gets initial array and builds
+ * Tree Data Structure based on this array
+ * and stores it in ST struct variable
+ */
 void BuildTree(std::vector<int> arr) {
     ST.N = arr.size();
     ST.arr = arr;
@@ -49,7 +67,12 @@ void BuildTree(std::vector<int> arr) {
     BuildTree_Procedural(1, 1, ST.N);
 }
 
-// Query
+/**
+ * This is a recursive method, which
+ * Finds selected range (l,r) in logarithming time
+ * and gets corresponding value (Maximum in this example)
+ * Works in O(log N)
+ */
 Node getMaximumOnInterval_Procedural(int v, int tl, int tr, int l, int r) {
     if (l > r) return null;
     if (tl == l && tr == r) return ST.nodes[v];
@@ -64,10 +87,17 @@ Node getMaximumOnInterval_Procedural(int v, int tl, int tr, int l, int r) {
         return q;
 }
 
+/**
+ * This method gets selected range for queury
+ * and starts recursion of getMaximumOnInterval_Procedural method
+ */
 Node GetMaximumOnInterval(int l, int r) {
     return getMaximumOnInterval_Procedural(1, 1, ST.N, l, r);
 }
 
+/**
+ * Main function
+ */
 int main() {
     // Debug with an example array
     std::vector<int> exampleArray{17, 3, 190, 2, 34, -90, 19, 100, 9};
