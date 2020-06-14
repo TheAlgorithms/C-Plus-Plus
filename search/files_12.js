@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['ternary_5fsearch_2ecpp_2454',['ternary_search.cpp',['../dc/dfe/ternary__search_8cpp.html',1,'']]],
-  ['text_5fsearch_2ecpp_2455',['text_search.cpp',['../dc/db5/text__search_8cpp.html',1,'']]],
-  ['tower_5fof_5fhanoi_2ecpp_2456',['tower_of_hanoi.cpp',['../db/d3c/tower__of__hanoi_8cpp.html',1,'']]],
-  ['trie_5fmodern_2ecpp_2457',['trie_modern.cpp',['../dc/d93/trie__modern_8cpp.html',1,'']]]
+  ['shell_5fsort2_2ecpp_2452',['shell_sort2.cpp',['../d4/d7a/shell__sort2_8cpp.html',1,'']]],
+  ['sieve_5fof_5feratosthenes_2ecpp_2453',['sieve_of_eratosthenes.cpp',['../d8/ddf/sieve__of__eratosthenes_8cpp.html',1,'']]],
+  ['smallest_5fcircle_2ecpp_2454',['smallest_circle.cpp',['../d0/d01/smallest__circle_8cpp.html',1,'']]],
+  ['sparse_5fmatrix_2ecpp_2455',['sparse_matrix.cpp',['../d3/d19/sparse__matrix_8cpp.html',1,'']]],
+  ['spiral_5fprint_2ecpp_2456',['spiral_print.cpp',['../db/d07/spiral__print_8cpp.html',1,'']]],
+  ['sqrt_5fdouble_2ecpp_2457',['sqrt_double.cpp',['../da/d24/sqrt__double_8cpp.html',1,'']]],
+  ['stairs_5fpattern_2ecpp_2458',['stairs_pattern.cpp',['../d5/def/stairs__pattern_8cpp.html',1,'']]],
+  ['string_5ffibonacci_2ecpp_2459',['string_fibonacci.cpp',['../de/d47/string__fibonacci_8cpp.html',1,'']]],
+  ['successive_5fapproximation_2ecpp_2460',['successive_approximation.cpp',['../df/dc8/successive__approximation_8cpp.html',1,'']]]
 ];

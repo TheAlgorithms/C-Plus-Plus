@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['happy_5fnumber_2ecpp_2407',['happy_number.cpp',['../db/df3/happy__number_8cpp.html',1,'']]],
-  ['hash_5fsearch_2ecpp_2408',['hash_search.cpp',['../d1/df3/hash__search_8cpp.html',1,'']]]
+  ['gaussian_5felimination_2ecpp_2409',['gaussian_elimination.cpp',['../d0/de2/gaussian__elimination_8cpp.html',1,'']]],
+  ['gcd_5fiterative_5feuclidean_2ecpp_2410',['gcd_iterative_euclidean.cpp',['../d4/da0/gcd__iterative__euclidean_8cpp.html',1,'']]],
+  ['gcd_5fof_5fn_5fnumbers_2ecpp_2411',['gcd_of_n_numbers.cpp',['../d1/d11/gcd__of__n__numbers_8cpp.html',1,'']]],
+  ['gcd_5frecursive_5feuclidean_2ecpp_2412',['gcd_recursive_euclidean.cpp',['../d4/d45/gcd__recursive__euclidean_8cpp.html',1,'']]]
 ];

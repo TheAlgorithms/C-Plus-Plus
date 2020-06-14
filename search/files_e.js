@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['palindrome_5fof_5fnumber_2ecpp_2430',['palindrome_of_number.cpp',['../da/d9a/palindrome__of__number_8cpp.html',1,'']]],
-  ['paranthesis_5fmatching_2ecpp_2431',['paranthesis_matching.cpp',['../dc/dc5/paranthesis__matching_8cpp.html',1,'']]],
-  ['pascal_5ftriangle_2ecpp_2432',['pascal_triangle.cpp',['../dc/d1a/pascal__triangle_8cpp.html',1,'']]],
-  ['poisson_5fdist_2ecpp_2433',['poisson_dist.cpp',['../d9/d24/poisson__dist_8cpp.html',1,'']]],
-  ['power_5ffor_5fhuge_5fnumbers_2ecpp_2434',['power_for_huge_numbers.cpp',['../df/def/power__for__huge__numbers_8cpp.html',1,'']]],
-  ['primality_5ftest_2ecpp_2435',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
-  ['prime_5ffactorization_2ecpp_2436',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
-  ['prime_5fnumbers_2ecpp_2437',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
-  ['primes_5fup_5fto_5fbillion_2ecpp_2438',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]]
+  ['ode_5fforward_5feuler_2ecpp_2433',['ode_forward_euler.cpp',['../db/dd3/ode__forward__euler_8cpp.html',1,'']]],
+  ['ode_5fmidpoint_5feuler_2ecpp_2434',['ode_midpoint_euler.cpp',['../d6/dd3/ode__midpoint__euler_8cpp.html',1,'']]],
+  ['ode_5fsemi_5fimplicit_5feuler_2ecpp_2435',['ode_semi_implicit_euler.cpp',['../d3/d06/ode__semi__implicit__euler_8cpp.html',1,'']]],
+  ['ordinary_5fleast_5fsquares_5fregressor_2ecpp_2436',['ordinary_least_squares_regressor.cpp',['../dc/d38/ordinary__least__squares__regressor_8cpp.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['jump_5fsearch_2ecpp_2411',['jump_search.cpp',['../d2/d22/jump__search_8cpp.html',1,'']]]
+  ['interpolation_5fsearch_2ecpp_2415',['interpolation_search.cpp',['../d9/dd7/interpolation__search_8cpp.html',1,'']]],
+  ['interpolation_5fsearch2_2ecpp_2416',['interpolation_search2.cpp',['../df/d39/interpolation__search2_8cpp.html',1,'']]]
 ];

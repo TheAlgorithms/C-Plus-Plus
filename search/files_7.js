@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['interpolation_5fsearch_2ecpp_2409',['interpolation_search.cpp',['../d9/dd7/interpolation__search_8cpp.html',1,'']]],
-  ['interpolation_5fsearch2_2ecpp_2410',['interpolation_search2.cpp',['../df/d39/interpolation__search2_8cpp.html',1,'']]]
+  ['happy_5fnumber_2ecpp_2413',['happy_number.cpp',['../db/df3/happy__number_8cpp.html',1,'']]],
+  ['hash_5fsearch_2ecpp_2414',['hash_search.cpp',['../d1/df3/hash__search_8cpp.html',1,'']]]
 ];
