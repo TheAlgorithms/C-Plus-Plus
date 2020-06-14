@@ -33,7 +33,6 @@ void flip(int arr[], int i) {
  * findMax(): Returns index of the  maximum element in arr[0..n-1]
  */
 int findMax(int arr[], int n) {
-    
     int mi, i;
     for (mi = 0, i = 0; i < n; ++i)
     if (arr[i] > arr[mi])
