@@ -69,7 +69,7 @@ Node GetMaximumOnInterval(int l, int r) {
 }
 
 int main() {
-    // Debug
+    // Debug with an example array
     std::vector<int> exampleArray{17, 3, 190, 2, 34, -90, 19, 100, 9};
 
     BuildTree(exampleArray);
