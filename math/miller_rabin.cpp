@@ -27,9 +27,9 @@ template <typename T> std::vector<T> reverse_binary(T num) {
 
 /**
  * Function for modular exponentiation.
- * This function is an efficient modular exponentation function.
+ * This function is an efficient modular exponentiation function.
  * It can be used with any big integer library such as Boost multiprecision
- * to give result any modular exponentation problem reletively quickly.
+ * to give result any modular exponentiation problem relatively quickly.
  * @param base number being raised to a power as integer
  * @param rev_binary_exponent reverse binary of the power the base is being
  * raised to
@@ -110,7 +110,7 @@ template <typename T> bool miller_test(T d, T num) {
  *
  * \detail
  * First we check whether the num input is less than 4, if so we can determine
- * whther this is a prime or composite by checking for 2 and 3.
+ * whether this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
  * Next we write our num in the following format \f$num = 2^r \cdot d + 1\f$. After
  * finding r and d for our input num, we use for loop repeat number of times
