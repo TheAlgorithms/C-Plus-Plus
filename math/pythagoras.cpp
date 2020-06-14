@@ -27,9 +27,9 @@ template <typename T> class point {
     * and save it to our calss. Second one takes only 2 T type value and third
     * one is defoult 0 and save it into the class too.
     */
-    point(T a, T b, T c) : x(a), y(b), z(c) {}  // Consructor for 3D points.
-    point(T a, T b) : x(a), y(b), z(0) {}       // Second constructor for 2D points.
-    double distance(const point &);             // Our prototype of distance method.
+    point(T a, T b, T c) : x(a), y(b), z(c) {}  // Consructor for 3D points
+    point(T a, T b) : x(a), y(b), z(0) {}  // Second constructor for 2D points
+    double distance(const point &);  // Our prototype of distance method
 };
 
 /**
