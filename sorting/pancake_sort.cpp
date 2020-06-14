@@ -6,8 +6,8 @@
  * A generic implementation of pancake_sort.
  */
 #include<iostream>
-// Sorting an array of integers in ascending order
-/**
+/* Sorting an array of integers in ascending order
+
  * The algorithm finds the largest number in the array
  * and moves it to the end of the array.
  * This moving of array to the end is done by reversing the array
@@ -16,7 +16,9 @@
  * the whole array. The reversing process is analogous to flipping
  * pancakes, hence the name.
 */
-// Reverses arr[0..i]
+/**
+ *  flip(): Reverses arr[0..i]
+ */
 void flip(int arr[], int i) {
     int temp, start = 0;
     while (start < i) {
@@ -27,15 +29,20 @@ void flip(int arr[], int i) {
         i--;
     }
 }
-// Returns index of the  maximum element in   arr[0..n-1]
+/**
+ * findMax(): Returns index of the  maximum element in arr[0..n-1]
+ */
 int findMax(int arr[], int n) {
+    
     int mi, i;
     for (mi = 0, i = 0; i < n; ++i)
     if (arr[i] > arr[mi])
     mi = i;
     return mi;
 }
-// The main function that sorts given array using flip operations
+/** 
+ * pancakeSort(): The main function that sorts given array using flip operations
+ */
 void pancakeSort(int *arr, int n) {
     // Start from the complete array and
     // one by one reduce current size by one
@@ -52,11 +59,11 @@ void pancakeSort(int *arr, int n) {
         }
     }
 }
-// Sorting an array of integers in ascending order
 /**
- *Reads the number of elements in the array
- and then reads the elements. The array is sorted by calling the
- pancakeSort function. The sorted array is then displayed.
+ * main():
+ * Reads the number of elements in the array 
+ * and then reads the elements. The array is sorted by calling the 
+ * pancakeSort function. The sorted array is then displayed.
 */
 int main() {
     int arr[20];
