@@ -100,6 +100,7 @@
 
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
+  * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_prime.cpp)
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/double_factorial.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/extended_euclid_algorithm.cpp)
