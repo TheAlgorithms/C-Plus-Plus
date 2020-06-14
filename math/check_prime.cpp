@@ -43,6 +43,10 @@ bool is_prime(T num) {
  * Main function
  */
 int main() {
+    // perform self-test
+    assert(is_prime(50) == false);
+    assert(is_prime(115249) == true);
+
     int num;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;
@@ -52,6 +56,6 @@ int main() {
     } else {
         std::cout << num << " is not a prime number" << std::endl;
     }
-    assert(is_prime(50) == false);
-    assert(is_prime(115249) == true);
+
+    return 0;
 }
