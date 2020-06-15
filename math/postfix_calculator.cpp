@@ -69,7 +69,6 @@ case '%': return ( op1 % op2 );
 }
 return 0;
 }
-
 int priority(char opr) {
 switch(opr) {
 case '(': return 0;
