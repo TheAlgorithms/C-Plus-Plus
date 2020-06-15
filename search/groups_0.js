@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ordinary_20differential_20equations_3917',['Ordinary Differential Equations',['../d6/d60/group__ode.html',1,'']]]
+  ['machine_20learning_20algorithms_3935',['Machine Learning Algorithms',['../d9/d66/group__machine__learning.html',1,'']]]
 ];

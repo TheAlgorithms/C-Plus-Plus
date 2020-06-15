@@ -123,8 +123,8 @@ var NAVTREEINDEX0 =
 "d2/dc4/classstack__linked_list.html#a565e79ec7a9d949664277afda874cf7c":[7,0,30,2],
 "d2/dc4/classstack__linked_list.html#aa34ec2024dcfe130e6458149093772b3":[7,0,30,5],
 "d2/dc4/classstack__linked_list.html#af12688f7e4d74a978c93d5b26199a208":[7,0,30,1],
-"d2/dcf/namespacestatistics.html":[7,0,1],
 "d2/dcf/namespacestatistics.html":[6,0,3],
+"d2/dcf/namespacestatistics.html":[7,0,1],
 "d3/d06/ode__semi__implicit__euler_8cpp.html":[8,0,4,8],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,4,8,1],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[8,0,4,8,3],
@@ -229,6 +229,11 @@ var NAVTREEINDEX0 =
 "d4/de8/fast__interger__input_8cpp.html":[8,0,5,4],
 "d4/de8/fast__interger__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82":[8,0,5,4,0],
 "d4/de8/fast__interger__input_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,5,4,1],
+"d4/def/kohonen__som__topology_8cpp.html":[8,0,2,1],
+"d4/def/kohonen__som__topology_8cpp.html#a1d577f5d95b774ae97eb6838852d0df5":[8,0,2,1,8],
+"d4/def/kohonen__som__topology_8cpp.html#a549d41dcf9444ed7d6df1da3c73e7d16":[8,0,2,1,1],
+"d4/def/kohonen__som__topology_8cpp.html#ac4010fe3a52a74e8b5b1aaadfe38b46f":[8,0,2,1,15],
+"d4/def/kohonen__som__topology_8cpp.html#adc731720947b4bc2ab047c141e7d0299":[8,0,2,1,5],
 "d5/d15/classcll.html":[7,0,4],
 "d5/d15/classcll.html#a04b61bb736525f28b8042c6145e1a265":[7,0,4,4],
 "d5/d15/classcll.html#a1b49e807e33b6f11b2ea151df61a9f2f":[7,0,4,8],
@@ -244,10 +249,5 @@ var NAVTREEINDEX0 =
 "d5/d29/struct_min_heap_node.html":[7,0,18],
 "d5/d29/struct_min_heap_node.html#a3b604fe2d4f56fcb78f8e0e02b0458fd":[7,0,18,2],
 "d5/d29/struct_min_heap_node.html#a3d422a54a6e8f8ebc7e386125a09d8e8":[7,0,18,1],
-"d5/d29/struct_min_heap_node.html#a41f73e87e4ddf1fbe72ae0db2b4e674e":[7,0,18,0],
-"d5/d29/struct_min_heap_node.html#a6df054c3211ae8a8ec15a21e7d18343a":[7,0,18,4],
-"d5/d29/struct_min_heap_node.html#ad06549be842d9a2cacdb3e55b019e68c":[7,0,18,3],
-"d5/d67/bayes__theorem_8cpp.html":[8,0,6,1],
-"d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba":[8,0,6,1,0],
-"d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f":[8,0,6,1,1]
+"d5/d29/struct_min_heap_node.html#a41f73e87e4ddf1fbe72ae0db2b4e674e":[7,0,18,0]
 };
