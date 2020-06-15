@@ -50,7 +50,7 @@ double argument(Numcpx a) {
 * the result must be 5 and argument be 0.6435
 */
 void test() {
-	std::complex<double> mycomplex (4.0, 3.0);
+    std::complex<double>mycomplex(4.0, 3.0);
     Numcpx numcpx = {4 , 3};
     assert(modulus(numcpx) == std::abs(mycomplex));
     assert(argument(numcpx) == std::arg(mycomplex));
@@ -63,7 +63,7 @@ void test() {
 * the result must be 5.6612 and argument be 0.6223
 */
 void test2() {
-	std::complex<double> mycomplex (4.6, 3.3);
+    std::complex<double> mycomplex(4.6, 3.3);
     Numcpx numcpx = {4.6 , 3.3};
     assert(modulus(numcpx) == std::abs(mycomplex));
     assert(argument(numcpx) == std::arg(mycomplex));
@@ -77,9 +77,9 @@ void test2() {
 * and the results should be as expected
 */
 int main() {
-	test();
-	std::cout << std::endl;
-	test2();
-	std::cout << std::endl;
-	return 0;
+    test();
+    std::cout << std::endl;
+    test2();
+    std::cout << std::endl;
+    return 0;
 }
