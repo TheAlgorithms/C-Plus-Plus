@@ -1,4 +1,6 @@
 /**
+ * \addtogroup machine_learning Machine Learning Algorithms
+ * @{
  * \file
  * \brief [Kohonen self organizing
  * map](https://en.wikipedia.org/wiki/Self-organizing_map) (data tracing)
@@ -14,6 +16,7 @@
  * counterpart](https://github.com/kvedala/C/blob/master/machine_learning/kohonen_som_trace.c)
  * \note The compiled code is much slower when compiled with MS Visual C++ 2019
  * than with GCC on windows
+ * \see kohonen_som_topology.cpp
  */
 #define _USE_MATH_DEFINES  // required for MS Visual C++
 #include <algorithm>
@@ -458,3 +461,5 @@ int main(int argc, char **argv) {
            "model and writing files to disk.)\n\n";
     return 0;
 }
+
+/** @} */

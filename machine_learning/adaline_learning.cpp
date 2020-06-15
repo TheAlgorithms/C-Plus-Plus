@@ -1,4 +1,6 @@
 /**
+ * \addtogroup machine_learning Machine Learning Algorithms
+ * @{
  * \file
  * \brief [Adaptive Linear Neuron
  * (ADALINE)](https://en.wikipedia.org/wiki/ADALINE) implementation
@@ -345,3 +347,6 @@ int main(int argc, char **argv) {
 
     return 0;
 }
+
+/** @}
+ */
