@@ -12,5 +12,5 @@ var searchData=
   ['kohonen_5fsom_794',['kohonen_som',['../d8/d77/namespacemachine__learning.html#adc731720947b4bc2ab047c141e7d0299',1,'machine_learning']]],
   ['kohonen_5fsom_5ftopology_2ecpp_795',['kohonen_som_topology.cpp',['../d4/def/kohonen__som__topology_8cpp.html',1,'']]],
   ['kohonen_5fsom_5ftrace_2ecpp_796',['kohonen_som_trace.cpp',['../d9/d49/kohonen__som__trace_8cpp.html',1,'']]],
-  ['kohonen_5fsom_5ftracer_797',['kohonen_som_tracer',['../d9/d66/group__machine__learning.html#gafb0326e0e585bb75d51bb95a2941f7a9',1,'kohonen_som_trace.cpp']]]
+  ['kohonen_5fsom_5ftracer_797',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#acc6a28f40512dbda75ab1a3969248898',1,'machine_learning']]]
 ];

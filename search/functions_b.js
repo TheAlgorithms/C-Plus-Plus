@@ -7,5 +7,5 @@ var searchData=
   ['kmp_3051',['kmp',['../d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93',1,'string_search']]],
   ['knuth_5fb_3052',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',0,'std::knuth_b']]],
   ['kohonen_5fsom_3053',['kohonen_som',['../d8/d77/namespacemachine__learning.html#adc731720947b4bc2ab047c141e7d0299',1,'machine_learning']]],
-  ['kohonen_5fsom_5ftracer_3054',['kohonen_som_tracer',['../d9/d66/group__machine__learning.html#gafb0326e0e585bb75d51bb95a2941f7a9',1,'kohonen_som_trace.cpp']]]
+  ['kohonen_5fsom_5ftracer_3054',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#acc6a28f40512dbda75ab1a3969248898',1,'machine_learning']]]
 ];

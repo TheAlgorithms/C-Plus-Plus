@@ -114,6 +114,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac4010fe3a52a74e8b5b1aaadfe38b46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc731720947b4bc2ab047c141e7d0299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/namespacemachine__learning.html#adc731720947b4bc2ab047c141e7d0299">kohonen_som</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt;&gt; *W, double alpha_min)</td></tr>
 <tr class="separator:adc731720947b4bc2ab047c141e7d0299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361674452869413536ee501f053129a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/namespacemachine__learning.html#a361674452869413536ee501f053129a8">update_weights</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; *W, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *D, double alpha, int R)</td></tr>
+<tr class="separator:a361674452869413536ee501f053129a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6a28f40512dbda75ab1a3969248898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/namespacemachine__learning.html#acc6a28f40512dbda75ab1a3969248898">kohonen_som_tracer</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; *W, double alpha_min)</td></tr>
+<tr class="separator:acc6a28f40512dbda75ab1a3969248898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Machine learning algorithms. </p>
@@ -177,7 +181,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// Loop for each sample pattern in the data set</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sample = 0; sample &lt; num_samples; sample++) {</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="comment">// update weights for the current input pattern sample</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            dmin += <a class="code" href="../../d9/d66/group__machine__learning.html#gab9d78dea4d81cfc29825d3454e81cd0e">update_weights</a>(X[sample], W, &amp;D, alpha, R);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            dmin += <a class="code" href="../../d8/d77/namespacemachine__learning.html#ac4010fe3a52a74e8b5b1aaadfe38b46f">update_weights</a>(X[sample], W, &amp;D, alpha, R);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        }</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">// every 100th iteration, reduce the neighborhood range</span></div>
@@ -202,6 +206,77 @@ Functions</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_adc731720947b4bc2ab047c141e7d0299_cgraph.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="acc6a28f40512dbda75ab1a3969248898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6a28f40512dbda75ab1a3969248898">&#9670;&nbsp;</a></span>kohonen_som_tracer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void machine_learning::kohonen_som_tracer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha_min</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply incremental algorithm with updating neighborhood and learning rates on all samples in the given datset.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">X</td><td>data set </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">W</td><td>weights matrix </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha_min</td><td>terminal value of alpha </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                          {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">int</span> num_samples = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();      <span class="comment">// number of rows</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> num_features = X[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> num_out = W-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();         <span class="comment">// number of rows</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">int</span> R = num_out &gt;&gt; 2, iter = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">double</span> alpha = 1.f;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> D(num_out);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// Loop alpha from 1 to slpha_min</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span> (; alpha &gt; alpha_min; alpha -= 0.01, iter++) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// Loop for each sample pattern in the data set</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sample = 0; sample &lt; num_samples; sample++) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">// update weights for the current input pattern sample</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <a class="code" href="../../d8/d77/namespacemachine__learning.html#a361674452869413536ee501f053129a8">update_weights</a>(X[sample], W, &amp;D, alpha, R);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// every 10th iteration, reduce the neighborhood range</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (iter % 10 == 0 &amp;&amp; R &gt; 1)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            R--;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_acc6a28f40512dbda75ab1a3969248898_cgraph.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -298,8 +373,105 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a361674452869413536ee501f053129a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361674452869413536ee501f053129a8">&#9670;&nbsp;</a></span>update_weights() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void machine_learning::update_weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update weights of the SOM using Kohonen algorithm</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">X</td><td>data point </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">W</td><td>weights matrix </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">D</td><td>temporary vector to store distances </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>learning rate \(0&lt;\alpha\le1\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">R</td><td>neighborhood range </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> j, <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> num_out = W-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();      <span class="comment">// number of SOM output nodes</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> num_features = x.size();  <span class="comment">// number of data features</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// step 1: for each output point</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; num_out; j++) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// compute Euclidian distance of each output</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">// point from the current sample</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        (*D)[j] = (((*W)[j] - x) * ((*W)[j] - x)).sum();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// step 2:  get closest node i.e., node with snallest Euclidian distance to</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// the current pattern</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">auto</span> result = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(*D), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(*D));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">double</span> d_min = *result;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> d_min_idx = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(*D), result);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// step 3a: get the neighborhood range</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">int</span> from_node = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(0, d_min_idx - R);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> to_node = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(num_out, d_min_idx + R + 1);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// step 3b: update the weights of nodes in the</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// neighborhood</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span> (j = from_node; j &lt; to_node; j++)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// update weights of nodes in the neighborhood</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        (*W)[j] += alpha * (x - (*W)[j]);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_a361674452869413536ee501f053129a8_cgraph.svg" width="352" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ac4010fe3a52a74e8b5b1aaadfe38b46f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4010fe3a52a74e8b5b1aaadfe38b46f">&#9670;&nbsp;</a></span>update_weights()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4010fe3a52a74e8b5b1aaadfe38b46f">&#9670;&nbsp;</a></span>update_weights() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,25 +593,31 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="afibonacci__fast_8cpp_html_a3ba232425d45f9e9c0b87a8cf7ab69d9"><div class="ttname"><a href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a></div><div class="ttdeci">uint64_t f[MAX]</div><div class="ttdef"><b>Definition:</b> fibonacci_fast.cpp:27</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a361674452869413536ee501f053129a8"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a361674452869413536ee501f053129a8">machine_learning::update_weights</a></div><div class="ttdeci">void update_weights(const std::valarray&lt; double &gt; &amp;x, std::vector&lt; std::valarray&lt; double &gt;&gt; *W, std::valarray&lt; double &gt; *D, double alpha, int R)</div><div class="ttdef"><b>Definition:</b> kohonen_som_trace.cpp:100</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="adistance_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a></div><div class="ttdeci">T distance(T... args)</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_ac4010fe3a52a74e8b5b1aaadfe38b46f"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#ac4010fe3a52a74e8b5b1aaadfe38b46f">machine_learning::update_weights</a></div><div class="ttdeci">double update_weights(const std::valarray&lt; double &gt; &amp;X, std::vector&lt; std::vector&lt; std::valarray&lt; double &gt;&gt;&gt; *W, std::vector&lt; std::valarray&lt; double &gt;&gt; *D, double alpha, int R)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:191</div></div>
 <div class="ttc" id="agroup__machine__learning_html_gab53c14440b2b2dd3172c66afc5c2f63f"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f">get_min_2d</a></div><div class="ttdeci">void get_min_2d(const std::vector&lt; std::valarray&lt; double &gt;&gt; &amp;X, double *val, int *x_idx, int *y_idx)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:97</div></div>
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
-<div class="ttc" id="agroup__machine__learning_html_gab9d78dea4d81cfc29825d3454e81cd0e"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#gab9d78dea4d81cfc29825d3454e81cd0e">update_weights</a></div><div class="ttdeci">void update_weights(const std::valarray&lt; double &gt; &amp;x, std::vector&lt; std::valarray&lt; double &gt;&gt; *W, std::valarray&lt; double &gt; *D, double alpha, int R)</div><div class="ttdef"><b>Definition:</b> kohonen_som_trace.cpp:95</div></div>
 <div class="ttc" id="afprintf_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/fprintf.html">std::snprintf</a></div><div class="ttdeci">T snprintf(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div><div class="ttdoc">STL class.</div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
+<div class="ttc" id="amin_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a></div><div class="ttdeci">T min_element(T... args)</div></div>
 <div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>
+<div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="aexp_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a></div><div class="ttdeci">T exp(T... args)</div></div>
+<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d77/namespacemachine__learning.html">machine_learning</a></li>
-    <li class="footer">Generated on Mon Jun 15 2020 22:47:44 for Algorithms_in_C++ by
+    <li class="footer">Generated on Mon Jun 15 2020 22:56:49 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
