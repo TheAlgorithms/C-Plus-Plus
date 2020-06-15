@@ -195,9 +195,9 @@ double update_weights(const std::valarray<double> &X,
                       std::vector<std::valarray<double>> *D, double alpha,
                       int R) {
     int x, y;
-    int num_out_x = int(W->size());       // number of SOM output nodes - in X
-    int num_out_y = int(W[0][0].size());  // number of SOM output nodes - in Y
-    int num_features = int(W[0][0][0].size());  // number of features = in Z
+    int num_out_x = static_cast<int>(W->size());       // output nodes - in X
+    int num_out_y = static_cast<int>(W[0][0].size());  // output nodes - in Y
+    int num_features = static_cast<int>(W[0][0][0].size());  //  features = in Z
     double d_min = 0.f;
 
 #ifdef _OPENMP
