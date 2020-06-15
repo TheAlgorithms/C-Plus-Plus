@@ -99,14 +99,13 @@ void get_min_2d(const std::vector<std::valarray<double>> &X, double *val,
     val[0] = INFINITY;  // initial min value
     int N = X.size();
 
-    for (int i = 0; i < N; i++)  // traverse each x-index
-    {
+    for (int i = 0; i < N; i++) {  // traverse each x-index
         auto result = std::min_element(std::begin(X[i]), std::end(X[i]));
         double d_min = *result;
         int j = std::distance(std::begin(X[i]), result);
 
-        if (d_min < val[0])  // if a lower value is found
-        {                    // save the value and its index
+        if (d_min < val[0]) {  // if a lower value is found
+                               // save the value and its index
             x_idx[0] = i;
             y_idx[0] = j;
             val[0] = d_min;
