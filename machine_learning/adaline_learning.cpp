@@ -191,6 +191,8 @@ class adaline {
 
 using machine_learning::adaline;
 
+/** @} */
+
 /**
  * test function to predict points in a 2D coordinate system above the line
  * \f$x=y\f$ as +1 and others as -1.
@@ -347,6 +349,3 @@ int main(int argc, char **argv) {
 
     return 0;
 }
-
-/** @}
- */

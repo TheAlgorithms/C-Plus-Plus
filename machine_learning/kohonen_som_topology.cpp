@@ -304,6 +304,8 @@ void kohonen_som(const std::vector<std::valarray<double>> &X,
 using machine_learning::kohonen_som;
 using machine_learning::save_u_matrix;
 
+/** @} */
+
 /** Creates a random set of points distributed in four clusters in
  * 3D space with centroids at the points
  * * \f$(0,5, 0.5, 0.5)\f$
@@ -591,5 +593,3 @@ int main(int argc, char **argv) {
            "model and writing files to disk.)\n\n";
     return 0;
 }
-
-/** @} */

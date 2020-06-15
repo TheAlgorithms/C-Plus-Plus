@@ -83,6 +83,11 @@ int save_nd_data(const char *fname,
     return 0;
 }
 
+/** \namespace machine_learning
+ * \brief Machine learning algorithms
+ */
+namespace machine_learning {
+
 /**
  * Update weights of the SOM using Kohonen algorithm
  *
@@ -161,6 +166,10 @@ void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
             R--;
     }
 }
+
+}  // namespace machine_learning
+
+/** @} */
 
 /** Creates a random set of points distributed *near* the circumference
  * of a circle and trains an SOM that finds that circular pattern. The
@@ -461,5 +470,3 @@ int main(int argc, char **argv) {
            "model and writing files to disk.)\n\n";
     return 0;
 }
-
-/** @} */
