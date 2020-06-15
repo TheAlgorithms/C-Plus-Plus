@@ -9,31 +9,31 @@ int postfix_evaluation(char *post);
 int calculate(int op1, int op2, char opr);
 
 void infix_to_postfix(char *in, char *post){
-     int j=0;
-     stack<int> s;
+int j=0;
+stack<int> s;
 
-       for(int i = 0 ; in[i] != '\0' ; i++ ){
-       if( is_operand(in[i]) ){
-          post[j++] = in[i];
+for(int i = 0 ; in[i] != '\0' ; i++ ){
+if( is_operand(in[i]) ){
+post[j++] = in[i];
 }
-      else
-     if( in[i] == '('){
-        s.push(in[i]);
+else
+if( in[i] == '('){
+s.push(in[i]);
 }
-     else
-     if( in[i] == ')'){
-     while( s.top() != '(' ){
-          post[j++] = s.top();
-          s.pop();
-     }
-     s.pop();
-     }
-     else{
-     while( !s.empty() && priority(s.top()) >= priority(in[i])){
-                   post[j++] = s.top();
-                   s.pop();
+else
+if( in[i] == ')'){
+while( s.top() != '(' ){
+post[j++] = s.top();
+s.pop();
 }
-               s.push(in[i]);
+s.pop();
+}
+else{
+while( !s.empty() && priority(s.top()) >= priority(in[i])){
+post[j++] = s.top();
+s.pop();
+}
+s.push(in[i]);
 }
 }
 while( !s.empty()){
@@ -67,24 +67,24 @@ return ( (ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122) || (ch >= 48 && ch <=
 }
 
 int calculate(int op1, int op2, char opr){
-     switch(opr){
-          case '+': return ( op1 + op2 );
-          case '-': return ( op1 - op2 );
-          case '*': return ( op1 * op2 );
-          case '/': return ( op1 / op2 );
-          case '%': return ( op1 % op2 );
+switch(opr){
+case '+': return ( op1 + op2 );
+case '-': return ( op1 - op2 );
+case '*': return ( op1 * op2 );
+case '/': return ( op1 / op2 );
+case '%': return ( op1 % op2 );
 }
 return 0;
 }
 
 int priority(char opr){
-     switch(opr){
-          case '(': return 0;
-          case '+':
-          case '-': return 1;
-          case '*':
-          case '/':
-          case '%': return 2;
+switch(opr){
+case '(': return 0;
+case '+':
+case '-': return 1;
+case '*':
+case '/':
+case '%': return 2;
 }
 return 0;
 }
