@@ -27,7 +27,7 @@ int sum_of_digits(int num) {
 /**
  * Test function.
  */
-void test() { 
+void test() {
     int test_case_1 = sum_of_digits(119765);
     int test_case_2 = sum_of_digits(-12256);
     assert(test_case_1 == 29);
