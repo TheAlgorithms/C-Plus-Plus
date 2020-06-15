@@ -171,6 +171,8 @@ void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
 
 /** @} */
 
+using machine_learning::kohonen_som_tracer;
+
 /** Creates a random set of points distributed *near* the circumference
  * of a circle and trains an SOM that finds that circular pattern. The
  * generating function is
