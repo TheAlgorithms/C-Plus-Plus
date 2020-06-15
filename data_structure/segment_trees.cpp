@@ -7,11 +7,10 @@
  * with PreProcessing O(N * Log(N)) Time
  */
 
-#include <stdio.h>
-
 #include <algorithm>
 #include <cassert>
 #include <cmath>
+#include <cstdio>
 #include <iomanip>
 #include <iostream>
 #include <vector>
