@@ -1,9 +1,3 @@
-/*
- * functions.cpp
- *
- *  Created on: 07-Mar-2020
- *      Author: sunbeam
- */
 
 #include<iostream>
 using namespace std;
