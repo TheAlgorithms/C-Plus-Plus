@@ -119,8 +119,6 @@ void get_min_2d(const std::vector<std::valarray<double>> &X, double *val,
 namespace machine_learning {
 #define MIN_DISTANCE 1e-4  ///< Minimum average distance of image nodes
 
-#define buffer_size 120  ///< temporary string buffer size
-
 /**
  * Create the distance matrix or
  * [U-matrix](https://en.wikipedia.org/wiki/U-matrix) from the trained
@@ -136,8 +134,8 @@ int save_u_matrix(const char *fname,
                   const std::vector<std::vector<std::valarray<double>>> &W) {
     std::ofstream fp(fname);
     if (!fp) {  // error with fopen
-        char msg[buffer_size];
-        std::snprintf(msg, buffer_size, "File error (%s): ", fname);
+        char msg[120];
+        std::snprintf(msg, sizeof(msg), "File error (%s): ", fname);
         std::perror(msg);
         return -1;
     }
