@@ -1,3 +1,11 @@
+/*
+ *
+ * Copyright 2020 @author RameshwarPawar
+ *
+ * @file
+ * program to calculate prosfix expression
+ *
+ */
 #include<iostream>
 #include<stack>
 #include<cstring>
@@ -10,7 +18,7 @@ int calculate(int op1, int op2, char opr);
 
 void infix_to_postfix(char *in, char *post) {
 int j=0;
-stack<int> s;
+std::stack<int> s;
 
 for(int i = 0 ; in[i] != '\0' ; i++ ) {
 if( is_operand(in[i]) ) {
@@ -40,7 +48,7 @@ post[j] = '\0';
 
 int postfix_evaluation(char *post) {
 int result;
-stack<int> s;
+std::stack<int> s;
 for( int i = 0 ; post[i] != '\0' ; i++ ) {
 if( is_operand(post[i])) {
 s.push(post[i] - '0');
@@ -83,13 +91,14 @@ return 0;
 
 int main(void) {
      char infix[64];
-     cout << "Enter Infix Expression :";
-     cin >> infix;
+     std::cout << "Enter Infix Expression :";
+     std::cin >> infix;
      char postfix[64] = "";
-     cout << endl;
-     cout << "Infix Expression : " << infix << endl;
+     std::cout << std::endl;
+     std::cout << "Infix Expression : " << infix << std::endl;
      infix_to_postfix(infix, postfix);
-     cout << "Postfix Expression : " << postfix << endl;
-     cout << "Postfix Evaluation Result = " << postfix_evaluation(postfix) << endl;
+     std::cout << "Postfix Expression : " << postfix << std::endl;
+     std::cout << "Postfix Evaluation Result = " << postfix_evaluation(postfix) << std::endl;
 return 0;
 }
+
