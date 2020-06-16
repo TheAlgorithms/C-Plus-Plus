@@ -55,9 +55,9 @@ void test2() {
  * all the test cases.
  */
 void test() {
-    //First test.
+    // First test.
     test1();
-    //Second test.
+    // Second test.
     test2();
     }
 
