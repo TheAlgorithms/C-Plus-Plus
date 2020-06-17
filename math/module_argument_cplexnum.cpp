@@ -2,15 +2,8 @@
  * Copyright 2020 @author PaulinaQuintero
  * @file
  *
- * Program to calculate the modulus and argument of a complex number
- */
-
-#include <cmath>
-#include <iostream>
-#include <complex>
-#include <cassert>
-/**
- * Calculate the modulus and argument(radians) value for a complex number
+ * \brief Program to calculate the modulus and argument(radians) 
+ * value for a complex number
  * the form of a complex number be like z=x+iy
  * so for a pair of numbers (a,b) that a represents x and b y
  * the program can calculate the modulus like
@@ -18,6 +11,12 @@
  * and the argument like
  * arg=arctan(y/x)
  */
+
+#include <cmath>
+#include <iostream>
+#include <complex>
+#include <cassert>
+
 struct  Numcpx {
     double x , y;
 };
