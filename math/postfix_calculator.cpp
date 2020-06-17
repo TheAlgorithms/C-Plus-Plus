@@ -32,23 +32,23 @@ void infix_to_postfix(char *in, char *post) {
      for ( int i = 0 ; in[i] != '\0' ; i++ ) {
          if ( is_operand(in[i]) ) {
             post[j++] = in[i];
-        } else if( in[i] == '(') {
+        } else if( in[i] == '(' ) {
             s.push(in[i]);
-    } else if ( in[i] == ')') {
+    } else if ( in[i] == ')' ) {
         while ( s.top() != '(' ) {
             post[j++] = s.top();
             s.pop();
         }
         s.pop();
 } else {
-    while ( !s.empty() && priority(s.top()) >= priority(in[i])) {
+    while ( !s.empty() && priority(s.top()) >= priority(in[i]) ) {
         post[j++] = s.top();
         s.pop();
     }
     s.push(in[i]);
     }
 }
-    while ( !s.empty()) {
+    while ( !s.empty() ) {
         post[j++] = s.top();
         s.pop();
     }
@@ -62,7 +62,7 @@ int postfix_evaluation(char *post) {
     int result;
     std::stack<int> s;
     for ( int i = 0 ; post[i] != '\0' ; i++ ) {
-        if ( is_operand(post[i])) {
+        if ( is_operand(post[i]) ) {
             s.push(post[i] - '0');
         } else {
             int op2 = s.top(); s.pop();
@@ -89,7 +89,7 @@ bool is_operand(char ch) {
  * function returns value calculated 
  */
 int calculate(int op1, int op2, char opr) {
-    switch ( opr) {
+    switch ( opr ) {
         case '+': return ( op1 + op2 );
         case '-': return ( op1 - op2 );
         case '*': return ( op1 * op2 );
@@ -104,7 +104,7 @@ int calculate(int op1, int op2, char opr) {
  * function return 0,1,2 as per cases
  */
 int priority(char opr) {
-    switch ( opr) {
+    switch ( opr ) {
         case '(': return 0;
         case '+':
         case '-': return 1;
@@ -124,14 +124,14 @@ int main(void) {
      std::cin >> infix;
      char postfix[64] = "";
      std::cout << std::endl;
-     std::cout << "Infix Expression : " << infix 
-    		 << std::endl;
+     std::cout << "Infix Expression : " 
+               << infix << std::endl;
      infix_to_postfix(infix, postfix);
      std::cout << "Postfix Expression : "
-    		 << postfix << std::endl;
+               << postfix << std::endl;
      std::cout << "Postfix Evaluation Result = "
-    		 << postfix_evaluation(postfix) 
-			 << std::endl;
+               << postfix_evaluation(postfix) 
+               << std::endl;
 return 0;
 }
 
