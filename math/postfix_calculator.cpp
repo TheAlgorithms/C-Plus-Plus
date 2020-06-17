@@ -9,7 +9,6 @@
  * Output expression(Postfix) : 4 5 * 2 4 / + 3 -
  * Postfic evaluation output : 17.5
  */
-#include<iostream>
 #include<stack>
 #include<cstring>
 
@@ -32,7 +31,7 @@ void infix_to_postfix(char *in, char *post) {
      for ( int i = 0 ; in[i] != '\0' ; i++ ) {
          if ( is_operand(in[i]) ) {
             post[j++] = in[i];
-        } else if( in[i] == '(' ) {
+        } else if ( in[i] == '(' ) {
             s.push(in[i]);
     } else if ( in[i] == ')' ) {
         while ( s.top() != '(' ) {
@@ -123,11 +122,11 @@ int main(void) {
      std::cin >> infix;
      char postfix[64] = "";
      std::cout << std::endl;
-     std::cout << "Infix Expression : "<< infix;
-     std::cout<<std::endl;
+     std::cout << "Infix Expression : " << infix;
+     std::cout << std::endl;
      infix_to_postfix(infix, postfix);
-     std::cout << "Postfix Expression : "<< postfix;
-     std::cout<<std::endl;
+     std::cout << "Postfix Expression : " << postfix;
+     std::cout << std::endl;
      std::cout << "Postfix Evaluation Result = "<< postfix_evaluation(postfix);
 return 0;
 }
