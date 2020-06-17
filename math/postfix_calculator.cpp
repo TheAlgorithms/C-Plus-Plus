@@ -3,7 +3,7 @@
  *
  * @file
  * program to calculate prosfix expression
- * 
+ *
  * @brief
  * Input Expression(Infix) : 4*5+2/4-3
  * Output expression(Postfix) : 4 5 * 2 4 / + 3 -
@@ -79,14 +79,13 @@ int postfix_evaluation(char *post) {
  * is_operand function checks is it operand  or not and return true else false
  */
 bool is_operand(char ch) {
-    return ( (ch >= 65 && ch <= 90) 
-    		|| (ch >= 97 && ch <= 122) 
-			|| (ch >= 48 && ch <= 57) );
+return ( (ch >= 65 && ch <= 90)|| (ch >= 97 && ch <= 122)
+|| (ch >= 48 && ch <= 57) );
 }
 
 /**
- * calculate function to perform operation on 2 operands 
- * function returns value calculated 
+ * calculate function to perform operation on 2 operands
+ * function returns value calculated
  */
 int calculate(int op1, int op2, char opr) {
     switch ( opr ) {
@@ -124,14 +123,12 @@ int main(void) {
      std::cin >> infix;
      char postfix[64] = "";
      std::cout << std::endl;
-     std::cout << "Infix Expression : " 
-               << infix << std::endl;
+     std::cout << "Infix Expression : "<< infix;
+     std::cout<<std::endl;
      infix_to_postfix(infix, postfix);
-     std::cout << "Postfix Expression : "
-               << postfix << std::endl;
-     std::cout << "Postfix Evaluation Result = "
-               << postfix_evaluation(postfix) 
-               << std::endl;
+     std::cout << "Postfix Expression : "<< postfix;
+     std::cout<<std::endl;
+     std::cout << "Postfix Evaluation Result = "<< postfix_evaluation(postfix);
 return 0;
 }
 
