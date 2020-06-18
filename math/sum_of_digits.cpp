@@ -40,7 +40,7 @@ int sum_of_digits(int num) {
 void test1() {
     int test_case_1 = sum_of_digits(119765);
     assert(test_case_1 == 29);
-    }
+}
 
 /**
  * Function for testing the sum_of_digits() function with a
@@ -49,7 +49,8 @@ void test1() {
 void test2() {
     int test_case_2 = sum_of_digits(-12256);
     assert(test_case_2 == 16);
-    }
+}
+
 /**
  * Function for testing the sum_of_digits() with 
  * all the test cases.
@@ -59,7 +60,7 @@ void test() {
     test1();
     // Second test.
     test2();
-    }
+}
 
 /**
  * Main Function
