@@ -46,7 +46,7 @@ void randomized_quick_sort(vector<int> &a, int l, int r) {
         return;
     }
 
-    int k = l + rand() % (r - l + 1);
+    int k = l + rand_r() % (r - l + 1);
     swap(a[l], a[k]);
     vector<int> m = quick_sort_partition3(a, l, r);
 
@@ -65,4 +65,5 @@ int main() {
     for (size_t i = 0; i < a.size(); ++i) {
         std::cout << a[i] << ' ';
     }
+    return 0;
 }
