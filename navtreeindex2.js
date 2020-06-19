@@ -26,9 +26,9 @@ var NAVTREEINDEX2 =
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[5,0,5],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[8,0,2,1,4],
 "d9/d66/group__machine__learning.html#gacd517c6f195c75b9dd0f3aad65326f3b":[8,0,2,0,1],
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,2,2,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[5,0,4],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,2,1,2],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,2,2,1],
 "d9/d69/median__search_8cpp.html":[8,0,7,7],
 "d9/d69/median__search_8cpp.html#a3a66390d0e407dce4fcbf63a169c6c8f":[8,0,7,7,1],
 "d9/d69/median__search_8cpp.html#a55bfdcfe7613d75fb48ec99c7bf4dd5e":[8,0,7,7,0],
@@ -200,9 +200,8 @@ var NAVTREEINDEX2 =
 "dc/d93/trie__modern_8cpp.html":[8,0,0,7],
 "dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,0,7,2],
 "dc/db1/euclidian__distance_8cpp.html":[8,0,1,0],
-"dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d":[8,0,1,0,1],
-"dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163":[8,0,1,0,3],
-"dc/db1/euclidian__distance_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,1,0,2],
+"dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163":[8,0,1,0,2],
+"dc/db1/euclidian__distance_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,1,0,1],
 "dc/db5/text__search_8cpp.html":[8,0,7,9],
 "dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,9,0],
 "dc/dc5/paranthesis__matching_8cpp.html":[8,0,5,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "dd/d4f/class_solution.html":[7,0,29],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,29,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,29,0],
-"dd/d4f/class_solution.html#a396e87fa435c4ff06ee1cd6be55f95be":[7,0,29,5]
+"dd/d4f/class_solution.html#a396e87fa435c4ff06ee1cd6be55f95be":[7,0,29,5],
+"dd/d4f/class_solution.html#a50bf79c8a34952dea70eeb47cef0a945":[7,0,29,3]
 };

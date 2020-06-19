@@ -332,7 +332,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; W.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {         <span class="comment">// for each x</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; W[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); j++) {  <span class="comment">// for each y</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">double</span> <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d">distance</a> = 0.f;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordtype">double</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">distance</a> = 0.f;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordtype">int</span> from_x = std::max&lt;int&gt;(0, i - R);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">int</span> to_x = std::min&lt;int&gt;(W.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), i + R + 1);</div>
@@ -346,13 +346,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordflow">for</span> (m = from_y; m &lt; to_y; m++) {  <span class="comment">// scan neighborhood in y</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <span class="keyword">auto</span> d = W[i][j] - W[l][m];</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="keywordtype">double</span> d2 = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(d, 2).sum();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d">distance</a> += <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(d2);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">distance</a> += <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(d2);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    <span class="comment">// distance += d2;</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            }</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d">distance</a> /= R * R;          <span class="comment">// mean distance from neighbors</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            fp &lt;&lt; <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d">distance</a>;             <span class="comment">// print the mean separation</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">distance</a> /= R * R;          <span class="comment">// mean distance from neighbors</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            fp &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">distance</a>;             <span class="comment">// print the mean separation</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (j &lt; W[0].size() - 1) {  <span class="comment">// if not the last column</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                fp &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;              <span class="comment">// suffix comma</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
@@ -367,7 +367,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_a1d577f5d95b774ae97eb6838852d0df5_cgraph.svg" width="528" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_a1d577f5d95b774ae97eb6838852d0df5_cgraph.svg" width="356" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -612,13 +612,12 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
-<div class="ttc" id="aeuclidian__distance_8cpp_html_a62026c1c67bc0d7821ff624666d0a07d"><div class="ttname"><a href="../../dc/db1/euclidian__distance_8cpp.html#a62026c1c67bc0d7821ff624666d0a07d">distance</a></div><div class="ttdeci">double distance(const point&lt; T &gt; &amp;point_fir, const point&lt; T2 &gt; &amp;point_sec)</div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:54</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d77/namespacemachine__learning.html">machine_learning</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 12:48:02 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 19 2020 12:56:22 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
