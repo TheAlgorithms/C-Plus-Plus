@@ -1,55 +1,53 @@
-//Bubble Sort
+#include <bits/stdc++.h> 
+using namespace std; 
 
-#include <iostream>
-#include <vector>
-using namespace std;
+void swap(int *xp, int *yp) 
+{ 
+	int temp = *xp; 
+	*xp = *yp; 
+	*yp = temp; 
+} 
 
-int main()
-{
+// A function to implement bubble sort 
+void bubbleSort(int arr[], int n) 
+{ 
+	int i, j; 
+	for (i = 0; i < n-1; i++)	 
+	
+	// Last i elements are already in place 
+	for (j = 0; j < n-i-1; j++) 
+		if (arr[j] > arr[j+1]) 
+			swap(&arr[j], &arr[j+1]); 
+} 
+
+/* Function to print an array */
+void printArray(int arr[], int n) 
+{ 
+	int i; 
+	for (i = 0; i < n; i++) 
+		cout << arr[i] << " "<<"\n"; 
+	
+} 
+
+// Driver code 
+int main() 
+{ 
 	int n;
-	short swap_check = 1;
-	cout << "Enter the amount of numbers to sort: ";
 	cin >> n;
-	vector<int> numbers;
-	cout << "Enter " << n << " numbers: ";
-	int num;
+	int arr[n];
+	
+	//looping for input of array
+	
+	for(int i =0; i< n; i++)
+		cin >> arr[i];
+	
+	bubbleSort(arr, n); 
+	cout<<"Sorted array: \n"; 
+	printArray(arr, n); 
+	return 0; 
+} 
 
-	//Input
-	for (int i = 0; i < n; i++)
-	{
-		cin >> num;
-		numbers.push_back(num);
-	}
 
-	//Bubble Sorting
-	for (int i = 0; (i < n) && (swap_check == 1); i++)
-	{
-		swap_check = 0;
-		for (int j = 0; j < n - 1 - i; j++)
-		{
-			if (numbers[j] > numbers[j + 1])
-			{
-				swap_check = 1;
-				swap(numbers[j], numbers[j + 1]);// by changing swap location. I mean, j. If the number is greater than j + 1, then it means the location.
-			}
-		}
-	}
-
-	//Output
-	cout << "\nSorted Array : ";
-	for (int i = 0; i < numbers.size(); i++)
-	{
-		if (i != numbers.size() - 1)
-		{
-			cout << numbers[i] << ", ";
-		}
-		else
-		{
-			cout << numbers[i] << endl;
-		}
-	}
-	return 0;
-}
 
 /*The working principle of the Bubble sort algorithm:
 
