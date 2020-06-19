@@ -1,6 +1,5 @@
 <map id="point::distance" name="point::distance">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,112,83"/>
-<area shape="rect" id="node2" href="$dd/dd1/classpoint.html#a63695b31792c4453b94732a7168d7158" title=" " alt="" coords="160,5,284,32"/>
-<area shape="rect" id="node3" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="186,56,258,83"/>
-<area shape="rect" id="node4" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="187,107,257,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="160,5,232,32"/>
+<area shape="rect" id="node3" href="/Users/runner/runners/2.263.0/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="161,56,231,83"/>
 </map>

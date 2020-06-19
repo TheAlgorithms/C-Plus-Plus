@@ -102,13 +102,12 @@ $(document).ready(function(){initNavTree('dc/db1/euclidian__distance_8cpp.html',
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;valarray&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for euclidian_distance.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/db8/euclidian__distance_8cpp__incl.svg" width="471" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/db8/euclidian__distance_8cpp__incl.svg" width="348" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -142,10 +141,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Our main function from where we will check our method. </p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;           {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163">self_test</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;           {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="../../dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163">self_test</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -170,62 +169,62 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>In this method we will test distance between coordinates. This one is very basic tests </p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1...&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> p_fir({2, 1, 7});</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> p_sec({1, 3, 5});</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    assert(p_fir.distance(p_sec) == 3);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2...&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> fir_basic({0, 0, 7});</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_basic({1, 0, 0});</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_basic.distance(sec_basic)) == 7);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3...&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> fir_err({0, 0, 7});</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_err({1, 0});</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_basic.distance(sec_basic)) &lt; 0);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4...&quot;</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> p_fir4({-7.5, 7.2});</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> p_sec4({-1.0, 1.5});</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(p_fir4.distance(p_sec4)) == 8);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed !\n &quot;</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 5...&quot;</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;unsigned int&gt;</a> fir_high({100, 200, 300});</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_high({400, 500, 600});</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_high.distance(sec_high)) == 519);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 6...&quot;</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int16_t&gt;</a> equal_fir({-1, -2, -3});</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> equal_sec({-1, -2, -3});</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(equal_fir.distance(equal_sec)) == 0);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 7...&quot;</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;float&gt;</a> two_fir({-1.9, -2.5});</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> two_sec({-19.2, -10.5});</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(two_fir.distance(two_sec)) == 19);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1...&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> p_fir({2, 1, 7});</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> p_sec({1, 3, 5});</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    assert(p_fir.distance(p_sec) == 3);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2...&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> fir_basic({0, 0, 7});</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_basic({1, 0, 0});</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_basic.distance(sec_basic)) == 7);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3...&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> fir_err({0, 0, 7});</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_err({1, 0});</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_basic.distance(sec_basic)) &lt; 0);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4...&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> p_fir4({-7.5, 7.2});</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> p_sec4({-1.0, 1.5});</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(p_fir4.distance(p_sec4)) == 8);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed !\n &quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 5...&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;unsigned int&gt;</a> fir_high({100, 200, 300});</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> sec_high({400, 500, 600});</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(fir_high.distance(sec_high)) == 519);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 6...&quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int16_t&gt;</a> equal_fir({-1, -2, -3});</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;int&gt;</a> equal_sec({-1, -2, -3});</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(equal_fir.distance(equal_sec)) == 0);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 7...&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;float&gt;</a> two_fir({-1.9, -2.5});</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../dd/dd1/classpoint.html">point&lt;double&gt;</a> two_sec({-19.2, -10.5});</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    assert(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(two_fir.distance(two_sec)) == 19);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed!\n&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aeuclidian__distance_8cpp_html_abb0d85707aacf1ea82148356040d3163"><div class="ttname"><a href="../../dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163">self_test</a></div><div class="ttdeci">void self_test()</div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:79</div></div>
-<div class="ttc" id="aclasspoint_html"><div class="ttname"><a href="../../dd/dd1/classpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:22</div></div>
+<div class="ttc" id="aeuclidian__distance_8cpp_html_abb0d85707aacf1ea82148356040d3163"><div class="ttname"><a href="../../dc/db1/euclidian__distance_8cpp.html#abb0d85707aacf1ea82148356040d3163">self_test</a></div><div class="ttdeci">void self_test()</div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:72</div></div>
+<div class="ttc" id="aclasspoint_html"><div class="ttname"><a href="../../dd/dd1/classpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="../../dc/db1/euclidian__distance_8cpp.html">euclidian_distance.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 12:59:38 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 19 2020 13:34:48 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
