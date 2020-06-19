@@ -21,7 +21,7 @@
  * \f}
  * The computation results are stored to a text file `midpoint_euler.csv` and
  * the exact soltuion results in `exact.csv` for comparison. <img
- * src="https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/numerical_methods/ode_midpoint_euler.svg"
+ * src="https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/numerical_methods/ode_midpoint_euler.svg"
  * alt="Implementation solution"/>
  *
  * To implement [Van der Pol

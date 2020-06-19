@@ -13,7 +13,7 @@
  * data points in a much higher dimesional space by creating an equivalent in a
  * 2-dimensional space.
  * <img alt="Trained topological maps for the test cases in the program"
- * src="https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/machine_learning/2D_Kohonen_SOM.svg"
+ * src="https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/2D_Kohonen_SOM.svg"
  * />
  * \note This C++ version of the program is considerable slower than its [C
  * counterpart](https://github.com/kvedala/C/blob/master/machine_learning/kohonen_som_trace.c)

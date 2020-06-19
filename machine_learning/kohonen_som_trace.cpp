@@ -220,7 +220,7 @@ void test_circle(std::vector<std::valarray<double>> *data) {
  *      "w12.csv" title "w2"
  * ```
  * ![Sample execution
- * output](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/machine_learning/kohonen/test1.svg)
+ * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test1.svg)
  */
 void test1() {
     int j, N = 500;
@@ -300,7 +300,7 @@ void test_lamniscate(std::vector<std::valarray<double>> *data) {
  *      "w22.csv" title "w2"
  * ```
  * ![Sample execution
- * output](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/machine_learning/kohonen/test2.svg)
+ * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test2.svg)
  */
 void test2() {
     int j, N = 500;
@@ -397,7 +397,7 @@ void test_3d_classes(std::vector<std::valarray<double>> *data) {
  *      "w32.csv" title "w2"
  * ```
  * ![Sample execution
- * output](https://raw.githubusercontent.com/kvedala/C-Plus-Plus/docs/images/machine_learning/kohonen/test3.svg)
+ * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test3.svg)
  */
 void test3() {
     int j, N = 200;
