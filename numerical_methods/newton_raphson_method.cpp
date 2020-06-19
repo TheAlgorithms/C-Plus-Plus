@@ -18,7 +18,7 @@
 #include <limits>
 
 #define EPSILON \
-    1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
+    std::numeric_limits<double>::epsilon()  ///< system accuracy limit
 #define MAX_ITERATIONS 50000  ///< Maximum number of iterations to check
 
 /** define \f$f(x)\f$ to find root for
