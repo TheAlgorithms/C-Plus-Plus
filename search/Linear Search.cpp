@@ -1,47 +1,32 @@
-#include <iostream>
-using namespace std;
 
-int LinearSearch(int *array, int size, int key)
-{
-	for (int i = 0; i < size; ++i)
-	{
-		if (array[i] == key)
-		{
-			return i;
-		}
-	}
 
-	return -1;
-}
+#include <iostream> 
+using namespace std; 
 
-int main()
-{
-	int size;
-	cout << "\nEnter the size of the Array : ";
-	cin >> size;
+int search(int arr[], int n, int x) 
+{ 
+	int i; 
+	for (i = 0; i < n; i++) 
+		if (arr[i] == x) 
+			return i; 
+	return -1; 
+} 
 
-	int array[size];
-	int key;
+int main(void) 
+{ 
+	int n;
+	cin >> n;
+	
+	int x;
+	cin >> x;
+	
+	int arr[n];
+	for(int i=0; i<n; i++)
+		cin >> arr[i];
+	
+	int result = search(arr, n, x); 
 
-	//Input array
-	cout << "\nEnter the Array of " << size << " numbers : ";
-	for (int i = 0; i < size; i++)
-	{
-		cin >> array[i];
-	}
-
-	cout << "\nEnter the number to be searched : ";
-	cin >> key;
-
-	int index = LinearSearch(array, size, key);
-	if (index != -1)
-	{
-		cout << "\nNumber found at index : " << index;
-	}
-	else
-	{
-		cout << "\nNot found";
-	}
-
-	return 0;
-}
+	(result == -1)? cout<<"Element is not present in array"
+				: cout<<"Element is present at index " <<result; 
+return 0; 
+} 
