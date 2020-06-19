@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <set>
+#include <vector>
 
 int N;  // denotes number of nodes;
 std::vector<int> parent;
@@ -31,8 +31,7 @@ void union_sets(int a, int b) {  // To join 2 components to belong to one
 
 int no_of_connected_components() {  // To find total no of connected components
     std::set<int> temp;  // temp set to count number of connected components
-    for (int i = 1; i <= N; i++)
-        temp.insert(find_set(i));
+    for (int i = 1; i <= N; i++) temp.insert(find_set(i));
     return temp.size();
 }
 
