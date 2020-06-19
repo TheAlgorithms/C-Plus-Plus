@@ -96,7 +96,6 @@ int main() {
     quickSort(arr, 0, size);
     std::cout << "Sorted array\n";
     show(arr, size);
-
-    delete[] arr;
+    delete [] arr;
     return 0;
 }
