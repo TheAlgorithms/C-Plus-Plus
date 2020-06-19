@@ -112,12 +112,10 @@ Collaboration diagram for point&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af9b97f7cc79db1821c80a47875f0589d"><td class="memTemplParams" colspan="2">template&lt;typename T2 &gt; </td></tr>
-<tr class="memitem:af9b97f7cc79db1821c80a47875f0589d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classpoint.html#af9b97f7cc79db1821c80a47875f0589d">distance</a> (const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T2 &gt; &amp;other)</td></tr>
-<tr class="separator:af9b97f7cc79db1821c80a47875f0589d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ff0384cf9b5b19f2b7f5e4782834cd1"><td class="memTemplParams" colspan="2">template&lt;typename T2 &gt; </td></tr>
-<tr class="memitem:a8ff0384cf9b5b19f2b7f5e4782834cd1"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classpoint.html#a8ff0384cf9b5b19f2b7f5e4782834cd1">distance</a> (const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;point_fir, const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T2 &gt; &amp;point_sec)</td></tr>
-<tr class="separator:a8ff0384cf9b5b19f2b7f5e4782834cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb715fdf0210b66627990954c642d54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classpoint.html#a3cb715fdf0210b66627990954c642d54">distance</a> (const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="separator:a3cb715fdf0210b66627990954c642d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905ca42f42403e311f6d698fc1716220"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classpoint.html#a905ca42f42403e311f6d698fc1716220">distance</a> (const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;point_fir, const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;point_sec)</td></tr>
+<tr class="separator:a905ca42f42403e311f6d698fc1716220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63695b31792c4453b94732a7168d7158"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classpoint.html#a63695b31792c4453b94732a7168d7158">dimensions</a> () const</td></tr>
 <tr class="separator:a63695b31792c4453b94732a7168d7158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -160,19 +158,62 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Get the dimensions of the current point </p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{ <span class="keywordflow">return</span> this-&gt;size(); }</div>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{ <span class="keywordflow">return</span> this-&gt;size(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8ff0384cf9b5b19f2b7f5e4782834cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ff0384cf9b5b19f2b7f5e4782834cd1">&#9670;&nbsp;</a></span>distance() <span class="overload">[1/2]</span></h2>
+<a id="a3cb715fdf0210b66627990954c642d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb715fdf0210b66627990954c642d54">&#9670;&nbsp;</a></span>distance() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt;::distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The distance of current point from another point in the same dimensions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>reference to other point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns the Euclidian distance between this two <a class="el" href="../../d8/dc8/struct_point.html">Point</a>. </dd>
+<dd>
+negative value if error occurred </dd></dl>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                           {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (this-&gt;size() != other.size()) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Point dimensions mismatch\n&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dd/dd1/classpoint.html#a3cb715fdf0210b66627990954c642d54">distance</a>(*<span class="keyword">this</span>, other);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a905ca42f42403e311f6d698fc1716220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905ca42f42403e311f6d698fc1716220">&#9670;&nbsp;</a></span>distance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
 <div class="memtemplate">
-template&lt;typename T2 &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -186,7 +227,7 @@ template&lt;typename T2 &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T2 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>point_sec</em>&#160;</td>
         </tr>
         <tr>
@@ -212,72 +253,28 @@ template&lt;typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>returns the Euclidian distance between this two <a class="el" href="../../d8/dc8/struct_point.html">Point</a>. </dd>
 <dd>
 negative value if error occurred </dd></dl>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                           {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// step 1: ensure the two points are of same size</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (point_fir.size() != point_sec.size()) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Point dimensions mismatch\n&quot;</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// If dimensions matched,</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// step 2: calculate euclidian distance -</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// compute sum of squares of differences of coordinates</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="../../dd/dd1/classpoint.html">point&lt;T&gt;</a> temp = point_fir - point_sec;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">double</span> result = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(temp.coords, 2)).sum();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// step 3: return the square-root of the sum of squares</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(result);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// step 1: ensure the two points are of same size</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (point_fir.size() != point_sec.size()) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Point dimensions mismatch\n&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// If dimensions matched,</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// step 2: calculate euclidian distance -</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// compute sum of squares of differences of coordinates</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">double</span> result = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(point_fir - point_sec, 2)).sum();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// step 3: return the square-root of the sum of squares</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(result);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dd1/classpoint_a8ff0384cf9b5b19f2b7f5e4782834cd1_cgraph.svg" width="238" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dd1/classpoint_a905ca42f42403e311f6d698fc1716220_cgraph.svg" width="238" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
-</div>
-</div>
-<a id="af9b97f7cc79db1821c80a47875f0589d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9b97f7cc79db1821c80a47875f0589d">&#9670;&nbsp;</a></span>distance() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<div class="memtemplate">
-template&lt;typename T2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T &gt;::distance </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/dd1/classpoint.html">point</a>&lt; T2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The distance of current point from another point in the same dimensions.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>reference to other point </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>returns the Euclidian distance between this two <a class="el" href="../../d8/dc8/struct_point.html">Point</a>. </dd>
-<dd>
-negative value if error occurred </dd></dl>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                            {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dd/dd1/classpoint.html#af9b97f7cc79db1821c80a47875f0589d">distance</a>(*<span class="keyword">this</span>, other);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -287,14 +284,13 @@ negative value if error occurred </dd></dl>
 </div><!-- doc-content -->
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aclasspoint_html"><div class="ttname"><a href="../../dd/dd1/classpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:21</div></div>
-<div class="ttc" id="aclasspoint_html_af9b97f7cc79db1821c80a47875f0589d"><div class="ttname"><a href="../../dd/dd1/classpoint.html#af9b97f7cc79db1821c80a47875f0589d">point::distance</a></div><div class="ttdeci">double distance(const point&lt; T2 &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:34</div></div>
+<div class="ttc" id="aclasspoint_html_a3cb715fdf0210b66627990954c642d54"><div class="ttname"><a href="../../dd/dd1/classpoint.html#a3cb715fdf0210b66627990954c642d54">point::distance</a></div><div class="ttdeci">double distance(const point&lt; T &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> euclidian_distance.cpp:35</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dd1/classpoint.html">point</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 13:34:50 for Algorithms_in_C++ by
+    <li class="footer">Generated on Fri Jun 19 2020 14:37:20 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -103,7 +103,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "d5/d15/classcll.html#a852ab0b4ec38b8462df3f32ee6f11290",
 "d9/d49/kohonen__som__trace_8cpp.html",
-"dd/d4f/class_solution.html#a90a1c45a367a06a2ac0303454857257c"
+"dd/d4f/class_solution.html#a50bf79c8a34952dea70eeb47cef0a945"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

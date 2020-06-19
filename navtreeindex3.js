@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"dd/d4f/class_solution.html#a50bf79c8a34952dea70eeb47cef0a945":[7,0,29,3],
 "dd/d4f/class_solution.html#a90a1c45a367a06a2ac0303454857257c":[7,0,29,2],
 "dd/d4f/class_solution.html#aa3befe17e23ba7f8edf3e0b91366798d":[7,0,29,4],
 "dd/d4f/class_solution.html#ac9c725337cddfd2dc20ee18f8f1811f7":[7,0,29,1],
@@ -24,9 +25,9 @@ var NAVTREEINDEX3 =
 "dd/d9b/classgraph.html#af9b34bbae0f618e2128c501b69339bb0":[7,0,11,7],
 "dd/da0/todo.html":[4],
 "dd/dd1/classpoint.html":[7,0,23],
+"dd/dd1/classpoint.html#a3cb715fdf0210b66627990954c642d54":[7,0,23,1],
 "dd/dd1/classpoint.html#a63695b31792c4453b94732a7168d7158":[7,0,23,0],
-"dd/dd1/classpoint.html#a8ff0384cf9b5b19f2b7f5e4782834cd1":[7,0,23,1],
-"dd/dd1/classpoint.html#af9b97f7cc79db1821c80a47875f0589d":[7,0,23,2],
+"dd/dd1/classpoint.html#a905ca42f42403e311f6d698fc1716220":[7,0,23,2],
 "dd/df4/structlca.html":[7,0,14],
 "dd/df4/structlca.html#a14b42cdfa4ea593bc0d0571c513c0e23":[7,0,14,5],
 "dd/df4/structlca.html#a1db0a3861d8cb6b3da785646654adb1c":[7,0,14,7],
@@ -123,8 +124,8 @@ var NAVTREEINDEX3 =
 "functions_func.html":[7,3,1],
 "functions_rela.html":[7,3,3],
 "functions_vars.html":[7,3,2],
-"globals.html":[8,1,0],
 "globals.html":[8,1,0,0],
+"globals.html":[8,1,0],
 "globals_a.html":[8,1,0,1],
 "globals_b.html":[8,1,0,2],
 "globals_c.html":[8,1,0,3],
