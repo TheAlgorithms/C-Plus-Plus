@@ -10,7 +10,7 @@ int minSwaps(int arr[], int n) {
     // Create an array of pairs where first
     // element is array element and second element
     // is position of first element
-    std::pair<int, int> arrPos[n];
+    std::pair<int, int> *arrPos = new std::pair<int, int>[n];
     for (int i = 0; i < n; i++) {
         arrPos[i].first = arr[i];
         arrPos[i].second = i;
@@ -52,6 +52,8 @@ int minSwaps(int arr[], int n) {
             ans += (cycle_size - 1);
         }
     }
+
+    delete[] arrPos;
 
     // Return result
     return ans;
