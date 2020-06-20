@@ -44,9 +44,7 @@ auto printArray = [] (int *arr, int sz) {
  * The heapify procedure can be thought of as building a heap from 
  * the bottom up by successively sifting downward to establish the 
  * heap property. 
- * 
- * @param arr array be to sorted
- * @param 
+ *  
  */
 void(*heapify)(int *arr, int n, int i) = [] (int *arr, int n, int i) {
     int largest = i;
