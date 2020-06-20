@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "ln",
   7: "o",
   8: "_aehlmp",
-  9: "mo",
+  9: "mos",
   10: "clpt"
 };
 

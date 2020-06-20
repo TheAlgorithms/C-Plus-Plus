@@ -305,13 +305,13 @@ template&lt;class Iterator &gt; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        Iterator <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>(first);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> counter(n / (length &lt;&lt; 1)); counter; --counter) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            Iterator <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>(left + length), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>(right + length);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">merge</a>(left, right, end, buffer);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a>(left, right, end, buffer);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// if the number of remaining elements (n * 2 % length) is longer</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// than a segment, merge the remaining elements</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> ((n &amp; ((length &lt;&lt; 1) - 1)) &gt; length)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">merge</a>(left, left + length, last, buffer);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a>(left, left + length, last, buffer);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span>[] buffer;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
@@ -587,7 +587,7 @@ Here is the call graph for this function:</div>
 </div><!-- doc-content -->
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a7e7f25f31c50523990437abf2ac3907e"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:37</div></div>
-<div class="ttc" id="anamespacesorting_html_aa26de383227859210f14dcf12201a079"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">sorting::merge</a></div><div class="ttdeci">void merge(Iterator, Iterator, const Iterator, char[])</div><div class="ttdoc">merges 2 sorted adjacent segments into a larger sorted segment</div><div class="ttdef"><b>Definition:</b> non_recursive_merge_sort.cpp:57</div></div>
+<div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
 <div class="ttc" id="anamespacesorting_html_ae97f4dd815654c4682f564afd718e824"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae97f4dd815654c4682f564afd718e824">sorting::non_recursive_merge_sort</a></div><div class="ttdeci">void non_recursive_merge_sort(const Iterator first, const Iterator last)</div><div class="ttdoc">bottom-up merge sort which sorts elements in a non-decreasing order</div><div class="ttdef"><b>Definition:</b> non_recursive_merge_sort.cpp:86</div></div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
@@ -597,7 +597,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></li>
-    <li class="footer">Generated on Sat Jun 20 2020 11:28:57 for Algorithms_in_C++ by
+    <li class="footer">Generated on Sat Jun 20 2020 17:36:18 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
