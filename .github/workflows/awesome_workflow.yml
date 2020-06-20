@@ -16,9 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-format 
-        with:
-          submodules: true
+          sudo apt -qq install clang-format
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions
