@@ -67,7 +67,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
       - name: pull latest commit
-        run: git pull
+        run: git pull origin HEAD:$GITHUB_REF 
       - name: Update DIRECTORY.md
         shell: python
         run: |
@@ -130,7 +130,7 @@ jobs:
   #     - uses: actions/checkout@master
   #     - uses: actions/setup-python@master
   #     - run: pip install cpplint
-  #     - run: git pull
+  #     - run: git pull origin HEAD:$GITHUB_REF
   #     - run: cpplint --filter=-legal --recursive .
 
   cpplint_modified_files:
@@ -144,7 +144,7 @@ jobs:
       - run: git remote -v
       - run: git branch
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-      - run: git pull
+      - run: git pull origin HEAD:$GITHUB_REF
       - run: git diff --diff-filter=dr --name-only origin/master > git_diff.txt
       - run: echo "Files changed-- `cat git_diff.txt`"
       - name: cpplint_modified_files
@@ -206,6 +206,6 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - run: git pull
+      - run: git pull origin HEAD:$GITHUB_REF
       - run: cmake -B ./build -S .
       - run: cmake --build build
