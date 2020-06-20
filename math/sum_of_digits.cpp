@@ -2,7 +2,7 @@
  * Copyright 2020 @author iamnambiar
  * 
  * @file
- * A C++ Program to find the Sum of Digits of input integer.
+ * \brief A C++ Program to find the Sum of Digits of input integer.
  */
 #include <iostream>
 #include <cassert>
