@@ -10,7 +10,6 @@ jobs:
   code_format:
     name: Code Formatter
     runs-on: ubuntu-latest
-    on: push
     steps:
       - name: requirements
         run: | 
@@ -64,7 +63,6 @@ jobs:
     name: Update Directory.md
     needs: code_format
     runs-on: ubuntu-latest
-    on: push
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
@@ -139,7 +137,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: code_format
     name: CPPLINT
-    on: [push, pull_request]
     steps:
       - uses: actions/checkout@master # v2 is broken for git diff
       - uses: actions/setup-python@master
@@ -199,7 +196,6 @@ jobs:
 
   build:
     name: Compile checks
-    on: [push, pull_request]
     runs-on: ${{ matrix.os }}
     # needs: [cpplint, update_directory_md, cpplint_modified_files]
     needs: [update_directory_md]
