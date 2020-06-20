@@ -1,36 +1,37 @@
 /**
  *  \addtogroup sorting Sorting Algorithms
- *  @{
+ *  @file{
  *  \file
- *  \brief [Merege Sort Algorithm
+ *  \breif [Merege Sort Algorithm
  *  (MEREGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
  *
- *  \author [Ayaan Khan](http://github.com/ayaankhan98)
+ *  \author [Ayaan Khan] (http://github.com/ayaankhan98)
  *
- *  \details
  *  Merge Sort is an efficient, general purpose, comparison
  *  based sorting algorithm.
  *  Merge Sort is a divide and conquer algorithm
- *
+ *  
  */
+
 #include <iostream>
 
 /**
  *
- * The merge() function is used for merging two halves.
- * The merge(arr, l, m, r) is key process that assumes that
- * arr[l..m] and arr[m+1..r] are sorted and merges the two
+ * The merge() function is used for merging two halves. 
+ * The merge(arr, l, m, r) is key process that assumes that 
+ * arr[l..m] and arr[m+1..r] are sorted and merges the two 
  * sorted sub-arrays into one.
  *
- * @param arr - array with two halves arr[l...m] and arr[m+1...l]
- * @param l - left index or start index of first half array
- * @param m - right index or end index of first half array
- *
+ * @param arr[] is the array with two halves one is arr[l...m] and
+ * other is arr[m+1...l]
+ * @param l is the left index of first half array
+ * @param m is the end index of right index of first half array
+ * 
  * (The second array starts form m+1 and goes till l)
- *
- * @param l - end index or right index of second half array
+ * 
+ * @param l is the end index of right index of second half array
  */
-void merge(int *arr, int l, int m, int r) {
+void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -75,12 +76,12 @@ void merge(int *arr, int l, int m, int r) {
  * input array into two halves and calls itself for the two halves
  * and then calls merge() to merge the two halves
  *
- * @param arr - array to be sorted
- * @param l - left index or start index of array
- * @param r - right index or end index of array
+ * @param arr[] the array which is to be sorted
+ * @param l define the left index of array
+ * @param r defines the right index of array
  *
  */
-void mergeSort(int *arr, int l, int r) {
+void mergeSort(int arr[], int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
@@ -90,11 +91,11 @@ void mergeSort(int *arr, int l, int r) {
 }
 
 /**
- * Utility function used to print the array after
+ * A simple utility function used to print the array after
  * sorting
  */
-void show(int *arr, int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
+void show(int arr[], int size) {
+    for (int i = 0; i < size; i++)  std::cout << arr[i] << " ";
     std::cout << "\n";
 }
 
@@ -108,9 +109,9 @@ int main() {
     for (int i = 0; i < size; ++i) {
         std::cin >> arr[i];
     }
-    mergeSort(arr, 0, size - 1);
+    mergeSort(arr, 0, size-1);
     std::cout << "Sorted array : ";
-    show(arr, size - 1);
+    show(arr, size-1);
     delete[] arr;
     return 0;
 }
