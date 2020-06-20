@@ -112,7 +112,7 @@ jobs:
           git commit -am "updating DIRECTORY.md" ||  true
           git push --force origin HEAD:$GITHUB_REF || true
       - name: Install CPPLINT
-        - run: |
+        run: |
           python -m pip install cpplint
           git remote -v
           git branch
