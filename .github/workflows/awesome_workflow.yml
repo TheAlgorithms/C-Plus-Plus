@@ -17,7 +17,6 @@ jobs:
         run: | 
           sudo apt -qq -y update
           sudo apt -qq install clang-format 
-      - uses: actions/checkout@master
         with:
           submodules: true
       - name: Setup Git Specs
