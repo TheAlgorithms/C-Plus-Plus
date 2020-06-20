@@ -40,8 +40,8 @@ auto printArray = [](int *arr, int sz) {
 
 /**
  *
- * The heapify procedure can be thought of as building a heap from 
- * the bottom up by successively sifting downward to establish the 
+ * The heapify procedure can be thought of as building a heap from
+ * the bottom up by successively sifting downward to establish the
  * heap property.
  *
  */
