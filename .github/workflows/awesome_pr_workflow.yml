@@ -1,4 +1,4 @@
-name: Awesome CI Workflow
+name: Awesome CI Workflow for pull_request
 
 on: [pull_request]
 #   push:
