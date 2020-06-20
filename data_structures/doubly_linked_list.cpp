@@ -4,7 +4,7 @@
 
 struct node {
     int val;
-    node *prev;
+    node *prev;//instead of this efficent way can be using pointer difference//
     node *next;
 } * start;
 
