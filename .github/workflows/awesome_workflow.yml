@@ -175,6 +175,5 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - run: git pull origin HEAD:$GITHUB_REF
       - run: cmake -B ./build -S .
       - run: cmake --build build
