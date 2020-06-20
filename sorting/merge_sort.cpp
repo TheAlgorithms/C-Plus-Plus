@@ -7,6 +7,7 @@
  *
  *  \author [Ayaan Khan] (http://github.com/ayaankhan98)
  *
+ *  \details
  *  Merge Sort is an efficient, general purpose, comparison
  *  based sorting algorithm.
  *  Merge Sort is a divide and conquer algorithm
