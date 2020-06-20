@@ -10,24 +10,24 @@
  *  Merge Sort is an efficient, general purpose, comparison
  *  based sorting algorithm.
  *  Merge Sort is a divide and conquer algorithm
- *  
+ *
  */
 #include <iostream>
 
 /**
  *
- * The merge() function is used for merging two halves. 
- * The merge(arr, l, m, r) is key process that assumes that 
- * arr[l..m] and arr[m+1..r] are sorted and merges the two 
+ * The merge() function is used for merging two halves.
+ * The merge(arr, l, m, r) is key process that assumes that
+ * arr[l..m] and arr[m+1..r] are sorted and merges the two
  * sorted sub-arrays into one.
  *
  * @param arr[] is the array with two halves one is arr[l...m] and
  * other is arr[m+1...l]
  * @param l is the left index of first half array
  * @param m is the end index of right index of first half array
- * 
+ *
  * (The second array starts form m+1 and goes till l)
- * 
+ *
  * @param l is the end index of right index of second half array
  */
 void merge(int arr[], int l, int m, int r) {
@@ -94,7 +94,7 @@ void mergeSort(int arr[], int l, int r) {
  * sorting
  */
 void show(int arr[], int size) {
-    for (int i = 0; i < size; i++)  std::cout << arr[i] << " ";
+    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
 }
 
@@ -108,9 +108,9 @@ int main() {
     for (int i = 0; i < size; ++i) {
         std::cin >> arr[i];
     }
-    mergeSort(arr, 0, size-1);
+    mergeSort(arr, 0, size - 1);
     std::cout << "Sorted array : ";
-    show(arr, size-1);
+    show(arr, size - 1);
     delete[] arr;
     return 0;
 }
