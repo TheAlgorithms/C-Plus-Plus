@@ -12,7 +12,6 @@
  *  Merge Sort is a divide and conquer algorithm
  *  
  */
-
 #include <iostream>
 
 /**
