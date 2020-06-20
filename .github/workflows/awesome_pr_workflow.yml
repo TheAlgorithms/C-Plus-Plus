@@ -78,6 +78,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          submodules: true
+          submodules: true # just in case in future 
       - run: cmake -B ./build -S .
       - run: cmake --build build
