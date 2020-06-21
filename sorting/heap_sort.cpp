@@ -22,9 +22,9 @@
  *  Time Complexity - O(nlog(n))
  *
  */
-#include <iostream>
 #include <algorithm>
 #include <cassert>
+#include <iostream>
 
 /**
  *
@@ -97,7 +97,7 @@ void test() {
     printArray(arr, sz);  // displaying the array before sorting
     heapSort(arr, sz);    // calling heapsort to sort the array
     printArray(arr, sz);  // display array after sorting
-    assert(std::is_sorted(arr, arr+sz));
+    assert(std::is_sorted(arr, arr + sz));
     std::cout << "Test 1 Passed\n========================\n";
     std::cout << "Test 2\n";
     double arr2[] = {4.5, -3.6, 7.6, 0, 12.9};
@@ -105,13 +105,13 @@ void test() {
     printArray(arr2, sz);
     heapSort(arr2, sz);
     printArray(arr2, sz);
-    assert(std::is_sorted(arr2, arr2+sz));
+    assert(std::is_sorted(arr2, arr2 + sz));
     std::cout << "Test 2 passed\n";
 }
 
 /** Main function */
 int main() {
-  test();
-  return 0;
+    test();
+    return 0;
 }
 /** @} */
