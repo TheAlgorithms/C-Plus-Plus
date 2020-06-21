@@ -99,6 +99,7 @@ void test() {
     printArray(arr, sz);  // display array after sorting
     assert(std::is_sorted(arr, arr + sz));
     std::cout << "Test 1 Passed\n========================\n";
+
     std::cout << "Test 2\n";
     double arr2[] = {4.5, -3.6, 7.6, 0, 12.9};
     sz = sizeof(arr2) / sizeof(arr2[0]);
