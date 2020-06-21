@@ -9,10 +9,8 @@
 #define _USE_MATH_DEFINES  //< required for MS Visual C++
 #include <cassert>
 #include <cmath>
-#include <ctime>
 #include <functional>
 #include <iostream>
-#include <limits>
 
 #define EPSILON 1e-7  ///< solution accuracy limit
 #define M_GOLDEN_RATIO \
