@@ -20,7 +20,7 @@ int minimax(int depth, int node_index, bool is_max, vector<int> scores,
 }
 
 int main() {
-    vector<int> scores = { 90, 23, 6, 33, 21, 65, 123, 34423 };
+    vector<int> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
     int height = log2(scores.size());
 
     cout << "Optimal value: " << minimax(0, 0, true, scores, height) << endl;

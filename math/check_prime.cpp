@@ -11,7 +11,7 @@
  */
 #include <iostream>
 #include <cassert>
- /**
+/**
  * Function to check if the given number is prime or not.
  * @param num number to be checked.
  * @return if number is prime, it returns @ true, else it returns @ false.
@@ -41,18 +41,19 @@ bool is_prime(T num) {
  * Main function
  */
 int main() {
+    // perform self-test
+    assert(is_prime(50) == false);
+    assert(is_prime(115249) == true);
+
     int num;
-    std::cout << "Enter the number to check if it is prime or not" <<
-    std::endl;
+    std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;
     bool result = is_prime(num);
     if (result) {
-        std::cout << num << " is a prime number" <<
-        std::endl;
+        std::cout << num << " is a prime number" << std::endl;
     } else {
-        std::cout << num << " is not a prime number" <<
-        std::endl;
+        std::cout << num << " is not a prime number" << std::endl;
     }
-    assert(is_prime(50) == false);
-    assert(is_prime(115249) == true);
+
+    return 0;
 }
