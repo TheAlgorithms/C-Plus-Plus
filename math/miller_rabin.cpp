@@ -15,7 +15,8 @@
  * @param num integer number that we want to convert
  * @return result vector of the number input in reverse binary
  */
-template <typename T> std::vector<T> reverse_binary(T num) {
+template <typename T>
+std::vector<T> reverse_binary(T num) {
     std::vector<T> result;
     T temp = num;
     while (temp > 0) {
@@ -35,8 +36,8 @@ template <typename T> std::vector<T> reverse_binary(T num) {
  * raised to
  * @param mod modulo
  * @return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}\f$ where
- * \f$n\f$ is the base 10 representation of rev_binary_exponent and \f$m = mod \f$
- * parameter.
+ * \f$n\f$ is the base 10 representation of rev_binary_exponent and \f$m = mod
+ * \f$ parameter.
  */
 template <typename T>
 T modular_exponentiation(T base, const std::vector<T> &rev_binary_exponent,
@@ -68,7 +69,8 @@ T modular_exponentiation(T base, const std::vector<T> &rev_binary_exponent,
  * 	@return 'false' if n is composite
  * 	@return 'true' if n is (probably) prime.
  */
-template <typename T> bool miller_test(T d, T num) {
+template <typename T>
+bool miller_test(T d, T num) {
     // random number seed
     std::random_device rd_seed;
     // random number generator
@@ -112,14 +114,15 @@ template <typename T> bool miller_test(T d, T num) {
  * First we check whether the num input is less than 4, if so we can determine
  * whether this is a prime or composite by checking for 2 and 3.
  * Next we check whether this num is odd (as all primes greater than 2 are odd).
- * Next we write our num in the following format \f$num = 2^r \cdot d + 1\f$. After
- * finding r and d for our input num, we use for loop repeat number of times
- * inside which we check the miller conditions using the function miller_test.
- * If miller_test returns false then the number is composite
- * After the loop finishes completely without issuing a false return call,
- * we can conclude that this number is probably prime.
+ * Next we write our num in the following format \f$num = 2^r \cdot d + 1\f$.
+ * After finding r and d for our input num, we use for loop repeat number of
+ * times inside which we check the miller conditions using the function
+ * miller_test. If miller_test returns false then the number is composite After
+ * the loop finishes completely without issuing a false return call, we can
+ * conclude that this number is probably prime.
  */
-template <typename T> bool miller_rabin_primality_test(T num, T repeats) {
+template <typename T>
+bool miller_rabin_primality_test(T num, T repeats) {
     if (num <= 4) {
         // If num == 2 or num == 3 then prime
         if (num == 2 || num == 3) {
