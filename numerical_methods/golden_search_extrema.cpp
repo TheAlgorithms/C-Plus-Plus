@@ -14,12 +14,11 @@
 #include <limits>
 
 #define EPSILON 1e-7  ///< solution accuracy limit
-#define M_GOLDEN_RATIO \
-    static_cast<double>(1.618033988749894848204586834)  ///< golden ratio value
 
 /**
  * @brief Get the minima of a function in the given interval. To get the maxima,
- * simply negate the function.
+ * simply negate the function. The golden ratio used here is:\f[
+ * k=\frac{3-\sqrt{5}}{2} \approx 0.381966\ldots\f]
  *
  * @param f function to get minima for
  * @param lim_a lower limit of search window
@@ -32,6 +31,9 @@ double get_minima(const std::function<double(double)> &f, double lim_a,
     double c, d;
     double prev_mean, mean = std::numeric_limits<double>::infinity();
 
+    // golden ratio value
+    const double M_GOLDEN_RATIO = (1.f + std::sqrt(5.f)) / 2.f;
+
     // ensure that lim_a < lim_b
     if (lim_a > lim_b) {
         std::swap(lim_a, lim_b);
@@ -43,18 +45,24 @@ double get_minima(const std::function<double(double)> &f, double lim_a,
     do {
         prev_mean = mean;
 
-        c = lim_b - (lim_b - lim_a) / M_GOLDEN_RATIO;
-        d = lim_a + (lim_b - lim_a) / M_GOLDEN_RATIO;
+        // compute the section ratio width
+        double ratio = (lim_b - lim_a) / M_GOLDEN_RATIO;
+        c = lim_b - ratio;  // right-side section start
+        d = lim_a + ratio;  // left-side section end
 
         if (f(c) < f(d)) {
+            // select left section
             lim_b = d;
         } else {
+            // selct right section
             lim_a = c;
         }
 
         mean = (lim_a + lim_b) / 2.f;
         iters++;
-    } while (std::abs(mean - prev_mean) > EPSILON);
+
+        // continue till the interval width is greater than sqrt(system epsilon)
+    } while (std::abs(lim_a - lim_b) > EPSILON);
 
     std::cout << " (iters: " << iters << ") ";
     return prev_mean;
