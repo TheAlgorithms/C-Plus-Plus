@@ -21,6 +21,8 @@ jobs:
         run: |
           git config --global user.name github-actions
           git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote -v
+          git branch
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Filename Formatter
         run: |
@@ -100,24 +102,18 @@ jobs:
 
             with open("DIRECTORY.md", "w") as out_file:
                 out_file.write(build_directory_md(".") + "\n")
-      - name: Update DIRECTORY.md
+      - name: Push changes
         run: |
           cat DIRECTORY.md
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git add DIRECTORY.md
           git commit -am "updating DIRECTORY.md" ||  true
           git push --force origin HEAD:$GITHUB_REF || true
       - name: Install CPPLINT
         run: |
           python -m pip install cpplint
-          git remote -v
-          git branch
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
-      - name: cpplint_modified_files
+      - name: CPPLINT checks
         shell: python
         run: |
           import os
