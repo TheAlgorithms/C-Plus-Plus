@@ -89,6 +89,7 @@ void heapSort(T *arr, int n) {
     }
 }
 
+/** Test cases to test the program */
 void test() {
     std::cout << "Test 1\n";
     int arr[] = {-10, 78, -1, -6, 7, 4, 94, 5, 99, 0};
@@ -107,6 +108,7 @@ void test() {
     assert(std::is_sorted(arr2, arr2+sz));
     std::cout << "Test 2 passed\n";
 }
+
 /** Main function */
 int main() {
   test();
