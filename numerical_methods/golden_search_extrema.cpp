@@ -11,6 +11,7 @@
 #include <cmath>
 #include <functional>
 #include <iostream>
+#include <limits>
 
 #define EPSILON 1e-7  ///< solution accuracy limit
 #define M_GOLDEN_RATIO \
