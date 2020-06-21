@@ -33,10 +33,10 @@
  * @param sz size of array
  *
  */
-auto printArray = [](int *arr, int sz) {
+void printArray(int *arr, int sz) {
     for (int i = 0; i < sz; i++) std::cout << arr[i] << "  ";
     std::cout << "\n";
-};
+}
 
 /**
  *
@@ -44,8 +44,13 @@ auto printArray = [](int *arr, int sz) {
  * the bottom up by successively sifting downward to establish the
  * heap property.
  *
+ * @param arr array to be sorted
+ * @param n size of array 
+ * @param i node position in Binary Tress or element position in 
+ *          Array to be compared with it's childern
+ *
  */
-void (*heapify)(int *arr, int n, int i) = [](int *arr, int n, int i) {
+void heapify(int *arr, int n, int i) {
     int largest = i;
     int l = 2 * i + 1;
     int r = 2 * i + 2;
@@ -60,7 +65,7 @@ void (*heapify)(int *arr, int n, int i) = [](int *arr, int n, int i) {
         std::swap(arr[i], arr[largest]);
         heapify(arr, n, largest);
     }
-};
+}
 
 /**
  * heapSort lambda function utilizes heapify procedure to sort
@@ -70,14 +75,14 @@ void (*heapify)(int *arr, int n, int i) = [](int *arr, int n, int i) {
  * @param n size of array
  *
  */
-auto heapSort = [](int *arr, int n) {
+void heapSort(int *arr, int n) {
     for (int i = n - 1; i >= 0; i--) heapify(arr, n, i);
 
     for (int i = n - 1; i >= 0; i--) {
         std::swap(arr[0], arr[i]);
         heapify(arr, i, 0);
     }
-};
+}
 
 /** Main function */
 int main() {
