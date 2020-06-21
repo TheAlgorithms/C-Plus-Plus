@@ -2,7 +2,6 @@ var annotated_dup =
 [
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
-    [ "Bit", "df/d27/class_bit.html", "df/d27/class_bit" ],
     [ "Btree", "d9/d90/struct_btree.html", "d9/d90/struct_btree" ],
     [ "cll", "d5/d15/classcll.html", "d5/d15/classcll" ],
     [ "compare", "d1/db3/structcompare.html", "d1/db3/structcompare" ],
@@ -10,6 +9,7 @@ var annotated_dup =
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", "d9/dee/classdouble__linked__list" ],
     [ "Edge", "d7/d77/class_edge.html", "d7/d77/class_edge" ],
     [ "Entry", "dd/d3b/struct_entry.html", "dd/d3b/struct_entry" ],
+    [ "FenwickTree", "dd/d91/class_fenwick_tree.html", "dd/d91/class_fenwick_tree" ],
     [ "graph", "dd/d9b/classgraph.html", "dd/d9b/classgraph" ],
     [ "Graph", "da/d9a/class_graph.html", "da/d9a/class_graph" ],
     [ "Item", "db/d66/struct_item.html", "db/d66/struct_item" ],

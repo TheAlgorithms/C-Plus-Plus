@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['query_2206',['query',['../dd/d1b/structquery.html',1,'']]],
-  ['queue_2207',['queue',['../d2/d36/structqueue.html',1,'queue&lt; Kind &gt;'],['http://en.cppreference.com/w/cpp/container/queue.html',0,'std::queue&lt; T &gt;'],['../d4/da4/class_queue.html',1,'Queue']]],
-  ['queue_5farray_2208',['Queue_Array',['../d0/dd2/class_queue___array.html',1,'']]]
+  ['query_2211',['query',['../dd/d1b/structquery.html',1,'']]],
+  ['queue_2212',['queue',['http://en.cppreference.com/w/cpp/container/queue.html',0,'std::queue&lt; T &gt;'],['../d2/d36/structqueue.html',1,'queue&lt; Kind &gt;'],['../d4/da4/class_queue.html',1,'Queue']]],
+  ['queue_5farray_2213',['Queue_Array',['../d0/dd2/class_queue___array.html',1,'']]]
 ];
