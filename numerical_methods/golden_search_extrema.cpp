@@ -31,6 +31,14 @@ double get_minima(const std::function<double(double)> &f, double lim_a,
     double c, d;
     double prev_mean, mean = std::numeric_limits<double>::infinity();
 
+    // ensure that lim_a < lim_b
+    if (lim_a > lim_b) {
+        std::swap(lim_a, lim_b);
+    } else if (std::abs(lim_a - lim_b) <= EPSILON) {
+        std::cerr << "Search range must be greater than " << EPSILON << "\n";
+        return lim_a;
+    }
+
     do {
         prev_mean = mean;
 
