@@ -48,8 +48,8 @@ void printArray(T *arr, int sz) {
  * heap property.
  *
  * @param arr array to be sorted
- * @param n size of array 
- * @param i node position in Binary Tress or element position in 
+ * @param n size of array
+ * @param i node position in Binary Tress or element position in
  *          Array to be compared with it's childern
  *
  */
