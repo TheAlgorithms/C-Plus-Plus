@@ -28,6 +28,7 @@
  */
 double get_minima(const std::function<double(double)> &f, double lim_a,
                   double lim_b) {
+    uint32_t iters = 0;
     double c, d;
     double prev_mean, mean = std::numeric_limits<double>::infinity();
 
@@ -51,10 +52,12 @@ double get_minima(const std::function<double(double)> &f, double lim_a,
             lim_a = c;
         }
 
-        mean = (lim_a + lim_b) * 0.5f;
+        mean = (lim_a + lim_b) / 2.f;
+        iters++;
     } while (std::abs(mean - prev_mean) > EPSILON);
 
-    return mean;
+    std::cout << " (iters: " << iters << ") ";
+    return prev_mean;
 }
 
 /**
@@ -115,7 +118,7 @@ void test3() {
 
     std::cout << "Test 3.... ";
 
-    double minima = get_minima(func, 0, 12);
+    double minima = get_minima(func, -4, 12);
 
     std::cout << minima << " (" << M_PI << ")...";
 
@@ -126,6 +129,9 @@ void test3() {
 /** Main function */
 int main() {
     std::cout.precision(18);
+
+    std::cout << "Computations performed with machine epsilon: " << EPSILON
+              << "\n";
 
     test1();
     test2();
