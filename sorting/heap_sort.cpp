@@ -1,25 +1,23 @@
 /**
- * \addtogroup sorting Sorting Algorithm
- * @{
  * \file
  * \brief [Heap Sort Algorithm
- * (HEAP SORT)](https://en.wikipedia.org/wiki/Heapsort) implementation
+ * (heap sort)](https://en.wikipedia.org/wiki/Heapsort) implementation
  *
  * \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
  * \details
- *  heapsort is a comparison-based sorting algorithm.
- *  Heapsort can be thought of as an improved selection sort:
- *  like selection sort, heapsort divides its input into a sorted
+ *  Heap-sort is a comparison-based sorting algorithm.
+ *  Heap-sort can be thought of as an improved selection sort:
+ *  like selection sort, heap sort divides its input into a sorted
  *  and an unsorted region, and it iteratively shrinks the unsorted
  *  region by extracting the largest element from it and inserting
  *  it into the sorted region. Unlike selection sort,
- *  heapsort does not waste time with a linear-time scan of the
+ *  heap sort does not waste time with a linear-time scan of the
  *  unsorted region; rather, heap sort maintains the unsorted region
  *  in a heap data structure to more quickly find the largest element
  *  in each step.
  *
- *  Time Complexity - O(nlog(n))
+ *  Time Complexity - \f$O(n \log(n))\f$
  *
  */
 #include <algorithm>
@@ -42,6 +40,9 @@ void printArray(T *arr, int sz) {
 }
 
 /**
+ *
+ * \addtogroup sorting Sorting Algorithm
+ * @{
  *
  * The heapify procedure can be thought of as building a heap from
  * the bottom up by successively sifting downward to establish the
@@ -72,7 +73,7 @@ void heapify(T *arr, int n, int i) {
 }
 
 /**
- * heapSort lambda function utilizes heapify procedure to sort
+ * Utilizes heapify procedure to sort
  * the array
  *
  * @param arr array to be sorted
@@ -89,7 +90,12 @@ void heapSort(T *arr, int n) {
     }
 }
 
-/** Test cases to test the program */
+/**
+ *
+ * @}
+ * Test cases to test the program
+ *
+ */
 void test() {
     std::cout << "Test 1\n";
     int arr[] = {-10, 78, -1, -6, 7, 4, 94, 5, 99, 0};
@@ -115,4 +121,3 @@ int main() {
     test();
     return 0;
 }
-/** @} */
