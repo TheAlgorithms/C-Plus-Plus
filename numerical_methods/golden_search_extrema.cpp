@@ -128,7 +128,7 @@ void test3() {
 
 /** Main function */
 int main() {
-    std::cout.precision(18);
+    std::cout.precision(9);
 
     std::cout << "Computations performed with machine epsilon: " << EPSILON
               << "\n";
