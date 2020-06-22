@@ -264,7 +264,7 @@ class large_number {
         size_t i;
         uint64_t carry = 0, temp;
         for (i = 0; i < this->num_digits(); i++) {
-            temp = (*this)[i] * n;
+            temp = static_cast<uint64_t>((*this)[i]) * n;
             temp += carry;
             if (temp < 10) {
                 carry = 0;
