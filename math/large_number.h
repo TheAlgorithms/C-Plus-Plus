@@ -245,7 +245,7 @@ class large_number {
     /**
      * returns i^th digit as an ASCII character
      **/
-    const char digit_char(size_t i) const {
+    char digit_char(size_t i) const {
         return _digits[num_digits() - i - 1] + '0';
     }
 
