@@ -127,7 +127,7 @@ class large_number {
     /**
      * Get number of digits in the number
      **/
-    const size_t num_digits() const { return _digits.size(); }
+    size_t num_digits() const { return _digits.size(); }
 
     /**
      * operator over load to access the
