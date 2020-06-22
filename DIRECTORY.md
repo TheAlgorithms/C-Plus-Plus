@@ -127,6 +127,7 @@
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
   * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/string_fibonacci.cpp)
+  * [Sum Of Digits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_digits.cpp)
 
 ## Numerical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
