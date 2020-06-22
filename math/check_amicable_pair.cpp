@@ -29,9 +29,8 @@ int sum_of_divisor(int num) {
             // If both divisor are same, add once to 'sum'
             if(div == (num/div)) {
                 sum += div;
-            }
-            // If both divisor are not the same, add both to 'sum'.
-            else {
+            } else {
+                // If both divisor are not the same, add both to 'sum'.
                 sum += (div + (num/div));
             }
         }
