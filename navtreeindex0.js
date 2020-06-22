@@ -206,6 +206,12 @@ var NAVTREEINDEX0 =
 "d4/d7a/shell__sort2_8cpp.html#a895b313cb2671e8f712040460325573e":[8,0,9,5,8],
 "d4/d7a/shell__sort2_8cpp.html#a951127aea9d7e1e53ea9ae0868633246":[8,0,9,5,5],
 "d4/d7a/shell__sort2_8cpp.html#af2c5b92cbfe73f63f6074c61b0a45331":[8,0,9,5,2],
+"d4/d83/sum__of__digits_8cpp.html":[8,0,3,27],
+"d4/d83/sum__of__digits_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,3,27,4],
+"d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,3,27,3],
+"d4/d83/sum__of__digits_8cpp.html#a4619c78b6ad985713024f930f31c4395":[8,0,3,27,1],
+"d4/d83/sum__of__digits_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[8,0,3,27,2],
+"d4/d83/sum__of__digits_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,27,0],
 "d4/d86/large__number_8h.html":[8,0,3,14],
 "d4/d86/large__number_8h_source.html":[8,0,3,14],
 "d4/d9c/primes__up__to__billion_8cpp.html":[8,0,3,22],
@@ -243,11 +249,5 @@ var NAVTREEINDEX0 =
 "d4/def/kohonen__som__topology_8cpp.html#a549d41dcf9444ed7d6df1da3c73e7d16":[8,0,2,1,1],
 "d4/def/kohonen__som__topology_8cpp.html#a6b5e744876fd980a3451cbb385d4e755":[8,0,2,1,12],
 "d4/def/kohonen__som__topology_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[8,0,2,1,11],
-"d4/def/kohonen__som__topology_8cpp.html#ab3081e021270ba21a9fd88646f6a6e26":[8,0,2,1,13],
-"d4/def/kohonen__som__topology_8cpp.html#ac4010fe3a52a74e8b5b1aaadfe38b46f":[8,0,2,1,15],
-"d4/def/kohonen__som__topology_8cpp.html#adc731720947b4bc2ab047c141e7d0299":[8,0,2,1,5],
-"d5/d15/classcll.html":[7,0,3],
-"d5/d15/classcll.html#a04b61bb736525f28b8042c6145e1a265":[7,0,3,4],
-"d5/d15/classcll.html#a1b49e807e33b6f11b2ea151df61a9f2f":[7,0,3,8],
-"d5/d15/classcll.html#a239fa940a9ca1defdecfeeb07cad351b":[7,0,3,1]
+"d4/def/kohonen__som__topology_8cpp.html#ab3081e021270ba21a9fd88646f6a6e26":[8,0,2,1,13]
 };
