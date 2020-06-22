@@ -13,7 +13,7 @@
  *
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
-#define _USE_MATH_DEFINES  //< required for MS Visual C++
+#define _USE_MATH_DEFINES  ///< required for MS Visual C++
 #include <cassert>
 #include <cmath>
 #include <functional>
