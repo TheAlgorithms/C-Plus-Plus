@@ -53,7 +53,7 @@ class large_number {
     /**< initializer from a string */
     explicit large_number(char const *number_str) {
         for (size_t i = strlen(number_str); i > 0; i--) {
-            unsigned char a = number_str[i - 1] - '0';
+            char a = number_str[i - 1] - '0';
             if (a >= 0 && a <= 9)
                 _digits.push_back(a);
         }
