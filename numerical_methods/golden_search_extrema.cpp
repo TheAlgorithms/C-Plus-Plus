@@ -4,6 +4,7 @@
  * [golden section search
  * algorithm](https://en.wikipedia.org/wiki/Golden-section_search).
  *
+ * \see brent_method_extrema.cpp
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #define _USE_MATH_DEFINES  //< required for MS Visual C++
