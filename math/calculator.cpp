@@ -8,17 +8,17 @@
 #include <iostream>
 #include <cstdlib>
 
-/** 
+/**
  * Prototypes
  */
-void requestData(float*);
+void requestData(double*);
 void pause();
 
 /**
  * Main function
  */
 int main() {
-    float global_var;
+    double global_var;
     requestData(&global_var);
 
     pause();
@@ -38,8 +38,8 @@ void pause() {
 /**
  * Function to call the calculator.
  */
-void requestData(float *new_val) {
-    int opt = 0; float number;
+void requestData(double *new_val) {
+    int opt = 0; double number;
     int amount_to_sum = 0, amount_to_subtract = 0, amount_to_multiply = 0,
         amount_to_divide = 0;
 
