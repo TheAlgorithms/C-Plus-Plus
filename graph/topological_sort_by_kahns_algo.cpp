@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 int *topoSortKahn(int N, std::vector<int> adj[]);
 
@@ -13,7 +13,7 @@ int main() {
         return 0;
     int u, v;
 
-    std::vector<int>graph[nodes];
+    std::vector<int> graph[nodes];
     // create graph
     // example
     // 6 6
@@ -31,23 +31,23 @@ int main() {
     }
 }
 
-int* topoSortKahn(int V, std::vector<int> adj[]) {
-    std::vector<bool>vis(V+1, false);
-    std::vector<int>deg(V+1, 0);
+int *topoSortKahn(int V, std::vector<int> adj[]) {
+    std::vector<bool> vis(V + 1, false);
+    std::vector<int> deg(V + 1, 0);
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < adj[i].size(); j++) {
             deg[adj[i][j]]++;
         }
     }
-    std::queue<int>q;
+    std::queue<int> q;
     for (int i = 0; i < V; i++) {
         if (deg[i] == 0) {
             q.push(i);
             vis[i] = true;
         }
     }
-    int *arr = new int[V+1];
-    memset(arr, 0, V+1);
+    int *arr = new int[V + 1];
+    memset(arr, 0, V + 1);
     int count = 0;
     while (!q.empty()) {
         int cur = q.front();
