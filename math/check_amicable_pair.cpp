@@ -12,7 +12,7 @@
  */
 #include <iostream>
 #include <cassert>
-#include <math.h>
+#include <cmath>
 
 /**
  * Function to calculate the sum of all the proper divisor 
@@ -23,15 +23,16 @@
 int sum_of_divisor(int num) {
     // Variable to store the sum of all proper divisors.
     int sum = 0;
-    for(int div = 2; div <= sqrt(num); ++div) {
+    // Using sqrt(num) helps to reduce Time complexity by a factor of sqrt(num)
+    for (int div = 2; div <= sqrt(num); ++div) {
         // Check 'div' is divisor of 'num'.
-        if(num % div == 0) {
+        if (num % div == 0) {
             // If both divisor are same, add once to 'sum'
-            if(div == (num/div)) {
+            if (div == (num / div)) {
                 sum += div;
             } else {
                 // If both divisor are not the same, add both to 'sum'.
-                sum += (div + (num/div));
+                sum += (div + (num / div));
             }
         }
     }
@@ -46,7 +47,7 @@ int sum_of_divisor(int num) {
  * is not amicable.
  */
 bool is_amicable(int x, int y) {
-    if(sum_of_divisor(x) != y) {
+    if (sum_of_divisor(x) != y) {
         return false;
     }
     return (sum_of_divisor(y) == x);
