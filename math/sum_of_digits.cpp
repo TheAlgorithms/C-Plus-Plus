@@ -1,24 +1,24 @@
 /**
  * Copyright 2020 @author iamnambiar
- * 
+ *
  * @file
  * \brief A C++ Program to find the Sum of Digits of input integer.
  */
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 /**
  * Function to find the sum of the digits of an integer.
  * @param num The integer.
  * @return Sum of the digits of the integer.
- * 
+ *
  * \detail
  * First the algorithm check whether the num is negative or positive,
  * if it is negative, then we neglect the negative sign.
- * Next, the algorithm extract the last digit of num by dividing by 10 
+ * Next, the algorithm extract the last digit of num by dividing by 10
  * and extracting the remainder and this is added to the sum.
  * The number is then divided by 10 to remove the last digit.
- * This loop continues until num becomes 0. 
+ * This loop continues until num becomes 0.
  */
 int sum_of_digits(int num) {
     // If num is negative then negative sign is neglected.
@@ -52,7 +52,7 @@ void test2() {
 }
 
 /**
- * Function for testing the sum_of_digits() with 
+ * Function for testing the sum_of_digits() with
  * all the test cases.
  */
 void test() {
@@ -64,7 +64,7 @@ void test() {
 
 /**
  * Main Function
-*/
+ */
 int main() {
     test();
     std::cout << "Success." << std::endl;
