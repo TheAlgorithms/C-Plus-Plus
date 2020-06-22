@@ -3,9 +3,11 @@
  * @{
  * \file
  * \author [Krishna Vedala](https://github.com/kvedala)
+ *
  * \brief [Kohonen self organizing
  * map](https://en.wikipedia.org/wiki/Self-organizing_map) (topological map)
  *
+ * \details
  * This example implements a powerful unsupervised learning algorithm called as
  * a self organizing map. The algorithm creates a connected network of weights
  * that closely follows the given data points. This thus creates a topological
@@ -21,7 +23,7 @@
  * than with GCC on windows
  * \see kohonen_som_trace.cpp
  */
-#define _USE_MATH_DEFINES  // required for MS Visual C++
+#define _USE_MATH_DEFINES  //< required for MS Visual C++
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
