@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <cstdio>
 
 /**
  * Prototypes
@@ -29,9 +30,10 @@ int main() {
  * Similar as system("pause"), but secure.
  */
 void pause() {
-    std::cout << "Press ENTER key to continue . . . ";
+    // Clear the buffer
+    rewind(stdin);
 
-    std::cin.get();
+    std::cout << "Press ENTER key to continue . . . ";
     std::cin.get();
 }
 
