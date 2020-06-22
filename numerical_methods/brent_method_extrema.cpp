@@ -152,7 +152,7 @@ void test1() {
 
     std::cout << minima << "...";
 
-    assert(std::abs(minima - 2) < EPSILON * 2);
+    assert(std::abs(minima - 2) < EPSILON);
     std::cout << "passed\n";
 }
 
@@ -175,7 +175,7 @@ void test2() {
 
     std::cout << minima << " (" << M_E << ")...";
 
-    assert(std::abs(minima - M_E) < EPSILON * 2);
+    assert(std::abs(minima - M_E) < EPSILON);
     std::cout << "passed\n";
 }
 
@@ -196,7 +196,7 @@ void test3() {
 
     std::cout << minima << " (" << M_PI << ")...";
 
-    assert(std::abs(minima - M_PI) < EPSILON * 2);
+    assert(std::abs(minima - M_PI) < EPSILON);
     std::cout << "passed\n";
 }
 
