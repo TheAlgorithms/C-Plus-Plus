@@ -51,7 +51,7 @@ int main() {
         }
     } while (ch != 0);
 
-    delete stack;
+    delete[] stack;
 
     return 0;
 }
