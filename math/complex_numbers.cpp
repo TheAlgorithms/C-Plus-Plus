@@ -36,7 +36,10 @@ class Complex {
      * Complex Constructor which initialises the complex number with no
      * arguments.
      */
-    Complex() { Complex(0.0, 0.0); }
+    Complex() {
+        this->re = 0.0;
+        this.im = 0.0;
+    }
 
     /**
      * Member function (getter) to access the class' re value.
