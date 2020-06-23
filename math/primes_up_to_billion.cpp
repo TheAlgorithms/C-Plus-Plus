@@ -14,9 +14,9 @@ void Sieve(int64_t n) {
     memset(prime, '1', sizeof(prime));  // intitize '1' to every index
     prime[0] = '0';                     // 0 is not prime
     prime[1] = '0';                     // 1 is not prime
-    for (long p = 2; p * p <= n; p++) {
+    for (int64 p = 2; p * p <= n; p++) {
         if (prime[p] == '1') {
-            for (long i = p * p; i <= n; i += p)
+            for (int64 i = p * p; i <= n; i += p)
                 prime[i] = '0';  // set all multiples of p to false
         }
     }
