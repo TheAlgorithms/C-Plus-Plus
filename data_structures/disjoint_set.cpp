@@ -28,8 +28,8 @@ using std::vector;
 
 vector<int> root, rank;
 
-/** 
- * 
+/**
+ *
  * Function to create a set
  * @param n number of element
  *
@@ -57,7 +57,7 @@ int Find(int x) {
     return root[x] = Find(root[x]);
 }
 
-/** 
+/**
  *
  * A utility function to check if x and y are from same set or not
  * @param x element of some set
