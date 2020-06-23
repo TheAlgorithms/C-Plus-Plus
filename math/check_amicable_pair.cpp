@@ -44,8 +44,8 @@ int sum_of_divisor(int num) {
  * @return `false` if the pair is not amicable
  * is not amicable.
  */
-bool is_amicable(int x, int y) {
-    return (sum_of_divisor(x) != y) ? false : true;
+bool are_amicable(int x, int y) {
+    return (sum_of_divisor(x) == y) && (sum_of_divisor(y) == x);
 }
 
 /**
@@ -53,12 +53,12 @@ bool is_amicable(int x, int y) {
  * all the test cases.
  */
 void test() {
-    // is_amicable(220, 284) returns true.
-    assert(is_amicable(220, 284) == true);
-    // is_amicable(6232, 6368) returns true.
-    assert(is_amicable(6368, 6232) == true);
-    // is_amicable(458, 232) returns false.
-    assert(is_amicable(458, 232) == false);
+    // are_amicable(220, 284) returns true.
+    assert(are_amicable(220, 284) == true);
+    // are_amicable(6232, 6368) returns true.
+    assert(are_amicable(6368, 6232) == true);
+    // are_amicable(458, 232) returns false.
+    assert(are_amicable(458, 232) == false);
 }
 
 /**
