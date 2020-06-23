@@ -51,7 +51,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="313,-0.5 313,-19.5 441,-19.5 441,-0.5 313,-0.5"/>
 <text text-anchor="middle" x="377" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">large_number::num_digits</text>
 </a>

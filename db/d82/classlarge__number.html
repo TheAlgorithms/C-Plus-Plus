@@ -125,8 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf804e60309bf016f7954fdcb0a4d103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c436d1a1c5e3795d6177d3815ad615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615">add_digit</a> (unsigned int value)</td></tr>
 <tr class="separator:a60c436d1a1c5e3795d6177d3815ad615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2305a82e7b372617419337b2d2119c7d"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a> () const</td></tr>
-<tr class="separator:a2305a82e7b372617419337b2d2119c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09a05ec4aafb4d9e0b4440d6f0e2a93"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a> () const</td></tr>
+<tr class="separator:ac09a05ec4aafb4d9e0b4440d6f0e2a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace19126cf343a09efc0010735f6e3a8d"><td class="memItemLeft" align="right" valign="top">unsigned char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#ace19126cf343a09efc0010735f6e3a8d">operator[]</a> (size_t n)</td></tr>
 <tr class="separator:ace19126cf343a09efc0010735f6e3a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53e3d0d72a547243a6e995e918ba87c"><td class="memItemLeft" align="right" valign="top"><a id="ab53e3d0d72a547243a6e995e918ba87c"></a>
@@ -146,8 +146,8 @@ const unsigned char &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:ab1af3e0f425cdf7ea2039c9dcfe22f0b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab1af3e0f425cdf7ea2039c9dcfe22f0b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/d82/classlarge__number.html">large_number</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#ab1af3e0f425cdf7ea2039c9dcfe22f0b">operator*=</a> (const T n)</td></tr>
 <tr class="separator:ab1af3e0f425cdf7ea2039c9dcfe22f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af530d90830d385c76973658ff3214f98"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98">digit_char</a> (size_t i) const</td></tr>
-<tr class="separator:af530d90830d385c76973658ff3214f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35a55607cf52c0b0d485f2129bd39ac"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d82/classlarge__number.html#ae35a55607cf52c0b0d485f2129bd39ac">digit_char</a> (size_t i) const</td></tr>
+<tr class="separator:ae35a55607cf52c0b0d485f2129bd39ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -342,8 +342,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="af530d90830d385c76973658ff3214f98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af530d90830d385c76973658ff3214f98">&#9670;&nbsp;</a></span>digit_char()</h2>
+<a id="ae35a55607cf52c0b0d485f2129bd39ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35a55607cf52c0b0d485f2129bd39ac">&#9670;&nbsp;</a></span>digit_char()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +352,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char large_number::digit_char </td>
+          <td class="memname">char large_number::digit_char </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -366,13 +366,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>returns i^th digit as an ASCII character </p>
-<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                          {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57">_digits</a>[<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>() - i - 1] + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                    {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57">_digits</a>[<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>() - i - 1] + <span class="charliteral">&#39;0&#39;</span>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d82/classlarge__number_af530d90830d385c76973658ff3214f98_cgraph.svg" width="558" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d82/classlarge__number_ae35a55607cf52c0b0d485f2129bd39ac_cgraph.svg" width="558" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -412,8 +412,8 @@ template&lt;class T &gt; </div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordtype">size_t</span> i;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        uint64_t carry = 0, temp;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>(); i++) {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            temp = (*this)[i] * n;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>(); i++) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            temp = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>((*this)[i]) * n;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            temp += carry;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">if</span> (temp &lt; 10) {</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                carry = 0;</div>
@@ -438,8 +438,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a2305a82e7b372617419337b2d2119c7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2305a82e7b372617419337b2d2119c7d">&#9670;&nbsp;</a></span>num_digits()</h2>
+<a id="ac09a05ec4aafb4d9e0b4440d6f0e2a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09a05ec4aafb4d9e0b4440d6f0e2a93">&#9670;&nbsp;</a></span>num_digits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,7 +448,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t large_number::num_digits </td>
+          <td class="memname">size_t large_number::num_digits </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -465,7 +465,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d82/classlarge__number_a2305a82e7b372617419337b2d2119c7d_cgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d82/classlarge__number_ac09a05ec4aafb4d9e0b4440d6f0e2a93_cgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -601,15 +601,15 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                             {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// if adding with another large_number</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *b = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *<span class="keyword">&gt;</span>(&amp;n);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> max_L = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>(), b-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> max_L = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>(), b-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>());</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> carry = 0;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">size_t</span> i;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; max_L || carry != 0; i++) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span> (i &lt; b-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>())</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span> (i &lt; b-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>())</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                carry += (*b)[i];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>())</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>())</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                carry += (*this)[i];</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">if</span> (i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">num_digits</a>())</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">if</span> (i &lt; this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>())</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                (*this)[i] = carry % 10;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615">add_digit</a>(carry % 10);</div>
@@ -965,7 +965,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="aclasslarge__number_html_a60c436d1a1c5e3795d6177d3815ad615"><div class="ttname"><a href="../../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615">large_number::add_digit</a></div><div class="ttdeci">void add_digit(unsigned int value)</div><div class="ttdef"><b>Definition:</b> large_number.h:118</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="aclasslarge__number_html"><div class="ttname"><a href="../../db/d82/classlarge__number.html">large_number</a></div><div class="ttdef"><b>Definition:</b> large_number.h:24</div></div>
-<div class="ttc" id="aclasslarge__number_html_a2305a82e7b372617419337b2d2119c7d"><div class="ttname"><a href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d">large_number::num_digits</a></div><div class="ttdeci">const size_t num_digits() const</div><div class="ttdef"><b>Definition:</b> large_number.h:130</div></div>
+<div class="ttc" id="aclasslarge__number_html_ac09a05ec4aafb4d9e0b4440d6f0e2a93"><div class="ttname"><a href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">large_number::num_digits</a></div><div class="ttdeci">size_t num_digits() const</div><div class="ttdef"><b>Definition:</b> large_number.h:130</div></div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="aclasslarge__number_html_a10119a83839e65962621b73df46a5337"><div class="ttname"><a href="../../db/d82/classlarge__number.html#a10119a83839e65962621b73df46a5337">large_number::large_number</a></div><div class="ttdeci">large_number()</div><div class="ttdef"><b>Definition:</b> large_number.h:27</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
@@ -980,7 +980,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d82/classlarge__number.html">large_number</a></li>
-    <li class="footer">Generated on Tue Jun 23 2020 02:49:48 for Algorithms_in_C++ by
+    <li class="footer">Generated on Tue Jun 23 2020 14:32:54 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../db/d82/classlarge__number.html#af530d90830d385c76973658ff3214f98" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../db/d82/classlarge__number.html#ae35a55607cf52c0b0d485f2129bd39ac" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-76.5 74,-95.5 197,-95.5 197,-76.5 74,-76.5"/>
 <text text-anchor="middle" x="135.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">large_number::digit_char</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../db/d82/classlarge__number.html#a2305a82e7b372617419337b2d2119c7d" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="233,-57.5 233,-76.5 361,-76.5 361,-57.5 233,-57.5"/>
 <text text-anchor="middle" x="297" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">large_number::num_digits</text>
 </a>
