@@ -12,7 +12,6 @@
  */
 #include <iostream>
 #include <cassert>
-#include <cmath>
 
 /**
  * Function to calculate the sum of all the proper divisor 
@@ -23,8 +22,8 @@
 int sum_of_divisor(int num) {
     // Variable to store the sum of all proper divisors.
     int sum = 0;
-    // Using sqrt(num) helps to reduce Time complexity by a factor of sqrt(num)
-    for (int div = 2; div <= sqrt(num); ++div) {
+    // Below loop condition helps to reduce Time complexity by a factor of square root of the number.
+    for (int div = 2; div * div <= num; ++div) {
         // Check 'div' is divisor of 'num'.
         if (num % div == 0) {
             // If both divisor are same, add once to 'sum'
@@ -43,7 +42,8 @@ int sum_of_divisor(int num) {
  * Function to check whether the pair is amicable or not.
  * @param x First number.
  * @param y Second number.
- * @return true, if the pair is amicable. false, if the pair
+ * @return `true` if the pair is amicable
+ * @return `false` if the pair is not amicable
  * is not amicable.
  */
 bool is_amicable(int x, int y) {
@@ -54,43 +54,16 @@ bool is_amicable(int x, int y) {
 }
 
 /**
- * Function for testing the is_amicable() function with a
- * first test case of (220, 284) and assert statement.
- * (220, 284) is an amicable pair.
- */
-void test1() {
-    // is_amicable(220, 284) returns true.
-    assert(is_amicable(220, 284) == true);
-}
-
-/**
- * Function for testing the is_amicable() function with a
- * test case of (6232, 6368) and assert statement.
- * (6232, 6368) is an amicable pair.
- */
-void test2() {
-    // is_amicable(6232, 6368) returns true.
-    assert(is_amicable(6368, 6232) == true);
-}
-
-/**
- * Function for testing the is_amicable() function with a
- * test case of (458, 232) and assert statement.
- * (458, 232) is not an amicable pair.
- */
-void test3() {
-    // is_amicable(458, 232) returns false.
-    assert(is_amicable(458, 232) == false);
-}
-
-/**
  * Function for testing the is_amicable() with 
  * all the test cases.
  */
 void test() {
-    test1();
-    test2();
-    test3();
+    // is_amicable(220, 284) returns true.
+    assert(is_amicable(220, 284) == true);
+    // is_amicable(6232, 6368) returns true.
+    assert(is_amicable(6368, 6232) == true);
+    // is_amicable(458, 232) returns false.
+    assert(is_amicable(458, 232) == false);
 }
 
 /**
