@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
@@ -17,10 +16,10 @@ void push(int x) {
 
 void pop() {
     if (top_var == NULL) {
-        cout << "\nUnderflow";
+        std::cout << "\nUnderflow";
     } else {
         node *t = top_var;
-        cout << "\n" << t->val << " deleted";
+        std::cout << "\n" << t->val << " deleted";
         top_var = top_var->next;
         delete t;
     }
@@ -29,7 +28,7 @@ void pop() {
 void show() {
     node *t = top_var;
     while (t != NULL) {
-        cout << t->val << "\n";
+        std::cout << t->val << "\n";
         t = t->next;
     }
 }
@@ -37,14 +36,14 @@ void show() {
 int main() {
     int ch, x;
     do {
-        cout << "\n1. Push";
-        cout << "\n2. Pop";
-        cout << "\n3. Print";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n1. Push";
+        std::cout << "\n2. Pop";
+        std::cout << "\n3. Print";
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         if (ch == 1) {
-            cout << "\nInsert : ";
-            cin >> x;
+            std::cout << "\nInsert : ";
+            std::cin >> x;
             push(x);
         } else if (ch == 2) {
             pop();
