@@ -1,18 +1,19 @@
 /**
- * 
+ *
  * @file
- * \brief A C++ Program to check whether a pair of number is [amicable pair](https://en.wikipedia.org/wiki/Amicable_numbers) or not.
- * 
+ * \brief A C++ Program to check whether a pair of number is [amicable
+ * pair](https://en.wikipedia.org/wiki/Amicable_numbers) or not.
+ *
  * \details
- * Amicable Pair are two positive integers such that sum of the proper divisor 
+ * Amicable Pair are two positive integers such that sum of the proper divisor
  * of each number is equal to the other number.
  * @author iamnambiar
  */
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 /**
- * Function to calculate the sum of all the proper divisor 
+ * Function to calculate the sum of all the proper divisor
  * of an integer.
  * @param num First number.
  * @return Sum of the proper divisor of the number.
@@ -20,7 +21,8 @@
 int sum_of_divisor(int num) {
     // Variable to store the sum of all proper divisors.
     int sum = 0;
-    // Below loop condition helps to reduce Time complexity by a factor of square root of the number.
+    // Below loop condition helps to reduce Time complexity by a factor of
+    // square root of the number.
     for (int div = 2; div * div <= num; ++div) {
         // Check 'div' is divisor of 'num'.
         if (num % div == 0) {
@@ -48,7 +50,7 @@ bool are_amicable(int x, int y) {
 }
 
 /**
- * Function for testing the is_amicable() with 
+ * Function for testing the is_amicable() with
  * all the test cases.
  */
 void test() {
@@ -62,7 +64,7 @@ void test() {
 
 /**
  * Main Function
-*/
+ */
 int main() {
     test();
     std::cout << "Assertion Success." << std::endl;
