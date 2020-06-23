@@ -3,7 +3,8 @@
  *
  * @file
  * Given an unsorted array A of size N of non-negative integers,
- * find a continuous sub-array which adds to a given number S, If not found print -1.
+ * find a continuous sub-array which adds to a given number S, If not found
+print -1.
  *
  * Input:
     3
@@ -18,9 +19,10 @@
     -1
     1 5
 * Explanation :
-    Testcase1: sum of elements from 2nd position to 4th position is 12. (consider 1 based indexing) 
-    Testcase2: no subarray found whose sum equals to the given sum, hence print -1. 
-    Testcase3: sum of elements from 1st position to 5th position is 15. (consider 1 based indexing)
+    Testcase1: sum of elements from 2nd position to 4th position is 12.
+(consider 1 based indexing) Testcase2: no subarray found whose sum equals to the
+given sum, hence print -1. Testcase3: sum of elements from 1st position to 5th
+position is 15. (consider 1 based indexing)
 */
 
 #include <iostream>
