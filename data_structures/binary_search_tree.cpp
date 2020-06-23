@@ -43,7 +43,7 @@ void Insert(node *n, int x) {
             temp->val = x;
             temp->left = NULL;
             temp->right = NULL;
-            n->left = temp;
+            n->right = temp;
         } else {
             Insert(n->right, x);
         }
