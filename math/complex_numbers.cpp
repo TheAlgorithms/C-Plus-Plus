@@ -38,7 +38,7 @@ class Complex {
      */
     Complex() {
         this->re = 0.0;
-        this.im = 0.0;
+        this->im = 0.0;
     }
 
     /**
