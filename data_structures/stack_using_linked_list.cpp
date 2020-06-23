@@ -5,28 +5,28 @@ struct node {
     node *next;
 };
 
-node *top_var;
+node *stack_idx;
 
 void push(int x) {
     node *n = new node;
     n->val = x;
-    n->next = top_var;
-    top_var = n;
+    n->next = stack_idx;
+    stack_idx = n;
 }
 
 void pop() {
-    if (top_var == NULL) {
+    if (stack_idx == NULL) {
         std::cout << "\nUnderflow";
     } else {
-        node *t = top_var;
+        node *t = stack_idx;
         std::cout << "\n" << t->val << " deleted";
-        top_var = top_var->next;
+        stack_idx = stack_idx->next;
         delete t;
     }
 }
 
 void show() {
-    node *t = top_var;
+    node *t = stack_idx;
     while (t != NULL) {
         std::cout << t->val << "\n";
         t = t->next;
