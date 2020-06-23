@@ -1,31 +1,31 @@
 #include <iostream>
 
 int *stack;
-int top_var = 0, stack_size;
+int stack_idx = 0, stack_size;
 
 void push(int x) {
-    if (top_var == stack_size) {
+    if (stack_idx == stack_size) {
         std::cout << "\nOverflow";
     } else {
-        stack[top_var++] = x;
+        stack[stack_idx++] = x;
     }
 }
 
 void pop() {
-    if (top_var == 0) {
+    if (stack_idx == 0) {
         std::cout << "\nUnderflow";
     } else {
-        std::cout << "\n" << stack[--top_var] << " deleted";
+        std::cout << "\n" << stack[--stack_idx] << " deleted";
     }
 }
 
 void show() {
-    for (int i = 0; i < top_var; i++) {
+    for (int i = 0; i < stack_idx; i++) {
         std::cout << stack[i] << "\n";
     }
 }
 
-void topmost() { std::cout << "\nTopmost element: " << stack[top_var - 1]; }
+void topmost() { std::cout << "\nTopmost element: " << stack[stack_idx - 1]; }
 int main() {
     std::cout << "\nEnter stack_size of stack : ";
     std::cin >> stack_size;
