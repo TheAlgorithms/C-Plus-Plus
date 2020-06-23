@@ -180,9 +180,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>, <span class="charliteral">&#39;1&#39;</span>, <span class="keyword">sizeof</span>(<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>));  <span class="comment">// intitize &#39;1&#39; to every index</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[0] = <span class="charliteral">&#39;0&#39;</span>;                     <span class="comment">// 0 is not prime</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[1] = <span class="charliteral">&#39;0&#39;</span>;                     <span class="comment">// 1 is not prime</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> p = 2; p * p &lt;= n; p++) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (int64_t p = 2; p * p &lt;= n; p++) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[p] == <span class="charliteral">&#39;1&#39;</span>) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = p * p; i &lt;= n; i += p)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">for</span> (int64_t i = p * p; i &lt;= n; i += p)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <a class="code" href="../../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95">prime</a>[i] = <span class="charliteral">&#39;0&#39;</span>;  <span class="comment">// set all multiples of p to false</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
@@ -217,7 +217,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../d4/d9c/primes__up__to__billion_8cpp.html">primes_up_to_billion.cpp</a></li>
-    <li class="footer">Generated on Tue Jun 23 2020 16:11:59 for Algorithms_in_C++ by
+    <li class="footer">Generated on Tue Jun 23 2020 18:22:08 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
