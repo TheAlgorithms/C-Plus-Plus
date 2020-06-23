@@ -101,8 +101,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d4/def/kohonen__som__topology_8cpp.html#ac4010fe3a52a74e8b5b1aaadfe38b46f",
-"d8/ddf/sieve__of__eratosthenes_8cpp.html#a02fd73d861ef2e4aabb38c0c9ff82947",
-"dc/dfe/ternary__search_8cpp.html#a23ad617bfce1e7cf4591059c85c1a027"
+"d8/dc8/struct_point.html",
+"dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
