@@ -22,8 +22,8 @@ class MinHeap {
         harr = new int[cap];
     }
 
-    /** to heapify a subtree with the root at given index
-     */
+    /** to heapify a subtree with the root at given index */
+    void MinHeapify(int);
 
     int parent(int i) { return (i - 1) / 2; }
 
