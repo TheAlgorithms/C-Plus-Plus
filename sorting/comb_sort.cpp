@@ -1,49 +1,82 @@
-// Kind of better version of Bubble sort.
-// While Bubble sort is comparering adjacent value, Combsort is using gap larger
-// than 1 Best case: O(n) Worst case: O(n ^ 2)
+/**
+ *
+ * \file
+ * \brief [Comb Sort Algorithm
+ * (Comb Sort)](https://en.wikipedia.org/wiki/Comb_sort)
+ *
+ * \author
+ *
+ * \details
+ * - A better version of bubble sort algorithm
+ * - Bubble sort compares adjacent values whereas comb sort uses gap larger
+ *   than 1
+ * - Best case Time complexity O(n)
+ *   Worst case Time complexity O(n^2)
+ *
+ */
 
 #include <algorithm>
 #include <iostream>
 
-int a[100005];
-int n;
+/**
+ *
+ * Find the next gap by shrinking the current gap by shrink factor of 1.3
+ * @param gap current gap
+ * @return new gap
+ *
+ */
+int FindNextGap(int gap) {
+    gap = (gap * 10) / 13;
 
-int FindNextGap(int x) {
-    x = (x * 10) / 13;
-
-    return std::max(1, x);
+    return std::max(1, gap);
 }
 
-void CombSort(int a[], int l, int r) {
-    // Init gap
-    int gap = n;
+/** Function to sort array
+ *
+ * @param arr array to be sorted
+ * @param l start index of array
+ * @param r end index of array
+ *
+ */
+void CombSort(int *arr, int l, int r) {
+    /**
+     *
+     * initial gap will be maximum and the maximum possible value is
+     * the size of the array that is n and which is equal to r in this
+     * case so to avoid passing an extra parameter n that is the size of
+     * the array we are using r to initialize the initial gap.
+     *
+     */
+    int gap = r;
 
-    // Initialize swapped as true to make sure that loop runs
+    /// Initialize swapped as true to make sure that loop runs
     bool swapped = true;
 
-    // Keep running until gap = 1 or none elements were swapped
+    /// Keep running until gap = 1 or none elements were swapped
     while (gap != 1 || swapped) {
-        // Find next gap
+        /// Find next gap
         gap = FindNextGap(gap);
 
         swapped = false;
 
-        // Compare all elements with current gap
+        /// Compare all elements with current gap
         for (int i = l; i <= r - gap; ++i) {
-            if (a[i] > a[i + gap]) {
-                std::swap(a[i], a[i + gap]);
+            if (arr[i] > arr[i + gap]) {
+                std::swap(arr[i], arr[i + gap]);
                 swapped = true;
             }
         }
     }
 }
 
+/** Main function */
 int main() {
-    std::cin >> n;
-    for (int i = 1; i <= n; ++i) std::cin >> a[i];
-
-    CombSort(a, 1, n);
-
-    for (int i = 1; i <= n; ++i) std::cout << a[i] << ' ';
-    return 0;
+  int n;
+  std::cin >> n;
+  int *arr = new int[n];
+  for (int i = 0; i < n; ++i) std::cin >> arr[i];
+  CombSort(arr, 0, n);
+  for (int i = 0; i < n; ++i) std::cout << arr[i] << ' ';
+  delete [] arr;
+  return 0;
 }
