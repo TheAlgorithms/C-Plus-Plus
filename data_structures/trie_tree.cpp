@@ -74,6 +74,10 @@ bool deleteString(trie* root, std::string str, int index) {
             return true;
         }
     }
+
+    /* should not return here */
+    std::cout << __func__ << ":" << __LINE__ << "Should not reach this line\n";
+    return false;
 }
 
 int main() {
