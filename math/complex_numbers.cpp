@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 @author tjgurwara99
+ * @author tjgurwara99
  * @file
  *
  * A basic implementation of Complex Number field as a class with operators
