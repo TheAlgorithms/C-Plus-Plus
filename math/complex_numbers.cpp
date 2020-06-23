@@ -6,10 +6,11 @@
  * overloaded to accommodate (mathematical) field operations.
  */
 
+#include <cassert>
 #include <cmath>
+#include <complex>
 #include <iostream>
 #include <stdexcept>
-#include <cassert>
 
 /**
  * Class Complex to represent complex numbers as a field.
@@ -27,19 +28,13 @@ class Complex {
      * @param x The real value of the complex number.
      * @param y The imaginary value of the complex number.
      */
-    Complex(double x, double y) {
-        this->re = x;
-        this->im = y;
-    }
+    explicit Complex(double x = 0.f, double y = 0.f) : re(x), im(y) { ; }
 
     /**
-     * Complex Constructor which initialises the complex number with no
-     * arguments.
+     * Copy Constructor
+     * @param other The other number to equate our number to.
      */
-    Complex() {
-        this->re = 0.0;
-        this->im = 0.0;
-    }
+    Complex(const Complex &other) : re(other.real()), im(other.imag()) { ; }
 
     /**
      * Member function (getter) to access the class' re value.
@@ -59,6 +54,26 @@ class Complex {
      */
     double abs() const {
         return std::sqrt(this->re * this->re + this->im * this->im);
+    }
+
+    /**
+     * Member function which gives the argument of our complex number.
+     * @return Argument of our Complex number.
+     */
+    double arg() const {
+        if (this->re > 0) {
+            return std::atan(this->im / this->re);
+        } else if (this->re < 0 && this->im >= 0) {
+            return std::atan(this->im / this->re) + M_PI;
+        } else if (this->re < 0 && this->im < 0) {
+            return std::atan(this->im / this->re) - M_PI;
+        } else if (this->re == 0 && this->im > 0) {
+            return M_PI / 2;
+        } else if (this->re == 0 && this->im < 0) {
+            return -M_PI / 2;
+        } else {
+            throw std::invalid_argument("Undefined Value");
+        }
     }
 
     /**
@@ -111,7 +126,8 @@ class Complex {
      */
     Complex operator/(const Complex &other) {
         Complex result = *this * ~other;
-        double denominator = other.abs() * other.abs();
+        double denominator =
+            other.real() * other.real() + other.imag() * other.imag();
         if (denominator != 0) {
             result = Complex(result.real() / denominator,
                              result.imag() / denominator);
@@ -119,6 +135,16 @@ class Complex {
         } else {
             throw std::invalid_argument("Undefined Value");
         }
+    }
+
+    /**
+     * Operator overload to be able to copy RHS instance of Complex to LHS
+     * instance of Complex
+     */
+    const Complex &operator=(const Complex &other) {
+        this->re = other.real();
+        this->im = other.imag();
+        return *this;
     }
 };
 
@@ -130,10 +156,7 @@ class Complex {
  * @return 'False' Otherwise.
  */
 bool operator==(const Complex &a, const Complex &b) {
-    double del_real = a.real() - b.real();
-    double del_imag = a.imag() - b.imag();
-    return ((del_real <= 1e-15 && del_real >= -1e-15) &&
-            (del_imag <= 1e-15 && del_imag >= -1e-15));
+    return a.real() == b.real() && a.imag() == b.imag();
 }
 
 /**
@@ -143,13 +166,13 @@ bool operator==(const Complex &a, const Complex &b) {
  * @param num The complex number.
  */
 std::ostream &operator<<(std::ostream &os, const Complex &num) {
-    os << num.real();
+    os << "(" << num.real();
     if (num.imag() < 0) {
         os << " - " << -num.imag();
     } else {
         os << " + " << num.imag();
     }
-    os << "i";
+    os << "i)";
     return os;
 }
 
@@ -158,32 +181,49 @@ std::ostream &operator<<(std::ostream &os, const Complex &num) {
  */
 void tests() {
     Complex num1(1, 1), num2(1, 1);
+    std::complex<double> cnum1(1, 1), cnum2(1, 1);
     // Test for addition
     assert(((void)"1 + 1i + 1 + 1i is equal to 2 + 2i but the addition doesn't "
                   "add up \n",
-            (num1 + num2) == Complex(2, 2)));
+            ((num1 + num2).real() == (cnum1 + cnum2).real() &&
+             (num1 + num2).imag() == (cnum1 + cnum2).imag())));
     std::cout << "First test passes." << std::endl;
     // Test for subtraction
     assert(((void)"1 + 1i - 1 - 1i is equal to 0 but the program says "
                   "otherwise. \n",
-            (num1 - num2) == Complex(0, 0)));
+            ((num1 - num2).real() == (cnum1 - cnum2).real() &&
+             (num1 - num2).imag() == (cnum1 - cnum2).imag())));
     std::cout << "Second test passes." << std::endl;
     // Test for multiplication
     assert(((void)"(1 + 1i) * (1 + 1i) is equal to 2i but the program says "
                   "otherwise. \n",
-            (num1 * num2) == Complex(0, 2)));
+            ((num1 * num2).real() == (cnum1 * cnum2).real() &&
+             (num1 * num2).imag() == (cnum1 * cnum2).imag())));
     std::cout << "Third test passes." << std::endl;
     // Test for division
     assert(((void)"(1 + 1i) / (1 + 1i) is equal to 1 but the program says "
                   "otherwise.\n",
-            (num1 / num2) == Complex(1, 0)));
+            ((num1 / num2).real() == (cnum1 / cnum2).real() &&
+             (num1 / num2).imag() == (cnum1 / cnum2).imag())));
     std::cout << "Fourth test passes." << std::endl;
     // Test for conjugates
     assert(((void)"(1 + 1i) has a conjugate which is equal to (1 - 1i) but the "
                   "program says otherwise.\n",
-            ~num1 == Complex(1, -1)));
-    std::cout << "Fifth test passes." << std::endl;
+            ((~num1).real() == std::conj(cnum1).real() &&
+             (~num1).imag() == std::conj(cnum1).imag())));
+    std::cout << "Fifth test passes.\n";
+    // Test for Argument of our complex number
+    assert(((void)"(1 + 1i) has argument PI / 4 but the program differs from "
+                  "the std::complex result.\n",
+            (num1.arg() == std::arg(cnum1))));
+    std::cout << "Sixth test passes.\n";
+    // Test for absolute value of our complex number
+    assert(((void)"(1 + 1i) has absolute value sqrt(2) but the program differs "
+                  "from the std::complex result. \n",
+            (num1.abs() == std::abs(cnum1))));
+    std::cout << "Seventh test passes.\n";
 }
+
 /**
  * Main function
  */
