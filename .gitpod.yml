@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.dockerfile
+
+github:
+  prebuilds:
+    addBadge: true
+    addComment: false
+    addCheck: false
+    master: true
+    pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - ms-vscode.cpptools@0.28.3:mjRj37VUK0nY2ZeDXzxOJA==
+    - twxs.cmake@0.0.17:9s7m9CWOr6i6NZ7CNNF4kw==
+    - ms-vscode.cmake-tools@1.4.0:eP3hU/MFme+CcSL21Klk1w==
+    - mhutchie.git-graph@1.23.0:TM9ShNmBn94aUJMJusCJlg==

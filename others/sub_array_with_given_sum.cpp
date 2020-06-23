@@ -1,10 +1,11 @@
-/** 
+/**
  * Copyright 2020 @author omkarlanghe
- * 
+ *
  * @file
- * Given an unsorted array A of size N of non-negative integers, 
- * find a continuous sub-array which adds to a given number S, If not found print -1.
- * 
+ * Given an unsorted array A of size N of non-negative integers,
+ * find a continuous sub-array which adds to a given number S, If not found
+print -1.
+ *
  * Input:
     3
     5 12
@@ -26,23 +27,25 @@
 #include <iostream>
 
 /**
- * Function to print the index range of subarray equal to the given sum. If no such subarray found, print -1.
+ * Function to print the index range of subarray equal to the given sum. If no
+ * such subarray found, print -1.
  * @param arr array to check
  * @param size size of an array
  * @param original_sum sum to match with the sum of all elements of a sub array.
- * @return void and prints index ranges if sum of sub array equal to the given sum, else prints -1.
+ * @return void and prints index ranges if sum of sub array equal to the given
+ * sum, else prints -1.
  */
 template<typename T>
 void contiguous_sub_array(T *arr, T size, T orignal_sum) {
     int current_sum = 0, match = 0;
 
-    for (T i = 0 ; i < size ; i++) {
+    for (T i = 0; i < size; i++) {
         current_sum = 0;
-        for (T j = i ; j < size ; j++) {
+        for (T j = i; j < size; j++) {
             current_sum += arr[j];
             if (current_sum == orignal_sum) {
                 match = 1;
-                std::cout << (i+1) << " " << (j+1) << " ";
+                std::cout << (i + 1) << " " << (j + 1) << " ";
                 break;
             } else if (current_sum > orignal_sum) {
                 current_sum = 0;
@@ -62,7 +65,7 @@ void contiguous_sub_array(T *arr, T size, T orignal_sum) {
 
 /**
  * Main function
-*/
+ */
 int main() {
     int test_cases, size, orignal_sum;
 
@@ -80,7 +83,7 @@ int main() {
         int *arr = new int[size];
 
         std::cout << "Enter the elements in an array : " << std::endl;
-        for (int i = 0 ; i < size ; i++) {
+        for (int i = 0; i < size; i++) {
             std::cin >> arr[i];
         }
 
