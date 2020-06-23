@@ -5,7 +5,7 @@
  * \brief A C++ Program to check whether a pair of number is [amicable pair](https://en.wikipedia.org/wiki/Amicable_numbers) or not.
  * 
  * \details
- * Amicable Pair are two different numbers such that sum of the proper divisor 
+ * Amicable Pair are two positive integers such that sum of the proper divisor 
  * of each number is equal to the other number.
  *  
  */
