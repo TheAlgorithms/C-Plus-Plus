@@ -13,11 +13,6 @@
 #include <stdexcept>
 
 /**
- * Global constant for pi to work with Windows environment
- */
-const double pi = 3.14159265358979323846;
-
-/**
  * Class Complex to represent complex numbers as a field.
  */
 class Complex {
@@ -30,8 +25,8 @@ class Complex {
     /**
      * Complex Constructor which initialises the complex number which takes two
      * arguments.
-     * @param x The real value of the complex number.
-     * @param y The imaginary value of the complex number.
+     * @param x The real value of the complex number (optional).
+     * @param y The imaginary value of the complex number (optional).
      */
     explicit Complex(double x = 0.f, double y = 0.f) : re(x), im(y) { ; }
 
@@ -63,23 +58,9 @@ class Complex {
 
     /**
      * Member function which gives the argument of our complex number.
-     * @return Argument of our Complex number.
+     * @return Argument of our Complex number in radians.
      */
-    double arg() const {
-        if (this->re > 0) {
-            return std::atan(this->im / this->re);
-        } else if (this->re < 0 && this->im >= 0) {
-            return std::atan(this->im / this->re) + pi;
-        } else if (this->re < 0 && this->im < 0) {
-            return std::atan(this->im / this->re) - pi;
-        } else if (this->re == 0 && this->im > 0) {
-            return pi / 2;
-        } else if (this->re == 0 && this->im < 0) {
-            return -pi / 2;
-        } else {
-            throw std::invalid_argument("Undefined Value");
-        }
-    }
+    double arg() const { return atan2(this->im, this->re); }
 
     /**
      * Operator overload to be able to add two complex numbers.
@@ -182,40 +163,59 @@ std::ostream &operator<<(std::ostream &os, const Complex &num) {
 }
 
 /**
+ * Function to get random numbers to generate our complex numbers for test
+ */
+double get_rand() { return (std::rand() % 100 - 50) / 100.f; }
+
+/**
  * Tests Function
  */
 void tests() {
-    Complex num1(1, 1), num2(1, 1);
-    std::complex<double> cnum1(1, 1), cnum2(1, 1);
+    std::srand(std::time(nullptr));
+    double x1 = get_rand(), y1 = get_rand(), x2 = get_rand(), y2 = get_rand();
+    Complex num1(x1, y1), num2(x2, y2);
+    std::complex<double> cnum1(x1, y1), cnum2(x2, y2);
+    Complex result;
+    std::complex<double> expected;
     // Test for addition
+    result = num1 + num2;
+    expected = cnum1 + cnum2;
     assert(((void)"1 + 1i + 1 + 1i is equal to 2 + 2i but the addition doesn't "
                   "add up \n",
-            ((num1 + num2).real() == (cnum1 + cnum2).real() &&
-             (num1 + num2).imag() == (cnum1 + cnum2).imag())));
+            (result.real() == expected.real() &&
+             result.imag() == expected.imag())));
     std::cout << "First test passes." << std::endl;
     // Test for subtraction
+    result = num1 - num2;
+    expected = cnum1 - cnum2;
     assert(((void)"1 + 1i - 1 - 1i is equal to 0 but the program says "
                   "otherwise. \n",
-            ((num1 - num2).real() == (cnum1 - cnum2).real() &&
-             (num1 - num2).imag() == (cnum1 - cnum2).imag())));
+            (result.real() == expected.real() &&
+             result.imag() == expected.imag())));
     std::cout << "Second test passes." << std::endl;
     // Test for multiplication
+    result = num1 * num2;
+    expected = cnum1 * cnum2;
     assert(((void)"(1 + 1i) * (1 + 1i) is equal to 2i but the program says "
                   "otherwise. \n",
-            ((num1 * num2).real() == (cnum1 * cnum2).real() &&
-             (num1 * num2).imag() == (cnum1 * cnum2).imag())));
+            (result.real() == expected.real() &&
+             result.imag() == expected.imag())));
     std::cout << "Third test passes." << std::endl;
     // Test for division
+    result = num1 / num2;
+    expected = cnum1 / cnum2;
     assert(((void)"(1 + 1i) / (1 + 1i) is equal to 1 but the program says "
                   "otherwise.\n",
-            ((num1 / num2).real() == (cnum1 / cnum2).real() &&
-             (num1 / num2).imag() == (cnum1 / cnum2).imag())));
+            (result.real() == expected.real() &&
+             result.imag() == expected.imag())));
     std::cout << "Fourth test passes." << std::endl;
     // Test for conjugates
+    result = ~num1;
+    expected = std::conj(cnum1);
     assert(((void)"(1 + 1i) has a conjugate which is equal to (1 - 1i) but the "
                   "program says otherwise.\n",
-            ((~num1).real() == std::conj(cnum1).real() &&
-             (~num1).imag() == std::conj(cnum1).imag())));
+            (result.real() == expected.real() &&
+             result.imag() == expected.imag())));
     std::cout << "Fifth test passes.\n";
     // Test for Argument of our complex number
     assert(((void)"(1 + 1i) has argument PI / 4 but the program differs from "
