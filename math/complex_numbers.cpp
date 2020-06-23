@@ -22,7 +22,7 @@ class Complex {
     // The imaginary value of the complex number
     double im;
 
-  public:
+ public:
     /**
      * Complex Constructor which initialises the complex number which takes two
      * arguments.
@@ -39,9 +39,7 @@ class Complex {
      */
     explicit Complex(double x = 0.f, double y = 0.f, bool is_polar = false)
         : re(is_polar ? x * std::cos(y) : x),
-          im(is_polar ? x * std::sin(y) : y) {
-        ;
-    }
+          im(is_polar ? x * std::sin(y) : y) { ; }
 
     /**
      * Copy Constructor
