@@ -33,7 +33,7 @@
  * @return void and prints index ranges if sum of sub array equal to the given sum, else prints -1.
  */
 template<typename T>
-void continues_sub_array(T *arr, T size, T orignal_sum) {
+void contiguous_sub_array(T *arr, T size, T orignal_sum) {
     int current_sum = 0, match = 0;
 
     for (T i = 0 ; i < size ; i++) {
@@ -84,11 +84,11 @@ int main() {
             std::cin >> arr[i];
         }
 
-        continues_sub_array(arr, size, orignal_sum);
+        contiguous_sub_array(arr, size, orignal_sum);
 
         std::cout << std::endl;
         // free memory of an array once used.
-        delete arr;
+        delete[] arr;
     }
-    return (0);
+    return 0;
 }
