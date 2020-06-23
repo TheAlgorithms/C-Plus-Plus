@@ -71,12 +71,12 @@ void CombSort(int *arr, int l, int r) {
 
 /** Main function */
 int main() {
-  int n;
-  std::cin >> n;
-  int *arr = new int[n];
-  for (int i = 0; i < n; ++i) std::cin >> arr[i];
-  CombSort(arr, 0, n);
-  for (int i = 0; i < n; ++i) std::cout << arr[i] << ' ';
-  delete [] arr;
-  return 0;
+    int n;
+    std::cin >> n;
+    int *arr = new int[n];
+    for (int i = 0; i < n; ++i) std::cin >> arr[i];
+    CombSort(arr, 0, n);
+    for (int i = 0; i < n; ++i) std::cout << arr[i] << ' ';
+    delete[] arr;
+    return 0;
 }
