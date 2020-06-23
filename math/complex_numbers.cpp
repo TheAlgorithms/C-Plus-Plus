@@ -39,13 +39,13 @@ class Complex {
      */
     explicit Complex(double x = 0.f, double y = 0.f, bool is_polar = false)
         : re(is_polar ? x * std::cos(y) : x),
-          im(is_polar ? x * std::sin(y) : y) { ; }
+          im(is_polar ? x * std::sin(y) : y) {}
 
     /**
      * Copy Constructor
      * @param other The other number to equate our number to.
      */
-    Complex(const Complex &other) : re(other.real()), im(other.imag()) { ; }
+    Complex(const Complex &other) : re(other.real()), im(other.imag()) {}
 
     /**
      * Member function (getter) to access the class' re value.
