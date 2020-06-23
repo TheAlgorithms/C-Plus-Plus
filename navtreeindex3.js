@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,9,0],
+"dc/dc5/paranthesis__matching_8cpp.html":[8,0,5,8],
 "dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[8,0,5,8,0],
 "dc/dc5/paranthesis__matching_8cpp.html#a6d25c7dfbfeb52c3cb9d1b56ab49b664":[8,0,5,8,3],
 "dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7":[8,0,5,8,5],
@@ -38,8 +40,8 @@ var NAVTREEINDEX3 =
 "dd/d3b/struct_entry.html":[7,0,8],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,8,3],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,8,1],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,8,0],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,8,2],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,8,0],
 "dd/d4f/class_solution.html":[7,0,28],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,28,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,28,0],

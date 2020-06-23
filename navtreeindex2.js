@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"d8/dab/classstatistics_1_1stats__computer2.html#ae1bfd81bd7bbbd4b0d51d7d956e532d2":[7,0,1,1,8],
+"d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555":[7,0,1,1,3],
 "d8/dc8/struct_point.html":[7,0,22],
 "d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7":[7,0,22,3],
 "d8/dc8/struct_point.html#a8c779e11e694b20e0946105a9f5de842":[7,0,22,1],
@@ -63,8 +65,8 @@ var NAVTREEINDEX2 =
 "d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336":[8,0,2,1,7],
 "d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[5,0,7],
 "d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[8,0,2,2,5],
-"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[8,0,2,1,4],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[5,0,5],
+"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[8,0,2,1,4],
 "d9/d66/group__machine__learning.html#gacd517c6f195c75b9dd0f3aad65326f3b":[8,0,2,0,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[5,0,4],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,2,1,2],
@@ -134,8 +136,8 @@ var NAVTREEINDEX2 =
 "da/d9a/class_graph.html#ade809d353b640b9c2773d71d4f57d57d":[7,0,11,5],
 "da/d9a/class_graph.html#ae0d2312723fb56a431e6fba4f264d25c":[7,0,11,24],
 "da/d9a/class_graph.html#ae30edce9b4e7c6347e67edc343f366d8":[7,0,11,7],
-"da/d9a/class_graph.html#ae4c72b8ac4d693c49800a4c7e273654f":[7,0,11,10],
 "da/d9a/class_graph.html#ae4c72b8ac4d693c49800a4c7e273654f":[7,0,11,3],
+"da/d9a/class_graph.html#ae4c72b8ac4d693c49800a4c7e273654f":[7,0,11,10],
 "da/d9a/class_graph.html#ae8959064e179573cc48f8cee99115c07":[7,0,11,20],
 "da/d9a/class_graph.html#ae93ae98711b868af601d424954fe94ac":[7,0,11,39],
 "da/d9a/class_graph.html#af0e8f10f05298718b830d7c01a7cd69c":[7,0,11,35],
@@ -245,9 +247,7 @@ var NAVTREEINDEX2 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ab6171f4db68a5e50ae0f3500a63acd26":[8,0,4,11,6],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,4,11,4],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6":[8,0,4,11,8],
-"dc/d93/trie__modern_8cpp.html":[8,0,0,7],
-"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,0,7,2],
-"dc/db5/text__search_8cpp.html":[8,0,8,9],
-"dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,9,0],
-"dc/dc5/paranthesis__matching_8cpp.html":[8,0,5,8]
+"dc/d93/trie__modern_8cpp.html":[8,0,0,8],
+"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,0,8,2],
+"dc/db5/text__search_8cpp.html":[8,0,8,9]
 };
