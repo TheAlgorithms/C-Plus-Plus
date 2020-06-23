@@ -8,7 +8,6 @@
  * Amicable Pair are two different numbers such that sum of the proper divisor 
  * of each number is equal to the other number.
  *  
- * Wikipedia link for Reference: https://en.wikipedia.org/wiki/Amicable_numbers 
  */
 #include <iostream>
 #include <cassert>
