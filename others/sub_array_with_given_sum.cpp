@@ -18,9 +18,10 @@
     -1
     1 5
 * Explanation :
-    Testcase1: sum of elements from 2nd position to 4th position is 12. (consider 1 based indexing)
-    Testcase2: no subarray found whose sum equals to the given sum, hence print -1.
-    Testcase3: sum of elements from 1st position to 5th position is 15. (consider 1 based indexing)
+    Testcase1: sum of elements from 2nd position to 4th position is 12.
+(consider 1 based indexing) Testcase2: no subarray found whose sum equals to the
+given sum, hence print -1. Testcase3: sum of elements from 1st position to 5th
+position is 15. (consider 1 based indexing)
 */
 
 #include <iostream>
@@ -34,7 +35,7 @@
  * @return void and prints index ranges if sum of sub array equal to the given
  * sum, else prints -1.
  */
-template<typename T>
+template <typename T>
 void contiguous_sub_array(T *arr, T size, T orignal_sum) {
     int current_sum = 0, match = 0;
 
