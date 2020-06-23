@@ -1,6 +1,7 @@
 var class_min_heap =
 [
-    [ "MinHeap", "d2/d05/class_min_heap.html#ad89ca80a217655a735d266618197965e", null ],
+    [ "MinHeap", "d2/d05/class_min_heap.html#a078cb888e642bb1f95dd0e03f0a35820", null ],
+    [ "~MinHeap", "d2/d05/class_min_heap.html#a2759e717e45edcd6ca7096ff03d65dbd", null ],
     [ "decreaseKey", "d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5", null ],
     [ "deleteKey", "d2/d05/class_min_heap.html#a37ac126eabb0c3ce04047172abccca29", null ],
     [ "extractMin", "d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980", null ],

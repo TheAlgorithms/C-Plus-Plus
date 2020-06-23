@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('d2/d05/class_min_heap.html','../../');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad89ca80a217655a735d266618197965e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#ad89ca80a217655a735d266618197965e">MinHeap</a> (int <a class="el" href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a>)</td></tr>
-<tr class="separator:ad89ca80a217655a735d266618197965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078cb888e642bb1f95dd0e03f0a35820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#a078cb888e642bb1f95dd0e03f0a35820">MinHeap</a> (int cap)</td></tr>
+<tr class="separator:a078cb888e642bb1f95dd0e03f0a35820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef438c1056492cb62c4a4d9035b5cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a> (int)</td></tr>
 <tr class="separator:aaef438c1056492cb62c4a4d9035b5cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e893f9deb4be4cf4f9990e736483e81"><td class="memItemLeft" align="right" valign="top"><a id="a0e893f9deb4be4cf4f9990e736483e81"></a>
@@ -141,11 +141,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for Min Heap </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad89ca80a217655a735d266618197965e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89ca80a217655a735d266618197965e">&#9670;&nbsp;</a></span>MinHeap()</h2>
+<a id="a078cb888e642bb1f95dd0e03f0a35820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078cb888e642bb1f95dd0e03f0a35820">&#9670;&nbsp;</a></span>MinHeap()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">MinHeap::MinHeap </td>
@@ -155,19 +158,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor: Builds a heap from a given array a[] of given size </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">capacity</td><td>initial heap capacity</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capacity</td><td>initial heap capacity </td></tr>
   </table>
   </dd>
 </dl>
-<p>Constructor: Builds a heap from a given array a[] of given size </p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a> = cap;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[cap];</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                              {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a> = cap;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[cap];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,13 +206,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 </div><div class="memdoc">
 <p>Decreases key value of key at index i to new_val</p>
 <p>Decreases value of key at index 'i' to new_val. It is assumed that new_val is smaller than harr[i]. </p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                            {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = new_val;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        i = parent(i);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                            {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = new_val;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        i = parent(i);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -232,14 +239,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Deletes a key stored at index i</p>
 <p>This function deletes key at index i. It first reduced value to minus infinite, then calls <a class="el" href="../../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980">extractMin()</a> </p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                             {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5">decreaseKey</a>(i, INT_MIN);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980">extractMin</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                             {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5">decreaseKey</a>(i, INT_MIN);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980">extractMin</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_a37ac126eabb0c3ce04047172abccca29_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_a37ac126eabb0c3ce04047172abccca29_cgraph.svg" width="484" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -260,29 +267,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>to extract the root which is the minimum element </p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &lt;= 0)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> INT_MAX;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> == 1) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>--;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0];</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Store the minimum value, and remove it from heap</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> root = <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0] = <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>--;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a>(0);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> root;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_a4014f1edaed0bd7db0c0d2ca53228980_cgraph.svg" width="504" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &lt;= 0)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> INT_MAX;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> == 1) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>--;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Store the minimum value, and remove it from heap</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> root = <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0] = <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>--;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a>(0);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> root;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a336ac71f0d857269fe9a98058a3cd130"></a>
@@ -308,7 +309,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Returns the minimum key (key at root) from min heap </p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0]; }</div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[0]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,23 +329,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Inserts a new key 'k' </p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                             {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> == <a class="code" href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a>) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOverflow: Could not insertKey\n&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// First insert the new key at the end</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>++;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> i = <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Fix the min heap property if it is violated</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        i = parent(i);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                             {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> == <a class="code" href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">capacity</a>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOverflow: Could not insertKey\n&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// First insert the new key at the end</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>++;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> i = <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Fix the min heap property if it is violated</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)]);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        i = parent(i);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -378,7 +379,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>to get index of left child of node at index i </p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{ <span class="keywordflow">return</span> (2 * i + 1); }</div>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ <span class="keywordflow">return</span> (2 * i + 1); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,19 +400,19 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>to heapify a subtree with the root at given index</p>
 <p>A recursive method to heapify a subtree with the root at given index This method assumes that the subtrees are already heapified </p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                              {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> l = <a class="code" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> r = <a class="code" href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">right</a>(i);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> smallest = i;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (l &lt; <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[l] &lt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i])</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        smallest = l;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (r &lt; <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[r] &lt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest])</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        smallest = r;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (smallest != i) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest]);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a>(smallest);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                              {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> l = <a class="code" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> r = <a class="code" href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">right</a>(i);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> smallest = i;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (l &lt; <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[l] &lt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i])</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        smallest = l;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (r &lt; <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[r] &lt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest])</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        smallest = r;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (smallest != i) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(<a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i], <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest]);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeapify</a>(smallest);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -445,7 +446,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>to get index of right child of node at index i </p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ <span class="keywordflow">return</span> (2 * i + 2); }</div>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <span class="keywordflow">return</span> (2 * i + 2); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -455,21 +456,21 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_min_heap_html_ae4d358bf063bb196a1945b3fb99b4913"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">MinHeap::heap_size</a></div><div class="ttdeci">int heap_size</div><div class="ttdoc">Current number of elements in min heap.</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:13</div></div>
-<div class="ttc" id="aclass_min_heap_html_aa7f726cc6327955d22871592227432f5"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5">MinHeap::decreaseKey</a></div><div class="ttdeci">void decreaseKey(int i, int new_val)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:78</div></div>
+<div class="ttc" id="aclass_min_heap_html_aa7f726cc6327955d22871592227432f5"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5">MinHeap::decreaseKey</a></div><div class="ttdeci">void decreaseKey(int i, int new_val)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:76</div></div>
 <div class="ttc" id="aclass_min_heap_html_a88b4aa3e66392a3eabbf2517a9a79a02"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">MinHeap::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdoc">maximum possible size of min heap</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:12</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
 <div class="ttc" id="aclass_min_heap_html_a34a93a87967308eb516328c0aca3c48e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">MinHeap::harr</a></div><div class="ttdeci">int * harr</div><div class="ttdoc">pointer to array of elements in heap</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:11</div></div>
-<div class="ttc" id="aclass_min_heap_html_aaef438c1056492cb62c4a4d9035b5cad"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeap::MinHeapify</a></div><div class="ttdeci">void MinHeapify(int)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:115</div></div>
-<div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:28</div></div>
+<div class="ttc" id="aclass_min_heap_html_aaef438c1056492cb62c4a4d9035b5cad"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeap::MinHeapify</a></div><div class="ttdeci">void MinHeapify(int)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:113</div></div>
+<div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:31</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
-<div class="ttc" id="aclass_min_heap_html_a4014f1edaed0bd7db0c0d2ca53228980"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980">MinHeap::extractMin</a></div><div class="ttdeci">int extractMin()</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:87</div></div>
-<div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:31</div></div>
+<div class="ttc" id="aclass_min_heap_html_a4014f1edaed0bd7db0c0d2ca53228980"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a4014f1edaed0bd7db0c0d2ca53228980">MinHeap::extractMin</a></div><div class="ttdeci">int extractMin()</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:85</div></div>
+<div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:34</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d05/class_min_heap.html">MinHeap</a></li>
-    <li class="footer">Generated on Tue Jun 23 2020 20:49:32 for Algorithms_in_C++ by
+    <li class="footer">Generated on Tue Jun 23 2020 21:04:33 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
