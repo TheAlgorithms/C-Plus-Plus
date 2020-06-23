@@ -135,6 +135,7 @@
   * [Durand Kerner Roots](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/durand_kerner_roots.cpp)
   * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/false_position.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
+  * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
   * [Ode Forward Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_forward_euler.cpp)
