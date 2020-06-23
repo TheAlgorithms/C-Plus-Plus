@@ -13,6 +13,11 @@
 #include <stdexcept>
 
 /**
+ * Global constant for pi to work with Windows environment
+ */
+const double pi = 3.14159265358979323846;
+
+/**
  * Class Complex to represent complex numbers as a field.
  */
 class Complex {
@@ -64,13 +69,13 @@ class Complex {
         if (this->re > 0) {
             return std::atan(this->im / this->re);
         } else if (this->re < 0 && this->im >= 0) {
-            return std::atan(this->im / this->re) + M_PI;
+            return std::atan(this->im / this->re) + pi;
         } else if (this->re < 0 && this->im < 0) {
-            return std::atan(this->im / this->re) - M_PI;
+            return std::atan(this->im / this->re) - pi;
         } else if (this->re == 0 && this->im > 0) {
-            return M_PI / 2;
+            return pi / 2;
         } else if (this->re == 0 && this->im < 0) {
-            return -M_PI / 2;
+            return -pi / 2;
         } else {
             throw std::invalid_argument("Undefined Value");
         }
