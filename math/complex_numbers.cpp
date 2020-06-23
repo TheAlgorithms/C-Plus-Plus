@@ -11,6 +11,7 @@
 #include <complex>
 #include <iostream>
 #include <stdexcept>
+#include <ctime>
 
 /**
  * Class Complex to represent complex numbers as a field.
