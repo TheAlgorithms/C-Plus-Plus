@@ -37,9 +37,16 @@ class Complex {
      * to use initialiser which initialises real and imaginary values using the
      * first two parameters (optional).
      */
-    explicit Complex(double x = 0.f, double y = 0.f, bool is_polar = false)
-        : re(is_polar ? x * std::cos(y) : x),
-          im(is_polar ? x * std::sin(y) : y) {}
+    explicit Complex(double x = 0.f, double y = 0.f, bool is_polar = false) {
+        if (!is_polar) {
+            re = x;
+            im = y;
+            return;
+        }
+
+        re = x * std::cos(y);
+        im = x * std::sin(y);
+    }
 
     /**
      * Copy Constructor
