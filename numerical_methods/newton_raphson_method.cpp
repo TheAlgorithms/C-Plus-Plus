@@ -17,17 +17,24 @@
 #include <iostream>
 #include <limits>
 
-#define EPSILON \
-    1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
-#define MAX_ITERATIONS 50000  ///< Maximum number of iterations to check
+#define EPSILON 1e-10             ///< system accuracy limit
+#define MAX_ITERATIONS INT16_MAX  ///< Maximum number of iterations to check
 
-/** define \f$f(x)\f$ to find root for
+/** define \f$f(x)\f$ to find root for.
+ * Currently defined as:
+ * \f[
+ * f(x) = x^3 - 4x - 9
+ * \f]
  */
 static double eq(double i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
 
 /** define the derivative function \f$f'(x)\f$
+ * For the current problem, it is:
+ * \f[
+ * f'(x) = 3x^2 - 4
+ * \f]
  */
 static double eq_der(double i) {
     return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
