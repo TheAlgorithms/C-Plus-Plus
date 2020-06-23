@@ -2,6 +2,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
 [
     [ "binary_exponent.cpp", "de/dcf/binary__exponent_8cpp.html", "de/dcf/binary__exponent_8cpp" ],
     [ "check_prime.cpp", "db/d93/check__prime_8cpp.html", "db/d93/check__prime_8cpp" ],
+    [ "complex_numbers.cpp", "d5/d67/complex__numbers_8cpp.html", "d5/d67/complex__numbers_8cpp" ],
     [ "double_factorial.cpp", "d7/d89/double__factorial_8cpp.html", "d7/d89/double__factorial_8cpp" ],
     [ "eulers_totient_function.cpp", "da/d23/eulers__totient__function_8cpp.html", "da/d23/eulers__totient__function_8cpp" ],
     [ "extended_euclid_algorithm.cpp", "d9/d5d/extended__euclid__algorithm_8cpp.html", "d9/d5d/extended__euclid__algorithm_8cpp" ],
