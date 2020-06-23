@@ -42,7 +42,6 @@ int sum_of_divisor(int num) {
  * @param y Second number.
  * @return `true` if the pair is amicable
  * @return `false` if the pair is not amicable
- * is not amicable.
  */
 bool are_amicable(int x, int y) {
     return (sum_of_divisor(x) == y) && (sum_of_divisor(y) == x);
