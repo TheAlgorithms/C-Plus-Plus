@@ -19,15 +19,15 @@
 #include <cstdio>
 #include <iostream>
 
-/** maximum number that can be computed - The result after 93 cannot be stored
- * in a `uint64_t` data type. */
-const uint64_t MAX = 93;
-
-/** Array of computed fibonacci numbers */
-uint64_t numbers[MAX] = {0};
-
 /** Algorithm */
 uint64_t fib(uint64_t n) {
+    // maximum number that can be computed - The result after 93 cannot be stored
+    // in a `uint64_t` data type.
+    static const uint64_t MAX = 93;
+
+    // Array of computed fibonacci numbers */
+    static uint64_t numbers[MAX] = {0};
+    
     if (n == 0)
         return 0;
     if (n == 1 || n == 2)
