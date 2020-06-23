@@ -2,11 +2,12 @@
  * Copyright 2020 @author tjgurwara99
  * @file
  *
- * A basic implementation of Complex Number field as a class with operators overloaded to accommodate (mathematical) field operations.
+ * A basic implementation of Complex Number field as a class with operators
+ * overloaded to accommodate (mathematical) field operations.
  */
 
-#include <iostream>
 #include <cmath>
+#include <iostream>
 #include <stdexcept>
 
 /**
@@ -18,9 +19,10 @@ class Complex {
     // The imaginary value of the complex number
     double im;
 
- public:
+  public:
     /**
-     * Complex Constructor which initialises the complex number which takes two arguments.
+     * Complex Constructor which initialises the complex number which takes two
+     * arguments.
      * @param x The real value of the complex number.
      * @param y The imaginary value of the complex number.
      */
@@ -28,34 +30,31 @@ class Complex {
         this->re = x;
         this->im = y;
     }
-    
+
     /**
-     * Complex Constructor which initialises the complex number with no arguments.
+     * Complex Constructor which initialises the complex number with no
+     * arguments.
      */
-    Complex() {
-        Complex(0.0,0.0);
-    }
+    Complex() { Complex(0.0, 0.0); }
 
     /**
      * Member function (getter) to access the class' re value.
      */
-    double real() const {
-        return this->re;
-    }
+    double real() const { return this->re; }
 
     /**
      * Member function (getter) to access the class' im value.
      */
-    double imag() const {
-        return this->im;
-    }
+    double imag() const { return this->im; }
 
     /**
-     * Member function to which gives the absolute value (modulus) of our complex number
-     * @return \f$ \sqrt{z \dot \bar{z} \f$ where \f$ z \f$ is our complex number.
+     * Member function to which gives the absolute value (modulus) of our
+     * complex number
+     * @return \f$ \sqrt{z \dot \bar{z}} \f$ where \f$ z \f$ is our complex
+     * number.
      */
     double abs() const {
-        return std::sqrt(this->re*this->re + this->im*this->im);
+        return std::sqrt(this->re * this->re + this->im * this->im);
     }
 
     /**
@@ -63,7 +62,7 @@ class Complex {
      * @param other The other number that is added to the current number.
      * @return result current number plus other number
      */
-    Complex operator+(const Complex& other) {
+    Complex operator+(const Complex &other) {
         Complex result(this->re + other.re, this->im + other.im);
         return result;
     }
@@ -73,7 +72,7 @@ class Complex {
      * @param other The other number being subtracted from the current number.
      * @return result current number subtract other number
      */
-    Complex operator-(const Complex& other) {
+    Complex operator-(const Complex &other) {
         Complex result(this->re - other.re, this->im - other.im);
         return result;
     }
@@ -83,15 +82,16 @@ class Complex {
      * @param other The other number to multiply the current number to.
      * @return result current number times other number.
      */
-    Complex operator*(const Complex& other) {
+    Complex operator*(const Complex &other) {
         Complex result(this->re * other.re - this->im * other.im,
                        this->re * other.im + this->im * other.re);
         return result;
     }
 
     /**
-     * Operator overload of the BITWISE NOT which gives us the conjugate of our complex number.
-     * NOTE: This is overloading the BITWISE operator but its not a BITWISE operation in this definition.
+     * Operator overload of the BITWISE NOT which gives us the conjugate of our
+     * complex number. NOTE: This is overloading the BITWISE operator but its
+     * not a BITWISE operation in this definition.
      * @return result The conjugate of our complex number.
      */
     Complex operator~() const {
@@ -100,18 +100,19 @@ class Complex {
     }
 
     /**
-     * Operator overload to be able to divide two complex numbers. This function would throw an exception if the other number is zero.
+     * Operator overload to be able to divide two complex numbers. This function
+     * would throw an exception if the other number is zero.
      * @param other The other number we divide our number by.
      * @return result Current number divided by other number.
      */
-    Complex operator/(const Complex& other) {
+    Complex operator/(const Complex &other) {
         Complex result = *this * ~other;
         double denominator = other.abs() * other.abs();
         if (denominator != 0) {
-            result = Complex(result.real() / denominator, result.imag() / denominator);
+            result = Complex(result.real() / denominator,
+                             result.imag() / denominator);
             return result;
-        }
-        else {
+        } else {
             throw std::invalid_argument("Undefined Value");
         }
     }
@@ -124,23 +125,24 @@ class Complex {
  * @return 'True' If real and imaginary parts of a and b are same
  * @return 'False' Otherwise.
  */
-bool operator==(const Complex& a, const Complex& b) {
+bool operator==(const Complex &a, const Complex &b) {
     double del_real = a.real() - b.real();
     double del_imag = a.imag() - b.imag();
-    return ((del_real <= 1e-15 && del_real >= - 1e-15 ) && (del_imag <= 1e-15 && del_imag >= - 1e-15));
+    return ((del_real <= 1e-15 && del_real >= -1e-15) &&
+            (del_imag <= 1e-15 && del_imag >= -1e-15));
 }
 
 /**
- * Overloaded insersion operator to accommodate the printing of our complex number in their standard form.
+ * Overloaded insersion operator to accommodate the printing of our complex
+ * number in their standard form.
  * @param os The console stream
  * @param num The complex number.
  */
-std::ostream& operator<<(std::ostream& os, const Complex& num) {
+std::ostream &operator<<(std::ostream &os, const Complex &num) {
     os << num.real();
     if (num.imag() < 0) {
         os << " - " << -num.imag();
-    }
-    else {
+    } else {
         os << " + " << num.imag();
     }
     os << "i";
@@ -151,28 +153,32 @@ std::ostream& operator<<(std::ostream& os, const Complex& num) {
  * Tests Function
  */
 void tests() {
-    Complex num1(1,1), num2(1,1);
+    Complex num1(1, 1), num2(1, 1);
     // Test for addition
-    assert(((void)"1 + 1i + 1 + 1i is equal to 2 + 2i but the addition doesn't add up \n",
-            (num1 + num2) == Complex(2,2)));
+    assert(((void)"1 + 1i + 1 + 1i is equal to 2 + 2i but the addition doesn't "
+                  "add up \n",
+            (num1 + num2) == Complex(2, 2)));
     std::cout << "First test passes." << std::endl;
     // Test for subtraction
-    assert(((void)"1 + 1i - 1 - 1i is equal to 0 but the program says otherwise. \n",
-            (num1 - num2) == Complex(0,0)));
+    assert(((void)"1 + 1i - 1 - 1i is equal to 0 but the program says "
+                  "otherwise. \n",
+            (num1 - num2) == Complex(0, 0)));
     std::cout << "Second test passes." << std::endl;
     // Test for multiplication
-    assert(((void)"(1 + 1i) * (1 + 1i) is equal to 2i but the program says otherwise. \n",
-            (num1 * num2) == Complex(0,2)));
+    assert(((void)"(1 + 1i) * (1 + 1i) is equal to 2i but the program says "
+                  "otherwise. \n",
+            (num1 * num2) == Complex(0, 2)));
     std::cout << "Third test passes." << std::endl;
     // Test for division
-    assert(((void)"(1 + 1i) / (1 + 1i) is equal to 1 but the program says otherwise.\n",
-            (num1 / num2) == Complex(1,0)));
+    assert(((void)"(1 + 1i) / (1 + 1i) is equal to 1 but the program says "
+                  "otherwise.\n",
+            (num1 / num2) == Complex(1, 0)));
     std::cout << "Fourth test passes." << std::endl;
     // Test for conjugates
-    assert(((void)"(1 + 1i) has a conjugate which is equal to (1 - 1i) but the program says otherwise.\n",
-            ~num1 == Complex(1,-1)));
+    assert(((void)"(1 + 1i) has a conjugate which is equal to (1 - 1i) but the "
+                  "program says otherwise.\n",
+            ~num1 == Complex(1, -1)));
     std::cout << "Fifth test passes." << std::endl;
-
 }
 /**
  * Main function
