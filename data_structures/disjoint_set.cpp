@@ -4,7 +4,7 @@
  * \brief [Disjoint Sets Data Structure
  * (Disjoint Sets)](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
  *
- * \author
+ * \author [leoyang429](https://github.com/leoyang429)
  *
  * \details
  * A disjoint set data structure (also called union find or merge find set)
