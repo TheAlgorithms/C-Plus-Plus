@@ -133,27 +133,27 @@ int main() {
         std::cout << "\n\nEnter Your Choice : ";
         std::cin >> choice;
         switch (choice) {
-            case 1:
-                std::cout << "\nEnter the element to be inserted : ";
-                std::cin >> x;
-                L.insert(x);
-                break;
-            case 2:
-                std::cout << "\nEnter the element to be removed : ";
-                std::cin >> x;
-                L.Remove(x);
-                break;
-            case 3:
-                std::cout << "\nEnter the element to be searched : ";
-                std::cin >> x;
-                L.Search(x);
-                break;
-            case 4:
-                L.Sort();
-                break;
-            case 5:
-                L.Show();
-                break;
+        case 1:
+            std::cout << "\nEnter the element to be inserted : ";
+            std::cin >> x;
+            L.insert(x);
+            break;
+        case 2:
+            std::cout << "\nEnter the element to be removed : ";
+            std::cin >> x;
+            L.Remove(x);
+            break;
+        case 3:
+            std::cout << "\nEnter the element to be searched : ";
+            std::cin >> x;
+            L.Search(x);
+            break;
+        case 4:
+            L.Sort();
+            break;
+        case 5:
+            L.Show();
+            break;
         }
     } while (choice != 0);
     return 0;
