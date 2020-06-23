@@ -101,6 +101,7 @@
 
 ## Math
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
+  * [Check Amicable Pair](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_amicable_pair.cpp)
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_prime.cpp)
   * [Complex Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/complex_numbers.cpp)
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/double_factorial.cpp)
