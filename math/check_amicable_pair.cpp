@@ -45,10 +45,7 @@ int sum_of_divisor(int num) {
  * is not amicable.
  */
 bool is_amicable(int x, int y) {
-    if (sum_of_divisor(x) != y) {
-        return false;
-    }
-    return (sum_of_divisor(y) == x);
+    return (sum_of_divisor(x) != y) ? false : true;
 }
 
 /**
