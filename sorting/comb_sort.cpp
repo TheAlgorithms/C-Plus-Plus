@@ -14,7 +14,7 @@ int FindNextGap(int x) {
     return std::max(1, x);
 }
 
-void CombSort(int b[], int l, int r) {
+void CombSort(int a[], int l, int r) {
     // Init gap
     int gap = n;
 
@@ -30,8 +30,8 @@ void CombSort(int b[], int l, int r) {
 
         // Compare all elements with current gap
         for (int i = l; i <= r - gap; ++i) {
-            if (b[i] > b[i + gap]) {
-                std::swap(b[i], b[i + gap]);
+            if (a[i] > a[i + gap]) {
+                std::swap(a[i], a[i + gap]);
                 swapped = true;
             }
         }
