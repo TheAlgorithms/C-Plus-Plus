@@ -3,8 +3,7 @@
  *
  * @file
  * Given an unsorted array A of size N of non-negative integers,
- * find a continuous sub-array which adds to a given number S, If not found
-print -1.
+ * find a continuous sub-array which adds to a given number S, If not found print -1.
  *
  * Input:
     3
