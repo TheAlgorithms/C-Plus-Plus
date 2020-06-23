@@ -6,28 +6,28 @@ struct node {
     node *next;
 };
 
-node *top;
+node *top_var;
 
 void push(int x) {
     node *n = new node;
     n->val = x;
-    n->next = top;
-    top = n;
+    n->next = top_var;
+    top_var = n;
 }
 
 void pop() {
-    if (top == NULL) {
+    if (top_var == NULL) {
         cout << "\nUnderflow";
     } else {
-        node *t = top;
+        node *t = top_var;
         cout << "\n" << t->val << " deleted";
-        top = top->next;
+        top_var = top_var->next;
         delete t;
     }
 }
 
 void show() {
-    node *t = top;
+    node *t = top_var;
     while (t != NULL) {
         cout << t->val << "\n";
         t = t->next;
