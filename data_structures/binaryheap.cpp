@@ -13,10 +13,14 @@ class MinHeap {
     int heap_size;  ///< Current number of elements in min heap
 
  public:
-    /** Constructor
+    /** Constructor: Builds a heap from a given array a[] of given size 
      * \param[in] capacity initial heap capacity
      */
-    MinHeap(int capacity);
+    explicit MinHeap(int cap) {
+      heap_size = 0;
+      capacity = cap;
+      harr = new int[cap];
+    }
 
     /** to heapify a subtree with the root at given index
      */
@@ -44,14 +48,12 @@ class MinHeap {
 
     /** Inserts a new key 'k' */
     void insertKey(int k);
+
+    ~MinHeap() {
+      delete [] harr;
+    }
 };
 
-/** Constructor: Builds a heap from a given array a[] of given size */
-MinHeap::MinHeap(int cap) {
-    heap_size = 0;
-    capacity = cap;
-    harr = new int[cap];
-}
 
 // Inserts a new key 'k'
 void MinHeap::insertKey(int k) {
