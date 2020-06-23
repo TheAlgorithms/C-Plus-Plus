@@ -2,7 +2,7 @@
  * Copyright 2020 @author iamnambiar
  * 
  * @file
- * A C++ Program to check whether a pair of number is amicable pair or not.
+ * \brief A C++ Program to check whether a pair of number is [amicable pair](https://en.wikipedia.org/wiki/Amicable_numbers) or not.
  * 
  * \brief
  * Amicable Pair are two different numbers such that sum of the proper divisor 
