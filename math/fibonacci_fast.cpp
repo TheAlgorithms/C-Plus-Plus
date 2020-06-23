@@ -28,22 +28,20 @@
 
 /** Algorithm */
 uint64_t fib(uint64_t n) {
-    // Array of computed fibonacci numbers */
-    static uint64_t numbers[MAX] = {0};
+    static uint64_t f1 = 1, f2 = 1;  // using static keyword will retain the values of f1 and f2 for the next function call.
     
-    if (n == 0)
+    if (n <= 2)
+        return f2;
+    if (n >= 93) {
+        std::err << "Cannot compute for n>93 due to limit of 64-bit integers\n";
         return 0;
-    if (n == 1 || n == 2)
-        return (numbers[n] = 1);
+    }
 
-    if (numbers[n])
-        return numbers[n];
+    uint64_t temp = f2; // we do not need temp to be static 
+    f2 += f1;
+    f1 = temp;
 
-    uint64_t k = (n % 2 != 0) ? (n + 1) / 2 : n / 2;
-
-    numbers[n] = (n % 2 != 0) ? (fib(k) * fib(k) + fib(k - 1) * fib(k - 1))
-                        : (2 * fib(k - 1) + fib(k)) * fib(k);
-    return numbers[n];
+    return f2;
 }
 
 /** Main function */
