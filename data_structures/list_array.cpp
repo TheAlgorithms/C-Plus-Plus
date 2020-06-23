@@ -1,5 +1,9 @@
+/**
+ * @file list_array.cpp
+ * @todo Add documentation
+ * @warning The sorting algorithm is erroneous
+ */
 #include <iostream>
-using namespace std;
 
 struct list {
     int data[50];
@@ -17,6 +21,9 @@ struct list {
             return (BinarySearch(array, first, mid - 1, x));
         else if (x > array[mid])
             return (BinarySearch(array, mid + 1, last, x));
+
+        std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
+        return -1;
     }
 
     int LinarSearch(int *array, int x) {
@@ -41,9 +48,9 @@ struct list {
         }
 
         if (pos != -1) {
-            cout << "\nElement found at position : " << pos;
+            std::cout << "\nElement found at position : " << pos;
         } else {
-            cout << "\nElement not found";
+            std::cout << "\nElement not found";
         }
         return pos;
     }
@@ -69,7 +76,7 @@ struct list {
     void insert(int x) {
         if (!isSorted) {
             if (top == 49) {
-                cout << "\nOverflow";
+                std::cout << "\nOverflow";
             } else {
                 data[top] = x;
                 top++;
@@ -99,7 +106,7 @@ struct list {
 
     void Remove(int x) {
         int pos = Search(x);
-        cout << "\n" << data[pos] << " deleted";
+        std::cout << "\n" << data[pos] << " deleted";
         for (int i = pos; i < top; i++) {
             data[i] = data[i + 1];
         }
@@ -108,7 +115,7 @@ struct list {
 
     void Show() {
         for (int i = 0; i < top; i++) {
-            cout << data[i] << "\t";
+            std::cout << data[i] << "\t";
         }
     }
 };
@@ -118,35 +125,35 @@ int main() {
     int choice;
     int x;
     do {
-        cout << "\n1.Insert";
-        cout << "\n2.Delete";
-        cout << "\n3.Search";
-        cout << "\n4.Sort";
-        cout << "\n5.Print";
-        cout << "\n\nEnter Your Choice : ";
-        cin >> choice;
+        std::cout << "\n1.Insert";
+        std::cout << "\n2.Delete";
+        std::cout << "\n3.Search";
+        std::cout << "\n4.Sort";
+        std::cout << "\n5.Print";
+        std::cout << "\n\nEnter Your Choice : ";
+        std::cin >> choice;
         switch (choice) {
-        case 1:
-            cout << "\nEnter the element to be inserted : ";
-            cin >> x;
-            L.insert(x);
-            break;
-        case 2:
-            cout << "\nEnter the element to be removed : ";
-            cin >> x;
-            L.Remove(x);
-            break;
-        case 3:
-            cout << "\nEnter the element to be searched : ";
-            cin >> x;
-            L.Search(x);
-            break;
-        case 4:
-            L.Sort();
-            break;
-        case 5:
-            L.Show();
-            break;
+            case 1:
+                std::cout << "\nEnter the element to be inserted : ";
+                std::cin >> x;
+                L.insert(x);
+                break;
+            case 2:
+                std::cout << "\nEnter the element to be removed : ";
+                std::cin >> x;
+                L.Remove(x);
+                break;
+            case 3:
+                std::cout << "\nEnter the element to be searched : ";
+                std::cin >> x;
+                L.Search(x);
+                break;
+            case 4:
+                L.Sort();
+                break;
+            case 5:
+                L.Show();
+                break;
         }
     } while (choice != 0);
     return 0;
