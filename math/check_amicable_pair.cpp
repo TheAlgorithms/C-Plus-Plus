@@ -7,7 +7,6 @@
  * \details
  * Amicable Pair are two positive integers such that sum of the proper divisor 
  * of each number is equal to the other number.
- *  
  */
 #include <iostream>
 #include <cassert>
