@@ -61,7 +61,7 @@ class Complex {
      * Member function which gives the argument of our complex number.
      * @return Argument of our Complex number in radians.
      */
-    double arg() const { return atan2(this->im, this->re); }
+    double arg() const { return std::atan2(this->im, this->re); }
 
     /**
      * Operator overload to be able to add two complex numbers.
