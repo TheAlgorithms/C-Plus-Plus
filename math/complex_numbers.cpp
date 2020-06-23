@@ -9,9 +9,9 @@
 #include <cassert>
 #include <cmath>
 #include <complex>
+#include <ctime>
 #include <iostream>
 #include <stdexcept>
-#include <ctime>
 
 /**
  * Class Complex to represent complex numbers as a field.
@@ -26,10 +26,22 @@ class Complex {
     /**
      * Complex Constructor which initialises the complex number which takes two
      * arguments.
-     * @param x The real value of the complex number (optional).
-     * @param y The imaginary value of the complex number (optional).
+     * @param x If the third parameter is 'true' then this x is the absolute
+     * value of the complex number, if the third parameter is 'false' then this
+     * x is the real value of the complex number (optional).
+     * @param y If the third parameter is 'true' then this y is the argument of
+     * the complex number, if the third parameter is 'false' then this y is the
+     * imaginary value of the complex number (optional).
+     * @param is_polar 'false' by default. If we want to initialise our complex
+     * number using polar form then set this to true, otherwise set it to false
+     * to use initialiser which initialises real and imaginary values using the
+     * first two parameters (optional).
      */
-    explicit Complex(double x = 0.f, double y = 0.f) : re(x), im(y) { ; }
+    explicit Complex(double x = 0.f, double y = 0.f, bool is_polar = false)
+        : re(is_polar ? x * std::cos(y) : x),
+          im(is_polar ? x * std::sin(y) : y) {
+        ;
+    }
 
     /**
      * Copy Constructor
