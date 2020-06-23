@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d2/d36/structqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../db/da9/classqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="124,-0.5 124,-19.5 237,-19.5 237,-0.5 124,-0.5"/>
 <text text-anchor="middle" x="180.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">queue::isEmptyQueue</text>
 </a>

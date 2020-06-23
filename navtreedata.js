@@ -100,9 +100,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/def/kohonen__som__topology_8cpp.html#ac4010fe3a52a74e8b5b1aaadfe38b46f",
-"d8/d8a/exponential__search_8cpp.html#a0f697e2a3b5193324ab84bd4045088f7",
-"db/df3/happy__number_8cpp.html"
+"d5/d4c/group__sorting.html#ga29d28b140174dbdde7c9f5157758435f",
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a392fb874e547e582e9c66a08a1f23326",
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -50,7 +50,7 @@ var searchData=
   ['iscyclicdfs_3054',['isCyclicDFS',['../d3/dbb/class_cycle_check.html#ad9a270ffba3a68539b92272c702e3474',1,'CycleCheck']]],
   ['iscyclicdfshelper_3055',['isCyclicDFSHelper',['../d3/dbb/class_cycle_check.html#a2f4485c08b45e7a21a2e86f9c3f01d8b',1,'CycleCheck']]],
   ['isdigit_3056',['isdigit',['http://en.cppreference.com/w/cpp/string/byte/isdigit.html',0,'std']]],
-  ['isemptyqueue_3057',['isEmptyQueue',['../d2/d36/structqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31',1,'queue']]],
+  ['isemptyqueue_3057',['isEmptyQueue',['../db/da9/classqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31',1,'queue']]],
   ['isemptystack_3058',['isEmptyStack',['../d1/dc2/classstack.html#a066e4505155b009913c47b2648b1067a',1,'stack']]],
   ['isfinite_3059',['isfinite',['http://en.cppreference.com/w/cpp/numeric/math/isfinite.html',0,'std']]],
   ['isgraph_3060',['isgraph',['http://en.cppreference.com/w/cpp/string/byte/isgraph.html',0,'std']]],

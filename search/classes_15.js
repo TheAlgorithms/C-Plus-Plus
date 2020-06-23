@@ -2,7 +2,7 @@ var searchData=
 [
   ['va_5flist_2362',['va_list',['http://en.cppreference.com/w/cpp/utility/variadic/va_list.html',0,'']]],
   ['valarray_2363',['valarray',['http://en.cppreference.com/w/cpp/numeric/valarray.html',0,'std']]],
-  ['value_5fcompare_2364',['value_compare',['http://en.cppreference.com/w/cpp/container/map/value_compare.html',0,'std::map&lt; K, T &gt;::value_compare'],['http://en.cppreference.com/w/cpp/container/multimap/value_compare.html',0,'std::multimap&lt; K, T &gt;::value_compare']]],
+  ['value_5fcompare_2364',['value_compare',['http://en.cppreference.com/w/cpp/container/multimap/value_compare.html',0,'std::multimap&lt; K, T &gt;::value_compare'],['http://en.cppreference.com/w/cpp/container/map/value_compare.html',0,'std::map&lt; K, T &gt;::value_compare']]],
   ['vector_2365',['vector',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
   ['vector_3c_20bool_20_3e_2366',['vector&lt; bool &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
   ['vector_3c_20double_20_3e_2367',['vector&lt; double &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
