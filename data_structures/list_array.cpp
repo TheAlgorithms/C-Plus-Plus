@@ -41,9 +41,7 @@ struct list {
 
         if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, x);
-        }
-
-        else {
+        } else {
             pos = LinarSearch(data, x);
         }
 
@@ -81,9 +79,7 @@ struct list {
                 data[top] = x;
                 top++;
             }
-        }
-
-        else {
+        } else {
             int pos = 0;
 
             for (int i = 0; i < top - 1; i++) {
