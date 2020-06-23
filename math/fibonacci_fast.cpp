@@ -33,7 +33,7 @@ uint64_t fib(uint64_t n) {
     if (n <= 2)
         return f2;
     if (n >= 93) {
-        std::err << "Cannot compute for n>93 due to limit of 64-bit integers\n";
+        std::cerr << "Cannot compute for n>93 due to limit of 64-bit integers\n";
         return 0;
     }
 
