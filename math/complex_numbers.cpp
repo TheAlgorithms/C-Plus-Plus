@@ -9,6 +9,7 @@
 #include <cmath>
 #include <iostream>
 #include <stdexcept>
+#include <cassert>
 
 /**
  * Class Complex to represent complex numbers as a field.
