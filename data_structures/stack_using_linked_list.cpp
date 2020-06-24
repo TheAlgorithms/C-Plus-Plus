@@ -1,35 +1,34 @@
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
     node *next;
 };
 
-node *top;
+node *top_var;
 
 void push(int x) {
     node *n = new node;
     n->val = x;
-    n->next = top;
-    top = n;
+    n->next = top_var;
+    top_var = n;
 }
 
 void pop() {
-    if (top == NULL) {
-        cout << "\nUnderflow";
+    if (top_var == NULL) {
+        std::cout << "\nUnderflow";
     } else {
-        node *t = top;
-        cout << "\n" << t->val << " deleted";
-        top = top->next;
+        node *t = top_var;
+        std::cout << "\n" << t->val << " deleted";
+        top_var = top_var->next;
         delete t;
     }
 }
 
 void show() {
-    node *t = top;
+    node *t = top_var;
     while (t != NULL) {
-        cout << t->val << "\n";
+        std::cout << t->val << "\n";
         t = t->next;
     }
 }
@@ -37,14 +36,14 @@ void show() {
 int main() {
     int ch, x;
     do {
-        cout << "\n1. Push";
-        cout << "\n2. Pop";
-        cout << "\n3. Print";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n1. Push";
+        std::cout << "\n2. Pop";
+        std::cout << "\n3. Print";
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         if (ch == 1) {
-            cout << "\nInsert : ";
-            cin >> x;
+            std::cout << "\nInsert : ";
+            std::cin >> x;
             push(x);
         } else if (ch == 2) {
             pop();
