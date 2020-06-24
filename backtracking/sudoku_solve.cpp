@@ -1,6 +1,4 @@
 #include <iostream>
-using namespace std;
-/// N=9;
 int n = 9;
 
 bool isPossible(int mat[][9], int i, int j, int no) {
@@ -28,15 +26,15 @@ bool isPossible(int mat[][9], int i, int j, int no) {
 void printMat(int mat[][9]) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cout << mat[i][j] << " ";
+            std::cout << mat[i][j] << " ";
             if ((j + 1) % 3 == 0) {
-                cout << '\t';
+                std::cout << '\t';
             }
         }
         if ((i + 1) % 3 == 0) {
-            cout << endl;
+            std::cout << std::endl;
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 

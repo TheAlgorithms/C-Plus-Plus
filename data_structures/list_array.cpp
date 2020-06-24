@@ -116,11 +116,15 @@ struct list {
     }
 };
 
+/**
+ * Main function
+ */
 int main() {
     list L;
     int choice;
     int x;
     do {
+        std::cout << "\n0.Exit";
         std::cout << "\n1.Insert";
         std::cout << "\n2.Delete";
         std::cout << "\n3.Search";
@@ -149,6 +153,13 @@ int main() {
             break;
         case 5:
             L.Show();
+            break;
+
+        default:
+            if (choice == 0) { return }
+            std::cout << "Wrong option; type an option : ";
+            std::cin >> choice;
+
             break;
         }
     } while (choice != 0);

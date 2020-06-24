@@ -28,21 +28,21 @@ node *dequeue() { return (queue.t[queue.front++]); }
 
 void Insert(node *n, int x) {
     if (x < n->val) {
-        if (n->left == NULL) {
+        if (n->left == nullptr) {
             node *temp = new node;
             temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
+            temp->left = nullptr;
+            temp->right = nullptr;
             n->left = temp;
         } else {
             Insert(n->left, x);
         }
     } else {
-        if (n->right == NULL) {
+        if (n->right == nullptr) {
             node *temp = new node;
             temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
+            temp->left = nullptr;
+            temp->right = nullptr;
             n->right = temp;
         } else {
             Insert(n->right, x);
@@ -51,7 +51,7 @@ void Insert(node *n, int x) {
 }
 
 int findMaxInLeftST(node *n) {
-    while (n->right != NULL) {
+    while (n->right != nullptr) {
         n = n->right;
     }
     return n->val;
@@ -59,19 +59,19 @@ int findMaxInLeftST(node *n) {
 
 void Remove(node *p, node *n, int x) {
     if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
+        if (n->right == nullptr && n->left == nullptr) {
             if (x < p->val) {
-                p->right = NULL;
+                p->right = nullptr;
             } else {
-                p->left = NULL;
+                p->left = nullptr;
             }
-        } else if (n->right == NULL) {
+        } else if (n->right == nullptr) {
             if (x < p->val) {
                 p->right = n->left;
             } else {
                 p->left = n->left;
             }
-        } else if (n->left == NULL) {
+        } else if (n->left == nullptr) {
             if (x < p->val) {
                 p->right = n->right;
             } else {
@@ -90,7 +90,7 @@ void Remove(node *p, node *n, int x) {
 }
 
 void BFT(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         std::cout << n->val << "  ";
         enqueue(n->left);
         enqueue(n->right);
@@ -99,7 +99,7 @@ void BFT(node *n) {
 }
 
 void Pre(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         std::cout << n->val << "  ";
         Pre(n->left);
         Pre(n->right);
@@ -107,7 +107,7 @@ void Pre(node *n) {
 }
 
 void In(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         In(n->left);
         std::cout << n->val << "  ";
         In(n->right);
@@ -115,7 +115,7 @@ void In(node *n) {
 }
 
 void Post(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         Post(n->left);
         Post(n->right);
         std::cout << n->val << "  ";
@@ -131,8 +131,8 @@ int main() {
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
-    root->left = NULL;
-    root->right = NULL;
+    root->left = nullptr;
+    root->right = nullptr;
     do {
         std::cout << "\n1. Insert"
                   << "\n2. Delete"

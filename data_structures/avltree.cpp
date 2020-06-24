@@ -22,15 +22,16 @@ node *createNode(int data) {
     node *nn = new node();
     nn->data = data;
     nn->height = 0;
-    nn->left = NULL;
-    nn->right = NULL;
+    nn->left = nullptr;
+    nn->right = nullptr;
     return nn;
 }
 
 /** Returns height of tree */
 int height(node *root) {
-    if (root == NULL)
+    if (root == nullptr) {
         return 0;
+    }
     return 1 + std::max(height(root->left), height(root->right));
 }
 
@@ -57,7 +58,7 @@ node *leftRotate(node *root) {
 
 /** Returns node with minimum value in the tree */
 node *minValue(node *root) {
-    if (root->left == NULL)
+    if (root->left == nullptr)
         return root;
     return minValue(root->left);
 }
@@ -65,7 +66,7 @@ node *minValue(node *root) {
 /** Balanced Insertion */
 node *insert(node *root, int item) {
     node *nn = createNode(item);
-    if (root == NULL)
+    if (root == nullptr)
         return nn;
     if (item < root->data)
         root->left = insert(root->left, item);
@@ -86,24 +87,25 @@ node *insert(node *root, int item) {
 
 /** Balanced Deletion */
 node *deleteNode(node *root, int key) {
-    if (root == NULL)
+    if (root == nullptr) {
         return root;
-    if (key < root->data)
-        root->left = deleteNode(root->left, key);
-    else if (key > root->data)
-        root->right = deleteNode(root->right, key);
+    }
 
-    else {
+    if (key < root->data) {
+        root->left = deleteNode(root->left, key);
+    } else if (key > root->data) {
+        root->right = deleteNode(root->right, key);
+    } else {
         // Node to be deleted is leaf node or have only one Child
         if (!root->right) {
             node *temp = root->left;
             delete (root);
-            root = NULL;
+            root = nullptr;
             return temp;
         } else if (!root->left) {
             node *temp = root->right;
             delete (root);
-            root = NULL;
+            root = nullptr;
             return temp;
         }
         // Node to be deleted have both left and right subtrees
@@ -133,7 +135,7 @@ void levelOrder(node *root) {
 /** Main function */
 int main() {
     // Testing AVL Tree
-    node *root = NULL;
+    node *root = nullptr;
     int i;
     for (i = 1; i <= 7; i++) root = insert(root, i);
     std::cout << "LevelOrder: ";

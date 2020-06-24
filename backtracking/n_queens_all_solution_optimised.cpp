@@ -50,6 +50,9 @@ void NQueenSol(int Board[n][n], int col) {
     }
 }
 
+/**
+ * Main function
+ */
 int main() {
     int Board[n][n] = {0};
     if (n % 2 == 0) {

@@ -1,5 +1,8 @@
 #include <iostream>
 
+/**
+ * Initialize variables
+ */
 struct node {
     int val;
     node *next;
@@ -7,13 +10,16 @@ struct node {
 
 node *start;
 
+/**
+ * Insert a node into list
+ */
 void insert(int x) {
     node *t = start;
     node *n = new node;
     n->val = x;
-    n->next = NULL;
-    if (start != NULL) {
-        while (t->next != NULL) {
+    n->next = nullptr;
+    if (start != nullptr) {
+        while (t->next != nullptr) {
             t = t->next;
         }
         t->next = n;
@@ -22,8 +28,11 @@ void insert(int x) {
     }
 }
 
+/**
+ * Remove a node from list
+ */
 void remove(int x) {
-    if (start == NULL) {
+    if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
         return;
     } else if (start->val == x) {
@@ -35,12 +44,12 @@ void remove(int x) {
 
     node *temp = start, *parent = start;
 
-    while (temp != NULL && temp->val != x) {
+    while (temp != nullptr && temp->val != x) {
         parent = temp;
         temp = temp->next;
     }
 
-    if (temp == NULL) {
+    if (temp == nullptr) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
@@ -49,10 +58,13 @@ void remove(int x) {
     delete temp;
 }
 
+/**
+ * Search a node from list
+ */
 void search(int x) {
     node *t = start;
     int found = 0;
-    while (t != NULL) {
+    while (t != nullptr) {
         if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
@@ -65,34 +77,44 @@ void search(int x) {
     }
 }
 
+/**
+ * Show all nodes from list
+ */
 void show() {
     node *t = start;
-    while (t != NULL) {
+    while (t != nullptr) {
         std::cout << t->val << "\t";
         t = t->next;
     }
 }
 
+/**
+ * Show all nodes from list (reverse)
+ */
 void reverse() {
     node *first = start;
-    if (first != NULL) {
+    if (first != nullptr) {
         node *second = first->next;
-        while (second != NULL) {
+        while (second != nullptr) {
             node *tem = second->next;
             second->next = first;
             first = second;
             second = tem;
         }
-        start->next = NULL;
+        start->next = nullptr;
         start = first;
     } else {
         std::cout << "\nEmpty list";
     }
 }
 
+/**
+ * Main function
+ */
 int main() {
     int choice, x;
     do {
+        std::cout << "\n0. Exit";
         std::cout << "\n1. Insert";
         std::cout << "\n2. Delete";
         std::cout << "\n3. Search";
@@ -126,6 +148,13 @@ int main() {
             reverse();
             show();
             std::cout << "\n";
+            break;
+
+        default:
+            if (choice == 0) { return }
+            std::cout << "Wrong option; type an option : ";
+            std::cin >> choice;
+
             break;
         }
     } while (choice != 0);

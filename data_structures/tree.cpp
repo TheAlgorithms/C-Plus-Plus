@@ -1,27 +1,33 @@
 #include <iostream>
 #include <list>
-using namespace std;
 
+/**
+ * Initialize variables
+ */
 struct node {
     int val;
     node *left;
     node *right;
 };
 
+/**
+ * Insert node into tree
+ */
 void CreateTree(node *curr, node *n, int x, char pos) {
-    if (n != NULL) {
+    if (n != nullptr) {
         char ch;
-        cout << "\nLeft or Right of " << n->val << " : ";
-        cin >> ch;
-        if (ch == 'l')
+        std::cout << "\nLeft or Right of " << n->val << " : ";
+        std::cin >> ch;
+        if (ch == 'l') {
             CreateTree(n, n->left, x, ch);
-        else if (ch == 'r')
+        } else if (ch == 'r') {
             CreateTree(n, n->right, x, ch);
+        }
     } else {
         node *t = new node;
         t->val = x;
-        t->left = NULL;
-        t->right = NULL;
+        t->left = nullptr;
+        t->right = nullptr;
         if (pos == 'l') {
             curr->left = t;
         } else if (pos == 'r') {
@@ -37,37 +43,37 @@ void BFT(node *n) {
 
     while (!queue.empty()) {
         n = queue.front();
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
         queue.pop_front();
 
-        if (n->left != NULL)
+        if (n->left != nullptr)
             queue.push_back(n->left);
-        if (n->right != NULL)
+        if (n->right != nullptr)
             queue.push_back(n->right);
     }
 }
 
 void Pre(node *n) {
-    if (n != NULL) {
-        cout << n->val << "  ";
+    if (n != nullptr) {
+        std::cout << n->val << "  ";
         Pre(n->left);
         Pre(n->right);
     }
 }
 
 void In(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         In(n->left);
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
         In(n->right);
     }
 }
 
 void Post(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         Post(n->left);
         Post(n->right);
-        cout << n->val << "  ";
+        std::cout << n->val << "  ";
     }
 }
 
@@ -75,28 +81,29 @@ int main() {
     int value;
     int ch;
     node *root = new node;
-    cout << "\nEnter the value of root node :";
-    cin >> value;
+    std::cout << "\nEnter the value of root node :";
+    std::cin >> value;
     root->val = value;
-    root->left = NULL;
-    root->right = NULL;
+    root->left = nullptr;
+    root->right = nullptr;
     do {
-        cout << "\n1. Insert";
-        cout << "\n2. Breadth First";
-        cout << "\n3. Preorder Depth First";
-        cout << "\n4. Inorder Depth First";
-        cout << "\n5. Postorder Depth First";
+        std::cout << "\n0. Exit";
+        std::cout << "\n1. Insert";
+        std::cout << "\n2. Breadth First";
+        std::cout << "\n3. Preorder Depth First";
+        std::cout << "\n4. Inorder Depth First";
+        std::cout << "\n5. Postorder Depth First";
 
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         switch (ch) {
         case 1:
             int x;
             char pos;
-            cout << "\nEnter the value to be Inserted : ";
-            cin >> x;
-            cout << "\nLeft or Right of Root : ";
-            cin >> pos;
+            std::cout << "\nEnter the value to be Inserted : ";
+            std::cin >> x;
+            std::cout << "\nLeft or Right of Root : ";
+            std::cin >> pos;
             if (pos == 'l')
                 CreateTree(root, root->left, x, pos);
             else if (pos == 'r')
@@ -114,6 +121,14 @@ int main() {
         case 5:
             Post(root);
             break;
+
+        default:
+            if (ch == 0) { return }
+            std::cout << "Wrong option; type an option : ";
+            std::cin >> ch;
+
+            break;
         }
     } while (ch != 0);
+    return 0;
 }

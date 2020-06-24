@@ -9,17 +9,15 @@
 #include <iostream>
 #define size 4
 
-using namespace std;
-
 int solveMaze(int currposrow, int currposcol, int maze[size][size],
               int soln[size][size]) {
     if ((currposrow == size - 1) && (currposcol == size - 1)) {
         soln[currposrow][currposcol] = 1;
         for (int i = 0; i < size; ++i) {
             for (int j = 0; j < size; ++j) {
-                cout << soln[i][j];
+                std::cout << soln[i][j];
             }
-            cout << endl;
+            std::cout << std::endl;
         }
         return 1;
     } else {

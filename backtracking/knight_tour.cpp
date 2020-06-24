@@ -36,6 +36,10 @@ bool solve(int x, int y, int mov, int sol[n][n], int xmov[n], int ymov[n]) {
     }
     return false;
 }
+
+/**
+ * Main function
+ */
 int main() {
     // initialize();
 
@@ -49,11 +53,11 @@ int main() {
     sol[0][0] = 0;
 
     bool flag = solve(0, 0, 1, sol, xmov, ymov);
-    if (flag == false)
+    if (flag == false) {
         cout << "solution doesnot exist \n";
-    else {
+    } else {
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) cout << sol[i][j] << "  ";
+            for (j = 0; j < n; j++) { cout << sol[i][j] << "  " };
             cout << "\n";
         }
     }

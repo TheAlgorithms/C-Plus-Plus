@@ -10,8 +10,8 @@ class Queue {
 
  public:
     Queue() {
-        front = NULL;
-        rear = NULL;
+        front = nullptr;
+        rear = nullptr;
     }
     void createNode(int val) {
         node *ptr;
@@ -19,12 +19,12 @@ class Queue {
         nn = new node;
         ptr = front;
         nn->data = val;
-        nn->next = NULL;
+        nn->next = nullptr;
         front = nn;
         rear = nn;
     }
     void enqueue(int val) {
-        if (front == NULL || rear == NULL) {
+        if (front == nullptr || rear == nullptr) {
             createNode(val);
         } else {
             node *ptr;
@@ -53,6 +53,10 @@ class Queue {
         std::cout << front->data << std::endl;
     }
 };
+
+/**
+ * Main function
+ */
 int main(void) {
     Queue q;
     q.enqueue(10);
