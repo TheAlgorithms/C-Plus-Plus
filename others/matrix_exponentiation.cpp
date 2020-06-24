@@ -36,7 +36,7 @@ using std::vector;
 #define endl std::endl
 
 /*! shorthand definition for `int64_t` */
-#define pb  push_back
+#define pb push_back
 #define MOD 1000000007
 
 /** global variable mat_size
