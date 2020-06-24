@@ -8,10 +8,13 @@
  */
 #include <iostream>
 
+/** An struct node type.
+*  Define a element for tree insert/remove operation
+*/
 struct node {
-    int val;
-    node *left;
-    node *right;
+    int val;       /**< int value of a node struct*/
+    node *left;    /**< left subtree pointer */
+    node *right;   /**< right subtree pointer */
 };
 
 struct queue {
@@ -26,6 +29,11 @@ void enqueue(node *n) { q.t[q.rear++] = n; }
 
 node *dequeue() { return (q.t[q.front++]); }
 
+/** insert a node to tree
+ * with greater value to right subtree, smaller value node to left subtree
+ * \param[in] n root node of a tree
+ * \param[in] x a node with value to be insert
+ */
 void Insert(node *n, int x) {
     if (x < n->val) {
         if (n->left == NULL) {
@@ -50,6 +58,10 @@ void Insert(node *n, int x) {
     }
 }
 
+/** find max node value of a left subtree
+ * \param[in] n the root node pointer of subtree
+ * \return the max node int value
+ */
 int findMaxInLeftST(node *n) {
     while (n->right != NULL) {
         n = n->right;
@@ -57,30 +69,39 @@ int findMaxInLeftST(node *n) {
     return n->val;
 }
 
+/** remove a node from tree
+ *  travesal a tree and find a node ,then delete it.
+ * \param[in] p parent node of start node
+ * \param[in] n start node to search a node with value x
+ * \param[in] x the int value of a node
+ */
 void Remove(node *p, node *n, int x) {
     if (n->val == x) {
         if (n->right == NULL && n->left == NULL) {
-            if (x < p->val) {
+            if (x > p->val) {
                 p->right = NULL;
             } else {
                 p->left = NULL;
             }
+            delete n;
         } else if (n->right == NULL) {
-            if (x < p->val) {
+            if (x > p->val) {
                 p->right = n->left;
             } else {
                 p->left = n->left;
             }
+            delete n;
         } else if (n->left == NULL) {
-            if (x < p->val) {
+            if (x > p->val) {
                 p->right = n->right;
             } else {
                 p->left = n->right;
             }
+            delete n;
         } else {
             int y = findMaxInLeftST(n->left);
             n->val = y;
-            Remove(n, n->right, y);
+            Remove(n, n->left, y);
         }
     } else if (x < n->val) {
         Remove(n, n->left, x);
@@ -98,6 +119,10 @@ void BFT(node *n) {
     }
 }
 
+/** traverse a tree with Pre order
+ * and print the node value
+ * \param[in] n the root node pointer of a tree
+ */
 void Pre(node *n) {
     if (n != NULL) {
         std::cout << n->val << "  ";
@@ -106,6 +131,10 @@ void Pre(node *n) {
     }
 }
 
+/** traverse a tree with In order
+ * and print the node value
+ * \param[in] n the root node pointer of a tree
+ */
 void In(node *n) {
     if (n != NULL) {
         In(n->left);
@@ -114,6 +143,10 @@ void In(node *n) {
     }
 }
 
+/** traverse a tree with Post order
+ * and print the node value
+ * \param[in] n the root node pointer of a tree
+ */
 void Post(node *n) {
     if (n != NULL) {
         Post(n->left);
@@ -122,7 +155,30 @@ void Post(node *n) {
     }
 }
 
+void test_tree() {
+    node * root  = new node;
+    root->val = 4;
+    root->left = NULL;
+    root->right = NULL;
+//test Insert()
+    Insert(root, 2);
+    Insert(root, 1);
+    Insert(root, 3);
+    Insert(root, 6);
+    Insert(root, 5);
+    Insert(root, 7);
+    std::cout<< "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7" << std::endl;
+    In(root);
+//test Remove()
+    Remove(root, root, 2);
+    std::cout<< "\n after Remove() node 2 , the expected output should be : 1, 3, 4, 5, 6, 7" << std::endl;
+    In(root);
+}
+
 int main() {
+    //test tree
+    test_tree();
+
     q.front = 0;
     q.rear = 0;
     int value;
@@ -133,6 +189,7 @@ int main() {
     root->val = value;
     root->left = NULL;
     root->right = NULL;
+
     do {
         std::cout << "\n1. Insert"
                   << "\n2. Delete"
