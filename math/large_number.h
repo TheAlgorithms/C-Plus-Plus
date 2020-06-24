@@ -53,7 +53,7 @@ class large_number {
     /**< initializer from a string */
     explicit large_number(char const *number_str) {
         for (size_t i = strlen(number_str); i > 0; i--) {
-            unsigned char a = number_str[i - 1] - '0';
+            char a = number_str[i - 1] - '0';
             if (a >= 0 && a <= 9)
                 _digits.push_back(a);
         }
@@ -127,7 +127,7 @@ class large_number {
     /**
      * Get number of digits in the number
      **/
-    const size_t num_digits() const { return _digits.size(); }
+    size_t num_digits() const { return _digits.size(); }
 
     /**
      * operator over load to access the
@@ -245,7 +245,7 @@ class large_number {
     /**
      * returns i^th digit as an ASCII character
      **/
-    const char digit_char(size_t i) const {
+    char digit_char(size_t i) const {
         return _digits[num_digits() - i - 1] + '0';
     }
 
@@ -264,7 +264,7 @@ class large_number {
         size_t i;
         uint64_t carry = 0, temp;
         for (i = 0; i < this->num_digits(); i++) {
-            temp = (*this)[i] * n;
+            temp = static_cast<uint64_t>((*this)[i]) * n;
             temp += carry;
             if (temp < 10) {
                 carry = 0;

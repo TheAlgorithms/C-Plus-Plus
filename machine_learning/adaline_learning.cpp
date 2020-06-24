@@ -7,10 +7,12 @@
  *
  * \author [Krishna Vedala](https://github.com/kvedala)
  *
- * <img
+ * \details
+ * <a href="https://commons.wikimedia.org/wiki/File:Adaline_flow_chart.gif"><img
  * src="https://upload.wikimedia.org/wikipedia/commons/b/be/Adaline_flow_chart.gif"
- * width="200px">
- * [source](https://commons.wikimedia.org/wiki/File:Adaline_flow_chart.gif)
+ * alt="Structure of an ADALINE network. Source: Wikipedia"
+ * style="width:200px; float:right;"></a>
+ *
  * ADALINE is one of the first and simplest single layer artificial neural
  * network. The algorithm essentially implements a linear function
  * \f[ f\left(x_0,x_1,x_2,\ldots\right) =

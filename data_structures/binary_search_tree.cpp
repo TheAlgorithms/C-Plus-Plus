@@ -17,17 +17,17 @@ struct node {
     node *right; /**< right subtree pointer */
 };
 
-struct queue {
+struct Queue {
     node *t[100];
     int front;
     int rear;
 };
 
-queue q;
+Queue queue;
 
-void enqueue(node *n) { q.t[q.rear++] = n; }
+void enqueue(node *n) { queue.t[queue.rear++] = n; }
 
-node *dequeue() { return (q.t[q.front++]); }
+node *dequeue() { return (queue.t[queue.front++]); }
 
 /** insert a node to tree
  * with greater value to right subtree, smaller value node to left subtree
@@ -182,9 +182,8 @@ void test_tree() {
 int main() {
     // test tree
     test_tree();
-
-    q.front = 0;
-    q.rear = 0;
+    queue.front = 0;
+    queue.rear = 0;
     int value;
     int ch;
     node *root = new node;
