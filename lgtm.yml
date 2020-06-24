@@ -9,4 +9,4 @@ extraction:
         - cmake -B build -S . -G Ninja
     index:
         build_command: 
-        - cmake --build build -j 4
+        - cmake --build build -j 2
