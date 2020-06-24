@@ -1,0 +1,12 @@
+extraction:
+  cpp:
+    prepare:
+        packages:
+        - cmake
+        - ninja-build
+    configure:
+        command: 
+        - cmake -B build -S . -G Ninja
+    index:
+        build_command: 
+        - cmake --build build -j 4
