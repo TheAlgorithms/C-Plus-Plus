@@ -33,13 +33,12 @@
  * @return void and prints index ranges if sum of sub array equal to the given
  * sum, else prints -1.
  */
-template <typename T>
-void contiguous_sub_array(T *arr, T size, T orignal_sum) {
+void contiguous_sub_array(int *arr, int size, int orignal_sum) {
     int current_sum = 0, match = 0;
 
-    for (T i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) {
         current_sum = 0;
-        for (T j = i; j < size; j++) {
+        for (int j = i; j < size; j++) {
             current_sum += arr[j];
             if (current_sum == orignal_sum) {
                 match = 1;
@@ -59,37 +58,30 @@ void contiguous_sub_array(T *arr, T size, T orignal_sum) {
     } else {
         match = 0;
     }
+    std::cout << std::endl;
 }
 
 /**
- * Main function
- */
+ * Test cases to test the program
+*/
+void test() {
+    std::cout << "Test 1" << std::endl;
+    int arr1[] = {1, 2, 3, 7, 5};
+    int original_sum = 12;
+    int size = sizeof(arr1) / sizeof(arr1[0]);
+    contiguous_sub_array(arr1, size, original_sum);
+    std::cout << "Test 1 passed\n ===================== \n";
+
+    std::cout << "Test 2" << std::endl;
+    int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    original_sum = 15;
+    size = sizeof(arr2) / sizeof(arr2[0]);
+    contiguous_sub_array(arr2, size, original_sum);
+    std::cout << "Test 2 passed\n ===================== \n";
+}
+
+/** Main function */
 int main() {
-    int test_cases, size, orignal_sum;
-
-    std::cout << "Enter test cases : " << std::endl;
-    std::cin >> test_cases;
-
-    while (test_cases--) {
-        std::cout << "Enter size of an array : " << std::endl;
-        std::cin >> size;
-
-        std::cout << "Enter the sum to check : " << std::endl;
-        std::cin >> orignal_sum;
-
-        // dynamic memory allocation.
-        int *arr = new int[size];
-
-        std::cout << "Enter the elements in an array : " << std::endl;
-        for (int i = 0; i < size; i++) {
-            std::cin >> arr[i];
-        }
-
-        contiguous_sub_array(arr, size, orignal_sum);
-
-        std::cout << std::endl;
-        // free memory of an array once used.
-        delete[] arr;
-    }
+    test();
     return 0;
 }
