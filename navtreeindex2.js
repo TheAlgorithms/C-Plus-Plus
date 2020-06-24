@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"d8/ddf/sieve__of__eratosthenes_8cpp.html":[8,0,3,26],
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a02fd73d861ef2e4aabb38c0c9ff82947":[8,0,3,26,1],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#a0560e21edb54d5ad8d80b2d80348ce22":[8,0,3,26,5],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[8,0,3,26,0],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#abce89d8999986f085c368969590376b8":[8,0,3,26,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[8,0,4,8,0],
 "db/df3/happy__number_8cpp.html":[8,0,5,5],
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[8,0,5,5,0],
-"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,5,5,1],
-"dc/d1a/pascal__triangle_8cpp.html":[8,0,5,9],
-"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[8,0,5,9,2]
+"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,5,5,1]
 };

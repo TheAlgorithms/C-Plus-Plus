@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"dc/d1a/pascal__triangle_8cpp.html":[8,0,5,9],
+"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[8,0,5,9,2],
 "dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,5,9,0],
 "dc/d1a/pascal__triangle_8cpp.html#afd3f52dd56ddedbf7af5d26a202a199e":[8,0,5,9,1],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html":[8,0,4,11],
@@ -71,9 +73,9 @@ var NAVTREEINDEX3 =
 "dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,34,3],
 "dd/d3b/struct_entry.html":[7,0,9],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,9,3],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,2],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,0],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,1],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,2],
 "dd/d4f/class_solution.html":[7,0,29],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,29,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,29,0],
@@ -207,8 +209,8 @@ var NAVTREEINDEX3 =
 "functions_func.html":[7,2,1],
 "functions_rela.html":[7,2,3],
 "functions_vars.html":[7,2,2],
-"globals.html":[8,1,0,0],
 "globals.html":[8,1,0],
+"globals.html":[8,1,0,0],
 "globals_a.html":[8,1,0,1],
 "globals_b.html":[8,1,0,2],
 "globals_c.html":[8,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "globals_n.html":[8,1,0,14],
 "globals_o.html":[8,1,0,15],
 "globals_p.html":[8,1,0,16],
-"globals_r.html":[8,1,0,17],
-"globals_s.html":[8,1,0,18],
-"globals_t.html":[8,1,0,19]
+"globals_r.html":[8,1,0,17]
 };

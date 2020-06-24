@@ -20,7 +20,7 @@ var searchData=
   ['new_5fhandler_1002',['new_handler',['http://en.cppreference.com/w/cpp/memory/new/new_handler.html',0,'std']]],
   ['new_5fval_1003',['new_val',['../d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2',1,'statistics::stats_computer1::new_val()'],['../d8/dab/classstatistics_1_1stats__computer2.html#ade6de704deea24fdc88077b3d9a0d534',1,'statistics::stats_computer2::new_val()']]],
   ['newton_5fraphson_5fmethod_2ecpp_1004',['newton_raphson_method.cpp',['../de/dd3/newton__raphson__method_8cpp.html',1,'']]],
-  ['next_1005',['next',['../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f',1,'list::next()'],['http://en.cppreference.com/w/cpp/iterator/next.html',0,'std::next()']]],
+  ['next_1005',['next',['../d5/da1/structnode.html#a135f25acadfbba644f848f1aa18d8350',1,'node::next()'],['../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f',1,'list::next()'],['http://en.cppreference.com/w/cpp/iterator/next.html',0,'std::next()']]],
   ['next_5fpermutation_1006',['next_permutation',['http://en.cppreference.com/w/cpp/algorithm/next_permutation.html',0,'std']]],
   ['nextafter_1007',['nextafter',['http://en.cppreference.com/w/cpp/numeric/math/nextafter.html',0,'std']]],
   ['nexttoward_1008',['nexttoward',['http://en.cppreference.com/w/cpp/numeric/math/nextafter.html',0,'std']]],

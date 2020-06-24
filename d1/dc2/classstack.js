@@ -1,6 +1,7 @@
 var classstack =
 [
     [ "stack", "d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83", null ],
+    [ "stack", "d1/dc2/classstack.html#ae8547e097cc753d5eab0207ed23d8920", null ],
     [ "~stack", "d1/dc2/classstack.html#a0ac1dba9c7019acdc825b31d06eb0b71", null ],
     [ "clear", "d1/dc2/classstack.html#a5cc5efbbd4ea14b3e378580f1388423b", null ],
     [ "display", "d1/dc2/classstack.html#a67f65710c376f67d1ba3bde45a9cb628", null ],
