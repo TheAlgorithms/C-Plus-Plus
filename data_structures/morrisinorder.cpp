@@ -20,7 +20,8 @@ void insert(Btree **root, int d) {
         *root = nn;
         return;
     } else {
-        queue<Btree *> q;
+        std::queue<Btree *> q;
+
         // Adding root node to queue
         q.push(*root);
         while (!q.empty()) {
@@ -59,7 +60,7 @@ void morrisInorder(Btree *root) {
             // Left of current node is stored in temp
             temp = curr->left;
             // Moving to extreme right of temp
-            while (temp->right && temp->right != curr) { temp = temp->right };
+            while (temp->right && temp->right != curr) { temp = temp->right; }
             // If extreme right is null it is made to point to currrent node
             // (will be used for backtracking)
             if (temp->right == nullptr) {
@@ -85,7 +86,9 @@ int main() {
     // Testing morrisInorder funtion
     Btree *root = nullptr;
     int i;
-    for (i = 1; i <= 7; i++) { insert(&root, i) };
+    for (i = 1; i <= 7; i++) { 
+        insert(&root, i);
+    }
     std::cout << "Morris Inorder: ";
     morrisInorder(root);
     return 0;

@@ -14,9 +14,8 @@ void Enque(int x) {
         n->next = nullptr;
         rear = n;
         front = n;
-    }
 
-    else {
+    } else {
         node *n = new node;
         n->val = x;
         n->next = nullptr;
@@ -58,7 +57,7 @@ int main() {
         std::cin >> ch;
         if (ch == 1) {
             std::cout << "\nInsert : ";
-            std:::cin >> x;
+            std::cin >> x;
             Enque(x);
         } else if (ch == 2) {
             Deque();

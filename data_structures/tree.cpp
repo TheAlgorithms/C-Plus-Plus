@@ -37,7 +37,7 @@ void CreateTree(node *curr, node *n, int x, char pos) {
 }
 
 void BFT(node *n) {
-    list<node *> queue;
+    std::list<node *> queue;
 
     queue.push_back(n);
 
@@ -123,12 +123,14 @@ int main() {
             break;
 
         default:
-            if (ch == 0) { return }
+            if (ch == 0) { break; }
             std::cout << "Wrong option; type an option : ";
             std::cin >> ch;
 
             break;
         }
     } while (ch != 0);
+
+    delete root;
     return 0;
 }

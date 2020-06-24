@@ -13,10 +13,11 @@ void printSolution(int color[]);
 /* A utility function to check if the current color assignment
    is safe for vertex v */
 bool isSafe(int v, bool graph[V][V], int color[], int c) {
-    for (int i = 0; i < V; i++)
+    for (int i = 0; i < V; i++) {
         if (graph[v][i] && c == color[i]) {
             return false;
         }
+    }
     return true;
 }
 
@@ -73,7 +74,9 @@ int main() {
 
     int color[V];
 
-    for (int i = 0; i < V; i++) { color[i] = 0 };
+    for (int i = 0; i < V; i++) { 
+        color[i] = 0;
+    }
 
     graphColoring(graph, m, color, 0);
     return 0;
