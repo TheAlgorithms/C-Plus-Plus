@@ -1,18 +1,27 @@
-/* This class specifies the basic operation on a stack as a linked list */
+/**
+ * @file stack.h
+ * @author danghai
+ * @brief  This class specifies the basic operation on a stack as a linked list
+ **/
 #ifndef DATA_STRUCTURES_STACK_H_
 #define DATA_STRUCTURES_STACK_H_
 
 #include <cassert>
 #include <iostream>
 
-/* Definition of the node */
+/** Definition of the node as a linked-list
+ * \tparam Type type of data nodes of the linked list should contain
+ */
 template <class Type>
 struct node {
-    Type data;
-    node<Type> *next;
+    Type data;         ///< data at current node
+    node<Type> *next;  ///< pointer to the next ::node instance
 };
 
-/* Definition of the stack class */
+/** Definition of the stack class
+ * \tparam Type type of data nodes of the linked list in the stack should
+ * contain
+ */
 template <class Type>
 class stack {
  public:
@@ -135,7 +144,7 @@ class stack {
 
  private:
     node<Type> *stackTop; /**< Pointer to the stack */
-    int size;
+    int size;             ///< size of stack
 };
 
 #endif  // DATA_STRUCTURES_STACK_H_
