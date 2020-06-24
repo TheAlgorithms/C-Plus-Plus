@@ -34,6 +34,36 @@ class stack {
         size = 0;
     }
 
+    /** Copy constructor*/
+    explicit stack(const stack &other) {
+        node<Type> *newNode, *current, *last;
+
+        /* If stack is no empty, make it empty */
+        if (stackTop != NULL) {
+            stackTop = NULL;
+        }
+        if (otherStack.stackTop == NULL) {
+            stackTop = NULL;
+        } else {
+            current = otherStack.stackTop;
+            stackTop = new node<Type>;
+            stackTop->data = current->data;
+            stackTop->next = NULL;
+            last = stackTop;
+            current = current->next;
+            /* Copy the remaining stack */
+            while (current != NULL) {
+                newNode = new node<Type>;
+                newNode->data = current->data;
+                newNode->next = NULL;
+                last->next = newNode;
+                last = newNode;
+                current = current->next;
+            }
+        }
+        size = otherStack.size;
+    }
+
     /** Destructor */
     ~stack() {}
 
