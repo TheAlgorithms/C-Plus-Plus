@@ -20,7 +20,7 @@ class stack {
     void display() {
         node<Type> *current = stackTop;
         std::cout << "Top --> ";
-        while (current != NULL) {
+        while (current != nullptr) {
             std::cout << current->data << "  ";
             current = current->next;
         }
@@ -30,7 +30,7 @@ class stack {
 
     /** Default constructor*/
     stack() {
-        stackTop = NULL;
+        stackTop = nullptr;
         size = 0;
     }
 
@@ -39,23 +39,23 @@ class stack {
         node<Type> *newNode, *current, *last;
 
         /* If stack is no empty, make it empty */
-        if (stackTop != NULL) {
-            stackTop = NULL;
+        if (stackTop != nullptr) {
+            stackTop = nullptr;
         }
-        if (otherStack.stackTop == NULL) {
-            stackTop = NULL;
+        if (otherStack.stackTop == nullptr) {
+            stackTop = nullptr;
         } else {
             current = otherStack.stackTop;
             stackTop = new node<Type>;
             stackTop->data = current->data;
-            stackTop->next = NULL;
+            stackTop->next = nullptr;
             last = stackTop;
             current = current->next;
             /* Copy the remaining stack */
-            while (current != NULL) {
+            while (current != nullptr) {
                 newNode = new node<Type>;
                 newNode->data = current->data;
-                newNode->next = NULL;
+                newNode->next = nullptr;
                 last->next = newNode;
                 last = newNode;
                 current = current->next;
@@ -68,7 +68,7 @@ class stack {
     ~stack() {}
 
     /** Determine whether the stack is empty */
-    bool isEmptyStack() { return (stackTop == NULL); }
+    bool isEmptyStack() { return (stackTop == nullptr); }
 
     /** Add new item to the stack */
     void push(Type item) {
@@ -82,7 +82,7 @@ class stack {
 
     /** Return the top element of the stack */
     Type top() {
-        assert(stackTop != NULL);
+        assert(stackTop != nullptr);
         return stackTop->data;
     }
 
@@ -100,30 +100,30 @@ class stack {
     }
 
     /** Clear stack */
-    void clear() { stackTop = NULL; }
+    void clear() { stackTop = nullptr; }
 
     /** Overload "=" the assignment operator */
     stack<Type> &operator=(const stack<Type> &otherStack) {
         node<Type> *newNode, *current, *last;
 
         /* If stack is no empty, make it empty */
-        if (stackTop != NULL) {
-            stackTop = NULL;
+        if (stackTop != nullptr) {
+            stackTop = nullptr;
         }
-        if (otherStack.stackTop == NULL) {
-            stackTop = NULL;
+        if (otherStack.stackTop == nullptr) {
+            stackTop = nullptr;
         } else {
             current = otherStack.stackTop;
             stackTop = new node<Type>;
             stackTop->data = current->data;
-            stackTop->next = NULL;
+            stackTop->next = nullptr;
             last = stackTop;
             current = current->next;
             /* Copy the remaining stack */
-            while (current != NULL) {
+            while (current != nullptr) {
                 newNode = new node<Type>;
                 newNode->data = current->data;
-                newNode->next = NULL;
+                newNode->next = nullptr;
                 last->next = newNode;
                 last = newNode;
                 current = current->next;
