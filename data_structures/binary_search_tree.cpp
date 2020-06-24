@@ -9,12 +9,12 @@
 #include <iostream>
 
 /** An struct node type.
-*  Define a element for tree insert/remove operation
-*/
+ *  Define a element for tree insert/remove operation
+ */
 struct node {
-    int val;       /**< int value of a node struct*/
-    node *left;    /**< left subtree pointer */
-    node *right;   /**< right subtree pointer */
+    int val;     /**< int value of a node struct*/
+    node *left;  /**< left subtree pointer */
+    node *right; /**< right subtree pointer */
 };
 
 struct queue {
@@ -156,27 +156,31 @@ void Post(node *n) {
 }
 
 void test_tree() {
-    node * root  = new node;
+    node *root = new node;
     root->val = 4;
     root->left = NULL;
     root->right = NULL;
-//test Insert()
+    // test Insert()
     Insert(root, 2);
     Insert(root, 1);
     Insert(root, 3);
     Insert(root, 6);
     Insert(root, 5);
     Insert(root, 7);
-    std::cout<< "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7" << std::endl;
+    std::cout
+        << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
+        << std::endl;
     In(root);
-//test Remove()
+    // test Remove()
     Remove(root, root, 2);
-    std::cout<< "\n after Remove() node 2 , the expected output should be : 1, 3, 4, 5, 6, 7" << std::endl;
+    std::cout << "\n after Remove() node 2 , the expected output should be : "
+                 "1, 3, 4, 5, 6, 7"
+              << std::endl;
     In(root);
 }
 
 int main() {
-    //test tree
+    // test tree
     test_tree();
 
     q.front = 0;
