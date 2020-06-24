@@ -36,21 +36,18 @@ using std::vector;
 #define endl std::endl
 
 /*! shorthand definition for `int64_t` */
-#define pb push_back
+#define pb  push_back
 #define MOD 1000000007
 
-/** returns absolute value */
-inline ll ab(ll x) { return x > 0LL ? x : -x; }
-
-/** global variable k
+/** global variable mat_size
  * @todo @stepfencurryxiao add documetnation
  */
-ll k;
+ll mat_size;
 
-/** global vector variables
+/** global vector variables used in the ::ans function.
  * @todo @stepfencurryxiao add documetnation
  */
-vector<ll> a, b, c;
+vector<ll> fib_b, fib_c;
 
 /** To multiply 2 matrices
  * \param [in] A matrix 1 of size (m\f$\times\f$n)
@@ -59,10 +56,10 @@ vector<ll> a, b, c;
  */
 vector<vector<ll>> multiply(const vector<vector<ll>> &A,
                             const vector<vector<ll>> &B) {
-    vector<vector<ll>> C(k + 1, vector<ll>(k + 1));
-    for (ll i = 1; i <= k; i++) {
-        for (ll j = 1; j <= k; j++) {
-            for (ll z = 1; z <= k; z++) {
+    vector<vector<ll>> C(mat_size + 1, vector<ll>(mat_size + 1));
+    for (ll i = 1; i <= mat_size; i++) {
+        for (ll j = 1; j <= mat_size; j++) {
+            for (ll z = 1; z <= mat_size; z++) {
                 C[i][j] = (C[i][j] + (A[i][z] * B[z][j]) % MOD) % MOD;
             }
         }
@@ -94,24 +91,24 @@ vector<vector<ll>> power(const vector<vector<ll>> &A, ll p) {
 ll ans(ll n) {
     if (n == 0)
         return 0;
-    if (n <= k)
-        return b[n - 1];
+    if (n <= mat_size)
+        return fib_b[n - 1];
     // F1
-    vector<ll> F1(k + 1);
-    for (ll i = 1; i <= k; i++) F1[i] = b[i - 1];
+    vector<ll> F1(mat_size + 1);
+    for (ll i = 1; i <= mat_size; i++) F1[i] = fib_b[i - 1];
 
     // Transpose matrix
-    vector<vector<ll>> T(k + 1, vector<ll>(k + 1));
-    for (ll i = 1; i <= k; i++) {
-        for (ll j = 1; j <= k; j++) {
-            if (i < k) {
+    vector<vector<ll>> T(mat_size + 1, vector<ll>(mat_size + 1));
+    for (ll i = 1; i <= mat_size; i++) {
+        for (ll j = 1; j <= mat_size; j++) {
+            if (i < mat_size) {
                 if (j == i + 1)
                     T[i][j] = 1;
                 else
                     T[i][j] = 0;
                 continue;
             }
-            T[i][j] = c[k - j];
+            T[i][j] = fib_c[mat_size - j];
         }
     }
     // T^n-1
@@ -119,7 +116,7 @@ ll ans(ll n) {
 
     // T*F1
     ll res = 0;
-    for (ll i = 1; i <= k; i++) {
+    for (ll i = 1; i <= mat_size; i++) {
         res = (res + (T[1][i] * F1[i]) % MOD) % MOD;
     }
     return res;
@@ -133,19 +130,19 @@ int main() {
     cin >> t;
     ll i, j, x;
     while (t--) {
-        cin >> k;
-        for (i = 0; i < k; i++) {
+        cin >> mat_size;
+        for (i = 0; i < mat_size; i++) {
             cin >> x;
-            b.pb(x);
+            fib_b.pb(x);
         }
-        for (i = 0; i < k; i++) {
+        for (i = 0; i < mat_size; i++) {
             cin >> x;
-            c.pb(x);
+            fib_c.pb(x);
         }
         cin >> x;
         cout << ans(x) << endl;
-        b.clear();
-        c.clear();
+        fib_b.clear();
+        fib_c.clear();
     }
     return 0;
 }
