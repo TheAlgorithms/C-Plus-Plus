@@ -2,7 +2,8 @@
  *
  * \file
  * \brief [Connected Components
- * (Connected Components)](https://en.wikipedia.org/wiki/Component_(graph_theory))
+ * (Connected
+ * Components)](https://en.wikipedia.org/wiki/Component_(graph_theory))
  *
  * \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
@@ -33,7 +34,7 @@ using std::vector;
  */
 class graph {
  private:
-   /** \brief adj stores adjacency list representation of graph */
+    /** \brief adj stores adjacency list representation of graph */
     vector<vector<int>> adj;
 
     /** \brief keep track of connected components */
@@ -46,16 +47,16 @@ class graph {
     void explore(int, vector<bool> &);
 
  public:
-    /** 
+    /**
      * \brief Constructor that intiliazes the graph on creation and set
      * the connected components to 0
      */
     explicit graph(int n) : adj(n, vector<int>()) { connected_components = 0; }
-    
+
     /** \brief Function to add a edge between two nodes or vertices of graph */
     void addEdge(int, int);
 
-    /** 
+    /**
      * \brief Function the calculates the connected compoents in the graph
      * by performing the depth first search on graph
      *
@@ -110,14 +111,14 @@ void graph::explore(int u, vector<bool> &visited) {
 
 /** Main function */
 int main() {
-  /// creating a graph with 4 vertex 
+    /// creating a graph with 4 vertex
     graph g(4);
 
-  /// Adding edges between vertices
+    /// Adding edges between vertices
     g.addEdge(1, 2);
     g.addEdge(3, 2);
 
-  /// printing the connected components
+    /// printing the connected components
     std::cout << g.getConnectedComponents();
     return 0;
 }
