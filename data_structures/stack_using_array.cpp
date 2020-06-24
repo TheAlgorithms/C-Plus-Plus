@@ -32,6 +32,7 @@ int main() {
     stack = new int[stack_size];
     int ch, x;
     do {
+        std::cout << "\n0. Exit";
         std::cout << "\n1. Push";
         std::cout << "\n2. Pop";
         std::cout << "\n3. Print";
