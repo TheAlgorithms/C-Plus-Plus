@@ -26,7 +26,7 @@
 
 /**
  *
- * Utility Lambda function to print the array after
+ * Utility function to print the array after
  * sorting.
  *
  * @param arr array to be printed
