@@ -50,8 +50,8 @@ bool is_armstrong(int number) {
 }
 
 /**
- * Function for testing the is_amicable() with 
- * all the test cases.
+ * Function for testing the is_armstrong() function 
+ * with all the test cases.
  */
 void test() {
     // is_armstrong(370) returns true.
