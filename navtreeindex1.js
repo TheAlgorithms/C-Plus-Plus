@@ -1,16 +1,15 @@
 var NAVTREEINDEX1 =
 {
-"d5/d4c/group__sorting.html#ga0a9a57a1f1bbba3d4822531d002b7e07":[8,0,9,3,3],
 "d5/d4c/group__sorting.html#ga0a9a57a1f1bbba3d4822531d002b7e07":[5,2,5],
 "d5/d4c/group__sorting.html#ga29d28b140174dbdde7c9f5157758435f":[8,0,9,2,1],
 "d5/d4c/group__sorting.html#ga29d28b140174dbdde7c9f5157758435f":[5,2,1],
 "d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73":[5,2,3],
 "d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73":[8,0,9,3,1],
-"d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[5,2,4],
 "d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[8,0,9,3,2],
+"d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[5,2,4],
 "d5/d4c/group__sorting.html#gabd9a93f241c5c86f2ec0abf8b66b4145":[8,0,9,2,0],
-"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,9,3,0],
 "d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[5,2,2],
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,9,3,0],
 "d5/d67/bayes__theorem_8cpp.html":[8,0,6,1],
 "d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba":[8,0,6,1,0],
 "d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f":[8,0,6,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[7,0,23,2],
 "d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[7,0,23,0],
 "d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[7,0,23,4],
-"d8/dcc/namespacestd.html":[6,0,4]
+"d8/dcc/namespacestd.html":[6,0,4],
+"d8/ddf/sieve__of__eratosthenes_8cpp.html":[8,0,3,26]
 };

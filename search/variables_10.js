@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights_3987',['weights',['../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492',1,'machine_learning::adaline']]]
+  ['x_3987',['x',['../d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7',1,'Point']]]
 ];

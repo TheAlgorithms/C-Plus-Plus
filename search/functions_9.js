@@ -59,7 +59,7 @@ var searchData=
   ['islower_3077',['islower',['http://en.cppreference.com/w/cpp/string/byte/islower.html',0,'std']]],
   ['isnan_3078',['isnan',['http://en.cppreference.com/w/cpp/numeric/math/isnan.html',0,'std']]],
   ['isnormal_3079',['isnormal',['http://en.cppreference.com/w/cpp/numeric/math/isnormal.html',0,'std']]],
-  ['isprime_3080',['IsPrime',['../da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf',1,'IsPrime(int number):&#160;primality_test.cpp'],['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'isPrime(int64_t m):&#160;modular_inverse_fermat_little_theorem.cpp']]],
+  ['isprime_3080',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'isPrime(int64_t m):&#160;modular_inverse_fermat_little_theorem.cpp'],['../da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf',1,'IsPrime(int number):&#160;primality_test.cpp']]],
   ['isprint_3081',['isprint',['http://en.cppreference.com/w/cpp/string/byte/isprint.html',0,'std']]],
   ['ispunct_3082',['ispunct',['http://en.cppreference.com/w/cpp/string/byte/ispunct.html',0,'std']]],
   ['isspace_3083',['isspace',['http://en.cppreference.com/w/cpp/string/byte/isspace.html',0,'std']]],

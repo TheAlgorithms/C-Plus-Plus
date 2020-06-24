@@ -168,10 +168,9 @@ var NAVTREEINDEX0 =
 "d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25":[8,0,3,17,1],
 "d4/d21/least__common__multiple_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,17,2],
 "d4/d32/fibonacci__fast_8cpp.html":[8,0,3,10],
-"d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9":[8,0,3,10,2],
-"d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f":[8,0,3,10,0],
-"d4/d32/fibonacci__fast_8cpp.html#a692ac7187ee88621a9f78fca78ec498d":[8,0,3,10,3],
-"d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,10,1],
+"d4/d32/fibonacci__fast_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[8,0,3,10,0],
+"d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f":[8,0,3,10,1],
+"d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,10,2],
 "d4/d45/gcd__recursive__euclidean_8cpp.html":[8,0,3,14],
 "d4/d45/gcd__recursive__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e":[8,0,3,14,0],
 "d4/d45/gcd__recursive__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,14,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "d5/d29/struct_min_heap_node.html#a41f73e87e4ddf1fbe72ae0db2b4e674e":[7,0,19,0],
 "d5/d29/struct_min_heap_node.html#a6df054c3211ae8a8ec15a21e7d18343a":[7,0,19,4],
 "d5/d29/struct_min_heap_node.html#ad06549be842d9a2cacdb3e55b019e68c":[7,0,19,3],
-"d5/d4c/group__sorting.html":[5,2]
+"d5/d4c/group__sorting.html":[5,2],
+"d5/d4c/group__sorting.html#ga0a9a57a1f1bbba3d4822531d002b7e07":[8,0,9,3,3]
 };

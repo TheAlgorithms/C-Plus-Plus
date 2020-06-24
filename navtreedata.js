@@ -101,9 +101,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d5/d4c/group__sorting.html#ga0a9a57a1f1bbba3d4822531d002b7e07",
-"d8/ddf/sieve__of__eratosthenes_8cpp.html",
-"dc/d1a/pascal__triangle_8cpp.html",
-"globals_s.html"
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a02fd73d861ef2e4aabb38c0c9ff82947",
+"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c",
+"globals_t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

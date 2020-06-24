@@ -6,5 +6,5 @@ var paranthesis__matching_8cpp =
     [ "pop", "dc/dc5/paranthesis__matching_8cpp.html#a6d25c7dfbfeb52c3cb9d1b56ab49b664", null ],
     [ "push", "dc/dc5/paranthesis__matching_8cpp.html#aae41c72130114bf31204cde6873b6095", null ],
     [ "stack", "dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7", null ],
-    [ "top", "dc/dc5/paranthesis__matching_8cpp.html#af93f4f37fc2ad9c37af4a715423b110c", null ]
+    [ "stack_idx", "dc/dc5/paranthesis__matching_8cpp.html#af4c937d823c412d99fbe60c99dbf0a4f", null ]
 ];

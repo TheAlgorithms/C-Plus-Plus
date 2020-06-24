@@ -109,7 +109,7 @@ Collaboration diagram for machine_learning::adaline:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0acbe32aaab897e7939e5b0454035b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a0acbe32aaab897e7939e5b0454035b8c">adaline</a> (int num_features, const double <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>=0.01<a class="el" href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a>, const double <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>=1e-5)</td></tr>
+<tr class="memitem:a0acbe32aaab897e7939e5b0454035b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a0acbe32aaab897e7939e5b0454035b8c">adaline</a> (int num_features, const double <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>=0.01f, const double <a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>=1e-5)</td></tr>
 <tr class="separator:a0acbe32aaab897e7939e5b0454035b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab11242d9ad5b03a75911e29b04f78fd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3">predict</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;x, double *out=nullptr)</td></tr>
 <tr class="separator:ab11242d9ad5b03a75911e29b04f78fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +167,7 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>eta</em> = <code>0.01<a class="el" href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a></code>, </td>
+          <td class="paramname"><em>eta</em> = <code>0.01f</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -207,7 +207,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            1);  <span class="comment">// additional weight is for the constant bias term</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// initialize with random weights in the range [-50, 49]</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] = 1.<a class="code" href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] = 1.f;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// weights[i] = (static_cast&lt;double&gt;(std::rand() % 100) - 50);</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
@@ -530,7 +530,6 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ainner_product_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a></div><div class="ttdeci">T inner_product(T... args)</div></div>
-<div class="ttc" id="afibonacci__fast_8cpp_html_a3ba232425d45f9e9c0b87a8cf7ab69d9"><div class="ttname"><a href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a></div><div class="ttdeci">uint64_t f[MAX]</div><div class="ttdef"><b>Definition:</b> fibonacci_fast.cpp:27</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; double &gt;</a></div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:112</div></div>
@@ -549,7 +548,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d77/namespacemachine__learning.html">machine_learning</a></li><li class="navelem"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html">adaline</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 17:40:29 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 20:42:37 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

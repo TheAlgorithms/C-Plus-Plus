@@ -574,7 +574,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">               current node */</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordtype">double</span> d2 =</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                (d_min_x - x) * (d_min_x - x) + (d_min_y - y) * (d_min_y - y);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordtype">double</span> scale_factor = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-d2 / (2.<a class="code" href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a> * alpha * alpha));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordtype">double</span> scale_factor = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-d2 / (2.f * alpha * alpha));</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            (*W)[x][y] += (X - (*W)[x][y]) * alpha * scale_factor;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
@@ -592,7 +592,6 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="afibonacci__fast_8cpp_html_a3ba232425d45f9e9c0b87a8cf7ab69d9"><div class="ttname"><a href="../../d4/d32/fibonacci__fast_8cpp.html#a3ba232425d45f9e9c0b87a8cf7ab69d9">f</a></div><div class="ttdeci">uint64_t f[MAX]</div><div class="ttdef"><b>Definition:</b> fibonacci_fast.cpp:27</div></div>
 <div class="ttc" id="anamespacemachine__learning_html_a361674452869413536ee501f053129a8"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a361674452869413536ee501f053129a8">machine_learning::update_weights</a></div><div class="ttdeci">void update_weights(const std::valarray&lt; double &gt; &amp;x, std::vector&lt; std::valarray&lt; double &gt;&gt; *W, std::valarray&lt; double &gt; *D, double alpha, int R)</div><div class="ttdef"><b>Definition:</b> kohonen_som_trace.cpp:100</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
@@ -617,7 +616,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d77/namespacemachine__learning.html">machine_learning</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 17:40:29 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 20:42:37 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
