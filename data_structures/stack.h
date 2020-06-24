@@ -44,7 +44,7 @@ class stack {
     }
 
     /** Copy constructor*/
-    explicit stack(const stack &other) {
+    explicit stack(const stack<Type> &otherStack) {
         node<Type> *newNode, *current, *last;
 
         /* If stack is no empty, make it empty */
