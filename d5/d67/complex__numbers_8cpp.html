@@ -117,7 +117,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5a73e9d4e68af8cedb95bd0864054b89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d67/complex__numbers_8cpp.html#a5a73e9d4e68af8cedb95bd0864054b89">operator==</a> (const <a class="el" href="../../da/d5a/class_complex.html">Complex</a> &amp;<a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, const <a class="el" href="../../da/d5a/class_complex.html">Complex</a> &amp;b)</td></tr>
+<tr class="memitem:a5a73e9d4e68af8cedb95bd0864054b89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d67/complex__numbers_8cpp.html#a5a73e9d4e68af8cedb95bd0864054b89">operator==</a> (const <a class="el" href="../../da/d5a/class_complex.html">Complex</a> &amp;a, const <a class="el" href="../../da/d5a/class_complex.html">Complex</a> &amp;b)</td></tr>
 <tr class="separator:a5a73e9d4e68af8cedb95bd0864054b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af738b2a6921f0a6868bb7c5b4c0d18e0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d67/complex__numbers_8cpp.html#af738b2a6921f0a6868bb7c5b4c0d18e0">operator&lt;&lt;</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::ostream</a> &amp;os, const <a class="el" href="../../da/d5a/class_complex.html">Complex</a> &amp;num)</td></tr>
 <tr class="separator:af738b2a6921f0a6868bb7c5b4c0d18e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,9 +272,15 @@ Here is the call graph for this function:</div>
 <dd>
 'False' Otherwise. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                                    {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>.real() == b.real() &amp;&amp; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>.imag() == b.imag();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> a.real() == b.<a class="code" href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6">real</a>() &amp;&amp; a.imag() == b.<a class="code" href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">imag</a>();</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d67/complex__numbers_8cpp_a5a73e9d4e68af8cedb95bd0864054b89_cgraph.svg" width="255" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a88ec9ad42717780d6caaff9d3d6977f9"></a>
@@ -368,7 +374,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclass_complex_html_a312e4b19146128408fb06e0150b0faf6"><div class="ttname"><a href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6">Complex::real</a></div><div class="ttdeci">double real() const</div><div class="ttdef"><b>Definition:</b> complex_numbers.cpp:60</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="areal_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">std::complex::real</a></div><div class="ttdeci">T real(T... args)</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="aclass_complex_html_af8aacf982e2e6c142921bc850f6dc974"><div class="ttname"><a href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">Complex::imag</a></div><div class="ttdeci">double imag() const</div><div class="ttdef"><b>Definition:</b> complex_numbers.cpp:65</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
@@ -379,7 +384,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../d5/d67/complex__numbers_8cpp.html">complex_numbers.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:07 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

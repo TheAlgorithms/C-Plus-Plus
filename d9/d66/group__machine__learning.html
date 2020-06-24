@@ -132,7 +132,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, double b)</td></tr>
+<tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double a, double b)</td></tr>
 <tr class="separator:gaf5ce14f026d6d231bef29161bac2b485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c606bc85a3e9fd9d010f874ad760336"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336">save_2d_data</a> (const char *fname, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;X)</td></tr>
 <tr class="separator:ga6c606bc85a3e9fd9d010f874ad760336"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +183,15 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>random number in the range \([a,b]\) </dd></dl>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                   {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ((b - <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>) * (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100) / 100.f) + <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ((b - a) * (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100) / 100.f) + a;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_gaf5ce14f026d6d231bef29161bac2b485_cgraph.svg" width="204" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="gab53c14440b2b2dd3172c66afc5c2f63f"></a>
@@ -414,7 +420,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="amin_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a></div><div class="ttdeci">T min_element(T... args)</div></div>
 <div class="ttc" id="aclose_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">std::ofstream::close</a></div><div class="ttdeci">T close(T... args)</div></div>
 <div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
@@ -422,7 +427,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:09 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
 <tr class="separator:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a> (const void *<a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, const void *b)</td></tr>
+<tr class="memitem:a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c">compare</a> (const void *a, const void *b)</td></tr>
 <tr class="separator:a7eb77daed2cf1513f6d68c47a1c2db1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895b313cb2671e8f712040460325573e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html#a895b313cb2671e8f712040460325573e">test_int</a> (const int NUM_DATA)</td></tr>
 <tr class="separator:a895b313cb2671e8f712040460325573e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>function to compare sorting using cstdlib's qsort </p>
 <div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                          {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    T arg1 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T *<span class="keyword">&gt;</span>(<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    T arg1 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T *<span class="keyword">&gt;</span>(a);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    T arg2 = *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T *<span class="keyword">&gt;</span>(b);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (arg1 &lt; arg2)</div>
@@ -500,7 +500,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aatoi_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a></div><div class="ttdeci">T atoi(T... args)</div></div>
 <div class="ttc" id="aqsort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/qsort.html">std::qsort</a></div><div class="ttdeci">T qsort(T... args)</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
@@ -512,7 +511,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bb1b521853a9c46347182a9d10420771.html">sorting</a></li><li class="navelem"><a class="el" href="../../d4/d7a/shell__sort2_8cpp.html">shell_sort2.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:09 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

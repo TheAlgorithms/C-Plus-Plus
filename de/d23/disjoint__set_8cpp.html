@@ -319,14 +319,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                         {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = <a class="code" href="../../de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8">Find</a>(x), b = <a class="code" href="../../de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8">Find</a>(y);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> != b) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (rank[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>] &lt; rank[b]) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            root[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>] = b;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rank[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>] &gt; rank[b]) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            root[b] = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> a = <a class="code" href="../../de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8">Find</a>(x), b = <a class="code" href="../../de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8">Find</a>(y);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (a != b) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (rank[a] &lt; rank[b]) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            root[a] = b;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rank[a] &gt; rank[b]) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            root[b] = a;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            root[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>] = b;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            root[a] = b;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            ++rank[b];</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
@@ -348,13 +348,12 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="amatrix__exponentiation_8cpp_html_a600eaf353befc174637855795f12d258"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258">endl</a></div><div class="ttdeci">#define endl</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:36</div></div>
 <div class="ttc" id="adisjoint__set_8cpp_html_a2fb0a7cd26a477e2d48ba7e0118bc985"><div class="ttname"><a href="../../de/d23/disjoint__set_8cpp.html#a2fb0a7cd26a477e2d48ba7e0118bc985">InSameUnion</a></div><div class="ttdeci">bool InSameUnion(int x, int y)</div><div class="ttdef"><b>Definition:</b> disjoint_set.cpp:67</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="adisjoint__set_8cpp_html_a44481bb75386fbb0f958a388d4b9f757"><div class="ttname"><a href="../../de/d23/disjoint__set_8cpp.html#a44481bb75386fbb0f958a388d4b9f757">Union</a></div><div class="ttdeci">void Union(int x, int y)</div><div class="ttdef"><b>Definition:</b> disjoint_set.cpp:78</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html">data_structures</a></li><li class="navelem"><a class="el" href="../../de/d23/disjoint__set_8cpp.html">disjoint_set.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:07 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

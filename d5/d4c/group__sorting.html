@@ -272,7 +272,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                          {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> i, j, <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> i, j, k;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> n1 = m - l + 1;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> n2 = r - m;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
@@ -283,28 +283,28 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    i = 0;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    j = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = l;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    k = l;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">while</span> (i &lt; n1 &amp;&amp; j &lt; n2) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (L[i] &lt;= R[j]) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            arr[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = L[i];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            arr[k] = L[i];</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            i++;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            arr[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = R[j];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            arr[k] = R[j];</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            j++;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        k++;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">while</span> (i &lt; n1) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        arr[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = L[i];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        arr[k] = L[i];</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        i++;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        k++;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">while</span> (j &lt; n2) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        arr[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = R[j];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        arr[k] = R[j];</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        j++;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        k++;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">delete</span>[] L;</div>
@@ -409,13 +409,12 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:83</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:09 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:57 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

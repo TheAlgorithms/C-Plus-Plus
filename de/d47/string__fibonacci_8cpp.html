@@ -110,7 +110,7 @@ Include dependency graph for string_fibonacci.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a28052eee05d43c2ebc5147c52bd50c35"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35">add</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> b)</td></tr>
+<tr class="memitem:a28052eee05d43c2ebc5147c52bd50c35"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35">add</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> a, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> b)</td></tr>
 <tr class="separator:a28052eee05d43c2ebc5147c52bd50c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8055ee368a5d5b24de01bdde6bf8fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a> (uint64_t n)</td></tr>
 <tr class="separator:ad8055ee368a5d5b24de01bdde6bf8fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,18 +162,18 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> carry = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// fills up with zeros</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>.length() &lt; b.length()) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = <span class="stringliteral">&quot;0&quot;</span> + <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">while</span> (a.length() &lt; b.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>()) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        a = <span class="stringliteral">&quot;0&quot;</span> + a;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// fills up with zeros</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span> (b.length() &lt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>.length()) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span> (b.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">length</a>() &lt; a.length()) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        b = <span class="stringliteral">&quot;0&quot;</span> + b;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// adds the numbers a and b</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>.length() - 1; i &gt;= 0; i--) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">char</span> val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(((<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i] - 48) + (b[i] - 48)) + 48 + carry);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = a.length() - 1; i &gt;= 0; i--) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">char</span> val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(((a[i] - 48) + (b[i] - 48)) + 48 + carry);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (val &gt; 57) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            carry = 1;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            val -= 10;</div>
@@ -195,7 +195,13 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> temp;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d47/string__fibonacci_8cpp_a28052eee05d43c2ebc5147c52bd50c35_cgraph.svg" width="226" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ad8055ee368a5d5b24de01bdde6bf8fca"></a>
@@ -233,7 +239,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d47/string__fibonacci_8cpp_ad8055ee368a5d5b24de01bdde6bf8fca_cgraph.svg" width="196" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d47/string__fibonacci_8cpp_ad8055ee368a5d5b24de01bdde6bf8fca_cgraph.svg" width="368" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -266,7 +272,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d47/string__fibonacci_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="295" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d47/string__fibonacci_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="467" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -277,7 +283,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="asubstr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">std::string::substr</a></div><div class="ttdeci">T substr(T... args)</div></div>
 <div class="ttc" id="astring__fibonacci_8cpp_html_a28052eee05d43c2ebc5147c52bd50c35"><div class="ttname"><a href="../../de/d47/string__fibonacci_8cpp.html#a28052eee05d43c2ebc5147c52bd50c35">add</a></div><div class="ttdeci">std::string add(std::string a, std::string b)</div><div class="ttdef"><b>Definition:</b> string_fibonacci.cpp:24</div></div>
 <div class="ttc" id="astring__fibonacci_8cpp_html_ad8055ee368a5d5b24de01bdde6bf8fca"><div class="ttname"><a href="../../de/d47/string__fibonacci_8cpp.html#ad8055ee368a5d5b24de01bdde6bf8fca">fib_Accurate</a></div><div class="ttdeci">void fib_Accurate(uint64_t n)</div><div class="ttdef"><b>Definition:</b> string_fibonacci.cpp:68</div></div>
@@ -286,7 +291,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../de/d47/string__fibonacci_8cpp.html">string_fibonacci.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:08 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

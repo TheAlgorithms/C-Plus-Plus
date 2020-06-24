@@ -385,13 +385,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> text_length = text.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>(), pattern_length = pattern.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> failure = <a class="code" href="../../d9/d03/namespacestring__search.html#aa422aab133d4ed5e5d6022a7f701271f">getFailureArray</a>(pattern);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> k = 0;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; text_length; j++) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> != -1 &amp;&amp; pattern[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] != text[j]) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = failure[<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">while</span> (k != -1 &amp;&amp; pattern[k] != text[j]) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            k = failure[k];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> == pattern_length)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        k++;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (k == pattern_length)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -536,7 +536,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="arabin__karp_8cpp_html_ac4add2a227a10511e0128d63952030e8"><div class="ttname"><a href="../../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8">PRIME</a></div><div class="ttdeci">#define PRIME</div><div class="ttdoc">Prime modulus for hash functions.</div><div class="ttdef"><b>Definition:</b> rabin_karp.cpp:16</div></div>
 <div class="ttc" id="anamespacestring__search_html_a8fb0bc932ba8b582c9f4c71338d050f8"><div class="ttname"><a href="../../d9/d03/namespacestring__search.html#a8fb0bc932ba8b582c9f4c71338d050f8">string_search::create_hash</a></div><div class="ttdeci">int64_t create_hash(const std::string &amp;s, int n)</div><div class="ttdef"><b>Definition:</b> rabin_karp.cpp:25</div></div>
 <div class="ttc" id="anamespacestring__search_html_aed769d565b705a9b3e0eb1ec74088893"><div class="ttname"><a href="../../d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893">string_search::recalculate_hash</a></div><div class="ttdeci">int64_t recalculate_hash(const std::string &amp;s, int old_index, int new_index, int64_t old_hash, int patLength)</div><div class="ttdef"><b>Definition:</b> rabin_karp.cpp:42</div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
 <div class="ttc" id="anamespacestring__search_html_aebe07cea289a13142503d98be7df11fd"><div class="ttname"><a href="../../d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd">string_search::check_if_equal</a></div><div class="ttdeci">bool check_if_equal(const std::string &amp;str1, const std::string &amp;str2, int start1, int end1, int start2, int end2)</div><div class="ttdef"><b>Definition:</b> rabin_karp.cpp:60</div></div>
 <div class="ttc" id="asubstr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html">std::string::substr</a></div><div class="ttdeci">T substr(T... args)</div></div>
 <div class="ttc" id="anamespacestring__search_html_aa422aab133d4ed5e5d6022a7f701271f"><div class="ttname"><a href="../../d9/d03/namespacestring__search.html#aa422aab133d4ed5e5d6022a7f701271f">string_search::getFailureArray</a></div><div class="ttdeci">std::vector&lt; int &gt; getFailureArray(const std::string &amp;pattern)</div><div class="ttdef"><b>Definition:</b> knuth_morris_pratt.cpp:33</div></div>
@@ -545,7 +544,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d03/namespacestring__search.html">string_search</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:10 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:57 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next_3974',['next',['../d5/da1/structnode.html#a135f25acadfbba644f848f1aa18d8350',1,'node::next()'],['../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f',1,'list::next()']]]
+  ['mat_5fsize_3973',['mat_size',['../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54',1,'matrix_exponentiation.cpp']]]
 ];

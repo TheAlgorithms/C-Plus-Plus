@@ -44,7 +44,7 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M38.32,-28.07C51.55,-25.23 69.85,-21.3 86.01,-17.83"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="87.2,-21.16 96.25,-15.64 85.73,-14.31 87.2,-21.16"/>
@@ -113,31 +113,37 @@
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="582.5,-63.5 582.5,-82.5 635.5,-82.5 635.5,-63.5 582.5,-63.5"/>
-<text text-anchor="middle" x="609" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
+<polygon fill="white" stroke="black" points="582.5,-44.5 582.5,-63.5 635.5,-63.5 635.5,-44.5 582.5,-44.5"/>
+<text text-anchor="middle" x="609" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M512.14,-61.51C532.35,-63.93 554.07,-66.53 571.71,-68.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="571.78,-72.18 582.12,-69.9 572.61,-65.23 571.78,-72.18"/>
+<path fill="none" stroke="midnightblue" d="M512.14,-54C532.35,-54 554.07,-54 571.71,-54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="572.12,-57.5 582.12,-54 572.12,-50.5 572.12,-57.5"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="548,-25.5 548,-44.5 670,-44.5 670,-25.5 548,-25.5"/>
-<text text-anchor="middle" x="609" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
+<polygon fill="white" stroke="black" points="548,-6.5 548,-25.5 670,-25.5 670,-6.5 548,-6.5"/>
+<text text-anchor="middle" x="609" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M512.14,-46.49C520.6,-45.48 529.32,-44.43 537.9,-43.4"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="538.37,-46.87 547.88,-42.21 537.53,-39.92 538.37,-46.87"/>
+<path fill="none" stroke="midnightblue" d="M489.5,-44.41C510.41,-39.4 536.21,-33.21 558.39,-27.89"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="559.38,-31.26 568.29,-25.52 557.75,-24.45 559.38,-31.26"/>
+</g>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge8" class="edge">
+<title>Node8&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M510.78,-16C519.64,-16 528.82,-16 537.84,-16"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="537.93,-19.5 547.93,-16 537.93,-12.5 537.93,-19.5"/>
 </g>
 </g>
 </svg>

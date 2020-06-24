@@ -190,33 +190,33 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>main function </p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;           {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = -1, b = 1, x, z;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> a = -1, b = 1, x, z;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// loop to find initial intervals a, b</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a>; i++) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        z = <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        z = <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(a);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        x = <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(b);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2">sgn</a>(z) == <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2">sgn</a>(x)) {  <span class="comment">// same signs, increase interval</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            b++;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>--;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            a--;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        } <span class="keywordflow">else</span> {  <span class="comment">// if opposite signs, we got our interval</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nFirst initial: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nFirst initial: &quot;</span> &lt;&lt; a;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nSecond initial: &quot;</span> &lt;&lt; b;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// start iterations</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a>; i++) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        x = (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> + b) / 2;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        x = (a + b) / 2;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        z = <a class="code" href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(x);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nz: &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;\t[&quot;</span> &lt;&lt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> &lt;&lt; <span class="stringliteral">&quot; , &quot;</span> &lt;&lt; b</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nz: &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;\t[&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; , &quot;</span> &lt;&lt; b</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; | Bisect: &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (z &lt; 0) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = x;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            a = x;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            b = x;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
@@ -228,7 +228,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nRoot: &quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;\t\tSteps: &quot;</span> &lt;&lt; i &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d6a/bisection__method_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="272" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a1ab31b90bc584c635ec159468ceed9b2"></a>
@@ -259,7 +265,6 @@ template&lt;typename T &gt; </div>
 </div><!-- doc-content -->
 <div class="ttc" id="abisection__method_8cpp_html_a1ab31b90bc584c635ec159468ceed9b2"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2">sgn</a></div><div class="ttdeci">int sgn(T val)</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:32</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_a0a3abbca80bc98e7abcb3ae73abe0f14"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14">MAX_ITERATIONS</a></div><div class="ttdeci">#define MAX_ITERATIONS</div><div class="ttdoc">Maximum number of iterations to check.</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:22</div></div>
 <div class="ttc" id="abisection__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> bisection_method.cpp:26</div></div>
@@ -268,7 +273,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_9c6faab82c22511b50177aa2e38e2780.html">numerical_methods</a></li><li class="navelem"><a class="el" href="../../d7/d6a/bisection__method_8cpp.html">bisection_method.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:08 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

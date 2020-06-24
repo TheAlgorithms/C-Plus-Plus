@@ -109,7 +109,7 @@ Include dependency graph for gcd_of_n_numbers.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a25034543c20f271da04fb24ad2b2747a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> (int *<a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, int n)</td></tr>
+<tr class="memitem:a25034543c20f271da04fb24ad2b2747a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> (int *a, int n)</td></tr>
 <tr class="separator:a25034543c20f271da04fb24ad2b2747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,12 +153,12 @@ Functions</h2></td></tr>
 </dl>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                       {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> j = 1;  <span class="comment">// to access all elements of the array starting from 1</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[0];</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> = a[0];</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">while</span> (j &lt; n) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[j] % <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> == 0)  <span class="comment">// value of gcd is as needed so far</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (a[j] % <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> == 0)  <span class="comment">// value of gcd is as needed so far</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            j++;              <span class="comment">// so we check for next element</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[j] % <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>;  <span class="comment">// calculating GCD by division method</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a> = a[j] % <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>;  <span class="comment">// calculating GCD by division method</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
@@ -184,14 +184,14 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> n;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n:&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> *<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> *a = <span class="keyword">new</span> <span class="keywordtype">int</span>[n];</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the n numbers:&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) std::cin &gt;&gt; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>[i];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++) std::cin &gt;&gt; a[i];</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;GCD of entered n numbers:&quot;</span> &lt;&lt; <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>(<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;GCD of entered n numbers:&quot;</span> &lt;&lt; <a class="code" href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a>(a, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span>[] a;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -206,7 +206,6 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_a9ecd98ce0064e2f7f97bb6a92f58ee72"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a></div><div class="ttdeci">vector&lt; ll &gt; a</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:53</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="agcd__of__n__numbers_8cpp_html_a25034543c20f271da04fb24ad2b2747a"><div class="ttname"><a href="../../d1/d11/gcd__of__n__numbers_8cpp.html#a25034543c20f271da04fb24ad2b2747a">gcd</a></div><div class="ttdeci">int gcd(int *a, int n)</div><div class="ttdef"><b>Definition:</b> gcd_of_n_numbers.cpp:15</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
@@ -214,7 +213,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_296d53ceaeaa7e099814a6def439fe8a.html">math</a></li><li class="navelem"><a class="el" href="../../d1/d11/gcd__of__n__numbers_8cpp.html">gcd_of_n_numbers.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:07 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

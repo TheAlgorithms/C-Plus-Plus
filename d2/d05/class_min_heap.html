@@ -120,7 +120,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> (int i)</td
 <tr class="separator:a336ac71f0d857269fe9a98058a3cd130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ac126eabb0c3ce04047172abccca29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#a37ac126eabb0c3ce04047172abccca29">deleteKey</a> (int i)</td></tr>
 <tr class="separator:a37ac126eabb0c3ce04047172abccca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#aef78f3384f5a0ae880ad0883d2d44b82">insertKey</a> (int <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>)</td></tr>
+<tr class="memitem:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#aef78f3384f5a0ae880ad0883d2d44b82">insertKey</a> (int k)</td></tr>
 <tr class="separator:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -338,7 +338,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// First insert the new key at the end</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>++;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> i = <a class="code" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = k;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Fix the min heap property if it is violated</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
@@ -459,7 +459,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclass_min_heap_html_aa7f726cc6327955d22871592227432f5"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa7f726cc6327955d22871592227432f5">MinHeap::decreaseKey</a></div><div class="ttdeci">void decreaseKey(int i, int new_val)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:76</div></div>
 <div class="ttc" id="aclass_min_heap_html_a88b4aa3e66392a3eabbf2517a9a79a02"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a88b4aa3e66392a3eabbf2517a9a79a02">MinHeap::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdoc">maximum possible size of min heap</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:12</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
 <div class="ttc" id="aclass_min_heap_html_a34a93a87967308eb516328c0aca3c48e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">MinHeap::harr</a></div><div class="ttdeci">int * harr</div><div class="ttdoc">pointer to array of elements in heap</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:11</div></div>
 <div class="ttc" id="aclass_min_heap_html_aaef438c1056492cb62c4a4d9035b5cad"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aaef438c1056492cb62c4a4d9035b5cad">MinHeap::MinHeapify</a></div><div class="ttdeci">void MinHeapify(int)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:113</div></div>
 <div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:31</div></div>
@@ -470,7 +469,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d05/class_min_heap.html">MinHeap</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:09 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:57 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

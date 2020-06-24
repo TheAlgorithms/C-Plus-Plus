@@ -134,7 +134,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double <a class="el" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9ecd98ce0064e2f7f97bb6a92f58ee72">a</a>, double b)</td></tr>
+<tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double a, double b)</td></tr>
 <tr class="separator:gaf5ce14f026d6d231bef29161bac2b485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c606bc85a3e9fd9d010f874ad760336"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336">save_2d_data</a> (const char *fname, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;X)</td></tr>
 <tr class="separator:ga6c606bc85a3e9fd9d010f874ad760336"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,14 +309,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            X[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            W[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = 0; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> &lt; num_out; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++) {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                W[i][k] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++)</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    W[i][k][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            }</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
@@ -367,14 +367,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            X[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            W[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = 0; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> &lt; num_out; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++) {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                W[i][k] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++)</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                    W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                    W[i][k][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            }</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        }</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div>
@@ -425,14 +425,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            X[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            W[i] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> = 0; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a> &lt; num_out; <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>++) {</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                W[i][k] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++)</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                    W[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a>][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                    W[i][k][j] = <a class="code" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            }</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        }</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
@@ -512,7 +512,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_a6b5e744876fd980a3451cbb385d4e755_cgraph.svg" width="250" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_a6b5e744876fd980a3451cbb385d4e755_cgraph.svg" width="370" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -579,7 +579,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_ab3081e021270ba21a9fd88646f6a6e26_cgraph.svg" width="256" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_ab3081e021270ba21a9fd88646f6a6e26_cgraph.svg" width="376" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -650,7 +650,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_a0e7435446ed7c763f7de79a468add2e0_cgraph.svg" width="256" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/def/kohonen__som__topology_8cpp_a0e7435446ed7c763f7de79a468add2e0_cgraph.svg" width="376" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -665,7 +665,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclock_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a></div><div class="ttdeci">T clock(T... args)</div></div>
 <div class="ttc" id="akohonen__som__topology_8cpp_html_a6d0455dd5c30adda100e95f0423c786e"><div class="ttname"><a href="../../d4/def/kohonen__som__topology_8cpp.html#a6d0455dd5c30adda100e95f0423c786e">test3</a></div><div class="ttdeci">void test3()</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:523</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="amatrix__exponentiation_8cpp_html_afcf0d19607cd0edd8ae333d2b9c220c0"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#afcf0d19607cd0edd8ae333d2b9c220c0">k</a></div><div class="ttdeci">ll k</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:48</div></div>
 <div class="ttc" id="avalarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="akohonen__som__topology_8cpp_html_ab3081e021270ba21a9fd88646f6a6e26"><div class="ttname"><a href="../../d4/def/kohonen__som__topology_8cpp.html#ab3081e021270ba21a9fd88646f6a6e26">test_3d_classes1</a></div><div class="ttdeci">void test_3d_classes1(std::vector&lt; std::valarray&lt; double &gt;&gt; *data)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:399</div></div>
 <div class="ttc" id="akohonen__som__topology_8cpp_html_a0283886819c7c140a023582b7269e2d0"><div class="ttname"><a href="../../d4/def/kohonen__som__topology_8cpp.html#a0283886819c7c140a023582b7269e2d0">test2</a></div><div class="ttdeci">void test2()</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:439</div></div>
@@ -684,7 +683,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_3343723ae086de42ee4ca9774da3a13f.html">machine_learning</a></li><li class="navelem"><a class="el" href="../../d4/def/kohonen__som__topology_8cpp.html">kohonen_som_topology.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 22:45:07 for Algorithms_in_C++ by
+    <li class="footer">Generated on Wed Jun 24 2020 22:52:56 for Algorithms_in_C++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
