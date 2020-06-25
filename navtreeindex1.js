@@ -13,8 +13,8 @@ var NAVTREEINDEX1 =
 "d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[5,2,4],
 "d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[8,0,10,3,2],
 "d5/d4c/group__sorting.html#gabd9a93f241c5c86f2ec0abf8b66b4145":[8,0,10,2,0],
-"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,10,3,0],
 "d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[5,2,2],
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,10,3,0],
 "d5/d67/bayes__theorem_8cpp.html":[8,0,7,1],
 "d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba":[8,0,7,1,0],
 "d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f":[8,0,7,1,1],
@@ -203,6 +203,8 @@ var NAVTREEINDEX1 =
 "d7/d89/double__factorial_8cpp.html":[8,0,4,5],
 "d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26":[8,0,4,5,0],
 "d7/d89/double__factorial_8cpp.html#a68ba20fed2ce427f6469c7689437829d":[8,0,4,5,1],
+"d7/d89/double__factorial_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,4,5,4],
+"d7/d89/double__factorial_8cpp.html#abbbcebf3a2d0c67f4c3cfb5511a97981":[8,0,4,5,3],
 "d7/d89/double__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,4,5,2],
 "d7/dba/cll_8h_source.html":[8,0,0,0,0],
 "d7/de0/stack_8h.html":[8,0,0,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "d8/dab/classstatistics_1_1stats__computer2.html#af6198817084276113b3c064e87ce0555":[7,0,1,1,3],
 "d8/dc8/struct_point.html":[7,0,23],
 "d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7":[7,0,23,3],
-"d8/dc8/struct_point.html#a8c779e11e694b20e0946105a9f5de842":[7,0,23,1],
-"d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[7,0,23,2],
-"d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[7,0,23,0]
+"d8/dc8/struct_point.html#a8c779e11e694b20e0946105a9f5de842":[7,0,23,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[7,0,23,2],
+"d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[7,0,23,0],
 "d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[7,0,23,4],
 "d8/dcc/namespacestd.html":[6,0,4],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html":[8,0,4,27],
@@ -126,8 +128,8 @@ var NAVTREEINDEX2 =
 "da/d9a/class_graph.html#a47336f7cfe4698ef887a34e03f1a3856":[7,0,12,36],
 "da/d9a/class_graph.html#a61943646676002a5e75f7b6493c25713":[7,0,12,32],
 "da/d9a/class_graph.html#a6afcd41564ea00294a4c089414979ca1":[7,0,12,40],
-"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,12,13],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,12,14],
+"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,12,13],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,12,15],
 "da/d9a/class_graph.html#a73268574e2528b8e760191113ef6d1eb":[7,0,12,27],
 "da/d9a/class_graph.html#a8aa88a88269773cc4dba255dec035898":[7,0,12,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "db/dd3/ode__forward__euler_8cpp.html":[8,0,5,8],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,5,8,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[8,0,5,8,5],
-"db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[8,0,5,8,4],
-"db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[8,0,5,8,0],
-"db/df3/happy__number_8cpp.html":[8,0,6,5]
+"db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[8,0,5,8,4]
 };

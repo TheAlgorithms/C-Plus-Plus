@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[8,0,5,8,0],
+"db/df3/happy__number_8cpp.html":[8,0,6,5],
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[8,0,6,5,0],
 "db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,5,1],
 "dc/d1a/pascal__triangle_8cpp.html":[8,0,6,9],
@@ -76,8 +78,8 @@ var NAVTREEINDEX3 =
 "dd/d3b/struct_entry.html":[7,0,9],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,9,3],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,0],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,2],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,1],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,9,2],
 "dd/d4f/class_solution.html":[7,0,29],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,29,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,29,0],
@@ -214,8 +216,8 @@ var NAVTREEINDEX3 =
 "functions_func.html":[7,2,1],
 "functions_rela.html":[7,2,3],
 "functions_vars.html":[7,2,2],
-"globals.html":[8,1,0],
 "globals.html":[8,1,0,0],
+"globals.html":[8,1,0],
 "globals_a.html":[8,1,0,1],
 "globals_b.html":[8,1,0,2],
 "globals_c.html":[8,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "globals_g.html":[8,1,0,7],
 "globals_h.html":[8,1,0,8],
 "globals_i.html":[8,1,0,9],
-"globals_j.html":[8,1,0,10],
-"globals_l.html":[8,1,0,11],
-"globals_m.html":[8,1,0,12]
+"globals_j.html":[8,1,0,10]
 };
