@@ -1,7 +1,6 @@
 // 0-1 Knapsack problem - Dynamic programming
 //#include <bits/stdc++.h>
 #include <iostream>
-using namespace std;
 
 // void Print(int res[20][20], int i, int j, int capacity)
 //{
@@ -47,20 +46,20 @@ int Knapsack(int capacity, int n, int weight[], int value[]) {
 }
 int main() {
     int n;
-    cout << "Enter number of items: ";
-    cin >> n;
+    std::cout << "Enter number of items: ";
+    std::cin >> n;
     int weight[n], value[n];
-    cout << "Enter weights: ";
+    std::cout << "Enter weights: ";
     for (int i = 0; i < n; ++i) {
-        cin >> weight[i];
+        std::cin >> weight[i];
     }
-    cout << "Enter values: ";
+    std::cout << "Enter values: ";
     for (int i = 0; i < n; ++i) {
-        cin >> value[i];
+        std::cin >> value[i];
     }
     int capacity;
-    cout << "Enter capacity: ";
-    cin >> capacity;
-    cout << Knapsack(capacity, n, weight, value);
+    std::cout << "Enter capacity: ";
+    std::cin >> capacity;
+    std::cout << Knapsack(capacity, n, weight, value);
     return 0;
 }
