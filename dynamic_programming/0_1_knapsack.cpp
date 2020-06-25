@@ -1,31 +1,30 @@
 // 0-1 Knapsack problem - Dynamic programming
-//#include <bits/stdc++.h>
 #include <iostream>
 
 // void Print(int res[20][20], int i, int j, int capacity)
-//{
-//	if(i==0 || j==0)
-//	{
-//		return;
-//	}
-//	if(res[i-1][j]==res[i][j-1])
-//	{
-//		if(i<=capacity)
-//		{
-//			cout<<i<<" ";
-//		}
+// {
+//  if(i==0 || j==0)
+//  {
+//    return;
+//  }
+//  if(res[i-1][j]==res[i][j-1])
+//  {
+//      if(i<=capacity)
+//      {
+//          std::cout<<i<<" ";
+//      }
 //
-//		Print(res, i-1, j-1, capacity-i);
-//	}
-//	else if(res[i-1][j]>res[i][j-1])
-//	{
-//		Print(res, i-1,j, capacity);
-//	}
-//	else if(res[i][j-1]>res[i-1][j])
-//	{
-//		Print(res, i,j-1, capacity);
-//	}
-//}
+//      Print(res, i-1, j-1, capacity-i);
+//  }
+//  else if(res[i-1][j]>res[i][j-1])
+//  {
+//      Print(res, i-1,j, capacity);
+//  }
+//  else if(res[i][j-1]>res[i-1][j])
+//  {
+//      Print(res, i,j-1, capacity);
+//  }
+// }
 
 int Knapsack(int capacity, int n, int weight[], int value[]) {
     int res[20][20];
@@ -35,14 +34,14 @@ int Knapsack(int capacity, int n, int weight[], int value[]) {
                 res[i][j] = 0;
             } else if (weight[i - 1] <= j) {
                 res[i][j] = max(value[i - 1] + res[i - 1][j - weight[i - 1]],
-                                res[i - 1][j]);
+                    res[i - 1][j]);
             } else {
                 res[i][j] = res[i - 1][j];
             }
         }
     }
-    //	Print(res, n, capacity, capacity);
-    //	cout<<"\n";
+    // Print(res, n, capacity, capacity);
+    // std::cout<<"\n";
     return res[n][capacity];
 }
 
