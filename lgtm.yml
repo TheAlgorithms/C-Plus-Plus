@@ -1,3 +1,9 @@
+queries:
+    include: 
+        tags: 
+        - "security"
+        - "reliability"
+        
 extraction:
   cpp:
     prepare:
