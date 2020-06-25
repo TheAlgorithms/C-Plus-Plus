@@ -19,28 +19,32 @@
 #include <cstdio>
 #include <iostream>
 
-/** maximum number that can be computed - The result after 93 cannot be stored
- * in a `uint64_t` data type. */
-const uint64_t MAX = 93;
+/**
+ * maximum number that can be computed - The result after 93 cannot be stored
+ * in a `uint64_t` data type.
+ */
 
-/** Array of computed fibonacci numbers */
-uint64_t f[MAX] = {0};
+#define MAX 93
 
 /** Algorithm */
 uint64_t fib(uint64_t n) {
-    if (n == 0)
+    static uint64_t f1 = 1,
+                    f2 = 1;  // using static keyword will retain the values of
+                             // f1 and f2 for the next function call.
+
+    if (n <= 2)
+        return f2;
+    if (n >= 93) {
+        std::cerr
+            << "Cannot compute for n>93 due to limit of 64-bit integers\n";
         return 0;
-    if (n == 1 || n == 2)
-        return (f[n] = 1);
+    }
 
-    if (f[n])
-        return f[n];
+    uint64_t temp = f2;  // we do not need temp to be static
+    f2 += f1;
+    f1 = temp;
 
-    uint64_t k = (n % 2 != 0) ? (n + 1) / 2 : n / 2;
-
-    f[n] = (n % 2 != 0) ? (fib(k) * fib(k) + fib(k - 1) * fib(k - 1))
-                        : (2 * fib(k - 1) + fib(k)) * fib(k);
-    return f[n];
+    return f2;
 }
 
 /** Main function */
