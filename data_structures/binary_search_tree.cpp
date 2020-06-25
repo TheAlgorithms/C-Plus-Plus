@@ -7,7 +7,8 @@
  * utilize any of the C++ STL features.
  */
 #include <iostream>
-
+#include <algorithm>//test code
+#include <cassert>
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -155,6 +156,17 @@ void Post(node *n) {
     }
 }
 
+int arr[7] = { 0 };//for test tree use only
+int index = 0;//for test tree use only
+void testInOrderTraverse(node* n) {
+    if (n != NULL) {
+        testInOrderTraverse(n->left);
+        std::cout << n->val << "  ";
+        arr[index++] = n->val;
+        testInOrderTraverse(n->right);
+    }
+}
+
 void test_tree() {
     node *root = new node;
     root->val = 4;
@@ -170,13 +182,22 @@ void test_tree() {
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
-    In(root);
+    //test code
+    testInOrderTraverse(root);
+    assert(std::is_sorted(arr, arr + 7));
+    std::cout << "Test Insert() function Passed\n========================\n";
+
     // test Remove()
+    index = 0;
     Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
-    In(root);
+    testInOrderTraverse(root);
+    for (int i = 0; i < 6; i++) {
+        assert(arr[i] != 2);
+    }
+    std::cout << "Test Remove(2) Passed\n========================\n";
 }
 
 int main() {
