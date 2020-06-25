@@ -123,7 +123,9 @@ int main() {
             break;
 
         default:
-            if (ch == 0) { break; }
+            if (ch == 0) {
+                break;
+            }
             std::cout << "Wrong option; type an option : ";
             std::cin >> ch;
 

@@ -57,7 +57,7 @@ int main() {
         cout << "solution doesnot exist \n";
     } else {
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) { 
+            for (j = 0; j < n; j++) {
                 cout << sol[i][j] << "  ";
             }
             cout << "\n";

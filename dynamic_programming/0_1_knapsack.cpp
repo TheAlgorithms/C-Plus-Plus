@@ -35,7 +35,7 @@ int Knapsack(int capacity, int n, int weight[], int value[]) {
                 res[i][j] = 0;
             } else if (weight[i - 1] <= j) {
                 res[i][j] = max(value[i - 1] + res[i - 1][j - weight[i - 1]],
-                    res[i - 1][j]);
+                                res[i - 1][j]);
             } else {
                 res[i][j] = res[i - 1][j];
             }

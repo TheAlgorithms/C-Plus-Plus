@@ -81,7 +81,7 @@ int main() {
             data = ob.dequeue();
             std::cout << "\ndequeue element is:\t" << data;
         } else if (op == 3) {
-             ob.display();
+            ob.display();
         } else if (op == 4) {
             exit(0);
         } else {

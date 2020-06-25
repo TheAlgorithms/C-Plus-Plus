@@ -156,7 +156,9 @@ int main() {
             break;
 
         default:
-            if (choice == 0) { break; }
+            if (choice == 0) {
+                break;
+            }
             std::cout << "Wrong option; type an option : ";
             std::cin >> choice;
 

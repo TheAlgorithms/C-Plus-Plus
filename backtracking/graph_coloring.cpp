@@ -23,7 +23,7 @@ bool isSafe(int v, bool graph[V][V], int color[], int c) {
 
 /* A recursive utility function to solve m coloring problem */
 void graphColoring(bool graph[V][V], int m, int color[], int v) {
-    // base case: 
+    // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
         printSolution(color);
@@ -74,7 +74,7 @@ int main() {
 
     int color[V];
 
-    for (int i = 0; i < V; i++) { 
+    for (int i = 0; i < V; i++) {
         color[i] = 0;
     }
 

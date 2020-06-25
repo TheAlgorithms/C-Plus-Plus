@@ -4,7 +4,7 @@
 void printSolution(int board[N][N]) {
     std::cout << "\n";
     for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) { 
+        for (int j = 0; j < N; j++) {
             std::cout << "" << board[i][j];
         }
         std::cout << "\n";
@@ -54,7 +54,7 @@ void solveNQ(int board[N][N], int col) {
 
             // recur to place rest of the queens
             solveNQ(board, col + 1);
-            board[i][col] = 0; // BACKTRACK
+            board[i][col] = 0;  // BACKTRACK
         }
     }
 }

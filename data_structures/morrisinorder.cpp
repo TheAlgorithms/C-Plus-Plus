@@ -60,15 +60,17 @@ void morrisInorder(Btree *root) {
             // Left of current node is stored in temp
             temp = curr->left;
             // Moving to extreme right of temp
-            while (temp->right && temp->right != curr) { temp = temp->right; }
+            while (temp->right && temp->right != curr) {
+                temp = temp->right;
+            }
             // If extreme right is null it is made to point to currrent node
             // (will be used for backtracking)
             if (temp->right == nullptr) {
                 temp->right = curr;
                 // current node is made to point its left subtree
                 curr = curr->left;
-            // If extreme right already points to currrent node it it set to
-            // null
+                // If extreme right already points to currrent node it it set to
+                // null
             } else if (temp->right == curr) {
                 std::cout << curr->data << " ";
                 temp->right = nullptr;
@@ -86,7 +88,7 @@ int main() {
     // Testing morrisInorder funtion
     Btree *root = nullptr;
     int i;
-    for (i = 1; i <= 7; i++) { 
+    for (i = 1; i <= 7; i++) {
         insert(&root, i);
     }
     std::cout << "Morris Inorder: ";

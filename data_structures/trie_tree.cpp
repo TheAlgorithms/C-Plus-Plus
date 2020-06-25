@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-/** 
+/**
  * structure definition
  */
 typedef struct trie {
@@ -17,12 +17,14 @@ typedef struct trie {
  */
 trie* createNode() {
     trie* nn = new trie();
-    for (int i = 0; i < 26; i++) { nn->arr[i] = nullptr; }
+    for (int i = 0; i < 26; i++) {
+        nn->arr[i] = nullptr;
+    }
     nn->isEndofWord = false;
     return nn;
 }
 
-/** 
+/**
  * insert string into the trie
  */
 void insert(trie* root, std::string str) {
@@ -66,7 +68,9 @@ bool deleteString(trie* root, std::string str, int index) {
             return false;
         }
         root->isEndofWord = false;
-        for (int i = 0; i < 26; i++) { return false; }
+        for (int i = 0; i < 26; i++) {
+            return false;
+        }
         return true;
     }
     int j = str[index] - 'a';
