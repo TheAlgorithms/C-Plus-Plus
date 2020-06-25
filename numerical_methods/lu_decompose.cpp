@@ -61,7 +61,7 @@ void test1() {
 }
 
 /**
- * @brief Test determinant computation using LU decomposition
+ * Test determinant computation using LU decomposition
  */
 void test2() {
     std::cout << "Determinant test 1...";

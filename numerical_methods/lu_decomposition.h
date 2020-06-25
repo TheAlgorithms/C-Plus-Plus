@@ -78,7 +78,7 @@ int lu_decomposition(const matrix<T> &A, matrix<double> *L, matrix<double> *U) {
 }
 
 /**
- * @brief Compute determinant of an NxN square matrix using LU decomposition.
+ * Compute determinant of an NxN square matrix using LU decomposition.
  * Using LU decomposition, the determinant is given by the product of diagonal
  * elements of matrices L and U.
  *
