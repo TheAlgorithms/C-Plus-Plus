@@ -1,3 +1,10 @@
+/**
+ * @file lu_decomposition.h
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ * @brief Functions associated with [LU
+ * Decomposition](https://en.wikipedia.org/wiki/LU_decomposition)
+ * of a square matrix.
+ */
 #pragma once
 
 #include <iostream>
