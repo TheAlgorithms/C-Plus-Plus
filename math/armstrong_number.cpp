@@ -43,7 +43,7 @@ bool is_armstrong(int number) {
     while (temp > 0) {
         int rem = temp % 10;
         // Finding each digit raised to the power total digit and add it to the total sum
-        sum = sum + pow(rem, total_digits);
+        sum = sum + std::pow(rem, total_digits);
         temp = temp / 10;
     }
     return number == sum;
