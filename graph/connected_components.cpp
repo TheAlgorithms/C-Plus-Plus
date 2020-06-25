@@ -1,9 +1,9 @@
 /**
  *
  * \file
- * \brief [Connected Components
- * (Connected
- * Components)](https://en.wikipedia.org/wiki/Component_(graph_theory))
+ * \brief [Graph Connected Components
+ * (Connected Components)]
+ * (https://en.wikipedia.org/wiki/Component_(graph_theory))
  *
  * \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
@@ -42,10 +42,7 @@ class graph {
     /** \brief keep track of connected components */
     int connected_components;
 
-    /** \brief Utility function to perform depth first search on graph */
     void depth_first_search();
-
-    /** \brief Utility function that explores given vertex in graph */
     void explore(int, vector<bool> &);
 
  public:
@@ -55,7 +52,6 @@ class graph {
      */
     explicit graph(int n) : adj(n, vector<int>()) { connected_components = 0; }
 
-    /** \brief Function to add a edge between two nodes or vertices of graph */
     void addEdge(int, int);
 
     /**
