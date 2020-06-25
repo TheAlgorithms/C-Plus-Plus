@@ -100,6 +100,7 @@
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
 
 ## Math
+  * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
   * [Check Amicable Pair](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_amicable_pair.cpp)
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_prime.cpp)
