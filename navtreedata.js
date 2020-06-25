@@ -103,7 +103,7 @@ var NAVTREEINDEX =
 "d5/d29/struct_min_heap_node.html#a41f73e87e4ddf1fbe72ae0db2b4e674e",
 "d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8",
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7",
-"globals_r.html"
+"globals_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
