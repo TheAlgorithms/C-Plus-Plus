@@ -6,9 +6,9 @@
  * \warning This program is a poor implementation - C style - and does not
  * utilize any of the C++ STL features.
  */
-#include <iostream>
-#include <algorithm>//test code
+#include <algorithm>  //test code
 #include <cassert>
+#include <iostream>
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -156,9 +156,9 @@ void Post(node *n) {
     }
 }
 
-int arr[7] = { 0 };//for test tree use only
-int index = 0;//for test tree use only
-void testInOrderTraverse(node* n) {
+int arr[7] = {0};  // for test tree use only
+int index = 0;     // for test tree use only
+void testInOrderTraverse(node *n) {
     if (n != NULL) {
         testInOrderTraverse(n->left);
         std::cout << n->val << "  ";
@@ -182,7 +182,7 @@ void test_tree() {
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
-    //test code
+    // test code
     testInOrderTraverse(root);
     assert(std::is_sorted(arr, arr + 7));
     std::cout << "Test Insert() function Passed\n========================\n";
