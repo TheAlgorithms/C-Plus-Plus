@@ -61,5 +61,10 @@ void tests() {
     std::cout << "passed\n";
 }
 
-/// main function
-int main() { tests(); }
+/** 
+ * Main function
+ */
+int main() {
+    tests();
+    return 0;
+}
