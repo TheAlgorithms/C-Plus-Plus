@@ -97,7 +97,7 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../dd/d65/lu__decompose_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title="Test determinant computation using LU decomposition.">
+<g id="a_node8"><a xlink:href="../../dd/d65/lu__decompose_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="85,-38.5 85,-57.5 123,-57.5 123,-38.5 85,-38.5"/>
 <text text-anchor="middle" x="104" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
@@ -187,7 +187,7 @@ var sectionId = 'dynsection-1';
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title="Compute determinant of an NxN square matrix using LU decomposition. Using LU decomposition,...">
+<g id="a_node9"><a xlink:href="../../d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="170,-19.5 170,-38.5 250,-38.5 250,-19.5 170,-19.5"/>
 <text text-anchor="middle" x="210" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">determinant_lu</text>
 </a>
