@@ -31,19 +31,24 @@ int Knapsack(int capacity, int n, int weight[], int value[]) {
     int res[20][20];
     for (int i = 0; i < n + 1; ++i) {
         for (int j = 0; j < capacity + 1; ++j) {
-            if (i == 0 || j == 0)
+            if (i == 0 || j == 0) {
                 res[i][j] = 0;
-            else if (weight[i - 1] <= j)
+            } else if (weight[i - 1] <= j) {
                 res[i][j] = max(value[i - 1] + res[i - 1][j - weight[i - 1]],
-                                res[i - 1][j]);
-            else
+                    res[i - 1][j]);
+            } else {
                 res[i][j] = res[i - 1][j];
+            }
         }
     }
     //	Print(res, n, capacity, capacity);
     //	cout<<"\n";
     return res[n][capacity];
 }
+
+/**
+ * Main function
+ */
 int main() {
     int n;
     std::cout << "Enter number of items: ";
