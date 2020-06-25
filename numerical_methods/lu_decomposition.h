@@ -36,7 +36,9 @@ int lu_decomposition(const std::vector<std::valarray<T>> &A,
         for (col = row; col < mat_size; col++) {
             // Summation of L[i,j] * U[j,k]
             double lu_sum = 0.;
-            for (j = 0; j < row; j++) lu_sum += L[0][row][j] * U[0][j][col];
+            for (j = 0; j < row; j++) {
+                lu_sum += L[0][row][j] * U[0][j][col];
+            }
 
             // Evaluate U[i,k]
             U[0][row][col] = A[row][col] - lu_sum;
@@ -54,7 +56,9 @@ int lu_decomposition(const std::vector<std::valarray<T>> &A,
 
             // Summation of L[i,j] * U[j,k]
             double lu_sum = 0.;
-            for (j = 0; j < row; j++) lu_sum += L[0][col][j] * U[0][j][row];
+            for (j = 0; j < row; j++) {
+                lu_sum += L[0][col][j] * U[0][j][row];
+            }
 
             // Evaluate U[i,k]
             L[0][col][row] = (A[col][row] - lu_sum) / U[0][row][row];
@@ -62,4 +66,30 @@ int lu_decomposition(const std::vector<std::valarray<T>> &A,
     }
 
     return 0;
+}
+
+/**
+ * @brief Compute determinant of an NxN square matrix using LU decomposition.
+ * Using LU decomposition, the determinant is given by the product of diagonal
+ * elements of matrices L and U.
+ *
+ * @tparam T datatype of input matrix - int, unsigned int, double, etc
+ * @param A input square matrix
+ * @return determinant of matrix A
+ */
+template <typename T>
+double determinant_lu(const std::vector<std::valarray<T>> &A) {
+    std::vector<std::valarray<double>> L(A.size(),
+                                         std::valarray<double>(A.size()));
+    std::vector<std::valarray<double>> U(A.size(),
+                                         std::valarray<double>(A.size()));
+
+    if (lu_decomposition(A, &L, &U) < 0)
+        return 0;
+
+    double result = 1.f;
+    for (size_t i = 0; i < A.size(); i++) {
+        result *= L[i][i] * U[i][i];
+    }
+    return result;
 }
