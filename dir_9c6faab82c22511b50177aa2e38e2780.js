@@ -7,6 +7,7 @@ var dir_9c6faab82c22511b50177aa2e38e2780 =
     [ "gaussian_elimination.cpp", "d0/de2/gaussian__elimination_8cpp.html", "d0/de2/gaussian__elimination_8cpp" ],
     [ "golden_search_extrema.cpp", "d6/d7a/golden__search__extrema_8cpp.html", "d6/d7a/golden__search__extrema_8cpp" ],
     [ "lu_decompose.cpp", "dd/d65/lu__decompose_8cpp.html", "dd/d65/lu__decompose_8cpp" ],
+    [ "lu_decomposition.h", "d1/dbe/lu__decomposition_8h.html", "d1/dbe/lu__decomposition_8h" ],
     [ "newton_raphson_method.cpp", "de/dd3/newton__raphson__method_8cpp.html", "de/dd3/newton__raphson__method_8cpp" ],
     [ "ode_forward_euler.cpp", "db/dd3/ode__forward__euler_8cpp.html", "db/dd3/ode__forward__euler_8cpp" ],
     [ "ode_midpoint_euler.cpp", "d6/dd3/ode__midpoint__euler_8cpp.html", "d6/dd3/ode__midpoint__euler_8cpp" ],

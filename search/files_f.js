@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['palindrome_5fof_5fnumber_2ecpp_2507',['palindrome_of_number.cpp',['../da/d9a/palindrome__of__number_8cpp.html',1,'']]],
-  ['paranthesis_5fmatching_2ecpp_2508',['paranthesis_matching.cpp',['../dc/dc5/paranthesis__matching_8cpp.html',1,'']]],
-  ['pascal_5ftriangle_2ecpp_2509',['pascal_triangle.cpp',['../dc/d1a/pascal__triangle_8cpp.html',1,'']]],
-  ['poisson_5fdist_2ecpp_2510',['poisson_dist.cpp',['../d9/d24/poisson__dist_8cpp.html',1,'']]],
-  ['power_5ffor_5fhuge_5fnumbers_2ecpp_2511',['power_for_huge_numbers.cpp',['../df/def/power__for__huge__numbers_8cpp.html',1,'']]],
-  ['primality_5ftest_2ecpp_2512',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
-  ['prime_5ffactorization_2ecpp_2513',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
-  ['prime_5fnumbers_2ecpp_2514',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
-  ['primes_5fup_5fto_5fbillion_2ecpp_2515',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]]
+  ['palindrome_5fof_5fnumber_2ecpp_2511',['palindrome_of_number.cpp',['../da/d9a/palindrome__of__number_8cpp.html',1,'']]],
+  ['paranthesis_5fmatching_2ecpp_2512',['paranthesis_matching.cpp',['../dc/dc5/paranthesis__matching_8cpp.html',1,'']]],
+  ['pascal_5ftriangle_2ecpp_2513',['pascal_triangle.cpp',['../dc/d1a/pascal__triangle_8cpp.html',1,'']]],
+  ['poisson_5fdist_2ecpp_2514',['poisson_dist.cpp',['../d9/d24/poisson__dist_8cpp.html',1,'']]],
+  ['power_5ffor_5fhuge_5fnumbers_2ecpp_2515',['power_for_huge_numbers.cpp',['../df/def/power__for__huge__numbers_8cpp.html',1,'']]],
+  ['primality_5ftest_2ecpp_2516',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
+  ['prime_5ffactorization_2ecpp_2517',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
+  ['prime_5fnumbers_2ecpp_2518',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
+  ['primes_5fup_5fto_5fbillion_2ecpp_2519',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]]
 ];
