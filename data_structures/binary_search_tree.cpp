@@ -6,7 +6,7 @@
  * \warning This program is a poor implementation - C style - and does not
  * utilize any of the C++ STL features.
  */
-#include <algorithm>  //test code
+#include <algorithm>  // test code
 #include <cassert>
 #include <iostream>
 /** An struct node type.
