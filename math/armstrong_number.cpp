@@ -1,15 +1,17 @@
 /**
  * @file
- * \brief Program to check if a number is an [Armstrong/Narcissistic number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
- * 
+ * \brief Program to check if a number is an [Armstrong/Narcissistic
+ * number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
+ *
  * \details
- * Armstrong number or [Narcissistic number](https://en.wikipedia.org/wiki/Narcissistic_number) 
- * is a number that is the sum of its own digits raised to the power of the number of digits.
+ * Armstrong number or [Narcissistic
+ * number](https://en.wikipedia.org/wiki/Narcissistic_number) is a number that
+ * is the sum of its own digits raised to the power of the number of digits.
  * @author iamnambiar
-*/
+ */
 #include <cassert>
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 /**
  * Function to calculate the total number of digits in the number.
@@ -42,7 +44,8 @@ bool is_armstrong(int number) {
     int total_digits = number_of_digits(number);
     while (temp > 0) {
         int rem = temp % 10;
-        // Finding each digit raised to the power total digit and add it to the total sum
+        // Finding each digit raised to the power total digit and add it to the
+        // total sum
         sum = sum + std::pow(rem, total_digits);
         temp = temp / 10;
     }
@@ -50,7 +53,7 @@ bool is_armstrong(int number) {
 }
 
 /**
- * Function for testing the is_armstrong() function 
+ * Function for testing the is_armstrong() function
  * with all the test cases.
  */
 void test() {
@@ -70,7 +73,7 @@ void test() {
 
 /**
  * Main Function
-*/
+ */
 int main() {
     test();
     return 0;
