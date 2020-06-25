@@ -4,6 +4,7 @@
  * square matrix
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
+#include <cassert>
 #include <ctime>
 #include <iomanip>
 #include <iostream>
@@ -14,8 +15,7 @@
  * operator to print a matrix
  */
 template <typename T>
-std::ostream &operator<<(std::ostream &out,
-                         std::vector<std::valarray<T>> const &v) {
+std::ostream &operator<<(std::ostream &out, matrix<T> const &v) {
     const int width = 10;
     const char separator = ' ';
 
@@ -29,24 +29,19 @@ std::ostream &operator<<(std::ostream &out,
     return out;
 }
 
-/** Main function */
-int main(int argc, char **argv) {
+/**
+ * Test LU decomposition
+ * \todo better ways to self-check a matrix output?
+ */
+void test1() {
     int mat_size = 3;  // default matrix size
     const int range = 50;
     const int range2 = range >> 1;
 
-    if (argc == 2)
-        mat_size = atoi(argv[1]);
-
-    std::srand(std::time(NULL));  // random number initializer
-
     /* Create a square matrix with random values */
-    std::vector<std::valarray<double>> A(mat_size,
-                                         std::valarray<double>(mat_size));
-    std::vector<std::valarray<double>> L(
-        mat_size, std::valarray<double>(mat_size));  // output
-    std::vector<std::valarray<double>> U(
-        mat_size, std::valarray<double>(mat_size));  // output
+    matrix<double> A(mat_size, std::valarray<double>(mat_size));
+    matrix<double> L(mat_size, std::valarray<double>(mat_size));  // output
+    matrix<double> U(mat_size, std::valarray<double>(mat_size));  // output
     for (int i = 0; i < mat_size; i++) {
         // calloc so that all valeus are '0' by default
         for (int j = 0; j < mat_size; j++)
@@ -63,6 +58,33 @@ int main(int argc, char **argv) {
     std::cout << "A = \n" << A << "\n";
     std::cout << "L = \n" << L << "\n";
     std::cout << "U = \n" << U << "\n";
+}
 
+/**
+ * @brief Test determinant computation using LU decomposition
+ */
+void test2() {
+    std::cout << "Determinant test 1...";
+    matrix<int> A1({{1, 2, 3}, {4, 9, 6}, {7, 8, 9}});
+    assert(determinant_lu(A1) == -48);
+    std::cout << "passed\n";
+
+    std::cout << "Determinant test 2...";
+    matrix<int> A2({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+    assert(determinant_lu(A2) == 0);
+    std::cout << "passed\n";
+
+    std::cout << "Determinant test 3...";
+    matrix<float> A3({{1.2, 2.3, 3.4}, {4.5, 5.6, 6.7}, {7.8, 8.9, 9.0}});
+    assert(determinant_lu(A3) == 3.63);
+    std::cout << "passed\n";
+}
+
+/** Main function */
+int main(int argc, char **argv) {
+    std::srand(std::time(NULL));  // random number initializer
+
+    test1();
+    test2();
     return 0;
 }
