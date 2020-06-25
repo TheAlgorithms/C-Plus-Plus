@@ -1,6 +1,6 @@
 /**
  * @file
- * \brief A C++ program to check whether a number is armstrong number or not.
+ * \brief Program to check if a number is an [Armstrong/Narcissistic number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
  * 
  * \details
  * Armstrong number or [Narcissistic number](https://en.wikipedia.org/wiki/Narcissistic_number) 
