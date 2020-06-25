@@ -7,6 +7,10 @@
 #include <omp.h>
 #endif
 
+/** Define matrix type as a `std::vector` of `std::valarray` */
+template <typename T>
+using matrix = std::vector<std::valarray<T>>;
+
 /** Perform LU decomposition on matrix
  * \param[in] A matrix to decompose
  * \param[out] L output L matrix
@@ -15,9 +19,7 @@
  * \returns negative if error occurred
  */
 template <typename T>
-int lu_decomposition(const std::vector<std::valarray<T>> &A,
-                     std::vector<std::valarray<double>> *L,
-                     std::vector<std::valarray<double>> *U) {
+int lu_decomposition(const matrix<T> &A, matrix<double> *L, matrix<double> *U) {
     int row, col, j;
     int mat_size = A.size();
 
@@ -78,11 +80,9 @@ int lu_decomposition(const std::vector<std::valarray<T>> &A,
  * @return determinant of matrix A
  */
 template <typename T>
-double determinant_lu(const std::vector<std::valarray<T>> &A) {
-    std::vector<std::valarray<double>> L(A.size(),
-                                         std::valarray<double>(A.size()));
-    std::vector<std::valarray<double>> U(A.size(),
-                                         std::valarray<double>(A.size()));
+double determinant_lu(const matrix<T> &A) {
+    matrix<double> L(A.size(), std::valarray<double>(A.size()));
+    matrix<double> U(A.size(), std::valarray<double>(A.size()));
 
     if (lu_decomposition(A, &L, &U) < 0)
         return 0;
