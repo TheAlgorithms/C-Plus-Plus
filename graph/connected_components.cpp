@@ -11,6 +11,7 @@
  * are connected by edges. A connected component in a graph refers to a set of
  * vertices which are reachable form one another.
  *
+ * <pre>
  * Example - Here is graph with 3 connected components
  *
  *      3   9           6               8
@@ -19,6 +20,7 @@
  *
  *    first          second           third
  *    component      component        component
+ * </pre>
  *
  */
 
