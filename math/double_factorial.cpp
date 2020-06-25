@@ -61,7 +61,7 @@ void tests() {
     std::cout << "passed\n";
 }
 
-/** 
+/**
  * Main function
  */
 int main() {
