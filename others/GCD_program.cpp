@@ -1,6 +1,5 @@
 
 /*C++ inbuilt function for finding GCD*/
-
 #include <iostream>
 using namespace std;
 int gcd(int a, int b) {
