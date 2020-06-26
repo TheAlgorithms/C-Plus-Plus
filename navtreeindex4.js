@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"globals_func_s.html":[8,1,1,17],
 "globals_func_t.html":[8,1,1,18],
 "globals_func_u.html":[8,1,1,19],
 "globals_g.html":[8,1,0,7],
@@ -17,8 +18,8 @@ var NAVTREEINDEX4 =
 "globals_type.html":[8,1,3],
 "globals_u.html":[8,1,0,19],
 "globals_vars.html":[8,1,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md33":[0],
 "index.html#autotoc_md34":[1],
 "modules.html":[5],

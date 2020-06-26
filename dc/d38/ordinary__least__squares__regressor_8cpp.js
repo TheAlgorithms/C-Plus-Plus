@@ -14,5 +14,6 @@ var ordinary__least__squares__regressor_8cpp =
     [ "operator/", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a30acf52af3184bc22274234ef5a73536", null ],
     [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a98eb5807f21b783c341cab402ced6732", null ],
     [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#aa799b4cec1681219887d89d037cfab50", null ],
-    [ "predict_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7", null ]
+    [ "predict_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7", null ],
+    [ "test", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae1a3968e7947464bee7714f6d43b7002", null ]
 ];
