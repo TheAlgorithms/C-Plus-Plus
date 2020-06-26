@@ -8,12 +8,15 @@
 [![Doxygen CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Doxygen%20CI/badge.svg)]("https://TheAlgorithms.github.io/C-Plus-Plus")
 [![Awesome CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Awesome%20CI%20Workflow/badge.svg)]("https://github.com/TheAlgorithms/C-Plus-Plus/actions?query=workflow%3A%22Awesome+CI+Workflow%22")
 
-[Online Documentation](https://TheAlgorithms.github.io/C-Plus-Plus).
+## Algorithms implemented in C++ (for education)
 
+The repository is a collection of implementation of a variety of algorithms implemented in C++. These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations are meant to be a learning resource for educators and students. Hence, one may find more than one implementation for the same algorithm with different optimizations and different strategies used that would be documented therein. 
+
+## Documentation
+
+[Online Documentation](https://TheAlgorithms.github.io/C-Plus-Plus) is generated from the repository source codes directly. The documentation contains all resources including source code snippets, details on execution of the programs, diagrammatic representation of program flow, and links to external resources where necessary. The documentation also introduces interactive source code with links to documentation for C++ STL library functions used.
 Click on [Files menu](https://TheAlgorithms.github.io/C-Plus-Plus/files.html) to see the list of all the files documented with the code.
 
-### Algorithms implemented in C++ (for education)
-The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
+## Contributions
 
-### Contribute Guidelines
-Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md) before you contribute.
+As a community developed and community maintained repository, we welcome new un-plagiarized contributions. Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md) before you contribute.
