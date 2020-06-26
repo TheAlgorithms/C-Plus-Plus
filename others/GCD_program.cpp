@@ -1,7 +1,7 @@
 
 /*C++ inbuilt function for finding GCD*/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 int gcd(int a, int b) 
 { 
@@ -16,4 +16,3 @@ int main()
 	return 0; 
 } 
 //also theere is simple way to do gcd by using    __gcd(m, n)  where m ,n are numbers
-
