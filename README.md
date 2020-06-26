@@ -29,4 +29,4 @@ Click on [Files menu](https://TheAlgorithms.github.io/C-Plus-Plus/files.html) to
 
 ## Contributions
 
-As a community developed and community maintained repository, we welcome new un-plagiarized contributions. Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md) before you contribute.
+As a community developed and community maintained repository, we welcome new un-plagiarized quality contributions. Please read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md).
