@@ -1,5 +1,5 @@
 # The Algorithms - C++ # {#mainpage}
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus) 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus) [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/TheAlgorithms/C-Plus-Plus.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TheAlgorithms/C-Plus-Plus/context:cpp) 
 [![Gitter chat](https://img.shields.io/badge/Chat-Gitter-ff69b4.svg?label=Chat&logo=gitter&style=flat-square)](https://gitter.im/TheAlgorithms)
 <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md">![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)</a>
 ![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C-Plus-Plus?color=red&style=flat-square)
