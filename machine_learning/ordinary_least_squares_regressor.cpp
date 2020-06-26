@@ -355,7 +355,7 @@ std::vector<float> predict_OLS_regressor(std::vector<std::vector<T>> const &X,
 }
 
 /** Self test checks */
-void test() {
+void ols_test() {
     int F = 3, N = 5;
 
     /* test function = x^2 -5 */
@@ -408,7 +408,7 @@ void test() {
  * main function
  */
 int main() {
-    test();
+    ols_test();
 
     size_t N, F;
 
