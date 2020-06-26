@@ -9,8 +9,7 @@ int gcd(int a, int b) {
 	}
 	return gcd(b, a % b);
 } 
-int main() 
-{ 
+int main() {
 	int a = 8, b = 6; 
 	cout<<"GCD of two num is "<<gcd(a, b); 
 	return 0; 
