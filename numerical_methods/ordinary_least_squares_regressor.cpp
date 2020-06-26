@@ -10,6 +10,7 @@
  * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #include <cassert>
+#include <cstdlib>  // for std::abs
 #include <iomanip>  // for print formatting
 #include <iostream>
 #include <vector>
