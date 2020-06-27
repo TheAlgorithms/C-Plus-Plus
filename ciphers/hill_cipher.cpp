@@ -5,15 +5,31 @@
  * cipher](https://en.wikipedia.org/wiki/Hill_cipher) algorithm.
  *
  * Program to generate the encryption-decryption key and perform encryption and
- * decryption of ASCII text.
+ * decryption of ASCII text using the famous block cipher algorithm. This is a
+ * powerful encryption algorithm that is relatively easy to implement with a
+ * given key. The strength of the algorithm depends on the size of the block
+ * encryption matrix key; the bigger the matrix, the stronger the encryption and
+ * more difficult to break it. However, the important requirement for the matrix
+ * is that:
+ * 1. matrix should be invertible - all inversion conditions should be satisfied
+ * and
+ * 2. its determinant must not have any common factors with the length of
+ * character set
+ * Due to this restriction, most implementations only implement with small 3x3
+ * encryption keys and a small subset of ASCII alphabets.
+ *
+ * In the current implementation, I present to you an implementation for
+ * generating larger encryption keys (I have attempted upto 10x10) and an ASCII
+ * character set of 97 printable characters. Hence, a typical ASCII text file
+ * could be easily encrypted with the module.
  */
 
 #include <cassert>
 #include <cmath>
+#include <cstring>
 #include <ctime>
 #include <iomanip>
 #include <iostream>
-#include <string>
 #include <valarray>
 #include <vector>
 #ifdef _OPENMP
@@ -45,7 +61,7 @@ static std::ostream &operator<<(std::ostream &out, matrix<T> const &v) {
  */
 namespace ciphers {
 /** dictionary of characters that can be encrypted and decrypted */
-static const std::string STRKEY =
+static const char *STRKEY =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&"
     "*()_+`-=[]{}|;':\",./<>?\\\r\n ";
 
@@ -129,15 +145,39 @@ class HillCipher {
         const std::valarray<uint8_t> &vector, const matrix<int> &key) {
         std::valarray<uint8_t> out(vector);  // make a copy
 
+        size_t L = std::strlen(STRKEY);
+
         for (size_t i = 0; i < key.size(); i++) {
             int tmp = 0;
             for (size_t j = 0; j < vector.size(); j++) {
                 tmp += key[i][j] * vector[j];
             }
-            out[i] = static_cast<uint8_t>(tmp % STRKEY.length());
+            out[i] = static_cast<uint8_t>(tmp % L);
         }
 
         return out;
+    }
+
+    /**
+     * @brief Get the character at a given index in the ::STRKEY
+     *
+     * @param idx index value
+     * @return character at the index
+     */
+    static inline char get_idx_char(const uint8_t idx) { return STRKEY[idx]; }
+
+    /**
+     * @brief Get the index of a character in the ::STRKEY
+     *
+     * @param ch character to search
+     * @return index of character
+     */
+    static inline uint8_t get_char_idx(const char ch) {
+        size_t L = std::strlen(STRKEY);
+
+        for (uint8_t idx = 0; idx < L; idx++)
+            if (STRKEY[idx] == ch)
+                return idx;
     }
 
     /**
@@ -164,8 +204,7 @@ class HillCipher {
         std::valarray<uint8_t> batch_int(key_len);
         for (size_t i = 0; i < L2 - key_len + 1; i += key_len) {
             for (size_t j = 0; j < key_len; j++) {
-                batch_int[j] = static_cast<uint8_t>(
-                    STRKEY.find(text[i + j]));  // get index of character in key
+                batch_int[j] = get_char_idx(text[i + j]);
             }
 
             batch_int = mat_mul(batch_int, key);
@@ -259,26 +298,33 @@ class HillCipher {
  public:
     /**
      * @brief Generate encryption matrix of a given size. Larger size matrices
-     * are difficult to generate but provide more security.
+     * are difficult to generate but provide more security. Important conditions
+     * are:
+     * 1. matrix should be invertible
+     * 2. determinant must not have any common factors with the length of
+     * character key
      *
      * @param size size of matrix (typically \f$\text{size}\le10\f$)
      * @return Encryption martix
      */
     static matrix<int> generate_encryption_key(size_t size) {
         matrix<int> encrypt_key(size, std::valarray<int>(size));
+        matrix<int> min_mat = encrypt_key;
         int mat_determinant = -1;  // because matrix has only ints, the
                                    // determinant will also be an int
-
-        int L = static_cast<int>(STRKEY.length());
+        int L = std::strlen(STRKEY);
 
         double dd;
         do {
-            dd = rand_range(&encrypt_key, 0, L);
+            // keeping the random number range smaller generates better
+            // defined matrices with more ease of cracking
+            dd = rand_range(&encrypt_key, 0, 10);
             mat_determinant = static_cast<int>(dd);
 
             if (mat_determinant < 0)
-                mat_determinant = (mat_determinant % L) + L;
-        } while (dd <= 0.1 ||           // while singular or ill-defined
+                mat_determinant = (mat_determinant % L);
+        } while (std::abs(dd) > 1e3 ||  // while ill-defined
+                 dd < 0.1 ||            // while singular
                  !std::isfinite(dd) ||  // while determinant is not finite
                  gcd(mat_determinant, L) != 1);  // while no common factors
         // std::cout <<
@@ -294,7 +340,7 @@ class HillCipher {
      */
     static matrix<int> generate_decryption_key(matrix<int> const &encrypt_key) {
         size_t size = encrypt_key.size();
-        int L = static_cast<int>(STRKEY.length());
+        int L = std::strlen(STRKEY);
 
         matrix<int> decrypt_key(size, std::valarray<int>(size));
         int det_encrypt = static_cast<int>(determinant_lu(encrypt_key));
@@ -384,7 +430,7 @@ class HillCipher {
 int main() {
     std::srand(std::time(nullptr));
 
-    std::cout << "Key dictionary: (" << ciphers::STRKEY.length() << ")\n\t"
+    std::cout << "Key dictionary: (" << std::strlen(ciphers::STRKEY) << ")\n\t"
               << ciphers::STRKEY << "\n";
 
     std::string text = "This is a simple text with numb3r5 and exclamat!0n.";
@@ -392,16 +438,16 @@ int main() {
     std::cout << "Original text:\n\t" << text << std::endl;
 
     std::pair<matrix<int>, matrix<int>> p =
-        ciphers::HillCipher::generate_keys(5);
+        ciphers::HillCipher::generate_keys(8);
     matrix<int> ekey = p.first;
     matrix<int> dkey = p.second;
     // matrix<int> ekey = {{22, 28, 25}, {5, 26, 15}, {14, 18, 9}};
-    // std::cout << "Encryption key: \n" << ekey;
+    std::cout << "Encryption key: \n" << ekey;
     std::string gibberish = ciphers::HillCipher::encrypt_text(text, ekey);
     std::cout << "Encrypted text:\n\t" << gibberish << std::endl;
 
     // matrix<int> dkey = ciphers::HillCipher::generate_decryption_key(ekey);
-    // std::cout << "Decryption key: \n" << dkey;
+    std::cout << "Decryption key: \n" << dkey;
     std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
 
