@@ -5,7 +5,6 @@
 [![Gitter chat](https://img.shields.io/badge/Chat-Gitter-ff69b4.svg?label=Chat&logo=gitter&style=flat-square)](https://gitter.im/TheAlgorithms)
 [![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)]("https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md")
 ![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C-Plus-Plus?color=red&style=flat-square)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TheAlgorithms/C-Plus-Plus?color=green&style=flat-square)
 [![Doxygen CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Doxygen%20CI/badge.svg)]("https://TheAlgorithms.github.io/C-Plus-Plus")
 [![Awesome CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Awesome%20CI%20Workflow/badge.svg)]("https://github.com/TheAlgorithms/C-Plus-Plus/actions?query=workflow%3A%22Awesome+CI+Workflow%22")
 
