@@ -115,7 +115,7 @@ class HillCipher {
      * should be no more than \f$[0,10]\f$
      */
     template <typename T1, typename T2>
-    static const double rand_range(matrix<T2> *M, T1 a, T1 b) {
+    static double rand_range(matrix<T2> *M, T1 a, T1 b) {
         for (size_t i = 0; i < M->size(); i++) {
             for (size_t j = 0; j < M[0][0].size(); j++) {
                 M[0][i][j] = rand_range<T1, T2>(a, b);
@@ -190,7 +190,7 @@ class HillCipher {
     static inline uint8_t get_char_idx(const char ch) {
         size_t L = std::strlen(STRKEY);
 
-        for (uint8_t idx = 0; idx <= L; idx++)
+        for (size_t idx = 0; idx <= L; idx++)
             if (STRKEY[idx] == ch)
                 return idx;
 
