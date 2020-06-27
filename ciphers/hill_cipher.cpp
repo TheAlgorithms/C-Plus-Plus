@@ -1,6 +1,5 @@
 /**
  * @file hill_cipher.cpp
- * @author [Krishna Vedala](https://github.com/kvedala)
  * @brief Implementation of [Hill
  * cipher](https://en.wikipedia.org/wiki/Hill_cipher) algorithm.
  *
@@ -21,7 +20,14 @@
  * In the current implementation, I present to you an implementation for
  * generating larger encryption keys (I have attempted upto 10x10) and an ASCII
  * character set of 97 printable characters. Hence, a typical ASCII text file
- * could be easily encrypted with the module.
+ * could be easily encrypted with the module. The larger character set increases
+ * the modulo of cipher and hence the matrix determinants can get very large
+ * very quickly rendering them ill-defined.
+ *
+ * \note This program uses determinant computation using LU decomposition from
+ * the file lu_decomposition.h
+ *
+ * @author [Krishna Vedala](https://github.com/kvedala)
  */
 
 #include <cassert>
@@ -31,8 +37,6 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <valarray>
-#include <vector>
 #ifdef _OPENMP
 #include <omp.h>
 #endif
@@ -64,7 +68,7 @@ namespace ciphers {
 /** dictionary of characters that can be encrypted and decrypted */
 static const char *STRKEY =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&"
-    "*()_+`-=[]{}|;':\",./<>?\\\r\n ";
+    "*()_+`-=[]{}|;':\",./<>?\\\r\n \0";
 
 /**
  * @brief Implementation of [Hill
@@ -182,9 +186,13 @@ class HillCipher {
     static inline uint8_t get_char_idx(const char ch) {
         size_t L = std::strlen(STRKEY);
 
-        for (uint8_t idx = 0; idx < L; idx++)
+        for (uint8_t idx = 0; idx <= L; idx++)
             if (STRKEY[idx] == ch)
                 return idx;
+
+        std::cerr << __func__ << ":" << __LINE__ << ": (" << ch
+                  << ") Should not reach here!\n";
+        return 0;
     }
 
     /**
@@ -208,8 +216,12 @@ class HillCipher {
         std::string coded_text(L2, '\0');
 
         // temporary array for batch processing
-        std::valarray<uint8_t> batch_int(key_len);
-        for (size_t i = 0; i < L2 - key_len + 1; i += key_len) {
+        int i;
+#ifdef _OPENMP
+#pragma parallel omp for private(i)
+#endif
+        for (i = 0; i < L2 - key_len + 1; i += key_len) {
+            std::valarray<uint8_t> batch_int(key_len);
             for (size_t j = 0; j < key_len; j++) {
                 batch_int[j] = get_char_idx(text[i + j]);
             }
@@ -338,7 +350,7 @@ class HillCipher {
             if (mat_determinant < 0)
                 mat_determinant = (mat_determinant % L);
         } while (std::abs(dd) > 1e3 ||  // while ill-defined
-                 dd < 0.1 ||            // while singular
+                 std::abs(dd) < 0.1 ||  // while singular
                  !std::isfinite(dd) ||  // while determinant is not finite
                  gcd(mat_determinant, L) != 1);  // while no common factors
         // std::cout <<
@@ -446,21 +458,21 @@ class HillCipher {
 
 }  // namespace ciphers
 
-/** Main function */
-int main() {
-    std::srand(std::time(nullptr));
-
-    std::cout << "Key dictionary: (" << std::strlen(ciphers::STRKEY) << ")\n\t"
-              << ciphers::STRKEY << "\n";
-
-    std::string text = "This is a simple text with numb3r5 and exclamat!0n.";
+/**
+ * @brief Self test 1 - using 3x3 randomly generated key
+ *
+ * @param text string to encrypt and decrypt
+ */
+void test1(const std::string &text) {
     // std::string text = "Hello world!";
-    std::cout << "Original text:\n\t" << text << std::endl;
+    std::cout << "======Test 1 (3x3 key) ======\nOriginal text:\n\t" << text
+              << std::endl;
 
     std::pair<matrix<int>, matrix<int>> p =
-        ciphers::HillCipher::generate_keys(10, 0, 5);
+        ciphers::HillCipher::generate_keys(3, 0, 100);
     matrix<int> ekey = p.first;
     matrix<int> dkey = p.second;
+
     // matrix<int> ekey = {{22, 28, 25}, {5, 26, 15}, {14, 18, 9}};
     // std::cout << "Encryption key: \n" << ekey;
     std::string gibberish = ciphers::HillCipher::encrypt_text(text, ekey);
@@ -471,7 +483,43 @@ int main() {
     std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
 
-    assert((txt_back == text) == true);
+    assert(txt_back == text);
+}
+
+/**
+ * @brief Self test 2 - using 8x8 randomly generated key
+ *
+ * @param text string to encrypt and decrypt
+ */
+void test2(const std::string &text) {
+    // std::string text = "Hello world!";
+    std::cout << "======Test 2 (8x8 key) ======\nOriginal text:\n\t" << text
+              << std::endl;
+
+    std::pair<matrix<int>, matrix<int>> p =
+        ciphers::HillCipher::generate_keys(8, 0, 10);
+    matrix<int> ekey = p.first;
+    matrix<int> dkey = p.second;
+
+    std::string gibberish = ciphers::HillCipher::encrypt_text(text, ekey);
+    std::cout << "Encrypted text:\n\t" << gibberish << std::endl;
+
+    std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
+    std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
+
+    assert(text.compare(0, text.length() - 1, txt_back) == 0);
+}
+
+/** Main function */
+int main() {
+    std::srand(std::time(nullptr));
+    std::cout << "Key dictionary: (" << std::strlen(ciphers::STRKEY) << ")\n\t"
+              << ciphers::STRKEY << "\n";
+
+    std::string text = "This is a simple text with numb3r5 and exclamat!0n.";
+
+    test1(text);
+    test2(text);
 
     return 0;
 }
