@@ -1,10 +1,10 @@
 /*
-Author: immortal-j
-Implementation Details
-Quick sort 3 works on Dutch National Flag Algorithm
-The major diffrence between simple quicksort and quick sort 3 comes in the
-function partition3 In quick_sort_partition3 we divide the vector/array into 3
-parts. quick sort 3 works faster in some cases as compared to simple quicksort.
+*Author: immortal-j
+*Implementation Details
+*Quick sort 3 works on Dutch National Flag Algorithm
+*The major diffrence between simple quicksort and quick sort 3 comes in the
+*function partition3 In quick_sort_partition3 we divide the vector/array into 3
+*parts. quick sort 3 works faster in some cases as compared to simple quicksort.
 */
 #include <iostream>
 // function to swap elements
@@ -16,20 +16,23 @@ void swap(int *a, int *b) {
 
 // function to print an array
 void print_arr(int arr[], int n) {
-  for (int i = 0; i < n; ++i)
+  for (int i = 0; i < n; ++i){
     std::cout << arr[i] << " ";
+ } 
   std::cout << "\n";
 }
 
 /* This function partitions arr[] in three parts
-a) arr[l..i] contains all elements smaller than pivot
-b) arr[i+1..j-1] contains all occurrences of pivot
-c) arr[j..r] contains all elements greater than pivot */
+*a) arr[l..i] contains all elements smaller than pivot
+*b) arr[i+1..j-1] contains all occurrences of pivot
+*c) arr[j..r] contains all elements greater than pivot 
+*/
 void partition3(int arr[], int low, int high, int *i, int *j) {
   // To handle 2 elements
   if (high - low <= 1) {
-    if (arr[high] < arr[low])
+    if (arr[high] < arr[low]){
       swap(&arr[high], &arr[low]);
+    }
     *i = low;
     *j = high;
     return;
@@ -38,12 +41,15 @@ void partition3(int arr[], int low, int high, int *i, int *j) {
   int mid = low;
   int pivot = arr[high];
   while (mid <= high) {
-    if (arr[mid] < pivot)
+    if (arr[mid] < pivot){
       swap(&arr[low++], &arr[mid++]);
-    else if (arr[mid] == pivot)
+    }
+    else if (arr[mid] == pivot){
       mid++;
-    else if (arr[mid] > pivot)
+    }
+    else if (arr[mid] > pivot){
       swap(&arr[mid], &arr[high--]);
+    }
   }
 
   // update i and j
@@ -53,8 +59,9 @@ void partition3(int arr[], int low, int high, int *i, int *j) {
 
 // 3-way partition based quick sort
 void quicksort(int arr[], int low, int high) {
-  if (low >= high) // 1 or 0 elements
+  if (low >= high){ // 1 or 0 elements
     return;
+}
 
   int i, j;
 
