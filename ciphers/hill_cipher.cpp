@@ -26,6 +26,9 @@
  *
  * \note This program uses determinant computation using LU decomposition from
  * the file lu_decomposition.h
+ * \note The matrix generation algorithm is very rudimentary and does not
+ * guarantee an invertible modulus matrix. \todo Better matrix generation
+ * algorithm.
  *
  * @author [Krishna Vedala](https://github.com/kvedala)
  */
@@ -34,6 +37,7 @@
 #include <cmath>
 #include <cstring>
 #include <ctime>
+#include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
@@ -350,7 +354,7 @@ class HillCipher {
             if (mat_determinant < 0)
                 mat_determinant = (mat_determinant % L);
         } while (std::abs(dd) > 1e3 ||  // while ill-defined
-                 std::abs(dd) < 0.1 ||  // while singular
+                 dd < 0.1 ||  // while singular or negative determinant
                  !std::isfinite(dd) ||  // while determinant is not finite
                  gcd(mat_determinant, L) != 1);  // while no common factors
         // std::cout <<
@@ -483,6 +487,12 @@ void test1(const std::string &text) {
     std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
 
+    std::ofstream out_file("hill_cipher_test1.txt");
+    out_file << "Block size: " << ekey.size() << "\n";
+    out_file << "Encryption Key:\n" << ekey;
+    out_file << "\nDecryption Key:\n" << dkey;
+    out_file.close();
+
     assert(txt_back == text);
     std::cout << "Passed :)\n";
 }
@@ -498,7 +508,7 @@ void test2(const std::string &text) {
               << std::endl;
 
     std::pair<matrix<int>, matrix<int>> p =
-        ciphers::HillCipher::generate_keys(8, 0, 5);
+        ciphers::HillCipher::generate_keys(8, 0, 3);
     matrix<int> ekey = p.first;
     matrix<int> dkey = p.second;
 
@@ -507,6 +517,12 @@ void test2(const std::string &text) {
 
     std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
+
+    std::ofstream out_file("hill_cipher_test2.txt");
+    out_file << "Block size: " << ekey.size() << "\n";
+    out_file << "Encryption Key:\n" << ekey;
+    out_file << "\nDecryption Key:\n" << dkey;
+    out_file.close();
 
     assert(txt_back.compare(0, text.size(), text) == 0);
     std::cout << "Passed :)\n";
