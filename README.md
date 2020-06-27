@@ -11,7 +11,7 @@
 
 ## Overview
 
-The repository is a collection of implementation of a variety of algorithms implemented in C++. These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations are meant to be a learning resource for educators and students. Hence, one may find more than one implementation for the same algorithm with different optimizations and different strategies used that would be documented therein. 
+The repository is a collection of implementation of a variety of algorithms implemented in C++. These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations and the associated documentation are meant to provide a learning resource for educators and students. Hence, one may find more than one implementation for the same objective but using a different algorithm strategies and optimizations. 
 
 ## Features
 
@@ -30,4 +30,4 @@ Click on [Files menu](https://TheAlgorithms.github.io/C-Plus-Plus/files.html) to
 
 ## Contributions
 
-As a community developed and community maintained repository, we welcome new un-plagiarized quality contributions. Please read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md).
+As a community developed and maintained repository, we welcome new un-plagiarized quality contributions. Please read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md).
