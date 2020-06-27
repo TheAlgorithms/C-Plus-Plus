@@ -55,15 +55,17 @@ void printSolution(int color[]) {
     std::cout << "\n";
 }
 
-// driver program to test above function
+/**
+ * Main function
+ */
 int main() {
-    /* Create following graph and test whether it is 3 colorable
-      (3)---(2)
-       |   / |
-       |  /  |
-       | /   |
-      (0)---(1)
-    */
+    // Create following graph and test whether it is 3 colorable
+    // (3)---(2)
+    // |   / |
+    // |  /  |
+    // | /   |
+    // (0)---(1)
+
     bool graph[V][V] = {
         {0, 1, 1, 1},
         {1, 0, 1, 0},
