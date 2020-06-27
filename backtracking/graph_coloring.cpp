@@ -47,7 +47,7 @@ void graphColoring(bool graph[V][V], int m, int color[], int v) {
 
 /* A utility function to print solution */
 void printSolution(int color[]) {
-    std::cout << "Following are the assigned colors\n");
+    std::cout << "Following are the assigned colors\n";
     for (int i = 0; i < V; i++) {
         std::cout << color[i];
     }
