@@ -484,6 +484,7 @@ void test1(const std::string &text) {
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
 
     assert(txt_back == text);
+    std::cout << "Passed :)\n";
 }
 
 /**
@@ -497,7 +498,7 @@ void test2(const std::string &text) {
               << std::endl;
 
     std::pair<matrix<int>, matrix<int>> p =
-        ciphers::HillCipher::generate_keys(8, 0, 10);
+        ciphers::HillCipher::generate_keys(8, 0, 5);
     matrix<int> ekey = p.first;
     matrix<int> dkey = p.second;
 
@@ -507,7 +508,8 @@ void test2(const std::string &text) {
     std::string txt_back = ciphers::HillCipher::decrypt_text(gibberish, dkey);
     std::cout << "Reconstruct text:\n\t" << txt_back << std::endl;
 
-    assert(text.compare(0, text.length() - 1, txt_back) == 0);
+    assert(txt_back.compare(0, text.size(), text) == 0);
+    std::cout << "Passed :)\n";
 }
 
 /** Main function */
