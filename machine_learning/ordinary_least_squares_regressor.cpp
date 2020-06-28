@@ -355,7 +355,7 @@ std::vector<float> predict_OLS_regressor(std::vector<std::vector<T>> const &X,
 }
 
 /** Self test checks */
-void test() {
+void ols_test() {
     int F = 3, N = 5;
 
     /* test function = x^2 -5 */
@@ -368,12 +368,12 @@ void test() {
     // perform regression modelling
     std::vector<float> beta1 = fit_OLS_regressor(data1, Y1);
     // create test data set with same features = x, x^2, x^3
-    std::vector<std::vector<float>> test1(
+    std::vector<std::vector<float>> test_data1(
         {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});
     // expected regression outputs
     std::vector<float> expected1({-1, -1, 95, 95});
     // predicted regression outputs
-    std::vector<float> out1 = predict_OLS_regressor(test1, beta1);
+    std::vector<float> out1 = predict_OLS_regressor(test_data1, beta1);
     // compare predicted results are within +-0.01 limit of expected
     for (size_t rows = 0; rows < out1.size(); rows++)
         assert(std::abs(out1[rows] - expected1[rows]) < 0.01);
@@ -389,12 +389,12 @@ void test() {
     // perform regression modelling
     std::vector<float> beta2 = fit_OLS_regressor(data2, Y2);
     // create test data set with same features = x, x^2, x^3
-    std::vector<std::vector<float>> test2(
+    std::vector<std::vector<float>> test_data2(
         {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});
     // expected regression outputs
     std::vector<float> expected2({-104, -88, -1000, 1000});
     // predicted regression outputs
-    std::vector<float> out2 = predict_OLS_regressor(test2, beta2);
+    std::vector<float> out2 = predict_OLS_regressor(test_data2, beta2);
     // compare predicted results are within +-0.01 limit of expected
     for (size_t rows = 0; rows < out2.size(); rows++)
         assert(std::abs(out2[rows] - expected2[rows]) < 0.01);
@@ -408,7 +408,7 @@ void test() {
  * main function
  */
 int main() {
-    test();
+    ols_test();
 
     size_t N, F;
 
