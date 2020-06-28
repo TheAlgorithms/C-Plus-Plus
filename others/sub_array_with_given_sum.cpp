@@ -71,7 +71,7 @@ int contiguous_sub_array(int *arr, int size, int orignal_sum) {
 
 /**
  * Test cases to test the program
-*/
+ */
 void test() {
     std::cout << "Test 1" << std::endl;
     int arr1[] = {1, 2, 3, 7, 5};
