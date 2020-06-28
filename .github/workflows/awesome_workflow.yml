@@ -100,15 +100,6 @@ jobs:
 
             with open("DIRECTORY.md", "w") as out_file:
                 out_file.write(build_directory_md(".") + "\n")
-      - name: Update DIRECTORY.md
-        run: |
-          cat DIRECTORY.md
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git add DIRECTORY.md
-          git commit -am "updating DIRECTORY.md" ||  true
-          git push --force origin HEAD:$GITHUB_REF || true
       - name: Install CPPLINT
         run: |
           python -m pip install cpplint
@@ -140,7 +131,7 @@ jobs:
             subprocess.run(["clang-tidy", 
             "--format-style='{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 80, AccessModifierOffset: -3 }'",
             "-checks=-*,google-*,portability-*", "--fix",
-            cpp_file], check=True, text=True)
+            cpp_file, "--"], check=True, text=True)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
@@ -166,6 +157,14 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
+      - name: Commit and push changes
+        run: |
+          cat DIRECTORY.md
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git commit -am "updating DIRECTORY.md" ||  true
+          git push --force origin HEAD:$GITHUB_REF || true
 
   build:
     name: Compile checks
