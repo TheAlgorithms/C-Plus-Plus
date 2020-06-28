@@ -51,7 +51,7 @@ bool mycmp(query x, query y) {
  */
 int main() {
     int n, t, i, j, k = 0;
-    cin >> n;
+    std::cin >> n;
     for (i = 0; i < n; i++) {
         std::cin >> a[i]
     }
@@ -59,7 +59,7 @@ int main() {
     bucket_size = ceil(sqrt(n));
     std::cin >> t;
     for (i = 0; i < t; i++) {
-        cin >> q[i].l >> q[i].r;
+        std::cin >> q[i].l >> q[i].r;
         q[i].l--;
         q[i].r--;
         q[i].i = i;
