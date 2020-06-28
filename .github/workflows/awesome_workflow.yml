@@ -16,7 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-format
+          sudo apt -qq install clang-format clang-tidy
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions
@@ -135,9 +135,12 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          print("cpplint:")
+          print("clang-tidy:")
           for cpp_file in cpp_files:
-            subprocess.run(["cpplint", "--filter=-legal/copyright,-build/include", cpp_file], check=True, text=True)
+            subprocess.run(["clang-tidy", 
+            "--format-style='{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 80, AccessModifierOffset: -3 }'",
+            "-checks=-*,google-*,portability-*", "--fix",
+            cpp_file], check=True, text=True)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
