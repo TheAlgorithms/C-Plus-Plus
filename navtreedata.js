@@ -25,12 +25,15 @@
 var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
-    [ "The Algorithms - C++", "index.html", null ],
+    [ "The Algorithms - C++", "index.html", [
+      [ "Overview", "index.html#autotoc_md33", null ],
+      [ "Features", "index.html#autotoc_md34", null ],
+      [ "Documentation", "index.html#autotoc_md35", null ],
+      [ "Contributions", "index.html#autotoc_md36", null ]
+    ] ],
     [ "CONTRIBUTION GUIDELINES", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
       [ "Before contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
       [ "Contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", [
-        [ "Algorithms implemented in C++ (for education)", "index.html#autotoc_md33", null ],
-        [ "Contribute Guidelines", "index.html#autotoc_md34", null ],
         [ "Contributor", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", null ],
         [ "Making Changes", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", [
           [ "Code", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5", null ],
