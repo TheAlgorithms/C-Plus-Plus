@@ -78,6 +78,7 @@
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Kruskal.cpp)
   * [Lca](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lca.cpp)
+  * [Longest Path](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/longest_path.cpp)
   * [Topological-Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/Topological-Sort.cpp)
 
 ## Greedy Algorithms
@@ -185,6 +186,7 @@
   * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Selection%20Sort.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Shell%20Sort.cpp)
   * [Slow Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Slow%20Sort.cpp)
+  * [Swap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/swap_sort.cpp)
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/Tim%20Sort.cpp)
 
 ## Strings
