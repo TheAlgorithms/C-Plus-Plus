@@ -7,7 +7,7 @@
  * @author ali-mir
 */
 
-#include <limits.h>
+#include <climits>
 #include <iostream>
 
 /**
