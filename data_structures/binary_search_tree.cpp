@@ -157,11 +157,11 @@ void Post(node *n) {
     }
 }
 
-void testInOrderTraverse(node *n, std::vector<int>& arr) {
+void testInOrderTraverse(node *n, std::vector<int> &arr) {
     if (n != NULL) {
         testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
-        arr.push_back( n->val );
+        arr.push_back(n->val);
         testInOrderTraverse(n->right, arr);
     }
 }
