@@ -53,17 +53,17 @@ struct SegmentTree {
  * will be finished. At each Step we divide interval in 2 similar size pars, and
  * making another nodes which are corresponding segments for this parts.
  */
-void BuildTree_Recusrive(SegmentTree& ST, int v, int tl, int tr) {
+void BuildTree_Recusrive(SegmentTree* ST, int v, int tl, int tr) {
     if (tl == tr) {
-        ST.nodes[v].val = ST.arr[tl - 1], ST.nodes[v].ind = tl;
+        ST->nodes[v].val = ST->arr[tl - 1], ST->nodes[v].ind = tl;
     } else {
         int tm = (tl + tr) / 2;
         BuildTree_Recusrive(ST, 2 * v, tl, tm);
         BuildTree_Recusrive(ST, 2 * v + 1, tm + 1, tr);
-        if (ST.nodes[2 * v].val >= ST.nodes[2 * v + 1].val)
-            ST.nodes[v] = ST.nodes[2 * v];
+        if (ST->nodes[2 * v].val >= ST->nodes[2 * v + 1].val)
+            ST->nodes[v] = ST->nodes[2 * v];
         else
-            ST.nodes[v] = ST.nodes[2 * v + 1];
+            ST->nodes[v] = ST->nodes[2 * v + 1];
     }
 }
 
@@ -72,11 +72,11 @@ void BuildTree_Recusrive(SegmentTree& ST, int v, int tl, int tr) {
  * Tree Data Structure based on this array
  * and stores it in ST struct Variable
  */
-void BuildTree(SegmentTree& ST, const std::vector<int> arr) {
-    ST.N = arr.size();
-    ST.arr = arr;
-    ST.nodes.resize(ST.N * 4 + 1);
-    BuildTree_Recusrive(ST, 1, 1, ST.N);
+void BuildTree(SegmentTree* ST, const std::vector<int> arr) {
+    ST->N = arr.size();
+    ST->arr = arr;
+    ST->nodes.resize(ST->N * 4 + 1);
+    BuildTree_Recusrive(ST, 1, 1, ST->N);
 }
 
 /**
@@ -116,7 +116,7 @@ int main() {
     // Debug with an example array
     std::vector<int> exampleArray{17, 3, 190, 2, 34, -90, 19, 100, 9};
 
-    BuildTree(ST, exampleArray);
+    BuildTree(&ST, exampleArray);
 
     Node answer = GetMaximumOnInterval(ST, 2, 7);
     std::cout << "For array {";
