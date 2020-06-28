@@ -3,7 +3,7 @@
  * @brief Implementation of [Segment
  * Trees](https://en.wikipedia.org/wiki/Segment_tree) to find maximum number in
  * an array and its index in logarithmic time - \f$O(N \log(N))\f$.
- * @author [Lasha Bukhnikashvili](author's GitHub profile link here)
+ * @author [Lasha Bukhnikashvili](https://github.com/LashaBuxo)
  */
 
 #include <algorithm>
