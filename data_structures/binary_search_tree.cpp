@@ -9,6 +9,7 @@
 #include <algorithm>  // test code
 #include <cassert>
 #include <iostream>
+#include <vector>
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -156,14 +157,12 @@ void Post(node *n) {
     }
 }
 
-int arr[7] = {0};  // for test tree use only
-int index = 0;     // for test tree use only
-void testInOrderTraverse(node *n) {
+void testInOrderTraverse(node *n, std::vector<int>& arr) {
     if (n != NULL) {
-        testInOrderTraverse(n->left);
+        testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
-        arr[index++] = n->val;
-        testInOrderTraverse(n->right);
+        arr.push_back( n->val );
+        testInOrderTraverse(n->right, arr);
     }
 }
 
@@ -183,17 +182,18 @@ void test_tree() {
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
     // test code
-    testInOrderTraverse(root);
-    assert(std::is_sorted(arr, arr + 7));
+    std::vector<int> arr;
+    testInOrderTraverse(root, arr);
+    assert(std::is_sorted(arr.begin(), arr.end()));
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    index = 0;
     Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
-    testInOrderTraverse(root);
+    arr.clear();
+    testInOrderTraverse(root, arr);
     for (int i = 0; i < 6; i++) {
         assert(arr[i] != 2);
     }
