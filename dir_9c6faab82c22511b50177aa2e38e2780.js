@@ -12,7 +12,6 @@ var dir_9c6faab82c22511b50177aa2e38e2780 =
     [ "ode_forward_euler.cpp", "db/dd3/ode__forward__euler_8cpp.html", "db/dd3/ode__forward__euler_8cpp" ],
     [ "ode_midpoint_euler.cpp", "d6/dd3/ode__midpoint__euler_8cpp.html", "d6/dd3/ode__midpoint__euler_8cpp" ],
     [ "ode_semi_implicit_euler.cpp", "d3/d06/ode__semi__implicit__euler_8cpp.html", "d3/d06/ode__semi__implicit__euler_8cpp" ],
-    [ "ordinary_least_squares_regressor.cpp", "dc/d38/ordinary__least__squares__regressor_8cpp.html", "dc/d38/ordinary__least__squares__regressor_8cpp" ],
     [ "qr_decompose.h", "d4/d68/qr__decompose_8h.html", "d4/d68/qr__decompose_8h" ],
     [ "qr_decomposition.cpp", "d3/d24/qr__decomposition_8cpp.html", "d3/d24/qr__decomposition_8cpp" ],
     [ "qr_eigen_values.cpp", "de/d75/qr__eigen__values_8cpp.html", "de/d75/qr__eigen__values_8cpp" ],

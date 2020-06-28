@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms_in_C++: numerical_methods/ordinary_least_squares_regressor.cpp File Reference</title>
+<title>Algorithms_in_C++: machine_learning/ordinary_least_squares_regressor.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -155,8 +155,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a4bcaaf41c66da4d3a471dacef133def7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4bcaaf41c66da4d3a471dacef133def7"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&gt; const &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; float &gt; const &amp;beta)</td></tr>
 <tr class="separator:a4bcaaf41c66da4d3a471dacef133def7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a3968e7947464bee7714f6d43b7002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a> ()</td></tr>
-<tr class="separator:ae1a3968e7947464bee7714f6d43b7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4261f3c3c3dfdb86f3004eb8aaffea8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a> ()</td></tr>
+<tr class="separator:a4261f3c3c3dfdb86f3004eb8aaffea8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -406,7 +406,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>main function </p>
 <div class="fragment"><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;           {</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>();</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">size_t</span> N, F;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
@@ -460,7 +460,79 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4261f3c3c3dfdb86f3004eb8aaffea8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4261f3c3c3dfdb86f3004eb8aaffea8d">&#9670;&nbsp;</a></span>ols_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ols_test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Self test checks </p>
+<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">int</span> F = 3, N = 5;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">/* test function = x^2 -5 */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data1(</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// create corresponding outputs</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y1({20, -4, -5, -4, 31});</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// perform regression modelling</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta1 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045">fit_OLS_regressor</a>(data1, Y1);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; test_data1(</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// expected regression outputs</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected1({-1, -1, 95, 95});</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="comment">// predicted regression outputs</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out1 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a>(test_data1, beta1);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        assert(std::abs(out1[rows] - expected1[rows]) &lt; 0.01);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">/* test function = x^3 + x^2 - 100 */</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data2(</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// create corresponding outputs</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y2({-200, -100, -100, 98, 152});</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">// perform regression modelling</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta2 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045">fit_OLS_regressor</a>(data2, Y2);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; test_data2(</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// expected regression outputs</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected2({-104, -88, -1000, 1000});</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// predicted regression outputs</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out2 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a>(test_data2, beta2);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++)</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        assert(std::abs(out2[rows] - expected2[rows]) &lt; 0.01);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;  <span class="comment">// ensure test results are displayed on screen</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                             <span class="comment">// (flush stdout)</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_a4261f3c3c3dfdb86f3004eb8aaffea8d_cgraph.svg" width="572" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -971,86 +1043,12 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae1a3968e7947464bee7714f6d43b7002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a3968e7947464bee7714f6d43b7002">&#9670;&nbsp;</a></span>test()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void test </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Self test checks </p>
-<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">int</span> F = 3, N = 5;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">/* test function = x^2 -5 */</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data1(</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y1({20, -4, -5, -4, 31});</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta1 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045">fit_OLS_regressor</a>(data1, Y1);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a52053d88ea1bcbbed9aca67ab4eeb499">test1</a>(</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected1({-1, -1, 95, 95});</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out1 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a>(<a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a52053d88ea1bcbbed9aca67ab4eeb499">test1</a>, beta1);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out1.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        assert(std::abs(out1[rows] - expected1[rows]) &lt; 0.01);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">/* test function = x^3 + x^2 - 100 */</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 (cubic function)....&quot;</span>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// create training data set with features = x, x^2, x^3</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; data2(</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        {{-5, 25, -125}, {-1, 1, -1}, {0, 0, 0}, {1, 1, 1}, {6, 36, 216}});</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// create corresponding outputs</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y2({-200, -100, -100, 98, 152});</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">// perform regression modelling</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> beta2 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045">fit_OLS_regressor</a>(data2, Y2);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// create test data set with same features = x, x^2, x^3</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; <a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a>(</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        {{-2, 4, -8}, {2, 4, 8}, {-10, 100, -1000}, {10, 100, 1000}});</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// expected regression outputs</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> expected2({-104, -88, -1000, 1000});</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// predicted regression outputs</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> out2 = <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a>(<a class="code" href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a>, beta2);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// compare predicted results are within +-0.01 limit of expected</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; out2.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); rows++)</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        assert(std::abs(out2[rows] - expected2[rows]) &lt; 0.01);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;passed\n&quot;</span>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;  <span class="comment">// ensure test results are displayed on screen</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                             <span class="comment">// (flush stdout)</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="asetfill_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a></div><div class="ttdeci">T setfill(T... args)</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4921874435266592b222e3f2eda0e01f"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f">is_square</a></div><div class="ttdeci">bool is_square(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;A)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:57</div></div>
-<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:358</div></div>
-<div class="ttc" id="aadaline__learning_8cpp_html_a52053d88ea1bcbbed9aca67ab4eeb499"><div class="ttname"><a href="../../d5/db0/adaline__learning_8cpp.html#a52053d88ea1bcbbed9aca67ab4eeb499">test1</a></div><div class="ttdeci">void test1(double eta=0.01)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:204</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4bcaaf41c66da4d3a471dacef133def7"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7">predict_OLS_regressor</a></div><div class="ttdeci">std::vector&lt; float &gt; predict_OLS_regressor(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;X, std::vector&lt; float &gt; const &amp;beta)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:342</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
@@ -1058,14 +1056,14 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a98ab8f75d981088369b89b8be2182483"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a98ab8f75d981088369b89b8be2182483">get_inverse</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; float &gt; &gt; get_inverse(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;A)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:220</div></div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
+<div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4261f3c3c3dfdb86f3004eb8aaffea8d"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a></div><div class="ttdeci">void ols_test()</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:358</div></div>
 <div class="ttc" id="asetw_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a></div><div class="ttdeci">T setw(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="aadaline__learning_8cpp_html_a379f7488a305f2571f2932b319931f82"><div class="ttname"><a href="../../d5/db0/adaline__learning_8cpp.html#a379f7488a305f2571f2932b319931f82">test2</a></div><div class="ttdeci">void test2(double eta=0.01)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:238</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a889f9de199fa793497c864d8e493af05"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a889f9de199fa793497c864d8e493af05">get_transpose</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; get_transpose(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;A)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:291</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_9c6faab82c22511b50177aa2e38e2780.html">numerical_methods</a></li><li class="navelem"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html">ordinary_least_squares_regressor.cpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_3343723ae086de42ee4ca9774da3a13f.html">machine_learning</a></li><li class="navelem"><a class="el" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html">ordinary_least_squares_regressor.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
