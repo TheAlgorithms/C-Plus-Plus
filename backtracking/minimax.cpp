@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using std::cout;
 using std::endl;
@@ -24,4 +25,5 @@ int main() {
     int height = log2(scores.size());
 
     cout << "Optimal value: " << minimax(0, 0, true, scores, height) << endl;
+    return 0;
 }
