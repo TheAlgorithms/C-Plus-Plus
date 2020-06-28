@@ -3,28 +3,34 @@
  *
  * @file
  * Given an unsorted array A of size N of non-negative integers,
- * find a continuous sub-array which adds to a given number S, If not found print -1.
+ * find a continuous sub-array which adds to a given number S, If not found
+print -1.
  *
  * Sample Test casees input:
-    5 12                        where 5 is the size of an array and 12 is the given number which is equal to total elements found in sub array.
-    1 2 3 7 5                   space seperated integers representing elements of an array.
-    5 123                       where 5 is the size of an array and 123 is the given number which is equal to total elements found in sub array.
-    1 2 3 7 5                   space seperated integers representing elements of an array.
-    10 15                       where 10 is the size of an array and 15 is the given number which is equal to total elements found in sub array.
-    1 2 3 4 5 6 7 8 9 10        space seperated integers representing elements of an array.
+    5 12                        where 5 is the size of an array and 12 is the
+given number which is equal to total elements found in sub array. 1 2 3 7 5
+space seperated integers representing elements of an array. 5 123 where 5 is the
+size of an array and 123 is the given number which is equal to total elements
+found in sub array. 1 2 3 7 5                   space seperated integers
+representing elements of an array. 10 15                       where 10 is the
+size of an array and 15 is the given number which is equal to total elements
+found in sub array. 1 2 3 4 5 6 7 8 9 10        space seperated integers
+representing elements of an array.
 * Sample Test cases output:
-    2 4                         sum of elements from 2nd position to 4th position is 12 (consider 1 based indexing).
-    -1                          no subarray found whose sum equals to the given sum, hence print -1.
-    1 5                         sum of elements from 1st position to 5th position is 15 (consider 1 based indexing).
+    2 4                         sum of elements from 2nd position to 4th
+position is 12 (consider 1 based indexing). -1                          no
+subarray found whose sum equals to the given sum, hence print -1. 1 5 sum of
+elements from 1st position to 5th position is 15 (consider 1 based indexing).
 
 * Explanation :
-    Testcase1: sum of elements from 2nd position to 4th position is 12 (consider 1 based indexing).
-    Testcase2: no subarray found whose sum equals to the given sum, hence print -1.
-    Testcase3: sum of elements from 1st position to 5th position is 15 (consider 1 based indexing).
+    Testcase1: sum of elements from 2nd position to 4th position is 12 (consider
+1 based indexing). Testcase2: no subarray found whose sum equals to the given
+sum, hence print -1. Testcase3: sum of elements from 1st position to 5th
+position is 15 (consider 1 based indexing).
 */
 
-#include <iostream>
 #include <cassert>
+#include <iostream>
 #include <vector>
 /**
  * Function to print the index range of subarray equal to the given sum. If no
