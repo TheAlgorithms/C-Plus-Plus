@@ -39,7 +39,7 @@ bool isSafe(int v, const bool graph[V][V], const int *color, int c) {
     return true;
 }
 
-/* A recursive utility function to solve m coloring problem
+/** A recursive utility function to solve m coloring problem
  * @tparam V number of vertices in the graph
  * @param graph description
  * @param m description
