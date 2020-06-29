@@ -12,8 +12,7 @@ const ll MOD = 1e9 + 7;
 // powerStrings(). Its complexity is log(n) 
 ll powerLL(ll x, ll n) { 
 	ll result = 1; 
-	while (n)
-	 { 
+	while (n) {
 		if (n & 1) {
 			result = result * x % MOD;
 		}
