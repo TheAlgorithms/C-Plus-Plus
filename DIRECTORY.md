@@ -192,7 +192,7 @@
 
 ## Range Queries
   * [Fenwick Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/fenwick_tree.cpp)
-  * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
+  * [Mo Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo_algorithm.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
 
 ## Search
