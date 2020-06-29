@@ -1,7 +1,5 @@
 #include <iostream>
-using namespace std;
-/// N=9;
-int n = 9;
+#define n 9
 
 bool isPossible(int mat[][9], int i, int j, int no) {
     /// Row or col nahin hona chahiye
@@ -25,18 +23,19 @@ bool isPossible(int mat[][9], int i, int j, int no) {
 
     return true;
 }
+
 void printMat(int mat[][9]) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cout << mat[i][j] << " ";
+            std::cout << mat[i][j] << " ";
             if ((j + 1) % 3 == 0) {
-                cout << '\t';
+                std::cout << '\t';
             }
         }
         if ((i + 1) % 3 == 0) {
-            cout << endl;
+            std::cout << std::endl;
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
@@ -76,6 +75,9 @@ bool solveSudoku(int mat[][9], int i, int j) {
     return false;
 }
 
+/**
+ * Main function
+ */
 int main() {
     int mat[9][9] = {{5, 3, 0, 0, 7, 0, 0, 0, 0}, {6, 0, 0, 1, 9, 5, 0, 0, 0},
                      {0, 9, 8, 0, 0, 0, 0, 6, 0}, {8, 0, 0, 0, 6, 0, 0, 0, 3},
@@ -84,7 +86,7 @@ int main() {
                      {0, 0, 0, 0, 8, 0, 0, 7, 9}};
 
     printMat(mat);
-    cout << "Solution " << endl;
+    std::cout << "Solution " << std::endl;
     solveSudoku(mat, 0, 0);
 
     return 0;
