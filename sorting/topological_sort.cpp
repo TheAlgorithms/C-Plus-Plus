@@ -1,3 +1,12 @@
+/**
+ * @file
+ * @brief Topological sort algorithm
+ *
+ * Implementation Details -
+ *      Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering
+ *	of vertices such that for every directed edge uv, vertex u comes before v in the
+ *	ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+ */
 #include <algorithm>
 #include <iostream>
 #define MAX 10
@@ -54,6 +63,7 @@ int de_queue() {
 	else delnode = Queue[front++];
 	return delnode;
 }
+// Driver Code
 int main()
 {
 	int node, topsort[MAX], indeg[MAX], delnode, j=0;
