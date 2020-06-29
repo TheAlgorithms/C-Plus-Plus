@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['absoluteprecision_4024',['absolutePrecision',['../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc',1,'ternary_search.cpp']]],
-  ['accuracy_4025',['ACCURACY',['../da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689',1,'durand_kerner_roots.cpp']]]
+  ['absoluteprecision_4050',['absolutePrecision',['../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc',1,'ternary_search.cpp']]],
+  ['accuracy_4051',['ACCURACY',['../da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689',1,'durand_kerner_roots.cpp']]]
 ];

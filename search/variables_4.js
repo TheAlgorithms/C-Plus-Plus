@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eta_3990',['eta',['../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda',1,'machine_learning::adaline']]]
+  ['eta_4015',['eta',['../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda',1,'machine_learning::adaline']]]
 ];

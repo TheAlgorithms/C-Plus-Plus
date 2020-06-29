@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
     [ "Btree", "d9/d90/struct_btree.html", "d9/d90/struct_btree" ],
@@ -11,8 +12,8 @@ var annotated_dup =
     [ "Edge", "d7/d77/class_edge.html", "d7/d77/class_edge" ],
     [ "Entry", "dd/d3b/struct_entry.html", "dd/d3b/struct_entry" ],
     [ "FenwickTree", "dd/d91/class_fenwick_tree.html", "dd/d91/class_fenwick_tree" ],
-    [ "graph", "dd/d9b/classgraph.html", "dd/d9b/classgraph" ],
     [ "Graph", "da/d9a/class_graph.html", "da/d9a/class_graph" ],
+    [ "graph", "dd/d9b/classgraph.html", "dd/d9b/classgraph" ],
     [ "Item", "db/d66/struct_item.html", "db/d66/struct_item" ],
     [ "large_number", "db/d82/classlarge__number.html", "db/d82/classlarge__number" ],
     [ "lca", "dd/df4/structlca.html", "dd/df4/structlca" ],
@@ -25,14 +26,14 @@ var annotated_dup =
     [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
+    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", "d0/dd2/class_queue___array" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", "d2/dc4/classstack__linked_list" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
-    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ],
-    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ]
+    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
+    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ]
 ];
