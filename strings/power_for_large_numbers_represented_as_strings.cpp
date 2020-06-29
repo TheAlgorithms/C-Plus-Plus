@@ -14,8 +14,10 @@ ll powerLL(ll x, ll n) {
 	ll result = 1; 
 	while (n)
 	 { 
-		if (n & 1) 
-			result = result * x % MOD; 
+		if (n & 1) {
+			result = result * x % MOD;
+		}
+
 		n = n / 2; 
 		x = x * x % MOD; 
 	} 
