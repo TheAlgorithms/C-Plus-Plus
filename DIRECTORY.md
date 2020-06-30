@@ -10,6 +10,9 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
+## Ciphers
+  * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
+
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
@@ -98,10 +101,14 @@
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
+  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/ordinary_least_squares_regressor.cpp)
 
 ## Math
+  * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
+  * [Check Amicable Pair](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_amicable_pair.cpp)
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_prime.cpp)
+  * [Complex Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/complex_numbers.cpp)
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/double_factorial.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/extended_euclid_algorithm.cpp)
@@ -137,11 +144,11 @@
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
+  * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
   * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
   * [Ode Forward Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_forward_euler.cpp)
   * [Ode Midpoint Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_midpoint_euler.cpp)
   * [Ode Semi Implicit Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_semi_implicit_euler.cpp)
-  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ordinary_least_squares_regressor.cpp)
   * [Qr Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decompose.h)
   * [Qr Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decomposition.cpp)
   * [Qr Eigen Values](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_eigen_values.cpp)
