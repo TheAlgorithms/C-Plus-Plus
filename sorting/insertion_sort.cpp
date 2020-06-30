@@ -26,15 +26,15 @@
  * the algorithms goes in the manner that we start iterating over the array
  * of elements as soon as we find a unsorted element that is a misplaced
  * element we place it at a sorted position.
- * 
+ *
  * Suppose initially we have
  * <pre>
  * 4 3 2 5 1
- * 
+ *
  * we start traversing from 4 till we reach 1
  * when we reach at 3 we find that it is misplaced so we take 3 and place
  * it at a correct position thus the array will become
- * 
+ *
  * 3 4 2 5 1
  *
  * in the next iteration we are at 2 we find that this is also misplaced so
@@ -55,7 +55,7 @@
 
 /** \brief
  * Insertion Sort Function
- * 
+ *
  * @param arr Array to be sorted
  * @param n Size of Array
  *
@@ -80,12 +80,12 @@ int main() {
     int *arr = new int[n];
     std::cout << "Enter any " << n << " Numbers for Unsorted Array : ";
 
-    for (int i = 0; i < n; i++)  std::cin >> arr[i];
+    for (int i = 0; i < n; i++) std::cin >> arr[i];
 
     insertionSort(arr, n);
 
     std::cout << "\nSorted Array : ";
-    for (int i = 0; i < n; i++)  std::cout << arr[i] << " ";
+    for (int i = 0; i < n; i++) std::cout << arr[i] << " ";
 
     std::cout << std::endl;
     delete[] arr;
