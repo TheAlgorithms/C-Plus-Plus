@@ -4,6 +4,8 @@
  * \details
  * Dijkstra's Algorithm is a greedy solution for the single-source shortest path problem in a graph whose edges have integer weights.
  * This solution takes in input to build the graph and outputs distances to nodes from a selected source node.
+ * @author arpanjain97
+ * @author christianbender
  * @author ali-mir
 */
 
@@ -15,11 +17,12 @@
 */
 class Graph {
  public:
-    int vertexNum;
-    int **edges;
+    int vertexNum; ///< number of vertices in the graph
+    int **edges; ///< matrix of edge connection weights. `edge[i][j]` represents the weight of edge
 
     /**
      * \brief Constructor that initiliazes the graph by creating the edges array.
+     * @param V number of vertices in the graph
      */
     explicit Graph(const int V) {
         this->edges = new int *[V];
@@ -36,6 +39,14 @@ class Graph {
         this->vertexNum = V;
     }
 
+    /** Class destructor to deallocate memory on class destruction */
+    ~Graph() {
+        for (int i = 0; i < this->vertexNum; i++) {
+            delete[] edges[i];
+        }
+        delete[] edges;
+    }
+
     // Adds the given edge to the graph
     void addEdge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
@@ -43,14 +54,14 @@ class Graph {
 };
 /**
  * Function to find minimum distance vertex in mdist.
- * @param mdist[] array of minimum distances to vertices
- * @param vset[] array of vertices, where vset[i] is a bool that indicates
+ * @param mdist array of minimum distances to vertices
+ * @param vset array of vertices, where vset[i] is a boolean value that indicates
  * whether the vertex i is included in the shortest path tree
- * @param int number of vertices
+ * @param V number of vertices
  * @return minimum distance vertex
  */
-int minDistance(int mdist[], bool vset[], int V) {
-    int minVal = INT_MAX, minInd = 0;
+int minDistance(const int *mdist, const bool *vset, int V) {
+    int minVal = std::numeric_limits<int>::infinity(), minInd = 0;
     for (int i = 0; i < V; i++) {
         if (!vset[i] && (mdist[i] < minVal)) {
             minVal = mdist[i];
@@ -63,10 +74,10 @@ int minDistance(int mdist[], bool vset[], int V) {
 
 /**
  * Function to print minimum distances to vertices.
- * @param dist[] array of distances to vertices
- * @param int number of vertices
+ * @param dist array of distances to vertices
+ * @param V number of vertices
  */
-void print(int dist[], int V) {
+void print(const int *dist, int V) {
     std::cout << "\nVertex  Distance" << std::endl;
     for (int i = 0; i < V; i++) {
         if (dist[i] < INT_MAX)
@@ -80,8 +91,10 @@ void print(int dist[], int V) {
  * The main function that finds the shortest path from given source
  * to all other vertices using Dijkstra's Algorithm. It doesn't work on negative
  * weights.
+ * @param graph the Graph on which we are performing our shortest path algorithm
+ * @param src node from which we calculate minimum distances to all other vertices in the graph
 */
-void Dijkstra(Graph graph, int src) {
+void Dijkstra(const Graph &graph, int src) {
     int V = graph.vertexNum;
     int mdist[V];  // Stores updated distances to vertex
     bool vset[V];  // vset[i] is true if the vertex i included
