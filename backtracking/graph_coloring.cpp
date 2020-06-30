@@ -48,7 +48,7 @@ bool isSafe(int v, const bool graph[V][V], const int *color, int c) {
  * @param v description
  */
 template <int V>
-void graphColoring(bool graph[V][V], int m, int *color, int v) {
+void graphColoring(bool graph[V][V], int m, int color[V], int v) {
     // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
@@ -59,11 +59,11 @@ void graphColoring(bool graph[V][V], int m, int *color, int v) {
     // Consider this vertex v and try different colors
     for (int c = 1; c <= m; c++) {
         // Check if assignment of color c to v is fine
-        if (isSafe(v, graph, color, c)) {
+        if (isSafe<V>(v, graph, color, c)) {
             color[v] = c;
 
             // recur to assign colors to rest of the vertices
-            graphColoring(graph, m, color, v + 1);
+            graphColoring<V>(graph, m, color, v + 1);
 
             // If assigning color c doesn't lead to a solution then remove it
             color[v] = 0;
@@ -98,6 +98,6 @@ int main() {
         color[i] = 0;
     }
 
-    graphColoring(graph, m, color, 0);
+    graphColoring<V>(graph, m, color, 0);
     return 0;
 }
