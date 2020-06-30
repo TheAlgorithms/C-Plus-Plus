@@ -423,7 +423,7 @@ int main() {
     std::vector<float> Y(N);
 
     std::cout
-        << "Enter training data. Per sample, provide features and one output."
+        << "Enter training data. Per sample, provide features ad one output."
         << std::endl;
 
     for (size_t rows = 0; rows < N; rows++) {
