@@ -20,13 +20,13 @@
 char stack[MAX];
 
 //! pointer to track stack index
-int top = -1;
+int stack_idx = -1;
 
 //! push byte to stack variable
-void push(char ch) { stack[++top] = ch; }
+void push(char ch) { stack[++stack_idx] = ch; }
 
 //! pop a byte out of stack variable
-char pop() { return stack[top--]; }
+char pop() { return stack[stack_idx--]; }
 
 //! @}-------------- end stack -----------
 
@@ -56,7 +56,7 @@ int main() {
     while (valid == 1 && i < exp.length()) {
         if (exp[i] == '(' || exp[i] == '{' || exp[i] == '[' || exp[i] == '<') {
             push(exp[i]);
-        } else if (top >= 0 && stack[top] == opening(exp[i])) {
+        } else if (stack_idx >= 0 && stack[stack_idx] == opening(exp[i])) {
             pop();
         } else {
             valid = 0;
@@ -65,7 +65,7 @@ int main() {
     }
 
     // makes sure the stack is empty after processsing (above)
-    if (valid == 1 && top == -1) {
+    if (valid == 1 && stack_idx == -1) {
         std::cout << "\nCorrect Expression";
     } else {
         std::cout << "\nWrong Expression";

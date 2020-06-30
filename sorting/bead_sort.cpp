@@ -14,7 +14,7 @@ void beadSort(int *a, int len) {
 
     // allocating memory
     unsigned char *beads = new unsigned char[max * len];
-    memset(beads, 0, max * len);
+    memset(beads, 0, static_cast<size_t>(max) * len);
 
     // mark the beads
     for (int i = 0; i < len; i++)
