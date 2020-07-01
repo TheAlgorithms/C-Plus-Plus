@@ -22,7 +22,7 @@
  *
  * And there are many more...
  *
- * \working
+ * <h4>working</h4>
  * In the implementation below we first created a graph using the adjacency
  * list representation of graph.
  * Breadth First Search Works as follows
