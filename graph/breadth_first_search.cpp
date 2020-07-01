@@ -8,9 +8,9 @@
  *
  * \details
  * Breadth First Search also quoted as BFS is a Graph Traversal Algorithm.
- * Time Complexity O(|V| + |E|) where V are the number of vertices and E 
+ * Time Complexity O(|V| + |E|) where V are the number of vertices and E
  * are the number of edges in the graph.
- * 
+ *
  * Applications of Breadth First Search are
  *
  * 1. Finding shortest path between two vertices say u and v, with path
@@ -44,8 +44,8 @@
  *
  */
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 
 /**
  * \brief
@@ -58,15 +58,15 @@
  *
  */
 void addEdge(std::vector<std::vector<int>> &adj, size_t u, size_t v) {
-  /**
-   * Here we are considering directed graph that's the
-   * reason we are adding v to the adjacency list representation of u
-   * but not adding u to the adjacency list representation of v
-   *
-   * in case of a un-directed graph you can un comment the statement below.
-   */
-  adj[u - 1].push_back(v - 1);
-  // adj[v - 1].push_back(u -1);
+    /**
+     * Here we are considering directed graph that's the
+     * reason we are adding v to the adjacency list representation of u
+     * but not adding u to the adjacency list representation of v
+     *
+     * in case of a un-directed graph you can un comment the statement below.
+     */
+    adj[u - 1].push_back(v - 1);
+    // adj[v - 1].push_back(u -1);
 }
 
 /**
@@ -87,13 +87,13 @@ void beadth_first_search(std::vector<std::vector<int>> &adj, size_t start) {
     /// marking the start vertex as visited
     visited[start] = true;
     tracker.push(start);
-    while(!tracker.empty()) {
+    while (!tracker.empty()) {
         size_t vertex = tracker.front();
         tracker.pop();
         std::cout << vertex << " ";
         for (auto x : adj[vertex]) {
-          /// if the vertex is not visited then mark this as visited
-          /// and push it to the queue
+            /// if the vertex is not visited then mark this as visited
+            /// and push it to the queue
             if (!visited[x]) {
                 visited[x] = true;
                 tracker.push(x);
@@ -115,7 +115,7 @@ int main() {
     std::vector<std::vector<int>> adj(vertices, std::vector<int>());
 
     /// taking input for edges
-    while(edges--) {
+    while (edges--) {
         size_t u, v;
         std::cin >> u >> v;
         addEdge(adj, u, v);
