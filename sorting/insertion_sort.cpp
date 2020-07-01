@@ -11,15 +11,13 @@
  * sorted array one at a time. It is much less efficient compared to
  * other sorting algorithms like heap sort, merge sort or quick sort.
  * However it has several advantages such as
- * <pre>
- * 1 - easy to implement
- * 2 - For small set of data it is quite efficient
- * 3 - More efficient that other Quadratic complexity algorithms like
- *     Selection sort or bubble sort.
- * 4 - It's stable that is it does not change the relative order of
- *     elements with equal keys
- * 5 - Works on hand means it can sort the array or list as it receives.
- * </pre>
+ * 1. Easy to implement
+ * 2. For small set of data it is quite efficient
+ * 3. More efficient that other Quadratic complexity algorithms like
+ *    Selection sort or bubble sort.
+ * 4. It's stable that is it does not change the relative order of
+ *    elements with equal keys
+ * 5. Works on hand means it can sort the array or list as it receives.
  *
  * It is based on the same idea that people use to sort the playing cards in
  * their hands.
@@ -28,7 +26,7 @@
  * element we place it at a sorted position.
  *
  * Suppose initially we have
- * <pre>
+ *
  * 4 3 2 5 1
  *
  * we start traversing from 4 till we reach 1
@@ -47,7 +45,6 @@
  * 1 which is misplaced and place it at correct position. Thus, we have
  *
  * 1 2 3 4 5
- * </pre>
  *
  */
 
