@@ -51,9 +51,9 @@
  *
  */
 
-#include <iostream>
 #include <algorithm>
 #include <cassert>
+#include <iostream>
 
 /** \brief
  * Insertion Sort Function
@@ -76,41 +76,41 @@ void insertionSort(int *arr, int n) {
 
 /** Test Cases to test algorithm */
 void tests() {
-  int arr1[10] = { 78, 34, 35, 6, 34, 56, 3, 56, 2, 4};
-  insertionSort(arr1, 10);
-  assert(std::is_sorted(arr1, arr1 + 10));
-  std::cout << "Test 1 Passed" << std::endl;
+    int arr1[10] = {78, 34, 35, 6, 34, 56, 3, 56, 2, 4};
+    insertionSort(arr1, 10);
+    assert(std::is_sorted(arr1, arr1 + 10));
+    std::cout << "Test 1 Passed" << std::endl;
 
-  int arr2[5] = {5, -3, 7, -2, 1};
-  insertionSort(arr2, 5);
-  assert(std::is_sorted(arr2, arr2 + 5));
-  std::cout << "Test 2 Passed" << std::endl;
+    int arr2[5] = {5, -3, 7, -2, 1};
+    insertionSort(arr2, 5);
+    assert(std::is_sorted(arr2, arr2 + 5));
+    std::cout << "Test 2 Passed" << std::endl;
 }
 
 /** Main Function */
 int main() {
-  /// Running predefined tests to test algorithm
-  tests();
+    /// Running predefined tests to test algorithm
+    tests();
 
-  /// For user insteraction
-  int n;
-  std::cout << "Enter the length of your array : ";
-  std::cin >> n;
-  int *arr = new int[n];
-  std::cout << "Enter any " << n << " Numbers for Unsorted Array : ";
+    /// For user insteraction
+    int n;
+    std::cout << "Enter the length of your array : ";
+    std::cin >> n;
+    int *arr = new int[n];
+    std::cout << "Enter any " << n << " Numbers for Unsorted Array : ";
 
   for (int i = 0; i < n; i++) {
     std::cin >> arr[i];
   }
 
-  insertionSort(arr, n);
+    insertionSort(arr, n);
 
   std::cout << "\nSorted Array : ";
   for (int i = 0; i < n; i++) {
     std::cout << arr[i] << " ";
   }
 
-  std::cout << std::endl;
-  delete[] arr;
-  return 0;
+    std::cout << std::endl;
+    delete[] arr;
+    return 0;
 }
