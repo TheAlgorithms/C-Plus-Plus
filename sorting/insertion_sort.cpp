@@ -9,7 +9,7 @@
  * sorted array one at a time. It is much less efficient compared to
  * other sorting algorithms like heap sort, merge sort or quick sort.
  * However it has several advantages such as
- * 1. easy to implement
+ * 1. Easy to implement
  * 2. For small set of data it is quite efficient
  * 3. More efficient that other Quadratic complexity algorithms like
  *    Selection sort or bubble sort.
