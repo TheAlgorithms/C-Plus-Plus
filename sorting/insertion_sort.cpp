@@ -23,20 +23,25 @@
  * of elements as soon as we find a unsorted element that is a misplaced
  * element we place it at a sorted position.
  *
- * Example execution steps:
- * 1. Suppose initially we have
- * \f{bmatrix}{4 &3 &2 &5 &1\f}
- * 2. We start traversing from 4 till we reach 1
+ * Suppose initially we have
+ *
+ * 4 3 2 5 1
+ *
+ * we start traversing from 4 till we reach 1
  * when we reach at 3 we find that it is misplaced so we take 3 and place
  * it at a correct position thus the array will become
  * \f{bmatrix}{3 &4 &2 &5 &1\f}
  * 3. In the next iteration we are at 2 we find that this is also misplaced so
  * we place it at the correct sorted position thus the array in this iteration
  * becomes
- * \f{bmatrix}{2 &3 &4 &5 &1\f}
- * 4. We do not do anything with 5 and move on to the next iteration and
- * select 1 which is misplaced and place it at correct position. Thus, we have
- * \f{bmatrix}{1 &2 &3 &4 &5\f}
+ *
+ * 2 3 4 5 1
+ *
+ * we does not do anything with 5 and move on to the next iteration and select
+ * 1 which is misplaced and place it at correct position. Thus, we have
+ *
+ * 1 2 3 4 5
+ *
  */
 
 #include <algorithm>
