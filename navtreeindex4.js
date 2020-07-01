@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"functions.html":[7,2,0],
+"functions_func.html":[7,2,1],
 "functions_rela.html":[7,2,3],
 "functions_vars.html":[7,2,2],
 "globals.html":[8,1,0],

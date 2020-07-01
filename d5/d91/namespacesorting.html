@@ -102,6 +102,13 @@ $(document).ready(function(){initNavTree('d5/d91/namespacesorting.html','../../'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">insertionSort</a> (T *arr, int n)</td></tr>
+<tr class="memdesc:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort Function.  <a href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">More...</a><br /></td></tr>
+<tr class="separator:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f">insertionSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
+<tr class="separator:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">merge</a> (Iterator l, Iterator r, const Iterator e, char b[])</td></tr>
 <tr class="memdesc:aa26de383227859210f14dcf12201a079"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges 2 sorted adjacent segments into a larger sorted segment  <a href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">More...</a><br /></td></tr>
@@ -135,6 +142,108 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a8fe6bac9e03f58abcc2ce26ef3de1b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe6bac9e03f58abcc2ce26ef3de1b5f">&#9670;&nbsp;</a></span>insertionSort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::insertionSort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insertion Sort Function</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>pointer to array to be sorted </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                      {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">size_t</span> n = arr-&gt;size();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; i++) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        T temp = arr[0][i];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        int32_t j = i - 1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">while</span> (j &gt;= 0 &amp;&amp; temp &lt; arr[0][j]) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            arr[0][j + 1] = arr[0][j];</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            j--;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        arr[0][j + 1] = temp;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a78cb2f3b97b6db2c062b2a1df05c9ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78cb2f3b97b6db2c062b2a1df05c9ea9">&#9670;&nbsp;</a></span>insertionSort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::insertionSort </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insertion Sort Function. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>Array to be sorted </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">n</td><td>Size of Array </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; n; i++) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        T temp = arr[i];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">int</span> j = i - 1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">while</span> (j &gt;= 0 &amp;&amp; temp &lt; arr[j]) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            arr[j + 1] = arr[j];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            j--;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        arr[j + 1] = temp;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="aa26de383227859210f14dcf12201a079"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa26de383227859210f14dcf12201a079">&#9670;&nbsp;</a></span>merge()</h2>
 
