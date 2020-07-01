@@ -167,16 +167,16 @@ int main() {
     int *arr = new int[n];
     std::cout << "Enter any " << n << " Numbers for Unsorted Array : ";
 
-  for (int i = 0; i < n; i++) {
-    std::cin >> arr[i];
-  }
+    for (int i = 0; i < n; i++) {
+        std::cin >> arr[i];
+    }
 
     sorting::insertionSort(arr, n);
 
-  std::cout << "\nSorted Array : ";
-  for (int i = 0; i < n; i++) {
-    std::cout << arr[i] << " ";
-  }
+    std::cout << "\nSorted Array : ";
+    for (int i = 0; i < n; i++) {
+        std::cout << arr[i] << " ";
+    }
 
     std::cout << std::endl;
     delete[] arr;
