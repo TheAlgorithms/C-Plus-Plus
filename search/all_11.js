@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['qr_5falgorithm_1224',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]],
-  ['qr_5fdecompose_1225',['qr_decompose',['../d2/d3b/namespaceqr__algorithm.html#ab1ac74497ffb2101040cc1efe3546de8',1,'qr_algorithm']]],
-  ['qr_5fdecompose_2eh_1226',['qr_decompose.h',['../d4/d68/qr__decompose_8h.html',1,'']]],
-  ['qr_5fdecomposition_2ecpp_1227',['qr_decomposition.cpp',['../d3/d24/qr__decomposition_8cpp.html',1,'']]],
-  ['qr_5feigen_5fvalues_2ecpp_1228',['qr_eigen_values.cpp',['../de/d75/qr__eigen__values_8cpp.html',1,'']]],
-  ['qsort_1229',['qsort',['http://en.cppreference.com/w/cpp/algorithm/qsort.html',0,'std']]],
-  ['query_1230',['query',['../dd/d1b/structquery.html',1,'']]],
-  ['queue_1231',['queue',['http://en.cppreference.com/w/cpp/container/queue.html',0,'std::queue&lt; T &gt;'],['../db/da9/classqueue.html',1,'queue&lt; Kind &gt;'],['../dc/db5/struct_queue.html',1,'Queue'],['http://en.cppreference.com/w/cpp/container/queue/queue.html',0,'std::queue::queue()'],['../db/da9/classqueue.html#a21381ee7f95daae0332665914780e970',1,'queue::queue()']]],
-  ['queue_5farray_1232',['Queue_Array',['../d0/dd2/class_queue___array.html',1,'']]],
-  ['queuefront_1233',['queueFront',['../db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5',1,'queue']]],
-  ['queuerear_1234',['queueRear',['../db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5',1,'queue']]],
-  ['quick_5fexit_1235',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',0,'std']]],
-  ['quick_5fsort_2ecpp_1236',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
-  ['quicksort_1237',['quickSort',['../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178',1,'sorting']]],
-  ['quiet_5fnan_1238',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]
+  ['qr_5falgorithm_1226',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]],
+  ['qr_5fdecompose_1227',['qr_decompose',['../d2/d3b/namespaceqr__algorithm.html#ab1ac74497ffb2101040cc1efe3546de8',1,'qr_algorithm']]],
+  ['qr_5fdecompose_2eh_1228',['qr_decompose.h',['../d4/d68/qr__decompose_8h.html',1,'']]],
+  ['qr_5fdecomposition_2ecpp_1229',['qr_decomposition.cpp',['../d3/d24/qr__decomposition_8cpp.html',1,'']]],
+  ['qr_5feigen_5fvalues_2ecpp_1230',['qr_eigen_values.cpp',['../de/d75/qr__eigen__values_8cpp.html',1,'']]],
+  ['qsort_1231',['qsort',['http://en.cppreference.com/w/cpp/algorithm/qsort.html',0,'std']]],
+  ['query_1232',['query',['../dd/d1b/structquery.html',1,'']]],
+  ['queue_1233',['queue',['http://en.cppreference.com/w/cpp/container/queue.html',0,'std::queue&lt; T &gt;'],['../db/da9/classqueue.html',1,'queue&lt; Kind &gt;'],['../dc/db5/struct_queue.html',1,'Queue'],['http://en.cppreference.com/w/cpp/container/queue/queue.html',0,'std::queue::queue()'],['../db/da9/classqueue.html#a21381ee7f95daae0332665914780e970',1,'queue::queue()']]],
+  ['queue_5farray_1234',['Queue_Array',['../d0/dd2/class_queue___array.html',1,'']]],
+  ['queuefront_1235',['queueFront',['../db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5',1,'queue']]],
+  ['queuerear_1236',['queueRear',['../db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5',1,'queue']]],
+  ['quick_5fexit_1237',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',0,'std']]],
+  ['quick_5fsort_2ecpp_1238',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
+  ['quicksort_1239',['quickSort',['../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178',1,'sorting']]],
+  ['quiet_5fnan_1240',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]
 ];

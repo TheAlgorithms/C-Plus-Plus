@@ -86,6 +86,10 @@ var NAVTREEINDEX3 =
 "dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0":[8,0,10,8,4],
 "dc/dfe/ternary__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,10,8,5],
 "dc/dfe/ternary__search_8cpp.html#aef655a27eb82efa299bf9d0becf6e9c8":[8,0,10,8,7],
+"dd/d0d/insertion__sort_8cpp.html":[8,0,11,3],
+"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,11,3,2],
+"dd/d0d/insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,11,3,1],
+"dd/d0d/insertion__sort_8cpp.html#af8171b438a1a748ef05dffd356deadae":[8,0,11,3,0],
 "dd/d1b/structquery.html":[7,0,25],
 "dd/d1b/structquery.html#a1442afb70f26fd0655914632c0dcadcd":[7,0,25,0],
 "dd/d1b/structquery.html#a748f5dfd8faf440897bab39091f0a5ca":[7,0,25,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[8,0,1,0],
 "files.html":[8,0],
 "functions.html":[7,2,0],
-"functions_func.html":[7,2,1],
-"functions_rela.html":[7,2,3],
-"functions_vars.html":[7,2,2],
-"globals.html":[8,1,0],
-"globals.html":[8,1,0,0]
+"functions_func.html":[7,2,1]
 };
