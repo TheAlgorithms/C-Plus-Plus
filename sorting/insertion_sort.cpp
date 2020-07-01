@@ -34,7 +34,7 @@
  * we place it at the correct sorted position thus the array in this iteration
  * becomes
  * \f{bmatrix}{2 &3 &4 &5 &1\f}
- * 4. we do not do anything with 5 and move on to the next iteration and
+ * 4. We do not do anything with 5 and move on to the next iteration and
  * select 1 which is misplaced and place it at correct position. Thus, we have
  * \f{bmatrix}{1 &2 &3 &4 &5\f}
  */
