@@ -51,7 +51,7 @@ namespace sorting {
 /** \brief
  * Insertion Sort Function
  *
- * @param arr Array to be sorted
+ * @param [in,out] arr Array to be sorted
  * @param n Size of Array
  */
 template <typename T>
@@ -67,6 +67,10 @@ void insertionSort(T *arr, int n) {
     }
 }
 
+/** Insertion Sort Function
+ *
+ * @param [in,out] arr pointer to array to be sorted
+ */
 template <typename T>
 void insertionSort(std::vector<T> *arr) {
     size_t n = arr->size();
