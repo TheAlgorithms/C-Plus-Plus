@@ -51,6 +51,7 @@ namespace sorting {
 /** \brief
  * Insertion Sort Function
  *
+ * @tparam T type of array
  * @param [in,out] arr Array to be sorted
  * @param n Size of Array
  */
@@ -69,6 +70,7 @@ void insertionSort(T *arr, int n) {
 
 /** Insertion Sort Function
  *
+ * @tparam T type of array
  * @param [in,out] arr pointer to array to be sorted
  */
 template <typename T>
@@ -87,6 +89,21 @@ void insertionSort(std::vector<T> *arr) {
 }
 
 }  // namespace sorting
+
+/**
+ * @brief Create a random array objecthelper function to create a random array
+ *
+ * @tparam T type of array
+ * @param arr array to fill (must be pre-allocated)
+ * @param N number of array elements
+ */
+template <typename T>
+static void create_random_array(T *arr, int N) {
+    while (N--) {
+        double r = (std::rand() % 10000 - 5000) / 100.f;
+        arr[N] = static_cast<T>(r);
+    }
+}
 
 /** Test Cases to test algorithm */
 void tests() {
@@ -112,6 +129,20 @@ void tests() {
     std::cout << "Test 4... ";
     sorting::insertionSort(&arr4);
     assert(std::is_sorted(std::begin(arr4), std::end(arr4)));
+    std::cout << "passed" << std::endl;
+
+    int arr5[50];
+    std::cout << "Test 5... ";
+    create_random_array(arr5, 50);
+    sorting::insertionSort(arr5, 50);
+    assert(std::is_sorted(arr5, arr5 + 50));
+    std::cout << "passed" << std::endl;
+
+    float arr6[50];
+    std::cout << "Test 6... ";
+    create_random_array(arr6, 50);
+    sorting::insertionSort(arr6, 50);
+    assert(std::is_sorted(arr6, arr6 + 50));
     std::cout << "passed" << std::endl;
 }
 
