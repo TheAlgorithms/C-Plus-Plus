@@ -73,7 +73,7 @@ class Complex {
      * \brief Member function to give the modulus of our complex number.
      * Member function to which gives the absolute value (modulus) of our
      * complex number
-     * @return \f$ \sqrt{z \dot \overline{z}} \f$ where \f$ z \f$ is our complex
+     * @return \f$ \sqrt{z \bar{z}} \f$ where \f$ z \f$ is our complex
      * number.
      */
     double abs() const {
