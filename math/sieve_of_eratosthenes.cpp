@@ -25,7 +25,7 @@ bool isprime[MAX];
 void sieve(uint32_t N) {
     isprime[0] = false;
     isprime[1] = false;
-    for (uint32_t i = 2; i <= N; i++) {
+    for (uint32_t i = 2; i * i <= N; i++) {
         if (isprime[i]) {
             for (uint32_t j = (i << 1); j <= N; j += i) {
                 isprime[j] = false;
