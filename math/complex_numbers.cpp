@@ -1,10 +1,10 @@
 /**
  * @author tjgurwara99
  * @file
- * 
+ *
  * \brief An implementation of Complex Number as Objects
- * \details A basic implementation of Complex Number field as a class with operators
- * overloaded to accommodate (mathematical) field operations.
+ * \details A basic implementation of Complex Number field as a class with
+ * operators overloaded to accommodate (mathematical) field operations.
  */
 
 #include <cassert>
@@ -195,7 +195,8 @@ std::ostream &operator<<(std::ostream &os, const Complex &num) {
 }
 
 /**
- * \brief Function to get random numbers to generate our complex numbers for test
+ * \brief Function to get random numbers to generate our complex numbers for
+ * test
  */
 double get_rand() { return (std::rand() % 100 - 50) / 100.f; }
 
