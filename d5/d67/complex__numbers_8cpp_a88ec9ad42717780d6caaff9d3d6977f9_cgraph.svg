@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d5/d67/complex__numbers_8cpp.html#a5d4d5b8250b50703de888514c8e7a7a0" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d5/d67/complex__numbers_8cpp.html#a5d4d5b8250b50703de888514c8e7a7a0" target="_top" xlink:title="Function to get random numbers to generate our complex numbers for test.">
 <polygon fill="white" stroke="black" points="97,-228.5 97,-247.5 151,-247.5 151,-228.5 97,-228.5"/>
 <text text-anchor="middle" x="124" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">get_rand</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title="Member function to get imaginary value of our complex number. Member function (getter) to access the ...">
 <polygon fill="white" stroke="black" points="82.5,-152.5 82.5,-171.5 165.5,-171.5 165.5,-152.5 82.5,-152.5"/>
 <text text-anchor="middle" x="124" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::imag</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title="Member function to get real value of our complex number. Member function (getter) to access the class...">
 <polygon fill="white" stroke="black" points="85.5,-76.5 85.5,-95.5 162.5,-95.5 162.5,-76.5 85.5,-76.5"/>
 <text text-anchor="middle" x="124" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::real</text>
 </a>

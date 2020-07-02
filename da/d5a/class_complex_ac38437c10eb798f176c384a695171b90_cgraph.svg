@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Operator overload of &#39;/&#39; on Complex class. Operator overload to be able to divide two complex numbers...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-38.5 0,-57.5 100,-57.5 100,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="50" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::operator/</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../da/d5a/class_complex.html#a3cfc522c782726f49ee20af17b77f867" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../da/d5a/class_complex.html#a3cfc522c782726f49ee20af17b77f867" target="_top" xlink:title="Complex Constructor which initialises our complex number.">
 <polygon fill="white" stroke="black" points="136,-76.5 136,-95.5 237,-95.5 237,-76.5 136,-76.5"/>
 <text text-anchor="middle" x="186.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::Complex</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title="Member function to get imaginary value of our complex number. Member function (getter) to access the ...">
 <polygon fill="white" stroke="black" points="145,-38.5 145,-57.5 228,-57.5 228,-38.5 145,-38.5"/>
 <text text-anchor="middle" x="186.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::imag</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title="Member function to get real value of our complex number. Member function (getter) to access the class...">
 <polygon fill="white" stroke="black" points="148,-0.5 148,-19.5 225,-19.5 225,-0.5 148,-0.5"/>
 <text text-anchor="middle" x="186.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::real</text>
 </a>

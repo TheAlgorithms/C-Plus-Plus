@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Operator overload of &#39;&lt;&lt;&#39; of ostream for Complex class. Overloaded insersion operator to accommodate ...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-19.5 0,-38.5 64,-38.5 64,-19.5 0,-19.5"/>
 <text text-anchor="middle" x="32" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&lt;&lt;</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title="Member function to get imaginary value of our complex number. Member function (getter) to access the ...">
 <polygon fill="white" stroke="black" points="100,-38.5 100,-57.5 183,-57.5 183,-38.5 100,-38.5"/>
 <text text-anchor="middle" x="141.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::imag</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title="Member function to get real value of our complex number. Member function (getter) to access the class...">
 <polygon fill="white" stroke="black" points="103,-0.5 103,-19.5 180,-19.5 180,-0.5 103,-0.5"/>
 <text text-anchor="middle" x="141.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::real</text>
 </a>
