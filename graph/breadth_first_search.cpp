@@ -47,66 +47,66 @@
 #include <queue>
 #include <vector>
 
-/** 
+/**
  * \namespace graph
  * \brief Graph algorithms
  */
 namespace graph {
+/**
+ * \brief
+ * Adds and edge between two vertices of graph say u and v in this
+ * case.
+ *
+ * @param adj Adjacency list representation of graph
+ * @param u first vertex
+ * @param v second vertex
+ *
+ */
+void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
     /**
-    * \brief
-    * Adds and edge between two vertices of graph say u and v in this
-    * case.
-    *
-    * @param adj Adjacency list representation of graph
-    * @param u first vertex
-    * @param v second vertex
-    *
-    */
-    void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
-        /**
-        * Here we are considering directed graph that's the
-        * reason we are adding v to the adjacency list representation of u
-        * but not adding u to the adjacency list representation of v
-        *
-        * in case of a un-directed graph you can un comment the statement below.
-        */
-        (*adj)[u - 1].push_back(v - 1);
-        // adj[v - 1].push_back(u -1);
-    }
+     * Here we are considering directed graph that's the
+     * reason we are adding v to the adjacency list representation of u
+     * but not adding u to the adjacency list representation of v
+     *
+     * in case of a un-directed graph you can un comment the statement below.
+     */
+    (*adj)[u - 1].push_back(v - 1);
+    // adj[v - 1].push_back(u -1);
+}
 
-    /**
-    * \brief
-    * Function performs the breadth first search algorithm over the graph
-    *
-    * @param adj Adjacency list representation of graph
-    * @param start vertex from where traversing starts
-    *
-    */
-    void beadth_first_search(std::vector<std::vector<int>> *adj, size_t start) {
-        size_t vertices = adj->size();
+/**
+ * \brief
+ * Function performs the breadth first search algorithm over the graph
+ *
+ * @param adj Adjacency list representation of graph
+ * @param start vertex from where traversing starts
+ *
+ */
+void beadth_first_search(std::vector<std::vector<int>> *adj, size_t start) {
+    size_t vertices = adj->size();
 
-        /// vector to keep track of visited vertices
-        std::vector<bool> visited(vertices, 0);
+    /// vector to keep track of visited vertices
+    std::vector<bool> visited(vertices, 0);
 
-        std::queue<int> tracker;
-        /// marking the start vertex as visited
-        visited[start] = true;
-        tracker.push(start);
-        while (!tracker.empty()) {
-            size_t vertex = tracker.front();
-            tracker.pop();
-            std::cout << vertex + 1 << " ";
-            for (auto x : (*adj)[vertex]) {
-                /// if the vertex is not visited then mark this as visited
-                /// and push it to the queue
-                if (!visited[x]) {
-                    visited[x] = true;
-                    tracker.push(x);
-                }
+    std::queue<int> tracker;
+    /// marking the start vertex as visited
+    visited[start] = true;
+    tracker.push(start);
+    while (!tracker.empty()) {
+        size_t vertex = tracker.front();
+        tracker.pop();
+        std::cout << vertex + 1 << " ";
+        for (auto x : (*adj)[vertex]) {
+            /// if the vertex is not visited then mark this as visited
+            /// and push it to the queue
+            if (!visited[x]) {
+                visited[x] = true;
+                tracker.push(x);
             }
         }
-        std::cout << std::endl;
     }
+    std::cout << std::endl;
+}
 }  // namespace graph
 
 /** Main function */
