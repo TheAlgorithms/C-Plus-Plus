@@ -77,8 +77,8 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
  * @param start vertex from where traversing starts
  *
  */
-void beadth_first_search(std::vector<std::vector<int>> &adj, size_t start) {
-    size_t vertices = adj.size();
+void beadth_first_search(std::vector<std::vector<int>> *adj, size_t start) {
+    size_t vertices = (*adj).size();
 
     /// vector to keep track of visited vertices
     std::vector<bool> visited(vertices, 0);
@@ -91,7 +91,7 @@ void beadth_first_search(std::vector<std::vector<int>> &adj, size_t start) {
         size_t vertex = tracker.front();
         tracker.pop();
         std::cout << vertex + 1 << " ";
-        for (auto x : adj[vertex]) {
+        for (auto x : (*adj)[vertex]) {
             /// if the vertex is not visited then mark this as visited
             /// and push it to the queue
             if (!visited[x]) {
@@ -115,7 +115,8 @@ int main() {
     std::vector<std::vector<int>> adj(vertices, std::vector<int>());
 
     /// taking input for edges
-    std::cout << "Enter vertices in pair which have edges between them : " << std::endl;
+    std::cout << "Enter vertices in pair which have edges between them : "
+              << std::endl;
     while (edges--) {
         size_t u, v;
         std::cin >> u >> v;
@@ -123,6 +124,6 @@ int main() {
     }
 
     /// running Breadth First Search Algorithm on the graph
-    beadth_first_search(adj, 2);
+    beadth_first_search(&adj, 2);
     return 0;
 }
