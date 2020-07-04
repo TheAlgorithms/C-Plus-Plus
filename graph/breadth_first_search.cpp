@@ -65,7 +65,7 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
      *
      * in case of a un-directed graph you can un comment the statement below.
      */
-    (*adj)[u-1].push_back(v - 1);
+    (*adj)[u - 1].push_back(v - 1);
     // adj[v - 1].push_back(u -1);
 }
 
