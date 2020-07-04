@@ -57,7 +57,7 @@
  * @param v second vertex
  *
  */
-void addEdge(std::vector<std::vector<int>> &adj, size_t u, size_t v) {
+void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
     /**
      * Here we are considering directed graph that's the
      * reason we are adding v to the adjacency list representation of u
@@ -65,7 +65,7 @@ void addEdge(std::vector<std::vector<int>> &adj, size_t u, size_t v) {
      *
      * in case of a un-directed graph you can un comment the statement below.
      */
-    adj[u - 1].push_back(v - 1);
+    (*adj)[u-1].push_back(v - 1);
     // adj[v - 1].push_back(u -1);
 }
 
@@ -90,7 +90,7 @@ void beadth_first_search(std::vector<std::vector<int>> &adj, size_t start) {
     while (!tracker.empty()) {
         size_t vertex = tracker.front();
         tracker.pop();
-        std::cout << vertex << " ";
+        std::cout << vertex + 1 << " ";
         for (auto x : adj[vertex]) {
             /// if the vertex is not visited then mark this as visited
             /// and push it to the queue
@@ -115,10 +115,11 @@ int main() {
     std::vector<std::vector<int>> adj(vertices, std::vector<int>());
 
     /// taking input for edges
+    std::cout << "Enter vertices in pair which have edges between them : " << std::endl;
     while (edges--) {
         size_t u, v;
         std::cin >> u >> v;
-        addEdge(adj, u, v);
+        addEdge(&adj, u, v);
     }
 
     /// running Breadth First Search Algorithm on the graph
