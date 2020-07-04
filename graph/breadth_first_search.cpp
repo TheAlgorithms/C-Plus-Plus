@@ -78,7 +78,7 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
  *
  */
 void beadth_first_search(std::vector<std::vector<int>> *adj, size_t start) {
-    size_t vertices = (*adj).size();
+    size_t vertices = adj->size();
 
     /// vector to keep track of visited vertices
     std::vector<bool> visited(vertices, 0);
