@@ -68,6 +68,7 @@
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
 
 ## Graph
+  * [Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bfs.cpp)
   * [Breadth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/breadth_first_search.cpp)
   * [Bridge Finding With Tarjan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bridge_finding_with_tarjan_algorithm.cpp)
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
