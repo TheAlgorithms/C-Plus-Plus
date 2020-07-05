@@ -197,8 +197,9 @@ void test2() {
                 else
                     l -= step;
             }
-        } else  // no min limit of k
+        } else {  // no min limit of k
             k -= step;
+        }
     }
 }
 
