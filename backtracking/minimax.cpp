@@ -1,13 +1,21 @@
 /**
  * @file
- * @brief brief one line description here
+ * @brief returns which is the longest/shortest number
  */
 #include <algorithm>
 #include <cmath>
 #include <iostream>
 #include <vector>
 
-int minimax(int depth, int node_index, bool is_max, std::vector<int> scores,
+/**
+ * Check which number is the maximum/minimum in the array
+ * @param depth depth of array
+ * @param node_index current index in array
+ * @param is_max if current index is the longest number
+ * @param scores saved numbers in vector
+ * @return if maximum or not
+ */
+int minimax(int depth, int node_index, bool is_max, std::vector<const int>* &scores,
             int height) {
     if (depth == height) {
         return scores[node_index];
