@@ -17,48 +17,48 @@
  * the multiples.
  */
 void sieve(uint32_t N, bool *isprime) {
-	isprime[0] = false;
-	isprime[1] = false;
-	for (uint32_t i = 2; i * i <= N; i++) {
-		if (isprime[i]) {
-			for (uint32_t j = i * i; j <= N; j = j + i) {
-				isprime[j] = false;
-			}
-		}
-	}
+    isprime[0] = false;
+    isprime[1] = false;
+    for (uint32_t i = 2; i * i <= N; i++) {
+        if (isprime[i]) {
+            for (uint32_t j = i * i; j <= N; j = j + i) {
+                isprime[j] = false;
+            }
+        }
+    }
 }
 
 /**
  * This function prints out the primes to STDOUT
  */
 void print(uint32_t N, bool *isprime) {
-	for (uint32_t i = 1; i <= N; i++) {
-		if (isprime[i]) {
-			std::cout << i << ' ';
-		}
-	}
-	std::cout << std::endl;
+    for (uint32_t i = 1; i <= N; i++) {
+        if (isprime[i]) {
+            std::cout << i << ' ';
+        }
+    }
+    std::cout << std::endl;
 }
 
 /**
  * Initialize the array
  */
 void init(uint32_t N, bool *isprime) {
-	for (uint32_t i = 0; i < N; i++) {
-		isprime[i] = true;
-	}
+    for (uint32_t i = 0; i < N; i++) {
+        isprime[i] = true;
+    }
 }
 
 /**
  * Main function
  */
 int main() {
-	uint32_t N = 100;
-	bool *isprime = new bool[N];
-	init(N, isprime);
-	sieve(N, isprime);
-	print(N, isprime);
-	delete[] isprime;
+    uint32_t N = 100;
+    bool *isprime = new bool[N];
+    init(N, isprime);
+    sieve(N, isprime);
+    print(N, isprime);
+    delete[] isprime;
 
-	return 0;
+    return 0;
 }
