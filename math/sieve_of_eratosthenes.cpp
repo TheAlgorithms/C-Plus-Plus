@@ -10,56 +10,55 @@
  * @see primes_up_to_billion.cpp prime_numbers.cpp
  */
 
-#include <iostream>
-
-/** Maximum number of primes */
-#define MAX 10000000
-
-/** array to store the primes */
-bool isprime[MAX];
+#include <iostream> // for io operations
 
 /**
  * This is the function that finds the primes and eliminates
  * the multiples.
  */
-void sieve(uint32_t N) {
-    isprime[0] = false;
-    isprime[1] = false;
-    for (uint32_t i = 2; i * i <= N; i++) {
-        if (isprime[i]) {
-            for (uint32_t j = (i << 1); j <= N; j += i) {
-                isprime[j] = false;
-            }
-        }
-    }
+void sieve(uint32_t N, bool *isprime) {
+	isprime[0] = false;
+	isprime[1] = false;
+	for (uint32_t i = 2; i * i <= N; i++) {
+		if (isprime[i]) {
+			for (uint32_t j = i * i; j <= N; j = j + i) {
+				isprime[j] = false;
+			}
+		}
+	}
 }
 
 /**
  * This function prints out the primes to STDOUT
  */
-void print(uint32_t N) {
-    for (uint32_t i = 1; i <= N; i++) {
-        if (isprime[i]) {
-            std::cout << i << ' ';
-        }
-    }
-    std::cout << std::endl;
+void print(uint32_t N, bool *isprime) {
+	for (uint32_t i = 1; i <= N; i++) {
+		if (isprime[i]) {
+			std::cout << i << ' ';
+		}
+	}
+	std::cout << std::endl;
 }
 
 /**
  * Initialize the array
  */
-void init() {
-    for (uint32_t i = 1; i < MAX; i++) {
-        isprime[i] = true;
-    }
+void init(uint32_t N, bool *isprime) {
+	for (uint32_t i = 0; i < N; i++) {
+		isprime[i] = true;
+	}
 }
 
-/** main function */
+/**
+ * Main function
+ */
 int main() {
-    uint32_t N = 100;
-    init();
-    sieve(N);
-    print(N);
-    return 0;
+	uint32_t N = 100;
+	bool *isprime = new bool[N];
+	init(N, isprime);
+	sieve(N, isprime);
+	print(N, isprime);
+	delete[] isprime;
+
+	return 0;
 }
