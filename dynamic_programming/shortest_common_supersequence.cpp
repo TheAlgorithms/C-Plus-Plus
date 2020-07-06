@@ -1,13 +1,8 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
+#include <vector>
 #include <string>
-#include <cstdio>
-#include <cstring>
-#include <cmath>
-#include <cstring>
-#include <chrono>
-#include <complex>
+
 using namespace std;
 
 string lcs(string x, string y, int m, int n) {
@@ -57,7 +52,7 @@ string shortestCommonSupersequence(string str1, string str2) {
 int main() {
 	string str1 ;
 	string str2 ;
-	cin>>str1>>str2;
+	cin >> str1 >> str2;
 	string ans = shortestCommonSupersequence(str1, str2);
 	cout << ans << endl;
 
