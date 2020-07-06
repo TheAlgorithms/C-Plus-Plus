@@ -26,7 +26,10 @@
 #include <omp.h>
 #endif
 
-namespace {
+/**
+ * @namespace spirograph Functions related to spirograph.c
+ */
+namespace spirograph {
 /** Generate spirograph curve into arrays `x` and `y` such that the i^th point
  * in 2D is represented by `(x[i],y[i])`. The generating function is given by:
  * \f{eqnarray*}{
@@ -104,7 +107,7 @@ void test() {
     fp.close();
 }
 
-#ifdef USE_GLUT  // this is set by CMAKE automatically, if available
+#ifdef GLUT_FOUND  // this is set by CMAKE automatically, if available
 #ifdef __APPLE__
 #include <GLUT/glut.h>  // include path on Macs is different
 #else
@@ -211,21 +214,21 @@ void timer_cb(int t) {
     glutPostRedisplay();
 }
 #endif
-}  // namespace
+}  // namespace spirograph
 
 /** Main function */
 int main(int argc, char **argv) {
-#ifdef USE_GLUT
+#ifdef GLUT_FOUND
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutCreateWindow("Spirograph");
     glutInitWindowSize(400, 400);
     // glutIdleFunc(glutPostRedisplay);
-    glutTimerFunc(25, timer_cb, 0);
-    glutDisplayFunc(test2);
+    glutTimerFunc(25, spirograph::timer_cb, 0);
+    glutDisplayFunc(spirograph::test2);
     glutMainLoop();
 #else
-    test();
+    spirograph::test();
 #endif
 
     return 0;
