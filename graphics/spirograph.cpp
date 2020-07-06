@@ -25,6 +25,13 @@
 #ifdef _OPENMP
 #include <omp.h>
 #endif
+#ifdef GLUT_FOUND  // this is set by CMAKE automatically, if available
+#ifdef __APPLE__
+#include <GLUT/glut.h>  // include path on Macs is different
+#else
+#include <GL/glut.h>
+#endif  // __APPLE__
+#endif  // GLUT_FOUND
 
 /**
  * @namespace spirograph Functions related to spirograph.cpp
@@ -108,12 +115,6 @@ void test() {
 }
 
 #ifdef GLUT_FOUND  // this is set by CMAKE automatically, if available
-#ifdef __APPLE__
-#include <GLUT/glut.h>  // include path on Macs is different
-#else
-#include <GL/glut.h>
-#endif
-
 /** A wrapper that is not available in all GLUT implementations.
  */
 static inline void glutBitmapString(void *font, char *message) {
