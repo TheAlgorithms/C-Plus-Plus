@@ -27,7 +27,7 @@
 #endif
 
 /**
- * @namespace spirograph Functions related to spirograph.c
+ * @namespace spirograph Functions related to spirograph.cpp
  */
 namespace spirograph {
 /** Generate spirograph curve into arrays `x` and `y` such that the i^th point
