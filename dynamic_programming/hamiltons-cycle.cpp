@@ -1,7 +1,10 @@
 #include <iostream>
 #include <vector>
 
+typedef bool (*test_func_t)(void);
+
 using namespace std;
+
 
 /* function to takes boolean the matrix of
     [i, j] is true if there is a road between from i to j */
@@ -45,4 +48,100 @@ bool hamilton_cycle(bool **routes, int n){
         is_cycle |= dp[height - 1][i];
     }
     return is_cycle;
+}
+
+bool test1(){
+    int n = 4;
+
+    bool arr[n][n] = {
+        {true, true, false, false},
+        {false, true, true, false},
+        {false, false, true, true},
+        {false, false, false, true}
+    };
+    bool **b = new bool*[n];
+    for (int i=0; i<n; ++i){
+        b[i] = new bool[n];
+        for (int j=0; j<n; ++j){
+            b[i][j] = arr[i][j];
+        }
+    }
+
+    bool ans = hamilton_cycle(b, n);
+    for (int i=0; i<n; ++i){
+        delete b[i];
+    }
+    delete b;
+
+    return ans;
+}
+
+bool test2(){
+    int n = 4;
+
+    bool arr[n][n] = {
+        {true, true, false, false},
+        {false, true, true, true},
+        {false, false, true, false},
+        {false, false, false, true}
+    };
+    bool **b = new bool*[n];
+    for (int i=0; i<n; ++i){
+        b[i] = new bool[n];
+        for (int j=0; j<n; ++j){
+            b[i][j] = arr[i][j];
+        }
+    }
+
+    bool ans = hamilton_cycle(b, n);
+    for (int i=0; i<n; ++i){
+        delete b[i];
+    }
+    delete b;
+
+    return !ans;
+}
+
+bool test3(){
+    int n = 4;
+
+    bool arr[n][n] = {
+        {true, true, true, true},
+        {true, true, true, true},
+        {true, true, true, true},
+        {true, true, true, true}
+    };
+    bool **b = new bool*[n];
+    for (int i=0; i<n; ++i){
+        b[i] = new bool[n];
+        for (int j=0; j<n; ++j){
+            b[i][j] = arr[i][j];
+        }
+    }
+
+    bool ans = hamilton_cycle(b, n);
+    for (int i=0; i<n; ++i){
+        delete b[i];
+    }
+    delete b;
+
+    return ans;
+}
+
+int main() {
+    test_func_t tests[] = {
+        test1,
+        test2,
+        test3
+    };
+    int test_num = 3;
+    for (int t = 0; t < test_num; t++){
+        test_func_t cur = tests[t];
+        if (!cur()) {
+            printf("test %d PASSED!\n", t + 1);
+        } else {
+            printf("test %d FAILED!\n", t + 1);
+        }
+    }
+    return 0;
 }
