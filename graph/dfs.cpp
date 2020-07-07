@@ -77,13 +77,13 @@ namespace graph {
    * @param visited already visited vertices
    *
    */
-  void explore(std::vector<std::vector<size_t>> *adj, size_t v,
+  void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
               std::vector<bool> *visited) {
     std::cout << v + 1<< " ";
     (*visited)[v] = true;
-    for (auto x : (*adj)[v]) {
+    for (auto x : adj[v]) {
       if (!(*visited)[x]) {
-        explore(&(*adj), x, visited);
+        explore(adj, x, visited);
       }
     }
   }
@@ -96,11 +96,11 @@ namespace graph {
    * @param start vertex from where DFS starts traversing.
    *
    */
-  void depth_first_search(std::vector<std::vector<size_t>> *adj, size_t start) {
-    size_t vertices = adj->size();
+  void depth_first_search(const std::vector<std::vector<size_t>> &adj, size_t start) {
+    size_t vertices = adj.size();
 
     std::vector<bool> visited(vertices, false);
-    explore(&(*adj), start, &visited);
+    explore(adj, start, &visited);
   }
 }  // namespace graph
 
@@ -125,7 +125,7 @@ int main() {
   }
 
   /// running depth first search over graph
-  graph::depth_first_search(&adj, 2);
+  graph::depth_first_search(adj, 2);
 
   std::cout << std::endl;
   return 0;
