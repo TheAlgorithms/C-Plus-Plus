@@ -65,43 +65,44 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
     (*adj)[v - 1].push_back(u - 1);
 }
 
-  /**
-   * 
-   * \brief
-   * Explores the given vertex, exploring a vertex means traversing
-   * over all the vertices which are connected to the vertex that is
-   * currently being explored.
-   *
-   * @param adj garph
-   * @param v vertex to be explored
-   * @param visited already visited vertices
-   *
-   */
-  void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
-              std::vector<bool> *visited) {
-    std::cout << v + 1<< " ";
+/**
+ *
+ * \brief
+ * Explores the given vertex, exploring a vertex means traversing
+ * over all the vertices which are connected to the vertex that is
+ * currently being explored.
+ *
+ * @param adj garph
+ * @param v vertex to be explored
+ * @param visited already visited vertices
+ *
+ */
+void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
+             std::vector<bool> *visited) {
+    std::cout << v + 1 << " ";
     (*visited)[v] = true;
     for (auto x : adj[v]) {
-      if (!(*visited)[x]) {
-        explore(adj, x, visited);
-      }
+        if (!(*visited)[x]) {
+            explore(adj, x, visited);
+        }
     }
 }
 
-  /**
-   * \brief
-   * initiates depth first search algorithm.
-   *
-   * @param adj adjacency list of graph
-   * @param start vertex from where DFS starts traversing.
-   *
-   */
-  void depth_first_search(const std::vector<std::vector<size_t>> &adj, size_t start) {
+/**
+ * \brief
+ * initiates depth first search algorithm.
+ *
+ * @param adj adjacency list of graph
+ * @param start vertex from where DFS starts traversing.
+ *
+ */
+void depth_first_search(const std::vector<std::vector<size_t>> &adj,
+                        size_t start) {
     size_t vertices = adj.size();
 
     std::vector<bool> visited(vertices, false);
     explore(adj, start, &visited);
-  }
+}
 }  // namespace graph
 
 /** Main function */
@@ -124,8 +125,8 @@ int main() {
         graph::addEdge(&adj, u, v);
     }
 
-  /// running depth first search over graph
-  graph::depth_first_search(adj, 2);
+    /// running depth first search over graph
+    graph::depth_first_search(adj, 2);
 
     std::cout << std::endl;
     return 0;
