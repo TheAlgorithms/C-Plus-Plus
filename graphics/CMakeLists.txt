@@ -5,7 +5,7 @@ if(OpenGL_FOUND)
         message("FreeGLUT library will be downloaded and built.")
         include(ExternalProject)
         ExternalProject_Add (
-            FREEGLUT
+            FREEGLUT-PRJ
             URL https://sourceforge.net/projects/freeglut/files/freeglut/3.2.1/freeglut-3.2.1.tar.gz
             URL_MD5 cd5c670c1086358598a6d4a9d166949d
             CMAKE_GENERATOR ${CMAKE_GENERATOR}
@@ -20,20 +20,20 @@ if(OpenGL_FOUND)
             # BUILD_IN_SOURCE ON
             # UPDATE_COMMAND ""
             INSTALL_COMMAND ""
-            CONFIGURE_COMMAND ""
-            BUILD_COMMAND ""
+            # CONFIGURE_COMMAND ""
+            # BUILD_COMMAND ""
         )
-        ExternalProject_Get_Property(FREEGLUT SOURCE_DIR)
-        ExternalProject_Get_Property(FREEGLUT BINARY_DIR)
+        ExternalProject_Get_Property(FREEGLUT-PRJ SOURCE_DIR)
+        ExternalProject_Get_Property(FREEGLUT-PRJ BINARY_DIR)
         set(FREEGLUT_BIN_DIR ${BINARY_DIR})
         set(FREEGLUT_SRC_DIR ${SOURCE_DIR})
         # add_library(libfreeglut STATIC IMPORTED)
         # set_target_properties(libfreeglut PROPERTIES IMPORTED_LOCATION ${FREEGLUT_BIN_DIR})
 
-        set(FREEGLUT_BUILD_DEMOS OFF CACHE BOOL "")
-        set(FREEGLUT_BUILD_SHARED_LIBS OFF CACHE BOOL "")
-        set(FREEGLUT_BUILD_STATIC_LIBS ON CACHE BOOL "")
-        add_subdirectory(${FREEGLUT_SRC_DIR} ${FREEGLUT_BIN_DIR})
+        # set(FREEGLUT_BUILD_DEMOS OFF CACHE BOOL "")
+        # set(FREEGLUT_BUILD_SHARED_LIBS OFF CACHE BOOL "")
+        # set(FREEGLUT_BUILD_STATIC_LIBS ON CACHE BOOL "")
+        # add_subdirectory(${FREEGLUT_SRC_DIR} ${FREEGLUT_BIN_DIR} EXCLUDE_FROM_ALL)
         # add_subdirectory(${BINARY_DIR})
         # find_package(FreeGLUT)
     endif(NOT GLUT_FOUND)
@@ -59,10 +59,12 @@ foreach( testsourcefile ${APP_SOURCES} )
     
     if(OpenGL_FOUND)
         if(NOT GLUT_FOUND)
-            add_dependencies(${testname} FREEGLUT)
+            add_dependencies(${testname} FREEGLUT-PRJ)
+            target_compile_definitions(${testname} PRIVATE FREEGLUT_STATIC)
             target_include_directories(${testname} PRIVATE ${FREEGLUT_SRC_DIR}/include)
             target_link_directories(${testname} PRIVATE ${FREEGLUT_BIN_DIR}/lib)
-            target_link_libraries(${testname} PRIVATE OpenGL::GL freeglut_static)
+            target_link_libraries(${testname} PRIVATE OpenGL::GL)
+            target_link_libraries(${testname} INTERFACE FREEGLUT-PRJ)
             # target_include_directories(${testname} PRIVATE ${FREEGLUT_INCLUDE_DIRS})
             # target_link_libraries(${testname} INTERFACE freeglut_static)
         else()
