@@ -113,6 +113,7 @@ void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
         }
         return result;
     }
+}
 }  // namespace graph
 
 void tests() {
