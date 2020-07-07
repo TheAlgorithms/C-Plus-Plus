@@ -193,7 +193,7 @@ void SkipList::displayList() {
   
 int main() 
 { 
-    std::srand(time(nullptr));
+    std::srand(std::time(nullptr));
 
     SkipList lst;
 
