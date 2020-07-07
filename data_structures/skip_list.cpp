@@ -11,6 +11,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>   
+#include <cstdlib>
+
 // using namespace std; 
 using std::vector;
 using std::endl;
