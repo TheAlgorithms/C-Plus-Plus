@@ -8,7 +8,7 @@ Output: if the array contains the value, returns its index (index of its first o
 */
 
 int min(int first, int second){
-    if(first > second){
+    if(first < second){
         return first;
     } else {
         return second;
