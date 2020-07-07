@@ -43,9 +43,11 @@
  *         push that element into the queue and mark this as visited
  *
  */
+#include <algorithm>
 #include <iostream>
 #include <queue>
 #include <vector>
+#include <cassert>
 
 /**
  * \namespace graph
@@ -62,7 +64,7 @@ namespace graph {
  * @param v second vertex
  *
  */
-void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
+void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
     /**
      * Here we are considering directed graph that's the
      * reason we are adding v to the adjacency list representation of u
@@ -82,11 +84,15 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
     * @param start vertex from where traversing starts
     *
     */
-    void beadth_first_search(const std::vector<std::vector<int>> &adj, size_t start) {
+    std::vector<int> beadth_first_search(
+        const std::vector<std::vector<int>> &adj,
+        int start) {
         size_t vertices = adj.size();
 
-    /// vector to keep track of visited vertices
-    std::vector<bool> visited(vertices, 0);
+        std::vector<int> result;
+
+        /// vector to keep track of visited vertices
+        std::vector<bool> visited(vertices, 0);
 
         std::queue<int> tracker;
         /// marking the start vertex as visited
@@ -95,7 +101,7 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
         while (!tracker.empty()) {
             size_t vertex = tracker.front();
             tracker.pop();
-            std::cout << vertex + 1 << " ";
+            result.push_back(vertex + 1);
             for (auto x : adj[vertex]) {
                 /// if the vertex is not visited then mark this as visited
                 /// and push it to the queue
@@ -105,11 +111,68 @@ void addEdge(std::vector<std::vector<int>> *adj, size_t u, size_t v) {
                 }
             }
         }
+        return result;
     }
 }  // namespace graph
 
+void tests() {
+    std::cout << "Initiating Tests" << std::endl;
+
+    /// Test 1 Begin
+    std::vector<std::vector<int>> graphData(4, std::vector<int>());
+    graph::addEdge(&graphData, 1, 2);
+    graph::addEdge(&graphData, 1, 3);
+    graph::addEdge(&graphData, 2, 3);
+    graph::addEdge(&graphData, 3, 1);
+    graph::addEdge(&graphData, 3, 4);
+    graph::addEdge(&graphData, 4, 4);
+
+    std::vector<int> returnedResult = graph::beadth_first_search(graphData, 2);
+    std::vector<int> correctResult = {3, 1, 4, 2};
+
+    assert(std::equal(correctResult.begin(), correctResult.end(),
+                      returnedResult.begin()));
+    std::cout<< "Test 1 Passed..." << std::endl;
+
+    /// Test 2 Begin
+    /// clear data from previous test
+    returnedResult.clear();
+    correctResult.clear();
+
+    returnedResult = graph::beadth_first_search(graphData, 0);
+    correctResult = {1, 2, 3, 4};
+
+    assert(std::equal(correctResult.begin(), correctResult.end(),
+                      returnedResult.begin()));
+    std::cout<< "Test 2 Passed..." << std::endl;
+
+    /// Test 3 Begins
+    /// clear data from previous test
+    graphData.clear();
+    returnedResult.clear();
+    correctResult.clear();
+
+    graphData.resize(6);
+    graph::addEdge(&graphData, 1, 2);
+    graph::addEdge(&graphData, 1, 3);
+    graph::addEdge(&graphData, 2, 4);
+    graph::addEdge(&graphData, 3, 4);
+    graph::addEdge(&graphData, 2, 5);
+    graph::addEdge(&graphData, 4, 6);
+
+    returnedResult = graph::beadth_first_search(graphData, 0);
+    correctResult = {1, 2, 3, 4, 5, 6};
+
+    assert(std::equal(correctResult.begin(), correctResult.end(),
+                      returnedResult.begin()));
+    std::cout<< "Test 3 Passed..." << std::endl;
+}
+
 /** Main function */
 int main() {
+    /// running predefined test cases
+    tests();
+
     size_t vertices, edges;
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
@@ -123,12 +186,12 @@ int main() {
     std::cout << "Enter vertices in pair which have edges between them : "
               << std::endl;
     while (edges--) {
-        size_t u, v;
+        int u, v;
         std::cin >> u >> v;
         graph::addEdge(&adj, u, v);
     }
 
     /// running Breadth First Search Algorithm on the graph
-    graph::beadth_first_search(adj, 2);
+    graph::beadth_first_search(adj, 0);
     return 0;
 }
