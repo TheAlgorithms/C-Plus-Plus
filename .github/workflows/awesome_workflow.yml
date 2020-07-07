@@ -172,13 +172,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - name: Install dependencies
+      - uses: openrndr/setup-opengl@v1
         if: matrix.os == 'ubuntu-latest'
-        run: sudo apt-get install mesa-utils
       - uses: actions/checkout@master
         with:
           submodules: true
-      - name: Build 
-        run: |
-          cmake -B ./build -S .
-          cmake --build build
+      run: cmake -B ./build -S .
+      run: cmake --build build
