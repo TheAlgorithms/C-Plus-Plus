@@ -9,7 +9,7 @@
 #include <vector>
 #include <string.h>
 #include <stdlib.h>
-#include <time.h>   
+#include <ctime>   
 
 // using namespace std; 
 using std::vector;
