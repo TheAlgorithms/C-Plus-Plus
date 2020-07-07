@@ -51,7 +51,7 @@ foreach( testsourcefile ${APP_SOURCES} )
             target_link_libraries(${testname} PRIVATE OpenGL::GL ${GLUT_LIBRARIES})
         endif()
     else(OpenGL_FOUND)
-        target_compile_options(${testname} PRIVATE NO_OPENGL)
+        target_compile_definitions(${testname} PRIVATE NO_OPENGL)
     endif(OpenGL_FOUND)
     
     if(APPLE)
