@@ -7,25 +7,22 @@
 
 #include <iostream>
 #include <vector>
-#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>   
-#include <cstdlib>
 
 // using namespace std; 
 using std::vector;
 using std::endl;
 
-#define MAXLVL 2
-#define P 0.5
+#define MAXLVL 2   ///< maximum level of skip list
+#define P 0.5      ///< current probability for "coin toss"
   
 
 /**
  *  Node structure [Key][Node*, Node*...]
 */
-class Node { 
-public: 
+struct Node { 
     int key; 
     void* value;
     /*Forward Array*/
@@ -38,7 +35,7 @@ Node::Node(int key, int level, void* value) {
     this->key = key; 
   
     /*Initialization of forward vector*/
-    for (int i = 0; i < sizeof(Node*)*(level+1); i++){
+    for (int i = 0; i < (level+1); i++){
         forward.push_back(NULL);
     }
 } 
@@ -67,7 +64,6 @@ SkipList::SkipList() {
 
 
 SkipList::~SkipList(){
-    delete header;
     for(int i=0; i <= level; i++) { 
         Node *node = header->forward[i]; 
         Node* temp;
@@ -77,6 +73,7 @@ SkipList::~SkipList(){
             delete temp;
         } 
     } 
+    delete header;
 }
 
   
@@ -201,12 +198,10 @@ int main()
     SkipList lst;
 
     for (int j = 0; j < (1 << (MAXLVL+1)); j++){
-         int k = (std::rand()% (1 << (MAXLVL+1)  + 1));
+         int k = (std::rand()%( 1 << (MAXLVL+2)) + 1);
          lst.insertElement(k, &j); 
     }
 
     lst.displayList();
-
-
 
 } 
