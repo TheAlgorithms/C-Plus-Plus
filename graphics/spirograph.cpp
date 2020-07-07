@@ -25,11 +25,13 @@
 #ifdef _OPENMP
 #include <omp.h>
 #endif
+#ifdef USE_GLUT
 #ifdef __APPLE__
 #include <GLUT/glut.h>  // include path on Macs is different
 #else
 #include <GL/glut.h>
 #endif  // __APPLE__
+#endif
 
 /**
  * @namespace spirograph Functions related to spirograph.cpp
@@ -112,7 +114,7 @@ void test() {
     fp.close();
 }
 
-#ifndef NO_OPENGL
+#ifdef USE_GLUT
 /** A wrapper that is not available in all GLUT implementations.
  */
 static inline void glutBitmapString(void *font, char *message) {
@@ -219,7 +221,7 @@ void timer_cb(int t) {
 int main(int argc, char **argv) {
     spirograph::test();
 
-#ifndef NO_OPENGL
+#ifdef USE_GLUT
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutCreateWindow("Spirograph");
