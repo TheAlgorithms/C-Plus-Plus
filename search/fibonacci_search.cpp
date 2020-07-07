@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 @author sprintyaf
+ * @author sprintyaf
  * @file fibonacci_search.cpp
  * @brief [Fibonacci search
  * algorithm](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
