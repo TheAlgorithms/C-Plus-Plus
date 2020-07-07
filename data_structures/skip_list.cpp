@@ -54,7 +54,10 @@ public:
     void deleteElement(int); 
     void* searchElement(int); 
     void displayList(); 
+    ~SkipList();
 };
+
+
   
 SkipList::SkipList() { 
     level = 0; 
@@ -63,6 +66,18 @@ SkipList::SkipList() {
 } 
 
 
+SkipList::~SkipList(){
+    delete header;
+    for(int i=0; i <= level; i++) { 
+        Node *node = header->forward[i]; 
+        Node* temp;
+        while(node != NULL) { 
+            temp = node;
+            node = node->forward[i];
+            delete temp;
+        } 
+    } 
+}
 
   
 /**
