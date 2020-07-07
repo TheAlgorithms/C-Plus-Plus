@@ -23,26 +23,28 @@ using std::endl;
 */
 struct Node { 
     int key;
-    /* pointer of value */
+    //pointer of value 
     void* value;
-    /*Forward Array*/
+    //Forward Array
     vector<Node*> forward;
     Node(int key, int level, void* value); 
 };
 
 /**
- * Creates node with provided key, level and value;
+ * Creates node with provided key, level and value
 */
 Node::Node(int key, int level, void* value) { 
     this->key = key; 
   
-    /*Initialization of forward vector*/
+    //Initialization of forward vector
     for (int i = 0; i < (level+1); i++){
         forward.push_back(nullptr);
     }
 } 
   
-// Class for Skip list 
+/**
+ * SkipList class
+*/
 class SkipList { 
     int level; 
     Node *header; 
@@ -57,12 +59,12 @@ public:
 };
 
 
-/**\
- * Skeep List constructor;
+/**
+ * Skeep List constructor
 */
 SkipList::SkipList() { 
     level = 0; 
-    /* Header initialization*/
+    // Header initialization
     header = new Node(-1, MAX_LEVEL, nullptr); 
 } 
 
@@ -117,7 +119,7 @@ void SkipList::insertElement(int key, void* value) {
         if(rlevel > level) { 
             for(int i=level+1;i<rlevel+1;i++) update[i] = header; 
 
-            /*Update current level*/
+            //Update current level
             level = rlevel; 
         } 
   
