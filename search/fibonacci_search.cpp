@@ -1,6 +1,6 @@
 /**
  * Copyright 2020 @author sprintyaf
- * @file
+ * @file fibonacci_search.cpp
  * @brief [Fibonacci search
  * algorithm](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  */
@@ -8,27 +8,21 @@
 #include <iostream>
 #include <vector> // for std::vector class
 #include <cassert> // for assert
+#include <cstdlib> // for random numbers
+#include <algorithm> // for sorting
 
 
 
 /**
- * Returns minimum of the two numbers
+ * @brief using fibonacci search algorithm finds an index of a given element in a sorted array
+ * 
+ * @param arr sorted array
+ * @param value value that we're looking for
+ * @returns if the array contains the value, returns an index of the element. otherwise -1.
  */
-int min(int first, int second){
-    if(first < second){
-        return first;
-    } else {
-        return second;
-    }
-}
-
-/**
- * Input: a sorted array, a value we're looking for and size of the array
- * Output: if the array contains the value, returns its index
- *         else returns -1
- */
-int fibonacci_search(int *arr, int value, int length){
+int fibonacci_search(const std::vector<int> &arr, int value){
     int last = 0, current = 1, offset = -1, index;
+    int length = arr.size();
     int next = last + current;
 
     while(next < length){
@@ -38,7 +32,7 @@ int fibonacci_search(int *arr, int value, int length){
     }
 
     while(next > 1){
-        index = min(offset + last, length-1);
+        index = std::min(offset + last, length-1);
         if(arr[index] < value){
             next = current;
             current = last;
@@ -52,115 +46,68 @@ int fibonacci_search(int *arr, int value, int length){
             return index;
         }
     }
-    if(current && (length > 0) && arr[offset+1] == value){
+    if(current && !arr.empty() && arr[offset+1] == value){
         return offset+1;
     }
     return -1;
 }
 
 /**
- * Tests where given value occurs only once
- */
-bool one_occurence_test(){
-    // declarations
-    int value, index, length;
+ * @brief random tests for checking performance when an array doesn't contain an element
+*/
+bool no_occurence_tests(){
     bool passed = true;
-    // last element
-    length = 3;
-    int arr1[3] = {1, 2, 3};
-    value = 3;
-    index = fibonacci_search(arr1, value, length);
-    passed = passed && (index == 2);
-    // first element
-    value = 1;
-    index = fibonacci_search(arr1, value, length);
-    passed = passed && (index == 0);
-    // somewhere in the middle element
-    length = 4;
-    int arr2[4] = {1, 3, 5, 7};
-    value = 3;
-    index = fibonacci_search(arr2, value, length);
-    passed = passed && (index == 1);
-    // arr size is 1
-    length = 1;
-    int arr3[1] = {10};
-    value = 10;
-    index = fibonacci_search(arr3, value, length);
-    passed = passed && (index == 0);
-
+    int rand_num, rand_value, index, num_tests = 1000;
+    std::vector<int> arr;
+    while(num_tests--){
+        arr.clear();
+        for(int i = 0; i < 100; i++){
+            rand_num = rand() % 1000;
+            arr.push_back(rand_num);
+        }
+        rand_value = rand() % 1000;
+        while(std::find(arr.begin(), arr.end(), rand_value) != arr.end()){
+            std::remove(arr.begin(), arr.end(), rand_value);
+        }
+        sort(arr.begin(), arr.end());
+        index = fibonacci_search(arr, rand_value);
+        passed = passed && (index == -1);
+    }
     return passed;
 }
 
 /**
- * Tests where given value occurs more than once
- */
-bool many_occurence_test(){
-    // declarations
-    int value, index, length;
+ * @brief random tests which cover cases when we have one, multiple or zero occurences of the value we're looking for
+*/
+bool random_tests(){
     bool passed = true;
-    // last element
-    length = 4;
-    int arr1[4] = {1, 1, 10, 10};
-    value = 10;
-    index = fibonacci_search(arr1, value, length);
-    passed = passed && (index == 2 || index == 3);
-    // first element
-    value = 1;
-    index = fibonacci_search(arr1, value, length);
-    passed = passed && (index == 0 || index == 1);
-    // somewhere in the middle element
-    length = 4;
-    int arr2[4] = {1, 3, 3, 7};
-    value = 3;
-    index = fibonacci_search(arr2, value, length);
-    passed = passed && (index == 1 || index == 2);
-    // all elements are the same
-    length = 3;
-    int arr3[3] = {10, 10, 10};
-    value = 10;
-    index = fibonacci_search(arr3, value, length);
-    passed = passed && (index >= 0 && index <= 2);
-
+    int rand_num, rand_value, index, real_value, num_tests = 10000;
+    std::vector<int> arr;
+    while(num_tests--){
+        arr.clear();
+        for(int i = 0; i < 100; i++){
+            rand_num = rand() % 1000;
+            arr.push_back(rand_num);
+        }
+        rand_value = rand() % 1000;
+        sort(arr.begin(), arr.end());
+        index = fibonacci_search(arr, rand_value);
+        if(index != -1){
+            real_value = arr[index];
+            passed = passed && (real_value == rand_value);
+        } else {
+            passed = passed && (std::find(arr.begin(), arr.end(), rand_value) == arr.end());
+        }
+    }
     return passed;
 }
-
-/**
- * Tests where the array doesn't contain given value
- */
-bool no_occurence_test(){
-    // declarations
-    int value, index, length;
-    bool passed = true;
-    // many elements
-    length = 4;
-    int arr1[4] = {1, 2, 4, 5};
-    value = 3;
-    index = fibonacci_search(arr1, value, length);
-    passed = passed && (index == -1);
-    // one element
-    length = 1;
-    int arr2[1] = {1};
-    value = 2;
-    index = fibonacci_search(arr2, value, length);
-    passed = passed && (index == -1);
-    // empty array
-    length = 0;
-    int arr3[10] = {};
-    value = 10;
-    index = fibonacci_search(arr3, value, length);
-    passed = passed && (index == -1);
-
-    return passed;
-}
-
 
 /**
  * Main Function
  * testing the algorithm
  */
 int main() {
-    assert(one_occurence_test());
-    assert(many_occurence_test());
-    assert(no_occurence_test());
+    assert(no_occurence_tests());
+    assert(random_tests());
     return 0;
 }
