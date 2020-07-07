@@ -76,6 +76,7 @@ add_subdirectory(probability)
 add_subdirectory(data_structures)
 add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
