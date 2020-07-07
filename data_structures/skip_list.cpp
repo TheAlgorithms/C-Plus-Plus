@@ -2,7 +2,7 @@
  * A skip list is a data structure that is used for storing a sorted list of items with a
  *  help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
- *  References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/ Pseudo Code.
+ *  References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/  Code and PseudoCode.
 */
 
 #include <iostream>
@@ -15,28 +15,31 @@
 using std::vector;
 using std::endl;
 
-#define MAXLVL 2   ///< maximum level of skip list
-#define P 0.5      ///< current probability for "coin toss"
+#define MAX_LEVEL 2   ///< maximum level of skip list
+#define PROBABILITY 0.5      ///< current probability for "coin toss"
   
 
 /**
  *  Node structure [Key][Node*, Node*...]
 */
 struct Node { 
-    int key; 
+    int key;
+    /* pointer of value */
     void* value;
     /*Forward Array*/
     vector<Node*> forward;
     Node(int key, int level, void* value); 
 };
 
-  
+/**
+ * Creates node with provided key, level and value;
+*/
 Node::Node(int key, int level, void* value) { 
     this->key = key; 
   
     /*Initialization of forward vector*/
     for (int i = 0; i < (level+1); i++){
-        forward.push_back(NULL);
+        forward.push_back(nullptr);
     }
 } 
   
@@ -55,11 +58,13 @@ public:
 };
 
 
-  
+/**\
+ * Skeep List constructor;
+*/
 SkipList::SkipList() { 
     level = 0; 
     /* Header initialization*/
-    header = new Node(-1, MAXLVL, NULL); 
+    header = new Node(-1, MAX_LEVEL, nullptr); 
 } 
 
 
@@ -67,7 +72,7 @@ SkipList::~SkipList(){
     for(int i=0; i <= level; i++) { 
         Node *node = header->forward[i]; 
         Node* temp;
-        while(node != NULL) { 
+        while(node != nullptr) { 
             temp = node;
             node = node->forward[i];
             delete temp;
@@ -82,27 +87,31 @@ SkipList::~SkipList(){
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
-    while(static_cast<float>(std::rand())/RAND_MAX < P && lvl < MAXLVL) lvl++;  
+    while(static_cast<float>(std::rand())/RAND_MAX < PROBABILITY && lvl < MAX_LEVEL) lvl++;  
     return lvl; 
 } 
   
   
-// Insert given key in skip list 
+  
+/**
+ * Inserts elements with given key and value;
+ * It's level is computed by randomLevel() function.
+*/
 void SkipList::insertElement(int key, void* value) { 
     std::cout << "Inserting" << key << "...";
     Node *x = header; 
-    Node *update[MAXLVL+1]; 
-    memset(update, 0, sizeof(Node*)*(MAXLVL+1)); 
+    Node *update[MAX_LEVEL+1]; 
+    memset(update, 0, sizeof(Node*)*(MAX_LEVEL+1)); 
 
 
     for(int i = level; i >= 0; i--) { 
-        while(x->forward[i] != NULL && x->forward[i]->key < key)  x = x->forward[i]; 
+        while(x->forward[i] != nullptr && x->forward[i]->key < key)  x = x->forward[i]; 
         update[i] = x; 
     } 
 
     x = x->forward[0]; 
 
-    bool doesnt_exist = (x == NULL || x->key != key);
+    bool doesnt_exist = (x == nullptr || x->key != key);
     if (doesnt_exist) { 
         int rlevel = randomLevel(); 
   
@@ -130,17 +139,17 @@ void SkipList::deleteElement(int key)
 { 
     Node *x = header; 
   
-    Node *update[MAXLVL+1]; 
-    memset(update, 0, sizeof(Node*)*(MAXLVL+1)); 
+    Node *update[MAX_LEVEL+1]; 
+    memset(update, 0, sizeof(Node*)*(MAX_LEVEL+1)); 
   
     for(int i = level; i >= 0; i--)  { 
-        while(x->forward[i] != NULL  &&  x->forward[i]->key < key)  x = x->forward[i]; 
+        while(x->forward[i] != nullptr  &&  x->forward[i]->key < key)  x = x->forward[i]; 
         update[i] = x; 
     } 
   
     x = x->forward[0]; 
   
-    bool doesnt_exist = (x == NULL || x->key != key);
+    bool doesnt_exist = (x == nullptr || x->key != key);
 
     if(!doesnt_exist) { 
         for(int i=0;i<=level;i++) {
@@ -173,32 +182,39 @@ void* SkipList::searchElement(int key) {
         return x->value;
     } else {
         std::cout << "Not Found" << endl;
-        return NULL;
+        return nullptr;
     }
 } 
   
-// Display skip list level wise 
+/**
+ * Display skip list level wise 
+ */
 void SkipList::displayList() { 
     std::cout << "Displaying list:\n" << endl;
     for(int i=0; i <= level; i++) { 
         Node *node = header->forward[i]; 
         std::cout << "Level " << (i) << ": ";
-        while(node != NULL) { 
+        while(node != nullptr) { 
             std::cout << node->key << " ";
             node = node->forward[i]; 
         } 
         std::cout << endl;
     } 
 } 
-  
+
+
+/**
+ * Main function:
+ * Creates and inserts random 2^[number of levels] elements into the skip lists and than displays it
+ */  
 int main() 
 { 
     std::srand(std::time(nullptr));
 
     SkipList lst;
 
-    for (int j = 0; j < (1 << (MAXLVL+1)); j++){
-         int k = (std::rand()%( 1 << (MAXLVL+2)) + 1);
+    for (int j = 0; j < (1 << (MAX_LEVEL+1)); j++){
+         int k = (std::rand()%( 1 << (MAX_LEVEL+2)) + 1);
          lst.insertElement(k, &j); 
     }
 
