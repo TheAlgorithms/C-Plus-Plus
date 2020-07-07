@@ -82,8 +82,8 @@ namespace graph {
     * @param start vertex from where traversing starts
     *
     */
-    void beadth_first_search(std::vector<std::vector<int>> *adj, size_t start) {
-        size_t vertices = adj->size();
+    void beadth_first_search(const std::vector<std::vector<int>> &adj, size_t start) {
+        size_t vertices = adj.size();
 
         /// vector to keep track of visited vertices
         std::vector<bool> visited(vertices, 0);
@@ -96,7 +96,7 @@ namespace graph {
             size_t vertex = tracker.front();
             tracker.pop();
             std::cout << vertex + 1 << " ";
-            for (auto x : (*adj)[vertex]) {
+            for (auto x : adj[vertex]) {
                 /// if the vertex is not visited then mark this as visited
                 /// and push it to the queue
                 if (!visited[x]) {
@@ -130,6 +130,6 @@ int main() {
     }
 
     /// running Breadth First Search Algorithm on the graph
-    graph::beadth_first_search(&adj, 2);
+    graph::beadth_first_search(adj, 2);
     return 0;
 }
