@@ -37,7 +37,7 @@ Node::Node(int key, int level, void* value) {
     for (int i = 0; i < sizeof(Node*)*(level+1); i++){
         forward.push_back(NULL);
     }
-}; 
+} 
   
 // Class for Skip list 
 class SkipList { 
@@ -50,13 +50,13 @@ public:
     void deleteElement(int); 
     void* searchElement(int); 
     void displayList(); 
-}; 
+};
   
 SkipList::SkipList() { 
     level = 0; 
     /* Header initialization*/
     header = new Node(-1, MAXLVL, NULL); 
-}; 
+} 
 
   
 /**
@@ -64,9 +64,10 @@ SkipList::SkipList() {
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
-    while(rand()%2 < P && lvl < MAXLVL) lvl++;  
+    thread_local unsigned int seed = time(NULL);
+    while(rand_r(&seed)%2 < P && lvl < MAXLVL) lvl++;  
     return lvl; 
-}; 
+} 
   
   
 // Insert given key in skip list 
@@ -104,7 +105,7 @@ void SkipList::insertElement(int key, void* value) {
     } else {
         printf("Exists\n");
     }
-}; 
+} 
   
 
 void SkipList::deleteElement(int key) 
@@ -134,7 +135,7 @@ void SkipList::deleteElement(int key)
     } else {
         printf("Doesnt Exists\n");
     }
-}; 
+} 
   
 
 /**
@@ -156,7 +157,7 @@ void* SkipList::searchElement(int key) {
         printf("NOT FOUND\n");
         return NULL;
     }
-}; 
+} 
   
 // Display skip list level wise 
 void SkipList::displayList() { 
@@ -170,16 +171,17 @@ void SkipList::displayList() {
         } 
         printf("\n");
     } 
-}; 
+} 
   
 int main() 
 { 
-    srand((unsigned)time(0)); 
+        thread_local unsigned int seed = time(NULL);
+
   
     SkipList lst;
 
     for (int j = 0; j < (1 << (MAXLVL+1)); j++){
-         int k = (rand() % (1 << (MAXLVL+1)  + 1));
+         int k = (rand_r(&seed) % (1 << (MAXLVL+1)  + 1));
          lst.insertElement(k, &j); 
     }
 
