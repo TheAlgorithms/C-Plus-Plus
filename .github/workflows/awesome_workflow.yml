@@ -174,7 +174,7 @@ jobs:
     steps:
       - name: Install dependencies
         if: matrix.os == 'ubuntu-latest'
-        run: sudo apt-get install libglu1-mesa-dev
+        run: sudo apt-get install mesa-utils
       - uses: actions/checkout@master
         with:
           submodules: true
