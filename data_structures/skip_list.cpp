@@ -180,12 +180,12 @@ void SkipList::displayList() {
   
 int main() 
 { 
-    srand((unsigned)time(0)); 
+    std::srand(time(nullptr));
 
     SkipList lst;
 
     for (int j = 0; j < (1 << (MAXLVL+1)); j++){
-         int k = (rand()% (1 << (MAXLVL+1)  + 1));
+         int k = (std::rand()% (1 << (MAXLVL+1)  + 1));
          lst.insertElement(k, &j); 
     }
 
