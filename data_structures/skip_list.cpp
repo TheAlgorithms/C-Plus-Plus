@@ -1,4 +1,4 @@
-/**
+/*
  * A skip list is a data structure that is used for storing a sorted list of items with a
  *  help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
@@ -18,7 +18,7 @@ using std::endl;
 #define PROBABILITY 0.5      ///< current probability for "coin toss"
   
 
-/**
+/*
  *  Node structure [Key][Node*, Node*...]
 */
 struct Node { 
@@ -30,7 +30,7 @@ struct Node {
     Node(int key, int level, void* value); 
 };
 
-/**
+/*
  * Creates node with provided key, level and value
 */
 Node::Node(int key, int level, void* value) { 
@@ -42,7 +42,7 @@ Node::Node(int key, int level, void* value) {
     }
 } 
   
-/**
+/*
  * SkipList class
 */
 class SkipList { 
@@ -59,7 +59,7 @@ public:
 };
 
 
-/**
+/*
  * Skeep List constructor
 */
 SkipList::SkipList() { 
@@ -83,7 +83,7 @@ SkipList::~SkipList(){
 }
 
   
-/**
+/*
  * Returns random level for skip list;
 */
 int SkipList::randomLevel() { 
@@ -94,7 +94,7 @@ int SkipList::randomLevel() {
   
   
   
-/**
+/*
  * Inserts elements with given key and value;
  * It's level is computed by randomLevel() function.
 */
@@ -135,7 +135,9 @@ void SkipList::insertElement(int key, void* value) {
     }
 } 
   
-  /**Delete document by key*/
+/*
+ * Delete document by key
+*/
 void SkipList::deleteElement(int key) 
 { 
     Node *x = header; 
@@ -166,7 +168,7 @@ void SkipList::deleteElement(int key)
 } 
   
 
-/**
+/*
  * Searching element in skip list structure
 */
 void* SkipList::searchElement(int key) { 
@@ -187,7 +189,7 @@ void* SkipList::searchElement(int key) {
     }
 } 
   
-/**
+/*
  * Display skip list level wise 
  */
 void SkipList::displayList() { 
@@ -204,7 +206,7 @@ void SkipList::displayList() {
 } 
 
 
-/**
+/*
  * Main function:
  * Creates and inserts random 2^[number of levels] elements into the skip lists and than displays it
  */  
