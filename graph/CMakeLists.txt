@@ -16,3 +16,4 @@ foreach( testsourcefile ${APP_SOURCES} )
     install(TARGETS ${testname} DESTINATION "bin/graph")
 
 endforeach( testsourcefile ${APP_SOURCES} )
+
