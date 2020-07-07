@@ -9,10 +9,12 @@
 #include <vector>
 #include <stdio.h>
 #include <string.h>
-using namespace std; 
 
 #define MAXLVL 2
 #define P 0.5
+
+using std::endl;
+using std::vector;
   
 
 /**
