@@ -67,7 +67,7 @@ bool one_occurence_test(){
     bool passed = true;
     // last element
     length = 3;
-    int arr1[length] = {1, 2, 3};
+    int arr1[3] = {1, 2, 3};
     value = 3;
     index = fibonacci_search(arr1, value, length);
     passed = passed && (index == 2);
@@ -77,13 +77,13 @@ bool one_occurence_test(){
     passed = passed && (index == 0);
     // somewhere in the middle element
     length = 4;
-    int arr2[length] = {1, 3, 5, 7};
+    int arr2[4] = {1, 3, 5, 7};
     value = 3;
     index = fibonacci_search(arr2, value, length);
     passed = passed && (index == 1);
     // arr size is 1
     length = 1;
-    int arr3[length] = {10};
+    int arr3[1] = {10};
     value = 10;
     index = fibonacci_search(arr3, value, length);
     passed = passed && (index == 0);
@@ -100,7 +100,7 @@ bool many_occurence_test(){
     bool passed = true;
     // last element
     length = 4;
-    int arr1[length] = {1, 1, 10, 10};
+    int arr1[4] = {1, 1, 10, 10};
     value = 10;
     index = fibonacci_search(arr1, value, length);
     passed = passed && (index == 2 || index == 3);
@@ -110,13 +110,13 @@ bool many_occurence_test(){
     passed = passed && (index == 0 || index == 1);
     // somewhere in the middle element
     length = 4;
-    int arr2[length] = {1, 3, 3, 7};
+    int arr2[4] = {1, 3, 3, 7};
     value = 3;
     index = fibonacci_search(arr2, value, length);
     passed = passed && (index == 1 || index == 2);
     // all elements are the same
     length = 3;
-    int arr3[length] = {10, 10, 10};
+    int arr3[3] = {10, 10, 10};
     value = 10;
     index = fibonacci_search(arr3, value, length);
     passed = passed && (index >= 0 && index <= 2);
@@ -133,19 +133,19 @@ bool no_occurence_test(){
     bool passed = true;
     // many elements
     length = 4;
-    int arr1[length] = {1, 2, 4, 5};
+    int arr1[4] = {1, 2, 4, 5};
     value = 3;
     index = fibonacci_search(arr1, value, length);
     passed = passed && (index == -1);
     // one element
     length = 1;
-    int arr2[length] = {1};
+    int arr2[1] = {1};
     value = 2;
     index = fibonacci_search(arr2, value, length);
     passed = passed && (index == -1);
     // empty array
     length = 0;
-    int arr3[length];
+    int arr3[10] = {};
     value = 10;
     index = fibonacci_search(arr3, value, length);
     passed = passed && (index == -1);
