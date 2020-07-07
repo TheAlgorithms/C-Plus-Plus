@@ -178,5 +178,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
-      - run: cmake -B ./build -S .
-      - run: cmake --build build
+      - name: Build 
+        run: |
+          cmake -B ./build -S .
+          cmake --build build
