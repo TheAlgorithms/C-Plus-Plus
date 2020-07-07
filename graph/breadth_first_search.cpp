@@ -44,10 +44,10 @@
  *
  */
 #include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <queue>
 #include <vector>
-#include <cassert>
 
 /**
  * \namespace graph
@@ -76,44 +76,43 @@ void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
     // adj[v - 1].push_back(u -1);
 }
 
-    /**
-    * \brief
-    * Function performs the breadth first search algorithm over the graph
-    *
-    * @param adj Adjacency list representation of graph
-    * @param start vertex from where traversing starts
-    *
-    */
-    std::vector<int> beadth_first_search(
-        const std::vector<std::vector<int>> &adj,
-        int start) {
-        size_t vertices = adj.size();
+/**
+ * \brief
+ * Function performs the breadth first search algorithm over the graph
+ *
+ * @param adj Adjacency list representation of graph
+ * @param start vertex from where traversing starts
+ *
+ */
+std::vector<int> beadth_first_search(const std::vector<std::vector<int>> &adj,
+                                     int start) {
+    size_t vertices = adj.size();
 
-        std::vector<int> result;
+    std::vector<int> result;
 
-        /// vector to keep track of visited vertices
-        std::vector<bool> visited(vertices, 0);
+    /// vector to keep track of visited vertices
+    std::vector<bool> visited(vertices, 0);
 
-        std::queue<int> tracker;
-        /// marking the start vertex as visited
-        visited[start] = true;
-        tracker.push(start);
-        while (!tracker.empty()) {
-            size_t vertex = tracker.front();
-            tracker.pop();
-            result.push_back(vertex + 1);
-            for (auto x : adj[vertex]) {
-                /// if the vertex is not visited then mark this as visited
-                /// and push it to the queue
-                if (!visited[x]) {
-                    visited[x] = true;
-                    tracker.push(x);
-                }
+    std::queue<int> tracker;
+    /// marking the start vertex as visited
+    visited[start] = true;
+    tracker.push(start);
+    while (!tracker.empty()) {
+        size_t vertex = tracker.front();
+        tracker.pop();
+        result.push_back(vertex + 1);
+        for (auto x : adj[vertex]) {
+            /// if the vertex is not visited then mark this as visited
+            /// and push it to the queue
+            if (!visited[x]) {
+                visited[x] = true;
+                tracker.push(x);
             }
         }
-        return result;
     }
+    return result;
 }
+}  // namespace graph
 }  // namespace graph
 
 void tests() {
@@ -133,7 +132,7 @@ void tests() {
 
     assert(std::equal(correctResult.begin(), correctResult.end(),
                       returnedResult.begin()));
-    std::cout<< "Test 1 Passed..." << std::endl;
+    std::cout << "Test 1 Passed..." << std::endl;
 
     /// Test 2 Begin
     /// clear data from previous test
@@ -145,7 +144,7 @@ void tests() {
 
     assert(std::equal(correctResult.begin(), correctResult.end(),
                       returnedResult.begin()));
-    std::cout<< "Test 2 Passed..." << std::endl;
+    std::cout << "Test 2 Passed..." << std::endl;
 
     /// Test 3 Begins
     /// clear data from previous test
@@ -166,7 +165,7 @@ void tests() {
 
     assert(std::equal(correctResult.begin(), correctResult.end(),
                       returnedResult.begin()));
-    std::cout<< "Test 3 Passed..." << std::endl;
+    std::cout << "Test 3 Passed..." << std::endl;
 }
 
 /** Main function */
