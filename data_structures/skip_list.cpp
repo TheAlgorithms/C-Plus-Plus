@@ -70,7 +70,7 @@ SkipList::SkipList() {
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
-    while(static_cast<float>(rand())/RAND_MAX < P && lvl < MAXLVL) lvl++;  
+    while(static_cast<float>(std::rand())/RAND_MAX < P && lvl < MAXLVL) lvl++;  
     return lvl; 
 } 
   
