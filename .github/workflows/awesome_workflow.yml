@@ -172,8 +172,6 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - uses: openrndr/setup-opengl@v1
-        if: matrix.os == 'ubuntu-latest'
       - uses: actions/checkout@master
         with:
           submodules: true
