@@ -112,6 +112,7 @@ void test() {
     fp.close();
 }
 
+#ifndef NO_OPENGL
 /** A wrapper that is not available in all GLUT implementations.
  */
 static inline void glutBitmapString(void *font, char *message) {
@@ -211,13 +212,14 @@ void timer_cb(int t) {
     glutTimerFunc(25, timer_cb, 0);
     glutPostRedisplay();
 }
-
+#endif
 }  // namespace spirograph
 
 /** Main function */
 int main(int argc, char **argv) {
     spirograph::test();
 
+#ifndef NO_OPENGL
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutCreateWindow("Spirograph");
@@ -226,6 +228,7 @@ int main(int argc, char **argv) {
     glutTimerFunc(25, spirograph::timer_cb, 0);
     glutDisplayFunc(spirograph::test2);
     glutMainLoop();
+#endif
 
     return 0;
 }
