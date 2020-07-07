@@ -62,10 +62,10 @@ bool no_occurence_tests(){
     while(num_tests--){
         arr.clear();
         for(int i = 0; i < 100; i++){
-            rand_num = rand() % 1000;
+            rand_num = std::rand() % 1000;
             arr.push_back(rand_num);
         }
-        rand_value = rand() % 1000;
+        rand_value = std::rand() % 1000;
         while(std::find(arr.begin(), arr.end(), rand_value) != arr.end()){
             std::remove(arr.begin(), arr.end(), rand_value);
         }
@@ -86,11 +86,11 @@ bool random_tests(){
     while(num_tests--){
         arr.clear();
         for(int i = 0; i < 100; i++){
-            rand_num = rand() % 1000;
+            rand_num = std::rand() % 1000;
             arr.push_back(rand_num);
         }
-        rand_value = rand() % 1000;
-        sort(arr.begin(), arr.end());
+        rand_value = std::rand() % 1000;
+        std::sort(arr.begin(), arr.end());
         index = fibonacci_search(arr, rand_value);
         if(index != -1){
             real_value = arr[index];
