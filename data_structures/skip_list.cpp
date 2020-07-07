@@ -1,4 +1,4 @@
-/*
+/**
  * A skip list is a data structure that is used for storing a sorted list of items with a
  *  help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
