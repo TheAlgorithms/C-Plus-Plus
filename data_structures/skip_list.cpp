@@ -70,8 +70,7 @@ SkipList::SkipList() {
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
-    thread_local unsigned int seed = time(NULL);
-    while(rand_r(&seed)%2 < P && lvl < MAXLVL) lvl++;  
+    while((float)rand()/RAND_MAX < P && lvl < MAXLVL) lvl++;  
     return lvl; 
 } 
   
@@ -181,13 +180,12 @@ void SkipList::displayList() {
   
 int main() 
 { 
-        thread_local unsigned int seed = time(NULL);
+    srand((unsigned)time(0)); 
 
-  
     SkipList lst;
 
     for (int j = 0; j < (1 << (MAXLVL+1)); j++){
-         int k = (rand_r(&seed) % (1 << (MAXLVL+1)  + 1));
+         int k = (rand()% (1 << (MAXLVL+1)  + 1));
          lst.insertElement(k, &j); 
     }
 
