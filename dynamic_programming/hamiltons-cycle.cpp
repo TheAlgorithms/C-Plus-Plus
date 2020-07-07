@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <iostream>
 #include <vector>
 #include <cassert>
@@ -81,6 +80,10 @@ bool test1(){
     }
 
     bool ans = hamilton_cycle(b, n);
+    for (int i = 0; i < n; i++) {
+        delete[] b[i];
+    }
+
     delete[] b;
 
     return ans;
@@ -111,6 +114,10 @@ bool test2(){
     }
 
     bool ans = hamilton_cycle(b, n);
+    for (int i = 0; i < n; i++) {
+        delete[] b[i];
+    }
+
     delete[] b;
 
     return !ans;
@@ -138,6 +145,10 @@ bool test3(){
     }
 
     bool ans = hamilton_cycle(b, n);
+    for (int i = 0; i < n; i++) {
+        delete[] b[i];
+    }
+
     delete[] b;
 
     return ans;
@@ -145,6 +156,9 @@ bool test3(){
 
 /**
  * Main function
+ * 
+ * @param argc argument count
+ * @param argv array of arguments
 */
 int main(int argc, char **argv) {
     // array of tests
