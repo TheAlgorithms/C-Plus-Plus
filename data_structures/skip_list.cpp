@@ -9,6 +9,8 @@
 #include <vector>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>   
 // using namespace std; 
 using std::vector;
 using std::endl;
@@ -57,6 +59,8 @@ SkipList::SkipList() {
     /* Header initialization*/
     header = new Node(-1, MAXLVL, NULL); 
 } 
+
+
 
   
 /**
@@ -186,5 +190,7 @@ int main()
     }
 
     lst.displayList();
+
+
 
 } 
