@@ -17,12 +17,12 @@
  * the multiples.
  */
 void sieve(uint32_t N, bool *isprime) {
-    isprime[0] = false;
-    isprime[1] = false;
+    isprime[0] = true;
+    isprime[1] = true;
     for (uint32_t i = 2; i * i <= N; i++) {
-        if (isprime[i]) {
+        if (!isprime[i]) {
             for (uint32_t j = i * i; j <= N; j = j + i) {
-                isprime[j] = false;
+                isprime[j] = true;
             }
         }
     }
@@ -33,20 +33,11 @@ void sieve(uint32_t N, bool *isprime) {
  */
 void print(uint32_t N, bool *isprime) {
     for (uint32_t i = 1; i <= N; i++) {
-        if (isprime[i]) {
+        if (!isprime[i]) {
             std::cout << i << ' ';
         }
     }
     std::cout << std::endl;
-}
-
-/**
- * Initialize the array
- */
-void init(uint32_t N, bool *isprime) {
-    for (uint32_t i = 0; i < N; i++) {
-        isprime[i] = true;
-    }
 }
 
 /**
@@ -55,7 +46,6 @@ void init(uint32_t N, bool *isprime) {
 int main() {
     uint32_t N = 100;
     bool *isprime = new bool[N];
-    init(N, isprime);
     sieve(N, isprime);
     print(N, isprime);
     delete[] isprime;
