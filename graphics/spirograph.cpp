@@ -13,6 +13,13 @@
  * src="https://upload.wikimedia.org/wikipedia/commons/3/39/Resonance_Cascade.svg"
  * alt="Spirograph geometry from Wikipedia" style="width: 250px"/></a>
  */
+#ifdef USE_GLUT
+#ifdef __APPLE__
+#include <GLUT/glut.h>  // include path on Macs is different
+#else
+#include <GL/glut.h>
+#endif  // __APPLE__
+#endif
 #define _USE_MATH_DEFINES /**< required for MSVC compiler */
 #include <array>
 #include <cmath>
@@ -24,13 +31,6 @@
 #include <sstream>
 #ifdef _OPENMP
 #include <omp.h>
-#endif
-#ifdef USE_GLUT
-#ifdef __APPLE__
-#include <GLUT/glut.h>  // include path on Macs is different
-#else
-#include <GL/glut.h>
-#endif  // __APPLE__
 #endif
 
 /**
