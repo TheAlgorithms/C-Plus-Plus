@@ -7,8 +7,7 @@
 
 #include <iostream>
 #include <vector>
-#include <string.h>
-#include <stdlib.h>
+#include <cstring>
 #include <ctime>   
 
 // using namespace std; 
