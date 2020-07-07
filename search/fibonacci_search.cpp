@@ -1,12 +1,19 @@
+/**
+ * Copyright 2020 @author sprintyaf
+ * @file
+ * @brief [Fibonacci search
+ * algorithm](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
+ */
+
 #include <iostream>
-#include <vector>
+#include <vector> // for std::vector class
+#include <cassert> // for assert
 
-/*
-Input: a sorted array and a value
-Output: if the array contains the value, returns its index (index of its first occurence)
-        else returns -1
-*/
 
+
+/**
+ * Returns minimum of the two numbers
+ */
 int min(int first, int second){
     if(first < second){
         return first;
@@ -15,7 +22,12 @@ int min(int first, int second){
     }
 }
 
-int fibonacci_search(std::vector<int> arr, int value){
+/**
+ * Input: a sorted array and a value
+ * Output: if the array contains the value, returns its index
+ *         else returns -1
+ */
+int fibonacci_search(std::vector<int> &arr, int value){
     int last = 0, current = 1, offset = -1, index;
     int length = arr.size();
     int next = last + current;
@@ -47,23 +59,103 @@ int fibonacci_search(std::vector<int> arr, int value){
     return -1;
 }
 
-int main() {
-    int size, value;
-    std::cout << "Enter size of a sorted array: " << std::endl;
-    std::cin >> size;
-    std::cout << "Enter array elements: " << std::endl;
+/**
+ * Tests where given value occurs only once
+ */
+bool one_occurence_test(){
+    // declarations
+    int value, index;
+    bool passed = true;
+    std::vector<int> arr;
+    // last element
+    arr = {1, 2, 3};
+    value = 3;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 2);
+    // first element
+    value = 1;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 0);
+    // somewhere in the middle element
+    arr = {1, 3, 5, 7};
+    value = 3;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 1);
+    // arr size is 1
+    arr = {10};
+    value = 10;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 0);
 
-    std::vector<int> arr(size);
-    for(int i = 0; i < size; i++){
-        std::cin >> arr[i];
-    }
-    std::cout << "Enter the value you're looking for: " << std::endl;
-    std::cin >> value;
-    int index = fibonacci_search(arr, value);
-    if(index != -1){
-        std::cout << "Index of the given value is " << index << std::endl;
-    } else {
-        std::cout << "Array does not contain the value" << std::endl;
-    }
+    return passed;
+}
+
+/**
+ * Tests where given value occurs more than once
+ */
+bool many_occurence_test(){
+    // declarations
+    int value, index;
+    bool passed = true;
+    std::vector<int> arr;
+    // last element
+    arr = {1, 1, 10, 10};
+    value = 10;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 2 || index == 3);
+    // first element
+    value = 1;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 0 || index == 1);
+    // somewhere in the middle element
+    arr = {1, 3, 3, 7};
+    value = 3;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == 1 || index == 2);
+    // all elements are the same
+    arr = {10, 10, 10};
+    value = 10;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index >= 0 && index <= 2);
+
+    return passed;
+}
+
+/**
+ * Tests where the array doesn't contain given value
+ */
+bool no_occurence_test(){
+    // declarations
+    int value, index;
+    bool passed = true;
+    std::vector<int> arr;
+    // many elements
+    arr = {1, 2, 4, 5};
+    value = 3;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == -1);
+    // one element
+    arr = {1};
+    value = 2;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == -1);
+    // empty array
+    arr.clear();
+    value = 10;
+    index = fibonacci_search(arr, value);
+    passed = passed && (index == -1);
+
+    return passed;
+}
+
+
+/**
+ * Main Function
+ * testing the algorithm
+ */
+int main() {
+    assert(one_occurence_test());
+    assert(many_occurence_test());
+    assert(no_occurence_test());
     return 0;
 }
