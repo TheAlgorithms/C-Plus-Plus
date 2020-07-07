@@ -111,7 +111,7 @@ std::vector<int> beadth_first_search(const std::vector<std::vector<int>> &adj,
         }
     }
     return result;
-  }
+}
 }  // namespace graph
 
 void tests() {
