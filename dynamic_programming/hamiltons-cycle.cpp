@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 typedef bool (*test_func_t)(void);
 
@@ -155,12 +156,7 @@ int main(int argc, char **argv) {
     int test_num = 3;
     for (int t = 0; t < test_num; t++){
         test_func_t cur = tests[t];
-        if (cur()) {
-            printf("test %d PASSED!\n", t + 1);
-        } else {
-            printf("test %d FAILED!\n", t + 1);
-        }
+        assert (cur());
     }
-    std::cout <<std::endl;
     return 0;
 }
