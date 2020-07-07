@@ -70,14 +70,14 @@ SkipList::SkipList() {
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
-    while((float)rand()/RAND_MAX < P && lvl < MAXLVL) lvl++;  
+    while(static_cast<float>(rand())/RAND_MAX < P && lvl < MAXLVL) lvl++;  
     return lvl; 
 } 
   
   
 // Insert given key in skip list 
 void SkipList::insertElement(int key, void* value) { 
-    printf("Inserting %d key ... ", key);
+    std::cout << "Inserting" << key << "...";
     Node *x = header; 
     Node *update[MAXLVL+1]; 
     memset(update, 0, sizeof(Node*)*(MAXLVL+1)); 
@@ -106,13 +106,14 @@ void SkipList::insertElement(int key, void* value) {
             n->forward[i] = update[i]->forward[i]; 
             update[i]->forward[i] = n; 
         } 
-        printf(" Inserted\n");
+        std::cout << "Inserted" << endl;
+
     } else {
-        printf("Exists\n");
+        std::cout << "Exists" << endl;
     }
 } 
   
-
+  /**Delete document by key*/
 void SkipList::deleteElement(int key) 
 { 
     Node *x = header; 
@@ -136,9 +137,9 @@ void SkipList::deleteElement(int key)
         }
        /*Remove empty levels*/
         while(level>0 &&  header->forward[level] == 0) level--; 
-        printf("Deleted\n");
+        std::cout << "Deleted" << endl;
     } else {
-        printf("Doesnt Exists\n");
+        std::cout << "Doesn't exist" << endl;
     }
 } 
   
@@ -148,7 +149,7 @@ void SkipList::deleteElement(int key)
 */
 void* SkipList::searchElement(int key) { 
     Node *x = header; 
-    printf("Searching for %d\n", key);
+    std::cout << "Searching for " + key << endl;
 
     for(int i = level; i >= 0; i--) { 
         while(x->forward[i] && x->forward[i]->key < key)  x = x->forward[i]; 
@@ -156,25 +157,25 @@ void* SkipList::searchElement(int key) {
   
     x = x->forward[0]; 
     if(x && x->key == key){
-        printf("FOUND\n");
+        std::cout << "Found" << endl;
         return x->value;
     } else {
-        printf("NOT FOUND\n");
+        std::cout << "Not Found" << endl;
         return NULL;
     }
 } 
   
 // Display skip list level wise 
 void SkipList::displayList() { 
-    printf("----SKIP LIST STRUCTURE----\n");
+    std::cout << "Displaying list:\n" << endl;
     for(int i=0; i <= level; i++) { 
         Node *node = header->forward[i]; 
-        printf("Level %d: ", i);
+        std::cout << "Level " << (i) << ": ";
         while(node != NULL) { 
-            printf("%d ", node->key);
+            std::cout << node->key << " ";
             node = node->forward[i]; 
         } 
-        printf("\n");
+        std::cout << endl;
     } 
 } 
   
