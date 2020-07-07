@@ -2,7 +2,7 @@
  * A skip list is a data structure that is used for storing a sorted list of items with a
  *  help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
- *  References used: GeeksForGeeks, https://iq.opengenus.org/skip-list/ Pseudo Code, https://ideone.com/XnXIFl from CodeForces.
+ *  References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/ Pseudo Code.
 */
 
 #include <iostream>
@@ -104,7 +104,7 @@ void SkipList::insertElement(int key, void* value) {
     }
 }; 
   
-// Delete element from skip list 
+
 void SkipList::deleteElement(int key) 
 { 
     Node *x = header; 
