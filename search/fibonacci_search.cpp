@@ -7,7 +7,15 @@ Output: if the array contains the value, returns its index (index of its first o
         else returns -1
 */
 
-int fibonacchi_search(std::vector<int> arr, int value){
+int min(int first, int second){
+    if(first > second){
+        return first;
+    } else {
+        return second;
+    }
+}
+
+int fibonacci_search(std::vector<int> arr, int value){
     int last = 0, current = 1, offset = -1, index;
     int length = arr.size();
     int next = last + current;
@@ -19,7 +27,7 @@ int fibonacchi_search(std::vector<int> arr, int value){
     }
 
     while(next > 1){
-        index = std::min(offset + last, length-1);
+        index = min(offset + last, length-1);
         if(arr[index] < value){
             next = current;
             current = last;
@@ -51,7 +59,7 @@ int main() {
     }
     std::cout << "Enter the value you're looking for: " << std::endl;
     std::cin >> value;
-    int index = fibonacchi_search(arr, value);
+    int index = fibonacci_search(arr, value);
     if(index != -1){
         std::cout << "Index of the given value is " << index << std::endl;
     } else {
