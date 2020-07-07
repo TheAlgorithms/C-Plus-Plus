@@ -32,8 +32,8 @@
  *
  */
 
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 /**
@@ -43,27 +43,27 @@
  *
  */
 namespace graph {
-  /**
-  * \brief
-  * Adds and edge between two vertices of graph say u and v in this
-  * case.
-  *
-  * @param adj Adjacency list representation of graph
-  * @param u first vertex
-  * @param v second vertex
-  *
-  */
-  void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
+/**
+ * \brief
+ * Adds and edge between two vertices of graph say u and v in this
+ * case.
+ *
+ * @param adj Adjacency list representation of graph
+ * @param u first vertex
+ * @param v second vertex
+ *
+ */
+void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
     /**
-    *
-    * Here we are considering undirected graph that's the
-    * reason we are adding v to the adjacency list representation of u
-    * and also adding u to the adjacency list representation of v
-    *
-    */
+     *
+     * Here we are considering undirected graph that's the
+     * reason we are adding v to the adjacency list representation of u
+     * and also adding u to the adjacency list representation of v
+     *
+     */
     (*adj)[u - 1].push_back(v - 1);
     (*adj)[v - 1].push_back(u - 1);
-  }
+}
 
   /**
    * 
@@ -86,7 +86,7 @@ namespace graph {
         explore(adj, x, visited);
       }
     }
-  }
+}
 
   /**
    * \brief
@@ -106,27 +106,27 @@ namespace graph {
 
 /** Main function */
 int main() {
-  size_t vertices, edges;
-  std::cout << "Enter the Vertices : ";
-  std::cin >> vertices;
-  std::cout << "Enter the Edges : ";
-  std::cin >> edges;
+    size_t vertices, edges;
+    std::cout << "Enter the Vertices : ";
+    std::cin >> vertices;
+    std::cout << "Enter the Edges : ";
+    std::cin >> edges;
 
-  /// creating graph
-  std::vector<std::vector<size_t>> adj(vertices , std::vector<size_t>());
+    /// creating graph
+    std::vector<std::vector<size_t>> adj(vertices, std::vector<size_t>());
 
-  /// taking input for edges
-  std::cout << "Enter the vertices which have edges between them : "
-            << std::endl;
-  while (edges--) {
-    size_t u, v;
-    std::cin >> u >> v;
-    graph::addEdge(&adj, u, v);
-  }
+    /// taking input for edges
+    std::cout << "Enter the vertices which have edges between them : "
+              << std::endl;
+    while (edges--) {
+        size_t u, v;
+        std::cin >> u >> v;
+        graph::addEdge(&adj, u, v);
+    }
 
   /// running depth first search over graph
   graph::depth_first_search(adj, 2);
 
-  std::cout << std::endl;
-  return 0;
+    std::cout << std::endl;
+    return 0;
 }
