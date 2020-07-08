@@ -119,7 +119,7 @@ jobs:
 
           for cpp_file in cpp_files:
             subprocess.run(["clang-tidy-9", "--fix", "-p=build", cpp_file, "--"], 
-              check=True, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+              check=True, text=True, stderr=subprocess.STDOUT)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
