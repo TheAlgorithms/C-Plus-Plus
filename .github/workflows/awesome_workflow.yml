@@ -129,7 +129,7 @@ jobs:
 
           print("clang-tidy:")
           for cpp_file in cpp_files:
-            subprocess.run(["clang-tidy", "--quiet", "--fix", cpp_file, "--"], check=True, text=True)
+            subprocess.run(["clang-tidy", "--quiet", "--extra-arg=-std=c++11", "--fix", cpp_file, "--"], check=True, text=True)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
