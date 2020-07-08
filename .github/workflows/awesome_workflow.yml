@@ -116,6 +116,8 @@ jobs:
           import subprocess
           import sys
 
+          subprocess.run(["clang-tidy", "-dump-config"], check=True, text=True)
+          
           print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
           with open("git_diff.txt") as in_file:
             modified_files = sorted(in_file.read().splitlines())
@@ -128,7 +130,6 @@ jobs:
             sys.exit(0)
 
           print("clang-tidy:")
-          subprocess.run(["clang-tidy", "-dump-config"], check=True, text=True)
           for cpp_file in cpp_files:
             subprocess.run(["clang-tidy", "--quiet", "--fix", cpp_file, "--"], check=True, text=True)
 
