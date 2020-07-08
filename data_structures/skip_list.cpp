@@ -210,7 +210,8 @@ void SkipList::displayList() {
 
 /**
  * Main function:
- * Creates and inserts random 2^[number of levels] elements into the skip lists and than displays it
+ * Creates and inserts random 2^[number of levels]
+ * elements into the skip lists and than displays it
  */  
 int main() 
 { 
