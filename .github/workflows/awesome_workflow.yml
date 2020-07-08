@@ -16,7 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-9
+          sudo apt -qq install clang-tidy-10
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions
@@ -118,7 +118,7 @@ jobs:
             sys.exit(0)
 
           for cpp_file in cpp_files:
-            subprocess.run(["clang-tidy-9", "--fix", "-p=build", cpp_file, "--"], 
+            subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
           # print("g++:")
