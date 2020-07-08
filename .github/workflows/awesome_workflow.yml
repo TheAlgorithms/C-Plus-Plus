@@ -16,7 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-format clang-tidy
+          sudo apt -qq install clang-format clang-tidy-9
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions
@@ -110,7 +110,7 @@ jobs:
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
       - name: Configure for static lint checks
-        run: cmake -B build -S .
+        run: cmake -B build -S . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
       - name: Lint modified files
         shell: python
         run: |
@@ -129,9 +129,8 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          print("clang-tidy:")
           for cpp_file in cpp_files:
-            subprocess.run(["clang-tidy", "--quiet", "--extra-arg=-std=c++11", "--fix", cpp_file, "--", "-p build"], check=True, text=True)
+            subprocess.run(["clang-tidy-9", "--fix", "-p=build", cpp_file, "--"], check=True, text=True)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
@@ -160,9 +159,6 @@ jobs:
       - name: Commit and push changes
         run: |
           git diff DIRECTORY.md
-          # git config --global user.name github-actions
-          # git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git commit -am "clang-tidy fixes for $GITHUB_SHA" ||  true
           git push --force origin HEAD:$GITHUB_REF || true
 
