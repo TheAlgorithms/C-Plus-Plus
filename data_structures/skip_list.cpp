@@ -10,7 +10,6 @@
 #include <cstring>
 #include <ctime>   
 
-// using namespace std; 
 using std::vector;
 using std::endl;
 
@@ -23,9 +22,9 @@ using std::endl;
 */
 struct Node { 
     int key;
-    //pointer of value 
+    // pointer of value 
     void* value;
-    //Forward Array
+    // Forward Array
     vector<Node*> forward;
     Node(int key, int level, void* value); 
 };
