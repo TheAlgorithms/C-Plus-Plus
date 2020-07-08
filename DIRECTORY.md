@@ -84,6 +84,9 @@
   * [Topological Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort.cpp)
   * [Topological Sort By Kahns Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort_by_kahns_algo.cpp)
 
+## Graphics
+  * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graphics/spirograph.cpp)
+
 ## Greedy Algorithms
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/huffman.cpp)
