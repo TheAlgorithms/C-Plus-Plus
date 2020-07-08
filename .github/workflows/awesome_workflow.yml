@@ -100,15 +100,16 @@ jobs:
 
             with open("DIRECTORY.md", "w") as out_file:
                 out_file.write(build_directory_md(".") + "\n")
-      - name: Install CPPLINT
+      - name: Commit DIRECTORY.md
+        run: git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
+      - name: Get file changes
         run: |
-          python -m pip install cpplint
           git remote -v
           git branch
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
-      - name: cpplint_modified_files
+      - name: Lint modified files
         shell: python
         run: |
           import os
@@ -159,11 +160,11 @@ jobs:
             sys.exit(bad_files)
       - name: Commit and push changes
         run: |
-          cat DIRECTORY.md
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git diff DIRECTORY.md
+          # git config --global user.name github-actions
+          # git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git commit -am "updating DIRECTORY.md" ||  true
+          git commit -am "clang-tidy fixes for $GITHUB_SHA" ||  true
           git push --force origin HEAD:$GITHUB_REF || true
 
   build:
