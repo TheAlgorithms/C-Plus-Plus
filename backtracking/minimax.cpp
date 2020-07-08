@@ -1,8 +1,7 @@
 /**
  * @file
- * @brief returns which is the longest/shortest number, using minimax algorithm
- *
- * Wikipedia: https://en.wikipedia.org/wiki/Minimax
+ * @brief returns which is the longest/shortest number
+ * using [minimax](https://en.wikipedia.org/wiki/Minimax) algorithm
  */
 #include <algorithm>
 #include <cmath>
