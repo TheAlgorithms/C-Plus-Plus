@@ -16,8 +16,8 @@
  * @param scores saved numbers in vector
  * @return maximum or minimum number
  */
-int minimax(int depth, int node_index, bool is_max, const std::vector<int> &scores,
-            int height) {
+int minimax(int depth, int node_index, bool is_max,
+            const std::vector<int> &scores, int height) {
     if (depth == height) {
         return scores[node_index];
     }
@@ -35,6 +35,7 @@ int main() {
     std::vector<int> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
     int height = log2(scores.size());
 
-    std::cout << "Optimal value: " << minimax(0, 0, true, scores, height) << std::endl;
+    std::cout << "Optimal value: " << minimax(0, 0, true, scores, height)
+              << std::endl;
     return 0;
 }
