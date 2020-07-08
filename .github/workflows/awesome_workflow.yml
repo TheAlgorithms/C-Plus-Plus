@@ -109,6 +109,8 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
+      - name: Configure for static lint checks
+        run: cmake -B build -S .
       - name: Lint modified files
         shell: python
         run: |
@@ -129,7 +131,7 @@ jobs:
 
           print("clang-tidy:")
           for cpp_file in cpp_files:
-            subprocess.run(["clang-tidy", "--quiet", "--extra-arg=-std=c++11", "--fix", cpp_file, "--"], check=True, text=True)
+            subprocess.run(["clang-tidy", "--quiet", "--extra-arg=-std=c++11", "--fix", cpp_file, "--", "-p build"], check=True, text=True)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
