@@ -1,3 +1,9 @@
+/**
+ * @author vakhokoto
+ * 
+ * The implementation of hamilton's cycle dynamic solution for 
+ * vertices number less than 20.
+*/
 #include <iostream>
 #include <vector>
 #include <cassert>
