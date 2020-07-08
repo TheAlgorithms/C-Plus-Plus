@@ -17,7 +17,7 @@
  * @param scores saved numbers in vector
  * @return if maximum or not
  */
-int minimax(int depth, int node_index, bool is_max, std::vector<const int>* &scores,
+int minimax(int depth, int node_index, bool is_max, const std::vector<int> &scores,
             int height) {
     if (depth == height) {
         return scores[node_index];
