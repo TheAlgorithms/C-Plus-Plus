@@ -14,7 +14,7 @@
  * @param node_index current index in array
  * @param is_max if current index is the longest number
  * @param scores saved numbers in vector
- * @return if maximum or not
+ * @return maximum or minimum number
  */
 int minimax(int depth, int node_index, bool is_max, const std::vector<int> &scores,
             int height) {
