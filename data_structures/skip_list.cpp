@@ -120,7 +120,7 @@ void SkipList::insertElement(int key, void* value) {
         if(rlevel > level) { 
             for(int i=level+1;i<rlevel+1;i++) update[i] = header; 
 
-            //Update current level
+            // Update current level
             level = rlevel; 
         } 
   
@@ -160,7 +160,7 @@ void SkipList::deleteElement(int key)
             if(update[i]->forward[i] != x)  break; 
             update[i]->forward[i] = x->forward[i]; 
         }
-       /*Remove empty levels*/
+       /* Remove empty levels*/
         while(level>0 &&  header->forward[level] == 0) level--; 
         std::cout << "Deleted" << endl;
     } else {
