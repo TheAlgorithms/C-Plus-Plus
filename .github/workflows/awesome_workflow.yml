@@ -43,18 +43,18 @@ jobs:
             fi
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
-      - name: Clang Formatter
-        run: |
-          for fname in $(find . -name '*.cpp' -o -name '*.h')
-          do 
-            clang-format --verbose -i --style="$line1 $line2 $line3 $line4" "$fname"
-          done
-          git commit -am "formatting source-code for $GITHUB_SHA" ||  true
-        env:
-          line1: "{ BasedOnStyle: Google, UseTab: Never,"
-          line2: "IndentWidth: 4, TabWidth: 4, "
-          line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
-          line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
+      # - name: Clang Formatter
+      #   run: |
+      #     for fname in $(find . -name '*.cpp' -o -name '*.h')
+      #     do 
+      #       clang-format --verbose -i --style="$line1 $line2 $line3 $line4" "$fname"
+      #     done
+      #     git commit -am "formatting source-code for $GITHUB_SHA" ||  true
+      #   env:
+      #     line1: "{ BasedOnStyle: Google, UseTab: Never,"
+      #     line2: "IndentWidth: 4, TabWidth: 4, "
+      #     line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
+      #     line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
 
       - name: Update DIRECTORY.md
         shell: python
