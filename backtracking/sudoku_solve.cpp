@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool isPossible(int *mat[][9], int i, int j, int no, int n) {
+bool isPossible(int mat[][9], int i, int j, int no, int n) {
     /// Row or col nahin hona chahiye
     for (int x = 0; x < n; x++) {
         if (mat[x][j] == no || mat[i][x] == no) {
@@ -23,7 +23,7 @@ bool isPossible(int *mat[][9], int i, int j, int no, int n) {
     return true;
 }
 
-void printMat(int *mat[][9], int n) {
+void printMat(int mat[][9], int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             std::cout << mat[i][j] << " ";
@@ -38,7 +38,7 @@ void printMat(int *mat[][9], int n) {
     }
 }
 
-bool solveSudoku(int *mat[][9], int i, int j) {
+bool solveSudoku(int mat[][9], int i, int j) {
     /// Base Case
     if (i == 9) {
         /// Solve kr chuke hain for 9 rows already
