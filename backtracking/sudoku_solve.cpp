@@ -1,7 +1,6 @@
 #include <iostream>
-#define n 9
 
-bool isPossible(int mat[][9], int i, int j, int no) {
+bool isPossible(int &mat[][9], int i, int j, int no, int n) {
     /// Row or col nahin hona chahiye
     for (int x = 0; x < n; x++) {
         if (mat[x][j] == no || mat[i][x] == no) {
@@ -24,7 +23,7 @@ bool isPossible(int mat[][9], int i, int j, int no) {
     return true;
 }
 
-void printMat(int mat[][9]) {
+void printMat(int mat[][9], int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             std::cout << mat[i][j] << " ";
@@ -43,7 +42,7 @@ bool solveSudoku(int mat[][9], int i, int j) {
     /// Base Case
     if (i == 9) {
         /// Solve kr chuke hain for 9 rows already
-        printMat(mat);
+        printMat(mat, 9);
         return true;
     }
 
@@ -59,7 +58,7 @@ bool solveSudoku(int mat[][9], int i, int j) {
     /// White Cell
     /// Try to place every possible no
     for (int no = 1; no <= 9; no++) {
-        if (isPossible(mat, i, j, no)) {
+        if (isPossible(mat, i, j, no, 9)) {
             /// Place the no - assuming solution aa jayega
             mat[i][j] = no;
             bool aageKiSolveHui = solveSudoku(mat, i, j + 1);
@@ -85,7 +84,7 @@ int main() {
                      {0, 6, 0, 0, 0, 0, 2, 8, 0}, {0, 0, 0, 4, 1, 9, 0, 0, 5},
                      {0, 0, 0, 0, 8, 0, 0, 7, 9}};
 
-    printMat(mat);
+    printMat(mat, 9);
     std::cout << "Solution " << std::endl;
     solveSudoku(mat, 0, 0);
 
