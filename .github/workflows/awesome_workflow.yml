@@ -128,6 +128,7 @@ jobs:
             sys.exit(0)
 
           print("clang-tidy:")
+          subprocess.run(["clang-tidy", "-dump-config"], check=True, text=True)
           for cpp_file in cpp_files:
             subprocess.run(["clang-tidy", "--quiet", "--fix", cpp_file, "--"], check=True, text=True)
 
