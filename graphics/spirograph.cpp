@@ -79,8 +79,10 @@ void spirograph(std::array<std::pair<double, double>, N> *points, double l,
 #endif
     for (step = 0; step < N; step++) {
         double t = dt * step;
-        points[0][step].first = R * (k1 * cos(t) + l * k * cos(k1 * t / k));
-        points[0][step].second = R * (k1 * sin(t) - l * k * sin(k1 * t / k));
+        double first = R * (k1 * std::cos(t) + l * k * std::cos(k1 * t / k));
+        double second = R * (k1 * std::sin(t) - l * k * std::sin(k1 * t / k));
+        points[0][step].first = first;
+        points[0][step].second = second;
     }
 }
 
@@ -115,6 +117,14 @@ void test() {
 }
 
 #ifdef USE_GLUT
+static bool paused = 0; /**< flag to set pause/unpause animation */
+static const int animation_speed = 25; /**< animation delate in ms */
+
+static const double step = 0.01;   /**< animation step size */
+static double l_ratio = step * 10; /**< the l-ratio defined in docs */
+static double k_ratio = step;      /**< the k-ratio defined in docs */
+static const double num_rot = 20.; /**< number of rotations to simulate */
+
 /** A wrapper that is not available in all GLUT implementations.
  */
 static inline void glutBitmapString(void *font, char *message) {
@@ -169,40 +179,42 @@ void display_graph(const std::array<std::pair<double, double>, N> &points,
  *
  */
 void test2() {
-    const size_t N = 5000;     // number of samples
-    const double step = 0.01;  // animation steps
-    static double l = step * 10, k = step, rot = 20.;
+    const size_t N = 5000;  // number of samples
 
     static bool direction1 = true;  // increment if true, otherwise decrement
     static bool direction2 = true;  // increment if true, otherwise decrement
 
     std::array<std::pair<double, double>, N> points;
 
-    spirograph(&points, l, k, rot);
-    display_graph(points, l, k);
+    spirograph(&points, l_ratio, k_ratio, num_rot);
+    display_graph(points, l_ratio, k_ratio);
 
-    if (direction1) {            // increment k
-        if (k >= (1.f - step))   // maximum limit
-            direction1 = false;  // reverse direction of k
+    if (paused)
+        // if paused, do not update l_ratio and k_ratio
+        return;
+
+    if (direction1) {                 // increment k_ratio
+        if (k_ratio >= (1.f - step))  // maximum limit
+            direction1 = false;       // reverse direction of k_ratio
         else
-            k += step;
-    } else {                    // decrement k
-        if (k <= step) {        // minimum limit
-            direction1 = true;  // reverse direction of k
+            k_ratio += step;
+    } else {                    // decrement k_ratio
+        if (k_ratio <= step) {  // minimum limit
+            direction1 = true;  // reverse direction of k_ratio
 
-            if (direction2) {            // increment l
-                if (l >= (1.f - step))   // max limit of l
-                    direction2 = false;  // reverse direction of l
+            if (direction2) {                 // increment l_ratio
+                if (l_ratio >= (1.f - step))  // max limit of l_ratio
+                    direction2 = false;       // reverse direction of l_ratio
                 else
-                    l += step;
-            } else {                    // decrement l
-                if (l <= step)          // minimum limit of l
-                    direction2 = true;  // reverse direction of l
+                    l_ratio += step;
+            } else {                    // decrement l_ratio
+                if (l_ratio <= step)    // minimum limit of l_ratio
+                    direction2 = true;  // reverse direction of l_ratio
                 else
-                    l -= step;
+                    l_ratio -= step;
             }
-        } else {  // no min limit of k
-            k -= step;
+        } else {  // no min limit of k_ratio
+            k_ratio -= step;
         }
     }
 }
@@ -211,8 +223,43 @@ void test2() {
  * @brief GLUT timer callback function to add animation delay.
  */
 void timer_cb(int t) {
-    glutTimerFunc(25, timer_cb, 0);
+    glutTimerFunc(animation_speed, timer_cb, 0);
     glutPostRedisplay();
+}
+
+/**
+ * @brief Keypress event call back function.
+ *
+ * @param key ID of the key pressed
+ * @param x mouse pointer position at event
+ * @param y mouse pointer position at event
+ */
+void keyboard_cb(unsigned char key, int x, int y) {
+    switch (key) {
+        case ' ':              // spacebar toggles pause
+            paused = !paused;  // toggle
+            break;
+        case GLUT_KEY_UP:
+        case '+':  // up arrow key
+            k_ratio += step;
+            break;
+        case GLUT_KEY_DOWN:
+        case '_':  // down arrow key
+            k_ratio -= step;
+            break;
+        case GLUT_KEY_RIGHT:
+        case '=':  // left arrow key
+            l_ratio += step;
+            break;
+        case GLUT_KEY_LEFT:
+        case '-':  // right arrow key
+            l_ratio -= step;
+            break;
+        case 0x1B:  // escape key exits
+            exit(EXIT_SUCCESS);
+        default:
+            return;
+    }
 }
 #endif
 }  // namespace spirograph
@@ -227,7 +274,8 @@ int main(int argc, char **argv) {
     glutCreateWindow("Spirograph");
     glutInitWindowSize(400, 400);
     // glutIdleFunc(glutPostRedisplay);
-    glutTimerFunc(25, spirograph::timer_cb, 0);
+    glutTimerFunc(spirograph::animation_speed, spirograph::timer_cb, 0);
+    glutKeyboardFunc(spirograph::keyboard_cb);
     glutDisplayFunc(spirograph::test2);
     glutMainLoop();
 #endif
