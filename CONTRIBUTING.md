@@ -41,7 +41,7 @@ We are very happy that you consider implementing algorithms and data structures 
 #### Test
 - Make sure to add examples and test cases in your main() function.
 - If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
-- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with expected output. use `assert()` function to confirm that the tests will pass.
+- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with expected output. Use `assert()` function to confirm that the tests will pass.
 
 #### Typical structure of a program:
 ```cpp
