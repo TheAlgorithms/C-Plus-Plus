@@ -31,7 +31,7 @@ void sieve(uint32_t N, bool *isprime) {
 /**
  * This function prints out the primes to STDOUT
  */
-void print(uint32_t N, bool *isprime) {
+void print(uint32_t N, const bool *isprime) {
     for (uint32_t i = 2; i <= N; i++) {
         if (!isprime[i]) {
             std::cout << i << ' ';
