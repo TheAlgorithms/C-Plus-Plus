@@ -35,7 +35,6 @@ struct Node {
  * Creates node with provided key, level and value
  * @param key is number that is used for comparision
  * @param level is the maximum level node's going to added
- * 
 */
 Node::Node(int key, int level, void* value) { 
     this->key = key; 
