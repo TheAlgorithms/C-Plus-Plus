@@ -13,8 +13,8 @@
 using std::vector;
 using std::endl;
 
-#define MAX_LEVEL 2   ///< maximum level of skip list
-#define PROBABILITY 0.5      ///< current probability for "coin toss"
+#define MAX_LEVEL 2   ///< Maximum level of skip list
+#define PROBABILITY 0.5      ///< Current probability for "coin toss"
   
 
 /**
@@ -24,13 +24,18 @@ struct Node {
     int key;
     // pointer of value 
     void* value;
-    // Forward Array
+    // Forward Array points to the neighbour (right)
+    // nodes of the given one in all levels
     vector<Node*> forward;
+    // Constructor of the node
     Node(int key, int level, void* value); 
 };
 
 /**
  * Creates node with provided key, level and value
+ * @param key is number that is used for comparision
+ * @param level is the maximum level node's going to added
+ * 
 */
 Node::Node(int key, int level, void* value) { 
     this->key = key; 
@@ -42,10 +47,12 @@ Node::Node(int key, int level, void* value) {
 } 
   
 /**
- * SkipList class
+ * SkipList class implementation with basic methods
 */
 class SkipList { 
+    // Maximum level of the skiplist
     int level; 
+    // Pointer to the header node
     Node *header; 
 public: 
     SkipList(); 
@@ -59,7 +66,8 @@ public:
 
 
 /**
- * Skeep List constructor
+ * Skeep List constructor. Initializes header, start
+ * Node for searching in the list
 */
 SkipList::SkipList() { 
     level = 0; 
@@ -85,7 +93,9 @@ SkipList::~SkipList(){
 
   
 /**
- * Returns random level for skip list;
+ * Returns random level of the skip list.
+ * Every higher level is 2 times less likely.
+ * @return lvl: random level for skip list;
 */
 int SkipList::randomLevel() { 
     int lvl = 0; 
@@ -98,6 +108,8 @@ int SkipList::randomLevel() {
 /**
  * Inserts elements with given key and value;
  * It's level is computed by randomLevel() function.
+ * @param key is number that is used for comparision
+ * @param value pointer to a value, that can be any type
 */
 void SkipList::insertElement(int key, void* value) { 
     std::cout << "Inserting" << key << "...";
@@ -137,10 +149,10 @@ void SkipList::insertElement(int key, void* value) {
 } 
   
 /**
- * Delete document by key
+ * Deletes an element by key and prints if has been removed successfully 
+ * @param key is number that is used for comparision.
 */
-void SkipList::deleteElement(int key) 
-{ 
+void SkipList::deleteElement(int key) { 
     Node *x = header; 
   
     Node *update[MAX_LEVEL+1]; 
@@ -171,6 +183,8 @@ void SkipList::deleteElement(int key)
 
 /**
  * Searching element in skip list structure
+ * @param key is number that is used for comparision
+ * @return pointer to the value of the node
 */
 void* SkipList::searchElement(int key) { 
     Node *x = header; 
@@ -191,7 +205,7 @@ void* SkipList::searchElement(int key) {
 } 
   
 /*
- * Display skip list level wise 
+ * Display skip list level
  */
 void SkipList::displayList() { 
     std::cout << "Displaying list:\n" << endl;
