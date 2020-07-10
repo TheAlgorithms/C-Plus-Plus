@@ -16,7 +16,9 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-format
+          sudo apt -qq install clang-tidy-10
+        # checks are passing with less errors when used with this version. 
+        # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
         run: |
           git config --global user.name github-actions
@@ -43,18 +45,6 @@ jobs:
             fi
           done
           git commit -am "formatting filenames $GITHUB_SHA" ||  true
-      - name: Clang Formatter
-        run: |
-          for fname in $(find . -name '*.cpp' -o -name '*.h')
-          do 
-            clang-format --verbose -i --style="$line1 $line2 $line3 $line4" "$fname"
-          done
-          git commit -am "formatting source-code for $GITHUB_SHA" ||  true
-        env:
-          line1: "{ BasedOnStyle: Google, UseTab: Never,"
-          line2: "IndentWidth: 4, TabWidth: 4, "
-          line3: "AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false,"
-          line4: "ColumnLimit: 80, AccessModifierOffset: -3 }"
 
       - name: Update DIRECTORY.md
         shell: python
@@ -100,24 +90,21 @@ jobs:
 
             with open("DIRECTORY.md", "w") as out_file:
                 out_file.write(build_directory_md(".") + "\n")
-      - name: Update DIRECTORY.md
+      - name: Commit DIRECTORY.md
+        run: git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
+      - name: Get file changes
         run: |
-          cat DIRECTORY.md
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git add DIRECTORY.md
-          git commit -am "updating DIRECTORY.md" ||  true
-          git push --force origin HEAD:$GITHUB_REF || true
-      - name: Install CPPLINT
-        run: |
-          python -m pip install cpplint
           git remote -v
           git branch
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
-      - name: cpplint_modified_files
+      - name: Configure for static lint checks
+        # compiling first gives clang-tidy access to all the header files and settings used to compile the programs. 
+        # This will check for macros, if any, on linux and not for Windows. But the use of portability checks should 
+        # be able to catch any errors for other platforms.
+        run: cmake -B build -S . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+      - name: Lint modified files
         shell: python
         run: |
           import os
@@ -135,9 +122,9 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          print("cpplint:")
           for cpp_file in cpp_files:
-            subprocess.run(["cpplint", "--filter=-legal/copyright,-build/include", cpp_file], check=True, text=True)
+            subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
+              check=True, text=True, stderr=subprocess.STDOUT)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
@@ -163,6 +150,11 @@ jobs:
           bad_files = len(upper_files + space_files + nodir_files)
           if bad_files:
             sys.exit(bad_files)
+      - name: Commit and push changes
+        run: |
+          git diff DIRECTORY.md
+          git commit -am "clang-tidy fixes for $GITHUB_SHA" ||  true
+          git push --force origin HEAD:$GITHUB_REF || true
 
   build:
     name: Compile checks
