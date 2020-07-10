@@ -9,8 +9,8 @@
 #include <algorithm>  // test code
 #include <cassert>
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -106,19 +106,19 @@ void Remove(node *p, node *n, int x) {
  * \param[in] n node pointer of a tree
  */
 void BFT(node *n) {
-    std::queue<node*> queue;
-    if(n != NULL) {
+    std::queue<node *> queue;
+    if (n != NULL) {
         queue.push(n);
     }
 
     node *temp = NULL;
-    while(!queue.empty()) {
+    while (!queue.empty()) {
         temp = queue.front();
         queue.pop();
         std::cout << temp->val << "  ";
-        if(temp->left)
+        if (temp->left)
             queue.push(temp->left);
-        if(temp->right)
+        if (temp->right)
             queue.push(temp->right);
     }
 }
@@ -159,13 +159,12 @@ void Post(node *n) {
     }
 }
 
-
 /** test traverse a tree with Post order
  * and save the traverse node to an array.
  * \param[in] n the node pointer of a tree to start traverse
  * \param[out] arr the output array that save the traversed tree nodes pointers
  */
-void testInOrderTraverse(node *n, std::vector<int>& arr) {
+void testInOrderTraverse(node *n, std::vector<int> &arr) {
     if (n != NULL) {
         testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
