@@ -209,6 +209,14 @@ void test_tree() {
         assert(arr[i] != 2);
     }
     std::cout << "Test Remove(2) Passed\n========================\n";
+
+    // free memory
+    Remove(root, root, 1);
+    Remove(root, root, 3);
+    Remove(root, root, 6);
+    Remove(root, root, 5);
+    Remove(root, root, 7);
+    Remove(root, root, 4); // remove root node
 }
 
 /** main test function with commands.
