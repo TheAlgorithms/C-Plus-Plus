@@ -10,6 +10,7 @@
 #include <cassert>
 #include <iostream>
 #include <vector>
+#include <queue>
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -18,18 +19,6 @@ struct node {
     node *left;  /**< left subtree pointer */
     node *right; /**< right subtree pointer */
 };
-
-struct Queue {
-    node *t[100];
-    int front;
-    int rear;
-};
-
-Queue queue;
-
-void enqueue(node *n) { queue.t[queue.rear++] = n; }
-
-node *dequeue() { return (queue.t[queue.front++]); }
 
 /** insert a node to tree
  * with greater value to right subtree, smaller value node to left subtree
@@ -112,12 +101,25 @@ void Remove(node *p, node *n, int x) {
     }
 }
 
+/** Breath First Search a Tree as a Graph with queue structure
+ * and begin with node pointer n
+ * \param[in] n node pointer of a tree
+ */
 void BFT(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        enqueue(n->left);
-        enqueue(n->right);
-        BFT(dequeue());
+    std::queue<node*> queue;
+    if(n != NULL) {
+        queue.push(n);
+    }
+
+    node *temp = NULL;
+    while(!queue.empty()) {
+        temp = queue.front();
+        queue.pop();
+        std::cout << temp->val << "  ";
+        if(temp->left)
+            queue.push(temp->left);
+        if(temp->right)
+            queue.push(temp->right);
     }
 }
 
@@ -157,7 +159,13 @@ void Post(node *n) {
     }
 }
 
-void testInOrderTraverse(node *n, std::vector<int> &arr) {
+
+/** test traverse a tree with Post order
+ * and save the traverse node to an array.
+ * \param[in] n the node pointer of a tree to start traverse
+ * \param[out] arr the output array that save the traversed tree nodes pointers
+ */
+void testInOrderTraverse(node *n, std::vector<int>& arr) {
     if (n != NULL) {
         testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
@@ -166,6 +174,10 @@ void testInOrderTraverse(node *n, std::vector<int> &arr) {
     }
 }
 
+/** test function.
+ * auto build a binary tree with special nodes.
+ * test the tree Insert() and Remove() function and out test result.
+ */
 void test_tree() {
     node *root = new node;
     root->val = 4;
@@ -200,11 +212,12 @@ void test_tree() {
     std::cout << "Test Remove(2) Passed\n========================\n";
 }
 
+/** main test function with commands.
+ * build and test a binary search tree according to user input commands.
+ */
 int main() {
     // test tree
     test_tree();
-    queue.front = 0;
-    queue.rear = 0;
     int value;
     int ch;
     node *root = new node;
