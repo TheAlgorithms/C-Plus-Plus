@@ -1,8 +1,12 @@
 /**
+ * @file skip_list.cpp
+ * @brief data struccture for fast searching and insertion (O(log(n)))
+ * @details
  * A skip list is a data structure that is used for storing a sorted list of items with a
- *  help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
+ * help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
- *  References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/  Code and PseudoCode.
+ * References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/  PseudoCode and Code
+ * .
 */
 
 #include <iostream>
