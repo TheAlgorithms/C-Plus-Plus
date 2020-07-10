@@ -15,6 +15,8 @@
 /**
  * This is the function that finds the primes and eliminates
  * the multiples.
+ * @param N number of primes to check
+ * @param [out] isprime a boolean array of size `N` identifying if `i`^th number is prime or not
  */
 void sieve(uint32_t N, bool *isprime) {
     isprime[0] = true;
