@@ -1,6 +1,6 @@
 /**
  * @file skip_list.cpp
- * @brief data struccture for fast searching and insertion (O(log(n)))
+ * @brief Data structure for fast searching and insertion in \f$O(\log n)\f$ time
  * @details
  * A skip list is a data structure that is used for storing a sorted list of items with a
  * help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
