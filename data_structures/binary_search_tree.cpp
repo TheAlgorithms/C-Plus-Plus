@@ -216,7 +216,7 @@ void test_tree() {
     Remove(root, root, 6);
     Remove(root, root, 5);
     Remove(root, root, 7);
-    Remove(root, root, 4); // remove root node
+    Remove(root, root, 4);  // remove root node
 }
 
 /** main test function with commands.
