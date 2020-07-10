@@ -1,6 +1,6 @@
 ---
 Checks:          '-*,google-*,clang-analyzer-*,-clang-analyzer-security.insecureAPI.rand,cppcoreguidelines-*,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-pro-bounds-*,openmp-*,performance-*,portability-*,modernize-*,-modernize-use-trailing-*'
-WarningsAsErrors: ''
+WarningsAsErrors: '*'
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
 FormatStyle:     '{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, AccessModifierOffset: -3, AlignConsecutiveMacros: true }'
