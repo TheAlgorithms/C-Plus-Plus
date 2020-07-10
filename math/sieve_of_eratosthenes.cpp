@@ -21,7 +21,7 @@ void sieve(uint32_t N, bool *isprime) {
     isprime[1] = true;
     for (uint32_t i = 2; i * i <= N; i++) {
         if (!isprime[i]) {
-            for (uint32_t j = i * i; j <= N; j = j + i) {
+            for (uint32_t j = (i << 1); j <= N; j = j + i) {
                 isprime[j] = true;
             }
         }
