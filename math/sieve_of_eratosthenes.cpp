@@ -32,6 +32,8 @@ void sieve(uint32_t N, bool *isprime) {
 
 /**
  * This function prints out the primes to STDOUT
+ * @param N number of primes to check
+ * @param [in] isprime a boolean array of size `N` identifying if `i`^th number is prime or not
  */
 void print(uint32_t N, const bool *isprime) {
     for (uint32_t i = 2; i <= N; i++) {
