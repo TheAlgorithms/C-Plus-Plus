@@ -6,6 +6,7 @@
  * help of hierarchy of linked lists that connect increasingly sparse subsequences of the items
  * 
  * References used: GeeksForGeeks skip list code, https://iq.opengenus.org/skip-list/  PseudoCode and Code
+ * @author enqidu
  * .
 */
 
