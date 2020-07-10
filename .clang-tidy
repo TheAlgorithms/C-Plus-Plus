@@ -1,5 +1,5 @@
 ---
-Checks:          '-*,google-*,cppcoreguidelines-*,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-pro-bounds-*,openmp-*,performance-*,portability-*,modernize-*,-modernize-use-trailing-*'
+Checks:          '-*,google-*,clang-analyzer-*,cppcoreguidelines-*,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-pro-bounds-*,openmp-*,performance-*,portability-*,modernize-*,-modernize-use-trailing-*'
 WarningsAsErrors: ''
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
