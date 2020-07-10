@@ -72,7 +72,7 @@ void spirograph(std::array<std::pair<double, double>, N> *points, double l,
     double dt = rot * 2.f * M_PI / N;
     double R = 1.f;
     const double k1 = 1.f - k;
-    int32_t step;
+    int32_t step = 0;
 
 #ifdef _OPENMP
 #pragma omp for
