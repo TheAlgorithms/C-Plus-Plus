@@ -122,9 +122,11 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          for cpp_file in cpp_files:
-            subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
+          subprocess.run(["clang-tidy-10", "--fix", "-p=build", *cpp_files, "--"], 
               check=True, text=True, stderr=subprocess.STDOUT)
+          # for cpp_file in cpp_files:
+          #   subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
+          #     check=True, text=True, stderr=subprocess.STDOUT)
 
           # print("g++:")
           # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
