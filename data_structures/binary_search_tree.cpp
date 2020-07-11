@@ -26,9 +26,10 @@ struct node {
  * \param[in] x a node with value to be insert
  */
 void Insert(node *n, int x) {
+    node* temp = nullptr;
     if (x < n->val) {
         if (n->left == nullptr) {
-            node *temp = new node;
+            temp = new node;
             temp->val = x;
             temp->left = nullptr;
             temp->right = nullptr;
@@ -38,7 +39,7 @@ void Insert(node *n, int x) {
         }
     } else {
         if (n->right == nullptr) {
-            node *temp = new node;
+            temp = new node;
             temp->val = x;
             temp->left = nullptr;
             temp->right = nullptr;
@@ -190,7 +191,8 @@ void testInOrderTraverse(node *n, std::vector<int> *arr) {
  * test the tree Insert() and Remove() function and out test result.
  */
 void test_tree() {
-    node *root = new node;
+    node* root = nullptr;
+    root = new node;
     root->val = 4;
     root->left = nullptr;
     root->right = nullptr;
@@ -234,7 +236,8 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    node *root = new node;
+    node* root = nullptr;
+    root = new node;
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
