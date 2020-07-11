@@ -180,13 +180,14 @@ void test2() {
 }
 
 /**
- * @brief Test function to find *minima* for the function
+ * @brief Test function to find *maxima* for the function
  * \f$f(x)= \cos x\f$
  * in the interval \f$[0,12]\f$
  * \n Expected result: \f$\pi\approx 3.14159265358979312\f$
  */
 void test3() {
-    // define the function to minimize as a lambda function
+    // define the function to maximize as a lambda function
+    // since we are maximixing, we negated the function return value
     std::function<double(double)> func = [](double x) { return std::cos(x); };
 
     std::cout << "Test 3.... ";

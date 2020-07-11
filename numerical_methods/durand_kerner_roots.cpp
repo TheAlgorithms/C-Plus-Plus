@@ -212,7 +212,7 @@ void test1() {
         std::complex<double>(0., -2.)  // known expected roots
     };
 
-    /* Initialize root approximations with random values */
+    /* initialize root approximations with random values */
     for (int n = 0; n < roots.size(); n++) {
         roots[n] = std::complex<double>(std::rand() % 100, std::rand() % 100);
         roots[n] -= 50.f;
