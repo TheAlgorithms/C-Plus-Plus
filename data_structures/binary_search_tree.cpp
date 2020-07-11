@@ -104,12 +104,12 @@ void Remove(node *p, node *n, int x) {
 /** free memory of all tree nodes.
  * \param[in] n the root node pointer of a tree
  */
-void FreeTreeNodes(node* root) {
+void FreeTreeNodes(node *root) {
     if (root != nullptr) {
         FreeTreeNodes(root->left);
         FreeTreeNodes(root->right);
         std::cout << root->val << "  ";
-        delete root; // finaly delete root node
+        delete root;  // finaly delete root node
     }
 }
 
