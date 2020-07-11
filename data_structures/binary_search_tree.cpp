@@ -164,11 +164,11 @@ void Post(node *n) {
  * \param[in] n the node pointer of a tree to start traverse
  * \param[out] arr the output array that save the traversed tree nodes pointers
  */
-void testInOrderTraverse(node *n, std::vector<int> &arr) {
+void testInOrderTraverse(node *n, std::vector<int> *arr) {
     if (n != NULL) {
         testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
-        arr.push_back(n->val);
+        arr->push_back(n->val);
         testInOrderTraverse(n->right, arr);
     }
 }
@@ -194,7 +194,7 @@ void test_tree() {
         << std::endl;
     // test code
     std::vector<int> arr;
-    testInOrderTraverse(root, arr);
+    testInOrderTraverse(root, &arr);
     assert(std::is_sorted(arr.begin(), arr.end()));
     std::cout << "Test Insert() function Passed\n========================\n";
 
@@ -204,7 +204,7 @@ void test_tree() {
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
     arr.clear();
-    testInOrderTraverse(root, arr);
+    testInOrderTraverse(root, &arr);
     for (int i = 0; i < 6; i++) {
         assert(arr[i] != 2);
     }
