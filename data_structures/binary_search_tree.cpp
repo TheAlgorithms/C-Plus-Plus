@@ -27,21 +27,21 @@ struct node {
  */
 void Insert(node *n, int x) {
     if (x < n->val) {
-        if (n->left == NULL) {
+        if (n->left == nullptr) {
             node *temp = new node;
             temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
+            temp->left = nullptr;
+            temp->right = nullptr;
             n->left = temp;
         } else {
             Insert(n->left, x);
         }
     } else {
-        if (n->right == NULL) {
+        if (n->right == nullptr) {
             node *temp = new node;
             temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
+            temp->left = nullptr;
+            temp->right = nullptr;
             n->right = temp;
         } else {
             Insert(n->right, x);
@@ -54,7 +54,7 @@ void Insert(node *n, int x) {
  * \return the max node int value
  */
 int findMaxInLeftST(node *n) {
-    while (n->right != NULL) {
+    while (n->right != nullptr) {
         n = n->right;
     }
     return n->val;
@@ -68,21 +68,21 @@ int findMaxInLeftST(node *n) {
  */
 void Remove(node *p, node *n, int x) {
     if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
+        if (n->right == nullptr && n->left == nullptr) {
             if (x > p->val) {
-                p->right = NULL;
+                p->right = nullptr;
             } else {
-                p->left = NULL;
+                p->left = nullptr;
             }
             delete n;
-        } else if (n->right == NULL) {
+        } else if (n->right == nullptr) {
             if (x > p->val) {
                 p->right = n->left;
             } else {
                 p->left = n->left;
             }
             delete n;
-        } else if (n->left == NULL) {
+        } else if (n->left == nullptr) {
             if (x > p->val) {
                 p->right = n->right;
             } else {
@@ -101,17 +101,29 @@ void Remove(node *p, node *n, int x) {
     }
 }
 
-/** Breath First Search a Tree as a Graph with queue structure
+/** free memory of all tree nodes.
+ * \param[in] n the root node pointer of a tree
+ */
+void FreeTreeNodes(node* root) {
+    if (root != nullptr) {
+        FreeTreeNodes(root->left);
+        FreeTreeNodes(root->right);
+        std::cout << root->val << "  ";
+        delete root; // finaly delete root node
+    }
+}
+
+/** Breadth First Search a Tree as a Graph with queue structure
  * and begin with node pointer n
  * \param[in] n node pointer of a tree
  */
 void BFT(node *n) {
     std::queue<node *> queue;
-    if (n != NULL) {
+    if (n != nullptr) {
         queue.push(n);
     }
 
-    node *temp = NULL;
+    node *temp = nullptr;
     while (!queue.empty()) {
         temp = queue.front();
         queue.pop();
@@ -128,7 +140,7 @@ void BFT(node *n) {
  * \param[in] n the root node pointer of a tree
  */
 void Pre(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         std::cout << n->val << "  ";
         Pre(n->left);
         Pre(n->right);
@@ -140,7 +152,7 @@ void Pre(node *n) {
  * \param[in] n the root node pointer of a tree
  */
 void In(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         In(n->left);
         std::cout << n->val << "  ";
         In(n->right);
@@ -152,7 +164,7 @@ void In(node *n) {
  * \param[in] n the root node pointer of a tree
  */
 void Post(node *n) {
-    if (n != NULL) {
+    if (n != nullptr) {
         Post(n->left);
         Post(n->right);
         std::cout << n->val << "  ";
@@ -165,7 +177,7 @@ void Post(node *n) {
  * \param[out] arr the output array that save the traversed tree nodes pointers
  */
 void testInOrderTraverse(node *n, std::vector<int> *arr) {
-    if (n != NULL) {
+    if (n != nullptr) {
         testInOrderTraverse(n->left, arr);
         std::cout << n->val << "  ";
         arr->push_back(n->val);
@@ -180,8 +192,8 @@ void testInOrderTraverse(node *n, std::vector<int> *arr) {
 void test_tree() {
     node *root = new node;
     root->val = 4;
-    root->left = NULL;
-    root->right = NULL;
+    root->left = nullptr;
+    root->right = nullptr;
     // test Insert()
     Insert(root, 2);
     Insert(root, 1);
@@ -211,12 +223,7 @@ void test_tree() {
     std::cout << "Test Remove(2) Passed\n========================\n";
 
     // free memory
-    Remove(root, root, 1);
-    Remove(root, root, 3);
-    Remove(root, root, 6);
-    Remove(root, root, 5);
-    Remove(root, root, 7);
-    Remove(root, root, 4);  // remove root node
+    FreeTreeNodes(root);
 }
 
 /** main test function with commands.
@@ -225,14 +232,14 @@ void test_tree() {
 int main() {
     // test tree
     test_tree();
-    int value;
-    int ch;
+    int value = 0;
+    int ch = 0;
     node *root = new node;
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
-    root->left = NULL;
-    root->right = NULL;
+    root->left = nullptr;
+    root->right = nullptr;
 
     do {
         std::cout << "\n1. Insert"
@@ -244,7 +251,7 @@ int main() {
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
-        int x;
+        int x = 0;
         switch (ch) {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
@@ -270,6 +277,9 @@ int main() {
             break;
         }
     } while (ch != 0);
+
+    // free memory of tree nodes
+    FreeTreeNodes(root);
 
     return 0;
 }
