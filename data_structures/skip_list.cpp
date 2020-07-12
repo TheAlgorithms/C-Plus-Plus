@@ -41,7 +41,7 @@ struct Node {
      * @param key is number that is used for comparision
      * @param level is the maximum level node's going to added
      */
-    Node(int key, int level, void* value = nullptr) : key(key) {
+    Node(int key, int level, void* value = nullptr) : key(key), value(value) {
         // Initialization of forward vector
         for (int i = 0; i < (level + 1); i++) {
             forward.push_back(nullptr);
@@ -74,7 +74,7 @@ class SkipList {
      */
     int randomLevel() {
         int lvl = 0;
-        while (static_cast<float>(std::rand() / RAND_MAX) < PROBABILITY &&
+        while (static_cast<float>(std::rand()) / RAND_MAX < PROBABILITY &&
                lvl < MAX_LEVEL)
             lvl++;
         return lvl;
@@ -185,7 +185,7 @@ class SkipList {
      * Display skip list level
      */
     void displayList() {
-        std::cout << "Displaying list:\n" << std::endl;
+        std::cout << "Displaying list:\n";
         for (int i = 0; i <= level; i++) {
             std::shared_ptr<Node> node = header->forward[i];
             std::cout << "Level " << (i) << ": ";
