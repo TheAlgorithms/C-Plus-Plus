@@ -19,6 +19,7 @@ namespace data_structure {
  * @brief Implementation of Binary Search Tree data structure
  */
 namespace BST {
+
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -75,6 +76,7 @@ int findMaxInLeftST(node* n) {
  * \param[in] x the int value of a node
  */
 void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
+    assert(*n != nullptr);
     if ((*n)->val == x) {
         if ((*n)->right == nullptr && (*n)->left == nullptr) {
             (*n).reset();  // manual deleted root node
@@ -203,9 +205,8 @@ void test_tree() {
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    // node* temp = root.get();
-    // Remove(std::move(root), std::move(root), 2);
     data_structure::BST::Remove(&root, &root, 2);
+
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
