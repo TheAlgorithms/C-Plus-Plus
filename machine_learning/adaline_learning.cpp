@@ -173,6 +173,16 @@ class adaline {
         }
     }
 
+    /** Defines activation function as Heaviside's step function.
+     * \f[
+     * f(x) = \begin{cases}
+     * -1 & \forall x \le 0\\
+     *  1 & \forall x > 0
+     * \end{cases}
+     * \f]
+     * @param x input value to apply activation on
+     * @return activation output
+     */
     int activation(double x) { return x > 0 ? 1 : -1; }
 
  private:
