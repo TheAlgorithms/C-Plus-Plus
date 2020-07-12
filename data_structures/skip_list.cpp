@@ -26,12 +26,9 @@ using std::endl;
  *  Node structure [Key][Node*, Node*...]
 */
 struct Node { 
-    int key;
-    // pointer of value 
-    void* value;
-    // Forward Array points to the neighbour (right)
-    // nodes of the given one in all levels
-    vector<Node*> forward;
+    int key; ///< key integer
+    void* value;  ///< pointer of value 
+    vector<Node*> forward;  ///< nodes of the given one in all levels
     // Constructor of the node
     Node(int key, int level, void* value); 
 };
@@ -54,10 +51,8 @@ Node::Node(int key, int level, void* value) {
  * SkipList class implementation with basic methods
 */
 class SkipList { 
-    // Maximum level of the skiplist
-    int level; 
-    // Pointer to the header node
-    Node *header; 
+    int level;  ///< Maximum level of the skiplist
+    Node *header; ///< Pointer to the header node
 public: 
     SkipList(); 
     int randomLevel(); 
