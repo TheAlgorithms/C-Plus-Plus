@@ -259,28 +259,28 @@ int main() {
         std::cin >> ch;
         int x = 0;
         switch (ch) {
-            case 1:
-                std::cout << "\nEnter the value to be Inserted : ";
-                std::cin >> x;
-                Insert(root.get(), x);
-                break;
-            case 2:
-                std::cout << "\nEnter the value to be Deleted : ";
-                std::cin >> x;
-                Remove(root, root, x);
-                break;
-            case 3:
-                BFT(root.get());
-                break;
-            case 4:
-                Pre(root.get());
-                break;
-            case 5:
-                In(root.get());
-                break;
-            case 6:
-                Post(root.get());
-                break;
+        case 1:
+            std::cout << "\nEnter the value to be Inserted : ";
+            std::cin >> x;
+            Insert(root.get(), x);
+            break;
+        case 2:
+            std::cout << "\nEnter the value to be Deleted : ";
+            std::cin >> x;
+            Remove(root, root, x);
+            break;
+        case 3:
+            BFT(root.get());
+            break;
+        case 4:
+            Pre(root.get());
+            break;
+        case 5:
+            In(root.get());
+            break;
+        case 6:
+            Post(root.get());
+            break;
         }
     } while (ch != 0);
 
