@@ -270,28 +270,28 @@ int main() {
         std::cin >> ch;
         int x = 0;
         switch (ch) {
-            case 1:
-                std::cout << "\nEnter the value to be Inserted : ";
-                std::cin >> x;
-                data_structure::BST::Insert(root.get(), x);
-                break;
-            case 2:
-                std::cout << "\nEnter the value to be Deleted : ";
-                std::cin >> x;
-                data_structure::BST::Remove(root, root, x);
-                break;
-            case 3:
-                data_structure::BST::BFT(root.get());
-                break;
-            case 4:
-                data_structure::BST::Pre(root.get());
-                break;
-            case 5:
-                data_structure::BST::In(root.get());
-                break;
-            case 6:
-                data_structure::BST::Post(root.get());
-                break;
+        case 1:
+            std::cout << "\nEnter the value to be Inserted : ";
+            std::cin >> x;
+            data_structure::BST::Insert(root.get(), x);
+            break;
+        case 2:
+            std::cout << "\nEnter the value to be Deleted : ";
+            std::cin >> x;
+            data_structure::BST::Remove(root, root, x);
+            break;
+        case 3:
+            data_structure::BST::BFT(root.get());
+            break;
+        case 4:
+            data_structure::BST::Pre(root.get());
+            break;
+        case 5:
+            data_structure::BST::In(root.get());
+            break;
+        case 6:
+            data_structure::BST::Post(root.get());
+            break;
         }
     } while (ch != 0);
 
