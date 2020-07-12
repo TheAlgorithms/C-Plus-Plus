@@ -66,7 +66,8 @@ int findMaxInLeftST(node* n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(std::shared_ptr<node> p, std::shared_ptr<node> n, int x) {
+void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
+            int x) {
     if (n->val == x) {
         if (n->right == nullptr && n->left == nullptr) {
             if (x > p->val) {
@@ -107,7 +108,7 @@ void Remove(std::shared_ptr<node> p, std::shared_ptr<node> n, int x) {
 /** free memory of all tree nodes.
  * \param[in] n the root node pointer of a tree
  */
-void FreeTreeNodes(std::shared_ptr<node> root) {
+void FreeTreeNodes(const std::shared_ptr<node>& root) {
     if (root != nullptr) {
         FreeTreeNodes(std::move(root->left));
         FreeTreeNodes(std::move(root->right));
@@ -217,7 +218,7 @@ void test_tree() {
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    node* temp = root.get();
+    // node* temp = root.get();
     // Remove(std::move(root), std::move(root), 2);
     Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
@@ -258,28 +259,28 @@ int main() {
         std::cin >> ch;
         int x = 0;
         switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root.get(), x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root.get());
-            break;
-        case 4:
-            Pre(root.get());
-            break;
-        case 5:
-            In(root.get());
-            break;
-        case 6:
-            Post(root.get());
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                Insert(root.get(), x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                Remove(root, root, x);
+                break;
+            case 3:
+                BFT(root.get());
+                break;
+            case 4:
+                Pre(root.get());
+                break;
+            case 5:
+                In(root.get());
+                break;
+            case 6:
+                Post(root.get());
+                break;
         }
     } while (ch != 0);
 
