@@ -9,15 +9,17 @@
 #include <algorithm>  // test code
 #include <cassert>
 #include <iostream>
+#include <memory>
 #include <queue>
 #include <vector>
-/** An struct node type.
- *  Define a element for tree insert/remove operation
- */
+
+ /** An struct node type.
+  *  Define a element for tree insert/remove operation
+  */
 struct node {
-    int val;     /**< int value of a node struct*/
-    node *left;  /**< left subtree pointer */
-    node *right; /**< right subtree pointer */
+    int val{};                   /**< int value of a node struct*/
+    std::shared_ptr<node> left;  /**< left subtree pointer */
+    std::shared_ptr<node> right; /**< right subtree pointer */
 };
 
 /** insert a node to tree
@@ -25,27 +27,27 @@ struct node {
  * \param[in] n root node of a tree
  * \param[in] x a node with value to be insert
  */
-void Insert(node *n, int x) {
-    node *temp = nullptr;
+void Insert(node* n, int x) {
     if (x < n->val) {
         if (n->left == nullptr) {
-            temp = new node;
-            temp->val = x;
-            temp->left = nullptr;
-            temp->right = nullptr;
-            n->left = temp;
-        } else {
-            Insert(n->left, x);
+            n->left = std::shared_ptr<node>(new node);
+            n->left->val = x;
+            n->left->left = nullptr;
+            n->left->right = nullptr;
         }
-    } else {
+        else {
+            Insert(n->left.get(), x);
+        }
+    }
+    else {
         if (n->right == nullptr) {
-            temp = new node;
-            temp->val = x;
-            temp->left = nullptr;
-            temp->right = nullptr;
-            n->right = temp;
-        } else {
-            Insert(n->right, x);
+            n->right = std::shared_ptr<node>(new node);
+            n->right->val = x;
+            n->right->left = nullptr;
+            n->right->right = nullptr;
+        }
+        else {
+            Insert(n->right.get(), x);
         }
     }
 }
@@ -54,9 +56,9 @@ void Insert(node *n, int x) {
  * \param[in] n the root node pointer of subtree
  * \return the max node int value
  */
-int findMaxInLeftST(node *n) {
+int findMaxInLeftST(node* n) {
     while (n->right != nullptr) {
-        n = n->right;
+        n = n->right.get();
     }
     return n->val;
 }
@@ -67,37 +69,48 @@ int findMaxInLeftST(node *n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(node *p, node *n, int x) {
+void Remove(std::shared_ptr<node> p, std::shared_ptr<node> n, int x) {
     if (n->val == x) {
         if (n->right == nullptr && n->left == nullptr) {
             if (x > p->val) {
                 p->right = nullptr;
-            } else {
+            }
+            else {
                 p->left = nullptr;
             }
-            delete n;
-        } else if (n->right == nullptr) {
+            //n.reset(nullptr);
+            //   delete n;
+        }
+        else if (n->right == nullptr) {
             if (x > p->val) {
                 p->right = n->left;
-            } else {
+            }
+            else {
                 p->left = n->left;
             }
-            delete n;
-        } else if (n->left == nullptr) {
+            //n.reset(nullptr);
+            //   delete n;
+        }
+        else if (n->left == nullptr) {
             if (x > p->val) {
                 p->right = n->right;
-            } else {
+            }
+            else {
                 p->left = n->right;
             }
-            delete n;
-        } else {
-            int y = findMaxInLeftST(n->left);
+            //n.reset(nullptr);
+            //   delete n;
+        }
+        else {
+            int y = findMaxInLeftST(n->left.get());
             n->val = y;
             Remove(n, n->left, y);
         }
-    } else if (x < n->val) {
+    }
+    else if (x < n->val) {
         Remove(n, n->left, x);
-    } else {
+    }
+    else {
         Remove(n, n->right, x);
     }
 }
@@ -105,12 +118,13 @@ void Remove(node *p, node *n, int x) {
 /** free memory of all tree nodes.
  * \param[in] n the root node pointer of a tree
  */
-void FreeTreeNodes(node *root) {
+void FreeTreeNodes(std::shared_ptr<node> root) {
     if (root != nullptr) {
-        FreeTreeNodes(root->left);
-        FreeTreeNodes(root->right);
+        FreeTreeNodes(std::move(root->left));
+        FreeTreeNodes(std::move(root->right));
         std::cout << root->val << "  ";
-        delete root;  // finaly delete root node
+        //root.reset(nullptr);
+        // delete root; // finaly delete root node
     }
 }
 
@@ -118,21 +132,23 @@ void FreeTreeNodes(node *root) {
  * and begin with node pointer n
  * \param[in] n node pointer of a tree
  */
-void BFT(node *n) {
-    std::queue<node *> queue;
+void BFT(node* n) {
+    std::queue<node*> queue;
     if (n != nullptr) {
         queue.push(n);
     }
 
-    node *temp = nullptr;
+    node* temp = nullptr;
     while (!queue.empty()) {
         temp = queue.front();
         queue.pop();
         std::cout << temp->val << "  ";
-        if (temp->left)
-            queue.push(temp->left);
-        if (temp->right)
-            queue.push(temp->right);
+        if (temp->left) {
+            queue.push(temp->left.get());
+        }
+        if (temp->right) {
+            queue.push(temp->right.get());
+        }
     }
 }
 
@@ -140,11 +156,11 @@ void BFT(node *n) {
  * and print the node value
  * \param[in] n the root node pointer of a tree
  */
-void Pre(node *n) {
+void Pre(node* n) {
     if (n != nullptr) {
         std::cout << n->val << "  ";
-        Pre(n->left);
-        Pre(n->right);
+        Pre(n->left.get());
+        Pre(n->right.get());
     }
 }
 
@@ -152,11 +168,11 @@ void Pre(node *n) {
  * and print the node value
  * \param[in] n the root node pointer of a tree
  */
-void In(node *n) {
+void In(node* n) {
     if (n != nullptr) {
-        In(n->left);
+        In(n->left.get());
         std::cout << n->val << "  ";
-        In(n->right);
+        In(n->right.get());
     }
 }
 
@@ -164,10 +180,10 @@ void In(node *n) {
  * and print the node value
  * \param[in] n the root node pointer of a tree
  */
-void Post(node *n) {
+void Post(node* n) {
     if (n != nullptr) {
-        Post(n->left);
-        Post(n->right);
+        Post(n->left.get());
+        Post(n->right.get());
         std::cout << n->val << "  ";
     }
 }
@@ -177,12 +193,12 @@ void Post(node *n) {
  * \param[in] n the node pointer of a tree to start traverse
  * \param[out] arr the output array that save the traversed tree nodes pointers
  */
-void testInOrderTraverse(node *n, std::vector<int> *arr) {
+void testInOrderTraverse(node* n, std::vector<int>* arr) {
     if (n != nullptr) {
-        testInOrderTraverse(n->left, arr);
+        testInOrderTraverse(n->left.get(), arr);
         std::cout << n->val << "  ";
         arr->push_back(n->val);
-        testInOrderTraverse(n->right, arr);
+        testInOrderTraverse(n->right.get(), arr);
     }
 }
 
@@ -191,7 +207,7 @@ void testInOrderTraverse(node *n, std::vector<int> *arr) {
  * test the tree Insert() and Remove() function and out test result.
  */
 void test_tree() {
-    std::unique_ptr<node> root(new node);
+    std::shared_ptr<node> root(new node);
     root->val = 4;
     root->left = nullptr;
     root->right = nullptr;
@@ -212,20 +228,18 @@ void test_tree() {
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    Remove(root.get(), root.get(), 2);
+    node* temp = root.get();
+    //Remove(std::move(root), std::move(root), 2);
+    Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
-                 "1, 3, 4, 5, 6, 7"
-              << std::endl;
+        "1, 3, 4, 5, 6, 7"
+        << std::endl;
     arr.clear();
     testInOrderTraverse(root.get(), &arr);
     for (int i = 0; i < 6; i++) {
         assert(arr[i] != 2);
     }
     std::cout << "Test Remove(2) Passed\n========================\n";
-
-    // free memory
-    FreeTreeNodes(root->left);
-    FreeTreeNodes(root->right);
 }
 
 /** main test function with commands.
@@ -236,7 +250,7 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    std::unique_ptr<node> root(new node);
+    std::shared_ptr<node> root(new node);
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
@@ -245,11 +259,11 @@ int main() {
 
     do {
         std::cout << "\n1. Insert"
-                  << "\n2. Delete"
-                  << "\n3. Breadth First"
-                  << "\n4. Preorder Depth First"
-                  << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
+            << "\n2. Delete"
+            << "\n3. Breadth First"
+            << "\n4. Preorder Depth First"
+            << "\n5. Inorder Depth First"
+            << "\n6. Postorder Depth First";
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
@@ -263,7 +277,7 @@ int main() {
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
             std::cin >> x;
-            Remove(root.get(), root.get(), x);
+            Remove(root, root, x);
             break;
         case 3:
             BFT(root.get());
@@ -279,10 +293,6 @@ int main() {
             break;
         }
     } while (ch != 0);
-
-    // free memory of tree nodes
-    FreeTreeNodes(root->left);
-    FreeTreeNodes(root->right);
 
     return 0;
 }
