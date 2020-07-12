@@ -191,41 +191,41 @@ void testInOrderTraverse(node *n, std::vector<int> *arr) {
  * test the tree Insert() and Remove() function and out test result.
  */
 void test_tree() {
-    node *root = nullptr;
-    root = new node;
+    std::unique_ptr<node> root(new node);
     root->val = 4;
     root->left = nullptr;
     root->right = nullptr;
     // test Insert()
-    Insert(root, 2);
-    Insert(root, 1);
-    Insert(root, 3);
-    Insert(root, 6);
-    Insert(root, 5);
-    Insert(root, 7);
+    Insert(root.get(), 2);
+    Insert(root.get(), 1);
+    Insert(root.get(), 3);
+    Insert(root.get(), 6);
+    Insert(root.get(), 5);
+    Insert(root.get(), 7);
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
     // test code
     std::vector<int> arr;
-    testInOrderTraverse(root, &arr);
+    testInOrderTraverse(root.get(), &arr);
     assert(std::is_sorted(arr.begin(), arr.end()));
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    Remove(root, root, 2);
+    Remove(root.get(), root.get(), 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
     arr.clear();
-    testInOrderTraverse(root, &arr);
+    testInOrderTraverse(root.get(), &arr);
     for (int i = 0; i < 6; i++) {
         assert(arr[i] != 2);
     }
     std::cout << "Test Remove(2) Passed\n========================\n";
 
     // free memory
-    FreeTreeNodes(root);
+    FreeTreeNodes(root->left);
+    FreeTreeNodes(root->right);
 }
 
 /** main test function with commands.
@@ -236,8 +236,7 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    node *root = nullptr;
-    root = new node;
+    std::unique_ptr<node> root(new node);
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
@@ -259,30 +258,32 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-            Insert(root, x);
+            Insert(root.get(), x);
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
             std::cin >> x;
-            Remove(root, root, x);
+            Remove(root.get(), root.get(), x);
             break;
         case 3:
-            BFT(root);
+            BFT(root.get());
             break;
         case 4:
-            Pre(root);
+            Pre(root.get());
             break;
         case 5:
-            In(root);
+            In(root.get());
             break;
         case 6:
-            Post(root);
+            Post(root.get());
             break;
         }
     } while (ch != 0);
 
     // free memory of tree nodes
-    FreeTreeNodes(root);
+    FreeTreeNodes(root->left);
+    FreeTreeNodes(root->right);
+
 
     return 0;
 }
