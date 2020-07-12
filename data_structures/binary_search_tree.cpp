@@ -13,9 +13,9 @@
 #include <queue>
 #include <vector>
 
- /** An struct node type.
-  *  Define a element for tree insert/remove operation
-  */
+/** An struct node type.
+ *  Define a element for tree insert/remove operation
+ */
 struct node {
     int val{};                   /**< int value of a node struct*/
     std::shared_ptr<node> left;  /**< left subtree pointer */
@@ -34,19 +34,16 @@ void Insert(node* n, int x) {
             n->left->val = x;
             n->left->left = nullptr;
             n->left->right = nullptr;
-        }
-        else {
+        } else {
             Insert(n->left.get(), x);
         }
-    }
-    else {
+    } else {
         if (n->right == nullptr) {
             n->right = std::shared_ptr<node>(new node);
             n->right->val = x;
             n->right->left = nullptr;
             n->right->right = nullptr;
-        }
-        else {
+        } else {
             Insert(n->right.get(), x);
         }
     }
@@ -74,43 +71,35 @@ void Remove(std::shared_ptr<node> p, std::shared_ptr<node> n, int x) {
         if (n->right == nullptr && n->left == nullptr) {
             if (x > p->val) {
                 p->right = nullptr;
-            }
-            else {
+            } else {
                 p->left = nullptr;
             }
-            //n.reset(nullptr);
+            // n.reset(nullptr);
             //   delete n;
-        }
-        else if (n->right == nullptr) {
+        } else if (n->right == nullptr) {
             if (x > p->val) {
                 p->right = n->left;
-            }
-            else {
+            } else {
                 p->left = n->left;
             }
-            //n.reset(nullptr);
+            // n.reset(nullptr);
             //   delete n;
-        }
-        else if (n->left == nullptr) {
+        } else if (n->left == nullptr) {
             if (x > p->val) {
                 p->right = n->right;
-            }
-            else {
+            } else {
                 p->left = n->right;
             }
-            //n.reset(nullptr);
+            // n.reset(nullptr);
             //   delete n;
-        }
-        else {
+        } else {
             int y = findMaxInLeftST(n->left.get());
             n->val = y;
             Remove(n, n->left, y);
         }
-    }
-    else if (x < n->val) {
+    } else if (x < n->val) {
         Remove(n, n->left, x);
-    }
-    else {
+    } else {
         Remove(n, n->right, x);
     }
 }
@@ -123,7 +112,7 @@ void FreeTreeNodes(std::shared_ptr<node> root) {
         FreeTreeNodes(std::move(root->left));
         FreeTreeNodes(std::move(root->right));
         std::cout << root->val << "  ";
-        //root.reset(nullptr);
+        // root.reset(nullptr);
         // delete root; // finaly delete root node
     }
 }
@@ -229,11 +218,11 @@ void test_tree() {
 
     // test Remove()
     node* temp = root.get();
-    //Remove(std::move(root), std::move(root), 2);
+    // Remove(std::move(root), std::move(root), 2);
     Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
-        "1, 3, 4, 5, 6, 7"
-        << std::endl;
+                 "1, 3, 4, 5, 6, 7"
+              << std::endl;
     arr.clear();
     testInOrderTraverse(root.get(), &arr);
     for (int i = 0; i < 6; i++) {
@@ -259,11 +248,11 @@ int main() {
 
     do {
         std::cout << "\n1. Insert"
-            << "\n2. Delete"
-            << "\n3. Breadth First"
-            << "\n4. Preorder Depth First"
-            << "\n5. Inorder Depth First"
-            << "\n6. Postorder Depth First";
+                  << "\n2. Delete"
+                  << "\n3. Breadth First"
+                  << "\n4. Preorder Depth First"
+                  << "\n5. Inorder Depth First"
+                  << "\n6. Postorder Depth First";
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
