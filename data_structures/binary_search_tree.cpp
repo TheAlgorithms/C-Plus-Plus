@@ -1,10 +1,6 @@
 /**
  * \file
  * \brief A simple tree implementation using structured nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation - C style - and does not
- * utilize any of the C++ STL features.
  */
 #include <algorithm>  // test code
 #include <cassert>
@@ -13,6 +9,16 @@
 #include <queue>
 #include <vector>
 
+/**
+ * @namespace data_structure
+ * @brief Implementations of various data structures
+ */
+namespace data_structure {
+/**
+ * @namespace data_structure::BST
+ * @brief Implementation of Binary Search Tree data structure
+ */
+namespace BST {
 /** An struct node type.
  *  Define a element for tree insert/remove operation
  */
@@ -191,23 +197,27 @@ void testInOrderTraverse(node* n, std::vector<int>* arr) {
         testInOrderTraverse(n->right.get(), arr);
     }
 }
+}  // namespace BST
+
+}  // namespace data_structure
 
 /** test function.
  * auto build a binary tree with special nodes.
  * test the tree Insert() and Remove() function and out test result.
  */
 void test_tree() {
-    std::shared_ptr<node> root(new node);
+    std::shared_ptr<data_structure::BST::node> root(
+        new data_structure::BST::node);
     root->val = 4;
     root->left = nullptr;
     root->right = nullptr;
     // test Insert()
-    Insert(root.get(), 2);
-    Insert(root.get(), 1);
-    Insert(root.get(), 3);
-    Insert(root.get(), 6);
-    Insert(root.get(), 5);
-    Insert(root.get(), 7);
+    data_structure::BST::Insert(root.get(), 2);
+    data_structure::BST::Insert(root.get(), 1);
+    data_structure::BST::Insert(root.get(), 3);
+    data_structure::BST::Insert(root.get(), 6);
+    data_structure::BST::Insert(root.get(), 5);
+    data_structure::BST::Insert(root.get(), 7);
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
@@ -220,12 +230,12 @@ void test_tree() {
     // test Remove()
     // node* temp = root.get();
     // Remove(std::move(root), std::move(root), 2);
-    Remove(root, root, 2);
+    data_structure::BST::Remove(root, root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
     arr.clear();
-    testInOrderTraverse(root.get(), &arr);
+    data_structure::BST::testInOrderTraverse(root.get(), &arr);
     for (int i = 0; i < 6; i++) {
         assert(arr[i] != 2);
     }
@@ -240,7 +250,8 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    std::shared_ptr<node> root(new node);
+    std::shared_ptr<data_structure::BST::node> root(
+        new data_structure::BST::node);
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
     root->val = value;
@@ -259,28 +270,28 @@ int main() {
         std::cin >> ch;
         int x = 0;
         switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root.get(), x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root.get());
-            break;
-        case 4:
-            Pre(root.get());
-            break;
-        case 5:
-            In(root.get());
-            break;
-        case 6:
-            Post(root.get());
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                data_structure::BST::Insert(root.get(), x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                data_structure::BST::Remove(root, root, x);
+                break;
+            case 3:
+                data_structure::BST::BFT(root.get());
+                break;
+            case 4:
+                data_structure::BST::Pre(root.get());
+                break;
+            case 5:
+                data_structure::BST::In(root.get());
+                break;
+            case 6:
+                data_structure::BST::Post(root.get());
+                break;
         }
     } while (ch != 0);
 
