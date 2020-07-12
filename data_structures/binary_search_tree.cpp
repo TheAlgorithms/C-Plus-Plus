@@ -284,6 +284,5 @@ int main() {
     FreeTreeNodes(root->left);
     FreeTreeNodes(root->right);
 
-
     return 0;
 }
