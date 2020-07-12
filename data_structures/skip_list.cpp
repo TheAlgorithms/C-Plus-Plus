@@ -68,22 +68,6 @@ class SkipList {
     }
 
     /**
-     * Destructor for skiplist class
-     */
-    ~SkipList() {
-        for (int i = 0; i <= level; i++) {
-            std::shared_ptr<Node> node = header->forward[i];
-            std::shared_ptr<Node> temp;
-            while (node != nullptr) {
-                temp = node;
-                node = node->forward[i];
-                temp.reset();
-            }
-        }
-        header.reset();
-    }
-
-    /**
      * Returns random level of the skip list.
      * Every higher level is 2 times less likely.
      * @return random level for skip list
