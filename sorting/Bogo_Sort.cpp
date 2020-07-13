@@ -20,6 +20,10 @@
 #include <cassert>
 
 
+/**
+ * @namespace sorting
+ * @brief Sorting algorithms
+ */
 namespace sorting {
 /**
  * Function to shuffle the elements of an array.
