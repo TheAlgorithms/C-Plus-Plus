@@ -75,7 +75,7 @@ class Graph {
      * @param adjList is the adjacency list representation of graph.
      */
     Graph(unsigned int vertices, AdjList&& adjList)
-        : m_vertices(std::move(vertices)), m_adjList(std::move(adjList)) {}
+        : m_vertices(vertices), m_adjList(std::move(adjList)) {}
 
     /** Create a graph from vertices and a set of edges.
      *
