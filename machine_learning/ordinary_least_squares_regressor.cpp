@@ -25,9 +25,10 @@ std::ostream &operator<<(std::ostream &out,
     const char separator = ' ';
 
     for (size_t row = 0; row < v.size(); row++) {
-        for (size_t col = 0; col < v[row].size(); col++)
+        for (size_t col = 0; col < v[row].size(); col++) {
             out << std::left << std::setw(width) << std::setfill(separator)
                 << v[row][col];
+        }
         out << std::endl;
     }
 
@@ -42,9 +43,10 @@ std::ostream &operator<<(std::ostream &out, std::vector<T> const &v) {
     const int width = 15;
     const char separator = ' ';
 
-    for (size_t row = 0; row < v.size(); row++)
+    for (size_t row = 0; row < v.size(); row++) {
         out << std::left << std::setw(width) << std::setfill(separator)
             << v[row];
+    }
 
     return out;
 }
@@ -57,9 +59,11 @@ template <typename T>
 inline bool is_square(std::vector<std::vector<T>> const &A) {
     // Assuming A is square matrix
     size_t N = A.size();
-    for (size_t i = 0; i < N; i++)
-        if (A[i].size() != N)
+    for (size_t i = 0; i < N; i++) {
+        if (A[i].size() != N) {
             return false;
+        }
+    }
     return true;
 }
 
@@ -90,8 +94,9 @@ std::vector<std::vector<T>> operator*(std::vector<std::vector<T>> const &A,
         std::vector<T> v(N_B);
         for (size_t col = 0; col < N_B; col++) {
             v[col] = static_cast<T>(0);
-            for (size_t j = 0; j < B.size(); j++)
+            for (size_t j = 0; j < B.size(); j++) {
                 v[col] += A[row][j] * B[j][col];
+            }
         }
         result[row] = v;
     }
@@ -154,8 +159,9 @@ std::vector<float> operator*(std::vector<T> const &A, float const scalar) {
 
     std::vector<float> result(N_A);
 
-    for (size_t row = 0; row < N_A; row++)
+    for (size_t row = 0; row < N_A; row++) {
         result[row] = A[row] * static_cast<float>(scalar);
+    }
 
     return result;
 }
@@ -226,8 +232,9 @@ std::vector<std::vector<float>> get_inverse(
     for (size_t row = 0; row < N; row++) {
         // preallocatae a resultant identity matrix
         inverse[row] = std::vector<float>(N);
-        for (size_t col = 0; col < N; col++)
+        for (size_t col = 0; col < N; col++) {
             inverse[row][col] = (row == col) ? 1.f : 0.f;
+        }
     }
 
     if (!is_square(A)) {
@@ -239,8 +246,9 @@ std::vector<std::vector<float>> get_inverse(
     std::vector<std::vector<float>> temp(N);
     for (size_t row = 0; row < N; row++) {
         std::vector<float> v(N);
-        for (size_t col = 0; col < N; col++)
+        for (size_t col = 0; col < N; col++) {
             v[col] = static_cast<float>(A[row][col]);
+        }
         temp[row] = v;
     }
 
@@ -267,13 +275,14 @@ std::vector<std::vector<float>> get_inverse(
         }
 
         // set diagonal to 1
-        float divisor = static_cast<float>(temp[row][row]);
+        auto divisor = static_cast<float>(temp[row][row]);
         temp[row] = temp[row] / divisor;
         inverse[row] = inverse[row] / divisor;
         // Row transformations
         for (size_t row2 = 0; row2 < N; row2++) {
-            if (row2 == row)
+            if (row2 == row) {
                 continue;
+            }
             float factor = temp[row2][row];
             temp[row2] = temp[row2] - factor * temp[row];
             inverse[row2] = inverse[row2] - factor * inverse[row];
@@ -313,9 +322,10 @@ std::vector<float> fit_OLS_regressor(std::vector<std::vector<T>> const &X,
                                      std::vector<T> const &Y) {
     // NxF
     std::vector<std::vector<T>> X2 = X;
-    for (size_t i = 0; i < X2.size(); i++)
+    for (size_t i = 0; i < X2.size(); i++) {
         // add Y-intercept -> Nx(F+1)
         X2[i].push_back(1);
+    }
     // (F+1)xN
     std::vector<std::vector<T>> Xt = get_transpose(X2);
     // (F+1)x(F+1)
@@ -347,8 +357,9 @@ std::vector<float> predict_OLS_regressor(std::vector<std::vector<T>> const &X,
     for (size_t rows = 0; rows < X.size(); rows++) {
         // -> start with constant term
         result[rows] = beta[X[0].size()];
-        for (size_t cols = 0; cols < X[0].size(); cols++)
+        for (size_t cols = 0; cols < X[0].size(); cols++) {
             result[rows] += beta[cols] * X[rows][cols];
+        }
     }
     // Nx1
     return result;
@@ -375,8 +386,9 @@ void ols_test() {
     // predicted regression outputs
     std::vector<float> out1 = predict_OLS_regressor(test_data1, beta1);
     // compare predicted results are within +-0.01 limit of expected
-    for (size_t rows = 0; rows < out1.size(); rows++)
+    for (size_t rows = 0; rows < out1.size(); rows++) {
         assert(std::abs(out1[rows] - expected1[rows]) < 0.01);
+    }
     std::cout << "passed\n";
 
     /* test function = x^3 + x^2 - 100 */
@@ -396,8 +408,9 @@ void ols_test() {
     // predicted regression outputs
     std::vector<float> out2 = predict_OLS_regressor(test_data2, beta2);
     // compare predicted results are within +-0.01 limit of expected
-    for (size_t rows = 0; rows < out2.size(); rows++)
+    for (size_t rows = 0; rows < out2.size(); rows++) {
         assert(std::abs(out2[rows] - expected2[rows]) < 0.01);
+    }
     std::cout << "passed\n";
 
     std::cout << std::endl;  // ensure test results are displayed on screen
@@ -410,7 +423,7 @@ void ols_test() {
 int main() {
     ols_test();
 
-    size_t N, F;
+    size_t N = 0, F = 0;
 
     std::cout << "Enter number of features: ";
     // number of features = columns
@@ -429,9 +442,10 @@ int main() {
     for (size_t rows = 0; rows < N; rows++) {
         std::vector<float> v(F);
         std::cout << "Sample# " << rows + 1 << ": ";
-        for (size_t cols = 0; cols < F; cols++)
+        for (size_t cols = 0; cols < F; cols++) {
             // get the F features
             std::cin >> v[cols];
+        }
         data[rows] = v;
         // get the corresponding output
         std::cin >> Y[rows];
@@ -440,7 +454,7 @@ int main() {
     std::vector<float> beta = fit_OLS_regressor(data, Y);
     std::cout << std::endl << std::endl << "beta:" << beta << std::endl;
 
-    size_t T;
+    size_t T = 0;
     std::cout << "Enter number of test samples: ";
     // number of test sample inputs
     std::cin >> T;
