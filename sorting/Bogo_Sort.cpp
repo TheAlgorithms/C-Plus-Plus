@@ -7,7 +7,7 @@
 //Randomized version is implemented below.
 #include <iostream>
 #include <vector>
-#include <assert.h>
+#include <cassert>
 //This function checks if array is sorted
 bool is_sorted(std::vector <int> arr)
 {
@@ -24,9 +24,9 @@ bool is_sorted(std::vector <int> arr)
 //This function prints the array
 void show_array(std::vector <int> arr)
 {
-    for(int i = 0; i < arr.size(); i ++)
+    for(int x : arr)
     {
-        std::cout << arr[i] << ' ';
+        std::cout << x << ' ';
     }
     std::cout << '\n';
 }
