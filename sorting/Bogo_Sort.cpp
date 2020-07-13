@@ -11,6 +11,7 @@
 #include <vector>
 using namespace std;
 
+//Check if array is sorted
 bool isSorted(vector <int> arr)
 {
     for(int i = 0; i < arr.size() - 1; i ++)
@@ -22,7 +23,9 @@ bool isSorted(vector <int> arr)
     }
     return true;
 }
-void ShowArray(vector <int> arr)
+
+//Prints the array
+void show_array(vector <int> arr)
 {
     for(int i = 0; i < arr.size(); i ++)
     {
@@ -30,6 +33,8 @@ void ShowArray(vector <int> arr)
     }
     cout << endl;
 }
+
+//Shuffles the array randomly
 void shuffle(vector <int> &arr)
 {
     for(int i = 0; i < arr.size(); i ++)
@@ -37,30 +42,24 @@ void shuffle(vector <int> &arr)
         swap(arr[i], arr[rand() % arr.size()]);
     }
 }
-void randomized_BogoSort(vector <int> arr)
+
+//Randomized bogo sort
+void randomized_BogoSort(vector <int> &arr)
 {
+    //Untill array is not sorted
     while(!isSorted(arr))
     {
-        shuffle(arr);
+        shuffle(arr);//Shuffle the array
     }
-    cout << "Sorted Array (Randomized Bogosort) : " ;
-    ShowArray(arr);
 }
 
+//Driver Code
 int main()
 {
-    int size = 0;
-    cout << "Enter Array Size : ";
-    cin >> size;
-
-    vector <int> arr(size);
-    cout << "Enter Elements one by one : ";
-    for(int &x : arr)
-    {
-        cin >> x;
-    }
-
+    int size = 5;
+    vector <int> arr = {3, 7, 10, 4, 1};
     randomized_BogoSort(arr);
-
+    cout << "Sorted Array (Randomized Bogosort) : " ;
+    show_array(arr);
     return 0;
 }
