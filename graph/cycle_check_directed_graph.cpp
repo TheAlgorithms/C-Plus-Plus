@@ -8,13 +8,13 @@
  *
  */
 
-#include <iostream>       // for std::cout
-#include <queue>          // for std::queue
-#include <stdexcept>      // for throwing errors
-#include <type_traits>    // for std::remove_reference
-#include <unordered_map>  // for std::unordered_map
-#include <utility>        // for std::move
-#include <vector>         // for std::vector
+#include <iostream>     // for std::cout
+#include <map>          // for std::map
+#include <queue>        // for std::queue
+#include <stdexcept>    // for throwing errors
+#include <type_traits>  // for std::remove_reference
+#include <utility>      // for std::move
+#include <vector>       // for std::vector
 
 /**
  * Implementation of non-weighted directed edge of a graph.
@@ -42,7 +42,7 @@ struct Edge {
         : src(source), dest(destination) {}
 };
 
-using AdjList = std::unordered_map<unsigned int, std::vector<unsigned int>>;
+using AdjList = std::map<unsigned int, std::vector<unsigned int>>;
 
 /**
  * Implementation of graph class.
@@ -176,12 +176,13 @@ class CycleCheck {
 
         // If the node has children, then recursively visit all children of the
         // node.
-        if (auto const& it = adjList.find(node); it != adjList.end()) {
+        auto const it = adjList.find(node);
+        if (it != adjList.end()) {
             for (auto child : it->second) {
                 // If state of child node is "not_visited", evaluate that child
                 // for presence of cycle.
-                if (auto state_of_child = (*state)[child];
-                    state_of_child == not_visited) {
+                auto state_of_child = (*state)[child];
+                if (state_of_child == not_visited) {
                     if (isCyclicDFSHelper(adjList, state, child)) {
                         return true;
                     }
@@ -210,6 +211,8 @@ class CycleCheck {
      * @return true if a cycle is detected, else false.
      */
     static bool isCyclicDFS(Graph const& graph) {
+        auto vertices = graph.getVertices();
+
         /** State of the node.
          *
          * It is a vector of "nodeStates" which represents the state node is in.
@@ -217,10 +220,10 @@ class CycleCheck {
          *
          * Initially, all nodes are in "not_visited" state.
          */
-        std::vector<nodeStates> state(graph.getVertices(), not_visited);
+        std::vector<nodeStates> state(vertices, not_visited);
 
         // Start visiting each node.
-        for (auto node = 0; node < graph.getVertices(); node++) {
+        for (unsigned int node = 0; node < vertices; node++) {
             // If a node is not visited, only then check for presence of cycle.
             // There is no need to check for presence of cycle for a visited
             // node as it has already been checked for presence of cycle.
@@ -245,18 +248,20 @@ class CycleCheck {
      * @return true if a cycle is detected, else false.
      */
     static bool isCyclicBFS(Graph const& graph) {
-        AdjList graphAjdList = graph.getAdjList();
+        auto graphAjdList = graph.getAdjList();
+        auto vertices = graph.getVertices();
 
-        std::vector<unsigned int> indegree(graph.getVertices(), 0);
+        std::vector<unsigned int> indegree(vertices, 0);
         // Calculate the indegree i.e. the number of incident edges to the node.
-        for (auto const& [parent, children] : graphAjdList) {
+        for (auto const& list : graphAjdList) {
+            auto children = list.second;
             for (auto const& child : children) {
                 indegree[child]++;
             }
         }
 
         std::queue<unsigned int> can_be_solved;
-        for (auto node = 0; node < graph.getVertices(); node++) {
+        for (unsigned int node = 0; node < vertices; node++) {
             // If a node doesn't have any input edges, then that node will
             // definately not result in a cycle and can be visited safely.
             if (!indegree[node]) {
@@ -265,17 +270,18 @@ class CycleCheck {
         }
 
         // Vertices that need to be traversed.
-        auto remain = graph.getVertices();
+        auto remain = vertices;
         // While there are safe nodes that we can visit.
         while (!can_be_solved.empty()) {
-            auto front = can_be_solved.front();
+            auto solved = can_be_solved.front();
             // Visit the node.
             can_be_solved.pop();
             // Decrease number of nodes that need to be traversed.
             remain--;
 
             // Visit all the children of the visited node.
-            if (auto it = graphAjdList.find(front); it != graphAjdList.end()) {
+            auto it = graphAjdList.find(solved);
+            if (it != graphAjdList.end()) {
                 for (auto child : it->second) {
                     // Check if we can visited the node safely.
                     if (--indegree[child] == 0) {
