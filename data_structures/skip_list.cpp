@@ -181,7 +181,7 @@ class SkipList {
         }
     }
 
-    /*
+    /**
      * Display skip list level
      */
     void displayList() {
