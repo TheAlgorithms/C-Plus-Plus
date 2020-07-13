@@ -1,0 +1,173 @@
+name: Awesome CI Workflow
+
+on: [push, pull_request]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+
+jobs:
+  MainSequence:
+    name: Code Formatter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1 # v2 is broken for git diff
+      - uses: actions/setup-python@v2
+      - name: requirements
+        run: | 
+          sudo apt -qq -y update
+          sudo apt -qq install clang-tidy-10
+        # checks are passing with less errors when used with this version. 
+        # The default installs v6.0 which did not work out well in my tests
+      - name: Setup Git Specs
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - name: Filename Formatter
+        run: |
+          IFS=$'\n'
+          for fname in `find . -type f -name '*.cpp' -o -name '*.cc' -o -name '*.h'`
+          do 
+            echo "${fname}"
+            new_fname=`echo ${fname} | tr ' ' '_'`
+            echo "      ${new_fname}"
+            new_fname=`echo ${new_fname} | tr 'A-Z' 'a-z'`
+            echo "      ${new_fname}"
+            new_fname=`echo ${new_fname} | tr '-' '_'`
+            echo "      ${new_fname}"
+            new_fname=${new_fname/.cc/.cpp}
+            echo "      ${new_fname}"
+            if [ ${fname} != ${new_fname} ]
+            then
+              echo "      ${fname} --> ${new_fname}"
+              git "mv" "${fname}" ${new_fname}
+            fi
+          done
+          git commit -am "formatting filenames $GITHUB_SHA" ||  true
+
+      - name: Update DIRECTORY.md
+        shell: python
+        run: |
+            import os
+            from typing import Iterator
+
+            URL_BASE = "https://github.com/TheAlgorithms/C-Plus-Plus/blob/master"
+            g_output = []
+
+            def good_filepaths(top_dir: str = ".") -> Iterator[str]:
+                cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+                for dirpath, dirnames, filenames in os.walk(top_dir):
+                    dirnames[:] = [d for d in dirnames if d[0] not in "._"]
+                    for filename in filenames:
+                        if os.path.splitext(filename)[1].lower() in cpp_exts:
+                            yield os.path.join(dirpath, filename).lstrip("./")
+
+            def md_prefix(i):
+                return f"{i * '  '}*" if i else "\n##"
+
+            def print_path(old_path: str, new_path: str) -> str:
+                global g_output
+                old_parts = old_path.split(os.sep)
+                for i, new_part in enumerate(new_path.split(os.sep)):
+                    if i + 1 > len(old_parts) or old_parts[i] != new_part:
+                        if new_part:
+                            g_output.append(f"{md_prefix(i)} {new_part.replace('_', ' ').title()}")
+                return new_path
+
+            def build_directory_md(top_dir: str = ".") -> str:
+                global g_output
+                old_path = ""
+                for filepath in sorted(good_filepaths(), key=str.lower):
+                    filepath, filename = os.path.split(filepath)
+                    if filepath != old_path:
+                        old_path = print_path(old_path, filepath)
+                    indent = (filepath.count(os.sep) + 1) if filepath else 0
+                    url = "/".join((URL_BASE, filepath, filename)).replace(" ", "%20")
+                    filename = os.path.splitext(filename.replace("_", " ").title())[0]
+                    g_output.append(f"{md_prefix(indent)} [{filename}]({url})")
+                return "# List of all files\n" + "\n".join(g_output)
+
+            with open("DIRECTORY.md", "w") as out_file:
+                out_file.write(build_directory_md(".") + "\n")
+      - name: Commit DIRECTORY.md
+        run: git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
+      - name: Get file changes
+        run: |
+          git remote -v
+          git branch
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git diff --diff-filter=dr --name-only origin/master > git_diff.txt
+          echo "Files changed-- `cat git_diff.txt`"
+      - name: Configure for static lint checks
+        # compiling first gives clang-tidy access to all the header files and settings used to compile the programs. 
+        # This will check for macros, if any, on linux and not for Windows. But the use of portability checks should 
+        # be able to catch any errors for other platforms.
+        run: cmake -B build -S . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+      - name: Lint modified files
+        shell: python
+        run: |
+          import os
+          import subprocess
+          import sys
+
+          print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
+          with open("git_diff.txt") as in_file:
+            modified_files = sorted(in_file.read().splitlines())
+          print("{} files were modified.".format(len(modified_files)))
+
+          cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+          cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
+          print(f"{len(cpp_files)} C++ files were modified.")
+          if not cpp_files:
+            sys.exit(0)
+
+          subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
+              check=True, text=True, stderr=subprocess.STDOUT)
+          # for cpp_file in cpp_files:
+          #   subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
+          #     check=True, text=True, stderr=subprocess.STDOUT)
+
+          # print("g++:")
+          # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
+          # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
+          # for cpp_file in cpp_files:
+          #   subprocess.run(["g++", cpp_file], check=True, text=True)
+
+          upper_files = [file for file in cpp_files if file != file.lower()]
+          if upper_files:
+            print(f"{len(upper_files)} files contain uppercase characters:")
+            print("\n".join(upper_files) + "\n")
+
+          space_files = [file for file in cpp_files if " " in file or "-" in file]
+          if space_files:
+            print(f"{len(space_files)} files contain space or dash characters:")
+            print("\n".join(space_files) + "\n")
+
+          nodir_files = [file for file in cpp_files if file.count(os.sep) != 1]
+          if nodir_files:
+            print(f"{len(nodir_files)} files are not in one and only one directory:")
+            print("\n".join(nodir_files) + "\n")
+
+          bad_files = len(upper_files + space_files + nodir_files)
+          if bad_files:
+            sys.exit(bad_files)
+      - name: Commit and push changes
+        run: |
+          git diff DIRECTORY.md
+          git commit -am "clang-tidy fixes for $GITHUB_SHA" ||  true
+          git push --force origin HEAD:$GITHUB_REF || true
+
+  build:
+    name: Compile checks
+    runs-on: ${{ matrix.os }}
+    needs: [MainSequence]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: true
+      - run: cmake -B ./build -S .
+      - run: cmake --build build

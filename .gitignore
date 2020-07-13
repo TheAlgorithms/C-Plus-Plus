@@ -33,3 +33,5 @@
 a.out
 *.out
 *.app
+
+build/
