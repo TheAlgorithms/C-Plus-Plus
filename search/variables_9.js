@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['mat_5fsize_4046',['mat_size',['../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54',1,'matrix_exponentiation.cpp']]],
-  ['max_5fiter_4047',['MAX_ITER',['../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1',1,'adaline_learning.cpp']]],
-  ['max_5fiterations_4048',['MAX_ITERATIONS',['../de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d',1,'newton_raphson_method.cpp']]],
-  ['min_5fdistance_4049',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]]
+  ['level_4074',['level',['../d1/d46/classdata__structure_1_1_skip_list.html#ae0c022174510fd9ca1b84d8e996cd1a5',1,'data_structure::SkipList']]]
 ];
