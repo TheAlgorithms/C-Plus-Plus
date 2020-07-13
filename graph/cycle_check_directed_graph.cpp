@@ -101,16 +101,14 @@ class Graph {
      *
      * @return const reference to the adjacency list
      */
-    std::remove_reference_t<AdjList> const& getAdjList() const {
+    std::remove_reference<AdjList>::type const& getAdjList() const {
         return m_adjList;
     }
 
     /**
      * @return number of vertices in the graph.
      */
-    std::remove_reference_t<unsigned int> const& getVertices() const {
-        return m_vertices;
-    }
+    unsigned int getVertices() const { return m_vertices; }
 
     /** Add vertices in the graph.
      *
