@@ -6,11 +6,12 @@
 // and a randomized version that randomly permutes its input. 
 //Randomized version is implemented below.
 #include <iostream>
+#include <vector>
 #include <cassert>
 //This function checks if array is sorted
-bool is_sorted(int *arr, int n)
+bool is_sorted(const std::vector <int> &arr)
 {
-    for(int i = 0; i < n - 1; i ++)
+    for(int i = 0; i < arr.size() - 1; i ++)
     {
         //If any element is greater than element after it than it is not sorted
         if(arr[i] > arr[i + 1])
@@ -21,40 +22,41 @@ bool is_sorted(int *arr, int n)
     return true;
 }
 //This function prints the array
-void show_array(int *arr, int n)
+void show_array(const std::vector <int> &arr)
 {
-    for(int i = 0; i < n; i ++)
+    for(int x : arr)
     {
-        std::cout << arr[i] << ' ';
+        std::cout << x << ' ';
     }
     std::cout << '\n';
 }
 //This function shuffles the array randomly
-void shuffle(int *arr, int n)
+std::vector <int> shuffle(std::vector <int> arr)
 {
-    for(int i = 0; i < n; i ++)
+    for(int i = 0; i < arr.size(); i ++)
     {
         //Swaps i'th  index with random index (less than array size)
-        std::swap(arr[i], arr[rand() % n]);
+        std::swap(arr[i], arr[rand() % arr.size()]);
     }
+    return arr;
 }
 //Randomized bogo sort
-void randomized_bogosort(int *arr, int n)
+std::vector <int> randomized_bogosort(std::vector <int> arr)
 {
     //Untill array is not sorted
-    while(!is_sorted(arr, n))
+    while(!is_sorted(arr))
     {
-        shuffle(arr, n);//Shuffle the array
+        arr = shuffle(arr);//Shuffle the array
     }
+    return arr;
 }
 //Driver Code
 int main()
 {
-    int n = 5; //Size of an array
-    int arr[5] = {3, 7, 10, 4, 1}; // Defining array which we want to sort
-    randomized_bogosort(arr, n); //Callling bogo sort on it
+    std::vector <int> arr = {3, 7, 10, 4, 1}; // Defining array which we want to sort
+    arr = randomized_bogosort(arr); //Callling bogo sort on it
     std::cout << "Sorted Array (Randomized Bogosort) : " ;
-    show_array(arr, n); //Printing sorted array
-    assert(is_sorted(arr, n));//For testing purpose
+    show_array(arr); //Printing sorted array
+    assert(is_sorted(arr));//For testing purpose
     return 0;
 }
