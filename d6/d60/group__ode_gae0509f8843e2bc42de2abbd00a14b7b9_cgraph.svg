@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d6/d60/group__ode.html#gaa197c6b7085ac9ea71abc4c063e6f52f" target="_top" xlink:title="Compute next step approximation using the forward&#45;Euler method.">
+<g id="a_node4"><a xlink:href="../../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723" target="_top" xlink:title="Compute next step approximation using the forward&#45;Euler method.">
 <polygon fill="white" stroke="black" points="118.5,-114.5 118.5,-133.5 217.5,-133.5 217.5,-114.5 118.5,-114.5"/>
 <text text-anchor="middle" x="168" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">forward_euler_step</text>
 </a>

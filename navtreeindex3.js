@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93":[7,0,15,8],
 "db/d82/classlarge__number.html#ac27b399ed872731758ec33ebb102730e":[7,0,15,13],
 "db/d82/classlarge__number.html#ac4fafa6289295419d48d444f0ae4b706":[7,0,15,11],
 "db/d82/classlarge__number.html#ace19126cf343a09efc0010735f6e3a8d":[7,0,15,15],
@@ -118,9 +119,9 @@ var NAVTREEINDEX3 =
 "dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,34,3],
 "dd/d3b/struct_entry.html":[7,0,10],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,10,3],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,10,1],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,10,2],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,10,0],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,10,2],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,10,1],
 "dd/d4f/class_solution.html":[7,0,30],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,30,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,30,0],
@@ -216,11 +217,11 @@ var NAVTREEINDEX3 =
 "de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,1,2],
 "de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73":[8,0,6,1,0],
 "de/dd3/newton__raphson__method_8cpp.html":[8,0,7,8],
-"de/dd3/newton__raphson__method_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[8,0,7,8,0],
-"de/dd3/newton__raphson__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14":[8,0,7,8,1],
-"de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[8,0,7,8,2],
-"de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386":[8,0,7,8,3],
-"de/dd3/newton__raphson__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,8,4],
+"de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[8,0,7,8,0],
+"de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386":[8,0,7,8,1],
+"de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d":[8,0,7,8,4],
+"de/dd3/newton__raphson__method_8cpp.html#a75f355966e0a97665eaf5a4c79baa7af":[8,0,7,8,3],
+"de/dd3/newton__raphson__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,8,2],
 "de/de4/fibonacci__large_8cpp.html":[8,0,6,12],
 "de/de4/fibonacci__large_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,6,12,1],
 "de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db":[8,0,6,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "dir_074119ce3a874b57120c49a0cc4bb5ad.html":[8,0,10],
 "dir_12552d7fa429bf94a2e32e5cf39f7e69.html":[8,0,3],
 "dir_19b2bf9199a15c634a08b1ede1dd896a.html":[8,0,11],
-"dir_296d53ceaeaa7e099814a6def439fe8a.html":[8,0,6],
-"dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html":[8,0,1]
+"dir_296d53ceaeaa7e099814a6def439fe8a.html":[8,0,6]
 };

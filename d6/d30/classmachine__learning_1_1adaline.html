@@ -115,11 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab11242d9ad5b03a75911e29b04f78fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e3c6c037b67895014414c5d75465e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">fit</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; &amp;x, const int &amp;y)</td></tr>
 <tr class="separator:a74e3c6c037b67895014414c5d75465e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1c7cd34252a9ece5bbe7ba36799044"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
-<tr class="memitem:a9f1c7cd34252a9ece5bbe7ba36799044"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a9f1c7cd34252a9ece5bbe7ba36799044">fit</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; const (&amp;X)[N], const int *y)</td></tr>
-<tr class="separator:a9f1c7cd34252a9ece5bbe7ba36799044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082f758fb55fe19f22b3df66f89b2325"><td class="memItemLeft" align="right" valign="top"><a id="a082f758fb55fe19f22b3df66f89b2325"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>activation</b> (double x)</td></tr>
+<tr class="memitem:a8d61f9ed872eef26bca39388cbda6a91"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a8d61f9ed872eef26bca39388cbda6a91"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a8d61f9ed872eef26bca39388cbda6a91">fit</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;, N &gt; const &amp;X, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; const &amp;Y)</td></tr>
+<tr class="separator:a8d61f9ed872eef26bca39388cbda6a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082f758fb55fe19f22b3df66f89b2325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/classmachine__learning_1_1adaline.html#a082f758fb55fe19f22b3df66f89b2325">activation</a> (double x)</td></tr>
 <tr class="separator:a082f758fb55fe19f22b3df66f89b2325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -183,7 +182,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -195,31 +194,68 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        : <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>(<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>), <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>(<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a> &lt;= 0) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;learning rate should be positive and nonzero&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a>(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            num_features +</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            1);  <span class="comment">// additional weight is for the constant bias term</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// initialize with random weights in the range [-50, 49]</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] = 1.f;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// weights[i] = (static_cast&lt;double&gt;(std::rand() % 100) - 50);</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        : <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>(<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a>), <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>(<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a> &lt;= 0) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;learning rate should be positive and nonzero&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a>(EXIT_FAILURE);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a>(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            num_features +</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            1);  <span class="comment">// additional weight is for the constant bias term</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// initialize with random weights in the range [-50, 49]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> &amp;weight : <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>) weight = 1.f;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// weights[i] = (static_cast&lt;double&gt;(std::rand() % 100) - 50);</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a0acbe32aaab897e7939e5b0454035b8c_cgraph.svg" width="347" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a0acbe32aaab897e7939e5b0454035b8c_cgraph.svg" width="303" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a082f758fb55fe19f22b3df66f89b2325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082f758fb55fe19f22b3df66f89b2325">&#9670;&nbsp;</a></span>activation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int machine_learning::adaline::activation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Defines activation function as Heaviside's step function. </p><p class="formulaDsp">
+\[ f(x) = \begin{cases} -1 &amp; \forall x \le 0\\ 1 &amp; \forall x &gt; 0 \end{cases} \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>input value to apply activation on </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>activation output </dd></dl>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;{ <span class="keywordflow">return</span> x &gt; 0 ? 1 : -1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ac8a9c2aaaa63b0f27ea176857e1e7d56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8a9c2aaaa63b0f27ea176857e1e7d56">&#9670;&nbsp;</a></span>check_size_match()</h2>
 
@@ -252,16 +288,16 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> size matches </dd>
 <dd>
 <code>false</code> size does not match </dd></dl>
-<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                      {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> (x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != (<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1)) {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;Number of features in x does not match the feature &quot;</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                         <span class="stringliteral">&quot;dimension in model!&quot;</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                      {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span> (x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() != (<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1)) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;Number of features in x does not match the feature &quot;</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                         <span class="stringliteral">&quot;dimension in model!&quot;</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -304,47 +340,48 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Update the weights of the model using supervised learning for one feature vector</p><dl class="params"><dt>Parameters</dt><dd>
+<p>Update the weights of the model using supervised learning for one feature vector </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>feature vector</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>feature vector </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>known output value </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>correction factor </dd></dl>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                         {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x))</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">/* output of the model with current weights */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">int</span> p = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3">predict</a>(x);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">int</span> prediction_error = y - p;  <span class="comment">// error in estimation</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">double</span> correction_factor = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a> * prediction_error;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">/* update each weight, the last weight is the bias term */</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] += correction_factor * x[i];</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()] += correction_factor;  <span class="comment">// update bias</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> correction_factor;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                         {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x)) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">/* output of the model with current weights */</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">int</span> p = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3">predict</a>(x);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">int</span> prediction_error = y - p;  <span class="comment">// error in estimation</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">double</span> correction_factor = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">eta</a> * prediction_error;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">/* update each weight, the last weight is the bias term */</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i] += correction_factor * x[i];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()] += correction_factor;  <span class="comment">// update bias</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> correction_factor;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a74e3c6c037b67895014414c5d75465e5_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a74e3c6c037b67895014414c5d75465e5_cgraph.svg" width="100%" height="577"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a9f1c7cd34252a9ece5bbe7ba36799044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1c7cd34252a9ece5bbe7ba36799044">&#9670;&nbsp;</a></span>fit() <span class="overload">[2/2]</span></h2>
+<a id="a8d61f9ed872eef26bca39388cbda6a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d61f9ed872eef26bca39388cbda6a91">&#9670;&nbsp;</a></span>fit() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int N&gt; </div>
+template&lt;size_t N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -352,14 +389,14 @@ template&lt;int N&gt; </div>
         <tr>
           <td class="memname">void machine_learning::adaline::fit </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt; const (&amp;)&#160;</td>
-          <td class="paramname"><em>X</em>[N], </td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; double &gt;, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>Y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -373,43 +410,49 @@ template&lt;int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Update the weights of the model using supervised learning for an array of vectors.</p><dl class="params"><dt>Parameters</dt><dd>
+<p>Update the weights of the model using supervised learning for an array of vectors. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">X</td><td>array of feature vector</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">X</td><td>array of feature vector </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>known output value for each feature vector </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                                            {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">double</span> avg_pred_error = 1.f;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">int</span> iter;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">for</span> (iter = 0; (iter &lt; MAX_ITER) &amp;&amp; (avg_pred_error &gt; <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;             iter++) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            avg_pred_error = 0.f;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">// perform fit for each sample</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordtype">double</span> err = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">fit</a>(X[i], y[i]);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                avg_pred_error += std::abs(err);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            avg_pred_error /= N;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="comment">// Print updates every 200th iteration</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="comment">// if (iter % 100 == 0)</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tIter &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;: Training weights: &quot;</span> &lt;&lt; *<span class="keyword">this</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;\tAvg error: &quot;</span> &lt;&lt; avg_pred_error &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (iter &lt; MAX_ITER)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Converged after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Did not converge after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                        {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordtype">double</span> avg_pred_error = 1.f;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">int</span> iter = 0;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">for</span> (iter = 0; (iter &lt; <a class="code" href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a>) &amp;&amp; (avg_pred_error &gt; <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">accuracy</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;             iter++) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            avg_pred_error = 0.f;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">// perform fit for each sample</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordtype">double</span> err = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">fit</a>(X[i], Y[i]);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                avg_pred_error += std::abs(err);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            avg_pred_error /= N;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">// Print updates every 200th iteration</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="comment">// if (iter % 100 == 0)</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tIter &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;: Training weights: &quot;</span> &lt;&lt; *<span class="keyword">this</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;\tAvg error: &quot;</span> &lt;&lt; avg_pred_error &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span> (iter &lt; <a class="code" href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a>) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Converged after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Did not converge after &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot; iterations.&quot;</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                      &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_a8d61f9ed872eef26bca39388cbda6a91_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ab11242d9ad5b03a75911e29b04f78fd3"></a>
@@ -453,24 +496,26 @@ template&lt;int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>model prediction output </dd></dl>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x))</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">double</span> y = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/back.html">back</a>();  <span class="comment">// assign bias value</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// for (int i = 0; i &lt; x.size(); i++) y += x[i] * weights[i];</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        y = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a>(x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), y);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span> (out != <span class="keyword">nullptr</span>)  <span class="comment">// if out variable is provided</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            *out = y;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> activation(y);  <span class="comment">// quantizer: apply ADALINE threshold function</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">check_size_match</a>(x)) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">double</span> y = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/back.html">back</a>();  <span class="comment">// assign bias value</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// for (int i = 0; i &lt; x.size(); i++) y += x[i] * weights[i];</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        y = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a>(x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), x.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), y);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (out != <span class="keyword">nullptr</span>) {  <span class="comment">// if out variable is provided</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            *out = y;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a082f758fb55fe19f22b3df66f89b2325">activation</a>(y);  <span class="comment">// quantizer: apply ADALINE threshold function</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_ab11242d9ad5b03a75911e29b04f78fd3_cgraph.svg" width="567" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d30/classmachine__learning_1_1adaline_ab11242d9ad5b03a75911e29b04f78fd3_cgraph.svg" width="567" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -511,16 +556,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Operator to print the weights of the model </p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            out &lt;&lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i];</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (i &lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                out &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            out &lt;&lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>[i];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (i &lt; ada.<a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">weights</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - 1) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                out &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -532,17 +578,19 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="ainner_product_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html">std::inner_product</a></div><div class="ttdeci">T inner_product(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; double &gt;</a></div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:112</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:119</div></div>
 <div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/back.html">std::vector::back</a></div><div class="ttdeci">T back(T... args)</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ab11242d9ad5b03a75911e29b04f78fd3"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3">machine_learning::adaline::predict</a></div><div class="ttdeci">int predict(const std::vector&lt; double &gt; &amp;x, double *out=nullptr)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:92</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ac8a9c2aaaa63b0f27ea176857e1e7d56"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">machine_learning::adaline::check_size_match</a></div><div class="ttdeci">bool check_size_match(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:176</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ab11242d9ad5b03a75911e29b04f78fd3"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3">machine_learning::adaline::predict</a></div><div class="ttdeci">int predict(const std::vector&lt; double &gt; &amp;x, double *out=nullptr)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:95</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a082f758fb55fe19f22b3df66f89b2325"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a082f758fb55fe19f22b3df66f89b2325">machine_learning::adaline::activation</a></div><div class="ttdeci">int activation(double x)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:186</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_ac8a9c2aaaa63b0f27ea176857e1e7d56"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56">machine_learning::adaline::check_size_match</a></div><div class="ttdeci">bool check_size_match(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:196</div></div>
+<div class="ttc" id="agroup__machine__learning_html_ga5118e5cbc4f0886e27b3a7a2544dded1"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a></div><div class="ttdeci">constexpr int MAX_ITER</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:40</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a28160d17e492597a2f112e0d38551cda"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">machine_learning::adaline::eta</a></div><div class="ttdeci">const double eta</div><div class="ttdoc">learning rate of the algorithm</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:187</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a4cd8fe438032fedaa66f93bfd66f5492"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">machine_learning::adaline::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdoc">weights of the neural network</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:189</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a28160d17e492597a2f112e0d38551cda"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda">machine_learning::adaline::eta</a></div><div class="ttdeci">const double eta</div><div class="ttdoc">learning rate of the algorithm</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:207</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_a4cd8fe438032fedaa66f93bfd66f5492"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492">machine_learning::adaline::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdoc">weights of the neural network</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:209</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1adaline_html_aa23d60262f917f35836ef4b1c1d9f7d3"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">machine_learning::adaline::accuracy</a></div><div class="ttdeci">const double accuracy</div><div class="ttdoc">model fit convergence accuracy</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:188</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1adaline_html_aa23d60262f917f35836ef4b1c1d9f7d3"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#aa23d60262f917f35836ef4b1c1d9f7d3">machine_learning::adaline::accuracy</a></div><div class="ttdeci">const double accuracy</div><div class="ttdoc">model fit convergence accuracy</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:208</div></div>
 <div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

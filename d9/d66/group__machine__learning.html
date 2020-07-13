@@ -94,7 +94,8 @@ $(document).ready(function(){initNavTree('d9/d66/group__machine__learning.html',
 <a href="#files">Files</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Machine Learning Algorithms</div>  </div>
 </div><!--header-->
@@ -118,18 +119,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:d8/d77/namespacemachine__learning"><td class="mdescLeft">&#160;</td><td class="mdescRight">Machine learning algorithms. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gacd517c6f195c75b9dd0f3aad65326f3b"><td class="memItemLeft" align="right" valign="top"><a id="gacd517c6f195c75b9dd0f3aad65326f3b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ITER</b>&#160;&#160;&#160;500</td></tr>
-<tr class="separator:gacd517c6f195c75b9dd0f3aad65326f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga525335710b53cb064ca56b936120431e"><td class="memItemLeft" align="right" valign="top"><a id="ga525335710b53cb064ca56b936120431e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_USE_MATH_DEFINES</b></td></tr>
-<tr class="separator:ga525335710b53cb064ca56b936120431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga525335710b53cb064ca56b936120431e"><td class="memItemLeft" align="right" valign="top"><a id="ga525335710b53cb064ca56b936120431e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_USE_MATH_DEFINES</b></td></tr>
-<tr class="separator:ga525335710b53cb064ca56b936120431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf5ce14f026d6d231bef29161bac2b485"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a> (double a, double b)</td></tr>
@@ -140,6 +129,11 @@ Functions</h2></td></tr>
 <tr class="separator:gab53c14440b2b2dd3172c66afc5c2f63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72699c805c19a6cc47a937a6f3378afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa">save_nd_data</a> (const char *fname, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt;&gt; &amp;X)</td></tr>
 <tr class="separator:ga72699c805c19a6cc47a937a6f3378afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5118e5cbc4f0886e27b3a7a2544dded1"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a> = 500</td></tr>
+<tr class="separator:ga5118e5cbc4f0886e27b3a7a2544dded1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -182,9 +176,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>random number in the range \([a,b]\) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                   {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ((b - a) * (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100) / 100.f) + a;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                   {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> ((b - a) * (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100) / 100.f) + a;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -241,23 +235,23 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    val[0] = INFINITY;  <span class="comment">// initial min value</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> N = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {  <span class="comment">// traverse each x-index</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">auto</span> result = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(X[i]));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">double</span> d_min = *result;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">int</span> j = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), result);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (d_min &lt; val[0]) {  <span class="comment">// if a lower value is found</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                               <span class="comment">// save the value and its index</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            x_idx[0] = i;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            y_idx[0] = j;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            val[0] = d_min;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    val[0] = INFINITY;  <span class="comment">// initial min value</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">size_t</span> N = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {  <span class="comment">// traverse each x-index</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">auto</span> result = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(X[i]));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">double</span> d_min = *result;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/ptrdiff_t.html">std::ptrdiff_t</a> j = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(X[i]), result);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (d_min &lt; val[0]) {  <span class="comment">// if a lower value is found</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                               <span class="comment">// save the value and its index</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            x_idx[0] = i;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            y_idx[0] = j;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            val[0] = d_min;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -303,37 +297,40 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>0 if all ok </dd>
 <dd>
 -1 if file creation failed </dd></dl>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                          {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">size_t</span> num_points = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">size_t</span> num_features = X[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (!fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// error with opening file to write</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// for each point in the array</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_points; i++) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// for each feature in the array</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_features; j++) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            fp &lt;&lt; X[i][j];             <span class="comment">// print the feature value</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (j &lt; num_features - 1)  <span class="comment">// if not the last feature</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                fp &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;             <span class="comment">// suffix comma</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_points - 1)  <span class="comment">// if not the last row</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            fp &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;          <span class="comment">// start a new line</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                          {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">size_t</span> num_points = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">size_t</span> num_features = X[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (!fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// error with opening file to write</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strerror.html">std::strerror</a>(errno) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// for each point in the array</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_points; i++) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// for each feature in the array</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_features; j++) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            fp &lt;&lt; X[i][j];               <span class="comment">// print the feature value</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (j &lt; num_features - 1) {  <span class="comment">// if not the last feature</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                fp &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;               <span class="comment">// suffix comma</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_points - 1) {  <span class="comment">// if not the last row</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            fp &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;            <span class="comment">// start a new line</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga6c606bc85a3e9fd9d010f874ad760336_cgraph.svg" width="314" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d66/group__machine__learning_ga6c606bc85a3e9fd9d010f874ad760336_cgraph.svg" width="314" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -375,33 +372,35 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>0 if all ok </dd>
 <dd>
 -1 if file creation failed </dd></dl>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                          {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">size_t</span> num_points = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">size_t</span> num_features = X[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// error with opening file to write</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// for each point in the array</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_points; i++) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// for each feature in the array</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_features; j++) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            fp &lt;&lt; X[i][j];             <span class="comment">// print the feature value</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (j &lt; num_features - 1)  <span class="comment">// if not the last feature</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                fp &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;             <span class="comment">// suffix comma</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_points - 1)  <span class="comment">// if not the last row</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            fp &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;          <span class="comment">// start a new line</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                          {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">size_t</span> num_points = X.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();       <span class="comment">// number of rows</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">size_t</span> num_features = X[0].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of columns</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">open</a>(fname);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (!fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// error with opening file to write</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;Error opening file &quot;</span> &lt;&lt; fname &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// for each point in the array</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_points; i++) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// for each feature in the array</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_features; j++) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            fp &lt;&lt; X[i][j];               <span class="comment">// print the feature value</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (j &lt; num_features - 1) {  <span class="comment">// if not the last feature</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                fp &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;               <span class="comment">// suffix comma</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (i &lt; num_points - 1) {  <span class="comment">// if not the last row</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            fp &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;            <span class="comment">// start a new line</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    fp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html">close</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -411,10 +410,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga5118e5cbc4f0886e27b3a7a2544dded1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5118e5cbc4f0886e27b3a7a2544dded1">&#9670;&nbsp;</a></span>MAX_ITER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int MAX_ITER = 500</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Maximum number of iterations to learn </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="adistance_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/distance.html">std::distance</a></div><div class="ttdeci">T distance(T... args)</div></div>
+<div class="ttc" id="astrerror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strerror.html">std::strerror</a></div><div class="ttdeci">T strerror(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="amin_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a></div><div class="ttdeci">T min_element(T... args)</div></div>
@@ -422,6 +446,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aopen_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html">std::ofstream::open</a></div><div class="ttdeci">T open(T... args)</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="aptrdiff_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/ptrdiff_t.html">std::ptrdiff_t</a></div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
 <!-- start footer part -->

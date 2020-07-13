@@ -119,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af3adf7b092a87868917ee5fb4255192b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">exact_solution</a> (const double &amp;x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y)</td></tr>
 <tr class="memdesc:af3adf7b092a87868917ee5fb4255192b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact solution of the problem. Used for solution comparison.  <a href="../../db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">More...</a><br /></td></tr>
 <tr class="separator:af3adf7b092a87868917ee5fb4255192b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa197c6b7085ac9ea71abc4c063e6f52f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d60/group__ode.html#gaa197c6b7085ac9ea71abc4c063e6f52f">forward_euler_step</a> (const double dx, const double &amp;x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *dy)</td></tr>
-<tr class="memdesc:gaa197c6b7085ac9ea71abc4c063e6f52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step approximation using the forward-Euler method.  <a href="../../d6/d60/group__ode.html#gaa197c6b7085ac9ea71abc4c063e6f52f">More...</a><br /></td></tr>
-<tr class="separator:gaa197c6b7085ac9ea71abc4c063e6f52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723">forward_euler_step</a> (const double dx, const double x, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *dy)</td></tr>
+<tr class="memdesc:ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step approximation using the forward-Euler method.  <a href="../../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723">More...</a><br /></td></tr>
+<tr class="separator:ga195d23bbdfcb80e83c9cda45c9ad5723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0509f8843e2bc42de2abbd00a14b7b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9">forward_euler</a> (double dx, double x0, double x_max, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray</a>&lt; double &gt; *y, bool save_to_file=false)</td></tr>
 <tr class="memdesc:gae0509f8843e2bc42de2abbd00a14b7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute approximation using the forward-Euler method in the given limits.  <a href="../../d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9">More...</a><br /></td></tr>
 <tr class="separator:gae0509f8843e2bc42de2abbd00a14b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,29 +218,29 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main Function </p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                 {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">double</span> X0 = 0.f;                       <span class="comment">/* initial value of x0 */</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">double</span> X_MAX = 10.F;                   <span class="comment">/* upper limit of integration */</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> Y0 = {1.f, 0.f}; <span class="comment">/* initial value Y = y(x = x_0) */</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">double</span> step_size;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span> (argc == 1) {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the step size: &quot;</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; step_size;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// use commandline argument as independent variable step size</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        step_size = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[1]);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// get approximate solution</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">double</span> total_time = <a class="code" href="../../d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9">forward_euler</a>(step_size, X0, X_MAX, &amp;Y0, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tTime = &quot;</span> &lt;&lt; total_time &lt;&lt; <span class="stringliteral">&quot; ms\n&quot;</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">/* compute exact solution for comparion */</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="../../db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f">save_exact_solution</a>(X0, X_MAX, step_size, Y0);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                 {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">double</span> X0 = 0.f;                    <span class="comment">/* initial value of x0 */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">double</span> X_MAX = 10.F;                <span class="comment">/* upper limit of integration */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> Y0{1.f, 0.f}; <span class="comment">/* initial value Y = y(x = x_0) */</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">double</span> step_size = NAN;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (argc == 1) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the step size: &quot;</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; step_size;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="comment">// use commandline argument as independent variable step size</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        step_size = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a>(argv[1]);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// get approximate solution</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">double</span> total_time = <a class="code" href="../../d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9">forward_euler</a>(step_size, X0, X_MAX, &amp;Y0, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tTime = &quot;</span> &lt;&lt; total_time &lt;&lt; <span class="stringliteral">&quot; ms\n&quot;</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">/* compute exact solution for comparion */</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="../../db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f">save_exact_solution</a>(X0, X_MAX, step_size, Y0);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -294,8 +294,8 @@ Here is the call graph for this function:</div>
 </dl>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                      {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> omega = 1.F;             <span class="comment">// some const for the problem</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    dy[0][0] = y[0][1];                   <span class="comment">// x dot</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    dy[0][1] = -omega * omega * y[0][0];  <span class="comment">// y dot</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    (*dy)[0] = (*y)[1];                   <span class="comment">// x dot // NOLINT</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    (*dy)[1] = -omega * omega * (*y)[0];  <span class="comment">// y dot // NOLINT</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -347,36 +347,36 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                        {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">double</span> x = X0;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> y = Y0;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp(<span class="stringliteral">&quot;exact.csv&quot;</span>, std::ostream::out);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a>(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Finding exact solution\n&quot;</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t1 = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        fp &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; y.size() - 1; i++) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            fp &lt;&lt; y[i] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        fp &lt;&lt; y[y.size() - 1] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="../../db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">exact_solution</a>(x, &amp;y);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        x += step_size;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    } <span class="keywordflow">while</span> (x &lt;= X_MAX);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t2 = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">double</span> total_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t2 - t1) / CLOCKS_PER_SEC;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tTime = &quot;</span> &lt;&lt; total_time &lt;&lt; <span class="stringliteral">&quot; ms\n&quot;</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    fp.close();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                                        {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">double</span> x = X0;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a> y(Y0);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp(<span class="stringliteral">&quot;exact.csv&quot;</span>, std::ostream::out);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a>(<span class="stringliteral">&quot;Error! &quot;</span>);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Finding exact solution\n&quot;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t1 = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        fp &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; y.size() - 1; i++) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            fp &lt;&lt; y[i] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        fp &lt;&lt; y[y.size() - 1] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="../../db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">exact_solution</a>(x, &amp;y);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        x += step_size;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    } <span class="keywordflow">while</span> (x &lt;= X_MAX);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock_t.html">std::clock_t</a> t2 = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">double</span> total_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t2 - t1) / CLOCKS_PER_SEC;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tTime = &quot;</span> &lt;&lt; total_time &lt;&lt; <span class="stringliteral">&quot; ms\n&quot;</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    fp.close();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -393,7 +393,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aode__forward__euler_8cpp_html_af3adf7b092a87868917ee5fb4255192b"><div class="ttname"><a href="../../db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">exact_solution</a></div><div class="ttdeci">void exact_solution(const double &amp;x, std::valarray&lt; double &gt; *y)</div><div class="ttdoc">Exact solution of the problem. Used for solution comparison.</div><div class="ttdef"><b>Definition:</b> ode_forward_euler.cpp:67</div></div>
 <div class="ttc" id="aatof_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a></div><div class="ttdeci">T atof(T... args)</div></div>
 <div class="ttc" id="aclock_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/clock.html">std::clock</a></div><div class="ttdeci">T clock(T... args)</div></div>
-<div class="ttc" id="aode__forward__euler_8cpp_html_aa13517b8e5de1b75592052db7f7e237f"><div class="ttname"><a href="../../db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f">save_exact_solution</a></div><div class="ttdeci">void save_exact_solution(const double &amp;X0, const double &amp;X_MAX, const double &amp;step_size, const std::valarray&lt; double &gt; &amp;Y0)</div><div class="ttdef"><b>Definition:</b> ode_forward_euler.cpp:152</div></div>
+<div class="ttc" id="aode__forward__euler_8cpp_html_aa13517b8e5de1b75592052db7f7e237f"><div class="ttname"><a href="../../db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f">save_exact_solution</a></div><div class="ttdeci">void save_exact_solution(const double &amp;X0, const double &amp;X_MAX, const double &amp;step_size, const std::valarray&lt; double &gt; &amp;Y0)</div><div class="ttdef"><b>Definition:</b> ode_forward_euler.cpp:153</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>

@@ -1,11 +1,12 @@
 <map id="machine_learning/kohonen_som_trace.cpp" name="machine_learning/kohonen_som_trace.cpp">
-<area shape="rect" id="node1" title="Kohonen self organizing map (data tracing)" alt="" coords="253,5,429,47"/>
+<area shape="rect" id="node1" title="Kohonen self organizing map (data tracing)" alt="" coords="285,5,461,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,80,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,95,163,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="187,95,247,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="271,95,326,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="351,95,417,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="441,95,513,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="538,95,606,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="631,95,689,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="104,95,155,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="179,95,237,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="262,95,322,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="346,95,401,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="425,95,492,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="516,95,588,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="613,95,681,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="705,95,764,121"/>
 </map>

@@ -37,17 +37,17 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="176.5,-114.5 176.5,-133.5 237.5,-133.5 237.5,-114.5 176.5,-114.5"/>
-<text text-anchor="middle" x="207" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::perror</text>
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="180,-114.5 180,-133.5 234,-133.5 234,-114.5 180,-114.5"/>
+<text text-anchor="middle" x="207" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M118.01,-101.02C134.27,-105.27 151.6,-109.79 166.54,-113.69"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="165.9,-117.14 176.46,-116.28 167.67,-110.37 165.9,-117.14"/>
+<path fill="none" stroke="midnightblue" d="M118.01,-101.02C135.6,-105.61 154.44,-110.53 170.15,-114.64"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="169.42,-118.06 179.98,-117.2 171.19,-111.29 169.42,-118.06"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -67,32 +67,32 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/fprintf.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="173,-38.5 173,-57.5 241,-57.5 241,-38.5 173,-38.5"/>
-<text text-anchor="middle" x="207" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::snprintf</text>
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="180.5,-38.5 180.5,-57.5 233.5,-57.5 233.5,-38.5 180.5,-38.5"/>
+<text text-anchor="middle" x="207" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M118.01,-70.98C132.96,-67.08 148.82,-62.93 162.89,-59.26"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="163.99,-62.59 172.78,-56.67 162.22,-55.82 163.99,-62.59"/>
+<path fill="none" stroke="midnightblue" d="M118.01,-70.98C135.73,-66.35 154.72,-61.39 170.5,-57.27"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="171.57,-60.61 180.36,-54.7 169.8,-53.84 171.57,-60.61"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="180.5,-0.5 180.5,-19.5 233.5,-19.5 233.5,-0.5 180.5,-0.5"/>
-<text text-anchor="middle" x="207" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="173.5,-0.5 173.5,-19.5 240.5,-19.5 240.5,-0.5 173.5,-0.5"/>
+<text text-anchor="middle" x="207" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::strerror</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M82.75,-70.95C101.5,-58.68 129.29,-41.41 155,-29 160.05,-26.56 165.5,-24.23 170.9,-22.09"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="172.34,-25.29 180.45,-18.46 169.86,-18.74 172.34,-25.29"/>
+<path fill="none" stroke="midnightblue" d="M82.75,-70.95C101.5,-58.68 129.29,-41.41 155,-29 159.13,-27.01 163.53,-25.08 167.95,-23.28"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="169.51,-26.43 177.55,-19.53 166.96,-19.91 169.51,-26.43"/>
 </g>
 </g>
 </svg>
