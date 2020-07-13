@@ -11,7 +11,7 @@
 #include <iostream>       // for std::cout
 #include <queue>          // for std::queue
 #include <stdexcept>      // for throwing errors
-#include <type_traits>    // for std::remove_reference_t
+#include <type_traits>    // for std::remove_reference
 #include <unordered_map>  // for std::unordered_map
 #include <utility>        // for std::move
 #include <vector>         // for std::vector
