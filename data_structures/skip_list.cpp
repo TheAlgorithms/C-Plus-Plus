@@ -216,4 +216,6 @@ int main() {
     }
 
     lst.displayList();
+    
+    return 0;
 }
