@@ -1,5 +1,4 @@
 /**
- * Copyright 2020
  * @file cycle_check_directed graph.cpp
  *
  * @brief BFS and DFS algorithms to check for cycle in a directed graph.
