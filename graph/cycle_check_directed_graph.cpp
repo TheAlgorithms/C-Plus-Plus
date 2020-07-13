@@ -4,8 +4,7 @@
  *
  * @brief BFS and DFS algorithms to check for cycle in a directed graph.
  *
- * @author Anmol3299
- * contact: mittalanmol22@gmail.com
+ * @author [Anmol3299](mailto:mittalanmol22@gmail.com)
  *
  */
 
@@ -150,6 +149,15 @@ class Graph {
     AdjList m_adjList;
 };
 
+/**
+ * Check if a directed graph has a cycle or not.
+ *
+ * This class provides 2 methods to check for cycle in a directed graph:
+ * isCyclicDFS & isCyclicBFS.
+ *
+ * - isCyclicDFS uses DFS traversal method to check for cycle in a graph.
+ * - isCyclidBFS used BFS traversal method to check for cycle in a graph.
+ */
 class CycleCheck {
  private:
     enum nodeStates : uint8_t { not_visited = 0, in_stack, visited };
