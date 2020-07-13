@@ -7,8 +7,10 @@
 // and a randomized version that randomly permutes its input. 
 //Randomized version is implemented below.
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
+
 bool isSorted(vector <int> arr)
 {
     for(int i = 0; i < arr.size() - 1; i ++)
@@ -30,7 +32,6 @@ void ShowArray(vector <int> arr)
 }
 void shuffle(vector <int> &arr)
 {
-    srand(time(0));
     for(int i = 0; i < arr.size(); i ++)
     {
         swap(arr[i], arr[rand() % arr.size()]);
@@ -42,14 +43,13 @@ void randomized_BogoSort(vector <int> arr)
     {
         shuffle(arr);
     }
-
     cout << "Sorted Array (Randomized Bogosort) : " ;
     ShowArray(arr);
 }
 
 int main()
 {
-    int size;
+    int size = 0;
     cout << "Enter Array Size : ";
     cin >> size;
 
