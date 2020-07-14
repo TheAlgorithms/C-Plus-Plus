@@ -26,7 +26,7 @@ struct node {
     int val{};                   /**< int value of a node struct*/
     std::shared_ptr<node> left;  /**< left subtree pointer */
     std::shared_ptr<node> right; /**< right subtree pointer */
-    ~node() { std::cout << "node: destructor, val = " << val << '\n'; }
+    //~node() { std::cout << "node: destructor, val = " << val << '\n'; }
 };
 
 /** insert a node to tree
@@ -74,28 +74,28 @@ int findMaxInLeftST(node* n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(std::shared_ptr<node>& p, std::shared_ptr<node>& n, int x) {
-    if (n->val == x) {
-        if (n->right == nullptr && n->left == nullptr) {
-            n.reset();  // manual deleted root node
-        } else if (n->right == nullptr) {
-            n = n->left;
+void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
+    if ((*n)->val == x) {
+        if ((*n)->right == nullptr && (*n)->left == nullptr) {
+			(*n).reset();  // manual deleted root node
+        } else if ((*n)->right == nullptr) {
+			(*n) = (*n)->left;
             //   delete n; // no need here,smart pointer no need special delete,
             //   will auto deleted by the pointer reference counter of system
-        } else if (n->left == nullptr) {
-            n = n->right;
+        } else if ((*n)->left == nullptr) {
+			(*n) = (*n)->right;
             //   delete n; // no need here, smart pointer no need special
             //   delete, will auto deleted by the pointer reference counter of
             //   system
         } else {
-            int y = findMaxInLeftST(n->left.get());
-            n->val = y;
-            Remove(n, n->left, y);
+            int y = findMaxInLeftST((*n)->left.get());
+			(*n)->val = y;
+            Remove(n, &(*n)->left, y);
         }
-    } else if (x < n->val) {
-        Remove(n, n->left, x);
+    } else if (x < (*n)->val) {
+        Remove(n, &(*n)->left, x);
     } else {
-        Remove(n, n->right, x);
+        Remove(n, &((*n)->right), x);
     }
 }
 
@@ -205,7 +205,7 @@ void test_tree() {
     // test Remove()
     // node* temp = root.get();
     // Remove(std::move(root), std::move(root), 2);
-    data_structure::BST::Remove(root, root, 2);
+    data_structure::BST::Remove(&root, &root, 2);
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
               << std::endl;
@@ -260,7 +260,7 @@ int main() {
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
             std::cin >> x;
-            data_structure::BST::Remove(root, root, x);
+            data_structure::BST::Remove(&root, &root, x);
             break;
         case 3:
             data_structure::BST::BFT(root.get());
