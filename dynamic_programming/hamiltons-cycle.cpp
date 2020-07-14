@@ -1,9 +1,15 @@
 /**
- * @author vakhokoto
+ * @file
+ * @brief The implementation of hamilton's cycle dynamic solution for vertices number less than 20.
+ * @details 
+ * I use 2^n * n matrix it's and for every [i, j] (i < 2^n and j < n) in the matrix I 
+ * store there if it is possible to get to all vertices on which position in i's binary 
+ * representation is 1 so as j would be the last one.
  * 
- * The implementation of hamilton's cycle dynamic solution for 
- * vertices number less than 20.
-*/
+ * In the the end if any cell in (2^n - 1)th row is true there exists hamiltonian cycle
+ * 
+ * @author [vakhokoto](https://github.com/vakhokoto)
+ */
 #include <iostream>
 #include <vector>
 #include <cassert>
@@ -15,6 +21,8 @@ typedef bool (*test_func_t)(void);
  * 
  * @param n is the number of vertices in the graph
  * @param routes nxn boolean matrix of [i, j] where [i, j] is true if there is a road between from i to j
+ * @return `true` if there is hamiltonian cycle in the graph
+ * @return `false` if there is no hamiltonian cycle in the graph
 */
 bool hamilton_cycle(bool **routes, int n){
     // height of dp array which is 2^n
