@@ -26,11 +26,9 @@ struct node {
     int val{};                   /**< int value of a node struct*/
     std::shared_ptr<node> left;  /**< left subtree pointer */
     std::shared_ptr<node> right; /**< right subtree pointer */
-    node() { }
-	node(int value) { val = value; }
-    ~node() {
-        std::cout << "node: destructor, val = " << val << '\n';
-    }
+    node() {}
+    node(int value) { val = value; }
+    ~node() { std::cout << "node: destructor, val = " << val << '\n'; }
 };
 
 /** insert a node to tree
@@ -39,7 +37,7 @@ struct node {
  * \param[in] x a node with value to be insert
  */
 void Insert(node* n, int x) {
-	assert(n != NULL);
+    assert(n != NULL);
     if (x < n->val) {
         if (n->left == nullptr) {
             n->left = std::shared_ptr<node>(new node);
@@ -78,17 +76,19 @@ int findMaxInLeftST(node* n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(std::shared_ptr<node>& p, std::shared_ptr<node>& n,
-            int x) {
+void Remove(std::shared_ptr<node>& p, std::shared_ptr<node>& n, int x) {
     if (n->val == x) {
         if (n->right == nullptr && n->left == nullptr) {
-            n.reset(); // manual deleted root node
+            n.reset();  // manual deleted root node
         } else if (n->right == nullptr) {
             n = n->left;
-            //   delete n; // no need here,smart pointer no need special delete, will auto deleted by the pointer reference counter of system
+            //   delete n; // no need here,smart pointer no need special delete,
+            //   will auto deleted by the pointer reference counter of system
         } else if (n->left == nullptr) {
             n = n->right;
-            //   delete n; // no need here, smart pointer no need special delete, will auto deleted by the pointer reference counter of system
+            //   delete n; // no need here, smart pointer no need special
+            //   delete, will auto deleted by the pointer reference counter of
+            //   system
         } else {
             int y = findMaxInLeftST(n->left.get());
             n->val = y;
@@ -250,10 +250,10 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-			if (root.get())
-				data_structure::BST::Insert(root.get(), x);
-			else
-				root = std::make_shared<data_structure::BST::node>(x);
+            if (root.get())
+                data_structure::BST::Insert(root.get(), x);
+            else
+                root = std::make_shared<data_structure::BST::node>(x);
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
