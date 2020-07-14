@@ -26,6 +26,11 @@ struct node {
     int val{};                   /**< int value of a node struct*/
     std::shared_ptr<node> left;  /**< left subtree pointer */
     std::shared_ptr<node> right; /**< right subtree pointer */
+    node() { }
+	node(int value) { val = value; }
+    ~node() {
+        std::cout << "node: destructor, val = " << val << '\n';
+    }
 };
 
 /** insert a node to tree
@@ -34,6 +39,7 @@ struct node {
  * \param[in] x a node with value to be insert
  */
 void Insert(node* n, int x) {
+	assert(n != NULL);
     if (x < n->val) {
         if (n->left == nullptr) {
             n->left = std::shared_ptr<node>(new node);
@@ -72,33 +78,17 @@ int findMaxInLeftST(node* n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
+void Remove(std::shared_ptr<node>& p, std::shared_ptr<node>& n,
             int x) {
     if (n->val == x) {
         if (n->right == nullptr && n->left == nullptr) {
-            if (x > p->val) {
-                p->right = nullptr;
-            } else {
-                p->left = nullptr;
-            }
-            n.reset();
-            //   delete n;
+            n.reset(); // manual deleted root node
         } else if (n->right == nullptr) {
-            if (x > p->val) {
-                p->right = n->left;
-            } else {
-                p->left = n->left;
-            }
-            n.reset();
-            //   delete n;
+            n = n->left;
+            //   delete n; // no need here,smart pointer no need special delete, will auto deleted by the pointer reference counter of system
         } else if (n->left == nullptr) {
-            if (x > p->val) {
-                p->right = n->right;
-            } else {
-                p->left = n->right;
-            }
-            n.reset();
-            //   delete n;
+            n = n->right;
+            //   delete n; // no need here, smart pointer no need special delete, will auto deleted by the pointer reference counter of system
         } else {
             int y = findMaxInLeftST(n->left.get());
             n->val = y;
@@ -108,19 +98,6 @@ void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
         Remove(n, n->left, x);
     } else {
         Remove(n, n->right, x);
-    }
-}
-
-/** free memory of all tree nodes.
- * \param[in] n the root node pointer of a tree
- */
-void FreeTreeNodes(const std::shared_ptr<node>& root) {
-    if (root != nullptr) {
-        FreeTreeNodes(std::move(root->left));
-        FreeTreeNodes(std::move(root->right));
-        std::cout << root->val << "  ";
-        root.reset();
-        // delete root; // finaly delete root node
     }
 }
 
@@ -273,7 +250,10 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-            data_structure::BST::Insert(root.get(), x);
+			if (root.get())
+				data_structure::BST::Insert(root.get(), x);
+			else
+				root = std::make_shared<data_structure::BST::node>(x);
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
