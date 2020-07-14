@@ -26,9 +26,9 @@ struct node {
     int val{};                   /**< int value of a node struct*/
     std::shared_ptr<node> left;  /**< left subtree pointer */
     std::shared_ptr<node> right; /**< right subtree pointer */
-    node() {}
-    node(int value) { val = value; }
-    ~node() { std::cout << "node: destructor, val = " << val << '\n'; }
+    ~node() {
+        std::cout << "node: destructor, val = " << val << '\n';
+    }
 };
 
 /** insert a node to tree
@@ -250,10 +250,14 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-            if (root.get())
-                data_structure::BST::Insert(root.get(), x);
-            else
-                root = std::make_shared<data_structure::BST::node>(x);
+			if (root.get())
+				data_structure::BST::Insert(root.get(), x);
+			else {
+				root = std::make_shared<data_structure::BST::node>();
+				root->val = x;
+				root->left = nullptr;
+				root->right = nullptr;
+            }
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
