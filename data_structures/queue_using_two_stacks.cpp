@@ -1,15 +1,14 @@
 #include <bits/stdc++.h>
 
 #include <iostream>
-using namespace std;
 
 class MyQueue {
  private:
-    stack<int> s1, s2;
+    std::stack<int> s1, s2;
 
  public:
     /** Initializes queue. */
-    MyQueue(){};
+    MyQueue() = default;
 
     /** Pushes x to the back of queue. */
     void push(int x);
@@ -35,7 +34,7 @@ int MyQueue::pop() {
         temp = s2.top();
         s2.pop();
     } else {
-        cout << "Queue is empty" << endl;
+        std::cout << "Queue is empty" << std::endl;
     }
     return temp;
 }
@@ -56,7 +55,7 @@ int MyQueue::peek() {
     if (!empty()) {
         temp = s2.top();
     } else {
-        cout << "Queue is empty" << endl;
+        std::cout << "Queue is empty" << std::endl;
     }
     return temp;
 }
@@ -76,8 +75,8 @@ int main() {
     que.push(9);
 
     while (!que.empty()) {
-        cout << que.peek() << endl;
-        cout << que.pop() << endl;
+        std::cout << que.peek() << std::endl;
+        std::cout << que.pop() << std::endl;
     }
 
     return 0;
