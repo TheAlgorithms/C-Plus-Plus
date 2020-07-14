@@ -77,19 +77,19 @@ int findMaxInLeftST(node* n) {
 void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
     if ((*n)->val == x) {
         if ((*n)->right == nullptr && (*n)->left == nullptr) {
-			(*n).reset();  // manual deleted root node
+            (*n).reset();  // manual deleted root node
         } else if ((*n)->right == nullptr) {
-			(*n) = (*n)->left;
+            (*n) = (*n)->left;
             //   delete n; // no need here,smart pointer no need special delete,
             //   will auto deleted by the pointer reference counter of system
         } else if ((*n)->left == nullptr) {
-			(*n) = (*n)->right;
+            (*n) = (*n)->right;
             //   delete n; // no need here, smart pointer no need special
             //   delete, will auto deleted by the pointer reference counter of
             //   system
         } else {
             int y = findMaxInLeftST((*n)->left.get());
-			(*n)->val = y;
+            (*n)->val = y;
             Remove(n, &(*n)->left, y);
         }
     } else if (x < (*n)->val) {
