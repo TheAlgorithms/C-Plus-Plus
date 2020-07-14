@@ -2,8 +2,6 @@
 
 #include "./stack.h"
 
-#define MAX 100
-
 class MyQueue {
  private:
     stack<int> s1, s2;
