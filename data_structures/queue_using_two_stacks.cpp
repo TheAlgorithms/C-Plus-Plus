@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
-
 #include <iostream>
+
+#include "./stack.h"
+
+#define MAX 100
 
 class MyQueue {
  private:
-    std::stack<int> s1, s2;
+    stack<int> s1, s2;
 
  public:
     /** Initializes queue. */
@@ -40,8 +42,8 @@ int MyQueue::pop() {
 }
 
 void MyQueue::rearrange() {
-    if (s2.empty()) {
-        while (!s1.empty()) {
+    if (s2.isEmptyStack()) {
+        while (!s1.isEmptyStack()) {
             int temp = s1.top();
             s1.pop();
             s2.push(temp);
@@ -60,9 +62,10 @@ int MyQueue::peek() {
     return temp;
 }
 
-bool MyQueue::empty() { return s2.empty() && s1.empty(); }
+bool MyQueue::empty() { return s2.isEmptyStack() && s1.isEmptyStack(); }
 
 int main() {
+    // Test queue functionality
     MyQueue que;
 
     que.pop();
