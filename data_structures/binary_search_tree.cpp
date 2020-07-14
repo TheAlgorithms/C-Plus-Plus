@@ -76,7 +76,10 @@ int findMaxInLeftST(node* n) {
  * \param[in] x the int value of a node
  */
 void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
-    assert(*n != nullptr);
+    if (*n == nullptr) {
+        std::cout << "can't find a node with value = " << x << std::endl;
+        return;
+    }
     if ((*n)->val == x) {
         if ((*n)->right == nullptr && (*n)->left == nullptr) {
             (*n).reset();  // manual deleted root node
