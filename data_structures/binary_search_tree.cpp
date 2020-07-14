@@ -81,7 +81,7 @@ void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
             } else {
                 p->left = nullptr;
             }
-            // n.reset(nullptr);
+            n.reset();
             //   delete n;
         } else if (n->right == nullptr) {
             if (x > p->val) {
@@ -89,7 +89,7 @@ void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
             } else {
                 p->left = n->left;
             }
-            // n.reset(nullptr);
+            n.reset();
             //   delete n;
         } else if (n->left == nullptr) {
             if (x > p->val) {
@@ -97,7 +97,7 @@ void Remove(const std::shared_ptr<node>& p, const std::shared_ptr<node>& n,
             } else {
                 p->left = n->right;
             }
-            // n.reset(nullptr);
+            n.reset();
             //   delete n;
         } else {
             int y = findMaxInLeftST(n->left.get());
@@ -119,7 +119,7 @@ void FreeTreeNodes(const std::shared_ptr<node>& root) {
         FreeTreeNodes(std::move(root->left));
         FreeTreeNodes(std::move(root->right));
         std::cout << root->val << "  ";
-        // root.reset(nullptr);
+        root.reset();
         // delete root; // finaly delete root node
     }
 }
