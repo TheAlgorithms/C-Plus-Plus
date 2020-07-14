@@ -1,4 +1,7 @@
 /**
+ * @author [shoniavika](https://github.com/shoniavika)
+ * @file
+ *
  * Implementation of a Queue using two Stacks.
  */
 
