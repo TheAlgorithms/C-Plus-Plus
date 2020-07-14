@@ -22,18 +22,25 @@ class MyQueue {
 
     /** Returns whether the queue is empty. */
     bool empty();
+
+    void rearrange();
 };
 
 void MyQueue::push(int x) { s1.push(x); }
 
 int MyQueue::pop() {
-    MyQueue::peek();
-    int temp = s2.top();
-    s2.pop();
+    rearrange();
+    int temp = 0;
+    if (!empty()) {
+        temp = s2.top();
+        s2.pop();
+    } else {
+        cout << "Queue is empty" << endl;
+    }
     return temp;
 }
 
-int MyQueue::peek() {
+void MyQueue::rearrange() {
     if (s2.empty()) {
         while (!s1.empty()) {
             int temp = s1.top();
@@ -41,13 +48,26 @@ int MyQueue::peek() {
             s2.push(temp);
         }
     }
-    return s2.top();
+}
+
+int MyQueue::peek() {
+    rearrange();
+    int temp = 0;
+    if (!empty()) {
+        temp = s2.top();
+    } else {
+        cout << "Queue is empty" << endl;
+    }
+    return temp;
 }
 
 bool MyQueue::empty() { return s2.empty() && s1.empty(); }
 
 int main() {
     MyQueue que;
+
+    que.pop();
+    que.peek();
 
     que.push(2);
     que.push(5);
