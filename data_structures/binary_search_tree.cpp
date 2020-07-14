@@ -63,7 +63,7 @@ void Insert(node* n, int x) {
  * \return the max node int value
  */
 int findMaxInLeftST(node* n) {
-    while (n->right != nullptr) {
+    while (n && n->right != nullptr) {
         n = n->right.get();
     }
     return n->val;
@@ -76,7 +76,7 @@ int findMaxInLeftST(node* n) {
  * \param[in] x the int value of a node
  */
 void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
-    if (*n == nullptr) {
+    if (n && *n == nullptr) {
         std::cout << "can't find a node with value = " << x << std::endl;
         return;
     }
