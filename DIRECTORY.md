@@ -10,6 +10,9 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
+## Ciphers
+  * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
+
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
@@ -30,6 +33,7 @@
   * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array2.cpp)
   * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linked_list.cpp)
   * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linkedlist.cpp)
+  * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/skip_list.cpp)
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_linked_list.cpp)
@@ -81,6 +85,9 @@
   * [Topological Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort.cpp)
   * [Topological Sort By Kahns Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort_by_kahns_algo.cpp)
 
+## Graphics
+  * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graphics/spirograph.cpp)
+
 ## Greedy Algorithms
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/huffman.cpp)
@@ -98,6 +105,7 @@
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
+  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/ordinary_least_squares_regressor.cpp)
 
 ## Math
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
@@ -145,7 +153,6 @@
   * [Ode Forward Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_forward_euler.cpp)
   * [Ode Midpoint Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_midpoint_euler.cpp)
   * [Ode Semi Implicit Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_semi_implicit_euler.cpp)
-  * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ordinary_least_squares_regressor.cpp)
   * [Qr Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decompose.h)
   * [Qr Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decomposition.cpp)
   * [Qr Eigen Values](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_eigen_values.cpp)
@@ -195,6 +202,7 @@
 ## Search
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
+  * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/fibonacci_search.cpp)
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search.cpp)
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search2.cpp)
