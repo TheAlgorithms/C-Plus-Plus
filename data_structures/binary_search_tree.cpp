@@ -63,14 +63,15 @@ void Insert(node* n, int x) {
  * \return the max node int value
  */
 int findMaxInLeftST(node* n) {
-    int result = -1;  // initial
+    if(n == nullptr) {
+        return -1;
+    }
+
     while (n && n->right != nullptr) {
         n = n->right.get();
     }
-    if (n)
-        result = n->val;
 
-    return result;
+    return n->val;
 }
 
 /** remove a node from tree
@@ -281,6 +282,9 @@ int main() {
         case 6:
             data_structure::BST::Post(root.get());
             break;
+        default:
+            std::cout << "invalid command, exit test!";
+            return 0;
         }
     } while (ch != 0);
 
