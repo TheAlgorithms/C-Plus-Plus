@@ -75,11 +75,10 @@ int findMaxInLeftST(node* n) {
 
 /** remove a node from tree
  *  travesal a tree and find a node ,then delete it.
- * \param[in] p parent node of start node
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
+void Remove(std::shared_ptr<node>* n, int x) {
     if (n && *n == nullptr) {
         std::cout << "can't find a node with value = " << x << std::endl;
         return;
@@ -99,12 +98,12 @@ void Remove(std::shared_ptr<node>* p, std::shared_ptr<node>* n, int x) {
         } else {
             int y = findMaxInLeftST((*n)->left.get());
             (*n)->val = y;
-            Remove(n, &(*n)->left, y);
+            Remove(&(*n)->left, y);
         }
     } else if (x < (*n)->val) {
-        Remove(n, &(*n)->left, x);
+        Remove(&(*n)->left, x);
     } else {
-        Remove(n, &((*n)->right), x);
+        Remove(&((*n)->right), x);
     }
 }
 
@@ -212,7 +211,7 @@ void test_tree() {
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    data_structure::BST::Remove(&root, &root, 2);
+    data_structure::BST::Remove(&root, 2);
 
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
@@ -268,7 +267,7 @@ int main() {
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
             std::cin >> x;
-            data_structure::BST::Remove(&root, &root, x);
+            data_structure::BST::Remove(&root, x);
             break;
         case 3:
             data_structure::BST::BFT(root.get());
