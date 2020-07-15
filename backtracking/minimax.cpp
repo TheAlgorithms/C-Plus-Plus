@@ -8,6 +8,11 @@
 #include <iostream>
 #include <array>
 
+/** 
+ * @namespace backtracking
+ * @brief Backtracking algorithms
+ */
+namespace backtracking {
 /**
  * Check which number is the maximum/minimum in the array
  * @param depth depth of array
@@ -27,6 +32,7 @@ int minimax(int depth, int node_index, bool is_max,
 
     return is_max ? std::max(v1, v2) : std::min(v1, v2);
 }
+} // namespace backtracking
 
 /**
  * Main function
