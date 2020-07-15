@@ -63,7 +63,7 @@ void Insert(node* n, int x) {
  * \return the max node int value
  */
 int findMaxInLeftST(node* n) {
-    if(n == nullptr) {
+    if (n == nullptr) {
         return -1;
     }
 
