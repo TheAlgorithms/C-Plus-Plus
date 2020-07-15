@@ -4,8 +4,9 @@
  */
 #include <iostream>
 
-// created a namespace to ensure all globals and functions are
-// restricted to this file
+/** \namespace
+ * \brief Backtracking algorithms
+ */
 namespace {
 /** A utility function to print solution
  * @param color description
