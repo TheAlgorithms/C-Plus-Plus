@@ -6,18 +6,18 @@
 #include <algorithm>
 #include <cmath>
 #include <iostream>
-#include <vector>
+#include <array>
 
 /**
  * Check which number is the maximum/minimum in the array
  * @param depth depth of array
  * @param node_index current index in array
  * @param is_max if current index is the longest number
- * @param scores saved numbers in vector
+ * @param scores saved numbers in array
  * @return maximum or minimum number
  */
 int minimax(int depth, int node_index, bool is_max,
-            const std::vector<int> &scores, int height) {
+            const std::array<int> &scores, int height) {
     if (depth == height) {
         return scores[node_index];
     }
@@ -32,7 +32,7 @@ int minimax(int depth, int node_index, bool is_max,
  * Main function
  */
 int main() {
-    std::vector<int> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
+    std::array<int, 8> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
     int height = log2(scores.size());
 
     std::cout << "Optimal value: " << minimax(0, 0, true, scores, height)
