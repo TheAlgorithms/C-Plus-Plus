@@ -63,15 +63,15 @@ void Insert(node* n, int x) {
  * \return the max node int value
  */
 int findMaxInLeftST(node* n) {
-    if (n == nullptr) {
-        return -1;
-    }
-
     while (n && n->right != nullptr) {
         n = n->right.get();
     }
 
-    return n->val;
+    if (n == nullptr) {
+        return -1;
+    } else {
+        return n->val;
+    }
 }
 
 /** remove a node from tree
