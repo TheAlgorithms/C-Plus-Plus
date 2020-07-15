@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief brief one line description here
+ * @brief prints the assigned colors
  */
 #include <iostream>
 
