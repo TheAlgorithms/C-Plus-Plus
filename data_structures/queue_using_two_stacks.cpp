@@ -10,6 +10,15 @@
 
 #include "./stack.h"
 
+/**
+ * Queue data structure. Stores elements in FIFO
+ * (first-in-first-out) manner.
+ *     methods:
+ *         push(int x)  :  Pushes x to the back of queue.
+ *         pop()        :  Removes an element from the front
+ *         peek()       :  Returns first element, without removing
+ *         empty()      :  Returns whether the queue is empty
+ */
 class MyQueue {
  private:
     stack<int> s1, s2;
