@@ -32,28 +32,33 @@ struct node {
 
 /** insert a node to tree
  * with greater value to right subtree, smaller value node to left subtree
- * \param[in] n root node of a tree
+ * \param[in] root root node of a tree
  * \param[in] x a node with value to be insert
  */
-void Insert(node* n, int x) {
-    assert(n != NULL);
-    if (x < n->val) {
-        if (n->left == nullptr) {
-            n->left = std::shared_ptr<node>(new node);
-            n->left->val = x;
-            n->left->left = nullptr;
-            n->left->right = nullptr;
+void Insert(node* root, int x) {
+    if(root == NULL) {
+        std::cout << " \n invalid root node = " << root << std::endl;
+		std::cout << " \n please call Insert() with valid root node!!! \n";
+		return;
+    }
+
+    if (x < root->val) {
+        if (root->left == nullptr) {
+            root->left = std::shared_ptr<node>(new node);
+            root->left->val = x;
+            root->left->left = nullptr;
+            root->left->right = nullptr;
         } else {
-            Insert(n->left.get(), x);
+            Insert(root->left.get(), x);
         }
     } else {
-        if (n->right == nullptr) {
-            n->right = std::shared_ptr<node>(new node);
-            n->right->val = x;
-            n->right->left = nullptr;
-            n->right->right = nullptr;
+        if (root->right == nullptr) {
+            root->right = std::shared_ptr<node>(new node);
+            root->right->val = x;
+            root->right->left = nullptr;
+            root->right->right = nullptr;
         } else {
-            Insert(n->right.get(), x);
+            Insert(root->right.get(), x);
         }
     }
 }
@@ -247,7 +252,8 @@ int main() {
                   << "\n3. Breadth First"
                   << "\n4. Preorder Depth First"
                   << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
+                  << "\n6. Postorder Depth First"
+				  << "\n7. any other number will exit.";
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
