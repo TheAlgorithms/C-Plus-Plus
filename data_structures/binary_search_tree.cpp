@@ -36,10 +36,10 @@ struct node {
  * \param[in] x a node with value to be insert
  */
 void Insert(node* root, int x) {
-    if(root == NULL) {
+    if (root == NULL) {
         std::cout << " \n invalid root node = " << root << std::endl;
-		std::cout << " \n please call Insert() with valid root node!!! \n";
-		return;
+        std::cout << " \n please call Insert() with valid root node!!! \n";
+        return;
     }
 
     if (x < root->val) {
@@ -253,7 +253,7 @@ int main() {
                   << "\n4. Preorder Depth First"
                   << "\n5. Inorder Depth First"
                   << "\n6. Postorder Depth First"
-				  << "\n7. any other number will exit.";
+                  << "\n7. any other number will exit.";
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
