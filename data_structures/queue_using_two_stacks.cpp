@@ -11,17 +11,14 @@
 #include "./stack.h"
 
 /**
- * Queue data structure. Stores elements in FIFO
+ * @brief Queue data structure. Stores elements in FIFO
  * (first-in-first-out) manner.
- *     methods:
- *         push(int x)  :  Pushes x to the back of queue.
- *         pop()        :  Removes an element from the front
- *         peek()       :  Returns first element, without removing
- *         empty()      :  Returns whether the queue is empty
+ * @tparam T datatype to store in the queue
  */
+template <typename T>
 class MyQueue {
  private:
-    stack<int> s1, s2;
+    stack<T> s1, s2;
 
     /**
      * Helper function for rearranging elements in stacks
@@ -37,17 +34,17 @@ class MyQueue {
     /**
      * Pushes x to the back of queue.
      */
-    void push(int x);
+    void push(T x);
 
     /**
      * Removes an element from the front of the queue.
      */
-    int pop();
+    T pop();
 
     /**
      * Returns first element, without removing it.
      */
-    int peek();
+    T peek();
 
     /**
      * Returns whether the queue is empty.
@@ -58,14 +55,18 @@ class MyQueue {
 /**
  * Appends element to the end of the queue
  */
-void MyQueue::push(int x) { s1.push(x); }
+template <typename T>
+void MyQueue<T>::push(T x) {
+    s1.push(x);
+}
 
 /**
  * Removes element from the front of the queue
  */
-int MyQueue::pop() {
+template <typename T>
+T MyQueue<T>::pop() {
     rearrange();
-    int temp = 0;
+    T temp = 0;
     if (!empty()) {
         temp = s2.top();
         s2.pop();
@@ -79,10 +80,11 @@ int MyQueue::pop() {
  * Helper function for rearranging elements from
  * one stack into another.
  */
-void MyQueue::rearrange() {
+template <typename T>
+void MyQueue<T>::rearrange() {
     if (s2.isEmptyStack()) {
         while (!s1.isEmptyStack()) {
-            int temp = s1.top();
+            T temp = s1.top();
             s1.pop();
             s2.push(temp);
         }
@@ -93,9 +95,10 @@ void MyQueue::rearrange() {
  * Returns element in the front.
  * Does not remove it.
  */
-int MyQueue::peek() {
+template <typename T>
+T MyQueue<T>::peek() {
     rearrange();
-    int temp = 0;
+    T temp = 0;
     if (!empty()) {
         temp = s2.top();
     } else {
@@ -107,13 +110,16 @@ int MyQueue::peek() {
 /**
  * Checks whether a queue is empty
  */
-bool MyQueue::empty() { return s2.isEmptyStack() && s1.isEmptyStack(); }
+template <typename T>
+bool MyQueue<T>::empty() {
+    return s2.isEmptyStack() && s1.isEmptyStack();
+}
 
 /**
  * Testing function
  */
 void queue_test() {
-    MyQueue que;
+    MyQueue<int> que;
     std::cout << "Test #1\n";
     que.push(2);
     que.push(5);
@@ -132,6 +138,19 @@ void queue_test() {
     assert(que.empty() == false);
     assert(que.peek() == -1);
     assert(que.pop() == -1);
+    std::cout << "PASSED\n";
+
+    MyQueue<double> que2;
+    std::cout << "Test #3\n";
+    que2.push(2.31223);
+    que2.push(3.1415926);
+    que2.push(2.92);
+    assert(que2.peek() == 2.31223);
+    assert(que2.pop() == 2.31223);
+    assert(que2.peek() == 3.1415926);
+    assert(que2.pop() == 3.1415926);
+    assert(que2.peek() == 2.92);
+    assert(que2.pop() == 2.92);
     std::cout << "PASSED\n";
 }
 
