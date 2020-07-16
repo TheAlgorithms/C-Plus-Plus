@@ -35,10 +35,12 @@ struct node {
  * \param[in] root root node of a tree
  * \param[in] x a node with value to be insert
  */
-void Insert(node* root, int x) {
-    if (root == NULL) {
-        std::cout << " \n invalid root node = " << root << std::endl;
-        std::cout << " \n please call Insert() with valid root node!!! \n";
+void Insert(std::shared_ptr<node> & root, int x) {
+    if (root == nullptr) {
+        root = std::make_shared<node>();
+        root->val = x;
+        root->left = nullptr;
+        root->right = nullptr;
         return;
     }
 
@@ -49,7 +51,7 @@ void Insert(node* root, int x) {
             root->left->left = nullptr;
             root->left->right = nullptr;
         } else {
-            Insert(root->left.get(), x);
+            Insert(root->left, x);
         }
     } else {
         if (root->right == nullptr) {
@@ -58,7 +60,7 @@ void Insert(node* root, int x) {
             root->right->left = nullptr;
             root->right->right = nullptr;
         } else {
-            Insert(root->right.get(), x);
+            Insert(root->right, x);
         }
     }
 }
@@ -201,12 +203,12 @@ void test_tree() {
     root->left = nullptr;
     root->right = nullptr;
     // test Insert()
-    data_structure::BST::Insert(root.get(), 2);
-    data_structure::BST::Insert(root.get(), 1);
-    data_structure::BST::Insert(root.get(), 3);
-    data_structure::BST::Insert(root.get(), 6);
-    data_structure::BST::Insert(root.get(), 5);
-    data_structure::BST::Insert(root.get(), 7);
+    data_structure::BST::Insert(root, 2);
+    data_structure::BST::Insert(root, 1);
+    data_structure::BST::Insert(root, 3);
+    data_structure::BST::Insert(root, 6);
+    data_structure::BST::Insert(root, 5);
+    data_structure::BST::Insert(root, 7);
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
@@ -238,13 +240,7 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    std::shared_ptr<data_structure::BST::node> root(
-        new data_structure::BST::node);
-    std::cout << "\nEnter the value of root node :";
-    std::cin >> value;
-    root->val = value;
-    root->left = nullptr;
-    root->right = nullptr;
+    std::shared_ptr<data_structure::BST::node> root = nullptr;
 
     do {
         std::cout << "\n1. Insert"
@@ -262,14 +258,7 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-            if (root.get())
-                data_structure::BST::Insert(root.get(), x);
-            else {
-                root = std::make_shared<data_structure::BST::node>();
-                root->val = x;
-                root->left = nullptr;
-                root->right = nullptr;
-            }
+            data_structure::BST::Insert(root, x);
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
