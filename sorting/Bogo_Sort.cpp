@@ -26,24 +26,6 @@
  */
 namespace sorting {
 /**
- * Function to shuffle the elements of an array.
- * @tparam T typename of the array
- * @tparam N length of array
- * @param arr array to shuffle
- * @returns new array with elements shuffled from a given array
- */
-template<typename T, size_t N>
-std::array <T, N> shuffle(std::array <T, N> arr)
-{
-    for(int i = 0; i < N; i ++)
-    {
-        //Swaps i'th  index with random index (less than array size)
-        std::swap(arr[i], arr[std::rand() % N]);
-    }
-    return arr;
-}
-
-/**
  * Implement randomized Bogosort algorithm and sort the elements of a given array.
  * @tparam T typename of the array
  * @tparam N length of array
@@ -56,7 +38,7 @@ std::array <T, N> randomized_bogosort(std::array <T, N> arr)
     //Untill array is not sorted
     while(!std::is_sorted(arr.begin(), arr.end()))
     {
-        arr = shuffle(arr);//Shuffle the array
+        std::random_shuffle(arr.begin(), arr.end());//Shuffle the array
     }
     return arr;
 }
