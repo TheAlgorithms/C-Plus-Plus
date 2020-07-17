@@ -11,7 +11,7 @@ foreach( testsourcefile ${APP_SOURCES} )
 
     set_target_properties(${testname} PROPERTIES
         LINKER_LANGUAGE CXX
-        CXX_STANDARD 14)
+    )
     if(OpenMP_CXX_FOUND)
         target_link_libraries(${testname} OpenMP::OpenMP_CXX)
     endif()
