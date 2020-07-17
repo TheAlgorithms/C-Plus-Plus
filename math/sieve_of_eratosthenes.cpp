@@ -10,25 +10,21 @@
  * @see primes_up_to_billion.cpp prime_numbers.cpp
  */
 
-#include <iostream>
-
-/** Maximum number of primes */
-#define MAX 10000000
-
-/** array to store the primes */
-bool isprime[MAX];
+#include <iostream> // for io operations
 
 /**
  * This is the function that finds the primes and eliminates
  * the multiples.
+ * @param N number of primes to check
+ * @param [out] isprime a boolean array of size `N` identifying if `i`^th number is prime or not
  */
-void sieve(uint32_t N) {
-    isprime[0] = false;
-    isprime[1] = false;
-    for (uint32_t i = 2; i <= N; i++) {
-        if (isprime[i]) {
-            for (uint32_t j = (i << 1); j <= N; j += i) {
-                isprime[j] = false;
+void sieve(uint32_t N, bool *isprime) {
+    isprime[0] = true;
+    isprime[1] = true;
+    for (uint32_t i = 2; i * i <= N; i++) {
+        if (!isprime[i]) {
+            for (uint32_t j = (i << 1); j <= N; j = j + i) {
+                isprime[j] = true;
             }
         }
     }
@@ -36,10 +32,12 @@ void sieve(uint32_t N) {
 
 /**
  * This function prints out the primes to STDOUT
+ * @param N number of primes to check
+ * @param [in] isprime a boolean array of size `N` identifying if `i`^th number is prime or not
  */
-void print(uint32_t N) {
-    for (uint32_t i = 1; i <= N; i++) {
-        if (isprime[i]) {
+void print(uint32_t N, const bool *isprime) {
+    for (uint32_t i = 2; i <= N; i++) {
+        if (!isprime[i]) {
             std::cout << i << ' ';
         }
     }
@@ -47,19 +45,14 @@ void print(uint32_t N) {
 }
 
 /**
- * Initialize the array
+ * Main function
  */
-void init() {
-    for (uint32_t i = 1; i < MAX; i++) {
-        isprime[i] = true;
-    }
-}
-
-/** main function */
 int main() {
     uint32_t N = 100;
-    init();
-    sieve(N);
-    print(N);
+    bool *isprime = new bool[N];
+    sieve(N, isprime);
+    print(N, isprime);
+    delete[] isprime;
+
     return 0;
 }
