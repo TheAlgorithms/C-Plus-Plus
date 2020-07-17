@@ -28,8 +28,9 @@
 #include <queue>
 #include <utility>
 #include <vector>
+#include <limits>
 
-constexpr long long INF = 1000000000;
+constexpr long long INF = std::numeric_limits<long long>::max();
 
 /**
  * @namespace graph
@@ -66,7 +67,7 @@ int dijkstra(std::vector<std::vector<std::pair<int, int>>> *adj, int s, int t) {
     int n = adj->size();
 
     /// setting all the distances initially to INF
-    std::vector<int> dist(n, INF);
+    std::vector<long long> dist(n, INF);
 
     /// creating a min heap using priority queue
     /// first element of pair contains the distance
