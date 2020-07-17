@@ -55,10 +55,10 @@ namespace graph {
    * @param visited already visited vertices
    */
   void explore(const std::vector<std::vector<int>> *adj, int u,
-      std::vector<bool> &visited) {
-    visited[u] = true;
+      std::vector<bool> *visited) {
+    (*visited)[u] = true;
     for (auto v : (*adj)[u]) {
-      if (!visited[v]) {
+      if (!(*visited)[v]) {
         explore(adj, v, visited);
       }
     }
@@ -75,26 +75,26 @@ namespace graph {
 
     for (int i = 0; i < n; i++) {
       if (!visited[i]) {
-        explore(adj, i, visited);
+        explore(adj, i, &visited);
         connected_components++;
       }
     }
     return connected_components;
   }
-} // namespace graph
+}  // namespace graph
 
 /** Function to test the algorithm */
 void tests() {
   std::cout << "Running predefined tests..." << std::endl;
   std::cout << "Initiating Test 1..." << std::endl;
   std::vector<std::vector<int>> adj1(9, std::vector<int>());
-  graph::addEdge(&adj1, 1, 2); 
-  graph::addEdge(&adj1, 1, 3); 
-  graph::addEdge(&adj1, 3, 4); 
-  graph::addEdge(&adj1, 5, 7); 
-  graph::addEdge(&adj1, 5, 6); 
+  graph::addEdge(&adj1, 1, 2);
+  graph::addEdge(&adj1, 1, 3);
+  graph::addEdge(&adj1, 3, 4);
+  graph::addEdge(&adj1, 5, 7);
+  graph::addEdge(&adj1, 5, 6);
   graph::addEdge(&adj1, 8, 9);
-  
+
   assert(graph::getConnectedComponents(&adj1) == 3);
   std::cout << "Test 1 Passed..." << std::endl;
 
@@ -121,7 +121,7 @@ void tests() {
 int main() {
   /// running predefined tests
   tests();
-  
+
   int vertices, edges;
   std::cout << "Enter the number of vertices : ";
   std::cin >> vertices;
