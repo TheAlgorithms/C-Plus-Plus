@@ -35,7 +35,7 @@ namespace sorting {
 template<typename T, size_t N>
 std::array <T, N> shuffle(std::array <T, N> arr) {
     for(int i = 0; i < N; i ++) {
-        //Swaps i'th  index with random index (less than array size)
+        // Swaps i'th  index with random index (less than array size)
         std::swap(arr[i], arr[std::rand() % N]);
     }
     return arr;
@@ -49,9 +49,9 @@ std::array <T, N> shuffle(std::array <T, N> arr) {
  */
 template<typename T, size_t N>
 std::array <T, N> randomized_bogosort(std::array <T, N> arr) {
-    //Untill array is not sorted
+    // Untill array is not sorted
     while(!std::is_sorted(arr.begin(), arr.end())) {
-        std::random_shuffle(arr.begin(), arr.end());//Shuffle the array
+        std::random_shuffle(arr.begin(), arr.end());// Shuffle the array
     }
     return arr;
 }
@@ -76,7 +76,7 @@ void show_array(const std::array <T, N> &arr) {
  * Function to test above algorithm
  */
 void test() {
-    //Test 1
+    // Test 1
     std::array <int, 5> arr1;
     for(int &x : arr1) {
         x = std::rand() % 100;
@@ -87,7 +87,7 @@ void test() {
     std::cout << "Sorted Array : ";
     show_array(arr1);
     assert(std::is_sorted(arr1.begin(), arr1.end()));
-    //Test 2
+    // Test 2
     std::array <int, 5> arr2;
     for(int &x : arr2) {
         x = std::rand() % 100;
@@ -102,14 +102,14 @@ void test() {
 
 /** Driver Code */
 int main() {
-    //Testing
+    // Testing
     test();
-    //Example Usage
+    // Example Usage
     std::array <int, 5> arr = {3, 7, 10, 4, 1}; // Defining array which we want to sort
     std::cout << "Original Array : ";
     show_array(arr);
-    arr = sorting::randomized_bogosort(arr); //Callling bogo sort on it
+    arr = sorting::randomized_bogosort(arr); // Callling bogo sort on it
     std::cout << "Sorted Array : ";
-    show_array(arr); //Printing sorted array
+    show_array(arr); // Printing sorted array
     return 0;
 }
