@@ -35,7 +35,7 @@ struct node {
  * \param[in] root root node of a tree
  * \param[in] x a node with value to be insert
  */
-void Insert(std::shared_ptr<node> & const root, int x) {
+void Insert(std::shared_ptr<node>& const root, int x) {
     if (root == nullptr) {
         root = std::make_shared<node>();
         root->val = x;
