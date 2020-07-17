@@ -35,10 +35,12 @@ struct node {
  * \param[in] root root node of a tree
  * \param[in] x a node with value to be insert
  */
-void Insert(node* root, int x) {
-    if (root == NULL) {
-        std::cout << " \n invalid root node = " << root << std::endl;
-        std::cout << " \n please call Insert() with valid root node!!! \n";
+void Insert(std::shared_ptr<node> & const root, int x) {
+    if (root == nullptr) {
+        root = std::make_shared<node>();
+        root->val = x;
+        root->left = nullptr;
+        root->right = nullptr;
         return;
     }
 
@@ -49,7 +51,7 @@ void Insert(node* root, int x) {
             root->left->left = nullptr;
             root->left->right = nullptr;
         } else {
-            Insert(root->left.get(), x);
+            Insert(root->left, x);
         }
     } else {
         if (root->right == nullptr) {
@@ -58,7 +60,7 @@ void Insert(node* root, int x) {
             root->right->left = nullptr;
             root->right->right = nullptr;
         } else {
-            Insert(root->right.get(), x);
+            Insert(root->right, x);
         }
     }
 }
@@ -84,32 +86,32 @@ int findMaxInLeftST(node* n) {
  * \param[in] n start node to search a node with value x
  * \param[in] x the int value of a node
  */
-void Remove(std::shared_ptr<node>* n, int x) {
-    if (n && *n == nullptr) {
+void Remove(std::shared_ptr<node>& const n, int x) {
+    if (n == nullptr) {
         std::cout << "can't find a node with value = " << x << std::endl;
         return;
     }
-    if ((*n)->val == x) {
-        if ((*n)->right == nullptr && (*n)->left == nullptr) {
-            (*n).reset();  // manual deleted root node
-        } else if ((*n)->right == nullptr) {
-            (*n) = (*n)->left;
+    if (n->val == x) {
+        if (n->right == nullptr && n->left == nullptr) {
+            n.reset();  // manual deleted root node
+        } else if (n->right == nullptr) {
+            n = n->left;
             //   delete n; // no need here,smart pointer no need special delete,
             //   will auto deleted by the pointer reference counter of system
-        } else if ((*n)->left == nullptr) {
-            (*n) = (*n)->right;
+        } else if (n->left == nullptr) {
+            n = n->right;
             //   delete n; // no need here, smart pointer no need special
             //   delete, will auto deleted by the pointer reference counter of
             //   system
         } else {
-            int y = findMaxInLeftST((*n)->left.get());
-            (*n)->val = y;
-            Remove(&(*n)->left, y);
+            int y = findMaxInLeftST(n->left.get());
+            n->val = y;
+            Remove(n->left, y);
         }
-    } else if (x < (*n)->val) {
-        Remove(&(*n)->left, x);
+    } else if (x < n->val) {
+        Remove(n->left, x);
     } else {
-        Remove(&((*n)->right), x);
+        Remove(n->right, x);
     }
 }
 
@@ -195,18 +197,15 @@ void testInOrderTraverse(node* n, std::vector<int>* arr) {
  * test the tree Insert() and Remove() function and out test result.
  */
 void test_tree() {
-    std::shared_ptr<data_structure::BST::node> root(
-        new data_structure::BST::node);
-    root->val = 4;
-    root->left = nullptr;
-    root->right = nullptr;
+    std::shared_ptr<data_structure::BST::node> root = nullptr;
     // test Insert()
-    data_structure::BST::Insert(root.get(), 2);
-    data_structure::BST::Insert(root.get(), 1);
-    data_structure::BST::Insert(root.get(), 3);
-    data_structure::BST::Insert(root.get(), 6);
-    data_structure::BST::Insert(root.get(), 5);
-    data_structure::BST::Insert(root.get(), 7);
+    data_structure::BST::Insert(root, 4);
+    data_structure::BST::Insert(root, 2);
+    data_structure::BST::Insert(root, 1);
+    data_structure::BST::Insert(root, 3);
+    data_structure::BST::Insert(root, 6);
+    data_structure::BST::Insert(root, 5);
+    data_structure::BST::Insert(root, 7);
     std::cout
         << "after Insert() ,the expected output should be : 1, 2, 3, 4, 5, 6 ,7"
         << std::endl;
@@ -217,7 +216,7 @@ void test_tree() {
     std::cout << "Test Insert() function Passed\n========================\n";
 
     // test Remove()
-    data_structure::BST::Remove(&root, 2);
+    data_structure::BST::Remove(root, 2);
 
     std::cout << "\n after Remove() node 2 , the expected output should be : "
                  "1, 3, 4, 5, 6, 7"
@@ -238,13 +237,7 @@ int main() {
     test_tree();
     int value = 0;
     int ch = 0;
-    std::shared_ptr<data_structure::BST::node> root(
-        new data_structure::BST::node);
-    std::cout << "\nEnter the value of root node :";
-    std::cin >> value;
-    root->val = value;
-    root->left = nullptr;
-    root->right = nullptr;
+    std::shared_ptr<data_structure::BST::node> root = nullptr;
 
     do {
         std::cout << "\n1. Insert"
@@ -262,19 +255,12 @@ int main() {
         case 1:
             std::cout << "\nEnter the value to be Inserted : ";
             std::cin >> x;
-            if (root.get())
-                data_structure::BST::Insert(root.get(), x);
-            else {
-                root = std::make_shared<data_structure::BST::node>();
-                root->val = x;
-                root->left = nullptr;
-                root->right = nullptr;
-            }
+            data_structure::BST::Insert(root, x);
             break;
         case 2:
             std::cout << "\nEnter the value to be Deleted : ";
             std::cin >> x;
-            data_structure::BST::Remove(&root, x);
+            data_structure::BST::Remove(root, x);
             break;
         case 3:
             data_structure::BST::BFT(root.get());
