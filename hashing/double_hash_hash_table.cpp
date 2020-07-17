@@ -1,13 +1,13 @@
 // Copyright 2019
 
-#include<stdlib.h>
-#include<iostream>
-#include<functional>
-#include<string>
+#include <stdlib.h>
+#include <functional>
+#include <iostream>
+#include <string>
 
-using std::endl;
-using std::cout;
 using std::cin;
+using std::cout;
+using std::endl;
 using std::string;
 
 // fwd declarations
@@ -48,8 +48,8 @@ int doubleHash(int key, bool searching) {
     int i = 0;
     Entry entry;
     do {
-        int index = static_cast<int>(fabs((hash +
-            (i * otherHashFxn(key))))) % totalSize;
+        int index = static_cast<int>(fabs((hash + (i * otherHashFxn(key))))) %
+                    totalSize;
         entry = table[index];
         if (searching) {
             if (entry.key == notPresent) {
@@ -63,12 +63,17 @@ int doubleHash(int key, bool searching) {
             i++;
         } else {
             if (putProber(entry, key)) {
-                if (!rehashing) cout << "Spot found!" << endl;
+                if (!rehashing)
+                    cout << "Spot found!" << endl;
                 return index;
             }
-            if (!rehashing) cout << "Spot taken, looking at next (next index:"
-                << " " << static_cast<int>(fabs((hash +
-                (i * otherHashFxn(key))))) % totalSize << ")" << endl;
+            if (!rehashing)
+                cout << "Spot taken, looking at next (next index:"
+                     << " "
+                     << static_cast<int>(
+                            fabs((hash + (i * otherHashFxn(key))))) %
+                            totalSize
+                     << ")" << endl;
             i++;
         }
         if (i == totalSize * 100) {
@@ -89,7 +94,8 @@ bool putProber(Entry entry, int key) {
 
 // Looks for a matching key
 bool searchingProber(Entry entry, int key) {
-    if (entry.key == key) return true;
+    if (entry.key == key)
+        return true;
     return false;
 }
 
@@ -131,12 +137,12 @@ void rehash() {
 
 // Checks for load factor here
 void add(int key) {
-    Entry * entry = new Entry();
+    Entry* entry = new Entry();
     entry->key = key;
     int index = doubleHash(key, false);
     table[index] = *entry;
     // Load factor greater than 0.5 causes resizing
-    if (++size/ static_cast<double>(totalSize) >= 0.5) {
+    if (++size / static_cast<double>(totalSize) >= 0.5) {
         rehash();
     }
 }
@@ -157,8 +163,8 @@ void addInfo(int key) {
     cout << "Initial table: ";
     display();
     cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key)
-        << " % " << totalSize << " == " << fabs(hashFxn(key) % totalSize);
+    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
+         << " == " << fabs(hashFxn(key) % totalSize);
     cout << endl;
     add(key);
     cout << "New table: ";
@@ -170,8 +176,8 @@ void removalInfo(int key) {
     cout << "Initial table: ";
     display();
     cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key)
-        << " % " << totalSize << " == " << hashFxn(key) % totalSize;
+    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
+         << " == " << hashFxn(key) % totalSize;
     cout << endl;
     remove(key);
     cout << "New table: ";
