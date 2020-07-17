@@ -32,9 +32,9 @@ namespace sorting {
  * @param arr array to shuffle
  * @returns new array with elements shuffled from a given array
  */
-template<typename T, size_t N>
-std::array <T, N> shuffle(std::array <T, N> arr) {
-    for(int i = 0; i < N; i ++) {
+template <typename T, size_t N>
+std::array <T, N> shuffle (std::array <T, N> arr) {
+    for (int i = 0; i < N; i ++) {
         // Swaps i'th  index with random index (less than array size)
         std::swap(arr[i], arr[std::rand() % N]);
     }
@@ -47,10 +47,10 @@ std::array <T, N> shuffle(std::array <T, N> arr) {
  * @param arr array to sort
  * @returns new array with elements sorted from a given array
  */
-template<typename T, size_t N>
-std::array <T, N> randomized_bogosort(std::array <T, N> arr) {
+template <typename T, size_t N>
+std::array <T, N> randomized_bogosort (std::array <T, N> arr) {
     // Untill array is not sorted
-    while(!std::is_sorted(arr.begin(), arr.end())) {
+    while (!std::is_sorted(arr.begin(), arr.end())) {
         std::random_shuffle(arr.begin(), arr.end());// Shuffle the array
     }
     return arr;
@@ -64,9 +64,9 @@ std::array <T, N> randomized_bogosort(std::array <T, N> arr) {
  * @tparam N length of array
  * @param arr array to display
  */
-template<typename T, size_t N>
-void show_array(const std::array <T, N> &arr) {
-    for(int x : arr) {
+template <typename T, size_t N>
+void show_array (const std::array <T, N> &arr) {
+    for (int x : arr) {
         std::cout << x << ' ';
     }
     std::cout << '\n';
@@ -78,7 +78,7 @@ void show_array(const std::array <T, N> &arr) {
 void test() {
     // Test 1
     std::array <int, 5> arr1;
-    for(int &x : arr1) {
+    for (int &x : arr1) {
         x = std::rand() % 100;
     }
     std::cout << "Original Array : ";
@@ -89,7 +89,7 @@ void test() {
     assert(std::is_sorted(arr1.begin(), arr1.end()));
     // Test 2
     std::array <int, 5> arr2;
-    for(int &x : arr2) {
+    for (int &x : arr2) {
         x = std::rand() % 100;
     }
     std::cout << "Original Array : ";
