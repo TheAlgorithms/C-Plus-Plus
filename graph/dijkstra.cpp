@@ -29,8 +29,9 @@
 #include <queue>
 #include <utility>
 #include <vector>
+#include <memory>
 
-constexpr long long INF = std::numeric_limits<long long>::max();
+constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
 /**
  * @namespace graph
@@ -67,13 +68,13 @@ int dijkstra(std::vector<std::vector<std::pair<int, int>>> *adj, int s, int t) {
     int n = adj->size();
 
     /// setting all the distances initially to INF
-    std::vector<long long> dist(n, INF);
+    std::vector<int64_t> dist(n, INF);
 
     /// creating a min heap using priority queue
     /// first element of pair contains the distance
     /// second element of pair contains the vertex
     std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>,
-                        std::greater<std::pair<int, int>>>
+                        std::greater<>>
         pq;
 
     /// pushing the source vertex 's' with 0 distance in min heap
@@ -152,7 +153,7 @@ int main() {
     // running predefined tests
     tests();
 
-    int vertices, edges;
+    int vertices = int(), edges = int();
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the number of edges : ";
@@ -161,13 +162,13 @@ int main() {
     std::vector<std::vector<std::pair<int, int>>> adj(
         vertices, std::vector<std::pair<int, int>>());
 
-    int u, v, w;
+    int u = int(), v = int(), w = int();
     while (edges--) {
         std::cin >> u >> v >> w;
         graph::addEdge(&adj, u, v, w);
     }
 
-    int s, t;
+    int s = int(), t = int();
     std::cin >> s >> t;
     int dist = graph::dijkstra(&adj, s - 1, t - 1);
     if (dist == -1) {

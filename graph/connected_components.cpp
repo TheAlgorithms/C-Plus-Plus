@@ -39,8 +39,9 @@ namespace graph {
 /**
  * @brief Function that add edge between two nodes or vertices of graph
  *
- * @param u any node or vertex of graph
- * @param v any node or vertex of graph
+ * @param adj adjacency list of graph.
+ * @param u any node or vertex of graph.
+ * @param v any node or vertex of graph.
  */
 void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
     (*adj)[u - 1].push_back(v - 1);
@@ -51,14 +52,15 @@ void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
  * @brief Utility function for depth first seach algorithm
  * this function explores the vertex which is passed into.
  *
- * @param u vertex or node to be explored
- * @param visited already visited vertices
+ * @param adj adjacency list of graph.
+ * @param u vertex or node to be explored.
+ * @param visited already visited vertices.
  */
 void explore(const std::vector<std::vector<int>> *adj, int u,
-             std::vector<bool> &visited) {
-    visited[u] = true;
+             std::vector<bool> *visited) {
+    (*visited)[u] = true;
     for (auto v : (*adj)[u]) {
-        if (!visited[v]) {
+        if (!(*visited)[v]) {
             explore(adj, v, visited);
         }
     }
@@ -67,6 +69,10 @@ void explore(const std::vector<std::vector<int>> *adj, int u,
 /**
  * @brief Function that perfoms depth first search algorithm on graph
  * and calculated the number of connected components.
+ *
+ * @param adj adjacency list of graph.
+ *
+ * @return connected_components number of connected components in graph.
  */
 int getConnectedComponents(const std::vector<std::vector<int>> *adj) {
     int n = adj->size();
@@ -75,7 +81,7 @@ int getConnectedComponents(const std::vector<std::vector<int>> *adj) {
 
     for (int i = 0; i < n; i++) {
         if (!visited[i]) {
-            explore(adj, i, visited);
+            explore(adj, i, &visited);
             connected_components++;
         }
     }
@@ -122,7 +128,7 @@ int main() {
     /// running predefined tests
     tests();
 
-    int vertices, edges;
+    int vertices = int(), edges = int();
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the number of edges : ";
@@ -130,8 +136,8 @@ int main() {
 
     std::vector<std::vector<int>> adj(vertices, std::vector<int>());
 
+    int u = int(), v = int();
     while (edges--) {
-        int u, v;
         std::cin >> u >> v;
         graph::addEdge(&adj, u, v);
     }
