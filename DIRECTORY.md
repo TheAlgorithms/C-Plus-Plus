@@ -215,6 +215,7 @@
 ## Sorting
   * [Bead Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bead_sort.cpp)
   * [Bitonic Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bitonic_sort.cpp)
+  * [Bogo Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bogo_sort.cpp)
   * [Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bubble_sort.cpp)
   * [Bucket Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bucket_sort.cpp)
   * [Cocktail Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/cocktail_selection_sort.cpp)
