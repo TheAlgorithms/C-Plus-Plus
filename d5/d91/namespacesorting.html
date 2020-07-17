@@ -102,6 +102,12 @@ $(document).ready(function(){initNavTree('d5/d91/namespacesorting.html','../../'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aedfb88e2d6fff1871f038221fe5870fe"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:aedfb88e2d6fff1871f038221fe5870fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aedfb88e2d6fff1871f038221fe5870fe">shuffle</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
+<tr class="separator:aedfb88e2d6fff1871f038221fe5870fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f">randomized_bogosort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
+<tr class="separator:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">insertionSort</a> (T *arr, int n)</td></tr>
 <tr class="memdesc:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort Function.  <a href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">More...</a><br /></td></tr>
@@ -589,6 +595,53 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a4c5bd73ffb6082f63dc57d8dcc76794f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5bd73ffb6082f63dc57d8dcc76794f">&#9670;&nbsp;</a></span>randomized_bogosort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;T, N&gt; sorting::randomized_bogosort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implement randomized Bogosort algorithm and sort the elements of a given array. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>typename of the array </td></tr>
+    <tr><td class="paramname">N</td><td>length of array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array to sort </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>new array with elements sorted from a given array </dd></dl>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                          {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Untill array is not sorted</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (!<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr.begin(), arr.end())) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a>(arr.begin(), arr.end());<span class="comment">// Shuffle the array</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a4c5bd73ffb6082f63dc57d8dcc76794f_cgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="af2c5b92cbfe73f63f6074c61b0a45331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c5b92cbfe73f63f6074c61b0a45331">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[1/3]</span></h2>
 
@@ -698,14 +751,65 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aedfb88e2d6fff1871f038221fe5870fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfb88e2d6fff1871f038221fe5870fe">&#9670;&nbsp;</a></span>shuffle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;T, N&gt; sorting::shuffle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to shuffle the elements of an array. (for reference) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>typename of the array </td></tr>
+    <tr><td class="paramname">N</td><td>length of array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array to shuffle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>new array with elements shuffled from a given array </dd></dl>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// Swaps i&#39;th  index with random index (less than array size)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % N]);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_aedfb88e2d6fff1871f038221fe5870fe_cgraph.svg" width="246" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a7e7f25f31c50523990437abf2ac3907e"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:37</div></div>
+<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
 <div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
 <div class="ttc" id="anamespacesorting_html_ae97f4dd815654c4682f564afd718e824"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae97f4dd815654c4682f564afd718e824">sorting::non_recursive_merge_sort</a></div><div class="ttdeci">void non_recursive_merge_sort(const Iterator first, const Iterator last)</div><div class="ttdoc">bottom-up merge sort which sorts elements in a non-decreasing order</div><div class="ttdef"><b>Definition:</b> non_recursive_merge_sort.cpp:86</div></div>
+<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
+<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="arandom_shuffle_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a></div><div class="ttdeci">T random_shuffle(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a50b66a1c652291b9a346ec7342967178"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a></div><div class="ttdeci">void quickSort(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:63</div></div>
 <div class="ttc" id="anamespacesorting_html_af2c5b92cbfe73f63f6074c61b0a45331"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a></div><div class="ttdeci">void shell_sort(std::vector&lt; T &gt; *arr)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:75</div></div>
 <!-- start footer part -->

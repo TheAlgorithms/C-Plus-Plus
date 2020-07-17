@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,23,0],
+"db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe":[8,0,6,23,5],
+"db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099":[8,0,6,23,2],
+"db/d3c/tower__of__hanoi_8cpp.html":[8,0,8,15],
+"db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed":[8,0,8,15,3],
+"db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417":[8,0,8,15,4],
 "db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,15,1],
 "db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d":[8,0,8,15,2],
 "db/d66/struct_item.html":[7,0,15],
@@ -112,12 +118,12 @@ var NAVTREEINDEX3 =
 "dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0":[8,0,11,9,4],
 "dc/dfe/ternary__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,11,9,5],
 "dc/dfe/ternary__search_8cpp.html#aef655a27eb82efa299bf9d0becf6e9c8":[8,0,11,9,7],
-"dd/d0d/insertion__sort_8cpp.html":[8,0,12,3],
-"dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49":[8,0,12,3,0],
-"dd/d0d/insertion__sort_8cpp.html#a78cb2f3b97b6db2c062b2a1df05c9ea9":[8,0,12,3,2],
-"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,12,3,4],
-"dd/d0d/insertion__sort_8cpp.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f":[8,0,12,3,1],
-"dd/d0d/insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,12,3,3],
+"dd/d0d/insertion__sort_8cpp.html":[8,0,12,4],
+"dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49":[8,0,12,4,0],
+"dd/d0d/insertion__sort_8cpp.html#a78cb2f3b97b6db2c062b2a1df05c9ea9":[8,0,12,4,2],
+"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,12,4,4],
+"dd/d0d/insertion__sort_8cpp.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f":[8,0,12,4,1],
+"dd/d0d/insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,12,4,3],
 "dd/d1b/structquery.html":[7,0,26],
 "dd/d1b/structquery.html#a1442afb70f26fd0655914632c0dcadcd":[7,0,26,0],
 "dd/d1b/structquery.html#a748f5dfd8faf440897bab39091f0a5ca":[7,0,26,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "de/dd3/newton__raphson__method_8cpp.html#a75f355966e0a97665eaf5a4c79baa7af":[8,0,7,8,3],
 "de/dd3/newton__raphson__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,8,2],
 "de/de4/fibonacci__large_8cpp.html":[8,0,6,12],
-"de/de4/fibonacci__large_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,6,12,1],
-"de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db":[8,0,6,12,0],
-"df/d06/decimal__to__binary_8cpp.html":[8,0,8,1],
-"df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[8,0,8,1,2],
-"df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[8,0,8,1,1],
-"df/d06/decimal__to__binary_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,1,0],
-"df/d39/interpolation__search2_8cpp.html":[8,0,11,5]
+"de/de4/fibonacci__large_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,6,12,1]
 };

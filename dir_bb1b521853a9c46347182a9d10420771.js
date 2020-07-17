@@ -1,5 +1,6 @@
 var dir_bb1b521853a9c46347182a9d10420771 =
 [
+    [ "bogo_sort.cpp", "d5/ddb/bogo__sort_8cpp.html", "d5/ddb/bogo__sort_8cpp" ],
     [ "bubble_sort.cpp", "d8/d13/bubble__sort_8cpp.html", "d8/d13/bubble__sort_8cpp" ],
     [ "comb_sort.cpp", "d9/dfd/comb__sort_8cpp.html", "d9/dfd/comb__sort_8cpp" ],
     [ "heap_sort.cpp", "d2/d52/heap__sort_8cpp.html", "d2/d52/heap__sort_8cpp" ],
