@@ -7,8 +7,7 @@
 
 #include <cassert>
 #include <iostream>
-
-#include "./stack.h"
+#include <stack>
 
 /**
  * @brief Queue data structure. Stores elements in FIFO
@@ -18,12 +17,7 @@
 template <typename T>
 class MyQueue {
  private:
-    stack<T> s1, s2;
-
-    /**
-     * Helper function for rearranging elements in stacks
-     */
-    void rearrange();
+    std::stack<T> s1, s2;
 
  public:
     /**
@@ -39,17 +33,17 @@ class MyQueue {
     /**
      * Removes an element from the front of the queue.
      */
-    T pop();
+    const T& pop();
 
     /**
      * Returns first element, without removing it.
      */
-    T peek();
+    const T& peek() const;
 
     /**
      * Returns whether the queue is empty.
      */
-    bool empty();
+    bool empty() const;
 };
 
 /**
@@ -57,38 +51,25 @@ class MyQueue {
  */
 template <typename T>
 void MyQueue<T>::push(T x) {
-    s1.push(x);
+    while (!s2.empty()) {
+        s1.push(s2.top());
+        s2.pop();
+    }
+    s2.push(x);
+    while (!s1.empty()) {
+        s2.push(s1.top());
+        s1.pop();
+    }
 }
 
 /**
  * Removes element from the front of the queue
  */
 template <typename T>
-T MyQueue<T>::pop() {
-    rearrange();
-    T temp = 0;
-    if (!empty()) {
-        temp = s2.top();
-        s2.pop();
-    } else {
-        std::cout << "Queue is empty" << std::endl;
-    }
+const T& MyQueue<T>::pop() {
+    const T& temp = MyQueue::peek();
+    s2.pop();
     return temp;
-}
-
-/**
- * Helper function for rearranging elements from
- * one stack into another.
- */
-template <typename T>
-void MyQueue<T>::rearrange() {
-    if (s2.isEmptyStack()) {
-        while (!s1.isEmptyStack()) {
-            T temp = s1.top();
-            s1.pop();
-            s2.push(temp);
-        }
-    }
 }
 
 /**
@@ -96,23 +77,20 @@ void MyQueue<T>::rearrange() {
  * Does not remove it.
  */
 template <typename T>
-T MyQueue<T>::peek() {
-    rearrange();
-    T temp = 0;
+const T& MyQueue<T>::peek() const {
     if (!empty()) {
-        temp = s2.top();
-    } else {
-        std::cout << "Queue is empty" << std::endl;
+        return s2.top();
     }
-    return temp;
+    std::cerr << "Queue is empty" << std::endl;
+    exit(0);
 }
 
 /**
  * Checks whether a queue is empty
  */
 template <typename T>
-bool MyQueue<T>::empty() {
-    return s2.isEmptyStack() && s1.isEmptyStack();
+bool MyQueue<T>::empty() const {
+    return s2.empty() && s1.empty();
 }
 
 /**
@@ -145,6 +123,7 @@ void queue_test() {
     que2.push(2.31223);
     que2.push(3.1415926);
     que2.push(2.92);
+
     assert(que2.peek() == 2.31223);
     assert(que2.pop() == 2.31223);
     assert(que2.peek() == 3.1415926);
