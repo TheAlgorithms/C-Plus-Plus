@@ -61,10 +61,10 @@ namespace ciphers {
          * @param shift number of shifts to be applied
          * @returns new encrypted text
          */
-        std::string encrypt (const std::string text, const int shift) {
+        std::string encrypt (const std::string &text, const int &shift) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
-            for (int i = 0; i < text.length(); i++) { // Going through each character
-                int place_value = get_value(text[i]); // Getting value of character (i.e. 0-25)
+            for (char c : text) { // Going through each character
+                int place_value = get_value(c); // Getting value of character (i.e. 0-25)
                 place_value = (place_value + shift) % 26; // Applying encryption formula
                 char new_char = get_char(place_value); // Getting new character from new value (i.e. A-Z)
                 encrypted_text += new_char; // Appending encrypted character
@@ -77,10 +77,10 @@ namespace ciphers {
          * @param shift number of shifts to be applied
          * @returns new decrypted text
          */        
-        std::string decrypt (const std::string text, const int shift) {
+        std::string decrypt (const std::string &text, const int &shift) {
             std::string decrypted_text = ""; // Empty string to store decrypted text
-            for (int i = 0; i < text.length(); i++) { // Going through each character
-                int place_value = get_value(text[i]); // Getting value of character (i.e. 0-25)
+            for (char c : text) { // Going through each character
+                int place_value = get_value(c); // Getting value of character (i.e. 0-25)
                 place_value = (place_value - shift) % 26;// Applying decryption formula
                 if(place_value < 0) { // Handling case where remainder is negative 
                     place_value = place_value + 26;
