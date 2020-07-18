@@ -1,5 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a":[7,0,3,0,6],
+"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[7,0,3,0,1],
+"d7/d7c/classstatistics_1_1stats__computer1.html#ab2e69e75fe0da096bf61fa13420b43eb":[7,0,3,0,8],
+"d7/d7c/classstatistics_1_1stats__computer1.html#ab5b4bfecdf391cae7edb1fe98548b846":[7,0,3,0,4],
+"d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1":[7,0,3,0,2],
 "d7/d7f/section.html":[3],
 "d7/d89/double__factorial_8cpp.html":[8,0,6,5],
 "d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26":[8,0,6,5,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX2 =
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,1,3],
 "db/d07/spiral__print_8cpp.html":[8,0,8,13],
 "db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[8,0,8,13,2],
-"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[8,0,8,13,0],
-"db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,13,1],
-"db/d0d/prime__factorization_8cpp.html":[8,0,6,23],
-"db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46":[8,0,6,23,1],
-"db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23":[8,0,6,23,4],
-"db/d0d/prime__factorization_8cpp.html#acfb0df439a4beae5a34ef131ce737c1b":[8,0,6,23,3]
+"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[8,0,8,13,0]
 };

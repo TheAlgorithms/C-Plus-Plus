@@ -108,6 +108,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f">randomized_bogosort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
 <tr class="separator:a4c5bd73ffb6082f63dc57d8dcc76794f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8bc626eb57acae24a94636a23af6a1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2f8bc626eb57acae24a94636a23af6a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1">gnomeSort</a> (T *arr, int size)</td></tr>
+<tr class="separator:a2f8bc626eb57acae24a94636a23af6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a6a99d554280c326f80355c4d2c494"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t size&gt; </td></tr>
+<tr class="memitem:a70a6a99d554280c326f80355c4d2c494"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a70a6a99d554280c326f80355c4d2c494">gnomeSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, size &gt; arr)</td></tr>
+<tr class="separator:a70a6a99d554280c326f80355c4d2c494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">insertionSort</a> (T *arr, int n)</td></tr>
 <tr class="memdesc:a78cb2f3b97b6db2c062b2a1df05c9ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort Function.  <a href="../../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9">More...</a><br /></td></tr>
@@ -147,7 +153,126 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
+<p>Sorting algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a70a6a99d554280c326f80355c4d2c494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a6a99d554280c326f80355c4d2c494">&#9670;&nbsp;</a></span>gnomeSort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt;T, size&gt; sorting::gnomeSort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, size &gt;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This implementation is for a C++-style array input. The function argument is a pass-by-value and hence a copy of the array gets created which is then modified by the function and returned. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data variables in the array </td></tr>
+    <tr><td class="paramname">size</td><td>size of the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>our array of elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array with elements sorted </dd></dl>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                   {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// few easy cases</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (size &lt;= 1) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> index = 0;  <span class="comment">// initialize loop index</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">while</span> (index &lt; size) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// check for swap</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> ((index == 0) || (arr[index] &gt;= arr[index - 1])) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            index++;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[index], arr[index - 1]);  <span class="comment">// swap</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            index--;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a70a6a99d554280c326f80355c4d2c494_cgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2f8bc626eb57acae24a94636a23af6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8bc626eb57acae24a94636a23af6a1">&#9670;&nbsp;</a></span>gnomeSort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::gnomeSort </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This implementation is for a C-style array input that gets modified in place. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>our array of elements. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>size of given array </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                 {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// few easy cases</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (size &lt;= 1) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> index = 0;  <span class="comment">// initialize some variables.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">while</span> (index &lt; size) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// check for swap</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> ((index == 0) || (arr[index] &gt;= arr[index - 1])) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            index++;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[index], arr[index - 1]);  <span class="comment">// swap</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            index--;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a2f8bc626eb57acae24a94636a23af6a1_cgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a8fe6bac9e03f58abcc2ce26ef3de1b5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fe6bac9e03f58abcc2ce26ef3de1b5f">&#9670;&nbsp;</a></span>insertionSort() <span class="overload">[1/2]</span></h2>
 

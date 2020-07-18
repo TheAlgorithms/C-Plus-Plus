@@ -107,10 +107,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/def/kohonen__som__topology_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
-"d7/d7f/section.html",
-"db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db"
+"d4/de8/fast__interger__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82",
+"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a",
+"db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
