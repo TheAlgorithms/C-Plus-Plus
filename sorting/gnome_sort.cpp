@@ -91,7 +91,9 @@ static void test() {
                        size);  // pass array data as a C-style array pointer
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
     std::cout << " Passed\n";
-    for (int i = 0; i < size; i++) std::cout << arr[i] << ", ";
+    for (int i = 0; i < size; i++) {
+        std::cout << arr[i] << ", ";
+    }
     std::cout << std::endl;
 
     // Example 2. Creating array of doubles.
@@ -100,7 +102,9 @@ static void test() {
     std::array<double, size> sorted_arr = sorting::gnomeSort(double_arr);
     assert(std::is_sorted(std::begin(sorted_arr), std::end(sorted_arr)));
     std::cout << " Passed\n";
-    for (int i = 0; i < size; i++) std::cout << double_arr[i] << ", ";
+    for (int i = 0; i < size; i++) {
+        std::cout << double_arr[i] << ", ";
+    }
     std::cout << std::endl;
 
     // Example 3. Creating random array of float.
