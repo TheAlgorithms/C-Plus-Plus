@@ -61,12 +61,12 @@ template <typename T, size_t size>
 std::array<T, size> gnomeSort(std::array<T, size> arr) {
     // few easy cases
     if (size <= 1)
-        return;
+        return arr;
 
     int index = 1;  // initialize loop index
     while (index < size) {
         // check for swap
-        if (arr[index] >= arr[index - 1]) {
+        if ((index == 0) || (arr[index] >= arr[index - 1])) {
             index++;
         } else {
             std::swap(arr[index], arr[index - 1]);  // swap
@@ -89,16 +89,31 @@ static void test() {
                        size);  // pass array data as a C-style array pointer
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
     std::cout << " Passed\n";
-    // for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
+    for (int i = 0; i < size; i++) std::cout << arr[i] << ", ";
     std::cout << std::endl;
 
     // Example 2. Creating array of doubles.
-    std::cout << "Test 2 - as a std::array...";
+    std::cout << "\nTest 2 - as a std::array...";
     std::array<double, size> double_arr = {-100.2, 10.2, 20.0, 9.0, 7.5, 7.2};
     std::array<double, size> sorted_arr = sorting::gnomeSort(double_arr);
     assert(std::is_sorted(std::begin(sorted_arr), std::end(sorted_arr)));
     std::cout << " Passed\n";
-    for (int i = 0; i < size; i++) std::cout << double_arr[i] << " ";
+    for (int i = 0; i < size; i++) std::cout << double_arr[i] << ", ";
+    std::cout << std::endl;
+
+    // Example 3. Creating random array of float.
+    std::cout << "\nTest 3 - 200 random numbers as a std::array...";
+    const int size2 = 200;
+    std::array<float, size2> rand_arr;
+
+    for (auto &a : rand_arr)
+        // generate random numbers between -5.0 and 4.99
+        a = float(std::rand() % 1000 - 500) / 100.f;
+
+    std::array<float, size2> float_arr = sorting::gnomeSort(rand_arr);
+    assert(std::is_sorted(std::begin(float_arr), std::end(float_arr)));
+    std::cout << " Passed\n";
+    // for (int i = 0; i < size; i++) std::cout << double_arr[i] << ", ";
     std::cout << std::endl;
 }
 
