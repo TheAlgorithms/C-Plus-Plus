@@ -9,6 +9,7 @@
 #include <iostream>
 #include <stack>
 
+namespace {
 /**
  * @brief Queue data structure. Stores elements in FIFO
  * (first-in-first-out) manner.
@@ -92,6 +93,7 @@ template <typename T>
 bool MyQueue<T>::empty() const {
     return s2.empty() && s1.empty();
 }
+}  // namespace
 
 /**
  * Testing function
