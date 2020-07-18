@@ -50,8 +50,8 @@ void gnomeSort(T *arr, int size) {
 }
 
 /**
- * This implementation is for a C++-style array input. The function is a
- * pass-by-value and hence a copy of the array gets created which is then
+ * This implementation is for a C++-style array input. The function argument is
+ * a pass-by-value and hence a copy of the array gets created which is then
  * modified by the function and returned.
  * @tparam T type of data variables in the array
  * @tparam size size of the array
