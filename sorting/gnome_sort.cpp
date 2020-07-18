@@ -65,7 +65,7 @@ std::array<T, size> gnomeSort(std::array<T, size> arr) {
         return arr;
     }
 
-    int index = 1;  // initialize loop index
+    int index = 0;  // initialize loop index
     while (index < size) {
         // check for swap
         if ((index == 0) || (arr[index] >= arr[index - 1])) {
