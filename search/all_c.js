@@ -30,7 +30,7 @@ var searchData=
   ['link_875',['link',['../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6',1,'hash_search.cpp']]],
   ['linkedlist_876',['linkedlist',['../d0/dff/structlinkedlist.html',1,'']]],
   ['linkedlist_5fimplentation_5fusingarray_2ecpp_877',['linkedlist_implentation_usingarray.cpp',['../d3/dce/linkedlist__implentation__usingarray_8cpp.html',1,'']]],
-  ['list_878',['list',['../d8/d10/structlist.html',1,'list'],['http://en.cppreference.com/w/cpp/container/list.html',0,'std::list&lt; T &gt;'],['http://en.cppreference.com/w/cpp/container/list/list.html',0,'std::list::list()']]],
+  ['list_878',['list',['http://en.cppreference.com/w/cpp/container/list.html',0,'std::list&lt; T &gt;'],['../d8/d10/structlist.html',1,'list'],['http://en.cppreference.com/w/cpp/container/list/list.html',0,'std::list::list()']]],
   ['list_3c_20int_20_3e_879',['list&lt; int &gt;',['../d8/d10/structlist.html',1,'']]],
   ['list_5farray_2ecpp_880',['list_array.cpp',['../d7/d00/list__array_8cpp.html',1,'']]],
   ['ll_881',['ll',['../d7/d35/matrix__exponentiation_8cpp.html#ae1d1ec9482079231e898236e2b23c9ba',1,'matrix_exponentiation.cpp']]],
