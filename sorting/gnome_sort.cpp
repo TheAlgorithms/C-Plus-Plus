@@ -1,56 +1,102 @@
 /**
- * Copyright 2020 @author beqakd
  * @file
- * A basic implementation of gnome sort algorithm.
+ * @brief Implementation of [gnome
+ * sort](https://en.wikipedia.org/wiki/Gnome_sort) algorithm.
+ * @author [beqakd](https://github.com/beqakd)
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ * @details
+ * Gnome sort algorithm is not the best one but it is widely used.
+ * The algorithm iteratively checks the order of pairs in the array. If they are
+ * on right order it moves to the next successive pair, otherwise it swaps
+ * elements. This operation is repeated until no more swaps are made thus
+ * indicating the values to be in ascending order.
+ *
+ * The time Complexity of the algorithm is \f$O(n^2)\f$ and in some cases it
+ * can be \f$O(n)\f$.
  */
 
-#include <iostream>  // for io operations
+#include <algorithm>  // for std::swap
+#include <array>      // for std::array
+#include <iostream>   // for io operations
 
 /**
- * Gnome sort algorithm is not the best one. But it is used widely
- * it looks two elements prev one and next one. If they are on
- * right order it forwards, otherwise it swaps elements.
- * @param arr our array of elements.
- * @param size size of given array
- * @return it just changes array of pointer so it does not needs to return.
- * time Complexity:
- *      O(n^2)
- *      Some cases it works on O(n), but overall time is O(n^2)
+ * @namespace sorting
+ * Sorting algorithms
  */
-template <class T> void gnomeSort(T arr[], int size) {
+namespace sorting {
+/**
+ * This implementation is for a C-style array input that gets modified in place.
+ * @param [in,out] arr our array of elements.
+ * @param size size of given array
+ */
+template <typename T>
+void gnomeSort(T *arr, int size) {
     // few easy cases
-    if (size <= 1)
-        return;
+    if (size <= 1) return;
 
     int index = 0;  // initialize some variables.
     while (index < size) {
         // check for swap
         if ((index == 0) || (arr[index] >= arr[index - 1])) {
-        index++;
+            index++;
         } else {
-        std::swap(arr[index], arr[index - 1]);  // swap
-        index--;
+            std::swap(arr[index], arr[index - 1]);  // swap
+            index--;
         }
     }
+}
+
+/**
+ * This implementation is for a C++-style array input. The function is a
+ * pass-by-value and hence a copy of the array gets created which is then
+ * modified by the function and returned.
+ * @tparam T type of data variables in the array
+ * @tparam size size of the array
+ * @param [in] arr our array of elements.
+ * @return array with elements sorted
+ */
+template <typename T, size_t size>
+std::array<T, size> gnomeSort(std::array<T, size> arr) {
+    // few easy cases
+    if (size <= 1) return;
+
+    int index = 1;  // initialize loop index
+    while (index < size) {
+        // check for swap
+        if (arr[index] >= arr[index - 1]) {
+            index++;
+        } else {
+            std::swap(arr[index], arr[index - 1]);  // swap
+            index--;
+        }
+    }
+    return arr;
+}
+}  // namespace sorting
+
+/**
+ * Test function
+ */
+static void test() {
+    // Example 1. Creating array of int,
+    std::cout << "Test 1 - as a C-array...";
+    int size = 6;
+    std::array<int, size> arr = {-22, 100, 150, 35, -10, 99};
+    sorting::gnomeSort(arr.data, size);
+    // for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
+
+    std::cout << "\n" << std::endl;
+
+    // Example 2. Creating array of doubles.
+    std::array<double, size> double_arr = {-100.2, 10.2, 20.0, 9.0, 7.5, 7.2};
+    std::array<double, size> sorted_arr = sorting::gnomeSort(double_arr);
+    for (int i = 0; i < size; i++) std::cout << double_arr[i] << " ";
 }
 
 /**
  * Our main function with example of sort method.
  */
 int main() {
-    // Example 1. Creating array of int,
-    int arr[] = {-22, 100, 150, 35, -10, 99};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    gnomeSort(arr, size);
-    for (int i = 0; i < size; i++)
-        std::cout << arr[i] << " ";
-    std::cout << "\n" << std::endl;
-
-    // Example 2. Creating array of doubles.
-    double double_arr[6] = {-100.2, 10.2, 20.0, 9.0, 7.5, 7.2};
-    size = sizeof(double_arr) / sizeof(double_arr[0]);
-    gnomeSort(double_arr, size);
-    for (int i = 0; i < size; i++)
-        std::cout << double_arr[i] << " ";
+    test();
     return 0;
 }
