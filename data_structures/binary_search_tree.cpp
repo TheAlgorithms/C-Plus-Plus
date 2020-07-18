@@ -14,17 +14,17 @@ struct node {
     node *right;
 };
 
-struct queue {
+struct Queue {
     node *t[100];
     int front;
     int rear;
 };
 
-queue q;
+Queue queue;
 
-void enqueue(node *n) { q.t[q.rear++] = n; }
+void enqueue(node *n) { queue.t[queue.rear++] = n; }
 
-node *dequeue() { return (q.t[q.front++]); }
+node *dequeue() { return (queue.t[queue.front++]); }
 
 void Insert(node *n, int x) {
     if (x < n->val) {
@@ -43,7 +43,7 @@ void Insert(node *n, int x) {
             temp->val = x;
             temp->left = NULL;
             temp->right = NULL;
-            n->left = temp;
+            n->right = temp;
         } else {
             Insert(n->right, x);
         }
@@ -123,8 +123,8 @@ void Post(node *n) {
 }
 
 int main() {
-    q.front = 0;
-    q.rear = 0;
+    queue.front = 0;
+    queue.rear = 0;
     int value;
     int ch;
     node *root = new node;

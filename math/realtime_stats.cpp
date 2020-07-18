@@ -35,7 +35,7 @@ class stats_computer1 {
         n++;
         T tmp = x - K;
         Ex += tmp;
-        Ex2 += tmp * tmp;
+        Ex2 += static_cast<double>(tmp) * tmp;
     }
 
     /** return sample mean computed till last sample */

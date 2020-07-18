@@ -17,17 +17,24 @@
 #include <iostream>
 #include <limits>
 
-#define EPSILON \
-    1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
-#define MAX_ITERATIONS 50000  ///< Maximum number of iterations to check
+constexpr double EPSILON = 1e-10;              ///< system accuracy limit
+constexpr int16_t MAX_ITERATIONS = INT16_MAX;  ///< Maximum number of iterations
 
-/** define \f$f(x)\f$ to find root for
+/** define \f$f(x)\f$ to find root for.
+ * Currently defined as:
+ * \f[
+ * f(x) = x^3 - 4x - 9
+ * \f]
  */
 static double eq(double i) {
     return (std::pow(i, 3) - (4 * i) - 9);  // original equation
 }
 
 /** define the derivative function \f$f'(x)\f$
+ * For the current problem, it is:
+ * \f[
+ * f'(x) = 3x^2 - 4
+ * \f]
  */
 static double eq_der(double i) {
     return ((3 * std::pow(i, 2)) - 4);  // derivative of equation
@@ -37,8 +44,8 @@ static double eq_der(double i) {
 int main() {
     std::srand(std::time(nullptr));  // initialize randomizer
 
-    double z, c = std::rand() % 100, m, n;
-    int i;
+    double z = NAN, c = std::rand() % 100, m = NAN, n = NAN;
+    int i = 0;
 
     std::cout << "\nInitial approximation: " << c;
 
@@ -50,8 +57,9 @@ int main() {
         z = c - (m / n);
         c = z;
 
-        if (std::abs(m) < EPSILON)  // stoping criteria
+        if (std::abs(m) < EPSILON) {  // stoping criteria
             break;
+        }
     }
 
     std::cout << "\n\nRoot: " << z << "\t\tSteps: " << i << std::endl;

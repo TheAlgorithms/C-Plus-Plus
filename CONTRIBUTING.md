@@ -28,7 +28,84 @@ We are very happy that you consider implementing algorithms and data structures 
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
 - Our automated testing runs [__cpplint__](https://github.com/cpplint/cpplint) on all pull requests so please be sure that your code passes before submitting.
+- Please conform to [doxygen](https://www.doxygen.nl/manual/docblocks.html) standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on website.
 - **Be consistent in use of these guidelines.**
+
+#### Documentation
+- Make sure you put useful comments in your code.  Do not comment things that are obvious.
+- Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
+- If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.
+- Do not update README.md along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md
+- The repository follows [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and auto-generates the [repo website](https://thealgorithms.github.io/C-Plus-Plus). Please ensure the code is documented in this structure. Sample implementation is given below.
+
+#### Test
+- Make sure to add examples and test cases in your main() function.
+- If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
+- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with expected output. Use `assert()` function to confirm that the tests will pass.
+
+#### Typical structure of a program:
+```cpp
+/**
+ * @file 
+ * @brief Add one line description here
+ * @details 
+ * This is a multi line
+ * description containing links, references,
+ * math equations, etc
+ * @author [Name](https://github.com/handle)
+ * @see related_file.cpp, another_file.cpp
+ */
+
+#include 
+
+/** 
+ * @namespace <check from other files in this repo>
+ */
+namespace name {
+
+/**
+ * Class documentation
+ */
+class cls_name{
+ private:
+    int var1;  ///< short info of this variable
+    char *msg;  ///< short info
+ 
+ public:
+ // other members also documented as below
+}
+
+/**
+ * Function documentation 
+ * @tparam T this is a one-line info about T
+ * @param param1 on-line info about param1
+ * @param param2 on-line info about param2
+ * @returns `true` if ...
+ * @returns `false` if ... 
+ */
+template<class T>
+bool func(int param1, T param2) {
+    // function statements here 
+    if(/*something bad*/)
+        return false;
+
+    return true;
+}
+
+/** Test function */
+void test() {
+ /* some statements */
+ assert(func(...) == ...); // this ensures that the algorithm works as expected 
+
+ // can have multiple checks
+}
+
+/** Main function */
+int main(int argc, char *argv[]) {
+    // code here
+    return 0;
+}
+```
 
 #### New File Name guidelines
 - Use lowercase words with ``"_"`` as separator
@@ -69,16 +146,6 @@ Common prefixes:
 - feat: A new feature
 - docs: Documentation changes
 - test: Correct existing tests or add new ones
-
-#### Documentation
-- Make sure you put useful comments in your code.  Do not comment things that are obvious.
-- Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
-- If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.
-- Do not update README.md along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md
-
-#### Test
-- Make sure to add examples and test cases in your main() function.
-- If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
 
 ### Pull Requests
 - Checkout our [pull request template](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md)
