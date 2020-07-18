@@ -1,4 +1,4 @@
-/*
+/**
  * @file
  * @brief Implementation Details
  * @details Quick sort 3 works on Dutch National Flag Algorithm
@@ -56,7 +56,7 @@ void partition3(std::array<T, N> *arr, int low, int high, int *i, int *j) {
     }
 
     int mid = low;
-    int pivot = arr[high];
+    T pivot = (*arr)[high];
     while (mid <= high) {
         if ((*arr)[mid] < pivot) {
             std::swap((*arr)[low++], (*arr)[mid++]);
@@ -92,7 +92,7 @@ void quicksort(std::array<T, N> *arr, int low, int high) {
 template <typename T, size_t N>
 std::array<T, N> quicksort(std::array<T, N> arr, int low, int high) {
     if (low >= high) {  // 1 or 0 elements
-        return;
+        return arr;
     }
 
     int i, j;
@@ -108,18 +108,24 @@ std::array<T, N> quicksort(std::array<T, N> arr, int low, int high) {
 }
 }  // namespace sorting
 
-// Driver program for above functions
-int main() {
-    int size, i;
-    std::cout << "Enter Number of elements\n";
-    std::cin >> size;
+/** Test function */
+static void test() {
+    constexpr int size = 8;
     std::array<int, size> arr{};
     for (auto &a : arr) {
         a = std::rand() % 100 - 50;  // random numbers between -50, 49
     }
 
+    std::cout << "Test 1.... ";
     std::array<int, size> sorted = sorting::quicksort(arr, 0, size - 1);
     std::cout << "Sorted Array is:\n\t";
     std::cout << sorted << "\n";
+    assert(std::is_sorted(std::begin(sorted), std::end(sorted)));
+    std::cout << "passed\n";
+}
+
+/** Driver program for above functions */
+int main() {
+    test();
     return 0;
 }
