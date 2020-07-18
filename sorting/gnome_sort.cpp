@@ -17,6 +17,7 @@
 
 #include <algorithm>  // for std::swap
 #include <array>      // for std::array
+#include <cassert>    // for assertions
 #include <iostream>   // for io operations
 
 /**
@@ -32,7 +33,8 @@ namespace sorting {
 template <typename T>
 void gnomeSort(T *arr, int size) {
     // few easy cases
-    if (size <= 1) return;
+    if (size <= 1)
+        return;
 
     int index = 0;  // initialize some variables.
     while (index < size) {
@@ -58,7 +60,8 @@ void gnomeSort(T *arr, int size) {
 template <typename T, size_t size>
 std::array<T, size> gnomeSort(std::array<T, size> arr) {
     // few easy cases
-    if (size <= 1) return;
+    if (size <= 1)
+        return;
 
     int index = 1;  // initialize loop index
     while (index < size) {
@@ -80,17 +83,23 @@ std::array<T, size> gnomeSort(std::array<T, size> arr) {
 static void test() {
     // Example 1. Creating array of int,
     std::cout << "Test 1 - as a C-array...";
-    int size = 6;
+    const int size = 6;
     std::array<int, size> arr = {-22, 100, 150, 35, -10, 99};
-    sorting::gnomeSort(arr.data, size);
+    sorting::gnomeSort(arr.data(),
+                       size);  // pass array data as a C-style array pointer
+    assert(std::is_sorted(std::begin(arr), std::end(arr)));
+    std::cout << " Passed\n";
     // for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-
-    std::cout << "\n" << std::endl;
+    std::cout << std::endl;
 
     // Example 2. Creating array of doubles.
+    std::cout << "Test 2 - as a std::array...";
     std::array<double, size> double_arr = {-100.2, 10.2, 20.0, 9.0, 7.5, 7.2};
     std::array<double, size> sorted_arr = sorting::gnomeSort(double_arr);
+    assert(std::is_sorted(std::begin(sorted_arr), std::end(sorted_arr)));
+    std::cout << " Passed\n";
     for (int i = 0; i < size; i++) std::cout << double_arr[i] << " ";
+    std::cout << std::endl;
 }
 
 /**
