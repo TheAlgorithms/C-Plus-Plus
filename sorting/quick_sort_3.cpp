@@ -10,9 +10,10 @@
  * @author [Krishna Vedala](https://github/kvedala)
  */
 #include <algorithm>
-#include <array>
 #include <cassert>
+#include <ctime>
 #include <iostream>
+#include <vector>
 
 namespace {
 /**
@@ -20,11 +21,11 @@ namespace {
  * @param out std::ostream object to write to
  * @param arr array to write
  */
-template <typename T, size_t size>
-std::ostream &operator<<(std::ostream &out, const std::array<T, size> &arr) {
-    for (size_t i = 0; i < size; ++i) {
+template <typename T>
+std::ostream &operator<<(std::ostream &out, const std::vector<T> &arr) {
+    for (size_t i = 0; i < arr.size(); ++i) {
         out << arr[i];
-        if (i < size - 1) {
+        if (i < arr.size() - 1) {
             out << ", ";
         }
     }
@@ -43,8 +44,8 @@ namespace sorting {
  * 2. \f$arr[(i+1)\ldots (j-1)]\f$ contains all occurrences of pivot
  * 3. \f$arr[j\ldots r]\f$ contains all elements greater than pivot
  */
-template <typename T, size_t N>
-void partition3(std::array<T, N> *arr, int low, int high, int *i, int *j) {
+template <typename T>
+void partition3(std::vector<T> *arr, int low, int high, int *i, int *j) {
     // To handle 2 elements
     if (high - low <= 1) {
         if ((*arr)[high] < (*arr)[low]) {
@@ -73,8 +74,8 @@ void partition3(std::array<T, N> *arr, int low, int high, int *i, int *j) {
 }
 
 // 3-way partition based quick sort
-template <typename T, size_t N>
-void quicksort(std::array<T, N> *arr, int low, int high) {
+template <typename T>
+void quicksort(std::vector<T> *arr, int low, int high) {
     if (low >= high) {  // 1 or 0 elements
         return;
     }
@@ -89,8 +90,8 @@ void quicksort(std::array<T, N> *arr, int low, int high) {
     quicksort(arr, j, high);
 }
 
-template <typename T, size_t N>
-std::array<T, N> quicksort(std::array<T, N> arr, int low, int high) {
+template <typename T>
+std::vector<T> quicksort(std::vector<T> arr, int low, int high) {
     if (low >= high) {  // 1 or 0 elements
         return arr;
     }
@@ -110,22 +111,27 @@ std::array<T, N> quicksort(std::array<T, N> arr, int low, int high) {
 
 /** Test function */
 static void test() {
-    constexpr int size = 8;
-    std::array<int, size> arr{};
-    for (auto &a : arr) {
-        a = std::rand() % 100 - 50;  // random numbers between -50, 49
-    }
+    for (int num_tests = 1; num_tests < 21; num_tests++) {
+        size_t size = std::rand() % 500;
+        std::vector<int> arr(size);
+        for (auto &a : arr) {
+            a = std::rand() % 500 - 250;  // random numbers between -250, 249
+        }
 
-    std::cout << "Test 1.... ";
-    std::array<int, size> sorted = sorting::quicksort(arr, 0, size - 1);
-    std::cout << "Sorted Array is:\n\t";
-    std::cout << sorted << "\n";
-    assert(std::is_sorted(std::begin(sorted), std::end(sorted)));
-    std::cout << "passed\n";
+        std::cout << "Test " << num_tests << "\t Array size:" << size << "\t ";
+        std::vector<int> sorted = sorting::quicksort(arr, 0, size - 1);
+        if (size < 20) {
+            std::cout << "\t Sorted Array is:\n\t";
+            std::cout << sorted << "\n";
+        }
+        assert(std::is_sorted(std::begin(sorted), std::end(sorted)));
+        std::cout << "\t Passed\n";
+    }
 }
 
 /** Driver program for above functions */
 int main() {
+    std::srand(std::time(nullptr));
     test();
     return 0;
 }
