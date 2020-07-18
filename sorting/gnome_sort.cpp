@@ -33,8 +33,9 @@ namespace sorting {
 template <typename T>
 void gnomeSort(T *arr, int size) {
     // few easy cases
-    if (size <= 1)
+    if (size <= 1) {
         return;
+    }
 
     int index = 0;  // initialize some variables.
     while (index < size) {
@@ -60,8 +61,9 @@ void gnomeSort(T *arr, int size) {
 template <typename T, size_t size>
 std::array<T, size> gnomeSort(std::array<T, size> arr) {
     // few easy cases
-    if (size <= 1)
+    if (size <= 1) {
         return arr;
+    }
 
     int index = 1;  // initialize loop index
     while (index < size) {
@@ -104,11 +106,12 @@ static void test() {
     // Example 3. Creating random array of float.
     std::cout << "\nTest 3 - 200 random numbers as a std::array...";
     const int size2 = 200;
-    std::array<float, size2> rand_arr;
+    std::array<float, size2> rand_arr{};
 
-    for (auto &a : rand_arr)
+    for (auto &a : rand_arr) {
         // generate random numbers between -5.0 and 4.99
         a = float(std::rand() % 1000 - 500) / 100.f;
+    }
 
     std::array<float, size2> float_arr = sorting::gnomeSort(rand_arr);
     assert(std::is_sorted(std::begin(float_arr), std::end(float_arr)));
