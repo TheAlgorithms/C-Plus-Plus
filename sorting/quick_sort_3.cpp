@@ -45,7 +45,8 @@ namespace sorting {
  * 3. \f$arr[j\ldots r]\f$ contains all elements greater than pivot
  */
 template <typename T>
-void partition3(std::vector<T> *arr, int low, int high, int *i, int *j) {
+void partition3(std::vector<T> *arr, size_t low, size_t high, size_t *i,
+                size_t *j) {
     // To handle 2 elements
     if (high - low <= 1) {
         if ((*arr)[high] < (*arr)[low]) {
@@ -56,7 +57,7 @@ void partition3(std::vector<T> *arr, int low, int high, int *i, int *j) {
         return;
     }
 
-    int mid = low;
+    size_t mid = low;
     T pivot = (*arr)[high];
     while (mid <= high) {
         if ((*arr)[mid] < pivot) {
@@ -75,12 +76,12 @@ void partition3(std::vector<T> *arr, int low, int high, int *i, int *j) {
 
 // 3-way partition based quick sort
 template <typename T>
-void quicksort(std::vector<T> *arr, int low, int high) {
+void quicksort(std::vector<T> *arr, size_t low, size_t high) {
     if (low >= high) {  // 1 or 0 elements
         return;
     }
 
-    int i = 0, j = 0;
+    size_t i = 0, j = 0;
 
     // i and j are passed as reference
     partition3(arr, low, high, &i, &j);
@@ -91,12 +92,12 @@ void quicksort(std::vector<T> *arr, int low, int high) {
 }
 
 template <typename T>
-std::vector<T> quicksort(std::vector<T> arr, int low, int high) {
+std::vector<T> quicksort(std::vector<T> arr, size_t low, size_t high) {
     if (low >= high) {  // 1 or 0 elements
         return arr;
     }
 
-    int i = 0, j = 0;
+    size_t i = 0, j = 0;
 
     // i and j are passed as reference
     partition3(&arr, low, high, &i, &j);
