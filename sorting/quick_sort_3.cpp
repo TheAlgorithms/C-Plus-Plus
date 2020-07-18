@@ -79,7 +79,7 @@ void quicksort(std::array<T, N> *arr, int low, int high) {
         return;
     }
 
-    int i, j;
+    int i = 0, j = 0;
 
     // i and j are passed as reference
     partition3(arr, low, high, &i, &j);
@@ -95,7 +95,7 @@ std::array<T, N> quicksort(std::array<T, N> arr, int low, int high) {
         return arr;
     }
 
-    int i, j;
+    int i = 0, j = 0;
 
     // i and j are passed as reference
     partition3(&arr, low, high, &i, &j);
