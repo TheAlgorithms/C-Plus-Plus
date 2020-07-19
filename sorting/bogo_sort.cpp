@@ -9,10 +9,10 @@
  *      exist: a deterministic version that enumerates all permutations until it hits a sorted one,
  *      and a randomized version that randomly permutes its input.Randomized version is implemented here. 
  *
- * Algorithm -      
- *      
- *      Shuffle the array untill array is sorted.
+ * ### Algorithm
+ * Shuffle the array untill array is sorted.
  *
+ * @author [Deep Raval](https://github.com/imdeep2905)
  */
 #include <iostream>
 #include <algorithm>
