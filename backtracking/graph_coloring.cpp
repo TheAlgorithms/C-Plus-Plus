@@ -32,8 +32,8 @@ void printSolution(const int *color, int V) {
  * @returns `true` if ....
  * @returns `false` if ....
  */
-template <int V>
-bool isSafe(int v, std::array <bool, V> graph, const int *color, int c) {
+template <size_t V>
+bool isSafe(int v, const std::array<std::array <bool, V>> &graph, const int *color, int c) {
     for (int i = 0; i < V; i++) {
         if (graph[v][i] && c == color[i]) {
             return false;
@@ -50,23 +50,23 @@ bool isSafe(int v, std::array <bool, V> graph, const int *color, int c) {
  * that this parameter gets modified by the function
  * @param v description
  */
-template <int V>
-void graphColoring(std::array <bool, V> graph, int m, int color[V], int v) {
+template <size_t V>
+void graphColoring(const std::array<std::array <bool, V>> &graph, int m, int *color, int v) {
     // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
-        printSolution(color, V);
+        backtracking::printSolution(color, V);
         return;
     }
 
     // Consider this vertex v and try different colors
     for (int c = 1; c <= m; c++) {
         // Check if assignment of color c to v is fine
-        if (isSafe<V>(v, graph, color, c)) {
+        if (backtracking::isSafe<V>(v, graph, color, c)) {
             color[v] = c;
 
             // recur to assign colors to rest of the vertices
-            graphColoring<V>(graph, m, color, v + 1);
+            backtracking::graphColoring<V>(graph, m, color, v + 1);
 
             // If assigning color c doesn't lead to a solution then remove it
             color[v] = 0;
@@ -95,7 +95,7 @@ int main() {
     };
     int m = 3;  // Number of colors
 
-    int color[V];
+    std::array <int, V> color = {};
 
     for (int i = 0; i < V; i++) {
         color[i] = 0;
