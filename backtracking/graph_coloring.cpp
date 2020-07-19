@@ -34,7 +34,7 @@ void printSolution(const int *color, int V) {
  * @returns `false` if ....
  */
 template <size_t V>
-bool isSafe(int v, const std::array<std::array <bool, V>> &graph, const int *color, int c) {
+bool isSafe(int v, const std::array<std::array <bool, V>, 81> &graph, const int *color, int c) {
     for (int i = 0; i < V; i++) {
         if (graph[v][i] && c == color[i]) {
             return false;
@@ -52,7 +52,7 @@ bool isSafe(int v, const std::array<std::array <bool, V>> &graph, const int *col
  * @param v description
  */
 template <size_t V>
-void graphColoring(const std::array<std::array <bool, V>> &graph, int m, int *color, int v) {
+void graphColoring(const std::array<std::array <bool, V>, 81> &graph, int m, int *color, int v) {
     // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
