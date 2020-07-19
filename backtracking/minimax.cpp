@@ -23,7 +23,7 @@ namespace backtracking {
  */
 template <size_t T>
 int minimax(int depth, int node_index, bool is_max,
-            const std::array<int, T> &scores, int height) {
+            const std::array<int, T> &scores, double height) {
     if (depth == height) {
         return scores[node_index];
     }
