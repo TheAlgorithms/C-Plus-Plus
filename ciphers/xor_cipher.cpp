@@ -6,10 +6,10 @@
  * In cryptography, the simple XOR cipher is a type of additive cipher, an encryption 
  * algorithm that operates according to the principles: 
  *
- * \f$A {\oplus} 0 = A\f$
- * \f$A {\oplus} A = 0\f$
- * \f$ (A {\oplus} B) {\oplus} C = A {\oplus} (B {\oplus} C)\f$
- * \f$ (B {\oplus} A) {\oplus} B = B {\oplus} 0 = B \f$
+ * * \f$A {\oplus} 0 = A\f$
+ * * \f$A {\oplus} A = 0\f$
+ * * \f$ (A {\oplus} B) {\oplus} C = A {\oplus} (B {\oplus} C)\f$
+ * * \f$ (B {\oplus} A) {\oplus} B = B {\oplus} 0 = B \f$
  * 
  * 
  * where \f$\oplus\f$ symbol denotes the exclusive disjunction (XOR) operation.
