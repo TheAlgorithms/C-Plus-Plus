@@ -6,13 +6,13 @@
  * In cryptography, the simple XOR cipher is a type of additive cipher, an encryption 
  * algorithm that operates according to the principles: 
  *
- * \f[A {\oplus} 0 = A\f]
- * \f[A {\oplus} A = 0\f]
- * \f[ (A {\oplus} B) {\oplus} C = A {\oplus} (B {\oplus} C)\f]
- * \f[ (B {\oplus} A) {\oplus} B = B {\oplus} 0 = B \f]
+ * \f$A {\oplus} 0 = A\f$
+ * \f$A {\oplus} A = 0\f$
+ * \f$ (A {\oplus} B) {\oplus} C = A {\oplus} (B {\oplus} C)\f$
+ * \f$ (B {\oplus} A) {\oplus} B = B {\oplus} 0 = B \f$
  * 
  * 
- * where {\displaystyle \oplus }\oplus  denotes the exclusive disjunction (XOR) operation.
+ * where \f$\oplus\f$ symbol denotes the exclusive disjunction (XOR) operation.
  * This operation is sometimes called modulus 2 addition (or subtraction, which is identical).
  * With this logic, a string of text can be encrypted by applying the bitwise XOR operator to
  * every character using a given key. To decrypt the output, merely reapplying the XOR function 
@@ -42,11 +42,11 @@ namespace ciphers {
          * Encrypt given text using XOR cipher.
          * @param text text to be encrypted
          * @param key to be used for encyption
-         * @returns new encrypted text
+         * @return new encrypted text
          */
         std::string encrypt (const std::string &text, const int &key) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
-            for (char c : text) { // Going through each character
+            for (auto &c: text) { // Going through each character
                 char encrypted_char = char(c ^ key); // Applying encyption
                 encrypted_text += encrypted_char; // Appending encrypted character
             }
@@ -56,11 +56,11 @@ namespace ciphers {
          * Decrypt given text using XOR cipher.
          * @param text text to be encrypted
          * @param key to be used for decryption
-         * @returns new decrypted text
+         * @return new decrypted text
          */        
         std::string decrypt (const std::string &text, const int &key) {
             std::string decrypted_text = ""; // Empty string to store decrypted text
-            for (char c : text) { // Going through each character
+            for (auto &c : text) { // Going through each character
                 char decrypted_char = char(c ^ key); // Applying decryption
                 decrypted_text += decrypted_char; // Appending decrypted character
             }
