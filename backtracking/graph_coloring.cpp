@@ -3,6 +3,7 @@
  * @brief prints the assigned colors
  */
 #include <iostream>
+#include <array>
 
 /**
  * @namespace
@@ -32,7 +33,7 @@ void printSolution(const int *color, int V) {
  * @returns `false` if ....
  */
 template <int V>
-bool isSafe(int v, const bool graph[V][V], const int *color, int c) {
+bool isSafe(int v, std::array <bool, V> graph, const int *color, int c) {
     for (int i = 0; i < V; i++) {
         if (graph[v][i] && c == color[i]) {
             return false;
@@ -50,7 +51,7 @@ bool isSafe(int v, const bool graph[V][V], const int *color, int c) {
  * @param v description
  */
 template <int V>
-void graphColoring(bool graph[V][V], int m, int color[V], int v) {
+void graphColoring(std::array <bool, V> graph, int m, int color[V], int v) {
     // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
@@ -72,7 +73,7 @@ void graphColoring(bool graph[V][V], int m, int color[V], int v) {
         }
     }
 }
-}  // namespace
+}  // namespace backtracking
 
 /**
  * Main function
@@ -86,7 +87,7 @@ int main() {
     // (0)---(1)
 
     const int V = 4;  // number of vertices in the graph
-    bool graph[V][V] = {
+    std::array <bool, V> graph = {
         {0, 1, 1, 1},
         {1, 0, 1, 0},
         {1, 1, 0, 1},
@@ -100,6 +101,6 @@ int main() {
         color[i] = 0;
     }
 
-    graphColoring<V>(graph, m, color, 0);
+    backtracking::graphColoring<V>(graph, m, color, 0);
     return 0;
 }
