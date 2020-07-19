@@ -1,5 +1,10 @@
 #include <iostream>
 
+/**
+ * @namespace backtracking
+ * @brief Backtracking algorithms
+ */
+namespace backtracking {
 bool isPossible(const int **mat, int i, int j, int no, int n) {
     /// Row or col nahin hona chahiye
     for (int x = 0; x < n; x++) {
@@ -73,6 +78,7 @@ bool solveSudoku(int **mat, int i, int j) {
     mat[i][j] = 0;
     return false;
 }
+} // namespace backtracking
 
 /**
  * Main function
@@ -84,9 +90,9 @@ int main() {
                      {0, 6, 0, 0, 0, 0, 2, 8, 0}, {0, 0, 0, 4, 1, 9, 0, 0, 5},
                      {0, 0, 0, 0, 8, 0, 0, 7, 9}};
 
-    printMat(mat, 9);
+    backtracking::printMat(mat, 9);
     std::cout << "Solution " << std::endl;
-    solveSudoku(mat, 0, 0);
+    backtracking::solveSudoku(mat, 0, 0);
 
     return 0;
 }
