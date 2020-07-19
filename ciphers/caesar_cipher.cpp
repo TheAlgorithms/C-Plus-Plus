@@ -18,7 +18,7 @@
  * while decryption can be described as,
  * \f[ D(x) = (x - n) \;\mbox{mod}\; 26\f]
  * 
- * \note This program implements caesar cipher for only uppercase english latters (i.e. A-Z). 
+ * \note This program implements caesar cipher for only uppercase English alphabet characters (i.e. A-Z). 
  * 
  * @author [Deep Raval](https://github.com/imdeep2905)
  */
