@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[8,0,7,1,6],
+"db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,1,3],
+"db/d07/spiral__print_8cpp.html":[8,0,8,13],
+"db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[8,0,8,13,2],
+"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[8,0,8,13,0],
 "db/d07/spiral__print_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,13,1],
 "db/d0d/prime__factorization_8cpp.html":[8,0,6,23],
 "db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46":[8,0,6,23,1],
@@ -150,9 +155,9 @@ var NAVTREEINDEX3 =
 "dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,36,3],
 "dd/d3b/struct_entry.html":[7,0,11],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,11,3],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,1],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,0],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,2],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,1],
 "dd/d4f/class_solution.html":[7,0,31],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,31,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,31,0],
@@ -167,6 +172,7 @@ var NAVTREEINDEX3 =
 "dd/d65/lu__decompose_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,7,6,2],
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,7,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[8,0,7,6,1],
+"dd/d81/namespacecaesar.html":[6,0,0],
 "dd/d91/class_fenwick_tree.html":[7,0,12],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[7,0,12,4],
 "dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00":[7,0,12,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "de/d9b/prime__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,24,0],
 "de/dc3/binaryheap_8cpp.html":[8,0,1,3],
 "de/dc3/binaryheap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,1,3,1],
-"de/dcf/binary__exponent_8cpp.html":[8,0,6,1],
-"de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f":[8,0,6,1,1],
-"de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,1,2],
-"de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73":[8,0,6,1,0],
-"de/dd3/newton__raphson__method_8cpp.html":[8,0,7,8],
-"de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[8,0,7,8,0],
-"de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386":[8,0,7,8,1]
+"de/dcf/binary__exponent_8cpp.html":[8,0,6,1]
 };
