@@ -88,11 +88,11 @@ int main() {
     // (0)---(1)
 
     const int V = 4;  // number of vertices in the graph
-    std::array <bool, V> graph = {
-        {0, 1, 1, 1},
-        {1, 0, 1, 0},
-        {1, 1, 0, 1},
-        {1, 0, 1, 0},
+    std::array <std::array <int, V>, V> graph = {
+        {0, 1, 1, 1,
+        1, 0, 1, 0,
+        1, 1, 0, 1,
+        1, 0, 1, 0}
     };
     int m = 3;  // Number of colors
 
