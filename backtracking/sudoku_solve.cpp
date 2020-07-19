@@ -47,26 +47,26 @@ bool solveSudoku(int **mat, int i, int j) {
     /// Base Case
     if (i == 9) {
         /// Solve kr chuke hain for 9 rows already
-        printMat(mat, 9);
+        backtracking::printMat(mat, 9);
         return true;
     }
 
     /// Crossed the last  Cell in the row
     if (j == 9) {
-        return solveSudoku(mat, i + 1, 0);
+        return backtracking::solveSudoku(mat, i + 1, 0);
     }
 
     /// Blue Cell - Skip
     if (mat[i][j] != 0) {
-        return solveSudoku(mat, i, j + 1);
+        return backtracking::solveSudoku(mat, i, j + 1);
     }
     /// White Cell
     /// Try to place every possible no
     for (int no = 1; no <= 9; no++) {
-        if (isPossible(mat, i, j, no, 9)) {
+        if (backtracking::isPossible(mat, i, j, no, 9)) {
             /// Place the no - assuming solution aa jayega
             mat[i][j] = no;
-            bool aageKiSolveHui = solveSudoku(mat, i, j + 1);
+            bool aageKiSolveHui = backtracking::solveSudoku(mat, i, j + 1);
             if (aageKiSolveHui) {
                 return true;
             }
