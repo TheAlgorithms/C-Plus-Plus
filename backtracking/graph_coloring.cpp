@@ -102,6 +102,6 @@ int main() {
         color[i] = 0;
     }
 
-    backtracking::graphColoring<V>(graph, m, color, 0);
+    backtracking::graphColoring<int>(graph, m, color, 0);
     return 0;
 }
