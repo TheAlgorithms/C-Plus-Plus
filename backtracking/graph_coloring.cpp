@@ -4,6 +4,7 @@
  */
 #include <iostream>
 #include <array>
+#include <vector>
 
 /**
  * @namespace
@@ -95,7 +96,7 @@ int main() {
     };
     int m = 3;  // Number of colors
 
-    std::array <int, V> color = {};
+    std::vector <int> color;
 
     for (int i = 0; i < V; i++) {
         color[i] = 0;
