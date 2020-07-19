@@ -47,7 +47,7 @@ namespace ciphers {
         std::string encrypt (const std::string &text, const int &key) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
             for (char c : text) { // Going through each character
-                char encrypted_char = c ^ key; // Applying encyption
+                char encrypted_char = char(c ^ key); // Applying encyption
                 encrypted_text += encrypted_char; // Appending encrypted character
             }
             return encrypted_text; // Returning encrypted text
@@ -61,7 +61,7 @@ namespace ciphers {
         std::string decrypt (const std::string &text, const int &key) {
             std::string decrypted_text = ""; // Empty string to store decrypted text
             for (char c : text) { // Going through each character
-                char decrypted_char = c ^ key; // Applying decryption
+                char decrypted_char = char(c ^ key); // Applying decryption
                 decrypted_text += decrypted_char; // Appending decrypted character
             }
             return decrypted_text; // Returning decrypted text
