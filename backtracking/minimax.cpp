@@ -41,7 +41,7 @@ int main() {
     std::array<int, 8> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
     int height = log2(scores.size());
 
-    std::cout << "Optimal value: " << minimax(0, 0, true, scores, height)
+    std::cout << "Optimal value: " << backtracking::minimax(0, 0, true, scores, height)
               << std::endl;
     return 0;
 }
