@@ -48,7 +48,7 @@ namespace ciphers {
             std::string encrypted_text = ""; // Empty string to store encrypted text
             for (char c : text) { // Going through each character
                 char encrypted_char = c ^ key; // Applying encyption
-                encrypted_text += c ^ key; // Appending encrypted character
+                encrypted_text += encrypted_char; // Appending encrypted character
             }
             return encrypted_text; // Returning encrypted text
         }
