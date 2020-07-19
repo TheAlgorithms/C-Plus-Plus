@@ -4,10 +4,11 @@
  */
 #include <iostream>
 
-/** \namespace
- * \brief Backtracking algorithms
+/**
+ * @namespace
+ * @brief Backtracking algorithms
  */
-namespace {
+namespace backtracking {
 /** A utility function to print solution
  * @param color description
  * @param V number of vertices in the graph
