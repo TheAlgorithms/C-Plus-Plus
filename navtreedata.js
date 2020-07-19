@@ -26,49 +26,49 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md37", null ],
-      [ "Features", "index.html#autotoc_md38", null ],
-      [ "Documentation", "index.html#autotoc_md39", null ],
-      [ "Contributions", "index.html#autotoc_md40", null ]
+      [ "Overview", "index.html#autotoc_md38", null ],
+      [ "Features", "index.html#autotoc_md39", null ],
+      [ "Documentation", "index.html#autotoc_md40", null ],
+      [ "Contributions", "index.html#autotoc_md41", null ]
     ] ],
     [ "CONTRIBUTION GUIDELINES", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Before contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ],
-      [ "Contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", [
-        [ "Contributor", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", null ],
-        [ "Making Changes", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5", [
-          [ "Code", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md6", null ],
-          [ "Documentation", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7", null ],
-          [ "Test", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md8", null ],
-          [ "Typical structure of a program:", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md9", null ],
-          [ "New File Name guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md10", null ],
-          [ "New Directory guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11", null ],
-          [ "Commit Guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md12", null ]
+      [ "Before contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3", null ],
+      [ "Contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md4", [
+        [ "Contributor", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md5", null ],
+        [ "Making Changes", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md6", [
+          [ "Code", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md7", null ],
+          [ "Documentation", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md8", null ],
+          [ "Test", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md9", null ],
+          [ "Typical structure of a program:", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md10", null ],
+          [ "New File Name guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md11", null ],
+          [ "New Directory guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md12", null ],
+          [ "Commit Guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md13", null ]
         ] ],
-        [ "Pull Requests", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md13", [
-          [ "cpplint", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md14", null ]
+        [ "Pull Requests", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md14", [
+          [ "cpplint", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ]
         ] ]
       ] ]
     ] ],
     [ "List of all files", "d5/d88/md__d_i_r_e_c_t_o_r_y.html", [
-      [ "Backtracking", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md16", null ],
-      [ "Ciphers", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md17", null ],
-      [ "Data Structures", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md18", null ],
-      [ "Dynamic Programming", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md19", null ],
-      [ "Geometry", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md20", null ],
-      [ "Graph", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md21", null ],
-      [ "Graphics", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md22", null ],
-      [ "Greedy Algorithms", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md23", null ],
-      [ "Hashing", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md24", null ],
-      [ "Machine Learning", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md25", null ],
-      [ "Math", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md26", null ],
-      [ "Numerical Methods", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md27", null ],
-      [ "Operations On Datastructures", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md28", null ],
-      [ "Others", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md29", null ],
-      [ "Probability", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md30", null ],
-      [ "Range Queries", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md31", null ],
-      [ "Search", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md32", null ],
-      [ "Sorting", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md33", null ],
-      [ "Strings", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md34", null ]
+      [ "Backtracking", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md17", null ],
+      [ "Ciphers", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md18", null ],
+      [ "Data Structures", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md19", null ],
+      [ "Dynamic Programming", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md20", null ],
+      [ "Geometry", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md21", null ],
+      [ "Graph", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md22", null ],
+      [ "Graphics", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md23", null ],
+      [ "Greedy Algorithms", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md24", null ],
+      [ "Hashing", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md25", null ],
+      [ "Machine Learning", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md26", null ],
+      [ "Math", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md27", null ],
+      [ "Numerical Methods", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md28", null ],
+      [ "Operations On Datastructures", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md29", null ],
+      [ "Others", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md30", null ],
+      [ "Probability", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md31", null ],
+      [ "Range Queries", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md32", null ],
+      [ "Search", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md33", null ],
+      [ "Sorting", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md34", null ],
+      [ "Strings", "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md35", null ]
     ] ],
     [ "Prime factorization", "d7/d7f/section.html", null ],
     [ "Todo List", "dd/da0/todo.html", null ],
@@ -107,10 +107,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/de8/fast__interger__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82",
-"d7/d7c/classstatistics_1_1stats__computer1.html",
-"db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e",
-"de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f"
+"d4/db4/struct_segment_intersection.html#aefd077282f45bd16799b53f8aa430ffd",
+"d7/d77/class_edge.html#a4d58e1f4de38fa55549497175981ebab",
+"db/d01/brent__method__extrema_8cpp.html",
+"de/d9b/prime__numbers_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

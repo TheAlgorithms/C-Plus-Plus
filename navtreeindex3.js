@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"db/d01/brent__method__extrema_8cpp.html":[8,0,7,1],
+"db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[8,0,7,1,1],
+"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,1,5],
+"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,7,1,4],
+"db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[8,0,7,1,2],
+"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[8,0,7,1,0],
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[8,0,7,1,6],
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,1,3],
 "db/d07/spiral__print_8cpp.html":[8,0,8,13],
@@ -155,8 +161,8 @@ var NAVTREEINDEX3 =
 "dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,36,3],
 "dd/d3b/struct_entry.html":[7,0,11],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,11,3],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,1],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,0],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,1],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,2],
 "dd/d4f/class_solution.html":[7,0,31],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,31,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d":[8,0,8,3,2],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a214743638eff1336f835310049aef979":[8,0,8,3,3],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780":[8,0,8,3,0],
-"de/d85/decimal__to__roman__numeral_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,3,1],
-"de/d9b/prime__numbers_8cpp.html":[8,0,6,24],
-"de/d9b/prime__numbers_8cpp.html#a3b91f208e8365c95a295cfe3e67df5c3":[8,0,6,24,1],
-"de/d9b/prime__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,24,0],
-"de/dc3/binaryheap_8cpp.html":[8,0,1,3],
-"de/dc3/binaryheap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,1,3,1],
-"de/dcf/binary__exponent_8cpp.html":[8,0,6,1]
+"de/d85/decimal__to__roman__numeral_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,3,1]
 };
