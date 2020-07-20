@@ -237,6 +237,9 @@ void test()
     std::cout << "Topmost element is: " << books.top() << "\n";
 }
 
+/**
+ * Main function
+ */
 int main()
 {
     test();
