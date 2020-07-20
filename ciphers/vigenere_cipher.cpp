@@ -74,7 +74,7 @@ namespace ciphers {
             std::string encrypted_text = ""; // Empty string to store encrypted text
             // Going through each character of text and key
             // Note that key is visited in circular way hence  j = (j + 1) % |key|
-            for(int i = 0, j = 0; i < text.length(); i++, j = (j + 1) % key.length()) {
+            for(size_t i = 0, j = 0; i < text.length(); i++, j = (j + 1) % key.length()) {
                 int place_value_text = get_value(text[i]); // Getting value of character in text
                 int place_value_key = get_value(key[j]); // Getting value of character in key
                 place_value_text = (place_value_text + place_value_key) % 26; // Applying encryption
@@ -93,7 +93,7 @@ namespace ciphers {
             // Going through each character of text and key
             // Note that key is visited in circular way hence  j = (j + 1) % |key|
             std::string decrypted_text = ""; // Empty string to store decrypted text
-            for(int i = 0, j = 0; i < text.length(); i++, j = (j + 1) % key.length()) {
+            for(size_t i = 0, j = 0; i < text.length(); i++, j = (j + 1) % key.length()) {
                 int place_value_text = get_value(text[i]); // Getting value of character in text
                 int place_value_key = get_value(key[j]); // Getting value of character in key
                 place_value_text = (place_value_text - place_value_key + 26) % 26; // Applying decryption
