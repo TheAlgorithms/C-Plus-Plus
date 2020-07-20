@@ -10,5 +10,6 @@ var namespaces_dup =
     [ "statistics", "d2/dcf/namespacestatistics.html", null ],
     [ "std", "d8/dcc/namespacestd.html", null ],
     [ "string_search", "d9/d03/namespacestring__search.html", null ],
+    [ "vigenere", "d6/da2/namespacevigenere.html", null ],
     [ "XOR", "d7/d47/namespace_x_o_r.html", null ]
 ];

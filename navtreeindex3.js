@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689":[8,0,7,2,0],
 "db/d01/brent__method__extrema_8cpp.html":[8,0,7,1],
 "db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[8,0,7,1,1],
 "db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,1,5],
@@ -140,6 +141,11 @@ var NAVTREEINDEX3 =
 "dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,12,5,4],
 "dd/d0d/insertion__sort_8cpp.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f":[8,0,12,5,1],
 "dd/d0d/insertion__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,12,5,3],
+"dd/d12/vigenere__cipher_8cpp.html":[8,0,0,2],
+"dd/d12/vigenere__cipher_8cpp.html#a3cfc3f9b20a0f230a2fcefd31dc6848e":[8,0,0,2,0],
+"dd/d12/vigenere__cipher_8cpp.html#a6bd3880ea6820c232c1eddf47553c257":[8,0,0,2,1],
+"dd/d12/vigenere__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[8,0,0,2,3],
+"dd/d12/vigenere__cipher_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,0,2,2],
 "dd/d1b/structquery.html":[7,0,26],
 "dd/d1b/structquery.html#a1442afb70f26fd0655914632c0dcadcd":[7,0,26,0],
 "dd/d1b/structquery.html#a748f5dfd8faf440897bab39091f0a5ca":[7,0,26,2],
@@ -161,9 +167,9 @@ var NAVTREEINDEX3 =
 "dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,36,3],
 "dd/d3b/struct_entry.html":[7,0,11],
 "dd/d3b/struct_entry.html#acef39096ad1bc616755a4c120a713cea":[7,0,11,3],
-"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,0],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,1],
 "dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,2],
+"dd/d3b/struct_entry.html#aeda5da9d6e79cb91d566e85af94fc372":[7,0,11,0],
 "dd/d4f/class_solution.html":[7,0,31],
 "dd/d4f/class_solution.html#a0a92d4ba2a822ae87e4c8a7c321024c0":[7,0,31,7],
 "dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc":[7,0,31,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "de/d75/qr__eigen__values_8cpp.html#a33cb0a68c36aa26fd599c7c66da86ed7":[8,0,7,14,1],
 "de/d75/qr__eigen__values_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,7,14,3],
 "de/d75/qr__eigen__values_8cpp.html#a7558fd7779bf207157ced66f275951a0":[8,0,7,14,4],
-"de/d75/qr__eigen__values_8cpp.html#a763896dbb4a7e95c4a1e614ac0819d66":[8,0,7,14,2],
-"de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40":[8,0,7,14,0],
-"de/d85/decimal__to__roman__numeral_8cpp.html":[8,0,8,3],
-"de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d":[8,0,8,3,2],
-"de/d85/decimal__to__roman__numeral_8cpp.html#a214743638eff1336f835310049aef979":[8,0,8,3,3],
-"de/d85/decimal__to__roman__numeral_8cpp.html#a88203bd297e8405160c132faa1187780":[8,0,8,3,0],
-"de/d85/decimal__to__roman__numeral_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,8,3,1]
+"de/d75/qr__eigen__values_8cpp.html#a763896dbb4a7e95c4a1e614ac0819d66":[8,0,7,14,2]
 };
