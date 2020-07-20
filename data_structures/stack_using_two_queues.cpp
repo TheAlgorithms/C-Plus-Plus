@@ -16,7 +16,11 @@
 #include <queue>
 #include <string>
 
-namespace
+/**
+ * @namespace data_structures
+ * @brief Data Structures algorithms
+ */
+namespace data_structures
 {
     template <typename T>
     class Stack
@@ -26,13 +30,13 @@ namespace
 
     public:
         /**
-     * Pushes the given element to top of stack
-     */
+         * Pushes the given element to top of stack
+         */
         void push(T data) { q1.push(data); }
 
         /**
-     * Pops the topmost element of stack
-     */
+         * Pops the topmost element of stack
+         */
         void pop()
         {
             // push first n-1 elements from q1 to q2
@@ -56,9 +60,9 @@ namespace
         }
 
         /**
-     * Returns the topmost element of stack.
-     * Returns -1 if stack is empty
-     */
+         * Returns the topmost element of stack.
+         * Returns -1 if stack is empty
+         */
         T top()
         {
             if (q1.size() == 0)
@@ -83,17 +87,17 @@ namespace
         }
 
         /**
-     * Returns the size of stack
-     */
+         * Returns the size of stack
+         */
         int size() { return q1.size() + q2.size(); }
 
         /**
-     * Returns true if stack is empty, otherwise false
-     */
+         * Returns true if stack is empty, otherwise false
+         */
         bool empty() { return (q1.size() == 0); }
     };
 
-} // namespace
+} // namespace data_structures
 
 /**
  * class Book with book name and it's price
@@ -106,42 +110,42 @@ private:
 
 public:
     /**
-    * default constructor
-    */
+     * default constructor
+     */
     Book()
     {
     }
 
     /**
-    * parameterized constructor
-    */
+     * parameterized constructor
+     */
     Book(std::string book_name, double book_price)
         : book_name{std::move(book_name)}, book_price{std::move(book_price)}
     {
     }
 
     /**
-    * Returns name of the book
-    */
+     * Returns name of the book
+     */
     std::string get_book_name() const
     {
         return this->book_name;
     }
 
     /**
-    * Returns price of the book
-    */
+     * Returns price of the book
+     */
     double get_book_price() const
     {
         return this->book_price;
     }
 
     /**
-    * comparison of two books
-    */
+     * comparison of two books
+     */
     bool operator==(const Book &b) const
     {
-        return ((b.get_book_name() == this->book_name) and (b.get_book_price() == this->book_price));
+        return ((b.get_book_name() == this->book_name) && (b.get_book_price() == this->book_price));
     }
 };
 
@@ -158,7 +162,7 @@ std::ostream &operator<<(std::ostream &os, const Book &book)
  * utility function to print stack
  */
 template <typename T>
-void print(Stack<T> s)
+void print(data_structures::Stack<T> s)
 {
     while (!s.empty())
     {
@@ -174,7 +178,7 @@ void print(Stack<T> s)
 void test()
 {
     // stack of integers
-    Stack<int> s;
+    data_structures::Stack<int> s;
 
     // push
     for (int i = 0; i < 10; i++)
@@ -204,7 +208,7 @@ void test()
     std::cout << "Topmost element is: " << s.top() << "\n";
 
     // stack of books
-    Stack<Book> books;
+    data_structures::Stack<Book> books;
 
     books.push(Book("The Philosophy of Prayer", 1122.99));
     books.push(Book("Mahatma Gandhi Autobiography", 114.98));
