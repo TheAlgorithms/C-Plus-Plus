@@ -15,12 +15,11 @@
 #include <iostream>
 #include <queue>
 
-using namespace std;
 
 template <typename T>
 class Stack {
  private:
-    queue<T> q1, q2;
+    std::queue<T> q1, q2;
 
  public:
     /**
@@ -115,20 +114,20 @@ void test() {
 
     // now stack is empty
     if (s.empty()) {
-        cout << "stack is empty\n";
+        std::cout << "stack is empty\n";
     }
 
     assert(s.top() == -1);
 
     // since stack is empty, this will return -1
-    cout << s.top() << "\n";
+    std::cout << s.top() << "\n";
 
     for (int i = 0; i < 10; i++) {
         s.push(i);
     }
 
     // size of stack
-    cout << "stack contains " << s.size() << " elements\n";
+    std::cout << "stack contains " << s.size() << " elements\n";
 
     print(s);
 }
