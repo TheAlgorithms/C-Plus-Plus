@@ -15,7 +15,6 @@
 #include <iostream>
 #include <queue>
 
-
 template <typename T>
 class Stack {
  private:
@@ -90,10 +89,10 @@ class Stack {
 template <typename T>
 void print(Stack<T> &s) {
     while (!s.empty()) {
-        cout << s.top() << " ";
+        std::cout << s.top() << " ";
         s.pop();
     }
-    cout << "\n";
+    std::cout << "\n";
 }
 
 /**
