@@ -39,7 +39,7 @@
  */
 namespace ciphers {
     /** \namespace vigenere
-     * \brief Functions for [vigenere cipher](https://en.wikipedia.org/wiki/Caesar_cipher) algorithm.
+     * \brief Functions for [vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) algorithm.
      */
     namespace vigenere {   
         namespace {
