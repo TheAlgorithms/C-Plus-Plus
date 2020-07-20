@@ -101,15 +101,14 @@ namespace
 class Book
 {
 private:
-    std::string book_name;
-    double book_price;
+    std::string book_name{std::string()};
+    double book_price{double()};
 
 public:
     /**
     * default constructor
     */
     Book()
-        : book_name{std::string()}, book_price{float()}
     {
     }
 
@@ -117,7 +116,7 @@ public:
     * parameterized constructor
     */
     Book(std::string book_name, double book_price)
-        : book_name{book_name}, book_price{book_price}
+        : book_name{std::move(book_name)}, book_price{std::move(book_price)}
     {
     }
 
