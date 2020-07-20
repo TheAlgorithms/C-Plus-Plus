@@ -24,7 +24,7 @@
  * If M = "ATTACKATDAWN" and K = "LEMON" than K becomes "LEMONLEMONLE".
  * 
  * \note Rather than creating new key of equal length this program does this by using modular index for key
- * (i.e. \f$(j + 1) \;\mbox{mod}\; |key|\f$)
+ * (i.e. \f$(j + 1) \;\mbox{mod}\; |\mbox{key}|\f$)
  * 
  * \note This program implements Vigenère cipher for only uppercase English alphabet characters (i.e. A-Z). 
  * 
