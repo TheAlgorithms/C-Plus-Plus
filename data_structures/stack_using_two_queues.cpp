@@ -112,15 +112,13 @@ public:
     /**
      * default constructor
      */
-    Book()
-    {
-    }
+    Book() = default;
 
     /**
      * parameterized constructor
      */
     Book(std::string book_name, double book_price)
-        : book_name{std::move(book_name)}, book_price{std::move(book_price)}
+        : book_name{std::move(book_name)}, book_price{book_price}
     {
     }
 
