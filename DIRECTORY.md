@@ -13,6 +13,7 @@
 ## Ciphers
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
+  * [Vigenere Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/vigenere_cipher.cpp)
   * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
 ## Data Structures
