@@ -6,7 +6,8 @@
  * @brief Backtracking algorithms
  */
 namespace backtracking {
-    bool isPossible(const std::array <std::array <int, 81>, 81> &mat, int i, int j, int no, int n) {
+    template <size_t V>
+    bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, int no, int n) {
         /// Row or col nahin hona chahiye
         for (int x = 0; x < n; x++) {
             if (mat[x][j] == no || mat[i][x] == no) {
@@ -29,7 +30,8 @@ namespace backtracking {
         return true;
     }
 
-    void printMat(const std::array <std::array <int, 81>, 81> &mat, int n) {
+    template <size_t V>
+    void printMat(const std::array <std::array <int, V>, V> &mat, int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 std::cout << mat[i][j] << " ";
@@ -44,30 +46,31 @@ namespace backtracking {
         }
     }
 
-    bool solveSudoku(std::array <std::array <int, 81>, 81> mat, int i, int j) {
+    template <size_t V>
+    bool solveSudoku(std::array <std::array <int, V>, V> &mat, int i, int j) {
         /// Base Case
         if (i == 9) {
             /// Solve kr chuke hain for 9 rows already
-            backtracking::printMat(mat, 9);
+            backtracking::printMat<V>(mat, 9);
             return true;
         }
 
         /// Crossed the last  Cell in the row
         if (j == 9) {
-            return backtracking::solveSudoku(mat, i + 1, 0);
+            return backtracking::solveSudoku<V>(mat, i + 1, 0);
         }
 
         /// Blue Cell - Skip
         if (mat[i][j] != 0) {
-            return backtracking::solveSudoku(mat, i, j + 1);
+            return backtracking::solveSudoku<V>(mat, i, j + 1);
         }
         /// White Cell
         /// Try to place every possible no
         for (int no = 1; no <= 9; no++) {
-            if (backtracking::isPossible(mat, i, j, no, 9)) {
+            if (backtracking::isPossible<V>(mat, i, j, no, 9)) {
                 /// Place the no - assuming solution aa jayega
                 mat[i][j] = no;
-                bool aageKiSolveHui = backtracking::solveSudoku(mat, i, j + 1);
+                bool aageKiSolveHui = backtracking::solveSudoku<V>(mat, i, j + 1);
                 if (aageKiSolveHui) {
                     return true;
                 }
@@ -85,15 +88,16 @@ namespace backtracking {
  * Main function
  */
 int main() {
-    std::array <std::array <int, 81>, 81>  mat = {5, 3, 0, 0, 7, 0, 0, 0, 0, 6, 0, 0, 1, 9, 5, 0, 0, 0,
+    const int V = 9;
+    std::array <std::array <int, V>, V> mat = { 5, 3, 0, 0, 7, 0, 0, 0, 0, 6, 0, 0, 1, 9, 5, 0, 0, 0,
                      0, 9, 8, 0, 0, 0, 0, 6, 0, 8, 0, 0, 0, 6, 0, 0, 0, 3,
                      4, 0, 0, 8, 0, 3, 0, 0, 1, 7, 0, 0, 0, 2, 0, 0, 0, 6,
                      0, 6, 0, 0, 0, 0, 2, 8, 0, 0, 0, 0, 4, 1, 9, 0, 0, 5,
-                     0, 0, 0, 0, 8, 0, 0, 7, 9};
+                     0, 0, 0, 0, 8, 0, 0, 7, 9 };
 
-    backtracking::printMat(mat, 9);
+    backtracking::printMat<V>(mat, 9);
     std::cout << "Solution " << std::endl;
-    backtracking::solveSudoku(mat, 0, 0);
+    backtracking::solveSudoku<V>(mat, 0, 0);
 
     return 0;
 }
