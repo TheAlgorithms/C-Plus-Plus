@@ -55,8 +55,9 @@ class Stack {
      * Returns -1 if stack is empty
      */
     T top() {
-        if (q1.size() == 0)
+        if (q1.size() == 0) {
             return -1;
+        }
 
         while (q1.size() > 1) {
             q2.push(q1.front());
