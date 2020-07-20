@@ -40,7 +40,9 @@ public:
         // pop the last element from q1
         // swap q1 and q2
         if (q1.size() == 0)
-            return;
+        {
+            return -1;
+        }
 
         while (q1.size() > 1)
         {
@@ -119,7 +121,9 @@ void test()
 
     // push
     for (int i = 0; i < 10; i++)
+    {
         s.push(i);
+    }
 
     assert(s.size() == 10);
 
@@ -128,7 +132,9 @@ void test()
 
     // now stack is empty
     if (s.empty())
+    {
         cout << "stack is empty\n";
+    }
 
     assert(s.top() == -1);
 
@@ -136,7 +142,9 @@ void test()
     cout << s.top() << "\n";
 
     for (int i = 0; i < 10; i++)
+    {
         s.push(i);
+    }
 
     // size of stack
     cout << "stack contains " << s.size() << " elements\n";
