@@ -17,7 +17,7 @@
  *
  * \f[ D_{k}(C_{i}) = (C_{i} - K_{i} + 26)\;\mbox{mod}\; 26\f]
  * 
- * Where \f$K_{i}\f$ denotes corresponding character in key. If \f$\|key| < |text|\f$ than
+ * Where \f$K_{i}\f$ denotes corresponding character in key. If \f$|key| < |text|\f$ than
  * same key is repeated untill their lengths are equal.
  * 
  * For Example,
