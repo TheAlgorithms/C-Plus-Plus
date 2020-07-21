@@ -16,7 +16,7 @@ namespace backtracking {
      * @param V number of vertices in the graph
      */
     template <size_t V>
-    void printSolution(const std::array <int, V>& color, int V) {
+    void printSolution(const std::array <int, V>& color) {
         std::cout << "Following are the assigned colors\n";
         for (auto &col : color) {
             std::cout << col;
@@ -57,7 +57,7 @@ namespace backtracking {
         // base case:
         // If all vertices are assigned a color then return true
         if (v == V) {
-            backtracking::printSolution(color, V);
+            backtracking::printSolution<V>(color);
             return;
         }
 
@@ -90,11 +90,11 @@ int main() {
 
     const int V = 4;  // number of vertices in the graph
     std::array <std::array <int, V>, V> graph = {
-         {0, 1, 1, 1},
-         {1, 0, 1, 0},
-         {1, 1, 0, 1},
-         {1, 0, 1, 0}
-    }
+        {0, 1, 1, 1,
+        1, 0, 1, 0,
+        1, 1, 0, 1,
+        1, 0, 1, 0}
+    };
 
     int m = 3;  // Number of colors
     std::array <int, V> color{};
