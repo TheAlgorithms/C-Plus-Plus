@@ -90,10 +90,10 @@ int main() {
 
     const int V = 4;  // number of vertices in the graph
     std::array <std::array <int, V>, V> graph = {
-        {0, 1, 1, 1,
-        1, 0, 1, 0,
-        1, 1, 0, 1,
-        1, 0, 1, 0}
+        std::array <int, V>({0, 1, 1, 1}),
+        std::array <int, V>({1, 0, 1, 0}),
+        std::array <int, V>({1, 1, 0, 1}),
+        std::array <int, V>({1, 0, 1, 0})
     };
 
     int m = 3;  // Number of colors
