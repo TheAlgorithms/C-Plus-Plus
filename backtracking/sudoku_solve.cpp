@@ -1,3 +1,11 @@
+/**
+ * @file
+ * @brief [Sudoku Solver](https://en.wikipedia.org/wiki/Sudoku) algorithm.
+ *
+ * @author [DarthCoder3200](https://github.com/DarthCoder3200)
+ * @author [David Leal](https://github.com/Panquesito7)
+ */
+
 #include <iostream>
 #include <array>
 
