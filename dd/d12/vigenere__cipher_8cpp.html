@@ -135,15 +135,15 @@ Functions</h2></td></tr>
 <p>The Vigenère cipher is a method of encrypting alphabetic text by using a series of interwoven vigenere ciphers, based on the letters of a keyword. It employs a form of polyalphabetic substitution.</p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Algorithm</h3>
-<p>The encryption can also be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A → 0, B → 1, ..., Z → 25. Encryption of \(\i^{th}\) character in Message M by key K can be described mathematically as,</p>
+<p>The encryption can also be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A → 0, B → 1, ..., Z → 25. Encryption of \(i^{th}\) character in Message M by key K can be described mathematically as,</p>
 <p class="formulaDsp">
 \[ E_{K}(M_{i}) = (M_{i} + K_{i})\;\mbox{mod}\; 26\]
 </p>
-<p>while decryption of \(\i^{th}\) character in Cipher C by key K can be described mathematically as,</p>
+<p>while decryption of \(i^{th}\) character in Cipher C by key K can be described mathematically as,</p>
 <p class="formulaDsp">
 \[ D_{k}(C_{i}) = (C_{i} - K_{i} + 26)\;\mbox{mod}\; 26\]
 </p>
-<p>Where \(\K_{i}\) denotes corresponding character in key. If \(\|key| &lt; |text|\) than same key is repeated untill their lengths are equal.</p>
+<p>Where \(K_{i}\) denotes corresponding character in key. If \(|key| &lt; |text|\) than same key is repeated untill their lengths are equal.</p>
 <p>For Example, If M = "ATTACKATDAWN" and K = "LEMON" than K becomes "LEMONLEMONLE".</p>
 <dl class="section note"><dt>Note</dt><dd>Rather than creating new key of equal length this program does this by using modular index for key (i.e. \((j + 1) \;\mbox{mod}\; |\mbox{key}|\))</dd>
 <dd>
