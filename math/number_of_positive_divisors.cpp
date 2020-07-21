@@ -2,7 +2,7 @@
  * @file
  * @brief C++ Program to calculate number of divisors
  *
- * This algorithm use the prime factorization approach.
+ * This algorithm uses the prime factorization approach.
  * Any number can be written in multiplication of its prime factors.
  * <br/>Let N = P1^E1 * P2^E2 ... Pk^Ek
  * <br/>Therefore. number-of-divisors(N) = (E1+1) * (E2+1) ... (Ek+1).
@@ -25,6 +25,7 @@ respectively.
  *
 **/
 
+#include <cassert>
 #include <iostream>
 #include <vector>
 
@@ -32,39 +33,44 @@ respectively.
  * Algorithm
  */
 int number_of_positive_divisors(int n) {
-    std::vector<int> prime_exponent_count;
-    for (int i = 2; i * i <= n; i++) {
-        int prime_count = 0;
-        while (n % i == 0) {
-            prime_count += 1;
-            n /= i;
-        }
-        if (prime_count != 0) {
-            prime_exponent_count.push_back(prime_count);
-        }
-    }
-    if (n > 1) {
-        prime_exponent_count.push_back(1);
+    if (n < 0) {
+        n = -n;
     }
 
     int divisors_count = 1;
-
-    for (int i = 0; i < prime_exponent_count.size(); i++) {
-        divisors_count = divisors_count * (prime_exponent_count[i] + 1);
+    for (int i = 2; i * i <= n; i++) {
+        int prime_count = 0;
+        while (n % i == 0) {
+            prime_count++;
+            n /= i;
+        }
+        divisors_count *= prime_count + 1;
+    }
+    if (n > 1) {
+        divisors_count *= 2;
     }
 
     return divisors_count;
 }
 
 /**
+ * Test implementations
+ */
+void tests() {
+    assert(number_of_positive_divisors(36) == 9);
+    assert(number_of_positive_divisors(-36) == 9);
+    assert(number_of_positive_divisors(1) == 1);
+    assert(number_of_positive_divisors(2011) == 2); // 2011 is a prime
+    assert(number_of_positive_divisors(756) == 24); // 756 = 2^2 * 3^3 * 7
+}
+
+/**
  * Main function
  */
 int main() {
+    tests();
     int n;
     std::cin >> n;
-    if (n < 0) {
-        n = -n;
-    }
     if (n == 0) {
         std::cout << "All non-zero numbers are divisors of 0 !" << std::endl;
     } else {
