@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"de/d75/qr__eigen__values_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,14,6],
+"de/d75/qr__eigen__values_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,7,14,5],
+"de/d75/qr__eigen__values_8cpp.html#a33cb0a68c36aa26fd599c7c66da86ed7":[8,0,7,14,1],
+"de/d75/qr__eigen__values_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,7,14,3],
+"de/d75/qr__eigen__values_8cpp.html#a7558fd7779bf207157ced66f275951a0":[8,0,7,14,4],
+"de/d75/qr__eigen__values_8cpp.html#a763896dbb4a7e95c4a1e614ac0819d66":[8,0,7,14,2],
 "de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40":[8,0,7,14,0],
 "de/d85/decimal__to__roman__numeral_8cpp.html":[8,0,8,3],
 "de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d":[8,0,8,3,2],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"d7/d77/class_edge.html":[7,0,10],
+"d7/d77/class_edge.html#a0a5b6510bcbe63028818f4dc417ba962":[7,0,10,6],
+"d7/d77/class_edge.html#a0bc08bf5da251d66412a7dc3e50c6605":[7,0,10,0],
+"d7/d77/class_edge.html#a2449478938136b5ab7ef0e7d92e6990b":[7,0,10,8],
+"d7/d77/class_edge.html#a26c0b79bfb231f0994853a25ba703a68":[7,0,10,5],
+"d7/d77/class_edge.html#a415a5d002fe11c58711e48aabe975980":[7,0,10,4],
 "d7/d77/class_edge.html#a4c8114f37c7eb3095557048ad42d3cd5":[7,0,10,1],
 "d7/d77/class_edge.html#a4d58e1f4de38fa55549497175981ebab":[7,0,10,11],
 "d7/d77/class_edge.html#a9a415f211c059647d1b3af8fcf7a0e30":[7,0,10,9],
@@ -206,9 +212,9 @@ var NAVTREEINDEX2 =
 "da/d9a/class_graph.html#a61943646676002a5e75f7b6493c25713":[7,0,13,32],
 "da/d9a/class_graph.html#a6afcd41564ea00294a4c089414979ca1":[7,0,13,40],
 "da/d9a/class_graph.html#a6cb6fbec4ea7cfdfda368f2c468a757d":[7,0,13,20],
-"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,14],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,13],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,15],
+"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,14],
 "da/d9a/class_graph.html#a73268574e2528b8e760191113ef6d1eb":[7,0,13,27],
 "da/d9a/class_graph.html#a8c95e00effaea0cd9404dd74cd802ae3":[7,0,13,8],
 "da/d9a/class_graph.html#a8dcb5ce0b4a6f65827f5055d9d53a3f1":[7,0,13,21],
@@ -243,11 +249,5 @@ var NAVTREEINDEX2 =
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,8,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[8,0,7,2],
 "da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[8,0,7,2,2],
-"da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,2,8],
-"da/df2/durand__kerner__roots_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,7,2,7],
-"da/df2/durand__kerner__roots_8cpp.html#a212979f5fc9dcf0a420e90b9b21d780a":[8,0,7,2,1],
-"da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740":[8,0,7,2,3],
-"da/df2/durand__kerner__roots_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,7,2,5],
-"da/df2/durand__kerner__roots_8cpp.html#a51637ff89e55ca749993d3e84b95d153":[8,0,7,2,6],
-"da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded":[8,0,7,2,4]
+"da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,2,8]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"d4/da0/gcd__iterative__euclidean_8cpp.html":[8,0,6,13],
+"d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e":[8,0,6,13,0],
+"d4/da0/gcd__iterative__euclidean_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,13,1],
+"d4/db4/struct_segment_intersection.html":[7,0,30],
+"d4/db4/struct_segment_intersection.html#a008941b2272866c64cdaf959afa939bf":[7,0,30,2],
+"d4/db4/struct_segment_intersection.html#a3beb2ac1b35d67354f1dbaf9a971e655":[7,0,30,0],
 "d4/db4/struct_segment_intersection.html#aefd077282f45bd16799b53f8aa430ffd":[7,0,30,1],
 "d4/dd9/structtrie.html":[7,0,35],
 "d4/dd9/structtrie.html#a6ed95bf46944aeb935f82707d2996dd8":[7,0,35,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14":[8,0,7,0,1],
 "d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2":[8,0,7,0,4],
 "d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[8,0,7,0,2],
-"d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,0,3],
-"d7/d77/class_edge.html":[7,0,10],
-"d7/d77/class_edge.html#a0a5b6510bcbe63028818f4dc417ba962":[7,0,10,6],
-"d7/d77/class_edge.html#a0bc08bf5da251d66412a7dc3e50c6605":[7,0,10,0],
-"d7/d77/class_edge.html#a2449478938136b5ab7ef0e7d92e6990b":[7,0,10,8],
-"d7/d77/class_edge.html#a26c0b79bfb231f0994853a25ba703a68":[7,0,10,5],
-"d7/d77/class_edge.html#a415a5d002fe11c58711e48aabe975980":[7,0,10,4]
+"d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,0,3]
 };

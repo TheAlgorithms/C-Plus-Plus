@@ -141,6 +141,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7e7f25f31c50523990437abf2ac3907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b66a1c652291b9a346ec7342967178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">quickSort</a> (int arr[], int low, int high)</td></tr>
 <tr class="separator:a50b66a1c652291b9a346ec7342967178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr, int32_t low, int32_t high)</td></tr>
+<tr class="separator:a9f59fe72dacc1f1218ef3c303d843168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
+<tr class="separator:a9d4eb6ea3c35540d804d451f1716622d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa">shell_sort</a> (T *arr, size_t LEN)</td></tr>
 <tr class="separator:a5669396c6a6b1e14b97589b6e37980aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +159,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
+<p>Sorting Algorithms.</p>
 <p>Sorting algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a70a6a99d554280c326f80355c4d2c494"></a>
@@ -720,6 +727,143 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a9f59fe72dacc1f1218ef3c303d843168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f59fe72dacc1f1218ef3c303d843168">&#9670;&nbsp;</a></span>quicksort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::quicksort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>3-way partition based quick sort. This function accepts array pointer and modified the input array. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data in the vector array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>vector array to sort </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">low</td><td>lower limit of window to partition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">high</td><td>upper limit of window to partition </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                             {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (low &gt;= high) {  <span class="comment">// 1 or 0 elements</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    int32_t i = 0, j = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// i and j are passed as reference</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    partition3(arr, low, high, &amp;i, &amp;j);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Recur two halves</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a>(arr, low, i);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a>(arr, j, high);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d4eb6ea3c35540d804d451f1716622d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4eb6ea3c35540d804d451f1716622d">&#9670;&nbsp;</a></span>quicksort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;T&gt; sorting::quicksort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>3-way partition based quick sort. This function accepts array by value and creates a copy of it. The array copy gets sorted and returned by the function. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data in the vector array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>vector array to sort </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">low</td><td>lower limit of window to partition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">high</td><td>upper limit of window to partition </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sorted array vector </dd></dl>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (low &gt;= high) {  <span class="comment">// 1 or 0 elements</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    int32_t i = 0, j = 0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// i and j are passed as reference</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    partition3(&amp;arr, low, high, &amp;i, &amp;j);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// Recur two halves</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a>(&amp;arr, low, i);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a>(&amp;arr, j, high);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a9d4eb6ea3c35540d804d451f1716622d_cgraph.svg" width="304" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a4c5bd73ffb6082f63dc57d8dcc76794f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c5bd73ffb6082f63dc57d8dcc76794f">&#9670;&nbsp;</a></span>randomized_bogosort()</h2>
 
@@ -925,6 +1069,7 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacesorting_html_a9d4eb6ea3c35540d804d451f1716622d"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">sorting::quicksort</a></div><div class="ttdeci">std::vector&lt; T &gt; quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)</div><div class="ttdef"><b>Definition:</b> quick_sort_3.cpp:119</div></div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a7e7f25f31c50523990437abf2ac3907e"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:37</div></div>
 <div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
