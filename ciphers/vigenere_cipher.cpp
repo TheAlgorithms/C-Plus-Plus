@@ -9,15 +9,15 @@
  * ### Algorithm
  * The encryption can also be represented using modular arithmetic by first transforming 
  * the letters into numbers, according to the scheme, A → 0, B → 1, ..., Z → 25.
- * Encryption of \f$\i^{th}\f$ character in Message M by key K can be described mathematically as,
+ * Encryption of \f$i^{th}\f$ character in Message M by key K can be described mathematically as,
  * 
  * \f[ E_{K}(M_{i}) = (M_{i} + K_{i})\;\mbox{mod}\; 26\f]
  * 
- * while decryption of \f$\i^{th}\f$ character in Cipher C by key K can be described mathematically as,
+ * while decryption of \f$i^{th}\f$ character in Cipher C by key K can be described mathematically as,
  *
  * \f[ D_{k}(C_{i}) = (C_{i} - K_{i} + 26)\;\mbox{mod}\; 26\f]
  * 
- * Where \f$\K_{i}\f$ denotes corresponding character in key. If \f$\|key| < |text|\f$ than
+ * Where \f$K_{i}\f$ denotes corresponding character in key. If \f$\|key| < |text|\f$ than
  * same key is repeated untill their lengths are equal.
  * 
  * For Example,
