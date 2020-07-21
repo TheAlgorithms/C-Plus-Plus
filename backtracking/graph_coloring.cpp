@@ -15,10 +15,11 @@ namespace backtracking {
      * @param color description
      * @param V number of vertices in the graph
      */
-    void printSolution(const std::array <int, 4>& color, int V) {
+    template <size_t V>
+    void printSolution(const std::array <int, V>& color, int V) {
         std::cout << "Following are the assigned colors\n";
-        for (int i = 0; i < V; i++) {
-            std::cout << color[i];
+        for (auto &col : color) {
+            std::cout << col;
         }
         std::cout << "\n";
     }
@@ -27,14 +28,14 @@ namespace backtracking {
      * vertex v
      * @tparam V number of vertices in the graph
      * @param v description
-     * @param graph description
-     * @param color description
+     * @param graph array of arrays
+     * @param color colors saved in array
      * @param c description
      * @returns `true` if ....
      * @returns `false` if ....
      */
     template <size_t V>
-    bool isSafe(int v, const std::array<std::array <int, V>, V>& graph, const std::array <int, 4> &color, int c) {
+    bool isSafe(int v, const std::array<std::array <int, V>, V>& graph, const std::array <int, V>& color, int c) {
         for (int i = 0; i < V; i++) {
             if (graph[v][i] && c == color[i]) {
                 return false;
@@ -45,14 +46,14 @@ namespace backtracking {
 
     /** A recursive utility function to solve m coloring problem
      * @tparam V number of vertices in the graph
-     * @param graph description
-     * @param m description
+     * @param graph array of arrays
+     * @param m number of colors
      * @param [in,out] color description // used in,out to notify in documentation
      * that this parameter gets modified by the function
      * @param v description
      */
     template <size_t V>
-    void graphColoring(const std::array<std::array <int, V>, V>& graph, int m, std::array <int, 4> color, int v) {
+    void graphColoring(const std::array<std::array <int, V>, V>& graph, int m, std::array <int, V> color, int v) {
         // base case:
         // If all vertices are assigned a color then return true
         if (v == V) {
@@ -89,18 +90,14 @@ int main() {
 
     const int V = 4;  // number of vertices in the graph
     std::array <std::array <int, V>, V> graph = {
-        {0, 1, 1, 1,
-        1, 0, 1, 0,
-        1, 1, 0, 1,
-        1, 0, 1, 0}
-    };
-    int m = 3;  // Number of colors
-
-    std::array <int, 4> color;
-
-    for (int i = 0; i < V; i++) {
-        color[i] = 0;
+         {0, 1, 1, 1},
+         {1, 0, 1, 0},
+         {1, 1, 0, 1},
+         {1, 0, 1, 0}
     }
+
+    int m = 3;  // Number of colors
+    std::array <int, V> color{};
 
     backtracking::graphColoring<V>(graph, m, color, 0);
     return 0;
