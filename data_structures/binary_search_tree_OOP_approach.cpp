@@ -1,205 +1,232 @@
 /**
- * \file
- * \brief A simple tree implementation using structured nodes
- * \Object Oriented approach
+ * @file binary_search_tree_OOP_approach.cpp
+ * @brief An implementation of Binary Search Tree class,
+ * including various tree-traversals like 
+ * In-Order, Pre-Order, Post-Order, BFT  
+ * @author [Dharani Akurathi](https://github.com/Dharni0607)
  */
 
 #include<bits/stdc++.h> 
 #include<queue>
-using namespace std;
 
+/**
+ *  node structure [value][left*, right*...]
+ */
 struct node {
     int value;
-    node *left;
-    node *right;
+    std::shared_ptr<node> left;
+    std::shared_ptr<node> right;
 };
 
+/**
+ * implementation of Binary Search Tree class with basic methods
+ */
+
 class BinarySearchTree{
-    node *root;
+    std::shared_ptr<node> root;
 
 public:
+    /**
+     * Binary Search Tree - constructor method
+     */
     BinarySearchTree(){
-        root = NULL;
+        root = nullptr;
     }
-
+    BinarySearchTree(BinarySearchTree const&) = delete;
+    BinarySearchTree& operator =(BinarySearchTree const&) = delete;
+    ~BinarySearchTree(){
+    }
+    /**
+     * The following fuctions inserts a node with given
+     * data into binary search tree 
+     * @param data is the value of the node that has to be inserted
+     */
     void insert(int data){
-        node *newnode = new node;
+        std::shared_ptr<node> newnode = std::shared_ptr<node>(new node);
         newnode->value = data;
-        newnode->left = NULL;
-        newnode->right = NULL;
-        if(root == NULL){
+        newnode->left = nullptr;
+        newnode->right = nullptr;
+        if(root == nullptr){
             root = newnode;
             return;
         }
-        node *current = root;
+        std::shared_ptr<node> current = root;
         while(true){
             if(current->value > data){
-                if(current->left == NULL)
+                if(current->left == nullptr)
                 {
                     current->left = newnode;
                     return;
                 }
-                else
+                else{
                     current = current->left;
+                }
             }
             else{
-                if(current->right == NULL)
+                if(current->right == nullptr)
                 {
                     current->right = newnode;
                     return;
                 }
-                else
+                else{
                     current = current->right;
+                }
             }
             
         } 
     }
 
-    node *getRoot(){
+    std::shared_ptr<node> getRoot(){
         return root;
     }
     
+    /**
+     * Implementation of Breadth First Traversal
+     * Traversal starts at the root node and explores all of the 
+     * neighbor nodes at the present depth prior to moving on
+     * to the nodes at the next depth level.
+     */
     void BFT() {
-        queue<node*> q;
+        std::queue<std::shared_ptr<node>> q;
         q.push(root);
         while(!q.empty()){
-            node *current = q.front();
+            std::shared_ptr<node> current = q.front();
             q.pop();
-            cout << current->value << " ";
-            if(current->left)
+            std::cout << current->value << " ";
+            if(current->left){
                 q.push(current->left);
-            if(current->right)
+            }
+            if(current->right){
                 q.push(current->right);
+            }
         }
     }
 
-    void preOrder(node *current){
+    /**
+     * Implementation of Pre-order Traversal
+     * Every sub-tree is traversed in the following order :
+     * root - left - right
+     * @param current is the current root node of the sub-tree
+     */
+    void preOrder(std::shared_ptr<node> const& current){
         if(current)
         {
-            cout << current->value << " ";
+            std::cout << current->value << " ";
             preOrder(current->left);
             preOrder(current->right);
         }
     }
 
-    void inOrder(node *current){
+    /**
+     * Implementation of In-order Traversal
+     * Every sub-tree is traversed in the following order :
+     * left - root - right
+     * @param current is the current root node of the sub-tree
+     */
+    void inOrder(std::shared_ptr<node> const& current){
         if(current)
         {
             inOrder(current->left);
-            cout << current->value << " ";
+            std::cout << current->value << " ";
             inOrder(current->right);
         }
     }
 
-    void postOrder(node *current){
+    /**
+     * Implementation of Post-order Traversal
+     * Every sub-tree is traversed in the following order :
+     * left - right - root
+     * @param current is the current root node of the sub-tree
+     */
+    void postOrder(std::shared_ptr<node> const& current){
         if(current)
         {
             postOrder(current->left);
             postOrder(current->right);
-            cout << current->value << " ";
+            std::cout << current->value << " ";
         }
     }
 
-    node *minValueNodeInRightST(node *node) 
+    /**
+     * The minValueNodeInRightST function returns the node with minimum value,
+     * in the current sub-tree
+     * @param node is root node of current sub-tree
+     */
+    std::shared_ptr<node> minValueNodeInRightST(std::shared_ptr<node> n) 
     { 
-        struct node *current = node; 
-        while (current && current->left) 
-            current = current->left;       
+        std::shared_ptr<node> current = n; 
+        while (current && current->left){
+            current = current->left; 
+        }
         return current; 
     } 
     
-    node *deleteNode(node *current, int target){
-        if(current == NULL)
+    /**
+     * The deleteNode function deletes the node having target as
+     * its value from the tree, If such node doesn't exsit in the 
+     * tree, then nothing will be deleted.
+     * @param current is the root node of current sub-tree
+     * @param target is the value of node to be deleted
+     */
+    std::shared_ptr<node> deleteNode(std::shared_ptr<node> current, int target){
+        if(current == nullptr){
             return current;
-
+        }
+        /* If current value is greater than target, 
+            then exsits in left sub-tree */
         else if(current->value > target){
             current->left = deleteNode(current->left, target);
         } 
-        
+        /* If current value is less than target, 
+            then exsits in right sub-tree */
         else if(current->value < target){
             current->right = deleteNode(current->right, target);
         }
-        
+        /* If current value is the target */
         else{
-            if(current->value > target){
-                current = current->left;
-            } 
-            else if(current->value < target){
-                current = current->right;
+            std::shared_ptr<node> temp = nullptr;
+            if(current->left == nullptr){
+                temp = current->right;
+                current = temp;
+            }
+            else if(current->right == nullptr){
+                temp = current->left;
+                current = temp;
             }
             else{
-                node *temp;
-                if(current->left == NULL){
-                    temp = current->right;
-                    free(current);
-                    current = current->right;
-                }
-                else if(current->right == NULL){
-                    temp = current->left;
-                    free(current);
-                    current = current->left;
-                }
-                else{
-                    node *inorder_successor = minValueNodeInRightST(current->right);
-                    current->value = inorder_successor->value;
-                    current->right = deleteNode(current->right, inorder_successor->value);
-                }
+                std::shared_ptr<node> inorder_successor = minValueNodeInRightST(current->right);
+                current->value = inorder_successor->value;
+                current->right = deleteNode(current->right, inorder_successor->value);
             }
         }
         return current;
     }
     
+    /**
+     * To remove the node with given target from the tree
+     * @param target is the value of node to be deleted
+     */
     void remove(int target){
         root = deleteNode(root, target);
     }
 };
 
 int main() {
-    int value;
-    int ch;
-    
-    BinarySearchTree BST;
-    cout << "\nEnter the value of root node :";
-    cin >> value;
-    BST.insert(value);
-
-    do {
-        cout << "\n0. Exit/Stop"
-                  << "\n1. Insert a node"
-                  << "\n2. Delete a node"
-                  << "\n3. Breadth First Traversal"
-                  << "\n4. Preorder Traversal"
-                  << "\n5. Inorder Traversal"
-                  << "\n6. Postorder Traversal";
-
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
-
-        switch (ch) {
-        case 1:
-            cout << "\nEnter the value to be Inserted : ";
-            cin >> value;
-            BST.insert(value);
-            break;
-        case 2:
-            cout << "\nEnter the value to be Deleted : ";
-            cin >> value;
-            BST.remove(value);
-            break;
-        case 3:
-            BST.BFT();
-            break;
-        case 4:
-            BST.preOrder(BST.getRoot());
-            break;
-        case 5:
-            BST.inOrder(BST.getRoot());
-            break;
-        case 6:
-            BST.postOrder(BST.getRoot());
-            break;
-        }
-    } while (ch != 0);
-
+    std::array<int, 10> arr{{34, 45, 12, 7, 15, 190, 2, 1, 100, 5}};
+    BinarySearchTree bst;
+    for(int num: arr){
+        bst.insert(num);
+    }
+    std::cout << "\nPre-order Traversal:\n";
+    bst.preOrder(bst.getRoot());
+    std::cout << "\nIn-order Traversal:\n";
+    bst.inOrder(bst.getRoot());
+    std::cout << "\nPost-order Traversal:\n";
+    bst.postOrder(bst.getRoot());
+    std::cout << "\nRemoving node\n";
+    bst.remove(34);
+    bst.remove(7);
+    std::cout << "\nBreadth first Traversal\n";
+    bst.BFT();
     return 0;
 }
