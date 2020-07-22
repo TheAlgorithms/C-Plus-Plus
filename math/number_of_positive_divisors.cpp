@@ -11,7 +11,7 @@
  * \f$p_1^{g_1}\times p_2^{g_2}\times\cdots\times p_k^{g_k}\f$
  * where \f$0\le g_i\le e_i\f$ are integers for all \f$1\le i\le k\f$.
  * <br/>Finally, there is \f$(e_1+1) \times (e_2+1)\times\cdots\times (e_k+1)\f$
- * of positive divisors of \f$N\$\f since we can choose every \f$g_i\f$
+ * of positive divisors of \f$N\f$ since we can choose every \f$g_i\f$
  * independently.
  *
  * Example:
@@ -27,6 +27,7 @@
 #include <iostream>
 
 /**
+ * Function to compute the number of positive divisors.
  * @param n number to compute divisors for
  * @returns number of positive divisors of n (or 1 if n = 0)
  */
