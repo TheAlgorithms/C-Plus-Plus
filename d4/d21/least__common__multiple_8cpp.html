@@ -159,12 +159,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (x &gt; y) {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// The following is valid because we have checked whether y == 0</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">int</span> temp = x / y;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> temp = x / y;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563">gcd</a>(y, x - temp * y);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Again the following is valid because we have checked whether x == 0</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> temp = y / x;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> temp = y / x;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563">gcd</a>(x, y - temp * x);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 </div><!-- fragment -->
@@ -196,7 +196,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function for finding the least common multiple of two numbers. @params integer x and y whose lcm we want to find. </p><dl class="section return"><dt>Returns</dt><dd>lcm of x and y using the relation x * y = gcd(x, y) * lcm(x, y) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ <span class="keywordflow">return</span> x * y / <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563">gcd</a>(x, y); }</div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                 {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> x / <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563">gcd</a>(x, y) * y;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -221,10 +223,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;           {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;           {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -249,21 +251,30 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Function for testing the <a class="el" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm()</a> functions with some assert statements. </p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// First test on lcm(5,10) == 10</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;LCM of 5 and 10 is 10 but lcm function gives a different &quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  <span class="stringliteral">&quot;result.\n&quot;</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(5, 10) == 10));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First assertion passes: LCM of 5 and 10 is &quot;</span> &lt;&lt; <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(5, 10)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;LCM of 2 and 3 is 6 but lcm function gives a different &quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  <span class="stringliteral">&quot;result.\n&quot;</span>,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(2, 3) == 6));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second assertion passes: LCM of 2 and 3 is &quot;</span> &lt;&lt; <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(2, 3)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;             {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// First test on lcm(5,10) == 10</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;LCM of 5 and 10 is 10 but lcm function gives a different &quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  <span class="stringliteral">&quot;result.\n&quot;</span>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(5, 10) == 10));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First assertion passes: LCM of 5 and 10 is &quot;</span> &lt;&lt; <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(5, 10)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Second test on lcm(2,3) == 6 as 2 and 3 are coprime (prime in fact)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;LCM of 2 and 3 is 6 but lcm function gives a different &quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  <span class="stringliteral">&quot;result.\n&quot;</span>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(2, 3) == 6));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second assertion passes: LCM of 2 and 3 is &quot;</span> &lt;&lt; <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(2, 3)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Testing an integer overflow.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// The algorithm should work as long as the result fits into integer.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    assert(((<span class="keywordtype">void</span>)<span class="stringliteral">&quot;LCM of 987654321 and 987654321 is 987654321 but lcm function&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  <span class="stringliteral">&quot; gives a different result.\n&quot;</span>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(987654321, 987654321) == 987654321));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Third assertion passes: LCM of 987654321 and 987654321 is &quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;              &lt;&lt; <a class="code" href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a>(987654321, 987654321)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;              &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -276,7 +287,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aleast__common__multiple_8cpp_html_aa8d0e241db517813725e721a152e3a25"><div class="ttname"><a href="../../d4/d21/least__common__multiple_8cpp.html#aa8d0e241db517813725e721a152e3a25">lcm</a></div><div class="ttdeci">unsigned int lcm(unsigned int x, unsigned int y)</div><div class="ttdef"><b>Definition:</b> least_common_multiple.cpp:43</div></div>
-<div class="ttc" id="aleast__common__multiple_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="../../d4/d21/least__common__multiple_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition:</b> least_common_multiple.cpp:48</div></div>
+<div class="ttc" id="aleast__common__multiple_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="../../d4/d21/least__common__multiple_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition:</b> least_common_multiple.cpp:50</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aleast__common__multiple_8cpp_html_a8ba1fc66e4134ab25b2602b323150563"><div class="ttname"><a href="../../d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563">gcd</a></div><div class="ttdeci">unsigned int gcd(unsigned int x, unsigned int y)</div><div class="ttdef"><b>Definition:</b> least_common_multiple.cpp:16</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
