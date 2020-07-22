@@ -26,12 +26,12 @@ unsigned int gcd(unsigned int x, unsigned int y) {
     if (x > y) {
         // The following is valid because we have checked whether y == 0
 
-        int temp = x / y;
+        unsigned int temp = x / y;
         return gcd(y, x - temp * y);
     }
     // Again the following is valid because we have checked whether x == 0
 
-    int temp = y / x;
+    unsigned int temp = y / x;
     return gcd(x, y - temp * x);
 }
 
