@@ -38,7 +38,7 @@ struct Entry {
 };
 
 // Hash a key
-int hashFxn(int key) {
+size_t hashFxn(int key) {
     std::hash<int> hash;
     return hash(key);
 }
@@ -51,13 +51,12 @@ size_t otherHashFxn(int key) {
 
 // Performs double hashing to resolve collisions
 int doubleHash(int key, bool searching) {
-    int hash = static_cast<int>(std::abs(hashFxn(key)));
+    int hash = static_cast<int>(hashFxn(key));
     int i = 0;
     Entry entry;
     do {
         int index =
-            static_cast<int>(std::abs((hash + (i * otherHashFxn(key))))) %
-            totalSize;
+            static_cast<int>(hash + (i * otherHashFxn(key))) % totalSize;
         entry = table[index];
         if (searching) {
             if (entry.key == notPresent) {
@@ -79,8 +78,7 @@ int doubleHash(int key, bool searching) {
             if (!rehashing) {
                 cout << "Spot taken, looking at next (next index:"
                      << " "
-                     << static_cast<int>(
-                            std::abs((hash + (i * otherHashFxn(key))))) %
+                     << static_cast<int>(hash + (i * otherHashFxn(key))) %
                             totalSize
                      << ")" << endl;
             }
@@ -177,7 +175,7 @@ void addInfo(int key) {
     display();
     cout << endl;
     cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
-         << " == " << std::abs(hashFxn(key) % totalSize);
+         << " == " << hashFxn(key) % totalSize;
     cout << endl;
     add(key);
     cout << "New table: ";
@@ -239,7 +237,7 @@ int main() {
             case 4:
                 cout << "Enter element to generate hash = ";
                 cin >> key;
-                cout << "Hash of " << key << " is = " << std::abs(hashFxn(key));
+                cout << "Hash of " << key << " is = " << hashFxn(key);
                 break;
             case 5:
                 display();
