@@ -39,6 +39,7 @@ namespace backtracking {
     }
     /**
      * Print array of array
+     * @tparam V number of vertices in array
      * @param mat array of arrays
      * @param n number of times loop will be run
      * @return void
@@ -61,6 +62,7 @@ namespace backtracking {
 
     /**
      * Sudoku algorithm
+     * @tparam V number of vertices in array
      * @param mat array of arrays
      * @param i current index in rows
      * @param j current index in columns
