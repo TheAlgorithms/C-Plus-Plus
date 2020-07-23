@@ -20,11 +20,32 @@
  * @brief Backtracking algorithms
  */
 namespace backtracking {
+    /**
+     * Check if solution exists
+     * @tparam V number of vertices in array
+     * @param x position x
+     * @param y position y
+     * @param sol array of arrays
+     * @returns `true` if ....
+     * @returns `false` if ....
+     */
     template <size_t V>
     bool issafe(int x, int y, const std::array <std::array <int, V>, V>& sol) {
         return (x < V && x >= 0 && y < V && y >= 0 && sol[x][y] == -1);
     }
 
+    /**
+     * Knight's tour algorithm
+     * @tparam V number of vertices in array
+     * @param x position x
+     * @param y position y
+     * @param mov movement
+     * @param sol array of arrays
+     * @param xmov x movement
+     * @param ymov y movement
+     * @returns `true` if ....
+     * @returns `false` if ....
+     */
     template <size_t V>
     bool solve(int x, int y, int mov, std::array <std::array <int, V>, V> &sol,
         const std::array <int, V> &xmov, std::array <int, V> &ymov) {
