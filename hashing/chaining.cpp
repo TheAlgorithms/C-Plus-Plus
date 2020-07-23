@@ -34,7 +34,7 @@ class chain {
      *
      * @param mod modulus of the chain
      */
-    chain(int mod) : _mod(mod) {
+    explicit chain(int mod) : _mod(mod) {
         while (mod--) head.push_back(nullptr);
     }
 
