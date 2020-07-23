@@ -12,8 +12,8 @@
  */
 namespace backtracking {
     /** A utility function to print solution
+     * @tparam V number of vertices in the graph
      * @param color description
-     * @param V number of vertices in the graph
      */
     template <size_t V>
     void printSolution(const std::array <int, V>& color) {
