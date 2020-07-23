@@ -2,7 +2,7 @@
  * @file chaining.cpp
  * @author [vasutomar](https://github.com/vasutomar)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief
+ * @brief Implementation of node chains accessed using keys.
  */
 #include <cmath>
 #include <iostream>
