@@ -93,10 +93,11 @@ static void test1() {
 
 /**
  * this test is testing if ::hamilton_cycle returns `false` for
- * \n graph:<pre> 1 -> 2 -> 3
- *             |
- *             V
- *             4</pre>
+ * \n graph:<pre>
+ *  1 -> 2 -> 3
+ *       |
+ *       V
+ *       4</pre>
  * @return None
  */
 static void test2() {
