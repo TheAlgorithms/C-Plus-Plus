@@ -37,7 +37,12 @@ namespace backtracking {
 
         return true;
     }
-
+    /**
+     * Print array of array
+     * @param mat array of arrays
+     * @param n number of times loop will be run
+     * @return void
+     */
     template <size_t V>
     void printMat(const std::array <std::array <int, V>, V> &mat, int n) {
         for (int i = 0; i < n; i++) {
@@ -54,6 +59,14 @@ namespace backtracking {
         }
     }
 
+    /**
+     * Sudoku algorithm
+     * @param mat array of arrays
+     * @param i current index in rows
+     * @param j current index in columns
+     * @returns `true` if ....
+     * @returns `false` if ....
+     */
     template <size_t V>
     bool solveSudoku(std::array <std::array <int, V>, V> &mat, int i, int j) {
         /// Base Case
