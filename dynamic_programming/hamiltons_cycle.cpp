@@ -29,22 +29,17 @@
 bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
     size_t n = routes.size();
     // height of dp array which is 2^n
-    int height = 1 << n;
-    std::vector<std::vector<bool>> dp(height, std::vector<bool>(n));
-    for (int i = 0; i < height; i++) {
-        for (int j = 0; j < n; j++) {
-            dp[i][j] = false;
-        }
-    }
+    size_t height = 1 << n;
+    std::vector<std::vector<bool>> dp(height, std::vector<bool>(n, false));
 
     // to fill in the [2^i, i] cells with true
-    for (int i = 0; i < n; ++i) {
+    for (size_t i = 0; i < n; ++i) {
         dp[1 << i][i] = true;
     }
-    for (int i = 1; i < height; i++) {
+    for (size_t i = 1; i < height; i++) {
         std::vector<int> zeros, ones;
         // finding positions with 1s and 0s and separate them
-        for (int pos = 0; pos < n; ++pos) {
+        for (size_t pos = 0; pos < n; ++pos) {
             if ((1 << pos) & i) {
                 ones.push_back(pos);
             } else {
@@ -52,18 +47,16 @@ bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
             }
         }
 
-        for (int pos = 0; pos < ones.size(); ++pos) {
-            int o = ones[pos];
+        for (auto &o : ones) {
             if (!dp[i][o]) {
                 continue;
             }
 
-            for (int inner_pos = 0; inner_pos < zeros.size(); inner_pos++) {
-                int z = zeros[inner_pos];
+            for (auto &z : zeros) {
                 if (!routes[o][z]) {
                     continue;
                 }
-                dp[i + (1 << z)][z] = 1;
+                dp[i + (1 << z)][z] = true;
             }
         }
     }
