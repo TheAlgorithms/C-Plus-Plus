@@ -1,14 +1,16 @@
 /**
  * @file
- * @brief The implementation of hamilton's cycle dynamic solution for vertices
- * number less than 20.
+ * @brief The implementation of [Hamilton's
+ * cycle](https://en.wikipedia.org/wiki/Hamiltonian_path) dynamic solution for
+ * vertices number less than 20.
  * @details
- * I use 2^n * n matrix it's and for every [i, j] (i < 2^n and j < n) in the
- * matrix I store there if it is possible to get to all vertices on which
- * position in i's binary representation is 1 so as j would be the last one.
+ * I use \f$2^n\times n\f$ matrix and for every \f$[i, j]\f$ (\f$i < 2^n\f$ and
+ * \f$j < n\f$) in the matrix I store `true` if it is possible to get to all
+ * vertices on which position in `i`'s binary representation is `1` so as
+ * \f$j\f$ would be the last one.
  *
- * In the the end if any cell in (2^n - 1)th row is true there exists
- * hamiltonian cycle
+ * In the the end if any cell in \f$(2^n - 1)^{\mbox{th}}\f$ row is `true` there
+ * exists hamiltonian cycle.
  *
  * @author [vakhokoto](https://github.com/vakhokoto)
  * @author [Krishna Vedala](https://github.com/kvedala)
@@ -20,16 +22,15 @@
 /**
  * The function determines if there is a hamilton's cycle in the graph
  *
- * @param n is the number of vertices in the graph
- * @param routes nxn boolean matrix of [i, j] where [i, j] is true if there is a
- * road between from i to j
- * @return `true` if there is hamiltonian cycle in the graph
- * @return `false` if there is no hamiltonian cycle in the graph
+ * @param routes nxn boolean matrix of \f$[i, j]\f$ where \f$[i, j]\f$ is `true`
+ * if there is a road from \f$i\f$ to \f$j\f$
+ * @return `true` if there is Hamiltonian cycle in the graph
+ * @return `false` if there is no Hamiltonian cycle in the graph
  */
 bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
-    size_t n = routes.size();
+    const size_t n = routes.size();
     // height of dp array which is 2^n
-    size_t height = 1 << n;
+    const size_t height = 1 << n;
     std::vector<std::vector<bool>> dp(height, std::vector<bool>(n, false));
 
     // to fill in the [2^i, i] cells with true
@@ -37,7 +38,7 @@ bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
         dp[1 << i][i] = true;
     }
     for (size_t i = 1; i < height; i++) {
-        std::vector<int> zeros, ones;
+        std::vector<size_t> zeros, ones;
         // finding positions with 1s and 0s and separate them
         for (size_t pos = 0; pos < n; ++pos) {
             if ((1 << pos) & i) {
@@ -62,17 +63,22 @@ bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
     }
 
     bool is_cycle = false;
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         is_cycle |= dp[height - 1][i];
+        if (is_cycle) {  // if true, all subsequent loop will be true. hence
+                         // break
+            break;
+        }
     }
     return is_cycle;
 }
 
 /**
- * this test is testing if hamilton_cycle returns true for
- * graph: 1 -> 2 -> 3 -> 4
+ * this test is testing if ::hamilton_cycle returns `true` for
+ * graph: `1 -> 2 -> 3 -> 4`
+ * @return None
  */
-bool test1() {
+static void test1() {
     std::vector<std::vector<bool>> arr{
         std::vector<bool>({true, true, false, false}),
         std::vector<bool>({false, true, true, false}),
@@ -80,19 +86,20 @@ bool test1() {
         std::vector<bool>({false, false, false, true})};
 
     bool ans = hamilton_cycle(arr);
+    std::cout << "Test 1... ";
     assert(ans);
-    std::cout << "Test 1 passed\n";
-    return ans;
+    std::cout << "passed\n";
 }
 
 /**
- * this test is testing if hamilton_cycle returns false for
- * graph: 1 -> 2 -> 3
+ * this test is testing if ::hamilton_cycle returns `false` for
+ * \n graph:<pre> 1 -> 2 -> 3
  *             |
  *             V
- *             4
+ *             4</pre>
+ * @return None
  */
-bool test2() {
+static void test2() {
     std::vector<std::vector<bool>> arr{
         std::vector<bool>({true, true, false, false}),
         std::vector<bool>({false, true, true, true}),
@@ -101,17 +108,17 @@ bool test2() {
 
     bool ans = hamilton_cycle(arr);
 
+    std::cout << "Test 2... ";
     assert(!ans);  // not a cycle
-    std::cout << "Test 2 passed\n";
-
-    return !ans;
+    std::cout << "passed\n";
 }
 
 /**
- * this test is testing if hamilton_cycle returns true for
+ * this test is testing if ::hamilton_cycle returns `true` for
  * clique with 4 vertices
+ * @return None
  */
-bool test3() {
+static void test3() {
     std::vector<std::vector<bool>> arr{
         std::vector<bool>({true, true, true, true}),
         std::vector<bool>({true, true, true, true}),
@@ -120,10 +127,9 @@ bool test3() {
 
     bool ans = hamilton_cycle(arr);
 
+    std::cout << "Test 3... ";
     assert(ans);
-    std::cout << "Test 3 passed\n";
-
-    return ans;
+    std::cout << "passed\n";
 }
 
 /**
