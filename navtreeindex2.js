@@ -85,8 +85,9 @@ var NAVTREEINDEX2 =
 "d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[7,0,25,4],
 "d8/dcc/namespacestd.html":[6,0,8],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html":[8,0,6,27],
-"d8/ddf/sieve__of__eratosthenes_8cpp.html#a1e606c2e5ac180a770ebe0d1706b8ca2":[8,0,6,27,2],
-"d8/ddf/sieve__of__eratosthenes_8cpp.html#ae0de20c22cf2304b1cbe70953d57e7b7":[8,0,6,27,1],
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9":[8,0,6,27,1],
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a60fa6579eab0db3c1c0ab1bf6d651be3":[8,0,6,27,2],
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,6,27,3],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,27,0],
 "d8/dee/avltree_8cpp.html":[8,0,1,1],
 "d8/dee/avltree_8cpp.html#a1ecfaaea49d452772dbb2b28133e36e0":[8,0,1,1,2],
@@ -212,9 +213,9 @@ var NAVTREEINDEX2 =
 "da/d9a/class_graph.html#a61943646676002a5e75f7b6493c25713":[7,0,13,32],
 "da/d9a/class_graph.html#a6afcd41564ea00294a4c089414979ca1":[7,0,13,40],
 "da/d9a/class_graph.html#a6cb6fbec4ea7cfdfda368f2c468a757d":[7,0,13,20],
-"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,13],
-"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,15],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,14],
+"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,15],
+"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,13,13],
 "da/d9a/class_graph.html#a73268574e2528b8e760191113ef6d1eb":[7,0,13,27],
 "da/d9a/class_graph.html#a8c95e00effaea0cd9404dd74cd802ae3":[7,0,13,8],
 "da/d9a/class_graph.html#a8dcb5ce0b4a6f65827f5055d9d53a3f1":[7,0,13,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "da/de7/decimal__to__hexadecimal_8cpp.html":[8,0,8,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,8,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[8,0,7,2],
-"da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[8,0,7,2,2],
-"da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,7,2,8]
+"da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[8,0,7,2,2]
 };

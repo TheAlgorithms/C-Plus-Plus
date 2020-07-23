@@ -109,8 +109,8 @@ var NAVTREEINDEX =
 "annotated.html",
 "d4/da0/gcd__iterative__euclidean_8cpp.html",
 "d7/d77/class_edge.html",
-"da/df2/durand__kerner__roots_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
-"de/d75/qr__eigen__values_8cpp.html#a0283886819c7c140a023582b7269e2d0"
+"da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0",
+"de/d75/qr__eigen__values_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
