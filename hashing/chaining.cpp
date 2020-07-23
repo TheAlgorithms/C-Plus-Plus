@@ -135,7 +135,7 @@ int main() {
                 std::cout << "Enter element to add = ";
                 std::cin >> x;
                 h = mychain.hash(x);
-                h = std::fabs(h);
+                h = std::abs(h);
                 mychain.add(x, h);
                 break;
             case 2:
