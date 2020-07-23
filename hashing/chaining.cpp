@@ -1,110 +1,162 @@
-#include <math.h>
+/**
+ * @file chaining.cpp
+ * @author [vasutomar](https://github.com/vasutomar)
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ * @brief
+ */
+#include <cmath>
 #include <iostream>
-using namespace std;
+#include <memory>
+#include <vector>
 
+namespace {  // keep the code local to this file by assigning them to an unnamed
+             // namespace
+/**
+ * @{
+ * @brief Define a linked node
+ */
 struct Node {
-    int data;
-    struct Node *next;
-} * head[100], *curr;
+    int data{};                         ///< data stored in the node
+    std::shared_ptr<struct Node> next;  ///< pointer to the next node
+};
 
-void init() {
-    for (int i = 0; i < 100; i++) head[i] = NULL;
-}
+/**
+ * @brief Chain class with a given modulus
+ */
+class chain {
+ private:
+    std::vector<std::shared_ptr<struct Node>> head;  ///< array of nodes
+    int _mod;                                        ///< modulus of the class
 
-void add(int x, int h) {
-    struct Node *temp = new Node;
-    temp->data = x;
-    temp->next = NULL;
-    if (!head[h]) {
-        head[h] = temp;
-        curr = head[h];
-    } else {
-        curr = head[h];
-        while (curr->next) curr = curr->next;
-        curr->next = temp;
+ public:
+    /**
+     * @brief Construct a new chain object
+     *
+     * @param mod modulus of the chain
+     */
+    chain(int mod) : _mod(mod) {
+        while (mod--) head.push_back(nullptr);
     }
-}
 
-void display(int mod) {
-    struct Node *temp;
-    int i;
-    for (i = 0; i < mod; i++) {
-        if (!head[i]) {
-            cout << "Key " << i << " is empty" << endl;
+    /**
+     * @brief create and add a new node with a give value and at a given height
+     *
+     * @param x value at the new node
+     * @param h height of the node
+     */
+    void add(int x, int h) {
+        std::shared_ptr<struct Node> curr;
+        std::shared_ptr<struct Node> temp(new struct Node);
+        temp->data = x;
+        temp->next = nullptr;
+        if (!head[h]) {
+            head[h] = temp;
+            curr = head[h];
         } else {
-            cout << "Key " << i << " has values = ";
-            temp = head[i];
-            while (temp->next) {
-                cout << temp->data << " ";
-                temp = temp->next;
-            }
-            cout << temp->data;
-            cout << endl;
+            curr = head[h];
+            while (curr->next) curr = curr->next;
+            curr->next = temp;
         }
     }
-}
 
-int hash(int x, int mod) { return x % mod; }
-
-void find(int x, int h) {
-    struct Node *temp = head[h];
-    if (!head[h]) {
-        cout << "Element not found";
-        return;
+    /**
+     * @brief Display the chain
+     */
+    void display() {
+        std::shared_ptr<struct Node> temp = nullptr;
+        int i = 0;
+        for (i = 0; i < _mod; i++) {
+            if (!head[i]) {
+                std::cout << "Key " << i << " is empty" << std::endl;
+            } else {
+                std::cout << "Key " << i << " has values = ";
+                temp = head[i];
+                while (temp->next) {
+                    std::cout << temp->data << " ";
+                    temp = temp->next;
+                }
+                std::cout << temp->data;
+                std::cout << std::endl;
+            }
+        }
     }
-    while (temp->data != x && temp->next) temp = temp->next;
-    if (temp->next)
-        cout << "Element found";
-    else {
-        if (temp->data == x)
-            cout << "Element found";
-        else
-            cout << "Element not found";
-    }
-}
 
-int main(void) {
-    init();
-    int c, x, mod, h;
-    cout << "Enter the size of Hash Table. = ";
-    cin >> mod;
+    /**
+     * @brief Compute the hash of a value for current chain
+     *
+     * @param x value to compute modulus of
+     * @return modulus of `x`
+     */
+    int hash(int x) const { return x % _mod; }
+
+    void find(int x, int h) {
+        auto temp = head[h];
+        if (!head[h]) {
+            std::cout << "Element not found";
+            return;
+        }
+        while (temp->data != x && temp->next) temp = temp->next;
+        if (temp->next) {
+            std::cout << "Element found";
+        } else {
+            if (temp->data == x) {
+                std::cout << "Element found";
+            } else {
+                std::cout << "Element not found";
+            }
+        }
+    }
+};
+
+}  // namespace
+
+/** Main function
+ * @returns `0` always
+ */
+int main() {
+    int c = 0, x = 0, mod = 0, h = 0;
+    std::cout << "Enter the size of Hash Table. = ";
+    std::cin >> mod;
+
+    chain mychain(mod);
+
     bool loop = true;
     while (loop) {
-        cout << endl;
-        cout << "PLEASE CHOOSE -" << endl;
-        cout << "1. Add element." << endl;
-        cout << "2. Find element." << endl;
-        cout << "3. Generate Hash." << endl;
-        cout << "4. Display Hash table." << endl;
-        cout << "5. Exit." << endl;
-        cin >> c;
+        std::cout << std::endl;
+        std::cout << "PLEASE CHOOSE -" << std::endl;
+        std::cout << "1. Add element." << std::endl;
+        std::cout << "2. Find element." << std::endl;
+        std::cout << "3. Generate Hash." << std::endl;
+        std::cout << "4. Display Hash table." << std::endl;
+        std::cout << "5. Exit." << std::endl;
+        std::cin >> c;
         switch (c) {
-        case 1:
-            cout << "Enter element to add = ";
-            cin >> x;
-            h = hash(x, mod);
-            h = fabs(h);
-            add(x, h);
-            break;
-        case 2:
-            cout << "Enter element to search = ";
-            cin >> x;
-            h = hash(x, mod);
-            find(x, h);
-            break;
-        case 3:
-            cout << "Enter element to generate hash = ";
-            cin >> x;
-            cout << "Hash of " << x << " is = " << hash(x, mod);
-            break;
-        case 4:
-            display(mod);
-            break;
-        default:
-            loop = false;
-            break;
+            case 1:
+                std::cout << "Enter element to add = ";
+                std::cin >> x;
+                h = mychain.hash(x);
+                h = std::fabs(h);
+                mychain.add(x, h);
+                break;
+            case 2:
+                std::cout << "Enter element to search = ";
+                std::cin >> x;
+                h = mychain.hash(x);
+                mychain.find(x, h);
+                break;
+            case 3:
+                std::cout << "Enter element to generate hash = ";
+                std::cin >> x;
+                std::cout << "Hash of " << x << " is = " << mychain.hash(x);
+                break;
+            case 4:
+                mychain.display();
+                break;
+            default:
+                loop = false;
+                break;
         }
-        cout << endl;
+        std::cout << std::endl;
     }
     /*add(1,&head1);
     add(2,&head1);
