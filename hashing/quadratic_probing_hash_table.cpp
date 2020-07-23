@@ -1,25 +1,30 @@
-// Copyright 2019
-
-#include <stdlib.h>
+/**
+ * @file
+ * @author [achance6](https://github.com/achance6)
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ * @brief
+ */
 #include <cmath>
-#include <functional>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
 
+namespace {  // keep the code local to this file by assigning them to an unnamed
+
 // fwd declarations
-struct Entry;
+using Entry = struct Entry;
 bool putProber(Entry entry, int key);
 bool searchingProber(Entry entry, int key);
 void add(int key);
 
 // globals
 int notPresent;
-struct Entry* table;
+std::vector<Entry> table;
 int totalSize;
 int tomb = -1;
 int size;
@@ -32,19 +37,20 @@ struct Entry {
 };
 
 // Hash a key
-int hashFxn(int key) {
+size_t hashFxn(int key) {
     std::hash<int> hash;
     return hash(key);
 }
 
 // Performs quadratic probing to resolve collisions
 int quadraticProbe(int key, bool searching) {
-    int hash = static_cast<int>(fabs(hashFxn(key)));
+    int hash = static_cast<int>(hashFxn(key));
     int i = 0;
     Entry entry;
     do {
-        int index = std::round(fabs(
-            (hash + static_cast<int>(std::round(std::pow(i, 2)))) % totalSize));
+        size_t index =
+            (hash + static_cast<size_t>(std::round(std::pow(i, 2)))) %
+            totalSize;
         entry = table[index];
         if (searching) {
             if (entry.key == notPresent) {
@@ -58,15 +64,16 @@ int quadraticProbe(int key, bool searching) {
             i++;
         } else {
             if (putProber(entry, key)) {
-                if (!rehashing)
+                if (!rehashing) {
                     cout << "Spot found!" << endl;
+                }
                 return index;
             }
             if (!rehashing) {
                 cout << "Spot taken, looking at next (next index = "
-                     << std::round(fabs((hash + static_cast<int>(std::round(
-                                                    std::pow(i + 1, 2)))) %
-                                        totalSize))
+                     << (hash +
+                         static_cast<size_t>(std::round(std::pow(i + 1, 2)))) %
+                            totalSize
                      << endl;
             }
             i++;
@@ -89,16 +96,18 @@ bool putProber(Entry entry, int key) {
 
 // Looks for a matching key
 bool searchingProber(Entry entry, int key) {
-    if (entry.key == key)
+    if (entry.key == key) {
         return true;
+    }
     return false;
 }
 
 // Helper
 Entry find(int key) {
     int index = quadraticProbe(key, true);
-    if (index == notPresent)
+    if (index == notPresent) {
         return Entry();
+    }
     return table[index];
 }
 
@@ -123,27 +132,25 @@ void rehash() {
     // Necessary so wall of add info isn't printed all at once
     rehashing = true;
     int oldSize = totalSize;
-    Entry* oldTable = table;
+    std::vector<Entry> oldTable(table);
     // Really this should use the next prime number greater than totalSize * 2
-    table = new Entry[totalSize * 2];
     totalSize *= 2;
+    table = std::vector<Entry>(totalSize);
     for (int i = 0; i < oldSize; i++) {
         if (oldTable[i].key != -1 && oldTable[i].key != notPresent) {
             size--;  // Size stays the same (add increments size)
             add(oldTable[i].key);
         }
     }
-    delete[] oldTable;
+    // delete[] oldTable;
     rehashing = false;
     cout << "Table was rehashed, new size is: " << totalSize << endl;
 }
 
 // Checks for load factor here
 void add(int key) {
-    Entry* entry = new Entry();
-    entry->key = key;
     int index = quadraticProbe(key, false);
-    table[index] = *entry;
+    table[index].key = key;
     // Load factor greater than 0.5 causes resizing
     if (++size / static_cast<double>(totalSize) >= 0.5) {
         rehash();
@@ -167,7 +174,7 @@ void addInfo(int key) {
     display();
     cout << endl;
     cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
-         << " == " << fabs(hashFxn(key) % totalSize);
+         << " == " << hashFxn(key) % totalSize;
     cout << endl;
     add(key);
     cout << "New table: ";
@@ -186,13 +193,14 @@ void removalInfo(int key) {
     cout << "New table: ";
     display();
 }
+}  // namespace
 
 // I/O
-int main(void) {
-    int cmd, hash, key;
+int main() {
+    int cmd = 0, hash = 0, key = 0;
     cout << "Enter the initial size of Hash Table. = ";
     cin >> totalSize;
-    table = new Entry[totalSize];
+    table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
         system("pause");
@@ -206,37 +214,37 @@ int main(void) {
         cout << "6. Exit." << endl;
         cin >> cmd;
         switch (cmd) {
-        case 1:
-            cout << "Enter key to add = ";
-            cin >> key;
-            addInfo(key);
-            break;
-        case 2:
-            cout << "Enter key to remove = ";
-            cin >> key;
-            removalInfo(key);
-            break;
-        case 3: {
-            cout << "Enter key to search = ";
-            cin >> key;
-            Entry entry = table[quadraticProbe(key, true)];
-            if (entry.key == notPresent) {
-                cout << "Key not present";
+            case 1:
+                cout << "Enter key to add = ";
+                cin >> key;
+                addInfo(key);
+                break;
+            case 2:
+                cout << "Enter key to remove = ";
+                cin >> key;
+                removalInfo(key);
+                break;
+            case 3: {
+                cout << "Enter key to search = ";
+                cin >> key;
+                Entry entry = table[quadraticProbe(key, true)];
+                if (entry.key == notPresent) {
+                    cout << "Key not present";
+                }
+                break;
             }
-            break;
-        }
-        case 4:
-            cout << "Enter element to generate hash = ";
-            cin >> key;
-            cout << "Hash of " << key << " is = " << fabs(hashFxn(key));
-            break;
-        case 5:
-            display();
-            break;
-        default:
-            loop = false;
-            break;
-            delete[] table;
+            case 4:
+                cout << "Enter element to generate hash = ";
+                cin >> key;
+                cout << "Hash of " << key << " is = " << hashFxn(key);
+                break;
+            case 5:
+                display();
+                break;
+            default:
+                loop = false;
+                break;
+                // delete[] table;
         }
         cout << endl;
     }
