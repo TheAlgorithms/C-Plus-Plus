@@ -11,7 +11,10 @@
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
 ## Ciphers
+  * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
+  * [Vigenere Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/vigenere_cipher.cpp)
+  * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
@@ -33,6 +36,7 @@
   * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array2.cpp)
   * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linked_list.cpp)
   * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linkedlist.cpp)
+  * [Queue Using Two Stacks](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_two_stacks.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/skip_list.cpp)
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
@@ -215,12 +219,14 @@
 ## Sorting
   * [Bead Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bead_sort.cpp)
   * [Bitonic Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bitonic_sort.cpp)
+  * [Bogo Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bogo_sort.cpp)
   * [Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bubble_sort.cpp)
   * [Bucket Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bucket_sort.cpp)
   * [Cocktail Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/cocktail_selection_sort.cpp)
   * [Comb Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/comb_sort.cpp)
   * [Counting Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort.cpp)
   * [Counting Sort String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort_string.cpp)
+  * [Gnome Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/gnome_sort.cpp)
   * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/heap_sort.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/insertion_sort.cpp)
   * [Library Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/library_sort.cpp)
@@ -229,6 +235,7 @@
   * [Numeric String Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/numeric_string_sort.cpp)
   * [Odd Even Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/odd_even_sort.cpp)
   * [Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp)
+  * [Quick Sort 3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort_3.cpp)
   * [Radix Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort.cpp)
   * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort.cpp)
