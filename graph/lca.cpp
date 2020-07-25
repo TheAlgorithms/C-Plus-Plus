@@ -1,7 +1,9 @@
 //#include<bits/stdc++.h>
 #include <iostream>
-
-using namespace std;
+#include <vector>
+#include <cmath>
+#include <cassert>
+#include <cstring>
 // Find the lowest common ancestor using binary lifting in O(nlogn)
 // Zero based indexing
 // Resource : https://cp-algorithms.com/graph/lca_binary_lifting.html
@@ -9,7 +11,7 @@ const int N = 1005;
 const int LG = log2(N) + 1;
 struct lca {
     int n;
-    vector<int> adj[N];  // Graph
+    std::vector<int> adj[N];  // Graph
     int up[LG][N];       // build this table
     int level[N];        // get the levels of all of them
 
@@ -18,7 +20,7 @@ struct lca {
         memset(level, 0, sizeof(level));
         for (int i = 0; i < n - 1; ++i) {
             int a, b;
-            cin >> a >> b;
+            std::cin >> a >> b;
             a--;
             b--;
             adj[a].push_back(b);
@@ -30,15 +32,15 @@ struct lca {
     }
     void verify() {
         for (int i = 0; i < n; ++i) {
-            cout << i << " : level: " << level[i] << endl;
+            std::cout << i << " : level: " << level[i] << std::endl;
         }
-        cout << endl;
+        std::cout << std::endl;
         for (int i = 0; i < LG; ++i) {
-            cout << "Power:" << i << ": ";
+            std::cout << "Power:" << i << ": ";
             for (int j = 0; j < n; ++j) {
-                cout << up[i][j] << " ";
+                std::cout << up[i][j] << " ";
             }
-            cout << endl;
+            std::cout << std::endl;
         }
     }
 
@@ -65,7 +67,7 @@ struct lca {
         u--;
         v--;
         if (level[v] > level[u]) {
-            swap(u, v);
+            std::swap(u, v);
         }
         // u is at the bottom.
         int dist = level[u] - level[v];

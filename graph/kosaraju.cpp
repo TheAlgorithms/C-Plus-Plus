@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include <vector>
+#include <stack>
 
-using namespace std;
 
 /**
  * Iterative function/method to print graph:
@@ -13,13 +13,13 @@ using namespace std;
  * @param V : vertices
  * @return void
  **/
-void print(vector<int> a[], int V) {
+void print(std::vector<int> a[], int V) {
     for (int i = 0; i < V; i++) {
         if (!a[i].empty())
-            cout << "i=" << i << "-->";
-        for (int j = 0; j < a[i].size(); j++) cout << a[i][j] << " ";
+            std::cout << "i=" << i << "-->";
+        for (int j = 0; j < a[i].size(); j++) std::cout << a[i][j] << " ";
         if (!a[i].empty())
-            cout << endl;
+            std::cout << std::endl;
     }
 }
 
@@ -31,7 +31,7 @@ void print(vector<int> a[], int V) {
  * @param adj[] : array of vectors to represent graph
  * @return void
  **/
-void push_vertex(int v, stack<int> &st, bool vis[], vector<int> adj[]) {
+void push_vertex(int v, std::stack<int> &st, bool vis[], std::vector<int> adj[]) {
     vis[v] = true;
     for (auto i = adj[v].begin(); i != adj[v].end(); i++) {
         if (vis[*i] == false)
@@ -47,7 +47,7 @@ void push_vertex(int v, stack<int> &st, bool vis[], vector<int> adj[]) {
  * @param grev[] : graph with reversed edges
  * @return void
  **/
-void dfs(int v, bool vis[], vector<int> grev[]) {
+void dfs(int v, bool vis[], std::vector<int> grev[]) {
     vis[v] = true;
     // cout<<v<<" ";
     for (auto i = grev[v].begin(); i != grev[v].end(); i++) {
@@ -66,15 +66,15 @@ no SCCs i.e. none(0) or there will be x no. of SCCs (x>0)) i.e. it returns the
 count of (number of) strongly connected components (SCCs) in the graph.
 (variable 'count_scc' within function)
 **/
-int kosaraju(int V, vector<int> adj[]) {
+int kosaraju(int V, std::vector<int> adj[]) {
     bool vis[V] = {};
-    stack<int> st;
+    std::stack<int> st;
     for (int v = 0; v < V; v++) {
         if (vis[v] == false)
             push_vertex(v, st, vis, adj);
     }
     // making new graph (grev) with reverse edges as in adj[]:
-    vector<int> grev[V];
+    std::vector<int> grev[V];
     for (int i = 0; i < V + 1; i++) {
         for (auto j = adj[i].begin(); j != adj[i].end(); j++) {
             grev[*j].push_back(i);
@@ -102,20 +102,20 @@ int kosaraju(int V, vector<int> adj[]) {
 // Input your required values: (not hardcoded)
 int main() {
     int t;
-    cin >> t;
+    std::cin >> t;
     while (t--) {
         int a, b;  // a->number of nodes, b->directed edges.
-        cin >> a >> b;
+        std::cin >> a >> b;
         int m, n;
-        vector<int> adj[a + 1];
+        std::vector<int> adj[a + 1];
         for (int i = 0; i < b; i++)  // take total b inputs of 2 vertices each
                                      // required to form an edge.
         {
-            cin >> m >> n;  // take input m,n denoting edge from m->n.
+            std::cin >> m >> n;  // take input m,n denoting edge from m->n.
             adj[m].push_back(n);
         }
         // pass number of nodes and adjacency array as parameters to function:
-        cout << kosaraju(a, adj) << endl;
+        std::cout << kosaraju(a, adj) << std::endl;
     }
     return 0;
 }
