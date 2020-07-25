@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('d0/da2/number__of__positive__divisors_
 </div><!--header-->
 <div class="contents">
 
-<p>C++ Program to calculate number of divisors.  
+<p>C++ Program to calculate the number of positive divisors.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for number_of_positive_divisors.cpp:</div>
 <div class="dyncontent">
@@ -112,26 +112,22 @@ Include dependency graph for number_of_positive_divisors.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ad89ccced8504b5116046cfa03066ffeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a> (int n)</td></tr>
 <tr class="separator:ad89ccced8504b5116046cfa03066ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ec9ad42717780d6caaff9d3d6977f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da2/number__of__positive__divisors_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a> ()</td></tr>
+<tr class="separator:a88ec9ad42717780d6caaff9d3d6977f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ Program to calculate number of divisors. </p>
-<p>This algorithm use the prime factorization approach. Any number can be written in multiplication of its prime factors. <br  />
-Let N = P1^E1 * P2^E2 ... Pk^Ek <br  />
-Therefore. number-of-divisors(N) = (E1+1) * (E2+1) ... (Ek+1). <br  />
-Where P1, P2 ... Pk are prime factors and E1, E2 ... Ek are exponents respectively.</p>
-<p>Example:- <br  />
-N = 36 <br  />
-36 = (3^2 * 2^2) <br  />
-number_of_positive_divisors(36) = (2+1) * (2+1) = 9. <br  />
+<div class="textblock"><p>C++ Program to calculate the number of positive divisors. </p>
+<p>This algorithm uses the prime factorization approach. Any positive integer can be written as a product of its prime factors. <br  />
+Let \(N = p_1^{e_1} \times p_2^{e_2} \times\cdots\times p_k^{e_k}\) where \(p_1,\, p_2,\, \dots,\, p_k\) are distinct prime factors of \(N\) and \(e_1,\, e_2,\, \dots,\, e_k\) are respective positive integer exponents. <br  />
+Each positive divisor of \(N\) is in the form \(p_1^{g_1}\times p_2^{g_2}\times\cdots\times p_k^{g_k}\) where \(0\le g_i\le e_i\) are integers for all \(1\le i\le k\). <br  />
+Finally, there are \((e_1+1) \times (e_2+1)\times\cdots\times (e_k+1)\) positive divisors of \(N\) since we can choose every \(g_i\) independently.</p>
+<p>Example: <br  />
+ \(N = 36 = (3^2 \cdot 2^2)\) <br  />
+ \(\mbox{number_of_positive_divisors}(36) = (2+1) \cdot (2+1) = 9\). <br  />
 list of positive divisors of 36 = 1, 2, 3, 4, 6, 9, 12, 18, 36.</p>
-<p>Similarly if N is -36 at that time number of positive divisors remain same.</p>
-<p>Example:- <br  />
-N = -36 <br  />
--36 = -1 * (3^2 * 2^2) <br  />
-number_of_positive_divisors(-36) = (2+1) * (2+1) = 9. <br  />
-list of positive divisors of -36 = 1, 2, 3, 4, 6, 9, 12, 18, 36. </p>
+<p>Similarly, for N = -36 the number of positive divisors remain same. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
@@ -148,23 +144,22 @@ list of positive divisors of -36 = 1, 2, 3, 4, 6, 9, 12, 18, 36. </p>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> n;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        n = -n;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (n == 0) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All non-zero numbers are divisors of 0 !&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of positive divisors is : &quot;</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;           {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (n == 0) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All non-zero numbers are divisors of 0 !&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of positive divisors is : &quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da2/number__of__positive__divisors_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="447" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da2/number__of__positive__divisors_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="364" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -185,35 +180,75 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Algorithm </p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                       {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> prime_exponent_count;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i * i &lt;= n; i++) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> prime_count = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">while</span> (n % i == 0) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            prime_count += 1;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            n /= i;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (prime_count != 0) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            prime_exponent_count.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(prime_count);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (n &gt; 1) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        prime_exponent_count.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(1);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> divisors_count = 1;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; prime_exponent_count.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        divisors_count = divisors_count * (prime_exponent_count[i] + 1);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> divisors_count;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<p>Function to compute the number of positive divisors. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>number to compute divisors for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of positive divisors of n (or 1 if n = 0) </dd></dl>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                       {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        n = -n; <span class="comment">// take the absolute value of n</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> number_of_divisors = 1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i * i &lt;= n; i++) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// This part is doing the prime factorization.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Note that we cannot find a composite divisor of n unless we would</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// already previously find the corresponding prime divisor and dvided</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// n by that prime. Therefore, all the divisors found here will</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// actually be primes.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// The loop terminates early when it is left with a number n which</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// does not have a divisor smaller or equal to sqrt(n) - that means</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// the remaining number is a prime itself.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">int</span> prime_exponent = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">while</span> (n % i == 0) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// Repeatedly divide n by the prime divisor n to compute</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// the exponent (e_i in the algorithm description).</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            prime_exponent++;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            n /= i;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        number_of_divisors *= prime_exponent + 1;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (n &gt; 1) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// In case the remaining number n is a prime number itself</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// (essentially p_k^1) the final answer is also multiplied by (e_k+1).</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        number_of_divisors *= 2;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> number_of_divisors;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88ec9ad42717780d6caaff9d3d6977f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ec9ad42717780d6caaff9d3d6977f9">&#9670;&nbsp;</a></span>tests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test implementations </p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;             {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    assert(<a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(36) == 9);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    assert(<a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(-36) == 9);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    assert(<a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(1) == 1);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    assert(<a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(2011) == 2); <span class="comment">// 2011 is a prime</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    assert(<a class="code" href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a>(756) == 24); <span class="comment">// 756 = 2^2 * 3^3 * 7</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da2/number__of__positive__divisors_8cpp_ad89ccced8504b5116046cfa03066ffeb_cgraph.svg" width="348" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/da2/number__of__positive__divisors_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="244" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -221,12 +256,10 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; int &gt;</a></div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
+<div class="ttc" id="anumber__of__positive__divisors_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="../../d0/da2/number__of__positive__divisors_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition:</b> number_of_positive_divisors.cpp:70</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anumber__of__positive__divisors_8cpp_html_ad89ccced8504b5116046cfa03066ffeb"><div class="ttname"><a href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a></div><div class="ttdeci">int number_of_positive_divisors(int n)</div><div class="ttdef"><b>Definition:</b> number_of_positive_divisors.cpp:34</div></div>
+<div class="ttc" id="anumber__of__positive__divisors_8cpp_html_ad89ccced8504b5116046cfa03066ffeb"><div class="ttname"><a href="../../d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb">number_of_positive_divisors</a></div><div class="ttdeci">int number_of_positive_divisors(int n)</div><div class="ttdef"><b>Definition:</b> number_of_positive_divisors.cpp:33</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

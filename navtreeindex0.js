@@ -19,6 +19,7 @@ var NAVTREEINDEX0 =
 "d0/d5a/skip__list_8cpp.html#a38234f668624bca86341240f34a95193":[8,0,1,9,4],
 "d0/d5a/skip__list_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,1,9,2],
 "d0/da2/number__of__positive__divisors_8cpp.html":[8,0,6,21],
+"d0/da2/number__of__positive__divisors_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,6,21,2],
 "d0/da2/number__of__positive__divisors_8cpp.html#ad89ccced8504b5116046cfa03066ffeb":[8,0,6,21,1],
 "d0/da2/number__of__positive__divisors_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,21,0],
 "d0/db6/non__recursive__merge__sort_8cpp.html":[8,0,12,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "d4/d86/large__number_8h_source.html":[8,0,6,17],
 "d4/d9c/primes__up__to__billion_8cpp.html":[8,0,6,25],
 "d4/d9c/primes__up__to__billion_8cpp.html#a031cada84819ed6426f58e4f7e81261c":[8,0,6,25,1],
-"d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95":[8,0,6,25,2],
-"d4/d9c/primes__up__to__billion_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,6,25,0]
+"d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95":[8,0,6,25,2]
 };

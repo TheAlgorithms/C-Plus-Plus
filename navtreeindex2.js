@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,0,3],
 "d7/d77/class_edge.html":[7,0,10],
 "d7/d77/class_edge.html#a0a5b6510bcbe63028818f4dc417ba962":[7,0,10,6],
 "d7/d77/class_edge.html#a0bc08bf5da251d66412a7dc3e50c6605":[7,0,10,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "da/dd3/namespacespirograph.html":[6,0,6],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[8,0,8,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,8,2,0],
-"da/df2/durand__kerner__roots_8cpp.html":[8,0,7,2],
-"da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377":[8,0,7,2,2]
+"da/df2/durand__kerner__roots_8cpp.html":[8,0,7,2]
 };
