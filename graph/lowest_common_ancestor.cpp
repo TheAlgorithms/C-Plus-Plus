@@ -53,7 +53,7 @@ class Graph {
      * @param N number of vertices in the graph
      * @param undirected_edges list of graph's undirected edges
      */
-    Graph(int N, const std::vector< std::pair<int, int> > &undirected_edges) {
+    Graph(unsigned long N, const std::vector< std::pair<int, int> > &undirected_edges) {
         neighbors.resize(N);
         for (auto &edge : undirected_edges) {
             neighbors[edge.first].push_back(edge.second);
@@ -68,7 +68,6 @@ class Graph {
         return neighbors.size();
     }
 
-  protected:
     /** \brief for each vertex it stores a list indicies of its neighbors */
     std::vector< std::vector<int> > neighbors;
 };
@@ -142,7 +141,7 @@ class LowestCommonAncestor {
      * \brief Stores the tree and precomputs "up lifts".
      * @param tree_ rooted tree.
      */
-    LowestCommonAncestor(const RootedTree& tree_) : tree(tree_) {
+    explicit LowestCommonAncestor(const RootedTree& tree_) : tree(tree_) {
       populate_up();
     }
 
@@ -175,7 +174,7 @@ class LowestCommonAncestor {
         }
 
         // "Lift" u and v to their 2^i th ancestor if they are different
-        for (int i = up[u].size() - 1; i >= 0; --i) {
+        for (int i = (int)up[u].size() - 1; i >= 0; --i) {
             if (up[u][i] != up[v][i]) {
                 u = up[u][i];
                 v = up[v][i];
@@ -189,7 +188,6 @@ class LowestCommonAncestor {
         return up[u][0];
     }
 
-  protected:
     /* \brief reference to the rooted tree this structure allows to query */
     const RootedTree& tree;
     /**
@@ -199,6 +197,8 @@ class LowestCommonAncestor {
      * the (2^i)-th ancestor of the vertex.
      */
     std::vector< std::vector<int> > up;
+
+  protected:
     /**
      * Populate the "up" structure. See above.
      */
