@@ -13,7 +13,7 @@
 namespace backtracking {
     /** A utility function to print solution
      * @tparam V number of vertices in the graph
-     * @param color description
+     * @param color array of colors assigned to the nodes
      */
     template <size_t V>
     void printSolution(const std::array <int, V>& color) {
@@ -27,12 +27,12 @@ namespace backtracking {
     /** A utility function to check if the current color assignment is safe for
      * vertex v
      * @tparam V number of vertices in the graph
-     * @param v description
-     * @param graph array of arrays
-     * @param color colors saved in array
-     * @param c description
-     * @returns `true` if ....
-     * @returns `false` if ....
+     * @param v index of graph vertex to check
+     * @param graph matrix of graph nonnectivity
+     * @param color vector of colors assigned to the graph nodes/vertices
+     * @param c color value to check for the node `v`
+     * @returns `true` if the color is safe to be assigned to the node
+     * @returns `false` if the color is not safe to be assigned to the node
      */
     template <size_t V>
     bool isSafe(int v, const std::array<std::array <int, V>, V>& graph, const std::array <int, V>& color, int c) {
@@ -46,11 +46,11 @@ namespace backtracking {
 
     /** A recursive utility function to solve m coloring problem
      * @tparam V number of vertices in the graph
-     * @param graph array of arrays
+     * @param graph matrix of graph nonnectivity
      * @param m number of colors
      * @param [in,out] color description // used in,out to notify in documentation
      * that this parameter gets modified by the function
-     * @param v description
+     * @param v index of graph vertex to check
      */
     template <size_t V>
     void graphColoring(const std::array<std::array <int, V>, V>& graph, int m, std::array <int, V> color, int v) {
