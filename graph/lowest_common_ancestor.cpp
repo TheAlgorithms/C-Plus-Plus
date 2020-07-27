@@ -9,9 +9,9 @@
  * Algorithm: https://cp-algorithms.com/graph/lca_binary_lifting.html
  *
  * Complexity:
- *   - Precomputation: O(N log N) where N is the number of vertices in the tree
- *   - Query: O(log N)
- *   - Space: O(N log N)
+ *   - Precomputation: \f$O(N \log N)\f$ where \f$N\f$ is the number of vertices in the tree
+ *   - Query: \f$O(\log N)\f$
+ *   - Space: \f$O(N \log N)\f$
  *
  * Example:
  * <br/>  Tree:
@@ -53,7 +53,7 @@ class Graph {
      * @param N number of vertices in the graph
      * @param undirected_edges list of graph's undirected edges
      */
-    Graph(unsigned long N, const std::vector< std::pair<int, int> > &undirected_edges) {
+    Graph(size_t N, const std::vector< std::pair<int, int> > &undirected_edges) {
         neighbors.resize(N);
         for (auto &edge : undirected_edges) {
             neighbors[edge.first].push_back(edge.second);
@@ -62,6 +62,7 @@ class Graph {
     }
 
     /**
+     * Function to get the number of vertices in the graph
      * @return the number of vertices in the graph.
      */
     int number_of_vertices() const {
@@ -97,7 +98,7 @@ class RootedTree : public Graph {
     std::vector<int> parent;
     /** \brief Stores the distance from the root. */
     std::vector<int> level;
-    /* \brief Index of the root vertex. */
+    /** \brief Index of the root vertex. */
     int root;
 
   protected:
@@ -105,6 +106,7 @@ class RootedTree : public Graph {
      * \brief Calculate the parents for all the vertices in the tree.
      * Implements the breadth first search algorithm starting from the root
      * vertex searching the entire tree and labeling parents for all vertices.
+     * @returns none
      */
     void populate_parents() {
         // Initialize the vector with -1 which indicates the vertex
@@ -174,7 +176,7 @@ class LowestCommonAncestor {
         }
 
         // "Lift" u and v to their 2^i th ancestor if they are different
-        for (int i = (int)up[u].size() - 1; i >= 0; --i) {
+        for (int i = static_cast<int>(up[u].size()) - 1; i >= 0; --i) {
             if (up[u][i] != up[v][i]) {
                 u = up[u][i];
                 v = up[v][i];
@@ -218,7 +220,10 @@ class LowestCommonAncestor {
     }
 };
 
-/** Unit tests */
+/**
+ * Unit tests
+ * @rerturns none
+ */
 void tests() {
     /**
      *             _  3  _
