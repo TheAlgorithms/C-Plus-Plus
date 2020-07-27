@@ -5,7 +5,6 @@
  * @author [DarthCoder3200](https://github.com/DarthCoder3200)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-
 #include <iostream>
 #include <array>
 
@@ -20,10 +19,10 @@ namespace backtracking {
      * @param mat matrix
      * @param i current index in rows
      * @param j current index in columns
-     * @param no description
+     * @param no number to be added in matrix
      * @param n number of times loop will run
-     * @returns `true` if ....
-     * @returns `false` if ....
+     * @returns `true` if 'mat' is different from 'no'
+     * @returns `false` if 'mat' equals to 'no'
      */
     template <size_t V>
     bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, int no, int n) {
