@@ -14,6 +14,17 @@
  * @brief Backtracking algorithms
  */
 namespace backtracking {
+    /**
+     * Checks if it's possible to place a 'no'
+     * @tparam V number of vertices in the array
+     * @param mat matrix
+     * @param i current index in rows
+     * @param j current index in columns
+     * @param no description
+     * @param n number of times loop will run
+     * @returns `true` if ....
+     * @returns `false` if ....
+     */
     template <size_t V>
     bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, int no, int n) {
         /// Row or col nahin hona chahiye
@@ -41,7 +52,7 @@ namespace backtracking {
      * Print array of array
      * @tparam V number of vertices in array
      * @param mat array of arrays
-     * @param n number of times loop will be run
+     * @param n number of times loop will run
      * @return void
      */
     template <size_t V>
