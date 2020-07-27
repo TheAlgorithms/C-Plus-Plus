@@ -1,12 +1,11 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-using namespace std;
 
 int n, m;  // For number of Vertices (V) and number of edges (E)
-vector<vector<int>> G;
-vector<bool> visited;
-vector<int> ans;
+std::vector<std::vector<int>> G;
+std::vector<bool> visited;
+std::vector<int> ans;
 
 void dfs(int v) {
     visited[v] = true;
@@ -27,21 +26,21 @@ void topological_sort() {
     reverse(ans.begin(), ans.end());
 }
 int main() {
-    cout << "Enter the number of vertices and the number of directed edges\n";
-    cin >> n >> m;
+    std::cout << "Enter the number of vertices and the number of directed edges\n";
+    std::cin >> n >> m;
     int x, y;
-    G.resize(n, vector<int>());
+    G.resize(n, std::vector<int>());
     for (int i = 0; i < n; ++i) {
-        cin >> x >> y;
+        std::cin >> x >> y;
         x--, y--;  // to convert 1-indexed to 0-indexed
         G[x].push_back(y);
     }
     topological_sort();
-    cout << "Topological Order : \n";
+    std::cout << "Topological Order : \n";
     for (int v : ans) {
-        cout << v + 1
+        std::cout << v + 1
              << ' ';  // converting zero based indexing back to one based.
     }
-    cout << '\n';
+    std::cout << '\n';
     return 0;
 }

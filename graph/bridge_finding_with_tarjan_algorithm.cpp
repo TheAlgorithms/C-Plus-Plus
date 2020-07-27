@@ -7,9 +7,11 @@
 #include <algorithm>  //  for min & max
 #include <iostream>   //  for cout
 #include <vector>     //  for std::vector
+
 using std::cout;
 using std::min;
 using std::vector;
+
 class Solution {
     vector<vector<int>> graph;
     vector<int> in_time, out_time;
