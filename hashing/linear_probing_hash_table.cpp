@@ -18,15 +18,10 @@ using std::string;
 namespace {  // keep the code local to this file by assigning them to an unnamed
              // namespace
 
-/** Node object that holds key */
-struct Entry {
-    explicit Entry(int key = notPresent) : key(key) {}  ///< constructor
-    int key;                                            ///< key value
-};
-
 // fwd declarations
-bool putProber(Entry entry, int key);
-bool searchingProber(Entry entry, int key);
+using Entry = struct Entry;
+bool putProber(const Entry& entry, int key);
+bool searchingProber(const Entry& entry, int key);
 void add(int key);
 
 // Undocumented globals
@@ -36,6 +31,12 @@ int totalSize;
 int tomb = -1;
 int size;
 bool rehashing;
+
+/** Node object that holds key */
+struct Entry {
+    explicit Entry(int key = notPresent) : key(key) {}  ///< constructor
+    int key;                                            ///< key value
+};
 
 /**
  * @brief Hash a key. Uses the STL library's `std::hash()` function.

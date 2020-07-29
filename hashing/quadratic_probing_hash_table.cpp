@@ -18,8 +18,8 @@ namespace {  // keep the code local to this file by assigning them to an unnamed
 
 // fwd declarations
 using Entry = struct Entry;
-bool putProber(Entry entry, int key);
-bool searchingProber(Entry entry, int key);
+bool putProber(const Entry& entry, int key);
+bool searchingProber(const Entry& entry, int key);
 void add(int key);
 
 // globals
@@ -87,7 +87,7 @@ int quadraticProbe(int key, bool searching) {
 }
 
 // Finds empty spot
-bool putProber(Entry entry, int key) {
+bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
         return true;
     }
@@ -95,7 +95,7 @@ bool putProber(Entry entry, int key) {
 }
 
 // Looks for a matching key
-bool searchingProber(Entry entry, int key) {
+bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
         return true;
     }

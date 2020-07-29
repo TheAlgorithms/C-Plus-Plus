@@ -15,8 +15,8 @@ namespace {  // keep the code local to this file by assigning them to an unnamed
 
 // fwd declarations
 using Entry = struct Entry;
-bool putProber(Entry entry, int key);
-bool searchingProber(Entry entry, int key);
+bool putProber(const Entry& entry, int key);
+bool searchingProber(const Entry& entry, int key);
 void add(int key);
 
 // Undocumented globals
@@ -112,7 +112,7 @@ int doubleHash(int key, bool searching) {
  * @returns `true` if key is not present or is a `toumb`
  * @returns `false` is already occupied
  */
-bool putProber(Entry entry, int key) {
+bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
         return true;
     }
@@ -125,7 +125,7 @@ bool putProber(Entry entry, int key) {
  * @returns `true` if found
  * @returns `false` if not found
  */
-bool searchingProber(Entry entry, int key) {
+bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
         return true;
     }
