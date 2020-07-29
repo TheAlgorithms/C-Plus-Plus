@@ -2,7 +2,9 @@
  * @file
  * @author [achance6](https://github.com/achance6)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief
+ * @brief Storage mechanism using [linear probing
+ * hash](https://en.wikipedia.org/wiki/Linear_probing) keys.
+ * @note The implementation can be optimized by using OOP style.
  */
 #include <iostream>
 #include <string>
@@ -16,13 +18,18 @@ using std::string;
 namespace {  // keep the code local to this file by assigning them to an unnamed
              // namespace
 
+/** Node object that holds key */
+struct Entry {
+    explicit Entry(int key = notPresent) : key(key) {}  ///< constructor
+    int key;                                            ///< key value
+};
+
 // fwd declarations
-using Entry = struct Entry;
 bool putProber(Entry entry, int key);
 bool searchingProber(Entry entry, int key);
 void add(int key);
 
-// globals
+// Undocumented globals
 int notPresent;
 std::vector<Entry> table;
 int totalSize;
@@ -30,19 +37,21 @@ int tomb = -1;
 int size;
 bool rehashing;
 
-// Node that holds key
-struct Entry {
-    explicit Entry(int key = notPresent) : key(key) {}
-    int key;
-};
-
-// Hash a key
+/**
+ * @brief Hash a key. Uses the STL library's `std::hash()` function.
+ *
+ * @param key value to hash
+ * @return hash value of the key
+ */
 size_t hashFxn(int key) {
     std::hash<int> hash;
     return hash(key);
 }
 
-// Performs linear probing to resolve collisions
+/** Performs linear probing to resolve collisions
+ * @param key key value to hash
+ * @return hash value of the key
+ */
 int linearProbe(int key, bool searching) {
     int hash = static_cast<int>(hashFxn(key));
     int i = 0;
@@ -80,23 +89,33 @@ int linearProbe(int key, bool searching) {
     return notPresent;
 }
 
-// Finds empty spot
-bool putProber(Entry entry, int key) {
+/** Finds empty spot
+ * @param entry instance to check in
+ * @param key key value to hash
+ * @return hash value of the key
+ */
+bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
         return true;
     }
     return false;
 }
 
-// Looks for a matching key
-bool searchingProber(Entry entry, int key) {
+/** Looks for a matching key
+ * @param entry instance to check in
+ * @param key key value to hash
+ * @return hash value of the key
+ */
+bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
         return true;
     }
     return false;
 }
 
-// Displays the table
+/** Function to displays the table
+ * @returns none
+ */
 void display() {
     for (int i = 0; i < totalSize; i++) {
         if (table[i].key == notPresent) {
@@ -112,7 +131,9 @@ void display() {
     cout << endl;
 }
 
-// Rehashes the table into a bigger table
+/** Rehashes the table into a bigger table
+ * @returns None
+ */
 void rehash() {
     // Necessary so wall of add info isn't printed all at once
     rehashing = true;
@@ -133,7 +154,9 @@ void rehash() {
     cout << "Table was rehashed, new size is: " << totalSize << endl;
 }
 
-// Adds entry using linear probing. Checks for load factor here
+/** Adds entry using linear probing. Checks for load factor here
+ * @param key key value to hash and add
+ */
 void add(int key) {
     int index = linearProbe(key, false);
     table[index].key = key;
@@ -143,7 +166,9 @@ void add(int key) {
     }
 }
 
-// Removes key. Leaves tombstone upon removal.
+/** Removes key. Leaves tombstone upon removal.
+ * @param key key value to hash and remove
+ */
 void remove(int key) {
     int index = linearProbe(key, true);
     if (index == notPresent) {
@@ -154,7 +179,9 @@ void remove(int key) {
     size--;
 }
 
-// Information about the adding process
+/** Information about the adding process
+ * @param key key value to hash and add
+ */
 void addInfo(int key) {
     cout << "Initial table: ";
     display();
@@ -167,7 +194,9 @@ void addInfo(int key) {
     display();
 }
 
-// Information about removal process
+/** Information about removal process
+ * @param key key value to hash and remove
+ */
 void removalInfo(int key) {
     cout << "Initial table: ";
     display();
@@ -181,7 +210,9 @@ void removalInfo(int key) {
 }
 }  // namespace
 
-// I/O
+/** Main function
+ * @returns 0 on success
+ */
 int main() {
     int cmd = 0, hash = 0, key = 0;
     cout << "Enter the initial size of Hash Table. = ";
