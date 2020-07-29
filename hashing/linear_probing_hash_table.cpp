@@ -210,6 +210,9 @@ void removalInfo(int key) {
     display();
 }
 }  // namespace linear_probing
+/**
+ * @}
+ */
 
 using linear_probing::Entry;
 using linear_probing::table;
