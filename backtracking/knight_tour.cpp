@@ -25,7 +25,7 @@ namespace backtracking {
      * @tparam V number of vertices in array
      * @param x position x
      * @param y position y
-     * @param sol array of arrays
+     * @param sol matrix
      * @returns `true` if ....
      * @returns `false` if ....
      */
@@ -39,12 +39,12 @@ namespace backtracking {
      * @tparam V number of vertices in array
      * @param x position x
      * @param y position y
-     * @param mov movement
-     * @param sol array of arrays
+     * @param mov movement to be done
+     * @param sol matrix
      * @param xmov x movement
      * @param ymov y movement
-     * @returns `true` if ....
-     * @returns `false` if ....
+     * @returns `true` if solution exists
+     * @returns `false` if solution does not exist
      */
     template <size_t V>
     bool solve(int x, int y, int mov, std::array <std::array <int, V>, V> &sol,
