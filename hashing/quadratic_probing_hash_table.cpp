@@ -250,7 +250,8 @@ int main() {
     table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
-        system("pause");
+        std::cout << "\nPress a key to continue...\n";
+        std::cin.get();
         std::cout << std::endl;
         std::cout << "PLEASE CHOOSE -" << std::endl;
         std::cout << "1. Add key. (Numeric only)" << std::endl;

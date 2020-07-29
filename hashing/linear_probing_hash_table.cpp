@@ -9,9 +9,14 @@
 #include <iostream>
 #include <vector>
 
-namespace {  // keep the code local to this file by assigning them to an unnamed
-             // namespace
-
+/**
+ * @addtogroup Open Addressing
+ * @{
+ * @namespace linear_probing
+ * @brief An implementation of hash table using [linear
+ * probing](https://en.wikipedia.org/wiki/Linear_probing) algorithm.
+ */
+namespace linear_probing {
 // fwd declarations
 using Entry = struct Entry;
 bool putProber(const Entry& entry, int key);
@@ -204,7 +209,11 @@ void removalInfo(int key) {
     std::cout << "New table: ";
     display();
 }
-}  // namespace
+}  // namespace linear_probing
+
+using linear_probing::Entry;
+using linear_probing::table;
+using linear_probing::totalSize;
 
 /** Main function
  * @returns 0 on success
@@ -216,7 +225,8 @@ int main() {
     table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
-        system("pause");
+        std::cout << "\nPress a key to continue...\n";
+        std::cin.get();
         std::cout << std::endl;
         std::cout << "PLEASE CHOOSE -" << std::endl;
         std::cout << "1. Add key. (Numeric only)" << std::endl;
@@ -230,18 +240,18 @@ int main() {
             case 1:
                 std::cout << "Enter key to add = ";
                 std::cin >> key;
-                addInfo(key);
+                linear_probing::addInfo(key);
                 break;
             case 2:
                 std::cout << "Enter key to remove = ";
                 std::cin >> key;
-                removalInfo(key);
+                linear_probing::removalInfo(key);
                 break;
             case 3: {
                 std::cout << "Enter key to search = ";
                 std::cin >> key;
-                Entry entry = table[linearProbe(key, true)];
-                if (entry.key == notPresent) {
+                Entry entry = table[linear_probing::linearProbe(key, true)];
+                if (entry.key == linear_probing::notPresent) {
                     std::cout << "Key not present";
                 }
                 break;
@@ -249,10 +259,11 @@ int main() {
             case 4:
                 std::cout << "Enter element to generate hash = ";
                 std::cin >> key;
-                std::cout << "Hash of " << key << " is = " << hashFxn(key);
+                std::cout << "Hash of " << key
+                          << " is = " << linear_probing::hashFxn(key);
                 break;
             case 5:
-                display();
+                linear_probing::display();
                 break;
             default:
                 loop = false;
