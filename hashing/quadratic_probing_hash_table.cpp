@@ -8,13 +8,7 @@
  */
 #include <cmath>
 #include <iostream>
-#include <string>
 #include <vector>
-
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
 
 namespace {  // keep the code local to this file by assigning them to an unnamed
 
@@ -59,29 +53,30 @@ int quadraticProbe(int key, bool searching) {
                 return notPresent;
             }
             if (searchingProber(entry, key)) {
-                cout << "Found key!" << endl;
+                std::cout << "Found key!" << std::endl;
                 return index;
             }
-            cout << "Found tombstone or equal hash, checking next" << endl;
+            std::cout << "Found tombstone or equal hash, checking next"
+                      << std::endl;
             i++;
         } else {
             if (putProber(entry, key)) {
                 if (!rehashing) {
-                    cout << "Spot found!" << endl;
+                    std::cout << "Spot found!" << std::endl;
                 }
                 return index;
             }
             if (!rehashing) {
-                cout << "Spot taken, looking at next (next index = "
-                     << (hash +
-                         static_cast<size_t>(std::round(std::pow(i + 1, 2)))) %
-                            totalSize
-                     << endl;
+                std::cout << "Spot taken, looking at next (next index = "
+                          << (hash + static_cast<size_t>(
+                                         std::round(std::pow(i + 1, 2)))) %
+                                 totalSize
+                          << std::endl;
             }
             i++;
         }
         if (i == totalSize * 100) {
-            cout << "Quadratic probe failed (infinite loop)" << endl;
+            std::cout << "Quadratic probe failed (infinite loop)" << std::endl;
             return notPresent;
         }
     } while (entry.key != notPresent);
@@ -117,16 +112,16 @@ Entry find(int key) {
 void display() {
     for (int i = 0; i < totalSize; i++) {
         if (table[i].key == notPresent) {
-            cout << " Empty ";
+            std::cout << " Empty ";
         } else if (table[i].key == tomb) {
-            cout << " Tomb ";
+            std::cout << " Tomb ";
         } else {
-            cout << " ";
-            cout << table[i].key;
-            cout << " ";
+            std::cout << " ";
+            std::cout << table[i].key;
+            std::cout << " ";
         }
     }
-    cout << endl;
+    std::cout << std::endl;
 }
 
 // Rehashes the table into a bigger table
@@ -146,7 +141,7 @@ void rehash() {
     }
     // delete[] oldTable;
     rehashing = false;
-    cout << "Table was rehashed, new size is: " << totalSize << endl;
+    std::cout << "Table was rehashed, new size is: " << totalSize << std::endl;
 }
 
 // Checks for load factor here
@@ -163,36 +158,36 @@ void add(int key) {
 void remove(int key) {
     int index = quadraticProbe(key, true);
     if (index == notPresent) {
-        cout << "key not found" << endl;
+        std::cout << "key not found" << std::endl;
     }
     table[index].key = tomb;
-    cout << "Removal successful, leaving tombstone" << endl;
+    std::cout << "Removal successful, leaving tombstone" << std::endl;
     size--;
 }
 
 // Information about the adding process
 void addInfo(int key) {
-    cout << "Initial table: ";
+    std::cout << "Initial table: ";
     display();
-    cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
-         << " == " << hashFxn(key) % totalSize;
-    cout << endl;
+    std::cout << std::endl;
+    std::cout << "hash of " << key << " is " << hashFxn(key) << " % "
+              << totalSize << " == " << hashFxn(key) % totalSize;
+    std::cout << std::endl;
     add(key);
-    cout << "New table: ";
+    std::cout << "New table: ";
     display();
 }
 
 // Information about removal process
 void removalInfo(int key) {
-    cout << "Initial table: ";
+    std::cout << "Initial table: ";
     display();
-    cout << endl;
-    cout << "hash of " << key << " is " << hashFxn(key) << " % " << totalSize
-         << " == " << hashFxn(key) % totalSize;
-    cout << endl;
+    std::cout << std::endl;
+    std::cout << "hash of " << key << " is " << hashFxn(key) << " % "
+              << totalSize << " == " << hashFxn(key) % totalSize;
+    std::cout << std::endl;
     remove(key);
-    cout << "New table: ";
+    std::cout << "New table: ";
     display();
 }
 }  // namespace
@@ -200,45 +195,45 @@ void removalInfo(int key) {
 // I/O
 int main() {
     int cmd = 0, hash = 0, key = 0;
-    cout << "Enter the initial size of Hash Table. = ";
-    cin >> totalSize;
+    std::cout << "Enter the initial size of Hash Table. = ";
+    std::cin >> totalSize;
     table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
         system("pause");
-        cout << endl;
-        cout << "PLEASE CHOOSE -" << endl;
-        cout << "1. Add key. (Numeric only)" << endl;
-        cout << "2. Remove key." << endl;
-        cout << "3. Find key." << endl;
-        cout << "4. Generate Hash. (Numeric only)" << endl;
-        cout << "5. Display Hash table." << endl;
-        cout << "6. Exit." << endl;
-        cin >> cmd;
+        std::cout << std::endl;
+        std::cout << "PLEASE CHOOSE -" << std::endl;
+        std::cout << "1. Add key. (Numeric only)" << std::endl;
+        std::cout << "2. Remove key." << std::endl;
+        std::cout << "3. Find key." << std::endl;
+        std::cout << "4. Generate Hash. (Numeric only)" << std::endl;
+        std::cout << "5. Display Hash table." << std::endl;
+        std::cout << "6. Exit." << std::endl;
+        std::cin >> cmd;
         switch (cmd) {
             case 1:
-                cout << "Enter key to add = ";
-                cin >> key;
+                std::cout << "Enter key to add = ";
+                std::cin >> key;
                 addInfo(key);
                 break;
             case 2:
-                cout << "Enter key to remove = ";
-                cin >> key;
+                std::cout << "Enter key to remove = ";
+                std::cin >> key;
                 removalInfo(key);
                 break;
             case 3: {
-                cout << "Enter key to search = ";
-                cin >> key;
+                std::cout << "Enter key to search = ";
+                std::cin >> key;
                 Entry entry = table[quadraticProbe(key, true)];
                 if (entry.key == notPresent) {
-                    cout << "Key not present";
+                    std::cout << "Key not present";
                 }
                 break;
             }
             case 4:
-                cout << "Enter element to generate hash = ";
-                cin >> key;
-                cout << "Hash of " << key << " is = " << hashFxn(key);
+                std::cout << "Enter element to generate hash = ";
+                std::cin >> key;
+                std::cout << "Hash of " << key << " is = " << hashFxn(key);
                 break;
             case 5:
                 display();
@@ -248,7 +243,7 @@ int main() {
                 break;
                 // delete[] table;
         }
-        cout << endl;
+        std::cout << std::endl;
     }
     return 0;
 }
