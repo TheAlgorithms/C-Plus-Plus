@@ -10,7 +10,7 @@
 #include <vector>
 
 /**
- * @addtogroup Open Addressing
+ * @addtogroup open_addressing Open Addressing
  * @{
  * @namespace linear_probing
  * @brief An implementation of hash table using [linear
@@ -228,8 +228,6 @@ int main() {
     table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
-        std::cout << "\nPress a key to continue...\n";
-        std::cin.get();
         std::cout << std::endl;
         std::cout << "PLEASE CHOOSE -" << std::endl;
         std::cout << "1. Add key. (Numeric only)" << std::endl;

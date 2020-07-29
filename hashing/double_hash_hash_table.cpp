@@ -10,9 +10,14 @@
 #include <memory>
 #include <vector>
 
-namespace {  // keep the code local to this file by assigning them to an unnamed
-             // namespace
-
+/**
+ * @addtogroup open_addressing Open Addressing
+ * @{
+ * @namespace double_hashing
+ * @brief An implementation of hash table using [double
+ * hashing](https://en.wikipedia.org/wiki/Double_hashing) algorithm.
+ */
+namespace double_hashing {
 // fwd declarations
 using Entry = struct Entry;
 bool putProber(const Entry& entry, int key);
@@ -230,10 +235,17 @@ void removalInfo(int key) {
     std::cout << "New table: ";
     display();
 }
-}  // namespace
+}  // namespace double_hashing
+/**
+ * @}
+ */
+
+using double_hashing::Entry;
+using double_hashing::table;
+using double_hashing::totalSize;
 
 /** Main program
- * @returns None
+ * @returns 0 on success
  */
 int main() {
     int cmd = 0, hash = 0, key = 0;
@@ -242,7 +254,6 @@ int main() {
     table = std::vector<Entry>(totalSize);
     bool loop = true;
     while (loop) {
-        system("pause");
         std::cout << std::endl;
         std::cout << "PLEASE CHOOSE -" << std::endl;
         std::cout << "1. Add key. (Numeric only)" << std::endl;
@@ -256,18 +267,18 @@ int main() {
             case 1:
                 std::cout << "Enter key to add = ";
                 std::cin >> key;
-                addInfo(key);
+                double_hashing::addInfo(key);
                 break;
             case 2:
                 std::cout << "Enter key to remove = ";
                 std::cin >> key;
-                removalInfo(key);
+                double_hashing::removalInfo(key);
                 break;
             case 3: {
                 std::cout << "Enter key to search = ";
                 std::cin >> key;
-                Entry entry = table[doubleHash(key, true)];
-                if (entry.key == notPresent) {
+                Entry entry = table[double_hashing::doubleHash(key, true)];
+                if (entry.key == double_hashing::notPresent) {
                     std::cout << "Key not present";
                 }
                 break;
@@ -275,10 +286,11 @@ int main() {
             case 4:
                 std::cout << "Enter element to generate hash = ";
                 std::cin >> key;
-                std::cout << "Hash of " << key << " is = " << hashFxn(key);
+                std::cout << "Hash of " << key
+                          << " is = " << double_hashing::hashFxn(key);
                 break;
             case 5:
-                display();
+                double_hashing::display();
                 break;
             default:
                 loop = false;
