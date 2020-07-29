@@ -2,7 +2,9 @@
  * @file
  * @author [achance6](https://github.com/achance6)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief
+ * @brief Storage mechanism using [quadratic probing
+ * hash](https://en.wikipedia.org/wiki/Quadratic_probing) keys.
+ * @note The implementation can be optimized by using OOP style.
  */
 #include <cmath>
 #include <iostream>
