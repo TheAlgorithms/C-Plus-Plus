@@ -2,7 +2,8 @@
  * @file double_hash_hash_table.cpp
  * @author [achance6](https://github.com/achance6)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Storage mechanism using double-hashed keys.
+ * @brief Storage mechanism using [double-hashed
+ * keys](https://en.wikipedia.org/wiki/Double_hashing).
  * @note The implementation can be optimized by using OOP style.
  */
 #include <iostream>
@@ -18,7 +19,7 @@ bool putProber(Entry entry, int key);
 bool searchingProber(Entry entry, int key);
 void add(int key);
 
-// globals
+// Undocumented globals
 int notPresent;
 std::vector<Entry> table;
 int totalSize;
