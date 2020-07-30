@@ -2,29 +2,27 @@
  * @file chaining.cpp
  * @author [vasutomar](https://github.com/vasutomar)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Implementation of node chains accessed using keys.
+ * @brief Implementation of [hash
+ * chains](https://en.wikipedia.org/wiki/Hash_chain).
  */
 #include <cmath>
 #include <iostream>
 #include <memory>
 #include <vector>
 
-namespace {  // keep the code local to this file by assigning them to an unnamed
-             // namespace
-/**
- * @{
- * @brief Define a linked node
- */
-struct Node {
-    int data{};                         ///< data stored in the node
-    std::shared_ptr<struct Node> next;  ///< pointer to the next node
-};
-
 /**
  * @brief Chain class with a given modulus
  */
-class chain {
+class hash_chain {
  private:
+    /**
+     * @brief Define a linked node
+     */
+    using Node = struct Node {
+        int data{};                         ///< data stored in the node
+        std::shared_ptr<struct Node> next;  ///< pointer to the next node
+    };
+
     std::vector<std::shared_ptr<struct Node>> head;  ///< array of nodes
     int _mod;                                        ///< modulus of the class
 
@@ -34,7 +32,7 @@ class chain {
      *
      * @param mod modulus of the chain
      */
-    explicit chain(int mod) : _mod(mod) {
+    explicit hash_chain(int mod) : _mod(mod) {
         while (mod--) head.push_back(nullptr);
     }
 
@@ -46,7 +44,7 @@ class chain {
      */
     void add(int x, int h) {
         std::shared_ptr<struct Node> curr;
-        std::shared_ptr<struct Node> temp(new struct Node);
+        std::shared_ptr<struct Node> temp(new Node);
         temp->data = x;
         temp->next = nullptr;
         if (!head[h]) {
@@ -86,29 +84,48 @@ class chain {
      *
      * @param x value to compute modulus of
      * @return modulus of `x`
+     * @note declared as a
+     * [`virtual`](https://en.cppreference.com/w/cpp/language/virtual) so that
+     * custom implementations of the class can modify the hash function.
      */
-    int hash(int x) const { return x % _mod; }
+    virtual int hash(int x) const { return x % _mod; }
 
-    void find(int x, int h) {
-        auto temp = head[h];
+    /**
+     * @brief Find if a value and corresponding hash exist
+     *
+     * @param x value to search for
+     * @param h corresponding hash key
+     * @returns `true` if element found
+     * @returns `false` if element not found
+     */
+    bool find(int x, int h) const {
+        std::shared_ptr<struct Node> temp = head[h];
         if (!head[h]) {
+            // index does not exist!
             std::cout << "Element not found";
-            return;
+            return false;
         }
+
+        // scan for data value
         while (temp->data != x && temp->next) temp = temp->next;
+
         if (temp->next) {
             std::cout << "Element found";
-        } else {
-            if (temp->data == x) {
-                std::cout << "Element found";
-            } else {
-                std::cout << "Element not found";
-            }
+            return true;
         }
+
+        // implicit else condition
+        // i.e., temp->next == nullptr
+        if (temp->data == x) {
+            std::cout << "Element found";
+            return true;
+        }
+
+        // further implicit else condition
+        std::cout << "Element not found";
+        return false;
     }
 };
-
-}  // namespace
 
 /** Main function
  * @returns `0` always
@@ -118,7 +135,7 @@ int main() {
     std::cout << "Enter the size of Hash Table. = ";
     std::cin >> mod;
 
-    chain mychain(mod);
+    hash_chain mychain(mod);
 
     bool loop = true;
     while (loop) {
