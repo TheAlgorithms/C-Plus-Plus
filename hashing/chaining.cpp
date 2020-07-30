@@ -23,7 +23,7 @@ class hash_chain {
         std::shared_ptr<struct Node> next;  ///< pointer to the next node
     };
 
-    std::vector<std::shared_ptr<struct Node>> head;  ///< array of nodes
+    std::vector<std::shared_ptr<Node>> head;  ///< array of nodes
     int _mod;                                        ///< modulus of the class
 
  public:
@@ -43,8 +43,8 @@ class hash_chain {
      * @param h height of the node
      */
     void add(int x, int h) {
-        std::shared_ptr<struct Node> curr;
-        std::shared_ptr<struct Node> temp(new Node);
+        std::shared_ptr<Node> curr;
+        std::shared_ptr<Node> temp(new Node);
         temp->data = x;
         temp->next = nullptr;
         if (!head[h]) {
@@ -61,7 +61,7 @@ class hash_chain {
      * @brief Display the chain
      */
     void display() {
-        std::shared_ptr<struct Node> temp = nullptr;
+        std::shared_ptr<Node> temp = nullptr;
         int i = 0;
         for (i = 0; i < _mod; i++) {
             if (!head[i]) {
@@ -99,7 +99,7 @@ class hash_chain {
      * @returns `false` if element not found
      */
     bool find(int x, int h) const {
-        std::shared_ptr<struct Node> temp = head[h];
+        std::shared_ptr<Node> temp = head[h];
         if (!head[h]) {
             // index does not exist!
             std::cout << "Element not found";
