@@ -27,10 +27,11 @@
 namespace backtracking {
 /**
  * Check which number is the maximum/minimum in the array
- * @param depth depth of array
+ * @param depth current depth in game tree
  * @param node_index current index in array
  * @param is_max if current index is the longest number
  * @param scores saved numbers in array
+ * @param height maximum height for game tree
  * @return maximum or minimum number
  */
 template <size_t T>
