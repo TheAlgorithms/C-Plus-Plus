@@ -107,7 +107,7 @@ void depth_first_search(const std::vector<std::vector<size_t>> &adj,
 
 /** Main function */
 int main() {
-    size_t vertices, edges;
+    size_t vertices = 0, edges = 0;
     std::cout << "Enter the Vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the Edges : ";
@@ -120,7 +120,7 @@ int main() {
     std::cout << "Enter the vertices which have edges between them : "
               << std::endl;
     while (edges--) {
-        size_t u, v;
+        size_t u = 0, v = 0;
         std::cin >> u >> v;
         graph::addEdge(&adj, u, v);
     }

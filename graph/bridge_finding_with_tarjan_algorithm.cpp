@@ -15,7 +15,7 @@ using std::vector;
 class Solution {
     vector<vector<int>> graph;
     vector<int> in_time, out_time;
-    int timer;
+    int timer = 0;
     vector<vector<int>> bridge;
     vector<bool> visited;
     void dfs(int current_node, int parent) {
@@ -51,7 +51,7 @@ class Solution {
         return bridge;
     }
 };
-int main(void) {
+int main() {
     Solution s1;
     int number_of_node = 5;
     vector<vector<int>> node;

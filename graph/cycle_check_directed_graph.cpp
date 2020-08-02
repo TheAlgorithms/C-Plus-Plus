@@ -1,39 +1,44 @@
 #include <iostream>
 #include <vector>
-#include <stdlib.h>
+#include <cstdlib>
 using std::vector;
 using std::pair;
 
-void explore(int i, vector<vector<int>> &adj, int *state)
+void explore(int i, const vector<vector<int>> &adj, std::vector<int> *state)
 {
-  state[i] = 1;
-  for(auto it2 : adj[i])
+  (*state)[i] = 1;
+  for (const auto it2 : adj[i])
   {
-    if (state[it2] == 0)
+    if ((*state)[it2] == 0)
     {
-      explore(it2, adj,state);
+      explore(it2, adj, state);
     }
-    if (state[it2] == 1)
+    if ((*state)[it2] == 1)
     {
       std::cout<<"1";
       exit(0);
     }
   }
-  state[i] = 2;
+  (*state)[i] = 2;
 };
-int acyclic(vector<vector<int> > &adj,size_t n) {
+int acyclic(const vector<vector<int> > &adj, size_t n) {
   //write your code here
 
-  int state[n]; // permitted states are 0 1 and 2 
+  // permitted states are 0 1 and 2
+  std::vector<int> state(n, 0);
 
   // mark the states of all vertices initially to 0
-  for(int i=0;i<n;i++)
+  for (size_t i = 0; i < n; i++)
+  {
     state[i] = 0;
+  }
 
-  for(auto it1 = 0; it1 != adj.size(); it1++)
+  for (size_t it1 = 0; it1 != adj.size(); it1++)
   {
     if (state[it1] == 0)
-      explore(it1,adj,state);
+    {
+      explore(it1, adj, &state);
+    }
     if (state[it1] == 1)
     {
       std::cout<<"1";
@@ -45,11 +50,11 @@ int acyclic(vector<vector<int> > &adj,size_t n) {
 }
 
 int main() {
-  size_t n, m;
+  size_t n = 0, m = 0;
   std::cin >> n >> m;
   vector<vector<int> > adj(n, vector<int>());
   for (size_t i = 0; i < m; i++) {
-    int x, y;
+    int x = 0, y = 0;
     std::cin >> x >> y;
     adj[x - 1].push_back(y - 1);
   }
