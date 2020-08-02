@@ -4,7 +4,7 @@
  * using [minimax](https://en.wikipedia.org/wiki/Minimax) algorithm
  *
  * @details
- * Minimax (sometimes MinMax, MM[1] or saddle point[2]) is a decision rule used in
+ * Minimax (sometimes MinMax, MM or saddle point) is a decision rule used in
  * artificial intelligence, decision theory, game theory, statistics,
  * and philosophy for minimizing the possible loss for a worst case (maximum loss) scenario.
  * When dealing with gains, it is referred to as "maximin"—to maximize the minimum gain.
