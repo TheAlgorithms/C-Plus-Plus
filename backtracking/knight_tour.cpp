@@ -21,11 +21,11 @@
  */
 namespace backtracking {
     /**
-     * Check if solution exists
+     * A utility function to check if i,j are valid indexes for N*N chessboard
      * @tparam V number of vertices in array
-     * @param x position x
-     * @param y position y
-     * @param sol matrix
+     * @param x current index in rows
+     * @param y current index in columns
+     * @param sol matrix where numbers are saved
      * @returns `true` if ....
      * @returns `false` if ....
      */
@@ -37,12 +37,12 @@ namespace backtracking {
     /**
      * Knight's tour algorithm
      * @tparam V number of vertices in array
-     * @param x position x
-     * @param y position y
+     * @param x current index in rows
+     * @param y current index in columns
      * @param mov movement to be done
-     * @param sol matrix
-     * @param xmov x movement
-     * @param ymov y movement
+     * @param sol matrix where numbers are saved
+     * @param xmov next move of knight (x coordinate)
+     * @param ymov next move of knight (y coordinate)
      * @returns `true` if solution exists
      * @returns `false` if solution does not exist
      */
