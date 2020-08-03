@@ -7,7 +7,7 @@
 const int mx = 1e6 + 5;
 typedef int64_t ll;
 
-std::array<ll, mx> parent, arr;
+std::array<ll, mx> parent;
 ll node, edge;
 std::vector<std::pair<ll, std::pair<ll, ll>>> v;
 void initial() {
