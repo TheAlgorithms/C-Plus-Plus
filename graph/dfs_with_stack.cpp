@@ -1,32 +1,29 @@
 #include <iostream>
 #include <list>
+#include <vector>
 #include <stack>
 
-#define WHITE 0
-#define GREY 1
-#define BLACK 2
-#define INF 99999
+constexpr int WHITE = 0;
+constexpr int GREY = 1;
+constexpr int BLACK = 2;
+constexpr int INF = 99999;
 
-using namespace std;
-
-void dfs(const list<int> lista[], int start) {
-    stack<int> stack;
-
-    int checked[999] = {WHITE};
-
-    stack.push(start);
-
+void dfs(const std::vector< std::list<int> > &graph, int start) {
+    std::vector<int> checked(graph.size(), WHITE);
     checked[start] = GREY;
+    std::stack<int> stack;
+    stack.push(start);
     while (!stack.empty()) {
         int act = stack.top();
         stack.pop();
 
         if (checked[act] == GREY) {
-            cout << act << ' ';
-            for (auto it = lista[act].begin(); it != lista[act].end(); ++it) {
-                stack.push(*it);
-                if (checked[*it] != BLACK)
-                    checked[*it] = GREY;
+            std::cout << act << ' ';
+            for (auto it : graph[act]) {
+                stack.push(it);
+                if (checked[it] != BLACK) {
+                    checked[it] = GREY;
+                }
             }
             checked[act] = BLACK;  // nodo controllato
         }
@@ -34,16 +31,16 @@ void dfs(const list<int> lista[], int start) {
 }
 
 int main() {
-    int u, w;
-    int n;
-    cin >> n;
-    list<int> lista[INF];
+    int n = 0;
+    std::cin >> n;
+    std::vector< std::list<int> > graph(INF);
     for (int i = 0; i < n; ++i) {
-        cin >> u >> w;
-        lista[u].push_back(w);
+        int u = 0, w = 0;
+        std::cin >> u >> w;
+        graph[u].push_back(w);
     }
 
-    dfs(lista, 0);
+    dfs(graph, 0);
 
     return 0;
 }
