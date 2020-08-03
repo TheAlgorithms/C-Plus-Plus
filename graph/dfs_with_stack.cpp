@@ -9,8 +9,6 @@
 
 using namespace std;
 
-int checked[999] = {WHITE};
-
 void dfs(const list<int> lista[], int start) {
     stack<int> stack;
 
