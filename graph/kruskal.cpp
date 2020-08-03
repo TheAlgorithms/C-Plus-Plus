@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 //#include <boost/multiprecision/cpp_int.hpp>
 // using namespace boost::multiprecision;
 const int mx = 1e6 + 5;
