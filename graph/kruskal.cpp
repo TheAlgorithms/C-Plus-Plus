@@ -9,7 +9,7 @@ typedef int64_t ll;
 
 std::array<ll, mx> parent;
 ll node, edge;
-std::vector<std::pair<ll, std::pair<ll, ll>>> v;
+std::vector<std::pair<ll, std::pair<ll, ll>>> edges;
 void initial() {
     for (int i = 0; i < node + edge; ++i) {
       parent[i] = i;
@@ -33,10 +33,10 @@ void join(int x, int y) {
 ll kruskal() {
     ll mincost = 0;
     for (int i = 0; i < edge; ++i) {
-        ll x = v[i].second.first;
-        ll y = v[i].second.second;
+        ll x = edges[i].second.first;
+        ll y = edges[i].second.second;
         if (root(x) != root(y)) {
-            mincost += v[i].first;
+            mincost += edges[i].first;
             join(x, y);
         }
     }
@@ -53,12 +53,12 @@ int main() {
         initial();  // Initialise the parent array
         for (int i = 0; i < edge; ++i) {
             std::cin >> from >> to >> cost;
-            v.emplace_back(make_pair(cost, std::make_pair(from, to)));
+            edges.emplace_back(make_pair(cost, std::make_pair(from, to)));
             totalcost += cost;
         }
-        sort(v.begin(), v.end());
+        sort(edges.begin(), edges.end());
         std::cout << kruskal() << std::endl;
-        v.clear();
+        edges.clear();
     }
     return 0;
 }
