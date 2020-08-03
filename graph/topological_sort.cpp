@@ -10,8 +10,9 @@ std::vector<int> ans;
 void dfs(int v) {
     visited[v] = true;
     for (int u : G[v]) {
-        if (!visited[u])
+        if (!visited[u]) {
             dfs(u);
+        }
     }
     ans.push_back(v);
 }
@@ -20,15 +21,16 @@ void topological_sort() {
     visited.assign(n, false);
     ans.clear();
     for (int i = 0; i < n; ++i) {
-        if (!visited[i])
+        if (!visited[i]) {
             dfs(i);
+        }
     }
     reverse(ans.begin(), ans.end());
 }
 int main() {
     std::cout << "Enter the number of vertices and the number of directed edges\n";
     std::cin >> n >> m;
-    int x, y;
+    int x = 0, y = 0;
     G.resize(n, std::vector<int>());
     for (int i = 0; i < n; ++i) {
         std::cin >> x >> y;

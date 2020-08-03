@@ -7,8 +7,8 @@
 // Find the lowest common ancestor using binary lifting in O(nlogn)
 // Zero based indexing
 // Resource : https://cp-algorithms.com/graph/lca_binary_lifting.html
-const int N = 1005;
-const int LG = log2(N) + 1;
+constexpr int N = 1005;
+constexpr int LG = 20;
 struct lca {
     int n;
     std::vector<int> adj[N];  // Graph

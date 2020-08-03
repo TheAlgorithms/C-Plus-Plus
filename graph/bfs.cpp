@@ -91,7 +91,7 @@ std::vector<int> beadth_first_search(const std::vector<std::vector<int>> &adj,
     std::vector<int> result;
 
     /// vector to keep track of visited vertices
-    std::vector<bool> visited(vertices, 0);
+    std::vector<bool> visited(vertices, false);
 
     std::queue<int> tracker;
     /// marking the start vertex as visited
@@ -172,7 +172,7 @@ int main() {
     /// running predefined test cases
     tests();
 
-    size_t vertices, edges;
+    size_t vertices = 0, edges = 0;
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the number of edges : ";
@@ -185,7 +185,7 @@ int main() {
     std::cout << "Enter vertices in pair which have edges between them : "
               << std::endl;
     while (edges--) {
-        int u, v;
+        int u = 0, v = 0;
         std::cin >> u >> v;
         graph::addEdge(&adj, u, v);
     }
