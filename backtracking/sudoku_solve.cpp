@@ -24,7 +24,7 @@ namespace backtracking {
     /**
      * Checks if it's possible to place a 'no'
      * @tparam V number of vertices in the array
-     * @param mat matrix
+     * @param mat matrix where numbers are saved
      * @param i current index in rows
      * @param j current index in columns
      * @param no number to be added in matrix
@@ -56,9 +56,9 @@ namespace backtracking {
         return true;
     }
     /**
-     * Print array of array
+     * Utility function to print matrix
      * @tparam V number of vertices in array
-     * @param mat array of arrays
+     * @param mat matrix where numbers are saved
      * @param n number of times loop will run
      * @return void
      */
@@ -81,11 +81,11 @@ namespace backtracking {
     /**
      * Sudoku algorithm
      * @tparam V number of vertices in array
-     * @param mat array of arrays
+     * @param mat matrix where numbers are saved
      * @param i current index in rows
      * @param j current index in columns
-     * @returns `true` if ....
-     * @returns `false` if ....
+     * @returns `true` if 'no' was placed
+     * @returns `false` if 'no' was not placed
      */
     template <size_t V>
     bool solveSudoku(std::array <std::array <int, V>, V> &mat, int i, int j) {
