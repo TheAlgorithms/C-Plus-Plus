@@ -2,13 +2,13 @@
 #include <set>
 #include <vector>
 
-int N;  // denotes number of nodes;
+int number_of_nodes;  // denotes number of nodes;
 std::vector<int> parent;
-std::vector<int> siz;
+std::vector<int> connected_set_size;
 void make_set() {  // function the initialize every node as it's own parent
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= number_of_nodes; i++) {
         parent[i] = i;
-        siz[i] = 1;
+        connected_set_size[i] = 1;
     }
 }
 // To find the component where following node belongs to
@@ -23,26 +23,26 @@ void union_sets(int a, int b) {  // To join 2 components to belong to one
     a = find_set(a);
     b = find_set(b);
     if (a != b) {
-        if (siz[a] < siz[b]) {
+        if (connected_set_size[a] < connected_set_size[b]) {
             std::swap(a, b);
         }
         parent[b] = a;
-        siz[a] += siz[b];
+        connected_set_size[a] += connected_set_size[b];
     }
 }
 
 int no_of_connected_components() {  // To find total no of connected components
     std::set<int> temp;  // temp set to count number of connected components
-    for (int i = 1; i <= N; i++) temp.insert(find_set(i));
+    for (int i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
     return temp.size();
 }
 
 // All critical/corner cases have been taken care of.
 // Input your required values: (not hardcoded)
 int main() {
-    std::cin >> N;
-    parent.resize(N + 1);
-    siz.resize(N + 1);
+    std::cin >> number_of_nodes;
+    parent.resize(number_of_nodes + 1);
+    connected_set_size.resize(number_of_nodes + 1);
     make_set();
     int edges = 0;
     std::cin >> edges;  // no of edges in the graph
