@@ -13,8 +13,9 @@ void make_set() {  // function the initialize every node as it's own parent
 }
 // To find the component where following node belongs to
 int find_set(int v) {
-    if (v == parent[v])
+    if (v == parent[v]) {
         return v;
+    }
     return parent[v] = find_set(parent[v]);
 }
 
@@ -22,8 +23,9 @@ void union_sets(int a, int b) {  // To join 2 components to belong to one
     a = find_set(a);
     b = find_set(b);
     if (a != b) {
-        if (siz[a] < siz[b])
+        if (siz[a] < siz[b]) {
             std::swap(a, b);
+        }
         parent[b] = a;
         siz[a] += siz[b];
     }
@@ -42,10 +44,10 @@ int main() {
     parent.resize(N + 1);
     siz.resize(N + 1);
     make_set();
-    int edges;
+    int edges = 0;
     std::cin >> edges;  // no of edges in the graph
     while (edges--) {
-        int node_a, node_b;
+        int node_a = 0, node_b = 0;
         std::cin >> node_a >> node_b;
         union_sets(node_a, node_b);
     }
