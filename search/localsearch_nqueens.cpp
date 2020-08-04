@@ -104,9 +104,8 @@ std::vector<int> neighbour(std::vector<int> solution_vector) {
 	int i = rand() % NREINAS + 1;
 	srand(time(nullptr)); //reset srand
 	int mov = (rand() % NREINAS + 1) - i;
-	mov = (mov < 0) ? mov *= -1 : mov;
-	mov = (mov == 0) ? mov = 1 : mov;
-	solution_vector[i - 1] = mov;
+	int mov = (rand() % NREINAS + 1) - i;
+	solution_vector[i - 1] = (mov < 0) ? mov *= -1: (mov == 0) ? mov = 1 : mov;
 	return solution_vector;
 }
 
