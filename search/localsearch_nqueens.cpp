@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <ctime>
 
-#define const NREINAS 8 //The number of queens on the table is the same as the dimension of the chessboard.
+#define NREINAS 8 //The number of queens on the table is the same as the dimension of the chessboard.
 				  // NREINAS 4; NREINAS 8; NREINAS 16
 /**
  * function: initial_solution
