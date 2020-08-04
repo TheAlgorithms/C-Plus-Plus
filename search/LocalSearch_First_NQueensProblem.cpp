@@ -1,9 +1,28 @@
 /*
- * LocalSearchFirst.cpp
- *
- *  Created on: 28 jul. 2020
- *      Author: DHL-SIS-ING
+ *@file LocalSearch_First_NQueensProblem.cpp
+ *@autor dhernandezl
+ *@brief [Heuristic Algorithm local Search]
+ * (T. Stützle and R. Ruiz, “Iterated local search,” Handb. Heuristics, vol. 1–2, pp. 579–605, 2018, isbn.9783319071244, doi.10.1007/978-3-319-07124-4_8.)
+ * (https://en.wikipedia.org/wiki/Local_search_(optimization))
  */
+
+/*
+* The LS algorithm is the basis of many methods used for optimization problems. 
+* Your process can be seen as iterative starting with an initial solution and 
+* improving it by making local modifications.  Its system is based on the search 
+* for neighborhoods that obtain a better solution.
+* The neighborhood search and pivot rule used for replacement are usually:
+*  - Select the best neighbor of all (best-improvement rule).
+*  - Select the first neighbor that improves the solution (first-improvement rule).
+* The rule applied in this file is first.improvement.
+*/
+
+/*
+* Problem solving the algorithm
+* The eight queens problem is a very popular strategy that consists of placing eight 
+* queens within a chessboard without threatening them. Finding the solution for different 
+* dimensions is the same as finding the solution for a minimal problem.
+*/
 
 #include "LocalSearchFirst.h"
 #include <iostream>
@@ -11,7 +30,7 @@
 #include <algorithm>
 #include <list>
 #include <time.h>
-#define NREINAS 16
+#define NREINAS 8
 #define t_neighbor 15
 using namespace std;
 
@@ -137,7 +156,6 @@ int main() {
 	do {
 		while (searchrepet(n_s = neighbour(s), neighbour_sys)) {}
 		neighbour_sys.push_back(n_s);
-		//printf("% d -", i);
 		if (cost(s) > cost(n_s)){
 			s = n_s;
 			i = 0;
