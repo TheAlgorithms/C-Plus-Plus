@@ -104,7 +104,6 @@ std::vector<int> neighbour(std::vector<int> solution_vector) {
 	int i = rand() % NREINAS + 1;
 	srand(time(nullptr)); //reset srand
 	int mov = (rand() % NREINAS + 1) - i;
-	int mov = (rand() % NREINAS + 1) - i;
 	solution_vector[i - 1] = (mov < 0) ? mov *= -1: (mov == 0) ? mov = 1 : mov;
 	return solution_vector;
 }
@@ -116,7 +115,7 @@ std::vector<int> neighbour(std::vector<int> solution_vector) {
  * column number where the queens are located on the board.
  */
 void print_solution(std::vector<int> solution_vector) {
-	char chessboard[NREINAS][NREINAS] = {};
+	char chessboard[NREINAS][NREINAS] {};
 	for (int i = 0; i < NREINAS; i++)
 	{
 		chessboard[i][solution_vector[i] - 1] = 'Q';
