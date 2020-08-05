@@ -90,7 +90,7 @@ void reverse() {
     }
 }
 
-int main() {
+int main() try{
     int choice, x;
     do {
         std::cout << "\n1. Insert";
@@ -105,16 +105,20 @@ int main() {
         case 1:
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> x;
+            if(!std::cin)throw ("Something");//In case of error in input 
+            								//For example, "rr"
             insert(x);
             break;
         case 2:
             std::cout << "\nEnter the element to be removed : ";
             std::cin >> x;
+            if(!std::cin)throw ("Something");
             remove(x);
             break;
         case 3:
             std::cout << "\nEnter the element to be searched : ";
             std::cin >> x;
+            if(!std::cin)throw ("Something");
             search(x);
             break;
         case 4:
@@ -131,4 +135,8 @@ int main() {
     } while (choice != 0);
 
     return 0;
+}
+catch(...)
+{
+	std::cerr<<"\nWrong Input!";
 }
