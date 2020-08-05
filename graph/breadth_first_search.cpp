@@ -94,7 +94,7 @@ void add_undirected_edge(std::vector<std::vector<int>> *graph, int u, int v) {
  *
  */
 std::vector<bool> beadth_first_search(const std::vector<std::vector<int>> &graph,
-                                  int start) {
+                                      int start) {
     /// vector to keep track of visited vertices
     std::vector<bool> visited(graph.size(), false);
     /// a queue that stores vertices that need to be further explored
