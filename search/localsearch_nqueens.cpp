@@ -5,49 +5,43 @@
  * The LS algorithm is the basis of many methods used for optimization problems.
  * Its system is based on the search for neighborhoods that obtain a better solution.
  * This exercise solves the n queens problem [https://en.wikipedia.org/wiki/Eight_queens_puzzle].
- * The rule of neighborhood applied in this file is first.improvement.
+ * The rule of neighboord applied in this file is first.improvement.
  * @author [dhernandezl](https://github.com/dhernandezl)
  */
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <ctime>
+#include <array>
 
-#define NREINAS 8 //The number of queens on the table is the same as the dimension of the chessboard.
-				  // NREINAS 4; NREINAS 8; NREINAS 16
 /**
  * function: initial_solution
  * Initialize a new solution, generating
  * random numbers with the maximum height of the board.
  * @returns a vector that will be the starting solution.
  */
-std::vector<int> initial_solution() {
+std::vector<int> initial_solution(int nqueens) {
 	std::vector<int> solution;
-	srand(time(nullptr)); //reset srand
-	for (size_t i = 0; i < NREINAS; i++)
+	for (int i = 0; i < nqueens; i++)
 	{
-		solution.push_back(rand() % NREINAS + 1);
+		solution.push_back(rand() % nqueens + 1);
 	}
 	return solution;
 }
 
 /**
  * function: cost
- * Calculate the cost of the solution vector,
+ * Calculate the number of pairs of queens that are attacked within the board,
  * the optimal cost is h = 1. Read the 8 queens problem.
  * @param [in] solution_vector is a vector with the
  * column number where the queens are located on the board.
  * @returns the cost of the solution vector.
  */
-int cost(std::vector<int> solution_vector) {
+int cost(const std::vector<int> solution_vector) {
 	int h = 0;
-	std::vector<int> aux_sol;
 	//sum column
-	for (size_t i = 0; i < NREINAS; i++)
-	{
-		for (size_t j = i + 1; j < NREINAS; j++)
-		{
+	for (size_t i = 0; i < solution_vector.size(); i++){
+		for (size_t j = i + 1; j < solution_vector.size(); j++){
 			if (solution_vector[i] == solution_vector[j])
 			{
 				h++;
@@ -56,33 +50,19 @@ int cost(std::vector<int> solution_vector) {
 		}
 	}
 	//sum diagonal
-	for (size_t i = 0; i < NREINAS; i++)
-	{
-		aux_sol.push_back(solution_vector[i] - (i + 1));
-	}
-	for (size_t i = 0; i < NREINAS; i++)
-	{
-		for (size_t j = i + 1; j < NREINAS; j++)
-		{
-			if (aux_sol[i] == aux_sol[j])
+	for (size_t i = 0; i < solution_vector.size(); i++){
+		for (size_t j = i + 1; j < solution_vector.size(); j++){
+			if ((solution_vector[i] - (i + 1)) == (solution_vector[j] - (j + 1)))
 			{
 				h++;
 				break;
 			}
 		}
 	}
-	aux_sol.clear();
 	//sum inverse diagonal
-	for (size_t i = 0; i < NREINAS; i++)
-	{
-		aux_sol.push_back(solution_vector[i] + (i + 1));
-	}
-	for (size_t i = 0; i < NREINAS; i++)
-	{
-		for (size_t j = i + 1; j < NREINAS; j++)
-		{
-			if (aux_sol[i] == aux_sol[j])
-			{
+	for (size_t i = 0; i < solution_vector.size(); i++){
+		for (size_t j = i + 1; j < solution_vector.size(); j++) {
+			if ((solution_vector[i] + (i + 1)) == (solution_vector[j] + (j + 1))) {
 				h++;
 				break;
 			}
@@ -100,11 +80,9 @@ int cost(std::vector<int> solution_vector) {
  * @returns a new vector similar to the one passed by parameter.
  */
 std::vector<int> neighbour(std::vector<int> solution_vector) {
-	srand(time(nullptr)); //reset srand
-	int i = rand() % NREINAS + 1;
-	srand(time(nullptr)); //reset srand
-	int mov = (rand() % NREINAS + 1) - i;
-	solution_vector[i - 1] = (mov < 0) ? mov *= -1: (mov == 0) ? mov = 1 : mov;
+	int i = rand() % solution_vector.size() + 1;
+	int mov = (rand() % solution_vector.size() + 1);
+	solution_vector[i - 1] = mov;
 	return solution_vector;
 }
 
@@ -114,31 +92,24 @@ std::vector<int> neighbour(std::vector<int> solution_vector) {
  * @param [in] solution_vector is a vector with the
  * column number where the queens are located on the board.
  */
-void print_solution(std::vector<int> solution_vector) {
-	char chessboard[NREINAS][NREINAS] {};
-	for (int i = 0; i < NREINAS; i++)
-	{
-		chessboard[i][solution_vector[i] - 1] = 'Q';
-	}
-	for (int i = 0; i < NREINAS; i++)
-	{
-		for (int j = 0; j < NREINAS; j++)
-		{
-			if (chessboard[i][j] != 'Q')
-			{
+void print_solution(const std::vector<int> solution_vector, const int nqueens) {
+	for(int i = 0; i < nqueens; i++){
+		for(int j = 0; j < nqueens; j++){
+			if(j == solution_vector[i] -1){
+				std::cout << " Q ";
+			}else{
 				std::cout << " _ ";
 			}
-			else { std::cout << " " << chessboard[i][j] << " ";}
 		}
 		std::cout << "\n";
 	}
+
 	std::cout << "\nSolucion: ";
 	for (int x : solution_vector)
 	{
-		std::cout << x;
+		std::cout << x << " ";
 	}
-	std::cout << "\nh:" << cost(solution_vector) << std::endl;
-	std::cout << "\n";
+	std::cout << "\nCost:" << cost(solution_vector) << std::endl;
 }
 
 /**
@@ -147,8 +118,9 @@ void print_solution(std::vector<int> solution_vector) {
  * ensure the generation of new neighbors.
  * @param [in] prob_neighbor is candidate to be a neighbor of the current solution.
  * @param [in] neighborhood is vector of generated neighbors contained in memory.
+ * @return true if value exists, if not false.
  */
-inline bool searchrepeat(std::vector<int> prob_neighbor, const std::vector<std::vector<int>>& neighborhood) {
+inline bool searchrepeat(const std::vector<int> prob_neighbor, const std::vector<std::vector<int>>& neighborhood) {
 	return find(neighborhood.begin(), neighborhood.end(), prob_neighbor) != neighborhood.end();
 }
 
@@ -157,28 +129,30 @@ inline bool searchrepeat(std::vector<int> prob_neighbor, const std::vector<std::
  * Heuristic Local Search - Rule first best neighbor
  * - s = generate initial solution
  * - while s not optimal local do{
- * -	s* = N(s) with f(s) < f(s*)
- * -	solution best of the neighbor
+ * -	s* belongs neighbor(s) with cost(s*) < cost(s)
+ * -	keep the neighboring solution if it has lower cost than the current one.
  * -	s = s*
  * -}
  *
  */
 int main() {
-	std::vector<int> init_solution = initial_solution();
+	constexpr int nqueens = 8;  //The number of queens on the table is the same as the dimension of the chessboard.
+					  	  	  	//nqueens = 4; nqueens = 8; nqueens = 16
+	constexpr int number_neighbor = 3; //number of neighbors to generate
+	std::vector<int> current_solution = initial_solution(nqueens);
 	std::vector<int> neighbor_solution;
 	std::vector<std::vector<int>> neighborhood;  //neighborhood of the current solution
-	int number_neighbor = 10; //number of neighbors to generate
 	int i = 0;
 	do {
-		while (searchrepeat(neighbor_solution = neighbour(init_solution), neighborhood)) {}
+		while (searchrepeat(neighbor_solution = neighbour(current_solution), neighborhood)) {}
 		neighborhood.push_back(neighbor_solution);
-		if (cost(init_solution) > cost(neighbor_solution)){
-			init_solution = neighbor_solution;
+		if (cost(neighbor_solution) < cost(current_solution)){
+			current_solution = neighbor_solution;
 			i = 0;
 			neighborhood.clear();
 		}
 		else { i++; }
 	} while (i < number_neighbor);
-	print_solution(init_solution);
+	print_solution(current_solution, nqueens);
 	return 0;
 }
