@@ -22,9 +22,9 @@
  */
 std::vector<int> initial_solution(int nqueens) {
 	std::vector<int> solution {};
-	for (int i = 0; i < nqueens; i++)
-	{
-		solution.push_back(rand() % nqueens + 1);
+	solution.resize(nqueens);
+	for(auto& element: solution){
+		element = rand() % nqueens + 1;
 	}
 	return solution;
 }
