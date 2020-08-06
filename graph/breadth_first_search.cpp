@@ -54,7 +54,6 @@
  * \brief Graph algorithms
  */
 namespace graph {
-
 /**
  * \brief
  * Adds a directed edge from vertex u to vertex v.
@@ -93,7 +92,7 @@ void add_undirected_edge(std::vector<std::vector<int>> *graph, int u, int v) {
  * @returns a binary vector indicating which vertices were visited during the search.
  *
  */
-std::vector<bool> beadth_first_search(const std::vector<std::vector<int>> &graph,
+std::vector<bool> breadth_first_search(const std::vector<std::vector<int>> &graph,
                                       int start) {
     /// vector to keep track of visited vertices
     std::vector<bool> visited(graph.size(), false);
@@ -126,7 +125,7 @@ void tests() {
     graph::add_undirected_edge(&graph, 1, 2);
     graph::add_undirected_edge(&graph, 2, 3);
 
-    std::vector<bool> returned_result = graph::beadth_first_search(graph, 2);
+    std::vector<bool> returned_result = graph::breadth_first_search(graph, 2);
     std::vector<bool> correct_result = {true, true, true, true};
 
     assert(std::equal(correct_result.begin(), correct_result.end(),
@@ -134,7 +133,7 @@ void tests() {
     std::cout << "Test 1 Passed..." << std::endl;
 
     /// Test 2 Begin
-    returned_result = graph::beadth_first_search(graph, 0);
+    returned_result = graph::breadth_first_search(graph, 0);
 
     assert(std::equal(correct_result.begin(), correct_result.end(),
                       returned_result.begin()));
@@ -150,7 +149,7 @@ void tests() {
     graph::add_directed_edge(&graph, 1, 4);
     graph::add_directed_edge(&graph, 3, 5);
 
-    returned_result = graph::beadth_first_search(graph, 2);
+    returned_result = graph::breadth_first_search(graph, 2);
     correct_result = {false, false, true, true, false, true};
 
     assert(std::equal(correct_result.begin(), correct_result.end(),
@@ -180,6 +179,6 @@ int main() {
         graph::add_directed_edge(&graph, u - 1, v - 1);
     }
 
-    graph::beadth_first_search(graph, 0);
+    graph::breadth_first_search(graph, 0);
     return 0;
 }
