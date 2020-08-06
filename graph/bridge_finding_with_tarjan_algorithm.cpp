@@ -49,6 +49,9 @@ class Solution {
     }
 };
 
+/**
+ * Main function
+ */
 int main() {
     Solution s1;
     int number_of_node = 5;
