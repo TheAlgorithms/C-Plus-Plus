@@ -80,8 +80,8 @@ int cost(const std::vector<int> solution_vector) {
  * @returns a new vector similar to the one passed by parameter.
  */
 std::vector<int> neighbour(std::vector<int> solution_vector) {
-	int i = rand() % solution_vector.size() + 1;
-	int mov = (rand() % solution_vector.size() + 1);
+	long i = rand() % solution_vector.size() + 1;
+	long mov = (rand() % solution_vector.size() + 1);
 	solution_vector[i - 1] = mov;
 	return solution_vector;
 }
