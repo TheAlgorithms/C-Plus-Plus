@@ -21,7 +21,7 @@
  * @returns a vector that will be the starting solution.
  */
 std::vector<int> initial_solution(int nqueens) {
-	std::vector<int> solution;
+	std::vector<int> solution {};
 	for (int i = 0; i < nqueens; i++)
 	{
 		solution.push_back(rand() % nqueens + 1);
@@ -138,7 +138,7 @@ inline bool searchrepeat(const std::vector<int> prob_neighbor, const std::vector
 int main() {
 	constexpr int nqueens = 8;  //The number of queens on the table is the same as the dimension of the chessboard.
 					  	  	  	//nqueens = 4; nqueens = 8; nqueens = 16
-	constexpr int number_neighbor = 3; //number of neighbors to generate
+	constexpr int number_neighbor = 10; //number of neighbors to generate
 	std::vector<int> current_solution = initial_solution(nqueens);
 	std::vector<int> neighbor_solution;
 	std::vector<std::vector<int>> neighborhood;  //neighborhood of the current solution
