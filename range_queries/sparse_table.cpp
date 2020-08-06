@@ -25,7 +25,7 @@ void computeLogs(int n, std::vector<int>& logs) {
 /**
  * To build Sparse Table data structure
  */
-void buildTable(int n, const std::vector<int> A, const std::vector<int> logs, std::vector<std::vector<int> >& table) {
+void buildTable(int n, const std::vector<int>& A, const std::vector<int>& logs, std::vector<std::vector<int> >& table) {
     int curLen = 0;
     for (int i = 0 ; i <= logs[n] ; i++) {
         curLen = 1 << i;
@@ -43,7 +43,7 @@ void buildTable(int n, const std::vector<int> A, const std::vector<int> logs, st
 /**
  * To get the result of the query
  */
-int getMinimum(int beg, int end, const std::vector<int> logs, const std::vector<std::vector<int> > table) {
+int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector<std::vector<int> >& table) {
     int p = logs[end - beg + 1];
     int pLen = 1 << p;
     return std::min(table[p][beg], table[p][end - pLen + 1]);
