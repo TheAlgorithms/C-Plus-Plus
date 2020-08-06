@@ -1,30 +1,24 @@
-// Implementation of Sparse Table
-//
-// Running Time Complexity
-// Build : O(NlogN)
-// Range Query : O(1)
+/*
+Implementation of Sparse Table
+
+Running Time Complexity
+Build : O(NlogN)
+Range Query : O(1)
+*/
 
 
 #include<vector>
 #include<iostream>
 #include<algorithm>
 
-const int N = 100005;
-const int LOGN = 20;
-
-int n;                      // length of the array
-std::vector<int> A(N);
-std::vector<int> logs(N);   // logs[i] = maximum p s.t. 2^p <= i
-std::vector<std::vector<int> > table(LOGN, std::vector<int>(N, 0));  // // table[i][j] = [j, j+2^i]
-
-void computeLogs(int n) {
+void computeLogs(int n, std::vector<int> &logs) {   // Util function to store pre-computed logs
     logs[1] = 0;
     for (int i = 2 ; i < n ; i++) {
         logs[i] = logs[i/2] + 1;
     }
 }
 
-void buildTable(int n) {
+void buildTable(int n, const std::vector<int> &A, const std::vector<int> &logs, std::vector<std::vector<int> > &table) {    // To build Sparse Table data structure
     int curLen;
     for (int i = 0 ; i <= logs[n] ; i++) {
         curLen = 1 << i;
@@ -39,7 +33,7 @@ void buildTable(int n) {
     }
 }
 
-int getMinimum(int beg, int end) {
+int getMinimum(int beg, int end, const std::vector<int> &logs, const std::vector<std::vector<int> > &table) {  // To get the result of the query
     int p = logs[end - beg + 1];
     int pLen = 1 << p;
     return std::min(table[p][beg], table[p][end - pLen + 1]);
@@ -47,12 +41,16 @@ int getMinimum(int beg, int end) {
 
 
 int main() {
+    int n;
     std::cin >> n;
+    std::vector<int> A(n+5);
+    std::vector<int> logs(n+5);   // logs[i] = maximum p s.t. 2^p <= i
+    std::vector<std::vector<int> > table(20, std::vector<int>(n+5, 0)); // table[i][j] = [j, j+2^i]
     for (int i = 0 ; i < n ; i++) {
         std::cin >> A[i];
     }
-    computeLogs(n);
-    buildTable(n);
-    std::cout << "Minimum of the range [3, 14]: " << getMinimum(2, 13) << "\n";
+    computeLogs(n, logs);
+    buildTable(n, A, logs, table);
+    std::cout << "Minimum of the range [3, 14]: " << getMinimum(2, 13, logs, table) << "\n";
     return 0;
 }
