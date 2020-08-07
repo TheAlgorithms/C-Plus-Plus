@@ -7,9 +7,9 @@
  * It can answer most range queries in O(logn), but its true power is answering range minimum queries
  * or equivalent range maximum queries). For those queries it can compute the answer in O(1) time.
  *
- * Running Time Complexity
- * Build : O(NlogN)
- * Range Query : O(1)
+ * Running Time Complexity \n
+ * Build : O(NlogN) \n
+ * Range Query : O(1) \n
 */
 
 #include <vector>
