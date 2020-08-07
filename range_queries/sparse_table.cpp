@@ -13,11 +13,15 @@
 */
 
 
-#include<vector>
-#include<iostream>
-#include<algorithm>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 
-
+/**
+ * @namespace range_queries
+ * @brief Range Queries algorithms
+ */
+namespace range_queries {
 /**
  * This function precomputes intial log table for further use.
  * @param n value of the size of the input array
@@ -69,7 +73,7 @@ int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector
     int pLen = 1 << p;
     return std::min(table[p][beg], table[p][end - pLen + 1]);
 }
-
+} // namespace range_queries
 
 /**
  * Main function
@@ -81,8 +85,8 @@ int main() {
     for (int i = 0 ; i < n ; i++) {
         std::cin >> A[i];
     }
-    std::vector<int> logs = computeLogs(n);
-    std::vector<std::vector<int> >  table = buildTable(n, A, logs);
-    std::cout << "Minimum of the range [3, 14]: " << getMinimum(2, 13, logs, table) << std::endl;
+    std::vector<int> logs = range_queries::computeLogs(n);
+    std::vector<std::vector<int> >  table = range_queries::buildTable(n, A, logs);
+    std::cout << "Minimum of the range [3, 14]: " << range_queries::getMinimum(2, 13, logs, table) << std::endl;
     return 0;
 }
