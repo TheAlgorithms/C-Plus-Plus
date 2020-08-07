@@ -37,7 +37,7 @@ std::vector<int> initial_solution(int nqueens) {
  * column number where the queens are located on the board.
  * @returns the cost of the solution vector.
  */
-int cost(const std::vector<int> solution_vector) {
+int cost(const std::vector<int>& solution_vector) {
 	int h = 0;
 	//sum column
 	for (size_t i = 0; i < solution_vector.size(); i++){
@@ -80,8 +80,8 @@ int cost(const std::vector<int> solution_vector) {
  * @returns a new vector similar to the one passed by parameter.
  */
 std::vector<int> neighbour(std::vector<int> solution_vector) {
-	long i = rand() % solution_vector.size() + 1;
-	long mov = (rand() % solution_vector.size() + 1);
+	int64_t i = rand() % solution_vector.size() + 1;
+	int64_t mov = (rand() % solution_vector.size() + 1);
 	solution_vector[i - 1] = mov;
 	return solution_vector;
 }
@@ -92,7 +92,7 @@ std::vector<int> neighbour(std::vector<int> solution_vector) {
  * @param [in] solution_vector is a vector with the
  * column number where the queens are located on the board.
  */
-void print_solution(const std::vector<int> solution_vector, const int nqueens) {
+void print_solution(const std::vector<int>& solution_vector, const int nqueens) {
 	for(int i = 0; i < nqueens; i++){
 		for(int j = 0; j < nqueens; j++){
 			if(j == solution_vector[i] -1){
@@ -120,7 +120,7 @@ void print_solution(const std::vector<int> solution_vector, const int nqueens) {
  * @param [in] neighborhood is vector of generated neighbors contained in memory.
  * @return true if value exists, if not false.
  */
-inline bool searchrepeat(const std::vector<int> prob_neighbor, const std::vector<std::vector<int>>& neighborhood) {
+inline bool searchrepeat(const std::vector<int>& prob_neighbor, const std::vector<std::vector<int>>& neighborhood) {
 	return find(neighborhood.begin(), neighborhood.end(), prob_neighbor) != neighborhood.end();
 }
 
@@ -138,7 +138,7 @@ inline bool searchrepeat(const std::vector<int> prob_neighbor, const std::vector
 int main() {
 	constexpr int nqueens = 8;  //The number of queens on the table is the same as the dimension of the chessboard.
 					  	  	  	//nqueens = 4; nqueens = 8; nqueens = 16
-	constexpr int number_neighbor = 10; //number of neighbors to generate
+	constexpr int number_neighbor = 15; //number of neighbors to generate
 	std::vector<int> current_solution = initial_solution(nqueens);
 	std::vector<int> neighbor_solution;
 	std::vector<std::vector<int>> neighborhood;  //neighborhood of the current solution
