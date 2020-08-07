@@ -1,4 +1,12 @@
-/*
+/**
+ * @file sparse_table.cpp
+ * @brief Implementation of Sparse Table data structure
+ *
+ * @details
+ * Sparse Table is a data structure, that allows answering range queries.
+ * It can answer most range queries in O(logn), but its true power is answering range minimum queries
+ * or equivalent range maximum queries). For those queries it can compute the answer in O(1) time.
+
 Implementation of Sparse Table
 
 Running Time Complexity
@@ -13,7 +21,9 @@ Range Query : O(1)
 
 
 /**
- * Util function to store pre-computed logs
+ * This function precomputes intial log table for further use.
+ * @param n value of the size of the input array
+ * @return corresponding vector of the log table
  */
 std::vector<int> computeLogs(int n) {
     std::vector<int> logs(n+5);
@@ -25,7 +35,11 @@ std::vector<int> computeLogs(int n) {
 }
 
 /**
- * To build Sparse Table data structure
+ * This functions builds the primary data structure Sparse Table
+ * @param n value of the size of the input array
+ * @param A array of the input integers
+ * @param logs array of the log table
+ * @return created sparse table data structure
  */
 std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, const std::vector<int>& logs) {
     std::vector<std::vector<int> > table(20, std::vector<int>(n+5, 0));
@@ -45,7 +59,12 @@ std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, cons
 }
 
 /**
- * To get the result of the query
+ * This function is the query function to get the range minimum value
+ * @param beg begining index of the query range
+ * @param end ending index of the query range
+ * @param logs array of the log table
+ * @param table sparse table data structure for the input array
+ * @return minimum value for the [beg, end] range for the input array
  */
 int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector<std::vector<int> >& table) {
     int p = logs[end - beg + 1];
