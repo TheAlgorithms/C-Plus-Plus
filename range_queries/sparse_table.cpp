@@ -1,6 +1,6 @@
 /**
  * @file sparse_table.cpp
- * @brief Implementation of [Sparse Table](https://en.wikipedia.org/wiki/Range_minimum_query#Solution_using_constant_time_and_linearithmic_space) data structure
+ * @brief Implementation of [Sparse Table](https://en.wikipedia.org/wiki/Range_minimum_query) data structure
  *
  * @details
  * Sparse Table is a data structure, that allows answering range queries.
@@ -11,7 +11,6 @@
  * Build : O(NlogN)
  * Range Query : O(1)
 */
-
 
 #include <vector>
 #include <iostream>
