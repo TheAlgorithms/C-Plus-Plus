@@ -13,8 +13,8 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="48,-0.5 48,-19.5 89,-19.5 89,-0.5 48,-0.5"/>
-<text text-anchor="middle" x="68.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph</text>
+<polygon fill="#bfbfbf" stroke="black" points="77,-0.5 77,-19.5 118,-19.5 118,-0.5 77,-0.5"/>
+<text text-anchor="middle" x="97.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph</text>
 </a>
 </g>
 </g>
@@ -31,45 +31,61 @@
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M55.97,-57.48C59.47,-44.51 63.57,-29.29 66.1,-19.89"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="52.57,-56.67 53.34,-67.23 59.33,-58.49 52.57,-56.67"/>
-<text text-anchor="middle" x="69.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> adj</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M65.07,-58.63C74.06,-45.42 84.86,-29.57 91.45,-19.89"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="61.95,-57 59.21,-67.23 67.73,-60.94 61.95,-57"/>
+<text text-anchor="middle" x="86.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> adj</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/d10/structlist.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="117.5,-73 117.5,-92 175.5,-92 175.5,-73 117.5,-73"/>
-<text text-anchor="middle" x="146.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00">list&lt; int &gt;</text>
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="3.5,-145.5 3.5,-164.5 95.5,-164.5 95.5,-145.5 3.5,-145.5"/>
+<text text-anchor="middle" x="49.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node1 -->
+<!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
-<title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M129.45,-66.08C113.72,-51.87 90.93,-31.27 78.14,-19.72"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="127.17,-68.75 136.94,-72.86 131.86,-63.55 127.17,-68.75"/>
-<text text-anchor="middle" x="117.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> adj</text>
+<title>Node3&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M49.5,-135.24C49.5,-123.41 49.5,-108.38 49.5,-97.58"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="46,-135.36 49.5,-145.36 53,-135.36 46,-135.36"/>
+<text text-anchor="middle" x="71" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d8/d10/structlist.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="117.5,-73 117.5,-92 175.5,-92 175.5,-73 117.5,-73"/>
+<text text-anchor="middle" x="146.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00">list&lt; int &gt;</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node1 -->
+<g id="edge3" class="edge">
+<title>Node4&#45;&gt;Node1</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M134.68,-64.5C124.86,-50.37 111.3,-30.85 103.56,-19.72"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="131.91,-66.64 140.49,-72.86 137.66,-62.65 131.91,-66.64"/>
+<text text-anchor="middle" x="131.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> adj</text>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="../../d8/d10/structlist.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="132,-145.5 132,-164.5 161,-164.5 161,-145.5 132,-145.5"/>
 <text text-anchor="middle" x="146.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">list</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
-<title>Node4&#45;&gt;Node3</title>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge4" class="edge">
+<title>Node5&#45;&gt;Node4</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M146.5,-134.94C146.5,-121.03 146.5,-102.82 146.5,-92.22"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="143,-135.36 146.5,-145.36 150,-135.36 143,-135.36"/>
 <text text-anchor="middle" x="157.5" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00"> next</text>
 </g>
-<!-- Node4&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node4</title>
+<!-- Node5&#45;&gt;Node5 -->
+<g id="edge5" class="edge">
+<title>Node5&#45;&gt;Node5</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M171.55,-160.63C175.94,-159.88 179,-158.01 179,-155 179,-149.94 170.32,-148.08 161.21,-149.42"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="171.22,-157.13 161.21,-160.58 171.19,-164.13 171.22,-157.13"/>
 <text text-anchor="middle" x="190" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00"> next</text>
