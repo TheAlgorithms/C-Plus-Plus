@@ -1,19 +1,20 @@
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <iostream>
 #include <queue>
 #include <vector>
 
-int *topoSortKahn(int N, std::vector<int> adj[]);
+std::vector<int> topoSortKahn(int N, const std::vector< std::vector<int> > &adj);
 
 int main() {
-    int nodes, edges;
+    int nodes = 0, edges = 0;
     std::cin >> edges >> nodes;
-    if (edges == 0 || nodes == 0)
+    if (edges == 0 || nodes == 0) {
         return 0;
-    int u, v;
+    }
+    int u = 0, v = 0;
 
-    std::vector<int> graph[nodes];
+    std::vector< std::vector<int> > graph(nodes);
     // create graph
     // example
     // 6 6
@@ -24,19 +25,19 @@ int main() {
         graph[u].push_back(v);
     }
 
-    int *topo = topoSortKahn(nodes, graph);
+    std::vector<int> topo = topoSortKahn(nodes, graph);
     // topologically sorted nodes
     for (int i = 0; i < nodes; i++) {
         std::cout << topo[i] << " ";
     }
 }
 
-int *topoSortKahn(int V, std::vector<int> adj[]) {
+std::vector<int> topoSortKahn(int V, const std::vector< std::vector<int> > &adj) {
     std::vector<bool> vis(V + 1, false);
     std::vector<int> deg(V + 1, 0);
     for (int i = 0; i < V; i++) {
-        for (int j = 0; j < adj[i].size(); j++) {
-            deg[adj[i][j]]++;
+        for (int j : adj[i]) {
+            deg[j]++;
         }
     }
     std::queue<int> q;
@@ -46,20 +47,18 @@ int *topoSortKahn(int V, std::vector<int> adj[]) {
             vis[i] = true;
         }
     }
-    int *arr = new int[V + 1];
-    memset(arr, 0, V + 1);
+    std::vector<int> arr(V + 1, 0);
     int count = 0;
     while (!q.empty()) {
         int cur = q.front();
         q.pop();
-        arr[count] = cur;
-        count++;
-        for (int i = 0; i < adj[cur].size(); i++) {
-            if (!vis[adj[cur][i]]) {
-                deg[adj[cur][i]]--;
-                if (deg[adj[cur][i]] == 0) {
-                    q.push(adj[cur][i]);
-                    vis[adj[cur][i]] = true;
+        arr[count++] = cur;
+        for (int i : adj[cur]) {
+            if (!vis[i]) {
+                deg[i]--;
+                if (deg[i] == 0) {
+                    q.push(i);
+                    vis[i] = true;
                 }
             }
         }
