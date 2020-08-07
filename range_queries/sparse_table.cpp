@@ -6,12 +6,10 @@
  * Sparse Table is a data structure, that allows answering range queries.
  * It can answer most range queries in O(logn), but its true power is answering range minimum queries
  * or equivalent range maximum queries). For those queries it can compute the answer in O(1) time.
-
-Implementation of Sparse Table
-
-Running Time Complexity
-Build : O(NlogN)
-Range Query : O(1)
+ *
+ * Running Time Complexity
+ * Build : O(NlogN)
+ * Range Query : O(1)
 */
 
 
