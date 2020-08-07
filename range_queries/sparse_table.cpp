@@ -61,7 +61,7 @@ std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, cons
 
 /**
  * This function is the query function to get the range minimum value
- * @param beg begining index of the query range
+ * @param beg beginning index of the query range
  * @param end ending index of the query range
  * @param logs array of the log table
  * @param table sparse table data structure for the input array
