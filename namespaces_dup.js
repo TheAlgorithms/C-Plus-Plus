@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "backtracking", "db/dc0/namespacebacktracking.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", null ],
     [ "data_structure", "d1/db4/namespacedata__structure.html", null ],

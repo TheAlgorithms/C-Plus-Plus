@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['qr_5falgorithm_2525',['qr_algorithm',['../d2/d3b/namespaceqr__algorithm.html',1,'']]],
-  ['quadratic_5fprobing_2526',['quadratic_probing',['../d4/dd2/namespacequadratic__probing.html',1,'']]]
+  ['machine_5flearning_2538',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]]
 ];
