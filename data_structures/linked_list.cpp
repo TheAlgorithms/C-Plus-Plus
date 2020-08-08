@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 
 struct node {
     int val;
@@ -20,6 +21,26 @@ void insert(int x) {
     } else {
         start = n;
     }
+}
+
+bool isDigit(std::string s)
+{
+	for(int i=0;i<s.size()-1;i++)
+    {
+    	if(!isdigit(s[i]))
+    	{
+            return false;
+		}
+	}
+	return true;
+}
+
+int toInt(std::string s)
+{
+	std::stringstream geek(s);
+	int number;
+	geek>>number;
+	return number;
 }
 
 void remove(int x) {
@@ -92,6 +113,7 @@ void reverse() {
 
 int main() try{
     int choice, x;
+    std::string s;
     do {
         std::cout << "\n1. Insert";
         std::cout << "\n2. Delete";
@@ -104,22 +126,34 @@ int main() try{
         switch (choice) {
         case 1:
             std::cout << "\nEnter the element to be inserted : ";
-            std::cin >> x;
-            if(!std::cin)throw ("Something");//In case of error in input 
-            								//For example, "rr"
-            insert(x);
+            std::cin >> s;
+            
+            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            else
+            {
+            	x=toInt(s);
+            	insert(x);
+			}
             break;
         case 2:
             std::cout << "\nEnter the element to be removed : ";
-            std::cin >> x;
-            if(!std::cin)throw ("Something");
-            remove(x);
+            std::cin >> s;
+            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            else
+            {
+            	x=toInt(s);
+            	remove(x);
+			}
             break;
         case 3:
             std::cout << "\nEnter the element to be searched : ";
-            std::cin >> x;
-            if(!std::cin)throw ("Something");
-            search(x);
+            std::cin >> s;
+            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            else
+            {
+            	x=toInt(s);
+            	search(x);
+			}
             break;
         case 4:
             show();
