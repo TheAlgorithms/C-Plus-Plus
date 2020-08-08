@@ -3,7 +3,7 @@
 #include <queue>
 #include <vector>
 
-typedef std::pair<int, int> PII;
+using PII = std::pair<int, int>;
 
 int prim(int x, const std::vector< std::vector<PII> > &graph) {
     // priority queue to maintain edges with respect to weights
