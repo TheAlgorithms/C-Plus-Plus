@@ -137,8 +137,6 @@ namespace search {
 	} //namespace localsearch
 } //namespace search
 
-} // namespace search
-
 /**
  * Main function
  * Heuristic Local Search - Rule first best neighbor
