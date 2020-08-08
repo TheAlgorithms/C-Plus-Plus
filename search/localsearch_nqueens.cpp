@@ -137,6 +137,7 @@ namespace search {
 	} //namespace localsearch
 } //namespace search
 
+} // namespace search
 
 /**
  * Main function
