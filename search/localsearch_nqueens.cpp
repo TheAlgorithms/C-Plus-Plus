@@ -18,6 +18,8 @@
  * function: initial_solution
  * Initialize a new solution, generating
  * random numbers with the maximum height of the board.
+ * @param [in] nqueens is the number of queens to be placed on the chessboard.
+ * The number of queens is also the dimension of the chessboard
  * @returns a vector that will be the starting solution.
  */
 std::vector<int> initial_solution(int nqueens) {
@@ -80,7 +82,6 @@ int cost(const std::vector<int>& solution_vector) {
  * @returns a new vector similar to the one passed by parameter.
  */
 std::vector<int> neighbour(std::vector<int>& solution_vector) {
-
 	int64_t i = rand() % solution_vector.size() + 1;
 	int64_t mov = (rand() % solution_vector.size() + 1);
 	solution_vector[i - 1] = mov;
@@ -93,9 +94,9 @@ std::vector<int> neighbour(std::vector<int>& solution_vector) {
  * @param [in] solution_vector is a vector with the
  * column number where the queens are located on the board.
  */
-void print_solution(const std::vector<int>& solution_vector, const int nqueens) {
-	for(int i = 0; i < nqueens; i++){
-		for(int j = 0; j < nqueens; j++){
+void print_solution(const std::vector<int>& solution_vector) {
+	for(int i = 0; i < solution_vector.size(); i++){
+		for(int j = 0; j < solution_vector.size(); j++){
 			if(j == solution_vector[i] -1){
 				std::cout << " Q ";
 			}else{
@@ -154,6 +155,6 @@ int main() {
 		}
 		else { i++; }
 	} while (i < number_neighbor);
-	print_solution(current_solution, nqueens);
+	print_solution(current_solution);
 	return 0;
 }
