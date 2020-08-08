@@ -5,6 +5,7 @@ var namespaces_dup =
     [ "ciphers", "d6/d4e/namespaceciphers.html", null ],
     [ "data_structure", "d1/db4/namespacedata__structure.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", null ],
+    [ "graph", "df/dce/namespacegraph.html", null ],
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", null ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", null ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", null ],

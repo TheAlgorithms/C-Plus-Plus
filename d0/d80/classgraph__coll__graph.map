@@ -1,7 +1,4 @@
 <map id="graph" name="graph">
-<area shape="rect" id="node1" title=" " alt="" coords="108,199,163,225"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,95,137,136"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="10,5,133,32"/>
-<area shape="rect" id="node4" href="$d8/d10/structlist.html" title=" " alt="" coords="162,102,239,129"/>
-<area shape="rect" id="node5" href="$d8/d10/structlist.html" title=" " alt="" coords="181,5,220,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="44,109,99,136"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,5,137,47"/>
 </map>

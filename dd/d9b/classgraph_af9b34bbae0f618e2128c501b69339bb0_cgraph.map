@@ -1,5 +1,6 @@
 <map id="graph::getConnectedComponents" name="graph::getConnectedComponents">
-<area shape="rect" id="node1" title="Function the calculates the connected compoents in the graph by performing the depth first search on ..." alt="" coords="5,13,223,39"/>
-<area shape="rect" id="node2" href="$dd/d9b/classgraph.html#a135921a59082b669678b029b301b8a1c" title="Function that perfoms depth first search algorithm on graph." alt="" coords="271,5,393,47"/>
-<area shape="rect" id="node3" href="$dd/d9b/classgraph.html#a6398e513b9574e029fbee07c6ac6e028" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="441,13,545,39"/>
+<area shape="rect" id="node1" title="Function the calculates the connected compoents in the graph by performing the depth first search on ..." alt="" coords="5,31,223,57"/>
+<area shape="rect" id="node2" href="$dd/d9b/classgraph.html#a135921a59082b669678b029b301b8a1c" title="Function that perfoms depth first search algorithm on graph." alt="" coords="271,23,393,65"/>
+<area shape="rect" id="node3" href="$dd/d9b/classgraph.html#a6398e513b9574e029fbee07c6ac6e028" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="447,5,551,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="441,56,557,83"/>
 </map>

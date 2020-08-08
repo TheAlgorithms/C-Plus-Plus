@@ -198,11 +198,11 @@ template&lt;size_t V&gt; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// Consider this vertex v and try different colors</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 1; c &lt;= m; c++) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">// Check if assignment of color c to v is fine</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (backtracking::isSafe&lt;V&gt;(v, <a class="code" href="../../dd/d9b/classgraph.html">graph</a>, color, c)) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (backtracking::isSafe&lt;V&gt;(v, <a class="code" href="../../df/dce/namespacegraph.html">graph</a>, color, c)) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                color[v] = c;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="comment">// recur to assign colors to rest of the vertices</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                backtracking::graphColoring&lt;V&gt;(<a class="code" href="../../dd/d9b/classgraph.html">graph</a>, m, color, v + 1);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                backtracking::graphColoring&lt;V&gt;(<a class="code" href="../../df/dce/namespacegraph.html">graph</a>, m, color, v + 1);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="comment">// If assigning color c doesn&#39;t lead to a solution then remove it</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                color[v] = 0;</div>
@@ -362,7 +362,7 @@ template&lt;size_t V&gt; </div>
 <code>false</code> if the color is not safe to be assigned to the node </dd></dl>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                                                           {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; V; i++) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../dd/d9b/classgraph.html">graph</a>[v][i] &amp;&amp; c == color[i]) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../df/dce/namespacegraph.html">graph</a>[v][i] &amp;&amp; c == color[i]) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
@@ -808,13 +808,13 @@ template&lt;size_t V&gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="atower__of__hanoi_8cpp_html_af4cfc41e546f1f8d25f01e0804e8b61d"><div class="ttname"><a href="../../db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d">mov</a></div><div class="ttdeci">void mov(tower *From, tower *To)</div><div class="ttdef"><b>Definition:</b> tower_of_hanoi.cpp:39</div></div>
-<div class="ttc" id="aclassgraph_html"><div class="ttname"><a href="../../dd/d9b/classgraph.html">graph</a></div><div class="ttdef"><b>Definition:</b> bfs.cpp:3</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition:</b> avltree.cpp:31</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="anamespacebacktracking_html_a78540bcb5ef3473b2348cbc34748ec50"><div class="ttname"><a href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a></div><div class="ttdeci">int minimax(int depth, int node_index, bool is_max, const std::array&lt; int, T &gt; &amp;scores, double height)</div><div class="ttdef"><b>Definition:</b> minimax.cpp:38</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
+<div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph algorithms.</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
