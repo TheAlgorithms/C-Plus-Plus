@@ -79,7 +79,8 @@ int cost(const std::vector<int>& solution_vector) {
  * column number where the queens are located on the board.
  * @returns a new vector similar to the one passed by parameter.
  */
-std::vector<int> neighbour(std::vector<int> solution_vector) {
+std::vector<int> neighbour(std::vector<int>& solution_vector) {
+
 	int64_t i = rand() % solution_vector.size() + 1;
 	int64_t mov = (rand() % solution_vector.size() + 1);
 	solution_vector[i - 1] = mov;
