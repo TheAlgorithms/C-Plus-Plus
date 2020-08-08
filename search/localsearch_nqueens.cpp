@@ -4,7 +4,7 @@
  * @details
  * The LS algorithm is the basis of many methods used for optimization problems.
  * Its system is based on the search for neighborhoods that obtain a better solution.
- * This exercise solves the n queens problem [https://en.wikipedia.org/wiki/Eight_queens_puzzle].
+ * This exercise solves the [n queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) problem.
  * The rule of neighboord applied in this file is first.improvement.
  * @author [dhernandezl](https://github.com/dhernandezl)
  */
