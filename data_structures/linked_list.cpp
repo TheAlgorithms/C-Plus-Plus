@@ -115,6 +115,9 @@ void reverse() {
 }
 } // namespace data_structures
 
+/**
+*Main Function
+*/
 int main()
 {
     int choice =0;
@@ -134,13 +137,13 @@ int main()
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> s;
             
-            if(!isDigit(s))
+            if(!data_structures::isDigit(s))
 	    {
 		    std::cout<<"Wrong Input!\n";
 	    }
             else
             {
-            	x=toInt(s);
+            	x=data_structures::toInt(s);
             	insert(x);
 			}
             break;
@@ -176,8 +179,8 @@ int main()
             break;
         case 5:
             std::cout << "The reversed list: \n";
-            reverse();
-            show();
+            data_structures::reverse();
+            data_structures::show();
             std::cout << "\n";
             break;
         }
