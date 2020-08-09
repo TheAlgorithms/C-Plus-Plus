@@ -12,9 +12,9 @@ void insert(int x) {
     node *t = start;
     node *n = new node;
     n->val = x;
-    n->next = NULL;
-    if (start != NULL) {
-        while (t->next != NULL) {
+    n->next = nullptr;
+    if (start != nullptr) {
+        while (t->next != nullptr) {
             t = t->next;
         }
         t->next = n;
@@ -44,7 +44,7 @@ int toInt(const std::string& s)
 }
 
 void remove(int x) {
-    if (start == NULL) {
+    if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
         return;
     } else if (start->val == x) {
@@ -54,26 +54,26 @@ void remove(int x) {
         return;
     }
 
-    node *temp = start, *parent = start;
+    node *temp1 = start, *parent = start;
 
-    while (temp != NULL && temp->val != x) {
-        parent = temp;
-        temp = temp->next;
+    while (temp1 != nullptr && temp1->val != x) {
+        parent = temp1;
+        temp1 = temp1->next;
     }
 
-    if (temp == NULL) {
+    if (temp1 == nullptr) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
 
-    parent->next = temp->next;
-    delete temp;
+    parent->next = temp1->next;
+    delete temp1;
 }
 
 void search(int x) {
     node *t = start;
     int found = 0;
-    while (t != NULL) {
+    while (t != nullptr) {
         if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
@@ -88,7 +88,7 @@ void search(int x) {
 
 void show() {
     node *t = start;
-    while (t != NULL) {
+    while (t != nullptr) {
         std::cout << t->val << "\t";
         t = t->next;
     }
@@ -96,15 +96,15 @@ void show() {
 
 void reverse() {
     node *first = start;
-    if (first != NULL) {
+    if (first != nullptr) {
         node *second = first->next;
-        while (second != NULL) {
+        while (second != nullptr) {
             node *tem = second->next;
             second->next = first;
             first = second;
             second = tem;
         }
-        start->next = NULL;
+        start->next = nullptr;
         start = first;
     } else {
         std::cout << "\nEmpty list";
@@ -113,7 +113,8 @@ void reverse() {
 
 int main()
 {
-    int choice, x;
+    int choice =0;
+    int x = 0;
     std::string s;
     do {
         std::cout << "\n1. Insert";
