@@ -171,7 +171,7 @@ int main()
 			}
             break;
         case 4:
-            show();
+            data_structures::show();
             std::cout << "\n";
             break;
         case 5:
