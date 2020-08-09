@@ -23,7 +23,7 @@ void insert(int x) {
     }
 }
 
-bool isDigit(std::string s)
+bool isDigit(const std::string& s)
 {
 	for(int i=0;i<s.size()-1;i++)
     {
@@ -35,10 +35,10 @@ bool isDigit(std::string s)
 	return true;
 }
 
-int toInt(std::string s)
+int toInt(const std::string& s)
 {
 	std::stringstream geek(s);
-	int number;
+	int number=0;
 	geek>>number;
 	return number;
 }
@@ -129,7 +129,10 @@ int main()
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> s;
             
-            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            if(!isDigit(s))
+	    {
+		    std::cout<<"Wrong Input!\n";
+	    }
             else
             {
             	x=toInt(s);
@@ -139,7 +142,10 @@ int main()
         case 2:
             std::cout << "\nEnter the element to be removed : ";
             std::cin >> s;
-            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            if(!isDigit(s))
+	    {
+		    std::cout<<"Wrong Input!\n";
+	    }
             else
             {
             	x=toInt(s);
@@ -149,7 +155,10 @@ int main()
         case 3:
             std::cout << "\nEnter the element to be searched : ";
             std::cin >> s;
-            if(!isDigit(s))std::cout<<"Wrong Input!\n";
+            if(!isDigit(s))
+	    {
+		    std::cout<<"Wrong Input!\n";
+	    }
             else
             {
             	x=toInt(s);
