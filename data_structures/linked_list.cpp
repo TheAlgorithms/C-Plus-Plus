@@ -6,23 +6,6 @@ struct node {
     node *next;
 };
 
-node *start;
-
-void insert(int x) {
-    node *t = start;
-    node *n = new node;
-    n->val = x;
-    n->next = nullptr;
-    if (start != nullptr) {
-        while (t->next != nullptr) {
-            t = t->next;
-        }
-        t->next = n;
-    } else {
-        start = n;
-    }
-}
-
 bool isDigit(const std::string& s)
 {
 	for(int i=0;i<s.size()-1;i++)
@@ -43,37 +26,52 @@ int toInt(const std::string& s)
 	return number;
 }
 
+node *start=0;
+
+void insert(int x) {
+    node* t = start;
+    node* n = new node;
+    n->val = x;
+    n->next = 0;
+    if (t != 0) {
+        while (t->next != 0) {
+            t = t->next;
+        }
+        t->next = n;
+    } else {
+        start = n;
+    }
+}
+
 void remove(int x) {
-    if (start == nullptr) {
+    if (start == 0) {
         std::cout << "\nLinked List is empty\n";
         return;
     } else if (start->val == x) {
         node *temp = start;
         start = start->next;
-        delete temp;
         return;
     }
 
-    node *temp1 = start, *parent = start;
+    node *temp = start, *parent = start;
 
-    while (temp1 != nullptr && temp1->val != x) {
-        parent = temp1;
-        temp1 = temp1->next;
+    while (temp != 0 && temp->val != x) {
+        parent = temp;
+        temp = temp->next;
     }
 
-    if (temp1 == nullptr) {
+    if (temp == 0) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
 
-    parent->next = temp1->next;
-    delete temp1;
+    parent->next = temp->next;
 }
 
 void search(int x) {
     node *t = start;
     int found = 0;
-    while (t != nullptr) {
+    while (t != 0) {
         if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
@@ -88,7 +86,7 @@ void search(int x) {
 
 void show() {
     node *t = start;
-    while (t != nullptr) {
+    while (t != 0) {
         std::cout << t->val << "\t";
         t = t->next;
     }
@@ -96,15 +94,15 @@ void show() {
 
 void reverse() {
     node *first = start;
-    if (first != nullptr) {
+    if (first != 0) {
         node *second = first->next;
-        while (second != nullptr) {
+        while (second != 0) {
             node *tem = second->next;
             second->next = first;
             first = second;
             second = tem;
         }
-        start->next = nullptr;
+        start->next = 0;
         start = first;
     } else {
         std::cout << "\nEmpty list";
