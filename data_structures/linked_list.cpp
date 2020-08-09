@@ -144,7 +144,7 @@ int main()
             else
             {
             	x=data_structures::toInt(s);
-            	insert(x);
+            	data_structures::insert(x);
 			}
             break;
         case 2:
