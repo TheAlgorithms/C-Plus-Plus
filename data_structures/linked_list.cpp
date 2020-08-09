@@ -113,6 +113,7 @@ void reverse() {
         std::cout << "\nEmpty list";
     }
 }
+} // namespace data_structures
 
 int main()
 {
