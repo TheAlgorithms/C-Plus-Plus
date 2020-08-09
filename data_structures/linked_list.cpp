@@ -153,8 +153,8 @@ int main()
 	    }
             else
             {
-            	x=toInt(s);
-            	remove(x);
+            	x=data_structures::toInt(s);
+            	data_structures::remove(x);
 			}
             break;
         case 3:
