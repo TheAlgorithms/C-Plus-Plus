@@ -166,8 +166,8 @@ int main()
 	    }
             else
             {
-            	x=toInt(s);
-            	search(x);
+            	x=data_structures::toInt(s);
+            	data_structures::search(x);
 			}
             break;
         case 4:
