@@ -26,15 +26,15 @@ int toInt(const std::string& s)
 	return number;
 }
 
-node *start=0;
+node *start=nullptr;
 
 void insert(int x) {
     node* t = start;
     node* n = new node;
     n->val = x;
-    n->next = 0;
-    if (t != 0) {
-        while (t->next != 0) {
+    n->next = nullptr;
+    if (t != nullptr) {
+        while (t->next != nullptr) {
             t = t->next;
         }
         t->next = n;
@@ -44,7 +44,7 @@ void insert(int x) {
 }
 
 void remove(int x) {
-    if (start == 0) {
+    if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
         return;
     } else if (start->val == x) {
@@ -55,12 +55,12 @@ void remove(int x) {
 
     node *temp = start, *parent = start;
 
-    while (temp != 0 && temp->val != x) {
+    while (temp != nullptr && temp->val != x) {
         parent = temp;
         temp = temp->next;
     }
 
-    if (temp == 0) {
+    if (temp == nullptr) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
@@ -71,7 +71,7 @@ void remove(int x) {
 void search(int x) {
     node *t = start;
     int found = 0;
-    while (t != 0) {
+    while (t != nullptr) {
         if (t->val == x) {
             std::cout << "\nFound";
             found = 1;
@@ -86,7 +86,7 @@ void search(int x) {
 
 void show() {
     node *t = start;
-    while (t != 0) {
+    while (t != nullptr) {
         std::cout << t->val << "\t";
         t = t->next;
     }
@@ -94,15 +94,15 @@ void show() {
 
 void reverse() {
     node *first = start;
-    if (first != 0) {
+    if (first != nullptr) {
         node *second = first->next;
-        while (second != 0) {
+        while (second != nullptr) {
             node *tem = second->next;
             second->next = first;
             first = second;
             second = tem;
         }
-        start->next = 0;
+        start->next = nullptr;
         start = first;
     } else {
         std::cout << "\nEmpty list";
