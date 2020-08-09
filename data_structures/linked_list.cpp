@@ -48,7 +48,6 @@ void remove(int x) {
         std::cout << "\nLinked List is empty\n";
         return;
     } else if (start->val == x) {
-        node *temp = start;
         start = start->next;
         return;
     }
