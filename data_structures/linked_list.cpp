@@ -160,7 +160,7 @@ int main()
         case 3:
             std::cout << "\nEnter the element to be searched : ";
             std::cin >> s;
-            if(!isDigit(s))
+            if(!data_structures::isDigit(s))
 	    {
 		    std::cout<<"Wrong Input!\n";
 	    }
