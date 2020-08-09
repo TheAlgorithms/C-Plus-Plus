@@ -1,7 +1,12 @@
 #include <iostream>
 #include <sstream>
 
-struct node 
+/**
+ * @namespace data_structures
+ * @brief Data Structures algorithms
+ */
+namespace data_structures {
+struct node
 {
     int val;
     node *next;
