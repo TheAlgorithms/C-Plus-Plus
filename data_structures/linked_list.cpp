@@ -1,7 +1,8 @@
 #include <iostream>
 #include <sstream>
 
-struct node {
+struct node 
+{
     int val;
     node *next;
 };
