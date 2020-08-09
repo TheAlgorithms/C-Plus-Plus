@@ -147,7 +147,7 @@ int main()
         case 2:
             std::cout << "\nEnter the element to be removed : ";
             std::cin >> s;
-            if(!isDigit(s))
+            if(!data_structures::isDigit(s))
 	    {
 		    std::cout<<"Wrong Input!\n";
 	    }
