@@ -111,7 +111,8 @@ void reverse() {
     }
 }
 
-int main() try{
+int main()
+{
     int choice, x;
     std::string s;
     do {
@@ -169,8 +170,4 @@ int main() try{
     } while (choice != 0);
 
     return 0;
-}
-catch(...)
-{
-	std::cerr<<"\nWrong Input!";
 }
