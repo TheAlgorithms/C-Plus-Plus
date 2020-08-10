@@ -130,8 +130,6 @@ void remove(int x) {
     //else point the node pointed to by the parent iterator to the 
     //node after the temp iterator 
     parent->next = temp->next;
-
-    delete temp;
 }
 
 /**
