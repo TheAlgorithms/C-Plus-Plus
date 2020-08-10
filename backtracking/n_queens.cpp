@@ -97,7 +97,7 @@ void solveNQ(std::array<std::array<int, n>, n> board, const int &col) {
       // Place this queen in matrix
       board[i][col] = 1;
 
-      // Recur to place rest of the queens
+      // Recursive to place rest of the queens
       solveNQ<n>(board, col + 1);
 
       board[i][col] = 0; // backtrack
