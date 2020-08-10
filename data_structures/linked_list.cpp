@@ -24,7 +24,7 @@
  */
 namespace data_structures {
 /**
- * Class Documentation
+ * stores value of a node and address of the next node
  */
 struct node
 {
@@ -197,7 +197,6 @@ void reverse() {
  */
 int main()
 {
-//code here
     int choice =0;
     int x = 0;
     std::string s;
