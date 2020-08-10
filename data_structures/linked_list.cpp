@@ -1,3 +1,20 @@
+/**
+ * @file linked_list.cpp
+ * @brief Implementation of singly linked list algorithm.
+ *
+ * @details
+ * The linked list is a form of container used for holding a sequence of 
+ * values, which can be added, removed and displayed.
+ * ### Algorithm
+ * Values can be added by iterating to the end of a list(by following 
+ * the pointers) starting from the first node. Whichever node points to null
+ * is considered the last node and is pointed to the new value.
+ *
+ * Values can be removed by also iterating through the list. When the node containing 
+ * the value is found, the node pointing to the current node is made to point to the 
+ * node that the current node is pointing to, and then returning the current node to
+ * heap store.
+ */
 #include <iostream>
 #include <sstream>
 
@@ -10,7 +27,7 @@ struct node
 {
     int val;
     node *next;
-};
+};//node containing value and pointer to next node
 
 bool isDigit(const std::string& s)
 {
@@ -22,7 +39,7 @@ bool isDigit(const std::string& s)
 		}
 	}
 	return true;
-}
+}//returns true if argument contains only integers, false otherwise
 
 int toInt(const std::string& s)
 {
@@ -30,7 +47,7 @@ int toInt(const std::string& s)
 	int number=0;
 	geek>>number;
 	return number;
-}
+}//converts argumnet from type string to type int 
 
 node *start=nullptr;
 
@@ -47,7 +64,7 @@ void insert(int x) {
     } else {
         start = n;
     }
-}
+}//inserts new node to the list with the argument as the value
 
 void remove(int x) {
     if (start == nullptr) {
@@ -71,7 +88,7 @@ void remove(int x) {
     }
 
     parent->next = temp->next;
-}
+}//removes node containing argument as value
 
 void search(int x) {
     node *t = start;
@@ -87,7 +104,7 @@ void search(int x) {
     if (found == 0) {
         std::cout << "\nNot Found";
     }
-}
+}//search for node containing the argument
 
 void show() {
     node *t = start;
@@ -95,7 +112,7 @@ void show() {
         std::cout << t->val << "\t";
         t = t->next;
     }
-}
+}//display all the values in the list
 
 void reverse() {
     node *first = start;
@@ -112,7 +129,7 @@ void reverse() {
     } else {
         std::cout << "\nEmpty list";
     }
-}
+}//reverse the order of the nodes in the list
 } // namespace data_structures
 
 /**
