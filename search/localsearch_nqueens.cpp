@@ -13,7 +13,11 @@
 #include <vector>
 #include <algorithm>
 #include <array>
-
+/**
+ * @namespace search
+ * @brief Search algorithms
+ */
+namespace search {
 /** \namespace search
  *  \brief Heuristic local search algorithm.
  */
