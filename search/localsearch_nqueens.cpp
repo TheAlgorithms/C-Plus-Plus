@@ -13,18 +13,15 @@
 #include <vector>
 #include <algorithm>
 #include <array>
-/**
- * @namespace search
- * @brief Search algorithms
- */
-namespace search {
-/** \namespace search
+
+
+/*  \namespace search
  *  \brief Heuristic local search algorithm.
  */
 namespace search {
 	/* \namespace localsearch
-     * \brief Functions for [Heuristic local Search](https://en.wikipedia.org/wiki/Local_search_(optimization)) algorithm.
-     */
+     	* \brief Functions for [Heuristic local Search](https://en.wikipedia.org/wiki/Local_search_(optimization)) algorithm.
+     	*/
 	namespace localsearch {
 		/**
 		 * function: initial_solution
