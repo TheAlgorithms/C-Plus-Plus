@@ -137,7 +137,7 @@ namespace search {
 
 /**
  * Main function
- * Heuristic Local Search - Rule first best neighbor
+ * Heuristic Local Search - Greedily take the first neighbor that reduces the cost
  * - s = generate initial solution
  * - while s not optimal local do{
  * -	s* belongs neighbor(s) with cost(s*) < cost(s)
