@@ -133,8 +133,8 @@ void reverse() {
 } // namespace data_structures
 
 /**
-*Main Function
-*/
+ * Main function
+ */
 int main()
 {
     int choice =0;
