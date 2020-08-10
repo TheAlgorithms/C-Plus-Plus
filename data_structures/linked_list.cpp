@@ -113,7 +113,7 @@ void remove(int x) {
 	//create iterators to the first and the next node
 	//and initialize both iterators with the first node
 	
-    //while the node pointed to by parent iterator 
+    // while the node pointed to by parent iterator 
     //points at another node and the temp iterator does not have the 
     //value x passed as the argument, move both iterators forward
     //by one node and repeat
