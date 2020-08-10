@@ -124,6 +124,6 @@ int main() {
     std::array<int, n>({0, 0, 0, 0})
     };
 
-  backtracking::solveNQ<n>(board, 0);
+  backtracking::n_queens::solveNQ<n>(board, 0);
   return 0;
 }
