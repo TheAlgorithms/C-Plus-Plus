@@ -23,14 +23,25 @@
  * @brief Data Structures algorithms
  */
 namespace data_structures {
+/**
+ * Class Documentation
+ */
 struct node
 {
     int val;
     node *next;
-};//node containing value and pointer to next node
-
+};
+	
+/**
+ * This function checks if the string passed consists 
+ * of only digits.
+ *@param s To be checked if s contains only integers
+ *@returns true if there are only only digits present in the string
+ *@returns false if any other character is found
+ */
 bool isDigit(const std::string& s)
 {
+	//function statements here
 	for(int i=0;i<s.size()-1;i++)
     {
     	if(!isdigit(s[i]))
@@ -39,58 +50,97 @@ bool isDigit(const std::string& s)
 		}
 	}
 	return true;
-}//returns true if argument contains only integers, false otherwise
-
+}
+	
+/**
+ * This function changes the value_type of its argument
+ * from a string to an integer
+ * @param s argument whose value_type we want to change
+ * @return number value with value_type as integer
+ */
 int toInt(const std::string& s)
 {
+	//function statements here
 	std::stringstream geek(s);
 	int number=0;
 	geek>>number;
 	return number;
-}//converts argumnet from type string to type int 
+} 
 
 node *start=nullptr;
 
+/**
+ * This function creates a new node using the new value
+ * passed as its argument and inserts it to the end of the 
+ * list.
+ *@param x value we want to insert to the list
+ */
 void insert(int x) {
+	//function statements here
     node* t = start;
-    node* n = new node;
-    n->val = x;
+    node* n = new node;//creates new node
+    n->val = x;//sets value(val) as x
     n->next = nullptr;
     if (t != nullptr) {
         while (t->next != nullptr) {
             t = t->next;
-        }
-        t->next = n;
+        }//iterate to the end of the list
+        t->next = n;//current last node on the list is made
+	    //to point to the new node
     } else {
         start = n;
     }
-}//inserts new node to the list with the argument as the value
+}
 
+/**
+ * This function removes an existing node from the current
+ * list containing the value passed as an argument to the 
+ * function.
+ * @param x value we want to remove from the list
+ */
 void remove(int x) {
+	//function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
-        return;
-    } else if (start->val == x) {
+        return;//return if the list is empty 
+    } else if (start->val == x) {//check if the first node contains
+	    			//the value passed as an argument
         start = start->next;
         return;
     }
 
     node *temp = start, *parent = start;
-
+	//create iterators to the first and the next node
+	//and initialize both iterators with the first node
+	
+    //while the node pointed to by parent iterator 
+    //points at another node and the temp iterator does not have the 
+    //value x passed as the argument, move both iterators forward
+    //by one node and repeat
     while (temp != nullptr && temp->val != x) {
         parent = temp;
-        temp = temp->next;
+        temp = temp->next;//initially, only the temp iterator is moved forward
     }
-
+	
+    //Tell user if value not found
     if (temp == nullptr) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
-
+    //else point the node pointed to by the parent iterator to the 
+    //node after the temp iterator 
     parent->next = temp->next;
-}//removes node containing argument as value
 
+    delete temp;
+}
+
+/**
+ * This function searches for the value passed as an argument
+ * in the linked list.
+ * @param x value to be searched for
+ */
 void search(int x) {
+	//function statements here
     node *t = start;
     int found = 0;
     while (t != nullptr) {
@@ -104,17 +154,29 @@ void search(int x) {
     if (found == 0) {
         std::cout << "\nNot Found";
     }
-}//search for node containing the argument
-
+}
+	
+/**
+ * This function displays all the values that are currently 
+ * in the list in the order in which they were inputed by the 
+ * user
+ */
 void show() {
+	//function statements here
     node *t = start;
     while (t != nullptr) {
         std::cout << t->val << "\t";
         t = t->next;
     }
-}//display all the values in the list
+}
 
+/**
+ * This function displays all the values that are currently 
+ * in the list in a reverse order to which they were inputed by the 
+ * user
+ */
 void reverse() {
+	//function statements here
     node *first = start;
     if (first != nullptr) {
         node *second = first->next;
@@ -129,7 +191,7 @@ void reverse() {
     } else {
         std::cout << "\nEmpty list";
     }
-}//reverse the order of the nodes in the list
+}
 } // namespace data_structures
 
 /**
@@ -137,6 +199,7 @@ void reverse() {
  */
 int main()
 {
+//code here
     int choice =0;
     int x = 0;
     std::string s;
