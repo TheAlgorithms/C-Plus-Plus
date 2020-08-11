@@ -41,7 +41,7 @@ struct node
  */
 bool isDigit(const std::string& s)
 {
-	//function statements here
+	// function statements here
 	for(int i=0;i<s.size()-1;i++)
     {
     	if(!isdigit(s[i]))
@@ -60,7 +60,7 @@ bool isDigit(const std::string& s)
  */
 int toInt(const std::string& s)
 {
-	//function statements here
+	// function statements here
 	std::stringstream geek(s);
 	int number=0;
 	geek>>number;
@@ -73,20 +73,20 @@ node *start=nullptr;
  * This function creates a new node using the new value
  * passed as its argument and inserts it to the end of the 
  * list.
- *@param x value we want to insert to the list
+ * @param x value we want to insert to the list
  */
 void insert(int x) {
-	//function statements here
+	// function statements here
     node* t = start;
-    node* n = new node;//creates new node
-    n->val = x;//sets value(val) as x
+    node* n = new node;// creates new node
+    n->val = x;// sets value(val) as x
     n->next = nullptr;
     if (t != nullptr) {
         while (t->next != nullptr) {
             t = t->next;
-        }//iterate to the end of the list
-        t->next = n;//current last node on the list is made
-	    //to point to the new node
+        }// iterate to the end of the list
+        t->next = n;// current last node on the list is made
+	    // to point to the new node
     } else {
         start = n;
     }
@@ -99,36 +99,36 @@ void insert(int x) {
  * @param x value we want to remove from the list
  */
 void remove(int x) {
-	//function statements here
+	// function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
-        return;//return if the list is empty 
-    } else if (start->val == x) {//check if the first node contains
-	    			//the value passed as an argument
+        return;// return if the list is empty 
+    } else if (start->val == x) {// check if the first node contains
+	    			// the value passed as an argument
         start = start->next;
         return;
     }
 
     node *temp = start, *parent = start;
-	//create iterators to the first and the next node
-	//and initialize both iterators with the first node
+	// create iterators to the first and the next node
+	// and initialize both iterators with the first node
 	
     // while the node pointed to by parent iterator 
-    //points at another node and the temp iterator does not have the 
-    //value x passed as the argument, move both iterators forward
-    //by one node and repeat
+    // points at another node and the temp iterator does not have the 
+    // value x passed as the argument, move both iterators forward
+    // by one node and repeat
     while (temp != nullptr && temp->val != x) {
         parent = temp;
-        temp = temp->next;//initially, only the temp iterator is moved forward
+        temp = temp->next;// initially, only the temp iterator is moved forward
     }
 	
-    //Tell user if value not found
+    // Tell user if value not found
     if (temp == nullptr) {
         std::cout << std::endl << x << " not found in list\n";
         return;
     }
-    //else point the node pointed to by the parent iterator to the 
-    //node after the temp iterator 
+    // else point the node pointed to by the parent iterator to the 
+    // node after the temp iterator 
     parent->next = temp->next;
 }
 
@@ -138,7 +138,7 @@ void remove(int x) {
  * @param x value to be searched for
  */
 void search(int x) {
-	//function statements here
+	// function statements here
     node *t = start;
     int found = 0;
     while (t != nullptr) {
@@ -160,7 +160,7 @@ void search(int x) {
  * user
  */
 void show() {
-	//function statements here
+	// function statements here
     node *t = start;
     while (t != nullptr) {
         std::cout << t->val << "\t";
@@ -174,7 +174,7 @@ void show() {
  * user
  */
 void reverse() {
-	//function statements here
+	// function statements here
     node *first = start;
     if (first != nullptr) {
         node *second = first->next;
