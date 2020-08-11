@@ -203,7 +203,7 @@ int main() {
   int choice = 0;
   int x = 0;
   std::string s;
-  do {
+  while(true) {
     std::cout << "\n1. Insert";
     std::cout << "\n2. Delete";
     std::cout << "\n3. Search";
@@ -254,15 +254,20 @@ int main() {
       data_structures::show(start);
       std::cout << "\n";
       break;
+    case 0:
+    {
+    // deallocate memory
+      while (start != nullptr) {
+      data_structures::node *t = start->next;
+      delete start;
+      start = t;		
+	}
+	return 0;
+	}
+      
+    default:
+    	cout<<"Invalid Input\n"<<endl;
     }
-  } while (choice != 0);
-
-  // deallocate memory
-  while (start != nullptr) {
-    data_structures::node *t = start->next;
-    delete start;
-    start = t;
-  }
-
+  } 
   return 0;
 }
