@@ -266,7 +266,7 @@ int main() {
 	}
       
     default:
-    	cout<<"Invalid Input\n"<<endl;
+    	std::cout<<"Invalid Input\n"<<std::endl;
     }
   } 
   return 0;
