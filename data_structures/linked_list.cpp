@@ -76,7 +76,7 @@ typedef node* Iter;
  * @param x value we want to insert to the list
  * @param start first node of the list we want to insert to
  */
-void insert(int x, const Iter& start) {
+void insert(int x, Iter& start) {
 	// function statements here
     node* t = start;
     node* n = new node;// creates new node
@@ -100,7 +100,7 @@ void insert(int x, const Iter& start) {
  * @param x value we want to remove from the list
  * @param start first node of the list we want to remove from
  */
-void remove(int x, const Iter& start) {
+void remove(int x, Iter& start) {
 	// function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
@@ -142,7 +142,7 @@ void remove(int x, const Iter& start) {
  * @param x value to be searched for
  * @param start first node of the list we want to search
  */
-void search(int x, const Iter& start) {
+void search(int x, Iter& start) {
 	// function statements here
     node *t = start;
     int found = 0;
@@ -165,7 +165,7 @@ void search(int x, const Iter& start) {
  * user
  * @param start first node of the list we want to display
  */
-void show(const Iter& start) {
+void show(Iter& start) {
 	// function statements here
     node *t = start;
     while (t != nullptr) {
@@ -180,7 +180,7 @@ void show(const Iter& start) {
  * user
  * @param start first node of the list we want to reverse
  */
-void reverse(const Iter& start) {
+void reverse(Iter& start) {
 	// function statements here
     node *first = start;
     if (first != nullptr) {
