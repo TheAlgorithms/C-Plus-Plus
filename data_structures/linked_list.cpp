@@ -76,7 +76,7 @@ typedef node* Iter;
  * @param x value we want to insert to the list
  * @param start first node of the list we want to insert to
  */
-void insert(int x, Iter& start) {
+void insert(int x, const Iter& start) {
 	// function statements here
     node* t = start;
     node* n = new node;// creates new node
@@ -100,14 +100,16 @@ void insert(int x, Iter& start) {
  * @param x value we want to remove from the list
  * @param start first node of the list we want to remove from
  */
-void remove(int x, Iter& start) {
+void remove(int x, const Iter& start) {
 	// function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
         return;// return if the list is empty 
     } else if (start->val == x) {// check if the first node contains
 	    			// the value passed as an argument
+		node* t=start;
         start = start->next;
+        delete t;
         return;
     }
 
@@ -140,7 +142,7 @@ void remove(int x, Iter& start) {
  * @param x value to be searched for
  * @param start first node of the list we want to search
  */
-void search(int x, Iter& start) {
+void search(int x, const Iter& start) {
 	// function statements here
     node *t = start;
     int found = 0;
@@ -163,7 +165,7 @@ void search(int x, Iter& start) {
  * user
  * @param start first node of the list we want to display
  */
-void show(Iter& start) {
+void show(const Iter& start) {
 	// function statements here
     node *t = start;
     while (t != nullptr) {
@@ -178,7 +180,7 @@ void show(Iter& start) {
  * user
  * @param start first node of the list we want to reverse
  */
-void reverse(Iter& start) {
+void reverse(const Iter& start) {
 	// function statements here
     node *first = start;
     if (first != nullptr) {
@@ -220,40 +222,40 @@ int main()
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> s;
             
-            if(!data_structures::isDigit(s))
-	    {
-		    std::cout<<"Wrong Input!\n";
-	    }
+            if(data_structures::isDigit(s))
+	   	 	{
+	   	 		x=data_structures::toInt(s);
+            	data_structures::insert(x,start);
+	    	}
             else
             {
-            	x=data_structures::toInt(s);
-            	data_structures::insert(x,start);
+            	std::cout<<"Wrong Input!\n";
 			}
             break;
         case 2:
             std::cout << "\nEnter the element to be removed : ";
             std::cin >> s;
-            if(!data_structures::isDigit(s))
-	    {
-		    std::cout<<"Wrong Input!\n";
-	    }
+            if(data_structures::isDigit(s))
+	    	{
+	    		x=data_structures::toInt(s);
+            	data_structures::remove(x,start);
+	    	}
             else
             {
-            	x=data_structures::toInt(s);
-            	data_structures::remove(x,start);
+            	std::cout<<"Wrong Input!\n";
 			}
             break;
         case 3:
             std::cout << "\nEnter the element to be searched : ";
             std::cin >> s;
-            if(!data_structures::isDigit(s))
-	    {
-		    std::cout<<"Wrong Input!\n";
-	    }
+            if(data_structures::isDigit(s))
+	    	{
+	    		x=data_structures::toInt(s);
+            	data_structures::search(x,start);
+	    	}
             else
             {
-            	x=data_structures::toInt(s);
-            	data_structures::search(x,start);
+            	std::cout<<"Wrong Input!\n";
 			}
             break;
         case 4:
