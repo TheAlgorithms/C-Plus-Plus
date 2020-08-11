@@ -176,6 +176,7 @@
 
 ## Others
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
+  * [Collatz Conjecture](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/collatz_conjecture.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
