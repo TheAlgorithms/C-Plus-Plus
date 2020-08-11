@@ -7,9 +7,9 @@
  * It can answer most range queries in O(logn), but its true power is answering range minimum queries
  * or equivalent range maximum queries). For those queries it can compute the answer in O(1) time.
  *
- * Running Time Complexity \n
- * Build : O(NlogN) \n
- * Range Query : O(1) \n
+ * * Running Time Complexity \n
+ * * Build : O(NlogN) \n
+ * * Range Query : O(1) \n
 */
 
 #include <vector>
@@ -21,7 +21,7 @@
  * @namespace range_queries
  * @brief Range Queries algorithms
  */
-namespace SparseTable {
+namespace range_queries {
 /**
  * This function precomputes intial log table for further use.
  * @param n value of the size of the input array
@@ -81,10 +81,10 @@ int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector
 int main() {
     int n = 5;
     std::vector<int> A = {1, 2, 0, 3, 9};
-    std::vector<int> logs = SparseTable::computeLogs(n);
-    std::vector<std::vector<int> >  table = SparseTable::buildTable(n, A, logs);
-    assert(SparseTable::getMinimum(0, 0, logs, table) == 1);
-    assert(SparseTable::getMinimum(0, 4, logs, table) == 0);
-    assert(SparseTable::getMinimum(2, 4, logs, table) == 0);
+    std::vector<int> logs = range_queries::computeLogs(n);
+    std::vector<std::vector<int> >  table = range_queries::buildTable(n, A, logs);
+    assert(range_queries::getMinimum(0, 0, logs, table) == 1);
+    assert(range_queries::getMinimum(0, 4, logs, table) == 0);
+    assert(range_queries::getMinimum(2, 4, logs, table) == 0);
     return 0;
 }
