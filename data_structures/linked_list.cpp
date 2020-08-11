@@ -257,13 +257,6 @@ int main() {
     }
   } while (choice != 0);
 
-  // deallocate memory
-  while (start != nullptr) {
-    data_structures::node *t = start->next;
-    delete start;
-    start = t;
-  }
-
   return 0;
 }
 
