@@ -181,6 +181,7 @@
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
   * [Fast Interger Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_interger_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
+  * [Kaprekar Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/kaprekar_number.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/paranthesis_matching.cpp)
