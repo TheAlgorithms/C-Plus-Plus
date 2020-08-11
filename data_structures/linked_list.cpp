@@ -180,7 +180,7 @@ void show(Iter& start) {
  * user
  * @param start first node of the list we want to reverse
  */
-void reverse(Iter start) {
+void reverse(Iter& start) {
 	// function statements here
     node* first = start;
     if (first != nullptr) {
