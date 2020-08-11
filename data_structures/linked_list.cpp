@@ -42,7 +42,7 @@ struct node
 bool isDigit(const std::string& s)
 {
 	// function statements here
-	for(int i=0;i<s.size()-1;i++)
+	for(int i=0;i<s.size();i++)
     {
     	if(!isdigit(s[i]))
     	{
@@ -67,15 +67,16 @@ int toInt(const std::string& s)
 	return number;
 } 
 
-node *start=nullptr;
+typedef node* Iter;
 
 /**
  * This function creates a new node using the new value
  * passed as its argument and inserts it to the end of the 
  * list.
  * @param x value we want to insert to the list
+ * @param start first node of the list we want to insert to
  */
-void insert(int x) {
+void insert(int x, Iter& start) {
 	// function statements here
     node* t = start;
     node* n = new node;// creates new node
@@ -97,8 +98,9 @@ void insert(int x) {
  * list containing the value passed as an argument to the 
  * function.
  * @param x value we want to remove from the list
+ * @param start first node of the list we want to remove from
  */
-void remove(int x) {
+void remove(int x, Iter& start) {
 	// function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
@@ -136,8 +138,9 @@ void remove(int x) {
  * This function searches for the value passed as an argument
  * in the linked list.
  * @param x value to be searched for
+ * @param start first node of the list we want to search
  */
-void search(int x) {
+void search(int x, Iter& start) {
 	// function statements here
     node *t = start;
     int found = 0;
@@ -158,8 +161,9 @@ void search(int x) {
  * This function displays all the values that are currently 
  * in the list in the order in which they were inputed by the 
  * user
+ * @param start first node of the list we want to display
  */
-void show() {
+void show(Iter& start) {
 	// function statements here
     node *t = start;
     while (t != nullptr) {
@@ -172,8 +176,9 @@ void show() {
  * This function displays all the values that are currently 
  * in the list in a reverse order to which they were inputed by the 
  * user
+ * @param start first node of the list we want to reverse
  */
-void reverse() {
+void reverse(Iter& start) {
 	// function statements here
     node *first = start;
     if (first != nullptr) {
@@ -197,6 +202,7 @@ void reverse() {
  */
 int main()
 {
+	data_structures::node* start=nullptr;
     int choice =0;
     int x = 0;
     std::string s;
@@ -221,7 +227,7 @@ int main()
             else
             {
             	x=data_structures::toInt(s);
-            	data_structures::insert(x);
+            	data_structures::insert(x,start);
 			}
             break;
         case 2:
@@ -234,7 +240,7 @@ int main()
             else
             {
             	x=data_structures::toInt(s);
-            	data_structures::remove(x);
+            	data_structures::remove(x,start);
 			}
             break;
         case 3:
@@ -247,17 +253,17 @@ int main()
             else
             {
             	x=data_structures::toInt(s);
-            	data_structures::search(x);
+            	data_structures::search(x,start);
 			}
             break;
         case 4:
-            data_structures::show();
+            data_structures::show(start);
             std::cout << "\n";
             break;
         case 5:
             std::cout << "The reversed list: \n";
-            data_structures::reverse();
-            data_structures::show();
+            data_structures::reverse(start);
+            data_structures::show(start);
             std::cout << "\n";
             break;
         }
