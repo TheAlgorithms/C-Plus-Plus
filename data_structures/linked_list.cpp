@@ -76,9 +76,9 @@ typedef node* Iter;
  * @param x value we want to insert to the list
  * @param start first node of the list we want to insert to
  */
-void insert(int x, Iter& start) {
+void insert(int x, Iter* start) {
 	// function statements here
-    node* t = start;
+    node* t = *start;
     node* n = new node;// creates new node
     n->val = x;// sets value(val) as x
     n->next = nullptr;
@@ -89,7 +89,7 @@ void insert(int x, Iter& start) {
         t->next = n;// current last node on the list is made
 	    // to point to the new node
     } else {
-        start = n;
+        *start = n;
     }
 }
 
