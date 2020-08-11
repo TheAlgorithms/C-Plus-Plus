@@ -13,6 +13,7 @@
 */
 
 #include <vector>
+#include <cassert>
 #include <iostream>
 #include <algorithm>
 
@@ -20,7 +21,7 @@
  * @namespace range_queries
  * @brief Range Queries algorithms
  */
-namespace range_queries {
+namespace SparseTable {
 /**
  * This function precomputes intial log table for further use.
  * @param n value of the size of the input array
@@ -78,14 +79,13 @@ int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector
  * Main function
  */
 int main() {
-    int n = 0;
-    std::cin >> n;
-    std::vector<int> A(n+5);
-    for (int i = 0 ; i < n ; i++) {
-        std::cin >> A[i];
-    }
-    std::vector<int> logs = range_queries::computeLogs(n);
-    std::vector<std::vector<int> >  table = range_queries::buildTable(n, A, logs);
-    std::cout << "Minimum of the range [3, 14]: " << range_queries::getMinimum(2, 13, logs, table) << std::endl;
+    int n = 5;
+    std::vector<int> A = {1, 2, 0, 3, 9};
+    std::vector<int> logs = SparseTable::computeLogs(n);
+    std::vector<std::vector<int> >  table = SparseTable::buildTable(n, A, logs);
+    assert(SparseTable::getMinimum(0, 0, logs, table) == 1);
+    assert(SparseTable::getMinimum(0, 4, logs, table) == 0);
+    assert(SparseTable::getMinimum(2, 4, logs, table) == 0);
+    std::cout<<"Tests passed" << std::endl;
     return 0;
 }
