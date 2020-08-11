@@ -76,9 +76,9 @@ typedef node* Iter;
  * @param x value we want to insert to the list
  * @param start first node of the list we want to insert to
  */
-void insert(int x, Iter* start) {
+void insert(int x, Iter& start) {
 	// function statements here
-    node* t = *start;
+    node* t = start;
     node* n = new node;// creates new node
     n->val = x;// sets value(val) as x
     n->next = nullptr;
@@ -89,7 +89,7 @@ void insert(int x, Iter* start) {
         t->next = n;// current last node on the list is made
 	    // to point to the new node
     } else {
-        *start = n;
+        start = n;
     }
 }
 
@@ -100,7 +100,7 @@ void insert(int x, Iter* start) {
  * @param x value we want to remove from the list
  * @param start first node of the list we want to remove from
  */
-void remove(int x, Iter* start) {
+void remove(int x, Iter& start) {
 	// function statements here
     if (start == nullptr) {
         std::cout << "\nLinked List is empty\n";
@@ -142,7 +142,7 @@ void remove(int x, Iter* start) {
  * @param x value to be searched for
  * @param start first node of the list we want to search
  */
-void search(int x, Iter* start) {
+void search(int x, Iter& start) {
 	// function statements here
     node *t = start;
     int found = 0;
@@ -165,7 +165,7 @@ void search(int x, Iter* start) {
  * user
  * @param start first node of the list we want to display
  */
-void show(Iter* start) {
+void show(Iter& start) {
 	// function statements here
     node *t = start;
     while (t != nullptr) {
@@ -180,7 +180,7 @@ void show(Iter* start) {
  * user
  * @param start first node of the list we want to reverse
  */
-void reverse(Iter* start) {
+void reverse(Iter& start) {
 	// function statements here
     node* first = start;
     if (first != nullptr) {
@@ -225,7 +225,7 @@ int main()
             if(data_structures::isDigit(s))
 	   	 	{
 	   	 		x=data_structures::toInt(s);
-            	data_structures::insert(x,&start);
+            	data_structures::insert(x,start);
 	    	}
             else
             {
@@ -238,7 +238,7 @@ int main()
             if(data_structures::isDigit(s))
 	    	{
 	    		x=data_structures::toInt(s);
-            	data_structures::remove(x,&start);
+            	data_structures::remove(x,start);
 	    	}
             else
             {
@@ -251,7 +251,7 @@ int main()
             if(data_structures::isDigit(s))
 	    	{
 	    		x=data_structures::toInt(s);
-            	data_structures::search(x,&start);
+            	data_structures::search(x,start);
 	    	}
             else
             {
@@ -259,13 +259,13 @@ int main()
 			}
             break;
         case 4:
-            data_structures::show(&start);
+            data_structures::show(start);
             std::cout << "\n";
             break;
         case 5:
             std::cout << "The reversed list: \n";
-            data_structures::reverse(&start);
-            data_structures::show(&start);
+            data_structures::reverse(start);
+            data_structures::show(start);
             std::cout << "\n";
             break;
         }
