@@ -86,6 +86,5 @@ int main() {
     assert(SparseTable::getMinimum(0, 0, logs, table) == 1);
     assert(SparseTable::getMinimum(0, 4, logs, table) == 0);
     assert(SparseTable::getMinimum(2, 4, logs, table) == 0);
-    std::cout<<"Tests passed" << std::endl;
     return 0;
 }
