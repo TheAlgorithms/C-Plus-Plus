@@ -42,9 +42,9 @@ struct node
 bool isDigit(const std::string& s)
 {
 	// function statements here
-	for(int i=0;i<s.size();i++)
+	for(char i:s)
     {
-    	if(!isdigit(s[i]))
+    	if(!isdigit(i))
     	{
             return false;
 		}
@@ -180,9 +180,9 @@ void show(Iter& start) {
  * user
  * @param start first node of the list we want to reverse
  */
-void reverse(Iter& start) {
+void reverse(Iter start) {
 	// function statements here
-    node *first = start;
+    node* first = start;
     if (first != nullptr) {
         node *second = first->next;
         while (second != nullptr) {
@@ -270,6 +270,14 @@ int main()
             break;
         }
     } while (choice != 0);
+    
+    // deallocate memory
+    while(start!=nullptr)
+    {
+    	data_structures::node* t=start->next;
+    	delete start;
+    	start = t;
+	}
 
     return 0;
 }
