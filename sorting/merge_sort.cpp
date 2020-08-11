@@ -5,7 +5,7 @@
  *  \brief [Merege Sort Algorithm
  *  (MEREGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
  *
- *  \author [Ayaan Khan](http://github.com/ayaankhan98)
+ 
  *
  *  \details
  *  Merge Sort is an efficient, general purpose, comparison
@@ -13,105 +13,97 @@
  *  Merge Sort is a divide and conquer algorithm
  *
  */
-#include <iostream>
 
-/**
- *
- * The merge() function is used for merging two halves.
- * The merge(arr, l, m, r) is key process that assumes that
- * arr[l..m] and arr[m+1..r] are sorted and merges the two
- * sorted sub-arrays into one.
- *
- * @param arr - array with two halves arr[l...m] and arr[m+1...l]
- * @param l - left index or start index of first half array
- * @param m - right index or end index of first half array
- *
- * (The second array starts form m+1 and goes till l)
- *
- * @param l - end index or right index of second half array
- */
-void merge(int *arr, int l, int m, int r) {
-    int i, j, k;
-    int n1 = m - l + 1;
-    int n2 = r - m;
+#include<iostream>
+using namespace std;
 
-    int *L = new int[n1], *R = new int[n2];
+/* Preprocessor */
+#define get_size(array) (sizeof((array))/sizeof((array[0])))
 
-    for (i = 0; i < n1; i++) L[i] = arr[l + i];
-    for (j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
-
-    i = 0;
-    j = 0;
-    k = l;
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++;
-        } else {
-            arr[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    while (i < n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
-    }
-
-    while (j < n2) {
-        arr[k] = R[j];
-        j++;
-        k++;
-    }
-
-    delete[] L;
-    delete[] R;
-}
-
-/**
+template<class t>
+class sorting {
+	t *list;
+	public:
+		sorting(t *data, int size) {
+			list = data;
+			
+			/* Sorting data using merge sort algorithm */
+			merge(0,size-1);
+		}
+    /**
  * Merge sort is a divide and conquer algorithm, it divides the
  * input array into two halves and calls itself for the two halves
  * and then calls merge() to merge the two halves
  *
- * @param arr - array to be sorted
- * @param l - left index or start index of array
- * @param r - right index or end index of array
+ 
+ * @param low - left index or start index of array
+ * @param high - right index or end index of array
  *
  */
-void mergeSort(int *arr, int l, int r) {
-    if (l < r) {
-        int m = l + (r - l) / 2;
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-        merge(arr, l, m, r);
-    }
-}
 
-/**
- * Utility function used to print the array after
- * sorting
- */
-void show(int *arr, int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-    std::cout << "\n";
-}
+		void merge(int low, int high) {
+			int mid;
+			if(low < high) {
+				mid = (low + high) /2;
+				merge(low, mid);
+				merge(mid + 1, high);
+				merge_sort(low, high, mid);
+			}
+		}
 
-/** Main function */
+		void merge_sort(int low, int high, int mid) {
+			t temp[10000007];
+			int i = low, j, l = low, m = mid + 1;
+			while(l <= mid && m <= high) {
+				if(list[l] <= list[m]) {
+					temp[i] = list[l];
+					l++;
+				}
+				else {
+					temp[i] = list[m];
+					m++;
+				}
+				i++;
+			}
+			if(l > mid) {
+				for(j = m; j <= high; j++) {
+					temp[i] = list[j];
+					i++;
+				}
+			}
+			else {
+				for(j = l; j <= mid; j++) {
+					temp[i] = list[j];
+					i++;
+				}
+			}
+			for(j = low; j <= high; j++)
+				list[j] = temp[j];
+		}
+};
+
 int main() {
-    int size;
-    std::cout << "Enter the number of elements : ";
-    std::cin >> size;
-    int *arr = new int[size];
-    std::cout << "Enter the unsorted elements : ";
-    for (int i = 0; i < size; ++i) {
-        std::cin >> arr[i];
-    }
-    mergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array : ";
-    show(arr, size - 1);
-    delete[] arr;
-    return 0;
+
+	/* Sort integer */
+	
+	int idata[] = {9,5,1,4,0,3,7,6,2,8};
+	sorting<int> isrt(idata, get_size(idata));
+	cout << "\nAfter sort:" << endl;
+	for(int i = 0; i < get_size(idata); i++)
+		cout << idata[i] << endl;
+
+	/* Sort float */
+	float fdata[] = {9.5,5.12,1.32,4.4,0.3,3.4,7.8,6.9,2.7,8.9};
+	sorting<float> fsrt(fdata, get_size(fdata));
+	cout << "\nAfter sort:" << endl;
+	for(int i = 0; i < get_size(fdata); i++)
+		cout << fdata[i] << endl;
+
+	/* Sort string */
+	string sdata[] = {"to","be","add","java","c++","python","sorting","new","search","c"};
+	sorting<string> ssrt(sdata, get_size(sdata));
+	cout << "\nAfter sort:" << endl;
+	for(int i = 0; i < get_size(sdata); i++)
+		cout << sdata[i] << endl;
+
 }
-/** @} */
