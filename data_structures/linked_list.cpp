@@ -103,8 +103,7 @@ Iter remove(int x, const Iter &start) {
     return start;               // return if the list is empty
   } else if (start->val == x) { // check if the first node contains
                                 // the value passed as an argument
-    node *t = start;
-    t = start->next;
+    node *t = start->next;
     return t;
   }
 
@@ -261,6 +260,7 @@ int main() {
   // deallocate memory
   while (start != nullptr) {
     data_structures::node *t = start->next;
+    delete start;
     start = t;
   }
 
