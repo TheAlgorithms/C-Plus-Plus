@@ -225,7 +225,7 @@ int main()
             if(data_structures::isDigit(s))
 	   	 	{
 	   	 		x=data_structures::toInt(s);
-            	data_structures::insert(x,start);
+            	data_structures::insert(x,&start);
 	    	}
             else
             {
