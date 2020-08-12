@@ -61,7 +61,7 @@ bool isDigit(const std::string &s) {
 class link
 {
 	public:
-		explicit link(int v=0, link* s=0)
+		explicit link(int v=0, link* s=nullptr)
 		:val(v),succ(s)
 		{}
 		int val;
@@ -153,7 +153,7 @@ void list::erase(int old_elem)
 		return;
 	}
 	t->succ=t->succ->succ;
-	if(t->succ == 0)
+	if(t->succ == nullptr)
 	{
 		last=t;
 	}
@@ -170,7 +170,7 @@ void list::display()
 		return;
 	}
 	link* t = first;
-	while(t->succ!=0)
+	while(t->succ!=nullptr)
 	{
 		std::cout<<t->succ->val<<"\t";
 		t=t->succ;
