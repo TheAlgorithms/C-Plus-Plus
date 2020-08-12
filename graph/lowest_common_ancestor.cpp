@@ -41,6 +41,11 @@
 #include <cassert>
 
 /**
+ * \namespace graph
+ * \brief Graph algorithms
+ */
+namespace graph {
+/**
  * Class for representing a graph as an adjacency list.
  * Its vertices are indexed 0, 1, ..., N - 1.
  */
@@ -220,6 +225,8 @@ class LowestCommonAncestor {
     }
 };
 
+}  // namespace graph
+
 /**
  * Unit tests
  * @rerturns none
@@ -237,8 +244,8 @@ void tests() {
     std::vector< std::pair<int, int> > edges = {
       {7, 1}, {1, 5}, {1, 3}, {3, 6}, {6, 2}, {2, 9}, {6, 8}, {4, 3}, {0, 4}
     };
-    RootedTree t(edges, 3);
-    LowestCommonAncestor lca(t);
+    graph::RootedTree t(edges, 3);
+    graph::LowestCommonAncestor lca(t);
     assert(lca.lowest_common_ancestor(7, 4) == 3);
     assert(lca.lowest_common_ancestor(9, 6) == 6);
     assert(lca.lowest_common_ancestor(0, 0) == 0);
