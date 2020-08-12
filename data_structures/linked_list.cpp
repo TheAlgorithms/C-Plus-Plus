@@ -47,8 +47,8 @@ int toInt(const std::string &s) {
  */
 bool isDigit(const std::string &s) {
   // function statements here
-  for (int i=0;i<s.size();i++) {
-    if (!isdigit(s[i])) {
+  for (char i:s) {
+    if (!isdigit(i)) {
       return false;
     }
   }
@@ -61,8 +61,8 @@ bool isDigit(const std::string &s) {
 class link
 {
 	public:
-		link(int v=0, link* succ=0)
-		:val(v),succ(0)
+		explicit link(int v=0, link* s=0)
+		:val(v),succ(s)
 		{}
 		int val;
 		link* succ;
@@ -111,7 +111,7 @@ bool list::isEmpty()
 
 /**
  * function adds new element to the end of the list
- * @param element to be added to the list
+ * @param new_elem to be added to the list
  */
 void list::push_back(int new_elem)
 {
@@ -122,7 +122,7 @@ void list::push_back(int new_elem)
 
 /**
  * function adds new element to the beginning of the list
- * @param element to be added to the list
+ * @param new_elem to be added to the list
  */
 void list::push_front(int new_elem)
 {
@@ -133,7 +133,7 @@ void list::push_front(int new_elem)
 
 /**
  * function erases old element from the list
- * @param element to be erased from the list
+ * @param old_elem to be erased from the list
  */
 void list::erase(int old_elem)
 {
@@ -153,7 +153,10 @@ void list::erase(int old_elem)
 		return;
 	}
 	t->succ=t->succ->succ;
-	if(t->succ == 0)last=t;
+	if(t->succ == 0)
+	{
+		last=t;
+	}
 }
 
 /**
