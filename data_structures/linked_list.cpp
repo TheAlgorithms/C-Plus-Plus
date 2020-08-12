@@ -7,8 +7,8 @@
  * values, which can be added, removed and displayed.
  * ### Algorithm
  * Values can be added by iterating to the end of a list(by following
- * the pointers) starting from the first node. Whichever node points to null
- * is considered the last node and is pointed to the new value.
+ * the pointers) starting from the first link. Whichever link points to null
+ * is considered the last link and is pointed to the new value.
  *
  * Values can be removed by also iterating through the list. When the node
  * containing the value is found, the node pointing to the current node is made
@@ -22,31 +22,7 @@
  * @namespace data_structures
  * @brief Data Structures algorithms
  */
-namespace data_structures {
-/**
- * stores value of a node and address of the next node
- */
-struct node {
-  int val;
-  node *next;
-};
-
-/**
- * This function checks if the string passed consists
- * of only digits.
- * @param s To be checked if s contains only integers
- * @returns true if there are only only digits present in the string
- * @returns false if any other character is found
- */
-bool isDigit(const std::string &s) {
-  // function statements here
-  for (char i : s) {
-    if (!isdigit(i)) {
-      return false;
-    }
-  }
-  return true;
-}
+namespace data_structures{
 
 /**
  * This function changes the value_type of its argument
@@ -62,212 +38,235 @@ int toInt(const std::string &s) {
   return number;
 }
 
-typedef node *Iter;
 /**
- * This function creates a new node using the new value
- * passed as its argument and inserts it to the end of the
- * list.
- * @param x value we want to insert to the list
- * @param start first node of the list we want to insert to
+ * This function checks if the string passed consists
+ * of only digits.
+ * @param s To be checked if s contains only integers
+ * @returns true if there are only only digits present in the string
+ * @returns false if any other character is found
  */
-Iter insert(int x, const Iter &start) {
+bool isDigit(const std::string &s) {
   // function statements here
-  node *t = start;
-  node *n = new node; // creates new node
-  n->val = x;         // sets value(val) as x
-  n->next = nullptr;
-  if (t != nullptr) {
-    while (t->next != nullptr) {
-      t = t->next;
-    }            // iterate to the end of the list
-    t->next = n; // current last node on the list is made
-                 // to point to the new node
-  } else {
-    t = n;
-    return t;
-  }
-  return start;
-}
-
-/**
- * This function removes an existing node from the current
- * list containing the value passed as an argument to the
- * function.
- * @param x value we want to remove from the list
- * @param start first node of the list we want to remove from
- */
-Iter remove(int x, const Iter &start) {
-  // function statements here
-  if (start == nullptr) {
-    std::cout << "\nLinked List is empty\n";
-    return start;               // return if the list is empty
-  } else if (start->val == x) { // check if the first node contains
-                                // the value passed as an argument
-    node *t = start->next;
-    return t;
-  }
-
-  node *temp = start, *parent = start;
-  // create iterators to the first and the next node
-  // and initialize both iterators with the first node
-
-  // while the node pointed to by parent iterator
-  // points at another node and the temp iterator does not have the
-  // value x passed as the argument, move both iterators forward
-  // by one node and repeat
-  while (temp != nullptr && temp->val != x) {
-    parent = temp;
-    temp = temp->next; // initially, only the temp iterator is moved forward
-  }
-
-  // Tell user if value not found
-  if (temp == nullptr) {
-    std::cout << std::endl << x << " not found in list\n";
-    return start;
-  }
-  // else point the node pointed to by the parent iterator to the
-  // node after the temp iterator
-  parent->next = temp->next;
-  return start;
-}
-
-/**
- * This function searches for the value passed as an argument
- * in the linked list.
- * @param x value to be searched for
- * @param start first node of the list we want to search
- */
-void search(int x, const Iter &start) {
-  // function statements here
-  node *t = start;
-  int found = 0;
-  while (t != nullptr) {
-    if (t->val == x) {
-      std::cout << "\nFound";
-      found = 1;
-      break;
+  for (int i=0;i<s.size();i++) {
+    if (!isdigit(s[i])) {
+      return false;
     }
-    t = t->next;
   }
-  if (found == 0) {
-    std::cout << "\nNot Found";
-  }
+  return true;
 }
 
 /**
- * This function displays all the values that are currently
- * in the list in the order in which they were inputed by the
- * user
- * @param start first node of the list we want to display
+ * A link class containing a value and pointer to another link
  */
-void show(const Iter &start) {
-  // function statements here
-  node *t = start;
-  while (t != nullptr) {
-    std::cout << t->val << "\t";
-    t = t->next;
-  }
+class link
+{
+	public:
+		link(int v=0, link* succ=0)
+		:val(v),succ(0)
+		{}
+		int val;
+		link* succ;
+};
+
+/**
+ * A list class containing a sequence of links
+ */
+class list
+{
+	public:
+		list()
+		:first(new link),last(first)
+		{}
+		
+		bool isEmpty();
+		
+		void push_back(int new_elem);
+		void push_front(int new_elem);
+		void erase(int old_elem);
+		void display();
+		void search(int find_elem);
+		void reverse();
+		
+	private:
+		link* first;//link before the actual first element
+		link* last;
+};
+
+/**
+ * function checks if list is empty
+ * @returns true if list is empty
+ * @returns false if list is not empty
+ */
+bool list::isEmpty()
+{
+	if(first==last)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 /**
- * This function displays all the values that are currently
- * in the list in a reverse order to which they were inputed by the
- * user
- * @param start first node of the list we want to reverse
+ * function adds new element to the end of the list
+ * @param element to be added to the list
  */
-Iter reverse(const Iter &start) {
-  // function statements here
-  node *first = start;
-  if (first != nullptr) {
-    node *second = first->next;
-    while (second != nullptr) {
-      node *tem = second->next;
-      second->next = first;
-      first = second;
-      second = tem;
-    }
-    start->next = nullptr;
-    return first;
-  } else {
-    std::cout << "\nEmpty list";
-    return start;
-  }
+void list::push_back(int new_elem)
+{
+	link* new_link = new link(new_elem);
+	last->succ = new_link;
+	last = last->succ;
 }
-} // namespace data_structures
+
+/**
+ * function adds new element to the beginning of the list
+ * @param element to be added to the list
+ */
+void list::push_front(int new_elem)
+{
+	link* new_link = new link(new_elem);
+	new_link->succ = first->succ;
+	first->succ = new_link;
+}
+
+/**
+ * function erases old element from the list
+ * @param element to be erased from the list
+ */
+void list::erase(int old_elem)
+{
+	if(isEmpty())
+	{
+		std::cout<<"List is Empty!";
+		return;
+	}
+	link* t = first;
+	while(t!=last && t->succ->val!=old_elem)
+	{
+		t=t->succ;
+	}
+	if(t==last)
+	{
+		std::cout<<"Element not found\n";
+		return;
+	}
+	t->succ=t->succ->succ;
+	if(t->succ == 0)last=t;
+}
+
+/**
+ * function displays all the elements in the list
+ */
+void list::display()
+{
+	if(isEmpty())
+	{
+		std::cout<<"List is Empty!";
+		return;
+	}
+	link* t = first;
+	while(t->succ!=0)
+	{
+		std::cout<<t->succ->val<<"\t";
+		t=t->succ;
+	}
+}
+
+/**
+ * function searchs for @param find_elem in the list
+ */
+void list::search(int find_elem)
+{
+	if(isEmpty())
+	{
+		std::cout<<"List is Empty!";
+		return;
+	}
+	link* t = first;
+	while(t!=last && t->succ->val!=find_elem)
+	{
+		t=t->succ;
+	}
+	if(t==last)
+	{
+		std::cout<<"Element not found\n";
+		return;
+	}
+	std::cout<<"Element was found\n";
+}
+}// namespace data_structures
 
 /**
  * Main function
  */
-int main() {
-  data_structures::node *start = nullptr;
-  int choice = 0;
-  int x = 0;
-  std::string s;
-  while(true) {
-    std::cout << "\n1. Insert";
-    std::cout << "\n2. Delete";
-    std::cout << "\n3. Search";
-    std::cout << "\n4. Print";
-    std::cout << "\n5. Reverse";
-    std::cout << "\n0. Exit";
-    std::cout << "\n\nEnter you choice : ";
-    std::cin >> choice;
-    switch (choice) {
-    case 1:
-      std::cout << "\nEnter the element to be inserted : ";
-      std::cin >> s;
+int main()
+{
+	data_structures::list l;
+	int choice = 0;
+  	int x = 0;
+  	std::string s;
+  	do
+  	{
+    	std::cout << "\n1. Insert";
+    	std::cout << "\n2. Delete";
+    	std::cout << "\n3. Search";
+    	std::cout << "\n4. Print";
+    	std::cout << "\n0. Exit";
+    	std::cout << "\n\nEnter you choice : ";
+    	std::cin >> choice;
+    	switch (choice) 
+		{
+    		case 1:
+      			std::cout << "\nEnter the element to be inserted : ";
+      			std::cin >> s;
 
-      if (data_structures::isDigit(s)) {
-        x = data_structures::toInt(s);
-        start = data_structures::insert(x, start);
-      } else {
-        std::cout << "Wrong Input!\n";
-      }
-      break;
-    case 2:
-      std::cout << "\nEnter the element to be removed : ";
-      std::cin >> s;
-      if (data_structures::isDigit(s)) {
-        x = data_structures::toInt(s);
-        start = data_structures::remove(x, start);
-      } else {
-        std::cout << "Wrong Input!\n";
-      }
-      break;
-    case 3:
-      std::cout << "\nEnter the element to be searched : ";
-      std::cin >> s;
-      if (data_structures::isDigit(s)) {
-        x = data_structures::toInt(s);
-        data_structures::search(x, start);
-      } else {
-        std::cout << "Wrong Input!\n";
-      }
-      break;
-    case 4:
-      data_structures::show(start);
-      std::cout << "\n";
-      break;
-    case 5:
-      std::cout << "The reversed list: \n";
-      start = data_structures::reverse(start);
-      data_structures::show(start);
-      std::cout << "\n";
-      break;
-    case 0:
-    {
-    // deallocate memory
-      while (start != nullptr) {
-      data_structures::node *t = start->next;
-      delete start;
-      start = t;		
-	}
+      			if (data_structures::isDigit(s)) 
+				{
+        			x = data_structures::toInt(s);
+       		 		l.push_back(x);
+      			} 
+				else 
+				{
+        			std::cout << "Wrong Input!\n";
+      			}
+      			break;
+    		case 2:
+     			std::cout << "\nEnter the element to be removed : ";
+      			std::cin >> s;
+      			if (data_structures::isDigit(s)) 
+				{
+       		 		x = data_structures::toInt(s);
+        			l.erase(x);
+      			} 
+				else 
+				{
+        			std::cout << "Wrong Input!\n";
+     		 	}
+      			break;
+    		case 3:
+      			std::cout << "\nEnter the element to be searched : ";
+      			std::cin >> s;
+      			if (data_structures::isDigit(s)) 
+				{
+        			x = data_structures::toInt(s);
+        			l.search(x);
+      			} 
+				else 
+				{
+        			std::cout << "Wrong Input!\n";
+      			}
+      			break;
+      		case 4:
+      			l.display();
+      			std::cout<<"\n";
+      			break;
+      		default:
+    			std::cout<<"Invalid Input\n"<<std::endl;
+    			break;
+		}
+	} while(choice != 0);
 	return 0;
-	}
-      
-    default:
-    	std::cout<<"Invalid Input\n"<<std::endl;
-    }
-  } 
-  return 0;
 }
+
