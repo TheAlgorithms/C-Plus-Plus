@@ -1,5 +1,5 @@
 /**
- * @file n_queens.cpp
+ * @file
  * @brief [Eight Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
  * puzzle
  *
