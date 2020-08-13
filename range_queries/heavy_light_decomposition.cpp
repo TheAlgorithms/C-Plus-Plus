@@ -20,7 +20,6 @@
 #include<cassert>
 #include<algorithm>
 #include<numeric>
-using namespace std;
 
 /**
  * Function Documentation: 
@@ -44,10 +43,11 @@ using namespace std;
  * 1. Create an instance of HLD<X> object (obj), with the required data type.
  * 2. Read in the edge/parent information and update it with obj.add_edge().
  * Note: The edges addes must be 0 indexed.
- * 3. Call obj.init() to populate the required information for supporting operations.
- * 4. Call obj.update(node, new_val), to update the value at index 'node' to the new value.
+ * 3. Create a vector with initial node values, and call set_node_val() with it.
+ * 4. Call obj.init() to populate the required information for supporting operations.
+ * 5. Call obj.update(node, new_val), to update the value at index 'node' to the new value.
  * Note: node must be 0 indexed
- * 5. Call obj.query(a, b) to get the (sum) of node values in the simple path from a to b.
+ * 6. Call obj.query(a, b) to get the (sum) of node values in the simple path from a to b.
  * Note: a and b, must be 0 indexed.
  *
  * Sample I/O at the bottom.
@@ -61,12 +61,12 @@ struct Tree {
 	 * An instance can only be created with the number of nodes
 	*/
 protected:
-	vector<list<int>> t_adj;
+	std::vector<std::list<int>> t_adj;
 	const int t_nodes, t_maxlift;
-	vector<vector<int>> t_par;
-	vector<int> t_depth, t_size;
+	std::vector<std::vector<int>> t_par;
+	std::vector<int> t_depth, t_size;
 	int t_root;
- 	vector<X> t_val;
+	std::vector<X> t_val;
 
 	/* Defaults:
 	 * t_node indexing are zero based
@@ -105,7 +105,7 @@ public:
 		/* Initialize and resize all the vectors */
 		t_root = 0; /* Default */
 		t_adj.resize(t_nodes);
-		t_par.assign(t_nodes, vector<int>(t_maxlift, -1));
+		t_par.assign(t_nodes, std::vector<int>(t_maxlift, -1));
 		t_depth.assign(t_nodes, 0);
 		t_size.assign(t_nodes, 1);
 		t_val.resize(t_nodes);
@@ -120,7 +120,7 @@ public:
 		t_root = new_root;
 	}
 
-	void set_node_val(vector<X> node_val) {
+	void set_node_val(std::vector<X> node_val) {
 		t_val = node_val;
 	}
 
@@ -190,7 +190,7 @@ protected:
 	 * and can only be acced thought the methods,
 	 * in the derived class.
 	*/
-	vector<X> s_tree;
+	std::vector<X> s_tree;
 	int s_size;
 	X sret_init = 0;
 	X combine(X lhs, X rhs) {
@@ -229,7 +229,7 @@ template<typename X>
 struct HLD : public Tree<X>, public SG<X> {
 private:
 	int label;
-	vector<int> h_label, h_heavychlid, h_parent;
+	std::vector<int> h_label, h_heavychlid, h_parent;
 
 	/* Utility functions */
 	void dfs_hc(int u, int p = -1) {
@@ -270,7 +270,7 @@ private:
 
 	X chain_query(int a, int b) {
 		X ret = SG<X>::sret_init;
-		if(Tree<X>::t_depth[a] < Tree<X>::t_depth[b]) swap(a, b);
+		if(Tree<X>::t_depth[a] < Tree<X>::t_depth[b]) std::swap(a, b);
 		while(Tree<X>::t_depth[a] >= Tree<X>::t_depth[b]) {
 			int l = h_label[h_parent[a]];
 			int r = h_label[a];
@@ -334,17 +334,17 @@ public:
 };
 
 void test_1() {
-	cout << "Test 1:\n";
+	std::cout << "Test 1:\n";
 	/* Test details */
 	int n = 5;
-	vector<long long> node_values = {4, 2, 5, 2, 1};
-	vector<vector<int>> edges = {
+	std::vector<long long> node_values = {4, 2, 5, 2, 1};
+	std::vector<std::vector<int>> edges = {
 		{1, 2},
 		{1, 3},
 		{3, 4},
 		{3, 5}
 	};
-	vector<vector<int>> queries = {
+	std::vector<std::vector<int>> queries = {
 		{2, 4},
 		{1, 3, 2},
 		{2, 4},
@@ -365,7 +365,7 @@ void test_1() {
 		}
 		else if(type == 2) {
 			int p = q[1];
-			cout << hld.query(0, p - 1) << endl;
+			std::cout << hld.query(0, p - 1) << std::endl;
 		}
 		else {
 			continue;
@@ -374,11 +374,11 @@ void test_1() {
 }
 
 void test_2() {
-	cout << "Test 2:\n";
+	std::cout << "Test 2:\n";
 	/* Test details (Bamboo) */
 	int n = 10;
-	vector<long long> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
-	vector<vector<int>> edges = {
+	std::vector<long long> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
+	std::vector<std::vector<int>> edges = {
 		{10, 5},
 		{6, 2},
 		{10, 7},
@@ -389,7 +389,7 @@ void test_2() {
 		{6, 4},
 		{8, 7}
 	};
-	vector<vector<int>> queries = {
+	std::vector<std::vector<int>> queries = {
 		{2, 10},
 		{2, 6},
 		{1, 3, 4},
@@ -417,7 +417,7 @@ void test_2() {
 		}
 		else if(type == 2) {
 			int p = q[1];
-			cout << hld.query(0, p - 1) << endl;
+			std::cout << hld.query(0, p - 1) << std::endl;
 		}
 		else {
 			continue;
