@@ -37,17 +37,19 @@
  * the coressponding operators must be overloaded.
  *
  * An HLD object can only be created with a constant number of nodes, and
- * it cannot be changed later. Creaty an empty instance is not supported.
+ * it cannot be changed later. Creating an empty instance is not supported.
  *
  * To start answering updates and queries,
- * 1. Create an instance of HLD<X> object (obj), with the required data type.
+ * 1. Create an instance of HLD<X> object (obj), with the required data type X.
  * 2. Read in the edge/parent information and update it with obj.add_edge().
  * Note: The edges addes must be 0 indexed.
- * 3. Create a vector with initial node values, and call set_node_val() with it.
+ * 3. Create a vector with initial node values, and call set_node_val() with the vector as an argument.
  * 4. Call obj.init() to populate the required information for supporting operations.
- * 5. Call obj.update(node, new_val), to update the value at index 'node' to the new value.
+ * 5. Call obj.set_sret() with the value that you'd like to initialize a query return with.
+ * Deafaul: sret_init = 0, supports sum, XOR, OR queries.
+ * 6. Call obj.update(node, new_val), to update the value at index 'node' to the new value.
  * Note: node must be 0 indexed
- * 6. Call obj.query(a, b) to get the (sum) of node values in the simple path from a to b.
+ * 7. Call obj.query(a, b) to get the (sum) of node values in the simple path from a to b.
  * Note: a and b, must be 0 indexed.
  *
  * Sample I/O at the bottom.
