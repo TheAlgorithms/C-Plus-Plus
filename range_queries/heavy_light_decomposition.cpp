@@ -1,4 +1,4 @@
-/*
+/**
  * @file
  * @Simple Heavy-Light Decomposition implementation
  * Author: Aniruthan R
@@ -58,7 +58,7 @@
 /* A Basic Tree, which supports binary lifting */
 template<typename X>
 class Tree {
-	/* 
+	/**
 	 * Deleting the default constructor
 	 * An instance can only be created with the number of nodes
 	*/
@@ -71,7 +71,8 @@ private:
 	std::vector<X> t_val;
 	template<typename T> friend class HLD;
 
-	/* Defaults:
+	/**
+	 * Defaults:
 	 * t_node indexing are zero based
 	 * t_root is 0
 	 * depth of root_node is 0
@@ -224,7 +225,7 @@ private:
 		return combine(lhs, rhs);
 	}
 
-	void set_sret_init(int new_sret_init) {
+	void set_sret_init(const X& new_sret_init) {
 		sret_init = new_sret_init;
 	}
 };
@@ -363,7 +364,7 @@ void test_1() {
 	}
 	hld.init();
 	for(const auto& q : queries) {
-		int type = q[0];
+		const int type = q[0];
 		if(type == 1) {
 			int p = q[1], x = q[2];
 			hld.update(p - 1, x);
@@ -415,7 +416,7 @@ void test_2() {
 	}
 	hld.init();
 	for(const auto& q : queries) {
-		int type = q[0];
+		const int type = q[0];
 		if(type == 1) {
 			int p = q[1], x = q[2];
 			hld.update(p - 1, x);
