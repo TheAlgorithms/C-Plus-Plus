@@ -11,19 +11,17 @@
  *	(https://en.wikipedia.org/wiki/Bipartite_graph)
  *	The given Algorithm will determine whether the given graph is bipartite or not
  *
- *	<pre>
+ *
  * 	Example - Here is a graph with 5 vertices and is bipartite
  *
  *		1   4
  *	   / \ / \
  *	  2   3   5
  *
- *	</pre>
- *		
- *	@author [Akshat Vaya](https://github.com/AkVaya)
  *
  *	
- *
+ *	@author [Akshat Vaya](https://github.com/AkVaya)
+ *		
  */
 #include <iostream>
 #include <vector>
@@ -47,11 +45,7 @@ class graph {
     /**
      * @brief Constructor that initializes the graph on creation
      */
-    graph(int size){
-    	n = size;
-    	adj.resize(n);
-    	side.resize(n,-1);
-    }
+    inline graph(int size) : adj(size, vector<int>()) { n=size; side.resize(size,-1); }
 
     void addEdge(int, int);     /// function to add edges to our graph
 
@@ -61,12 +55,12 @@ class graph {
 /**
  * @brief Function that add an edge between two nodes or vertices of graph
  *
- * @param u a node or vertex of graph
- * @param v a node or vertex of graph
+ * @param u is a node or vertex of graph
+ * @param v is a node or vertex of graph
  */
 void graph::addEdge(int u, int v) {
-    adj[u - 1].push_back(v - 1);
-    adj[v - 1].push_back(u - 1);
+    adj[u-1].push_back(v-1);
+    adj[v-1].push_back(u-1);
 }
 /**
  *	@brief function that checks whether the graph is bipartite or not
