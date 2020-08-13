@@ -103,7 +103,7 @@ bool graph::is_bipartite(){
 	return check;
 }
 /**
- * main funtion
+ * Main funtion
  */
 int main(){
 	graph G1(5);	/// creating graph G1 with 5 vertices
