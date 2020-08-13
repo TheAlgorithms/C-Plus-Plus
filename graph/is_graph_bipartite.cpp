@@ -2,13 +2,14 @@
  *  @file is_graph_bipartite
  *
  *	@brief Algorithm to check whether a graph is bipartite
+ *	(https://en.wikipedia.org/wiki/Bipartite_graph)
  *
  *	@details
  *	A graph is a collection of nodes also called vertices and these vertices
  *	are connected by edges.A bipartite graph is a graph whose vertices can be
  * 	divided into two disjoint and independent sets U and V such that every edge 
  *	connects a vertex in U to one in V. 	
- *	(https://en.wikipedia.org/wiki/Bipartite_graph)
+ *	
  *	The given Algorithm will determine whether the given graph is bipartite or not
  *
  *
@@ -32,9 +33,6 @@
 #include <vector>
 #include <queue>
 
-using std::vector;
-using std::queue;
-
 const int nax = 5e5 + 1;
 /**
  * Class for representing graph as an adjacency list.
@@ -43,9 +41,9 @@ class graph {
  	private: 
  		int n;						/// size of the graph
 
-    	vector<vector <int> > adj;	/// adj stores the graph as an adjacency list
+    	std::vector<std::vector <int> > adj;	/// adj stores the graph as an adjacency list
 
-    	vector<int> side;			///stores the side of the vertex
+    	std::vector<int> side;			///stores the side of the vertex
 
  	public:
     /**
@@ -74,12 +72,14 @@ void graph::addEdge(int u, int v) {
 }
 /**
  *	@brief function that checks whether the graph is bipartite or not
+ *	the function returns true if the graph is a bipartite graph
+ *	the function returns false if the graph is not a bipartite graph
  */
 bool graph::is_bipartite(){
 	n = adj.size();
 	side.resize(n,-1);
 	bool check = true;
-	queue<int> q;
+	std::queue<int> q;
 	for (int current_edge = 0; current_edge < n; ++current_edge)
 	{
 		if(side[current_edge] == -1){
@@ -103,9 +103,9 @@ bool graph::is_bipartite(){
 	return check;
 }
 /**
- * Main funtion
+ * Function to test the above algorithm
  */
-int main(){
+void test(){
 	graph G1(5);	/// creating graph G1 with 5 vertices
 	/// adding edges to the graphs as per the illustrated example
 	G1.addEdge(1,2);
@@ -118,6 +118,7 @@ int main(){
 	G2.addEdge(1,2);
 	G2.addEdge(1,3);
 	G2.addEdge(2,3);
+
 	/// checking whether the graphs are bipartite or not
 	if(G1.is_bipartite()){
 		std::cout<<"The given graph G1 is a bipartite graph\n";
@@ -131,5 +132,11 @@ int main(){
 	else{
 		std::cout<<"The given graph G2 is not a bipartite graph\n";
 	}
+}
+/**
+ * Main function
+ */
+int main(){
+	test();  ///Testing
 	return 0;
 }
