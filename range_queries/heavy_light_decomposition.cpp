@@ -55,6 +55,7 @@
 
 /**
  * A Basic Tree, which supports binary lifting
+ * @template, the data type of the values stored in the tree nodes
 */
 template<typename X>
 class Tree {
@@ -226,6 +227,7 @@ public:
 
 /** 
  * Segment Tree, to store heavy chains
+ * @template, the data type of the values stored in the tree nodes
 */
 template<typename X>
 class SG {
@@ -300,6 +302,7 @@ private:
 
 /** 
  * The Heavy-Light Decomposition class
+ * @template, the data type of the values stored in the tree nodes
 */
 template<typename X>
 class HLD : public Tree<X>, public SG<X> {
