@@ -55,18 +55,19 @@
 
 /* A Basic Tree, which supports binary lifting */
 template<typename X>
-struct Tree {
+class Tree {
 	/* 
 	 * Deleting the default constructor
 	 * An instance can only be created with the number of nodes
 	*/
-protected:
+private:
 	std::vector<std::list<int>> t_adj;
 	const int t_nodes, t_maxlift;
 	std::vector<std::vector<int>> t_par;
 	std::vector<int> t_depth, t_size;
 	int t_root;
 	std::vector<X> t_val;
+	template<typename T> friend class HLD;
 
 	/* Defaults:
 	 * t_node indexing are zero based
@@ -177,21 +178,23 @@ public:
 
 /* Segment Tree, to store heavy chains */
 template<typename X>
-struct SG {
-public:
+class SG {
+private:
 	/* Change the sret_init, based on requirement:
 	 * Sum Query: 0 (Default)
 	 * XOR Query: 0 (Default)
 	 * Min Query: Infinity 
 	 * Max Query: -Infinity
 	*/
-protected:
-	/* Everything here is protected,
+
+	/* Everything here is private,
 	 * and can only be acced thought the methods,
-	 * in the derived class.
+	 * in the derived class (HLD).
 	*/
+
 	std::vector<X> s_tree;
 	int s_size;
+	template<typename T> friend class HLD;
 	X sret_init = 0;
 	X combine(X lhs, X rhs) {
 		return lhs + rhs;
@@ -226,7 +229,7 @@ protected:
 
 /* The Heavy-Light Decomposition class */
 template<typename X>
-struct HLD : public Tree<X>, public SG<X> {
+class HLD : public Tree<X>, public SG<X> {
 private:
 	int label;
 	std::vector<int> h_label, h_heavychlid, h_parent;
@@ -337,7 +340,7 @@ void test_1() {
 	std::cout << "Test 1:\n";
 	/* Test details */
 	int n = 5;
-	std::vector<long long> node_values = {4, 2, 5, 2, 1};
+	std::vector<int64_t> node_values = {4, 2, 5, 2, 1};
 	std::vector<std::vector<int>> edges = {
 		{1, 2},
 		{1, 3},
@@ -350,7 +353,7 @@ void test_1() {
 		{2, 4},
 	};
 	/* ------------ */
-	HLD<long long> hld(n);
+	HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
@@ -377,7 +380,7 @@ void test_2() {
 	std::cout << "Test 2:\n";
 	/* Test details (Bamboo) */
 	int n = 10;
-	std::vector<long long> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
+	std::vector<int64_t> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
 	std::vector<std::vector<int>> edges = {
 		{10, 5},
 		{6, 2},
@@ -402,7 +405,7 @@ void test_2() {
 		{1, 2, 7}
 	};
 	/* ------------ */
-	HLD<long long> hld(n);
+	HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
