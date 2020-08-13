@@ -140,11 +140,11 @@ public:
 	*/
 
 	/* in place lift */
-	void lift(int& p, int dist) {
+	void lift(int* const p, int dist) {
 		for(int k = 0; k < t_maxlift; k++) {
-			if(p == -1) return;
+			if(*p == -1) return;
 			if(dist & 1) {
-				p = t_par[p][k];
+				*p = t_par[*p][k];
 			}
 			dist >>= 1;
 		}
@@ -152,7 +152,7 @@ public:
 	
 	/* returns the kth ancestor */
 	int kth_ancestor(int p, const int& dist) {
-		lift(p, dist);
+		lift(&p, dist);
 		return p;
 	}
 
@@ -160,10 +160,10 @@ public:
 	int lca(int a, int b) {
 		assert(a >= 0 and b >= 0 and a < t_nodes and b < t_nodes);
 		if(t_depth[a] > t_depth[b]) {
-			lift(a, t_depth[a] - t_depth[b]);
+			lift(&a, t_depth[a] - t_depth[b]);
 		}
 		if(t_depth[b] > t_depth[a]) {
-			lift(b, t_depth[b] - t_depth[a]);
+			lift(&b, t_depth[b] - t_depth[a]);
 		}
 		if(a == b) return a;
 		for(int k = 0; k < t_maxlift; k++) {
