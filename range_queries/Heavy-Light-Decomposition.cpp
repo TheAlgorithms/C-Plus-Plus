@@ -1,9 +1,14 @@
-
-/** Author: Aniruthan R
+/*
+ * @file
+ * @Simple Heavy-Light Decomposition implementation
+ * Author: Aniruthan R
  * @email: aniruth11052000@gmail.com
  * @CodeChef: aneee004
  * @CodeForces: aneee
+ *
+ * TODO: Support edge weight quereis, by storing the edge weight value in it's child
  * 
+ * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
 */
 
 #include<iostream>
@@ -17,9 +22,9 @@
 #include<numeric>
 using namespace std;
 
-/* ----------------------------------README -------------------------------------- */
-
-/* Heavy-Light Decomposition is a technique on trees, that supports the following:
+/**
+ * Function Documentation: 
+ * Heavy-Light Decomposition is a technique on trees, that supports the following:
  * 1: Update node s, with a value v
  * 2: Return the (sum) of all node values on the simple path from a to b
  * (sum) can also be replced with XOR, OR, AND, min, or max
@@ -46,7 +51,7 @@ using namespace std;
  * Note: a and b, must be 0 indexed.
  *
  * Sample I/O at the bottom.
- * */
+ */
 
 /* A Basic Tree, which supports binary lifting */
 template<typename X>
@@ -209,6 +214,7 @@ protected:
 template<typename X>
 struct HLD : public Tree<X>, public SG<X> {
 private:
+	int label;
 	vector<int> h_label, h_heavychlid, h_parent;
 
 	/* Utility functions */
@@ -235,7 +241,6 @@ private:
 	}
 
 	void dfs_labels(int u, int p = -1) {
-		static int label = 0;
 		h_label[u] = label++;
 		if(h_heavychlid[u] != -1) dfs_labels(h_heavychlid[u], u);
 		for(const int& v : Tree<X>::t_adj[u]) if(v^p and v^h_heavychlid[u]) {
@@ -272,6 +277,7 @@ public:
 		Tree<X>::init();
 
 		/* Fill the heavy child, greatest parent, and labels */
+		label = 0;
 		dfs_hc(Tree<X>::t_root);
 		dfs_par(Tree<X>::t_root);
 		dfs_labels(Tree<X>::t_root);
@@ -306,59 +312,111 @@ public:
 	}
 };
 
-int main() {
-	int n, Q;
-	cin >> n >> Q;
+void test_1() {
+	cout << "Test 1:\n";
+	/* Test details */
+	int n = 5;
+	vector<int> node_values = {4, 2, 5, 2, 1};
+	vector<vector<int>> edges = {
+		{1, 2},
+		{1, 3},
+		{3, 4},
+		{3, 5}
+	};
+	vector<vector<int>> queries = {
+		{2, 4},
+		{1, 3, 2},
+		{2, 4},
+	};
+	/* ------------ */
 	HLD<long long> hld(n);
-	for(int i = 0; i < n; i++) cin >> hld.t_val[i];
-	for(int i = 1, u, v; i < n; i++) {
-		cin >> u >> v;
+	for(int i = 0; i < n; i++) hld.t_val[i] = node_values[i];
+	for(int i = 0; i < n - 1; i++) {
+		int u = edges[i][0], v = edges[i][1];
 		hld.add_edge(u-1, v-1);
 	}
 	hld.init();
-	while(Q--) {
-		int t;
-		cin >> t;
-		if(t == 1) {
-			int p, x;
-			cin >> p >> x;
+	for(const auto& q : queries) {
+		int type = q[0];
+		if(type == 1) {
+			int p = q[1], x = q[2];
 			hld.update(p - 1, x);
 		}
-		else {
-			int p;
-			cin >> p;
+		else if(type == 2) {
+			int p = q[1];
 			cout << hld.query(0, p - 1) << endl;
+		}
+		else {
+			continue;
 		}
 	}
 }
-/*
- * Sample Test Case:
-10 10
-1 8 6 8 6 2 9 2 3 2
-10 5
-6 2
-10 7
-5 2
-3 9
-8 3
-1 4
-6 4
-8 7
-2 10
-2 6
-1 3 4
-2 9
-1 5 3
-1 7 8
-2 4
-2 8
-1 1 4
-1 2 7
 
- * Sample Output:
-27
-11
-45
-9
-34
+void test_2() {
+	cout << "Test 2:\n";
+	/* Test details (Bamboo) */
+	int n = 10;
+	vector<int> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
+	vector<vector<int>> edges = {
+		{10, 5},
+		{6, 2},
+		{10, 7},
+		{5, 2},
+		{3, 9},
+		{8, 3},
+		{1, 4},
+		{6, 4},
+		{8, 7}
+	};
+	vector<vector<int>> queries = {
+		{2, 10},
+		{2, 6},
+		{1, 3, 4},
+		{2, 9},
+		{1, 5, 3},
+		{1, 7, 8},
+		{2, 4},
+		{2, 8},
+		{1, 1, 4},
+		{1, 2, 7}
+	};
+	/* ------------ */
+	HLD<long long> hld(n);
+	for(int i = 0; i < n; i++) hld.t_val[i] = node_values[i];
+	for(int i = 0; i < n - 1; i++) {
+		int u = edges[i][0], v = edges[i][1];
+		hld.add_edge(u-1, v-1);
+	}
+	hld.init();
+	for(const auto& q : queries) {
+		int type = q[0];
+		if(type == 1) {
+			int p = q[1], x = q[2];
+			hld.update(p - 1, x);
+		}
+		else if(type == 2) {
+			int p = q[1];
+			cout << hld.query(0, p - 1) << endl;
+		}
+		else {
+			continue;
+		}
+	}
+}
+int main() {
+	test_1();
+	test_2();
+	return 0;
+}
+/*
+ * Sample Output 1:
+ * 11
+ * 8
+ *
+ * Sample Output 2:
+ * 27
+ * 11
+ * 45
+ * 9
+ * 34
 */
