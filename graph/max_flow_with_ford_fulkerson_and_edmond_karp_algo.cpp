@@ -16,16 +16,14 @@
 // std::max capacity of node in graph
 const int MAXN = 505;
 class Graph {
-    int residual_capacity[MAXN][MAXN];
-    int capacity[MAXN][MAXN];  //  used while checking the flow of edge
-    int total_nodes;
-    int total_edges, source, sink;
-    int parent[MAXN];
+    std::vector< std::vector<int> > residual_capacity, capacity;
+    int total_nodes = 0;
+    int total_edges = 0, source = 0, sink = 0;
+    std::vector<int> parent;
     std::vector<std::tuple<int, int, int> > edge_participated;
     std::bitset<MAXN> visited;
     int max_flow = 0;
     bool bfs(int source, int sink) {  //  to find the augmented - path
-        memset(parent, -1, sizeof(parent));
         visited.reset();
         std::queue<int> q;
         q.push(source);
@@ -49,16 +47,17 @@ class Graph {
     }
 
  public:
-    Graph() { memset(residual_capacity, 0, sizeof(residual_capacity)); }
-    void set_graph(void) {
+    void set_graph() {
         std::cin >> total_nodes >> total_edges >> source >> sink;
-        for (int start, destination, capacity_, i = 0; i < total_edges; ++i) {
+        parent = std::vector<int>(total_nodes, -1);
+        capacity = residual_capacity = std::vector< std::vector<int> >(total_nodes, std::vector<int>(total_nodes));
+        for (int start = 0, destination = 0, capacity_ = 0, i = 0; i < total_edges; ++i) {
             std::cin >> start >> destination >> capacity_;
             residual_capacity[start][destination] = capacity_;
             capacity[start][destination] = capacity_;
         }
     }
-    void ford_fulkerson(void) {
+    void ford_fulkerson() {
         while (bfs(source, sink)) {
             int current_node = sink;
             int flow = std::numeric_limits<int>::max();
@@ -77,12 +76,12 @@ class Graph {
             }
         }
     }
-    void print_flow_info(void) {
+    void print_flow_info() {
         for (int i = 0; i < total_nodes; ++i) {
             for (int j = 0; j < total_nodes; ++j) {
                 if (capacity[i][j] &&
                     residual_capacity[i][j] < capacity[i][j]) {
-                    edge_participated.push_back(std::make_tuple(
+                    edge_participated.emplace_back(std::make_tuple(
                         i, j, capacity[i][j] - residual_capacity[i][j]));
                 }
             }
@@ -92,14 +91,14 @@ class Graph {
                   << '\n';
         std::cout << "\nSource\tDestination\tCapacity\total_nodes";
         for (auto& edge_data : edge_participated) {
-            int source, destination, capacity_;
+            int source = 0, destination = 0, capacity_ = 0;
             std::tie(source, destination, capacity_) = edge_data;
             std::cout << source << "\t" << destination << "\t\t" << capacity_
                       << '\t';
         }
     }
 };
-int main(void) {
+int main() {
     /*
        Input Graph: (for testing )
         4 5 0 3
