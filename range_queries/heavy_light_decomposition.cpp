@@ -1,6 +1,6 @@
 /*
  * @file heavy_ligt_decomposition.cpp
- * @Simple Heavy-Light Decomposition implementation
+ * @brief Heavy-Light Decomposition implementation
  * Author: Aniruthan R
  * @email: aniruth11052000@gmail.com
  * @CodeChef: aneee004
