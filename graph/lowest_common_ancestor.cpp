@@ -231,7 +231,7 @@ class LowestCommonAncestor {
  * Unit tests
  * @rerturns none
  */
-void tests() {
+static void tests() {
     /**
      *             _  3  _
      *          /     |     \
