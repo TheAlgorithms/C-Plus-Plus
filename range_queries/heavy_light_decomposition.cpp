@@ -7,7 +7,6 @@
  * @CodeForces: aneee
  *
  * TODO: Support edge weight queries, by storing the edge weight value in it's child
- * 
  * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
 */
 
