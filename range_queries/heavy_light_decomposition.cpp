@@ -1,7 +1,7 @@
 /*
  * @file heavy_ligt_decomposition.cpp
  * @brief Heavy-Light Decomposition implementation
- * Author: Aniruthan R
+ * @author: [Aniruthan R](https://github.com/aneee004)
  * @email: aniruth11052000@gmail.com
  * @CodeChef: aneee004
  * @CodeForces: aneee
