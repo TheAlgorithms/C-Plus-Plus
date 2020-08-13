@@ -55,7 +55,7 @@
 
 /**
  * A Basic Tree, which supports binary lifting
- * @template, the data type of the values stored in the tree nodes
+ * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
 class Tree {
@@ -86,8 +86,8 @@ private:
 	
 	/**
 	 * Utility function to compute sub-tree sizes
-	 * @param u, current dfs node
-	 * @param p, the parent of node @param u
+	 * @param u current dfs node
+	 * @param p the parent of node @param u
 	*/
 	void dfs_size(int u, int p = -1) {
 		for(const int& v : t_adj[u]) {
@@ -100,8 +100,8 @@ private:
 
 	/**
 	 * Utility function to populate the t_par vector
-	 * @param u, current dfs node
-	 * @param p, the parent of node @param u
+	 * @param u current dfs node
+	 * @param p the parent of node @param u
 	*/
 	void dfs_lca(int u, int p = -1) {
 		t_par[u][0] = p;
@@ -121,8 +121,9 @@ private:
 
 public:
 	/**
-	 * Class parameterized constructor. Resizes the and initilizes the data members.
-	 * @param nodes, the total number of nodes in the tree
+	 * Class parameterized constructor
+	 * Resizes the and initilizes the data members
+	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit Tree(int nodes) 
 		: t_nodes(nodes), t_maxlift(static_cast<int>(floor(log2(nodes))) + 1) {
@@ -137,8 +138,8 @@ public:
 	
 	/**
 	 * Adds an undirected edge from node u to node v in the tree
-	 * @param u, the node where the edge is from
-	 * @param v, the node where the edge is to
+	 * @param u the node where the edge is from
+	 * @param v the node where the edge is to
 	*/
 	void add_edge(const int u, const int v) {
 		t_adj[u].push_back(v);
@@ -147,7 +148,7 @@ public:
 
 	/**
 	 * Set the root for the tree
-	 * @param new_root, the new root
+	 * @param new_root the new root
 	*/
 	void change_root(int new_root) {
 		t_root = new_root;
@@ -155,7 +156,7 @@ public:
 	
 	/**
 	 * Set the values for all the nodes
-	 * @param node_val, a vector of size n, with all the node values
+	 * @param node_val a vector of size n, with all the node values
 	 * where, n is the number of nodes
 	*/
 	void set_node_val(std::vector<X> node_val) {
@@ -175,9 +176,9 @@ public:
 
 	/**
 	 * The function lifts a node, k units up the tree
-	 * @param p, a pointer to the variable that stores the node id
-	 * @param dist, the distance to move up the tree
-	 * @return, void. The node if, after lifting is stored in the address pointed by @param p.
+	 * @param p a pointer to the variable that stores the node id
+	 * @param dist the distance to move up the tree
+	 * @return void. The node if, after lifting is stored in the address pointed by @param p.
 	*/
 	void lift(int* const p, int dist) {
 		for(int k = 0; k < t_maxlift; k++) {
@@ -191,9 +192,9 @@ public:
 	
 	/**
 	 * The function returns the kth ancestor of a node
-	 * @param p, the node id whose kth ancestor is to be found
-	 * @param dist, the distance to move up the tree
-	 * @return, the kth ancestor of node @param p
+	 * @param p the node id whose kth ancestor is to be found
+	 * @param dist the distance to move up the tree
+	 * @return the kth ancestor of node @param p
 	*/
 	int kth_ancestor(int p, const int& dist) {
 		lift(&p, dist);
@@ -202,9 +203,9 @@ public:
 
 	/**
 	 * The function returns the least common ancestor of two nodes
-	 * @param a, node id_1
-	 * @param b, node id_2
-	 * @return, the least common ancestor of node @param a, and node @param b
+	 * @param a node id_1
+	 * @param b node id_2
+	 * @return the least common ancestor of node @param a, and node @param b
 	*/
 	int lca(int a, int b) {
 		assert(a >= 0 and b >= 0 and a < t_nodes and b < t_nodes);
@@ -227,7 +228,7 @@ public:
 
 /** 
  * Segment Tree, to store heavy chains
- * @template, the data type of the values stored in the tree nodes
+ * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
 class SG {
@@ -245,9 +246,9 @@ private:
 	
 	/**
 	 * Function that specifies the type of operation involved when segments are combined
-	 * @param lhs, the left segment
-	 * @param rhs, the right segment
-	 * @return, the combined result
+	 * @param lhs the left segment
+	 * @param rhs the right segment
+	 * @return the combined result
 	*/
 	X combine(X lhs, X rhs) {
 		return lhs + rhs;
@@ -256,7 +257,7 @@ private:
 
 	/**
 	 * Class parameterized constructor. Resizes the and initilizes the data members.
-	 * @param nodes, the total number of nodes in the tree
+	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit SG(int size) {
 		s_size = size;
@@ -265,8 +266,8 @@ private:
 
 	/**
 	 * Update the value at a node
-	 * @param p, the node to be udpated
-	 * @param v, the update value
+	 * @param p the node to be udpated
+	 * @param v the update value
 	*/
 	void update(int p, X v) {
 		for(p += s_size; p > 0; p >>= 1) s_tree[p] += v;
@@ -274,8 +275,8 @@ private:
 
 	/**
 	 * Make a range query from node label l to node label r
-	 * @param l, node label where the path starts
-	 * @param r, node label where the path ends
+	 * @param l node label where the path starts
+	 * @param r node label where the path ends
 	*/
 	X query(int l, int r) {
 		X lhs = sret_init, rhs = sret_init;
@@ -293,7 +294,7 @@ private:
 	 * XOR Query: 0 (Default)
 	 * Min Query: Infinity 
 	 * Max Query: -Infinity
-	 * @param new_sret_init, the new init
+	 * @param new_sret_init the new init
 	*/
 	void set_sret_init(X new_sret_init) {
 		sret_init = new_sret_init;
@@ -302,7 +303,7 @@ private:
 
 /** 
  * The Heavy-Light Decomposition class
- * @template, the data type of the values stored in the tree nodes
+ * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
 class HLD : public Tree<X>, public SG<X> {
@@ -312,8 +313,8 @@ private:
 
 	/**
 	 * Utility function to assign heavy child to each node (-1 for a leaf node)
-	 * @param u, current dfs node
-	 * @param p, the parent of node @param u
+	 * @param u current dfs node
+	 * @param p the parent of node @param u
 	*/
 	void dfs_hc(int u, int p = -1) {
 		int hc_size = -1, hc_id = -1;
@@ -331,8 +332,8 @@ private:
 	
 	/**
 	 * Utility function to assign highest parent that can be reached though heavy chains
-	 * @param u, current dfs node
-	 * @param p, the parent of node @param u
+	 * @param u current dfs node
+	 * @param p the parent of node @param u
 	*/
 	void dfs_par(int u, int p = -1) {
 		if(h_heavychlid[u] != -1) {
@@ -348,8 +349,8 @@ private:
 	
 	/**
 	 * Utility function to lable the nodes so that heavy chains have a contigous lable
-	 * @param u, current dfs node
-	 * @param p, the parent of node @param u
+	 * @param u current dfs node
+	 * @param p the parent of node @param u
 	*/
 	void dfs_labels(int u, int p = -1) {
 		h_label[u] = label++;
@@ -363,10 +364,10 @@ private:
 	
 	/**
 	 * Utility function to break down a path query into two chain queries
-	 * @param a, node where the path starts
-	 * @param b, node where the path ends
+	 * @param a node where the path starts
+	 * @param b node where the path ends
 	 * a and b must belong to a single root to leaf chain
-	 * @return, the sum of ndoe values in the simple path from a to b
+	 * @return the sum of ndoe values in the simple path from a to b
 	*/
 	X chain_query(int a, int b) {
 		X ret = SG<X>::sret_init;
@@ -386,7 +387,7 @@ private:
 public:
 	/**
 	 * Class parameterized constructor. Resizes the and initilizes the data members.
-	 * @param nodes, the total number of nodes in the tree
+	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit HLD<X>(int nodes) : Tree<X>(nodes), SG<X>(nodes) { 
 		/* Initialization and resize vectors */
@@ -404,13 +405,17 @@ public:
 	void init() {
 		Tree<X>::init();
 
-		/* Fill the heavy child, greatest parent, and labels */
+		/**
+		 * Fill the heavy child, greatest parent, and labels
+		*/
 		label = 0;
 		dfs_hc(Tree<X>::t_root);
 		dfs_par(Tree<X>::t_root);
 		dfs_labels(Tree<X>::t_root);
 
-		/* Segment Tree Initialization */
+		/**
+		 * Segment Tree Initialization
+		*/
 		for(int i = 0; i < Tree<X>::t_nodes; i++) {
 			SG<X>::s_tree[h_label[i] + Tree<X>::t_nodes] = Tree<X>::t_val[i];
 		}
@@ -421,8 +426,8 @@ public:
 
 	/**
 	 * This function updates the value at node with val
-	 * @param node, the node where the update is done
-	 * @param val, the value that is being updated
+	 * @param node the node where the update is done
+	 * @param val the value that is being updated
 	*/
 	void update(int node, X val) {
 		X diff  = val - Tree<X>::t_val[node];
@@ -448,7 +453,7 @@ public:
 };
 
 /**
- * Test implementaions
+ * Test implementations
 */
 void test_1() {
 	std::cout << "Test 1:\n";
@@ -547,7 +552,7 @@ void test_2() {
 }
 
 /**
- * Main funciton
+ * Main function
 */
 int main() {
 	test_1();
