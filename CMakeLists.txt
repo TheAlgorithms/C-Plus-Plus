@@ -18,7 +18,7 @@ endif(MSVC)
 
 option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
 if(USE_OPENMP)
-    find_package(OpenMP)
+    find_package(OpenMP 3.0 COMPONENTS CXX)
     if (OpenMP_CXX_FOUND)
         message(STATUS "Building with OpenMP Multithreading.")
     else()
