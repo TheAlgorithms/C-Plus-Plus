@@ -58,22 +58,19 @@
 */
 template<typename X>
 class Tree {
-	/* 
-	 * Deleting the default constructor
-	 * An instance can only be created with the number of nodes
-	*/
+	// Deleting the default constructor
+	// An instance can only be created with the number of nodes
+	//
+	// Defaults:
+	// t_node indexing are zero based
+	// t_root is 0
+	// depth of root_node is 0
+	//
+	// Supports:
+	// lift :- lift a node k units up the tree
+	// kth_ancestor :- returns the kth ancestor
+	// lca :- returns the least common ancestor
 	
-	/* Defaults:
-	 * t_node indexing are zero based
-	 * t_root is 0
-	 * depth of root_node is 0
-	*/
-	
-	/* Supports:
-	 * lift :- lift a node k units up the tree
-	 * kth_ancestor :- returns the kth ancestor
-	* lca :- returns the least common ancestor
-	*/
 private:
 	std::vector<std::list<int>> t_adj;
 	const int t_nodes, t_maxlift;
