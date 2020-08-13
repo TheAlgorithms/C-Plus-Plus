@@ -176,13 +176,11 @@
 
 ## Others
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
-  * [Collatz Conjecture](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/collatz_conjecture.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
   * [Fast Interger Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_interger_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
-  * [Kaprekar Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/kaprekar_number.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
   * [Paranthesis Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/paranthesis_matching.cpp)
@@ -193,7 +191,6 @@
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
   * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/stairs_pattern.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tower_of_hanoi.cpp)
-  * [Ugly Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/ugly_numbers.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
 
 ## Probability
