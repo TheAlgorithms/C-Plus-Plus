@@ -1,6 +1,6 @@
 /**
  * @file heavy_ligt_decomposition.cpp
- * @brief Heavy-Light Decomposition implementation
+ * @brief [Heavy-Light Decomposition](https://en.wikipedia.org/wiki/Heavy_path_decomposition) implementation
  * @author: [Aniruthan R](https://github.com/aneee004)
  * @email: aniruth11052000@gmail.com
  * @CodeChef: aneee004
