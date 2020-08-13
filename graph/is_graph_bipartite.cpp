@@ -44,7 +44,6 @@ class graph {
  		int n;						/// size of the graph
 
     	vector<vector<int> > adj;	/// adj stores the graph as an adjacency list
-
     	vector<int> side;			///stores the side of the vertex
 
  	public:
@@ -65,6 +64,8 @@ class graph {
  * @param v is a node or vertex of graph
  */
 void graph::addEdge(int u, int v) {
+	if(adj.size() == 0)
+		adj.resize(nax);
     adj[u-1].push_back(v-1);
     adj[v-1].push_back(u-1);
 }
