@@ -16,8 +16,8 @@
 #include<cstring>
 #include<string>
 #include<list>
-#include<math.h>
-#include<assert.h>
+#include<cmath>
+#include<cassert>
 #include<algorithm>
 #include<numeric>
 using namespace std;
@@ -56,17 +56,17 @@ using namespace std;
 /* A Basic Tree, which supports binary lifting */
 template<typename X>
 struct Tree {
-private:
 	/* 
 	 * Deleting the default constructor
 	 * An instance can only be created with the number of nodes
 	*/
-	Tree() {}
 protected:
 	vector<list<int>> t_adj;
 	const int t_nodes, t_maxlift;
 	vector<vector<int>> t_par;
 	vector<int> t_depth, t_size;
+	int t_root;
+ 	vector<X> t_val;
 
 	/* Defaults:
 	 * t_node indexing are zero based
@@ -75,9 +75,11 @@ protected:
 	*/
 	
 	void dfs_size(int u, int p = -1) {
-		for(const int& v : t_adj[u]) if(v^p) {
-			dfs_size(v, u);
-			t_size[u] += t_size[v];
+		for(const int& v : t_adj[u]) {
+			if(v^p) {
+				dfs_size(v, u);
+				t_size[u] += t_size[v];
+			}
 		}
 	}
 
@@ -90,16 +92,16 @@ protected:
 			}
 		}
 
-		for(const int& v: t_adj[u]) if(v^p) {
-			dfs_lca(v, u);
+		for(const int& v: t_adj[u]) {
+			if(v^p) {
+				dfs_lca(v, u);
+			}
 		}
 	}
 
 public:
-	int t_root;
- 	vector<X> t_val;
-	Tree(int nodes) 
-		: t_nodes(nodes), t_maxlift((int)floor(log2(nodes)) + 1) {
+	explicit Tree(int nodes) 
+		: t_nodes(nodes), t_maxlift(static_cast<int>(floor(log2(nodes))) + 1) {
 		/* Initialize and resize all the vectors */
 		t_root = 0; /* Default */
 		t_adj.resize(t_nodes);
@@ -112,6 +114,14 @@ public:
 	void add_edge(const int u, const int v) {
 		t_adj[u].push_back(v);
 		t_adj[v].push_back(u);
+	}
+
+	void change_root(int new_root) {
+		t_root = new_root;
+	}
+
+	void set_node_val(vector<X> node_val) {
+		t_val = node_val;
 	}
 
 	/* Initialization, sizes and parents */
@@ -175,10 +185,6 @@ public:
 	 * Min Query: Infinity 
 	 * Max Query: -Infinity
 	*/
-	X sret_init = 0;
-	X combine(X lhs, X rhs) {
-		return lhs + rhs;
-	}
 protected:
 	/* Everything here is protected,
 	 * and can only be acced thought the methods,
@@ -186,10 +192,14 @@ protected:
 	*/
 	vector<X> s_tree;
 	int s_size;
+	X sret_init = 0;
+	X combine(X lhs, X rhs) {
+		return lhs + rhs;
+	}
 
 
 	/* Construction requires a size */
-	SG(int size) {
+	explicit SG(int size) {
 		s_size = size;
 		s_tree.assign(2*s_size, 0ll);
 	}
@@ -208,6 +218,10 @@ protected:
 		}
 		return combine(lhs, rhs);
 	}
+
+	void set_sret_init(int new_sret_init) {
+		sret_init = new_sret_init;
+	}
 };
 
 /* The Heavy-Light Decomposition class */
@@ -220,11 +234,13 @@ private:
 	/* Utility functions */
 	void dfs_hc(int u, int p = -1) {
 		int hc_size = -1, hc_id = -1;
-		for(const int& v : Tree<X>::t_adj[u]) if(v^p) {
-			dfs_hc(v, u);
-			if(Tree<X>::t_size[v] > hc_size) {
-				hc_size = Tree<X>::t_size[v];
-				hc_id = v;
+		for(const int& v : Tree<X>::t_adj[u]) {
+			if(v^p) {
+				dfs_hc(v, u);
+				if(Tree<X>::t_size[v] > hc_size) {
+					hc_size = Tree<X>::t_size[v];
+					hc_id = v;
+				}
 			}
 		}
 		h_heavychlid[u] = hc_id;
@@ -235,16 +251,20 @@ private:
 			h_parent[h_heavychlid[u]] = h_parent[u];
 			dfs_par(h_heavychlid[u], u);
 		}
-		for(const int& v : Tree<X>::t_adj[u]) if(v^p and v^h_heavychlid[u]) {
-			dfs_par(v, u);
+		for(const int& v : Tree<X>::t_adj[u]) {
+			if(v^p and v^h_heavychlid[u]) {
+				dfs_par(v, u);
+			}
 		}
 	}
 
 	void dfs_labels(int u, int p = -1) {
 		h_label[u] = label++;
 		if(h_heavychlid[u] != -1) dfs_labels(h_heavychlid[u], u);
-		for(const int& v : Tree<X>::t_adj[u]) if(v^p and v^h_heavychlid[u]) {
-			dfs_labels(v, u);
+		for(const int& v : Tree<X>::t_adj[u]) {
+			if(v^p and v^h_heavychlid[u]) {
+				dfs_labels(v, u);
+			}
 		}
 	}
 
@@ -264,8 +284,9 @@ private:
 		return ret;
 	}
 public:
-	HLD<X>(int nodes) : Tree<X>(nodes), SG<X>(nodes) { 
+	explicit HLD<X>(int nodes) : Tree<X>(nodes), SG<X>(nodes) { 
 		/* Initialization and resize vectors */
+		label = 0;
 		h_label.assign(Tree<X>::t_nodes, -1);
 		h_heavychlid.assign(Tree<X>::t_nodes, -1);
 		h_parent.resize(Tree<X>::t_nodes);
@@ -316,7 +337,7 @@ void test_1() {
 	cout << "Test 1:\n";
 	/* Test details */
 	int n = 5;
-	vector<int> node_values = {4, 2, 5, 2, 1};
+	vector<long long> node_values = {4, 2, 5, 2, 1};
 	vector<vector<int>> edges = {
 		{1, 2},
 		{1, 3},
@@ -330,7 +351,7 @@ void test_1() {
 	};
 	/* ------------ */
 	HLD<long long> hld(n);
-	for(int i = 0; i < n; i++) hld.t_val[i] = node_values[i];
+	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
 		hld.add_edge(u-1, v-1);
@@ -356,7 +377,7 @@ void test_2() {
 	cout << "Test 2:\n";
 	/* Test details (Bamboo) */
 	int n = 10;
-	vector<int> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
+	vector<long long> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
 	vector<vector<int>> edges = {
 		{10, 5},
 		{6, 2},
@@ -382,7 +403,7 @@ void test_2() {
 	};
 	/* ------------ */
 	HLD<long long> hld(n);
-	for(int i = 0; i < n; i++) hld.t_val[i] = node_values[i];
+	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
 		hld.add_edge(u-1, v-1);
