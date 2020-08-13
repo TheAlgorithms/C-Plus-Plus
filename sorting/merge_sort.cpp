@@ -43,7 +43,7 @@ void merge(int &arr, int l, int m, int r) {
     i = 0;
     j = 0;
     while (i < n1 || j < n2) {
-        if ((i<n1) && (L[i] <= R[j] || j>=n2)) {
+        if ((i<n1) && ((L[i] <= R[j]) || (j>=n2))) {
             arr[k] = L[i];
             i++;
         } else{
@@ -51,9 +51,7 @@ void merge(int &arr, int l, int m, int r) {
             j++;
         }
     }
-    
-    delete[] L;
-    delete[] R;
+    return;
 }
 
 /**
@@ -66,7 +64,7 @@ void merge(int &arr, int l, int m, int r) {
  * @param r - right index or end index of array
  *
  */
-void mergeSort(int *arr, int l, int r) {
+void mergeSort(int &arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
@@ -79,7 +77,7 @@ void mergeSort(int *arr, int l, int r) {
  * Utility function used to print the array after
  * sorting
  */
-void show(int *arr, int size) {
+void show(int &arr, int size) {
     for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
 }
@@ -97,7 +95,7 @@ int main() {
     mergeSort(arr, 0, size - 1);
     std::cout << "Sorted array : ";
     show(arr, size - 1);
-    delete[] arr;
+    
     return 0;
 }
 /** @} */
