@@ -86,6 +86,7 @@ private:
 	 * @brief Utility function to compute sub-tree sizes
 	 * @param u current dfs node
 	 * @param p the parent of node @param u
+	 * @returns void
 	*/
 	void dfs_size(int u, int p = -1) {
 		for(const int& v : t_adj[u]) {
@@ -100,6 +101,7 @@ private:
 	 * @brief Utility function to populate the t_par vector
 	 * @param u current dfs node
 	 * @param p the parent of node u
+	 * @returns void
 	*/
 	void dfs_lca(int u, int p = -1) {
 		t_par[u][0] = p;
@@ -137,6 +139,7 @@ public:
 	 * @brief Adds an undirected edge from node u to node v in the tree
 	 * @param u the node where the edge is from
 	 * @param v the node where the edge is to
+	 * @returns void
 	*/
 	void add_edge(const int u, const int v) {
 		t_adj[u].push_back(v);
@@ -146,6 +149,7 @@ public:
 	/**
 	 * @brief Set the root for the tree
 	 * @param new_root the new root
+	 * @returns void
 	*/
 	void change_root(int new_root) {
 		t_root = new_root;
@@ -154,6 +158,7 @@ public:
 	/**
 	 * @brief Set the values for all the nodes
 	 * @param node_val a vector of size n, with all the node values where, n is the number of nodes
+	 * @returns void
 	*/
 	void set_node_val(std::vector<X> node_val) {
 		assert(static_cast<int>(node_val.size()) == t_nodes);
@@ -163,6 +168,7 @@ public:
 	/**
 	 * @brief This function must be called after the tree adjacency list and node values are populated
 	 * The function initializes the required parameters, and populates the segment tree
+	 * @returns void
 	*/
 	void init() {
 		assert(t_nodes > 0);
@@ -175,7 +181,7 @@ public:
 	 * The lifting is done in place, and the result is stored in the address pointed by p.
 	 * @param p a pointer to the variable that stores the node id
 	 * @param dist the distance to move up the tree
-	 * @returns void.
+	 * @returns void
 	*/
 	void lift(int* const p, int dist) {
 		for(int k = 0; k < t_maxlift; k++) {
@@ -233,7 +239,7 @@ private:
 	/**
 	 * @brief Everything here is private,
 	 * and can only be accessed through the methods,
-	 * in the derived class (HLD).
+	 * in the derived class (HLD)
 	*/
 
 	std::vector<X> s_tree;
@@ -255,6 +261,7 @@ private:
 	/**
 	 * @brief Class parameterized constructor. Resizes the and initilizes the data members.
 	 * @param nodes the total number of nodes in the tree
+	 * @returns void
 	*/
 	explicit SG(int size) {
 		s_size = size;
@@ -265,6 +272,7 @@ private:
 	 * @brief Update the value at a node
 	 * @param p the node to be udpated
 	 * @param v the update value
+	 * @returns void
 	*/
 	void update(int p, X v) {
 		for(p += s_size; p > 0; p >>= 1) { s_tree[p] += v; }
@@ -274,6 +282,7 @@ private:
 	 * @brief Make a range query from node label l to node label r
 	 * @param l node label where the path starts
 	 * @param r node label where the path ends
+	 * @returns void
 	*/
 	X query(int l, int r) {
 		X lhs = sret_init, rhs = sret_init;
@@ -286,7 +295,7 @@ private:
 	
 	/**
 	 * @brief Set the initialization for the query data type, based on requirement
-
+	 *
 	 * @details
 	 * Change the sret_init, based on requirement:
 	 * Sum Query: 0 (Default)
@@ -314,6 +323,7 @@ private:
 	 * @brief Utility function to assign heavy child to each node (-1 for a leaf node)
 	 * @param u current dfs node
 	 * @param p the parent of node u
+	 * @returns void
 	*/
 	void dfs_hc(int u, int p = -1) {
 		int hc_size = -1, hc_id = -1;
@@ -333,6 +343,7 @@ private:
 	 * @brief Utility function to assign highest parent that can be reached though heavy chains
 	 * @param u current dfs node
 	 * @param p the parent of node u
+	 * @returns void
 	*/
 	void dfs_par(int u, int p = -1) {
 		if(h_heavychlid[u] != -1) {
@@ -350,6 +361,7 @@ private:
 	 * @brief Utility function to lable the nodes so that heavy chains have a contigous lable
 	 * @param u current dfs node
 	 * @param p the parent of node u
+	 * @returns void
 	*/
 	void dfs_labels(int u, int p = -1) {
 		h_label[u] = label++;
@@ -400,21 +412,18 @@ public:
 	/**
 	 * @brief This function must be called after the tree adjacency list and node values are populated
 	 * The function initializes the required parametes, and populates the segment tree
+	 * @returns void
 	*/
 	void init() {
 		Tree<X>::init();
-
-		/**
-		 * Fill the heavy child, greatest parent, and labels
-		*/
+		
+		// Fill the heavy child, greatest parent, and labels
 		label = 0;
 		dfs_hc(Tree<X>::t_root);
 		dfs_par(Tree<X>::t_root);
 		dfs_labels(Tree<X>::t_root);
 
-		/**
-		 * Segment Tree Initialization
-		*/
+		// Segment Tree Initialization
 		for(int i = 0; i < Tree<X>::t_nodes; i++) {
 			SG<X>::s_tree[h_label[i] + Tree<X>::t_nodes] = Tree<X>::t_val[i];
 		}
@@ -427,6 +436,7 @@ public:
 	 * @brief This function updates the value at node with val
 	 * @param node the node where the update is done
 	 * @param val the value that is being updated
+	 * @returns void
 	*/
 	void update(int node, X val) {
 		X diff  = val - Tree<X>::t_val[node];
