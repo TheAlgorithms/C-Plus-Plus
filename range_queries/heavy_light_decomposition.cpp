@@ -52,6 +52,10 @@
  * Sample I/O at the bottom.
  */
 
+/**
+ * @namespace range_queries
+ * @brief Algorithms and Data Structures that support range queries and updates.
+*/
 namespace range_queries {
 
 /**
