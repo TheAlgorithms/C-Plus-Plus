@@ -116,7 +116,7 @@ namespace machine_learning {
             double identity(const double &x) {
                 return x;
             }
-        } // util functions
+        } // util_functions
         namespace {
             class Layer {
                 public:

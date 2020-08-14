@@ -14,6 +14,7 @@
 #include <vector>
 #include <valarray>
 #include <chrono>
+#include <random>
 
 /**
  * Overloaded operator "<<" to print 2D vector
@@ -159,7 +160,7 @@ void uniform_random_initialization(std::vector<std::valarray<T>> &A,
                    const T &high) {
     A.clear(); // Making A empty 
     // Uniform distribution in range [low, high]
-    std::default_random_engine generator (std::chrono::system_clock::now().time_since_epoch().count());
+    std::default_random_engine generator(std::chrono::system_clock::now().time_since_epoch().count());
     std::uniform_real_distribution <T> distribution(low, high);
     for(size_t i = 0; i < shape.first; i++) { // For every row 
         std::valarray <T> row; // Making empty row which will be inserted in vector
