@@ -217,7 +217,7 @@ public:
 		if(t_depth[b] > t_depth[a]) {
 			lift(&b, t_depth[b] - t_depth[a]);
 		}
-		if(a == b) return a;
+		if(a == b) { return a; }
 		for(int k = 0; k < t_maxlift; k++) {
 			if(t_par[a][k] != t_par[b][k]) {
 				a = t_par[a][k];
