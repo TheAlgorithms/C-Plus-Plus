@@ -66,7 +66,7 @@ namespace machine_learning {
             /**
              * Relu function
              * @param X Value 
-             * @return Returns relu(x)
+             * @returns relu(x)
              */  
             double relu (const double &x) {
                 return std::max(0.0, x);
