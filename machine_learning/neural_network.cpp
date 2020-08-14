@@ -116,7 +116,7 @@ namespace machine_learning {
             double identity(const double &x) {
                 return x;
             }
-        } // util_functions
+        } // namespace util_functions
         namespace {
             class Layer {
                 public:
@@ -387,10 +387,10 @@ namespace machine_learning {
                 std::vector < std::vector <std::valarray<double>>>
                 batch_predict (const std::vector <std::vector <std::valarray <double>>> &X) {
                     // Store predicted values
-                    std::vector < std::vector <std::valarray<double>>> predicted_batch;
-                    for(const auto &x: X) { // For every sample
+                    std::vector < std::vector <std::valarray<double>>> predicted_batch(X.size());
+                    for(size_t i = 0; i < X.size(); i++) { // For every sample
                         // Push predicted values
-                        predicted_batch.push_back(this -> single_predict(x));
+                        predicted_batch[i] = this -> single_predict(X[i]);
                     }
                     return predicted_batch; // Return predicted values
                 }
