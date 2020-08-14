@@ -24,8 +24,39 @@ int fibonacci(unsigned int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+/**
+ * Function for testing the fibonacci() function with a few
+ * test cases and assert statement.
+ */
+void test() {
+    int test_case_1 = fibonacci(0);
+    assert(test_case_1 == 0);
+    std::cout << "Passed Test 1!" << std::endl;
+
+    int test_case_2 = fibonacci(1);
+    assert(test_case_2 == 1);
+    std::cout << "Passed Test 2!" << std::endl;
+
+    int test_case_3 = fibonacci(2);
+    assert(test_case_3 == 1);
+    std::cout << "Passed Test 3!" << std::endl;
+
+    int test_case_4 = fibonacci(3);
+    assert(test_case_4 == 2);
+    std::cout << "Passed Test 4!" << std::endl;
+
+    int test_case_5 = fibonacci(4);
+    assert(test_case_5 == 3);
+    std::cout << "Passed Test 5!" << std::endl;
+
+    int test_case_6 = fibonacci(15);
+    assert(test_case_6 == 610);
+    std::cout << "Passed Test 6!" << std::endl << std::endl;
+}
+
 /// Main function
 int main() {
+    test();
     int n;
     std::cin >> n;
     assert(n >= 0);
