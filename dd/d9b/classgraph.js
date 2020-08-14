@@ -1,5 +1,8 @@
 var classgraph =
 [
+    [ "Graph", "dc/d61/classgraph_1_1_graph.html", "dc/d61/classgraph_1_1_graph" ],
+    [ "LowestCommonAncestor", "d9/d23/classgraph_1_1_lowest_common_ancestor.html", "d9/d23/classgraph_1_1_lowest_common_ancestor" ],
+    [ "RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", "d0/d58/classgraph_1_1_rooted_tree" ],
     [ "graph", "dd/d9b/classgraph.html#a6da44f9820d3b7bae2f0f74bc149c27e", null ],
     [ "addEdge", "dd/d9b/classgraph.html#a35c12fba596d8bb48b1877b128c4ba6d", null ],
     [ "depth_first_search", "dd/d9b/classgraph.html#a135921a59082b669678b029b301b8a1c", null ],
