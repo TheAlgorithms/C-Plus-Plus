@@ -57,7 +57,6 @@
  * @brief Algorithms and Data Structures that support range queries and updates.
 */
 namespace range_queries {
-
 /**
  * @brief A Basic Tree, which supports binary lifting
  * @tparam the data type of the values stored in the tree nodes
@@ -456,8 +455,9 @@ public:
 
 /**
  * Test implementations
+ * @returns none
 */
-void test_1() {
+static void test_1() {
 	std::cout << "Test 1:\n";
 	/**
 	 * Test details
@@ -499,7 +499,11 @@ void test_1() {
 	}
 }
 
-void test_2() {
+/**
+ * Second test implementations
+ * @returns void
+ */
+static void test_2() {
 	std::cout << "Test 2:\n";
 	/**
 	 * Test details (Bamboo)
