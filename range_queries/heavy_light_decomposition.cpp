@@ -3,8 +3,8 @@
  * @brief [Heavy-Light Decomposition](https://en.wikipedia.org/wiki/Heavy_path_decomposition) implementation
  * @author: [Aniruthan R](https://github.com/aneee004)
  * @email: aniruth11052000@gmail.com
- * @CodeChef: aneee004
- * @CodeForces: aneee
+ * @CodeChef: [aneee004](https://www.codechef.com/users/aneee004)
+ * @CodeForces: [aneee](https://codeforces.com/profile/aneee)
  *
  * TODO: Support edge weight queries, by storing the edge weight value in it's child
  * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
@@ -53,7 +53,13 @@
  */
 
 /**
- * A Basic Tree, which supports binary lifting
+ * @namespace range_queries
+ * @brief Algorithms and Data Structures that support range queries and updates.
+*/
+namespace range_queries {
+
+/**
+ * @brief A Basic Tree, which supports binary lifting
  * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
@@ -81,7 +87,7 @@ private:
 	template<typename T> friend class HLD;
 	
 	/**
-	 * Utility function to compute sub-tree sizes
+	 * @brief Utility function to compute sub-tree sizes
 	 * @param u current dfs node
 	 * @param p the parent of node @param u
 	*/
@@ -95,9 +101,9 @@ private:
 	}
 
 	/**
-	 * Utility function to populate the t_par vector
+	 * @brief Utility function to populate the t_par vector
 	 * @param u current dfs node
-	 * @param p the parent of node @param u
+	 * @param p the parent of node u
 	*/
 	void dfs_lca(int u, int p = -1) {
 		t_par[u][0] = p;
@@ -117,8 +123,7 @@ private:
 
 public:
 	/**
-	 * Class parameterized constructor
-	 * Resizes the and initilizes the data members
+	 * @brief Class parameterized constructor, resizes the and initilizes the data members
 	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit Tree(int nodes) 
@@ -133,7 +138,7 @@ public:
 	}
 	
 	/**
-	 * Adds an undirected edge from node u to node v in the tree
+	 * @brief Adds an undirected edge from node u to node v in the tree
 	 * @param u the node where the edge is from
 	 * @param v the node where the edge is to
 	*/
@@ -143,7 +148,7 @@ public:
 	}
 
 	/**
-	 * Set the root for the tree
+	 * @brief Set the root for the tree
 	 * @param new_root the new root
 	*/
 	void change_root(int new_root) {
@@ -151,9 +156,8 @@ public:
 	}
 	
 	/**
-	 * Set the values for all the nodes
-	 * @param node_val a vector of size n, with all the node values
-	 * where, n is the number of nodes
+	 * @brief Set the values for all the nodes
+	 * @param node_val a vector of size n, with all the node values where, n is the number of nodes
 	*/
 	void set_node_val(std::vector<X> node_val) {
 		assert(static_cast<int>(node_val.size()) == t_nodes);
@@ -161,7 +165,7 @@ public:
 	}
 
 	/**
-	 * This function must be called after the tree adjacency list and node values are populated
+	 * @brief This function must be called after the tree adjacency list and node values are populated
 	 * The function initializes the required parametes, and populates the segment tree
 	*/
 	void init() {
@@ -171,10 +175,11 @@ public:
 	}
 
 	/**
-	 * The function lifts a node, k units up the tree
+	 * @brief The function lifts a node, k units up the tree.
+	 * The lifting is done in place, and the result is stored in the address pointed by p.
 	 * @param p a pointer to the variable that stores the node id
 	 * @param dist the distance to move up the tree
-	 * @return void. The node if, after lifting is stored in the address pointed by @param p.
+	 * @return void.
 	*/
 	void lift(int* const p, int dist) {
 		for(int k = 0; k < t_maxlift; k++) {
@@ -187,10 +192,10 @@ public:
 	} 
 	
 	/**
-	 * The function returns the kth ancestor of a node
+	 * @brief The function returns the kth ancestor of a node
 	 * @param p the node id whose kth ancestor is to be found
 	 * @param dist the distance to move up the tree
-	 * @return the kth ancestor of node @param p
+	 * @return the kth ancestor of node
 	*/
 	int kth_ancestor(int p, const int& dist) {
 		lift(&p, dist);
@@ -198,10 +203,10 @@ public:
 	}
 
 	/**
-	 * The function returns the least common ancestor of two nodes
+	 * @brief The function returns the least common ancestor of two nodes
 	 * @param a node id_1
 	 * @param b node id_2
-	 * @return the least common ancestor of node @param a, and node @param b
+	 * @return the least common ancestor of node a, and node b
 	*/
 	int lca(int a, int b) {
 		assert(a >= 0 and b >= 0 and a < t_nodes and b < t_nodes);
@@ -223,14 +228,14 @@ public:
 };
 
 /** 
- * Segment Tree, to store heavy chains
+ * @brief Segment Tree, to store heavy chains
  * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
 class SG {
 private:
 	/**
-	 * Everything here is private,
+	 * @brief Everything here is private,
 	 * and can only be acced thought the methods,
 	 * in the derived class (HLD).
 	*/
@@ -241,7 +246,7 @@ private:
 	X sret_init = 0;
 	
 	/**
-	 * Function that specifies the type of operation involved when segments are combined
+	 * @brief Function that specifies the type of operation involved when segments are combined
 	 * @param lhs the left segment
 	 * @param rhs the right segment
 	 * @return the combined result
@@ -252,7 +257,7 @@ private:
 
 
 	/**
-	 * Class parameterized constructor. Resizes the and initilizes the data members.
+	 * @brief Class parameterized constructor. Resizes the and initilizes the data members.
 	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit SG(int size) {
@@ -261,7 +266,7 @@ private:
 	}
 
 	/**
-	 * Update the value at a node
+	 * @brief Update the value at a node
 	 * @param p the node to be udpated
 	 * @param v the update value
 	*/
@@ -270,7 +275,7 @@ private:
 	}
 
 	/**
-	 * Make a range query from node label l to node label r
+	 * @brief Make a range query from node label l to node label r
 	 * @param l node label where the path starts
 	 * @param r node label where the path ends
 	*/
@@ -284,7 +289,7 @@ private:
 	}
 	
 	/**
-	 * Set the initialization for the query data type, based on requirement
+	 * @brief Set the initialization for the query data type, based on requirement
 	 * Change the sret_init, based on requirement:
 	 * Sum Query: 0 (Default)
 	 * XOR Query: 0 (Default)
@@ -298,7 +303,7 @@ private:
 };
 
 /** 
- * The Heavy-Light Decomposition class
+ * @brief The Heavy-Light Decomposition class
  * @tparam the data type of the values stored in the tree nodes
 */
 template<typename X>
@@ -308,9 +313,9 @@ private:
 	std::vector<int> h_label, h_heavychlid, h_parent;
 
 	/**
-	 * Utility function to assign heavy child to each node (-1 for a leaf node)
+	 * @brief Utility function to assign heavy child to each node (-1 for a leaf node)
 	 * @param u current dfs node
-	 * @param p the parent of node @param u
+	 * @param p the parent of node u
 	*/
 	void dfs_hc(int u, int p = -1) {
 		int hc_size = -1, hc_id = -1;
@@ -327,9 +332,9 @@ private:
 	}
 	
 	/**
-	 * Utility function to assign highest parent that can be reached though heavy chains
+	 * @brief Utility function to assign highest parent that can be reached though heavy chains
 	 * @param u current dfs node
-	 * @param p the parent of node @param u
+	 * @param p the parent of node u
 	*/
 	void dfs_par(int u, int p = -1) {
 		if(h_heavychlid[u] != -1) {
@@ -344,9 +349,9 @@ private:
 	}
 	
 	/**
-	 * Utility function to lable the nodes so that heavy chains have a contigous lable
+	 * @brief Utility function to lable the nodes so that heavy chains have a contigous lable
 	 * @param u current dfs node
-	 * @param p the parent of node @param u
+	 * @param p the parent of node u
 	*/
 	void dfs_labels(int u, int p = -1) {
 		h_label[u] = label++;
@@ -359,7 +364,7 @@ private:
 	}
 	
 	/**
-	 * Utility function to break down a path query into two chain queries
+	 * @brief Utility function to break down a path query into two chain queries
 	 * @param a node where the path starts
 	 * @param b node where the path ends
 	 * a and b must belong to a single root to leaf chain
@@ -382,7 +387,7 @@ private:
 	}
 public:
 	/**
-	 * Class parameterized constructor. Resizes the and initilizes the data members.
+	 * @brief Class parameterized constructor. Resizes the and initilizes the data members.
 	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit HLD<X>(int nodes) : Tree<X>(nodes), SG<X>(nodes) { 
@@ -395,7 +400,7 @@ public:
 	}
 
 	/**
-	 * This function must be called after the tree adjacency list and node values are populated
+	 * @brief This function must be called after the tree adjacency list and node values are populated
 	 * The function initializes the required parametes, and populates the segment tree
 	*/
 	void init() {
@@ -421,7 +426,7 @@ public:
 	}
 
 	/**
-	 * This function updates the value at node with val
+	 * @brief This function updates the value at node with val
 	 * @param node the node where the update is done
 	 * @param val the value that is being updated
 	*/
@@ -432,11 +437,11 @@ public:
 	}
 
 	/**
-	 * This function returns the sum of node values in the simple path from from node_1 to node_2
+	 * @brief This function returns the sum of node values in the simple path from from node_1 to node_2
 	 * @param a the node where the simple path starts
 	 * @param b the node where the simple path ends
 	 * (parameters are interchangeable, i.e., the function is commutative)
-	 * @return the sum of node values in the simple path from @param a to @param b
+	 * @return the sum of node values in the simple path from a to b
 	*/
 	X query(int a, int b) {
 		int lc = Tree<X>::lca(a, b);
@@ -447,6 +452,7 @@ public:
 		return ret - Tree<X>::t_val[lc];
 	}
 };
+}  // namespace range_queries
 
 /**
  * Test implementations
@@ -470,7 +476,7 @@ void test_1() {
 		{2, 4},
 	};
 	
-	HLD<int64_t> hld(n);
+	range_queries::HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
@@ -524,7 +530,7 @@ void test_2() {
 		{1, 2, 7}
 	};
 	
-	HLD<int64_t> hld(n);
+	range_queries::HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
