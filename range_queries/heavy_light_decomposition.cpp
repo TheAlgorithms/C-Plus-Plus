@@ -448,7 +448,7 @@ public:
 		return ret - Tree<X>::t_val[lc];
 	}
 };
-} // namsespace range_queries
+}  // namespace range_queries
 
 /**
  * Test implementations
