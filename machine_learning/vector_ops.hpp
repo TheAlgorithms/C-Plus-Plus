@@ -473,5 +473,7 @@ std::vector <std::valarray <T>> hadamard_product(const std::vector<std::valarray
     }
     return C; // Return new resultant 2D vector
 }
+}  // namespace machine_learning
+
 
 #endif
