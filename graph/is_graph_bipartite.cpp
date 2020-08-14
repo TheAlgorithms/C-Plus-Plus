@@ -32,11 +32,8 @@
 #include <queue>
 
 /**
- * Class for representing graph as an adjacency list.
- */
-/**
- *	@namespace graph
- *  @brief Graph algorithms
+ * @namespace graph
+ * @brief Graph algorithms
  */
 namespace graph{
 	/**
@@ -44,7 +41,9 @@ namespace graph{
 	 * @brief Functions for checking whether a graph is bipartite or not
 	 */
 	namespace is_graph_bipartite{
-
+		/**
+		 * @brief Class for representing graph as an adjacency list.
+		 */
 		class Graph {
  			private: 
  				int n;						/// size of the graph
@@ -57,9 +56,9 @@ namespace graph{
 
 
 	 		public:
-    		/**
-    		 * @brief Constructor that initializes the graph on creation
-    		 */
+	    		/**
+    			 * @brief Constructor that initializes the graph on creation
+    			 */
 	    		explicit Graph(int size = nax){
     				n = size;
     				adj.resize(n);
