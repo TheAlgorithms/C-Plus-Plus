@@ -3,8 +3,8 @@
  * @brief [Heavy-Light Decomposition](https://en.wikipedia.org/wiki/Heavy_path_decomposition) implementation
  * @author: [Aniruthan R](https://github.com/aneee004)
  * @email: aniruth11052000@gmail.com
- * @CodeChef: aneee004
- * @CodeForces: aneee
+ * @CodeChef: [aneee004](https://www.codechef.com/users/aneee004)
+ * @CodeForces: [aneee](https://codeforces.com/profile/aneee)
  *
  * TODO: Support edge weight queries, by storing the edge weight value in it's child
  * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
