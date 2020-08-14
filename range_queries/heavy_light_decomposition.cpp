@@ -505,6 +505,8 @@ static void test_1() {
 			continue;
 		}
 	}
+	std::cout << "\nTest 1 passed!\n";
+
 }
 
 /**
@@ -562,6 +564,8 @@ static void test_2() {
 			continue;
 		}
 	}
+	std::cout << "\nTest2 passed!\n";
+
 }
 
 /**
