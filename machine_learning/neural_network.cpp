@@ -42,7 +42,7 @@ namespace machine_learning {
      */   
     namespace neural_network {
         /** \namespace activations
-         * \brief various activation functions used in Neural network
+         * \brief Various activation functions used in Neural network
          */         
         namespace activations {
             /**
