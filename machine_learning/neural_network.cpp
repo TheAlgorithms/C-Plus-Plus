@@ -75,7 +75,7 @@ namespace machine_learning {
             /**
              * Derivative of relu function
              * @param X Value 
-             * @return Returns derivative of relu(x)
+             * @returns derivative of relu(x)
              */  
             double drelu (const double &x) {
                 return x >= 0.0 ? 1.0 : 0.0;
