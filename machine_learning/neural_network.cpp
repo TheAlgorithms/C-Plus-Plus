@@ -680,7 +680,7 @@ namespace machine_learning {
 /**
  * Function to test neural network
  */
-void test() {
+static void test() {
     // Creating network with 3 layers for "iris.csv"
     machine_learning::neural_network::NeuralNetwork myNN =
     machine_learning::neural_network::NeuralNetwork({
