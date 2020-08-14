@@ -229,7 +229,7 @@ class LowestCommonAncestor {
 
 /**
  * Unit tests
- * @rerturns none
+ * @returns none
  */
 static void tests() {
     /**
