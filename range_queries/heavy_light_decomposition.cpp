@@ -453,7 +453,7 @@ public:
 		return ret - Tree<X>::t_val[lc];
 	}
 };
-} // heavy_light_decomposition
+}  // namespace heavy_light_decomposition
 } // namespace range_queries
 
 /**
