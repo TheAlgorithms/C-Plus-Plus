@@ -108,6 +108,14 @@ namespace machine_learning {
             double square(const double &x) {
                 return x * x;
             }
+            /**
+             * Identity function
+             * @param X Value 
+             * @return Returns x 
+             */  
+            double identity(const double &x) {
+
+            }
         } // util functions
         namespace {
             class Layer {
@@ -145,8 +153,8 @@ namespace machine_learning {
                         }
                         else if (activation == "none") {
                             // Set identity function in casse of none is supplied
-                            activation_function = [&] (const double &x) {return x;};
-                            dactivation_function = [&] (const double &x) {return x;};
+                            activation_function = neural_network::util_functions::identity;
+                            dactivation_function = neural_network::util_functions::identity;
                         }
                         else {
                             // If supplied activation is invalid
@@ -189,8 +197,8 @@ namespace machine_learning {
                         }
                         else if (activation == "none") {
                             // Set identity function in casse of none is supplied
-                            activation_function = [&] (const double &x) {return x;};
-                            dactivation_function = [&] (const double &x) {return x;};
+                            activation_function = neural_network::util_functions::identity;
+                            dactivation_function = neural_network::util_functions::identity;
                         }
                         else {
                             // If supplied activation is invalid
@@ -230,7 +238,7 @@ namespace machine_learning {
                     }
                     // Reconstructing all pretrained layers
                     for(size_t i = 0; i < config.size(); i++) {
-                        layers.push_back(Layer(config[i].first, 
+                        layers.emplace_back(Layer(config[i].first, 
                                                config[i].second,
                                                kernals[i])); 
                     } 
@@ -259,13 +267,13 @@ namespace machine_learning {
                  * Default Constructor for class NeuralNetwork. This constructor
                  * is used to create empty variable of type NeuralNetwork class.
                  */   
-                NeuralNetwork() { }
+                NeuralNetwork() = default;
                 /**
                  * Constructor for class NeuralNetwork. This constructor
                  * is used by user.
                  * @param config vector containing pair (neurons, activation)
                  */   
-                NeuralNetwork(const std::vector <std::pair<int, std::string>> &config) {
+                explicit NeuralNetwork(const std::vector <std::pair<int, std::string>> &config) {
                     // First layer should not have activation
                     if(config.begin() -> second != "none") {
                         std::cout << "ERROR: First layer can't have activation other than none";
@@ -301,7 +309,8 @@ namespace machine_learning {
                  * @param normalize flag for whether to normalize data 
                  * @return returns pair of X and Y
                  */  
-                auto get_XY_from_csv(const std::string &file_name, 
+                std::pair<std::vector<std::vector<std::valarray<double>>>, std::vector<std::vector<std::valarray<double>>>>
+                get_XY_from_csv(const std::string &file_name, 
                                      const bool &last_label, 
                                      const bool &normalize) {
                     std::ifstream in_file; // Ifstream to read file
@@ -379,7 +388,7 @@ namespace machine_learning {
                 batch_predict (const std::vector <std::vector <std::valarray <double>>> &X) {
                     // Store predicted values
                     std::vector < std::vector <std::valarray<double>>> predicted_batch;
-                    for(const auto x: X) { // For every sample
+                    for(const auto &x: X) { // For every sample
                         // Push predicted values
                         predicted_batch.push_back(this -> single_predict(x));
                     }
@@ -395,12 +404,13 @@ namespace machine_learning {
                  * @param batch_size batch size for gradient descent (default = 32)
                  * @param shuffle flag for whether to shuffle data
                  */  
-                void fit(std::vector < std::vector <std::valarray<double>> >  &X, 
-                           std::vector < std::vector <std::valarray<double>> >  &Y, 
-                           const int &epochs, 
-                           const double &learning_rate,
-                           const size_t &batch_size = 32,
-                           const bool &shuffle = true) {
+                void fit(const std::vector < std::vector <std::valarray<double>>>  &X_, 
+                         const std::vector < std::vector <std::valarray<double>>>  &Y_, 
+                         const int &epochs, 
+                         const double &learning_rate,
+                         const size_t &batch_size = 32,
+                         const bool &shuffle = true) {
+                    std::vector < std::vector <std::valarray<double>>> X = X_, Y = Y_;
                     // Both label and input data should have same size
                     if (X.size() != Y.size()) {
                         std::cout << "ERROR : X and Y in fit have different sizes" << std::endl;
@@ -622,12 +632,12 @@ namespace machine_learning {
                     std::vector <std::pair<int, std::string>> config; // To store config
                     std::vector <std::vector<std::valarray<double>>> kernals; // To store pretrained kernals
                     // Loading model from saved file format
-                    size_t total_layers; 
+                    size_t total_layers = 0; 
                     in_file >> total_layers;
                     for(size_t i = 0; i < total_layers; i++) {
-                        int neurons;
+                        int neurons = 0;
                         std::string activation;
-                        size_t shape_a, shape_b;
+                        size_t shape_a = 0, shape_b = 0;
                         std::vector<std::valarray<double>> kernal;
                         in_file >> neurons >> activation >> shape_a >> shape_b;
                         for(size_t r = 0; r < shape_a; r++) {
@@ -637,8 +647,8 @@ namespace machine_learning {
                             }
                             kernal.push_back(row);
                         }
-                        config.push_back(make_pair(neurons, activation));;
-                        kernals.push_back(kernal);
+                        config.emplace_back(make_pair(neurons, activation));;
+                        kernals.emplace_back(kernal);
                     }
                     std::cout << "INFO: Model loaded successfully" << std::endl;
                     return NeuralNetwork(config, kernals); // Return instance of NeuralNetwork class
@@ -664,8 +674,8 @@ namespace machine_learning {
                 }
         
         };
-    } // namespace neural network
-} // namespace machine learning
+    } // namespace neural_network
+} // namespace machine_learning
 
 /**
  * Function to test neural network
