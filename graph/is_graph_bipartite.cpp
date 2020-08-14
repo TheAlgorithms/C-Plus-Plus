@@ -1,9 +1,8 @@
 /**
  *  @file is_graph_bipartite
  *
- *	@brief Algorithm to check whether a graph is bipartite
- *	(https://en.wikipedia.org/wiki/Bipartite_graph)
- *
+ *	@brief Algorithm to check whether a graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
+ *	
  *	@details
  *	A graph is a collection of nodes also called vertices and these vertices
  *	are connected by edges.A bipartite graph is a graph whose vertices can be
@@ -11,20 +10,19 @@
  *	connects a vertex in U to one in V. 	
  *	
  *	The given Algorithm will determine whether the given graph is bipartite or not
- *
- *
+ *	
+ *	
  * 	Example - Here is a graph g1 with 5 vertices and is bipartite
- *
+ *	
  *		1   4
  *	   / \ / \
  *	  2   3   5
  *	
  *	Example - Here is a graph G2 with 3 vertices and is not bipartite
- *
+ *	
  *		1 --- 2
  *		 \   /
  *		   3
- *
  *	
  *	@author [Akshat Vaya](https://github.com/AkVaya)
  *		
@@ -74,10 +72,16 @@ void graph::addEdge(int u, int v) {
  *	@brief function that checks whether the graph is bipartite or not
  *	the function returns true if the graph is a bipartite graph
  *	the function returns false if the graph is not a bipartite graph
+ *
+ *	@details
+ *	Here, side refers to the two disjoint subsets of the bipartite graph.
+ *	Initially, the values of side are set to -1 which is an unassigned state. A for loop is run for every vertex of the graph.
+ *	If the current edge has no side assigned to it, then a Breadth First Search operation is performed.
+ *	If two neighbours have the same side then the graph will not be bipartite and the value of check becomes false.
+ *	If and only if each pair of neighbours have different sides, the value of check will be true and hence the graph bipartite.
+ * 
  */
 bool graph::is_bipartite(){
-	n = adj.size();
-	side.resize(n,-1);
 	bool check = true;
 	std::queue<int> q;
 	for (int current_edge = 0; current_edge < n; ++current_edge)
