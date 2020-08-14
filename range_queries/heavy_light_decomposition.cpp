@@ -119,7 +119,7 @@ private:
 
 public:
 	/**
-	 * @brief Class parameterized constructor, resizes the and initilizes the data members
+	 * @brief Class parameterized constructor, resizes the and initializes the data members
 	 * @param nodes the total number of nodes in the tree
 	*/
 	explicit Tree(int nodes) 
@@ -162,7 +162,7 @@ public:
 
 	/**
 	 * @brief This function must be called after the tree adjacency list and node values are populated
-	 * The function initializes the required parametes, and populates the segment tree
+	 * The function initializes the required parameters, and populates the segment tree
 	*/
 	void init() {
 		assert(t_nodes > 0);
@@ -232,7 +232,7 @@ class SG {
 private:
 	/**
 	 * @brief Everything here is private,
-	 * and can only be acced thought the methods,
+	 * and can only be accessed through the methods,
 	 * in the derived class (HLD).
 	*/
 
@@ -267,7 +267,7 @@ private:
 	 * @param v the update value
 	*/
 	void update(int p, X v) {
-		for(p += s_size; p > 0; p >>= 1) s_tree[p] += v;
+		for(p += s_size; p > 0; p >>= 1) { s_tree[p] += v; }
 	}
 
 	/**
@@ -286,6 +286,8 @@ private:
 	
 	/**
 	 * @brief Set the initialization for the query data type, based on requirement
+
+	 * @details
 	 * Change the sret_init, based on requirement:
 	 * Sum Query: 0 (Default)
 	 * XOR Query: 0 (Default)
