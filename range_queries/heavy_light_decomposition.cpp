@@ -53,7 +53,6 @@
 */
 namespace range_queries {
 namespace heavy_light_decomposition {
-
 /**
  * @brief A Basic Tree, which supports binary lifting
  * @tparam the data type of the values stored in the tree nodes
