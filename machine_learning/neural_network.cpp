@@ -679,6 +679,7 @@ namespace machine_learning {
 
 /**
  * Function to test neural network
+ * @returns none
  */
 static void test() {
     // Creating network with 3 layers for "iris.csv"
