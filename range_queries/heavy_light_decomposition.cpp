@@ -3,21 +3,7 @@
  * @brief [Heavy Light Decomposition](https://en.wikipedia.org/wiki/Heavy_path_decomposition) implementation
  * @author: [Aniruthan R](https://github.com/aneee004)
  *
- * TODO: Support edge weight queries, by storing the edge weight value in it's child
- * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
-*/
-
-#include <iostream>
-#include <vector>
-#include <cstring>
-#include <string>
-#include <list>
-#include <cmath>
-#include <cassert>
-#include <algorithm>
-#include <numeric>
-
-/**
+ * @details
  * Function Documentation: 
  * Heavy-Light Decomposition is a technique on trees, that supports the following:
  * 1: Update node s, with a value v
@@ -47,14 +33,25 @@
  * Note: a and b, must be 0 indexed.
  *
  * Sample I/O at the bottom.
+ * TODO: Support edge weight queries, by storing the edge weight value in it's child
+ * algorithm verified by testing in CSES path queries: https://cses.fi/problemset/task/1138
  */
+
+#include <iostream>
+#include <vector>
+#include <cstring>
+#include <string>
+#include <list>
+#include <cmath>
+#include <cassert>
+#include <algorithm>
+#include <numeric>
 
 /**
  * @namespace range_queries
  * @brief Algorithms and Data Structures that support range queries and updates.
 */
 namespace range_queries {
-  
 namespace heavy_light_decomposition {
 
 /**
@@ -178,7 +175,7 @@ public:
 	 * The lifting is done in place, and the result is stored in the address pointed by p.
 	 * @param p a pointer to the variable that stores the node id
 	 * @param dist the distance to move up the tree
-	 * @return void.
+	 * @returns void.
 	*/
 	void lift(int* const p, int dist) {
 		for(int k = 0; k < t_maxlift; k++) {
@@ -194,7 +191,7 @@ public:
 	 * @brief The function returns the kth ancestor of a node
 	 * @param p the node id whose kth ancestor is to be found
 	 * @param dist the distance to move up the tree
-	 * @return the kth ancestor of node
+	 * @returns the kth ancestor of node
 	*/
 	int kth_ancestor(int p, const int& dist) {
 		lift(&p, dist);
@@ -205,7 +202,7 @@ public:
 	 * @brief The function returns the least common ancestor of two nodes
 	 * @param a node id_1
 	 * @param b node id_2
-	 * @return the least common ancestor of node a, and node b
+	 * @returns the least common ancestor of node a, and node b
 	*/
 	int lca(int a, int b) {
 		assert(a >= 0 and b >= 0 and a < t_nodes and b < t_nodes);
@@ -248,7 +245,7 @@ private:
 	 * @brief Function that specifies the type of operation involved when segments are combined
 	 * @param lhs the left segment
 	 * @param rhs the right segment
-	 * @return the combined result
+	 * @returns the combined result
 	*/
 	X combine(X lhs, X rhs) {
 		return lhs + rhs;
@@ -367,7 +364,7 @@ private:
 	 * @param a node where the path starts
 	 * @param b node where the path ends
 	 * a and b must belong to a single root to leaf chain
-	 * @return the sum of ndoe values in the simple path from a to b
+	 * @returns the sum of ndoe values in the simple path from a to b
 	*/
 	X chain_query(int a, int b) {
 		X ret = SG<X>::sret_init;
@@ -440,7 +437,7 @@ public:
 	 * @param a the node where the simple path starts
 	 * @param b the node where the simple path ends
 	 * (parameters are interchangeable, i.e., the function is commutative)
-	 * @return the sum of node values in the simple path from a to b
+	 * @returns the sum of node values in the simple path from a to b
 	*/
 	X query(int a, int b) {
 		int lc = Tree<X>::lca(a, b);
