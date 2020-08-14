@@ -17,6 +17,11 @@
 #include <random>
 
 /**
+ * @namespace machine_learning
+ * @brief Machine Learning algorithms
+ */
+namespace machine_learning {
+/**
  * Overloaded operator "<<" to print 2D vector
  * @tparam T typename of the vector
  * @param out std::ostream to output
