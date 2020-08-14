@@ -84,7 +84,7 @@
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
-  * [Lca](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lca.cpp)
+  * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
   * [Max Flow With Ford Fulkerson And Edmond Karp Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp)
   * [Prim](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/prim.cpp)
   * [Topological Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort.cpp)
