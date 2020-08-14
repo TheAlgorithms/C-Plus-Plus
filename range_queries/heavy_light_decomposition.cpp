@@ -58,6 +58,7 @@
 */
 namespace range_queries {
 
+namespace heavy_light_decomposition {
 /**
  * @brief A Basic Tree, which supports binary lifting
  * @tparam the data type of the values stored in the tree nodes
@@ -452,16 +453,16 @@ public:
 		return ret - Tree<X>::t_val[lc];
 	}
 };
-}  // namespace range_queries
+} // heavy_light_decomposition
+} // namespace range_queries
 
 /**
  * Test implementations
 */
 void test_1() {
 	std::cout << "Test 1:\n";
-	/**
-	 * Test details
-	*/
+
+	// Test details
 	int n = 5;
 	std::vector<int64_t> node_values = {4, 2, 5, 2, 1};
 	std::vector<std::vector<int>> edges = {
@@ -476,7 +477,7 @@ void test_1() {
 		{2, 4},
 	};
 	
-	range_queries::HLD<int64_t> hld(n);
+	range_queries::heavy_light_decomposition::HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
@@ -501,9 +502,8 @@ void test_1() {
 
 void test_2() {
 	std::cout << "Test 2:\n";
-	/**
-	 * Test details (Bamboo)
-	*/
+
+	// Test details (Bamboo)
 	int n = 10;
 	std::vector<int64_t> node_values = {1, 8, 6, 8, 6, 2, 9, 2, 3, 2};
 	std::vector<std::vector<int>> edges = {
@@ -530,7 +530,7 @@ void test_2() {
 		{1, 2, 7}
 	};
 	
-	range_queries::HLD<int64_t> hld(n);
+	range_queries::heavy_light_decomposition::HLD<int64_t> hld(n);
 	hld.set_node_val(node_values);
 	for(int i = 0; i < n - 1; i++) {
 		int u = edges[i][0], v = edges[i][1];
