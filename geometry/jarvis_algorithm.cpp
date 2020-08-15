@@ -73,7 +73,7 @@ namespace geometry {
              * Creates convex hull of a set of n points.
              * There must be 3 points at least for the convex hull to exist
              *
-             * returns an vector array containing points in space
+             * @returns an vector array containing points in space
              * which enclose all given points thus forming a hull
              */
             std::vector<Point> getConvexHull() const {
