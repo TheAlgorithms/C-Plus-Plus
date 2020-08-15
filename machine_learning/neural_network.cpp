@@ -1,8 +1,8 @@
 /**
- * @file neural_network.cpp
+ * @file 
  * @author [Deep Raval](https://github.com/imdeep2905)
  * 
- * @brief Implementation of [NeuralNetwork (aka Multilayer Perceptron)] (https://en.wikipedia.org/wiki/Multilayer_perceptron). 
+ * @brief Implementation of [Multilayer Perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron). 
  * 
  * @details
  * A multilayer perceptron (MLP) is a class of feedforward artificial neural network (ANN). The term MLP is used ambiguously, 
@@ -99,6 +99,9 @@ namespace machine_learning {
                 return 1 - x * x;
             }
         } // namespace activations
+        /** \namespace util_functions
+         * \brief Various utility functions used in Neural network
+         */      
         namespace util_functions {
             /**
              * Square function
@@ -113,18 +116,22 @@ namespace machine_learning {
              * @param X Value 
              * @return Returns x 
              */  
-            double identity(const double &x) {
+            double identity_function(const double &x) {
                 return x;
             }
         } // namespace util_functions
-        namespace {
+        /** \namespace layers
+         * \brief This namespace contains layers used 
+         * in MLP.
+         */   
+        namespace layers {
             /**
-             * Layer class is used to store all necessary information about 
+             * neural_network::layers::DenseLayer class is used to store all necessary information about 
              * the layers (i.e. neurons, activation and kernal). This class 
              * is used by NeuralNetwork class to store layers.
              * 
              */
-            class Layer {
+            class DenseLayer {
                 public:
                     // To store activation function and it's derivative
                     double (*activation_function)(const double &); 
@@ -134,13 +141,13 @@ namespace machine_learning {
                     std::vector <std::valarray <double>> kernal; // To store kernal (aka weights)
                     
                     /**
-                     * Constructor for Layer class
+                     * Constructor for neural_network::layers::DenseLayer class
                      * @param neurons number of neurons
                      * @param activation activation function for layer
                      * @param kernal_shape shape of kernal 
                      * @param random_kernal flag for whether to intialize kernal randomly
                      */
-                    Layer(const int &neurons, 
+                    DenseLayer(const int &neurons, 
                           const std::string &activation,
                           const std::pair<size_t, size_t> &kernal_shape,
                           const bool &random_kernal) {
@@ -159,8 +166,8 @@ namespace machine_learning {
                         }
                         else if (activation == "none") {
                             // Set identity function in casse of none is supplied
-                            activation_function = neural_network::util_functions::identity;
-                            dactivation_function = neural_network::util_functions::identity;
+                            activation_function = neural_network::util_functions::identity_function;
+                            dactivation_function = neural_network::util_functions::identity_function;
                         }
                         else {
                             // If supplied activation is invalid
@@ -180,12 +187,12 @@ namespace machine_learning {
                         }
                     }
                     /**
-                     * Constructor for Layer class
+                     * Constructor for neural_network::layers::DenseLayer class
                      * @param neurons number of neurons
                      * @param activation activation function for layer
                      * @param kernal values of kernal (useful in loading model)
                      */
-                    Layer (const int &neurons, 
+                    DenseLayer (const int &neurons, 
                            const std::string &activation, 
                            const std::vector <std::valarray<double>> &kernal) {
                         // Choosing activation (and it's derivative)
@@ -203,8 +210,8 @@ namespace machine_learning {
                         }
                         else if (activation == "none") {
                             // Set identity function in casse of none is supplied
-                            activation_function = neural_network::util_functions::identity;
-                            dactivation_function = neural_network::util_functions::identity;
+                            activation_function = neural_network::util_functions::identity_function;
+                            dactivation_function = neural_network::util_functions::identity_function;
                         }
                         else {
                             // If supplied activation is invalid
@@ -217,8 +224,22 @@ namespace machine_learning {
                         this -> neurons = neurons; // Setting number of neurons
                         this -> kernal = kernal;  // Setting supplied kernal values                 
                     }
+                                       
+                    /**
+                     * Copy constructor for DenseLayer class
+                     * 
+                     * @param layer instance of class to be copied
+                     */
+                    DenseLayer(const DenseLayer &layer) {
+                        // Copying activation, neurons and kernal
+                        this -> activation = layer.activation;
+                        this -> activation_function = layer.activation_function;
+                        this -> dactivation_function = layer.dactivation_function;
+                        this -> neurons = layer.neurons;
+                        this -> kernal = layer.kernal;
+                    }
             };
-        } // Unnamed namespace
+        } // layers namespace
         /**
          * NeuralNetwork class is implements MLP. This class is
          * used by actual user to create and train networks.
@@ -226,7 +247,7 @@ namespace machine_learning {
          */
         class NeuralNetwork {
             private:
-                std::vector <Layer> layers; // To store layers
+                std::vector <neural_network::layers::DenseLayer> layers; // To store layers
                 /**
                  * Private Constructor for class NeuralNetwork. This constructor
                  * is used internally to load model.
@@ -249,7 +270,7 @@ namespace machine_learning {
                     }
                     // Reconstructing all pretrained layers
                     for(size_t i = 0; i < config.size(); i++) {
-                        layers.emplace_back(Layer(config[i].first, 
+                        layers.emplace_back(neural_network::layers::DenseLayer(config[i].first, 
                                                config[i].second,
                                                kernals[i])); 
                     } 
@@ -265,11 +286,11 @@ namespace machine_learning {
                 __detailed_single_prediction (const std::vector<std::valarray <double>> &X) {
                     std::vector<std::vector < std::valarray <double> >> details;
                     std::vector < std::valarray <double> > current_pass = X;
-                    details.push_back(X);
+                    details.emplace_back(X);
                     for(const auto &l : layers) {
                         current_pass = multiply(current_pass, l.kernal);
                         current_pass = apply_function(current_pass, l.activation_function);
-                        details.push_back(current_pass);
+                        details.emplace_back(current_pass);
                     }
                     return details;
                 }
@@ -279,6 +300,7 @@ namespace machine_learning {
                  * is used to create empty variable of type NeuralNetwork class.
                  */   
                 NeuralNetwork() = default;
+
                 /**
                  * Constructor for class NeuralNetwork. This constructor
                  * is used by user.
@@ -297,15 +319,15 @@ namespace machine_learning {
                         std::cerr << "Atleast two layers are required";
                         std::exit(EXIT_FAILURE);
                     }
-                    // Sepratly creating first layer so it can have unit matrix 
+                    // Separately creating first layer so it can have unit matrix 
                     // as kernal.
-                    layers.push_back(Layer(config[0].first, 
+                    layers.push_back(neural_network::layers::DenseLayer(config[0].first, 
                                            config[0].second, 
                                            {config[0].first, config[0].first},
                                            false));
                     // Creating remaining layers
                     for(size_t i = 1; i < config.size(); i++) {
-                        layers.push_back(Layer(config[i].first, 
+                        layers.push_back(neural_network::layers::DenseLayer(config[i].first, 
                                                config[i].second,
                                                {config[i - 1].first, config[i].first},
                                                true));
@@ -314,21 +336,36 @@ namespace machine_learning {
                 }
 
                 /**
+                 * Copy Constructor for class NeuralNetwork. 
+                 * 
+                 * @param model instance of class to be copied.
+                 */   
+                NeuralNetwork(const NeuralNetwork &model) {
+                    this -> layers = model.layers; // Copying layers
+                    std::cout << "INFO: Network constructed successfully" << std::endl;
+                }
+
+                /**
                  * Function to get X and Y from csv file (where X = data, Y = label)
                  * @param file_name csv file name
                  * @param last_label flag for whether label is in first or last column
                  * @param normalize flag for whether to normalize data 
+                 * @param slip_lines number of lines to skip
                  * @return returns pair of X and Y
                  */  
                 std::pair<std::vector<std::vector<std::valarray<double>>>, std::vector<std::vector<std::valarray<double>>>>
                 get_XY_from_csv(const std::string &file_name, 
                                      const bool &last_label, 
-                                     const bool &normalize) {
+                                     const bool &normalize,
+                                     const int &slip_lines = 1) {
                     std::ifstream in_file; // Ifstream to read file
                     in_file.open(file_name.c_str(), std::ios::in); // Open file
                     std::vector <std::vector<std::valarray<double>>> X, Y; // To store X and Y
                     std::string line; // To store each line
-                    std::getline(in_file, line, '\n'); // Ignore first line
+                    // Skip lines
+                    for(int i = 0; i < slip_lines; i ++) {
+                        std::getline(in_file, line, '\n'); // Ignore line
+                    }
                     // While file has information
                     while(!in_file.eof() && std::getline(in_file, line, '\n'))
                     {
@@ -379,7 +416,7 @@ namespace machine_learning {
 
                 /**
                  * Function to get prediction of model on single sample.
-                 * @param X X data
+                 * @param X array of feature vectors
                  * @return returns predictions as vector
                  */  
                 std::vector<std::valarray <double>> 
@@ -392,7 +429,7 @@ namespace machine_learning {
 
                 /**
                  * Function to get prediction of model on batch
-                 * @param X X data
+                 * @param X array of feature vectors
                  * @return returns predicted values as vector
                  */  
                 std::vector < std::vector <std::valarray<double>>>
@@ -408,17 +445,17 @@ namespace machine_learning {
 
                 /**
                  * Function to fit model on supplied data
-                 * @param X X data
-                 * @param Y Y data
-                 * @param epochs number of epochs
-                 * @param learning_rate learning rate 
+                 * @param X array of feature vectors
+                 * @param Y array of target values
+                 * @param epochs number of epochs (default = 100)
+                 * @param learning_rate learning rate (default = 0.01)
                  * @param batch_size batch size for gradient descent (default = 32)
-                 * @param shuffle flag for whether to shuffle data
+                 * @param shuffle flag for whether to shuffle data (default = true)
                  */  
                 void fit(const std::vector < std::vector <std::valarray<double>>>  &X_, 
                          const std::vector < std::vector <std::valarray<double>>>  &Y_, 
-                         const int &epochs, 
-                         const double &learning_rate,
+                         const int &epochs = 100, 
+                         const double &learning_rate = 0.01,
                          const size_t &batch_size = 32,
                          const bool &shuffle = true) {
                     std::vector < std::vector <std::valarray<double>>> X = X_, Y = Y_;
@@ -500,18 +537,20 @@ namespace machine_learning {
                  * @param epochs number of epochs
                  * @param learning_rate learning rate 
                  * @param normalize flag for whether to normalize data 
+                 * @param slip_lines number of lines to skip
                  * @param batch_size batch size for gradient descent (default = 32)
-                 * @param shuffle flag for whether to shuffle data
+                 * @param shuffle flag for whether to shuffle data (default = true)
                  */                
                 void fit_from_csv (const std::string &file_name, 
                                      const bool &last_label,
                                      const int &epochs, 
                                      const double &learning_rate,
                                      const bool &normalize,
+                                     const int &slip_lines = 1,
                                      const size_t &batch_size = 32,
                                      const bool &shuffle = true) {
                     // Getting training data from csv file                    
-                    auto data = this -> get_XY_from_csv(file_name, last_label, normalize);
+                    auto data = this -> get_XY_from_csv(file_name, last_label, normalize, slip_lines);
                     // Fit the model on training data
                     this -> fit(data.first, data.second, epochs, learning_rate, batch_size, shuffle);
                     return;
@@ -519,8 +558,8 @@ namespace machine_learning {
 
                 /**
                  * Function to evaluate model on supplied data
-                 * @param X X data (input data)
-                 * @param Y Y data (label)
+                 * @param X array of feature vectors (input data)
+                 * @param Y array of target values (label)
                  */  
                 void evaluate(const std::vector< std::vector <std::valarray <double>>> &X, 
                                 const std::vector< std::vector <std::valarray <double>>> &Y) {
@@ -550,12 +589,14 @@ namespace machine_learning {
                  * @param file_name csv file name
                  * @param last_label flag for whether label is in first or last column
                  * @param normalize flag for whether to normalize data 
+                 * @param slip_lines number of lines to skip
                  */                
                 void evaluate_from_csv (const std::string &file_name, 
                                      const bool &last_label,
-                                     const bool &normalize) {
+                                     const bool &normalize,
+                                     const int &slip_lines = 1) {
                     // Getting training data from csv file
-                    auto data = this -> get_XY_from_csv(file_name, last_label, normalize);
+                    auto data = this -> get_XY_from_csv(file_name, last_label, normalize, slip_lines);
                     // Evaluating model
                     this -> evaluate(data.first, data.second);
                     return;
@@ -574,22 +615,22 @@ namespace machine_learning {
                     std::ofstream out_file; // Ofstream to write in file
                     // Open file in out|trunc mode
                     out_file.open(file_name.c_str(), std::ofstream::out | std::ofstream::trunc);
-                    /*
+                    /**
                         Format in which model is saved:
 
                         total_layers
-                        neurons(1st Layer) activation_name(1st Layer)
-                        kernal_shape(1st Layer)
+                        neurons(1st neural_network::layers::DenseLayer) activation_name(1st neural_network::layers::DenseLayer)
+                        kernal_shape(1st neural_network::layers::DenseLayer)
                         kernal_values
                         .
                         .
                         .
-                        neurons(Nth Layer) activation_name(Nth Layer)
-                        kernal_shape(Nth Layer)
+                        neurons(Nth neural_network::layers::DenseLayer) activation_name(Nth neural_network::layers::DenseLayer)
+                        kernal_shape(Nth neural_network::layers::DenseLayer)
                         kernal_value
 
                         For Example, pretrained model with 3 layers:
-
+                        <pre>
                         3
                         4 none
                         4 4
@@ -611,7 +652,7 @@ namespace machine_learning {
                         -2.01336 -0.0219682 1.44145 
                         1.72853 -0.465264 -0.705373 
                         -0.908409 -0.740547 0.376416 
-
+                        </pre>
                     */
                     // Saving model in the same format
                     out_file << layers.size();
@@ -703,7 +744,7 @@ static void test() {
     // Printing summary of model
     myNN.summary();
     // Training Model
-    myNN.fit_from_csv("iris.csv", true, 100, 0.3, false, 32, true);
+    myNN.fit_from_csv("iris.csv", true, 100, 0.3, false, 2, 32, true);
     // Testing predictions of model
     assert(machine_learning::argmax(myNN.single_predict({{5,3.4,1.6,0.4}})) == 0);
     assert(machine_learning::argmax(myNN.single_predict({{6.4,2.9,4.3,1.3}})) == 1);
