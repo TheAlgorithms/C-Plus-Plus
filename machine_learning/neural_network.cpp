@@ -118,6 +118,12 @@ namespace machine_learning {
             }
         } // namespace util_functions
         namespace {
+            /**
+             * Layer class is used to store all necessary information about 
+             * the layers (i.e. neurons, activation and kernal). This class 
+             * is used by NeuralNetwork class to store layers.
+             * 
+             */
             class Layer {
                 public:
                     // To store activation function and it's derivative
@@ -158,9 +164,9 @@ namespace machine_learning {
                         }
                         else {
                             // If supplied activation is invalid
-                            std::cout << "ERROR: Invalid argument for layer -> constructor -> activation, ";
-                            std::cout << "Expected from {none, sigmoid, relu, tanh} got ";
-                            std::cout << activation << std::endl;
+                            std::cerr << "ERROR: Invalid argument for layer -> constructor -> activation, ";
+                            std::cerr << "Expected from {none, sigmoid, relu, tanh} got ";
+                            std::cerr << activation << std::endl;
                             std::exit(EXIT_FAILURE);
                         }
                         this -> activation = activation; // Setting activation name
@@ -202,9 +208,9 @@ namespace machine_learning {
                         }
                         else {
                             // If supplied activation is invalid
-                            std::cout << "ERROR: Invalid argument for layer -> constructor -> activation, ";
-                            std::cout << "Expected from {none, sigmoid, relu, tanh} got ";
-                            std::cout << activation << std::endl;
+                            std::cerr << "ERROR: Invalid argument for layer -> constructor -> activation, ";
+                            std::cerr << "Expected from {none, sigmoid, relu, tanh} got ";
+                            std::cerr << activation << std::endl;
                             std::exit(EXIT_FAILURE);
                         }
                         this -> activation = activation; // Setting activation name
@@ -213,6 +219,11 @@ namespace machine_learning {
                     }
             };
         } // Unnamed namespace
+        /**
+         * NeuralNetwork class is implements MLP. This class is
+         * used by actual user to create and train networks.
+         * 
+         */
         class NeuralNetwork {
             private:
                 std::vector <Layer> layers; // To store layers
@@ -226,14 +237,14 @@ namespace machine_learning {
                               const std::vector <std::vector<std::valarray<double>>> &kernals) {
                     // First layer should not have activation
                     if(config.begin() -> second != "none") {
-                        std::cout << "ERROR: First layer can't have activation other than none";
-                        std::cout << std::endl;
+                        std::cerr << "ERROR: First layer can't have activation other than none";
+                        std::cerr << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     // Network should have atleast two layers
                     if(config.size() <= 1) {
-                        std::cout << "ERROR: Invalid size of network, ";
-                        std::cout << "Atleast two layers are required";
+                        std::cerr << "ERROR: Invalid size of network, ";
+                        std::cerr << "Atleast two layers are required";
                         std::exit(EXIT_FAILURE);
                     }
                     // Reconstructing all pretrained layers
@@ -276,14 +287,14 @@ namespace machine_learning {
                 explicit NeuralNetwork(const std::vector <std::pair<int, std::string>> &config) {
                     // First layer should not have activation
                     if(config.begin() -> second != "none") {
-                        std::cout << "ERROR: First layer can't have activation other than none";
-                        std::cout << std::endl;
+                        std::cerr << "ERROR: First layer can't have activation other than none";
+                        std::cerr << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     // Network should have atleast two layers
                     if(config.size() <= 1) {
-                        std::cout << "ERROR: Invalid size of network, ";
-                        std::cout << "Atleast two layers are required";
+                        std::cerr << "ERROR: Invalid size of network, ";
+                        std::cerr << "Atleast two layers are required";
                         std::exit(EXIT_FAILURE);
                     }
                     // Sepratly creating first layer so it can have unit matrix 
@@ -413,7 +424,7 @@ namespace machine_learning {
                     std::vector < std::vector <std::valarray<double>>> X = X_, Y = Y_;
                     // Both label and input data should have same size
                     if (X.size() != Y.size()) {
-                        std::cout << "ERROR : X and Y in fit have different sizes" << std::endl;
+                        std::cerr << "ERROR : X and Y in fit have different sizes" << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     std::cout << "INFO: Training Started" << std::endl;
@@ -694,9 +705,9 @@ static void test() {
     // Training Model
     myNN.fit_from_csv("iris.csv", true, 100, 0.3, false, 32, true);
     // Testing predictions of model
-    assert(argmax(myNN.single_predict({{5,3.4,1.6,0.4}})) == 0);
-    assert(argmax(myNN.single_predict({{6.4,2.9,4.3,1.3}})) == 1);
-    assert(argmax(myNN.single_predict({{6.2,3.4,5.4,2.3}})) == 2);
+    assert(machine_learning::argmax(myNN.single_predict({{5,3.4,1.6,0.4}})) == 0);
+    assert(machine_learning::argmax(myNN.single_predict({{6.4,2.9,4.3,1.3}})) == 1);
+    assert(machine_learning::argmax(myNN.single_predict({{6.2,3.4,5.4,2.3}})) == 2);
     return;
 }
 
