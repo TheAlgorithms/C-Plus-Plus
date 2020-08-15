@@ -12,8 +12,8 @@ elements in input array and ‘Range’ is number of possible values in array.
 
 void pigeonSort(int array[], int n) {
     /*
-Finding min and max*
-*/
+    Finding min and max*
+    */
     int min = array[0];
     int max = array[0];
 
@@ -56,14 +56,14 @@ void test() {
     int test_array[] = {8, 3, 2, 7, 4, 6, 8};
     int n = sizeof(test_array) / sizeof(test_array[0]);
 
-    pigeonSort(test_array, 7);
+    pigeonSort(test_array, n);
     assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
     std::cout << " Passed\n";
 
     /*
     Printing sorted array
     */
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < n; i++) {
         std::cout << test_array[i] << " ";
     }
 }
