@@ -6,7 +6,7 @@
  * @details
  * Heavy-Light Decomposition is a technique on trees, that supports the following:
  * 1. Update node s, with a value v
- * 2: Return the (sum) of all node values on the simple path from a to b
+ * 2. Return the (sum) of all node values on the simple path from a to b
  * (sum) can also be replced with XOR, OR, AND, min, or max
  *
  * The update is done in O(log n) time, and
@@ -59,29 +59,28 @@ namespace heavy_light_decomposition {
 /**
  * @brief A Basic Tree, which supports binary lifting
  * @tparam the data type of the values stored in the tree nodes
+ * @details Deleting the default constructor
+ * An instance can only be created with the number of nodes
+ * Defaults:
+ * t_node indexing are zero based
+ * t_root is 0
+ * depth of root_node is 0
+ * Supports:
+ * lift :- lift a node k units up the tree
+ * kth_ancestor :- returns the kth ancestor
+ * lca :- returns the least common ancestor
 */
 template<typename X>
 class Tree {
-	// Deleting the default constructor
-	// An instance can only be created with the number of nodes
-	//
-	// Defaults:
-	// t_node indexing are zero based
-	// t_root is 0
-	// depth of root_node is 0
-	//
-	// Supports:
-	// lift :- lift a node k units up the tree
-	// kth_ancestor :- returns the kth ancestor
-	// lca :- returns the least common ancestor
+	// 
 	
 private:
-	std::vector<std::list<int>> t_adj;
-	const int t_nodes, t_maxlift;
-	std::vector<std::vector<int>> t_par;
-	std::vector<int> t_depth, t_size;
-	int t_root;
-	std::vector<X> t_val;
+	std::vector<std::list<int>> t_adj; ///> an adjacency list to stores the tree edges
+	const int t_nodes, t_maxlift; ///> number of nodes, and maximum possible height of the tree
+	std::vector<std::vector<int>> t_par; ///> a matrix to store every node's 2^kth parent
+	std::vector<int> t_depth, t_size; ///> a vector to store the depth of a node, and the subtree size rooted at node
+	int t_root; ///> the root of the tree
+	std::vector<X> t_val; ///> values of nodes
 	template<typename T> friend class HLD;
 	
 	/**
@@ -244,10 +243,10 @@ private:
 	 * in the derived class (HLD)
 	*/
 
-	std::vector<X> s_tree;
-	int s_size;
+	std::vector<X> s_tree; ///> the segment tree, stored as a vector
+	int s_size; ///> number of leaves in the segment tree
+	X sret_init = 0; ///> inital query return value
 	template<typename T> friend class HLD;
-	X sret_init = 0;
 	
 	/**
 	 * @brief Function that specifies the type of operation involved when segments are combined
@@ -318,8 +317,8 @@ private:
 template<typename X>
 class HLD : public Tree<X>, public SG<X> {
 private:
-	int label;
-	std::vector<int> h_label, h_heavychlid, h_parent;
+	int label; ///> utility member to assign labels in dfs_labels()
+	std::vector<int> h_label, h_heavychlid, h_parent; ///> stores the label of a node, heavy child of a node, and top of the heavy chain from node
 
 	/**
 	 * @brief Utility function to assign heavy child to each node (-1 for a leaf node)
