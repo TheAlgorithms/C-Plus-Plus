@@ -6,18 +6,20 @@ approximately the same. It requires O(n + Range) time where n is number of
 elements in input array and ‘Range’ is number of possible values in array.
 */
 #include <algorithm>
+#include <array>
 #include <cassert>
 #include <iostream>
-#include <list>
+#include <vector>
 
-void pigeonSort(int array[], int n) {
+template <std::size_t N = 7>
+void pigeonSort(std::array<int, N> &array, int *n) {
     /*
     Finding min and max*
     */
     int min = array[0];
     int max = array[0];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < *n; i++) {
         if (min > array[i]) {
             min = array[i];
         }
@@ -29,12 +31,12 @@ void pigeonSort(int array[], int n) {
     range refers to the number of holes required
     */
     int range = max - min + 1;
-    std::list<int> hole[range];
+    std::vector<int> hole[range];
 
     /*
     Copying all array values to pigeonhole
     */
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < *n; i++) {
         hole[array[i] - min].push_back(array[i]);
     }
 
@@ -52,9 +54,12 @@ void pigeonSort(int array[], int n) {
     }
 }
 
+template <std::size_t N = 7>
 void test() {
-    int test_array[] = {8, 3, 2, 7, 4, 6, 8};
-    int n = sizeof(test_array) / sizeof(test_array[0]);
+    std::array<int, 7> test_array = {8, 3, 2, 7, 4, 6, 8};
+    int *n = nullptr;
+    int n1 = sizeof(test_array) / sizeof(test_array[0]);
+    n = &n1;
 
     pigeonSort(test_array, n);
     assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
@@ -63,7 +68,7 @@ void test() {
     /*
     Printing sorted array
     */
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n1; i++) {
         std::cout << test_array[i] << " ";
     }
 }
