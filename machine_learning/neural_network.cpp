@@ -239,7 +239,7 @@ namespace machine_learning {
                         this -> kernal = layer.kernal;
                     }
             };
-        } // layers namespace
+        } // namespace layers
         /**
          * NeuralNetwork class is implements MLP. This class is
          * used by actual user to create and train networks.
