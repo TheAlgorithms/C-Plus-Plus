@@ -225,19 +225,32 @@ namespace machine_learning {
                         this -> kernal = kernal;  // Setting supplied kernal values                 
                     }
                                        
-                    /**
-                     * Copy constructor for DenseLayer class
-                     * 
-                     * @param layer instance of class to be copied
-                     */
-                    DenseLayer(const DenseLayer &layer) {
-                        // Copying activation, neurons and kernal
-                        this -> activation = layer.activation;
-                        this -> activation_function = layer.activation_function;
-                        this -> dactivation_function = layer.dactivation_function;
-                        this -> neurons = layer.neurons;
-                        this -> kernal = layer.kernal;
-                    }
+                /**
+                 * Copy Constructor for class DenseLayer. 
+                 * 
+                 * @param model instance of class to be copied.
+                 */
+                DenseLayer(const DenseLayer &layer) = default;   
+
+                /**
+                 * Destructor for class DenseLayer. 
+                 */                   
+                ~DenseLayer() = default;
+
+                /**
+                 * Copy assignment operator for class DenseLayer
+                 */
+                DenseLayer& operator = (const DenseLayer &layer) = default;
+
+                /**
+                 * Move constructor for class DenseLayer
+                 */
+                DenseLayer(DenseLayer &&) = default;
+
+                /**
+                 * Move assignment operator for class DenseLayer
+                 */
+                DenseLayer& operator = (DenseLayer &&) = default;
             };
         } // namespace layers
         /**
@@ -339,11 +352,28 @@ namespace machine_learning {
                  * Copy Constructor for class NeuralNetwork. 
                  * 
                  * @param model instance of class to be copied.
-                 */   
-                NeuralNetwork(const NeuralNetwork &model) {
-                    this -> layers = model.layers; // Copying layers
-                    std::cout << "INFO: Network constructed successfully" << std::endl;
-                }
+                 */
+                NeuralNetwork(const NeuralNetwork &model) = default;   
+
+                /**
+                 * Destructor for class NeuralNetwork. 
+                 */                   
+                ~NeuralNetwork() = default;
+
+                /**
+                 * Copy assignment operator for class NeuralNetwork
+                 */
+                NeuralNetwork& operator = (const NeuralNetwork &model) = default;
+
+                /**
+                 * Move constructor for class NeuralNetwork
+                 */
+                NeuralNetwork(NeuralNetwork &&) = default;
+
+                /**
+                 * Move assignment operator for class NeuralNetwork
+                 */
+                NeuralNetwork& operator = (NeuralNetwork &&) = default;
 
                 /**
                  * Function to get X and Y from csv file (where X = data, Y = label)
