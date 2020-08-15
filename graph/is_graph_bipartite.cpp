@@ -1,5 +1,5 @@
 /**
- *  @file is_graph_bipartite
+ *  @file
  *
  *	@brief Algorithm to check whether a graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
  *	
@@ -11,7 +11,7 @@
  *	
  *	The given Algorithm will determine whether the given graph is bipartite or not
  *	
- *	
+ *	<pre>
  * 	Example - Here is a graph g1 with 5 vertices and is bipartite
  *	
  *		1   4
@@ -24,6 +24,8 @@
  *		 \   /
  *		   3
  *	
+ *	</pre>
+ *
  *	@author [Akshat Vaya](https://github.com/AkVaya)
  *		
  */
