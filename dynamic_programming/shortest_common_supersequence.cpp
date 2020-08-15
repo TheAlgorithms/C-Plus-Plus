@@ -1,22 +1,47 @@
-// Shortest common supersequence - Dynamic Programming
-
-/*
-Definition: The Shortest Common Supersequence (SCS) is a string Z which is the shortest supersequence of two given strings
-X and Y (which may not be continuously present in Z, but order must be maintained).
-
-example 1: 
-X: 'ABCXYZ', Y: 'ABZ' then Z will be 'ABCXYZ' (y is not continuous but in order)
-
-example 2:
-X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
+/**
+ * @shortest_common_supersequence.cpp
+ * @brief SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z, but order is maintained).
+ * @details
+ * Details for [Shortest Common Supersequence](https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem)
+ * 
+ * The idea is to use lookup table method as used in LCS.
+ * For example: example 1:-
+ * X: 'ABCXYZ', Y: 'ABZ' then Z will be 'ABCXYZ' (y is not continuous but in order)
+ * 
+ * For example: example 2:-
+ * X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
+ * @author [Ridhish Jain](https://github.com/ridhishjain)
+ * @see realted problem [Leetcode](https://leetcode.com/problems/shortest-common-supersequence/)
 */
 
+// header files
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <cassert>
 
+/**
+ * Function scs
+ * @param string first string 'X'
+ * @param string second string 'Y'
+ * @param int length of first string
+ * @param int length of second string
+ * @return string superSequence of X and Y 
+*/
 std::string scs(std::string str1, std::string str2, int n1, int n2) {
+
+    // Edge cases
+    // If either n1 or n2 or both are zeroes
+    if(n1 == 0 && n2 == 0) {
+        return "";
+    }
+    else if(n1 == 0) {
+        return str2;
+    }
+    else if(n2 == 0) {
+        return str1;
+    }
 
     // creating lookup table
     std::vector <std::vector <int>> lookup(n1 + 1, std::vector <int> (n2 + 1, 0));
@@ -33,17 +58,22 @@ std::string scs(std::string str1, std::string str2, int n1, int n2) {
     }
 
     // making supersequence
+    // i and j are initially pointed towards end of strings
+    // Super-sequence will be constructed backwards
     int i=n1;
     int j=n2;
     std::string s;
       
     while(i>0 && j>0) {
-            
+
+        // If the characters at i and j of both strings are same
+        // We only need to add them once in s
         if(str1[i-1] == str2[j-1]) {
             s.push_back(str1[i-1]);
             i--;
             j--;
         }
+        // otherwise we check lookup table for recurrences of characters
         else {
             if(lookup[i-1][j] > lookup[i][j-1]) {
                 s.push_back(str1[i-1]);
@@ -57,21 +87,75 @@ std::string scs(std::string str1, std::string str2, int n1, int n2) {
     }
 
     // copying remaining elements
+    // if j becomes 0 before i
     while(i > 0) {
         s.push_back(str1[i-1]);
         i--;
     }
+
+    // if i becomes 0 before j
     while(j > 0) {
         s.push_back(str2[j-1]);
         j--;
     }
-      
+
+    // As the super sequence is constructd backwards
+    // reversing the string before returning gives us the correct output  
     reverse(s.begin(), s.end());
     return s;
 }
 
+/** 
+ * Test Function
+ * @return void 
+*/
+void test() {
+
+    // custom input vector
+    std::vector <std::vector <std::string>> scsStrings {
+        {"ABCXYZ", "ABZ"},
+        {"ABZ", "ABCXYZ"},
+        {"AGGTAB", "GXTXAYB"},
+        {"X", "Y"},
+    };
+
+    // calculated output vector by scs function
+    std::vector <std::string> calculatedOutput;
+    for(int i=0; i < scsStrings.size(); i++) {
+        int n1 = scsStrings[i][0].length();
+        int n2 = scsStrings[i][1].length();
+        calculatedOutput.push_back(scs(
+            scsStrings[i][0], scsStrings[i][1], n1, n2
+        ));
+    }
+
+    // expected output vector acc to problem statement
+    std::vector <std::string> expectedOutput {
+        "ABCXYZ",
+        "ABCXYZ",
+        "AGGXTXAYB",
+        "XY"
+    };
+
+    // Testing implementation via assert function
+    // It will throw error if any of the expected test fails
+    // Else it will give nothing
+    for(int i=0; i < scsStrings.size(); i++) {
+        assert(expectedOutput[i] == calculatedOutput[i]);
+    }
+
+    std::cout << "All tests passed successfully!\n";
+    return;
+}
+
+/** Main function (driver code)*/
 int main() {
 
+    // test for implementation
+    std::cout << "\nTesting implementation\n";
+    test();
+
+    // user input
     std::string s1, s2;
     std::cin >> s1;
     std::cin >> s2;
@@ -80,19 +164,7 @@ int main() {
     int n2 = s2.length();
     std::string ans;
 
-    if(n1 == 0 && n2 == 0) {
-        std::cout << "";
-        return 0;
-    }
-    else if(n1 == 0) {
-        std::cout << s2;
-        return 0;
-    }
-    else if(n2 == 0) {
-        std::cout << s1;
-        return 0;
-    }
-
+    // user output
     ans = scs(s1, s2, n1, n2);
     std::cout << ans;
     return 0;
