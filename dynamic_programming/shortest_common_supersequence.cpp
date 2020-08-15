@@ -13,21 +13,8 @@ X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
 
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
-
-void reverse(string& s) {
-    int start = 0;
-    int end = s.length() - 1;
-    char ch;
-
-    while(start < end) {
-        ch = s[start];
-        s[start] = s[end];
-        s[end] = ch;
-        start++;
-        end--;
-    }
-}
 
 string scs(string str1, string str2, int n1, int n2) {
 
@@ -87,7 +74,7 @@ string scs(string str1, string str2, int n1, int n2) {
         j--;
     }
       
-    reverse(s);
+    reverse(s.begin(), s.end());
     return s;
 }
 
