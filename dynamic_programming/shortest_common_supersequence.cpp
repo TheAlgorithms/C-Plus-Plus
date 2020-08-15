@@ -15,12 +15,11 @@ X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
 #include <string>
 #include <vector>
 #include <algorithm>
-using namespace std;
 
-string scs(string str1, string str2, int n1, int n2) {
+std::string scs(std::string str1, std::string str2, int n1, int n2) {
 
     // creating lookup table
-    vector <vector <int>> lookup(n1 + 1, vector <int> (n2 + 1, 0));
+    std::vector <std::vector <int>> lookup(n1 + 1, std::vector <int> (n2 + 1, 0));
       
     for(int i=1; i <= n1; i++) {
         for(int j=1; j <= n2; j++) {
@@ -28,7 +27,7 @@ string scs(string str1, string str2, int n1, int n2) {
                 lookup[i][j] = lookup[i-1][j-1] + 1;
             }
             else {
-                lookup[i][j] = max(lookup[i-1][j], lookup[i][j-1]);
+                lookup[i][j] = std::max(lookup[i-1][j], lookup[i][j-1]);
             }
         }
     }
@@ -36,7 +35,7 @@ string scs(string str1, string str2, int n1, int n2) {
     // making supersequence
     int i=n1;
     int j=n2;
-    string s;
+    std::string s;
       
     while(i>0 && j>0) {
             
@@ -73,15 +72,28 @@ string scs(string str1, string str2, int n1, int n2) {
 
 int main() {
 
-    string s1, s2;
-    cin >> s1;
-    cin >> s2;
+    std::string s1, s2;
+    std::cin >> s1;
+    std::cin >> s2;
 
     int n1 = s1.length();
     int n2 = s2.length();
-    string ans;
+    std::string ans;
+
+    if(n1 == 0 && n2 == 0) {
+        std::cout << "";
+        return 0;
+    }
+    else if(n1 == 0) {
+        std::cout << s2;
+        return 0;
+    }
+    else if(n2 == 0) {
+        std::cout << s1;
+        return 0;
+    }
 
     ans = scs(s1, s2, n1, n2);
-    cout << ans;
+    std::cout << ans;
     return 0;
 }
