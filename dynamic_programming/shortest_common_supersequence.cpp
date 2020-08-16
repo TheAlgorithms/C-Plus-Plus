@@ -1,7 +1,8 @@
 /**
  * @file
  * @brief SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z, but order is maintained).
- * 
+ *
+ * @details
  * The idea is to use lookup table method as used in LCS.
  * For example: example 1:-
  * X: 'ABCXYZ', Y: 'ABZ' then Z will be 'ABCXYZ' (y is not continuous but in order)
