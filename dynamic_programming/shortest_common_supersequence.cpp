@@ -123,7 +123,6 @@ namespace dynamic_programming {
  * @return void 
 */
 static void test() {
-
     // custom input vector
     std::vector <std::vector <std::string>> scsStrings {
         {"ABCXYZ", "ABZ"},
