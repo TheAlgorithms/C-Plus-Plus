@@ -111,9 +111,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a618dce14b4883c20aace1d743d3a3f60"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a618dce14b4883c20aace1d743d3a3f60">breadth_first_search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&gt; &amp;<a class="el" href="../../dd/d9b/classgraph.html">graph</a>, int start)</td></tr>
 <tr class="memdesc:a618dce14b4883c20aace1d743d3a3f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function performs the breadth first search algorithm over the graph.  <a href="../../df/dce/namespacegraph.html#a618dce14b4883c20aace1d743d3a3f60">More...</a><br /></td></tr>
 <tr class="separator:a618dce14b4883c20aace1d743d3a3f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454891267187a5ec6c6e3f3ad5203ff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a454891267187a5ec6c6e3f3ad5203ff1">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt;&gt;&gt; *<a class="el" href="../../dd/d9b/classgraph.html#a45045da3d080cb81472ce6d5cc02b911">adj</a>, int u, int v, int w)</td></tr>
+<tr class="memdesc:a454891267187a5ec6c6e3f3ad5203ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that add edge between two nodes or vertices of graph.  <a href="../../df/dce/namespacegraph.html#a454891267187a5ec6c6e3f3ad5203ff1">More...</a><br /></td></tr>
+<tr class="separator:a454891267187a5ec6c6e3f3ad5203ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868530bfaed30e57290a76d5b4402d50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a868530bfaed30e57290a76d5b4402d50">dijkstra</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt;&gt;&gt; *<a class="el" href="../../dd/d9b/classgraph.html#a45045da3d080cb81472ce6d5cc02b911">adj</a>, int s, int t)</td></tr>
+<tr class="memdesc:a868530bfaed30e57290a76d5b4402d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and returns the shortest distance of target from the source.  <a href="../../df/dce/namespacegraph.html#a868530bfaed30e57290a76d5b4402d50">More...</a><br /></td></tr>
+<tr class="separator:a868530bfaed30e57290a76d5b4402d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms. </p>
+<p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="adbe6cd1fd148173ce6a01669925d2d72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adbe6cd1fd148173ce6a01669925d2d72">&#9670;&nbsp;</a></span>add_directed_edge()</h2>
@@ -216,6 +223,65 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a454891267187a5ec6c6e3f3ad5203ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454891267187a5ec6c6e3f3ad5203ff1">&#9670;&nbsp;</a></span>addEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph::addEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt;&gt;&gt; *&#160;</td>
+          <td class="paramname"><em>adj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that add edge between two nodes or vertices of graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>any node or vertex of graph </td></tr>
+    <tr><td class="paramname">v</td><td>any node or vertex of graph </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    (*adj)[u - 1].push_back(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(v - 1, w));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// (*adj)[v - 1].push_back(std::make_pair(u - 1, w));</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a454891267187a5ec6c6e3f3ad5203ff1_cgraph.svg" width="280" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a618dce14b4883c20aace1d743d3a3f60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a618dce14b4883c20aace1d743d3a3f60">&#9670;&nbsp;</a></span>breadth_first_search()</h2>
 
@@ -287,16 +353,126 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a868530bfaed30e57290a76d5b4402d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868530bfaed30e57290a76d5b4402d50">&#9670;&nbsp;</a></span>dijkstra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graph::dijkstra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt;&gt;&gt; *&#160;</td>
+          <td class="paramname"><em>adj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and returns the shortest distance of target from the source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adj</td><td>input graph </td></tr>
+    <tr><td class="paramname">s</td><td>source vertex </td></tr>
+    <tr><td class="paramname">t</td><td>target vertex</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>shortest distance if target is reachable from source else -1 in case if target is not reachable from source. </dd></dl>
+<p>n denotes the number of vertices in graph</p>
+<p>setting all the distances initially to INF</p>
+<p>creating a min heap using priority queue first element of pair contains the distance second element of pair contains the vertex</p>
+<p>pushing the source vertex 's' with 0 distance in min heap</p>
+<p>marking the distance of source as 0</p>
+<p>second element of pair denotes the node / vertex</p>
+<p>first element of pair denotes the distance</p>
+<p>for all the reachable vertex from the currently exploring vertex we will try to minimize the distance</p>
+<p>minimizing distances</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                           {<span class="comment"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    /// n denotes the number of vertices in graph</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> n = adj-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    /// setting all the distances initially to INF</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> dist(n, INF);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /// creating a min heap using priority queue</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    /// first element of pair contains the distance</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">    /// second element of pair contains the vertex</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue&lt;std::pair&lt;int, int&gt;</a>, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, int&gt;</a>&gt;,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater&lt;std::pair&lt;int, int&gt;</a>&gt;&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        pq;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    /// pushing the source vertex &#39;s&#39; with 0 distance in min heap</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>    pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(0, s));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    /// marking the distance of source as 0</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span>    dist[s] = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span> (!pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/empty.html">empty</a>()) {<span class="comment"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">      /// second element of pair denotes the node / vertex</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>      <span class="keywordtype">int</span> currentNode = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().second;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">      /// first element of pair denotes the distance</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span>      <span class="keywordtype">int</span> currentDist = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().first;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">pop</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">      /// for all the reachable vertex from the currently exploring vertex</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">      /// we will try to minimize the distance</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span>      <span class="keywordflow">for</span> (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;int, int&gt;</a> edge : (*adj)[currentNode]) {<span class="comment"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">        /// minimizing distances</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> (currentDist + edge.second &lt; dist[edge.first]) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          dist[edge.first] = currentDist + edge.second;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(dist[edge.first], edge.first));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (dist[t] != INF) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span> dist[t];</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a868530bfaed30e57290a76d5b4402d50_cgraph.svg" width="279" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; bool &gt;</a></div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="anamespacegraph_html_adbe6cd1fd148173ce6a01669925d2d72"><div class="ttname"><a href="../../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72">graph::add_directed_edge</a></div><div class="ttdeci">void add_directed_edge(std::vector&lt; std::vector&lt; int &gt;&gt; *graph, int u, int v)</div><div class="ttdoc">Adds a directed edge from vertex u to vertex v.</div><div class="ttdef"><b>Definition:</b> breadth_first_search.cpp:66</div></div>
 <div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
 <div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/pop.html">std::queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
+<div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">std::priority_queue::top</a></div><div class="ttdeci">T top(T... args)</div></div>
+<div class="ttc" id="apriority_queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a></div><div class="ttdoc">STL class.</div></div>
+<div class="ttc" id="agreater_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater</a></div></div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph algorithms.</div></div>
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/empty.html">std::queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/push.html">std::queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
+<div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
