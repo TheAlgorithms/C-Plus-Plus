@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of [Jarvis’s Algorithm](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm.
+ * @brief Implementation of [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm.
  *
  * @details
  * Given a set of points in the plane. the convex hull of the set
