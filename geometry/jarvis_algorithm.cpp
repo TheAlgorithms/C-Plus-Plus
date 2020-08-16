@@ -46,7 +46,7 @@ namespace geometry {
 
     /**
      * @namespace jarvis
-     * @brief Functions for [Jarvis’s Algorithm](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm
+     * @brief Functions for [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm
      */
     namespace jarvis {
         /**
