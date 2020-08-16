@@ -111,9 +111,9 @@ var NAVTREEINDEX =
 ".html",
 "d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
 "d6/d80/double__hash__hash__table_8cpp.html#a4e9a7219d34e781e4e73d74a968b26c1",
-"d9/dee/classdouble__linked__list.html#a3b5f341835034d3a74add60781a65470",
-"dc/dfe/ternary__search_8cpp.html",
-"globals_n.html"
+"d9/dee/classdouble__linked__list.html#a25f38dea0b69f2365fe67bdc35f8e0e2",
+"dc/dc5/paranthesis__matching_8cpp.html#af4c937d823c412d99fbe60c99dbf0a4f",
+"globals_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
