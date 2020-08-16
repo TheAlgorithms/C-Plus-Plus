@@ -80,15 +80,16 @@ template <typename X> class Tree {
 
 private:
   std::vector<std::list<int>>
-      t_adj; ///> an adjacency list to stores the tree edges
-  const int t_nodes,
-      t_maxlift; ///> number of nodes, and maximum possible height of the tree
+      t_adj;         ///< an adjacency list to stores the tree edges
+  const int t_nodes, ///< number of nodes
+      t_maxlift;     ///< maximum possible height of the tree
   std::vector<std::vector<int>>
-      t_par; ///> a matrix to store every node's 2^kth parent
-  std::vector<int> t_depth, t_size; ///> a vector to store the depth of a node,
-                                    /// and the subtree size rooted at node
-  int t_root;                       ///> the root of the tree
-  std::vector<X> t_val;             ///> values of nodes
+      t_par;                ///< a matrix to store every node's 2^kth parent
+  std::vector<int> t_depth, ///< a vector to store the depth of a node,
+      t_size; ///< a vector to store the subtree size rooted at node
+
+  int t_root;           ///< the root of the tree
+  std::vector<X> t_val; ///< values of nodes
   template <typename T> friend class HLD;
 
   /**
@@ -171,7 +172,7 @@ public:
    * the number of nodes
    * @returns void
    */
-  void set_node_val(std::vector<X> node_val) {
+  void set_node_val(const std::vector<X> &node_val) {
     assert(static_cast<int>(node_val.size()) == t_nodes);
     t_val = node_val;
   }
@@ -258,9 +259,9 @@ private:
    * in the derived class (HLD)
    */
 
-  std::vector<X> s_tree; ///> the segment tree, stored as a vector
-  int s_size;            ///> number of leaves in the segment tree
-  X sret_init = 0;       ///> inital query return value
+  std::vector<X> s_tree; ///< the segment tree, stored as a vector
+  int s_size;            ///< number of leaves in the segment tree
+  X sret_init = 0;       ///< inital query return value
   template <typename T> friend class HLD;
 
   /**
@@ -334,10 +335,10 @@ private:
  */
 template <typename X> class HLD : public Tree<X>, public SG<X> {
 private:
-  int label; ///> utility member to assign labels in dfs_labels()
-  std::vector<int> h_label, h_heavychlid,
-      h_parent; ///> stores the label of a node, heavy child of a node, and top
-                /// of the heavy chain from node
+  int label;                ///< utility member to assign labels in dfs_labels()
+  std::vector<int> h_label, ///< stores the label of a node
+      h_heavychlid,         ///< stores the heavy child of a node
+      h_parent;             ///< stores the top of the heavy chain from a node
 
   /**
    * @brief Utility function to assign heavy child to each node (-1 for a leaf
