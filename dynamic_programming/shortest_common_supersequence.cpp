@@ -166,7 +166,6 @@ static void test() {
 int main() {
 
     // test for implementation
-    std::cout << "\nTesting implementation\n";
     test();
 
     // user input
