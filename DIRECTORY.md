@@ -82,6 +82,7 @@
   * [Depth First Search With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search_with_stack.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dijkstra.cpp)
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
+  * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
   * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
