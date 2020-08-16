@@ -37,18 +37,18 @@
  */
 namespace geometry {
     /**
-     * Structure defining the x and y co-ordinates of the given
-     * point in space
-     */
-    struct Point {
-        int x, y;
-    };
-
-    /**
      * @namespace jarvis
      * @brief Functions for [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm
      */
     namespace jarvis {
+        /**
+         * Structure defining the x and y co-ordinates of the given
+         * point in space
+         */
+        struct Point {
+            int x, y;
+        };
+
         /**
          * Class which can be called from main and is globally available
          * throughout the code
@@ -148,7 +148,7 @@ namespace geometry {
  * @returns void
  */
 static void test() {
-    std::vector<geometry::Point> points = {{0, 3},
+    std::vector<geometry::jarvis::Point> points = {{0, 3},
                                            {2, 2},
                                            {1, 1},
                                            {2, 1},
@@ -158,10 +158,10 @@ static void test() {
     };
     int n = points.size();
     geometry::jarvis::Convexhull hull(points, n);
-    std::vector<geometry::Point> actualPoint;
+    std::vector<geometry::jarvis::Point> actualPoint;
     actualPoint = hull.getConvexHull();
 
-    std::vector<geometry::Point> expectedPoint = {{0, 3},
+    std::vector<geometry::jarvis::Point> expectedPoint = {{0, 3},
                                                   {0, 0},
                                                   {3, 0},
                                                   {3, 3}};
