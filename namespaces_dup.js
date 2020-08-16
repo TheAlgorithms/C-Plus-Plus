@@ -6,6 +6,7 @@ var namespaces_dup =
     [ "data_structure", "d1/db4/namespacedata__structure.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", null ],
     [ "graph", "df/dce/namespacegraph.html", null ],
+    [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", null ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", null ],
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],

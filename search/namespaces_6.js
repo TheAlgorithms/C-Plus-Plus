@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['n_5fqueens_2556',['n_queens',['../d3/da1/namespacen__queens.html',1,'']]]
+  ['machine_5flearning_2561',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]]
 ];
