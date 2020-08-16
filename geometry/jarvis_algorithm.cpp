@@ -145,6 +145,7 @@ namespace geometry {
 
 /**
  * Test function
+ * @returns void
  */
 static void test() {
     std::vector<geometry::Point> points = {{0, 3},
