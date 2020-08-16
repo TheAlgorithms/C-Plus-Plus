@@ -26,7 +26,6 @@
  * @author [Rishabh Agarwal](https://github.com/rishabh-997)
  */
 
-#include <utility>
 #include <vector>
 #include <cassert>
 #include <iostream>
@@ -54,19 +53,19 @@ namespace geometry {
          * throughout the code
          */
         class Convexhull {
-        public:
             std::vector<Point> points;
             int size;
 
+        public:
             /**
              * Constructor of given class
              *
              * @param pointList list of all points in the space
              * @param n number of points in space
              */
-            Convexhull(std::vector<Point> pointList, int n) {
-                points = std::move(pointList);
-                size = n;
+            explicit Convexhull(const std::vector<Point> &pointList) {
+                points = pointList;
+                size = points.size();
             }
 
             /**
@@ -120,16 +119,18 @@ namespace geometry {
             }
 
             /**
-             *
+             * This function returns the geometric orientation for the three points
+             * in a space, ie, whether they are linear ir clockwise or
+             * anti-clockwise
              * @param p first point selected
              * @param q adjacent point for q
              * @param r adjacent point for q
-             * @returns the geometric orientation for the three points
-             *  0 -> Linear
-             *  1 -> Clock Wise
-             *  2 -> Anti Clock Wise
+             *
+             * @returns 0 -> Linear
+             * @returns 1 -> Clock Wise
+             * @returns 2 -> Anti Clock Wise
              */
-            static int orientation(Point p, Point q, Point r) {
+            static int orientation(const Point &p, const Point &q, const Point &r) {
                 int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
 
                 if (val == 0) {
@@ -149,22 +150,21 @@ namespace geometry {
  */
 static void test() {
     std::vector<geometry::jarvis::Point> points = {{0, 3},
-                                           {2, 2},
-                                           {1, 1},
-                                           {2, 1},
-                                           {3, 0},
-                                           {0, 0},
-                                           {3, 3}
+                                                   {2, 2},
+                                                   {1, 1},
+                                                   {2, 1},
+                                                   {3, 0},
+                                                   {0, 0},
+                                                   {3, 3}
     };
-    int n = points.size();
-    geometry::jarvis::Convexhull hull(points, n);
+    geometry::jarvis::Convexhull hull(points);
     std::vector<geometry::jarvis::Point> actualPoint;
     actualPoint = hull.getConvexHull();
 
     std::vector<geometry::jarvis::Point> expectedPoint = {{0, 3},
-                                                  {0, 0},
-                                                  {3, 0},
-                                                  {3, 3}};
+                                                          {0, 0},
+                                                          {3, 0},
+                                                          {3, 3}};
     for (int i = 0; i < expectedPoint.size(); i++) {
         assert(actualPoint[i].x == expectedPoint[i].x);
         assert(actualPoint[i].y == expectedPoint[i].y);
