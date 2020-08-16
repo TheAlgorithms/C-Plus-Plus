@@ -1,8 +1,6 @@
 /**
  * @file
  * @brief SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z, but order is maintained).
- * @details
- * Details for [Shortest Common Supersequence](https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem)
  * 
  * The idea is to use lookup table method as used in LCS.
  * For example: example 1:-
@@ -11,6 +9,7 @@
  * For example: example 2:-
  * X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
  * @author [Ridhish Jain](https://github.com/ridhishjain)
+ * @see more on [SCS](https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem)
  * @see related problem [Leetcode](https://leetcode.com/problems/shortest-common-supersequence/)
 */
 
