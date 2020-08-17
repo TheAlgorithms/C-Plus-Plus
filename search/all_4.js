@@ -98,5 +98,6 @@ var searchData=
   ['duration_5fcast_386',['duration_cast',['http://en.cppreference.com/w/cpp/chrono/duration/duration_cast.html',0,'std::chrono']]],
   ['duration_5fvalues_387',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
   ['dynamic_5fpointer_5fcast_388',['dynamic_pointer_cast',['http://en.cppreference.com/w/cpp/memory/shared_ptr/pointer_cast.html',0,'std']]],
-  ['dynarray_389',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std::dynarray'],['http://en.cppreference.com/w/cpp/container/dynarray/dynarray.html',0,'std::dynarray::dynarray()']]]
+  ['dynamic_5fprogramming_389',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]],
+  ['dynarray_390',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std::dynarray'],['http://en.cppreference.com/w/cpp/container/dynarray/dynarray.html',0,'std::dynarray::dynarray()']]]
 ];

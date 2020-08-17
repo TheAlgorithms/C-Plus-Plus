@@ -109,11 +109,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f",
-"d6/d7b/sudoku__solve_8cpp.html",
-"d9/d69/median__search_8cpp.html",
-"dc/d93/trie__modern_8cpp.html",
-"globals_func_h.html"
+"d4/d32/fibonacci__fast_8cpp.html#a392fb874e547e582e9c66a08a1f23326",
+"d6/d7a/golden__search__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f",
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6",
+"globals_func_a.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

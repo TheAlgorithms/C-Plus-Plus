@@ -3,6 +3,7 @@ var files_dup =
     [ "backtracking", "dir_c11585dfcef32a26e29098facab6c144.html", "dir_c11585dfcef32a26e29098facab6c144" ],
     [ "ciphers", "dir_4d6e05837bf820fb089a8a8cdf2f42b7.html", "dir_4d6e05837bf820fb089a8a8cdf2f42b7" ],
     [ "data_structures", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc" ],
+    [ "dynamic_programming", "dir_8a20dd5bfd5341a725342bf72b6b686f.html", "dir_8a20dd5bfd5341a725342bf72b6b686f" ],
     [ "geometry", "dir_e3380d2178455503f266746fb14246a5.html", "dir_e3380d2178455503f266746fb14246a5" ],
     [ "graph", "dir_12552d7fa429bf94a2e32e5cf39f7e69.html", "dir_12552d7fa429bf94a2e32e5cf39f7e69" ],
     [ "graphics", "dir_e79632891301b850df87e9c0030293fa.html", "dir_e79632891301b850df87e9c0030293fa" ],
