@@ -9,35 +9,34 @@ elements in input array and ‘Range’ is number of possible values in array.
 #include <array>
 #include <cassert>
 #include <iostream>
-#include <vector>
 
-template <std::size_t N = 7>
-void pigeonSort(std::array<int, N> &array, int *n) {
+template <std::size_t N>
+void pigeonSort(std::array<int, N> arr, int n) {
     /*
     Finding min and max*
     */
-    int min = array[0];
-    int max = array[0];
+    int min = arr.at(0);
+    int max = arr.at(0);
 
-    for (int i = 0; i < *n; i++) {
-        if (min > array[i]) {
-            min = array[i];
+    for (int i = 0; i < n; i++) {
+        if (min > arr[i]) {
+            min = arr[i];
         }
-        if (max < array[i]) {
-            max = array[i];
+        if (max < arr[i]) {
+            max = arr[i];
         }
     }
     /*
     range refers to the number of holes required
     */
     int range = max - min + 1;
-    std::vector<int> hole[range];
+    int* hole = new int[range]();
 
     /*
     Copying all array values to pigeonhole
     */
-    for (int i = 0; i < *n; i++) {
-        hole[array[i] - min].push_back(array[i]);
+    for (int i = 0; i < n; i++) {
+        hole[arr[i] - min] = arr[i];
     }
 
     /*
@@ -46,35 +45,42 @@ void pigeonSort(std::array<int, N> &array, int *n) {
     */
     int count = 0;
     for (int i = 0; i < range; i++) {
-        while (!hole[i].empty()) {
-            array[count] = *(hole[i].begin());
-            hole[i].erase(hole[i].begin());
+        while (hole[i] != '\0') {
+            arr[count] = hole[i];
+            hole[i] = {};
             count++;
         }
     }
-}
-
-template <std::size_t N = 7>
-void test() {
-    std::array<int, 7> test_array = {8, 3, 2, 7, 4, 6, 8};
-    int *n = nullptr;
-    int n1 = sizeof(test_array) / sizeof(test_array[0]);
-    n = &n1;
-
-    pigeonSort(test_array, n);
-    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
-    std::cout << " Passed\n";
-
+    assert(std::is_sorted(std::begin(arr), std::end(arr)));
+    std::cout << "Passed\n";
     /*
     Printing sorted array
     */
-    for (int i = 0; i < n1; i++) {
-        std::cout << test_array[i] << " ";
+    for (int i = 0; i < n; i++) {
+        std::cout << arr.at(i) << " ";
     }
 }
 
+static void test_1() {
+    std::array<int, 7> test_array = {8, 3, 2, 7, 4, 6, 8};
+
+    int n = sizeof(test_array) / sizeof(test_array[0]);
+
+    pigeonSort(test_array, n);
+}
+
+static void test_2() {
+    std::array<int, 10> test_array = {802, 630, 20,  745, 52,
+                                      300, 612, 932, 78,  187};
+
+    int n = sizeof(test_array) / sizeof(test_array[0]);
+
+    pigeonSort(test_array, n);
+}
+
 int main() {
-    test();
+    test_1();
+    test_2();
 
     return 0;
 }
