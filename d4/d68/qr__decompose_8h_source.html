@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d4/d68/qr__decompose_8h_source.html','
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 12;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    out.precision(4);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    out.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/ios_base/precision.html">precision</a>(4);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].size(); col++)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('d4/d68/qr__decompose_8h_source.html','
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 10;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    out.precision(4);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    out.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/ios_base/precision.html">precision</a>(4);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            &lt;&lt; v[row];</div>
@@ -358,6 +358,7 @@ $(document).ready(function(){initNavTree('d4/d68/qr__decompose_8h_source.html','
 <div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
 <div class="ttc" id="aode__midpoint__euler_8cpp_html_af3adf7b092a87868917ee5fb4255192b"><div class="ttname"><a href="../../d6/dd3/ode__midpoint__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b">exact_solution</a></div><div class="ttdeci">void exact_solution(const double &amp;x, std::valarray&lt; double &gt; *y)</div><div class="ttdoc">Exact solution of the problem. Used for solution comparison.</div><div class="ttdef"><b>Definition:</b> ode_midpoint_euler.cpp:66</div></div>
 <div class="ttc" id="aode__midpoint__euler_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../d6/dd3/ode__midpoint__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> ode_midpoint_euler.cpp:192</div></div>
+<div class="ttc" id="aprecision_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/ios_base/precision.html">std::ostream::precision</a></div><div class="ttdeci">T precision(T... args)</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

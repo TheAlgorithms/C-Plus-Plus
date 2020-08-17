@@ -303,7 +303,7 @@ Here is the call graph for this function:</div>
 <dd>
 2 -&gt; Anti Clock Wise </dd></dl>
 <div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordtype">int</span> val = (q.y - p.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordtype">int</span> val = (q.y - p.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) * (r.x - q.x) - (q.x - p.x) * (r.<a class="code" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - q.y);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">if</span> (val == 0) {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    <span class="keywordflow">return</span> 0;</div>
