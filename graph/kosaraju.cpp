@@ -9,8 +9,8 @@
 
 /**
  * Iterative function/method to print graph:
- * @param a[] : array of vectors (2D)
- * @param V : vertices
+ * @param a adjacency list representation of the graph
+ * @param V number of vertices
  * @return void
  **/
 void print(const std::vector< std::vector<int> > &a, int V) {
@@ -29,10 +29,10 @@ void print(const std::vector< std::vector<int> > &a, int V) {
 
 /**
  * //Recursive function/method to push vertices into stack passed as parameter:
- * @param v : vertices
- * @param &st : stack passed by reference
- * @param &vis : array to keep track of visited nodes (boolean type)
- * @param adj[] : array of vectors to represent graph
+ * @param v vertices
+ * @param st stack passed by reference
+ * @param vis array to keep track of visited nodes (boolean type)
+ * @param adj adjacency list representation of the graph
  * @return void
  **/
 void push_vertex(int v, std::stack<int> *st, std::vector<bool> *vis, const std::vector< std::vector<int> > &adj) {
@@ -47,9 +47,9 @@ void push_vertex(int v, std::stack<int> *st, std::vector<bool> *vis, const std::
 
 /**
  * //Recursive function/method to implement depth first traversal(dfs):
- * @param v : vertices
- * @param vis : array to keep track of visited nodes (boolean type)
- * @param grev[] : graph with reversed edges
+ * @param v vertices
+ * @param vis array to keep track of visited nodes (boolean type)
+ * @param grev graph with reversed edges
  * @return void
  **/
 void dfs(int v, std::vector<bool> *vis, const std::vector< std::vector<int> > &grev) {
@@ -65,8 +65,8 @@ void dfs(int v, std::vector<bool> *vis, const std::vector< std::vector<int> > &g
 // function/method to implement Kosaraju's Algorithm:
 /**
 * Info about the method
-* @param V : vertices in graph
-* @param adj[] : array of vectors that represent a graph (adjacency list/array)
+* @param V vertices in graph
+* @param adj array of vectors that represent a graph (adjacency list/array)
 * @return int ( 0, 1, 2..and so on, only unsigned values as either there can be
 no SCCs i.e. none(0) or there will be x no. of SCCs (x>0)) i.e. it returns the
 count of (number of) strongly connected components (SCCs) in the graph.
