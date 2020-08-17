@@ -71,6 +71,7 @@
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
 
 ## Geometry
+  * [Jarvis Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/jarvis_algorithm.cpp)
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
 
 ## Graph
@@ -83,6 +84,7 @@
   * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs_with_stack.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dijkstra.cpp)
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
+  * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
   * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
