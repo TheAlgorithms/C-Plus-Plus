@@ -324,9 +324,6 @@ private:
    * * XOR Query: 0 (Default)
    * * Min Query: Infinity
    * * Max Query: -Infinity
-   * XOR Query: 0 (Default)
-   * Min Query: Infinity
-   * Max Query: -Infinity
    * @param new_sret_init the new init
    */
   void set_sret_init(X new_sret_init) { sret_init = new_sret_init; }
