@@ -514,6 +514,8 @@ static void test_1() {
       {1, 3, 2},
       {2, 4},
   };
+  std::vector<int> expected_result = {11, 8};
+  std::vector<int> code_result;
 
   range_queries::heavy_light_decomposition::HLD<int64_t> hld(n);
   hld.set_node_val(node_values);
@@ -529,12 +531,15 @@ static void test_1() {
       hld.update(p - 1, x);
     } else if (type == 2) {
       int p = q[1];
-      std::cout << hld.query(0, p - 1) << std::endl;
+      code_result.push_back(hld.query(0, p - 1));
     } else {
       continue;
     }
   }
-  std::cout << "\nTest 1 passed!\n";
+  for (int i = 0; i < static_cast<int>(expected_result.size()); i++) {
+    assert(expected_result[i] == code_result[i]);
+  }
+  std::cout << "Test 1 passed!\n";
 }
 
 /**
@@ -552,6 +557,8 @@ static void test_2() {
   std::vector<std::vector<int>> queries = {
       {2, 10},   {2, 6}, {1, 3, 4}, {2, 9},    {1, 5, 3},
       {1, 7, 8}, {2, 4}, {2, 8},    {1, 1, 4}, {1, 2, 7}};
+  std::vector<int> expected_result = {27, 11, 45, 9, 34};
+  std::vector<int> code_result;
 
   range_queries::heavy_light_decomposition::HLD<int64_t> hld(n);
   hld.set_node_val(node_values);
@@ -567,12 +574,15 @@ static void test_2() {
       hld.update(p - 1, x);
     } else if (type == 2) {
       int p = q[1];
-      std::cout << hld.query(0, p - 1) << std::endl;
+      code_result.push_back(hld.query(0, p - 1));
     } else {
       continue;
     }
   }
-  std::cout << "\nTest2 passed!\n";
+  for (int i = 0; i < static_cast<int>(expected_result.size()); i++) {
+    assert(expected_result[i] == code_result[i]);
+  }
+  std::cout << "Test2 passed!\n";
 }
 
 /**
@@ -583,16 +593,3 @@ int main() {
   test_2();
   return 0;
 }
-
-/*
- * Sample Output 1:
- * 11
- * 8
- *
- * Sample Output 2:
- * 27
- * 11
- * 45
- * 9
- * 34
- */
