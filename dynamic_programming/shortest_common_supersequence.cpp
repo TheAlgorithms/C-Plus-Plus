@@ -34,7 +34,7 @@ namespace dynamic_programming {
     namespace shortest_common_supersequence {
         
         /**
-         * Function scs
+         * Function implementing Shortest Common Super-Sequence algorithm using look-up table method.
          * @param str1 first string 'X'
          * @param str2 second string 'Y'
          * @returns string 'Z', superSequence of X and Y 
