@@ -320,7 +320,10 @@ private:
    *
    * @details
    * Change the sret_init, based on requirement:
-   * Sum Query: 0 (Default)
+   * * Sum Query: 0 (Default)
+   * * XOR Query: 0 (Default)
+   * * Min Query: Infinity
+   * * Max Query: -Infinity
    * XOR Query: 0 (Default)
    * Min Query: Infinity
    * Max Query: -Infinity
