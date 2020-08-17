@@ -5,7 +5,7 @@
 //#include <boost/multiprecision/cpp_int.hpp>
 // using namespace boost::multiprecision;
 const int mx = 1e6 + 5;
-typedef int64_t ll;
+using ll = int64_t;
 
 std::array<ll, mx> parent;
 ll node, edge;
