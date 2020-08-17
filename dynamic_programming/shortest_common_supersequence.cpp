@@ -168,8 +168,6 @@ int main() {
     std::cin >> s1;
     std::cin >> s2;
 
-    int n1 = s1.length();
-    int n2 = s2.length();
     std::string ans;
 
     // user output
