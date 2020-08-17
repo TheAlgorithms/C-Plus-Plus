@@ -35,31 +35,29 @@ namespace dynamic_programming {
         
         /**
          * Function scs
-         * @param string first string 'X'
-         * @param string second string 'Y'
-         * @param int length of first string
-         * @param int length of second string
-         * @return string superSequence of X and Y 
+         * @param str1 first string 'X'
+         * @param str2 second string 'Y'
+         * @returns string 'Z', superSequence of X and Y 
         */
-        std::string scs(std::string str1, std::string str2, int n1, int n2) {
+        std::string scs(const std::string &str1, const std::string &str2) {
 
             // Edge cases
-            // If either n1 or n2 or both are zeroes
-            if(n1 == 0 && n2 == 0) {
+            // If either str1 or str2 or both are empty
+            if(str1.empty() && str2.empty()) {
                 return "";
             }
-            else if(n1 == 0) {
+            else if(str1.empty()) {
                 return str2;
             }
-            else if(n2 == 0) {
+            else if(str2.empty()) {
                 return str1;
             }
 
             // creating lookup table
-            std::vector <std::vector <int>> lookup(n1 + 1, std::vector <int> (n2 + 1, 0));
+            std::vector <std::vector <int>> lookup(str1.length() + 1, std::vector <int> (str2.length() + 1, 0));
       
-            for(int i=1; i <= n1; i++) {
-                for(int j=1; j <= n2; j++) {
+            for(int i=1; i <= str1.length(); i++) {
+                for(int j=1; j <= str2.length(); j++) {
                     if(str1[i-1] == str2[j-1]) {
                         lookup[i][j] = lookup[i-1][j-1] + 1;
                     }
@@ -72,8 +70,8 @@ namespace dynamic_programming {
             // making supersequence
             // i and j are initially pointed towards end of strings
             // Super-sequence will be constructed backwards
-            int i=n1;
-            int j=n2;
+            int i=str1.length();
+            int j=str2.length();
             std::string s;
       
             while(i>0 && j>0) {
@@ -135,11 +133,9 @@ static void test() {
     // calculated output vector by scs function
     std::vector <std::string> calculatedOutput;
     for(auto & scsString : scsStrings) {
-        int n1 = scsString[0].length();
-        int n2 = scsString[1].length();
         
         calculatedOutput.push_back(dynamic_programming::shortest_common_supersequence::scs(
-            scsString[0], scsString[1], n1, n2
+            scsString[0], scsString[1]
         ));
     }
 
@@ -177,7 +173,7 @@ int main() {
     std::string ans;
 
     // user output
-    ans = dynamic_programming::shortest_common_supersequence::scs(s1, s2, n1, n2);
+    ans = dynamic_programming::shortest_common_supersequence::scs(s1, s2);
     std::cout << ans;
     return 0;
 }
