@@ -131,12 +131,14 @@ static void test() {
     };
 
     // calculated output vector by scs function
-    std::vector <std::string> calculatedOutput;
+    std::vector <std::string> calculatedOutput(4, "");
+    int i=0;
     for(auto & scsString : scsStrings) {
         
-        calculatedOutput.push_back(dynamic_programming::shortest_common_supersequence::scs(
+        calculatedOutput[i] = dynamic_programming::shortest_common_supersequence::scs(
             scsString[0], scsString[1]
-        ));
+        );
+        i++;
     }
 
     // expected output vector acc to problem statement
