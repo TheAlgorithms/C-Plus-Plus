@@ -28,7 +28,10 @@ namespace sorting {
      */
     namespace pigonhole {
 /**
- *Pigeonhole sorting of array with array size n
+ * Pigeonhole sorting of array with array size n
+ * The function will sort the array through Pigeonhole algorithm and print
+ * @param unsorted array of elements
+ * @returns none
  */
 template <std::size_t N>
 void pigeonSort(std::array<int, N> arr, int n) {
