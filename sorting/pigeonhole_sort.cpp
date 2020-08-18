@@ -85,11 +85,12 @@ void pigeonSort(std::array<int, N> arr, int n) {
  * @returns none
  */
 static void test_1() {
-    std::array<int, 7> test_array = {8, 3, 2, 7, 4, 6, 8};
+    const int n = 7;
+    std::array<int, n> test_array = {8, 3, 2, 7, 4, 6, 8};
 
     int n = sizeof(test_array) / sizeof(test_array[0]);
 
-    sorting::pigonhole::pigeonSort(test_array, n);
+    sorting::pigonhole::pigeonSort<n>(test_array, n);
 }
 
 /**
@@ -98,12 +99,13 @@ static void test_1() {
  * @returns none
  */
 static void test_2() {
-    std::array<int, 10> test_array = {802, 630, 20,  745, 52,
+    const int n = 10;
+    std::array<int, n> test_array = {802, 630, 20,  745, 52,
                                       300, 612, 932, 78,  187};
 
     int n = sizeof(test_array) / sizeof(test_array[0]);
 
-    sorting::pigonhole::pigeonSort(test_array, n);
+    sorting::pigonhole::pigeonSort<n>(test_array, n);
 }
 
 /**
