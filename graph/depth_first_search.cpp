@@ -54,7 +54,7 @@ namespace graph {
  *
  */
 void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
-    /**
+    /*
      *
      * Here we are considering undirected graph that's the
      * reason we are adding v to the adjacency list representation of u
