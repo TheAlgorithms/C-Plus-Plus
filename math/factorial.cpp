@@ -1,7 +1,3 @@
-/**
- * @file
- * @brief C++ program to find factorial of given number
- */
 #include <iostream> 
 #include <sstream> 
 using namespace std;
