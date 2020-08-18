@@ -1,6 +1,14 @@
+/**
+ * @file
+ * @brief C++ program to find factorial of given number
+ */
 #include <iostream> 
 #include <sstream> 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+using std::stringstream;
 /** function to find factorial of given number */
 unsigned int factorial(unsigned int n) {
     if (n == 0)
@@ -23,20 +31,20 @@ int main() {
     int num;
     cout << "Please enter an integer to test factorial(0-33):" << endl;
     cin >> str;
-    if (str[0]=='-') {
+    if (str[0] == '-') {
         cout << "Integer cannot be negative" << endl;
     }
     else {
-    if (found != 0) {
-        if (check_number(str)) {
-            stringstream ss;
-            ss << str;
-            ss >> num;
-            cout << "Factorial of " << num << " is " << factorial(num) << endl;
+        if (found != 0) {
+            if (check_number(str)) {
+                stringstream ss;
+                ss << str;
+                ss >> num;
+                cout << "Factorial of " << num << " is " << factorial(num) << endl;
+            }
+            else
+                cout << str << " is a string" << endl;
         }
-        else
-            cout << str << " is a string" << endl;
-    }
     }
     return 0;
 }
