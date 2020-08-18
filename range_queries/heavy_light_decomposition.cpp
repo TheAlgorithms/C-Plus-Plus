@@ -237,7 +237,7 @@ public:
     if (a == b) {
       return a;
     }
-    for (int k = 0; k < t_maxlift; k++) {
+    for (int k = t_maxlift - 1; k >= 0; k--) {
       if (t_par[a][k] != t_par[b][k]) {
         a = t_par[a][k];
         b = t_par[b][k];
