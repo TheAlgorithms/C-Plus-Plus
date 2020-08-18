@@ -510,9 +510,9 @@ static void test_1() {
   std::vector<int64_t> node_values = {4, 2, 5, 2, 1};
   std::vector<std::vector<int>> edges = {{1, 2}, {1, 3}, {3, 4}, {3, 5}};
   std::vector<std::vector<int>> queries = {
-      {2, 4},
+      {2, 1, 4},
       {1, 3, 2},
-      {2, 4},
+      {2, 1, 4},
   };
   std::vector<int> expected_result = {11, 8};
   std::vector<int> code_result;
@@ -530,8 +530,8 @@ static void test_1() {
       int p = q[1], x = q[2];
       hld.update(p - 1, x);
     } else if (type == 2) {
-      int p = q[1];
-      code_result.push_back(hld.query(0, p - 1));
+      int a = q[1], b = q[2];
+      code_result.push_back(hld.query(a - 1, b - 1));
     } else {
       continue;
     }
@@ -539,7 +539,7 @@ static void test_1() {
   for (int i = 0; i < static_cast<int>(expected_result.size()); i++) {
     assert(expected_result[i] == code_result[i]);
   }
-  std::cout << "Test 1 passed!\n";
+  std::cout << "\nTest 1 passed!\n";
 }
 
 /**
@@ -555,8 +555,8 @@ static void test_2() {
   std::vector<std::vector<int>> edges = {
       {10, 5}, {6, 2}, {10, 7}, {5, 2}, {3, 9}, {8, 3}, {1, 4}, {6, 4}, {8, 7}};
   std::vector<std::vector<int>> queries = {
-      {2, 10},   {2, 6}, {1, 3, 4}, {2, 9},    {1, 5, 3},
-      {1, 7, 8}, {2, 4}, {2, 8},    {1, 1, 4}, {1, 2, 7}};
+      {2, 1, 10}, {2, 1, 6}, {1, 3, 4}, {2, 1, 9}, {1, 5, 3},
+      {1, 7, 8},  {2, 1, 4}, {2, 1, 8}, {1, 1, 4}, {1, 2, 7}};
   std::vector<int> expected_result = {27, 11, 45, 9, 34};
   std::vector<int> code_result;
 
@@ -573,8 +573,8 @@ static void test_2() {
       int p = q[1], x = q[2];
       hld.update(p - 1, x);
     } else if (type == 2) {
-      int p = q[1];
-      code_result.push_back(hld.query(0, p - 1));
+      int a = q[1], b = q[2];
+      code_result.push_back(hld.query(a - 1, b - 1));
     } else {
       continue;
     }
@@ -582,7 +582,50 @@ static void test_2() {
   for (int i = 0; i < static_cast<int>(expected_result.size()); i++) {
     assert(expected_result[i] == code_result[i]);
   }
-  std::cout << "Test2 passed!\n";
+  std::cout << "\nTest2 passed!\n";
+}
+
+/**
+ * Third test implementations
+ * @returns void
+ */
+static void test_3() {
+  std::cout << "Test 3:\n";
+
+  // Test details
+  int n = 8;
+  std::vector<int64_t> node_values = {1, 8, 6, 8, 6, 2, 9, 2};
+  std::vector<std::vector<int>> edges = {{1, 2}, {2, 3}, {3, 4}, {1, 5},
+                                         {6, 3}, {7, 5}, {8, 7}};
+  std::vector<std::vector<int>> queries = {
+      {2, 6, 8}, {2, 3, 6}, {1, 3, 4}, {2, 7, 1}, {1, 5, 3},
+      {1, 7, 8}, {2, 6, 4}, {2, 7, 8}, {1, 1, 4}, {1, 2, 7}};
+  std::vector<int> expected_result = {34, 8, 16, 14, 10};
+  std::vector<int> code_result;
+
+  range_queries::heavy_light_decomposition::HLD<int64_t> hld(n);
+  hld.set_node_val(node_values);
+  for (int i = 0; i < n - 1; i++) {
+    int u = edges[i][0], v = edges[i][1];
+    hld.add_edge(u - 1, v - 1);
+  }
+  hld.init();
+  for (const auto &q : queries) {
+    int type = q[0];
+    if (type == 1) {
+      int p = q[1], x = q[2];
+      hld.update(p - 1, x);
+    } else if (type == 2) {
+      int a = q[1], b = q[2];
+      code_result.push_back(hld.query(a - 1, b - 1));
+    } else {
+      continue;
+    }
+  }
+  for (int i = 0; i < static_cast<int>(expected_result.size()); i++) {
+    assert(expected_result[i] == code_result[i]);
+  }
+  std::cout << "\nTest3 passed!\n";
 }
 
 /**
@@ -591,5 +634,6 @@ static void test_2() {
 int main() {
   test_1();
   test_2();
+  test_3();
   return 0;
 }
