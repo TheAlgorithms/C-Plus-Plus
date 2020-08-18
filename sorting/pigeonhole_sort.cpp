@@ -57,10 +57,7 @@ void pigeonSort(std::array<int, N> arr, int n) {
         hole[arr[i] - min] = arr[i];
     }
 
-    /**
-     *Deleting elements from list and
-     *storing to original array
-     */
+    //Deleting elements from list and storing to original array
     int count = 0;
     for (int i = 0; i < range; i++) {
         while (hole[i] != '\0') {
@@ -109,9 +106,6 @@ static void test_2() {
     sorting::pigonhole::pigeonSort(test_array, n);
 }
 
-/**
- * Main Function
- */
 /**
  * Main function
  */
