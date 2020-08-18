@@ -28,7 +28,7 @@ namespace sorting {
      */
     namespace pigonhole {
 /**
- * Pigeonhole sorting of array with array size n
+ * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
  * @param arr unsorted array of elements
  * @returns none
