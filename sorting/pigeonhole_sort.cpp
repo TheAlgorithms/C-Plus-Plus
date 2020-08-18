@@ -30,7 +30,7 @@ namespace sorting {
 /**
  * Pigeonhole sorting of array with array size n
  * The function will sort the array through Pigeonhole algorithm and print
- * @param unsorted array of elements
+ * @param arr unsorted array of elements
  * @returns none
  */
 template <std::size_t N>
@@ -57,7 +57,7 @@ void pigeonSort(std::array<int, N> arr, int n) {
         hole[arr[i] - min] = arr[i];
     }
 
-    //Deleting elements from list and storing to original array
+    // Deleting elements from list and storing to original array
     int count = 0;
     for (int i = 0; i < range; i++) {
         while (hole[i] != '\0') {
