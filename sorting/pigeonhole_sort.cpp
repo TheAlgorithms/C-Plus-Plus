@@ -66,7 +66,7 @@ void pigeonSort(std::array<int, N> arr, int n) {
             count++;
         }
     }
-    delete hole;
+    delete[] hole;
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
     std::cout << "Passed\n";
 
