@@ -17,13 +17,6 @@ unsigned int factorial(unsigned int n) {
     return n * factorial(n - 1);
 }
 
-/*check string is number or not*/
-bool check_number(string str) {
-    for (int i = 0; i < str.length(); i++)
-        if (isdigit(str[i]) == false)
-            return false;
-    return true;
-}
 
 /** Main function */
 int main() {
@@ -36,16 +29,11 @@ int main() {
         cout << "Integer cannot be negative" << endl;
     }
     else {
-        if (found != 0) {
-            if (check_number(str)) {
                 stringstream ss;
                 ss << str;
                 ss >> num;
-                cout << "Factorial of " << num << " is " << factorial(num) << endl;
-            }
-            else
-                cout << str << " is a string" << endl;
-        }
+                cout << "Factorial of " << num << " is " << factorial(num) << endl;    
+        
     }
     return 0;
 }
