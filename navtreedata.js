@@ -86,7 +86,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
@@ -109,11 +109,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d4/d32/fibonacci__fast_8cpp.html#a392fb874e547e582e9c66a08a1f23326",
-"d6/d7a/golden__search__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f",
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a98eb5807f21b783c341cab402ced6732",
-"globals_defs.html"
+"d3/dce/linkedlist__implentation__usingarray_8cpp.html#a20358970b1abaf992eb85e071e454653",
+"d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5",
+"d8/ddf/sieve__of__eratosthenes_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9",
+"db/d82/classlarge__number.html#a72ae1ef050c4c28c50952ecab22d4b94",
+"de/dde/lowest__common__ancestor_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

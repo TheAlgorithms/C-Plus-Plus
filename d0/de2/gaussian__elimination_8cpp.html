@@ -175,15 +175,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Value of the Gaussian Elimination method: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (i = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> - 1; i &gt;= 0; i--) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">double</span> sum = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span> (j = <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a> - 1; j &gt; i; j--) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            x[i][j] = x[j][j] * x[i][j];</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            sum = x[i][j] + sum;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = x[i][j] + <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (x[i][i] == 0)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            x[i][i] = 0;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            x[i][i] = (x[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>] - sum) / (x[i][i]);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            x[i][i] = (x[i][<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54">mat_size</a>] - <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a>) / (x[i][i]);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;= &quot;</span> &lt;&lt; x[i][i] &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/de2/gaussian__elimination_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="182" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/de2/gaussian__elimination_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="266" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -213,6 +213,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a5305cc18d11943d3dc0d66e70d7e9c44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:228</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

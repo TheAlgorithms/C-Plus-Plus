@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['backtracking_2566',['backtracking',['../db/dc0/namespacebacktracking.html',1,'']]]
+  ['activations_2612',['activations',['../d5/d39/namespaceactivations.html',1,'']]]
 ];

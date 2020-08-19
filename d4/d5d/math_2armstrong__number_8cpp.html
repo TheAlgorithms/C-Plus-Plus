@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (number &lt; 0) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> sum = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> temp = number;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Finding the total number of digits in the number</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> total_digits = <a class="code" href="../../d4/d5d/math_2armstrong__number_8cpp.html#aab733299b170fa5a752503f95f090fcd">number_of_digits</a>(number);</div>
@@ -161,15 +161,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> rem = temp % 10;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Finding each digit raised to the power total digit and add it to the</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// total sum</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        sum = sum + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(rem, total_digits);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(rem, total_digits);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        temp = temp / 10;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> number == sum;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> number == <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_a9cebd92bc70890c3cfa261d68a5016e7_cgraph.svg" width="278" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_a9cebd92bc70890c3cfa261d68a5016e7_cgraph.svg" width="312" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -197,7 +197,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="468" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="503" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -268,7 +268,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="370" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d5d/math_2armstrong__number_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="404" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -279,6 +279,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="amath_2armstrong__number_8cpp_html_aab733299b170fa5a752503f95f090fcd"><div class="ttname"><a href="../../d4/d5d/math_2armstrong__number_8cpp.html#aab733299b170fa5a752503f95f090fcd">number_of_digits</a></div><div class="ttdeci">int number_of_digits(int num)</div><div class="ttdef"><b>Definition:</b> armstrong_number.cpp:21</div></div>
 <div class="ttc" id="amath_2armstrong__number_8cpp_html_a9cebd92bc70890c3cfa261d68a5016e7"><div class="ttname"><a href="../../d4/d5d/math_2armstrong__number_8cpp.html#a9cebd92bc70890c3cfa261d68a5016e7">is_armstrong</a></div><div class="ttdeci">bool is_armstrong(int number)</div><div class="ttdef"><b>Definition:</b> armstrong_number.cpp:36</div></div>
 <div class="ttc" id="amath_2armstrong__number_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../d4/d5d/math_2armstrong__number_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition:</b> armstrong_number.cpp:59</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a5305cc18d11943d3dc0d66e70d7e9c44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:228</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

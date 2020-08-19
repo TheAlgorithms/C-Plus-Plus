@@ -1,0 +1,25 @@
+var vector__ops_8hpp =
+[
+    [ "apply_function", "d8/d95/vector__ops_8hpp.html#ac33041816bc333896b86a9c2042047fd", null ],
+    [ "argmax", "d8/d95/vector__ops_8hpp.html#a1b42d24ad7bedbfa8e5b59fe96987a44", null ],
+    [ "equal_shuffle", "d8/d95/vector__ops_8hpp.html#aaf373bce30d78abce6e237cea702a885", null ],
+    [ "get_shape", "d8/d95/vector__ops_8hpp.html#abe6b58ec16abe0f6f8ac195e04aa8abd", null ],
+    [ "hadamard_product", "d8/d95/vector__ops_8hpp.html#a9e3ef7d310219dfcb2caecb9b167c35b", null ],
+    [ "insert_element", "d8/d95/vector__ops_8hpp.html#a725d4ccceda4f32c96348ba1d593cd3c", null ],
+    [ "minmax_scaler", "d8/d95/vector__ops_8hpp.html#a05b9445c6ab65053b9bf9897a96af82d", null ],
+    [ "multiply", "d8/d95/vector__ops_8hpp.html#a8c42a1a712b725e2aa7d4e5dc2cebcf9", null ],
+    [ "operator*", "d8/d95/vector__ops_8hpp.html#a2e7242fd513e4184ad783f5d9658f750", null ],
+    [ "operator+", "d8/d95/vector__ops_8hpp.html#ad8791a48ac0f519e9e7e4b333b126c7b", null ],
+    [ "operator-", "d8/d95/vector__ops_8hpp.html#a140ec294f73b3ee0709d515d2ee269c1", null ],
+    [ "operator/", "d8/d95/vector__ops_8hpp.html#a8c24000ea2a0ef6a46d06d2717b62984", null ],
+    [ "operator<<", "d8/d95/vector__ops_8hpp.html#a2a282c162e12f193c58232f26f0fa62d", null ],
+    [ "operator<<", "d8/d95/vector__ops_8hpp.html#ad0302cde64c0479379be18286962f6df", null ],
+    [ "operator<<", "d8/d95/vector__ops_8hpp.html#a8e8b54aaa62ad7f906aec0756ca3a500", null ],
+    [ "pop_back", "d8/d95/vector__ops_8hpp.html#a4dd9a9df9f8f05327bcf7b58b0a86576", null ],
+    [ "pop_front", "d8/d95/vector__ops_8hpp.html#ad9d119e7520fa5c2d2428433f578c0bc", null ],
+    [ "sum", "d8/d95/vector__ops_8hpp.html#a5305cc18d11943d3dc0d66e70d7e9c44", null ],
+    [ "transpose", "d8/d95/vector__ops_8hpp.html#ac480dcc290990d8e93093fa08d915830", null ],
+    [ "uniform_random_initialization", "d8/d95/vector__ops_8hpp.html#a73ee7ed3546ab9e8792a92336d0d14ab", null ],
+    [ "unit_matrix_initialization", "d8/d95/vector__ops_8hpp.html#abf136b863d804899647f46eeb2e1392b", null ],
+    [ "zeroes_initialization", "d8/d95/vector__ops_8hpp.html#a4d136cbf20e3126ed9b934ab2d03f18b", null ]
+];

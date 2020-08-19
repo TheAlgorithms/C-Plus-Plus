@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_afeb67e204ec7de02ad152c11df4d1e01_cgraph.svg" width="268" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_afeb67e204ec7de02ad152c11df4d1e01_cgraph.svg" width="472" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -193,7 +193,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="487" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -223,7 +223,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Sum of the proper divisor of the number. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                            {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Variable to store the sum of all proper divisors.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> sum = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = 0;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Below loop condition helps to reduce Time complexity by a factor of</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// square root of the number.</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> div = 2; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a> * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a> &lt;= num; ++<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a>) {</div>
@@ -231,16 +231,22 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (num % div == 0) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="comment">// If both divisor are same, add once to &#39;sum&#39;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (div == (num / div)) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                sum += <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> += <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="comment">// If both divisor are not the same, add both to &#39;sum&#39;.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                sum += (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a> + (num / <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a>));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> += (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a> + (num / <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/div.html">div</a>));</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> sum + 1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> + 1;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ac656a51b4c3bd7d63b7dcc75dc3e5576_cgraph.svg" width="326" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ae1a3968e7947464bee7714f6d43b7002"></a>
@@ -269,7 +275,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="360" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df6/check__amicable__pair_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="564" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -283,6 +289,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="acheck__amicable__pair_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../d5/df6/check__amicable__pair_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition:</b> check_amicable_pair.cpp:56</div></div>
 <div class="ttc" id="acheck__amicable__pair_8cpp_html_afeb67e204ec7de02ad152c11df4d1e01"><div class="ttname"><a href="../../d5/df6/check__amicable__pair_8cpp.html#afeb67e204ec7de02ad152c11df4d1e01">are_amicable</a></div><div class="ttdeci">bool are_amicable(int x, int y)</div><div class="ttdef"><b>Definition:</b> check_amicable_pair.cpp:48</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a5305cc18d11943d3dc0d66e70d7e9c44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:228</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

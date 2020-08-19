@@ -49,63 +49,63 @@
 <path fill="none" stroke="midnightblue" d="M29.71,-114.69C39.79,-124 56.51,-137.46 74,-143 106.57,-153.31 144.61,-150.82 175.48,-145.39"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="176.49,-148.76 185.66,-143.46 175.18,-141.89 176.49,-148.76"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="82,-38.5 82,-57.5 142,-57.5 142,-38.5 82,-38.5"/>
-<text text-anchor="middle" x="112" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::srand</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node11 -->
-<g id="edge11" class="edge">
-<title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M32.54,-95.43C43.27,-87.41 59.29,-75.9 74,-67 76.63,-65.41 79.42,-63.82 82.23,-62.28"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="83.93,-65.33 91.14,-57.56 80.66,-59.14 83.93,-65.33"/>
-</g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="93,-114.5 93,-133.5 131,-133.5 131,-114.5 93,-114.5"/>
-<text text-anchor="middle" x="112" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">test1</text>
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="82,-38.5 82,-57.5 142,-57.5 142,-38.5 82,-38.5"/>
+<text text-anchor="middle" x="112" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::srand</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M32.54,-95.43C43.27,-87.41 59.29,-75.9 74,-67 76.63,-65.41 79.42,-63.82 82.23,-62.28"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="83.93,-65.33 91.14,-57.56 80.66,-59.14 83.93,-65.33"/>
+</g>
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="93,-114.5 93,-133.5 131,-133.5 131,-114.5 93,-114.5"/>
+<text text-anchor="middle" x="112" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">test1</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge13" class="edge">
+<title>Node1&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M38.42,-108.84C51.2,-111.51 68.48,-115.12 82.97,-118.15"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="82.42,-121.61 92.92,-120.23 83.85,-114.76 82.42,-121.61"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title=" ">
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="../../de/d75/qr__eigen__values_8cpp.html#a0283886819c7c140a023582b7269e2d0" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="93,-76.5 93,-95.5 131,-95.5 131,-76.5 93,-76.5"/>
 <text text-anchor="middle" x="112" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">test2</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node14 -->
-<g id="edge15" class="edge">
-<title>Node1&#45;&gt;Node14</title>
+<!-- Node1&#45;&gt;Node15 -->
+<g id="edge16" class="edge">
+<title>Node1&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M38.42,-101.16C51.2,-98.49 68.48,-94.88 82.97,-91.85"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="83.85,-95.24 92.92,-89.77 82.42,-88.39 83.85,-95.24"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node">
-<title>Node15</title>
-<g id="a_node15"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" xlink:title=" ">
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="84.5,-0.5 84.5,-19.5 139.5,-19.5 139.5,-0.5 84.5,-0.5"/>
 <text text-anchor="middle" x="112" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::time</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node15 -->
-<g id="edge18" class="edge">
-<title>Node1&#45;&gt;Node15</title>
+<!-- Node1&#45;&gt;Node16 -->
+<g id="edge19" class="edge">
+<title>Node1&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M24.8,-95.48C33.05,-79.9 51.24,-48.71 74,-29 75.69,-27.54 77.5,-26.16 79.39,-24.85"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="81.26,-27.82 88,-19.64 77.63,-21.83 81.26,-27.82"/>
 </g>
@@ -157,99 +157,114 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="497,-120.5 497,-139.5 624,-139.5 624,-120.5 497,-120.5"/>
-<text text-anchor="middle" x="560.5" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_mag</text>
+<g id="a_node7"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="502,-139.5 502,-158.5 619,-158.5 619,-139.5 502,-139.5"/>
+<text text-anchor="middle" x="560.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::sum</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M461.1,-118.84C469.49,-119.79 478.08,-120.76 486.53,-121.72"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="486.41,-125.23 496.74,-122.88 487.19,-118.28 486.41,-125.23"/>
-</g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a5422c76bfa322620de611083bd518d71" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="498.5,-82.5 498.5,-101.5 622.5,-101.5 622.5,-82.5 498.5,-82.5"/>
-<text text-anchor="middle" x="560.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_proj</text>
-</a>
-</g>
-</g>
-<!-- Node6&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
-<title>Node6&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M461.1,-103.16C470.07,-102.14 479.27,-101.1 488.27,-100.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="488.79,-103.54 498.33,-98.94 488,-96.59 488.79,-103.54"/>
+<path fill="none" stroke="midnightblue" d="M434.27,-120.59C456.57,-125.65 484.12,-131.9 507.7,-137.25"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="507.01,-140.68 517.54,-139.48 508.56,-133.85 507.01,-140.68"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="694.5,-120.5 694.5,-139.5 747.5,-139.5 747.5,-120.5 694.5,-120.5"/>
-<text text-anchor="middle" x="721" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
+<g id="a_node8"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="497,-101.5 497,-120.5 624,-120.5 624,-101.5 497,-101.5"/>
+<text text-anchor="middle" x="560.5" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_mag</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
+<!-- Node6&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M624.14,-130C644.35,-130 666.07,-130 683.71,-130"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="684.12,-133.5 694.12,-130 684.12,-126.5 684.12,-133.5"/>
+<title>Node6&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M461.1,-111C469.49,-111 478.08,-111 486.53,-111"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="486.74,-114.5 496.74,-111 486.74,-107.5 486.74,-114.5"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a5422c76bfa322620de611083bd518d71" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="498.5,-63.5 498.5,-82.5 622.5,-82.5 622.5,-63.5 498.5,-63.5"/>
+<text text-anchor="middle" x="560.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_proj</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node11 -->
+<g id="edge10" class="edge">
+<title>Node6&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M434.27,-101.41C456.57,-96.35 484.12,-90.1 507.7,-84.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="508.56,-88.15 517.54,-82.52 507.01,-81.32 508.56,-88.15"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="660,-82.5 660,-101.5 782,-101.5 782,-82.5 660,-82.5"/>
-<text text-anchor="middle" x="721" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="694.5,-101.5 694.5,-120.5 747.5,-120.5 747.5,-101.5 694.5,-101.5"/>
+<text text-anchor="middle" x="721" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
+<!-- Node8&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
-<title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M601.5,-120.41C622.41,-115.4 648.21,-109.21 670.39,-103.89"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="671.38,-107.26 680.29,-101.52 669.75,-100.45 671.38,-107.26"/>
+<title>Node8&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M624.14,-111C644.35,-111 666.07,-111 683.71,-111"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="684.12,-114.5 694.12,-111 684.12,-107.5 684.12,-114.5"/>
 </g>
-<!-- Node10&#45;&gt;Node9 -->
-<g id="edge10" class="edge">
-<title>Node10&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M622.78,-92C631.64,-92 640.82,-92 649.84,-92"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="649.93,-95.5 659.93,-92 649.93,-88.5 649.93,-95.5"/>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="../../d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="660,-63.5 660,-82.5 782,-82.5 782,-63.5 660,-63.5"/>
+<text text-anchor="middle" x="721" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">qr_algorithm::vector_dot</text>
+</a>
 </g>
-<!-- Node12&#45;&gt;Node4 -->
-<g id="edge13" class="edge">
-<title>Node12&#45;&gt;Node4</title>
+</g>
+<!-- Node8&#45;&gt;Node10 -->
+<g id="edge9" class="edge">
+<title>Node8&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M601.5,-101.41C622.41,-96.4 648.21,-90.21 670.39,-84.89"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="671.38,-88.26 680.29,-82.52 669.75,-81.45 671.38,-88.26"/>
+</g>
+<!-- Node11&#45;&gt;Node10 -->
+<g id="edge11" class="edge">
+<title>Node11&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M622.78,-73C631.64,-73 640.82,-73 649.84,-73"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="649.93,-76.5 659.93,-73 649.93,-69.5 649.93,-76.5"/>
+</g>
+<!-- Node13&#45;&gt;Node4 -->
+<g id="edge14" class="edge">
+<title>Node13&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M131.19,-124.9C143.2,-125.49 159.66,-126.3 175.91,-127.11"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="175.81,-130.61 185.97,-127.6 176.15,-123.61 175.81,-130.61"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node">
-<title>Node13</title>
-<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="208.5,-76.5 208.5,-95.5 262.5,-95.5 262.5,-76.5 208.5,-76.5"/>
 <text text-anchor="middle" x="235.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node13 -->
-<g id="edge14" class="edge">
-<title>Node12&#45;&gt;Node13</title>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge15" class="edge">
+<title>Node13&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M131.19,-118.31C148.87,-112.78 176.22,-104.23 198.34,-97.31"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="199.58,-100.59 208.08,-94.26 197.49,-93.91 199.58,-100.59"/>
 </g>
-<!-- Node14&#45;&gt;Node4 -->
-<g id="edge16" class="edge">
-<title>Node14&#45;&gt;Node4</title>
+<!-- Node15&#45;&gt;Node4 -->
+<g id="edge17" class="edge">
+<title>Node15&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M131.19,-92.59C145.06,-97.61 164.87,-104.78 183.45,-111.51"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="182.41,-114.86 193.01,-114.97 184.8,-108.28 182.41,-114.86"/>
 </g>
-<!-- Node14&#45;&gt;Node13 -->
-<g id="edge17" class="edge">
-<title>Node14&#45;&gt;Node13</title>
+<!-- Node15&#45;&gt;Node14 -->
+<g id="edge18" class="edge">
+<title>Node15&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M131.19,-86C148.79,-86 175.97,-86 198.04,-86"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="198.08,-89.5 208.08,-86 198.08,-82.5 198.08,-89.5"/>
 </g>

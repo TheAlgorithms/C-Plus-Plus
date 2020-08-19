@@ -7,6 +7,7 @@ var hierarchy =
     [ "Complex", "da/d5a/class_complex.html", null ],
     [ "geometry::jarvis::Convexhull", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html", null ],
     [ "CycleCheck", "d3/dbb/class_cycle_check.html", null ],
+    [ "machine_learning::neural_network::layers::DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", null ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],
     [ "Edge", "d7/d77/class_edge.html", null ],
     [ "linear_probing::Entry", "db/d19/structlinear__probing_1_1_entry.html", null ],
@@ -28,6 +29,7 @@ var hierarchy =
     [ "MinHeap", "d2/d05/class_min_heap.html", null ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
+    [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", null ],
     [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Kind >", "d5/da1/structnode.html", null ],
     [ "data_structure::Node", "d3/d6f/structdata__structure_1_1_node.html", null ],
@@ -46,7 +48,7 @@ var hierarchy =
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
     [ "statistics::stats_computer2< T >", "d8/dab/classstatistics_1_1stats__computer2.html", null ],
     [ "tower", "d2/d2c/structtower.html", null ],
-    [ "trie", "d4/dd9/structtrie.html", null ],
     [ "Trie", "dd/d2f/class_trie.html", null ],
+    [ "trie", "d4/dd9/structtrie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ]
 ];

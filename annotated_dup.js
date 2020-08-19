@@ -38,6 +38,6 @@ var annotated_dup =
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", "d2/dc4/classstack__linked_list" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
-    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ],
-    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ]
+    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
+    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ]
 ];

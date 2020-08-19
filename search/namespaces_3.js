@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['geometry_2572',['geometry',['../d5/d5f/namespacegeometry.html',1,'']]],
-  ['graph_2573',['graph',['../df/dce/namespacegraph.html',1,'']]]
+  ['data_5fstructure_2616',['data_structure',['../d1/db4/namespacedata__structure.html',1,'']]],
+  ['double_5fhashing_2617',['double_hashing',['../d0/d65/namespacedouble__hashing.html',1,'']]],
+  ['dynamic_5fprogramming_2618',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]]
 ];
