@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isprime_4333',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'prime_factorization.cpp']]]
+  ['isprime_4405',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'prime_factorization.cpp']]]
 ];

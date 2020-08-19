@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fgraph_5fbipartite_2621',['is_graph_bipartite',['../de/d83/namespaceis__graph__bipartite.html',1,'']]]
+  ['heavy_5flight_5fdecomposition_2667',['heavy_light_decomposition',['../db/d6f/namespaceheavy__light__decomposition.html',1,'']]]
 ];

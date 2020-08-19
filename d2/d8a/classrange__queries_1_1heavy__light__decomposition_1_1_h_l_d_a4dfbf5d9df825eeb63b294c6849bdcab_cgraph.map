@@ -1,0 +1,6 @@
+<map id="range_queries::heavy_light_decomposition::HLD::query" name="range_queries::heavy_light_decomposition::HLD::query">
+<area shape="rect" id="node1" title="This function returns the sum of node values in the simple path from from node_1 to node_2." alt="" coords="5,45,152,101"/>
+<area shape="rect" id="node2" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" title="Utility function to break down a path query into two chain queries." alt="" coords="200,5,347,61"/>
+<area shape="rect" id="node3" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" title="The function returns the least common ancestor of two nodes." alt="" coords="200,85,347,141"/>
+<area shape="rect" id="node4" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="395,85,541,141"/>
+</map>
