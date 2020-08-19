@@ -393,7 +393,7 @@ namespace machine_learning {
                     // If there is any problem in opening file
                     if(!in_file.is_open()) {
                         std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
-                        exit(EXIT_FAILURE);
+                        std::exit(EXIT_FAILURE);
                     }
                     std::vector <std::vector<std::valarray<double>>> X, Y; // To store X and Y
                     std::string line; // To store each line
@@ -653,7 +653,7 @@ namespace machine_learning {
                     // If there is any problem in opening file
                     if(!out_file.is_open()) {
                         std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
-                        exit(EXIT_FAILURE);
+                        std::exit(EXIT_FAILURE);
                     }
                     /**
                         Format in which model is saved:
@@ -724,7 +724,7 @@ namespace machine_learning {
                     // If there is any problem in opening file
                     if(!in_file.is_open()) {
                         std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
-                        exit(EXIT_FAILURE);
+                        std::exit(EXIT_FAILURE);
                     }
                     std::vector <std::pair<int, std::string>> config; // To store config
                     std::vector <std::vector<std::valarray<double>>> kernals; // To store pretrained kernals
