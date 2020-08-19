@@ -67,9 +67,11 @@
   * [Longest Increasing Subsequence (Nlogn)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_increasing_subsequence_(nlogn).cpp)
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/matrix_chain_multiplication.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
+  * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/shortest_common_supersequence.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
 
 ## Geometry
+  * [Jarvis Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/jarvis_algorithm.cpp)
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
 
 ## Graph
@@ -78,13 +80,14 @@
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
   * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
   * [Cycle Check Directed Graph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/cycle_check_directed_graph.cpp)
-  * [Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs.cpp)
-  * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs_with_stack.cpp)
+  * [Depth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search.cpp)
+  * [Depth First Search With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search_with_stack.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dijkstra.cpp)
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
+  * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
-  * [Lca](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lca.cpp)
+  * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
   * [Max Flow With Ford Fulkerson And Edmond Karp Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp)
   * [Prim](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/prim.cpp)
   * [Topological Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort.cpp)
