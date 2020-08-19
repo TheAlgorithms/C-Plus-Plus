@@ -133,8 +133,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addEdge</b> (int src,
 <tr class="memitem:ac3e58f4a0c8c65befe6629f4e1b71142"><td class="memItemLeft" align="right" valign="top"><a id="ac3e58f4a0c8c65befe6629f4e1b71142"></a>
 <a class="el" href="../../da/d9a/class_graph.html">Graph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../da/d9a/class_graph.html">Graph</a> const &amp;)=default</td></tr>
 <tr class="separator:ac3e58f4a0c8c65befe6629f4e1b71142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30edce9b4e7c6347e67edc343f366d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9a/class_graph.html#ae30edce9b4e7c6347e67edc343f366d8">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> const &amp;adjList)</td></tr>
-<tr class="separator:ae30edce9b4e7c6347e67edc343f366d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbd1b60cab30b97c54d700eee8e456d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9a/class_graph.html#adcbd1b60cab30b97c54d700eee8e456d">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> adjList)</td></tr>
+<tr class="separator:adcbd1b60cab30b97c54d700eee8e456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c95e00effaea0cd9404dd74cd802ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9a/class_graph.html#a8c95e00effaea0cd9404dd74cd802ae3">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> &amp;&amp;adjList)</td></tr>
 <tr class="separator:a8c95e00effaea0cd9404dd74cd802ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99d44d3179d5bbbfa84a5031cf80cb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9a/class_graph.html#aa99d44d3179d5bbbfa84a5031cf80cb1">Graph</a> (unsigned int vertices, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../d7/d77/class_edge.html">Edge</a> &gt; const &amp;edges)</td></tr>
@@ -189,7 +189,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bfs</b> (int source, 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a61943646676002a5e75f7b6493c25713"><td class="memItemLeft" align="right" valign="top"><a id="a61943646676002a5e75f7b6493c25713"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertices</b></td></tr>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertices</b> = 0</td></tr>
 <tr class="separator:a61943646676002a5e75f7b6493c25713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13697caf8be6275ebb7b9497c9a9d6e5"><td class="memItemLeft" align="right" valign="top"><a id="a13697caf8be6275ebb7b9497c9a9d6e5"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_adjList</b></td></tr>
@@ -229,8 +229,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
 <div class="textblock"><p>Implementation of graph class.</p>
 <p>The graph will be represented using Adjacency List representation. This class contains 2 data members "m_vertices" &amp; "m_adjList" used to represent the number of vertices and adjacency list of the graph respectively. The vertices are labelled 0 - (m_vertices - 1). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae30edce9b4e7c6347e67edc343f366d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae30edce9b4e7c6347e67edc343f366d8">&#9670;&nbsp;</a></span>Graph() <span class="overload">[1/3]</span></h2>
+<a id="adcbd1b60cab30b97c54d700eee8e456d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbd1b60cab30b97c54d700eee8e456d">&#9670;&nbsp;</a></span>Graph() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +247,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">AdjList</a>&#160;</td>
           <td class="paramname"><em>adjList</em>&#160;</td>
         </tr>
         <tr>
@@ -270,7 +270,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>max_flow</b> = 0</td><
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : m_vertices(vertices), m_adjList(adjList) {}</div>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : m_vertices(vertices), m_adjList(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(adjList)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>

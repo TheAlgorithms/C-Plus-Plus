@@ -924,8 +924,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 10;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].size(); col++) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                &lt;&lt; v[row][col];</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
@@ -975,7 +975,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 15;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            &lt;&lt; v[row];</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
@@ -985,7 +985,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_aa799b4cec1681219887d89d037cfab50_cgraph.svg" width="223" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/ordinary__least__squares__regressor_8cpp_aa799b4cec1681219887d89d037cfab50_cgraph.svg" width="260" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

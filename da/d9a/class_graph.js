@@ -7,7 +7,7 @@ var class_graph =
     [ "~Graph", "da/d9a/class_graph.html#a9f341e2e8348a3f484987bdb0cec8006", null ],
     [ "Graph", "da/d9a/class_graph.html#ade809d353b640b9c2773d71d4f57d57d", null ],
     [ "Graph", "da/d9a/class_graph.html#a04365fc6f13bf330e38dbc1424134827", null ],
-    [ "Graph", "da/d9a/class_graph.html#ae30edce9b4e7c6347e67edc343f366d8", null ],
+    [ "Graph", "da/d9a/class_graph.html#adcbd1b60cab30b97c54d700eee8e456d", null ],
     [ "Graph", "da/d9a/class_graph.html#a8c95e00effaea0cd9404dd74cd802ae3", null ],
     [ "Graph", "da/d9a/class_graph.html#aa99d44d3179d5bbbfa84a5031cf80cb1", null ],
     [ "Graph", "da/d9a/class_graph.html#acfa457b5f6f7eb480fd469fb980a01ea", null ],

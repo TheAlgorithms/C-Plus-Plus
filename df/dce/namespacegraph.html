@@ -130,6 +130,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a9fc2ded2807582edf398e6d7c7114914"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a9fc2ded2807582edf398e6d7c7114914">getConnectedComponents</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&gt; *adj)</td></tr>
 <tr class="memdesc:a9fc2ded2807582edf398e6d7c7114914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that perfoms depth first search algorithm on graph and calculated the number of connected components.  <a href="../../df/dce/namespacegraph.html#a9fc2ded2807582edf398e6d7c7114914">More...</a><br /></td></tr>
 <tr class="separator:a9fc2ded2807582edf398e6d7c7114914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d8f7759375aee956643d76df491b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a33d8f7759375aee956643d76df491b7b">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; *adj, size_t u, size_t v)</td></tr>
+<tr class="memdesc:a33d8f7759375aee956643d76df491b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds and edge between two vertices of graph say u and v in this case.  <a href="../../df/dce/namespacegraph.html#a33d8f7759375aee956643d76df491b7b">More...</a><br /></td></tr>
+<tr class="separator:a33d8f7759375aee956643d76df491b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48acac475cb48614279e7ea784c32fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a48acac475cb48614279e7ea784c32fc3">explore</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; &amp;adj, size_t v, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *visited)</td></tr>
+<tr class="memdesc:a48acac475cb48614279e7ea784c32fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explores the given vertex, exploring a vertex means traversing over all the vertices which are connected to the vertex that is currently being explored.  <a href="../../df/dce/namespacegraph.html#a48acac475cb48614279e7ea784c32fc3">More...</a><br /></td></tr>
+<tr class="separator:a48acac475cb48614279e7ea784c32fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6017a54d445819ede9adcf33240e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a2e6017a54d445819ede9adcf33240e1a">depth_first_search</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; &amp;adj, size_t start)</td></tr>
+<tr class="memdesc:a2e6017a54d445819ede9adcf33240e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates depth first search algorithm.  <a href="../../df/dce/namespacegraph.html#a2e6017a54d445819ede9adcf33240e1a">More...</a><br /></td></tr>
+<tr class="separator:a2e6017a54d445819ede9adcf33240e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a454891267187a5ec6c6e3f3ad5203ff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a454891267187a5ec6c6e3f3ad5203ff1">addEdge</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt;&gt;&gt; *adj, int u, int v, int w)</td></tr>
 <tr class="memdesc:a454891267187a5ec6c6e3f3ad5203ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that add edge between two nodes or vertices of graph.  <a href="../../df/dce/namespacegraph.html#a454891267187a5ec6c6e3f3ad5203ff1">More...</a><br /></td></tr>
 <tr class="separator:a454891267187a5ec6c6e3f3ad5203ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +252,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a372ff051a7bc6c91d34a7b58edf8dfce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372ff051a7bc6c91d34a7b58edf8dfce">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a372ff051a7bc6c91d34a7b58edf8dfce">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,8 +299,63 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a33d8f7759375aee956643d76df491b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d8f7759375aee956643d76df491b7b">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph::addEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>adj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds and edge between two vertices of graph say u and v in this case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adj</td><td>Adjacency list representation of graph </td></tr>
+    <tr><td class="paramname">u</td><td>first vertex </td></tr>
+    <tr><td class="paramname">v</td><td>second vertex </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     * Here we are considering undirected graph that&#39;s the</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     * reason we are adding v to the adjacency list representation of u</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     * and also adding u to the adjacency list representation of v</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    (*adj)[u - 1].push_back(v - 1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    (*adj)[v - 1].push_back(u - 1);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a454891267187a5ec6c6e3f3ad5203ff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a454891267187a5ec6c6e3f3ad5203ff1">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a454891267187a5ec6c6e3f3ad5203ff1">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +484,55 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a2e6017a54d445819ede9adcf33240e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6017a54d445819ede9adcf33240e1a">&#9670;&nbsp;</a></span>depth_first_search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph::depth_first_search </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>adj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initiates depth first search algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adj</td><td>adjacency list of graph </td></tr>
+    <tr><td class="paramname">start</td><td>vertex from where DFS starts traversing. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                      {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">size_t</span> vertices = adj.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> visited(vertices, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../df/dce/namespacegraph.html#a48acac475cb48614279e7ea784c32fc3">explore</a>(adj, start, &amp;visited);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a2e6017a54d445819ede9adcf33240e1a_cgraph.svg" width="298" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a868530bfaed30e57290a76d5b4402d50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a868530bfaed30e57290a76d5b4402d50">&#9670;&nbsp;</a></span>dijkstra()</h2>
 
@@ -525,7 +638,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a8e9885e0dd49fcf8262a9868124deac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e9885e0dd49fcf8262a9868124deac9">&#9670;&nbsp;</a></span>explore()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9885e0dd49fcf8262a9868124deac9">&#9670;&nbsp;</a></span>explore() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -574,6 +687,65 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a48acac475cb48614279e7ea784c32fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48acac475cb48614279e7ea784c32fc3">&#9670;&nbsp;</a></span>explore() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph::explore </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; size_t &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>adj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *&#160;</td>
+          <td class="paramname"><em>visited</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Explores the given vertex, exploring a vertex means traversing over all the vertices which are connected to the vertex that is currently being explored. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adj</td><td>garph </td></tr>
+    <tr><td class="paramname">v</td><td>vertex to be explored </td></tr>
+    <tr><td class="paramname">visited</td><td>already visited vertices </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                       {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; v + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    (*visited)[v] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> x : adj[v]) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (!(*visited)[x]) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="../../df/dce/namespacegraph.html#a48acac475cb48614279e7ea784c32fc3">explore</a>(adj, x, visited);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a48acac475cb48614279e7ea784c32fc3_cgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a9fc2ded2807582edf398e6d7c7114914"></a>
@@ -630,6 +802,8 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="anamespacegraph_html_adbe6cd1fd148173ce6a01669925d2d72"><div class="ttname"><a href="../../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72">graph::add_directed_edge</a></div><div class="ttdeci">void add_directed_edge(std::vector&lt; std::vector&lt; int &gt;&gt; *graph, int u, int v)</div><div class="ttdoc">Adds a directed edge from vertex u to vertex v.</div><div class="ttdef"><b>Definition:</b> breadth_first_search.cpp:66</div></div>
 <div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="afront_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/front.html">std::queue::front</a></div><div class="ttdeci">T front(T... args)</div></div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="anamespacegraph_html_a48acac475cb48614279e7ea784c32fc3"><div class="ttname"><a href="../../df/dce/namespacegraph.html#a48acac475cb48614279e7ea784c32fc3">graph::explore</a></div><div class="ttdeci">void explore(const std::vector&lt; std::vector&lt; size_t &gt;&gt; &amp;adj, size_t v, std::vector&lt; bool &gt; *visited)</div><div class="ttdoc">Explores the given vertex, exploring a vertex means traversing over all the vertices which are connec...</div><div class="ttdef"><b>Definition:</b> depth_first_search.cpp:80</div></div>
 <div class="ttc" id="apop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/pop.html">std::queue::pop</a></div><div class="ttdeci">T pop(T... args)</div></div>
 <div class="ttc" id="atop_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">std::priority_queue::top</a></div><div class="ttdeci">T top(T... args)</div></div>
 <div class="ttc" id="apriority_queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a></div><div class="ttdoc">STL class.</div></div>

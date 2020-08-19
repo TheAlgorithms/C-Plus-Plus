@@ -238,8 +238,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> width = 15;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> separator = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.size(); row++) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].size(); col++)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; v.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); row++) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; v[row].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); col++)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(width) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setfill.html">std::setfill</a>(separator)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                &lt;&lt; v[row][col];</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        out &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
@@ -250,7 +250,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/db9/hill__cipher_8cpp_aeff09ac6b8f060c828354394a3189519_cgraph.svg" width="223" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/db9/hill__cipher_8cpp_aeff09ac6b8f060c828354394a3189519_cgraph.svg" width="260" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
