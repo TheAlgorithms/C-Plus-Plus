@@ -30,7 +30,7 @@
  *
  * @param l - end index or right index of second half array
  */
-void merge(int &arr, int l, int m, int r) {
+void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -64,7 +64,7 @@ void merge(int &arr, int l, int m, int r) {
  * @param r - right index or end index of array
  *
  */
-void mergeSort(int &arr, int l, int r) {
+void mergeSort(int arr[], int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
@@ -77,7 +77,7 @@ void mergeSort(int &arr, int l, int r) {
  * Utility function used to print the array after
  * sorting
  */
-void show(int &arr, int size) {
+void show(int arr[], int size) {
     for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
 }
