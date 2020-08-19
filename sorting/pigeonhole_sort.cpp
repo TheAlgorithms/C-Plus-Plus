@@ -5,9 +5,10 @@
  * @author [Lownish](https://github.com/Lownish)
  * @details
  * Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists
- * of elements where the number of elements and the number of possible key values
- * are approximately the same. It requires O(n + Range) time where n is number of
- * elements in input array and ‘Range’ is number of possible values in array.
+ * of elements where the number of elements and the number of possible key
+ * values are approximately the same. It requires O(n + Range) time where n is
+ * number of elements in input array and ‘Range’ is number of possible values in
+ * array.
  *
  * The time Complexity of the algorithm is \f$O(n+N)\f$.
  */
@@ -22,11 +23,12 @@
  * @brief Sorting algorithms
  */
 namespace sorting {
-    /**
-     * @namespace pigonhole
-     * @brief Functions for [Pigeonhole Sort](https://en.wikipedia.org/wiki/Pigeonhole_sort) algorithm
-     */
-    namespace pigonhole {
+/**
+ * @namespace pigonhole
+ * @brief Functions for [Pigeonhole
+ * Sort](https://en.wikipedia.org/wiki/Pigeonhole_sort) algorithm
+ */
+namespace pigonhole {
 /**
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
@@ -50,7 +52,7 @@ void pigeonSort(std::array<int, N> arr, int n) {
 
     // Range refers to the number of holes required
     int range = max - min + 1;
-    int* hole = new int[range]();
+    int *hole = new int[range]();
 
     // Copying all array values to pigeonhole
     for (int i = 0; i < n; i++) {
@@ -78,7 +80,6 @@ void pigeonSort(std::array<int, N> arr, int n) {
 }  // namespace pigonhole
 }  // namespace sorting
 
-
 /**
  * Test function 1 with unsorted array
  * {8, 3, 2, 7, 4, 6, 8}
@@ -88,9 +89,7 @@ static void test_1() {
     const int n = 7;
     std::array<int, n> test_array = {8, 3, 2, 7, 4, 6, 8};
 
-    int n = sizeof(test_array) / sizeof(test_array[0]);
-
-    sorting::pigonhole::pigeonSort<n>(test_array, n);
+    sorting::pigonhole::pigeonSort(test_array, n);
 }
 
 /**
@@ -101,11 +100,9 @@ static void test_1() {
 static void test_2() {
     const int n = 10;
     std::array<int, n> test_array = {802, 630, 20,  745, 52,
-                                      300, 612, 932, 78,  187};
+                                     300, 612, 932, 78,  187};
 
-    int n = sizeof(test_array) / sizeof(test_array[0]);
-
-    sorting::pigonhole::pigeonSort<n>(test_array, n);
+    sorting::pigonhole::pigeonSort(test_array, n);
 }
 
 /**
