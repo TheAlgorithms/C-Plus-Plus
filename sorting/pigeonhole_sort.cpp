@@ -24,11 +24,11 @@
  */
 namespace sorting {
 /**
- * @namespace pigonhole
+ * @namespace pigeonhole
  * @brief Functions for [Pigeonhole
  * Sort](https://en.wikipedia.org/wiki/Pigeonhole_sort) algorithm
  */
-namespace pigonhole {
+namespace pigeonhole {
 /**
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
@@ -77,7 +77,7 @@ void pigeonSort(std::array<int, N> arr, int n) {
         std::cout << arr.at(i) << " ";
     }
 }
-}  // namespace pigonhole
+}  // namespace pigeonhole
 }  // namespace sorting
 
 /**
@@ -89,7 +89,7 @@ static void test_1() {
     const int n = 7;
     std::array<int, n> test_array = {8, 3, 2, 7, 4, 6, 8};
 
-    sorting::pigonhole::pigeonSort(test_array, n);
+    sorting::pigeonhole::pigeonSort<n>(test_array, n);
 }
 
 /**
@@ -102,7 +102,7 @@ static void test_2() {
     std::array<int, n> test_array = {802, 630, 20,  745, 52,
                                      300, 612, 932, 78,  187};
 
-    sorting::pigonhole::pigeonSort(test_array, n);
+    sorting::pigeonhole::pigeonSort<n>(test_array, n);
 }
 
 /**
