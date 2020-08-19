@@ -390,6 +390,11 @@ namespace machine_learning {
                                      const int &slip_lines = 1) {
                     std::ifstream in_file; // Ifstream to read file
                     in_file.open(file_name.c_str(), std::ios::in); // Open file
+                    // If there is any problem in opening file
+                    if(!in_file.is_open()) {
+                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        exit(EXIT_FAILURE);
+                    }
                     std::vector <std::vector<std::valarray<double>>> X, Y; // To store X and Y
                     std::string line; // To store each line
                     // Skip lines
