@@ -650,6 +650,11 @@ namespace machine_learning {
                     std::ofstream out_file; // Ofstream to write in file
                     // Open file in out|trunc mode
                     out_file.open(file_name.c_str(), std::ofstream::out | std::ofstream::trunc);
+                    // If there is any problem in opening file
+                    if(!out_file.is_open()) {
+                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        exit(EXIT_FAILURE);
+                    }
                     /**
                         Format in which model is saved:
 
@@ -716,6 +721,11 @@ namespace machine_learning {
                 NeuralNetwork load_model (const std::string &file_name) {
                     std::ifstream in_file; // Ifstream to read file
                     in_file.open(file_name.c_str()); // Openinig file
+                    // If there is any problem in opening file
+                    if(!in_file.is_open()) {
+                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        exit(EXIT_FAILURE);
+                    }
                     std::vector <std::pair<int, std::string>> config; // To store config
                     std::vector <std::vector<std::valarray<double>>> kernals; // To store pretrained kernals
                     // Loading model from saved file format
