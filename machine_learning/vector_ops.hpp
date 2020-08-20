@@ -34,9 +34,9 @@ std::ostream &operator<<(std::ostream &out,
     out.precision(4); 
     for(const auto &a : A) { // For each row in A
         for(const auto &x : a) { // For each element in row
-            std::cerr << x << ' '; // print element 
+            std::cout << x << ' '; // print element 
         }
-        std::cerr << std::endl;
+        std::cout << std::endl;
     }
     return out;
 }
@@ -52,7 +52,7 @@ std::ostream &operator<<(std::ostream &out, const std::pair<T, T> &A) {
     // Setting output precision to 4 in case of floating point numbers
     out.precision(4);
     // printing pair in the form (p, q)
-    std::cerr << "(" << A.first << ", " << A.second << ")";
+    std::cout << "(" << A.first << ", " << A.second << ")";
     return out;
 }
 
@@ -67,9 +67,9 @@ std::ostream &operator<<(std::ostream &out, const std::valarray<T> &A) {
     // Setting output precision to 4 in case of floating point numbers
     out.precision(4);
     for(const auto &a : A) { // For every element in the vector.
-        std::cerr << a << ' '; // Print element
+        std::cout << a << ' '; // Print element
     }
-    std::cerr << std::endl;
+    std::cout << std::endl;
     return out;
 }
 
@@ -135,7 +135,8 @@ void equal_shuffle(std::vector < std::vector <std::valarray<T>> >  &A,
     // If two vectors have different sizes
     if(A.size() != B.size())
     {
-        std::cerr << "ERROR : Can not equally shuffle two vectors with different sizes: ";
+        std::cerr << "ERROR (" << __func__ << ") : ";  
+        std::cerr << "Can not equally shuffle two vectors with different sizes: ";
         std::cerr << A.size() << " and " << B.size() << std::endl;
         std::exit(EXIT_FAILURE);
     }
@@ -245,7 +246,8 @@ std::pair<size_t, size_t> get_shape(const std::vector<std::valarray<T>> &A) {
     for(const auto &a : A) {
         // If supplied vector don't have same shape in all rows
         if(a.size() != sub_size) {
-            std::cerr << "ERROR: (get_shape) Supplied vector is not 2D Matrix" << std::endl;
+            std::cerr << "ERROR (" << __func__ << ") : ";
+            std::cerr << "Supplied vector is not 2D Matrix" << std::endl;
             std::exit(EXIT_FAILURE);
         }
     }
@@ -267,7 +269,8 @@ minmax_scaler(const std::vector<std::vector<std::valarray<T>>> &A, const T &low,
     const auto shape = get_shape(B[0]); // Storing shape of B's every element
     // As this function is used for scaling training data vector should be of shape (1, X)
     if(shape.first != 1) {
-        std::cerr << "ERROR: (MinMax Scaling) Supplied vector is not supported for minmax scaling, shape: ";
+        std::cerr << "ERROR (" << __func__ << ") : ";
+        std::cerr << "Supplied vector is not supported for minmax scaling, shape: ";
         std::cerr << shape << std::endl;
         std::exit(EXIT_FAILURE);
     }
@@ -297,7 +300,8 @@ size_t argmax(const std::vector<std::valarray<T>> &A) {
     const auto shape = get_shape(A);
     // As this function is used on predicted (or target) vector, shape should be (1, X)    
     if(shape.first != 1) {
-        std::cerr << "ERROR: (argmax) Supplied vector is ineligible for argmax" << std::endl;
+        std::cerr << "ERROR (" << __func__ << ") : ";
+        std::cerr << "Supplied vector is ineligible for argmax" << std::endl;
         std::exit(EXIT_FAILURE);        
     }
     // Return distance of max element from first element (i.e. index)
@@ -388,7 +392,8 @@ std::vector <std::valarray <T> > operator + (const std::vector<std::valarray<T>>
     const auto shape_b = get_shape(B);
     // If vectors don't have equal shape
     if(shape_a.first != shape_b.first || shape_a.second != shape_b.second) {
-        std::cerr << "ERROR: (vector addition) Supplied vectors have different shapes ";
+        std::cerr << "ERROR (" << __func__ << ") : ";
+        std::cerr << "Supplied vectors have different shapes ";
         std::cerr << shape_a << " and " << shape_b << std::endl;
         std::exit(EXIT_FAILURE);
     }
@@ -412,7 +417,8 @@ std::vector <std::valarray <T>> operator - (const std::vector<std::valarray<T>> 
     const auto shape_b = get_shape(B);
     // If vectors don't have equal shape
     if(shape_a.first != shape_b.first || shape_a.second != shape_b.second) {
-        std::cerr << "ERROR: (vector subtraction) Supplied vectors have different shapes ";
+        std::cerr << "ERROR (" << __func__ << ") : ";
+        std::cerr << "Supplied vectors have different shapes ";
         std::cerr << shape_a << " and " << shape_b << std::endl;
         std::exit(EXIT_FAILURE);
     }
@@ -436,7 +442,8 @@ std::vector <std::valarray <T>> multiply(const std::vector<std::valarray<T>> &A,
     const auto shape_b = get_shape(B);
     // If vectors are not eligible for multiplication
     if(shape_a.second != shape_b.first ) {
-        std::cerr << "ERROR: (multiply) Supplied vectors are not eligible for multiplication ";
+        std::cerr << "ERROR (" << __func__ << ") : "; 
+        std::cerr << "Vectors are not eligible for multiplication ";
         std::cerr << shape_a << " and " << shape_b << std::endl;
         std::exit(EXIT_FAILURE);
     }
@@ -468,7 +475,8 @@ std::vector <std::valarray <T>> hadamard_product(const std::vector<std::valarray
     const auto shape_b = get_shape(B);
     // If vectors are not eligible for hadamard product
     if(shape_a.first != shape_b.first || shape_a.second != shape_b.second) {
-        std::cerr << "ERROR: (hadamard_product) Supplied vectors have different shapes ";
+        std::cerr << "ERROR (" << __func__ << ") : "; 
+        std::cerr << "Vectors have different shapes ";
         std::cerr << shape_a << " and " << shape_b << std::endl;
         std::exit(EXIT_FAILURE);
     }

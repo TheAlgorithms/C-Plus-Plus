@@ -171,8 +171,8 @@ namespace machine_learning {
                         }
                         else {
                             // If supplied activation is invalid
-                            std::cerr << "ERROR: Invalid argument for layer -> constructor -> activation, ";
-                            std::cerr << "Expected from {none, sigmoid, relu, tanh} got ";
+                            std::cerr << "ERROR (" << __func__ << ") : "; 
+                            std::cerr << "Invalid argument. Expected {none, sigmoid, relu, tanh} got ";
                             std::cerr << activation << std::endl;
                             std::exit(EXIT_FAILURE);
                         }
@@ -215,8 +215,8 @@ namespace machine_learning {
                         }
                         else {
                             // If supplied activation is invalid
-                            std::cerr << "ERROR: Invalid argument for layer -> constructor -> activation, ";
-                            std::cerr << "Expected from {none, sigmoid, relu, tanh} got ";
+                            std::cerr << "ERROR (" << __func__ << ") : "; 
+                            std::cerr << "Invalid argument. Expected {none, sigmoid, relu, tanh} got ";
                             std::cerr << activation << std::endl;
                             std::exit(EXIT_FAILURE);
                         }
@@ -271,13 +271,15 @@ namespace machine_learning {
                               const std::vector <std::vector<std::valarray<double>>> &kernals) {
                     // First layer should not have activation
                     if(config.begin() -> second != "none") {
-                        std::cerr << "ERROR: First layer can't have activation other than none";
+                        std::cerr << "ERROR (" << __func__ << ") : "; 
+                        std::cerr << "First layer can't have activation other than none got " << config.begin() -> second;
                         std::cerr << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     // Network should have atleast two layers
                     if(config.size() <= 1) {
-                        std::cerr << "ERROR: Invalid size of network, ";
+                        std::cerr << "ERROR (" << __func__ << ") : ";
+                        std::cerr << "Invalid size of network, ";
                         std::cerr << "Atleast two layers are required";
                         std::exit(EXIT_FAILURE);
                     }
@@ -322,13 +324,15 @@ namespace machine_learning {
                 explicit NeuralNetwork(const std::vector <std::pair<int, std::string>> &config) {
                     // First layer should not have activation
                     if(config.begin() -> second != "none") {
-                        std::cerr << "ERROR: First layer can't have activation other than none";
+                        std::cerr << "ERROR (" << __func__ << ") : "; 
+                        std::cerr << "First layer can't have activation other than none got " << config.begin() -> second;
                         std::cerr << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     // Network should have atleast two layers
                     if(config.size() <= 1) {
-                        std::cerr << "ERROR: Invalid size of network, ";
+                        std::cerr << "ERROR (" << __func__ << ") : ";
+                        std::cerr << "Invalid size of network, ";
                         std::cerr << "Atleast two layers are required";
                         std::exit(EXIT_FAILURE);
                     }
@@ -392,7 +396,8 @@ namespace machine_learning {
                     in_file.open(file_name.c_str(), std::ios::in); // Open file
                     // If there is any problem in opening file
                     if(!in_file.is_open()) {
-                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        std::cerr << "ERROR (" << __func__ << ") : "; 
+                        std::cerr << "Unable to open file: "<< file_name << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     std::vector <std::vector<std::valarray<double>>> X, Y; // To store X and Y
@@ -440,12 +445,12 @@ namespace machine_learning {
                         X.push_back({x_data});
                         Y.push_back({y_data});
                     }
-                    in_file.close();
                     // Normalize training data if flag is set
                     if(normalize) {
                         // Scale data between 0 and 1 using min-max scaler
                         X = minmax_scaler(X, 0.01, 1.0);
                     }
+                    in_file.close(); // Closing file
                     return make_pair(X, Y); // Return pair of X and Y
                 }
 
@@ -496,7 +501,8 @@ namespace machine_learning {
                     std::vector < std::vector <std::valarray<double>>> X = X_, Y = Y_;
                     // Both label and input data should have same size
                     if (X.size() != Y.size()) {
-                        std::cerr << "ERROR : X and Y in fit have different sizes" << std::endl;
+                        std::cerr << "ERROR (" << __func__ << ") : ";
+                        std::cerr << "X and Y in fit have different sizes" << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     std::cout << "INFO: Training Started" << std::endl;
@@ -652,7 +658,8 @@ namespace machine_learning {
                     out_file.open(file_name.c_str(), std::ofstream::out | std::ofstream::trunc);
                     // If there is any problem in opening file
                     if(!out_file.is_open()) {
-                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        std::cerr << "ERROR (" << __func__ << ") : "; 
+                        std::cerr << "Unable to open file: "<< file_name << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     /**
@@ -710,6 +717,7 @@ namespace machine_learning {
                     }
                     std::cout << "INFO: Model saved successfully with name : ";
                     std::cout << file_name << std::endl;
+                    out_file.close(); // Closing file
                     return;
                 }
 
@@ -723,7 +731,8 @@ namespace machine_learning {
                     in_file.open(file_name.c_str()); // Openinig file
                     // If there is any problem in opening file
                     if(!in_file.is_open()) {
-                        std::cerr << "ERROR: Unable to open file: "<< file_name << std::endl;
+                        std::cerr << "ERROR (" << __func__ << ") : "; 
+                        std::cerr << "Unable to open file: "<< file_name << std::endl;
                         std::exit(EXIT_FAILURE);
                     }
                     std::vector <std::pair<int, std::string>> config; // To store config
@@ -748,6 +757,7 @@ namespace machine_learning {
                         kernals.emplace_back(kernal);
                     }
                     std::cout << "INFO: Model loaded successfully" << std::endl;
+                    in_file.close(); // Closing file
                     return NeuralNetwork(config, kernals); // Return instance of NeuralNetwork class
                 }
 
@@ -791,9 +801,9 @@ static void test() {
     // Training Model
     myNN.fit_from_csv("iris.csv", true, 100, 0.3, false, 2, 32, true);
     // Testing predictions of model
-    assert(machine_learning::argmax(myNN.single_predict({{5,3.4,1.6,0.4}})) == 0);
-    assert(machine_learning::argmax(myNN.single_predict({{6.4,2.9,4.3,1.3}})) == 1);
-    assert(machine_learning::argmax(myNN.single_predict({{6.2,3.4,5.4,2.3}})) == 2);
+    assert(machine_learning::argmax(myNN.single_predict({{5, 3.4, 1.6, 0.4}})) == 0);
+    assert(machine_learning::argmax(myNN.single_predict({{6.4, 2.9, 4.3, 1.3}})) == 1);
+    assert(machine_learning::argmax(myNN.single_predict({{6.2, 3.4, 5.4, 2.3}})) == 2);
     return;
 }
 
