@@ -33,10 +33,11 @@ namespace pigeonhole {
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
  * @param arr unsorted array of elements
+ * @param n number of times loop will run
  * @returns none
  */
 template <std::size_t N>
-void pigeonSort(std::array<int, N> arr, int n) {
+std::array<int,N> pigeonSort(std::array<int, N> arr, int n) {
     // Finding min and max*
     int min = arr.at(0);
     int max = arr.at(0);
@@ -69,13 +70,8 @@ void pigeonSort(std::array<int, N> arr, int n) {
         }
     }
     delete[] hole;
-    assert(std::is_sorted(std::begin(arr), std::end(arr)));
-    std::cout << "Passed\n";
 
-    // Printing sorted array
-    for (int i = 0; i < n; i++) {
-        std::cout << arr.at(i) << " ";
-    }
+    return arr;
 }
 }  // namespace pigeonhole
 }  // namespace sorting
@@ -89,7 +85,15 @@ static void test_1() {
     const int n = 7;
     std::array<int, n> test_array = {8, 3, 2, 7, 4, 6, 8};
 
-    sorting::pigeonhole::pigeonSort<n>(test_array, n);
+    test_array = sorting::pigeonhole::pigeonSort<n>(test_array, n);
+
+    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
+
+    // Printing sorted array
+    for (int i = 0; i < n; i++) {
+        std::cout << test_array.at(i) << " ";
+    }
+    std::cout << "\nPassed\n";
 }
 
 /**
@@ -102,7 +106,15 @@ static void test_2() {
     std::array<int, n> test_array = {802, 630, 20,  745, 52,
                                      300, 612, 932, 78,  187};
 
-    sorting::pigeonhole::pigeonSort<n>(test_array, n);
+    test_array = sorting::pigeonhole::pigeonSort<n>(test_array, n);
+
+    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
+
+    // Printing sorted array
+    for (int i = 0; i < n; i++) {
+        std::cout << test_array.at(i) << " ";
+    }
+    std::cout << "\nPassed\n";
 }
 
 /**
