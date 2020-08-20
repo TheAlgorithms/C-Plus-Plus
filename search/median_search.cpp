@@ -1,78 +1,110 @@
 /**
  * \file
  * \brief [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
- * \warning This core is erroneous and gives invorrect answers. Tested using
  * cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  * \ingroup median search
- * \{
  */
-#include <algorithm>
+
 #include <iostream>
+#include <algorithm>
 #include <vector>
+using namespace std;
 
-/**
- * @todo add documentation
- */
-template <class X>
-void comp(X x, std::vector<int> *s1, std::vector<int> *s2,
-          std::vector<int> *s3) {
-    if (s1->size() >= x && s1->size() + s2->size() < x) {
-        std::cout << (*s2)[0] << " is the " << x + 1 << "th element from front";
-    } else if (s1->size() > x) {
-        std::sort(s1->begin(), s1->end());
-        std::cout << (*s1)[x] << " is the " << x + 1 << "th element from front";
-    } else if (s1->size() + s2->size() <= x && s3->size() > x) {
-        std::sort(s3->begin(), s3->end());
-        std::cout << (*s3)[x - s1->size() - s2->size()] << " is the " << x + 1
-                  << "th element from front";
-    } else {
-        std::cout << x + 1 << " is invalid location";
-    }
+/* Assume that all the elements of A are distinct
+    def median_of_medians(A, i):
+
+    #divide A into sublists of len 5
+    sublists = [A[j:j+5] for j in range(0, len(A), 5)]
+    medians = [sorted(sublist)[len(sublist)/2] for sublist in sublists]
+    if len(medians) <= 5:
+        pivot = sorted(medians)[len(medians)/2]
+    else:
+        #the pivot is the median of the medians
+        pivot = median_of_medians(medians, len(medians)/2)
+
+    #partitioning step
+    low = [j for j in A if j < pivot]
+    high = [j for j in A if j > pivot]
+
+    k = len(low)
+    if i < k:
+        return median_of_medians(low,i)
+    elif i > k:
+        return median_of_medians(high,i-k-1)
+    else: #pivot = k
+        return pivot
+*/
+
+/*
+ * Here are some example lists you can use to see how the algorithm works
+ * A = [1,2,3,4,5,1000,8,9,99] (Contain Unique Elements)
+ * B = [1,2,3,4,5,6] (Contains Unique Elements)
+ * print median_of_medians(A, 0) #should be 1
+ * print median_of_medians(A,7) #should be 99
+ * print median_of_medians(B,4) #should be 5
+*/
+
+int median_of_medians(vector<int> a,  int idx){
+	int pivot;
+	vector<int> m;
+	int r = a.size();
+	for(int i = 0; i < r; i += 5){
+		sort(a.begin() + i, a.begin() + min(r, i + 5));
+		int mid = (i + min(r, i + 5)) / 2;
+		m.push_back(a[mid]);
+	}
+	int sz = int(m.size());
+	if(sz <= 5){
+		sort(m.begin(), m.end());
+		pivot = m[(sz- 1) / 2];
+	}
+	else{
+		pivot = median_of_medians(m, idx);
+	}
+	vector<int> low;
+	vector<int> high;
+	for(int i = 0; i < r; i++){
+		if(a[i] < pivot)
+			low.push_back(a[i]);
+		else if(a[i] > pivot)
+			high.push_back(a[i]);
+	}
+	int k = int(low.size());
+	if(idx < k)
+		return median_of_medians(low, idx);
+	else if(idx > k)
+		return median_of_medians(high, idx-k-1);
+	else
+		return pivot;
 }
 
-#define MAX_NUM 20  ///< maximum number of values to sort from
+/* Main function*/
 
-/**
- * Main function
- */
-int main() {
-    std::vector<int> v{25, 21, 98, 100, 76, 22, 43, 60, 89, 87};
-    std::vector<int> s1;
-    std::vector<int> s2;
-    std::vector<int> s3;
+int main()
+{
+	int n;
+	cout << "Enter Size of Array: ";
+	cin >> n;
+	vector<int> a(n);
+	cout << "Enter Array: ";
+	for(int i = 0; i < n; i++)
+		cin >> a[i];
 
-    // creates an array of random numbers
-    // for (int i = 0; i < MAX_NUM; i++) {
-    //     int r = std::rand() % 1000;
-    //     v.push_back(r);
-    //     std::cout << r << " ";
-    // }
-    for (int r : v) std::cout << r << " ";
+	cout << "Median: ";
+	int x = median_of_medians(a,  (n - 1) / 2);
+	if(n % 2 == 0){
+		int y = median_of_medians(a, n / 2);
+		cout << (float(x) + float(y))/2.0;
+	}
+	else
+		cout << x;
 
-    int median = std::rand() % 1000;  // initialize to a random numnber
-
-    std::cout << "\nmedian=" << median << std::endl;
-    int avg1, avg2, avg3, sum1 = 0, sum2 = 0, sum3 = 0;
-
-    for (int i = 0; i < v.size(); i++) {  // iterate through all numbers
-        if (v.back() == v[median]) {
-            avg1 = sum1 + v.back();
-            s2.push_back(v.back());
-        } else if (v.back() < v[median]) {
-            avg2 = sum2 + v.back();
-            s1.push_back(v.back());
-        } else {
-            avg3 = sum3 + v.back();
-            s3.push_back(v.back());
-        }
-        v.pop_back();
-    }
-
-    int x;
-    std::cout << "enter the no. to be searched form begining:- ";
-    std::cin >> x;
-    comp(x - 1, &s1, &s2, &s3);
-
-    return 0;
+	cout << "\nTo find i-th smallest element ";
+       	cout << "\nEnter i: ";
+	int idx;
+	cin >> idx;
+	idx--;
+	cout << "i-th smallest element: " << median_of_medians(a, idx) << endl;
+	return 0;
 }
-/// }
+
