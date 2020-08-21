@@ -53,8 +53,9 @@ namespace search {
  */
 namespace median_search {
 /**
-* This function Search the element in **a** whose index is **idx** and return element at index **idx** in **a** (a[idx])
-* @param A(list) and idx(index) of element which we want to search
+* This function search the element in an array for the given index.
+* @param A an array
+* @param idx the index
 * @return corresponding element which we want to search.
 */  
 int median_of_medians(const std::vector<int>& A,  const int& idx) {
