@@ -1,14 +1,20 @@
-/**
- * \file
- * \brief [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
- * cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
- * \ingroup median search
- */
+// Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
 
 #include <iostream>
 #include <algorithm>
 #include <vector>
 
+/**
+ * @namespace search
+ * @brief Search algorithms
+ */
+namespace search {
+/**
+ * @namespace median_search
+ * @brief Functions for [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
+ * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
+ */
+namespace median_search {
 /* Assume that all the elements of A are distinct
     def median_of_medians(A, i):
 
@@ -43,8 +49,8 @@
  * print median_of_medians(B,4) #should be 5
 */
 
-int median_of_medians(std::vector<int> a,  int idx){
-	int pivot = 0;			// initialized with zero
+int median_of_medians(std::vector<int> a,  int idx){	// Search  the element in **a** whose index is **idx** and return element at index **idx** in **a** (a[idx])
+	int pivot = 0;					// initialized with zero
 	std::vector<int> m;
 	int r = a.size();
 	for(int i = 0; i < r; i += 5){
@@ -81,9 +87,12 @@ int median_of_medians(std::vector<int> a,  int idx){
 		return pivot;
 	}
 }
+}  // namespace median_search
+}  // namespace search
 
-/* Main function*/
-
+/**
+ * Main function
+ */
 int main()
 {
 	int n = 0;
@@ -95,9 +104,9 @@ int main()
 		std::cin >> a[i];
 	}
 	std::cout << "Median: ";			// Median defination: https://en.wikipedia.org/wiki/Median
-	int x = median_of_medians(a,  (n - 1) / 2);
+	int x = search::median_search::median_of_medians(a,  (n - 1) / 2);
 	if(n % 2 == 0){
-		int y = median_of_medians(a, n / 2);
+		int y = search::median_search::median_of_medians(a, n / 2);
 		std::cout << (float(x) + float(y))/2.0;
 	}
 	else{
@@ -108,7 +117,7 @@ int main()
 	int idx = 0;
 	std::cin >> idx;
 	idx--;
-	std::cout << idx + 1<< "-th smallest element: " << median_of_medians(a, idx) << '\n';
+	std::cout << idx + 1<< "-th smallest element: " << search::median_search::median_of_medians(a, idx) << '\n';
 	return 0;
 }
 
