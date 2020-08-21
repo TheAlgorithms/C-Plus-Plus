@@ -54,9 +54,9 @@ namespace search {
 namespace median_search {
 /**
 * This function search the element in an array for the given index.
-* @param A an array
-* @param idx the index
-* @return corresponding element which we want to search.
+* @param A array where numbers are saved
+* @param idx current index in array
+* @returns corresponding element which we want to search.
 */  
 int median_of_medians(const std::vector<int>& A,  const int& idx) {
 	int pivot = 0;					// initialized with zero
