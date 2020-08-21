@@ -1,14 +1,43 @@
 /**
  * @file median_search.cpp
- * @brief Implementation of [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm.
+ * @brief Implementation of [Median search](https://en.wikipedia.org/wiki/Median_of_medians) algorithm.
  * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  *
  * @details
- * Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A. 
+ * Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
+ * median_of_medians(A, i):
+ *  #divide A into sublists of len 5
+ *  sublists = [A[j:j+5] for j in range(0, len(A), 5)]
+ *  medians = [sorted(sublist)[len(sublist)/2] for sublist in sublists]
+ *  if len(medians) <= 5:
+ *	pivot = sorted(medians)[len(medians)/2]
+ *  else:
+ *      #the pivot is the median of the medians
+ *      pivot = median_of_medians(medians, len(medians)/2)
+ *  #partitioning step
+ *  low = [j for j in A if j < pivot]
+ *  high = [j for j in A if j > pivot]
+ *  k = len(low)
+ *   if i < k:
+ *      return median_of_medians(low,i)
+ *   elif i > k:
+ *      return median_of_medians(high,i-k-1)
+ *  else: #pivot = k
+ *       return pivot
+ *
  * \note this algorithm implements median search for only arrays which have distinct elements
- * 
+ *
+ * Here are some example lists you can use to see how the algorithm works
+ * A = [1,2,3,4,5,1000,8,9,99] (Contain Unique Elements)
+ * B = [1,2,3,4,5,6] (Contains Unique Elements)
+ * print median_of_medians(A, 0) #should be 1
+ * print median_of_medians(A,7) #should be 99
+ * print median_of_medians(B,4) #should be 5
+ *
+ * @author Unknown author
  * @author [Sushil Kumar](https://github.com/Rp-sushil)
  */
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -23,42 +52,14 @@ namespace search {
  * @brief Functions for [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
  */
 namespace median_search {
-/* Assume that all the elements of A are distinct
-    def median_of_medians(A, i):
-
-    #divide A into sublists of len 5
-    sublists = [A[j:j+5] for j in range(0, len(A), 5)]
-    medians = [sorted(sublist)[len(sublist)/2] for sublist in sublists]
-    if len(medians) <= 5:
-        pivot = sorted(medians)[len(medians)/2]
-    else:
-        #the pivot is the median of the medians
-        pivot = median_of_medians(medians, len(medians)/2)
-
-    #partitioning step
-    low = [j for j in A if j < pivot]
-    high = [j for j in A if j > pivot]
-
-    k = len(low)
-    if i < k:
-        return median_of_medians(low,i)
-    elif i > k:
-        return median_of_medians(high,i-k-1)
-    else: #pivot = k
-        return pivot
-*/
-
-/*
- * Here are some example lists you can use to see how the algorithm works
- * A = [1,2,3,4,5,1000,8,9,99] (Contain Unique Elements)
- * B = [1,2,3,4,5,6] (Contains Unique Elements)
- * print median_of_medians(A, 0) #should be 1
- * print median_of_medians(A,7) #should be 99
- * print median_of_medians(B,4) #should be 5
-*/
-
-int median_of_medians(std::vector<int> a,  int idx){	// Search  the element in **a** whose index is **idx** and return element at index **idx** in **a** (a[idx])
+/**
+* This function Search the element in **a** whose index is **idx** and return element at index **idx** in **a** (a[idx])
+* @param A(list) and idx(index) of element which we want to search
+* @return corresponding element which we want to search.
+*/  
+int median_of_medians(const std::vector<int>& A,  const int& idx) {
 	int pivot = 0;					// initialized with zero
+	std::vector<int> a(A.begin(), A.end());
 	std::vector<int> m;
 	int r = a.size();
 	for(int i = 0; i < r; i += 5){
