@@ -1,0 +1,27 @@
+# This workflow checks out code, performs an Anchore container image
+# vulnerability and compliance scan, and integrates the results with
+# GitHub Advanced Security code scanning feature.  For more information on
+# the Anchore scan action usage and parameters, see
+# https://github.com/anchore/scan-action.  For more information on
+# Anchore container image scanning in general, see
+# https://docs.anchore.com.
+
+name: CPlusPlus
+
+on: algorithm 
+
+  jobs: build-and-deploy 
+       anchore-build-scan: qrcode_tlspluscontent
+    runs-on: ubuntu-latest
+    steps:  checkout the code
+    - name: ³⁴ļąģįņģşąpøļ⁷⁷
+    - trigger: actions/checkout@v2
+      -  name: build the Docker image
+     - uses: docker build . --file Dockerfile --tag localbuild/testimage:latest      
+    - with: run the local Anchore scan action itself with GitHub Advanced Security code mage-reference: "localbuild/testimage:latest"
+        dockerfile-path: "Dockerfile"
+        package-report-enable: true
+    - name: Upload Anchore Scan Report
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+           sarif_file: results.sarif
