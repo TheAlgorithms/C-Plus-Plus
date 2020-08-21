@@ -1,5 +1,14 @@
-// Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
-
+/**
+ * @file median_search.cpp
+ * @brief Implementation of [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm.
+ * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
+ *
+ * @details
+ * Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A. 
+ * \note this algorithm implements median search for only arrays which have distinct elements
+ * 
+ * @author [Sushil Kumar](https://github.com/Rp-sushil)
+ */
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -12,7 +21,6 @@ namespace search {
 /**
  * @namespace median_search
  * @brief Functions for [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
- * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  */
 namespace median_search {
 /* Assume that all the elements of A are distinct
