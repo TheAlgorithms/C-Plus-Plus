@@ -8,7 +8,6 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-using namespace std;
 
 /* Assume that all the elements of A are distinct
     def median_of_medians(A, i):
@@ -44,67 +43,72 @@ using namespace std;
  * print median_of_medians(B,4) #should be 5
 */
 
-int median_of_medians(vector<int> a,  int idx){
-	int pivot;
-	vector<int> m;
+int median_of_medians(std::vector<int> a,  int idx){
+	int pivot = 0;			// initialized with zero
+	std::vector<int> m;
 	int r = a.size();
 	for(int i = 0; i < r; i += 5){
-		sort(a.begin() + i, a.begin() + min(r, i + 5));
-		int mid = (i + min(r, i + 5)) / 2;
+		std::sort(a.begin() + i, a.begin() + std::min(r, i + 5));
+		int mid = (i + std::min(r, i + 5)) / 2;
 		m.push_back(a[mid]);
 	}
 	int sz = int(m.size());
 	if(sz <= 5){
-		sort(m.begin(), m.end());
+		std::sort(m.begin(), m.end());
 		pivot = m[(sz- 1) / 2];
 	}
 	else{
 		pivot = median_of_medians(m, idx);
 	}
-	vector<int> low;
-	vector<int> high;
+	std::vector<int> low;
+	std::vector<int> high;
 	for(int i = 0; i < r; i++){
-		if(a[i] < pivot)
+		if(a[i] < pivot){
 			low.push_back(a[i]);
-		else if(a[i] > pivot)
+		}
+		else if(a[i] > pivot){
 			high.push_back(a[i]);
+		}
 	}
 	int k = int(low.size());
-	if(idx < k)
+	if(idx < k){
 		return median_of_medians(low, idx);
-	else if(idx > k)
+	}
+	else if(idx > k){
 		return median_of_medians(high, idx-k-1);
-	else
+	}
+	else{
 		return pivot;
+	}
 }
 
 /* Main function*/
 
 int main()
 {
-	int n;
-	cout << "Enter Size of Array: ";
-	cin >> n;
-	vector<int> a(n);
-	cout << "Enter Array: ";
-	for(int i = 0; i < n; i++)
-		cin >> a[i];
-
-	cout << "Median: ";
+	int n = 0;
+	std::cout << "Enter Size of Array: ";
+	std::cin >> n;
+	std::vector<int> a(n);
+	std::cout << "Enter Array: ";
+	for(int i = 0; i < n; i++){
+		std::cin >> a[i];
+	}
+	std::cout << "Median: ";			// Median defination: https://en.wikipedia.org/wiki/Median
 	int x = median_of_medians(a,  (n - 1) / 2);
 	if(n % 2 == 0){
 		int y = median_of_medians(a, n / 2);
-		cout << (float(x) + float(y))/2.0;
+		std::cout << (float(x) + float(y))/2.0;
 	}
-	else
-		cout << x;
-
-	cout << "\nTo find i-th smallest element ";
-       	cout << "\nEnter i: ";
-	int idx;
-	cin >> idx;
+	else{
+		std::cout << x;
+	}
+	std::cout << "\nTo find i-th smallest element ";
+       	std::cout << "\nEnter i: ";
+	int idx = 0;
+	std::cin >> idx;
 	idx--;
-	cout << "i-th smallest element: " << median_of_medians(a, idx) << endl;
+	std::cout << idx + 1<< "-th smallest element: " << median_of_medians(a, idx) << '\n';
 	return 0;
 }
 
