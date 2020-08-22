@@ -4,7 +4,7 @@
  * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  *
  * @details
- * Given an array A[1,...,n] of n numbers and an index idx, idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
+ * Given an array A[1,...,n] of n numbers and an index idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
  * median_of_medians(A, i):
  *  #divide A into sublists of len 5
  *  sublists = [A[j:j+5] for j in range(0, len(A), 5)]
@@ -41,6 +41,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <cassert>
 
 /**
  * @namespace search
@@ -101,10 +102,32 @@ int median_of_medians(const std::vector<int>& A,  const int& idx) {
 }  // namespace search
 
 /**
+ * Function to test above algorithm
+ */
+void test(){
+	std::vector<int> A{25,21,98,100,76,22,43,60,89,87};
+	int i = 3;
+	assert(A[6] == search::median_search::median_of_medians(A, i));	// A[6]  = 43, is the fourth smallest element.
+	std::cout << "test case:1 passed\n";
+	
+	std::vector<int> B{1,2,3,4,5,6};
+	int j = 4;
+	assert(B[4] == search::median_search::median_of_medians(B, j));	// B[4] = 5, is the fifth smallest element.
+	std::cout << "test case:2 passed\n";
+	
+	std::vector<int> C{1,2,3,4,5,1000,8,9,99};
+	int k = 3;
+	assert(C[3] == search::median_search::median_of_medians(C, k)); 	// C[3] = 4, is the fourth smallest element.
+	std::cout << "test case:3 passed\n";
+	std::cout << "--All tests passed--\n";
+}
+
+/**
  * Main function
  */
 int main()
 {
+	test();
 	int n = 0;
 	std::cout << "Enter Size of Array: ";
 	std::cin >> n;
