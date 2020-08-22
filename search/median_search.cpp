@@ -4,7 +4,7 @@
  * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  *
  * @details
- * Given an array A[1,...,n] of n numbers and an index idx, where 1≤idx≤ n, 1≤idx≤ n, find the i-th smallest element of A.
+ * Given an array A[1,...,n] of n numbers and an index idx, where 1≤idx≤ n, find the i-th smallest element of A.
  * median_of_medians(A, i):
  *  #divide A into sublists of len 5
  *  sublists = [A[j:j+5] for j in range(0, len(A), 5)]
