@@ -20,7 +20,7 @@ var searchData=
   ['scientific_1485',['scientific',['http://en.cppreference.com/w/cpp/io/manip/fixed.html',0,'std']]],
   ['scoped_5fallocator_5fadaptor_1486',['scoped_allocator_adaptor',['http://en.cppreference.com/w/cpp/memory/scoped_allocator_adaptor.html',0,'std::scoped_allocator_adaptor'],['http://en.cppreference.com/w/cpp/memory/scoped_allocator_adaptor/scoped_allocator_adaptor.html',0,'std::scoped_allocator_adaptor::scoped_allocator_adaptor()']]],
   ['scs_1487',['scs',['../d7/d65/shortest__common__supersequence_8cpp.html#ad2ee8d7e67da9f6eb85146b08dad95e6',1,'dynamic_programming::shortest_common_supersequence']]],
-  ['search_1488',['search',['../dd/d2f/class_trie.html#a411e77126930a0942dd7b65e96b15206',1,'Trie::search()'],['http://en.cppreference.com/w/cpp/algorithm/search.html',0,'std::search()']]],
+  ['search_1488',['search',['../d9/dca/namespacesearch.html',1,'search'],['../dd/d2f/class_trie.html#a411e77126930a0942dd7b65e96b15206',1,'Trie::search()'],['http://en.cppreference.com/w/cpp/algorithm/search.html',0,'std::search()']]],
   ['search_5fn_1489',['search_n',['http://en.cppreference.com/w/cpp/algorithm/search_n.html',0,'std']]],
   ['searchelement_1490',['searchElement',['../d1/d46/classdata__structure_1_1_skip_list.html#a7cda6370f8bd2b6d1db28bd5ca586a21',1,'data_structure::SkipList']]],
   ['searchingprober_1491',['searchingProber',['../d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6',1,'double_hashing::searchingProber()'],['../d8/d89/namespacelinear__probing.html#a942fc8407b8001890ea26830cdcd9d77',1,'linear_probing::searchingProber()'],['../d4/dd2/namespacequadratic__probing.html#aeb6bca8db4768226f8ea8291ea4f83f6',1,'quadratic_probing::searchingProber()']]],

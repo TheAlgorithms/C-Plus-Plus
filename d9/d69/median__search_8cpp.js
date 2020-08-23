@@ -1,6 +1,6 @@
 var median__search_8cpp =
 [
-    [ "MAX_NUM", "d9/d69/median__search_8cpp.html#a55bfdcfe7613d75fb48ec99c7bf4dd5e", null ],
-    [ "comp", "d9/d69/median__search_8cpp.html#a3a66390d0e407dce4fcbf63a169c6c8f", null ],
-    [ "main", "d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ]
+    [ "main", "d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "median_of_medians", "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae", null ],
+    [ "test", "d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002", null ]
 ];
