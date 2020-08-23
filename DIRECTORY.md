@@ -80,8 +80,8 @@
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
   * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
   * [Cycle Check Directed Graph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/cycle_check_directed_graph.cpp)
-  * [Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs.cpp)
-  * [Dfs With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dfs_with_stack.cpp)
+  * [Depth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search.cpp)
+  * [Depth First Search With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search_with_stack.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/dijkstra.cpp)
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
   * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite.cpp)
@@ -113,7 +113,9 @@
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
+  * [Neural Network](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/neural_network.cpp)
   * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/ordinary_least_squares_regressor.cpp)
+  * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
@@ -204,6 +206,7 @@
 
 ## Range Queries
   * [Fenwick Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/fenwick_tree.cpp)
+  * [Heavy Light Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/heavy_light_decomposition.cpp)
   * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
 
