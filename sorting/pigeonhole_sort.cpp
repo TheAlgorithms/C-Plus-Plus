@@ -23,12 +23,7 @@
  * @brief Sorting algorithms
  */
 namespace sorting {
-/**
- * @namespace pigeonhole
- * @brief Functions for [Pigeonhole
- * Sort](https://en.wikipedia.org/wiki/Pigeonhole_sort) algorithm
- */
-namespace pigeonhole {
+
 /**
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
@@ -37,27 +32,18 @@ namespace pigeonhole {
  * @returns none
  */
 template <std::size_t N>
-std::array<int,N> pigeonSort(std::array<int, N> arr, int n) {
+std::array<int, N> pigeonSort(std::array<int, N> arr, int n) {
     // Finding min and max*
-    int min = arr.at(0);
-    int max = arr.at(0);
-
-    for (int i = 0; i < n; i++) {
-        if (min > arr[i]) {
-            min = arr[i];
-        }
-        if (max < arr[i]) {
-            max = arr[i];
-        }
-    }
+    int *min = std::min_element(std::begin(arr), std::end(arr));
+    int *max = std::max_element(std::begin(arr), std::end(arr));
 
     // Range refers to the number of holes required
-    int range = max - min + 1;
+    int range = *max - *min + 1;
     int *hole = new int[range]();
 
     // Copying all array values to pigeonhole
     for (int i = 0; i < n; i++) {
-        hole[arr[i] - min] = arr[i];
+        hole[arr[i] - *min] = arr[i];
     }
 
     // Deleting elements from list and storing to original array
@@ -73,7 +59,6 @@ std::array<int,N> pigeonSort(std::array<int, N> arr, int n) {
 
     return arr;
 }
-}  // namespace pigeonhole
 }  // namespace sorting
 
 /**
@@ -85,7 +70,7 @@ static void test_1() {
     const int n = 7;
     std::array<int, n> test_array = {8, 3, 2, 7, 4, 6, 8};
 
-    test_array = sorting::pigeonhole::pigeonSort<n>(test_array, n);
+    test_array = sorting::pigeonSort<n>(test_array, n);
 
     assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
 
@@ -106,7 +91,27 @@ static void test_2() {
     std::array<int, n> test_array = {802, 630, 20,  745, 52,
                                      300, 612, 932, 78,  187};
 
-    test_array = sorting::pigeonhole::pigeonSort<n>(test_array, n);
+    test_array = sorting::pigeonSort<n>(test_array, n);
+
+    assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
+
+    // Printing sorted array
+    for (int i = 0; i < n; i++) {
+        std::cout << test_array.at(i) << " ";
+    }
+    std::cout << "\nPassed\n";
+}
+
+/**
+ * Test function 1 with unsorted array
+ * {11,13,12,14}
+ * @returns none
+ */
+static void test_3() {
+    const int n = 4;
+    std::array<int, n> test_array = {11, 13, 12, 14};
+
+    test_array = sorting::pigeonSort<n>(test_array, n);
 
     assert(std::is_sorted(std::begin(test_array), std::end(test_array)));
 
@@ -123,6 +128,7 @@ static void test_2() {
 int main() {
     test_1();
     test_2();
+    test_3();
 
     return 0;
 }
