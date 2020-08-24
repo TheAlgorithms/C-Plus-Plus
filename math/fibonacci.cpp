@@ -13,6 +13,8 @@
 
 /**
  * Recursively compute sequences
+ * @param n input
+ * @returns n-th element of the Fbinacci's sequence
  */
 unsigned int fibonacci(unsigned int n) {
     /* If the input is 0 or 1 just return the same
