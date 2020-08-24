@@ -22,7 +22,12 @@
  * @namespace data_structures
  * @brief Data Structures algorithms
  */
-namespace data_structures{
+namespace data_structures {
+/**
+ * @namespace linked_list
+ * @brief Functions for singly linked list algorithm
+ */
+namespace linked_list {
 
 /**
  * This function changes the value_type of its argument
@@ -199,14 +204,15 @@ void list::search(int find_elem)
 	}
 	std::cout<<"Element was found\n";
 }
-}// namespace data_structures
+}  // namespace linked_list
+}  // namespace data_structures
 
 /**
  * Main function
  */
 int main()
 {
-	data_structures::list l;
+	data_structures::linked_list::list l;
 	int choice = 0;
   	int x = 0;
   	std::string s;
@@ -225,9 +231,9 @@ int main()
       			std::cout << "\nEnter the element to be inserted : ";
       			std::cin >> s;
 
-      			if (data_structures::isDigit(s)) 
+      			if (data_structures::linked_list::isDigit(s)) 
 				{
-        			x = data_structures::toInt(s);
+        			x = data_structures::linked_list::toInt(s);
        		 		l.push_back(x);
       			} 
 				else 
@@ -238,9 +244,9 @@ int main()
     		case 2:
      			std::cout << "\nEnter the element to be removed : ";
       			std::cin >> s;
-      			if (data_structures::isDigit(s)) 
+      			if (data_structures::linked_list::isDigit(s)) 
 				{
-       		 		x = data_structures::toInt(s);
+       		 		x = data_structures::linked_list::toInt(s);
         			l.erase(x);
       			} 
 				else 
@@ -251,9 +257,9 @@ int main()
     		case 3:
       			std::cout << "\nEnter the element to be searched : ";
       			std::cin >> s;
-      			if (data_structures::isDigit(s)) 
+      			if (data_structures::linked_list::isDigit(s)) 
 				{
-        			x = data_structures::toInt(s);
+        			x = data_structures::linked_list::toInt(s);
         			l.search(x);
       			} 
 				else 
