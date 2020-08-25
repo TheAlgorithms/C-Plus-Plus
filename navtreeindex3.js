@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"d8/d95/vector__ops_8hpp.html#a5305cc18d11943d3dc0d66e70d7e9c44":[8,0,8,5,17],
+"d8/d95/vector__ops_8hpp.html#a725d4ccceda4f32c96348ba1d593cd3c":[8,0,8,5,5],
+"d8/d95/vector__ops_8hpp.html#a73ee7ed3546ab9e8792a92336d0d14ab":[8,0,8,5,19],
+"d8/d95/vector__ops_8hpp.html#a8c24000ea2a0ef6a46d06d2717b62984":[8,0,8,5,11],
+"d8/d95/vector__ops_8hpp.html#a8c42a1a712b725e2aa7d4e5dc2cebcf9":[8,0,8,5,7],
 "d8/d95/vector__ops_8hpp.html#a8e8b54aaa62ad7f906aec0756ca3a500":[8,0,8,5,14],
 "d8/d95/vector__ops_8hpp.html#a9e3ef7d310219dfcb2caecb9b167c35b":[8,0,8,5,4],
 "d8/d95/vector__ops_8hpp.html#aaf373bce30d78abce6e237cea702a885":[8,0,8,5,2],
@@ -106,8 +111,8 @@ var NAVTREEINDEX3 =
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[5,1,5],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[8,0,8,1,3],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[5,1,4],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,2,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,1,1],
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,2,1],
 "d9/d69/median__search_8cpp.html":[8,0,14,8],
 "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[8,0,14,8,1],
 "d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[8,0,14,8,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,10,1,5],
 "db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,10,1,4],
 "db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[8,0,10,1,2],
-"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[8,0,10,1,0],
-"db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[8,0,10,1,6],
-"db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,10,1,3],
-"db/d07/spiral__print_8cpp.html":[8,0,11,13],
-"db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197":[8,0,11,13,2],
-"db/d07/spiral__print_8cpp.html#acfff36db81326fb990a643ab198ee8a5":[8,0,11,13,0]
+"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[8,0,10,1,0]
 };
