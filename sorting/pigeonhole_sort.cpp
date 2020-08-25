@@ -32,7 +32,7 @@ namespace sorting {
  * @returns sorted array of elements
  */
 template <std::size_t N>
-std::array<int, N> pigeonSort(std::array<int, N> arr, int n) {
+std::array<int, N> pigeonSort(std::array<int, N> arr) {
     // Finding min and max*
     auto min = std::min_element(std::begin(arr), std::end(arr));
     auto max = std::max_element(std::begin(arr), std::end(arr));
@@ -42,7 +42,7 @@ std::array<int, N> pigeonSort(std::array<int, N> arr, int n) {
     int *hole = new int[range]();
 
     // Copying all array values to pigeonhole
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         hole[arr[i] - *min] = arr[i];
     }
 
