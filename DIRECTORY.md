@@ -241,6 +241,7 @@
   * [Non Recursive Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/non_recursive_merge_sort.cpp)
   * [Numeric String Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/numeric_string_sort.cpp)
   * [Odd Even Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/odd_even_sort.cpp)
+  * [Pigeonhole Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/pigeonhole_sort.cpp)
   * [Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp)
   * [Quick Sort 3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort_3.cpp)
   * [Radix Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort.cpp)
