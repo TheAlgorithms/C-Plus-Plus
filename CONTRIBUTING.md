@@ -24,7 +24,7 @@ We are very happy that you consider implementing algorithms and data structures 
 - File extension for code should be *.h *.cpp.
 - Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compilation process.
 - Organize your code using **`struct`**, **`class`** and/or **`namespace`** keywords
-- If an implementtion of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
+- If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
@@ -117,7 +117,7 @@ my_new_cpp_class.cpp    is correct format
 ```
 - It will be used to dynamically create a directory of files and implementation.
 - File name validation will run on docker to ensure the validity.
-- If an implementtion of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example, if `median_search.cpp` already exists in the `search` folder and you are contributing a new implementation, the filename should be `median_search2.cpp` and for a third implementation, `median_search3.cpp`.
+- If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example, if `median_search.cpp` already exists in the `search` folder and you are contributing a new implementation, the filename should be `median_search2.cpp` and for a third implementation, `median_search3.cpp`.
 
 #### New Directory guidelines 
 - We recommend adding files to existing directories as much as possible.
