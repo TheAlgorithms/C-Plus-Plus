@@ -28,7 +28,6 @@ namespace sorting {
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
  * @param arr unsorted array of elements
- * @param n number of times loop will run
  * @returns sorted array of elements
  */
 template <std::size_t N>
