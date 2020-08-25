@@ -30,20 +30,6 @@ namespace data_structures {
 namespace linked_list {
 
 /**
- * This function changes the value_type of its argument
- * from a string to an integer
- * @param s argument whose value_type we want to change
- * @return number value with value_type as integer
- */
-int toInt(const std::string &s) {
-  // function statements here
-  std::stringstream geek(s);
-  int number = 0;
-  geek >> number;
-  return number;
-}
-
-/**
  * This function checks if the string passed consists
  * of only digits.
  * @param s To be checked if s contains only integers
@@ -66,11 +52,14 @@ bool isDigit(const std::string &s) {
 class link
 {
 	public:
-		explicit link(int v=0, link* s=nullptr)
-		:val(v),succ(s)
+		explicit link(int v=0, link* s=nullptr) // v and s are used to initialize members value and succ respectively
+		:value(v),succ(s)
 		{}
-		int val;
-		link* succ;
+		int val(){ return value;}
+		
+		link* succ; /// pointer to the next value on the list
+	private:
+		int value; /// value of the current link
 };
 
 /**
@@ -91,10 +80,19 @@ class list
 		void display();
 		void search(int find_elem);
 		void reverse();
+	
+		~list()
+		{
+			while(!isEmpty())
+			{
+				erase(last->val()); // erase every element on the list
+				delete first; // deallocate memory
+			}
+		}
 		
 	private:
-		link* first;//link before the actual first element
-		link* last;
+		link* first; /// link before the actual first element
+		link* last; /// last link on the list
 };
 
 /**
@@ -148,7 +146,7 @@ void list::erase(int old_elem)
 		return;
 	}
 	link* t = first;
-	while(t!=last && t->succ->val!=old_elem)
+	while(t!=last && t->succ->val()!=old_elem)
 	{
 		t=t->succ;
 	}
@@ -157,7 +155,9 @@ void list::erase(int old_elem)
 		std::cout<<"Element not found\n";
 		return;
 	}
+	link* to_be_removed = t->succ;
 	t->succ=t->succ->succ;
+	delete to_be_removed;
 	if(t->succ == nullptr)
 	{
 		last=t;
@@ -177,7 +177,7 @@ void list::display()
 	link* t = first;
 	while(t->succ!=nullptr)
 	{
-		std::cout<<t->succ->val<<"\t";
+		std::cout<<t->succ->val()<<"\t";
 		t=t->succ;
 	}
 }
@@ -193,7 +193,7 @@ void list::search(int find_elem)
 		return;
 	}
 	link* t = first;
-	while(t!=last && t->succ->val!=find_elem)
+	while(t!=last && t->succ->val()!=find_elem)
 	{
 		t=t->succ;
 	}
@@ -233,7 +233,7 @@ int main()
 
       			if (data_structures::linked_list::isDigit(s)) 
 				{
-        			x = data_structures::linked_list::toInt(s);
+        			x =std::stoi(s);
        		 		l.push_back(x);
       			} 
 				else 
@@ -246,7 +246,7 @@ int main()
       			std::cin >> s;
       			if (data_structures::linked_list::isDigit(s)) 
 				{
-       		 		x = data_structures::linked_list::toInt(s);
+       		 		x = std::stoi(s);
         			l.erase(x);
       			} 
 				else 
@@ -259,7 +259,7 @@ int main()
       			std::cin >> s;
       			if (data_structures::linked_list::isDigit(s)) 
 				{
-        			x = data_structures::linked_list::toInt(s);
+        			x = std::stoi(s);
         			l.search(x);
       			} 
 				else 
