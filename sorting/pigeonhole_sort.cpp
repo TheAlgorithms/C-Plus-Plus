@@ -34,8 +34,8 @@ namespace sorting {
 template <std::size_t N>
 std::array<int, N> pigeonSort(std::array<int, N> arr, int n) {
     // Finding min and max*
-    int *min = std::min_element(std::begin(arr), std::end(arr));
-    int *max = std::max_element(std::begin(arr), std::end(arr));
+    const int *min = std::min_element(std::begin(arr), std::end(arr));
+    const int *max = std::max_element(std::begin(arr), std::end(arr));
 
     // Range refers to the number of holes required
     int range = *max - *min + 1;
