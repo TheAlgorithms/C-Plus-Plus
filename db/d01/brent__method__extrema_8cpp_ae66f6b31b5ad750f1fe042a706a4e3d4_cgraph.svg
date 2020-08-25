@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="254,-57.5 254,-76.5 307,-76.5 307,-57.5 254,-57.5"/>
 <text text-anchor="middle" x="280.5" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="251,-19.5 251,-38.5 310,-38.5 310,-19.5 251,-19.5"/>
 <text text-anchor="middle" x="280.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
@@ -117,7 +117,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="154.5,-76.5 154.5,-95.5 208.5,-95.5 208.5,-76.5 154.5,-76.5"/>
 <text text-anchor="middle" x="181.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
@@ -138,7 +138,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="155.5,-0.5 155.5,-19.5 207.5,-19.5 207.5,-0.5 155.5,-0.5"/>
 <text text-anchor="middle" x="181.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>

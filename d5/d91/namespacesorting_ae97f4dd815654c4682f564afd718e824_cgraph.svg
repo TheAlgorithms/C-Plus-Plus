@@ -53,7 +53,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/move.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/move.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="413,-6 413,-25 473,-25 473,-6 413,-6"/>
 <text text-anchor="middle" x="443" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::move</text>
 </a>

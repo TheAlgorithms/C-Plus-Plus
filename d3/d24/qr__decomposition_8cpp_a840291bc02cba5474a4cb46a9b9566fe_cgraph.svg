@@ -67,7 +67,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="116.5,-76.5 116.5,-95.5 171.5,-95.5 171.5,-76.5 116.5,-76.5"/>
 <text text-anchor="middle" x="144" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -142,7 +142,7 @@ var sectionId = 'dynsection-1';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="447.5,-38.5 447.5,-57.5 500.5,-57.5 500.5,-38.5 447.5,-38.5"/>
 <text text-anchor="middle" x="474" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>

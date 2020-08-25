@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="97,-266.5 97,-285.5 151,-285.5 151,-266.5 97,-266.5"/>
 <text text-anchor="middle" x="124" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -51,9 +51,9 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="74,-190.5 74,-209.5 174,-209.5 174,-190.5 74,-190.5"/>
-<text text-anchor="middle" x="124" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::imag</text>
+<g id="a_node5"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title="Member function to get imaginary value of our complex number. Member function (getter) to access the ...">
+<polygon fill="white" stroke="black" points="82.5,-190.5 82.5,-209.5 165.5,-209.5 165.5,-190.5 82.5,-190.5"/>
+<text text-anchor="middle" x="124" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::imag</text>
 </a>
 </g>
 </g>
@@ -66,39 +66,39 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" target="_top" xlink:title="Member function to get imaginary value of our complex number. Member function (getter) to access the ...">
-<polygon fill="white" stroke="black" points="82.5,-152.5 82.5,-171.5 165.5,-171.5 165.5,-152.5 82.5,-152.5"/>
-<text text-anchor="middle" x="124" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::imag</text>
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html#" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="74,-152.5 74,-171.5 174,-171.5 174,-152.5 74,-152.5"/>
+<text text-anchor="middle" x="124" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::imag</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M38.41,-146.4C47.91,-148.15 60,-150.38 72.06,-152.6"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="71.64,-156.09 82.11,-154.46 72.91,-149.2 71.64,-156.09"/>
+<path fill="none" stroke="midnightblue" d="M38.41,-146.4C45.72,-147.75 54.57,-149.38 63.76,-151.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="63.34,-154.55 73.8,-152.93 64.61,-147.67 63.34,-154.55"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="76.5,-114.5 76.5,-133.5 171.5,-133.5 171.5,-114.5 76.5,-114.5"/>
-<text text-anchor="middle" x="124" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::real</text>
+<g id="a_node7"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title="Member function to get real value of our complex number. Member function (getter) to access the class...">
+<polygon fill="white" stroke="black" points="85.5,-114.5 85.5,-133.5 162.5,-133.5 162.5,-114.5 85.5,-114.5"/>
+<text text-anchor="middle" x="124" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::real</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M38.41,-139.6C46.4,-138.13 56.23,-136.32 66.32,-134.46"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="67.24,-137.84 76.44,-132.59 65.97,-130.96 67.24,-137.84"/>
+<path fill="none" stroke="midnightblue" d="M38.41,-139.6C48.74,-137.7 62.15,-135.22 75.24,-132.81"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="75.92,-136.24 85.12,-130.99 74.65,-129.36 75.92,-136.24"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" target="_top" xlink:title="Member function to get real value of our complex number. Member function (getter) to access the class...">
-<polygon fill="white" stroke="black" points="85.5,-76.5 85.5,-95.5 162.5,-95.5 162.5,-76.5 85.5,-76.5"/>
-<text text-anchor="middle" x="124" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Complex::real</text>
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real.html#" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="76.5,-76.5 76.5,-95.5 171.5,-95.5 171.5,-76.5 76.5,-76.5"/>
+<text text-anchor="middle" x="124" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::real</text>
 </a>
 </g>
 </g>
@@ -111,7 +111,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="94,-38.5 94,-57.5 154,-57.5 154,-38.5 94,-38.5"/>
 <text text-anchor="middle" x="124" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::srand</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="96.5,-0.5 96.5,-19.5 151.5,-19.5 151.5,-0.5 96.5,-0.5"/>
 <text text-anchor="middle" x="124" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::time</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="210,-228.5 210,-247.5 265,-247.5 265,-228.5 210,-228.5"/>
 <text text-anchor="middle" x="237.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>

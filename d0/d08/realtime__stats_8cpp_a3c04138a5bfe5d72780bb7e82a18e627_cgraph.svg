@@ -67,7 +67,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="233.5,-372.97 233.5,-391.97 287.5,-391.97 287.5,-372.97 233.5,-372.97"/>
 <text text-anchor="middle" x="260.5" y="-379.97" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -223,7 +223,7 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="415,-129.97 415,-148.97 468,-148.97 468,-129.97 415,-129.97"/>
 <text text-anchor="middle" x="441.5" y="-136.97" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="220.5,-104.5 220.5,-123.5 296.5,-123.5 296.5,-104.5 220.5,-104.5"/>
 <text text-anchor="middle" x="258.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::is_sorted</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="92.5,-88.5 92.5,-107.5 147.5,-107.5 147.5,-88.5 92.5,-88.5"/>
 <text text-anchor="middle" x="120" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>
@@ -88,7 +88,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="207,-44.5 207,-63.5 310,-63.5 310,-44.5 207,-44.5"/>
 <text text-anchor="middle" x="258.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::random_shuffle</text>
 </a>

@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="170,-6 170,-25 222,-25 222,-6 170,-6"/>
 <text text-anchor="middle" x="196" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::exp</text>
 </a>

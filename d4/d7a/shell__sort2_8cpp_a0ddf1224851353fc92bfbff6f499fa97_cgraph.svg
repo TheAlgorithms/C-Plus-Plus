@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="191.5,-228.5 191.5,-247.5 250.5,-247.5 250.5,-228.5 191.5,-228.5"/>
 <text text-anchor="middle" x="221" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::clock</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="194,-95.5 194,-114.5 248,-114.5 248,-95.5 194,-95.5"/>
 <text text-anchor="middle" x="221" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="193.5,-266.5 193.5,-285.5 248.5,-285.5 248.5,-266.5 193.5,-266.5"/>
 <text text-anchor="middle" x="221" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/srand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="76,-38.5 76,-57.5 136,-57.5 136,-38.5 76,-38.5"/>
 <text text-anchor="middle" x="106" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::srand</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/time.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="78.5,-0.5 78.5,-19.5 133.5,-19.5 133.5,-0.5 78.5,-0.5"/>
 <text text-anchor="middle" x="106" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::time</text>
 </a>
@@ -195,7 +195,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/qsort.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/qsort.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="192,-190.5 192,-209.5 250,-209.5 250,-190.5 192,-190.5"/>
 <text text-anchor="middle" x="221" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::qsort</text>
 </a>

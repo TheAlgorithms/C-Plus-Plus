@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="102,-76.5 102,-95.5 156,-95.5 156,-76.5 102,-76.5"/>
 <text text-anchor="middle" x="129" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="237.5,-38.5 237.5,-57.5 318.5,-57.5 318.5,-38.5 237.5,-38.5"/>
 <text text-anchor="middle" x="278" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="220,-0.5 220,-19.5 336,-19.5 336,-0.5 220,-0.5"/>
 <text text-anchor="middle" x="278" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>

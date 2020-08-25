@@ -53,7 +53,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="308.5,-226 308.5,-245 362.5,-245 362.5,-226 308.5,-226"/>
 <text text-anchor="middle" x="335.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -84,7 +84,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="308.5,-138 308.5,-157 362.5,-157 362.5,-138 308.5,-138"/>
 <text text-anchor="middle" x="335.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
@@ -115,7 +115,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/round.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/round.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="305.5,-50 305.5,-69 365.5,-69 365.5,-50 305.5,-50"/>
 <text text-anchor="middle" x="335.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::round</text>
 </a>

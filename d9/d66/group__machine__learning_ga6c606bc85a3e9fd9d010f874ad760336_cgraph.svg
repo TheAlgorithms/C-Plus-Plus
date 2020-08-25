@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="118,-114.5 118,-133.5 222,-133.5 222,-114.5 118,-114.5"/>
 <text text-anchor="middle" x="170" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="113,-76.5 113,-95.5 227,-95.5 227,-76.5 113,-76.5"/>
 <text text-anchor="middle" x="170" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="119.5,-38.5 119.5,-57.5 220.5,-57.5 220.5,-38.5 119.5,-38.5"/>
 <text text-anchor="middle" x="170" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="136.5,-0.5 136.5,-19.5 203.5,-19.5 203.5,-0.5 136.5,-0.5"/>
 <text text-anchor="middle" x="170" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::strerror</text>
 </a>

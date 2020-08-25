@@ -9,7 +9,7 @@ var searchData=
   ['falsename_3200',['falsename',['http://en.cppreference.com/w/cpp/locale/numpunct/truefalsename.html',0,'std::numpunct_byname::falsename()'],['http://en.cppreference.com/w/cpp/locale/numpunct/truefalsename.html',0,'std::numpunct::falsename()']]],
   ['fast_5fpower_5flinear_3201',['fast_power_linear',['../d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d',1,'fast_power.cpp']]],
   ['fast_5fpower_5frecursive_3202',['fast_power_recursive',['../d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445',1,'fast_power.cpp']]],
-  ['fastinput_3203',['fastinput',['../d4/de8/fast__interger__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82',1,'fast_interger_input.cpp']]],
+  ['fastinput_3203',['fastinput',['../d9/df0/fast__integer__input_8cpp.html#a4e097ac8509b717bdc8ab09ecd86ae82',1,'fast_integer_input.cpp']]],
   ['fclose_3204',['fclose',['http://en.cppreference.com/w/cpp/io/c/fclose.html',0,'std']]],
   ['fdim_3205',['fdim',['http://en.cppreference.com/w/cpp/numeric/math/fdim.html',0,'std']]],
   ['feclearexcept_3206',['feclearexcept',['http://en.cppreference.com/w/cpp/numeric/fenv/feclearexcept.html',0,'std']]],

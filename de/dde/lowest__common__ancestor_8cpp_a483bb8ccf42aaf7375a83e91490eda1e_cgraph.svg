@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="267,-6 267,-25 326,-25 326,-6 267,-6"/>
 <text text-anchor="middle" x="296.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>

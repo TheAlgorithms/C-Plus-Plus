@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="141,-38.5 141,-57.5 257,-57.5 257,-38.5 141,-38.5"/>
 <text text-anchor="middle" x="199" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/resize.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/resize.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="151.5,-0.5 151.5,-19.5 246.5,-19.5 246.5,-0.5 151.5,-0.5"/>
 <text text-anchor="middle" x="199" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::resize</text>
 </a>

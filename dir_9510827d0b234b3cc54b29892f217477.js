@@ -4,7 +4,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "decimal_to_binary.cpp", "df/d06/decimal__to__binary_8cpp.html", "df/d06/decimal__to__binary_8cpp" ],
     [ "decimal_to_hexadecimal.cpp", "da/de7/decimal__to__hexadecimal_8cpp.html", "da/de7/decimal__to__hexadecimal_8cpp" ],
     [ "decimal_to_roman_numeral.cpp", "de/d85/decimal__to__roman__numeral_8cpp.html", "de/d85/decimal__to__roman__numeral_8cpp" ],
-    [ "fast_interger_input.cpp", "d4/de8/fast__interger__input_8cpp.html", "d4/de8/fast__interger__input_8cpp" ],
+    [ "fast_integer_input.cpp", "d9/df0/fast__integer__input_8cpp.html", "d9/df0/fast__integer__input_8cpp" ],
     [ "happy_number.cpp", "db/df3/happy__number_8cpp.html", "db/df3/happy__number_8cpp" ],
     [ "matrix_exponentiation.cpp", "d7/d35/matrix__exponentiation_8cpp.html", "d7/d35/matrix__exponentiation_8cpp" ],
     [ "palindrome_of_number.cpp", "da/d9a/palindrome__of__number_8cpp.html", "da/d9a/palindrome__of__number_8cpp" ],

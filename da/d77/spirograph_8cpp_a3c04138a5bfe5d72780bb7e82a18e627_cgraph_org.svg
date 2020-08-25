@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="199,-301 199,-320 303,-320 303,-301 199,-301"/>
 <text text-anchor="middle" x="251" y="-308" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="194,-453 194,-472 308,-472 308,-453 194,-453"/>
 <text text-anchor="middle" x="251" y="-460" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setw.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setw.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="222.5,-415 222.5,-434 279.5,-434 279.5,-415 222.5,-415"/>
 <text text-anchor="middle" x="251" y="-422" font-family="Helvetica,sans-Serif" font-size="10.00">std::setw</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="197.5,-339 197.5,-358 304.5,-358 304.5,-339 197.5,-339"/>
 <text text-anchor="middle" x="251" y="-346" font-family="Helvetica,sans-Serif" font-size="10.00">std::stringstream::str</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="366.5,-396 366.5,-415 418.5,-415 418.5,-396 366.5,-396"/>
 <text text-anchor="middle" x="392.5" y="-403" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="368,-358 368,-377 417,-377 417,-358 368,-358"/>
 <text text-anchor="middle" x="392.5" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>
@@ -162,7 +162,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/compare.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="199,-263 199,-282 303,-282 303,-263 199,-263"/>
 <text text-anchor="middle" x="251" y="-270" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::compare</text>
 </a>
@@ -193,7 +193,7 @@
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node16"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="479.5,-126 479.5,-145 571.5,-145 571.5,-126 479.5,-126"/>
 <text text-anchor="middle" x="525.5" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
@@ -208,7 +208,7 @@
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="610,-164 610,-183 697,-183 697,-164 610,-164"/>
 <text text-anchor="middle" x="653.5" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
@@ -239,7 +239,7 @@
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node20"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="224,-50 224,-69 278,-69 278,-50 224,-50"/>
 <text text-anchor="middle" x="251" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -330,7 +330,7 @@
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" xlink:title=" ">
+<g id="a_node15"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="623.5,-232 623.5,-251 683.5,-251 683.5,-232 623.5,-232"/>
 <text text-anchor="middle" x="653.5" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">std::strlen</text>
 </a>

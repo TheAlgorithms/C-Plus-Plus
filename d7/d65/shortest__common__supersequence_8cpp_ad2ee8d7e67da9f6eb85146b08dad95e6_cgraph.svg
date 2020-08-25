@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/begin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="242,-190.5 242,-209.5 331,-209.5 331,-190.5 242,-190.5"/>
 <text text-anchor="middle" x="286.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::begin</text>
 </a>
@@ -43,7 +43,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/empty.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="240,-152.5 240,-171.5 333,-171.5 333,-152.5 240,-152.5"/>
 <text text-anchor="middle" x="286.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::empty</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/end.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/end.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="245.5,-114.5 245.5,-133.5 327.5,-133.5 327.5,-114.5 245.5,-114.5"/>
 <text text-anchor="middle" x="286.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::end</text>
 </a>
@@ -73,7 +73,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="240.5,-76.5 240.5,-95.5 332.5,-95.5 332.5,-76.5 240.5,-76.5"/>
 <text text-anchor="middle" x="286.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
@@ -88,7 +88,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="259,-38.5 259,-57.5 314,-57.5 314,-38.5 259,-38.5"/>
 <text text-anchor="middle" x="286.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -103,7 +103,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/push_back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="230,-0.5 230,-19.5 343,-19.5 343,-0.5 230,-0.5"/>
 <text text-anchor="middle" x="286.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::push_back</text>
 </a>

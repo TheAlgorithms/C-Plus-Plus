@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="251,-77 251,-107 350,-107 350,-77 251,-77"/>
 <text text-anchor="start" x="259" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">std::numeric_limits</text>
 <text text-anchor="middle" x="300.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">::infinity</text>
@@ -97,7 +97,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="274,-38.5 274,-57.5 327,-57.5 327,-38.5 274,-38.5"/>
 <text text-anchor="middle" x="300.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
@@ -112,7 +112,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="271,-0.5 271,-19.5 330,-19.5 330,-0.5 271,-0.5"/>
 <text text-anchor="middle" x="300.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
@@ -133,7 +133,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="154.5,-76.5 154.5,-95.5 208.5,-95.5 208.5,-76.5 154.5,-76.5"/>
 <text text-anchor="middle" x="181.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
@@ -154,7 +154,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="155.5,-0.5 155.5,-19.5 207.5,-19.5 207.5,-0.5 155.5,-0.5"/>
 <text text-anchor="middle" x="181.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>

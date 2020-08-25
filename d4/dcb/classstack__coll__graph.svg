@@ -55,22 +55,22 @@
 <title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M40,-185.44C40,-157.62 40,-107.04 40,-86.76"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="36.5,-185.81 40,-195.81 43.5,-185.81 36.5,-185.81"/>
-<text text-anchor="middle" x="51" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00"> prev</text>
-<text text-anchor="middle" x="51" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">next</text>
-<text text-anchor="middle" x="51" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
-<text text-anchor="middle" x="51" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00">left</text>
-<text text-anchor="middle" x="51" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">link</text>
+<text text-anchor="middle" x="49.5" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
+<text text-anchor="middle" x="49.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">link</text>
+<text text-anchor="middle" x="49.5" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00">next</text>
+<text text-anchor="middle" x="49.5" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00">prev</text>
+<text text-anchor="middle" x="49.5" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
 </g>
 <!-- Node3&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node3</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M64.79,-217.98C80.47,-221.13 95.5,-216.97 95.5,-205.5 95.5,-191.65 73.59,-188.46 55.06,-195.92"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="65.64,-214.59 55.06,-215.08 63.64,-221.29 65.64,-214.59"/>
-<text text-anchor="middle" x="106.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00"> prev</text>
-<text text-anchor="middle" x="106.5" y="-214" font-family="Helvetica,sans-Serif" font-size="10.00">next</text>
-<text text-anchor="middle" x="106.5" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
-<text text-anchor="middle" x="106.5" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">left</text>
-<text text-anchor="middle" x="106.5" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00">link</text>
+<text text-anchor="middle" x="105" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00"> left</text>
+<text text-anchor="middle" x="105" y="-214" font-family="Helvetica,sans-Serif" font-size="10.00">link</text>
+<text text-anchor="middle" x="105" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">next</text>
+<text text-anchor="middle" x="105" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">prev</text>
+<text text-anchor="middle" x="105" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00">right</text>
 </g>
 </g>
 </svg>

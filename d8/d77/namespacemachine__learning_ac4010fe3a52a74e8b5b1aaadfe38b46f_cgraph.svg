@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="196.5,-190.5 196.5,-209.5 248.5,-209.5 248.5,-190.5 196.5,-190.5"/>
 <text text-anchor="middle" x="222.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::exp</text>
 </a>
@@ -52,7 +52,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="195,-114.5 195,-133.5 250,-133.5 250,-114.5 195,-114.5"/>
 <text text-anchor="middle" x="222.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -67,7 +67,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="196.5,-76.5 196.5,-95.5 248.5,-95.5 248.5,-76.5 196.5,-76.5"/>
 <text text-anchor="middle" x="222.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
@@ -82,7 +82,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="196,-38.5 196,-57.5 249,-57.5 249,-38.5 196,-38.5"/>
 <text text-anchor="middle" x="222.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
@@ -112,7 +112,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="333.5,-209.5 333.5,-228.5 392.5,-228.5 392.5,-209.5 333.5,-209.5"/>
 <text text-anchor="middle" x="363" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::begin</text>
 </a>
@@ -127,7 +127,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="326.5,-171.5 326.5,-190.5 399.5,-190.5 399.5,-171.5 326.5,-171.5"/>
 <text text-anchor="middle" x="363" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::distance</text>
 </a>
@@ -142,7 +142,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="337,-133.5 337,-152.5 389,-152.5 389,-133.5 337,-133.5"/>
 <text text-anchor="middle" x="363" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::end</text>
 </a>
@@ -157,7 +157,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="317,-95.5 317,-114.5 409,-114.5 409,-95.5 317,-95.5"/>
 <text text-anchor="middle" x="363" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min_element</text>
 </a>

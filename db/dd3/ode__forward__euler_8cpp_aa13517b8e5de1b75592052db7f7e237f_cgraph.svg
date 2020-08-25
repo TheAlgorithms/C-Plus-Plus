@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/chrono/c/clock.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="169.5,-152.5 169.5,-171.5 228.5,-171.5 228.5,-152.5 169.5,-152.5"/>
 <text text-anchor="middle" x="199" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::clock</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="147,-114.5 147,-133.5 251,-133.5 251,-114.5 147,-114.5"/>
 <text text-anchor="middle" x="199" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="142,-38.5 142,-57.5 256,-57.5 256,-38.5 142,-38.5"/>
 <text text-anchor="middle" x="199" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/c/perror.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="168.5,-0.5 168.5,-19.5 229.5,-19.5 229.5,-0.5 168.5,-0.5"/>
 <text text-anchor="middle" x="199" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::perror</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="292,-95.5 292,-114.5 344,-114.5 344,-95.5 292,-95.5"/>
 <text text-anchor="middle" x="318" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="293.5,-57.5 293.5,-76.5 342.5,-76.5 342.5,-57.5 293.5,-57.5"/>
 <text text-anchor="middle" x="318" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>

@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="249.5,-38.5 249.5,-57.5 341.5,-57.5 341.5,-38.5 249.5,-38.5"/>
 <text text-anchor="middle" x="295.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/substr.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="249,-0.5 249,-19.5 342,-19.5 342,-0.5 249,-0.5"/>
 <text text-anchor="middle" x="295.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::substr</text>
 </a>

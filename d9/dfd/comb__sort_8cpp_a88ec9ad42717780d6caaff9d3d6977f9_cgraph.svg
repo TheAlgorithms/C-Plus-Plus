@@ -36,7 +36,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-0.5 74,-19.5 150,-19.5 150,-0.5 74,-0.5"/>
 <text text-anchor="middle" x="112" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::is_sorted</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="193.5,-19.5 193.5,-38.5 252.5,-38.5 252.5,-19.5 193.5,-19.5"/>
 <text text-anchor="middle" x="223" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="296,-57.5 296,-76.5 351,-76.5 351,-57.5 296,-57.5"/>
 <text text-anchor="middle" x="323.5" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>

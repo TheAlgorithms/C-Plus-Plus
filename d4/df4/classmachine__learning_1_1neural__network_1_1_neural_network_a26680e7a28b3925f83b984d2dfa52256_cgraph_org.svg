@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="345,-104.5 345,-123.5 477,-123.5 477,-104.5 345,-104.5"/>
 <text text-anchor="middle" x="411" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::emplace_back</text>
 </a>
@@ -86,7 +86,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="544,-126.5 544,-145.5 598,-145.5 598,-126.5 544,-126.5"/>
 <text text-anchor="middle" x="571" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -101,7 +101,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="545,-88.5 545,-107.5 597,-107.5 597,-88.5 545,-88.5"/>
 <text text-anchor="middle" x="571" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
@@ -132,7 +132,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="513,-0.5 513,-19.5 629,-19.5 629,-0.5 513,-0.5"/>
 <text text-anchor="middle" x="571" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>

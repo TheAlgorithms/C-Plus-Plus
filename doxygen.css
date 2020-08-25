@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.8.18 */
+/* The standard CSS for doxygen 1.8.19 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -66,7 +66,7 @@ p.startli, p.startdd {
 	margin-top: 2px;
 }
 
-th p.starttd, p.intertd, p.endtd {
+th p.starttd, th p.intertd, th p.endtd {
         font-size: 100%;
         font-weight: 700;
 }

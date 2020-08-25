@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/atan2.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/atan2.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="111,-0.5 111,-19.5 171,-19.5 171,-0.5 111,-0.5"/>
 <text text-anchor="middle" x="141" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atan2</text>
 </a>

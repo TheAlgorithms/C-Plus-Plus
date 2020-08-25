@@ -82,7 +82,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="542,-164.5 542,-183.5 596,-183.5 596,-164.5 542,-164.5"/>
 <text text-anchor="middle" x="569" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>

@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="168,-266.5 168,-285.5 220,-285.5 220,-266.5 168,-266.5"/>
 <text text-anchor="middle" x="194" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="137,-228.5 137,-247.5 251,-247.5 251,-228.5 137,-228.5"/>
 <text text-anchor="middle" x="194" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/isinf.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/isinf.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="167,-190.5 167,-209.5 221,-209.5 221,-190.5 167,-190.5"/>
 <text text-anchor="middle" x="194" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::isinf</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/isnan.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="164.5,-152.5 164.5,-171.5 223.5,-171.5 223.5,-152.5 164.5,-152.5"/>
 <text text-anchor="middle" x="194" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::isnan</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="166.5,-114.5 166.5,-133.5 221.5,-133.5 221.5,-114.5 166.5,-114.5"/>
 <text text-anchor="middle" x="194" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="143.5,-76.5 143.5,-95.5 244.5,-95.5 244.5,-76.5 143.5,-76.5"/>
 <text text-anchor="middle" x="194" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="287,-76.5 287,-95.5 387,-95.5 387,-76.5 287,-76.5"/>
 <text text-anchor="middle" x="337" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::imag</text>
 </a>
@@ -171,7 +171,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="310,-38.5 310,-57.5 364,-57.5 364,-38.5 310,-38.5"/>
 <text text-anchor="middle" x="337" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>
@@ -186,7 +186,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real.html#" xlink:title=" ">
+<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="289.5,-0.5 289.5,-19.5 384.5,-19.5 384.5,-0.5 289.5,-0.5"/>
 <text text-anchor="middle" x="337" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::real</text>
 </a>

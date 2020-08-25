@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/pow.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="283.5,-38.5 283.5,-57.5 337.5,-57.5 337.5,-38.5 283.5,-38.5"/>
 <text text-anchor="middle" x="310.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::pow</text>
 </a>

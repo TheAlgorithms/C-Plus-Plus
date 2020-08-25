@@ -97,7 +97,7 @@ var sectionId = 'dynsection-4';
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="464,-256.85 464,-275.85 519,-275.85 519,-256.85 464,-256.85"/>
 <text text-anchor="middle" x="491.5" y="-263.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -158,7 +158,7 @@ var sectionId = 'dynsection-4';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="464,-25.85 464,-44.85 519,-44.85 519,-25.85 464,-25.85"/>
 <text text-anchor="middle" x="491.5" y="-32.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>
@@ -189,7 +189,7 @@ var sectionId = 'dynsection-4';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/exp.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="465.5,-370.85 465.5,-389.85 517.5,-389.85 517.5,-370.85 465.5,-370.85"/>
 <text text-anchor="middle" x="491.5" y="-377.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::exp</text>
 </a>
@@ -225,7 +225,7 @@ var sectionId = 'dynsection-4';
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="465.5,-294.85 465.5,-313.85 517.5,-313.85 517.5,-294.85 465.5,-294.85"/>
 <text text-anchor="middle" x="491.5" y="-301.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
@@ -240,7 +240,7 @@ var sectionId = 'dynsection-4';
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node14"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="465,-446.85 465,-465.85 518,-465.85 518,-446.85 465,-446.85"/>
 <text text-anchor="middle" x="491.5" y="-453.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>
@@ -270,7 +270,7 @@ var sectionId = 'dynsection-4';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/begin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="602.5,-389.85 602.5,-408.85 661.5,-408.85 661.5,-389.85 602.5,-389.85"/>
 <text text-anchor="middle" x="632" y="-396.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::begin</text>
 </a>
@@ -285,7 +285,7 @@ var sectionId = 'dynsection-4';
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/distance.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="595.5,-351.85 595.5,-370.85 668.5,-370.85 668.5,-351.85 595.5,-351.85"/>
 <text text-anchor="middle" x="632" y="-358.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::distance</text>
 </a>
@@ -300,7 +300,7 @@ var sectionId = 'dynsection-4';
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/iterator/end.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="606,-313.85 606,-332.85 658,-332.85 658,-313.85 606,-313.85"/>
 <text text-anchor="middle" x="632" y="-320.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::end</text>
 </a>
@@ -315,7 +315,7 @@ var sectionId = 'dynsection-4';
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min_element.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="586,-275.85 586,-294.85 678,-294.85 678,-275.85 586,-275.85"/>
 <text text-anchor="middle" x="632" y="-282.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::min_element</text>
 </a>
@@ -330,7 +330,7 @@ var sectionId = 'dynsection-4';
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
-<g id="a_node17"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node17"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="281,-234.85 281,-253.85 385,-253.85 385,-234.85 281,-234.85"/>
 <text text-anchor="middle" x="333" y="-241.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -345,7 +345,7 @@ var sectionId = 'dynsection-4';
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" xlink:title=" ">
+<g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="276,-196.85 276,-215.85 390,-215.85 390,-196.85 276,-196.85"/>
 <text text-anchor="middle" x="333" y="-203.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::is_open</text>
 </a>
@@ -360,7 +360,7 @@ var sectionId = 'dynsection-4';
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" xlink:title=" ">
+<g id="a_node19"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/open.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="282.5,-158.85 282.5,-177.85 383.5,-177.85 383.5,-158.85 282.5,-158.85"/>
 <text text-anchor="middle" x="333" y="-165.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::open</text>
 </a>
@@ -375,7 +375,7 @@ var sectionId = 'dynsection-4';
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" xlink:title=" ">
+<g id="a_node20"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strerror.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="299.5,-120.85 299.5,-139.85 366.5,-139.85 366.5,-120.85 299.5,-120.85"/>
 <text text-anchor="middle" x="333" y="-127.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::strerror</text>
 </a>
@@ -396,7 +396,7 @@ var sectionId = 'dynsection-4';
 <!-- Node22 -->
 <g id="node22" class="node">
 <title>Node22</title>
-<g id="a_node22"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node22"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="306,-82.85 306,-101.85 360,-101.85 360,-82.85 306,-82.85"/>
 <text text-anchor="middle" x="333" y="-89.85" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>

@@ -67,7 +67,7 @@ var sectionId = 'dynsection-3';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/basic_ofstream/close.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-225 74,-244 178,-244 178,-225 74,-225"/>
 <text text-anchor="middle" x="126" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">std::ofstream::close</text>
 </a>
@@ -98,7 +98,7 @@ var sectionId = 'dynsection-3';
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="480,-126 480,-145 567,-145 567,-126 480,-126"/>
 <text text-anchor="middle" x="523.5" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
@@ -129,7 +129,7 @@ var sectionId = 'dynsection-3';
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="99,-50 99,-69 153,-69 153,-50 99,-50"/>
 <text text-anchor="middle" x="126" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -192,7 +192,7 @@ var sectionId = 'dynsection-3';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="349.5,-214 349.5,-233 441.5,-233 441.5,-214 349.5,-214"/>
 <text text-anchor="middle" x="395.5" y="-221" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
@@ -229,7 +229,7 @@ var sectionId = 'dynsection-3';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/strlen.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="493.5,-214 493.5,-233 553.5,-233 553.5,-214 493.5,-214"/>
 <text text-anchor="middle" x="523.5" y="-221" font-family="Helvetica,sans-Serif" font-size="10.00">std::strlen</text>
 </a>

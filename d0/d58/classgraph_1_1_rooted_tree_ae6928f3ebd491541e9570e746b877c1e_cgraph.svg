@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/empty.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/empty.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="148,-164.5 148,-183.5 243,-183.5 243,-164.5 148,-164.5"/>
 <text text-anchor="middle" x="195.5" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::empty</text>
 </a>
@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/front.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/front.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="151.5,-126.5 151.5,-145.5 239.5,-145.5 239.5,-126.5 151.5,-126.5"/>
 <text text-anchor="middle" x="195.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::front</text>
 </a>
@@ -68,7 +68,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/pop.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/pop.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="153.5,-38.5 153.5,-57.5 237.5,-57.5 237.5,-38.5 153.5,-38.5"/>
 <text text-anchor="middle" x="195.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::pop</text>
 </a>
@@ -83,7 +83,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/push.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/queue/push.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="151,-0.5 151,-19.5 240,-19.5 240,-0.5 151,-0.5"/>
 <text text-anchor="middle" x="195.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::queue::push</text>
 </a>
@@ -98,7 +98,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="287,-82.5 287,-101.5 374,-101.5 374,-82.5 287,-82.5"/>
 <text text-anchor="middle" x="330.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>

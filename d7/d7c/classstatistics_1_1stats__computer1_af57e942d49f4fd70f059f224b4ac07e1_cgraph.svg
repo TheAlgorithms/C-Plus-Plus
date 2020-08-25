@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="232,-50 232,-69 285,-69 285,-50 232,-50"/>
 <text text-anchor="middle" x="258.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::sqrt</text>
 </a>

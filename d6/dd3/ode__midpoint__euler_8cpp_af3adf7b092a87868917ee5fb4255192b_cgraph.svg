@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/cos.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="116,-38.5 116,-57.5 168,-57.5 168,-38.5 116,-38.5"/>
 <text text-anchor="middle" x="142" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::cos</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/math/sin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="117.5,-0.5 117.5,-19.5 166.5,-19.5 166.5,-0.5 117.5,-0.5"/>
 <text text-anchor="middle" x="142" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sin</text>
 </a>

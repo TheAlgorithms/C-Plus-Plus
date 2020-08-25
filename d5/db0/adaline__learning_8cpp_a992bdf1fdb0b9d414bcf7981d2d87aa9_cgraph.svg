@@ -67,7 +67,7 @@ var sectionId = 'dynsection-4';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="599.5,-266 599.5,-285 653.5,-285 653.5,-266 599.5,-266"/>
 <text text-anchor="middle" x="626.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -113,7 +113,7 @@ var sectionId = 'dynsection-4';
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="118,-126 118,-145 173,-145 173,-126 118,-126"/>
 <text text-anchor="middle" x="145.5" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>
@@ -144,7 +144,7 @@ var sectionId = 'dynsection-4';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="583,-225 583,-244 670,-244 670,-225 583,-225"/>
 <text text-anchor="middle" x="626.5" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
@@ -199,7 +199,7 @@ var sectionId = 'dynsection-4';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/back.html#" xlink:title=" ">
+<g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/back.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="437.5,-164 437.5,-183 527.5,-183 527.5,-164 437.5,-164"/>
 <text text-anchor="middle" x="482.5" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::back</text>
 </a>
@@ -214,7 +214,7 @@ var sectionId = 'dynsection-4';
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="436.5,-126 436.5,-145 528.5,-145 528.5,-126 436.5,-126"/>
 <text text-anchor="middle" x="482.5" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::begin</text>
 </a>
@@ -229,7 +229,7 @@ var sectionId = 'dynsection-4';
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
+<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="440,-88 440,-107 525,-107 525,-88 440,-88"/>
 <text text-anchor="middle" x="482.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::end</text>
 </a>
@@ -244,7 +244,7 @@ var sectionId = 'dynsection-4';
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/inner_product.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="435,-50 435,-69 530,-69 530,-50 435,-50"/>
 <text text-anchor="middle" x="482.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::inner_product</text>
 </a>

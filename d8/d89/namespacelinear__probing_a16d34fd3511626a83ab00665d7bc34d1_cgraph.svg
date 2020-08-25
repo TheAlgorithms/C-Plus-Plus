@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="336.5,-126 336.5,-145 390.5,-145 390.5,-126 336.5,-126"/>
 <text text-anchor="middle" x="363.5" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/left.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/left.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="118.5,-114.5 118.5,-133.5 168.5,-133.5 168.5,-114.5 118.5,-114.5"/>
 <text text-anchor="middle" x="143.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::left</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setfill.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setfill.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="114,-76.5 114,-95.5 173,-95.5 173,-76.5 114,-76.5"/>
 <text text-anchor="middle" x="143.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::setfill</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setw.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/setw.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="115,-38.5 115,-57.5 172,-57.5 172,-38.5 115,-38.5"/>
 <text text-anchor="middle" x="143.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::setw</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="100,-0.5 100,-19.5 187,-19.5 187,-0.5 100,-0.5"/>
 <text text-anchor="middle" x="143.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>

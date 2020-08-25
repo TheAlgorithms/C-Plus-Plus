@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 649;
+var viewWidth = 652;
 var viewHeight = 211;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,15 +54,15 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>range_queries::heavy_light_decomposition::HLD&lt; X &gt;</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-207 645,-207 645,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-207 648,-207 648,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="The Heavy&#45;Light Decomposition class.">
-<polygon fill="#bfbfbf" stroke="black" points="531,-70.5 531,-111.5 641,-111.5 641,-70.5 531,-70.5"/>
-<text text-anchor="start" x="539" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="539" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="586" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD&lt; X &gt;</text>
+<polygon fill="#bfbfbf" stroke="black" points="534,-70.5 534,-111.5 644,-111.5 644,-70.5 534,-70.5"/>
+<text text-anchor="start" x="542" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="542" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="589" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD&lt; X &gt;</text>
 </a>
 </g>
 </g>
@@ -70,23 +70,23 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" target="_top" xlink:title="A Basic Tree, which supports binary lifting.">
-<polygon fill="white" stroke="black" points="384,-70.5 384,-111.5 494,-111.5 494,-70.5 384,-70.5"/>
-<text text-anchor="start" x="392" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="392" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="439" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree&lt; X &gt;</text>
+<polygon fill="white" stroke="black" points="387,-70.5 387,-111.5 497,-111.5 497,-70.5 387,-70.5"/>
+<text text-anchor="start" x="395" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="395" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="442" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree&lt; X &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M504.57,-91C513.32,-91 522.23,-91 530.77,-91"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="504.41,-87.5 494.41,-91 504.41,-94.5 504.41,-87.5"/>
+<path fill="none" stroke="midnightblue" d="M507.57,-91C516.32,-91 525.23,-91 533.77,-91"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="507.41,-87.5 497.41,-91 507.41,-94.5 507.41,-87.5"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="171,-90 171,-120 290,-120 290,-90 171,-90"/>
 <text text-anchor="start" x="179" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::vector</text>
 <text text-anchor="middle" x="230.5" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int &gt; &gt;</text>
@@ -96,14 +96,14 @@ var sectionId = 'dynsection-1';
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M300.34,-100.33C327.52,-98.49 358.29,-96.4 383.83,-94.67"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="299.86,-96.86 290.12,-101.03 300.34,-103.84 299.86,-96.86"/>
-<text text-anchor="middle" x="337" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00"> t_par</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M300.28,-100.4C328.34,-98.53 360.32,-96.39 386.69,-94.63"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="299.88,-96.92 290.14,-101.08 300.35,-103.91 299.88,-96.92"/>
+<text text-anchor="middle" x="338.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00"> t_par</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-147.5 0,-166.5 92,-166.5 92,-147.5 0,-147.5"/>
 <text text-anchor="middle" x="46" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; int &gt;</text>
 </a>
@@ -112,17 +112,17 @@ var sectionId = 'dynsection-1';
 <!-- Node4&#45;&gt;Node1 -->
 <g id="edge10" class="edge">
 <title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M102.13,-165.65C123.57,-168.61 148.37,-171.55 171,-173 223.78,-176.39 237.52,-179.58 290,-173 382.84,-161.35 404.18,-147.22 494,-121 505.98,-117.5 518.75,-113.48 530.82,-109.54"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M102.13,-165.65C123.57,-168.61 148.37,-171.55 171,-173 223.78,-176.39 237.51,-179.49 290,-173 384.14,-161.36 405.9,-147.42 497,-121 508.98,-117.52 521.75,-113.51 533.83,-109.57"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="102.61,-162.19 92.21,-164.25 101.62,-169.12 102.61,-162.19"/>
-<text text-anchor="middle" x="337" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00"> h_parent</text>
-<text text-anchor="middle" x="337" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00">h_heavychlid</text>
-<text text-anchor="middle" x="337" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00">h_label</text>
+<text text-anchor="middle" x="338.5" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00"> h_heavychlid</text>
+<text text-anchor="middle" x="338.5" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00">h_label</text>
+<text text-anchor="middle" x="338.5" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00">h_parent</text>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M102.38,-153.72C166.65,-148.96 275.41,-137.94 366,-114 371.84,-112.46 377.9,-110.73 383.92,-108.93"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="101.79,-150.26 92.07,-154.46 102.29,-157.24 101.79,-150.26"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M102.19,-153.73C166.96,-148.95 277.17,-137.89 369,-114 374.84,-112.48 380.91,-110.76 386.93,-108.97"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="101.92,-150.24 92.2,-154.44 102.42,-157.22 101.92,-150.24"/>
 <text text-anchor="middle" x="230.5" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00"> t_depth</text>
 <text text-anchor="middle" x="230.5" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">t_size</text>
 </g>
@@ -136,7 +136,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="178.5,-41 178.5,-71 282.5,-71 282.5,-41 178.5,-41"/>
 <text text-anchor="start" x="186.5" y="-59" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::list</text>
 <text text-anchor="middle" x="230.5" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; int &gt; &gt;</text>
@@ -146,14 +146,14 @@ var sectionId = 'dynsection-1';
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M292.56,-66.35C321.55,-71.26 355.9,-77.08 383.93,-81.84"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="292.99,-62.87 282.54,-64.65 291.82,-69.77 292.99,-62.87"/>
-<text text-anchor="middle" x="337" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00"> t_adj</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M292.64,-66.21C322.51,-71.2 358.13,-77.16 386.99,-81.98"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="293.19,-62.76 282.75,-64.56 292.04,-69.66 293.19,-62.76"/>
+<text text-anchor="middle" x="338.5" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00"> t_adj</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/list.html" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/list.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="7.5,-46.5 7.5,-65.5 84.5,-65.5 84.5,-46.5 7.5,-46.5"/>
 <text text-anchor="middle" x="46" y="-53.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::list&lt; int &gt;</text>
 </a>
@@ -169,7 +169,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="186.5,-0.5 186.5,-19.5 274.5,-19.5 274.5,-0.5 186.5,-0.5"/>
 <text text-anchor="middle" x="230.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; X &gt;</text>
 </a>
@@ -178,33 +178,33 @@ var sectionId = 'dynsection-1';
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M274.13,-22.57C300.86,-30.87 335.85,-42.49 366,-55 376.97,-59.55 388.6,-65.05 399.23,-70.36"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="274.9,-19.15 264.31,-19.56 272.84,-25.84 274.9,-19.15"/>
-<text text-anchor="middle" x="337" y="-58" font-family="Helvetica,sans-Serif" font-size="10.00"> t_val</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M275.01,-22.44C302.36,-30.7 338.17,-42.33 369,-55 379.99,-59.52 391.62,-65 402.25,-70.32"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="275.92,-19.06 265.34,-19.56 273.92,-25.77 275.92,-19.06"/>
+<text text-anchor="middle" x="338.5" y="-58" font-family="Helvetica,sans-Serif" font-size="10.00"> t_val</text>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" target="_top" xlink:title="Segment Tree, to store heavy chains.">
-<polygon fill="white" stroke="black" points="384,-6.5 384,-47.5 494,-47.5 494,-6.5 384,-6.5"/>
-<text text-anchor="start" x="392" y="-35.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="392" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="439" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG&lt; X &gt;</text>
+<polygon fill="white" stroke="black" points="387,-6.5 387,-47.5 497,-47.5 497,-6.5 387,-6.5"/>
+<text text-anchor="start" x="395" y="-35.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="395" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="442" y="-13.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG&lt; X &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M284.98,-4.96C309.74,-3.61 339.47,-3.38 366,-7 371.78,-7.79 377.76,-8.92 383.68,-10.24"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="284.47,-1.48 274.7,-5.6 284.9,-8.47 284.47,-1.48"/>
-<text text-anchor="middle" x="337" y="-10" font-family="Helvetica,sans-Serif" font-size="10.00"> s_tree</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M284.97,-4.95C310.51,-3.53 341.45,-3.24 369,-7 374.78,-7.79 380.76,-8.92 386.68,-10.24"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="284.5,-1.47 274.74,-5.6 284.94,-8.46 284.5,-1.47"/>
+<text text-anchor="middle" x="338.5" y="-10" font-family="Helvetica,sans-Serif" font-size="10.00"> s_tree</text>
 </g>
 <!-- Node8&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M496.18,-51.8C510.15,-57.96 524.96,-64.5 538.41,-70.44"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="497.24,-48.44 486.68,-47.6 494.41,-54.84 497.24,-48.44"/>
+<path fill="none" stroke="midnightblue" d="M499.18,-51.8C513.15,-57.96 527.96,-64.5 541.41,-70.44"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="500.24,-48.44 489.68,-47.6 497.41,-54.84 500.24,-48.44"/>
 </g>
 </g>
 </svg>

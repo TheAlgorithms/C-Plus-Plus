@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="69,-38.5 69,-57.5 145,-57.5 145,-38.5 69,-38.5"/>
 <text text-anchor="middle" x="107" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::is_sorted</text>
 </a>

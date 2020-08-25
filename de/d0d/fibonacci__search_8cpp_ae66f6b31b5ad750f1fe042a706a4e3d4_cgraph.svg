@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/find.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/find.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="233,-76.5 233,-95.5 285,-95.5 285,-76.5 233,-76.5"/>
 <text text-anchor="middle" x="259" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::find</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="231.5,-38.5 231.5,-57.5 286.5,-57.5 286.5,-38.5 231.5,-38.5"/>
 <text text-anchor="middle" x="259" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/remove.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/remove.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="225,-0.5 225,-19.5 293,-19.5 293,-0.5 225,-0.5"/>
 <text text-anchor="middle" x="259" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::remove</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="340,-114.5 340,-133.5 392,-133.5 392,-114.5 340,-114.5"/>
 <text text-anchor="middle" x="366" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
@@ -144,7 +144,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort.html#" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort.html#" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="232.5,-152.5 232.5,-171.5 285.5,-171.5 285.5,-152.5 232.5,-152.5"/>
 <text text-anchor="middle" x="259" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sort</text>
 </a>
