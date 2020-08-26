@@ -122,10 +122,10 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          subprocess.run(["clang-format-10", "-i", "-style=file", *cpp_files], 
+          subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
-          subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
+          subprocess.run(["clang-format-10", "-i", "-style=file", *cpp_files], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
           upper_files = [file for file in cpp_files if file != file.lower()]
