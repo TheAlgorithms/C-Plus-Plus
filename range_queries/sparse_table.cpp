@@ -27,15 +27,15 @@ namespace range_queries {
  * @param n value of the size of the input array
  * @return corresponding vector of the log table
  */
-std::vector<int> computeLogs(int n) {
+template<typename T>
+std::vector<T> computeLogs(int n) {
     std::vector<int> logs(n+5);
     logs[1] = 0;
     for (int i = 2 ; i < n ; i++) {
         logs[i] = logs[i/2] + 1;
     }
     return logs;
-}
-
+} 
 /**
  * This functions builds the primary data structure Sparse Table
  * @param n value of the size of the input array
@@ -43,7 +43,9 @@ std::vector<int> computeLogs(int n) {
  * @param logs array of the log table
  * @return created sparse table data structure
  */
-std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, const std::vector<int>& logs) {
+
+template<typename T>
+std::vector<std::vector<T> > buildTable(int n, const std::vector<T>& A, const std::vector<T>& logs) {
     std::vector<std::vector<int> > table(20, std::vector<int>(n+5, 0));
     int curLen = 0;
     for (int i = 0 ; i <= logs[n] ; i++) {
@@ -68,7 +70,8 @@ std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, cons
  * @param table sparse table data structure for the input array
  * @return minimum value for the [beg, end] range for the input array
  */
-int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector<std::vector<int> >& table) {
+template<typename T>
+int getMinimum(int beg, int end, const std::vector<T>& logs, const std::vector<std::vector<T> >& table) {
     int p = logs[end - beg + 1];
     int pLen = 1 << p;
     return std::min(table[p][beg], table[p][end - pLen + 1]);
