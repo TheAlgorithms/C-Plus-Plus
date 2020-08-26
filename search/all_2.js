@@ -34,7 +34,7 @@ var searchData=
   ['basic_5fstring_3c_20char8_5ft_20_3e_143',['basic_string&lt; char8_t &gt;',['http://en.cppreference.com/w/cpp/string/basic_string.html',0,'std']]],
   ['basic_5fstringbuf_144',['basic_stringbuf',['http://en.cppreference.com/w/cpp/io/basic_stringbuf.html',0,'std::basic_stringbuf'],['http://en.cppreference.com/w/cpp/io/basic_stringbuf/basic_stringbuf.html',0,'std::basic_stringbuf::basic_stringbuf()']]],
   ['basic_5fstringstream_145',['basic_stringstream',['http://en.cppreference.com/w/cpp/io/basic_stringstream.html',0,'std::basic_stringstream&lt; Char &gt;'],['http://en.cppreference.com/w/cpp/io/basic_stringstream/basic_stringstream.html',0,'std::basic_stringstream::basic_stringstream()']]],
-  ['batch_5fpredict_146',['batch_predict',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a55247df62cce0298a980cd794ee2664e',1,'machine_learning::neural_network::NeuralNetwork']]],
+  ['batch_5fpredict_146',['batch_predict',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a4c4ff6b340d0e460d3015ad601a568b6',1,'machine_learning::neural_network::NeuralNetwork']]],
   ['bayes_5fagivenb_147',['bayes_AgivenB',['../d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba',1,'bayes_theorem.cpp']]],
   ['bayes_5fbgivena_148',['bayes_BgivenA',['../d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f',1,'bayes_theorem.cpp']]],
   ['bayes_5ftheorem_2ecpp_149',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],

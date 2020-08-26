@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"dd/da8/pigeonhole__sort_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[8,0,15,8,2],
+"dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[8,0,15,8,3],
+"dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,15,8,0],
+"dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[8,0,15,8,4],
+"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html":[7,0,4,0,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a275227d01fbecdcf2f890b034fcea655":[7,0,4,0,0,5],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a477bf401cab737bb313f687b08fff082":[7,0,4,0,0,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a70dea3a7ae9738067e6b84abc192e429":[7,0,4,0,0,3],
@@ -73,6 +78,7 @@ var NAVTREEINDEX5 =
 "df/d39/interpolation__search2_8cpp.html":[8,0,14,5],
 "df/d39/interpolation__search2_8cpp.html#aa3ec659ec8394d186c761df81ad1f629":[8,0,14,5,0],
 "df/d39/interpolation__search2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,14,5,1],
+"df/d44/namespacen__queens__all__solutions.html":[6,0,17],
 "df/d82/breadth__first__search_8cpp.html":[8,0,5,0],
 "df/d82/breadth__first__search_8cpp.html#a59b4441a0e447469e9a4f61c87f33102":[8,0,5,0,1],
 "df/d82/breadth__first__search_8cpp.html#a618dce14b4883c20aace1d743d3a3f60":[8,0,5,0,2],
@@ -124,8 +130,8 @@ var NAVTREEINDEX5 =
 "dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[8,0,7],
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[8,0,2,0],
 "files.html":[8,0],
-"functions.html":[7,3,0,0],
 "functions.html":[7,3,0],
+"functions.html":[7,3,0,0],
 "functions_a.html":[7,3,0,1],
 "functions_b.html":[7,3,0,2],
 "functions_c.html":[7,3,0,3],

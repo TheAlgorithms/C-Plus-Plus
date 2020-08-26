@@ -68,7 +68,7 @@ var sectionId = 'dynsection-7';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a22001f5085c4740f41ca77b3ec30b540" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#acd397b51fcf8f690b03e406ada8c9d13" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="178,-704 178,-745 323,-745 323,-704 178,-704"/>
 <text text-anchor="start" x="186" y="-733" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::neural</text>
 <text text-anchor="start" x="186" y="-722" font-family="Helvetica,sans-Serif" font-size="10.00">_network::NeuralNetwork</text>
@@ -85,7 +85,7 @@ var sectionId = 'dynsection-7';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/d77/namespacemachine__learning.html#ac33041816bc333896b86a9c2042047fd" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a8b3b06a63bd16b91237c85a295309774" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="368.5,-755.5 368.5,-785.5 490.5,-785.5 490.5,-755.5 368.5,-755.5"/>
 <text text-anchor="start" x="376.5" y="-773.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::apply</text>
 <text text-anchor="middle" x="429.5" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">_function</text>
@@ -101,7 +101,7 @@ var sectionId = 'dynsection-7';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a8c42a1a712b725e2aa7d4e5dc2cebcf9" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a7491744dcfc8844338d55065d0cd0c79" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="363.5,-599 363.5,-618 495.5,-618 495.5,-599 363.5,-599"/>
 <text text-anchor="middle" x="429.5" y="-606" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::multiply</text>
 </a>
@@ -177,7 +177,7 @@ var sectionId = 'dynsection-7';
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="../../d8/d77/namespacemachine__learning.html#aaf373bce30d78abce6e237cea702a885" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a62a418f243cd52b49f59015dddff188e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="189.5,-366.5 189.5,-396.5 311.5,-396.5 311.5,-366.5 189.5,-366.5"/>
 <text text-anchor="start" x="197.5" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::equal</text>
 <text text-anchor="middle" x="250.5" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shuffle</text>
@@ -193,7 +193,7 @@ var sectionId = 'dynsection-7';
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a9e3ef7d310219dfcb2caecb9b167c35b" target="_top" xlink:title=" ">
+<g id="a_node20"><a xlink:href="../../d8/d77/namespacemachine__learning.html#a6ef38e5947aef609f908bfbfeaf11d75" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="359,-549.5 359,-579.5 500,-579.5 500,-549.5 359,-549.5"/>
 <text text-anchor="start" x="367" y="-567.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::hadamard</text>
 <text text-anchor="middle" x="429.5" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">_product</text>
@@ -300,7 +300,7 @@ var sectionId = 'dynsection-7';
 <!-- Node27 -->
 <g id="node27" class="node">
 <title>Node27</title>
-<g id="a_node27"><a xlink:href="../../d8/d77/namespacemachine__learning.html#ac480dcc290990d8e93093fa08d915830" target="_top" xlink:title=" ">
+<g id="a_node27"><a xlink:href="../../d8/d77/namespacemachine__learning.html#ac7d9b358f1ef2ba2a1d475a5452ec41f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="359,-637 359,-656 500,-656 500,-637 359,-637"/>
 <text text-anchor="middle" x="429.5" y="-644" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning::transpose</text>
 </a>

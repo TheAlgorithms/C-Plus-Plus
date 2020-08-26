@@ -101,17 +101,17 @@ $(document).ready(function(){initNavTree('d2/d58/neural__network_8cpp.html','../
 
 <p>Implementation of <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">Multilayer Perceptron</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d95/vector__ops_8hpp_source.html">vector_ops.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;valarray&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d95/vector__ops_8hpp_source.html">vector_ops.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for neural_network.cpp:</div>
 <div class="dyncontent">
@@ -197,9 +197,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>derivative of relu(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                           {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">return</span> x &gt;= 0.0 ? 1.0 : 0.0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{ <span class="keywordflow">return</span> x &gt;= 0.0 ? 1.0 : 0.0; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -231,9 +229,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns derivative of sigmoid(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                              {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">return</span> x * (1 - x);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{ <span class="keywordflow">return</span> x * (1 - x); }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -265,9 +261,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns derivative of tanh(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                           {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">return</span> 1 - x * x;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{ <span class="keywordflow">return</span> 1 - x * x; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -299,9 +293,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns x </dd></dl>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                      {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{ <span class="keywordflow">return</span> x; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -327,11 +319,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Driver Code </p>
-<div class="fragment"><div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;           {</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="comment">// Testing</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <a class="code" href="../../d2/d58/neural__network_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;           {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="comment">// Testing</span></div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <a class="code" href="../../d2/d58/neural__network_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -363,9 +355,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>relu(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                          {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(0.0, x);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(0.0, x); }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -397,9 +387,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns sigmoid(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                             {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">return</span> 1.0 / (1.0 + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-x));</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{ <span class="keywordflow">return</span> 1.0 / (1.0 + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-x)); }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -431,9 +419,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns x * x </dd></dl>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                           {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span> x * x;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ <span class="keywordflow">return</span> x * x; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -465,9 +451,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns tanh(x) </dd></dl>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                          {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span> 2 / (1 + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-2 * x)) - 1;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{ <span class="keywordflow">return</span> 2 / (1 + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a>(-2 * x)) - 1; }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -500,24 +484,29 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Function to test neural network </p><dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
-<div class="fragment"><div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                   {</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="comment">// Creating network with 3 layers for &quot;iris.csv&quot;</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a> myNN =</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a>({</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        {4, <span class="stringliteral">&quot;none&quot;</span>}, <span class="comment">// First layer with 3 neurons and &quot;none&quot; as activation</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        {6, <span class="stringliteral">&quot;relu&quot;</span>}, <span class="comment">// Second layer with 6 neurons and &quot;relu&quot; as activation</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        {3, <span class="stringliteral">&quot;sigmoid&quot;</span>} <span class="comment">// Third layer with 3 neurons and &quot;sigmoid&quot; as activation</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    });</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="comment">// Printing summary of model</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a61d30113d13304c664057118b92a5931">summary</a>();</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <span class="comment">// Training Model</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a5172a6791b9bd24f4232bab8d6b81fff">fit_from_csv</a>(<span class="stringliteral">&quot;iris.csv&quot;</span>, <span class="keyword">true</span>, 100, 0.3, <span class="keyword">false</span>, 2, 32, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="comment">// Testing predictions of model</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a26680e7a28b3925f83b984d2dfa52256">single_predict</a>({{5,3.4,1.6,0.4}})) == 0);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a26680e7a28b3925f83b984d2dfa52256">single_predict</a>({{6.4,2.9,4.3,1.3}})) == 1);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a26680e7a28b3925f83b984d2dfa52256">single_predict</a>({{6.2,3.4,5.4,2.3}})) == 2);</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;                   {</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="comment">// Creating network with 3 layers for &quot;iris.csv&quot;</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a> myNN =</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a>({</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            {4, <span class="stringliteral">&quot;none&quot;</span>},  <span class="comment">// First layer with 3 neurons and &quot;none&quot; as activation</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            {6,</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;             <span class="stringliteral">&quot;relu&quot;</span>},  <span class="comment">// Second layer with 6 neurons and &quot;relu&quot; as activation</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            {3, <span class="stringliteral">&quot;sigmoid&quot;</span>}  <span class="comment">// Third layer with 3 neurons and &quot;sigmoid&quot; as</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                            <span class="comment">// activation</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        });</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <span class="comment">// Printing summary of model</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a61d30113d13304c664057118b92a5931">summary</a>();</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="comment">// Training Model</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a5172a6791b9bd24f4232bab8d6b81fff">fit_from_csv</a>(<span class="stringliteral">&quot;iris.csv&quot;</span>, <span class="keyword">true</span>, 100, 0.3, <span class="keyword">false</span>, 2, 32, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="comment">// Testing predictions of model</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;               myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ac130322a5abb1ff763b7c1a55405a35e">single_predict</a>({{5, 3.4, 1.6, 0.4}})) == 0);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;               myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ac130322a5abb1ff763b7c1a55405a35e">single_predict</a>({{6.4, 2.9, 4.3, 1.3}})) == 1);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    assert(<a class="code" href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a>(</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;               myNN.<a class="code" href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ac130322a5abb1ff763b7c1a55405a35e">single_predict</a>({{6.2, 3.4, 5.4, 2.3}})) == 2);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -529,13 +518,13 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacemachine__learning_html_a1b42d24ad7bedbfa8e5b59fe96987a44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a></div><div class="ttdeci">size_t argmax(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:296</div></div>
-<div class="ttc" id="aneural__network_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d2/d58/neural__network_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:766</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_a26680e7a28b3925f83b984d2dfa52256"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a26680e7a28b3925f83b984d2dfa52256">machine_learning::neural_network::NeuralNetwork::single_predict</a></div><div class="ttdeci">std::vector&lt; std::valarray&lt; double &gt; &gt; single_predict(const std::vector&lt; std::valarray&lt; double &gt;&gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:453</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_a5172a6791b9bd24f4232bab8d6b81fff"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a5172a6791b9bd24f4232bab8d6b81fff">machine_learning::neural_network::NeuralNetwork::fit_from_csv</a></div><div class="ttdeci">void fit_from_csv(const std::string &amp;file_name, const bool &amp;last_label, const int &amp;epochs, const double &amp;learning_rate, const bool &amp;normalize, const int &amp;slip_lines=1, const size_t &amp;batch_size=32, const bool &amp;shuffle=true)</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:574</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a></div><div class="ttdef"><b>Definition:</b> neural_network.cpp:261</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_a61d30113d13304c664057118b92a5931"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a61d30113d13304c664057118b92a5931">machine_learning::neural_network::NeuralNetwork::summary</a></div><div class="ttdeci">void summary()</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:742</div></div>
+<div class="ttc" id="anamespacemachine__learning_html_a1b42d24ad7bedbfa8e5b59fe96987a44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44">machine_learning::argmax</a></div><div class="ttdeci">size_t argmax(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:307</div></div>
+<div class="ttc" id="aneural__network_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d2/d58/neural__network_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:805</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_a5172a6791b9bd24f4232bab8d6b81fff"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a5172a6791b9bd24f4232bab8d6b81fff">machine_learning::neural_network::NeuralNetwork::fit_from_csv</a></div><div class="ttdeci">void fit_from_csv(const std::string &amp;file_name, const bool &amp;last_label, const int &amp;epochs, const double &amp;learning_rate, const bool &amp;normalize, const int &amp;slip_lines=1, const size_t &amp;batch_size=32, const bool &amp;shuffle=true)</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:587</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html">machine_learning::neural_network::NeuralNetwork</a></div><div class="ttdef"><b>Definition:</b> neural_network.cpp:247</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_a61d30113d13304c664057118b92a5931"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a61d30113d13304c664057118b92a5931">machine_learning::neural_network::NeuralNetwork::summary</a></div><div class="ttdeci">void summary()</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:773</div></div>
 <div class="ttc" id="aexp_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/exp.html">std::exp</a></div><div class="ttdeci">T exp(T... args)</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1neural__network_1_1_neural_network_html_ac130322a5abb1ff763b7c1a55405a35e"><div class="ttname"><a href="../../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ac130322a5abb1ff763b7c1a55405a35e">machine_learning::neural_network::NeuralNetwork::single_predict</a></div><div class="ttdeci">std::vector&lt; std::valarray&lt; double &gt; &gt; single_predict(const std::vector&lt; std::valarray&lt; double &gt;&gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> neural_network.cpp:451</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

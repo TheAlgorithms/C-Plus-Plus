@@ -55,7 +55,7 @@ var searchData=
   ['any_59',['any',['http://en.cppreference.com/w/cpp/utility/bitset/all_any_none.html',0,'std::bitset']]],
   ['any_5fof_60',['any_of',['http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html',0,'std']]],
   ['append_61',['append',['http://en.cppreference.com/w/cpp/string/basic_string/append.html',0,'std::string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',0,'std::basic_string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',0,'std::wstring::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',0,'std::u16string::append()'],['http://en.cppreference.com/w/cpp/string/basic_string/append.html',0,'std::u32string::append()']]],
-  ['apply_5ffunction_62',['apply_function',['../d8/d77/namespacemachine__learning.html#ac33041816bc333896b86a9c2042047fd',1,'machine_learning']]],
+  ['apply_5ffunction_62',['apply_function',['../d8/d77/namespacemachine__learning.html#a8b3b06a63bd16b91237c85a295309774',1,'machine_learning']]],
   ['are_5famicable_63',['are_amicable',['../d5/df6/check__amicable__pair_8cpp.html#afeb67e204ec7de02ad152c11df4d1e01',1,'check_amicable_pair.cpp']]],
   ['arg_64',['arg',['../da/d5a/class_complex.html#ae1e03712837450549e0c9b4017533a41',1,'Complex']]],
   ['argmax_65',['argmax',['../d8/d77/namespacemachine__learning.html#a1b42d24ad7bedbfa8e5b59fe96987a44',1,'machine_learning']]],

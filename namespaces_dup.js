@@ -17,6 +17,7 @@ var namespaces_dup =
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", null ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],
+    [ "n_queens_all_solutions", "df/d44/namespacen__queens__all__solutions.html", null ],
     [ "neural_network", "d0/d2e/namespaceneural__network.html", null ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", null ],
     [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", null ],

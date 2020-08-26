@@ -10,6 +10,6 @@ var classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer =
     [ "activation", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a891264e2eb1357b2b3282e5532250869", null ],
     [ "activation_function", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8e4c57922478ccc2b7c6277c05608714", null ],
     [ "dactivation_function", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#acc6cfdcc9d6e5170340abae63234a442", null ],
-    [ "kernal", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ab185a343b4fdd6b9fadc8ba877360101", null ],
+    [ "kernal", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a2e3fb82813c0fb305d6330867dd42ac8", null ],
     [ "neurons", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ace9c37dd1322d3745de9713c90df8003", null ]
 ];

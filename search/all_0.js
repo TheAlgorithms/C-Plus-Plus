@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_5f_5fdetailed_5fsingle_5fprediction_0',['__detailed_single_prediction',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a22001f5085c4740f41ca77b3ec30b540',1,'machine_learning::neural_network::NeuralNetwork']]],
+  ['_5f_5fdetailed_5fsingle_5fprediction_0',['__detailed_single_prediction',['../d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#acd397b51fcf8f690b03e406ada8c9d13',1,'machine_learning::neural_network::NeuralNetwork']]],
   ['_5fdigits_1',['_digits',['../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57',1,'large_number']]],
   ['_5fexit_2',['_Exit',['http://en.cppreference.com/w/cpp/utility/program/_Exit.html',0,'std']]],
   ['_5fmod_3',['_mod',['../dd/d1c/classhash__chain.html#ae9ddce410015ed8dda6380130d82d6c2',1,'hash_chain']]],
