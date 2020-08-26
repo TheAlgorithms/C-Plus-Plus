@@ -125,7 +125,7 @@ jobs:
           subprocess.run(["clang-format-10", "-i", "-style=file", *cpp_files], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
-          subprocess.run(["git commit", "-am 'clang-format fixes for $GITHUB_SHA' ||  true"], 
+          subprocess.run(["git", "commit -am 'clang-format fixes for $GITHUB_SHA' ||  true"], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
           subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
