@@ -16,7 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-12
+          sudo apt -qq install clang-tidy-11
         # checks are passing with less errors when used with this version. 
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
