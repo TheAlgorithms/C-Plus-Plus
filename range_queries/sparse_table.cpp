@@ -37,7 +37,7 @@ std::vector<T> computeLogs(int n) {
     return logs;
 } 
 /**
- * This functions builds the primary data structure Sparse Table
+ * This functions builds the primary data structure sparse table
  * @param n value of the size of the input array
  * @param A array of the input integers
  * @param logs array of the log table
