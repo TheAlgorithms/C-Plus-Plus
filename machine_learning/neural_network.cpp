@@ -23,8 +23,8 @@
 #include "vector_ops.hpp" // Custom header file for vector operations
 
 #include <iostream>
-#include <valarray>
-#include <vector>
+#include    <valarray>
+#include    <vector>
 #include <cmath>
 #include <algorithm>
 #include <chrono>
