@@ -13,8 +13,10 @@
 
 /**
  * Recursively compute sequences
+ * @param n input
+ * @returns n-th element of the Fbinacci's sequence
  */
-unsigned int fibonacci(unsigned int n) {
+uint64_t fibonacci(uint64_t n) {
     /* If the input is 0 or 1 just return the same
        This will set the first 2 values of the sequence */
     if (n <= 1) {
@@ -31,27 +33,27 @@ unsigned int fibonacci(unsigned int n) {
  * @returns `void`
 */
 static void test() {
-    unsigned int test_case_1 = fibonacci(0);
+    uint64_t test_case_1 = fibonacci(0);
     assert(test_case_1 == 0);
     std::cout << "Passed Test 1!" << std::endl;
 
-    unsigned int test_case_2 = fibonacci(1);
+    uint64_t test_case_2 = fibonacci(1);
     assert(test_case_2 == 1);
     std::cout << "Passed Test 2!" << std::endl;
 
-    unsigned int test_case_3 = fibonacci(2);
+    uint64_t test_case_3 = fibonacci(2);
     assert(test_case_3 == 1);
     std::cout << "Passed Test 3!" << std::endl;
 
-    unsigned int test_case_4 = fibonacci(3);
+    uint64_t test_case_4 = fibonacci(3);
     assert(test_case_4 == 2);
     std::cout << "Passed Test 4!" << std::endl;
 
-    unsigned int test_case_5 = fibonacci(4);
+    uint64_t test_case_5 = fibonacci(4);
     assert(test_case_5 == 3);
     std::cout << "Passed Test 5!" << std::endl;
 
-    unsigned int test_case_6 = fibonacci(15);
+    uint64_t test_case_6 = fibonacci(15);
     assert(test_case_6 == 610);
     std::cout << "Passed Test 6!" << std::endl << std::endl;
 }
