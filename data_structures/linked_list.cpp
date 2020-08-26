@@ -51,14 +51,18 @@ bool isDigit(const std::string& s) {
  */
 class link {
  public:
-    explicit link(int v = 0,
-                  link* s = nullptr)  // v and s are used to initialize members
-                                      // value and succ respectively
-        : val(v), succ(s) {}
+    explicit link(int v = 0, link* s = nullptr);
 
-    link* succ;  /// pointer to the next value on the list
-    int val;     /// value of the current link
+    link* succ;  ///< pointer to the next value on the list
+    int val;     ///< value of the current link
 };
+
+/**
+ * constructor of the class link
+ * @param v is used to initialize class member value
+ * @param s is used to initilaize class member succ
+ */
+link::link(int v, link* s) : val(v), succ(s) {}
 
 /**
  * A list class containing a sequence of links
@@ -77,8 +81,8 @@ class list {
     void reverse();
 
  private:
-    link* first;  /// link before the actual first element
-    link* last;   /// last link on the list
+    link* first;  ///< link before the actual first element
+    link* last;   ///< last link on the list
 };
 
 /**
