@@ -113,7 +113,7 @@ var NAVTREEINDEX =
 "d5/def/stairs__pattern_8cpp.html",
 "d8/d95/vector__ops_8hpp.html#a5305cc18d11943d3dc0d66e70d7e9c44",
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e",
-"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a275227d01fbecdcf2f890b034fcea655"
+"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#aefea7ee87a708298c486d5a38ac628ef"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
