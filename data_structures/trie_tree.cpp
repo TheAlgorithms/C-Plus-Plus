@@ -13,10 +13,14 @@
 #include <string>
 #include <vector>
 
+/** \namespace data_structure
+ * \brief Data-structure algorithms
+ */
+namespace data_structure {
 static constexpr uint8_t NUM_CHARS = 26;  ///< Number of characters
 
 /**
- * @brief Trie class implementation
+ * @brief Trie tree implementation for small-case English alphabets `a-z`
  * @note the function ::trie::deleteString might be erroneous
  * @todo review the function ::trie::deleteString and the commented lines
  */
@@ -145,13 +149,14 @@ class trie {
         return false;
     }
 };
+}  // namespace data_structure
 
 /**
  * @brief Testing function
  * @returns void
  */
 static void test() {
-    trie root;
+    data_structure::trie root;
     root.insert("hello");
     root.insert("world");
 
