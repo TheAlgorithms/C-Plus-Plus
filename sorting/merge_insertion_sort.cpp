@@ -2,35 +2,39 @@
  * @file
  * @author [@sinkyoungdeok](https://github.com/sinkyoungdeok)
  * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief
+ * @brief Algorithm that combines insertion sort and merge sort. [Wiki
+ * link](https://en.wikipedia.org/wiki/Merge-insertion_sort)
+ *
+ * @see Individual algorithms: insertion_sort.cpp and merge_sort.cpp
  */
+#include <algorithm>
 #include <array>
+#include <cassert>
 #include <ctime>
 #include <iostream>
 #include <memory>
 
-/**
- * @brief
- *
+/** \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
-/**
- * @brief
- *
+/** \namespace merge_insertion
+ * \brief Combined Intersion-Merge sorting algorithm
  */
 namespace merge_insertion {
 
 /**
- * @brief
+ * @brief Insertion merge algorithm
+ * @see insertion_sort.cpp
  *
- * @tparam T
- * @tparam N
- * @param A
- * @param start
- * @param end
+ * @tparam T array data type
+ * @tparam N length of array
+ * @param A pointer to array to sort
+ * @param start start index of sorting window
+ * @param end end index of sorting window
  */
 template <typename T, size_t N>
-void InsertionSort(std::array<T, N> *A, size_t start, size_t end) {
+static void InsertionSort(std::array<T, N> *A, size_t start, size_t end) {
     size_t i, j;
     T *ptr = A->data();
 
@@ -50,17 +54,17 @@ void InsertionSort(std::array<T, N> *A, size_t start, size_t end) {
 }
 
 /**
- * @brief
+ * @brief Perform merge of data in a window
  *
- * @tparam T
- * @tparam N
- * @param array
- * @param min
- * @param max
- * @param mid
+ * @tparam T array data type
+ * @tparam N length of array
+ * @param A pointer to array to sort
+ * @param min start index of window
+ * @param max end index of window
+ * @param mid mid-point of window
  */
 template <typename T, size_t N>
-void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
+static void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
     size_t firstIndex = min;
     size_t secondIndex = mid + 1;
 
@@ -89,14 +93,17 @@ void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
 }
 
 /**
- * @brief
+ * @brief Final combined algorithm.
+ * Algorithm utilizes ::sorting::merge_insertion::InsertionSort if window length
+ * is less than threshold, else performs merge sort recursively using
+ * ::sorting::merge_insertion::mergeSort
  *
- * @tparam T
- * @tparam N
- * @param array
- * @param min
- * @param max
- * @param threshold
+ * @tparam T array data type
+ * @tparam N length of array
+ * @param A pointer to array to sort
+ * @param min start index of sort window
+ * @param max end index of sort window
+ * @param threshold window length threshold
  */
 template <typename T, size_t N>
 void mergeSort(std::array<T, N> *array, size_t min, size_t max,
@@ -121,10 +128,10 @@ void mergeSort(std::array<T, N> *array, size_t min, size_t max,
 }  // namespace sorting
 
 /**
- * @brief
- *
+ * @brief Function to test code using random arrays
+ * @returns none
  */
-void test() {
+static void test() {
     constexpr size_t size = 30;
     std::array<int, size> array{0};
     // input
@@ -142,12 +149,14 @@ void test() {
         std::cout << array[i] << " ";
     }
     std::cout << std::endl;
+
+    assert(std::is_sorted(std::begin(array), std::end(array)));
+    std::cout << "Test passed\n";
 }
 
 /**
- * @brief
- *
- * @return int
+ * @brief Main function
+ * @return 0 on exit
  */
 int main() {
     std::srand(std::time(nullptr));
