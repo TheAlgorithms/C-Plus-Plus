@@ -35,7 +35,7 @@ namespace merge_insertion {
  */
 template <typename T, size_t N>
 static void InsertionSort(std::array<T, N> *A, size_t start, size_t end) {
-    size_t i, j;
+    size_t i = 0, j = 0;
     T *ptr = A->data();
 
     for (i = start; i < end; i++) {
@@ -69,7 +69,7 @@ static void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
     size_t secondIndex = mid + 1;
 
     auto ptr = array->data();
-    auto tempArray = std::unique_ptr<T[]>(new T[max + 1]);
+    std::array<T, N + 1> tempArray{0};
 
     // While there are elements in the left or right runs
     for (size_t index = min; index <= max; index++) {
@@ -78,16 +78,14 @@ static void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
             (secondIndex > max || ptr[firstIndex] <= ptr[secondIndex])) {
             tempArray[index] = ptr[firstIndex];
             firstIndex++;
-        }
-
-        else {
+        } else {
             tempArray[index] = ptr[secondIndex];
             secondIndex++;
         }
     }
 
     // transfer to the initial array
-    memcpy(ptr + min, tempArray.get() + min, (max - min) * sizeof(T));
+    memcpy(ptr + min, tempArray.data() + min, (max - min) * sizeof(T));
     //  for (int index = min; index <= max; index++) ptr[index] =
     //  tempArray[index];
 }
