@@ -83,7 +83,7 @@ class trie {
     /** search a string exists inside the trie
      * @param str string to search for
      * @param index start index to search from
-     * @returns `tre` if found
+     * @returns `true` if found
      * @returns `false` if not found
      */
     bool search(const std::string& str, int index) {
