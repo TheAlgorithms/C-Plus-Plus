@@ -35,7 +35,7 @@ class trie {
      * @param ch character to index
      * @return unsigned integer index
      */
-    const uint8_t char_to_int(const char& ch) {
+    uint8_t char_to_int(const char& ch) const {
         if (ch >= 'A' && ch <= 'Z') {
             return ch - 'A';
         } else if (ch >= 'a' && ch <= 'z') {
