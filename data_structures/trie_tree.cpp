@@ -36,10 +36,11 @@ class trie {
      * @return unsigned integer index
      */
     const uint8_t char_to_int(const char& ch) {
-        if (ch >= 'A' && ch <= 'Z')
+        if (ch >= 'A' && ch <= 'Z') {
             return ch - 'A';
-        else if (ch >= 'a' && ch <= 'z')
+        } else if (ch >= 'a' && ch <= 'z') {
             return ch - 'a' + NUM_CHARS;
+        }
 
         std::cerr << "Invalid character present. Exiting...";
         std::exit(EXIT_FAILURE);
