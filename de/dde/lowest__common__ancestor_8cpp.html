@@ -101,15 +101,15 @@ $(document).ready(function(){initNavTree('de/dde/lowest__common__ancestor_8cpp.h
 
 <p>Data structure for finding the lowest common ancestor of two vertices in a rooted tree using binary lifting.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;queue&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lowest_common_ancestor.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d8e/lowest__common__ancestor_8cpp__incl.svg" width="415" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d8e/lowest__common__ancestor_8cpp__incl.svg" width="416" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -175,10 +175,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;           {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="../../de/dde/lowest__common__ancestor_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;           {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="../../de/dde/lowest__common__ancestor_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -225,16 +225,15 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">     *            |</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">     *            9</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; std::pair&lt;int, int&gt;</a> &gt; edges = {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      {7, 1}, {1, 5}, {1, 3}, {3, 6}, {6, 2}, {2, 9}, {6, 8}, {4, 3}, {0, 4}</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    };</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../d0/d58/classgraph_1_1_rooted_tree.html">graph::RootedTree</a> t(edges, 3);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="../../d9/d23/classgraph_1_1_lowest_common_ancestor.html">graph::LowestCommonAncestor</a> lca(t);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    assert(lca.lowest_common_ancestor(7, 4) == 3);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    assert(lca.lowest_common_ancestor(9, 6) == 6);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    assert(lca.lowest_common_ancestor(0, 0) == 0);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    assert(lca.lowest_common_ancestor(8, 2) == 6);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, int&gt;</a> &gt; edges = {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        {7, 1}, {1, 5}, {1, 3}, {3, 6}, {6, 2}, {2, 9}, {6, 8}, {4, 3}, {0, 4}};</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../d0/d58/classgraph_1_1_rooted_tree.html">graph::RootedTree</a> t(edges, 3);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../d9/d23/classgraph_1_1_lowest_common_ancestor.html">graph::LowestCommonAncestor</a> lca(t);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    assert(lca.lowest_common_ancestor(7, 4) == 3);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    assert(lca.lowest_common_ancestor(9, 6) == 6);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    assert(lca.lowest_common_ancestor(0, 0) == 0);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    assert(lca.lowest_common_ancestor(8, 2) == 6);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -121,10 +121,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aee72d7dd4778097a6d852c659de8fe58"><td class="memItemLeft" align="right" valign="top"><a id="aee72d7dd4778097a6d852c659de8fe58"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">neighbors</a></td></tr>
-<tr class="memdesc:aee72d7dd4778097a6d852c659de8fe58"><td class="mdescLeft">&#160;</td><td class="mdescRight">for each vertex it stores a list indicies of its neighbors <br /></td></tr>
-<tr class="separator:aee72d7dd4778097a6d852c659de8fe58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3c12683248e50a7a1688b40156a842"><td class="memItemLeft" align="right" valign="top"><a id="afe3c12683248e50a7a1688b40156a842"></a>
+<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">neighbors</a></td></tr>
+<tr class="memdesc:afe3c12683248e50a7a1688b40156a842"><td class="mdescLeft">&#160;</td><td class="mdescRight">for each vertex it stores a list indicies of its neighbors <br /></td></tr>
+<tr class="separator:afe3c12683248e50a7a1688b40156a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for representing a graph as an adjacency list. Its vertices are indexed 0, 1, ..., N - 1. </p>
@@ -171,13 +171,13 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">neighbors</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(N);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;edge : undirected_edges) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">neighbors</a>[edge.first].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(edge.second);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">neighbors</a>[edge.second].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(edge.first);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                           {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">neighbors</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(N);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;edge : undirected_edges) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">neighbors</a>[edge.first].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(edge.second);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">neighbors</a>[edge.second].<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(edge.first);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -211,9 +211,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Function to get the number of vertices in the graph </p><dl class="section return"><dt>Returns</dt><dd>the number of vertices in the graph. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                   {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">neighbors</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">neighbors</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -231,7 +229,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aresize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="aclassgraph_1_1_graph_html_aee72d7dd4778097a6d852c659de8fe58"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58">graph::Graph::neighbors</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; neighbors</div><div class="ttdoc">for each vertex it stores a list indicies of its neighbors</div><div class="ttdef"><b>Definition:</b> lowest_common_ancestor.cpp:78</div></div>
+<div class="ttc" id="aclassgraph_1_1_graph_html_afe3c12683248e50a7a1688b40156a842"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842">graph::Graph::neighbors</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; neighbors</div><div class="ttdoc">for each vertex it stores a list indicies of its neighbors</div><div class="ttdef"><b>Definition:</b> lowest_common_ancestor.cpp:77</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

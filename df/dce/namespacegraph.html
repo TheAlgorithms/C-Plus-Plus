@@ -452,29 +452,29 @@ Here is the call graph for this function:</div>
 <p>a queue that stores vertices that need to be further explored</p>
 <p>mark the starting vertex as visited</p>
 <p>if the vertex is not visited then mark it as visited and push it to the queue</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                 {<span class="comment"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">    /// vector to keep track of visited vertices</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> visited(<a class="code" href="../../df/dce/namespacegraph.html">graph</a>.size(), <span class="keyword">false</span>);<span class="comment"></span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    /// a queue that stores vertices that need to be further explored</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int&gt;</a> tracker;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">    /// mark the starting vertex as visited</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span>    visited[start] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(start);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">while</span> (!tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">size_t</span> vertex = tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> x : <a class="code" href="../../df/dce/namespacegraph.html">graph</a>[vertex]) {<span class="comment"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">            /// if the vertex is not visited then mark it as visited</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">            /// and push it to the queue</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span>            <span class="keywordflow">if</span> (!visited[x]) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                visited[x] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(x);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> visited;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                       {<span class="comment"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">    /// vector to keep track of visited vertices</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> visited(<a class="code" href="../../df/dce/namespacegraph.html">graph</a>.size(), <span class="keyword">false</span>);<span class="comment"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    /// a queue that stores vertices that need to be further explored</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int&gt;</a> tracker;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">    /// mark the starting vertex as visited</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span>    visited[start] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(start);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">while</span> (!tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">size_t</span> vertex = tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> x : <a class="code" href="../../df/dce/namespacegraph.html">graph</a>[vertex]) {<span class="comment"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">            /// if the vertex is not visited then mark it as visited</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">            /// and push it to the queue</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span>            <span class="keywordflow">if</span> (!visited[x]) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                visited[x] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(x);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> visited;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

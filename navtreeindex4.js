@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[8,0,10,1,1],
+"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,10,1,5],
+"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,10,1,4],
+"db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[8,0,10,1,2],
+"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[8,0,10,1,0],
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e":[8,0,10,1,6],
 "db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,10,1,3],
 "db/d07/spiral__print_8cpp.html":[8,0,11,13],
@@ -123,7 +128,7 @@ var NAVTREEINDEX4 =
 "dc/d61/classgraph_1_1_graph.html":[7,0,4,1],
 "dc/d61/classgraph_1_1_graph.html#a34414f67c2e3ea89774839b36b1575f8":[7,0,4,1,0],
 "dc/d61/classgraph_1_1_graph.html#ae2f6992450faa2c3da93edea0818869a":[7,0,4,1,1],
-"dc/d61/classgraph_1_1_graph.html#aee72d7dd4778097a6d852c659de8fe58":[7,0,4,1,2],
+"dc/d61/classgraph_1_1_graph.html#afe3c12683248e50a7a1688b40156a842":[7,0,4,1,2],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html":[7,0,6,0,0,0],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a04b8e21316458436c8851959928c3964":[7,0,6,0,0,0,1],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a2871146feaaa453558239df67b21e0d2":[7,0,6,0,0,0,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699":[7,0,17,3],
 "dd/da0/todo.html":[4],
 "dd/da8/pigeonhole__sort_8cpp.html":[8,0,15,8],
-"dd/da8/pigeonhole__sort_8cpp.html#a2f6a7a66934f345f86038a280234e706":[8,0,15,8,1],
-"dd/da8/pigeonhole__sort_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[8,0,15,8,2],
-"dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[8,0,15,8,3],
-"dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,15,8,0],
-"dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[8,0,15,8,4],
-"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html":[7,0,4,0,0]
+"dd/da8/pigeonhole__sort_8cpp.html#a2f6a7a66934f345f86038a280234e706":[8,0,15,8,1]
 };
