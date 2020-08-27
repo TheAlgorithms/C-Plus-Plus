@@ -31,15 +31,18 @@ class trie {
      * @returns `tre` if found
      * @returns `false` if not found
      */
-    bool search(std::shared_ptr<trie> root, const std::string& str, int index) {
+    bool search(const std::shared_ptr<trie>& root, const std::string& str,
+                int index) {
         if (index == str.length()) {
-            if (!root->isEndofWord)
+            if (!root->isEndofWord) {
                 return false;
+            }
             return true;
         }
         int j = str[index] - 'a';
-        if (!root->arr[j])
+        if (!root->arr[j]) {
             return false;
+        }
         return search(root->arr[j], str, index + 1);
     }
 
@@ -81,13 +84,15 @@ class trie {
      */
     bool search(const std::string& str, int index) {
         if (index == str.length()) {
-            if (!isEndofWord)
+            if (!isEndofWord) {
                 return false;
+            }
             return true;
         }
         int j = str[index] - 'a';
-        if (!arr[j])
+        if (!arr[j]) {
             return false;
+        }
         return search(arr[j], str, index + 1);
     }
 
@@ -104,8 +109,9 @@ class trie {
         // std::shared_ptr<trie> root (nullptr);
 
         if (index == str.length()) {
-            if (!isEndofWord)
+            if (!isEndofWord) {
                 return false;
+            }
             isEndofWord = false;
             // for (int i = 0; i < NUM_CHARS; i++)
             //     if (root->arr[i])
@@ -113,18 +119,21 @@ class trie {
             return true;
         }
         int j = str[index] - 'a';
-        if (!arr[j])
+        if (!arr[j]) {
             return false;
+        }
         bool var = deleteString(str, index + 1);
         if (var) {
             arr[j].reset();
             if (isEndofWord) {
                 return false;
             } else {
-                int i;
-                for (i = 0; i < NUM_CHARS; i++)
-                    if (arr[i])
+                int i = 0;
+                for (i = 0; i < NUM_CHARS; i++) {
+                    if (arr[i]) {
                         return false;
+                    }
+                }
                 return true;
             }
         }
