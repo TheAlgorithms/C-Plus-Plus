@@ -14,7 +14,7 @@
 #include <string>
 #include <vector>
 
-/** \namespace data_structure
+/** \namespace data_structures
  * \brief Data-structure algorithms
  */
 namespace data_structures {
