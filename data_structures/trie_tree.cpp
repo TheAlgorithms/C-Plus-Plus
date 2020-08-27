@@ -14,10 +14,10 @@
 #include <string>
 #include <vector>
 
-/** \namespace data_structure
+/** \namespace data_structures
  * \brief Data-structure algorithms
  */
-namespace data_structure {
+namespace data_structures {
 /**
  * @brief [Trie](https://en.wikipedia.org/wiki/Trie) implementation for
  * small-case English alphabets `a-z`
@@ -50,7 +50,7 @@ class trie {
     /** search a string exists inside a given root trie
      * @param str string to search for
      * @param index start index to search from
-     * @returns `tre` if found
+     * @returns `true` if found
      * @returns `false` if not found
      */
     bool search(const std::shared_ptr<trie>& root, const std::string& str,
@@ -169,14 +169,14 @@ class trie {
         return false;
     }
 };
-}  // namespace data_structure
+}  // namespace data_structures
 
 /**
  * @brief Testing function
  * @returns void
  */
 static void test() {
-    data_structure::trie root;
+    data_structures::trie root;
     root.insert("Hello");
     root.insert("World");
 
