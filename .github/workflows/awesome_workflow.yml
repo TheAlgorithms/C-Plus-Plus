@@ -16,7 +16,7 @@ jobs:
       - name: requirements
         run: | 
           sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-10
+          sudo apt -qq install clang-tidy-10 clang-format-10
         # checks are passing with less errors when used with this version. 
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
@@ -44,7 +44,7 @@ jobs:
               git "mv" "${fname}" ${new_fname}
             fi
           done
-          git commit -am "formatting filenames $GITHUB_SHA" ||  true
+          git commit -am "formatting filenames ${GITHUB_SHA::8}" ||  true
 
       - name: Update DIRECTORY.md
         shell: python
@@ -124,15 +124,9 @@ jobs:
 
           subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
               check=True, text=True, stderr=subprocess.STDOUT)
-          # for cpp_file in cpp_files:
-          #   subprocess.run(["clang-tidy-10", "--fix", "-p=build", cpp_file, "--"], 
-          #     check=True, text=True, stderr=subprocess.STDOUT)
 
-          # print("g++:")
-          # compile_exts = tuple(".c .c++ .cc .cpp .cu .cxx".split())
-          # compile_files = [file for file in cpp_files if file.lower().endswith(compile_exts)]
-          # for cpp_file in cpp_files:
-          #   subprocess.run(["g++", cpp_file], check=True, text=True)
+          subprocess.run(["clang-format-10", "-i", "-style=file", *cpp_files], 
+              check=True, text=True, stderr=subprocess.STDOUT)
 
           upper_files = [file for file in cpp_files if file != file.lower()]
           if upper_files:
@@ -155,7 +149,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git diff DIRECTORY.md
-          git commit -am "clang-tidy fixes for $GITHUB_SHA" ||  true
+          git commit -am "clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" ||  true
           git push --force origin HEAD:$GITHUB_REF || true
 
   build:
