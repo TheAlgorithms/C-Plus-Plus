@@ -400,10 +400,10 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             {</div>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    (*adj)[u - 1].push_back(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(v - 1, w));</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// (*adj)[v - 1].push_back(std::make_pair(u - 1, w));</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -584,7 +584,7 @@ Here is the call graph for this function:</div>
 <p>first element of pair denotes the distance</p>
 <p>for all the reachable vertex from the currently exploring vertex we will try to minimize the distance</p>
 <p>minimizing distances</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                           {<span class="comment"></span></div>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                         {<span class="comment"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    /// n denotes the number of vertices in graph</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> n = adj-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
@@ -595,7 +595,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    /// first element of pair contains the distance</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">    /// second element of pair contains the vertex</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue&lt;std::pair&lt;int, int&gt;</a>, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::pair&lt;int, int&gt;</a>&gt;,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater&lt;std::pair&lt;int, int&gt;</a>&gt;&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater&lt;std::pair&lt;int, int&gt;</a>&gt;&gt;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        pq;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    /// pushing the source vertex &#39;s&#39; with 0 distance in min heap</span></div>
@@ -605,29 +605,29 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span>    dist[s] = 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span> (!pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/empty.html">empty</a>()) {<span class="comment"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">      /// second element of pair denotes the node / vertex</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>      <span class="keywordtype">int</span> currentNode = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().second;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">        /// second element of pair denotes the node / vertex</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>        <span class="keywordtype">int</span> currentNode = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().second;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">      /// first element of pair denotes the distance</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span>      <span class="keywordtype">int</span> currentDist = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().first;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">        /// first element of pair denotes the distance</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span>        <span class="keywordtype">int</span> currentDist = pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/top.html">top</a>().first;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">pop</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/pop.html">pop</a>();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">      /// for all the reachable vertex from the currently exploring vertex</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">      /// we will try to minimize the distance</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span>      <span class="keywordflow">for</span> (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;int, int&gt;</a> edge : (*adj)[currentNode]) {<span class="comment"></span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">        /// minimizing distances</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> (currentDist + edge.second &lt; dist[edge.first]) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          dist[edge.first] = currentDist + edge.second;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(dist[edge.first], edge.first));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">        /// for all the reachable vertex from the currently exploring vertex</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">        /// we will try to minimize the distance</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt;int, int&gt;</a> edge : (*adj)[currentNode]) {<span class="comment"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">            /// minimizing distances</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>            <span class="keywordflow">if</span> (currentDist + edge.second &lt; dist[edge.first]) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                dist[edge.first] = currentDist + edge.second;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                pq.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">push</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a>(dist[edge.first], edge.first));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (dist[t] != INF) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span> dist[t];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> dist[t];</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
