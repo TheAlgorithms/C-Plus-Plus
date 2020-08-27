@@ -16,7 +16,7 @@
 // std::max capacity of node in graph
 const int MAXN = 505;
 class Graph {
-    std::vector< std::vector<int> > residual_capacity, capacity;
+    std::vector<std::vector<int> > residual_capacity, capacity;
     int total_nodes = 0;
     int total_edges = 0, source = 0, sink = 0;
     std::vector<int> parent;
@@ -50,8 +50,10 @@ class Graph {
     void set_graph() {
         std::cin >> total_nodes >> total_edges >> source >> sink;
         parent = std::vector<int>(total_nodes, -1);
-        capacity = residual_capacity = std::vector< std::vector<int> >(total_nodes, std::vector<int>(total_nodes));
-        for (int start = 0, destination = 0, capacity_ = 0, i = 0; i < total_edges; ++i) {
+        capacity = residual_capacity = std::vector<std::vector<int> >(
+            total_nodes, std::vector<int>(total_nodes));
+        for (int start = 0, destination = 0, capacity_ = 0, i = 0;
+             i < total_edges; ++i) {
             std::cin >> start >> destination >> capacity_;
             residual_capacity[start][destination] = capacity_;
             capacity[start][destination] = capacity_;
