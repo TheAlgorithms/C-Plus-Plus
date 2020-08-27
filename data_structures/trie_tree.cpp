@@ -17,7 +17,7 @@
 /** \namespace data_structure
  * \brief Data-structure algorithms
  */
-namespace data_structure {
+namespace data_structures {
 /**
  * @brief [Trie](https://en.wikipedia.org/wiki/Trie) implementation for
  * small-case English alphabets `a-z`
@@ -169,14 +169,14 @@ class trie {
         return false;
     }
 };
-}  // namespace data_structure
+}  // namespace data_structures
 
 /**
  * @brief Testing function
  * @returns void
  */
 static void test() {
-    data_structure::trie root;
+    data_structures::trie root;
     root.insert("Hello");
     root.insert("World");
 

@@ -23,7 +23,7 @@
 /** \namespace data_structure
  * \brief Data-structure algorithms
  */
-namespace data_structure {
+namespace data_structures {
 constexpr int MAX_LEVEL = 2;        ///< Maximum level of skip list
 constexpr float PROBABILITY = 0.5;  ///< Current probability for "coin toss"
 
@@ -198,7 +198,7 @@ class SkipList {
     }
 };
 
-}  // namespace data_structure
+}  // namespace data_structures
 
 /**
  * Main function:
@@ -208,14 +208,14 @@ class SkipList {
 int main() {
     std::srand(std::time(nullptr));
 
-    data_structure::SkipList lst;
+    data_structures::SkipList lst;
 
-    for (int j = 0; j < (1 << (data_structure::MAX_LEVEL + 1)); j++) {
-        int k = (std::rand() % (1 << (data_structure::MAX_LEVEL + 2)) + 1);
+    for (int j = 0; j < (1 << (data_structures::MAX_LEVEL + 1)); j++) {
+        int k = (std::rand() % (1 << (data_structures::MAX_LEVEL + 2)) + 1);
         lst.insertElement(k, &j);
     }
 
     lst.displayList();
-    
+
     return 0;
 }
