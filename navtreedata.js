@@ -108,12 +108,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"d3/d40/graph__coloring_8cpp.html",
-"d5/def/stairs__pattern_8cpp.html",
+"annotated.html",
+"d3/d4c/quick__sort__3_8cpp.html",
+"d5/df6/check__amicable__pair_8cpp.html#ae1a3968e7947464bee7714f6d43b7002",
 "d8/d95/vector__ops_8hpp.html#a5f42063207181529413d812ade52f58e",
 "db/d01/brent__method__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e",
-"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a275227d01fbecdcf2f890b034fcea655"
+"de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a6aef65b40347c4606662cad4dd2e14d3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

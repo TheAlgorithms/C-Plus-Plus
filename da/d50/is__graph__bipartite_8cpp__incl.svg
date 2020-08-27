@@ -5,10 +5,10 @@
  -->
 <!-- Title: graph/is_graph_bipartite.cpp Pages: 1 -->
 <svg width="186pt" height="84pt"
- viewBox="0.00 0.00 185.50 84.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 186.00 84.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 80)">
 <title>graph/is_graph_bipartite.cpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-80 181.5,-80 181.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-80 182,-80 182,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
@@ -37,8 +37,8 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="72,-0.5 72,-19.5 116,-19.5 116,-0.5 72,-0.5"/>
-<text text-anchor="middle" x="94" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
+<polygon fill="white" stroke="#bfbfbf" points="72.5,-0.5 72.5,-19.5 115.5,-19.5 115.5,-0.5 72.5,-0.5"/>
+<text text-anchor="middle" x="94" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">queue</text>
 </a>
 </g>
 </g>
@@ -52,8 +52,8 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="134.5,-0.5 134.5,-19.5 177.5,-19.5 177.5,-0.5 134.5,-0.5"/>
-<text text-anchor="middle" x="156" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">queue</text>
+<polygon fill="white" stroke="#bfbfbf" points="134,-0.5 134,-19.5 178,-19.5 178,-0.5 134,-0.5"/>
+<text text-anchor="middle" x="156" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>

@@ -33,7 +33,7 @@ var searchData=
   ['address_37',['address',['http://en.cppreference.com/w/cpp/memory/allocator/address.html',0,'std::allocator']]],
   ['addressof_38',['addressof',['http://en.cppreference.com/w/cpp/memory/addressof.html',0,'std']]],
   ['addvertices_39',['addVertices',['../da/d9a/class_graph.html#ac5a4d9a4f894a179198936042c778413',1,'Graph']]],
-  ['adj_40',['adj',['../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a70dea3a7ae9738067e6b84abc192e429',1,'graph::is_graph_bipartite::Graph']]],
+  ['adj_40',['adj',['../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#ab0efcfa04fff8616aff0062522d1483f',1,'graph::is_graph_bipartite::Graph']]],
   ['adjacent_5fdifference_41',['adjacent_difference',['http://en.cppreference.com/w/cpp/algorithm/adjacent_difference.html',0,'std']]],
   ['adjacent_5ffind_42',['adjacent_find',['http://en.cppreference.com/w/cpp/algorithm/adjacent_find.html',0,'std']]],
   ['adopt_5flock_5ft_43',['adopt_lock_t',['http://en.cppreference.com/w/cpp/thread/lock_tag_t.html',0,'std']]],

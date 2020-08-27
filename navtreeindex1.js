@@ -1,10 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d3/d40/graph__coloring_8cpp.html":[8,0,0,0],
-"d3/d40/graph__coloring_8cpp.html#a29360ddb1bad75caa61ec895b6e71986":[8,0,0,0,0],
-"d3/d40/graph__coloring_8cpp.html#a5a6c3c2b065ea1c07adf2f638f8efc43":[8,0,0,0,1],
-"d3/d40/graph__coloring_8cpp.html#a8cfb2d08840766ac4402196079308a36":[8,0,0,0,3],
-"d3/d40/graph__coloring_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,0,0,2],
 "d3/d4c/quick__sort__3_8cpp.html":[8,0,15,10],
 "d3/d4c/quick__sort__3_8cpp.html#a07e5c62de28aeddea986890ce7ac1bda":[8,0,15,10,4],
 "d3/d4c/quick__sort__3_8cpp.html#a2635b04ad943fa28b7bbf8d1e6479792":[8,0,15,10,3],
@@ -47,7 +42,7 @@ var NAVTREEINDEX1 =
 "d3/dce/linkedlist__implentation__usingarray_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,2,5,7],
 "d3/dce/linkedlist__implentation__usingarray_8cpp.html#aed19b403f559fc5d5a4bce724f9e263c":[8,0,2,5,9],
 "d3/dce/linkedlist__implentation__usingarray_8cpp.html#afcb07da7984e20b3207934696791f5df":[8,0,2,5,5],
-"d3/deb/namespaceshortest__common__supersequence.html":[6,0,22],
+"d3/deb/namespaceshortest__common__supersequence.html":[6,0,23],
 "d4/d21/least__common__multiple_8cpp.html":[8,0,9,18],
 "d4/d21/least__common__multiple_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[8,0,9,18,3],
 "d4/d21/least__common__multiple_8cpp.html#a8ba1fc66e4134ab25b2602b323150563":[8,0,9,18,0],
@@ -111,7 +106,7 @@ var NAVTREEINDEX1 =
 "d4/db4/struct_segment_intersection.html#a008941b2272866c64cdaf959afa939bf":[7,0,34,2],
 "d4/db4/struct_segment_intersection.html#a3beb2ac1b35d67354f1dbaf9a971e655":[7,0,34,0],
 "d4/db4/struct_segment_intersection.html#aefd077282f45bd16799b53f8aa430ffd":[7,0,34,1],
-"d4/dd2/namespacequadratic__probing.html":[6,0,19],
+"d4/dd2/namespacequadratic__probing.html":[6,0,20],
 "d4/dd2/namespacequadratic__probing.html":[7,0,7],
 "d4/dd9/structtrie.html":[7,0,39],
 "d4/dd9/structtrie.html#a6ed95bf46944aeb935f82707d2996dd8":[7,0,39,1],
@@ -220,7 +215,7 @@ var NAVTREEINDEX1 =
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md34":[2,16],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md35":[2,17],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md36":[2,18],
-"d5/d91/namespacesorting.html":[6,0,23],
+"d5/d91/namespacesorting.html":[6,0,24],
 "d5/da1/structnode.html":[7,0,28],
 "d5/da1/structnode.html#a063635bc4e984d971d1efeb4230b0515":[7,0,28,5],
 "d5/da1/structnode.html#a0d4a5d1d3d77036ea6640f34b17b6554":[7,0,28,4],
@@ -249,5 +244,10 @@ var NAVTREEINDEX1 =
 "d5/ddb/bogo__sort_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[8,0,15,0,4],
 "d5/ddb/bogo__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,15,0,0],
 "d5/ddb/bogo__sort_8cpp.html#ae8adaeff66471f9ed84f2e673b38a859":[8,0,15,0,2],
-"d5/ddb/bogo__sort_8cpp.html#aedfb88e2d6fff1871f038221fe5870fe":[8,0,15,0,3]
+"d5/ddb/bogo__sort_8cpp.html#aedfb88e2d6fff1871f038221fe5870fe":[8,0,15,0,3],
+"d5/def/stairs__pattern_8cpp.html":[8,0,11,14],
+"d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,11,14,0],
+"d5/df4/merge__sort_8cpp.html":[8,0,15,6],
+"d5/df6/check__amicable__pair_8cpp.html":[8,0,9,2],
+"d5/df6/check__amicable__pair_8cpp.html#ac656a51b4c3bd7d63b7dcc75dc3e5576":[8,0,9,2,2]
 };

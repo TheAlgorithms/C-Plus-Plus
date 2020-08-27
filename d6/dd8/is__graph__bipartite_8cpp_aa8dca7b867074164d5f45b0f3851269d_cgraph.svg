@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="namespace graph">
+<g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="black" points="0,-30 0,-49 33,-49 33,-30 0,-30"/>
 <text text-anchor="middle" x="16.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>
