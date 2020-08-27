@@ -24,10 +24,27 @@ namespace data_structure {
  */
 class trie {
  private:
-    static constexpr uint8_t NUM_CHARS = 26;  ///< Number of characters
-    /** Recursive tree nodes as an array of shared-pointers */
-    std::array<std::shared_ptr<trie>, NUM_CHARS> arr;
+    static constexpr uint8_t NUM_CHARS = 26;  ///< Number of alphabets
+    /** @brief Recursive tree nodes as an array of shared-pointers */
+    std::array<std::shared_ptr<trie>, NUM_CHARS << 1> arr;
     bool isEndofWord = false;  ///< identifier if a node is terminal node
+
+    /**
+     * @brief Convert a character to integer for indexing
+     *
+     * @param ch character to index
+     * @return unsigned integer index
+     */
+    const uint8_t char_to_int(const char& ch) {
+        if (ch >= 'A' && ch <= 'Z')
+            return ch - 'A';
+        else if (ch >= 'a' && ch <= 'z')
+            return ch - 'a' + NUM_CHARS;
+
+        std::cerr << "Invalid character present. Exiting...";
+        std::exit(EXIT_FAILURE);
+        return 0;
+    }
 
     /** search a string exists inside a given root trie
      * @param str string to search for
@@ -43,7 +60,7 @@ class trie {
             }
             return true;
         }
-        int j = str[index] - 'a';
+        int j = char_to_int(str[index]);
         if (!root->arr[j]) {
             return false;
         }
@@ -60,7 +77,7 @@ class trie {
         std::shared_ptr<trie> root(nullptr);
 
         for (const char& ch : str) {
-            int j = ch - 'a';
+            int j = char_to_int(ch);
             if (root) {
                 if (root->arr[j]) {
                     root = root->arr[j];
@@ -93,7 +110,7 @@ class trie {
             }
             return true;
         }
-        int j = str[index] - 'a';
+        int j = char_to_int(str[index]);
         if (!arr[j]) {
             return false;
         }
@@ -125,7 +142,7 @@ class trie {
             //         return false;
             return true;
         }
-        int j = str[index] - 'a';
+        int j = char_to_int(str[index]);
         if (!arr[j]) {
             return false;
         }
@@ -159,17 +176,20 @@ class trie {
  */
 static void test() {
     data_structure::trie root;
-    root.insert("hello");
-    root.insert("world");
+    root.insert("Hello");
+    root.insert("World");
 
-    assert(root.search("hello", 0));
+    assert(!root.search("hello", 0));
     std::cout << "hello - " << root.search("hello", 0) << "\n";
 
-    assert(!root.search("word", 0));
-    std::cout << "word - " << root.search("word", 0) << "\n";
+    assert(root.search("Hello", 0));
+    std::cout << "Hello - " << root.search("Hello", 0) << "\n";
 
-    assert(root.search("world", 0));
-    std::cout << "world - " << root.search("world", 0) << "\n";
+    assert(!root.search("Word", 0));
+    std::cout << "Word - " << root.search("Word", 0) << "\n";
+
+    assert(root.search("World", 0));
+    std::cout << "World - " << root.search("World", 0) << "\n";
 
     // Following lines of code give erroneous output
     // root.deleteString("hello", 0);
