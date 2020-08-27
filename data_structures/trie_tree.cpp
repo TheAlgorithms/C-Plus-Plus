@@ -4,7 +4,8 @@
  * @author [Krishna Vedala](https://github.com/kvedala)
  * @brief Implementation of [Trie](https://en.wikipedia.org/wiki/Trie) data
  * structure for English alphabets in small characters.
- * @note the function ::trie::deleteString might be erroneous
+ * @note the function ::data_structure::trie::deleteString might be erroneous
+ * @see trie_modern.cpp
  */
 #include <array>
 #include <cassert>
@@ -17,15 +18,13 @@
  * \brief Data-structure algorithms
  */
 namespace data_structure {
-static constexpr uint8_t NUM_CHARS = 26;  ///< Number of characters
-
 /**
- * @brief Trie tree implementation for small-case English alphabets `a-z`
- * @note the function ::trie::deleteString might be erroneous
- * @todo review the function ::trie::deleteString and the commented lines
+ * @brief [Trie](https://en.wikipedia.org/wiki/Trie) implementation for
+ * small-case English alphabets `a-z`
  */
 class trie {
  private:
+    static constexpr uint8_t NUM_CHARS = 26;  ///< Number of characters
     /** Recursive tree nodes as an array of shared-pointers */
     std::array<std::shared_ptr<trie>, NUM_CHARS> arr;
     bool isEndofWord = false;  ///< identifier if a node is terminal node
@@ -103,23 +102,26 @@ class trie {
 
     /**
      * removes the string if it is not a prefix of any  other
-     * string, if it is then just sets the ::isEndofWord to false, else removes
-     * the given string
+     * string, if it is then just sets the ::data_structure::trie::isEndofWord
+     * to false, else removes the given string
+     * @note the function ::data_structure::trie::deleteString might be
+     * erroneous
+     * @todo review the function ::data_structure::trie::deleteString and the
+     * commented lines
      * @param str string to remove
      * @param index index to remove from
      * @returns `true` if successful
      * @returns `false` if unsuccessful
      */
     bool deleteString(const std::string& str, int index) {
-        // std::shared_ptr<trie> root (nullptr);
-
         if (index == str.length()) {
             if (!isEndofWord) {
                 return false;
             }
             isEndofWord = false;
+            // following lines - possible source of error?
             // for (int i = 0; i < NUM_CHARS; i++)
-            //     if (root->arr[i])
+            //     if (!arr[i])
             //         return false;
             return true;
         }
@@ -168,8 +170,17 @@ static void test() {
 
     assert(root.search("world", 0));
     std::cout << "world - " << root.search("world", 0) << "\n";
+
+    // Following lines of code give erroneous output
+    // root.deleteString("hello", 0);
+    // assert(!root.search("hello", 0));
+    // std::cout << "hello - " << root.search("world", 0) << "\n";
 }
 
+/**
+ * @brief Main function
+ * @return 0 on exit
+ */
 int main() {
     test();
 
