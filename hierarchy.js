@@ -10,9 +10,9 @@ var hierarchy =
     [ "machine_learning::neural_network::layers::DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", null ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],
     [ "Edge", "d7/d77/class_edge.html", null ],
-    [ "quadratic_probing::Entry", "da/dd1/structquadratic__probing_1_1_entry.html", null ],
     [ "linear_probing::Entry", "db/d19/structlinear__probing_1_1_entry.html", null ],
     [ "double_hashing::Entry", "d9/dde/structdouble__hashing_1_1_entry.html", null ],
+    [ "quadratic_probing::Entry", "da/dd1/structquadratic__probing_1_1_entry.html", null ],
     [ "FenwickTree", "dd/d91/class_fenwick_tree.html", null ],
     [ "Graph", "da/d9a/class_graph.html", null ],
     [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
@@ -31,11 +31,11 @@ var hierarchy =
     [ "mst", "d1/d77/structmst.html", null ],
     [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", null ],
     [ "data_structure::Node", "d3/d6f/structdata__structure_1_1_node.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Kind >", "d5/da1/structnode.html", null ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Type >", "d5/da1/structnode.html", null ],
-    [ "Point", "d8/dc8/struct_point.html", null ],
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
+    [ "Point", "d8/dc8/struct_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
@@ -54,7 +54,7 @@ var hierarchy =
     [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
-    [ "trie", "d4/dd9/structtrie.html", null ],
+    [ "data_structure::trie", "d0/d6e/classdata__structure_1_1trie.html", null ],
     [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ]
 ];

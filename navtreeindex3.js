@@ -1,5 +1,15 @@
 var NAVTREEINDEX3 =
 {
+"d8/d8a/exponential__search_8cpp.html#a67e9c84b4e2eb30e3c5170eabfbb363d":[8,0,14,1,2],
+"d8/d8a/exponential__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,14,1,1],
+"d8/d95/vector__ops_8hpp.html":[8,0,8,5],
+"d8/d95/vector__ops_8hpp.html#a05b9445c6ab65053b9bf9897a96af82d":[8,0,8,5,6],
+"d8/d95/vector__ops_8hpp.html#a1b42d24ad7bedbfa8e5b59fe96987a44":[8,0,8,5,1],
+"d8/d95/vector__ops_8hpp.html#a2055c2f3a076b3d4146aade5eb35666d":[8,0,8,5,11],
+"d8/d95/vector__ops_8hpp.html#a2a282c162e12f193c58232f26f0fa62d":[8,0,8,5,12],
+"d8/d95/vector__ops_8hpp.html#a4d136cbf20e3126ed9b934ab2d03f18b":[8,0,8,5,21],
+"d8/d95/vector__ops_8hpp.html#a4dd9a9df9f8f05327bcf7b58b0a86576":[8,0,8,5,15],
+"d8/d95/vector__ops_8hpp.html#a5305cc18d11943d3dc0d66e70d7e9c44":[8,0,8,5,17],
 "d8/d95/vector__ops_8hpp.html#a5f42063207181529413d812ade52f58e":[8,0,8,5,10],
 "d8/d95/vector__ops_8hpp.html#a62a418f243cd52b49f59015dddff188e":[8,0,8,5,2],
 "d8/d95/vector__ops_8hpp.html#a6ef38e5947aef609f908bfbfeaf11d75":[8,0,8,5,4],
@@ -110,8 +120,8 @@ var NAVTREEINDEX3 =
 "d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[8,0,8,2,5],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[5,1,5],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[8,0,8,1,3],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,1,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[5,1,4],
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,1,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[8,0,8,2,1],
 "d9/d69/median__search_8cpp.html":[8,0,14,8],
 "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[8,0,14,8,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX3 =
 "da/df2/durand__kerner__roots_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,10,2,8],
 "da/df2/durand__kerner__roots_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,10,2,7],
 "da/df2/durand__kerner__roots_8cpp.html#a212979f5fc9dcf0a420e90b9b21d780a":[8,0,10,2,1],
-"da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740":[8,0,10,2,3],
-"da/df2/durand__kerner__roots_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,10,2,5],
-"da/df2/durand__kerner__roots_8cpp.html#a51637ff89e55ca749993d3e84b95d153":[8,0,10,2,6],
-"da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded":[8,0,10,2,4],
-"da/df2/durand__kerner__roots_8cpp.html#af270a96662132d0385cb6b4637c5a689":[8,0,10,2,0],
-"db/d01/brent__method__extrema_8cpp.html":[8,0,10,1],
-"db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[8,0,10,1,1],
-"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0":[8,0,10,1,5],
-"db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[8,0,10,1,4],
-"db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b":[8,0,10,1,2],
-"db/d01/brent__method__extrema_8cpp.html#a525335710b53cb064ca56b936120431e":[8,0,10,1,0]
+"da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740":[8,0,10,2,3]
 };

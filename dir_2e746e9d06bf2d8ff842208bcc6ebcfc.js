@@ -14,5 +14,6 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
       [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
       [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ]
     ] ],
-    [ "trie_modern.cpp", "dc/d93/trie__modern_8cpp.html", "dc/d93/trie__modern_8cpp" ]
+    [ "trie_modern.cpp", "dc/d93/trie__modern_8cpp.html", "dc/d93/trie__modern_8cpp" ],
+    [ "trie_tree.cpp", "d7/d83/trie__tree_8cpp.html", "d7/d83/trie__tree_8cpp" ]
 ];
