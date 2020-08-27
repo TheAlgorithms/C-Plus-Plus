@@ -1,90 +1,156 @@
-#include<iostream>
-using namespace std;
-void InsertionSort(int *A, int n)
-{
-   int i, temp, j;
-   for (i = 0; i < n; i++) {
+/**
+ * @file
+ * @author [@sinkyoungdeok](https://github.com/sinkyoungdeok)
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ * @brief
+ */
+#include <array>
+#include <ctime>
+#include <iostream>
+#include <memory>
 
-      temp = A[i];
-      j = i;
+/**
+ * @brief
+ *
+ */
+namespace sorting {
+/**
+ * @brief
+ *
+ */
+namespace merge_insertion {
 
-      while (j > 0 && temp < A[j - 1]) {
-         A[j] = A[j - 1];
-         j = j - 1;
+/**
+ * @brief
+ *
+ * @tparam T
+ * @tparam N
+ * @param A
+ * @param start
+ * @param end
+ */
+template <typename T, size_t N>
+void InsertionSort(std::array<T, N> *A, size_t start, size_t end) {
+    size_t i, j;
+    T *ptr = A->data();
 
-      }
-      A[j] = temp;
-   }
-}
-void merge(int array[], int min, int max, int mid);
-void mergeSort(int array[], int min, int max, int threshold)
-{
-   // prerequisite
-   if ((max - min + 1) <= threshold)
-   {
-      InsertionSort(&array[min], max);
-   }
-   else
-   {
-      // get the middle point
-      int mid = (max + min) / 2;
+    for (i = start; i < end; i++) {
+        T temp = ptr[i];
+        j = i;
+        while (j > start && temp < ptr[j - 1]) {
+            ptr[j] = ptr[j - 1];
+            j--;
+        }
+        //   for (j = i; j > start && temp < ptr[j - 1]; --j) {
+        //       ptr[j] = ptr[j - 1];
+        //   }
 
-      // apply merge sort to both parts of this
-      mergeSort(array, min, mid, threshold);
-      mergeSort(array, mid + 1, max, threshold);
-
-      // and finally merge all that sorted stuff
-      merge(array, min, max, mid);
-   }
-}
-
-void merge(int array[], int min, int max, int mid)
-{
-   int firstIndex = min;
-   int secondIndex = mid + 1;
-   int * tempArray = new int[max + 1];
-
-
-   // While there are elements in the left or right runs
-   for (int index = min; index <= max; index++) {
-      // If left run head exists and is <= existing right run head.
-      if (firstIndex <= mid && (secondIndex > max || array[firstIndex] <= array[secondIndex]))
-      {
-         tempArray[index] = array[firstIndex];
-         firstIndex = firstIndex + 1;
-      }
-
-      else
-      {
-         tempArray[index] = array[secondIndex];
-         secondIndex = secondIndex + 1;
-      }
-
-   }
-
-   // transfer to the initial array
-   for (int index = min; index <= max; index++)
-      array[index] = tempArray[index];
+        ptr[j] = temp;
+    }
 }
 
-int main()
-{
-   int size = 10;
-   int *_array = new int[size];
-   //input
-   for (int i = 0; i < size; i++)
-   {
-      cin >> _array[i];
-   }
-   mergeSort(_array, 0, size ,20);
+/**
+ * @brief
+ *
+ * @tparam T
+ * @tparam N
+ * @param array
+ * @param min
+ * @param max
+ * @param mid
+ */
+template <typename T, size_t N>
+void merge(std::array<T, N> *array, size_t min, size_t max, size_t mid) {
+    size_t firstIndex = min;
+    size_t secondIndex = mid + 1;
 
-   //output
-   for (int i = 0; i < size; ++i)
-   {
-      cout << _array[i] << "\t";
-   }
+    auto ptr = array->data();
+    auto tempArray = std::unique_ptr<T[]>(new T[max + 1]);
 
+    // While there are elements in the left or right runs
+    for (size_t index = min; index <= max; index++) {
+        // If left run head exists and is <= existing right run head.
+        if (firstIndex <= mid &&
+            (secondIndex > max || ptr[firstIndex] <= ptr[secondIndex])) {
+            tempArray[index] = ptr[firstIndex];
+            firstIndex++;
+        }
 
-   delete[] _array;
-   return 0;
+        else {
+            tempArray[index] = ptr[secondIndex];
+            secondIndex++;
+        }
+    }
+
+    // transfer to the initial array
+    memcpy(ptr + min, tempArray.get() + min, (max - min) * sizeof(T));
+    //  for (int index = min; index <= max; index++) ptr[index] =
+    //  tempArray[index];
+}
+
+/**
+ * @brief
+ *
+ * @tparam T
+ * @tparam N
+ * @param array
+ * @param min
+ * @param max
+ * @param threshold
+ */
+template <typename T, size_t N>
+void mergeSort(std::array<T, N> *array, size_t min, size_t max,
+               size_t threshold) {
+    // prerequisite
+    if ((max - min) <= threshold) {
+        InsertionSort(array, min, max);
+    } else {
+        // get the middle point
+        size_t mid = (max + min) >> 1;
+
+        // apply merge sort to both parts of this
+        mergeSort(array, min, mid, threshold);
+        mergeSort(array, mid, max, threshold);
+
+        // and finally merge all that sorted stuff
+        merge(array, min, max, mid);
+    }
+}
+
+}  // namespace merge_insertion
+}  // namespace sorting
+
+/**
+ * @brief
+ *
+ */
+void test() {
+    constexpr size_t size = 30;
+    std::array<int, size> array{0};
+    // input
+    for (int i = 0; i < size; i++) {
+        array[i] = std::rand() % 100 - 50;
+        std::cout << array[i] << " ";
+    }
+    std::cout << std::endl;
+
+    sorting::merge_insertion::InsertionSort(&array, 0, size);
+    //  sorting::merge_insertion::mergeSort(&array, 0, size, 10);
+
+    // output
+    for (int i = 0; i < size; ++i) {
+        std::cout << array[i] << " ";
+    }
+    std::cout << std::endl;
+}
+
+/**
+ * @brief
+ *
+ * @return int
+ */
+int main() {
+    std::srand(std::time(nullptr));
+    test();
+    return 0;
 }
