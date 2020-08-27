@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
 #include <algorithm>
 #include <array>
+#include <iostream>
+#include <vector>
 //#include <boost/multiprecision/cpp_int.hpp>
 // using namespace boost::multiprecision;
 const int mx = 1e6 + 5;
@@ -12,7 +12,7 @@ ll node, edge;
 std::vector<std::pair<ll, std::pair<ll, ll>>> edges;
 void initial() {
     for (int i = 0; i < node + edge; ++i) {
-      parent[i] = i;
+        parent[i] = i;
     }
 }
 

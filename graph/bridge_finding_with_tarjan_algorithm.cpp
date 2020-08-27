@@ -27,14 +27,14 @@ class Solution {
                     bridge.push_back({itr, current_node});
                 }
             }
-            out_time[current_node] = std::min(out_time[current_node], out_time[itr]);
+            out_time[current_node] =
+                std::min(out_time[current_node], out_time[itr]);
         }
     }
 
  public:
     std::vector<std::vector<int>> search_bridges(
-            int n,
-            const std::vector<std::vector<int>>& connections) {
+        int n, const std::vector<std::vector<int>>& connections) {
         timer = 0;
         graph.resize(n);
         in_time.assign(n, 0);
@@ -73,7 +73,8 @@ int main() {
      *    I assumed that the graph is bi-directional and connected.
      *
      */
-    std::vector<std::vector<int>> bridges = s1.search_bridges(number_of_node, node);
+    std::vector<std::vector<int>> bridges =
+        s1.search_bridges(number_of_node, node);
     std::cout << bridges.size() << " bridges found!\n";
     for (auto& itr : bridges) {
         std::cout << itr[0] << " --> " << itr[1] << '\n';
