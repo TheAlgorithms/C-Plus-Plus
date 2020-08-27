@@ -1,5 +1,6 @@
 /**
  * @file
+ * @author [@Arctic2333](https://github.com/Arctic2333)
  * @author [Krishna Vedala](https://github.com/kvedala)
  * @brief Implementation of [Trie](https://en.wikipedia.org/wiki/Trie) data
  * structure for English alphabets in small characters.
