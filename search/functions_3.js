@@ -18,7 +18,7 @@ var searchData=
   ['cend_28int_29_3008',['cend(int)',['http://en.cppreference.com/w/cpp/container/unordered_map/end2.html',0,'std::unordered_map::cend(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/end2.html',0,'std::unordered_multimap::cend(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/end2.html',0,'std::unordered_multiset::cend(int)()'],['http://en.cppreference.com/w/cpp/container/unordered_set/end2.html',0,'std::unordered_set::cend(int)()']]],
   ['chain_5fquery_3009',['chain_query',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24',1,'range_queries::heavy_light_decomposition::HLD']]],
   ['change_5froot_3010',['change_root',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ab916d554afa8ca5230b4310c2c69fae0',1,'range_queries::heavy_light_decomposition::Tree']]],
-  ['char_5fto_5fint_3011',['char_to_int',['../d0/d6e/classdata__structure_1_1trie.html#aeb479dcc88415154fb61c2fbb589d6d0',1,'data_structure::trie']]],
+  ['char_5fto_5fint_3011',['char_to_int',['../d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988',1,'data_structures::trie']]],
   ['check_5fif_5fequal_3012',['check_if_equal',['../d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd',1,'string_search']]],
   ['check_5fsize_5fmatch_3013',['check_size_match',['../d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56',1,'machine_learning::adaline']]],
   ['check_5ftermination_3014',['check_termination',['../da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377',1,'durand_kerner_roots.cpp']]],

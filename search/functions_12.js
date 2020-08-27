@@ -8,7 +8,7 @@ var searchData=
   ['random_5fshuffle_3839',['random_shuffle',['http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html',0,'std']]],
   ['random_5ftests_3840',['random_tests',['../de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f',1,'fibonacci_search.cpp']]],
   ['randomized_5fbogosort_3841',['randomized_bogosort',['../d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f',1,'sorting']]],
-  ['randomlevel_3842',['randomLevel',['../d1/d46/classdata__structure_1_1_skip_list.html#a10800369c9efa08dd86de0ce552c874e',1,'data_structure::SkipList']]],
+  ['randomlevel_3842',['randomLevel',['../d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4',1,'data_structures::SkipList']]],
   ['range_5ferror_3843',['range_error',['http://en.cppreference.com/w/cpp/error/range_error.html',0,'std::range_error']]],
   ['ranlux24_3844',['ranlux24',['http://en.cppreference.com/w/cpp/numeric/random/discard_block_engine/discard_block_engine.html',0,'std::ranlux24']]],
   ['ranlux24_5fbase_3845',['ranlux24_base',['http://en.cppreference.com/w/cpp/numeric/random/subtract_with_carry_engine/subtract_with_carry_engine.html',0,'std::ranlux24_base']]],

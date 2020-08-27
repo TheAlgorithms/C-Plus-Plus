@@ -89,7 +89,7 @@ var searchData=
   ['treat_5fas_5ffloating_5fpoint_1802',['treat_as_floating_point',['http://en.cppreference.com/w/cpp/chrono/treat_as_floating_point.html',0,'std::chrono']]],
   ['tree_1803',['Tree',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html',1,'range_queries::heavy_light_decomposition::Tree&lt; X &gt;'],['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a835fb2bbb27307b8cacad9b287968bc1',1,'range_queries::heavy_light_decomposition::Tree::Tree()']]],
   ['trianglearea_1804',['TriangleArea',['../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc',1,'smallest_circle.cpp']]],
-  ['trie_1805',['trie',['../d0/d6e/classdata__structure_1_1trie.html',1,'data_structure::trie'],['../dd/d2f/class_trie.html',1,'Trie'],['../d0/d6e/classdata__structure_1_1trie.html#a36a41761149fd541850834aef29f9b7f',1,'data_structure::trie::trie()'],['../dd/d2f/class_trie.html#a6af57e9f25d0d0a2d59eea5a4a802908',1,'Trie::Trie()']]],
+  ['trie_1805',['trie',['../d0/d3e/classdata__structures_1_1trie.html',1,'data_structures::trie'],['../dd/d2f/class_trie.html',1,'Trie'],['../d0/d3e/classdata__structures_1_1trie.html#a87d8bf99aea936f9381141753f1e90a8',1,'data_structures::trie::trie()'],['../dd/d2f/class_trie.html#a6af57e9f25d0d0a2d59eea5a4a802908',1,'Trie::Trie()']]],
   ['trie_5fmodern_2ecpp_1806',['trie_modern.cpp',['../dc/d93/trie__modern_8cpp.html',1,'']]],
   ['trie_5ftree_2ecpp_1807',['trie_tree.cpp',['../d7/d83/trie__tree_8cpp.html',1,'']]],
   ['trienode_1808',['TrieNode',['../de/d48/struct_trie_1_1_trie_node.html',1,'Trie']]],

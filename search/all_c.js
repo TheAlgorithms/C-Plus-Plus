@@ -20,7 +20,7 @@ var searchData=
   ['length_5ferror_940',['length_error',['http://en.cppreference.com/w/cpp/error/length_error.html',0,'std::length_error'],['http://en.cppreference.com/w/cpp/error/length_error.html',0,'std::length_error::length_error()']]],
   ['less_941',['less',['http://en.cppreference.com/w/cpp/utility/functional/less.html',0,'std']]],
   ['less_5fequal_942',['less_equal',['http://en.cppreference.com/w/cpp/utility/functional/less_equal.html',0,'std']]],
-  ['level_943',['level',['../d1/d46/classdata__structure_1_1_skip_list.html#ae0c022174510fd9ca1b84d8e996cd1a5',1,'data_structure::SkipList::level()'],['../d0/d58/classgraph_1_1_rooted_tree.html#a2ee3ad1161ac2532da30c3e22c265ad3',1,'graph::RootedTree::level()']]],
+  ['level_943',['level',['../d4/d90/classdata__structures_1_1_skip_list.html#a3e249c2c35a8b7f5ffd2d77fee60d650',1,'data_structures::SkipList::level()'],['../d0/d58/classgraph_1_1_rooted_tree.html#a2ee3ad1161ac2532da30c3e22c265ad3',1,'graph::RootedTree::level()']]],
   ['levelorder_944',['levelOrder',['../d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59',1,'avltree.cpp']]],
   ['lexicographical_5fcompare_945',['lexicographical_compare',['http://en.cppreference.com/w/cpp/algorithm/lexicographical_compare.html',0,'std']]],
   ['lgamma_946',['lgamma',['http://en.cppreference.com/w/cpp/numeric/math/lgamma.html',0,'std']]],

@@ -10,7 +10,7 @@ var searchData=
   ['random_5fshuffle_1382',['random_shuffle',['http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html',0,'std']]],
   ['random_5ftests_1383',['random_tests',['../de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f',1,'fibonacci_search.cpp']]],
   ['randomized_5fbogosort_1384',['randomized_bogosort',['../d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f',1,'sorting']]],
-  ['randomlevel_1385',['randomLevel',['../d1/d46/classdata__structure_1_1_skip_list.html#a10800369c9efa08dd86de0ce552c874e',1,'data_structure::SkipList']]],
+  ['randomlevel_1385',['randomLevel',['../d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4',1,'data_structures::SkipList']]],
   ['range_5ferror_1386',['range_error',['http://en.cppreference.com/w/cpp/error/range_error.html',0,'std::range_error'],['http://en.cppreference.com/w/cpp/error/range_error.html',0,'std::range_error::range_error()']]],
   ['range_5fqueries_1387',['range_queries',['../dd/d69/namespacerange__queries.html',1,'']]],
   ['rank_1388',['rank',['http://en.cppreference.com/w/cpp/types/rank.html',0,'std']]],

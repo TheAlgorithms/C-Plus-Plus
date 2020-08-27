@@ -23,7 +23,7 @@ var searchData=
   ['hashmax_696',['HASHMAX',['../d1/df3/hash__search_8cpp.html#a77c722016053a1d484aa177ce205b367',1,'hash_search.cpp']]],
   ['hashtab_697',['hashtab',['../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d',1,'hash_search.cpp']]],
   ['head_698',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain']]],
-  ['header_699',['header',['../d1/d46/classdata__structure_1_1_skip_list.html#a7aed753e3b47953229f5ac94f0fc9aad',1,'data_structure::SkipList']]],
+  ['header_699',['header',['../d4/d90/classdata__structures_1_1_skip_list.html#ad7e392386d7db622185d6f7c718e4f16',1,'data_structures::SkipList']]],
   ['heap_5fsize_700',['heap_size',['../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913',1,'MinHeap']]],
   ['heap_5fsort_2ecpp_701',['heap_sort.cpp',['../d2/d52/heap__sort_8cpp.html',1,'']]],
   ['heapsort_702',['heapSort',['../d5/d4c/group__sorting.html#ga29d28b140174dbdde7c9f5157758435f',1,'heap_sort.cpp']]],

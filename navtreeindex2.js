@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"d5/ddb/bogo__sort_8cpp.html#ae8adaeff66471f9ed84f2e673b38a859":[8,0,15,0,2],
-"d5/ddb/bogo__sort_8cpp.html#aedfb88e2d6fff1871f038221fe5870fe":[8,0,15,0,3],
-"d5/def/stairs__pattern_8cpp.html":[8,0,11,14],
-"d5/def/stairs__pattern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,11,14,0],
-"d5/df4/merge__sort_8cpp.html":[8,0,15,6],
 "d5/df6/check__amicable__pair_8cpp.html":[8,0,9,2],
 "d5/df6/check__amicable__pair_8cpp.html#ac656a51b4c3bd7d63b7dcc75dc3e5576":[8,0,9,2,2],
 "d5/df6/check__amicable__pair_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[8,0,9,2,3],
@@ -246,8 +241,13 @@ var NAVTREEINDEX2 =
 "d8/d6c/line__segment__intersection_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,4,1,2],
 "d8/d77/namespacemachine__learning.html":[6,0,14],
 "d8/d77/namespacemachine__learning.html":[7,0,6],
-"d8/d89/namespacelinear__probing.html":[7,0,5],
 "d8/d89/namespacelinear__probing.html":[6,0,13],
+"d8/d89/namespacelinear__probing.html":[7,0,5],
 "d8/d8a/exponential__search_8cpp.html":[8,0,14,1],
-"d8/d8a/exponential__search_8cpp.html#a0f697e2a3b5193324ab84bd4045088f7":[8,0,14,1,0]
+"d8/d8a/exponential__search_8cpp.html#a0f697e2a3b5193324ab84bd4045088f7":[8,0,14,1,0],
+"d8/d8a/exponential__search_8cpp.html#a67e9c84b4e2eb30e3c5170eabfbb363d":[8,0,14,1,2],
+"d8/d8a/exponential__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,14,1,1],
+"d8/d95/vector__ops_8hpp.html":[8,0,8,5],
+"d8/d95/vector__ops_8hpp.html#a05b9445c6ab65053b9bf9897a96af82d":[8,0,8,5,6],
+"d8/d95/vector__ops_8hpp.html#a1b42d24ad7bedbfa8e5b59fe96987a44":[8,0,8,5,1]
 };

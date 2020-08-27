@@ -83,7 +83,7 @@ var searchData=
   ['fopen_561',['fopen',['http://en.cppreference.com/w/cpp/io/c/fopen.html',0,'std']]],
   ['for_5feach_562',['for_each',['http://en.cppreference.com/w/cpp/algorithm/for_each.html',0,'std']]],
   ['format_563',['format',['http://en.cppreference.com/w/cpp/regex/match_results/format.html',0,'std::match_results::format()'],['http://en.cppreference.com/w/cpp/regex/match_results/format.html',0,'std::wsmatch::format()'],['http://en.cppreference.com/w/cpp/regex/match_results/format.html',0,'std::smatch::format()'],['http://en.cppreference.com/w/cpp/regex/match_results/format.html',0,'std::wcmatch::format()'],['http://en.cppreference.com/w/cpp/regex/match_results/format.html',0,'std::cmatch::format()']]],
-  ['forward_564',['forward',['../d3/d6f/structdata__structure_1_1_node.html#a0e80ff706591f718f763c5a7feaa2394',1,'data_structure::Node::forward()'],['http://en.cppreference.com/w/cpp/utility/forward.html',0,'std::forward()']]],
+  ['forward_564',['forward',['../d9/d49/structdata__structures_1_1_node.html#ac916d833aad2b9c41f01a92db2f8c48e',1,'data_structures::Node::forward()'],['http://en.cppreference.com/w/cpp/utility/forward.html',0,'std::forward()']]],
   ['forward_5fas_5ftuple_565',['forward_as_tuple',['http://en.cppreference.com/w/cpp/utility/tuple/forward_as_tuple.html',0,'std']]],
   ['forward_5feuler_566',['forward_euler',['../d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9',1,'ode_forward_euler.cpp']]],
   ['forward_5feuler_5fstep_567',['forward_euler_step',['../d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723',1,'ode_forward_euler.cpp']]],

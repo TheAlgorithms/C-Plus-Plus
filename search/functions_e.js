@@ -23,7 +23,7 @@ var searchData=
   ['nexttoward_3657',['nexttoward',['http://en.cppreference.com/w/cpp/numeric/math/nextafter.html',0,'std']]],
   ['no_5foccurence_5ftests_3658',['no_occurence_tests',['../de/d0d/fibonacci__search_8cpp.html#a5e144326104e57a3808aed7eb098db0d',1,'fibonacci_search.cpp']]],
   ['noboolalpha_3659',['noboolalpha',['http://en.cppreference.com/w/cpp/io/manip/boolalpha.html',0,'std']]],
-  ['node_3660',['Node',['../d3/d6f/structdata__structure_1_1_node.html#af7f19e61975f1362b22d1488bee87077',1,'data_structure::Node']]],
+  ['node_3660',['Node',['../d9/d49/structdata__structures_1_1_node.html#a54a6777e72b639c3ee6446a541db8e78',1,'data_structures::Node']]],
   ['non_5frecursive_5fmerge_5fsort_3661',['non_recursive_merge_sort',['../d5/d91/namespacesorting.html#a140d913e42fb94176a0b2c8b29a80420',1,'sorting::non_recursive_merge_sort(const Iterator first, const Iterator last, const size_t n)'],['../d5/d91/namespacesorting.html#a27236b8d3df3832e1f1225576a122534',1,'sorting::non_recursive_merge_sort(const Iterator first, const size_t n)'],['../d5/d91/namespacesorting.html#ae97f4dd815654c4682f564afd718e824',1,'sorting::non_recursive_merge_sort(const Iterator first, const Iterator last)']]],
   ['none_3662',['none',['http://en.cppreference.com/w/cpp/utility/bitset/all_any_none.html',0,'std::bitset']]],
   ['none_5fof_3663',['none_of',['http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html',0,'std']]],

@@ -30,7 +30,7 @@ var hierarchy =
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
     [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", null ],
-    [ "data_structure::Node", "d3/d6f/structdata__structure_1_1_node.html", null ],
+    [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "node< Kind >", "d5/da1/structnode.html", null ],
     [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Type >", "d5/da1/structnode.html", null ],
@@ -44,7 +44,7 @@ var hierarchy =
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
-    [ "data_structure::SkipList", "d1/d46/classdata__structure_1_1_skip_list.html", null ],
+    [ "data_structures::SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
     [ "stack< Type >", "d1/dc2/classstack.html", null ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", null ],
@@ -54,7 +54,7 @@ var hierarchy =
     [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
-    [ "data_structure::trie", "d0/d6e/classdata__structure_1_1trie.html", null ],
+    [ "data_structures::trie", "d0/d3e/classdata__structures_1_1trie.html", null ],
     [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ]
 ];

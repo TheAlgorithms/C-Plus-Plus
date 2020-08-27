@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
-    [ "data_structure", "d1/db4/namespacedata__structure.html", "d1/db4/namespacedata__structure" ],
+    [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
     [ "geometry", "d5/d5f/namespacegeometry.html", "d5/d5f/namespacegeometry" ],
     [ "graph", "df/dce/namespacegraph.html", "df/dce/namespacegraph" ],
