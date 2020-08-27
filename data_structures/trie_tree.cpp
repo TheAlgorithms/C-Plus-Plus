@@ -50,7 +50,7 @@ class trie {
     /** search a string exists inside a given root trie
      * @param str string to search for
      * @param index start index to search from
-     * @returns `tre` if found
+     * @returns `true` if found
      * @returns `false` if not found
      */
     bool search(const std::shared_ptr<trie>& root, const std::string& str,
