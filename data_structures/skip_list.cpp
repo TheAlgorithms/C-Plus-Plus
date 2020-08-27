@@ -64,7 +64,7 @@ class SkipList {
     SkipList() {
         level = 0;
         // Header initialization
-        header = std::shared_ptr<Node>(new Node(-1, MAX_LEVEL));
+        header = std::make_shared<Node>(-1, MAX_LEVEL);
     }
 
     /**
@@ -75,8 +75,9 @@ class SkipList {
     int randomLevel() {
         int lvl = 0;
         while (static_cast<float>(std::rand()) / RAND_MAX < PROBABILITY &&
-               lvl < MAX_LEVEL)
+               lvl < MAX_LEVEL) {
             lvl++;
+        }
         return lvl;
     }
 
@@ -93,8 +94,9 @@ class SkipList {
         update.fill(nullptr);
 
         for (int i = level; i >= 0; i--) {
-            while (x->forward[i] != nullptr && x->forward[i]->key < key)
+            while (x->forward[i] != nullptr && x->forward[i]->key < key) {
                 x = x->forward[i];
+            }
             update[i] = x;
         }
 
@@ -112,7 +114,7 @@ class SkipList {
             }
 
             std::shared_ptr<Node> n =
-                std::shared_ptr<Node>(new Node(key, rlevel, value));
+                std::make_shared<Node>(key, rlevel, value);
             for (int i = 0; i <= rlevel; i++) {
                 n->forward[i] = update[i]->forward[i];
                 update[i]->forward[i] = n;
@@ -135,8 +137,9 @@ class SkipList {
         update.fill(nullptr);
 
         for (int i = level; i >= 0; i--) {
-            while (x->forward[i] != nullptr && x->forward[i]->key < key)
+            while (x->forward[i] != nullptr && x->forward[i]->key < key) {
                 x = x->forward[i];
+            }
             update[i] = x;
         }
 
@@ -146,8 +149,9 @@ class SkipList {
 
         if (!doesnt_exist) {
             for (int i = 0; i <= level; i++) {
-                if (update[i]->forward[i] != x)
+                if (update[i]->forward[i] != x) {
                     break;
+                }
                 update[i]->forward[i] = x->forward[i];
             }
             /* Remove empty levels*/
@@ -216,6 +220,6 @@ int main() {
     }
 
     lst.displayList();
-    
+
     return 0;
 }
