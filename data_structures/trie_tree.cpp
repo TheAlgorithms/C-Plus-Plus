@@ -149,7 +149,7 @@ class trie {
  * @brief Testing function
  * @returns void
  */
-void test() {
+static void test() {
     trie root;
     root.insert("hello");
     root.insert("world");
