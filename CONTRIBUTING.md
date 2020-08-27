@@ -164,7 +164,7 @@ Once cpplint is installed, test your file(s) with:
 
 The [__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) tool can fix whitespace related _cpplint_ issues.
 * On Macs only: `brew install clang-format`  # Only needs to be installed once.
-* All platforms: `clang-format -i -style="{IndentWidth: 4}" my_file.cpp`
+* All platforms: `clang-format -i -style="file" my_file.cpp`
 
 Most importantly,
 - Happy coding!
