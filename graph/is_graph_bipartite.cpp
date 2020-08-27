@@ -1,34 +1,34 @@
 /**
- *  @file
+ * @file
  *
- *  @brief Algorithm to check whether a graph is
+ * @brief Algorithm to check whether a graph is
  * [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
  *
- *  @details
- *  A graph is a collection of nodes also called vertices and these vertices
- *  are connected by edges.A bipartite graph is a graph whose vertices can be
- *  divided into two disjoint and independent sets U and V such that every edge
- *  connects a vertex in U to one in V.
+ * @details
+ * A graph is a collection of nodes also called vertices and these vertices
+ * are connected by edges.A bipartite graph is a graph whose vertices can be
+ * divided into two disjoint and independent sets U and V such that every edge
+ * connects a vertex in U to one in V.
  *
- *  The given Algorithm will determine whether the given graph is bipartite or
+ * The given Algorithm will determine whether the given graph is bipartite or
  * not
  *
- *  <pre>
- *   Example - Here is a graph g1 with 5 vertices and is bipartite
+ * <pre>
+ *  Example - Here is a graph g1 with 5 vertices and is bipartite
  *
- *      1   4
- *     / \ / \
- *    2   3   5
+ *     1   4
+ *    / \ / \
+ *   2   3   5
  *
- *  Example - Here is a graph G2 with 3 vertices and is not bipartite
+ * Example - Here is a graph G2 with 3 vertices and is not bipartite
  *
- *    1 --- 2
- *     \   /
- *       3
+ *   1 --- 2
+ *    \   /
+ *      3
  *
- *  </pre>
+ * </pre>
  *
- *  @author [Akshat Vaya](https://github.com/AkVaya)
+ * @author [Akshat Vaya](https://github.com/AkVaya)
  *
  */
 #include <iostream>
@@ -50,20 +50,19 @@ namespace is_graph_bipartite {
  */
 class Graph {
  private:
-    int n;  /// size of the graph
+    int n;  ///< size of the graph
 
     std::vector<std::vector<int> >
-        adj;  /// adj stores the graph as an adjacency list
+        adj;  ///< adj stores the graph as an adjacency list
 
-    std::vector<int> side;  /// stores the side of the vertex
-
-    static const int nax = 5e5 + 1;
+    std::vector<int> side;  ///< stores the side of the vertex
 
  public:
     /**
      * @brief Constructor that initializes the graph on creation
+     * @param size number of vertices of the graph
      */
-    explicit Graph(int size = nax) {
+    explicit Graph(int size) {
         n = size;
         adj.resize(n);
         side.resize(n, -1);
@@ -74,6 +73,7 @@ class Graph {
     bool
     is_bipartite();  /// function to check whether the graph is bipartite or not
 };
+
 /**
  * @brief Function that add an edge between two nodes or vertices of graph
  *
@@ -84,14 +84,15 @@ void Graph::addEdge(int u, int v) {
     adj[u - 1].push_back(v - 1);
     adj[v - 1].push_back(u - 1);
 }
+
 /**
- *  @brief function that checks whether the graph is bipartite or not
- *  the function returns true if the graph is a bipartite graph
- *  the function returns false if the graph is not a bipartite graph
+ * @brief function that checks whether the graph is bipartite or not
+ * the function returns true if the graph is a bipartite graph
+ * the function returns false if the graph is not a bipartite graph
  *
- *  @details
- *  Here, side refers to the two disjoint subsets of the bipartite graph.
- *  Initially, the values of side are set to -1 which is an unassigned state. A
+ * @details
+ * Here, side refers to the two disjoint subsets of the bipartite graph.
+ * Initially, the values of side are set to -1 which is an unassigned state. A
  * for loop is run for every vertex of the graph. If the current edge has no
  * side assigned to it, then a Breadth First Search operation is performed. If
  * two neighbours have the same side then the graph will not be bipartite and
@@ -99,6 +100,8 @@ void Graph::addEdge(int u, int v) {
  * different sides, the value of check will be true and hence the graph
  * bipartite.
  *
+ * @returns `true` if th graph is bipartite
+ * @returns `false` otherwise
  */
 bool Graph::is_bipartite() {
     bool check = true;
@@ -125,9 +128,10 @@ bool Graph::is_bipartite() {
 }
 }  // namespace is_graph_bipartite
 }  // namespace graph
+
 /**
- *   Function to test the above algorithm
- *  @returns none
+ * Function to test the above algorithm
+ * @returns none
  */
 static void test() {
     graph::is_graph_bipartite::Graph G1(
@@ -157,6 +161,7 @@ static void test() {
         std::cout << "The given graph G2 is not a bipartite graph\n";
     }
 }
+
 /**
  * Main function
  */
