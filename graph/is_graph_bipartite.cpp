@@ -6,12 +6,12 @@
  *
  * @details
  * A graph is a collection of nodes also called vertices and these vertices
- * are connected by edges.A bipartite graph is a graph whose vertices can be
+ * are connected by edges. A graph is bipartite if its vertices can be
  * divided into two disjoint and independent sets U and V such that every edge
  * connects a vertex in U to one in V.
  *
- * The given Algorithm will determine whether the given graph is bipartite or
- * not
+ * The algorithm implemented in this file determines whether the given graph
+ * is bipartite or not.
  *
  * <pre>
  *  Example - Here is a graph g1 with 5 vertices and is bipartite
