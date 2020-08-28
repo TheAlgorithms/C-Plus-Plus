@@ -59,7 +59,7 @@ We are very happy that you consider implementing algorithms and data structures 
 
 #include 
 
-/** 
+/**
  * @namespace <check from other files in this repo>
  */
 namespace name {
@@ -67,42 +67,44 @@ namespace name {
 /**
  * Class documentation
  */
-class cls_name{
+class class_name {
  private:
-    int var1;  ///< short info of this variable
-    char *msg;  ///< short info
- 
+    int variable;  ///< short info of this variable
+    char *message;  ///< short info
+
  public:
- // other members also documented as below
+    // other members also documented as below
 }
 
 /**
- * Function documentation 
+ * Function documentation
  * @tparam T this is a one-line info about T
  * @param param1 on-line info about param1
  * @param param2 on-line info about param2
  * @returns `true` if ...
- * @returns `false` if ... 
+ * @returns `false` if ...
  */
 template<class T>
 bool func(int param1, T param2) {
-    // function statements here 
-    if(/*something bad*/)
+    // function statements here
+    if (/*something bad*/) {
         return false;
+    }
 
     return true;
 }
 
 /** Test function */
-void test() {
- /* some statements */
- assert(func(...) == ...); // this ensures that the algorithm works as expected 
+static void test() {
+    /* desciptions of the following test */
+    assert(func(...) == ...); // this ensures that the algorithm works as expected
 
- // can have multiple checks
+    // can have multiple checks
 }
 
 /** Main function */
 int main(int argc, char *argv[]) {
+    test(); // execute the tests
     // code here
     return 0;
 }
@@ -110,7 +112,7 @@ int main(int argc, char *argv[]) {
 
 #### New File Name guidelines
 - Use lowercase words with ``"_"`` as separator
-- For instance 
+- For instance
 ```
 MyNewCppClass.CPP       is incorrect
 my_new_cpp_class.cpp    is correct format
@@ -119,7 +121,7 @@ my_new_cpp_class.cpp    is correct format
 - File name validation will run on docker to ensure the validity.
 - If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example, if `median_search.cpp` already exists in the `search` folder and you are contributing a new implementation, the filename should be `median_search2.cpp` and for a third implementation, `median_search3.cpp`.
 
-#### New Directory guidelines 
+#### New Directory guidelines
 - We recommend adding files to existing directories as much as possible.
 - Use lowercase words with ``"_"`` as separator ( no spaces or ```"-"``` allowed )
 - For instance
