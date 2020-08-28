@@ -101,7 +101,7 @@ bool list::isEmpty() {
 
 /**
  * function adds new element to the end of the list
- * @param new_elem to be added to the list
+ * @param new_elem to be added to the end of the list
  */
 void list::push_back(int new_elem) {
     std::shared_ptr<link> new_link(new link(new_elem));
@@ -111,7 +111,7 @@ void list::push_back(int new_elem) {
 
 /**
  * function adds new element to the beginning of the list
- * @param new_elem to be added to the list
+ * @param new_elem to be added to front of the list
  */
 void list::push_front(int new_elem) {
     std::shared_ptr<link> new_link(new link(new_elem));
