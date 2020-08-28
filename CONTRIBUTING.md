@@ -159,7 +159,9 @@ That may save you time waiting for the CI (continuous intgration) to run.
 
 #### Static Code Analyzer
 We use [clang-tidy](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [.clang-tidy](.clang-tidy).
-> `clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --`
+```shell
+clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
+```
 
 #### Code Formatter
 [__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
