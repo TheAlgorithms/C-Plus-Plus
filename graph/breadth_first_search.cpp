@@ -89,11 +89,12 @@ void add_undirected_edge(std::vector<std::vector<int>> *graph, int u, int v) {
  *
  * @param graph Adjacency list representation of graph
  * @param start vertex from where traversing starts
- * @returns a binary vector indicating which vertices were visited during the search.
+ * @returns a binary vector indicating which vertices were visited during the
+ * search.
  *
  */
-std::vector<bool> breadth_first_search(const std::vector<std::vector<int>> &graph,
-                                      int start) {
+std::vector<bool> breadth_first_search(
+    const std::vector<std::vector<int>> &graph, int start) {
     /// vector to keep track of visited vertices
     std::vector<bool> visited(graph.size(), false);
     /// a queue that stores vertices that need to be further explored

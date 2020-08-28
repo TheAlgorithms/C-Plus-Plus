@@ -1,14 +1,14 @@
 #include <iostream>
 #include <list>
-#include <vector>
 #include <stack>
+#include <vector>
 
 constexpr int WHITE = 0;
 constexpr int GREY = 1;
 constexpr int BLACK = 2;
 constexpr int INF = 99999;
 
-void dfs(const std::vector< std::list<int> > &graph, int start) {
+void dfs(const std::vector<std::list<int> > &graph, int start) {
     std::vector<int> checked(graph.size(), WHITE);
     checked[start] = GREY;
     std::stack<int> stack;
@@ -33,7 +33,7 @@ void dfs(const std::vector< std::list<int> > &graph, int start) {
 int main() {
     int n = 0;
     std::cin >> n;
-    std::vector< std::list<int> > graph(INF);
+    std::vector<std::list<int> > graph(INF);
     for (int i = 0; i < n; ++i) {
         int u = 0, w = 0;
         std::cin >> u >> w;
