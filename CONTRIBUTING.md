@@ -155,11 +155,13 @@ Common prefixes:
 #### Building Locally
 Before submitting a pull request, build the code locally.
 That may save you time waiting for the CI (continuous intgration) to run.
-* `cmake -B build -S .`
+```
+cmake -B build -S .
+```
 
 #### Static Code Analyzer
 We use [clang-tidy](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [.clang-tidy](.clang-tidy).
-```shell
+```
 clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 ```
 
