@@ -166,7 +166,7 @@ void list::display() {
  * function searchs for @param find_elem in the list
  * @param find_elem to be searched for in the list
  */
-shared_ptr<link> list::search(int find_elem) {
+std::shared_ptr<link> list::search(int find_elem) {
     if (isEmpty()) {
         std::cout << "List is Empty!";
         return nullptr;
