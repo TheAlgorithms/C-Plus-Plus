@@ -82,7 +82,7 @@ class list {
     void push_front(int new_elem);
     void erase(int old_elem);
     void display();
-    void search(int find_elem);
+    std::shared_ptr<link> search(int find_elem);
     void reverse();
 
  private:
