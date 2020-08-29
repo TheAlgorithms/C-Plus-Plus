@@ -169,7 +169,7 @@ void list::display() {
 shared_ptr<link> list::search(int find_elem) {
     if (isEmpty()) {
         std::cout << "List is Empty!";
-        return;
+        return nullptr;
     }
     std::shared_ptr<link> t = first;
     while (t != last && t->succ->val != find_elem) {
@@ -229,7 +229,7 @@ int main() {
                 std::cin >> s;
                 if (data_structures::linked_list::isDigit(s)) {
                     x = std::stoi(s);
-                   std::shared_ptr<link> found = l.search(x);
+                   std::shared_ptr<data_structures::linked_list::link> found = l.search(x);
                 } else {
                     std::cout << "Wrong Input!\n";
                 }
