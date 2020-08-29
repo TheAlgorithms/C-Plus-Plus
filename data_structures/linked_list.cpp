@@ -17,6 +17,7 @@
  */
 #include <iostream>
 #include <memory>
+#include <string>
 
 /**
  * @namespace data_structures
