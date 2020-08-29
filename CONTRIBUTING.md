@@ -169,7 +169,11 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 
 #### Code Formatter
 [__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
-* Installation (Mac only): `brew install clang-format`  # Only needs to be installed once.
+* Installation (Only needs to be installed once.)
+  * Mac (using home-brew): `brew install clang-format`
+  * Mac (using macports): `sudo port install clang-10 +analyzer`
+  * Windows (MSYS2 64-bit): `pacman -S mingw-w64-x86_64-clang-tools-extra`
+  * Linux (Debian): `sudo apt-get install clang-format-10 clang-tidy-10`
 * Running (all platforms): `clang-format -i -style="file" my_file.cpp`
 
 #### GitHub Actions
