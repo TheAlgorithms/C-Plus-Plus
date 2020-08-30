@@ -42,18 +42,19 @@ void merge(int *arr, int l, int m, int r) {
 
     i = 0;
     j = 0;
+    k=l;
     while (i < n1 || j < n2) {
-        if ((i<n1) && ((L[i] <= R[j]) || (j>=n2))) {
-            arr[k] = L[i];
+        if ((i<n1) && ((j>=n2) || (L[i] <= R[j]))) {
+            arr[k++] = L[i];
             i++;
         } else{
-            arr[k] = R[j];
+            arr[k++] = R[j];
             j++;
         }
     }
 
-    delete L;
-    delete R;
+    delete[] L;
+    delete[] R;
     return;
 }
 
