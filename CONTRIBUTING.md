@@ -155,7 +155,7 @@ Common prefixes:
 - Checkout our [pull request template](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md)
 
 #### Building Locally
-Before submitting a pull request, build the code locally.
+Before submitting a pull request, build the code locally or using the convenient [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus) service.
 That may save you time waiting for the CI (continuous intgration) to run.
 ```
 cmake -B build -S .
