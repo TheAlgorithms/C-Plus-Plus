@@ -1,7 +1,7 @@
 #include <cassert>
 #include <set>
 
-#include "./graph.h"
+#include "./graph.hpp"
 
 /** Test function */
 static void test() {
