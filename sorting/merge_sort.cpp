@@ -31,7 +31,7 @@
  * @param l - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
-    int i, j, k;
+    int i=0, j=0, k=0;
     int n1 = m - l + 1;
     int n2 = r - m;
 
