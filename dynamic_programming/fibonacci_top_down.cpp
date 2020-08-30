@@ -1,6 +1,9 @@
 /**
  * @file
  * @brief C++ program to find nth term in the fibonacci series.
+ * @details
+ * deliberately used size_t to increase the calculation of fibb series.
+ * Now calculates upto 93 fibbonacci terms.
  */
 #include <iostream>
 using namespace std;
@@ -15,6 +18,7 @@ size_t fib(int n) {
     }
     return arr[n];
 }
+
 int main(int argc, char const *argv[]) {
     int n;
     cout << "Enter n: ";
