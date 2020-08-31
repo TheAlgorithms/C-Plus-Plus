@@ -6,7 +6,7 @@ Determine if you are able to reach the last index.*/
 #include <vector>
 #include<iostream>
 
-bool canJump(vector<int> nums) {
+bool canJump(std::vector<int> nums) {
     auto lastPos = nums.size() - 1;
     for (auto i = nums.size() - 1; i >= 0; i--) {
         if (i + nums[i] >= lastPos) {
@@ -16,8 +16,9 @@ bool canJump(vector<int> nums) {
     return lastPos == 0;
 }
 
-void main(){
+int main(){
     //Sample test case
-    vector<int> num={4,3,1,0,5};
+    std::vector<int> num={4,3,1,0,5};
     cout<<canJump(num);  //Should display true, as when you take one step from position 0, you reach position 1, from which 3 steps lead you to the destination
+    return 0;
 }
