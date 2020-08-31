@@ -6,9 +6,9 @@ Determine if you are able to reach the last index.*/
 #include <vector>
 #include<iostream>
 using namespace std;
-bool canJump(vector<int>& nums) {
+bool canJump(vector<int> nums) {
     int lastPos = nums.size() - 1;
-    for (int i = nums.size() - 1; i >= 0; i--) {
+    for (auto i = nums.size() - 1; i >= 0; i--) {
         if (i + nums[i] >= lastPos) {
             lastPos = i;
         }
