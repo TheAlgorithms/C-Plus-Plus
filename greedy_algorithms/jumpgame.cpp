@@ -3,7 +3,9 @@
 Each element in the array represents your maximum jump length at that position.
 Determine if you are able to reach the last index.*/
 
-#include <vector.h>
+#include <vector>
+#include<iostream>
+using namespace std;
 bool canJump(vector<int>& nums) {
     int lastPos = nums.size() - 1;
     for (int i = nums.size() - 1; i >= 0; i--) {
