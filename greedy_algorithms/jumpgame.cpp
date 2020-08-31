@@ -19,6 +19,6 @@ bool canJump(std::vector<int> nums) {
 int main(){
     //Sample test case
     std::vector<int> num={4,3,1,0,5};
-    cout<<canJump(num);  //Should display true, as when you take one step from position 0, you reach position 1, from which 3 steps lead you to the destination
+    std::cout<<canJump(num);  //Should display true, as when you take one step from position 0, you reach position 1, from which 3 steps lead you to the destination
     return 0;
 }
