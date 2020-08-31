@@ -169,7 +169,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                          {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// initialize last and current members of Fibonacci sequence </span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> last = 0, current = 1;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> length = arr.size(); <span class="comment">// array size</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> length = arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); <span class="comment">// array size</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// next member of Fibonacci sequence which is &quot;last&quot; + &quot;current&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/next.html">next</a> = last + current; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
@@ -205,7 +205,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// comparing the last element</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(current &amp;&amp; !arr.empty() &amp;&amp; arr[offset+1] == value){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(current &amp;&amp; !arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/empty.html">empty</a>() &amp;&amp; arr[offset+1] == value){</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> offset+1;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// value was not found, return -1</span></div>
@@ -214,7 +214,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/fibonacci__search_8cpp_a0bc61b3903d9a53061bf31e5d110fe61_cgraph.svg" width="248" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/fibonacci__search_8cpp_a0bc61b3903d9a53061bf31e5d110fe61_cgraph.svg" width="307" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -244,7 +244,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/fibonacci__search_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="534" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d0d/fibonacci__search_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="627" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -253,8 +253,10 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="afibonacci__search_8cpp_html_a2aa09bef74ee063c1331de0883af4f4f"><div class="ttname"><a href="../../de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f">random_tests</a></div><div class="ttdeci">bool random_tests()</div><div class="ttdoc">random tests which cover cases when we have one, multiple or zero occurences of the value we're looki...</div><div class="ttdef"><b>Definition:</b> fibonacci_search.cpp:96</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="afibonacci__search_8cpp_html_a5e144326104e57a3808aed7eb098db0d"><div class="ttname"><a href="../../de/d0d/fibonacci__search_8cpp.html#a5e144326104e57a3808aed7eb098db0d">no_occurence_tests</a></div><div class="ttdeci">bool no_occurence_tests()</div><div class="ttdoc">random tests for checking performance when an array doesn't contain an element</div><div class="ttdef"><b>Definition:</b> fibonacci_search.cpp:72</div></div>
+<div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/empty.html">std::vector::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="anext_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/next.html">std::next</a></div><div class="ttdeci">T next(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

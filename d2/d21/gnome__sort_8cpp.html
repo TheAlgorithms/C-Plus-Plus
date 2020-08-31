@@ -195,7 +195,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 - as a C-array...&quot;</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> size = 6;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, size&gt;</a> arr = {-22, 100, 150, 35, -10, 99};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1">sorting::gnomeSort</a>(arr.data(),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1">sorting::gnomeSort</a>(arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/data.html">data</a>(),</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                       size);  <span class="comment">// pass array data as a C-style array pointer</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    assert(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr)));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; Passed\n&quot;</span>;</div>
@@ -245,6 +245,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/data.html">std::array::data</a></div><div class="ttdeci">T data(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

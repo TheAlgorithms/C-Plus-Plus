@@ -302,7 +302,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                      {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">size_t</span> n = arr-&gt;size();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">size_t</span> n = arr-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; i++) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        T temp = arr[0][i];</div>
@@ -314,7 +314,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        arr[0][j + 1] = temp;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a8fe6bac9e03f58abcc2ce26ef3de1b5f_cgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a78cb2f3b97b6db2c062b2a1df05c9ea9"></a>
@@ -948,15 +954,15 @@ template&lt;typename T , size_t N&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>new array with elements sorted from a given array </dd></dl>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                          {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Untill array is not sorted</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (!<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr.begin(), arr.end())) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a>(arr.begin(), arr.end());<span class="comment">// Shuffle the array</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (!<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>())) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a>(arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>(), arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/end.html">end</a>());<span class="comment">// Shuffle the array</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> arr;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a4c5bd73ffb6082f63dc57d8dcc76794f_cgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a4c5bd73ffb6082f63dc57d8dcc76794f_cgraph.svg" width="332" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -981,12 +987,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>function overload - when input array is of type <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a>, simply send the data content and the data length to the above function. </p>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                   {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">shell_sort</a>(arr-&gt;data(), arr-&gt;size());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">shell_sort</a>(arr-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a>(), arr-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af2c5b92cbfe73f63f6074c61b0a45331_cgraph.svg" width="310" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af2c5b92cbfe73f63f6074c61b0a45331_cgraph.svg" width="310" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1123,6 +1129,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="amax_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max_element.html">std::max_element</a></div><div class="ttdeci">T max_element(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a9d4eb6ea3c35540d804d451f1716622d"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">sorting::quicksort</a></div><div class="ttdeci">std::vector&lt; T &gt; quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)</div><div class="ttdef"><b>Definition:</b> quick_sort_3.cpp:119</div></div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a7e7f25f31c50523990437abf2ac3907e"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a></div><div class="ttdeci">int partition(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:37</div></div>
 <div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
 <div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
@@ -1137,6 +1144,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="arandom_shuffle_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/random_shuffle.html">std::random_shuffle</a></div><div class="ttdeci">T random_shuffle(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_a50b66a1c652291b9a346ec7342967178"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a></div><div class="ttdeci">void quickSort(int arr[], int low, int high)</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:63</div></div>
+<div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/data.html">std::vector::data</a></div><div class="ttdeci">T data(T... args)</div></div>
 <div class="ttc" id="anamespacesorting_html_af2c5b92cbfe73f63f6074c61b0a45331"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331">sorting::shell_sort</a></div><div class="ttdeci">void shell_sort(std::vector&lt; T &gt; *arr)</div><div class="ttdef"><b>Definition:</b> shell_sort2.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
