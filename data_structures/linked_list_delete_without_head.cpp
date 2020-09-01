@@ -59,11 +59,11 @@ Node *findNode(Node *head, int search){
 
 //To populate the linked list
 void insert(){
-  int i=0, n, value;
+  int n, value;
   Node *temp;
-  scanf("%d",&n);
+  std::cin>>&n;
   for(int i=0; i<n; i++){
-    scanf("%d", &value);
+    std::cin>>&value;
     if(i==0){
       head= new Node(value);
       temp=head;
@@ -81,7 +81,7 @@ void insert(){
 //To print the entire list
 void printList (Node *node){
   while(node!=nullptr){
-    printf("%d",node->data);
+    std::cout<<node->data;
     node=node->next;
   }
   std::cout<<endl;
@@ -99,7 +99,7 @@ void deleteNode(Node *m)
 int main(){
   int k;
   insert();
-  scanf("%d",&k);
+  cin>>&k;
   Node *del= findNode(head,k);
   if(del!=nullptr && del->next!=nullptr){
     deleteNode(del);
