@@ -41,16 +41,16 @@ nodes as 40, 60 and 30.
 struct Node{
   int data;
   Node *next;
-  Node(int x){
+  explicit Node(int x){
     data=x;
-    next=NULL;
+    next=nullptr;
   }
 } *head;
 
 //To search for the given node
 Node *findNode(Node *head, int search){
   Node *cur= head;
-  while(cur!=NULL){
+  while(cur!=nullptr){
     if(cur->data==search)
       break;
     cur=cur->next;
@@ -59,7 +59,7 @@ Node *findNode(Node *head, int search){
 
 //To populate the linked list
 void insert(){
-  int i, n, value;
+  int i=0, n, value;
   Node *temp;
   scanf("%d",&n);
   for(int i=0; i<n; i++){
@@ -73,14 +73,14 @@ void insert(){
       temp->next=new Node(value);
       temp=temp->next;
       new Node(value);
-      temp->next=NULL;
+      temp->next=nullptr;
     }
   }
 }
 
 //To print the entire list
 void printList (Node *node){
-  while(node!=NULL){
+  while(node!=nullptr){
     printf("%d",node->data);
     node=node->next;
   }
@@ -97,11 +97,11 @@ void deleteNode(Node *m)
 
 //Main function
 int main(){
-  int k, n, val;
+  int k;
   insert();
   scanf("%d",&k);
   Node *del= findNode(head,k);
-  if(del!=NULL && del->next!=NULL){
+  if(del!=nullptr && del->next!=nullptr){
     deleteNode(del);
   }
   printList(head);
