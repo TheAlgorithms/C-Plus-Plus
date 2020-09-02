@@ -9,12 +9,12 @@
 #include <cassert>
 
 /**
- *@brief Horspool's algorithm with strings
+ *@brief Horspool's algorithm with strings.
  */
 namespace strings {
 
 /**
- *@brief An implementation of Horspool's algorithm with functions
+ *@brief An implementation of Horspool's algorithm with functions.
  */
 namespace horspool {
 
