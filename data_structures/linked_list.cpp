@@ -1,9 +1,8 @@
 /**
  * @file
  * @brief Implementation of singly linked list algorithm.
- *
  * @details
- * The linked list is a form of container used for holding a sequence of
+ * The linked list is a data structure used for holding a sequence of
  * values, which can be added, removed and displayed.
  * ### Algorithm
  * Values can be added by iterating to the end of a list(by following
@@ -51,28 +50,34 @@ bool isDigit(const std::string &s) {
 /**
  * A link class containing a value and pointer to another link
  */
-class link {
- public:
-    explicit link(int v = 0, const std::shared_ptr<link> &s = nullptr);
-
-    std::shared_ptr<link> succ;  ///< pointer to the next value on the list
+struct link {
     int val;                     ///< value of the current link
+    std::shared_ptr<link> succ;  ///< pointer to the next value on the list
+    
+    /**
+     * Creates link with provided value and pointer to next link
+     * @param value is the integer stored in the link
+     * @param next is the pointer to the next link
+     */
+    explicit link(int value = 0, const std::shared_ptr<link> &next = nullptr)
+        :val(value), succ(next) {}
 };
-
-/**
- * constructor of the class link
- * @param v is used to initialize class member value
- * @param s is used to initilaize class member succ
- */
-link::link(int v, const std::shared_ptr<link> &s) : val(v), succ(s) {}
 
 /**
  * A list class containing a sequence of links
  */
 class list {
+ private:
+    std::shared_ptr<link> first;  ///< link before the actual first element
+    std::shared_ptr<link> last;   ///< last link on the list
  public:
+    /**
+     * List constructor. Initializes the first and last link.
+     */
     list() {
-        first = std::make_shared<link>(); // create a new 'list' instance as a shared pointer
+        // Initialize the first link
+        first = std::make_shared<link>();
+        // Initialize the last link with the first link
         last = first;
     }
 
@@ -84,10 +89,6 @@ class list {
     void display();
     std::shared_ptr<link> search(int find_elem);
     void reverse();
-
- private:
-    std::shared_ptr<link> first;  ///< link before the actual first element
-    std::shared_ptr<link> last;   ///< last link on the list
 };
 
 /**
@@ -186,7 +187,9 @@ std::shared_ptr<link> list::search(int find_elem) {
 }  // namespace data_structures
 
 /**
- * Main function
+ * Main function:
+ * Allows the user add and delete values from the list.
+ * Also allows user to search for and display values in the list.
  * @returns 0 on exit
  */
 int main() {
