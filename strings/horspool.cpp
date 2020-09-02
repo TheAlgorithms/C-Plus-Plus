@@ -15,7 +15,8 @@
 namespace strings {
 
 /**
- *@brief An implementation of Horspool's algorithm with functions.
+ * @namespace horspool
+ * @brief Functions for [Horspool's](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm) algorithm
  */
 namespace horspool {
 
