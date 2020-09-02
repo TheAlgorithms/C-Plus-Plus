@@ -42,12 +42,12 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype){
 bool horspool(const std::string &text, const std::string &prototype){
     std::unordered_map<char, int> shiftTable = findShiftTable(prototype); // Initialise shift table calling findShiftTable function
 
-    int i=prototype.size()-1; // Index that we shift in text to find the substring
+    int i= static_cast<int>(prototype.size()-1); // Index that we shift in text to find the substring
     while(i<text.size()){
         int j=i,k=0;
         bool flag=true;
 
-        for(int z=prototype.size()-1;z>=0 && flag;z--){ // Checking if all characters of substring are equal with all characters of string
+        for(int z=static_cast<int>(prototype.size()-1);z>=0 && flag;z--){ // Checking if all characters of substring are equal with all characters of string
             if(text[j] == prototype[z]){
                 k++;
                 j--;
