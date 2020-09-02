@@ -70,7 +70,8 @@ bool horspool(const std::string &text, const std::string &prototype){
 }
 
 /**
- * Main Function that contains test cases
+ * @brief Main Function that contains test cases
+ * @returns 0 on exit
  */
 int main(){
     assert(horspool("Hello World","World") == true);
