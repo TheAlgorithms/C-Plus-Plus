@@ -18,7 +18,6 @@ namespace strings {
  * @brief Functions for [Horspool's](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm) algorithm
  */
 namespace horspool {
-
 /**
  * A function that finds the shift table of the given prototype string that we need in Horpool's algorithm
  * @param prototype is the substring that we use to find shift table
