@@ -9,6 +9,16 @@
 #include <cassert>
 
 /**
+ * @namespace strings
+ * @brief Algorithms with strings
+ */
+namespace strings {
+/**
+ * @namespace horspool
+ * @brief Functions for [Horspool's](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm) algorithm
+ */
+namespace horspool {
+/**
  * A function that finds the shift table of the given prototype string that we need in Horpool's algorithm
  * @param prototype
  * @return Shift Table of Horspool's algorithm
