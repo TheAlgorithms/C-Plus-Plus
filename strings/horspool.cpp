@@ -9,7 +9,8 @@
 #include <cassert>
 
 /**
- *@brief Horspool's algorithm with strings.
+ * @namespace strings
+ * @brief Algorithms with strings
  */
 namespace strings {
 
