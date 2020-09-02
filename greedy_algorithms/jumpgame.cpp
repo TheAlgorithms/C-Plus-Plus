@@ -32,6 +32,10 @@ bool canJump(std::vector<int> nums) {
     return lastPos == 0;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main(){
     //Sample test case
     std::vector<int> num={4,3,1,0,5};
