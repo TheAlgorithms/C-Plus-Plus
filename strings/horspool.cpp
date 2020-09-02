@@ -19,7 +19,7 @@ namespace strings {
  */
 namespace horspool {
 /**
- * A function that finds the shift table of the given prototype string that we need in Horpool's algorithm
+ * A function that finds the shift table of the given prototype string that we need in Horpool's algorithm.
  * @param prototype is the substring that we use to find shift table
  * @return Shift Table of Horspool's algorithm
  */
