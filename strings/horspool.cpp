@@ -95,6 +95,7 @@ bool horspool(const std::string &text, const std::string &prototype) {
 
 /**
  * @brief Function with test cases for Horspool's algorithm
+ * @returns void
  */
 static void test(){
     assert(strings::horspool::horspool("Hello World","World") == true);
