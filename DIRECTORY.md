@@ -236,6 +236,7 @@
   * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/heap_sort.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/insertion_sort.cpp)
   * [Library Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/library_sort.cpp)
+  * [Merge Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/merge_insertion_sort.cpp)
   * [Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/merge_sort.cpp)
   * [Non Recursive Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/non_recursive_merge_sort.cpp)
   * [Numeric String Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/numeric_string_sort.cpp)
