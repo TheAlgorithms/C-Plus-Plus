@@ -51,9 +51,8 @@ bool isDigit(const std::string &s) {
  * A link class containing a value and pointer to another link
  */
 class link {
- private:
-    int pvalue;                   ///< value of the current link
  public:
+    int pvalue;                   ///< value of the current link
     std::shared_ptr<link> succ;  ///< pointer to the next value on the list
     
     /**
