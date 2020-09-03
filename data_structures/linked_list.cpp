@@ -52,7 +52,7 @@ bool isDigit(const std::string &s) {
  */
 class link {
  private:
-    int pvalue;                     ///< value of the current link
+    int pvalue;                   ///< value of the current link
  public:
     std::shared_ptr<link> succ;  ///< pointer to the next value on the list
     
@@ -69,7 +69,7 @@ class link {
      * @param value is the integer stored in the link
      * @param next is the pointer to the next link
      */
-    explicit link(int value = 0, const std::shared_ptr<link> &next = nullptr)
+    explicit link(int value = 0, const std::shared_ptr<link> next = nullptr)
         :pvalue(value), succ(next) {}
 };
 
