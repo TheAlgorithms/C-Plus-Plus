@@ -50,9 +50,19 @@ bool isDigit(const std::string &s) {
 /**
  * A link class containing a value and pointer to another link
  */
-struct link {
-    int val;                     ///< value of the current link
+class link {
+ private:
+    int pvalue;                     ///< value of the current link
+ public:
     std::shared_ptr<link> succ;  ///< pointer to the next value on the list
+    
+    /**
+     * function returns the integer value stored in the link.
+     * @returns the integer value stored in the link.
+     */
+    int val(){
+        return pvalue;
+    }
     
     /**
      * Creates link with provided value and pointer to next link
@@ -60,7 +70,7 @@ struct link {
      * @param next is the pointer to the next link
      */
     explicit link(int value = 0, const std::shared_ptr<link> &next = nullptr)
-        :val(value), succ(next) {}
+        :pvalue(value), succ(next) {}
 };
 
 /**
@@ -132,7 +142,7 @@ void list::erase(int old_elem) {
     }
     std::shared_ptr<link> t = first;
     std::shared_ptr<link> to_be_removed = nullptr;
-    while (t != last && t->succ->val != old_elem) {
+    while (t != last && t->succ->val() != old_elem) {
         t = t->succ;
     }
     if (t == last) {
@@ -158,7 +168,7 @@ void list::display() {
     }
     std::shared_ptr<link> t = first;
     while (t->succ != nullptr) {
-        std::cout << t->succ->val << "\t";
+        std::cout << t->succ->val() << "\t";
         t = t->succ;
     }
 }
@@ -173,7 +183,7 @@ std::shared_ptr<link> list::search(int find_elem) {
         return nullptr;
     }
     std::shared_ptr<link> t = first;
-    while (t != last && t->succ->val != find_elem) {
+    while (t != last && t->succ->val() != find_elem) {
         t = t->succ;
     }
     if (t == last) {
