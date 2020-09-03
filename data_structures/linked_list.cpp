@@ -53,24 +53,26 @@ bool isDigit(const std::string &s) {
 class link {
  private:
     int pvalue;                   ///< value of the current link
-    
+    std::shared_ptr<link> psucc;  ///< pointer to the next value on the list
+
  public:
-    std::shared_ptr<link> succ;  ///< pointer to the next value on the list
-    
     /**
      * function returns the integer value stored in the link.
      * @returns the integer value stored in the link.
      */
-    int val(){
-        return pvalue;
-    }
-    
+    int val() { return pvalue; }
+
+    /**
+     * function returns the pointer to next link
+     * @returns the pointer to the next link
+     * */
+    std::shared_ptr<link> succ() { return psucc; }
+
     /**
      * Creates link with provided value and pointer to next link
      * @param value is the integer stored in the link
      */
-    explicit link(int value = 0)
-        :pvalue(value), succ(nullptr){}
+    explicit link(int value = 0) : pvalue(value), psucc(nullptr) {}
 };
 
 /**
@@ -119,8 +121,8 @@ bool list::isEmpty() {
  * @param new_elem to be added to the end of the list
  */
 void list::push_back(int new_elem) {
-    last->succ = std::make_shared<link>(new_elem);
-    last = last->succ;
+    last->succ() = std::make_shared<link>(new_elem);
+    last = last->succ();
 }
 
 /**
@@ -129,8 +131,8 @@ void list::push_back(int new_elem) {
  */
 void list::push_front(int new_elem) {
     std::shared_ptr<link> t = std::make_shared<link>(new_elem);
-    t->succ = first->succ;
-    first->succ = t;
+    t->succ() = first->succ();
+    first->succ() = t;
 }
 
 /**
@@ -144,17 +146,17 @@ void list::erase(int old_elem) {
     }
     std::shared_ptr<link> t = first;
     std::shared_ptr<link> to_be_removed = nullptr;
-    while (t != last && t->succ->val() != old_elem) {
-        t = t->succ;
+    while (t != last && t->succ()->val() != old_elem) {
+        t = t->succ();
     }
     if (t == last) {
         std::cout << "Element not found\n";
         return;
     }
-    to_be_removed = t->succ;
-    t->succ = t->succ->succ;
+    to_be_removed = t->succ();
+    t->succ() = t->succ()->succ();
     to_be_removed.reset();
-    if (t->succ == nullptr) {
+    if (t->succ() == nullptr) {
         last = t;
     }
 }
@@ -169,9 +171,9 @@ void list::display() {
         return;
     }
     std::shared_ptr<link> t = first;
-    while (t->succ != nullptr) {
-        std::cout << t->succ->val() << "\t";
-        t = t->succ;
+    while (t->succ() != nullptr) {
+        std::cout << t->succ()->val() << "\t";
+        t = t->succ();
     }
 }
 
@@ -185,15 +187,15 @@ std::shared_ptr<link> list::search(int find_elem) {
         return nullptr;
     }
     std::shared_ptr<link> t = first;
-    while (t != last && t->succ->val() != find_elem) {
-        t = t->succ;
+    while (t != last && t->succ()->val() != find_elem) {
+        t = t->succ();
     }
     if (t == last) {
         std::cout << "Element not found\n";
         return nullptr;
     }
     std::cout << "Element was found\n";
-    return t->succ;
+    return t->succ();
 }
 }  // namespace linked_list
 }  // namespace data_structures
@@ -244,7 +246,8 @@ int main() {
                 std::cin >> s;
                 if (data_structures::linked_list::isDigit(s)) {
                     x = std::stoi(s);
-                   std::shared_ptr<data_structures::linked_list::link> found = l.search(x);
+                    std::shared_ptr<data_structures::linked_list::link> found =
+                        l.search(x);
                 } else {
                     std::cout << "Wrong Input!\n";
                 }
