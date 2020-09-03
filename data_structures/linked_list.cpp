@@ -69,7 +69,7 @@ class link {
      * @param value is the integer stored in the link
      * @param next is the pointer to the next link
      */
-    explicit link(int value = 0, std::shared_ptr<link>& next = nullptr)
+    explicit link(int value = 0, std::shared_ptr<link> next = nullptr)
         :pvalue(value), succ(next) {}
 };
 
