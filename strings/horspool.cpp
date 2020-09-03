@@ -50,7 +50,7 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
 }
 
 /**
- * A function that implements Horspool's algorithm
+ * A function that implements Horspool's algorithm.
  * @param text is the string that we are searching if there is a substring
  * @param prototype is the substring that we are searching in text
  * @returns true if text string contains prototype string
