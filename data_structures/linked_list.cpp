@@ -126,7 +126,9 @@ void list::push_back(int new_elem) {
  * @param new_elem to be added to front of the list
  */
 void list::push_front(int new_elem) {
-    first->succ = std::make_shared<link>(new_elem, first->succ);
+    std::shared_ptr<link> t = std::make_shared<link>(new_elem);
+    t->succ = first->succ;
+    first->succ = t;
 }
 
 /**
