@@ -37,7 +37,7 @@ namespace linked_list {
  * @returns true if there are only only digits present in the string
  * @returns false if any other character is found
  */
-bool isDigit(const std::string &s) {
+bool isDigit(const std::string& s) {
     // function statements here
     for (char i : s) {
         if (!isdigit(i)) {
@@ -66,7 +66,7 @@ class link {
      * function returns the pointer to next link
      * @returns the pointer to the next link
      * */
-    std::shared_ptr<link> succ() { return psucc; }
+    std::shared_ptr<link>& succ() { return psucc; }
 
     /**
      * Creates link with provided value and pointer to next link
@@ -90,7 +90,7 @@ class list {
         // Initialize the first link
         first = std::make_shared<link>();
         // Initialize the last link with the first link
-        last = first;
+        last = nullptr;
     }
 
     bool isEmpty();
@@ -109,7 +109,7 @@ class list {
  * @returns false if list is not empty
  */
 bool list::isEmpty() {
-    if (first == last) {
+    if (last == nullptr) {
         return true;
     } else {
         return false;
@@ -121,8 +121,13 @@ bool list::isEmpty() {
  * @param new_elem to be added to the end of the list
  */
 void list::push_back(int new_elem) {
-    last->succ() = std::make_shared<link>(new_elem);
-    last = last->succ();
+    if (isEmpty()) {
+        first->succ() = std::make_shared<link>(new_elem);
+        last = first->succ();
+    } else {
+        last->succ() = std::make_shared<link>(new_elem);
+        last = last->succ();
+    }
 }
 
 /**
@@ -130,9 +135,14 @@ void list::push_back(int new_elem) {
  * @param new_elem to be added to front of the list
  */
 void list::push_front(int new_elem) {
-    std::shared_ptr<link> t = std::make_shared<link>(new_elem);
-    t->succ() = first->succ();
-    first->succ() = t;
+    if (isEmpty()) {
+        first->succ() = std::make_shared<link>(new_elem);
+        last = first->succ();
+    } else {
+        std::shared_ptr<link> t = std::make_shared<link>(new_elem);
+        t->succ() = first->succ();
+        first->succ() = t;
+    }
 }
 
 /**
@@ -157,7 +167,7 @@ void list::erase(int old_elem) {
     t->succ() = t->succ()->succ();
     to_be_removed.reset();
     if (t->succ() == nullptr) {
-        last = t;
+        last = nullptr;
     }
 }
 
