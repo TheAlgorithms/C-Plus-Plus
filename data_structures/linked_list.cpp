@@ -68,9 +68,7 @@ class link {
      * @param value is the integer stored in the link
      */
     explicit link(int value = 0)
-        :pvalue(value){
-            succ = nullptr;
-        }
+        :pvalue(value), succ(nullptr){}
 };
 
 /**
