@@ -6,6 +6,7 @@ var dir_bb1b521853a9c46347182a9d10420771 =
     [ "gnome_sort.cpp", "d2/d21/gnome__sort_8cpp.html", "d2/d21/gnome__sort_8cpp" ],
     [ "heap_sort.cpp", "d2/d52/heap__sort_8cpp.html", "d2/d52/heap__sort_8cpp" ],
     [ "insertion_sort.cpp", "dd/d0d/insertion__sort_8cpp.html", "dd/d0d/insertion__sort_8cpp" ],
+    [ "merge_insertion_sort.cpp", "de/d7b/merge__insertion__sort_8cpp.html", "de/d7b/merge__insertion__sort_8cpp" ],
     [ "merge_sort.cpp", "d5/df4/merge__sort_8cpp.html", "d5/df4/merge__sort_8cpp" ],
     [ "non_recursive_merge_sort.cpp", "d0/db6/non__recursive__merge__sort_8cpp.html", "d0/db6/non__recursive__merge__sort_8cpp" ],
     [ "pigeonhole_sort.cpp", "dd/da8/pigeonhole__sort_8cpp.html", "dd/da8/pigeonhole__sort_8cpp" ],

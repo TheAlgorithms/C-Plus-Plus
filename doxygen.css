@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.8.19 */
+/* The standard CSS for doxygen 1.8.20 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -1358,10 +1358,12 @@ dl.citelist dt {
         font-weight:bold;
         margin-right:10px;
         padding:5px;
+        text-align:right;
+        width:52px;
 }
 
 dl.citelist dd {
-        margin:2px 0;
+        margin:2px 0 2px 72px;
         padding:5px 0;
 }
 
