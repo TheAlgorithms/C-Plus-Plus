@@ -10,6 +10,7 @@ var namespaces_dup =
     [ "geometry", "d5/d5f/namespacegeometry.html", null ],
     [ "graph", "df/dce/namespacegraph.html", null ],
     [ "heavy_light_decomposition", "db/d6f/namespaceheavy__light__decomposition.html", null ],
+    [ "horspool", "d5/d02/namespacehorspool.html", null ],
     [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "jarvis", "d5/da7/namespacejarvis.html", null ],
     [ "layers", "d5/d2c/namespacelayers.html", null ],
@@ -31,6 +32,7 @@ var namespaces_dup =
     [ "statistics", "d2/dcf/namespacestatistics.html", null ],
     [ "std", "d8/dcc/namespacestd.html", null ],
     [ "string_search", "d9/d03/namespacestring__search.html", null ],
+    [ "strings", "df/dcb/namespacestrings.html", null ],
     [ "util_functions", "d3/d17/namespaceutil__functions.html", null ],
     [ "vigenere", "d6/da2/namespacevigenere.html", null ],
     [ "XOR", "d7/d47/namespace_x_o_r.html", null ]
