@@ -6,10 +6,6 @@
  * This solution takes in input as a vector and output as a boolean to check if you can reach the last position.
  * @author [Rakshaa Viswanathan](https://github.com/rakshaa2000)
 */
-//Jump Game:
-/*Given an array of non-negative integers, you are initially positioned at the first index of the array.
-Each element in the array represents your maximum jump length at that position.
-Determine if you are able to reach the last index.*/
 
 #include <vector>
 #include<iostream>
@@ -22,6 +18,11 @@ Determine if you are able to reach the last index.*/
  *If yes, then that is the last position you can reach starting from the back.
  *After the end of the loop, if we reach the lastPos as 0, then the destination can be reached from the start position.
 */
+ /**
+ * This function implements the above algorithm
+ * @param vector of nums containing the maximum jump (in steps) from that index
+ * @return returns bool value whether final index can be reached or not
+ */  
 bool canJump(std::vector<int> nums) {
     auto lastPos = nums.size() - 1;
     for (auto i = nums.size() - 1; i >= 0; i--) {
