@@ -206,7 +206,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <dl class="section warning"><dt>Warning</dt><dd>dynamic memory allocated to <code>n</code> never gets freed. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000013">Todo:</a></b></dt><dd>fix memory leak </dd></dl>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          {  <span class="comment">// Construct hash table</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p, n;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d8/d10/structlist.html">link</a> p, n;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> index;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    n = (<a class="code" href="../../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6">link</a>)<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="../../d5/da1/structnode.html">node</a>));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    n-&gt;key = key;</div>
@@ -284,7 +284,7 @@ Here is the call graph for this function:</div>
 <dd>
 -1 </dd></dl>
 <div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                       {  <span class="comment">// Hash lookup function</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> pointer;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d8/d10/structlist.html">link</a> pointer;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> index;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    *counter = 0;</div>
@@ -295,11 +295,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span> (pointer != NULL) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        counter[0]++;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; pointer-&gt;key &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (pointer-&gt;key == key)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;data[&quot;</span> &lt;&lt; pointer-&gt;<a class="code" href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">key</a> &lt;&lt; <span class="stringliteral">&quot;]:&quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (pointer-&gt;<a class="code" href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">key</a> == key)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            pointer = pointer-&gt;next;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            pointer = pointer-&gt;<a class="code" href="../../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f">next</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> 0;</div>
@@ -330,7 +330,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>main function </p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;           {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">link</a> p;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d8/d10/structlist.html">link</a> p;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> key, index, i, counter;  <span class="comment">// Key is the value to be found</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    index = 0;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
@@ -347,9 +347,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">while</span> (p != NULL) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;please int key:&quot;</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (p-&gt;key &gt; 0)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; p-&gt;key &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            p = p-&gt;next;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (p-&gt;<a class="code" href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">key</a> &gt; 0)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; p-&gt;<a class="code" href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">key</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            p = p-&gt;<a class="code" href="../../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f">next</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
@@ -382,18 +382,20 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ahash__search_8cpp_html_a36ea13c16028f18ef2d5ff47f3fda7a2"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a36ea13c16028f18ef2d5ff47f3fda7a2">hash_search</a></div><div class="ttdeci">int hash_search(int key, int *counter)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:76</div></div>
-<div class="ttc" id="alist_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a77c722016053a1d484aa177ce205b367"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a77c722016053a1d484aa177ce205b367">HASHMAX</a></div><div class="ttdeci">#define HASHMAX</div><div class="ttdoc">Determines the length of the hash table.</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:22</div></div>
 <div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:13</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a392fb874e547e582e9c66a08a1f23326"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a392fb874e547e582e9c66a08a1f23326">MAX</a></div><div class="ttdeci">#define MAX</div><div class="ttdoc">Determines how much data.</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:21</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:45</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_ad6fcd983304f85afa199d97a9b0ca9f6"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6">link</a></div><div class="ttdeci">struct list * link</div><div class="ttdoc">pointer to nodes</div></div>
+<div class="ttc" id="astructlist_html_aaab2e33bc1ca6f44e72239bfb58f100c"><div class="ttname"><a href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">list::key</a></div><div class="ttdeci">int key</div><div class="ttdoc">key value for node</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:30</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_af413b1740073db54796642b0ab814d6d"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a></div><div class="ttdeci">node hashtab[HASHMAX]</div><div class="ttdoc">array of nodes</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:35</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a6e1a77282bc65ad359d753d25df23243"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a></div><div class="ttdeci">int data[MAX]</div><div class="ttdoc">test data</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:24</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_ad0831425f1389166a9518f422d0c6ec5"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#ad0831425f1389166a9518f422d0c6ec5">create_list</a></div><div class="ttdeci">void create_list(int key)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:55</div></div>
 <div class="ttc" id="amalloc_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">std::malloc</a></div><div class="ttdeci">T malloc(T... args)</div></div>
+<div class="ttc" id="astructlist_html_a1900fe79e875e2838625b2eb60837f8f"><div class="ttname"><a href="../../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f">list::next</a></div><div class="ttdeci">struct list * next</div><div class="ttdoc">pointer to next link in the chain</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:31</div></div>
+<div class="ttc" id="astructlist_html"><div class="ttname"><a href="../../d8/d10/structlist.html">list</a></div><div class="ttdef"><b>Definition:</b> list_array.cpp:8</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
