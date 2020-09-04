@@ -4,7 +4,7 @@
  * \details
  * This algorithm is a greedy algorithm.
  * This solution takes in input as a vector and output as a boolean to check if you can reach the last position.
- * @author rakshaa2000
+ * @author [Rakshaa Viswanathan](https://github.com/rakshaa2000)
 */
 //Jump Game:
 /*Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -32,6 +32,10 @@ bool canJump(std::vector<int> nums) {
     return lastPos == 0;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main(){
     //Sample test case
     std::vector<int> num={4,3,1,0,5};
