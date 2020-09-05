@@ -184,6 +184,7 @@
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
   * [Fast Integer Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_integer_input.cpp)
+  * [Freivalds Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/freivalds_algorithm.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
