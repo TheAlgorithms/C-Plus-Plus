@@ -37,6 +37,7 @@ bool canJump(std::vector<int> nums) {
 
 /**
  * @brief Function to test above algorithm
+ * @returns void
  */
 void test(){
   //Test 1
