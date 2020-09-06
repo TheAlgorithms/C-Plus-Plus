@@ -13,15 +13,6 @@
 #include <cassert>   //   for assert
 #include <iostream>  //   for io operations
 
-
-/**
- * Freivald's algorithm
- * The function will will check AB=C
- * @param A matrix A
- * @param B matrix B
- * @param C resultant matrix C
- * @returns boolean value
- */
 /**
  * @namespace others
  * @brief Other algorithms
@@ -31,16 +22,17 @@ namespace others {
  * @namespace freivalds
  * @brief Functions for [Freivalds']
  * (https://en.wikipedia.org/wiki/Freivalds%27_algorithm) algorithm
- * @details Error Analysis: If {\displaystyle A\times B=C}{\displaystyle A\times B=C},
- * then the algorithm always returns "Yes". If {\displaystyle A\times B\neq C}A
- * \times B \neq C, then the probability that the algorithm returns "Yes" is less
- * than or equal to one half. This is called one-sided error. By iterating the
- * algorithm k times and returning "Yes" only if all iterations yield "Yes", a
- * runtime of O(kn^{2})and error probability of <= 1/(2^k) is achieve
  */
 namespace freivalds {
+/**
+ * The function will check AB=C by applying Freidvald's algorithm
+ * @param A square matrix A
+ * @param B square matrix B
+ * @param C resultant square matrix C
+ * @param N dimension of square matrix NxN
+ * @returns boolean value
+ */
 template <std::size_t N>
-
 bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
                      std::array<std::array<double, N>, N> B,
                      std::array<std::array<double, N>, N> C) {
