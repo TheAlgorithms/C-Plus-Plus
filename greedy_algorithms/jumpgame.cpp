@@ -21,7 +21,7 @@
  /**
  * @brief This function implements the above algorithm
  * @param array of numbers containing the maximum jump (in steps) from that index
- * @return returns bool value whether final index can be reached or not
+ * @returns bool value whether final index can be reached or not
  */  
 bool canJump(std::vector<int> nums) {
     auto lastPos = nums.size() - 1;
