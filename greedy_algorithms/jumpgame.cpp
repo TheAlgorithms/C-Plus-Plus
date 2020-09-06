@@ -14,7 +14,7 @@
 */
 
 #include <vector>
-#include<iostream>
+#include <iostream>
 #include <cassert>
 
 
