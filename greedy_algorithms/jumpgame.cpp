@@ -47,7 +47,7 @@ static void test(){
     std::cout<<i<<" ";
   }
   std::cout<<"Output: true"<<std::endl;
-  //Test 2
+  // Test 2
   std::vector<int> num2={3,2,1,0,4};
   assert(canJump(num2)==false);
   std::cout<<"Input: ";
