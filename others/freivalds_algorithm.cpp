@@ -140,7 +140,7 @@ static void test_1() {
 
     std::array<std::array<double, 2>, 2> C = {{{5, 4}, {5, 9}}};
 
-    bool result = others::freivald::CoppersmithAlgo(A, B, C);
+    bool result = others::freivalds::CoppersmithAlgo(A, B, C);
     std::cout << result << "\n";
 
     assert(result == true);
@@ -159,7 +159,7 @@ static void test_2() {
 
     std::array<std::array<double, 2>, 2> C = {{{5, 4}, {5, 9}}};
 
-    bool result = others::freivald::CoppersmithAlgo(A, B, C);
+    bool result = others::freivalds::CoppersmithAlgo(A, B, C);
     std::cout << result << "\n";
 
     assert(result == false);
