@@ -166,7 +166,8 @@ static void test_2() {
 }
 
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     test_1();
