@@ -39,7 +39,7 @@ bool canJump(std::vector<int> nums) {
  * @returns void
  */
 static void test(){
-  //Test 1
+  // Test 1
   std::vector<int> num1={4,3,1,0,5};
   assert(canJump(num1)==true);
   std::cout<<"Input: ";
