@@ -23,11 +23,17 @@
  */
 namespace range_queries {
 /**
+ * @namespace sparse_table
+ * @brief Range queries using sparse-tables
+ */
+ namespace sparse_table {
+/**
  * This function precomputes intial log table for further use.
  * @param n value of the size of the input array
  * @return corresponding vector of the log table
  */
-std::vector<int> computeLogs(int n) {
+template<typename T>
+std::vector<T> computeLogs(size_t n) {
     std::vector<int> logs(n+5);
     logs[1] = 0;
     for (int i = 2 ; i < n ; i++) {
@@ -43,8 +49,10 @@ std::vector<int> computeLogs(int n) {
  * @param logs array of the log table
  * @return created sparse table data structure
  */
-std::vector<std::vector<int> > buildTable(int n, const std::vector<int>& A, const std::vector<int>& logs) {
-    std::vector<std::vector<int> > table(20, std::vector<int>(n+5, 0));
+template<typename T>
+std::vector<std::vector<T> > buildTable(const std::vector<T>& A, const std::vector<T>& logs) {
+    n = A.size();
+    std::vector<std::vector<T> > table(20, std::vector<T>(n+5, 0));
     int curLen = 0;
     for (int i = 0 ; i <= logs[n] ; i++) {
         curLen = 1 << i;
