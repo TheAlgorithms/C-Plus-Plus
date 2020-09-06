@@ -9,9 +9,10 @@
  *
  * The time Complexity of the algorithm is O(n^{2}).
  */
-#include <array>     //for std::array
-#include <cassert>   //for assert
-#include <iostream>  //for io operations
+#include <array>     //   for std::array
+#include <cassert>   //   for assert
+#include <iostream>  //   for io operations
+
 
 /**
  * Freivald's algorithm
@@ -21,7 +22,19 @@
  * @param C resultant matrix C
  * @returns boolean value
  */
+/**
+ * @namespace others
+ * @brief Other algorithms
+ */
+namespace others {
+/**
+ * @namespace freivalds
+ * @brief Functions for [Freivalds']
+ * (https://en.wikipedia.org/wiki/Freivalds%27_algorithm) algorithm
+ */
+namespace freivalds {
 template <std::size_t N>
+
 bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
                      std::array<std::array<double, N>, N> B,
                      std::array<std::array<double, N>, N> C) {
@@ -104,6 +117,9 @@ bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
     }
     return flag;
 }
+}  // namespace freivald
+}  // namespace others
+
 /**
  * Error Analysis: If {\displaystyle A\times B=C}{\displaystyle A\times B=C},
  *then the algorithm always returns "Yes". If {\displaystyle A\times B\neq C}A
@@ -119,7 +135,6 @@ bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
  * B = [[5,4],[5,9]]
  * @returns none
  */
-
 static void test_1() {
     std::array<std::array<double, 2>, 2> A = {{{1, 0}, {2, 1}}};
 
