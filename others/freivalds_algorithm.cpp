@@ -31,6 +31,12 @@ namespace others {
  * @namespace freivalds
  * @brief Functions for [Freivalds']
  * (https://en.wikipedia.org/wiki/Freivalds%27_algorithm) algorithm
+ * @details Error Analysis: If {\displaystyle A\times B=C}{\displaystyle A\times B=C},
+ * then the algorithm always returns "Yes". If {\displaystyle A\times B\neq C}A
+ * \times B \neq C, then the probability that the algorithm returns "Yes" is less
+ * than or equal to one half. This is called one-sided error. By iterating the
+ * algorithm k times and returning "Yes" only if all iterations yield "Yes", a
+ * runtime of O(kn^{2})and error probability of <= 1/(2^k) is achieve
  */
 namespace freivalds {
 template <std::size_t N>
@@ -120,14 +126,6 @@ bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
 }  // namespace freivald
 }  // namespace others
 
-/**
- * Error Analysis: If {\displaystyle A\times B=C}{\displaystyle A\times B=C},
- *then the algorithm always returns "Yes". If {\displaystyle A\times B\neq C}A
- *\times B \neq C, then the probability that the algorithm returns "Yes" is less
- *than or equal to one half. This is called one-sided error. By iterating the
- *algorithm k times and returning "Yes" only if all iterations yield "Yes", a
- *runtime of O(kn^{2})and error probability of <= 1/(2^k) is achieve
- */
 
 /**
  * Test function 1 with A = [[1,0],[2,1]]
@@ -142,7 +140,7 @@ static void test_1() {
 
     std::array<std::array<double, 2>, 2> C = {{{5, 4}, {5, 9}}};
 
-    bool result = CoppersmithAlgo(A, B, C);
+    bool result = others::freivald::CoppersmithAlgo(A, B, C);
     std::cout << result << "\n";
 
     assert(result == true);
@@ -161,7 +159,7 @@ static void test_2() {
 
     std::array<std::array<double, 2>, 2> C = {{{5, 4}, {5, 9}}};
 
-    bool result = CoppersmithAlgo(A, B, C);
+    bool result = others::freivald::CoppersmithAlgo(A, B, C);
     std::cout << result << "\n";
 
     assert(result == false);
