@@ -25,11 +25,11 @@ namespace others {
  */
 namespace freivalds {
 /**
- * The function will check AB=C by applying Freidvald's algorithm
+ * The function will check AB=C by applying Freidvald's algorithm 
+ * @tparam N dimension of square matrix NxN
  * @param A square matrix A
  * @param B square matrix B
  * @param C resultant square matrix C
- * @param N dimension of square matrix NxN
  * @returns boolean value
  */
 template <std::size_t N>
