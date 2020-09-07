@@ -63,7 +63,7 @@ namespace graph {
  * an undirected graph can be represented simply by storing each each as
  * two directed edges in both directions.
  */
-typedef std::vector<std::vector<int> > adjacency_list;
+using adjacency_list = std::vector<std::vector<int>>;
 
 /**
  * \brief
