@@ -7,7 +7,8 @@
  * Given three n × n matrices A, B, and
  * C, a general problem is to verify whether AB=C
  *
- * The time Complexity of the algorithm is O(n^{2}).
+ * It is a randomised algorithm with the probability of success 1-1/2^(m) i.e.
+ * close to 1 The time Complexity of the algorithm is O(n^{2}).
  */
 #include <array>     //   for std::array
 #include <cassert>   //   for assert
@@ -25,7 +26,7 @@ namespace others {
  */
 namespace freivalds {
 /**
- * The function will check AB=C by applying Freidvald's algorithm 
+ * The function will check AB=C by applying Freidvald's algorithm
  * @tparam N dimension of square matrix NxN
  * @param A square matrix A
  * @param B square matrix B
@@ -33,9 +34,9 @@ namespace freivalds {
  * @returns boolean value
  */
 template <std::size_t N>
-bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
-                     std::array<std::array<double, N>, N> B,
-                     std::array<std::array<double, N>, N> C) {
+bool CoppersmithAlgo(const std::array<std::array<double, N>, N> A,
+                     const std::array<std::array<double, N>, N> B,
+                     const std::array<std::array<double, N>, N> C) {
     // Printing matrix A
     std::cout << "\nThe first matrix is:\n ";
     for (int i = 0; i < N; i++) {
@@ -115,9 +116,8 @@ bool CoppersmithAlgo(std::array<std::array<double, N>, N> A,
     }
     return flag;
 }
-}  // namespace freivald
+}  // namespace freivalds
 }  // namespace others
-
 
 /**
  * Test function 1 with A = [[1,0],[2,1]]
