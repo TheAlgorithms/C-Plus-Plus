@@ -1,5 +1,11 @@
 var NAVTREEINDEX0 =
 {
+"":[7,0,1,0],
+"":[7,0,3,0],
+"":[7,0,8,0],
+"":[7,0,4,0],
+"":[7,0,6,0],
+"":[7,0,6,0,0],
 "annotated.html":[7,0],
 "classes.html":[7,1],
 "d0/d01/smallest__circle_8cpp.html":[8,0,11,11],
@@ -243,11 +249,5 @@ var NAVTREEINDEX0 =
 "d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,11,12,0],
 "d3/d24/qr__decomposition_8cpp.html":[8,0,10,13],
 "d3/d24/qr__decomposition_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,10,13,0],
-"d3/d26/binary__search__tree_8cpp.html":[8,0,2,2],
-"d3/d26/binary__search__tree_8cpp.html#a13dac1586cbb95ebfd63dc47aeeff0e1":[8,0,2,2,9],
-"d3/d26/binary__search__tree_8cpp.html#a1ca1e6aad9a9e45c1d21a7c8f61bccc3":[8,0,2,2,4],
-"d3/d26/binary__search__tree_8cpp.html#a4392f2f3d0680befc1a6db07d94d6c5d":[8,0,2,2,11],
-"d3/d26/binary__search__tree_8cpp.html#a4a1aaff44d949318d93231e1fa5c7863":[8,0,2,2,5],
-"d3/d26/binary__search__tree_8cpp.html#a521ea77f195e491750e602292c6dc335":[8,0,2,2,7],
-"d3/d26/binary__search__tree_8cpp.html#a9e98619e1c6cea9d6c56849a16ecc416":[8,0,2,2,10]
+"d3/d26/binary__search__tree_8cpp.html":[8,0,2,2]
 };
