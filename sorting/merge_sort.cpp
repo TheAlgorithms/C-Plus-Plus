@@ -110,7 +110,7 @@ int main() {
     }
     mergeSort(arr, 0, size - 1);
     std::cout << "Sorted array : ";
-    show(arr, size - 1);
+    show(arr, size);
     delete[] arr;
     return 0;
 }
