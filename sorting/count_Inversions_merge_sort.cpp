@@ -29,6 +29,7 @@
  */
 
 #include <iostream>
+#include <array>
 
 namespace inversion {
 
@@ -36,8 +37,8 @@ namespace inversion {
  * mergeSort()
  * merge()
  */
-int mergeSort(int arr[], int temp[], int left, int right);
-int merge(int arr[], int temp[], int left, int mid, int right);
+int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
+int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right);
 
 /**
  * Funtion countInversion() returns the number of inversion
@@ -53,10 +54,10 @@ int merge(int arr[], int temp[], int left, int mid, int right);
  * @param array_size    - number of elementa in the array
  * 
  */
-int countInversion(int arr[], int array_size)
+int countInversion(std::array<int, 100> &arr)
 {
-    int temp[array_size];
-    return mergeSort(arr, temp, 0, array_size);
+    std::array<int, arr.size() > temp;
+    return mergeSort(arr, temp, 0, arr.size() -1);
 }
 
 /**
@@ -73,9 +74,9 @@ int countInversion(int arr[], int array_size)
  * @param right - upper bound of array
  * 
  */
-int mergeSort(int arr[], int temp[], int left, int right)
+int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right)
 {
-    int mid, inv_count = 0;
+    int mid = 0, inv_count = 0;
     if(right>left)
     {
         // midpoint to split the array
@@ -106,7 +107,7 @@ int mergeSort(int arr[], int temp[], int left, int right)
  * @param right  upper bound of arr[] and right-sub-array
  * 
  */
-int merge(int arr[], int temp[], int left, int mid, int right)
+int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right)
 {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
@@ -138,7 +139,7 @@ int merge(int arr[], int temp[], int left, int mid, int right)
     
 } // namespace inversion
 
-using namespace inversion::countInversion;
+using namespace inversion;
 
 /**
  * UTILITY function to print array.
@@ -146,7 +147,7 @@ using namespace inversion::countInversion;
  * @param array_size    size of input array arr[]
  * 
  */
-void show(int arr[], int array_size)
+void show(std::array<int, 100> &arr, const int array_size)
 {   
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
@@ -155,38 +156,23 @@ void show(int arr[], int array_size)
     std::cout << "\n";
 }
 
+// Driver code
 int main(void)
 {
- /**   
-    // Enter your own array
-    int size;
-    std::cout << "Enter number of elements: ";
-    std::cin >> size;
-
-    // Declare the array
-    int *arr = new int[size];
-
-    std::cout << "Enter elements --> \n";
-    for( int i=0; i<size; i++)
-    {
-        std::cout << "Element "<< (i+1) << ": ";
-        std::cin >> arr[i];
-    }
-*/
-    size = 100;
-    arr[] = {100, 99, 98, 97, 96, 95, 94, 93, 92, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    const int size = 100;
+    std::array<int, size> arr = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
     std::cout << "\n";
     show(arr, size);
+    std::cout << "\n";
 
     // Counting inversions
-    std::cout << "\nThe number of inversions: "<< countInversion(arr, size) << "\n";
+    std::cout << "\nThe number of inversions: "<< countInversion(arr) << "\n";
 
     // Output sorted array
     std::cout << "\nSorted array -->  \n";
     show(arr, size);
 
-    delete[] arr;
     return 0;
 }
 /** @rakshitraj */
