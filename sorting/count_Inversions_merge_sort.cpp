@@ -37,8 +37,8 @@ namespace inversion {
  * mergeSort()
  * merge()
  */
-int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
-int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right);
+int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right);
+int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right);
 
 /**
  * Funtion countInversion() returns the number of inversion
@@ -54,7 +54,7 @@ int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int m
  * @param array_size    - number of elementa in the array
  * 
  */
-int countInversion(std::array<int, 100> &arr)
+int countInversion(std::array<int, 100> *arr)
 {
     std::array<int, arr.size() > temp;
     return mergeSort(arr, temp, 0, arr.size() -1);
@@ -74,7 +74,7 @@ int countInversion(std::array<int, 100> &arr)
  * @param right - upper bound of array
  * 
  */
-int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right)
+int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right)
 {
     int mid = 0, inv_count = 0;
     if(right>left)
@@ -107,7 +107,7 @@ int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, i
  * @param right  upper bound of arr[] and right-sub-array
  * 
  */
-int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right)
+int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right)
 {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
@@ -147,7 +147,7 @@ using namespace inversion;
  * @param array_size    size of input array arr[]
  * 
  */
-void show(std::array<int, 100> &arr, const int array_size)
+void show(std::array<int, 100> *arr, const int array_size)
 {   
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
