@@ -36,21 +36,13 @@
 
 namespace inversion {
 
-/** 
- * Funtion prototype for
- * mergeSort()
- * merge()
- * countInversion()
- * show()
- *
- */
 int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
 int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right);
 int countInversion(std::array<int, 100> &arr);
 void show(std::array<int, 100> &arr, const int array_size);
     
 /**
- * Funtion countInversion() returns the number of inversion
+ * Funtion countInversion() returns the number of inversion 
  * present in the input array. Inversions are an estimate of
  * how close or far off the array is to being sorted.
  * 
@@ -66,7 +58,7 @@ void show(std::array<int, 100> &arr, const int array_size);
  */
 int countInversion(std::array<int, 100> &arr)
 {
-    std::array<int, arr.size() > temp;
+    std::array<int, arr.size() > temp = {};
     return mergeSort(arr, temp, 0, arr.size() -1);
 }
 
@@ -140,9 +132,13 @@ int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int m
     } 
     // Add remaining elements from the larger subarray to the end of temp
     while( i <= mid)
+    {
         temp[k++] = arr[i++];
+    }
     while( j <= right)
+    {
         temp[k++] = arr[j++];
+    }
     // Copy temp[] to arr[]
     for( k=left; k<=right; k++)
     {
