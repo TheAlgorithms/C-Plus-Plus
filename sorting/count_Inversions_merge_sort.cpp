@@ -44,10 +44,10 @@ namespace inversion {
  * show()
  *
  */
-int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right);
-int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right);
-int countInversion(std::array<int, 100> *arr);
-void show(std::array<int, 100> *arr, const int array_size);
+int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
+int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right);
+int countInversion(std::array<int, 100> &arr);
+void show(std::array<int, 100> &arr, const int array_size);
     
 /**
  * Funtion countInversion() returns the number of inversion
@@ -64,7 +64,7 @@ void show(std::array<int, 100> *arr, const int array_size);
  * @returns total number of inversions, int
  * 
  */
-int countInversion(std::array<int, 100> *arr)
+int countInversion(std::array<int, 100> &arr)
 {
     std::array<int, arr.size() > temp;
     return mergeSort(arr, temp, 0, arr.size() -1);
@@ -85,7 +85,7 @@ int countInversion(std::array<int, 100> *arr)
  * @returns  total number of inversions to calling function, int
  * 
  */
-int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right)
+int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right)
 {
     int mid = 0, inv_count = 0;
     if(right>left)
@@ -121,7 +121,7 @@ int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, i
  * @returns number of inversions per merge step, int
  * 
  */
-int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right)
+int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right)
 {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
@@ -157,7 +157,7 @@ int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int m
  * @param array_size    size of input array arr[]
  * @returns void
  */
-void show(std::array<int, 100> *arr, const int array_size)
+void show(std::array<int, 100> &arr, const int array_size)
 {   
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
@@ -168,6 +168,7 @@ void show(std::array<int, 100> *arr, const int array_size)
 } // namespace inversion
 
 using inversion::countInversion ;
+using inversion::show ;
 
 /*
  * @brief Main function
