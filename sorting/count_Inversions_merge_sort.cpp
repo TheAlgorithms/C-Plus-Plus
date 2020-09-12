@@ -36,13 +36,19 @@
 
 namespace inversion {
 
-/** Funtion prototype for
+/** 
+ * Funtion prototype for
  * mergeSort()
  * merge()
+ * countInversion()
+ * show()
+ *
  */
 int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right);
 int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right);
-
+int countInversion(std::array<int, 100> *arr);
+void show(std::array<int, 100> *arr, const int array_size);
+    
 /**
  * Funtion countInversion() returns the number of inversion
  * present in the input array. Inversions are an estimate of
@@ -55,6 +61,7 @@ int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int m
  * 
  * @param arr   - array, input for counting inversions in
  * @param array_size    - number of elementa in the array
+ * @returns total number of inversions, int
  * 
  */
 int countInversion(std::array<int, 100> *arr)
@@ -75,6 +82,7 @@ int countInversion(std::array<int, 100> *arr)
  * @param temp  - merged resultant array
  * @param left  - lower bound of array
  * @param right - upper bound of array
+ * @returns  total number of inversions to calling function, int
  * 
  */
 int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int right)
@@ -95,7 +103,9 @@ int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, i
 }
 
 /**
- * Function to merge two sub-arrays. merge() function is called 
+ * @brief   Function to merge two sub-arrays
+ * @details
+ * merge() function is called 
  * from mergeSort() to merge the array after it split for sorting 
  * by the mergeSort() funtion.
  * 
@@ -108,6 +118,7 @@ int mergeSort(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, i
  * @param mid    midpoint, upper bound of left sub-array,
  *               (mid+1) gives the lower bound of right-sub-array
  * @param right  upper bound of arr[] and right-sub-array
+ * @returns number of inversions per merge step, int
  * 
  */
 int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int mid, int right)
@@ -139,16 +150,12 @@ int merge(std::array<int, 100> *arr, std::array<int, 100> *temp, int left, int m
     }
     return inv_count;
 }
-    
-} // namespace inversion
-
-using namespace inversion;
 
 /**
- * UTILITY function to print array.
+ * @brief   UTILITY function to print array.
  * @param arr[]   array to print
  * @param array_size    size of input array arr[]
- * 
+ * @returns void
  */
 void show(std::array<int, 100> *arr, const int array_size)
 {   
@@ -158,6 +165,9 @@ void show(std::array<int, 100> *arr, const int array_size)
     }
     std::cout << "\n";
 }
+} // namespace inversion
+
+using inversion::countInversion ;
 
 /*
  * @brief Main function
@@ -181,4 +191,3 @@ int main()
 
     return 0;
 }
-/** @rakshitraj */
