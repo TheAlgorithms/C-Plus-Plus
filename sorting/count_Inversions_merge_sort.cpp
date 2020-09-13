@@ -62,7 +62,7 @@ void show(std::array<int, 100> &arr, const int array_size);
  * 
  * @param arr   - array, input for counting inversions in
  * @param array_size    - number of elementa in the array
- * @returns total number of inversions, int
+ * @returns total number of inversions
  * 
  */
 int countInversion(std::array<int, 100> &arr)
