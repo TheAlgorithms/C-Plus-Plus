@@ -83,7 +83,7 @@ int countInversion(std::array<int, 100> &arr)
  * @param temp  - merged resultant array
  * @param left  - lower bound of array
  * @param right - upper bound of array
- * @returns  total number of inversions to calling function, int
+ * @returns  total number of inversions to calling function
  * 
  */
 int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right)
