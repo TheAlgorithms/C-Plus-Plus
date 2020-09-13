@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Counting Inversions using Merge Sort. [wiki](http://mlwiki.org/index.php/Merge_Sort#Counting_Inversions)
+ * @brief Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_Sort).
  *
  * @details
  * Program to count the number of inversions in an array
@@ -41,7 +41,7 @@
 namespace sorting {
 /**
  * @namespace inversion
- * @brief Functions for Counting Inversions using Merge Sort
+ * @brief Functions for Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_Sort).
  */
 namespace inversion {
 
