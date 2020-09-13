@@ -34,6 +34,15 @@
 #include <iostream>
 #include <array>
 
+/**
+ * @namespace sorting
+ * @brief Sorting algorithms
+ */
+namespace sorting {
+/**
+ * @namespace inversion
+ * @brief Functions for Counting Inversions using Merge Sort
+ */
 namespace inversion {
 
 int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
