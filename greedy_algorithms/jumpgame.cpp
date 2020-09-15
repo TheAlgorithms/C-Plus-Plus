@@ -23,7 +23,7 @@
  * @param array of numbers containing the maximum jump (in steps) from that index
  * @returns bool value whether final index can be reached or not
  */  
-bool canJump(std::vector<int> nums) {
+bool canJump(const std::vector<int> &nums) {
     auto lastPos = nums.size() - 1;
     for (auto i = nums.size() - 1; i >= 0; i--) {
         if (i + nums[i] >= lastPos) {
