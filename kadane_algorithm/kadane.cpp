@@ -3,17 +3,23 @@
 #include <iostream>
 
 int maxSubArray(const std::array<int, 5> &n) {
-    int curr_sum = 0;
-    int max_sum = INT_MIN;
-    for (int i = 0; i < n.size(); i++) {
+    int curr_sum =
+        0;  // declaring a variable named as curr_sum and initialized it to 0
+    int max_sum = INT_MIN;  // Initialized max_sum to INT_MIN
+    for (int i : n) {  // for loop to iterate over the elements of the array
         curr_sum += n[i];
-        max_sum = std::max(max_sum, curr_sum);
-        curr_sum = std::max(curr_sum, 0);
+        max_sum = std::max(max_sum, curr_sum);  // getting the maximum value
+        curr_sum = std::max(curr_sum, 0);  // updating the value of curr_sum
     }
-    return max_sum;
+    return max_sum;  // returning the value of max_sum
 }
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    std::array<int, 5> n;
+    std::array<int, 5> n{};  // declaring array
 
     // taking values of elements from user
     for (int i = 0; i < n.size(); i++) {
@@ -21,8 +27,8 @@ int main() {
                   << "\n";
         std::cin >> n[i];
     }
-    int max_sum = maxSubArray(n);
-    std::cout << "Maximum subarray sum is " << max_sum;
+    int max_sum = maxSubArray(n);  // calling maxSubArray function
+    std::cout << "Maximum subarray sum is " << max_sum;  // Printing the answer
 
     return 0;
 }
