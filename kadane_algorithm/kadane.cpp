@@ -11,6 +11,11 @@
 #include <climits>
 #include <iostream>
 
+/**
+ * @brief description
+ * @param n description
+ * @returns description
+ */
 int maxSubArray(const std::array<int, 5> &n) {
     int curr_sum =
         0;  // declaring a variable named as curr_sum and initialized it to 0
