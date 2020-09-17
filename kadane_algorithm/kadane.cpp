@@ -1,3 +1,12 @@
+/**
+ * @file
+ * @brief Implementation of [Kadane Algorithm](https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
+ *
+ * @details
+ * <full-description here>
+ *
+ * @author [Ayush Singh](https://github.com/ayush523)
+ */
 #include <array>
 #include <climits>
 #include <iostream>
