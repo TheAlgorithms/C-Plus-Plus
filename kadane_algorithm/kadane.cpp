@@ -1,9 +1,19 @@
 /**
- * @file
- * @brief Implementation of [Kadane Algorithm](https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
+ * @file kadane.cpp
+ * @brief Implementation of [Kadane
+ * Algorithm] (https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
  *
  * @details
- * <full-description here>
+ * Kadane algorithm is used to find the maximum sum subarray in an array and
+ * maximum sum subarray problem is the task of finding a contiguous subarray
+ * with the largest sum
+ *
+ * Algorithm
+ * The simple idea of the algorithm is to search for all positive
+ * contiguous segments of the array and keep track of maximum sum contiguous
+ * segment among all positive segments(curr_sum is used for this)
+ * Each time we get a positive sum we compare it with max_sum and update max_sum
+ * if it is greater than curr_sum
  *
  * @author [Ayush Singh](https://github.com/ayush523)
  */
