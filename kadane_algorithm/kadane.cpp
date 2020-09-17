@@ -8,7 +8,7 @@
  * maximum sum subarray problem is the task of finding a contiguous subarray
  * with the largest sum
  *
- * Algorithm
+ * ### Algorithm
  * The simple idea of the algorithm is to search for all positive
  * contiguous segments of the array and keep track of maximum sum contiguous
  * segment among all positive segments(curr_sum is used for this)
