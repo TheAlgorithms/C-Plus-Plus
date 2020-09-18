@@ -1,5 +1,5 @@
 /**
- * @file kadane.cpp
+ * @file
  * @brief Implementation of [Kadane
  * Algorithm] (https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
  *
