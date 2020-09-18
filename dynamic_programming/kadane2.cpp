@@ -23,7 +23,7 @@
 
 /**
  * @brief maxSubArray function
- * @param n array of values and size of the array
+ * @param n is the array n
  * @returns the value of maximum subarray sum
  */
 int maxSubArray(const std::array<int, 5> &n) {
