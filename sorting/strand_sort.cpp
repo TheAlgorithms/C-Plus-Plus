@@ -28,13 +28,13 @@ namespace sorting {
     * @brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
     */
     namespace strand {
-        template <typename T>
         /**
         * @brief Apply sorting
         * @tparam element type of list
         * @param lst List to be sorted
         * @returns Sorted list<T> instance
         */
+        template <typename T>
         std::list<T> strand_sort(std::list<T> lst) {
             if (lst.size() < 2) { // Returns list if empty or contains only one element
                 return lst; // Returns list
