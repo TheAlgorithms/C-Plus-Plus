@@ -19,7 +19,12 @@
 #include <list>
 
 namespace strand {
+    // Element type of list.
     template <typename T>
+    /*
+    * Apply sorting.
+    * lst: List to sorted.
+    */
     std::list<T> strand_sort(std::list<T> lst) {
         if (lst.size() < 2) { // Returns list if empty or contains only one element
             return lst; // Returns list
