@@ -32,6 +32,7 @@ namespace sorting {
         template <typename T>
         /**
         * @brief Apply sorting
+        * @tparam element type of list
         * @param lst List to be sorted
         * @returns Sorted list<T> instance
         */
