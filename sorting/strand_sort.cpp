@@ -46,7 +46,8 @@ namespace strand {
           }
         return result; // Returns sorted list
     }
-} // namespace strand
+}  // namespace strand
+}  // namespace sorting
 
 /**
  * @brief Main function
