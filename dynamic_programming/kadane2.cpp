@@ -22,9 +22,9 @@
 #include <iostream>
 
 /**
- * @brief description
- * @param n description
- * @returns description
+ * @brief maxSubArray function
+ * @param n array of values and size of the array
+ * @returns the value of maximum subarray sum
  */
 int maxSubArray(const std::array<int, 5> &n) {
     int curr_sum =
