@@ -54,6 +54,17 @@
  * \brief Graph algorithms
  */
 namespace graph {
+
+/**
+ * \brief Representation of the graph as an adjacency list.
+ *
+ * For every vertex, there is a list of its neighbors in the order in which
+ * they were added to the graph. By default, the edges are directed, but
+ * an undirected graph can be represented simply by storing each each as
+ * two directed edges in both directions.
+ */
+using adjacency_list = std::vector<std::vector<int>>;
+
 /**
  * \brief
  * Adds a directed edge from vertex u to vertex v.
@@ -63,7 +74,7 @@ namespace graph {
  * @param v second vertex
  *
  */
-void add_directed_edge(std::vector<std::vector<int>> *graph, int u, int v) {
+void add_directed_edge(adjacency_list *graph, int u, int v) {
     (*graph)[u].push_back(v);
 }
 
@@ -78,7 +89,7 @@ void add_directed_edge(std::vector<std::vector<int>> *graph, int u, int v) {
  * @param v second vertex
  *
  */
-void add_undirected_edge(std::vector<std::vector<int>> *graph, int u, int v) {
+void add_undirected_edge(adjacency_list *graph, int u, int v) {
     add_directed_edge(graph, u, v);
     add_directed_edge(graph, v, u);
 }
@@ -93,11 +104,10 @@ void add_undirected_edge(std::vector<std::vector<int>> *graph, int u, int v) {
  * search.
  *
  */
-std::vector<bool> breadth_first_search(
-    const std::vector<std::vector<int>> &graph, int start) {
+std::vector<bool> breadth_first_search(const adjacency_list &graph, int start) {
     /// vector to keep track of visited vertices
     std::vector<bool> visited(graph.size(), false);
-    /// a queue that stores vertices that need to be further explored
+    /// queue that stores vertices that need to be further explored
     std::queue<int> tracker;
 
     /// mark the starting vertex as visited
@@ -117,11 +127,13 @@ std::vector<bool> breadth_first_search(
     }
     return visited;
 }
+
 }  // namespace graph
 
-void tests() {
+/** Test function */
+static void tests() {
     /// Test 1 Begin
-    std::vector<std::vector<int>> graph(4, std::vector<int>());
+    graph::adjacency_list graph(4, std::vector<int>());
     graph::add_undirected_edge(&graph, 0, 1);
     graph::add_undirected_edge(&graph, 1, 2);
     graph::add_undirected_edge(&graph, 2, 3);
@@ -168,7 +180,7 @@ int main() {
     std::cout << "Enter the number of edges: ";
     std::cin >> edges;
 
-    std::vector<std::vector<int>> graph(vertices);
+    graph::adjacency_list graph(vertices);
 
     std::cout << "Enter space-separated pairs of vertices that form edges: "
               << std::endl;
