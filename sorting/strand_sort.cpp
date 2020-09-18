@@ -18,6 +18,15 @@
 #include <iostream>
 #include <list>
 
+/**
+ * @namespace sorting
+ * @brief Sorting algorithms
+ */
+namespace sorting {
+/**
+ * @namespace strand
+ * @brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
+ */
 namespace strand {
     // Element type of list.
     template <typename T>
