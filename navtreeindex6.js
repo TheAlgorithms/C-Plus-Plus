@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"globals_q.html":[8,1,0,16],
 "globals_r.html":[8,1,0,17],
 "globals_s.html":[8,1,0,18],
 "globals_t.html":[8,1,0,19],
@@ -16,6 +17,7 @@ var NAVTREEINDEX6 =
 "modules.html":[5],
 "namespacemembers.html":[6,1,0],
 "namespacemembers_func.html":[6,1,1],
+"namespacemembers_type.html":[6,1,3],
 "namespacemembers_vars.html":[6,1,2],
 "namespaces.html":[6,0],
 "pages.html":[]

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
+<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#a1a13974bfe597e853bffe91aa2d3944d" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
 <polygon fill="white" stroke="black" points="175,-0.5 175,-19.5 303,-19.5 303,-0.5 175,-0.5"/>
 <text text-anchor="middle" x="239" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::add_directed_edge</text>
 </a>

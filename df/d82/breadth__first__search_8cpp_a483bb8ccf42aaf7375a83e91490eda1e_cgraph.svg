@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
+<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#a1a13974bfe597e853bffe91aa2d3944d" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
 <polygon fill="white" stroke="black" points="249,-220.5 249,-239.5 377,-239.5 377,-220.5 249,-220.5"/>
 <text text-anchor="middle" x="313" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::add_directed_edge</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../df/dce/namespacegraph.html#a59b4441a0e447469e9a4f61c87f33102" target="_top" xlink:title="Adds an undirected edge from vertex u to vertex v. Essentially adds too directed edges to the adjacen...">
+<g id="a_node3"><a xlink:href="../../df/dce/namespacegraph.html#a8c7d0cbc90b3b921d02da35d58b63153" target="_top" xlink:title="Adds an undirected edge from vertex u to vertex v. Essentially adds too directed edges to the adjacen...">
 <polygon fill="white" stroke="black" points="74,-202.5 74,-221.5 213,-221.5 213,-202.5 74,-202.5"/>
 <text text-anchor="middle" x="143.5" y="-209.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::add_undirected_edge</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../df/dce/namespacegraph.html#a618dce14b4883c20aace1d743d3a3f60" target="_top" xlink:title="Function performs the breadth first search algorithm over the graph.">
+<g id="a_node5"><a xlink:href="../../df/dce/namespacegraph.html#a0e0d3bf6c8a63f8071395c53a3cd148d" target="_top" xlink:title="Function performs the breadth first search algorithm over the graph.">
 <polygon fill="white" stroke="black" points="93,-115 93,-145 194,-145 194,-115 93,-115"/>
 <text text-anchor="start" x="101" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">graph::breadth_first</text>
 <text text-anchor="middle" x="143.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">_search</text>

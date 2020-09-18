@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
+<g id="a_node2"><a xlink:href="../../df/dce/namespacegraph.html#a1a13974bfe597e853bffe91aa2d3944d" target="_top" xlink:title="Adds a directed edge from vertex u to vertex v.">
 <polygon fill="white" stroke="black" points="323,-100.7 323,-119.7 451,-119.7 451,-100.7 323,-100.7"/>
 <text text-anchor="middle" x="387" y="-107.7" font-family="Helvetica,sans-Serif" font-size="10.00">graph::add_directed_edge</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../df/dce/namespacegraph.html#a618dce14b4883c20aace1d743d3a3f60" target="_top" xlink:title="Function performs the breadth first search algorithm over the graph.">
+<g id="a_node3"><a xlink:href="../../df/dce/namespacegraph.html#a0e0d3bf6c8a63f8071395c53a3cd148d" target="_top" xlink:title="Function performs the breadth first search algorithm over the graph.">
 <polygon fill="white" stroke="black" points="167,-253.2 167,-283.2 268,-283.2 268,-253.2 167,-253.2"/>
 <text text-anchor="start" x="175" y="-271.2" font-family="Helvetica,sans-Serif" font-size="10.00">graph::breadth_first</text>
 <text text-anchor="middle" x="217.5" y="-260.2" font-family="Helvetica,sans-Serif" font-size="10.00">_search</text>
@@ -67,7 +67,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/d82/breadth__first__search_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="../../df/d82/breadth__first__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-119.7 74,-138.7 112,-138.7 112,-119.7 74,-119.7"/>
 <text text-anchor="middle" x="93" y="-126.7" font-family="Helvetica,sans-Serif" font-size="10.00">tests</text>
 </a>
@@ -160,7 +160,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../df/dce/namespacegraph.html#a59b4441a0e447469e9a4f61c87f33102" target="_top" xlink:title="Adds an undirected edge from vertex u to vertex v. Essentially adds too directed edges to the adjacen...">
+<g id="a_node10"><a xlink:href="../../df/dce/namespacegraph.html#a8c7d0cbc90b3b921d02da35d58b63153" target="_top" xlink:title="Adds an undirected edge from vertex u to vertex v. Essentially adds too directed edges to the adjacen...">
 <polygon fill="white" stroke="black" points="148,-100.7 148,-119.7 287,-119.7 287,-100.7 148,-100.7"/>
 <text text-anchor="middle" x="217.5" y="-107.7" font-family="Helvetica,sans-Serif" font-size="10.00">graph::add_undirected_edge</text>
 </a>
