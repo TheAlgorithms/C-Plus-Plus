@@ -28,7 +28,6 @@ namespace sorting {
     * @brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
     */
     namespace strand {
-        // Element type of list.
         template <typename T>
         /**
         * @brief Apply sorting
