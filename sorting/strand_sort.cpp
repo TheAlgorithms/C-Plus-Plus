@@ -24,7 +24,10 @@ std::list<T> strand_sort(std::list<T> lst) {
     return result;
 }
 
-// Entry point for testing
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     std::list<int> lst = { -333, 525, 1, 0, 94, 52, 33 };
 
