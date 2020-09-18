@@ -1,23 +1,23 @@
-#include <stdio.h> // Only for printf function
+#include <iostream>
 #include <list>
 
-using namespace std;
-
 template <typename T>
-list<T> strand_sort(list<T> lst) {
-    if (lst.size() < 2) // Returns list if empty or contains only one element
+std::list<T> strand_sort(std::list<T> lst) {
+    if (lst.size() < 2) { // Returns list if empty or contains only one element
         return lst;
-    list<T> result;
-    list<T> sorted;
-    while (lst.empty() == false) {
+    }
+    std::list<T> result;
+    std::list<T> sorted;
+    while(!lst.empty()) {
         sorted.push_back(lst.front());
         lst.pop_front();
-        for (auto it = lst.begin(); it != lst.end();) {
+        for (typename std::list<T>::iterator it = lst.begin(); it != lst.end(); ) {
             if (sorted.back() <= *it) {
                 sorted.push_back(*it);
                 it = lst.erase(it);
-            } else
+            } else {
                 it++;
+            }
         }
         result.merge(sorted);
     }
@@ -26,17 +26,19 @@ list<T> strand_sort(list<T> lst) {
 
 // Entry point for testing
 int main() {
-    list<int> lst = { -333, 525, 1, 0, 94, 52, 33 };
+    std::list<int> lst = { -333, 525, 1, 0, 94, 52, 33 };
 
-    printf("Before: ");
-    for(auto item: lst)
-        printf("%d ", item);
+    std::cout << "Before: ";
+    for(int item: lst) {
+        std::cout << item << " ";
+    }
 
     lst = strand_sort(lst); // Sort list.
 
-    printf("\nAfter: ");
-    for(auto item: lst)
-        printf("%d ", item);
-        
+    std::cout << "\nAfter: ";
+    for(int item: lst) {
+        std::cout << item << " ";
+    }
+
     return 0;
 }
