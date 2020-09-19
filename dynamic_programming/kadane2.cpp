@@ -53,7 +53,7 @@ int main() {
                   << "\n";
         std::cin >> n[i];
     }
-    int max_sum = maxSubArray(n);  // calling maxSubArray function
+    int max_sum = dynamic_programming::maxSubArray<N>(n);  // calling maxSubArray function
     std::cout << "Maximum subarray sum is " << max_sum;  // Printing the answer
 
     return 0;
