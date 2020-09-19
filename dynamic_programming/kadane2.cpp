@@ -27,6 +27,7 @@
  * @param n is the array n
  * @returns the value of maximum subarray sum
  */
+ template <size_t N>
 int maxSubArray(const std::array<int, 5> &n) {
     int curr_sum =
         0;  // declaring a variable named as curr_sum and initialized it to 0
