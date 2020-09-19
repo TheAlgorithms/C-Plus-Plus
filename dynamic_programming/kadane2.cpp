@@ -1,5 +1,5 @@
 /**
- * @file kadane2.cpp
+ * @file
  * @brief Implementation of [Kadane
  * Algorithm] (https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
  *
@@ -25,15 +25,12 @@
  * @brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
-
 /**
  * @brief maxSubArray function is used to calculate the maximum sum subarray
  * and returns the value of maximum sum which is stored in the variable max_sum
- * @tparam N number of array size
- * @param n array of values and size of the array
+ * @param n is the array n
  * @returns the value of maximum subarray sum
  */
-
 template <size_t N>
 
 int maxSubArray(const std::array<int, N> &n) {
@@ -64,7 +61,6 @@ int main() {
     }
     int max_sum =
         dynamic_programming::maxSubArray<N>(n);  // calling maxSubArray function
-
     std::cout << "Maximum subarray sum is " << max_sum;  // Printing the answer
 
     return 0;
