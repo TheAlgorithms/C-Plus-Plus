@@ -20,7 +20,11 @@
 #include <array>
 #include <climits>
 #include <iostream>
-
+/**
+ * @namespace dynamic_programming
+ * @brief Dynamic Programming algorithms
+ */
+namespace dynamic_programming {
 /**
  * @brief maxSubArray function is used to calculate the maximum sum subarray
  * and returns the value of maximum sum which is stored in the variable max_sum
