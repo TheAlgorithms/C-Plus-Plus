@@ -39,6 +39,7 @@ int maxSubArray(const std::array<int, N> &n) {
     }
     return max_sum;  // returning the value of max_sum
 }
+}  // namespace dynamic_programming
 
 /**
  * @brief Main function
