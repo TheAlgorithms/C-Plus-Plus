@@ -32,6 +32,7 @@ namespace dynamic_programming {
  * @returns the value of maximum subarray sum
  */
  template <size_t N>
+ template <size_t N>
 int maxSubArray(const std::array<int, N> &n) {
     int curr_sum =
         0;  // declaring a variable named as curr_sum and initialized it to 0
