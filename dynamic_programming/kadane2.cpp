@@ -22,7 +22,8 @@
 #include <iostream>
 
 /**
- * @brief maxSubArray function
+ * @brief maxSubArray function is used to calculate the maximum sum subarray
+ * and returns the value of maximum sum which is stored in the variable max_sum
  * @param n is the array n
  * @returns the value of maximum subarray sum
  */
