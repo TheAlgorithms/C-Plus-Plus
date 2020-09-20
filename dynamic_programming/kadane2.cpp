@@ -26,6 +26,11 @@
  */
 namespace dynamic_programming {
 /**
+ * @namespace kadane
+ * @brief Functions for [Kadane](https://en.wikipedia.org/wiki/Kadane%27s_algorithm) algorithm.
+ */
+namespace kadane {
+/**
  * @brief maxSubArray function is used to calculate the maximum sum subarray
  * and returns the value of maximum sum which is stored in the variable max_sum
  * @tparam N number of array size
