@@ -32,7 +32,6 @@ namespace dynamic_programming {
  * @param n array where numbers are saved
  * @returns the value of maximum subarray sum
  */
-namespace kadane {
 template <size_t N>
 int maxSubArray(const std::array<int, N> &n) {
     int curr_sum =
