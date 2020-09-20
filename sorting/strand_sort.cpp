@@ -7,10 +7,10 @@
  * 
  * ### Algorithm
  * It is passed over the array to be sorted once and the ascending (sequential) numbers are taken.
- * + After the first iteration, the sequential sub-array is put on the empty sorted array.
- * + The main sequence is passed over again and a new sub-sequence is created in order.
- * + Now that the sorted array is not empty, the newly extracted substring is merged with the sorted array.
- * + Repeat types 3 and 4 until the sub-sequence and main sequence are empty.
+ * After the first iteration, the sequential sub-array is put on the empty sorted array.
+ * The main sequence is passed over again and a new sub-sequence is created in order.
+ * Now that the sorted array is not empty, the newly extracted substring is merged with the sorted array.
+ * Repeat types 3 and 4 until the sub-sequence and main sequence are empty.
  * 
  * @author [Mertcan Davulcu](https://github.com/mertcandav)
  */
@@ -59,10 +59,10 @@ namespace sorting {
 }  // namespace sorting
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Function for testing
+ * @return N/A
  */
-int main() {
+static void test() {
     std::list<int> lst = { -333, 525, 1, 0, 94, 52, 33 };
 
     std::cout << "Before: ";
@@ -76,6 +76,13 @@ int main() {
     for(auto item: lst) {
         std::cout << item << " ";
     }
+}
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test();
     return 0;
 }
