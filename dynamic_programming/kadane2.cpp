@@ -28,9 +28,9 @@ namespace dynamic_programming {
 /**
  * @brief maxSubArray function is used to calculate the maximum sum subarray
  * and returns the value of maximum sum which is stored in the variable max_sum
+ * @tparam N number of array size
  * @param n array where numbers are saved
  * @returns the value of maximum subarray sum
- * @tparam N number of array size
  */
 namespace kadane {
 template <size_t N>
