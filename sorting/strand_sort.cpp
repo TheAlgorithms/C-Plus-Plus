@@ -15,7 +15,6 @@
  * @author [Mertcan Davulcu](https://github.com/mertcandav)
  */
 #include <iostream>
-#include <iostream>
 #include <list>
 
 /**
