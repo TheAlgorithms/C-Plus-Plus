@@ -3,7 +3,7 @@
  * @brief Implementation of [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm.
  *
  * @details
- * Strand Sort is a sorting algorithm that works in (O(n)) time if list is already sorted and works in (O(n * n)) in worst case.
+ * Strand Sort is a sorting algorithm that works in \f$O(n)\f$ time if list is already sorted and works in \f$O(n^2)\f$ in worst case.
  * 
  * ### Algorithm
  * + It is passed over the array to be sorted once and the ascending (sequential) numbers are taken.
