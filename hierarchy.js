@@ -21,6 +21,7 @@ var hierarchy =
     [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", null ],
     [ "ciphers::HillCipher", "d6/d26/classciphers_1_1_hill_cipher.html", null ],
+    [ "info", "d8/d80/structinfo.html", null ],
     [ "Item", "db/d66/struct_item.html", null ],
     [ "large_number", "db/d82/classlarge__number.html", null ],
     [ "data_structures::linked_list::link", "de/d9d/classdata__structures_1_1linked__list_1_1link.html", null ],
@@ -39,8 +40,8 @@ var hierarchy =
     [ "Point", "d8/dc8/struct_point.html", null ],
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
+    [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
