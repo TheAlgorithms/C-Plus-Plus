@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of an algorithm to solve the jumping game problem [Click here for the problem](https://leetcode.com/problems/jump-game/)
+ * @brief Implementation of an algorithm to solve the [jumping game](https://leetcode.com/problems/jump-game/) problem
  * @details
  * **Problem statement:** Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.
  * This solution takes in input as a vector and output as a boolean to check if you can reach the last position.
