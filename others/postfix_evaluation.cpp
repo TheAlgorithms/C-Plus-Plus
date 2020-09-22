@@ -52,7 +52,7 @@ float pop() {
  * @returns none
  */
 void evaluate(float a, float b, char operation) {
-    int c = 0;
+    float c = 0;
     switch (operation) {
         case '+':
             c = a + b;
@@ -128,10 +128,10 @@ static void test_function_1() {
  * @returns none
  */
 static void test_function_2() {
-    std::array<char, 9> input = {'1', '2', '+', '2', '/', '5', '*', '7', '+'};
+    std::array<char, 9> input = {'2', '2', '+', '2', '/', '5', '*', '7', '+'};
     float answer = postfix_evaluation(input);
 
-    assert(answer == 6);
+    assert(answer == 11);
 }
 
 /**
