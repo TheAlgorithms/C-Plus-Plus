@@ -87,13 +87,13 @@ void evaluate(float a, float b, char operation) {
  * @returns stack[stackTop] returns the top value from the stack
  */
 template <std::size_t N>
-int postfix_evaluation(std::array<char, N> input) {
+float postfix_evaluation(std::array<char, N> input) {
     stackTop = -1;
     int j = 0;
     while (input[j]) {
         char scan = input[j];
         if (isalnum(scan)) {
-            push(scan - '0');
+            push(static_cast<float>(scan - '0'));
 
         } else {
             float op2 = pop();
