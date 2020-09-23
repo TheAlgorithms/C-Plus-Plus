@@ -60,6 +60,7 @@
   * [Fibonacci Bottom Up](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/fibonacci_bottom_up.cpp)
   * [Floyd Warshall](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/floyd_warshall.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane.cpp)
+  * [Kadane2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane2.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_string.cpp)
   * [Longest Common Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_subsequence.cpp)
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_increasing_subsequence.cpp)
