@@ -13,6 +13,7 @@ var namespaces_dup =
     [ "horspool", "d5/d02/namespacehorspool.html", null ],
     [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "jarvis", "d5/da7/namespacejarvis.html", null ],
+    [ "kadane", "d6/d74/namespacekadane.html", null ],
     [ "layers", "d5/d2c/namespacelayers.html", null ],
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", null ],
     [ "linked_list", "d3/db0/namespacelinked__list.html", null ],

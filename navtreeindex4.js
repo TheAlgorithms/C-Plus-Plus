@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"da/d9a/class_graph.html#adcbd1b60cab30b97c54d700eee8e456d":[7,0,18,7],
 "da/d9a/class_graph.html#ade809d353b640b9c2773d71d4f57d57d":[7,0,18,5],
 "da/d9a/class_graph.html#ae4c72b8ac4d693c49800a4c7e273654f":[7,0,18,3],
 "da/d9a/class_graph.html#ae93ae98711b868af601d424954fe94ac":[7,0,18,38],
@@ -14,8 +15,8 @@ var NAVTREEINDEX4 =
 "da/dd1/structquadratic__probing_1_1_entry.html":[7,0,7,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[7,0,7,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[7,0,7,0,0],
-"da/dd3/namespacespirograph.html":[6,0,28],
-"da/dd4/namespacemedian__search.html":[6,0,17],
+"da/dd3/namespacespirograph.html":[6,0,29],
+"da/dd4/namespacemedian__search.html":[6,0,18],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[8,0,11,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,11,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[8,0,10,2],
@@ -125,6 +126,9 @@ var NAVTREEINDEX4 =
 "db/da9/classqueue.html#ad215eee654953d25150bb25d5ac12b7c":[7,0,31,1],
 "db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5":[7,0,31,9],
 "db/dc0/namespacebacktracking.html":[6,0,1],
+"db/dca/kadane2_8cpp.html":[8,0,3,0],
+"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,3,0,0],
+"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[8,0,3,0,1],
 "db/dd3/ode__forward__euler_8cpp.html":[8,0,10,9],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,10,9,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[8,0,10,9,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "dd/d2f/class_trie.html#a411e77126930a0942dd7b65e96b15206":[7,0,39,6],
 "dd/d2f/class_trie.html#a58b359fad33ca0064bd75a0d41a7b66d":[7,0,39,8],
 "dd/d2f/class_trie.html#a6af57e9f25d0d0a2d59eea5a4a802908":[7,0,39,1],
-"dd/d2f/class_trie.html#a6d10eb1669453395d1900ebd401954fb":[7,0,39,2],
-"dd/d2f/class_trie.html#a734a08b52b8ad73bdd1f36ae8348056e":[7,0,39,4],
-"dd/d2f/class_trie.html#a7c3ba4caf24378826a789848629177bd":[7,0,39,7],
-"dd/d2f/class_trie.html#a95216ffc56cb9f8cede982cecb872af4":[7,0,39,5],
-"dd/d2f/class_trie.html#afd8b79959009b554e98ea7128b2886f2":[7,0,39,3]
+"dd/d2f/class_trie.html#a6d10eb1669453395d1900ebd401954fb":[7,0,39,2]
 };

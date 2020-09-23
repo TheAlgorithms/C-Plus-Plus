@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d8/d10/structlist.html#ad21e95792529f165f01361f9f42505b3":[7,0,23,1],
 "d8/d10/structlist.html#aec0e6f9f6cbe56458c69dedd4044feec":[7,0,23,7],
 "d8/d13/bubble__sort_8cpp.html":[8,0,15,1],
 "d8/d13/bubble__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,15,1,0],
@@ -10,9 +11,9 @@ var NAVTREEINDEX3 =
 "d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,9,20,2],
 "d8/d6c/line__segment__intersection_8cpp.html":[8,0,4,1],
 "d8/d6c/line__segment__intersection_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,4,1,2],
-"d8/d77/namespacemachine__learning.html":[6,0,16],
+"d8/d77/namespacemachine__learning.html":[6,0,17],
 "d8/d77/namespacemachine__learning.html":[7,0,6],
-"d8/d89/namespacelinear__probing.html":[6,0,14],
+"d8/d89/namespacelinear__probing.html":[6,0,15],
 "d8/d89/namespacelinear__probing.html":[7,0,5],
 "d8/d8a/exponential__search_8cpp.html":[8,0,14,1],
 "d8/d8a/exponential__search_8cpp.html#a0f697e2a3b5193324ab84bd4045088f7":[8,0,14,1,0],
@@ -58,7 +59,7 @@ var NAVTREEINDEX3 =
 "d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[7,0,29,2],
 "d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[7,0,29,0],
 "d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[7,0,29,4],
-"d8/dcc/namespacestd.html":[6,0,30],
+"d8/dcc/namespacestd.html":[6,0,31],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html":[8,0,9,27],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9":[8,0,9,27,1],
 "d8/ddf/sieve__of__eratosthenes_8cpp.html#a60fa6579eab0db3c1c0ab1bf6d651be3":[8,0,9,27,2],
@@ -82,7 +83,7 @@ var NAVTREEINDEX3 =
 "d9/d02/linear__search_8cpp.html":[8,0,14,7],
 "d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84":[8,0,14,7,0],
 "d9/d02/linear__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,14,7,1],
-"d9/d03/namespacestring__search.html":[6,0,31],
+"d9/d03/namespacestring__search.html":[6,0,32],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html":[7,0,4,2],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356":[7,0,4,2,2],
 "d9/d23/classgraph_1_1_lowest_common_ancestor.html#a46d10f669791e3da9a4809bd8ff8d3ad":[7,0,4,2,4],
@@ -158,7 +159,7 @@ var NAVTREEINDEX3 =
 "d9/d90/struct_btree.html#a87e9234afb3e704333af3a2da6b905d3":[7,0,10,2],
 "d9/d92/chaining_8cpp.html":[8,0,7,0],
 "d9/d92/chaining_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,0,1],
-"d9/dca/namespacesearch.html":[6,0,25],
+"d9/dca/namespacesearch.html":[6,0,26],
 "d9/dd7/interpolation__search_8cpp.html":[8,0,14,4],
 "d9/dd7/interpolation__search_8cpp.html#a9805865b5c5ca6b0fdf95fd86132625a":[8,0,14,4,0],
 "d9/dd7/interpolation__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,14,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "da/d9a/class_graph.html#acfa457b5f6f7eb480fd469fb980a01ea":[7,0,18,10],
 "da/d9a/class_graph.html#acfd6fbc5243626bfb7b7116b76fedab0":[7,0,18,17],
 "da/d9a/class_graph.html#ad3b98f95ee53f91afad11b8eaddc35e0":[7,0,18,0],
-"da/d9a/class_graph.html#ad621c5393837c21780ff3477431707ac":[7,0,18,37],
-"da/d9a/class_graph.html#adcbd1b60cab30b97c54d700eee8e456d":[7,0,18,7]
+"da/d9a/class_graph.html#ad621c5393837c21780ff3477431707ac":[7,0,18,37]
 };
