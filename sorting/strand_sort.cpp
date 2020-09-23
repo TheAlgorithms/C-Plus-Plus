@@ -5,7 +5,6 @@
  * @details
  * Strand Sort is a sorting algorithm that works in \f$O(n)\f$ time if list is already sorted and works in \f$O(n^2)\f$ in worst case.
  * 
- * ### Algorithm
  * It is passed over the array to be sorted once and the ascending (sequential) numbers are taken.
  * After the first iteration, the sequential sub-array is put on the empty sorted array.
  * The main sequence is passed over again and a new sub-sequence is created in order.
