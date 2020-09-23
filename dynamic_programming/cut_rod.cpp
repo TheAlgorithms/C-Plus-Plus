@@ -3,6 +3,7 @@ contains prices of all pieces of size smaller than n. Determine
 the maximum value obtainable by cutting up the rod and selling
 the pieces.*/
 
+#include <climits>
 #include <iostream>
 using namespace std;
 int cutrod(int p[], int n) {
