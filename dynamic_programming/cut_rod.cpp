@@ -16,7 +16,6 @@
  *
  * @author [Anmol](https://github.com/Anmol3299)
  * @author [Pardeep](https://github.com/Pardeep009)
- *
  */
 
 #include <array>
