@@ -10,10 +10,10 @@
  * Evaluate the operator and push the result back to the stack
  * When the expression is ended, the number in the stack is the final answer
  */
-#include <array>     // for std::array
-#include <cassert>   // for assert
-#include <iostream>  // for io operations
-
+#include <algorithm>  // for all_of
+#include <array>      // for std::array
+#include <cassert>    // for assert
+#include <iostream>   // for io operations
 // Maximum size for stack
 const int MAX_SIZE = 20;
 
@@ -45,15 +45,25 @@ float pop() {
 }
 
 /**
+ * Checks if scanned string is a number
+ * @param s scanned string
+ * @returns bool boolean value if string is number
+ */
+bool is_number(const std::string &s) {
+    return !s.empty() && std::all_of(s.begin(), s.end(), ::isdigit);
+}
+
+/**
  * Evaluate answer using given operands and operation
  * @param a float
  * @param b float
  * @param operation operation to be performed with respective floats
  * @returns none
  */
-void evaluate(float a, float b, char operation) {
+void evaluate(float a, float b, const std::string &operation) {
     float c = 0;
-    switch (operation) {
+    const char *op = operation.c_str();
+    switch (*op) {
         case '+':
             c = a + b;
             push(c);
@@ -87,13 +97,14 @@ void evaluate(float a, float b, char operation) {
  * @returns stack[stackTop] returns the top value from the stack
  */
 template <std::size_t N>
-float postfix_evaluation(std::array<char, N> input) {
+float postfix_evaluation(std::array<std::string, N> input) {
     stackTop = -1;
     int j = 0;
-    while (input[j]) {
-        char scan = input[j];
-        if (isalnum(scan)) {
-            push(static_cast<float>(scan - '0'));
+
+    while (j < N) {
+        std::string scan = input[j];
+        if (is_number(scan)) {
+            push(std::stof(scan));
 
         } else {
             float op2 = pop();
@@ -115,7 +126,7 @@ float postfix_evaluation(std::array<char, N> input) {
  * @returns none
  */
 static void test_function_1() {
-    std::array<char, 7> input = {'2', '3', '1', '*', '+', '9', '-'};
+    std::array<std::string, 7> input = {"2", "3", "1", "*", "+", "9", "-"};
 
     float answer = postfix_evaluation(input);
 
@@ -128,10 +139,11 @@ static void test_function_1() {
  * @returns none
  */
 static void test_function_2() {
-    std::array<char, 9> input = {'2', '2', '+', '2', '/', '5', '*', '7', '+'};
+    std::array<std::string, 9> input = {"100", "200", "+", "2", "/",
+                                        "5",   "*",   "7", "+"};
     float answer = postfix_evaluation(input);
 
-    assert(answer == 11);
+    assert(answer == 757);
 }
 
 /**
