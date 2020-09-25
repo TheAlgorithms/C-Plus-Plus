@@ -34,8 +34,8 @@ namespace dynamic_programming {
  */
 namespace cut_rod {
 /**
- * @brief cut_rod function cuts the rod in different pieces and stores the
- * maximum profit for each piece of the rod.
+ * @brief maxProfitByCuttingRod function cuts the rod in different pieces and
+ * stores the maximum profit for each piece of the rod.
  * @param n size of the rod in inches
  * @param price an array of prices that contains prices of all pieces of size<=n
  * @return maximum profit obtainable for @param n inch rod.
