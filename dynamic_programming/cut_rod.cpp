@@ -36,6 +36,7 @@ namespace cut_rod {
 /**
  * @brief Cuts the rod in different pieces and
  * stores the maximum profit for each piece of the rod.
+ * @tparam T description
  * @param n size of the rod in inches
  * @param price an array of prices that contains prices of all pieces of size<=n
  * @return maximum profit obtainable for @param n inch rod.
