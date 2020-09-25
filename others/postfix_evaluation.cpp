@@ -15,38 +15,37 @@
 #include <cassert>    // for assert
 #include <iostream>   // for io operations
 #include <string>     // for stof
-// Maximum size for stack
-const int MAX_SIZE = 20;
 
-// Defining stack
-std::array<float, MAX_SIZE> stack;
-
-// Index of top value in stack array
-int stackTop;
+class Stack {
+ public:
+    std::array<float, 20> stack;
+    int stackTop = -1;
+};
 
 /**
- * Pushing operand, also called the number in the array to the stack
+ * @brief Pushing operand, also called the number in the array to the stack
  * @param operand float value from the input array or evaluation
+ * @param stack stack containing numbers
  * @returns none
  */
-void push(float operand) {
-    stackTop++;
-    stack[stackTop] = operand;
+void push(float operand, Stack &stack) {
+    stack.stackTop++;
+    stack.stack[stack.stackTop] = operand;
 }
 
 /**
- * Popping operand, also called the number from the stack
- * @param none
+ * @brief Popping operand, also called the number from the stack
+ * @param stack stack containing numbers
  * @returns operand float on top of stack
  */
-float pop() {
-    float operand = stack[stackTop];
-    stackTop--;
+float pop(Stack &stack) {
+    float operand = stack.stack[stack.stackTop];
+    stack.stackTop--;
     return operand;
 }
 
 /**
- * Checks if scanned string is a number
+ * @brief Checks if scanned string is a number
  * @param s scanned string
  * @returns bool boolean value if string is number
  */
@@ -55,34 +54,35 @@ bool is_number(const std::string &s) {
 }
 
 /**
- * Evaluate answer using given operands and operation
+ * @brief Evaluate answer using given operands and operation
  * @param a float
  * @param b float
  * @param operation operation to be performed with respective floats
+ * @param stack stack containing numbers
  * @returns none
  */
-void evaluate(float a, float b, const std::string &operation) {
+void evaluate(float a, float b, const std::string &operation, Stack &stack) {
     float c = 0;
     const char *op = operation.c_str();
     switch (*op) {
         case '+':
             c = a + b;
-            push(c);
+            push(c, stack);
             break;
 
         case '-':
             c = a - b;
-            push(c);
+            push(c, stack);
             break;
 
         case '*':
             c = a * b;
-            push(c);
+            push(c, stack);
             break;
 
         case '/':
             c = a / b;
-            push(c);
+            push(c, stack);
             break;
 
         default:
@@ -92,37 +92,38 @@ void evaluate(float a, float b, const std::string &operation) {
 }
 
 /**
- * Postfix Evaluation algorithm to compute the value from given input array
+ * @brief Postfix Evaluation algorithm to compute the value from given input
+ * array
  * @param input Array of characters consisting of numbers and operations
  * @param N Array size
  * @returns stack[stackTop] returns the top value from the stack
  */
 template <std::size_t N>
 float postfix_evaluation(std::array<std::string, N> input) {
-    stackTop = -1;
+    Stack stack;
     int j = 0;
 
     while (j < N) {
         std::string scan = input[j];
         if (is_number(scan)) {
-            push(std::stof(scan));
+            push(std::stof(scan), stack);
 
         } else {
-            float op2 = pop();
-            float op1 = pop();
+            float op2 = pop(stack);
+            float op1 = pop(stack);
 
-            evaluate(op1, op2, scan);
+            evaluate(op1, op2, scan, stack);
         }
         j++;
     }
 
-    std::cout << stack[stackTop] << "\n";
+    std::cout << stack.stack[stack.stackTop] << "\n";
 
-    return stack[stackTop];
+    return stack.stack[stack.stackTop];
 }
 
 /**
- * Test function 1 with input array
+ * @brief Test function 1 with input array
  * {'2', '3', '1', '*', '+', '9', '-'}
  * @returns none
  */
@@ -135,7 +136,7 @@ static void test_function_1() {
 }
 
 /**
- * Test function 2 with input array
+ * @brief Test function 2 with input array
  * {'1', '2', '+', '2', '/', '5', '*', '7', '+'}
  * @returns none
  */
@@ -148,7 +149,8 @@ static void test_function_2() {
 }
 
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     test_function_1();
