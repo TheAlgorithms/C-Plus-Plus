@@ -18,7 +18,7 @@
 
 class Stack {
  public:
-    std::array<float, 20> stack;
+    std::array<float, 20> stack{};
     int stackTop = -1;
 };
 
@@ -28,9 +28,9 @@ class Stack {
  * @param stack stack containing numbers
  * @returns none
  */
-void push(float operand, Stack &stack) {
-    stack.stackTop++;
-    stack.stack[stack.stackTop] = operand;
+void push(float operand, Stack *stack) {
+    stack->stackTop++;
+    stack->stack[stack->stackTop] = operand;
 }
 
 /**
@@ -38,9 +38,9 @@ void push(float operand, Stack &stack) {
  * @param stack stack containing numbers
  * @returns operand float on top of stack
  */
-float pop(Stack &stack) {
-    float operand = stack.stack[stack.stackTop];
-    stack.stackTop--;
+float pop(Stack *stack) {
+    float operand = stack->stack[stack->stackTop];
+    stack->stackTop--;
     return operand;
 }
 
@@ -61,7 +61,7 @@ bool is_number(const std::string &s) {
  * @param stack stack containing numbers
  * @returns none
  */
-void evaluate(float a, float b, const std::string &operation, Stack &stack) {
+void evaluate(float a, float b, const std::string &operation, Stack *stack) {
     float c = 0;
     const char *op = operation.c_str();
     switch (*op) {
@@ -106,13 +106,13 @@ float postfix_evaluation(std::array<std::string, N> input) {
     while (j < N) {
         std::string scan = input[j];
         if (is_number(scan)) {
-            push(std::stof(scan), stack);
+            push(std::stof(scan), &stack);
 
         } else {
-            float op2 = pop(stack);
-            float op1 = pop(stack);
+            float op2 = pop(&stack);
+            float op1 = pop(&stack);
 
-            evaluate(op1, op2, scan, stack);
+            evaluate(op1, op2, scan, &stack);
         }
         j++;
     }
