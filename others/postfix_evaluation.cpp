@@ -14,6 +14,7 @@
 #include <array>      // for std::array
 #include <cassert>    // for assert
 #include <iostream>   // for io operations
+#include <string>     // for stof
 // Maximum size for stack
 const int MAX_SIZE = 20;
 
