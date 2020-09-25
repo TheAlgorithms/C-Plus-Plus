@@ -68,7 +68,7 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
  * @brief Function to test above algorithm
  * @returns void
  */
-void test() {
+static void test() {
     // Test 1
     const int n1 = 8;                                           // size of rod
     std::array<int, n1> price1 = {1, 5, 8, 9, 10, 17, 17, 20};  // price array
