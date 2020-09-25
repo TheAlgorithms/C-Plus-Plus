@@ -6,7 +6,6 @@
  * and produces as output a maximum cardinality matching, it runs in O(E√V) time in worst case.
  * 
  * ###Bipartite graph :
-
  * A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint 
  * and independent sets U and V such that every edge connects a vertex in U to one in V. 
  * Vertex sets U and V are usually called the parts of the graph. 
@@ -53,8 +52,8 @@
 #include <queue>
 #include <list>
 #include <climits>
-#define NIL 0
-#define INF INT_MAX
+const int NIL = 0;
+const int INF = INT_MAX;
 
 // A class to represent Bipartite graph for
 // Hopcroft Karp implementation
@@ -74,6 +73,7 @@ class BGraph
 
 public:
     BGraph(int m, int n);     // Constructor
+	~BGraph();				  // destructor
     void addEdge(int u, int v); // To add edge
 
     // Returns true if there is an augmenting path
@@ -102,10 +102,12 @@ int BGraph::hopcroftKarpAlgorithm()
     dist = new int[m + 1];
 
     // Initialize NIL as pair of all vertices
-    for (int u = 0; u <= m; u++)
+    for (int u = 0; u <= m; u++){
         pair_u[u] = NIL;
-    for (int v = 0; v <= n; v++)
+	}
+    for (int v = 0; v <= n; v++){
         pair_v[v] = NIL;
+	}
 
     // Initialize result
     int result = 0;
@@ -115,13 +117,15 @@ int BGraph::hopcroftKarpAlgorithm()
     while (bfs())
     {
         // Find a free vertex to check for a matching
-        for (int u = 1; u <= m; u++)
+        for (int u = 1; u <= m; u++){
 
             // If current vertex is free and there is
             // an augmenting path from current vertex
             // then increment the result
-            if (pair_u[u] == NIL && dfs(u))
+            if (pair_u[u] == NIL && dfs(u)){
                 result++;
+			}
+		}
     }
     return result;
 }
@@ -135,16 +139,16 @@ bool BGraph::bfs()
     for (int u = 1; u <= m; u++)
     {
         // If this is a free vertex, add it to queue
-        if (pair_u[u] == NIL)
-        {
+        if (pair_u[u] == NIL){
             // u is not matched so distance is 0
             dist[u] = 0;
             q.push(u);
         }
 
         // Else set distance as infinite so that this vertex is considered next time for availibility
-        else
+        else{
             dist[u] = INF;
+		}
     }
 
     // Initialize distance to NIL as infinite
@@ -222,6 +226,15 @@ BGraph::BGraph(int m, int n)
     adj = new std::list<int>[m + 1];
 }
 
+// destructor 
+BGraph::~BGraph()
+{
+	delete[] pair_u;
+	delete[] pair_v;
+	delete[] dist;
+	delete[] adj;
+}
+
 // function to add edge from u to v
 void BGraph::addEdge(int u, int v)
 {
@@ -243,24 +256,23 @@ void BGraph::addEdge(int u, int v)
 Output:
 // size of maximum matching
 Maximum matching is 4
-
 */
 
 int main()
 {
-    int v1, v2, e;
+    int v1 = 0, v2 = 0, e = 0;
     std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
     BGraph g(v1, v2); // 
-    int u, v;
+    int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
     {
         std::cin >> u >> v;
         g.addEdge(u, v);
     }
-  
+
     int res = g.hopcroftKarpAlgorithm();
     std::cout << "Maximum matching is " << res <<"\n";
 
     return 0;
 
-}
+} 
