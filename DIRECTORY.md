@@ -58,9 +58,9 @@
   * [Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/edit_distance.cpp)
   * [Egg Dropping Puzzle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/egg_dropping_puzzle.cpp)
   * [Fibonacci Bottom Up](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/fibonacci_bottom_up.cpp)
-  * [Fibonacci Top Down](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/fibonacci_top_down.cpp)
   * [Floyd Warshall](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/floyd_warshall.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane.cpp)
+  * [Kadane2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane2.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_string.cpp)
   * [Longest Common Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_subsequence.cpp)
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_increasing_subsequence.cpp)
@@ -237,6 +237,7 @@
   * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/heap_sort.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/insertion_sort.cpp)
   * [Library Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/library_sort.cpp)
+  * [Merge Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/merge_insertion_sort.cpp)
   * [Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/merge_sort.cpp)
   * [Non Recursive Merge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/non_recursive_merge_sort.cpp)
   * [Numeric String Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/numeric_string_sort.cpp)
@@ -254,5 +255,6 @@
 
 ## Strings
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
+  * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
   * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)

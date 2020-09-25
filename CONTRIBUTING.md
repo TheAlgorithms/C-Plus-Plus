@@ -154,19 +154,33 @@ Common prefixes:
 ### Pull Requests
 - Checkout our [pull request template](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md)
 
-#### cpplint
-To see if [__cpplint__](https://github.com/cpplint/cpplint) is already installed, do:
-* `cpplint --version`  # currently returns "cpplint 1.4.4"
-If cpplint is ___not___ installed then do:
-* `python3 -m pip install cpplint`  # If that does not work then try...
-* `py -m pip install cpplint`  # If that does not work then try...
-* `pip install cpplint`
-Once cpplint is installed, test your file(s) with:
-* `cpplint --filter=-legal my_file.cpp my_other_file.cpp`  # Fix any issues and try again.
+#### Building Locally
+Before submitting a pull request, build the code locally or using the convenient [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus) service.
+```
+cmake -B build -S .
+```
 
-The [__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) tool can fix whitespace related _cpplint_ issues.
-* On Macs only: `brew install clang-format`  # Only needs to be installed once.
-* All platforms: `clang-format -i -style="{IndentWidth: 4}" my_file.cpp`
+#### Static Code Analyzer
+We use [clang-tidy](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [.clang-tidy](.clang-tidy).
+```
+clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
+```
+
+#### Code Formatter
+[__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
+* Installation (Only needs to be installed once.)
+  * Mac (using home-brew): `brew install clang-format`
+  * Mac (using macports): `sudo port install clang-10 +analyzer`
+  * Windows (MSYS2 64-bit): `pacman -S mingw-w64-x86_64-clang-tools-extra`
+  * Linux (Debian): `sudo apt-get install clang-format-10 clang-tidy-10`
+* Running (all platforms): `clang-format -i -style="file" my_file.cpp`
+
+#### GitHub Actions
+Enable GitHub Actions on your fork of the repository.
+After enabling it will execute `clang-tidy` and `clang-format` after every a push (not a commit).
+The result can create another commit if the actions made any changes on your behalf.
+Hence, it is better to wait and check the results of GitHub Actions after every push.
+Run `git pull` in your local clone if these actions made many changes in order to avoid merge conflicts.
 
 Most importantly,
 - Happy coding!
