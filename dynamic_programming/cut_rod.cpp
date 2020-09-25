@@ -65,7 +65,8 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
 }  // namespace dynamic_programming
 
 /**
- * Function to test above algorithm
+ * @brief Function to test above algorithm
+ * @returns void
  */
 void test() {
     // Test 1
