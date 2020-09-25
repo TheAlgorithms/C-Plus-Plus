@@ -11,8 +11,8 @@ using namespace std;
 
 /** define equation to find root for
  */
-static double eq(double i) {
-    return (i*i-i);  // original equation
+static double eq(double x) {
+    return (x*x-x);  // original equation
 }
 //finding root in an interval
 static double secant(double x1,double x2,double y1,double y2){
