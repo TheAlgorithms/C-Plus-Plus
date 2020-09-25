@@ -1,5 +1,5 @@
 /**
- * @file cut_rod.cpp
+ * @file
  * @brief Implementation of cutting a rod problem
  *
  * @details
