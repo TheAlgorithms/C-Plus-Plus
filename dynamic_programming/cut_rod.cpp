@@ -4,13 +4,17 @@
  *
  * @details
  * Given a rod of length n inches and an array of prices that
- * contains prices of all pieces of size smaller than n. Determine
+ * contains prices of all pieces of size<=n. Determine
  * the maximum profit obtainable by cutting up the rod and selling
  * the pieces.
+ *
+ * @author [Anmol](https://github.com/Anmol3299)
+ * @author [Pardeep](https://github.com/Pardeep009)
  *
  */
 
 #include <array>
+#include <cassert>
 #include <climits>
 #include <iostream>
 
@@ -46,18 +50,37 @@ int cut_rod(const std::array<int, T> &price, const int n) {
 }
 
 /**
+ * Function to test above algorithm
+ */
+void test() {
+    // Test 1
+    const int n1 = 8;                                           // size of rod
+    std::array<int, n1> price1 = {1, 5, 8, 9, 10, 17, 17, 20};  // price array
+    const int max_profit1 = cut_rod(price1, n1);
+    const int expected_max_profit1 = 22;
+    assert(max_profit1 == expected_max_profit1);
+    std::cout << "Maximum profit with " << n1 << " inch road is " << max_profit1
+              << std::endl;
+
+    // Test 2
+    const int n2 = 30;  // size of rod
+    std::array<int, n2> price2 = {
+        1,  5,  8,  9,  10, 17, 17, 20, 24, 30,  // price array
+        31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+        41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+    const int max_profit2 = cut_rod(price2, n2);
+    const int expected_max_profit2 = 90;
+    assert(max_profit2 == expected_max_profit2);
+    std::cout << "Maximum profit with " << n2 << " inch road is " << max_profit2
+              << std::endl;
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    const int n = 30;  // size of rod
-    std::array<int, n> price = {
-        1,  5,  8,  9,  10, 17, 17, 20, 24, 30,  // price array
-        31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-        41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-
-    // maximum profit
-    std::cout << cut_rod(price, n);
-
+    // Testing
+    test();
     return 0;
 }
