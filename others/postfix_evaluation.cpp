@@ -81,22 +81,22 @@ void evaluate(float a, float b, const std::string &operation, Stack *stack) {
     switch (*op) {
         case '+':
             c = a + b;
-            push(c, stack);
+            others::postfix_expression::push(c, stack);
             break;
 
         case '-':
             c = a - b;
-            push(c, stack);
+            others::postfix_expression::push(c, stack);
             break;
 
         case '*':
             c = a * b;
-            push(c, stack);
+            others::postfix_expression::push(c, stack);
             break;
 
         case '/':
             c = a / b;
-            push(c, stack);
+            others::postfix_expression::push(c, stack);
             break;
 
         default:
@@ -148,7 +148,7 @@ float postfix_evaluation(std::array<std::string, N> input) {
 static void test_function_1() {
     std::array<std::string, 7> input = {"2", "3", "1", "*", "+", "9", "-"};
 
-    float answer = postfix_evaluation(input);
+    float answer = others::postfix_expression::postfix_evaluation(input);
 
     assert(answer == -4);
 }
@@ -161,7 +161,7 @@ static void test_function_1() {
 static void test_function_2() {
     std::array<std::string, 9> input = {"100", "200", "+", "2", "/",
                                         "5",   "*",   "7", "+"};
-    float answer = postfix_evaluation(input);
+    float answer = others::postfix_expression::postfix_evaluation(input);
 
     assert(answer == 757);
 }
