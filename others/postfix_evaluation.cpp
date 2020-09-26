@@ -16,6 +16,16 @@
 #include <iostream>   // for io operations
 #include <string>     // for stof
 
+/**
+ * @namespace others
+ * @brief Other algorithms
+ */
+namespace others {
+/**
+ * @namespace postfix_expression
+ * @brief Functions for Postfix Expression algorithm
+ */
+namespace postfix_expression {
 class Stack {
  public:
     std::array<float, 20> stack{};
@@ -94,6 +104,7 @@ void evaluate(float a, float b, const std::string &operation, Stack *stack) {
 /**
  * @brief Postfix Evaluation algorithm to compute the value from given input
  * array
+ * @tparam N number of array size
  * @param input Array of characters consisting of numbers and operations
  * @param N Array size
  * @returns stack[stackTop] returns the top value from the stack
@@ -121,6 +132,9 @@ float postfix_evaluation(std::array<std::string, N> input) {
 
     return stack.stack[stack.stackTop];
 }
+}  // namespace postfix_expression
+}  // namespace others
+
 
 /**
  * @brief Test function 1 with input array
