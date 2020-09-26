@@ -26,10 +26,14 @@ namespace others {
  * @brief Functions for Postfix Expression algorithm
  */
 namespace postfix_expression {
+ 
+ /**
+ * @brief Creates an array to be used as stack for storing values
+ */
 class Stack {
  public:
-    std::array<float, 20> stack{};
-    int stackTop = -1;
+    std::array<float, 20> stack{}; // Array which will be used to store numbers in the input
+    int stackTop = -1; // Represents the index of the last value added to array. -1 means array is empty
 };
 
 /**
