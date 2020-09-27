@@ -31,7 +31,7 @@
  * @param l - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
-    int i=0, j=0, k=0;
+    int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
 
@@ -42,20 +42,20 @@ void merge(int *arr, int l, int m, int r) {
 
     i = 0;
     j = 0;
-    k=l;
+    k = l;
     while (i < n1 || j < n2) {
-        if ((i<n1) && ((j>=n2) || (L[i] <= R[j]))) {
-            arr[k++] = L[i];
+        if (j >= n2 || (i < n1 && L[i] <= R[j])) {
+            arr[k] = L[i];
             i++;
-        } else{
-            arr[k++] = R[j];
+        } else {
+            arr[k] = R[j];
             j++;
         }
+        k++;
     }
 
     delete[] L;
     delete[] R;
-    return;
 }
 
 /**
@@ -68,7 +68,7 @@ void merge(int *arr, int l, int m, int r) {
  * @param r - right index or end index of array
  *
  */
-void mergeSort(int arr[], int l, int r) {
+void mergeSort(int *arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
@@ -81,7 +81,7 @@ void mergeSort(int arr[], int l, int r) {
  * Utility function used to print the array after
  * sorting
  */
-void show(int arr[], int size) {
+void show(int *arr, int size) {
     for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
     std::cout << "\n";
 }
@@ -91,7 +91,7 @@ int main() {
     int size;
     std::cout << "Enter the number of elements : ";
     std::cin >> size;
-    int arr[size];
+    int *arr = new int[size];
     std::cout << "Enter the unsorted elements : ";
     for (int i = 0; i < size; ++i) {
         std::cin >> arr[i];
@@ -99,7 +99,7 @@ int main() {
     mergeSort(arr, 0, size - 1);
     std::cout << "Sorted array : ";
     show(arr, size - 1);
-    
+    delete[] arr;
     return 0;
 }
 /** @} */
