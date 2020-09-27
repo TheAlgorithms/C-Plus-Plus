@@ -52,6 +52,8 @@
 #include <queue>
 #include <list>
 #include <climits>
+#include <memory>
+
 const int NIL = 0;
 const int INF = INT_MAX;
 
@@ -66,14 +68,16 @@ class BGraph
     // adj[u] stores adjacents of left side
     // vertex 'u'. The value of u ranges from 1 to m.
     // 0 is used for dummy vertex
-    std::list<int> *adj;
+    std::vector<std::list<int> >adj;
 
-    // pointers for hopcroftKarp()
-    int *pair_u, *pair_v, *dist;
+	
+    //vectors for hopcroftKarp()
+	std::vector<int> pair_u;
+	std::vector<int> pair_v;
+	std::vector<int> dist;
 
 public:
     BGraph(int m, int n);     // Constructor
-	~BGraph();				  // destructor
     void addEdge(int u, int v); // To add edge
 
     // Returns true if there is an augmenting path
@@ -92,22 +96,22 @@ int BGraph::hopcroftKarpAlgorithm()
 {
     // pair_u[u] stores pair of u in matching on left side of Bipartite Graph.
     // If u doesn't have any pair, then pair_u[u] is NIL
-    pair_u = new int[m + 1];
+    pair_u = std::vector<int>(m + 1);
 
     // pair_v[v] stores pair of v in matching on right side of Biparite Graph.
     // If v doesn't have any pair, then pair_u[v] is NIL
-    pair_v = new int[n + 1];
+    pair_v = std::vector<int>(n + 1);
 
     // dist[u] stores distance of left side vertices
-    dist = new int[m + 1];
+    dist = std::vector<int>(m + 1);
 
     // Initialize NIL as pair of all vertices
     for (int u = 0; u <= m; u++){
         pair_u[u] = NIL;
-	}
+    }
     for (int v = 0; v <= n; v++){
         pair_v[v] = NIL;
-	}
+    }
 
     // Initialize result
     int result = 0;
@@ -124,8 +128,8 @@ int BGraph::hopcroftKarpAlgorithm()
             // then increment the result
             if (pair_u[u] == NIL && dfs(u)){
                 result++;
-			}
-		}
+	    }
+	}
     }
     return result;
 }
@@ -148,7 +152,7 @@ bool BGraph::bfs()
         // Else set distance as infinite so that this vertex is considered next time for availibility
         else{
             dist[u] = INF;
-		}
+	}
     }
 
     // Initialize distance to NIL as infinite
@@ -223,16 +227,7 @@ BGraph::BGraph(int m, int n)
 {
     this->m = m;
     this->n = n;
-    adj = new std::list<int>[m + 1];
-}
-
-// destructor 
-BGraph::~BGraph()
-{
-	delete[] pair_u;
-	delete[] pair_v;
-	delete[] dist;
-	delete[] adj;
+    adj = std::vector<std::list<int> >(m + 1);
 }
 
 // function to add edge from u to v
@@ -269,10 +264,10 @@ int main()
         std::cin >> u >> v;
         g.addEdge(u, v);
     }
-
+  
     int res = g.hopcroftKarpAlgorithm();
     std::cout << "Maximum matching is " << res <<"\n";
 
     return 0;
 
-} 
+}
