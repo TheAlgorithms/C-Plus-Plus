@@ -26,14 +26,13 @@ namespace others {
  * @brief Functions for Postfix Expression algorithm
  */
 namespace postfix_expression {
- 
  /**
  * @brief Creates an array to be used as stack for storing values
  */
 class Stack {
  public:
-    std::array<float, 20> stack{}; // Array which will be used to store numbers in the input
-    int stackTop = -1; // Represents the index of the last value added to array. -1 means array is empty
+    std::array<float, 20> stack{}; ///< Array which will be used to store numbers in the input
+    int stackTop = -1;            ///< Represents the index of the last value added to array. -1 means array is empty
 };
 
 /**
@@ -110,7 +109,6 @@ void evaluate(float a, float b, const std::string &operation, Stack *stack) {
  * array
  * @tparam N number of array size
  * @param input Array of characters consisting of numbers and operations
- * @param N Array size
  * @returns stack[stackTop] returns the top value from the stack
  */
 template <std::size_t N>
