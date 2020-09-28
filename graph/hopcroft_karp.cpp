@@ -45,8 +45,6 @@
  */
 
 
-// C++ implementation of Hopcroft Karp algorithm for
-// maximum matching
 #include <iostream>
 #include <cstdlib> 
 #include <queue>
