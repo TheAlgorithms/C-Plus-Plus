@@ -68,10 +68,10 @@ bool is_number(const std::string &s) {
 
 /**
  * @brief Evaluate answer using given last two operands from and operation
- * @param a float second last added operand which will be used for evaluation
- * @param b float last added operand which will be used for evaluation
- * @param operation operation to be performed with respective floats
- * @param stack stack containing numbers
+ * @param a second last added operand which will be used for evaluation
+ * @param b last added operand which will be used for evaluation
+ * @param operation to be performed with respective floats
+ * @param stack containing numbers
  * @returns none
  */
 void evaluate(float a, float b, const std::string &operation, Stack *stack) {
