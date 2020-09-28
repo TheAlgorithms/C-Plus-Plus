@@ -55,8 +55,10 @@
 const int NIL = 0;
 const int INF = INT_MAX;
 
-// A class to represent Bipartite graph for
-// Hopcroft Karp implementation
+/**
+ * @brief Represents Bipartite graph for
+ * Hopcroft Karp implementation
+ */
 class BGraph
 {
     // m and n are number of vertices on left
