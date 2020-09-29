@@ -172,5 +172,7 @@ int main() {
     test_function_1();
     test_function_2();
 
+    std::cout << "\nTest implementations passed!\n";
+
     return 0;
 }
