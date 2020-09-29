@@ -1,8 +1,7 @@
 /**
  * @file
- * @brief Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_Sort).
+ * @brief Counting Inversions using Merge Sort
  *
- * @details
  * Program to count the number of inversions in an array
  * using merge-sort.
  * 
@@ -26,32 +25,23 @@
  *      the number of inversions by merging the two.
  *   4. The base case of recursion is when there is only one element in the given half.
  *   5. Print the answer
- *
- * @author [Rakshit Raj](https://github.com/rakshitraj)
  * 
  */
 
 #include <iostream>
-#include <array>
+#include <vector>
 
-/**
- * @namespace sorting
- * @brief Sorting algorithms
- */
-namespace sorting {
-/**
- * @namespace inversion
- * @brief Functions for Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_Sort).
- */
 namespace inversion {
 
-int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right);
-int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right);
-int countInversion(std::array<int, 100> &arr);
-void show(std::array<int, 100> &arr, const int array_size);
-    
+/** Funtion prototype for
+ * mergeSort()
+ * merge()
+ */
+int mergeSort(std::vector<int> &arr, std::vector<int> &temp, int left, int right);
+int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int right);
+
 /**
- * Funtion countInversion() returns the number of inversion 
+ * Funtion countInversion() returns the number of inversion
  * present in the input array. Inversions are an estimate of
  * how close or far off the array is to being sorted.
  * 
@@ -62,12 +52,12 @@ void show(std::array<int, 100> &arr, const int array_size);
  * 
  * @param arr   - array, input for counting inversions in
  * @param array_size    - number of elementa in the array
- * @returns total number of inversions
  * 
  */
-int countInversion(std::array<int, 100> &arr)
+int countInversion(std::vector<int> &arr)
 {
-    std::array<int, arr.size() > temp = {};
+    std::vector<int> temp;
+    temp.resize(arr.size());
     return mergeSort(arr, temp, 0, arr.size() -1);
 }
 
@@ -83,10 +73,9 @@ int countInversion(std::array<int, 100> &arr)
  * @param temp  - merged resultant array
  * @param left  - lower bound of array
  * @param right - upper bound of array
- * @returns  total number of inversions to calling function
  * 
  */
-int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int right)
+int mergeSort(std::vector<int> &arr, std::vector<int> &temp, int left, int right)
 {
     int mid = 0, inv_count = 0;
     if(right>left)
@@ -104,9 +93,7 @@ int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, i
 }
 
 /**
- * @brief   Function to merge two sub-arrays
- * @details
- * merge() function is called 
+ * Function to merge two sub-arrays. merge() function is called 
  * from mergeSort() to merge the array after it split for sorting 
  * by the mergeSort() funtion.
  * 
@@ -119,10 +106,9 @@ int mergeSort(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, i
  * @param mid    midpoint, upper bound of left sub-array,
  *               (mid+1) gives the lower bound of right-sub-array
  * @param right  upper bound of arr[] and right-sub-array
- * @returns number of inversions per merge step
  * 
  */
-int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int mid, int right)
+int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int right)
 {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
@@ -141,13 +127,9 @@ int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int m
     } 
     // Add remaining elements from the larger subarray to the end of temp
     while( i <= mid)
-    {
         temp[k++] = arr[i++];
-    }
     while( j <= right)
-    {
         temp[k++] = arr[j++];
-    }
     // Copy temp[] to arr[]
     for( k=left; k<=right; k++)
     {
@@ -155,14 +137,18 @@ int merge(std::array<int, 100> &arr, std::array<int, 100> &temp, int left, int m
     }
     return inv_count;
 }
+    
+} // namespace inversion
+
+using namespace inversion;
 
 /**
- * @brief   UTILITY function to print array.
- * @param arr array to print
- * @param array_size    size of input array
- * @returns void
+ * UTILITY function to print array.
+ * @param arr[]   array to print
+ * @param array_size    size of input array arr[]
+ * 
  */
-void show(std::array<int, 100> &arr, const int array_size)
+void show(std::vector<int> &arr, const int array_size)
 {   
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
@@ -170,29 +156,39 @@ void show(std::array<int, 100> &arr, const int array_size)
     }
     std::cout << "\n";
 }
-}  // namespace inversion
-}  // namespace sorting
 
-
-/*
- * @brief Main function
- * @returns 0 on exit
- */
-int main()
+int main(void)
 {
-    const int size = 100;
-    std::array<int, size> arr = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+ /**   
+    // Enter your own array
+    int size;
+    std::cout << "Enter number of elements: ";
+    std::cin >> size;
+
+    std::vector<int> arr;
+
+    std::cout << "Enter elements --> \n";
+    for( int i=0; i<size; i++)
+    {
+        std::cout << "Element "<< (i+1) << ": ";
+        std::cin >> arr[i];
+    }
+*/
+    std::vector<int> arr = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    
+    arr.shrink_to_fit();
 
     std::cout << "\n";
-    sorting::inversion::show(arr, size);
+    show(arr, arr.size());
     std::cout << "\n";
 
     // Counting inversions
-    std::cout << "\nThe number of inversions: "<< sorting::inversion::countInversion(arr) << "\n";
+    std::cout << "\nThe number of inversions: "<< countInversion(arr) << "\n";
 
     // Output sorted array
     std::cout << "\nSorted array -->  \n";
-    show(arr, size);
+    show(arr, arr.size());
 
     return 0;
 }
+/** @rakshitraj */
