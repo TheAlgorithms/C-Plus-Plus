@@ -64,6 +64,7 @@ class BGraph
     const int NIL;
     const int INF;
 
+
     // adj[u] stores adjacents of left side
     // vertex 'u'. The value of u ranges from 1 to m.
     // 0 is used for dummy vertex
@@ -221,6 +222,9 @@ bool BGraph::dfs(int u)
     }
     return true;
 }
+// Default Constructor for initialization
+BGraph::BGraph():NIL(0),INF(INT_MAX)
+{}
 
 // Default Constructor for initialization
 BGraph::BGraph(){
@@ -229,7 +233,7 @@ BGraph::BGraph(){
 }
 
 // Constructor for initialization
-BGraph::BGraph(int m, int n)
+BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
 {
     this->BGraph();
     this->m = m;
