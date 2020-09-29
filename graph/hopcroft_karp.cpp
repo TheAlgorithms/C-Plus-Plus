@@ -221,13 +221,11 @@ bool BGraph::dfs(int u)
     return true;
 }
 // Default Constructor for initialization
-BGraph::BGraph(){
-     NIL=0;
-     INF=INT_MAX;
-}
+BGraph::BGraph():NIL(0),INF(INT_MAX)
+{}
 
 // Constructor for initialization
-BGraph::BGraph(int m, int n)
+BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
 {   
     this->BGraph();
     this->m = m;
