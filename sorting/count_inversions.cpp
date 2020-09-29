@@ -30,15 +30,15 @@
 
 #include <iostream>
 #include <vector>
-
+namespace sorting {
 namespace inversion {
 
 /** Funtion prototype for
  * mergeSort()
  * merge()
  */
-int mergeSort(std::vector<int> &arr, std::vector<int> &temp, int left, int right);
-int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int right);
+int mergeSort(std::vector<int> *arr, std::vector<int> *temp, int left, int right);
+int merge(std::vector<int> *arr, std::vector<int> *temp, int left, int mid, int right);
 
 /**
  * Funtion countInversion() returns the number of inversion
@@ -54,7 +54,7 @@ int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int 
  * @param array_size    - number of elementa in the array
  * 
  */
-int countInversion(std::vector<int> &arr)
+int countInversion(std::vector<int> *arr)
 {
     std::vector<int> temp;
     temp.resize(arr.size());
@@ -75,7 +75,7 @@ int countInversion(std::vector<int> &arr)
  * @param right - upper bound of array
  * 
  */
-int mergeSort(std::vector<int> &arr, std::vector<int> &temp, int left, int right)
+int mergeSort(std::vector<int> *arr, std::vector<int> *temp, int left, int right)
 {
     int mid = 0, inv_count = 0;
     if(right>left)
@@ -108,7 +108,7 @@ int mergeSort(std::vector<int> &arr, std::vector<int> &temp, int left, int right
  * @param right  upper bound of arr[] and right-sub-array
  * 
  */
-int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int right)
+int merge(std::vector<int> *arr, std::vector<int> *temp, int left, int mid, int right)
 {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
@@ -126,10 +126,12 @@ int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int 
         }
     } 
     // Add remaining elements from the larger subarray to the end of temp
-    while( i <= mid)
+    while( i <= mid) {
         temp[k++] = arr[i++];
-    while( j <= right)
+        }
+    while( j <= right) {
         temp[k++] = arr[j++];
+        }
     // Copy temp[] to arr[]
     for( k=left; k<=right; k++)
     {
@@ -140,15 +142,13 @@ int merge(std::vector<int> &arr, std::vector<int> &temp, int left, int mid, int 
     
 } // namespace inversion
 
-using namespace inversion;
-
 /**
  * UTILITY function to print array.
  * @param arr[]   array to print
  * @param array_size    size of input array arr[]
  * 
  */
-void show(std::vector<int> &arr, const int array_size)
+void show(std::vector<int> *arr, const int array_size)
 {   
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
@@ -156,8 +156,13 @@ void show(std::vector<int> &arr, const int array_size)
     }
     std::cout << "\n";
 }
+ 
+} // namespace sorting
 
-int main(void)
+using sorting::inversion::countInversion;
+using sorting::show;
+
+int main()
 {
  /**   
     // Enter your own array
