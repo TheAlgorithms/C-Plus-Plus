@@ -52,9 +52,6 @@
 #include <climits>
 #include <memory>
 
-const int NIL = 0;
-const int INF = INT_MAX;
-
 /**
  * @brief Represents Bipartite graph for
  * Hopcroft Karp implementation
@@ -64,7 +61,8 @@ class BGraph
     // m and n are number of vertices on left
     // and right sides of Bipartite Graph
     int m, n;
-
+    const int NIL;
+    const int INF;
     // adj[u] stores adjacents of left side
     // vertex 'u'. The value of u ranges from 1 to m.
     // 0 is used for dummy vertex
@@ -77,6 +75,7 @@ class BGraph
 	std::vector<int> dist;
 
 public:
+    BGraph();		       //Default Constructor
     BGraph(int m, int n);     // Constructor
     void addEdge(int u, int v); // To add edge
 
@@ -221,10 +220,16 @@ bool BGraph::dfs(int u)
     }
     return true;
 }
+// Default Constructor for initialization
+BGraph::BGraph(){
+     NIL=0;
+     INF=INT_MAX;
+}
 
 // Constructor for initialization
 BGraph::BGraph(int m, int n)
-{
+{   
+    this->BGraph();
     this->m = m;
     this->n = n;
     adj = std::vector<std::list<int> >(m + 1);
