@@ -1,6 +1,6 @@
 # C++ 
 
-This repository contains some useful algorithms and data structures.Which is very helpful in placement. 
+This repository contains some useful algorithms and data structures.Which will be very helpful in placement. 
 
 ### Contribute
 
