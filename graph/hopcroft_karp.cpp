@@ -126,7 +126,7 @@ int BGraph::hopcroftKarpAlgorithm()
 
 /**
  * Function documentation
- * @returns 'true' if there is an augmenting path available
+ * @returns `true` if there is an augmenting path available
  * @returns 'false' if there is no augmenting path available
  */
 bool BGraph::bfs()
