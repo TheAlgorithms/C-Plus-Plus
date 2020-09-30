@@ -155,6 +155,10 @@ void show(int* arr, const int array_size) {
 using sorting::inversion::countInversion;
 using sorting::inversion::show;
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // // Input your own sequence
     // int size, input;
