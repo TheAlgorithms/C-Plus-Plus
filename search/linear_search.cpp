@@ -20,7 +20,7 @@ int main() {
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
 
-    vector <int> array (size);
+    vector::vector <int> array (size);
     int key = 0;
     int index = -1;
     // Input array
@@ -28,7 +28,7 @@ int main() {
     for (int i = 0; i < size; i++) {
         int x = 0;
         std::cin >> x;
-        array.push_back(x);
+        vector::array.push_back(x);
     }
 
     std::cout << "\nEnter the number to be searched : ";
