@@ -13,7 +13,7 @@
   output => YES  (3) or (1+2)
 */
 
-#include<iostream>
+#include<iostream.h>
 #define M 1001
 using namespace std;
 
