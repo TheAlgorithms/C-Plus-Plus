@@ -136,6 +136,7 @@ int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right)
  * UTILITY function to print array.
  * @param arr[]   array to print
  * @param array_size    size of input array arr[]
+ * @returns void
  * 
  */
 void sorting::inversion::show(int* arr, const int array_size) {
