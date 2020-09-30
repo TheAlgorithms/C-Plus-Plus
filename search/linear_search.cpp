@@ -22,7 +22,7 @@ int main() {
     std::cin >> size;
     int arr[size];
     int key;
-
+    int index = -1;
     // Input array
     std::cout << "\nEnter the Array of " << size << " numbers : ";
     for (int i = 0; i < size; i++) {
