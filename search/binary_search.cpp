@@ -1,56 +1,29 @@
-/**
- * @file
- * @brief [Binary search
- * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
- */
+// Perform Binary search on an array
 #include <iostream>
+using namespace std;
+int binary(int start, int endd, int arr[], int no) {
+    int midd = (start + endd) / 2;
+    if (start >= endd) {
+        cout << "Element not found!";
 
-/** binary_search function
- * \param [in] a array to sort
- * \param [in] r right hand limit = \f$n-1\f$
- * \param [in] key value to find
- * \returns index if T is found
- * \return -1 if T is not found
- */
-int binary_search(int a[], int r, int key) {
-    int l = 0;
-
-    while (l <= r) {
-        int m = l + (r - l) / 2;
-        if (key == a[m])
-            return m;
-        else if (key < a[m])
-            r = m - 1;
-        else
-            l = m + 1;
+        return -1;
     }
-    return -1;
+
+    else if ((arr[start] == no) || (arr[endd] == no) || (arr[midd] == no)) {
+        cout << "Element found!";
+
+        return 1;
+
+    } else if (no > arr[midd]) {
+        binary(midd + 1, endd, arr, no);
+
+    } else {
+        return binary(start, midd - 1, arr, no);
+    }
 }
 
-/** main function */
-int main(int argc, char const* argv[]) {
-    int n, key;
-    std::cout << "Enter size of array: ";
-    std::cin >> n;
-    std::cout << "Enter array elements: ";
-
-    int* a = new int[n];
-
-    // this loop use for store value in Array
-    for (int i = 0; i < n; i++) {
-        std::cin >> a[i];
-    }
-
-    std::cout << "Enter search key: ";
-    std::cin >> key;
-
-    // this is use for find value in given array
-    int res = binary_search(a, n - 1, key);
-    if (res != -1)
-        std::cout << key << " found at index " << res << std::endl;
-    else
-        std::cout << key << " not found" << std::endl;
-
-    delete[] a;
-    return 0;
+int main() {
+    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+    int n = 10;
+    binary(0, n, arr, 10);
 }
