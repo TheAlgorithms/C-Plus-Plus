@@ -217,11 +217,19 @@ bool BGraph::dfs(int u)
     return true;
 }
 
-// Default Constructor for initialization
+/**
+ * Function documentation
+ * @brief Default Constructor for initialization
+ */
 BGraph::BGraph():NIL(0),INF(INT_MAX)
 {}
 
-// Constructor for initialization
+/**
+ * Function documentation
+ * @brief Constructor for initialization
+ * @param 'm' is the number of vertices on left side of Bipartite Graph
+ * @param 'n' is the number of vertices on right side of Bipartite Graph
+ */
 BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
 {
     this->m = m;
@@ -229,7 +237,12 @@ BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
     adj = std::vector<std::list<int> >(m + 1);
 }
 
-// function to add edge from u to v
+/**
+ * Function documentation
+ * @brief function to add edge from u to v
+ * @param 'u' is the position of first vertex
+ * @param 'v' is the position of second vertex
+ */
 void BGraph::addEdge(int u, int v)
 {
     adj[u].push_back(v); // Add v to u’s list.
@@ -239,7 +252,7 @@ void BGraph::addEdge(int u, int v)
 int main()
 {
     int v1 = 0, v2 = 0, e = 0;
-    std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
+    std::cin >> v1 >> v2 >> e; ///< vertices of left side, right side and edges
     BGraph g(v1, v2); // 
     int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
