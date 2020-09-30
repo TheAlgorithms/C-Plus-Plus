@@ -32,7 +32,7 @@ class queue {
     void display() {
         node<Kind, Priority> *current = queueFront;
         std::cout << "Front --> ";
-        while (current != NULL) {
+        while (current != nullptr) {
             std::cout << "(" << current->data << "," << current->prior
                       << ")    ";
             current = current->next;
@@ -43,8 +43,8 @@ class queue {
 
     /** Default constructor*/
     queue() {
-        queueFront = NULL;
-        queueRear = NULL;
+        queueFront = nullptr;
+        queueRear = nullptr;
         size = 0;
     }
 
@@ -52,15 +52,15 @@ class queue {
     ~queue() = default;
 
     /** Determine whether the queue is empty */
-    bool isEmptyQueue() { return (queueFront == NULL); }
+    bool isEmptyQueue() { return (queueFront == nullptr); }
 
     /** Add new item to the queue. */
     void insert(Kind item, Priority lvl) {
         auto *newNode = new node<Kind, Priority>;
         newNode->data = item;
-        newNode->next = NULL;
+        newNode->next = nullptr;
         newNode->prior = lvl;
-        if (queueFront == NULL) {
+        if (queueFront == nullptr) {
             queueFront = newNode;
             queueRear = newNode;
         } else {
@@ -72,7 +72,7 @@ class queue {
 
     /** Return the data of the first element of the queue */
     Kind frontData() {
-        assert(queueFront != NULL);
+        assert(queueFront != nullptr);
         return queueFront->data;
     }
 
@@ -96,7 +96,7 @@ class queue {
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
             /** Find the highest priority element */
-            while (temp != NULL && (temp == queueRear || temp->next != NULL)) {
+            while (temp != nullptr && (temp == queueRear || temp->next != nullptr)) {
                 if (temp->prior > max) {
                     max = temp->prior;
                     maxPrev = prev;
@@ -110,23 +110,23 @@ class queue {
             if (maxElem == queueFront) {
                 queueFront = queueFront->next;
             } else if (maxElem == queueRear) {
-                maxPrev->next = NULL;
+                maxPrev->next = nullptr;
                 queueRear = maxPrev;
-            } else if (maxPrev != NULL) {
+            } else if (maxPrev != nullptr) {
                 maxPrev->next = after;
-                if (after == NULL)
+                if (after == nullptr)
                     queueRear = maxPrev;
             }
-            maxElem->next = NULL;
+            maxElem->next = nullptr;
             return maxElem;
         } else {
             std::cout << "Queue is empty !" << std::endl;
-            return NULL;
+            return nullptr;
         }
     }
 
     /** Clear queue */
-    void clear() { queueFront = NULL; }
+    void clear() { queueFront = nullptr; }
 
     /** Get the size of the queue*/
     int getSize() { return size; }
