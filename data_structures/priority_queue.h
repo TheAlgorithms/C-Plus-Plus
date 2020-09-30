@@ -21,7 +21,7 @@ template <class Kind, class Priority>
 struct node {
     Kind data;
     node<Kind, Priority> *next;
-    Priority prior;       // priority level which must be >= 0
+    Priority prior;  // priority level which must be >= 0
 };
 
 /** Definition of the priority queue class */
@@ -33,7 +33,8 @@ class queue {
         node<Kind, Priority> *current = queueFront;
         std::cout << "Front --> ";
         while (current != NULL) {
-            std::cout << "(" << current->data << ","<< current->prior << ")    ";
+            std::cout << "(" << current->data << "," << current->prior
+                      << ")    ";
             current = current->next;
         }
         std::cout << std::endl;
@@ -48,22 +49,21 @@ class queue {
     }
 
     /** Destructor */
-    ~queue() {}
+    ~queue() = default;
 
     /** Determine whether the queue is empty */
     bool isEmptyQueue() { return (queueFront == NULL); }
 
     /** Add new item to the queue. */
     void insert(Kind item, Priority lvl) {
-        node<Kind, Priority> *newNode = new node<Kind, Priority>;
+        auto *newNode = new node<Kind, Priority>;
         newNode->data = item;
         newNode->next = NULL;
         newNode->prior = lvl;
         if (queueFront == NULL) {
             queueFront = newNode;
             queueRear = newNode;
-        }
-        else {
+        } else {
             queueRear->next = newNode;
             queueRear = queueRear->next;
         }
@@ -77,14 +77,10 @@ class queue {
     }
 
     /** Return the  first element of the queue */
-    node<Kind, Priority> *front() {
-        return queueFront;
-    }
+    node<Kind, Priority> *front() { return queueFront; }
 
     /** Return the  last element of the queue */
-    node<Kind, Priority> *last() {
-        return queueRear;
-    }
+    node<Kind, Priority> *last() { return queueRear; }
 
     /**
      * Remove the element from the queue that has the highest priority
@@ -94,8 +90,8 @@ class queue {
         if (!isEmptyQueue()) {
             size--;
             node<Kind, Priority> *temp = queueFront;
-            node<Kind, Priority> *prev = new node<Kind, Priority>;
-            node<Kind, Priority> *maxPrev = new node<Kind, Priority>;
+            auto prev = new node<Kind, Priority>;
+            auto maxPrev = new node<Kind, Priority>;
             node<Kind, Priority> *after = queueFront->next;
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
@@ -118,7 +114,7 @@ class queue {
                 queueRear = maxPrev;
             } else if (maxPrev != NULL) {
                 maxPrev->next = after;
-                if (after == NULL)                
+                if (after == NULL)
                     queueRear = maxPrev;
             }
             maxElem->next = NULL;
@@ -140,4 +136,3 @@ class queue {
     node<Kind, Priority> *queueRear;  /**< Pointer to the rear of the queue  */
     int size;
 };
-
