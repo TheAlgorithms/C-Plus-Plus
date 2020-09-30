@@ -48,6 +48,8 @@ int main() {
     assert(q.last()->data == "C");
     assert(q.last()->prior == 3);
     q.insert("D",1);
+    assert(q.last()->data == "D");
+    assert(q.last()->prior == 1);
     q.display();
     assert(q.getSize() == 4);
     cout << "PASS" << endl;
@@ -66,8 +68,8 @@ int main() {
     assert(q.getSize() == 3);
 
     node<string, Priority> *remove2 = q.deQueue();
-    assert(remove1->data == "A");
-    assert(remove1->prior == 2);
+    assert(remove2->data == "A");
+    assert(remove2->prior == 2);
     assert(q.getSize() == 2);
     
     

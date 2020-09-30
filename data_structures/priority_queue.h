@@ -96,32 +96,36 @@ class queue {
      */
     node<Kind, Priority> *deQueue() {
         if (!isEmptyQueue()) {
+            size--;
             node<Kind, Priority> *temp = queueFront;
             node<Kind, Priority> *prev = NULL;
+            node<Kind, Priority> *maxPrev = NULL;
             node<Kind, Priority> *after = queueFront->next;
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
-            while (temp->next != NULL || temp == queueRear) {
+            /** Find the highest priority element */
+            while (temp != NULL && (temp == queueRear || temp->next != NULL)) {
                 if (temp->prior > max) {
                     max = temp->prior;
+                    maxPrev = prev;
                     maxElem = temp;
+                    after = temp->next;
                 }
-                temp = temp->next;
                 prev = temp;
-                after = temp->next;
-            }
-            if (prev != NULL) {
-                prev->next = after;
-                if (after == NULL)
-                    queueRear = prev;
-            // If the queue has one node, return NULL.
-            } else {
-                queueFront = NULL;
-                queueRear = NULL;
-                return NULL;
+                temp = temp->next;
             }
 
-            size--;
+            if (maxElem == queueFront) {
+                queueFront = queueFront->next;
+            } else if (maxElem == queueRear) {
+                maxPrev->next = NULL;
+                queueRear = maxPrev;
+            } else if (maxPrev != NULL) {
+                maxPrev->next = after;
+                if (after == NULL)                
+                    queueRear = maxPrev;
+            }
+            maxElem->next = NULL;
             return maxElem;
         } else {
             cout << "Queue is empty !" << endl;
