@@ -1,4 +1,4 @@
-**
+/**
  * \file
  * \brief [Linear search
  * algorithm](https://en.wikipedia.org/wiki/Linear_search)
