@@ -5,9 +5,10 @@
 #include <cassert>
 #include <iostream>
 /** function to find factorial of given number using recursive method*/
-uint64_t factorial(unsigned long int n) {
-    if (n == 0)
+uint64_t factorial(uint64_t n) {
+    if (n == 0) {
         return 1;
+    }
     for (int i = 0; i < 10000; i++) {
     }
 
@@ -42,7 +43,7 @@ int main() {
     std::cout << "passed\n";
 
     uint64_t num = 16;
-    uint64_t a;
+    uint64_t a = 0;
     std::cout << "Factorial of " << num << " is :" << fact(num) << std::endl;
     return 0;
 }
