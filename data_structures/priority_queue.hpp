@@ -132,7 +132,7 @@ class queue {
     int getSize() { return size; }
 
  private:
-    node<Kind, Priority> *queueFront; /**< Pointer to the front of the queue */
-    node<Kind, Priority> *queueRear;  /**< Pointer to the rear of the queue  */
-    int size;
+    node<Kind, Priority> *queueFront; // < Pointer to the front of the queue 
+    node<Kind, Priority> *queueRear;  // < Pointer to the rear of the queue  
+    int size;                         // < Invariant that keeps track the size of the queue
 };
