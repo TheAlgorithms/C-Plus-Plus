@@ -4,7 +4,7 @@
  * algorithm](https://en.wikipedia.org/wiki/Linear_search)
  */
 #include <iostream>
-using namespace std;
+#include <vector>
 /**
  * Algorithm implementation
  * \param [in] array array to search in
@@ -20,13 +20,15 @@ int main() {
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
 
-    int array[size];
+    vector <int> array (size);
     int key = 0;
     int index = -1;
     // Input array
     std::cout << "\nEnter the Array of " << size << " numbers : ";
     for (int i = 0; i < size; i++) {
-        std::cin >> array[i];
+        int x = 0;
+        std::cin >> x;
+        array.push_back(x);
     }
 
     std::cout << "\nEnter the number to be searched : ";
