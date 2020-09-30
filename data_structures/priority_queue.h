@@ -13,10 +13,9 @@
 #include <cassert>
 #include <iostream>
 
-typedef int Priority;
+using Priority = int;
 
-#define LOWEST_PRIORITY -1;
-
+static constexpr int LOWEST_PRIORITY = -1;
 
 /** Definition of the node */
 template <class Kind, class Priority>
