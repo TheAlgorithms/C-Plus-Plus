@@ -27,7 +27,8 @@
 namespace dynamic_programming {
 /**
  * @namespace kadane
- * @brief Functions for [Kadane](https://en.wikipedia.org/wiki/Kadane%27s_algorithm) algorithm.
+ * @brief Functions for
+ * [Kadane](https://en.wikipedia.org/wiki/Kadane%27s_algorithm) algorithm.
  */
 namespace kadane {
 /**
