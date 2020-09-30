@@ -53,8 +53,10 @@ void show(int* arr, const int size);
  * 
  */
 int countInversion(int* arr, const int size){
-    int temp[size];
-    return mergeSort(arr, temp, 0, size-1);
+    std::vector<int> temp;
+    temp.reserve(size);
+    temp.assign(size,0);
+    return mergeSort(arr, temp.data(), 0, size-1);
 }
 
 /**
