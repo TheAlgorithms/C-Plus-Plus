@@ -32,6 +32,7 @@ var namespaces_dup =
     [ "spirograph", "da/dd3/namespacespirograph.html", null ],
     [ "statistics", "d2/dcf/namespacestatistics.html", null ],
     [ "std", "d8/dcc/namespacestd.html", null ],
+    [ "strand", "d8/d1d/namespacestrand.html", null ],
     [ "string_search", "d9/d03/namespacestring__search.html", null ],
     [ "strings", "df/dcb/namespacestrings.html", null ],
     [ "util_functions", "d3/d17/namespaceutil__functions.html", null ],

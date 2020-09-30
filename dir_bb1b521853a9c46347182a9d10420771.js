@@ -12,5 +12,6 @@ var dir_bb1b521853a9c46347182a9d10420771 =
     [ "pigeonhole_sort.cpp", "dd/da8/pigeonhole__sort_8cpp.html", "dd/da8/pigeonhole__sort_8cpp" ],
     [ "quick_sort.cpp", "d1/d21/quick__sort_8cpp.html", "d1/d21/quick__sort_8cpp" ],
     [ "quick_sort_3.cpp", "d3/d4c/quick__sort__3_8cpp.html", "d3/d4c/quick__sort__3_8cpp" ],
-    [ "shell_sort2.cpp", "d4/d7a/shell__sort2_8cpp.html", "d4/d7a/shell__sort2_8cpp" ]
+    [ "shell_sort2.cpp", "d4/d7a/shell__sort2_8cpp.html", "d4/d7a/shell__sort2_8cpp" ],
+    [ "strand_sort.cpp", "dc/dd9/strand__sort_8cpp.html", "dc/dd9/strand__sort_8cpp" ]
 ];
