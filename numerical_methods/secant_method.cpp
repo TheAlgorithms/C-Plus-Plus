@@ -1,5 +1,16 @@
 /*
-
+ * \brief Solve the equation \f$f(x)=0\f$ using [Secant
+ * method](https://en.wikipedia.org/wiki/Secant_method)
+ *
+ * Given an equation f(x).
+ * Primary condition for secant method convergence is a and b should be closer to the root. 
+ * It implies that smaller the interval precision is higher.
+ * We first find an interval (a,b) such that f(a)*f(b) < 0.
+ * It ensures that there is a one root between a and b.
+ * We find multiple roots in multiple interval by separate function calls.
+ * equation used for iterations is :
+   x_(n) = x_(n-2) - (x_(n-2)-x_(n-1))*(f(x_(n-2)))/(f(x_(n-2))-f(x_(n-1)))
+ * The Process is continued till a close enough approximation is achieved.
  */
 #include <cmath>
 #include <iostream>
@@ -14,12 +25,12 @@ using namespace std;
 static double eq(double x) {
     return (x*x-x);  // original equation
 }
-//finding root in an interval
+//function for finding root in an interval
 static double secant(double x1,double x2,double y1,double y2){
     double diff = x1-x2;
     if(diff<0)
     diff= (-1)*diff;
-    if(diff<0.001){
+    if(diff<0.001){  // 0.001 is the precision constant.
         if(y1<0)
         y1=-y1;
         if(y2<0)
@@ -32,9 +43,9 @@ static double secant(double x1,double x2,double y1,double y2){
     double x3,y3;
     x3 = x1 - (x1-x2)*(y1)/(y1-y2);
     y3 = eq(x3);
-    return secant(x2,x3,y2,y3);
+    return secant(x2,x3,y2,y3);   //recursive call for next iteration.
 }
-//printing roots
+//function for printing roots
 void printRoot(double root,int COUNT){
     if(COUNT==1)
     cout << "Your 1st root is : " << root << endl;
