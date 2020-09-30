@@ -34,4 +34,6 @@ a.out
 *.out
 *.app
 
+bin/
 build/
+doc/
