@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Counting Inversions using Merge Sort
+ * @brief Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
  *
  * Program to count the number of inversions in an array
  * using merge-sort.
