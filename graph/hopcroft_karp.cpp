@@ -58,53 +58,43 @@
  */
 class BGraph
 {
-    // m and n are number of vertices on left
-    // and right sides of Bipartite Graph
-    int m, n;
+	
+    int m;  ///< m is the number of vertices on left side of Bipartite Graph
+    int n;  ///< n is the number of vertices on right side of Bipartite Graph
     const int NIL;
     const int INF;
 
-
-    // adj[u] stores adjacents of left side
-    // vertex 'u'. The value of u ranges from 1 to m.
-    // 0 is used for dummy vertex
-    std::vector<std::list<int> >adj;
-
 	
-    //vectors for hopcroftKarp()
-	std::vector<int> pair_u;
-	std::vector<int> pair_v;
-	std::vector<int> dist;
+    std::vector<std::list<int> >adj;  ///< adj[u] stores adjacents of left side and 0 is used for dummy vertex
+
+    std::vector<int> pair_u; ///< value of vertex 'u' ranges from 1 to m
+    std::vector<int> pair_v; ///< value of vertex 'v' ranges from 1 to n
+    std::vector<int> dist;   ///< dist represents the distance between vertex 'u' and vertex 'v'
 
 public:
-    BGraph();		       //Default Constructor
-    BGraph(int m, int n);     // Constructor
-    void addEdge(int u, int v); // To add edge
-
-    // Returns true if there is an augmenting path
-    bool bfs();
-
-    // Adds augmenting path if there is one beginning
-    // with u
-    bool dfs(int u);
-
-    // Returns size of maximum matching
-    int hopcroftKarpAlgorithm();
+    BGraph();		       ///<Default Constructor
+    BGraph(int m, int n);     ///< Constructor
+    void addEdge(int u, int v); ///< To add edge
+    
+    bool bfs(); ///< Returns true if there is an augmenting path    
+    bool dfs(int u); ///< Adds augmenting path if there is one beginning with u  
+	
+    int hopcroftKarpAlgorithm();  ///< Returns size of maximum matching
 };
 
-// Returns size of maximum matching
+
+/**
+ * Function documentation
+ * @returns size of maximum matching
+ */
 int BGraph::hopcroftKarpAlgorithm()
 {
-    // pair_u[u] stores pair of u in matching on left side of Bipartite Graph.
-    // If u doesn't have any pair, then pair_u[u] is NIL
-    pair_u = std::vector<int>(m + 1);
 
-    // pair_v[v] stores pair of v in matching on right side of Biparite Graph.
-    // If v doesn't have any pair, then pair_u[v] is NIL
-    pair_v = std::vector<int>(n + 1);
+    pair_u = std::vector<int>(m + 1); ///< pair_u[u] stores pair of u in matching on left side of Bipartite Graph.If u doesn't have any pair, then pair_u[u] is NIL
 
-    // dist[u] stores distance of left side vertices
-    dist = std::vector<int>(m + 1);
+    pair_v = std::vector<int>(n + 1); ///< pair_v[v] stores pair of v in matching on right side of Biparite Graph.If v doesn't have any pair, then pair_u[v] is NIL
+
+    dist = std::vector<int>(m + 1);  ///< dist[u] stores distance of left side vertices
 
     // Initialize NIL as pair of all vertices
     for (int u = 0; u <= m; u++){
@@ -113,12 +103,10 @@ int BGraph::hopcroftKarpAlgorithm()
     for (int v = 0; v <= n; v++){
         pair_v[v] = NIL;
     }
+  
+    int result = 0;  ///< Initialize result
 
-    // Initialize result
-    int result = 0;
-
-    // Keep updating the result while there is an
-    // augmenting path possible.
+    // Keep updating the result while there is an augmenting path possible.
     while (bfs())
     {
         // Find a free vertex to check for a matching
@@ -135,35 +123,38 @@ int BGraph::hopcroftKarpAlgorithm()
     return result;
 }
 
-// Returns true if there is an augmenting path available, else returns false
+
+/**
+ * Function documentation
+ * @returns 'true' if there is an augmenting path available
+ * @returns 'false' if there is no augmenting path available
+ */
 bool BGraph::bfs()
 {
-    std::queue<int> q; //an integer queue for bfs
+    std::queue<int> q; ///< an integer queue for bfs
 
     // First layer of vertices (set distance as 0)
     for (int u = 1; u <= m; u++)
     {
         // If this is a free vertex, add it to queue
         if (pair_u[u] == NIL){
-            // u is not matched so distance is 0
-            dist[u] = 0;
+            
+            dist[u] = 0; //< u is not matched so distance is 0
             q.push(u);
         }
 
-        // Else set distance as infinite so that this vertex is considered next time for availibility
         else{
-            dist[u] = INF;
+            dist[u] = INF; //< set distance as infinite so that this vertex is considered next time for availibility
 	}
     }
 
-    // Initialize distance to NIL as infinite
-    dist[NIL] = INF;
+    
+    dist[NIL] = INF; //< Initialize distance to NIL as infinite
 
     // q is going to contain vertices of left side only.
     while (!q.empty())
     {
-        // dequeue a vertex
-        int u = q.front();
+        int u = q.front();  //< dequeue a vertex
         q.pop();
 
         // If this node is not NIL and can provide a shorter path to NIL then
@@ -175,24 +166,27 @@ bool BGraph::bfs()
             {
                 int v = *it;
 
-                // If pair of v is not considered so far
-                // i.e. (v, pair_v[v]) is not yet explored edge.
+                // If pair of v is not considered so far i.e. (v, pair_v[v]) is not yet explored edge.
                 if (dist[pair_v[v]] == INF)
                 {
-                    // Consider the pair and push it to queue
-                    dist[pair_v[v]] = dist[u] + 1;
-                    q.push(pair_v[v]);
+                    dist[pair_v[v]] = dist[u] + 1; 
+                    q.push(pair_v[v]);    ///< Consider the pair and push it to queue
                 }
             }
         }
     }
 
-    // If we could come back to NIL using alternating path of distinct
-    // vertices then there is an augmenting path available
-    return (dist[NIL] != INF);
+   
+   
+    return (dist[NIL] != INF);   //< If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available
 }
 
-// Returns true if there is an augmenting path beginning with free vertex u
+/**
+ * Function documentation
+ * @param 'u' represents position of vertex
+ * @returns 'true' if there is an augmenting path beginning with free vertex u
+ * @returns 'false' if there is no augmenting path beginning with free vertex u
+ */
 bool BGraph::dfs(int u)
 {
     if (u != NIL)
@@ -200,15 +194,15 @@ bool BGraph::dfs(int u)
         std::list<int>::iterator it;
         for (it = adj[u].begin(); it != adj[u].end(); ++it)
         {
-            // Adjacent vertex of u
-            int v = *it;
+            
+            int v = *it; //< Adjacent vertex of u
 
             // Follow the distances set by BFS search
             if (dist[pair_v[v]] == dist[u] + 1)
             {
-                // If dfs for pair of v also returnn true then
+                // If dfs for pair of v also return true then new matching possible, store the matching
                 if (dfs(pair_v[v]) == true)
-                {   // new matching possible, store the matching
+                {   
                     pair_v[v] = u;
                     pair_u[u] = v;
                     return true;
@@ -216,17 +210,26 @@ bool BGraph::dfs(int u)
             }
         }
 
-        // If there is no augmenting path beginning with u then.
-        dist[u] = INF;
+        
+        dist[u] = INF; //< If there is no augmenting path beginning with u then set distance to infinite.
         return false;
     }
     return true;
 }
-// Default Constructor for initialization
+
+/**
+ * Function documentation
+ * @brief Default Constructor for initialization
+ */
 BGraph::BGraph():NIL(0),INF(INT_MAX)
 {}
 
-// Constructor for initialization
+/**
+ * Function documentation
+ * @brief Constructor for initialization
+ * @param 'm' is the number of vertices on left side of Bipartite Graph
+ * @param 'n' is the number of vertices on right side of Bipartite Graph
+ */
 BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
 {
     this->m = m;
@@ -234,17 +237,22 @@ BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
     adj = std::vector<std::list<int> >(m + 1);
 }
 
-// function to add edge from u to v
+/**
+ * Function documentation
+ * @brief function to add edge from u to v
+ * @param 'u' is the position of first vertex
+ * @param 'v' is the position of second vertex
+ */
 void BGraph::addEdge(int u, int v)
 {
     adj[u].push_back(v); // Add v to u’s list.
 }
 
-
+/** Main function */
 int main()
 {
     int v1 = 0, v2 = 0, e = 0;
-    std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
+    std::cin >> v1 >> v2 >> e; ///< vertices of left side, right side and edges
     BGraph g(v1, v2); // 
     int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
