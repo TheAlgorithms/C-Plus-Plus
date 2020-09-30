@@ -30,13 +30,10 @@
 #include <iostream>
 #include <vector>
 
-namespace sorting   {
-namespace inversion {
-
-int mergeSort(int* arr, int* temp, int left, int right);
-int merge(int* arr, int* temp, int left, int mid, int right);
-int countInversion(int* arr, const int size);
-void show(int* arr, const int size);
+int sorting::inversion::mergeSort(int* arr, int* temp, int left, int right);
+int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right);
+int sorting::inversion::countInversion(int* arr, const int size);
+void sorting::inversion::show(int* arr, const int size);
 
 /**
  * Funtion countInversion() returns the number of inversion
@@ -52,7 +49,7 @@ void show(int* arr, const int size);
  * @param array_size    - number of elementa in the array
  * 
  */
-int countInversion(int* arr, const int size){
+int sorting::inversion::countInversion(int* arr, const int size){
     std::vector<int> temp;
     temp.reserve(size);
     temp.assign(size,0);
@@ -73,7 +70,7 @@ int countInversion(int* arr, const int size){
  * @param right - upper bound of array
  * 
  */
-int mergeSort(int* arr, int* temp, int left, int right) {
+int sorting::inversion::mergeSort(int* arr, int* temp, int left, int right) {
     int mid = 0, inv_count = 0;
     if(right>left)
     {
@@ -105,7 +102,7 @@ int mergeSort(int* arr, int* temp, int left, int right) {
  * @param right  upper bound of arr[] and right-sub-array
  * 
  */
-int merge(int* arr, int* temp, int left, int mid, int right)    {
+int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right)    {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
     int k = left;   /* k --> index for resultant array temp */
@@ -141,19 +138,13 @@ int merge(int* arr, int* temp, int left, int mid, int right)    {
  * @param array_size    size of input array arr[]
  * 
  */
-void show(int* arr, const int array_size) {
+void sorting::inversion::show(int* arr, const int array_size) {
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
         std::cout<<" "<< arr[i];
     }
     std::cout << "\n";
 }
-
-}   // namespace inversion
-}   // namespace sorting
-
-using sorting::inversion::countInversion;
-using sorting::inversion::show;
 
 /**
  * @brief Main function
@@ -196,3 +187,4 @@ int main() {
 
     return 0;
 }
+/** @author [Rakshit Raj](https://github.com/rakshitraj/) */
