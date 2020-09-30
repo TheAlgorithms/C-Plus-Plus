@@ -9,7 +9,6 @@
  * @see queue.h
  */
 
-
 #include <cassert>
 #include <iostream>
 
@@ -56,8 +55,7 @@ class queue {
 
     /** Add new item to the queue. */
     void insert(Kind item, Priority lvl) {
-        node<Kind, Priority> *newNode;
-        newNode = new node<Kind, Priority>;
+        node<Kind, Priority> *newNode = new node<Kind, Priority>;
         newNode->data = item;
         newNode->next = NULL;
         newNode->prior = lvl;
@@ -96,8 +94,8 @@ class queue {
         if (!isEmptyQueue()) {
             size--;
             node<Kind, Priority> *temp = queueFront;
-            node<Kind, Priority> *prev = NULL;
-            node<Kind, Priority> *maxPrev = NULL;
+            node<Kind, Priority> *prev = new node<Kind, Priority>;
+            node<Kind, Priority> *maxPrev = new node<Kind, Priority>;
             node<Kind, Priority> *after = queueFront->next;
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
