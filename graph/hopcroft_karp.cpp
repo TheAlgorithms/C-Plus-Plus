@@ -240,8 +240,8 @@ BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
 /**
  * Function documentation
  * @brief function to add edge from u to v
- * @param 'u' is the position of first vertex
- * @param 'v' is the position of second vertex
+ * @param u is the position of first vertex
+ * @param v is the position of second vertex
  */
 void BGraph::addEdge(int u, int v)
 {
