@@ -19,7 +19,7 @@
 #include <iostream>
 #include <string>
 
-#include "./priority_queue.h"
+#include "./priority_queue.hpp"
 
 /**
  * @brief Main function
