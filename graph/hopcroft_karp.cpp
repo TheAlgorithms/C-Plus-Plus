@@ -248,7 +248,10 @@ void BGraph::addEdge(int u, int v)
     adj[u].push_back(v); // Add v to u’s list.
 }
 
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main()
 {
     int v1 = 0, v2 = 0, e = 0;
