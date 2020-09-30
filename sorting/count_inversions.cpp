@@ -25,7 +25,8 @@
  *      the number of inversions by merging the two.
  *   4. The base case of recursion is when there is only one element in the given half.
  *   5. Print the answer
- * 
+ *
+ * @author [Rakshit Raj](https://github.com/rakshitraj)
  */
 #include <iostream>
 #include <vector>
