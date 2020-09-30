@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d4/db4/struct_segment_intersection.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node1" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="5,5,152,61"/>
+<area shape="rect" id="node2" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html" title="The Heavy&#45;Light Decomposition class." alt="" coords="200,45,347,101"/>
+<area shape="rect" id="node3" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="5,85,152,141"/>
 </map>

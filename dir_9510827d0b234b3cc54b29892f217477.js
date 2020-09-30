@@ -10,6 +10,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "palindrome_of_number.cpp", "da/d9a/palindrome__of__number_8cpp.html", "da/d9a/palindrome__of__number_8cpp" ],
     [ "paranthesis_matching.cpp", "dc/dc5/paranthesis__matching_8cpp.html", "dc/dc5/paranthesis__matching_8cpp" ],
     [ "pascal_triangle.cpp", "dc/d1a/pascal__triangle_8cpp.html", "dc/d1a/pascal__triangle_8cpp" ],
+    [ "postfix_evaluation.cpp", "d7/d75/postfix__evaluation_8cpp.html", "d7/d75/postfix__evaluation_8cpp" ],
     [ "primality_test.cpp", "da/d7b/primality__test_8cpp.html", "da/d7b/primality__test_8cpp" ],
     [ "smallest_circle.cpp", "d0/d01/smallest__circle_8cpp.html", "d0/d01/smallest__circle_8cpp" ],
     [ "sparse_matrix.cpp", "d3/d19/sparse__matrix_8cpp.html", "d3/d19/sparse__matrix_8cpp" ],

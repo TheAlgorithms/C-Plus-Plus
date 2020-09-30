@@ -14,11 +14,11 @@ var hierarchy =
     [ "linear_probing::Entry", "db/d19/structlinear__probing_1_1_entry.html", null ],
     [ "quadratic_probing::Entry", "da/dd1/structquadratic__probing_1_1_entry.html", null ],
     [ "FenwickTree", "dd/d91/class_fenwick_tree.html", null ],
+    [ "Graph", "da/d9a/class_graph.html", null ],
+    [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
     [ "graph::Graph", "dc/d61/classgraph_1_1_graph.html", [
       [ "graph::RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", null ]
     ] ],
-    [ "Graph", "da/d9a/class_graph.html", null ],
-    [ "graph::is_graph_bipartite::Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", null ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", null ],
     [ "ciphers::HillCipher", "d6/d26/classciphers_1_1_hill_cipher.html", null ],
     [ "Item", "db/d66/struct_item.html", null ],
@@ -36,11 +36,11 @@ var hierarchy =
     [ "node< Kind >", "d5/da1/structnode.html", null ],
     [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Type >", "d5/da1/structnode.html", null ],
-    [ "Point", "d8/dc8/struct_point.html", null ],
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
+    [ "Point", "d8/dc8/struct_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
+    [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
@@ -48,6 +48,7 @@ var hierarchy =
     ] ],
     [ "data_structures::SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
+    [ "others::postfix_expression::Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", null ],
     [ "stack< Type >", "d1/dc2/classstack.html", null ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", null ],
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
@@ -56,7 +57,7 @@ var hierarchy =
     [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
-    [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "data_structures::trie", "d0/d3e/classdata__structures_1_1trie.html", null ],
+    [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ]
 ];
