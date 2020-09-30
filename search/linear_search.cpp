@@ -1,10 +1,10 @@
-/**
+**
  * \file
  * \brief [Linear search
  * algorithm](https://en.wikipedia.org/wiki/Linear_search)
  */
 #include <iostream>
-
+#include <set>
 /**
  * Algorithm implementation
  * \param [in] array array to search in
@@ -17,12 +17,13 @@
 
 /** main function */
 int main() {
-    int size;
+    int size = 0;
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
-    int arr[size];
-    int key;
-    int index = -1;
+
+    int *array = new int[size];
+    int key = 0;
+    int index =-1;
     // Input array
     std::cout << "\nEnter the Array of " << size << " numbers : ";
     for (int i = 0; i < size; i++) {
@@ -33,19 +34,20 @@ int main() {
     std::cin >> key;
     for(int i=0;i<size;i++)
     {
-        if(arr[i]==key)
+        if(array[i]==key)
         {
-            index = i;
+            index=i;
             break;
         }
-        break;
-    }   
-            
+      break;
+    }    
+    
     if (index != -1) {
         std::cout << "\nNumber found at index : " << index;
     } else {
         std::cout << "\nNot found";
     }
 
+  
     return 0;
 }
