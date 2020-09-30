@@ -30,10 +30,21 @@
 #include <iostream>
 #include <vector>
 
-int sorting::inversion::mergeSort(int* arr, int* temp, int left, int right);
-int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right);
-int sorting::inversion::countInversion(int* arr, const int size);
-void sorting::inversion::show(int* arr, const int size);
+/**
+ * @namespace sorting
+ * @brief Sorting algorithms
+ */
+namespace sorting  {
+/**
+ * @namespace inversion
+ * @brief Functions for counting inversions using Merge Sort algorithm
+ */
+namespace inversion {
+
+int mergeSort(int* arr, int* temp, int left, int right);
+int merge(int* arr, int* temp, int left, int mid, int right);
+int countInversion(int* arr, const int size);
+void show(int* arr, const int size);
 
 /**
  * Funtion countInversion() returns the number of inversion
@@ -47,9 +58,9 @@ void sorting::inversion::show(int* arr, const int size);
  * 
  * @param arr   - array, data member of std::vector<int>, input for counting inversions
  * @param array_size    - number of elementa in the array
- * 
+ * @returns number of inversions in input array, sorts the array
  */
-int sorting::inversion::countInversion(int* arr, const int size){
+int countInversion(int* arr, const int size){
     std::vector<int> temp;
     temp.reserve(size);
     temp.assign(size,0);
@@ -68,9 +79,9 @@ int sorting::inversion::countInversion(int* arr, const int size){
  * @param temp  - merged resultant array
  * @param left  - lower bound of array
  * @param right - upper bound of array
- * 
+ * @returns number of inversions in array
  */
-int sorting::inversion::mergeSort(int* arr, int* temp, int left, int right) {
+int mergeSort(int* arr, int* temp, int left, int right) {
     int mid = 0, inv_count = 0;
     if(right>left)
     {
@@ -100,9 +111,9 @@ int sorting::inversion::mergeSort(int* arr, int* temp, int left, int right) {
  * @param mid    midpoint, upper bound of left sub-array,
  *               (mid+1) gives the lower bound of right-sub-array
  * @param right  upper bound of arr[] and right-sub-array
- * 
+ * @returns number of inversions found in merge step
  */
-int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right)    {
+int merge(int* arr, int* temp, int left, int mid, int right)    {
     int i = left;   /* i --> index of left sub-array */
     int j = mid+1;  /* j --> index for right sub-array */
     int k = left;   /* k --> index for resultant array temp */
@@ -139,13 +150,16 @@ int sorting::inversion::merge(int* arr, int* temp, int left, int mid, int right)
  * @returns void
  * 
  */
-void sorting::inversion::show(int* arr, const int array_size) {
+void show(int* arr, const int array_size) {
     std::cout<< "Printing array: \n";
     for( int i=0; i<array_size; i++){
         std::cout<<" "<< arr[i];
     }
     std::cout << "\n";
 }
+
+} // nmaespace inversion
+} // namespace sorting
 
 /**
  * @brief Main function
@@ -176,15 +190,15 @@ int main() {
     int size = arr.size();
 
     std::cout << "\n";
-    show(arr.data(), size);
+    sorting::inversion::show(arr.data(), size);
     std::cout << "\n";
 
     // Counting inversions
-    std::cout << "\nThe number of inversions: "<< countInversion(arr.data(), size) << "\n";
+    std::cout << "\nThe number of inversions: "<< sorting::inversion::countInversion(arr.data(), size) << "\n";
 
     // Output sorted array
     std::cout << "\nSorted array -->  \n";
-    show(arr.data(), size);
+    sorting::inversion::show(arr.data(), size);
 
     return 0;
 }
