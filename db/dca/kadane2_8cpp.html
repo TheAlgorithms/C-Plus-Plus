@@ -132,7 +132,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a href="https://en.wikipedia.org/wiki/Kadane%27s_algorithm">Kadane Algorithm</a> </p>
 <p>Kadane algorithm is used to find the maximum sum subarray in an array and maximum sum subarray problem is the task of finding a contiguous subarray with the largest sum</p>
-<h3><a class="anchor" id="autotoc_md43"></a>
+<h3><a class="anchor" id="autotoc_md44"></a>
 Algorithm</h3>
 <p>The simple idea of the algorithm is to search for all positive contiguous segments of the array and keep track of maximum sum contiguous segment among all positive segments(curr_sum is used for this) Each time we get a positive sum we compare it with max_sum and update max_sum if it is greater than curr_sum</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/ayush523">Ayush Singh</a> </dd></dl>
@@ -155,21 +155,21 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;           {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = 5;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, N&gt;</a> n{};  <span class="comment">// declaring array</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                             <span class="comment">// taking values of elements from user</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n.size(); i++) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n[i];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> max_sum = dynamic_programming::kadane::maxSubArray&lt;N&gt;(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        n);  <span class="comment">// calling maxSubArray function</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum subarray sum is &quot;</span> &lt;&lt; max_sum;  <span class="comment">// Printing the answer</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;           {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = 5;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, N&gt;</a> n{};  <span class="comment">// declaring array</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             <span class="comment">// taking values of elements from user</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n.size(); i++) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n[i];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> max_sum = dynamic_programming::kadane::maxSubArray&lt;N&gt;(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        n);  <span class="comment">// calling maxSubArray function</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum subarray sum is &quot;</span> &lt;&lt; max_sum;  <span class="comment">// Printing the answer</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,17 +205,17 @@ template&lt;size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of maximum subarray sum </dd></dl>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                           {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> curr_sum =</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        0;  <span class="comment">// declaring a variable named as curr_sum and initialized it to 0</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> max_sum = INT_MIN;  <span class="comment">// Initialized max_sum to INT_MIN</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : n) {  <span class="comment">// for loop to iterate over the elements of the array</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        curr_sum += n[i];</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        max_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_sum, curr_sum);  <span class="comment">// getting the maximum value</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        curr_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(curr_sum, 0);  <span class="comment">// updating the value of curr_sum</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> max_sum;  <span class="comment">// returning the value of max_sum</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                           {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> curr_sum =</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        0;  <span class="comment">// declaring a variable named as curr_sum and initialized it to 0</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> max_sum = INT_MIN;  <span class="comment">// Initialized max_sum to INT_MIN</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : n) {  <span class="comment">// for loop to iterate over the elements of the array</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        curr_sum += n[i];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        max_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_sum, curr_sum);  <span class="comment">// getting the maximum value</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        curr_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(curr_sum, 0);  <span class="comment">// updating the value of curr_sum</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> max_sum;  <span class="comment">// returning the value of max_sum</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
