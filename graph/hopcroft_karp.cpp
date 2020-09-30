@@ -183,7 +183,7 @@ bool BGraph::bfs()
 
 /**
  * Function documentation
- * @param 'u' represents position of vertex
+ * @param u represents position of vertex
  * @returns 'true' if there is an augmenting path beginning with free vertex u
  * @returns 'false' if there is no augmenting path beginning with free vertex u
  */
