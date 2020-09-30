@@ -7,7 +7,13 @@
           NO
 */
 
-#include<bits/stdc++.h>
+/*
+  arr = {1,2,3,4}
+  sum = 3
+  output => YES  (3) or (1+2)
+*/
+
+#include<iostream>
 #define M 1001
 using namespace std;
 
