@@ -19,25 +19,23 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 #include "./priority_queue.h"
 
 int main() {
-    queue<string, Priority> q;
-    cout << "---------------------- Test construct ----------------------"
-              << endl;
+    queue<std::string, Priority> q;
+    std::cout << "---------------------- Test construct ----------------------"
+              << std::endl;
     q.display();
-    cout << "PASS" << endl;
-    cout
+    std::cout << "PASS" << std::endl;
+    std::cout
         << "---------------------- Test isEmptyQueue ----------------------"
-        << endl;
+        << std::endl;
     assert(q.isEmptyQueue());
-    cout << "PASS" << endl;
+    std::cout << "PASS" << std::endl;
         
-    cout << "---------------------- Test insert & front() & last() ----------------------"
-              << endl;
-    cout << "Insert (A,2), (B,0), (C,3), (D,1) into queue: " << endl;
+    std::cout << "---------------------- Test insert & front() & last() ----------------------"
+              << std::endl;
+    std::cout << "Insert (A,2), (B,0), (C,3), (D,1) into queue: " << std::endl;
     q.insert("A",2);
     assert(q.front()->data == "A");
     assert(q.front()->prior == 2);
@@ -52,30 +50,30 @@ int main() {
     assert(q.last()->prior == 1);
     q.display();
     assert(q.getSize() == 4);
-    cout << "PASS" << endl;
-    cout << "---------------------- Test front ----------------------"
-              << endl;
-    string value = q.frontData();
+    std::cout << "PASS" << std::endl;
+    std::cout << "---------------------- Test front ----------------------"
+              << std::endl;
+    std::string value = q.frontData();
     assert(value == "A");
-    cout << "PASS" << endl;
+    std::cout << "PASS" << std::endl;
 
-    cout << "---------------------- Test deQueue ----------------------"
-              << endl;
+    std::cout << "---------------------- Test deQueue ----------------------"
+              << std::endl;
     q.display();
-    node<string, Priority> *remove1 = q.deQueue();
+    node<std::string, Priority> *remove1 = q.deQueue();
     assert(remove1->data == "C");
     assert(remove1->prior == 3);
     assert(q.getSize() == 3);
 
-    node<string, Priority> *remove2 = q.deQueue();
+    node<std::string, Priority> *remove2 = q.deQueue();
     assert(remove2->data == "A");
     assert(remove2->prior == 2);
     assert(q.getSize() == 2);
     
     
-    cout << "After (A,2), (C,3) left the queue: " << endl;
+    std::cout << "After (A,2), (C,3) left the queue: " << std::endl;
     q.display();
-    cout << "PASS" << endl;
+    std::cout << "PASS" << std::endl;
     return 0;
 }
 

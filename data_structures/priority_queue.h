@@ -17,7 +17,6 @@ typedef int Priority;
 
 #define LOWEST_PRIORITY -1;
 
-using namespace std;
 
 /** Definition of the node */
 template <class Kind, class Priority>
@@ -34,13 +33,13 @@ class queue {
     /** Show queue */
     void display() {
         node<Kind, Priority> *current = queueFront;
-        cout << "Front --> ";
+        std::cout << "Front --> ";
         while (current != NULL) {
-            cout << "(" << current->data << ","<< current->prior << ")    ";
+            std::cout << "(" << current->data << ","<< current->prior << ")    ";
             current = current->next;
         }
-        cout << endl;
-        cout << "Size of queue: " << size << endl;
+        std::cout << std::endl;
+        std::cout << "Size of queue: " << size << std::endl;
     }
 
     /** Default constructor*/
@@ -128,7 +127,7 @@ class queue {
             maxElem->next = NULL;
             return maxElem;
         } else {
-            cout << "Queue is empty !" << endl;
+            std::cout << "Queue is empty !" << std::endl;
             return NULL;
         }
     }
