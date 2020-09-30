@@ -21,6 +21,10 @@
 
 #include "./priority_queue.h"
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     queue<std::string, Priority> q;
     std::cout << "---------------------- Test construct ----------------------"
@@ -76,4 +80,3 @@ int main() {
     std::cout << "PASS" << std::endl;
     return 0;
 }
-
