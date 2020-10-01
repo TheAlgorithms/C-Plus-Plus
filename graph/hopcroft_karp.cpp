@@ -30,7 +30,7 @@
  * i.e, a matching is maximum if no augmenting path exists.
  * 
  * 
- * ###Algorithm :
+ * ### Algorithm
  * 1) Initialize the Maximal Matching M as empty.
  * 2) While there exists an Augmenting Path P
  *   Remove matching edges of P from M and add not-matching edges of P to M
