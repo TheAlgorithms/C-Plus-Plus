@@ -15,7 +15,7 @@ int binary(int start, int endd, int arr[], int no) {
         return 1;
 
     } else if (no > arr[midd]) {
-        binary(midd + 1, endd, arr, no);
+        return binary(midd + 1, endd, arr, no);
 
     } else {
         return binary(start, midd - 1, arr, no);
@@ -24,6 +24,6 @@ int binary(int start, int endd, int arr[], int no) {
 
 int main() {
     int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-    int n = 10;
-    binary(0, n, arr, 10);
+    int n = 10, ret;
+    ret = binary(0, n, arr, 10);
 }
