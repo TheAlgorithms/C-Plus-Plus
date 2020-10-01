@@ -37,7 +37,7 @@ void enque(circularqueue *q, int val)
     {   
         q->r = (q->r + 1) % q->size;
         q->arr[q->r] = val;
-        std::cout<<"Enqueued Element : "<<val<<endl;
+        std::cout<<"Enqueued Element : "<<val<<std::endl;
     }
     
 }
@@ -71,9 +71,9 @@ int main()
     enque(&q, 12);
     enque(&q, 15);
     enque(&q, 16);
-    std::cout<<"Dequeing element : "<<deque(&q)<<endl;
-    std::cout<<"Dequeing element : "<<deque(&q)<<endl;
-    std::cout<<"Dequeing element : "<<deque(&q)<<endl;
+    std::cout<<"Dequeing element : "<<deque(&q)<<std::endl;
+    std::cout<<"Dequeing element : "<<deque(&q)<<std::endl;
+    std::cout<<"Dequeing element : "<<deque(&q)<<std::endl;
 
     enque(&q, 20);
     enque(&q, 20);
