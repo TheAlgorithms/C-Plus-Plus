@@ -4,6 +4,7 @@
 
 #include <iostream>
 int gcd(int a , int b) {
+	// It takes two arguments a,b and decrease the bigger number until both becomes same.
 	if (b == 0) {
 		return a;
 	}
