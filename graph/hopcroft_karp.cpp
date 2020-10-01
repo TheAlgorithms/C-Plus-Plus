@@ -51,12 +51,13 @@
 #include <list>
 #include <climits>
 #include <memory>
+#include <cassert>
 
 /**
  * @namespace graph 
  * @brief Graph algorithms
  */
- namespace graph {
+ namespace graph { }
 
 /**
  * @brief Represents Bipartite graph for
