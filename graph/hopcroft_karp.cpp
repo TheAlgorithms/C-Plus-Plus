@@ -220,15 +220,14 @@ bool BGraph::dfs(int u)
  * Function documentation
  * @brief Default Constructor for initialization
  */
-BGraph::BGraph() {}
+BGraph::BGraph() = default;
 
 /**
  * @brief Constructor for initialization
  * @param m is the number of vertices on left side of Bipartite Graph
  * @param n is the number of vertices on right side of Bipartite Graph
  */
-BGraph::BGraph(int m, int n):NIL(0),INF(INT_MAX)
-{
+BGraph::BGraph(int m, int n) {
     this->m = m;
     this->n = n;
     adj = std::vector<std::list<int> >(m + 1);
