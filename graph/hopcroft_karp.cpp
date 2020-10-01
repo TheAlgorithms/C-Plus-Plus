@@ -20,7 +20,7 @@
  * with E denoting the edges of the graph, the goal is to find a matching with as many edges as possible. 
  * Equivalently, a matching that covers as many vertices as possible.
  * 
- * ###Augmenting paths :
+ * ### Augmenting paths
  * Given a matching M, an augmenting path is an alternating path that starts from and ends on free vertices. 
  * All single edge paths that start and end with free vertices are augmenting paths.
  * 
