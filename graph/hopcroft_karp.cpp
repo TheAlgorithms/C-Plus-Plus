@@ -85,6 +85,7 @@ public:
 
 /**
  * Function documentation
+ * @brief This function counts the number of augmenting paths between left and right sides of the Bipartite graph
  * @returns size of maximum matching
  */
 int BGraph::hopcroftKarpAlgorithm()
@@ -126,6 +127,7 @@ int BGraph::hopcroftKarpAlgorithm()
 
 /**
  * Function documentation
+ * @brief This function checks for the possibility of augmented path availability 
  * @returns `true` if there is an augmenting path available
  * @returns `false` if there is no augmenting path available
  */
@@ -139,22 +141,22 @@ bool BGraph::bfs()
         // If this is a free vertex, add it to queue
         if (pair_u[u] == NIL){
             
-            dist[u] = 0; //< u is not matched so distance is 0
+            dist[u] = 0; ///< u is not matched so distance is 0
             q.push(u);
         }
 
         else{
-            dist[u] = INF; //< set distance as infinite so that this vertex is considered next time for availibility
+            dist[u] = INF; ///< set distance as infinite so that this vertex is considered next time for availibility
 	}
     }
 
     
-    dist[NIL] = INF; //< Initialize distance to NIL as infinite
+    dist[NIL] = INF; ///< Initialize distance to NIL as infinite
 
     // q is going to contain vertices of left side only.
     while (!q.empty())
     {
-        int u = q.front();  //< dequeue a vertex
+        int u = q.front();  ///< dequeue a vertex
         q.pop();
 
         // If this node is not NIL and can provide a shorter path to NIL then
@@ -178,11 +180,12 @@ bool BGraph::bfs()
 
    
    
-    return (dist[NIL] != INF);   //< If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available
+    return (dist[NIL] != INF);   ///< If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available
 }
 
 /**
  * Function documentation
+ * @brief This functions checks whether an augmenting path is available exists beginning with free vertex u
  * @param u represents position of vertex
  * @returns `true` if there is an augmenting path beginning with free vertex u
  * @returns `false` if there is no augmenting path beginning with free vertex u
@@ -195,7 +198,7 @@ bool BGraph::dfs(int u)
         for (it = adj[u].begin(); it != adj[u].end(); ++it)
         {
             
-            int v = *it; //< Adjacent vertex of u
+            int v = *it; ///< Adjacent vertex of u
 
             // Follow the distances set by BFS search
             if (dist[pair_v[v]] == dist[u] + 1)
@@ -211,7 +214,7 @@ bool BGraph::dfs(int u)
         }
 
         
-        dist[u] = INF; //< If there is no augmenting path beginning with u then set distance to infinite.
+        dist[u] = INF; ///< If there is no augmenting path beginning with u then set distance to infinite.
         return false;
     }
     return true;
