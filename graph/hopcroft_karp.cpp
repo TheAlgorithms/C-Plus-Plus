@@ -152,7 +152,7 @@ bool BGraph::bfs()
         }
 
         else{
-            dist[u] = INF; ///< set distance as infinite so that this vertex is considered next time for availibility
+            dist[u] = INF; // set distance as infinite so that this vertex is considered next time for availibility
 	}
     }
 
