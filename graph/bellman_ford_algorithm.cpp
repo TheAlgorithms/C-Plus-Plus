@@ -7,15 +7,16 @@
 #include <iostream>
 #include <queue>
 #include <vector>  
+long long INT_MAX = 100000000000000000;    //Maximum value
 
 /* The main function finds the shortest distances from the source vertex to all other vertices present in the graph using Bellman-Ford algorithm. 
 The function also detects negative weight cycle, if present in the graph.
 The row graph[i] represents i-th edge with three values u, v and w. */
 
-void BellmanFord(int graph[][3], int m, int n, int source) 
+void BellmanFord(std::int graph[][3], int m, int n, int source) 
 { 
 	// Initialize distance from the source vertex to all other vertices as infinite. 
-	int distance[m]; 
+	std::int distance[m]; 
 	for (int i = 0; i < m; i++) 
 		{
 		    distance[i] = INT_MAX;
@@ -67,8 +68,8 @@ int main()
 		u = start vertex of the edge (u,v)
 		v = end vertex of the edge (u,v)
 		w is the weight of the edge (u,v)
-    */
-	int graph[][3] = {   { 0, 1, -2 }, { 0, 2, 5 }, 
+        */
+	std::int graph[][3] = {   { 0, 1, -2 }, { 0, 2, 5 }, 
 					     { 1, 2, 4 },  { 1, 3, 1 }, 
 					     { 3, 2, 4 },  { 3, 1, 2 }   }; 
 
