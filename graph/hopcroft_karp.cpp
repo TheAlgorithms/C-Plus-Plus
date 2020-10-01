@@ -5,7 +5,7 @@
  * The Hopcroft–Karp algorithm is an algorithm that takes as input a bipartite graph 
  * and produces as output a maximum cardinality matching, it runs in O(E√V) time in worst case.
  * 
- * ###Bipartite graph :
+ * ### Bipartite graph
  * A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint 
  * and independent sets U and V such that every edge connects a vertex in U to one in V. 
  * Vertex sets U and V are usually called the parts of the graph. 
