@@ -183,7 +183,6 @@ bool BGraph::bfs()
 }
 
 /**
- * Function documentation
  * @brief This functions checks whether an augmenting path is available exists beginning with free vertex u
  * @param u represents position of vertex
  * @returns `true` if there is an augmenting path beginning with free vertex u
