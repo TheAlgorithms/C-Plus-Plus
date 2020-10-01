@@ -2,6 +2,7 @@
  * @file
  * @brief Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
  *
+ * @details
  * Program to count the number of inversions in an array
  * using merge-sort.
  * 
@@ -12,7 +13,8 @@
  * 
  * Time Complexity --> O(n.log n)
  * Space Complexity --> O(n) ; additional arrat temp[1..n]
- * Algorithm:
+ * ### Algorithm
+
  *   1. The idea is similar to merge sort, divide the array into two equal or almost 
  *      equal halves in each step until the base case is reached.
  *   2. Create a function merge that counts the number of inversions when two halves of
@@ -25,7 +27,8 @@
  *      the number of inversions by merging the two.
  *   4. The base case of recursion is when there is only one element in the given half.
  *   5. Print the answer
- * 
+ *
+ * @author [Rakshit Raj](https://github.com/rakshitraj)
  */
 #include <iostream>
 #include <vector>
@@ -163,7 +166,7 @@ void show(int* arr, const int array_size) {
 } // namespace sorting
 
 /**
- * Self test cases
+ * @brief Test implementations
  * @returns void
  */
 void test() {
