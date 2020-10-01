@@ -60,7 +60,7 @@ void printRoot(double root,int COUNT){
 
 /** main function */
 int main() {
-    double a, b, x1, x2, i,root;
+    double a, b, i,root=0;
     int COUNT=0;
     a = eq((-1)*RANGE);
     i=((-1)*RANGE + GAP);
