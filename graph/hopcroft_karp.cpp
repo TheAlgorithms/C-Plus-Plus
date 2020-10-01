@@ -63,7 +63,7 @@
  * @brief Represents Bipartite graph for
  * Hopcroft Karp implementation
  */
-class BGraph
+class HKGraph
 {
     int m{};  ///< m is the number of vertices on left side of Bipartite Graph
     int n{};  ///< n is the number of vertices on right side of Bipartite Graph
@@ -77,8 +77,8 @@ class BGraph
     std::vector<int> dist;   ///< dist represents the distance between vertex 'u' and vertex 'v'
 
 public:
-    BGraph();		       ///<Default Constructor
-    BGraph(int m, int n);     ///< Constructor
+    HKGraph();		       ///<Default Constructor
+    HKGraph(int m, int n);     ///< Constructor
     void addEdge(int u, int v); ///< To add edge
     
     bool bfs(); ///< Returns true if there is an augmenting path    
@@ -92,7 +92,7 @@ public:
  * @brief This function counts the number of augmenting paths between left and right sides of the Bipartite graph
  * @returns size of maximum matching
  */
-int BGraph::hopcroftKarpAlgorithm()
+int HKGraph::hopcroftKarpAlgorithm()
 {
 
     // pair_u[u] stores pair of u in matching on left side of Bipartite Graph.
@@ -130,7 +130,7 @@ int BGraph::hopcroftKarpAlgorithm()
  * @returns `true` if there is an augmenting path available
  * @returns `false` if there is no augmenting path available
  */
-bool BGraph::bfs()
+bool HKGraph::bfs()
 {
     std::queue<int> q; // an integer queue for bfs
 
@@ -188,7 +188,7 @@ bool BGraph::bfs()
  * @returns `true` if there is an augmenting path beginning with free vertex u
  * @returns `false` if there is no augmenting path beginning with free vertex u
  */
-bool BGraph::dfs(int u)
+bool HKGraph::dfs(int u)
 {
     if (u != NIL)
     {
@@ -221,14 +221,14 @@ bool BGraph::dfs(int u)
 /**
  * @brief Default Constructor for initialization
  */
-BGraph::BGraph() = default;
+HKGraph::HKGraph() = default;
 
 /**
  * @brief Constructor for initialization
  * @param m is the number of vertices on left side of Bipartite Graph
  * @param n is the number of vertices on right side of Bipartite Graph
  */
-BGraph::BGraph(int m, int n) {
+HKGraph::HKGraph(int m, int n) {
     this->m = m;
     this->n = n;
     adj = std::vector<std::list<int> >(m + 1);
@@ -239,7 +239,7 @@ BGraph::BGraph(int m, int n) {
  * @param u is the position of first vertex
  * @param v is the position of second vertex
  */
-void BGraph::addEdge(int u, int v)
+void HKGraph::addEdge(int u, int v)
 {
     adj[u].push_back(v); // Add v to u’s list.
 }
@@ -252,7 +252,7 @@ void BGraph::addEdge(int u, int v)
 void test(){
      // Sample test case
      int v1 = 3, v2 = 5, e = 2;  // vertices of left side, right side and edges
-     BGraph g(v1, v2); // execute the algorithm 
+     HKGraph g(v1, v2); // execute the algorithm 
 
     g.addEdge(0,1);
     g.addEdge(1,4);
@@ -275,7 +275,7 @@ int main()
 
     int v1 = 0, v2 = 0, e = 0;
     std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
-    BGraph g(v1, v2); // 
+    HKGraph g(v1, v2); // 
     int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
     {
