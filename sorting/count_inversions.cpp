@@ -231,7 +231,7 @@ void test() {
  * @returns 0 on exit
  */
 int main() {
-    // Testing
+    // Run test implementations
     test();
     // // Main Program
     // body();
