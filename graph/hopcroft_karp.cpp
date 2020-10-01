@@ -15,7 +15,7 @@
  * Given a matching M, edges that are part of matching are called Matching edges and edges that are not part 
  * of M (or connect free nodes) are called Not-Matching edges.
  * 
- * ###Maximum cardinality matching :
+ * ### Maximum cardinality matching
  * Given a bipartite graphs G = ( V = ( X , Y ) , E ) whose partition has the parts X and Y, 
  * with E denoting the edges of the graph, the goal is to find a matching with as many edges as possible. 
  * Equivalently, a matching that covers as many vertices as possible.
