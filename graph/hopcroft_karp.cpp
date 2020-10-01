@@ -232,7 +232,6 @@ BGraph::BGraph(int m, int n) {
 }
 
 /**
- * Function documentation
  * @brief function to add edge from u to v
  * @param u is the position of first vertex
  * @param v is the position of second vertex
