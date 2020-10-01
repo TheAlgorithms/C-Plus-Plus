@@ -13,10 +13,12 @@
  * be used in the path from source to destination.
  *
  * @author [Vaibhav Thakkar](https://github.com/vaithak)
+ * @author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <array>
 #include <iostream>
+#include <cassert>
 
 /**
  * @namespace backtracking
@@ -40,7 +42,7 @@ namespace rat_maze {
  * @returns 0 on end
  */
 template <size_t size>
-int solveMaze(int currposrow, int currposcol,
+bool solveMaze(int currposrow, int currposcol,
               const std::array<std::array<int, size>, size> &maze,
               std::array<std::array<int, size>, size> soln) {
     if ((currposrow == size - 1) && (currposcol == size - 1)) {
@@ -51,25 +53,25 @@ int solveMaze(int currposrow, int currposcol,
             }
             std::cout << std::endl;
         }
-        return 1;
+        return true;
     } else {
         soln[currposrow][currposcol] = 1;
 
         // if there exist a solution by moving one step ahead in a column
         if ((currposcol < size - 1) && maze[currposrow][currposcol + 1] == 1 &&
             solveMaze(currposrow, currposcol + 1, maze, soln)) {
-            return 1;
+            return true;
         }
 
         // if there exists a solution by moving one step ahead in a row
         if ((currposrow < size - 1) && maze[currposrow + 1][currposcol] == 1 &&
             solveMaze(currposrow + 1, currposcol, maze, soln)) {
-            return 1;
+            return true;
         }
 
         // the backtracking part
         soln[currposrow][currposcol] = 0;
-        return 0;
+        return false;
     }
 }
 }  // namespace rat_maze
@@ -97,6 +99,7 @@ int main() {
     int currposrow = 0;  // Current position in rows
     int currposcol = 0;  // Current position in columns
 
-    backtracking::rat_maze::solveMaze<size>(currposrow, currposcol, maze, soln);
+    assert(backtracking::rat_maze::solveMaze<size>(currposrow, currposcol, maze,
+                                                   soln) == 1);
     return 0;
 }
