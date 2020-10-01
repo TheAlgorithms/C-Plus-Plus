@@ -123,7 +123,6 @@ int BGraph::hopcroftKarpAlgorithm()
 
 
 /**
- * Function documentation
  * @brief This function checks for the possibility of augmented path availability 
  * @returns `true` if there is an augmenting path available
  * @returns `false` if there is no augmenting path available
