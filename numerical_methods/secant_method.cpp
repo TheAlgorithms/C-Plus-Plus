@@ -30,7 +30,7 @@ static double secant(double x1,double x2,double y1,double y2){
     double diff = x1-x2;
     if(diff<0)
     diff= (-1)*diff;
-    if(diff<0.001){  // 0.001 is the precision constant.
+    if(diff<0.000001){  // 0.000001 is the precision constant.
         if(y1<0)
         y1=-y1;
         if(y2<0)
@@ -63,8 +63,9 @@ int main() {
     double a, b, x1, x2, i,root;
     int COUNT=0;
     a = eq((-1)*RANGE);
+    i=((-1)*RANGE + GAP);
     //taking an interval with appropriate gap and finding roots in that interval
-    for(i=((-1)*RANGE + GAP);i<=RANGE;i+=GAP){
+    while(i<=RANGE){
         b = eq(i);
         if(b==0){
             COUNT++;
@@ -76,6 +77,7 @@ int main() {
             printRoot(root,COUNT);
         }
         a=b;
+        i = i + GAP;
     }
     return 0;
 }
