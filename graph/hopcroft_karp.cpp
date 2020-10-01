@@ -249,6 +249,27 @@ void BGraph::addEdge(int u, int v)
     adj[u].push_back(v); // Add v to u’s list.
 }
 
+
+/**
+ * Self-test implementation
+ * @returns none
+ */
+void test(){
+     // Sample test case
+     int v1 = 3, v2 = 5, e = 2;  // vertices of left side, right side and edges
+     BGraph g(v1, v2); // execute the algorithm 
+
+    g.addEdge(0,1);
+    g.addEdge(1,4);
+    g.addEdge(1,5);
+    g.addEdge(5,0);
+
+     int expected_res = ; // for the above sample data, this is the expected output
+     int res = g.hopcroftKarpAlgorithm();
+     
+     assert(res == expected_res); // assert check to ensure that the algorithm executed correctly.
+}
+
 /**
  * @brief Main function
  * @returns 0 on exit
