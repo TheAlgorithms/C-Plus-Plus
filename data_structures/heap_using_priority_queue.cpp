@@ -1,10 +1,11 @@
 /**
  * @file
- * @brief Perform Minheap and Maxheap using priority queue
+ * @brief Perform Minheap and Maxheap using [priority
+ * queue](http://www.cplusplus.com/reference/queue/priority_queue/)
  * @details
  * In competitive coding I have used this datastructure a lot for Minheap and
  * Maxheap operations, it is very useful and timecomplexity is equivalent to
- * minheap and maxheap. http://www.cplusplus.com/reference/queue/priority_queue/
+ * minheap and maxheap.
  * @author [Shubham Singhal](https://github.com/singhalshubham8)
  * @see heap_using_priority_queue.cpp
  */
@@ -13,7 +14,10 @@
 #include <iostream>
 #include <queue>
 
-/** Test function */
+/**
+ * @brief Test implementations
+ * @returns void
+ */
 static void test() {
     // Adding elements into priority queue which is eventaully maxHeap
     std::priority_queue<int> maxheap;
@@ -23,7 +27,8 @@ static void test() {
     maxheap.push(2);
     assert(maxheap.size() == (size_t)4);
 
-    // Checking max element in priority queue removing each element in one time
+    // Extracting elements from maxheap and checking if top of the datastructure
+    // contains maximum value or not
     assert(maxheap.top() == 5);
     maxheap.pop();
     assert(maxheap.top() == 3);
@@ -34,16 +39,16 @@ static void test() {
     maxheap.pop();
     assert(maxheap.empty());
 
-    // Creating a minheap and checking next max element in min heap using
-    // priority queue
-    std::priority_queue<int, std::vector<int>, std::greater<int>> minheap;
+    // Adding elements in minHeap
+    std::priority_queue<int, std::vector<int>, std::greater<>> minheap;
     minheap.push(3);
     minheap.push(1);
     minheap.push(5);
     minheap.push(2);
     assert(minheap.size() == (size_t)4);
 
-    // Checking max element in priority queue
+    // Extracting elements from minheap and checking if top of the datastructure
+    // contains minimum value or not
     assert(minheap.top() == 1);
     minheap.pop();
     assert(minheap.top() == 2);
@@ -53,9 +58,14 @@ static void test() {
     assert(minheap.top() == 5);
     minheap.pop();
     assert(minheap.empty());
+
+    std::cout << "Test implementations passed!\n";
 }
 
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main(int argc, char *argv[]) {
     test();  // execute the tests
     // code here
