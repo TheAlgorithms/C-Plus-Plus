@@ -266,7 +266,7 @@ void test(){
     g.addEdge(1,5);
     g.addEdge(5,0);
 
-     int expected_res = ; // for the above sample data, this is the expected output
+     int expected_res = 0; // for the above sample data, this is the expected output
      int res = g.hopcroftKarpAlgorithm();
      
      assert(res == expected_res); // assert check to ensure that the algorithm executed correctly.
