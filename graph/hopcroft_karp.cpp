@@ -223,7 +223,6 @@ bool BGraph::dfs(int u)
 BGraph::BGraph() {}
 
 /**
- * Function documentation
  * @brief Constructor for initialization
  * @param m is the number of vertices on left side of Bipartite Graph
  * @param n is the number of vertices on right side of Bipartite Graph
