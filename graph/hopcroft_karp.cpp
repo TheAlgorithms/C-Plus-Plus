@@ -97,22 +97,14 @@ int BGraph::hopcroftKarpAlgorithm()
 
     // pair_u[u] stores pair of u in matching on left side of Bipartite Graph.
     // If u doesn't have any pair, then pair_u[u] is NIL
-    pair_u = std::vector<int>(m + 1); 
+    pair_u = std::vector<int>(m + 1,NIL); 
 
     // pair_v[v] stores pair of v in matching on right side of Biparite Graph.
     // If v doesn't have any pair, then pair_u[v] is NIL
-    pair_v = std::vector<int>(n + 1); 
+    pair_v = std::vector<int>(n + 1,NIL); 
 
     dist = std::vector<int>(m + 1);  // dist[u] stores distance of left side vertices
 
-    // Initialize NIL as pair of all vertices
-    for (int u = 0; u <= m; u++){
-        pair_u[u] = NIL;
-    }
-    for (int v = 0; v <= n; v++){
-        pair_v[v] = NIL;
-    }
-  
     int result = 0;  ///< Initialize result
 
     // Keep updating the result while there is an augmenting path possible.
