@@ -58,13 +58,11 @@
  */
 class BGraph
 {
-	
-    int m;  ///< m is the number of vertices on left side of Bipartite Graph
-    int n;  ///< n is the number of vertices on right side of Bipartite Graph
-    const int NIL;
-    const int INF;
+    int m{};  ///< m is the number of vertices on left side of Bipartite Graph
+    int n{};  ///< n is the number of vertices on right side of Bipartite Graph
+    const int NIL{0};
+    const int INF{INT_MAX};
 
-	
     std::vector<std::list<int> >adj;  ///< adj[u] stores adjacents of left side and 0 is used for dummy vertex
 
     std::vector<int> pair_u; ///< value of vertex 'u' ranges from 1 to m
@@ -222,8 +220,7 @@ bool BGraph::dfs(int u)
  * Function documentation
  * @brief Default Constructor for initialization
  */
-BGraph::BGraph():NIL(0),INF(INT_MAX)
-{}
+BGraph::BGraph() {}
 
 /**
  * Function documentation
