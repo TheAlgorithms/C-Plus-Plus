@@ -279,7 +279,7 @@ int main()
     test();  // perform self-test
 
     int v1 = 0, v2 = 0, e = 0;
-    std::cin >> v1 >> v2 >> e; ///< vertices of left side, right side and edges
+    std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
     BGraph g(v1, v2); // 
     int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
