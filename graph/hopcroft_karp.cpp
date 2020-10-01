@@ -129,7 +129,7 @@ int BGraph::hopcroftKarpAlgorithm()
  */
 bool BGraph::bfs()
 {
-    std::queue<int> q; ///< an integer queue for bfs
+    std::queue<int> q; // an integer queue for bfs
 
     // First layer of vertices (set distance as 0)
     for (int u = 1; u <= m; u++)
