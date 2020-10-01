@@ -13,7 +13,8 @@
  * 
  * Time Complexity --> O(n.log n)
  * Space Complexity --> O(n) ; additional arrat temp[1..n]
- * Algorithm:
+ * ### Algorithm
+ 
  *   1. The idea is similar to merge sort, divide the array into two equal or almost 
  *      equal halves in each step until the base case is reached.
  *   2. Create a function merge that counts the number of inversions when two halves of
