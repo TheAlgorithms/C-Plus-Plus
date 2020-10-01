@@ -2,7 +2,6 @@
  * @file
  * @brief Counting Inversions using [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
  *
- * @details
  * Program to count the number of inversions in an array
  * using merge-sort.
  * 
@@ -13,8 +12,7 @@
  * 
  * Time Complexity --> O(n.log n)
  * Space Complexity --> O(n) ; additional arrat temp[1..n]
- * ### Algorithm
- 
+ * Algorithm:
  *   1. The idea is similar to merge sort, divide the array into two equal or almost 
  *      equal halves in each step until the base case is reached.
  *   2. Create a function merge that counts the number of inversions when two halves of
@@ -27,11 +25,11 @@
  *      the number of inversions by merging the two.
  *   4. The base case of recursion is when there is only one element in the given half.
  *   5. Print the answer
- *
- * @author [Rakshit Raj](https://github.com/rakshitraj)
+ * 
  */
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 /**
  * @namespace sorting
@@ -165,43 +163,75 @@ void show(int* arr, const int array_size) {
 } // namespace sorting
 
 /**
+ * Self test cases
+ * @returns void
+ */
+void test() {
+    // Test 1
+    std::vector<int> arr1 = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    int size1 = arr1.size();
+    int inv_count1 = 4950;
+    int result1 = sorting::inversion::countInversion(arr1.data(), size1);
+    assert(inv_count1 == result1);
+    // Test 2
+    std::vector<int> arr2 = {22, 66, 75, 23, 11, 87, 2, 44, 98, 43};
+    int size2 = arr2.size();
+    int inv_count2 = 20;
+    int result2 = sorting::inversion::countInversion(arr2.data(), size2);
+    assert(inv_count2 == result2);
+    // Test 3
+    std::vector<int> arr3 = {33, 45, 65, 76, 1, 2, 5, 7, 88, 12};
+    int size3 = arr3.size();
+    int inv_count3 = 21;
+    int result3 = sorting::inversion::countInversion(arr3.data(), size3);
+    assert(inv_count3 == result3);
+}
+
+// /**
+//  * Program Body contains all main funtionality
+//  * @returns void
+//  */
+// void body() {
+//     // Input your own sequence
+//     int size, input;
+//     std::cout << "Enter number of elements:";
+//     std::cin >> size;
+
+//     std::vector<int> arr;
+//     arr.reserve(size);
+
+//     std::cout << "Enter elements -->\n";
+//     for (int i=1; i<=size; i++) {
+//         std::cout << "Element "<< i <<" :";
+//         std::cin >> input;
+//         arr.push_back(input);
+//     }
+
+//     if (size != arr.size()) {
+//         size = arr.size();
+//     }
+
+//     std::cout << "\n";
+//     sorting::inversion::show(arr.data(), size);
+//     std::cout << "\n";
+
+//     // Counting inversions
+//     std::cout << "\nThe number of inversions: "<< sorting::inversion::countInversion(arr.data(), size) << "\n";
+
+//     // Output sorted array
+//     std::cout << "\nSorted array -->  \n";
+//     sorting::inversion::show(arr.data(), size);
+// }
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    // // Input your own sequence
-    // int size, input;
-    // std::cout << "Enter number of elements:";
-    // std::cin >> size;
-
-    // std::vector<int> arr;
-    // arr.reserve(size);
-
-    // std::cout << "Enter elements -->";
-    // for (int i=1; i<=n; i++) {
-    //     std::cout << "Element "<< i <<" :";
-    //     std::cin >> input;
-    //     arr.push_back(input);
-    // }
-
-    // if (size != arr.size()) {
-    //     size = arr.size();
-    // }
-
-    //Pre-defined input with 4950 inversions
-    std::vector<int> arr = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-    int size = arr.size();
-
-    std::cout << "\n";
-    sorting::inversion::show(arr.data(), size);
-    std::cout << "\n";
-
-    // Counting inversions
-    std::cout << "\nThe number of inversions: "<< sorting::inversion::countInversion(arr.data(), size) << "\n";
-
-    // Output sorted array
-    std::cout << "\nSorted array -->  \n";
-    sorting::inversion::show(arr.data(), size);
-
+    // Testing
+    test();
+    // // Main Program
+    // body();
     return 0;
 }
+/** @author [Rakshit Raj](https://github.com/rakshitraj) */
