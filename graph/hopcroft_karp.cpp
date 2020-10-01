@@ -53,6 +53,12 @@
 #include <memory>
 
 /**
+ * @namespace graph 
+ * @brief Graph algorithms
+ */
+ namespace graph {
+
+/**
  * @brief Represents Bipartite graph for
  * Hopcroft Karp implementation
  */
