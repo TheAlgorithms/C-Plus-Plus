@@ -1,0 +1,50 @@
+//code for calculating area of these shapes 
+//simple c++ coding
+
+#include <iostream>
+#define pi 3.14
+
+float area(float);
+double area(double,double);
+double area(double);
+
+float area(float r)
+{
+    return (pi*r*r);
+}
+
+double area(double x, double y)
+{
+    return (x*y);
+}
+
+double area(double l)
+{
+    return (l*l);
+}
+
+int main() {
+    
+    float r;
+    double l,x,y;
+    
+    char shape[10];
+    std::cin >>shape;
+    
+    if('c'==shape[0])
+    {
+        std::cin >>r;
+        std::cout <<area(r);
+    }
+    else if('r'==shape[0])
+    {
+        std::cin >>x>>y;
+        std::cout <<area(x,y);
+    }
+    else{
+        std::cin >>l;
+        std::cout <<area(l);
+    }
+     
+    return 0;
+}
