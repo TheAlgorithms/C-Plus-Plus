@@ -61,7 +61,7 @@ int deque(circularqueue *q)
 
 int main()
 {   
-    circularqueue q;
+    circularqueue q{};
 
     q.size = 4;
     q.f = q.r = 0;
