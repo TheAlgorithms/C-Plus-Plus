@@ -31,7 +31,7 @@
  * @param l - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
-    int i, j, k;
+    int i = 0, j = 0, k = 0;
     int n1 = m - l + 1;
     int n2 = r - m;
 
@@ -100,7 +100,7 @@ void show(int *arr, int size) {
 
 /** Main function */
 int main() {
-    int size;
+    int size = 0;
     std::cout << "Enter the number of elements : ";
     std::cin >> size;
     int *arr = new int[size];
