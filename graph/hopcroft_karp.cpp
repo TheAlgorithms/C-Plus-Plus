@@ -201,7 +201,7 @@ bool BGraph::dfs(int u)
         for (it = adj[u].begin(); it != adj[u].end(); ++it)
         {
             
-            int v = *it; ///< Adjacent vertex of u
+            int v = *it; // Adjacent vertex of u
 
             // Follow the distances set by BFS search
             if (dist[pair_v[v]] == dist[u] + 1)
