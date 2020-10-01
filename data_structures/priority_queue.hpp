@@ -9,6 +9,9 @@
  * @see queue.h
  */
 
+#ifndef DATA_STRUCTURES_PRIORITY_QUEUE_H_
+#define DATA_STRUCTURES_PRIORITY_QUEUE_H_
+
 #include <cassert>
 #include <iostream>
 
@@ -90,8 +93,8 @@ class queue {
         if (!isEmptyQueue()) {
             size--;
             node<Kind, Priority> *temp = queueFront;
-            auto prev = new node<Kind, Priority>;
-            auto maxPrev = new node<Kind, Priority>;
+            auto *prev = new node<Kind, Priority>;
+            auto *maxPrev = new node<Kind, Priority>;
             node<Kind, Priority> *after = queueFront->next;
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
@@ -114,8 +117,9 @@ class queue {
                 queueRear = maxPrev;
             } else if (maxPrev != nullptr) {
                 maxPrev->next = after;
-                if (after == nullptr)
+                if (after == nullptr) {
                     queueRear = maxPrev;
+                }
             }
             maxElem->next = nullptr;
             return maxElem;
@@ -136,3 +140,5 @@ class queue {
     node<Kind, Priority> *queueRear;  // < Pointer to the rear of the queue  
     int size;                         // < Invariant that keeps track the size of the queue
 };
+
+#endif  // DATA_STRUCTURES_PRIORITY_QUEUE_H_
