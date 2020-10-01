@@ -1,8 +1,9 @@
 /** @file
- * C++ inbuilt function for finding GCD
+ *  C++ inbuilt function for finding GCD
  */
+
 #include <iostream>
-int gcd(int a, int b) {
+int gcd(int a , int b) {
 	if (b == 0) {
 		return a;
 	}
@@ -11,7 +12,7 @@ int gcd(int a, int b) {
 int main() {
 //given two numbers 
 	int a = 8, b = 6; 
-	cout<<"GCD of two num is "<<gcd(a, b); 
+        std:: cout<< "GCD of two num is " << gcd(a, b) ; 
 	return 0; 
 } 
-//also theere is simple way to do gcd by using    __gcd(m, n)  where m ,n are numbers
+//also there is simple way to do gcd by using    __gcd(m, n)  where m ,n are numbers
