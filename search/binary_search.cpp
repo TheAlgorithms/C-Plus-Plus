@@ -27,6 +27,21 @@ int binary_search(int a[], int r, int key) {
     return -1;
 }
 
+int recursive_binary_search(int a[], int l, int r, int key) {
+        if (r >= l) {
+        int mid = l + (r - l) / 2;
+
+        if (a[mid] == key)
+            return mid;
+
+        if (a[mid] > key)
+            return recursive_binary_search(a, l, mid - 1, key);
+
+        return recursive_binary_search(a, mid + 1, r, key);
+    }
+    return -1;
+}
+
 /** main function */
 int main(int argc, char const* argv[]) {
     int n, key;
