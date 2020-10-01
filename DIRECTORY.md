@@ -230,6 +230,7 @@
   * [Bucket Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bucket_sort.cpp)
   * [Cocktail Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/cocktail_selection_sort.cpp)
   * [Comb Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/comb_sort.cpp)
+  * [Count Inversions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/count_inversions.cpp)
   * [Counting Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort.cpp)
   * [Counting Sort String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort_string.cpp)
   * [Gnome Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/gnome_sort.cpp)
