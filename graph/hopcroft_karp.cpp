@@ -186,7 +186,7 @@ bool BGraph::bfs()
 
    
    
-    return (dist[NIL] != INF);   ///< If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available
+    return (dist[NIL] != INF);   // If we could come back to NIL using alternating path of distinct vertices then there is an augmenting path available
 }
 
 /**
