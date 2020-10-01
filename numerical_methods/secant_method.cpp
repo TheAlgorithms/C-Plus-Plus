@@ -14,12 +14,10 @@
  */
 #include <cmath>
 #include <iostream>
-#include <bits/stdc++.h>
 #include <limits>
-using namespace std;
 
-#define RANGE 100000  ///< Range in which we have to find the root. (-Range,Range)
-#define GAP 0.5 /// interval gap. lesser the gap more the accuracy
+double RANGE = 100000;  ///< Range in which we have to find the root. (-Range,Range)
+double GAP = 0.5; /// interval gap. lesser the gap more the accuracy
 
 /** define equation to find root for
  */
@@ -54,16 +52,16 @@ static double secant(double x1,double x2,double y1,double y2){
 //function for printing roots
 void printRoot(double root,int COUNT){
     if(COUNT==1){
-        cout << "Your 1st root is : " << root << endl;
+        std::cout << "Your 1st root is : " << root << std::endl;
     }
     else if(COUNT==2){
-        cout << "Your 2nd root is : " << root << endl;
+        std::cout << "Your 2nd root is : " << root << std::endl;
     }
     else if(COUNT==3){
-        cout << "Your 3rd root is : " << root << endl;
+        std::cout << "Your 3rd root is : " << root << std::endl;
     }
     else{
-        cout << "Your "<<COUNT<<"th root is : " << root << endl;
+        std::cout << "Your "<<COUNT<<"th root is : " << root << std::endl;
     }
 }
 
