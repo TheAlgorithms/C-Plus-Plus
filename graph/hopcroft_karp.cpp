@@ -84,7 +84,6 @@ public:
 
 
 /**
- * Function documentation
  * @brief This function counts the number of augmenting paths between left and right sides of the Bipartite graph
  * @returns size of maximum matching
  */
