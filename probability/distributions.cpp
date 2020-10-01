@@ -10,6 +10,9 @@
  *  <li>
  *       Adding Gaussian distribution
  *  </li>
+ *  <li>
+ *       Adding mean and variance function
+ *  </li>
  * </ul>
  */
 
@@ -19,7 +22,42 @@
 #include <vector>
 
 using ll = int64_t;
+
+// Find the greatest common divisor
 ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
+
+namespace Util {
+/** Computes n choose r
+ * \param [in] n
+ * \param [in] r
+ * \returns \f$\displaystyle {n\choose r} =
+ * \frac{n!}{r!(n-r)!} = \frac{n\times(n-1)\times(n-2)\times\cdots(n-r)}{r!}
+ * \f$
+ * \see [original
+ * version](https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/)
+ */
+ll nCr(int n, int r) {
+    ll p = 1, k = 1;
+    if (n - r < r) {
+        r = n - r;
+    }
+
+    if (r != 0) {
+        while (r) {
+            p *= n;
+            k *= r;
+            ll m = gcd(p, k);
+            p /= m;
+            k /= m;
+            n--;
+            r--;
+        }
+    } else {
+        p = 1;
+    }
+    return p;
+}
+}  // namespace Util
 
 namespace Distribution {
 
@@ -29,8 +67,17 @@ namespace Distribution {
  * \note improvised from binomial_dist.cpp
  */
 namespace Binom {
-double pmd(double p, double n, double k) { return 0; }
-double cdf(double p, double n, double k) { return 0; }
+/**
+ * \details The ***Binomial distribution*** \f$B(n, p)\f$ for \f$n \in N\f$
+ * has the mass function
+ * \f$B(n,p,k)=\binom{n}{k}p^k(1-p)^{n-k} \text{ where } k=0,1,\cdots, n.\f$
+*/
+double pmd(double p, ll n, ll k) {
+    return static_cast<double>(Util::nCr(n, k)) *
+           std::pow(p, static_cast<double>(k)) *
+           std::pow(1 - p, static_cast<double>(n) - k);
+}
+double cdf(double p, ll n, ll k) { return 0; }
 }  // namespace Binom
 
 /**
@@ -42,7 +89,7 @@ double cdf(double p, double n, double k) { return 0; }
 namespace Uniform {
 
 /**
- * \details A random variable \f$X\f$ is said to be ***uniformly distributed***
+ * \details A random variable \f$X\f$ is said to be *uniformly distributed*
  * over an interval \f$[\alpha,\beta]\f$ if its probability density function is
  * given by
  *
@@ -115,38 +162,6 @@ void cdf(double x) {}
 
 namespace Gauss {} // namespace Guass
 }  // namespace Distribution
-
-/** Computes n choose r
- * \param [in] n
- * \param [in] r
- * \returns \f$\displaystyle {n\choose r} =
- * \frac{n!}{r!(n-r)!} = \frac{n\times(n-1)\times(n-2)\times\cdots(n-r)}{r!}
- * \f$
- * \see [original
- * version](https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/)
- */
-ll nCr(int n, int r) {
-    ll p = 1, k = 1;
-    if (n - r < r) {
-        r = n - r;
-    }
-
-    if (r != 0) {
-        while (r) {
-            p *= n;
-            k *= r;
-            ll m = gcd(p, k);
-            p /= m;
-            k /= m;
-            n--;
-            r--;
-        }
-    } else {
-        p = 1;
-    }
-    return p;
-}
-
 /**
  * Main function.
  * Exit and return 0.
@@ -165,6 +180,16 @@ int main() {
               << std::endl;
     std::cout << "pdf = " << Distribution::Uniform::pdf(x, alpha, beta)
               << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout << "      Example of Distribution" << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout << "      Example of Distribution" << std::endl;
+    std::cout << std::endl;
     std::cout << std::endl;
 
     std::cout << "---------------------------------------------" << std::endl;
