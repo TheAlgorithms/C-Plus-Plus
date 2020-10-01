@@ -40,7 +40,7 @@ static void test() {
     assert(maxheap.empty());
 
     // Adding elements in minHeap
-    std::priority_queue<int, std::vector<int>, std::greater<>> minheap;
+    std::priority_queue<int, std::vector<int>, std::greater<int>> minheap;
     minheap.push(3);
     minheap.push(1);
     minheap.push(5);
