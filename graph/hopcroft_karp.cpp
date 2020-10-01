@@ -216,7 +216,6 @@ bool BGraph::dfs(int u)
 }
 
 /**
- * Function documentation
  * @brief Default Constructor for initialization
  */
 BGraph::BGraph() = default;
