@@ -11,7 +11,7 @@
  * Vertex sets U and V are usually called the parts of the graph. 
  * Equivalently, a bipartite graph is a graph that does not contain any odd-length cycles.
  * 
- * ###Matching and Not-Matching edges :
+ * ### Matching and Not-Matching edges
  * Given a matching M, edges that are part of matching are called Matching edges and edges that are not part 
  * of M (or connect free nodes) are called Not-Matching edges.
  * 
