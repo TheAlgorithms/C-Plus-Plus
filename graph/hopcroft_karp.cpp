@@ -90,7 +90,9 @@ int BGraph::hopcroftKarpAlgorithm()
 
     pair_u = std::vector<int>(m + 1); ///< pair_u[u] stores pair of u in matching on left side of Bipartite Graph.If u doesn't have any pair, then pair_u[u] is NIL
 
-    pair_v = std::vector<int>(n + 1); ///< pair_v[v] stores pair of v in matching on right side of Biparite Graph.If v doesn't have any pair, then pair_u[v] is NIL
+    // pair_v[v] stores pair of v in matching on right side of Biparite Graph.
+    // If v doesn't have any pair, then pair_u[v] is NIL
+    pair_v = std::vector<int>(n + 1); 
 
     dist = std::vector<int>(m + 1);  // dist[u] stores distance of left side vertices
 
