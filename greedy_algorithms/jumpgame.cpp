@@ -17,16 +17,7 @@
 #include <iostream>
 #include <cassert>
 
-/**
- * @namespace greedy_algorithms
- * @birief Greedy algorithms
- */
-namespace greedy_algorithms {
-/**
- * @namespace jump_game
- * @brief Functions for the [jumping game](https://leetcode.com/problems/jump-game/) problem
- */
-namespace jump_game {
+
  /**
  * @brief This function implements the above algorithm
  * @param array of numbers containing the maximum jump (in steps) from that index
