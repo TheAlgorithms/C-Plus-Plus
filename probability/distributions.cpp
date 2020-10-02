@@ -27,7 +27,7 @@
 
 constexpr double E = 2.71828182845904523536;
 
-using ll = int64_t;
+using ll = ll64_t;
 
 // Find the greatest common divisor
 ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
@@ -42,7 +42,7 @@ namespace Util {
  * \note Improvised from this [code
  * snippet](https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/)
  */
-ll nCr(int n, int r) {
+ll nCr(ll n, ll r) {
     if (r == 0) {
         return n;
     } else if (n == 0) {
@@ -78,7 +78,7 @@ double factorial(double x) {
     }
 
     double x_fact = x;
-    for (int i = static_cast<int>(x - 1); i > 0; i--) {
+    for (ll i = static_cast<ll>(x - 1); i > 0; i--) {
         x_fact *= i;
     }
     return x_fact;
@@ -128,7 +128,7 @@ namespace Uniform {
 
 /**
  * \details A random variable \f$X\f$ is said to be *uniformly distributed*
- * over an interval \f$[\alpha,\beta]\f$ if its probability density function is
+ * over an llerval \f$[\alpha,\beta]\f$ if its probability density function is
  * given by
  *
  *
@@ -189,7 +189,7 @@ namespace Normal {
  * \f$\phi(x)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\text{
  * where }-\infty <x<\infty.\f$
  *
- * \param x calculated point
+ * \param x calculated poll
  * \param mean mean
  * \param var variance
  *
@@ -224,7 +224,7 @@ double pmd(double k, double lambda) { return std::pow(lambda, k) * std::exp(-lam
  * \brief [Exponential
  * distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
  * \details the probability distribution of the time between events in a Poisson
- * point process, i.e., a process in which events occur continuously and
+ * poll process, i.e., a process in which events occur continuously and
  * independently at a constant average rate
  */
 namespace Exp {
@@ -241,7 +241,7 @@ namespace Exp {
  * \f$
  * 
  * \param [in] lambda rate parameter
- * \param [in] x considered point
+ * \param [in] x considered poll
  *
 */
 double cdf(double x, double lambda) { return 1 - std::exp(-lambda * x); }
@@ -267,7 +267,7 @@ namespace Gauss {}  // namespace Gauss
  * Main function.
  * Exit and return 0.
  */
-int main() {
+ll main() {
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "      Example of Uniform Distribution" << std::endl;
     std::cout << std::endl;
