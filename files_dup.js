@@ -7,6 +7,7 @@ var files_dup =
     [ "geometry", "dir_e3380d2178455503f266746fb14246a5.html", "dir_e3380d2178455503f266746fb14246a5" ],
     [ "graph", "dir_12552d7fa429bf94a2e32e5cf39f7e69.html", "dir_12552d7fa429bf94a2e32e5cf39f7e69" ],
     [ "graphics", "dir_e79632891301b850df87e9c0030293fa.html", "dir_e79632891301b850df87e9c0030293fa" ],
+    [ "greedy_algorithms", "dir_0eaa691bd54ab0922ca7f50599de6d22.html", "dir_0eaa691bd54ab0922ca7f50599de6d22" ],
     [ "hashing", "dir_ece9b94c107bbaa1dd68197a8c9983b9.html", "dir_ece9b94c107bbaa1dd68197a8c9983b9" ],
     [ "machine_learning", "dir_3343723ae086de42ee4ca9774da3a13f.html", "dir_3343723ae086de42ee4ca9774da3a13f" ],
     [ "math", "dir_296d53ceaeaa7e099814a6def439fe8a.html", "dir_296d53ceaeaa7e099814a6def439fe8a" ],
