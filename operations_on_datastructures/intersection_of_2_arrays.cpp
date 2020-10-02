@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-    int i, j, m, n;
+    int i, j, m, n,check;
     cout << "Enter size of array 1:";
     cin >> m;
     cout << "Enter size of array 2:";
@@ -12,6 +12,7 @@ int main() {
     for (i = 0; i < n; i++) cin >> b[i];
     i = 0;
     j = 0;
+    check = 1;
     while ((i < m) && (j < n)) {
         if (a[i] < b[j])
             i++;
@@ -20,7 +21,14 @@ int main() {
         else {
             cout << a[i++] << " ";
             j++;
+            check = 0;
         }
+    } 
+    
+    //Adding default statement if no intersection is present .
+    if(check)
+    {
+        cout<< "No intersection " ;
     }
     return 0;
 }
