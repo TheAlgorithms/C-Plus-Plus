@@ -26,6 +26,7 @@ void show() {
 }
 
 void topmost() { std::cout << "\nTopmost element: " << stack[stack_idx - 1]; }
+void bottom() { std::cout << "\nBottom element: " << stack[0]; } // If we need access to first element without using pop command 
 int main() {
     std::cout << "\nEnter stack_size of stack : ";
     std::cin >> stack_size;
@@ -37,6 +38,7 @@ int main() {
         std::cout << "\n2. Pop";
         std::cout << "\n3. Print";
         std::cout << "\n4. Print topmost element:";
+        std::cout << "\n5. Print Bottom element:";
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
         if (ch == 1) {
@@ -49,6 +51,8 @@ int main() {
             show();
         } else if (ch == 4) {
             topmost();
+        } else if(ch == 5) {
+            bottom();
         }
     } while (ch != 0);
 
