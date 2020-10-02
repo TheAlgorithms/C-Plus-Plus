@@ -105,7 +105,7 @@ int HKGraph::hopcroftKarpAlgorithm()
 
     dist = std::vector<int>(m + 1);  // dist[u] stores distance of left side vertices
 
-    int result = 0;  ///< Initialize result
+    int result = 0;  // Initialize result
 
     // Keep updating the result while there is an augmenting path possible.
     while (bfs())
