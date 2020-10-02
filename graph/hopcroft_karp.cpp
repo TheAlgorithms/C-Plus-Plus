@@ -57,7 +57,7 @@
  * @namespace graph 
  * @brief Graph algorithms
  */
- namespace graph { }
+ namespace graph { 
 
 /**
  * @brief Represents Bipartite graph for
@@ -244,6 +244,9 @@ void HKGraph::addEdge(int u, int v)
     adj[u].push_back(v); // Add v to u’s list.
 }
 
+} // namespace graph
+
+using graph::HKGraph;
 
 /**
  * Self-test implementation
