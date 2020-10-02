@@ -99,6 +99,7 @@
 ## Greedy Algorithms
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/huffman.cpp)
+  * [Jumpgame](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/jumpgame.cpp)
   * [Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/knapsack.cpp)
   * [Kruskals Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/kruskals_minimum_spanning_tree.cpp)
   * [Prims Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/prims_minimum_spanning_tree.cpp)
