@@ -77,9 +77,9 @@ class HKGraph
     std::vector<int> dist;   ///< dist represents the distance between vertex 'u' and vertex 'v'
 
 public:
-    HKGraph();		       ///<Default Constructor
-    HKGraph(int m, int n);     ///< Constructor
-    void addEdge(int u, int v); ///< To add edge
+    HKGraph();		       // Default Constructor
+    HKGraph(int m, int n);     // Constructor
+    void addEdge(int u, int v); // To add edge
     
     bool bfs(); ///< Returns true if there is an augmenting path    
     bool dfs(int u); ///< Adds augmenting path if there is one beginning with u  
@@ -171,7 +171,7 @@ bool HKGraph::bfs()
                 if (dist[pair_v[v]] == INF)
                 {
                     dist[pair_v[v]] = dist[u] + 1; 
-                    q.push(pair_v[v]);    ///< Consider the pair and push it to queue
+                    q.push(pair_v[v]);    // Consider the pair and push it to queue
                 }
             }
         }
@@ -278,7 +278,7 @@ int main()
 
     int v1 = 0, v2 = 0, e = 0;
     std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
-    HKGraph g(v1, v2); // 
+    HKGraph g(v1, v2);  
     int u = 0, v = 0;
     for (int i = 0; i < e; ++i)
     {
