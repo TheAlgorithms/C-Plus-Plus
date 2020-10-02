@@ -78,7 +78,7 @@ double factorial(double x) {
     }
 
     double x_fact = x;
-    for (ll i = static_cast<ll>(x - 1); i > 0; i--) {
+    for (ll i = static_cast<ll>(std::round(x - 1)); i > 0; i--) {
         x_fact *= i;
     }
     return x_fact;
