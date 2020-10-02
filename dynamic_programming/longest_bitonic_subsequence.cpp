@@ -1,21 +1,29 @@
 #include <iostream>
-using namespace std;
-int LBS(int ar[], int n) {
-    int i, j;
-    int lis[n];
+#include <vector>
+
+int LBS(std::vector<int> ar) {
+    int i = 0;
+    int j = 0;
+    int n = ar.size();
+
+    std::vector<int> lis;
+
     for (i = 0; i < n; i++) {
-        lis[i] = 1;
+        lis.push_back(1);
     }
+
     for (i = 1; i < n; i++) {
         for (j = 0; j < i; j++) {
-            if (ar[i] > ar[j] && lis[i] < lis[j] + 1)
+            if (ar[i] > ar[j] && lis[i] < lis[j] + 1) {
                 lis[i] = lis[j] + 1;
+            }
         }
     }
 
-    int lds[n];
+    std::vector<int> lds;
+    
     for (i = 0; i < n; i++) {
-        lds[i] = 1;
+        lds.push_back(1);
     }
 
     for (i = n - 2; i >= 0; i--) {
@@ -36,15 +44,18 @@ int LBS(int ar[], int n) {
 }
 int main() {
     int n;
-    cout << "Enter the size of the array: ";
-    cin >> n;
 
-    int ar[n];
-    cout << "Enter the elements of the array: ";
+    std::cout << "Enter the size of the array: ";
+    std::cin >> n;
+
+    std::vector<int> arr;
+    std::cout << "Enter the elements of the array: ";
     for (int i = 0; i < n; i++) {
-        cin >> ar[i];
+        int temp = 0;
+        std::cin >> temp;
+        arr.push_back(temp);
     }
 
-    cout << LBS(ar, n) << endl;
+    std::cout << LBS(arr) << std::endl;
     return 0;
 }
