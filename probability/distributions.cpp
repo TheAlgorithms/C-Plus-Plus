@@ -78,7 +78,7 @@ double factorial(double x) {
     }
 
     double x_fact = x;
-    for (int i = x - 1; i > 0; i--) {
+    for (int i = static_cast<int>(x - 1); i > 0; i--) {
         x_fact *= i;
     }
     return x_fact;
