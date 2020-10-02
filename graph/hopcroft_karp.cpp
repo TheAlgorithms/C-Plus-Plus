@@ -252,20 +252,51 @@ using graph::HKGraph;
  * Self-test implementation
  * @returns none
  */
-void test(){
-     // Sample test case
-     int v1 = 3, v2 = 5, e = 2;  // vertices of left side, right side and edges
-     HKGraph g(v1, v2); // execute the algorithm 
+void tests(){
+     // Sample test case 1
+	     int v1a = 3, v1b = 5, e1 = 2;  // vertices of left side, right side and edges
+	     HKGraph g1(v1a, v1b); // execute the algorithm 
 
-    g.addEdge(0,1);
-    g.addEdge(1,4);
-    g.addEdge(1,5);
-    g.addEdge(5,0);
+	     g1.addEdge(0,1);
+	     g1.addEdge(1,4);
 
-     int expected_res = 0; // for the above sample data, this is the expected output
-     int res = g.hopcroftKarpAlgorithm();
-     
-     assert(res == expected_res); // assert check to ensure that the algorithm executed correctly.
+	     int expected_res1 = 0; // for the above sample data, this is the expected output
+	     int res1 = g1.hopcroftKarpAlgorithm();
+
+	     assert(res1 == expected_res1); // assert check to ensure that the algorithm executed correctly for test 1
+	
+     // Sample test case 2
+     	     int v2a = 4, v2b = 4, e2 = 6;  // vertices of left side, right side and edges
+	     HKGraph g2(v2a, v2b); // execute the algorithm 
+
+             g2.addEdge(1,1);
+	     g2.addEdge(1,3);
+	     g2.addEdge(2,3);
+	     g2.addEdge(3,4);
+	     g2.addEdge(4,3);
+             g2.addEdge(4,2);
+	
+	     int expected_res2 = 0; // for the above sample data, this is the expected output
+	     int res2 = g2.hopcroftKarpAlgorithm();
+
+	     assert(res2 == expected_res2); // assert check to ensure that the algorithm executed correctly for test 2
+	
+      // Sample test case 3
+     	     int v3a = 6, v3b = 6, e3 = 4;  // vertices of left side, right side and edges
+	     HKGraph g3(v3a, v3b); // execute the algorithm 
+
+             g3.addEdge(0,1);
+	     g3.addEdge(1,4);
+	     g3.addEdge(1,5);
+	     g3.addEdge(5,0);
+
+	     int expected_res3 = 0; // for the above sample data, this is the expected output
+	     int res3 = g3.hopcroftKarpAlgorithm();
+
+	     assert(res3 == expected_res3); // assert check to ensure that the algorithm executed correctly for test 3
+	
+	
+    	
 }
 
 /**
@@ -274,7 +305,7 @@ void test(){
  */
 int main()
 {
-    test();  // perform self-test
+    tests();  // perform self-tests
 
     int v1 = 0, v2 = 0, e = 0;
     std::cin >> v1 >> v2 >> e; // vertices of left side, right side and edges
