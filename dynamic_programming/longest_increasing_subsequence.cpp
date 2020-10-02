@@ -1,32 +1,38 @@
-// Program to calculate length of longest increasing subsequence in an array
+/* Dynamic Programming C++ implementation
+of LIS problem */
 #include <bits/stdc++.h>
 using namespace std;
-int LIS(int a[], int n) {
-    int lis[n];
-    for (int i = 0; i < n; ++i) {
-        lis[i] = 1;
-    }
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < i; ++j) {
-            if (a[i] > a[j] && lis[i] < lis[j] + 1)
-                lis[i] = lis[j] + 1;
-        }
-    }
-    int res = 0;
-    for (int i = 0; i < n; ++i) {
-        res = max(res, lis[i]);
-    }
-    return res;
+
+/* lis() returns the length of the longest
+increasing subsequence in arr[] of size n */
+int lis(int arr[], int n) {
+  int lis[n];
+
+  lis[0] = 1;
+
+  /* Compute optimized LIS values in
+      bottom up manner */
+  for (int i = 1; i < n; i++) {
+    lis[i] = 1;
+    for (int j = 0; j < i; j++)
+      if (arr[i] > arr[j] && lis[i] < lis[j] + 1) lis[i] = lis[j] + 1;
+  }
+
+  // Return maximum value in lis[]
+  return *max_element(lis, lis + n);
 }
-int main(int argc, char const *argv[]) {
-    int n;
-    cout << "Enter size of array: ";
-    cin >> n;
-    int a[n];
-    cout << "Enter array elements: ";
-    for (int i = 0; i < n; ++i) {
-        cin >> a[i];
-    }
-    cout << LIS(a, n) << endl;
-    return 0;
+
+/* Driver program to test above function */
+int main() {
+  int n;
+  cout << "Enter size of array " << endl;
+  cin >> n;
+  int arr[n];
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+
+  printf(lis(arr, n));
+
+  return 0;
 }
