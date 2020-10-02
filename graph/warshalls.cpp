@@ -1,4 +1,6 @@
 #include<iostream>
+#include<array>
+#include <algorithm> 
 // using namespace std;
 
 /* 
@@ -8,7 +10,7 @@
 */
 class graph
 {
-    int g[10][10]; // Matrix for Graph
+    std::array<std::array<int, 10>, 10> g; // Matrix for Graph
     int n;
     public:
     graph()  // Constructor 
