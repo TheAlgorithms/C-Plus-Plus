@@ -81,10 +81,10 @@ public:
     HKGraph(int m, int n);     // Constructor
     void addEdge(int u, int v); // To add edge
     
-    bool bfs(); ///< Returns true if there is an augmenting path    
-    bool dfs(int u); ///< Adds augmenting path if there is one beginning with u  
+    bool bfs(); // Returns true if there is an augmenting path    
+    bool dfs(int u); // Adds augmenting path if there is one beginning with u  
 	
-    int hopcroftKarpAlgorithm();  ///< Returns size of maximum matching
+    int hopcroftKarpAlgorithm();  // Returns size of maximum matching
 };
 
 
@@ -140,7 +140,7 @@ bool HKGraph::bfs()
         // If this is a free vertex, add it to queue
         if (pair_u[u] == NIL){
             
-            dist[u] = 0; ///< u is not matched so distance is 0
+            dist[u] = 0; // u is not matched so distance is 0
             q.push(u);
         }
 
@@ -150,12 +150,12 @@ bool HKGraph::bfs()
     }
 
     
-    dist[NIL] = INF; ///< Initialize distance to NIL as infinite
+    dist[NIL] = INF; // Initialize distance to NIL as infinite
 
     // q is going to contain vertices of left side only.
     while (!q.empty())
     {
-        int u = q.front();  ///< dequeue a vertex
+        int u = q.front();  // dequeue a vertex
         q.pop();
 
         // If this node is not NIL and can provide a shorter path to NIL then
@@ -212,7 +212,7 @@ bool HKGraph::dfs(int u)
         }
 
         
-        dist[u] = INF; ///< If there is no augmenting path beginning with u then set distance to infinite.
+        dist[u] = INF; // If there is no augmenting path beginning with u then set distance to infinite.
         return false;
     }
     return true;
