@@ -41,6 +41,8 @@ bool canJump(const std::vector<int> &nums) {
     }
     return lastPos == 0;
 }
+}  // namespace jump_game
+}  // namespace greedy_algorithms
 
 
 /**
