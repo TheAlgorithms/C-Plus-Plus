@@ -1,9 +1,10 @@
 #include<iostream>
-using namespace std;
+// using namespace std;
 
 /* 
         Warshalls Algorithm TO find All pair shortest path
-        Coded By Vaibhav Gawai
+        Coded By Vaibhav Gawai 
+        Github https://www.github.com/vaibhav-gawai
 */
 class graph
 {
@@ -12,8 +13,8 @@ class graph
     public:
     graph()  // Constructor 
     {
-        cout<<"Enter the number of nodes : ";
-        cin>>n;
+        std::cout<<"Enter the number of nodes : ";
+        std::cin>>n;
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<n;j++)
@@ -24,26 +25,26 @@ class graph
     }
     void getGraph()  //To Aceept the input from user
     {
-        cout<<"ENter MAtrix in following way: \n\t-->Enter 0 for no self Loop\n\t-->Enter 999 for no direct edge\n\t-->OR Enter The weight\n";
+        std::cout<<"ENter MAtrix in following way: \n\t-->Enter 0 for no self Loop\n\t-->Enter 999 for no direct edge\n\t-->OR Enter The weight\n";
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<n;j++)
             {
-                cout<<"Weight of "<<i+1<<" "<<j+1<<" : ";
-                cin>>g[i][j];
+                std::cout<<"Weight of "<<i+1<<" "<<j+1<<" : ";
+                std::cin>>g[i][j];
             }
         }
     }
     void print()
     {
-        cout<<"Your Graph Looks Like \n";
+        std::cout<<"Your Graph Looks Like \n";
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<n;j++)
             {
-                cout<<g[i][j]<<"\t";
+                std::cout<<g[i][j]<<"\t";
             }
-            cout<<"\n";
+            std::cout<<"\n";
         }
     }
     void warshalls()
@@ -55,7 +56,7 @@ class graph
             {
                 for(int j=0;j<n;j++)
                 {
-                    g[i][j] = min(g[i][j],g[i][k]+g[k][j]);
+                    g[i][j] = std::min(g[i][j],g[i][k]+g[k][j]);
                 }
             }
         }
@@ -64,7 +65,7 @@ class graph
             for(int j=0;j<n;j++)
             {
                 if(i!=j)
-                    cout<<"Shortest Distance Between "<<i+1<<"to "<<j+1<<" is : "<<g[i][j]<<"\n";
+                    std::cout<<"Shortest Distance Between "<<i+1<<"to "<<j+1<<" is : "<<g[i][j]<<"\n";
             }
         }
         print();
