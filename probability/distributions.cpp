@@ -27,7 +27,7 @@
 
 constexpr double E = 2.71828182845904523536;
 
-using ll = ll64_t;
+using ll = int64_t;
 
 // Find the greatest common divisor
 ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
@@ -267,7 +267,7 @@ namespace Gauss {}  // namespace Gauss
  * Main function.
  * Exit and return 0.
  */
-ll main() {
+int main() {
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "      Example of Uniform Distribution" << std::endl;
     std::cout << std::endl;
