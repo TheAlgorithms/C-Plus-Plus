@@ -1,5 +1,12 @@
 var NAVTREEINDEX1 =
 {
+"d3/d24/qr__decomposition_8cpp.html":[8,0,11,13],
+"d3/d24/qr__decomposition_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,11,13,0],
+"d3/d26/binary__search__tree_8cpp.html":[8,0,2,2],
+"d3/d26/binary__search__tree_8cpp.html#a13dac1586cbb95ebfd63dc47aeeff0e1":[8,0,2,2,9],
+"d3/d26/binary__search__tree_8cpp.html#a1ca1e6aad9a9e45c1d21a7c8f61bccc3":[8,0,2,2,4],
+"d3/d26/binary__search__tree_8cpp.html#a4392f2f3d0680befc1a6db07d94d6c5d":[8,0,2,2,11],
+"d3/d26/binary__search__tree_8cpp.html#a4a1aaff44d949318d93231e1fa5c7863":[8,0,2,2,5],
 "d3/d26/binary__search__tree_8cpp.html#a521ea77f195e491750e602292c6dc335":[8,0,2,2,7],
 "d3/d26/binary__search__tree_8cpp.html#a9e98619e1c6cea9d6c56849a16ecc416":[8,0,2,2,10],
 "d3/d26/binary__search__tree_8cpp.html#aa65d9b7fa9bd517ace3d819abc85c8b6":[8,0,2,2,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX1 =
 "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#a6ae98710503b894b843d01cb69d5490c":[7,0,7,0,0,1],
 "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#af06360122e20ce2ba32c574a27a20ba1":[7,0,7,0,0,0],
 "d5/d91/namespacesorting.html":[6,0,31],
-"d5/da1/structnode.html":[7,0,28],
-"d5/da1/structnode.html#a063635bc4e984d971d1efeb4230b0515":[7,0,28,5],
-"d5/da1/structnode.html#a0d4a5d1d3d77036ea6640f34b17b6554":[7,0,28,4],
-"d5/da1/structnode.html#a0ff89d3a408eee8a4ce6a69bfe0ddecf":[7,0,28,10],
-"d5/da1/structnode.html#a135f25acadfbba644f848f1aa18d8350":[7,0,28,11],
-"d5/da1/structnode.html#a42309387b3fa0237ec200c025071ad37":[7,0,28,3],
-"d5/da1/structnode.html#a53aa12087003fd7645f2a0480d97349f":[7,0,28,8],
-"d5/da1/structnode.html#a60d8451d06575ab0837739477506ef24":[7,0,28,13]
+"d5/da1/structnode.html":[7,0,28]
 };
