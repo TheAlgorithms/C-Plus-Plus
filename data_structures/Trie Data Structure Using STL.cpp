@@ -1,6 +1,5 @@
 #include<iostream>
 #include<unordered_map>
-using namespace std;
 class Node{
 public:
     char data;
@@ -59,9 +58,9 @@ int main(){
     char *w;
     w = "no";
     if(T.find(w)){
-        cout<<"Present";
+        std::cout<<"Present";
     }
     else{
-        cout<<"Absent";
+        std::cout<<"Absent";
     }
 }
