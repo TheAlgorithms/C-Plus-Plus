@@ -1,6 +1,0 @@
-{
-     "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, AccessModifierOffset: -3, AlignConsecutiveMacros: true }",
-     "editor.formatOnSave": true,
-     "editor.formatOnType": true,
-     "editor.formatOnPaste": true
-}
