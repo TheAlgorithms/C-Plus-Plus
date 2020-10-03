@@ -1,4 +1,15 @@
-#include<bits/stdc++.h>
+/**
+ * @file 
+ * @author [Shashwat Kumar] (https://github.com/shashwat9kumar)
+ * @details 
+ * A program in GLUT to create a histogram
+ * For references visit : https://en.wikipedia.org/wiki/Histogram
+ * Uses the formulae : K = [Xmax- Xmin]/ h
+ * Uses the adjustment methods for graphsical translations
+ */
+
+
+#include<iostream>
 #include<gl/glut.h>
 #include <cmath>
 using namespace std;
@@ -11,6 +22,7 @@ void init()
 }
 
 
+// 5 color values to code each bar with a different color
 const float v[5][3] = {     {0.8,0.5,0.0} ,
                             {0.0,0.5,0.9} ,
                             {0.5,0.0,0.9} ,
@@ -18,8 +30,8 @@ const float v[5][3] = {     {0.8,0.5,0.0} ,
                             {0.8,0.8,0.3}   };
 
 
-// 5 color values to code each bar with a different color
 
+// To store the percentage value of the input for histogram
 int value[5];
 
 
@@ -46,6 +58,10 @@ void grid()
 
 
 // To print the histogram graphically
+// xa : the minimum X value for histogram bar
+// xb : the maximum X value for histogram bar
+// ya : the minimum Y value for histogram bar
+// yb : the maximum Y value for histogram bar
 
 void histogram(int ya, int yb, int xa, int xb , int i)
 {
