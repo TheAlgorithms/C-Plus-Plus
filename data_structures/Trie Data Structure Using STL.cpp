@@ -3,7 +3,7 @@
 class Node{
 public:
     char data;
-    unordered_map<char,Node*> children;
+    std::unordered_map<char,Node*> children;
     bool terminal;
     Node(char d){
         data = d;
