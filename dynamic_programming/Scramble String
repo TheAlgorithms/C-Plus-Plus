@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+unordered_map<string,bool>dp;
+bool scramstring(string s1,string s2){
+    if(s1.compare(s2)==0)
+        return true;
+    if(s1.size()<=1)// lenght<1 means empty substring which is not allowed
+        return false;// length==1 means 'a' and 'b'.
+    string temp=s1+' '+s2;
+    if(dp.find(temp)!=dp.end())
+        return dp[temp];
+    int n=s1.size();
+    bool flag=false;
+    for(int i=1;i<n;i++){
+        if((scramstring(s1.substr(0,i),s2.substr(n-i,i))==true &&
+           scramstring(s1.substr(i,n-i),s2.substr(0,n-i))==true) ||
+           (scramstring(s1.substr(0,i),s2.substr(0,i))==true &&
+           scramstring(s1.substr(i,n-i),s2.substr(i,n-i))==true))
+           {// 'substr' func has 2 parms : 1. starting position
+               flag=true;//                2. length of sub-string
+               break;
+           }
+    }
+    return dp[temp]=flag;
+}
+
+int main(){
+ ios_base::sync_with_stdio(false); cin.tie(NULL);
+ string s1,s2;
+ cin>>s1>>s2;
+ if(s1.size()!=s2.size())
+    return false;
+ return scramstring(s1,s2);
+}
