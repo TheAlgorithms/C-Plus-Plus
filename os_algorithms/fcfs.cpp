@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cassert>
 
 struct process {
 	unsigned pid;
@@ -70,6 +71,20 @@ int main() {
 	};
 
 	find_avg_time(proc);
+
+	std::vector<process> test = {
+		{0, 5, 2, 12},
+		{1, 5, 3, 15},
+		{2, 1, 4, 5},
+		{3, 2, 2, 10},
+		{4, 1, 2, 7},
+		{5, 1, 1, 8}
+	};
+
+	assert(std::equal(proc.begin(), proc.end(), test.begin(),
+				[](const auto &a, const auto &b) {
+				return a.ct == b.ct;
+				}));
 
 	return 0;
 }
