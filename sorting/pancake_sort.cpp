@@ -1,3 +1,22 @@
+/**
+ * @file
+ * @brief pancake sort sorts a disordered stack of pancakes by flipping any number of pancakes using a spatula using minimum number of flips.
+ *
+ * @details
+ * Unlike a traditional sorting algorithm, which attempts to sort with the fewest comparisons possible,
+ * the goal is to sort the sequence in as few reversals as possible.
+ * Overall time complexity of pancake sort is O(n^2)
+ * For example: example 1:-
+ * Disordered pancake sizes: {2,5,3,7,8} 
+ * Sorted: {2,3,5,7,8}
+ * For example: example 2:-
+ * Disordered pancake sizes: {22,51,37,73,81} 
+ * Sorted: {22,37,51,73,81}
+ * @author [Divyansh Gupta](https://github.com/divyansh12323)
+ * @see more on [Pancake sort](https://en.wikipedia.org/wiki/Pancake_sorting)
+ * @see related problem [Leetcode](https://leetcode.com/problems/pancake-sorting/)
+*/
+
 #include <iostream>   // for io operations
 #include <vector>     // for std::vector
 #include <algorithm>  // for std::is_sorted
