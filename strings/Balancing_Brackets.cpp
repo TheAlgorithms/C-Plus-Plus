@@ -14,8 +14,10 @@ int main() {
 	    int b=0,bMax=0;
       //using this loop to count the number of balance '()' pair present note that ')(' or '((' or '))' are automatically excluded and then we have 1 count for each '()' this pair found in the string
 	    for(int i=0;i<s.length();++i){
-	        if(s[i]=='(') b++;
-	        else b--;
+	        if(s[i]=='(') 
+			b++;
+	        else 
+			b--;
 	        bMax = max(b,bMax);
 	    }
 	    b=bMax;
@@ -54,7 +56,8 @@ bool areParanthesisBalanced(string expr)
 		if (s.empty()) 
 			return false; 
 
-		switch (expr[i]) { 
+		switch (expr[i]) 
+		{ 
 		case ')': 
 
 			// Store the top element in a 
