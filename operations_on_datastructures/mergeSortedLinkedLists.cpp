@@ -3,18 +3,12 @@ using namespace std;
 
 
 
+typedef struct Node node;
 
-class node {
-public:
-	int data;
-	node* next;
+struct Node {
 
-// constructor
-	node(int d) {
-		data = d;
-		next = nullptr;
-	}
-
+	int data=0;
+	node* next = nullptr;
 };
 
 // We can have a linked list class seperately but we will prefer the node functional approach
@@ -46,7 +40,8 @@ int length(node*head) {
 }
 
 void insertAtHead(node*&head, int data) {
-	node*n = new node(data);
+	node*n = (node*)malloc(sizeof(node));
+	n->data = data;
 	n->next = head;
 	head = n;
 }
@@ -55,15 +50,19 @@ void insertAtHead(node*&head, int data) {
 void insertAtTail(node*&head, int data) {
 
 	if (head == nullptr) {
-		head = new node(data);
-		return;
+        head = (node*)malloc(sizeof(node));
+		head->data = data;
+		head->next = nullptr;
+        return;
 	}
 	node*tail = head;
 	while (tail->next != nullptr) {
 		tail = tail->next;
 	}
-	tail->next = new node(data);
-	return;
+    tail->next = (node*)malloc(sizeof(node));
+	tail->next->data = data;
+	tail->next->next = nullptr;
+    return;
 }
 
 // insert at a specified position in the linked list
@@ -85,8 +84,9 @@ void insertInMiddle(node*&head, int data, int p) {
 			jump++;
 		}
 
-		node*n = new node(data);
-		n->next = temp->next;
+        node* n = (node*)malloc(sizeof(node));
+		n->data = data;
+        n->next = temp->next;
 		temp->next = n;
 
 	}
