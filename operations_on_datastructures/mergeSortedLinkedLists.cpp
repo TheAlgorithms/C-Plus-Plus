@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 
@@ -12,7 +12,7 @@ public:
 // constructor
 	node(int d) {
 		data = d;
-		next = NULL;
+		next = nullptr;
 	}
 
 };
@@ -38,7 +38,7 @@ public:
 
 int length(node*head) {
 	int len = 0;
-	while (head != NULL) {
+	while (head != nullptr) {
 		head = head->next ;
 		len += 1;
 	}
@@ -54,12 +54,12 @@ void insertAtHead(node*&head, int data) {
 // Insert at the tail of the linked list
 void insertAtTail(node*&head, int data) {
 
-	if (head == NULL) {
+	if (head == nullptr) {
 		head = new node(data);
 		return;
 	}
 	node*tail = head;
-	while (tail->next != NULL) {
+	while (tail->next != nullptr) {
 		tail = tail->next;
 	}
 	tail->next = new node(data);
@@ -69,7 +69,7 @@ void insertAtTail(node*&head, int data) {
 // insert at a specified position in the linked list
 void insertInMiddle(node*&head, int data, int p) {
 
-	if (head == NULL || p == 0) {
+	if (head == nullptr || p == 0) {
 		insertAtHead(head, data);
 	}
 	else if (p > length(head)) {
@@ -96,7 +96,7 @@ void insertInMiddle(node*&head, int data, int p) {
 
 // Delete at the head of a linked list
 void deleteAtHead(node*&head) {
-	if (head == NULL) {
+	if (head == nullptr) {
 		// LL is empty
 		return;
 	}
@@ -108,20 +108,20 @@ void deleteAtHead(node*&head) {
 
 // delete at the tail of a linked list
 void deleteAtTail(node*&head) {
-	node*prev = NULL;
+	node*prev = nullptr;
 	node*temp = head;
-	while (temp->next != NULL) {
+	while (temp->next != nullptr) {
 		prev = temp;  //to make prev always one step back of temp
 		temp = temp->next;
 	}
 	delete temp;
-	prev->next = NULL;
+	prev->next = nullptr;
 	return;
 }
 
 // delete at a specified position in the linked list
 void deleteInMiddle(node*&head, int p) {
-	if (head == NULL || p == 0) {
+	if (head == nullptr || p == 0) {
 		deleteAtHead(head);
 		return;
 	}
@@ -131,7 +131,7 @@ void deleteInMiddle(node*&head, int p) {
 	}
 	else {
 		// delete in the middle
-		node*prev = NULL;
+		node*prev = nullptr;
 		node*temp = head;
 		int jump = 1;
 		// p-1 jumps
@@ -151,7 +151,7 @@ void deleteInMiddle(node*&head, int p) {
 // Search a particular element recursively in a linked list
 bool searchRecursive(node*head, int key) {
 
-	if (head == NULL) {
+	if (head == nullptr) {
 		return false;
 	}
 
@@ -167,7 +167,7 @@ bool searchRecursive(node*head, int key) {
 // Search a particular element iteratively in a linked list
 bool searchIterative(node*head, int key) {
 
-	while (head != NULL) {
+	while (head != nullptr) {
 		if (head->data == key) {
 			return true;
 		}
@@ -179,10 +179,10 @@ bool searchIterative(node*head, int key) {
 // Reverse a linked list iteratively
 void reverseIterative(node*&head) {
 	node*C = head;
-	node*P = NULL;
-	node*N;
+	node*P = nullptr;
+	node*N = nullptr;
 
-	while (C != NULL) {
+	while (C != nullptr) {
 		// Save the next node
 		N = C->next;
 		// Make the current node point to previous
@@ -197,14 +197,14 @@ void reverseIterative(node*&head) {
 // Reverse a linked list recursively
 node* reverseRecursive(node*head) {
 
-	if (head == NULL || head->next == NULL) {
+	if (head == nullptr || head->next == nullptr) {
 		return head;
 	}
 	// Recursive Case
 	node*smallHead = reverseRecursive(head->next);
 	node*C = head;
 	C->next->next = C;
-	C->next = NULL;
+	C->next = nullptr;
 	return smallHead;
 
 }
@@ -212,7 +212,7 @@ node* reverseRecursive(node*head) {
 // Print the linked list
 void print(node*head) {   //we are passing head by value so changes made to head will not be reflected in main
 	//node*temp = head;
-	while (head != NULL) {
+	while (head != nullptr) {
 		cout << head->data << " -> ";
 		head = head->next;
 	}
@@ -223,7 +223,7 @@ void print(node*head) {   //we are passing head by value so changes made to head
 void buildList(node*&head, int n) {
 	int i = 0;
 	while (i < n) {
-		int data;
+		int data = 0;
 		cin >> data;
 		insertAtTail(head, data);
 		i++;
@@ -233,7 +233,7 @@ void buildList(node*&head, int n) {
 // Overloaded ">>" operator for convenient input of linked list
 istream& operator>>(istream & is, node*&head) {
 	int n;
-     cin >> n;
+    cin >> n;
 	buildList(head, n);
 	return is;
 }
@@ -248,10 +248,10 @@ ostream& operator<<(ostream & os, node * head) {
 node*  merge(node*a, node*b) {
 
 	// Base Case
-	if (a == NULL) {
+	if (a == nullptr) {
 		return b;
 	}
-	else if (b == NULL) {
+	else if (b == nullptr) {
 		return a;
 	}
 
@@ -273,8 +273,8 @@ node*  merge(node*a, node*b) {
 
 int main() {
 
-	node*head = NULL;
-	node*head2 = NULL;
+	node*head = nullptr;
+	node*head2 = nullptr;
 
 	cin >> head >> head2;
 	cout << head << endl << head2 << endl;
