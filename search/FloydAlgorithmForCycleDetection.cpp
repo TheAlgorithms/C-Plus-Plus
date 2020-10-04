@@ -1,3 +1,12 @@
+
+/*Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+
+There is only one duplicate number in nums, return this duplicate number in O(1) space and time complexity less than O(n^2) without modifying the original array.
+
+Example-:
+    Input: nums = [3,1,3,4,2]
+    Output: 3
+*/
 #include<bits/stdc++.h>
 using namespace std;
     int findDuplicate(vector<int>& nums) {
