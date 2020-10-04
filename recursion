@@ -1,0 +1,22 @@
+//Recursion exapmle
+
+#include<iostream>
+using namespace std;
+int natural( int n)
+{
+	if (n==1)				//base condition
+		cout<<"1";
+	else if(n>1)			//if base condition is false
+	{
+		cout<<n<<endl;
+		natural(n-1);		//call recursive  function
+	}
+}
+int main()
+{
+	int n;
+  cout<<"enter number:";
+  cin>>n
+	natural(n);			//call natural function
+	return 0;
+}
