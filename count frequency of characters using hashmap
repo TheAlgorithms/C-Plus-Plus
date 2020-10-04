@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+
+
+void count(string x)
+{
+int n=x.length();
+unordered_map<char,int> m;
+int i=0;
+while(i<n)
+{
+m[x[i++]]++;
+}
+for(auto it : m)
+{
+cout<<m.first<<" "<<m.second;
+}
+}
+
+
+int main()
+{
+string x;
+cin>>x;
+count(x);
+return 0;
+}
+
