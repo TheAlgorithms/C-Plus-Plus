@@ -1,7 +1,7 @@
 /**
  * @file
- * A simple program to check if the given number is a factorial of some number
- * or not.
+ * @brief A simple program to check if the given number is a factorial of some
+ * number or not.
  * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
  */
 #include <cassert>
@@ -30,7 +30,9 @@ bool is_factorial(int n) {
     }
 }
 
-/** Test function */
+/** Test function
+ * @returns void
+ */
 void tests() {
     std::cout << "Test 1:\t n=50\n";
     assert(is_factorial(50) == false);
@@ -53,7 +55,9 @@ void tests() {
     std::cout << "passed\n";
 }
 
-/** Main function */
+/** Main function
+ * @returns 0 on exit
+ */
 int main() {
     tests();
     return 0;
