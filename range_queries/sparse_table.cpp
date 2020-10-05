@@ -98,3 +98,4 @@ int main() {
     assert(range_queries::sparse_table::getMinimum(2, 4, logs, table) == 0);
     return 0;
 }
+
