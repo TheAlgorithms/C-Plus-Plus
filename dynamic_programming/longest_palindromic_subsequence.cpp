@@ -17,7 +17,6 @@
 #include <cassert>
 #include <iostream>
 #include <vector>
-#define max(a, b) (((a) > (b)) ? (a) : (b))
 
 /**
  * Function that returns the longest palindromic
@@ -39,7 +38,7 @@ std::string lps(std::string a) {
             } else if (a[i - 1] == b[j - 1]) {
                 res[i][j] = res[i - 1][j - 1] + 1;
             } else {
-                res[i][j] = max(res[i - 1][j], res[i][j - 1]);
+                res[i][j] = std::max(res[i - 1][j], res[i][j - 1]);
             }
         }
     }
