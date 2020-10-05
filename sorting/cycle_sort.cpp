@@ -3,7 +3,7 @@
  * @brief Implementation of [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  *
  *@details
- *Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best case and works in \f$O(n^2)\f$ in worst case.
+ *Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best cas and works in \f$O(n^2)\f$ in worst case.
  *If a element is already at its correct  position, do nothing.
  *If a element is not at its correct position, we then need to move it to its correct position by computing the correct positions.Therefore, we should make sure the duplicate elements.
  *
@@ -14,7 +14,7 @@
 #include <vector>
 
 void swap(int *a, int *b) {
-    int tmp;
+    int tmp = 0;
     tmp = *a;
     *a = *b;
     *b = tmp;
@@ -27,13 +27,16 @@ void cycleSort(std::vector<int> *arr) {
 
         // Count the number of elements smaller than item, this  number is the correct index of item.
         int pos = cycle_start;
-        for (int i = cycle_start + 1; i < (*arr).size(); i++)
-            if ((*arr)[i] < item)
+        for (int i = cycle_start + 1; i < (*arr).size(); i++) {
+            if ((*arr)[i] < item) {
                 pos++;
+            }
+        }
 
         // item is already in correct position
-        if (pos == cycle_start)
+        if (pos == cycle_start) {
             continue;
+        }
 
         // duplicate  elements
         while (item == (*arr)[pos]) pos += 1;
@@ -43,9 +46,11 @@ void cycleSort(std::vector<int> *arr) {
         while (pos != cycle_start) {
             pos = cycle_start;
             // Find position where we put the element
-            for (int i = cycle_start + 1; i < (*arr).size(); i++)
-                if ((*arr)[i] < item)
+            for (int i = cycle_start + 1; i < (*arr).size(); i++) {
+                if ((*arr)[i] < item) {
                     pos += 1;
+                }
+            }
             // duplicate  elements
             while (item == (*arr)[pos]) pos += 1;
             swap(&item, &(*arr)[pos]);
@@ -60,7 +65,7 @@ void test() {
     std::vector<int> *arr = &array;
     cycleSort(arr);
     std::cout << "Sorted : ";
-    for (int i = 0; i < (*arr).size(); i++) std::cout << (*arr)[i] << " ";
+    for (int i : *arr) std::cout << i << " ";
 }
 
 /* Main function */
