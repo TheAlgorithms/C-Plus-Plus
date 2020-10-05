@@ -77,7 +77,8 @@ std::vector<std::vector<T> > buildTable(const std::vector<T>& A, const std::vect
  * @param table sparse table data structure for the input array
  * @return minimum value for the [beg, end] range for the input array
  */
-int getMinimum(int beg, int end, const std::vector<int>& logs, const std::vector<std::vector<int> >& table) {
+template<typename T>
+int getMinimum(int beg, int end, const std::vector<T>& logs, const std::vector<std::vector<T> >& table) {
     int p = logs[end - beg + 1];
     int pLen = 1 << p;
     return std::min(table[p][beg], table[p][end - pLen + 1]);
