@@ -1,5 +1,15 @@
-#include <iostream>
+/**
+ * @file
+ * @brief Implementation of [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
+ *
+ *@details
+ *Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best case and works in \f$O(n^2)\f$ in worst case.
+ *
+ *@author [TsungHan Ho](https://github.com/dalaoqi)
+ */
 
+#include <cassert>
+#include <iostream>
 void swap(int *a, int *b) {
     int tmp;
     tmp = *a;
@@ -59,13 +69,18 @@ void cycleSort(int arr[], int n) {
     }
 }
 
-int main() {
-    // example
+/* Test function */
+void test() {
+    // [1, 8, 3, 9, 10, 10, 2, 4] return [1, 2, 3, 4, 8, 9, 10, 10]
     int arr[] = {1, 8, 3, 9, 10, 10, 2, 4};
     int n = sizeof(arr) / sizeof(arr[0]);
     cycleSort(arr, n);
-
     std::cout << "After sort : " << std::endl;
     for (int i = 0; i < n; i++) std::cout << arr[i] << " ";
+}
+
+/* Main function */
+int main() {
+    test();  // execute the test
     return 0;
 }
