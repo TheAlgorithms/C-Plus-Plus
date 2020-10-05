@@ -26,10 +26,10 @@ bool isLeapYear(int currYear) {
     * Function to convert unix timestamp (in seconds)
     * to required format(Date/Month/Year Hour:Minute:Second).
 */
-string unixTimeStampToHumanReadable(int64 unixTime) {
+string unixTimeStampToHumanReadable(long unixTime) {
     string ans = "";
     int daysOfMonth[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-    int64 currYear,
+    long currYear,
         daysTillNow,
         extraTime,
         extraDays,
@@ -143,7 +143,7 @@ string unixTimeStampToHumanReadable(int64 unixTime) {
 
 int main() {
     // sample input
-    int64 seconds = 1354626750;
+    long seconds = 1354626750;
 
     string ans = unixTimeStampToHumanReadable(seconds);
 
