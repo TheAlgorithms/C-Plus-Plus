@@ -61,6 +61,7 @@ namespace sorting {
 			    reverse(arr, 0, i-1); 
 		    } 
 	    } 
+	    return 0;
     } 
 } // namespace sorting
 
