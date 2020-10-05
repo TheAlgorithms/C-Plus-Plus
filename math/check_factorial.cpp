@@ -13,11 +13,11 @@
  * @return if number is a factorial, returns true, else false.
  */
 
-bool is_factorial(int n) {
+bool is_factorial(uint64_t n) {
     if (n <= 0) {
         return false;
     }
-    for (int i = 1;; i++) {
+    for (uint32_t i = 1;; i++) {
         if (n % i != 0) {
             break;
         }
