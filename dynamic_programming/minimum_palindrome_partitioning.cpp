@@ -31,7 +31,7 @@ namespace mpp {
  * Function that returns the minimum palindrome
  * partitioning of a string
  */
-int mpp(std::string s) {  // mpp: minimum palindrome partitioning
+int mpp(const std::string &s) {  // mpp: minimum palindrome partitioning
     int n = s.length();
     std::vector<std::vector<bool> > palin(
         n);  // stores whether a particular substring
