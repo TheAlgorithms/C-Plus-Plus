@@ -77,6 +77,9 @@ int mpp(const std::string &s) {  // mpp: minimum palindrome partitioning
     }
     return cuts[n - 1];
 }
+} // namespace mpp
+
+using mpp::mpp;
 
 /** Test function */
 void test() {
