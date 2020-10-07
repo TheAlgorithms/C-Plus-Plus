@@ -55,7 +55,7 @@ bool luhn(std::string const& cardNumber) {
 
     // Iterate over all digits starting from the right
     // other than the checksum (rightmost digit).
-    for (unsigned long i = 1; i <= numberOfDigits; i++) {
+    for (unsigned int i = 1; i <= numberOfDigits; i++) {
         auto position = numberOfDigits - i;
         int digit = digits[position];
 
