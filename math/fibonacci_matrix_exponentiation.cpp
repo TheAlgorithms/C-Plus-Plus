@@ -44,8 +44,8 @@ End
 */
 
 #include<bits/stdc++.h>
-typedef long long ll;
-const long long mod = 1000000007;
+typedef int64 ll;
+const int64 mod = 1000000007;
 std::vector<ll> a(2);
 std::vector<std::vector<ll>> t(2,std::vector<ll>(2));
 std::vector<std::vector<ll>> I(2,std::vector<ll>(2));
