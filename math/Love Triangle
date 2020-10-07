@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+typedef  long long  ll;
+using namespace std;
+
+
+ll print(ll item){
+	if(item<9){
+		return item;
+	}else{
+		return item%9 + 10*print(item/9);
+	}
+
+	
+}
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	ll item;
+	while(cin>>item){
+		cout<<print(item)<<"\n";
+	}
+}
