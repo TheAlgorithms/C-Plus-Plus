@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int k,n,temp,d=0,div=1,mul=1;
+cout<<"enter number";
+cin>>n;
+cout<<"enter rotational number";
+cin>>k;
+
+temp=n;
+while(temp>0)
+{
+	temp=temp/10;
+	d++;
+	}
+k=k%d;
+if(k<0)
+{
+	k=k+d;
+	}	
+for(int i=1;i<=d;i++)
+{
+	if(i<=k)
+	{
+		div*=10;
+	}
+	else{
+		mul*=10;
+	}
+	
+	
+	
+	
+		}
+int rem=n%div;
+int s=n/div;
+int rno=rem*mul+s;		
+cout<<"no"<<rno;				
+return 0;	
+}
