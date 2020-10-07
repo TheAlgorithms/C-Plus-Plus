@@ -38,7 +38,7 @@ bool luhn(std::string const& cardNumber) {
     std::vector<int> digits;
 
     // Number of digits except the checksum at the end.
-    unsigned long numberOfDigits = cardNumber.length() - 1;
+    auto numberOfDigits = cardNumber.length() - 1;
 
     digits.reserve(numberOfDigits);
 
@@ -55,7 +55,7 @@ bool luhn(std::string const& cardNumber) {
 
     // Iterate over all digits starting from the right
     // other than the checksum (rightmost digit).
-    for (int i = numberOfDigits - 1; i >= 0; i--) {
+    for (auto i = numberOfDigits - 1; i >= 0; i--) {
         int digit = digits[i];
 
         // If digit is an odd position, double it.
