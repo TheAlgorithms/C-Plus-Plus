@@ -95,6 +95,7 @@ static void test() {
 
 /**
  * Main Function
+ * @returns 0 on exit
  */
 int main() {
     test();  // execute the tests
