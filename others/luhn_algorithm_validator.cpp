@@ -34,10 +34,13 @@
 #include <vector>
 
 bool luhn(std::string const& cardNumber) {
+    // Integer digits
     std::vector<int> digits;
 
     // Number of digits except the checksum at the end.
-    int numberOfDigits = cardNumber.length() - 1;
+    unsigned long numberOfDigits = cardNumber.length() - 1;
+
+    digits.reserve(numberOfDigits);
 
     // Checksum digit
     int checksum = cardNumber.back() - '0';
