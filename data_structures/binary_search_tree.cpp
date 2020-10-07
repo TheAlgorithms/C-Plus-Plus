@@ -120,7 +120,7 @@ class binary_search_tree {
 
         if (node->value == rm_value) {
             if (node->left && node->right) {
-                T successor_node_value;
+                T successor_node_value{};
                 find_max(node->left, successor_node_value);
                 remove(root_, root_, successor_node_value);
                 node->value = successor_node_value;
