@@ -84,7 +84,7 @@ using mpp::mpp;
 /** Test function 
  * @returns 0
  */
-void test() {
+static void test() {
     // mpp("banana") return 1
     assert(mpp("banana") == 1);
     // mpp("abbcbaa") return 3
