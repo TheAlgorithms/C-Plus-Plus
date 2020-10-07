@@ -44,22 +44,21 @@ End
 */
 
 #include<bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define mod 1000000007
-vector<ll> a(2);
-vector<vector<ll>> t(2,vector<ll>(2));
-vector<vector<ll>> I(2,vector<ll>(2));
+typedef long long ll;
+const long long mod = 1000000007;
+std::vector<ll> a(2);
+std::vector<std::vector<ll>> t(2,std::vector<ll>(2));
+std::vector<std::vector<ll>> I(2,std::vector<ll>(2));
 /**
  * This function multiplies two matrix.
  * @param a 2d-vector 
  * @param b 2d-vector
  * @param m size of vector
  */ 
-void mul(vector<vector<ll>> &a,vector<vector<ll>> &b,int m)
+void mul(std::vector<std::vector<ll>> &a,std::vector<std::vector<ll>> &b,int m)
 {
 	
-	vector<vector<ll>> res(2,vector<ll>(2,0));
+	std::vector<std::vector<ll>> res(2,std::vector<ll>(2,0));
 	for(int i=0;i<m;i++)
 	{
 		for(int j=0;j<m;j++){
@@ -110,12 +109,12 @@ ll fibo(ll n)
 void test()
 {
 	assert(fibo(6) == 8);
-    cout << "test case:1 passed\n";
+    std::cout << "test case:1 passed\n";
     assert(fibo(5) == 5);
-    cout << "test case:2 passed\n";
+    std::cout << "test case:2 passed\n";
     assert(fibo(10) == 55);
-    cout << "test case:3 passed\n";
-    cout << "--All tests passed--\n";
+    std::cout << "test case:3 passed\n";
+    std::cout << "--All tests passed--\n";
 }
 /**
  * Main function
@@ -123,7 +122,7 @@ void test()
 int main()
 {
 	test();
-	cout<<"Enter the value of N: ";
-	ll n; cin>>n; 
-	cout<<n<<"th Fibonacci number :"<<fibo(n); 
+	std::cout<<"Enter the value of N: ";
+	ll n; std::cin>>n; 
+	std::cout<<n<<"th Fibonacci number :"<<fibo(n); 
 }
