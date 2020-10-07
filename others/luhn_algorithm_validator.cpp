@@ -55,11 +55,12 @@ bool luhn(std::string const& cardNumber) {
 
     // Iterate over all digits starting from the right
     // other than the checksum (rightmost digit).
-    for (auto i = numberOfDigits - 1; i >= 0; i--) {
-        int digit = digits[i];
+    for (unsigned long i = 1; i <= numberOfDigits; i++) {
+        auto position = numberOfDigits - i;
+        int digit = digits[position];
 
         // If digit is an odd position, double it.
-        if (!(i % 2)) {
+        if (!(position % 2)) {
             digit *= 2;
 
             // If doubled digit is greater than 10 add its digits
