@@ -81,7 +81,9 @@ int mpp(const std::string &s) {  // mpp: minimum palindrome partitioning
 
 using mpp::mpp;
 
-/** Test function */
+/** Test function 
+ * @returns 0
+ */
 void test() {
     // mpp("banana") return 1
     assert(mpp("banana") == 1);
