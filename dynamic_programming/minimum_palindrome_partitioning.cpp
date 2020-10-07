@@ -22,6 +22,12 @@
 #include <vector>
 
 /**
+ * @namespace mpp
+ * @brief Minimum palindrome partition algorithm
+ */ 
+namespace mpp {
+
+/**
  * Function that returns the minimum palindrome
  * partitioning of a string
  */
