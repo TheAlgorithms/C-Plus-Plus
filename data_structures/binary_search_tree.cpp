@@ -79,20 +79,21 @@ class binary_search_tree {
      */
     bool insert(std::unique_ptr<bst_node>& node, T new_value) {
         if (root_ == node && !root_) {
-            root_ = std::make_unique<bst_node>(new_value);
+            root_ = std::unique_ptr<bst_node>(new bst_node(new_value));
             return true;
         }
 
         if (new_value < node->value) {
             if (!node->left) {
-                node->left = std::make_unique<bst_node>(new_value);
+                node->left = std::unique_ptr<bst_node>(new bst_node(new_value));
                 return true;
             } else {
                 return insert(node->left, new_value);
             }
         } else if (new_value > node->value) {
             if (!node->right) {
-                node->right = std::make_unique<bst_node>(new_value);
+                node->right =
+                    std::unique_ptr<bst_node>(new bst_node(new_value));
                 return true;
             } else {
                 return insert(node->right, new_value);
@@ -351,7 +352,8 @@ void test_insert() {
     assert(res);
     assert(tree.find_max(max));
     assert(tree.find_min(min));
-    assert(max == min == 5);
+    assert(max == 5);
+    assert(min == 5);
     assert(tree.size() == 1);
 
     tree.insert(4);
