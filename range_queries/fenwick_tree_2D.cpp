@@ -1,3 +1,8 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+typedef long long ll;
 template <class T>
 struct fenwick {
     int siz;
