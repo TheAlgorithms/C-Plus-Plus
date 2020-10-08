@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 @author omkarlanghe
+ *
  *
  * @file
  * A simple program to check if the given number if prime or not.
@@ -18,44 +18,35 @@
  * @param num number to be checked.
  * @return if number is prime, it returns @ true, else it returns @ false.
  */
-template <typename T>
-bool is_prime(T num) {
-    bool result = true;
-    if (num <= 1) {
-        return 0;
-    } else if (num == 2) {
-        return 1;
-    } else if ((num & 1) == 0) {
-        return 0;
+bool is_prime(int n) {
+    // Assumes that n is a positive natural number
+    // We know 1 is not a prime number
+    if (n == 1) {
+        return false;
     }
-    if (num >= 3) {
-        for (T i = 3; (i * i) < (num); i = (i + 2)) {
-            if ((num % i) == 0) {
-                result = false;
-                break;
-            }
+
+    int i = 2;
+    // This will loop from 2 to int(sqrt(x))
+    while (i*i <= n) {
+        // Check if i divides x without leaving a remainder
+        if (n % i == 0) {
+            // This means that n has a factor in between 2 and sqrt(n)
+            // So it is not a prime number
+            return false;
         }
+        i += 1;
     }
-    return (result);
+    // If we did not find any factor in the above loop,
+    // then n is a prime number
+    return true;
 }
 
-/**
- * Main function
- */
 int main() {
-    // perform self-test
-    assert(is_prime(50) == false);
-    assert(is_prime(115249) == true);
-
-    int num;
-    std::cout << "Enter the number to check if it is prime or not" << std::endl;
-    std::cin >> num;
-    bool result = is_prime(num);
-    if (result) {
-        std::cout << num << " is a prime number" << std::endl;
-    } else {
-        std::cout << num << " is not a prime number" << std::endl;
-    }
-
+  int x;
+    cout<<"Enter the number"<<endl;
+    cin>>x;
+    cout << x << ": " <<  (is_prime(x) ? "true" : "false") << endl;
+    // Output: 1000000000: false
+   
     return 0;
 }
