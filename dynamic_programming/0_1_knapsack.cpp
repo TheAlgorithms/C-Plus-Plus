@@ -6,12 +6,12 @@
  * @details
  * Given weights and values of n items, put these items in a knapsack of
  * capacity `W` to get the maximum total value in the knapsack. In other words,
- * given two integer arrays `val[0..n-1]` and `wt[0..n-1]` which represent values
- * and weights associated with n items respectively. Also given an integer W
- * which represents knapsack capacity, find out the maximum value subset of
- * `val[]` such that sum of the weights of this subset is smaller than or equal to
- * W. You cannot break an item, either pick the complete item or don’t pick it
- * (0-1 property)
+ * given two integer arrays `val[0..n-1]` and `wt[0..n-1]` which represent
+ * values and weights associated with n items respectively. Also given an
+ * integer W which represents knapsack capacity, find out the maximum value
+ * subset of `val[]` such that sum of the weights of this subset is smaller than
+ * or equal to W. You cannot break an item, either pick the complete item or
+ * don’t pick it (0-1 property)
  *
  * ### Algorithm
  * The idea is to consider all subsets of items and calculate the total weight
@@ -41,22 +41,21 @@ namespace Knapsack {
  * @brief Picking up all those items whose combined weight is below
  * given capacity and calculating value of those picked items.Trying all
  * possible combinations will yield the maximum knapsack value.
- * @tparam T size of the weight and value array
+ * @tparam n size of the weight and value array
  * @param capacity capacity of the carrying bag
- * @param n no of items
  * @param weight array representing weight of items
  * @param value array representing value of items
  * @return maximum value obtainable with given capacity.
  */
-template <size_t T>
-int maxKnapsackValue(const int capacity, const int n,
-                     const std::array<int, T> &weight,
-                     const std::array<int, T> &value) {
+template <size_t n>
+int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
+                     const std::array<int, n> &value) {
     std::vector<std::vector<int> > maxValue(n + 1,
                                             std::vector<int>(capacity + 1, 0));
     // outer loop will select no of items allowed
     // inner loop will select capcity of knapsack bag
-    for (size_t i = 0; i < n + 1; ++i) {
+    int items = sizeof(weight) / sizeof(weight[0]);
+    for (size_t i = 0; i < items + 1; ++i) {
         for (size_t j = 0; j < capacity + 1; ++j) {
             if (i == 0 || j == 0) {
                 // if no of items is zero or capacity is zero, then maxValue
@@ -84,7 +83,7 @@ int maxKnapsackValue(const int capacity, const int n,
     }
 
     // returning maximum value
-    return maxValue[n][capacity];
+    return maxValue[items][capacity];
 }
 }  // namespace Knapsack
 }  // namespace dynamic_programming
@@ -100,7 +99,7 @@ static void test() {
     std::array<int, n1> value1 = {60, 100, 120};  // value of each item
     const int capacity1 = 50;                     // capacity of carrying bag
     const int max_value1 = dynamic_programming::Knapsack::maxKnapsackValue(
-        capacity1, n1, weight1, value1);
+        capacity1, weight1, value1);
     const int expected_max_value1 = 220;
     assert(max_value1 == expected_max_value1);
     std::cout << "Maximum Knapsack value with " << n1 << " items is "
@@ -112,7 +111,7 @@ static void test() {
     std::array<int, n2> value2 = {24, 18, 18, 10};  // value of each item
     const int capacity2 = 25;                       // capacity of carrying bag
     const int max_value2 = dynamic_programming::Knapsack::maxKnapsackValue(
-        capacity2, n2, weight2, value2);
+        capacity2, weight2, value2);
     const int expected_max_value2 = 36;
     assert(max_value2 == expected_max_value2);
     std::cout << "Maximum Knapsack value with " << n2 << " items is "
