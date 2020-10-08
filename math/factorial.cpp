@@ -5,7 +5,7 @@
 #include <iostream>
 
 /** function to find factorial of given number */
-unsigned long factorial(unsigned int n) {
+long factorial(unsigned int n) {
     return n == 0 ? 1 : n * factorial(n - 1);
 }
 
