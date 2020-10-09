@@ -59,7 +59,7 @@ void print(int dist[], int V) {
 // The main function that finds the shortest path from given source
 // to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
 // weights
-void Dijkstra(Graph graph, int src) {
+void Dijkstra_spf(Graph graph, int src) {
     int V = graph.vertexNum;
     int mdist[V];  // Stores updated distances to vertex
     bool vset[V];  // vset[i] is true if the vertex i included
@@ -118,7 +118,7 @@ int main() {
     }
     cout << "\nEnter source:";
     cin >> gsrc;
-    Dijkstra(G, gsrc);
+    Dijkstra_spf(G, gsrc);
 
     return 0;
 }

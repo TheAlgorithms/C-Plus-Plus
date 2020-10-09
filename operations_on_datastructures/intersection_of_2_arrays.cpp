@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 int main() {
     int i, j, m, n;
     cout << "Enter size of array 1:";

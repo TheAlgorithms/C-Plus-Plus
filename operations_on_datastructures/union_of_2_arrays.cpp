@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 int main() {
     int m, n, i = 0, j = 0;
     cout << "Enter size of both arrays:";
