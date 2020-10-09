@@ -2,18 +2,17 @@
 #include <cassert>
 #include <vector>
 
-using namespace std;
 
 template <class T>
 struct fenwick {
     int siz;
-    vector<T> arr;
+    std::vector<T> arr;
     
     // Constructor 
     // n - size of the array on which fenwick tree is used
     // creates a new array with all entries as 0
     // indicies are 1-indexed
-    fenwick(int n) {
+    explicit fenwick(int n) {
 	siz = n;
 	arr.resize(n + 1);
     }
@@ -49,13 +48,13 @@ template<class T>
 struct fenwick2D{
 
     int siz;
-    vector<fenwick<T>> arr;
+    std::vector<fenwick<T>> arr;
 
     // Constructor 
     // n - size of the array on which fenwick tree is used
     // creates a new array of fenwick trees of size n with all entries 0
     // indicies are 1-indexed
-    fenwick2D(int n) {
+    explicit fenwick2D(int n) {
 	siz = n;
 	arr.resize(n + 1, fenwick<T>(n));
     }
@@ -112,7 +111,7 @@ int main() {
     assert(fenwick_tree_2D.query(1, 1, 2, 2) == 9);
     assert(fenwick_tree_2D.query(1, 2, 3, 3) == 27);
 
-    cout << "All Test Passed\n";
+    std::cout << "All Test Passed\n";
 
     return 0;
 }
