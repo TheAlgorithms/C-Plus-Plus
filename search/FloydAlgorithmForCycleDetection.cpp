@@ -1,17 +1,16 @@
 
 /*Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 
-There is only one duplicate number in nums, return this duplicate number in O(1) space and time complexity less than O(n^2) without modifying the original array.
+If there is only one duplicate number in nums, this algo returns the duplicate number in O(1) space and time complexity less than O(n^2) without modifying the original array.
 
 Example-:
-    Input: 5
-           3 1 3 4 2
+    Input:-  Enter nos=3 4 8 5 9 1 2 6 7 4
     
-    Output: 3
+    Output: Duplicate number=4
 */
-#include<bits/stdc++.h>
-using namespace std;
-    int findDuplicate(vector<int>& nums) {
+#include<iostream>
+#include<array>
+    int findDuplicate(std::array <int,10> nums) {
         int slow=nums[0];
         int fast=nums[0];
         do{
@@ -27,16 +26,14 @@ using namespace std;
         return slow;
     }
 int main()
-{
-    vector <int> A;
-    int t,temp,ans;
-    cin>>t;
-    for(int i=0;i<t;i++)
-    {
-        cin>>temp;
-        A.push_back(temp);
+{ 
+    std::array <int,10 > arr;
+    int ans;
+	std::cout<<"Enter nos=";
+	for(int temp, i = 0; i < arr.size() && std::cin >> temp; ++i) {
+        arr[i] = temp;
     }
-    ans=findDuplicate(A);
-    cout<<ans;
+    ans=findDuplicate(arr);
+    std::cout<<"\nDuplicate number="<<ans;
     return 0;
 }
