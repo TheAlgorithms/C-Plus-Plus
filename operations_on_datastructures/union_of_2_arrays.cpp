@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
     int i = 0, j = 0;
-    int a[5];
-    int b[5];
+    std::array<int, 5> a{};
+    std::array<int, 5> b{};
     std::cout << "Enter elements of array 1:";
     for (i = 0; i < 5; i++) std::cin >> a[i];
     std::cout << "Enter elements of array 2:";

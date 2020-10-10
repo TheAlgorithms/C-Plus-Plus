@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
     int i = 0, j = 0;
-    int a[5];
-    int b[5];
+    std::array<int, 5> a{};
+    std::array<int, 5> b{};
     std::cout << "Enter elements of array 1:";
     for (i = 0; i < 5; i++) std::cin >> a[i];
     std::cout << "Enter elements of array 2:";
@@ -10,11 +10,13 @@ int main() {
     i = 0;
     j = 0;
     while ((i < 5) && (j < 5)) {
-        if (a[i] < b[j])
+        if (a[i] < b[j]){
             i++;
-        else if (a[i] > b[j])
-            j++;
-        else {
+}
+        else if (a[i] > b[j]) {
+           j++;
+
+}        else {
             std::cout << b[j] << " ";
             i++;
             j++;
