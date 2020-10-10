@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 int main() {
     int i = 0, j = 0;
     std::array<int, 5> a{};
