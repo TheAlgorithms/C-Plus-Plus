@@ -1,6 +1,6 @@
 /#include <bits/stdc++.h>
 #include <iostream>
-constexpr unsigned int max_hieght = 400000;
+constexpr unsigned int max_height = 400000;
 typedef long long ll;
 void ConsTree(ll arr[], ll segtree[], ll low, ll high, ll pos) {
     if (low == high) {
@@ -67,7 +67,7 @@ int main() {
     ll n = 0, c = 0;
     std::cin >> n >> c;
     ll arr[n], p = 0, q = 0, v = 0, choice = 0;
-    ll segtree[max_hieght], lazy[max_hieght] = {0};
+    ll segtree[max_height], lazy[max_height] = {0};
     ConsTree(arr, segtree, 0, n - 1, 0);
     while (c--) {
         std::cin >> choice;
