@@ -1,9 +1,11 @@
-#include <iostream>
-#include <cmath>
 #include <algorithm>
-using namespace std;
+#include <array>
+#include <cmath>
+#include <iostream>
 const int N = 1e6 + 5;
-int a[N], bucket[N], cnt[N];
+std::array<int, N> a{};
+std::array<int, N> bucket{};
+std::array<int, N> cnt{};
 int bucket_size;
 struct query {
     int l, r, i;
@@ -12,34 +14,38 @@ int ans = 0;
 
 void add(int index) {
     cnt[a[index]]++;
-    if (cnt[a[index]] == 1)
+    if (cnt[a[index]] == 1) {
         ans++;
+    }
 }
 void remove(int index) {
     cnt[a[index]]--;
-    if (cnt[a[index]] == 0)
+    if (cnt[a[index]] == 0) {
         ans--;
+    }
 }
 
 bool mycmp(query x, query y) {
-    if (x.l / bucket_size != y.l / bucket_size)
+    if (x.l / bucket_size != y.l / bucket_size) {
         return x.l / bucket_size < y.l / bucket_size;
+    }
     return x.r < y.r;
 }
 
 int main() {
-    int n, t, i, j, k = 0;
-    scanf("%d", &n);
-    for (i = 0; i < n; i++) scanf("%d", &a[i]);
-    bucket_size = ceil(sqrt(n));
-    scanf("%d", &t);
+    int n = 0, t = 0, i = 0, j = 0, k = 0;
+    std::cin >> n;
+    for (i = 0; i < n; i++) std::cin >> a[i];
+    bucket_size = std::ceil(std::sqrt(n));
+    std::cin >> t;
     for (i = 0; i < t; i++) {
-        scanf("%d %d", &q[i].l, &q[i].r);
+        std::cin >> q[i].l;
+        std::cin >> q[i].r;
         q[i].l--;
         q[i].r--;
         q[i].i = i;
     }
-    sort(q, q + t, mycmp);
+    std::sort(q, q + t, mycmp);
     int left = 0, right = 0;
     for (i = 0; i < t; i++) {
         int L = q[i].l, R = q[i].r;
@@ -61,6 +67,6 @@ int main() {
         }
         bucket[q[i].i] = ans;
     }
-    for (i = 0; i < t; i++) printf("%d\n", bucket[i]);
+    for (i = 0; i < t; i++) std::cout << bucket[i] << "\n";
     return 0;
 }
