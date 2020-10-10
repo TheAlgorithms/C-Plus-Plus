@@ -35,8 +35,9 @@
  */
 template <typename T>
 void printArray(T *arr, unsigned size) {
-    for (unsigned i = 0; i < size; i++)
+    for (unsigned i = 0; i < size; i++) {
         std::cout << arr[i] << " ";
+    }
 
     std::cout << std::endl;
 }
@@ -57,16 +58,18 @@ void printArray(T *arr, unsigned size) {
  *
  */
 template <typename T>
-void heapify(T *arr, unsigned size, int index) {
-    int largest = index;
+void heapify(T *arr, unsigned size, unsigned index) {
+    unsigned largest = index;
     unsigned left = 2 * index + 1;
     unsigned right = 2 * index + 2;
 
-    if (left < size && arr[left] > arr[largest])
+    if (left < size && arr[left] > arr[largest]) {
         largest = left;
+    }
 
-    if (right < size && arr[right] > arr[largest])
+    if (right < size && arr[right] > arr[largest]) {
         largest = right;
+    }
 
     if (largest != index) {
         std::swap(arr[index], arr[largest]);
@@ -83,9 +86,10 @@ void heapify(T *arr, unsigned size, int index) {
  *
  */
 template <typename T>
-void heapSort(T *arr, unsigned size) {
-    for (int i = size - 1; i >= 0; i--)
+void heapSort(T *arr, int size) {
+    for (int i = size - 1; i >= 0; i--) {
         heapify(arr, size, i);
+    }
 
     for (int i = size - 1; i >= 0; i--) {
         std::swap(arr[0], arr[i]);
