@@ -16,7 +16,6 @@ Determine the maximum amount of money you can rob tonight without alerting the p
 #include <iostream>
 #include <vector>
 #include <cstring> 
-using namespace std;
 
 int houseRobber(int dpTable[],vector<int>& money,int n,int pos=0)
 {
