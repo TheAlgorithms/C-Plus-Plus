@@ -9,7 +9,8 @@ std::array<int, N> cnt{};
 int bucket_size;
 struct query {
     int l, r, i;
-} q[N];
+} std::array<int, N> q{};
+;
 int ans = 0;
 
 void add(int index) {
