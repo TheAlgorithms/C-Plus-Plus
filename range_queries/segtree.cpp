@@ -1,8 +1,6 @@
 //#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
-#include <cinttypes>
-#include <inttypes.h>
 #include <stdint.h>
 
 constexpr unsigned int max_height = 400000;
