@@ -30,13 +30,15 @@
  * sorting.
  *
  * @param arr array to be printed
- * @param sz size of array
+ * @param size size of array
  *
  */
 template <typename T>
-void printArray(T *arr, int sz) {
-    for (int i = 0; i < sz; i++) std::cout << arr[i] << "  ";
-    std::cout << "\n";
+void printArray(T *arr, unsigned size) {
+    for (unsigned i = 0; i < size; i++)
+        std::cout << arr[i] << " ";
+
+    std::cout << std::endl;
 }
 
 /**
@@ -49,26 +51,26 @@ void printArray(T *arr, int sz) {
  * heap property.
  *
  * @param arr array to be sorted
- * @param n size of array
- * @param i node position in Binary Tress or element position in
- *          Array to be compared with it's childern
+ * @param size size of array
+ * @param index node position in Binary Tress or element position in
+ *              Array to be compared with it's childern
  *
  */
 template <typename T>
-void heapify(T *arr, int n, int i) {
-    int largest = i;
-    int l = 2 * i + 1;
-    int r = 2 * i + 2;
+void heapify(T *arr, unsigned size, int index) {
+    int largest = index;
+    unsigned left = 2 * index + 1;
+    unsigned right = 2 * index + 2;
 
-    if (l < n && arr[l] > arr[largest])
-        largest = l;
+    if (left < size && arr[left] > arr[largest])
+        largest = left;
 
-    if (r < n && arr[r] > arr[largest])
-        largest = r;
+    if (right < size && arr[right] > arr[largest])
+        largest = right;
 
-    if (largest != i) {
-        std::swap(arr[i], arr[largest]);
-        heapify(arr, n, largest);
+    if (largest != index) {
+        std::swap(arr[index], arr[largest]);
+        heapify(arr, size, largest);
     }
 }
 
@@ -77,14 +79,15 @@ void heapify(T *arr, int n, int i) {
  * the array
  *
  * @param arr array to be sorted
- * @param n size of array
+ * @param size size of array
  *
  */
 template <typename T>
-void heapSort(T *arr, int n) {
-    for (int i = n - 1; i >= 0; i--) heapify(arr, n, i);
+void heapSort(T *arr, unsigned size) {
+    for (int i = size - 1; i >= 0; i--)
+        heapify(arr, size, i);
 
-    for (int i = n - 1; i >= 0; i--) {
+    for (int i = size - 1; i >= 0; i--) {
         std::swap(arr[0], arr[i]);
         heapify(arr, i, 0);
     }
