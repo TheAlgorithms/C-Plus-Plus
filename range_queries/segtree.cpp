@@ -1,7 +1,7 @@
 //#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
-#include <stdint.h>
+#include <cstdint>
 
 constexpr unsigned int max_height = 400000;
 void ConsTree(std::vector<int> arr, std::vector<int> segtree, int64_t low,
