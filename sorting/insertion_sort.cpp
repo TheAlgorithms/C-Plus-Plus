@@ -56,14 +56,14 @@ namespace sorting {
  * @param n Size of Array
  */
 template <typename T>
-void insertionSort(T *arr, int n) {
-    for (int i = 1; i < n; i++) {
+void insertionSort(T *arr, unsigned size) {
+    for (unsigned i = 1; i < size; i++) {
         T temp = arr[i];
-        int j = i - 1;
-        while (j >= 0 && temp < arr[j]) {
+        int j;
+
+        for (j = i-1; j >= 0 && temp < arr[j]; j--)
             arr[j + 1] = arr[j];
-            j--;
-        }
+
         arr[j + 1] = temp;
     }
 }
@@ -79,11 +79,11 @@ void insertionSort(std::vector<T> *arr) {
 
     for (size_t i = 1; i < n; i++) {
         T temp = arr[0][i];
-        int32_t j = i - 1;
-        while (j >= 0 && temp < arr[0][j]) {
+        int32_t j;
+
+        for (j = i-1; j >= 0 && temp < arr[0][j]; j--)
             arr[0][j + 1] = arr[0][j];
-            j--;
-        }
+
         arr[0][j + 1] = temp;
     }
 }
@@ -162,14 +162,14 @@ int main() {
     int *arr = new int[n];
     std::cout << "Enter any " << n << " Numbers for Unsorted Array : ";
 
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         std::cin >> arr[i];
     }
 
     sorting::insertionSort(arr, n);
 
     std::cout << "\nSorted Array : ";
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         std::cout << arr[i] << " ";
     }
 
