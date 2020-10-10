@@ -1,27 +1,26 @@
 #include <iostream>
-using namespace std;
 int main() {
-    int i, j, m, n;
-    cout << "Enter size of array 1:";
-    cin >> m;
-    cout << "Enter size of array 2:";
-    cin >> n;
-    int a[m];
-    int b[n];
-    cout << "Enter elements of array 1:";
-    for (i = 0; i < m; i++) cin >> a[i];
-    for (i = 0; i < n; i++) cin >> b[i];
+    int i = 0, j = 0;
+    int a[5];
+    int b[5];
+    std::cout << "Enter elements of array 1:";
+    for (i = 0; i < 5; i++) std::cin >> a[i];
+    std::cout << "Enter elements of array 2:";
+    for (i = 0; i < 5; i++) std::cin >> b[i];
     i = 0;
     j = 0;
-    while ((i < m) && (j < n)) {
+    while ((i < 5) && (j < 5)) {
         if (a[i] < b[j])
             i++;
         else if (a[i] > b[j])
             j++;
         else {
-            cout << a[i++] << " ";
+            std::cout << b[j] << " ";
+            i++;
             j++;
         }
     }
+    // while (i < 5) std::cout << a[i++] << " ";
+    //  while (j < 5) std::cout << b[j++] << " ";
     return 0;
 }
