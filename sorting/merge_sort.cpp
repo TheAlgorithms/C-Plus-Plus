@@ -42,7 +42,6 @@ void merge(int *arr, int l, int m, int r) {
     i = 0;
     j = m + 1;
     k = l;
-
     while (i < n1 || j <= r) {
         if (j > r || (i < n1 && L[i] <= arr[j])) {
             arr[k] = L[i];
@@ -96,7 +95,7 @@ int main() {
         cin >> arr[i];
     }
     mergeSort(arr, 0, size - 1);
-    cout << "Sorted array : ";
+    std::cout << "Sorted array : ";
     show(arr, size);
     delete[] arr;
     return 0;
