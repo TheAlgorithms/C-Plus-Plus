@@ -46,16 +46,16 @@ End
 #include<iostream>
 #include<vector>
 #include <assert.h>
-std::vector<int> a(2);
-std::vector<std::vector<int>> t(2,std::vector<int>(2));
-std::vector<std::vector<int>> I(2,std::vector<int>(2));
+std::vector<int> result(2);
+std::vector<std::vector<int>> transition(2,std::vector<int>(2));
+std::vector<std::vector<int>> Identity(2,std::vector<int>(2));
 /**
  * This function multiplies two matrix.
  * @param a 2d-vector 
  * @param b 2d-vector
  * @param m size of vector
  */ 
-void mul(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b, int m , int mod)
+void mul(std::vector<std::vector<int>> &result1, std::vector<std::vector<int>> &transition1, int m , int mod)
 {
 	
 	std::vector<std::vector<int>> res(2, std::vector<int>(2,0));
@@ -64,7 +64,7 @@ void mul(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b, int
 		for(int j=0;j<m;j++){
 			for(int k=0;k<m;k++)
 			{
-				res[i][j]=(res[i][j]%mod+((a[i][k]%mod*b[k][j]%mod))%mod)%mod;
+				res[i][j]=(res[i][j]%mod+((result1[i][k]%mod*transition1[k][j]%mod))%mod)%mod;
 			}
 		}
 	}
@@ -72,7 +72,7 @@ void mul(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b, int
 	{
 		for(int j=0;j<m;j++)
 		{
-			a[i][j]=res[i][j];
+			result1[i][j]=res[i][j];
 		}
 	}
 }
@@ -83,25 +83,24 @@ void mul(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b, int
 int fibo(int n , int mod )
 {
 	n--;
-	a[0]=1, a[1]=1;
-	I[0][0]=1; I[0][1]=0;
-	I[1][0]=0; I[1][1]=1;
+	result[0]=1, result[1]=1;
+	Identity[0][0]=1; Identity[0][1]=0;
+	Identity[1][0]=0; Identity[1][1]=1;
 	 
-	t[0][0]=0;
-	t[1][0]=t[1][1]=t[0][1]=1;
+	transition[0][0]=0;
+	transition[1][0]=transition[1][1]=transition[0][1]=1;
 	
-	n;
 	while(n)
 	{
 		if(n%2)
 		{
-			mul(I,t,2,mod); n--;
+			mul(Identity,transition,2,mod); n--;
 		}
 		else{
-			mul(t,t,2,mod); n=n/2;
+			mul(transition,transition,2,mod); n=n/2;
 		}
 	}
-	return ((a[0]%mod*I[0][0]%mod)%mod+(a[1]%mod*I[1][0]%mod)%mod)%mod;
+	return ((result[0]%mod*Identity[0][0]%mod)%mod+(result[1]%mod*Identity[1][0]%mod)%mod)%mod;
 }
 /**
  * Function to test above algorithm
