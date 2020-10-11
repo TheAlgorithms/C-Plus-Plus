@@ -30,8 +30,9 @@ calculated the ans then we simply return it.
  * @returns integer denoting the maximum money theif can rob
  */  
  
- 
-int houseRobber(std::vector<int> &dpTable, const std::vector<int> &money, int pos=0)
+std::vector<int> dpTable;
+
+int houseRobber(const std::vector<int> &money, int pos=0)
 {
     int n = money.size();
     if(pos >= n)
@@ -45,7 +46,7 @@ int houseRobber(std::vector<int> &dpTable, const std::vector<int> &money, int po
     }
 
     // rob the current house & move to next to next one or didn't rob the current house move to next one
-    return dpTable[pos] = std::max(money[pos] + houseRobber(dpTable, money, pos + 2), houseRobber(dpTable, money, pos + 1));              				 
+    return dpTable[pos] = std::max(money[pos] + houseRobber(money, pos + 2), houseRobber(money, pos + 1));              				 
 
 }
 
@@ -60,9 +61,10 @@ static void test()
   {
    std::vector<int> num1 = {1, 2, 3, 1};
    int n = num1.size();
-   std::vector<int>dpTable(n, -1);
-
-   int output = houseRobber(dpTable, num1);
+   std::vector<int>tempTable(n, -1);
+   dpTable = tempTable;
+   
+   int output = houseRobber(num1);
    assert(output == 4);
    std::cout << "Input: ";
    for(auto i: num1)
@@ -76,9 +78,10 @@ static void test()
   {
    std::vector<int> num1 = {2, 7, 9, 3, 1};
    int n = num1.size();
-   std::vector<int>dpTable(n, -1);
+   std::vector<int>tempTable(n, -1);
+   dpTable = tempTable;
 
-   int output = houseRobber(dpTable, num1);
+   int output = houseRobber(num1);
    assert(output == 12);
    std::cout << "Input: ";
    for(auto i: num1)
@@ -96,6 +99,6 @@ static void test()
 
 int main() 
 {
-	test();
+    test();
     return 0;
 }
