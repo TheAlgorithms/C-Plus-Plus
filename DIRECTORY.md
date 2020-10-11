@@ -97,7 +97,7 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
-  * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/dijkstra.cpp)
+  * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/dijkstra_spf.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/huffman.cpp)
   * [Jumpgame](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/jumpgame.cpp)
   * [Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/greedy_algorithms/knapsack.cpp)
