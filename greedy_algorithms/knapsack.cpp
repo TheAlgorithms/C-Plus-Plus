@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iostream>
 #include <vector>
 
@@ -6,7 +7,9 @@ struct Item {
     int profit;
 };
 
-float profitPerUnit(Item x) { return (float)x.profit / (float)x.weight; }
+float profitPerUnit(Item x) {
+    return static_cast<float>(x.profit) / static_cast<float>(x.weight);
+}
 
 int partition(std::vector<Item> arr, int low, int high) {
     Item pivot = arr[high];  // pivot
@@ -28,7 +31,7 @@ int partition(std::vector<Item> arr, int low, int high) {
     return (i + 1);
 }
 
-void quickSort(std::vector<Item> arr, int low, int high) {
+void quickSort(const std::vector<Item> &arr, int low, int high) {
     if (low < high) {
         int p = partition(arr, low, high);
 
@@ -42,9 +45,9 @@ int main() {
     float capacity;
     std::cin >> capacity;
     std::cout << "\n Enter the number of Items : ";
-    int n;
+    int n = 0;
     std::cin >> n;
-    std::vector<Item>itemArray(n); 
+    std::vector<Item> itemArray(n);
     for (int i = 0; i < n; i++) {
         std::cout << "\nEnter the weight and profit of item " << i + 1 << " : ";
         std::cin >> itemArray[i].weight;
@@ -58,15 +61,15 @@ int main() {
     float maxProfit = 0;
     int i = n;
     while (capacity > 0 && --i >= 0) {
-        if (capacity >= itemArray[i].weight) {
-            maxProfit += itemArray[i].profit;
-            capacity -= itemArray[i].weight;
+        if (capacity >= static_cast<float>(itemArray[i].weight)) {
+            maxProfit += static_cast<float>(itemArray[i].profit);
+            capacity -= static_cast<float>(itemArray[i].weight);
             std::cout << "\n\t" << itemArray[i].weight << "\t"
-                 << itemArray[i].profit;
+                      << itemArray[i].profit;
         } else {
             maxProfit += profitPerUnit(itemArray[i]) * capacity;
             std::cout << "\n\t" << capacity << "\t"
-                 << profitPerUnit(itemArray[i]) * capacity;
+                      << profitPerUnit(itemArray[i]) * capacity;
             capacity = 0;
             break;
         }
