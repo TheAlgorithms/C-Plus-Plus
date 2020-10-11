@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+#include <vector>
 
 struct Item {
     int weight;
@@ -8,7 +8,7 @@ struct Item {
 
 float profitPerUnit(Item x) { return (float)x.profit / (float)x.weight; }
 
-int partition(Item arr[], int low, int high) {
+int partition(std::vector<Item> arr, int low, int high) {
     Item pivot = arr[high];  // pivot
     int i = (low - 1);       // Index of smaller element
 
@@ -28,7 +28,7 @@ int partition(Item arr[], int low, int high) {
     return (i + 1);
 }
 
-void quickSort(Item arr[], int low, int high) {
+void quickSort(std::vector<Item> arr, int low, int high) {
     if (low < high) {
         int p = partition(arr, low, high);
 
@@ -38,17 +38,17 @@ void quickSort(Item arr[], int low, int high) {
 }
 
 int main() {
-    cout << "\nEnter the capacity of the knapsack : ";
+    std::cout << "\nEnter the capacity of the knapsack : ";
     float capacity;
-    cin >> capacity;
-    cout << "\n Enter the number of Items : ";
+    std::cin >> capacity;
+    std::cout << "\n Enter the number of Items : ";
     int n;
-    cin >> n;
-    Item itemArray[n];
+    std::cin >> n;
+    std::vector<Item>itemArray(n); 
     for (int i = 0; i < n; i++) {
-        cout << "\nEnter the weight and profit of item " << i + 1 << " : ";
-        cin >> itemArray[i].weight;
-        cin >> itemArray[i].profit;
+        std::cout << "\nEnter the weight and profit of item " << i + 1 << " : ";
+        std::cin >> itemArray[i].weight;
+        std::cin >> itemArray[i].profit;
     }
 
     quickSort(itemArray, 0, n - 1);
@@ -61,18 +61,18 @@ int main() {
         if (capacity >= itemArray[i].weight) {
             maxProfit += itemArray[i].profit;
             capacity -= itemArray[i].weight;
-            cout << "\n\t" << itemArray[i].weight << "\t"
+            std::cout << "\n\t" << itemArray[i].weight << "\t"
                  << itemArray[i].profit;
         } else {
             maxProfit += profitPerUnit(itemArray[i]) * capacity;
-            cout << "\n\t" << capacity << "\t"
+            std::cout << "\n\t" << capacity << "\t"
                  << profitPerUnit(itemArray[i]) * capacity;
             capacity = 0;
             break;
         }
     }
 
-    cout << "\nMax Profit : " << maxProfit;
+    std::cout << "\nMax Profit : " << maxProfit;
 
     return 0;
 }

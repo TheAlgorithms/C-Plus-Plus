@@ -1,7 +1,7 @@
 #include <limits.h>
-#include <iostream>
 
-using namespace std;
+#include <iostream>
+#include <vector>
 
 // Wrapper class for storing a graph
 class Graph {
@@ -33,7 +33,7 @@ class Graph {
     }
 };
 // Utility function to find minimum distance vertex in mdist
-int minDistance(int mdist[], bool vset[], int V) {
+int minDistance(std::vector<int> mdist, std::vector<bool> vset, int V) {
     int minVal = INT_MAX, minInd = 0;
     for (int i = 0; i < V; i++) {
         if (!vset[i] && (mdist[i] < minVal)) {
@@ -46,13 +46,13 @@ int minDistance(int mdist[], bool vset[], int V) {
 }
 
 // Utility function to print distances
-void print(int dist[], int V) {
-    cout << "\nVertex  Distance" << endl;
+void print(std::vector<int> dist, int V) {
+    std::cout << "\nVertex  Distance" << std::endl;
     for (int i = 0; i < V; i++) {
         if (dist[i] < INT_MAX)
-            cout << i << "\t" << dist[i] << endl;
+            std::cout << i << "\t" << dist[i] << std::endl;
         else
-            cout << i << "\tINF" << endl;
+            std::cout << i << "\tINF" << std::endl;
     }
 }
 
@@ -61,8 +61,11 @@ void print(int dist[], int V) {
 // weights
 void Dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
-    int mdist[V];  // Stores updated distances to vertex
-    bool vset[V];  // vset[i] is true if the vertex i included
+    std::vector<int> mdist(V);
+    std::vector<bool> vset(V);
+
+    //    int mdist[V];  // Stores updated distances to vertex
+    //    bool vset[V];  // vset[i] is true if the vertex i included
     // in the shortest path tree
 
     // Initialise mdist and vset. Set distance of source as zero
@@ -94,30 +97,30 @@ void Dijkstra(Graph graph, int src) {
 int main() {
     int V, E, gsrc;
     int src, dst, weight;
-    cout << "Enter number of vertices: ";
-    cin >> V;
-    cout << "Enter number of edges: ";
-    cin >> E;
+    std::cout << "Enter number of vertices: ";
+    std::cin >> V;
+    std::cout << "Enter number of edges: ";
+    std::cin >> E;
     Graph G(V);
     for (int i = 0; i < E; i++) {
-        cout << "\nEdge " << i + 1 << "\nEnter source: ";
-        cin >> src;
-        cout << "Enter destination: ";
-        cin >> dst;
-        cout << "Enter weight: ";
-        cin >> weight;
+        std::cout << "\nEdge " << i + 1 << "\nEnter source: ";
+        std::cin >> src;
+        std::cout << "Enter destination: ";
+        std::cin >> dst;
+        std::cout << "Enter weight: ";
+        std::cin >> weight;
 
         // makes sure source and destionation are in the proper bounds.
         if (src >= 0 && src < V && dst >= 0 && dst < V) {
             G.addEdge(src, dst, weight);
         } else {
-            cout << "source and/or destination out of bounds" << endl;
+            std::cout << "source and/or destination out of bounds" << std::endl;
             i--;
             continue;
         }
     }
-    cout << "\nEnter source:";
-    cin >> gsrc;
+    std::cout << "\nEnter source:";
+    std::cin >> gsrc;
     Dijkstra(G, gsrc);
 
     return 0;
