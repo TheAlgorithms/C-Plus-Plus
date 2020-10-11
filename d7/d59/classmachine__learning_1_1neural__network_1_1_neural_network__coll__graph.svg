@@ -85,7 +85,7 @@
 <title>Node5&#45;&gt;Node3</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M121.73,-237.31C110.63,-224.53 97.02,-208.86 87.36,-197.73"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="119.39,-239.95 128.59,-245.2 124.67,-235.36 119.39,-239.95"/>
-<text text-anchor="middle" x="126" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00"> kernal</text>
+<text text-anchor="middle" x="126" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00"> kernel</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">

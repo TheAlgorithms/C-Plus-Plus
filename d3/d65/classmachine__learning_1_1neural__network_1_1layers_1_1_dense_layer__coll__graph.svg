@@ -50,7 +50,7 @@
 <title>Node3&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M121.73,-70.31C110.63,-57.53 97.02,-41.86 87.36,-30.73"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="119.39,-72.95 128.59,-78.2 124.67,-68.36 119.39,-72.95"/>
-<text text-anchor="middle" x="126" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> kernal</text>
+<text text-anchor="middle" x="126" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> kernel</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
