@@ -1,4 +1,4 @@
-/**
+ /**
  * @file fibonacci_matrix_exponentiation.cpp
  * @brief Computes N^th Fibonacci number given as
  * input argument
@@ -43,22 +43,22 @@
 End
 */
 
-#include<bits/stdc++.h>
-typedef int64 ll;
-const int64 mod = 1000000007;
-std::vector<ll> a(2);
-std::vector<std::vector<ll>> t(2,std::vector<ll>(2));
-std::vector<std::vector<ll>> I(2,std::vector<ll>(2));
+#include<iostream>
+#include<vector>
+#include <assert.h>
+std::vector<int> a(2);
+std::vector<std::vector<int>> t(2,std::vector<int>(2));
+std::vector<std::vector<int>> I(2,std::vector<int>(2));
 /**
  * This function multiplies two matrix.
  * @param a 2d-vector 
  * @param b 2d-vector
  * @param m size of vector
  */ 
-void mul(std::vector<std::vector<ll>> &a,std::vector<std::vector<ll>> &b,int m)
+void mul(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b, int m , int mod)
 {
 	
-	std::vector<std::vector<ll>> res(2,std::vector<ll>(2,0));
+	std::vector<std::vector<int>> res(2, std::vector<int>(2,0));
 	for(int i=0;i<m;i++)
 	{
 		for(int j=0;j<m;j++){
@@ -80,7 +80,7 @@ void mul(std::vector<std::vector<ll>> &a,std::vector<std::vector<ll>> &b,int m)
  * This function finds nth fibonacci number.
  * @param n nth fibonacci number
  */
-ll fibo(ll n)
+int fibo(int n , int mod )
 {
 	n--;
 	a[0]=1, a[1]=1;
@@ -95,10 +95,10 @@ ll fibo(ll n)
 	{
 		if(n%2)
 		{
-			mul(I,t,2); n--;
+			mul(I,t,2,mod); n--;
 		}
 		else{
-			mul(t,t,2); n=n/2;
+			mul(t,t,2,mod); n=n/2;
 		}
 	}
 	return ((a[0]%mod*I[0][0]%mod)%mod+(a[1]%mod*I[1][0]%mod)%mod)%mod;
@@ -108,11 +108,11 @@ ll fibo(ll n)
  */
 void test()
 {
-	assert(fibo(6) == 8);
+	assert(fibo(6,1000000007) == 8);
     std::cout << "test case:1 passed\n";
-    assert(fibo(5) == 5);
+    assert(fibo(5,1000000007) == 5);
     std::cout << "test case:2 passed\n";
-    assert(fibo(10) == 55);
+    assert(fibo(10 ,1000000007) == 55);
     std::cout << "test case:3 passed\n";
     std::cout << "--All tests passed--\n";
 }
@@ -122,7 +122,8 @@ void test()
 int main()
 {
 	test();
+	int mod=1000000007;
 	std::cout<<"Enter the value of N: ";
-	ll n; std::cin>>n; 
-	std::cout<<n<<"th Fibonacci number :"<<fibo(n); 
+	int n; std::cin>>n; 
+	std::cout<<n<<"th Fibonacci number :"<<fibo(n,mod); 
 }
