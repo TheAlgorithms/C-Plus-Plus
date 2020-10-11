@@ -115,7 +115,6 @@
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/kohonen_som_trace.cpp)
   * [Ordinary Least Squares Regressor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/ordinary_least_squares_regressor.cpp)
-  * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
