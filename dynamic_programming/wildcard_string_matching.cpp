@@ -37,7 +37,7 @@ in return to it.
  */
  
 std::vector<std::vector<int>>dpTable(1000, std::vector<int>(1000, -1));
-int wildcardMatching(std::string &s, std::string &p, int pos1, int pos2)
+int wildcardMatching(const std::string &s, const std::string &p, int pos1, int pos2)
 {
 	int n = s.length(), m = p.length();
 		 
