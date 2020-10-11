@@ -25,13 +25,12 @@ the cost of buying at ith day, final answer will be the maximum of these profits
  */  
  
  
-int maxProfit(const std::vector<int> &prices)
-{
+int maxProfit(const std::vector<int> &prices) {
+ 
     int ans = 0, n = prices.size();
 
     // no profit if the number of days is zero
-    if(n == 0)
-    {
+    if(n == 0) {
        return 0;
     }
 
@@ -39,14 +38,12 @@ int maxProfit(const std::vector<int> &prices)
 
     // ith value of vector b will have the highest value of stock price till that day
     b[n - 1] = prices[n - 1];
-    for(int i = n - 2; i >= 0; i--)
-    {
+    for(int i = n - 2; i >= 0; i--) {
        b[i] = std::max(b[i + 1], prices[i]);
     }
 
     // maximum profit will maximum of all the profits by buying stock at prices[i] price and selling it with b[i] price
-    for(int i = 0; i < n; i++)
-    {
+    for(int i = 0; i < n; i++) {
        ans = std::max(ans, b[i] - prices[i]);
     }
 
@@ -58,8 +55,8 @@ int maxProfit(const std::vector<int> &prices)
  * @returns void
  */
  
-static void test()
-{
+static void test() {
+ 
   // Test 1
   {
    std::vector<int> num1 = {7, 1, 5, 3, 6, 4};
@@ -67,8 +64,7 @@ static void test()
    int output = maxProfit(num1);
    assert(output == 5);
    std::cout << "Input: ";
-   for(auto i: num1)
-   {
+   for(auto i: num1) {
      std::cout << i << " ";
    }
    std::cout << "Output: 5" << std::endl;
@@ -81,8 +77,7 @@ static void test()
    int output = maxProfit(num1);
    assert(output == 0);
    std::cout << "Input: ";
-   for(auto i: num1)
-   {
+   for(auto i: num1) {
     std::cout << i << " ";
    }
    std::cout << "Output: 0" << std::endl;
@@ -94,8 +89,8 @@ static void test()
  * @returns 0 on exit
  */
 
-int main() 
-{
+int main() {
+ 
    test();
    return 0;
 }
