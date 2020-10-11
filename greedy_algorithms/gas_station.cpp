@@ -30,20 +30,18 @@ a unordered map.
  * @returns index of station is posso=ible else return -1
  */ 
 
-int gasStation(const std::vector<int> &gas, const std::vector<int> &cost) 
-{
+int gasStation(const std::vector<int> &gas, const std::vector<int> &cost) {
+	
     int i, start, tank, n = gas.size();
     std::unordered_map<int,int>mark;
 	
     start = 0;
         
-    do
-    {
+    do {
         i = start;
         tank = 0;
             
-        while(tank + gas[i] >= cost[i])
-        {
+        while(tank + gas[i] >= cost[i]) {
             tank += gas[i] - cost[i];
             i = (i + 1)%n;
                 
@@ -64,8 +62,8 @@ int gasStation(const std::vector<int> &gas, const std::vector<int> &cost)
  * @returns void
  */
  
-static void test()
-{
+static void test() {
+	
   // Test 1
   {
    std::vector<int> gas =  {2, 3, 4};
@@ -75,14 +73,12 @@ static void test()
    assert(output == -1);
    std::cout << "Input:" << std::endl;
    std::cout << "Gas array: ";
-   for(auto i: gas)
-   {
+   for(auto i: gas) {
      std::cout << i << " ";
    }
    std::cout << std::endl;
    std::cout << "Cost array: ";
-   for(auto i: cost)
-   {
+   for(auto i: cost) {
      std::cout << i << " ";
    }
    std::cout << "Output: -1" << std::endl;
@@ -97,14 +93,12 @@ static void test()
    assert(output == 3);
    std::cout << "Input:" << std::endl;
    std::cout << "Gas array: ";
-   for(auto i: gas)
-   {
+   for(auto i: gas) {
      std::cout << i << " ";
    }
    std::cout << std::endl;
    std::cout << "Cost array: ";
-   for(auto i: cost)
-   {
+   for(auto i: cost) {
      std::cout << i << " ";
    }
    std::cout << "Output: 3" << std::endl;
@@ -116,8 +110,8 @@ static void test()
  * @returns 0 on exit
  */
  
-int main() 
-{
-	test();
+int main() {
+	
+    test();
     return 0;
 }
