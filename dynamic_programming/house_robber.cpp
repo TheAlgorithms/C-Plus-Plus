@@ -30,24 +30,19 @@ calculated the ans then we simply return it.
  * @returns integer denoting the maximum money theif can rob
  */  
  
-std::vector<int> dpTable;
-
-int houseRobber(const std::vector<int> &money, int pos=0)
-{
+int houseRobber(const std::vector<int> &money, std::vector<int> dpTable, int pos=0) {
+ 
     int n = money.size();
-    if(pos >= n)
-    {
+    if(pos >= n) {
         return 0;  
     }		
 
-    if(dpTable[pos] != -1)
-    {
+    if(dpTable[pos] != -1) {
         return dpTable[pos];   // if the result for this position has been already calculated
     }
 
     // rob the current house & move to next to next one or didn't rob the current house move to next one
-    return dpTable[pos] = std::max(money[pos] + houseRobber(money, pos + 2), houseRobber(money, pos + 1));              				 
-
+    return dpTable[pos] = std::max(money[pos] + houseRobber(money, dpTable, pos + 2), houseRobber(money, dpTable, pos + 1));              				 
 }
 
 /**
@@ -55,20 +50,18 @@ int houseRobber(const std::vector<int> &money, int pos=0)
  * @returns void
  */
 
-static void test()
-{
+static void test() {
+ 
   // Test 1
   {
    std::vector<int> num1 = {1, 2, 3, 1};
    int n = num1.size();
    std::vector<int>tempTable(n, -1);
-   dpTable = tempTable;
    
-   int output = houseRobber(num1);
+   int output = houseRobber(num1, tempTable);
    assert(output == 4);
    std::cout << "Input: ";
-   for(auto i: num1)
-   {
+   for(auto i: num1) {
      std::cout << i << " ";
    }
    std::cout << "Output: 4" << std::endl;
@@ -79,13 +72,11 @@ static void test()
    std::vector<int> num1 = {2, 7, 9, 3, 1};
    int n = num1.size();
    std::vector<int>tempTable(n, -1);
-   dpTable = tempTable;
 
-   int output = houseRobber(num1);
+   int output = houseRobber(num1, tempTable);
    assert(output == 12);
    std::cout << "Input: ";
-   for(auto i: num1)
-   {
+   for(auto i: num1) {
     std::cout << i << " ";
    }
    std::cout << "Output: 12" << std::endl;
@@ -97,8 +88,8 @@ static void test()
  * @returns 0 on exit
  */
 
-int main() 
-{
+int main() {
+ 
     test();
     return 0;
 }
