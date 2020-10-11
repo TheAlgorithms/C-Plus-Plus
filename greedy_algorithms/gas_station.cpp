@@ -23,7 +23,14 @@ a unordered map.
 #include <cassert>
 #include <unordered_map>
 
-int gasStation(std::vector<int> gas, std::vector<int> cost) 
+/**
+ * @brief This function implements the above algorithm
+ * @gas array of numbers containing the amount of gas on ith station
+ * @cost array contains the cost of moving from ith station to (i+1)th station
+ * @returns index of station is posso=ible else return -1
+ */ 
+
+int gasStation(const std::vector<int> &gas, const std::vector<int> &cost) 
 {
     int i, start, tank, n = gas.size();
     std::unordered_map<int,int>mark;
