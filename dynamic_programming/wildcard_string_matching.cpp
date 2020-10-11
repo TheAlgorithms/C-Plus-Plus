@@ -37,7 +37,7 @@ in return to it.
  */
  
 
-int wildcardMatching(std::vector<std::vector<int>> &dpTable, const std::string &s, const std::string &p, int pos1, int pos2) {
+int wildcardMatching(std::vector<std::vector<int>> dpTable, const std::string &s, const std::string &p, int pos1, int pos2) {
 	
 	int n = s.length(), m = p.length();
 		 
