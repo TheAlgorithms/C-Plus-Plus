@@ -1,16 +1,15 @@
 #include <algorithm>
-#include <array>
+#include <vector>
 #include <cmath>
 #include <iostream>
 const int N = 1e6 + 5;
-std::array<int, N> a{};
-std::array<int, N> bucket{};
-std::array<int, N> cnt{};
+std::vector<int> a;
+std::vector<int> bucket;                 
+std::vector<int> cnt;                 
 int bucket_size;
 struct query {
     int l, r, i;
-} std::array<int, N> q{};
-;
+}q[N];
 int ans = 0;
 
 void add(int index) {
@@ -34,7 +33,7 @@ bool mycmp(query x, query y) {
 }
 
 int main() {
-    int n = 0, t = 0, i = 0, j = 0, k = 0;
+    int n = 0, t =  0, i = 0, j = 0, k = 0;
     std::cin >> n;
     for (i = 0; i < n; i++) std::cin >> a[i];
     bucket_size = std::ceil(std::sqrt(n));
