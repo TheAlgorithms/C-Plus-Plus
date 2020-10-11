@@ -45,7 +45,7 @@ End
 
 #include<iostream>
 #include<vector>
-#include <assert.h>
+#include <cassert>
 std::vector<int> result(2);
 std::vector<std::vector<int>> transition(2,std::vector<int>(2));
 std::vector<std::vector<int>> Identity(2,std::vector<int>(2));
@@ -123,6 +123,6 @@ int main()
 	test();
 	int mod=1000000007;
 	std::cout<<"Enter the value of N: ";
-	int n; std::cin>>n; 
+	int n=0; std::cin>>n; 
 	std::cout<<n<<"th Fibonacci number :"<<fibo(n,mod); 
 }
