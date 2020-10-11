@@ -23,20 +23,29 @@ calculated the ans then we simply return it.
 #include <vector> 
 #include <cassert>
 
-int houseRobber(std::vector<int>dpTable, std::vector<int> money, int n, int pos=0)
+/**
+ * @brief This function implements the above algorithm
+ * @money array of numbers containing the money in the ith house
+ * @dpTable is the memoization table, having the previously calculated result
+ * @returns integer denoting the maximum money theif can rob
+ */  
+ 
+ 
+int houseRobber(std::vector<int> &dpTable, const std::vector<int> &money, int pos=0)
 {
+    int n = money.size();
     if(pos >= n)
-	{
+    {
         return 0;  
-	}		
+    }		
 
     if(dpTable[pos] != -1)
-	{
+    {
         return dpTable[pos];   // if the result for this position has been already calculated
-	}
+    }
 
-	// rob the current house & move to next to next one or didn't rob the current house move to next one
-    return dpTable[pos] = std::max(money[pos] + houseRobber(dpTable, money, n, pos + 2), houseRobber(dpTable, money, n, pos + 1));              				 
+    // rob the current house & move to next to next one or didn't rob the current house move to next one
+    return dpTable[pos] = std::max(money[pos] + houseRobber(dpTable, money, pos + 2), houseRobber(dpTable, money, pos + 1));              				 
 
 }
 
@@ -44,7 +53,7 @@ int houseRobber(std::vector<int>dpTable, std::vector<int> money, int n, int pos=
  * @brief Function to test above algorithm
  * @returns void
  */
- 
+
 static void test()
 {
   // Test 1
@@ -53,7 +62,7 @@ static void test()
    int n = num1.size();
    std::vector<int>dpTable(n, -1);
 
-   int output = houseRobber(dpTable, num1, n);
+   int output = houseRobber(dpTable, num1);
    assert(output == 4);
    std::cout << "Input: ";
    for(auto i: num1)
@@ -62,14 +71,14 @@ static void test()
    }
    std::cout << "Output: 4" << std::endl;
   }
-  
+
   // Test 2
   {
    std::vector<int> num1 = {2, 7, 9, 3, 1};
    int n = num1.size();
    std::vector<int>dpTable(n, -1);
 
-   int output = houseRobber(dpTable, num1, n);
+   int output = houseRobber(dpTable, num1);
    assert(output == 12);
    std::cout << "Input: ";
    for(auto i: num1)
@@ -84,7 +93,7 @@ static void test()
  * @brief Main function
  * @returns 0 on exit
  */
- 
+
 int main() 
 {
 	test();
