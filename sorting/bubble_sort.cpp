@@ -46,12 +46,12 @@ int main() {
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
     std::vector<int> numbers;
-    std::cout << "Enter " << n << " numbers: ";
+    std::cout << "Enter the  elements to be sorted :" << n << " numbers: ";
     int num;
 
     // Input
     for (int i = 0; i < n; i++) {
-        std::cin >> num;
+        std::cin >> num[i];
         numbers.push_back(num);
     }
 
