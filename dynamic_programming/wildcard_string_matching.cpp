@@ -36,28 +36,24 @@ in return to it.
  * @returns 0/1 depending upon strings can be matched or not
  */
  
-std::vector<std::vector<int>>dpTable(1000, std::vector<int>(1000, -1));
-int wildcardMatching(const std::string &s, const std::string &p, int pos1, int pos2)
-{
+
+int wildcardMatching(std::vector<std::vector<int>> &dpTable, const std::string &s, const std::string &p, int pos1, int pos2) {
+	
 	int n = s.length(), m = p.length();
 		 
 	// matching is successfull if both strings are done
-        if(pos1 == n && pos2 == m)
-	{
+        if(pos1 == n && pos2 == m) {
             return 1;
 	}
 
         // matching is unsuccessfull if pattern is not finished but matching string is
-        if(pos1 != n && pos2 == m)
-        {
+        if(pos1 != n && pos2 == m) {
             return 0;
 	}
 
 	// all the remaining characters of patterns must be * inorder to match with finished string
-        if(pos1 == n && pos2 != m)
-        {
-            while(pos2 < m && p[pos2] == '*')
-	    {
+        if(pos1 == n && pos2 != m) {
+            while(pos2 < m && p[pos2] == '*') {
                 pos2++;
 	    }
 
@@ -65,47 +61,39 @@ int wildcardMatching(const std::string &s, const std::string &p, int pos1, int p
         }
 
 	// if already calculted for these positions
-        if(dpTable[pos1][pos2] != -1)
-	{
+        if(dpTable[pos1][pos2] != -1) {
             return dpTable[pos1][pos2];
 	}
 
 	// if the characters are same just go ahead in both the string
-        if(s[pos1] == p[pos2])
-	{
-            return dpTable[pos1][pos2] = wildcardMatching(s, p, pos1 + 1, pos2 + 1);
+        if(s[pos1] == p[pos2]) {
+            return dpTable[pos1][pos2] = wildcardMatching(dpTable, s, p, pos1 + 1, pos2 + 1);
 	}
 
-        else
-        {
+        else {
 	    // can only single character
-            if(p[pos2] == '?')
-	    {
-                return dpTable[pos1][pos2] = wildcardMatching(s, p, pos1 + 1, pos2 + 1);
+            if(p[pos2] == '?') {
+                return dpTable[pos1][pos2] = wildcardMatching(dpTable, s, p, pos1 + 1, pos2 + 1);
 	    }
 	    // have choice either to match one or more charcters
-            else if(p[pos2] == '*')
-	    {
-                return dpTable[pos1][pos2] = wildcardMatching(s, p, pos1, pos2 + 1) || wildcardMatching(s, p, pos1 + 1, pos2);
+            else if(p[pos2] == '*') {
+                return dpTable[pos1][pos2] = wildcardMatching(dpTable, s, p, pos1, pos2 + 1) || wildcardMatching(dpTable, s, p, pos1 + 1, pos2);
 	    }
 	    // not possible to match
-            else
-	    {
+            else {
                 return dpTable[pos1][pos2] = 0;
 	    }
         }
 }
 
-static void test()
-{
+static void test() {
   // Test 1
   {
    std::vector<std::vector<int>>tempTable(1000, std::vector<int>(1000, -1));
    std::string matching = "acdcb" ;
    std::string pattern = "a*c?b";
-   dpTable = tempTable;
 
-   int output = wildcardMatching(matching, pattern, 0, 0);
+   int output = wildcardMatching(tempTable, matching, pattern, 0, 0);
    assert(output == 0);
    std::cout << "Input: ";
    std::cout << matching << " " << pattern << std::endl;
@@ -117,9 +105,8 @@ static void test()
    std::vector<std::vector<int>>tempTable(1000, std::vector<int>(1000, -1));
    std::string matching = "adceb";
    std::string pattern = "*a*b";
-   dpTable = tempTable;
 
-   int output = wildcardMatching(matching, pattern, 0, 0);
+   int output = wildcardMatching(tempTable, matching, pattern, 0, 0);
    assert(output == 1);
    std::cout << "Input: ";
    std::cout << matching << " " << pattern << std::endl;
@@ -132,8 +119,8 @@ static void test()
  * @returns 0 on exit
  */
 
-int main() 
-{
-	test();
+int main() {
+	
+    test();
     return 0;
 }
