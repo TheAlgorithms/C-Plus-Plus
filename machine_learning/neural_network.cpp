@@ -118,7 +118,7 @@ double identity_function(const double &x) { return x; }
 namespace layers {
 /**
  * neural_network::layers::DenseLayer class is used to store all necessary
- * information about the layers (i.e. neurons, activation and kernal). This
+ * information about the layers (i.e. neurons, activation and kernel). This
  * class is used by NeuralNetwork class to store layers.
  *
  */
@@ -129,18 +129,18 @@ class DenseLayer {
     double (*dactivation_function)(const double &);
     int neurons;             // To store number of neurons (used in summary)
     std::string activation;  // To store activation name (used in summary)
-    std::vector<std::valarray<double>> kernal;  // To store kernal (aka weights)
+    std::vector<std::valarray<double>> kernel;  // To store kernel (aka weights)
 
     /**
      * Constructor for neural_network::layers::DenseLayer class
      * @param neurons number of neurons
      * @param activation activation function for layer
-     * @param kernal_shape shape of kernal
-     * @param random_kernal flag for whether to intialize kernal randomly
+     * @param kernel_shape shape of kernel
+     * @param random_kernel flag for whether to intialize kernel randomly
      */
     DenseLayer(const int &neurons, const std::string &activation,
-               const std::pair<size_t, size_t> &kernal_shape,
-               const bool &random_kernal) {
+               const std::pair<size_t, size_t> &kernel_shape,
+               const bool &random_kernel) {
         // Choosing activation (and it's derivative)
         if (activation == "sigmoid") {
             activation_function = neural_network::activations::sigmoid;
@@ -167,21 +167,21 @@ class DenseLayer {
         }
         this->activation = activation;  // Setting activation name
         this->neurons = neurons;        // Setting number of neurons
-        // Initialize kernal according to flag
-        if (random_kernal) {
-            uniform_random_initialization(kernal, kernal_shape, -1.0, 1.0);
+        // Initialize kernel according to flag
+        if (random_kernel) {
+            uniform_random_initialization(kernel, kernel_shape, -1.0, 1.0);
         } else {
-            unit_matrix_initialization(kernal, kernal_shape);
+            unit_matrix_initialization(kernel, kernel_shape);
         }
     }
     /**
      * Constructor for neural_network::layers::DenseLayer class
      * @param neurons number of neurons
      * @param activation activation function for layer
-     * @param kernal values of kernal (useful in loading model)
+     * @param kernel values of kernel (useful in loading model)
      */
     DenseLayer(const int &neurons, const std::string &activation,
-               const std::vector<std::valarray<double>> &kernal) {
+               const std::vector<std::valarray<double>> &kernel) {
         // Choosing activation (and it's derivative)
         if (activation == "sigmoid") {
             activation_function = neural_network::activations::sigmoid;
@@ -208,7 +208,7 @@ class DenseLayer {
         }
         this->activation = activation;  // Setting activation name
         this->neurons = neurons;        // Setting number of neurons
-        this->kernal = kernal;          // Setting supplied kernal values
+        this->kernel = kernel;          // Setting supplied kernel values
     }
 
     /**
@@ -251,11 +251,11 @@ class NeuralNetwork {
      * Private Constructor for class NeuralNetwork. This constructor
      * is used internally to load model.
      * @param config vector containing pair (neurons, activation)
-     * @param kernals vector containing all pretrained kernals
+     * @param kernels vector containing all pretrained kernels
      */
     NeuralNetwork(
         const std::vector<std::pair<int, std::string>> &config,
-        const std::vector<std::vector<std::valarray<double>>> &kernals) {
+        const std::vector<std::vector<std::valarray<double>>> &kernels) {
         // First layer should not have activation
         if (config.begin()->second != "none") {
             std::cerr << "ERROR (" << __func__ << ") : ";
@@ -275,7 +275,7 @@ class NeuralNetwork {
         // Reconstructing all pretrained layers
         for (size_t i = 0; i < config.size(); i++) {
             layers.emplace_back(neural_network::layers::DenseLayer(
-                config[i].first, config[i].second, kernals[i]));
+                config[i].first, config[i].second, kernels[i]));
         }
         std::cout << "INFO: Network constructed successfully" << std::endl;
     }
@@ -291,7 +291,7 @@ class NeuralNetwork {
         std::vector<std::valarray<double>> current_pass = X;
         details.emplace_back(X);
         for (const auto &l : layers) {
-            current_pass = multiply(current_pass, l.kernal);
+            current_pass = multiply(current_pass, l.kernel);
             current_pass = apply_function(current_pass, l.activation_function);
             details.emplace_back(current_pass);
         }
@@ -329,7 +329,7 @@ class NeuralNetwork {
             std::exit(EXIT_FAILURE);
         }
         // Separately creating first layer so it can have unit matrix
-        // as kernal.
+        // as kernel.
         layers.push_back(neural_network::layers::DenseLayer(
             config[0].first, config[0].second,
             {config[0].first, config[0].first}, false));
@@ -512,13 +512,13 @@ class NeuralNetwork {
                         predicted;
                     auto activations = this->__detailed_single_prediction(X[i]);
                     // Gradients vector to store gradients for all layers
-                    // They will be averaged and applied to kernal
+                    // They will be averaged and applied to kernel
                     std::vector<std::vector<std::valarray<double>>> gradients;
                     gradients.resize(this->layers.size());
                     // First intialize gradients to zero
                     for (size_t i = 0; i < gradients.size(); i++) {
                         zeroes_initialization(
-                            gradients[i], get_shape(this->layers[i].kernal));
+                            gradients[i], get_shape(this->layers[i].kernel));
                     }
                     predicted = activations.back();  // Predicted vector
                     cur_error = predicted - Y[i];    // Absoulute error
@@ -539,16 +539,16 @@ class NeuralNetwork {
                                 this->layers[j].dactivation_function));
                         // Calculating gradient for current layer
                         grad = multiply(transpose(activations[j]), cur_error);
-                        // Change error according to current kernal values
+                        // Change error according to current kernel values
                         cur_error = multiply(cur_error,
-                                             transpose(this->layers[j].kernal));
+                                             transpose(this->layers[j].kernel));
                         // Adding gradient values to collection of gradients
                         gradients[j] = gradients[j] + grad / double(batch_size);
                     }
                     // Applying gradients
                     for (size_t j = this->layers.size() - 1; j >= 1; j--) {
-                        // Updating kernal (aka weights)
-                        this->layers[j].kernal = this->layers[j].kernal -
+                        // Updating kernel (aka weights)
+                        this->layers[j].kernel = this->layers[j].kernel -
                                                  gradients[j] * learning_rate;
                     }
                 }
@@ -670,14 +670,14 @@ class NeuralNetwork {
 
             total_layers
             neurons(1st neural_network::layers::DenseLayer) activation_name(1st
-           neural_network::layers::DenseLayer) kernal_shape(1st
-           neural_network::layers::DenseLayer) kernal_values
+           neural_network::layers::DenseLayer) kernel_shape(1st
+           neural_network::layers::DenseLayer) kernel_values
             .
             .
             .
             neurons(Nth neural_network::layers::DenseLayer) activation_name(Nth
-           neural_network::layers::DenseLayer) kernal_shape(Nth
-           neural_network::layers::DenseLayer) kernal_value
+           neural_network::layers::DenseLayer) kernel_shape(Nth
+           neural_network::layers::DenseLayer) kernel_value
 
             For Example, pretrained model with 3 layers:
             <pre>
@@ -709,9 +709,9 @@ class NeuralNetwork {
         out_file << std::endl;
         for (const auto &layer : this->layers) {
             out_file << layer.neurons << ' ' << layer.activation << std::endl;
-            const auto shape = get_shape(layer.kernal);
+            const auto shape = get_shape(layer.kernel);
             out_file << shape.first << ' ' << shape.second << std::endl;
-            for (const auto &row : layer.kernal) {
+            for (const auto &row : layer.kernel) {
                 for (const auto &val : row) {
                     out_file << val << ' ';
                 }
@@ -740,7 +740,7 @@ class NeuralNetwork {
         }
         std::vector<std::pair<int, std::string>> config;  // To store config
         std::vector<std::vector<std::valarray<double>>>
-            kernals;  // To store pretrained kernals
+            kernels;  // To store pretrained kernels
         // Loading model from saved file format
         size_t total_layers = 0;
         in_file >> total_layers;
@@ -748,23 +748,23 @@ class NeuralNetwork {
             int neurons = 0;
             std::string activation;
             size_t shape_a = 0, shape_b = 0;
-            std::vector<std::valarray<double>> kernal;
+            std::vector<std::valarray<double>> kernel;
             in_file >> neurons >> activation >> shape_a >> shape_b;
             for (size_t r = 0; r < shape_a; r++) {
                 std::valarray<double> row(shape_b);
                 for (size_t c = 0; c < shape_b; c++) {
                     in_file >> row[c];
                 }
-                kernal.push_back(row);
+                kernel.push_back(row);
             }
             config.emplace_back(make_pair(neurons, activation));
             ;
-            kernals.emplace_back(kernal);
+            kernels.emplace_back(kernel);
         }
         std::cout << "INFO: Model loaded successfully" << std::endl;
         in_file.close();  // Closing file
         return NeuralNetwork(
-            config, kernals);  // Return instance of NeuralNetwork class
+            config, kernels);  // Return instance of NeuralNetwork class
     }
 
     /**
@@ -785,8 +785,8 @@ class NeuralNetwork {
                       << layers[i - 1].neurons;  // number of neurons
             std::cout << ", Activation : "
                       << layers[i - 1].activation;  // activation
-            std::cout << ", Kernal Shape : "
-                      << get_shape(layers[i - 1].kernal);  // kernal shape
+            std::cout << ", kernel Shape : "
+                      << get_shape(layers[i - 1].kernel);  // kernel shape
             std::cout << std::endl;
         }
         std::cout
