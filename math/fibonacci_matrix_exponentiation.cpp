@@ -50,35 +50,9 @@ std::vector<int> result(2);
 std::vector<std::vector<int>> transition(2,std::vector<int>(2));
 std::vector<std::vector<int>> Identity(2,std::vector<int>(2));
 /**
- * This function multiplies two matrix.
- * @param a 2d-vector 
- * @param b 2d-vector
- * @param m size of vector
- */ 
-void mul(std::vector<std::vector<int>> &result1, std::vector<std::vector<int>> transition1, int m , int mod)
-{
-	
-	std::vector<std::vector<int>> res(2, std::vector<int>(2,0));
-	for(int i=0;i<m;i++)
-	{
-		for(int j=0;j<m;j++){
-			for(int k=0;k<m;k++)
-			{
-				res[i][j]=(res[i][j]%mod+((result1[i][k]%mod*transition1[k][j]%mod))%mod)%mod;
-			}
-		}
-	}
-	for(int i=0;i<m;i++)
-	{
-		for(int j=0;j<m;j++)
-		{
-			result1[i][j]=res[i][j];
-		}
-	}
-}
-/**
  * This function finds nth fibonacci number.
  * @param n nth fibonacci number
+ * @param mod  modulo number to avoid overflow
  */
 int fibo(int n , int mod )
 {
@@ -95,7 +69,7 @@ int fibo(int n , int mod )
 		if(n%2)
 		{
 			std::vector<std::vector<int>> res(2, std::vector<int>(2,0));
-	        for(int i=0;i<2;i++)
+	                for(int i=0;i<2;i++)
 			{
 				for(int j=0;j<2;j++)
 				{
@@ -105,14 +79,14 @@ int fibo(int n , int mod )
 						}
 				}
 			}
-		for(int i=0;i<2;i++)
-		{
-			for(int j=0;j<2;j++)
+		       	for(int i=0;i<2;i++)
+			{
+				for(int j=0;j<2;j++)
 				{
 				Identity[i][j]=res[i][j];
 				}
-	    }
-			 n--;
+	    		}
+			n--;
 		}
 		else{
 			std::vector<std::vector<int>> res1(2, std::vector<int>(2,0));
