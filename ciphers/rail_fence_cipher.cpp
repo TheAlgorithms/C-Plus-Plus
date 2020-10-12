@@ -24,6 +24,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
+#include <vector>
 
 /** \namespace ciphers
  * \brief Algorithms for encryption and decryption
@@ -69,7 +70,7 @@
          * @brief function that encrypts plain-text string using given key.
          * @params text : string that is to be encrypted, key : key value
          * @details
-         * Here key is the number of rail rows that will be used to encrpyt text. A string array which can be treated as 2-D character array is
+         * Here key is the number of rail rows that will be used to encrpyt text. A string vector which can be treated as 2-D character array is
          * initialised which has number of rows equal to key value and number of columns equal to length of text.
          * The rail matrix is filled to distinguish filled spaces from blank ones. A boolean is used to find the
          * direction for traversing. If the current row is either the first or last row, direction is reversed.
@@ -88,7 +89,7 @@
 
             // create the matrix to cipher plain text
             // key = rows , length(text) = columns
-            std::string rail[num_rows];
+            std::vector<std::string> rail(num_rows);
           
             // filling the rail matrix to distinguish filled
             // spaces from blank ones
@@ -141,7 +142,7 @@
          * @brief function that decrypts cipher-text string using given key.
          * @params cipher : string that is to be decrypted, key : key value
          * @details
-         * The number of rails rows = key. A string array is inisialised which is the rail matrix.
+         * The number of rails rows = key. A string vector is inisialised which is the rail matrix.
          * The rail matrix is filled to distinguish filled spaces from blank ones. A boolean is used to find the
          * direction for traversing. If the current row is either the first or last row, direction is reversed.
          * A marker '*' is placed at each cell where a text character will occur. Now the cipher text is placed in
@@ -157,7 +158,7 @@
 
             // create the matrix to cipher plain text
             // key = rows , length(text) = columns
-            std::string rail[num_rows];
+            std::vector<std::string> rail(num_rows);
           
             // filling the rail matrix to distinguish filled
             // spaces from blank ones
