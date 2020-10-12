@@ -5,7 +5,7 @@ Date:12/10/2020.
 #include <deque>
 #include <string>
 #include <cstdlib>
-#include<vector.h>
+#include<vector>
 int main()
 {
     deque<int> d=0;
