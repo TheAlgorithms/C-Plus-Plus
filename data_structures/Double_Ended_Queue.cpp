@@ -4,7 +4,8 @@ Date:12/10/2020.
 #include <iostream>
 #include <deque>
 #include <string>
-#include <cstdlib>
+#include <cstdlib
+#include<vector.h>
 int main()
 {
     deque<int> d;
@@ -12,56 +13,56 @@ int main()
     int c=0, item=0;
     while (true)
     {
-       std:: cout << "1.Size of the Deque" << endl;
-        std::cout << "2.Insert Element at the End" << endl;
-        std::cout << "3.Insert Element at the Front" << endl;
-        std::cout << "4.Delete Element at the End" << endl;
-        std::cout << "5.Delete Element at the Front" << endl;
-        std::cout << "6.Front Element at the Deque" << endl;
-       std:: cout << "7.Last Element at the Deque" << endl;
-        std::cout << "8.Display Deque" << endl;
-       std:: cout << "9.Exit" << endl;
-        std::cout << "Enter your choice:";
-       std:: cin >> c;
+        cout << "1.Size of the Deque" << endl;
+        cout << "2.Insert Element at the End" << endl;
+        cout << "3.Insert Element at the Front" << endl;
+      cout << "4.Delete Element at the End" << endl;
+        cout << "5.Delete Element at the Front" << endl;
+        cout << "6.Front Element at the Deque" << endl;
+        cout << "7.Last Element at the Deque" << endl;
+        cout << "8.Display Deque" << endl;
+       cout << "9.Exit" << endl;
+        cout << "Enter your choice:";
+        cin >> c;
         switch (c)
         {
         case 1:
-           std:: cout << "Size of the Deque: " << d.size() << endl;
+            cout << "Size of the Deque: " << d.size() << endl;
             break;
         case 2:
-           std:: cout << "Enter value to be inserted at the End: " << endl;
-           std:: cin >> item;
+            cout << "Enter value to be inserted at the End: " << endl;
+           cin >> item;
             d.push_back(item);
             break;
         case 3:
-           std:: cout << "Enter value to be inserted at the Front: " << endl;
-           std:: cin >> item;
+            cout << "Enter value to be inserted at the Front: " << endl;
+           cin >> item;
             d.push_front(item);
             break;
         case 4:
             item = d.back();
             d.pop_back();
-           std:: cout << "Element " << item << " Deleted" << endl;
+            cout << "Element " << item << " Deleted" << endl;
             break;
         case 5:
             item = d.front();
             d.pop_front();
-           std:: cout << "Element " << item << "Deleted" << endl;
+            cout << "Element " << item << "Deleted" << endl;
             break;
         case 6:
-           std:: cout << "Front Element of the Deque is: ";
-          std::  cout << d.front() << endl;
+            cout << "Front Element of the Deque is: ";
+           cout << d.front() << endl;
             break;
         case 7:
-           std:: cout << "Back Element of the Deque is: ";
-            std::cout << d.back() << endl;
+            cout << "Back Element of the Deque is: ";
+           cout << d.back() << endl;
             break;
         case 8:
-           std:: cout << "Elements of Deque: ";
+            cout << "Elements of Deque: ";
             for (it = d.begin(); it != d.end(); it++)
             {
-                std::cout << *it << " ";
-                std::cout << endl;
+               cout << *it << " ";
+                cout << endl;
             }
             break;
         case 9:
@@ -69,7 +70,7 @@ int main()
             break;
 
         default:
-           std:: cout << "Wrong Choice" << endl;
+           cout << "Wrong Choice" << endl;
         }
       
     }
