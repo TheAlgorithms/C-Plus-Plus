@@ -78,10 +78,10 @@ bool solveMaze(int currposrow, int currposcol,
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Test implementations
+ * @returns void
  */
-int main() {
+static void test(){
     const int size = 4;
     std::array<std::array<int, size>, size> maze = {
         std::array<int, size>{1, 0, 1, 0}, std::array<int, size>{1, 0, 1, 1},
@@ -101,5 +101,13 @@ int main() {
 
     assert(backtracking::rat_maze::solveMaze<size>(currposrow, currposcol, maze,
                                                    soln) == 1);
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test(); // run the tests
     return 0;
 }
