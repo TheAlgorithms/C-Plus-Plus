@@ -119,6 +119,6 @@ int main() {
     std::cin >> gsrc;
     Dijkstra(G, gsrc);
     delete[] G.edges;
-    ;
+
     return 0;
 }
