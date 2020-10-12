@@ -25,7 +25,8 @@
 class Points
 {
     public:
-    int x,y; 
+    int x;
+    int y; 
 };
 /**
  * The below two functions are comparators to be used
@@ -81,10 +82,11 @@ int main()
 {
     int n;
     std::cin>>n;
-    Points* p=new Points[n];
+    Points *p=new Points[n];
     for(int i=0;i<n;i++)
     {
-        int a,b;
+        int a;
+        int b;
         std::cin>>a>>b;
         p[i].x=a;
         p[i].y=b;
@@ -100,7 +102,7 @@ int main()
      * basis of x axis
      * **/
     double d=std::min(dl,dr);
-    Points strip[n];
+    Points *strip=new Points[n];
     int j=0;
     for(int i=0;i<n;i++)
     {
@@ -118,5 +120,6 @@ int main()
     double ans=std::min(ds,d);
     std::cout<<ans<<"\n";
     delete[] p;
+    delete[] strip;
     return 0;
 }
