@@ -5,7 +5,7 @@ int main() {
     std::cin >> n;
     std::cout << "Enter Number of indeces u want to rotate the array to left=\t";
     std::cin >> k;
-    int a[n];
+    std::vector<int> a;
     std::cout << "Enter  elements of array=\t";
     for (int i = 0; i < n; i++) {
         std::cin >> a[i];
