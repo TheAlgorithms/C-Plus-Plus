@@ -46,7 +46,7 @@ bool cmpY(Points a,Points b)
  * int the n random given points
  * 
  * **/
-double distance(Points p[],int si,int ei)
+double distance(Points* p,int si,int ei)
 {
     /**
      * it is the base case and 
@@ -81,7 +81,7 @@ int main()
 {
     int n;
     std::cin>>n;
-    Points p[n];
+    Points* p=new Points[n];
     for(int i=0;i<n;i++)
     {
         int a,b;
@@ -117,8 +117,6 @@ int main()
     double ds=distance(strip,0,j);
     double ans=std::min(ds,d);
     std::cout<<ans<<"\n";
-
-    
-
-
+    delete[] p;
+    return 0;
 }
