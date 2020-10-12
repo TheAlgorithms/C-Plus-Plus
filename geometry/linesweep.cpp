@@ -62,7 +62,9 @@ double distance(Points p[],int si,int ei)
      * maximum possible point
      * **/
     if(ei-si<=0)
-    return DBL_MAX;
+    {
+        return DBL_MAX;
+    }
     int mid=si+(ei-si)/2;
     /**
      * it partitions the random points
