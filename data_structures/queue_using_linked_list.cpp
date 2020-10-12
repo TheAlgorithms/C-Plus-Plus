@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
@@ -9,10 +8,10 @@ struct node {
 node *front, *rear;
 
 void Enque(int x) {
-    if (rear == NULL) {
+    if (rear == nullptr) {
         node *n = new node;
         n->val = x;
-        n->next = NULL;
+        n->next = nullptr;
         rear = n;
         front = n;
     }
@@ -20,29 +19,29 @@ void Enque(int x) {
     else {
         node *n = new node;
         n->val = x;
-        n->next = NULL;
+        n->next = nullptr;
         rear->next = n;
         rear = n;
     }
 }
 
 void Deque() {
-    if (rear == NULL && front == NULL) {
-        cout << "\nUnderflow";
+    if (rear == nullptr && front == nullptr) {
+        std::cout << "\nUnderflow";
     } else {
         node *t = front;
-        cout << "\n" << t->val << " deleted";
+        std::cout << "\n" << t->val << " deleted";
         front = front->next;
         delete t;
-        if (front == NULL)
-            rear = NULL;
+        if (front == nullptr)
+            rear = nullptr;
     }
 }
 
 void show() {
     node *t = front;
-    while (t != NULL) {
-        cout << t->val << "\t";
+    while (t != nullptr) {
+        std::cout << t->val << "\t";
         t = t->next;
     }
 }
@@ -50,14 +49,14 @@ void show() {
 int main() {
     int ch, x;
     do {
-        cout << "\n1. Enque";
-        cout << "\n2. Deque";
-        cout << "\n3. Print";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n1. Enque";
+        std::cout << "\n2. Deque";
+        std::cout << "\n3. Print";
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         if (ch == 1) {
-            cout << "\nInsert : ";
-            cin >> x;
+            std::cout << "\nInsert : ";
+            std::cin >> x;
             Enque(x);
         } else if (ch == 2) {
             Deque();
