@@ -14,16 +14,17 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
+#include <vector>
 
-int min(int x, int y, int z) { return min(min(x, y), z); }
+
+int min(int x, int y, int z) { return std::min(std::min(x, y), z); }
 
 /* A Naive recursive C++ program to find
  * minimum number of operations to convert
  * str1 to str2.
  * O(3^m)
  */
-int editDist(string str1, string str2, int m, int n) {
+int editDist(const std::string &str1,const std::string &str2, int m, int n) {
     if (m == 0)
         return n;
     if (n == 0)
@@ -45,9 +46,9 @@ int editDist(string str1, string str2, int m, int n) {
 /* A DP based program
  * O(m x n)
  */
-int editDistDP(string str1, string str2, int m, int n) {
+int editDistDP(const std::string &str1,const std::string &str2, int m, int n) {
     // Create Table for SubProblems
-    int dp[m + 1][n + 1];
+    std::vector<std::vector<int>>dp(m+1,std::vector<int>(n+1));
 
     // Fill d[][] in bottom up manner
     for (int i = 0; i <= m; i++) {
@@ -79,12 +80,12 @@ int editDistDP(string str1, string str2, int m, int n) {
    We will store values of present and previous index
    instead of storing O(m x n)
 */
-int editDistDP_in_O_n_space(string str1, string str2, int m, int n) {
+int editDistDP_in_O_n_space(const std::string &str1,const std::string &str2, int m, int n) {
 
-    int pre[n + 1]; //stores the value for previous index
+    std::vector<int>pre(n + 1); //stores the value for previous index
 
     for (int i = 0; i <= m; i++) {
-        int cur[n+1]; //stores the value for current index
+        std::vector<int>cur(n + 1); //stores the value for current index
         for (int j = 0; j <= n; j++) {
             // If str1 empty. Then add all of str2
             if (i == 0)
@@ -114,12 +115,12 @@ int editDistDP_in_O_n_space(string str1, string str2, int m, int n) {
 }
 
 int main() {
-    string str1 = "sunday";
-    string str2 = "saturday";
+    std::string str1 = "sunday";
+    std::string str2 = "saturday";
 
-    cout << editDist(str1, str2, str1.length(), str2.length()) << endl;
-    cout << editDistDP(str1, str2, str1.length(), str2.length()) << endl;
-    cout << editDistDP_in_O_n_space(str1, str2, str1.length(), str2.length()) << endl;
+    std::cout << editDist(str1, str2, str1.length(), str2.length()) << std::endl;
+    std::cout << editDistDP(str1, str2, str1.length(), str2.length()) << std::endl;
+    std::cout << editDistDP_in_O_n_space(str1, str2, str1.length(), str2.length()) <<std::endl;
 
     return 0;
 }
