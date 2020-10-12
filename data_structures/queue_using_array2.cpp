@@ -1,13 +1,11 @@
 #include <iostream>
-using namespace std;
-
 int queue[10];
 int front = 0;
 int rear = 0;
 
 void Enque(int x) {
     if (rear == 10) {
-        cout << "\nOverflow";
+        std::cout << "\nOverflow";
     } else {
         queue[rear++] = x;
     }
@@ -15,11 +13,11 @@ void Enque(int x) {
 
 void Deque() {
     if (front == rear) {
-        cout << "\nUnderflow";
+        std::cout << "\nUnderflow";
     }
 
     else {
-        cout << "\n" << queue[front++] << " deleted";
+        std::cout << "\n" << queue[front++] << " deleted";
         for (int i = front; i < rear; i++) {
             queue[i - front] = queue[i];
         }
@@ -30,20 +28,20 @@ void Deque() {
 
 void show() {
     for (int i = front; i < rear; i++) {
-        cout << queue[i] << "\t";
+        std::cout << queue[i] << "\t";
     }
 }
 
 int main() {
     int ch, x;
     do {
-        cout << "\n1. Enque";
-        cout << "\n2. Deque";
-        cout << "\n3. Print";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n1. Enque";
+        std::cout << "\n2. Deque";
+        std::cout << "\n3. Print";
+        std::cout << "\nEnter Your Choice : ";
+        std::cin >> ch;
         if (ch == 1) {
-            cout << "\nInsert : ";
+            std::cout << "\nInsert : ";
             cin >> x;
             Enque(x);
         } else if (ch == 2) {
