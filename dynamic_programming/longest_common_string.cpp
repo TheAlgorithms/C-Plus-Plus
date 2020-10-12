@@ -1,15 +1,12 @@
-#include <iosrteam>
-using namespace std;
-
-int max(int a, int b) { return (a > b) ? a : b; }
+#include <iostream>
+#include <cstring>
 
 int main() {
     char str1[] = "DEFBCD";
     char str2[] = "ABDEFJ";
     int i, j, k;
-    int n = strlen(str1) + 1;
-    int m = strlen(str2) + 1;
-    // cout<<n<<" "<<m<<"\n";
+    size_t n = strlen(str1) + 1;
+    size_t m = strlen(str2) + 1;
     int a[m][n];
 
     for (i = 0; i < m; i++) {
@@ -28,8 +25,8 @@ int main() {
     /*for(i=0;i<m;i++)
         {
             for(j=0;j<n;j++)
-                cout<<a[i][j]<<" ";
-            cout<<"\n";
+                std::cout<<a[i][j]<<" ";
+            std::cout<< std::endl;
         }*/
 
     int ma = -1;
@@ -44,10 +41,10 @@ int main() {
         }
     }
 
-    cout << str1 << "\n";
-    cout << str2 << "\n";
+    std::cout << str1 <<  std::endl;
+    std::cout << str2 <<  std::endl;
 
-    cout << "longest string size = " << ma /*<<" "<<indi<<" "<<indj*/ << "\n";
-    for (i = indi - 3; i < indi; i++) cout << str1[i];
-    cout << "\n";
+    std::cout << "longest string size = " << ma /*<<" "<<indi<<" "<<indj*/ << std::endl;
+    for (i = indi - 3; i < indi; i++) std::cout << str1[i];
+    std::cout <<  std::endl;
 }
