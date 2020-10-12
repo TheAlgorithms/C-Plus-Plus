@@ -4,12 +4,12 @@ Date:12/10/2020.
 #include <iostream>
 #include <deque>
 #include <string>
-#include <cstdlib
+#include <cstdlib>
 #include<vector.h>
 int main()
 {
-    deque<int> d;
-    deque<int>::iterator it;
+    deque<int> d=0;
+    deque<int>::iterator it=0;
     int c=0, item=0;
     while (true)
     {
