@@ -5,11 +5,11 @@ Date:12/10/2020.
 #include <deque>
 #include <string>
 #include <cstdlib>
-#include<vector>
+#include <vector.h>
 int main()
 {
-    deque<int> d=0;
-    deque<int>::iterator it=0;
+    deque<int> d=Null;
+    deque<int>::iterator it=Null;
     int c=0, item=0;
     while (true)
     {
