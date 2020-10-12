@@ -12,7 +12,7 @@ int main()
     deque<int> d;
     deque<int>::iterator it;
     int c, item;
-    while (1)
+    while (true)
     {
         cout << "1.Size of the Deque" << endl;
         cout << "2.Insert Element at the End" << endl;
