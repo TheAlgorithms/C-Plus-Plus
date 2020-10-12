@@ -60,11 +60,8 @@ void print(std::vector<int> dist, int V) {
 // weights
 void Dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
-    std::vector<int> mdist(V);
-    std::vector<bool> vset(V);
-
-    //    int mdist[V];  // Stores updated distances to vertex
-    //    bool vset[V];  // vset[i] is true if the vertex i included
+    std::vector<int> mdist(V); // Stores updated distances to vertex
+    std::vector<bool> vset(V); // vset[i] is true if the vertex i included
     // in the shortest path tree
 
     // Initialise mdist and vset. Set distance of source as zero
