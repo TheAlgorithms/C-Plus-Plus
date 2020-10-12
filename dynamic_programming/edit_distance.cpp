@@ -1,3 +1,4 @@
+
 /* Given two strings str1 & str2
  * and below operations that can
  * be performed on str1. Find
@@ -73,6 +74,44 @@ int editDistDP(string str1, string str2, int m, int n) {
 
     return dp[m][n];
 }
+/* A DP based program
+   O(n)
+   We will store values of present and previous index
+   instead of storing O(m x n)
+*/
+int editDistDP_in_O_n_space(string str1, string str2, int m, int n) {
+
+    int pre[n + 1]; //stores the value for previous index
+
+    for (int i = 0; i <= m; i++) {
+        int cur[n+1]; //stores the value for current index
+        for (int j = 0; j <= n; j++) {
+            // If str1 empty. Then add all of str2
+            if (i == 0)
+                cur[j] = j;
+
+            // If str2 empty. Then add all of str1
+            else if (j == 0)
+                cur[j] = i;
+
+            // If character same. Recur for remaining
+            else if (str1[i - 1] == str2[j - 1])
+                cur[j] = pre[j - 1];
+
+            else
+                cur[j] = 1 + min(cur[j - 1],     // Insert
+                                   pre[j],     // Remove
+                                   pre[j - 1]  // Replace
+                               );
+        }
+        for(int j=0;j<=n;j++)
+        {
+            pre[j]=cur[j];
+        }
+    }
+
+    return pre[n];
+}
 
 int main() {
     string str1 = "sunday";
@@ -80,6 +119,7 @@ int main() {
 
     cout << editDist(str1, str2, str1.length(), str2.length()) << endl;
     cout << editDistDP(str1, str2, str1.length(), str2.length()) << endl;
+    cout << editDistDP_in_O_n_space(str1, str2, str1.length(), str2.length()) << endl;
 
     return 0;
 }
