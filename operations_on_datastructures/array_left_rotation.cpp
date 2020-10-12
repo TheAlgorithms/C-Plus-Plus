@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+
 int main() {
     int n, k;
     std::cout << "Enter size of array=\t";
@@ -7,8 +9,10 @@ int main() {
     std::cin >> k;
     std::vector<int> a;
     std::cout << "Enter  elements of array=\t";
+    int value;
     for (int i = 0; i < n; i++) {
-        std::cin >> a[i];
+        std::cin >> value;
+        a.push_back(value);
     }
     int temp = 0;
     for (int i = 0; i < k; i++) {
