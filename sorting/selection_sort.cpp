@@ -1,15 +1,15 @@
 // Selection Sort
 
+#include <array>
 #include <iostream>
-using namespace std;
 
 int main() {
-    int Array[6];
-    cout << "\nEnter any 6 Numbers for Unsorted Array : ";
+    std::array<int,6> Array{};
+    std::cout << "\nEnter any 6 Numbers for Unsorted Array : ";
 
     // Input
-    for (int i = 0; i < 6; i++) {
-        cin >> Array[i];
+    for (int & i : Array) {
+        std::cin >> i;
     }
 
     // Selection Sorting
@@ -26,8 +26,8 @@ int main() {
     }
 
     // Output
-    cout << "\nSorted Array : ";
-    for (int i = 0; i < 6; i++) {
-        cout << Array[i] << "\t";
+    std::cout << "\nSorted Array : ";
+    for (int i : Array) {
+        std::cout << i << "\t";
     }
 }
