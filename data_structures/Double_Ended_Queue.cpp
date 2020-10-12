@@ -11,7 +11,7 @@ int main()
 {
     deque<int> d;
     deque<int>::iterator it;
-    int c, item;
+    int c=0, item;
     while (true)
     {
         cout << "1.Size of the Deque" << endl;
@@ -73,9 +73,7 @@ int main()
         default:
             cout << "Wrong Choice" << endl;
         }
-        cout << "Press any key>>>>>>" << endl;
-        getchar();
-        getche();
+      
     }
     return 0;
 }
