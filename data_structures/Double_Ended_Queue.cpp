@@ -5,13 +5,12 @@ Date:12/10/2020.
 #include <deque>
 #include <string>
 #include <cstdlib>
-#include <conio.h>
 using namespace std;
 int main()
 {
     deque<int> d;
-    deque<int>::iterator it;
-    int c=0, item;
+    deque<int>::iterator it=0;
+    int c=0, item=0;
     while (true)
     {
         cout << "1.Size of the Deque" << endl;
