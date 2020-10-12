@@ -67,7 +67,7 @@ int main()
             }
             break;
         case 9:
-            exit(1);
+            exit();
             break;
 
         default:
