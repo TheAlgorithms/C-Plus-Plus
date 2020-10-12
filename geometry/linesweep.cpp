@@ -16,7 +16,7 @@
  */
 #include<iostream>
 #include<algorithm>
-#include<math.h>
+#include<cmath>
 #include<cfloat>
 /**
  * The class is created to store the x and y coordinates
