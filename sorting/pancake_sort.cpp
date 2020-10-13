@@ -54,7 +54,7 @@ namespace pancake_sort {
     * @brief This implementation is for a C-style array input that gets modified in place.
     * @param [start,end] arr our vector of elements.
     * @param size size of given array
-    * @returns integer
+    * @returns 0 on exit
     */
     template<typename T>
     int pancakeSort(std::vector<T> &arr, int size) {
