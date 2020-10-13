@@ -193,6 +193,7 @@ void mergeSort(int A[], int start, int end){
         }
     }
 }
+}
 int main() {
     int t,i; //t is the number of test cases, i our loop iterator
     std::cin>>t;
@@ -207,7 +208,7 @@ int main() {
         }
         
         //calling our mergesort procedure
-        mergeSort(A,0,N-1);
+        sorting::mergeSort(A,0,N-1);
         
         //getting output 
         for(i=0;i<N;i++){
@@ -215,5 +216,4 @@ int main() {
         }std::cout<<"\n";
     }
     return 0;
-}
 }
