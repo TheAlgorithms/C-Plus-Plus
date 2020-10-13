@@ -14,7 +14,7 @@
  * Sorted: {22,37,51,73,81}
  * @author [Divyansh Gupta](https://github.com/divyansh12323)
  * @see more on [Pancake sort](https://en.wikipedia.org/wiki/Pancake_sorting)
- * @see related problem [Leetcode](https://leetcode.com/problems/pancake-sorting/)
+ * @see related problem at [Leetcode](https://leetcode.com/problems/pancake-sorting/)
 */
 
 #include <iostream>   // for io operations
@@ -24,13 +24,19 @@
 
 /**
  * @namespace sorting
- * Sorting algorithms
+ * @brief Sorting algorithms
  */
 namespace sorting {
+/**
+ * @namespace pancake_sort
+ * @brief Functions for [Pancake sort](https://en.wikipedia.org/wiki/Pancake_sorting) algorithm
+ */
+namespace pancake_sort {
     /**
-    * This implementation is for a C-style array input that gets modified in place.
+    * @brief This implementation is for reversing elements in a a C-style array .
     * @param [start,end] arr our vector of elements.
-    * @param n size of given array
+    * @param start starting index of array
+    * @param end ending index of array
     */
     template<typename T>
     void reverse(std::vector<T> &arr, int start, int end) {
@@ -43,7 +49,11 @@ namespace sorting {
             end--;
         }
     }
-
+    /**
+    * @brief This implementation is for a C-style array input that gets modified in place.
+    * @param [start,end] arr our vector of elements.
+    * @param size size of given array
+    */
     template<typename T>
     int pancakeSort(std::vector<T> &arr, int size) {
         for (int i = size; i > 1; --i) {
@@ -63,10 +73,12 @@ namespace sorting {
         }
         return 0;
     }
-} // namespace sorting
+}  // namespace pancake_sort
+}  // namespace sorting
 
 /**
- * Test function
+ * @brief Test implementations
+ * @returns void
  */
 static void test() {
 
@@ -74,7 +86,7 @@ static void test() {
     const int size1 = 7;
     std::cout << "\nTest 1- as std::vector<int>...";
     std::vector<int> arr1 = {23, 10, 20, 11, 12, 6, 7};
-    sorting::pancakeSort(arr1, size1);
+    sorting::pancake_sort::pancakeSort(arr1, size1);
     assert(std::is_sorted(arr1.begin(), arr1.end()));
     std::cout << "Passed\n";
     for (int i = 0; i < size1; i++) {
@@ -86,7 +98,7 @@ static void test() {
     const int size2 = 8;
     std::cout << "\nTest 2- as std::vector<double>...";
     std::vector<double> arr2 = {23.56, 10.62, 200.78, 111.484, 3.9, 1.2, 61.77, 79.6};
-    sorting::pancakeSort(arr2, size2);
+    sorting::pancake_sort::pancakeSort(arr2, size2);
     assert(std::is_sorted(arr2.begin(), arr2.end()));
     std::cout << "Passed\n";
     for (int i = 0; i < size2; i++) {
@@ -98,7 +110,7 @@ static void test() {
     const int size3 = 7;
     std::cout << "\nTest 3- as std::vector<float>...";
     std::vector<float> arr3 = {6.56, 12.62, 200.78, 768.484, 19.27, 68.87, 9.6};
-    sorting::pancakeSort(arr3, size3);
+    sorting::pancake_sort::pancakeSort(arr3, size3);
     assert(std::is_sorted(arr3.begin(), arr3.end()));
     std::cout << "Passed\n";
     for (int i = 0; i < size3; i++) {
@@ -107,10 +119,10 @@ static void test() {
     std::cout << std::endl;
 }
 /**
- * Our main function with example of sort method.
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     test();
     return 0;
 }
-
