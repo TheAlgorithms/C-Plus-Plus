@@ -37,6 +37,7 @@ namespace pancake_sort {
     * @param [start,end] arr our vector of elements.
     * @param start starting index of array
     * @param end ending index of array
+    * @returns void
     */
     template<typename T>
     void reverse(std::vector<T> &arr, int start, int end) {
@@ -53,6 +54,7 @@ namespace pancake_sort {
     * @brief This implementation is for a C-style array input that gets modified in place.
     * @param [start,end] arr our vector of elements.
     * @param size size of given array
+    * @returns integer
     */
     template<typename T>
     int pancakeSort(std::vector<T> &arr, int size) {
@@ -126,4 +128,3 @@ int main() {
     test();
     return 0;
 }
-
