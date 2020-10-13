@@ -1,111 +1,85 @@
-/**
- * \file
- * \brief The [Rabin-Karp
- * Algorithm](https://en.wikipedia.org/wiki/Rabin–Karp_algorithm) for finding a
- * pattern within a piece of text with complexity O(n + m)
- */
-#include <cassert>
-#include <cmath>
+/*Given string s.
+  Calculate number of
+  distinct substring of
+  string s
+*/
+
 #include <iostream>
-#ifdef _MSC_VER
-#include <string>  // use this for MS Visucal C++
-#else
-#include <cstring>
-#endif
+#include <string>
+#include <set>
+#include <vector>
 
-#define PRIME 5  ///< Prime modulus for hash functions
 
-namespace string_search {
-/**
- * convert a string to an intger - called as hashing function
- * \param[in] s source of string to hash
- * \param[in] n length of substring to hash
- * \returns hash integer
- */
-int64_t create_hash(const std::string& s, int n) {
-    int64_t result = 0;
-    for (int i = 0; i < n; ++i) {
-        result += (int64_t)(s[i] * (int64_t)pow(PRIME, i));
-    }
-    return result;
-}
+/* A naive approach will be to
+   insert all Substrings
+   of string s in a set
+   and return the size of set
+   time complexity:O(n^3)
+   space complexity:O(n^3)
+*/
+int distinctSubstring(std::string &str)
+{
+    // Put all distinct substring in a HashSet
+    std::set<std::string> result ;
 
-/**
- * re-hash a string using known existing hash
- * \param[in] s source of string to hash
- * \param[in] old_index previous index of string
- * \param[in] new_index new index of string
- * \param[in] old_hash previous hash of substring
- * \param[in] patLength length of substring to hash
- * \returns new hash integer
- */
-int64_t recalculate_hash(const std::string& s, int old_index, int new_index,
-                         int64_t old_hash, int patLength) {
-    int64_t new_hash = old_hash - s[old_index];
-    new_hash /= PRIME;
-    new_hash += (int64_t)(s[new_index] * (int64_t)pow(PRIME, patLength - 1));
-    return new_hash;
-}
+    // List All Substrings
+    for (int i = 0; i <= str.length(); i++)
+    {
+        for (int j = 1; j <= str.length()-i; j++)
+        {
 
-/**
- * compare if two sub-strings are equal
- * \param[in] str1 string pattern to search
- * \param[in] str2 text in which to search
- * \param[in] start1,end1 start and end indices for substring in str1
- * \param[in] start2,end2 start and end indices for substring in str2
- * \returns `true` if pattern was found
- * \returns `false` if pattern was not found
- * @note can this be replaced by std::string::compare?
- */
-bool check_if_equal(const std::string& str1, const std::string& str2,
-                    int start1, int end1, int start2, int end2) {
-    if (end1 - start1 != end2 - start2) {
-        return false;
-    }
-    while (start1 <= end1 && start2 <= end2) {
-        if (str1[start1] != str2[start2]) {
-            return false;
-        }
-        start1++;
-        start2++;
-    }
-    return true;
-}
-
-/**
- *  Perform string pattern search using Rabin-Karp algorithm
- *  @param[in] str string to search in
- *  @param[in] pat pattern to search for
- *  @return index of first occurrence of pattern
- *  @return -1 if pattern not found
- */
-
-int rabin_karp(const std::string& str, const std::string& pat) {
-    int64_t pat_hash = create_hash(pat, pat.size());
-    int64_t str_hash = create_hash(str, pat.size());
-    for (int i = 0; i <= str.size() - pat.size(); ++i) {
-        if (pat_hash == str_hash &&
-            check_if_equal(str, pat, i, i + pat.size() - 1, 0,
-                           pat.size() - 1)) {
-            return i;
-        }
-        if (i < str.size() - pat.size()) {
-            str_hash =
-                recalculate_hash(str, i, i + pat.size(), str_hash, pat.size());
+            // Add each substring in Set
+            result.insert(str.substr(i, j));
         }
     }
-    return -1;  // return -1 if given pattern not found
+
+    // Return size of the HashSet
+    return result.size();
 }
 
-}  // namespace string_search
+/*Using rabin_karp hashing
+  approach we Calculate hash
+  of different substrings.
+  Insert hash of substrings
+  instead of substring itself.
+  return the size of set.
+  Time complexity:O(n^2)
+  Space complexity:O(n^2)
+*/
 
-using string_search::rabin_karp;
+int distinctSubstring_rabin_karp_hashing(std::string const& s) {
+    const int p = 31;
+    const int m = 1e9 + 9;
+    int S = s.size();
+    std::set<int>all_hash; //set to store different hash values
 
-/** Main function */
-int main(void) {
-    assert(rabin_karp("helloWorld", "world") == -1);
-    assert(rabin_karp("helloWorld", "World") == 5);
-    assert(rabin_karp("this_is_c++", "c++") == 8);
-    assert(rabin_karp("happy_coding", "happy") == 0);
-    return 0;
+    //storing hash values by rabin-karp algorithm
+    std::vector<long long> p_pow(S);
+    p_pow[0] = 1;
+    for (int i = 1; i < (int)p_pow.size(); i++)
+        p_pow[i] = (p_pow[i-1] * p) % m;
+
+    std::vector<long long> h(S + 1, 0);
+    for (int i = 0; i < S; i++)
+        h[i+1] = (h[i] + (s[i] - 'a' + 1) * p_pow[i]) % m;
+
+
+    //trversing all possible substrings
+    for (int len = 1; len <= S; len++) {
+        for(int i=0;i+len<=S;i++)
+        {
+            long long cur_hash = (h[i+len] + m - h[i]) % m; //hash of substring s[i..i+len-1]
+            cur_hash=(cur_hash*p_pow[S-i-1])%m;
+            if(all_hash.find(cur_hash)==all_hash.end())
+            all_hash.insert(cur_hash);
+        }
+    }
+
+    return all_hash.size();
+}
+int main()
+{
+    std::string s="aabcdaa";
+    std::cout<<"number of distinct substring: "<<distinctSubstring(s)<<std::endl;
+    std::cout<<"number of distinct substring using rabin-karp: "<<distinctSubstring_rabin_karp_hashing(s)<<std::endl;
 }
