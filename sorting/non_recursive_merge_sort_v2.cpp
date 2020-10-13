@@ -194,6 +194,18 @@ void mergeSort(int A[], int start, int end){
     }
 }
 }
+/*
+Example:
+INPUT: 
+2
+10
+383 886 777 915 793 335 386 492 649 421
+10
+362 27 690 59 763 926 540 426 172 736
+OUTPUT:
+335 383 386 421 492 649 777 793 886 915 
+27 59 172 362 426 540 690 736 763 926 
+*/
 int main() {
     int t,i; //t is the number of test cases, i our loop iterator
     std::cin>>t;
@@ -204,7 +216,7 @@ int main() {
         
         //inserting each element into array
         for(i=0;i<N;i++){
-            cin>>A[i];
+            std::cin>>A[i];
         }
         
         //calling our mergesort procedure
