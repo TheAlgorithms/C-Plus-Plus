@@ -83,7 +83,6 @@ namespace pancake_sort {
  * @returns void
  */
 static void test() {
-
     // example 1: vector ofi nt
     const int size1 = 7;
     std::cout << "\nTest 1- as std::vector<int>...";
