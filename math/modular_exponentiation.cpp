@@ -56,10 +56,10 @@ int main()
 	int num2 = 5; 
 	int m = 13; 
 	
-	std::cout << "The value of "<<num1<<" raised to exponent "<<num2<<" 
-	under modulo "<<m<<" is " << power(num1, num2, m); 
+	std::cout << "The value of "<<num1<<" raised to exponent "<<num2<< 
+	" under modulo "<<m<<" is " << power(num1, num2, m); 
 	/// std::cout << "The value of "<<num1<<" raised to exponent "<<num2<<" 
-	/// under modulo "<<m<<" is " << power(num1, num2, m); 
+	/// " under modulo "<<m<<" is " << power(num1, num2, m); 
  
 } 
 
