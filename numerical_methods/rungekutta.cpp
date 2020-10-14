@@ -24,7 +24,7 @@
 **/
 float change(double x, double y) 
 { 
-	return((x - y)/2); 
+	return((x - y)/static_cast<double>(2.0)); 
 } 
 /**
  * 
@@ -43,11 +43,11 @@ float rungeKutta(double init_x, double init_y, double x, double h)
 	 
 	 int n = static_cast<int>((x - init_x) / h); 
 
-	double k1;
-	double k2;
-	double k3;
-	double k4;
-	double k5; 
+	double k1=0.0;
+	double k2=0.0;
+	double k3=0.0;
+	double k4=0.0;
+	double k5=0.0; 
 
 	/**
 	 * Iterate for number of iterations 
