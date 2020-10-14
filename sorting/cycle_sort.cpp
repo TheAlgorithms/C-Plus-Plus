@@ -17,7 +17,7 @@
  * @brief Interchange a and b
  * @param a the first entity
  * @param b the second entity
- * @return void
+ * @returns void
  */
 void swap(int *a, int *b) {
     int tmp = 0;
@@ -29,7 +29,7 @@ void swap(int *a, int *b) {
 /**
  * @brief The main function implements cycleSort
  * @param arr array to be sorted
- * @return void
+ * @returns void
  */
 void cycleSort(std::vector<int> *arr) {
     for (int cycle_start = 0; cycle_start <= (*arr).size() - 1; cycle_start++) {
