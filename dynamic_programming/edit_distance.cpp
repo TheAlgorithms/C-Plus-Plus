@@ -75,25 +75,27 @@ int editDistDP(const std::string &str1,const std::string &str2, int m, int n) {
 
     return dp[m][n];
 }
-/*In the above DP approach,
- *for particular index i we require
- *dp[i-1][j] and dp[i-1][j-1] values.
- *Thus dp values before i-1 i.e 
- *dp[i-2][j],dp[i-3][j]...
- *values are no use to us.
- *Therefore instead of storing m*n table
- *we only store values of dp[i-1][0],dp[i-1][1] ....dp[i-1[m] in 1D vector.
- *After traversing for particular index i
- *current dp values become previous dp values for index i+1
- *thus we copy the cur vector to pre vector
- */ 
- 
- 
+
 /* A DP based program
    O(n)
    We will store values of present and previous index
    instead of storing O(m x n)
-*/
+ */
+
+/* In the above DP approach,
+ * for particular index i we require
+ * dp[i-1][j] and dp[i-1][j-1] values.
+ * Thus dp values before i-1 i.e 
+ * dp[i-2][j],dp[i-3][j]...
+ * values are of no use to us.
+ * Therefore instead of storing m*n table
+ * we will only store values of 
+ * dp[i-1][0],dp[i-1][1] ....dp[i-1[m] in 1D vector.
+ * After traversing for particular index i
+ * current dp values become previous dp values for index i+1
+ * thus we will copy the cur vector to pre vector
+ * and move to next index
+ */ 
 int editDistDP_in_O_n_space(const std::string &str1,const std::string &str2, int m, int n) {
 
     std::vector<int>pre(n + 1); //stores the dp value for previous index
