@@ -22,9 +22,9 @@
  * Can be any transcendental equation 
 
 **/
-float change(double x, double y) 
+float change(float x, float y) 
 { 
-	return((x - y)/static_cast<double>(2.0)); 
+	return((x - y)/2.0); 
 } 
 /**
  * 
@@ -33,7 +33,7 @@ float change(double x, double y)
  * and initial value initial x at initial y. 
 
  **/
-float rungeKutta(double init_x, double init_y, double x, double h) 
+float rungeKutta(float init_x, float init_y, float x, float h) 
 { 
 	 /**
 	  * Count number of iterations 
@@ -43,16 +43,16 @@ float rungeKutta(double init_x, double init_y, double x, double h)
 	 
 	 int n = static_cast<int>((x - init_x) / h); 
 
-	double k1=0.0;
-	double k2=0.0;
-	double k3=0.0;
-	double k4=0.0;
-	double k5=0.0; 
+	float k1=0.0;
+	float k2=0.0;
+	float k3=0.0;
+	float k4=0.0;
+	float k5=0.0; 
 
 	/**
 	 * Iterate for number of iterations 
 	 * **/
-	double y = init_y; 
+	float y = init_y; 
 	for (int i=1; i<=n; i++) 
 	{ 
 		/**
@@ -86,10 +86,10 @@ float rungeKutta(double init_x, double init_y, double x, double h)
  * **/
 int main() 
 { 
-	double x0 = 0;
-	double y = 1;
-	double x = 2;
-	double h = 0.2; 
+	float x0 = 0;
+	float y = 1;
+	float x = 2;
+	float h = 0.2; 
 	std::cout<<"The value of y at x is :"<<rungeKutta(x0, y, x, h); 
 	return 0; 
 } 
