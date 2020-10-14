@@ -24,26 +24,26 @@ Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 Output: false
 */
 
+#include <limits.h>
+
 #include <iostream>
-#include <locale>
-#include <queue>
-#include <regex>
-#include <sstream>
-#include <stack>
 #include <string>
-#include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::string;
+using std::unordered_set;
+using std::vector;
 
 class Solution {
  public:
-    bool exists(string s, unordered_set<string> strSet) {
+    bool exists(const string s, const unordered_set<string> strSet) {
         return strSet.find(s) != strSet.end();
     }
 
-    bool check(string s, unordered_set<string> strSet, int pos,
+    bool check(const string s, const unordered_set<string> strSet, int pos,
                vector<int>& dp) {
         if (pos == s.length()) {
             return true;
@@ -65,9 +65,9 @@ class Solution {
         return false;
     }
 
-    bool wordBreak(string s, vector<string>& wordDict) {
+    bool wordBreak(const string s, const vector<string>& wordDict) {
         unordered_set<string> strSet;
-        for (auto s : wordDict) {
+        for (const auto s : wordDict) {
             strSet.insert(s);
         }
 
@@ -75,3 +75,9 @@ class Solution {
         return check(s, strSet, 0, dp);
     }
 };
+
+int main() {
+    const string s = "applepenapple";
+    const vector<string> wordDict = {"apple", "pen"};
+    cout << Solution().wordBreak(s, wordDict) << endl;
+}
