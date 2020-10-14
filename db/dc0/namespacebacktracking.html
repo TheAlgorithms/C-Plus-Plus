@@ -257,7 +257,7 @@ template&lt;size_t V&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks if it's possible to place a 'no' </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Checks if it's possible to place a number 'no' </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">V</td><td>number of vertices in the array </td></tr>
   </table>
@@ -276,17 +276,17 @@ template&lt;size_t V&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if 'mat' is different from 'no' </dd>
 <dd>
 <code>false</code> if 'mat' equals to 'no' </dd></dl>
-<p>Row or col nahin hona chahiye</p>
-<p>Subgrid mein nahi hona chahiye</p>
+<p>'no' shouldn't be present in either row i or column j</p>
+<p>'no' shouldn't be present in the 3*3 subgrid</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                                             {<span class="comment"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">        /// Row or col nahin hona chahiye</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">        /// &#39;no&#39; shouldn&#39;t be present in either row i or column j</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; n; x++) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (mat[x][j] == no || mat[i][x] == no) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">        /// Subgrid mein nahi hona chahiye</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">        /// &#39;no&#39; shouldn&#39;t be present in the 3*3 subgrid</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span>        <span class="keywordtype">int</span> sx = (i / 3) * 3;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> sy = (j / 3) * 3;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -760,17 +760,17 @@ template&lt;size_t V&gt; </div>
 <dd>
 <code>false</code> if 'no' was not placed </dd></dl>
 <p>Base Case</p>
-<p>Solve kr chuke hain for 9 rows already</p>
+<p>Solved for 9 rows already</p>
 <p>Crossed the last Cell in the row</p>
 <p>Blue Cell - Skip</p>
 <p>White Cell Try to place every possible no</p>
-<p>Place the no - assuming solution aa jayega</p>
-<p>Nahin solve hui loop will place the next no.</p>
-<p>Sare no try kr liey, kisi se bhi solve nahi hui</p>
+<p>Place the 'no' - assuming a solution will exist</p>
+<p>Couldn't find a solution loop will place the next no.</p>
+<p><a class="el" href="../../dd/d4f/class_solution.html">Solution</a> couldn't be found for any of the numbers provided</p>
 <div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                         {<span class="comment"></span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        /// Base Case</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> (i == 9) {<span class="comment"></span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">            /// Solve kr chuke hain for 9 rows already</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">            /// Solved for 9 rows already</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>            backtracking::printMat&lt;V&gt;(mat, 9);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
@@ -788,17 +788,17 @@ template&lt;size_t V&gt; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">        /// Try to place every possible no</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> no = 1; no &lt;= 9; no++) {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">if</span> (backtracking::isPossible&lt;V&gt;(mat, i, j, no, 9)) {<span class="comment"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">                /// Place the no - assuming solution aa jayega</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">                /// Place the &#39;no&#39; - assuming a solution will exist</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span>                mat[i][j] = no;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordtype">bool</span> aageKiSolveHui = backtracking::solveSudoku&lt;V&gt;(mat, i, j + 1);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">if</span> (aageKiSolveHui) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordtype">bool</span> solution_found = backtracking::solveSudoku&lt;V&gt;(mat, i, j + 1);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">if</span> (solution_found) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                }<span class="comment"></span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">                /// Nahin solve hui</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">                /// Couldn&#39;t find a solution</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                /// loop will place the next no.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span>            }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }<span class="comment"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">        /// Sare no try kr liey, kisi se bhi solve nahi hui</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">        /// Solution couldn&#39;t be found for any of the numbers provided</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"></span>        mat[i][j] = 0;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>

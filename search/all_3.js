@@ -107,5 +107,6 @@ var searchData=
   ['cut_5frod_303',['cut_rod',['../d8/d36/namespacecut__rod.html',1,'']]],
   ['cut_5frod_2ecpp_304',['cut_rod.cpp',['../d6/d10/cut__rod_8cpp.html',1,'']]],
   ['cyclecheck_305',['CycleCheck',['../d3/dbb/class_cycle_check.html',1,'']]],
-  ['contribution_20guidelines_306',['CONTRIBUTION GUIDELINES',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]]
+  ['contributor_20covenant_20code_20of_20conduct_306',['Contributor Covenant Code of Conduct',['../d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html',1,'']]],
+  ['contribution_20guidelines_307',['CONTRIBUTION GUIDELINES',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]]
 ];
