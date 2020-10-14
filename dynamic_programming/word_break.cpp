@@ -24,8 +24,7 @@ Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 Output: false
 */
 
-#include <limits.h>
-
+#include <climits>
 #include <iostream>
 #include <string>
 #include <unordered_set>
@@ -39,40 +38,40 @@ using std::vector;
 
 class Solution {
  public:
-    bool exists(const string s, const unordered_set<string> strSet) {
+    bool exists(const string &s, const unordered_set<string> &strSet) {
         return strSet.find(s) != strSet.end();
     }
 
-    bool check(const string s, const unordered_set<string> strSet, int pos,
-               vector<int>& dp) {
+    bool check(const string &s, const unordered_set<string> &strSet, int pos,
+               vector<int> *dp) {
         if (pos == s.length()) {
             return true;
         }
 
-        if (dp[pos] != INT_MAX) {
-            return dp[pos] == 1;
+        if (dp->at(pos) != INT_MAX) {
+            return dp->at(pos) == 1;
         }
 
         string wordTillNow = "";
         for (int i = pos; i < s.length(); i++) {
             wordTillNow += string(1, s[i]);
             if (exists(wordTillNow, strSet) and check(s, strSet, i + 1, dp)) {
-                dp[pos] = 1;
+                dp->at(pos) = 1;
                 return true;
             }
         }
-        dp[pos] = 0;
+        dp->at(pos) = 0;
         return false;
     }
 
-    bool wordBreak(const string s, const vector<string>& wordDict) {
+    bool wordBreak(const string &s, const vector<string> &wordDict) {
         unordered_set<string> strSet;
-        for (const auto s : wordDict) {
+        for (const auto &s : wordDict) {
             strSet.insert(s);
         }
 
         vector<int> dp(s.length(), INT_MAX);
-        return check(s, strSet, 0, dp);
+        return check(s, strSet, 0, &dp);
     }
 };
 
