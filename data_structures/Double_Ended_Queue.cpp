@@ -1,5 +1,19 @@
 /*Author Alok Khulbay
 Date:12/10/2020.
+Alogrothm for thid implementtion
+Begin
+   Declare a class dequeue to declare front f and rear r and following functions:
+   function insert_at_beg(int) to insert item at front:
+      If queue is not completely filled up, insert element at the front and update front and rear
+      Otherwise print overflow.
+   function insert_at_end(int) to insert item at rear:
+      If queue is not completely filled up, insert element at the rear and update front and rear
+      Otherwise print overflow.
+   function delete_fr_beg() to delete item from front:
+      If queue is empty, print underflow otherwise delete the front element and update front.
+   function delete_fr_end() to delete item from end:
+      If queue is empty, print underflow otherwise delete the rear element and update rear.
+End
 */
 #include <iostream>
 #include <deque>
