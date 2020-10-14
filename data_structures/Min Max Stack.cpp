@@ -144,12 +144,6 @@ class Stack
   
 int32_t main()
 {
-  fast();
-  #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt","w",stdout);
-  #endif
- 
   Stack<int> st;
   st.push(1);
   st.push(2);
