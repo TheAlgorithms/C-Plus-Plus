@@ -38,10 +38,6 @@ void KMPSearch(string text, string pattern)
 // Driver program to test above function 
 int main() 
 { 
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt","w",stdout);
-    #endif
     string text, pattern;
     //Input the string separated with pattern
     cin >> text >> pattern;
