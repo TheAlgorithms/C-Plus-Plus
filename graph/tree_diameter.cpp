@@ -84,18 +84,19 @@ int longest_path_from_node( const std::vector<std::vector<int> > &adj, int node,
 int find_diameter( const std::vector<std::vector<int> > &adj, int root_node,int vertices)
 {
 	   // stores the diameter of the tree
-		int *diameter;
+		int *diameter = 0;
 		
 		// calling the recursive function starting from the root node and "-1" as root node doesn't have a parent
-		int var = longest_path_from_node(adj,root_node,-1,diameter);
+		int var = 0;
+		var = longest_path_from_node(adj,root_node,-1,diameter);
 		
 		return (*diameter);
 }
-}
+}   // namespace graph
 
 int main()
 {
-	        int vertices,edges;
+	        int vertices = 0,edges = 0;
          	std::cout<<" Enter the number of vertices in the tree"<<std::endl;
          	std::cin>>vertices;
              edges = vertices  - 1;       // edges  = vertices - 1 for a tree
@@ -103,7 +104,7 @@ int main()
             // creating the graph
 			std::vector<std::vector<int>> adj(vertices, std::vector<int>());
 			std::cout<<"Enter the edges as a pair of vertices"<<std::endl;
-			while(edges--)
+			for(int i = 0;i<edges;i++)
 			{
 				
 				int x = 0,y = 0;
