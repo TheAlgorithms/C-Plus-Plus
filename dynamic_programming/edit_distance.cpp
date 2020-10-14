@@ -44,7 +44,8 @@ int editDist(const std::string &str1,const std::string &str2, int m, int n) {
 }
 
 /* A DP based program
- * O(m x n)
+ * Time Complexity:O(m x n)
+ * Space Complexity: O(m x n)
  */
 int editDistDP(const std::string &str1,const std::string &str2, int m, int n) {
     // Create Table for SubProblems
@@ -77,9 +78,8 @@ int editDistDP(const std::string &str1,const std::string &str2, int m, int n) {
 }
 
 /* A DP based program
-   O(n)
-   We will store values of present and previous index
-   instead of storing O(m x n)
+ * Time Complexity: O(m x n)
+ * Space Complexity: O(n) 
  */
 
 /* In the above DP approach,
@@ -96,6 +96,7 @@ int editDistDP(const std::string &str1,const std::string &str2, int m, int n) {
  * thus we will copy the cur vector to pre vector
  * and move to next index
  */ 
+
 int editDistDP_in_O_n_space(const std::string &str1,const std::string &str2, int m, int n) {
 
     std::vector<int>pre(n + 1); //stores the dp value for previous index
