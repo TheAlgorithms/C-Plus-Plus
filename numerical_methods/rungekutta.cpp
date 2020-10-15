@@ -15,6 +15,7 @@
  *  it solves dy/dx=(x-y)/2 at a 
  * given x for given initial 
  * conditions
+ * There can be many such equations 
  * **/
 #include<iostream> 
 /**
