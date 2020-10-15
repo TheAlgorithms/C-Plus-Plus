@@ -149,6 +149,24 @@ bool wordBreak(const std::string &s, const std::vector<std::string> &wordDict) {
 }  // namespace dynamic_programming
 
 /**
+ * @brief Test implementations
+ * @returns void
+ */
+static void test() {
+    // the complete string
+    const std::string s = "applepenapple";
+    // the dictionary to be used
+    const std::vector<std::string> wordDict = {"apple", "pen"};
+
+    assert(dynamic_programming::word_break::wordBreak(s, wordDict));
+
+    // should return true, as applepenapple can be segmented as apple + pen +
+    // apple
+    std::cout << dynamic_programming::word_break::wordBreak(s, wordDict)
+              << std::endl;
+    std::cout << "Test implementation passed!\n";
+ }
+/**
  * @brief Main function
  * @returns 0 on exit
  */
