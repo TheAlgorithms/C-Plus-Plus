@@ -23,7 +23,7 @@
  * to the given function
  * @param x is the value corresponding to the x coordinate
  * @param y is the value corresponding to the y coordinate 
- * @return the computed function value at that call
+ * @returns the computed function value at that call
  * **/
 double change(double x, double y) 
 { 
@@ -93,7 +93,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 
 /**
  * @brief Main function
- * @return 0 on exit 
+ * @returns 0 on exit 
  * **/
 int main() 
 { 
