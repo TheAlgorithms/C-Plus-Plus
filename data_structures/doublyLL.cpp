@@ -1,7 +1,7 @@
 /*____Garg's Code_____*/
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
 
+//Template class for node of Doubly Linked List
 template<class T>
 class Node
 {
@@ -10,6 +10,7 @@ class Node
     T info;
 };
 
+//Class declaration for Doubly Linked List
 template<class T>
 class DoublyLL
 {
@@ -20,7 +21,7 @@ class DoublyLL
     {
       start = NULL;
     }
-
+    //Declaration of push function such that when new node is inserted it is sorted
     void push(T no)
     {
       Node<T> *new_node = new Node<T>;
@@ -79,13 +80,13 @@ class DoublyLL
     {
       Node<T> *new_node = new Node<T>;
       new_node = start;
-      cout << "START -> ";
+      std::cout << "START -> ";
       while(new_node != NULL)
       {
-        cout << new_node->info << " <-> ";
+        std::cout << new_node->info << " <-> ";
         new_node = new_node->forv;
       }
-      cout << "NULL";
+      std::cout << "NULL";
     }  
 };
   
