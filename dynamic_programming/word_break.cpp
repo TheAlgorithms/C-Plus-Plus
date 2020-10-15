@@ -47,7 +47,7 @@ class Solution {
      *
      * @param str the string to be searched
      * @param strSet unordered set of string, that is to be looked into
-     * @returns bool, true if str is present in strSet
+     * @returns true if str is present in strSet
      */
     bool exists(const string &str, const unordered_set<string> &strSet) {
         return strSet.find(str) != strSet.end();
