@@ -96,7 +96,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 /**
  * @brief Main function
  * @returns 0 on exit 
- * **/
+ */
 int main() 
 { 
 	double x0 = 0;
