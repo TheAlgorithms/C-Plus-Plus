@@ -160,5 +160,5 @@ int main() {
 
     // should return true, as applepenapple can be segmented as apple + pen +
     // apple
-    cout << Solution().wordBreak(s, wordDict) << endl;
+    cout << dynamic_programming::word_break::Solution().wordBreak(s, wordDict) << endl;
 }
