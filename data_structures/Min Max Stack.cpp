@@ -1,6 +1,6 @@
 /*____Garg's Code_____*/
 #include <iostream>
-
+#include<memory>
 
 //Create a template class for Linked List implementation of stack
 template<class T>
