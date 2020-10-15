@@ -1,12 +1,11 @@
 // C++ program for implementation of KMP pattern searching
 #include <iostream>   
 #include <string>
-using namespace std;
 //Array to store longest prefix substring using KMP algorithm  
 int lps[10000];
   
 // Prints occurrences of txt[] in pat[] 
-void KMPSearch(string text, string pattern) 
+void KMPSearch(std::string text, std::string pattern) 
 { 
     int M = pattern.length(); 
     int N = text.length(); 
@@ -20,7 +19,7 @@ void KMPSearch(string text, string pattern)
         } 
   
         if (j == M) { 
-            cout << "Found pattern at index " << (i - j); 
+            std::cout << "Found pattern at index " << (i - j); 
             j = lps[j - 1]; 
         } 
   
@@ -39,9 +38,9 @@ void KMPSearch(string text, string pattern)
 // Driver program to test above function 
 int main() 
 { 
-    string text, pattern;
+    std::string text, pattern;
     //Input the string separated with pattern
-    cin >> text >> pattern;
+    std::cin >> text >> pattern;
 
     //KMP Algorithm
     int len = 0; 
