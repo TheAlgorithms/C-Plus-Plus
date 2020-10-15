@@ -1,6 +1,7 @@
 // C++ program for implementation of KMP pattern searching
-#include <bits/stdc++.h> 
-using namespace std;  
+#include <iostream>   
+#include <string>
+using namespace std;
 //Array to store longest prefix substring using KMP algorithm  
 int lps[10000];
   
@@ -76,3 +77,4 @@ int main()
     KMPSearch(text, pattern); 
     return 0; 
 } 
+
