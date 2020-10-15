@@ -2,7 +2,7 @@
 #include <iostream>   
 #include <string>
 //Array to store longest prefix substring using KMP algorithm  
-int lps[10000];
+std::array<int,10000> lps;
   
 // Prints occurrences of txt[] in pat[] 
 void KMPSearch(std::string text, std::string pattern) 
