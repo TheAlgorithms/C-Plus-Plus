@@ -14,6 +14,16 @@
 #include <vector>
 
 /**
+ * @namespace sorting
+ * @brief Sorting algorithm
+ */
+namespace sorting {
+/**
+ * @namespace cycle_sort
+ * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
+ */
+namespace cycle_sort { 
+/**
  * @brief Interchange a and b
  * @param a the first entity
  * @param b the second entity
@@ -68,6 +78,8 @@ void cycleSort(std::vector<int> *arr) {
         }
     }
 }
+} // namespace cycle_sort
+} // namespace sorting
 
 /**
  * @brief Test implementations
@@ -77,7 +89,7 @@ static void test() {
     // [506, 48, 123, 79, 0, 362, 951, 500, 0] return [0, 0, 48, 79, 123, 362, 500, 506, 951]
     std::vector<int> array = {506, 48, 123, 79, 0, 362, 951, 500, 0};
     std::vector<int> *arr = &array;
-    cycleSort(arr);
+    sorting::cycle_sort::cycleSort(arr);
     std::cout << "Sorted : ";
     for (int i : *arr) std::cout << i << " ";
 }
