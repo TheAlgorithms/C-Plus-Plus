@@ -42,7 +42,7 @@ namespace dynamic_programming {
 
 /**
  * @namespace word_break
- * @brief Functions for Word Break algorithm
+ * @brief Functions for [Word Break](https://leetcode.com/problems/word-break/) problem
  */
 namespace word_break {
 
