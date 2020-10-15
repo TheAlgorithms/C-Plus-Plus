@@ -10,9 +10,6 @@
 #include <array>
 #include <iostream>
 
-#define inc_loop(var, start, stop) for (int var = start; var <= stop; var++)
-#define dec_loop(var, start, stop) for (int var = start; var >= stop; var--)
-
 /**
  * @namespace backtracking
  * @brief Backtracking algorithms
@@ -31,14 +28,18 @@ namespace n_queens_optimized {
  */
 template <size_t n>
 void PrintSol(const std::array<std::array<int, n>, n> &board) {
-  inc_loop(i, 0, n - 1) {
-    inc_loop(j, 0, n - 1) { std::cout << board[i][j] << " "; }
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      std::cout << board[i][j] << " ";
+    }
     std::cout << std::endl;
   }
   std::cout << std::endl;
   if (n % 2 == 0 || (n % 2 == 1 && board[n / 2 + 1][0] != 1)) {
-    inc_loop(i, 0, n - 1) {
-      dec_loop(j, n - 1, 0) { std::cout << board[i][j] << " "; }
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n; j++) {
+        std::cout << board[j][i] << " ";
+      }
       std::cout << std::endl;
     }
     std::cout << std::endl;
@@ -58,7 +59,7 @@ template <size_t n>
 bool CanIMove(const std::array<std::array<int, n>, n> &board, int row,
               int col) {
   /// check in the row
-  inc_loop(i, 0, col - 1) {
+  for (int i = 0; i <= col; i++) {
     if (board[row][i] == 1) {
       return false;
     }
@@ -90,7 +91,7 @@ void NQueenSol(std::array<std::array<int, n>, n> board, int col) {
     PrintSol<n>(board);
     return;
   }
-  inc_loop(i, 0, n - 1) {
+  for (int i = 0; i < n; i++) {
     if (CanIMove<n>(board, i, col)) {
       board[i][col] = 1;
       NQueenSol<n>(board, col + 1);
@@ -102,14 +103,15 @@ void NQueenSol(std::array<std::array<int, n>, n> board, int col) {
 } // namespace backtracking
 
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
   const int n = 4;
   std::array<std::array<int, n>, n> board{};
 
   if (n % 2 == 0) {
-    inc_loop(i, 0, n / 2 - 1) {
+    for (int i = 0; i <= n / 2 - 1; i++) { // 😎
       if (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {
         board[i][0] = 1;
         backtracking::n_queens_optimized::NQueenSol(board, 1);
@@ -117,7 +119,7 @@ int main() {
       }
     }
   } else {
-    inc_loop(i, 0, n / 2) {
+    for (int i = 0; i <= n / 2; i++) { // 😏
       if (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {
         board[i][0] = 1;
         backtracking::n_queens_optimized::NQueenSol(board, 1);
