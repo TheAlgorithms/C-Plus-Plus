@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief [Word Break Problem] (https://leetcode.com/problems/word-break/)
+ * @brief [Word Break Problem](https://leetcode.com/problems/word-break/)
  * @details
  * Given a non-empty string s and a dictionary wordDict containing a list of
  * non-empty words, determine if s can be segmented into a space-separated
