@@ -1,5 +1,7 @@
 /*____Garg's Code_____*/
 #include <iostream>
+#include <cstdio>
+#include <cstdlib>
 #include<memory>
 
 //Create a template class for Linked List implementation of stack
