@@ -1,9 +1,8 @@
 /**
  * @file
  *
- * @brief Calculates the cross product and the magnitude of two mathematical vectors from their direction ratios.
+ * @brief Calculates the [Cross Product](https://en.wikipedia.org/wiki/Cross_product) and the magnitude of two mathematical vectors from their direction ratios.
  *
- * @wikipedia_link [Cross Product](https://en.wikipedia.org/wiki/Cross_product)
  *
  * @details Cross Product of two vectors gives a vector.
  * Direction Ratios of a vector are the numeric parts of the given vector. They are the tree parts of the
