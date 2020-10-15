@@ -80,8 +80,8 @@ namespace math {
 			double magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));
 			return magnitude;
 		}
-	}
-}
+	} /// namespace vector_cross
+} /// namespace math
 
 /**
  * @brief Main Function
