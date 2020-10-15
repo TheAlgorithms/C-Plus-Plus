@@ -18,10 +18,13 @@
  * **/
 #include<iostream> 
 /**
- *  A sample differential equation "dy/dx = (x - y)/2" 
- * Can be any transcendental equation 
-
-**/
+ * The change() function is used 
+ * to return the updated iterative value corresponding 
+ * to the given function
+ * @param x is the value corresponding to the x coordinate
+ * @param y is the value corresponding to the y coordinate 
+ * @return the computed function value at that call
+ * **/
 double change(double x, double y) 
 { 
 	double val=((x - y)/2.0); 
@@ -29,9 +32,19 @@ double change(double x, double y)
 } 
 /**
  * 
- *  Finds value of y for 
+ *   The rungeKutta finds value of y for 
  * a given x using step size h 
  * and initial value initial x at initial y. 
+ * @param init_x is the value of initial x and is updated after each call
+ * @param init_y is the value of initial x and is updated after each call
+ * @param x is the given value of x
+ * @param h is the step value 
+ * @param n is the count of iterations
+ * @param k1 is the first variable of runge kutta method
+ * @param k2 is the second variable of runge kutta method
+ * @param k3 is the third variable of runge kutta method
+ * @param k4 is the fourth variable of runge kutta method
+ * @param y is the final value of y after solving the differential equation
 
  **/
 double rungeKutta(double init_x, double init_y, double x, double h) 
@@ -83,7 +96,13 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 } 
 
 /**
- *  Driver method 
+ *  The main() is the driver method to test the above functions
+ * @param x0 is the initial value of x
+ * @param y is the initial value of y
+ * @param x is the value of x for which corresponding y is to be computed
+ * @param h is the step variable
+ * @return 0 on exit status
+ * 
  * **/
 int main() 
 { 
