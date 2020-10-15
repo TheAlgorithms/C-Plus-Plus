@@ -1,5 +1,5 @@
 /**
- * @file vector_cross_product.cpp
+ * @file
  *
  * @brief Calculates the cross product and the magnitude of two mathematical vectors from their direction ratios.
  *
@@ -36,6 +36,8 @@
  *	Pass the second Vector: 4 5 6
  *	The cross product is: -3 6 -3
  *	Magnitude: 7.34847
+ *
+ * @author [Shreyas Sable](https://github.com/Shreyas-OwO)
  */
 
 #include <iostream>
@@ -43,9 +45,10 @@
 #include <cmath>
 
 /**
- * @brief cross() calculates the cross product of the passed arrays containing the direction ratios of the two mathematical vectors.
- * @param A and B, both of type std::array<double, 3>
- * @returns an array of type std::array<double, 3>
+ * @brief Function to calculate the cross product of the passed arrays containing the direction ratios of the two mathematical vectors.
+ * @param A type: std::array<double, 3> description: contains the direction ratios of the first mathematical vector.
+ * @param B type: std::array<double, 3> description: contains the direction ration of the second mathematical vector.
+ * @returns type: std::array<double, 3> description: contains the direction ratios of the cross product.
  */
 std::array<double, 3> cross(std::array<double, 3> A, std::array<double, 3> B) {
 	std::array<double, 3> product;
@@ -57,9 +60,9 @@ std::array<double, 3> cross(std::array<double, 3> A, std::array<double, 3> B) {
 }
 
 /**
- * @brief mag() calculates the magnitude of the mathematical vector from it's direction ratios.
- * @param an array of type std::array<double, 3>
- * @returns an array of type std::array<double, 3>
+ * @brief Calculates the magnitude of the mathematical vector from it's direction ratios.
+ * @param vec type: std::array<double, 3> description: an array containing the direction ratios of a mathematical vector.
+ * @returns type: double description: the magnitude of the mathematical vector from the given direction ratios.
  */
 double mag(std::array<double, 3> vec) {
 	double magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));
@@ -67,9 +70,9 @@ double mag(std::array<double, 3> vec) {
 }
 
 /**
- * @brief main() runs the program and asks the user to enter the direction ratios for each of the two mathematical vectors using std::cin.
- * @param none
- * @returns 0 on exit.
+ * @brief Main Function
+ * @details Asks the user to enter the direction ratios for each of the two mathematical vectors using std::cin
+ * @returns 0 on exit
  */
 int main() {
 	std::array<double, 3> vec1;
