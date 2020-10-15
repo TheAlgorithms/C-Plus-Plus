@@ -6,7 +6,7 @@
 #include <array>
 
 //Array to store longest prefix substring using KMP algorithm  
-std::array<int,10000> lps;
+std::array<int,10000> longest_prefix_suffix;
   
 // Prints occurrences of txt[] in pat[] 
 void KMPSearch(std::string text, std::string pattern) 
@@ -24,7 +24,7 @@ void KMPSearch(std::string text, std::string pattern)
   
         if (j == M) { 
             std::cout << "Found pattern at index " << (i - j); 
-            j = lps[j - 1]; 
+            j = longest_prefix_suffix[j - 1]; 
         } 
   
         // mismatch after j matches 
@@ -32,7 +32,7 @@ void KMPSearch(std::string text, std::string pattern)
             // Do not match lps[0..lps[j-1]] characters, 
             // they will match anyway 
             if (j != 0) 
-                j = lps[j - 1]; 
+                j = longest_prefix_suffix[j - 1]; 
             else
                 i = i + 1; 
         } 
@@ -49,14 +49,14 @@ int main()
     //KMP Algorithm
     int len = 0; 
   
-    lps[0] = 0; // lps[0] is always 0 
+    longest_prefix_suffix[0] = 0; // lps[0] is always 0 
     int M = pattern.length();
     // the loop calculates lps[i] for i = 1 to M-1 
     int i = 1; 
     while (i < M) { 
         if (pattern[i] == pattern[len]) { 
             len++; 
-            lps[i] = len; 
+            longest_prefix_suffix[i] = len; 
             i++; 
         } 
         else // (pat[i] != pat[len]) 
@@ -65,14 +65,14 @@ int main()
             // AAACAAAA and i = 7. The idea is similar 
             // to search step. 
             if (len != 0) { 
-                len = lps[len - 1]; 
+                len = longest_prefix_suffix[len - 1]; 
   
                 // Also, note that we do not increment 
                 // i here 
             } 
             else // if (len == 0) 
             { 
-                lps[i] = 0; 
+                longest_prefix_suffix[i] = 0; 
                 i++; 
             } 
         } 
