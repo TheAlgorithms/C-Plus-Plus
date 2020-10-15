@@ -1,7 +1,6 @@
 /*____Garg's Code_____*/
 #include <iostream>
 
-using namespace std;
 
 //Create a template class for Linked List implementation of stack
 template<class T>
@@ -30,6 +29,9 @@ class Stack
       minm = NULL;
       size = 0;
       start = NULL;
+      top = -1;
+      maximum = -1;
+      minimum = -1;
     }
     //Function for push operation
     void push(T no)
@@ -37,7 +39,7 @@ class Stack
       Node<T>* new_node = new Node<T>;
       if(new_node == NULL)
       {
-        cout << "Stack Overflow\n";
+        std::cout << "Stack Overflow\n";
       }
       Node<T> *new_max = new Node<T>;
       Node<T> *new_min = new Node<T>;
@@ -55,10 +57,10 @@ class Stack
       {
         new_node->link = start;
         start = new_node;
-        new_max->info = max(no, maxm->info);
+        new_max->info = std::max(no, maxm->info);
         new_max->link = maxm;
         maxm = new_max;
-        new_min->info = min(no, minm->info);
+        new_min->info = std::min(no, minm->info);
         new_min->link = minm;
         minm = new_min;
       }
@@ -74,7 +76,7 @@ class Stack
 
       if(size == 0)
       {
-        cout << "Stack Underflow\n";
+        std::cout << "Stack Underflow\n";
         return;
       }
       new_node = start;
@@ -100,33 +102,33 @@ class Stack
     {
       if(size == 0)
       {
-        cout << "Nothing to show, stack is empty!\n";
+        std::cout << "Nothing to show, stack is empty!\n";
       }
       else
       {
-        cout << top << endl;
+        std::cout << top << "\n";
       }
     }
     void show_max()
     {
       if(size == 0)
       {
-        cout << "Nothing to show, stack is empty!\n";
+        std::cout << "Nothing to show, stack is empty!\n";
       } 
       else
       {
-        cout << maximum << endl;
+        std::cout << maximum << "\n";
       }
     }
     void show_min()
     {
       if(size == 0)
       {
-        cout << "Nothing to show, stack is empty!\n";
+        std::cout << "Nothing to show, stack is empty!\n";
       } 
       else
       {
-        cout << minimum << endl;
+        std::cout << minimum << "\n";
       } 
     }
 };
