@@ -2,7 +2,8 @@
  *  \addtogroup sorting Sorting Algorithms
  *  @{
  *  \file
- *  \brief Wiggle Sort Algorithm Implmentation
+ *  \brief [Wiggle Sort Algorithm]
+ *  (https://khanhng.com/post/wiggle-sort/) Implementation
  *
  *  \author [Roshan Kanwar](http://github.com/roshan0708)
  *
@@ -18,67 +19,70 @@
 
 #include <iostream>
 
-/**
- *
- *  The swap() function is used for swapping two numbers.
- *
- *  @param x - first number
- *  @param y - second number
- *  @param temp - temporary variable
- *
- */
-
-void swap(int *x, int *y)
-{
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
-
-/**
- *
- *  The displayElements() function is used for printing the elements.
- *  Prints elements of the arr after they're sorted using wiggle sort algorithm.
- *
- *  @param arr - arr containing the sorted elements
- *
- */
-
-void displayElements(int *arr,int size) {
-
-    std::cout << "Sorted elements are as follows: ";
-
-    std::cout << "[";
-
-    for(int i = 0 ; i < size ; i++ ) {
-
-        std::cout << arr[i] ;
-        if(i != size - 1) {
-            std::cout << ", " ;
-        }
-
-    }
-
-    std::cout << "]"<<std::endl;
-
-}
-
-/**
- *
- *  The wiggleSort() function is used for sorting the elements in wave form.
- *  Checking whether the even indexed elements are greater than
- *  their adjacent odd elements.
- *  Traversing all even indexed elements of the input arr.
- *  If current element is smaller than the previous odd element, swap them.
- *  If current element is smaller than the next odd element, swap them.
- *
- *  @param arr - input arr (unsorted elements)
- *
- */
-
 class Algorithm {
 
    public:
+
+/**
+ *
+ *  @brief Used for swapping two numbers.
+ *
+ *  @param x first number
+ *  @param y second number
+ *
+ */
+
+   void swap(int *x, int *y) {
+
+       int temp = *x;
+       *x = *y;
+       *y = temp;
+
+   }
+
+/**
+ *
+ *  @brief Utility function used for printing the elements.
+ *  Prints elements of the array after they're sorted using wiggle sort algorithm.
+ *
+ *  @param arr array containing the sorted elements
+ *  @param size - size of the input array
+ *
+ */
+
+   void displayElements(int *arr,int size) {
+
+       std::cout << "Sorted elements are as follows: ";
+
+       std::cout << "[";
+
+       for(int i = 0 ; i < size ; i++ ) {
+           
+           std::cout << arr[i] ;
+           if(i != size - 1) {
+               std::cout << ", " ;
+           }
+
+       }
+
+       std::cout << "]"<<std::endl;
+
+   }
+
+ /**
+  *
+  * @brief Function used for sorting the elements in wave form.
+  * @details
+  * Checking whether the even indexed elements are greater than
+  * their adjacent odd elements.
+  * Traversing all even indexed elements of the input arr.
+  * If current element is smaller than the previous odd element, swap them.
+  * If current element is smaller than the next odd element, swap them.
+  *
+  * @param arr input array (unsorted elements)
+  * @param size - size of the input array
+  *
+  */   
 
    void wiggleSort(int *arr, int size) {
 
@@ -97,7 +101,11 @@ class Algorithm {
    }
 };
 
-/** Driver program to test above functions */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+
 int main() {
 
     int size;
@@ -116,7 +124,7 @@ int main() {
 
     Algorithm ob;
     (ob.wiggleSort(arr,size));
-    displayElements(arr,size);
+    (ob.displayElements(arr,size));
     delete[] arr;
     return 0;
 }
