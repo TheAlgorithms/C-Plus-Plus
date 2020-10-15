@@ -53,7 +53,7 @@ namespace word_break {
  * @param str the string to be searched
  * @param strSet unordered set of string, that is to be looked into
  * @returns `true` if str is present in strSet
- * @returns `false` otherwise
+ * @returns `false` if str is not present in strSet
  */
 bool exists(const std::string &str,
             const std::unordered_set<std::string> &strSet) {
