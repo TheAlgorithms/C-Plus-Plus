@@ -1,6 +1,8 @@
 /*____Garg's Code_____*/
 #include <iostream>
 #include <memory>
+#include <cstdio>
+#include <cstdlib>
 
 //Template class for node of Doubly Linked List
 template<class T>
