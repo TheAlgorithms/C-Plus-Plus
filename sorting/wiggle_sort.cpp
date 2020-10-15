@@ -18,7 +18,9 @@
  */
 
 #include <iostream>
-
+/**
+ * @brief contains various utility functions for completion of the wiggle sort algorithm
+ */
 class Algorithm {
 
    public:
@@ -105,9 +107,7 @@ class Algorithm {
  * @brief Main function
  * @returns 0 on exit
  */
-
 int main() {
-
     int size;
 
     std::cout << "Enter the number of elements : ";
