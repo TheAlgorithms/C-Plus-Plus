@@ -64,7 +64,8 @@ class Solution {
      * @param pos the index value at which we will segment string and test
      * further if it is correctly segmented at pos
      * @param dp the vector to memoize solution for each position
-     * @returns bool, true if str is present in strSet
+     * @returns `true` if str is present in strSet
+     * @returns `false` if
      */
     bool check(const string &s, const unordered_set<string> &strSet, int pos,
                vector<int> *dp) {
