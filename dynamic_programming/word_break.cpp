@@ -37,6 +37,16 @@ using std::unordered_set;
 using std::vector;
 
 /**
+ * @namespace dynamic_programming
+ * @brief Dynamic programming algorithms
+ */
+namespace dynamic_programming {
+/**
+ * @namespace word_break
+ * @brief Functions for Word Break algorithm
+ */
+namespace word_break {
+/**
  * @brief Solution class
  */
 class Solution {
