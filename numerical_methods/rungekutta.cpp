@@ -38,6 +38,7 @@ double change(double x, double y)
  * @param init_y is the value of initial x and is updated after each call
  * @param x is the given value of x
  * @param h is the step value 
+ * @returns the value of y at thr required value of x from the initial conditions
  **/
 double rungeKutta(double init_x, double init_y, double x, double h) 
 { 
