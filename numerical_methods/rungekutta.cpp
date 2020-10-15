@@ -52,7 +52,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 	  * n calucates the number of iterations
 	  * k1,k2,k3,k4 are the Runge Kutta variables 
 	  * used for calculation of y at each iteration
-	  * **/
+	  */
 	 int n = static_cast<int>((x - init_x) / h); 
     
 	double k1=0.0;
@@ -63,7 +63,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 
 	/**
 	 * Iterate for number of iterations 
-	 * **/
+	 */
 	double y = init_y; 
 	for (int i=1; i<=n; i++) 
 	{ 
@@ -71,7 +71,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 		 * 		
 		 *  Apply Runge Kutta Formulas 
 		 * to find next value of y 
-		 * **/
+		 */
 
 		k1 = h*change(init_x, y); 
 		k2 = h*change(init_x + 0.5*h, y + 0.5*k1); 
@@ -80,13 +80,13 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 
 		/**
 		 * Update next value of y 
-		 * **/
+		*/
 
 		y = y + (1.0/6.0)*(k1 + 2*k2 + 2*k3 + k4);
 
 		/**
 		 *  Update next value of x 
-		 * **/
+		 */
 		init_x = init_x + h; 
 	} 
 
