@@ -29,7 +29,7 @@ class DoublyLL
       Node<T> *new_back = new Node<T>;
       if(new_node == NULL)
       {
-        cout << "Memory Limit Exceeded!\n";
+        std::cout << "Memory Limit Exceeded!\n";
         return;
       }
       new_node->info = no;
