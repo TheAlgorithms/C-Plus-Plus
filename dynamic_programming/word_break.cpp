@@ -144,6 +144,9 @@ class Solution {
         return check(s, strSet, 0, &dp);
     }
 };
+}  // namespace word_break
+}  // namespace dynamic_programming
+
 
 /**
  * @brief Main function
