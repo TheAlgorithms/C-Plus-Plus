@@ -3,6 +3,8 @@
  *
  * @brief Calculates the cross product and the magnitude of two mathematical vectors from their direction ratios.
  *
+ * @wikipedia_link [Cross Product](https://en.wikipedia.org/wiki/Cross_product)
+ *
  * @details Cross Product of two vectors gives a vector.
  * Direction Ratios of a vector are the numeric parts of the given vector. They are the tree parts of the
  * vector which determine the magnitude (value) of the vector.
@@ -44,29 +46,42 @@
 #include <array>
 #include <cmath>
 
-/**
- * @brief Function to calculate the cross product of the passed arrays containing the direction ratios of the two mathematical vectors.
- * @param A type: std::array<double, 3> description: contains the direction ratios of the first mathematical vector.
- * @param B type: std::array<double, 3> description: contains the direction ration of the second mathematical vector.
- * @returns type: std::array<double, 3> description: contains the direction ratios of the cross product.
- */
-std::array<double, 3> cross(std::array<double, 3> A, std::array<double, 3> B) {
-	std::array<double, 3> product;
-	/// Performs the cross product as shown in @algorithm.
-	product[0] = (A[1] * B[2]) - (A[2] * B[1]);
-	product[1] = -((A[0] * B[2]) - (A[2] * B[0]));
-	product[2] = (A[0] * B[1]) - (A[1] * B[0]);
-	return product;
-}
+namespace math {
+	/**
+	 * @namespace math
+	 * @brief Math algorithms
+	 */
+	namespace vector_cross {
+		/**
+		 * @namespace vector_cross
+		 * @brief Functions for Vector Cross Product algorithms
+		 */
 
-/**
- * @brief Calculates the magnitude of the mathematical vector from it's direction ratios.
- * @param vec type: std::array<double, 3> description: an array containing the direction ratios of a mathematical vector.
- * @returns type: double description: the magnitude of the mathematical vector from the given direction ratios.
- */
-double mag(std::array<double, 3> vec) {
-	double magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));
-	return magnitude;
+		/**
+		 * @brief Function to calculate the cross product of the passed arrays containing the direction ratios of the two mathematical vectors.
+		 * @param A type: std::array<double, 3> description: contains the direction ratios of the first mathematical vector.
+		 * @param B type: std::array<double, 3> description: contains the direction ration of the second mathematical vector.
+		 * @returns type: std::array<double, 3> description: contains the direction ratios of the cross product.
+		 */
+		std::array<double, 3> cross(std::array<double, 3> A, std::array<double, 3> B) {
+			std::array<double, 3> product;
+			/// Performs the cross product as shown in @algorithm.
+			product[0] = (A[1] * B[2]) - (A[2] * B[1]);
+			product[1] = -((A[0] * B[2]) - (A[2] * B[0]));
+			product[2] = (A[0] * B[1]) - (A[1] * B[0]);
+			return product;
+		}
+
+		/**
+		 * @brief Calculates the magnitude of the mathematical vector from it's direction ratios.
+		 * @param vec type: std::array<double, 3> description: an array containing the direction ratios of a mathematical vector.
+		 * @returns type: double description: the magnitude of the mathematical vector from the given direction ratios.
+		 */
+		double mag(std::array<double, 3> vec) {
+			double magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));
+			return magnitude;
+		}
+	}
 }
 
 /**
@@ -87,11 +102,11 @@ int main() {
 	std::cin >> vec2[0] >> vec2[1] >> vec2[2];
 
 	/// Displays the output out.
-	std::array<double, 3> product = cross(vec1, vec2);
+	std::array<double, 3> product = math::vector_cross::cross(vec1, vec2);
 	std::cout << "\nThe cross product is: " << product[0] << " " << product[1] << " " << product[2] << std::endl;
 
 	/// Displays the magnitude of the cross product.
-	std::cout << "Magnitude: " << mag(product) << "\n" << std::endl;
+	std::cout << "Magnitude: " << math::vector_cross::mag(product) << "\n" << std::endl;
 
 	return 0;
 }
