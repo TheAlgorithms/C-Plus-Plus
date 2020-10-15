@@ -28,12 +28,12 @@
  * @author [Akshay Anand] (https://github.com/axayjha)
  */
 
+#include <cassert>
 #include <climits>
 #include <iostream>
 #include <string>
 #include <unordered_set>
 #include <vector>
-#include <cassert>
 
 /**
  * @namespace dynamic_programming
@@ -43,7 +43,8 @@ namespace dynamic_programming {
 
 /**
  * @namespace word_break
- * @brief Functions for [Word Break](https://leetcode.com/problems/word-break/) problem
+ * @brief Functions for [Word Break](https://leetcode.com/problems/word-break/)
+ * problem
  */
 namespace word_break {
 
@@ -165,7 +166,7 @@ static void test() {
     std::cout << dynamic_programming::word_break::wordBreak(s, wordDict)
               << std::endl;
     std::cout << "Test implementation passed!\n";
- }
+}
 /**
  * @brief Main function
  * @returns 0 on exit
