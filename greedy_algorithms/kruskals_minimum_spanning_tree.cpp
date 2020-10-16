@@ -1,10 +1,10 @@
 #include <iostream>
+#include <vector>
 
+constexpr int V = 6;
+constexpr int INFINITY = 99999;
 
-#define V 6
-#define INFINITY 99999
-
-int graph[V][V] = {{0, 4, 1, 4, INFINITY, INFINITY},
+std::vector< std::vector< int > >graph {{0, 4, 1, 4, INFINITY, INFINITY},
                    {4, 0, 3, 8, 3, INFINITY},
                    {1, 3, 0, INFINITY, 1, INFINITY},
                    {4, 8, INFINITY, 0, 5, 7},
