@@ -247,7 +247,7 @@ Here is the call graph for this function:</div>
 <dd>
 <code>false</code> otherwise </dd></dl>
 <div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                         {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> check = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int&gt;</a> q;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> current_edge = 0; current_edge &lt; <a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#aefea7ee87a708298c486d5a38ac628ef">n</a>; ++current_edge) {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[current_edge] == -1) {</div>
@@ -261,13 +261,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        <a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[neighbour] = (1 ^ <a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[current]);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        q.push(neighbour);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        check &amp;= (<a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[neighbour] != <a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[current]);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a> &amp;= (<a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[neighbour] != <a class="code" href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">side</a>[current]);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> check;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -282,6 +282,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="aclassgraph_1_1is__graph__bipartite_1_1_graph_html_ab0efcfa04fff8616aff0062522d1483f"><div class="ttname"><a href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#ab0efcfa04fff8616aff0062522d1483f">graph::is_graph_bipartite::Graph::adj</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; adj</div><div class="ttdoc">adj stores the graph as an adjacency list</div><div class="ttdef"><b>Definition:</b> is_graph_bipartite.cpp:56</div></div>
 <div class="ttc" id="aclassgraph_1_1is__graph__bipartite_1_1_graph_html_a9d10768f927baa8a4d4a5ffce295b6b6"><div class="ttname"><a href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6">graph::is_graph_bipartite::Graph::side</a></div><div class="ttdeci">std::vector&lt; int &gt; side</div><div class="ttdoc">stores the side of the vertex</div><div class="ttdef"><b>Definition:</b> is_graph_bipartite.cpp:58</div></div>
+<div class="ttc" id="aword__break_8cpp_html_a272b0f5cdb4e41fd6dee4538b808c06a"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a></div><div class="ttdeci">bool check(const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented from position 'pos',...</div><div class="ttdef"><b>Definition:</b> word_break.cpp:80</div></div>
 <div class="ttc" id="aclassgraph_1_1is__graph__bipartite_1_1_graph_html_aefea7ee87a708298c486d5a38ac628ef"><div class="ttname"><a href="../../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#aefea7ee87a708298c486d5a38ac628ef">graph::is_graph_bipartite::Graph::n</a></div><div class="ttdeci">int n</div><div class="ttdoc">size of the graph</div><div class="ttdef"><b>Definition:</b> is_graph_bipartite.cpp:53</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
