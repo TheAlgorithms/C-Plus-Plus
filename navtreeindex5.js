@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"dc/db5/text__search_8cpp.html":[9,0,15,10],
+"dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,15,10,0],
+"dc/dc5/paranthesis__matching_8cpp.html":[9,0,12,8],
+"dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[9,0,12,8,0],
+"dc/dc5/paranthesis__matching_8cpp.html#a6d25c7dfbfeb52c3cb9d1b56ab49b664":[9,0,12,8,3],
 "dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7":[9,0,12,8,5],
 "dc/dc5/paranthesis__matching_8cpp.html#aae41c72130114bf31204cde6873b6095":[9,0,12,8,4],
 "dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21":[9,0,12,8,2],
@@ -79,8 +84,8 @@ var NAVTREEINDEX5 =
 "dd/d65/lu__decompose_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[9,0,11,6,2],
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[9,0,11,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[9,0,11,6,1],
-"dd/d69/namespacerange__queries.html":[7,0,28],
 "dd/d69/namespacerange__queries.html":[8,0,9],
+"dd/d69/namespacerange__queries.html":[7,0,28],
 "dd/d81/namespacecaesar.html":[7,0,2],
 "dd/d91/class_fenwick_tree.html":[8,0,18],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[8,0,18,4],
@@ -200,7 +205,7 @@ var NAVTREEINDEX5 =
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[9,0,11,15,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,11,15,2],
 "df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[9,0,11,15,1],
-"df/dcb/namespacestrings.html":[7,0,37],
+"df/dcb/namespacestrings.html":[7,0,38],
 "df/dce/namespacegraph.html":[8,0,4],
 "df/dce/namespacegraph.html":[7,0,9],
 "df/dd0/queue__using__two__stacks_8cpp.html":[9,0,2,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[9,0,2,0],
 "files.html":[9,0],
 "functions.html":[8,3,0,0],
-"functions.html":[8,3,0],
-"functions_a.html":[8,3,0,1],
-"functions_b.html":[8,3,0,2],
-"functions_c.html":[8,3,0,3],
-"functions_d.html":[8,3,0,4],
-"functions_e.html":[8,3,0,5]
+"functions.html":[8,3,0]
 };

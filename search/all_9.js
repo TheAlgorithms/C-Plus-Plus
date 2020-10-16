@@ -27,7 +27,7 @@ var searchData=
   ['insertelement_756',['insertElement',['../d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9',1,'data_structures::SkipList']]],
   ['inserter_757',['inserter',['http://en.cppreference.com/w/cpp/iterator/inserter.html',0,'std']]],
   ['insertion_5fsort_2ecpp_758',['insertion_sort.cpp',['../dd/d0d/insertion__sort_8cpp.html',1,'']]],
-  ['insertionsort_759',['InsertionSort',['../de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1',1,'sorting::merge_insertion::InsertionSort()'],['../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9',1,'sorting::insertionSort(T *arr, int n)'],['../d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f',1,'sorting::insertionSort(std::vector&lt; T &gt; *arr)']]],
+  ['insertionsort_759',['insertionSort',['../d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9',1,'sorting::insertionSort(T *arr, int n)'],['../d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f',1,'sorting::insertionSort(std::vector&lt; T &gt; *arr)'],['../de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1',1,'sorting::merge_insertion::InsertionSort()']]],
   ['insertkey_760',['insertKey',['../d2/d05/class_min_heap.html#aef78f3384f5a0ae880ad0883d2d44b82',1,'MinHeap']]],
   ['int16_5ft_761',['int16_t',['http://en.cppreference.com/w/cpp/types/integer.html',0,'std']]],
   ['int32_5ft_762',['int32_t',['http://en.cppreference.com/w/cpp/types/integer.html',0,'std']]],
