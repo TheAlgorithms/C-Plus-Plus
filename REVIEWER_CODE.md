@@ -1,3 +1,7 @@
+# Guidelines for reviewers and maintainers
+
+Following are some guidelines for contributors who are providing reviews to the pull-requests.
+
 1. On any given pull-request, there only one reviewer should be active at a time. Once the reviewer is done, others may add short comments or any further reviews as needed. Again, one at a time.
 2. Assigning reviewers should be avoided unless the pull-request is for a particular task the reviewer is more proficient in.
 3. Any contributor who has had their code merged into the repo can provide with reviews as they have gone through the repo standards at least once before. The reviewer will be on a first-come-first serve basis.
