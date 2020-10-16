@@ -213,6 +213,7 @@
   * [Heavy Light Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/heavy_light_decomposition.cpp)
   * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
+  * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/sparse_table.cpp)
 
 ## Search
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
