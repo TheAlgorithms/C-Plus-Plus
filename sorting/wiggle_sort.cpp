@@ -43,11 +43,11 @@ namespace sorting {
         *
         */
         template<typename T>
-        void swap(T *x, T *y) {
+        void swap(T x, T y) {
 
-            T temp = *x;
-            *x = *y;
-            *y = temp;
+            T temp = x;
+            x = y;
+            y = temp;
 
         }
 
@@ -74,11 +74,11 @@ namespace sorting {
             for(int i = 0; i < size ; i +=2) {
 
                 if(i > 0 && out[i-1] > out[i]) {
-                    swap(out+i,out+i-1);
+                    swap(out[i],out[i-1]);
                 }
 
                 if(i < size - 1 && out[i] < out[i+1]) {
-                    swap(arr+i,arr+i+1);
+                    swap(arr[i],arr[i+1]);
                 }
 
             }
