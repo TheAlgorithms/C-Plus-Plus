@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['the_20algorithms_20_2d_20c_2b_2b_4639',['The Algorithms - C++',['../index.html',1,'']]],
-  ['todo_20list_4640',['Todo List',['../dd/da0/todo.html',1,'']]]
+  ['prime_20factorization_4640',['Prime factorization',['../d7/d7f/section.html',1,'']]]
 ];

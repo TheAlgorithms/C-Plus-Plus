@@ -74,5 +74,6 @@ var searchData=
   ['graphcoloring_689',['graphColoring',['../db/dc0/namespacebacktracking.html#a29360ddb1bad75caa61ec895b6e71986',1,'backtracking']]],
   ['greater_690',['greater',['http://en.cppreference.com/w/cpp/utility/functional/greater.html',0,'std']]],
   ['greater_5fequal_691',['greater_equal',['http://en.cppreference.com/w/cpp/utility/functional/greater_equal.html',0,'std']]],
-  ['grouping_692',['grouping',['http://en.cppreference.com/w/cpp/locale/moneypunct/grouping.html',0,'std::moneypunct_byname::grouping()'],['http://en.cppreference.com/w/cpp/locale/moneypunct/grouping.html',0,'std::moneypunct::grouping()'],['http://en.cppreference.com/w/cpp/locale/numpunct/grouping.html',0,'std::numpunct_byname::grouping()'],['http://en.cppreference.com/w/cpp/locale/numpunct/grouping.html',0,'std::numpunct::grouping()']]]
+  ['grouping_692',['grouping',['http://en.cppreference.com/w/cpp/locale/moneypunct/grouping.html',0,'std::moneypunct_byname::grouping()'],['http://en.cppreference.com/w/cpp/locale/moneypunct/grouping.html',0,'std::moneypunct::grouping()'],['http://en.cppreference.com/w/cpp/locale/numpunct/grouping.html',0,'std::numpunct_byname::grouping()'],['http://en.cppreference.com/w/cpp/locale/numpunct/grouping.html',0,'std::numpunct::grouping()']]],
+  ['guidelines_20for_20reviewers_20and_20maintainers_693',['Guidelines for reviewers and maintainers',['../dc/db4/md__r_e_v_i_e_w_e_r__c_o_d_e.html',1,'']]]
 ];

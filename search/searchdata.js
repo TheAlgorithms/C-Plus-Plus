@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "o",
   8: "_aehlmp",
   9: "mos",
-  10: "clpt"
+  10: "cglpt"
 };
 
 var indexSectionNames =
