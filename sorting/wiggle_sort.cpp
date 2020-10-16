@@ -36,6 +36,23 @@ namespace sorting {
 
         /**
         *
+        *  The swap() function is used for swapping two numbers.
+        *
+        *  @param x - first number
+        *  @param y - second number
+        *
+        */
+        template<typename T>
+        void swap(T *x, T *y) {
+
+            T temp = *x;
+            *x = *y;
+            *y = temp;
+
+        }
+
+        /**
+        *
         * @brief Function used for sorting the elements in wave form.
         * @details
         * Checking whether the even indexed elements are greater than
@@ -57,11 +74,11 @@ namespace sorting {
             for(int i = 0; i < size ; i +=2) {
 
                 if(i > 0 && out[i-1] > out[i]) {
-                    std::swap(out[i],out[i-1]);
+                    swap(out+i,out+i-1);
                 }
 
                 if(i < size - 1 && out[i] < out[i+1]) {
-                    std::swap(arr[i],arr[i+1]);
+                    swap(arr+i,arr+i+1);
                 }
 
             }
