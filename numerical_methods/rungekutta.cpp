@@ -78,23 +78,18 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 	double y = init_y; 
 	for (int i=1; i<=n; i++) 
 	{ 
-		
-				
+						
 		 // Apply Runge Kutta Formulas 
 		 // to find next value of y 
 		
-
 		k1 = h*change(init_x, y); 
 		k2 = h*change(init_x + 0.5*h, y + 0.5*k1); 
 		k3 = h*change(init_x + 0.5*h, y + 0.5*k2); 
 		k4 = h*change(init_x + h, y + k3); 
-
 		
 		// Update next value of y 
 		
-
 		y = y + (1.0/6.0)*(k1 + 2*k2 + 2*k3 + k4);
-
 		
 		// Update next value of x 
 		
