@@ -172,6 +172,9 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
+
+   test(); // call the test function :)
+
     // the complete string
     const std::string s = "applepenapple";
     // the dictionary to be used
