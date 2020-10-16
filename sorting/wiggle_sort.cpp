@@ -17,7 +17,7 @@
  * arr = [2,8,9,1,7], after wiggle sort arr will become equal to [8,2,9,1,7]
  */
 
-#include <iostream>
+#include <iostream>  /// for io operations
 
 /**
  * @namespace sorting
