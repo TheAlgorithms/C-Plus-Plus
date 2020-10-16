@@ -18,90 +18,100 @@
  */
 
 #include <iostream>
-/**
- * @brief contains various utility functions for completion of the wiggle sort algorithm
- */
-class Algorithm {
-
-   public:
 
 /**
- *
- *  @brief Used for swapping two numbers.
- *
- *  @param x first number
- *  @param y second number
- *
+ * @namespace sorting
+ * @brief Sorting algorithms
  */
+namespace sorting {
+    /**
+    * @namespace wiggle_sort
+    * @brief Functions for [Wiggle Sort](https://khanhng.com/post/wiggle-sort/) algorithm
+    */
+    namespace wiggle_sort {
+        /**
+        * @brief contains various utility functions for completion of the wiggle sort algorithm
+        */
+        class Algorithm {
 
-   void swap(int *x, int *y) {
+            public:
 
-       int temp = *x;
-       *x = *y;
-       *y = temp;
+                /**
+                *
+                *  @brief Used for swapping two numbers.
+                *
+                *  @param x first number
+                *  @param y second number
+                *
+                */
+                void swap(int *x, int *y) {
 
-   }
+                    int temp = *x;
+                    *x = *y;
+                    *y = temp;
 
-/**
- *
- *  @brief Utility function used for printing the elements.
- *  Prints elements of the array after they're sorted using wiggle sort algorithm.
- *
- *  @param arr array containing the sorted elements
- *  @param size - size of the input array
- *
- */
+                }
 
-   void displayElements(int *arr,int size) {
+                /**
+                *
+                *  @brief Utility function used for printing the elements.
+                *  Prints elements of the array after they're sorted using wiggle sort algorithm.
+                *
+                *  @param arr array containing the sorted elements
+                *  @param size - size of the input array
+                *
+                */
+                void displayElements(int *arr,int size) {
 
-       std::cout << "Sorted elements are as follows: ";
+                    std::cout << "Sorted elements are as follows: ";
 
-       std::cout << "[";
+                    std::cout << "[";
 
-       for(int i = 0 ; i < size ; i++ ) {
-           
-           std::cout << arr[i] ;
-           if(i != size - 1) {
-               std::cout << ", " ;
-           }
+                    for(int i = 0 ; i < size ; i++ ) {
 
-       }
+                        std::cout << arr[i] ;
+                        if(i != size - 1) {
+                            std::cout << ", " ;
+                        }
 
-       std::cout << "]"<<std::endl;
+                    }
 
-   }
+                    std::cout << "]"<<std::endl;
 
- /**
-  *
-  * @brief Function used for sorting the elements in wave form.
-  * @details
-  * Checking whether the even indexed elements are greater than
-  * their adjacent odd elements.
-  * Traversing all even indexed elements of the input arr.
-  * If current element is smaller than the previous odd element, swap them.
-  * If current element is smaller than the next odd element, swap them.
-  *
-  * @param arr input array (unsorted elements)
-  * @param size - size of the input array
-  *
-  */   
+                }
 
-   void wiggleSort(int *arr, int size) {
+                /**
+                *
+                * @brief Function used for sorting the elements in wave form.
+                * @details
+                * Checking whether the even indexed elements are greater than
+                * their adjacent odd elements.
+                * Traversing all even indexed elements of the input arr.
+                * If current element is smaller than the previous odd element, swap them.
+                * If current element is smaller than the next odd element, swap them.
+                *
+                * @param arr input array (unsorted elements)
+                * @param size - size of the input array
+                *
+                */
+                void wiggleSort(int *arr, int size) {
 
-       for(int i = 0; i < size ; i +=2) {
+                    for(int i = 0; i < size ; i +=2) {
 
-           if(i > 0 && arr[i-1] > arr[i]) {
-               swap(arr+i,arr+i-1);
-           }
+                        if(i > 0 && arr[i-1] > arr[i]) {
+                            swap(arr+i,arr+i-1);
+                        }
 
-           if(i < size - 1 && arr[i] < arr[i+1]) {
-               swap(arr+i,arr+i+1);
-           }
+                        if(i < size - 1 && arr[i] < arr[i+1]) {
+                            swap(arr+i,arr+i+1);
+                        }
 
-       }
+                    }
 
-   }
-};
+                }
+        };
+    }
+}
 
 /**
  * @brief Main function
@@ -122,7 +132,7 @@ int main() {
         std::cin >> arr[i];
     }
 
-    Algorithm ob;
+    sorting::wiggle_sort::Algorithm ob;
     (ob.wiggleSort(arr,size));
     (ob.displayElements(arr,size));
     delete[] arr;
