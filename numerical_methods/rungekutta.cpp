@@ -79,7 +79,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 	{ 
 						
 		 // Apply Runge Kutta Formulas 
-	ru	 // to find next value of y 
+		 // to find next value of y 
 		
 		k1 = h*change(init_x, y); 
 		k2 = h*change(init_x + 0.5*h, y + 0.5*k1); 
