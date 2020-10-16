@@ -17,7 +17,7 @@
  * conditions
  * There can be many such equations 
  * **/
-#include<iostream> 
+#include<iostream> /// for io operations
 /**
  * @namespace numerical_methods
  * @brief Numerical Methods
@@ -110,6 +110,6 @@ int main()
 	double y = 1;
 	double x = 2;
 	double h = 0.2; 
-	std::cout<<"The value of y at x is :"<< numerical_methods::runge_kutta::rungeKutta(x0, y, x, h); 
+	std::cout << "The value of y at x is :" << numerical_methods::runge_kutta::rungeKutta(x0, y, x, h); 
 	return 0; 
 } 
