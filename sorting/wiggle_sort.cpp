@@ -110,8 +110,8 @@ namespace sorting {
 
                 }
         };
-    }
-}
+    } // namespace wiggle_sort
+} // namespace sorting
 
 /**
  * @brief Main function
