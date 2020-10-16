@@ -111,7 +111,7 @@ namespace sort
  * Function to test the above algorithm
  * @returns none
  */
-    void test1(){
+    static void test1(){
         std::vector<int> ar = {432,234,143,332,123};
         sort::radix_sort::radix obj(ar);
         obj.radix_sort();
