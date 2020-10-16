@@ -9,7 +9,8 @@
  * Algorithm: https://cp-algorithms.com/graph/lca_binary_lifting.html
  *
  * Complexity:
- *   - Precomputation: \f$O(N \log N)\f$ where \f$N\f$ is the number of vertices in the tree
+ *   - Precomputation: \f$O(N \log N)\f$ where \f$N\f$ is the number of vertices
+ * in the tree
  *   - Query: \f$O(\log N)\f$
  *   - Space: \f$O(N \log N)\f$
  *
@@ -34,11 +35,11 @@
  *     lowest_common_ancestor(x, y) = lowest_common_ancestor(y, x)
  */
 
+#include <cassert>
 #include <iostream>
+#include <queue>
 #include <utility>
 #include <vector>
-#include <queue>
-#include <cassert>
 
 /**
  * \namespace graph
@@ -50,7 +51,7 @@ namespace graph {
  * Its vertices are indexed 0, 1, ..., N - 1.
  */
 class Graph {
-  public:
+ public:
     /**
      * \brief Populate the adjacency list for each vertex in the graph.
      * Assumes that evey edge is a pair of valid vertex indices.
@@ -58,7 +59,7 @@ class Graph {
      * @param N number of vertices in the graph
      * @param undirected_edges list of graph's undirected edges
      */
-    Graph(size_t N, const std::vector< std::pair<int, int> > &undirected_edges) {
+    Graph(size_t N, const std::vector<std::pair<int, int> > &undirected_edges) {
         neighbors.resize(N);
         for (auto &edge : undirected_edges) {
             neighbors[edge.first].push_back(edge.second);
@@ -70,19 +71,18 @@ class Graph {
      * Function to get the number of vertices in the graph
      * @return the number of vertices in the graph.
      */
-    int number_of_vertices() const {
-        return neighbors.size();
-    }
+    int number_of_vertices() const { return neighbors.size(); }
 
     /** \brief for each vertex it stores a list indicies of its neighbors */
-    std::vector< std::vector<int> > neighbors;
+    std::vector<std::vector<int> > neighbors;
 };
 
 /**
- * Representation of a rooted tree. For every vertex its parent is precalculated.
+ * Representation of a rooted tree. For every vertex its parent is
+ * precalculated.
  */
 class RootedTree : public Graph {
-  public:
+ public:
     /**
      * \brief Constructs the tree by calculating parent for every vertex.
      * Assumes a valid description of a tree is provided.
@@ -90,7 +90,8 @@ class RootedTree : public Graph {
      * @param undirected_edges list of graph's undirected edges
      * @param root_ index of the root vertex
      */
-    RootedTree(const std::vector< std::pair<int, int> > &undirected_edges, int root_)
+    RootedTree(const std::vector<std::pair<int, int> > &undirected_edges,
+               int root_)
         : Graph(undirected_edges.size() + 1, undirected_edges), root(root_) {
         populate_parents();
     }
@@ -106,7 +107,7 @@ class RootedTree : public Graph {
     /** \brief Index of the root vertex. */
     int root;
 
-  protected:
+ protected:
     /**
      * \brief Calculate the parents for all the vertices in the tree.
      * Implements the breadth first search algorithm starting from the root
@@ -135,7 +136,6 @@ class RootedTree : public Graph {
             }
         }
     }
-
 };
 
 /**
@@ -143,13 +143,13 @@ class RootedTree : public Graph {
  * queries of the lowest common ancestor of two given vertices in the tree.
  */
 class LowestCommonAncestor {
-  public:
+ public:
     /**
      * \brief Stores the tree and precomputs "up lifts".
      * @param tree_ rooted tree.
      */
-    explicit LowestCommonAncestor(const RootedTree& tree_) : tree(tree_) {
-      populate_up();
+    explicit LowestCommonAncestor(const RootedTree &tree_) : tree(tree_) {
+        populate_up();
     }
 
     /**
@@ -196,16 +196,16 @@ class LowestCommonAncestor {
     }
 
     /* \brief reference to the rooted tree this structure allows to query */
-    const RootedTree& tree;
+    const RootedTree &tree;
     /**
      * \brief for every vertex stores a list of its ancestors by powers of two
      * For each vertex, the first element of the corresponding list contains
      * the index of its parent. The i-th element of the list is an index of
      * the (2^i)-th ancestor of the vertex.
      */
-    std::vector< std::vector<int> > up;
+    std::vector<std::vector<int> > up;
 
-  protected:
+ protected:
     /**
      * Populate the "up" structure. See above.
      */
@@ -241,9 +241,8 @@ static void tests() {
      *            |
      *            9
      */
-    std::vector< std::pair<int, int> > edges = {
-      {7, 1}, {1, 5}, {1, 3}, {3, 6}, {6, 2}, {2, 9}, {6, 8}, {4, 3}, {0, 4}
-    };
+    std::vector<std::pair<int, int> > edges = {
+        {7, 1}, {1, 5}, {1, 3}, {3, 6}, {6, 2}, {2, 9}, {6, 8}, {4, 3}, {0, 4}};
     graph::RootedTree t(edges, 3);
     graph::LowestCommonAncestor lca(t);
     assert(lca.lowest_common_ancestor(7, 4) == 3);

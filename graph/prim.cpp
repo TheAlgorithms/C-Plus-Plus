@@ -5,7 +5,7 @@
 
 using PII = std::pair<int, int>;
 
-int prim(int x, const std::vector< std::vector<PII> > &graph) {
+int prim(int x, const std::vector<std::vector<PII> > &graph) {
     // priority queue to maintain edges with respect to weights
     std::priority_queue<PII, std::vector<PII>, std::greater<PII> > Q;
     std::vector<bool> marked(graph.size(), false);
@@ -40,7 +40,7 @@ int main() {
         return 0;
     }
 
-    std::vector< std::vector<PII> > graph(nodes);
+    std::vector<std::vector<PII> > graph(nodes);
 
     // Edges with their nodes & weight
     for (int i = 0; i < edges; ++i) {

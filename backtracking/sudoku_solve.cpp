@@ -22,7 +22,7 @@
  */
 namespace backtracking {
     /**
-     * Checks if it's possible to place a 'no'
+     * Checks if it's possible to place a number 'no'
      * @tparam V number of vertices in the array
      * @param mat matrix where numbers are saved
      * @param i current index in rows
@@ -34,14 +34,14 @@ namespace backtracking {
      */
     template <size_t V>
     bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, int no, int n) {
-        /// Row or col nahin hona chahiye
+        /// 'no' shouldn't be present in either row i or column j
         for (int x = 0; x < n; x++) {
             if (mat[x][j] == no || mat[i][x] == no) {
                 return false;
             }
         }
 
-        /// Subgrid mein nahi hona chahiye
+        /// 'no' shouldn't be present in the 3*3 subgrid
         int sx = (i / 3) * 3;
         int sy = (j / 3) * 3;
 
@@ -91,7 +91,7 @@ namespace backtracking {
     bool solveSudoku(std::array <std::array <int, V>, V> &mat, int i, int j) {
         /// Base Case
         if (i == 9) {
-            /// Solve kr chuke hain for 9 rows already
+            /// Solved for 9 rows already
             backtracking::printMat<V>(mat, 9);
             return true;
         }
@@ -109,17 +109,17 @@ namespace backtracking {
         /// Try to place every possible no
         for (int no = 1; no <= 9; no++) {
             if (backtracking::isPossible<V>(mat, i, j, no, 9)) {
-                /// Place the no - assuming solution aa jayega
+                /// Place the 'no' - assuming a solution will exist
                 mat[i][j] = no;
-                bool aageKiSolveHui = backtracking::solveSudoku<V>(mat, i, j + 1);
-                if (aageKiSolveHui) {
+                bool solution_found = backtracking::solveSudoku<V>(mat, i, j + 1);
+                if (solution_found) {
                     return true;
                 }
-                /// Nahin solve hui
+                /// Couldn't find a solution
                 /// loop will place the next no.
             }
         }
-        /// Sare no try kr liey, kisi se bhi solve nahi hui
+        /// Solution couldn't be found for any of the numbers provided
         mat[i][j] = 0;
         return false;
     }
