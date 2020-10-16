@@ -26,7 +26,7 @@ We are very happy that you consider implementing algorithms and data structures 
 #### Code
 
 - Please use the directory structure of the repository.
-- File extension for code should be `*.hpp` `*.cpp`.
+- File extension for code should be `*.hpp`, `*.h` or `*.cpp`.
 - Don't use **bits/stdc++.h** because this is quite Linux specific and slows down the compilation process.
 - Organize your code using **`struct`**, **`class`** and/or **`namespace`** keywords
 - If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
@@ -42,14 +42,14 @@ We are very happy that you consider implementing algorithms and data structures 
 - Make sure you put useful comments in your code.  Do not comment things that are obvious.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
 - If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.
-- Do not update `README.md` along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md
+- Do not update [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) along with other changes. First create an issue and then link to that issue in your pull request to suggest specific changes required to [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md).
 - The repository follows [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and auto-generates the [repository website](https://thealgorithms.github.io/C-Plus-Plus). Please ensure the code is documented in this structure. Sample implementation is given below.
 
 #### Test
 
 - Make sure to add examples and test cases in your main() function.
 - If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
-- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with expected output. Use `assert()` function to confirm that the tests will pass. Requires adding the `cassert` library.
+- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with expected output. Use `assert()` function to confirm that the tests will pass. Requires including the `cassert` header.
 
 #### Typical structure of a program
 
@@ -72,6 +72,7 @@ We are very happy that you consider implementing algorithms and data structures 
  * @namespace <check from other files in this repo>
  */
 namespace name {
+
 /**
  * Class documentation
  */
@@ -101,6 +102,7 @@ bool func(int param1, T param2) {
 
     return true;
 }
+} // namespace name
 
 /**
  * @brief Test implementations
@@ -214,7 +216,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 #### GitHub Actions
 
 - Enable GitHub Actions on your fork of the repository.
-After enabling it will execute `clang-tidy` and `clang-format` after every a push (not a commit).
+After enabling it will execute `clang-tidy` and `clang-format` after every push (not a commit).
   - Click on the tab "Actions", then click on the big green button to enable it.
 
 ![GitHub Actions](https://user-images.githubusercontent.com/51391473/94609466-6e925100-0264-11eb-9d6f-3706190eab2b.png)
