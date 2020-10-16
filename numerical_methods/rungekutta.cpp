@@ -2,23 +2,34 @@
  * \addtogroup Runge Kutta 4th Method for solving Differential equation
  * @{
  * \file
- * \brief Runge Kutta Method implementation
+ * \brief [Runge Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method implementation
  *
  * \author [Rudra Prasad Das](http://github.com/rudra697)
  *
  * \details
  * It solves the unknown value of y 
  * for a given value of x
- * only first order differential equations
+ * only first oreder differential equations
  * can be solved
  * \example
  * it solves dy/dx=(x-y)/2 at a 
  * given x for given initial 
  * conditions
  * There can be many such equations 
- */
+ * **/
 #include<iostream> 
 /**
+ * @namespace numerical_methods
+ * @brief Numerical Methods
+ */
+namespace numerical_methods {
+/**
+ * @namespace runge_kutta
+ * @brief Functions for [Runge Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method
+ */
+namespace runge_kutta {
+/**
+
  * @brief The change() function is used 
  * to return the updated iterative value corresponding 
  * to the given function
@@ -92,6 +103,8 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 
 	return y; 
 } 
+} // namespace runge_kutta
+} // namespace numerical_methods
 
 /**
  * @brief Main function
@@ -103,6 +116,6 @@ int main()
 	double y = 1;
 	double x = 2;
 	double h = 0.2; 
-	std::cout << "The value of y at x is :"<< rungeKutta(x0, y, x, h); 
+	std::cout<<"The value of y at x is :"<< numerical_methods::runge_kutta::rungeKutta(x0, y, x, h); 
 	return 0; 
 } 
