@@ -10,6 +10,8 @@
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
+#include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <vector>
 
@@ -25,12 +27,14 @@ namespace sorting {
 namespace cycle_sort { 
 /**
  * @brief Interchange a and b
+ * @tparam T type of entity
  * @param a the first entity
  * @param b the second entity
  * @returns void
  */
-void swap(int *a, int *b) {
-    int tmp = 0;
+template <typename T>
+void swap(T *a, T *b) {
+    T tmp = 0;
     tmp = *a;
     *a = *b;
     *b = tmp;
@@ -38,13 +42,15 @@ void swap(int *a, int *b) {
 
 /**
  * @brief The main function implements cycleSort
+ * @tparam T type of array
  * @param arr array to be sorted
  * @returns void
  */
-void cycleSort(std::vector<int> *arr) {
+template <typename T>
+void cycleSort(std::vector<T> *arr) {
     for (int cycle_start = 0; cycle_start <= (*arr).size() - 1; cycle_start++) {
         // initialize item
-        int item = (*arr)[cycle_start];
+        T item = (*arr)[cycle_start];
 
         // Count the number of elements smaller than item, this  number is the correct index of item.
         int pos = cycle_start;
@@ -87,11 +93,20 @@ void cycleSort(std::vector<int> *arr) {
  */
 static void test() {
     // [506, 48, 123, 79, 0, 362, 951, 500, 0] return [0, 0, 48, 79, 123, 362, 500, 506, 951]
-    std::vector<int> array = {506, 48, 123, 79, 0, 362, 951, 500, 0};
-    std::vector<int> *arr = &array;
-    sorting::cycle_sort::cycleSort(arr);
-    std::cout << "Sorted : ";
-    for (int i : *arr) std::cout << i << " ";
+    std::vector<int> array1 = {506, 48, 123, 79, 0, 362, 951, 500, 0};
+    std::vector<int> *arr1 = &array1;
+    std::cout << "Test 1... ";
+    sorting::cycle_sort::cycleSort(arr1);
+    assert(std::is_sorted(std::begin(*arr1), std::end(*arr1)));
+    std::cout << "passed" << std::endl;
+
+    // [4.3, -6.5, -7.4, 0, 2.7, 1.8] return [-7.4, -6.5, 0, 1.8, 2.7, 4.3]
+    std::vector<double> array2 = {4.3, -6.5, -7.4, 0, 2.7, 1.8};
+    std::vector<double> *arr2 = &array2;
+    std::cout << "Test 2... ";
+    sorting::cycle_sort::cycleSort(arr2);
+    assert(std::is_sorted(std::begin(*arr2), std::end(*arr2)));
+    std::cout << "passed" << std::endl;
 }
 
 /**
