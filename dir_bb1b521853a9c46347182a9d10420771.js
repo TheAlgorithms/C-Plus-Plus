@@ -9,6 +9,7 @@ var dir_bb1b521853a9c46347182a9d10420771 =
     [ "merge_insertion_sort.cpp", "de/d7b/merge__insertion__sort_8cpp.html", "de/d7b/merge__insertion__sort_8cpp" ],
     [ "merge_sort.cpp", "d5/df4/merge__sort_8cpp.html", "d5/df4/merge__sort_8cpp" ],
     [ "non_recursive_merge_sort.cpp", "d0/db6/non__recursive__merge__sort_8cpp.html", "d0/db6/non__recursive__merge__sort_8cpp" ],
+    [ "pancake_sort.cpp", "d3/d92/pancake__sort_8cpp.html", "d3/d92/pancake__sort_8cpp" ],
     [ "pigeonhole_sort.cpp", "dd/da8/pigeonhole__sort_8cpp.html", "dd/da8/pigeonhole__sort_8cpp" ],
     [ "quick_sort.cpp", "d1/d21/quick__sort_8cpp.html", "d1/d21/quick__sort_8cpp" ],
     [ "quick_sort_3.cpp", "d3/d4c/quick__sort__3_8cpp.html", "d3/d4c/quick__sort__3_8cpp" ],
