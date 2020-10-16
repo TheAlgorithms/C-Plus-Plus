@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+
 
 #define V 6
 #define INFINITY 99999
@@ -21,7 +21,7 @@ void findMinimumEdge() {
                 minIndex = j;
             }
         }
-        cout << i << "  -  " << minIndex << "\t" << graph[i][minIndex] << "\n";
+        std::cout << i << "  -  " << minIndex << "\t" << graph[i][minIndex] << std::endl;
     }
 }
 
