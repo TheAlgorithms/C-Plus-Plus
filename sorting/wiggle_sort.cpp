@@ -21,6 +21,7 @@
 #include <algorithm>
 #include <vector>
 #include <cassert>
+#include <ctime>
 
 /**
  * @namespace sorting
@@ -42,17 +43,17 @@ namespace sorting {
         * Traversing all even indexed elements of the input arr.
         * If current element is smaller than the previous odd element, swap them.
         * If current element is smaller than the next odd element, swap them.
-        * 
+        *
         * @param arr input array (unsorted elements)
         *
         */
         template<typename T> // this allows to have vectors of ints, double, float, etc
         std::vector<T> wiggleSort(const std::vector<T> &arr) {
 
-            uint32_t size = arr->size();
+            uint32_t size = arr.size();
 
             std::vector<T> out(arr); // create a copy of input vector. this way, the original input vector does not get modified. a sorted array is is returned.
-            
+
             for(int i = 0; i < size ; i +=2) {
 
                 if(i > 0 && out[i-1] > out[i]) {
@@ -82,7 +83,7 @@ namespace sorting {
 template<typename T>
 static void displayElements(const std::vector<T> &arr) {
 
-    uint32_t size = arr->size();
+    uint32_t size = arr.size();
 
     std::cout << "Sorted elements are as follows: ";
 
@@ -94,11 +95,11 @@ static void displayElements(const std::vector<T> &arr) {
         if(i != size - 1) {
             std::cout << ", " ;
         }
-        
+
     }
 
     std::cout << "]"<<std::endl;
-    
+
 }
 
 /**
@@ -110,19 +111,20 @@ static void test() {
     std::srand(std::time(nullptr)); // initialize random number generator
 
     std::vector<float> data1(100);
-    for (auto &d: data1)
-        // generate random numbers between -5.0 and 4.99
+    for (auto &d: data1) { // generate random numbers between -5.0 and 4.99
         d = float(std::rand() % 1000 - 500) / 100.f;
+    }
 
-    std::vector<T> sorted = sorting::wiggle_sort::wiggleSort(data1);
+    std::vector<float> sorted = sorting::wiggle_sort::wiggleSort(data1);
 
     displayElements(sorted);
 
-    for(uint32_t j = 0; j < data1.size(); j+=2)
+    for(uint32_t j = 0; j < data1.size(); j+=2) {
         assert(data1[j] <= data1[j+1] && data1[j+1] >= data1[j+2]); // check the validation condition
+    }
 
     std::cout << "Test 1 passed\n";
-    
+
 }
 
 /** Driver Code */
