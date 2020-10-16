@@ -1,0 +1,47 @@
+  
+#include<iostream>  // if iostream doesnt work try to put iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+int bsearch(int[],int ,int);
+int main()
+{
+int  ar[50],n,index,item;
+cout<<"Enter the size of  array\n";
+cin>>n;
+cout<<enter the array\n";
+for(int i=0;i<n;i++)
+{
+cin>>ar[i];
+}
+cout<<"Enter the elements to be search\n";
+cin>>item;
+index= bsearch(ar,n,item);
+if( index==-1)
+{
+cout<<"element is not found\n";
+}
+else
+{
+cout<<"the elements is found at positio"<<index<<"at postion"<<index+1;
+}
+return 0;
+}
+int lsearch(intar[],int size ,int item)
+{
+ int beg,last,mid;
+ beg=0; last= size-1;
+ while(beg<=last)
+ {
+ mid = (beg +last)/2;
+ if( item == ar[mid])
+ return mid;
+ elseif(item > sr[mid])
+ beg = mid+1;
+ else
+ last = mid - 1;
+ }
+ return -1;
+ }
+ 
+}
