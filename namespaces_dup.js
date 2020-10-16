@@ -33,6 +33,7 @@ var namespaces_dup =
     [ "search", "d9/dca/namespacesearch.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", null ],
+    [ "sparse_table", "d9/d55/namespacesparse__table.html", null ],
     [ "spirograph", "da/dd3/namespacespirograph.html", null ],
     [ "statistics", "d2/dcf/namespacestatistics.html", null ],
     [ "std", "d8/dcc/namespacestd.html", null ],

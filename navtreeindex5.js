@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"dc/db5/text__search_8cpp.html":[9,0,15,10],
 "dc/db5/text__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,15,10,0],
 "dc/dc5/paranthesis__matching_8cpp.html":[9,0,12,8],
 "dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[9,0,12,8,0],
@@ -205,7 +204,7 @@ var NAVTREEINDEX5 =
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[9,0,11,15,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,11,15,2],
 "df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[9,0,11,15,1],
-"df/dcb/namespacestrings.html":[7,0,38],
+"df/dcb/namespacestrings.html":[7,0,39],
 "df/dce/namespacegraph.html":[8,0,4],
 "df/dce/namespacegraph.html":[7,0,9],
 "df/dd0/queue__using__two__stacks_8cpp.html":[9,0,2,9],
@@ -248,6 +247,7 @@ var NAVTREEINDEX5 =
 "dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[9,0,8],
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[9,0,2,0],
 "files.html":[9,0],
+"functions.html":[8,3,0],
 "functions.html":[8,3,0,0],
-"functions.html":[8,3,0]
+"functions_a.html":[8,3,0,1]
 };

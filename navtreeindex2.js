@@ -1,12 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md43":[3,14],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md44":[3,15],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md45":[3,16],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md46":[3,17],
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md47":[3,18],
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html":[8,0,7,0,0],
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#a6ae98710503b894b843d01cb69d5490c":[8,0,7,0,0,1],
 "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#af06360122e20ce2ba32c574a27a20ba1":[8,0,7,0,0,0],
 "d5/d91/namespacesorting.html":[7,0,32],
 "d5/da1/structnode.html":[8,0,28],
@@ -147,7 +140,7 @@ var NAVTREEINDEX2 =
 "d6/d9d/large__factorial_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[9,0,10,17,0],
 "d6/d9d/large__factorial_8cpp.html#a3f93b60e229b6683e24c4754a7106ee8":[9,0,10,17,1],
 "d6/d9d/large__factorial_8cpp.html#a76aae4778fbe89a3d59fd61fbc050cfa":[9,0,10,17,2],
-"d6/da2/namespacevigenere.html":[7,0,40],
+"d6/da2/namespacevigenere.html":[7,0,41],
 "d6/db0/binomial__dist_8cpp.html":[9,0,13,2],
 "d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76":[9,0,13,2,4],
 "d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813":[9,0,13,2,0],
@@ -213,7 +206,7 @@ var NAVTREEINDEX2 =
 "d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[9,0,12,6,4],
 "d7/d35/matrix__exponentiation_8cpp.html#ae1d1ec9482079231e898236e2b23c9ba":[9,0,12,6,1],
 "d7/d35/matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,12,6,5],
-"d7/d47/namespace_x_o_r.html":[7,0,41],
+"d7/d47/namespace_x_o_r.html":[7,0,42],
 "d7/d65/shortest__common__supersequence_8cpp.html":[9,0,3,2],
 "d7/d65/shortest__common__supersequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[9,0,3,2,2],
 "d7/d65/shortest__common__supersequence_8cpp.html#ad2ee8d7e67da9f6eb85146b08dad95e6":[9,0,3,2,1],
@@ -249,5 +242,12 @@ var NAVTREEINDEX2 =
 "d7/d7c/classstatistics_1_1stats__computer1.html":[8,0,10,0],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92":[8,0,10,0,3],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a2a097b80909181880f13b54a264ed337":[8,0,10,0,5],
-"d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[8,0,10,0,0]
+"d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[8,0,10,0,0],
+"d7/d7c/classstatistics_1_1stats__computer1.html#a48c03a44c784eb6913ad186d34c302db":[8,0,10,0,7],
+"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a":[8,0,10,0,6],
+"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[8,0,10,0,1],
+"d7/d7c/classstatistics_1_1stats__computer1.html#ab2e69e75fe0da096bf61fa13420b43eb":[8,0,10,0,8],
+"d7/d7c/classstatistics_1_1stats__computer1.html#ab5b4bfecdf391cae7edb1fe98548b846":[8,0,10,0,4],
+"d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1":[8,0,10,0,2],
+"d7/d7f/section.html":[4]
 };
