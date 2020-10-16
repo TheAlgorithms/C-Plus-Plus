@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md53", null ],
-      [ "Features", "index.html#autotoc_md54", null ],
-      [ "Documentation", "index.html#autotoc_md55", null ],
-      [ "Contributions", "index.html#autotoc_md56", null ]
+      [ "Overview", "index.html#autotoc_md59", null ],
+      [ "Features", "index.html#autotoc_md60", null ],
+      [ "Documentation", "index.html#autotoc_md61", null ],
+      [ "Contributions", "index.html#autotoc_md62", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -99,7 +99,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -121,12 +121,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"d3/d24/qr__decomposition_8cpp.html",
-"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md46",
-"d7/d7c/classstatistics_1_1stats__computer1.html#ab2e69e75fe0da096bf61fa13420b43eb",
-"da/d8d/depth__first__search_8cpp.html#a2e6017a54d445819ede9adcf33240e1a",
-"dd/d0c/hamiltons__cycle_8cpp.html",
-"functions_v.html"
+"d3/d17/namespaceutil__functions.html",
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md43",
+"d7/d7c/classstatistics_1_1stats__computer1.html#a48c03a44c784eb6913ad186d34c302db",
+"da/d5a/class_complex.html#a820afcbb330df716577459d7a3aa3a1c",
+"dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7",
+"functions_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

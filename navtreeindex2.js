@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md43":[3,14],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md44":[3,15],
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md45":[3,16],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md46":[3,17],
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md47":[3,18],
 "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html":[8,0,7,0,0],
@@ -182,9 +185,9 @@ var NAVTREEINDEX2 =
 "d6/dd3/ode__midpoint__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[9,0,11,10,5],
 "d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[9,0,11,10,4],
 "d6/dd3/ode__midpoint__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[9,0,11,10,0],
-"d6/dd8/is__graph__bipartite_8cpp.html":[9,0,5,5],
-"d6/dd8/is__graph__bipartite_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[9,0,5,5,2],
-"d6/dd8/is__graph__bipartite_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,5,5,1],
+"d6/dd8/is__graph__bipartite_8cpp.html":[9,0,5,6],
+"d6/dd8/is__graph__bipartite_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[9,0,5,6,2],
+"d6/dd8/is__graph__bipartite_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,5,6,1],
 "d7/d00/list__array_8cpp.html":[9,0,2,7],
 "d7/d00/list__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[9,0,2,7,1],
 "d7/d1e/graph_2dijkstra_8cpp.html":[9,0,5,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "d7/d7c/classstatistics_1_1stats__computer1.html":[8,0,10,0],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92":[8,0,10,0,3],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a2a097b80909181880f13b54a264ed337":[8,0,10,0,5],
-"d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[8,0,10,0,0],
-"d7/d7c/classstatistics_1_1stats__computer1.html#a48c03a44c784eb6913ad186d34c302db":[8,0,10,0,7],
-"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a":[8,0,10,0,6],
-"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[8,0,10,0,1]
+"d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[8,0,10,0,0]
 };
