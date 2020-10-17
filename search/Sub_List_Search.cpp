@@ -184,12 +184,11 @@ void test_function2() {
 **/
   
 
-int main() 
+void main() 
 { 
 	
 	test_function1();
 	test_function2();
-
-	return 0; 
+ 
 } 
 
