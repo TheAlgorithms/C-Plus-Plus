@@ -28,8 +28,10 @@ void N_bonacci(int n,int m){
 		}
 		std::cout<<std::endl;
 }
-/// main function takes t as an input for t testcases 
-/// and for each testcase it takes n and m as input and prints N-Bonacci series
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
 	int t,n,i,m;
 	std::cout<<"Enter number of testcases :";
