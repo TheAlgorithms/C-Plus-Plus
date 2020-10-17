@@ -105,8 +105,6 @@ void gram_schmidt(int r, int c, double A[][10], double B[][10]){
     }
 }
 
-int r, c;
-
 static void test()
 {
     double a1[3][10] = {{1,0,1,0},{1,1,1,1},{0,1,2,1}};
@@ -172,6 +170,7 @@ static void test()
 
 int main()
 {
+    int r, c;
     test();
     cout << "Enter the dimension of your vectors"<<endl;
     cin >> c;
@@ -201,7 +200,7 @@ int main()
     for(int j = i+1; j < r; j++)
     {
     dot = fabs(dot_product(B[i], B[j], c));
-    if(dot > 0.1)
+    if(dot > 1)
     {
         flag = 0;
         break;
