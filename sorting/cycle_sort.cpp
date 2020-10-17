@@ -10,14 +10,14 @@
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <algorithm> /// for std::is_sorted
+#include <cassert>     /// for assert
+#include <iostream> /// for io operations
+#include <vector>    /// for std::vector 
 
 /**
  * @namespace sorting
- * @brief Sorting algorithm
+ * @brief Sorting algorithms
  */
 namespace sorting {
 /**
