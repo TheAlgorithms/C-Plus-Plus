@@ -110,7 +110,7 @@ static void test() {
     std::array<int, n2> weight2 = {24, 10, 10, 7};  // weight of each item
     std::array<int, n2> value2 = {24, 18, 18, 10};  // value of each item
     const int capacity2 = 25;                       // capacity of carrying bag
-    const int max_value2 = dynamic_programming::Knapsack::maxKnapsackValue(
+    const int max_value2 = dynamic_programming::knapsack::maxKnapsackValue(
         capacity2, weight2, value2);
     const int expected_max_value2 = 36;
     assert(max_value2 == expected_max_value2);
