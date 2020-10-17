@@ -1,3 +1,9 @@
+
+/**
+ * @file N-bonacci.cpp
+ * @brief Implementation of N-bonacci Series 
+ * @author [Neha Hasija](https://github.com/neha-hasija17)
+ */
 #include <iostream>
 #include <vector>
 /*
@@ -9,6 +15,10 @@
 *to be printed of the N-bonacci series
 */
 void N_bonacci(int n,int m){
+	 /**
+             * This function finds N-bonacci series for
+             * @param n value and @param m terms and prints the series
+             */        
 	std::vector<int> a(m,0); //we create an empty array of size m(number of terms to be printed)
 	int i;
 		a[n-1]=1;///we initialise the (n-1)th term as 1 which is the sum of preceding N zeros
