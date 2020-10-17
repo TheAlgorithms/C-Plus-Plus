@@ -106,7 +106,7 @@ void radix::step_ith(int cur_digit) {  // sorting according to current digit.
  * @brief Function to sort vector digit by digit.
  * @returns none
  */
-void radix ::radix_sort() {
+void radix::radix_sort() {
     int max_ele = get_max();
     for (int i = 1; max_ele / i > 0;
          i *= 10) {  // loop breaks when i > max_ele because no further digits
