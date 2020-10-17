@@ -36,7 +36,7 @@ namespace dynamic_programming {
  * @namespace Knapsack
  * @brief Implementation of 0-1 Knapsack problem
  */
-namespace Knapsack {
+namespace knapsack {
 /**
  * @brief Picking up all those items whose combined weight is below
  * given capacity and calculating value of those picked items.Trying all
