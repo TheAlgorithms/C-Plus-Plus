@@ -25,7 +25,7 @@
 */
 
 // header files
-#include <iostream>
+#include <iostream>  // for io operations
 #include <vector>
 /**
  * @namespace sort
