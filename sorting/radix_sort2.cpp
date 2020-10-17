@@ -31,7 +31,7 @@
  * @namespace sort
  * @brief Functions for sorting a vector of integers.
  */
-namespace sort {
+namespace sorting {
 /**
  * @namespace radix_sort
  * @brief Functions for sorting a vector of integers using radix sort algorithm.
