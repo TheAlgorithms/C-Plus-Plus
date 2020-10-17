@@ -77,7 +77,7 @@ class radix {
  * sorting.
  * @returns none
  */
-void radix ::step_ith(int cur_digit) {  // sorting according to current digit.
+void radix::step_ith(int cur_digit) {  // sorting according to current digit.
     std::vector<int> position(10, 0);
     for (int i = 0; i < n; i++) {
         position[(ar[i] / cur_digit) %
