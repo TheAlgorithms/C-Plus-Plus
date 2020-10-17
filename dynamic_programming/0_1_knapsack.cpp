@@ -85,7 +85,7 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
     // returning maximum value
     return maxValue[items][capacity];
 }
-}  // namespace Knapsack
+}  // namespace knapsack
 }  // namespace dynamic_programming
 
 /**
