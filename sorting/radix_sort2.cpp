@@ -23,17 +23,17 @@
 */
 
 // header files
-#include <iostream>
-#include <vector>
+#include <iostream> // for io operations
+#include <vector>   // for std::vector
 /**
- * @namespace sort
- * @brief Functions for sorting a vector of integers.
+ * @namespace sorting
+ * @brief Sorting algorithms
  */
-namespace sort
+namespace sorting
 {
 /**
  * @namespace radix_sort
- * @brief Functions for sorting a vector of integers using radix sort algorithm.
+ * @brief Functions for [Radix sort](https://en.wikipedia.org/wiki/Radix_sort) algorithm
  */
     namespace radix_sort
     {
@@ -74,7 +74,7 @@ namespace sort
  * @brief Function to sort vector according to current digit using stable sorting.
  * @returns none
  */
-    void radix :: step_ith(int cur_digit){                              // sorting according to current digit.
+    void radix::step_ith(int cur_digit){                              // sorting according to current digit.
         std::vector<int> position(10,0);
         for(int i = 0;i < n;i++){
             position[(ar[i]/cur_digit)%10]++;                           // counting frequency of 0-9 at cur_digit.
@@ -98,22 +98,22 @@ namespace sort
  * @brief Function to sort vector digit by digit.
  * @returns none
  */
-    void radix :: radix_sort(){
+    void radix::radix_sort(){
         int max_ele = get_max();
         for(int i = 1;max_ele/i > 0;i *= 10){                       // loop breaks when i > max_ele because no further digits left to makes changes in array.
             step_ith(i);
         }
     }
     }   // namespace radix_sort
-}   // namespace sort
+}   // namespace sorting
 
 /**
  * Function to test the above algorithm
  * @returns none
  */
-    void test1(){
+    static void test1(){
         std::vector<int> ar = {432,234,143,332,123};
-        sort::radix_sort::radix obj(ar);
+        sorting::radix_sort::radix obj(ar);
         obj.radix_sort();
         obj.show();
     }
@@ -121,9 +121,9 @@ namespace sort
  * Function to test the above algorithm
  * @returns none
  */
-    void test2(){
+    static void test2(){
         std::vector<int> ar = {213,3214,123,111,112,142,133,132,32,12,113};
-        sort::radix_sort::radix obj(ar);
+        sorting::radix_sort::radix obj(ar);
         obj.radix_sort();
         obj.show();
     }
@@ -134,7 +134,7 @@ namespace sort
 int main()
 {
     test1();
-    test2();
+    test2();    // execute the tests
     int n;
     std::cin>>n;
     std::vector<int> ar;
@@ -142,7 +142,7 @@ int main()
         int x;std::cin>>x;
         ar.push_back(x);
     }
-    sort::radix_sort::radix obj(ar);
+    sorting::radix_sort::radix obj(ar);
     obj.radix_sort();
     obj.show();
     return 0;
