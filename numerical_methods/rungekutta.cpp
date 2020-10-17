@@ -105,21 +105,21 @@ double rungeKutta(double init_x, double init_y, double x, double h)
  * @brief the functions are for self test
  * @returns void and prints the success of rungeKutta function
  */
-	void test1()
+	static void test1()
 	{
 		std::cout << "Test 1...." << "\n";
 		double valfirst=numerical_methods::runge_kutta::rungeKutta(2,3,4,0.2); // Tests the function with pre calculated values
 		assert(valfirst==3.10364);
 		std::cout << "Passed Test 1\n";
 	}
-	void test2()
+	static void test2()
 	{
 		std::cout << "Test 2...." << "\n";
 		double valsec=numerical_methods::runge_kutta::rungeKutta(1,2,5,0.1);  // The value of step changed
 		assert(valsec==3.406);
 		std::cout << "Passed Test 2\n";
 	}
-	void test3()
+	static void test3()
 	{
 		std::cout << "Test 3...." << "\n";
 		double valfirst=numerical_methods::runge_kutta::rungeKutta(-1,3,4,0.1); // Tested with negative value
@@ -135,6 +135,6 @@ int main()
 	std::cout << "The Runge Kutta function will be tested on the basis of precomputed values\n";
 	test1();
 	test2();
-	test3();
+	test3(); // Execute the tests
 	return 0; 
 } 
