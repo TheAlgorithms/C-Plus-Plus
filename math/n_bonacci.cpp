@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers) Series
+ * @brief Implementation of [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers)
+ * Series
  *
  * @details
  * In general, in N-bonacci sequence,
