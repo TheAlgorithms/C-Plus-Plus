@@ -145,6 +145,7 @@
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
   * [Power For Huge Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_for_huge_numbers.cpp)
+  * [Power Of Two](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_of_two.cpp)
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_factorization.cpp)
   * [Prime Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_numbers.cpp)
   * [Primes Up To Billion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/primes_up_to_billion.cpp)
