@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"df/dfb/minimax_8cpp.html":[10,0,0,2],
+"df/dfb/minimax_8cpp.html#a78540bcb5ef3473b2348cbc34748ec50":[10,0,0,2,1],
+"df/dfb/minimax_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,0,2,0],
+"dir_074119ce3a874b57120c49a0cc4bb5ad.html":[10,0,14],
+"dir_0eaa691bd54ab0922ca7f50599de6d22.html":[10,0,7],
+"dir_12552d7fa429bf94a2e32e5cf39f7e69.html":[10,0,5],
+"dir_19b2bf9199a15c634a08b1ede1dd896a.html":[10,0,15],
 "dir_296d53ceaeaa7e099814a6def439fe8a.html":[10,0,10],
 "dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html":[10,0,2],
 "dir_3343723ae086de42ee4ca9774da3a13f.html":[10,0,9],
@@ -70,8 +77,8 @@ var NAVTREEINDEX6 =
 "functions_x.html":[9,3,0,23],
 "functions_y.html":[9,3,0,24],
 "functions_~.html":[9,3,0,25],
-"globals.html":[10,1,0],
 "globals.html":[10,1,0,0],
+"globals.html":[10,1,0],
 "globals_a.html":[10,1,0,1],
 "globals_b.html":[10,1,0,2],
 "globals_c.html":[10,1,0,3],
@@ -130,12 +137,5 @@ var NAVTREEINDEX6 =
 "namespacemembers_type.html":[8,1,3],
 "namespacemembers_vars.html":[8,1,2],
 "namespaces.html":[8,0],
-"pages.html":[],
-"":[9,0,1,0],
-"":[9,0,6,0,0],
-"":[9,0,4,0],
-"":[9,0,9,0],
-"":[9,0,6,0],
-"":[9,0,3,0],
-"":[9,0,7,0]
+"pages.html":[]
 };

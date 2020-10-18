@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a35ab6f1b2840f89a858ca36b78739b69":[9,0,6,0,0,0,1],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a494d39f6c367071d1fd31b3c1caf1a7d":[9,0,6,0,0,0,10],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6385ad4d8186b8a74b17e4a8dc41da11":[9,0,6,0,0,0,6],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6c859e3737aa88b29854df0347b29f4e":[9,0,6,0,0,0,4],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8809e6df990f37c85c06474dd955cb2b":[9,0,6,0,0,0,5],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a891264e2eb1357b2b3282e5532250869":[9,0,6,0,0,0,7],
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8e4c57922478ccc2b7c6277c05608714":[9,0,6,0,0,0,8],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0":[9,0,6,0,0,0,3],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#acc6cfdcc9d6e5170340abae63234a442":[9,0,6,0,0,0,9],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ace9c37dd1322d3745de9713c90df8003":[9,0,6,0,0,0,11],
@@ -101,8 +108,8 @@ var NAVTREEINDEX5 =
 "dd/d65/lu__decompose_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[10,0,11,6,2],
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[10,0,11,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[10,0,11,6,1],
-"dd/d69/namespacerange__queries.html":[8,0,30],
 "dd/d69/namespacerange__queries.html":[9,0,9],
+"dd/d69/namespacerange__queries.html":[8,0,30],
 "dd/d81/namespacecaesar.html":[8,0,2],
 "dd/d91/class_fenwick_tree.html":[9,0,18],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[9,0,18,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX5 =
 "df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[10,0,10,23,0],
 "df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9":[10,0,10,23,2],
 "df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f":[10,0,10,23,3],
-"df/def/power__for__huge__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,23,1],
-"df/dfb/minimax_8cpp.html":[10,0,0,2],
-"df/dfb/minimax_8cpp.html#a78540bcb5ef3473b2348cbc34748ec50":[10,0,0,2,1],
-"df/dfb/minimax_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,0,2,0],
-"dir_074119ce3a874b57120c49a0cc4bb5ad.html":[10,0,14],
-"dir_0eaa691bd54ab0922ca7f50599de6d22.html":[10,0,7],
-"dir_12552d7fa429bf94a2e32e5cf39f7e69.html":[10,0,5],
-"dir_19b2bf9199a15c634a08b1ede1dd896a.html":[10,0,15]
+"df/def/power__for__huge__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,23,1]
 };
