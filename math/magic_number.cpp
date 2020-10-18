@@ -36,7 +36,7 @@ bool magic_number(int n) {
 /** Test function
  * @returns void
  */
-void tests() {
+static void tests() {
     std::cout << "Test 1:\t n=60\n";
     assert(magic_number(60) == false);
     std::cout << "passed\n";
