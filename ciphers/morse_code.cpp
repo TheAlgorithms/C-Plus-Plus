@@ -28,7 +28,7 @@ namespace morse {
 /**
  * Get the morse representation for given character.
  * @param c Character
- * @return morse representation string of character
+ * @returns morse representation string of character
  */
 std::string char_to_morse(const char &c) {
     // return corresponding morse code
