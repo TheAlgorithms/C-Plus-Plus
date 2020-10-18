@@ -239,7 +239,8 @@ std::string decrypt(const std::string &text) {
 }  // namespace ciphers
 
 /**
- * Function to test above algorithm
+ * @brief Function to test above algorithm
+ * @returns void
  */
 static void test() {
     // Test 1
