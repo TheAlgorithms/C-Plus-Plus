@@ -4,7 +4,8 @@
  * A number is said to be a magic number, if the sum of its digits are calculated 
  * till a single digit recursively by adding the sum of the digits after every addition. 
  * If the single digit comes out to be 1,then the number is a magic number.
- * @detail This is a shortcut method to verify Magic Number. 
+ *
+ * This is a shortcut method to verify Magic Number. 
  * On dividing the input by 9, if the remainder is 1 then the number is a magic number else not. 
  * The divisibility rule of 9 says that a number is divisible by 9 if the sum of its digits 
  * are also divisible by 9. Therefore, if a number is divisible by 9, then, recursively, 
