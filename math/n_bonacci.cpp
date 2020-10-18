@@ -3,8 +3,8 @@
  * @brief Implementation of N-bonacci Series
  * @author [Neha Hasija](https://github.com/neha-hasija17)
  */
-#include <iostream>
-#include <vector>
+#include <iostream>  /// for std::cout and std::cin
+#include <vector>   /// for std::vector
 /*
  *In general, in N-bonacci sequence,
  *we generate sum of preceding N numbers from the next term.
