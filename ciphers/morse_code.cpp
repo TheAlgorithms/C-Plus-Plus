@@ -211,7 +211,7 @@ std::string encrypt(const std::string &text) {
 /**
  * Decrypt given morse coded text.
  * @param text text to be decrypted
- * @return new decrypted text
+ * @returns new decrypted text
  */
 std::string decrypt(const std::string &text) {
     // Going through each character of text and converting it
