@@ -47,7 +47,7 @@ void power_of_two(int n){
  * @returns 0 on exit
  */
 int main() {
-    int n;
+    int n = 0;
     ///n stores the input from the user
     std::cout<<"enter a number "<<std::endl;
     std::cin>>n;
