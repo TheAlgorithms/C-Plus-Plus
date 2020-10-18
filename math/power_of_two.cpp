@@ -21,7 +21,9 @@
  
 #include <iostream>
 /**
- * Function to test above algorithm
+ * @brief Function to test above algorithm
+ * @param n description
+ * @returns void
  */
 void power_of_two(int n){
 	 /**
