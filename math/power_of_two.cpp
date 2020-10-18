@@ -42,7 +42,6 @@ void power_of_two(int n){
              
 }
 
-/** Driver Code */
 /**
  * @brief Main function
  * @returns 0 on exit
