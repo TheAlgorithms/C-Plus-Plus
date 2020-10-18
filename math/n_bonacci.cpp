@@ -1,5 +1,5 @@
 /**
- * @file N-bonacci.cpp
+ * @file
  * @brief Implementation of [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers) Series
  *
  * @details
