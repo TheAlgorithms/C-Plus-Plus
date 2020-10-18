@@ -1,5 +1,5 @@
 /**
- * @file magic_number.cpp
+ * @file
  * @brief A simple program to check if the given number is a magic number or not.
  * A number is said to be a magic number, if the sum of its digits are calculated 
  * till a single digit recursively by adding the sum of the digits after every addition. 
