@@ -12,14 +12,14 @@
 #include <iostream>
 #include <cassert>
 #include <cmath>
-
+#include <array>
 
 /*
     dot_product() function. Storing maths vector in Array
     and calculating it here.
 */
 
-double dot_product(double x[], double y[], int c) {
+double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
     sum += x[i] * y[i];
@@ -37,7 +37,8 @@ double dot_product(double x[], double y[], int c) {
    vector over 1st vector.
  */
 
-void projection(double x[], double y[], double temp[], int c) {
+void projection(std::array<double, 10> x, std::array<double, 10> y,
+                std::array<double, 10> temp, int c) {
   double dot = dot_product(x, y, c);
   double anorm = dot_product(y, y, c);
   double factor = dot / anorm;
@@ -50,13 +51,13 @@ void projection(double x[], double y[], double temp[], int c) {
    Function to print the orthogonalised vector
  */
 
-void display(int r, int c, double B[][10]) {
+void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
   for (int i = 0; i < r; i++) {
-    cout << "Vector " << i + 1 << ": ";
+    std::cout << "Vector " << i + 1 << ": ";
     for (int j = 0; j < c; j++) {
-      cout << B[i][j] << " ";
+      std::cout << B[i][j] << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
   }
 }
 
@@ -70,10 +71,12 @@ void display(int r, int c, double B[][10]) {
    Then, twe subtract total projection vector from the input vector
  */
 
-void gram_schmidt(int r, int c, double A[][10], double B[][10]) {
+void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
+                  std::array<std::array<double, 10>, 20> B) {
   if (c < r) {
-    cout << "Dimension of vector is less than number of vector, hence \n first "
-         << c << " vectors are orthogonalised" << endl;
+    std::cout
+        << "Dimension of vector is less than number of vector, hence \n first "
+        << c << " vectors are orthogonalised" << std::endl;
     r = c;
   }
 
@@ -81,15 +84,18 @@ void gram_schmidt(int r, int c, double A[][10], double B[][10]) {
 
   while (k <= r) {
     if (k == 1) {
-      for (int j = 0; j < c; j++) B[0][j] = A[0][j];}
+      for (int j = 0; j < c; j++) B[0][j] = A[0][j];
+    }
+
     else {
-      double all_projection[c];
+      std::array<double, 10> all_projection;
       for (int i = 0; i < c; i++) {
         all_projection[i] = 0;
       }
+
       int l = 1;
       while (l < k) {
-        double temp[c];
+        std::array<double, 10> temp;
         projection(A[k - 1], B[l - 1], temp, c);
         for (int j = 0; j < c; j++) {
           all_projection[j] = all_projection[j] + temp[j];
@@ -99,14 +105,16 @@ void gram_schmidt(int r, int c, double A[][10], double B[][10]) {
       for (int i = 0; i < c; i++) {
         B[k - 1][i] = A[k - 1][i] - all_projection[i];
       }
-      }
-    k++;
     }
+    k++;
+  }
+  display(r, c, B);
 }
 
 static void test() {
-  double a1[3][10] = {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}};
-  double b1[3][10] = {{0}};
+  std::array<std::array<double, 10>, 20> a1 = {
+      {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
+  std::array<std::array<double, 10>, 20> b1 = {{0}};
   double dot1;
   gram_schmidt(3, 4, a1, b1);
   int flag = 1;
@@ -118,13 +126,12 @@ static void test() {
         break;
       }
     }
-  if (flag == 0) cout << "Vectors are linearly dependent " << endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
   assert(flag == 1);
-  cout << "Passed Test Case 1 " << endl;
-  display(3, 4, b1);
+  std::cout << "Passed Test Case 1 " << std::endl;
 
-  double a2[2][10] = {{3, 1}, {2, 2}};
-  double b2[2][10] = {{0}};
+  std::array<std::array<double, 10>, 20> a2 = {{{3, 1}, {2, 2}}};
+  std::array<std::array<double, 10>, 20> b2 = {{0}};
   double dot2;
   gram_schmidt(2, 2, a2, b2);
   flag = 1;
@@ -136,13 +143,12 @@ static void test() {
         break;
       }
     }
-  if (flag == 0) cout << "Vectors are linearly dependent " << endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
   assert(flag == 1);
-  cout << "Passed Test Case 2 " << endl;
-  display(2, 2, b2);
+  std::cout << "Passed Test Case 2 " << std::endl;
 
-  double a3[2][10] = {{1, 2, 2}, {-4, 3, 2}};
-  double b3[2][10] = {{0}};
+  std::array<std::array<double, 10>, 20> a3 = {{{1, 2, 2}, {-4, 3, 2}}};
+  std::array<std::array<double, 10>, 20> b3 = {{0}};
   double dot3;
   gram_schmidt(2, 3, a3, b3);
   flag = 1;
@@ -154,34 +160,35 @@ static void test() {
         break;
       }
     }
-  if (flag == 0) cout << "Vectors are linearly dependent " << endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
   assert(flag == 1);
-  cout << "Passed Test Case 3 " << endl;
-  display(2, 3, b3);
+  std::cout << "Passed Test Case 3 " << std::endl;
 }
 
 int main() {
   int r, c;
   test();
-  cout << "Enter the dimension of your vectors" << endl;
-  cin >> c;
-  cout << "Enter the number of vectors you will enter " << endl;
-  cin >> r;
+  std::cout << "Enter the dimension of your vectors" << std::endl;
+  std::cin >> c;
+  std::cout << "Enter the number of vectors you will enter " << std::endl;
+  std::cin >> r;
 
-  double A[20][10];          // a 2-D array for storing all vectors
-  double B[20][10] = {{0}};  // a 2-D array for storing orthogonalised vectors
+  std::array<std::array<double, 10>, 20>
+      A;  // a 2-D array for storing all vectors
+  std::array<std::array<double, 10>, 20> B = {
+      {0}};  // a 2-D array for storing orthogonalised vectors
   // storing vectors in array A
   for (int i = 0; i < r; i++) {
-    cout << "Enter vector " << i + 1 << endl;
+    std::cout << "Enter vector " << i + 1 << std::endl;
     for (int j = 0; j < c; j++) {
-      cout << "Value " << j + 1 << "th of vector: ";
-      cin >> A[i][j];
+      std::cout << "Value " << j + 1 << "th of vector: ";
+      std::cin >> A[i][j];
     }
-    cout << endl;
+    std::cout << std::endl;
   }
 
   gram_schmidt(r, c, A, B);
-  display(r, c, B);
+
   double dot = 0;
   int flag = 1;
   for (int i = 0; i < r - 1; i++) {
@@ -193,5 +200,5 @@ int main() {
       }
     }
   }
-  if (flag == 0) cout << "Vectors are linearly dependent " << endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
 }
