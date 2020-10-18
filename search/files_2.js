@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['caesar_5fcipher_2ecpp_2809',['caesar_cipher.cpp',['../d6/d2c/caesar__cipher_8cpp.html',1,'']]],
-  ['chaining_2ecpp_2810',['chaining.cpp',['../d9/d92/chaining_8cpp.html',1,'']]],
-  ['check_5famicable_5fpair_2ecpp_2811',['check_amicable_pair.cpp',['../d5/df6/check__amicable__pair_8cpp.html',1,'']]],
-  ['check_5ffactorial_2ecpp_2812',['check_factorial.cpp',['../d8/dd5/check__factorial_8cpp.html',1,'']]],
-  ['check_5fprime_2ecpp_2813',['check_prime.cpp',['../db/d93/check__prime_8cpp.html',1,'']]],
-  ['comb_5fsort_2ecpp_2814',['comb_sort.cpp',['../d9/dfd/comb__sort_8cpp.html',1,'']]],
-  ['complex_5fnumbers_2ecpp_2815',['complex_numbers.cpp',['../d5/d67/complex__numbers_8cpp.html',1,'']]],
-  ['connected_5fcomponents_2ecpp_2816',['connected_components.cpp',['../df/ddd/connected__components_8cpp.html',1,'']]],
-  ['cut_5frod_2ecpp_2817',['cut_rod.cpp',['../d6/d10/cut__rod_8cpp.html',1,'']]]
+  ['bayes_5ftheorem_2ecpp_2801',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],
+  ['binary_5fexponent_2ecpp_2802',['binary_exponent.cpp',['../de/dcf/binary__exponent_8cpp.html',1,'']]],
+  ['binary_5fsearch_2ecpp_2803',['binary_search.cpp',['../df/dd5/binary__search_8cpp.html',1,'']]],
+  ['binary_5fsearch_5ftree_2ecpp_2804',['binary_search_tree.cpp',['../d3/d26/binary__search__tree_8cpp.html',1,'']]],
+  ['binaryheap_2ecpp_2805',['binaryheap.cpp',['../de/dc3/binaryheap_8cpp.html',1,'']]],
+  ['binomial_5fdist_2ecpp_2806',['binomial_dist.cpp',['../d6/db0/binomial__dist_8cpp.html',1,'']]],
+  ['bisection_5fmethod_2ecpp_2807',['bisection_method.cpp',['../d7/d6a/bisection__method_8cpp.html',1,'']]],
+  ['bogo_5fsort_2ecpp_2808',['bogo_sort.cpp',['../d5/ddb/bogo__sort_8cpp.html',1,'']]],
+  ['breadth_5ffirst_5fsearch_2ecpp_2809',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
+  ['brent_5fmethod_5fextrema_2ecpp_2810',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
+  ['brute_5fforce_5fstring_5fsearching_2ecpp_2811',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
+  ['bubble_5fsort_2ecpp_2812',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
+  ['buzz_5fnumber_2ecpp_2813',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];

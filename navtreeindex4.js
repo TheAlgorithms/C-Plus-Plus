@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5":[10,0,16,2,1],
 "da/d23/eulers__totient__function_8cpp.html":[10,0,10,7],
 "da/d23/eulers__totient__function_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,10,7,0],
 "da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0":[10,0,10,7,1],
@@ -84,8 +85,8 @@ var NAVTREEINDEX4 =
 "da/dd1/structquadratic__probing_1_1_entry.html":[9,0,8,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,8,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[9,0,8,0,0],
-"da/dd3/namespacespirograph.html":[8,0,35],
-"da/dd4/namespacemedian__search.html":[8,0,19],
+"da/dd3/namespacespirograph.html":[8,0,36],
+"da/dd4/namespacemedian__search.html":[8,0,20],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[10,0,12,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[10,0,12,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[10,0,11,2],
@@ -117,6 +118,10 @@ var NAVTREEINDEX4 =
 "db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,24,0],
 "db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe":[10,0,10,24,5],
 "db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099":[10,0,10,24,2],
+"db/d16/0__1__knapsack_8cpp.html":[10,0,3,0],
+"db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1":[10,0,3,0,1],
+"db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,3,0,2],
+"db/d16/0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,0,0],
 "db/d19/structlinear__probing_1_1_entry.html":[9,0,5,0],
 "db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77":[9,0,5,0,0],
 "db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a":[9,0,5,0,1],
@@ -195,9 +200,9 @@ var NAVTREEINDEX4 =
 "db/da9/classqueue.html#ad215eee654953d25150bb25d5ac12b7c":[9,0,33,1],
 "db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5":[9,0,33,9],
 "db/dc0/namespacebacktracking.html":[8,0,1],
-"db/dca/kadane2_8cpp.html":[10,0,3,1],
-"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,1,0],
-"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[10,0,3,1,1],
+"db/dca/kadane2_8cpp.html":[10,0,3,2],
+"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,2,0],
+"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[10,0,3,2,1],
 "db/dd3/ode__forward__euler_8cpp.html":[10,0,11,9],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,9,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[10,0,11,9,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6c859e3737aa88b29854df0347b29f4e":[9,0,6,0,0,0,4],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8809e6df990f37c85c06474dd955cb2b":[9,0,6,0,0,0,5],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a891264e2eb1357b2b3282e5532250869":[9,0,6,0,0,0,7],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8e4c57922478ccc2b7c6277c05608714":[9,0,6,0,0,0,8],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0":[9,0,6,0,0,0,3],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#acc6cfdcc9d6e5170340abae63234a442":[9,0,6,0,0,0,9],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ace9c37dd1322d3745de9713c90df8003":[9,0,6,0,0,0,11],
-"dc/d93/trie__modern_8cpp.html":[10,0,2,12],
-"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,2,12,2]
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8e4c57922478ccc2b7c6277c05608714":[9,0,6,0,0,0,8]
 };

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['hamiltons_5fcycle_2ecpp_2846',['hamiltons_cycle.cpp',['../dd/d0c/hamiltons__cycle_8cpp.html',1,'']]],
-  ['happy_5fnumber_2ecpp_2847',['happy_number.cpp',['../db/df3/happy__number_8cpp.html',1,'']]],
-  ['hash_5fsearch_2ecpp_2848',['hash_search.cpp',['../d1/df3/hash__search_8cpp.html',1,'']]],
-  ['heap_5fsort_2ecpp_2849',['heap_sort.cpp',['../d2/d52/heap__sort_8cpp.html',1,'']]],
-  ['heavy_5flight_5fdecomposition_2ecpp_2850',['heavy_light_decomposition.cpp',['../d2/de9/heavy__light__decomposition_8cpp.html',1,'']]],
-  ['hill_5fcipher_2ecpp_2851',['hill_cipher.cpp',['../d7/db9/hill__cipher_8cpp.html',1,'']]],
-  ['hopcroft_5fkarp_2ecpp_2852',['hopcroft_karp.cpp',['../d1/d9a/hopcroft__karp_8cpp.html',1,'']]],
-  ['horspool_2ecpp_2853',['horspool.cpp',['../d3/dfe/horspool_8cpp.html',1,'']]]
+  ['gaussian_5felimination_2ecpp_2844',['gaussian_elimination.cpp',['../d0/de2/gaussian__elimination_8cpp.html',1,'']]],
+  ['gcd_5fiterative_5feuclidean_2ecpp_2845',['gcd_iterative_euclidean.cpp',['../d4/da0/gcd__iterative__euclidean_8cpp.html',1,'']]],
+  ['gcd_5fof_5fn_5fnumbers_2ecpp_2846',['gcd_of_n_numbers.cpp',['../d1/d11/gcd__of__n__numbers_8cpp.html',1,'']]],
+  ['gcd_5frecursive_5feuclidean_2ecpp_2847',['gcd_recursive_euclidean.cpp',['../d4/d45/gcd__recursive__euclidean_8cpp.html',1,'']]],
+  ['gnome_5fsort_2ecpp_2848',['gnome_sort.cpp',['../d2/d21/gnome__sort_8cpp.html',1,'']]],
+  ['golden_5fsearch_5fextrema_2ecpp_2849',['golden_search_extrema.cpp',['../d6/d7a/golden__search__extrema_8cpp.html',1,'']]],
+  ['graph_5fcoloring_2ecpp_2850',['graph_coloring.cpp',['../d3/d40/graph__coloring_8cpp.html',1,'']]]
 ];

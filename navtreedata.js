@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md59", null ],
-      [ "Features", "index.html#autotoc_md60", null ],
-      [ "Documentation", "index.html#autotoc_md61", null ],
-      [ "Contributions", "index.html#autotoc_md62", null ]
+      [ "Overview", "index.html#autotoc_md60", null ],
+      [ "Features", "index.html#autotoc_md61", null ],
+      [ "Documentation", "index.html#autotoc_md62", null ],
+      [ "Contributions", "index.html#autotoc_md63", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -125,9 +125,9 @@ var NAVTREEINDEX =
 "d3/d26/binary__search__tree_8cpp.html#a1ca1e6aad9a9e45c1d21a7c8f61bccc3",
 "d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md39",
 "d7/d77/class_edge.html#ae017097dd21663a9dc3387c23789c92e",
-"da/d23/eulers__totient__function_8cpp.html",
-"dc/db4/md__r_e_v_i_e_w_e_r__c_o_d_e.html",
-"dir_82e494173a87936756866de2fa774307.html"
+"d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5",
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0",
+"dir_296d53ceaeaa7e099814a6def439fe8a.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
