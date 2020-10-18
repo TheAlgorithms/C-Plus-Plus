@@ -113,7 +113,7 @@ std::string char_to_morse(const char &c) {
 /**
  * Get character from the morse representation.
  * @param s Morse representation
- * @return corresponding character
+ * @returns corresponding character
  */
 char morse_to_char(const std::string &s) {
     // return corresponding character
