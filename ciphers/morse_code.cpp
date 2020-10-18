@@ -197,7 +197,7 @@ char morse_to_char(const std::string &s) {
 /**
  * Encrypt given text using morse code.
  * @param text text to be encrypted
- * @return new encrypted text
+ * @returns new encrypted text
  */
 std::string encrypt(const std::string &text) {
     std::string encrypted_text = "";  // Empty string to store encrypted text
