@@ -14,6 +14,10 @@
  * to point to the node that the current node is pointing to, and then returning
  * the current node to heap store.
  */
+
+/* Just write namespace instead of writing in every line
+*/
+using namespace std;
 #include <iostream>
 #include <memory>
 #include <string>
