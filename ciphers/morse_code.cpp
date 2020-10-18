@@ -1,18 +1,19 @@
 /**
  * @file
  * @author [Deep Raval](https://github.com/imdeep2905)
- * 
- * @brief Implementation of [Morse Code] (https://en.wikipedia.org/wiki/Morse_code).
+ *
+ * @brief Implementation of [Morse Code]
+ * (https://en.wikipedia.org/wiki/Morse_code).
  *
  * @details
- * Morse code is a method used in telecommunication to encode text characters 
- * as standardized sequences of two different signal durations, called dots 
- * and dashes or dits and dahs. Morse code is named after Samuel Morse, an 
+ * Morse code is a method used in telecommunication to encode text characters
+ * as standardized sequences of two different signal durations, called dots
+ * and dashes or dits and dahs. Morse code is named after Samuel Morse, an
  * inventor of the telegraph.
  */
+#include <cassert>
 #include <iostream>
 #include <string>
-#include <cassert>
 #include <vector>
 
 /** \namespace ciphers
@@ -20,70 +21,70 @@
  */
 namespace ciphers {
 /** \namespace morse
- * \brief Functions for [Morse Code] 
+ * \brief Functions for [Morse Code]
  * (https://en.wikipedia.org/wiki/Morse_code).
  */
 namespace morse {
 /**
  * Get the morse representation for given character.
- * @param c Character 
- * @return morse representation string of character 
+ * @param c Character
+ * @return morse representation string of character
  */
 std::string char_to_morse(const char &c) {
     // return corresponding morse code
-      switch (c) { 
-        case 'a': 
-            return ".-"; 
-        case 'b': 
-            return "-..."; 
-        case 'c': 
-            return "-.-."; 
-        case 'd': 
-            return "-.."; 
-        case 'e': 
-            return "."; 
-        case 'f': 
-            return "..-."; 
-        case 'g': 
-            return "--."; 
-        case 'h': 
-            return "...."; 
-        case 'i': 
-            return ".."; 
-        case 'j': 
-            return ".---"; 
-        case 'k': 
-            return "-.-"; 
-        case 'l': 
-            return ".-.."; 
-        case 'm': 
-            return "--"; 
-        case 'n': 
-            return "-."; 
-        case 'o': 
-            return "---"; 
-        case 'p': 
-            return ".--."; 
-        case 'q': 
-            return "--.-"; 
-        case 'r': 
-            return ".-."; 
-        case 's': 
-            return "..."; 
-        case 't': 
-            return "-"; 
-        case 'u': 
-            return "..-"; 
-        case 'v': 
-            return "...-"; 
-        case 'w': 
-            return ".--"; 
-        case 'x': 
-            return "-..-"; 
-        case 'y': 
-            return "-.--"; 
-        case 'z': 
-            return "--.."; 
+    switch (c) {
+        case 'a':
+            return ".-";
+        case 'b':
+            return "-...";
+        case 'c':
+            return "-.-.";
+        case 'd':
+            return "-..";
+        case 'e':
+            return ".";
+        case 'f':
+            return "..-.";
+        case 'g':
+            return "--.";
+        case 'h':
+            return "....";
+        case 'i':
+            return "..";
+        case 'j':
+            return ".---";
+        case 'k':
+            return "-.-";
+        case 'l':
+            return ".-..";
+        case 'm':
+            return "--";
+        case 'n':
+            return "-.";
+        case 'o':
+            return "---";
+        case 'p':
+            return ".--.";
+        case 'q':
+            return "--.-";
+        case 'r':
+            return ".-.";
+        case 's':
+            return "...";
+        case 't':
+            return "-";
+        case 'u':
+            return "..-";
+        case 'v':
+            return "...-";
+        case 'w':
+            return ".--";
+        case 'x':
+            return "-..-";
+        case 'y':
+            return "-.--";
+        case 'z':
+            return "--..";
         case '1':
             return ".----";
         case '2':
@@ -107,7 +108,7 @@ std::string char_to_morse(const char &c) {
         default:
             std::cerr << "Found invalid character: " << c << ' ' << std::endl;
             std::exit(0);
-    } 
+    }
 }
 /**
  * Get character from the morse representation.
@@ -190,7 +191,7 @@ char morse_to_char(const std::string &s) {
         return '0';
     } else {
         std::cerr << "Found invalid Morse code: " << s << ' ' << std::endl;
-        std::exit(0);        
+        std::exit(0);
     }
 }
 /**
@@ -200,7 +201,7 @@ char morse_to_char(const std::string &s) {
  */
 std::string encrypt(const std::string &text) {
     std::string encrypted_text = "";  // Empty string to store encrypted text
-    // Going through each character of text and converting it 
+    // Going through each character of text and converting it
     // to morse representation
     for (const char &c : text) {
         encrypted_text += ciphers::morse::char_to_morse(c) + " ";
@@ -208,25 +209,25 @@ std::string encrypt(const std::string &text) {
     return encrypted_text;  // Returning encrypted text
 }
 /**
- * Decrypt given morse coded text. 
+ * Decrypt given morse coded text.
  * @param text text to be decrypted
  * @return new decrypted text
  */
 std::string decrypt(const std::string &text) {
-    // Going through each character of text and converting it 
+    // Going through each character of text and converting it
     // back to normal representation.
     std::string decrypted_text = "";  // Empty string to store decrypted text
-    // Spliting string (with delimiter = " ") and storing it 
+    // Spliting string (with delimiter = " ") and storing it
     // in vector
-    std::size_t pos_start = 0, pos_end, delim_len = 1;
-    std::vector <std::string> splits;
+    std::size_t pos_start = 0, pos_end = 0, delim_len = 1;
+    std::vector<std::string> splits;
     while ((pos_end = text.find(' ', pos_start)) != std::string::npos) {
-        std::string token = text.substr (pos_start, pos_end - pos_start);
+        std::string token = text.substr(pos_start, pos_end - pos_start);
         pos_start = pos_end + delim_len;
         splits.push_back(token);
     }
-    
-    // Traversing through each morse code string 
+
+    // Traversing through each morse code string
     for (const std::string &s : splits) {
         // Add corresponding character
         decrypted_text += ciphers::morse::morse_to_char(s);
