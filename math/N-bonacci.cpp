@@ -1,4 +1,3 @@
-
 /**
  * @file N-bonacci.cpp
  * @brief Implementation of N-bonacci Series 
