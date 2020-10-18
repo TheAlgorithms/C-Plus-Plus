@@ -15,14 +15,6 @@
  */
 #include <iostream>  /// for std::cout and std::cin
 #include <vector>    /// for std::vector
-/*
- *In general, in N-bonacci sequence,
- *we generate sum of preceding N numbers from the next term.
- *For example, a 3-bonacci sequence is the following:
- *0, 0, 1, 1, 2, 4, 7, 13, 24, 44, 81
- *In this code we take N and M as input where M is the number of terms
- *to be printed of the N-bonacci series
- */
 void N_bonacci(int n, int m) {
     /**
      * This function finds N-bonacci series for
