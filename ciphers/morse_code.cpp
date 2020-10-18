@@ -241,7 +241,7 @@ std::string decrypt(const std::string &text) {
 /**
  * Function to test above algorithm
  */
-void test() {
+static void test() {
     // Test 1
     std::string text1 = "01234567890";
     std::string encrypted1 = ciphers::morse::encrypt(text1);
