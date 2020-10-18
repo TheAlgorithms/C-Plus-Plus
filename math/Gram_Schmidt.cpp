@@ -1,3 +1,14 @@
+/*  Gram Schimdt Orthogonalisation  Created by akanksha gupta on 02/10/20.
+    Copyright © 2020 akanksha gupta. All rights reserved.
+    Used double as datatype for storing vectors (in maths) as inputs are
+   integers.
+    Change it to long double to increase digits of precision in case of decimal
+   inputs.
+    Have defined maximum dimension of vectors to be 10 and number of vectors
+   taken is 20.
+    Please do not give linearly dependent vectors
+ */
+
 #include <iostream>
 #include <cassert>
 #include <cmath>
@@ -8,8 +19,7 @@
     and calculating it here.
 */
 
-double dot_product(std::array<double, 10> &x, std::array<double, 10> &y,
-                   int c) {
+double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
     sum += x[i] * y[i];
@@ -27,8 +37,8 @@ double dot_product(std::array<double, 10> &x, std::array<double, 10> &y,
    vector over 1st vector.
  */
 
-void projection(std::array<double, 10> &x, std::array<double, 10> &y,
-                std::array<double, 10> &temp, int c) {
+void projection(std::array<double, 10> x, std::array<double, 10> y,
+                std::array<double, 10> temp, int c) {
   double dot = dot_product(x, y, c);
   double anorm = dot_product(y, y, c);
   double factor = dot / anorm;
@@ -41,7 +51,7 @@ void projection(std::array<double, 10> &x, std::array<double, 10> &y,
    Function to print the orthogonalised vector
  */
 
-void display(int r, int c, std::array<std::array<double, 10>, 20> &B) {
+void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
   for (int i = 0; i < r; i++) {
     std::cout << "Vector " << i + 1 << ": ";
     for (int j = 0; j < c; j++) {
@@ -61,8 +71,8 @@ void display(int r, int c, std::array<std::array<double, 10>, 20> &B) {
    Then, twe subtract total projection vector from the input vector
  */
 
-void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> &A,
-                  std::array<std::array<double, 10>, 20> &B) {
+void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
+                  std::array<std::array<double, 10>, 20> B) {
   if (c < r) {
     std::cout
         << "Dimension of vector is less than number of vector, hence \n first "
