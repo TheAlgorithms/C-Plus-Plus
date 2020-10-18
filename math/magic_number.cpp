@@ -24,7 +24,6 @@
  * @param n number to be checked.
  * @return if number is a magic number, returns true, else false.
  */
-
 bool magic_number(int n) {
     if (n <= 0) {
         return false;
