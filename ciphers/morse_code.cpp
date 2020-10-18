@@ -261,7 +261,10 @@ static void test() {
     std::cout << "Decrypted text : " << decrypted2 << std::endl;
 }
 
-/** Driver Code */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // Testing
     test();
