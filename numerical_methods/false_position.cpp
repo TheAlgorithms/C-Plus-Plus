@@ -4,7 +4,11 @@
  * method](https://en.wikipedia.org/wiki/Regula_falsi), also known as the Secant
  * method
  *
- * Given two points \f$a\f$ and \f$b\f$ such that \f$f(a)<0\f$ and
+ * First, multiple intervals are selected with the interval gap provided. 
+ * Separate recursive function called for every root.
+ * Roots are printed Separatelt.
+ *
+ * For an interval [a,b] \f$a\f$ and \f$b\f$ such that \f$f(a)<0\f$ and
  * \f$f(b)>0\f$, then the \f$(i+1)^\text{th}\f$ approximation is given by: \f[
  * x_{i+1} = \frac{a_i\cdot f(b_i) - b_i\cdot f(a_i)}{f(b_i) - f(a_i)}
  * \f]
@@ -12,63 +16,81 @@
  * as: \f$[a,x]\f$ if \f$x>0\f$ or \f$[x,b]\f$ if \f$x<0\f$. The Process is
  * continued till a close enough approximation is achieved.
  *
- * \see newton_raphson_method.cpp, bisection_method.cpp
  */
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
 #include <limits>
 
-#define EPSILON \
-    1e-6  // std::numeric_limits<double>::epsilon()  ///< system accuracy limit
-#define MAX_ITERATIONS 50000  ///< Maximum number of iterations to check
+int RANGE = 100000;  ///< Range in which we have to find the root. (-Range,Range)
+double INTERVAL_GAP = 0.5; /// interval gap. lesser the gap more the accuracy
 
 /** define \f$f(x)\f$ to find root for
  */
-static double eq(double i) {
-    return (std::pow(i, 3) - (4 * i) - 9);  // origial equation
+static double eq(double x) {
+    return (x*x-x);  // original equation
 }
 
-/** get the sign of any given number */
-template <typename T>
-int sgn(T val) {
-    return (T(0) < val) - (val < T(0));
+//recursive regula falsi function for finding root in an interval [x1,x2]
+static double regula_falsi(double x1,double x2,double y1,double y2){
+    double diff = x1-x2;
+    if(diff<0){
+        diff= (-1)*diff;
+    }
+    if(diff<0.00001){          
+        if(y1<0)
+        y1=-y1;
+        if(y2<0)
+        y2=-y2;
+        if(y1<y2)
+        return x1;
+        else
+        return x2;
+    }
+    double x3=0,y3=0;
+    x3 = x1 - (x1-x2)*(y1)/(y1-y2);
+    y3 = eq(x3);
+    return regula_falsi(x2,x3,y2,y3);
 }
+
+//Function for printing multiple roots
+void printRoot(double root,int COUNT){
+    if(COUNT==1){
+        std::cout << "Your 1st root is : " << root << std::endl;
+    }
+    else if(COUNT==2){
+        std::cout << "Your 2nd root is : " << root << std::endl;
+    }
+    else if(COUNT==3){
+        std::cout << "Your 3rd root is : " << root << std::endl;
+    }
+    else{
+        std::cout << "Your "<<COUNT<<"th root is : " << root << std::endl;
+    }
+}
+
 
 /** main function */
 int main() {
-    double a = -1, b = 1, x, z, m, n, c;
-    int i;
-
-    // loop to find initial intervals a, b
-    for (int i = 0; i < MAX_ITERATIONS; i++) {
-        z = eq(a);
-        x = eq(b);
-        if (sgn(z) == sgn(x)) {  // same signs, increase interval
-            b++;
-            a--;
-        } else {  // if opposite signs, we got our interval
-            break;
+    double a=0, b=0,i=0,root=0;
+    int COUNT=0;
+    a = eq((-1)*RANGE);
+    i=((-1)*RANGE + INTERVAL_GAP);
+    //while loop for selecting prope interval in povided range and with provided interval gap.
+    while(i<=RANGE){
+        b = eq(i);
+        if(b==0){
+            COUNT++;
+            printRoot(i,COUNT);
         }
-    }
-
-    std::cout << "\nFirst initial: " << a;
-    std::cout << "\nSecond initial: " << b;
-
-    for (i = 0; i < MAX_ITERATIONS; i++) {
-        m = eq(a);
-        n = eq(b);
-
-        c = ((a * n) - (b * m)) / (n - m);
-
-        a = c;
-        z = eq(c);
-
-        if (std::abs(z) < EPSILON) {  // stoping criteria
-            break;
+        if(a*b<0){
+            root = regula_falsi(i-INTERVAL_GAP,i,a,b);
+            COUNT++;
+            printRoot(root,COUNT);
         }
+        a=b;
+        i+=INTERVAL_GAP;
     }
-
-    std::cout << "\n\nRoot: " << c << "\t\tSteps: " << i << std::endl;
     return 0;
 }
+
