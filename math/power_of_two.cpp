@@ -1,6 +1,6 @@
 
 /**
- * @file power_of_two.cpp
+ * @file
  * @brief Implementation to check whether a number is a power of 2 or not.
  *
  * @details
