@@ -141,6 +141,7 @@
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
   * [Least Common Multiple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/least_common_multiple.cpp)
+  * [Magic Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/magic_number.cpp)
   * [Miller Rabin](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/miller_rabin.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
