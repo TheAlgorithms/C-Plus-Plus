@@ -82,7 +82,8 @@ static void test() {
 }
 
 /**
-* main function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     test();  // execute the tests
