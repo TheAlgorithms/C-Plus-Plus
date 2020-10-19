@@ -1,86 +1,65 @@
-/*
-*
-*
-*
-*
-*brief-- Johnson's algorithm*
-*
-*Details-
-*finding shortest paths between
-*every pair of vertices in a given
-*weighted directed Graph and weights may be negative.
-*
-*
-*
-*
-*---Complexity----
-*O(V^2logV + V*E)
-*
-*
-*
-*---Application-----
-*
-*
-*
-*1.A new vertex is added to the graph, and it is connected by edges of zero weight to all other vertices in the graph.
-*2.All edges go through a reweighting process that eliminates negative weight edges.
-*3.The added vertex from step 1 is removed and Dijkstra's algorithm is run on every node in the graph.
-*
-*
-*
-*
-*------Algorithm Idea-----
-*
-*1. Let the given graph be G.
-Add a new vertex s to the graph,
-add edges from new vertex to all vertices of G.
-Let the modified graph be Gí.
-*
-*
-*2.Run Bellman-Ford algorithm on Gí with s as source.
-Let the distances calculated by Bellman-Ford be h[0], h[1], .. h[V-1].
-If we find a negative weight cycle, then return.
-Note that the negative weight cycle cannot be created by new vertex s as there is no edge to s.
-All edges are from s.
-*
-*
-*3.Reweight the edges of original graph.
-For each edge (u, v), assign the new weight as ìoriginal weight + h[u] ñ h[v]î.
-*
-*
-*4.Remove the added vertex s and run Dijkstraís algorithm for every vertex.
-*
-*
-*/
+//brief-- Johnson's algorithm*
 
-/**
-*
-*
-*-----Pseudo Code------
-* 1.
-    create G` where G`.V = G.V + {s},
-        G`.E = G.E + ((s, u) for u in G.V), and
-        weight(s, u) = 0 for u in G.V
-*
-* 2.
-    if Bellman-Ford(s) == False
-        return "The input graph has a negative weight cycle"
-    else:
-        for vertex v in G`.V:
-            h(v) = distance(s, v) computed by Bellman-Ford
-        for edge (u, v) in G`.E:
-            weight`(u, v) = weight(u, v) + h(u) - h(v)
-*
-*
-*3.
-        D = new matrix of distances initialized to infinity
-        for vertex u in G.V:
-            run Dijkstra(G, weight`, u) to compute distance`(u, v) for all v in G.V
-            for each vertex v in G.V:
-                D_(u, v) = distance`(u, v) + h(v) - h(u)
-        return D
-*
-*/
+//*Details-
+//*finding shortest paths between
+//*every pair of vertices in a given
+//*weighted directed Graph and weights may be negative.
+
+
+
+//---Complexity----
+//O(V^2logV + V*E)
+
+
+
+//---Application-----
+
+
+//1.A new vertex is added to the graph, and it is connected by edges of zero weight to all other vertices in the graph.
+//2.All edges go through a reweighting process that eliminates negative weight edges.
+//3.The added vertex from step 1 is removed and Dijkstra's algorithm is run on every node in the graph.
+
+//------Algorithm Idea-----
+
+//1. Let the given graph be G.
+//Add a new vertex s to the graph,
+//add edges from new vertex to all vertices of G.
+//Let the modified graph be G‚Äô.
+
+
+//2.Run Bellman-Ford algorithm on G‚Äô with s as source.
+//Let the distances calculated by Bellman-Ford be h[0], h[1], .. h[V-1].
+//If we find a negative weight cycle, then return.
+//Note that the negative weight cycle cannot be created by new vertex s as there is no edge to s.
+//All edges are from s.
+
+//3.Reweight the edges of original graph.
+//For each edge (u, v), assign the new weight as ‚Äúoriginal weight + h[u] ‚Äì h[v]‚Äù.
+
+//4.Remove the added vertex s and run Dijkstra‚Äôs algorithm for every vertex.
+
+//-----Pseudo Code------
+// 1.
+ // create G` where G`.V = G.V + {s},
+     //   G`.E = G.E + ((s, u) for u in G.V), and
+      //  weight(s, u) = 0 for u in G.V
+
+// 2.
+   //if Bellman-Ford(s) == False
+      //return "The input graph has a negative weight cycle"
+  //  else:
+    //    for vertex v in G`.V:
+   //         h(v) = distance(s, v) computed by Bellman-Ford
+    //    for edge (u, v) in G`.E:
+     //       weight`(u, v) = weight(u, v) + h(u) - h(v)
+
+     //   D = new matrix of distances initialized to infinity
+      //  for vertex u in G.V:
+      //      run Dijkstra(G, weight`, u) to compute distance`(u, v) for all v in G.V
+         //   for each vertex v in G.V:
+       //         D_(u, v) = distance`(u, v) + h(v) - h(u)
+       // return D
+
 
 
 
@@ -130,21 +109,20 @@ main() {
 }
 
 
-/**
------OUTPUT--------
+//-----OUTPUT--------
 
-Enter no of vertices: 3
-Enter no of edges: 5
-Enter the EDGE Costs:
-1 2 8
-2 1 12
-1 3 22
-3 1 6
-2 3 4
-Resultant adj matrix
-0 8 12
-10 0 4
-6 14 0
-*/
+//Enter no of vertices: 3
+//Enter no of edges: 5
+//Enter the EDGE Costs:
+//1 2 8
+//2 1 12
+//1 3 22
+//3 1 6
+//2 3 4
+//Resultant adj matrix
+//0 8 12
+//10 0 4
+//6 14 0
+
 
 
