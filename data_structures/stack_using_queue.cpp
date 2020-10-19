@@ -1,13 +1,14 @@
 #include <iostream>
 #include <queue>
-using namespace std;
 
 class MyStack
 {
+    std::queue <int> q;
+
     public:
 
     /** Initialize your data structure here. **/
-    queue<int> q;                                 //initialize queue
+
     MyStack() {                                   //default constructor
     }
 
@@ -51,28 +52,28 @@ int main()
    int ch, x;
 
     do {
-        cout << "\n0. Exit";
-        cout << "\n1. Push";
-        cout << "\n2. Pop";
-        cout << "\n3. Print topmost element:";
-        cout << "\n4. check whether the stack is empty";
-        cout << "\nEnter Your Choice : ";
-        cin >> ch;
+        std::cout << "\n0. Exit";
+         std::cout << "\n1. Push";
+         std::cout << "\n2. Pop";
+         std::cout << "\n3. Print topmost element:";
+         std::cout << "\n4. check whether the stack is empty";
+         std::cout << "\nEnter Your Choice : ";
+         std::cin >> ch;
 
         if (ch == 1)
             {
-                cout << "\nInsert : ";
-                cin >> x;
+                 std::cout << "\nInsert : ";
+                 std::cin >> x;
                 obj.push(x);
         } else if (ch == 2)
         {
-            cout<<obj.pop()<<" deleted\n";
+             std::cout<<obj.pop()<<" deleted\n";
         } else if (ch == 3)
         {
-            cout<<"topmost element : "<<obj.top()<<"\n";
+             std::cout<<"topmost element : "<<obj.top()<<"\n";
         } else if(ch == 4)
         {
-            cout<<"status (true/1) or (false/0) : "<<obj.empty()<<"\n";
+             std::cout<<"status (true/1) or (false/0) : "<<obj.empty()<<"\n";
         }
     } while (ch != 0);
 
