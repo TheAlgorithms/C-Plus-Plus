@@ -47,7 +47,7 @@ var NAVTREE =
           [ "Code", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
           [ "Documentation", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ],
           [ "Test", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ],
-          [ "Typical structure of a program:", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
+          [ "Typical structure of a program", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
           [ "New File Name guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md19", null ],
           [ "New Directory guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
           [ "Commit Guidelines", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md21", null ]

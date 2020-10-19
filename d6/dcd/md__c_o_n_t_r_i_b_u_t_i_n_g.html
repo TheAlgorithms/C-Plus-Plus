@@ -101,7 +101,8 @@ Before contributing</h1>
 Contributing</h1>
 <h2><a class="anchor" id="autotoc_md13"></a>
 Contributor</h2>
-<p>We are very happy that you consider implementing algorithms and data structures for others! This repository is referred to and used by learners from around the globe. Being one of our contributors, you agree and confirm that:</p><ul>
+<p>We are very happy that you consider implementing algorithms and data structures for others! This repository is referred to and used by learners from around the globe. Being one of our contributors, you agree and confirm that:</p>
+<ul>
 <li>You did your own work.<ul>
 <li>No plagiarism allowed. Any plagiarized work will not be merged.</li>
 </ul>
@@ -118,14 +119,14 @@ Making Changes</h2>
 Code</h3>
 <ul>
 <li>Please use the directory structure of the repository.</li>
-<li>File extension for code should be *.h *.cpp.</li>
+<li>File extension for code should be <code>*.hpp</code>, <code>*.h</code> or <code>*.cpp</code>.</li>
 <li>Don't use <b>bits/stdc++.h</b> because this is quite Linux specific and slows down the compilation process.</li>
 <li>Organize your code using **<code>struct</code>**, **<code>class</code>** and/or **<code>namespace</code>** keywords</li>
 <li>If an implementation of the algorithm already exists, please refer to the <a href="../../#new-file-name-guidelines">file-name section below</a>.</li>
 <li>You can suggest reasonable changes to existing algorithms.</li>
 <li>Strictly use snake_case (underscore_separated) in filenames.</li>
 <li>If you have added or modified code, please make sure the code compiles before submitting.</li>
-<li>Our automated testing runs <a href="https://github.com/cpplint/cpplint"><b>cpplint</b></a> on all pull requests so please be sure that your code passes before submitting.</li>
+<li>Our automated testing runs <a href="https://cmake.org/"><b>CMake</b></a> on all pull requests so please be sure that your code passes before submitting.</li>
 <li>Please conform to <a href="https://www.doxygen.nl/manual/docblocks.html">doxygen</a> standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on website.</li>
 <li><b>Be consistent in use of these guidelines.</b></li>
 </ul>
@@ -135,22 +136,22 @@ Documentation</h3>
 <li>Make sure you put useful comments in your code. Do not comment things that are obvious.</li>
 <li>Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.</li>
 <li>If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.</li>
-<li>Do not update README.md along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md</li>
-<li>The repository follows <a href="https://www.doxygen.nl/manual/docblocks.html">Doxygen</a> standards and auto-generates the <a href="https://thealgorithms.github.io/C-Plus-Plus">repo website</a>. Please ensure the code is documented in this structure. Sample implementation is given below.</li>
+<li>Do not update <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md"><code>README.md</code></a> along with other changes. First create an issue and then link to that issue in your pull request to suggest specific changes required to <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md"><code>README.md</code></a>.</li>
+<li>The repository follows <a href="https://www.doxygen.nl/manual/docblocks.html">Doxygen</a> standards and auto-generates the <a href="https://thealgorithms.github.io/C-Plus-Plus">repository website</a>. Please ensure the code is documented in this structure. Sample implementation is given below.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md17"></a>
 Test</h3>
 <ul>
 <li>Make sure to add examples and test cases in your <a class="el" href="../../d3/d40/graph__coloring_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> function.</li>
 <li>If you find any algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.</li>
-<li>Please try to add one or more <code><a class="el" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations.">test()</a></code> functions that will invoke the algorithm implementation on random test data with expected output. Use <code>assert()</code> function to confirm that the tests will pass.</li>
+<li>Please try to add one or more <code><a class="el" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations.">test()</a></code> functions that will invoke the algorithm implementation on random test data with expected output. Use <code>assert()</code> function to confirm that the tests will pass. Requires including the <code>cassert</code> header.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md18"></a>
-Typical structure of a program:</h3>
+Typical structure of a program</h3>
 <div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @file </span></div>
+<div class="line"><span class="comment"> * @file</span></div>
 <div class="line"><span class="comment"> * @brief Add one line description here</span></div>
-<div class="line"><span class="comment"> * @details </span></div>
+<div class="line"><span class="comment"> * @details</span></div>
 <div class="line"><span class="comment"> * This is a multi line</span></div>
 <div class="line"><span class="comment"> * description containing links, references,</span></div>
 <div class="line"><span class="comment"> * math equations, etc</span></div>
@@ -158,7 +159,8 @@ Typical structure of a program:</h3>
 <div class="line"><span class="comment"> * @see related_file.cpp, another_file.cpp</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include </span></div>
+<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><span class="preprocessor">#include</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
 <div class="line"><span class="comment"> * @namespace &lt;check from other files in this repo&gt;</span></div>
@@ -194,8 +196,12 @@ Typical structure of a program:</h3>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">}</div>
+<div class="line">} <span class="comment">// namespace name</span></div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/** Test function */</span></div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> * @brief Test implementations</span></div>
+<div class="line"><span class="comment"> * @returns void</span></div>
+<div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
 <div class="line">    <span class="comment">/* desciptions of the following test */</span></div>
 <div class="line">    assert(func(...) == ...); <span class="comment">// this ensures that the algorithm works as expected</span></div>
@@ -203,7 +209,12 @@ Typical structure of a program:</h3>
 <div class="line">    <span class="comment">// can have multiple checks</span></div>
 <div class="line">}</div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">/** Main function */</span></div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> * @brief Main function</span></div>
+<div class="line"><span class="comment"> * @param argc commandline argument count (ignored)</span></div>
+<div class="line"><span class="comment"> * @param argv commandline array of arguments (ignored)</span></div>
+<div class="line"><span class="comment"> * @returns 0 on exit</span></div>
+<div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keywordtype">int</span> <a class="code" href="../../d3/d40/graph__coloring_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
 <div class="line">    <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(); <span class="comment">// execute the tests</span></div>
 <div class="line">    <span class="comment">// code here</span></div>
@@ -213,9 +224,11 @@ Typical structure of a program:</h3>
 New File Name guidelines</h3>
 <ul>
 <li>Use lowercase words with <code>"_"</code> as separator</li>
-<li>For instance <div class="fragment"><div class="line">MyNewCppClass.CPP       is incorrect</div>
+<li>For instance</li>
+</ul>
+<div class="fragment"><div class="line">MyNewCppClass.CPP       is incorrect</div>
 <div class="line">my_new_cpp_class.cpp    is correct format</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --><ul>
 <li>It will be used to dynamically create a directory of files and implementation.</li>
 <li>File name validation will run on docker to ensure the validity.</li>
 <li>If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example, if <code><a class="el" href="../../d9/d69/median__search_8cpp.html" title="Implementation of Median search algorithm. @cases from here">median_search.cpp</a></code> already exists in the <code>search</code> folder and you are contributing a new implementation, the filename should be <code>median_search2.cpp</code> and for a third implementation, <code>median_search3.cpp</code>.</li>
@@ -225,24 +238,28 @@ New Directory guidelines</h3>
 <ul>
 <li>We recommend adding files to existing directories as much as possible.</li>
 <li>Use lowercase words with <code>"_"</code> as separator ( no spaces or <code>"-"</code> allowed )</li>
-<li>For instance <div class="fragment"><div class="line">SomeNew Fancy-Category          is incorrect</div>
+<li>For instance</li>
+</ul>
+<div class="fragment"><div class="line">SomeNew Fancy-Category          is incorrect</div>
 <div class="line">some_new_fancy_category         is correct</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --><ul>
 <li>Filepaths will be used to dynamically create a directory of our algorithms.</li>
 <li>Filepath validation will run on GitHub Actions to ensure compliance.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md21"></a>
 Commit Guidelines</h3>
 <ul>
-<li>It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilt across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected. <div class="fragment"><div class="line">git add file_xyz.cpp</div>
-<div class="line">git commit -m &quot;your message&quot;</div>
-</div><!-- fragment --></li>
+<li>It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilt across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected.</li>
 </ul>
-<p>Examples of commit messages with semantic prefixes: </p><div class="fragment"><div class="line">fix: xyz algorithm bug</div>
+<div class="fragment"><div class="line">git add file_xyz.cpp</div>
+<div class="line">git commit -m &quot;your message&quot;</div>
+</div><!-- fragment --><p>Examples of commit messages with semantic prefixes:</p>
+<div class="fragment"><div class="line">fix: xyz algorithm bug</div>
 <div class="line">feat: add xyx algorithm, class xyz</div>
 <div class="line">test: add test for xyz algorithm</div>
 <div class="line">docs: add comments and explanation to xyz algorithm</div>
-</div><!-- fragment --><p>Common prefixes:</p><ul>
+</div><!-- fragment --><p>Common prefixes:</p>
+<ul>
 <li>fix: A bug fix</li>
 <li>feat: A new feature</li>
 <li>docs: Documentation changes</li>
@@ -255,14 +272,17 @@ Pull Requests</h2>
 </ul>
 <h3><a class="anchor" id="autotoc_md23"></a>
 Building Locally</h3>
-<p>Before submitting a pull request, build the code locally or using the convenient <a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus"><img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code" class="inline"/></a> service. </p><div class="fragment"><div class="line">cmake -B build -S .</div>
+<p>Before submitting a pull request, build the code locally or using the convenient <a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus"><img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code" class="inline"/></a> service.</p>
+<div class="fragment"><div class="line">cmake -B build -S .</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md24"></a>
 Static Code Analyzer</h3>
-<p>We use <a href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a> as a static code analyzer with a configuration in <a href="../../.clang-tidy">.clang-tidy</a>. </p><div class="fragment"><div class="line">clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --</div>
+<p>We use <a href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a> as a static code analyzer with a configuration in <a href="../../.clang-tidy">.clang-tidy</a>.</p>
+<div class="fragment"><div class="line">clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md25"></a>
 Code Formatter</h3>
-<p><a href="https://clang.llvm.org/docs/ClangFormat.html"><b>clang-format</b></a> is used for code forrmating.</p><ul>
-<li>Installation (Only needs to be installed once.)<ul>
+<p><a href="https://clang.llvm.org/docs/ClangFormat.html"><b>clang-format</b></a> is used for code forrmating.</p>
+<ul>
+<li>Installation (only needs to be installed once.)<ul>
 <li>Mac (using home-brew): <code>brew install clang-format</code></li>
 <li>Mac (using macports): <code>sudo port install clang-10 +analyzer</code></li>
 <li>Windows (MSYS2 64-bit): <code>pacman -S mingw-w64-x86_64-clang-tools-extra</code></li>
@@ -273,8 +293,20 @@ Code Formatter</h3>
 </ul>
 <h3><a class="anchor" id="autotoc_md26"></a>
 GitHub Actions</h3>
-<p>Enable GitHub Actions on your fork of the repository. After enabling it will execute <code>clang-tidy</code> and <code>clang-format</code> after every a push (not a commit). The result can create another commit if the actions made any changes on your behalf. Hence, it is better to wait and check the results of GitHub Actions after every push. Run <code>git pull</code> in your local clone if these actions made many changes in order to avoid merge conflicts.</p>
-<p>Most importantly,</p><ul>
+<ul>
+<li>Enable GitHub Actions on your fork of the repository. After enabling it will execute <code>clang-tidy</code> and <code>clang-format</code> after every push (not a commit).<ul>
+<li>Click on the tab "Actions", then click on the big green button to enable it.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/51391473/94609466-6e925100-0264-11eb-9d6f-3706190eab2b.png" alt="GitHub Actions" class="inline"/></p>
+<ul>
+<li>The result can create another commit if the actions made any changes on your behalf.</li>
+<li>Hence, it is better to wait and check the results of GitHub Actions after every push.</li>
+<li>Run <code>git pull</code> in your local clone if these actions made many changes in order to avoid merge conflicts.</li>
+</ul>
+<p>Most importantly,</p>
+<ul>
 <li>Happy coding! </li>
 </ul>
 </div></div><!-- contents -->
