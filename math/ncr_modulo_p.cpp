@@ -75,6 +75,10 @@ int64_t ncr(int64_t n, int64_t r, int64_t p) {
     return (fac[n] * denominator) % p;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // populate the fac array
     const int64_t size = 1e6 + 1;
