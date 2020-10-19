@@ -61,7 +61,7 @@ static void test() {
     std::cout << "Passed Test 1!" << std::endl;
 
     n = 5;
-    int test_2 = lcmSum(n);
+    int test_2 = math::lcmSum(n);
     assert(test_2 == 55);
     std::cout << "Passed Test 2!" << std::endl;
 
