@@ -14,14 +14,17 @@
  * Let the direction ratios of the first vector, P be: a, b, c
  * Let the direction ratios of the second vector, Q be: x, y, z
  * Therefore the calculation for the cross product can be arranged as:
+ *
+ * ```
  * P x Q:
  *  	1	1	1
  *  	a	b	c
- *  	x	y	x
+ *  	x	y	z
+ * ```
  *
- * @algorithm The direction ratios (DR) are calculated as follows:
- *  	1st DR, J:  (b * x) - (c * y)
- *  	2nd DR, A: -((a * x) - (c * x))
+ * The direction ratios (DR) are calculated as follows:
+ *  	1st DR, J:  (b * z) - (c * y)
+ *  	2nd DR, A: -((a * z) - (c * x))
  *  	3rd DR, N:  (a * y) - (b * x)
  *
  * Therefore, the direction ratios of the cross product are: J, A, N
