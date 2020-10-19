@@ -1,9 +1,12 @@
 /*  Gram Schimdt Orthogonalisation  Created by akanksha gupta on 02/10/20.
-    Copyright © 2020 akanksha gupta. All rights reserved.
-    Used double as datatype for storing vectors (in maths) as inputs are integers.
-    Change it to long double to increase digits of precision in case of decimal inputs.
-    Have defined maximum dimension of vectors to be 10 and number of vectors taken is 20.
-    Please do not give linearly dependent vectors
+ *  Copyright © 2020 akanksha gupta. All rights reserved.
+ *  Used double as datatype for storing vectors (in maths) as inputs are
+ *  integers.
+ *  Change it to long double to increase digits of precision in case of decimal
+ *  inputs.
+ *  Have defined maximum dimension of vectors to be 10 and number of vectors
+ *  taken is 20.
+ *  Please do not give linearly dependent vectors
  */
 
 #include <iostream>
@@ -13,8 +16,8 @@
 using namespace std;
 
 /*
-    dot_product() function. Storing maths vector in Array
-    and calculating it here.
+ * dot_product() function. Storing maths vector in Array
+ * and calculating it here.
 */
 
 double dot_product (double x[], double y[], int c) {
@@ -26,23 +29,20 @@ double dot_product (double x[], double y[], int c) {
 }
 
 /*
-    The dot product of two vectors is taken and the norm of the second vector
-    is taken. Then, dot product value is divided by the norm and stored in factor.
-    Then, multiply that factor with every element in a third vector, whose initial values are
-    same as the 2nd vector. This vector will then be the projection of 2nd vector over 1st vector.
+ * Projection Function 
  */
 
 void projection (double x[], double y[], double temp[], int c){
-    double dot = dot_product(x, y, c);
-    double anorm = dot_product(y, y, c);
-    double factor = dot/anorm;
+    double dot = dot_product(x, y, c);  //The dot product of two vectors is taken
+    double anorm = dot_product(y, y, c); //The norm of the second vector is taken.
+    double factor = dot/anorm;  //multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
     for (int i = 0; i < c; i++) {
       temp[i]  = y[i] * factor;
     }
 }
 
 /*
-   Function to print the orthogonalised vector
+ * Function to print the orthogonalised vector
  */
 
 void display(int r, int c, double B[][10]){
@@ -56,15 +56,8 @@ void display(int r, int c, double B[][10]){
 }
 
 /*
-   Function for the process of Gram Schimdt Process.
-   First, we check whether appropriate dimensions are given or not.
-   Then, we take a second 2-D array. This will store orthogonalised vectors
-   of the input vectors.
-   First vector is copied as it is. Then, from 2nd vector onwards,
-   we take the projection with all the previous vector and add them.
-   Then, twe subtract total projection vector from the input vector
- */
-
+ *  Function to print the orthogonalised vector
+*/
 void gram_schmidt(int r, int c, double A[][10], double B[][10]){
     if(c < r)
     {
