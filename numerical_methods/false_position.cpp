@@ -16,6 +16,7 @@
  * as: \f$[a,x]\f$ if \f$x>0\f$ or \f$[x,b]\f$ if \f$x<0\f$. The Process is
  * continued till a close enough approximation is achieved.
  *
+ * \see newton_raphson_method.cpp, bisection_method.cpp
  */
 #include <cmath>
 #include <cstdlib>
@@ -31,7 +32,12 @@ static double eq(double x) {
     return (x*x-x);  // original equation
 }
 
-//recursive regula falsi function for finding root in an interval [x1,x2]
+/**
+* This function finds root of the equation in given interval i.e. (x1,x2).
+* @param x1,x2 values for an interval in which root is present.
+  @param y1,y2 values of function at x1, x2 espectively.
+* @return root of the equation in the given interval.
+*/  
 static double regula_falsi(double x1,double x2,double y1,double y2){
     double diff = x1-x2;
     if(diff<0){
@@ -53,7 +59,11 @@ static double regula_falsi(double x1,double x2,double y1,double y2){
     return regula_falsi(x2,x3,y2,y3);
 }
 
-//Function for printing multiple roots
+/**
+* This function prints roots of the equation.
+* @param root which we have to print. 
+* @param COUNT which is count of the root in an interval [-RANGE,RANGE].
+*/  
 void printRoot(double root,int COUNT){
     if(COUNT==1){
         std::cout << "Your 1st root is : " << root << std::endl;
