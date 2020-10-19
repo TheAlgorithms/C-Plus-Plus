@@ -1,8 +1,7 @@
 /**
- * \addtogroup Runge Kutta 4th Method for solving Differential equation
  * @{
  * \file
- * \brief [Runge Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method implementation
+ * \brief [Runge Kutta fourth order](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method implementation
  *
  * \author [Rudra Prasad Das](http://github.com/rudra697)
  *
@@ -18,19 +17,13 @@
  * There can be many such equations 
  * **/
 #include <iostream> /// for io operations
+#include<vector> ///for using the vector container
 #include <cassert>  /// asserting the test functions
 /**
  * @namespace numerical_methods
  * @brief Numerical Methods
  */
-namespace numerical_methods {
 /**
- * @namespace runge_kutta
- * @brief Functions for [Runge Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method
- */
-namespace runge_kutta {
-/**
-
  * @brief The change() function is used 
  * to return the updated iterative value corresponding 
  * to the given function
@@ -38,18 +31,25 @@ namespace runge_kutta {
  * @param y is the value corresponding to the y coordinate 
  * @returns the computed function value at that call
  */
-double change(double x, double y) 
+static double change(double x, double y) 
 { 
 	double val=((x - y)/2.0); 
 	return val;
 } 
+namespace numerical_methods {
+/**
+ * @namespace runge_kutta
+ * @brief Functions for [Runge Kutta fourth order](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method
+ */
+namespace runge_kutta {
+
 /**
  * @brief The rungeKutta finds value of y for 
  * a given x using step size h 
  * and initial value initial x at initial y. 
  * @param init_x is the value of initial x and is updated after each call
  * @param init_y is the value of initial x and is updated after each call
- * @param x is the given value of x
+ * @param x is current iteration at which the function needs to be evaluated
  * @param h is the step value 
  * @returns the value of y at thr required value of x from the initial conditions
  */
@@ -66,14 +66,11 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 	  // used for calculation of y at each iteration
 	  
 	 int n = static_cast<int>((x - init_x) / h); 
+	  // used a vector container for the variables
+	 std::vector<double> k(4,0.0);
     
-	double k1=0.0;
-	double k2=0.0;
-	double k3=0.0;
-	double k4=0.0;
-	double k5=0.0; 
 	
-	 // Iterate for number of iterations 
+	  // Iterate for number of iterations 
 	 
 	double y = init_y; 
 	for (int i=1; i<=n; i++) 
@@ -81,15 +78,15 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 						
 		 // Apply Runge Kutta Formulas 
 		 // to find next value of y 
-		
-		k1 = h*change(init_x, y); 
-		k2 = h*change(init_x + 0.5*h, y + 0.5*k1); 
-		k3 = h*change(init_x + 0.5*h, y + 0.5*k2); 
-		k4 = h*change(init_x + h, y + k3); 
+		k[0] = h*change(init_x, y); 
+		k[1] = h*change(init_x + 0.5*h, y + 0.5*k[0]); 
+		k[2] = h*change(init_x + 0.5*h, y + 0.5*k[1]); 
+		k[3] = h*change(init_x + h, y + k[2]); 
+		 
 		
 		// Update next value of y 
 		
-		y = y + (1.0/6.0)*(k1 + 2*k2 + 2*k3 + k4);
+		y = y + (1.0/6.0)*(k[0] + 2*k[1] + 2*k[2] + k[3]);
 		
 		// Update next value of x 
 		
