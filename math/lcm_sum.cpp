@@ -48,6 +48,7 @@ int lcmSum(int num) {
    
     return ((sumOfEulerTotient[num] + 1 ) * num) / 2;
 }
+}  // namespace math
 
 /**
  * Function for testing lcmSum function.
