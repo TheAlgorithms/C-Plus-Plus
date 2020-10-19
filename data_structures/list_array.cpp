@@ -121,6 +121,8 @@ int main() {
     int choice;
     int x;
     do {
+        // Choices for operations on the list_array.
+        std::cout << "\n0.Exit";
         std::cout << "\n1.Insert";
         std::cout << "\n2.Delete";
         std::cout << "\n3.Search";
