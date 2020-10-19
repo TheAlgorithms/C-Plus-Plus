@@ -1,12 +1,12 @@
 /*  Gram Schimdt Orthogonalisation  Created by akanksha gupta on 02/10/20.
-    Copyright © 2020 akanksha gupta. All rights reserved.
-    Used double as datatype for storing vectors (in maths) as inputs are
-   integers.
-    Change it to long double to increase digits of precision in case of decimal
-   inputs.
-    Have defined maximum dimension of vectors to be 10 and number of vectors
-   taken is 20.
-    Please do not give linearly dependent vectors
+ *  Copyright © 2020 akanksha gupta. All rights reserved.
+ *  Used double as datatype for storing vectors (in maths) as inputs are
+ *  integers.
+ *  Change it to long double to increase digits of precision in case of decimal
+ *  inputs.
+ *  Have defined maximum dimension of vectors to be 10 and number of vectors
+ *  taken is 20.
+ *  Please do not give linearly dependent vectors
  */
 
 #include <iostream>
@@ -15,9 +15,9 @@
 #include <array>
 
 /*
-    dot_product() function. Storing maths vector in Array
-    and calculating it here.
-*/
+ *   dot_product() function. Storing maths vector in Array
+ *   and calculating it here.
+ */
 
 double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
   double sum = 0;
@@ -28,27 +28,21 @@ double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
 }
 
 /*
-    The dot product of two vectors is taken and the norm of the second vector
-    is taken. Then, dot product value is divided by the norm and stored in
-   factor.
-    Then, multiply that factor with every element in a third vector, whose
-   initial values are
-    same as the 2nd vector. This vector will then be the projection of 2nd
-   vector over 1st vector.
+ * Projection Function 
  */
 
 void projection(std::array<double, 10> x, std::array<double, 10> y,
                 std::array<double, 10> temp, int c) {
-  double dot = dot_product(x, y, c);
-  double anorm = dot_product(y, y, c);
-  double factor = dot / anorm;
+  double dot = dot_product(x, y, c); //The dot product of two vectors is taken
+  double anorm = dot_product(y, y, c); //The norm of the second vector is taken.
+  double factor = dot / anorm; //multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
   for (int i = 0; i < c; i++) {
     temp[i] = y[i] * factor;
   }
 }
 
 /*
-   Function to print the orthogonalised vector
+ *  Function to print the orthogonalised vector
  */
 
 void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
@@ -62,20 +56,14 @@ void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
 }
 
 /*
-   Function for the process of Gram Schimdt Process.
-   First, we check whether appropriate dimensions are given or not.
-   Then, we take a second 2-D array. This will store orthogonalised vectors
-   of the input vectors.
-   First vector is copied as it is. Then, from 2nd vector onwards,
-   we take the projection with all the previous vector and add them.
-   Then, twe subtract total projection vector from the input vector
+ *  Function for the process of Gram Schimdt Process
  */
 
 void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
                   std::array<std::array<double, 10>, 20> B) {
-  if (c < r) {
+  if (c < r) {   // we check whether appropriate dimensions are given or not.
     std::cout
-        << "Dimension of vector is less than number of vector, hence \n first "
+        << "Dimension of vector is less than number of vector, hence \n first "    
         << c << " vectors are orthogonalised" << std::endl;
     r = c;
   }
@@ -84,13 +72,13 @@ void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
 
   while (k <= r) {
     if (k == 1) {
-      for (int j = 0; j < c; j++) B[0][j] = A[0][j];
+      for (int j = 0; j < c; j++) B[0][j] = A[0][j]; //First vector is copied as it is. 
     }
 
     else {
-      std::array<double, 10> all_projection;
+      std::array<double, 10> all_projection;  //array to store projections
       for (int i = 0; i < c; i++) {
-        all_projection[i] = 0;
+        all_projection[i] = 0;  //First initialised to zero
       }
 
       int l = 1;
@@ -98,24 +86,26 @@ void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
         std::array<double, 10> temp;
         projection(A[k - 1], B[l - 1], temp, c);
         for (int j = 0; j < c; j++) {
-          all_projection[j] = all_projection[j] + temp[j];
+          all_projection[j] = all_projection[j] + temp[j];   //we take the projection with all the previous vector and add them.
         }
         l++;
       }
       for (int i = 0; i < c; i++) {
-        B[k - 1][i] = A[k - 1][i] - all_projection[i];
+        B[k - 1][i] = A[k - 1][i] - all_projection[i];  //subtract total projection vector from the input vector
       }
     }
     k++;
   }
   display(r, c, B);
 }
-
+/*
+ * Test Cases, Process has been tested for 3 Sample Inputs 
+ */
 static void test() {
   std::array<std::array<double, 10>, 20> a1 = {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
-  std::array<std::array<double, 10>, 20> b1 = {{0}};
-  double dot1;
+  std::array<std::array<double, 10>, 20> b1 = {{0}};    
+       double dot1;
   gram_schmidt(3, 4, a1, b1);
   int flag = 1;
   for (int i = 0; i < 2; i++)
@@ -164,6 +154,9 @@ static void test() {
   assert(flag == 1);
   std::cout << "Passed Test Case 3 " << std::endl;
 }
+/*
+ * Main Function
+ */
 
 int main() {
   int r, c;
@@ -179,7 +172,7 @@ int main() {
       {0}};  // a 2-D array for storing orthogonalised vectors
   // storing vectors in array A
   for (int i = 0; i < r; i++) {
-    std::cout << "Enter vector " << i + 1 << std::endl;
+    std::cout << "Enter vector " << i + 1 << std::endl;  //Input of vectors is taken
     for (int j = 0; j < c; j++) {
       std::cout << "Value " << j + 1 << "th of vector: ";
       std::cin >> A[i][j];
@@ -190,7 +183,7 @@ int main() {
   gram_schmidt(r, c, A, B);
 
   double dot = 0;
-  int flag = 1;
+  int flag = 1; //To check whether vectors are orthogonal/ LI or not
   for (int i = 0; i < r - 1; i++) {
     for (int j = i + 1; j < r; j++) {
       dot = fabs(dot_product(B[i], B[j], c));
