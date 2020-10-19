@@ -46,8 +46,7 @@ void insert(btptr &T,char n)
 	else return;
 }
 
-vector<char> v;
-void printPath(btptr T)
+void printPath(btptr T,vector<char> &v)
 {
 	if(T->lc==NULL && T->rc==NULL)
 	{
@@ -59,8 +58,8 @@ void printPath(btptr T)
 		return;
 	}
 	v.push_back(T->data);
-	printPath(T->lc);
-	printPath(T->rc);
+	printPath(T->lc,v);
+	printPath(T->rc,v);
 	v.pop_back();
 }
 
@@ -69,6 +68,7 @@ int main()
 	btptr T = NULL;
 	char ch;
 	cin>>ch;
+	vector<char> v;
 	insert(T,ch);
-	printPath(T);
+	printPath(T,v);
 }
