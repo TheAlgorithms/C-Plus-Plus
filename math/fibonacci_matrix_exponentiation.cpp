@@ -1,7 +1,7 @@
- /**
+/**
  * @file fibonacci_matrix_exponentiation.cpp
  * @brief Computes N^th Fibonacci number given as
- * input argument
+ * input argument .
  *
  * Takes O(logn) time to compute nth Fibonacci number
  * 
@@ -9,40 +9,7 @@
  * \author [villayatali123](https://github.com/villayatali123)
  * \author [unknown author]()
  * @see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp, fibonacci_large.cpp
- * @details
- *Begin 
- * Take two 2 dimensional vector
- * Create a function and Perform matrix multiplication
- * Ceate another function to find out power of matrix
- * Create a function then to find out the Fibonacci number
- * Multiply(arr1[2][2], arr2[2][2], int size)
- * Take 4 variables a, b, c, d
- * ''' 	
- * a = arr1[0][0] * arr2[0][0] + arr1[0][1] * arr2[1][0] 
- *    	b= arr1[0][0] * arr2[0][1] + arr1[0][1] * arr2[1][1]  
- * 		c = arr1[1][0] * arr2[0][0] + arr1[1][1] * arr2[1][0]
- * 		d = arr1[1][0] * arr2[0][1] + arr1[1][1] * arr2[1][1]
- * 		arr1[0][0] = a
- * 		arr1[0][1] = b
- * 		arr1[1][0] = c
- * 		arr1[1][1] = d  
- * '''
- * Power(arr1[2][2], take integer n as input)
- * if (n == 0 or n == 1)
- *    return;
- * ''' arr1 [2][2] = {{1,1}, {1,0}} '''
- * power(arr1, n / 2)
- * multiply(arr1, arr1)
- * if (n mod 2 not equal to 0)
- * multiply(arr1, arr2)
- * fibonacci_matrix(n)
- * '''  arr1[2][2] = {{1,1}, {1,0}} '''
- * if n ==0
- *    return 0
- *    power(arr1 n - 1)
- * return arr1[0][0]
-End
-*/
+ */
 
 #include<iostream>
 #include<vector>
@@ -53,15 +20,18 @@ End
  * @param n nth fibonacci number
  * @param mod  modulo number to avoid overflow
  */
-int fibo(int n , std::vector<int> result1 , std::vector<std::vector<int>> transition1 , std::vector<std::vector<int>> Identity1 ,  int mod )
+int fibo(int n , int mod )
 {
+	std::vector<int> result(2,0);
+	std::vector<std::vector<int>> transition(2,std::vector<int>(2,0));
+	std::vector<std::vector<int>> Identity(2,std::vector<int>(2,0));
 	n--;
-	result1[0]=1, result1[1]=1;
-	Identity1[0][0]=1; Identity1[0][1]=0;
-	Identity1[1][0]=0; Identity1[1][1]=1;
+	result[0]=1, result[1]=1;
+	Identity[0][0]=1; Identity[0][1]=0;
+	Identity[1][0]=0; Identity[1][1]=1;
 	 
-	transition1[0][0]=0;
-	transition1[1][0]=transition1[1][1]=transition1[0][1]=1;
+	transition[0][0]=0;
+	transition[1][0]=transition[1][1]=transition[0][1]=1;
 	
 	while(n)
 	{
@@ -74,7 +44,7 @@ int fibo(int n , std::vector<int> result1 , std::vector<std::vector<int>> transi
 				{
 					for(int k=0;k<2;k++)
 						{
-							res[i][j]=(res[i][j]%mod+((Identity1[i][k]%mod*transition1[k][j]%mod))%mod)%mod;
+							res[i][j]=(res[i][j]%mod+((Identity[i][k]%mod*transition[k][j]%mod))%mod)%mod;
 						}
 				}
 			}
@@ -82,7 +52,7 @@ int fibo(int n , std::vector<int> result1 , std::vector<std::vector<int>> transi
 			{
 				for(int j=0;j<2;j++)
 				{
-				Identity1[i][j]=res[i][j];
+				Identity[i][j]=res[i][j];
 				}
 	    		}
 			n--;
@@ -95,7 +65,7 @@ int fibo(int n , std::vector<int> result1 , std::vector<std::vector<int>> transi
 				{
 					for(int k=0;k<2;k++)
 					{
-						res1[i][j]=(res1[i][j]%mod+((transition1[i][k]%mod*transition1[k][j]%mod))%mod)%mod;
+						res1[i][j]=(res1[i][j]%mod+((transition[i][k]%mod*transition[k][j]%mod))%mod)%mod;
 					}
 				}
 			}
@@ -103,41 +73,37 @@ int fibo(int n , std::vector<int> result1 , std::vector<std::vector<int>> transi
 			{
 				for(int j=0;j<2;j++)
 				{
-					transition1[i][j]=res1[i][j];
+					transition[i][j]=res1[i][j];
 				}
 			} 
 			n=n/2;
 			}
 	}
-	return ((result1[0]%mod*Identity1[0][0]%mod)%mod+(result1[1]%mod*Identity1[1][0]%mod)%mod)%mod;
+	return ((result[0]%mod*Identity[0][0]%mod)%mod+(result[1]%mod*Identity[1][0]%mod)%mod)%mod;
 }
+
 /**
  * Function to test above algorithm
  */
 void test()
 {
-	std::vector<int> result(2,0);
-	std::vector<std::vector<int>> transition(2,std::vector<int>(2,0));
-	std::vector<std::vector<int>> Identity(2,std::vector<int>(2,0));
-	assert(fibo(6, result , transition , Identity ,1000000007 ) == 8);
+    assert(fibo(6, 1000000007 ) == 8);
     std::cout << "test case:1 passed\n";
-    assert(fibo(5, result , transition , Identity ,1000000007  ) == 5);
+    assert(fibo(5, 1000000007  ) == 5);
     std::cout << "test case:2 passed\n";
-    assert(fibo(10 , result , transition , Identity , 1000000007) == 55);
+    assert(fibo(10 , 1000000007) == 55);
     std::cout << "test case:3 passed\n";
     std::cout << "--All tests passed--\n";
 }
+
 /**
  * Main function
  */
 int main()
 {
-	std::vector<int> result(2,0);
-	std::vector<std::vector<int>> transition(2,std::vector<int>(2,0));
-	std::vector<std::vector<int>> Identity(2,std::vector<int>(2,0));
 	test();
 	int mod=1000000007;
 	std::cout<<"Enter the value of N: ";
 	int n=0; std::cin>>n; 
-	std::cout<<n<<"th Fibonacci number :"<<fibo(n, result , transition , Identity , mod); 
+	std::cout<<n<<"th Fibonacci number :"<<fibo( n , mod); 
 }
