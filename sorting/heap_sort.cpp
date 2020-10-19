@@ -34,8 +34,8 @@
  *
  */
 template <typename T>
-void printArray(T *arr, unsigned size) {
-    for (unsigned i = 0; i < size; i++) {
+void printArray(T *arr, uint32_t size) {
+    for (uint32_t i = 0; i < size; i++) {
         std::cout << arr[i] << " ";
     }
 
@@ -58,10 +58,10 @@ void printArray(T *arr, unsigned size) {
  *
  */
 template <typename T>
-void heapify(T *arr, unsigned size, unsigned index) {
-    unsigned largest = index;
-    unsigned left = 2 * index + 1;
-    unsigned right = 2 * index + 2;
+void heapify(T *arr, uint32_t size, uint32_t index) {
+    uint32_t largest = index;
+    uint32_t left = 2 * index + 1;
+    uint32_t right = 2 * index + 2;
 
     if (left < size && arr[left] > arr[largest]) {
         largest = left;

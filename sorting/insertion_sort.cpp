@@ -53,11 +53,11 @@ namespace sorting {
  *
  * @tparam T type of array
  * @param [in,out] arr Array to be sorted
- * @param n Size of Array
+ * @param size Size of Array
  */
 template <typename T>
-void insertionSort(T *arr, unsigned size) {
-    for (unsigned i = 1; i < size; i++) {
+void insertionSort(T *arr, uint32_t size) {
+    for (uint32_t i = 1; i < size; i++) {
         T temp = arr[i];
         int j;
 
@@ -95,13 +95,13 @@ void insertionSort(std::vector<T> *arr) {
  *
  * @tparam T type of array
  * @param arr array to fill (must be pre-allocated)
- * @param N number of array elements
+ * @param size number of array elements
  */
 template <typename T>
-static void create_random_array(T *arr, int N) {
-    while (N--) {
+static void create_random_array(T *arr, int size) {
+    while (size--) {
         double r = (std::rand() % 10000 - 5000) / 100.f;
-        arr[N] = static_cast<T>(r);
+        arr[size] = static_cast<T>(r);
     }
 }
 
