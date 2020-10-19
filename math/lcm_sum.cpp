@@ -13,41 +13,46 @@
 #include <vector>   /// for std::vector
 
 /**
- * Function to compute sum of euler totients in sumOfEulerTotient vector
- * @param num input number
- * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
+ * @namespace math
+ * @brief Mathematical algorithms
  */
-int lcmSum(int num) {
+namespace math {
+    /**
+     * Function to compute sum of euler totients in sumOfEulerTotient vector
+     * @param num input number
+     * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
+     */
+    int lcmSum(int num) {
    
-    int i=0, j=0;
-    int limit = 1000;
-    std::vector <int> eulerTotient(limit);
-    std::vector <int> sumOfEulerTotient(limit);
+        int i=0, j=0;
+        int limit = 1000;
+        std::vector <int> eulerTotient(limit);
+        std::vector <int> sumOfEulerTotient(limit);
    
-    // storing initial values in eulerTotient vector
-    for(i=1; i<=limit; i++) {
-        eulerTotient[i] = i;
-    }
+        // storing initial values in eulerTotient vector
+        for(i=1; i<=limit; i++) {
+            eulerTotient[i] = i;
+        }
 
-    // applying totient sieve  
-    for(i=2; i<=limit; i++) {
-        if(eulerTotient[i] == i) {
-            for(j=i; j<=limit; j+=i) {
-                eulerTotient[j] = eulerTotient[j]/i;
-                eulerTotient[j] = eulerTotient[j]*(i-1);
+        // applying totient sieve  
+        for(i=2; i<=limit; i++) {
+            if(eulerTotient[i] == i) {
+                for(j=i; j<=limit; j+=i) {
+                    eulerTotient[j] = eulerTotient[j]/i;
+                    eulerTotient[j] = eulerTotient[j]*(i-1);
+                }
             }
         }
-    }
 
-    // computing sum of euler totients
-    for(i=1; i<=limit; i++) {
-        for(j=i; j <=limit; j+=i) {
-            sumOfEulerTotient[j] += eulerTotient[i]*i;
+        // computing sum of euler totients
+        for(i=1; i<=limit; i++) {
+            for(j=i; j <=limit; j+=i) {
+                sumOfEulerTotient[j] += eulerTotient[i]*i;
+            }
         }
+    
+        return ((sumOfEulerTotient[num] + 1 ) * num) / 2;
     }
-   
-    return ((sumOfEulerTotient[num] + 1 ) * num) / 2;
-}
 }  // namespace math
 
 /**
