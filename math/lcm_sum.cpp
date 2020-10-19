@@ -8,14 +8,14 @@
  * @author [Chesta Mittal](https://github.com/chestamittal)
  */
 
-#include <iostream> // for std::cin std::cout
-#include <cassert>  // for assert
-#include <vector>   // dor std::vector
+#include <iostream> /// for std::cin and std::cout
+#include <cassert>  /// for assert
+#include <vector>   /// for std::vector
 
 /**
  * Function to compute sum of euler totients in sumOfEulerTotient vector
  * @param num input number
- * @returns int
+ * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
  */
 int lcmSum(int num) {
    
