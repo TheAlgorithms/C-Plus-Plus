@@ -56,7 +56,7 @@ int lcmSum(int num) {
 */
 static void test() {
     int n = 2;
-    int test_1 = lcmSum(n);
+    int test_1 = math::lcmSum(n);
     assert(test_1 == 4);
     std::cout << "Passed Test 1!" << std::endl;
 
