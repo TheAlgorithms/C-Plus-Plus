@@ -47,8 +47,55 @@ std::vector<size_t> dfs(const std::vector<std::vector<size_t> > &graph, size_t s
 }
 }
 
-int main() {
+void tests() {
+	size_t start_pos;
 
+	/// Test 1
+	std::cout << "Case 1: " << std::endl;
+	start_pos = 1;
+	std::vector<std::vector<size_t> > g1(3, std::vector<size_t>());
+
+	graph::addEdge(&g1, 1, 2);
+	graph::addEdge(&g1, 2, 3);
+	graph::addEdge(&g1, 3, 1);
+
+	std::vector<size_t> expected1 {1, 2, 3}; /// for the above sample data, this is the expected output
+	assert(graph::dfs(g1, start_pos - 1) == expected1);
+	std::cout << "Passed" << std::endl;
+
+	/// Test 2
+	std::cout << "Case 2: " << std::endl;
+	start_pos = 1;
+	std::vector<std::vector<size_t> > g2(4, std::vector<size_t>());
+
+	graph::addEdge(&g2, 1, 2);
+	graph::addEdge(&g2, 1, 3);
+	graph::addEdge(&g2, 2, 4);
+	graph::addEdge(&g2, 4, 1);
+
+	std::vector<size_t> expected2 {1, 3, 2, 4}; /// for the above sample data, this is the expected output
+	assert(graph::dfs(g2, start_pos - 1) == expected2);
+	std::cout << "Passed" << std::endl;
+
+	/// Test 3
+	std::cout << "Case 3: " << std::endl;
+	start_pos = 2;
+	std::vector<std::vector<size_t> > g3(4, std::vector<size_t>());
+
+	graph::addEdge(&g3, 1, 2);
+	graph::addEdge(&g3, 1, 3);
+	graph::addEdge(&g3, 2, 4);
+	graph::addEdge(&g3, 4, 1);
+
+	std::vector<size_t> expected3 {2, 4, 1, 3}; /// for the above sample data, this is the expected output
+	assert(graph::dfs(g3, start_pos - 1) == expected3);
+	std::cout << "Passed" << std::endl;
+
+}
+
+int main() {
+    tests();
+    
     size_t vertices = 0, edges = 0, start_pos = 1;
 	std::vector<size_t> traversal;
 
