@@ -83,7 +83,7 @@ static void test() {
 
 /**
 * main function
-*/
+ */
 int main() {
     test();
     return 0;
