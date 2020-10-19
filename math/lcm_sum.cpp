@@ -85,6 +85,6 @@ static void test() {
 * main function
  */
 int main() {
-    test();
+    test();  // execute the tests
     return 0;
 }
