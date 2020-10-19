@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+#include <cstring>
 using namespace std;
 
 int max(int a, int b) { return (a > b) ? a : b; }
