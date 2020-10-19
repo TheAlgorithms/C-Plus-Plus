@@ -40,25 +40,25 @@
 
 //-----Pseudo Code------
 // 1.
- // create G` where G`.V = G.V + {s},
-     //   G`.E = G.E + ((s, u) for u in G.V), and
-      //  weight(s, u) = 0 for u in G.V
+// create G` where G`.V = G.V + {s},
+//   G`.E = G.E + ((s, u) for u in G.V), and
+//  weight(s, u) = 0 for u in G.V
 
 // 2.
-   //if Bellman-Ford(s) == False
-      //return "The input graph has a negative weight cycle"
-  //  else:
-    //    for vertex v in G`.V:
-   //         h(v) = distance(s, v) computed by Bellman-Ford
-    //    for edge (u, v) in G`.E:
-     //       weight`(u, v) = weight(u, v) + h(u) - h(v)
+//if Bellman-Ford(s) == False
+//return "The input graph has a negative weight cycle"
+//  else:
+//    for vertex v in G`.V:
+//         h(v) = distance(s, v) computed by Bellman-Ford
+//    for edge (u, v) in G`.E:
+//       weight`(u, v) = weight(u, v) + h(u) - h(v)
 
-     //   D = new matrix of distances initialized to infinity
-      //  for vertex u in G.V:
-      //      run Dijkstra(G, weight`, u) to compute distance`(u, v) for all v in G.V
-         //   for each vertex v in G.V:
-       //         D_(u, v) = distance`(u, v) + h(v) - h(u)
-       // return D
+//   D = new matrix of distances initialized to infinity
+//  for vertex u in G.V:
+//      run Dijkstra(G, weight`, u) to compute distance`(u, v) for all v in G.V
+//   for each vertex v in G.V:
+//         D_(u, v) = distance`(u, v) + h(v) - h(u)
+// return D
 
 
 
@@ -109,20 +109,7 @@ main() {
 }
 
 
-//-----OUTPUT--------
 
-//Enter no of vertices: 3
-//Enter no of edges: 5
-//Enter the EDGE Costs:
-//1 2 8
-//2 1 12
-//1 3 22
-//3 1 6
-//2 3 4
-//Resultant adj matrix
-//0 8 12
-//10 0 4
-//6 14 0
 
 
 
