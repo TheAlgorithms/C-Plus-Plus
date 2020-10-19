@@ -71,7 +71,7 @@ static void test() {
     std::cout << "Passed Test 3!" << std::endl;
 
     n = 11;
-    int test_4 = lcmSum(n);
+    int test_4 = math::lcmSum(n);
     assert(test_4 == 616);
     std::cout << "Passed Test 4!" << std::endl;
 
