@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a35ab6f1b2840f89a858ca36b78739b69":[9,0,6,0,0,0,1],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a494d39f6c367071d1fd31b3c1caf1a7d":[9,0,6,0,0,0,10],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6385ad4d8186b8a74b17e4a8dc41da11":[9,0,6,0,0,0,6],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a6c859e3737aa88b29854df0347b29f4e":[9,0,6,0,0,0,4],
@@ -108,8 +107,8 @@ var NAVTREEINDEX5 =
 "dd/d65/lu__decompose_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0":[10,0,11,6,2],
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[10,0,11,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[10,0,11,6,1],
+"dd/d69/namespacerange__queries.html":[8,0,31],
 "dd/d69/namespacerange__queries.html":[9,0,9],
-"dd/d69/namespacerange__queries.html":[8,0,30],
 "dd/d81/namespacecaesar.html":[8,0,2],
 "dd/d91/class_fenwick_tree.html":[9,0,18],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[9,0,18,4],
@@ -210,7 +209,7 @@ var NAVTREEINDEX5 =
 "df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[10,0,12,1,2],
 "df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[10,0,12,1,1],
 "df/d06/decimal__to__binary_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,1,0],
-"df/d10/namespacepancake__sort.html":[8,0,26],
+"df/d10/namespacepancake__sort.html":[8,0,27],
 "df/d39/interpolation__search2_8cpp.html":[10,0,15,5],
 "df/d39/interpolation__search2_8cpp.html#aa3ec659ec8394d186c761df81ad1f629":[10,0,15,5,0],
 "df/d39/interpolation__search2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,5,1],
@@ -230,7 +229,7 @@ var NAVTREEINDEX5 =
 "df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[10,0,11,15,0],
 "df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,11,15,2],
 "df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[10,0,11,15,1],
-"df/dcb/namespacestrings.html":[8,0,41],
+"df/dcb/namespacestrings.html":[8,0,42],
 "df/dce/namespacegraph.html":[9,0,4],
 "df/dce/namespacegraph.html":[8,0,9],
 "df/dd0/queue__using__two__stacks_8cpp.html":[10,0,2,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326":[10,0,10,23,0],
 "df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9":[10,0,10,23,2],
 "df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f":[10,0,10,23,3],
-"df/def/power__for__huge__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,23,1]
+"df/def/power__for__huge__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,23,1],
+"df/dfb/minimax_8cpp.html":[10,0,0,2]
 };

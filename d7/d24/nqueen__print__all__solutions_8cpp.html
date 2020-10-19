@@ -282,13 +282,13 @@ template&lt;size_t n&gt; </div>
 </dl>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                             {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (col &gt;= n) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        PrintSol(board);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a04090463be4942a69ea91fe7386da905">PrintSol</a>(board);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (CanIMove(board, i, col)) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a9e48455584a4faa33e83dd1891efd9b9">CanIMove</a>(board, i, col)) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            board[i][col] = 1;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            NQueenSol(board, col + 1);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f">NQueenSol</a>(board, col + 1);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            board[i][col] = 0;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
@@ -345,9 +345,12 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="an__queens__all__solution__optimised_8cpp_html_a9e48455584a4faa33e83dd1891efd9b9"><div class="ttname"><a href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a9e48455584a4faa33e83dd1891efd9b9">backtracking::n_queens_optimized::CanIMove</a></div><div class="ttdeci">bool CanIMove(const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;board, int row, int col)</div><div class="ttdef"><b>Definition:</b> n_queens_all_solution_optimised.cpp:59</div></div>
 <div class="ttc" id="anqueen__print__all__solutions_8cpp_html_acc809c055f335011de0d9030034c7108"><div class="ttname"><a href="../../d7/d24/nqueen__print__all__solutions_8cpp.html#acc809c055f335011de0d9030034c7108">backtracking::n_queens_all_solutions::NQueenSol</a></div><div class="ttdeci">void NQueenSol(std::array&lt; std::array&lt; int, n &gt;, n &gt; board, int col)</div><div class="ttdef"><b>Definition:</b> nqueen_print_all_solutions.cpp:79</div></div>
+<div class="ttc" id="an__queens__all__solution__optimised_8cpp_html_a23c0547e4fd1708e6fb643b08327a60f"><div class="ttname"><a href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a></div><div class="ttdeci">void NQueenSol(std::array&lt; std::array&lt; int, n &gt;, n &gt; board, int col)</div><div class="ttdef"><b>Definition:</b> n_queens_all_solution_optimised.cpp:89</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div><div class="ttdoc">STL class.</div></div>
+<div class="ttc" id="an__queens__all__solution__optimised_8cpp_html_a04090463be4942a69ea91fe7386da905"><div class="ttname"><a href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a04090463be4942a69ea91fe7386da905">backtracking::n_queens_optimized::PrintSol</a></div><div class="ttdeci">void PrintSol(const std::array&lt; std::array&lt; int, n &gt;, n &gt; &amp;board)</div><div class="ttdef"><b>Definition:</b> n_queens_all_solution_optimised.cpp:30</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

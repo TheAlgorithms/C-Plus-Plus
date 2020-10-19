@@ -209,12 +209,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d8/d10/structlist.html">link</a> p, n;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> index;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    n = (<a class="code" href="../../d1/df3/hash__search_8cpp.html#ad6fcd983304f85afa199d97a9b0ca9f6">link</a>)<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/c/malloc.html">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="../../d5/da1/structnode.html">node</a>));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    n-&gt;key = key;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    n-&gt;next = NULL;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    n-&gt;<a class="code" href="../../d8/d10/structlist.html#aaab2e33bc1ca6f44e72239bfb58f100c">key</a> = key;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    n-&gt;<a class="code" href="../../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f">next</a> = NULL;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    index = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>(key);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    p = <a class="code" href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a>[index].next;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (p != NULL) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        n-&gt;next = p;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        n-&gt;<a class="code" href="../../d8/d10/structlist.html#a1900fe79e875e2838625b2eb60837f8f">next</a> = p;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a>[index].next = n;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d">hashtab</a>[index].next = n;</div>
