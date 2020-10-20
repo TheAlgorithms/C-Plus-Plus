@@ -1,6 +1,6 @@
 /**
- * @file fibonacci_matrix_exponentiation.cpp
- * @brief Computes N^th Fibonacci number given as
+ * @file 
+ * @brief This program computes the N^th Fibonacci number in modulo mod
  * input argument .
  *
  * Takes O(logn) time to compute nth Fibonacci number
@@ -16,15 +16,15 @@
 #include <cassert>
 
 /**
- * This function finds nth fibonacci number.
+ * This function finds nth fibonacci number in a given modulus
  * @param n nth fibonacci number
- * @param mod  modulo number to avoid overflow
+ * @param mod  modulo number 
  */
-int fibo(int n , int mod )
+uint64_t fibo(uint64_t n , uint64_t mod )
 {
-	std::vector<int> result(2,0);
-	std::vector<std::vector<int>> transition(2,std::vector<int>(2,0));
-	std::vector<std::vector<int>> Identity(2,std::vector<int>(2,0));
+	std::vector<uint64_t> result(2,0);
+	std::vector<std::vector<uint64_t>> transition(2,std::vector<uint64_t>(2,0));
+	std::vector<std::vector<uint64_t>> Identity(2,std::vector<uint64_t>(2,0));
 	n--;
 	result[0]=1, result[1]=1;
 	Identity[0][0]=1; Identity[0][1]=0;
@@ -37,7 +37,7 @@ int fibo(int n , int mod )
 	{
 		if(n%2)
 		{
-			std::vector<std::vector<int>> res(2, std::vector<int>(2,0));
+			std::vector<std::vector<uint64_t>> res(2, std::vector<uint64_t>(2,0));
 	                for(int i=0;i<2;i++)
 			{
 				for(int j=0;j<2;j++)
@@ -58,7 +58,7 @@ int fibo(int n , int mod )
 			n--;
 		}
 		else{
-			std::vector<std::vector<int>> res1(2, std::vector<int>(2,0));
+			std::vector<std::vector<uint64_t>> res1(2, std::vector<uint64_t>(2,0));
 			for(int i=0;i<2;i++)
 			{
 				for(int j=0;j<2;j++)
@@ -93,6 +93,10 @@ void test()
     std::cout << "test case:2 passed\n";
     assert(fibo(10 , 1000000007) == 55);
     std::cout << "test case:3 passed\n";
+    assert(fibo(500 , 100) == 25);
+    std::cout << "test case:3 passed\n";
+    assert(fibo(500 , 10000) == 4125);
+    std::cout << "test case:3 passed\n";
     std::cout << "--All tests passed--\n";
 }
 
@@ -102,8 +106,8 @@ void test()
 int main()
 {
 	test();
-	int mod=1000000007;
+	uint64_t mod=1000000007;
 	std::cout<<"Enter the value of N: ";
-	int n=0; std::cin>>n; 
-	std::cout<<n<<"th Fibonacci number :"<<fibo( n , mod); 
+	uint64_t n=0; std::cin>>n; 
+	std::cout<<n<<"th Fibonacci number in modulo " << mod << ": "<< fibo( n , mod) << std::endl;
 }
