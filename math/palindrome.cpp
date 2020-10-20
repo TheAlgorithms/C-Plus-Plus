@@ -13,7 +13,7 @@ int main()
 		n=n/10;
 		i++;
 	}
-	for(int j=0;j<i/2;j++)
+	for(int j=0;j<=i/2;j++)
 	{
 		if(a[j]!=a[i-j-1])
 		{
