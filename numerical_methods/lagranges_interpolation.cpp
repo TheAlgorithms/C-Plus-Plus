@@ -1,11 +1,11 @@
-
 /*@brief C++ program for implementation of Lagrange's Interpolation 
 [https://en.wikipedia.org/wiki/Lagrange_polynomial]
 Interpolation is the technique to estimate the value of a mathematical function,
 for any intermediate value of the independent variable.
 lagranges interpolation:
-f(x)=((X-X1)(X-X3)....(X-Xn)/(X1-X2)(X1-X3)(X1-Xn))*Y1 +........((X-X1)(X-X2)...(X-Xn-1)/(Xn-X1)(Xn-X2)....(Xn-Xn-1))*Yn
+f(x)=((X-X1)(X-X3)....(X-Xn)/(X1-X2)(X1-X3)(X1-Xn))*Y1 +........((X-X1)(X-X2)...(X-Xn-1)/(Xn-X1)(Xn-X2)....(Xn-Xn-1))*Yn    
 */
+
 #include<bits/stdc++.h> 
 using namespace std; 
 
@@ -40,7 +40,7 @@ double interpolate(Data f[], int xi, int n)
 	return result; 
 } 
 
-// driver function to check the program 
+/* Main function */
 int main() 
 { 
      int n,t;
