@@ -1,18 +1,29 @@
+/**
+ * @file
+ * @brief Implement a last in first out (LIFO) stack using queues.
+          The implemented stack should support all the functions of a normal queue (push, top, pop, and empty).
+ * @author [Neha Labhasetwar](https://github.com/nehalabhasetwar)
+ */
+
 #include <iostream>
 #include <queue>
+#include <cassert>
 
 class MyStack
 {
+    /** initialize queue */
     std::queue <int> q;
 
     public:
 
-    /** Initialize your data structure here. **/
+    MyStack() = default;                                 //default constructor
 
-    MyStack() {                                   //default constructor
-    }
+/**
+ * Function to  Push element onto stack.
+ * @param x number to be pushed.
+ * @return void.
+ */
 
-    /** Push element onto stack. */
     void push(int x)
     {
         q.push(x);                                  //let's assume x=3,queue=1,2 , then queue will become 1,2,3
@@ -25,7 +36,9 @@ class MyStack
         }
     }
 
-    /** Removes the element on top of the stack and returns that element. */
+/** Function to Remove the element on top of the stack and return that element.
+ *  @return element that is deleted from the stack. */
+
     int pop()
     {
         int y=q.front();
@@ -33,52 +46,61 @@ class MyStack
         return y;
     }
 
-    /** Get the top element. */
+/** Function to Get the topmost element from stack.
+ *  @return element on the top of stack. */
+
     int top()
     {
         return q.front();
     }
 
-    /** Returns whether the stack is empty. */
+/** Function to Return whether the stack is empty.
+ *  @return if stack is empty, returns true, else false.*/
+
     bool empty()
     {
         return q.empty();
     }
 };
 
+
+/** Testing function.
+ *  @returns void. */
+
+void stack_test()
+{
+    MyStack obj;
+    std::cout << "Test #1\n";
+    obj.push(2);
+    obj.push(5);
+    obj.push(0);
+    assert(obj.top() == 0);
+    assert(obj.pop() == 0);
+    assert(obj.top() == 5);
+    assert(obj.pop() == 5);
+    assert(obj.top() == 2);
+    assert(obj.pop() == 2);
+    assert(obj.empty() == true);
+    std::cout << "PASSED\n";
+
+    std::cout << "Test #2\n";
+    obj.push(-1);
+    assert(obj.empty() == false);
+    assert(obj.top() == -1);
+    assert(obj.pop() == -1);
+    std::cout << "PASSED\n";
+}
+
+
+
+/** Main function
+ * @returns 0 on exit
+ */
+
+
 int main()
 {
-   MyStack obj;
-   int ch, x;
-
-    do {
-        std::cout << "\n0. Exit";
-         std::cout << "\n1. Push";
-         std::cout << "\n2. Pop";
-         std::cout << "\n3. Print topmost element:";
-         std::cout << "\n4. check whether the stack is empty";
-         std::cout << "\nEnter Your Choice : ";
-         std::cin >> ch;
-
-        if (ch == 1)
-            {
-                 std::cout << "\nInsert : ";
-                 std::cin >> x;
-                obj.push(x);
-        } else if (ch == 2)
-        {
-             std::cout<<obj.pop()<<" deleted\n";
-        } else if (ch == 3)
-        {
-             std::cout<<"topmost element : "<<obj.top()<<"\n";
-        } else if(ch == 4)
-        {
-             std::cout<<"status (true/1) or (false/0) : "<<obj.empty()<<"\n";
-        }
-    } while (ch != 0);
-
-
+    stack_test();
     return 0;
-
 }
 
