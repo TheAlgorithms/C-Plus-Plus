@@ -42,7 +42,16 @@ constexpr int BLACK = 2; /// indicates node has already been explored
 constexpr int64_t INF = std::numeric_limits<int16_t>::max();
 
 
+/**
+ * @namespace graph
+ * @brief Graph algorithms
+ */
 namespace graph {
+/**
+ * @namespace depth_first_search
+ * @brief Functions for [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search) algorithm
+ */
+namespace depth_first_search {
 /**
  * @brief
  * Adds and edge between two vertices of graph say u and v in this
@@ -105,13 +114,14 @@ std::vector<size_t> dfs(const std::vector<std::vector<size_t> > &graph, size_t s
     }
     return traversed_path;
 }
-} /// namespace graph
+}  // namespace depth_first_search
+}  // namespace graph
 
 /**
  * Self-test implementation
  * @returns none
  */
-void tests() {
+static void tests() {
 	size_t start_pos;
 
 	/// Test 1
@@ -119,12 +129,12 @@ void tests() {
 	start_pos = 1;
 	std::vector<std::vector<size_t> > g1(3, std::vector<size_t>());
 
-	graph::addEdge(&g1, 1, 2);
-	graph::addEdge(&g1, 2, 3);
-	graph::addEdge(&g1, 3, 1);
+	graph::depth_first_search::addEdge(&g1, 1, 2);
+	graph::depth_first_search::addEdge(&g1, 2, 3);
+	graph::depth_first_search::addEdge(&g1, 3, 1);
 
 	std::vector<size_t> expected1 {1, 2, 3}; /// for the above sample data, this is the expected output
-	assert(graph::dfs(g1, start_pos - 1) == expected1);
+	assert(graph::depth_first_search::dfs(g1, start_pos - 1) == expected1);
 	std::cout << "Passed" << std::endl;
 
 	/// Test 2
@@ -132,13 +142,13 @@ void tests() {
 	start_pos = 1;
 	std::vector<std::vector<size_t> > g2(4, std::vector<size_t>());
 
-	graph::addEdge(&g2, 1, 2);
-	graph::addEdge(&g2, 1, 3);
-	graph::addEdge(&g2, 2, 4);
-	graph::addEdge(&g2, 4, 1);
+	graph::depth_first_search::addEdge(&g2, 1, 2);
+	graph::depth_first_search::addEdge(&g2, 1, 3);
+	graph::depth_first_search::addEdge(&g2, 2, 4);
+	graph::depth_first_search::addEdge(&g2, 4, 1);
 
 	std::vector<size_t> expected2 {1, 3, 2, 4}; /// for the above sample data, this is the expected output
-	assert(graph::dfs(g2, start_pos - 1) == expected2);
+	assert(graph::depth_first_search::dfs(g2, start_pos - 1) == expected2);
 	std::cout << "Passed" << std::endl;
 
 	/// Test 3
@@ -146,13 +156,13 @@ void tests() {
 	start_pos = 2;
 	std::vector<std::vector<size_t> > g3(4, std::vector<size_t>());
 
-	graph::addEdge(&g3, 1, 2);
-	graph::addEdge(&g3, 1, 3);
-	graph::addEdge(&g3, 2, 4);
-	graph::addEdge(&g3, 4, 1);
+	graph::depth_first_search::addEdge(&g3, 1, 2);
+	graph::depth_first_search::addEdge(&g3, 1, 3);
+	graph::depth_first_search::addEdge(&g3, 2, 4);
+	graph::depth_first_search::addEdge(&g3, 4, 1);
 
 	std::vector<size_t> expected3 {2, 4, 1, 3}; /// for the above sample data, this is the expected output
-	assert(graph::dfs(g3, start_pos - 1) == expected3);
+	assert(graph::depth_first_search::dfs(g3, start_pos - 1) == expected3);
 	std::cout << "Passed" << std::endl;
 
 }
@@ -162,7 +172,7 @@ void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests();  // execute the tests
 
     size_t vertices = 0, edges = 0, start_pos = 1;
 	std::vector<size_t> traversal;
@@ -180,14 +190,14 @@ int main() {
 	while (edges--) {
 		size_t u = 0, v = 0;
 		std::cin >> u >> v;
-		graph::addEdge(&adj, u, v);
+		graph::depth_first_search::addEdge(&adj, u, v);
 	}
 
     /// taking input for the starting position
     std::cout << "Enter the starting vertex [1,n]: " << std::endl;
 	std::cin >> start_pos;
 	start_pos -= 1;
-	traversal = graph::dfs(adj, start_pos);
+	traversal = graph::depth_first_search::dfs(adj, start_pos);
 
     /// Printing the order of traversal
     for (auto x : traversal) {
