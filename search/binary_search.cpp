@@ -1,56 +1,42 @@
-/**
- * @file
- * @brief [Binary search
- * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
- */
 #include <iostream>
+using namespace std;
 
-/** binary_search function
- * \param [in] a array to sort
- * \param [in] r right hand limit = \f$n-1\f$
- * \param [in] key value to find
- * \returns index if T is found
- * \return -1 if T is not found
- */
-int binary_search(int a[], int r, int key) {
-    int l = 0;
+int main()
+{
+	int count, i, arr[30], num, first, last, middle;
+	cout<<"how many elements would you like to enter?:"; 
+        cin>>count;
 
-    while (l <= r) {
-        int m = l + (r - l) / 2;
-        if (key == a[m])
-            return m;
-        else if (key < a[m])
-            r = m - 1;
-        else
-            l = m + 1;
-    }
-    return -1;
-}
+	for (i=0; i<count; i++)
+	{
+		cout<<"Enter number "<<(i+1)<<": "; 
+                cin>>arr[i];
+	}
+	cout<<"Enter the number that you want to search:"; 
+        cin>>num;
+	first = 0;
+	last = count-1;
+	middle = (first+last)/2;
+	while (first <= last)
+	{
+	   if(arr[middle] < num)
+	   {
+		first = middle + 1;
 
-/** main function */
-int main(int argc, char const* argv[]) {
-    int n, key;
-    std::cout << "Enter size of array: ";
-    std::cin >> n;
-    std::cout << "Enter array elements: ";
-
-    int* a = new int[n];
-
-    // this loop use for store value in Array
-    for (int i = 0; i < n; i++) {
-        std::cin >> a[i];
-    }
-
-    std::cout << "Enter search key: ";
-    std::cin >> key;
-
-    // this is use for find value in given array
-    int res = binary_search(a, n - 1, key);
-    if (res != -1)
-        std::cout << key << " found at index " << res << std::endl;
-    else
-        std::cout << key << " not found" << std::endl;
-
-    delete[] a;
-    return 0;
+	   }
+	   else if(arr[middle] == num)
+	   {
+		cout<<num<<" found in the array at the location "<<middle+1<<"\n"; 
+                break; 
+           } 
+           else { 
+                last = middle - 1; 
+           } 
+           middle = (first + last)/2; 
+        } 
+        if(first > last)
+	{
+	   cout<<num<<" not found in the array";
+	}
+	return 0;
 }
