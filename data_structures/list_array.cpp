@@ -11,25 +11,25 @@ struct list {
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(std::array<int, 50>& array, int first, int last, int x) {
+    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last, int x) {
         if (last < first) {
             return -1;
         }
         int mid = (first + last) / 2;
-        if (array[mid] == x)
+        if (dataArr[mid] == x)
             return mid;
-        else if (x < array[mid])
-            return (BinarySearch(array, first, mid - 1, x));
-        else if (x > array[mid])
-            return (BinarySearch(array, mid + 1, last, x));
+        else if (x < dataArr[mid])
+            return (BinarySearch(dataArr, first, mid - 1, x));
+        else if (x > dataArr[mid])
+            return (BinarySearch(dataArr, mid + 1, last, x));
 
         std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
         return -1;
     }
 
-    int LinearSearch(std::array<int, 50>& array, int x) const {
+    int LinearSearch(const std::array<int, 50>& dataArr, int x) const {
         for (int i = 0; i < top; i++) {
-            if (array[i] == x) {
+            if (dataArr[i] == x) {
                 return i;
             }
         }
