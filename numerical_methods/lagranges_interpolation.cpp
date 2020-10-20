@@ -1,5 +1,5 @@
-/*
-@brief C++ program for implementation of Lagrange's Interpolation 
+
+/*@brief C++ program for implementation of Lagrange's Interpolation 
 [https://en.wikipedia.org/wiki/Lagrange_polynomial]
 Interpolation is the technique to estimate the value of a mathematical function,
 for any intermediate value of the independent variable.
@@ -16,8 +16,9 @@ struct Data
 }; 
 
 // function to interpolate the given data points using Lagrange's formula 
-// xi corresponds to the new data point whose value is to be obtained 
-// n represents the number of known data points 
+// @param xi corresponds to the new data point whose value is to be obtained 
+// @param n represents the number of known data points 
+// return value of the interpolate function 
 double interpolate(Data f[], int xi, int n) 
 { 
 	double result = 0; // Initialize result 
