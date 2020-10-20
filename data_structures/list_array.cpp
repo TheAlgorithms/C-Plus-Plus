@@ -6,7 +6,7 @@
 #include <iostream>
 
 struct list {
-    int data[50];
+    int data[50]{};
     int top = 0;
     bool isSorted = false;
 
@@ -26,7 +26,7 @@ struct list {
         return -1;
     }
 
-    int LinarSearch(int *array, int x) {
+    int LinearSearch(const int *array, int x) const {
         for (int i = 0; i < top; i++) {
             if (array[i] == x) {
                 return i;
@@ -37,12 +37,12 @@ struct list {
     }
 
     int Search(int x) {
-        int pos = -1;
+        int pos;
 
         if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, x);
         } else {
-            pos = LinarSearch(data, x);
+            pos = LinearSearch(data, x);
         }
 
         if (pos != -1) {
@@ -131,27 +131,29 @@ int main() {
         std::cout << "\n\nEnter Your Choice : ";
         std::cin >> choice;
         switch (choice) {
-        case 1:
-            std::cout << "\nEnter the element to be inserted : ";
-            std::cin >> x;
-            L.insert(x);
-            break;
-        case 2:
-            std::cout << "\nEnter the element to be removed : ";
-            std::cin >> x;
-            L.Remove(x);
-            break;
-        case 3:
-            std::cout << "\nEnter the element to be searched : ";
-            std::cin >> x;
-            L.Search(x);
-            break;
-        case 4:
-            L.Sort();
-            break;
-        case 5:
-            L.Show();
-            break;
+            case 1:
+                std::cout << "\nEnter the element to be inserted : ";
+                std::cin >> x;
+                L.insert(x);
+                break;
+            case 2:
+                std::cout << "\nEnter the element to be removed : ";
+                std::cin >> x;
+                L.Remove(x);
+                break;
+            case 3:
+                std::cout << "\nEnter the element to be searched : ";
+                std::cin >> x;
+                L.Search(x);
+                break;
+            case 4:
+                L.Sort();
+                break;
+            case 5:
+                L.Show();
+                break;
+            default:
+                std::cout << "\nplease enter valid option.";
         }
     } while (choice != 0);
     return 0;
