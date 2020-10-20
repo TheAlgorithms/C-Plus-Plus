@@ -89,7 +89,8 @@ namespace fibonacci_sum {
     int fiboSum(int n,int m){
         return (result(m+2) - result(n+1));
     }
-}//namespace math
+}  // namespace fibonacci_sum
+}  // namespace math
  
 /**
  * Function for testing fiboSum function.
