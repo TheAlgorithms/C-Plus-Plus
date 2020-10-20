@@ -112,10 +112,10 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 		double valsec=numerical_methods::runge_kutta::rungeKutta(1,2,5,0.1);  // The value of step changed
 		assert(valsec==3.406);
 		std::cout << "Passed Test 2\n";
-		
+
 		std::cout << "Test 3...." << "\n";
-		double valfirst=numerical_methods::runge_kutta::rungeKutta(-1,3,4,0.1); // Tested with negative value
-		assert(valfirst==2.49251);
+		double valthird=numerical_methods::runge_kutta::rungeKutta(-1,3,4,0.1); // Tested with negative value
+		assert(valthird==2.49251);
 		std::cout << "Passed Test 3\n";
 	}
 	
