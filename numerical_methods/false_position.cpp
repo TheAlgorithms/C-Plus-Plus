@@ -33,7 +33,7 @@ static double eq(double x) {
 }
 
 /**
-* This function finds root of the equation in given interval i.e. (x1,x2).
+* @brief This function finds root of the equation in given interval i.e. (x1,x2).
 * @param x1,x2 values for an interval in which root is present.
   @param y1,y2 values of function at x1, x2 espectively.
 * @return root of the equation in the given interval.
@@ -60,7 +60,7 @@ static double regula_falsi(double x1,double x2,double y1,double y2){
 }
 
 /**
-* This function prints roots of the equation.
+* @brief This function prints roots of the equation.
 * @param root which we have to print. 
 * @param COUNT which is count of the root in an interval [-RANGE,RANGE].
 */  
@@ -80,7 +80,10 @@ void printRoot(double root,int COUNT){
 }
 
 
-/** main function */
+/**
+* @brief Main function
+* @returns 0 on exit
+*/
 int main() {
     double a=0, b=0,i=0,root=0;
     int COUNT=0;
