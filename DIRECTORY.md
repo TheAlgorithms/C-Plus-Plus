@@ -135,6 +135,7 @@
   * [Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci.cpp)
   * [Fibonacci Fast](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_fast.cpp)
   * [Fibonacci Large](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_large.cpp)
+  * [Fibonacci Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_sum.cpp)
   * [Gcd Iterative Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_iterative_euclidean.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
