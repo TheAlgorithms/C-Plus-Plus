@@ -1,5 +1,4 @@
 /**
-
 * @brief Implementation of Lagrange's Interpolation 
 * [https://en.wikipedia.org/wiki/Lagrange_polynomial]
 * Interpolation is the technique to estimate the value of a mathematical function,
@@ -14,14 +13,17 @@
 using namespace std; 
 
 // To represent a data point corresponding to x and y = f(x) 
+
 struct Data 
 { 
 	double x, y; 
 }; 
+
 // function to interpolate the given data points using Lagrange's formula 
 // @param xi corresponds to the new data point whose value is to be obtained 
 // @param n represents the number of known data points 
 // return value of the interpolate function 
+
 double interpolate(Data f[], int xi, int n) 
 { 
 	double ans = 0; // Initialize result 
@@ -46,7 +48,7 @@ double interpolate(Data f[], int xi, int n)
 static void test()
 {
 	Data g[5]={{5,150}, {7,392}, {11,1452}, {13,2366},{17,5202}}; 
-    Data k[4]={{5,12},{6,13},{9,14},{11,16}};
+        Data k[4]={{5,12},{6,13},{9,14},{11,16}};
 	double test_case_1=interpolate(g,9,5);
 	assert(test_case_1!=810);
 	cout<<"Passed Test 1!"<<endl;
