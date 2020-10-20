@@ -4,13 +4,14 @@
  * @warning The sorting algorithm is erroneous
  */
 #include <iostream>
+#include <array>
 
 struct list {
-    int data[50]{};
+    std::array<int, 50> data{};
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(int *array, int first, int last, int x) {
+    int BinarySearch(std::array<int, 50>& array, int first, int last, int x) {
         if (last < first) {
             return -1;
         }
@@ -26,7 +27,7 @@ struct list {
         return -1;
     }
 
-    int LinearSearch(const int *array, int x) const {
+    int LinearSearch(std::array<int, 50>& array, int x) const {
         for (int i = 0; i < top; i++) {
             if (array[i] == x) {
                 return i;
@@ -54,7 +55,7 @@ struct list {
     }
 
     void Sort() {
-        int i, j, pos;
+        int i, j, pos=0;
         for (i = 0; i < top; i++) {
             int min = data[i];
             for (j = i + 1; j < top; j++) {
@@ -131,6 +132,8 @@ int main() {
         std::cout << "\n\nEnter Your Choice : ";
         std::cin >> choice;
         switch (choice) {
+            case 0:
+                break;
             case 1:
                 std::cout << "\nEnter the element to be inserted : ";
                 std::cin >> x;
