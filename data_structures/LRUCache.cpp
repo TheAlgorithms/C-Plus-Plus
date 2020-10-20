@@ -43,10 +43,10 @@ public:
 
     /**
     * Constructor Function
-    * Accepts 2 values key and value for all new instaces of class node created.
-    * @param param1 on-line info about param1
-    * @param param2 on-line info about param2
-    * @returns void
+    * Accepts 2 parameters key and value for all new instaces of class node created.
+    * @param key : Key
+    * @param val : Value
+    * @returns NOTHING
     */
     node( KEY_TYPE key, VALUE_TYPE val ) {
         this->key = key ;
@@ -56,18 +56,31 @@ public:
 };
 
 /**
- * Class node
+ * Class LRUCache
  * @tparam KEY_TYPE: Identifies Data type of Key. 
  * @tparam VALUE_TYPE: Identifies Data type of Value. 
- * Class node to build up and implement doubly circular linked lists
- * which will be used as LRU Cache DS.
+ * Main Class LRUCache.
+ * Attributes:-
+ * - node *root ///< Will contain LRU value
+ * - unordered_map< KEY_TYPE, node* > ///< TO keep trck od addresses of all nodes involved in linked list.
+ * Methods:- 
+ * - LRUCache(int): Constructor Function
+ * - VALUE_TYPE get(KEY_TYPE): Function to query on the LRU
+ * - void put(KEY_TYPE, VALUE_TYPE): Function to add/update a key in LRU.
  */
 template<typename KEY_TYPE, typename VALUE_TYPE>
 class LRUCache {
 public:
     node *root ;
-    unordered_map< int, node* > addr ;
-    
+    unordered_map< KEY_TYPE, node* > addr ;
+
+    /**
+    * Constructor Function
+    * Accepts one parameter, the physical size for LRU.
+    * Creates a doubly circular linked list containg {capacity} number of nodes.
+    * @param capacity the physical size for LRU as needed for particular instance.
+    * @returns NOTHING
+    */
     LRUCache(int capacity) {
         
         this->root = new node(-1,-1) ;
@@ -82,9 +95,16 @@ public:
         
         // CLL of size capacity initialized.
         
-    }
-    
-    int get(int key) {
+    }    
+
+    /**
+    * get Function
+    * Accepts one parameter, the key whose value needs to be returned.
+    * Returns the value of the key if the key exists, otherwise returns -1.
+    * @param key : value for this key is to be returned.
+    * @returns NOTHING
+    */
+    VALUE_TYPE get(KEY_TYPE key) {
         auto found = addr.find(key) ;
         
         if ( found == addr.end() )
@@ -108,7 +128,16 @@ public:
         return found->second->val ;
     }
     
-    void put(int key, int value) {
+    /**
+    * put Function
+    * Accepts two parameters key and value. Updates the value of the key if the key exists. 
+    * Otherwise, adds the key-value pair to the cache. If the number of keys exceeds the 
+    * capacity from this operation, the function evicts the least recently used key.
+    * @param key : The key to be added or updated.
+    * @param value : Value for the respective key to be stored.
+    * @returns NOTHING
+    */
+    void put(KEY_TYPE key, VALUE_TYPE value) {
         
         if ( addr.find(key) == addr.end() ){
             if ( this->root->key != -1 and this->root->val != -1 ) {
@@ -123,25 +152,6 @@ public:
         addr[key]->val = value ;
     }
 };
-
-
-/**
- * Function documentation
- * @tparam T this is a one-line info about T
- * @param param1 on-line info about param1
- * @param param2 on-line info about param2
- * @returns `true` if ...
- * @returns `false` if ...
- */
-template<class T>
-bool func(int param1, T param2) {
-    // function statements here
-    if (/*something bad*/) {
-        return false;
-    }
-
-    return true;
-}
 
 /**
  * @brief Main function
