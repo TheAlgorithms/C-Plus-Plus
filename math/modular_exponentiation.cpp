@@ -48,7 +48,10 @@ int power(int a, unsigned int b, int c)
 	return ans; 
 } 
 
-/// Main Function
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() 
 { 	
 	/// Give two numbers num1, num2 and modulo m
@@ -62,4 +65,3 @@ int main()
 	/// " under modulo "<<m<<" is " << power(num1, num2, m); 
  
 } 
-
