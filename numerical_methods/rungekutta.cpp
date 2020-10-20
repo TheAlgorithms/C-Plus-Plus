@@ -19,10 +19,7 @@
 #include <iostream> /// for io operations
 #include<vector> ///for using the vector container
 #include <cassert>  /// asserting the test functions
-/**
- * @namespace numerical_methods
- * @brief Numerical Methods
- */
+
 /**
  * @brief The change() function is used 
  * to return the updated iterative value corresponding 
@@ -36,6 +33,10 @@ static double change(double x, double y)
 	double val=((x - y)/2.0); 
 	return val;
 } 
+/**
+ * @namespace numerical_methods
+ * @brief Numerical Methods
+ */
 namespace numerical_methods {
 /**
  * @namespace runge_kutta
