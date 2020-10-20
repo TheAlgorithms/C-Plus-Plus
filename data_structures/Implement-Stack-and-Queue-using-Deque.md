@@ -1,10 +1,10 @@
-// CPP Program to implement stack and queue using Deque 
+# CPP Program to implement stack and queue using Deque 
    #include <bits/stdc++.h> 
 using namespace std; 
   
 // structure for a node of deque 
-struct DQueNode { 
-    int value; 
+  struct DQueNode { 
+       int value; 
     DQueNode* next; 
     DQueNode* prev; 
 }; 
@@ -17,12 +17,12 @@ private:
     DQueNode* head; 
     DQueNode* tail; 
   
-public: 
-    // constructor 
-    deque() 
-    { 
-        head = tail = NULL; 
-    } 
+   public: 
+     // constructor 
+       deque() 
+        { 
+          head = tail = NULL; 
+         } 
   
     // if list is empty 
     bool isEmpty() 
@@ -204,7 +204,7 @@ int main()
     cout << "Size of Queue is " << que.size() << endl; 
     return 0; 
 } 
-Output:
+## Output:
 
 Stack: 7 8
 Stack: 7
