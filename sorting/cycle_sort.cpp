@@ -28,7 +28,7 @@ namespace cycle_sort {
 /**
  * @brief The main function implements cycleSort
  * @tparam T type of array
- * @param arr array to be sorted
+ * @param in_arr array to be sorted
  * @returns void
  */
 template <typename T>
@@ -40,7 +40,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
 
         // Count the number of elements smaller than item, this  number is the correct index of item.
         int pos = cycle_start;
-        for (int i = cycle_start + 1; i < arr.size(); i++) {
+        for (size_t i = cycle_start + 1; i < arr.size(); i++) {
             if (arr[i] < item) {
                 pos++;
             }
