@@ -16,7 +16,12 @@
  * @namespace math
  * @brief Mathematical algorithms
  */
-namespace math{
+namespace math {
+/**
+ * @namespace fibonacci_sum
+ * @brief Functions for the sum of the Fibonacci Sequence: \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
+ */
+namespace fibonacci_sum {
     
     /**
      * Function to multiply two matrices
