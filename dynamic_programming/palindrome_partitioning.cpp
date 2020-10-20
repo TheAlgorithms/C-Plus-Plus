@@ -6,6 +6,7 @@
  * @details
  * palindrome partitioning uses dynamic programming and goes to all the possible partitions to find the minimum
  * you are given a string and you need to give minimum number of partitions needed to divide it into a number of palindromes
+ * [Palindrome Partitioning] (https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/)
  * overall time complexity O(n^2)
  * For example: example 1:-
  * String : "nitik"
@@ -25,13 +26,13 @@
 
 /**
  * @namespace dynamic_programming
- * @brief dynamic programming algorithms
+ * @brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 
     /**
      * @namespace palindrome_partitioning
-     * @brief palindrome partitioning algorithms
+     * @brief Functions for [Palindrome Partitioning] (https://leetcode.com/problems/palindrome-partitioning-ii/) algorithm
      */
     namespace palindrome_partitioning {
 
@@ -87,7 +88,7 @@ namespace dynamic_programming {
 }  // namespace dynamic_programming
 
 /**
- * Test Function
+ * @brief Test Function
  * @return void
 */
 static void test() {
@@ -119,6 +120,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // execute the test
     return 0;
 }
