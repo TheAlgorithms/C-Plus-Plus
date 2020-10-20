@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief An algorithm to calculate the sum LCM(1,n) + LCM(2,n) + .. + LCM(n,n), where LCM(i,n)
+ * @brief An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) + \mathrm{LCM}(2,n) + .. + \mathrm{LCM}(n,n)\f$
+ * @details An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) + \mathrm{LCM}(2,n) + .. + \mathrm{LCM}(n,n)\f$ where \f$\mathrm{LCM}(i,n)\f$
  * denotes the Least Common Multiple of the integers i and n. For n greater than or equal to 1.
  * The value of the sum is calculated by formula:
  * ∑LCM(i, n) = ((∑(d * ETF(d)) + 1) * n) / 2
