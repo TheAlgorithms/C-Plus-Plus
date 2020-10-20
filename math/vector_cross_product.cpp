@@ -34,7 +34,8 @@
  *
  * Magnitude of a vector is the square root of the sum of the squares of the direction ratios.
  *
- * @example An example of a running instance of the executable program:
+ * \example vector_cross_product.cpp
+ * An example of a running instance of the executable program:
  *
  * 	Pass the first Vector: 1 2 3
  *	Pass the second Vector: 4 5 6
