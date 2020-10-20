@@ -61,7 +61,7 @@ namespace sorting {
                 }
 
                 if(i < size - 1 && out[i] < out[i+1]) {
-                    std::swap(arr[i],arr[i+1]); //swapping the two values
+                    std::swap(out[i],out[i+1]); //swapping the two values
                 }
 
             }
