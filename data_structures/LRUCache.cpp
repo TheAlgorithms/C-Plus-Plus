@@ -90,15 +90,14 @@ public:
     /**
     * get Function
     * Accepts one parameter, the key whose value needs to be returned.
-    * Returns the value of the key if the key exists, otherwise returns -1.
+    * Key searched is mandatory to be present.
     * @param key : value for this key is to be returned.
     * @returns NOTHING
     */
     VALUE_TYPE get(KEY_TYPE key) {
         auto found = addr.find(key) ;
         
-        if ( found == addr.end() )
-            return -1 ;
+        assert( found != addr.end() ) ;
         
         if ( found->second != this->root ) {
             //remove and fix 
