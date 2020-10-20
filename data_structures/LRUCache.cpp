@@ -13,18 +13,8 @@
  */
 
 #include <iostream>
-
-/**
- * Class documentation
- */
-class class_name {
- private:
-    int variable;  ///< short info of this variable
-    char *message;  ///< short info
-
- public:
-    // other members also documented as below
-}
+#include <unordered_map> // For hashmap
+#include <cassert> 
 
 /**
  * Class node
@@ -71,8 +61,8 @@ public:
 template<typename KEY_TYPE, typename VALUE_TYPE>
 class LRUCache {
 public:
-    node *root ;
-    unordered_map< KEY_TYPE, node* > addr ;
+    node<KEY_TYPE,VALUE_TYPE> *root ;
+    unordered_map< KEY_TYPE, node<KEY_TYPE,VALUE_TYPE>* > addr ;
 
     /**
     * Constructor Function
@@ -83,10 +73,10 @@ public:
     */
     LRUCache(int capacity) {
         
-        this->root = new node(-1,-1) ;
-        node *temp = this->root ;
+        this->root = new node<KEY_TYPE,VALUE_TYPE>(-1,-1) ;
+        node<KEY_TYPE,VALUE_TYPE> *temp = this->root ;
         for ( int i = 1 ; i < capacity ; ++i ) {
-            temp->next = new node(-1,-1) ;
+            temp->next = new node<KEY_TYPE,VALUE_TYPE>(-1,-1) ;
             temp->next->prev = temp ;
             temp = temp->next ;
         }
@@ -160,7 +150,19 @@ public:
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test(); // execute the tests
-    // code here
+   
+    LRUCache<KEY_TYPE,VALUE_TYPE> lru(2); ///< Created a new LRUCache instace of physical size 2.
+ 
+    ///< Exectuing vaious functions
+    lru.put(1,1);
+    lru.put(2,2);
+    lru.get(1);
+    lru.put(3,3);
+    lru.get(2);
+    lru.put(4,4);
+    lru.get(1);
+    lru.get(3);
+    lru.get(4);
+ 
     return 0;
 }
