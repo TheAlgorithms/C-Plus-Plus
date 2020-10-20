@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of singly linked list algorithm.
+ * @brief Implementation of singly linked list data structure.
  * @details
  * The linked list is a data structure used for holding a sequence of
  * values, which can be added, removed and displayed.
