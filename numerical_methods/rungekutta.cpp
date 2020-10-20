@@ -44,9 +44,8 @@ namespace numerical_methods {
 namespace runge_kutta {
 
 /**
- * @brief The rungeKutta finds value of y for 
- * a given x using step size h 
- * and initial value initial x at initial y. 
+ * @brief the Runge Kutta method finds the value of integration of a function in the given limits.
+ * the lower limit of integration as the initial value and the upper limit is the given x
  * @param init_x is the value of initial x and is updated after each call
  * @param init_y is the value of initial x and is updated after each call
  * @param x is current iteration at which the function needs to be evaluated
