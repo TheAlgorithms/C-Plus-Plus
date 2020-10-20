@@ -28,6 +28,7 @@ int main()
 	return 0;
 }
 
-//Example test case:
+/*Example test case:
 i/p : 121  o/p: no is palindrome
 i/p : 123 o/p: no is not palindrome
+*/
