@@ -7,14 +7,14 @@ main(){
 	int gd= DETECT, gm;
 	int x1,y1,x2,y2,x3,y3;
     initgraph(&gd, &gm, "");
- 
+    // Entering coordinates of the triangle
     cout <<"Enter first coordinates of triangle:"<< endl;
     cin>>x1>>y1;
-	cout<<"Enter second coordinates of triangle:"<< endl;
+    cout<<"Enter second coordinates of triangle:"<< endl;
     cin>>x2>>y2;
-	cout<<"Enter third coordinates of triangle:"<< endl;
+    cout<<"Enter third coordinates of triangle:"<< endl;
     cin>>x3>>y3;
- 
+    // Printing the lines 
     line(x1,y1,x2,y2);
     line(x2,y2,x3,y3);
     line(x3,y3,x1,y1);
