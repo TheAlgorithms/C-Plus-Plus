@@ -26,11 +26,12 @@ int maxProduct(vector<int>& InputArray) {
 }
 
 int main() {
-    int sizeOfArray, maxProd, num;
+    int sizeOfArray, maxProd;
     cin >> sizeOfArray;
 
     vector<int> InputArray;
     for (int i = 0; i < sizeOfArray; i++) {
+        int num;
         cin >> num;
         InputArray.push_back(num);
     }
