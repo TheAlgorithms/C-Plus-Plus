@@ -50,7 +50,7 @@ bool magic_number(int n) {
  */
 static void tests() {
     std::cout << "Test 1:\t n=60\n";
-    assert(magic_number(60) == false);
+    assert(math::magic_number(60) == false);
     std::cout << "passed\n";
 
     std::cout << "Test 2:\t n=730\n";
