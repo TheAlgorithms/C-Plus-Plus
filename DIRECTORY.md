@@ -45,6 +45,7 @@
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack_students.cpp)
   * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/tree.cpp)
+  * [Tree 234](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/tree_234.cpp)
   * [Trie Modern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_modern.cpp)
   * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_tree.cpp)
 
