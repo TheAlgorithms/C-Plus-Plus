@@ -1,5 +1,5 @@
 /**  
- * @file   Created by akanksha gupta on 02/10/20.
+ * @file   
  * @breif Gram Schimdt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
  * @details
