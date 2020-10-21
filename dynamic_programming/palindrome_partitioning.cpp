@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief palindrome partitioning algorithm gives you the minimum number of partitions you need to make
- * in order to divide a given string into a number of palindromes
+ * @brief Implements [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning-ii/) algorithm, giving you the minimum number of partitions you need to make
  *
  * @details
  * palindrome partitioning uses dynamic programming and goes to all the possible partitions to find the minimum
@@ -15,7 +14,6 @@
  * String : "ababbbabbababa"
  * Output : 3 => "aba | b | bbabb | ababa"
  * @author [Sujay Kaushik] (https://github.com/sujaykaushik008)
- * @see related problem at [Leetcode] (https://leetcode.com/problems/palindrome-partitioning-ii/)
  */
 
 #include <iostream>   // for io operations
@@ -32,7 +30,7 @@ namespace dynamic_programming {
 
     /**
      * @namespace palindrome_partitioning
-     * @brief Functions for [Palindrome Partitioning] (https://leetcode.com/problems/palindrome-partitioning-ii/) algorithm
+     * @brief Functions for [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning-ii/) algorithm
      */
     namespace palindrome_partitioning {
 
