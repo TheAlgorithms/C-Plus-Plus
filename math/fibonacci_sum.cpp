@@ -38,7 +38,7 @@ namespace math {
                 for(int j=0;j<2;j++) {
                     result[i][j]=0;
                     for(int k=0;k<2;k++) {
-                        result[i][j]=(result[i][j]+(T[i][k]*A[k][j]));
+                        result[i][j] += T[i][k] * A[k][j];
                     }
                 }
             }
