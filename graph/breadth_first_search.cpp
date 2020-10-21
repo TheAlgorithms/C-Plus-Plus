@@ -87,9 +87,9 @@ class Graph{
     std::map<T,bool> breadth_first_search(T src){
       std::map<T,bool> tracker;
 
-      for(auto adjlist: adjacency_list){
+      for(auto const adjlist: adjacency_list){
         tracker[adjlist.first]=false;
-        for(auto node:adjacency_list[adjlist.first]){
+        for(auto const node:adjacency_list[adjlist.first]){
           tracker[node]=false;
         }
       }
@@ -99,7 +99,7 @@ class Graph{
       while(!q.empty()){
         T node = q.front();
         q.pop();
-        for(T neighbour : adjacency_list[node]){
+        for(T const neighbour : adjacency_list[node]){
           if(!tracker[neighbour]){
             q.push(neighbour);
             tracker[neighbour]=true;
@@ -109,6 +109,7 @@ class Graph{
       return tracker;
     }
 };
+/* Class definition ends */
 
 /** Test function */
 static void tests() {
@@ -135,12 +136,6 @@ static void tests() {
     std::cout << "Test 2 Passed..." << std::endl;
 
     /// Test 3 Begins
-    // 0-> Gorakhpur
-    // 1-> Lucknow
-    // 2-> Kanpur
-    // 3-> Agra
-    // 4-> Prayagraj
-    // 5-> Noida
     Graph<std::string> g2;
 
     g2.add_edge("Gorakhpur","Lucknow",false);
@@ -158,9 +153,6 @@ static void tests() {
     correct_res["Agra"]=true;
     correct_res["Prayagraj"]=false;
     correct_res["Noida"]=true;
-    for(auto x: returned_res){
-      std::cout<<x.first<<" : "<<x.second<<std::endl;
-    }
     assert(correct_res==returned_res);
     std::cout << "Test 3 Passed..." << std::endl;
 
@@ -169,26 +161,20 @@ static void tests() {
 /** Main function */
 int main() {
     tests();
-/*
-    size_t vertices = 0, edges = 0;
-    std::cout << "Enter the number of vertices: ";
-    std::cin >> vertices;
+    size_t edges = 0;
     std::cout << "Enter the number of edges: ";
     std::cin >> edges;
 
-    graph::adjacency_list graph(vertices);
+    Graph<int> g;
 
     std::cout << "Enter space-separated pairs of vertices that form edges: "
               << std::endl;
     while (edges--) {
         int u = 0, v = 0;
         std::cin >> u >> v;
-        // Decrement the vertex index so that we can read more convenint
-        // 1-based indexing from the user input.
-        graph::add_directed_edge(&graph, u - 1, v - 1);
+        g.add_edge(u,v);
     }
 
-    graph::breadth_first_search(graph, 0);
-*/
+    g.breadth_first_search(0);
     return 0;
 }
