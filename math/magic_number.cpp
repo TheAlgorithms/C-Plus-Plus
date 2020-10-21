@@ -38,7 +38,8 @@ bool magic_number(int n) {
     }
 }
 
-/** Test function
+/**
+ * @brief Test function
  * @returns void
  */
 static void tests() {
