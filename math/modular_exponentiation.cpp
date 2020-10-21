@@ -2,7 +2,7 @@
  * @file
  * @brief C++ Program for Modular Exponentiation Iteratively.
  * Calculate the value of an integer a raised to an integer exponent b 
- * under modulo c. 
+ * under modulo c.
  * @note The time complexity of this approach is O(log b).
  *
  * Example:
@@ -15,15 +15,20 @@
  * We can also verify the result as 4^3 is 64 and 64 modulo 5 is 4
  */
 
-#include <iostream> 
+#include <iostream> /// for io operations
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
 * @brief This function calculates a raised to exponent b 
-* under modulo c using modular exponentiation.
+* under modulo c using modular exponentiation
 * @param a integer base
 * @param b unsigned integer exponent
 * @param c integer modulo
-* @return a raised to power b modulo c.
+* @return a raised to power b modulo c
 */
 int power(int a, unsigned int b, int c) 
 { 
@@ -51,7 +56,8 @@ int power(int a, unsigned int b, int c)
 	}
 	
 	return ans; 
-} 
+}
+}  // namespace math 
 
 /**
 * @brief Main function
@@ -65,7 +71,7 @@ int main()
 	int m = 13; 
 	
 	std::cout << "The value of "<<num1<<" raised to exponent "<<num2<< 
-	" under modulo "<<m<<" is " << power(num1, num2, m); 
+	" under modulo "<<m<<" is " << math::power(num1, num2, m); 
 	/// std::cout << "The value of "<<num1<<" raised to exponent "<<num2<<" 
 	/// " under modulo "<<m<<" is " << power(num1, num2, m); 
 
