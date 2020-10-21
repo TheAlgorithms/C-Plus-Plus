@@ -1,0 +1,105 @@
+Design and develop program to evaluate a given postfix expression.
+#include <iostream>
+#include<ctype.h>
+#include<string.h>
+using namespace std;
+int operation(int,int, char);
+class Stack
+{
+public:
+ int top;
+ int size[100];
+ Stack()
+ {
+ top=-1;
+ }
+ int pop();
+ void push(int x);
+};
+void Stack :: push(int x)
+{
+ if(top == 99)
+ cout<<"stack is full";
+ else
+ {
+ top++;
+ size[top]=x;
+ }
+}
+int Stack :: pop()
+{ int item;
+ item=size[top];
+ top--;
+ return item;
+}
+int operation (int a, int b, char o)
+ {
+ switch(o)
+ {
+ case '+':
+ return(a+b);
+ break;
+ case '-':
+ return(a-b);
+ break;
+ case '*':
+ return(a*b);
+ break;
+ case '/':
+ return(a/b);
+ break;
+ }
+ return 0;
+}
+int Postfix(char *str) //
+{
+Stack s;
+int a, b, c;
+int n=0;
+while(*str)
+{
+ if (*str == ' ' || *str == '\t')
+ {
+ *str--;
+ if(isdigit(*str))
+ {
+ s.push(n);
+ n=0;
+ *str++;
+ *str++;
+ }
+ else
+ {
+ *str++;
+ *str++;
+ }
+ }
+ if(isdigit(*str))
+ {
+ n = n*10 + (*str - '0');
+ *str++;
+ }
+ else
+ {
+ a=s.pop();
+ b=s.pop();
+ c= operation(b,a,*str);
+ s.push (c);
+ *str++;
+ }
+}
+return c;
+}
+int main()
+{
+int result;
+char exp[50];
+cout<<"Enter expression " <<endl;
+cin.getline(exp,50);
+result= Postfix(exp);
+cout<<"Result : "<<endl<<result;
+}
+/* Enter expression
+12 10 + 5 - 6 *
+Result :
+102 */
