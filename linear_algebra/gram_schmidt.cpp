@@ -1,12 +1,29 @@
-/**  Gram Schimdt Orthogonalisation  Created by akanksha gupta on 02/10/20.
- *  Copyright © 2020 akanksha gupta. All rights reserved.
- *  Used double as datatype for storing vectors (in maths) as inputs are
- *  integers.
- *  Change it to long double to increase digits of precision in case of decimal
- *  inputs.
+/**  
+ * @file   Created by akanksha gupta on 02/10/20.
+ * @breif Gram Schimdt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ *
+ * @details
+ * Takes the input of Linearly Independent Vectors,
+ * returns vectors orthogonal to each other.
+ * 
+ * ### Algorithm
+ * Take the first vector of given LI vectors as first vector of Orthogonal vectors.
+ * Take projection of second input vector on the first vector of Orthogonal vector 
+ * and subtract it from the 2nd LI vector.
+ * Take projection of third vector on the second vector of Othogonal vectors and subtract it from the 3rd LI vector.
+ * Keep repeating hte above process until all the vectors in the given input array are exhausted. 
+ *
+ * For Example:
+ * In R2, 
+ * Input LI Vectors={(3,1),(2,2)}
+ * then Orthogonal Vectors= {(3, 1),(-0.4, 1.2)}
+ *
  *  Have defined maximum dimension of vectors to be 10 and number of vectors
  *  taken is 20.
  *  Please do not give linearly dependent vectors
+ *
+ *
+ * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
 #include <iostream>
@@ -15,11 +32,16 @@
 #include <array>
 
 /**
- *   dot_product function. Storing maths vector in Array
- *   and calculating it here.
+ * dot_product function.
+ * Takes 2 vectors along with their dimension as input and returns the dot product.
+ * @param x 
+ * @param y
+ * @param c dimension of the vectors
+ * 
+ *@returns dot_product
  */
 
-double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
+double dot_product(std::array<double, 10> &x, std::array<double, 10> &y, int c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
     sum += x[i] * y[i];
@@ -29,23 +51,37 @@ double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
 
 /**
  * Projection Function
+ * Takes input of 2 vectors along with their dimension and evaluates their projection in temp 
+ *
+ * @param x
+ * @param y
+ * @param temp
+ * @param c
+ *
+ * @returns void
  */
 
-void projection(std::array<double, 10> x, std::array<double, 10> y,
-                std::array<double, 10> temp, int c) {
+void projection(std::array<double, 10> &x, std::array<double, 10> &y,
+                std::array<double, 10> &temp, int c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
   double anorm = dot_product(y, y, c); ///The norm of the second vector is taken.
   double factor = dot / anorm; ///multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
   for (int i = 0; i < c; i++) {
-    temp[i] = y[i] * factor;
+    temp[i] = y[i] * factor; ///Projection is stored in temp
   }
 }
 
 /**
- *  Function to print the orthogonalised vector
+ * Function to print the orthogonalised vector
+ *
+ * @param r number of vectors
+ * @param c dimenaion of vectors
+ * @param B stores orthogonalised vectors
+ *
+ * @returns void
  */
 
-void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
+void display(int r, int c, std::array<std::array<double, 10>, 20> &B) {
   for (int i = 0; i < r; i++) {
     std::cout << "Vector " << i + 1 << ": ";
     for (int j = 0; j < c; j++) {
@@ -56,11 +92,17 @@ void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
 }
 
 /**
- *  Function for the process of Gram Schimdt Process
+ * Function for the process of Gram Schimdt Process
+ * @param r number of vectors
+ * @param c dimension of vectors
+ * @param A stores input of given LI vectors
+ * @param B stores orthogonalised vectors
+ * 
+ * @returns void
  */
 
-void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
-                  std::array<std::array<double, 10>, 20> B) {
+void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> &A,
+                  std::array<std::array<double, 10>, 20> &B) {
   if (c < r) {   /// we check whether appropriate dimensions are given or not.
     std::cout
         << "Dimension of vector is less than number of vector, hence \n first "
@@ -96,11 +138,14 @@ void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
     }
     k++;
   }
-  display(r, c, B);
+  display(r, c, B); //for displaying orthogoanlised vectors
 }
+
 /**
- * Test Cases. Process has been tested for 3 Sample Inputs
+ * Test Function. Process has been tested for 3 Sample Inputs
+ * @returns void
  */
+
 static void test() {
   std::array<std::array<double, 10>, 20> a1 = {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
@@ -154,13 +199,15 @@ static void test() {
   assert(flag == 1);
   std::cout << "Passed Test Case 3 " << std::endl;
 }
+
+
 /**
  * Main Function
  */
 
 int main() {
   int r, c;
-  test();
+  test(); //perform self tests
   std::cout << "Enter the dimension of your vectors" << std::endl;
   std::cin >> c;
   std::cout << "Enter the number of vectors you will enter " << std::endl;
@@ -187,7 +234,8 @@ int main() {
   for (int i = 0; i < r - 1; i++) {
     for (int j = i + 1; j < r; j++) {
       dot = fabs(dot_product(B[i], B[j], c));
-      if (dot > 1) {
+      if (dot > 0.1) /// take make the process numerically stable, upper bound for the dot product take 0.1
+      {
         flag = 0;
         break;
       }
