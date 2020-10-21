@@ -32,10 +32,10 @@
 #include <array>
 
 /**
- * dot_product function.
+ * Dot product function.
  * Takes 2 vectors along with their dimension as input and returns the dot product.
- * @param x 
- * @param y
+ * @param x vector 1
+ * @param y vector 2
  * @param c dimension of the vectors
  * 
  *@returns dot_product
@@ -53,9 +53,9 @@ double dot_product(std::array<double, 10> &x, std::array<double, 10> &y, int c) 
  * Projection Function
  * Takes input of 2 vectors along with their dimension and evaluates their projection in temp 
  *
- * @param x
- * @param y
- * @param temp
+ * @param x Vector 1
+ * @param y Vector 2
+ * @param temp Temporary Vector to store projection of vector 1 over all the previous vectors
  * @param c
  *
  * @returns void
@@ -202,7 +202,8 @@ static void test() {
 
 
 /**
- * Main Function
+ * @brief Main Function
+ * @return 0
  */
 
 int main() {
@@ -242,4 +243,5 @@ int main() {
     }
   }
   if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
+  return 0;
 }
