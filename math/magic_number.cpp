@@ -16,8 +16,8 @@
  * sum will be 1, thus verifying that it is a magic number.
  * @author [Neha Hasija](https://github.com/neha-hasija17)
  */
-#include <cassert>  /// for assert
-#include <iostream> /// for io operations
+#include <cassert>   /// for assert
+#include <iostream>  /// for io operations
 
 /**
  * Function to check if the given number is magic number or not.
@@ -68,6 +68,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests(); // execute the tests
+    tests();  // execute the tests
     return 0;
 }
