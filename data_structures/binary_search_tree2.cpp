@@ -1,5 +1,5 @@
 /**
- * @file binary_search_tree2.cpp
+ * @file
  * @brief A generic binary search tree implementation.
  */
 
@@ -21,17 +21,15 @@ class binary_search_tree {
     * @brief A struct to represent a node in the Binary Search Tree.
     */
     struct bst_node {
-        // The value/key of the node.
-        T value;
+        T value; /**< The value/key of the node. */
+        std::unique_ptr<bst_node> left; /**< Pointer to left subtree. */
+        std::unique_ptr<bst_node> right; /**< Pointer to right subtree. */
 
-        // Pointer to left subtree.
-        std::unique_ptr<bst_node> left;
-
-        // Pointer to right subtree.
-        std::unique_ptr<bst_node> right;
-
-        // Constructor for bst_node, used to simplify node construction and
-        // smart pointer construction.
+        /**
+        * Constructor for bst_node, used to simplify node construction and
+        * smart pointer construction.
+        * @param _value The value of the constructed node.
+        */
         explicit bst_node(T _value) {
             value = _value;
             left = nullptr;
@@ -39,10 +37,10 @@ class binary_search_tree {
         }
     };
 
-    // Pointer to the root of the BST.
+    /** Pointer to the root of the BST. */
     std::unique_ptr<bst_node> root_;
 
-    // Number of elements/nodes in the BST.
+    /** Number of elements/nodes in the BST. */
     std::size_t size_ = 0;
 
     /**
