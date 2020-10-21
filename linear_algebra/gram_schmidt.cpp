@@ -200,12 +200,10 @@ static void test() {
   std::cout << "Passed Test Case 3 " << std::endl;
 }
 
-
 /**
  * @brief Main Function
  * @return 0
  */
-
 int main() {
   int r, c;
   test(); // perform self tests
