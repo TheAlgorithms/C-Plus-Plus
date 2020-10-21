@@ -29,14 +29,14 @@
  * 5. Repeat steps 4 and 5 until the stack is empty.
  */
 
-#include <iostream> /// for IO operations
-#include <stack>    /// header for std::stack
-#include <vector>   /// header for std::vector
-#include <cassert>  /// header for preprocessor macro assert() 
-#include <limits>   /// header for limits of integral types
+#include <iostream> 	 /// for IO operations
+#include <stack>    	 /// header for std::stack
+#include <vector>   	 /// header for std::vector
+#include <cassert>  	 /// header for preprocessor macro assert() 
+#include <limits>   	 /// header for limits of integral types
 
 constexpr int WHITE = 0; /// indicates the node hasn't been explored
-constexpr int GREY = 1; /// indicates node is in stack waiting to be explored
+constexpr int GREY = 1;	 /// indicates node is in stack waiting to be explored
 constexpr int BLACK = 2; /// indicates node has already been explored
 constexpr int64_t INF = std::numeric_limits<int16_t>::max();
 
