@@ -9,6 +9,9 @@
 #include <cassert>   // defines one macro function (assert) that can be used as a standard debugging tool
 #include <queue>     // This header is part of the containers library, designed to operate in FIFO context
 
+/** Assuming we already have a class implemented for Queue, we will first design the class for Stack.
+ *  It will have the methods push() , pop() , top() , and empty() and one queue.
+ */
 class MyStack
 {
     /** initialize queue */
@@ -99,7 +102,6 @@ static void stack_test()
 /** Main function calling stack_test function
  * @returns 0 on exit
  */
-
 int main()
 {
     stack_test();
