@@ -37,6 +37,7 @@ bool magic_number(int n) {
         return false;
     }
 }
+}  // namespace math
 
 /**
  * @brief Test function
