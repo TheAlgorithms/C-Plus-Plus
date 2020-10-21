@@ -15,16 +15,13 @@
 
 /**
  * Class node
- * @tparam KEY_TYPE: Identifies Data type of Key. 
- * @tparam VALUE_TYPE: Identifies Data type of Value. 
  * Class node to build up and implement doubly circular linked lists
  * which will be used as LRU Cache DS.
  */
-template<typename KEY_TYPE, typename VALUE_TYPE>
 class node {
 public:
-    KEY_TYPE key; ///< Variable to contain value of {key}
-    VALUE_TYPE val; ///< Variable to contain value of {value} associated with {key}
+    int key; ///< Variable to contain value of {key}
+    int val; ///< Variable to contain value of {value} associated with {key}
     node *next; //< Pointer to point on the node appearing next to current node.
     node *prev ; //< Pointer to point on the node appearing previous to current node.
 
@@ -35,7 +32,7 @@ public:
     * @param val : Value
     * @returns NOTHING
     */
-    node( KEY_TYPE key, VALUE_TYPE val ) {
+    node( int key, int val ) {
         this->key = key ;
         this->val = val ;
         this->next = this->prev = nullptr ;
@@ -44,22 +41,19 @@ public:
 
 /**
  * Class LRUCache
- * @tparam KEY_TYPE: Identifies Data type of Key. 
- * @tparam VALUE_TYPE: Identifies Data type of Value. 
  * Main Class LRUCache.
  * Attributes:-
  * - node *root ///< Will contain LRU value
- * - unordered_map< KEY_TYPE, node* > ///< TO keep trck od addresses of all nodes involved in linked list.
+ * - unordered_map< int , node* > ///< To keep track od addresses of all nodes involved in linked list.
  * Methods:- 
  * - LRUCache(int): Constructor Function
- * - VALUE_TYPE get(KEY_TYPE): Function to query on the LRU
- * - void put(KEY_TYPE, VALUE_TYPE): Function to add/update a key in LRU.
+ * - VALUE_TYPE get(int): Function to query on the LRU
+ * - void put(int,int): Function to add/update a key in LRU.
  */
-template<typename KEY_TYPE, typename VALUE_TYPE>
 class LRUCache {
 public:
-    node<KEY_TYPE,VALUE_TYPE> *root ;
-    unordered_map< KEY_TYPE, node<KEY_TYPE,VALUE_TYPE>* > addr ;
+    node *root ;
+    unordered_map< int, node* > addr ;
 
     /**
     * Constructor Function
@@ -70,10 +64,10 @@ public:
     */
     LRUCache(int capacity) {
         
-        this->root = new node<KEY_TYPE,VALUE_TYPE>(-1,-1) ;
-        node<KEY_TYPE,VALUE_TYPE> *temp = this->root ;
+        this->root = new node(-1,-1) ;
+        node *temp = this->root ;
         for ( int i = 1 ; i < capacity ; ++i ) {
-            temp->next = new node<KEY_TYPE,VALUE_TYPE>(-1,-1) ;
+            temp->next = new node(-1,-1) ;
             temp->next->prev = temp ;
             temp = temp->next ;
         }
@@ -91,7 +85,7 @@ public:
     * @param key : value for this key is to be returned.
     * @returns NOTHING
     */
-    VALUE_TYPE get(KEY_TYPE key) {
+    int get(int key) {
         auto found = addr.find(key) ;
         
         if( found == addr.end() )
@@ -124,7 +118,7 @@ public:
     * @param value : Value for the respective key to be stored.
     * @returns NOTHING
     */
-    void put(KEY_TYPE key, VALUE_TYPE value) {
+    void put(int key, int value) {
         
         if ( addr.find(key) == addr.end() ){
             if ( this->root->key != -1 and this->root->val != -1 ) {
@@ -148,18 +142,18 @@ public:
  */
 int main(int argc, char *argv[]) {
    
-    LRUCache<KEY_TYPE,VALUE_TYPE> lru(2); ///< Created a new LRUCache instace of physical size 2.
+    LRUCache lru(2); ///< Created a new LRUCache instace of physical size 2.
  
     ///< Exectuing vaious functions
     lru.put(1,1);
     lru.put(2,2);
-    lru.get(1);
+    cout << lru.get(1) << endl ;
     lru.put(3,3);
-    lru.get(2);
+    cout << lru.get(2) << endl ;
     lru.put(4,4);
-    lru.get(1);
-    lru.get(3);
-    lru.get(4);
+    cout << lru.get(1) << endl ;
+    cout << lru.get(3) << endl ;
+    cout << lru.get(4) << endl ;
  
     return 0;
 }
