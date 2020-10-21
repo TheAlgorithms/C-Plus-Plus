@@ -56,7 +56,7 @@ double dot_product(std::array<double, 10> &x, std::array<double, 10> &y, int c) 
  * @param x Vector 1
  * @param y Vector 2
  * @param temp Temporary Vector to store projection of vector 1 over all the previous vectors
- * @param c
+ * @param c dimension of each vector
  *
  * @returns void
  */
@@ -208,7 +208,7 @@ static void test() {
 
 int main() {
   int r, c;
-  test(); //perform self tests
+  test(); // perform self tests
   std::cout << "Enter the dimension of your vectors" << std::endl;
   std::cin >> c;
   std::cout << "Enter the number of vectors you will enter " << std::endl;
