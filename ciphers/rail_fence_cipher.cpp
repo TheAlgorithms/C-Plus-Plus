@@ -62,9 +62,9 @@
                   this->key = key;
               }
 
-              std::string rail_fence_encrypt(std::string text, int key); //function to encrypt plain-text
+              std::string rail_fence_encrypt(const std::string &text, int key); //function to encrypt plain-text
 
-              std::string rail_fence_decrypt(std::string cipher, int key); //function to decrypt cipher-text
+              std::string rail_fence_decrypt(const std::string &cipher, int key); //function to decrypt cipher-text
 
          };
 
@@ -84,7 +84,7 @@
          * @returns string result which is the encrypted text
          */
 
-         std::string Cipher::rail_fence_encrypt(std::string text, int key){
+         std::string Cipher::rail_fence_encrypt(const std::string &text, int key){
 
              
             int num_rows = key;
@@ -149,7 +149,7 @@
          * @returns string result which is the decrypted text
          */
 
-        std::string Cipher::rail_fence_decrypt(std::string cipher, int key){
+        std::string Cipher::rail_fence_decrypt(const std::string &cipher, int key){
 
             int num_rows = key;
             int num_columns = cipher.length();
