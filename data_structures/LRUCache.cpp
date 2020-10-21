@@ -2,9 +2,6 @@
  * @file
  * @brief Implementation of LRU Cache Data Structure
  * @details
- * This is a multi line
- * description containing links, references,
- * math equations, etc
  * A Least Recently Used (LRU) Cache organizes items in order of use, allowing you 
  * to quickly identify which item hasn't been used for the longest amount of time.
  * Implemented using Static Doubly Circular Linked List
