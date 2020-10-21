@@ -30,10 +30,10 @@
  */
 
 #include <iostream> /// for IO operations
-#include <stack> /// header for std::stack
-#include <vector> /// header for std::vector
-#include <cassert> /// header for preprocessor macro assert() 
-#include <limits> /// header for limits of integral types
+#include <stack>    /// header for std::stack
+#include <vector>   /// header for std::vector
+#include <cassert>  /// header for preprocessor macro assert() 
+#include <limits>   /// header for limits of integral types
 
 constexpr int WHITE = 0; /// indicates the node hasn't been explored
 constexpr int GREY = 1; /// indicates node is in stack waiting to be explored
@@ -117,7 +117,7 @@ std::vector<size_t> dfs(const std::vector<std::vector<size_t> > &graph, size_t s
 }  // namespace graph
 
 /**
- * Self-test implementation
+ * Self-test implementations
  * @returns none
  */
 static void tests() {
