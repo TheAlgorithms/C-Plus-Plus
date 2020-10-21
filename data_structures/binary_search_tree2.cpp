@@ -38,11 +38,8 @@ class binary_search_tree {
         }
     };
 
-    /** Pointer to the root of the BST. */
-    std::unique_ptr<bst_node> root_;
-
-    /** Number of elements/nodes in the BST. */
-    std::size_t size_ = 0;
+    std::unique_ptr<bst_node> root_; /**< Pointer to the root of the BST. */
+    std::size_t size_ = 0; /**< Number of elements/nodes in the BST. */
 
     /**
      * @brief Recursive function to find the maximum value in the BST.
