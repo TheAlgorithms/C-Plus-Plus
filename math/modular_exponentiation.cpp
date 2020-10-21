@@ -30,9 +30,10 @@ namespace math {
 * @param c integer modulo
 * @return a raised to power b modulo c
 */
-int power(int a, unsigned int b, int c) 
+
+uint64_t power(uint64_t a, uint64_t b, uint64_t c)
 { 
-	int ans = 1;	    	/// Initialize the answer to be returned 
+	uint64_t ans = 1;	    	/// Initialize the answer to be returned 
 
 	a = a % c;          	/// Update a if it is more than or 
 				/// equal to c 
@@ -41,7 +42,7 @@ int power(int a, unsigned int b, int c)
 	{
 	    return 0;       	/// In case a is divisible by c; 
 	}
-	
+
 	while (b > 0) 
 	{ 
 		/// If b is odd, multiply a with answer 
@@ -49,12 +50,12 @@ int power(int a, unsigned int b, int c)
 		{
 			ans = (ans*a) % c; 
 		}
-		
+
 		/// b must be even now 
 		b = b>>1;       // b = b/2 
 		a = (a*a) % c; 
 	}
-	
+
 	return ans; 
 }
 }  // namespace math 
@@ -66,10 +67,10 @@ int power(int a, unsigned int b, int c)
 int main() 
 { 	
 	/// Give two numbers num1, num2 and modulo m
-	int num1 = 2; 
-	int num2 = 5; 
-	int m = 13; 
-	
+	uint64_t num1 = 2; 
+	uint64_t num2 = 5; 
+	uint64_t m = 13; 
+
 	std::cout << "The value of "<<num1<<" raised to exponent "<<num2<< 
 	" under modulo "<<m<<" is " << math::power(num1, num2, m); 
 	/// std::cout << "The value of "<<num1<<" raised to exponent "<<num2<<" 
@@ -77,4 +78,3 @@ int main()
 
 	return 0;
 } 
-
