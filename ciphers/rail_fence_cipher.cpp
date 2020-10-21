@@ -26,32 +26,34 @@
 #include <cassert>
 #include <vector>
 
-/** \namespace ciphers
+/* \namespace ciphers
  * \brief Algorithms for encryption and decryption
  */
  namespace ciphers {
-    /** \namespace RailFence
+    /* \namespace RailFence
      * \brief Functions for [Rail Fence Cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher) algorithm
      */
      namespace RailFence {
-        /**
+        /*
          * @brief Class for cipher functions
          */
 
          class Cipher{
 
           public:
-              std::string plainText; //the plain-text string to encrypt
-              std::string cipherText; //the cipher-text string to decrypt
-              int key; //the key value
+              std::string plainText; ///< the plain-text string to encrypt
+              std::string cipherText; ///< the cipher-text string to decrypt
+              int key; ///<the key value
 
           public:
-              /**
+              /*
              * @brief Constructor that initializes the corresponding text and key
-             * @param text string, key value, boolean to check if text is plain-text or cipher-text
+             * @param text string
+             * @param key value
+             * @param toEncrypt boolean to check if text is plain-text or cipher-text
              */
 
-              explicit Cipher(std::string text, int key, bool toEncrypt){
+              explicit Cipher(const std::string &text, int key, bool toEncrypt){
                   if(toEncrypt){
                       plainText = text;
                   } else{
@@ -66,11 +68,12 @@
 
          };
 
-         /**
+         /*
          * @brief function that encrypts plain-text string using given key.
-         * @params text : string that is to be encrypted, key : key value
+         * @params text string that is to be encrypted
+         * @params key value
          * @details
-         * Here key is the number of rail rows that will be used to encrpyt text. A string vector which can be treated as 2-D character array is
+         * Here key is the number of rail rows that will be used to encrpyt text. A 2-D character vector is
          * initialised which has number of rows equal to key value and number of columns equal to length of text.
          * The rail matrix is filled to distinguish filled spaces from blank ones. A boolean is used to find the
          * direction for traversing. If the current row is either the first or last row, direction is reversed.
@@ -89,15 +92,9 @@
 
             // create the matrix to cipher plain text
             // key = rows , length(text) = columns
-            std::vector<std::string> rail(num_rows);
+            // fill the rail matrix
+            std::vector<std::vector<char>> rail(num_rows,std::vector<char>(num_columns,'\n'));
           
-            // filling the rail matrix to distinguish filled
-            // spaces from blank ones
-            for (int i=0; i < num_rows; i++){
-                for (int j = 0; j < num_columns; j++){
-                    rail[i][j] = '\n';
-                }
-            }
           
              // to find the direction
             bool down_dir = false;
@@ -107,7 +104,7 @@
 
                 // check the direction of flow
                 // reverse the direction if we've just
-                // filled the top or bottom rail
+                // fill the top or bottom rail
                 if (row == 0 || row == num_rows-1){
                     down_dir = !down_dir;
                 }
@@ -138,11 +135,12 @@
             return result;
         }
 
-        /**
+        /*
          * @brief function that decrypts cipher-text string using given key.
-         * @params cipher : string that is to be decrypted, key : key value
+         * @param cipher string that is to be decrypted
+         * @param key key value
          * @details
-         * The number of rails rows = key. A string vector is inisialised which is the rail matrix.
+         * The number of rails rows = key. A 2-D char vector is inisialised which is the rail matrix.
          * The rail matrix is filled to distinguish filled spaces from blank ones. A boolean is used to find the
          * direction for traversing. If the current row is either the first or last row, direction is reversed.
          * A marker '*' is placed at each cell where a text character will occur. Now the cipher text is placed in
@@ -158,15 +156,8 @@
 
             // create the matrix to cipher plain text
             // key = rows , length(text) = columns
-            std::vector<std::string> rail(num_rows);
-          
-            // filling the rail matrix to distinguish filled
-            // spaces from blank ones
-            for (int i=0; i < num_rows; i++){
-                for (int j=0; j < num_columns; j++){
-                    rail[i][j] = '\n';
-                }
-            }
+            // fill the rail matrix
+            std::vector<std::vector<char>> rail(num_rows,std::vector<char>(num_columns,'\n'));
           
             // to find the direction
             bool down_dir = false;
@@ -236,17 +227,17 @@
     } //namespace RailFence
 } //namespace ciphers
 
-/**
+/*
  * Function to test the above algorithm
  * @returns none
  */
 static void test() {
 
-    //test string 1
+    //< test string 1
     std::string text1 = "HelloWorld";
 
-    //test string 2
-    std::string text2 = "ILoveALgorithms";
+    //< test string 2
+    std::string text2 = "I Love Algorithms";
 
     //create objects to encrypt strings text1 and text2
     ciphers::RailFence::Cipher obj1(text1,3,true),obj2(text2,4,true);
@@ -274,7 +265,7 @@ static void test() {
     
 }
 
-/**
+/*
  * Main function
  */
 int main() {
