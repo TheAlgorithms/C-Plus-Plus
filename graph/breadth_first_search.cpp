@@ -6,6 +6,7 @@
  *
  * \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
+ *
  * \details
  * Breadth First Search also quoted as BFS is a Graph Traversal Algorithm.
  * Time Complexity O(|V| + |E|) where V are the number of vertices and E
@@ -48,132 +49,127 @@
 #include <iostream>
 #include <queue>
 #include <vector>
+#include <map>
+#include <list>
+#include <string>
 
-/**
- * \namespace graph
- * \brief Graph algorithms
- */
-namespace graph {
 
-/**
- * \brief Representation of the graph as an adjacency list.
- *
- * For every vertex, there is a list of its neighbors in the order in which
- * they were added to the graph. By default, the edges are directed, but
- * an undirected graph can be represented simply by storing each each as
- * two directed edges in both directions.
- */
-using adjacency_list = std::vector<std::vector<int>>;
-
-/**
- * \brief
- * Adds a directed edge from vertex u to vertex v.
- *
- * @param graph Adjacency list representation of graph
- * @param u first vertex
- * @param v second vertex
- *
- */
-void add_directed_edge(adjacency_list *graph, int u, int v) {
-    (*graph)[u].push_back(v);
-}
-
-/**
- * \brief
- * Adds an undirected edge from vertex u to vertex v.
- * Essentially adds too directed edges to the adjacency list reprsentation
- * of the graph.
- *
- * @param graph Adjacency list representation of graph
- * @param u first vertex
- * @param v second vertex
- *
- */
-void add_undirected_edge(adjacency_list *graph, int u, int v) {
-    add_directed_edge(graph, u, v);
-    add_directed_edge(graph, v, u);
-}
-
-/**
- * \brief
- * Function performs the breadth first search algorithm over the graph
- *
- * @param graph Adjacency list representation of graph
- * @param start vertex from where traversing starts
- * @returns a binary vector indicating which vertices were visited during the
- * search.
- *
- */
-std::vector<bool> breadth_first_search(const adjacency_list &graph, int start) {
-    /// vector to keep track of visited vertices
-    std::vector<bool> visited(graph.size(), false);
-    /// queue that stores vertices that need to be further explored
-    std::queue<int> tracker;
-
-    /// mark the starting vertex as visited
-    visited[start] = true;
-    tracker.push(start);
-    while (!tracker.empty()) {
-        size_t vertex = tracker.front();
-        tracker.pop();
-        for (auto x : graph[vertex]) {
-            /// if the vertex is not visited then mark it as visited
-            /// and push it to the queue
-            if (!visited[x]) {
-                visited[x] = true;
-                tracker.push(x);
-            }
-        }
+/* Class Graph definition */
+template<typename T>
+class Graph{
+  /**
+  *  adjacency_list maps every vertex to the list of its neighbours in the order
+  *  in which they are added.
+  */
+  std::map<T,std::list<T> > adjacency_list;
+  public:
+    Graph(){};
+    void add_edge(T u,T v, bool bidir=true){
+      /**
+      *  add_edge(u,v,bidir) is used to add an edge between node u and node v
+      *  by default , bidir is made true , i.e graph is bidirectional .
+      *  It means if edge(u,v) is added then u-->v  and  v-->u both edges exist.
+      *
+      *  to make the graph unidirectional pass the third parameter of add_edge as
+      *  false which will
+      */
+      adjacency_list[u].push_back(v);               // u-->v edge added
+      if(bidir==true){
+        // if graph is bidirectional
+        adjacency_list[v].push_back(u);             // v-->u edge added
+      }
     }
-    return visited;
-}
+    /**
+    *  this function performs the breadth first search on graph and return a
+    *  mapping which maps the nodes to a boolean value representing whether the
+    *  node was traversed or not.
+    */
+    std::map<T,bool> breadth_first_search(T src){
+      std::map<T,bool> tracker;
 
-}  // namespace graph
+      for(auto adjlist: adjacency_list){
+        tracker[adjlist.first]=false;
+        for(auto node:adjacency_list[adjlist.first]){
+          tracker[node]=false;
+        }
+      }
+      std::queue<T> q;
+      q.push(src);
+      tracker[src]=true;
+      while(!q.empty()){
+        T node = q.front();
+        q.pop();
+        for(T neighbour : adjacency_list[node]){
+          if(!tracker[neighbour]){
+            q.push(neighbour);
+            tracker[neighbour]=true;
+          }
+        }
+      }
+      return tracker;
+    }
+};
 
 /** Test function */
 static void tests() {
     /// Test 1 Begin
-    graph::adjacency_list graph(4, std::vector<int>());
-    graph::add_undirected_edge(&graph, 0, 1);
-    graph::add_undirected_edge(&graph, 1, 2);
-    graph::add_undirected_edge(&graph, 2, 3);
+    Graph<int> g;
+    std::map<int,bool> correct_result;
+    g.add_edge(0,1);
+    g.add_edge(1,2);
+    g.add_edge(2,3);
+    correct_result[0]=true;
+    correct_result[1]=true;
+    correct_result[2]=true;
+    correct_result[3]=true;
 
-    std::vector<bool> returned_result = graph::breadth_first_search(graph, 2);
-    std::vector<bool> correct_result = {true, true, true, true};
+    std::map<int,bool> returned_result = g.breadth_first_search(2);
 
-    assert(std::equal(correct_result.begin(), correct_result.end(),
-                      returned_result.begin()));
+    assert(returned_result==correct_result);
     std::cout << "Test 1 Passed..." << std::endl;
 
     /// Test 2 Begin
-    returned_result = graph::breadth_first_search(graph, 0);
+    returned_result = g.breadth_first_search(0);
 
-    assert(std::equal(correct_result.begin(), correct_result.end(),
-                      returned_result.begin()));
+    assert(returned_result==correct_result);
     std::cout << "Test 2 Passed..." << std::endl;
 
     /// Test 3 Begins
-    graph.clear();
-    graph.resize(6);
-    graph::add_directed_edge(&graph, 0, 1);
-    graph::add_directed_edge(&graph, 0, 2);
-    graph::add_directed_edge(&graph, 1, 3);
-    graph::add_directed_edge(&graph, 2, 3);
-    graph::add_directed_edge(&graph, 1, 4);
-    graph::add_directed_edge(&graph, 3, 5);
+    // 0-> Gorakhpur
+    // 1-> Lucknow
+    // 2-> Kanpur
+    // 3-> Agra
+    // 4-> Prayagraj
+    // 5-> Noida
+    Graph<std::string> g2;
 
-    returned_result = graph::breadth_first_search(graph, 2);
-    correct_result = {false, false, true, true, false, true};
+    g2.add_edge("Gorakhpur","Lucknow",false);
+    g2.add_edge("Gorakhpur","Kanpur",false);
+    g2.add_edge("Lucknow","Agra",false);
+    g2.add_edge("Kanpur","Agra",false);
+    g2.add_edge("Lucknow","Prayagraj",false);
+    g2.add_edge("Agra","Noida",false);
 
-    assert(std::equal(correct_result.begin(), correct_result.end(),
-                      returned_result.begin()));
+    std::map<std::string,bool> correct_res;
+    std::map<std::string,bool> returned_res=g2.breadth_first_search("Kanpur");
+    correct_res["Gorakhpur"]=false;
+    correct_res["Lucknow"]=false;
+    correct_res["Kanpur"]=true;
+    correct_res["Agra"]=true;
+    correct_res["Prayagraj"]=false;
+    correct_res["Noida"]=true;
+    for(auto x: returned_res){
+      std::cout<<x.first<<" : "<<x.second<<std::endl;
+    }
+    assert(correct_res==returned_res);
     std::cout << "Test 3 Passed..." << std::endl;
+
 }
 
 /** Main function */
 int main() {
     tests();
-
+/*
     size_t vertices = 0, edges = 0;
     std::cout << "Enter the number of vertices: ";
     std::cin >> vertices;
@@ -193,5 +189,6 @@ int main() {
     }
 
     graph::breadth_first_search(graph, 0);
+*/
     return 0;
 }
