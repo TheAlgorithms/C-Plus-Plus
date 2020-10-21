@@ -49,6 +49,8 @@ void power_of_two(int n) {
         std::cout << "No, the number " << n << " is not a power of 2";
     }
 }
+}  // namespace math
+
 
 /**
  * @brief Main function
