@@ -68,6 +68,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests(); // execute the tests
     return 0;
 }
