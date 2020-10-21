@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief An algorithm to calculate the sum of Fibonacci Sequence: \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
+ * @brief An algorithm to calculate the sum of [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number): \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
  * @details An algorithm to calculate the sum of Fibonacci Sequence: \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$ where \f$\mathrm{F}(i)\f$
  * denotes the i-th Fibonacci Number . Note that F(0) = 0 and F(1) = 1.
  * The value of the sum is calculated using matrix exponentiation.
