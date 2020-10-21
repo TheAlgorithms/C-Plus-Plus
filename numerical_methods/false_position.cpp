@@ -18,13 +18,8 @@
  *
  * \see newton_raphson_method.cpp, bisection_method.cpp
  */
-#include <cmath>
-#include <cstdlib>
-#include <iostream>
-#include <limits>
-
-int RANGE = 100000;  ///< Range in which we have to find the root. (-Range,Range)
-double INTERVAL_GAP = 0.5; /// interval gap. lesser the gap more the accuracy
+#include <cmath>      // For math operations
+#include <iostream>   // For io operations
 
 /** define \f$f(x)\f$ to find root for
  */
@@ -62,20 +57,20 @@ static double regula_falsi(double x1,double x2,double y1,double y2){
 /**
 * @brief This function prints roots of the equation.
 * @param root which we have to print. 
-* @param COUNT which is count of the root in an interval [-RANGE,RANGE].
+* @param count which is count of the root in an interval [-range,range].
 */  
-void printRoot(double root,int COUNT){
-    if(COUNT==1){
+void printRoot(double root,int count){
+    if(count==1){
         std::cout << "Your 1st root is : " << root << std::endl;
     }
-    else if(COUNT==2){
+    else if(count==2){
         std::cout << "Your 2nd root is : " << root << std::endl;
     }
-    else if(COUNT==3){
+    else if(count==3){
         std::cout << "Your 3rd root is : " << root << std::endl;
     }
     else{
-        std::cout << "Your "<<COUNT<<"th root is : " << root << std::endl;
+        std::cout << "Your "<<count<<"th root is : " << root << std::endl;
     }
 }
 
@@ -86,23 +81,25 @@ void printRoot(double root,int COUNT){
 */
 int main() {
     double a=0, b=0,i=0,root=0;
-    int COUNT=0;
-    a = eq((-1)*RANGE);
-    i=((-1)*RANGE + INTERVAL_GAP);
-    //while loop for selecting prope interval in povided range and with provided interval gap.
-    while(i<=RANGE){
+    int count=0;
+    int range = 100000;        //Range in which we have to find the root. (-range,range)
+    double gap = 0.5;          //interval gap. lesser the gap more the accuracy
+    a = eq((-1)*range);
+    i=((-1)*range + gap);
+    //while loop for selecting proper interval in provided range and with provided interval gap.
+    while(i<=range){
         b = eq(i);
         if(b==0){
-            COUNT++;
-            printRoot(i,COUNT);
+            count++;
+            printRoot(i,count);
         }
         if(a*b<0){
-            root = regula_falsi(i-INTERVAL_GAP,i,a,b);
-            COUNT++;
-            printRoot(root,COUNT);
+            root = regula_falsi(i-gap,i,a,b);
+            count++;
+            printRoot(root,count);
         }
         a=b;
-        i+=INTERVAL_GAP;
+        i+=gap;
     }
     return 0;
 }
