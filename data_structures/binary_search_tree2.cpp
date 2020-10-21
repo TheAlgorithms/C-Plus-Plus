@@ -17,11 +17,21 @@
 template <class T>
 class binary_search_tree {
  private:
+    /**
+    * @brief A struct to represent a node in the Binary Search Tree.
+    */
     struct bst_node {
+        // The value/key of the node.
         T value;
+
+        // Pointer to left subtree.
         std::unique_ptr<bst_node> left;
+
+        // Pointer to right subtree.
         std::unique_ptr<bst_node> right;
 
+        // Constructor for bst_node, used to simplify node construction and
+        // smart pointer construction.
         explicit bst_node(T _value) {
             value = _value;
             left = nullptr;
@@ -29,7 +39,10 @@ class binary_search_tree {
         }
     };
 
+    // Pointer to the root of the BST.
     std::unique_ptr<bst_node> root_;
+
+    // Number of elements/nodes in the BST.
     std::size_t size_ = 0;
 
     /**
@@ -342,8 +355,10 @@ class binary_search_tree {
 
 /**
  * @brief Function for testing insert().
+ * 
+ * @returns `void`
  */
-void test_insert() {
+static void test_insert() {
     std::cout << "Testing BST insert...";
 
     binary_search_tree<int> tree;
@@ -374,8 +389,10 @@ void test_insert() {
 
 /**
  * @brief Function for testing remove().
+ * 
+ * @returns `void`
  */
-void test_remove() {
+static void test_remove() {
     std::cout << "Testing BST remove...";
 
     binary_search_tree<int> tree;
@@ -409,8 +426,10 @@ void test_remove() {
 
 /**
  * @brief Function for testing contains().
+ * 
+ * @returns `void`
  */
-void test_contains() {
+static void test_contains() {
     std::cout << "Testing BST contains...";
 
     binary_search_tree<int> tree;
@@ -430,8 +449,10 @@ void test_contains() {
 
 /**
  * @brief Function for testing find_min().
+ * 
+ * @returns `void`
  */
-void test_find_min() {
+static void test_find_min() {
     std::cout << "Testing BST find_min...";
 
     int min = 0;
@@ -451,8 +472,10 @@ void test_find_min() {
 
 /**
  * @brief Function for testing find_max().
+ * 
+ * @returns `void`
  */
-void test_find_max() {
+static void test_find_max() {
     std::cout << "Testing BST find_max...";
 
     int max = 0;
@@ -472,8 +495,10 @@ void test_find_max() {
 
 /**
  * @brief Function for testing get_elements_inorder().
+ * 
+ * @returns `void`
  */
-void test_get_elements_inorder() {
+static void test_get_elements_inorder() {
     std::cout << "Testing BST get_elements_inorder...";
 
     binary_search_tree<int> tree;
@@ -491,8 +516,10 @@ void test_get_elements_inorder() {
 
 /**
  * @brief Function for testing get_elements_preorder().
+ * 
+ * @returns `void`
  */
-void test_get_elements_preorder() {
+static void test_get_elements_preorder() {
     std::cout << "Testing BST get_elements_preorder...";
 
     binary_search_tree<int> tree;
@@ -510,8 +537,10 @@ void test_get_elements_preorder() {
 
 /**
  * @brief Function for testing get_elements_postorder().
+ * 
+ * @returns `void`
  */
-void test_get_elements_postorder() {
+static void test_get_elements_postorder() {
     std::cout << "Testing BST get_elements_postorder...";
 
     binary_search_tree<int> tree;
