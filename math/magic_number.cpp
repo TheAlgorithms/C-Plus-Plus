@@ -54,7 +54,7 @@ static void tests() {
     std::cout << "passed\n";
 
     std::cout << "Test 2:\t n=730\n";
-    assert(magic_number(730) == true);
+    assert(math::magic_number(730) == true);
     std::cout << "passed\n";
 
     std::cout << "Test 3:\t n=0\n";
