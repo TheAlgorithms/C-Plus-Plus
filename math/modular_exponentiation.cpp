@@ -30,7 +30,6 @@ namespace math {
 * @param c integer modulo
 * @return a raised to power b modulo c
 */
-
 uint64_t power(uint64_t a, uint64_t b, uint64_t c)
 { 
 	uint64_t ans = 1;	    	/// Initialize the answer to be returned 
