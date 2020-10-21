@@ -1,6 +1,8 @@
 
 // Program to find maximum product of a contiguous subarray within an array
-#include <bits/stdc++.h>
+#include <iostream>
+#include<vector>
+#include<algorithm>
 
 using namespace std;
 
