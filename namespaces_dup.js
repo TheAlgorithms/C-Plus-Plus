@@ -5,6 +5,7 @@ var namespaces_dup =
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", null ],
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
+    [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", null ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", null ],
