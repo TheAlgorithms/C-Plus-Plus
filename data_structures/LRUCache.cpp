@@ -13,6 +13,8 @@
 #include <unordered_map> // For hashmap
 #include <cassert>  /// for assert
 
+using namespace std;
+
 /**
  * Class node
  * Class node to build up and implement doubly circular linked lists
