@@ -1,6 +1,7 @@
 #include<iostream>
 #include<graphics.h>
 #include<math.h>
+
 using namespace std;
 main(){
 	char choice;
@@ -115,3 +116,19 @@ do
 while(choice!=5 && choice!= getchar());		  
 
 }
+
+
+
+/*
+EXAMPLE INPUT
+Enter first coordinates of triangle: 50 150
+Enter second coordinates of triangle: 150 200
+Enter third coordinates of triangle: 250 300
+
+Translation Vector: 100 100
+Angle of rotaion: 30
+Shearing Factor: 2
+Scaling Factor: 2 2
+*/
+
+
