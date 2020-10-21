@@ -53,7 +53,7 @@ public:
 class LRUCache {
 public:
     node *root ;
-    unordered_map< int, node* > addr ;
+    std::unordered_map< int, node* > addr ;
 
     /**
     * Constructor Function
