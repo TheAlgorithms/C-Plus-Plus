@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief A generic binary search tree implementation.
+ * @brief A generic [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) implementation.
+ * @see binary_search_tree.cpp
  */
 
 #include <cassert>
