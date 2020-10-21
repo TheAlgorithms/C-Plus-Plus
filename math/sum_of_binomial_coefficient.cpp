@@ -7,8 +7,9 @@
  * @source https://en.wikipedia.org/wiki/Binomial_coefficient#Sums_of_the_binomial_coefficients
  * @author muskan0719 [https://github.com/muskan0719]
  */
-#include<iostream> /// for std::cin and std::cout
-#include<cassert>  /// for assert
+#include <iostream> /// for std::cin and std::cout
+#include <cassert>  /// for assert
+
 
 /** 
  * Function to calculate sum of binomial coefficients
