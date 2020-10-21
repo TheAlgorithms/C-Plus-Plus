@@ -1,0 +1,63 @@
+/*A cable company wants to connect five villages in their network which currently extends the market
+town of Delhi. Develop a program to find the minimum length of cable required to connect all the five
+villages using Prim’s/Kruskal’s algorithm.*/
+
+//===========================================================================
+
+#include <iostream>
+using namespace std;
+#define inf 99999999
+#define M 5
+int main()
+{
+ int i,j,n;
+ int a[M][M];
+ for(i=0;i<M;i++)
+ {
+ for(j=0;j<M;j++)
+ {
+ cout<<"Enter the elements in 2D array"<<endl;
+ cin>>a[i][j];
+ }
+ }
+ int visited[M];
+ for(i=0;i<M;i++)
+ {
+ visited[i]=false;
+ }
+ n=0;
+ visited[0]=true;
+ int b;
+ int c;
+ cout << "Edge" << " : " << "Length";
+ cout << endl;
+ while (n < M-1)
+ {
+ int min = inf;
+ b=0;
+ c=0;
+ for (int i = 0; i < M; i++)
+ {
+ if (visited[i])
+ {
+ for (int j = 0; j < M; j++)
+{
+ if (!visited[j] && a[i][j])
+ {
+ if (min > a[i][j])
+{
+ min = a[i][j];
+b = i;
+c = j;
+ }
+ }
+ }
+ }
+ }
+ cout << b << " - " << c << " : " << a[b][c];
+ cout << endl;
+ visited[c] = true;
+ n++;
+ }
+ return 0;
+}
