@@ -5,23 +5,23 @@
  * @author [Neha Labhasetwar](https://github.com/nehalabhasetwar)
  */
 
-#include <iostream>
-#include <queue>
-#include <cassert>
+#include <iostream>  // for standard IO operations
+#include <cassert>   // defines one macro function (assert) that can be used as a standard debugging tool
+#include <queue>     // This header is part of the containers library, designed to operate in FIFO context
 
 class MyStack
 {
     /** initialize queue */
-    std::queue <int> q;
+    std::queue <int> q;      //empty queue q of int type
 
     public:
 
-    MyStack() = default;                                 //default constructor
+    MyStack() = default;                                 //default constructor for stack
 
 /**
- * Function to  Push element onto stack.
- * @param x number to be pushed.
- * @return void.
+ * Function to  Push element onto stack
+ * @param x number to be pushed
+ * @return void
  */
 
     void push(int x)
@@ -37,7 +37,8 @@ class MyStack
     }
 
 /** Function to Remove the element on top of the stack and return that element.
- *  @return element that is deleted from the stack. */
+ *  @return element that is deleted from the stack
+ */
 
     int pop()
     {
@@ -47,7 +48,8 @@ class MyStack
     }
 
 /** Function to Get the topmost element from stack.
- *  @return element on the top of stack. */
+ *  @return element on the top of stack
+ */
 
     int top()
     {
@@ -55,7 +57,8 @@ class MyStack
     }
 
 /** Function to Return whether the stack is empty.
- *  @return if stack is empty, returns true, else false.*/
+ *  @return if stack is empty, returns true, else false
+ */
 
     bool empty()
     {
@@ -63,13 +66,15 @@ class MyStack
     }
 };
 
+/** Function for testing stack operations.
+ *  test cases and assert statement.
+ *  @returns void
+ */
 
-/** Testing function.
- *  @returns void. */
-
-void stack_test()
+static void stack_test()
 {
-    MyStack obj;
+    MyStack obj;            //  object of MyStack class
+
     std::cout << "Test #1\n";
     obj.push(2);
     obj.push(5);
@@ -81,22 +86,19 @@ void stack_test()
     assert(obj.top() == 2);
     assert(obj.pop() == 2);
     assert(obj.empty() == true);
-    std::cout << "PASSED\n";
+    std::cout << "PASSED TEST 1\n";
 
     std::cout << "Test #2\n";
     obj.push(-1);
     assert(obj.empty() == false);
     assert(obj.top() == -1);
     assert(obj.pop() == -1);
-    std::cout << "PASSED\n";
+    std::cout << "PASSED TEST 2\n";
 }
 
-
-
-/** Main function
+/** Main function calling stack_test function
  * @returns 0 on exit
  */
-
 
 int main()
 {
