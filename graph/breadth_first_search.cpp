@@ -87,9 +87,9 @@ class Graph{
     std::map<T,bool> breadth_first_search(T src){
       std::map<T,bool> tracker;
 
-      for(auto const adjlist: adjacency_list){
+      for(auto const &adjlist: adjacency_list){
         tracker[adjlist.first]=false;
-        for(auto const node:adjacency_list[adjlist.first]){
+        for(auto const &node:adjacency_list[adjlist.first]){
           tracker[node]=false;
         }
       }
@@ -99,7 +99,7 @@ class Graph{
       while(!q.empty()){
         T node = q.front();
         q.pop();
-        for(T const neighbour : adjacency_list[node]){
+        for(T const &neighbour : adjacency_list[node]){
           if(!tracker[neighbour]){
             q.push(neighbour);
             tracker[neighbour]=true;
