@@ -22,6 +22,12 @@
  */
 
 #include <iostream>  /// for std::cout
+
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
 /**
  * @brief Function to test above algorithm
  * @param n description
