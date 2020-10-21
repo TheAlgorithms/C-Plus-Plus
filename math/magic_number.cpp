@@ -20,6 +20,11 @@
 #include <iostream>  /// for io operations
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
  * Function to check if the given number is magic number or not.
  * @param n number to be checked.
  * @return if number is a magic number, returns true, else false.
