@@ -38,7 +38,7 @@
  * @param y vector 2
  * @param c dimension of the vectors
  * 
- *@returns dot_product
+ *@returns sum
  */
 
 double dot_product(std::array<double, 10> &x, std::array<double, 10> &y, int c) {
