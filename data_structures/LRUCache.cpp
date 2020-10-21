@@ -13,8 +13,6 @@
 #include <unordered_map> // For hashmap
 #include <cassert>  /// for assert
 
-using namespace std;
-
 /**
  * Class node
  * Class node to build up and implement doubly circular linked lists
@@ -149,13 +147,13 @@ int main(int argc, char *argv[]) {
     ///< Exectuing vaious functions
     lru.put(1,1);
     lru.put(2,2);
-    cout << lru.get(1) << endl ;
+    std::cout << lru.get(1) << std::endl ;
     lru.put(3,3);
-    cout << lru.get(2) << endl ;
+    std::cout << lru.get(2) << std::endl ;
     lru.put(4,4);
-    cout << lru.get(1) << endl ;
-    cout << lru.get(3) << endl ;
-    cout << lru.get(4) << endl ;
+    std::cout << lru.get(1) << std::endl ;
+    std::cout << lru.get(3) << std::endl ;
+    std::cout << lru.get(4) << std::endl ;
  
     return 0;
 }
