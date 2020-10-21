@@ -4,7 +4,7 @@
  * @details An algorithm to calculate the sum of Fibonacci Sequence: \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$ where \f$\mathrm{F}(i)\f$
  * denotes the i-th Fibonacci Number . Note that F(0) = 0 and F(1) = 1.
  * The value of the sum is calculated using matrix exponentiation.
- * @source https://stackoverflow.com/questions/4357223/finding-the-sum-of-fibonacci-numbers
+ * Reference source: https://stackoverflow.com/questions/4357223/finding-the-sum-of-fibonacci-numbers
  * @author [Sarthak Sahu](https://github.com/SarthakSahu1009)
  */
 
