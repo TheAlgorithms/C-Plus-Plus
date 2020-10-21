@@ -8,7 +8,18 @@
 #include <iostream>  // for standard IO operations
 #include <cassert>   // defines one macro function (assert) that can be used as a standard debugging tool
 #include <queue>     // This header is part of the containers library, designed to operate in FIFO context
-
+/**
+ * @namespace data_structures
+ * @brief In this approach we will see how to Implement Stack using Single Queue,
+ * 1.Push the element to the Queue :
+         -Check the size of Queue and store it in variable "s".
+         -Iterate from 0 to "s" and Pop the element from queue and push the same element to Queue. By doing this, last inserted data will come at first position in Queue.
+   2.Pop Operation:
+         -Pop the elements from Queue.
+   3.top Operation:
+         -Return front element from Queue.
+*/
+namespace data_structures{
 /** Assuming we already have a class implemented for Queue, we will first design the class for Stack.
  *  It will have the methods push() , pop() , top() , and empty() and one queue.
  */
@@ -62,21 +73,19 @@ class MyStack
 /** Function to Return whether the stack is empty.
  *  @return if stack is empty, returns true, else false
  */
-
     bool empty()
     {
         return q.empty();
     }
 };
-
+}
 /** Function for testing stack operations.
  *  test cases and assert statement.
  *  @returns void
  */
-
-static void stack_test()
+static void test()
 {
-    MyStack obj;            //  object of MyStack class
+    data_structures::MyStack obj;            //  object of MyStack class
 
     std::cout << "Test #1\n";
     obj.push(2);
@@ -98,13 +107,12 @@ static void stack_test()
     assert(obj.pop() == -1);
     std::cout << "PASSED TEST 2\n";
 }
-
 /** Main function calling stack_test function
  * @returns 0 on exit
  */
 int main()
 {
-    stack_test();
+    test();
     return 0;
 }
 
