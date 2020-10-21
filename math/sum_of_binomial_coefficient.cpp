@@ -21,6 +21,7 @@ int binomialCoeffSum(int n) {
     // Calculating 2^n
     return (1 << n);
 }
+}  // namespace math
 
 /**
  * Function for testing binomialCoeffSum function.
