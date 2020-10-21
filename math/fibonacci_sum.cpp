@@ -31,7 +31,7 @@ namespace math {
          */
         std::vector<std::vector<int> > multiply(std::vector<std::vector<int> > T, std::vector<std::vector<int> > A) {
 
-            std::vector<std::vector<int> > result(2,std::vector<int>(2));
+            std::vector<std::vector<int> > result(2,std::vector<int>(2, 0));
 
             // multiplying matrices
             for(int i=0;i<2;i++) {
