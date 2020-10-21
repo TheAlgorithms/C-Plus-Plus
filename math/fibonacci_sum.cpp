@@ -27,6 +27,7 @@ namespace math {
      * \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
      */
     namespace fibonacci_sum {
+        using matrix = std::vector<std::vector<uint64_t> >;
 
         /**
          * Function to multiply two matrices
@@ -34,8 +35,8 @@ namespace math {
          * @param A martix 2
          * @returns resultant matrix
          */
-        std::vector<std::vector<uint64_t> > multiply(const std::vector<std::vector<uint64_t> > &T, const std::vector<std::vector<uint64_t> > &A) {
-            std::vector<std::vector<uint64_t> > result(2, std::vector<uint64_t>(2, 0));
+        math::fibonacci_sum::matrix multiply(const math::fibonacci_sum::matrix &T, const math::fibonacci_sum::matrix &A) {
+            math::fibonacci_sum::matrix result(2, std::vector<uint64_t>(2, 0));
 
             // multiplying matrices
             result[0][0] = T[0][0]*A[0][0] + T[0][1]*A[1][0];
@@ -50,20 +51,20 @@ namespace math {
          * Function to compute A^n where A is a matrix.
          * @param T matrix
          * @param ex power
-         * @returns void
+         * @returns resultant matrix
          */
-        void power(std::vector<std::vector<uint64_t> > &T, uint64_t ex) {
-            std::vector<std::vector<uint64_t> > A{{1, 1}, {1, 0}};
+        math::fibonacci_sum::matrix power(math::fibonacci_sum::matrix T, uint64_t ex) {
+            math::fibonacci_sum::matrix A{{1, 1}, {1, 0}};
             if (ex == 0 || ex == 1) {
-                return;
+                return T;
             }
 
-            power(T, ex / 2);
+            T = power(T, ex / 2);
             T = multiply(T, T);
             if (ex & 1) {
                 T = multiply(T, A);
             }
-            return;
+            return T;
         }
 
         /**
@@ -72,8 +73,8 @@ namespace math {
          * @returns uint64_t ans, the sum of sequence
          */
         uint64_t result(uint64_t n) {
-            std::vector<std::vector<uint64_t> > T{{1, 1}, {1, 0}};
-            power(T, n);
+            math::fibonacci_sum::matrix T{{1, 1}, {1, 0}};
+            T = power(T, n);
             uint64_t ans = T[0][1];
             ans = (ans - 1);
             return ans;
