@@ -38,7 +38,7 @@
 namespace linear_algebra {
 /**
  * @namespace gram_schmidt
- * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief Functions for [Gram Schmidt Orthogonalisation Process] (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  */
 namespace gram_schmidt {
 /**
@@ -238,7 +238,7 @@ int main() {
   int flag = 1; ///To check whether vectors are orthogonal or  not
   for (int i = 0; i < r - 1; i++) {
     for (int j = i + 1; j < r; j++) {
-      dot = fabs(dot_product(B[i], B[j], c));
+      dot = fabs(linear_algebra::gram_schmidtdot_product(B[i], B[j], c));
       if (dot > 0.1) /// take make the process numerically stable, upper bound for the dot product take 0.1
       {
         flag = 0;
