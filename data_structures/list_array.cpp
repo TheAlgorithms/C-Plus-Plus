@@ -93,21 +93,17 @@ struct list {
      * sort the list
      */
     void sort() {
-        int pos=0; // Initialize the index variable with starting index
         //Going through each element in the list
         for (int i = 0; i < top; i++) {
-            int min = data[i]; // Initialize the min variable
+            int min_idx = i; // Initialize the min variable
             for (int j = i + 1; j < top; j++) {
                 // check whether any element less than current min value
-                if (data[j] < min) {
-                    pos = j; // update index accordingly
-                    min = data[pos]; // update minimum variable accordingly
+                if (data[j] < data[min_idx]) {
+                    min_idx = j; // update index accordingly
                 }
             }
-            // swap min value and current element at ith index
-            int temp = data[i];
-            data[i] = data[pos];
-            data[pos] = temp;
+            // swap min value and element at the ith index
+            std::swap(data[min_idx], data[i]);
         }
         // mark isSorted variable as true
         isSorted = true;
@@ -203,13 +199,13 @@ void test() {
     // Remove testing
     L.remove(12); // Remove Duplicate value in the list
     L.remove(15); // Remove the existing value in the list
-    assert(L.top == 4);
-    L.remove(50); // Remove the non-existing value in the list
-    assert(L.top == 4);
+    assert(L.top == 5);
+    L.remove(50); // Try to remove the non-existing value in the list
+    assert(L.top == 5);
 
     // LinearSearch testing
     assert(L.search(11) == 0); // search for the existing element
-    assert(L.search(12) == 1);
+    assert(L.search(12) == 2);
     assert(L.search(50) == -1); // search for the non-existing element
 
     // Sort testing
@@ -219,7 +215,7 @@ void test() {
 
     // BinarySearch testing
     assert(L.search(11) == 1); // search for the existing element
-    assert(L.search(12) == 3);
+    assert(L.search(12) == 2);
     assert(L.search(50) == -1); // search for the non-existing element
 }
 
