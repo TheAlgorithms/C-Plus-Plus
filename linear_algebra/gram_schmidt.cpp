@@ -41,7 +41,6 @@ namespace linear_algebra {
  * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  */
 namespace gram_schmidt {
-/**
 
 /**
  * Dot product function.
