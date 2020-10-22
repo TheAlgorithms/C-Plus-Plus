@@ -55,7 +55,7 @@ std::vector<T> mergeksorted(const std::vector<vector<T>> v) {
 		int y=c.second.second;
 		r.push_back(e);
 		//check if array end is reached or not
-		if(y+1<v[x].size())
+		if((y+1)<(v[x].size()))
 		p.push({v[x][y+1],{x,y+1}});
 	}
 	return r;
