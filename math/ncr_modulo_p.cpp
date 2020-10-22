@@ -8,20 +8,20 @@
 #include <iostream>
 #include <vector>
 
-
 /** Class which contains all methods required for calculating nCr mod p
  *
  */
 class NCRModuloP {
-private:
+ private:
     std::vector<int64_t> fac;
     int64_t p;
-public:
+
+ public:
     /** Constructor which precomputes the values of n! % mod from n=0 to size
      *  and stores them in vector 'fac'
      *  @params[in] the numbers 'size', 'mod'
-    */
-    NCRModuloP(int64_t size, int64_t mod){
+     */
+    NCRModuloP(int64_t size, int64_t mod) {
         p = mod;
         fac = std::vector<int64_t>(size);
         fac[0] = 1;
@@ -60,8 +60,7 @@ public:
         int64_t g = gcdExtended(a, m, &x, &y);
         if (g != 1) {  // modular inverse doesn't exist
             return -1;
-        }
-        else {
+        } else {
             int64_t res = (x % m + m) % m;
             return res;
         }
@@ -80,7 +79,7 @@ public:
         if (r == 1) {
             return n % p;
         }
-        if (r == 0 || r == n){
+        if (r == 0 || r == n) {
             return 1;
         }
         // fac is a global array with fac[r] = (r! % p)
@@ -100,11 +99,10 @@ void tests(NCRModuloP ncrObj) {
     // (52323 C 26161) % (1e9 + 7) = 224944353
     assert(ncrObj.ncr(52323, 26161, 1000000007) == 224944353);
     // 6 C 2 = 30, 30%5 = 0
-    assert(ncrObj.ncr(6,2,5) == 0);
+    assert(ncrObj.ncr(6, 2, 5) == 0);
     // 7C3 = 35, 35 % 29 = 8
-    assert(ncrObj.ncr(7,3,29) == 6);
+    assert(ncrObj.ncr(7, 3, 29) == 6);
 }
-
 
 /**
  * @brief Main function
