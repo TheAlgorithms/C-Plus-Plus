@@ -81,7 +81,7 @@ public:
     * get Function
     * Accepts one parameter, the key whose value needs to be returned.
     * If key requested is not present return -1.
-    * @param key : value for this key is to be returned.
+    * @param key value for this key is to be returned.
     * @returns NOTHING
     */
     int get(int key) {
