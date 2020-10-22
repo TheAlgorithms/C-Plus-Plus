@@ -157,11 +157,11 @@ static void test() {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
   std::array<std::array<double, 10>, 20> b1 = {{0}};
        double dot1 = 0;
-  gram_schmidt(3, 4, a1, b1);
+ linear_algebra::gram_schmidt(3, 4, a1, b1);
   int flag = 1;
   for (int i = 0; i < 2; i++)
     for (int j = i + 1; j < 3; j++) {
-      dot1 = fabs(dot_product(b1[i], b1[j], 4));
+      dot1 = fabs(linear_algebra::gram_schmidtdot_product(b1[i], b1[j], 4));
       if (dot1 > 0.1) {
         flag = 0;
         break;
@@ -174,11 +174,11 @@ static void test() {
   std::array<std::array<double, 10>, 20> a2 = {{{3, 1}, {2, 2}}};
   std::array<std::array<double, 10>, 20> b2 = {{0}};
   double dot2 = 0;
-  gram_schmidt(2, 2, a2, b2);
+  linear_algebra::gram_schmidt(2, 2, a2, b2);
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
-      dot2 = fabs(dot_product(b2[i], b2[j], 2));
+      dot2 = fabs(linear_algebra::gram_schmidtdot_product(b2[i], b2[j], 2));
       if (dot2 > 0.1) {
         flag = 0;
         break;
@@ -191,11 +191,11 @@ static void test() {
   std::array<std::array<double, 10>, 20> a3 = {{{1, 2, 2}, {-4, 3, 2}}};
   std::array<std::array<double, 10>, 20> b3 = {{0}};
   double dot3 = 0;
-  gram_schmidt(2, 3, a3, b3);
+  linear_algebra::gram_schmidt(2, 3, a3, b3);
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
-      dot3 = fabs(dot_product(b3[i], b3[j], 3));
+      dot3 = fabs(linear_algebra::gram_schmidtdot_product(b3[i], b3[j], 3));
       if (dot3 > 0.1) {
         flag = 0;
         break;
@@ -232,7 +232,7 @@ int main() {
     std::cout << std::endl;
   }
 
-  gram_schmidt(r, c, A, B);
+  linear_algebra::gram_schmidt(r, c, A, B);
 
   double dot = 0;
   int flag = 1; ///To check whether vectors are orthogonal or  not
