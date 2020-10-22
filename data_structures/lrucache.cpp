@@ -13,6 +13,16 @@
 #include <cassert>        /// for assert
 
 /**
+ * @namespace data_structures
+ * @brief Algorithms with data structures
+ */
+namespace data_structures {
+/**
+ * @namespace lru_cache
+ * @brief Functions for [Least Recently Used Cache](https://www.geeksforgeeks.org/lru-cache-implementation/) implementation
+ */
+namespace lru_cache {
+/**
  * Class node
  * Class node to build up and implement doubly circular linked lists
  * which will be used as LRU Cache DS.
