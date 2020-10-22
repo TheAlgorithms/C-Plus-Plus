@@ -157,7 +157,7 @@ static void test() {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
   std::array<std::array<double, 10>, 20> b1 = {{0}};
        double dot1 = 0;
- linear_algebra::gram_schmidt(3, 4, a1, b1);
+ linear_algebra::gram_schmidt::gram_schmidt(3, 4, a1, b1);
   int flag = 1;
   for (int i = 0; i < 2; i++)
     for (int j = i + 1; j < 3; j++) {
@@ -174,7 +174,7 @@ static void test() {
   std::array<std::array<double, 10>, 20> a2 = {{{3, 1}, {2, 2}}};
   std::array<std::array<double, 10>, 20> b2 = {{0}};
   double dot2 = 0;
-  linear_algebra::gram_schmidt(2, 2, a2, b2);
+  linear_algebra::gram_schmidt::gram_schmidt(2, 2, a2, b2);
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
@@ -191,7 +191,7 @@ static void test() {
   std::array<std::array<double, 10>, 20> a3 = {{{1, 2, 2}, {-4, 3, 2}}};
   std::array<std::array<double, 10>, 20> b3 = {{0}};
   double dot3 = 0;
-  linear_algebra::gram_schmidt(2, 3, a3, b3);
+  linear_algebra::gram_schmidt::gram_schmidt(2, 3, a3, b3);
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
@@ -211,7 +211,7 @@ static void test() {
  * @return 0 on exit
  */
 int main() {
-  int r, c;
+  int r=0, c=0;
   test(); // perform self tests
   std::cout << "Enter the dimension of your vectors" << std::endl;
   std::cin >> c;
@@ -232,7 +232,7 @@ int main() {
     std::cout << std::endl;
   }
 
-  linear_algebra::gram_schmidt(r, c, A, B);
+  linear_algebra::gram_schmidt::gram_schmidt(r, c, A, B);
 
   double dot = 0;
   int flag = 1; ///To check whether vectors are orthogonal or  not
