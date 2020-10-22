@@ -75,7 +75,7 @@ struct list {
      * @param val - element that will be searched
      * @return index of element in the list if present else -1
      */
-    void Search(int val) {
+    int Search(int val) {
         int pos; // pos variable to store index value of element.
 
         // if list is sorted, binary search works efficiently else linear search is the only option
@@ -92,6 +92,9 @@ struct list {
         } else {
             std::cout << "\nElement not found";
         }
+
+        // return the index of element or -1.
+        return pos;
     }
 
     /*
@@ -146,6 +149,10 @@ struct list {
 
     void Remove(int x) {
         int pos = Search(x);
+        if (pos == -1) {
+            std::cout << "\n Element does not present in the list ";
+            std::cout << "\n Kindly enter valid input ";
+        }
         std::cout << "\n" << data[pos] << " deleted";
         for (int i = pos; i < top; i++) {
             data[i] = data[i + 1];
