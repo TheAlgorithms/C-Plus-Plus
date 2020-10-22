@@ -41,7 +41,7 @@
  * @returns sum
  */
 
-double dot_product(const std::array<double, 10>& x, const std::array<double, 10>& y, int c) {
+double dot_product(const std::array<double, 10>& x, const std::array<double, 10>& y, const int& c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
     sum += x[i] * y[i];
@@ -61,7 +61,7 @@ double dot_product(const std::array<double, 10>& x, const std::array<double, 10>
  */
 
 double projection(const std::array<double, 10>& x,const std::array<double, 10>& y,
-                 int c) {
+                 const int& c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
   double anorm = dot_product(y, y, c); ///The norm of the second vector is taken.
   double factor = dot / anorm; ///multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
@@ -115,14 +115,14 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
     }
 
     else {
-      std::array<double, 10> all_projection;  ///array to store projections
+      std::array<double, 10> all_projection{};  ///array to store projections
       for (int i = 0; i < c; i++) {
         all_projection[i] = 0;  ///First initialised to zero
       }
 
       int l = 1;
       while (l < k) {
-        std::array<double, 10> temp; ///to store previous projected array
+        std::array<double, 10> temp{}; ///to store previous projected array
         double factor; ///to store the factor by which the previous array will change 
         factor = projection(A[k - 1], B[l - 1], c);
         for(int i = 0; i < c; i++)
@@ -150,7 +150,7 @@ static void test() {
   std::array<std::array<double, 10>, 20> a1 = {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
   std::array<std::array<double, 10>, 20> b1 = {{0}};
-       double dot1;
+       double dot1 = 0;
   gram_schmidt(3, 4, a1, b1);
   int flag = 1;
   for (int i = 0; i < 2; i++)
@@ -167,7 +167,7 @@ static void test() {
 
   std::array<std::array<double, 10>, 20> a2 = {{{3, 1}, {2, 2}}};
   std::array<std::array<double, 10>, 20> b2 = {{0}};
-  double dot2;
+  double dot2 = 0;
   gram_schmidt(2, 2, a2, b2);
   flag = 1;
   for (int i = 0; i < 1; i++)
@@ -184,7 +184,7 @@ static void test() {
 
   std::array<std::array<double, 10>, 20> a3 = {{{1, 2, 2}, {-4, 3, 2}}};
   std::array<std::array<double, 10>, 20> b3 = {{0}};
-  double dot3;
+  double dot3 = 0;
   gram_schmidt(2, 3, a3, b3);
   flag = 1;
   for (int i = 0; i < 1; i++)
@@ -213,7 +213,7 @@ int main() {
   std::cin >> r;
 
   std::array<std::array<double, 10>, 20>
-      A;  ///a 2-D array for storing all vectors
+      A{};  ///a 2-D array for storing all vectors
   std::array<std::array<double, 10>, 20> B = {
       {0}};  /// a 2-D array for storing orthogonalised vectors
   /// storing vectors in array A
