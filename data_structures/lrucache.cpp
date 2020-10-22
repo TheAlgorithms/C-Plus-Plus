@@ -141,7 +141,7 @@ public:
  */
 int main(int argc, char *argv[]) {
    
-    LRUCache lru(2); ///< Created a new LRUCache instace of physical size 2.
+    data_structures::lru_cache::LRUCache lru(2); ///< Created a new LRUCache instace of physical size 2.
  
     ///< Exectuing vaious functions
     lru.put(1,1);
