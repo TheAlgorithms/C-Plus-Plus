@@ -94,11 +94,14 @@ struct list {
         }
     }
 
+    /*
+     * sort the list
+     */
     void Sort() {
-        int i, j, pos=0;
-        for (i = 0; i < top; i++) {
+        int pos=0;
+        for (int i = 0; i < top; i++) {
             int min = data[i];
-            for (j = i + 1; j < top; j++) {
+            for (int j = i + 1; j < top; j++) {
                 if (data[j] < min) {
                     pos = j;
                     min = data[pos];
@@ -113,13 +116,13 @@ struct list {
     }
 
     void insert(int x) {
+        if (top == 49) {
+            std::cout << "\nOverflow";
+            return;
+        }
         if (!isSorted) {
-            if (top == 49) {
-                std::cout << "\nOverflow";
-            } else {
-                data[top] = x;
-                top++;
-            }
+            data[top] = x;
+            top++;
         } else {
             int pos = 0;
 
