@@ -1,6 +1,6 @@
 /**  
  * @file   
- * @brief Gram Schimdt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief Gram Schmidt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
  * @details
  * Takes the input of Linearly Independent Vectors,
@@ -26,10 +26,10 @@
  * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
-#include <iostream>
-#include <cassert>
-#include <cmath>
-#include <array>
+#include <iostream>   /// for io operations
+#include <cassert>    /// for assert
+#include <cmath>   /// for fabs
+#include <array>    /// for std::array
 
 /**
  * Dot product function.
