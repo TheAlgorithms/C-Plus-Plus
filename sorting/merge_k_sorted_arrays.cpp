@@ -43,11 +43,11 @@ std::vector<T> mergeksorted(const std::vector<vector<T>> v) {
     typedef pair <T,pair<T,T>>node;
 
     priority_queue<node,vector<node>,greater<node> > p;
-	for(int i=0;i<v.size();i++)
+	for(int i=0;i<v.size();i++){
 	//Pushing all elements of array int priority queue
 	p.push({v[i][0],{i,0}});
-	while(!p.empty())   //check if queue is empty or not
-	{
+	}
+	while(!p.empty()){	//check if queue is empty or not
 		node c=p.top();
 		p.pop();
 		int e=c.first;  
