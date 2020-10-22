@@ -26,7 +26,7 @@
  * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
-#include <iostream>     /// for io operations
+#include <iostream>    /// for io operations
 #include <cassert>     /// for assert
 #include <cmath>       /// for fabs
 #include <array>       /// for std::array
@@ -145,7 +145,6 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
  * Test Function. Process has been tested for 3 Sample Inputs
  * @returns void
  */
-
 static void test() {
   std::array<std::array<double, 10>, 20> a1 = {
       {{1, 0, 1, 0}, {1, 1, 1, 1}, {0, 1, 2, 1}}};
