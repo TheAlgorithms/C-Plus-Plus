@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implement a last in first out (LIFO) stack using queues.
-          The implemented stack should support all the functions of a normal queue (push, top, pop, and empty).
+ * @brief Implement a last in first out (LIFO) stack using queues. The implemented stack should support all the functions of a normal queue (push, top, pop, and empty).
  * @author [Neha Labhasetwar](https://github.com/nehalabhasetwar)
  */
 
@@ -12,16 +11,22 @@
  * @namespace data_structures
  * @brief In this approach we will see how to Implement Stack using Single Queue,
  * 1.Push the element to the Queue :
-         -Check the size of Queue and store it in variable "s".
-         -Iterate from 0 to "s" and Pop the element from queue and push the same element to Queue. By doing this, last inserted data will come at first position in Queue.
-   2.Pop Operation:
-         -Pop the elements from Queue.
-   3.top Operation:
-         -Return front element from Queue.
+ *   -Check the size of Queue and store it in variable "s".
+ *   -Iterate from 0 to "s" and Pop the element from queue and push the same element to Queue. By doing this, last inserted data will come at first position in Queue.
+ * 2.Pop Operation:
+ *   -Pop the elements from Queue.
+ * 3.top Operation:
+     -Return front element from Queue.
 */
-namespace data_structures{
-/** Assuming we already have a class implemented for Queue, we will first design the class for Stack.
- *  It will have the methods push() , pop() , top() , and empty() and one queue.
+namespace data_structures {
+/**
+ * @namespace stack_using_queue
+ * @brief Functions for [Stack using queue](https://leetcode.com/problems/implement-stack-using-queues) implementation
+ */
+namespace stack_using_queue {
+/**
+ * @brief Assuming we already have a class implemented for Queue, we will first design the class for Stack.
+ * It will have the methods push() , pop() , top() , and empty() and one queue.
  */
 class MyStack
 {
@@ -33,11 +38,10 @@ class MyStack
     MyStack() = default;                                 //default constructor for stack
 
 /**
- * Function to  Push element onto stack
+ * @brief Function to Push element onto stack
  * @param x number to be pushed
- * @return void
+ * @returns void
  */
-
     void push(int x)
     {
         q.push(x);                                  //let's assume x=3,queue=1,2 , then queue will become 1,2,3
@@ -49,43 +53,42 @@ class MyStack
             q.push(y);
         }
     }
-
-/** Function to Remove the element on top of the stack and return that element.
- *  @return element that is deleted from the stack
+/**
+ * @brief Function to Remove the element on top of the stack and return that element.
+ * @returns element that is deleted from the stack
  */
-
     int pop()
     {
         int y=q.front();
         q.pop();
         return y;
     }
-
-/** Function to Get the topmost element from stack.
- *  @return element on the top of stack
+/**
+ * @brief Function to Get the topmost element from stack.
+ * @returns element on the top of stack
  */
-
     int top()
     {
         return q.front();
     }
-
-/** Function to Return whether the stack is empty.
- *  @return if stack is empty, returns true, else false
+/**
+ * @brief Function to Return whether the stack is empty.
+ * @return if stack is empty, returns true, else false
  */
     bool empty()
     {
         return q.empty();
     }
 };
-}
-/** Function for testing stack operations.
- *  test cases and assert statement.
- *  @returns void
+} // namespace stack_using_queue
+} // namespace data_structures
+/**
+ * @brief Test Implementations
+ * @returns void
  */
-static void test()
+static void tests()
 {
-    data_structures::MyStack obj;            //  object of MyStack class
+    data_structures::stack_using_queue::MyStack obj;            //  object of MyStack class
 
     std::cout << "Test #1\n";
     obj.push(2);
@@ -107,12 +110,12 @@ static void test()
     assert(obj.pop() == -1);
     std::cout << "PASSED TEST 2\n";
 }
-/** Main function calling stack_test function
+/**
+ * @brief Main function calling tests function
  * @returns 0 on exit
  */
 int main()
 {
-    test();
+    tests(); // Execute the Tests
     return 0;
 }
-
