@@ -62,6 +62,6 @@ int main() {
     std::cout << "enter a number " << std::endl;
     std::cin >> n;
     /// function call with @param n
-    power_of_two(n);
+    math::power_of_two(n);
     return 0;
 }
