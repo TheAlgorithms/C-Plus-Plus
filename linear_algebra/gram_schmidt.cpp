@@ -41,7 +41,6 @@ namespace linear_algebra {
  * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  */
 namespace gram_schmidt {
-
 /**
  * Dot product function.
  * Takes 2 vectors along with their dimension as input and returns the dot product.
@@ -209,7 +208,7 @@ static void test() {
 
 /**
  * @brief Main Function
- * @return 0
+ * @return 0 on exit
  */
 int main() {
   int r, c;
