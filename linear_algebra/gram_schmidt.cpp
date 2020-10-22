@@ -55,20 +55,17 @@ double dot_product(const std::array<double, 10>& x, const std::array<double, 10>
  *
  * @param x Vector 1
  * @param y Vector 2
- * @param temp Temporary Vector to store projection of vector 1 over all the previous vectors
  * @param c dimension of each vector
  *
- * @returns void
+ * @returns factor
  */
 
-void projection(const std::array<double, 10>& x,const std::array<double, 10>& y,
-                std::array<double, 10> temp, int c) {
+double projection(const std::array<double, 10>& x,const std::array<double, 10>& y,
+                 int c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
   double anorm = dot_product(y, y, c); ///The norm of the second vector is taken.
   double factor = dot / anorm; ///multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
-  for (int i = 0; i < c; i++) {
-    temp[i] = y[i] * factor; ///Projection is stored in temp
-  }
+  return factor;
 }
 
 /**
@@ -125,8 +122,11 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
 
       int l = 1;
       while (l < k) {
-        std::array<double, 10> temp;
-        projection(A[k - 1], B[l - 1], temp, c);
+        std::array<double, 10> temp; ///to store previous projected array
+        double factor; ///to store the factor by which the previous array will change 
+        factor = projection(A[k - 1], B[l - 1], c);
+        for(int i = 0; i < c; i++)
+         temp[i] = B[l - 1][i] * factor;  ///projected array created
         for (int j = 0; j < c; j++) {
           all_projection[j] = all_projection[j] + temp[j];   ///we take the projection with all the previous vector and add them.
         }
