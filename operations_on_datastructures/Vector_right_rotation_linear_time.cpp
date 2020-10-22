@@ -57,7 +57,7 @@ namespace math{
     {
         return (x%y +y)%y;
     }
-}/// namespace math
+}// namespace math
 
 /**
 *@ namespace rotate
@@ -99,7 +99,7 @@ namespace rotate
          }
         return a;
     }
-}///namespace rotate
+ }//namespace rotate
 
 /**
 *@brief test function;
@@ -108,7 +108,8 @@ namespace rotate
 void test()
 {
     ///Tests the GCD function
-    int gcd=math::GCD(3,5);
+    int gcd=0;
+    gcd=math::GCD(3,5);
     assert(gcd=1);
 
     gcd=math::GCD(5,10);
@@ -120,7 +121,8 @@ void test()
     {
         a.push_back(i);
     }
-    std::vector<int> v=rotate::to_right(a,5,1);
+    std::vector<int> v;
+    v=rotate::to_right(a,5,1);
     assert(v[0]==5&&v[4]==4);
     v=rotate::to_right(a,5,-1);
     assert(v[0]==2&&v[4]==1);
@@ -156,6 +158,6 @@ int main()
     for (int i = 0; i < n; i++) {
         std::cout << res[i] << " ";
     }
-   // return 0;
+    return 0;
 }
 
