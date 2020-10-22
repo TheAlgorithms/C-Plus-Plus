@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of LRU Cache Data Structure
+ * @brief Implementation of [LRU Cache Data](https://www.geeksforgeeks.org/lru-cache-implementation/) Structure
  * @details
  * A Least Recently Used (LRU) Cache organizes items in order of use, allowing you 
  * to quickly identify which item hasn't been used for the longest amount of time.
