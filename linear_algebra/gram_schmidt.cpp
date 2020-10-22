@@ -62,7 +62,7 @@ double dot_product(const std::array<double, 10>& x, const std::array<double, 10>
  */
 
 void projection(const std::array<double, 10>& x,const std::array<double, 10>& y,
-                std::array<double, 10>& temp, int c) {
+                std::array<double, 10> temp, int c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
   double anorm = dot_product(y, y, c); ///The norm of the second vector is taken.
   double factor = dot / anorm; ///multiply that factor with every element in a 3rd vector, whose initial values are same as the 2nd vector.
