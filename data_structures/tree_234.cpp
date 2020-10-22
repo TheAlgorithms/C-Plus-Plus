@@ -8,9 +8,9 @@
 #include <array>
 #include <cassert>
 #include <cstdio>
+#include <iostream>
 #include <queue>
 #include <string>
-#include <iostream>
 
 /** @brief 2-3-4 tree node class */
 class Node {
@@ -19,11 +19,10 @@ class Node {
      * @brief node constructor
      * @param item the first value we insert to the node
      */
-    explicit Node(int item) : count(1) {
-        items[0] = item;
-
-        children[0] = children[1] = children[2] = children[3] = nullptr;
-    }
+    explicit Node(int item)
+        : count(1),
+          items({{item, 0, 0}}),
+          children({{nullptr, nullptr, nullptr, nullptr}}) {}
 
     /** @brief get the item count that current saved in the node */
     int GetCount() { return count; }
@@ -272,7 +271,12 @@ class Node {
 /** @brief 2-3-4 tree class */
 class Tree234 {
  public:
-    Tree234();
+    Tree234() = default;
+    Tree234(const Tree234 &) = delete;
+    Tree234(const Tree234 &&) = delete;
+    Tree234 &operator=(const Tree234 &) = delete;
+    Tree234 &operator=(const Tree234 &&) = delete;
+
     ~Tree234();
 
     /** @brief insert item to tree */
@@ -289,11 +293,6 @@ class Tree234 {
     void Print(const char *file_name = nullptr);
 
  private:
-    Tree234(const Tree234 &);
-    Tree234(const Tree234 &&);
-    Tree234 &operator=(const Tree234 &);
-    Tree234 &operator=(const Tree234 &&);
-
     /** @brief a insert implementation of pre-split */
     void InsertPreSplit(int item);
 
@@ -457,8 +456,6 @@ class Tree234 {
     Node *root_{nullptr};  ///< root node of the tree
 };
 
-Tree234::Tree234() {}
-
 Tree234::~Tree234() { DeleteNode(root_); }
 
 void Tree234::DeleteNode(Node *tree) {
@@ -513,7 +510,7 @@ void Tree234::InsertPreSplit(int item) {
         if (node->IsFull()) {
             node = SplitNode(node);
 
-            Node *cur_node;
+            Node *cur_node = nullptr;
 
             // node will be released in SplitNode, so we save next_node
             // beforehand
