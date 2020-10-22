@@ -26,10 +26,10 @@
  * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
-#include <iostream>   /// for io operations
-#include <cassert>    /// for assert
-#include <cmath>   /// for fabs
-#include <array>    /// for std::array
+#include <iostream>     /// for io operations
+#include <cassert>     /// for assert
+#include <cmath>       /// for fabs
+#include <array>       /// for std::array
 
 /**
  * Dot product function.
