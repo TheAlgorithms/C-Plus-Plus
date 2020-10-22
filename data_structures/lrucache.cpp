@@ -132,6 +132,8 @@ public:
         addr[key]->val = value ;
     }
 };
+}  // namespace lru_cache
+}  // namespace data_structures
 
 /**
  * @brief Main function
