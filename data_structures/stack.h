@@ -16,6 +16,9 @@ template <class Type>
 struct node {
     Type data;         ///< data at current node
     node<Type> *next;  ///< pointer to the next ::node instance
+    ~node(){
+        delete next;
+    }
 };
 
 /** Definition of the stack class
@@ -74,7 +77,9 @@ class stack {
     }
 
     /** Destructor */
-    ~stack() {}
+    ~stack() {
+        delete stackTop;
+    }
 
     /** Determine whether the stack is empty */
     bool isEmptyStack() { return (stackTop == nullptr); }
@@ -117,6 +122,7 @@ class stack {
 
         /* If stack is no empty, make it empty */
         if (stackTop != nullptr) {
+            delete stackTop;
             stackTop = nullptr;
         }
         if (otherStack.stackTop == nullptr) {
