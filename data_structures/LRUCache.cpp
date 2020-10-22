@@ -121,7 +121,7 @@ public:
     void put(int key, int value) {
         
         if ( addr.find(key) == addr.end() ){
-            if ( this->root->key != -1 and this->root->val != -1 ) {
+            if ( this->root->key != -1 && this->root->val != -1 ) {
                 addr.erase(this->root->key) ;
             }
             this->root->key = key ;
