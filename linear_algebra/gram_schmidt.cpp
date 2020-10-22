@@ -1,6 +1,6 @@
 /**  
  * @file   
- * @brief Gram Schmidt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief [Gram Schmidt Orthogonalisation Process] (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
  * @details
  * Takes the input of Linearly Independent Vectors,
@@ -30,6 +30,17 @@
 #include <cassert>     /// for assert
 #include <cmath>       /// for fabs
 #include <array>       /// for std::array
+/**
+ * @namespace linear_algebra
+ * @brief Linear Algebra algorithms
+ */
+namespace linear_algebra {
+/**
+ * @namespace gram_schmidt
+ * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ */
+namespace gram_schmidt {
+/**
 
 /**
  * Dot product function.
@@ -40,7 +51,6 @@
  * 
  * @returns sum
  */
-
 double dot_product(const std::array<double, 10>& x, const std::array<double, 10>& y, const int& c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
@@ -59,7 +69,6 @@ double dot_product(const std::array<double, 10>& x, const std::array<double, 10>
  *
  * @returns factor
  */
-
 double projection(const std::array<double, 10>& x,const std::array<double, 10>& y,
                  const int& c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
@@ -77,7 +86,6 @@ double projection(const std::array<double, 10>& x,const std::array<double, 10>& 
  *
  * @returns void
  */
-
 void display(const int& r,const int& c,const std::array<std::array<double, 10>, 20>& B) {
   for (int i = 0; i < r; i++) {
     std::cout << "Vector " << i + 1 << ": ";
@@ -97,7 +105,6 @@ void display(const int& r,const int& c,const std::array<std::array<double, 10>, 
  * 
  * @returns void
  */
-
 void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20>& A,
                   std::array<std::array<double, 10>, 20> B) {
   if (c < r) {   /// we check whether appropriate dimensions are given or not.
