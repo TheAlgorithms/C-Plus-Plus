@@ -1,6 +1,6 @@
 /**  
  * @file   
- * @breif Gram Schimdt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief Gram Schimdt Orthogonalisation Process (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
  * @details
  * Takes the input of Linearly Independent Vectors,
