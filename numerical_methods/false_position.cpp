@@ -21,8 +21,11 @@
 #include <cmath>      // For math operations
 #include <iostream>   // For io operations
 
-/** define \f$f(x)\f$ to find root for
- */
+/**
+* @brief This function gives the value of f(x) for given x.
+* @param x value for which we have to find value of f(x).
+* @return value of f(x) for given x.
+*/  
 static double eq(double x) {
     return (x*x-x);  // original equation
 }
