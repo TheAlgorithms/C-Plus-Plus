@@ -82,8 +82,8 @@ void mergeSort(int *arr, int l, int r) {
  * sorting
  */
 void show(int *arr, int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-    std::cout << "\n";
+    for (int i = 0; i < size; i++) std::cout << arr[i] << " "<<"\n";
+    
 }
 
 /** Main function */
