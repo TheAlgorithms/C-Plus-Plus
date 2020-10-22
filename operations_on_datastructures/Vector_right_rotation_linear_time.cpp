@@ -156,6 +156,6 @@ int main()
     for (int i = 0; i < n; i++) {
         std::cout << res[i] << " ";
     }
-    return 0;
+   // return 0;
 }
 
