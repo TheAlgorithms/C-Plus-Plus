@@ -21,47 +21,77 @@ struct list {
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last, int x) {
+    /*
+     * search an element in the list using binaray search.
+     * @param dataArr - list
+     * @param first - pointer to the first element in the remaining list
+     * @param last - pointer to the last element in the remaining list
+     * @param val - element that will be searched
+     * @return index of element in the list if present else -1
+     */
+    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last, int val) {
+        // If both pointer cross each other means no element present in the list which is equal to the val
         if (last < first) {
             return -1;
         }
         int mid = (first + last) / 2;
-        if (dataArr[mid] == x)
+
+        // check whether current mid pointer value is equal to element or not
+        if (dataArr[mid] == val)
             return mid;
-        else if (x < dataArr[mid])
-            return (BinarySearch(dataArr, first, mid - 1, x));
-        else if (x > dataArr[mid])
-            return (BinarySearch(dataArr, mid + 1, last, x));
+
+            // if current mid value is greater than  element we have to search in first half
+        else if (val < dataArr[mid])
+            return (BinarySearch(dataArr, first, mid - 1, val));
+
+            // if current mid value is greater than  element we have to search in second half
+        else if (val > dataArr[mid])
+            return (BinarySearch(dataArr, mid + 1, last, val));
 
         std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
         return -1;
     }
-
+    /*
+     * search an element using linear search
+     * @param dataArr - list
+     * @param val - element that will be searched
+     * @return index of element in the list if present else -1
+     */
     int LinearSearch(const std::array<int, 50>& dataArr, int x) const {
+
+        // Going through each element in the list
         for (int i = 0; i < top; i++) {
             if (dataArr[i] == x) {
-                return i;
+                return i; // element found at ith index
             }
         }
 
+        // element does not present in the list
         return -1;
     }
 
-    int Search(int x) {
-        int pos;
+    /*
+     * parent function of binarySearch and linearSearch methods
+     * @param val - element that will be searched
+     * @return index of element in the list if present else -1
+     */
+    void Search(int val) {
+        int pos; // pos variable to store index value of element.
 
+        // if list is sorted, binary search works efficiently else linear search is the only option
         if (isSorted) {
-            pos = BinarySearch(data, 0, top - 1, x);
+            pos = BinarySearch(data, 0, top - 1, val);
         } else {
-            pos = LinearSearch(data, x);
+            pos = LinearSearch(data, val);
         }
 
+        // if index is equal to -1 means element does not present
+        // else print the index of that element
         if (pos != -1) {
             std::cout << "\nElement found at position : " << pos;
         } else {
             std::cout << "\nElement not found";
         }
-        return pos;
     }
 
     void Sort() {
