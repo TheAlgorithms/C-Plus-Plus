@@ -32,6 +32,18 @@
 #include <array>       /// for std::array
 
 /**
+ * @namespace linear_algebra
+ * @brief Linear Algebra algorithms
+ */
+namespace linear_algebra {
+/**
+ * @namespace gram_schmidt
+ * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ */
+namespace gram_schmidt {
+/**
+
+/**
  * Dot product function.
  * Takes 2 vectors along with their dimension as input and returns the dot product.
  * @param x vector 1
