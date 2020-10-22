@@ -1,6 +1,6 @@
 #include <iostream>
 #include <climits>
-#include<vector>
+#include <vector>
 int maxSubArraySum(std::vector <int> a) 
 {
     int max_so_far = INT_MIN, max_ending_here = 0;
