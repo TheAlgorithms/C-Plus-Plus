@@ -8,9 +8,9 @@
  * @author [Shubh Bansal](https://github.com/proRamLOGO)
  */
 
-#include <iostream>  /// for io operations
-#include <unordered_map> // For hashmap
-#include <cassert>  /// for assert
+#include <iostream>      /// for io operations
+#include <unordered_map> /// for hashmap
+#include <cassert>       /// for assert
 
 /**
  * Class node
