@@ -51,7 +51,6 @@ void power_of_two(int n) {
 }
 }  // namespace math
 
-
 /**
  * @brief Main function
  * @returns 0 on exit
