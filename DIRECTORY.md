@@ -143,6 +143,7 @@
   * [Least Common Multiple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/least_common_multiple.cpp)
   * [Miller Rabin](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/miller_rabin.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
+  * [Ncr Modulo P](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/ncr_modulo_p.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
   * [Power For Huge Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_for_huge_numbers.cpp)
   * [Prime Factorization](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/prime_factorization.cpp)
