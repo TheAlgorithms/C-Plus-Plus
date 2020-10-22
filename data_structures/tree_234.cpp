@@ -10,6 +10,7 @@
 #include <cstdio>
 #include <queue>
 #include <string>
+#include <iostream>
 
 /** @brief 2-3-4 tree node class */
 class Node {
@@ -473,7 +474,7 @@ void Tree234::DeleteNode(Node *tree) {
 
 void Tree234::Traverse() {
     Traverse(root_);
-    printf("\n");
+    std::cout << std::endl;
 }
 
 void Tree234::Traverse(Node *node) {
@@ -484,7 +485,7 @@ void Tree234::Traverse(Node *node) {
     int i = 0;
     for (i = 0; i < node->GetCount(); i++) {
         Traverse(node->GetChild(i));
-        printf("%d, ", node->GetItem(i));
+        std::cout << node->GetItem(i) << ", ";
     }
 
     Traverse(node->GetChild(i));
