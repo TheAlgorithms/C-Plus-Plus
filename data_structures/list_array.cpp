@@ -40,10 +40,10 @@ struct list {
         // check whether current mid pointer value is equal to element or not
         if (dataArr[mid] == val)
             return mid;
-        // if current mid value is greater than  element we have to search in first half
+            // if current mid value is greater than  element we have to search in first half
         else if (val < dataArr[mid])
             return (BinarySearch(dataArr, first, mid - 1, val));
-        // if current mid value is greater than  element we have to search in second half
+            // if current mid value is greater than  element we have to search in second half
         else if (val > dataArr[mid])
             return (BinarySearch(dataArr, mid + 1, last, val));
 
@@ -71,7 +71,7 @@ struct list {
      * @param val - element that will be searched
      * @return index of element in the list if present else -1
      */
-    int Search(int val) {
+    int search(int val) {
         int pos; // pos variable to store index value of element.
         // if list is sorted, binary search works efficiently else linear search is the only option
         if (isSorted) {
@@ -92,7 +92,7 @@ struct list {
     /*
      * sort the list
      */
-    void Sort() {
+    void sort() {
         int pos=0; // Initialize the index variable with starting index
         //Going through each element in the list
         for (int i = 0; i < top; i++) {
@@ -155,36 +155,69 @@ struct list {
      * To remove the element from the list
      * @param val - element that will be removed
      */
-    void Remove(int val) {
-        int pos = Search(val); // search the index of the value
+    void remove(int val) {
+        int pos = search(val); // search the index of the value
         // if search returns -1, element does not present in the list
         if (pos == -1) {
             std::cout << "\n Element does not present in the list ";
-            std::cout << "\n Kindly enter valid input ";
             return;
         }
+        std::cout << "\n" << data[pos] << " deleted"; // print the appropriate message
         // shift all the element 1 left to fill vacant space
         for (int i = pos; i < top; i++) {
             data[i] = data[i + 1];
         }
         top--; // decrement the top variable to maintain last index
-        std::cout << "\n" << data[pos] << " deleted"; // print the appropriate message
     }
 
     /*
      * To print the list
      */
-    void Show() {
+    void show() {
         // Going through each element in the list
+        std::cout << '\n';
         for (int i = 0; i < top; i++) {
-            std::cout << data[i] << "\t"; // print the element
+            std::cout << data[i] << " "; // print the element
         }
     }
 };
 
+/*
+ * To test the functionalities of the list
+ */
+void test() {
+    list L;
 
+    // Insert testing
+    L.insert(11);
+    L.insert(12);
+    assert(L.top == 2);
+    L.insert(15);
+    L.insert(10);
+    L.insert(12);
+    assert(L.top == 5);
+    L.show(); // To print the array
+
+    // Remove testing
+    L.remove(12); // Remove the existing value in the list
+    assert(L.top == 4);
+    L.remove(50); // Remove the non-existing value in the list
+    assert(L.top == 4);
+
+    // Sort testing
+    L.sort();
+    assert(L.isSorted == true);
+    L.show();
+
+    // Search testing
+    assert(L.search(11) == 1); // search for the existing element
+    assert(L.search(12) == 2);
+    assert(L.search(50) == -1); // search for the non-existing element
+}
+
+// Driver code
 int main() {
     // Testing
-//    test();
+    test();
     return 0;
 }
