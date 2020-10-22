@@ -1,10 +1,20 @@
 /**
  * @file list_array.cpp
- * @todo Add documentation
+ * @brief Implementation of list_array
  * @warning The sorting algorithm is erroneous
+ *
+ * @details
+ * The list_array is the implementation of list represented using array.
+ * We can perform basic CRUD operations as well as other operations like sorting etc.
+ *
+ * ### Algorithm
+ * It implements various method like insert, sort, search etc. efficiently.
+ * You can select the operation and methods will do the rest work for you.
+ * You can insert element, sort them in order, search efficiently, delete values and print the list.
  */
 #include <iostream>
 #include <array>
+
 
 struct list {
     std::array<int, 50> data{};
