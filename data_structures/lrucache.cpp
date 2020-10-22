@@ -113,8 +113,8 @@ public:
     * Accepts two parameters key and value. Updates the value of the key if the key exists. 
     * Otherwise, adds the key-value pair to the cache. If the number of keys exceeds the 
     * capacity from this operation, the function evicts the least recently used key.
-    * @param key : The key to be added or updated.
-    * @param value : Value for the respective key to be stored.
+    * @param key the key to be added or updated.
+    * @param value value for the respective key to be stored.
     * @returns NOTHING
     */
     void put(int key, int value) {
