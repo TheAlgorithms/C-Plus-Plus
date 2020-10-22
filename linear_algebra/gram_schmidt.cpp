@@ -161,7 +161,7 @@ static void test() {
   int flag = 1;
   for (int i = 0; i < 2; i++)
     for (int j = i + 1; j < 3; j++) {
-      dot1 = fabs(linear_algebra::gram_schmidtdot_product(b1[i], b1[j], 4));
+      dot1 = fabs(linear_algebra::gram_schmidt::dot_product(b1[i], b1[j], 4));
       if (dot1 > 0.1) {
         flag = 0;
         break;
@@ -178,7 +178,7 @@ static void test() {
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
-      dot2 = fabs(linear_algebra::gram_schmidtdot_product(b2[i], b2[j], 2));
+      dot2 = fabs(linear_algebra::gram_schmidt::dot_product(b2[i], b2[j], 2));
       if (dot2 > 0.1) {
         flag = 0;
         break;
@@ -195,7 +195,7 @@ static void test() {
   flag = 1;
   for (int i = 0; i < 1; i++)
     for (int j = i + 1; j < 2; j++) {
-      dot3 = fabs(linear_algebra::gram_schmidtdot_product(b3[i], b3[j], 3));
+      dot3 = fabs(linear_algebra::gram_schmidt::dot_product(b3[i], b3[j], 3));
       if (dot3 > 0.1) {
         flag = 0;
         break;
@@ -238,7 +238,7 @@ int main() {
   int flag = 1; ///To check whether vectors are orthogonal or  not
   for (int i = 0; i < r - 1; i++) {
     for (int j = i + 1; j < r; j++) {
-      dot = fabs(linear_algebra::gram_schmidtdot_product(B[i], B[j], c));
+      dot = fabs(linear_algebra::gram_schmidt::dot_product(B[i], B[j], c));
       if (dot > 0.1) /// take make the process numerically stable, upper bound for the dot product take 0.1
       {
         flag = 0;
