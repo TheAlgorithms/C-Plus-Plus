@@ -195,23 +195,31 @@ void test() {
     L.insert(15);
     L.insert(10);
     L.insert(12);
-    assert(L.top == 5);
+    L.insert(20);
+    L.insert(18);
+    assert(L.top == 7);
     L.show(); // To print the array
 
     // Remove testing
-    L.remove(12); // Remove the existing value in the list
+    L.remove(12); // Remove Duplicate value in the list
+    L.remove(15); // Remove the existing value in the list
     assert(L.top == 4);
     L.remove(50); // Remove the non-existing value in the list
     assert(L.top == 4);
+
+    // LinearSearch testing
+    assert(L.search(11) == 0); // search for the existing element
+    assert(L.search(12) == 1);
+    assert(L.search(50) == -1); // search for the non-existing element
 
     // Sort testing
     L.sort();
     assert(L.isSorted == true);
     L.show();
 
-    // Search testing
+    // BinarySearch testing
     assert(L.search(11) == 1); // search for the existing element
-    assert(L.search(12) == 2);
+    assert(L.search(12) == 3);
     assert(L.search(50) == -1); // search for the non-existing element
 }
 
