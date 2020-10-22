@@ -30,17 +30,6 @@
 #include <cassert>     /// for assert
 #include <cmath>       /// for fabs
 #include <array>       /// for std::array
-/**
- * @namespace linear_algebra
- * @brief Linear Algebra algorithms
- */
-namespace linear_algebra {
-/**
- * @namespace gram_schmidt
- * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
- */
-namespace gram_schmidt {
-/**
 
 /**
  * Dot product function.
@@ -147,7 +136,8 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
   }
   display(r, c, B); //for displaying orthogoanlised vectors
 }
-
+}  // namespace gram_schmidt
+}  // namespace linear_algebra
 /**
  * Test Function. Process has been tested for 3 Sample Inputs
  * @returns void
