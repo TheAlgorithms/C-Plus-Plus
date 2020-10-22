@@ -38,10 +38,10 @@
  * @param y vector 2
  * @param c dimension of the vectors
  * 
- *@returns sum
+ * @returns sum
  */
 
-double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
+double dot_product(const std::array<double, 10>& x, const std::array<double, 10>& y, int c) {
   double sum = 0;
   for (int i = 0; i < c; i++) {
     sum += x[i] * y[i];
@@ -61,7 +61,7 @@ double dot_product(std::array<double, 10> x, std::array<double, 10> y, int c) {
  * @returns void
  */
 
-void projection(std::array<double, 10> x, std::array<double, 10> y,
+void projection(const std::array<double, 10>& x,  std::array<double, 10> y,
                 std::array<double, 10> temp, int c) {
   double dot = dot_product(x, y, c); ///The dot product of two vectors is taken
   double anorm = dot_product(y, y, c); ///The norm of the second vector is taken.
@@ -81,7 +81,7 @@ void projection(std::array<double, 10> x, std::array<double, 10> y,
  * @returns void
  */
 
-void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
+void display(const int& r,const int& c,const std::array<std::array<double, 10>, 20>& B) {
   for (int i = 0; i < r; i++) {
     std::cout << "Vector " << i + 1 << ": ";
     for (int j = 0; j < c; j++) {
@@ -101,7 +101,7 @@ void display(int r, int c, std::array<std::array<double, 10>, 20> B) {
  * @returns void
  */
 
-void gram_schmidt(int r, int c, std::array<std::array<double, 10>, 20> A,
+void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20>& A,
                   std::array<std::array<double, 10>, 20> B) {
   if (c < r) {   /// we check whether appropriate dimensions are given or not.
     std::cout
