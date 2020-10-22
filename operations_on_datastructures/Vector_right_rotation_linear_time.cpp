@@ -110,11 +110,18 @@ void test()
     ///Tests the GCD function
     int gcd=0;
     gcd=math::GCD(3,5);
-    assert(gcd=1);
+    assert(gcd==1);
 
     gcd=math::GCD(5,10);
-    assert(gcd=5);
+    assert(gcd==5);
+    
+    /// Tests the MOD function
+    int mod=math::MOD(6,4);
+    assert(mod==2);
 
+    mod=math::MOD(-1,4);
+    assert(mod==3);
+    
     ///Tests the to_rotate function
     std::vector<int> a;
     for(int i=1;i<=5;i++)
