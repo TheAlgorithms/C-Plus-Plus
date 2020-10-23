@@ -31,8 +31,8 @@ namespace lru_cache {
  */
 class node {
  public:
-    int key;  ///< Variable to contain value of {key}
-    int val;  ///< Variable to contain value of {value} associated with {key}
+    uint64_t key = 0;  ///< Variable to contain value of {key}
+    uint64_t val = 0;  ///< Variable to contain value of {value} associated with {key}
     node
         *next;  //< Pointer to point on the node appearing next to current node.
     node *prev;  //< Pointer to point on the node appearing previous to current
