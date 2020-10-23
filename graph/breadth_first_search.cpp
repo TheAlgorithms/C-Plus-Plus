@@ -5,6 +5,7 @@
  * (Breadth First Search)](https://en.wikipedia.org/wiki/Breadth-first_search)
  *
  * \author [Ayaan Khan](http://github.com/ayaankhan98)
+ * \contributor [Aman Kumar Pandey](http://github.com/gpamangkp)
  *
  *
  * \details
@@ -53,68 +54,87 @@
 #include <list>
 #include <string>
 
-
-/* Class Graph definition */
-template<typename T>
-class Graph{
-  /**
-  *  adjacency_list maps every vertex to the list of its neighbours in the order
-  *  in which they are added.
-  */
-  std::map<T,std::list<T> > adjacency_list;
-  public:
-    Graph(){};
-    void add_edge(T u,T v, bool bidir=true){
-      /**
-      *  add_edge(u,v,bidir) is used to add an edge between node u and node v
-      *  by default , bidir is made true , i.e graph is bidirectional .
-      *  It means if edge(u,v) is added then u-->v  and  v-->u both edges exist.
-      *
-      *  to make the graph unidirectional pass the third parameter of add_edge as
-      *  false which will
-      */
-      adjacency_list[u].push_back(v);               // u-->v edge added
-      if(bidir==true){
-        // if graph is bidirectional
-        adjacency_list[v].push_back(u);             // v-->u edge added
-      }
-    }
+///namespace graph which contains the class Graph
+namespace graph{
+  /* Class Graph definition */
+  template<typename T>
+  class Graph{
     /**
-    *  this function performs the breadth first search on graph and return a
-    *  mapping which maps the nodes to a boolean value representing whether the
-    *  node was traversed or not.
+    *  adjacency_list maps every vertex to the list of its neighbours in the order
+    *  in which they are added.
     */
-    std::map<T,bool> breadth_first_search(T src){
-      std::map<T,bool> tracker;
-
-      for(auto const &adjlist: adjacency_list){
-        tracker[adjlist.first]=false;
-        for(auto const &node:adjacency_list[adjlist.first]){
-          tracker[node]=false;
+    std::map<T,std::list<T> > adjacency_list;
+    public:
+      Graph(){};
+      void add_edge(T u,T v, bool bidir=true){
+        /**
+        *  add_edge(u,v,bidir) is used to add an edge between node u and node v
+        *  by default , bidir is made true , i.e graph is bidirectional .
+        *  It means if edge(u,v) is added then u-->v  and  v-->u both edges exist.
+        *
+        *  to make the graph unidirectional pass the third parameter of add_edge as
+        *  false which will
+        */
+        adjacency_list[u].push_back(v);               // u-->v edge added
+        if(bidir==true){
+          // if graph is bidirectional
+          adjacency_list[v].push_back(u);             // v-->u edge added
         }
       }
-      std::queue<T> q;
-      q.push(src);
-      tracker[src]=true;
-      while(!q.empty()){
-        T node = q.front();
-        q.pop();
-        for(T const &neighbour : adjacency_list[node]){
-          if(!tracker[neighbour]){
-            q.push(neighbour);
-            tracker[neighbour]=true;
+    
+    
+      /**
+      *  this function performs the breadth first search on graph and return a
+      *  mapping which maps the nodes to a boolean value representing whether the
+      *  node was traversed or not.
+      */
+      std::map<T,bool> breadth_first_search(T src){
+        /// mapping to keep track of all visited nodes 
+        std::map<T,bool> visited;
+        /// initialise every possible vertex to map to false
+        /// initially none of the vertices are unvisited
+        for(auto const &adjlist: adjacency_list){
+          visited[adjlist.first]=false;
+          for(auto const &node:adjacency_list[adjlist.first]){
+            visited[node]=false;
           }
         }
+        
+        /// queue to store the nodes which are yet to be traversed
+        std::queue<T> tracker;
+        
+        /// push the source vertex to queue to begin traversing 
+        tracker.push(src);
+        ///mark the source vertex as visited
+        visited[src]=true;
+        while(!tracker.empty()){
+          /// traverse the graph till no connected vertex are left 
+          /// extract a node from queue for further traversal
+          T node = tracker.front();
+          /// remove the node from the queue
+          tracker.pop();
+          for(T const &neighbour : adjacency_list[node]){
+            /// check every vertex connected to the node which are still unvisited
+            if(!visited[neighbour]){
+              /// if the neighbour is unvisited , push it into the queue
+              tracker.push(neighbour);
+              /// mark the neighbour as visited
+              visited[neighbour]=true;
+            }
+          }
+        }
+        return visited;
       }
-      return tracker;
-    }
-};
-/* Class definition ends */
+  };
+  /* Class definition ends */
+}
+///Namespace definition over
+
 
 /** Test function */
 static void tests() {
     /// Test 1 Begin
-    Graph<int> g;
+    graph::Graph<int> g;
     std::map<int,bool> correct_result;
     g.add_edge(0,1);
     g.add_edge(1,2);
@@ -131,12 +151,12 @@ static void tests() {
 
     /// Test 2 Begin
     returned_result = g.breadth_first_search(0);
-
+  
     assert(returned_result==correct_result);
     std::cout << "Test 2 Passed..." << std::endl;
 
     /// Test 3 Begins
-    Graph<std::string> g2;
+    graph::Graph<std::string> g2;
 
     g2.add_edge("Gorakhpur","Lucknow",false);
     g2.add_edge("Gorakhpur","Kanpur",false);
@@ -165,7 +185,7 @@ int main() {
     std::cout << "Enter the number of edges: ";
     std::cin >> edges;
 
-    Graph<int> g;
+    graph::Graph<int> g;
 
     std::cout << "Enter space-separated pairs of vertices that form edges: "
               << std::endl;
