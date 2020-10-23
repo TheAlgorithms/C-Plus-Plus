@@ -9,6 +9,7 @@
 #include <cassert>
 #include <cstdio>
 #include <iostream>
+#include <memory>
 #include <queue>
 #include <string>
 
@@ -499,7 +500,8 @@ void Tree234::InsertPreSplit(int item) {
 
     while (true) {
         if (!node) {
-            MergeNodeNotFull(parent, new Node(item));
+            std::unique_ptr<Node> tmp = std::make_unique<Node>(item);
+            MergeNodeNotFull(parent, tmp.get());
             return;
         }
 
@@ -556,7 +558,7 @@ void Tree234::Insert(int item) { InsertPreSplit(item); }
 Node *Tree234::Insert(Node *tree, int item) {
     assert(tree != nullptr);
 
-    Node *split_node = nullptr;
+    std::unique_ptr<Node> split_node;
 
     if (tree->Contains(item)) {
         // return nullptr indicate current node not overflow
@@ -565,13 +567,13 @@ Node *Tree234::Insert(Node *tree, int item) {
 
     Node *next_node = tree->GetNextPossibleChild(item);
     if (next_node) {
-        split_node = Insert(next_node, item);
+        split_node.reset(Insert(next_node, item));
     } else {
-        split_node = new Node(item);
+        split_node = std::make_unique<Node>(item);
     }
 
     if (split_node) {
-        return MergeNode(tree, split_node);
+        return MergeNode(tree, split_node.get());
     }
 
     return nullptr;
@@ -604,7 +606,6 @@ void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
 
     dst_node->SetChild(i, node->GetChild(0));
     dst_node->SetChild(i + 1, node->GetChild(1));
-    delete node;
 }
 
 Node *Tree234::SplitNode(Node *node) {
@@ -979,6 +980,7 @@ void Tree234::Print(const char *file_name) {
     }
 
     fprintf(f, "}\n");
+    fclose(f);
 }
 
 void Tree234::PrintNode(FILE *f, Node *node, int parent_index, int index,
