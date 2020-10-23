@@ -134,7 +134,7 @@ class LRUCache {
      * @param value value for the respective key to be stored.
      * @returns NOTHING
      */
-    void put(int key, int value) {
+    void put(uint64_t key, const uint64_t& value) {
         if (addr.find(key) == addr.end()) {
             if (this->root->key != -1 && this->root->val != -1) {
                 addr.erase(this->root->key);
