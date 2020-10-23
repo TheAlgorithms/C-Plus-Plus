@@ -54,7 +54,10 @@
 #include <list>
 #include <string>
 
-///namespace graph which contains the class Graph
+/**
+ * \namespace graph
+ * \brief Graph algorithms
+ */
 namespace graph{
   /* Class Graph definition */
   template<typename T>
