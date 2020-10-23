@@ -28,7 +28,7 @@ int maxProduct(vector<int>& InputArray) {
 }
 
 int main() {
-    int sizeOfArray, maxProd;
+    int sizeOfArray, maxProd = 0;
     cin >> sizeOfArray;
 
     vector<int> InputArray;
