@@ -5,7 +5,7 @@
  * (Breadth First Search)](https://en.wikipedia.org/wiki/Breadth-first_search)
  *
  * \author [Ayaan Khan](https://github.com/ayaankhan98)
- * \contributor [Aman Kumar Pandey](http://github.com/gpamangkp)
+ * \author [Aman Kumar Pandey](https://github.com/gpamangkp)
  *
  *
  * \details
