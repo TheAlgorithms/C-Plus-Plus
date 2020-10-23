@@ -1,7 +1,6 @@
 /**
  * @file list_array.cpp
  * @brief Implementation of list_array
- * @warning The sorting algorithm is erroneous
  *
  * @details
  * The list_array is the implementation of list represented using array.
@@ -40,10 +39,10 @@ struct list {
         // check whether current mid pointer value is equal to element or not
         if (dataArr[mid] == val)
             return mid;
-            // if current mid value is greater than  element we have to search in first half
+        // if current mid value is greater than  element we have to search in first half
         else if (val < dataArr[mid])
             return (BinarySearch(dataArr, first, mid - 1, val));
-            // if current mid value is greater than  element we have to search in second half
+        // if current mid value is greater than  element we have to search in second half
         else if (val > dataArr[mid])
             return (BinarySearch(dataArr, mid + 1, last, val));
 
