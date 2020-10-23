@@ -52,7 +52,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dc/d61/classgraph_1_1_graph.html#ae2f6992450faa2c3da93edea0818869a" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="../../dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="140,-77 140,-107 251,-107 251,-77 140,-77"/>
 <text text-anchor="start" x="148" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph::number</text>
 <text text-anchor="middle" x="195.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">_of_vertices</text>

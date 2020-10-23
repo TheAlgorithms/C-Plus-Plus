@@ -22,8 +22,8 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../dc/d61/classgraph_1_1_graph.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="12.5,-56.5 12.5,-75.5 85.5,-75.5 85.5,-56.5 12.5,-56.5"/>
-<text text-anchor="middle" x="49" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph</text>
+<polygon fill="white" stroke="black" points="0.5,-56.5 0.5,-75.5 97.5,-75.5 97.5,-56.5 0.5,-56.5"/>
+<text text-anchor="middle" x="49" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::Graph&lt; T &gt;</text>
 </a>
 </g>
 </g>

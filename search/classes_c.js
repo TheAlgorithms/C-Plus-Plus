@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['make_5fsigned_2473',['make_signed',['http://en.cppreference.com/w/cpp/types/make_signed.html',0,'std']]],
-  ['make_5funsigned_2474',['make_unsigned',['http://en.cppreference.com/w/cpp/types/make_unsigned.html',0,'std']]],
-  ['map_2475',['map',['http://en.cppreference.com/w/cpp/container/map.html',0,'std']]],
+  ['make_5fsigned_2472',['make_signed',['http://en.cppreference.com/w/cpp/types/make_signed.html',0,'std']]],
+  ['make_5funsigned_2473',['make_unsigned',['http://en.cppreference.com/w/cpp/types/make_unsigned.html',0,'std']]],
+  ['map_2474',['map',['http://en.cppreference.com/w/cpp/container/map.html',0,'std']]],
+  ['map_3c_20t_2c_20std_3a_3alist_3c_20t_20_3e_20_3e_2475',['map&lt; T, std::list&lt; T &gt; &gt;',['http://en.cppreference.com/w/cpp/container/map.html',0,'std']]],
   ['map_3c_20unsigned_20int_2c_20std_3a_3avector_3c_20unsigned_20int_20_3e_20_3e_2476',['map&lt; unsigned int, std::vector&lt; unsigned int &gt; &gt;',['http://en.cppreference.com/w/cpp/container/map.html',0,'std']]],
-  ['mask_2477',['mask',['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype::mask'],['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype_byname::mask'],['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype_base::mask']]],
+  ['mask_2477',['mask',['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype::mask'],['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype_base::mask'],['http://en.cppreference.com/w/cpp/locale/ctype_base.html',0,'std::ctype_byname::mask']]],
   ['match_5fresults_2478',['match_results',['http://en.cppreference.com/w/cpp/regex/match_results.html',0,'std']]],
   ['max_5falign_5ft_2479',['max_align_t',['http://en.cppreference.com/w/cpp/types/max_align_t.html',0,'std']]],
   ['mbstate_5ft_2480',['mbstate_t',['http://en.cppreference.com/w/cpp/string/multibyte/mbstate_t.html',0,'std']]],

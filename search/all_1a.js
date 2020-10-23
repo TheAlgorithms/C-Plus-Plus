@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['y_2095',['y',['../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7',1,'Point::y()'],['../d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8',1,'Point::y()']]],
-  ['yield_2096',['yield',['http://en.cppreference.com/w/cpp/thread/yield.html',0,'std::this_thread']]],
-  ['yocto_2097',['yocto',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
-  ['yotta_2098',['yotta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]]
+  ['y_2094',['y',['../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7',1,'Point::y()'],['../d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8',1,'Point::y()']]],
+  ['yield_2095',['yield',['http://en.cppreference.com/w/cpp/thread/yield.html',0,'std::this_thread']]],
+  ['yocto_2096',['yocto',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
+  ['yotta_2097',['yotta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]]
 ];

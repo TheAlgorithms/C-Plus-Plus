@@ -1,4 +1,0 @@
-<map id="graph::add_undirected_edge" name="graph::add_undirected_edge">
-<area shape="rect" id="node1" title="Adds an undirected edge from vertex u to vertex v. Essentially adds too directed edges to the adjacen..." alt="" coords="5,5,191,32"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a1a13974bfe597e853bffe91aa2d3944d" title="Adds a directed edge from vertex u to vertex v." alt="" coords="239,5,409,32"/>
-</map>
