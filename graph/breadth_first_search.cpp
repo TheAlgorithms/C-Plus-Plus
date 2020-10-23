@@ -131,7 +131,6 @@ namespace graph{
   };
   /* Class definition ends */
 }
-///Namespace definition over
 
 
 /** Test function */
