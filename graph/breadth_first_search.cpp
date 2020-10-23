@@ -4,7 +4,7 @@
  * \brief [Breadth First Search Algorithm
  * (Breadth First Search)](https://en.wikipedia.org/wiki/Breadth-first_search)
  *
- * \author [Ayaan Khan](http://github.com/ayaankhan98)
+ * \author [Ayaan Khan](https://github.com/ayaankhan98)
  * \contributor [Aman Kumar Pandey](http://github.com/gpamangkp)
  *
  *
