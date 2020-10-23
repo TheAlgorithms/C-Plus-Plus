@@ -36,7 +36,7 @@ class node {
     node
         *next;  //< Pointer to point on the node appearing next to current node.
     node *prev;  //< Pointer to point on the node appearing previous to current
-                 //node.
+                 // node.
 
     /**
      * Constructor Function
