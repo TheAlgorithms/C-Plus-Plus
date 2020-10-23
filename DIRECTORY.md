@@ -31,7 +31,7 @@
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linkedlist_implentation_usingarray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/list_array.cpp)
-  * [Lrucache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/lrucache.cpp)
+  * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/lru_cache.cpp)
   * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/morrisinorder.cpp)
   * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue.h)
   * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array.cpp)
