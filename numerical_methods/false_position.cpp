@@ -4,6 +4,7 @@
  * method](https://en.wikipedia.org/wiki/Regula_falsi), also known as the Secant
  * method
  *
+ * \details
  * First, multiple intervals are selected with the interval gap provided. 
  * Separate recursive function called for every root.
  * Roots are printed Separatelt.
@@ -17,9 +18,12 @@
  * continued till a close enough approximation is achieved.
  *
  * \see newton_raphson_method.cpp, bisection_method.cpp
+ *
+ * \author Unknown author
+ * \author [Samruddha Patil](https://github.com/sampatil578)
  */
-#include <cmath>      // For math operations
-#include <iostream>   // For io operations
+#include <cmath>      /// for math operations
+#include <iostream>   /// for io operations
 
 /**
 * @brief This function gives the value of f(x) for given x.
@@ -106,4 +110,3 @@ int main() {
     }
     return 0;
 }
-
