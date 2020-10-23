@@ -500,7 +500,7 @@ void Tree234::InsertPreSplit(int item) {
 
     while (true) {
         if (!node) {
-            std::unique_ptr<Node> tmp = std::make_unique<Node>(item);
+            std::unique_ptr<Node> tmp(new Node(item));
             MergeNodeNotFull(parent, tmp.get());
             return;
         }
@@ -569,7 +569,7 @@ Node *Tree234::Insert(Node *tree, int item) {
     if (next_node) {
         split_node.reset(Insert(next_node, item));
     } else {
-        split_node = std::make_unique<Node>(item);
+        split_node.reset(new Node(item));
     }
 
     if (split_node) {
