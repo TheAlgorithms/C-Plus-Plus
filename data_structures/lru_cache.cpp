@@ -26,7 +26,6 @@ namespace data_structures {
  */
 namespace lru_cache {
 /**
- * Class node
  * @brief Class node to build up and implement doubly circular linked lists
  * which will be used as LRU Cache DS.
  */
