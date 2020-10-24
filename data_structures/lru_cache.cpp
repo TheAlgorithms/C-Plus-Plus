@@ -46,7 +46,7 @@ class node {
      * @param val : Value
      * @returns NOTHING
      */
-    node(int key, int val) {
+    node(uint64_t key, uint64_t val) {
         this->key = key;
         this->val = val;
         this->next = this->prev = nullptr;
