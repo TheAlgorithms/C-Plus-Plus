@@ -17,7 +17,7 @@
 class Node {
  public:
     /**
-     * @brief node constructor
+     * @brief Node constructor
      * @param item the first value we insert to the node
      */
     explicit Node(int item)
@@ -25,29 +25,49 @@ class Node {
           items({{item, 0, 0}}),
           children({{nullptr, nullptr, nullptr, nullptr}}) {}
 
-    /** @brief get the item count that current saved in the node */
+    /**
+     * @brief Get the item count that current saved in the node
+     * @return item count
+     */
     int GetCount() { return count; }
 
-    /** @brief set the item count of the node */
+    /**
+     * @brief Set the item count of the node
+     *
+     * This is only used when we spliting and merging node where we need to do
+     * some raw operation manually. In common inserting and removing operation
+     * the count is maintained automatically.
+     *
+     * @param c the count to set
+     */
     void SetCount(int c) { count = c; }
 
     /**
-     * @brief check if node is a leaf
+     * @brief Check if node is a leaf
+     * @return true if node is leaf, false otherwise
      */
     bool IsLeaf() { return children[0] == nullptr; }
 
-    /** @brief check if node is a full (4-node) */
+    /**
+     * @brief Check if node is a full (4-node)
+     * @return true if node is full (4-node), false otherwise
+     */
     bool IsFull() { return count == 3; }
 
-    /** @brief check if node is a 2-node */
+    /**
+     * @brief Check if node is a 2-node
+     * @return true if node is 2-node, otherwise false
+     */
     bool Is2Node() { return count == 1; }
 
-    /** @brief check if node is a 3-node or 4-node, this is useful when we
-     * delete item from 2-3-4 tree */
+    /** @brief Check if node is a 3-node or 4-node, this is useful when we
+     * delete item from 2-3-4 tree
+     * @return true if node is 3-node or 4-node, false otherwise
+     */
     bool Is34Node() { return count == 2 || count == 3; }
 
     /**
-     * @brief check if item is in the node
+     * @brief Check if item is in the node
      * @param item item to check
      * @return true if item in the node, otherwise false
      */
@@ -61,7 +81,7 @@ class Node {
     }
 
     /**
-     * @brief get the index of the item in the node, 0-based
+     * @brief Get the index of the item in the node, 0-based
      * @param item item to check
      * @return 0-based index of the item in the node, if not in the node, -1 is
      * returned
@@ -75,21 +95,27 @@ class Node {
         return -1;
     }
 
-    /** @brief get max item (rightmost) in the current node */
+    /**
+     * @brief Get max item (rightmost) in the current node
+     * @return max item
+     */
     int GetMaxItem() { return items[count - 1]; }
 
-    /** @brief get min item (leftmost) in the current node */
+    /**
+     * @brief get min item (leftmost) in the current node
+     * @return min item
+     */
     int GetMinItem() { return items[0]; }
 
     /**
-     * @brief get item of the \index index
+     * @brief Get item of the \index index
      * @param index the item index to get
      * @return the item
      */
     int GetItem(int index) { return items[index]; }
 
     /**
-     * @brief set item value at position of index
+     * @brief Set item value at position of index
      * @param index the index of the item to set
      * @param new_item item value
      */
@@ -100,7 +126,7 @@ class Node {
     }
 
     /**
-     * @brief insert item to the proper position of the node and return the
+     * @brief Insert item to the proper position of the node and return the
      * position index.
      *
      * This is a helper function we use during insertion. Please mind that when
@@ -113,7 +139,7 @@ class Node {
      * these two children pointer manually.
      *
      * @param item value to be inserted to the node
-     * @return return the index where item is inserted, caller can use this
+     * @return index where item is inserted, caller can use this
      * index to update its left and right child
      */
     int InsertItem(int item) {
@@ -135,7 +161,7 @@ class Node {
     }
 
     /**
-     * @brief insert a value to the index position
+     * @brief Insert a value to the index position
      * @param index index where to insert item
      * @param item  value to insert
      * @param with_child new added child pointer
@@ -164,11 +190,11 @@ class Node {
     }
 
     /**
-     * @brief insert a value to the index position
+     * @brief Insert a value to the index position
      * @param index index of the item to remove
      * @param keep_left which child of the item to keep, true keep the left
      * child, false keep the right child
-     * @return return the removed child pointer
+     * @return the removed child pointer
      */
     Node *RemoveItemByIndex(int index, bool keep_left) {
         assert(index >= 0 && index < count);
@@ -186,9 +212,9 @@ class Node {
     }
 
     /**
-     * @brief get the child's index of the children array
+     * @brief Get the child's index of the children array
      * @param child child pointer of which to get the index
-     * @return return the index of child
+     * @return the index of child
      */
     int GetChildIndex(Node *child) {
         for (int i = 0; i < count + 1; i++) {
@@ -201,27 +227,33 @@ class Node {
     }
 
     /**
-     * @brief get the child pointer at position of index
+     * @brief Get the child pointer at position of index
      * @param index index of child to get
-     * @return return the child pointer
+     * @return the child pointer
      */
     Node *GetChild(int index) { return children[index]; }
 
     /**
-     * @brief set child pointer to the position of index
+     * @brief Set child pointer to the position of index
      * @param index children index
      * @param child pointer to set
      */
     void SetChild(int index, Node *child) { children[index] = child; }
 
-    /** @brief get rightmose child of the current node */
+    /**
+     * @brief Get rightmose child of the current node
+     * @return the rightmost child
+     */
     Node *GetRightmostChild() { return children[count]; }
 
-    /** @brief get leftmose child of the current node */
+    /**
+     * @brief Get leftmose child of the current node
+     * @return the leftmost child
+     */
     Node *GetLeftmostChild() { return children[0]; }
 
     /**
-     * @brief get left child of item at item_index
+     * @brief Get left child of item at item_index
      * @param item_index  index of the item whose left child to be get
      * @return left child of items[index]'s
      */
@@ -234,7 +266,7 @@ class Node {
     }
 
     /**
-     * @brief get right child of item at item_index
+     * @brief Get right child of item at item_index
      * @param item_index  index of the item whose right child to be get
      * @return right child of items[index]'s
      */
@@ -247,7 +279,7 @@ class Node {
     }
 
     /**
-     * @brief get next node which is possibly contains item
+     * @brief Get next node which is possibly contains item
      * @param item item to search
      * @return the next node that possibly contains item
      */
@@ -266,7 +298,7 @@ class Node {
 
     std::array<Node *, 4> children;  ///< store the children pointers
 
-    int count;  ///< track the current item count
+    int count = 0;  ///< track the current item count
 };
 
 /** @brief 2-3-4 tree class */
@@ -280,31 +312,37 @@ class Tree234 {
 
     ~Tree234();
 
-    /** @brief insert item to tree */
+    /** @brief Insert item to tree */
     void Insert(int item);
 
-    /** @brief remove item from tree */
+    /**
+     * @brief Remove item from tree
+     * @return true if item found and removed, false otherwise
+     */
     bool Remove(int item);
 
-    /** @brief in-order traverse */
+    /** @brief In-order traverse */
     void Traverse();
 
-    /** @brief print tree into a dot file, so we can easily check the result. if
+    /** @brief Print tree into a dot file, so we can easily check the result. if
      * file_name is nullptr default is "out.dot" */
     void Print(const char *file_name = nullptr);
 
  private:
-    /** @brief a insert implementation of pre-split */
+    /** @brief A insert implementation of pre-split */
     void InsertPreSplit(int item);
 
-    /** @brief a insert implementation of post-merge */
+    /** @brief A insert implementation of post-merge */
     void InsertPostMerge(int item);
 
-    /** @brief a helper function used by post-merge insert */
+    /**
+     * @brief A helper function used by post-merge insert
+     * @return the node that split as the parent when overflow happen
+     */
     Node *Insert(Node *tree, int item);
 
     /**
-     * @brief a helper function used during post-merge insert
+     * @brief A helper function used during post-merge insert
      *
      * When the inserting leads to overflow, it will split the node to 1 parent
      * and 2 children. The parent will be merged to its origin parent after
@@ -314,13 +352,12 @@ class Tree234 {
      * @param dst_node the target node we will merge node to, can be type of
      * 2-node, 3-node or 4-node
      * @param node the source node we will merge from, type must be 2-node
-     * @return return the overflow node of this level back to the upper level to
-     * merge
+     * @return overflow node of this level
      */
     Node *MergeNode(Node *dst_node, Node *node);
 
     /**
-     * @brief merge node to a not-full target node
+     * @brief Merge node to a not-full target node
      *
      * Since the target node is not-full, no overflow will happen. So we have
      * nothing to return.
@@ -332,30 +369,29 @@ class Tree234 {
     void MergeNodeNotFull(Node *dst_node, Node *node);
 
     /**
-     * @brief split a 4-node to 1 parent and 2 children, and return the parent
+     * @brief Split a 4-node to 1 parent and 2 children, and return the parent
      * node
-     *
      * @param node the node to split, it must be a 4-node
-     * @return return the split parent node
+     * @return split parent node
      */
     Node *SplitNode(Node *node);
 
     /**
-     * @brief get the max item of the tree
+     * @brief Get the max item of the tree
      * @param tree the tree we will get item from
-     * @return return the max item of the tree
+     * @return max item of the tree
      */
     int GetTreeMaxItem(Node *tree);
 
     /**
-     * @brief get the min item of the tree
+     * @brief Get the min item of the tree
      * @param tree the tree we will get item from
-     * @return return the min item of the tree
+     * @return min item of the tree
      */
     int GetTreeMinItem(Node *tree);
 
     /**
-     * @brief a handy function to try if we can do a left rotate to the target
+     * @brief A handy function to try if we can do a left rotate to the target
      * node
      *
      * Given two node, the parent and the target child, the left rotate
@@ -366,13 +402,13 @@ class Tree234 {
      * @param parent the parent node in this left rotate operation
      * @param to_child the target child of this left rotate operation. In our
      * case, this node is always 2-node
-     * @return return true if we successfully do the rotate. false if the
+     * @return true if we successfully do the rotate. false if the
      * requirements are not fulfilled.
      */
     bool TryLeftRotate(Node *parent, Node *to_child);
 
     /**
-     * @brief a handy function to try if we can do a right rotate to the target
+     * @brief A handy function to try if we can do a right rotate to the target
      * node
      *
      * Given two node, the parent and the target child, the right rotate
@@ -383,13 +419,13 @@ class Tree234 {
      * @param parent the parent node in this right rotate operation
      * @param to_child the target child of this right rotate operation. In our
      * case, it is always 2-node
-     * @return return true if we successfully do the rotate. false if the
+     * @return true if we successfully do the rotate. false if the
      * requirements are not fulfilled.
      */
     bool TryRightRotate(Node *parent, Node *to_child);
 
     /**
-     * @brief do the actual right rotate operation
+     * @brief Do the actual right rotate operation
      *
      * Given parent node, and the pivot item index, the right rotate operation
      * is uniquely identified. The function assume the requirements are
@@ -403,7 +439,7 @@ class Tree234 {
     void RightRotate(Node *parent, int index);
 
     /**
-     * @brief do the actual left rotate operation
+     * @brief Do the actual left rotate operation
      *
      * Given parent node, and the pivot item index, the left rotate operation is
      * uniquely identified. The function assume the requirements are fulfilled
@@ -416,15 +452,15 @@ class Tree234 {
     void LeftRotate(Node *parent, int index);
 
     /**
-     * @brief main function implement the pre-merge remove operation
+     * @brief Main function implement the pre-merge remove operation
      * @param node the tree to remove item from
      * @param item item to remove
-     * @return return true if remove success, false otherwise
+     * @return true if remove success, false otherwise
      * */
     bool RemovePreMerge(Node *node, int item);
 
     /**
-     * @brief merge the item at index of the parent node, and its left and right
+     * @brief Merge the item at index of the parent node, and its left and right
      * child
      *
      * the left and right child node must be 2-node. The 3 items will be merged
@@ -434,11 +470,11 @@ class Tree234 {
      * @param parent the parent node in the merging operation
      * @param index the item index of the parent node that involved in the
      * merging
-     * @return return the merged 4-node
+     * @return the merged 4-node
      * */
     Node *Merge(Node *parent, int index);
 
-    /** @brief recursive release the tree */
+    /** @brief Recursive release the tree */
     void DeleteNode(Node *tree);
 
     /** @brief In-order traverse the tree, print items */
@@ -718,14 +754,6 @@ Node *Tree234::Merge(Node *parent, int index) {
     // 3. delete the unused right child
     delete right_child;
 
-    // 4. for parent
-    // (1) if it's 2-node, it must be the root, we delete it and set root to
-    // left_child (2) if it's 3-node or 4-node, we do nothing
-    // if (is_parent_2node) {
-    //     // delete parent;
-    //     root_ = left_child;
-    // }
-
     return left_child;
 }
 
@@ -922,9 +950,12 @@ void Tree234::Print(const char *file_name) {
 
     int index = 0;
 
+    /** @brief This is a helper structure to do a level order traversal to print
+     * the tree. */
     struct NodeInfo {
-        Node *node;
-        int index;
+        Node *node;  ///< tree node
+        int index;   ///< node index of level order that used when draw the link
+                     ///< between child and parent
     };
 
     std::queue<NodeInfo> q;
@@ -1047,7 +1078,7 @@ void Tree234::PrintNode2(FILE *f, Node *node, int parent_index, int index,
 
 /** @brief simple test to insert a given array and delete some item, and print
  * the tree*/
-void test1() {
+static void test1() {
     std::array<int, 13> arr = {3, 1, 5, 4, 2, 9, 10, 8, 7, 6, 16, 13, 14};
     Tree234 tree;
 
@@ -1062,7 +1093,7 @@ void test1() {
 
 /** @brief simple test to insert continuous number of range [0, n), and print
  * the tree*/
-void test2(int n) {
+static void test2(int n) {
     Tree234 tree;
 
     for (int i = 0; i < n; i++) {
@@ -1073,12 +1104,17 @@ void test2(int n) {
     tree.Print((std::to_string(n) + ".dot").c_str());
 }
 
-/** @brief unit test entrance*/
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        test1();
+        test1();  // execute 1st test
     } else {
-        test2(std::stoi(argv[1]));
+        test2(std::stoi(argv[1]));  // execute 2nd test
     }
 
     return 0;
