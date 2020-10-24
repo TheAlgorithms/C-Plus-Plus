@@ -104,19 +104,19 @@ int main() {
     int count=0;
     int range = 100000;        //Range in which we have to find the root. (-range,range)
     double gap = 0.5;          //interval gap. lesser the gap more the accuracy
-    a = eq((-1)*range);
+    a = numerical_methods::false_position::eq((-1)*range);
     i=((-1)*range + gap);
     //while loop for selecting proper interval in provided range and with provided interval gap.
     while(i<=range){
-        b = eq(i);
+        b = numerical_methods::false_position::eq(i);
         if(b==0){
             count++;
-            printRoot(i,count);
+            numerical_methods::false_position::printRoot(i,count);
         }
         if(a*b<0){
-            root = regula_falsi(i-gap,i,a,b);
+            root = numerical_methods::false_position::regula_falsi(i-gap,i,a,b);
             count++;
-            printRoot(root,count);
+            numerical_methods::false_position::printRoot(root,count);
         }
         a=b;
         i+=gap;
