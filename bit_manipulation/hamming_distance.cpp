@@ -1,5 +1,5 @@
 /**
- * @file
+ * @file hamming_distance.cpp
  * @brief Returns the [Hamming
  * distance](https://en.wikipedia.org/wiki/Hamming_distance) between two
  * integers
@@ -12,10 +12,16 @@
  * @author [Ravishankar Joshi](https://github.com/ravibitsgoa)
  */
 
+#include <cassert>
 #include <iostream>  /// for io operations
 
-unsigned int bitCount(unsigned int value) {
-    unsigned int count = 0;
+/**
+ * This function returns the number of set bits in the given number.
+ * @param value the number of which we want to count the number of set bits.
+ * @returns the number of set bits in the given number.
+ */
+uint64_t bitCount(uint64_t value) {
+    uint64_t count = 0;
     while (value) {       // until all bits are zero
         if (value & 1) {  // check lower bit
             count++;
@@ -25,11 +31,22 @@ unsigned int bitCount(unsigned int value) {
     return count;
 }
 
-unsigned int hamming_distance(int a, int b) {
-    if (a < 0 || b < 0) {
-        throw "Both arguments must be >=0 for finding hamming distance.";
-    }
-    return bitCount(a ^ b);
+/**
+ * This function returns the hamming distance between two integers.
+ * @param a the first number
+ * @param b the second number
+ * @returns the number of bits differing between the two integers.
+ */
+uint64_t hamming_distance(uint64_t a, uint64_t b) { return bitCount(a ^ b); }
+
+/**
+ * @brief Function to the test hamming distance.
+ * @returns void
+ */
+static void test() {
+    assert(hamming_distance(11, 2) == 2);
+    assert(hamming_distance(2, 0) == 1);
+    assert(hamming_distance(11, 0) == 3);
 }
 
 /**
@@ -37,8 +54,9 @@ unsigned int hamming_distance(int a, int b) {
  * @returns 0 on exit
  */
 int main() {
-    int a = 11;  // 1011 in binary
-    int b = 2;   // 0010 in binary
+    test();
+    uint64_t a = 11;  // 1011 in binary
+    uint64_t b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
               << hamming_distance(a, b) << std::endl;
