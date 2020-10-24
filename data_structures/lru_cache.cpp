@@ -78,7 +78,7 @@ class LRUCache {
      * instance.
      * @returns NOTHING
      */
-    explicit LRUCache(int capacity) {
+    explicit LRUCache(const uint64_t& capacity) {
         this->root = new node(-1, -1);
         node *temp = this->root;
         for (int i = 1; i < capacity; ++i) {
