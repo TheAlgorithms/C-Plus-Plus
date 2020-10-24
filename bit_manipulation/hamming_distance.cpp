@@ -32,6 +32,10 @@ unsigned int hamming_distance(int a, int b) {
     return bitCount(a ^ b);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     int a = 11;  // 1011 in binary
     int b = 2;   // 0010 in binary
