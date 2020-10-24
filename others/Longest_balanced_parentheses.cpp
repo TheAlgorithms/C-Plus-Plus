@@ -11,8 +11,8 @@ answer is 6
 
 
 
-
-#include <bits\stdc++.h>
+#include<iostream>
+#include<stack>
  using namespace std;
  int main()
  {
