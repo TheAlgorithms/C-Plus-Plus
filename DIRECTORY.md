@@ -10,6 +10,9 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
+## Bit Manipulation
+  * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
+
 ## Ciphers
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
