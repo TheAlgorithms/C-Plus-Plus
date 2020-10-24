@@ -10,7 +10,7 @@
  * @author [Ravishankar Joshi](https://github.com/ravibitsgoa)
  */
 
-#include <iostream>
+#include <iostream>  /// for io operations
 using std::cout, std::endl;
 
 unsigned int bitCount(unsigned int value) {
