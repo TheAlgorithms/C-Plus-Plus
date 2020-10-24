@@ -26,6 +26,17 @@
 #include <iostream>   /// for io operations
 
 /**
+ * @namespace numerical_methods
+ * @brief Numerical methods
+ */
+namespace numerical_methods {
+/**
+ * @namespace false_position
+ * @brief Functions for [False Position]
+ * (https://en.wikipedia.org/wiki/Regula_falsi) method.
+ */
+namespace false_position {
+/**
 * @brief This function gives the value of f(x) for given x.
 * @param x value for which we have to find value of f(x).
 * @return value of f(x) for given x.
@@ -80,6 +91,8 @@ void printRoot(double root,int count){
         std::cout << "Your "<<count<<"th root is : " << root << std::endl;
     }
 }
+}  // namespace false_position
+}  // namespace numerical_methods
 
 
 /**
