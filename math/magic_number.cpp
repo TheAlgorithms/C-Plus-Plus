@@ -70,7 +70,8 @@ static void tests() {
     std::cout << "passed\n";
 }
 
-/** Main function
+/**
+ * @brief Main function
  * @returns 0 on exit
  */
 int main() {
