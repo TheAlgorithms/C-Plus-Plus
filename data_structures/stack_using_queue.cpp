@@ -89,7 +89,7 @@ class MyStack
  */
 static void tests()
 {
-    data_structures::stack_using_queue::MyStack obj;            //  object of MyStack class
+    data_structures::stack_using_queue::MyStack obj;            //  object of data_structures::stack_using_queue::MyStack class
 
     std::cout << "Test #1\n";
     obj.push(2);
