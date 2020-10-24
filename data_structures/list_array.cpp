@@ -35,7 +35,7 @@ struct list {
         if (last < first) {
             return -1;
         }
-        int mid = (first + last) / 2;
+        uint64_t mid = (first + last) / 2;
         // check whether current mid pointer value is equal to element or not
         if (dataArr[mid] == val)
             return mid;
