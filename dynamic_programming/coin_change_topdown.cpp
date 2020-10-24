@@ -75,7 +75,7 @@ static void test() {
     std::vector<int> arr1 {1,7,10};
     std::vector<int> dp1 (n1+1);
     fill(dp1.begin(),dp1.end(),a1);
-    assert(min_coin_change::mincoins_topdown::mincoins(n1, arr1, t1, dp1)==3);
+    assert(dynamic_programming::mincoins_topdown::mincoins(n1, arr1, t1, dp1)==3);
     std::cout << "Passed\n";
 
 }
