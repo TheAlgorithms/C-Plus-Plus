@@ -20,14 +20,14 @@
 
 #include <iostream>   // for io operations
 #include <vector>     // for std::vector
-#include <cassert>    // for std::assert
+#include <cassert>    // for assert
 #include <climits>    // for INT_MAX
 
 /**
- * @namespace min_coin_change
- * @brief minimum number of coins
+ * @namespace dynamic_programming
+ * @brief Dynamic Programming algorithm
  */
-namespace min_coin_change {
+namespace dynamic_programming {
 /**
  * @namespace mincoins_topdown
  * @brief Functions for [minimum coin exchange](https://leetcode.com/problems/coin-change/) problem
@@ -35,10 +35,10 @@ namespace min_coin_change {
 namespace mincoins_topdown {
     /**
     * @brief This implementation is for finding minimum number of coins .
-    * @param n, coins, t, dp
+    * @param T is template type
     * @param n amount to be reached
     * @param coins vector of coins
-    * @param t number of coins available
+    * @param t deontes the number of coins
     * @param dp initilised to 0
     * @returns minimum number of coins
     */
@@ -52,7 +52,7 @@ namespace mincoins_topdown {
         }
         int ans=INT_MAX;    //variable to store min coins
         for(int i=0;i<t;i++){
-            if(n-coins[i]>=0){  //if after subtracting the current denomination is it                     greater than 0 or not
+            if(n-coins[i]>=0){  //if after subtracting the current denomination is it greater than 0 or not
                 int sub=mincoins(n-coins[i],coins,t,dp);
                 ans=std::min(ans,sub+1);
             }
@@ -62,7 +62,7 @@ namespace mincoins_topdown {
     }
 
 }  // namespace mincoins_topdown
-}  // namespace min_coin_change
+}  // namespace dynamic_programming
 
 /**
  * @brief Test implementations
@@ -84,6 +84,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test(); //execute the test
     return 0;
 }
