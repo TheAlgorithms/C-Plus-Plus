@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Returns the Hamming distance between two integers
+ * @brief Returns the [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) between two integers
  *
  * @details
  * To find hamming distance between two integers, we take their xor, which will
