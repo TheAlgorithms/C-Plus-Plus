@@ -11,26 +11,26 @@
  * You can select the operation and methods will do the rest work for you.
  * You can insert element, sort them in order, search efficiently, delete values and print the list.
  */
-#include <iostream>
-#include <array>
-#include <cassert>
+#include <iostream> // for io operations
+#include <array> // for std::array
+#include <cassert> // for assert
 
-/*
- * structure of List with supporting methods.
+/**
+ * @brief Structure of List with supporting methods.
  */
 struct list {
     std::array<int, 50> data{}; // Array that implement list
     int top = 0; // Pointer to the last element
     bool isSorted = false; // indicator whether list is sorted or not
-    /*
-     * search an element in the list using binaraySearch.
-     * @param dataArr - list
-     * @param first - pointer to the first element in the remaining list
-     * @param last - pointer to the last element in the remaining list
-     * @param val - element that will be searched
+    /**
+     * @brief Search an element in the list using binaraySearch.
+     * @param dataArr list
+     * @param first pointer to the first element in the remaining list
+     * @param last pointer to the last element in the remaining list
+     * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last, int val) {
+    int BinarySearch(const std::array<int, 50>& dataArr, const uint64_t& first, const uint64_t& last, const int& val) {
         // If both pointer cross each other means no element present in the list which is equal to the val
         if (last < first) {
             return -1;
@@ -49,28 +49,28 @@ struct list {
         std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
         return -1;
     }
-    /*
-     * search an element using linear search
-     * @param dataArr - list
-     * @param val - element that will be searched
+    /**
+     * @brief Search an element using linear search
+     * @param dataArr list
+     * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int LinearSearch(const std::array<int, 50>& dataArr, int x) const {
+    int LinearSearch(const std::array<int, 50>& dataArr, const int& val) const {
         // Going through each element in the list
         for (int i = 0; i < top; i++) {
-            if (dataArr[i] == x) {
+            if (dataArr[i] == val) {
                 return i; // element found at ith index
             }
         }
-        // element does not present in the list
+        // element is not present in the list
         return -1;
     }
     /*
-     * parent function of binarySearch and linearSearch methods
-     * @param val - element that will be searched
+     * @brief Parent function of binarySearch and linearSearch methods
+     * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int search(int val) {
+    int search(const int& val) {
         int pos; // pos variable to store index value of element.
         // if list is sorted, binary search works efficiently else linear search is the only option
         if (isSorted) {
@@ -88,8 +88,9 @@ struct list {
         // return the index of element or -1.
         return pos;
     }
-    /*
-     * sort the list
+    /**
+     * @brief Sort the list
+     * @returns void
      */
     void sort() {
         //Going through each element in the list
@@ -108,11 +109,12 @@ struct list {
         isSorted = true;
     }
 
-    /*
-     * Insert the new element in the list
-     * @param val - element that will be inserted
+    /**
+     * @brief Insert the new element in the list
+     * @param val element that will be inserted
+     * @returns void
      */
-    void insert(int val) {
+    void insert(const int& val) {
         // overflow check
         if (top == 49) {
             std::cout << "\nOverflow";
@@ -146,11 +148,12 @@ struct list {
         }
     }
 
-    /*
-     * To remove the element from the list
-     * @param val - element that will be removed
+    /**
+     * @brief To remove the element from the list
+     * @param val element that will be removed
+     * @returns void
      */
-    void remove(int val) {
+    void remove(const int& val) {
         int pos = search(val); // search the index of the value
         // if search returns -1, element does not present in the list
         if (pos == -1) {
@@ -165,8 +168,9 @@ struct list {
         top--; // decrement the top variable to maintain last index
     }
 
-    /*
-     * To print the list
+    /**
+     * @brief Utility function to print array
+     * @returns void
      */
     void show() {
         // Going through each element in the list
@@ -177,10 +181,11 @@ struct list {
     }
 };
 
-/*
- * To test the functionalities of the list
+/**
+ * @brief Test implementations
+ * @returns void
  */
-void test() {
+static void test() {
     list L;
 
     // Insert testing
@@ -218,9 +223,11 @@ void test() {
     assert(L.search(50) == -1); // search for the non-existing element
 }
 
-// Driver code
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    // Testing
-    test();
+    test(); // Execute the tests
     return 0;
 }
