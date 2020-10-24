@@ -11,7 +11,6 @@
  */
 
 #include <iostream>  /// for io operations
-using std::cout, std::endl;
 
 unsigned int bitCount(unsigned int value) {
     unsigned int count = 0;
