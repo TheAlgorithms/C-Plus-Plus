@@ -1,6 +1,8 @@
 /**
  * @file
- * @brief Returns the [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance) between two integers
+ * @brief Returns the [Hamming
+ * distance](https://en.wikipedia.org/wiki/Hamming_distance) between two
+ * integers
  *
  * @details
  * To find hamming distance between two integers, we take their xor, which will
@@ -35,5 +37,5 @@ int main() {
     int b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
-         << hamming_distance(a, b) << std::endl;
+              << hamming_distance(a, b) << std::endl;
 }
