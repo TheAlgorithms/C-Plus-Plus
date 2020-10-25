@@ -8,6 +8,7 @@
 #include <array>
 #include <cassert>
 #include <cstdio>
+#include <fstream>
 #include <iostream>
 #include <memory>
 #include <queue>
@@ -312,11 +313,15 @@ class Tree234 {
 
     ~Tree234();
 
-    /** @brief Insert item to tree */
+    /** 
+     * @brief Insert item to tree 
+     * @param item item to insert
+     */
     void Insert(int item);
 
     /**
      * @brief Remove item from tree
+     * @param item item to remove
      * @return true if item found and removed, false otherwise
      */
     bool Remove(int item);
@@ -324,19 +329,29 @@ class Tree234 {
     /** @brief In-order traverse */
     void Traverse();
 
-    /** @brief Print tree into a dot file, so we can easily check the result. if
-     * file_name is nullptr default is "out.dot" */
+    /** 
+     * @brief Print tree into a dot file
+     * @param file_name output file name, if nullptr then use "out.dot" as default
+     */ 
     void Print(const char *file_name = nullptr);
 
  private:
-    /** @brief A insert implementation of pre-split */
+    /** 
+     * @brief A insert implementation of pre-split 
+     * @param item item to insert 
+     */
     void InsertPreSplit(int item);
 
-    /** @brief A insert implementation of post-merge */
+    /** 
+     * @brief A insert implementation of post-merge 
+     * @param item item to insert 
+     */
     void InsertPostMerge(int item);
 
     /**
      * @brief A helper function used by post-merge insert
+     * @param tree tree where to insert item
+     * @param item item to insert
      * @return the node that split as the parent when overflow happen
      */
     Node *Insert(Node *tree, int item);
@@ -471,30 +486,42 @@ class Tree234 {
      * @param index the item index of the parent node that involved in the
      * merging
      * @return the merged 4-node
-     * */
+     */
     Node *Merge(Node *parent, int index);
 
-    /** @brief Recursive release the tree */
+    /** 
+     * @brief Recursive release the tree 
+     * @param tree root node of the tree to delete
+     */
     void DeleteNode(Node *tree);
 
-    /** @brief In-order traverse the tree, print items */
+    /** 
+     * @brief In-order traverse the tree, print items 
+     * @param tree tree to traverse
+     */
     void Traverse(Node *tree);
 
-    /** @brief Print the tree to a dot file. You can convert it to picture with
-     * graphviz*/
-    void PrintNode(FILE *f, Node *node, int parent_index, int index,
-                   int parent_ptr_index);
-
-    /** @brief Print the tree with all its empty item also printed with a '-'.
-     * This function is an alternative to PrintNode() */
-    void PrintNode2(FILE *f, Node *node, int parent_index, int index,
-                    int parent_ptr_index);
+    /** 
+     * @brief Print the tree to a dot file. You can convert it to picture with
+     * graphviz
+     * @param ofs output file stream to print to
+     * @param node current node to print
+     * @param parent_index current node's parent node index, this is used to draw the link from parent to current node
+     * @param index current node's index of level order which is used to name the node in dot file
+     * @param parent_child_index the index that current node in parent's children array, range in [0,4), help to locate the start position of the link between nodes
+     */
+    void PrintNode(std::ofstream &ofs, Node *node, int parent_index, int index,
+                   int parent_child_index);
 
     Node *root_{nullptr};  ///< root node of the tree
 };
 
 Tree234::~Tree234() { DeleteNode(root_); }
 
+/** 
+ * @brief Recursive release the tree 
+ * @param tree root node of the tree to delete
+ */
 void Tree234::DeleteNode(Node *tree) {
     if (!tree) {
         return;
@@ -506,6 +533,10 @@ void Tree234::DeleteNode(Node *tree) {
     delete tree;
 }
 
+/** 
+ * @brief In-order traverse the tree, print items 
+ * @param tree tree to traverse
+ */
 void Tree234::Traverse() {
     Traverse(root_);
     std::cout << std::endl;
@@ -525,6 +556,10 @@ void Tree234::Traverse(Node *node) {
     Traverse(node->GetChild(i));
 }
 
+/** 
+ * @brief A insert implementation of pre-split 
+ * @param item item to insert 
+ */
 void Tree234::InsertPreSplit(int item) {
     if (!root_) {
         root_ = new Node(item);
@@ -575,6 +610,10 @@ void Tree234::InsertPreSplit(int item) {
     }
 }
 
+/** 
+ * @brief A insert implementation of post-merge 
+ * @param item item to insert 
+ */
 void Tree234::InsertPostMerge(int item) {
     if (!root_) {
         root_ = new Node(item);
@@ -589,8 +628,18 @@ void Tree234::InsertPostMerge(int item) {
     }
 }
 
+/** 
+ * @brief Insert item to tree 
+ * @param item item to insert
+ */
 void Tree234::Insert(int item) { InsertPreSplit(item); }
 
+/**
+ * @brief A helper function used by post-merge insert
+ * @param tree tree where to insert item
+ * @param item item to insert
+ * @return the node that split as the parent when overflow happen
+ */
 Node *Tree234::Insert(Node *tree, int item) {
     assert(tree != nullptr);
 
@@ -615,6 +664,19 @@ Node *Tree234::Insert(Node *tree, int item) {
     return nullptr;
 }
 
+/**
+ * @brief A helper function used during post-merge insert
+ *
+ * When the inserting leads to overflow, it will split the node to 1 parent
+ * and 2 children. The parent will be merged to its origin parent after
+ * that. This is the function to complete this task. So the param node is
+ * always a 2-node.
+ *
+ * @param dst_node the target node we will merge node to, can be type of
+ * 2-node, 3-node or 4-node
+ * @param node the source node we will merge from, type must be 2-node
+ * @return overflow node of this level
+ */
 Node *Tree234::MergeNode(Node *dst_node, Node *node) {
     assert(dst_node != nullptr && node != nullptr);
 
@@ -635,6 +697,16 @@ Node *Tree234::MergeNode(Node *dst_node, Node *node) {
     return dst_node;
 }
 
+/**
+ * @brief Merge node to a not-full target node
+ *
+ * Since the target node is not-full, no overflow will happen. So we have
+ * nothing to return.
+ *
+ * @param dst_node the target not-full node, that is the type is either
+ * 2-node or 3-node, but not 4-node
+ * @param node the source node we will merge from, type must be 2-node
+ */
 void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
     assert(dst_node && node && !dst_node->IsFull() && node->Is2Node());
 
@@ -644,6 +716,12 @@ void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
     dst_node->SetChild(i + 1, node->GetChild(1));
 }
 
+/**
+ * @brief Split a 4-node to 1 parent and 2 children, and return the parent
+ * node
+ * @param node the node to split, it must be a 4-node
+ * @return split parent node
+ */
 Node *Tree234::SplitNode(Node *node) {
     assert(node->GetCount() == 3);
 
@@ -662,6 +740,21 @@ Node *Tree234::SplitNode(Node *node) {
     return parent;
 }
 
+/**
+ * @brief A handy function to try if we can do a left rotate to the target
+ * node
+ *
+ * Given two node, the parent and the target child, the left rotate
+ * operation is uniquely identified. The source node must be the right
+ * sibling of the target child. The operation can be successfully done if
+ * the to_child has a right sibling and its right sibling is not 2-node.
+ *
+ * @param parent the parent node in this left rotate operation
+ * @param to_child the target child of this left rotate operation. In our
+ * case, this node is always 2-node
+ * @return true if we successfully do the rotate. false if the
+ * requirements are not fulfilled.
+ */
 bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
     int to_child_index = parent->GetChildIndex(to_child);
 
@@ -682,6 +775,21 @@ bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
     return true;
 }
 
+/**
+ * @brief A handy function to try if we can do a right rotate to the target
+ * node
+ *
+ * Given two node, the parent and the target child, the right rotate
+ * operation is uniquely identified. The source node must be the left
+ * sibling of the target child. The operation can be successfully done if
+ * the to_child has a left sibling and its left sibling is not 2-node.
+ *
+ * @param parent the parent node in this right rotate operation
+ * @param to_child the target child of this right rotate operation. In our
+ * case, it is always 2-node
+ * @return true if we successfully do the rotate. false if the
+ * requirements are not fulfilled.
+ */
 bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
     int to_child_index = parent->GetChildIndex(to_child);
 
@@ -702,6 +810,18 @@ bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
     return true;
 }
 
+/**
+ * @brief Do the actual right rotate operation
+ *
+ * Given parent node, and the pivot item index, the right rotate operation
+ * is uniquely identified. The function assume the requirements are
+ * fulfilled and won't do any extra check. This function is call by
+ * TryRightRotate(), and the condition checking should be done before call
+ * it.
+ *
+ * @param parent the parent node in this right rotate operation
+ * @param index the pivot item index of this right rotate operation.
+ */
 void Tree234::RightRotate(Node *parent, int index) {
     Node *left = parent->GetItemLeftChild(index);
     Node *right = parent->GetItemRightChild(index);
@@ -715,6 +835,17 @@ void Tree234::RightRotate(Node *parent, int index) {
     left->RemoveItemByIndex(left->GetCount() - 1, true);
 }
 
+/**
+ * @brief Do the actual left rotate operation
+ *
+ * Given parent node, and the pivot item index, the left rotate operation is
+ * uniquely identified. The function assume the requirements are fulfilled
+ * and won't do any extra check. This function is call by TryLeftRotate(),
+ * and the condition checking should be done before call it.
+ *
+ * @param parent the parent node in this right rotate operation
+ * @param index the pivot item index of this right rotate operation.
+ */
 void Tree234::LeftRotate(Node *parent, int index) {
     Node *left = parent->GetItemLeftChild(index);
     Node *right = parent->GetItemRightChild(index);
@@ -728,6 +859,19 @@ void Tree234::LeftRotate(Node *parent, int index) {
     right->RemoveItemByIndex(0, false);
 }
 
+/**
+ * @brief Merge the item at index of the parent node, and its left and right
+ * child
+ *
+ * the left and right child node must be 2-node. The 3 items will be merged
+ * into a 4-node. In our case the parent can be a 2-node iff it is the root.
+ * Otherwise, it must be 3-node or 4-node.
+ *
+ * @param parent the parent node in the merging operation
+ * @param index the item index of the parent node that involved in the
+ * merging
+ * @return the merged 4-node
+ */
 Node *Tree234::Merge(Node *parent, int index) {
     assert(parent);
 
@@ -757,8 +901,19 @@ Node *Tree234::Merge(Node *parent, int index) {
     return left_child;
 }
 
+/**
+ * @brief Remove item from tree
+ * @param item item to remove
+ * @return true if item found and removed, false otherwise
+ */
 bool Tree234::Remove(int item) { return RemovePreMerge(root_, item); }
 
+/**
+ * @brief Main function implement the pre-merge remove operation
+ * @param node the tree to remove item from
+ * @param item item to remove
+ * @return true if remove success, false otherwise
+ */
 bool Tree234::RemovePreMerge(Node *node, int item) {
     while (node) {
         if (node->IsLeaf()) {
@@ -915,6 +1070,11 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
     return false;
 }
 
+/**
+ * @brief Get the max item of the tree
+ * @param tree the tree we will get item from
+ * @return max item of the tree
+ */
 int Tree234::GetTreeMaxItem(Node *tree) {
     assert(tree);
     int max = 0;
@@ -927,6 +1087,11 @@ int Tree234::GetTreeMaxItem(Node *tree) {
     return max;
 }
 
+/**
+ * @brief Get the min item of the tree
+ * @param tree the tree we will get item from
+ * @return min item of the tree
+ */
 int Tree234::GetTreeMinItem(Node *tree) {
     assert(tree);
     int min = 0;
@@ -939,14 +1104,25 @@ int Tree234::GetTreeMinItem(Node *tree) {
     return min;
 }
 
+/** 
+ * @brief Print tree into a dot file
+ * @param file_name output file name, if nullptr then use "out.dot" as default
+ */ 
 void Tree234::Print(const char *file_name) {
     if (!file_name) {
         file_name = "out.dot";
     }
 
-    FILE *f = fopen(file_name, "wb");
-    fprintf(f, "digraph G {\n");
-    fprintf(f, "node [shape=record]\n");
+    std::ofstream ofs;
+
+    ofs.open(file_name);
+    if (!ofs) {
+        std::cout << "create tree dot file failed, " << file_name << std::endl;
+        return;
+    }
+
+    ofs << "digraph G {\n";
+    ofs << "node [shape=record]\n";
 
     int index = 0;
 
@@ -962,7 +1138,7 @@ void Tree234::Print(const char *file_name) {
 
     if (root_) {
         // print root node
-        PrintNode(f, root_, -1, index, 0);
+        PrintNode(ofs, root_, -1, index, 0);
 
         NodeInfo ni{};
         ni.node = root_;
@@ -978,13 +1154,13 @@ void Tree234::Print(const char *file_name) {
 
             if (!node_info.node->IsLeaf()) {
                 if (node_info.node->GetCount() > 0) {
-                    PrintNode(f, node_info.node->GetChild(0), node_info.index,
+                    PrintNode(ofs, node_info.node->GetChild(0), node_info.index,
                               ++index, 0);
                     ni.node = node_info.node->GetChild(0);
                     ni.index = index;
                     q.push(ni);
 
-                    PrintNode(f, node_info.node->GetChild(1), node_info.index,
+                    PrintNode(ofs, node_info.node->GetChild(1), node_info.index,
                               ++index, 1);
                     ni.node = node_info.node->GetChild(1);
                     ni.index = index;
@@ -992,7 +1168,7 @@ void Tree234::Print(const char *file_name) {
                 }
 
                 if (node_info.node->GetCount() > 1) {
-                    PrintNode(f, node_info.node->GetChild(2), node_info.index,
+                    PrintNode(ofs, node_info.node->GetChild(2), node_info.index,
                               ++index, 2);
                     ni.node = node_info.node->GetChild(2);
                     ni.index = index;
@@ -1000,7 +1176,7 @@ void Tree234::Print(const char *file_name) {
                 }
 
                 if (node_info.node->GetCount() > 2) {
-                    PrintNode(f, node_info.node->GetChild(3), node_info.index,
+                    PrintNode(ofs, node_info.node->GetChild(3), node_info.index,
                               ++index, 3);
                     ni.node = node_info.node->GetChild(3);
                     ni.index = index;
@@ -1010,27 +1186,35 @@ void Tree234::Print(const char *file_name) {
         }
     }
 
-    fprintf(f, "}\n");
-    fclose(f);
+    ofs << "}\n";
+    ofs.close();
 }
 
-void Tree234::PrintNode(FILE *f, Node *node, int parent_index, int index,
-                        int parent_ptr_index) {
+/** 
+ * @brief Print the tree to a dot file. You can convert it to picture with
+ * graphviz
+ * @param ofs output file stream to print to
+ * @param node current node to print
+ * @param parent_index current node's parent node index, this is used to draw the link from parent to current node
+ * @param index current node's index of level order which is used to name the node in dot file
+ * @param parent_child_index the index that current node in parent's children array, range in [0,4), help to locate the start position of the link between nodes
+ */
+void Tree234::PrintNode(std::ofstream &ofs, Node *node, int parent_index, int index,
+                        int parent_child_index) {
     assert(node);
 
     switch (node->GetCount()) {
         case 1:
-            fprintf(f, "node_%d [label=\"<f0> %d\"]\n", index,
-                    node->GetItem(0));
+            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0) << "\"]\n";
             break;
         case 2:
-            fprintf(f, "node_%d [label=\"<f0> %d | <f1> %d\"]\n", index,
-                    node->GetItem(0), node->GetItem(1));
+            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0) << " | <f1> " << node->GetItem(1) << "\"]\n";
             break;
         case 3:
-            fprintf(f, "node_%d [label=\"<f0> %d | <f1> %d| <f2> %d\"]\n",
-                    index, node->GetItem(0), node->GetItem(1),
-                    node->GetItem(2));
+            ofs << "node_" << index 
+               << " [label=\"<f0> " << node->GetItem(0) 
+               <<" | <f1> " << node->GetItem(1) 
+               << "| <f2> " << node->GetItem(2) << "\"]\n";
             break;
 
         default:
@@ -1039,40 +1223,10 @@ void Tree234::PrintNode(FILE *f, Node *node, int parent_index, int index,
 
     // draw the edge
     if (parent_index >= 0) {
-        fprintf(f, "node_%d:f%d:%s -> node_%d\n", parent_index,
-                parent_ptr_index == 0 ? 0 : parent_ptr_index - 1,
-                parent_ptr_index == 0 ? "sw" : "se", index);
-    }
-}
-
-void Tree234::PrintNode2(FILE *f, Node *node, int parent_index, int index,
-                         int parent_ptr_index) {
-    assert(node);
-
-    switch (node->GetCount()) {
-        case 1:
-            fprintf(f, "node_%d [label=\"<f0> %d | <f1> -| <f2> -\"]\n", index,
-                    node->GetItem(0));
-            break;
-        case 2:
-            fprintf(f, "node_%d [label=\"<f0> %d | <f1> %d| <f2> -\"]\n", index,
-                    node->GetItem(0), node->GetItem(1));
-            break;
-        case 3:
-            fprintf(f, "node_%d [label=\"<f0> %d | <f1> %d| <f2> %d\"]\n",
-                    index, node->GetItem(0), node->GetItem(1),
-                    node->GetItem(2));
-            break;
-
-        default:
-            break;
-    }
-
-    // draw the edge
-    if (parent_index >= 0) {
-        fprintf(f, "node_%d:f%d:%s -> node_%d\n", parent_index,
-                parent_ptr_index == 0 ? 0 : parent_ptr_index - 1,
-                parent_ptr_index == 0 ? "sw" : "se", index);
+        ofs << "node_" << parent_index 
+           << ":f" << (parent_child_index == 0 ? 0 : parent_child_index - 1) 
+           << ":" << (parent_child_index == 0 ? "sw" : "se")
+           << " -> node_" << index <<"\n";
     }
 }
 
@@ -1091,8 +1245,11 @@ static void test1() {
     tree.Print();
 }
 
-/** @brief simple test to insert continuous number of range [0, n), and print
- * the tree*/
+/** 
+ * @brief simple test to insert continuous number of range [0, n), and print
+ * the tree
+ * @param n upper bound of the range number to insert
+ */
 static void test2(int n) {
     Tree234 tree;
 
