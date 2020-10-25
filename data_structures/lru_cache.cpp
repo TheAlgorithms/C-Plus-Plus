@@ -99,7 +99,7 @@ class LRUCache {
      * @param key value for this key is to be returned.
      * @returns NOTHING
      */
-    int get(uint64_t key) {
+    uint64_t get(uint64_t key) {
         auto found = addr.find(key);
 
         if (found == addr.end()) {
