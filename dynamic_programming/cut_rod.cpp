@@ -68,16 +68,70 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
  * @brief Function to test above algorithm
  * @returns void
  */
+
+
+
+template <size_t T>
+bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const int n){
+
+    /*
+
+      Note that if all the prices of the different lengths of rod are same the answer will be always n*price;
+      where price=price of 1 length rod
+      Reason::
+      cR() ---> cutRod()
+
+                             cR(4)
+                  /        /
+                 /        /
+             cR(3)       cR(2)     cR(1)   cR(0)
+            /  |         /         |
+           /   |        /          |
+      cR(2) cR(1) cR(0) cR(1) cR(0) cR(0)
+     /        |          |
+    /         |          |
+  cR(1) cR(0) cR(0)      cR(0)
+   /
+ /
+CR(0)
+
+
+   if every length has same price , you would definitely want the rod of length 1, with n quantities.
+    which will give us maximum profits and maximum cuts.
+
+    */
+
+    const int temp=price[0];
+     for (size_t i = 1; i <n; i++) {
+         if(price[i]!=temp)
+             return false;
+        }
+
+        return true;
+}
+
+
 static void test() {
     // Test 1
     const int n1 = 8;                                           // size of rod
-    std::array<int, n1> price1 = {1, 5, 8, 9, 10, 17, 17, 20};  // price array
+    std::array<int, n1> price1 = {1, 1,1,1,1,1,1,1};  // price array
     const int max_profit1 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price1, n1);
     const int expected_max_profit1 = 22;
+
+    if( WhatIfAllPricesAreSame(price1,n1)){
+        std::cout << "Maximum profit with " << n1 << " inch road is " <<(n1)*price1[0]
+              << std::endl;
+    }
+    else{
+
     assert(max_profit1 == expected_max_profit1);
     std::cout << "Maximum profit with " << n1 << " inch road is " << max_profit1
               << std::endl;
+
+    }
+
+
 
     // Test 2
     const int n2 = 30;  // size of rod
