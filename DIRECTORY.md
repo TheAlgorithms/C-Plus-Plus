@@ -13,6 +13,7 @@
 ## Ciphers
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
+  * [Morse Code](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/morse_code.cpp)
   * [Vigenere Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/vigenere_cipher.cpp)
   * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
@@ -66,6 +67,7 @@
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_increasing_subsequence.cpp)
   * [Longest Increasing Subsequence (Nlogn)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_increasing_subsequence_(nlogn).cpp)
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/matrix_chain_multiplication.cpp)
+  * [Palindrome Partitioning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/palindrome_partitioning.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/shortest_common_supersequence.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
@@ -240,6 +242,7 @@
   * [Counting Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort.cpp)
   * [Counting Sort String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/counting_sort_string.cpp)
   * [Cycle Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/cycle_sort2.cpp)
+  * [Cycle Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/cycle_sort.cpp)
   * [Gnome Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/gnome_sort.cpp)
   * [Heap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/heap_sort.cpp)
   * [Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/insertion_sort.cpp)
