@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['machine_5flearning_2776',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
-  ['median_5fsearch_2777',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
-  ['merge_5finsertion_2778',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
-  ['morse_2779',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
+  ['machine_5flearning_2779',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
+  ['median_5fsearch_2780',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
+  ['merge_5finsertion_2781',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
+  ['morse_2782',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
 ];

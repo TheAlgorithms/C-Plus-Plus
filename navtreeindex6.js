@@ -1,5 +1,17 @@
 var NAVTREEINDEX6 =
 {
+"df/dc8/successive__approximation_8cpp.html":[10,0,11,15],
+"df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[10,0,11,15,0],
+"df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,11,15,2],
+"df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[10,0,11,15,1],
+"df/dcb/namespacestrings.html":[8,0,45],
+"df/dce/namespacegraph.html":[9,0,4],
+"df/dce/namespacegraph.html":[8,0,10],
+"df/dd0/queue__using__two__stacks_8cpp.html":[10,0,2,9],
+"df/dd0/queue__using__two__stacks_8cpp.html#a831ded10ecad88c14a8e22b96f4c1863":[10,0,2,9,1],
+"df/dd0/queue__using__two__stacks_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,2,9,0],
+"df/dd5/binary__search_8cpp.html":[10,0,15,0],
+"df/dd5/binary__search_8cpp.html#a78df202b718cfe3c2c9216979b08298d":[10,0,15,0,0],
 "df/dd5/binary__search_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089":[10,0,15,0,1],
 "df/ddd/connected__components_8cpp.html":[10,0,5,1],
 "df/ddd/connected__components_8cpp.html#a372ff051a7bc6c91d34a7b58edf8dfce":[10,0,5,1,0],
@@ -148,12 +160,5 @@ var NAVTREEINDEX6 =
 "namespacemembers_func.html":[8,1,1],
 "namespacemembers_vars.html":[8,1,2],
 "namespaces.html":[8,0],
-"pages.html":[],
-"":[9,0,6,0],
-"":[9,0,4,0],
-"":[9,0,9,0],
-"":[9,0,6,0,0],
-"":[9,0,7,0],
-"":[9,0,3,0],
-"":[9,0,1,0]
+"pages.html":[]
 };

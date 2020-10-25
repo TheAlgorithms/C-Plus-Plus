@@ -29,6 +29,7 @@ var namespaces_dup =
     [ "n_queens_optimized", "d8/d14/namespacen__queens__optimized.html", null ],
     [ "neural_network", "d0/d2e/namespaceneural__network.html", null ],
     [ "others", "d0/d6f/namespaceothers.html", null ],
+    [ "palindrome_partitioning", "d5/d89/namespacepalindrome__partitioning.html", null ],
     [ "pancake_sort", "df/d10/namespacepancake__sort.html", null ],
     [ "postfix_expression", "d4/de6/namespacepostfix__expression.html", null ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", null ],

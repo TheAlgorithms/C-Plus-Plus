@@ -1,5 +1,12 @@
 var NAVTREEINDEX0 =
 {
+"":[9,0,1,0],
+"":[9,0,7,0],
+"":[9,0,9,0],
+"":[9,0,3,0],
+"":[9,0,4,0],
+"":[9,0,6,0],
+"":[9,0,6,0,0],
 "annotated.html":[9,0],
 "classes.html":[9,1],
 "d0/d01/smallest__circle_8cpp.html":[10,0,12,12],
@@ -195,7 +202,7 @@ var NAVTREEINDEX0 =
 "d2/d2c/structtower.html":[9,0,39],
 "d2/d2c/structtower.html#a3ebb75c13c57d51a8a1ba1ea54a515e9":[9,0,39,1],
 "d2/d2c/structtower.html#acb535964abd34c47678a4ade0628223d":[9,0,39,0],
-"d2/d3b/namespaceqr__algorithm.html":[8,0,31],
+"d2/d3b/namespaceqr__algorithm.html":[8,0,32],
 "d2/d52/heap__sort_8cpp.html":[10,0,16,5],
 "d2/d52/heap__sort_8cpp.html#a9ed3e1510afdf3edd06cf2b68769a767":[10,0,16,5,3],
 "d2/d52/heap__sort_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[10,0,16,5,4],
@@ -232,7 +239,7 @@ var NAVTREEINDEX0 =
 "d2/dc4/classstack__linked_list.html#aa34ec2024dcfe130e6458149093772b3":[9,0,38,5],
 "d2/dc4/classstack__linked_list.html#af12688f7e4d74a978c93d5b26199a208":[9,0,38,1],
 "d2/dcf/namespacestatistics.html":[9,0,10],
-"d2/dcf/namespacestatistics.html":[8,0,40],
+"d2/dcf/namespacestatistics.html":[8,0,41],
 "d2/de9/heavy__light__decomposition_8cpp.html":[10,0,14,1],
 "d2/de9/heavy__light__decomposition_8cpp.html#a34b8683a2b429de5cce57e6d733ec817":[10,0,14,1,4],
 "d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d":[10,0,14,1,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX0 =
 "d3/d06/ode__semi__implicit__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,11,1],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[10,0,11,11,3],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[10,0,11,11,2],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,11,0],
-"d3/d17/namespaceutil__functions.html":[8,0,45],
-"d3/d19/sparse__matrix_8cpp.html":[10,0,12,13],
-"d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,13,0],
-"d3/d24/qr__decomposition_8cpp.html":[10,0,11,13],
-"d3/d24/qr__decomposition_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[10,0,11,13,0],
-"d3/d26/binary__search__tree_8cpp.html":[10,0,2,2],
-"d3/d26/binary__search__tree_8cpp.html#a13dac1586cbb95ebfd63dc47aeeff0e1":[10,0,2,2,9]
+"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,11,0]
 };
