@@ -5,14 +5,13 @@
  * operations should be easy to added.
  * @author [liuhuan](https://github.com/fedom)
  */
-#include <array>
-#include <cassert>
-#include <cstdio>
-#include <fstream>
-#include <iostream>
-#include <memory>
-#include <queue>
-#include <string>
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <fstream>   /// for std::ofstream
+#include <iostream>  /// for std::cout
+#include <memory>    /// for std::unique_ptr
+#include <queue>     /// for std::queue
+#include <string>    /// for std::to_string
 
 /** @brief 2-3-4 tree node class */
 class Node {
@@ -313,8 +312,8 @@ class Tree234 {
 
     ~Tree234();
 
-    /** 
-     * @brief Insert item to tree 
+    /**
+     * @brief Insert item to tree
      * @param item item to insert
      */
     void Insert(int item);
@@ -329,22 +328,23 @@ class Tree234 {
     /** @brief In-order traverse */
     void Traverse();
 
-    /** 
+    /**
      * @brief Print tree into a dot file
-     * @param file_name output file name, if nullptr then use "out.dot" as default
-     */ 
+     * @param file_name output file name, if nullptr then use "out.dot" as
+     * default
+     */
     void Print(const char *file_name = nullptr);
 
  private:
-    /** 
-     * @brief A insert implementation of pre-split 
-     * @param item item to insert 
+    /**
+     * @brief A insert implementation of pre-split
+     * @param item item to insert
      */
     void InsertPreSplit(int item);
 
-    /** 
-     * @brief A insert implementation of post-merge 
-     * @param item item to insert 
+    /**
+     * @brief A insert implementation of post-merge
+     * @param item item to insert
      */
     void InsertPostMerge(int item);
 
@@ -489,26 +489,30 @@ class Tree234 {
      */
     Node *Merge(Node *parent, int index);
 
-    /** 
-     * @brief Recursive release the tree 
+    /**
+     * @brief Recursive release the tree
      * @param tree root node of the tree to delete
      */
     void DeleteNode(Node *tree);
 
-    /** 
-     * @brief In-order traverse the tree, print items 
+    /**
+     * @brief In-order traverse the tree, print items
      * @param tree tree to traverse
      */
     void Traverse(Node *tree);
 
-    /** 
+    /**
      * @brief Print the tree to a dot file. You can convert it to picture with
      * graphviz
      * @param ofs output file stream to print to
      * @param node current node to print
-     * @param parent_index current node's parent node index, this is used to draw the link from parent to current node
-     * @param index current node's index of level order which is used to name the node in dot file
-     * @param parent_child_index the index that current node in parent's children array, range in [0,4), help to locate the start position of the link between nodes
+     * @param parent_index current node's parent node index, this is used to
+     * draw the link from parent to current node
+     * @param index current node's index of level order which is used to name
+     * the node in dot file
+     * @param parent_child_index the index that current node in parent's
+     * children array, range in [0,4), help to locate the start position of the
+     * link between nodes
      */
     void PrintNode(std::ofstream &ofs, Node *node, int parent_index, int index,
                    int parent_child_index);
@@ -518,8 +522,8 @@ class Tree234 {
 
 Tree234::~Tree234() { DeleteNode(root_); }
 
-/** 
- * @brief Recursive release the tree 
+/**
+ * @brief Recursive release the tree
  * @param tree root node of the tree to delete
  */
 void Tree234::DeleteNode(Node *tree) {
@@ -533,8 +537,8 @@ void Tree234::DeleteNode(Node *tree) {
     delete tree;
 }
 
-/** 
- * @brief In-order traverse the tree, print items 
+/**
+ * @brief In-order traverse the tree, print items
  * @param tree tree to traverse
  */
 void Tree234::Traverse() {
@@ -556,9 +560,9 @@ void Tree234::Traverse(Node *node) {
     Traverse(node->GetChild(i));
 }
 
-/** 
- * @brief A insert implementation of pre-split 
- * @param item item to insert 
+/**
+ * @brief A insert implementation of pre-split
+ * @param item item to insert
  */
 void Tree234::InsertPreSplit(int item) {
     if (!root_) {
@@ -610,9 +614,9 @@ void Tree234::InsertPreSplit(int item) {
     }
 }
 
-/** 
- * @brief A insert implementation of post-merge 
- * @param item item to insert 
+/**
+ * @brief A insert implementation of post-merge
+ * @param item item to insert
  */
 void Tree234::InsertPostMerge(int item) {
     if (!root_) {
@@ -628,8 +632,8 @@ void Tree234::InsertPostMerge(int item) {
     }
 }
 
-/** 
- * @brief Insert item to tree 
+/**
+ * @brief Insert item to tree
  * @param item item to insert
  */
 void Tree234::Insert(int item) { InsertPreSplit(item); }
@@ -1104,10 +1108,10 @@ int Tree234::GetTreeMinItem(Node *tree) {
     return min;
 }
 
-/** 
+/**
  * @brief Print tree into a dot file
  * @param file_name output file name, if nullptr then use "out.dot" as default
- */ 
+ */
 void Tree234::Print(const char *file_name) {
     if (!file_name) {
         file_name = "out.dot";
@@ -1190,31 +1194,36 @@ void Tree234::Print(const char *file_name) {
     ofs.close();
 }
 
-/** 
+/**
  * @brief Print the tree to a dot file. You can convert it to picture with
  * graphviz
  * @param ofs output file stream to print to
  * @param node current node to print
- * @param parent_index current node's parent node index, this is used to draw the link from parent to current node
- * @param index current node's index of level order which is used to name the node in dot file
- * @param parent_child_index the index that current node in parent's children array, range in [0,4), help to locate the start position of the link between nodes
+ * @param parent_index current node's parent node index, this is used to draw
+ * the link from parent to current node
+ * @param index current node's index of level order which is used to name the
+ * node in dot file
+ * @param parent_child_index the index that current node in parent's children
+ * array, range in [0,4), help to locate the start position of the link between
+ * nodes
  */
-void Tree234::PrintNode(std::ofstream &ofs, Node *node, int parent_index, int index,
-                        int parent_child_index) {
+void Tree234::PrintNode(std::ofstream &ofs, Node *node, int parent_index,
+                        int index, int parent_child_index) {
     assert(node);
 
     switch (node->GetCount()) {
         case 1:
-            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0) << "\"]\n";
+            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0)
+                << "\"]\n";
             break;
         case 2:
-            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0) << " | <f1> " << node->GetItem(1) << "\"]\n";
+            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0)
+                << " | <f1> " << node->GetItem(1) << "\"]\n";
             break;
         case 3:
-            ofs << "node_" << index 
-               << " [label=\"<f0> " << node->GetItem(0) 
-               <<" | <f1> " << node->GetItem(1) 
-               << "| <f2> " << node->GetItem(2) << "\"]\n";
+            ofs << "node_" << index << " [label=\"<f0> " << node->GetItem(0)
+                << " | <f1> " << node->GetItem(1) << "| <f2> "
+                << node->GetItem(2) << "\"]\n";
             break;
 
         default:
@@ -1223,10 +1232,10 @@ void Tree234::PrintNode(std::ofstream &ofs, Node *node, int parent_index, int in
 
     // draw the edge
     if (parent_index >= 0) {
-        ofs << "node_" << parent_index 
-           << ":f" << (parent_child_index == 0 ? 0 : parent_child_index - 1) 
-           << ":" << (parent_child_index == 0 ? "sw" : "se")
-           << " -> node_" << index <<"\n";
+        ofs << "node_" << parent_index << ":f"
+            << (parent_child_index == 0 ? 0 : parent_child_index - 1) << ":"
+            << (parent_child_index == 0 ? "sw" : "se") << " -> node_" << index
+            << "\n";
     }
 }
 
@@ -1245,7 +1254,7 @@ static void test1() {
     tree.Print();
 }
 
-/** 
+/**
  * @brief simple test to insert continuous number of range [0, n), and print
  * the tree
  * @param n upper bound of the range number to insert
