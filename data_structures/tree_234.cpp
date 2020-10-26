@@ -28,7 +28,7 @@ class Node {
      * @brief Node constructor
      * @param item the first value we insert to the node
      */
-    explicit Node(int item)
+    explicit Node(int64_t item)
         : count(1),
           items({{item, 0, 0}}),
           children({{nullptr, nullptr, nullptr, nullptr}}) {}
@@ -37,7 +37,7 @@ class Node {
      * @brief Get the item count that current saved in the node
      * @return item count
      */
-    int GetCount() { return count; }
+    int8_t GetCount() { return count; }
 
     /**
      * @brief Set the item count of the node
@@ -48,7 +48,7 @@ class Node {
      *
      * @param c the count to set
      */
-    void SetCount(int c) { count = c; }
+    void SetCount(int8_t c) { count = c; }
 
     /**
      * @brief Check if node is a leaf
@@ -79,8 +79,8 @@ class Node {
      * @param item item to check
      * @return true if item in the node, otherwise false
      */
-    bool Contains(int item) {
-        for (int i = 0; i < count; i++) {
+    bool Contains(int64_t item) {
+        for (int8_t i = 0; i < count; i++) {
             if (item == items[i]) {
                 return true;
             }
@@ -94,8 +94,8 @@ class Node {
      * @return 0-based index of the item in the node, if not in the node, -1 is
      * returned
      */
-    int GetItemIndex(int item) {
-        for (int i = 0; i < count; i++) {
+    int8_t GetItemIndex(int64_t item) {
+        for (int8_t i = 0; i < count; i++) {
             if (items[i] == item) {
                 return i;
             }
@@ -107,27 +107,27 @@ class Node {
      * @brief Get max item (rightmost) in the current node
      * @return max item
      */
-    int GetMaxItem() { return items[count - 1]; }
+    int64_t GetMaxItem() { return items[count - 1]; }
 
     /**
      * @brief get min item (leftmost) in the current node
      * @return min item
      */
-    int GetMinItem() { return items[0]; }
+    int64_t GetMinItem() { return items[0]; }
 
     /**
      * @brief Get item of the \index index
      * @param index the item index to get
      * @return the item
      */
-    int GetItem(int index) { return items[index]; }
+    int64_t GetItem(int8_t index) { return items[index]; }
 
     /**
      * @brief Set item value at position of index
      * @param index the index of the item to set
      * @param new_item item value
      */
-    void SetItem(int index, int new_item) {
+    void SetItem(int8_t index, int64_t new_item) {
         assert(index >= 0 && index <= 2);
 
         items[index] = new_item;
@@ -157,7 +157,7 @@ class Node {
             return -1;
         }
 
-        int i = 0;
+        int8_t i = 0;
         for (i = 0; i < count; i++) {
             if (items[i] > item) {
                 break;
@@ -176,19 +176,19 @@ class Node {
      * @param to_left true indicate adding with_child to new item's left child,
      * otherwise to right child
      */
-    void InsertItemByIndex(int index, int item, Node *with_child,
+    void InsertItemByIndex(int8_t index, int64_t item, Node *with_child,
                            bool to_left = true) {
         assert(count < 3 && index >= 0 && index < 3);
 
-        for (int i = count - 1; i >= index; i--) {
+        for (int8_t i = count - 1; i >= index; i--) {
             items[i + 1] = items[i];
         }
 
         items[index] = item;
 
-        int start_index = to_left ? index : index + 1;
+        int8_t start_index = to_left ? index : index + 1;
 
-        for (int i = count; i >= start_index; i--) {
+        for (int8_t i = count; i >= start_index; i--) {
             children[i + 1] = children[i];
         }
 
@@ -204,14 +204,14 @@ class Node {
      * child, false keep the right child
      * @return the removed child pointer
      */
-    Node *RemoveItemByIndex(int index, bool keep_left) {
+    Node *RemoveItemByIndex(int8_t index, bool keep_left) {
         assert(index >= 0 && index < count);
         Node *removed_child = keep_left ? children[index + 1] : children[index];
-        for (int i = index; i < count - 1; i++) {
+        for (int8_t i = index; i < count - 1; i++) {
             items[i] = items[i + 1];
         }
 
-        for (int i = keep_left ? index + 1 : index; i < count; i++) {
+        for (int8_t i = keep_left ? index + 1 : index; i < count; i++) {
             children[i] = children[i + 1];
         }
 
@@ -224,8 +224,8 @@ class Node {
      * @param child child pointer of which to get the index
      * @return the index of child
      */
-    int GetChildIndex(Node *child) {
-        for (int i = 0; i < count + 1; i++) {
+    int8_t GetChildIndex(Node *child) {
+        for (int8_t i = 0; i < count + 1; i++) {
             if (children[i] == child) {
                 return i;
             }
@@ -239,14 +239,14 @@ class Node {
      * @param index index of child to get
      * @return the child pointer
      */
-    Node *GetChild(int index) { return children[index]; }
+    Node *GetChild(int8_t index) { return children[index]; }
 
     /**
      * @brief Set child pointer to the position of index
      * @param index children index
      * @param child pointer to set
      */
-    void SetChild(int index, Node *child) { children[index] = child; }
+    void SetChild(int8_t index, Node *child) { children[index] = child; }
 
     /**
      * @brief Get rightmose child of the current node
@@ -265,7 +265,7 @@ class Node {
      * @param item_index  index of the item whose left child to be get
      * @return left child of items[index]'s
      */
-    Node *GetItemLeftChild(int item_index) {
+    Node *GetItemLeftChild(int8_t item_index) {
         if (item_index < 0 || item_index > count - 1) {
             return nullptr;
         }
@@ -278,7 +278,7 @@ class Node {
      * @param item_index  index of the item whose right child to be get
      * @return right child of items[index]'s
      */
-    Node *GetItemRightChild(int item_index) {
+    Node *GetItemRightChild(int8_t item_index) {
         if (item_index < 0 || item_index > count - 1) {
             return nullptr;
         }
@@ -291,7 +291,7 @@ class Node {
      * @param item item to search
      * @return the next node that possibly contains item
      */
-    Node *GetNextPossibleChild(int item) {
+    Node *GetNextPossibleChild(int64_t item) {
         int i = 0;
         for (i = 0; i < count; i++) {
             if (items[i] > item) {
@@ -302,11 +302,11 @@ class Node {
     }
 
  private:
-    std::array<int, 3> items;  ///< store items
+    std::array<int64_t, 3> items;  ///< store items
 
     std::array<Node *, 4> children;  ///< store the children pointers
 
-    int count = 0;  ///< track the current item count
+    int8_t count = 0;  ///< track the current item count
 };
 
 /** @brief 2-3-4 tree class */
@@ -324,14 +324,14 @@ class Tree234 {
      * @brief Insert item to tree
      * @param item item to insert
      */
-    void Insert(int item);
+    void Insert(int64_t item);
 
     /**
      * @brief Remove item from tree
      * @param item item to remove
      * @return true if item found and removed, false otherwise
      */
-    bool Remove(int item);
+    bool Remove(int64_t item);
 
     /** @brief In-order traverse */
     void Traverse();
@@ -348,13 +348,13 @@ class Tree234 {
      * @brief A insert implementation of pre-split
      * @param item item to insert
      */
-    void InsertPreSplit(int item);
+    void InsertPreSplit(int64_t item);
 
     /**
      * @brief A insert implementation of post-merge
      * @param item item to insert
      */
-    void InsertPostMerge(int item);
+    void InsertPostMerge(int64_t item);
 
     /**
      * @brief A helper function used by post-merge insert
@@ -362,7 +362,7 @@ class Tree234 {
      * @param item item to insert
      * @return the node that split as the parent when overflow happen
      */
-    Node *Insert(Node *tree, int item);
+    Node *Insert(Node *tree, int64_t item);
 
     /**
      * @brief A helper function used during post-merge insert
@@ -404,14 +404,14 @@ class Tree234 {
      * @param tree the tree we will get item from
      * @return max item of the tree
      */
-    int GetTreeMaxItem(Node *tree);
+    int64_t GetTreeMaxItem(Node *tree);
 
     /**
      * @brief Get the min item of the tree
      * @param tree the tree we will get item from
      * @return min item of the tree
      */
-    int GetTreeMinItem(Node *tree);
+    int64_t GetTreeMinItem(Node *tree);
 
     /**
      * @brief A handy function to try if we can do a left rotate to the target
@@ -459,7 +459,7 @@ class Tree234 {
      * @param parent the parent node in this right rotate operation
      * @param index the pivot item index of this right rotate operation.
      */
-    void RightRotate(Node *parent, int index);
+    void RightRotate(Node *parent, int8_t index);
 
     /**
      * @brief Do the actual left rotate operation
@@ -472,7 +472,7 @@ class Tree234 {
      * @param parent the parent node in this right rotate operation
      * @param index the pivot item index of this right rotate operation.
      */
-    void LeftRotate(Node *parent, int index);
+    void LeftRotate(Node *parent, int8_t index);
 
     /**
      * @brief Main function implement the pre-merge remove operation
@@ -480,7 +480,7 @@ class Tree234 {
      * @param item item to remove
      * @return true if remove success, false otherwise
      * */
-    bool RemovePreMerge(Node *node, int item);
+    bool RemovePreMerge(Node *node, int64_t item);
 
     /**
      * @brief Merge the item at index of the parent node, and its left and right
@@ -495,7 +495,7 @@ class Tree234 {
      * merging
      * @return the merged 4-node
      */
-    Node *Merge(Node *parent, int index);
+    Node *Merge(Node *parent, int8_t index);
 
     /**
      * @brief Recursive release the tree
@@ -522,8 +522,8 @@ class Tree234 {
      * children array, range in [0,4), help to locate the start position of the
      * link between nodes
      */
-    void PrintNode(std::ofstream &ofs, Node *node, int parent_index, int index,
-                   int parent_child_index);
+    void PrintNode(std::ofstream &ofs, Node *node, int64_t parent_index,
+                   int64_t index, int8_t parent_child_index);
 
     Node *root_{nullptr};  ///< root node of the tree
 };
@@ -538,7 +538,7 @@ void Tree234::DeleteNode(Node *tree) {
     if (!tree) {
         return;
     }
-    for (int i = 0; i <= tree->GetCount(); i++) {
+    for (int8_t i = 0; i <= tree->GetCount(); i++) {
         DeleteNode(tree->GetChild(i));
     }
 
@@ -559,7 +559,7 @@ void Tree234::Traverse(Node *node) {
         return;
     }
 
-    int i = 0;
+    int8_t i = 0;
     for (i = 0; i < node->GetCount(); i++) {
         Traverse(node->GetChild(i));
         std::cout << node->GetItem(i) << ", ";
@@ -572,7 +572,7 @@ void Tree234::Traverse(Node *node) {
  * @brief A insert implementation of pre-split
  * @param item item to insert
  */
-void Tree234::InsertPreSplit(int item) {
+void Tree234::InsertPreSplit(int64_t item) {
     if (!root_) {
         root_ = new Node(item);
         return;
@@ -626,7 +626,7 @@ void Tree234::InsertPreSplit(int item) {
  * @brief A insert implementation of post-merge
  * @param item item to insert
  */
-void Tree234::InsertPostMerge(int item) {
+void Tree234::InsertPostMerge(int64_t item) {
     if (!root_) {
         root_ = new Node(item);
         return;
@@ -644,7 +644,7 @@ void Tree234::InsertPostMerge(int item) {
  * @brief Insert item to tree
  * @param item item to insert
  */
-void Tree234::Insert(int item) { InsertPreSplit(item); }
+void Tree234::Insert(int64_t item) { InsertPreSplit(item); }
 
 /**
  * @brief A helper function used by post-merge insert
@@ -652,7 +652,7 @@ void Tree234::Insert(int item) { InsertPreSplit(item); }
  * @param item item to insert
  * @return the node that split as the parent when overflow happen
  */
-Node *Tree234::Insert(Node *tree, int item) {
+Node *Tree234::Insert(Node *tree, int64_t item) {
     assert(tree != nullptr);
 
     std::unique_ptr<Node> split_node;
@@ -722,7 +722,7 @@ Node *Tree234::MergeNode(Node *dst_node, Node *node) {
 void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
     assert(dst_node && node && !dst_node->IsFull() && node->Is2Node());
 
-    int i = dst_node->InsertItem(node->GetItem(0));
+    int8_t i = dst_node->InsertItem(node->GetItem(0));
 
     dst_node->SetChild(i, node->GetChild(0));
     dst_node->SetChild(i + 1, node->GetChild(1));
@@ -803,7 +803,7 @@ bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
  * requirements are not fulfilled.
  */
 bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
-    int to_child_index = parent->GetChildIndex(to_child);
+    int8_t to_child_index = parent->GetChildIndex(to_child);
 
     // child is left most, can not do right rotate to it
     if (to_child_index <= 0) {
@@ -834,7 +834,7 @@ bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
  * @param parent the parent node in this right rotate operation
  * @param index the pivot item index of this right rotate operation.
  */
-void Tree234::RightRotate(Node *parent, int index) {
+void Tree234::RightRotate(Node *parent, int8_t index) {
     Node *left = parent->GetItemLeftChild(index);
     Node *right = parent->GetItemRightChild(index);
 
@@ -858,7 +858,7 @@ void Tree234::RightRotate(Node *parent, int index) {
  * @param parent the parent node in this right rotate operation
  * @param index the pivot item index of this right rotate operation.
  */
-void Tree234::LeftRotate(Node *parent, int index) {
+void Tree234::LeftRotate(Node *parent, int8_t index) {
     Node *left = parent->GetItemLeftChild(index);
     Node *right = parent->GetItemRightChild(index);
 
@@ -884,7 +884,7 @@ void Tree234::LeftRotate(Node *parent, int index) {
  * merging
  * @return the merged 4-node
  */
-Node *Tree234::Merge(Node *parent, int index) {
+Node *Tree234::Merge(Node *parent, int8_t index) {
     assert(parent);
 
     // bool is_parent_2node = parent->Is2Node();
@@ -894,7 +894,7 @@ Node *Tree234::Merge(Node *parent, int index) {
 
     assert(left_child->Is2Node() && right_child->Is2Node());
 
-    int item = parent->GetItem(index);
+    int64_t item = parent->GetItem(index);
 
     // 1. merge parent's item and right child to left child
     left_child->SetItem(1, item);
@@ -918,7 +918,7 @@ Node *Tree234::Merge(Node *parent, int index) {
  * @param item item to remove
  * @return true if item found and removed, false otherwise
  */
-bool Tree234::Remove(int item) { return RemovePreMerge(root_, item); }
+bool Tree234::Remove(int64_t item) { return RemovePreMerge(root_, item); }
 
 /**
  * @brief Main function implement the pre-merge remove operation
@@ -926,7 +926,7 @@ bool Tree234::Remove(int item) { return RemovePreMerge(root_, item); }
  * @param item item to remove
  * @return true if remove success, false otherwise
  */
-bool Tree234::RemovePreMerge(Node *node, int item) {
+bool Tree234::RemovePreMerge(Node *node, int64_t item) {
     while (node) {
         if (node->IsLeaf()) {
             if (node->Contains(item)) {
@@ -944,7 +944,7 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
 
         // node is internal
         if (node->Contains(item)) {
-            int index = node->GetItemIndex(item);
+            int8_t index = node->GetItemIndex(item);
 
             // Here is important!!! What we do next depend on its children's
             // state. Why?
@@ -1034,7 +1034,7 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
             right_child = node->GetItemRightChild(index);
 
             if (left_child->Is34Node()) {
-                int predecessor_item = GetTreeMaxItem(left_child);
+                int64_t predecessor_item = GetTreeMaxItem(left_child);
                 node->SetItem(node->GetItemIndex(item), predecessor_item);
 
                 node = left_child;
@@ -1043,7 +1043,7 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
             }
 
             if (right_child->Is34Node()) {
-                int successor_item = GetTreeMinItem(right_child);
+                int64_t successor_item = GetTreeMinItem(right_child);
                 node->SetItem(node->GetItemIndex(item), successor_item);
                 node = right_child;
                 item = successor_item;
@@ -1070,7 +1070,7 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
 
         // get here means both left sibling and right sibling of next_node is
         // 2-node, so we do merge
-        int child_index = node->GetChildIndex(next_node);
+        int8_t child_index = node->GetChildIndex(next_node);
         if (child_index > 0) {
             node = Merge(node, child_index - 1);
         } else {
@@ -1087,9 +1087,9 @@ bool Tree234::RemovePreMerge(Node *node, int item) {
  * @param tree the tree we will get item from
  * @return max item of the tree
  */
-int Tree234::GetTreeMaxItem(Node *tree) {
+int64_t Tree234::GetTreeMaxItem(Node *tree) {
     assert(tree);
-    int max = 0;
+    int64_t max = 0;
 
     while (tree) {
         max = tree->GetMaxItem();
@@ -1104,9 +1104,9 @@ int Tree234::GetTreeMaxItem(Node *tree) {
  * @param tree the tree we will get item from
  * @return min item of the tree
  */
-int Tree234::GetTreeMinItem(Node *tree) {
+int64_t Tree234::GetTreeMinItem(Node *tree) {
     assert(tree);
-    int min = 0;
+    int64_t min = 0;
 
     while (tree) {
         min = tree->GetMinItem();
@@ -1136,14 +1136,14 @@ void Tree234::Print(const char *file_name) {
     ofs << "digraph G {\n";
     ofs << "node [shape=record]\n";
 
-    int index = 0;
+    int64_t index = 0;
 
     /** @brief This is a helper structure to do a level order traversal to print
      * the tree. */
     struct NodeInfo {
-        Node *node;  ///< tree node
-        int index;   ///< node index of level order that used when draw the link
-                     ///< between child and parent
+        Node *node;     ///< tree node
+        int64_t index;  ///< node index of level order that used when draw the
+                        ///< link between child and parent
     };
 
     std::queue<NodeInfo> q;
@@ -1215,8 +1215,8 @@ void Tree234::Print(const char *file_name) {
  * array, range in [0,4), help to locate the start position of the link between
  * nodes
  */
-void Tree234::PrintNode(std::ofstream &ofs, Node *node, int parent_index,
-                        int index, int parent_child_index) {
+void Tree234::PrintNode(std::ofstream &ofs, Node *node, int64_t parent_index,
+                        int64_t index, int8_t parent_child_index) {
     assert(node);
 
     switch (node->GetCount()) {
@@ -1267,10 +1267,10 @@ static void test1() {
  * the tree
  * @param n upper bound of the range number to insert
  */
-static void test2(int n) {
+static void test2(int64_t n) {
     Tree234 tree;
 
-    for (int i = 0; i < n; i++) {
+    for (int64_t i = 0; i < n; i++) {
         tree.Insert(i);
     }
 
