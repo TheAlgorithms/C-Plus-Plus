@@ -1,8 +1,16 @@
 /**
  * @file
  * @brief A demo 2-3-4 tree implementation
- * @details Only implement some basic and complicated operations. Other
- * operations should be easy to added.
+ * @details
+ * 2–3–4 tree is a self-balancing data structure that is an isometry of
+ * red–black trees. Though we seldom use them in practice, we study them
+ * to understand the theory behind Red-Black tree. Please read following
+ * links for more infomation.
+ * [2–3–4 tree](https://en.wikipedia.org/wiki/2%E2%80%933%E2%80%934_tree)
+ * [2-3-4 Trees: A Visual
+Introduction](https://www.educative.io/page/5689413791121408/80001)
+ * We Only implement some basic and complicated operations in this demo.
+ * Other operations should be easy to be added.
  * @author [liuhuan](https://github.com/fedom)
  */
 #include <array>     /// for std::array
