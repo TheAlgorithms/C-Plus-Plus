@@ -12,9 +12,14 @@
  * @author [Ravishankar Joshi](https://github.com/ravibitsgoa)
  */
 
-#include <cassert>
+#include <cassert>   /// for assert
 #include <iostream>  /// for io operations
 
+/**
+ * @namespace bit_manipulation
+ * @brief Bit Manipulation algorithms
+ */
+namespace bit_manipulation {
 /**
  * This function returns the number of set bits in the given number.
  * @param value the number of which we want to count the number of set bits.
@@ -38,15 +43,16 @@ uint64_t bitCount(uint64_t value) {
  * @returns the number of bits differing between the two integers.
  */
 uint64_t hamming_distance(uint64_t a, uint64_t b) { return bitCount(a ^ b); }
+}  // namespace bit_manipulation
 
 /**
  * @brief Function to the test hamming distance.
  * @returns void
  */
 static void test() {
-    assert(hamming_distance(11, 2) == 2);
-    assert(hamming_distance(2, 0) == 1);
-    assert(hamming_distance(11, 0) == 3);
+    assert(bit_manipulation::hamming_distance(11, 2) == 2);
+    assert(bit_manipulation::hamming_distance(2, 0) == 1);
+    assert(bit_manipulation::hamming_distance(11, 0) == 3);
 }
 
 /**
@@ -54,10 +60,10 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // execute the tests
     uint64_t a = 11;  // 1011 in binary
     uint64_t b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
-              << hamming_distance(a, b) << std::endl;
+              << bit_manipulation::hamming_distance(a, b) << std::endl;
 }
