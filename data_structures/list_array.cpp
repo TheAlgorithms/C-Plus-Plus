@@ -1,6 +1,6 @@
 /**
  * @file list_array.cpp
- * @brief Implementation of list_array
+ * @brief [Dynamic Array](https://en.wikipedia.org/wiki/Dynamic_array)
  *
  * @details
  * The list_array is the implementation of list represented using array.
@@ -9,18 +9,18 @@
  * ### Algorithm
  * It implements various method like insert, sort, search etc. efficiently.
  * You can select the operation and methods will do the rest work for you.
- * You can insert element, sort them in order, search efficiently, delete values and print the list.
+ * You can insert element, sort them in order, search efficiently, delete values and pruint64_t the list.
  */
-#include <iostream> // for io operations
-#include <array> // for std::array
-#include <cassert> // for assert
+#include <iostream> /// for io operations
+#include <array>   /// for std::array
+#include <cassert> /// for assert
 
 /**
  * @brief Structure of List with supporting methods.
  */
 struct list {
-    std::array<int, 50> data{}; // Array that implement list
-    int top = 0; // Pointer to the last element
+    std::array<uint64_t, 50> data{}; // Array that implement list
+    uint64_t top = 0; // Pointer to the last element
     bool isSorted = false; // indicator whether list is sorted or not
     /**
      * @brief Search an element in the list using binaraySearch.
@@ -30,7 +30,7 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int BinarySearch(const std::array<int, 50>& dataArr, const uint64_t& first, const uint64_t& last, const int& val) {
+    uint64_t BinarySearch(const std::array<uint64_t, 50>& dataArr, const uint64_t& first, const uint64_t& last, const uint64_t& val) {
         // If both pointer cross each other means no element present in the list which is equal to the val
         if (last < first) {
             return -1;
@@ -55,9 +55,9 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int LinearSearch(const std::array<int, 50>& dataArr, const int& val) const {
+    uint64_t LinearSearch(const std::array<uint64_t, 50>& dataArr, const uint64_t& val) const {
         // Going through each element in the list
-        for (int i = 0; i < top; i++) {
+        for (uint64_t i = 0; i < top; i++) {
             if (dataArr[i] == val) {
                 return i; // element found at ith index
             }
@@ -70,8 +70,8 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    int search(const int& val) {
-        int pos; // pos variable to store index value of element.
+    uint64_t search(const uint64_t& val) {
+        uint64_t pos; // pos variable to store index value of element.
         // if list is sorted, binary search works efficiently else linear search is the only option
         if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, val);
@@ -94,9 +94,9 @@ struct list {
      */
     void sort() {
         //Going through each element in the list
-        for (int i = 0; i < top; i++) {
-            int min_idx = i; // Initialize the min variable
-            for (int j = i + 1; j < top; j++) {
+        for (uint64_t i = 0; i < top; i++) {
+            uint64_t min_idx = i; // Initialize the min variable
+            for (uint64_t j = i + 1; j < top; j++) {
                 // check whether any element less than current min value
                 if (data[j] < data[min_idx]) {
                     min_idx = j; // update index accordingly
@@ -114,7 +114,7 @@ struct list {
      * @param val element that will be inserted
      * @returns void
      */
-    void insert(const int& val) {
+    void insert(const uint64_t& val) {
         // overflow check
         if (top == 49) {
             std::cout << "\nOverflow";
@@ -126,9 +126,9 @@ struct list {
             data[top] = val;
             top++;
         } else {
-            int pos = 0; // Initialize the index variable
+            uint64_t pos = 0; // Initialize the index variable
             // Going through each element and find correct position for element
-            for (int i = 0; i < top - 1; i++) {
+            for (uint64_t i = 0; i < top - 1; i++) {
                 // check for the correct position
                 if (data[i] <= val && val <= data[i + 1]) {
                     pos = i + 1; // assign correct pos to the index var
@@ -140,7 +140,7 @@ struct list {
                 pos = top - 1;
             }
             // shift all element to make a room for new element
-            for (int i = top; i > pos; i--) {
+            for (uint64_t i = top; i > pos; i--) {
                 data[i] = data[i - 1];
             }
             top++; // Increment the value of top.
@@ -153,8 +153,8 @@ struct list {
      * @param val element that will be removed
      * @returns void
      */
-    void remove(const int& val) {
-        int pos = search(val); // search the index of the value
+    void remove(const uint64_t& val) {
+        uint64_t pos = search(val); // search the index of the value
         // if search returns -1, element does not present in the list
         if (pos == -1) {
             std::cout << "\n Element does not present in the list ";
@@ -162,7 +162,7 @@ struct list {
         }
         std::cout << "\n" << data[pos] << " deleted"; // print the appropriate message
         // shift all the element 1 left to fill vacant space
-        for (int i = pos; i < top; i++) {
+        for (uint64_t i = pos; i < top; i++) {
             data[i] = data[i + 1];
         }
         top--; // decrement the top variable to maintain last index
@@ -175,7 +175,7 @@ struct list {
     void show() {
         // Going through each element in the list
         std::cout << '\n';
-        for (int i = 0; i < top; i++) {
+        for (uint64_t i = 0; i < top; i++) {
             std::cout << data[i] << " "; // print the element
         }
     }
