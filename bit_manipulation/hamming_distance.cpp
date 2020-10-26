@@ -1,5 +1,5 @@
 /**
- * @file hamming_distance.cpp
+ * @file
  * @brief Returns the [Hamming
  * distance](https://en.wikipedia.org/wiki/Hamming_distance) between two
  * integers
