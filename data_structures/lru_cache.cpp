@@ -97,13 +97,13 @@ class LRUCache {
      * Accepts one parameter, the key whose value needs to be returned.
      * If key requested is not present return -1.
      * @param key value for this key is to be returned.
-     * @returns NOTHING
+     * @returns the repective value for requested key. If key is not found then it returns -1.
      */
     uint64_t get(uint64_t key) {
         auto found = addr.find(key);
 
         if (found == addr.end()) {
-            return -1;
+            return -1;  // Same as 18446744073709551615 because of dtype uint64_t.
         }
 
         if (found->second != this->root) {
