@@ -61,18 +61,11 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
     delete[] profit;
     return ans;  // returning maximum profit
 }
-}  // namespace cut_rod
-}  // namespace dynamic_programming
-
-/**
- * @brief Function to test above algorithm
- * @returns void
- */
 
 
 
 template <size_t T>
-bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const int n){
+bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const uint64_t &n){
 
     /*
 
@@ -108,7 +101,18 @@ CR(0)
         }
 
         return true;
-}
+}// checks whether all the prices are same or not
+
+
+}  // namespace cut_rod
+}  // namespace dynamic_programming
+
+/**
+ * @brief Function to test above algorithm
+ * @returns void
+ */
+
+
 
 
 static void test() {
@@ -119,7 +123,7 @@ static void test() {
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price1, n1);
     const int expected_max_profit1 = 22;
 
-    if( WhatIfAllPricesAreSame(price1,n1)){
+    if(dynamic_programming::cut_rod::WhatIfAllPricesAreSame(price1,n1)){
         std::cout << "Maximum profit with " << n1 << " inch road is " <<(n1)*price1[0]
               << std::endl;
     }
