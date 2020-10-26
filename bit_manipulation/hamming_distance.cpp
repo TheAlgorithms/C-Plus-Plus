@@ -60,7 +60,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // execute the tests
+    test();           // execute the tests
     uint64_t a = 11;  // 1011 in binary
     uint64_t b = 2;   // 0010 in binary
 
