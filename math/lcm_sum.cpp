@@ -25,7 +25,7 @@ namespace math {
      * @param num input number
      * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
      */
-    uint64_t lcmSum(uint16_t num) {
+    uint64_t lcmSum(const uint16_t& num) {
    
         uint64_t i=0, j=0;
         std::vector <uint64_t> eulerTotient(num+1);
