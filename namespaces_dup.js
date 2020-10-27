@@ -21,6 +21,7 @@ var namespaces_dup =
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", null ],
     [ "linked_list", "d3/db0/namespacelinked__list.html", null ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", null ],
+    [ "math", "dd/d47/namespacemath.html", null ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
     [ "morse", "d6/d8d/namespacemorse.html", null ],
