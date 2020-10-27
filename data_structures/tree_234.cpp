@@ -607,8 +607,6 @@ void Tree234::InsertPreSplit(int64_t item) {
 
             Node *cur_node = nullptr;
 
-            // node will be released in SplitNode, so we save next_node
-            // beforehand
             if (item < node->GetItem(0)) {
                 cur_node = node->GetChild(0);
             } else {
