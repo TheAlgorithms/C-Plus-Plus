@@ -1,6 +1,6 @@
 /**  
  * @file   
- * @brief [Gram Schmidt Orthogonalisation Process] (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
  * @details
  * Takes the input of Linearly Independent Vectors,
@@ -11,7 +11,7 @@
  * Take projection of second input vector on the first vector of Orthogonal vector 
  * and subtract it from the 2nd LI vector.
  * Take projection of third vector on the second vector of Othogonal vectors and subtract it from the 3rd LI vector.
- * Keep repeating hte above process until all the vectors in the given input array are exhausted. 
+ * Keep repeating the above process until all the vectors in the given input array are exhausted. 
  *
  * For Example:
  * In R2, 
@@ -52,7 +52,7 @@ namespace gram_schmidt {
  */
 double dot_product(const std::array<double, 10>& x, const std::array<double, 10>& y, const int& c) {
   double sum = 0;
-  for (int i = 0; i < c; i++) {
+  for (int i = 0; i < c; ++i) {
     sum += x[i] * y[i];
   }
   return sum;
@@ -86,12 +86,12 @@ double projection(const std::array<double, 10>& x,const std::array<double, 10>& 
  * @returns void
  */
 void display(const int& r,const int& c,const std::array<std::array<double, 10>, 20>& B) {
-  for (int i = 0; i < r; i++) {
+  for (int i = 0; i < r; ++i) {
     std::cout << "Vector " << i + 1 << ": ";
     for (int j = 0; j < c; j++) {
       std::cout << B[i][j] << " ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
 }
 
@@ -109,7 +109,7 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
   if (c < r) {   /// we check whether appropriate dimensions are given or not.
     std::cout
         << "Dimension of vector is less than number of vector, hence \n first "
-        << c << " vectors are orthogonalised" << std::endl;
+        << c << " vectors are orthogonalised\n";
     r = c;
   }
 
@@ -122,7 +122,7 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
 
     else {
       std::array<double, 10> all_projection{};  ///array to store projections
-      for (int i = 0; i < c; i++) {
+      for (int i = 0; i < c; ++i) {
         all_projection[i] = 0;  ///First initialised to zero
       }
 
@@ -131,14 +131,14 @@ void gram_schmidt(int r,const int& c,const std::array<std::array<double, 10>, 20
         std::array<double, 10> temp{}; ///to store previous projected array
         double factor; ///to store the factor by which the previous array will change 
         factor = projection(A[k - 1], B[l - 1], c);
-        for(int i = 0; i < c; i++)
+        for(int i = 0; i < c; ++i)
          temp[i] = B[l - 1][i] * factor;  ///projected array created
-        for (int j = 0; j < c; j++) {
+        for (int j = 0; j < c; ++j) {
           all_projection[j] = all_projection[j] + temp[j];   ///we take the projection with all the previous vector and add them.
         }
         l++;
       }
-      for (int i = 0; i < c; i++) {
+      for (int i = 0; i < c; ++i) {
         B[k - 1][i] = A[k - 1][i] - all_projection[i];  ///subtract total projection vector from the input vector
       }
     }
@@ -159,51 +159,51 @@ static void test() {
        double dot1 = 0;
  linear_algebra::gram_schmidt::gram_schmidt(3, 4, a1, b1);
   int flag = 1;
-  for (int i = 0; i < 2; i++)
-    for (int j = i + 1; j < 3; j++) {
+  for (int i = 0; i < 2; ++i)
+    for (int j = i + 1; j < 3; ++j) {
       dot1 = fabs(linear_algebra::gram_schmidt::dot_product(b1[i], b1[j], 4));
       if (dot1 > 0.1) {
         flag = 0;
         break;
       }
     }
-  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent\n";
   assert(flag == 1);
-  std::cout << "Passed Test Case 1 " << std::endl;
+  std::cout << "Passed Test Case 1\n ";
 
   std::array<std::array<double, 10>, 20> a2 = {{{3, 1}, {2, 2}}};
   std::array<std::array<double, 10>, 20> b2 = {{0}};
   double dot2 = 0;
   linear_algebra::gram_schmidt::gram_schmidt(2, 2, a2, b2);
   flag = 1;
-  for (int i = 0; i < 1; i++)
-    for (int j = i + 1; j < 2; j++) {
+  for (int i = 0; i < 1; ++i)
+    for (int j = i + 1; j < 2; ++j) {
       dot2 = fabs(linear_algebra::gram_schmidt::dot_product(b2[i], b2[j], 2));
       if (dot2 > 0.1) {
         flag = 0;
         break;
       }
     }
-  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent\n";
   assert(flag == 1);
-  std::cout << "Passed Test Case 2 " << std::endl;
+  std::cout << "Passed Test Case 2\n";
 
   std::array<std::array<double, 10>, 20> a3 = {{{1, 2, 2}, {-4, 3, 2}}};
   std::array<std::array<double, 10>, 20> b3 = {{0}};
   double dot3 = 0;
   linear_algebra::gram_schmidt::gram_schmidt(2, 3, a3, b3);
   flag = 1;
-  for (int i = 0; i < 1; i++)
-    for (int j = i + 1; j < 2; j++) {
+  for (int i = 0; i < 1; ++i)
+    for (int j = i + 1; j < 2; ++j) {
       dot3 = fabs(linear_algebra::gram_schmidt::dot_product(b3[i], b3[j], 3));
       if (dot3 > 0.1) {
         flag = 0;
         break;
       }
     }
-  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent\n" ;
   assert(flag == 1);
-  std::cout << "Passed Test Case 3 " << std::endl;
+  std::cout << "Passed Test Case 3\n";
 }
 
 /**
@@ -213,9 +213,9 @@ static void test() {
 int main() {
   int r=0, c=0;
   test(); // perform self tests
-  std::cout << "Enter the dimension of your vectors" << std::endl;
+  std::cout << "Enter the dimension of your vectors\n";
   std::cin >> c;
-  std::cout << "Enter the number of vectors you will enter " << std::endl;
+  std::cout << "Enter the number of vectors you will enter\n";
   std::cin >> r;
 
   std::array<std::array<double, 10>, 20>
@@ -224,20 +224,20 @@ int main() {
       {0}};  /// a 2-D array for storing orthogonalised vectors
   /// storing vectors in array A
   for (int i = 0; i < r; i++) {
-    std::cout << "Enter vector " << i + 1 << std::endl;  ///Input of vectors is taken
+    std::cout << "Enter vector " << i + 1 <<'\n';  ///Input of vectors is taken
     for (int j = 0; j < c; j++) {
       std::cout << "Value " << j + 1 << "th of vector: ";
       std::cin >> A[i][j];
     }
-    std::cout << std::endl;
+    std::cout <<'\n';
   }
 
   linear_algebra::gram_schmidt::gram_schmidt(r, c, A, B);
 
   double dot = 0;
   int flag = 1; ///To check whether vectors are orthogonal or  not
-  for (int i = 0; i < r - 1; i++) {
-    for (int j = i + 1; j < r; j++) {
+  for (int i = 0; i < r - 1; ++i) {
+    for (int j = i + 1; j < r; ++j) {
       dot = fabs(linear_algebra::gram_schmidt::dot_product(B[i], B[j], c));
       if (dot > 0.1) /// take make the process numerically stable, upper bound for the dot product take 0.1
       {
@@ -246,6 +246,6 @@ int main() {
       }
     }
   }
-  if (flag == 0) std::cout << "Vectors are linearly dependent " << std::endl;
+  if (flag == 0) std::cout << "Vectors are linearly dependent\n"; 
   return 0;
 }
