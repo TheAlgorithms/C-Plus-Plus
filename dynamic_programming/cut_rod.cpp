@@ -41,7 +41,7 @@ namespace cut_rod {
  * @return maximum profit obtainable for @param n inch rod.
  */
 template <size_t T>
-int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
+int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
     int *profit =
         new int[n + 1];  // profit[i] will hold maximum profit for i inch rod
 
