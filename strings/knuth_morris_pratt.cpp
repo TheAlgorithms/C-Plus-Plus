@@ -23,8 +23,8 @@
  */
 namespace string_search {
 /**
- * Generate the partial match table aka failure function(also called LPS (longest proper prefix which is also suffix )) for a pattern to
- * search.
+ * Generate the partial match table aka failure function(also called LPS (longest proper prefix which is also suffix )) for a pattern to search.
+ * For more understanding on how to make partial match table (LPS vector), visit https://leetcode.com/problems/implement-strstr/discuss/13160/detailed-explanation-on-building-up-lps-for-kmp-algorithm 
  * \param[in] pattern text for which to create the partial match table
  * \returns the partial match table as a vector array
  */
