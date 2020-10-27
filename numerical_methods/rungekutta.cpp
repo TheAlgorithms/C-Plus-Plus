@@ -17,7 +17,7 @@
  * There can be many such equations 
  * **/
 #include <iostream> /// for io operations
-#include<vector> ///for using the vector container
+#include <vector>   ///for using the vector container
 #include <cassert>  /// asserting the test functions
 
 /**
@@ -53,7 +53,7 @@ namespace runge_kutta {
  * @param h is the step value 
  * @returns the value of y at thr required value of x from the initial conditions
  */
-double rungeKutta(double init_x, double init_y, double x, double h) 
+double rungeKutta(double init_x, const double &init_y, const double &x, const double &h) 
 { 
 	 
 	  // Count number of iterations 
@@ -65,7 +65,7 @@ double rungeKutta(double init_x, double init_y, double x, double h)
 	  // k1,k2,k3,k4 are the Runge Kutta variables 
 	  // used for calculation of y at each iteration
 	  
-	 int n = static_cast<int>((x - init_x) / h); 
+	 auto n = static_cast<uint64_t>((x - init_x) / h); 
 	  // used a vector container for the variables
 	 std::vector<double> k(4,0.0);
     
