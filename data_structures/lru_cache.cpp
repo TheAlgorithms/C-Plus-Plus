@@ -46,7 +46,7 @@ class node {
      * @param val : Value
      * @returns NOTHING
      */
-    node(uint64_t key, uint64_t val) {
+    node(const uint64_t& key, const uint64_t& val) {
         this->key = key;
         this->val = val;
         this->next = this->prev = nullptr;
@@ -67,7 +67,7 @@ class node {
 class LRUCache {
  public:
     node *root;
-    std::unordered_map<int, node *> addr;
+    std::unordered_map<uint64_t, node *> addr;
 
     /**
      * Constructor Function
@@ -99,7 +99,7 @@ class LRUCache {
      * @param key value for this key is to be returned.
      * @returns the repective value for requested key. If key is not found then it returns -1.
      */
-    uint64_t get(uint64_t key) {
+    uint64_t get(const uint64_t& key) {
         auto found = addr.find(key);
 
         if (found == addr.end()) {
@@ -134,7 +134,7 @@ class LRUCache {
      * @param value value for the respective key to be stored.
      * @returns NOTHING
      */
-    void put(uint64_t key, const uint64_t &value) {
+    void put(const uint64_t &key, const uint64_t &value) {
         if (addr.find(key) == addr.end()) {
             if (this->root->key != -1 && this->root->val != -1) {
                 addr.erase(this->root->key);
