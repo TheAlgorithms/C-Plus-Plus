@@ -34,7 +34,7 @@ bool magic_number(const uint64_t &n) {
         return false;
     }
     // result stores the modulus of @param n with 9
-    int result = n % 9;
+    uint64_t result = n % 9;
     // if result is 1 then the number is a magic number else not
     if (result == 1) {
         return true;
