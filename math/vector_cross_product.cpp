@@ -91,7 +91,7 @@ namespace math {
  * @brief test function.
  * @details test the cross() and the mag() functions.
  */
-void test() {
+static void test() {
 	/// Tests the cross() function.
 	std::array<double, 3> t_vec = math::vector_cross::cross({1, 2, 3}, {4, 5, 6});
 	assert(t_vec[0] == -3 && t_vec[1] == 6 && t_vec[2] == -3);
