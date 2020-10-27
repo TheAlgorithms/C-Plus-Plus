@@ -21,6 +21,16 @@ Introduction](https://www.educative.io/page/5689413791121408/80001)
 #include <queue>     /// for std::queue
 #include <string>    /// for std::to_string
 
+/**
+ * @namespace data_structures
+ * @brief Algorithms with data structures
+ */
+namespace data_structures {
+/**
+ * @namespace tree_234
+ * @brief Functions for [2–3–4 tree](https://en.wikipedia.org/wiki/2%E2%80%933%E2%80%934_tree)
+ */
+namespace tree_234 {
 /** @brief 2-3-4 tree node class */
 class Node {
  public:
@@ -1246,12 +1256,15 @@ void Tree234::PrintNode(std::ofstream &ofs, Node *node, int64_t parent_index,
             << "\n";
     }
 }
+}  // namespace tree_234
+}  // namespace data_structures
+
 
 /** @brief simple test to insert a given array and delete some item, and print
  * the tree*/
 static void test1() {
-    std::array<int, 13> arr = {3, 1, 5, 4, 2, 9, 10, 8, 7, 6, 16, 13, 14};
-    Tree234 tree;
+    std::array<int16_t, 13> arr = {3, 1, 5, 4, 2, 9, 10, 8, 7, 6, 16, 13, 14};
+    data_structures::tree_234::Tree234 tree;
 
     for (auto i : arr) {
         tree.Insert(i);
@@ -1268,7 +1281,7 @@ static void test1() {
  * @param n upper bound of the range number to insert
  */
 static void test2(int64_t n) {
-    Tree234 tree;
+    data_structures::tree_234::Tree234 tree;
 
     for (int64_t i = 0; i < n; i++) {
         tree.Insert(i);
