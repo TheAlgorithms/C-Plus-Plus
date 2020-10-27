@@ -104,10 +104,15 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 Functions</h2></td></tr>
 <tr class="memitem:a04065193d190d605e1f0d0d93a87e244"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244">lcmSum</a> (const uint16_t &amp;num)</td></tr>
 <tr class="separator:a04065193d190d605e1f0d0d93a87e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0">magic_number</a> (const uint64_t &amp;n)</td></tr>
+<tr class="separator:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a> </p>
+<p>for io operations</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for assert</p>
+<p>Mathematical algorithms</p>
+<p>for assert</p>
 <p>Mathematical algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a04065193d190d605e1f0d0d93a87e244"></a>
@@ -162,6 +167,44 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> ((sumOfEulerTotient[num] + 1 ) * num) / 2;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8d8e81a7cd59644b311ef9adb268f5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8e81a7cd59644b311ef9adb268f5f0">&#9670;&nbsp;</a></span>magic_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool math::magic_number </td>
+          <td>(</td>
+          <td class="paramtype">const uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to check if the given number is magic number or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>number to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if number is a magic number, returns true, else false. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                     {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (n &lt;= 0) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// result stores the modulus of @param n with 9</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    uint64_t result = n % 9;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// if result is 1 then the number is a magic number else not</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (result == 1) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
