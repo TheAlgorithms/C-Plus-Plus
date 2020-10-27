@@ -29,7 +29,7 @@ namespace math {
  * @param n number to be checked.
  * @return if number is a magic number, returns true, else false.
  */
-bool magic_number(int n) {
+bool magic_number(const uint64_t &n) {
     if (n <= 0) {
         return false;
     }
