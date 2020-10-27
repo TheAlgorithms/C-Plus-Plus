@@ -38,7 +38,7 @@
 namespace linear_algebra {
 /**
  * @namespace gram_schmidt
- * @brief Functions for [Gram Schmidt Orthogonalisation Process] (https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
+ * @brief Functions for [Gram Schmidt Orthogonalisation Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  */
 namespace gram_schmidt {
 /**
