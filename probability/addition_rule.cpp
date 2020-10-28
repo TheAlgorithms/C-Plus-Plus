@@ -2,7 +2,7 @@
  * @file
  * @brief Addition rule of probabilities
  */
-#include <iostream>
+#include <bits/stdc++.h>
 
 /**
  * calculates the probability of the independent events A or B for independent
