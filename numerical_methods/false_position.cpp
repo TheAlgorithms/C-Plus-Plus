@@ -41,7 +41,7 @@ namespace false_position {
 * @param x value for which we have to find value of f(x).
 * @return value of f(x) for given x.
 */  
-static double eq(double x) {
+static float eq(float x) {
     return (x*x-x);  // original equation
 }
 
@@ -51,8 +51,8 @@ static double eq(double x) {
   @param y1,y2 values of function at x1, x2 espectively.
 * @return root of the equation in the given interval.
 */  
-static double regula_falsi(double x1,double x2,double y1,double y2){
-    double diff = x1-x2;
+static float regula_falsi(float x1,float x2,float y1,float y2){
+    float diff = x1-x2;
     if(diff<0){
         diff= (-1)*diff;
     }
@@ -70,7 +70,7 @@ static double regula_falsi(double x1,double x2,double y1,double y2){
             return x2;
         }
     }
-    double x3=0,y3=0;
+    float x3=0,y3=0;
     x3 = x1 - (x1-x2)*(y1)/(y1-y2);
     y3 = eq(x3);
     return regula_falsi(x2,x3,y2,y3);
@@ -81,7 +81,7 @@ static double regula_falsi(double x1,double x2,double y1,double y2){
 * @param root which we have to print. 
 * @param count which is count of the root in an interval [-range,range].
 */  
-void printRoot(double root, const int16_t &count){
+void printRoot(float root, const int16_t &count){
     if(count==1){
         std::cout << "Your 1st root is : " << root << std::endl;
     }
@@ -104,7 +104,7 @@ void printRoot(double root, const int16_t &count){
 * @returns 0 on exit
 */
 int main() {
-    double a=0, b=0,i=0,root=0;
+    float a=0, b=0,i=0,root=0;
     int16_t count=0;
     int32_t range = 100000;        //Range in which we have to find the root. (-range,range)
     float gap = 0.5;          // interval gap. lesser the gap more the accuracy
