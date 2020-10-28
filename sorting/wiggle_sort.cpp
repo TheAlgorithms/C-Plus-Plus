@@ -48,7 +48,7 @@ namespace sorting {
         *
         */
         template<typename T> // this allows to have vectors of ints, double, float, etc
-        std::vector<T> wiggleSort(const std::vector<T> arr) {
+        std::vector<T> wiggleSort(const std::vector<T>& arr) {
 
             uint32_t size = arr.size();
 
