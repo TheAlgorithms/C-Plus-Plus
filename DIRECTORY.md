@@ -18,9 +18,9 @@
   * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
 ## Data Structures
-  * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
+  * [Avl Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avl_tree.cpp)
+  * [Binary Heap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_heap.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
-  * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binaryheap.cpp)
   * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/circular_queue_using_linked_list.cpp)
   * Cll
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/cll.cpp)
@@ -29,9 +29,9 @@
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/disjoint_set.cpp)
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/doubly_linked_list.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list.cpp)
-  * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linkedlist_implentation_usingarray.cpp)
+  * [Linked List Implementation Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list_implementation_using_array.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/list_array.cpp)
-  * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/morrisinorder.cpp)
+  * [Morris Inorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/morris_inorder.cpp)
   * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue.h)
   * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array.cpp)
   * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_array2.cpp)
@@ -185,7 +185,7 @@
   * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
-  * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
+  * [Selection Sort Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selection_sort_linked_list.cpp)
   * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_2_arrays.cpp)
 
 ## Others
@@ -218,7 +218,7 @@
   * [Fenwick Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/fenwick_tree.cpp)
   * [Heavy Light Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/heavy_light_decomposition.cpp)
   * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
-  * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
+  * [Segment Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segment_tree.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/sparse_table.cpp)
 
 ## Search
