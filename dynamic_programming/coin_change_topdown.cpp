@@ -1,6 +1,6 @@
 /**
  * @file
- * @minimum coins change problem is a problem used to find the minimum number of 
+ * @Brief Minimum coins change problem is a problem used to find the minimum number of 
  * coins required to completely reach a target amount.
  *
  * @details
