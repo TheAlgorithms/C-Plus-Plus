@@ -6,7 +6,7 @@
  * chains](https://en.wikipedia.org/wiki/Hash_chain).
  */
 #include <cmath>
-#include <iostream>
+#include <bits/stdc++.h>
 #include <memory>
 #include <vector>
 
