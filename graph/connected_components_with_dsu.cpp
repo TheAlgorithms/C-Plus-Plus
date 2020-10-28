@@ -7,7 +7,7 @@
  *
  * ### Algorithm
  * In Graph, if you have to find out the number of connected components, there are 2 options
- * 1. Use Depth first search
+ * 1. Depth first search
  * 2. Disjoint union
  * 1st option is inefficient, Disjoint union is the most optimal way to find this.
  */
@@ -34,10 +34,11 @@ void make_set() {
  * @return parent of val
  */
 int find_set(int val) {
-    if (val == parent[val]) {
-        return val;
+    while (parent[val] != val) {
+        parent[val] = parent[parent[val]];
+        val = parent[val];
     }
-    return parent[val] = find_set(parent[val]);
+    return val;
 }
 /**
  * @brief To join 2 components to belong to one
