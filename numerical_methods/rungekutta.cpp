@@ -17,7 +17,7 @@
  * There can be many such equations 
  * **/
 #include <iostream> /// for io operations
-#include <vector>   ///for using the vector container
+#include <vector>   /// for using the vector container
 #include <cassert>  /// asserting the test functions
 
 /**
