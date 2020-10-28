@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('d5/d4c/group__sorting.html','../../');
 <div class="header">
   <div class="summary">
 <a href="#files">Files</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Sorting Algorithm</div>  </div>
@@ -102,6 +103,15 @@ $(document).ready(function(){initNavTree('d5/d4c/group__sorting.html','../../');
 Files</h2></td></tr>
 <tr class="memitem:d5/df4/merge__sort_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df4/merge__sort_8cpp.html">merge_sort.cpp</a></td></tr>
 <tr class="memdesc:d5/df4/merge__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Merge_sort">Merege Sort Algorithm (MEREGE SORT)</a> implementation <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d1/dcc/wiggle__sort_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcc/wiggle__sort_8cpp.html">wiggle_sort.cpp</a></td></tr>
+<tr class="memdesc:d1/dcc/wiggle__sort_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://leetcode.com/problems/wiggle-sort-ii/">Wiggle Sort Algorithm</a> Implementation <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d5/d91/namespacesorting"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
+<tr class="memdesc:d5/d91/namespacesorting"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting algorithms. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -121,6 +131,12 @@ template&lt;typename T &gt; </td></tr>
 <tr class="separator:ga0a9a57a1f1bbba3d4822531d002b7e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr)</td></tr>
+<tr class="memdesc:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function used for printing the elements. Prints elements of the array after they're sorted using wiggle sort algorithm.  <a href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">More...</a><br /></td></tr>
+<tr class="separator:ga135e4c638e3bcf548bd122b5f49a3e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#gaa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="separator:gaa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The heapify procedure can be thought of as building a heap from the bottom up by successively sifting downward to establish the heap property.</p>
@@ -133,6 +149,64 @@ template&lt;typename T &gt; </td></tr>
   </dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga135e4c638e3bcf548bd122b5f49a3e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga135e4c638e3bcf548bd122b5f49a3e72">&#9670;&nbsp;</a></span>displayElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void displayElements </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility function used for printing the elements. Prints elements of the array after they're sorted using wiggle sort algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array containing the sorted elements </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html#a4">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/sorting/wiggle_sort.cpp</a>.</dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                     {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    uint32_t size = arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted elements are as follows: &quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0 ; i &lt; size ; i++ ) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] ;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span>(i != size - 1) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> ;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>&lt;&lt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ga29d28b140174dbdde7c9f5157758435f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga29d28b140174dbdde7c9f5157758435f">&#9670;&nbsp;</a></span>heapSort()</h2>
 
@@ -194,7 +268,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
+<p>Main function</p>
+<p>Driver Code </p>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;           {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the number of elements : &quot;</span>;</div>
@@ -386,13 +461,72 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="gaa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa8dca7b867074164d5f45b0f3851269d">&#9670;&nbsp;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Test function </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                   {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>)); <span class="comment">// initialize random number generator</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> data1(100);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;d: data1) { <span class="comment">// generate random numbers between -5.0 and 4.99</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        d = float(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 1000 - 500) / 100.f;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> sorted = sorting::wiggle_sort::wiggleSort&lt;float&gt;(data1);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a>(sorted);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span>(uint32_t j = 0; j &lt; data1.size(); j+=2) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        assert(data1[j] &lt;= data1[j+1] &amp;&amp; data1[j+1] &gt;= data1[j+2]); <span class="comment">// check the validation condition</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gaa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="222" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="agroup__sorting_html_ga0a9a57a1f1bbba3d4822531d002b7e07"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga0a9a57a1f1bbba3d4822531d002b7e07">show</a></div><div class="ttdeci">void show(int *arr, int size)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:84</div></div>
 <div class="ttc" id="agroup__sorting_html_gab6b14fea48d9841e29b9fc26be6e05d7"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a></div><div class="ttdeci">void mergeSort(int *arr, int l, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:71</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
+<div class="ttc" id="agroup__sorting_html_ga135e4c638e3bcf548bd122b5f49a3e72"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a></div><div class="ttdeci">static void displayElements(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Utility function used for printing the elements. Prints elements of the array after they're sorted us...</div><div class="ttdef"><b>Definition:</b> wiggle_sort.cpp:84</div></div>
+<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
+<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

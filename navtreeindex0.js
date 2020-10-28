@@ -1,12 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[9,0,1,0],
-"":[9,0,6,0,0],
-"":[9,0,7,0],
-"":[9,0,9,0],
-"":[9,0,3,0],
-"":[9,0,4,0],
-"":[9,0,6,0],
 "annotated.html":[9,0],
 "classes.html":[9,1],
 "d0/d01/smallest__circle_8cpp.html":[10,0,12,12],
@@ -32,6 +25,7 @@ var NAVTREEINDEX0 =
 "d0/d3e/classdata__structures_1_1trie.html#a961eb5d576d2420f2036009154397c63":[9,0,1,3,4],
 "d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988":[9,0,1,3,1],
 "d0/d3e/classdata__structures_1_1trie.html#aeac27cfd397d2dd3f2f519efffafeeab":[9,0,1,3,2],
+"d0/d52/namespacewiggle__sort.html":[8,0,49],
 "d0/d58/classgraph_1_1_rooted_tree.html":[9,0,4,4],
 "d0/d58/classgraph_1_1_rooted_tree.html#a2ee3ad1161ac2532da30c3e22c265ad3":[9,0,4,4,2],
 "d0/d58/classgraph_1_1_rooted_tree.html#a3831583a91914988897a4cc8748fda43":[9,0,4,4,3],
@@ -42,8 +36,8 @@ var NAVTREEINDEX0 =
 "d0/d5a/skip__list_8cpp.html#a903639d8e6f955dd8d5c263781455d61":[10,0,2,10,4],
 "d0/d5a/skip__list_8cpp.html#ac0d7e0be24da9f41bcb19745873c436a":[10,0,2,10,3],
 "d0/d5a/skip__list_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,2,10,2],
-"d0/d65/namespacedouble__hashing.html":[9,0,2],
 "d0/d65/namespacedouble__hashing.html":[8,0,7],
+"d0/d65/namespacedouble__hashing.html":[9,0,2],
 "d0/d6f/namespaceothers.html":[9,0,7],
 "d0/d6f/namespaceothers.html":[8,0,29],
 "d0/da2/number__of__positive__divisors_8cpp.html":[10,0,10,24],
@@ -150,6 +144,8 @@ var NAVTREEINDEX0 =
 "d1/dc7/linear__probing__hash__table_8cpp.html#ad87b71d810901fab69c4ad9d4d0fa635":[10,0,8,2,4],
 "d1/dc7/linear__probing__hash__table_8cpp.html#addfce7597f6a42f796fa597ae40eecc9":[10,0,8,2,13],
 "d1/dc7/linear__probing__hash__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,8,2,7],
+"d1/dcc/wiggle__sort_8cpp.html":[10,0,16,16],
+"d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d":[10,0,16,16,3],
 "d1/def/classdata__structures_1_1linked__list_1_1list.html":[9,0,1,0,1],
 "d1/def/classdata__structures_1_1linked__list_1_1list.html#a098be172c737f236763afdb8cada4835":[9,0,1,0,1,7],
 "d1/def/classdata__structures_1_1linked__list_1_1list.html#a1fb1792ab867dc26639eef368a56989e":[9,0,1,0,1,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX0 =
 "d3/d06/ode__semi__implicit__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,11,1],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[10,0,11,11,3],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[10,0,11,11,2],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,11,0]
+"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,11,0],
+"d3/d17/namespaceutil__functions.html":[8,0,47],
+"d3/d19/sparse__matrix_8cpp.html":[10,0,12,13],
+"d3/d19/sparse__matrix_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,13,0],
+"d3/d24/qr__decomposition_8cpp.html":[10,0,11,13]
 };

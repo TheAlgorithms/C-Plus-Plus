@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[10,0,11,0,2],
 "d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,11,0,3],
 "d7/d75/postfix__evaluation_8cpp.html":[10,0,12,10],
 "d7/d75/postfix__evaluation_8cpp.html#a421baa2002a64bc0bfc3e1b64800d734":[10,0,12,10,4],
@@ -100,8 +101,8 @@ var NAVTREEINDEX3 =
 "d8/d76/morse__code_8cpp.html#ab31773fd11555d21f70d6914138d9535":[10,0,1,2,0],
 "d8/d76/morse__code_8cpp.html#ac9f294b0dec08a4a11d477a32f9bd829":[10,0,1,2,4],
 "d8/d76/morse__code_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,1,2,3],
-"d8/d77/namespacemachine__learning.html":[8,0,20],
 "d8/d77/namespacemachine__learning.html":[9,0,6],
+"d8/d77/namespacemachine__learning.html":[8,0,20],
 "d8/d89/namespacelinear__probing.html":[8,0,18],
 "d8/d89/namespacelinear__probing.html":[9,0,5],
 "d8/d8a/exponential__search_8cpp.html":[10,0,15,1],
@@ -244,10 +245,9 @@ var NAVTREEINDEX3 =
 "d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336":[7,1,6],
 "d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[10,0,9,2,5],
 "d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[7,1,7],
-"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[7,1,5],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[10,0,9,1,3],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,2,1],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[7,1,4],
+"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[7,1,5],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,1,1],
-"d9/d69/median__search_8cpp.html":[10,0,15,8]
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,2,1],
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[7,1,4]
 };

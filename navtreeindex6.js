@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[10,0,12,1,2],
+"df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[10,0,12,1,1],
 "df/d06/decimal__to__binary_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,1,0],
 "df/d10/namespacepancake__sort.html":[8,0,31],
 "df/d39/interpolation__search2_8cpp.html":[10,0,15,5],
@@ -59,6 +61,7 @@ var NAVTREEINDEX6 =
 "dir_e79632891301b850df87e9c0030293fa.html":[10,0,6],
 "dir_ece9b94c107bbaa1dd68197a8c9983b9.html":[10,0,8],
 "dir_f1797d0c2a0a12033e7d74efffeb14e1.html":[10,0,2,0],
+"examples.html":[11],
 "files.html":[10,0],
 "functions.html":[9,3,0],
 "functions.html":[9,3,0,0],
@@ -173,5 +176,12 @@ var NAVTREEINDEX6 =
 "namespacemembers_func.html":[8,1,1],
 "namespacemembers_vars.html":[8,1,2],
 "namespaces.html":[8,0],
-"pages.html":[]
+"pages.html":[],
+"":[9,0,1,0],
+"":[9,0,7,0],
+"":[9,0,6,0,0],
+"":[9,0,4,0],
+"":[9,0,3,0],
+"":[9,0,6,0],
+"":[9,0,9,0]
 };

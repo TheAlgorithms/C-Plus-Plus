@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,5,1],
 "dc/d1a/pascal__triangle_8cpp.html":[10,0,12,9],
 "dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[10,0,12,9,2],
 "dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,9,0],
@@ -164,6 +165,7 @@ var NAVTREEINDEX5 =
 "dd/da8/pigeonhole__sort_8cpp.html#a458410412185a5f09199deaff7157a8d":[10,0,16,11,3],
 "dd/da8/pigeonhole__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,11,0],
 "dd/da8/pigeonhole__sort_8cpp.html#af31ec5409537703d9c8a47350386b32a":[10,0,16,11,4],
+"dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html":[11,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html":[9,0,4,0,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a6aef65b40347c4606662cad4dd2e14d3":[9,0,4,0,0,0],
 "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9b0c6400693a5cfff971f768dd5ca5ca":[9,0,4,0,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "de/de4/fibonacci__large_8cpp.html":[10,0,10,13],
 "de/de4/fibonacci__large_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,10,13,1],
 "de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db":[10,0,10,13,0],
-"df/d06/decimal__to__binary_8cpp.html":[10,0,12,1],
-"df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[10,0,12,1,2],
-"df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[10,0,12,1,1]
+"df/d06/decimal__to__binary_8cpp.html":[10,0,12,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d5/d67/complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,5,2],
 "d5/d67/complex__numbers_8cpp.html#af738b2a6921f0a6868bb7c5b4c0d18e0":[10,0,10,5,3],
 "d5/d83/lcm__sum_8cpp.html":[10,0,10,19],
 "d5/d83/lcm__sum_8cpp.html#a04065193d190d605e1f0d0d93a87e244":[10,0,10,19,0],
@@ -121,7 +122,7 @@ var NAVTREEINDEX2 =
 "d6/d4a/addition__rule_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,13,0,2],
 "d6/d4e/namespaceciphers.html":[9,0,0],
 "d6/d4e/namespaceciphers.html":[8,0,3],
-"d6/d53/namespaceword__break.html":[8,0,49],
+"d6/d53/namespaceword__break.html":[8,0,50],
 "d6/d60/group__ode.html":[7,2],
 "d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723":[7,2,1],
 "d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723":[10,0,11,9,2],
@@ -240,7 +241,7 @@ var NAVTREEINDEX2 =
 "d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[10,0,12,6,4],
 "d7/d35/matrix__exponentiation_8cpp.html#ae1d1ec9482079231e898236e2b23c9ba":[10,0,12,6,1],
 "d7/d35/matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,6,5],
-"d7/d47/namespace_x_o_r.html":[8,0,50],
+"d7/d47/namespace_x_o_r.html":[8,0,51],
 "d7/d65/shortest__common__supersequence_8cpp.html":[10,0,3,4],
 "d7/d65/shortest__common__supersequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,3,4,2],
 "d7/d65/shortest__common__supersequence_8cpp.html#ad2ee8d7e67da9f6eb85146b08dad95e6":[10,0,3,4,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d7/d6a/bisection__method_8cpp.html":[10,0,11,0],
 "d7/d6a/bisection__method_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[10,0,11,0,0],
 "d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14":[10,0,11,0,1],
-"d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2":[10,0,11,0,4],
-"d7/d6a/bisection__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d":[10,0,11,0,2]
+"d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2":[10,0,11,0,4]
 };

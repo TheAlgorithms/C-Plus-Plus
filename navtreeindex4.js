@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d9/d69/median__search_8cpp.html":[10,0,15,8],
 "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[10,0,15,8,1],
 "d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[10,0,15,8,2],
 "d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,8,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[10,0,11,9,4],
 "db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,9,0],
 "db/df3/happy__number_8cpp.html":[10,0,12,5],
-"db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[10,0,12,5,0],
-"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,5,1]
+"db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[10,0,12,5,0]
 };
