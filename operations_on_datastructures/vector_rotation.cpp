@@ -1,8 +1,8 @@
 /**
  *@file
  *
- *@brief  Rotates an 1D array/vector of length n by k indices in linear time.If k>0 then rotation ids towards rightand k<0 gives left rotation.
- *
+ *@brief  Rotates an 1D array/vector of length n by k indices in linear time.If k>0 then rotation is towards right and k<0 gives left rotation.
+ *k=0 gives no change in our vector.
  *
  *@details To obtain the desired vector in linear time complexity,lets place place every number
  *of the array at its desired correct position. But while doing this, we will lose the original elements.
@@ -29,7 +29,7 @@
  *But if gcd>1 then the subsequent indices will repeat after n/gcd number of iterations,
  *hence we need to set our starting index in this case gcd number of times
  *
- *For a k<0, k=k%n is used which resulta in left rotation.
+ *For a k<0, k=k%n is used which results in left rotation.
 */
 
 #include <iostream> // to include io
