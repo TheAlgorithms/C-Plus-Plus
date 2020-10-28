@@ -1,5 +1,5 @@
 //#include <bits/stdc++.h>
-#incldue < iostream >
+#include <iostream>
 #define MAX 4000000
 using namespace std;
 typedef long long ll;
