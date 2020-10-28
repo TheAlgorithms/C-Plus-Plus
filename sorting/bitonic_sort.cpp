@@ -4,7 +4,7 @@
    works only when size of input is a power of 2. */
 
 #include <algorithm>
-#include <iostream>
+#include <bits/stdc++.h>
 
 /*The parameter dir indicates the sorting direction, ASCENDING
    or DESCENDING; if (a[i] > a[j]) agrees with the direction,
