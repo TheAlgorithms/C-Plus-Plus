@@ -24,7 +24,6 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-
 /**
  * @brief This function calculates a raised to exponent b under modulo c using
  * modular exponentiation.
