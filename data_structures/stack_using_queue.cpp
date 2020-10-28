@@ -31,24 +31,24 @@ namespace stack_using_queue {
 class MyStack
 {
     /** initialize queue */
-    std::queue <int> q;      //empty queue q of int type
+    std::queue <uint64_t> q{};   // empty queue q of unit64_t type
 
     public:
 
-    MyStack() = default;                                 //default constructor for stack
+    MyStack() = default;                                 // default constructor for stack
 
 /**
  * @brief Function to Push element onto stack
  * @param x number to be pushed
  * @returns void
  */
-    void push(int x)
+    void push(uint64_t x)
     {
-        q.push(x);                                  //let's assume x=3,queue=1,2 , then queue will become 1,2,3
-        int s=q.size();                             //get size of queue
-        for(int i=0;i<s-1;i++)                      //here we will invert queue (1,2,3 -> 2,3,1 -> 3,1,2)
+        q.push(x);                                  // let's assume x=3,queue=1,2 , then queue will become 1,2,3
+        uint64_t s=q.size();                        // get size of queue
+        for( uint64_t i=0;i<s-1;i++)                      // here we will invert queue (1,2,3 -> 2,3,1 -> 3,1,2)
         {
-            int y=q.front();                        //because if we want to remove from stack so our element should be at front in queue
+             uint64_t y=q.front();                        // because if we want to remove from stack so our element should be at front in queue
             q.pop();
             q.push(y);
         }
@@ -57,9 +57,9 @@ class MyStack
  * @brief Function to Remove the element on top of the stack and return that element.
  * @returns element that is deleted from the stack
  */
-    int pop()
+     uint64_t pop()
     {
-        int y=q.front();
+        uint64_t y=q.front();
         q.pop();
         return y;
     }
@@ -67,7 +67,7 @@ class MyStack
  * @brief Function to Get the topmost element from stack.
  * @returns element on the top of stack
  */
-    int top()
+     uint64_t top()
     {
         return q.front();
     }
