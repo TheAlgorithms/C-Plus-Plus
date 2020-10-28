@@ -106,7 +106,7 @@ void printRoot(float root, const int16_t &count){
 int main() {
     float a=0, b=0,i=0,root=0;
     int16_t count=0;
-    int32_t range = 100000;        //Range in which we have to find the root. (-range,range)
+    float range = 100000;        //Range in which we have to find the root. (-range,range)
     float gap = 0.5;          // interval gap. lesser the gap more the accuracy
     a = numerical_methods::false_position::eq((-1)*range);
     i=((-1)*range + gap);
