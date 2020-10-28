@@ -63,7 +63,7 @@ namespace math {
 */
 static void test()
 {
-	int test_case_1 = math::power(2,5,13);
+	uint32_t test_case_1 = math::power(2,5,13);
 	assert(test_case_1==6);
 	std::cout<<"Test 1 Passed!"<<std::endl;
 	
