@@ -1,5 +1,16 @@
 var NAVTREEINDEX6 =
 {
+"df/d06/decimal__to__binary_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,1,0],
+"df/d10/namespacepancake__sort.html":[8,0,31],
+"df/d39/interpolation__search2_8cpp.html":[10,0,15,5],
+"df/d39/interpolation__search2_8cpp.html#aa3ec659ec8394d186c761df81ad1f629":[10,0,15,5,0],
+"df/d39/interpolation__search2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,5,1],
+"df/d44/namespacen__queens__all__solutions.html":[8,0,26],
+"df/d64/jumpgame_8cpp.html":[10,0,7,0],
+"df/d64/jumpgame_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,7,0,2],
+"df/d64/jumpgame_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,7,0,1],
+"df/d64/jumpgame_8cpp.html#af205390325e8c999bd68b93fa5252755":[10,0,7,0,0],
+"df/d82/breadth__first__search_8cpp.html":[10,0,5,0],
 "df/d82/breadth__first__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,5,0,2],
 "df/d82/breadth__first__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,5,0,1],
 "df/dc8/successive__approximation_8cpp.html":[10,0,11,15],
@@ -112,8 +123,8 @@ var NAVTREEINDEX6 =
 "globals_defs.html":[10,1,4],
 "globals_e.html":[10,1,0,5],
 "globals_f.html":[10,1,0,6],
-"globals_func.html":[10,1,1],
 "globals_func.html":[10,1,1,0],
+"globals_func.html":[10,1,1],
 "globals_func_a.html":[10,1,1,1],
 "globals_func_b.html":[10,1,1,2],
 "globals_func_c.html":[10,1,1,3],
@@ -162,12 +173,5 @@ var NAVTREEINDEX6 =
 "namespacemembers_func.html":[8,1,1],
 "namespacemembers_vars.html":[8,1,2],
 "namespaces.html":[8,0],
-"pages.html":[],
-"":[9,0,4,0],
-"":[9,0,1,0],
-"":[9,0,7,0],
-"":[9,0,9,0],
-"":[9,0,3,0],
-"":[9,0,6,0,0],
-"":[9,0,6,0]
+"pages.html":[]
 };

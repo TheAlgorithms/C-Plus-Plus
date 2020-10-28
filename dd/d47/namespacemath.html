@@ -106,15 +106,49 @@ Functions</h2></td></tr>
 <tr class="separator:a04065193d190d605e1f0d0d93a87e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0">magic_number</a> (const uint64_t &amp;n)</td></tr>
 <tr class="separator:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea">binomialCoeffSum</a> (uint64_t n)</td></tr>
+<tr class="separator:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a> </p>
+<p>for assert</p>
 <p>for io operations</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> for assert</p>
 <p>Mathematical algorithms</p>
 <p>for assert</p>
+<p>Mathematical algorithms</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae1ca505751f5a6d3977b86372cfe75ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ca505751f5a6d3977b86372cfe75ea">&#9670;&nbsp;</a></span>binomialCoeffSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::binomialCoeffSum </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to calculate sum of binomial coefficients </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sum of binomial coefficients of number </dd></dl>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    { </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// Calculating 2^n  </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> (1 &lt;&lt; n); </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a04065193d190d605e1f0d0d93a87e244"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04065193d190d605e1f0d0d93a87e244">&#9670;&nbsp;</a></span>lcmSum()</h2>
 

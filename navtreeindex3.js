@@ -1,5 +1,16 @@
 var NAVTREEINDEX3 =
 {
+"d7/d6a/bisection__method_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,11,0,3],
+"d7/d75/postfix__evaluation_8cpp.html":[10,0,12,10],
+"d7/d75/postfix__evaluation_8cpp.html#a421baa2002a64bc0bfc3e1b64800d734":[10,0,12,10,4],
+"d7/d75/postfix__evaluation_8cpp.html#a4c27f949c9d6659be9f5bd2ccbe1360a":[10,0,12,10,2],
+"d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338":[10,0,12,10,1],
+"d7/d75/postfix__evaluation_8cpp.html#a5b97d12e8b61484f756a8721992bfae1":[10,0,12,10,8],
+"d7/d75/postfix__evaluation_8cpp.html#a6a8eeb7d346d5cd6335d9780fb7c0f15":[10,0,12,10,7],
+"d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea":[10,0,12,10,6],
+"d7/d75/postfix__evaluation_8cpp.html#ae38bd3a177a6d61da3859a281233bbe1":[10,0,12,10,5],
+"d7/d75/postfix__evaluation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,10,3],
+"d7/d77/class_edge.html":[9,0,17],
 "d7/d77/class_edge.html#a0a5b6510bcbe63028818f4dc417ba962":[9,0,17,6],
 "d7/d77/class_edge.html#a0bc08bf5da251d66412a7dc3e50c6605":[9,0,17,0],
 "d7/d77/class_edge.html#a2449478938136b5ab7ef0e7d92e6990b":[9,0,17,8],
@@ -238,16 +249,5 @@ var NAVTREEINDEX3 =
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,2,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[7,1,4],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,1,1],
-"d9/d69/median__search_8cpp.html":[10,0,15,8],
-"d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[10,0,15,8,1],
-"d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[10,0,15,8,2],
-"d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,8,0],
-"d9/d89/fibonacci_8cpp.html":[10,0,10,11],
-"d9/d89/fibonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,10,11,2],
-"d9/d89/fibonacci_8cpp.html#aaf94f3212385cff0a5f19ff6b0cce8e7":[10,0,10,11,0],
-"d9/d89/fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,11,1],
-"d9/d90/struct_btree.html":[9,0,11],
-"d9/d90/struct_btree.html#a1e8d38ee6254e3fe11dde3540ce7301e":[9,0,11,1],
-"d9/d90/struct_btree.html#a8377267e55cdc8b366ccb332312427cd":[9,0,11,0],
-"d9/d90/struct_btree.html#a87e9234afb3e704333af3a2da6b905d3":[9,0,11,2]
+"d9/d69/median__search_8cpp.html":[10,0,15,8]
 };

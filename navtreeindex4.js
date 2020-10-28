@@ -1,5 +1,16 @@
 var NAVTREEINDEX4 =
 {
+"d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[10,0,15,8,1],
+"d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[10,0,15,8,2],
+"d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,8,0],
+"d9/d89/fibonacci_8cpp.html":[10,0,10,11],
+"d9/d89/fibonacci_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,10,11,2],
+"d9/d89/fibonacci_8cpp.html#aaf94f3212385cff0a5f19ff6b0cce8e7":[10,0,10,11,0],
+"d9/d89/fibonacci_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,11,1],
+"d9/d90/struct_btree.html":[9,0,11],
+"d9/d90/struct_btree.html#a1e8d38ee6254e3fe11dde3540ce7301e":[9,0,11,1],
+"d9/d90/struct_btree.html#a8377267e55cdc8b366ccb332312427cd":[9,0,11,0],
+"d9/d90/struct_btree.html#a87e9234afb3e704333af3a2da6b905d3":[9,0,11,2],
 "d9/d92/chaining_8cpp.html":[10,0,8,0],
 "d9/d92/chaining_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,8,0,1],
 "d9/dca/namespacesearch.html":[8,0,37],
@@ -238,16 +249,5 @@ var NAVTREEINDEX4 =
 "db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,9,0],
 "db/df3/happy__number_8cpp.html":[10,0,12,5],
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[10,0,12,5,0],
-"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,5,1],
-"dc/d1a/pascal__triangle_8cpp.html":[10,0,12,9],
-"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[10,0,12,9,2],
-"dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,9,0],
-"dc/d1a/pascal__triangle_8cpp.html#afd3f52dd56ddedbf7af5d26a202a199e":[10,0,12,9,1],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html":[10,0,9,4],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a30acf52af3184bc22274234ef5a73536":[10,0,9,4,12],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a31be3fe36e76b87d5616ff8e7918cd24":[10,0,9,4,11],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045":[10,0,9,4,0],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d":[10,0,9,4,5],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f":[10,0,9,4,3],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7":[10,0,9,4,15]
+"db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,5,1]
 };

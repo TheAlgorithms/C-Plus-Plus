@@ -1,5 +1,16 @@
 var NAVTREEINDEX5 =
 {
+"dc/d1a/pascal__triangle_8cpp.html":[10,0,12,9],
+"dc/d1a/pascal__triangle_8cpp.html#ad7a31d9cb2818d21b1ba12aead7f4c5c":[10,0,12,9,2],
+"dc/d1a/pascal__triangle_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,9,0],
+"dc/d1a/pascal__triangle_8cpp.html#afd3f52dd56ddedbf7af5d26a202a199e":[10,0,12,9,1],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html":[10,0,9,4],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a30acf52af3184bc22274234ef5a73536":[10,0,9,4,12],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a31be3fe36e76b87d5616ff8e7918cd24":[10,0,9,4,11],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045":[10,0,9,4,0],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d":[10,0,9,4,5],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f":[10,0,9,4,3],
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7":[10,0,9,4,15],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a64d9dd5c5816d6d907b00e5f4b0372a5":[10,0,9,4,8],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a67249e31221231cf3aaf3cfd870372d0":[10,0,9,4,10],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#a889f9de199fa793497c864d8e493af05":[10,0,9,4,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX5 =
 "de/de4/fibonacci__large_8cpp.html#adf3e906875ab257f7fab3bc1370aa2db":[10,0,10,13,0],
 "df/d06/decimal__to__binary_8cpp.html":[10,0,12,1],
 "df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7":[10,0,12,1,2],
-"df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[10,0,12,1,1],
-"df/d06/decimal__to__binary_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,1,0],
-"df/d10/namespacepancake__sort.html":[8,0,31],
-"df/d39/interpolation__search2_8cpp.html":[10,0,15,5],
-"df/d39/interpolation__search2_8cpp.html#aa3ec659ec8394d186c761df81ad1f629":[10,0,15,5,0],
-"df/d39/interpolation__search2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,5,1],
-"df/d44/namespacen__queens__all__solutions.html":[8,0,26],
-"df/d64/jumpgame_8cpp.html":[10,0,7,0],
-"df/d64/jumpgame_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,7,0,2],
-"df/d64/jumpgame_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,7,0,1],
-"df/d64/jumpgame_8cpp.html#af205390325e8c999bd68b93fa5252755":[10,0,7,0,0],
-"df/d82/breadth__first__search_8cpp.html":[10,0,5,0]
+"df/d06/decimal__to__binary_8cpp.html#a9240f2e79074a2a248395258aebbfa11":[10,0,12,1,1]
 };
