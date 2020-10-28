@@ -1,45 +1,79 @@
-#include <iostream>
-#include <set>
-#include <vector>
+/**
+ * @file
+ * @brief [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union)
+ *
+ * @details
+ * The Disjoint union is the technique to find connected component in graph efficiently.
+ *
+ * ### Algorithm
+ * In Graph, if you have to find out the number of connected components, there are 2 options
+ * 1. Use Depth first search
+ * 2. Disjoint union
+ * 1st option is inefficient, Disjoint union is the most optimal way to find this.
+ */
+#include <iostream> /// for io operations
+#include <set>    /// for std::set
+#include <vector> /// for std::vector
 
 int number_of_nodes;  // denotes number of nodes;
-std::vector<int> parent;
-std::vector<int> connected_set_size;
-void make_set() {  // function the initialize every node as it's own parent
+std::vector<int> parent; // parent of each node
+std::vector<int> connected_set_size; // size of each set
+/**
+ * @brief function the initialize every node as it's own parent
+ * @returns void
+ */
+void make_set() {
     for (int i = 1; i <= number_of_nodes; i++) {
         parent[i] = i;
         connected_set_size[i] = 1;
     }
 }
-// To find the component where following node belongs to
-int find_set(int v) {
-    if (v == parent[v]) {
-        return v;
+/**
+ * @brief To find the component where following node belongs to
+ * @param val parent of val should be found
+ * @return parent of val
+ */
+int find_set(int val) {
+    if (val == parent[val]) {
+        return val;
     }
-    return parent[v] = find_set(parent[v]);
+    return parent[val] = find_set(parent[val]);
 }
+/**
+ * @brief To join 2 components to belong to one
+ * @param a 1st component
+ * @param b 2nd component
+ * @returns void
+ */
+void union_sets(int a, int b) {
+    a = find_set(a); // find the parent of a
+    b = find_set(b); // find the parent of b
 
-void union_sets(int a, int b) {  // To join 2 components to belong to one
-    a = find_set(a);
-    b = find_set(b);
+    // If parents of both nodes are not same, combine them
     if (a != b) {
         if (connected_set_size[a] < connected_set_size[b]) {
-            std::swap(a, b);
+            std::swap(a, b); // swap both components
         }
-        parent[b] = a;
-        connected_set_size[a] += connected_set_size[b];
+        parent[b] = a; // make a node as parent of b node.
+        connected_set_size[a] += connected_set_size[b]; // sum the size of both as they combined
     }
 }
-
-int no_of_connected_components() {  // To find total no of connected components
+/**
+ * @brief To find total no of connected components
+ * @return Number of connected components
+ */
+int no_of_connected_components() {
     std::set<int> temp;  // temp set to count number of connected components
-    for (int i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
-    return temp.size();
+    for (int i = 1; i <= number_of_nodes; i++)
+        temp.insert(find_set(i));
+    return temp.size(); // return the size of temp set
 }
 
-// All critical/corner cases have been taken care of.
-// Input your required values: (not hardcoded)
-int main() {
+/**
+ * @brief Test Implementations
+ * @returns void
+ */
+static void test() {
     std::cin >> number_of_nodes;
     parent.resize(number_of_nodes + 1);
     connected_set_size.resize(number_of_nodes + 1);
@@ -52,5 +86,9 @@ int main() {
         union_sets(node_a, node_b);
     }
     std::cout << no_of_connected_components() << std::endl;
+}
+
+int main() {
+    test(); // Execute the tests
     return 0;
 }
