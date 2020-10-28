@@ -4,11 +4,11 @@
  *@brief  Rotates an 1D array/vector of length n by k indices in linear time.
  *
  *@details To obtain the desired vector in linear time complexity.Lets take the length of the array
- *as n and indices to be rotated as k(assume k>=0 for now),initially we reverse the array then we imagine 
- *our initial array divided into two sub-arrays sub_1 is from index '0' to index 'k-1' and sub_2 is from 
- *index 'k' to  'n-1'.we now reverse these sub-arrays as well and we have our desired implementation. 
- *This will be a right rotation by k.Here k>0 gives right rotation and k<0 gives left rotation.k=0 gives no change. 
- *For left rotation k=k mod n (k is assumed negative for left rotation)is given to the rotation function 
+ *as n and indices to be rotated as k(assume k>=0 for now),initially we reverse the array then we imagine
+ *our initial array divided into two sub-arrays sub_1 is from index '0' to index 'k-1' and sub_2 is from
+ *index 'k' to  'n-1'.we now reverse these sub-arrays as well and we have our desired implementation.
+ *This will be a right rotation by k.Here k>0 gives right rotation and k<0 gives left rotation.k=0 gives no change.
+ *For left rotation k=k mod n (k is assumed negative for left rotation)is given to the rotation function
  *which results in left rotation, as a k index left rotation is equivalent to (k mod n)  index right rotation where k<0.
  * ### Example:
  *eg 1- say n=5,k=2
@@ -65,8 +65,9 @@ namespace rotate
     *@param a is a vector, contains integer elements
     *@returns a rotated vector
     */
-    std::vector<int> to_right(std::vector<int>& a, int k)
+    std::vector<int> to_right(std::vector<int> const v, int k)
     {
+        std::vector<int> a=v;
         k=math::MOD(k,a.size());
         std::reverse(a.begin(), a.end());
         std::reverse(a.begin(),a.begin() + k);
