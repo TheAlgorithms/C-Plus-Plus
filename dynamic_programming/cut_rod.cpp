@@ -41,7 +41,7 @@ namespace cut_rod {
  * @return maximum profit obtainable for @param n inch rod.
  */
 template <size_t T>
-int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
+int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
     int *profit =
         new int[n + 1];  // profit[i] will hold maximum profit for i inch rod
 
@@ -62,48 +62,23 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const int n) {
     return ans;  // returning maximum profit
 }
 
-
-
 template <size_t T>
 bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const uint64_t &n){
 
     /*
-
       Note that if all the prices of the different lengths of rod are same the answer will be always n*price;
       where price=price of 1 length rod
-      Reason::
-      cR() ---> cutRod()
-
-                             cR(4)
-                  /        /
-                 /        /
-             cR(3)       cR(2)     cR(1)   cR(0)
-            /  |         /         |
-           /   |        /          |
-      cR(2) cR(1) cR(0) cR(1) cR(0) cR(0)
-     /        |          |
-    /         |          |
-  cR(1) cR(0) cR(0)      cR(0)
-   /
- /
-CR(0)
-
-
+      Reason::-->
    if every length has same price , you would definitely want the rod of length 1, with n quantities.
     which will give us maximum profits and maximum cuts.
-
     */
-
-    const int temp=price[0];
+    const int16_t temp=price[0];
      for (size_t i = 1; i <n; i++) {
          if(price[i]!=temp)
              return false;
         }
-
         return true;
 }// checks whether all the prices are same or not
-
-
 }  // namespace cut_rod
 }  // namespace dynamic_programming
 
@@ -112,31 +87,25 @@ CR(0)
  * @returns void
  */
 
-
-
-
 static void test() {
     // Test 1
-    const int n1 = 8;                                           // size of rod
-    std::array<int, n1> price1 = {1, 1,1,1,1,1,1,1};  // price array
-    const int max_profit1 =
+    const int16_t n1 = 8;                                        // size of rod
+   std::array<int32_t, n1> price1 = {1,1,1,1,1,1,1,1};  // price array
+    const int64_t max_profit1 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price1, n1);
-    const int expected_max_profit1 = 22;
+    const int32_t expected_max_profit1 = 22;
 
-    if(dynamic_programming::cut_rod::WhatIfAllPricesAreSame(price1,n1)){
+    if (dynamic_programming::cut_rod::WhatIfAllPricesAreSame(price1,n1)) {
         std::cout << "Maximum profit with " << n1 << " inch road is " <<(n1)*price1[0]
               << std::endl;
     }
-    else{
+    else {
 
     assert(max_profit1 == expected_max_profit1);
     std::cout << "Maximum profit with " << n1 << " inch road is " << max_profit1
               << std::endl;
 
     }
-
-
-
     // Test 2
     const int n2 = 30;  // size of rod
     std::array<int, n2> price2 = {
