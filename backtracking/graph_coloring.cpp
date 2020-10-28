@@ -15,7 +15,7 @@
  * @author [Anup Kumar Panwar](https://github.com/AnupKumarPanwar)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <iostream>
+#include <bits/stdc++.h>
 #include <array>
 #include <vector>
 
