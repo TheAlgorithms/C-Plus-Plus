@@ -22,7 +22,7 @@
 namespace data_structures {
 /**
  * @namespace list_array
- * @brief Functions for List Array algorithm
+ * @brief Functions for [Dynamic Array](https://en.wikipedia.org/wiki/Dynamic_array) algorithm
  */
 namespace list_array {
     /**
