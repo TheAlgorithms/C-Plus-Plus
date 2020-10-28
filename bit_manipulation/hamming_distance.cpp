@@ -43,6 +43,25 @@ uint64_t bitCount(uint64_t value) {
  * @returns the number of bits differing between the two integers.
  */
 uint64_t hamming_distance(uint64_t a, uint64_t b) { return bitCount(a ^ b); }
+
+/**
+ * This function returns the hamming distance between two bitstrings.
+ * @param a the first bitstring
+ * @param b the second bistring
+ * @returns the number of bits differing between the two bistrings.
+ */
+uint64_t hamming_distance(const std::string& a, const std::string& b) {
+    assert(a.size() == b.size());
+    size_t n = a.size();
+    uint64_t count = 0;
+    for (size_t i = 0; i < n; i++) {
+        assert(a[i] == '0' || a[i] == '1');
+        assert(b[i] == '0' || b[i] == '1');
+        count += (b[i] != a[i]);
+    }
+    return count;
+}
+
 }  // namespace bit_manipulation
 
 /**
@@ -53,6 +72,10 @@ static void test() {
     assert(bit_manipulation::hamming_distance(11, 2) == 2);
     assert(bit_manipulation::hamming_distance(2, 0) == 1);
     assert(bit_manipulation::hamming_distance(11, 0) == 3);
+
+    assert(bit_manipulation::hamming_distance("1101", "1111") == 1);
+    assert(bit_manipulation::hamming_distance("1111", "1111") == 0);
+    assert(bit_manipulation::hamming_distance("0000", "1111") == 4);
 }
 
 /**
