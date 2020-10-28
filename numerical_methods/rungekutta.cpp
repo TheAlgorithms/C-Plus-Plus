@@ -15,7 +15,7 @@
  * given x for given initial 
  * conditions
  * There can be many such equations 
- * **/
+ */
 #include <iostream> /// for io operations
 #include <vector>   /// for using the vector container
 #include <cassert>  /// asserting the test functions
@@ -33,6 +33,7 @@ static double change(double x, double y)
 	double val=((x - y)/2.0); 
 	return val;
 } 
+
 /**
  * @namespace numerical_methods
  * @brief Numerical Methods
@@ -43,7 +44,6 @@ namespace numerical_methods {
  * @brief Functions for [Runge Kutta fourth order](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) method
  */
 namespace runge_kutta {
-
 /**
  * @brief the Runge Kutta method finds the value of integration of a function in the given limits.
  * the lower limit of integration as the initial value and the upper limit is the given x
@@ -95,9 +95,9 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
 
 	return y; 
 } 
-
 } // namespace runge_kutta
 } // namespace numerical_methods
+
 /**
  * @brief the functions are for self test
  * @returns void and prints the success of rungeKutta function
