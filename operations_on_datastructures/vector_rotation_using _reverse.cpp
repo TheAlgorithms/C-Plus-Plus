@@ -50,7 +50,7 @@ namespace math{
     {
         return (x%y +y)%y;
     }
-}/// namespace math
+}// namespace math
 
 /**
 *@ namespace rotate
@@ -73,7 +73,7 @@ namespace rotate
         std::reverse(a.begin() + k, a.end());
         return a;
     }
-}///namespace rotate
+}//namespace rotate
 
 /**
 *@brief test function;
@@ -82,14 +82,14 @@ namespace rotate
 void test()
 {
 
-    /// Tests the MOD function
+    // Tests the MOD function
     int mod=math::MOD(6,4);
     assert(mod==2);
 
     mod=math::MOD(-1,4);
     assert(mod==3);
 
-    ///Tests the to_rotate function
+    //Tests the to_rotate function
     std::vector<int> a;
     for(int i=1;i<=5;i++)
     {
