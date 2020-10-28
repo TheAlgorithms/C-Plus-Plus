@@ -21,7 +21,7 @@ namespace math {
 	 * @param n number
 	 * @return Sum of binomial coefficients of number 
 	 */
-	int binomialCoeffSum(int n) 
+	uint64_t binomialCoeffSum(uint64_t n) 
 	{ 
 	    // Calculating 2^n  
 		return (1 << n); 
