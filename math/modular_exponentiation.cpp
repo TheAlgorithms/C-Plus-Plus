@@ -62,7 +62,7 @@ static void test() {
     assert(test_case_1 == 6);
     std::cout << "Test 1 Passed!" << std::endl;
 
-    int test_case_2 = math::power(14, 7, 15);
+    uint32_t test_case_2 = math::power(14, 7, 15);
     assert(test_case_2 == 14);
     std::cout << "Test 2 Passed!" << std::endl;
 
