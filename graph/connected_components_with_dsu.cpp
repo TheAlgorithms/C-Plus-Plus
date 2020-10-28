@@ -42,21 +42,21 @@ int find_set(int val) {
 }
 /**
  * @brief To join 2 components to belong to one
- * @param a 1st component
- * @param b 2nd component
+ * @param node1 1st component
+ * @param node2 2nd component
  * @returns void
  */
-void union_sets(int a, int b) {
-    a = find_set(a); // find the parent of a
-    b = find_set(b); // find the parent of b
+void union_sets(int node1, int node2) {
+    node1 = find_set(node1); // find the parent of node1
+    node2 = find_set(node2); // find the parent of node2
 
     // If parents of both nodes are not same, combine them
-    if (a != b) {
-        if (connected_set_size[a] < connected_set_size[b]) {
-            std::swap(a, b); // swap both components
+    if (node1 != node2) {
+        if (connected_set_size[node1] < connected_set_size[node2]) {
+            std::swap(node1, node2); // swap both components
         }
-        parent[b] = a; // make a node as parent of b node.
-        connected_set_size[a] += connected_set_size[b]; // sum the size of both as they combined
+        parent[node2] = node1; // make node1 as parent of node2.
+        connected_set_size[node1] += connected_set_size[node2]; // sum the size of both as they combined
     }
 }
 /**
