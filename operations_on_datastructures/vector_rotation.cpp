@@ -1,8 +1,8 @@
 /**
  *@file
  *
- *@brief  Rotates an 1D array/vector of length n by k indices in linear time.If k>0 then rotation is towards right and k<0 gives left rotation.
- *k=0 gives no change in our vector.
+ *@brief  Rotates an 1D array/vector of length n by k indices in linear time .If k>0 then rotation is towards right and k<0 gives left rotation.
+ *k=0 gives no change in our vector. This inplementation fullfills its purpose only by using right rotation.
  *
  *@details To obtain the desired vector in linear time complexity,lets place place every number
  *of the array at its desired correct position. But while doing this, we will lose the original elements.
@@ -56,6 +56,12 @@ namespace math{
         }
         return GCD(b%a,a);
     }
+     /**
+    *@brief calculates modulas
+    *@param x is an integer
+    *@param y is an integer
+    *@returns an x mod y as an integer
+    */
     int MOD(int x,int y)
     {
         return (x%y +y)%y;
@@ -125,7 +131,7 @@ void test()
     mod=math::MOD(-1,4);
     assert(mod==3);
     
-    ///Tests the to_rotate function
+    ///Tests the to_right function
     std::vector<int> a;
     for(int i=1;i<=5;i++)
     {
