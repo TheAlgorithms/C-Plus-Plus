@@ -246,7 +246,7 @@ int main() {
     int u = int(), v = int(), w = int();
     while (edges--) {
         std::cin >> u >> v >> w;
-        graph::addEdge(&adj1, &adj2, u, v, w);
+        graph::bidirectional_dijkstra::addEdge(&adj1, &adj2, u, v, w);
     }
 
     int s = int(), t = int();
