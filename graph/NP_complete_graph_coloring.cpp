@@ -80,7 +80,7 @@ void Graph::greedyColoring()
 		}			 
 
 		// Find the first available color 
-		int color;
+		int color=0;
 		for (color = 0; color < V; color++){
 			if (available[color] == false){
 					break; 
