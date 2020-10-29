@@ -81,17 +81,17 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="376,-38.5 376,-57.5 419,-57.5 419,-38.5 376,-38.5"/>
-<text text-anchor="middle" x="397.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">power</text>
+<g id="a_node9"><a xlink:href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" target="_top" xlink:title="This function calculates a raised to exponent b under modulo c using modular exponentiation.">
+<polygon fill="white" stroke="black" points="362,-38.5 362,-57.5 433,-57.5 433,-38.5 362,-38.5"/>
+<text text-anchor="middle" x="397.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">math::power</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M302.14,-48C321.45,-48 346.43,-48 365.84,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="365.98,-51.5 375.98,-48 365.98,-44.5 365.98,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M302.14,-48C316.9,-48 334.97,-48 351.34,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="351.79,-51.5 361.79,-48 351.79,-44.5 351.79,-51.5"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
@@ -156,17 +156,17 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="526,-38.5 526,-57.5 576,-57.5 576,-38.5 526,-38.5"/>
-<text text-anchor="middle" x="551" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">multiply</text>
+<g id="a_node10"><a xlink:href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="535,-38.5 535,-57.5 567,-57.5 567,-38.5 535,-38.5"/>
+<text text-anchor="middle" x="551" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">ans</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M419.25,-48C444,-48 485.77,-48 515.43,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="515.75,-51.5 525.75,-48 515.75,-44.5 515.75,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M433.26,-48C461.11,-48 499.54,-48 524.58,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="524.74,-51.5 534.74,-48 524.74,-44.5 524.74,-51.5"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">

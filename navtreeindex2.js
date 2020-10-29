@@ -1,5 +1,16 @@
 var NAVTREEINDEX2 =
 {
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,16,1],
+"d5/d5f/namespacegeometry.html":[8,0,9],
+"d5/d5f/namespacegeometry.html":[9,0,3],
+"d5/d67/bayes__theorem_8cpp.html":[10,0,13,1],
+"d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba":[10,0,13,1,0],
+"d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f":[10,0,13,1,1],
+"d5/d67/bayes__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,13,1,2],
+"d5/d67/complex__numbers_8cpp.html":[10,0,10,5],
+"d5/d67/complex__numbers_8cpp.html#a5a73e9d4e68af8cedb95bd0864054b89":[10,0,10,5,4],
+"d5/d67/complex__numbers_8cpp.html#a5d4d5b8250b50703de888514c8e7a7a0":[10,0,10,5,1],
+"d5/d67/complex__numbers_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[10,0,10,5,5],
 "d5/d67/complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,10,5,2],
 "d5/d67/complex__numbers_8cpp.html#af738b2a6921f0a6868bb7c5b4c0d18e0":[10,0,10,5,3],
 "d5/d83/lcm__sum_8cpp.html":[10,0,10,19],
@@ -238,16 +249,5 @@ var NAVTREEINDEX2 =
 "d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54":[10,0,12,6,10],
 "d7/d35/matrix__exponentiation_8cpp.html#ac62a499b83c7895dd0aa69da1b64c904":[10,0,12,6,6],
 "d7/d35/matrix__exponentiation_8cpp.html#aca7d5718ab8c38506adb3bef2469b319":[10,0,12,6,2],
-"d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[10,0,12,6,4],
-"d7/d35/matrix__exponentiation_8cpp.html#ae1d1ec9482079231e898236e2b23c9ba":[10,0,12,6,1],
-"d7/d35/matrix__exponentiation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,12,6,5],
-"d7/d47/namespace_x_o_r.html":[8,0,51],
-"d7/d65/shortest__common__supersequence_8cpp.html":[10,0,3,4],
-"d7/d65/shortest__common__supersequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,3,4,2],
-"d7/d65/shortest__common__supersequence_8cpp.html#ad2ee8d7e67da9f6eb85146b08dad95e6":[10,0,3,4,1],
-"d7/d65/shortest__common__supersequence_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,4,0],
-"d7/d6a/bisection__method_8cpp.html":[10,0,11,0],
-"d7/d6a/bisection__method_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70":[10,0,11,0,0],
-"d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14":[10,0,11,0,1],
-"d7/d6a/bisection__method_8cpp.html#a1ab31b90bc584c635ec159468ceed9b2":[10,0,11,0,4]
+"d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[10,0,12,6,4]
 };

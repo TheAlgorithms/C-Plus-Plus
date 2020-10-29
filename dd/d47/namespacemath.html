@@ -106,6 +106,9 @@ Functions</h2></td></tr>
 <tr class="separator:a04065193d190d605e1f0d0d93a87e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0">magic_number</a> (const uint64_t &amp;n)</td></tr>
 <tr class="separator:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd07701d73ed65cd616bcba02737f3d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">power</a> (uint64_t a, uint64_t b, uint64_t c)</td></tr>
+<tr class="memdesc:afcd07701d73ed65cd616bcba02737f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates a raised to exponent b under modulo c using modular exponentiation.  <a href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">More...</a><br /></td></tr>
+<tr class="separator:afcd07701d73ed65cd616bcba02737f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea">binomialCoeffSum</a> (uint64_t n)</td></tr>
 <tr class="separator:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -242,9 +245,84 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="afcd07701d73ed65cd616bcba02737f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd07701d73ed65cd616bcba02737f3d">&#9670;&nbsp;</a></span>power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::power </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function calculates a raised to exponent b under modulo c using modular exponentiation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>integer base </td></tr>
+    <tr><td class="paramname">b</td><td>unsigned integer exponent </td></tr>
+    <tr><td class="paramname">c</td><td>integer modulo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a raised to power b modulo c </dd></dl>
+<p>Initialize the answer to be returned</p>
+<p>Update a if it is more than or equal to c</p>
+<p>In case a is divisible by c;</p>
+<p>If b is odd, multiply a with answer</p>
+<p>b must be even now</p>
+<p>b = b/2</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                   {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uint64_t <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> = 1;  <span class="comment">/// Initialize the answer to be returned</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span>    a = a % c;         <span class="comment">/// Update a if it is more than or equal to c</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>    <span class="keywordflow">if</span> (a == 0) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> 0;  <span class="comment">/// In case a is divisible by c;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">while</span> (b &gt; 0) {<span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">        /// If b is odd, multiply a with answer</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> (b &amp; 1) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> = ((<a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> % c) * (a % c)) % c;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }<span class="comment"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">        /// b must be even now</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span>        b = b &gt;&gt; 1;  <span class="comment">/// b = b/2</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span>        a = ((a % c) * (a % c)) % c;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_afcd07701d73ed65cd616bcba02737f3d_cgraph.svg" width="196" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
+<div class="ttc" id="amatrix__exponentiation_8cpp_html_ad8389ed58fd0ec66df248014775ad1fa"><div class="ttname"><a href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a></div><div class="ttdeci">ll ans(ll n)</div><div class="ttdef"><b>Definition:</b> matrix_exponentiation.cpp:91</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

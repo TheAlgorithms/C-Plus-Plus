@@ -97,17 +97,17 @@ var sectionId = 'dynsection-2';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="302,-38.5 302,-57.5 345,-57.5 345,-38.5 302,-38.5"/>
-<text text-anchor="middle" x="323.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">power</text>
+<g id="a_node7"><a xlink:href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" target="_top" xlink:title="This function calculates a raised to exponent b under modulo c using modular exponentiation.">
+<polygon fill="white" stroke="black" points="288,-38.5 288,-57.5 359,-57.5 359,-38.5 288,-38.5"/>
+<text text-anchor="middle" x="323.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">math::power</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M228.14,-48C247.45,-48 272.43,-48 291.84,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="291.98,-51.5 301.98,-48 291.98,-44.5 291.98,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M228.14,-48C242.9,-48 260.97,-48 277.34,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="277.79,-51.5 287.79,-48 277.79,-44.5 277.79,-51.5"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
@@ -172,17 +172,17 @@ var sectionId = 'dynsection-2';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="452,-38.5 452,-57.5 502,-57.5 502,-38.5 452,-38.5"/>
-<text text-anchor="middle" x="477" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">multiply</text>
+<g id="a_node8"><a xlink:href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="461,-38.5 461,-57.5 493,-57.5 493,-38.5 461,-38.5"/>
+<text text-anchor="middle" x="477" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">ans</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M345.25,-48C370,-48 411.77,-48 441.43,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="441.75,-51.5 451.75,-48 441.75,-44.5 441.75,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M359.26,-48C387.11,-48 425.54,-48 450.58,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="450.74,-51.5 460.74,-48 450.74,-44.5 450.74,-51.5"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">

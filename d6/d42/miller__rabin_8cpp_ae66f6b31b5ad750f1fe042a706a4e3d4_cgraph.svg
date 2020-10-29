@@ -142,17 +142,17 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#ae249a2af508aa94266023ce8aa81426f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="450,-38.5 450,-57.5 493,-57.5 493,-38.5 450,-38.5"/>
-<text text-anchor="middle" x="471.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">power</text>
+<g id="a_node10"><a xlink:href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" target="_top" xlink:title="This function calculates a raised to exponent b under modulo c using modular exponentiation.">
+<polygon fill="white" stroke="black" points="436,-38.5 436,-57.5 507,-57.5 507,-38.5 436,-38.5"/>
+<text text-anchor="middle" x="471.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">math::power</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node5&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M376.14,-48C395.45,-48 420.43,-48 439.84,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="439.98,-51.5 449.98,-48 439.98,-44.5 439.98,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M376.14,-48C390.9,-48 408.97,-48 425.34,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="425.79,-51.5 435.79,-48 425.79,-44.5 425.79,-51.5"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
@@ -217,17 +217,17 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="../../df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="600,-38.5 600,-57.5 650,-57.5 650,-38.5 600,-38.5"/>
-<text text-anchor="middle" x="625" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">multiply</text>
+<g id="a_node11"><a xlink:href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="609,-38.5 609,-57.5 641,-57.5 641,-38.5 609,-38.5"/>
+<text text-anchor="middle" x="625" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">ans</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M493.25,-48C518,-48 559.77,-48 589.43,-48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="589.75,-51.5 599.75,-48 589.75,-44.5 589.75,-51.5"/>
+<path fill="none" stroke="midnightblue" d="M507.26,-48C535.11,-48 573.54,-48 598.58,-48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="598.74,-51.5 608.74,-48 598.74,-44.5 598.74,-51.5"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
