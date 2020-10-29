@@ -30,7 +30,6 @@ constexpr int64_t INF = std::numeric_limits<int64_t>::max();
  * @namespace graph
  * @brief Graph Algorithms
  */
-
 namespace graph {
 /**
  * @brief Function that add edge between two nodes or vertices of graph
