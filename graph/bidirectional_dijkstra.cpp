@@ -225,7 +225,10 @@ static void tests() {
     std::cout << "All Test Passed..." << std::endl << std::endl;
 }
 
-/** Main function */
+/** 
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // running predefined tests
     tests();
