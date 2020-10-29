@@ -94,7 +94,7 @@ uint64_t binModExpo_alt(uint64_t a, uint64_t b, uint64_t m) {
 int main() {
     uint64_t a, b, m;
     /// Give three numbers a, b, m.
-    std::cin >> a >> b >> m;
+    a = 1234, b = 12345, m = 1000000007;
     if (a == 0 && b == 0) {
         std::cout << "Math error" << std::endl;
     } else if (b < 0) {
