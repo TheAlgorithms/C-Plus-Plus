@@ -43,7 +43,7 @@ namespace sorting {
         * sorting.
         * @returns none
         */
-        void step_ith(int cur_digit,std::vector<int>& ar) {  // sorting according to current digit.
+        std::vector<int> step_ith(int cur_digit,const std::vector<int>& ar) {  // sorting according to current digit.
             int n = ar.size();
             std::vector<int> position(10, 0);
             for (int i = 0; i < n; i++) {
@@ -65,20 +65,21 @@ namespace sorting {
                          10]++;  // incrementing ar[i]'s cur_digit position by 1, as
                                  // current place used by ar[i].
             }
-            ar = temp;
+            return temp;
         }
         /**
         * @brief Function to sort vector digit by digit.
         * @returns none
         */
-        void radix(std::vector<int>& ar) {
+        void radix(const std::vector<int>& ar) {
             int max_ele = *max_element(ar.begin(), ar.end()); // returns the max element.
+            std::vector<int> temp = ar;
             for (int i = 1; max_ele / i > 0;
                  i *= 10) {  // loop breaks when i > max_ele because no further digits
                              // left to makes changes in aray.
-                step_ith(i,ar);
+                temp = step_ith(i,ar);
             }
-            for (int i = 0; i < ar.size(); i++) std::cout << ar[i] << " ";
+            for (int i = 0; i < temp.size(); i++) std::cout << temp[i] << " ";
             std::cout << "\n";
         }
     }  // namespace radix_sort
