@@ -1,11 +1,11 @@
 /**
  * @file
- * @brief Algorith of [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
+ * @brief Algorithm of [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
  * @author [Suyash Jaiswal](https://github.com/Suyashjaiswal)
  * @details
  * Sort the vector of integers using radix sort i.e. sorting digit by digit
  using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as subroutine.
- * Running time of radix is O(d*(n+b)) where b is the base for representing
+ * Running time of radix sort is O(d*(n+b)) where b is the base for representing
  numbers and d in the max digits in input inegers and n is number of integers.
  * consider example for n = 5, aray elements = 432,234,143,332,123
  *sorting digit by digit
@@ -88,7 +88,7 @@ namespace sorting {
 }  // namespace sorting
 
 /**
- * Function to test the above algorithm
+ * @brief Function to test the above algorithm
  * @returns none
  */
 static void tests() {
@@ -117,6 +117,5 @@ int main() {
         ar.push_back(x);
     }
     ar = sorting::radix_sort::radix(ar);
-    assert(std::is_sorted(ar.begin(), ar.end()));
     return 0;
 }
