@@ -1,11 +1,16 @@
+/* graph coloring is a coloring of the vertices of a graph 
+formed by a greedy algorithm that considers
+the vertices of the graph in sequence and 
+assigns each vertex its first available color. 
+*/
 
 #include <iostream> 
 #include <list> 
+#include <vector>
 
 // A class that represents an undirected graph 
 namespace graph{
-    
-namespace NP_complete_graph_coloring{
+    namespace NP_complete_graph_coloring{
     
 
 class Graph { 
@@ -17,8 +22,9 @@ public:
 
 	// Constructor and destructor 
 	
-	Graph(int V) { this->V = V; adj = new std::list<int>[V]; } 
-
+    Graph(int V)   { this->V = V; adj = new std::list<int>[V]; } 
+    ~Graph()       { delete [] adj; } 
+  
 	// function to add an edge to graph 
 	
 	void addEdge(int v, int w); 
@@ -39,7 +45,7 @@ void Graph::addEdge(int v, int w)
 
 void Graph::greedyColoring() 
 { 
-	int result[V]; 
+	std::vector<int>result(V); 
 
 	// Assign the first color to first vertex 
 	
@@ -55,7 +61,8 @@ void Graph::greedyColoring()
 	// value of available[color] would mean that the color 'color' is 
 	// assigned to one of its adjacent vertices 
 	
-	bool available[V]; 
+	std::vector<bool>available(V); 
+	
 	for (int color = 0; color < V; color++){
 		available[color] = false; 
 	}
@@ -100,9 +107,9 @@ void Graph::greedyColoring()
 } 
 
 
-}//namespace Graph
+}//namespace NP_complete_graph_coloring
 
-}//namespace np complete
+}//namespace graph
 
 //Function to test the above algorithm
 
@@ -143,3 +150,6 @@ int main()
     return 0;
 } 
 
+
+
+	
