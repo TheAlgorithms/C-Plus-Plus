@@ -220,7 +220,7 @@ static void tests() {
 
     s = 1, t = 5;
     std::cout << "Initiating Test 3..." << std::endl;
-    assert(graph::Bidijkstra(&adj2_1, &adj2_2, s - 1, t - 1) == 6);
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj2_1, &adj2_2, s - 1, t - 1) == 6);
     std::cout << "Test 3 Passed..." << std::endl;
     std::cout << "All Test Passed..." << std::endl << std::endl;
 }
