@@ -251,7 +251,7 @@ int main() {
 
     int s = int(), t = int();
     std::cin >> s >> t;
-    int dist = graph::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
+    int dist = graph::bidirectional_dijkstra::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
     if (dist == -1) {
         std::cout << "Target not reachable from source" << std::endl;
     } else {
