@@ -208,15 +208,15 @@ static void tests() {
         5, std::vector<std::pair<int, int>>());
     std::vector<std::vector<std::pair<int, int>>> adj2_2(
         5, std::vector<std::pair<int, int>>());
-    graph::addEdge(&adj2_1, &adj2_2, 1, 2, 4);
-    graph::addEdge(&adj2_1, &adj2_2, 1, 3, 2);
-    graph::addEdge(&adj2_1, &adj2_2, 2, 3, 2);
-    graph::addEdge(&adj2_1, &adj2_2, 3, 2, 1);
-    graph::addEdge(&adj2_1, &adj2_2, 2, 4, 2);
-    graph::addEdge(&adj2_1, &adj2_2, 3, 5, 4);
-    graph::addEdge(&adj2_1, &adj2_2, 5, 4, 1);
-    graph::addEdge(&adj2_1, &adj2_2, 2, 5, 3);
-    graph::addEdge(&adj2_1, &adj2_2, 3, 4, 4);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 1, 2, 4);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 1, 3, 2);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 2, 3, 2);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 3, 2, 1);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 2, 4, 2);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 3, 5, 4);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 5, 4, 1);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 2, 5, 3);
+    graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 3, 4, 4);
 
     s = 1, t = 5;
     std::cout << "Initiating Test 3..." << std::endl;
