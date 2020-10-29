@@ -179,6 +179,7 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
     }
     return -1;
 }
+}  // namespace bidirectional_dijkstra
 }  // namespace graph
 
 /** Function to test the Algorithm */
