@@ -196,10 +196,10 @@ static void tests() {
         4, std::vector<std::pair<int, int>>());
     std::vector<std::vector<std::pair<int, int>>> adj1_2(
         4, std::vector<std::pair<int, int>>());
-    graph::addEdge(&adj1_1, &adj1_2, 1, 2, 1);
-    graph::addEdge(&adj1_1, &adj1_2, 4, 1, 2);
-    graph::addEdge(&adj1_1, &adj1_2, 2, 3, 2);
-    graph::addEdge(&adj1_1, &adj1_2, 1, 3, 5);
+    graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 1, 2, 1);
+    graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 4, 1, 2);
+    graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 2, 3, 2);
+    graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 1, 3, 5);
 
     int s = 1, t = 3;
     assert(graph::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 3);
