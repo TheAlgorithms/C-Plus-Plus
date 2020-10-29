@@ -202,7 +202,7 @@ static void tests() {
     graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 1, 3, 5);
 
     int s = 1, t = 3;
-    assert(graph::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 3);
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 3);
     std::cout << "Test 1 Passed..." << std::endl;
 
     s = 4, t = 3;
