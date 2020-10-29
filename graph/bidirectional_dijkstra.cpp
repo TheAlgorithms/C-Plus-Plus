@@ -183,7 +183,7 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
 }  // namespace graph
 
 /** Function to test the Algorithm */
-void tests() {
+static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
     std::cout << "Initiating Test 1..." << std::endl;
     std::vector<std::vector<std::pair<int, int>>> adj1_1(
