@@ -32,6 +32,12 @@ constexpr int64_t INF = std::numeric_limits<int64_t>::max();
  */
 namespace graph {
 /**
+ * @namespace bidirectional_dijkstra
+ * @brief Functions for [Bidirectional Dijkstra Shortest Path]
+ * (https://www.coursera.org/learn/algorithms-on-graphs/lecture/7ml18/bidirectional-dijkstra) algorithm
+ */
+namespace bidirectional_dijkstra {
+/**
  * @brief Function that add edge between two nodes or vertices of graph
  *
  * @param adj1 adjacency list for the direct search
