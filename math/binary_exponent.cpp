@@ -34,11 +34,11 @@
 
 /// Recursive function to calculate exponent in \f$O(\log(n))\f$ using binary
 /// exponent.
-long long int binExpo(long long int a, long long int b) {
+uint64_t binExpo(uint64_t a, uint64_t b) {
     if (b == 0) {
         return 1;
     }
-    long long int res = binExpo(a, b>>1); 
+    uint64_t res = binExpo(a, b>>1); 
     if (b&1) { // Same as b%2==1. Result to true if b is odd.
         return res * res * a;
     } else {
@@ -48,11 +48,11 @@ long long int binExpo(long long int a, long long int b) {
 
 /// Recursive function to calculate exponent modular m (a^b %m) in \f$O(\log(n))\f$ using 
 /// binary exponentiation.
-long long int binModExpo(long long int a, long long int b, long long int m) {
+uint64_t binModExpo(uint64_t a, uint64_t b, uint64_t m) {
     if (b == 0) {
         return 1;
     }
-    long long int res = binExpo(a, b>>1, m) % m;
+    uint64_t res = binExpo(a, b>>1, m) % m;
     if (b&1) {
         return (res * res * a%m ) % m;
     } else {
@@ -62,8 +62,8 @@ long long int binModExpo(long long int a, long long int b, long long int m) {
 
 /// Iterative function to calculate exponent in \f$O(\log(n))\f$ using binary
 /// exponent.
-long long int binExpo_alt(long long int a, long long int b) {
-    long long int res = 1;
+uint64_t binExpo_alt(uint64_t a, uint64_t b) {
+    uint64_t res = 1;
     while (b > 0) {
         if (b&2) {
             res = res * a;
@@ -77,8 +77,8 @@ long long int binExpo_alt(long long int a, long long int b) {
 
 /// Iterative function to calculate exponent modular m (a^b %m) in \f$O(\log(n))\f$ using
 /// binary exponentiation.
-long long int binModExpo_alt(long long int a, long long int b, long long int m) {
-    long long int res = 1;
+uint64_t binModExpo_alt(uint64_t a, uint64_t b, uint64_t m) {
+    uint64_t res = 1;
     a %= m ;
     while (b > 0) {
         if (b&1) {
@@ -92,7 +92,7 @@ long long int binModExpo_alt(long long int a, long long int b, long long int m) 
 
 /// Main function
 int main() {
-    long long int a, b, m;
+    uint64_t a, b, m;
     /// Give three numbers a, b, m.
     std::cin >> a >> b >> m;
     if (a == 0 && b == 0) {
