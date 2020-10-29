@@ -41,11 +41,11 @@ uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
     while (b > 0) {
         /// If b is odd, multiply a with answer
         if (b & 1) {
-            ans = (ans * a) % c;
+            ans = ((ans % c) * (a % c)) % c;
         }
         /// b must be even now
         b = b >> 1;  /// b = b/2
-        a = (a * a) % c;
+        a = ((a % c) * (a % c)) % c;
     }
     return ans;
 }
