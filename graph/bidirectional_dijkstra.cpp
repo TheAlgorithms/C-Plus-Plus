@@ -207,7 +207,7 @@ static void tests() {
 
     s = 4, t = 3;
     std::cout << "Initiating Test 2..." << std::endl;
-    assert(graph::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 5);
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 5);
     std::cout << "Test 2 Passed..." << std::endl;
 
     std::vector<std::vector<std::pair<int, int>>> adj2_1(
