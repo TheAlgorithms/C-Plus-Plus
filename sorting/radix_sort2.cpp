@@ -11,13 +11,13 @@
  *sorting digit by digit
  *sorting according to
  *1) 1st digit place
- *=> 432,332,143,123,234
+ *=> 432, 332, 143, 123, 234
  *
  *2) 2nd digit place
- *=> 123,432,332,234,143
+ *=> 123, 432, 332, 234, 143
  *
  *3) 3rd digit place
- *=> 123,143,234,332,432
+ *=> 123, 143, 234, 332, 432
  *
  *using count sort at each step, which is stable.
  *stable => already sorted according to previous digits.
@@ -27,6 +27,7 @@
 #include <iostream>  // for io operations
 #include <vector>    // for std::vector
 #include <algorithm> // for collection of functions
+#include <assert.h>  // for a macro called assert which can be used to verify assumptions  
 /**
  * @namespace sorting
  * @brief Sorting algorithms
@@ -41,23 +42,23 @@ namespace sorting {
         /**
         * @brief Function to sort vector according to current digit using stable
         * sorting.
-        * @returns none
+        * @returns std::vector sorted till ith digit
         */
         std::vector<int> step_ith(int cur_digit,const std::vector<int>& ar) {  // sorting according to current digit.
             int n = ar.size();
             std::vector<int> position(10, 0);
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; ++i) {
                 position[(ar[i] / cur_digit) %
                          10]++;  // counting frequency of 0-9 at cur_digit.
             }
             int cur = 0;
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 10; ++i) {
                 int a = position[i];
                 position[i] = cur;  // assingning starting position of 0-9.
                 cur += a;
             }
             std::vector<int> temp(n);
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; ++i) {
                 temp[position[(ar[i] / cur_digit) % 10]] =
                     ar[i];  // storing ar[i] in ar[i]'s cur_digit expected position of
                             // this step.
@@ -69,18 +70,19 @@ namespace sorting {
         }
         /**
         * @brief Function to sort vector digit by digit.
-        * @returns none
+        * @returns sorted vector
         */
-        void radix(const std::vector<int>& ar) {
+        std::vector<int> radix(const std::vector<int>& ar) {
             int max_ele = *max_element(ar.begin(), ar.end()); // returns the max element.
             std::vector<int> temp = ar;
             for (int i = 1; max_ele / i > 0;
                  i *= 10) {  // loop breaks when i > max_ele because no further digits
                              // left to makes changes in aray.
-                temp = step_ith(i,ar);
+                temp = step_ith(i,temp);
             }
-            for (int i = 0; i < temp.size(); i++) std::cout << temp[i] << " ";
+            for (int i = 0; i < temp.size(); ++i) std::cout << temp[i] << " ";
             std::cout << "\n";
+            return temp;
         }
     }  // namespace radix_sort
 }  // namespace sorting
@@ -89,34 +91,32 @@ namespace sorting {
  * Function to test the above algorithm
  * @returns none
  */
-static void test1() {
-    std::vector<int> ar = {432, 234, 143, 332, 123};
-    sorting::radix_sort::radix(ar);
-}
-/**
- * Function to test the above algorithm
- * @returns none
- */
-static void test2() {
-    std::vector<int> ar = {213, 3214, 123, 111, 112, 142,
+static void tests() {
+    /// Test 1
+    std::vector<int> ar1 = {432, 234, 143, 332, 123};
+    ar1 = sorting::radix_sort::radix(ar1);
+    assert(std::is_sorted(ar1.begin(), ar1.end()));
+    /// Test 2
+    std::vector<int> ar2 = {213, 3214, 123, 111, 112, 142,
                            133, 132,  32,  12,  113};
-    sorting::radix_sort::radix(ar);
+    ar2 = sorting::radix_sort::radix(ar2);
+    assert(std::is_sorted(ar2.begin(), ar2.end()));
 }
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    test1();
-    test2();  // execute the tests
+    tests();  // execute the tests
     int n = 0;
     std::cin >> n;
     std::vector<int> ar;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; ++i) {
         int x = 0;
         std::cin >> x;
         ar.push_back(x);
     }
-    sorting::radix_sort::radix(ar);
+    ar = sorting::radix_sort::radix(ar);
+    assert(std::is_sorted(ar.begin(), ar.end()));
     return 0;
 }
