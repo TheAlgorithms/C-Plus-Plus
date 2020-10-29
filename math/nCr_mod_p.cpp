@@ -4,49 +4,56 @@
  *  SInce this number can be very large, we will calulate answer modulo p
  */
 #include <iostream>
-#include<vector>
+#include <vector>
 
-using namespace std;
-
-vector<long long> fac; //Store pre-computed factorials
+std::vector<int64_t> fac; //Store pre-computed factorials
 
 /** function to find inverse modulo of given number */
-long long inverse(long long i,long long m){
-    if(i==1) return 1;
-    return (m - ((m/i)*inverse(m%i,m))%m+m)%m;
+int64_t inverse(int64_t i, int64_t m)
+{
+    if (i == 1)
+    {
+        return 1;
+    }
+
+    return (m - ((m / i) * inverse(m % i, m)) % m + m) % m;
 }
 
-long long nCr(long long n,long long r,long long p)
+int64_t nCr(int64_t n, int64_t r, int64_t p)
 {
-    if(r>n)
-    return 0;
-    else if(r==0||r==n)
-    return 1;
+    if (r > n)
+    {
+        return 0;
+    }
+    else if (r == 0 || r == n)
+    {
+        return 1;
+    }
     else
     {
-        return(((fac[n]*inverse(fac[r],p))%p)*inverse(fac[n-r],p))%p;
+        return (((fac[n] * inverse(fac[r], p)) % p) * inverse(fac[n - r], p)) % p;
     }
-    
 }
 /** Main function */
-int main() {
-    int n,r,p;
+int main()
+{
+    int n=0, r=0, p=0;
     // p should be a prime number
-    cin>>n>>r>>p;
+    std::cin >> n >> r >> p;
 
-    fac = vector<long long>(n+1);
+    fac = std::vector<int64_t>(n + 1);
 
-    fac[0]=1;
+    fac[0] = 1;
 
     //Loop to pre-calculate i factorial for 0<=i<=n
-    for(int i=1;i<=n;i++)
+    for (int i = 1; i <= n; i++)
     {
-        fac[i]=(fac[i-1]*i)%p;
+        fac[i] = (fac[i - 1] * i) % p;
     }
 
-    long long answer = nCr(n,r,p);
+    int64_t answer = nCr(n, r, p);
 
-    cout<<answer<<endl;
+    std::cout << answer;
 
     return 0;
 }
