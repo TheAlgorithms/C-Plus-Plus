@@ -13,7 +13,7 @@
  * https://www.youtube.com/watch?v=DINCL5cd_w0&t=24s
  */
 
-#include <math.h>
+#include <cmath>
 #include <cassert>
 #include <cstdio>
 #include <iostream>
