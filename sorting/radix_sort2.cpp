@@ -3,10 +3,10 @@
  * @brief Algorithm of [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
  * @author [Suyash Jaiswal](https://github.com/Suyashjaiswal)
  * @details
- * Sort the vector of integers using radix sort i.e. sorting digit by digit
+ * Sort the vector of unsigned integers using radix sort i.e. sorting digit by digit
  using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as subroutine.
  * Running time of radix sort is O(d*(n+b)) where b is the base for representing
- numbers and d in the max digits in input inegers and n is number of integers.
+ numbers and d in the max digits in input inegers and n is number of unsigned integers.
  * consider example for n = 5, aray elements = 432,234,143,332,123
  *sorting digit by digit
  *sorting according to
@@ -44,7 +44,7 @@ namespace sorting {
         * sorting.
         * @returns std::vector sorted till ith digit
         */
-        std::vector<int> step_ith(int cur_digit,const std::vector<int>& ar) {  // sorting according to current digit.
+        std::vector<uint64_t> step_ith(int cur_digit,const std::vector<uint64_t>& ar) {  // sorting according to current digit.
             int n = ar.size();
             std::vector<int> position(10, 0);
             for (int i = 0; i < n; ++i) {
@@ -57,7 +57,7 @@ namespace sorting {
                 position[i] = cur;  // assingning starting position of 0-9.
                 cur += a;
             }
-            std::vector<int> temp(n);
+            std::vector<uint64_t> temp(n);
             for (int i = 0; i < n; ++i) {
                 temp[position[(ar[i] / cur_digit) % 10]] =
                     ar[i];  // storing ar[i] in ar[i]'s cur_digit expected position of
@@ -72,9 +72,9 @@ namespace sorting {
         * @brief Function to sort vector digit by digit.
         * @returns sorted vector
         */
-        std::vector<int> radix(const std::vector<int>& ar) {
-            int max_ele = *max_element(ar.begin(), ar.end()); // returns the max element.
-            std::vector<int> temp = ar;
+        std::vector<uint64_t> radix(const std::vector<uint64_t>& ar) {
+            uint64_t max_ele = *max_element(ar.begin(), ar.end()); // returns the max element.
+            std::vector<uint64_t> temp = ar;
             for (int i = 1; max_ele / i > 0;
                  i *= 10) {  // loop breaks when i > max_ele because no further digits
                              // left to makes changes in aray.
@@ -93,11 +93,11 @@ namespace sorting {
  */
 static void tests() {
     /// Test 1
-    std::vector<int> ar1 = {432, 234, 143, 332, 123};
+    std::vector<uint64_t> ar1 = {432, 234, 143, 332, 123};
     ar1 = sorting::radix_sort::radix(ar1);
     assert(std::is_sorted(ar1.begin(), ar1.end()));
     /// Test 2
-    std::vector<int> ar2 = {213, 3214, 123, 111, 112, 142,
+    std::vector<uint64_t> ar2 = {213, 3214, 123, 111, 112, 142,
                            133, 132,  32,  12,  113};
     ar2 = sorting::radix_sort::radix(ar2);
     assert(std::is_sorted(ar2.begin(), ar2.end()));
@@ -110,9 +110,9 @@ int main() {
     tests();  // execute the tests
     int n = 0;
     std::cin >> n;
-    std::vector<int> ar;
+    std::vector<uint64_t> ar;
     for (int i = 0; i < n; ++i) {
-        int x = 0;
+        uint64_t x = 0;
         std::cin >> x;
         ar.push_back(x);
     }
