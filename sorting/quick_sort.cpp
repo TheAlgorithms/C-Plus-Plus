@@ -48,7 +48,6 @@ int partition(int arr[], int low, int high) {
             arr[j] = temp;
         }
     }
-
     return i;
 }
 
@@ -78,7 +77,7 @@ void show(int arr[], int size) {
 
 /** Driver program to test above functions */
 int main() {
-    int size;
+    int size=0;
     std::cout << "\nEnter the number of elements : ";
 
     std::cin >> size;
