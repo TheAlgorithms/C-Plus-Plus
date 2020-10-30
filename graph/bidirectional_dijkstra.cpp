@@ -181,7 +181,7 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
         if (visited[currentNode] == 1) {
             return Shortest_Path_Distance(workset, dist);
         }
-        visited[currentNode] = 1;
+        visited[currentNode] = true;
     }
     return -1;
 }
