@@ -61,7 +61,7 @@ void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj1,
  * from the target to the source
  * 
  */
-int Shortest_Path_Distance(std::vector<int> workset_,
+int Shortest_Path_Distance(const std::vector<int> &workset_,
                   std::vector<std::vector<int64_t>> distance_) {
     int64_t distance = INF;
     for (int i : workset_) {
