@@ -142,8 +142,11 @@
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
+  * [Lcm Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/lcm_sum.cpp)
   * [Least Common Multiple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/least_common_multiple.cpp)
+  * [Magic Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/magic_number.cpp)
   * [Miller Rabin](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/miller_rabin.cpp)
+  * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
   * [Power For Huge Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/power_for_huge_numbers.cpp)
@@ -154,6 +157,7 @@
   * [Sieve Of Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sieve_of_eratosthenes.cpp)
   * [Sqrt Double](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sqrt_double.cpp)
   * [String Fibonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/string_fibonacci.cpp)
+  * [Sum Of Binomial Coefficient](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_binomial_coefficient.cpp)
   * [Sum Of Digits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_digits.cpp)
 
 ## Numerical Methods
@@ -263,6 +267,7 @@
   * [Strand Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/strand_sort.cpp)
   * [Swap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/swap_sort.cpp)
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/tim_sort.cpp)
+  * [Wiggle Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/wiggle_sort.cpp)
 
 ## Strings
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
