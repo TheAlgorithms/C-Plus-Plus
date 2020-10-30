@@ -53,7 +53,7 @@ using AdjList = std::map<unsigned int, std::vector<unsigned int>>;
  */
 class Graph {
  public:
-    Graph() : m_vertices(0), m_adjList({}) {}
+    Graph() : m_adjList({}) {}
     ~Graph() = default;
     Graph(Graph&&) = default;
     Graph& operator=(Graph&&) = default;
@@ -65,8 +65,8 @@ class Graph {
      * @param vertices specify the number of vertices the graph would contain.
      * @param adjList is the adjacency list representation of graph.
      */
-    Graph(unsigned int vertices, AdjList const& adjList)
-        : m_vertices(vertices), m_adjList(adjList) {}
+    Graph(unsigned int vertices, AdjList adjList)
+        : m_vertices(vertices), m_adjList(std::move(adjList)) {}
 
     /** Create a graph from vertices and adjacency list.
      *
@@ -142,7 +142,7 @@ class Graph {
     }
 
  private:
-    unsigned int m_vertices;
+    unsigned int m_vertices = 0;
     AdjList m_adjList;
 };
 

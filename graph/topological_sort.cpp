@@ -2,7 +2,8 @@
 #include <iostream>
 #include <vector>
 
-int number_of_vertices, number_of_edges;  // For number of Vertices (V) and number of edges (E)
+int number_of_vertices,
+    number_of_edges;  // For number of Vertices (V) and number of edges (E)
 std::vector<std::vector<int>> graph;
 std::vector<bool> visited;
 std::vector<int> topological_order;
@@ -28,7 +29,8 @@ void topological_sort() {
     reverse(topological_order.begin(), topological_order.end());
 }
 int main() {
-    std::cout << "Enter the number of vertices and the number of directed edges\n";
+    std::cout
+        << "Enter the number of vertices and the number of directed edges\n";
     std::cin >> number_of_vertices >> number_of_edges;
     int x = 0, y = 0;
     graph.resize(number_of_vertices, std::vector<int>());
@@ -41,7 +43,7 @@ int main() {
     std::cout << "Topological Order : \n";
     for (int v : topological_order) {
         std::cout << v + 1
-             << ' ';  // converting zero based indexing back to one based.
+                  << ' ';  // converting zero based indexing back to one based.
     }
     std::cout << '\n';
     return 0;

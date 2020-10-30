@@ -4,7 +4,7 @@
 #include <queue>
 #include <vector>
 
-std::vector<int> topoSortKahn(int N, const std::vector< std::vector<int> > &adj);
+std::vector<int> topoSortKahn(int N, const std::vector<std::vector<int> > &adj);
 
 int main() {
     int nodes = 0, edges = 0;
@@ -14,7 +14,7 @@ int main() {
     }
     int u = 0, v = 0;
 
-    std::vector< std::vector<int> > graph(nodes);
+    std::vector<std::vector<int> > graph(nodes);
     // create graph
     // example
     // 6 6
@@ -32,7 +32,8 @@ int main() {
     }
 }
 
-std::vector<int> topoSortKahn(int V, const std::vector< std::vector<int> > &adj) {
+std::vector<int> topoSortKahn(int V,
+                              const std::vector<std::vector<int> > &adj) {
     std::vector<bool> vis(V + 1, false);
     std::vector<int> deg(V + 1, 0);
     for (int i = 0; i < V; i++) {

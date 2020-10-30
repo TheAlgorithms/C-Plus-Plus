@@ -15,9 +15,9 @@
  * <pre>
  * Example - Here is graph with 3 connected components
  *
- *      3   9           6               8
+ *      1   4           5               8
  *     / \ /           / \             / \
- *    2---4           2   7           3   7
+ *    2---3           6   7           9   10
  *
  *    first          second           third
  *    component      component        component
@@ -26,97 +26,123 @@
  */
 
 #include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <vector>
 
-using std::vector;
-
 /**
- * Class for representing graph as a adjacency list.
+ * @namespace graph
+ * @brief Graph Algorithms
  */
-class graph {
- private:
-    /** \brief adj stores adjacency list representation of graph */
-    vector<vector<int>> adj;
 
-    /** \brief keep track of connected components */
-    int connected_components;
-
-    void depth_first_search();
-    void explore(int, vector<bool> &);
-
- public:
-    /**
-     * \brief Constructor that intiliazes the graph on creation and set
-     * the connected components to 0
-     */
-    explicit graph(int n) : adj(n, vector<int>()) { connected_components = 0; }
-
-    void addEdge(int, int);
-
-    /**
-     * \brief Function the calculates the connected compoents in the graph
-     * by performing the depth first search on graph
-     *
-     * @return connected_components total connected components in graph
-     */
-    int getConnectedComponents() {
-        depth_first_search();
-        return connected_components;
-    }
-};
-
+namespace graph {
 /**
- * \brief Function that add edge between two nodes or vertices of graph
+ * @brief Function that add edge between two nodes or vertices of graph
  *
- * @param u any node or vertex of graph
- * @param v any node or vertex of graph
+ * @param adj adjacency list of graph.
+ * @param u any node or vertex of graph.
+ * @param v any node or vertex of graph.
  */
-void graph::addEdge(int u, int v) {
-    adj[u - 1].push_back(v - 1);
-    adj[v - 1].push_back(u - 1);
+void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
+    (*adj)[u - 1].push_back(v - 1);
+    (*adj)[v - 1].push_back(u - 1);
 }
 
 /**
- * \brief Function that perfoms depth first search algorithm on graph
+ * @brief Utility function for depth first seach algorithm
+ * this function explores the vertex which is passed into.
+ *
+ * @param adj adjacency list of graph.
+ * @param u vertex or node to be explored.
+ * @param visited already visited vertices.
  */
-void graph::depth_first_search() {
-    int n = adj.size();
-    vector<bool> visited(n, false);
+void explore(const std::vector<std::vector<int>> *adj, int u,
+             std::vector<bool> *visited) {
+    (*visited)[u] = true;
+    for (auto v : (*adj)[u]) {
+        if (!(*visited)[v]) {
+            explore(adj, v, visited);
+        }
+    }
+}
+
+/**
+ * @brief Function that perfoms depth first search algorithm on graph
+ * and calculated the number of connected components.
+ *
+ * @param adj adjacency list of graph.
+ *
+ * @return connected_components number of connected components in graph.
+ */
+int getConnectedComponents(const std::vector<std::vector<int>> *adj) {
+    int n = adj->size();
+    int connected_components = 0;
+    std::vector<bool> visited(n, false);
 
     for (int i = 0; i < n; i++) {
         if (!visited[i]) {
-            explore(i, visited);
+            explore(adj, i, &visited);
             connected_components++;
         }
     }
+    return connected_components;
 }
-/**
- * \brief Utility function for depth first seach algorithm
- * this function explores the vertex which is passed into.
- *
- * @param u vertex or node to be explored
- * @param visited already visited vertex
- */
-void graph::explore(int u, vector<bool> &visited) {
-    visited[u] = true;
-    for (auto v : adj[u]) {
-        if (!visited[v]) {
-            explore(v, visited);
-        }
-    }
+}  // namespace graph
+
+/** Function to test the algorithm */
+void tests() {
+    std::cout << "Running predefined tests..." << std::endl;
+    std::cout << "Initiating Test 1..." << std::endl;
+    std::vector<std::vector<int>> adj1(9, std::vector<int>());
+    graph::addEdge(&adj1, 1, 2);
+    graph::addEdge(&adj1, 1, 3);
+    graph::addEdge(&adj1, 3, 4);
+    graph::addEdge(&adj1, 5, 7);
+    graph::addEdge(&adj1, 5, 6);
+    graph::addEdge(&adj1, 8, 9);
+
+    assert(graph::getConnectedComponents(&adj1) == 3);
+    std::cout << "Test 1 Passed..." << std::endl;
+
+    std::cout << "Innitiating Test 2..." << std::endl;
+    std::vector<std::vector<int>> adj2(10, std::vector<int>());
+    graph::addEdge(&adj2, 1, 2);
+    graph::addEdge(&adj2, 1, 3);
+    graph::addEdge(&adj2, 1, 4);
+    graph::addEdge(&adj2, 2, 3);
+    graph::addEdge(&adj2, 3, 4);
+    graph::addEdge(&adj2, 4, 8);
+    graph::addEdge(&adj2, 4, 10);
+    graph::addEdge(&adj2, 8, 10);
+    graph::addEdge(&adj2, 8, 9);
+    graph::addEdge(&adj2, 5, 7);
+    graph::addEdge(&adj2, 5, 6);
+    graph::addEdge(&adj2, 6, 7);
+
+    assert(graph::getConnectedComponents(&adj2) == 2);
+    std::cout << "Test 2 Passed..." << std::endl;
 }
 
 /** Main function */
 int main() {
-    /// creating a graph with 4 vertex
-    graph g(4);
+    /// running predefined tests
+    tests();
 
-    /// Adding edges between vertices
-    g.addEdge(1, 2);
-    g.addEdge(3, 2);
+    int vertices = int(), edges = int();
+    std::cout << "Enter the number of vertices : ";
+    std::cin >> vertices;
+    std::cout << "Enter the number of edges : ";
+    std::cin >> edges;
 
-    /// printing the connected components
-    std::cout << g.getConnectedComponents();
+    std::vector<std::vector<int>> adj(vertices, std::vector<int>());
+
+    int u = int(), v = int();
+    while (edges--) {
+        std::cin >> u >> v;
+        graph::addEdge(&adj, u, v);
+    }
+
+    int cc = graph::getConnectedComponents(&adj);
+    std::cout << cc << std::endl;
     return 0;
 }
