@@ -6,32 +6,14 @@
 
 #include <iostream>
 #include<cassert>
-using namespace std;
-#define N 5
+#include<array>
 
-/**
-*function to print and take entries of matrix
-*/
-void get_matrix(float A[][N],int *n){
-	cout<<"Enter the order of matrix A:\n";
-	cin>>*n;
-	cout<<"Enter the entries of matrix A:\n";
-	for(int i=0;i<*n;i++){
-		cout<<"Row "<<i+1<<endl;
-		for(int j=0;j<*n;j++)
-			cin>>A[i][j];
-	}
-	cout<<"\nMatrix A:\n";
-	for(int i=0;i<*n;i++){
-		for(int j=0;j<*n;j++)
-			cout<<A[i][j]<<"\t";
-		cout<<endl;
-	}
-}
 /**
 *function to get row with non zero ith element
 */
-int get_row(float A[][N],int n,int i){
+int get_row(std::array<std::array<float,2>,2> &A,int i)
+{
+	int n=A.size();
 	for(int j=i;j<n;j++){
 		if(A[j][i]!=0){
 			return j;
@@ -42,8 +24,10 @@ int get_row(float A[][N],int n,int i){
 /**
 *function to interchange the rows
 */
-void swap_row(float A[][N],int n,int i,int j){
-	float temp;
+void swap_row(std::array<std::array<float,2>,2> &A,int i,int j)
+{
+	int n=A.size();
+	float temp=0;
 	for(int k=0;k<n;k++){
 		temp=A[i][k];
 		A[i][k]=A[j][k];
@@ -54,7 +38,9 @@ void swap_row(float A[][N],int n,int i,int j){
 *function to operate on rows
 *jth row is substracted by key*ith row
 */
-void substract_row(float A[][N],int n,int i,int j,float key){
+void substract_row(std::array<std::array<float,2>,2> &A,int i,int j,float key)
+{
+	int n=A.size();
 	for(int k=0;k<n;k++){
 		A[j][k]-=key*A[i][k];
 	}
@@ -62,21 +48,23 @@ void substract_row(float A[][N],int n,int i,int j,float key){
 /**
 *function to compute determinant
 */
-float determinant(float A[][N],int n){
-	float det=1,key;
+float determinant(std::array<std::array<float,2>,2> &A)
+{
+	int n=A.size();
+	float det=1,key=0;
 	for(int i=0;i<n;i++){
-		int j=get_row(A,n,i);
+		int j=get_row(A,i);
 		if(j==-1){
 		   //if rank(A)<n, then determinant is zero
 		   return 0;
 		}
 		if(j!=i){
-		   swap_row(A,n,i,j);
+		   swap_row(A,i,j);
 		   det*=-1;
 		}
 		for(j=i+1;j<n;j++){
 			key=A[j][i]/A[i][i];
-			substract_row(A,n,i,j,key);
+			substract_row(A,i,j,key);
 		}
 	}
 	for(int i=0;i<n;i++){
@@ -87,23 +75,21 @@ float determinant(float A[][N],int n){
 /**
 *test implementation
 */
-void test(){
-   cout<<"testing…";
-   int n=2;
-	float A[N][N]={{0,4},{5,1}};
-	assert(determinant(A,n)==-20);
-	cout<<"passed"<<endl;
+static void test()
+{
+	std::cout<<"testingâ€¦";
+	int n=2;
+	std::array<std::array<float,2>,2> A={{{0,4},{5,1}}};
+	assert(determinant(A)==-20);
+	std::cout<<"passed"<<std::endl;
 }
 /**
 *main function
 */
-int main() {
+int main() 
+{
 	//perform self test
 	test();
-	int n;
-	float A[N][N]={};
-	get_matrix(A,&n);
-	cout<<"Determinant of A is \t"<<determinant(A,n);
 	return 0;
 }
 
