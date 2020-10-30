@@ -66,7 +66,7 @@ int main()
             break;
         }else if(instruction=="add"){
             cout<<"Enter the element top be pushed"<<endl;
-            char pu; //element to be pushed
+            char pu=''; //element to be pushed
             cin>>pu;
             S.push(pu);
                 cout<<"Element successfully pushed"<<endl;
