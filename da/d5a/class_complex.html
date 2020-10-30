@@ -365,9 +365,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number times other number. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                            {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> result(this-&gt;re * other.re - this-&gt;im * other.im,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re * other.re - this-&gt;im * other.im,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                       this-&gt;re * other.im + this-&gt;im * other.re);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -405,8 +405,8 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number plus other number </dd></dl>
 <div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                            {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> result(this-&gt;re + other.re, this-&gt;im + other.im);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re + other.re, this-&gt;im + other.im);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -444,8 +444,8 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result current number subtract other number </dd></dl>
 <div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                            {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> result(this-&gt;re - other.re, this-&gt;im - other.im);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re - other.re, this-&gt;im - other.im);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -483,13 +483,13 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result Current number divided by other number. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                            {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> result = *<span class="keyword">this</span> * ~other;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = *<span class="keyword">this</span> * ~other;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">double</span> denominator =</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            other.<a class="code" href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6">real</a>() * other.<a class="code" href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6">real</a>() + other.<a class="code" href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">imag</a>() * other.<a class="code" href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">imag</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (denominator != 0) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            result = <a class="code" href="../../da/d5a/class_complex.html#a3cfc522c782726f49ee20af17b77f867">Complex</a>(result.<a class="code" href="../../da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6">real</a>() / denominator,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                             result.<a class="code" href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">imag</a>() / denominator);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../da/d5a/class_complex.html#a3cfc522c782726f49ee20af17b77f867">Complex</a>(<a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.real() / denominator,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                             <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.imag() / denominator);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">throw</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Undefined Value&quot;</span>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
@@ -529,8 +529,8 @@ Here is the call graph for this function:</div>
 <p>Operator overload of '~' on <a class="el" href="../../da/d5a/class_complex.html" title="Class Complex to represent complex numbers as a field.">Complex</a> class. Operator overload of the BITWISE NOT which gives us the conjugate of our complex number. NOTE: This is overloading the BITWISE operator but its not a BITWISE operation in this definition. </p>
 <dl class="section return"><dt>Returns</dt><dd>result The conjugate of our complex number. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                              {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> result(this-&gt;re, -(this-&gt;im));</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="../../da/d5a/class_complex.html">Complex</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(this-&gt;re, -(this-&gt;im));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -549,6 +549,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
 <div class="ttc" id="aclass_complex_html_af8aacf982e2e6c142921bc850f6dc974"><div class="ttname"><a href="../../da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974">Complex::imag</a></div><div class="ttdeci">double imag() const</div><div class="ttdoc">Member function to get imaginary value of our complex number. Member function (getter) to access the ...</div><div class="ttdef"><b>Definition:</b> complex_numbers.cpp:70</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

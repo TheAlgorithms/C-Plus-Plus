@@ -1,11 +1,8 @@
 <map id="miller_test" name="miller_test">
-<area shape="rect" id="node1" title=" " alt="" coords="5,157,88,184"/>
-<area shape="rect" id="node2" href="$d6/d42/miller__rabin_8cpp.html#ad6c2c67ea416d0e80003a88623f98b29" title=" " alt="" coords="136,81,295,108"/>
-<area shape="rect" id="node6" href="$dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" title="This function calculates a raised to exponent b under modulo c using modular exponentiation." alt="" coords="168,157,263,184"/>
-<area shape="rect" id="node8" href="$d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5" title=" " alt="" coords="162,208,269,235"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="355,5,485,32"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="360,56,480,83"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="362,107,478,133"/>
-<area shape="rect" id="node7" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="399,157,441,184"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="343,208,497,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,88,108"/>
+<area shape="rect" id="node2" href="$d6/d42/miller__rabin_8cpp.html#ad6c2c67ea416d0e80003a88623f98b29" title=" " alt="" coords="136,56,295,83"/>
+<area shape="rect" id="node6" href="$d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5" title=" " alt="" coords="162,107,269,133"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="343,5,473,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="348,56,468,83"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="350,107,466,133"/>
 </map>

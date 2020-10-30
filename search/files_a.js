@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['jarvis_5falgorithm_2ecpp_2907',['jarvis_algorithm.cpp',['../d4/d8d/jarvis__algorithm_8cpp.html',1,'']]],
-  ['jump_5fsearch_2ecpp_2908',['jump_search.cpp',['../d2/d22/jump__search_8cpp.html',1,'']]],
-  ['jumpgame_2ecpp_2909',['jumpgame.cpp',['../df/d64/jumpgame_8cpp.html',1,'']]]
+  ['jarvis_5falgorithm_2ecpp_2913',['jarvis_algorithm.cpp',['../d4/d8d/jarvis__algorithm_8cpp.html',1,'']]],
+  ['jump_5fsearch_2ecpp_2914',['jump_search.cpp',['../d2/d22/jump__search_8cpp.html',1,'']]],
+  ['jumpgame_2ecpp_2915',['jumpgame.cpp',['../df/d64/jumpgame_8cpp.html',1,'']]]
 ];

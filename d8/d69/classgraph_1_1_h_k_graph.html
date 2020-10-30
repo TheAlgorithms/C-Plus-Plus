@@ -425,7 +425,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d8/d69/classgraph_1_1_h_k_graph.html#a6a0228bbba3818447fcf6b56128b552a">dist</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>(<a class="code" href="../../d8/d69/classgraph_1_1_h_k_graph.html#a3d9101e3b4598159005fd028b9b0ff74">m</a> + 1);  <span class="comment">// dist[u] stores distance of left side vertices</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> result = 0;  <span class="comment">// Initialize result</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = 0;  <span class="comment">// Initialize result</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Keep updating the result while there is an augmenting path possible.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93">bfs</a>())</div>
@@ -437,11 +437,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">// an augmenting path from current vertex</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">// then increment the result</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d8/d69/classgraph_1_1_h_k_graph.html#a86ebff8a70cbfedd05281993d5d1987b">pair_u</a>[u] == NIL &amp;&amp; <a class="code" href="../../d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0">dfs</a>(u)){</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                result++;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>++;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -471,6 +471,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a976ee239402cc2726a280e781c706d77"><div class="ttname"><a href="../../d8/d69/classgraph_1_1_h_k_graph.html#a976ee239402cc2726a280e781c706d77">graph::HKGraph::pair_v</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_v</div><div class="ttdoc">value of vertex 'v' ranges from 1 to n</div><div class="ttdef"><b>Definition:</b> hopcroft_karp.cpp:76</div></div>
 <div class="ttc" id="aclassgraph_1_1_h_k_graph_html_a86ebff8a70cbfedd05281993d5d1987b"><div class="ttname"><a href="../../d8/d69/classgraph_1_1_h_k_graph.html#a86ebff8a70cbfedd05281993d5d1987b">graph::HKGraph::pair_u</a></div><div class="ttdeci">std::vector&lt; int &gt; pair_u</div><div class="ttdoc">value of vertex 'u' ranges from 1 to m</div><div class="ttdef"><b>Definition:</b> hopcroft_karp.cpp:75</div></div>
 <div class="ttc" id="aclassgraph_1_1_h_k_graph_html_ae794950cb3407b6b47d3dc986cf714c0"><div class="ttname"><a href="../../d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0">graph::HKGraph::dfs</a></div><div class="ttdeci">bool dfs(int u)</div><div class="ttdoc">This functions checks whether an augmenting path is available exists beginning with free vertex u.</div><div class="ttdef"><b>Definition:</b> hopcroft_karp.cpp:191</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

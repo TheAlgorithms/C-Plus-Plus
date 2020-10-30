@@ -470,7 +470,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        roots[n] /= 25.f;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">auto</span> result = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; roots.size(); i++) {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">// check if approximations are have &lt; 0.1% error with one of the</span></div>
@@ -481,8 +481,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        assert(err1);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed! - &quot;</span> &lt;&lt; result.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              &lt;&lt; result.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed! - &quot;</span> &lt;&lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              &lt;&lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -525,7 +525,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        roots[n] /= 25.f;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">auto</span> result = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; roots.size(); i++) {</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">// check if approximations are have &lt; 0.1% error with one of the</span></div>
@@ -536,8 +536,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        assert(err1);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 passed! - &quot;</span> &lt;&lt; result.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;              &lt;&lt; result.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2 passed! - &quot;</span> &lt;&lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.first &lt;&lt; <span class="stringliteral">&quot; iterations, &quot;</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;              &lt;&lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.second &lt;&lt; <span class="stringliteral">&quot; accuracy&quot;</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -573,6 +573,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="ais_open_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">std::ofstream::is_open</a></div><div class="ttdeci">T is_open(T... args)</div></div>
 <div class="ttc" id="aexit_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/program/exit.html">std::exit</a></div><div class="ttdeci">T exit(T... args)</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:75</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

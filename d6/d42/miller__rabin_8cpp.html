@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -227,7 +227,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a901288288ef5ebe8e97414cc30797cce_cgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a901288288ef5ebe8e97414cc30797cce_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -280,9 +280,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Random number generated in the range [2, num -2].</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    T random = distribution(gen);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// vector for reverse binary of the power</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code" href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">power</a> = <a class="code" href="../../d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5">reverse_binary</a>(d);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311">power</a> = <a class="code" href="../../d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5">reverse_binary</a>(d);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// x = random ^ d % num</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    T x = <a class="code" href="../../d6/d42/miller__rabin_8cpp.html#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a>(random, <a class="code" href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">power</a>, num);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    T x = <a class="code" href="../../d6/d42/miller__rabin_8cpp.html#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a>(random, power, num);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// miller conditions</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (x == 1 || x == num - 1) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -303,7 +303,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a6f9c31c1047aa3191676d64571d4c506_cgraph.svg" width="503" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a6f9c31c1047aa3191676d64571d4c506_cgraph.svg" width="479" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -404,21 +404,15 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result vector of the number input in reverse binary </dd></dl>
 <div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                   {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> result;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    T temp = num;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">while</span> (temp &gt; 0) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        result.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(temp % 2);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(temp % 2);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        temp = temp / 2;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a798398d5bfd375a3c0ce68100842f6f5_cgraph.svg" width="320" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88ec9ad42717780d6caaff9d3d6977f9"></a>
@@ -461,7 +455,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d42/miller__rabin_8cpp_a88ec9ad42717780d6caaff9d3d6977f9_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -469,22 +463,22 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="afibonacci__sum_8cpp_html_a7cf5feaf168b88e74544da59ed830311"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311">math::fibonacci_sum::power</a></div><div class="ttdeci">math::fibonacci_sum::matrix power(math::fibonacci_sum::matrix T, uint64_t ex)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:56</div></div>
 <div class="ttc" id="auniform_int_distribution_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution.html">std::uniform_int_distribution</a></div></div>
 <div class="ttc" id="amiller__rabin_8cpp_html_a901288288ef5ebe8e97414cc30797cce"><div class="ttname"><a href="../../d6/d42/miller__rabin_8cpp.html#a901288288ef5ebe8e97414cc30797cce">miller_rabin_primality_test</a></div><div class="ttdeci">bool miller_rabin_primality_test(T num, T repeats)</div><div class="ttdef"><b>Definition:</b> miller_rabin.cpp:125</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="amiller__rabin_8cpp_html_a798398d5bfd375a3c0ce68100842f6f5"><div class="ttname"><a href="../../d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5">reverse_binary</a></div><div class="ttdeci">std::vector&lt; T &gt; reverse_binary(T num)</div><div class="ttdef"><b>Definition:</b> miller_rabin.cpp:19</div></div>
 <div class="ttc" id="amersenne_twister_engine_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine.html">std::mt19937</a></div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="arandom_device_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/random_device.html">std::random_device</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="amiller__rabin_8cpp_html_ad6c2c67ea416d0e80003a88623f98b29"><div class="ttname"><a href="../../d6/d42/miller__rabin_8cpp.html#ad6c2c67ea416d0e80003a88623f98b29">modular_exponentiation</a></div><div class="ttdeci">T modular_exponentiation(T base, const std::vector&lt; T &gt; &amp;rev_binary_exponent, T mod)</div><div class="ttdef"><b>Definition:</b> miller_rabin.cpp:43</div></div>
 <div class="ttc" id="amiller__rabin_8cpp_html_a6f9c31c1047aa3191676d64571d4c506"><div class="ttname"><a href="../../d6/d42/miller__rabin_8cpp.html#a6f9c31c1047aa3191676d64571d4c506">miller_test</a></div><div class="ttdeci">bool miller_test(T d, T num)</div><div class="ttdef"><b>Definition:</b> miller_rabin.cpp:73</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::cbegin</a></div><div class="ttdeci">T cbegin(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_afcd07701d73ed65cd616bcba02737f3d"><div class="ttname"><a href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">math::power</a></div><div class="ttdeci">uint64_t power(uint64_t a, uint64_t b, uint64_t c)</div><div class="ttdoc">This function calculates a raised to exponent b under modulo c using modular exponentiation.</div><div class="ttdef"><b>Definition:</b> modular_exponentiation.cpp:35</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::cend</a></div><div class="ttdeci">T cend(T... args)</div></div>
 <div class="ttc" id="amiller__rabin_8cpp_html_a88ec9ad42717780d6caaff9d3d6977f9"><div class="ttname"><a href="../../d6/d42/miller__rabin_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9">tests</a></div><div class="ttdeci">void tests()</div><div class="ttdef"><b>Definition:</b> miller_rabin.cpp:157</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

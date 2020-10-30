@@ -204,7 +204,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (lst.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/size.html">size</a>() &lt; 2) { <span class="comment">// Returns list if empty or contains only one element</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> lst; <span class="comment">// Returns list</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list&lt;T&gt;</a> result; <span class="comment">// Define new &quot;result&quot; named list instance.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list&lt;T&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">// Define new &quot;result&quot; named list instance.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list&lt;T&gt;</a> sorted; <span class="comment">// Define new &quot;sorted&quot; named list instance.</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">while</span>(!lst.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/empty.html">empty</a>()) <span class="comment">/* if lst is not empty */</span> {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                sorted.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/push_back.html">push_back</a>(lst.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/front.html">front</a>()); <span class="comment">// Adds the first element of &quot;lst&quot; list to the bottom of the &quot;sorted&quot; list.</span></div>
@@ -217,14 +217,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        it++; <span class="comment">// Next iterator.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                result.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list/merge.html">merge</a>(sorted); <span class="comment">// Merge &quot;result&quot; list with &quot;sorted&quot; list.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.merge(sorted); <span class="comment">// Merge &quot;result&quot; list with &quot;sorted&quot; list.</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> result; <span class="comment">// Returns sorted list</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">// Returns sorted list</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd9/strand__sort_8cpp_ad75dc6a599ecfe31dadfaf449ee565f6_cgraph.svg" width="374" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd9/strand__sort_8cpp_ad75dc6a599ecfe31dadfaf449ee565f6_cgraph.svg" width="374" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -285,10 +285,10 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/push_back.html">std::list::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aerase_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/erase.html">std::list::erase</a></div><div class="ttdeci">T erase(T... args)</div></div>
-<div class="ttc" id="amerge_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/merge.html">std::list::merge</a></div><div class="ttdeci">T merge(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/begin.html">std::list::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/empty.html">std::list::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/list/end.html">std::list::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
