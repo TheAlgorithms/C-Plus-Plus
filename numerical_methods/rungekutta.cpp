@@ -8,10 +8,10 @@
  * \details
  * It solves the unknown value of y 
  * for a given value of x
- * only first oreder differential equations
+ * only first order differential equations
  * can be solved
  * \example
- * it solves dy/dx=(x-y)/2 at a 
+ * it solves \frac{\mathrm{d} y}{\mathrm{d} x}= \frac{\left ( x-y \right )}{2}
  * given x for given initial 
  * conditions
  * There can be many such equations 
@@ -30,8 +30,8 @@
  */
 static double change(double x, double y) 
 { 
-	double val=((x - y)/2.0); 
-	return val;
+	return ((x - y)/2.0); 
+	
 } 
 
 /**
@@ -57,12 +57,12 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
 { 
 	 
 	  // Count number of iterations 
-	  //using step size or 
+	  // using step size or 
 	  // step height h 
 	  
 	 
 	  // n calucates the number of iterations
-	  // k1,k2,k3,k4 are the Runge Kutta variables 
+	  // k1, k2, k3, k4 are the Runge Kutta variables 
 	  // used for calculation of y at each iteration
 	  
 	 auto n = static_cast<uint64_t>((x - init_x) / h); 
@@ -73,7 +73,7 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
 	  // Iterate for number of iterations 
 	 
 	double y = init_y; 
-	for (int i=1; i<=n; i++) 
+	for (int i=1; i<=n; ++i) 
 	{ 
 						
 		 // Apply Runge Kutta Formulas 
@@ -86,11 +86,11 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
 		
 		// Update next value of y 
 		
-		y = y + (1.0/6.0)*(k[0] + 2*k[1] + 2*k[2] + k[3]);
+		y += (1.0/6.0)*(k[0] + 2*k[1] + 2*k[2] + k[3]);
 		
 		// Update next value of x 
 		
-		init_x = init_x + h; 
+		init_x += h; 
 	} 
 
 	return y; 
@@ -99,11 +99,13 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
 } // namespace numerical_methods
 
 /**
- * @brief the functions are for self test
- * @returns void and prints the success of rungeKutta function
+ * @brief Tests to check algorithm implementation.
+ * @returns void 
  */
 	static void test()
 	{
+		std::cout << "The Runge Kutta function will be tested on the basis of precomputed values\n";
+
 		std::cout << "Test 1...." << "\n";
 		double valfirst=numerical_methods::runge_kutta::rungeKutta(2,3,4,0.2); // Tests the function with pre calculated values
 		assert(valfirst==3.10363932323749570);
@@ -127,7 +129,7 @@ double rungeKutta(double init_x, const double &init_y, const double &x, const do
  */
 int main() 
 { 
-	std::cout << "The Runge Kutta function will be tested on the basis of precomputed values\n";
+	
 	test();  // Execute the tests
 	return 0; 
 } 
