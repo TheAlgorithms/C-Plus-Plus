@@ -13,16 +13,12 @@
  * https://www.youtube.com/watch?v=DINCL5cd_w0&t=24s
  */
 
-#include <cmath>
-#include <cassert>
-#include <cstdio>
-#include <iostream>
-#include <limits>
-#include <set>
-#include <unordered_map>
-#include <queue>
-#include <utility>
-#include <vector>
+#include <cassert>            /// for assert
+#include <iostream>           /// for io operations
+#include <limits>             /// for variable INF
+#include <queue>              /// for the priority_queue of distances
+#include <utility>            /// for make_pair function
+#include <vector>             /// for store the graph, the distances, and the path
 
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
