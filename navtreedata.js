@@ -122,11 +122,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"d2/de9/heavy__light__decomposition_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d",
 "d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4",
-"d7/d35/matrix__exponentiation_8cpp.html#ae1d1ec9482079231e898236e2b23c9ba",
-"d9/d66/group__machine__learning.html#ga525335710b53cb064ca56b936120431e",
-"db/dc0/namespacebacktracking.html",
+"d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa",
+"d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1",
+"db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5",
 "de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386"
 ];
 

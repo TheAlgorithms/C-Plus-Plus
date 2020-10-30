@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['n_5fqueens_2796',['n_queens',['../d3/da1/namespacen__queens.html',1,'']]],
-  ['n_5fqueens_5fall_5fsolutions_2797',['n_queens_all_solutions',['../df/d44/namespacen__queens__all__solutions.html',1,'']]],
-  ['n_5fqueens_5foptimized_2798',['n_queens_optimized',['../d8/d14/namespacen__queens__optimized.html',1,'']]],
-  ['neural_5fnetwork_2799',['neural_network',['../d0/d2e/namespaceneural__network.html',1,'']]]
+  ['machine_5flearning_2796',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
+  ['math_2797',['math',['../dd/d47/namespacemath.html',1,'']]],
+  ['median_5fsearch_2798',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
+  ['merge_5finsertion_2799',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
+  ['morse_2800',['morse',['../d6/d8d/namespacemorse.html',1,'']]]
 ];
