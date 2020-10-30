@@ -27,7 +27,7 @@
 #include <iostream>  // for io operations
 #include <vector>    // for std::vector
 #include <algorithm> // for collection of functions
-#include <assert.h>  // for a macro called assert which can be used to verify assumptions  
+#include <cassert>  // for a macro called assert which can be used to verify assumptions  
 /**
  * @namespace sorting
  * @brief Sorting algorithms
@@ -44,9 +44,9 @@ namespace sorting {
         * sorting.
         * @returns std::vector sorted till ith digit
         */
-        std::vector<uint64_t> step_ith(int cur_digit,const std::vector<uint64_t>& ar) {  // sorting according to current digit.
+        std::vector<uint64_t> step_ith(uint16_t cur_digit, const std::vector<uint64_t>& ar) {  // sorting according to current digit.
             int n = ar.size();
-            std::vector<int> position(10, 0);
+            std::vector<uint32_t> position(10, 0);
             for (int i = 0; i < n; ++i) {
                 position[(ar[i] / cur_digit) %
                          10]++;  // counting frequency of 0-9 at cur_digit.
@@ -80,7 +80,9 @@ namespace sorting {
                              // left to makes changes in aray.
                 temp = step_ith(i,temp);
             }
-            for (int i = 0; i < temp.size(); ++i) std::cout << temp[i] << " ";
+            for (uint64_t i : temp) {
+                std::cout << i << " ";
+            }
             std::cout << "\n";
             return temp;
         }
@@ -108,14 +110,5 @@ static void tests() {
  */
 int main() {
     tests();  // execute the tests
-    int n = 0;
-    std::cin >> n;
-    std::vector<uint64_t> ar;
-    for (int i = 0; i < n; ++i) {
-        uint64_t x = 0;
-        std::cin >> x;
-        ar.push_back(x);
-    }
-    ar = sorting::radix_sort::radix(ar);
     return 0;
 }
