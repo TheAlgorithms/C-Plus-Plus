@@ -87,9 +87,6 @@ int main()
             }
         }else if(instruction=="top"){
                 if(S.top(top)==true){
-                        char x;
-                        x* = S.top(top);
-                cout<<"x "<<x<<endl;
                     cout<<"Top Element is:"<<top<<endl;
                 }else{
                     cout<<"ERROR : Stack is empty!"<<endl;
@@ -99,4 +96,5 @@ int main()
             cout<<"ERROR : Unknown operation! Please try again"<<endl;
         }
     }
+    return 0;
 }
