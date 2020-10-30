@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int64_t> fac; //Store pre-computed factorials
+std::vector<int64_t> factorial; //Store pre-computed factorials
 
 /** function to find inverse modulo of given number */
 int64_t inverse(int64_t i, int64_t m)
@@ -31,7 +31,7 @@ int64_t nCr(int64_t n, int64_t r, int64_t p)
     }
     else
     {
-        return (((fac[n] * inverse(fac[r], p)) % p) * inverse(fac[n - r], p)) % p;
+        return (((factorial[n] * inverse(factorial[r], p)) % p) * inverse(factorial[n - r], p)) % p;
     }
 }
 /** Main function */
@@ -41,14 +41,14 @@ int main()
     // p should be a prime number
     std::cin >> n >> r >> p;
 
-    fac = std::vector<int64_t>(n + 1);
+    factorial = std::vector<int64_t>(n + 1);
 
-    fac[0] = 1;
+    factorial[0] = 1;
 
     //Loop to pre-calculate i factorial for 0<=i<=n
     for (int i = 1; i <= n; i++)
     {
-        fac[i] = (fac[i - 1] * i) % p;
+        factorial[i] = (factorial[i - 1] * i) % p;
     }
 
     int64_t answer = nCr(n, r, p);
