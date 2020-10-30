@@ -64,7 +64,7 @@ void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj1,
 int Shortest_Path_Distance(std::vector<int> workset_,
                   std::vector<std::vector<int64_t>> distance_) {
     int64_t distance = INF;
-    for (int i = 0; i < workset_.size(); i++) {
+    for (int i : workset_) {
         if (distance_[0][workset_[i]] + distance_[1][workset_[i]] < distance) {
             distance = distance_[0][workset_[i]] + distance_[1][workset_[i]];
         }
