@@ -61,8 +61,8 @@ int Shortest_Path_Distance(const std::vector<int> &workset_,
                   std::vector<std::vector<int64_t>> distance_) {
     int64_t distance = INF;
     for (int i : workset_) {
-        if (distance_[0][workset_[i]] + distance_[1][workset_[i]] < distance) {
-            distance = distance_[0][workset_[i]] + distance_[1][workset_[i]];
+        if (distance_[0][i] + distance_[1][i] < distance) {
+            distance = distance_[0][i] + distance_[1][i];
         }
     }
     return distance;
