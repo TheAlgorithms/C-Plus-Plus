@@ -23,7 +23,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include<vector>
+#include <vector>
 
 namespace sorting {
 /**
