@@ -121,13 +121,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d",
-"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4",
-"d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa",
-"d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1",
-"db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5",
-"de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386"
+"annotated.html",
+"d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b",
+"d5/d67/bayes__theorem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d7/d65/shortest__common__supersequence_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f",
+"db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f",
+"de/de4/fibonacci__large_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

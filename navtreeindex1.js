@@ -1,12 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d":[10,0,14,1,5],
-"d2/de9/heavy__light__decomposition_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,1,3],
-"d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a":[10,0,14,1,6],
-"d3/d06/ode__semi__implicit__euler_8cpp.html":[10,0,11,11],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,11,1],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[10,0,11,11,3],
-"d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe":[10,0,11,11,2],
 "d3/d06/ode__semi__implicit__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b":[10,0,11,11,0],
 "d3/d17/namespaceutil__functions.html":[8,0,49],
 "d3/d19/sparse__matrix_8cpp.html":[10,0,12,13],
@@ -249,5 +242,12 @@ var NAVTREEINDEX1 =
 "d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[7,3,7],
 "d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7":[10,0,16,8,2],
 "d5/d4c/group__sorting.html#gabd9a93f241c5c86f2ec0abf8b66b4145":[10,0,16,5,0],
-"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,16,1]
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[7,3,5],
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,8,0],
+"d5/d4c/group__sorting.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,16,16,1],
+"d5/d5f/namespacegeometry.html":[8,0,10],
+"d5/d5f/namespacegeometry.html":[9,0,3],
+"d5/d67/bayes__theorem_8cpp.html":[10,0,13,1],
+"d5/d67/bayes__theorem_8cpp.html#a655bfe51252468d232dc639a340656ba":[10,0,13,1,0],
+"d5/d67/bayes__theorem_8cpp.html#abb4f22dc05887c2259fdfc55c687598f":[10,0,13,1,1]
 };
