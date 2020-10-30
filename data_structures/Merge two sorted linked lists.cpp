@@ -1,3 +1,12 @@
+/** 
+ * @file
+ * @brief Algorithm to find a merged linked list of given two sorted linked lists
+ * @details Two sorted linked lists are taken as input, and they are merged together to find the merged sorted linked list.
+ * By, comparing the values in both the linked lists one at a time, the two linked lists can be merged.
+ * @author [Shrowdhisri](https://github.com/shrowdhisri)
+ * @see more on https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
