@@ -38,7 +38,7 @@ int partition(int arr[], int low, int high) {
     int pivot = arr[high];  // taking the last element as pivot
     int i = (low - 1);      // Index of smaller element
 
-    for (int j = low; j < high; j++) {
+    for (int j = low; j <= high; j++) {
         // If current element is smaller than or
         // equal to pivot
         if (arr[j] <= pivot) {
@@ -48,10 +48,8 @@ int partition(int arr[], int low, int high) {
             arr[j] = temp;
         }
     }
-    int temp = arr[i + 1];
-    arr[i + 1] = arr[high];
-    arr[high] = temp;
-    return (i + 1);
+
+    return i;
 }
 
 /**
@@ -93,7 +91,7 @@ int main() {
         std::cout << "\n";
         std::cin >> arr[i];
     }
-    quickSort(arr, 0, size);
+    quickSort(arr, 0, size-1);
     std::cout << "Sorted array\n";
     show(arr, size);
     delete[] arr;
