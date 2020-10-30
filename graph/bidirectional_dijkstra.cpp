@@ -188,7 +188,11 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
 }  // namespace bidirectional_dijkstra
 }  // namespace graph
 
-/** Function to test the Algorithm */
+/**
+ * @brief Function to test the
+ * provided algorithm above
+ * @returns void
+ */
 static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
     std::cout << "Initiating Test 1..." << std::endl;
