@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Minimum coins change problem is a problem used to find the minimum number of 
+ * @brief [Minimum coins](https://leetcode.com/problems/coin-change/) change problem is a problem used to find the minimum number of 
  * coins required to completely reach a target amount.
  *
  * @details
@@ -15,8 +15,7 @@
  * Target:15
  * Therfore minimum number of coins required = 3 of denomination 1,7 and 7.
  * @author [Divyansh Kushwaha](https://github.com/webdesignbydivyansh)
- * @see related problem at [Leetcode](https://leetcode.com/problems/coin-change/)
-*/
+ */
 
 #include <iostream>   // for io operations
 #include <vector>     // for std::vector
