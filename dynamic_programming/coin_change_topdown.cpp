@@ -78,6 +78,7 @@ static void test() {
     assert(dynamic_programming::mincoins_topdown::mincoins(n1, arr1, t1, dp1)==3);
     std::cout << "Passed\n";
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
