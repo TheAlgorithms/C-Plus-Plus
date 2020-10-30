@@ -57,28 +57,10 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
         }
         profit[i] = q;
     }
-    int ans = profit[n];
+    const int16_t ans = profit[n];
     delete[] profit;
     return ans;  // returning maximum profit
 }
-
-template <size_t T>
-bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const uint64_t &n){
-
-    /*
-      Note that if all the prices of the different lengths of rod are same the answer will be always n*price;
-      where price=price of 1 length rod
-      Reason::-->
-   if every length has same price , you would definitely want the rod of length 1, with n quantities.
-    which will give us maximum profits and maximum cuts.
-    */
-    const int16_t temp=price[0];
-     for (size_t i = 1; i <n; i++) {
-         if(price[i]!=temp)
-             return false;
-        }
-        return true;
-}// checks whether all the prices are same or not
 }  // namespace cut_rod
 }  // namespace dynamic_programming
 
@@ -86,36 +68,28 @@ bool WhatIfAllPricesAreSame(const std::array<int, T> &price, const uint64_t &n){
  * @brief Function to test above algorithm
  * @returns void
  */
-
 static void test() {
     // Test 1
     const int16_t n1 = 8;                                        // size of rod
-   std::array<int32_t, n1> price1 = {1,1,1,1,1,1,1,1};  // price array
-    const int64_t max_profit1 =
+   std::array<int32_t, n1> price1 = {1,2,4,6,8,45,21,9};  // price array
+   const int64_t max_profit1 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price1, n1);
-    const int32_t expected_max_profit1 = 22;
-
-    if (dynamic_programming::cut_rod::WhatIfAllPricesAreSame(price1,n1)) {
-        std::cout << "Maximum profit with " << n1 << " inch road is " <<(n1)*price1[0]
-              << std::endl;
-    }
-    else {
-
-    assert(max_profit1 == expected_max_profit1);
+     const int64_t expected_max_profit1 = 47;
+     assert(max_profit1 == expected_max_profit1);
     std::cout << "Maximum profit with " << n1 << " inch road is " << max_profit1
               << std::endl;
 
-    }
     // Test 2
-    const int n2 = 30;  // size of rod
-    std::array<int, n2> price2 = {
+    const int16_t n2 = 30;  // size of rod
+    std::array<int32_t, n2> price2 = {
         1,  5,  8,  9,  10, 17, 17, 20, 24, 30,  // price array
         31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
         41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-    const int max_profit2 =
+
+      const int64_t max_profit2=
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price2, n2);
-    const int expected_max_profit2 = 90;
-    assert(max_profit2 == expected_max_profit2);
+         const int32_t expected_max_profit2 = 90;
+       assert(max_profit2 == expected_max_profit2);
     std::cout << "Maximum profit with " << n2 << " inch road is " << max_profit2
               << std::endl;
 }
