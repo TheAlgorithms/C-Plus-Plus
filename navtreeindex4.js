@@ -1,10 +1,16 @@
 var NAVTREEINDEX4 =
 {
+"d9/d66/group__machine__learning.html#ga525335710b53cb064ca56b936120431e":[10,0,9,1,0],
+"d9/d66/group__machine__learning.html#ga525335710b53cb064ca56b936120431e":[10,0,9,2,0],
+"d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336":[10,0,9,1,6],
+"d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336":[7,1,6],
+"d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[10,0,9,2,5],
+"d9/d66/group__machine__learning.html#ga72699c805c19a6cc47a937a6f3378afa":[7,1,7],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[10,0,9,1,3],
 "d9/d66/group__machine__learning.html#gab53c14440b2b2dd3172c66afc5c2f63f":[7,1,5],
-"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,1,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,2,1],
 "d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[7,1,4],
+"d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485":[10,0,9,1,1],
 "d9/d69/median__search_8cpp.html":[10,0,15,8],
 "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae":[10,0,15,8,1],
 "d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002":[10,0,15,8,2],
@@ -19,7 +25,7 @@ var NAVTREEINDEX4 =
 "d9/d90/struct_btree.html#a87e9234afb3e704333af3a2da6b905d3":[9,0,11,2],
 "d9/d92/chaining_8cpp.html":[10,0,8,0],
 "d9/d92/chaining_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,8,0,1],
-"d9/dca/namespacesearch.html":[8,0,39],
+"d9/dca/namespacesearch.html":[8,0,40],
 "d9/dd7/interpolation__search_8cpp.html":[10,0,15,4],
 "d9/dd7/interpolation__search_8cpp.html#a9805865b5c5ca6b0fdf95fd86132625a":[10,0,15,4,0],
 "d9/dd7/interpolation__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,4,1],
@@ -130,7 +136,7 @@ var NAVTREEINDEX4 =
 "da/dd1/structquadratic__probing_1_1_entry.html":[9,0,8,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[9,0,8,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[9,0,8,0,0],
-"da/dd3/namespacespirograph.html":[8,0,43],
+"da/dd3/namespacespirograph.html":[8,0,44],
 "da/dd4/namespacemedian__search.html":[8,0,23],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[10,0,12,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[10,0,12,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5":[9,0,33,8],
 "db/da9/classqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31":[9,0,33,7],
 "db/da9/classqueue.html#ad215eee654953d25150bb25d5ac12b7c":[9,0,33,1],
-"db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5":[9,0,33,9],
-"db/dc0/namespacebacktracking.html":[8,0,1],
-"db/dca/kadane2_8cpp.html":[10,0,3,2],
-"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,2,0],
-"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[10,0,3,2,1],
-"db/dd3/ode__forward__euler_8cpp.html":[10,0,11,9],
-"db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,9,3]
+"db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5":[9,0,33,9]
 };

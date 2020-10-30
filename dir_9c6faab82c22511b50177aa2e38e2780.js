@@ -15,5 +15,6 @@ var dir_9c6faab82c22511b50177aa2e38e2780 =
     [ "qr_decompose.h", "d4/d68/qr__decompose_8h.html", "d4/d68/qr__decompose_8h" ],
     [ "qr_decomposition.cpp", "d3/d24/qr__decomposition_8cpp.html", "d3/d24/qr__decomposition_8cpp" ],
     [ "qr_eigen_values.cpp", "de/d75/qr__eigen__values_8cpp.html", "de/d75/qr__eigen__values_8cpp" ],
+    [ "rungekutta.cpp", "d1/da6/rungekutta_8cpp.html", "d1/da6/rungekutta_8cpp" ],
     [ "successive_approximation.cpp", "df/dc8/successive__approximation_8cpp.html", "df/dc8/successive__approximation_8cpp" ]
 ];
