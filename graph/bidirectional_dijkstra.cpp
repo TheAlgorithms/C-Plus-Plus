@@ -150,7 +150,7 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
         if(visited[currentNode] == 1){
             return Shortest_Path_Distance(workset, dist);
         }
-        visited[currentNode] = 1;
+        visited[currentNode] = true;
         /// reversed search
 
         // If pq[1].size() is equal to zero then the node/ vertex is not reachable from t
