@@ -3,24 +3,26 @@
  * \brief The [Boyer-Moore Algorithm](Good Suffix Rule)(https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm) for
  * finding a pattern within a piece of text with complexity O(m) in processing + o(mn)(worst case)
  */
- #include <iostream>   
+ #include <iostream> 
+ #include<vector>
 // preprocessing for strong good suffix rule
 // A border is a substring which is both proper suffix and proper prefix. 
 // bpos is border position array,  Each entry bpos[i] contains the starting index of border for suffix starting at index i in given pattern P.
 // shift is an integer array,  Each entry shift[i] contain the distance pattern will shift if mismatch occur at position i-1. 
-void preprocess_strong_suffix(int shift[], int bpos[], 
-                                std::string pat, int m) 
+void preprocess_strong_suffix(std::vector<int> &shift, std::vector<int> &bpos, std::string pat, int m) 
 { 
     // m is the length of pattern  
     int i=m, j=m+1; 
-    bpos[i]=j; 
+    bpos[i] = j; 
   
     while(i>0) 
     {
         while(j<=m && pat[i-1] != pat[j-1]) 
         { 
             if (shift[j]==0) 
-                shift[j] = j-i; 
+            {
+                shift[j] = j-i;
+            } 
   
             //Update the position of next border  
             j = bpos[j]; 
@@ -32,7 +34,7 @@ void preprocess_strong_suffix(int shift[], int bpos[],
     } 
 }   
 //Preprocessing for each suffix the widest border of the whole pattern that is contained in that suffix is determined.
-void preprocess_second(int shift[], int bpos[], 
+void preprocess_second(std::vector<int> &shift, std::vector<int> &bpos, 
                       std::string pat, int m) 
 { 
     int i, j; 
@@ -41,9 +43,13 @@ void preprocess_second(int shift[], int bpos[],
     { 
         
         if(shift[i]==0) 
+        {
             shift[i] = j;
+        }
         if (i==j) 
-            j = bpos[j]; 
+        {
+            j = bpos[j];
+        }     
     } 
 } 
   
@@ -56,10 +62,13 @@ void search(std::string text, std::string pat)
     int m = pat.length(); 
     int n = text.length(); 
   
-    int bpos[m+1], shift[m+1]; 
+    std::vector<int> bpos(m+1), shift(m+1); 
   
     //initialize all occurrence of shift to 0 
-    for(int i=0;i<m+1;i++) shift[i]=0; 
+    for(int i=0;i<m+1;i++) 
+    {
+        shift[i]=0;
+    }     
   
     //do preprocessing 
     preprocess_strong_suffix(shift, bpos, pat, m); 
@@ -71,7 +80,9 @@ void search(std::string text, std::string pat)
         j = m-1; 
   
         while(j >= 0 && pat[j] == text[s+j]) 
-            j--; 
+        { 
+            j--;
+        } 
   
         if (j<0) 
         { 
@@ -79,8 +90,9 @@ void search(std::string text, std::string pat)
             s += shift[0]; 
         } 
         else
-    
-            s += shift[j+1]; 
+        {
+            s += shift[j+1];
+        } 
     } 
   
 } 
