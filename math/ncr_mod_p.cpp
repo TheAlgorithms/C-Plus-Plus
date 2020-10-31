@@ -29,7 +29,10 @@ int64_t nCr(int64_t n, int64_t r, int64_t p) {
                p;
     }
 }
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     int n = 0, r = 0, p = 0;
     // p should be a prime number
