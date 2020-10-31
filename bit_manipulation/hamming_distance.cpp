@@ -51,18 +51,16 @@ uint64_t bitCount(uint64_t value) {
 uint64_t hamming_distance(uint64_t a, uint64_t b) { return bitCount(a ^ b); }
 
 /**
- * This function returns the hamming distance between two bitstrings.
- * @param a the first bitstring
- * @param b the second bistring
- * @returns the number of bits differing between the two bistrings.
+ * This function returns the hamming distance between two strings.
+ * @param a the first string
+ * @param b the second string
+ * @returns the number of characters differing between the two strings.
  */
 uint64_t hamming_distance(const std::string& a, const std::string& b) {
     assert(a.size() == b.size());
     size_t n = a.size();
     uint64_t count = 0;
     for (size_t i = 0; i < n; i++) {
-        assert(a[i] == '0' || a[i] == '1');
-        assert(b[i] == '0' || b[i] == '1');
         count += (b[i] != a[i]);
     }
     return count;
@@ -79,12 +77,13 @@ static void test() {
     assert(bit_manipulation::hamming_distance::hamming_distance(2, 0) == 1);
     assert(bit_manipulation::hamming_distance::hamming_distance(11, 0) == 3);
 
-    assert(bit_manipulation::hamming_distance::hamming_distance("1101",
-                                                                "1111") == 1);
-    assert(bit_manipulation::hamming_distance::hamming_distance("1111",
-                                                                "1111") == 0);
-    assert(bit_manipulation::hamming_distance::hamming_distance("0000",
-                                                                "1111") == 4);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1101", "1111") == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1111", "1111") == 0);
+    assert(bit_manipulation::hamming_distance::hamming_distance("0000", "1111") == 4);
+    
+    assert(bit_manipulation::hamming_distance::hamming_distance("alpha", "alphb") == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance("abcd", "abcd") == 0);
+    assert(bit_manipulation::hamming_distance::hamming_distance("dcba", "abcd") == 4);
 }
 
 /**
@@ -97,6 +96,5 @@ int main() {
     uint64_t b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
-              << bit_manipulation::hamming_distance::hamming_distance(a, b)
-              << std::endl;
+              << bit_manipulation::hamming_distance::hamming_distance(a, b) << std::endl;
 }
