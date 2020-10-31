@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fgraph_5fbipartite_2801',['is_graph_bipartite',['../de/d83/namespaceis__graph__bipartite.html',1,'']]]
+  ['is_5fgraph_5fbipartite_2807',['is_graph_bipartite',['../de/d83/namespaceis__graph__bipartite.html',1,'']]]
 ];
