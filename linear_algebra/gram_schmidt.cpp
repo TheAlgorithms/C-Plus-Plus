@@ -225,7 +225,7 @@ int main() {
   /// storing vectors in array A
   for (int i = 0; i < r; i++) {
     std::cout << "Enter vector " << i + 1 <<'\n';  ///Input of vectors is taken
-    for (int j = 0; j < c; j++) {
+    for (int j = 0; j < c; ++j) {
       std::cout << "Value " << j + 1 << "th of vector: ";
       std::cin >> A[i][j];
     }
