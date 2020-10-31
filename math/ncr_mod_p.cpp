@@ -9,14 +9,14 @@
 
 std::vector<int64_t> factorial;  // Store pre-computed factorials
 
-/** Function to find inverse modulo of given number 
+/** Function to find inverse modulo of given number
  * the function takes 2 parameters: i and m
  * i is the number whose inverse modulo m we want
- * inverse function is a recurrsive function which calculates inverse modulo m of i from inverse modulo m of (i modulo m)
- * the return statement retruns i inverse modulo m using (i modulo m) inverse modulo m
-*/
+ * inverse function is a recurrsive function which calculates inverse modulo m
+ * of i from inverse modulo m of (i modulo m) the return statement retruns i
+ * inverse modulo m using (i modulo m) inverse modulo m
+ */
 int64_t inverse(int64_t i, int64_t m) {
-
     if (i == 1) {
         return 1;
     }
@@ -27,9 +27,10 @@ int64_t inverse(int64_t i, int64_t m) {
 /**Function to compute the required nCr.
  * mathematically nCr = (n!)/(r! x (n-r)!)
  * for r>n, it is defined to be 0
- * so to calculate above mathmatical expression , we multiply n! with inverse modulo of r! and inverse modulo of (n-r)!
- * the function returns the required nCr mod p
-*/
+ * so to calculate above mathmatical expression , we multiply n! with inverse
+ * modulo of r! and inverse modulo of (n-r)! the function returns the required
+ * nCr mod p
+ */
 int64_t nCr(int64_t n, int64_t r, int64_t p) {
     if (r > n) {
         return 0;
