@@ -77,13 +77,19 @@ static void test() {
     assert(bit_manipulation::hamming_distance::hamming_distance(2, 0) == 1);
     assert(bit_manipulation::hamming_distance::hamming_distance(11, 0) == 3);
 
-    assert(bit_manipulation::hamming_distance::hamming_distance("1101", "1111") == 1);
-    assert(bit_manipulation::hamming_distance::hamming_distance("1111", "1111") == 0);
-    assert(bit_manipulation::hamming_distance::hamming_distance("0000", "1111") == 4);
-    
-    assert(bit_manipulation::hamming_distance::hamming_distance("alpha", "alphb") == 1);
-    assert(bit_manipulation::hamming_distance::hamming_distance("abcd", "abcd") == 0);
-    assert(bit_manipulation::hamming_distance::hamming_distance("dcba", "abcd") == 4);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1101",
+                                                                "1111") == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1111",
+                                                                "1111") == 0);
+    assert(bit_manipulation::hamming_distance::hamming_distance("0000",
+                                                                "1111") == 4);
+
+    assert(bit_manipulation::hamming_distance::hamming_distance("alpha",
+                                                                "alphb") == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance("abcd",
+                                                                "abcd") == 0);
+    assert(bit_manipulation::hamming_distance::hamming_distance("dcba",
+                                                                "abcd") == 4);
 }
 
 /**
@@ -96,5 +102,6 @@ int main() {
     uint64_t b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
-              << bit_manipulation::hamming_distance::hamming_distance(a, b) << std::endl;
+              << bit_manipulation::hamming_distance::hamming_distance(a, b)
+              << std::endl;
 }
