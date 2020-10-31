@@ -21,6 +21,12 @@
  */
 namespace bit_manipulation {
 /**
+ * @namespace hamming_distance
+ * @brief Functions for [Hamming
+ * distance](https://en.wikipedia.org/wiki/Hamming_distance) implementation
+ */
+namespace hamming_distance {
+/**
  * This function returns the number of set bits in the given number.
  * @param value the number of which we want to count the number of set bits.
  * @returns the number of set bits in the given number.
@@ -61,7 +67,7 @@ uint64_t hamming_distance(const std::string& a, const std::string& b) {
     }
     return count;
 }
-
+}  // namespace hamming_distance
 }  // namespace bit_manipulation
 
 /**
@@ -69,13 +75,13 @@ uint64_t hamming_distance(const std::string& a, const std::string& b) {
  * @returns void
  */
 static void test() {
-    assert(bit_manipulation::hamming_distance(11, 2) == 2);
-    assert(bit_manipulation::hamming_distance(2, 0) == 1);
-    assert(bit_manipulation::hamming_distance(11, 0) == 3);
+    assert(bit_manipulation::hamming_distance::hamming_distance(11, 2) == 2);
+    assert(bit_manipulation::hamming_distance::hamming_distance(2, 0) == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance(11, 0) == 3);
 
-    assert(bit_manipulation::hamming_distance("1101", "1111") == 1);
-    assert(bit_manipulation::hamming_distance("1111", "1111") == 0);
-    assert(bit_manipulation::hamming_distance("0000", "1111") == 4);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1101", "1111") == 1);
+    assert(bit_manipulation::hamming_distance::hamming_distance("1111", "1111") == 0);
+    assert(bit_manipulation::hamming_distance::hamming_distance("0000", "1111") == 4);
 }
 
 /**
@@ -88,5 +94,5 @@ int main() {
     uint64_t b = 2;   // 0010 in binary
 
     std::cout << "Hamming distance between " << a << " and " << b << " is "
-              << bit_manipulation::hamming_distance(a, b) << std::endl;
+              << bit_manipulation::hamming_distance::hamming_distance(a, b) << std::endl;
 }
