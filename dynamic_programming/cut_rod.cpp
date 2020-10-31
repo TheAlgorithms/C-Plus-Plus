@@ -92,6 +92,15 @@ static void test() {
     assert(max_profit2 == expected_max_profit2);
     std::cout << "Maximum profit with " << n2 << " inch road is " << max_profit2
               << std::endl;
+     // Test 3
+    const int16_t n3 = 5;                                        // size of rod
+    std::array<int32_t, n3> price3 = {2,9,17,23,45};  // price array
+    const int64_t max_profit3 =
+        dynamic_programming::cut_rod::maxProfitByCuttingRod(price3, n3);
+    const int64_t expected_max_profit3 = 45;
+    assert(max_profit3 == expected_max_profit3);
+    std::cout << "Maximum profit with " << n3 << " inch road is " << max_profit3
+              << std::endl;
 }
 
 /**
