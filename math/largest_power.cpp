@@ -17,10 +17,10 @@
 namespace math {
 
 	/** 
-	 * Function to calculate largest power
+	 * @brief Function to calculate largest power
 	 * @param n number
-     * @param p prime number
-	 * @return largest power
+         * @param p prime number
+	 * @returns largest power
 	 */ 
     int largestPower(int n, int p)  
     {  
