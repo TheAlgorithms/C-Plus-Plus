@@ -5,7 +5,7 @@
  * answer modulo p
  */
 #include <iostream>  /// for io operations
-#include <vector>   /// for std::vector
+#include <vector>    /// for std::vector
 
 std::vector<int64_t> factorial;  // Store pre-computed factorials
 
