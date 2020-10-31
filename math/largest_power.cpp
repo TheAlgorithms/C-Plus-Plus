@@ -22,7 +22,7 @@ namespace math {
          * @param p prime number
 	 * @returns largest power
 	 */ 
-    int largestPower(int n, int p)  
+    uint64_t largestPower(uint32_t n, const uint16_t& p)  
     {  
         // Initialize result  
         int x = 0;  
