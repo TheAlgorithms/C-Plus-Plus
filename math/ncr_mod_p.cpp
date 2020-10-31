@@ -4,8 +4,8 @@
  * n distinct objects. SInce this number can be very large, we will calulate
  * answer modulo p
  */
-#include <iostream>
-#include <vector>
+#include <iostream>  /// for io operations
+#include <vector>   /// for std::vector
 
 std::vector<int64_t> factorial;  // Store pre-computed factorials
 
