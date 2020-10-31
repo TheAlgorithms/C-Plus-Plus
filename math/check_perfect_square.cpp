@@ -10,14 +10,14 @@
 /**
  * @brief Getting the integral square root of the number using binary search
  * @param num number to be checked
- * @returns int integral part of the square root of @param 'num'
+ * @returns int64_t integral part of the square root of @param 'num'
  */
-int get_integral_square_root(int num){
-    int low = 0;                        // using inclusion exclusion binary search, low = minimum possible
-    int high = num + 1;                 // high = any larger value which could never be the answer
+int64_t get_integral_square_root(int64_t num){
+    int64_t low = 0;                        // using inclusion exclusion binary search, low = minimum possible
+    int64_t high = num + 1;                 // high = any larger value which could never be the answer
     
     while(high - low > 1){
-        int mid = (low + high) >> 1;
+        int64_t mid = (low + high) >> 1;
         if(mid * mid <= num){
             low = mid;                  // if conditions looks good, we increase low
         }
@@ -34,10 +34,10 @@ int get_integral_square_root(int num){
  * @param num number to be checked
  * @returns bool if number is perfect square, it returns @ true, else it returns @ false
  */
-bool check_perfect_square(int num){
+bool check_perfect_square(int64_t num){
     if(num < 0) return false;           // square of real numbers can never be negative 
     
-    int value = get_integral_square_root(num);
+    int64_t value = get_integral_square_root(num);
     return value * value == num;
 }
 
@@ -46,7 +46,7 @@ bool check_perfect_square(int num){
  * @returns void
  */
 static void test1(){
-    int test_case_1 = check_perfect_square(-4);
+    int64_t test_case_1 = check_perfect_square(-4);
     assert(test_case_1 == false);
 }
 
@@ -55,7 +55,7 @@ static void test1(){
  * @returns void
  */
 static void test2(){
-    int test_case_2 = check_perfect_square(1);
+    int64_t test_case_2 = check_perfect_square(1);
     assert(test_case_2 == true);
 }
 
@@ -64,7 +64,7 @@ static void test2(){
  * @returns void
  */
 static void test3(){
-    int test_case_3 = check_perfect_square(2);
+    int64_t test_case_3 = check_perfect_square(2);
     assert(test_case_3 == false);
 }
 
@@ -73,7 +73,7 @@ static void test3(){
  * @returns void
  */
 static void test4(){
-    int test_case_4 = check_perfect_square(4);
+    int64_t test_case_4 = check_perfect_square(4);
     assert(test_case_4 == true);
 }
 
@@ -82,7 +82,7 @@ static void test4(){
  * @returns void
  */
 static void test5(){
-    int test_case_5 = check_perfect_square(8);
+    int64_t test_case_5 = check_perfect_square(8);
     assert(test_case_5 == false);
 }
 
