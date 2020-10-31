@@ -39,7 +39,7 @@ namespace math {
 }  // namespace math
 
 /**
- * Function for testing largestPower function.
+ * @brief Function for testing largestPower function.
  * test cases and assert statement.
  * @returns `void`
 */
