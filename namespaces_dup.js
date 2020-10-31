@@ -26,6 +26,7 @@ var namespaces_dup =
     [ "math", "dd/d47/namespacemath.html", null ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
+    [ "mincoins_topdown", "d5/db8/namespacemincoins__topdown.html", null ],
     [ "morse", "d6/d8d/namespacemorse.html", null ],
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],
     [ "n_queens_all_solutions", "df/d44/namespacen__queens__all__solutions.html", null ],

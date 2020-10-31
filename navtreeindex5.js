@@ -1,10 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"db/da9/classqueue.html#ab2019d91e28c06de325fb3076b93a930":[9,0,33,2],
+"db/da9/classqueue.html#ab45a4bfef7eba256a9c027bae86fc196":[9,0,33,10],
+"db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5":[9,0,33,8],
+"db/da9/classqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31":[9,0,33,7],
+"db/da9/classqueue.html#ad215eee654953d25150bb25d5ac12b7c":[9,0,33,1],
 "db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5":[9,0,33,9],
 "db/dc0/namespacebacktracking.html":[8,0,1],
-"db/dca/kadane2_8cpp.html":[10,0,3,2],
-"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,2,0],
-"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[10,0,3,2,1],
+"db/dca/kadane2_8cpp.html":[10,0,3,3],
+"db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,3,3,0],
+"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[10,0,3,3,1],
 "db/dd3/ode__forward__euler_8cpp.html":[10,0,11,9],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,9,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[10,0,11,9,5],
@@ -159,7 +164,7 @@ var NAVTREEINDEX5 =
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[10,0,11,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[10,0,11,6,1],
 "dd/d69/namespacerange__queries.html":[9,0,9],
-"dd/d69/namespacerange__queries.html":[8,0,38],
+"dd/d69/namespacerange__queries.html":[8,0,39],
 "dd/d81/namespacecaesar.html":[8,0,2],
 "dd/d91/class_fenwick_tree.html":[9,0,18],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[9,0,18,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#acf96f3a9a1d3b15268c38e8822300c11":[9,0,1,0,0,2],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html#af94c06f3220e5406245680f58b8e7081":[9,0,1,0,0,3],
 "de/dc3/binaryheap_8cpp.html":[10,0,2,3],
-"de/dc3/binaryheap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,2,3,1],
-"de/dc3/fibonacci__sum_8cpp.html":[10,0,10,14],
-"de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742":[10,0,10,14,1],
-"de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311":[10,0,10,14,4],
-"de/dc3/fibonacci__sum_8cpp.html#a9c83cca09a3e4ff2a25c816a9303448e":[10,0,10,14,3],
-"de/dc3/fibonacci__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,10,14,6]
+"de/dc3/binaryheap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,2,3,1]
 };

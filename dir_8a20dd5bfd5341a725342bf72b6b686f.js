@@ -1,6 +1,7 @@
 var dir_8a20dd5bfd5341a725342bf72b6b686f =
 [
     [ "0_1_knapsack.cpp", "db/d16/0__1__knapsack_8cpp.html", "db/d16/0__1__knapsack_8cpp" ],
+    [ "coin_change_topdown.cpp", "d9/d31/coin__change__topdown_8cpp.html", "d9/d31/coin__change__topdown_8cpp" ],
     [ "cut_rod.cpp", "d6/d10/cut__rod_8cpp.html", "d6/d10/cut__rod_8cpp" ],
     [ "kadane2.cpp", "db/dca/kadane2_8cpp.html", "db/dca/kadane2_8cpp" ],
     [ "palindrome_partitioning.cpp", "d5/d90/palindrome__partitioning_8cpp.html", "d5/d90/palindrome__partitioning_8cpp" ],
