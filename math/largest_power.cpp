@@ -61,7 +61,7 @@ static void test()
 	assert(test_case_4==23);
 	std::cout<<"Test 4 Passed!"<<std::endl;
 	
-	int test_case_5 = math::largestPower(7,3);
+	uint16_t test_case_5 = math::largestPower(7,3);
 	assert(test_case_5==2);
 	std::cout<<"Test 5 Passed!"<<std::endl;
 } 
