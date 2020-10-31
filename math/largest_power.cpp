@@ -45,7 +45,7 @@ namespace math {
 */
 static void test()
 {
-	int test_case_1 = math::largestPower(5,2);
+	uint8_t test_case_1 = math::largestPower(5,2);
 	assert(test_case_1==3);
 	std::cout<<"Test 1 Passed!"<<std::endl;
 	
