@@ -223,7 +223,7 @@ int main() {
   std::array<std::array<double, 10>, 20> B = {
       {0}};  /// a 2-D array for storing orthogonalised vectors
   /// storing vectors in array A
-  for (int i = 0; i < r; i++) {
+  for (int i = 0; i < r; ++i) {
     std::cout << "Enter vector " << i + 1 <<'\n';  ///Input of vectors is taken
     for (int j = 0; j < c; ++j) {
       std::cout << "Value " << j + 1 << "th of vector: ";
