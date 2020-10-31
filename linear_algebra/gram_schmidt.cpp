@@ -88,7 +88,7 @@ double projection(const std::array<double, 10>& x,const std::array<double, 10>& 
 void display(const int& r,const int& c,const std::array<std::array<double, 10>, 20>& B) {
   for (int i = 0; i < r; ++i) {
     std::cout << "Vector " << i + 1 << ": ";
-    for (int j = 0; j < c; j++) {
+    for (int j = 0; j < c; ++j) {
       std::cout << B[i][j] << " ";
     }
     std::cout << '\n';
