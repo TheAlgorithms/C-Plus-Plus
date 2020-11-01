@@ -58,8 +58,9 @@ void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
  * from the target to the source
  *
  */
-uint64_t Shortest_Path_Distance(const std::vector<uint64_t> &workset_,
-                           const std::vector<std::vector<uint64_t>> &distance_) {
+uint64_t Shortest_Path_Distance(
+    const std::vector<uint64_t> &workset_,
+    const std::vector<std::vector<uint64_t>> &distance_) {
     int64_t distance = INF;
     for (uint64_t i : workset_) {
         if (distance_[0][i] + distance_[1][i] < distance) {
@@ -259,13 +260,27 @@ int main() {
     std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj2(
         vertices, std::vector<std::pair<uint64_t, uint64_t>>());
 
-    uint64_t u = uint64_t(), v=uint64_t(), w = uint64_t();
+    uint64_t u = uint64_t(), v = uint64_t(), w = uint64_t();
+    std::cout << "Enter the edges by three integers in this form: u v w "
+              << std::endl;
+    std::cout << "Example: if there is and edge between node 1 and node 4 with "
+                 "weight 7 enter: 1 4 7, and then press enter"
+              << std::endl;
     while (edges--) {
         std::cin >> u >> v >> w;
         graph::bidirectional_dijkstra::addEdge(&adj1, &adj2, u, v, w);
+        if (edges != 0) {
+            std::cout << "Enter the next edge" << std::endl;
+        }
     }
 
     uint64_t s = uint64_t(), t = uint64_t();
+    std::cout
+        << "Enter the source node and the target node separated by a space"
+        << std::endl;
+    std::cout << "Example: If the source node is 5 and the target node is 6 "
+                 "enter: 5 6 and press enter"
+              << std::endl;
     std::cin >> s >> t;
     int dist =
         graph::bidirectional_dijkstra::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
