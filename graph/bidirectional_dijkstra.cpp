@@ -58,8 +58,8 @@ void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
  * from the target to the source
  *
  */
-int Shortest_Path_Distance(const std::vector<uint64_t> &workset_,
-                           std::vector<std::vector<uint64_t>> &distance_) {
+uint64_t Shortest_Path_Distance(const std::vector<uint64_t> &workset_,
+                           const std::vector<std::vector<uint64_t>> &distance_) {
     int64_t distance = INF;
     for (uint64_t i : workset_) {
         if (distance_[0][i] + distance_[1][i] < distance) {
@@ -247,7 +247,8 @@ static void tests() {
 int main() {
     // running predefined tests
     tests();
-    uint64_t vertices, edges;
+    uint64_t vertices = uint64_t();
+    uint64_t edges = uint64_t();
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the number of edges : ";
@@ -258,13 +259,13 @@ int main() {
     std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj2(
         vertices, std::vector<std::pair<uint64_t, uint64_t>>());
 
-    uint64_t u, v, w;
+    uint64_t u = uint64_t(), v=uint64_t(), w = uint64_t();
     while (edges--) {
         std::cin >> u >> v >> w;
         graph::bidirectional_dijkstra::addEdge(&adj1, &adj2, u, v, w);
     }
 
-    uint64_t s, t;
+    uint64_t s = uint64_t(), t = uint64_t();
     std::cin >> s >> t;
     int dist =
         graph::bidirectional_dijkstra::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
