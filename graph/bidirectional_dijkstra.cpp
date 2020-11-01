@@ -13,12 +13,12 @@
  * https://www.youtube.com/watch?v=DINCL5cd_w0&t=24s
  */
 
-#include <cassert>            /// for assert
-#include <iostream>           /// for io operations
-#include <limits>             /// for variable INF
-#include <queue>              /// for the priority_queue of distances
-#include <utility>            /// for make_pair function
-#include <vector>             /// for store the graph, the distances, and the path
+#include <cassert>   /// for assert
+#include <iostream>  /// for io operations
+#include <limits>    /// for variable INF
+#include <queue>     /// for the priority_queue of distances
+#include <utility>   /// for make_pair function
+#include <vector>    /// for store the graph, the distances, and the path
 
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
@@ -30,7 +30,8 @@ namespace graph {
 /**
  * @namespace bidirectional_dijkstra
  * @brief Functions for [Bidirectional Dijkstra Shortest Path]
- * (https://www.coursera.org/learn/algorithms-on-graphs/lecture/7ml18/bidirectional-dijkstra) algorithm
+ * (https://www.coursera.org/learn/algorithms-on-graphs/lecture/7ml18/bidirectional-dijkstra)
+ * algorithm
  */
 namespace bidirectional_dijkstra {
 /**
@@ -41,26 +42,26 @@ namespace bidirectional_dijkstra {
  * @param u any node or vertex of graph
  * @param v any node or vertex of graph
  */
-void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj1,
-             std::vector<std::vector<std::pair<int, int>>> *adj2, int u, int v,
-             int w) {
+void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
+             std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj2,
+             int u, int v, int w) {
     (*adj1)[u - 1].push_back(std::make_pair(v - 1, w));
     (*adj2)[v - 1].push_back(std::make_pair(u - 1, w));
     // (*adj)[v - 1].push_back(std::make_pair(u - 1, w));
 }
 /**
- *@brief This function returns the shortest distance from the source 
+ *@brief This function returns the shortest distance from the source
  * to the target if there is path between vertices 's' and 't'.
- * 
+ *
  * @param workset_ vertices visited in the search
  * @param distance_ vector of distances from the source to the target and
  * from the target to the source
- * 
+ *
  */
-int Shortest_Path_Distance(const std::vector<int> &workset_,
-                  std::vector<std::vector<int64_t>> distance_) {
+int Shortest_Path_Distance(const std::vector<uint64_t> &workset_,
+                           std::vector<std::vector<int64_t>> distance_) {
     int64_t distance = INF;
-    for (int i : workset_) {
+    for (uint64_t i : workset_) {
         if (distance_[0][i] + distance_[1][i] < distance) {
             distance = distance_[0][i] + distance_[1][i];
         }
@@ -81,13 +82,14 @@ int Shortest_Path_Distance(const std::vector<int> &workset_,
  * @return shortest distance if target is reachable from source else -1 in
  * case if target is not reachable from source.
  */
-int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
-          std::vector<std::vector<std::pair<int, int>>> *adj2, int s, int t) {
+int Bidijkstra(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
+               std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj2,
+               uint64_t s, uint64_t t) {
     /// n denotes the number of vertices in graph
-    int n = adj1->size();
+    uint64_t n = adj1->size();
 
     /// setting all the distances initially to INF
-    std::vector<std::vector<int64_t>> dist(2, std::vector<int64_t>(n, INF));
+    std::vector<std::vector<uint64_t>> dist(2, std::vector<uint64_t>(n, INF));
 
     /// creating a a vector of min heap using priority queue
     /// pq[0] contains the min heap for the direct search
@@ -95,11 +97,13 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
 
     /// first element of pair contains the distance
     /// second element of pair contains the vertex
-    std::vector<std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>,
-                        std::greater<std::pair<int, int>>>>
+    std::vector<
+        std::priority_queue<std::pair<uint64_t, uint64_t>,
+                            std::vector<std::pair<uint64_t, uint64_t>>,
+                            std::greater<std::pair<uint64_t, uint64_t>>>>
         pq(2);
     /// vector for store the nodes or vertices in the shortest path
-    std::vector<int> workset(n);
+    std::vector<uint64_t> workset(n);
     /// vector for store the nodes or vertices visited
     std::vector<bool> visited(n);
 
@@ -118,15 +122,16 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
     while (true) {
         /// direct search
 
-        // If pq[0].size() is equal to zero then the node/ vertex is not reachable from s
-        if(pq[0].size()==0){
+        // If pq[0].size() is equal to zero then the node/ vertex is not
+        // reachable from s
+        if (pq[0].size() == 0) {
             break;
         }
         /// second element of pair denotes the node / vertex
-        int currentNode = pq[0].top().second;
+        uint64_t currentNode = pq[0].top().second;
 
         /// first element of pair denotes the distance
-        int currentDist = pq[0].top().first;
+        uint64_t currentDist = pq[0].top().first;
 
         pq[0].pop();
 
@@ -143,13 +148,14 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
         workset.push_back(currentNode);
 
         /// check if currentNode has already been visited
-        if(visited[currentNode] == 1){
+        if (visited[currentNode] == 1) {
             return Shortest_Path_Distance(workset, dist);
         }
         visited[currentNode] = true;
         /// reversed search
 
-        // If pq[1].size() is equal to zero then the node/ vertex is not reachable from t
+        // If pq[1].size() is equal to zero then the node/ vertex is not
+        // reachable from t
         if (pq[1].size() == 0) {
             break;
         }
@@ -192,28 +198,30 @@ int Bidijkstra(std::vector<std::vector<std::pair<int, int>>> *adj1,
 static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
     std::cout << "Initiating Test 1..." << std::endl;
-    std::vector<std::vector<std::pair<int, int>>> adj1_1(
-        4, std::vector<std::pair<int, int>>());
-    std::vector<std::vector<std::pair<int, int>>> adj1_2(
-        4, std::vector<std::pair<int, int>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj1_1(
+        4, std::vector<std::pair<uint64_t, uint64_t>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj1_2(
+        4, std::vector<std::pair<uint64_t, uint64_t>>());
     graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 1, 2, 1);
     graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 4, 1, 2);
     graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 2, 3, 2);
     graph::bidirectional_dijkstra::addEdge(&adj1_1, &adj1_2, 1, 3, 5);
 
-    int s = 1, t = 3;
-    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 3);
+    uint64_t s = 1, t = 3;
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1,
+                                                     t - 1) == 3);
     std::cout << "Test 1 Passed..." << std::endl;
 
     s = 4, t = 3;
     std::cout << "Initiating Test 2..." << std::endl;
-    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1, t - 1) == 5);
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj1_1, &adj1_2, s - 1,
+                                                     t - 1) == 5);
     std::cout << "Test 2 Passed..." << std::endl;
 
-    std::vector<std::vector<std::pair<int, int>>> adj2_1(
-        5, std::vector<std::pair<int, int>>());
-    std::vector<std::vector<std::pair<int, int>>> adj2_2(
-        5, std::vector<std::pair<int, int>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj2_1(
+        5, std::vector<std::pair<uint64_t, uint64_t>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj2_2(
+        5, std::vector<std::pair<uint64_t, uint64_t>>());
     graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 1, 2, 4);
     graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 1, 3, 2);
     graph::bidirectional_dijkstra::addEdge(&adj2_1, &adj2_2, 2, 3, 2);
@@ -226,38 +234,40 @@ static void tests() {
 
     s = 1, t = 5;
     std::cout << "Initiating Test 3..." << std::endl;
-    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj2_1, &adj2_2, s - 1, t - 1) == 6);
+    assert(graph::bidirectional_dijkstra::Bidijkstra(&adj2_1, &adj2_2, s - 1,
+                                                     t - 1) == 6);
     std::cout << "Test 3 Passed..." << std::endl;
     std::cout << "All Test Passed..." << std::endl << std::endl;
 }
 
-/** 
+/**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
     // running predefined tests
     tests();
-    int vertices = int(), edges = int();
+    uint64_t vertices, edges;
     std::cout << "Enter the number of vertices : ";
     std::cin >> vertices;
     std::cout << "Enter the number of edges : ";
     std::cin >> edges;
 
-    std::vector<std::vector<std::pair<int, int>>> adj1(
-        vertices, std::vector<std::pair<int, int>>());
-    std::vector<std::vector<std::pair<int, int>>> adj2(
-        vertices, std::vector<std::pair<int, int>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj1(
+        vertices, std::vector<std::pair<uint64_t, uint64_t>>());
+    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> adj2(
+        vertices, std::vector<std::pair<uint64_t, uint64_t>>());
 
-    int u = int(), v = int(), w = int();
+    uint64_t u, v, w;
     while (edges--) {
         std::cin >> u >> v >> w;
         graph::bidirectional_dijkstra::addEdge(&adj1, &adj2, u, v, w);
     }
 
-    int s = int(), t = int();
+    uint64_t s, t;
     std::cin >> s >> t;
-    int dist = graph::bidirectional_dijkstra::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
+    int dist =
+        graph::bidirectional_dijkstra::Bidijkstra(&adj1, &adj2, s - 1, t - 1);
     if (dist == -1) {
         std::cout << "Target not reachable from source" << std::endl;
     } else {
