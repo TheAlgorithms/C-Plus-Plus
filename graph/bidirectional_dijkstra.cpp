@@ -44,7 +44,7 @@ namespace bidirectional_dijkstra {
  */
 void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
              std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj2,
-             int u, int v, int w) {
+             uint64_t u, uint64_t v, uint64_t w) {
     (*adj1)[u - 1].push_back(std::make_pair(v - 1, w));
     (*adj2)[v - 1].push_back(std::make_pair(u - 1, w));
     // (*adj)[v - 1].push_back(std::make_pair(u - 1, w));
@@ -59,7 +59,7 @@ void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
  *
  */
 int Shortest_Path_Distance(const std::vector<uint64_t> &workset_,
-                           std::vector<std::vector<int64_t>> distance_) {
+                           std::vector<std::vector<uint64_t>> &distance_) {
     int64_t distance = INF;
     for (uint64_t i : workset_) {
         if (distance_[0][i] + distance_[1][i] < distance) {
