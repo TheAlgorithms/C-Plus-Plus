@@ -7,7 +7,7 @@
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
 
-std::vector<int64_t> factorial;  // Store pre-computed factorials
+std::vector<int64_t> factorial;  ///< Store pre-computed factorials
 
 /** Function to find inverse modulo of given number
  * the function takes 2 parameters: i and m
