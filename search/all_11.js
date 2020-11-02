@@ -76,7 +76,7 @@ var searchData=
   ['prev_1393',['prev',['http://en.cppreference.com/w/cpp/iterator/prev.html',0,'std']]],
   ['prev_5fpermutation_1394',['prev_permutation',['http://en.cppreference.com/w/cpp/algorithm/prev_permutation.html',0,'std']]],
   ['primality_5ftest_2ecpp_1395',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
-  ['prime_1396',['prime',['../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95',1,'prime():&#160;primes_up_to_billion.cpp'],['../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8',1,'PRIME():&#160;rabin_karp.cpp']]],
+  ['prime_1396',['PRIME',['../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8',1,'PRIME():&#160;rabin_karp.cpp'],['../d4/d9c/primes__up__to__billion_8cpp.html#ac0f4b77b901ddb15dab4c4dee1ac6e95',1,'prime():&#160;primes_up_to_billion.cpp']]],
   ['prime_5ffactorization_1397',['prime_factorization',['../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46',1,'prime_factorization.cpp']]],
   ['prime_5ffactorization_2ecpp_1398',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
   ['prime_5fnumbers_1399',['prime_numbers',['../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe',1,'prime_factorization.cpp']]],
