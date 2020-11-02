@@ -4,30 +4,31 @@
  * @author [Suyash Jaiswal](https://github.com/Suyashjaiswal)
  * @details
  * Sort the vector of unsigned integers using radix sort i.e. sorting digit by digit
- using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as subroutine.
+ * using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as subroutine.
  * Running time of radix sort is O(d*(n+b)) where b is the base for representing
- numbers and d in the max digits in input inegers and n is number of unsigned integers.
+ * numbers and d in the max digits in input integers and n is number of unsigned integers.
  * consider example for n = 5, aray elements = 432,234,143,332,123
- *sorting digit by digit
- *sorting according to
- *1) 1st digit place
- *=> 432, 332, 143, 123, 234
+ * sorting digit by digit
+ * sorting according to
+ * 1) 1st digit place
+ * => 432, 332, 143, 123, 234
  *
- *2) 2nd digit place
- *=> 123, 432, 332, 234, 143
+ * 2) 2nd digit place
+ * => 123, 432, 332, 234, 143
  *
- *3) 3rd digit place
- *=> 123, 143, 234, 332, 432
+ * 3) 3rd digit place
+ * => 123, 143, 234, 332, 432
  *
- *using count sort at each step, which is stable.
- *stable => already sorted according to previous digits.
+ * using count sort at each step, which is stable.
+ * stable => already sorted according to previous digits.
 */
 
-// header files
-#include <iostream>  // for io operations
-#include <vector>    // for std::vector
-#include <algorithm> // for collection of functions
-#include <cassert>  // for a macro called assert which can be used to verify assumptions  
+/// header files
+#include <iostream>  /// for io operations
+#include <vector>    /// for std::vector
+#include <algorithm> /// for collection of functions
+#include <cassert>   /// for a macro called assert which can be used to verify assumptions
+
 /**
  * @namespace sorting
  * @brief Sorting algorithms
@@ -42,6 +43,8 @@ namespace sorting {
         /**
         * @brief Function to sort vector according to current digit using stable
         * sorting.
+        * @param cur_digit - sort according to the cur_digit
+        * @param ar - vector to be sorted
         * @returns std::vector sorted till ith digit
         */
         std::vector<uint64_t> step_ith(uint16_t cur_digit, const std::vector<uint64_t>& ar) {  // sorting according to current digit.
@@ -70,6 +73,7 @@ namespace sorting {
         }
         /**
         * @brief Function to sort vector digit by digit.
+        * @param ar - vector to be sorted
         * @returns sorted vector
         */
         std::vector<uint64_t> radix(const std::vector<uint64_t>& ar) {
