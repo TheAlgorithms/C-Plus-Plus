@@ -50,7 +50,7 @@ void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
     // (*adj)[v - 1].push_back(std::make_pair(u - 1, w));
 }
 /**
- *@brief This function returns the shortest distance from the source
+ * @brief This function returns the shortest distance from the source
  * to the target if there is path between vertices 's' and 't'.
  *
  * @param workset_ vertices visited in the search
