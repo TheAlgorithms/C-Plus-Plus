@@ -246,8 +246,7 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    // running predefined tests
-    tests();
+    tests();  // running predefined tests
     uint64_t vertices = uint64_t();
     uint64_t edges = uint64_t();
     std::cout << "Enter the number of vertices : ";
