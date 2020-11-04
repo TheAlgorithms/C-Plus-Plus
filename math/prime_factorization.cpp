@@ -40,7 +40,7 @@ void SieveOfEratosthenes(int N) {
 void prime_factorization(int num) {
     int number = num;
 
-    for (int i = 0; prime_numbers[i] <= num; i++) {
+    for (int i = 0; prime_numbers[i] <= number; i++) {
         int count = 0;
 
         // termination condition
