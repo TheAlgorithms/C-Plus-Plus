@@ -86,6 +86,6 @@ int main() {
 	    for(ll int i=0;i<n;i++) {
 	        cin>>a[i];
 	    }
-	    cout<<inversion_count(a, 0, n-1)<<endl;
+	    cout<<inversion_count(a, 0, n-1);
 	return 0;
 }
