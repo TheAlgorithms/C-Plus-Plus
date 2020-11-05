@@ -40,8 +40,7 @@ int merge(std ::vector<int> *arr, int start, int end)
     int k = start;
     std ::vector<int> temp(1000000);
     int cnt = 0;
-
-    while (i <= mid and j <= end)
+    while ((i <= mid) && (j <= end))
     {
         if (arr->at(i) <= arr->at(j))
         {
@@ -88,7 +87,7 @@ int inversion_count(std ::vector<int> *arr, int start, int end)
 
 int main()
 {
-    std::vector<int> arr = {5,4,3,2,1};
+    std::vector<int> arr = {5,3,4,2,1};
     std ::cout << inversion_count(&arr, 0, 4) << std::endl;
     return 0;
 }
