@@ -31,6 +31,12 @@
 #include <iostream>
 #include <vector>
 #include <cstdio>
+#include <unistd.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <sys/ioctl.h >
+#include <usbhid.h>
+
 #include <array>
 typedef int64_t ll;
 
