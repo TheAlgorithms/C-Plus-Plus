@@ -28,67 +28,78 @@
     return inv_count;
 */
 
-
 #include <iostream>
 #include <vector>
 #include <cstdio>
+#include <array>
 typedef int64_t ll;
 
-
-
-ll merge(std :: vector<ll> &arr, ll  start, ll  end) {
-    ll mid  = start+ (end-start)/2;
-    ll i=start;
-    ll j = mid +1;
-    ll k=start;
-    std :: vector<ll> temp(1000000);
+ll merge(std ::vector<ll> *arr, ll start, ll end)
+{
+    ll mid = start + (end - start) / 2;
+    ll i = start;
+    ll j = mid + 1;
+    ll k = start;
+    std ::vector<ll> temp(1000000);
     ll cnt = 0;
-    
-    while(i <= mid and j <=end) {
-        if(arr[i] <= arr[j]) {
-            temp[k] = arr[i];
+
+    while (i <= mid and j <= end)
+    {
+        if (arr->at(i) <= arr->at(j))
+        {
+            temp[k] = arr->at(i);
             k++;
             i++;
         }
-        else { // inversion 
-            temp[k++] = arr[j++];
-            cnt += mid -i +1;
+        else
+        { // inversion
+            temp[k++] = arr->at(j++);
+            cnt += mid - i + 1;
         }
     }
-    while(i<=mid) {
-        temp[k++] = arr[i++];
+    while (i <= mid)
+    {
+        temp[k++] = arr->at(i++);
     }
-    
-    while(j<=end) {
-        temp[k++] = arr[j++];
+
+    while (j <= end)
+    {
+        temp[k++] = arr->at(j++);
     }
-    for(ll i=start;i<=end;i++) {
-        arr[i] = temp[i];
+    for (ll i = start; i <= end; i++)
+    {
+        arr->at(i) = temp[i];
     }
     return cnt;
 }
 
-ll inversion_count( std :: vector<ll> &arr, ll start,ll end) {
-    if(start >= end) {
+ll inversion_count(std ::vector<ll> *arr, ll start, ll end)
+{
+
+    if (start >= end)
+    {
         return 0;
     }
     ll inv_count = 0; // initialize the inverision count.
-    ll mid = start + (end- start) /2; 
-    inv_count += inversion_count(arr ,start, mid); // count number of inverisons while sorting left half recursively
-    inv_count += inversion_count(arr , mid+1, end); // count number of inverisons while sorting right half recursively
-    inv_count += merge(arr,start,end); // merge both halves together and add inversion count
+    ll mid = start + (end - start) / 2;
+    inv_count += inversion_count(arr, start, mid);   // count number of inverisons while sorting left half recursively
+    inv_count += inversion_count(arr, mid + 1, end); // count number of inverisons while sorting right half recursively
+    inv_count += merge(arr, start, end);             // merge both halves together and add inversion count
     return inv_count;
 }
 
+int main()
+{
 
-int main() {
-      
-	    ll  n = 0;
-	    std::cin>>n;
-	    std:: vector<ll> arr(n,0);
-	    for(ll i=0;i<n;i++) {
-	        std::cin>>arr[i];
-	    }
-	   std :: cout<<inversion_count(arr, 0, n-1)<< std:: endl;
-	return 0;
+    ll n = 0;
+    std::cin >> n;
+    ll e = 0;
+    std::vector<ll> arr;
+    for (ll i = 0; i < n; i++)
+    {
+        std::cin >> e;
+        arr.push_back(e);
+    }
+    std ::cout << inversion_count(&arr, 0, n - 1) << std::endl;
+    return 0;
 }
