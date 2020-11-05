@@ -32,15 +32,17 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-#define ll long long
+typedef long long int ll;
 
-ll int merge(vector<ll> arr, ll int start, ll int end) {
-    ll int mid  = start+ (end-start)/2;
-    ll int i=start;
+
+
+ll merge(vector<ll> &arr, ll  start, ll  end) {
+    ll mid  = start+ (end-start)/2;
+    ll i=start;
     ll j = mid +1;
     ll k=start;
     vector<ll> temp(1000000);
-    ll int cnt = 0;
+    ll cnt = 0;
     
     while(i <= mid and j <=end) {
         if(arr[i] <= arr[j]) {
@@ -66,12 +68,12 @@ ll int merge(vector<ll> arr, ll int start, ll int end) {
     return cnt;
 }
 
-ll int inversion_count( vector<ll> arr, ll int start,ll int end) {
+ll inversion_count( vector<ll> &arr, ll start,ll end) {
     if(start >= end) {
         return 0;
     }
     ll inv_count = 0; // initialize the inverision count.
-    ll int mid = start + (end- start) /2; 
+    ll mid = start + (end- start) /2; 
     inv_count += inversion_count(arr ,start, mid); // count number of inverisons while sorting left half recursively
     inv_count += inversion_count(arr , mid+1, end); // count number of inverisons while sorting right half recursively
     inv_count += merge(arr,start,end); // merge both halves together and add inversion count
@@ -81,10 +83,10 @@ ll int inversion_count( vector<ll> arr, ll int start,ll int end) {
 
 int main() {
       
-	    ll int n = 0;
+	    ll  n = 0;
 	    cin>>n;
 	    vector<ll> arr(n,0);
-	    for(ll int i=0;i<n;i++) {
+	    for(ll i=0;i<n;i++) {
 	        cin>>arr[i];
 	    }
 	    cout<<inversion_count(arr, 0, n-1)<<endl;
