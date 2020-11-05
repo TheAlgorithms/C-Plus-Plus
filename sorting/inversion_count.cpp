@@ -20,8 +20,8 @@
  *if(start >= end) {
         return 0;
     }
-    ll inv_count = 0; // initialize the inverision count.
-    ll int mid = start + (end- start) /2;
+    int inv_count = 0; // initialize the inverision count.
+    int int mid = start + (end- start) /2;
     inv_count += inversion_count(arr ,start, mid); // count number of inverisons while sorting left half recursively
     inv_count += inversion_count(arr , mid+1, end); // count number of inverisons while sorting right half recursively
     inv_count += merge(arr,start,end); // merge both halves together and add inversion count
@@ -32,16 +32,14 @@
 #include <vector>
 
 
-typedef int64_t ll;
-
-ll merge(std ::vector<ll> *arr, ll start, ll end)
+int merge(std ::vector<int> *arr, int start, int end)
 {
-    ll mid = start + (end - start) / 2;
-    ll i = start;
-    ll j = mid + 1;
-    ll k = start;
-    std ::vector<ll> temp(1000000);
-    ll cnt = 0;
+    int mid = start + (end - start) / 2;
+    int i = start;
+    int j = mid + 1;
+    int k = start;
+    std ::vector<int> temp(1000000);
+    int cnt = 0;
 
     while (i <= mid and j <= end)
     {
@@ -66,22 +64,22 @@ ll merge(std ::vector<ll> *arr, ll start, ll end)
     {
         temp[k++] = arr->at(j++);
     }
-    for (ll i = start; i <= end; i++)
+    for (int i = start; i <= end; i++)
     {
         arr->at(i) = temp[i];
     }
     return cnt;
 }
 
-ll inversion_count(std ::vector<ll> *arr, ll start, ll end)
+int inversion_count(std ::vector<int> *arr, int start, int end)
 {
 
     if (start >= end)
     {
         return 0;
     }
-    ll inv_count = 0; // initialize the inverision count.
-    ll mid = start + (end - start) / 2;
+    int inv_count = 0; // initialize the inverision count.
+    int mid = start + (end - start) / 2;
     inv_count += inversion_count(arr, start, mid);   // count number of inverisons while sorting left half recursively
     inv_count += inversion_count(arr, mid + 1, end); // count number of inverisons while sorting right half recursively
     inv_count += merge(arr, start, end);             // merge both halves together and add inversion count
@@ -91,11 +89,11 @@ ll inversion_count(std ::vector<ll> *arr, ll start, ll end)
 int main()
 {
 
-    ll n = 0;
+    int n = 0;
     std::cin >> n;
-    ll e = 0;
-    std::vector<ll> arr;
-    for (ll i = 0; i < n; i++)
+    int e = 0;
+    std::vector<int> arr;
+    for (int i = 0; i < n; i++)
     {
         std::cin >> e;
         arr.push_back(e);
