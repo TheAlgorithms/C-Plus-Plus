@@ -31,8 +31,9 @@
 
 #include <iostream>
 #include <vector>
+#include <stdio.h>
 using namespace std;
-typedef long long int ll;
+typedef int64_t ll;
 
 
 
