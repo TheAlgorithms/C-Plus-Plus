@@ -153,7 +153,7 @@ int mergeSort(T* arr, T* temp, int left, int right) {
  * @returns number of inversions in input array, sorts the array
  */
 template<class T>
-int countInversion(T* arr, const T size) {
+int countInversion(T* arr, const int size) {
     std::vector<T> temp;
     temp.reserve(size);
     temp.assign(size, 0);
@@ -203,11 +203,18 @@ void test() {
     int result2 = sorting::inversion::countInversion(arr2.data(), size2);
     assert(inv_count2 == result2);
     // Test 3
-    std::vector<int> arr3 = {33, 45, 65, 76, 1, 2, 5, 7, 88, 12};
+    std::vector<double> arr3 = {33.1, 45.2, 65.4, 76.5, 1.0, 2.9, 5.4, 7.7, 88.9, 12.4};
     int size3 = arr3.size();
     int inv_count3 = 21;
     int result3 = sorting::inversion::countInversion(arr3.data(), size3);
     assert(inv_count3 == result3);
+    // Test 4
+    std::vector<char> arr4 = {'a', 'b', 'c', 'd', 'e'};
+    int size4 = arr4.size();
+    int inv_count4 = 0;
+    int result4 = sorting::inversion::countInversion(arr4.data(), size4);
+    assert(inv_count4 == result4);
+
 }
 
 // /**
