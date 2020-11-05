@@ -86,8 +86,15 @@ int inversion_count(std ::vector<int> *arr, int start, int end)
 }
 
 int main()
-{
-    std::vector<int> arr = {5,3,4,2,1};
-    std ::cout << inversion_count(&arr, 0, 4) << std::endl;
+{   
+    int n = 0; // size of array
+    int e = 0;
+    std::cin >> n;
+    std::vector<int> arr;
+    for(int i = 0; i < n;i++){
+      std::cin>>e;
+      arr.push_back(e);
+    }
+    std ::cout << inversion_count(&arr, 0, n-1) << std::endl;
     return 0;
 }
