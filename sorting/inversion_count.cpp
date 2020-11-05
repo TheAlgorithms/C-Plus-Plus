@@ -31,9 +31,11 @@
 #include <iostream>
 #include <vector>
 #include <cstdio>
-#include <unistd.h>
 #include <sys/time.h>
+#ifndef _MSC_VER
+#include <sys/ipc.h>
 #include <sys/param.h>
+#endif 
 
 typedef int64_t ll;
 
