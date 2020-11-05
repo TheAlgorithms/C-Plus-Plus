@@ -27,7 +27,7 @@
     inv_count += merge(arr,start,end); // merge both halves together and add inversion count
     return inv_count;
 */
-
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 
