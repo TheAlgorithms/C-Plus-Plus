@@ -32,17 +32,16 @@
 #include <iostream>
 #include <vector>
 #include <cstdio>
-using namespace std;
 typedef int64_t ll;
 
 
 
-ll merge(vector<ll> &arr, ll  start, ll  end) {
+ll merge(std :: vector<ll> &arr, ll  start, ll  end) {
     ll mid  = start+ (end-start)/2;
     ll i=start;
     ll j = mid +1;
     ll k=start;
-    vector<ll> temp(1000000);
+    std :: vector<ll> temp(1000000);
     ll cnt = 0;
     
     while(i <= mid and j <=end) {
@@ -69,7 +68,7 @@ ll merge(vector<ll> &arr, ll  start, ll  end) {
     return cnt;
 }
 
-ll inversion_count( vector<ll> &arr, ll start,ll end) {
+ll inversion_count( std :: vector<ll> &arr, ll start,ll end) {
     if(start >= end) {
         return 0;
     }
@@ -85,11 +84,11 @@ ll inversion_count( vector<ll> &arr, ll start,ll end) {
 int main() {
       
 	    ll  n = 0;
-	    cin>>n;
-	    vector<ll> arr(n,0);
+	    std::cin>>n;
+	    std:: vector<ll> arr(n,0);
 	    for(ll i=0;i<n;i++) {
-	        cin>>arr[i];
+	        std::cin>>arr[i];
 	    }
-	    cout<<inversion_count(arr, 0, n-1)<<endl;
+	   std :: cout<<inversion_count(arr, 0, n-1)<< std:: endl;
 	return 0;
 }
