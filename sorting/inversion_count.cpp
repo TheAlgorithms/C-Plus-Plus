@@ -31,7 +31,7 @@
 
 #include <iostream>
 #include <vector>
-#include <stdio.h>
+#include <cstdio>
 using namespace std;
 typedef int64_t ll;
 
