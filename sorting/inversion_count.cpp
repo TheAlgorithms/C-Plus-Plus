@@ -30,15 +30,16 @@
 
 
 #include <iostream>
+#include <vector>
 using namespace std;
 #define ll long long
 
-ll int merge(int arr[], ll int start, ll int end) {
+ll int merge(vector<ll> arr, ll int start, ll int end) {
     ll int mid  = start+ (end-start)/2;
     ll int i=start;
     ll j = mid +1;
     ll k=start;
-    int temp[1000000];
+    vector<ll> temp(1000000);
     ll int cnt = 0;
     
     while(i <= mid and j <=end) {
@@ -59,13 +60,13 @@ ll int merge(int arr[], ll int start, ll int end) {
     while(j<=end) {
         temp[k++] = arr[j++];
     }
-    for(int i=start;i<=end;i++) {
+    for(ll i=start;i<=end;i++) {
         arr[i] = temp[i];
     }
     return cnt;
 }
 
-ll int inversion_count( int arr[], ll int start,ll int end) {
+ll int inversion_count( vector<ll> arr, ll int start,ll int end) {
     if(start >= end) {
         return 0;
     }
@@ -80,12 +81,12 @@ ll int inversion_count( int arr[], ll int start,ll int end) {
 
 int main() {
       
-	    ll int n;
+	    ll int n = 0;
 	    cin>>n;
-	    int a[1000000];
+	    vector<ll> arr(n,0);
 	    for(ll int i=0;i<n;i++) {
-	        cin>>a[i];
+	        cin>>arr[i];
 	    }
-	    cout<<inversion_count(a, 0, n-1);
+	    cout<<inversion_count(arr, 0, n-1)<<endl;
 	return 0;
 }
