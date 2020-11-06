@@ -34,7 +34,7 @@
  * the array and divides the array into two halves, it takes inspiration from 
  * the merge procedure of the merge sort algorithm. Merges two halves of the array
  * and while merging alsp counts the number of inversions.
- * @param *arr is a point64_ter to the array in which inversions are to be counted
+ * @param *arr is a pointer to the array in which inversions are to be counted
  * @param start is the starting index of the array
  * @param end is the ending index of the array
  * @returns total number of inversions in the array and also sorts the array
