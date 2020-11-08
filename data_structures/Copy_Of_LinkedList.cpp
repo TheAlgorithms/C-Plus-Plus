@@ -18,17 +18,17 @@ step 4:Return head of copy list.
 */
 
 #include<iostream>
-using namespace std;
+#include <cstdio>
+#include <cstdlib>
 
 //definition of a node 
-class Node {  
-public:
+struct Node {  
     int val;
     Node* next;
     Node* random;
     
-    Node(int _val) {
-        val = _val;
+    Node(int value) {
+        val = value;
         next = NULL;
         random = NULL;
     }
@@ -40,7 +40,7 @@ void print(Node *start)
     Node *ptr = start; 
     while (ptr) 
     { 
-        cout << "Data = " << ptr->val << ", Random  = "<< ptr->random->val << endl; 
+        std::cout << "Data = " << ptr->val << ", Random  = "<< ptr->random->val <<"\n"; 
         ptr = ptr->next; 
     } 
 } 
@@ -49,8 +49,10 @@ void print(Node *start)
     Node* copyRandomList(Node* head) 
     {
         if(head==NULL)
+        {
             return NULL;
-        
+    	}
+    	
 		//declaration of node pointers    
         Node* l1=head;
         Node* l3=head;
@@ -76,7 +78,10 @@ void print(Node *start)
         while(l3!=NULL)
         {   
             if(l3->random!=NULL)
+            {
             l3->next->random=l3->random->next;
+        	}
+        	
             l3=l3->next->next;
         }
         
@@ -85,10 +90,14 @@ void print(Node *start)
         {
             
             Node* l5=l4->next;
+            
             l4->next=l5->next;
+            
             if(l5->next!=NULL)
+            {
             l5->next=l5->next->next;
-
+			}
+				
             l4=l4->next;
         }
         
@@ -117,10 +126,10 @@ void print(Node *start)
     	// 5's random points to 2 
     	original->next->next->next->next->random =original->next; 
   
-	    cout << "Original list : \n"; 
+	    std::cout << "Original list : \n"; 
     	print(original); 
   
-    	cout << "\nCloned list : \n"; 
+    	std::cout << "\nCloned list : \n"; 
     	
     	Node *cloned_list = copyRandomList(original); 
     	print(cloned_list); 
