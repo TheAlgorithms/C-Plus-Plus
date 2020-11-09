@@ -7,27 +7,25 @@
 #include <iostream>
 #include <vector>
 
-constexpr int max_size = 10;
+constexpr uint8_t max_size{10};
 
 class Queue_Array {
 public:
     Queue_Array();
-    void enqueue(int);
+    void enqueue(const int8_t&);
     int dequeue();
     void display() const;
 private:
-    int front;
-    int rear;
-    std::vector<int> arr;
+    int8_t front{-1};
+    int8_t rear{-1};
+    std::vector<int8_t> arr{};
 };
 
 Queue_Array::Queue_Array() {
-    front = -1;
-    rear = -1;
     arr.resize(max_size);
 }
 
-void Queue_Array::enqueue(const int ele) {
+void Queue_Array::enqueue(const int8_t& ele) {
     if (rear == arr.size() - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
@@ -40,7 +38,7 @@ void Queue_Array::enqueue(const int ele) {
 }
 
 int Queue_Array::dequeue() {
-    int d{0};
+    int8_t d{0};
     if (front == -1) {
         std::cout << "\nstack is empty ";
         return 0;
@@ -58,7 +56,7 @@ void Queue_Array::display() const {
     if (front == -1) {
         std::cout << "\nStack is empty";
     } else {
-        for (int i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
+        for (int8_t i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
     }
 }
 
@@ -71,7 +69,7 @@ int main() {
     std::cout << "\n2. dequeue(Deletion)";
     std::cout << "\n3. Display";
     std::cout << "\n4. Exit";
-    while (1) {
+    while (true) {
         std::cout << "\nEnter your choice ";
         std::cin >> op;
         if (op == 1) {
