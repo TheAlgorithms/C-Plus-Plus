@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 
-#define MAX_SIZE 10
+constexpr int max_size = 10;
 
 class Queue_Array {
 public:
@@ -24,7 +24,7 @@ private:
 Queue_Array::Queue_Array() {
     front = -1;
     rear = -1;
-    arr.resize(MAX_SIZE);
+    arr.resize(max_size);
 }
 
 void Queue_Array::enqueue(const int ele) {
@@ -40,7 +40,7 @@ void Queue_Array::enqueue(const int ele) {
 }
 
 int Queue_Array::dequeue() {
-    int d;
+    int d{0};
     if (front == -1) {
         std::cout << "\nstack is empty ";
         return 0;
@@ -63,7 +63,7 @@ void Queue_Array::display() const {
 }
 
 int main() {
-    int op, data;
+    int op{0}, data{0};
 
     Queue_Array ob;
 
