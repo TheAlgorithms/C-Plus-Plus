@@ -1,41 +1,40 @@
 /*
     Write a program to implement Linear Queue using array.
-
     Functions to implement
         Enqueue (Insertion)
         Dequeue (Deletion)
-
 */
 #include <iostream>
+#include <vector>
 
-#define MAXSIZE 10
+#define MAX_SIZE 10
 
 class Queue_Array {
     int front;
     int rear;
-    int size;
 
  public:
     Queue_Array() {
         front = -1;
         rear = -1;
-        size = MAXSIZE;
+        arr.resize(MAX_SIZE);
     }
-    int *arr = new int[size];
+
+    std::vector<int> arr;
     void enqueue(int);
     int dequeue();
     void display();
 };
 
 void Queue_Array::enqueue(int ele) {
-    if (rear == size - 1) {
+    if (rear == arr.size() - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
         front = rear = 0;
-        arr[rear] = ele;
-    } else if (rear < size) {
+        arr.at(rear) = ele;
+    } else if (rear < arr.size()) {
         rear++;
-        arr[rear] = ele;
+        arr.at(rear) = ele;
     }
 }
 
@@ -45,10 +44,10 @@ int Queue_Array::dequeue() {
         std::cout << "\nstack is empty ";
         return 0;
     } else if (front == rear) {
-        d = arr[front];
+        d = arr.at(front);
         front = rear = -1;
     } else {
-        d = arr[front++];
+        d = arr.at(front++);
     }
 
     return d;
@@ -58,7 +57,7 @@ void Queue_Array::display() {
     if (front == -1) {
         std::cout << "\nStack is empty";
     } else {
-        for (int i = front; i <= rear; i++) std::cout << arr[i] << " ";
+        for (int i = front; i <= rear; i++) std::cout << arr.at(i) << " ";
     }
 }
 
