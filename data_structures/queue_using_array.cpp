@@ -10,30 +10,31 @@
 #define MAX_SIZE 10
 
 class Queue_Array {
-    int front;
-    int rear;
-
- public:
-    Queue_Array() {
-        front = -1;
-        rear = -1;
-        arr.resize(MAX_SIZE);
-    }
-
-    std::vector<int> arr;
+public:
+    Queue_Array();
     void enqueue(int);
     int dequeue();
-    void display();
+    void display() const;
+private:
+    int front;
+    int rear;
+    std::vector<int> arr;
 };
 
-void Queue_Array::enqueue(int ele) {
+Queue_Array::Queue_Array() {
+    front = -1;
+    rear = -1;
+    arr.resize(MAX_SIZE);
+}
+
+void Queue_Array::enqueue(const int ele) {
     if (rear == arr.size() - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
         front = rear = 0;
         arr.at(rear) = ele;
     } else if (rear < arr.size()) {
-        rear++;
+        ++rear;
         arr.at(rear) = ele;
     }
 }
@@ -53,11 +54,11 @@ int Queue_Array::dequeue() {
     return d;
 }
 
-void Queue_Array::display() {
+void Queue_Array::display() const {
     if (front == -1) {
         std::cout << "\nStack is empty";
     } else {
-        for (int i = front; i <= rear; i++) std::cout << arr.at(i) << " ";
+        for (int i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
     }
 }
 
