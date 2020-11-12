@@ -39,26 +39,26 @@ namespace queue_using_array {
  */
 class Queue_Array {
 public:
-    Queue_Array();
-    void enqueue(const int8_t&);
-    int dequeue();
-    void display() const;
+    Queue_Array();                ///< Set maximum number of data 
+    void enqueue(const int8_t&);  ///< Add element to the first of the queue
+    int dequeue();                ///< Delete element from back of the queue
+    void display() const;         ///< Show all saved data
 private:
-    int8_t front{-1};           ///< Index of head of the array
-    int8_t rear{-1};            ///< Index of tail of the array
-    std::vector<int8_t> arr{};  ///< All stored data
+    int8_t front{-1};             ///< Index of head of the array
+    int8_t rear{-1};              ///< Index of tail of the array
+    std::vector<int8_t> arr{};    ///< All stored data
 };
 
 
 /**
-* Queue_Array constructor. Initializes the maximum number of data than can be saved.
+* @brief Queue_Array constructor. Initializes the maximum number of data than can be saved.
 */
 Queue_Array::Queue_Array() {
     arr.resize(max_size);
 }
 
 /**
- * function adds new element to the end of the queue
+ * @brief Adds new element to the end of the queue
  * @param ele to be added to the end of the queue
  */
 void Queue_Array::enqueue(const int8_t& ele) {
@@ -74,7 +74,7 @@ void Queue_Array::enqueue(const int8_t& ele) {
 }
 
 /**
- * function removes the element at the first of the queue
+ * @brief Remove element that is located at the first of the queue
  * @returns data that is deleted if queue is not empty
  */
 int Queue_Array::dequeue() {
@@ -93,7 +93,7 @@ int Queue_Array::dequeue() {
 }
 
 /**
- * function shows all elements in the queue
+ * @brief Utility function to show all elements in the queue
  */
 void Queue_Array::display() const {
     if (front == -1) {
@@ -103,13 +103,14 @@ void Queue_Array::display() const {
     }
 }
 
-}  // namespace linked_list
+}  // namespace queue_using_array
 }  // namespace data_structures
 
 
 /**
- * Main function:
- * Allows the user add and delete values from the queue.
+ * @brief Main function
+ * @details
+ * Allows the user to add and delete values from the queue.
  * Also allows user to display values in the queue.
  * @returns 0 on exit
  */
