@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of Linear Queue using array.
+ * @brief Implementation of Linear [Queue using array]
+ * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/).
  * @details
  * The Linear Queue is a data structure used for holding a sequence of
  * values, which can be added to the end line (enqueue), removed from
@@ -11,26 +12,30 @@
  * 
  * Values can be removed by increasing the `front` variable by 1 (which points to 
  * the first of the array), so it cannot reached any more.
+ * 
+ * @author [Pooja](https://github.com/pooja-git11)
+ * @author [Farbod Ahmadian](https://github.com/farbodahm)
  */
-#include <iostream>
-#include <vector>
+#include <iostream> /// for io operations
+#include <vector>   /// for std::vector
 
 constexpr uint8_t max_size{10};
 
 /**
  * @namespace data_structures
- * @brief Data Structures algorithms
+ * @brief Algorithms with data structures
  */
 namespace data_structures {
 
 /**
- * @namespace linked_list
- * @brief Functions for singly linked list algorithm
+ * @namespace queue_using_array
+ * @brief Functions for [Queue using Array]
+ * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/) implementation.
  */
-namespace linked_list {
+namespace queue_using_array {
 
 /**
- * Queue_Array class containing the main data and also index of head and tail of the array.
+ * @brief Queue_Array class containing the main data and also index of head and tail of the array.
  */
 class Queue_Array {
 public:
@@ -110,7 +115,7 @@ void Queue_Array::display() const {
  */
 int main() {
     int op{0}, data{0};
-    data_structures::linked_list::Queue_Array ob;
+    data_structures::queue_using_array::Queue_Array ob;
 
     std::cout << "\n1. enqueue(Insertion) ";
     std::cout << "\n2. dequeue(Deletion)";
