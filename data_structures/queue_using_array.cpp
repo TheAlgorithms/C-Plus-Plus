@@ -19,7 +19,7 @@
 #include <iostream> /// for io operations
 #include <vector>   /// for std::vector
 
-constexpr uint8_t max_size{10};
+constexpr uint8_t max_size{10}; ///< Maximum size of the queue
 
 /**
  * @namespace data_structures
