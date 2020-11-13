@@ -17,7 +17,7 @@
  * @author [Farbod Ahmadian](https://github.com/farbodahm)
  */
 #include <iostream> /// for io operations
-#include <vector>   /// for std::vector
+#include <array>   /// for std::array
 
 constexpr uint16_t max_size{10}; ///< Maximum size of the queue
 
@@ -39,37 +39,29 @@ namespace queue_using_array {
  */
 class Queue_Array {
 public:
-    Queue_Array();                ///< Set maximum number of data 
-    void enqueue(const int8_t&);  ///< Add element to the first of the queue
+    void enqueue(const int16_t&);  ///< Add element to the first of the queue
     int dequeue();                ///< Delete element from back of the queue
     void display() const;         ///< Show all saved data
 private:
     int8_t front{-1};             ///< Index of head of the array
     int8_t rear{-1};              ///< Index of tail of the array
-    std::vector<int8_t> arr{};    ///< All stored data
+    std::array<int16_t, max_size> arr;    ///< All stored data
 };
-
-
-/**
-* @brief Queue_Array constructor. Initializes the maximum number of data than can be saved.
-*/
-Queue_Array::Queue_Array() {
-    arr.resize(max_size);
-}
 
 /**
  * @brief Adds new element to the end of the queue
  * @param ele to be added to the end of the queue
  */
-void Queue_Array::enqueue(const int8_t& ele) {
+void Queue_Array::enqueue(const int16_t& ele ) {
     if (rear == arr.size() - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
-        front = rear = 0;
-        arr.at(rear) = ele;
+        front = 0;
+        rear = 0;
+        arr[rear] = ele;
     } else if (rear < arr.size()) {
         ++rear;
-        arr.at(rear) = ele;
+        arr[rear] = ele;
     }
 }
 
@@ -99,7 +91,7 @@ void Queue_Array::display() const {
     if (front == -1) {
         std::cout << "\nStack is empty";
     } else {
-        for (int8_t i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
+        for (int16_t i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
     }
 }
 
