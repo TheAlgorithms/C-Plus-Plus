@@ -41,6 +41,7 @@ var namespaces_dup =
     [ "postfix_expression", "d4/de6/namespacepostfix__expression.html", null ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", null ],
     [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", null ],
+    [ "queue_using_array", "d9/d70/namespacequeue__using__array.html", null ],
     [ "radix_sort", "da/dda/namespaceradix__sort.html", null ],
     [ "range_queries", "dd/d69/namespacerange__queries.html", null ],
     [ "rat_maze", "d9/d60/namespacerat__maze.html", null ],

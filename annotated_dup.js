@@ -34,7 +34,6 @@ var annotated_dup =
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
     [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
-    [ "Queue_Array", "d0/dd2/class_queue___array.html", "d0/dd2/class_queue___array" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],

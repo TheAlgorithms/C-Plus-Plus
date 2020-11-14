@@ -9,6 +9,7 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
     [ "linkedlist_implentation_usingarray.cpp", "d3/dce/linkedlist__implentation__usingarray_8cpp.html", "d3/dce/linkedlist__implentation__usingarray_8cpp" ],
     [ "list_array.cpp", "d7/d00/list__array_8cpp.html", "d7/d00/list__array_8cpp" ],
     [ "queue.h", "d8/d38/queue_8h_source.html", null ],
+    [ "queue_using_array.cpp", "d8/df0/queue__using__array_8cpp.html", "d8/df0/queue__using__array_8cpp" ],
     [ "queue_using_two_stacks.cpp", "df/dd0/queue__using__two__stacks_8cpp.html", "df/dd0/queue__using__two__stacks_8cpp" ],
     [ "skip_list.cpp", "d0/d5a/skip__list_8cpp.html", "d0/d5a/skip__list_8cpp" ],
     [ "stack.h", "d7/de0/stack_8h.html", [
