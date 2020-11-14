@@ -28,8 +28,8 @@ namespace ncr_modulo_p {
  */
 class NCRModuloP {
  private:
-    std::vector<uint64_t> fac{}; // stores precomputed factorial(i) % p value
-    uint64_t p = 0; // the p from (nCr % p)
+    std::vector<uint64_t> fac{};  // stores precomputed factorial(i) % p value
+    uint64_t p = 0;               // the p from (nCr % p)
 
  public:
     /** Constructor which precomputes the values of n! % mod from n=0 to size
