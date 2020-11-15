@@ -19,7 +19,6 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-
 /**
  * @brief This is the function implementation of \f$ \binom{n}{r} \f$
  * @details
@@ -43,7 +42,7 @@ T n_choose_r(T n, T r) {
     }
     return ans;
 }
-} // namespace math closing
+} // namespace math
 
 /**
  * @brief Test implementations
