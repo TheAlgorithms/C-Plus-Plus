@@ -19,7 +19,6 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-
 /**
  * @brief This is the function implementation of \f$ \binom{n}{r} \f$
  * @details
