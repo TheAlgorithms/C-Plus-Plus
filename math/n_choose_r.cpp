@@ -4,7 +4,7 @@
  * @details
  * A very basic and efficient method of calculating
  * choosing r from n different choices.
- * $ \binom{n}{r} = \frac{n!}{r! (n-r)!} $
+ * \f$ \binom{n}{r} = \frac{n!}{r! (n-r)!} \f$
  *
  * @author [Taj](https://github.com/tjgurwara99)
  */
@@ -13,15 +13,15 @@
 #include <cassert>
 
 /**
- * This is the function implementation of $\binom{n}{r}$
+ * This is the function implementation of \f$ \binom{n}{r} \f$
  * We are calculating the ans with iterations
  * instead of calculating three different factorials.
  * Also, we are using the fact that 
- * $ \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \cdot \cdots \cdot n}{1 \cdot \cdots \cdot r} $
+ * \f$ \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \cdot \cdots \cdot n}{1 \cdot \cdots \cdot r} \f$
  * @tparam T Only for integer types such as long, int_64 etc
- * @param n $n$ in $ \binom{n}{r} $
- * @param r $r$ in $ \binom{n}{r} $
- * @returns ans $\binom{n}{r} $
+ * @param n \f$ n \f$ in \f$ \binom{n}{r} \f$
+ * @param r \f$ r \f$ in \f$ \binom{n}{r} \f$
+ * @returns ans \f$ \binom{n}{r} \f$
  */
 template <class T>
 T n_choose_r(T n, T r) {
