@@ -17,7 +17,7 @@
  * We are calculating the ans with iterations
  * instead of calculating three different factorials.
  * Also, we are using the fact that 
- * \f$ \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \cdot \cdots \cdot n}{1 \cdot \cdots \cdot r} \f$
+ * \f$ \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \times \cdots \times n}{1 \cdot \cdots \cdot r} \f$
  * @tparam T Only for integer types such as long, int_64 etc
  * @param n \f$ n \f$ in \f$ \binom{n}{r} \f$
  * @param r \f$ r \f$ in \f$ \binom{n}{r} \f$
