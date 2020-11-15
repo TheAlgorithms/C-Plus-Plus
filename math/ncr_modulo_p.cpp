@@ -19,7 +19,7 @@
 namespace math {
 /**
  * @namespace ncr_modulo_p
- * @brief Functions for nCr modulo p implementation.
+ * @brief Functions for [nCr modulo p](https://cp-algorithms.com/combinatorics/binomial-coefficients.html) implementation.
  */
 namespace ncr_modulo_p {
 /**
