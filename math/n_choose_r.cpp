@@ -4,7 +4,7 @@
  * @details
  * A very basic and efficient method of calculating
  * choosing r from n different choices. For more information visit 
- * [Combination}(https://en.wikipedia.org/wiki/Combination) on Wikipedia.
+ * [Combination](https://en.wikipedia.org/wiki/Combination) on Wikipedia.
  * \f$ \binom{n}{r} = \frac{n!}{r! (n-r)!} \f$
  *
  * @author [Tajmeet Singh](https://github.com/tjgurwara99)
