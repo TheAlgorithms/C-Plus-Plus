@@ -43,7 +43,7 @@ T n_choose_r(T n, T r) {
     }
     return ans;
 }
-} // namespace math closing
+} // namespace math
 
 /**
  * @brief Test implementations
