@@ -9,8 +9,8 @@
  * @author [Taj](https://github.com/tjgurwara99)
  */
 
-#include <iostream>
-#include <cassert>
+#include <iostream>   /// for io operations
+#include <cassert>   /// for assert
 
 /**
  * This is the function implementation of \f$ \binom{n}{r} \f$
@@ -73,4 +73,3 @@ int main(int argc, char *argv[]) {
     test();
     return 0;
 }
-
