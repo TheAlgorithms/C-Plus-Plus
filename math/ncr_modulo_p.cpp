@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief This program aims at calculating nCr modulo p. To know more about it,
- * visit https://cp-algorithms.com/combinatorics/binomial-coefficients.html
+ * @brief This program aims at calculating [nCr modulo p](https://cp-algorithms.com/combinatorics/binomial-coefficients.html).
  * @details nCr is defined as n! / (r! * (n-r)!) where n! represents factorial
  * of n. In many cases, the value of nCr is too large to fit in a 64 bit
  * integer. Hence, in competitive programming, there are many problems or
