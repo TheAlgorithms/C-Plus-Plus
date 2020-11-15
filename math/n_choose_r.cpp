@@ -42,22 +42,22 @@ T n_choose_r(T n, T r) {
  */
 static void test() {
     // First test on 5 choose 2
-     long t = (long) n_choose_r(5, 2);
+     int t = n_choose_r(5, 2);
      assert(((void)"10 is the answer but function says otherwise.\n",
              t == 10));
      std::cout << "First test passes." << std::endl;
      // Second test on 5 choose 3
-     t = (long) n_choose_r(5, 3);
+     t = n_choose_r(5, 3);
      assert(((void)"10 is the answer but the function says otherwise.\n",
              t == 10));
      std::cout << "Second test passes." << std::endl;
      // Third test on 3 choose 2
-     t = (long)  n_choose_r(3, 2);
+     t = n_choose_r(3, 2);
      assert(((void)"3 is the answer but the function says otherwise.\n",
              t == 3));
      std::cout << "Third test passes." << std::endl;
      // Fourth test on 10 choose 4
-     t = (long) n_choose_r(10, 4);
+     t = n_choose_r(10, 4);
      assert(((void)"210 is the answer but the function says otherwise.\n",
              t == 210));
      std::cout << "Fourth test passes." << std::endl;
