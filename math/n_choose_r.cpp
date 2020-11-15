@@ -3,17 +3,19 @@
  * @brief Combinations n choose r function implementation
  * @details
  * A very basic and efficient method of calculating
- * choosing r from n different choices.
+ * choosing r from n different choices. For more information visit 
+ * [Combination}(https://en.wikipedia.org/wiki/Combination) on Wikipedia.
  * \f$ \binom{n}{r} = \frac{n!}{r! (n-r)!} \f$
  *
- * @author [Taj](https://github.com/tjgurwara99)
+ * @author [Tajmeet Singh](https://github.com/tjgurwara99)
  */
 
 #include <iostream>   /// for io operations
 #include <cassert>   /// for assert
 
 /**
- * This is the function implementation of \f$ \binom{n}{r} \f$
+ * @brief This is the function implementation of \f$ \binom{n}{r} \f$
+ * @details
  * We are calculating the ans with iterations
  * instead of calculating three different factorials.
  * Also, we are using the fact that 
@@ -23,6 +25,13 @@
  * @param r \f$ r \f$ in \f$ \binom{n}{r} \f$
  * @returns ans \f$ \binom{n}{r} \f$
  */
+
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+
 template <class T>
 T n_choose_r(T n, T r) {
     if(r > n / 2)
@@ -34,7 +43,7 @@ T n_choose_r(T n, T r) {
     }
     return ans;
 }
-
+} // namespace math closing
 
 /**
  * @brief Test implementations
@@ -42,22 +51,22 @@ T n_choose_r(T n, T r) {
  */
 static void test() {
     // First test on 5 choose 2
-     int t = n_choose_r(5, 2);
+     uint8_t t = math::n_choose_r(5, 2);
      assert(((void)"10 is the answer but function says otherwise.\n",
              t == 10));
      std::cout << "First test passes." << std::endl;
      // Second test on 5 choose 3
-     t = n_choose_r(5, 3);
+     t = math::n_choose_r(5, 3);
      assert(((void)"10 is the answer but the function says otherwise.\n",
              t == 10));
      std::cout << "Second test passes." << std::endl;
      // Third test on 3 choose 2
-     t = n_choose_r(3, 2);
+     t = math::n_choose_r(3, 2);
      assert(((void)"3 is the answer but the function says otherwise.\n",
              t == 3));
      std::cout << "Third test passes." << std::endl;
      // Fourth test on 10 choose 4
-     t = n_choose_r(10, 4);
+     t = math::n_choose_r(10, 4);
      assert(((void)"210 is the answer but the function says otherwise.\n",
              t == 210));
      std::cout << "Fourth test passes." << std::endl;
@@ -70,6 +79,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();
+    test(); // executing tests
     return 0;
 }
