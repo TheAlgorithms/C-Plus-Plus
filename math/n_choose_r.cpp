@@ -13,6 +13,13 @@
 #include <iostream>   /// for io operations
 #include <cassert>   /// for assert
 
+
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+
 /**
  * @brief This is the function implementation of \f$ \binom{n}{r} \f$
  * @details
@@ -25,13 +32,6 @@
  * @param r \f$ r \f$ in \f$ \binom{n}{r} \f$
  * @returns ans \f$ \binom{n}{r} \f$
  */
-
-/**
- * @namespace math
- * @brief Mathematical algorithms
- */
-namespace math {
-
 template <class T>
 T n_choose_r(T n, T r) {
     if(r > n / 2)
