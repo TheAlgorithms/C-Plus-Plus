@@ -12,7 +12,6 @@
 #include <iostream>   /// for io operations
 #include <cassert>   /// for assert
 
-
 /**
  * @namespace math
  * @brief Mathematical algorithms
