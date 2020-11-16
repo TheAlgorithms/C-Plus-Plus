@@ -109,12 +109,17 @@ Functions</h2></td></tr>
 <tr class="memitem:afcd07701d73ed65cd616bcba02737f3d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">power</a> (uint64_t a, uint64_t b, uint64_t c)</td></tr>
 <tr class="memdesc:afcd07701d73ed65cd616bcba02737f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates a raised to exponent b under modulo c using modular exponentiation.  <a href="../../dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d">More...</a><br /></td></tr>
 <tr class="separator:afcd07701d73ed65cd616bcba02737f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2dff75c5de70455b90c799d6ad6967"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6e2dff75c5de70455b90c799d6ad6967"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967">n_choose_r</a> (T n, T r)</td></tr>
+<tr class="memdesc:a6e2dff75c5de70455b90c799d6ad6967"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the function implementation of \( \binom{n}{r} \).  <a href="../../dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967">More...</a><br /></td></tr>
+<tr class="separator:a6e2dff75c5de70455b90c799d6ad6967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea">binomialCoeffSum</a> (uint64_t n)</td></tr>
 <tr class="separator:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a> </p>
 <p>for assert</p>
+<p>Mathematical algorithms.</p>
 <p>for io operations</p>
 <p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms</p>
@@ -122,6 +127,7 @@ Functions</h2></td></tr>
 <p>Mathematical algorithms</p>
 <p>for assert</p>
 <p>Mathematical algorithms</p>
+<p>for io operations for assert</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -245,6 +251,68 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a6e2dff75c5de70455b90c799d6ad6967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2dff75c5de70455b90c799d6ad6967">&#9670;&nbsp;</a></span>n_choose_r()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T math::n_choose_r </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the function implementation of \( \binom{n}{r} \). </p>
+<p>We are calculating the ans with iterations instead of calculating three different factorials. Also, we are using the fact that \( \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \times \cdots \times n}{1 \times \cdots \times r} \) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Only for integer types such as long, int_64 etc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>\( n \) in \( \binom{n}{r} \) </td></tr>
+    <tr><td class="paramname">r</td><td>\( r \) in \( \binom{n}{r} \) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ans \( \binom{n}{r} \) </dd></dl>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(r &gt; n / 2)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        r = n - r; <span class="comment">// Because of the fact that  nCr(n, r) == nCr(n, n - r)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    T <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> = 1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt;= r; i++) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> *= n - r + i;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a> /= i;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa">ans</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_a6e2dff75c5de70455b90c799d6ad6967_cgraph.svg" width="228" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="afcd07701d73ed65cd616bcba02737f3d"></a>
