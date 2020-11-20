@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('df/dce/namespacegraph.html','../../');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms.  
+<p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms.  
 <a href="../../df/dce/namespacegraph.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -141,8 +141,8 @@ Functions</h2></td></tr>
 <tr class="separator:a868530bfaed30e57290a76d5b4402d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms. </p>
-<p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
+<div class="textblock"><p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
+<p><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a372ff051a7bc6c91d34a7b58edf8dfce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a372ff051a7bc6c91d34a7b58edf8dfce">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[1/3]</span></h2>
@@ -411,7 +411,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> n = adj-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    /// setting all the distances initially to INF</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> dist(n, INF);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> dist(n, <a class="code" href="../../d7/d07/bidirectional__dijkstra_8cpp.html#a330a2b0a904f01802ada1f8f3b28e76c">INF</a>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /// creating a min heap using priority queue</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    /// first element of pair contains the distance</span></div>
@@ -445,7 +445,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (dist[t] != INF) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (dist[t] != <a class="code" href="../../d7/d07/bidirectional__dijkstra_8cpp.html#a330a2b0a904f01802ada1f8f3b28e76c">INF</a>) {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> dist[t];</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> -1;</div>
@@ -453,7 +453,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a868530bfaed30e57290a76d5b4402d50_cgraph.svg" width="279" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a868530bfaed30e57290a76d5b4402d50_cgraph.svg" width="322" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -631,6 +631,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/empty.html">std::priority_queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue/push.html">std::priority_queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
 <div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
+<div class="ttc" id="abidirectional__dijkstra_8cpp_html_a330a2b0a904f01802ada1f8f3b28e76c"><div class="ttname"><a href="../../d7/d07/bidirectional__dijkstra_8cpp.html#a330a2b0a904f01802ada1f8f3b28e76c">INF</a></div><div class="ttdeci">constexpr int64_t INF</div><div class="ttdoc">for store the graph, the distances, and the path</div><div class="ttdef"><b>Definition:</b> bidirectional_dijkstra.cpp:23</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

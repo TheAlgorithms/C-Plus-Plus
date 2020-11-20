@@ -2,6 +2,7 @@ var namespaces_dup =
 [
     [ "activations", "d5/d39/namespaceactivations.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", null ],
+    [ "bidirectional_dijkstra", "d4/d13/namespacebidirectional__dijkstra.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", null ],
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],

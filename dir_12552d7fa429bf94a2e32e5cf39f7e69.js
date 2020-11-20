@@ -1,5 +1,6 @@
 var dir_12552d7fa429bf94a2e32e5cf39f7e69 =
 [
+    [ "bidirectional_dijkstra.cpp", "d7/d07/bidirectional__dijkstra_8cpp.html", "d7/d07/bidirectional__dijkstra_8cpp" ],
     [ "breadth_first_search.cpp", "df/d82/breadth__first__search_8cpp.html", "df/d82/breadth__first__search_8cpp" ],
     [ "connected_components.cpp", "df/ddd/connected__components_8cpp.html", "df/ddd/connected__components_8cpp" ],
     [ "depth_first_search.cpp", "da/d8d/depth__first__search_8cpp.html", "da/d8d/depth__first__search_8cpp" ],
