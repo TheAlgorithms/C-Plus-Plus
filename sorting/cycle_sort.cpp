@@ -1,19 +1,22 @@
 /**
  * @file
- * @brief Implementation of [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
+ * @brief Implementation of [Cycle
+ * sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  *
  * @details
- * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best cas and works in \f$O(n^2)\f$ in worst case.
- * If a element is already at its correct  position, do nothing.
- * If a element is not at its correct position, we then need to move it to its correct position by computing the correct positions.Therefore, we should make sure the duplicate elements.
+ * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best cas
+ * and works in \f$O(n^2)\f$ in worst case. If a element is already at its
+ * correct  position, do nothing. If a element is not at its correct position,
+ * we then need to move it to its correct position by computing the correct
+ * positions.Therefore, we should make sure the duplicate elements.
  *
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
-#include <algorithm> /// for std::is_sorted, std::swap
-#include <cassert>     /// for assert
-#include <iostream> /// for io operations
-#include <vector>    /// for std::vector 
+#include <algorithm>  /// for std::is_sorted, std::swap
+#include <cassert>    /// for assert
+#include <iostream>   /// for io operations
+#include <vector>     /// for std::vector
 
 /**
  * @namespace sorting
@@ -22,9 +25,10 @@
 namespace sorting {
 /**
  * @namespace cycle_sort
- * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
+ * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
+ * algorithm
  */
-namespace cycle_sort { 
+namespace cycle_sort {
 /**
  * @brief The main function implements cycleSort
  * @tparam T type of array
@@ -38,7 +42,8 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
         // initialize item
         T item = arr[cycle_start];
 
-        // Count the number of elements smaller than item, this  number is the correct index of item.
+        // Count the number of elements smaller than item, this  number is the
+        // correct index of item.
         int pos = cycle_start;
         for (size_t i = cycle_start + 1; i < arr.size(); i++) {
             if (arr[i] < item) {
@@ -71,18 +76,19 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
     }
     return arr;
 }
-} // namespace cycle_sort
-} // namespace sorting
+}  // namespace cycle_sort
+}  // namespace sorting
 
 /**
  * @brief Test implementations
  * @returns void
  */
 static void test() {
-    // [506, 48, 123, 79, 0, 362, 951, 500, 0] return [0, 0, 48, 79, 123, 362, 500, 506, 951]
+    // [506, 48, 123, 79, 0, 362, 951, 500, 0] return [0, 0, 48, 79, 123, 362,
+    // 500, 506, 951]
     std::vector<int> array1 = {506, 48, 123, 79, 0, 362, 951, 500, 0};
     std::cout << "Test 1... ";
-    std::vector<int> arr1  = sorting::cycle_sort::cycleSort(array1);
+    std::vector<int> arr1 = sorting::cycle_sort::cycleSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
     std::cout << "passed" << std::endl;
 

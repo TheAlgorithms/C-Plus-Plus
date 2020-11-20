@@ -7,19 +7,20 @@
  * values, which can be added to the end line (enqueue), removed from
  * head of line (dequeue) and displayed.
  * ### Algorithm
- * Values can be added by increasing the `rear` variable by 1 (which points to 
- * the end of the array), then assigning new value to `rear`'s element of the array.
- * 
- * Values can be removed by increasing the `front` variable by 1 (which points to 
- * the first of the array), so it cannot reached any more.
- * 
+ * Values can be added by increasing the `rear` variable by 1 (which points to
+ * the end of the array), then assigning new value to `rear`'s element of the
+ * array.
+ *
+ * Values can be removed by increasing the `front` variable by 1 (which points
+ * to the first of the array), so it cannot reached any more.
+ *
  * @author [Pooja](https://github.com/pooja-git11)
  * @author [Farbod Ahmadian](https://github.com/farbodahm)
  */
-#include <iostream> /// for io operations
-#include <array>   /// for std::array
+#include <array>     /// for std::array
+#include <iostream>  /// for io operations
 
-constexpr uint16_t max_size{10}; ///< Maximum size of the queue
+constexpr uint16_t max_size{10};  ///< Maximum size of the queue
 
 /**
  * @namespace data_structures
@@ -30,29 +31,31 @@ namespace data_structures {
 /**
  * @namespace queue_using_array
  * @brief Functions for [Queue using Array]
- * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/) implementation.
+ * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
+ * implementation.
  */
 namespace queue_using_array {
 
 /**
- * @brief Queue_Array class containing the main data and also index of head and tail of the array.
+ * @brief Queue_Array class containing the main data and also index of head and
+ * tail of the array.
  */
 class Queue_Array {
-public:
+ public:
     void enqueue(const int16_t&);  ///< Add element to the first of the queue
-    int dequeue();                ///< Delete element from back of the queue
-    void display() const;         ///< Show all saved data
-private:
-    int8_t front{-1};             ///< Index of head of the array
-    int8_t rear{-1};              ///< Index of tail of the array
-    std::array<int16_t, max_size> arr;    ///< All stored data
+    int dequeue();                 ///< Delete element from back of the queue
+    void display() const;          ///< Show all saved data
+ private:
+    int8_t front{-1};                     ///< Index of head of the array
+    int8_t rear{-1};                      ///< Index of tail of the array
+    std::array<int16_t, max_size> arr{};  ///< All stored data
 };
 
 /**
  * @brief Adds new element to the end of the queue
  * @param ele to be added to the end of the queue
  */
-void Queue_Array::enqueue(const int16_t& ele ) {
+void Queue_Array::enqueue(const int16_t& ele) {
     if (rear == arr.size() - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
@@ -97,7 +100,6 @@ void Queue_Array::display() const {
 
 }  // namespace queue_using_array
 }  // namespace data_structures
-
 
 /**
  * @brief Main function

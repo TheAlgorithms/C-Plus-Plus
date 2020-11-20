@@ -75,10 +75,11 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
                 int profit2 = maxValue[i - 1][j];
 
                 maxValue[i][j] = std::max(profit1, profit2);
-            } else
+            } else {
                 // as weight of current item is greater than allowed weight, so
                 // maxProfit will be profit obtained by excluding current item.
                 maxValue[i][j] = maxValue[i - 1][j];
+            }
         }
     }
 

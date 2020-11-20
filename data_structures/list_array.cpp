@@ -3,25 +3,27 @@
  * @todo Add documentation
  * @warning The sorting algorithm is erroneous
  */
-#include <iostream>
 #include <array>
+#include <iostream>
 
 struct list {
     std::array<int, 50> data{};
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last, int x) {
+    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last,
+                     int x) {
         if (last < first) {
             return -1;
         }
         int mid = (first + last) / 2;
-        if (dataArr[mid] == x)
+        if (dataArr[mid] == x) {
             return mid;
-        else if (x < dataArr[mid])
+        } else if (x < dataArr[mid]) {
             return (BinarySearch(dataArr, first, mid - 1, x));
-        else if (x > dataArr[mid])
+        } else if (x > dataArr[mid]) {
             return (BinarySearch(dataArr, mid + 1, last, x));
+        }
 
         std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
         return -1;
@@ -38,7 +40,7 @@ struct list {
     }
 
     int Search(int x) {
-        int pos;
+        int pos = 0;
 
         if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, x);
@@ -55,7 +57,7 @@ struct list {
     }
 
     void Sort() {
-        int i, j, pos=0;
+        int i = 0, j = 0, pos = 0;
         for (i = 0; i < top; i++) {
             int min = data[i];
             for (j = i + 1; j < top; j++) {
@@ -119,8 +121,8 @@ struct list {
 
 int main() {
     list L;
-    int choice;
-    int x;
+    int choice = 0;
+    int x = 0;
     do {
         // Choices for operations on the list_array.
         std::cout << "\n0.Exit";
