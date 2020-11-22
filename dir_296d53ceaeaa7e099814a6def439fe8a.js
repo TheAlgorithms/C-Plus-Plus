@@ -29,6 +29,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "modular_exponentiation.cpp", "d0/d6d/modular__exponentiation_8cpp.html", "d0/d6d/modular__exponentiation_8cpp" ],
     [ "modular_inverse_fermat_little_theorem.cpp", "d8/d53/modular__inverse__fermat__little__theorem_8cpp.html", "d8/d53/modular__inverse__fermat__little__theorem_8cpp" ],
     [ "n_choose_r.cpp", "d1/dbb/n__choose__r_8cpp.html", "d1/dbb/n__choose__r_8cpp" ],
+    [ "ncr_modulo_p.cpp", "de/dab/ncr__modulo__p_8cpp.html", "de/dab/ncr__modulo__p_8cpp" ],
     [ "number_of_positive_divisors.cpp", "d0/da2/number__of__positive__divisors_8cpp.html", "d0/da2/number__of__positive__divisors_8cpp" ],
     [ "power_for_huge_numbers.cpp", "df/def/power__for__huge__numbers_8cpp.html", "df/def/power__for__huge__numbers_8cpp" ],
     [ "prime_factorization.cpp", "db/d0d/prime__factorization_8cpp.html", "db/d0d/prime__factorization_8cpp" ],

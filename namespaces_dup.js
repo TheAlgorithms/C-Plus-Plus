@@ -34,6 +34,7 @@ var namespaces_dup =
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],
     [ "n_queens_all_solutions", "df/d44/namespacen__queens__all__solutions.html", null ],
     [ "n_queens_optimized", "d8/d14/namespacen__queens__optimized.html", null ],
+    [ "ncr_modulo_p", "d4/db9/namespacencr__modulo__p.html", null ],
     [ "neural_network", "d0/d2e/namespaceneural__network.html", null ],
     [ "numerical_methods", "d1/de0/namespacenumerical__methods.html", null ],
     [ "others", "d0/d6f/namespaceothers.html", null ],

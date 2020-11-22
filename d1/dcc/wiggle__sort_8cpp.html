@@ -100,11 +100,11 @@ $(document).ready(function(){initNavTree('d1/dcc/wiggle__sort_8cpp.html','../../
 
 <p><a href="https://leetcode.com/problems/wiggle-sort-ii/">Wiggle Sort Algorithm</a> Implementation  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for wiggle_sort.cpp:</div>
 <div class="dyncontent">
@@ -169,27 +169,25 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html#a1">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/sorting/wiggle_sort.cpp</a>.</dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                         {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            uint32_t size = arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> out(arr); <span class="comment">// create a copy of input vector. this way, the original input vector does not get modified. a sorted array is is returned.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size ; i +=2) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">if</span>(i &gt; 0 &amp;&amp; out[i-1] &gt; out[i]) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i],out[i-1]); <span class="comment">//swapping the two values</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">if</span>(i &lt; size - 1 &amp;&amp; out[i] &lt; out[i+1]) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i],out[i+1]); <span class="comment">//swapping the two values</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> out; <span class="comment">//returns the sorted vector</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    uint32_t size = arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> out(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        arr);  <span class="comment">// create a copy of input vector. this way, the original input</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;               <span class="comment">// vector does not get modified. a sorted array is is returned.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i += 2) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (i &gt; 0 &amp;&amp; out[i - 1] &gt; out[i]) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i], out[i - 1]);  <span class="comment">// swapping the two values</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (i &lt; size - 1 &amp;&amp; out[i] &lt; out[i + 1]) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i], out[i + 1]);  <span class="comment">// swapping the two values</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> out;  <span class="comment">// returns the sorted vector</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

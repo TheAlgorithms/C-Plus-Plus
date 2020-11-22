@@ -161,11 +161,11 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;           {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Testing</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;           {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Testing</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -251,16 +251,17 @@ template&lt;size_t n&gt; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordtype">int</span> profit2 = maxValue[i - 1][j];</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                maxValue[i][j] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(profit1, profit2);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="comment">// as weight of current item is greater than allowed weight, so</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="comment">// maxProfit will be profit obtained by excluding current item.</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                maxValue[i][j] = maxValue[i - 1][j];</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// returning maximum value</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> maxValue[items][capacity];</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// returning maximum value</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> maxValue[items][capacity];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -295,31 +296,31 @@ Here is the call graph for this function:</div>
 
 <p>Function to test above algorithm. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                   {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Test 1</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n1 = 3;                             <span class="comment">// number of items</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n1&gt;</a> weight1 = {10, 20, 30};   <span class="comment">// weight of each item</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n1&gt;</a> value1 = {60, 100, 120};  <span class="comment">// value of each item</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> capacity1 = 50;                     <span class="comment">// capacity of carrying bag</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> max_value1 = <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1">dynamic_programming::knapsack::maxKnapsackValue</a>(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        capacity1, weight1, value1);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> expected_max_value1 = 220;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    assert(max_value1 == expected_max_value1);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value with &quot;</span> &lt;&lt; n1 &lt;&lt; <span class="stringliteral">&quot; items is &quot;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;              &lt;&lt; max_value1 &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Test 2</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n2 = 4;                               <span class="comment">// number of items</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n2&gt;</a> weight2 = {24, 10, 10, 7};  <span class="comment">// weight of each item</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n2&gt;</a> value2 = {24, 18, 18, 10};  <span class="comment">// value of each item</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> capacity2 = 25;                       <span class="comment">// capacity of carrying bag</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> max_value2 = <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1">dynamic_programming::knapsack::maxKnapsackValue</a>(</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        capacity2, weight2, value2);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> expected_max_value2 = 36;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    assert(max_value2 == expected_max_value2);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value with &quot;</span> &lt;&lt; n2 &lt;&lt; <span class="stringliteral">&quot; items is &quot;</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;              &lt;&lt; max_value2 &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                   {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Test 1</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n1 = 3;                             <span class="comment">// number of items</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n1&gt;</a> weight1 = {10, 20, 30};   <span class="comment">// weight of each item</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n1&gt;</a> value1 = {60, 100, 120};  <span class="comment">// value of each item</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> capacity1 = 50;                     <span class="comment">// capacity of carrying bag</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> max_value1 = <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1">dynamic_programming::knapsack::maxKnapsackValue</a>(</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        capacity1, weight1, value1);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> expected_max_value1 = 220;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    assert(max_value1 == expected_max_value1);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value with &quot;</span> &lt;&lt; n1 &lt;&lt; <span class="stringliteral">&quot; items is &quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              &lt;&lt; max_value1 &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Test 2</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n2 = 4;                               <span class="comment">// number of items</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n2&gt;</a> weight2 = {24, 10, 10, 7};  <span class="comment">// weight of each item</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, n2&gt;</a> value2 = {24, 18, 18, 10};  <span class="comment">// value of each item</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> capacity2 = 25;                       <span class="comment">// capacity of carrying bag</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> max_value2 = <a class="code" href="../../db/d16/0__1__knapsack_8cpp.html#a15edf30f336885e5b851f6b7199c6cd1">dynamic_programming::knapsack::maxKnapsackValue</a>(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        capacity2, weight2, value2);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> expected_max_value2 = 36;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    assert(max_value2 == expected_max_value2);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Maximum Knapsack value with &quot;</span> &lt;&lt; n2 &lt;&lt; <span class="stringliteral">&quot; items is &quot;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              &lt;&lt; max_value2 &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -332,7 +333,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div><div class="ttdoc">STL class.</div></div>
-<div class="ttc" id="a0__1__knapsack_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition:</b> 0_1_knapsack.cpp:95</div></div>
+<div class="ttc" id="a0__1__knapsack_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../db/d16/0__1__knapsack_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition:</b> 0_1_knapsack.cpp:96</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>

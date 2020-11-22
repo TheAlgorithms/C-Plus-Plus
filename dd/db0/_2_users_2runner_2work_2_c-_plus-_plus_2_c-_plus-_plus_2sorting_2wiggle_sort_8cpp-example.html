@@ -114,89 +114,86 @@ $(document).ready(function(){initNavTree('dd/db0/_2_users_2runner_2work_2_c-_plu
 <div class="line"><span class="comment"> * arr = [2,8,9,1,7], after wiggle sort arr will become equal to [8,2,9,1,7]</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">/// for io operations</span></div>
-<div class="line"><span class="comment"></span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">/// for io operations</span></div>
+<div class="line"><span class="comment"></span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
 <div class="line"><span class="comment"> * @namespace sorting</span></div>
 <div class="line"><span class="comment"> * @brief Sorting algorithms</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="../../d5/d91/namespacesorting.html">sorting</a> {<span class="comment"></span></div>
-<div class="line"><span class="comment">    /**</span></div>
-<div class="line"><span class="comment">    * @namespace wiggle_sort</span></div>
-<div class="line"><span class="comment">    * @brief Functions for [Wiggle Sort](https://leetcode.com/problems/wiggle-sort-ii/) algorithm</span></div>
-<div class="line"><span class="comment">    */</span></div>
-<div class="line">    <span class="keyword">namespace </span><a class="code" href="../../d0/d52/namespacewiggle__sort.html">wiggle_sort</a> {</div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> * @namespace wiggle_sort</span></div>
+<div class="line"><span class="comment"> * @brief Functions for [Wiggle</span></div>
+<div class="line"><span class="comment"> * Sort](https://leetcode.com/problems/wiggle-sort-ii/) algorithm</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">namespace </span><a class="code" href="../../d0/d52/namespacewiggle__sort.html">wiggle_sort</a> {</div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">        /**</span></div>
-<div class="line"><span class="comment">        *</span></div>
-<div class="line"><span class="comment">        * @brief Function used for sorting the elements in wave form.</span></div>
-<div class="line"><span class="comment">        * @details</span></div>
-<div class="line"><span class="comment">        * Checking whether the even indexed elements are greater than</span></div>
-<div class="line"><span class="comment">        * their adjacent odd elements.</span></div>
-<div class="line"><span class="comment">        * Traversing all even indexed elements of the input arr.</span></div>
-<div class="line"><span class="comment">        * If current element is smaller than the previous odd element, swap them.</span></div>
-<div class="line"><span class="comment">        * If current element is smaller than the next odd element, swap them.</span></div>
-<div class="line"><span class="comment">        *</span></div>
-<div class="line"><span class="comment">        * @param arr input array (unsorted elements)</span></div>
-<div class="line"><span class="comment">        *</span></div>
-<div class="line"><span class="comment">        */</span></div>
-<div class="line">        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="comment">// this allows to have vectors of ints, double, float, etc</span></div>
-<div class="line">        <a name="_a0"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a name="a1"></a><a class="code" href="../../d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d">wiggleSort</a>(<span class="keyword">const</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>&amp; arr) {</div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * @brief Function used for sorting the elements in wave form.</span></div>
+<div class="line"><span class="comment"> * @details</span></div>
+<div class="line"><span class="comment"> * Checking whether the even indexed elements are greater than</span></div>
+<div class="line"><span class="comment"> * their adjacent odd elements.</span></div>
+<div class="line"><span class="comment"> * Traversing all even indexed elements of the input arr.</span></div>
+<div class="line"><span class="comment"> * If current element is smaller than the previous odd element, swap them.</span></div>
+<div class="line"><span class="comment"> * If current element is smaller than the next odd element, swap them.</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * @param arr input array (unsorted elements)</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;  <span class="comment">// this allows to have vectors of ints, double, float,</span></div>
+<div class="line">                       <span class="comment">// etc</span></div>
+<div class="line">                       <a name="_a0"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a name="a1"></a><a class="code" href="../../d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d">wiggleSort</a>(<span class="keyword">const</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> &amp;arr) {</div>
+<div class="line">    uint32_t size = arr.<a name="a2"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"> </div>
-<div class="line">            uint32_t size = arr.<a name="a2"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> out(</div>
+<div class="line">        arr);  <span class="comment">// create a copy of input vector. this way, the original input</span></div>
+<div class="line">               <span class="comment">// vector does not get modified. a sorted array is is returned.</span></div>
 <div class="line"> </div>
-<div class="line">            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> out(arr); <span class="comment">// create a copy of input vector. this way, the original input vector does not get modified. a sorted array is is returned.</span></div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size ; i +=2) {</div>
-<div class="line"> </div>
-<div class="line">                <span class="keywordflow">if</span>(i &gt; 0 &amp;&amp; out[i-1] &gt; out[i]) {</div>
-<div class="line">                    <a name="a3"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i],out[i-1]); <span class="comment">//swapping the two values</span></div>
-<div class="line">                }</div>
-<div class="line"> </div>
-<div class="line">                <span class="keywordflow">if</span>(i &lt; size - 1 &amp;&amp; out[i] &lt; out[i+1]) {</div>
-<div class="line">                    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i],out[i+1]); <span class="comment">//swapping the two values</span></div>
-<div class="line">                }</div>
-<div class="line"> </div>
-<div class="line">            }</div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">return</span> out; <span class="comment">//returns the sorted vector</span></div>
-<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i += 2) {</div>
+<div class="line">        <span class="keywordflow">if</span> (i &gt; 0 &amp;&amp; out[i - 1] &gt; out[i]) {</div>
+<div class="line">            <a name="a3"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i], out[i - 1]);  <span class="comment">// swapping the two values</span></div>
 <div class="line">        }</div>
-<div class="line">    } <span class="comment">// namespace wiggle_sort</span></div>
-<div class="line">} <span class="comment">// namespace sorting</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (i &lt; size - 1 &amp;&amp; out[i] &lt; out[i + 1]) {</div>
+<div class="line">            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(out[i], out[i + 1]);  <span class="comment">// swapping the two values</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> out;  <span class="comment">// returns the sorted vector</span></div>
+<div class="line">}</div>
+<div class="line">}  <span class="comment">// namespace wiggle_sort</span></div>
+<div class="line">}  <span class="comment">// namespace sorting</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> * @brief Utility function used for printing the elements.</span></div>
-<div class="line"><span class="comment"> * Prints elements of the array after they&#39;re sorted using wiggle sort algorithm.</span></div>
+<div class="line"><span class="comment"> * Prints elements of the array after they&#39;re sorted using wiggle sort</span></div>
+<div class="line"><span class="comment"> * algorithm.</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> * @param arr array containing the sorted elements</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a4"></a><a class="code" href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a>(<span class="keyword">const</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> &amp;arr) {</div>
-<div class="line"> </div>
 <div class="line">    uint32_t size = arr.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"> </div>
 <div class="line">    <a name="_a5"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted elements are as follows: &quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0 ; i &lt; size ; i++ ) {</div>
-<div class="line"> </div>
-<div class="line">        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] ;</div>
-<div class="line">        <span class="keywordflow">if</span>(i != size - 1) {</div>
-<div class="line">            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> ;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line">        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i];</div>
+<div class="line">        <span class="keywordflow">if</span> (i != size - 1) {</div>
+<div class="line">            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line">        }</div>
-<div class="line"> </div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>&lt;&lt;<a name="a6"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"> </div>
+<div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; <a name="a6"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line">}</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
@@ -204,11 +201,10 @@ $(document).ready(function(){initNavTree('dd/db0/_2_users_2runner_2work_2_c-_plu
 <div class="line"><span class="comment"> * @returns void</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a7"></a><a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
-<div class="line"> </div>
-<div class="line">    <a name="a8"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a name="a9"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>)); <span class="comment">// initialize random number generator</span></div>
+<div class="line">    <a name="a8"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a name="a9"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize random number generator</span></div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> data1(100);</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;d: data1) { <span class="comment">// generate random numbers between -5.0 and 4.99</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;d : data1) {  <span class="comment">// generate random numbers between -5.0 and 4.99</span></div>
 <div class="line">        d = float(<a name="a10"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 1000 - 500) / 100.f;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -216,12 +212,12 @@ $(document).ready(function(){initNavTree('dd/db0/_2_users_2runner_2work_2_c-_plu
 <div class="line"> </div>
 <div class="line">    <a class="code" href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a>(sorted);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span>(uint32_t j = 0; j &lt; data1.size(); j+=2) {</div>
-<div class="line">        assert(data1[j] &lt;= data1[j+1] &amp;&amp; data1[j+1] &gt;= data1[j+2]); <span class="comment">// check the validation condition</span></div>
+<div class="line">    <span class="keywordflow">for</span> (uint32_t j = 0; j &lt; data1.size(); j += 2) {</div>
+<div class="line">        assert(data1[j] &lt;= data1[j + 1] &amp;&amp;</div>
+<div class="line">               data1[j + 1] &gt;= data1[j + 2]);  <span class="comment">// check the validation condition</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 passed\n&quot;</span>;</div>
-<div class="line"> </div>
 <div class="line">}</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/** Driver Code */</span></div>
@@ -240,8 +236,8 @@ $(document).ready(function(){initNavTree('dd/db0/_2_users_2runner_2work_2_c-_plu
 <div class="ttc" id="anamespacesorting_html"><div class="ttname"><a href="../../d5/d91/namespacesorting.html">sorting</a></div><div class="ttdoc">Sorting algorithms.</div></div>
 <div class="ttc" id="agraph__coloring_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> graph_coloring.cpp:96</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="agroup__sorting_html_ga135e4c638e3bcf548bd122b5f49a3e72"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a></div><div class="ttdeci">static void displayElements(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Utility function used for printing the elements. Prints elements of the array after they're sorted us...</div><div class="ttdef"><b>Definition:</b> wiggle_sort.cpp:84</div></div>
-<div class="ttc" id="awiggle__sort_8cpp_html_a52955ecf8669ff6c5b9b1e66bd7db41d"><div class="ttname"><a href="../../d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d">sorting::wiggle_sort::wiggleSort</a></div><div class="ttdeci">std::vector&lt; T &gt; wiggleSort(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Function used for sorting the elements in wave form.</div><div class="ttdef"><b>Definition:</b> wiggle_sort.cpp:51</div></div>
+<div class="ttc" id="agroup__sorting_html_ga135e4c638e3bcf548bd122b5f49a3e72"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72">displayElements</a></div><div class="ttdeci">static void displayElements(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Utility function used for printing the elements. Prints elements of the array after they're sorted us...</div><div class="ttdef"><b>Definition:</b> wiggle_sort.cpp:85</div></div>
+<div class="ttc" id="awiggle__sort_8cpp_html_a52955ecf8669ff6c5b9b1e66bd7db41d"><div class="ttname"><a href="../../d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d">sorting::wiggle_sort::wiggleSort</a></div><div class="ttdeci">std::vector&lt; T &gt; wiggleSort(const std::vector&lt; T &gt; &amp;arr)</div><div class="ttdoc">Function used for sorting the elements in wave form.</div><div class="ttdef"><b>Definition:</b> wiggle_sort.cpp:53</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>

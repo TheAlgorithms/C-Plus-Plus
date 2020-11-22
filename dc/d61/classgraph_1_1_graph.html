@@ -116,8 +116,8 @@ Collaboration diagram for graph::Graph&lt; T &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a877b2cba40d8d46dde6fb4209effed19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19">add_edge</a> (T u, T v, bool bidir=true)</td></tr>
 <tr class="separator:a877b2cba40d8d46dde6fb4209effed19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3efabd5e401ef0f47c179866e7454e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt; T, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#a6e3efabd5e401ef0f47c179866e7454e">breadth_first_search</a> (T src)</td></tr>
-<tr class="separator:a6e3efabd5e401ef0f47c179866e7454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a1a96cd4cddf0d4feb02855c4c16af"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt; T, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#ab1a1a96cd4cddf0d4feb02855c4c16af">breadth_first_search</a> (T src)</td></tr>
+<tr class="separator:ab1a1a96cd4cddf0d4feb02855c4c16af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8839fa14bff19d2deab4a618447c13e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5">Graph</a> (size_t N, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &amp;undirected_edges)</td></tr>
 <tr class="memdesc:a8839fa14bff19d2deab4a618447c13e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the adjacency list for each vertex in the graph. Assumes that evey edge is a pair of valid vertex indices.  <a href="../../dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5">More...</a><br /></td></tr>
 <tr class="separator:a8839fa14bff19d2deab4a618447c13e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3ab95bb3ba618a7e883ead8ee696c25c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt; T, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a></td></tr>
-<tr class="separator:a3ab95bb3ba618a7e883ead8ee696c25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebf0505d625b043bb9c8c27c7a8def0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt; T, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a></td></tr>
+<tr class="separator:acebf0505d625b043bb9c8c27c7a8def0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -246,26 +246,27 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>add_edge(u,v,bidir) is used to add an edge between node u and node v by default , bidir is made true , i.e graph is bidirectional . It means if edge(u,v) is added then u--&gt;v and v--&gt;u both edges exist.</p>
 <p>to make the graph unidirectional pass the third parameter of add_edge as false which will</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                             {<span class="comment"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">        *  add_edge(u,v,bidir) is used to add an edge between node u and node v</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        *  by default , bidir is made true , i.e graph is bidirectional .</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">        *  It means if edge(u,v) is added then u--&gt;v  and  v--&gt;u both edges exist.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        *</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">        *  to make the graph unidirectional pass the third parameter of add_edge as</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        *  false which will</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a>[u].push_back(v);               <span class="comment">// u--&gt;v edge added</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span>(bidir==<span class="keyword">true</span>){</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <span class="comment">// if graph is bidirectional</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a>[v].push_back(u);             <span class="comment">// v--&gt;u edge added</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                               {<span class="comment"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">         *  add_edge(u,v,bidir) is used to add an edge between node u and</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">         * node v by default , bidir is made true , i.e graph is</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">         * bidirectional . It means if edge(u,v) is added then u--&gt;v  and</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">         * v--&gt;u both edges exist.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">         *</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">         *  to make the graph unidirectional pass the third parameter of</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">         * add_edge as false which will</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a>[u].push_back(v);  <span class="comment">// u--&gt;v edge added</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (bidir == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="comment">// if graph is bidirectional</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a>[v].push_back(u);  <span class="comment">// v--&gt;u edge added</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a6e3efabd5e401ef0f47c179866e7454e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e3efabd5e401ef0f47c179866e7454e">&#9670;&nbsp;</a></span>breadth_first_search()</h2>
+<a id="ab1a1a96cd4cddf0d4feb02855c4c16af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a1a96cd4cddf0d4feb02855c4c16af">&#9670;&nbsp;</a></span>breadth_first_search()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +277,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt;T,bool&gt; <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a>&lt; T &gt;::breadth_first_search </td>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt;T, bool&gt; <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a>&lt; T &gt;::breadth_first_search </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
@@ -300,47 +301,48 @@ template&lt;typename T &gt; </div>
 <p>check every vertex connected to the node which are still unvisited</p>
 <p>if the neighbour is unvisited , push it into the queue</p>
 <p>mark the neighbour as visited</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                {<span class="comment"></span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">        /// mapping to keep track of all visited nodes </span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span>        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;T,bool&gt;</a> visited;<span class="comment"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">        /// initialise every possible vertex to map to false</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">        /// initially none of the vertices are unvisited</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span> &amp;adjlist: <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a>){</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          visited[adjlist.first]=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span> &amp;<a class="code" href="../../d5/da1/structnode.html">node</a>:<a class="code" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a>[adjlist.first]){</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            visited[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>]=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">        /// queue to store the nodes which are yet to be traversed</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span>        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;T&gt;</a> tracker;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment"></span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">        /// push the source vertex to queue to begin traversing </span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span>        tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(src);<span class="comment"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        ///mark the source vertex as visited</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span>        visited[src]=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">while</span>(!tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()){<span class="comment"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">          /// traverse the graph till no connected vertex are left </span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">          /// extract a node from queue for further traversal</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span>          T <a class="code" href="../../d5/da1/structnode.html">node</a> = tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>();<span class="comment"></span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">          /// remove the node from the queue</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"></span>          tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          <span class="keywordflow">for</span>(T <span class="keyword">const</span> &amp;neighbour : <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">adjacency_list</a>[<a class="code" href="../../d5/da1/structnode.html">node</a>]){<span class="comment"></span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">            /// check every vertex connected to the node which are still unvisited</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"></span>            <span class="keywordflow">if</span>(!visited[neighbour]){<span class="comment"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">              /// if the neighbour is unvisited , push it into the queue</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"></span>              tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(neighbour);<span class="comment"></span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">              /// mark the neighbour as visited</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span>              visited[neighbour]=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> visited;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      }</div>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                {<span class="comment"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">        /// mapping to keep track of all visited nodes</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span>        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map&lt;T, bool&gt;</a> visited;<span class="comment"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">        /// initialise every possible vertex to map to false</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">        /// initially none of the vertices are unvisited</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;adjlist : <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a>) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            visited[adjlist.first] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;<a class="code" href="../../d5/da1/structnode.html">node</a> : <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a>[adjlist.first]) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                visited[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">        /// queue to store the nodes which are yet to be traversed</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span>        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;T&gt;</a> tracker;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        /// push the source vertex to queue to begin traversing</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span>        tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(src);<span class="comment"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">        /// mark the source vertex as visited</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span>        visited[src] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">while</span> (!tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html">empty</a>()) {<span class="comment"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">            /// traverse the graph till no connected vertex are left</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">            /// extract a node from queue for further traversal</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"></span>            T <a class="code" href="../../d5/da1/structnode.html">node</a> = tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html">front</a>();<span class="comment"></span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">            /// remove the node from the queue</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span>            tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html">pop</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">for</span> (T <span class="keyword">const</span> &amp;neighbour : <a class="code" href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">adjacency_list</a>[<a class="code" href="../../d5/da1/structnode.html">node</a>]) {<span class="comment"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                /// check every vertex connected to the node which are still</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">                /// unvisited</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span>                <span class="keywordflow">if</span> (!visited[neighbour]) {<span class="comment"></span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">                    /// if the neighbour is unvisited , push it into the queue</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"></span>                    tracker.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html">push</a>(neighbour);<span class="comment"></span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">                    /// mark the neighbour as visited</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span>                    visited[neighbour] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> visited;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d61/classgraph_1_1_graph_a6e3efabd5e401ef0f47c179866e7454e_cgraph.svg" width="334" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d61/classgraph_1_1_graph_ab1a1a96cd4cddf0d4feb02855c4c16af_cgraph.svg" width="334" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -382,8 +384,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3ab95bb3ba618a7e883ead8ee696c25c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ab95bb3ba618a7e883ead8ee696c25c">&#9670;&nbsp;</a></span>adjacency_list</h2>
+<a id="acebf0505d625b043bb9c8c27c7a8def0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebf0505d625b043bb9c8c27c7a8def0">&#9670;&nbsp;</a></span>adjacency_list</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +396,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt;T,<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a>&lt;T&gt; &gt; <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a>&lt; T &gt;::adjacency_list</td>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a>&lt;T, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/list.html">std::list</a>&lt;T&gt; &gt; <a class="el" href="../../dc/d61/classgraph_1_1_graph.html">graph::Graph</a>&lt; T &gt;::adjacency_list</td>
         </tr>
       </table>
   </td>
@@ -413,7 +415,6 @@ template&lt;typename T &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgraph_1_1_graph_html_a3ab95bb3ba618a7e883ead8ee696c25c"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#a3ab95bb3ba618a7e883ead8ee696c25c">graph::Graph::adjacency_list</a></div><div class="ttdeci">std::map&lt; T, std::list&lt; T &gt; &gt; adjacency_list</div><div class="ttdef"><b>Definition:</b> breadth_first_search.cpp:69</div></div>
 <div class="ttc" id="aresize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:13</div></div>
@@ -426,6 +427,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="amap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a></div><div class="ttdoc">STL class.</div></div>
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/empty.html">std::queue::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="apush_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue/push.html">std::queue::push</a></div><div class="ttdeci">T push(T... args)</div></div>
+<div class="ttc" id="aclassgraph_1_1_graph_html_acebf0505d625b043bb9c8c27c7a8def0"><div class="ttname"><a href="../../dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0">graph::Graph::adjacency_list</a></div><div class="ttdeci">std::map&lt; T, std::list&lt; T &gt; &gt; adjacency_list</div><div class="ttdef"><b>Definition:</b> breadth_first_search.cpp:69</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

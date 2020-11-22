@@ -76,7 +76,7 @@ var searchData=
   ['bitset_3c_20maxn_20_3e_189',['bitset&lt; MAXN &gt;',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
   ['bogo_5fsort_2ecpp_190',['bogo_sort.cpp',['../d5/ddb/bogo__sort_8cpp.html',1,'']]],
   ['boolalpha_191',['boolalpha',['http://en.cppreference.com/w/cpp/io/manip/boolalpha.html',0,'std']]],
-  ['breadth_5ffirst_5fsearch_192',['breadth_first_search',['../dc/d61/classgraph_1_1_graph.html#a6e3efabd5e401ef0f47c179866e7454e',1,'graph::Graph']]],
+  ['breadth_5ffirst_5fsearch_192',['breadth_first_search',['../dc/d61/classgraph_1_1_graph.html#ab1a1a96cd4cddf0d4feb02855c4c16af',1,'graph::Graph']]],
   ['breadth_5ffirst_5fsearch_2ecpp_193',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
   ['brent_5fmethod_5fextrema_2ecpp_194',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
   ['brute_5fforce_195',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search']]],
