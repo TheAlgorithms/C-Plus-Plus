@@ -1,0 +1,93 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class node{
+	public:
+	char data;
+	node* next;
+	node(char x){
+		data=x;
+		next=NULL;
+	}
+};
+class stack{
+	node* top;
+	
+	public:
+	stack()
+	{
+		top=NULL;
+	}
+	int empty()
+	{
+		if(top==NULL)
+		return 1;
+		return 0;
+	}
+	void push(char x)
+	{
+		node *p;
+		p=new node(x);
+		p->next=top;
+		top=p;		
+	}
+	char pop()
+	{
+		node *p;
+		char x;
+		if(!empty())
+		{
+			x=top->data;
+			p=top;
+			top=top->next;
+			delete p;
+			return x;
+		}
+		cout<<"invalid";
+		return 0;
+	}
+};
+char change(char compare)
+{
+	if(compare=='(')
+	return ')';
+	if(compare=='[')
+	return ']';
+	if(compare=='{')
+	return '}';
+}
+int check(char string[])
+{
+	stack s;
+	char compare;
+	for(int i=0;i<'\0';i++)
+	{
+		if(string[i]=='(' || string[i]=='[' || string[i]=='{')
+		{
+			s.push(string[i]);
+		}
+		if(string[i]==')' || string[i]==']' || string[i]=='}')
+		{
+			compare=s.pop();
+			compare=change(compare);
+			if(string[i]!=compare)
+			return 1;
+		}		
+	}
+	return 0;
+}
+int main()
+{	
+	char string[50];
+	cin.getline(string,48);
+	if(!check(string))
+	cout<<"correctly paranthesis";
+	else
+	cout<<"Incorrectly paranthesis";
+	
+//	checkfirst(string);
+//	checklast(string);
+//	checknumber();
+return 0;
+}
+
