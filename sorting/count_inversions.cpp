@@ -13,7 +13,8 @@
  * two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j
  *
  * Time Complexity --> O(n.log n)
- * Space Complexity --> O(n) ; additional arrat temp[1..n]
+
+ * Space Complexity --> O(n) ; additional array temp[1..n]
  * ### Algorithm
 
  *   1. The idea is similar to merge sort, divide the array into two equal or
