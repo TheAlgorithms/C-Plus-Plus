@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string.h>
 using namespace std;
-class node{
+class node{       
 	public:
 	char data;
 	node* next;
@@ -10,7 +10,7 @@ class node{
 		next=NULL;
 	}
 };
-class stack{
+class stack{        //stack implementation
 	node* top;
 	
 	public:
@@ -58,7 +58,7 @@ char change(char compare)
 }
 int check(char string[])
 {
-	stack s;
+	stack s;      //stack is used to put all type of opening braces in it
 	char compare;
 	for(int i=0;i<'\0';i++)
 	{
@@ -68,9 +68,9 @@ int check(char string[])
 		}
 		if(string[i]==')' || string[i]==']' || string[i]=='}')
 		{
-			compare=s.pop();
-			compare=change(compare);
-			if(string[i]!=compare)
+			compare=s.pop();             // pops out the last opening brace
+			compare=change(compare);     //  reverse that brace ex-> converts '(' to ')'
+			if(string[i]!=compare)       //  if last opened brace type does not matches current closed brace will return 1;
 			return 1;
 		}		
 	}
@@ -78,9 +78,9 @@ int check(char string[])
 }
 int main()
 {	
-	char string[50];
+	char string[50];   //input String
 	cin.getline(string,48);
-	if(!check(string))
+	if(!check(string))  //check
 	cout<<"correctly paranthesis";
 	else
 	cout<<"Incorrectly paranthesis";
