@@ -102,6 +102,9 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afa39ec943a4836c878e1614fd89b146f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">largestPower</a> (uint32_t n, const uint16_t &amp;p)</td></tr>
+<tr class="memdesc:afa39ec943a4836c878e1614fd89b146f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate largest power.  <a href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">More...</a><br /></td></tr>
+<tr class="separator:afa39ec943a4836c878e1614fd89b146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04065193d190d605e1f0d0d93a87e244"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244">lcmSum</a> (const uint16_t &amp;num)</td></tr>
 <tr class="separator:a04065193d190d605e1f0d0d93a87e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8e81a7cd59644b311ef9adb268f5f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8d8e81a7cd59644b311ef9adb268f5f0">magic_number</a> (const uint64_t &amp;n)</td></tr>
@@ -120,7 +123,10 @@ Functions</h2></td></tr>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html" title="STL class.">std::vector</a> </p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>for io operations</p>
+<p>for assert</p>
 <p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
+<p>Mathematical algorithms</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms</p>
 <p>for assert</p>
 <p>Mathematical algorithms</p>
@@ -153,6 +159,56 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Calculating 2^n</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> (1 &lt;&lt; n);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa39ec943a4836c878e1614fd89b146f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa39ec943a4836c878e1614fd89b146f">&#9670;&nbsp;</a></span>largestPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::largestPower </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to calculate largest power. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>number </td></tr>
+    <tr><td class="paramname">p</td><td>prime number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>largest power </dd></dl>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {  </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// Initialize result  </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">int</span> x = 0;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// Calculate result </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">while</span> (n)  </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            n /= p;  </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            x += n;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }  </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> x;  </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
