@@ -184,7 +184,7 @@ void show(T* arr, const int array_size) {
  * @brief Test implementations
  * @returns void
  */
-void test() {
+static void test() {
     // Test 1
     std::vector<int> arr1 = {
         100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84,
