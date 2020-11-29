@@ -61,3 +61,46 @@ std::pair<int, int> saddleback(std::vector<std::vector<int>> matrix,
 }
 }  // namespace saddleback
 }  // namespace search
+
+/**
+ * @brief Test implementations
+ * @returns void
+ */
+static void test() {
+    std::vector<std::vector<int>> matrix = {{1, 10, 100, 1000, 10000},
+                                            {2, 20, 200, 2000, 20000},
+                                            {3, 30, 300, 3000, 30000},
+                                            {4, 40, 400, 4000, 40000},
+                                            {5, 50, 500, 5000, 50000}};
+
+    std::pair<int, int> not_found = std::pair<int, int>(-1, -1);
+    std::pair<int, int> test_answer;
+    // Test 1
+    std::pair<int, int> answer1 = search::saddleback::saddleback(matrix, 123);
+    assert(not_found == answer1);
+    // Test 2
+    answer1 = search::saddleback::saddleback(matrix, 0);
+    assert(not_found == answer1);
+    // Test 3
+    answer1 = search::saddleback::saddleback(matrix, 1);
+    test_answer = std::pair<int, int>(0, 0);
+    assert(test_answer == answer1);
+    // Test 4
+    answer1 = search::saddleback::saddleback(matrix, 50000);
+    test_answer = std::pair<int, int>(4, 4);
+    assert(test_answer == answer1);
+    // Test 5
+    answer1 = search::saddleback::saddleback(matrix, 300);
+    test_answer = std::pair<int, int>(2, 2);
+    assert(test_answer == answer1);
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    // Testing
+    test();
+    return 0;
+}
