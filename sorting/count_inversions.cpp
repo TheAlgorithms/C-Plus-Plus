@@ -41,9 +41,9 @@
  * @author [Rakshit Raj](https://github.com/rakshitraj)
  */
 #include <cassert>
+#include <cstdint>
 #include <iostream>
 #include <vector>
-#include <cstdint>
 
 /**
  * @namespace sorting
