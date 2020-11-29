@@ -24,8 +24,8 @@
  halves of
  *      the array are merged, create two indices i and j, i is the index for
  first half
- *      and j is an index of the second half. if `a[i]` is greater than `a[j]`, then
- there are (mid – i)
+ *      and j is an index of the second half. if `a[i]` is greater than `a[j]`,
+ then there are (mid – i)
  *      inversions, Because left and right subarrays are sorted, so all the
  remaining elements
  *      in left-subarray (a[i+1], a[i+2] … a[mid]) will be greater than a[j].
@@ -77,7 +77,7 @@ namespace inversion {
  * @param right  upper bound of arr[] and right-sub-array
  * @returns number of inversions found in merge step
  */
-template<typename T>
+template <typename T>
 int merge(T* arr, T* temp, int left, int mid, int right) {
     int i = left;       /* i --> index of left sub-array */
     int j = mid + 1;    /* j --> index for right sub-array */
@@ -122,7 +122,7 @@ int merge(T* arr, T* temp, int left, int mid, int right) {
  * @param right - upper bound of array
  * @returns number of inversions in array
  */
-template<typename T>
+template <typename T>
 int mergeSort(T* arr, T* temp, int left, int right) {
     int mid = 0, inv_count = 0;
     if (right > left) {
@@ -153,7 +153,7 @@ int mergeSort(T* arr, T* temp, int left, int right) {
  * @param array_size    - number of elementa in the array
  * @returns number of inversions in input array, sorts the array
  */
-template<class T>
+template <class T>
 int countInversion(T* arr, const int size) {
     std::vector<T> temp;
     temp.reserve(size);
@@ -204,7 +204,8 @@ static void test() {
     int result2 = sorting::inversion::countInversion(arr2.data(), size2);
     assert(inv_count2 == result2);
     // Test 3
-    std::vector<double> arr3 = {33.1, 45.2, 65.4, 76.5, 1.0, 2.9, 5.4, 7.7, 88.9, 12.4};
+    std::vector<double> arr3 = {33.1, 45.2, 65.4, 76.5, 1.0,
+                                2.9,  5.4,  7.7,  88.9, 12.4};
     int size3 = arr3.size();
     int inv_count3 = 21;
     int result3 = sorting::inversion::countInversion(arr3.data(), size3);
@@ -215,7 +216,6 @@ static void test() {
     int inv_count4 = 0;
     int result4 = sorting::inversion::countInversion(arr4.data(), size4);
     assert(inv_count4 == result4);
-
 }
 
 // /**
