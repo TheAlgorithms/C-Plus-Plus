@@ -24,7 +24,7 @@
  halves of
  *      the array are merged, create two indices i and j, i is the index for
  first half
- *      and j is an index of the second half. if a[i] is greater than a[j], then
+ *      and j is an index of the second half. if `a[i]` is greater than `a[j]`, then
  there are (mid – i)
  *      inversions, Because left and right subarrays are sorted, so all the
  remaining elements
