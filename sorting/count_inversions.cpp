@@ -40,10 +40,10 @@
  *
  * @author [Rakshit Raj](https://github.com/rakshitraj)
  */
-#include <cassert>
-#include <cstdint>
-#include <iostream>
-#include <vector>
+#include <cassert> // for tests
+#include <cstdint> // for typedef datatype uint64_t
+#include <iostream> // for IO 
+#include <vector> // for std::vector<>
 
 /**
  * @namespace sorting
