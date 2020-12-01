@@ -163,7 +163,7 @@ int countInversion(T* arr, const uint64_t size) {
 }
 
 /**
- * UTILITY function to print array.
+ * @brief UTILITY function to print array.
  * @param arr[]   array to print
  * @param array_size    size of input array arr[]
  * @returns void
