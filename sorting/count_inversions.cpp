@@ -140,7 +140,7 @@ uint64_t mergeSort(T* arr, T* temp, uint64_t left, uint64_t right) {
 }
 
 /**
- * Funtion countInversion() returns the number of inversion
+ * @brief Function countInversion() returns the number of inversion
  * present in the input array. Inversions are an estimate of
  * how close or far off the array is to being sorted.
  *
