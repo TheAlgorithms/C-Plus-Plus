@@ -227,7 +227,7 @@ static void test() {
 // template <typename T>
 // static void body() {
 //     // Input your own sequence
-//     uint64_t size; 
+//     uint64_t size;
 //     T input;
 //     std::cout << "Enter number of elements:";
 //     std::cin >> size;
@@ -264,7 +264,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // Run test implementations
+    test();  // Run test implementations
     // body(); // test your own array
     return 0;
 }
