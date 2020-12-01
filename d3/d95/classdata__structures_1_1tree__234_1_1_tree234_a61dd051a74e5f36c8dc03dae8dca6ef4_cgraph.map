@@ -1,0 +1,21 @@
+<map id="data_structures::tree_234::Tree234::RemovePreMerge" name="data_structures::tree_234::Tree234::RemovePreMerge">
+<area shape="rect" id="node1" title="Main function implement the pre&#45;merge remove operation." alt="" coords="5,587,224,628"/>
+<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="272,71,483,112"/>
+<area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="274,201,481,243"/>
+<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="561,593,708,635"/>
+<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="301,821,454,863"/>
+<area shape="rect" id="node10" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="547,659,722,700"/>
+<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="303,463,452,504"/>
+<area shape="rect" id="node17" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="543,740,726,781"/>
+<area shape="rect" id="node18" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="281,587,474,628"/>
+<area shape="rect" id="node19" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="276,704,479,745"/>
+<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="550,5,719,47"/>
+<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#abe9725b6422fd974642f9c9618b0f3be" title="Get rightmose child of the current node." alt="" coords="531,71,739,112"/>
+<area shape="rect" id="node6" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a692a971c577511abdf7027e7e92a031b" title="Get leftmose child of the current node." alt="" coords="535,136,734,177"/>
+<area shape="rect" id="node7" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="552,201,717,243"/>
+<area shape="rect" id="node12" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5f6d943abaac52a236fe5d945e9d0e25" title="Get the child pointer at position of index." alt="" coords="561,332,709,373"/>
+<area shape="rect" id="node13" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="563,397,707,439"/>
+<area shape="rect" id="node14" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ab4e5f7b7b260bb81d9441652cc124c74" title="Set child pointer to the position of index." alt="" coords="561,463,708,504"/>
+<area shape="rect" id="node15" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1" title="Set the item count of the node." alt="" coords="559,528,711,569"/>
+<area shape="rect" id="node16" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aaa89a3016b5dd1be3552321c34343cbc" title="Set item value at position of index." alt="" coords="563,267,706,308"/>
+</map>

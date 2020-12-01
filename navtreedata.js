@@ -124,12 +124,12 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe",
-"d5/d4c/group__sorting.html#gaa8dca7b867074164d5f45b0f3851269d",
-"d6/dd3/ode__midpoint__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b",
-"d9/d31/coin__change__topdown_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"db/d71/quadratic__probing__hash__table_8cpp.html#adccc63a7e57cc6dba75bd62f40feb88b",
-"de/d23/disjoint__set_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-""
+"d5/d15/classcll.html#a9434bf2d7deca6d7fe1efe06c5341df0",
+"d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#af3d41271912f9fa50b774c96c51874b9",
+"d8/dee/avltree_8cpp.html#adb8e952bf1c266bae84111b9d6a12015",
+"db/d16/0__1__knapsack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1",
+"functions_y.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
