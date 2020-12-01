@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of saddleback algorithm for 2D arrays.
+ * @brief Implementation of [Saddleback Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array) for 2D arrays.
  *
  * @details
  * Saddleback Algorithm is an algorithm that searches 2D array in linear time,
@@ -18,19 +18,20 @@
  */
 namespace search {
 /** \namespace saddleback
- * \brief Function for implementing Saddleback Algorithm.
+ * \brief Function for implementing [Saddleback Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array).
  */
 namespace saddleback {
 /**
- * This function implements saddleback algorithm, on a sorted 2D array, and finds the location of the element needed to search
- * @param matrix , a 2D matrix which is sorted on the basis of rows and columns
- * @param element , the element which is needed to be searched
+ * This function implements [Saddleback Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array),
+ * on a sorted 2D array, and finds the location of the element needed to search
+ * @param matrix 2D matrix which is sorted on the basis of rows and columns
+ * @param element the element which is needed to be searched
  * @return An std::pair of with row and column populated within it, if the
  * element is present.
- * @return An std::pair with (-1, -1), if the element is not present.
+ * @return An std::pair with (0, 0), if the element is not present.
  */
-std::pair<uint64_t, uint64_t> saddleback(std::vector<std::vector<int>> matrix,
-                               int element) {
+std::pair<uint64_t, uint64_t> saddleback(std::vector<std::vector<int32_t>> matrix,
+                               int32_t element) {
     uint64_t left_index = 0;
     uint64_t right_index = matrix[0].size() - 1;  // Start from top right corner
     while (left_index < matrix.size()) {  // Exit once the value of indexes get out of range.
@@ -67,7 +68,7 @@ std::pair<uint64_t, uint64_t> saddleback(std::vector<std::vector<int>> matrix,
  * @returns void
  */
 static void test() {
-    std::vector<std::vector<int>> matrix = {{1, 10, 100, 1000, 10000},
+    std::vector<std::vector<int32_t>> matrix = {{1, 10, 100, 1000, 10000},
                                             {2, 20, 200, 2000, 20000},
                                             {3, 30, 300, 3000, 30000},
                                             {4, 40, 400, 4000, 40000},
