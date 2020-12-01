@@ -221,20 +221,22 @@ static void test() {
 }
 
 // /**
-//  * Program Body contains all main funtionality
+//  * @brief Program Body contains all main funtionality
 //  * @returns void
 //  */
-// void body() {
+// template <typename T>
+// static void body() {
 //     // Input your own sequence
-//     int size, input;
+//     uint64_t size; 
+//     T input;
 //     std::cout << "Enter number of elements:";
 //     std::cin >> size;
 
-//     std::vector<int> arr;
+//     std::vector<T> arr;
 //     arr.reserve(size);
 
 //     std::cout << "Enter elements -->\n";
-//     for (int i=1; i<=size; i++) {
+//     for (uint64_t i=1; i<=size; i++) {
 //         std::cout << "Element "<< i <<" :";
 //         std::cin >> input;
 //         arr.push_back(input);
@@ -262,9 +264,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    // Run test implementations
-    test();
-    // // Main Program
-    // body();
+    test(); // Run test implementations
+    // body(); // test your own array
     return 0;
 }
