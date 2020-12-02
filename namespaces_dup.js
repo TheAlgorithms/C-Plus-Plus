@@ -48,6 +48,7 @@ var namespaces_dup =
     [ "range_queries", "dd/d69/namespacerange__queries.html", null ],
     [ "rat_maze", "d9/d60/namespacerat__maze.html", null ],
     [ "runge_kutta", "d2/de7/namespacerunge__kutta.html", null ],
+    [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
     [ "search", "d9/dca/namespacesearch.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", null ],
