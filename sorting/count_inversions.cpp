@@ -146,6 +146,7 @@ uint64_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
  *
  * @details
  * @details
+ * @details
  * Number of inversions in a sorted array is 0.
  * Number of inversion in an array[1...n] sorted in
  * non-ascending order is n(n-1)/2, since each pair of elements
