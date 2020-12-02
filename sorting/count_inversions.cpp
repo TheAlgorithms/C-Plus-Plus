@@ -124,7 +124,7 @@ uint64_t merge(T* arr, T* temp, uint64_t left, uint64_t mid, uint64_t right) {
  * @returns number of inversions in array
  */
 template <typename T>
-uint64_t mergeSort(T* arr, T* temp, uint64_t left, uint64_t right) {
+uint64_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
     uint32_t mid = 0, inv_count = 0;
     if (right > left) {
         // midpoint to split the array
