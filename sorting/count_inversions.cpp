@@ -202,7 +202,7 @@ static void test() {
     // Test 2
     std::vector<int> arr2 = {22, 66, 75, 23, 11, 87, 2, 44, 98, 43};
     uint16_t size2 = arr2.size();
-    uint64_t inv_count2 = 20;
+    uint32_t inv_count2 = 20;
     uint64_t result2 = sorting::inversion::countInversion(arr2.data(), size2);
     assert(inv_count2 == result2);
     // Test 3
