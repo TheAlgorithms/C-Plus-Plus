@@ -208,8 +208,8 @@ static void test() {
     // Test 3
     std::vector<double> arr3 = {33.1, 45.2, 65.4, 76.5, 1.0,
                                 2.9,  5.4,  7.7,  88.9, 12.4};
-    uint64_t size3 = arr3.size();
-    uint64_t inv_count3 = 21;
+    uint16_t size3 = arr3.size();
+    uint32_t inv_count3 = 21;
     uint64_t result3 = sorting::inversion::countInversion(arr3.data(), size3);
     assert(inv_count3 == result3);
     // Test 4
