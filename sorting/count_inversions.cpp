@@ -196,7 +196,7 @@ static void test() {
         32,  31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16,
         15,  14, 13, 12, 11, 10, 9,  8,  7,  6,  5,  4,  3,  2,  1};
     uint64_t size1 = arr1.size();
-    uint64_t inv_count1 = 4950;
+    uint32_t inv_count1 = 4950;
     uint64_t result1 = sorting::inversion::countInversion(arr1.data(), size1);
     assert(inv_count1 == result1);
     // Test 2
