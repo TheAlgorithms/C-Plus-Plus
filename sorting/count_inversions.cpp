@@ -79,7 +79,7 @@ namespace inversion {
  * @returns number of inversions found in merge step
  */
 template <typename T>
-uint64_t merge(T* arr, T* temp, uint64_t left, uint64_t mid, uint64_t right) {
+uint64_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
     uint32_t i = left;       /* i --> index of left sub-array */
     uint32_t j = mid + 1;    /* j --> index for right sub-array */
     uint32_t k = left;       /* k --> index for resultant array temp */
