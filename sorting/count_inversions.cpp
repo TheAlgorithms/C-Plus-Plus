@@ -145,6 +145,7 @@ uint64_t mergeSort(T* arr, T* temp, uint64_t left, uint64_t right) {
  * how close or far off the array is to being sorted.
  *
  * @details
+ * @details
  * Number of inversions in a sorted array is 0.
  * Number of inversion in an array[1...n] sorted in
  * non-ascending order is n(n-1)/2, since each pair of elements
