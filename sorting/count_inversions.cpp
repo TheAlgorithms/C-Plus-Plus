@@ -156,7 +156,7 @@ uint64_t mergeSort(T* arr, T* temp, uint64_t left, uint64_t right) {
  * @returns number of inversions in input array, sorts the array
  */
 template <class T>
-int countInversion(T* arr, const uint64_t size) {
+uint32_t countInversion(T* arr, const uint16_t size) {
     std::vector<T> temp;
     temp.reserve(size);
     temp.assign(size, 0);
