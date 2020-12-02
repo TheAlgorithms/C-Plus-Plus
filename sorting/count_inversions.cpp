@@ -125,7 +125,7 @@ uint64_t merge(T* arr, T* temp, uint64_t left, uint64_t mid, uint64_t right) {
  */
 template <typename T>
 uint64_t mergeSort(T* arr, T* temp, uint64_t left, uint64_t right) {
-    uint64_t mid = 0, inv_count = 0;
+    uint32_t mid = 0, inv_count = 0;
     if (right > left) {
         // midpoint to split the array
         mid = (right + left) / 2;
