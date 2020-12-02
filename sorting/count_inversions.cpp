@@ -80,10 +80,10 @@ namespace inversion {
  */
 template <typename T>
 uint64_t merge(T* arr, T* temp, uint64_t left, uint64_t mid, uint64_t right) {
-    uint64_t i = left;       /* i --> index of left sub-array */
-    uint64_t j = mid + 1;    /* j --> index for right sub-array */
-    uint64_t k = left;       /* k --> index for resultant array temp */
-    uint64_t inv_count = 0;  // inversion count
+    uint32_t i = left;       /* i --> index of left sub-array */
+    uint32_t j = mid + 1;    /* j --> index for right sub-array */
+    uint32_t k = left;       /* k --> index for resultant array temp */
+    uint32_t inv_count = 0;  // inversion count
 
     while ((i <= mid) && (j <= right)) {
         if (arr[i] <= arr[j]) {
