@@ -4,7 +4,7 @@
  *
  * @details
  * Saddleback Algorithm is an algorithm that searches 2D array in linear time,
- * i.e, O(m + n), where m is row and n is column of 2D array. Also, each row and
+ * i.e, O(m + n), where m is number of rows and n is number of columns of 2D array. Also, each row and
  * column of the matrix should be sorted beforehand for this algorithm to work.
  *
  * @author [Hashir Niazi](https://github.com/HashirGJ8842)
@@ -25,7 +25,7 @@ namespace saddleback {
  * This function implements [Saddleback Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array),
  * on a sorted 2D array, and finds the location of the element needed to search
  * @param matrix 2D matrix which is sorted on the basis of rows and columns
- * @param element the element which is needed to be searched
+ * @param element element to be searched
  * @return An std::pair of with row and column populated within it, if the
  * element is present.
  * @return An std::pair with (0, 0), if the element is not present.
@@ -39,7 +39,7 @@ std::pair<uint32_t, uint32_t> saddleback(std::vector<std::vector<int32_t>> matri
             matrix[left_index]
                   [right_index]) {  // If value on this position of matrix is
                                     // equal to element, return (row, column).
-            return std::pair<uint32_t, uint32_t>(left_index+1, right_index+1);
+            return std::make_pair(left_index+1, right_index+1);
         } else if (element >
                    matrix[left_index]
                          [right_index]) {  // Else if value on this position of
@@ -56,7 +56,7 @@ std::pair<uint32_t, uint32_t> saddleback(std::vector<std::vector<int32_t>> matri
             else --right_index;
         }
     }
-    return std::pair<uint32_t, uint32_t>(
+    return std::make_pair(
         0, 0);  // If the program reaches here, that means one of the index
                   // went out of index, hence no element present.
 }
@@ -74,7 +74,7 @@ static void test() {
                                             {4, 40, 400, 4000, 40000},
                                             {5, 50, 500, 5000, 50000}};
 
-    std::pair<uint32_t, uint32_t> not_found = std::pair<uint32_t, uint32_t>(0, 0);
+    std::pair<uint32_t, uint32_t> not_found = std::make_pair(0, 0);
     std::pair<uint32_t, uint32_t> test_answer;
     // Test 1
     std::pair<uint32_t, uint32_t> answer1 = search::saddleback::saddleback(matrix, 123);
@@ -84,15 +84,15 @@ static void test() {
     assert(not_found == answer1);
     // Test 3
     answer1 = search::saddleback::saddleback(matrix, 1);
-    test_answer = std::pair<uint32_t, uint32_t>(1, 1);
+    test_answer = std::make_pair(1, 1);
     assert(test_answer == answer1);
     // Test 4
     answer1 = search::saddleback::saddleback(matrix, 50000);
-    test_answer = std::pair<uint32_t, uint32_t>(5, 5);
+    test_answer = std::make_pair(5, 5);
     assert(test_answer == answer1);
     // Test 5
     answer1 = search::saddleback::saddleback(matrix, 300);
-    test_answer = std::pair<uint32_t, uint32_t>(3, 3);
+    test_answer = std::make_pair(3, 3);
     assert(test_answer == answer1);
 }
 
