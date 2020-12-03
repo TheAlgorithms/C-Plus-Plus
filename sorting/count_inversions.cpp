@@ -63,10 +63,10 @@ namespace inversion {
 // void show(int* arr, const int size);
 
 /**
- * @brief Function to merge two sub-arrays. 
- * 
- * @details 
- * merge() function is called from mergeSort() 
+ * @brief Function to merge two sub-arrays.
+ *
+ * @details
+ * merge() function is called from mergeSort()
  * to merge the array after it split for sorting
  * by the mergeSort() funtion.
  *
@@ -114,7 +114,7 @@ uint32_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
 
 /**
  * @brief Implement merge Sort and count inverions while merging
- * 
+ *
  * @details
  * The mergeSort() function implements Merge Sort, a
  * Divide and conquer algorithm, it divides the input
