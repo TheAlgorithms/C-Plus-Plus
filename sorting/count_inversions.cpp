@@ -171,7 +171,7 @@ uint32_t countInversion(T* arr, const uint16_t size) {
  *
  */
 template <typename T>
-void show(T* arr, const uint64_t array_size) {
+void show(T* arr, const uint32_t array_size) {
     std::cout << "Printing array: \n";
     for (uint64_t i = 0; i < array_size; i++) {
         std::cout << " " << arr[i];
