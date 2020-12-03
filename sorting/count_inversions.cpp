@@ -63,8 +63,11 @@ namespace inversion {
 // void show(int* arr, const int size);
 
 /**
- * Function to merge two sub-arrays. merge() function is called
- * from mergeSort() to merge the array after it split for sorting
+ * @brief Function to merge two sub-arrays. 
+ * 
+ * @details 
+ * merge() function is called from mergeSort() 
+ * to merge the array after it split for sorting
  * by the mergeSort() funtion.
  *
  * In this case the merge fuction will also count and return
@@ -79,7 +82,7 @@ namespace inversion {
  * @returns number of inversions found in merge step
  */
 template <typename T>
-uint64_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
+uint32_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
     uint32_t i = left;       /* i --> index of left sub-array */
     uint32_t j = mid + 1;    /* j --> index for right sub-array */
     uint32_t k = left;       /* k --> index for resultant array temp */
@@ -110,7 +113,9 @@ uint64_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
 }
 
 /**
- *
+ * @brief Implement merge Sort and count inverions while merging
+ * 
+ * @details
  * The mergeSort() function implements Merge Sort, a
  * Divide and conquer algorithm, it divides the input
  * array into two halves and calls itself for each
@@ -124,7 +129,7 @@ uint64_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
  * @returns number of inversions in array
  */
 template <typename T>
-uint64_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
+uint32_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
     uint32_t mid = 0, inv_count = 0;
     if (right > left) {
         // midpoint to split the array
@@ -145,7 +150,6 @@ uint64_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
  * how close or far off the array is to being sorted.
  *
  * @details
- * @details
  * Number of inversions in a sorted array is 0.
  * Number of inversion in an array[1...n] sorted in
  * non-ascending order is n(n-1)/2, since each pair of elements
@@ -157,7 +161,7 @@ uint64_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
  * @returns number of inversions in input array, sorts the array
  */
 template <class T>
-uint32_t countInversion(T* arr, const uint16_t size) {
+uint32_t countInversion(T* arr, const uint32_t size) {
     std::vector<T> temp;
     temp.reserve(size);
     temp.assign(size, 0);
@@ -174,7 +178,7 @@ uint32_t countInversion(T* arr, const uint16_t size) {
 template <typename T>
 void show(T* arr, const uint32_t array_size) {
     std::cout << "Printing array: \n";
-    for (uint64_t i = 0; i < array_size; i++) {
+    for (uint32_t i = 0; i < array_size; i++) {
         std::cout << " " << arr[i];
     }
     std::cout << "\n";
@@ -196,28 +200,28 @@ static void test() {
         49,  48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33,
         32,  31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16,
         15,  14, 13, 12, 11, 10, 9,  8,  7,  6,  5,  4,  3,  2,  1};
-    uint16_t size1 = arr1.size();
+    uint32_t size1 = arr1.size();
     uint32_t inv_count1 = 4950;
-    uint64_t result1 = sorting::inversion::countInversion(arr1.data(), size1);
+    uint32_t result1 = sorting::inversion::countInversion(arr1.data(), size1);
     assert(inv_count1 == result1);
     // Test 2
     std::vector<int> arr2 = {22, 66, 75, 23, 11, 87, 2, 44, 98, 43};
-    uint16_t size2 = arr2.size();
+    uint32_t size2 = arr2.size();
     uint32_t inv_count2 = 20;
-    uint64_t result2 = sorting::inversion::countInversion(arr2.data(), size2);
+    uint32_t result2 = sorting::inversion::countInversion(arr2.data(), size2);
     assert(inv_count2 == result2);
     // Test 3
     std::vector<double> arr3 = {33.1, 45.2, 65.4, 76.5, 1.0,
                                 2.9,  5.4,  7.7,  88.9, 12.4};
-    uint16_t size3 = arr3.size();
+    uint32_t size3 = arr3.size();
     uint32_t inv_count3 = 21;
-    uint64_t result3 = sorting::inversion::countInversion(arr3.data(), size3);
+    uint32_t result3 = sorting::inversion::countInversion(arr3.data(), size3);
     assert(inv_count3 == result3);
     // Test 4
     std::vector<char> arr4 = {'a', 'b', 'c', 'd', 'e'};
-    uint16_t size4 = arr4.size();
+    uint32_t size4 = arr4.size();
     uint32_t inv_count4 = 0;
-    uint64_t result4 = sorting::inversion::countInversion(arr4.data(), size4);
+    uint32_t result4 = sorting::inversion::countInversion(arr4.data(), size4);
     assert(inv_count4 == result4);
 }
 
@@ -228,33 +232,33 @@ static void test() {
 // template <typename T>
 // static void body() {
 //     // Input your own sequence
-//     uint64_t size;
+//     uint_t size;
 //     T input;
 //     std::cout << "Enter number of elements:";
 //     std::cin >> size;
-
+//
 //     std::vector<T> arr;
 //     arr.reserve(size);
-
+//
 //     std::cout << "Enter elements -->\n";
 //     for (uint64_t i=1; i<=size; i++) {
 //         std::cout << "Element "<< i <<" :";
 //         std::cin >> input;
 //         arr.push_back(input);
 //     }
-
+//
 //     if (size != arr.size()) {
 //         size = arr.size();
 //     }
-
+//
 //     std::cout << "\n";
 //     sorting::inversion::show(arr.data(), size);
 //     std::cout << "\n";
-
+//
 //     // Counting inversions
 //     std::cout << "\nThe number of inversions: "<<
 //     sorting::inversion::countInversion(arr.data(), size) << "\n";
-
+//
 //     // Output sorted array
 //     std::cout << "\nSorted array -->  \n";
 //     sorting::inversion::show(arr.data(), size);
