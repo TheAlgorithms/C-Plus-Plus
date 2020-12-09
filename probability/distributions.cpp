@@ -23,9 +23,6 @@
 #include <iostream>
 #include <vector>
 
-#define _USE_MATH_DEFINES
-
-// constexpr double E = std::exp(1.0);
 
 using ll = int64_t;
 
