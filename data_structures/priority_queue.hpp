@@ -109,7 +109,8 @@ class queue {
 
     /** Add new item to the queue. */
     void insert(Kind item, Priority lvl) {
-        auto *newNode = new node<Kind, Priority>;
+        // std::unique_ptr<node<Kind, Priority>> newNode = new node<Kind, Priority>;
+        auto newNode = make_unique<node<Kind, Priority>>();
         newNode->data = item;
         newNode->next = nullptr;
         newNode->prior = lvl;
@@ -143,8 +144,8 @@ class queue {
         if (!isEmptyQueue()) {
             size--;
             node<Kind, Priority> *temp = queueFront;
-            auto *prev = new node<Kind, Priority>;
-            auto *maxPrev = new node<Kind, Priority>;
+            auto prev = make_unique<node<Kind, Priority>>();
+            auto maxPrev = make_unique<node<Kind, Priority>>();
             node<Kind, Priority> *after = queueFront->next;
             Priority max = queueFront->prior;
             node<Kind, Priority> *maxElem = queueFront;
