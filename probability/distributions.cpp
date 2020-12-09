@@ -25,14 +25,18 @@
 
 #define _USE_MATH_DEFINES
 
-constexpr double E = 2.71828182845904523536;
+// constexpr double E = std::exp(1.0);
 
 using ll = int64_t;
 
-// Find the greatest common divisor
-ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
 
 namespace Util {
+
+/** Find the greatest common divisor
+ */
+ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
+
+
 /** Computes n choose r
  * \param [in] n
  * \param [in] r
@@ -261,7 +265,6 @@ double pdf(double x, double lambda) {
 }
 }  // namespace Exp
 
-namespace Gauss {}  // namespace Gauss
 }  // namespace Distribution
 /**
  * Main function.
