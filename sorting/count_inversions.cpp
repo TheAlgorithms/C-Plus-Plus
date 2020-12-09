@@ -8,7 +8,7 @@
  * using merge-sort.
  *
  * The count of inversions help to determine how close the array
- * is to being sorted in ASCENDING order.
+ * is to be sorted in ASCENDING order.
  *
  * two elements a[i] and a[j] form an inversion if `a[i]` > `a[j]` and i < j
  *
