@@ -12,6 +12,7 @@
 #ifndef DATA_STRUCTURES_PRIORITY_QUEUE_H_
 #define DATA_STRUCTURES_PRIORITY_QUEUE_H_
 
+
 #include <cassert>
 #include <iostream>
 
@@ -44,11 +45,60 @@ class queue {
         std::cout << "Size of queue: " << size << std::endl;
     }
 
+    
     /** Default constructor*/
     queue() {
         queueFront = nullptr;
         queueRear = nullptr;
         size = 0;
+    }
+
+    /**
+     * Copy Constructor
+     */
+    queue(const queue &q2) { 
+        size = q2.size;
+        queueFront = q2.queueFront;
+        queueRear = q2.queueRear;
+    }
+    
+    /**
+     * Move constructor
+    */
+    queue(queue &&other) noexcept {
+        queueFront = other.queueFront;
+        queueRear = other.queueRear;
+        size = other.size;
+        other.queueFront = nullptr;
+        other.queueRear = nullptr;
+        other.size = 0;
+    }
+    /**
+     * Move Assignment Operator
+    */
+    queue& operator=(queue &&other) noexcept {
+        if (this!=other) {
+            queueFront = other.queueFront;
+            queueRear = other.queueRear;
+            size = other.size;
+            other.queueFront = nullptr;
+            other.queueRear = nullptr;
+            other.size = 0;
+
+        }
+        return *this;
+    }
+
+    /**
+     * Copy assignment operator.
+     */
+    queue& operator=(const queue& other) {
+        if (this != other) {
+            queueFront = other.queueFront;
+            queueRear = other.queueRear;
+            size = other.size;
+        }
+        return *this;
     }
 
     /** Destructor */
