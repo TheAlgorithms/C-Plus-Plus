@@ -54,7 +54,7 @@ bool subset_sum(const std::array<int, n> &set, const int sum) {
 	// The value of subset[i][j] will be true if
     // there is a subset of set[0..j-1] with sum
     // equal to i
-	bool subset[n + 1][sum + 1];
+	std::vector<std::vector<bool>> subset(n + 1 , std::vector<bool> (sum + 1));
  
     // If sum is 0, then answer is true
     for (int i = 0; i <= n; i++)
@@ -109,7 +109,7 @@ bool subset_sum(const std::vector<T> &set, const T &n, const T &sum,
         return false;
 	}
     if (n < 1) {
-        return 0;
+        return false;
 	}
     if(dp[n][sum] != -1) {
         return dp[n][sum];
@@ -141,7 +141,7 @@ static void test() {
 	const int sum1 = 9;
     const bool ans1 =
         dynamic_programming::subset_sum_bottomup::subset_sum(set1,sum1);
-    const bool expected_ans1 = 1;
+    const bool expected_ans1 = true;
     assert(ans1 == expected_ans1);
     std::cout << "subset exists with sum " << sum1 
               << std::endl;
@@ -152,7 +152,7 @@ static void test() {
 	const int sum2 = 30;
     const bool ans2 =
         dynamic_programming::subset_sum_bottomup::subset_sum(set2,sum2);
-    const bool expected_ans2 = 0;
+    const bool expected_ans2 = false;
     assert(ans2 == expected_ans2);
     std::cout << "subset doesn't exists with sum " << sum2 
               << std::endl;
@@ -165,7 +165,7 @@ static void test() {
     std::vector<std::vector<int>> dp3(n3 + 1 , std::vector<int> (sum3+1, -1));
     const bool ans3 =
         dynamic_programming::subset_sum_topdown::subset_sum(set3,n3,sum3,dp3);
-    const bool expected_ans3 = 1;
+    const bool expected_ans3 = true;
     assert(ans3 == expected_ans3);
     std::cout << "subset exists with sum " << sum3 
               << std::endl;
@@ -178,7 +178,7 @@ static void test() {
 	std::vector<std::vector<int>> dp4(n4 + 1 , std::vector<int> (sum4+1, -1));
     const bool ans4 =
         dynamic_programming::subset_sum_topdown::subset_sum(set4,n4,sum4,dp4);
-    const bool expected_ans4 = 0;
+    const bool expected_ans4 = false;
     assert(ans4 == expected_ans4);
     std::cout << "subset doesn't exists with sum " << sum4
               << std::endl;
