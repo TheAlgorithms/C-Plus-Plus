@@ -17,6 +17,7 @@ var namespaces_dup =
     [ "graph", "df/dce/namespacegraph.html", null ],
     [ "heavy_light_decomposition", "db/d6f/namespaceheavy__light__decomposition.html", null ],
     [ "horspool", "d5/d02/namespacehorspool.html", null ],
+    [ "inversion", "d9/d13/namespaceinversion.html", null ],
     [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "jarvis", "d5/da7/namespacejarvis.html", null ],
     [ "kadane", "d6/d74/namespacekadane.html", null ],
