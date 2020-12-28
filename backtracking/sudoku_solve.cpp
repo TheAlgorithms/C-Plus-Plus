@@ -62,6 +62,7 @@ namespace backtracking {
      * Utility function to print matrix
      * @tparam V number of vertices in array
      * @param mat matrix where numbers are saved
+     * @param starting_mat copy of mat, required by printMat for highlighting the differences
      * @param n number of times loop will run
      * @return void
      */
@@ -89,6 +90,7 @@ namespace backtracking {
      * Sudoku algorithm
      * @tparam V number of vertices in array
      * @param mat matrix where numbers are saved
+     * @param starting_mat copy of mat, required by printMat for highlighting the differences
      * @param i current index in rows
      * @param j current index in columns
      * @returns `true` if 'no' was placed
