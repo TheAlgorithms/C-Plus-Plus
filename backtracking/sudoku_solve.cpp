@@ -16,9 +16,6 @@
 #include <iostream>
 #include <array>
 
-#define ANSI_YELLOW    "\033[93m"
-#define ANSI_RESET     "\033[0m"
-
 /**
  * @namespace backtracking
  * @brief Backtracking algorithms
@@ -71,7 +68,7 @@ namespace backtracking {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (starting_mat[i][j] != mat[i][j]) {
-                    std::cout << ANSI_YELLOW << mat[i][j] << ANSI_RESET << " ";
+                    std::cout << "\033[93m" << mat[i][j] << "\033[0m" << " ";
                 } else {
                     std::cout << mat[i][j] << " ";
                 }
