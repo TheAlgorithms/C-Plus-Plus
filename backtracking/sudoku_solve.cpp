@@ -16,6 +16,9 @@
 #include <iostream>
 #include <array>
 
+#define ANSI_YELLOW    "\033[93m"
+#define ANSI_RESET     "\033[0m"
+
 /**
  * @namespace backtracking
  * @brief Backtracking algorithms
@@ -63,10 +66,14 @@ namespace backtracking {
      * @return void
      */
     template <size_t V>
-    void printMat(const std::array <std::array <int, V>, V> &mat, int n) {
+    void printMat(const std::array <std::array <int, V>, V> &mat, const std::array <std::array <int, V>, V> &starting_mat, int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                std::cout << mat[i][j] << " ";
+                if (starting_mat[i][j] != mat[i][j]) {
+                    std::cout << ANSI_YELLOW << mat[i][j] << ANSI_RESET << " ";
+                } else {
+                    std::cout << mat[i][j] << " ";
+                }
                 if ((j + 1) % 3 == 0) {
                     std::cout << '\t';
                 }
@@ -88,22 +95,22 @@ namespace backtracking {
      * @returns `false` if 'no' was not placed
      */
     template <size_t V>
-    bool solveSudoku(std::array <std::array <int, V>, V> &mat, int i, int j) {
+    bool solveSudoku(std::array <std::array <int, V>, V> &mat, const std::array <std::array <int, V>, V> &starting_mat, int i, int j) {
         /// Base Case
         if (i == 9) {
             /// Solved for 9 rows already
-            backtracking::printMat<V>(mat, 9);
+            backtracking::printMat<V>(mat, starting_mat, 9);
             return true;
         }
 
         /// Crossed the last  Cell in the row
         if (j == 9) {
-            return backtracking::solveSudoku<V>(mat, i + 1, 0);
+            return backtracking::solveSudoku<V>(mat, starting_mat, i + 1, 0);
         }
 
         /// Blue Cell - Skip
         if (mat[i][j] != 0) {
-            return backtracking::solveSudoku<V>(mat, i, j + 1);
+            return backtracking::solveSudoku<V>(mat, starting_mat, i, j + 1);
         }
         /// White Cell
         /// Try to place every possible no
@@ -111,7 +118,7 @@ namespace backtracking {
             if (backtracking::isPossible<V>(mat, i, j, no, 9)) {
                 /// Place the 'no' - assuming a solution will exist
                 mat[i][j] = no;
-                bool solution_found = backtracking::solveSudoku<V>(mat, i, j + 1);
+                bool solution_found = backtracking::solveSudoku<V>(mat, starting_mat, i, j + 1);
                 if (solution_found) {
                     return true;
                 }
@@ -142,9 +149,10 @@ int main() {
         std::array <int, V> {0, 0, 0, 0, 8, 0, 0, 7, 9}
     };
 
-    backtracking::printMat<V>(mat, 9);
+    backtracking::printMat<V>(mat, mat, 9);
     std::cout << "Solution " << std::endl;
-    backtracking::solveSudoku<V>(mat, 0, 0);
+    std::array <std::array <int, V>, V> starting_mat = mat;
+    backtracking::solveSudoku<V>(mat, starting_mat, 0, 0);
 
     return 0;
 }
