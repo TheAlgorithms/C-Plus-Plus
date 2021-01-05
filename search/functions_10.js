@@ -56,7 +56,7 @@ var searchData=
   ['print_4125',['Print',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165',1,'data_structures::tree_234::Tree234::Print()'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9',1,'print():&#160;sieve_of_eratosthenes.cpp']]],
   ['printarray_4126',['printArray',['../d2/d52/heap__sort_8cpp.html#a9ed3e1510afdf3edd06cf2b68769a767',1,'heap_sort.cpp']]],
   ['printf_4127',['printf',['http://en.cppreference.com/w/cpp/io/c/fprintf.html',0,'std']]],
-  ['printmat_4128',['printMat',['../db/dc0/namespacebacktracking.html#a4664b23ed7939e3df1c0cb23013eec0c',1,'backtracking']]],
+  ['printmat_4128',['printMat',['../db/dc0/namespacebacktracking.html#ae1a76e21cb3934368d01cea7672d3906',1,'backtracking']]],
   ['printnode_4129',['PrintNode',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be',1,'data_structures::tree_234::Tree234']]],
   ['printroot_4130',['printRoot',['../dd/d29/false__position_8cpp.html#a85cb7bfb90abc898e042d624372c5345',1,'numerical_methods::false_position']]],
   ['printsol_4131',['PrintSol',['../da/dac/n__queens__all__solution__optimised_8cpp.html#a04090463be4942a69ea91fe7386da905',1,'backtracking::n_queens_optimized::PrintSol()'],['../d7/d24/nqueen__print__all__solutions_8cpp.html#aebd5e11fab6dab282efccfb61beb0bd9',1,'backtracking::n_queens_all_solutions::PrintSol()']]],

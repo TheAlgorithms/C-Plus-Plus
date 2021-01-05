@@ -128,7 +128,7 @@ var searchData=
   ['solve_1752',['solve',['../db/dc0/namespacebacktracking.html#a932e38e8912742cedf7b5a837168e03a',1,'backtracking']]],
   ['solvemaze_1753',['solveMaze',['../dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3',1,'backtracking::rat_maze']]],
   ['solvenq_1754',['solveNQ',['../d4/d3e/n__queens_8cpp.html#a0dbd7af47d87f0b956609fe9e3288ecb',1,'backtracking::n_queens']]],
-  ['solvesudoku_1755',['solveSudoku',['../db/dc0/namespacebacktracking.html#af6b62cbc209d7e13ffca0ab3ed3392b6',1,'backtracking']]],
+  ['solvesudoku_1755',['solveSudoku',['../db/dc0/namespacebacktracking.html#a2b98ee79cdbc02ffd7b1f786f9696892',1,'backtracking']]],
   ['sort_1756',['sort',['http://en.cppreference.com/w/cpp/container/forward_list/sort.html',0,'std::forward_list::sort()'],['http://en.cppreference.com/w/cpp/container/list/sort.html',0,'std::list::sort()'],['http://en.cppreference.com/w/cpp/algorithm/sort.html',0,'std::sort()']]],
   ['sort_5fheap_1757',['sort_heap',['http://en.cppreference.com/w/cpp/algorithm/sort_heap.html',0,'std']]],
   ['sorting_1758',['sorting',['../d5/d91/namespacesorting.html',1,'sorting'],['../d5/d4c/group__sorting.html',1,'(Global Namespace)']]],
