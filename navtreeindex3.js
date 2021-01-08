@@ -1,15 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"d6/d80/double__hash__hash__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,8,1,7],
-"d6/d80/double__hash__hash__table_8cpp.html#af4981819aae8bc7e7beeaef02615e30d":[10,0,8,1,10],
-"d6/d8d/namespacemorse.html":[8,0,31],
-"d6/d9d/large__factorial_8cpp.html":[10,0,11,18],
-"d6/d9d/large__factorial_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[10,0,11,18,0],
-"d6/d9d/large__factorial_8cpp.html#a3f93b60e229b6683e24c4754a7106ee8":[10,0,11,18,1],
-"d6/d9d/large__factorial_8cpp.html#a76aae4778fbe89a3d59fd61fbc050cfa":[10,0,11,18,2],
-"d6/da2/namespacevigenere.html":[8,0,62],
-"d6/dab/namespacetree__234.html":[8,0,60],
-"d6/db0/binomial__dist_8cpp.html":[10,0,14,2],
 "d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76":[10,0,14,2,4],
 "d6/db0/binomial__dist_8cpp.html#a4416a7bc7fa87201883c54cdc4c82813":[10,0,14,2,0],
 "d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25":[10,0,14,2,1],
@@ -249,5 +239,15 @@ var NAVTREEINDEX3 =
 "d8/dab/sparse__table_8cpp.html#a328ed1c01cccd07aeb1500c11b609be3":[10,0,15,2,0],
 "d8/dab/sparse__table_8cpp.html#a932816c3de9e5ad122b180de60978e8f":[10,0,15,2,2],
 "d8/dab/sparse__table_8cpp.html#ad71ae7840af3a52e7ee56186bb0c3063":[10,0,15,2,1],
-"d8/dab/sparse__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,2,3]
+"d8/dab/sparse__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,15,2,3],
+"d8/dc8/struct_point.html":[9,0,31],
+"d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7":[9,0,31,3],
+"d8/dc8/struct_point.html#a8c779e11e694b20e0946105a9f5de842":[9,0,31,1],
+"d8/dc8/struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7":[9,0,31,2],
+"d8/dc8/struct_point.html#ae2d6fb1b3fd3a96169d963d62e37130a":[9,0,31,0],
+"d8/dc8/struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8":[9,0,31,4],
+"d8/dcc/namespacestd.html":[8,0,56],
+"d8/dd5/check__factorial_8cpp.html":[10,0,11,3],
+"d8/dd5/check__factorial_8cpp.html#a814eea122b9c241c2b7c1ab760a3eca2":[10,0,11,3,0],
+"d8/dd5/check__factorial_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[10,0,11,3,2]
 };
