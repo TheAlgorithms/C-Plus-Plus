@@ -17,31 +17,31 @@
 
 /**
  * @namespace graph
- * @brief Graph Algorithms
+ * @brief Graphical Algorithms
  */
 namespace graph {
 
 /**
  * @namespace disjoint_union
- * @brief Function for [Disjoint union] (https://en.wikipedia.org/wiki/Disjoint_union) implementation
+ * @brief Functions for [Disjoint union] (https://en.wikipedia.org/wiki/Disjoint_union) implementation
  */
 namespace disjoint_union {
 
-int64_t number_of_nodes;                  // denotes number of nodes
-std::vector<int64_t> parent;              // parent of each node
-std::vector<int64_t> connected_set_size;  // size of each set
+uint32_t number_of_nodes = 0;                // denotes number of nodes
+std::vector<int64_t> parent{};               // parent of each node
+std::vector<uint32_t> connected_set_size{};  // size of each set
 /**
  * @brief function the initialize every node as it's own parent
  * @returns void
  */
 void make_set() {
-    for (int64_t i = 1; i <= number_of_nodes; i++) {
+    for (uint32_t i = 1; i <= number_of_nodes; i++) {
         parent[i] = i;
         connected_set_size[i] = 1;
     }
 }
 /**
- * @brief To find the component where following node belongs to
+ * @brief Find the component where following node belongs to
  * @param val parent of val should be found
  * @return parent of val
  */
@@ -53,7 +53,7 @@ int64_t find_set(int64_t val) {
     return val;
 }
 /**
- * @brief To join 2 components to belong to one
+ * @brief Merge 2 components to become one
  * @param node1 1st component
  * @param node2 2nd component
  * @returns void
@@ -73,12 +73,12 @@ void union_sets(int64_t node1, int64_t node2) {
     }
 }
 /**
- * @brief To find total no of connected components
+ * @brief Find total no. of connected components
  * @return Number of connected components
  */
-int64_t no_of_connected_components() {
+uint32_t no_of_connected_components() {
     std::set<int64_t> temp;  // temp set to count number of connected components
-    for (int64_t i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
+    for (uint32_t i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
     return temp.size();  // return the size of temp set
 }
 /**
@@ -90,7 +90,7 @@ static void test() {
     parent.resize(number_of_nodes + 1);
     connected_set_size.resize(number_of_nodes + 1);
     make_set();
-    int64_t edges = 0;
+    uint32_t edges = 0;
     std::cin >> edges;  // no of edges in the graph
     while (edges--) {
         int64_t node_a = 0, node_b = 0;
