@@ -11,7 +11,7 @@
  * 2. Disjoint union
  * 1st option is inefficient, Disjoint union is the most optimal way to find this.
  */
-#include <iostream> /// for io operations
+#include <iostream> /// for IO operations
 #include <set>    /// for std::set
 #include <vector> /// for std::vector
 
@@ -20,13 +20,11 @@
  * @brief Graphical Algorithms
  */
 namespace graph {
-
 /**
  * @namespace disjoint_union
- * @brief Functions for [Disjoint union] (https://en.wikipedia.org/wiki/Disjoint_union) implementation
+ * @brief Functions for [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union) implementation
  */
 namespace disjoint_union {
-
 uint32_t number_of_nodes = 0;                // denotes number of nodes
 std::vector<int64_t> parent{};               // parent of each node
 std::vector<uint32_t> connected_set_size{};  // size of each set
@@ -81,32 +79,32 @@ uint32_t no_of_connected_components() {
     for (uint32_t i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
     return temp.size();  // return the size of temp set
 }
+} // namespace disjoint_union
+} // namespace graph
 /**
  * @brief Test Implementations
  * @returns void
  */
 static void test() {
-    std::cin >> number_of_nodes;
-    parent.resize(number_of_nodes + 1);
-    connected_set_size.resize(number_of_nodes + 1);
-    make_set();
+    namespace dsu = graph::disjoint_union;
+    std::cin >> dsu::number_of_nodes;
+    dsu::parent.resize(dsu::number_of_nodes + 1);
+    dsu::connected_set_size.resize(dsu::number_of_nodes + 1);
+    dsu::make_set();
     uint32_t edges = 0;
     std::cin >> edges;  // no of edges in the graph
     while (edges--) {
         int64_t node_a = 0, node_b = 0;
         std::cin >> node_a >> node_b;
-        union_sets(node_a, node_b);
+        dsu::union_sets(node_a, node_b);
     }
-    std::cout << no_of_connected_components() << std::endl;
+    std::cout << dsu::no_of_connected_components() << std::endl;
 }
-} // namespace disjoint_union
-} // namespace graph
-
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    graph::disjoint_union::test();  // Execute the tests
+    test();  // Execute the tests
     return 0;
 }
