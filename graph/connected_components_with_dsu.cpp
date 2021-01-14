@@ -10,6 +10,9 @@
  * 1. Depth first search
  * 2. Disjoint union
  * 1st option is inefficient, Disjoint union is the most optimal way to find this.
+ *
+ * @author Unknown author
+ * @author [Sagar Pandya](https://github.com/sagarpandyansit)
  */
 #include <iostream> /// for IO operations
 #include <set>    /// for std::set
@@ -79,8 +82,9 @@ uint32_t no_of_connected_components() {
     for (uint32_t i = 1; i <= number_of_nodes; i++) temp.insert(find_set(i));
     return temp.size();  // return the size of temp set
 }
-} // namespace disjoint_union
-} // namespace graph
+}  // namespace disjoint_union
+}  // namespace graph
+
 /**
  * @brief Test Implementations
  * @returns void
@@ -100,6 +104,7 @@ static void test() {
     }
     std::cout << dsu::no_of_connected_components() << std::endl;
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
