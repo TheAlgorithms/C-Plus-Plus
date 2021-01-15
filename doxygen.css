@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.8.20 */
+/* The standard CSS for doxygen 1.9.1 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -103,29 +103,95 @@ caption {
 }
 
 span.legend {
-        font-size: 70%;
-        text-align: center;
-}
-
-h3.version {
-        font-size: 90%;
-        text-align: center;
-}
-
-div.qindex, div.navtab{
-	background-color: #EBEFF6;
-	border: 1px solid #A3B4D7;
+	font-size: 70%;
 	text-align: center;
 }
 
-div.qindex, div.navpath {
-	width: 100%;
-	line-height: 140%;
+h3.version {
+	font-size: 90%;
+	text-align: center;
 }
 
 div.navtab {
-	margin-right: 15px;
+	border-right: 1px solid #A3B4D7;
+	padding-right: 15px;
+	text-align: right;
+	line-height: 110%;
 }
+
+div.navtab table {
+	border-spacing: 0;
+}
+
+td.navtab {
+	padding-right: 6px;
+	padding-left: 6px;
+}
+td.navtabHL {
+	background-image: url('tab_a.png');
+	background-repeat:repeat-x;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+td.navtabHL a, td.navtabHL a:visited {
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+}
+
+a.navtab {
+	font-weight: bold;
+}
+
+div.qindex{
+	text-align: center;
+	width: 100%;
+	line-height: 140%;
+	font-size: 130%;
+	color: #A0A0A0;
+}
+
+dt.alphachar{
+	font-size: 180%;
+	font-weight: bold;
+}
+
+.alphachar a{
+	color: black;
+}
+
+.alphachar a:hover, .alphachar a:visited{
+	text-decoration: none;
+}
+
+.classindex dl {
+	padding: 25px;
+	column-count:1
+}
+
+.classindex dd {
+	display:inline-block;
+	margin-left: 50px;
+	width: 90%;
+	line-height: 1.15em;
+}
+
+.classindex dl.odd {
+	background-color: #F8F9FC;
+}
+
+@media(min-width: 1120px) {
+	.classindex dl {
+		column-count:2
+	}
+}
+
+@media(min-width: 1320px) {
+	.classindex dl {
+		column-count:3
+	}
+}
+
 
 /* @group Link Styling */
 
@@ -141,17 +207,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-a.qindex {
-	font-weight: bold;
-}
-
-a.qindexHL {
-	font-weight: bold;
-	background-color: #9CAFD4;
-	color: #FFFFFF;
-	border: 1px double #869DCA;
 }
 
 .contents a.qindexHL:visited {
@@ -1424,6 +1479,12 @@ div.toc li.level3 {
 
 div.toc li.level4 {
         margin-left: 45px;
+}
+
+span.emoji {
+        /* font family used at the site: https://unicode.org/emoji/charts/full-emoji-list.html
+         * font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
+         */
 }
 
 .PageDocRTL-title div.toc li.level1 {

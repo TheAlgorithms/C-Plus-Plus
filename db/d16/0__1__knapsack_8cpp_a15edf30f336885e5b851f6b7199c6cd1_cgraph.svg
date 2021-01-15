@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" target="_top" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="193,-6 193,-25 248,-25 248,-6 193,-6"/>
 <text text-anchor="middle" x="220.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>

@@ -48,7 +48,7 @@ if (edges && edges.length) {
 <script type="text/javascript">
 var viewWidth = 517;
 var viewHeight = 180;
-var sectionId = 'dynsection-10';
+var sectionId = 'dynsection-8';
 </script>
 <script xlink:href="../../svgpan.js"/>
 <svg id="graph" class="graph">

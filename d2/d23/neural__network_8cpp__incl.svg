@@ -218,7 +218,7 @@ var sectionId = 'dynsection-0';
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d8/d95/vector__ops_8hpp.html" target="_top" xlink:title="Various functions for vectors associated with NeuralNetwork (aka Multilayer Perceptron).">
+<g id="a_node12"><a xlink:href="../../d8/d95/vector__ops_8hpp.html" target="_top" xlink:title="Various functions for vectors associated with &lt;a href=&quot;https://en.wikipedia.org/wiki/Multilayer_perce...">
 <polygon fill="white" stroke="black" points="191.5,-56.5 191.5,-75.5 274.5,-75.5 274.5,-56.5 191.5,-56.5"/>
 <text text-anchor="middle" x="233" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector_ops.hpp</text>
 </a>

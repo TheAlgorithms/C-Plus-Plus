@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md63", null ],
-      [ "Features", "index.html#autotoc_md64", null ],
-      [ "Documentation", "index.html#autotoc_md65", null ],
-      [ "Contributions", "index.html#autotoc_md66", null ]
+      [ "Overview", "index.html#autotoc_md64", null ],
+      [ "Features", "index.html#autotoc_md65", null ],
+      [ "Documentation", "index.html#autotoc_md66", null ],
+      [ "Contributions", "index.html#autotoc_md67", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -123,13 +123,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/de9/heavy__light__decomposition_8cpp.html",
-"d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#afa4a080c9526909ea87a6c0f6cfd6a2f",
-"d6/db0/binomial__dist_8cpp.html#a19ae0a6a2bd200fd1eb0e31b2bf4cc76",
-"d8/dd5/check__factorial_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197",
-"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8384b8c0fdc8e5e443010d2eb1187847",
-"functions_o.html"
+"cpp/iterator/distance.html",
+"cpp/thread/lock.html",
+"d2/d22/jump__search_8cpp.html#ab49fd8f401bfc71f63b74711390cccf0",
+"d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
+"d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a2f676f2f249eb36dfd49711a03e9e67e",
+"d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26",
+"d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5",
+"db/d71/quadratic__probing__hash__table_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"dd/d65/lu__decompose_8cpp.html",
+"functions_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

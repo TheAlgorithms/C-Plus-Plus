@@ -38,7 +38,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="146,-0.5 146,-19.5 238,-19.5 238,-0.5 146,-0.5"/>
 <text text-anchor="middle" x="192" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::length</text>
 </a>
@@ -53,7 +53,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" target="_top" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="280,-44.5 280,-63.5 332,-63.5 332,-44.5 280,-44.5"/>
 <text text-anchor="middle" x="306" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>

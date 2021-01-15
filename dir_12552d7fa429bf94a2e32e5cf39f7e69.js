@@ -3,6 +3,7 @@ var dir_12552d7fa429bf94a2e32e5cf39f7e69 =
     [ "bidirectional_dijkstra.cpp", "d7/d07/bidirectional__dijkstra_8cpp.html", "d7/d07/bidirectional__dijkstra_8cpp" ],
     [ "breadth_first_search.cpp", "df/d82/breadth__first__search_8cpp.html", "df/d82/breadth__first__search_8cpp" ],
     [ "connected_components.cpp", "df/ddd/connected__components_8cpp.html", "df/ddd/connected__components_8cpp" ],
+    [ "connected_components_with_dsu.cpp", "d8/d99/connected__components__with__dsu_8cpp.html", "d8/d99/connected__components__with__dsu_8cpp" ],
     [ "depth_first_search.cpp", "da/d8d/depth__first__search_8cpp.html", "da/d8d/depth__first__search_8cpp" ],
     [ "dijkstra.cpp", "d7/d1e/graph_2dijkstra_8cpp.html", "d7/d1e/graph_2dijkstra_8cpp" ],
     [ "hamiltons_cycle.cpp", "dd/d0c/hamiltons__cycle_8cpp.html", "dd/d0c/hamiltons__cycle_8cpp" ],

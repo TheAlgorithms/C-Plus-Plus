@@ -5,118 +5,118 @@
  -->
 <!-- Title: strings::horspool::findShiftTable Pages: 1 -->
 <svg width="264pt" height="253pt"
- viewBox="0.00 0.00 264.00 252.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 248.5)">
+ viewBox="0.00 0.00 264.00 253.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 249)">
 <title>strings::horspool::findShiftTable</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-248.5 260,-248.5 260,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-249 260,-249 260,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="0,-104.5 0,-134.5 95,-134.5 95,-104.5 0,-104.5"/>
-<text text-anchor="start" x="8" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">strings::horspool::</text>
-<text text-anchor="middle" x="47.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">findShiftTable</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-105 0,-135 95,-135 95,-105 0,-105"/>
+<text text-anchor="start" x="8" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">strings::horspool::</text>
+<text text-anchor="middle" x="47.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">findShiftTable</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node1 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M22.06,-134.66C15.92,-144.06 24.4,-153 47.5,-153 61.58,-153 70.22,-149.68 73.44,-144.96"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="76.92,-144.48 72.94,-134.66 69.93,-144.82 76.92,-144.48"/>
+<path fill="none" stroke="midnightblue" d="M22.06,-135.16C15.92,-144.56 24.4,-153.5 47.5,-153.5 61.58,-153.5 70.22,-150.18 73.44,-145.46"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="76.92,-144.98 72.94,-135.16 69.93,-145.32 76.92,-144.98"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="131,-225 131,-244 256,-244 256,-225 131,-225"/>
-<text text-anchor="middle" x="193.5" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map::end</text>
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="131,-225.5 131,-244.5 256,-244.5 256,-225.5 131,-225.5"/>
+<text text-anchor="middle" x="193.5" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map::end</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M57.7,-134.83C71.18,-156.02 98.29,-194.05 131,-215.5 134.13,-217.55 137.49,-219.39 140.97,-221.04"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="139.8,-224.34 150.38,-224.97 142.5,-217.88 139.8,-224.34"/>
+<path fill="none" stroke="midnightblue" d="M57.7,-135.33C71.18,-156.52 98.29,-194.55 131,-216 134.13,-218.05 137.49,-219.89 140.97,-221.54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="139.8,-224.84 150.38,-225.47 142.5,-218.38 139.8,-224.84"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="142,-175.5 142,-205.5 245,-205.5 245,-175.5 142,-175.5"/>
-<text text-anchor="start" x="150" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
-<text text-anchor="middle" x="193.5" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">::find</text>
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="142,-176 142,-206 245,-206 245,-176 142,-176"/>
+<text text-anchor="start" x="150" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
+<text text-anchor="middle" x="193.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">::find</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M72.91,-134.65C89.07,-144.38 110.91,-156.92 131,-166.5 134.56,-168.2 138.28,-169.88 142.05,-171.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="140.88,-174.81 151.45,-175.44 143.58,-168.35 140.88,-174.81"/>
+<path fill="none" stroke="midnightblue" d="M72.91,-135.15C89.07,-144.88 110.91,-157.42 131,-167 134.56,-168.7 138.28,-170.38 142.05,-172.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="140.88,-175.31 151.45,-175.94 143.58,-168.85 140.88,-175.31"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/insert.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="142,-126.5 142,-156.5 245,-156.5 245,-126.5 142,-126.5"/>
-<text text-anchor="start" x="150" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
-<text text-anchor="middle" x="193.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">::insert</text>
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/insert.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="142,-127 142,-157 245,-157 245,-127 142,-127"/>
+<text text-anchor="start" x="150" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
+<text text-anchor="middle" x="193.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">::insert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M95.25,-126.64C106.87,-128.42 119.48,-130.34 131.66,-132.21"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="131.34,-135.7 141.76,-133.75 132.4,-128.78 131.34,-135.7"/>
+<path fill="none" stroke="midnightblue" d="M95.25,-127.14C106.87,-128.92 119.48,-130.84 131.66,-132.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="131.34,-136.2 141.76,-134.25 132.4,-129.28 131.34,-136.2"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="153,-88 153,-107 234,-107 234,-88 153,-88"/>
-<text text-anchor="middle" x="193.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="153,-88.5 153,-107.5 234,-107.5 234,-88.5 153,-88.5"/>
+<text text-anchor="middle" x="193.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M95.25,-112.36C110.48,-110.03 127.43,-107.44 142.86,-105.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="143.39,-108.54 152.74,-103.57 142.33,-101.62 143.39,-108.54"/>
+<path fill="none" stroke="midnightblue" d="M95.25,-112.86C110.48,-110.53 127.43,-107.94 142.86,-105.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="143.39,-109.04 152.74,-104.07 142.33,-102.12 143.39,-109.04"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="151.5,-50 151.5,-69 235.5,-69 235.5,-50 151.5,-50"/>
-<text text-anchor="middle" x="193.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/size.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="142,-39 142,-69 245,-69 245,-39 142,-39"/>
+<text text-anchor="start" x="150" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
+<text text-anchor="middle" x="193.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M76.24,-104.31C92.01,-96.03 112.29,-85.98 131,-78.5 136.52,-76.29 142.4,-74.18 148.25,-72.23"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="149.56,-75.48 158,-69.08 147.41,-68.82 149.56,-75.48"/>
+<path fill="none" stroke="midnightblue" d="M77.64,-104.85C93.32,-96.87 113.07,-87.09 131,-79 135.43,-77 140.07,-74.99 144.73,-73.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="146.38,-76.11 154.25,-69.03 143.68,-69.65 146.38,-76.11"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/unordered_map/size.html#" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="142,-0.5 142,-30.5 245,-30.5 245,-0.5 142,-0.5"/>
-<text text-anchor="start" x="150" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::unordered_map</text>
-<text text-anchor="middle" x="193.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::size</text>
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="151.5,-0.5 151.5,-19.5 235.5,-19.5 235.5,-0.5 151.5,-0.5"/>
+<text text-anchor="middle" x="193.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M61.13,-104.33C76.25,-86.98 103.04,-58.62 131,-40.5 133.94,-38.59 137.05,-36.79 140.25,-35.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="142.01,-38.12 149.43,-30.56 138.92,-31.84 142.01,-38.12"/>
+<path fill="none" stroke="midnightblue" d="M58.68,-104.7C72.71,-84.76 99.8,-50.07 131,-30 134.82,-27.54 138.97,-25.36 143.25,-23.43"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="144.78,-26.59 152.75,-19.6 142.16,-20.1 144.78,-26.59"/>
 </g>
 </g>
 </svg>

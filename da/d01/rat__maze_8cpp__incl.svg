@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implements Rat in a Maze algorithm.">
+<g id="a_node1"><a xlink:title="Implements &lt;a href=&quot;https://www.codesdope.com/blog/article/backtracking&#45;to&#45; solve&#45;a&#45;rat&#45;in&#45;a&#45;maze&#45;c&#45;j...">
 <polygon fill="#bfbfbf" stroke="black" points="16,-56.5 16,-75.5 150,-75.5 150,-56.5 16,-56.5"/>
 <text text-anchor="middle" x="83" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking/rat_maze.cpp</text>
 </a>

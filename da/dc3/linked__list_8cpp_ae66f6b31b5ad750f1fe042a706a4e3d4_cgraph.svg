@@ -37,7 +37,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="105,-186.5 105,-205.5 159,-205.5 159,-186.5 105,-186.5"/>
 <text text-anchor="middle" x="132" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -100,7 +100,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html#" target="_top" xlink:title=" ">
+<g id="a_node9"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="106,-0.5 106,-19.5 158,-19.5 158,-0.5 106,-0.5"/>
 <text text-anchor="middle" x="132" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::stoi</text>
 </a>
@@ -137,7 +137,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr/reset.html#" target="_top" xlink:title=" ">
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr/reset.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="229,-44.5 229,-63.5 339,-63.5 339,-44.5 229,-44.5"/>
 <text text-anchor="middle" x="284" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr::reset</text>
 </a>

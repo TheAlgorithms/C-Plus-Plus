@@ -43,7 +43,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" target="_top" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="297,-38.5 297,-57.5 351,-57.5 351,-38.5 297,-38.5"/>
 <text text-anchor="middle" x="324" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" target="_top" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/program/exit.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="298,-0.5 298,-19.5 350,-19.5 350,-0.5 298,-0.5"/>
 <text text-anchor="middle" x="324" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::exit</text>
 </a>

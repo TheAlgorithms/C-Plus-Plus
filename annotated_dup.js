@@ -1,17 +1,78 @@
 var annotated_dup =
 [
-    [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
-    [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
-    [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
-    [ "geometry", "d5/d5f/namespacegeometry.html", "d5/d5f/namespacegeometry" ],
-    [ "graph", "df/dce/namespacegraph.html", "df/dce/namespacegraph" ],
-    [ "linear_probing", "d8/d89/namespacelinear__probing.html", "d8/d89/namespacelinear__probing" ],
-    [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
-    [ "math", "dd/d47/namespacemath.html", "dd/d47/namespacemath" ],
-    [ "others", "d0/d6f/namespaceothers.html", "d0/d6f/namespaceothers" ],
-    [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", "d4/dd2/namespacequadratic__probing" ],
-    [ "range_queries", "dd/d69/namespacerange__queries.html", "dd/d69/namespacerange__queries" ],
-    [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
+    [ "ciphers", "d6/d4e/namespaceciphers.html", [
+      [ "HillCipher", "d6/d26/classciphers_1_1_hill_cipher.html", "d6/d26/classciphers_1_1_hill_cipher" ]
+    ] ],
+    [ "data_structures", "d5/d3c/namespacedata__structures.html", [
+      [ "linked_list", null, [
+        [ "link", "de/d9d/classdata__structures_1_1linked__list_1_1link.html", "de/d9d/classdata__structures_1_1linked__list_1_1link" ],
+        [ "list", "d1/def/classdata__structures_1_1linked__list_1_1list.html", "d1/def/classdata__structures_1_1linked__list_1_1list" ]
+      ] ],
+      [ "queue_using_array", null, [
+        [ "Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array" ]
+      ] ],
+      [ "tree_234", null, [
+        [ "Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", "dd/d40/classdata__structures_1_1tree__234_1_1_node" ],
+        [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234" ]
+      ] ],
+      [ "Node", "d9/d49/structdata__structures_1_1_node.html", "d9/d49/structdata__structures_1_1_node" ],
+      [ "SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", "d4/d90/classdata__structures_1_1_skip_list" ],
+      [ "trie", "d0/d3e/classdata__structures_1_1trie.html", "d0/d3e/classdata__structures_1_1trie" ]
+    ] ],
+    [ "double_hashing", "d0/d65/namespacedouble__hashing.html", [
+      [ "Entry", "d9/dde/structdouble__hashing_1_1_entry.html", "d9/dde/structdouble__hashing_1_1_entry" ]
+    ] ],
+    [ "geometry", "d5/d5f/namespacegeometry.html", [
+      [ "jarvis", null, [
+        [ "Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", "d9/d5a/structgeometry_1_1jarvis_1_1_point" ],
+        [ "Convexhull", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull" ]
+      ] ]
+    ] ],
+    [ "graph", "df/dce/namespacegraph.html", [
+      [ "is_graph_bipartite", null, [
+        [ "Graph", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html", "de/d00/classgraph_1_1is__graph__bipartite_1_1_graph" ]
+      ] ],
+      [ "Graph", "dc/d61/classgraph_1_1_graph.html", "dc/d61/classgraph_1_1_graph" ],
+      [ "HKGraph", "d8/d69/classgraph_1_1_h_k_graph.html", "d8/d69/classgraph_1_1_h_k_graph" ],
+      [ "RootedTree", "d0/d58/classgraph_1_1_rooted_tree.html", "d0/d58/classgraph_1_1_rooted_tree" ],
+      [ "LowestCommonAncestor", "d9/d23/classgraph_1_1_lowest_common_ancestor.html", "d9/d23/classgraph_1_1_lowest_common_ancestor" ]
+    ] ],
+    [ "linear_probing", "d8/d89/namespacelinear__probing.html", [
+      [ "Entry", "db/d19/structlinear__probing_1_1_entry.html", "db/d19/structlinear__probing_1_1_entry" ]
+    ] ],
+    [ "machine_learning", "d8/d77/namespacemachine__learning.html", [
+      [ "neural_network", null, [
+        [ "layers", null, [
+          [ "DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer" ]
+        ] ],
+        [ "NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network" ]
+      ] ],
+      [ "adaline", "d6/d30/classmachine__learning_1_1adaline.html", "d6/d30/classmachine__learning_1_1adaline" ]
+    ] ],
+    [ "math", "dd/d47/namespacemath.html", [
+      [ "ncr_modulo_p", null, [
+        [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
+      ] ]
+    ] ],
+    [ "others", "d0/d6f/namespaceothers.html", [
+      [ "postfix_expression", null, [
+        [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ]
+      ] ]
+    ] ],
+    [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", [
+      [ "Entry", "da/dd1/structquadratic__probing_1_1_entry.html", "da/dd1/structquadratic__probing_1_1_entry" ]
+    ] ],
+    [ "range_queries", "dd/d69/namespacerange__queries.html", [
+      [ "heavy_light_decomposition", null, [
+        [ "Tree", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree" ],
+        [ "SG", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g" ],
+        [ "HLD", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d" ]
+      ] ]
+    ] ],
+    [ "statistics", "d2/dcf/namespacestatistics.html", [
+      [ "stats_computer1", "d7/d7c/classstatistics_1_1stats__computer1.html", "d7/d7c/classstatistics_1_1stats__computer1" ],
+      [ "stats_computer2", "d8/dab/classstatistics_1_1stats__computer2.html", "d8/dab/classstatistics_1_1stats__computer2" ]
+    ] ],
     [ "Btree", "d9/d90/struct_btree.html", "d9/d90/struct_btree" ],
     [ "cll", "d5/d15/classcll.html", "d5/d15/classcll" ],
     [ "compare", "d1/db3/structcompare.html", "d1/db3/structcompare" ],
@@ -33,8 +94,8 @@ var annotated_dup =
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
+    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],

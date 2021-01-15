@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Various functions for vectors associated with NeuralNetwork (aka Multilayer Perceptron).">
+<g id="a_node1"><a xlink:title="Various functions for vectors associated with &lt;a href=&quot;https://en.wikipedia.org/wiki/Multilayer_perce...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-67.5 0,-97.5 122,-97.5 122,-67.5 0,-67.5"/>
 <text text-anchor="start" x="8" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning/vector</text>
 <text text-anchor="middle" x="61" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ops.hpp</text>

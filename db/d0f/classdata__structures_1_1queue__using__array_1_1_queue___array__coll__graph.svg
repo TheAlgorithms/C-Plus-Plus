@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
 <polygon fill="white" stroke="black" points="18,-78.5 18,-108.5 117,-108.5 117,-78.5 18,-78.5"/>
 <text text-anchor="start" x="26" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; int16_t,</text>
 <text text-anchor="middle" x="67.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00"> max_size &gt;</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
 <polygon fill="white" stroke="black" points="35,-156.5 35,-175.5 100,-175.5 100,-156.5 35,-156.5"/>
 <text text-anchor="middle" x="67.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::int16_t</text>
 </a>

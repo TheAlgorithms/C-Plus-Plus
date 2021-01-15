@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector.html" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-78.5 0,-97.5 116,-97.5 116,-78.5 0,-78.5"/>
 <text text-anchor="middle" x="58" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; uint64_t &gt;</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integer.html" xlink:title=" ">
 <polygon fill="white" stroke="black" points="22.5,-145.5 22.5,-164.5 93.5,-164.5 93.5,-145.5 22.5,-145.5"/>
 <text text-anchor="middle" x="58" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::uint64_t</text>
 </a>
