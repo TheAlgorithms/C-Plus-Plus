@@ -1,10 +1,7 @@
   /**
 
- * @file
- 				 	Reverse String
- * 	  
- * @brief   finding the reverse of any string using two pointer approach      
- 
+ * @file	  
+ * @brief   finding the reverse of any string using two pointer approach       
  */
 
 # include<iostream>
@@ -12,10 +9,10 @@
 # include<string>
 
 
-/*
- 			* swapped the value 
- @param a   A refrence call to i-th character of input string
- @param b   A refrece call to j-th character of input string
+/**
+* swapped the value 
+ * @param a   A refrence call to i-th character of input string
+ * @param b   A refrece call to j-th character of input string
  
 */
 void swap(char &a , char &b)
@@ -33,7 +30,7 @@ return ;
 
 
 /**
- 	* Reverse the String -- "str"
+* Reverse the String -- "str"
  
  * @param str     string which has to reverse.
  * @return        reversed string
@@ -44,26 +41,9 @@ std::string reverseString(std::string str)
 
  
 	if(str.length()==1)		
-	return str;
-	
-/*  
-  
-  	# input :  string ( A Y U S H )
-  				        i       j
-  				   
-  	* step 1 :  string ( H Y U S A )
-  					       i   j
-  					  
-  	* step 2 :  string ( H S U Y A )
-  					        ij
-  					    
-  	
-  	return  :  string( H S U Y A ) 
+	return str; 
 
- 	
 	
-*/	
-
 	int i=0,j=str.length()-1;
 	
 	for(;i<j;i++,j--)
@@ -77,7 +57,11 @@ std::string reverseString(std::string str)
 }
 
 
-/** main function */
+
+/**
+ * @brief Main Function that calls reverseString function
+ * @returns 0 on exit
+ */
 
 int main()
 {  
