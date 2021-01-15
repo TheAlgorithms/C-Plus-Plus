@@ -20,7 +20,7 @@
 
 /**
  * @namespace graph
- * @brief Graphical Algorithms
+ * @brief Graph Algorithms
  */
 namespace graph {
 /**
