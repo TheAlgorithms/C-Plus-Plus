@@ -1,11 +1,12 @@
 /**
  * @file
- * @brief An algorithm to divide two numbers under modulo p [Modular 
+ * @brief An algorithm to divide two numbers under modulo p [Modular
  * Division](https://www.geeksforgeeks.org/modular-division)
  * @details To calculate division of two numbers under modulo p
  * Modulo operator is not distributive under division, therefore
  * we first have to calculate the inverse of divisor using
- * [Fermat's little theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem)
+ * [Fermat's little
+ theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem)
  * Now, we can multiply the dividend with the inverse of divisor
  * and modulo is distributive over multiplication operation.
  * Let,
@@ -31,51 +32,52 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-  /**
-   * @namespace modular_division
-   * @brief Functions for Modular Division implementation
-   */
-  namespace modular_division {
-    /**
-     * @brief This function calculates a raised to exponent b under modulo c using
-     * modular exponentiation.
-     * @param a integer base
-     * @param b unsigned integer exponent
-     * @param c integer modulo
-     * @return a raised to power b modulo c
-     */
-    uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
-        uint64_t ans = 1;  /// Initialize the answer to be returned
-        a = a % c;         /// Update a if it is more than or equal to c
-        if (a == 0) {
-            return 0;  /// In case a is divisible by c;
-        }
-        while (b > 0) {
-            /// If b is odd, multiply a with answer
-            if (b & 1) {
-                ans = ((ans % c) * (a % c)) % c;
-            }
-            /// b must be even now
-            b = b >> 1;  /// b = b/2
-            a = ((a % c) * (a % c)) % c;
-        }
-        return ans;
+/**
+ * @namespace modular_division
+ * @brief Functions for Modular Division implementation
+ */
+namespace modular_division {
+/**
+ * @brief This function calculates a raised to exponent b under modulo c using
+ * modular exponentiation.
+ * @param a integer base
+ * @param b unsigned integer exponent
+ * @param c integer modulo
+ * @return a raised to power b modulo c
+ */
+uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
+    uint64_t ans = 1;  /// Initialize the answer to be returned
+    a = a % c;         /// Update a if it is more than or equal to c
+    if (a == 0) {
+        return 0;  /// In case a is divisible by c;
     }
+    while (b > 0) {
+        /// If b is odd, multiply a with answer
+        if (b & 1) {
+            ans = ((ans % c) * (a % c)) % c;
+        }
+        /// b must be even now
+        b = b >> 1;  /// b = b/2
+        a = ((a % c) * (a % c)) % c;
+    }
+    return ans;
+}
 
-    /**
-     * @brief This function calculates modular division
-     * @param a integer dividend
-     * @param b integer divisor
-     * @param p integer modulo
-     * @return a/b modulo c
-     */
-    uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p)	{
-        uint64_t inverse = power(b, p-2, p)%p;  /// Calculate the inverse of b
-        uint64_t result = ((a%p)*(inverse%p))%p;   /// Calculate the final result
-        return result;
-    }
-  } // namespace modular_division
-}   // namespace math
+/**
+ * @brief This function calculates modular division
+ * @param a integer dividend
+ * @param b integer divisor
+ * @param p integer modulo
+ * @return a/b modulo c
+ */
+uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p) {
+    uint64_t inverse = power(b, p - 2, p) % p;  /// Calculate the inverse of b
+    uint64_t result =
+        ((a % p) * (inverse % p)) % p;  /// Calculate the final result
+    return result;
+}
+}  // namespace modular_division
+}  // namespace math
 
 /**
  * Function for testing power function.
@@ -107,6 +109,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test(); // execute the tests
+    test();  // execute the tests
     return 0;
 }
