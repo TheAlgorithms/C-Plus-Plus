@@ -27,6 +27,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "least_common_multiple.cpp", "d4/d21/least__common__multiple_8cpp.html", "d4/d21/least__common__multiple_8cpp" ],
     [ "magic_number.cpp", "d9/d44/magic__number_8cpp.html", "d9/d44/magic__number_8cpp" ],
     [ "miller_rabin.cpp", "d6/d42/miller__rabin_8cpp.html", "d6/d42/miller__rabin_8cpp" ],
+    [ "modular_division.cpp", "df/d72/modular__division_8cpp.html", "df/d72/modular__division_8cpp" ],
     [ "modular_exponentiation.cpp", "d0/d6d/modular__exponentiation_8cpp.html", "d0/d6d/modular__exponentiation_8cpp" ],
     [ "modular_inverse_fermat_little_theorem.cpp", "d8/d53/modular__inverse__fermat__little__theorem_8cpp.html", "d8/d53/modular__inverse__fermat__little__theorem_8cpp" ],
     [ "n_choose_r.cpp", "d1/dbb/n__choose__r_8cpp.html", "d1/dbb/n__choose__r_8cpp" ],

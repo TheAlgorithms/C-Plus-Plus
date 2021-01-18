@@ -7,6 +7,10 @@ var namespacemath =
       [ "power", "de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311", null ],
       [ "result", "de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa", null ]
     ] ],
+    [ "modular_division", null, [
+      [ "mod_division", "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7", null ],
+      [ "power", "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179", null ]
+    ] ],
     [ "ncr_modulo_p", null, [
       [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
     ] ],

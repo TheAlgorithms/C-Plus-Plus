@@ -60,6 +60,7 @@ var namespaces_dup =
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
     [ "mincoins_topdown", "d5/db8/namespacemincoins__topdown.html", null ],
+    [ "modular_division", "d1/d64/namespacemodular__division.html", null ],
     [ "morse", "d6/d8d/namespacemorse.html", null ],
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],
     [ "n_queens_all_solutions", "df/d44/namespacen__queens__all__solutions.html", null ],
