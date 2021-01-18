@@ -34,7 +34,7 @@
 namespace math {
 /**
  * @namespace modular_division
- * @brief Functions for [Modular 
+ * @brief Functions for [Modular
  * Division](https://www.geeksforgeeks.org/modular-division) implementation
  */
 namespace modular_division {
