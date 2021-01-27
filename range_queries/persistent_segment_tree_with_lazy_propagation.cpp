@@ -14,6 +14,7 @@ private:
 
         Node() {
             val = prop = version = 0;
+            left = right = nullptr;
         }
     };
 
@@ -21,8 +22,9 @@ private:
     std::vector<std::shared_ptr<Node>> ptrs; // ptrs[i] holds a root pointer to the segment tree after the ith update
     std::vector<int> vec;
 
-    std::shared_ptr<Node> newKid(std::shared_ptr<Node> curr) {
-        std::shared_ptr<Node> newNode(new Node());
+    std::shared_ptr<Node> newKid(std::shared_ptr<Node> const &curr) {
+        //std::shared_ptr<Node> newNode(new Node());
+        auto newNode = std::make_shared<Node>(Node());
         newNode->left = curr->left;
         newNode->right = curr->right;
         newNode->prop = curr->prop;
@@ -30,7 +32,7 @@ private:
         return newNode;
     }
 
-    void lazy(int i, int j, std::shared_ptr<Node> curr) {
+    void lazy(int i, int j, std::shared_ptr<Node> const &curr) {
         if (!curr->prop) {
             return;
         }
@@ -46,7 +48,7 @@ private:
     }
 
     void construct(int i, int j, std::shared_ptr<Node> &curr) {
-        curr = std::shared_ptr<Node>(new Node());
+        curr = std::make_shared<Node>(Node());
         if (i == j) {
             curr->val = vec[i];
         } else {
@@ -57,7 +59,7 @@ private:
         }
     }
 
-    std::shared_ptr<Node> update(int i, int j, int l, int r, int value, std::shared_ptr<Node> curr) {
+    std::shared_ptr<Node> update(int i, int j, int l, int r, int value, std::shared_ptr<Node> const &curr) {
         lazy(i, j, curr);
         if (i >= l && j <= r) {
             std::shared_ptr<Node> newNode = newKid(curr);
@@ -69,7 +71,7 @@ private:
         if (i > r || j < l) {
             return curr;
         }
-        std::shared_ptr<Node> newNode = std::shared_ptr<Node>(new Node());
+        auto newNode = std::make_shared<Node>(Node());
         int mid = i + (j - i) / 2;
         newNode->left = update(i, mid, l, r, value, curr->left);
         newNode->right = update(mid + 1, j, l, r, value, curr->right);
@@ -78,7 +80,7 @@ private:
         return newNode;
     }
 
-    int64_t query(int i, int j, int l, int r, std::shared_ptr<Node> curr) {
+    int64_t query(int i, int j, int l, int r, std::shared_ptr<Node> const &curr) {
         lazy(i, j, curr);
         if (j < l || r < i) {
             return 0;
@@ -95,7 +97,8 @@ public:
         n = 0;
     }
 
-    void construct(const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
+    void construct(
+            const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
     {
         if (vec.empty()) {
             return;
@@ -107,18 +110,21 @@ public:
         ptrs.push_back(root);
     }
 
-    void update(int l, int r, int value) // all elements from index "l" to index "r" would by updated by "value", "l" and "r" are 0 indexed
+    void update(int l, int r,
+                int value) // all elements from index "l" to index "r" would by updated by "value", "l" and "r" are 0 indexed
     {
         ptrs.push_back(update(0, n - 1, l, r, value,
                               ptrs[ptrs.size() - 1])); // saving the root pointer to the new segment tree
     }
 
-    int64_t query(int l, int r, int version) // querying the range from "l" to "r" in a segment tree after "version" updates, "l" and "r" are 0 indexed
+    int64_t query(int l, int r,
+                  int version) // querying the range from "l" to "r" in a segment tree after "version" updates, "l" and "r" are 0 indexed
     {
         return query(0, n - 1, l, r, ptrs[version]);
     }
 
-    int size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
+    int
+    size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
     {
         return ptrs.size();
     }
