@@ -1,7 +1,6 @@
 #include<iostream>
 #include<vector>
 
-
 // query -> range sum
 class perSegTree {
 private:
@@ -26,7 +25,6 @@ private:
         *newNode = *curr;
         return newNode;
     }
-
     void lazy(int i, int j, Node *curr) {
         if (!curr->prop) {
             return;
@@ -103,7 +101,7 @@ public:
         n = 0;
     }
 
-    void construct(std::vector<int> vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
+    void construct(const std::vector<int> vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
     {
         if (vec.empty()) {
             return;
@@ -178,4 +176,5 @@ int main() {
     std::cout << "Number of segment trees (versions) now = " << tree.size() << '\n';
     std::cout << "Querying range sum on version 0 from index 3 to 5 = 11-2+7 = " << tree.query(3, 5, 0) << '\n';
     std::cout << "Querying range sum on version 1 from index 3 to 5 = 4-9+0 = " << tree.query(3, 5, 1) << '\n';
+    return 0;
 }
