@@ -1,31 +1,36 @@
 #include<iostream>
 #include<vector>
+#include <memory>
 
 // query -> range sum
 class perSegTree {
 private:
-    struct Node {
-        Node *left;
-        Node *right;
+    class Node {
+    public:
+        std::shared_ptr<Node> left;
+        std::shared_ptr<Node> right;
         int64_t val, prop;
         int version;
 
         Node() {
-            left = right = nullptr;
             val = prop = version = 0;
         }
     };
 
     int n; // number of elements in the segment tree
-    std::vector<Node *> ptrs; // ptrs[i] holds a root pointer to the segment tree after the ith update
+    std::vector<std::shared_ptr<Node>> ptrs; // ptrs[i] holds a root pointer to the segment tree after the ith update
     std::vector<int> vec;
 
-    Node *newKid(Node *curr) {
-        Node *newNode = new Node;
-        *newNode = *curr;
+    std::shared_ptr<Node> newKid(std::shared_ptr<Node> curr) {
+        std::shared_ptr<Node> newNode(new Node());
+        newNode->left = curr->left;
+        newNode->right = curr->right;
+        newNode->prop = curr->prop;
+        newNode->val = curr->val;
         return newNode;
     }
-    void lazy(int i, int j, Node *curr) {
+
+    void lazy(int i, int j, std::shared_ptr<Node> curr) {
         if (!curr->prop) {
             return;
         }
@@ -40,8 +45,8 @@ private:
         curr->prop = 0;
     }
 
-    void construct(int i, int j, Node *&curr) {
-        curr = new Node;
+    void construct(int i, int j, std::shared_ptr<Node> &curr) {
+        curr = std::shared_ptr<Node>(new Node());
         if (i == j) {
             curr->val = vec[i];
         } else {
@@ -52,10 +57,10 @@ private:
         }
     }
 
-    Node *update(int i, int j, int l, int r, int value, Node *curr) {
+    std::shared_ptr<Node> update(int i, int j, int l, int r, int value, std::shared_ptr<Node> curr) {
         lazy(i, j, curr);
         if (i >= l && j <= r) {
-            Node *newNode = newKid(curr);
+            std::shared_ptr<Node> newNode = newKid(curr);
             newNode->prop += value;
             newNode->version = ptrs.size();
             lazy(i, j, newNode);
@@ -64,7 +69,7 @@ private:
         if (i > r || j < l) {
             return curr;
         }
-        Node *newNode = new Node;
+        std::shared_ptr<Node> newNode = std::shared_ptr<Node>(new Node());
         int mid = i + (j - i) / 2;
         newNode->left = update(i, mid, l, r, value, curr->left);
         newNode->right = update(mid + 1, j, l, r, value, curr->right);
@@ -73,7 +78,7 @@ private:
         return newNode;
     }
 
-    int64_t query(int i, int j, int l, int r, Node *curr) {
+    int64_t query(int i, int j, int l, int r, std::shared_ptr<Node> curr) {
         lazy(i, j, curr);
         if (j < l || r < i) {
             return 0;
@@ -85,30 +90,19 @@ private:
         return query(i, mid, l, r, curr->left) + query(mid + 1, j, l, r, curr->right);
     }
 
-    /*void clear(Node *&curr, int version) {
-        if (!curr || curr->version != version) {
-            return;
-        }
-        clear(curr->left, version);
-        clear(curr->right, version);
-        delete curr;
-    }
-    */ // for deallocation , version is passed to delete the current node iff its version = passed version
-    // that is, this node was created when the segment tree, whose version = this node's version, was created
-    // this is done to delete the segment trees top down version by version
 public:
     perSegTree() {
         n = 0;
     }
 
-    void construct(const std::vector<int> vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
+    void construct(const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
     {
         if (vec.empty()) {
             return;
         }
         n = vec.size();
         this->vec = vec;
-        Node *root = nullptr;
+        std::shared_ptr<Node> root = nullptr;
         construct(0, n - 1, root);
         ptrs.push_back(root);
     }
@@ -123,15 +117,6 @@ public:
     {
         return query(0, n - 1, l, r, ptrs[version]);
     }
-
-    /*void clear() {
-        for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; --i) {
-            clear(ptrs[i],i); // every segment tree clears its nodes (nodes that were created when this segment tree was created)
-        }
-        while (!ptrs.empty()) {
-            ptrs.pop_back();
-        }
-    }*/
 
     int size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
     {
