@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ private:
         }
     };
 
-    int n{}; // number of elements in the segment tree
+    int n; // number of elements in the segment tree
     vector<Node *> ptrs; // ptrs[i] holds a root pointer to the segment tree after the ith update
     Node *newKid(Node *curr) {
         Node *newNode = new Node();
@@ -124,7 +125,7 @@ public:
         try {
             if (!isValidRange(l, r)) // checking if the range is valid
                 throw "Invalid range";
-            if (!(version >= 0 && version < ptrs.size())) // if "version" is not a valid version of any segment tree after updates so far
+            if (!(version >= 0 && version < ptrs.size())) // checking if "version" is not a valid version of any segment tree after updates so far
                 throw "Invalid version";
             return query(0, n - 1, l, r, ptrs[version]);
         }
