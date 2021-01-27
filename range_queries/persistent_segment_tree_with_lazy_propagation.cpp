@@ -47,16 +47,19 @@ private:
         curr->prop = 0;
     }
 
-    void construct(int i, int j, std::shared_ptr<Node> &curr) {
-        curr = std::make_shared<Node>(Node());
+    std::shared_ptr<Node> construct(int i, int j) {
+        auto newNode = std::make_shared<Node>(Node());
         if (i == j) {
-            curr->val = vec[i];
+            newNode->val = vec[i];
         } else {
             int mid = i + (j - i) / 2;
-            construct(i, mid, curr->left);
-            construct(mid + 1, j, curr->right);
-            curr->val = curr->left->val + curr->right->val;
+            auto leftt = construct(i, mid);
+            auto right = construct(mid + 1, j);
+            newNode->val = leftt->val + right->val;
+            newNode->left = leftt;
+            newNode->right = right;
         }
+        return newNode;
     }
 
     std::shared_ptr<Node> update(int i, int j, int l, int r, int value, std::shared_ptr<Node> const &curr) {
@@ -97,34 +100,29 @@ public:
         n = 0;
     }
 
-    void construct(
-            const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
+    void construct(const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
     {
         if (vec.empty()) {
             return;
         }
         n = vec.size();
         this->vec = vec;
-        std::shared_ptr<Node> root = nullptr;
-        construct(0, n - 1, root);
+        auto root = construct(0, n - 1);
         ptrs.push_back(root);
     }
 
-    void update(int l, int r,
-                int value) // all elements from index "l" to index "r" would by updated by "value", "l" and "r" are 0 indexed
+    void update(int l, int r, int value) // all elements from index "l" to index "r" would by updated by "value", "l" and "r" are 0 indexed
     {
         ptrs.push_back(update(0, n - 1, l, r, value,
                               ptrs[ptrs.size() - 1])); // saving the root pointer to the new segment tree
     }
 
-    int64_t query(int l, int r,
-                  int version) // querying the range from "l" to "r" in a segment tree after "version" updates, "l" and "r" are 0 indexed
+    int64_t query(int l, int r, int version) // querying the range from "l" to "r" in a segment tree after "version" updates, "l" and "r" are 0 indexed
     {
         return query(0, n - 1, l, r, ptrs[version]);
     }
 
-    int
-    size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
+    int size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
     {
         return ptrs.size();
     }
