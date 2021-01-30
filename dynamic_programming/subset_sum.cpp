@@ -127,7 +127,6 @@ bool subset_sum(const std::vector<T> &set, const T &n, const T &sum,
 }
 
 }  // namespace subset_sum_topdown
-
 }  // namespace dynamic_programming
 
 /**
