@@ -92,7 +92,7 @@ namespace subset_sum_topdown {
 /**
  * @brief This is top down implemenation is for checking if a subset 
  * exists for the given sum value
- * @param T template-type to use any kind of value
+ * @tparam T template-type to use any kind of value
  * @param set 	: an array of numbers in set of size<=n
  * @param n 	: size of the set array
  * @param sum 	: subset sum value
