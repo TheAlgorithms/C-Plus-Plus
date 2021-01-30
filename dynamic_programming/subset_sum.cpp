@@ -25,10 +25,10 @@
  * @author [Vinay Garg] (https://github.com/Vinay-Garg)
  */
 
-#include <array>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <array>       /// for std::array
+#include <cassert>    /// for assert
+#include <iostream>   /// for io operations
+#include <vector>     /// for std::vector
 
 /**
  * @namespace dynamic_programming
