@@ -44,9 +44,9 @@ namespace subset_sum_bottomup {
 /**
  * @brief This is bottom up implemenation for checking if a subset 
  * exists for the given sum value
- * @tparam n 	: size of the set array
- * @param set 	: an array of numbers in set of size<=n
- * @param sum 	: subset sum value
+ * @tparam n size of the set array
+ * @param set an array of numbers in set of size<=n
+ * @param sum subset sum value
  * @returns true if there is a subset of set with sum equal to given sum
  */
 template <size_t n>
