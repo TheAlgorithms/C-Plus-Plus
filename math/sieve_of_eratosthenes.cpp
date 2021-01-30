@@ -1,45 +1,49 @@
 /**
  * @file
  * @brief Get list of prime numbers using Sieve of Eratosthenes
- * Sieve of Eratosthenes is an algorithm to find the primes
- * that is between 2 to N (as defined in main).
+ * @details
+ * Sieve of Eratosthenes is an algorithm that finds all the primes
+ * between 2 and N.
  *
- * Time Complexity  : \f$O(N \cdot\log N)\f$
+ * Time Complexity  : \f$O(N \cdot\log \log N)\f$
  * <br/>Space Complexity : \f$O(N)\f$
  *
  * @see primes_up_to_billion.cpp prime_numbers.cpp
  */
 
+#include <cassert>
 #include <iostream>
-
-/** Maximum number of primes */
-#define MAX 10000000
-
-/** array to store the primes */
-bool isprime[MAX];
+#include <vector>
 
 /**
- * This is the function that finds the primes and eliminates
- * the multiples.
+ * This is the function that finds the primes and eliminates the multiples.
+ * Contains a common optimization to start eliminating multiples of
+ * a prime p starting from p * p since all of the lower multiples
+ * have been already eliminated.
+ * @param N number of primes to check
+ * @return is_prime a vector of `N + 1` booleans identifying if `i`^th number is a prime or not
  */
-void sieve(uint32_t N) {
-    isprime[0] = false;
-    isprime[1] = false;
-    for (uint32_t i = 2; i <= N; i++) {
-        if (isprime[i]) {
-            for (uint32_t j = (i << 1); j <= N; j += i) {
-                isprime[j] = false;
+std::vector<bool> sieve(uint32_t N) {
+    std::vector<bool> is_prime(N + 1, true);
+    is_prime[0] = is_prime[1] = false;
+    for (uint32_t i = 2; i * i <= N; i++) {
+        if (is_prime[i]) {
+            for (uint32_t j = i * i; j <= N; j += i) {
+                is_prime[j] = false;
             }
         }
     }
+    return is_prime;
 }
 
 /**
  * This function prints out the primes to STDOUT
+ * @param N number of primes to check
+ * @param is_prime a vector of `N + 1` booleans identifying if `i`^th number is a prime or not
  */
-void print(uint32_t N) {
-    for (uint32_t i = 1; i <= N; i++) {
-        if (isprime[i]) {
+void print(uint32_t N, const std::vector<bool> &is_prime) {
+    for (uint32_t i = 2; i <= N; i++) {
+        if (is_prime[i]) {
             std::cout << i << ' ';
         }
     }
@@ -47,19 +51,22 @@ void print(uint32_t N) {
 }
 
 /**
- * Initialize the array
+ * Test implementations
  */
-void init() {
-    for (uint32_t i = 1; i < MAX; i++) {
-        isprime[i] = true;
-    }
+void tests() {
+  //                    0      1      2     3     4      5     6      7     8      9      10
+  std::vector<bool> ans{false, false, true, true, false, true, false, true, false, false, false};
+  assert(sieve(10) == ans);
 }
 
-/** main function */
+/**
+ * Main function
+ */
 int main() {
+    tests();
+
     uint32_t N = 100;
-    init();
-    sieve(N);
-    print(N);
+    std::vector<bool> is_prime = sieve(N);
+    print(N, is_prime);
     return 0;
 }

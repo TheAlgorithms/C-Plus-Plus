@@ -25,8 +25,11 @@
  */
 #define _USE_MATH_DEFINES  //< required for MS Visual C++
 #include <algorithm>
+#include <array>
+#include <cerrno>
 #include <cmath>
 #include <cstdlib>
+#include <cstring>
 #include <ctime>
 #include <fstream>
 #include <iostream>
@@ -68,7 +71,8 @@ int save_2d_data(const char *fname,
     fp.open(fname);
     if (!fp.is_open()) {
         // error with opening file to write
-        std::cerr << "Error opening file " << fname << "\n";
+        std::cerr << "Error opening file " << fname << ": "
+                  << std::strerror(errno) << "\n";
         return -1;
     }
 
@@ -76,12 +80,14 @@ int save_2d_data(const char *fname,
     for (int i = 0; i < num_points; i++) {
         // for each feature in the array
         for (int j = 0; j < num_features; j++) {
-            fp << X[i][j];             // print the feature value
-            if (j < num_features - 1)  // if not the last feature
-                fp << ",";             // suffix comma
+            fp << X[i][j];               // print the feature value
+            if (j < num_features - 1) {  // if not the last feature
+                fp << ",";               // suffix comma
+            }
         }
-        if (i < num_points - 1)  // if not the last row
-            fp << "\n";          // start a new line
+        if (i < num_points - 1) {  // if not the last row
+            fp << "\n";            // start a new line
+        }
     }
 
     fp.close();
@@ -99,12 +105,12 @@ int save_2d_data(const char *fname,
 void get_min_2d(const std::vector<std::valarray<double>> &X, double *val,
                 int *x_idx, int *y_idx) {
     val[0] = INFINITY;  // initial min value
-    int N = X.size();
+    size_t N = X.size();
 
     for (int i = 0; i < N; i++) {  // traverse each x-index
         auto result = std::min_element(std::begin(X[i]), std::end(X[i]));
         double d_min = *result;
-        int j = std::distance(std::begin(X[i]), result);
+        std::ptrdiff_t j = std::distance(std::begin(X[i]), result);
 
         if (d_min < val[0]) {  // if a lower value is found
                                // save the value and its index
@@ -119,7 +125,8 @@ void get_min_2d(const std::vector<std::valarray<double>> &X, double *val,
  * \brief Machine learning algorithms
  */
 namespace machine_learning {
-#define MIN_DISTANCE 1e-4  ///< Minimum average distance of image nodes
+/** Minimum average distance of image nodes */
+constexpr double MIN_DISTANCE = 1e-4;
 
 /**
  * Create the distance matrix or
@@ -136,9 +143,8 @@ int save_u_matrix(const char *fname,
                   const std::vector<std::vector<std::valarray<double>>> &W) {
     std::ofstream fp(fname);
     if (!fp) {  // error with fopen
-        char msg[120];
-        std::snprintf(msg, sizeof(msg), "File error (%s): ", fname);
-        std::perror(msg);
+        std::cerr << "File error (" << fname << "): " << std::strerror(errno)
+                  << std::endl;
         return -1;
     }
 
@@ -153,7 +159,7 @@ int save_u_matrix(const char *fname,
             int to_x = std::min<int>(W.size(), i + R + 1);
             int from_y = std::max<int>(0, j - R);
             int to_y = std::min<int>(W[0].size(), j + R + 1);
-            int l, m;
+            int l = 0, m = 0;
 #ifdef _OPENMP
 #pragma omp parallel for reduction(+ : distance)
 #endif
@@ -172,8 +178,9 @@ int save_u_matrix(const char *fname,
                 fp << ',';              // suffix comma
             }
         }
-        if (i < W.size() - 1)  // if not the last row
-            fp << '\n';        // start a new line
+        if (i < W.size() - 1) {  // if not the last row
+            fp << '\n';          // start a new line
+        }
     }
 
     fp.close();
@@ -194,10 +201,11 @@ double update_weights(const std::valarray<double> &X,
                       std::vector<std::vector<std::valarray<double>>> *W,
                       std::vector<std::valarray<double>> *D, double alpha,
                       int R) {
-    int x, y;
+    int x = 0, y = 0;
     int num_out_x = static_cast<int>(W->size());       // output nodes - in X
     int num_out_y = static_cast<int>(W[0][0].size());  // output nodes - in Y
-    int num_features = static_cast<int>(W[0][0][0].size());  //  features = in Z
+    // int num_features = static_cast<int>(W[0][0][0].size());  //  features =
+    // in Z
     double d_min = 0.f;
 
 #ifdef _OPENMP
@@ -217,7 +225,7 @@ double update_weights(const std::valarray<double> &X,
 
     // step 2:  get closest node i.e., node with snallest Euclidian distance
     // to the current pattern
-    int d_min_x, d_min_y;
+    int d_min_x = 0, d_min_y = 0;
     get_min_2d(*D, &d_min, &d_min_x, &d_min_y);
 
     // step 3a: get the neighborhood range
@@ -261,10 +269,10 @@ double update_weights(const std::valarray<double> &X,
 void kohonen_som(const std::vector<std::valarray<double>> &X,
                  std::vector<std::vector<std::valarray<double>>> *W,
                  double alpha_min) {
-    int num_samples = X.size();      // number of rows
-    int num_features = X[0].size();  // number of columns
-    int num_out = W->size();         // output matrix size
-    int R = num_out >> 2, iter = 0;
+    size_t num_samples = X.size();  // number of rows
+    // size_t num_features = X[0].size();  // number of columns
+    size_t num_out = W->size();  // output matrix size
+    size_t R = num_out >> 2, iter = 0;
     double alpha = 1.f;
 
     std::vector<std::valarray<double>> D(num_out);
@@ -283,15 +291,17 @@ void kohonen_som(const std::vector<std::valarray<double>> &X,
         }
 
         // every 100th iteration, reduce the neighborhood range
-        if (iter % 300 == 0 && R > 1)
+        if (iter % 300 == 0 && R > 1) {
             R--;
+        }
 
         dmin /= num_samples;
 
         // termination condition variable -> % change in minimum distance
         dmin_ratio = (past_dmin - dmin) / past_dmin;
-        if (dmin_ratio < 0)
+        if (dmin_ratio < 0) {
             dmin_ratio = 1.f;
+        }
         past_dmin = dmin;
 
         std::cout << "iter: " << iter << "\t alpha: " << alpha << "\t R: " << R
@@ -320,14 +330,14 @@ using machine_learning::save_u_matrix;
 void test_2d_classes(std::vector<std::valarray<double>> *data) {
     const int N = data->size();
     const double R = 0.3;  // radius of cluster
-    int i;
+    int i = 0;
     const int num_classes = 4;
-    const double centres[][2] = {
+    std::array<std::array<double, 2>, num_classes> centres = {
         // centres of each class cluster
-        {.5, .5},   // centre of class 1
-        {.5, -.5},  // centre of class 2
-        {-.5, .5},  // centre of class 3
-        {-.5, -.5}  // centre of class 4
+        std::array<double, 2>({.5, .5}),   // centre of class 1
+        std::array<double, 2>({.5, -.5}),  // centre of class 2
+        std::array<double, 2>({-.5, .5}),  // centre of class 3
+        std::array<double, 2>({-.5, -.5})  // centre of class 4
     };
 
 #ifdef _OPENMP
@@ -357,15 +367,16 @@ void test_2d_classes(std::vector<std::valarray<double>> *data) {
  * * `w12.csv`: trained SOM map
  */
 void test1() {
-    int j, N = 300;
+    int j = 0, N = 300;
     int features = 2;
     int num_out = 30;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::vector<std::valarray<double>>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::vector<std::valarray<double>>(num_out);
             for (int k = 0; k < num_out; k++) {
@@ -373,9 +384,10 @@ void test1() {
 #ifdef _OPENMP
 #pragma omp for
 #endif
-                for (j = 0; j < features; j++)
+                for (j = 0; j < features; j++) {
                     // preallocate with random initial weights
                     W[i][k][j] = _random(-10, 10);
+                }
             }
         }
     }
@@ -397,16 +409,16 @@ void test1() {
  * \param[out] data matrix to store data in
  */
 void test_3d_classes1(std::vector<std::valarray<double>> *data) {
-    const int N = data->size();
+    const size_t N = data->size();
     const double R = 0.3;  // radius of cluster
-    int i;
+    int i = 0;
     const int num_classes = 4;
-    const double centres[][3] = {
+    const std::array<std::array<double, 3>, num_classes> centres = {
         // centres of each class cluster
-        {.5, .5, .5},    // centre of class 1
-        {.5, -.5, -.5},  // centre of class 2
-        {-.5, .5, .5},   // centre of class 3
-        {-.5, -.5 - .5}  // centre of class 4
+        std::array<double, 3>({.5, .5, .5}),    // centre of class 1
+        std::array<double, 3>({.5, -.5, -.5}),  // centre of class 2
+        std::array<double, 3>({-.5, .5, .5}),   // centre of class 3
+        std::array<double, 3>({-.5, -.5 - .5})  // centre of class 4
     };
 
 #ifdef _OPENMP
@@ -437,15 +449,16 @@ void test_3d_classes1(std::vector<std::valarray<double>> *data) {
  * * `w22.csv`: trained SOM map
  */
 void test2() {
-    int j, N = 300;
+    int j = 0, N = 300;
     int features = 3;
     int num_out = 30;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::vector<std::valarray<double>>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::vector<std::valarray<double>>(num_out);
             for (int k = 0; k < num_out; k++) {
@@ -453,9 +466,10 @@ void test2() {
 #ifdef _OPENMP
 #pragma omp for
 #endif
-                for (j = 0; j < features; j++)
+                for (j = 0; j < features; j++) {
                     // preallocate with random initial weights
                     W[i][k][j] = _random(-10, 10);
+                }
             }
         }
     }
@@ -477,20 +491,20 @@ void test2() {
  * \param[out] data matrix to store data in
  */
 void test_3d_classes2(std::vector<std::valarray<double>> *data) {
-    const int N = data->size();
+    const size_t N = data->size();
     const double R = 0.2;  // radius of cluster
-    int i;
+    int i = 0;
     const int num_classes = 8;
-    const double centres[][3] = {
+    const std::array<std::array<double, 3>, num_classes> centres = {
         // centres of each class cluster
-        {.5, .5, .5},    // centre of class 1
-        {.5, .5, -.5},   // centre of class 2
-        {.5, -.5, .5},   // centre of class 3
-        {.5, -.5, -.5},  // centre of class 4
-        {-.5, .5, .5},   // centre of class 5
-        {-.5, .5, -.5},  // centre of class 6
-        {-.5, -.5, .5},  // centre of class 7
-        {-.5, -.5, -.5}  // centre of class 8
+        std::array<double, 3>({.5, .5, .5}),    // centre of class 1
+        std::array<double, 3>({.5, .5, -.5}),   // centre of class 2
+        std::array<double, 3>({.5, -.5, .5}),   // centre of class 3
+        std::array<double, 3>({.5, -.5, -.5}),  // centre of class 4
+        std::array<double, 3>({-.5, .5, .5}),   // centre of class 5
+        std::array<double, 3>({-.5, .5, -.5}),  // centre of class 6
+        std::array<double, 3>({-.5, -.5, .5}),  // centre of class 7
+        std::array<double, 3>({-.5, -.5, -.5})  // centre of class 8
     };
 
 #ifdef _OPENMP
@@ -521,15 +535,16 @@ void test_3d_classes2(std::vector<std::valarray<double>> *data) {
  * * `w32.csv`: trained SOM map
  */
 void test3() {
-    int j, N = 500;
+    int j = 0, N = 500;
     int features = 3;
     int num_out = 30;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::vector<std::valarray<double>>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::vector<std::valarray<double>>(num_out);
             for (int k = 0; k < num_out; k++) {
@@ -537,9 +552,10 @@ void test3() {
 #ifdef _OPENMP
 #pragma omp for
 #endif
-                for (j = 0; j < features; j++)
+                for (j = 0; j < features; j++) {
                     // preallocate with random initial weights
                     W[i][k][j] = _random(-10, 10);
+                }
             }
         }
     }

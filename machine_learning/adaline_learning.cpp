@@ -26,6 +26,7 @@
  * computed using stochastic gradient descent method.
  */
 
+#include <array>
 #include <cassert>
 #include <climits>
 #include <cmath>
@@ -35,7 +36,8 @@
 #include <numeric>
 #include <vector>
 
-#define MAX_ITER 500  // INT_MAX  ///< Maximum number of iterations to learn
+/** Maximum number of iterations to learn */
+constexpr int MAX_ITER = 500;  // INT_MAX
 
 /** \namespace machine_learning
  * \brief Machine learning algorithms
@@ -50,8 +52,8 @@ class adaline {
      * \param[in] convergence accuracy (optional,
      * default=\f$1\times10^{-5}\f$)
      */
-    adaline(int num_features, const double eta = 0.01f,
-            const double accuracy = 1e-5)
+    explicit adaline(int num_features, const double eta = 0.01f,
+                     const double accuracy = 1e-5)
         : eta(eta), accuracy(accuracy) {
         if (eta <= 0) {
             std::cerr << "learning rate should be positive and nonzero"
@@ -64,7 +66,7 @@ class adaline {
             1);  // additional weight is for the constant bias term
 
         // initialize with random weights in the range [-50, 49]
-        for (int i = 0; i < weights.size(); i++) weights[i] = 1.f;
+        for (double &weight : weights) weight = 1.f;
         // weights[i] = (static_cast<double>(std::rand() % 100) - 50);
     }
 
@@ -75,8 +77,9 @@ class adaline {
         out << "<";
         for (int i = 0; i < ada.weights.size(); i++) {
             out << ada.weights[i];
-            if (i < ada.weights.size() - 1)
+            if (i < ada.weights.size() - 1) {
                 out << ", ";
+            }
         }
         out << ">";
         return out;
@@ -90,28 +93,33 @@ class adaline {
      * model prediction output
      */
     int predict(const std::vector<double> &x, double *out = nullptr) {
-        if (!check_size_match(x))
+        if (!check_size_match(x)) {
             return 0;
+        }
 
         double y = weights.back();  // assign bias value
 
         // for (int i = 0; i < x.size(); i++) y += x[i] * weights[i];
         y = std::inner_product(x.begin(), x.end(), weights.begin(), y);
 
-        if (out != nullptr)  // if out variable is provided
+        if (out != nullptr) {  // if out variable is provided
             *out = y;
+        }
 
         return activation(y);  // quantizer: apply ADALINE threshold function
     }
 
     /**
      * Update the weights of the model using supervised learning for one
-     * feature vector \param[in] x feature vector \param[in] y known output
-     * value \returns correction factor
+     * feature vector
+     * \param[in] x feature vector
+     * \param[in] y known output value
+     * \returns correction factor
      */
     double fit(const std::vector<double> &x, const int &y) {
-        if (!check_size_match(x))
+        if (!check_size_match(x)) {
             return 0;
+        }
 
         /* output of the model with current weights */
         int p = predict(x);
@@ -129,21 +137,23 @@ class adaline {
 
     /**
      * Update the weights of the model using supervised learning for an
-     * array of vectors. \param[in] X array of feature vector \param[in] y
-     * known output value for each feature vector
+     * array of vectors.
+     * \param[in] X array of feature vector
+     * \param[in] y known output value for each feature vector
      */
-    template <int N>
-    void fit(std::vector<double> const (&X)[N], const int *y) {
+    template <size_t N>
+    void fit(std::array<std::vector<double>, N> const &X,
+             std::array<int, N> const &Y) {
         double avg_pred_error = 1.f;
 
-        int iter;
+        int iter = 0;
         for (iter = 0; (iter < MAX_ITER) && (avg_pred_error > accuracy);
              iter++) {
             avg_pred_error = 0.f;
 
             // perform fit for each sample
             for (int i = 0; i < N; i++) {
-                double err = fit(X[i], y[i]);
+                double err = fit(X[i], Y[i]);
                 avg_pred_error += std::abs(err);
             }
             avg_pred_error /= N;
@@ -154,15 +164,25 @@ class adaline {
                       << "\tAvg error: " << avg_pred_error << std::endl;
         }
 
-        if (iter < MAX_ITER)
-
+        if (iter < MAX_ITER) {
             std::cout << "Converged after " << iter << " iterations."
                       << std::endl;
-        else
+        } else {
             std::cout << "Did not converge after " << iter << " iterations."
                       << std::endl;
+        }
     }
 
+    /** Defines activation function as Heaviside's step function.
+     * \f[
+     * f(x) = \begin{cases}
+     * -1 & \forall x \le 0\\
+     *  1 & \forall x > 0
+     * \end{cases}
+     * \f]
+     * @param x input value to apply activation on
+     * @return activation output
+     */
     int activation(double x) { return x > 0 ? 1 : -1; }
 
  private:
@@ -206,15 +226,19 @@ void test1(double eta = 0.01) {
 
     const int N = 10;  // number of sample points
 
-    std::vector<double> X[N] = {{0, 1},  {1, -2},   {2, 3},   {3, -1},
-                                {4, 1},  {6, -5},   {-7, -3}, {-8, 5},
-                                {-9, 2}, {-10, -15}};
-    int y[] = {1, -1, 1, -1, -1, -1, 1, 1, 1, -1};  // corresponding y-values
+    std::array<std::vector<double>, N> X = {
+        std::vector<double>({0, 1}),   std::vector<double>({1, -2}),
+        std::vector<double>({2, 3}),   std::vector<double>({3, -1}),
+        std::vector<double>({4, 1}),   std::vector<double>({6, -5}),
+        std::vector<double>({-7, -3}), std::vector<double>({-8, 5}),
+        std::vector<double>({-9, 2}),  std::vector<double>({-10, -15})};
+    std::array<int, N> y = {1,  -1, 1, -1, -1,
+                            -1, 1,  1, 1,  -1};  // corresponding y-values
 
     std::cout << "------- Test 1 -------" << std::endl;
     std::cout << "Model before fit: " << ada << std::endl;
 
-    ada.fit(X, y);
+    ada.fit<N>(X, y);
     std::cout << "Model after fit: " << ada << std::endl;
 
     int predict = ada.predict({5, -3});
@@ -240,17 +264,17 @@ void test2(double eta = 0.01) {
 
     const int N = 50;  // number of sample points
 
-    std::vector<double> X[N];
-    int Y[N];  // corresponding y-values
+    std::array<std::vector<double>, N> X;
+    std::array<int, N> Y{};  // corresponding y-values
 
     // generate sample points in the interval
     // [-range2/100 , (range2-1)/100]
     int range = 500;          // sample points full-range
     int range2 = range >> 1;  // sample points half-range
     for (int i = 0; i < N; i++) {
-        double x0 = ((std::rand() % range) - range2) / 100.f;
-        double x1 = ((std::rand() % range) - range2) / 100.f;
-        X[i] = {x0, x1};
+        double x0 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x1 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        X[i] = std::vector<double>({x0, x1});
         Y[i] = (x0 + 3. * x1) > -1 ? 1 : -1;
     }
 
@@ -262,8 +286,8 @@ void test2(double eta = 0.01) {
 
     int N_test_cases = 5;
     for (int i = 0; i < N_test_cases; i++) {
-        double x0 = ((std::rand() % range) - range2) / 100.f;
-        double x1 = ((std::rand() % range) - range2) / 100.f;
+        double x0 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x1 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
 
         int predict = ada.predict({x0, x1});
 
@@ -291,18 +315,18 @@ void test3(double eta = 0.01) {
 
     const int N = 100;  // number of sample points
 
-    std::vector<double> X[N];
-    int Y[N];  // corresponding y-values
+    std::array<std::vector<double>, N> X;
+    std::array<int, N> Y{};  // corresponding y-values
 
     // generate sample points in the interval
     // [-range2/100 , (range2-1)/100]
     int range = 200;          // sample points full-range
     int range2 = range >> 1;  // sample points half-range
     for (int i = 0; i < N; i++) {
-        double x0 = ((std::rand() % range) - range2) / 100.f;
-        double x1 = ((std::rand() % range) - range2) / 100.f;
-        double x2 = ((std::rand() % range) - range2) / 100.f;
-        X[i] = {x0, x1, x2, x0 * x0, x1 * x1, x2 * x2};
+        double x0 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x1 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x2 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        X[i] = std::vector<double>({x0, x1, x2, x0 * x0, x1 * x1, x2 * x2});
         Y[i] = ((x0 * x0) + (x1 * x1) + (x2 * x2)) <= 1.f ? 1 : -1;
     }
 
@@ -314,9 +338,9 @@ void test3(double eta = 0.01) {
 
     int N_test_cases = 5;
     for (int i = 0; i < N_test_cases; i++) {
-        double x0 = ((std::rand() % range) - range2) / 100.f;
-        double x1 = ((std::rand() % range) - range2) / 100.f;
-        double x2 = ((std::rand() % range) - range2) / 100.f;
+        double x0 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x1 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
+        double x2 = (static_cast<double>(std::rand() % range) - range2) / 100.f;
 
         int predict = ada.predict({x0, x1, x2, x0 * x0, x1 * x1, x2 * x2});
 
@@ -334,8 +358,9 @@ int main(int argc, char **argv) {
     std::srand(std::time(nullptr));  // initialize random number generator
 
     double eta = 0.1;  // default value of eta
-    if (argc == 2)     // read eta value from commandline argument if present
+    if (argc == 2) {   // read eta value from commandline argument if present
         eta = strtof(argv[1], nullptr);
+    }
 
     test1(eta);
 

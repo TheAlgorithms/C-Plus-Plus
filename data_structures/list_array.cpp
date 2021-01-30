@@ -3,32 +3,35 @@
  * @todo Add documentation
  * @warning The sorting algorithm is erroneous
  */
+#include <array>
 #include <iostream>
 
 struct list {
-    int data[50];
+    std::array<int, 50> data{};
     int top = 0;
     bool isSorted = false;
 
-    int BinarySearch(int *array, int first, int last, int x) {
+    int BinarySearch(const std::array<int, 50>& dataArr, int first, int last,
+                     int x) {
         if (last < first) {
             return -1;
         }
         int mid = (first + last) / 2;
-        if (array[mid] == x)
+        if (dataArr[mid] == x) {
             return mid;
-        else if (x < array[mid])
-            return (BinarySearch(array, first, mid - 1, x));
-        else if (x > array[mid])
-            return (BinarySearch(array, mid + 1, last, x));
+        } else if (x < dataArr[mid]) {
+            return (BinarySearch(dataArr, first, mid - 1, x));
+        } else if (x > dataArr[mid]) {
+            return (BinarySearch(dataArr, mid + 1, last, x));
+        }
 
         std::cerr << __func__ << ":" << __LINE__ << ": Undefined condition\n";
         return -1;
     }
 
-    int LinarSearch(int *array, int x) {
+    int LinearSearch(const std::array<int, 50>& dataArr, int x) const {
         for (int i = 0; i < top; i++) {
-            if (array[i] == x) {
+            if (dataArr[i] == x) {
                 return i;
             }
         }
@@ -37,12 +40,12 @@ struct list {
     }
 
     int Search(int x) {
-        int pos = -1;
+        int pos = 0;
 
         if (isSorted) {
             pos = BinarySearch(data, 0, top - 1, x);
         } else {
-            pos = LinarSearch(data, x);
+            pos = LinearSearch(data, x);
         }
 
         if (pos != -1) {
@@ -54,7 +57,7 @@ struct list {
     }
 
     void Sort() {
-        int i, j, pos;
+        int i = 0, j = 0, pos = 0;
         for (i = 0; i < top; i++) {
             int min = data[i];
             for (j = i + 1; j < top; j++) {
@@ -118,9 +121,11 @@ struct list {
 
 int main() {
     list L;
-    int choice;
-    int x;
+    int choice = 0;
+    int x = 0;
     do {
+        // Choices for operations on the list_array.
+        std::cout << "\n0.Exit";
         std::cout << "\n1.Insert";
         std::cout << "\n2.Delete";
         std::cout << "\n3.Search";
@@ -129,27 +134,31 @@ int main() {
         std::cout << "\n\nEnter Your Choice : ";
         std::cin >> choice;
         switch (choice) {
-        case 1:
-            std::cout << "\nEnter the element to be inserted : ";
-            std::cin >> x;
-            L.insert(x);
-            break;
-        case 2:
-            std::cout << "\nEnter the element to be removed : ";
-            std::cin >> x;
-            L.Remove(x);
-            break;
-        case 3:
-            std::cout << "\nEnter the element to be searched : ";
-            std::cin >> x;
-            L.Search(x);
-            break;
-        case 4:
-            L.Sort();
-            break;
-        case 5:
-            L.Show();
-            break;
+            case 0:
+                break;
+            case 1:
+                std::cout << "\nEnter the element to be inserted : ";
+                std::cin >> x;
+                L.insert(x);
+                break;
+            case 2:
+                std::cout << "\nEnter the element to be removed : ";
+                std::cin >> x;
+                L.Remove(x);
+                break;
+            case 3:
+                std::cout << "\nEnter the element to be searched : ";
+                std::cin >> x;
+                L.Search(x);
+                break;
+            case 4:
+                L.Sort();
+                break;
+            case 5:
+                L.Show();
+                break;
+            default:
+                std::cout << "\nplease enter valid option.";
         }
     } while (choice != 0);
     return 0;

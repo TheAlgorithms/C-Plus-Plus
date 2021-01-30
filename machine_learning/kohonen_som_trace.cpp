@@ -20,6 +20,7 @@
  */
 #define _USE_MATH_DEFINES  // required for MS Visual C++
 #include <algorithm>
+#include <array>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
@@ -71,12 +72,14 @@ int save_nd_data(const char *fname,
     for (int i = 0; i < num_points; i++) {
         // for each feature in the array
         for (int j = 0; j < num_features; j++) {
-            fp << X[i][j];             // print the feature value
-            if (j < num_features - 1)  // if not the last feature
-                fp << ",";             // suffix comma
+            fp << X[i][j];               // print the feature value
+            if (j < num_features - 1) {  // if not the last feature
+                fp << ",";               // suffix comma
+            }
         }
-        if (i < num_points - 1)  // if not the last row
-            fp << "\n";          // start a new line
+        if (i < num_points - 1) {  // if not the last row
+            fp << "\n";            // start a new line
+        }
     }
 
     fp.close();
@@ -100,9 +103,9 @@ namespace machine_learning {
 void update_weights(const std::valarray<double> &x,
                     std::vector<std::valarray<double>> *W,
                     std::valarray<double> *D, double alpha, int R) {
-    int j, k;
-    int num_out = W->size();      // number of SOM output nodes
-    int num_features = x.size();  // number of data features
+    int j = 0, k = 0;
+    int num_out = W->size();  // number of SOM output nodes
+    // int num_features = x.size();  // number of data features
 
 #ifdef _OPENMP
 #pragma omp for
@@ -117,7 +120,7 @@ void update_weights(const std::valarray<double> &x,
     // step 2:  get closest node i.e., node with snallest Euclidian distance to
     // the current pattern
     auto result = std::min_element(std::begin(*D), std::end(*D));
-    double d_min = *result;
+    // double d_min = *result;
     int d_min_idx = std::distance(std::begin(*D), result);
 
     // step 3a: get the neighborhood range
@@ -129,9 +132,10 @@ void update_weights(const std::valarray<double> &x,
 #ifdef _OPENMP
 #pragma omp for
 #endif
-    for (j = from_node; j < to_node; j++)
+    for (j = from_node; j < to_node; j++) {
         // update weights of nodes in the neighborhood
         (*W)[j] += alpha * (x - (*W)[j]);
+    }
 }
 
 /**
@@ -145,16 +149,16 @@ void update_weights(const std::valarray<double> &x,
 void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
                         std::vector<std::valarray<double>> *W,
                         double alpha_min) {
-    int num_samples = X.size();      // number of rows
-    int num_features = X[0].size();  // number of columns
-    int num_out = W->size();         // number of rows
+    int num_samples = X.size();  // number of rows
+    // int num_features = X[0].size();  // number of columns
+    int num_out = W->size();  // number of rows
     int R = num_out >> 2, iter = 0;
     double alpha = 1.f;
 
     std::valarray<double> D(num_out);
 
     // Loop alpha from 1 to slpha_min
-    for (; alpha > alpha_min; alpha -= 0.01, iter++) {
+    do {
         // Loop for each sample pattern in the data set
         for (int sample = 0; sample < num_samples; sample++) {
             // update weights for the current input pattern sample
@@ -162,9 +166,13 @@ void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
         }
 
         // every 10th iteration, reduce the neighborhood range
-        if (iter % 10 == 0 && R > 1)
+        if (iter % 10 == 0 && R > 1) {
             R--;
-    }
+        }
+
+        alpha -= 0.01;
+        iter++;
+    } while (alpha > alpha_min);
 }
 
 }  // namespace machine_learning
@@ -190,7 +198,7 @@ void test_circle(std::vector<std::valarray<double>> *data) {
     const double R = 0.75, dr = 0.3;
     double a_t = 0., b_t = 2.f * M_PI;  // theta random between 0 and 2*pi
     double a_r = R - dr, b_r = R + dr;  // radius random between R-dr and R+dr
-    int i;
+    int i = 0;
 
 #ifdef _OPENMP
 #pragma omp for
@@ -223,24 +231,26 @@ void test_circle(std::vector<std::valarray<double>> *data) {
  * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test1.svg)
  */
 void test1() {
-    int j, N = 500;
+    int j = 0, N = 500;
     int features = 2;
     int num_out = 50;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::valarray<double>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::valarray<double>(features);
 
 #ifdef _OPENMP
 #pragma omp for
 #endif
-            for (j = 0; j < features; j++)
+            for (j = 0; j < features; j++) {
                 // preallocate with random initial weights
                 W[i][j] = _random(-1, 1);
+            }
         }
     }
 
@@ -267,7 +277,7 @@ void test1() {
 void test_lamniscate(std::vector<std::valarray<double>> *data) {
     const int N = data->size();
     const double dr = 0.2;
-    int i;
+    int i = 0;
 
 #ifdef _OPENMP
 #pragma omp for
@@ -303,24 +313,26 @@ void test_lamniscate(std::vector<std::valarray<double>> *data) {
  * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test2.svg)
  */
 void test2() {
-    int j, N = 500;
+    int j = 0, N = 500;
     int features = 2;
     int num_out = 20;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::valarray<double>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::valarray<double>(features);
 
 #ifdef _OPENMP
 #pragma omp for
 #endif
-            for (j = 0; j < features; j++)
+            for (j = 0; j < features; j++) {
                 // preallocate with random initial weights
                 W[i][j] = _random(-1, 1);
+            }
         }
     }
 
@@ -347,18 +359,18 @@ void test2() {
 void test_3d_classes(std::vector<std::valarray<double>> *data) {
     const int N = data->size();
     const double R = 0.1;  // radius of cluster
-    int i;
+    int i = 0;
     const int num_classes = 8;
-    const double centres[][3] = {
+    const std::array<const std::array<double, 3>, num_classes> centres = {
         // centres of each class cluster
-        {.5, .5, .5},    // centre of class 0
-        {.5, .5, -.5},   // centre of class 1
-        {.5, -.5, .5},   // centre of class 2
-        {.5, -.5, -.5},  // centre of class 3
-        {-.5, .5, .5},   // centre of class 4
-        {-.5, .5, -.5},  // centre of class 5
-        {-.5, -.5, .5},  // centre of class 6
-        {-.5, -.5, -.5}  // centre of class 7
+        std::array<double, 3>({.5, .5, .5}),    // centre of class 0
+        std::array<double, 3>({.5, .5, -.5}),   // centre of class 1
+        std::array<double, 3>({.5, -.5, .5}),   // centre of class 2
+        std::array<double, 3>({.5, -.5, -.5}),  // centre of class 3
+        std::array<double, 3>({-.5, .5, .5}),   // centre of class 4
+        std::array<double, 3>({-.5, .5, -.5}),  // centre of class 5
+        std::array<double, 3>({-.5, -.5, .5}),  // centre of class 6
+        std::array<double, 3>({-.5, -.5, -.5})  // centre of class 7
     };
 
 #ifdef _OPENMP
@@ -400,24 +412,26 @@ void test_3d_classes(std::vector<std::valarray<double>> *data) {
  * output](https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/kohonen/test3.svg)
  */
 void test3() {
-    int j, N = 200;
+    int j = 0, N = 200;
     int features = 3;
     int num_out = 20;
     std::vector<std::valarray<double>> X(N);
     std::vector<std::valarray<double>> W(num_out);
     for (int i = 0; i < std::max(num_out, N); i++) {
         // loop till max(N, num_out)
-        if (i < N)  // only add new arrays if i < N
+        if (i < N) {  // only add new arrays if i < N
             X[i] = std::valarray<double>(features);
+        }
         if (i < num_out) {  // only add new arrays if i < num_out
             W[i] = std::valarray<double>(features);
 
 #ifdef _OPENMP
 #pragma omp for
 #endif
-            for (j = 0; j < features; j++)
+            for (j = 0; j < features; j++) {
                 // preallocate with random initial weights
                 W[i][j] = _random(-1, 1);
+            }
         }
     }
 

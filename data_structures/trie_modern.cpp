@@ -1,7 +1,7 @@
 /**
  * @file
  *
- * Copyright 2020 @author Anmol3299
+ * @author Anmol3299
  * \brief A basic implementation of trie class to store only lower-case strings.
  */
 #include <iostream>  // for io operations

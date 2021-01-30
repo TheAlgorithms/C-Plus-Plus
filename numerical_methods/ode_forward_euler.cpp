@@ -54,8 +54,8 @@
 void problem(const double &x, std::valarray<double> *y,
              std::valarray<double> *dy) {
     const double omega = 1.F;             // some const for the problem
-    dy[0][0] = y[0][1];                   // x dot
-    dy[0][1] = -omega * omega * y[0][0];  // y dot
+    (*dy)[0] = (*y)[1];                   // x dot // NOLINT
+    (*dy)[1] = -omega * omega * (*y)[0];  // y dot // NOLINT
 }
 
 /**
@@ -83,10 +83,10 @@ void exact_solution(const double &x, std::valarray<double> *y) {
  * @param[in,out] 	y	take \f$y_n\f$ and compute \f$y_{n+1}\f$
  * @param[in,out]	dy	compute \f$f\left(x_n,y_n\right)\f$
  */
-void forward_euler_step(const double dx, const double &x,
+void forward_euler_step(const double dx, const double x,
                         std::valarray<double> *y, std::valarray<double> *dy) {
     problem(x, y, dy);
-    y[0] += dy[0] * dx;
+    *y += *dy * dx;
 }
 
 /**
@@ -101,7 +101,7 @@ void forward_euler_step(const double dx, const double &x,
  */
 double forward_euler(double dx, double x0, double x_max,
                      std::valarray<double> *y, bool save_to_file = false) {
-    std::valarray<double> dy = y[0];
+    std::valarray<double> dy = *y;
 
     std::ofstream fp;
     if (save_to_file) {
@@ -122,9 +122,9 @@ double forward_euler(double dx, double x0, double x_max,
             // write to file
             fp << x << ",";
             for (int i = 0; i < L - 1; i++) {
-                fp << y[0][i] << ",";
+                fp << y[0][i] << ",";  // NOLINT
             }
-            fp << y[0][L - 1] << "\n";
+            fp << y[0][L - 1] << "\n";  // NOLINT
         }
 
         forward_euler_step(dx, x, y, &dy);  // perform integration
@@ -133,8 +133,9 @@ double forward_euler(double dx, double x0, double x_max,
     /* end of integration */
     std::clock_t t2 = std::clock();
 
-    if (fp.is_open())
+    if (fp.is_open()) {
         fp.close();
+    }
 
     return static_cast<double>(t2 - t1) / CLOCKS_PER_SEC;
 }
@@ -153,7 +154,7 @@ void save_exact_solution(const double &X0, const double &X_MAX,
                          const double &step_size,
                          const std::valarray<double> &Y0) {
     double x = X0;
-    std::valarray<double> y = Y0;
+    std::valarray<double> y(Y0);
 
     std::ofstream fp("exact.csv", std::ostream::out);
     if (!fp.is_open()) {
@@ -166,9 +167,9 @@ void save_exact_solution(const double &X0, const double &X_MAX,
     do {
         fp << x << ",";
         for (int i = 0; i < y.size() - 1; i++) {
-            fp << y[i] << ",";
+            fp << y[i] << ",";  // NOLINT
         }
-        fp << y[y.size() - 1] << "\n";
+        fp << y[y.size() - 1] << "\n";  // NOLINT
 
         exact_solution(x, &y);
 
@@ -186,10 +187,10 @@ void save_exact_solution(const double &X0, const double &X_MAX,
  * Main Function
  */
 int main(int argc, char *argv[]) {
-    double X0 = 0.f;                       /* initial value of x0 */
-    double X_MAX = 10.F;                   /* upper limit of integration */
-    std::valarray<double> Y0 = {1.f, 0.f}; /* initial value Y = y(x = x_0) */
-    double step_size;
+    double X0 = 0.f;                    /* initial value of x0 */
+    double X_MAX = 10.F;                /* upper limit of integration */
+    std::valarray<double> Y0{1.f, 0.f}; /* initial value Y = y(x = x_0) */
+    double step_size = NAN;
 
     if (argc == 1) {
         std::cout << "\nEnter the step size: ";
