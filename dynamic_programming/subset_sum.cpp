@@ -38,7 +38,7 @@ namespace dynamic_programming {
 
 /**
  * @namespace subset_sum_bottomup
- * @brief bottom up implementation of subset sum problem
+* @brief Bottom up implementation of [Subset Sum Problem](https://en.wikipedia.org/wiki/Subset_sum_problem)
  */
 namespace subset_sum_bottomup {
 /**
