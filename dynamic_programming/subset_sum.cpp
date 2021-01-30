@@ -86,7 +86,7 @@ bool subset_sum(const std::array<int, n> &set, const int sum) {
 
 /**
  * @namespace subset_sum_topdown
- * @brief top down implementation of subset sum problem
+ * @brief Top down implementation of [Subset Sum Problem](https://en.wikipedia.org/wiki/Subset_sum_problem)
  */
 namespace subset_sum_topdown {
 /**
