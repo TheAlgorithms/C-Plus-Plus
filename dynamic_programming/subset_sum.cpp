@@ -50,7 +50,7 @@ namespace subset_sum_bottomup {
  * @returns true if there is a subset of set with sum equal to given sum
  */
 template <size_t n>
-bool subset_sum(const std::array<int, n> &set, const int sum) {
+bool subset_sum(const std::array<int, n> &set, const int& sum) {
 	// The value of subset[i][j] will be true if
     // there is a subset of set[0..j-1] with sum
     // equal to i
