@@ -10,9 +10,10 @@
  */
 #include <algorithm>
 #include <iostream>
-#include <math.h>
+#include <cmath>
+#include <array>
 const int N = 1e6 + 5;
-int a[N], bucket[N], cnt[N];
+std::array<int, N> a, bucket, cnt;
 // Variable to represent block size. This is made global so compare() of sort
 // can use it.
 int bucket_size;
