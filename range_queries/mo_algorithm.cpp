@@ -10,6 +10,7 @@
  */
 #include <algorithm>
 #include <iostream>
+#include <math.h>
 const int N = 1e6 + 5;
 int a[N], bucket[N], cnt[N];
 // Variable to represent block size. This is made global so compare() of sort
@@ -53,10 +54,10 @@ bool mycmp(query x, query y) {
  * Main Function
  */
 int main() {
-	int n, t, i, j, k = 0;
+	int n = 0, t = 0, i = 0, j = 0, k = 0;
 	std::cin >> n;
 	for (i = 0; i < n; i++) {
-		std::cin >> a[i]
+		std::cin >> a[i];
 	}
 	// Find block size
 	bucket_size = ceil(sqrt(n));
@@ -100,7 +101,7 @@ int main() {
 	}
 	// Print unique elements in current range
 	for (i = 0; i < t; i++) {
-		std::cout << bucket[i] << endl;
+		std::cout << bucket[i] << std::endl;
 	}
 	return 0;
 }
