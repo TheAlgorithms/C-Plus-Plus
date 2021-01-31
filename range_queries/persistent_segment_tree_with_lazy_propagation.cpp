@@ -2,7 +2,6 @@
  * @file
  * @brief [Persistent segment tree with range updates (lazy
  * propagation)](https://en.wikipedia.org/wiki/Persistent_data_structure)
- *
  * @details
  * A normal segment tree facilitates making point updates and range queries in
  * logarithmic time. Lazy propagation preserves the logarithmic time with range
