@@ -49,7 +49,7 @@ namespace range_queries {
         /**
          * @brief Creating a new node with the same values of curr node
          * @param curr node that would be copied
-         * @return the new node
+         * @returns the new node
          */
         std::shared_ptr<Node> newKid(std::shared_ptr<Node> const &curr) {
             auto newNode = std::make_shared<Node>(Node());
@@ -65,7 +65,7 @@ namespace range_queries {
          * @param i the left index of the range that the passed node holds its sum
          * @param j the right index of the range that the passed node holds its sum
          * @param curr pointer to the node to be propagated
-         * @return void
+         * @returns void
          */
         void lazy(const int &i, const int &j, std::shared_ptr<Node> const &curr) {
             if (!curr->prop) {
@@ -85,7 +85,7 @@ namespace range_queries {
          * @brief Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum of the given range, set its pointers to the children, and set its value to the sum of the children's values
          * @param i the left index of the range that the created node holds its sum
          * @param j the right index of the range that the created node holds its sum
-         * @return pointer to the newly created node
+         * @returns pointer to the newly created node
          */
         std::shared_ptr<Node> construct(const int &i, const int &j) {
             auto newNode = std::make_shared<Node>(Node());
@@ -110,7 +110,7 @@ namespace range_queries {
          * @param r the right index of the range to be updated
          * @param value the value to be added to every element whose index x satisfies l<=x<=r
          * @param curr pointer to the current node, which has value = the sum of elements whose index x satisfies i<=x<=j
-         * @return pointer to the current newly created node
+         * @returns pointer to the current newly created node
          */
         std::shared_ptr<Node> update(const int &i, const int &j, const int &l, const int &r, const int &value, std::shared_ptr<Node> const &curr) {
             lazy(i, j, curr);
@@ -138,7 +138,7 @@ namespace range_queries {
          * @param l the left index of the range whose sum should be returned as a result
          * @param r the right index of the range whose sum should be returned as a result
          * @param curr pointer to the current node, which has value = the sum of elements whose index x satisfies i<=x<=j
-         * @return sum of elements whose index x satisfies l<=x<=r
+         * @returns sum of elements whose index x satisfies l<=x<=r
          */
         int64_t query(const int &i, const int &j, const int &l, const int &r, std::shared_ptr<Node> const &curr) {
             lazy(i, j, curr);
@@ -163,7 +163,7 @@ namespace range_queries {
         /**
          * @brief Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed in the pointers vector to have access to the original version if the segment tree is updated
          * @param vec vector whose values will be used to build the segment tree
-         * @return void
+         * @returns void
          */
         void construct(const std::vector<int> &vec) // the segment tree will be built from the values in "vec", "vec" is 0 indexed
         {
@@ -181,7 +181,7 @@ namespace range_queries {
          * @param l the left index of the range to be updated
          * @param r the right index of the range to be updated
          * @param value the value to be added to every element whose index x satisfies l<=x<=r
-         * @return void
+         * @returns void
          */
         void update(const int &l, const int &r, const int &value) // all elements from index "l" to index "r" would by updated by "value", "l" and "r" are 0 indexed
         {
@@ -193,7 +193,7 @@ namespace range_queries {
          * @param l the left index of the range whose sum should be returned as a result
          * @param r the right index of the range whose sum should be returned as a result
          * @param version the version to query on. If equals to 0, the original segment tree will be queried
-         * @return sum of elements whose index x satisfies l<=x<=r
+         * @returns sum of elements whose index x satisfies l<=x<=r
          */
         int64_t query(const int &l, const int &r, const int &version) // querying the range from "l" to "r" in a segment tree after "version" updates, "l" and "r" are 0 indexed
         {
@@ -202,7 +202,7 @@ namespace range_queries {
 
         /**
          * @brief Getting the number of versions after updates so far which is equal to the size of the pointers vector
-         * @return the number of versions
+         * @returns the number of versions
          */
         int size() // returns the number of segment trees (versions) , the number of updates done so far = returned value - 1 ,because one of the trees is the original segment tree
         {
@@ -211,7 +211,11 @@ namespace range_queries {
     };
 } // namespace range_queries
 
-void test() {
+/**
+ * @brief Test implementations
+ * @returns void
+ */
+static void test() {
     std::vector<int> arr = {-5, 2, 3, 11, -2, 7, 0, 1};
     range_queries::perSegTree tree;
     std::cout << "Elements before any updates are {";
@@ -249,10 +253,16 @@ void test() {
     std::cout << "Querying range sum on version 1 from index 3 to 5 = 4-9+0 = " << tree.query(3, 5, 1) << '\n';
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test(); // run self-test implementations
     return 0;
 }
+
+
 
 
 
