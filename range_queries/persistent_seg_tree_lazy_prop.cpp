@@ -154,7 +154,7 @@ namespace range_queries {
          * public methods that can be used directly from outside the class. They call the private functions that do all the work
          */
     public:
-        
+
         /**
          * @brief Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed in the pointers vector to have access to the original version if the segment tree is updated
          * @param vec vector whose values will be used to build the segment tree
@@ -257,12 +257,7 @@ static void test() {
  * @brief Main function
  * @returns 0 on exit
  */
-uint32_t main() {
+int main() {
     test(); // run self-test implementations
     return 0;
 }
-
-
-
-
-
