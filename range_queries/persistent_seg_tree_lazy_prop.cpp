@@ -208,7 +208,7 @@ class perSegTree {
     }
 
     /**
-     * @brief Doing range update by passing the left and right indices of the
+     * @brief Doing range update by passing the left and right indexes of the
      * range as well as the value to be added.
      * @param l the left index of the range to be updated
      * @param r the right index of the range to be updated
