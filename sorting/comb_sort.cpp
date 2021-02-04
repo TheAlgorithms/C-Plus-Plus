@@ -61,7 +61,7 @@ void CombSort(int *arr, int l, int r) {
         swapped = false;
 
         /// Compare all elements with current gap
-        for (int i = l; i <= r - gap; ++i) {
+        for (int i = l; i < r - gap; ++i) {
             if (arr[i] > arr[i + gap]) {
                 std::swap(arr[i], arr[i + gap]);
                 swapped = true;
