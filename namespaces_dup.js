@@ -92,9 +92,7 @@ var namespaces_dup =
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
-        [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ad0cfe2e54b1d3f9d0ca648265d917c6a", null ],
-        [ "cycleSort", "da/d87/cycle__sort2_8cpp.html#a4c52eee647a17095f4893f6258893e15", null ],
-        [ "swap", "da/d87/cycle__sort2_8cpp.html#af82f47c25011c54bd19ae9cd775e52c1", null ]
+        [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ad0cfe2e54b1d3f9d0ca648265d917c6a", null ]
       ] ],
       [ "inversion", null, [
         [ "countInversion", "d2/d26/count__inversions_8cpp.html#a3332498eabf6579ef059c0d0e9f4ec80", null ],
