@@ -122,17 +122,17 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"classes.html",
-"cpp/io/manip/ends.html",
-"cpp/string/wide/towlower.html",
-"d1/def/classdata__structures_1_1linked__list_1_1list.html#a9c73f393e984f93f33852334d1a04be0",
-"d4/d3e/n__queens_8cpp.html",
-"d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079",
-"d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa",
-"d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546",
-"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0",
-"dd/d2f/class_trie.html#a58b359fad33ca0064bd75a0d41a7b66d",
-"dir_3343723ae086de42ee4ca9774da3a13f.html"
+"",
+"cpp/io/manip/endl.html",
+"cpp/string/wide/towctrans.html",
+"d1/def/classdata__structures_1_1linked__list_1_1list.html#a50e209b55b83622254177050945e7826",
+"d4/d39/group__open__addressing.html",
+"d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168",
+"d7/d35/matrix__exponentiation_8cpp.html#aca7d5718ab8c38506adb3bef2469b319",
+"d8/dee/avltree_8cpp.html#a8286388b0743a716145639df3a33e541",
+"da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f",
+"dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49",
+"df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

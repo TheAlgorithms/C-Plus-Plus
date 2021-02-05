@@ -5,6 +5,10 @@ var namespacegraph =
       [ "Bidijkstra", "d7/d07/bidirectional__dijkstra_8cpp.html#aa3848a7213562b47084585499d3642a5", null ],
       [ "Shortest_Path_Distance", "d7/d07/bidirectional__dijkstra_8cpp.html#ab322409d0015c023d91c67b5b2679257", null ]
     ] ],
+    [ "depth_first_search", null, [
+      [ "addEdge", "da/d4b/depth__first__search__with__stack_8cpp.html#a7511fcdb330b3ab599ff9e15229ae068", null ],
+      [ "dfs", "da/d4b/depth__first__search__with__stack_8cpp.html#ae198aeaad22ccd56712b7380bd62f777", null ]
+    ] ],
     [ "disjoint_union", null, [
       [ "find_set", "d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e", null ],
       [ "make_set", "d8/d99/connected__components__with__dsu_8cpp.html#ae91ed94113c56191b75fe45f688d6e62", null ],

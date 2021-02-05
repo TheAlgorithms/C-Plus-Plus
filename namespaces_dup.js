@@ -36,6 +36,7 @@ var namespaces_dup =
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
     [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
+    [ "depth_first_search", "d8/da7/namespacedepth__first__search.html", null ],
     [ "disjoint_union", "de/db4/namespacedisjoint__union.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", null ],

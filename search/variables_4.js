@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['epsilon_4925',['EPSILON',['../de/dd3/newton__raphson__method_8cpp.html#a75f355966e0a97665eaf5a4c79baa7af',1,'newton_raphson_method.cpp']]],
-  ['eta_4926',['eta',['../d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda',1,'machine_learning::adaline']]]
+  ['data_4981',['data',['../d5/da1/structnode.html#a42309387b3fa0237ec200c025071ad37',1,'node::data()'],['../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243',1,'data():&#160;hash_search.cpp']]],
+  ['dist_4982',['dist',['../d8/d69/classgraph_1_1_h_k_graph.html#a6a0228bbba3818447fcf6b56128b552a',1,'graph::HKGraph']]]
 ];

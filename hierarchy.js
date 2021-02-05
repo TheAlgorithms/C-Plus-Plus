@@ -1,6 +1,8 @@
 var hierarchy =
 [
     [ "machine_learning::adaline", "d6/d30/classmachine__learning_1_1adaline.html", null ],
+    [ "binary_search_tree< T >", "d9/dde/classbinary__search__tree.html", null ],
+    [ "binary_search_tree< T >::bst_node", "dd/db6/structbinary__search__tree_1_1bst__node.html", null ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
     [ "compare", "d1/db3/structcompare.html", null ],
@@ -43,8 +45,8 @@ var hierarchy =
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
     [ "Point", "d8/dc8/struct_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "queue< Kind >", "db/da9/classqueue.html", null ],
+    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "data_structures::queue_using_array::Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
