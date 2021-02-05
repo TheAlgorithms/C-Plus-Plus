@@ -14,6 +14,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "fibonacci.cpp", "d9/d89/fibonacci_8cpp.html", "d9/d89/fibonacci_8cpp" ],
     [ "fibonacci_fast.cpp", "d4/d32/fibonacci__fast_8cpp.html", "d4/d32/fibonacci__fast_8cpp" ],
     [ "fibonacci_large.cpp", "de/de4/fibonacci__large_8cpp.html", "de/de4/fibonacci__large_8cpp" ],
+    [ "fibonacci_matrix_exponentiation.cpp", "da/dc9/fibonacci__matrix__exponentiation_8cpp.html", "da/dc9/fibonacci__matrix__exponentiation_8cpp" ],
     [ "fibonacci_sum.cpp", "de/dc3/fibonacci__sum_8cpp.html", "de/dc3/fibonacci__sum_8cpp" ],
     [ "gcd_iterative_euclidean.cpp", "d4/da0/gcd__iterative__euclidean_8cpp.html", "d4/da0/gcd__iterative__euclidean_8cpp" ],
     [ "gcd_of_n_numbers.cpp", "d1/d11/gcd__of__n__numbers_8cpp.html", "d1/d11/gcd__of__n__numbers_8cpp" ],

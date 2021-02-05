@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['jarvis_1024',['jarvis',['../d5/da7/namespacejarvis.html',1,'']]],
-  ['jarvis_5falgorithm_2ecpp_1025',['jarvis_algorithm.cpp',['../d4/d8d/jarvis__algorithm_8cpp.html',1,'']]],
-  ['jmp_5fbuf_1026',['jmp_buf',['http://en.cppreference.com/w/cpp/utility/program/jmp_buf.html',0,'std']]],
-  ['join_1027',['join',['http://en.cppreference.com/w/cpp/thread/thread/join.html',0,'std::thread']]],
-  ['joinable_1028',['joinable',['http://en.cppreference.com/w/cpp/thread/thread/joinable.html',0,'std::thread']]],
-  ['jump_5fsearch_2ecpp_1029',['jump_search.cpp',['../d2/d22/jump__search_8cpp.html',1,'']]],
-  ['jumpgame_2ecpp_1030',['jumpgame.cpp',['../df/d64/jumpgame_8cpp.html',1,'']]],
-  ['jumpsearch_1031',['jumpSearch',['../d2/d22/jump__search_8cpp.html#ab49fd8f401bfc71f63b74711390cccf0',1,'jump_search.cpp']]]
+  ['jarvis_1027',['jarvis',['../d5/da7/namespacejarvis.html',1,'']]],
+  ['jarvis_5falgorithm_2ecpp_1028',['jarvis_algorithm.cpp',['../d4/d8d/jarvis__algorithm_8cpp.html',1,'']]],
+  ['jmp_5fbuf_1029',['jmp_buf',['http://en.cppreference.com/w/cpp/utility/program/jmp_buf.html',0,'std']]],
+  ['join_1030',['join',['http://en.cppreference.com/w/cpp/thread/thread/join.html',0,'std::thread']]],
+  ['joinable_1031',['joinable',['http://en.cppreference.com/w/cpp/thread/thread/joinable.html',0,'std::thread']]],
+  ['jump_5fsearch_2ecpp_1032',['jump_search.cpp',['../d2/d22/jump__search_8cpp.html',1,'']]],
+  ['jumpgame_2ecpp_1033',['jumpgame.cpp',['../df/d64/jumpgame_8cpp.html',1,'']]],
+  ['jumpsearch_1034',['jumpSearch',['../d2/d22/jump__search_8cpp.html#ab49fd8f401bfc71f63b74711390cccf0',1,'jump_search.cpp']]]
 ];
