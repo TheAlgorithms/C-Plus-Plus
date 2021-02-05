@@ -55,6 +55,7 @@ var namespaces_dup =
     [ "linear_algebra", "d3/d78/namespacelinear__algebra.html", null ],
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", "d8/d89/namespacelinear__probing" ],
     [ "linked_list", "d3/db0/namespacelinked__list.html", null ],
+    [ "list_array", "d9/d27/namespacelist__array.html", null ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
     [ "math", "dd/d47/namespacemath.html", "dd/d47/namespacemath" ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],

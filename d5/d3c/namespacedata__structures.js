@@ -5,6 +5,9 @@ var namespacedata__structures =
       [ "list", "d1/def/classdata__structures_1_1linked__list_1_1list.html", "d1/def/classdata__structures_1_1linked__list_1_1list" ],
       [ "isDigit", "da/dc3/linked__list_8cpp.html#ab1a372fe1e605bc0e0987dcdd7361180", null ]
     ] ],
+    [ "list_array", null, [
+      [ "list", "d5/dab/structdata__structures_1_1list__array_1_1list.html", "d5/dab/structdata__structures_1_1list__array_1_1list" ]
+    ] ],
     [ "queue_using_array", null, [
       [ "Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array" ]
     ] ],

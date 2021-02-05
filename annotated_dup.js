@@ -8,6 +8,9 @@ var annotated_dup =
         [ "link", "de/d9d/classdata__structures_1_1linked__list_1_1link.html", "de/d9d/classdata__structures_1_1linked__list_1_1link" ],
         [ "list", "d1/def/classdata__structures_1_1linked__list_1_1list.html", "d1/def/classdata__structures_1_1linked__list_1_1list" ]
       ] ],
+      [ "list_array", null, [
+        [ "list", "d5/dab/structdata__structures_1_1list__array_1_1list.html", "d5/dab/structdata__structures_1_1list__array_1_1list" ]
+      ] ],
       [ "queue_using_array", null, [
         [ "Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array" ]
       ] ],
@@ -94,8 +97,8 @@ var annotated_dup =
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
+    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
