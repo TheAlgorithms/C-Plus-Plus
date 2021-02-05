@@ -14,6 +14,10 @@ var namespacemath =
     [ "ncr_modulo_p", null, [
       [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
     ] ],
+    [ "vector_cross", null, [
+      [ "cross", "df/d66/vector__cross__product_8cpp.html#abed307975124243d63fe2e118254defe", null ],
+      [ "mag", "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8", null ]
+    ] ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],
     [ "largestPower", "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f", null ],
     [ "lcmSum", "dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244", null ],

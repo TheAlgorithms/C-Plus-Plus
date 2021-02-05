@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md64", null ],
-      [ "Features", "index.html#autotoc_md65", null ],
-      [ "Documentation", "index.html#autotoc_md66", null ],
-      [ "Contributions", "index.html#autotoc_md67", null ]
+      [ "Overview", "index.html#autotoc_md65", null ],
+      [ "Features", "index.html#autotoc_md66", null ],
+      [ "Documentation", "index.html#autotoc_md67", null ],
+      [ "Contributions", "index.html#autotoc_md68", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -122,17 +122,17 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"cpp/io/manip/fixed.html",
-"cpp/string/wide/wcscat.html",
-"d1/def/classdata__structures_1_1linked__list_1_1list.html#af0981944884c6dc19361ff67451261c9",
-"d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160",
-"d5/da1/structnode.html#a0ff89d3a408eee8a4ce6a69bfe0ddecf",
-"d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338",
-"d8/df0/queue__using__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d0d/prime__factorization_8cpp.html",
-"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57",
-"functions.html"
+"annotated.html",
+"cpp/iterator/distance.html",
+"cpp/thread/lock.html",
+"d2/d22/jump__search_8cpp.html",
+"d4/d83/sum__of__digits_8cpp.html#a0283886819c7c140a023582b7269e2d0",
+"d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html",
+"d7/d83/trie__tree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a3c75bf5770790f8eba8cc92227b5400c",
+"db/d71/quadratic__probing__hash__table_8cpp.html#a90f9d8a71e3f148b65bcc0c1c8a49c70",
+"dd/d4f/class_solution.html#a29d19d87d54fe43d3f22221b8fe1b0bc",
+"functions_func_u.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -43,5 +43,6 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "sqrt_double.cpp", "da/d24/sqrt__double_8cpp.html", "da/d24/sqrt__double_8cpp" ],
     [ "string_fibonacci.cpp", "de/d47/string__fibonacci_8cpp.html", "de/d47/string__fibonacci_8cpp" ],
     [ "sum_of_binomial_coefficient.cpp", "d4/d9d/sum__of__binomial__coefficient_8cpp.html", "d4/d9d/sum__of__binomial__coefficient_8cpp" ],
-    [ "sum_of_digits.cpp", "d4/d83/sum__of__digits_8cpp.html", "d4/d83/sum__of__digits_8cpp" ]
+    [ "sum_of_digits.cpp", "d4/d83/sum__of__digits_8cpp.html", "d4/d83/sum__of__digits_8cpp" ],
+    [ "vector_cross_product.cpp", "df/d66/vector__cross__product_8cpp.html", "df/d66/vector__cross__product_8cpp" ]
 ];

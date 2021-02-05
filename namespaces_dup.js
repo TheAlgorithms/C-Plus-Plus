@@ -701,6 +701,7 @@ var namespaces_dup =
     [ "strings", "df/dcb/namespacestrings.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
     [ "util_functions", "d3/d17/namespaceutil__functions.html", null ],
+    [ "vector_cross", "d4/d91/namespacevector__cross.html", null ],
     [ "vigenere", "d6/da2/namespacevigenere.html", null ],
     [ "wiggle_sort", "d0/d52/namespacewiggle__sort.html", null ],
     [ "word_break", "d6/d53/namespaceword__break.html", null ],
