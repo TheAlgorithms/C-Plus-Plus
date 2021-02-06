@@ -2,13 +2,13 @@
  * @file
  * @brief Program to calculate binomial coefficients.
  *
- * @author astron
+ * @author [astronmax](https://github.com/astronmax)
  */
 
 #include <cassert>
-#include <cmath>
 #include <cstdint>
 #include <cstdio>
+#include <cstdlib>
 
 /**
  * @brief Function to calculate binomial coefficients.
