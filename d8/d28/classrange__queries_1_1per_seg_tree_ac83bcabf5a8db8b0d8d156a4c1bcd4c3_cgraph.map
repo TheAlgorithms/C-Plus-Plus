@@ -1,0 +1,5 @@
+<map id="range_queries::perSegTree::construct" name="range_queries::perSegTree::construct">
+<area shape="rect" id="node1" title="Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed i..." alt="" coords="5,23,184,65"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="232,5,360,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="238,56,354,83"/>
+</map>

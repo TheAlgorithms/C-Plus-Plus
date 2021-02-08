@@ -127,12 +127,12 @@ var NAVTREEINDEX =
 "cpp/string/wide/towctrans.html",
 "d1/def/classdata__structures_1_1linked__list_1_1list.html#a50e209b55b83622254177050945e7826",
 "d4/d39/group__open__addressing.html",
-"d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168",
-"d7/d35/matrix__exponentiation_8cpp.html#aca7d5718ab8c38506adb3bef2469b319",
-"d8/dee/avltree_8cpp.html#a8286388b0743a716145639df3a33e541",
-"da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f",
-"dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49",
-"df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179"
+"d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924",
+"d7/d35/matrix__exponentiation_8cpp.html",
+"d8/dab/sparse__table_8cpp.html#ad71ae7840af3a52e7ee56186bb0c3063",
+"da/d9a/class_graph.html#ac3e58f4a0c8c65befe6629f4e1b71142",
+"dc/dd9/strand__sort_8cpp.html",
+"df/d42/binary__search__tree2_8cpp.html#a8c882f43e1e52948a7841a8bfb091350"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
