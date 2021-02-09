@@ -2,7 +2,7 @@
 
 struct node {
     int data;
-    struct node *next;
+    node *next;
 };
 class Queue {
     node *front;
