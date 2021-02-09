@@ -2,7 +2,7 @@
 
 struct node {
     int data;
-    struct node *next;
+    node *next;
 };
 class Queue {
     node *front;
@@ -24,6 +24,7 @@ class Queue {
         rear = nn;
     }
     void enqueue(int val) {
+        // first time front and rear are NULL so we need to create node and start pushing
         if (front == NULL || rear == NULL) {
             createNode(val);
         } else {
