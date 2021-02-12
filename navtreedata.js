@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md66", null ],
-      [ "Features", "index.html#autotoc_md67", null ],
-      [ "Documentation", "index.html#autotoc_md68", null ],
-      [ "Contributions", "index.html#autotoc_md69", null ]
+      [ "Overview", "index.html#autotoc_md67", null ],
+      [ "Features", "index.html#autotoc_md68", null ],
+      [ "Documentation", "index.html#autotoc_md69", null ],
+      [ "Contributions", "index.html#autotoc_md70", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -126,13 +126,13 @@ var NAVTREEINDEX =
 "cpp/io/manip/endl.html",
 "cpp/string/wide/towctrans.html",
 "d1/def/classdata__structures_1_1linked__list_1_1list.html#a50e209b55b83622254177050945e7826",
-"d4/d39/group__open__addressing.html",
-"d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924",
-"d7/d35/matrix__exponentiation_8cpp.html",
-"d8/dab/sparse__table_8cpp.html#ad71ae7840af3a52e7ee56186bb0c3063",
-"da/d9a/class_graph.html#ac3e58f4a0c8c65befe6629f4e1b71142",
-"dc/dd9/strand__sort_8cpp.html",
-"df/d42/binary__search__tree2_8cpp.html#a8c882f43e1e52948a7841a8bfb091350"
+"d4/d38/power__of__two_8cpp.html",
+"d5/d91/namespacesorting.html#a2f6a7a66934f345f86038a280234e706",
+"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648",
+"d8/dab/sparse__table_8cpp.html#a932816c3de9e5ad122b180de60978e8f",
+"da/d9a/class_graph.html#aa0aaff1a0c13bdf209ea40b83ac01ae6",
+"dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21",
+"df/d39/interpolation__search2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

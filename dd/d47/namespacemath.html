@@ -116,6 +116,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6e2dff75c5de70455b90c799d6ad6967"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967">n_choose_r</a> (T n, T r)</td></tr>
 <tr class="memdesc:a6e2dff75c5de70455b90c799d6ad6967"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the function implementation of \( \binom{n}{r} \).  <a href="../../dd/d47/namespacemath.html#a6e2dff75c5de70455b90c799d6ad6967">More...</a><br /></td></tr>
 <tr class="separator:a6e2dff75c5de70455b90c799d6ad6967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">power_of_two</a> (int n)</td></tr>
+<tr class="memdesc:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to test above algorithm.  <a href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">More...</a><br /></td></tr>
+<tr class="separator:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea">binomialCoeffSum</a> (uint64_t n)</td></tr>
 <tr class="separator:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,6 +126,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 <p>Math algorithms.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>for IO operations</p>
 <p>for io operations</p>
 <p>for assert</p>
@@ -133,6 +137,7 @@ Functions</h2></td></tr>
 <p>for assert</p>
 <p>Mathematical algorithms</p>
 <p>for assert for io operations</p>
+<p>Mathematical algorithms</p>
 <p>Mathematical algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae1ca505751f5a6d3977b86372cfe75ea"></a>
@@ -444,6 +449,57 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 
+</div>
+</div>
+<a id="a89ab7d6c3e3ee72a8cbaa85127986185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ab7d6c3e3ee72a8cbaa85127986185">&#9670;&nbsp;</a></span>power_of_two()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void math::power_of_two </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to test above algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>description </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>This function finds whether a number is power of 2 or not </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>value for which we want to check prints the result, as "Yes, the number n is a power of 2" or "No, the number is not a power of 2" without quotes</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>result stores the bitwise and of n and n-1</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                         {<span class="comment"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * This function finds whether a number is power of 2 or not</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * @param n value for which we want to check</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * prints the result, as &quot;Yes, the number n is a power of 2&quot; or</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * &quot;No, the number is not a power of 2&quot; without quotes</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     */</span><span class="comment"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    /// result stores the</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    /// bitwise and of n and n-1</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = n &amp; (n - 1);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (result == 0) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Yes, the number &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; is a power of 2&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;No, the number &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; is not a power of 2&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"d5/d91/namespacesorting.html#a2f6a7a66934f345f86038a280234e706":[8,0,56,16],
+"d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1":[8,0,56,8],
+"d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f":[8,0,56,20],
 "d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924":[8,0,56,23],
 "d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178":[8,0,56,17],
 "d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa":[8,0,56,22],
@@ -231,8 +234,8 @@ var NAVTREEINDEX5 =
 "d7/d07/bidirectional__dijkstra_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e":[10,0,5,0,4],
 "d7/d07/bidirectional__dijkstra_8cpp.html#a6f92fe022b7e5d453f7257d763b6f3e2":[8,0,16,0,0],
 "d7/d07/bidirectional__dijkstra_8cpp.html#a6f92fe022b7e5d453f7257d763b6f3e2":[10,0,5,0,0],
-"d7/d07/bidirectional__dijkstra_8cpp.html#aa3848a7213562b47084585499d3642a5":[8,0,16,0,1],
 "d7/d07/bidirectional__dijkstra_8cpp.html#aa3848a7213562b47084585499d3642a5":[10,0,5,0,1],
+"d7/d07/bidirectional__dijkstra_8cpp.html#aa3848a7213562b47084585499d3642a5":[8,0,16,0,1],
 "d7/d07/bidirectional__dijkstra_8cpp.html#ab322409d0015c023d91c67b5b2679257":[8,0,16,0,2],
 "d7/d07/bidirectional__dijkstra_8cpp.html#ab322409d0015c023d91c67b5b2679257":[10,0,5,0,3],
 "d7/d07/bidirectional__dijkstra_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,5,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "d7/d24/nqueen__print__all__solutions_8cpp.html#acc809c055f335011de0d9030034c7108":[8,0,1,1,1],
 "d7/d24/nqueen__print__all__solutions_8cpp.html#acc809c055f335011de0d9030034c7108":[10,0,0,5,2],
 "d7/d24/nqueen__print__all__solutions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,0,5,1],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648":[8,0,1,1,0],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648":[10,0,0,5,0],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aebd5e11fab6dab282efccfb61beb0bd9":[8,0,1,1,2],
-"d7/d24/nqueen__print__all__solutions_8cpp.html#aebd5e11fab6dab282efccfb61beb0bd9":[10,0,0,5,3]
+"d7/d24/nqueen__print__all__solutions_8cpp.html#aea343d8a72a39c9a4c0fbcbc362f2648":[10,0,0,5,0]
 };
