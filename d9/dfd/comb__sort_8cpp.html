@@ -196,7 +196,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        swapped = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">        /// Compare all elements with current gap</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = l; i &lt;= r - gap; ++i) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = l; i &lt; r - gap; ++i) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (arr[i] &gt; arr[i + gap]) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[i + gap]);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                swapped = <span class="keyword">true</span>;</div>
