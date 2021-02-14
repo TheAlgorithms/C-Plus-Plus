@@ -131,6 +131,7 @@
 ## Math
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
+  * [Binomial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binomial.cpp)
   * [Check Amicable Pair](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_amicable_pair.cpp)
   * [Check Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_factorial.cpp)
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/check_prime.cpp)
