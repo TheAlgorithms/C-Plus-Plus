@@ -31,6 +31,7 @@ var namespaces_dup =
       [ "solveSudoku", "db/dc0/namespacebacktracking.html#a2b98ee79cdbc02ffd7b1f786f9696892", null ]
     ] ],
     [ "bidirectional_dijkstra", "d4/d13/namespacebidirectional__dijkstra.html", null ],
+    [ "bit_manipulation", "d7/d81/namespacebit__manipulation.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
@@ -45,6 +46,7 @@ var namespaces_dup =
     [ "geometry", "d5/d5f/namespacegeometry.html", "d5/d5f/namespacegeometry" ],
     [ "gram_schmidt", "d4/d0f/namespacegram__schmidt.html", null ],
     [ "graph", "df/dce/namespacegraph.html", "df/dce/namespacegraph" ],
+    [ "hamming_distance", "d4/d1c/namespacehamming__distance.html", null ],
     [ "heavy_light_decomposition", "db/d6f/namespaceheavy__light__decomposition.html", null ],
     [ "horspool", "d5/d02/namespacehorspool.html", null ],
     [ "inversion", "d9/d13/namespaceinversion.html", null ],
