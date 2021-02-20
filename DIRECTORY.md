@@ -203,6 +203,7 @@
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
+  * [Trie Multiple Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/trie_multiple_search.cpp)
   * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_2_arrays.cpp)
 
 ## Others
