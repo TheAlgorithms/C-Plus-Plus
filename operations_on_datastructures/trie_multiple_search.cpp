@@ -380,6 +380,10 @@ void Tnode ::SearchFreqSuggestions(string key) {
     return;
 }
 
+/**
+ * Main Function
+ * @return 0 on exit
+ */
 int main(int argc, char const* argv[]) {
     Tnode* root = new Tnode();
     vector<string> inputs = {"abcde", "sss",   "ssss",  "ssst",   "sssu",
@@ -398,7 +402,9 @@ int main(int argc, char const* argv[]) {
 
     root->SearchSuggestions("tutuvs");
 
-    root->SearchFreqSuggestions("tu");
+    root->SearchFreqSuggestions(
+        "tu");  // The top 3 frequent entries with prefix tu are tutu, tutuv &
+                // tutuvs respectively
     root->SearchSuggestions(
         "");  // Empty search to list all the entries in the trie
     return 0;
