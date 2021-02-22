@@ -64,10 +64,10 @@ class Tnode {
     void SearchSuggestions(const std::string &key);
     void SuggestFreqAutocomplete(
         Tnode *new_root, const std::string &prefix,
-        std::priority_queue<std::pair<int, std::string> > &suggestions);
+        std::priority_queue<std::pair<int, std::string> > *suggestions);
     void SearchFreqSuggestions(const std::string &key);
     void SelectionTop_3(
-        std::priority_queue<std::pair<int, std::string> > &suggestions);
+        std::priority_queue<std::pair<int, std::string> > *suggestions);
 
     // To free up the dynamically allocated objects
     ~Tnode() {
@@ -78,7 +78,7 @@ class Tnode {
             }
         }
     }
-};
+};  // NOLINT
 
 /**
  * Insert : Function to insert a word in the trie
@@ -133,7 +133,7 @@ void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
 
 void Tnode ::Delete(std::string entry) {
     Tnode *cur_pos = this,
-          *delete_from = nullptr;  // Current pointer pointing to root
+          *delete_from = this;  // Current pointer pointing to root
     int letter_index = 0, delete_from_index = 0, i = 0, n = entry.size();
 
     for (i = 0; i < n; i++) {
@@ -281,6 +281,8 @@ void Tnode ::SearchSuggestions(const std::string &key) {
         (cur_pos->frequency)++;
     }
 
+    (void)prev_pos;  // Idiom to ignore previous pointer
+
     // Call for suggestions when the search key is present as an entry/a prefix
     // in the trie
     SuggestAutocomplete(cur_pos, prefix);
@@ -296,13 +298,13 @@ void Tnode ::SearchSuggestions(const std::string &key) {
  * heapified based on frequency
  */
 void Tnode ::SelectionTop_3(
-    std::priority_queue<std::pair<int, std::string> > &suggestions) {
+    std::priority_queue<std::pair<int, std::string> > *suggestions) {
     // Display Either top 3 or total number of suggestions, whichever is smaller
-    int n = suggestions.size(), Top = 0;
+    int n = suggestions->size(), Top = 0;
     Top = n < 3 ? n : 3;
     while (Top--) {
-        std::cout << suggestions.top().second << std::endl;
-        suggestions.pop();
+        std::cout << suggestions->top().second << std::endl;
+        suggestions->pop();
     }
 }
 
@@ -317,15 +319,15 @@ void Tnode ::SelectionTop_3(
  */
 void Tnode ::SuggestFreqAutocomplete(
     Tnode *new_root, const std::string &prefix,
-    std::priority_queue<std::pair<int, std::string> > &suggestions) {
+    std::priority_queue<std::pair<int, std::string> > *suggestions) {
     int i = 0;
     for (i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
         if (new_root->english[i] != nullptr) {
             // Add to sugestions only if it's a valid complete entry and not
             // just a prefix
             if (new_root->english[i]->endOfWord) {
-                suggestions.push(std::make_pair(new_root->english[i]->frequency,
-                                                prefix + char(i + 97)));
+                suggestions->push(std::make_pair(
+                    new_root->english[i]->frequency, prefix + char(i + 97)));
             }
 
             SuggestFreqAutocomplete(new_root->english[i], prefix + char(i + 97),
@@ -353,6 +355,9 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
         suggestions;  // max heap to store (frequency, word) in descending order
                       // of freq
 
+    std::priority_queue<std::pair<int, std::string> > *Suggestions =
+        &suggestions;
+
     for (auto &i : key) {
         letter_index = tolower(i) - 97;
         prev_pos = cur_pos;  // Previous pointer updated to point to the last
@@ -361,9 +366,9 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
         // When the node for the character does not exist, longest prefix has
         // been determined and SuggestFreqAutocomplete is called
         if (cur_pos->english[letter_index] == nullptr) {
-            SuggestFreqAutocomplete(prev_pos, prefix, suggestions);
+            SuggestFreqAutocomplete(prev_pos, prefix, Suggestions);
             // To display the top 3 results
-            SelectionTop_3(suggestions);
+            SelectionTop_3(Suggestions);
             std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
                       << std::endl;
             return;
@@ -377,11 +382,14 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
         (cur_pos->frequency)++;
         std::cout << key << std::endl;
     }
+
+    (void)prev_pos;  // Idiom to ignore previous pointer
+
     // Call for Suggestions when the search key is present as an entry/a prefix
     // in the trie
-    SuggestFreqAutocomplete(cur_pos, prefix, suggestions);
+    SuggestFreqAutocomplete(cur_pos, prefix, Suggestions);
     // Display the top 3 results
-    SelectionTop_3(suggestions);
+    SelectionTop_3(Suggestions);
 
     std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
               << std::endl;
