@@ -226,8 +226,9 @@ bool Tnode ::SearchPresence(const std::string &key) {
     if (cur_pos->endOfWord) {
         (cur_pos->frequency)++;
         return true;
-    } else
+    } else {
         return false;
+    }
 }
 
 /**
