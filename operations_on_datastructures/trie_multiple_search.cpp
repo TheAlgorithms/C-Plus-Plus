@@ -1,25 +1,35 @@
 /**
  * @file
- * @brief Trie datastructure with search variants
+ * @brief Trie datastructure with search
+ * variants(https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
  * @details
  * This provides multiple variants of search functions
  * on a trie structure utilizing STL. The trie is valid
  * for only English alphabets.
- * @author Ghanashyam (https://github.com/g-s-k-zoro)
+ * @author [Ghanashyam](https://github.com/g-s-k-zoro)
  */
 
-#include <cassert>
-#include <cctype>
-#include <cstring>
-#include <iostream>
-#include <queue>
-#include <vector>
+#include <cassert>   //Fir testing
+#include <cctype>    //For case manipulation of alphabets
+#include <cstring>   //For string operations
+#include <iostream>  //for IO Operations
+#include <queue>     //for std::priority_queue
+#include <vector>    //for std::vector
 /**
- *@brief Class defining the structure of trie node and containing the methods to
- *perform operations on them
+ * @namespace operations_on_datastructures
+ * @brief Operations on data structures
+ */
+namespace operations_on_datastructures {
+/**
+ * @namespace trie_operations
+ * @brief Functions for Trie Multiple Search implementation.
  */
 namespace trie_operations {
 
+/**
+ * @brief Class defining the structure of trie node and containing the methods
+ * to perform operations on them.
+ */
 class Tnode {
  private:
     static constexpr int ENGLISH_ALPHABET_SIZE = 26;
@@ -408,13 +418,14 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
     return;
 }
 }  // namespace trie_operations
+}  // namespace operations_on_datastructures
 
 /**
  * TestOperations : Function to test a simple search before and after deleting
  * an entry. And to test out the multiple variants of search.
  */
 void test() {
-    auto root = new trie_operations::Tnode();
+    auto root = new operations_on_datastructures::trie_operations::Tnode();
     std::vector<std::string> inputs = {
         "abcde", "sss",    "ssss",  "ssst", "sssu", "sssv",
         "sst",   "ssts",   "sstt",  "sstu", "tutu", "tutuv",
@@ -449,11 +460,13 @@ void test() {
 }
 
 /**
- * Main Function
- * @return 0 on exit
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
  */
 int main(int argc, char const *argv[]) {
-    test();
+    test();  // run self-test implementations
 
     return 0;
 }
