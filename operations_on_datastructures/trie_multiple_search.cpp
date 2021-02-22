@@ -8,25 +8,23 @@
  * @author Ghanashyam (https://github.com/g-s-k-zoro)
  */
 
-#include <ctype.h>
-#include <string.h>
-
+#include <cassert>
+#include <cctype>
+#include <cstring>
 #include <iostream>
 #include <queue>
-
-using namespace std;
-
-#define ENGLISH_ALPHABET_SIZE 26
-
+#include <vector>
 /**
  *@brief Class defining the structure of trie node and containing the methods to
  *perform operations on them
  */
+namespace trie_operations {
 
 class Tnode {
  private:
+    static constexpr int ENGLISH_ALPHABET_SIZE = 26;
     // pointers to alphabets
-    Tnode* english[ENGLISH_ALPHABET_SIZE];
+    std::vector<Tnode*> english;
 
     // To mark the end of word
     bool endOfWord;
@@ -36,7 +34,10 @@ class Tnode {
 
  public:
     Tnode() {
-        for (auto node : english) node = NULL;
+        english.resize(ENGLISH_ALPHABET_SIZE);
+        for (auto node : english) {
+            node = nullptr;
+        }
 
         endOfWord = false;
         frequency = 0;
@@ -49,30 +50,34 @@ class Tnode {
      */
     inline int numberOfChildren(Tnode* node) {
         int count = 0;
-        for (int i = 0; i < ENGLISH_ALPHABET_SIZE; i++)
-            if (node->english[i])
+        for (auto& i : node->english)
+            if (i)
                 count++;
         return count;
     }
 
     // Functions to perform operations on trie
-    void Insert(string entry);
-    void Delete(string entry);
-    void DeleteFrom(Tnode* delete_from, string delete_string, int remove_index);
-    bool SearchPresence(string key);
-    void SuggestAutocomplete(Tnode* new_root, string prefix);
-    void SearchSuggestions(string key);
+    void Insert(std::string entry);
+    void Delete(std::string entry);
+    void DeleteFrom(Tnode* delete_from, std::string delete_string,
+                    int remove_index);
+    bool SearchPresence(std::string key);
+    void SuggestAutocomplete(Tnode* new_root, std::string prefix);
+    void SearchSuggestions(std::string key);
     void SuggestFreqAutocomplete(
-        Tnode* new_root, string prefix,
-        priority_queue<pair<int, string> >& suggestions);
-    void SearchFreqSuggestions(string key);
-    void SelectionTop_3(priority_queue<pair<int, string> >& suggestions);
+        Tnode* new_root, std::string prefix,
+        std::priority_queue<std::pair<int, std::string> >& suggestions);
+    void SearchFreqSuggestions(std::string key);
+    void SelectionTop_3(
+        std::priority_queue<std::pair<int, std::string> >& suggestions);
 
     // To free up the dynamically allocated objects
     ~Tnode() {
-        for (int i = 0; i < ENGLISH_ALPHABET_SIZE; i++)
+        int i = 0;
+        for (i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
             if (english[i])
                 delete english[i];
+        }
     }
 };
 
@@ -86,7 +91,7 @@ class Tnode {
  * @param remove_index : Index denoting the beginning of the substring to be
  * deleted
  */
-void Tnode ::DeleteFrom(Tnode* delete_from, string delete_string,
+void Tnode ::DeleteFrom(Tnode* delete_from, std::string delete_string,
                         int remove_index) {
     if (delete_string.size() == remove_index) {
         int letter_index = tolower(delete_string[remove_index]) - 97;
@@ -103,27 +108,26 @@ void Tnode ::DeleteFrom(Tnode* delete_from, string delete_string,
  * @param entry : The string entry to be deleted from the trie
  */
 
-void Tnode ::Delete(string entry) {
-    Tnode *cur_pos = new Tnode(), *delete_from = NULL;
+void Tnode ::Delete(std::string entry) {
+    Tnode *cur_pos, *delete_from = nullptr;
     cur_pos = this;  // Current pointer pointing to root
-    int letter_index = 0, delete_from_index, i, n;
-    n = entry.size();
+    int letter_index = 0, delete_from_index = 0, i = 0, n = entry.size();
 
     for (i = 0; i < n; i++) {
         // To ignore case
         letter_index = tolower(entry[i]) - 97;
 
         // Display error message when given entry is not present in the tree
-        if (cur_pos->english[letter_index] == NULL) {
-            cout << "Entry not Found" << endl;
+        if (cur_pos->english[letter_index] == nullptr) {
+            std::cout << "Entry not Found" << std::endl;
             return;
         }
         // If the current node is end of word for the current prefix or if it
         // has 2 or more branches It cannot be deleted while deleting the
         // required entry.
         if (numberOfChildren(cur_pos) > 1 || cur_pos->endOfWord) {
-            delete_from = cur_pos;  // denotes the beginning of the shortest
-                                    // suffix that is allowed to be deleted
+            delete_from = cur_pos;      // denotes the beginning of the shortest
+                                        // suffix that is allowed to be deleted
             delete_from_index = i - 1;  // Beginning index of the suffix
                                         // corresponding to the 'entry'
         }
@@ -135,7 +139,7 @@ void Tnode ::Delete(string entry) {
     // cur_pos now points to the last char of entry. Display message if that
     // entry does not exist
     if (!cur_pos->endOfWord) {
-        cout << "Entry not Found" << endl;
+        std::cout << "Entry not Found" << std::endl;
         return;
     }
 
@@ -152,7 +156,7 @@ void Tnode ::Delete(string entry) {
     // Point cur_pos to the next node
     cur_pos = delete_from->english[letter_index];
     // Sever the connection from the main trie
-    delete_from->english[letter_index] = NULL;
+    delete_from->english[letter_index] = nullptr;
 
     // If number of characters in the suffix are more than 1, recursively delete
     // each character starting from cur_pos using the helper function
@@ -160,17 +164,17 @@ void Tnode ::Delete(string entry) {
         DeleteFrom(cur_pos, entry, delete_from_index + 2);
     }
     // If the suffix is only 1 char in length
-    else
+    else {
         delete cur_pos;
+    }
 }
 
 /**
  * Insert : Function to insert a word in the trie
  * @param entry : The string entry to be inserted in the trie
  */
-void Tnode ::Insert(string entry) {
-    Tnode* cur_pos = new Tnode();
-    cur_pos = this;
+void Tnode ::Insert(std::string entry) {
+    Tnode* cur_pos = this;
     int letter_index = 0;
 
     for (auto i : entry) {
@@ -179,7 +183,7 @@ void Tnode ::Insert(string entry) {
 
         // Allocate a node for each character of entry if not present in the
         // trie
-        if (cur_pos->english[letter_index] == NULL) {
+        if (cur_pos->english[letter_index] == nullptr) {
             cur_pos->english[letter_index] = new Tnode();
         }
 
@@ -195,15 +199,14 @@ void Tnode ::Insert(string entry) {
  * @return true if the key is found
  * @return false if the key is not found
  */
-bool Tnode ::SearchPresence(string key) {
-    Tnode* cur_pos = new Tnode();
-    cur_pos = this;
+bool Tnode ::SearchPresence(const std::string key) {
+    Tnode* cur_pos = this;
     int letter_index = 0;
 
     for (auto i : key) {
         letter_index = tolower(i) - 97;
         // If any character in the order of the key is absent, word not found!
-        if (cur_pos->english[letter_index] == NULL) {
+        if (cur_pos->english[letter_index] == nullptr) {
             return false;
         }
         cur_pos = cur_pos->english[letter_index];
@@ -224,15 +227,16 @@ bool Tnode ::SearchPresence(string key) {
  * of prefix
  * @param prefix : The common prefix that all the suggestions must have
  */
-void Tnode ::SuggestAutocomplete(Tnode* new_root, string prefix) {
+void Tnode ::SuggestAutocomplete(Tnode* new_root, std::string prefix) {
     // Iterate through all 26 nodes as we have to print all strings with the
     // given prefix
-    for (int i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
-        if (new_root->english[i] != NULL) {
+    int i = 0;
+    for (i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
+        if (new_root->english[i] != nullptr) {
             // Print the sugestion only if it's a valid complete entry and not
             // just a prefix
             if (new_root->english[i]->endOfWord)
-                cout << prefix + char(i + 97) << endl;
+                std::cout << prefix + char(i + 97) << std::endl;
 
             SuggestAutocomplete(new_root->english[i], prefix + char(i + 97));
         }
@@ -247,12 +251,11 @@ void Tnode ::SuggestAutocomplete(Tnode* new_root, string prefix) {
  * "abcde", "abcdefg".
  * @param key : The string key to be searched for suggestions
  */
-void Tnode ::SearchSuggestions(string key) {
-    Tnode* cur_pos = new Tnode();
-    Tnode* prev_pos = new Tnode();
+void Tnode ::SearchSuggestions(const std::string key) {
+    Tnode *cur_pos, *prev_pos;
     cur_pos = prev_pos = this;  // maintaining 2 pointers, initialized to root
     int letter_index = 0;
-    string prefix =
+    std::string prefix =
         "";  // variable storing the updated value of longest common prefix
 
     for (auto i : key) {
@@ -262,10 +265,10 @@ void Tnode ::SearchSuggestions(string key) {
 
         // When the node for the character does not exist, longest prefix has
         // been determined and SuggestAutocomplete is called
-        if (cur_pos->english[letter_index] == NULL) {
+        if (cur_pos->english[letter_index] == nullptr) {
             SuggestAutocomplete(prev_pos, prefix);
-            cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
-                 << endl;
+            std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
+                      << std::endl;
             return;
         }
         // Updating the longest common prefix
@@ -274,14 +277,15 @@ void Tnode ::SearchSuggestions(string key) {
     }
     // If the key is a valid entry of trie, display it @ top of the suggestions
     if (cur_pos->endOfWord) {
-        cout << key << endl;
+        std::cout << key << std::endl;
         (cur_pos->frequency)++;
     }
 
     // Call for suggestions when the search key is present as an entry/a prefix
     // in the trie
     SuggestAutocomplete(cur_pos, prefix);
-    cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+    std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
+              << std::endl;
     return;
 }
 
@@ -291,11 +295,13 @@ void Tnode ::SearchSuggestions(string key) {
  * @param suggestions : A max heap that contains pairs of (frequency, word)
  * heapified based on frequency
  */
-void Tnode ::SelectionTop_3(priority_queue<pair<int, string> >& suggestions) {
+void Tnode ::SelectionTop_3(
+    std::priority_queue<std::pair<int, std::string> >& suggestions) {
     // Display Either top 3 or total number of suggestions, whichever is smaller
-    int Top = suggestions.size() < 3 ? suggestions.size() : 3;
+    int n = suggestions.size(), Top = 0;
+    Top = n < 3 ? n : 3;
     while (Top--) {
-        cout << suggestions.top().second << endl;
+        std::cout << suggestions.top().second << std::endl;
         suggestions.pop();
     }
 }
@@ -310,15 +316,16 @@ void Tnode ::SelectionTop_3(priority_queue<pair<int, string> >& suggestions) {
  * heapified based on frequency
  */
 void Tnode ::SuggestFreqAutocomplete(
-    Tnode* new_root, string prefix,
-    priority_queue<pair<int, string> >& suggestions) {
-    for (int i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
-        if (new_root->english[i] != NULL) {
+    Tnode* new_root, const std::string prefix,
+    std::priority_queue<std::pair<int, std::string> >& suggestions) {
+    int i = 0;
+    for (i = 0; i < ENGLISH_ALPHABET_SIZE; i++) {
+        if (new_root->english[i] != nullptr) {
             // Add to sugestions only if it's a valid complete entry and not
             // just a prefix
             if (new_root->english[i]->endOfWord)
-                suggestions.push(make_pair(new_root->english[i]->frequency,
-                                           prefix + char(i + 97)));
+                suggestions.push(std::make_pair(new_root->english[i]->frequency,
+                                                prefix + char(i + 97)));
 
             SuggestFreqAutocomplete(new_root->english[i], prefix + char(i + 97),
                                     suggestions);
@@ -335,14 +342,13 @@ void Tnode ::SuggestFreqAutocomplete(
  * among the matches would be displayed viz. "abcddef", "abc", "abcdefg".
  * @param key : The string key to be searched for suggestions
  */
-void Tnode ::SearchFreqSuggestions(string key) {
-    Tnode* cur_pos = new Tnode();
-    Tnode* prev_pos = new Tnode();
+void Tnode ::SearchFreqSuggestions(std::string key) {
+    Tnode *cur_pos, *prev_pos;
     cur_pos = prev_pos = this;  // maintaining 2 pointers, initialized to root
     int letter_index = 0;
-    string prefix =
+    std::string prefix =
         "";  // variable storing the updated value of longest common prefix
-    priority_queue<pair<int, string> >
+    std::priority_queue<std::pair<int, std::string> >
         suggestions;  // max heap to store (frequency, word) in descending order
                       // of freq
 
@@ -353,12 +359,12 @@ void Tnode ::SearchFreqSuggestions(string key) {
 
         // When the node for the character does not exist, longest prefix has
         // been determined and SuggestFreqAutocomplete is called
-        if (cur_pos->english[letter_index] == NULL) {
+        if (cur_pos->english[letter_index] == nullptr) {
             SuggestFreqAutocomplete(prev_pos, prefix, suggestions);
             // To display the top 3 results
             SelectionTop_3(suggestions);
-            cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
-                 << endl;
+            std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
+                      << std::endl;
             return;
         }
         // Updating the longest common prefix
@@ -368,7 +374,7 @@ void Tnode ::SearchFreqSuggestions(string key) {
     // If the key is a valid entry of trie, display it @ top of the suggestions
     if (cur_pos->endOfWord) {
         (cur_pos->frequency)++;
-        cout << key << endl;
+        std::cout << key << std::endl;
     }
     // Call for Suggestions when the search key is present as an entry/a prefix
     // in the trie
@@ -376,29 +382,41 @@ void Tnode ::SearchFreqSuggestions(string key) {
     // Display the top 3 results
     SelectionTop_3(suggestions);
 
-    cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+    std::cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - "
+              << std::endl;
     return;
 }
+}  // namespace trie_operations
 
 /**
- * Main Function
- * @return 0 on exit
+ * TestOperations : Function to test a simple search before and after deleting
+ * an entry. And to test out the multiple variants of search.
  */
-int main(int argc, char const* argv[]) {
-    Tnode* root = new Tnode();
-    vector<string> inputs = {"abcde", "sss",   "ssss",  "ssst",   "sssu",
-                             "sssv",  "sst",   "ssts",  "sstt",   "sstu",
-                             "tutu",  "tutuv", "tutuu", "tutuvs", "tutus",
-                             "tvst",  "tvsu",  "vvvv"};
+void TestOperations() {
+    trie_operations ::Tnode* root = new trie_operations::Tnode();
+    std::vector<std::string> inputs = {
+        "abcde", "sss",    "ssss",  "ssst", "sssu", "sssv",
+        "sst",   "ssts",   "sstt",  "sstu", "tutu", "tutuv",
+        "tutuu", "tutuvs", "tutus", "tvst", "tvsu", "vvvv"};
 
-    for (auto i : inputs) root->Insert(i);
-    cout << root->SearchPresence("tutu") << endl;
-    root->SearchSuggestions("tutu");
-    cout << root->SearchPresence("tutu") << endl;
+    for (auto i : inputs) {
+        root->Insert(i);
+    }
+    // Search an existing entry
+    assert(root->SearchPresence("vvvv"));
+    std::cout << root->SearchPresence("vvvv") << std::endl;
+    // Delete it
     root->Delete("vvvv");
+    // Search for the entry again
+    assert(!root->SearchPresence("vvvv"));
+    std::cout << root->SearchPresence("vvvv") << std::endl;
+
+    std::cout << root->SearchPresence("tutu") << std::endl;
+    root->SearchSuggestions("tutu");
+    std::cout << root->SearchPresence("tutu") << std::endl;
 
     root->SearchSuggestions("tutuv");
-    cout << root->SearchPresence("tutuv") << endl;
+    std::cout << root->SearchPresence("tutuv") << std::endl;
 
     root->SearchSuggestions("tutuvs");
 
@@ -407,5 +425,14 @@ int main(int argc, char const* argv[]) {
                 // tutuvs respectively
     root->SearchSuggestions(
         "");  // Empty search to list all the entries in the trie
+}
+
+/**
+ * Main Function
+ * @return 0 on exit
+ */
+int main(int argc, char const* argv[]) {
+    TestOperations();
+
     return 0;
 }
