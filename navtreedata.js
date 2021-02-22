@@ -124,16 +124,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"cpp/io/manip/endl.html",
-"cpp/string/wide/towctrans.html",
-"d1/def/classdata__structures_1_1linked__list_1_1list.html#a50e209b55b83622254177050945e7826",
-"d4/d32/fibonacci__fast_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#af06360122e20ce2ba32c574a27a20ba1",
-"d7/d1e/graph_2dijkstra_8cpp.html#a868530bfaed30e57290a76d5b4402d50",
-"d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e",
-"da/d9a/class_graph.html#a73268574e2528b8e760191113ef6d1eb",
-"dc/db5/struct_queue.html#af679dbf13749275935f617ac6ab0f9e9",
-"de/de4/fibonacci__large_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"
+"cpp/io/manip/boolalpha.html",
+"cpp/string/wide/iswxdigit.html",
+"d1/def/classdata__structures_1_1linked__list_1_1list.html#a1fb1792ab867dc26639eef368a56989e",
+"d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f",
+"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#a6ae98710503b894b843d01cb69d5490c",
+"d7/d1e/graph_2dijkstra_8cpp.html#a454891267187a5ec6c6e3f3ad5203ff1",
+"d8/dab/classstatistics_1_1stats__computer2.html#a7e7a1a2b0a03df0a70cac40d193421d2",
+"da/d9a/class_graph.html#a61943646676002a5e75f7b6493c25713",
+"dc/db5/struct_queue.html#a7cfca3637d57c4a9e37351b3426ffd40",
+"de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

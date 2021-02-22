@@ -2,6 +2,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
 [
     [ "armstrong_number.cpp", "d4/d5d/math_2armstrong__number_8cpp.html", "d4/d5d/math_2armstrong__number_8cpp" ],
     [ "binary_exponent.cpp", "de/dcf/binary__exponent_8cpp.html", "de/dcf/binary__exponent_8cpp" ],
+    [ "binomial_calculate.cpp", "d8/db1/binomial__calculate_8cpp.html", "d8/db1/binomial__calculate_8cpp" ],
     [ "check_amicable_pair.cpp", "d5/df6/check__amicable__pair_8cpp.html", "d5/df6/check__amicable__pair_8cpp" ],
     [ "check_factorial.cpp", "d8/dd5/check__factorial_8cpp.html", "d8/dd5/check__factorial_8cpp" ],
     [ "check_prime.cpp", "db/d93/check__prime_8cpp.html", "db/d93/check__prime_8cpp" ],
