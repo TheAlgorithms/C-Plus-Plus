@@ -44,15 +44,12 @@ class Tnode {
         endOfWord = node.endOfWord;
         frequency = node.frequency;
     }
-    // Copy assignment operator
-    Tnode &operator=(const Tnode &node) {
-        english = node.english;
-        endOfWord = node.endOfWord;
-        frequency = node.frequency;
-        return *this;
-    }
+
+    Tnode &operator=(const Tnode &node) = default;
 
     Tnode(Tnode &&) = default;
+
+    Tnode &operator=(Tnode &&) = default;
     /**
      * numberOfChildren : To count the number of children a node in the trie has
      * @param node : A trie node whose children need to be counted
