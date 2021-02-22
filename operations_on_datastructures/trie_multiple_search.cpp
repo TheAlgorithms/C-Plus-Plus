@@ -38,7 +38,21 @@ class Tnode {
         endOfWord = false;
         frequency = 0;
     }
+    // Copy Constructor
+    Tnode(const Tnode &node) {
+        english = node.english;
+        endOfWord = node.endOfWord;
+        frequency = node.frequency;
+    }
+    // Copy assignment operator
+    Tnode &operator=(const Tnode &node) {
+        english = node.english;
+        endOfWord = node.endOfWord;
+        frequency = node.frequency;
+        return *this;
+    }
 
+    Tnode(Tnode &&) = default;
     /**
      * numberOfChildren : To count the number of children a node in the trie has
      * @param node : A trie node whose children need to be counted
@@ -78,7 +92,7 @@ class Tnode {
             }
         }
     }
-};  // NOLINT
+};
 
 /**
  * Insert : Function to insert a word in the trie
