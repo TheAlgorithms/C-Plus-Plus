@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Trie datastructure with search
- * variants(https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
+ * @brief [Trie datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
+ * with search variants
  * @details
  * This provides multiple variants of search functions
  * on a trie structure utilizing STL. The trie is valid
