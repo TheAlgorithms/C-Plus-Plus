@@ -22,7 +22,8 @@
 namespace operations_on_datastructures {
 /**
  * @namespace trie_operations
- * @brief Functions for Trie Multiple Search implementation.
+ * @brief Functions for [Trie datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
+ * implementation
  */
 namespace trie_operations {
 
@@ -32,7 +33,7 @@ namespace trie_operations {
  */
 class Tnode {
  private:
-    static constexpr int ENGLISH_ALPHABET_SIZE = 26;
+    static constexpr uint8_t ENGLISH_ALPHABET_SIZE = 26;
     // pointers to alphabets
     std::vector<Tnode *> english;
 
@@ -40,7 +41,7 @@ class Tnode {
     bool endOfWord;
 
     // To store the frequency of searches for the word
-    int frequency;
+    uint32_t frequency;
 
  public:
     Tnode() {
@@ -65,8 +66,8 @@ class Tnode {
      * @param node a trie node whose children need to be counted
      * @return count of the number of children of the given node (max 26)
      */
-    inline int numberOfChildren(Tnode *node) {
-        int count = 0;
+    inline uint8_t numberOfChildren(Tnode *node) {
+        uint8_t count = 0;
         for (auto &i : node->english) {
             if (i) {
                 count++;
