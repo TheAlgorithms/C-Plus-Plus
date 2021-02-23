@@ -9,8 +9,8 @@
  * @author [Ghanashyam](https://github.com/g-s-k-zoro)
  */
 
-#include <cassert>   /// for testing
-#include <cctype>    /// for case manipulation of alphabets
+#include <cassert>   /// for assert
+#include <cctype>    /// for tolower
 #include <cstring>   /// for string operations
 #include <iostream>  /// for IO Operations
 #include <queue>     /// for std::priority_queue
