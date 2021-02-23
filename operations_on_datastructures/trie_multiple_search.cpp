@@ -61,8 +61,8 @@ class Tnode {
 
     Tnode &operator=(Tnode &&) = default;
     /**
-     * numberOfChildren : To count the number of children a node in the trie has
-     * @param node : A trie node whose children need to be counted
+     * @brief Function to count the number of children a node in the trie has
+     * @param node a trie node whose children need to be counted
      * @return count of the number of children of the given node (max 26)
      */
     inline int numberOfChildren(Tnode *node) {
@@ -102,8 +102,8 @@ class Tnode {
 };
 
 /**
- * Insert : Function to insert a word in the trie
- * @param entry : The string entry to be inserted in the trie
+ * @brief Function to insert a word in the trie
+ * @param entry the string entry to be inserted in the trie
  */
 void Tnode ::Insert(const std::string &entry) {
     Tnode *cur_pos = this;
@@ -126,13 +126,13 @@ void Tnode ::Insert(const std::string &entry) {
 }
 
 /**
- * Helper Function for Delete : Recursively deletes the substring character by
+ * @brief Function recursively deletes the substring character by
  * character iterating through the string to be deleted. It traverses till the
  * end of word in a recursive fashion, from there it deletes characters one by
  * one till it reaches back to the initial call.
- * @param delete_from : The acting root to the required suffix to be deleted
- * @param delete_string : The string to be deleted from the trie
- * @param remove_index : Index denoting the beginning of the substring to be
+ * @param delete_from the acting root to the required suffix to be deleted
+ * @param delete_string the string to be deleted from the trie
+ * @param remove_index index denoting the beginning of the substring to be
  * deleted
  */
 void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
@@ -148,8 +148,8 @@ void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
 }
 
 /**
- * Delete : Function to verify presence and hence delete an entry from the trie
- * @param entry : The string entry to be deleted from the trie
+ * @brief Function to verify presence and hence delete an entry from the trie
+ * @param entry the string entry to be deleted from the trie
  */
 
 void Tnode ::Delete(std::string entry) {
@@ -214,8 +214,8 @@ void Tnode ::Delete(std::string entry) {
 }
 
 /**
- * SearchPresence : Function to check a word's presence in the trie (Basic)
- * @param key : The string key to be searched in the trie
+ * @brief Function to check a word's presence in the trie (Basic)
+ * @param key the string key to be searched in the trie
  * @return true if the key is found
  * @return false if the key is not found
  */
@@ -242,11 +242,11 @@ bool Tnode ::SearchPresence(const std::string &key) {
 }
 
 /**
- * SuggestAutocomplete : Recursive function to suggest all the entries of trie
+ * @brief Recursive function to suggest all the entries of trie
  * which have a given common prefix
- * @param new_root : Pointer pointing to the node corresponding to the last char
+ * @param new_root pointer pointing to the node corresponding to the last char
  * of prefix
- * @param prefix : The common prefix that all the suggestions must have
+ * @param prefix the common prefix that all the suggestions must have
  */
 void Tnode ::SuggestAutocomplete(Tnode *new_root, const std::string &prefix) {
     // Iterate through all 26 nodes as we have to print all strings with the
@@ -266,12 +266,12 @@ void Tnode ::SuggestAutocomplete(Tnode *new_root, const std::string &prefix) {
 }
 
 /**
- * SearchSuggestions : Lists out all the words in trie with the longest prefix
+ * @brief Lists out all the words in trie with the longest prefix
  * of the search key that is present in the trie. For example - if trie contains
  * "abc", "abcde", "abcdefg", "abcddef" and if the search key is "abcdezz", then
  * the longest common prefix is "abcde" and hence search results will be
  * "abcde", "abcdefg".
- * @param key : The string key to be searched for suggestions
+ * @param key the string key to be searched for suggestions
  */
 void Tnode ::SearchSuggestions(const std::string &key) {
     Tnode *cur_pos = nullptr, *prev_pos = nullptr;
@@ -314,9 +314,9 @@ void Tnode ::SearchSuggestions(const std::string &key) {
 }
 
 /**
- * SelectionTop_3 : Function to display the 3 suggestions with highest frequency
+ * @brief Function to display the 3 suggestions with highest frequency
  * of search hits
- * @param suggestions : A max heap that contains pairs of (frequency, word)
+ * @param suggestions a max heap that contains pairs of (frequency, word)
  * heapified based on frequency
  */
 void Tnode ::SelectionTop_3(
@@ -331,12 +331,12 @@ void Tnode ::SelectionTop_3(
 }
 
 /**
- * SuggestFreqAutocomplete : Recursive function to suggest most frequently
+ * @brief Recursive function to suggest most frequently
  * searched entries of trie which have a given common prefix
- * @param new_root : Pointer pointing to the node corresponding to the last char
+ * @param new_root pointer pointing to the node corresponding to the last char
  * of prefix
- * @param prefix : The common prefix that all the suggestions must have
- * @param suggestions : A max heap that contains pairs of (frequency, word)
+ * @param prefix the common prefix that all the suggestions must have
+ * @param suggestions a max heap that contains pairs of (frequency, word)
  * heapified based on frequency
  */
 void Tnode ::SuggestFreqAutocomplete(
@@ -359,13 +359,13 @@ void Tnode ::SuggestFreqAutocomplete(
 }
 
 /**
- * SearchSuggestions : Lists out the most frequent words in trie with the
+ * @brief Lists out the most frequent words in trie with the
  * longest prefix of the search key that is present in the trie. For example -
  * if trie contains "abc", "abcde", "abcdefg", "abcddef" and they have been
  * previously searched for 3, 1, 2, 4 times respectively, if the search key is
  * "ab", then the longest common prefix is "ab" and only the top 3 frequencies
  * among the matches would be displayed viz. "abcddef", "abc", "abcdefg".
- * @param key : The string key to be searched for suggestions
+ * @param key the string key to be searched for suggestions
  */
 void Tnode ::SearchFreqSuggestions(const std::string &key) {
     Tnode *cur_pos = nullptr, *prev_pos = nullptr;
@@ -421,7 +421,7 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
 }  // namespace operations_on_datastructures
 
 /**
- * TestOperations : Function to test a simple search before and after deleting
+ * @brief Function to test a simple search before and after deleting
  * an entry. And to test out the multiple variants of search.
  */
 void test() {
