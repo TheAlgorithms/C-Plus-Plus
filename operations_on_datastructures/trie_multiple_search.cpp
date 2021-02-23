@@ -14,7 +14,7 @@
 #include <cstring>   /// for string operations
 #include <iostream>  /// for IO Operations
 #include <queue>     /// for std::priority_queue
-#include <vector>    /// for std::vector
+
 /**
  * @namespace operations_on_datastructures
  * @brief Operations on data structures
@@ -152,7 +152,6 @@ void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
  * @brief Function to verify presence and hence delete an entry from the trie
  * @param entry the string entry to be deleted from the trie
  */
-
 void Tnode ::Delete(std::string entry) {
     Tnode *cur_pos = this,
           *delete_from = this;  // Current pointer pointing to root
@@ -425,7 +424,7 @@ void Tnode ::SearchFreqSuggestions(const std::string &key) {
  * @brief Function to test a simple search before and after deleting
  * an entry. And to test out the multiple variants of search.
  */
-void test() {
+static void test() {
     auto root = new operations_on_datastructures::trie_operations::Tnode();
     std::vector<std::string> inputs = {
         "abcde", "sss",    "ssss",  "ssst", "sssu", "sssv",
@@ -468,6 +467,5 @@ void test() {
  */
 int main(int argc, char const *argv[]) {
     test();  // run self-test implementations
-
     return 0;
 }
