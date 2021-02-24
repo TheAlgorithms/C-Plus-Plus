@@ -26,7 +26,6 @@ namespace operations_on_datastructures {
  * implementation
  */
 namespace trie_operations {
-
 /**
  * @brief Class defining the structure of trie node and containing the methods
  * to perform operations on them.
