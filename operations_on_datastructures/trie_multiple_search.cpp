@@ -105,7 +105,7 @@ class Tnode {
  * @brief Function to insert a word in the trie
  * @param entry the string entry to be inserted in the trie
  */
-void Tnode ::Insert(const std::string &entry) {
+void Tnode::Insert(const std::string &entry) {
     Tnode *cur_pos = this;
     int letter_index = 0;
 
@@ -135,7 +135,7 @@ void Tnode ::Insert(const std::string &entry) {
  * @param remove_index index denoting the beginning of the substring to be
  * deleted
  */
-void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
+void Tnode::DeleteFrom(Tnode *delete_from, std::string delete_string,
                         int remove_index) {
     if (delete_string.size() == remove_index) {
         int letter_index = tolower(delete_string[remove_index]) - 97;
@@ -151,7 +151,7 @@ void Tnode ::DeleteFrom(Tnode *delete_from, std::string delete_string,
  * @brief Function to verify presence and hence delete an entry from the trie
  * @param entry the string entry to be deleted from the trie
  */
-void Tnode ::Delete(std::string entry) {
+void Tnode::Delete(std::string entry) {
     Tnode *cur_pos = this,
           *delete_from = this;  // Current pointer pointing to root
     int letter_index = 0, delete_from_index = 0, i = 0, n = entry.size();
@@ -218,7 +218,7 @@ void Tnode ::Delete(std::string entry) {
  * @return true if the key is found
  * @return false if the key is not found
  */
-bool Tnode ::SearchPresence(const std::string &key) {
+bool Tnode::SearchPresence(const std::string &key) {
     Tnode *cur_pos = this;
     int letter_index = 0;
 
@@ -247,7 +247,7 @@ bool Tnode ::SearchPresence(const std::string &key) {
  * of prefix
  * @param prefix the common prefix that all the suggestions must have
  */
-void Tnode ::SuggestAutocomplete(Tnode *new_root, const std::string &prefix) {
+void Tnode::SuggestAutocomplete(Tnode *new_root, const std::string &prefix) {
     // Iterate through all 26 nodes as we have to print all strings with the
     // given prefix
     int i = 0;
@@ -272,7 +272,7 @@ void Tnode ::SuggestAutocomplete(Tnode *new_root, const std::string &prefix) {
  * "abcde", "abcdefg".
  * @param key the string key to be searched for suggestions
  */
-void Tnode ::SearchSuggestions(const std::string &key) {
+void Tnode::SearchSuggestions(const std::string &key) {
     Tnode *cur_pos = nullptr, *prev_pos = nullptr;
     cur_pos = prev_pos = this;  // maintaining 2 pointers, initialized to root
     int letter_index = 0;
@@ -318,7 +318,7 @@ void Tnode ::SearchSuggestions(const std::string &key) {
  * @param suggestions a max heap that contains pairs of (frequency, word)
  * heapified based on frequency
  */
-void Tnode ::SelectionTop_3(
+void Tnode::SelectionTop_3(
     std::priority_queue<std::pair<int, std::string> > *suggestions) {
     // Display Either top 3 or total number of suggestions, whichever is smaller
     int n = suggestions->size(), Top = 0;
@@ -338,7 +338,7 @@ void Tnode ::SelectionTop_3(
  * @param suggestions a max heap that contains pairs of (frequency, word)
  * heapified based on frequency
  */
-void Tnode ::SuggestFreqAutocomplete(
+void Tnode::SuggestFreqAutocomplete(
     Tnode *new_root, const std::string &prefix,
     std::priority_queue<std::pair<int, std::string> > *suggestions) {
     int i = 0;
@@ -366,7 +366,7 @@ void Tnode ::SuggestFreqAutocomplete(
  * among the matches would be displayed viz. "abcddef", "abc", "abcdefg".
  * @param key the string key to be searched for suggestions
  */
-void Tnode ::SearchFreqSuggestions(const std::string &key) {
+void Tnode::SearchFreqSuggestions(const std::string &key) {
     Tnode *cur_pos = nullptr, *prev_pos = nullptr;
     cur_pos = prev_pos = this;  // maintaining 2 pointers, initialized to root
     int letter_index = 0;
