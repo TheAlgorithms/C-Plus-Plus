@@ -125,15 +125,15 @@ var NAVTREEINDEX =
 [
 "",
 "cpp/io/manip/boolalpha.html",
-"cpp/string/wide/iswxdigit.html",
-"d1/def/classdata__structures_1_1linked__list_1_1list.html#a1fb1792ab867dc26639eef368a56989e",
-"d4/d32/fibonacci__fast_8cpp.html#a5712edca101204eca8accdb1e096707f",
-"d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#a6ae98710503b894b843d01cb69d5490c",
-"d7/d1e/graph_2dijkstra_8cpp.html#a454891267187a5ec6c6e3f3ad5203ff1",
-"d8/dab/classstatistics_1_1stats__computer2.html#a7e7a1a2b0a03df0a70cac40d193421d2",
-"da/d9a/class_graph.html#a61943646676002a5e75f7b6493c25713",
-"dc/db5/struct_queue.html#a7cfca3637d57c4a9e37351b3426ffd40",
-"de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d"
+"cpp/string/wide/iswupper.html",
+"d1/dc7/linear__probing__hash__table_8cpp.html#a2de838f453df67b72411eefb7faf833c",
+"d3/dce/linkedlist__implentation__usingarray_8cpp.html#a92e0c1bb3b270143881e36b5fea8a60d",
+"d5/d88/md__d_i_r_e_c_t_o_r_y.html#autotoc_md32",
+"d6/dd3/ode__midpoint__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
+"d8/d95/vector__ops_8hpp.html#abf136b863d804899647f46eeb2e1392b",
+"da/d5a/class_complex.html#ac38437c10eb798f176c384a695171b90",
+"dc/d61/classgraph_1_1_graph.html#a190c0eb4739b6a8dfc1c3f684e66d937",
+"de/dab/ncr__modulo__p_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

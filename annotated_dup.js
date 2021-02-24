@@ -57,6 +57,11 @@ var annotated_dup =
         [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
       ] ]
     ] ],
+    [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", [
+      [ "trie_operations", null, [
+        [ "Tnode", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode" ]
+      ] ]
+    ] ],
     [ "others", "d0/d6f/namespaceothers.html", [
       [ "postfix_expression", null, [
         [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ]
@@ -95,12 +100,12 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", "d5/d29/struct_min_heap_node" ],
     [ "mst", "d1/d77/structmst.html", "d1/d77/structmst" ],
-    [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
+    [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
+    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],

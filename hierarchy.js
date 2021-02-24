@@ -39,16 +39,16 @@ var hierarchy =
     [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", null ],
     [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "data_structures::tree_234::Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Kind >", "d5/da1/structnode.html", null ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "range_queries::perSegTree::Node", "d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html", null ],
     [ "node< Type >", "d5/da1/structnode.html", null ],
     [ "range_queries::perSegTree", "d8/d28/classrange__queries_1_1per_seg_tree.html", null ],
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
     [ "Point", "d8/dc8/struct_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "queue< Kind >", "db/da9/classqueue.html", null ],
+    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "data_structures::queue_using_array::Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
@@ -61,6 +61,7 @@ var hierarchy =
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", null ],
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
     [ "statistics::stats_computer2< T >", "d8/dab/classstatistics_1_1stats__computer2.html", null ],
+    [ "operations_on_datastructures::trie_operations::Tnode", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html", null ],
     [ "tower", "d2/d2c/structtower.html", null ],
     [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]

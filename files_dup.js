@@ -14,6 +14,7 @@ var files_dup =
     [ "machine_learning", "dir_3343723ae086de42ee4ca9774da3a13f.html", "dir_3343723ae086de42ee4ca9774da3a13f" ],
     [ "math", "dir_296d53ceaeaa7e099814a6def439fe8a.html", "dir_296d53ceaeaa7e099814a6def439fe8a" ],
     [ "numerical_methods", "dir_9c6faab82c22511b50177aa2e38e2780.html", "dir_9c6faab82c22511b50177aa2e38e2780" ],
+    [ "operations_on_datastructures", "dir_35422be6552f1b3672c1b6c4aba2da64.html", "dir_35422be6552f1b3672c1b6c4aba2da64" ],
     [ "others", "dir_9510827d0b234b3cc54b29892f217477.html", "dir_9510827d0b234b3cc54b29892f217477" ],
     [ "probability", "dir_82e494173a87936756866de2fa774307.html", "dir_82e494173a87936756866de2fa774307" ],
     [ "range_queries", "dir_074119ce3a874b57120c49a0cc4bb5ad.html", "dir_074119ce3a874b57120c49a0cc4bb5ad" ],
