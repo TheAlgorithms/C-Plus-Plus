@@ -67,10 +67,8 @@ class Tnode {
      * @return count of the number of children of the given node (max 26)
      */
     inline uint8_t numberOfChildren(Tnode *node) {
-        uint8_t count = 0;
-        return count = ENGLISH_ALPHABET_SIZE - std::count(node->english.begin(),
-                                                          node->english.end(),
-                                                          nullptr);
+        return ENGLISH_ALPHABET_SIZE -
+               std::count(node->english.begin(), node->english.end(), nullptr);
     }
 
     // Functions to perform operations on trie
@@ -101,7 +99,7 @@ class Tnode {
 
 /**
  * @brief Function to insert a word in the trie
- * @param entry the string entry to be inserted in the trie
+ * @param entry string entry to be inserted in the trie
  */
 void Tnode::Insert(const std::string &entry) {
     Tnode *cur_pos = this;
@@ -147,7 +145,7 @@ void Tnode::DeleteFrom(Tnode *delete_from, std::string delete_string,
 
 /**
  * @brief Function to verify presence and hence delete an entry from the trie
- * @param entry the string entry to be deleted from the trie
+ * @param entry string entry to be deleted from the trie
  */
 void Tnode::Delete(std::string entry) {
     Tnode *cur_pos = this,
