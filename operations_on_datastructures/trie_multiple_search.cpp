@@ -9,11 +9,12 @@
  * @author [Ghanashyam](https://github.com/g-s-k-zoro)
  */
 
-#include <cassert>   /// for assert
-#include <cctype>    /// for tolower
-#include <cstring>   /// for string operations
-#include <iostream>  /// for IO Operations
-#include <queue>     /// for std::priority_queue
+#include <algorithm>  /// for std::count
+#include <cassert>    /// for assert
+#include <cctype>     /// for tolower
+#include <cstring>    /// for string operations
+#include <iostream>   /// for IO Operations
+#include <queue>      /// for std::priority_queue
 
 /**
  * @namespace operations_on_datastructures
@@ -67,12 +68,9 @@ class Tnode {
      */
     inline uint8_t numberOfChildren(Tnode *node) {
         uint8_t count = 0;
-        for (auto &i : node->english) {
-            if (i) {
-                count++;
-            }
-        }
-        return count;
+        return count = ENGLISH_ALPHABET_SIZE - std::count(node->english.begin(),
+                                                          node->english.end(),
+                                                          nullptr);
     }
 
     // Functions to perform operations on trie
@@ -136,7 +134,7 @@ void Tnode::Insert(const std::string &entry) {
  * deleted
  */
 void Tnode::DeleteFrom(Tnode *delete_from, std::string delete_string,
-                        int remove_index) {
+                       int remove_index) {
     if (delete_string.size() == remove_index) {
         int letter_index = tolower(delete_string[remove_index]) - 97;
 
