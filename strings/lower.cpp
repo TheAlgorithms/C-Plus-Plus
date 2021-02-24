@@ -7,10 +7,8 @@
 #include <assert.h>
 
 std::string lower(std::string word) {
-    for (int i = 0; i < word.length(); i++) 
-    {
-        if (word[i] >= 'A' && word[i] <= 'Z')
-        {
+    for (int i = 0; i < word.length(); i++) {
+        if (word[i] >= 'A' && word[i] <= 'Z') {
             word[i] = word[i] + 32;
         }
     }
