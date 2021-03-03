@@ -6,6 +6,12 @@
 #endif
 #include <assert.h>
 
+namespace strings {
+/**
+ * Will convert the entire string to lowercase letters
+ * @param word is the text you want to lowercase
+ * @return An lowercase copy of the string.
+ */
 std::string lower(std::string word) {
     for (int i = 0; i < word.length(); i++) {
         if (word[i] >= 'A' && word[i] <= 'Z') {
@@ -14,13 +20,14 @@ std::string lower(std::string word) {
     }
     return word;
 }
+}  // namespace strings
 
 /** Main function */
 int main() {
-    assert(lower("wow") == "wow");
-    assert(lower("HellZo") == "hellzo");
-    assert(lower("WHAT") == "what");
-    assert(lower("wh[]32") == "wh[]32");
-    assert(lower("whAT") == "what");
+    assert(strings::lower("wow") == "wow");
+    assert(strings::lower("HellZo") == "hellzo");
+    assert(strings::lower("WHAT") == "what");
+    assert(strings::lower("wh[]32") == "wh[]32");
+    assert(strings::lower("whAT") == "what");
     return 0;
 }
