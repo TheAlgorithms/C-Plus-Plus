@@ -6,19 +6,27 @@
 #endif
 #include <assert.h>
 
-std::string capitalize(std::string string) {
-    if (string[0] >= 'a' && string[0] <= 'z') {
-        return string.insert(0, 1, string[0] - 32).erase(1, 1);
+namespace strings {
+/**
+ * This function will capitalize the first letter of a sentence or a word
+ * @param str is the text you want to capitalize
+ * @return An uppercase copy of the string.
+ */
+std::string capitalize(std::string str) {
+    if (str[0] >= 'a' && str[0] <= 'z') {
+        return str.insert(0, 1, str[0] - 32).erase(1, 1);
     } else {
-        return string;
+        return str;
     }
 }
+}  // namespace strings
 
 int main() {
-    assert(capitalize("hello world") == "Hello world");
-    assert(capitalize("123 hello world") == "123 hello world");
-    assert(capitalize(" hello world") == " hello world");
-    assert(capitalize("a") == "A");
-    assert(capitalize("") == "");
+    assert(strings::capitalize("hello world") == "Hello world");
+    assert(strings::capitalize("123 hello world") == "123 hello world");
+    assert(strings::capitalize(" hello world") == " hello world");
+    assert(strings::capitalize("a") == "A");
+    assert(strings::capitalize("") == "");
+
     return 0;
 }
