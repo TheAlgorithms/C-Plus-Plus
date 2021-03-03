@@ -39,8 +39,8 @@ var hierarchy =
     [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", null ],
     [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "data_structures::tree_234::Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", null ],
-    [ "node< Kind >", "d5/da1/structnode.html", null ],
     [ "Node", "db/d8b/struct_node.html", null ],
+    [ "node< Kind >", "d5/da1/structnode.html", null ],
     [ "range_queries::perSegTree::Node", "d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html", null ],
     [ "node< Type >", "d5/da1/structnode.html", null ],
     [ "range_queries::perSegTree", "d8/d28/classrange__queries_1_1per_seg_tree.html", null ],
@@ -50,6 +50,7 @@ var hierarchy =
     [ "queue< Kind >", "db/da9/classqueue.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "data_structures::queue_using_array::Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", null ],
+    [ "RBtree", "d8/d72/class_r_btree.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
