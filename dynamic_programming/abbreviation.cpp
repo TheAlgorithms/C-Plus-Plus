@@ -29,7 +29,7 @@ namespace dynamic_programming {
  * @namespace Knapsack
  * @brief Implementation of Abbreivation problem
  */
-namespace abbreivation {
+namespace abbreviation {
 /**
  *  (recursive dp function) https://www.hackerrank.com/challenges/abbr/problem
  *  Returns whether s can be converted to t with following rules:
@@ -113,7 +113,7 @@ bool abbreviation(const std::string &s, const std::string &t) {
     }
     return memo.back().back();
 }
-}  // namespace abbreivation
+}  // namespace abbreviation
 }  // namespace dynamic_programming
 
 static void test() {
@@ -122,9 +122,9 @@ static void test() {
                                         std::vector<bool>(t.size() + 1, 0)),
         visited(s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
-    assert(dynamic_programming::abbreivation::abbreviation_recursion(
+    assert(dynamic_programming::abbreviation::abbreviation_recursion(
                memo, visited, s, t) == true);
-    assert(dynamic_programming::abbreivation::abbreviation(s, t) == true);
+    assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
     s = "XXVVnDEFYgYeMXzWINQYHAQKKOZEYgSRCzLZAmUYGUGILjMDET";
     t = "XXVVDEFYYMXWINQYHAQKKOZEYSRCLZAUYGUGILMDETQVWU";
     memo = std::vector<std::vector<bool>>(s.size() + 1,
@@ -133,9 +133,9 @@ static void test() {
     visited = std::vector<std::vector<bool>>(
         s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
-    assert(dynamic_programming::abbreivation::abbreviation_recursion(
+    assert(dynamic_programming::abbreviation::abbreviation_recursion(
                memo, visited, s, t) == false);
-    assert(dynamic_programming::abbreivation::abbreviation(s, t) == false);
+    assert(dynamic_programming::abbreviation::abbreviation(s, t) == false);
 
     s = "DRFNLZZVHLPZWIupjwdmqafmgkg";
     t = "DRFNLZZVHLPZWI";
@@ -146,9 +146,9 @@ static void test() {
     visited = std::vector<std::vector<bool>>(
         s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
-    assert(dynamic_programming::abbreivation::abbreviation_recursion(
+    assert(dynamic_programming::abbreviation::abbreviation_recursion(
                memo, visited, s, t) == true);
-    assert(dynamic_programming::abbreivation::abbreviation(s, t) == true);
+    assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
 }
 
 int main() {
