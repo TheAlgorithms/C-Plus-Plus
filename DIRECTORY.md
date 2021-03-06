@@ -56,6 +56,7 @@
 
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0_1_knapsack.cpp)
+  * [Abbreviation] (https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/abbreviation.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/armstrong_number.cpp)
   * [Bellman Ford](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/bellman_ford.cpp)
   * [Catalan Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/catalan_numbers.cpp)
