@@ -1,19 +1,25 @@
-
 /**
  * @file
  * @brief Implementation of Abbrievation
  * (https://www.hackerrank.com/challenges/abbr/problem)
  *
  * @details
- * You can perform the following operations on the string a:
- * Capitalize zero or more of a's lowercase letters.
- * Delete all of the remaining lowercase letters in a.
- * Given two strings, a and b, determine if it's possible to make a equal to b
- * as described. If so, print YES on a new line. Otherwise, print NO.
+ * Given two strings, a and b, determine if it's possible to make a equal to
+ * b You can perform the following operations on the string a:
+ * 1. Capitalize zero or more of a's lowercase letters.
+ * 2. Delete all of the remaining lowercase letters in a.
  *
- * E.g., For example, given a = AbcDE and b = ABDE, in a we can convert 'b' and
- * delete 'c' to match b. If a = AbcDE and b = AFDE, matching is not possible
- * because letters may only be capitalized or discarded, not changed
+ * ##Algorithm
+ * The idea is in the problem statement itself: iterate through characters of
+ * string a and b (for character indexes i and j respectively):
+ * 1. If a[i] and b[j] are equal, then move to next position
+ * 2. If a[i] is lowercase of b[j], then explore two possibilities:
+ *  a. Capitalize or
+ *  a. Skip a[i]
+ * 3. If the a[i] is not uppercase, just discard the char, else return false
+ *
+ * Time Complexity (O(|a|*|b|)) where |a| => length of string
+ * @author Ashish Daulatabad (https://github.com/AshishYUO)
  */
 
 #include <cassert>
@@ -43,45 +49,45 @@ namespace abbreviation {
  * @param j: start of string j
  * @returns bool whether s can be converted to t
  */
-bool abbreviation_recursion(std::vector<std::vector<bool>> &memo,
-                            std::vector<std::vector<bool>> &visited,
+bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
+                            std::vector<std::vector<bool>> *visited,
                             const std::string &s, const std::string &t,
                             int i = 0, int j = 0) {
-    bool ans = memo[i][j];
-    // If the check is finished, then return true
-    if (i == s.size() and j == t.size())
+    bool ans = memo->at(i).at(j);
+    if (i == s.size() && j == t.size()) {
         return true;
-    // if s string is converted but the check is not complete, return false
-    else if (i == s.size() and j != t.size())
+    } else if (i == s.size() && j != t.size()) {
+        // result t is not converted, return false
         return false;
-    else if (!visited[i][j]) {
+    } else if (!visited->at(i).at(j)) {
         /**
          * (s[i] == t[j]): if s char at position i is equal to t char at
          * position j, then s character is a capitalized one, move on to next
          * character
-         * s[i] - 32 == t[j]: if s char at position is lowercase of t
-         * at position j, then explore two possibilites:
+         * s[i] - 32 == t[j]: if s[i] character is lowercase of t[j] then
+         * explore two possibilites:
          * 1. convert it to capitalized and move both to next pointer (i + 1, j
          * + 1)
-         * 2. Discard the character and move to next char (i + 1, j)
+         * 2. Discard the character (s[i]) and move to next char (i + 1, j)
          */
-        if (s[i] == t[j])
+        if (s[i] == t[j]) {
             ans = abbreviation_recursion(memo, visited, s, t, i + 1, j + 1);
-        else if (s[i] - 32 == t[j])
-            ans = abbreviation_recursion(memo, visited, s, t, i + 1, j + 1) or
+        } else if (s[i] - 32 == t[j]) {
+            ans = abbreviation_recursion(memo, visited, s, t, i + 1, j + 1) ||
                   abbreviation_recursion(memo, visited, s, t, i + 1, j);
-        else {
+        } else {
             // if s[i] is uppercase, then cannot be converted, return false
-            if (s[i] >= 'A' and s[i] <= 'Z')
+            // else s[i] is lowercase, only option is to discard this character
+            if (s[i] >= 'A' && s[i] <= 'Z') {
                 ans = false;
-            // s[i] is lowercase, only option is to discard this character
-            else
+            } else {
                 ans = abbreviation_recursion(memo, visited, s, t, i + 1, j);
+            }
         }
     }
-    memo[i][j] = ans;
-    visited[i][j] = true;
-    return memo[i][j];
+    (*memo)[i][j] = ans;
+    (*visited)[i][j] = true;
+    return (*memo)[i][j];
 }
 /**
  *  (iterative dp function) https://www.hackerrank.com/challenges/abbr/problem:
@@ -99,15 +105,16 @@ bool abbreviation(const std::string &s, const std::string &t) {
     for (int i = 1; i <= t.size(); ++i) memo[0][i] = false;
     for (int i = 1; i <= s.size(); ++i) {
         for (int j = 1; j <= t.size(); ++j) {
-            if (s[i - 1] == t[j - 1])
+            if (s[i - 1] == t[j - 1]) {
                 memo[i][j] = memo[i - 1][j - 1];
-            else if (s[i - 1] - 32 == t[j - 1])
-                memo[i][j] = (memo[i - 1][j - 1] or memo[i - 1][j]);
-            else {
-                if (s[i - 1] >= 'A' and s[i - 1] <= 'Z')
+            } else if (s[i - 1] - 32 == t[j - 1]) {
+                memo[i][j] = (memo[i - 1][j - 1] || memo[i - 1][j]);
+            } else {
+                if (s[i - 1] >= 'A' && s[i - 1] <= 'Z') {
                     memo[i][j] = false;
-                else
+                } else {
                     memo[i][j] = memo[i - 1][j];
+                }
             }
         }
     }
@@ -123,7 +130,7 @@ static void test() {
         visited(s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
-               memo, visited, s, t) == true);
+               &memo, &visited, s, t) == true);
     assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
     s = "XXVVnDEFYgYeMXzWINQYHAQKKOZEYgSRCzLZAmUYGUGILjMDET";
     t = "XXVVDEFYYMXWINQYHAQKKOZEYSRCLZAUYGUGILMDETQVWU";
@@ -134,7 +141,7 @@ static void test() {
         s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
-               memo, visited, s, t) == false);
+               &memo, &visited, s, t) == false);
     assert(dynamic_programming::abbreviation::abbreviation(s, t) == false);
 
     s = "DRFNLZZVHLPZWIupjwdmqafmgkg";
@@ -147,7 +154,7 @@ static void test() {
         s.size() + 1, std::vector<bool>(t.size() + 1, 0));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
-               memo, visited, s, t) == true);
+               &memo, &visited, s, t) == true);
     assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
 }
 
