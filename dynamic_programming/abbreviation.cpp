@@ -100,7 +100,7 @@ bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
  */
 bool abbreviation(const std::string &s, const std::string &t) {
     std::vector<std::vector<bool>> memo(s.size() + 1,
-                                        std::vector<bool>(t.size() + 1, 0));
+                                        std::vector<bool>(t.size() + 1, false));
     for (int i = 0; i <= s.size(); ++i) memo[i][0] = true;
     for (int i = 1; i <= t.size(); ++i) memo[0][i] = false;
     for (int i = 1; i <= s.size(); ++i) {
@@ -126,19 +126,19 @@ bool abbreviation(const std::string &s, const std::string &t) {
 static void test() {
     std::string s = "daBcd", t = "ABC";
     std::vector<std::vector<bool>> memo(s.size() + 1,
-                                        std::vector<bool>(t.size() + 1, 0)),
-        visited(s.size() + 1, std::vector<bool>(t.size() + 1, 0));
+                                        std::vector<bool>(t.size() + 1, false)),
+        visited(s.size() + 1, std::vector<bool>(t.size() + 1, false));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
                &memo, &visited, s, t) == true);
     assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
     s = "XXVVnDEFYgYeMXzWINQYHAQKKOZEYgSRCzLZAmUYGUGILjMDET";
     t = "XXVVDEFYYMXWINQYHAQKKOZEYSRCLZAUYGUGILMDETQVWU";
-    memo = std::vector<std::vector<bool>>(s.size() + 1,
-                                          std::vector<bool>(t.size() + 1, 0));
+    memo = std::vector<std::vector<bool>>(
+        s.size() + 1, std::vector<bool>(t.size() + 1, false));
 
     visited = std::vector<std::vector<bool>>(
-        s.size() + 1, std::vector<bool>(t.size() + 1, 0));
+        s.size() + 1, std::vector<bool>(t.size() + 1, false));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
                &memo, &visited, s, t) == false);
@@ -147,11 +147,11 @@ static void test() {
     s = "DRFNLZZVHLPZWIupjwdmqafmgkg";
     t = "DRFNLZZVHLPZWI";
 
-    memo = std::vector<std::vector<bool>>(s.size() + 1,
-                                          std::vector<bool>(t.size() + 1, 0));
+    memo = std::vector<std::vector<bool>>(
+        s.size() + 1, std::vector<bool>(t.size() + 1, false));
 
     visited = std::vector<std::vector<bool>>(
-        s.size() + 1, std::vector<bool>(t.size() + 1, 0));
+        s.size() + 1, std::vector<bool>(t.size() + 1, false));
 
     assert(dynamic_programming::abbreviation::abbreviation_recursion(
                &memo, &visited, s, t) == true);
