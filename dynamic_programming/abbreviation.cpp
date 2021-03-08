@@ -6,10 +6,10 @@
  * @details
  * Given two strings, `a` and `b`, determine if it's possible to make `a` equal
  * to `b` You can perform the following operations on the string `a`:
- * 1. Capitalize zero or more of a's lowercase letters.
+ * 1. Capitalize zero or more of `a`'s lowercase letters.
  * 2. Delete all of the remaining lowercase letters in `a`.
  *
- * ##Algorithm
+ * ### Algorithm
  * The idea is in the problem statement itself: iterate through characters of
  * string `a` and `b` (for character indexes `i` and `j` respectively):
  * 1. If `a[i]` and `b[j]` are equal, then move to next position
