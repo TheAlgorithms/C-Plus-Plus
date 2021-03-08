@@ -14,103 +14,117 @@
  * string a and b (for character indexes i and j respectively):
  * 1. If a[i] and b[j] are equal, then move to next position
  * 2. If a[i] is lowercase of b[j], then explore two possibilities:
- *  a. Capitalize or
- *  a. Skip a[i]
+ * a. Capitalize or
+ * b. Skip a[i]
  * 3. If the a[i] is not uppercase, just discard the char, else return false
  *
  * Time Complexity (O(|a|*|b|)) where |a| => length of string
  * @author Ashish Daulatabad (https://github.com/AshishYUO)
  */
 
-#include <cassert>
-#include <iostream>
-#include <string>
-#include <vector>
+#include <cassert>   /// assert function
+#include <iostream>  /// input/output operations
+#include <string>    /// std::string library
+#include <vector>    /// std::vector STL library
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming Algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace Knapsack
+ * @namespace abbreviation
  * @brief Implementation of Abbreivation problem
  */
 namespace abbreviation {
 /**
- *  (recursive dp function) https://www.hackerrank.com/challenges/abbr/problem
- *  Returns whether s can be converted to t with following rules:
- *  a. Capitalize zero or more of a's lowercase letters from string s
- *  b. remove all other lowercase letters from string s
- * @param dp: memo as parameter to store the result
- * @param v: visited boolean to check if the result is already computed
- * @param s: given string
- * @param t: resultant abbreivated string
- * @param i: start of string s
- * @param j: start of string j
- * @returns bool whether s can be converted to t
+ * @brief
+ * Recursive Dynamic Programming function
+ * @details
+ * Returns whether `s` can be converted to `t` with following rules:
+ * a. Capitalize zero or more of a's lowercase letters from string `s`
+ * b. remove all other lowercase letters from string `s`
+ * @param memo memo as parameter to store the result
+ * @param visited visited boolean to check if the result is already computed
+ * @param str given string, which might not be abbreivated
+ * @param result resultant abbreivated string
+ * @param str_idx pointer for string `str`, helpful for transitions
+ * @param result_idx pointer for string `result`, helpful for transitions
+ * @returns boolean (`true` or `false`) whether string `str` can be converted to
+ * `result`
  */
 bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
                             std::vector<std::vector<bool>> *visited,
-                            const std::string &s, const std::string &t,
-                            int i = 0, int j = 0) {
-    bool ans = memo->at(i).at(j);
-    if (i == s.size() && j == t.size()) {
+                            const std::string &str, const std::string &result,
+                            int str_idx = 0, int result_idx = 0) {
+    bool ans = memo->at(str_idx).at(result_idx);
+    if (str_idx == str.size() && result_idx == result.size()) {
         return true;
-    } else if (i == s.size() && j != t.size()) {
-        // result t is not converted, return false
+    } else if (str_idx == str.size() && result_idx != result.size()) {
+        // result `t` is not converted, return false
         return false;
-    } else if (!visited->at(i).at(j)) {
+    } else if (!visited->at(str_idx).at(result_idx)) {
         /**
-         * (s[i] == t[j]): if s char at position i is equal to t char at
-         * position j, then s character is a capitalized one, move on to next
-         * character
-         * s[i] - 32 == t[j]: if s[i] character is lowercase of t[j] then
-         * explore two possibilites:
-         * 1. convert it to capitalized and move both to next pointer (i + 1, j
-         * + 1)
-         * 2. Discard the character (s[i]) and move to next char (i + 1, j)
+         * `(str[i] == result[j])`: if str char at position i is equal to
+         * `result` char at position j, then s character is a capitalized one,
+         * move on to next character `str[i] - 32 == result[j]`:
+         * if `str[i]` character is lowercase of `result[j]` then explore two
+         * possibilites:
+         * 1. convert it to capitalized letter and move both to next pointer
+         * `(i + 1, j + 1)`
+         * 2. Discard the character `(str[i])` and move to next char `(i + 1,
+         * j)`
          */
-        if (s[i] == t[j]) {
-            ans = abbreviation_recursion(memo, visited, s, t, i + 1, j + 1);
-        } else if (s[i] - 32 == t[j]) {
-            ans = abbreviation_recursion(memo, visited, s, t, i + 1, j + 1) ||
-                  abbreviation_recursion(memo, visited, s, t, i + 1, j);
+        if (str[str_idx] == result[result_idx]) {
+            ans = abbreviation_recursion(memo, visited, str, result,
+                                         str_idx + 1, result_idx + 1);
+        } else if (str[str_idx] - 32 == result[result_idx]) {
+            ans = abbreviation_recursion(memo, visited, str, result,
+                                         str_idx + 1, result_idx + 1) ||
+                  abbreviation_recursion(memo, visited, str, result,
+                                         str_idx + 1, result_idx);
         } else {
-            // if s[i] is uppercase, then cannot be converted, return false
-            // else s[i] is lowercase, only option is to discard this character
-            if (s[i] >= 'A' && s[i] <= 'Z') {
+            // if `str[i]` is uppercase, then cannot be converted, return
+            // `false`
+            // else `str[i]` is lowercase, only option is to discard this
+            // character
+            if (str[str_idx] >= 'A' && str[str_idx] <= 'Z') {
                 ans = false;
             } else {
-                ans = abbreviation_recursion(memo, visited, s, t, i + 1, j);
+                ans = abbreviation_recursion(memo, visited, str, result,
+                                             str_idx + 1, result_idx);
             }
         }
     }
-    (*memo)[i][j] = ans;
-    (*visited)[i][j] = true;
-    return (*memo)[i][j];
+    (*memo)[str_idx][result_idx] = ans;
+    (*visited)[str_idx][result_idx] = true;
+    return (*memo)[str_idx][result_idx];
 }
 /**
- *  (iterative dp function) https://www.hackerrank.com/challenges/abbr/problem:
- *  Returns whether s can be converted to t with following rules:
- *  a. Capitalize zero or more of a's lowercase letters from string s
- *  b. remove all other lowercase letters from string s
- * @param s: string
- * @param t: resultant string
- * @returns boolean (true or false) whether s can be converted to t
+ * @brief
+ * Iterative Dynamic Programming function
+ * @details
+ * Returns whether `s` can be converted to `t` with following rules:
+ * a. Capitalize zero or more of s's lowercase letters from string `s`
+ * b. remove all other lowercase letters from string `s`
+ * Note: The transition states for iterative is similar to recursive as well
+ * @param str given string, which might not be abbreivated
+ * @param result resultant abbreivated string
+ * @returns boolean (`true` or `false`) whether string `str` can be converted to
+ * `result`
  */
-bool abbreviation(const std::string &s, const std::string &t) {
-    std::vector<std::vector<bool>> memo(s.size() + 1,
-                                        std::vector<bool>(t.size() + 1, false));
-    for (int i = 0; i <= s.size(); ++i) memo[i][0] = true;
-    for (int i = 1; i <= t.size(); ++i) memo[0][i] = false;
-    for (int i = 1; i <= s.size(); ++i) {
-        for (int j = 1; j <= t.size(); ++j) {
-            if (s[i - 1] == t[j - 1]) {
+bool abbreviation(const std::string &str, const std::string &result) {
+    std::vector<std::vector<bool>> memo(
+        str.size() + 1, std::vector<bool>(result.size() + 1, false));
+    for (int i = 0; i <= str.size(); ++i) memo[i][0] = true;
+    for (int i = 1; i <= result.size(); ++i) memo[0][i] = false;
+    for (int i = 1; i <= str.size(); ++i) {
+        for (int j = 1; j <= result.size(); ++j) {
+            if (str[i - 1] == result[j - 1]) {
                 memo[i][j] = memo[i - 1][j - 1];
-            } else if (s[i - 1] - 32 == t[j - 1]) {
+            } else if (str[i - 1] - 32 == result[j - 1]) {
                 memo[i][j] = (memo[i - 1][j - 1] || memo[i - 1][j]);
             } else {
-                if (s[i - 1] >= 'A' && s[i - 1] <= 'Z') {
+                if (str[i - 1] >= 'A' && str[i - 1] <= 'Z') {
                     memo[i][j] = false;
                 } else {
                     memo[i][j] = memo[i - 1][j];
@@ -123,6 +137,10 @@ bool abbreviation(const std::string &s, const std::string &t) {
 }  // namespace abbreviation
 }  // namespace dynamic_programming
 
+/**
+ * @brief Self test-implementations
+ * @returns void
+ */
 static void test() {
     std::string s = "daBcd", t = "ABC";
     std::vector<std::vector<bool>> memo(s.size() + 1,
@@ -158,6 +176,10 @@ static void test() {
     assert(dynamic_programming::abbreviation::abbreviation(s, t) == true);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();
     return 0;
