@@ -181,6 +181,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-implementation checks
+    test();  // run self-test implementations
     return 0;
 }
