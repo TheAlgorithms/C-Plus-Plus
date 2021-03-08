@@ -4,28 +4,29 @@
  * (https://www.hackerrank.com/challenges/abbr/problem)
  *
  * @details
- * Given two strings, a and b, determine if it's possible to make a equal to
- * b You can perform the following operations on the string a:
+ * Given two strings, `a` and `b`, determine if it's possible to make `a` equal
+ * to `b` You can perform the following operations on the string `a`:
  * 1. Capitalize zero or more of a's lowercase letters.
- * 2. Delete all of the remaining lowercase letters in a.
+ * 2. Delete all of the remaining lowercase letters in `a`.
  *
  * ##Algorithm
  * The idea is in the problem statement itself: iterate through characters of
- * string a and b (for character indexes i and j respectively):
- * 1. If a[i] and b[j] are equal, then move to next position
- * 2. If a[i] is lowercase of b[j], then explore two possibilities:
- * a. Capitalize or
- * b. Skip a[i]
- * 3. If the a[i] is not uppercase, just discard the char, else return false
+ * string `a` and `b` (for character indexes `i` and `j` respectively):
+ * 1. If `a[i]` and `b[j]` are equal, then move to next position
+ * 2. If `a[i]` is lowercase of `b[j]`, then explore two possibilities:
+ * a. Capitalize `a[i]` or
+ * b. Skip `a[i]`
+ * 3. If the `a[i]` is not uppercase, just discard that character, else return
+ * `false`
  *
- * Time Complexity (O(|a|*|b|)) where |a| => length of string
- * @author Ashish Daulatabad (https://github.com/AshishYUO)
+ * Time Complexity: (O(|a|*|b|)) where `|a|` => length of string `a`
+ * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
-#include <cassert>   /// assert function
+#include <cassert>   /// `assert` function
 #include <iostream>  /// input/output operations
-#include <string>    /// std::string library
-#include <vector>    /// std::vector STL library
+#include <string>    /// `std::string` library
+#include <vector>    /// `std::vector` STL library
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming Algorithms
