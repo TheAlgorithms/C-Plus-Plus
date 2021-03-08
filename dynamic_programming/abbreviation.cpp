@@ -49,8 +49,8 @@ namespace abbreviation {
  * @param result resultant abbreivated string
  * @param str_idx pointer for string `str`, helpful for transitions
  * @param result_idx pointer for string `result`, helpful for transitions
- * @returns boolean (`true` or `false`) whether string `str` can be converted to
- * `result`
+ * @returns `false` if string `str` cannot be converted to `result`
+ * @returns `true` if string `str` can be converted to `result`
  */
 bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
                             std::vector<std::vector<bool>> *visited,
@@ -109,8 +109,8 @@ bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
  * Note: The transition states for iterative is similar to recursive as well
  * @param str given string, which might not be abbreivated
  * @param result resultant abbreivated string
- * @returns boolean (`true` or `false`) whether string `str` can be converted to
- * `result`
+ * @returns `false` if string `str` cannot be converted to `result`
+ * @returns `true` if string `str` can be converted to `result`
  */
 bool abbreviation(const std::string &str, const std::string &result) {
     std::vector<std::vector<bool>> memo(
