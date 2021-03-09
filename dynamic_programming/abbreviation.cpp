@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Implementation of Abbrievation
- * (https://www.hackerrank.com/challenges/abbr/problem)
+ * @brief Implementation of
+ * [Abbrievation](https://www.hackerrank.com/challenges/abbr/problem)
  *
  * @details
  * Given two strings, `a` and `b`, determine if it's possible to make `a` equal
