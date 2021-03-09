@@ -25,7 +25,7 @@
 
 #include <cassert>   /// for `assert`
 #include <iostream>  /// for IO operations
-#include <string>    /// `std::string` library
+#include <string>    /// for `std::string` library
 #include <vector>    /// for `std::vector` STL library
 /**
  * @namespace dynamic_programming
@@ -48,15 +48,15 @@ namespace abbreviation {
  * @param visited visited boolean to check if the result is already computed
  * @param str given string, which might not be abbreivated
  * @param result resultant abbreivated string
- * @param str_idx pointer for string `str`, helpful for transitions
- * @param result_idx pointer for string `result`, helpful for transitions
+ * @param str_idx index for string `str`, helpful for transitions
+ * @param result_idx index for string `result`, helpful for transitions
  * @returns `false` if string `str` cannot be converted to `result`
  * @returns `true` if string `str` can be converted to `result`
  */
 bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
                             std::vector<std::vector<bool>> *visited,
                             const std::string &str, const std::string &result,
-                            int str_idx = 0, int result_idx = 0) {
+                            uint32_t str_idx = 0, uint32_t result_idx = 0) {
     bool ans = memo->at(str_idx).at(result_idx);
     if (str_idx == str.size() && result_idx == result.size()) {
         return true;
@@ -116,10 +116,15 @@ bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
 bool abbreviation(const std::string &str, const std::string &result) {
     std::vector<std::vector<bool>> memo(
         str.size() + 1, std::vector<bool>(result.size() + 1, false));
-    for (int i = 0; i <= str.size(); ++i) memo[i][0] = true;
-    for (int i = 1; i <= result.size(); ++i) memo[0][i] = false;
-    for (int i = 1; i <= str.size(); ++i) {
-        for (int j = 1; j <= result.size(); ++j) {
+
+    for (uint32_t i = 0; i <= str.size(); ++i) {
+        memo[i][0] = true;
+    }
+    for (uint32_t i = 1; i <= result.size(); ++i) {
+        memo[0][i] = false;
+    }
+    for (uint32_t i = 1; i <= str.size(); ++i) {
+        for (uint32_t j = 1; j <= result.size(); ++j) {
             if (str[i - 1] == result[j - 1]) {
                 memo[i][j] = memo[i - 1][j - 1];
             } else if (str[i - 1] - 32 == result[j - 1]) {
