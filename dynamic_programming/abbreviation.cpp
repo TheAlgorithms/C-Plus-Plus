@@ -24,7 +24,7 @@
  */
 
 #include <cassert>   /// `assert` function
-#include <iostream>  /// input/output operations
+#include <iostream>  /// for IO operations
 #include <string>    /// `std::string` library
 #include <vector>    /// for `std::vector` STL library
 /**
