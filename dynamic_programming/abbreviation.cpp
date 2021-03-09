@@ -23,7 +23,7 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
-#include <cassert>   /// `assert` function
+#include <cassert>   /// for `assert`
 #include <iostream>  /// for IO operations
 #include <string>    /// `std::string` library
 #include <vector>    /// for `std::vector` STL library
