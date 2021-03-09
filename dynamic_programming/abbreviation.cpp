@@ -34,7 +34,9 @@
 namespace dynamic_programming {
 /**
  * @namespace abbreviation
- * @brief Implementation of Abbreivation problem
+ * @brief Functions for
+ * [Abbreviation](https://www.hackerrank.com/challenges/abbr/problem)
+ * implementation
  */
 namespace abbreviation {
 /**
