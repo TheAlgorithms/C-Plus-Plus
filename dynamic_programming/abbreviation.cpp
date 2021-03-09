@@ -26,7 +26,7 @@
 #include <cassert>   /// `assert` function
 #include <iostream>  /// input/output operations
 #include <string>    /// `std::string` library
-#include <vector>    /// `std::vector` STL library
+#include <vector>    /// for `std::vector` STL library
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming Algorithms
