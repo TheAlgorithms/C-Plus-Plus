@@ -244,7 +244,7 @@ void RBtree::delfix(node *p)
 			{
 				if (s->right->color == 'b')
 				{
-					s->left->color == 'b';
+					s->left->color = 'b';
 					s->color = 'r';
 					rightrotate(s);
 					s = p->parent->right;
