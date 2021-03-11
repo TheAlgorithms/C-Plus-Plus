@@ -46,8 +46,8 @@ namespace abbreviation {
  * Returns whether `s` can be converted to `t` with following rules:
  * a. Capitalize zero or more of a's lowercase letters from string `s`
  * b. remove all other lowercase letters from string `s`
- * @param memo memo as parameter to store the result
- * @param visited visited boolean to check if the result is already computed
+ * @param memo To store the result
+ * @param visited boolean to check if the result is already computed
  * @param str given string, which might not be abbreivated
  * @param result resultant abbreivated string
  * @param str_idx index for string `str`, helpful for transitions
