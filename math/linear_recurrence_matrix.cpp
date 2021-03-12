@@ -47,8 +47,7 @@ namespace linear_recurrence_matrix {
 template <typename T = int64_t>
 std::vector<std::vector<T>> matrix_multiplication(
     const std::vector<std::vector<T>>& _mat_a,
-    const std::vector<std::vector<T>>& _mat_b,
-    const int64_t mod = 344555666677777) {
+    const std::vector<std::vector<T>>& _mat_b, const int64_t mod = 1000000007) {
     // assert that columns in `_mat_a` and rows in `_mat_b` are equal
     assert(_mat_a[0].size() == _mat_b.size());
     std::vector<std::vector<T>> _mat_c(_mat_a.size(),
@@ -98,8 +97,8 @@ bool is_zero_matrix(const std::vector<std::vector<T>>& _mat) {
  */
 template <typename T = int64_t>
 std::vector<std::vector<T>> matrix_exponentiation(
-    std::vector<std::vector<T>> _mat, uint32_t power,
-    const int64_t mod = 344555666677777) {
+    std::vector<std::vector<T>> _mat, uint64_t power,
+    const int64_t mod = 1000000007) {
     /**
      * Initializing answer as identity matrix. For simple binary
      * exponentiation reference, [see
@@ -200,8 +199,8 @@ static void test() {
      * Since, A.B....(n-1 times) = [fn-1   fn]
      * we can multiply B with itself n-1 times to obtain the required value
      */
-    std::vector<std::vector<int>> fibonacci_matrix = {{0, 1}, {1, 1}},
-                                  fib_base_case = {{0, 1}};
+    std::vector<std::vector<int64_t>> fibonacci_matrix = {{0, 1}, {1, 1}},
+                                      fib_base_case = {{0, 1}};
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                fibonacci_matrix, fib_base_case, 11) == 89LL);
@@ -223,11 +222,11 @@ static void test() {
      * value ()
      */
 
-    std::vector<std::vector<int>> tribonacci = {{0, 0, 1},
-                                                {1, 0, 1},
-                                                {0, 1, 1}},
-                                  trib_base_case = {
-                                      {0, 0, 1}};  // f0 = 0, f1 = 0, f2 = 1
+    std::vector<std::vector<int64_t>> tribonacci = {{0, 0, 1},
+                                                    {1, 0, 1},
+                                                    {0, 1, 1}},
+                                      trib_base_case = {
+                                          {0, 0, 1}};  // f0 = 0, f1 = 0, f2 = 1
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                tribonacci, trib_base_case, 11) == 149LL);
@@ -246,9 +245,9 @@ static void test() {
      *                               [1   2]
      */
 
-    std::vector<std::vector<int>> pell_recurrence = {{0, 1}, {1, 2}},
-                                  pell_base_case = {
-                                      {2, 2}};  // `f0 = 2, f1 = 2`
+    std::vector<std::vector<int64_t>> pell_recurrence = {{0, 1}, {1, 2}},
+                                      pell_base_case = {
+                                          {2, 2}};  // `f0 = 2, f1 = 2`
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                pell_recurrence, pell_base_case, 15) == 551614LL);
@@ -276,11 +275,9 @@ static void test() {
      *                                    [0   1   2]
      */
 
-    std::vector<std::vector<int>> custom_recurrence = {{1, 0, 1},
-                                                       {0, 0, 1},
-                                                       {0, 1, 2}},
-                                  custom_base_case = {
-                                      {7, 2, 2}};  // `c = 7, f0 = 2, f1 = 2`
+    std::vector<std::vector<int64_t>>
+        custom_recurrence = {{1, 0, 1}, {0, 0, 1}, {0, 1, 2}},
+        custom_base_case = {{7, 2, 2}};  // `c = 7, f0 = 2, f1 = 2`
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                custom_recurrence, custom_base_case, 10, 1) == 18493LL);
@@ -311,11 +308,11 @@ static void test() {
      *                                [0   0   1]
      */
 
-    std::vector<std::vector<int>> sum_fibo_recurrence = {{0, 1, 1},
-                                                         {1, 1, 1},
-                                                         {0, 0, 1}},
-                                  sum_fibo_base_case = {
-                                      {0, 1, 1}};  // `f0 = 0, f1 = 1`
+    std::vector<std::vector<int64_t>> sum_fibo_recurrence = {{0, 1, 1},
+                                                             {1, 1, 1},
+                                                             {0, 0, 1}},
+                                      sum_fibo_base_case = {
+                                          {0, 1, 1}};  // `f0 = 0, f1 = 1`
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                sum_fibo_recurrence, sum_fibo_base_case, 13, 1) == 609LL);
@@ -348,11 +345,11 @@ static void test() {
      * value
      */
 
-    std::vector<std::vector<int>> tribonacci_sum = {{0, 0, 1, 1},
-                                                    {1, 0, 1, 1},
-                                                    {0, 1, 1, 1},
-                                                    {0, 0, 0, 1}},
-                                  trib_sum_base_case = {{0, 0, 1, 1}};
+    std::vector<std::vector<int64_t>> tribonacci_sum = {{0, 0, 1, 1},
+                                                        {1, 0, 1, 1},
+                                                        {0, 1, 1, 1},
+                                                        {0, 0, 0, 1}},
+                                      trib_sum_base_case = {{0, 0, 1, 1}};
     // `f0 = 0, f1 = 0, f2 = 1, s = 1`
 
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
