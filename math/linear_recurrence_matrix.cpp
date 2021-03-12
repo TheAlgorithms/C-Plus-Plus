@@ -20,7 +20,13 @@
 #include <iostream>  // for IO operations
 #include <vector>    // for std::vector STL
 
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
 namespace math {
+
+namespace linear_recurrence_matrix {
 
 /**
  * @brief Implementation of matrix multiplication
@@ -169,6 +175,8 @@ T get_nth_term_of_recurrence_series(
     }
 }
 
+}  // namespace linear_recurrence_matrix
+
 }  // namespace math
 
 /**
@@ -192,9 +200,9 @@ static void test() {
     std::vector<std::vector<int>> fibonacci_matrix = {{0, 1}, {1, 1}},
                                   fib_base_case = {{0, 1}};
 
-    assert(math::get_nth_term_of_recurrence_series(fibonacci_matrix,
-                                                   fib_base_case, 11) == 89LL);
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
+               fibonacci_matrix, fib_base_case, 11) == 89LL);
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                fibonacci_matrix, fib_base_case, 39) == 63245986LL);
     /**
      * Example 2: [Tribonacci series](https://oeis.org/A000073)
@@ -218,10 +226,10 @@ static void test() {
                                   trib_base_case = {
                                       {0, 0, 1}};  // f0 = 0, f1 = 0, f2 = 1
 
-    assert(math::get_nth_term_of_recurrence_series(tribonacci, trib_base_case,
-                                                   11) == 149LL);
-    assert(math::get_nth_term_of_recurrence_series(tribonacci, trib_base_case,
-                                                   36) == 615693474LL);
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
+               tribonacci, trib_base_case, 11) == 149LL);
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
+               tribonacci, trib_base_case, 36) == 615693474LL);
 
     /**
      * Example 3: [Pell numbers](https://oeis.org/A000129)
@@ -239,9 +247,9 @@ static void test() {
                                   pell_base_case = {
                                       {2, 2}};  // `f0 = 2, f1 = 2`
 
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                pell_recurrence, pell_base_case, 15) == 551614LL);
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                pell_recurrence, pell_base_case, 23) == 636562078LL);
 
     /**
@@ -271,9 +279,9 @@ static void test() {
                                   custom_base_case = {
                                       {7, 2, 2}};  // `c = 7, f0 = 2, f1 = 2`
 
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                custom_recurrence, custom_base_case, 10, 1) == 18493LL);
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                custom_recurrence, custom_base_case, 19, 1) == 51531251LL);
 
     /**
@@ -306,9 +314,9 @@ static void test() {
                                   sum_fibo_base_case = {
                                       {0, 1, 1}};  // `f0 = 0, f1 = 1`
 
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                sum_fibo_recurrence, sum_fibo_base_case, 13, 1) == 609LL);
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                sum_fibo_recurrence, sum_fibo_base_case, 16, 1) == 2583LL);
     /**
      * Example 6: [Tribonacci sum series](https://oeis.org/A000073)
@@ -344,9 +352,9 @@ static void test() {
                                   trib_sum_base_case = {{0, 0, 1, 1}};
     // `f0 = 0, f1 = 0, f2 = 1, s = 1`
 
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                tribonacci_sum, trib_sum_base_case, 18, 1) == 23249LL);
-    assert(math::get_nth_term_of_recurrence_series(
+    assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                tribonacci_sum, trib_sum_base_case, 19, 1) == 42762LL);
 }
 
