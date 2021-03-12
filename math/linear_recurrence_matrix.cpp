@@ -124,9 +124,9 @@ std::vector<std::vector<T>> matrix_exponentiation(
  * Note that the function assumes definition of base cases from `n = 0`
  * (e.g., for fibonacci, `f(0)` has a defined value `0`)
  * @param _mat matrix that evaluates the nth term using exponentiation
- * @param _base_cases array containing values which are non-dependent (e.g.,
- * for fibonacci, `f(0)` and `f(1)` are non-dependant, and `f(n)` where `n > 1`
- * is dependent on previous two values)
+ * @param _base_cases array containing values which are defined for some n
+ * (e.g., for fibonacci, `f(0)` and `f(1)` are defined, and `f(n)` where
+ * `n > 1` is evaluated on previous two values)
  * @param nth_term the nth term of recurrence relation
  * @param constant_or_sum_included whether the recurrence relation has a
  * constant value or is evaluating sum of first n terms of the recurrence.
@@ -139,7 +139,7 @@ template <typename T = int64_t>
 T get_nth_term_of_recurrence_series(
     const std::vector<std::vector<T>>& _mat,
     const std::vector<std::vector<T>>& _base_cases, int nth_term,
-    bool constant_or_sum_included = 0) {
+    bool constant_or_sum_included = false) {
     assert(_mat.size() == _base_cases.back().size());
 
     /**
