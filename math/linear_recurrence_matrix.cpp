@@ -125,7 +125,7 @@ std::vector<std::vector<T>> matrix_exponentiation(
  * (e.g., for fibonacci, `f(0)` has a defined value `0`)
  * @param _mat [square matrix](https://en.m.wikipedia.org/wiki/Square_matrix)
  * that evaluates the nth term using exponentiation
- * @param _base_cases 2D array of dimension `n*1` containing values which are
+ * @param _base_cases 2D array of dimension `1*n` containing values which are
  * defined for some n (e.g., for fibonacci, `f(0)` and `f(1)` are defined, and
  * `f(n)` where `n > 1` is evaluated on previous two values)
  * @param nth_term the nth term of recurrence relation
@@ -311,7 +311,7 @@ static void test() {
     assert(math::get_nth_term_of_recurrence_series(
                sum_fibo_recurrence, sum_fibo_base_case, 16, 1) == 2583LL);
     /**
-     * Example 2: [Tribonacci sum series](https://oeis.org/A000073)
+     * Example 6: [Tribonacci sum series](https://oeis.org/A000073)
      *                               [0   0   1   1]
      * [fn-3  fn-2  fn-1  s(f, n-1)] [1   0   1   1]
      *                               [0   1   1   1]
