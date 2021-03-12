@@ -148,7 +148,7 @@ std::vector<std::vector<T>> matrix_exponentiation(
 template <typename T = int64_t>
 T get_nth_term_of_recurrence_series(
     const std::vector<std::vector<T>>& _mat,
-    const std::vector<std::vector<T>>& _base_cases, int nth_term,
+    const std::vector<std::vector<T>>& _base_cases, uint64_t nth_term,
     bool constant_or_sum_included = false) {
     assert(_mat.size() == _base_cases.back().size());
 
