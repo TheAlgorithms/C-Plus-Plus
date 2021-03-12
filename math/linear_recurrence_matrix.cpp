@@ -25,7 +25,10 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-
+/**
+ * @namespace linear_recurrence_matrix
+ * @brief Implementation of solution for linear recurrence using matrix
+ */
 namespace linear_recurrence_matrix {
 
 /**
