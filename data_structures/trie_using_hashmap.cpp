@@ -10,7 +10,6 @@
  * in trie.
  * @see trie_modern.cpp for difference
  */
-
 #include <cassert>        /// for assert
 #include <iostream>       /// for IO operations
 #include <memory>         /// for std::shared_ptr
@@ -20,18 +19,23 @@
 
 /**
  * @namespace data_structures
+ * @brief Data structures algorithms
  */
-
 namespace data_structures {
 /**
- * Class documentation
+ *@brief Trie class. implementaion of trie using hashmap in each trie node for
+ *all the charters of char16_t(UTF-16)type with methods to insert, delete,
+ *search, startwith and to recommend words based on a given prefix.
  */
 class Trie {
  private:
+    /**
+     *  @brief struct representing nodes in trie
+     */
     struct Node {
-        /** @brief trie nodes as key value pairs, value is a shared_pointer of
-         * Node */
-        std::unordered_map<char16_t, std::shared_ptr<Node>> children;
+        std::unordered_map<char16_t, std::shared_ptr<Node>>
+            children;  /// unordered map with key type char16_t and value is a
+                       /// shared pointer type of Node
         bool word_end = false;  /// boolean variable to represent the node end
     };
 
@@ -42,7 +46,8 @@ class Trie {
     ///< Constructor
     Trie() = default;
 
-    /** insert string into the trie
+    /**
+     * insert string into the trie
      * @param word string to insert in the tree
      */
     void insert(const std::string& word) {
@@ -59,7 +64,8 @@ class Trie {
         }
     }
 
-    /** search a word/string exists inside the trie
+    /**
+     * search a word/string exists inside the trie
      * @param word string to search for
      * @returns `true` if found
      * @returns `false` if not found
@@ -84,7 +90,8 @@ class Trie {
         }
     }
 
-    /** search a word/string that starts with a given prefix
+    /**
+     * search a word/string that starts with a given prefix
      * @param prefix string to search for
      * @returns `true` if found
      * @returns `false` if not found
@@ -101,7 +108,8 @@ class Trie {
         return true;
     }
 
-    /** Delete a word/string from a trie
+    /**
+     * Delete a word/string from a trie
      * @param word string to delete fromm trie
      */
     void delete_word(std::string word) {
@@ -132,7 +140,8 @@ class Trie {
         }
     }
 
-    /** helper function to predict/recommend words that starts with a given
+    /**
+     *  helper function to predict/recommend words that starts with a given
      * prefix from the end of prefix's node iterate through all the child nodes
      * by recursively appending  all the possible words below the trie
      * @param prefix string to recommend the words
@@ -163,7 +172,8 @@ class Trie {
         return results;
     }
 
-    /** predict/recommend a words that starts with a given prefix
+    /**
+     * predict/recommend a words that starts with a given prefix
      * @param prefix string to search for
      * @returns list of recommended words
      */
@@ -198,7 +208,7 @@ class Trie {
 }  // namespace data_structures
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
@@ -322,9 +332,8 @@ static void test() {
  * @brief Main function
  * @returns 0 on exit
  */
-
 int main() {
-    test();
+    test();  // run Self-test implementaions
 
     return 0;
 }
