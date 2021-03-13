@@ -1,5 +1,6 @@
 /**
- * @brief Evaluate recurrence relation using matrix exponentiation.
+ * @brief Evaluate recurrence relation using [matrix
+ * exponentiation](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/).
  * @details
  * Given a recurrence relation; evaluate the value of nth term.
  * For e.g., For fibonacci series, recurrence series is `f(n) = f(n-1) + f(n-2)`
@@ -9,16 +10,16 @@
  * two (n, r)
  *
  * ### Algorithm
- * This problem can be solved using matrix exponentiation method. For simple
- * number exponentiation, [see algorithm
- * here](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
+ * This problem can be solved using matrix exponentiation method.
+ * @see here for simple [number exponentiation
+ * algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
  * or [explaination
  * here](https://en.wikipedia.org/wiki/Exponentiation_by_squaring).
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <cassert>   // for assert
-#include <iostream>  // for IO operations
-#include <vector>    // for std::vector STL
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector STL
 
 /**
  * @namespace math
@@ -35,7 +36,7 @@ namespace linear_recurrence_matrix {
  * @brief Implementation of matrix multiplication
  * @details Multiplies matrix A and B, given total columns in A are equal to
  * total given rows in column B
- * @param T template type for integer as well as floating values, default is
+ * @tparam T template type for integer as well as floating values, default is
  * long long int
  * @param _mat_a first matrix of size n * m
  * @param _mat_b second matrix of size m * k
@@ -68,7 +69,7 @@ std::vector<std::vector<T>> matrix_multiplication(
 /**
  * @brief Returns whether matrix `mat` is a [zero
  * matrix.](https://en.wikipedia.org/wiki/Zero_matrix)
- * @param T template type for integer as well as floating values, default is
+ * @tparam T template type for integer as well as floating values, default is
  * long long int
  * @param _mat A matrix
  * @returns true if it is a zero matrix else false
@@ -89,7 +90,7 @@ bool is_zero_matrix(const std::vector<std::vector<T>>& _mat) {
  * @brief Implementation of Matrix exponentiation
  * @details returns the matrix exponentiation `(B^n)` in `k^3 * O(log2(power))`
  * time, where `k` is the size of matrix (k by k).
- * @param T template type for integer as well as floating values, default is
+ * @tparam T template type for integer as well as floating values, default is
  * long long int
  * @param _mat matrix for exponentiation
  * @param power the exponent value
@@ -131,6 +132,8 @@ std::vector<std::vector<T>> matrix_exponentiation(
  * @details Returns the nth term in the recurrence series.
  * Note that the function assumes definition of base cases from `n = 0`
  * (e.g., for fibonacci, `f(0)` has a defined value `0`)
+ * @tparam T template type for integer as well as floating values, default is
+ * long long int
  * @param _mat [square matrix](https://en.m.wikipedia.org/wiki/Square_matrix)
  * that evaluates the nth term using exponentiation
  * @param _base_cases 2D array of dimension `1*n` containing values which are
@@ -178,7 +181,6 @@ T get_nth_term_of_recurrence_series(
 }
 
 }  // namespace linear_recurrence_matrix
-
 }  // namespace math
 
 /**
