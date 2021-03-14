@@ -14,6 +14,7 @@
  *
  */
 #include <iostream>
+using namespace std;
 
 /**
  *
@@ -82,22 +83,22 @@ void mergeSort(int *arr, int l, int r) {
  * sorting
  */
 void show(int *arr, int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-    std::cout << "\n";
+    for (int i = 0; i < size; i++) cout << arr[i] << " ";
+    cout << "\n";
 }
 
 /** Main function */
 int main() {
     int size;
-    std::cout << "Enter the number of elements : ";
-    std::cin >> size;
+    cout << "Enter the number of elements : ";
+    cin >> size;
     int *arr = new int[size];
-    std::cout << "Enter the unsorted elements : ";
+    cout << "Enter the unsorted elements : ";
     for (int i = 0; i < size; ++i) {
-        std::cin >> arr[i];
+        cin >> arr[i];
     }
     mergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array : ";
+    cout << "Sorted array : ";
     show(arr, size);
     delete[] arr;
     return 0;
