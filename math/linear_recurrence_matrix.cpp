@@ -28,10 +28,10 @@
 namespace math {
 /**
  * @namespace linear_recurrence_matrix
- * @brief Implementation of solution for linear recurrence using matrix
+ * @brief Functions for [Linear Recurrence
+ * Matrix](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/).
  */
 namespace linear_recurrence_matrix {
-
 /**
  * @brief Implementation of matrix multiplication
  * @details Multiplies matrix A and B, given total columns in A are equal to
@@ -59,8 +59,10 @@ std::vector<std::vector<T>> matrix_multiplication(
     for (uint32_t i = 0; i < _mat_a.size(); ++i) {
         for (uint32_t j = 0; j < _mat_b[0].size(); ++j) {
             for (uint32_t k = 0; k < _mat_b.size(); ++k) {
-                _mat_c[i][j] += _mat_a[i][k] * _mat_b[k][j];
-                _mat_c[i][j] %= mod;
+                _mat_c[i][j] =
+                    (_mat_c[i][j] % mod +
+                     (_mat_a[i][k] % mod * _mat_b[k][j] % mod) % mod) %
+                    mod;
             }
         }
     }
@@ -179,7 +181,6 @@ T get_nth_term_of_recurrence_series(
         return _res.back().back();
     }
 }
-
 }  // namespace linear_recurrence_matrix
 }  // namespace math
 
