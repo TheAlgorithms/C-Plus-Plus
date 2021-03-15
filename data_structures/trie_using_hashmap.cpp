@@ -22,15 +22,16 @@
  * @brief Data structures algorithms
  */
 namespace data_structures {
+
 /**
- *@brief Trie class. implementaion of trie using hashmap in each trie node for
- *all the charters of char16_t(UTF-16)type with methods to insert, delete,
- *search, startwith and to recommend words based on a given prefix.
+ * @brief Trie class. implementation of trie using hashmap in each trie node for
+ * all the charters of char16_t(UTF-16)type with methods to insert, delete,
+ * search, start with, and to recommend words based on a given prefix.
  */
 class Trie {
  private:
     /**
-     *  @brief struct representing nodes in trie
+     * @brief struct representing nodes in the trie
      */
     struct Node {
         std::unordered_map<char16_t, std::shared_ptr<Node>>
@@ -47,7 +48,7 @@ class Trie {
     Trie() = default;
 
     /**
-     * insert string into the trie
+     * @brief insert the string into the trie
      * @param word string to insert in the tree
      */
     void insert(const std::string& word) {
@@ -65,12 +66,11 @@ class Trie {
     }
 
     /**
-     * search a word/string exists inside the trie
+     * @brief search a word/string exists inside the trie
      * @param word string to search for
      * @returns `true` if found
      * @returns `false` if not found
      */
-
     bool search(const std::string& word) {
         std::shared_ptr<Node> curr = root_node;
         for (char ch : word) {
@@ -91,12 +91,11 @@ class Trie {
     }
 
     /**
-     * search a word/string that starts with a given prefix
+     * @brief search a word/string that starts with a given prefix
      * @param prefix string to search for
      * @returns `true` if found
      * @returns `false` if not found
      */
-
     bool startwith(const std::string& prefix) {
         std::shared_ptr<Node> curr = root_node;
         for (char ch : prefix) {
@@ -109,7 +108,7 @@ class Trie {
     }
 
     /**
-     * Delete a word/string from a trie
+     * @brief delete a word/string from a trie
      * @param word string to delete fromm trie
      */
     void delete_word(std::string word) {
@@ -141,9 +140,9 @@ class Trie {
     }
 
     /**
-     *  helper function to predict/recommend words that starts with a given
-     * prefix from the end of prefix's node iterate through all the child nodes
-     * by recursively appending  all the possible words below the trie
+     * @brief helper function to predict/recommend words that starts with a
+     * given prefix from the end of prefix's node iterate through all the child
+     * nodes by recursively appending  all the possible words below the trie
      * @param prefix string to recommend the words
      * @param element node at the end of given prefix
      * @param results list to store the all possible words
@@ -173,11 +172,10 @@ class Trie {
     }
 
     /**
-     * predict/recommend a words that starts with a given prefix
+     * @brief predict/recommend a words that starts with a given prefix
      * @param prefix string to search for
      * @returns list of recommended words
      */
-
     std::vector<std::string> predict_words(const std::string& prefix) {
         std::vector<std::string> result;
         std::shared_ptr<Node> curr = root_node;
@@ -248,7 +246,7 @@ static void test() {
 
     std::cout << "All the Inserted words are present in the trie" << std::endl;
 
-    /*test for startwith prefix method*/
+    // test for startwith prefix method
     assert(!obj.startwith("approachs"));
     assert(obj.startwith("approach"));
     assert(obj.startwith("about"));
@@ -269,7 +267,7 @@ static void test() {
 
     std::cout << "All the tests passed for startwith method" << std::endl;
 
-    /*test for predict_words/recommendation of words based on a given prefix*/
+    // test for predict_words/recommendation of words based on a given prefix
 
     std::vector<std::string> pred_words = obj.predict_words("a");
 
@@ -303,7 +301,7 @@ static void test() {
     assert(pred_words.size() == 2);
     std::cout << "Returned all words that start with prefix bu " << std::endl;
 
-    /*tests for delete method */
+    // tests for delete method
 
     obj.delete_word("app");
     assert(!obj.search("app"));
@@ -316,7 +314,7 @@ static void test() {
     assert(pred_words.size() == 4);
     std::cout << "app is deleted sucessful" << std::endl;
 
-    /*test case for chinese language*/
+    // test case for Chinese language
 
     obj.insert("苹果");
     assert(obj.startwith("苹"));
@@ -333,7 +331,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run Self-test implementaions
+    test();  // run self-test implementaions
 
     return 0;
 }
