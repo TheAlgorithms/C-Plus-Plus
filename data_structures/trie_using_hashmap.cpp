@@ -24,9 +24,17 @@
 namespace data_structures {
 
 /**
- * @brief Trie class. implementation of trie using hashmap in each trie node for
- * all the charters of char16_t(UTF-16)type with methods to insert, delete,
- * search, start with, and to recommend words based on a given prefix.
+ * @namespace trie_using_hashmap
+ * @brief Functions for [Trie](https://en.wikipedia.org/wiki/Trie) data
+ * structure using hashmap implementation
+ */
+namespace trie_using_hashmap {
+
+/**
+ * @brief Trie class. implementation of trie using hashmap in each trie node
+ * for all the charters of char16_t(UTF-16)type with methods to insert,
+ * delete, search, start with, and to recommend words based on a given
+ * prefix.
  */
 class Trie {
  private:
@@ -202,7 +210,7 @@ class Trie {
         return result;
     }
 };
-
+}  // namespace trie_using_hashmap
 }  // namespace data_structures
 
 /**
@@ -210,7 +218,7 @@ class Trie {
  * @returns void
  */
 static void test() {
-    data_structures::Trie obj;
+    data_structures::trie_using_hashmap::Trie obj;
     /* Inserting data into trie using insert method and testing it with search
      * method */
     obj.insert("app");
@@ -332,6 +340,5 @@ static void test() {
  */
 int main() {
     test();  // run self-test implementaions
-
     return 0;
 }
