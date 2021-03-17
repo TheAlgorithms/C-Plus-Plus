@@ -161,6 +161,7 @@
   * [Largest Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/largest_power.cpp)
   * [Lcm Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/lcm_sum.cpp)
   * [Least Common Multiple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/least_common_multiple.cpp)
+  * [Linear Recurrence Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/linear_recurrence_matrix.cpp)
   * [Magic Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/magic_number.cpp)
   * [Miller Rabin](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/miller_rabin.cpp)
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
