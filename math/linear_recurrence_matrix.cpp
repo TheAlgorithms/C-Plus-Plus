@@ -29,7 +29,8 @@ namespace math {
 /**
  * @namespace linear_recurrence_matrix
  * @brief Functions for [Linear Recurrence
- * Matrix](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/).
+ * Matrix](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/)
+ * implementation.
  */
 namespace linear_recurrence_matrix {
 /**
@@ -189,7 +190,7 @@ T get_nth_term_of_recurrence_series(
  * @returns void
  */
 static void test() {
-    /**
+    /*
      * Example 1: [Fibonacci
      * series](https://en.wikipedia.org/wiki/Fibonacci_number);
      *
@@ -209,7 +210,7 @@ static void test() {
                fibonacci_matrix, fib_base_case, 11) == 89LL);
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                fibonacci_matrix, fib_base_case, 39) == 63245986LL);
-    /**
+    /*
      * Example 2: [Tribonacci series](https://oeis.org/A000073)
      *                    [0   0   1]
      * [fn-3  fn-2  fn-1] [1   0   1]  =  [(fn-2)  (fn-1)  (fn-3 + fn-2 + fn-1)]
@@ -236,7 +237,7 @@ static void test() {
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                tribonacci, trib_base_case, 36) == 615693474LL);
 
-    /**
+    /*
      * Example 3: [Pell numbers](https://oeis.org/A000129)
      * `f(n)  = 2* f(n-1) + f(n-2); f(0) = f(1) = 2`
      *
@@ -257,7 +258,7 @@ static void test() {
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                pell_recurrence, pell_base_case, 23) == 636562078LL);
 
-    /**
+    /*
      * Example 4: Custom recurrence relation:
      * Now the recurrence is of the form `a*f(n-1) + b*(fn-2) + ... + c`
      * where `c` is the constant
@@ -287,7 +288,7 @@ static void test() {
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                custom_recurrence, custom_base_case, 19, 1) == 51531251LL);
 
-    /**
+    /*
      * Example 5: Sum fibonacci sequence
      * The following matrix evaluates the sum of first n fibonacci terms in
      * O(27. log2(n)) time.
@@ -321,7 +322,7 @@ static void test() {
                sum_fibo_recurrence, sum_fibo_base_case, 13, 1) == 609LL);
     assert(math::linear_recurrence_matrix::get_nth_term_of_recurrence_series(
                sum_fibo_recurrence, sum_fibo_base_case, 16, 1) == 2583LL);
-    /**
+    /*
      * Example 6: [Tribonacci sum series](https://oeis.org/A000073)
      *                               [0   0   1   1]
      * [fn-3  fn-2  fn-1  s(f, n-1)] [1   0   1   1]
