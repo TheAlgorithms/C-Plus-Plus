@@ -43,9 +43,9 @@ class Trie {
      */
     struct Node {
         std::unordered_map<char16_t, std::shared_ptr<Node>>
-            children;  /// unordered map with key type char16_t and value is a
-                       /// shared pointer type of Node
-        bool word_end = false;  /// boolean variable to represent the node end
+            children;  ///< unordered map with key type char16_t and value is a
+                       ///< shared pointer type of Node
+        bool word_end = false;  ///< boolean variable to represent the node end
     };
 
     std::shared_ptr<Node> root_node =
@@ -74,7 +74,7 @@ class Trie {
     }
 
     /**
-     * @brief search a word/string exists inside the trie
+     * @brief search a word/string inside the trie
      * @param word string to search for
      * @returns `true` if found
      * @returns `false` if not found
@@ -117,7 +117,7 @@ class Trie {
 
     /**
      * @brief delete a word/string from a trie
-     * @param word string to delete fromm trie
+     * @param word string to delete from trie
      */
     void delete_word(std::string word) {
         std::shared_ptr<Node> curr = root_node;
@@ -134,13 +134,14 @@ class Trie {
             nodes.push(curr->children[ch]);
             curr = curr->children[ch];
         }
-        /*delete only when its a word and it has no children after and also no
-         * prefix in the line*/
+        // Delete only when it's a word, and it has children after
+        // or prefix in the line
         if (nodes.top()->word_end) {
             nodes.top()->word_end = false;
         }
+        // Delete only when it has no children after
+        // and also no prefix in the line
         while (!(nodes.top()->word_end) && nodes.top()->children.empty()) {
-            /* code */
             nodes.pop();
             nodes.top()->children.erase(word.back());
             word.pop_back();
@@ -150,9 +151,9 @@ class Trie {
     /**
      * @brief helper function to predict/recommend words that starts with a
      * given prefix from the end of prefix's node iterate through all the child
-     * nodes by recursively appending  all the possible words below the trie
+     * nodes by recursively appending all the possible words below the trie
      * @param prefix string to recommend the words
-     * @param element node at the end of given prefix
+     * @param element node at the end of the given prefix
      * @param results list to store the all possible words
      * @returns list of recommended words
      */
@@ -180,14 +181,14 @@ class Trie {
     }
 
     /**
-     * @brief predict/recommend a words that starts with a given prefix
+     * @brief predict/recommend a word that starts with a given prefix
      * @param prefix string to search for
      * @returns list of recommended words
      */
     std::vector<std::string> predict_words(const std::string& prefix) {
         std::vector<std::string> result;
         std::shared_ptr<Node> curr = root_node;
-        /* treversing till the end of given prefix in trie*/
+        // treversing till the end of given prefix in trie
 
         for (char ch : prefix) {
             if (curr->children.find(ch) == curr->children.end()) {
@@ -197,7 +198,7 @@ class Trie {
             curr = curr->children[ch];
         }
 
-        /* if given prefix is the only word without children */
+        // if the given prefix is the only word without children
         if (curr->word_end && curr->children.empty()) {
             result.push_back(prefix);
             return result;
@@ -219,8 +220,8 @@ class Trie {
  */
 static void test() {
     data_structures::trie_using_hashmap::Trie obj;
-    /* Inserting data into trie using insert method and testing it with search
-     * method */
+    // Inserting data into trie using the insert
+    // method and testing it with search method
     obj.insert("app");
     obj.insert("abscond");
     obj.insert("about");
