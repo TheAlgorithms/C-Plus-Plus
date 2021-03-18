@@ -188,7 +188,7 @@ class Trie {
     std::vector<std::string> predict_words(const std::string& prefix) {
         std::vector<std::string> result;
         std::shared_ptr<Node> curr = root_node;
-        // traversing utill the end of the given prefix in trie
+        // traversing until the end of the given prefix in trie
 
         for (char ch : prefix) {
             if (curr->children.find(ch) == curr->children.end()) {
