@@ -31,15 +31,15 @@ namespace data_structures {
 namespace trie_using_hashmap {
 
 /**
- * @brief Trie class. implementation of trie using hashmap in each trie node
- * for all the charters of char16_t(UTF-16)type with methods to insert,
- * delete, search, start with, and to recommend words based on a given
+ * @brief Trie class, implementation of trie using hashmap in each trie node
+ * for all the characters of char16_t(UTF-16)type with methods to insert,
+ * delete, search, start with and to recommend words based on a given
  * prefix.
  */
 class Trie {
  private:
     /**
-     * @brief struct representing nodes in the trie
+     * @brief struct representing a trie node.
      */
     struct Node {
         std::unordered_map<char16_t, std::shared_ptr<Node>>
@@ -57,7 +57,7 @@ class Trie {
 
     /**
      * @brief insert the string into the trie
-     * @param word string to insert in the tree
+     * @param word string to insert in the trie
      */
     void insert(const std::string& word) {
         std::shared_ptr<Node> curr = root_node;
@@ -188,7 +188,7 @@ class Trie {
     std::vector<std::string> predict_words(const std::string& prefix) {
         std::vector<std::string> result;
         std::shared_ptr<Node> curr = root_node;
-        // traversing utill the end of the given prefix in trie
+        // traversing till the end of the given prefix in trie
 
         for (char ch : prefix) {
             if (curr->children.find(ch) == curr->children.end()) {
