@@ -404,12 +404,12 @@ static void test() {
         [](const machine_learning::aystar_search::EightPuzzle<> &first,
            const machine_learning::aystar_search::EightPuzzle<> &second) {
             uint32_t ret = 0;
-            for (uint32_t i = 0; i < first.get_size(); ++i) {
-                for (uint32_t j = 0; j < first.get_size(); ++j) {
-                    uint32_t find = first.get(i, j);
+            for (int i = 0; i < first.get_size(); ++i) {
+                for (int j = 0; j < first.get_size(); ++j) {
+                    int find = first.get(i, j);
                     int m = -1, n = -1;
-                    for (uint32_t k = 0; k < second.get_size(); ++k) {
-                        for (uint32_t l = 0; l < second.get_size(); ++l) {
+                    for (int k = 0; k < second.get_size(); ++k) {
+                        for (int l = 0; l < second.get_size(); ++l) {
                             if (find == second.get(k, l)) {
                                 std::tie(m, n) = std::make_pair(k, l);
                                 break;
@@ -510,12 +510,12 @@ static void test() {
         [](const machine_learning::aystar_search::EightPuzzle<4> &first,
            const machine_learning::aystar_search::EightPuzzle<4> &second) {
             uint32_t ret = 0;
-            for (uint32_t i = 0; i < first.get_size(); ++i) {
-                for (uint32_t j = 0; j < first.get_size(); ++j) {
+            for (int i = 0; i < first.get_size(); ++i) {
+                for (int j = 0; j < first.get_size(); ++j) {
                     int find = first.get(i, j);
                     int m = -1, n = -1;
-                    for (uint32_t k = 0; k < second.get_size(); ++k) {
-                        for (uint32_t l = 0; l < second.get_size(); ++l) {
+                    for (int k = 0; k < second.get_size(); ++k) {
+                        for (int l = 0; l < second.get_size(); ++l) {
                             if (find == second.get(k, l)) {
                                 std::tie(m, n) = std::make_pair(k, l);
                                 break;
