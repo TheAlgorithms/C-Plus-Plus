@@ -128,21 +128,38 @@ class EightPuzzle {
 
     /**
      * Copy constructor
-     * @param A a reference of an eightPuzzle
+     * @param A a reference of an EightPuzzle
      */
-    explicit EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
+    EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
 
+    /**
+     * @details move constructor
+     * @param A a reference of an EightPuzzle
+     */
+    EightPuzzle(const EightPuzzle<N> &&A) : board(std::move(A.board)) {}
     /**
      * @details Destructor of EightPuzzle
      */
-    ~EightPuzzle() {}
+    ~EightPuzzle() = default;
+
     /**
-     * @details Assignment operator
+     * @details Copy assignment operator
+     * @param A a reference of an EightPuzzle
      */
     EightPuzzle &operator=(const EightPuzzle &A) {
         board = A.board;
         return *this;
     }
+
+    /**
+     * @details Move assignment operator
+     * @param A a reference of an EightPuzzle
+     */
+    EightPuzzle &operator=(const EightPuzzle &&A) {
+        board = std::move(A.board);
+        return *this;
+    }
+
     /**
      * @brief Find all possible states after processing all possible
      * moves, given the current state of the puzzle
@@ -170,7 +187,8 @@ class EightPuzzle {
     }
     /**
      * @brief check whether two boards are equal
-     * @returns `true` if check.state is equal to `this->state`, else `false`
+     * @returns `true` if check.state is equal to `this->state`, else
+     * `false`
      */
     bool operator==(const EightPuzzle<N> &check) const {
         if (check.get_size() != N) {
@@ -253,24 +271,51 @@ class AyStarSearch {
      * state.
      */
     typedef struct Info {
-        Puzzle state;                           // Holds the current state.
-        size_t heuristic_value = 0, depth = 0;  // stores g score and h score
+        Puzzle state;  // Holds the current state.
+        size_t heuristic_value = 0,
+               depth = 0;  // stores g score and h score
+
         /**
          * @details Default constructor
          */
-        Info() {}
+        Info() = default;
+
         /**
          * @details constructor having Puzzle as parameter
+         * @param A a puzzle object
          */
         Info(const Puzzle &A) : state(A) {}
+
         /**
          * @details constructor having three parameters
+         * @param A a puzzle object
+         * @param h_value heuristic value of this puzzle object
+         * @param depth the depth at which this node was found during traversal
          */
         Info(const Puzzle &A, size_t h_value, size_t d)
             : state(A), heuristic_value(h_value), depth(d) {}
 
         /**
-         * @details assignment operator
+         * @details Copy constructor
+         * @param A Info object reference
+         */
+        Info(const Info &A)
+            : state(A.state),
+              heuristic_value(A.heuristic_value),
+              depth(A.depth) {}
+
+        /**
+         * @details Move constructor
+         * @param A Info object reference
+         */
+        Info(const Info &&A)
+            : state(std::move(A.state)),
+              heuristic_value(std::move(A.heuristic_value)),
+              depth(std::move(A.depth)) {}
+
+        /**
+         * @details copy assignment operator
+         * @param A Info object reference
          */
         Info &operator=(const Info &A) {
             state = A.state;
@@ -279,6 +324,19 @@ class AyStarSearch {
             return *this;
         }
 
+        /**
+         * @details move assignment operator
+         */
+        Info &operator=(const Info &&A) {
+            state = std::move(A.state);
+            heuristic_value = std::move(A.heuristic_value);
+            depth = std::move(A.depth);
+            return *this;
+        }
+        /**
+         * @details Destructor for Info
+         */
+        ~Info() = default;
     } Info;
 
     Info Initial;  // Initial state of the AyStarSearch
@@ -303,10 +361,11 @@ class AyStarSearch {
         Final = Info(final);
     }
     /**
-     * @brief A helper solution: launches when a solution for AyStarSearch is
-     * found
+     * @brief A helper solution: launches when a solution for AyStarSearch
+     * is found
      * @param FinalState the pointer to the obtained final state
-     * @param parent_of the list of all parents of nodes stored during A* search
+     * @param parent_of the list of all parents of nodes stored during A*
+     * search
      * @returns the list of moves denoting moves from final state to initial
      * state (in reverse)
      */
@@ -316,8 +375,8 @@ class AyStarSearch {
         //  Useful for traversing from final state to current state.
         Info *current_state = FinalState;
         /*
-         * For storing the solution tree starting from initial state to final
-         * state
+         * For storing the solution tree starting from initial state to
+         * final state
          */
         std::vector<Puzzle> answer;
         while (current_state != nullptr) {
@@ -331,8 +390,8 @@ class AyStarSearch {
      * @param dist the heuristic finction, defined by the user
      * @param permissible_depth the depth at which the A* search discards
      * searching for solution
-     * @returns List of moves from Final state to initial state, if evaluated,
-     * else returns an empty array
+     * @returns List of moves from Final state to initial state, if
+     * evaluated, else returns an empty array
      */
     std::vector<Puzzle> a_star_search(
         const std::function<uint32_t(const Puzzle &, const Puzzle &)> &dist,
@@ -374,12 +433,13 @@ class AyStarSearch {
             }
             // else remove from open list as visited.
             open_list.erase(it_low_f_score);
-            // if current_state has exceeded the allowed depth, skip neighbor
-            // checking
+            // if current_state has exceeded the allowed depth, skip
+            // neighbor checking
             if (current_state->depth >= permissible_depth) {
                 continue;
             }
-            // Generate all possible moves (neighbors) given the current state
+            // Generate all possible moves (neighbors) given the current
+            // state
             std::vector<Puzzle> total_possible_moves =
                 current_state->state.generate_possible_moves();
 
@@ -390,8 +450,8 @@ class AyStarSearch {
                                  current_state->depth + 1};
                 uint32_t temp_g_score = Neighbor.depth;
                 auto neighbor_g_score_iter = g_score.find(Neighbor);
-                // if the neighbor is already created and has minimum g_score,
-                // then update g_score and f_score else insert new
+                // if the neighbor is already created and has minimum
+                // g_score, then update g_score and f_score else insert new
                 if (neighbor_g_score_iter != g_score.end()) {
                     if (neighbor_g_score_iter->second > temp_g_score) {
                         neighbor_g_score_iter->second = temp_g_score;
