@@ -136,7 +136,8 @@ class EightPuzzle {
      * @details move constructor
      * @param A a reference of an EightPuzzle
      */
-    EightPuzzle(const EightPuzzle<N> &&A) : board(std::move(A.board)) {}
+    EightPuzzle(const EightPuzzle<N> &&A) noexcept
+        : board(std::move(A.board)) {}
     /**
      * @details Destructor of EightPuzzle
      */
@@ -155,7 +156,7 @@ class EightPuzzle {
      * @details Move assignment operator
      * @param A a reference of an EightPuzzle
      */
-    EightPuzzle &operator=(const EightPuzzle &&A) {
+    EightPuzzle &operator=(const EightPuzzle &&A) noexcept {
         board = std::move(A.board);
         return *this;
     }
@@ -284,7 +285,7 @@ class AyStarSearch {
          * @details constructor having Puzzle as parameter
          * @param A a puzzle object
          */
-        Info(const Puzzle &A) : state(A) {}
+        explicit Info(const Puzzle &A) : state(A) {}
 
         /**
          * @details constructor having three parameters
@@ -308,7 +309,7 @@ class AyStarSearch {
          * @details Move constructor
          * @param A Info object reference
          */
-        Info(const Info &&A)
+        Info(const Info &&A) noexcept
             : state(std::move(A.state)),
               heuristic_value(std::move(A.heuristic_value)),
               depth(std::move(A.depth)) {}
@@ -327,7 +328,7 @@ class AyStarSearch {
         /**
          * @details move assignment operator
          */
-        Info &operator=(const Info &&A) {
+        Info &operator=(const Info &&A) noexcept {
             state = std::move(A.state);
             heuristic_value = std::move(A.heuristic_value);
             depth = std::move(A.depth);
