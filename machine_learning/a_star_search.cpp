@@ -156,7 +156,7 @@ class EightPuzzle {
      * @details Move assignment operator
      * @param A a reference of an EightPuzzle
      */
-    EightPuzzle &operator=(const EightPuzzle &&A) noexcept {
+    EightPuzzle const &operator=(const EightPuzzle &&A) noexcept {
         board = std::move(A.board);
         return *this;
     }
@@ -328,7 +328,7 @@ class AyStarSearch {
         /**
          * @details move assignment operator
          */
-        Info &operator=(const Info &&A) noexcept {
+        Info const &operator=(const Info &&A) noexcept {
             state = std::move(A.state);
             heuristic_value = std::move(A.heuristic_value);
             depth = std::move(A.depth);
