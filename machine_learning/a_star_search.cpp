@@ -156,7 +156,7 @@ class EightPuzzle {
      * @details Move assignment operator
      * @param A a reference of an EightPuzzle
      */
-    EightPuzzle const &operator=(const EightPuzzle &&A) noexcept {
+    EightPuzzle operator=(const EightPuzzle &&A) noexcept {
         board = std::move(A.board);
         return *this;
     }
@@ -285,7 +285,7 @@ class AyStarSearch {
          * @details constructor having Puzzle as parameter
          * @param A a puzzle object
          */
-        explicit Info(const Puzzle &A) : state(A) {}
+        explicit Info(Puzzle A) : state(std::move(A)) {}
 
         /**
          * @details constructor having three parameters
@@ -293,8 +293,8 @@ class AyStarSearch {
          * @param h_value heuristic value of this puzzle object
          * @param depth the depth at which this node was found during traversal
          */
-        Info(const Puzzle &A, size_t h_value, size_t d)
-            : state(A), heuristic_value(h_value), depth(d) {}
+        Info(Puzzle A, size_t h_value, size_t d)
+            : state(std::move(A)), heuristic_value(h_value), depth(d) {}
 
         /**
          * @details Copy constructor
@@ -328,7 +328,7 @@ class AyStarSearch {
         /**
          * @details move assignment operator
          */
-        Info const &operator=(const Info &&A) noexcept {
+        Info &operator=(const Info &&A) noexcept {
             state = std::move(A.state);
             heuristic_value = std::move(A.heuristic_value);
             depth = std::move(A.depth);
