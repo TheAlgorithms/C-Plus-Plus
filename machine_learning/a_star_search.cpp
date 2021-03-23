@@ -65,10 +65,13 @@ class EightPuzzle {
      * respectively, else returns -1, -1
      */
     std::pair<int, int> find_zero() {
-        for (int i = 0; i < N; ++i)
-            for (int j = 0; j < N; ++j)
-                if (!board[i][j])
+        for (int i = 0; i < N; ++i) {
+            for (int j = 0; j < N; ++j) {
+                if (!board[i][j]) {
                     return {i, j};
+                }
+            }
+        }
         return {-1, -1};
     }
     /**
@@ -91,8 +94,9 @@ class EightPuzzle {
      * @returns -1 if invalid i or j position
      */
     int get(size_t i, size_t j) const {
-        if (in_range(i) && in_range(j))
+        if (in_range(i) && in_range(j)) {
             return board[i][j];
+        }
         return -1;
     }
     /**
@@ -157,8 +161,9 @@ class EightPuzzle {
      * @returns `true` if check.state is equal to `this->state`, else `false`
      */
     bool operator==(const EightPuzzle<N> &check) const {
-        if (check.get_size() != N)
+        if (check.get_size() != N) {
             return false;
+        }
         for (size_t i = 0; i < N; ++i) {
             for (size_t j = 0; j < N; ++j) {
                 if (board[i][j] != check.board[i][j]) {
