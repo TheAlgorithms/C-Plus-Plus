@@ -130,7 +130,19 @@ class EightPuzzle {
      * Copy constructor
      * @param A a reference of an eightPuzzle
      */
-    EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
+    explicit EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
+
+    /**
+     * @details Destructor of EightPuzzle
+     */
+    ~EightPuzzle() {}
+    /**
+     * @details Assignment operator
+     */
+    EightPuzzle &operator=(const EightPuzzle &A) {
+        board = A.board;
+        return *this;
+    }
     /**
      * @brief Find all possible states after processing all possible
      * moves, given the current state of the puzzle
@@ -241,8 +253,32 @@ class AyStarSearch {
      * state.
      */
     typedef struct Info {
-        Puzzle state;
-        size_t heuristic_value, depth;
+        Puzzle state;                           // Holds the current state.
+        size_t heuristic_value = 0, depth = 0;  // stores g score and h score
+        /**
+         * @details Default constructor
+         */
+        Info() {}
+        /**
+         * @details constructor having Puzzle as parameter
+         */
+        Info(const Puzzle &A) : state(A) {}
+        /**
+         * @details constructor having three parameters
+         */
+        Info(const Puzzle &A, size_t h_value, size_t d)
+            : state(A), heuristic_value(h_value), depth(d) {}
+
+        /**
+         * @details assignment operator
+         */
+        Info &operator=(const Info &A) {
+            state = A.state;
+            heuristic_value = A.heuristic_value;
+            depth = A.depth;
+            return *this;
+        }
+
     } Info;
 
     Info Initial;  // Initial state of the AyStarSearch
@@ -262,8 +298,10 @@ class AyStarSearch {
      * @param initial denoting initial state of the puzzle
      * @param final denoting final state of the puzzle
      */
-    AyStarSearch(const Puzzle &initial, const Puzzle &final)
-        : Initial({initial, 0, 0}), Final({final, 0, 0}) {}
+    AyStarSearch(const Puzzle &initial, const Puzzle &final) {
+        Initial = Info(initial);
+        Final = Info(final);
+    }
     /**
      * @brief A helper solution: launches when a solution for AyStarSearch is
      * found
