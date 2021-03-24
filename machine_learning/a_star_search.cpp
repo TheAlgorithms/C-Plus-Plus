@@ -148,7 +148,7 @@ class EightPuzzle {
     /**
      * @brief Destructor of EightPuzzle
      */
-    ~EightPuzzle() {}
+    ~EightPuzzle() = default;
 
     /**
      * @brief Copy assignment operator
@@ -345,7 +345,7 @@ class AyStarSearch {
         /**
          * @brief Destructor for Info
          */
-        ~Info() {}
+        ~Info() = default;
     } Info;
 
     Info Initial;  // Initial state of the AyStarSearch
