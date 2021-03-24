@@ -71,9 +71,9 @@ class EightPuzzle {
      * @returns a pair indicating integer distances from top and right
      * respectively, else returns -1, -1
      */
-    std::pair<int, int> find_zero() {
-        for (int i = 0; i < N; ++i) {
-            for (int j = 0; j < N; ++j) {
+    std::pair<uint32_t, uint32_t> find_zero() {
+        for (size_t i = 0; i < N; ++i) {
+            for (size_t j = 0; j < N; ++j) {
                 if (!board[i][j]) {
                     return {i, j};
                 }
@@ -86,7 +86,7 @@ class EightPuzzle {
      * @param value index for the current board
      * @returns `true` if index is within the board, else `false`
      */
-    inline bool in_range(const int value) const {
+    inline bool in_range(const uint32_t value) const {
         return value >= 0 && value < N;
     }
 
@@ -100,7 +100,7 @@ class EightPuzzle {
      * column
      * @returns -1 if invalid i or j position
      */
-    int get(size_t i, size_t j) const {
+    uint32_t get(size_t i, size_t j) const {
         if (in_range(i) && in_range(j)) {
             return board[i][j];
         }
@@ -417,7 +417,7 @@ class AyStarSearch {
      */
     std::vector<Puzzle> a_star_search(
         const std::function<uint32_t(const Puzzle &, const Puzzle &)> &dist,
-        const int permissible_depth = 30) {
+        const uint32_t permissible_depth = 30) {
         std::map<Info, Info *, comparison_operator>
             parent_of;  /// Stores the parent of the states
         std::map<Info, uint32_t, comparison_operator>
@@ -548,12 +548,12 @@ static void test() {
         [](const machine_learning::aystar_search::EightPuzzle<> &first,
            const machine_learning::aystar_search::EightPuzzle<> &second) {
             uint32_t ret = 0;
-            for (int i = 0; i < first.get_size(); ++i) {
-                for (int j = 0; j < first.get_size(); ++j) {
-                    int find = first.get(i, j);
+            for (size_t i = 0; i < first.get_size(); ++i) {
+                for (size_t j = 0; j < first.get_size(); ++j) {
+                    uint32_t find = first.get(i, j);
                     int m = -1, n = -1;
-                    for (int k = 0; k < second.get_size(); ++k) {
-                        for (int l = 0; l < second.get_size(); ++l) {
+                    for (size_t k = 0; k < second.get_size(); ++k) {
+                        for (size_t l = 0; l < second.get_size(); ++l) {
                             if (find == second.get(k, l)) {
                                 std::tie(m, n) = std::make_pair(k, l);
                                 break;
@@ -656,12 +656,12 @@ static void test() {
         [](const machine_learning::aystar_search::EightPuzzle<4> &first,
            const machine_learning::aystar_search::EightPuzzle<4> &second) {
             uint32_t ret = 0;
-            for (int i = 0; i < first.get_size(); ++i) {
-                for (int j = 0; j < first.get_size(); ++j) {
-                    int find = first.get(i, j);
+            for (size_t i = 0; i < first.get_size(); ++i) {
+                for (size_t j = 0; j < first.get_size(); ++j) {
+                    uint32_t find = first.get(i, j);
                     int m = -1, n = -1;
-                    for (int k = 0; k < second.get_size(); ++k) {
-                        for (int l = 0; l < second.get_size(); ++l) {
+                    for (size_t k = 0; k < second.get_size(); ++k) {
+                        for (size_t l = 0; l < second.get_size(); ++l) {
                             if (find == second.get(k, l)) {
                                 std::tie(m, n) = std::make_pair(k, l);
                                 break;
