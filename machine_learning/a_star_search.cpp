@@ -260,17 +260,30 @@ class EightPuzzle {
     }
 };
 /**
- * AyStarSearch class is defined for certain initial and final state and
- * computed by aystar algorithm
+ * @class AyStarSearch
+ * @brief A class defining [A* search
+ * algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm). for some
+ * initial state and final state
+ * @details AyStarSearch class is defined as the informed search algorithm
+ * that is formulated in terms of weighted graphs: starting from a specific
+ * starting node of a graph (initial state), it aims to find a path to the given
+ * goal node having the smallest cost (least distance travelled, shortest time,
+ * etc.)
+ * The weighted edges (or cost) is evaluated on two factors, G score
+ * (cost required from starting node or initial state to current state) and H
+ * score (cost required from current state to final state). The `F(state)`, then
+ * is evaluated as:
+ * `F(state) = G(state) + H(state)`.
+ * The best search would be the final state having minimum `F(state)` value
  * @tparam Puzzle denotes the puzzle or problem involving initial state and
  * final state to be solved by A* search.
  * @note 1. The algorithm is referred from pesudocode from
  * [Wikipedia page](https://en.wikipedia.org/wiki/A*_search_algorithm)
  * as is.
- * 2. For AyStarSearch to work, the definitions for template Puzzle is
+ * 2. For `AyStarSearch` to work, the definitions for template Puzzle is
  * compulsory.
- * a. Comparison operator for template Puzzle (<, ==, and <=)
- * b. generate_possible_moves()
+ * a. Comparison operator for template Puzzle (`<`, `==`, and `<=`)
+ * b. `generate_possible_moves()`
  */
 template <typename Puzzle>
 class AyStarSearch {
