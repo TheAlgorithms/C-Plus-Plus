@@ -20,7 +20,7 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <algorithm>   /// for `std::reverse` function
-#include <array>       /// for `EightPuzzle` board
+#include <array>       /// for `std::array`, representing `EightPuzzle` board
 #include <cassert>     /// for `assert`
 #include <functional>  /// for `std::function` STL
 #include <iostream>    /// for IO operations
@@ -35,11 +35,13 @@ namespace machine_learning {
 /**
  * @namespace aystar_search
  * @brief Functions for [A*
- * Search](https://en.wikipedia.org/wiki/A*_search_algorithm).
+ * Search](https://en.wikipedia.org/wiki/A*_search_algorithm) implementation.
  */
 namespace aystar_search {
 /**
  * @class EightPuzzle
+ * @brief A class defining [EightPuzzle/15-Puzzle
+ * game](https://en.wikipedia.org/wiki/15_puzzle).
  * @details
  * A well known 3 x 3 puzzle of the form
  * `
@@ -55,10 +57,15 @@ namespace aystar_search {
  */
 template <size_t N = 3>
 class EightPuzzle {
-    // N x N array to store the current state of the Puzzle.
-    std::array<std::array<int, N>, N> board;
-    // A helper array to evaluate the next state from current state
-    std::vector<std::pair<int, int>> moves = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    std::array<std::array<uint32_t, N>, N>
+        board;  /// N x N array to store the current state of the Puzzle.
+
+    std::vector<std::pair<int, int>> moves = {
+        {0, 1},
+        {1, 0},
+        {0, -1},
+        {-1,
+         0}};  /// A helper array to evaluate the next state from current state;
     /**
      * @brief Finds an empty space in puzzle (in this case; a zero)
      * @returns a pair indicating integer distances from top and right
@@ -102,7 +109,7 @@ class EightPuzzle {
     /**
      * @brief Returns the current state of the board
      */
-    std::array<std::array<int, N>, N> get_state() { return board; }
+    std::array<std::array<uint32_t, N>, N> get_state() { return board; }
 
     /**
      * @brief returns the size of the EightPuzzle (number of row / column)
@@ -110,7 +117,7 @@ class EightPuzzle {
      */
     inline size_t get_size() const { return N; }
     /**
-     * Default constructor for EightPuzzle
+     * @brief Default constructor for EightPuzzle
      */
     EightPuzzle() {
         for (size_t i = 0; i < N; ++i) {
@@ -123,17 +130,17 @@ class EightPuzzle {
      * Parameterized Constructor for EightPuzzle
      * @param init a 2-dimensional array denoting a puzzle configuration
      */
-    explicit EightPuzzle(const std::array<std::array<int, N>, N> &init)
+    explicit EightPuzzle(const std::array<std::array<uint32_t, N>, N> &init)
         : board(init) {}
 
     /**
-     * Copy constructor
+     * @brief Copy constructor
      * @param A a reference of an EightPuzzle
      */
     EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
 
     /**
-     * @details move constructor
+     * @brief Move constructor
      * @param A a reference of an EightPuzzle
      */
     EightPuzzle(const EightPuzzle<N> &&A) noexcept
@@ -141,10 +148,10 @@ class EightPuzzle {
     /**
      * @details Destructor of EightPuzzle
      */
-    ~EightPuzzle() = default;
+    ~EightPuzzle() {}
 
     /**
-     * @details Copy assignment operator
+     * @brief Copy assignment operator
      * @param A a reference of an EightPuzzle
      */
     EightPuzzle &operator=(const EightPuzzle &A) {
@@ -153,7 +160,7 @@ class EightPuzzle {
     }
 
     /**
-     * @details Move assignment operator
+     * @brief Move assignment operator
      * @param A a reference of an EightPuzzle
      */
     EightPuzzle &operator=(EightPuzzle &&A) noexcept {
@@ -175,7 +182,7 @@ class EightPuzzle {
             if (in_range(zero_pos.first + move.first) &&
                 in_range(zero_pos.second + move.second)) {
                 // swap with the possible moves
-                std::array<std::array<int, N>, N> new_config = board;
+                std::array<std::array<uint32_t, N>, N> new_config = board;
                 std::swap(new_config[zero_pos.first][zero_pos.second],
                           new_config[zero_pos.first + move.first]
                                     [zero_pos.second + move.second]);
@@ -272,23 +279,23 @@ class AyStarSearch {
      * state.
      */
     typedef struct Info {
-        Puzzle state;  // Holds the current state.
-        size_t heuristic_value = 0,
-               depth = 0;  // stores g score and h score
+        Puzzle state;                /// Holds the current state.
+        size_t heuristic_value = 0;  /// stores h score
+        size_t depth = 0;            /// stores g score
 
         /**
-         * @details Default constructor
+         * @brief Default constructor
          */
         Info() = default;
 
         /**
-         * @details constructor having Puzzle as parameter
+         * @brief constructor having Puzzle as parameter
          * @param A a puzzle object
          */
         explicit Info(Puzzle A) : state(std::move(A)) {}
 
         /**
-         * @details constructor having three parameters
+         * @brief constructor having three parameters
          * @param A a puzzle object
          * @param h_value heuristic value of this puzzle object
          * @param depth the depth at which this node was found during traversal
@@ -297,7 +304,7 @@ class AyStarSearch {
             : state(std::move(A)), heuristic_value(h_value), depth(d) {}
 
         /**
-         * @details Copy constructor
+         * @brief Copy constructor
          * @param A Info object reference
          */
         Info(const Info &A)
@@ -306,7 +313,7 @@ class AyStarSearch {
               depth(A.depth) {}
 
         /**
-         * @details Move constructor
+         * @brief Move constructor
          * @param A Info object reference
          */
         Info(const Info &&A) noexcept
@@ -315,7 +322,7 @@ class AyStarSearch {
               depth(std::move(A.depth)) {}
 
         /**
-         * @details copy assignment operator
+         * @brief copy assignment operator
          * @param A Info object reference
          */
         Info &operator=(const Info &A) {
@@ -326,7 +333,8 @@ class AyStarSearch {
         }
 
         /**
-         * @details move assignment operator
+         * @brief move assignment operator
+         * @param A Info object reference
          */
         Info &operator=(Info &&A) noexcept {
             state = std::move(A.state);
@@ -335,9 +343,9 @@ class AyStarSearch {
             return *this;
         }
         /**
-         * @details Destructor for Info
+         * @brief Destructor for Info
          */
-        ~Info() = default;
+        ~Info() {}
     } Info;
 
     Info Initial;  // Initial state of the AyStarSearch
@@ -398,11 +406,11 @@ class AyStarSearch {
         const std::function<uint32_t(const Puzzle &, const Puzzle &)> &dist,
         const int permissible_depth = 15) {
         std::map<Info, Info *, comparison_operator>
-            parent_of;  // Stores the parent of the states
+            parent_of;  /// Stores the parent of the states
         std::map<Info, uint32_t, comparison_operator>
-            g_score;  // Stores the g_score
+            g_score;  /// Stores the g_score
         std::set<Info, comparison_operator>
-            open_list;  // Stores the list to explore
+            open_list;  /// Stores the list to explore
 
         // Before starting the AyStartSearch, initialize the set and maps
         open_list.emplace(Initial);
@@ -480,16 +488,17 @@ class AyStarSearch {
 };
 }  // namespace aystar_search
 }  // namespace machine_learning
+
 /**
  * @brief Self test-implementations
  * @returns void
  */
 static void test() {
     // Renaming for simplicity
-    using matrix3 = std::array<std::array<int, 3>, 3>;
-    using row3 = std::array<int, 3>;
-    using matrix4 = std::array<std::array<int, 4>, 4>;
-    using row4 = std::array<int, 4>;
+    using matrix3 = std::array<std::array<uint32_t, 3>, 3>;
+    using row3 = std::array<uint32_t, 3>;
+    using matrix4 = std::array<std::array<uint32_t, 4>, 4>;
+    using row4 = std::array<uint32_t, 4>;
     // Test 1: A* search for simple algorithm
     matrix3 puzzle;
     puzzle[0] = row3({0, 2, 3});
@@ -531,12 +540,13 @@ static void test() {
             return ret;
         };
 
-    machine_learning::aystar_search::EightPuzzle<> Puzzle(puzzle), Ideal(ideal);
+    machine_learning::aystar_search::EightPuzzle<> Puzzle(puzzle);
+    machine_learning::aystar_search::EightPuzzle<> Ideal(ideal);
     machine_learning::aystar_search::AyStarSearch<
         machine_learning::aystar_search::EightPuzzle<3>>
-        search(Puzzle, Ideal);
+        search(Puzzle, Ideal);  /// Search object
 
-    std::vector<matrix3> answer;
+    std::vector<matrix3> answer;  /// Array that validates the answer
 
     answer.push_back(
         matrix3({row3({0, 2, 3}), row3({1, 5, 6}), row3({4, 7, 8})}));
@@ -572,6 +582,7 @@ static void test() {
 
     Puzzle = machine_learning::aystar_search::EightPuzzle<>(puzzle);
     Ideal = machine_learning::aystar_search::EightPuzzle<>(ideal);
+
     // Initialize the search object
     search = machine_learning::aystar_search::AyStarSearch<
         machine_learning::aystar_search::EightPuzzle<3>>(Puzzle, Ideal);
