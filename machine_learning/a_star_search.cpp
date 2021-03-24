@@ -530,7 +530,7 @@ static void test() {
     using row3 = std::array<uint32_t, 3>;
     using matrix4 = std::array<std::array<uint32_t, 4>, 4>;
     using row4 = std::array<uint32_t, 4>;
-    // Test 1: A* search for simple algorithm
+    // 1st test: A* search for simple EightPuzzle problem
     matrix3 puzzle;
     puzzle[0] = row3({0, 2, 3});
     puzzle[1] = row3({1, 5, 6});
@@ -601,7 +601,7 @@ static void test() {
         ++i;
     }
 
-    // Test 2: Complicated search
+    // 2nd problem: A* search for complicated EightPuzzle problem
     // Initial state
     puzzle[0] = row3({5, 7, 3});
     puzzle[1] = row3({2, 0, 6});
@@ -628,7 +628,7 @@ static void test() {
         std::cout << *it << std::endl;
     }
 
-    // Test 3: Complicated search for 16-Puzzle
+    // 3rd test: A* search for 15-Puzzle
     // Initial State of the puzzle
     matrix4 puzzle2;
     puzzle2[0] = row4({5, 1, 2, 3});
