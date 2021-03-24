@@ -601,7 +601,7 @@ static void test() {
         ++i;
     }
 
-    // 2nd problem: A* search for complicated EightPuzzle problem
+    // 2nd test: A* search for complicated EightPuzzle problem
     // Initial state
     puzzle[0] = row3({5, 7, 3});
     puzzle[1] = row3({2, 0, 6});
