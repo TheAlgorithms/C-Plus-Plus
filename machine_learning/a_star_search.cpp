@@ -127,7 +127,7 @@ class EightPuzzle {
         }
     }
     /**
-     * Parameterized Constructor for EightPuzzle
+     * @brief Parameterized Constructor for EightPuzzle
      * @param init a 2-dimensional array denoting a puzzle configuration
      */
     explicit EightPuzzle(const std::array<std::array<uint32_t, N>, N> &init)
@@ -146,7 +146,7 @@ class EightPuzzle {
     EightPuzzle(const EightPuzzle<N> &&A) noexcept
         : board(std::move(A.board)) {}
     /**
-     * @details Destructor of EightPuzzle
+     * @brief Destructor of EightPuzzle
      */
     ~EightPuzzle() {}
 
