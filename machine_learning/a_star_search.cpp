@@ -417,13 +417,15 @@ class AyStarSearch {
      */
     std::vector<Puzzle> a_star_search(
         const std::function<uint32_t(const Puzzle &, const Puzzle &)> &dist,
-        const int permissible_depth = 15) {
+        const int permissible_depth = 30) {
         std::map<Info, Info *, comparison_operator>
             parent_of;  /// Stores the parent of the states
         std::map<Info, uint32_t, comparison_operator>
             g_score;  /// Stores the g_score
         std::set<Info, comparison_operator>
             open_list;  /// Stores the list to explore
+        std::set<Info, comparison_operator>
+            closed_list;  /// Stores the list that are explored
 
         // Before starting the AyStartSearch, initialize the set and maps
         open_list.emplace(Initial);
@@ -471,6 +473,21 @@ class AyStarSearch {
                 Info Neighbor = {neighbor, dist(neighbor, Final.state),
                                  current_state->depth + 1};
                 uint32_t temp_g_score = Neighbor.depth;
+
+                // Check whether this state is explored.
+                // If this state is discovered at greater depth, then discard,
+                // else remove from closed list and explore the node
+                auto closed_list_iter = closed_list.find(Neighbor);
+                if (closed_list_iter != closed_list.end()) {
+                    // 1. If state in closed list has higher depth, then remove
+                    // from list since we have found better option,
+                    // 2. Else don't explore this state.
+                    if (Neighbor.depth < closed_list_iter->depth) {
+                        closed_list.erase(closed_list_iter);
+                    } else {
+                        continue;
+                    }
+                }
                 auto neighbor_g_score_iter = g_score.find(Neighbor);
                 // if the neighbor is already created and has minimum
                 // g_score, then update g_score and f_score else insert new
@@ -494,6 +511,7 @@ class AyStarSearch {
                     open_list.emplace(Neighbor);
                 }
             }
+            closed_list.emplace(*current_state);
         }
         // Cannot find the solution, return empty vector
         return std::vector<Puzzle>(0);
