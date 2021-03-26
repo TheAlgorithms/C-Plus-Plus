@@ -17,7 +17,6 @@ R integral(I a, I b, R (*f)(I), unsigned subdivisions) {
 
 //uncomment the following for testing
 /*
-#ifdef TEST_INTEGRAL
 #include <cmath>
 #include <iostream>
 //note that the integral function in an approximation, so assert(integral(...), actual_value) doesn't really make sense.
@@ -33,7 +32,6 @@ R testAgainst(I a, I b, R (*f)(I), unsigned subdivisions, R expected_value) {
 bool test(); //see integral.cpp
 */
 
-#endif
 //put the following in a .cpp file for testing purposes
 /*
 #include "integral.hpp"
