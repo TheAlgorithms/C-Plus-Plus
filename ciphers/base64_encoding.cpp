@@ -103,7 +103,7 @@ uint8_t find_idx(const char c) {
 /**
  * @brief Base64 Decoder
  * @details Decodes the Base64 string
- * @param input Input as a Base64 string
+ * @param base64_str Input as a Base64 string
  * @returns Base64 decoded string
  */
 std::string base64_decode(const std::string &base64_str) {
