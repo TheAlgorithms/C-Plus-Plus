@@ -117,8 +117,8 @@ std::string base64_decode(const std::string &base64_str) {
         // Actual str characters are of 8 bits (or 1 byte):
         // :: 8 bits are decode by taking 6 bits from 1st byte of base64 string
         // and first 2 bits from 2nd byte of base64 string.
-        char first_actual_byte =
-            (find_idx(first_byte) << 2) | ((find_idx(second_byte)) >> 4);
+        char first_actual_byte = static_cast<char>(
+            (find_idx(first_byte) << 2) | ((find_idx(second_byte)) >> 4));
         base64_decoded.push_back(first_actual_byte);
         if (i + 2 < base64_str.size() && base64_str[i + 2] != '=') {
             /// Third 6-bit representation of Base64
@@ -126,8 +126,9 @@ std::string base64_decode(const std::string &base64_str) {
             // :: Next 8 bits are decode by taking remaining 4 bits from 2nd
             // byte of base64 string and first 4 bits from 3rd byte of base64
             // string.
-            char second_actual_byte = ((find_idx(second_byte) & 0x0F) << 4) |
-                                      (((find_idx(third_byte))) >> 2);
+            char second_actual_byte =
+                static_cast<char>(((find_idx(second_byte) & 0x0F) << 4) |
+                                  (find_idx(third_byte) >> 2));
             base64_decoded.push_back(second_actual_byte);
 
             if (i + 3 < base64_str.size() && base64_str[i + 3] != '=') {
@@ -135,8 +136,9 @@ std::string base64_decode(const std::string &base64_str) {
                 char fourth_byte = base64_str[i + 3];
                 // :: Taking remaining 2 bits from 3rd byte of base64 string
                 // and all 6 bits from 4th byte of base64 string.
-                char third_actual_byte = ((find_idx(third_byte) & 0x03) << 6) |
-                                         find_idx(fourth_byte);
+                char third_actual_byte =
+                    static_cast<char>(((find_idx(third_byte) & 0x03) << 6) |
+                                      find_idx(fourth_byte));
                 base64_decoded.push_back(third_actual_byte);
             }
         }
