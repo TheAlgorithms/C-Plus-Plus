@@ -11,7 +11,7 @@
  * digits.
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-
+#include <array>     /// for `std::array`
 #include <cassert>   /// for `assert` operations
 #include <iostream>  /// for IO operations
 
@@ -29,7 +29,7 @@ namespace base64_encoding {
 // chars denoting the format for encoding and decoding array.
 // This array is already decided by
 // [RFC4648](https://tools.ietf.org/html/rfc4648#section-4) standard
-const char chars[] =
+const std::string chars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 /**
  * @brief Base64 Encoder
