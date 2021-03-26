@@ -14,6 +14,7 @@
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
+  * [Base64 Encoding](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/base64_encoding.cpp)
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/hill_cipher.cpp)
   * [Morse Code](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/morse_code.cpp)
