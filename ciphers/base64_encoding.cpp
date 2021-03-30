@@ -16,10 +16,10 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace cipher
+ * @namespace ciphers
  * @brief Cipher algorithms
  */
-namespace cipher {
+namespace ciphers {
 /**
  * @namespace base64_encoding
  * @brief Functions for [Base64 Encoding and
@@ -81,8 +81,9 @@ std::string base64_encode(const std::string &input) {
     return base64_string;
 }
 /**
- * @brief Utility for finding index
- * @details Utility for finding position of character in array `chars`
+ * @brief Utility function for finding index
+ * @details Utility function for finding the position of a character in array
+ * `chars`
  * @param c character to search in array `chars`
  * @returns integer denoting position of character in array `chars`
  */
@@ -146,7 +147,7 @@ std::string base64_decode(const std::string &base64_str) {
     return base64_decoded;
 }
 }  // namespace base64_encoding
-}  // namespace cipher
+}  // namespace ciphers
 
 /**
  * @brief Self test-implementations
@@ -156,14 +157,14 @@ static void test() {
     // 1st Test
     std::string str =
         "To err is human, but to really foul things up you need a computer.";
-    std::string base64_str = cipher::base64_encoding::base64_encode(str);
+    std::string base64_str = ciphers::base64_encoding::base64_encode(str);
     std::string verify =
         "VG8gZXJyIGlzIGh1bWFuLCBidXQgdG8gcmVhbGx5IGZvdWwgdGhpbmdzIHVwIHlvdSBuZW"
         "VkIGEgY29tcHV0ZXIu";
     // verify encoding
     assert(base64_str == verify);
     std::string original_str =
-        cipher::base64_encoding::base64_decode(base64_str);
+        ciphers::base64_encoding::base64_decode(base64_str);
     // verify decoding
     assert(original_str == str);
 
@@ -174,7 +175,7 @@ static void test() {
         "perseverance of delight in the continued and indefatigable generation "
         "of knowledge, exceeds the short vehemence of any carnal pleasure.";
 
-    base64_str = cipher::base64_encoding::base64_encode(str);
+    base64_str = ciphers::base64_encoding::base64_encode(str);
     verify =
         "TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieS"
         "B0aGlzIHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB3aGljaCBpcyBh"
@@ -184,7 +185,7 @@ static void test() {
         "Vhc3VyZS4=";
     // verify encoding
     assert(base64_str == verify);
-    original_str = cipher::base64_encoding::base64_decode(base64_str);
+    original_str = ciphers::base64_encoding::base64_decode(base64_str);
     // verify decoding
     assert(original_str == str);
 }
