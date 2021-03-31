@@ -168,7 +168,7 @@ static void test() {
     // verify decoding
     assert(original_str == str);
 
-    // 2nd Test: from [Wikipedia](https://en.wikipedia.org/wiki/Base64)
+    // 2nd Test from [Wikipedia](https://en.wikipedia.org/wiki/Base64)
     str =
         "Man is distinguished, not only by his reason, but by this singular "
         "passion from other animals, which is a lust of the mind, that by a "
