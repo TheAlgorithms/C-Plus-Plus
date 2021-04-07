@@ -56,13 +56,13 @@ Insert, Replace or Delete
 
 int min(int x, int y, int z) {
   if (x <= y && x <= z) {
-    return x; // return z, if x is the minimum value
+    return x; // returns x, if x is the minimum value
   }
   if (y <= x && y <= z) {
-    return y; // return y, if y is the minimum value
+    return y; // returns y, if y is the minimum value
   }
   else {
-    return z; // return z if z is the minimum value
+    return z; // returns z if z is the minimum value
   }
 }
 
