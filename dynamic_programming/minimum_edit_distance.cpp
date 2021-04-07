@@ -29,7 +29,7 @@
  * For Remove: Recur for for m-1 and n
  * For Replace: Recur for for m-1 and n-1
  *
- * @author [Nirzak](github.com/nirzak)
+ * @author [Nirjas Jakilim](github.com/nirzak)
  */
 
 #include <cassert>     /// for assert
@@ -108,7 +108,7 @@ int editDistDP(std::string str1, std::string str2, int m, int n) {
 
 /**
  * @brief function to test above algorithm
- * returns void
+ * @returns void
  */
 
 static void test() {
@@ -135,11 +135,12 @@ static void test() {
 
 /**
  * @brief main function
- * returns 0 on exit
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
  */
 
-int main() {
-  // Testing
-  test();
+int main(int argc, char *argv[]) {
+  test(); // execute the tests
   return 0;
 }
