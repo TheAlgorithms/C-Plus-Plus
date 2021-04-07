@@ -1,15 +1,14 @@
 /**
  * @file
- * @brief Implementation of Minimum Edit Distance using Dynamic Programing
- * (https://en.wikipedia.org/wiki/Edit_distance)
+ * @brief Implementation of [Minimum Edit Distance](https://en.wikipedia.org/wiki/Edit_distance) using Dynamic Programing
  *
- * #deatils
+ * @details
  *
  * Given two strings str1 & str2 and we have to calculate the minimum
  * number of operations (Insert, Remove, Replace) required to convert
  * str1 to str2.
  *
- * #algorithm
+ * ### Algorithm
  *
  * We will solve this problem using Naive recursion. But as we are
  * approaching with a DP solution. So, we will take a DP array to
@@ -30,12 +29,12 @@
  * For Remove: Recur for for m-1 and n
  * For Replace: Recur for for m-1 and n-1
  *
- * @author [Nirzak] (github.com/nirzak)
+ * @author [Nirzak](github.com/nirzak)
  */
 
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <cassert>     /// for assert
+#include <iostream>   /// for IO operations
+#include <vector>    /// for std::vector
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms
@@ -45,7 +44,7 @@ namespace dynamic_programming {
 
 /**
  * @namespace Minimum Edit Distance
- * @brief Implementation of Minimum Edit Distance algorithm
+ * @brief Implementation of [Minimum Edit Distance](https://en.wikipedia.org/wiki/Edit_distance) algorithm
  */
 
 namespace minimum_edit_distance {
