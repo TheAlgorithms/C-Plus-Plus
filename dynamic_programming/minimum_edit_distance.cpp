@@ -107,10 +107,9 @@ int editDistDP(std::string str1, std::string str2, int m, int n) {
 } // namespace dynamic_programming
 
 /**
- * @brief function to test above algorithm
+ * @brief Self-test implementations
  * @returns void
  */
-
 static void test() {
   // test 1
   std::string str1 = "INTENTION";
@@ -139,8 +138,7 @@ static void test() {
  * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-
 int main(int argc, char *argv[]) {
-  test(); // execute the tests
+  test();  // run self-test implementations
   return 0;
 }
