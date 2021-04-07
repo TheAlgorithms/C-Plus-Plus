@@ -3,12 +3,14 @@
  * @brief Implementation of Minimum Edit Distance using Dynamic Programing
  * (https://en.wikipedia.org/wiki/Edit_distance)
  *
- * @details
+ * #deatils
+ *
  * Given two strings str1 & str2 and we have to calculate the minimum
  * number of operations (Insert, Remove, Replace) required to convert
  * str1 to str2.
  *
- * @algorithm
+ * #algorithm
+ *
  * We will solve this problem using Naive recursion. But as we are
  * approaching with a DP solution. So, we will take a DP array to
  * store the solution of all sub-problems so that we don't have to
@@ -31,120 +33,113 @@
  * @author [Nirzak] (github.com/nirzak)
  */
 
-#include<cassert>
-#include<iostream>
+#include <cassert>
+#include <iostream>
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms
  */
 
-namespace dynamic_programming
-{
+namespace dynamic_programming {
 
 /**
  * @namespace Minimum Edit Distance
  * @brief Implementation of Minimum Edit Distance algorithm
  */
 
-namespace minimum_edit_distance
-{
+namespace minimum_edit_distance {
 
 /**
 function to return minimum of three operations
 Insert, Replace or Delete
 */
 
-int min(int x, int y, int z)
-{
-    if (x <= y && x <= z) {
-        return x;
-    }
-    if (y <= x && y <= z) {
-        return y;
-    }
-    else {
-        return z;
-    }
+int min(int x, int y, int z) {
+  if (x <= y && x <= z) {
+    return x; // return z, if x is the minimum value
+  }
+  if (y <= x && y <= z) {
+    return y; // return y, if y is the minimum value
+  }
+  else {
+    return z; // return z if z is the minimum value
+  }
 }
 
+int editDistDP(std::string str1, std::string str2, int m, int n) {
+  // Create a table to store results of subproblems
+  int dp[m + 1][n + 1];
 
-int editDistDP(std::string str1, std::string str2, int m, int n)
-{
-    // Create a table to store results of subproblems
-    int dp[m+1][n+1];
+  // Fill d[][] in bottom up manner
+  for (int i = 0; i <= m; i++) {
+    for (int j = 0; j <= n; j++) {
+      // If first string is empty, only option is to
+      // insert all characters of second string
+      if (i == 0) {
+        dp[i][j] = j; // Min. operations = j
+      }
 
-    // Fill d[][] in bottom up manner
-    for (int i=0; i<=m; i++)
-    {
-        for (int j=0; j<=n; j++)
-        {
-            // If first string is empty, only option is to
-            // insert all characters of second string
-            if (i==0)
-                dp[i][j] = j;  // Min. operations = j
+      // If second string is empty, only option is to
+      // remove all characters of second string
+      else if (j == 0) {
+        dp[i][j] = i; // Min. operations = i
+      }
 
-            // If second string is empty, only option is to
-            // remove all characters of second string
-            else if (j==0)
-                dp[i][j] = i; // Min. operations = i
+      // If last characters are same, ignore last char
+      // and recur for remaining string
+      else if (str1[i - 1] == str2[j - 1]) {
+        dp[i][j] = dp[i - 1][j - 1];
+      }
 
-            // If last characters are same, ignore last char
-            // and recur for remaining string
-            else if (str1[i-1] == str2[j-1])
-                dp[i][j] = dp[i-1][j-1];
-
-            // If the last character is different, consider all
-            // possibilities and find the minimum
-            else
-                dp[i][j] = 1 + min(dp[i][j-1], //Insert
-                                   dp[i-1][j], //Remove
-                                   dp[i-1][j-1]); //Delete
-        }
+      // If the last character is different, consider all
+      // possibilities and find the minimum
+      else {
+        dp[i][j] = 1 + min(dp[i][j - 1],      // Insert
+                           dp[i - 1][j],      // Remove
+                           dp[i - 1][j - 1]); // Replace
+      }
     }
+  }
 
-    return dp[m][n];
+  return dp[m][n];
 }
-} //namespace minimum_edit_distance
-} //namespace dynamic_programming
+} // namespace minimum_edit_distance
+} // namespace dynamic_programming
 
 /**
- * @brief Function to test above algorithm
- * @returns void
+ * @brief function to test above algorithm
+ * returns void
  */
 
-static void test()
-{
-    //test 1
-    std::string str1 = "INTENTION";
-    std::string str2 = "EXECUTION";
-    const int expected_output1 = 5;
-    const int output1 = dynamic_programming::
-                        minimum_edit_distance::
-                        editDistDP(str1, str2,str1.length(),str2.length());
-    assert(output1==expected_output1);
-    std::cout << "Minimum Number of Operations Required: "<< output1<<std::endl;
+static void test() {
+  // test 1
+  std::string str1 = "INTENTION";
+  std::string str2 = "EXECUTION";
+  const int expected_output1 = 5;
+  const int output1 = dynamic_programming::minimum_edit_distance::editDistDP(
+      str1, str2, str1.length(), str2.length());
+  assert(output1 == expected_output1);
+  std::cout << "Minimum Number of Operations Required: " << output1
+            << std::endl;
 
-    //test 2
-    std::string str3 = "SATURDAY";
-    std::string str4 = "SUNDAY";
-    const int expected_output2 = 3;
-    const int output2 = dynamic_programming::
-                        minimum_edit_distance::
-                        editDistDP(str3, str4, str3.length(),str4.length());
-    assert(output2==expected_output2);
-    std::cout << "Minimum Number of Operations Required: "<< output2<<std::endl;
-
-
+  // test 2
+  std::string str3 = "SATURDAY";
+  std::string str4 = "SUNDAY";
+  const int expected_output2 = 3;
+  const int output2 = dynamic_programming::minimum_edit_distance::editDistDP(
+      str3, str4, str3.length(), str4.length());
+  assert(output2 == expected_output2);
+  std::cout << "Minimum Number of Operations Required: " << output2
+            << std::endl;
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief main function
+ * returns 0 on exit
  */
 
-int main()
-{
-    // Testing
-    test();
-    return 0;
+int main() {
+  // Testing
+  test();
+  return 0;
 }
