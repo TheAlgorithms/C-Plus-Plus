@@ -50,9 +50,10 @@ namespace dynamic_programming {
 namespace minimum_edit_distance {
 
 /**
-function to return minimum of three operations
-Insert, Replace or Delete
-*/
+ * @brief min function. It will take input the cost of
+ * three operations (Insert, Replace or Delete) and return
+ * minimum cost among them.
+ */
 
 int min(int x, int y, int z) {
   if (x <= y && x <= z) {
@@ -65,6 +66,13 @@ int min(int x, int y, int z) {
     return z; // returns z if z is the minimum value
   }
 }
+
+/**
+ * @brief editDistDP function. It will calculate and store the result
+ * of all the sub-problems so that we don't have to recur to compute
+ * the minimum cost of a particular operation if it is already
+ * computed and stored in dp vector.
+ */
 
 int editDistDP(std::string str1, std::string str2, int m, int n) {
   // Create a table to store results of subproblems
