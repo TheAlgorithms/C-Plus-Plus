@@ -53,7 +53,9 @@ namespace minimum_edit_distance {
  * @brief Takes input of the cost of
  * three operations: Insert, Replace and Delete
  * and return the minimum cost among them.
- * @params x for Insert, y for Replace and Z for Delet
+ * @param x used to pass minimum cost of Insert operations
+ * @param y used to pass minimum cost of Replace operations
+ * @param z used to pass minimum cost of Delete operations
  */
 
 int min(int x, int y, int z) {
@@ -74,7 +76,8 @@ int min(int x, int y, int z) {
  * the minimum cost of a particular operation if it is already
  * computed and stored in the `dp` vector.
  * @params dp vector to store the computed minimum costs
- * @params m is the length of str1 and n is the length of str2
+ * @param m the length of str1
+ * @param n the length of str2
  */
 
 int editDistDP(std::string str1, std::string str2, int m, int n) {
