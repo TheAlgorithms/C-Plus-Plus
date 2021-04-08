@@ -51,8 +51,9 @@ namespace minimum_edit_distance {
 
 /**
  * @brief Takes input of the cost of
- * three operations: Insert, Replace or Delete, and return
- * the minimum cost among them.
+ * three operations: Insert as x parameter,
+ * Replace as y parameter or Delete as z parameter,
+ * and return the minimum cost among them.
  */
 
 int min(int x, int y, int z) {
