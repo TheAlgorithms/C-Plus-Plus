@@ -59,8 +59,8 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
 
 
     uint32_t M = 1 << 2*N;
-    uint64_t dp[M]; // dp[i] contains max score possible by mask i
-    memset(dp, 0, sizeof(dp));
+    std::vector<uint64_t> dp(M, 0); // dp[i] contains max score possible by mask i
+
 
     // the outer loop iterate over all possible mask till all the elements are added.
     // the first inner loop collects index of all un-added elements.
@@ -70,7 +70,7 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
         std::vector<uint8_t> unselected_elements;
         for(uint8_t j = 0; j < 2*N; j++) if((i>>j)%2==0) unselected_elements.push_back(j);
 
-        uint8_t total_unselected = (uint8_t)unselected_elements.size();
+        auto total_unselected = static_cast<uint8_t>(unselected_elements.size());
         if(total_unselected%2==1) continue;
 
         uint8_t total_selected = 2*N - total_unselected;
@@ -80,7 +80,7 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
             for(uint8_t j2 = j1+1; j2 < total_unselected; j2++){
                 uint8_t x = unselected_elements[j1], y = unselected_elements[j2];
                 uint32_t new_mask = i | (1<<x) | (1<<y);
-                dp[new_mask] = std::max(dp[new_mask], dp[i] + 1LL * (total_pairs + 1) * G[x][y]);
+                dp[new_mask] = std::max(dp[new_mask], dp[i] + (total_pairs + 1) * G[x][y]);
             }
         }
     }
@@ -102,16 +102,14 @@ static void test(){
 
     // Test 1
     const uint8_t N1 = 5;
-    std::array<uint32_t, 2*N1> A;
+    std::array<uint32_t, 2*N1> A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     uint64_t ans = 0;
-    for(uint8_t i = 0; i < 2*N1; i++) A[i] = i+1;
     ans = dynamic_programming::dp_bitmask::find_max_score(A, N1);
     assert(ans == 55);
 
     // Test 2
     const uint8_t N2 = 4;
-    std::array<uint32_t, 2*N2> B;
-    for(uint8_t i = 0; i < 2*N2; i++) B[i] = i+1;
+    std::array<uint32_t, 2*N2> B = {1, 2, 3, 4, 5, 6, 7, 8};
     ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
     assert(ans == 28);
 
