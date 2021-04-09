@@ -35,7 +35,6 @@
 #include <cassert>     /// for assert
 #include <iostream>   /// for IO operations
 #include <vector>    /// for std::vector
-
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms
@@ -62,7 +61,7 @@ namespace minimum_edit_distance {
  * @returns z if `z` is the minimum value
  */
 
-std::uint64_t min(std::uint64_t x, std::uint64_t y, std::uint64_t z) {
+uint64_t min(uint64_t x, uint64_t y, uint64_t z) {
   if (x <= y && x <= z) {
     return x; /// returns x, if x is the minimum value
   }
@@ -84,17 +83,17 @@ std::uint64_t min(std::uint64_t x, std::uint64_t y, std::uint64_t z) {
  * @param str2 to pass the 2nd string
  * @param m the length of str1
  * @param n the length of str2
- * @retuns dp[m][n] the minimum cost of operations
+ * @returns dp[m][n] the minimum cost of operations
  * needed to convert str1 to str2
  */
 
-std::uint64_t editDistDP(std::string str1, std::string str2, std::uint64_t m, std::uint64_t n) {
+uint64_t editDistDP(std::string str1, std::string str2, uint64_t m, uint64_t n) {
   /// Create a table to store results of subproblems
-  std::vector<std::vector<std::uint64_t>>dp(m+1, std::vector<std::uint64_t>(n+1)); /// creasting 2D vector dp to store the results of subproblems
+  std::vector<std::vector<uint64_t>>dp(m+1, std::vector<uint64_t>(n+1)); /// creasting 2D vector dp to store the results of subproblems
 
   /// Fill d[][] in bottom up manner
-  for (std::uint64_t i = 0; i <= m; i++) {
-    for (std::uint64_t j = 0; j <= n; j++) {
+  for (uint64_t i = 0; i <= m; i++) {
+    for (uint64_t j = 0; j <= n; j++) {
       /// If first string is empty, only option is to
       /// insert all characters of second string
       if (i == 0) {
@@ -116,38 +115,38 @@ std::uint64_t editDistDP(std::string str1, std::string str2, std::uint64_t m, st
       /// If the last character is different, consider all
       /// possibilities and find the minimum
       else {
-        dp[i][j] = 1 + min(dp[i][j - 1],      /// Insert
-                           dp[i - 1][j],      /// Remove
-                           dp[i - 1][j - 1]); /// Replace
+        dp[i][j] = 1 + min(dp[i][j - 1],      // Insert
+                           dp[i - 1][j],      // Remove
+                           dp[i - 1][j - 1]); // Replace
       }
     }
   }
 
   return dp[m][n]; /// returning the minimum cost of operations needed to convert str1 to str2
 }
-} /// namespace minimum_edit_distance
-} /// namespace dynamic_programming
+} // namespace minimum_edit_distance
+} // namespace dynamic_programming
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void test() {
-  /// 1st test
-  std::string str1 = "INTENTION"; /// Sample input of 1st string
-  std::string str2 = "EXECUTION"; /// Sample input of 2nd string
-  std::uint64_t expected_output1 = 5; /// Expected minimum cost
-  std::uint64_t output1 = dynamic_programming::minimum_edit_distance::editDistDP(
-      str1, str2, str1.length(), str2.length()); /// calling the editDistDP function and storing the result on output1
-  assert(output1 == expected_output1); /// comparing the output with the expected output
+  // 1st test
+  std::string str1 = "INTENTION"; // Sample input of 1st string
+  std::string str2 = "EXECUTION"; // Sample input of 2nd string
+  uint64_t expected_output1 = 5; // Expected minimum cost
+  uint64_t output1 = dynamic_programming::minimum_edit_distance::editDistDP(
+      str1, str2, str1.length(), str2.length()); // calling the editDistDP function and storing the result on output1
+  assert(output1 == expected_output1); // comparing the output with the expected output
   std::cout << "Minimum Number of Operations Required: " << output1
             << std::endl;
 
-  /// 2nd test
+  // 2nd test
   std::string str3 = "SATURDAY";
   std::string str4 = "SUNDAY";
-  std::uint64_t expected_output2 = 3;
-  std::uint64_t output2 = dynamic_programming::minimum_edit_distance::editDistDP(
+  uint64_t expected_output2 = 3;
+  uint64_t output2 = dynamic_programming::minimum_edit_distance::editDistDP(
       str3, str4, str3.length(), str4.length());
   assert(output2 == expected_output2);
   std::cout << "Minimum Number of Operations Required: " << output2
@@ -161,6 +160,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-  test();  /// run self-test implementations
+  test();  // run self-test implementations
   return 0;
 }
