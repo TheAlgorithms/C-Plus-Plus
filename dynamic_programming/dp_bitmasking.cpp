@@ -22,7 +22,8 @@
 
 
 #include <algorithm>
-#include <assert.h>
+#include <array>
+#include <cassert>
 #include <cstring>
 #include <iostream>
 #include <vector>
@@ -41,13 +42,15 @@ namespace dp_bitmask{
 /**
  * @brief find maximum value of new mask by adding
  * pair to previously formed mask.
+ * @tparam T size of the array A.
  * @param A an array of elements from which pairs will be made.
  * @param N size of an array.
  * @return maximum score which can be formed with pairs of this array.
  */
-uint64_t find_max_score(uint32_t A[], uint8_t N){
+template <size_t T>
+uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
 
-    uint32_t G[2*N][2*N]; // G[i][j] contains gcd of (A[i], A[j])
+    std::vector< std::vector<uint32_t> > G(2*N, std::vector<uint32_t>(2*N, 0));  // G[i][j] contains gcd of (A[i], A[j])
     for(uint8_t i = 0; i < 2*N; i++){
         for(uint8_t j = 0; j < 2*N; j++){
             G[i][j] = std::__gcd(A[i], A[j]);
@@ -96,19 +99,20 @@ uint64_t find_max_score(uint32_t A[], uint8_t N){
  * @returns void
  */
 static void test(){
-    uint8_t N = 5;
-    uint32_t A[2*N];
-    uint64_t ans = 0;
 
     // Test 1
-    for(uint8_t i = 0; i < 2*N; i++) A[i] = i+1;
-    ans = dynamic_programming::dp_bitmask::find_max_score(A, N);
+    const uint8_t N1 = 5;
+    std::array<uint32_t, 2*N1> A;
+    uint64_t ans = 0;
+    for(uint8_t i = 0; i < 2*N1; i++) A[i] = i+1;
+    ans = dynamic_programming::dp_bitmask::find_max_score(A, N1);
     assert(ans == 55);
 
     // Test 2
-    N = 4;
-    for(uint8_t i = 0; i < 2*N; i++) A[i] = i+1;
-    ans = dynamic_programming::dp_bitmask::find_max_score(A, N);
+    const uint8_t N2 = 4;
+    std::array<uint32_t, 2*N2> B;
+    for(uint8_t i = 0; i < 2*N2; i++) B[i] = i+1;
+    ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
     assert(ans == 28);
 
     return;
