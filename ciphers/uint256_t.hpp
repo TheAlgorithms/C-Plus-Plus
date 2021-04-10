@@ -198,7 +198,7 @@ class uint256_t {
      */
     inline uint256_t operator+(const uint256_t &p) {
         bool app = s + p.s < s;
-        return uint256_t(f + app + p.f, p.s + s);
+        return {f + app + p.f, p.s + s};
     }
 
     /**
@@ -266,7 +266,7 @@ class uint256_t {
      */
     inline uint256_t operator-(const uint256_t &p) {
         bool app = p.s > s;
-        return uint256_t(f - p.f - app, s - p.s);
+        return {f - p.f - app, s - p.s};
     }
 
     /**
@@ -346,8 +346,8 @@ class uint256_t {
         int cc = (tmp + tmp2 < tmp);
         tmp += tmp2;
         cc += (tmp + fo < tmp);
-        return uint256_t(f * p.s + s * p.f + fi + se.upper() + th.upper() + cc,
-                         tmp + fo);
+        return {f * p.s + s * p.f + fi + se.upper() + th.upper() + cc,
+                tmp + fo};
     }
 
     /**
@@ -590,13 +590,13 @@ class uint256_t {
     }
 
     // Bitwise operators
-    inline uint256_t operator~() { return uint256_t(~f, ~s); }
+    inline uint256_t operator~() { return {~f, ~s}; }
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t operator<<(const T &p) {
         if (!p) {
-            return uint256_t(this->f, this->s);
+            return {this->f, this->s};
         } else if (p >= 128) {
             return uint256_t((this->s << (p - 128)), uint128_t(0));
         }
@@ -623,7 +623,7 @@ class uint256_t {
                               std::is_integral<T>::value, T>::type>
     uint256_t operator>>(const T &p) {
         if (!p) {
-            return uint256_t(this->f, this->s);
+            return {this->f, this->s};
         } else if (p >= 128) {
             return uint256_t(uint128_t(0), (this->f >> (p - 128)));
         }
@@ -653,7 +653,7 @@ class uint256_t {
     }
 
     inline uint256_t operator&(const uint256_t &p) {
-        return uint256_t(f & p.f, s & p.s);
+        return {f & p.f, s & p.s};
     }
 
     inline uint256_t &operator&=(const uint256_t &p) {
@@ -676,7 +676,7 @@ class uint256_t {
     }
 
     inline uint256_t operator|(const uint256_t &p) {
-        return uint256_t(this->f | p.f, this->s | p.s);
+        return {this->f | p.f, this->s | p.s};
     }
 
     template <typename T, typename = typename std::enable_if<
@@ -699,7 +699,7 @@ class uint256_t {
     }
 
     inline uint256_t operator^(const uint256_t &p) {
-        return uint256_t(this->f ^ p.f, this->s ^ p.s);
+        return {this->f ^ p.f, this->s ^ p.s};
     }
 
     inline uint256_t &operator^=(const uint256_t &p) {
