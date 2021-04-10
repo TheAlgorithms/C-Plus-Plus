@@ -75,8 +75,9 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
             ans = (ans * number) % mod;
         }
         power >>= 1;
-        if (power)
+        if (power) {
             number = (number * number) % mod;
+        }
     }
     return ans;
 }
@@ -90,7 +91,8 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
  * @param mod Given field
  * @return the resultant point
  */
-Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
+Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
+               uint256_t mod) {
     uint256_t lambda(0);  /// Slope
     uint256_t zero(0);    /// value zero
     lambda = zero = 0;
@@ -138,11 +140,11 @@ Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
  * @returns the resultant point
  */
 Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
-               uint256_t mod) {
+               const uint256_t &mod) {
     Point N = a;
     N.x %= mod;
     N.y %= mod;
-    uint256_t inf;
+    uint256_t inf{};
     inf = ~uint256_t(0);
     Point Q = {inf, inf};
     while (p) {
@@ -155,8 +157,9 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
             }
         }
         p >>= 1;
-        if (p)
+        if (p) {
             N = addition(N, N, curve_a_coeff, mod);
+        }
     }
     return Q;
 }

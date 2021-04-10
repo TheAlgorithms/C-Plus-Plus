@@ -31,7 +31,7 @@ struct std::is_unsigned<uint256_t> : std::true_type {};
  * @details 256-bit number class.
  */
 class uint256_t {
-    uint128_t f, s;  /// First and second half of 256 bit number.
+    uint128_t f{}, s{};  /// First and second half of 256 bit number.
 
     /**
      * @brief Get integer from given string.
@@ -81,20 +81,22 @@ class uint256_t {
      * @brief Copy constructor
      * @param num 256-bit unsigned integer
      */
-    uint256_t(const uint256_t &num) : f(num.f), s(num.s) {}
+    uint256_t(const uint256_t &num) = default;
 
     /**
      * @brief Move constructor
      * @param num 256-bit unsigned integer
      */
-    uint256_t(uint256_t &&num) : f(std::move(num.f)), s(std::move(num.s)) {}
+    uint256_t(uint256_t &&num) noexcept
+        : f(std::move(num.f)), s(std::move(num.s)) {}
 
     /**
      * @brief Parameterized constructor
      * @param high higher part 128-bit unsigned integer
      * @param low lower part 128-bit unsigned integer
      */
-    uint256_t(const uint128_t &high, const uint128_t &low) : f(high), s(low) {}
+    uint256_t(uint128_t high, uint128_t low)
+        : f(std::move(high)), s(std::move(low)) {}
 
     /**
      * @brief Parameterized constructor
@@ -114,8 +116,9 @@ class uint256_t {
      * @returns Integer denoting leading zeroes
      */
     inline uint32_t _lez() {
-        if (f)
+        if (f) {
             return f._lez();
+        }
         return 128 + s._lez();
     }
 
@@ -125,25 +128,26 @@ class uint256_t {
      * @returns Integer denoting Trailing zeroes
      */
     inline uint32_t _trz() {
-        if (s)
+        if (s) {
             return s._trz();
+        }
         return 128 + f._trz();
     }
 
     inline uint32_t _len() { return _lez(); }
 
-    inline operator bool() const { return f || s; }
+    inline explicit operator bool() const { return f || s; }
 
     /**
      * @brief casting operator
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    inline operator T() const {
+    inline explicit operator T() const {
         return static_cast<T>(s);
     }
 
-    inline operator uint128_t() const { return s; }
+    inline explicit operator uint128_t() const { return s; }
 
     /**
      * @brief returns lower 128-bit integer part
@@ -158,11 +162,7 @@ class uint256_t {
     inline uint128_t upper() const { return f; }
 
     // Assign
-    inline uint256_t &operator=(const uint256_t &p) {
-        this->f = p.f;
-        this->s = p.s;
-        return *this;
-    }
+    inline uint256_t &operator=(const uint256_t &p) = default;
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>

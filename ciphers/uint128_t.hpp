@@ -57,7 +57,7 @@ std::string add(const std::string &first, const std::string &second) {
  * @details 128-bit numbers.
  */
 class uint128_t {
-    uint64_t f, s;  /// First and second half of 128 bit number.
+    uint64_t f{}, s{};  /// First and second half of 128 bit number.
 
     /**
      * @brief Get integer from given string.
@@ -118,13 +118,13 @@ class uint128_t {
      * @brief Copy constructor
      * @param num 128-bit unsigned integer
      */
-    uint128_t(const uint128_t &num) : f(num.f), s(num.s) {}
+    uint128_t(const uint128_t &num) = default;
 
     /**
      * @brief Move constructor
      * @param num 128-bit unsigned integer
      */
-    uint128_t(uint128_t &&num) : f(std::move(num.f)), s(std::move(num.s)) {}
+    uint128_t(uint128_t &&num) noexcept : f(num.f), s(num.s) {}
 
     /**
      * @brief Destructor for uint128_t
@@ -138,8 +138,9 @@ class uint128_t {
      */
     inline uint32_t _lez() {
 #ifndef _MSC_VER
-        if (f)
+        if (f) {
             return __builtin_clzll(f);
+        }
         return 64 + __builtin_clzll(s);
 #else
         unsigned long r = 0;
@@ -160,8 +161,9 @@ class uint128_t {
      */
     inline uint32_t _trz() {
 #ifndef _MSC_VER
-        if (f)
+        if (f) {
             return __builtin_ctzll(f);
+        }
         return 64 + __builtin_ctzll(s);
 #else
         unsigned long r = 0;
@@ -178,11 +180,11 @@ class uint128_t {
     inline uint32_t _len() { return _lez(); }
 
     // Casting operators
-    inline operator bool() const { return f || s; }
+    inline explicit operator bool() const { return f || s; }
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    inline operator T() const {
+    inline explicit operator T() const {
         return static_cast<T>(s);
     }
 
@@ -210,11 +212,7 @@ class uint128_t {
         return *this;
     }
 
-    inline uint128_t &operator=(const uint128_t &p) {
-        this->f = p.f;
-        this->s = p.s;
-        return *this;
-    }
+    inline uint128_t &operator=(const uint128_t &p) = default;
 
     inline uint128_t &operator=(uint128_t &&p) = default;
 
