@@ -91,8 +91,8 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
  * @return the resultant point
  */
 Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
-    uint256_t lambda;  /// Slope
-    uint256_t zero;    /// value zero
+    uint256_t lambda(0);  /// Slope
+    uint256_t zero(0);    /// value zero
     lambda = zero = 0;
     uint256_t inf = ~zero;
     if (a.x != b.x || a.y != b.y) {

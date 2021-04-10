@@ -1,5 +1,5 @@
 /**
- * @file uint128_t.hpp
+ * @file uint256_t.hpp
  *
  * @details Implementation of 256-bit unsigned integers.
  * @note The implementation can be flagged as not completed. This header is used
@@ -102,6 +102,11 @@ class uint256_t {
      * @param low lower part 64-bit unsigned integer
      */
     uint256_t(const uint64_t high, const uint64_t low) : f(high), s(low) {}
+
+    /**
+     * @brief Destructor for uint256_t
+     */
+    ~uint256_t() = default;
 
     /**
      * @brief Leading zeroes in binary

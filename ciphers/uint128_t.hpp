@@ -37,8 +37,9 @@ struct std::is_unsigned<uint128_t> : std::true_type {};
 std::string add(const std::string &first, const std::string &second) {
     std::string third;
     int16_t sum = 0, carry = 0;
-    for (int i = first.size() - 1, j = second.size() - 1; i >= 0 || j >= 0;
-         --i, --j) {
+    for (int32_t i = static_cast<int32_t>(first.size()) - 1,
+                 j = static_cast<int32_t>(second.size()) - 1;
+         i >= 0 || j >= 0; --i, --j) {
         sum = ((i >= 0 ? first[i] - '0' : 0) + (j >= 0 ? second[j] - '0' : 0) +
                carry);
         carry = sum / 10;
@@ -124,6 +125,11 @@ class uint128_t {
      * @param num 128-bit unsigned integer
      */
     uint128_t(uint128_t &&num) : f(std::move(num.f)), s(std::move(num.s)) {}
+
+    /**
+     * @brief Destructor for uint128_t
+     */
+    ~uint128_t() = default;
 
     /**
      * @brief Leading zeroes in binary
@@ -632,7 +638,7 @@ class uint128_t {
         if (!p) {
             return uint128_t(f, s);
         }
-        if (p >= 64) {
+        if (p >= 64 && p <= 128) {
             return uint128_t((this->s << (p - 64)), 0);
         }
         return uint128_t((this->f << p) + ((this->s >> (64 - p))),
