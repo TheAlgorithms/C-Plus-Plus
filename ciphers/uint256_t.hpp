@@ -433,9 +433,9 @@ class uint256_t {
      */
     std::pair<uint256_t, uint256_t> divide(const uint256_t &p) {
         if (*this < p) {  // if this is less than divisor
-            return {uint256_t(0ULL), *this};
+            return {uint256_t(0), *this};
         } else if (*this == p) {  // if this is equal to divisor
-            return {uint256_t(1ULL), uint256_t(0ULL)};
+            return {uint256_t(1), uint256_t(0)};
         }
         uint256_t tmp = p, tmp2 = *this;
         uint16_t left = tmp._lez() - _lez();

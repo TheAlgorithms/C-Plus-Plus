@@ -439,9 +439,9 @@ class uint128_t {
      */
     std::pair<uint128_t, uint128_t> divide(const uint128_t &p) {
         if (*this < p) {  // if this is less than divisor
-            return {uint128_t(0ULL), *this};
+            return {uint128_t(0), *this};
         } else if (*this == p) {  // if this is equal to divisor
-            return {uint128_t(1ULL), uint128_t(0ULL)};
+            return {uint128_t(1), uint128_t(0)};
         }
         uint128_t tmp = p, tmp2 = *this;
         uint16_t left = tmp._lez() - _lez();
