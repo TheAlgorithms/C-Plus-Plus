@@ -102,28 +102,6 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Function to convert argument string of digits to number
- * @param The string of digtis that is passed in argument
- * @return 32 bit number formed by argument
- */
-uint32_t convert_to_num(char* s) {
-    uint32_t num = 0;
-    for (int i = 0; s[i]; i++) {
-        uint32_t digit = s[i] - '0';
-
-        // Making sure the input contains number only
-        assert(digit >= 0);
-        assert(digit <= 9);
-
-        // adding this digit at unit place.
-        num = num * 10 + digit;
-    }
-
-    // Returning finally formed number.
-    return num;
-}
-
-/**
  * @brief Self-test implementation
  * @param argc : (length of array added by user + 1)
  * @param argv : array added by user through CLI.
