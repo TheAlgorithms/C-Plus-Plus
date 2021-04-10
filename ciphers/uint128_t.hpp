@@ -85,56 +85,14 @@ class uint128_t {
  public:
     uint128_t() = default;
 
+    /**
+     * @brief Parameterized constructor
+     * @tparam T integral type
+     * @param low lower part 8-bit unisgned integer
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     explicit uint128_t(T low) : s(low), f(0) {}
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 8-bit unisgned integer
-     */
-    explicit uint128_t(uint8_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 16-bit unisgned integer
-     */
-    explicit uint128_t(uint16_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 32-bit unisgned integer
-     */
-    explicit uint128_t(uint32_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 64-bit unisgned integer
-     */
-    explicit uint128_t(uint64_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 8-bit integer
-     */
-    explicit uint128_t(int8_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 16-bit integer
-     */
-    explicit uint128_t(int16_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 32-bit integer
-     */
-    explicit uint128_t(int32_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 64-bit integer
-     */
-    explicit uint128_t(int64_t low) : s(low), f(0) {}
 
     /**
      * @brief Parameterized constructor
@@ -190,13 +148,11 @@ class uint128_t {
     // Casting operators
     inline operator bool() const { return f || s; }
 
-    inline operator uint8_t() const { return s & 0xFF; }
-
-    inline operator uint16_t() const { return s & 0xFFFF; }
-
-    inline operator uint32_t() const { return s & 0xFFFFFFFF; }
-
-    inline operator uint64_t() const { return s; }
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline operator T() const {
+        return static_cast<T>(s);
+    }
 
     /**
      * @brief returns lower 64-bit integer part

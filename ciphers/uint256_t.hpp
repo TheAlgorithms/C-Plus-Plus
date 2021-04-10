@@ -71,60 +71,6 @@ class uint256_t {
 
     /**
      * @brief Parameterized constructor
-     * @param low lower part 8-bit unisgned integer
-     */
-    explicit uint256_t(uint8_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 16-bit unisgned integer
-     */
-    explicit uint256_t(uint16_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 32-bit unisgned integer
-     */
-    explicit uint256_t(uint32_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 64-bit unisgned integer
-     */
-    explicit uint256_t(uint64_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 128-bit unisgned integer
-     */
-    explicit uint256_t(const uint128_t &low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 8-bit integer
-     */
-    explicit uint256_t(int8_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 16-bit integer
-     */
-    explicit uint256_t(int16_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 32-bit integer
-     */
-    explicit uint256_t(int32_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
-     * @param low lower part 64-bit integer
-     */
-    explicit uint256_t(int64_t low) : s(low), f(0) {}
-
-    /**
-     * @brief Parameterized constructor
      * @param str Integer string (hexadecimal starting with 0x.. or decimal)
      */
     explicit uint256_t(const std::string &str) {
@@ -183,13 +129,14 @@ class uint256_t {
 
     inline operator bool() const { return f || s; }
 
-    inline operator uint8_t() const { return s.lower(); }
-
-    inline operator uint16_t() const { return s.lower(); }
-
-    inline operator uint32_t() const { return s.lower(); }
-
-    inline operator uint64_t() const { return s.lower(); }
+    /**
+     * @brief casting operator
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline operator T() const {
+        return static_cast<T>(s);
+    }
 
     inline operator uint128_t() const { return s; }
 
