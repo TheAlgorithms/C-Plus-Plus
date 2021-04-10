@@ -111,8 +111,6 @@ static void test(){
     std::array<uint32_t, 2*N2> B = {1, 2, 3, 4, 5, 6, 7, 8};
     ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
     assert(ans == 28);
-
-    return;
 }
 
 /**
