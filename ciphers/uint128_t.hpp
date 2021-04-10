@@ -136,10 +136,10 @@ class uint128_t {
             return __builtin_clzll(f);
         return 64 + __builtin_clzll(s);
 #else
-        uint32_t r = 0;
+        unsigned long r = 0;
         _BitScanForward64(&r, f);
         if (r == 64) {
-            uint32_t l = 0;
+            unsigned long l = 0;
             _BitScanForward64(&l, s);
             return 64 + l;
         }
@@ -158,10 +158,10 @@ class uint128_t {
             return __builtin_ctzll(f);
         return 64 + __builtin_ctzll(s);
 #else
-        uint32_t r = 0;
+        unsigned long r = 0;
         _BitScanReverse64(&r, s);
         if (r == 64) {
-            uint32_t l = 0;
+            unsigned long l = 0;
             _BitScanReverse64(&l, f);
             return 64 + l;
         }
