@@ -45,7 +45,7 @@ namespace dp_bitmask {
  * @return maximum score which can be formed with pairs of this array.
  */
 template <size_t T>
-uint64_t find_max_score(const std::array<uint32_t, T> &A, const uint8_t N) {
+uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
     std::vector<std::vector<uint32_t> > G(
         2 * N, std::vector<uint32_t>(
                    2 * N, 0));  // G[i][j] contains gcd of (A[i], A[j])
