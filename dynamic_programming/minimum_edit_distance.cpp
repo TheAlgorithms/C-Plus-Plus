@@ -60,7 +60,6 @@ namespace minimum_edit_distance {
  * @returns y if `y` is the minimum value
  * @returns z if `z` is the minimum value
  */
-
 uint64_t min(uint64_t x, uint64_t y, uint64_t z) {
   if (x <= y && x <= z) {
     return x; /// returns x, if x is the minimum value
