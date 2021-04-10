@@ -85,6 +85,9 @@ class uint128_t {
  public:
     uint128_t() = default;
 
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    explicit uint128_t(T low) : s(low), f(0) {}
     /**
      * @brief Parameterized constructor
      * @param low lower part 8-bit unisgned integer

@@ -65,6 +65,10 @@ class uint256_t {
     // Constructors
     uint256_t() = default;
 
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    explicit uint256_t(T low) : s(low), f(0) {}
+
     /**
      * @brief Parameterized constructor
      * @param low lower part 8-bit unisgned integer
