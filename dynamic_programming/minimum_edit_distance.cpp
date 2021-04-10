@@ -85,7 +85,6 @@ uint64_t min(uint64_t x, uint64_t y, uint64_t z) {
  * @returns dp[m][n] the minimum cost of operations
  * needed to convert str1 to str2
  */
-
 uint64_t editDistDP(std::string str1, std::string str2, uint64_t m, uint64_t n) {
   /// Create a table to store results of subproblems
   std::vector<std::vector<uint64_t>>dp(m+1, std::vector<uint64_t>(n+1)); /// creasting 2D vector dp to store the results of subproblems
