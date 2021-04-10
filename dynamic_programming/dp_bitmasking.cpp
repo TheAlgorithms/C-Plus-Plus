@@ -99,25 +99,6 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementation
- * @returns void
- */
-static void test() {
-    // 1st test
-    const uint8_t N1 = 5;
-    std::array<uint32_t, 2 * N1> A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    uint64_t ans = 0;
-    ans = dynamic_programming::dp_bitmask::find_max_score(A, N1);
-    assert(ans == 55);
-
-    // 2nd test
-    const uint8_t N2 = 4;
-    std::array<uint32_t, 2 * N2> B = {1, 2, 3, 4, 5, 6, 7, 8};
-    ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
-    assert(ans == 28);
-}
-
-/**
  * @brief Function to convert argument string of digits to number
  * @param The string of digtis that is passed in argument
  * @return 32 bit number formed by argument
@@ -140,6 +121,37 @@ uint32_t convert_to_num(char* s) {
 }
 
 /**
+ * @brief Self-test implementation
+ * @param argc : (length of array added by user + 1)
+ * @param argv : array added by user through CLI.
+ * @returns void
+ */
+static void test(int argc, char* argv[]) {
+    uint8_t N = argc - 1;
+    if (N > 0) {
+        assert(N % 2 == 0);  // problem assures that input will contain array of
+                             // even length.
+        std::array<uint32_t, 20> A{};  // A is the input array that user has passed from CLI.
+        for (int i = 1; i < argc; i++) A[i - 1] = convert_to_num(argv[i]);
+        std::cout << dynamic_programming::dp_bitmask::find_max_score(A, N / 2) << std::endl;
+        return;
+    }
+
+    // 1st test
+    const uint8_t N1 = 5;
+    std::array<uint32_t, 2 * N1> A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    uint64_t ans = 0;
+    ans = dynamic_programming::dp_bitmask::find_max_score(A, N1);
+    assert(ans == 55);
+
+    // 2nd test
+    const uint8_t N2 = 4;
+    std::array<uint32_t, 2 * N2> B = {1, 2, 3, 4, 5, 6, 7, 8};
+    ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
+    assert(ans == 28);
+}
+
+/**
  * @brief Main function, runs self-test by default. User can also pass array of
  * numbers of even length to test custom example.
  * @param argc number of argument passed through command line
@@ -147,18 +159,6 @@ uint32_t convert_to_num(char* s) {
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
-    uint8_t N = argc - 1;
-    if (N > 0) {
-        assert(N % 2 == 0);  // problem assures that input will contain array of
-                             // even length.
-        std::array<uint32_t, 20>
-            A{};  // A is the input array that user has passed from CLI.
-        for (int i = 1; i < argc; i++) A[i - 1] = convert_to_num(argv[i]);
-        std::cout << dynamic_programming::dp_bitmask::find_max_score(A, N / 2)
-                  << std::endl;
-        return 0;
-    }
-
-    test();  // run self-test implementation
+    test(argc, argv);  // run self-test implementation
     return 0;
 }
