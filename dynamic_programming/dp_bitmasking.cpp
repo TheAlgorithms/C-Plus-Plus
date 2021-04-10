@@ -67,14 +67,17 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N) {
     // nested inner loop iterate over all the pairs formed by un added elements.
     for (uint32_t i = 0; i < M; i++) {
         std::vector<uint8_t> unselected_elements;
-        for (uint8_t j = 0; j < 2 * N; j++)
-            if ((i >> j) % 2 == 0)
+        for (uint8_t j = 0; j < 2 * N; j++) {
+            if ((i >> j) % 2 == 0) {
                 unselected_elements.push_back(j);
+            }
+        }
 
         auto total_unselected =
             static_cast<uint8_t>(unselected_elements.size());
-        if (total_unselected % 2 == 1)
+        if (total_unselected % 2 == 1) {
             continue;
+        }
 
         uint8_t total_selected = 2 * N - total_unselected;
         uint8_t total_pairs = total_selected / 2;
