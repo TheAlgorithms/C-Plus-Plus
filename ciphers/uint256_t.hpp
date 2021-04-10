@@ -646,7 +646,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator&(const T &p) {
-        return uint256_t(p & s);
+        return *this & uint256_t(p);
     }
 
     inline uint256_t operator&(const uint256_t &p) {
@@ -669,7 +669,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator|(const T &p) {
-        return uint256_t(this->s | p);
+        return *this | uint256_t(p);
     }
 
     inline uint256_t operator|(const uint256_t &p) {
