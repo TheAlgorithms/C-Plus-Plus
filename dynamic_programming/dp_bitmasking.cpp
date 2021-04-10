@@ -129,17 +129,7 @@ uint32_t convert_to_num(char* s) {
  * @param argv : array added by user through CLI.
  * @returns void
  */
-static void test(int argc, char* argv[]) {
-    uint8_t N = argc - 1;
-    if (N > 0) {
-        assert(N % 2 == 0);  // problem assures that input will contain array of
-                             // even length.
-        std::array<uint32_t, 20> A{};  // A is the input array that user has passed from CLI.
-        for (int i = 1; i < argc; i++) A[i - 1] = convert_to_num(argv[i]);
-        std::cout << dynamic_programming::dp_bitmask::find_max_score(A, N / 2) << std::endl;
-        return;
-    }
-
+static void test() {
     // 1st test
     const uint8_t N1 = 5;
     std::array<uint32_t, 2 * N1> A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -162,6 +152,6 @@ static void test(int argc, char* argv[]) {
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
-    test(argc, argv);  // run self-test implementation
+    test();  // run self-test implementation
     return 0;
 }
