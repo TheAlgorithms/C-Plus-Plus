@@ -97,7 +97,7 @@ class uint128_t {
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    explicit uint128_t(T low) : s(low), f(0) {}
+    explicit uint128_t(T low) : s(low) {}
 
     /**
      * @brief Parameterized constructor
