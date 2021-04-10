@@ -12,6 +12,10 @@
 #include <string>
 #include <utility>
 
+#ifdef _MSC_VER
+#include <intrin.h>
+#endif
+
 #ifndef CIPHERS_UINT128_T_HPP_
 #define CIPHERS_UINT128_T_HPP_
 class uint128_t;
@@ -127,9 +131,20 @@ class uint128_t {
      * @returns Integer denoting leading zeroes
      */
     inline uint32_t _lez() {
+#ifndef _MSC_VER
         if (f)
             return __builtin_clzll(f);
         return 64 + __builtin_clzll(s);
+#else
+        uint32_t r = 0;
+        _BitScanForward64(&r, f);
+        if (r == 64) {
+            uint32_t l = 0;
+            _BitScanForward64(&l, s);
+            return 64 + l;
+        }
+        return r;
+#endif
     }
 
     /**
@@ -138,9 +153,20 @@ class uint128_t {
      * @returns Integer denoting Trailing zeroes
      */
     inline uint32_t _trz() {
-        if (s)
-            return __builtin_ctzll(s);
-        return 64 + __builtin_ctzll(f);
+#ifndef _MSC_VER
+        if (f)
+            return __builtin_ctzll(f);
+        return 64 + __builtin_ctzll(s);
+#else
+        uint32_t r = 0;
+        _BitScanReverse64(&r, s);
+        if (r == 64) {
+            uint32_t l = 0;
+            _BitScanReverse64(&l, f);
+            return 64 + l;
+        }
+        return r;
+#endif
     }
 
     inline uint32_t _len() { return _lez(); }
