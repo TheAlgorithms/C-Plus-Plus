@@ -1,6 +1,7 @@
 /**
 * @file
 * @brief Implementation of Bitmasking DP approach
+* (https://codeforces.com/blog/entry/337)
 *
 * @details
 * Given Integer N and Array of size 2*N. Make N pairs using each element
@@ -10,7 +11,7 @@
 * N <= 10
 * 1 <= A[i] <= 1e9
 *
-* ###Algorithm
+* ### Algorithm
 * For each Mask 0 to 111....(2*N times) Add new pair to this set from yet
 * unselected elements and try to maximize the newly formed mask after
 * adding these elements with value formed after adding new pair.
@@ -21,12 +22,11 @@
 */
 
 
-#include <algorithm>
-#include <array>
-#include <cassert>
-#include <cstring>
-#include <iostream>
-#include <vector>
+#include <algorithm> /// for calculating gcd
+#include <array> /// for creating array
+#include <cassert> /// for using assert in self-test
+#include <iostream> /// for IO operations
+#include <vector> /// for std::vector
 
 
 /**
@@ -40,8 +40,8 @@ namespace dynamic_programming{
  */
 namespace dp_bitmask{
 /**
- * @brief find maximum value of new mask by adding
- * pair to previously formed mask.
+ * @brief Find the maximum value of a new mask by adding
+ * a pair to a previously formed mask.
  * @tparam T size of the array A.
  * @param A an array of elements from which pairs will be made.
  * @param N size of an array.
@@ -58,8 +58,9 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
     }
 
 
-    uint32_t M = 1 << 2*N;
-    std::vector<uint64_t> dp(M, 0); // dp[i] contains max score possible by mask i
+    uint32_t M = 1 << 2*N; /// By including and excluding each single element there are 2^(2*N) possible masks
+                           /// for final selection of elements, M is used to iterate over these masks.
+    std::vector<uint64_t> dp(M, 0); /// dp[i] contains max score possible by mask i
 
 
     // the outer loop iterate over all possible mask till all the elements are added.
@@ -85,29 +86,28 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N){
         }
     }
 
-    //Max score is in the mask 2**(1<<2*N) - 1, which shows all elements are added.
+    // Max score is in the mask 2**(1<<2*N) - 1, which shows all elements are added.
     return dp[M-1];
 
 }
 
-} //namespace dp_bitmask
-} //namespace dynamic_programming
+} // namespace dp_bitmask
+} // namespace dynamic_programming
 
 
 /**
- * @brief Function to test above algorithm
+ * @brief Self-test implementation
  * @returns void
  */
 static void test(){
-
-    // Test 1
+    // 1st test
     const uint8_t N1 = 5;
     std::array<uint32_t, 2*N1> A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     uint64_t ans = 0;
     ans = dynamic_programming::dp_bitmask::find_max_score(A, N1);
     assert(ans == 55);
 
-    // Test 2
+    // 2nd test
     const uint8_t N2 = 4;
     std::array<uint32_t, 2*N2> B = {1, 2, 3, 4, 5, 6, 7, 8};
     ans = dynamic_programming::dp_bitmask::find_max_score(B, N2);
@@ -122,7 +122,6 @@ static void test(){
  * @returns 0 on exit
  */
 int main(){
-    //Testing
-    test();
+    test(); // run self-test implementation
     return 0;
 }
