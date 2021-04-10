@@ -66,6 +66,7 @@
   * [Coin Change](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/coin_change.cpp)
   * [Coin Change Topdown](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/coin_change_topdown.cpp)
   * [Cut Rod](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/cut_rod.cpp)
+  * [Dp Bitmasking](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/dp_bitmasking.cpp)
   * [Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/edit_distance.cpp)
   * [Egg Dropping Puzzle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/egg_dropping_puzzle.cpp)
   * [Fibonacci Bottom Up](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/fibonacci_bottom_up.cpp)
