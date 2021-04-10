@@ -305,7 +305,7 @@ class AyStarSearch {
          * @brief constructor having Puzzle as parameter
          * @param A a puzzle object
          */
-        explicit Info(Puzzle A) : state(std::move(A)) {}
+        explicit Info(const Puzzle &A) : state(std::move(A)) {}
 
         /**
          * @brief constructor having three parameters
@@ -313,7 +313,7 @@ class AyStarSearch {
          * @param h_value heuristic value of this puzzle object
          * @param depth the depth at which this node was found during traversal
          */
-        Info(Puzzle A, size_t h_value, size_t d)
+        Info(const Puzzle &A, size_t h_value, size_t d)
             : state(std::move(A)), heuristic_value(h_value), depth(d) {}
 
         /**
