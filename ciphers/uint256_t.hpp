@@ -597,8 +597,7 @@ class uint256_t {
     uint256_t operator<<(const T &p) {
         if (!p) {
             return uint256_t(this->f, this->s);
-        }
-        if (p >= 128) {
+        } else if (p >= 128) {
             return uint256_t((this->s << (p - 128)), uint128_t(0));
         }
         return uint256_t((this->f << p) + (this->s >> (128 - p)),
@@ -625,8 +624,7 @@ class uint256_t {
     uint256_t operator>>(const T &p) {
         if (!p) {
             return uint256_t(this->f, this->s);
-        }
-        if (p >= 128) {
+        } else if (p >= 128) {
             return uint256_t(uint128_t(0), (this->f >> (p - 128)));
         }
         return uint256_t((this->f >> p),

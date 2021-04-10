@@ -637,19 +637,20 @@ class uint128_t {
     uint128_t operator<<(const T p) {
         if (!p) {
             return uint128_t(f, s);
-        }
-        if (p >= 64 && p <= 128) {
+        } else if (p >= 64 && p <= 128) {
             return uint128_t((this->s << (p - 64)), 0);
+        } else if (p < 64 && p > 0) {
+            return uint128_t((this->f << p) + ((this->s >> (64 - p))),
+                             this->s << p);
         }
-        return uint128_t((this->f << p) + ((this->s >> (64 - p))),
-                         this->s << p);
+        return uint128_t(0);
     }
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator<<=(const T p) {
         if (p) {
-            if (p >= 64) {
+            if (p >= 64 && p <= 128) {
                 this->f = (this->s << (p - 64));
                 this->s = 0;
             } else {
@@ -665,12 +666,13 @@ class uint128_t {
     uint128_t operator>>(const T p) {
         if (!p) {
             return uint128_t(this->f, this->s);
-        }
-        if (p >= 64) {
+        } else if (p >= 64 && p <= 128) {
             return uint128_t(0, (this->f >> (p - 64)));
+        } else if (p < 64 && p > 0) {
+            return uint128_t((this->f >> p),
+                             (this->s >> p) + (this->f << (64 - p)));
         }
-        return uint128_t((this->f >> p),
-                         (this->s >> p) + (this->f << (64 - p)));
+        return uint128_t(0);
     }
 
     template <typename T, typename = typename std::enable_if<
