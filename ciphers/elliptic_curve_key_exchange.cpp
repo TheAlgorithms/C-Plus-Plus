@@ -286,6 +286,7 @@ static void test() {
     std::cout << alice_shared_key << std::endl;
     std::cout << bob_shared_key << std::endl;
 
+    // Check whether shared keys are equal
     assert(alice_shared_key == bob_shared_key);
 }
 
