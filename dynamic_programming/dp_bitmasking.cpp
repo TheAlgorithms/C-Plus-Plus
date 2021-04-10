@@ -103,8 +103,6 @@ uint64_t find_max_score(std::array<uint32_t, T> A, const uint8_t N) {
 
 /**
  * @brief Self-test implementation
- * @param argc : (length of array added by user + 1)
- * @param argv : array added by user through CLI.
  * @returns void
  */
 static void test() {
@@ -123,10 +121,9 @@ static void test() {
 }
 
 /**
- * @brief Main function, runs self-test by default. User can also pass array of
- * numbers of even length to test custom example.
+ * @brief Main function, runs self-test by default.
  * @param argc number of argument passed through command line
- * @param argv is array of string arguments, user can pass array from CLI.
+ * @param argv is array of string arguments.
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
