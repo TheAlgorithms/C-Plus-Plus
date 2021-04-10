@@ -20,7 +20,6 @@
 *
 * @author [Syed Faizan](https://github.com/faizan2700)
 */
-
 #include <algorithm> /// for calculating gcd
 #include <array> /// for creating array
 #include <cassert> /// for using assert in self-test
