@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of subset_sum problem
+ * @brief [Subset Sum DP] Implementation
  * (https://www.geeksforgeeks.org/subset-sum-problem-dp-25)
  *
  * @details
@@ -19,10 +19,11 @@
  *
  * @author [Syed Faizan](https://github.com/faizan2700)
  */
- #include <array> /// for creating std::array
+
+ #include <array>    /// for creating std::array
  #include <iostream> /// for IO operations
- #include <cassert> /// for using assert in test function
- #include <vector> /// for using std::vector
+ #include <cassert>  /// for using assert in test function
+ #include <vector>   /// for using std::vector
 
  /**
  * @namespace dynamic_programming
@@ -31,7 +32,7 @@
 namespace dynamic_programming {
 /**
  * @namespace subset_sum
- * @brief Implementation of subset_sum problem
+ * @brief [Subset Sum DP] Implementation
  */
 namespace subset_sum {
 /**
@@ -48,23 +49,23 @@ template <size_t T>
 bool subset_sum(const std::array<int, T> &A, const int &n, const uint32_t &v) {
 
     uint32_t S = 0;
-    for(int i = 0; i < n; i++) S += A[i];
+    for (int i = 0; i < n; i++) S += A[i];
 
-    if(v > S) return false; // if value is greater than sum of set than not possible.
-    if(v == S or v == 0) return true; // 0 is possible by empty set, S is possible by taking whole set.
+    if (v > S) return false; // if value is greater than sum of set than not possible.
+    if (v == S or v == 0) return true; // 0 is possible by empty set, S is possible by taking whole set.
 
-    std::vector< std::vector<bool> > dp(n+1, std::vector<bool>(v + 1, false));
+    std::vector< std::vector<bool> > dp(n + 1, std::vector<bool>(v + 1, false));
 
-    for(int i = 0; i <= n; i++) dp[i][0] = true; // 0 sum is always possible.
-    for(int i = 1; i <= v; i++) dp[0][i] = false; // no sum(>0) is possible when 0 elements are included.
+    for (int i = 0; i <= n; i++) dp[i][0] = true; // 0 sum is always possible.
+    for (int i = 1; i <= v; i++) dp[0][i] = false; // no sum(>0) is possible when 0 elements are included.
 
     // outer loop iterates over all the element
     // inner loop iterates over all the possible sum.
     // sum = j is obtainable if we can get this by excluding the current element from subset
     // or we can get this by including the current element from the subset.
-    for(int i = 1; i <= n; i++){
-        for(uint32_t j = 1; j <= v; j++){
-            dp[i][j] = dp[i-1][j] or (j>=A[i-1]? dp[i-1][j-A[i-1]] : 0);
+    for (int i = 1; i <= n; i++) {
+        for (uint32_t j = 1; j <= v; j++) {
+            dp[i][j] = dp[i-1][j] or (j>=A[i-1]? dp[i-1][j-A[i-1]] : false);
         }
     }
 
@@ -80,9 +81,8 @@ bool subset_sum(const std::array<int, T> &A, const int &n, const uint32_t &v) {
  * @returns void
  */
 static void test(){
-
-    bool ans;
-    uint64_t v;
+    bool ans = false;
+    uint64_t v = 0;
     // 1st test
     const uint32_t N1 = 5;
     v = 9;
