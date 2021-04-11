@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of friend pairing problem
- * (https://www.geeksforgeeks.org/friends-pairing-problem)
+ * @brief [Friend Pairing Problem](https://www.geeksforgeeks.org/friends-pairing-problem) Implementation
  *
  * @details
  * Some friends want to go to party. Each one of them can go alone,
@@ -18,6 +17,7 @@
  *
  * @author [Syed Faizan](https://github.com/faizan2700)
  */
+
  #include <cassert> /// assert for checking test
  #include <iostream> /// for IO operations
  #include <vector> /// for std::vector
@@ -30,7 +30,7 @@
 
 /**
  * @namespace friend pairing problem
- * @brief Implementation of friend pairing problem
+ * @brief Functions for [Friend pairing problem](https://www.geeksforgeeks.org/friends-pairing-problem) Implementation
  */
  namespace friend_pairing{
 
@@ -39,7 +39,6 @@
  * @param N number of friends going to the party.
  * @return Total number of ways
  */
-
  uint64_t calculate_total(const int &n){
     int M = 1e9 + 7; /// prime number for modulo, as stated in problem.
     std::vector<uint64_t> dp(n+1, 0); /// dp[i] shows number of ways of pairing i friends.
@@ -83,5 +82,3 @@
     test(); // run self-test implementation
     return 0;
  }
-
-
