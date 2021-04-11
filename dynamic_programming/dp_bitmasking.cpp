@@ -6,7 +6,6 @@
  * @details
  * Given Integer N and Array of size 2*N. Make N pairs using each element
  * exactly once such that following score is maximized.
- * score = summation(gcd(x_i, y_i) * i)
  * \[ score = \sum_{i=1}^{n} gcd(x_{i}, y_{i}) \]
  * {n} $\leq$ 10
  * 1 $\leq {A_{i}} \leq$ 1000,000,000
