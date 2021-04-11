@@ -4,18 +4,18 @@
  * approach](https://codeforces.com/blog/entry/337)
  *
  * @details
- * Given Integer N and Array of size 2*N. Make N pairs using each element
+ * Given Integer N and Array of size 2$\cdot${N}. Make N pairs using each element
  * exactly once such that following score is maximized.
  * \[ score = \sum_{i=1}^{n} gcd(x_{i}, y_{i}) \]
  * {n} $\leq$ 10
  * 1 $\leq {A_{i}} \leq$ 1000,000,000
  *
  * ### Algorithm
- * For each Mask 0 to 111....(2*N times) Add new pair to this set from yet
+ * For each Mask 0 to 111....(2$\cdot${N} times) Add new pair to this set from yet
  * unselected elements and try to maximize the newly formed mask after
  * adding these elements with value formed after adding new pair.
  * the ans we are looking for will be in mask which shows all elements are
- * added, that is 111...(2*N times).
+ * added, that is 111...(2$\cdot${N} times).
  *
  * @author [Syed Faizan](https://github.com/faizan2700)
  */
@@ -56,10 +56,10 @@ uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
 
     uint32_t M =
         1 << 2 * N;  /// By including and excluding each single element there
-                     /// are 2^(2*N) possible masks for final selection of
+                     /// are $2^{2N}$ possible masks for final selection of
                      /// elements, M is used to iterate over these masks.
     std::vector<uint64_t> dp(
-        M, 0);  /// dp[i] contains max score possible by mask i
+        M, 0);  /// dp_{i} contains max score possible by mask i
 
     // the outer loop iterate over all possible mask till all the elements are
     // added. the first inner loop collects index of all un-added elements.
@@ -92,8 +92,7 @@ uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
         }
     }
 
-    // Max score is in the mask 2**(1<<2*N) - 1, which shows all elements are
-    // added.
+    /// Max score is in the mask $2^{2N}$ - 1, which shows all elements are added.
     return dp[M - 1];
 }
 
