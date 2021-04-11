@@ -7,9 +7,9 @@
  * Given Integer N and Array of size 2*N. Make N pairs using each element
  * exactly once such that following score is maximized.
  * score = summation(gcd(x_i, y_i) * i)
- * for 1 <= i <= N, (x_i, y_i) is i-th pair.
- * N <= 10
- * 1 <= A[i] <= 1e9
+ * \[ score = \sum_{i=1}^{n} gcd(x_{i}, y_{i}) \]
+ * {n} $\leq$ 10
+ * 1 $\leq {A_{i}} \leq$ 1000,000,000
  *
  * ### Algorithm
  * For each Mask 0 to 111....(2*N times) Add new pair to this set from yet
@@ -40,8 +40,8 @@ namespace dp_bitmask {
  * @brief Find the maximum value of a new mask by adding
  * a pair to a previously formed mask.
  * @tparam T size of the array A.
- * @param A an array of elements from which pairs will be made.
- * @param N size of an array.
+ * @param A array from which pairs will be made.
+ * @param N array size.
  * @return maximum score which can be formed with pairs of this array.
  */
 template <size_t T>
