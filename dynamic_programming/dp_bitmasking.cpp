@@ -32,7 +32,7 @@
 namespace dynamic_programming {
 /**
  * @namespace dp_bitmask
- * @brief Implementation of DP with Bitmasking
+ * @brief [DP Bitmask] implementation
  */
 namespace dp_bitmask {
 /**
