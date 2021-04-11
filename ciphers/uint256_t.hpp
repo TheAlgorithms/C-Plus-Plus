@@ -222,7 +222,7 @@ class uint256_t {
      * @returns addition of this and p, returning this
      */
     inline uint256_t &operator+=(const uint256_t &p) {
-        bool app = (p.s + s < s);
+        bool app = (s + p.s < s);
         f = f + app + p.f;
         s = s + p.s;
         return *this;
@@ -265,7 +265,7 @@ class uint256_t {
      * @returns subtraction of this and p, returning uint256_t integer
      */
     inline uint256_t operator-(const uint256_t &p) {
-        bool app = p.s > s;
+        bool app = s < p.s;
         return {f - p.f - app, s - p.s};
     }
 
@@ -314,7 +314,7 @@ class uint256_t {
      * @returns subtraction of this and p, returning this
      */
     inline uint256_t &operator-=(const uint256_t &p) {
-        bool app = p.s > s;
+        bool app = s < p.s;
         f = f - app - p.f;
         s = s - p.s;
         return *this;
