@@ -11,9 +11,9 @@
  * $dp(i, j)$ shows considering i-elements from start, is it possible to get
  * the $sum = j?$. $Sum = 0$ is possible by default, for every other sum we will
  * check if it is obtainable while excluding the current element i from
- * the subset (that is $dp(i-1, sum) == true?$) or obtainable when including
- * element i to the subset (that is $sum \geq A_{i}$ and
- * $dp(i-1, sum - A_{i}) == true?$) in that case we will mark $dp(i, sum)$ as true.
+ * the subset (that is $dp(i - 1, sum) == true?$) or obtainable when including
+ * element i to the subset (that is $sum \geq A_{i}?$ and
+ * $dp(i - 1, sum - A_{i}) == true?$) in that case we will mark $dp(i, sum)$ as true.
  * $dp(n, V)$ will store the final answer (considering all n elements is it
  * possible to get subset of sum $V$ ?).
  *
