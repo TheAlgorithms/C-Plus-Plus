@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of Bitmasking DP approach
- * (https://codeforces.com/blog/entry/337)
+ * @brief Implementation of [Bitmasking DP approach](https://codeforces.com/blog/entry/337)
  *
  * @details
  * Given Integer N and Array of size 2*N. Make N pairs using each element
