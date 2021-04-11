@@ -4,15 +4,15 @@
  * approach](https://codeforces.com/blog/entry/337)
  *
  * @details
- * Given Integer N and Array of size 2$\cdot${N}. Make N pairs using each element
- * exactly once such that following score is maximized.
+ * Given Integer N and Array of size 2$\cdot${N}. Make N pairs using each
+ * element exactly once such that following score is maximized.
  * \[ score = \sum_{i=1}^{n} gcd(x_{i}, y_{i}) \]
  * {n} $\leq$ 10
  * 1 $\leq {A_{i}} \leq$ 1000,000,000
  *
  * ### Algorithm
- * For each Mask 0 to 111....(2$\cdot${N} times) Add new pair to this set from yet
- * unselected elements and try to maximize the newly formed mask after
+ * For each Mask 0 to 111....(2$\cdot${N} times) Add new pair to this set from
+ * yet unselected elements and try to maximize the newly formed mask after
  * adding these elements with value formed after adding new pair.
  * the ans we are looking for will be in mask which shows all elements are
  * added, that is 111...(2$\cdot${N} times).
@@ -92,7 +92,8 @@ uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
         }
     }
 
-    /// Max score is in the mask $2^{2N}$ - 1, which shows all elements are added.
+    /// Max score is in the mask $2^{2N}$ - 1, which shows all elements are
+    /// added.
     return dp[M - 1];
 }
 
