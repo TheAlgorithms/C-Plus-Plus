@@ -688,7 +688,7 @@ class uint128_t {
         return *this;
     }
 
-    uint128_t operator&(const uint128_t &p) {
+    inline uint128_t operator&(const uint128_t &p) {
         return uint128_t(this->f & p.f, this->s & p.s);
     }
 
@@ -714,11 +714,11 @@ class uint128_t {
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    uint128_t operator|(const T p) {
+    inline uint128_t operator|(const T p) {
         return uint128_t(p | s);
     }
 
-    uint128_t operator|(const uint128_t &p) {
+    inline uint128_t operator|(const uint128_t &p) {
         return uint128_t(this->f | p.f, this->s | p.s);
     }
 
@@ -730,18 +730,18 @@ class uint128_t {
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    uint128_t &operator|=(const T p) {
+    inline uint128_t &operator|=(const T p) {
         s |= p.s;
         return *this;
     }
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    uint128_t operator^(const T p) {
+    inline uint128_t operator^(const T p) {
         return uint128_t(this->f, this->s ^ p);
     }
 
-    uint128_t operator^(const uint128_t &p) {
+    inline uint128_t operator^(const uint128_t &p) {
         return uint128_t(this->f ^ p.f, this->s ^ p.s);
     }
 
@@ -753,7 +753,7 @@ class uint128_t {
 
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
-    uint128_t &operator^=(const T &p) {
+    inline uint128_t &operator^=(const T &p) {
         s ^= p;
         return *this;
     }
@@ -787,100 +787,100 @@ class uint128_t {
 // Arithmetic operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator+(const T &p, const uint128_t &q) {
+inline uint128_t operator+(const T &p, const uint128_t &q) {
     return uint128_t(p) + q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator-(const T p, const uint128_t &q) {
+inline uint128_t operator-(const T p, const uint128_t &q) {
     return uint128_t(p) - q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator*(const T p, const uint128_t &q) {
-    return q * p;
+inline uint128_t operator*(const T p, const uint128_t &q) {
+    return uint128_t(p) * q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator/(const T p, const uint128_t &q) {
+inline uint128_t operator/(const T p, const uint128_t &q) {
     return uint128_t(p) / q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator%(const T p, const uint128_t &q) {
+inline uint128_t operator%(const T p, const uint128_t &q) {
     return uint128_t(p) % q;
 }
 
 // Bitwise operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator&(const T &p, const uint128_t &q) {
+inline uint128_t operator&(const T &p, const uint128_t &q) {
     return uint128_t(p) & q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator|(const T p, const uint128_t &q) {
+inline uint128_t operator|(const T p, const uint128_t &q) {
     return uint128_t(p) | q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-uint128_t operator^(const T p, const uint128_t &q) {
+inline uint128_t operator^(const T p, const uint128_t &q) {
     return uint128_t(p) ^ q;
 }
 
 // Boolean operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator&&(const T p, const uint128_t &q) {
+inline bool operator&&(const T p, const uint128_t &q) {
     return uint128_t(p) && q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator||(const T p, const uint128_t &q) {
+inline bool operator||(const T p, const uint128_t &q) {
     return uint128_t(p) || q;
 }
 
 // Comparison operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator==(const T p, const uint128_t &q) {
+inline bool operator==(const T p, const uint128_t &q) {
     return uint128_t(p) == q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator!=(const T p, const uint128_t &q) {
+inline bool operator!=(const T p, const uint128_t &q) {
     return uint128_t(p) != q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator<(const T p, const uint128_t &q) {
+inline bool operator<(const T p, const uint128_t &q) {
     return uint128_t(p) < q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator<=(const T p, const uint128_t &q) {
+inline bool operator<=(const T p, const uint128_t &q) {
     return uint128_t(p) <= q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator>(const T p, const uint128_t &q) {
+inline bool operator>(const T p, const uint128_t &q) {
     return uint128_t(p) > q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
-bool operator>=(const T p, const uint128_t &q) {
+inline bool operator>=(const T p, const uint128_t &q) {
     return uint128_t(p) >= q;
 }
 

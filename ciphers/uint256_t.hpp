@@ -197,8 +197,8 @@ class uint256_t {
      * @returns addition of this and p, returning uint256_t integer
      */
     inline uint256_t operator+(const uint256_t &p) {
-        uint32_t app = (s + p.s < s);
-        return {f + app + p.f, p.s + s};
+        bool app = (s + p.s < s);
+        return uint256_t(f + p.f + app, p.s + s);
     }
 
     /**
@@ -210,7 +210,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator+=(const T &p) {
-        uint32_t app = (p + s < s);
+        bool app = (p + s < s);
         this->f += app;
         this->s += p;
         return *this;
@@ -222,8 +222,8 @@ class uint256_t {
      * @returns addition of this and p, returning this
      */
     inline uint256_t &operator+=(const uint256_t &p) {
-        uint32_t _app = (p.s + s < s);
-        f += _app + p.f;
+        bool app = (p.s + s < s);
+        f += app + p.f;
         s += p.s;
         return *this;
     }
@@ -255,7 +255,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator-(const T &p) {
-        uint32_t app = (p > s);
+        bool app = (p > s);
         return uint256_t(f - app, s - p);
     }
 
@@ -265,8 +265,8 @@ class uint256_t {
      * @returns subtraction of this and p, returning uint256_t integer
      */
     inline uint256_t operator-(const uint256_t &p) {
-        uint32_t app = p.s > s;
-        return {f - p.f - app, s - p.s};
+        bool app = p.s > s;
+        return uint256_t(f - p.f - app, s - p.s);
     }
 
     /**
@@ -302,7 +302,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator-=(const T p) {
-        uint32_t app = (p > s);
+        bool app = (p > s);
         f -= app;
         s -= p;
         return *this;
@@ -314,8 +314,8 @@ class uint256_t {
      * @returns subtraction of this and p, returning this
      */
     inline uint256_t &operator-=(const uint256_t &p) {
-        uint32_t app = p.s > s;
-        f = f - app - p.f;
+        bool app = p.s > s;
+        f = f - p.f - app;
         s -= p.s;
         return *this;
     }
