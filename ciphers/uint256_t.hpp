@@ -198,7 +198,7 @@ class uint256_t {
      */
     inline uint256_t operator+(const uint256_t &p) {
         bool app = (s + p.s < s);
-        return uint256_t(f + p.f + app, p.s + s);
+        return {f + p.f + app, p.s + s};
     }
 
     /**
@@ -266,7 +266,7 @@ class uint256_t {
      */
     inline uint256_t operator-(const uint256_t &p) {
         bool app = p.s > s;
-        return uint256_t(f - p.f - app, s - p.s);
+        return {f - p.f - app, s - p.s};
     }
 
     /**
