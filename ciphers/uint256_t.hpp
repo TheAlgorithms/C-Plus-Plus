@@ -198,7 +198,7 @@ class uint256_t {
      */
     inline uint256_t operator+(const uint256_t &p) {
         bool app = (s + p.s < s);
-        return {f + p.f + app, p.s + s};
+        return {f + app + p.f, s + p.s};
     }
 
     /**
@@ -223,8 +223,8 @@ class uint256_t {
      */
     inline uint256_t &operator+=(const uint256_t &p) {
         bool app = (p.s + s < s);
-        f += app + p.f;
-        s += p.s;
+        f = f + app + p.f;
+        s = s + p.s;
         return *this;
     }
 
@@ -303,8 +303,8 @@ class uint256_t {
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator-=(const T p) {
         bool app = (p > s);
-        f -= app;
-        s -= p;
+        f = f - app;
+        s = s - p;
         return *this;
     }
 
@@ -315,8 +315,8 @@ class uint256_t {
      */
     inline uint256_t &operator-=(const uint256_t &p) {
         bool app = p.s > s;
-        f = f - p.f - app;
-        s -= p.s;
+        f = f - app - p.f;
+        s = s - p.s;
         return *this;
     }
 
