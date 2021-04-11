@@ -4,18 +4,18 @@
  * (https://www.geeksforgeeks.org/subset-sum-problem-dp-25)
  *
  * @details
- * Give a value "V" and set of non-negative integers
- * Determine if there is subset which has sum = V.
+ * Give a value $V$ and set of non-negative integers
+ * Determine if there is subset which has $sum = V$
  *
  * ### Algorithm
- * DP[i][j] shows considering i-elements from start, is it possible to get
- * the sum = j?. Sum = 0 is possible by default, for every other sum we will
+ * $dp(i, j)$ shows considering i-elements from start, is it possible to get
+ * the $sum = j?$. $Sum = 0$ is possible by default, for every other sum we will
  * check if it is obtainable while excluding the current element i from
- * the subset (that is dp[i-1][sum]==1?) or obtainable when including
- * element i to the subset (that is sum>=A[i] and dp[i-1][sum-A[i]]==1?)
- * in that case we will mark dp[i][sum] as true. dp[n][V] will store the
- * final answer (considering all n elements is it possible to get subset of
- * sum "V"?).
+ * the subset (that is $dp(i-1, sum) == true?$) or obtainable when including
+ * element i to the subset (that is $sum \geq A_{i}$ and
+ * $dp(i-1, sum - A_{i}) == true?$) in that case we will mark $dp(i, sum)$ as true.
+ * $dp(n, V)$ will store the final answer (considering all n elements is it
+ * possible to get subset of sum $V$ ?).
  *
  * @author [Syed Faizan](https://github.com/faizan2700)
  */
@@ -38,12 +38,12 @@ namespace subset_sum {
 /**
  * @brief for each sum less than or equal to V calculate if it is possible
  * to get with help of first i elements. By making use of previously
- * calculated info subset sum can be solved in O(n*V) complexity.
+ * calculated info subset sum can be solved in $O(n\astV)$ complexity.
  * @tparam T size of the set
- * @param A set of the allowed values.
- * @param n size of the array (given set) A.
- * @param v is give sum of subset to be checked.
- * @return true if possible to get subset sum of value "v", false otherwise.
+ * @param $A$ set of the allowed values.
+ * @param $n$ array size.
+ * @param $V$ subset sum to be obtained.
+ * @return true if possible to get subset sum of value $V$, false otherwise.
  */
 template <size_t T>
 bool subset_sum(const std::array<int, T> &A, const int &n, const uint32_t &v) {
