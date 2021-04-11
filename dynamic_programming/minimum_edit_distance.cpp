@@ -122,8 +122,8 @@ uint64_t editDistDP(std::string str1, std::string str2, uint64_t m, uint64_t n) 
 
   return dp[m][n]; /// returning the minimum cost of operations needed to convert str1 to str2
 }
-} // namespace minimum_edit_distance
-} // namespace dynamic_programming
+}  // namespace minimum_edit_distance
+}  // namespace dynamic_programming
 
 /**
  * @brief Self-test implementations
