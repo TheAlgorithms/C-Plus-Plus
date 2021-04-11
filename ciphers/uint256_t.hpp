@@ -193,7 +193,7 @@ class uint256_t {
 
     /**
      * @brief operator + for uint256_t and other integer types.
-     * @param p 128-bit unsigned integer
+     * @param p 256-bit unsigned integer
      * @returns addition of this and p, returning uint256_t integer
      */
     inline uint256_t operator+(const uint256_t &p) {
@@ -364,7 +364,7 @@ class uint256_t {
 
     /**
      * @brief operator *= for uint256_t and other integer types.
-     * @param p 128-bit unsigned integer
+     * @param p 256-bit unsigned integer
      * @returns multiplication of this and p, returning this
      */
     uint256_t &operator*=(const uint256_t &p) {
@@ -461,17 +461,17 @@ class uint256_t {
     }
 
     /**
-     * @brief operator % for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns unsigned 128-bit remainder.
+     * @brief operator % for uint256_t
+     * @param p 256-bit unsigned integer
+     * @returns unsigned 256-bit remainder.
      */
     inline uint256_t operator%(const uint256_t &p) { return divide(p).second; }
 
     /**
-     * @brief operator % for uint128_t and other integer types.
+     * @brief operator % for uint256_t and other integer types.
      * @tparam T denoting integral type
      * @param p a type of integer variable
-     * @returns unsigned 128-bit remainder.
+     * @returns unsigned 256-bit remainder.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -482,9 +482,9 @@ class uint256_t {
     }
 
     /**
-     * @brief operator %= for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns this set as unsigned 128-bit remainder.
+     * @brief operator %= for uint256_t
+     * @param p 256-bit unsigned integer
+     * @returns this set as unsigned 256-bit remainder.
      */
     inline uint256_t &operator%=(const uint256_t &p) {
         *this = divide(p).second;
@@ -492,10 +492,10 @@ class uint256_t {
     }
 
     /**
-     * @brief operator %= for uint128_t
+     * @brief operator %= for uint256_t
      * @tparam T denoting integral type
      * @param p a type of integer variable
-     * @returns this set as unsigned 128-bit remainder.
+     * @returns this set as unsigned 256-bit remainder.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
