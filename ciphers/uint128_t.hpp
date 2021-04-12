@@ -7,13 +7,13 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
-#include <algorithm>
-#include <ostream>
-#include <string>
-#include <utility>
+#include <algorithm>  /// for `std::reverse` and other operations
+#include <ostream>    /// for `std::cout` overload
+#include <string>     /// for `std::string`
+#include <utility>    /// for `std::pair` library
 
 #ifdef _MSC_VER
-#include <intrin.h>
+#include <intrin.h>  /// for _BitScanForward64 and __BitScanReverse64 operation
 #endif
 
 #ifndef CIPHERS_UINT128_T_HPP_
@@ -54,10 +54,10 @@ std::string add(const std::string &first, const std::string &second) {
 }
 /**
  * @class uint128_t
- * @details 128-bit numbers.
+ * @brief class for 128-bit unsigned integer
  */
 class uint128_t {
-    uint64_t f{}, s{};  /// First and second half of 128 bit number.
+    uint64_t f{}, s{};  /// First and second half of 128 bit number
 
     /**
      * @brief Get integer from given string.

@@ -1,5 +1,5 @@
 /**
- * @file elliptic_curve_key_exchange.cpp
+ * @file
  * @brief Implementation of [Elliptic Curve Diffie Hellman Key
  * Exchange](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange).
  *
@@ -21,13 +21,10 @@
  * alicePubKey * bobPrivKey = bobPubKey * alicePrivKey = secret
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operation
 
-#include <algorithm>
-#include <cassert>
-#include <iomanip>
-#include <iostream>
-
-#include "uint256_t.hpp"
+#include "uint256_t.hpp"  /// for 256-bit integer;
 
 /**
  * @namespace ciphers
@@ -36,7 +33,9 @@
 namespace ciphers {
 /**
  * @brief namespace elliptic_curve_key_exchange
- * @details Demonstration of ECDH (Elliptic Curve Diffie-Hellman) key exchange.
+ * @details Demonstration of [Elliptic Curve
+ * Diffie-Hellman](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange)
+ * key exchange.
  */
 namespace elliptic_curve_key_exchange {
 
@@ -84,10 +83,15 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
 
 /**
  * @brief Addition of points
- * @details Add given point to generate third point
+ * @details Add given point to generate third point. More description can be
+ * found
+ * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_addition),
+ * and
+ * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_doubling)
  * @param a First point
  * @param b Second point
- * @param curve_a_coeff Coefficient of given curve (y^2 = x^3 + ax + b) % mod
+ * @param curve_a_coeff Coefficient `a` of the given curve (y^2 = x^3 + ax + b)
+ * % mod
  * @param mod Given field
  * @return the resultant point
  */
@@ -105,8 +109,9 @@ Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
         uint256_t num = (b.y - a.y + mod), den = (b.x - a.x + mod);
         lambda = (num * (exp(den, mod - 2, mod))) % mod;
     } else {
-        // Slope being infinite
-        // Taking dertivative of y^2 = x^3 + ax + b
+        // Slope when the line is tangent to curve.
+        // This operation is performed while doubling.
+        // Taking derivative of y^2 = x^3 + ax + b
         // 2y dy = (3 * x^2 + a)dx
         // (dy/dx) = (3x^2 + a)/(2y)
         if (!a.y) {
@@ -132,7 +137,8 @@ Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
 /**
  * @brief multiply Point and integer
  * @details Multiply Point by a scalar factor (here it is a private key p). The
- * multiplication is called as double and add method
+ * multiplication is called as [double and add
+ * method](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Double-and-add)
  * @param a Point to multiply
  * @param curve_a_coeff Coefficient of given curve (y^2 = x^3 + ax + b) % mod
  * @param p The scalar value
@@ -172,7 +178,7 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
  * @returns void
  */
 static void uint128_t_tests() {
-    // Tests 1: Operations test
+    // 1st test: Operations test
     uint128_t a("122"), b("2312");
     assert(a + b == uint128_t("2434"));
     assert(b - a == uint128_t("2190"));
@@ -185,7 +191,7 @@ static void uint128_t_tests() {
     assert((a << 64) == uint128_t("2250502776992565297152"));
     assert((b >> 7) == 18);
 
-    // Tests 2: Operations test
+    // 2nd test: Operations test
     a = uint128_t("12321421424232142122");
     b = uint128_t("23123212");
     assert(a + b == uint128_t("12321421424255265334"));
@@ -295,8 +301,8 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    uint128_t_tests();  // running predefined 128-bit unsigned integer tests.
-    uint256_t_tests();  // running predefined 256-bit unsigned integer tests.
+    uint128_t_tests();  // running predefined 128-bit unsigned integer tests
+    uint256_t_tests();  // running predefined 256-bit unsigned integer tests
     test();             // running predefined tests
     return 0;
 }

@@ -1,5 +1,5 @@
 /**
- * @file uint256_t.hpp
+ * @file
  *
  * @details Implementation of 256-bit unsigned integers.
  * @note The implementation can be flagged as not completed. This header is used
@@ -7,10 +7,10 @@
  * Diffie-Hellman) Key exchange.
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-#include <string>
-#include <utility>
+#include <string>   /// for `std::string`
+#include <utility>  /// for `std::pair` library
 
-#include "uint128_t.hpp"
+#include "uint128_t.hpp"  /// for uint128_t integer
 
 #ifndef CIPHERS_UINT256_T_HPP_
 #define CIPHERS_UINT256_T_HPP_
@@ -28,7 +28,7 @@ struct std::is_unsigned<uint256_t> : std::true_type {};
 
 /**
  * @class uint256_t
- * @details 256-bit number class.
+ * @brief class for 256-bit unsigned integer.
  */
 class uint256_t {
     uint128_t f{}, s{};  /// First and second half of 256 bit number.
@@ -504,94 +504,199 @@ class uint256_t {
         return *this;
     }
 
-    // Comparison operators
+    /**
+     * @brief operator < for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is less than other, else false
+     */
     inline bool operator<(const uint256_t &other) {
         return f < other.f || (f == other.f && s < other.s);
     }
 
+    /**
+     * @brief operator <= for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is less than or equal to other, else false
+     */
     inline bool operator<=(const uint256_t &other) {
         return f < other.f || (f == other.f && s <= other.s);
     }
 
+    /**
+     * @brief operator > for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is greater than other, else false
+     */
     inline bool operator>(const uint256_t &other) {
         return f > other.f || (f == other.f && s > other.s);
     }
 
+    /**
+     * @brief operator >= for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is greater than or equal than other, else false
+     */
     inline bool operator>=(const uint256_t &other) {
         return (f > other.f) || (f == other.f && s >= other.s);
     }
 
+    /**
+     * @brief operator == for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is equal than other, else false
+     */
     inline bool operator==(const uint256_t &other) {
         return f == other.f && s == other.s;
     }
 
+    /**
+     * @brief operator != for uint256_t
+     * @param other number to be compared with this
+     * @returns true if this is not equal than other, else false
+     */
     inline bool operator!=(const uint256_t &other) {
         return !((*this) == other);
     }
 
+    /**
+     * @brief operator ! for uint256_t
+     * @returns true if this has zero value, else false
+     */
     inline bool operator!() { return !f && !s; }
 
+    /**
+     * @brief operator && for uint256_t
+     * @param b number to be compared with this
+     * @returns true if both of the values are not zero, else false
+     */
     inline bool operator&&(const uint256_t &b) {
         return (s || f) && (b.s || b.f);
     }
 
+    /**
+     * @brief operator || for uint256_t
+     * @param b number to be compared with this
+     * @returns true if one of the values are not zero, else false
+     */
     inline bool operator||(const uint256_t &b) {
         return (s || f) || (b.s || b.f);
     }
 
+    /**
+     * @brief operator () for uint256_t
+     * @returns true if this value is non-zero, else false
+     */
     inline bool operator()() { return s || f; }
 
+    /**
+     * @brief operator < for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is less than other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator<(const T &other) {
         return *this < uint256_t(other);
     }
 
+    /**
+     * @brief operator <= for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is less than or equal to other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator<=(const T &other) {
         return *this <= uint256_t(other);
     }
 
+    /**
+     * @brief operator > for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is greater than other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator>(const T &other) {
         return *this > uint256_t(other);
     }
 
+    /**
+     * @brief operator >= for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is greater than or equal other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator>=(const T &other) {
         return *this >= uint256_t(other);
     }
 
+    /**
+     * @brief operator == for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is equal to other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator==(const T &other) {
         return *this == uint256_t(other);
     }
 
+    /**
+     * @brief operator != for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is not equal to other, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator!=(const T &other) {
         return *this != uint256_t(other);
     }
 
+    /**
+     * @brief operator && for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is both values are non-zero, else false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator&&(const T &b) {
         return (s || f) && (b);
     }
 
+    /**
+     * @brief operator || for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is either one of the values are non-zero, else
+     * false
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator||(const T &b) {
         return (s || f) || (b);
     }
 
-    // Bitwise operators
+    /**
+     * @brief operator ~ for uint256_t
+     * @returns 1's complement of this number
+     */
     inline uint256_t operator~() { return {~f, ~s}; }
 
+    /**
+     * @brief operator << for uint256_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns value of this shifted by p to left
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t operator<<(const T &p) {
@@ -604,6 +709,12 @@ class uint256_t {
                          (this->s << p));
     }
 
+    /**
+     * @brief operator <<= for uint256_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns this shifted by p to left
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t &operator<<=(const T &p) {
@@ -619,6 +730,12 @@ class uint256_t {
         return *this;
     }
 
+    /**
+     * @brief operator >> for uint256_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns value of this shifted by p to right
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t operator>>(const T &p) {
@@ -631,6 +748,12 @@ class uint256_t {
                          (this->s >> p) + (this->f << (128 - p)));
     }
 
+    /**
+     * @brief operator >>= for uint256_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns this shifted by p to right
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t &operator>>=(const T &p) {
@@ -646,22 +769,44 @@ class uint256_t {
         return *this;
     }
 
+    /**
+     * @brief operator & for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this & p (& is bit-wise operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator&(const T &p) {
         return *this & uint256_t(p);
     }
 
+    /**
+     * @brief operator & for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this & p (& is bit-wise operator)
+     */
     inline uint256_t operator&(const uint256_t &p) {
         return {f & p.f, s & p.s};
     }
 
+    /**
+     * @brief operator &= for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this & p (& is bit-wise operator)
+     */
     inline uint256_t &operator&=(const uint256_t &p) {
         f &= p.f;
         s &= p.s;
         return *this;
     }
 
+    /**
+     * @brief operator &= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this & p (& is bit-wise operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator&=(const T p) {
@@ -669,16 +814,33 @@ class uint256_t {
         return *this;
     }
 
+    /**
+     * @brief operator | for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this | p (| is bit-wise operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator|(const T &p) {
         return *this | uint256_t(p);
     }
 
+    /**
+     * @brief operator | for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this | p (| is bit-wise OR operator)
+     */
     inline uint256_t operator|(const uint256_t &p) {
         return {this->f | p.f, this->s | p.s};
     }
 
+    /**
+     * @brief operator |= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this | p (| is bit-wise OR operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator|=(const T &p) {
@@ -686,28 +848,55 @@ class uint256_t {
         return *this;
     }
 
+    /**
+     * @brief operator |= for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this | p (| is bit-wise OR operator)
+     */
     inline uint256_t &operator|=(const uint256_t &p) {
         f |= p.f;
         s |= p.s;
         return *this;
     }
 
+    /**
+     * @brief operator ^ for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator^(const T &p) {
         return uint256_t(f, s ^ p);
     }
 
+    /**
+     * @brief operator ^ for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     */
     inline uint256_t operator^(const uint256_t &p) {
         return {this->f ^ p.f, this->s ^ p.s};
     }
 
+    /**
+     * @brief operator ^= for uint256_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     */
     inline uint256_t &operator^=(const uint256_t &p) {
         f ^= p.f;
         s ^= p.s;
         return *this;
     }
 
+    /**
+     * @brief operator ^= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator^=(const T &p) {
