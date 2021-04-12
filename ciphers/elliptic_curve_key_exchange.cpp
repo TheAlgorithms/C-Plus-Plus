@@ -303,6 +303,6 @@ static void test() {
 int main() {
     uint128_t_tests();  // running predefined 128-bit unsigned integer tests
     uint256_t_tests();  // running predefined 256-bit unsigned integer tests
-    test();             // running predefined tests
+    test();             // running self-test implementations
     return 0;
 }
