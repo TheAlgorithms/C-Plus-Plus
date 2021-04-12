@@ -1,5 +1,5 @@
 /**
- * @file uint128_t.hpp
+ * @file
  *
  * @details Implementation of 128-bit unsigned integers.
  * @note The implementation can be flagged as not completed. This header is used
