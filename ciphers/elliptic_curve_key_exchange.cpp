@@ -211,7 +211,7 @@ static void uint128_t_tests() {
  * @returns void
  */
 static void uint256_t_tests() {
-    // Tests 1: Operations test
+    // 1st test: Operations test
     uint256_t a("122"), b("2312");
     assert(a + b == uint256_t("2434"));
     assert(b - a == uint256_t("2190"));
@@ -224,7 +224,7 @@ static void uint256_t_tests() {
     assert((a << 64) == uint256_t("2250502776992565297152"));
     assert((b >> 7) == 18);
 
-    // Tests 2: Operations test
+    // 2nd test: Operations test
     a = uint256_t("12321423124513251424232142122");
     b = uint256_t("23124312431243243215354315132413213212");
     assert(a + b == uint256_t("23124312443564666339867566556645355334"));
