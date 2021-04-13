@@ -139,12 +139,16 @@ class uint256_t {
         return 128 + f._trz();
     }
 
-    inline uint32_t _len() { return _lez(); }
-
+    /**
+     * @brief casting operator to boolean value
+     * @returns true if value of this is non-zero, else false
+     */
     inline explicit operator bool() const { return f || s; }
 
     /**
-     * @brief casting operator
+     * @brief casting operator to any integer value
+     * @tparam T any integer type
+     * @returns integer value casted to mentioned type
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -152,6 +156,10 @@ class uint256_t {
         return static_cast<T>(s);
     }
 
+    /**
+     * @brief casting operator to uint128_t
+     * @returns returns lower 128-bit integer part
+     */
     inline explicit operator uint128_t() const { return s; }
 
     /**
@@ -166,9 +174,19 @@ class uint256_t {
      */
     inline uint128_t upper() const { return f; }
 
-    // Assign
+    /**
+     * @brief operator = for uint256_t
+     * @param p an 256-bit integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
     inline uint256_t &operator=(const uint256_t &p) = default;
 
+    /**
+     * @brief operator = for other types
+     * @tparam T denoting any integer type
+     * @param p an integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator=(const T &p) {
@@ -176,11 +194,19 @@ class uint256_t {
         return *this;
     }
 
+    /**
+     * @brief operator = for type string
+     * @param p a string to assign it's value to equivalent integer
+     * @returns this pointer with it's value equal to `p`
+     */
     inline uint256_t &operator=(const std::string &p) {
         __get_integer_from_string(p);
         return *this;
     }
 
+    /**
+     * @brief Move assignment operator
+     */
     inline uint256_t &operator=(uint256_t &&p) = default;
 
     /**

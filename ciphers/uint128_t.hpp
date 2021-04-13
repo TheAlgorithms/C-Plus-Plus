@@ -177,11 +177,17 @@ class uint128_t {
 #endif
     }
 
-    inline uint32_t _len() { return _lez(); }
+    /**
+     * @brief casting operator to boolean value
+     * @returns true if value of this is non-zero, else false
+     */
+    inline explicit operator bool() const { return (f || s); }
 
-    // Casting operators
-    inline explicit operator bool() const { return f || s; }
-
+    /**
+     * @brief casting operator to any integer valu
+     * @tparam T any integer type
+     * @returns integer value casted to mentioned type
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline explicit operator T() const {
@@ -200,6 +206,12 @@ class uint128_t {
      */
     inline uint64_t upper() const { return f; }
 
+    /**
+     * @brief operator = for other types
+     * @tparam T denoting any integer type
+     * @param p an integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint128_t &operator=(const T &p) {
@@ -207,13 +219,30 @@ class uint128_t {
         return *this;
     }
 
+    /**
+     * @brief operator = for type string
+     * @param p a string to assign it's value to equivalent integer
+     * @returns this pointer with it's value equal to `p`
+     */
     inline uint128_t &operator=(const std::string &p) {
-        __get_integer_from_string(p);
+        this->__get_integer_from_string(p);
         return *this;
     }
 
-    inline uint128_t &operator=(const uint128_t &p) = default;
+    /**
+     * @brief operator = for uint128_t
+     * @param p an 128-bit integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
+    inline uint128_t &operator=(const uint128_t &p) {
+        f = p.f;
+        s = p.s;
+        return *this;
+    }
 
+    /**
+     * @brief Move assignment operator
+     */
     inline uint128_t &operator=(uint128_t &&p) = default;
 
     /**
