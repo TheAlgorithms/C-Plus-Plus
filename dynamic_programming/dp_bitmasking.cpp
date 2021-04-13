@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of [Bitmasking DP
- * approach](https://codeforces.com/blog/entry/337)
+ * @brief Functions for [Bitmasking DP approach](https://codeforces.com/blog/entry/337) implementation
  *
  * @details
  * Given Integer N and Array of size 2$\cdot${N}. Make N pairs using each
@@ -37,11 +36,11 @@ namespace dynamic_programming {
 namespace dp_bitmask {
 /**
  * @brief Find the maximum value of a new mask by adding
- * a pair to a previously formed mask.
- * @tparam T size of the array A.
- * @param A array from which pairs will be made.
- * @param N array size.
- * @return maximum score which can be formed with pairs of this array.
+ * a pair to a previously formed mask
+ * @tparam T size of the array A
+ * @param A array from which pairs will be made
+ * @param N array size
+ * @return maximum score which can be formed with pairs of this array
  */
 template <size_t T>
 uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
@@ -101,7 +100,7 @@ uint64_t find_max_score(const std::array<uint32_t, T>& A, const uint8_t N) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementation
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
@@ -126,6 +125,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
-    test();  // run self-test implementation
+    test();  // run self-test implementations
     return 0;
 }
