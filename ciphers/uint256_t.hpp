@@ -934,8 +934,15 @@ class uint256_t {
         s ^= p;
         return *this;
     }
+
     /**
-     * @brief Costly std::cout operation.
+     * @brief operator << for printing uint256_t integer
+     * @details Prints the uint256_t integer in decimal form
+     * @note Note that this operator is costly since it uses strings to print
+     * the value
+     * @param op ostream object
+     * @param p 256-bit integer
+     * @returns op, ostream object.
      */
     friend std::ostream &operator<<(std::ostream &op, uint256_t p) {
         if (!p.f) {

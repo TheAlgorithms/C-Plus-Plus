@@ -44,10 +44,22 @@ namespace elliptic_curve_key_exchange {
  * @details Definition of Point in the curve.
  */
 typedef struct Point {
-    uint256_t x, y;
+    uint256_t x, y;  /// x and y co-ordinates
 
+    /**
+     * @brief operator == for Point
+     * @details check whether co-ordinates are equal to the given point
+     * @param p given point to be checked with this
+     * @returns true if x and y are both equal with Point p, else false
+     */
     inline bool operator==(const Point &p) { return x == p.x && y == p.y; }
 
+    /**
+     * @brief ostream operator for printing Point
+     * @param op ostream operator
+     * @param p Point to be printed on console
+     * @returns op, the ostream object
+     */
     friend std::ostream &operator<<(std::ostream &op, const Point &p) {
         op << p.x << " " << p.y;
         return op;
@@ -109,11 +121,16 @@ Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
         uint256_t num = (b.y - a.y + mod), den = (b.x - a.x + mod);
         lambda = (num * (exp(den, mod - 2, mod))) % mod;
     } else {
-        // Slope when the line is tangent to curve.
-        // This operation is performed while doubling.
-        // Taking derivative of y^2 = x^3 + ax + b
-        // 2y dy = (3 * x^2 + a)dx
-        // (dy/dx) = (3x^2 + a)/(2y)
+        /**
+         *  slope when the line is tangent to curve. This operation is performed
+         * while doubling. Taking derivative of `y^2 = x^3 + ax + b`
+         * => `2y dy = (3 * x^2 + a)dx`
+         * => `(dy/dx) = (3x^2 + a)/(2y)`
+         */
+        /**
+         * if y co-ordinate is zero, the slope is infinite, return inf.
+         * else calculate the slope (here % mod and store in lambda)
+         */
         if (!a.y) {
             return {inf, inf};
         }
@@ -180,12 +197,12 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
 static void uint128_t_tests() {
     // 1st test: Operations test
     uint128_t a("122"), b("2312");
-    assert(a + b == uint128_t("2434"));
-    assert(b - a == uint128_t("2190"));
-    assert(a * b == uint128_t("282064"));
-    assert(b / a == uint128_t("18"));
-    assert(b % a == uint128_t("116"));
-    assert((a & b) == uint128_t(8));
+    assert(a + b == 2434);
+    assert(b - a == 2190);
+    assert(a * b == 282064);
+    assert(b / a == 18);
+    assert(b % a == 116);
+    assert((a & b) == 8);
     assert((a | b) == 2426);
     assert((a ^ b) == 2418);
     assert((a << 64) == uint128_t("2250502776992565297152"));
@@ -197,9 +214,9 @@ static void uint128_t_tests() {
     assert(a + b == uint128_t("12321421424255265334"));
     assert(a - b == uint128_t("12321421424209018910"));
     assert(a * b == uint128_t("284910839733861759501135864"));
-    assert(a / b == uint128_t("532859423865"));
-    assert(a % b == uint128_t("3887742"));
-    assert((a & b) == uint128_t(18912520));
+    assert(a / b == 532859423865LL);
+    assert(a % b == 3887742);
+    assert((a & b) == 18912520);
     assert((a | b) == uint128_t("12321421424236352814"));
     assert((a ^ b) == uint128_t("12321421424217440294"));
     assert((a << 64) == uint128_t("227290107637132170748078080907806769152"));
@@ -213,12 +230,12 @@ static void uint128_t_tests() {
 static void uint256_t_tests() {
     // 1st test: Operations test
     uint256_t a("122"), b("2312");
-    assert(a + b == uint256_t("2434"));
-    assert(b - a == uint256_t("2190"));
-    assert(a * b == uint256_t("282064"));
-    assert(b / a == uint256_t("18"));
-    assert(b % a == uint256_t("116"));
-    assert((a & b) == uint256_t(8));
+    assert(a + b == 2434);
+    assert(b - a == 2190);
+    assert(a * b == 282064);
+    assert(b / a == 18);
+    assert(b % a == 116);
+    assert((a & b) == 8);
     assert((a | b) == 2426);
     assert((a ^ b) == 2418);
     assert((a << 64) == uint256_t("2250502776992565297152"));

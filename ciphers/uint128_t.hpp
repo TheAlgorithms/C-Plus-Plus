@@ -972,7 +972,13 @@ class uint128_t {
     }
 
     /**
-     * @brief Costly std::cout operation.
+     * @brief operator << for printing uint128_t integer
+     * @details Prints the uint128_t integer in decimal form
+     * @note Note that this operator is costly since it uses strings to print
+     * the value
+     * @param op ostream object
+     * @param p 128-bit integer
+     * @returns op, ostream object.
      */
     friend std::ostream &operator<<(std::ostream &op, const uint128_t &p) {
         if (!p.f) {
