@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Functions for [Bitmasking DP
- * approach](https://codeforces.com/blog/entry/337) implementation
+ * @brief Functions for [Bitmasking DP approach](https://codeforces.com/blog/entry/337) implementation
  *
  * @details
  * Given Integer N and Array of size 2$\cdot${N}. Make N pairs using each
