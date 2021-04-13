@@ -21,11 +21,8 @@
 double integral_approx(double lb, double ub,
                        const std::function<double(double)>& func,
                        double delta = .001) {
-    assert(lb <= ub);
     double result = 0;
     for (double i = lb; i < ub; i += delta) {
-        assert(!isnan(func(i)));
-        assert(!isnan(func(i + delta)));
         result += 0.5 * delta * (func(i) + func(i + delta));
     }
     return result;
