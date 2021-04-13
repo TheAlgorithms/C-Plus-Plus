@@ -22,9 +22,9 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <cassert>   /// for assert
-#include <iostream>  /// for IO operation
+#include <iostream>  /// for IO operations
 
-#include "uint256_t.hpp"  /// for 256-bit integer;
+#include "uint256_t.hpp"  /// for 256-bit integer
 
 /**
  * @namespace ciphers

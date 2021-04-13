@@ -32,7 +32,7 @@ struct std::is_unsigned<uint128_t> : std::true_type {};
  * @details Adds two long integer, only used for printing numbers
  * @param first First integer string
  * @param second Second integer string
- * @returns string denoting the addition of both the strings.
+ * @returns string denoting the addition of both the strings
  */
 std::string add(const std::string &first, const std::string &second) {
     std::string third;

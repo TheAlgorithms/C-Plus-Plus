@@ -28,10 +28,10 @@ struct std::is_unsigned<uint256_t> : std::true_type {};
 
 /**
  * @class uint256_t
- * @brief class for 256-bit unsigned integer.
+ * @brief class for 256-bit unsigned integer
  */
 class uint256_t {
-    uint128_t f{}, s{};  /// First and second half of 256 bit number.
+    uint128_t f{}, s{};  /// First and second half of 256 bit number
 
     /**
      * @brief Get integer from given string.
@@ -65,6 +65,11 @@ class uint256_t {
     // Constructors
     uint256_t() = default;
 
+    /**
+     * @brief Parameterized constructor
+     * @tparam T template for integer types
+     * @param low Integer denoting lower 128-bits
+     */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     explicit uint256_t(T low) : s(low), f(0) {}
