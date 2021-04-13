@@ -234,11 +234,7 @@ class uint128_t {
      * @param p an 128-bit integer to assign it's value
      * @returns this pointer with it's value equal to `p`
      */
-    inline uint128_t &operator=(const uint128_t &p) {
-        f = p.f;
-        s = p.s;
-        return *this;
-    }
+    inline uint128_t &operator=(const uint128_t &p) = default;
 
     /**
      * @brief Move assignment operator
