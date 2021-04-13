@@ -31,7 +31,7 @@
 namespace dynamic_programming {
 /**
  * @namespace dp_bitmask
- * @brief [DP Bitmask] implementation
+ * @brief Functions for [Bitmasking DP approach](https://codeforces.com/blog/entry/337) implementation
  */
 namespace dp_bitmask {
 /**
