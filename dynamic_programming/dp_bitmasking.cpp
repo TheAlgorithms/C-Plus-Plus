@@ -19,7 +19,7 @@
  * @author [Syed Faizan](https://github.com/faizan2700)
  */
 #include <algorithm>  /// for calculating gcd
-#include <array>      /// for creating array
+#include <array>      /// for std::array
 #include <cassert>    /// for using assert in self-test
 #include <iostream>   /// for IO operations
 #include <vector>     /// for std::vector
@@ -37,7 +37,7 @@ namespace dp_bitmask {
 /**
  * @brief Find the maximum value of a new mask by adding
  * a pair to a previously formed mask
- * @tparam T size of the array A
+ * @tparam T size of the array `A`
  * @param A array from which pairs will be made
  * @param N array size
  * @return maximum score which can be formed with pairs of this array
