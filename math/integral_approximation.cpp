@@ -26,7 +26,7 @@ double integral_approx(double lb, double ub,
     for (int i = 0; i < numDeltas; i++) {
         double begin = lb + i * delta;
         double end = lb + (i + 1) * delta;
-        result += 0.5 * delta * (func(begin) + func(end));
+        result += delta * (func(begin) + func(end)) / 2;
     }
     return result;
 }
