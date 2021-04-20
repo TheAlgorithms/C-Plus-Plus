@@ -22,8 +22,11 @@ double integral_approx(double lb, double ub,
                        const std::function<double(double)>& func,
                        double delta = .0001) {
     double result = 0;
-    for (double i = lb; i < ub; i += delta) {
-        result += 0.5 * delta * (func(i) + func(i + delta));
+    int numDeltas = (ub - lb) / delta;
+    for (int i = 0; i < numDeltas; i++) {
+        double begin = lb + i * delta;
+        double end = lb + (i+1) * delta;
+        result += 0.5 * delta * (func(begin) + func(end));
     }
     return result;
 }
