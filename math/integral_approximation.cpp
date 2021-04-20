@@ -14,13 +14,13 @@
  * Computes Integral Approximation
  * @param lb lower bound
  * @param ub upper bound
- * @param func pass in function
+ * @param func function passed in
  * @param delta delta
  * @returns
  */
 double integral_approx(double lb, double ub,
                        const std::function<double(double)>& func,
-                       double delta = .001) {
+                       double delta = .0001) {
     double result = 0;
     for (double i = lb; i < ub; i += delta) {
         result += 0.5 * delta * (func(i) + func(i + delta));
@@ -28,9 +28,15 @@ double integral_approx(double lb, double ub,
     return result;
 }
 
-double test_func1(double x) {
-    double y = x * x + cos(x) + exp(x) + log(x) * log(x);
-    return y;
+/** Wrapper to check if approximated value is within
+    .XX% difference of exact value.
+ * @param approx number to check double factorial for
+ * @param exact expected result
+ * @param threshold values from [0, 1)
+ */
+void test_eval(double approx, double expected, double threshold) {
+    assert(approx >= expected * (1 - threshold));
+    assert(approx <= expected * (1 + threshold));
 }
 
 /**
@@ -39,13 +45,59 @@ double test_func1(double x) {
  * @returns `void`
  */
 static void test() {
-    // Design a couple of functions and calculate their Riemann sum by hand,
-    // then assert that with the output
-    std::cout << integral_approx(-1.24, 1.02, [](const double x) {
+    double test_1 = integral_approx(3.24, 7.56, [](const double x) {
         return log(x) + exp(x) + x;
-    }) << std::endl;
+    });
+    std::cout << "Test Case 1" << std::endl;
+    std::cout << "function: log(x) + e^x + x" << std::endl;
+    std::cout << "range: [3.24, 7.56]" << std::endl;
+    std::cout << "value: " << test_1 << std::endl;
+    test_eval(test_1, 1924.80384023549, .001);
+    std::cout << "Test 1 Passed!" << std::endl;
+    std::cout << "=====================" << std::endl;
 
-    std::cout << integral_approx(1.24, 10.25, test_func1) << std::endl;
+    double test_2 = integral_approx(0.023, 3.69, [](const double x) {
+        return x*x + cos(x) + exp(x) + log(x) * log(x);
+    });
+    std::cout << "Test Case 2" << std::endl;
+    std::cout << "function: x^2 + cos(x) + e^x + log^2(x)" << std::endl;
+    std::cout << "range: [.023, 3.69]" << std::endl;
+    std::cout << "value: " << test_2 << std::endl;
+    test_eval(test_2, 58.71291345202729, .001);
+    std::cout << "Test 2 Passed!" << std::endl;
+    std::cout << "=====================" << std::endl;
+
+    double test_3 = integral_approx(10.78, 24.899, [](const double x) {
+        return x*x*x - x*x + 378;
+    });
+    std::cout << "Test Case 3" << std::endl;
+    std::cout << "function: x^3 - x^2 + 378" << std::endl;
+    std::cout << "range: [10.78, 24.899]" << std::endl;
+    std::cout << "value: " << test_3 << std::endl;
+    test_eval(test_3, 93320.65915078377, .001);
+    std::cout<<"Test 3 Passed!"<<std::endl;
+    std::cout << "=====================" << std::endl;
+
+    double test_4 = integral_approx(.101, .505, [](const double x) {
+        return cos(x)*tan(x)*x*x + exp(x);
+    }, .00001);
+    std::cout << "Test Case 4" << std::endl;
+    std::cout << "function: cos(x)*tan(x)*x^2 + e^x" << std::endl;
+    std::cout << "range: [.101, .505]" << std::endl;
+    std::cout << "value: " << test_4 << std::endl;
+    test_eval(test_4, 0.566485986311631, .001);
+    std::cout<<"Test 4 Passed!"<<std::endl;
+    std::cout << "=====================" << std::endl;
+
+    double test_5 = integral_approx(-1, 1, [](const double x) {
+        return exp(-1/(x*x));
+    });
+    std::cout << "Test Case 5" << std::endl;
+    std::cout << "function: e^(-1/x^2)" << std::endl;
+    std::cout << "range: [-1, 1]" << std::endl;
+    std::cout << "value: " << test_5 << std::endl;
+    test_eval(test_5, 0.1781477117815607, .001);
+    std::cout<<"Test 5 Passed!"<<std::endl;
 }
 
 /**
