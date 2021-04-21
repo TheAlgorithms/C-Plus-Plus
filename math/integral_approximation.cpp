@@ -105,7 +105,7 @@ static void test() {
     std::cout << "function: e^(-1/x^2)" << std::endl;
     std::cout << "range: [-1, 1]" << std::endl;
     std::cout << "value: " << test_5 << std::endl;
-    test_eval(test_5, 0.1781477117815607, .001);
+    math::test_eval(test_5, 0.1781477117815607, .001);
     std::cout << "Test 5 Passed!" << std::endl;
 }
 
