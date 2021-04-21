@@ -73,7 +73,7 @@ static void test() {
     std::cout << "function: x^2 + cos(x) + e^x + log^2(x)" << std::endl;
     std::cout << "range: [.023, 3.69]" << std::endl;
     std::cout << "value: " << test_2 << std::endl;
-    test_eval(test_2, 58.71291345202729, .001);
+    math::test_eval(test_2, 58.71291345202729, .001);
     std::cout << "Test 2 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
