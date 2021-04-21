@@ -32,7 +32,7 @@ double integral_approx(double lb, double ub,
                        const std::function<double(double)>& func,
                        double delta = .0001) {
     double result = 0;
-    int numDeltas = static_cast<int>((ub - lb) / delta);
+    uint64_t numDeltas = static_cast<uint64_t>((ub - lb) / delta);
     for (int i = 0; i < numDeltas; i++) {
         double begin = lb + i * delta;
         double end = lb + (i + 1) * delta;
