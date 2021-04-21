@@ -31,8 +31,9 @@ double integral_approx(double lb, double ub,
     return result;
 }
 
-/** Wrapper to evaluate if approximated value is within
-    .XX% threshold of exact value.
+/**
+ * @brief Wrapper to evaluate if the approximated
+ * value is within `.XX%` threshold of the exact value.
  * @param approx aprroximate value
  * @param exact expected value
  * @param threshold values from [0, 1)
