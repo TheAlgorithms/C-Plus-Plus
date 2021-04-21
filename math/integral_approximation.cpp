@@ -1,6 +1,6 @@
 /**
  * @file Wikipedia link [Riemann sum](https://en.wikipedia.org/wiki/Riemann_sum).
- * @brief Algorithm to compute integral approximation of function
+ * @brief Compute integral approximation of the function using [Riemann sum](https://en.wikipedia.org/wiki/Riemann_sum)
  * @details In mathematics, a Riemann sum is a certain kind of approximation of an integral by a finite sum. It is named after nineteenth-century German mathematician Bernhard Riemann.
  * One very common application is approximating the area of functions or lines on a graph and the length of curves and other approximations.
  * The sum is calculated by partitioning the region into shapes (rectangles, trapezoids, parabolas, or cubics) that form a region similar to the region being measured, then calculating the area for each of these shapes, and finally adding all of these small areas together.
