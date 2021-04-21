@@ -77,7 +77,7 @@ static void test() {
     std::cout << "Test 2 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
-    double test_3 = integral_approx(
+    double test_3 = math::integral_approx(
         10.78, 24.899, [](const double x) { return x * x * x - x * x + 378; });
     std::cout << "Test Case 3" << std::endl;
     std::cout << "function: x^3 - x^2 + 378" << std::endl;
