@@ -99,7 +99,7 @@ static void test() {
     std::cout << "Test 4 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
-    double test_5 = integral_approx(
+    double test_5 = math::integral_approx(
         -1, 1, [](const double x) { return exp(-1 / (x * x)); });
     std::cout << "Test Case 5" << std::endl;
     std::cout << "function: e^(-1/x^2)" << std::endl;
