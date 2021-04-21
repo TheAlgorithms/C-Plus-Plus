@@ -95,7 +95,7 @@ static void test() {
     std::cout << "function: cos(x)*tan(x)*x^2 + e^x" << std::endl;
     std::cout << "range: [.101, .505]" << std::endl;
     std::cout << "value: " << test_4 << std::endl;
-    test_eval(test_4, 0.566485986311631, .001);
+    math::test_eval(test_4, 0.566485986311631, .001);
     std::cout << "Test 4 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
