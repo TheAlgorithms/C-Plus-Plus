@@ -11,6 +11,11 @@
 #include <iostream>
 
 /**
+ * @namespace math
+ * @brief Mathematical functions
+ */
+namespace math {
+/**
  * @brief Computes integral approximation
  * @param lb lower bound
  * @param ub upper bound
