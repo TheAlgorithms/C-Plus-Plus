@@ -87,7 +87,7 @@ static void test() {
     std::cout << "Test 3 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
-    double test_4 = integral_approx(
+    double test_4 = math::integral_approx(
         .101, .505,
         [](const double x) { return cos(x) * tan(x) * x * x + exp(x); },
         .00001);
