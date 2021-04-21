@@ -10,10 +10,10 @@
  * \author [Benjamin Walton](https://github.com/bwalton24)
  * \author [Shiqi Sheng](https://github.com/shiqisheng00)
  */
-#include <cassert>
-#include <cmath>
-#include <functional>
-#include <iostream>
+#include <cassert>    /// for assert
+#include <cmath>    /// for math functions
+#include <functional>   /// for passing in functions
+#include <iostream>    /// for IO operations
 
 /**
  * @namespace math
