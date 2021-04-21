@@ -43,8 +43,9 @@ void test_eval(double approx, double expected, double threshold) {
 }
 
 /**
- * Function for testing integral_approx function.
- * test cases and assert statement.
+ * @brief Self-test implementations to test
+ * the `integral_approx` function.
+ *
  * @returns `void`
  */
 static void test() {
