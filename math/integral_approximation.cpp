@@ -11,7 +11,7 @@
 #include <iostream>
 
 /**
- * Computes Integral Approximation
+ * @brief Computes integral approximation
  * @param lb lower bound
  * @param ub upper bound
  * @param func function passed in
