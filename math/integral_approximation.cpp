@@ -83,7 +83,7 @@ static void test() {
     std::cout << "function: x^3 - x^2 + 378" << std::endl;
     std::cout << "range: [10.78, 24.899]" << std::endl;
     std::cout << "value: " << test_3 << std::endl;
-    test_eval(test_3, 93320.65915078377, .001);
+    math::test_eval(test_3, 93320.65915078377, .001);
     std::cout << "Test 3 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
