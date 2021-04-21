@@ -56,7 +56,7 @@ void test_eval(double approx, double expected, double threshold) {
  */
 }  // namespace math
 static void test() {
-    double test_1 = integral_approx(
+    double test_1 = math::integral_approx(
         3.24, 7.56, [](const double x) { return log(x) + exp(x) + x; });
     std::cout << "Test Case 1" << std::endl;
     std::cout << "function: log(x) + e^x + x" << std::endl;
