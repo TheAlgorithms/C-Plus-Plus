@@ -56,7 +56,7 @@ static void test() {
     std::cout << "function: log(x) + e^x + x" << std::endl;
     std::cout << "range: [3.24, 7.56]" << std::endl;
     std::cout << "value: " << test_1 << std::endl;
-    test_eval(test_1, 1924.80384023549, .001);
+    math::test_eval(test_1, 1924.80384023549, .001);
     std::cout << "Test 1 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
