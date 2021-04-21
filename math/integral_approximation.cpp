@@ -66,7 +66,7 @@ static void test() {
     std::cout << "Test 1 Passed!" << std::endl;
     std::cout << "=====================" << std::endl;
 
-    double test_2 = integral_approx(0.023, 3.69, [](const double x) {
+    double test_2 = math::integral_approx(0.023, 3.69, [](const double x) {
         return x * x + cos(x) + exp(x) + log(x) * log(x);
     });
     std::cout << "Test Case 2" << std::endl;
