@@ -10,8 +10,8 @@
  * \author [Benjamin Walton](https://github.com/bwalton24)
  * \author [Shiqi Sheng](https://github.com/shiqisheng00)
  */
-#include <cassert>    /// for assert
-#include <cmath>    /// for math functions
+#include <cassert>        /// for assert
+#include <cmath>         /// for mathematical functions
 #include <functional>   /// for passing in functions
 #include <iostream>    /// for IO operations
 
