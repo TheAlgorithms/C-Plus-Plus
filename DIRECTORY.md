@@ -163,6 +163,7 @@
   * [Gcd Iterative Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_iterative_euclidean.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
+  * [Integral Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
   * [Largest Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/largest_power.cpp)
