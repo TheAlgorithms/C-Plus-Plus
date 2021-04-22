@@ -54,8 +54,8 @@ void test_eval(double approx, double expected, double threshold) {
 }
 
 /**
- * @brief Self-test implementations to test
- * the `integral_approx` function.
+ * @brief Self-test implementations to
+ * test the `integral_approx` function.
  *
  * @returns `void`
  */
