@@ -57,14 +57,14 @@ void swap(int &x, int &y) {
     y = temp;
 }
 
-void recursive_bubble_sort(std::vector<int> &nums, int n) {
+void recursive_bubble_sort(std::vector<int> *nums, int n) {
     if (n == 1) {
         return;
     }
 
     for (int i = 0; i < n - 1; i++) {
-        if (nums[i] > nums[i + 1]) {
-            swap(nums[i], nums[i + 1]);
+        if ((*nums)[i] > (*nums)[i + 1]) {
+            swap((*nums)[i], (*nums)[i + 1]);
         }
     }
 
@@ -72,13 +72,13 @@ void recursive_bubble_sort(std::vector<int> &nums, int n) {
 }
 
 int main() {
-    int n;
+    int n = 0;
     bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
     std::vector<int> numbers;
     std::cout << "Enter " << n << " numbers: ";
-    int num;
+    int num = 0;
 
     // Input
     for (int i = 0; i < n; i++) {
@@ -87,7 +87,7 @@ int main() {
     }
 
     // Function call
-    recursive_bubble_sort(numbers, n);
+    recursive_bubble_sort(&numbers, n);
 
     // Output
     std::cout << "\nSorted Array : ";
