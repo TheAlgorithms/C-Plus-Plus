@@ -51,10 +51,10 @@ optimized bubble sort algorithm. It's right down there.
 #include <iostream>
 #include <vector>
 
-void swap(int &x, int &y) {
-    int temp = x;
-    x = y;
-    y = temp;
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
 void recursive_bubble_sort(std::vector<int> *nums, int n) {
@@ -64,7 +64,7 @@ void recursive_bubble_sort(std::vector<int> *nums, int n) {
 
     for (int i = 0; i < n - 1; i++) {
         if ((*nums)[i] > (*nums)[i + 1]) {
-            swap((*nums)[i], (*nums)[i + 1]);
+            swap(&(*nums)[i], &(*nums)[i + 1]);
         }
     }
 
