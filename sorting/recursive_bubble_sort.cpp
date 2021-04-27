@@ -48,26 +48,35 @@ can't get the best status in the code we shared above. This happens on the
 optimized bubble sort algorithm. It's right down there.
 */
 
-#include <iostream>
-#include <vector>
+#include <iostream>  //for io operations
+#include <vector>    //for std::vector
+
+/*
+ *   The following function, i.e. swap takes two values by address, and
+ *   derefences them so that the changes are reflected outside the scope
+ *   of the function. This function employs a third variable, namely
+ *   `temp` to swap the values of `x` and `y`
+ */
 
 void swap(int *x, int *y) {
-    int temp = *x;
+    int temp = *x;  //!< dereferencing pointer to `x` and assigning it to `temp`
     *x = *y;
     *y = temp;
 }
 
 void recursive_bubble_sort(std::vector<int> *nums, int n) {
-    if (n == 1) {
+    if (n == 1) {  //!< base case; when size of the array is 1
         return;
     }
 
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < n - 1; i++) {  //!< iterating over the entire array
+        //!< if a larger number appears before the smaller one, swap them.
         if ((*nums)[i] > (*nums)[i + 1]) {
             swap(&(*nums)[i], &(*nums)[i + 1]);
         }
     }
 
+    //!< calling the function after we have fixed the last element
     recursive_bubble_sort(nums, n - 1);
 }
 
@@ -75,7 +84,7 @@ int main() {
     int n = 0;
     bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
-    std::cin >> n;
+    std::cin >> n;  //!< size of the array
     std::vector<int> numbers;
     std::cout << "Enter " << n << " numbers: ";
     int num = 0;
