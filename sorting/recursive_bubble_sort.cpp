@@ -1,6 +1,6 @@
 /**
  * @file recursive_bubble_sort.cpp
- * @author Aditya Prakash (adityaprakash.tech)
+ * @author Aditya Prakash (https://adityaprakash.tech)
  * @brief This is an implementation of recursive version of Bubble sort
 algorithm
  *
@@ -100,7 +100,7 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
     //!< calling the function after we have fixed the last element
     recursive_bubble_sort(nums, n - 1);
 }
-}
+}   //namespace ends
 
 /**
  * @brief function for testing the code
@@ -118,10 +118,12 @@ static void test() {
     arr.push_back(12);
     arr.push_back(37);
     arr.push_back(63);
+    //array populating ends
 
     sorting::recursive_bubble_sort(&arr, size);
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
     std::cout << " Passed\n";
+    //printing the array
     for (int i = 0; i < size; i++) {
         std::cout << arr[i] << ", ";
     }
@@ -131,16 +133,19 @@ static void test() {
     std::cout << "Test 2 using doubles\n";
     std::vector<double> double_arr;
 
+    //populating the array
     double_arr.push_back(20.4);
     double_arr.push_back(62.7);
     double_arr.push_back(12.2);
     double_arr.push_back(43.6);
     double_arr.push_back(74.1);
     double_arr.push_back(57.9);
+    //array populating ends
 
     sorting::recursive_bubble_sort(&double_arr, size);
     assert(std::is_sorted(std::begin(double_arr), std::end(double_arr)));
     std::cout << " Passed\n";
+    //printing the array
     for (int i = 0; i < size; i++) {
         std::cout << double_arr[i] << ", ";
     }
