@@ -47,44 +47,23 @@ already sorted, then we need to traverse it only once. Hence, O(n) is the best c
 complexity
 */
 
-#include <cassert>   // for assert
-#include <iostream>  // for io operations
-#include <vector>    // for std::vector
-#include <array>     // for std::array
+#include <iostream>  //for io operations
+#include <vector>    //for std::vector
 
-/**
- * @namespace sorting
- * @brief Sorting algorithms
+/*
+ *   The following function, i.e. swap takes two values by address, and
+ *   derefences them so that the changes are reflected outside the scope
+ *   of the function. This function employs a third variable, namely
+ *   `temp` to swap the values of `x` and `y`
  */
-namespace sorting {
 
-/**
- * @brief This is a function for swapping two variables. Alternatively, <algorithm> could 
- * be included.
- * 
- * @tparam T type of data variables to be swapped
- * @param x first variable to be swapped
- * @param y second variable to be swapped
- */
-template <typename T>
-void swap(T *x, T *y) {     
-    T temp = *x;  //!< dereferencing pointer to `x` and assigning it to `temp`
+void swap(int *x, int *y) {
+    int temp = *x;  //!< dereferencing pointer to `x` and assigning it to `temp`
     *x = *y;
     *y = temp;
 }
 
-/**
- * @brief This is an implementation of the recursive_bubble_sort. A vector is passed
- * to the function which is then dereferenced, so that the changes are
- * reflected in the original vector. It also accepts a second parameter of
- * type `int` and name `n`, which is the size of the array.
- * 
- * @tparam T type of data variables in the array
- * @param nums our array of elements.
- * @param n size of the array
- */
-template <typename T>
-void recursive_bubble_sort(std::vector<T> *nums, int n) {
+void recursive_bubble_sort(std::vector<int> *nums, int n) {
     if (n == 1) {  //!< base case; when size of the array is 1
         return;
     }
@@ -101,28 +80,19 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
 }
 }
 
-/**
- * @brief function for testing the code
- * 
- */
-static void test() {
-    // Example 1. Creating array of int,
-    std::cout << "Test 1 using ints\n";
-    const int size = 6;
-    std::vector<int> arr;
-    //populating the array
-    arr.push_back(22);
-    arr.push_back(46);
-    arr.push_back(94);
-    arr.push_back(12);
-    arr.push_back(37);
-    arr.push_back(63);
+int main() {
+    int n = 0;
+    bool swap_check = true;
+    std::cout << "Enter the amount of numbers to sort: ";
+    std::cin >> n;  //!< size of the array
+    std::vector<int> numbers;
+    std::cout << "Enter " << n << " numbers: ";
+    int num = 0;
 
-    sorting::recursive_bubble_sort(&arr, size);
-    assert(std::is_sorted(std::begin(arr), std::end(arr)));
-    std::cout << " Passed\n";
-    for (int i = 0; i < size; i++) {
-        std::cout << arr[i] << ", ";
+    // Input
+    for (int i = 0; i < n; i++) {
+        std::cin >> num;
+        numbers.push_back(num);
     }
     std::cout << std::endl;
 
