@@ -51,6 +51,7 @@ complexity
 #include <iostream>  // for io operations
 #include <vector>    // for std::vector
 #include <array>     // for std::array
+#include <algorithm> // for std::is_sorted
 
 /**
  * @namespace sorting
@@ -59,8 +60,8 @@ complexity
 namespace sorting {
 
 /**
- * @brief This is a function for swapping two variables. Alternatively, <algorithm> could 
- * be included.
+ * @brief This is a function for swapping two variables. Alternatively, the 
+ * <algorithm>'s swap function could be used too. However, this is from practice
  * 
  * @tparam T type of data variables to be swapped
  * @param x first variable to be swapped
