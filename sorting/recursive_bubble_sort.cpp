@@ -1,7 +1,7 @@
 /**
  * @file
  * @author [Aditya Prakash](https://adityaprakash.tech)
- * @brief This is an implementation of a recursive version of the Bubble sort algorithm
+ * @brief This is an implementation of a recursive version of the [Bubble sort algorithm](https://www.geeksforgeeks.org/recursive-bubble-sort/)
  *
  * @details
  * The working principle of the Bubble sort algorithm:
@@ -11,38 +11,38 @@
 
  * What is Swap?
 
-To swap two numbers mean that we interchange their values.
-An additional variable is required for this operation. x = 5, y = 10.
-We want x = 10, y = 5. Here we create the most variable to do it.
+ * To swap two numbers mean that we interchange their values.
+ * An additional variable is required for this operation. x = 5, y = 10.
+ * We want x = 10, y = 5. Here we create the most variable to do it.
 
-int z;
-z = x;
-x = y;
-y = z;
+ * int z;
+ * z = x;
+ * x = y;
+ * y = z;
 
-The above process is a typical displacement process.
-When x assigns the value to x, the old value of x is lost.
-That's why we created a variable z to create the first value of the value of x,
-and finally, we have assigned to y.
+ * The above process is a typical displacement process.
+ * When x assigns the value to x, the old value of x is lost.
+ * That's why we created a variable z to create the first value of the value of x,
+ * and finally, we have assigned to y.
 
  * Recursion
 
-While the recursive method does not necessarily have advantages over iterative
-versions, but it is useful to enhance the understanding of the algorithm and
-recursion itself. In Recursive Bubble sort algorithm, we firstly call the
-function on the entire array, and for every subsequent function call, we exclude
-the last element. This fixes the last element for that sub-array.Formally, for
-`ith` iteration, we consider elements up to n-i, where n is the number of
-elements in the array. Exit condition: n==1; i.e. the sub-array contains only
-one element.
+ * While the recursive method does not necessarily have advantages over iterative
+ * versions, but it is useful to enhance the understanding of the algorithm and
+ * recursion itself. In Recursive Bubble sort algorithm, we firstly call the
+ * function on the entire array, and for every subsequent function call, we exclude
+ * the last element. This fixes the last element for that sub-array.Formally, for
+ * `ith` iteration, we consider elements up to n-i, where n is the number of
+ * elements in the array. Exit condition: n==1; i.e. the sub-array contains only
+ * one element.
 
  * Complexity
-    Time complexity: O(n) best case; O(n²) average case; O(n²) worst case
-    Space complexity: O(n)
+ * Time complexity: O(n) best case; O(n²) average case; O(n²) worst case
+ * Space complexity: O(n)
 
-We need to traverse the array `n * (n-1)` times. However, if the entire array is
-already sorted, then we need to traverse it only once. Hence, O(n) is the best case
-complexity
+ * We need to traverse the array `n * (n-1)` times. However, if the entire array is
+ * already sorted, then we need to traverse it only once. Hence, O(n) is the best case
+ * complexity
 */
 
 #include <cassert>   /// for assert
