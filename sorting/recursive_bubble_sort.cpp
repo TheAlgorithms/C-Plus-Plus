@@ -1,15 +1,13 @@
 /**
- * @file recursive_bubble_sort.cpp
- * @author Aditya Prakash (https://adityaprakash.tech)
- * @brief This is an implementation of recursive version of Bubble sort
-algorithm
+ * @file
+ * @author [Aditya Prakash](https://adityaprakash.tech)
+ * @brief This is an implementation of a recursive version of the Bubble sort algorithm
  *
  * @details
  * The working principle of the Bubble sort algorithm:
 
-Bubble sort is a simple sorting algorithm used to rearrange a set of elements in
-ascending or descending order. Bubble sort gets its name from the fact that data
-"bubbles" to the top of the dataset.
+ * Bubble sort is a simple sorting algorithm used to rearrange a set of ascending or descending order elements.
+ * Bubble sort gets its name from the fact that data "bubbles" to the top of the dataset.
 
  * What is Swap?
 
@@ -47,11 +45,11 @@ already sorted, then we need to traverse it only once. Hence, O(n) is the best c
 complexity
 */
 
-#include <cassert>   // for assert
-#include <iostream>  // for io operations
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 #include <vector>    // for std::vector
-#include <array>     // for std::array
-#include <algorithm> // for std::is_sorted
+#include <array>     /// for std::array
+#include <algorithm> /// for std::is_sorted
 
 /**
  * @namespace sorting
@@ -154,12 +152,10 @@ static void test() {
 }
 
 /**
- * @brief main method to run the program
- * 
- * @return int 
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() { 
     test();
     return 0;
 }
-
