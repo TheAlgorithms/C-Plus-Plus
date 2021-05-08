@@ -8,10 +8,10 @@
  * @author [Karimi Zayan](https://github.com/waffleSheep)
  */
 
-#include<cassert>
-#include<vector>
-#include<numeric>
-#include<iostream>
+#include<cassert>        /// for assert
+#include<vector>        /// for vector data structure
+#include<numeric>      /// for inner_product function
+#include<iostream>    /// for IO operations
 
 /**
  *  @namespace geometry
@@ -25,18 +25,20 @@ namespace geometry{
     namespace polygon_area {
         /**
          * Point Struct
+         * @tparam for numeric type of the point
          */
         template<typename T>
         struct Point {
-            T x, y;
+            T x, y; /// x and y values for a point
         };
 
         /**
          * Class for Polygon Area
+         * @tparam for numeric type of the points
          */
         template<typename T>
         class Polygon_Area {
-            std::vector<Point<T>> points;
+            std::vector<Point<T>> points; /// list of all points in the 2d space
          public:
             /**
              * Constructor of given class
@@ -50,7 +52,7 @@ namespace geometry{
              *
              * @returns the area of the simple polygon
              */
-            auto get_polygon_area() -> T {
+            T get_polygon_area() {
                 /**
                  * This lambda multiplies the x value of the
                  * first point by the y value of the second point
@@ -75,7 +77,7 @@ namespace geometry{
 /**
  * This is the main function for testing the algorithm
  */
-auto main() -> int {
+int main() {
     // Area of polygon enclosed by points (0,0), (0,1), (1,1), (2,0). Expected value is 1.5
     std::vector<geometry::polygon_area::Point<double>> v = {{0.0, 0.0},
                                                             {0.0, 1.0},
