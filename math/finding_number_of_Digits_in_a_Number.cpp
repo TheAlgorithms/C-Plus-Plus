@@ -21,7 +21,9 @@ return floor(log10(n) + 1);
 // Driver code
 int main(void)
 {
-	long long n = 345289467;
+	long long n;
+	cout << "Enter any number: ";
+    cin >> n;
 	cout << "Number of digits : " << countDigit(n);
 	return 0;
 }
