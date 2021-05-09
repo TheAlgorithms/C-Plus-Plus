@@ -8,20 +8,20 @@
  *  For more details, refer Algorithms-Explanation
  */
 
-#include<bits/stdc++.h>
+
+/* Log based C++ program to count number of
+*  digits in a number */
+#include <bits/stdc++.h>
 using namespace std;
 
-// Main function
-int main()
+int countDigit(long long n) {
+return floor(log10(n) + 1);
+}
+
+// Driver code
+int main(void)
 {
-    int N;
-    cout << "Enter the number: ";
-    /* given number as input  */
-    cin >> N;
-
-    /* algorithmic formula */
-    int k = floor(log10(N) + 1);
-
-    /* print number of digits */
-    cout << "Number of digits: " << k;
+	long long n = 345289467;
+	cout << "Number of digits : " << countDigit(n);
+	return 0;
 }
