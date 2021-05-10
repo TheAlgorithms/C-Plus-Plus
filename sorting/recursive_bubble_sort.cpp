@@ -47,7 +47,7 @@
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
-#include <vector>    // for std::vector
+#include <vector>    /// for std::vector
 #include <array>     /// for std::array
 #include <algorithm> /// for std::is_sorted
 
@@ -101,8 +101,8 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
 }   //namespace ends
 
 /**
- * @brief function for testing the code
- * 
+ * @brief Self-test implementations
+ * @returns void
  */
 static void test() {
     // Example 1. Creating array of int,
@@ -156,6 +156,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() { 
-    test();
+    test();  // run self-test implementations
     return 0;
 }
