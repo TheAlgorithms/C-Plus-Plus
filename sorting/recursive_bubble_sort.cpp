@@ -105,8 +105,8 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
  * @returns void
  */
 static void test() {
-    // Example 1. Creating array of int,
-    std::cout << "Test 1 using ints\n";
+    // 1st example. Creating an array of type `int`.
+    std::cout << "1st test using `int`\n";
     const int size = 6;
     std::vector<int> arr;
     //populating the array
@@ -116,19 +116,19 @@ static void test() {
     arr.push_back(12);
     arr.push_back(37);
     arr.push_back(63);
-    //array populating ends
+    // array populating ends
 
     sorting::recursive_bubble_sort(&arr, size);
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
-    std::cout << " Passed\n";
-    //printing the array
+    std::cout << " 1st test passed!\n";
+    // printing the array
     for (int i = 0; i < size; i++) {
         std::cout << arr[i] << ", ";
     }
     std::cout << std::endl;
 
-    // Example 2. Creating array of doubles.
-    std::cout << "Test 2 using doubles\n";
+    // 2nd example. Creating an array of type `double`.
+    std::cout << "2nd test using doubles\n";
     std::vector<double> double_arr;
 
     //populating the array
@@ -142,8 +142,8 @@ static void test() {
 
     sorting::recursive_bubble_sort(&double_arr, size);
     assert(std::is_sorted(std::begin(double_arr), std::end(double_arr)));
-    std::cout << " Passed\n";
-    //printing the array
+    std::cout << " 2nd test passed!\n";
+    // printing the array
     for (int i = 0; i < size; i++) {
         std::cout << double_arr[i] << ", ";
     }
