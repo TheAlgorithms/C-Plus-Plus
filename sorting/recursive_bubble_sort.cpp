@@ -58,21 +58,6 @@
 namespace sorting {
 
 /**
- * @brief This is a function for swapping two variables. Alternatively, the 
- * <algorithm>'s swap function could be used too. However, this is from practice
- * 
- * @tparam T type of data variables to be swapped
- * @param x first variable to be swapped
- * @param y second variable to be swapped
- */
-template <typename T>
-void swap(T *x, T *y) {     
-    T temp = *x;  //!< dereferencing pointer to `x` and assigning it to `temp`
-    *x = *y;
-    *y = temp;
-}
-
-/**
  * @brief This is an implementation of the recursive_bubble_sort. A vector is passed
  * to the function which is then dereferenced, so that the changes are
  * reflected in the original vector. It also accepts a second parameter of
@@ -91,7 +76,7 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
     for (int i = 0; i < n - 1; i++) {  //!< iterating over the entire array
         //!< if a larger number appears before the smaller one, swap them.
         if ((*nums)[i] > (*nums)[i + 1]) {
-            swap(&(*nums)[i], &(*nums)[i + 1]);
+            std::swap((*nums)[i], (*nums)[i + 1]);
         }
     }
 
