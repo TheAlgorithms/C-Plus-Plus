@@ -4,10 +4,12 @@
  * @brief This is an implementation of a recursive version of the [Bubble sort algorithm](https://www.geeksforgeeks.org/recursive-bubble-sort/)
  *
  * @details
- * The working principle of the Bubble sort algorithm:
+ * The working principle of the Bubble sort algorithm.
 
  * Bubble sort is a simple sorting algorithm used to rearrange a set of ascending or descending order elements.
  * Bubble sort gets its name from the fact that data "bubbles" to the top of the dataset.
+ 
+ * ### Algorithm
 
  * What is Swap?
 
@@ -83,7 +85,7 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
     //!< calling the function after we have fixed the last element
     recursive_bubble_sort(nums, n - 1);
 }
-}   //namespace ends
+}  // namespace sorting
 
 /**
  * @brief Self-test implementations
