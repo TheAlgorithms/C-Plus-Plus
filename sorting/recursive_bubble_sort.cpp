@@ -13,19 +13,20 @@
 
  * What is Swap?
 
- * To swap two numbers mean that we interchange their values.
- * An additional variable is required for this operation. x = 5, y = 10.
- * We want x = 10, y = 5. Here we create the most variable to do it.
+ * Swapping two numbers means that we interchange their values.
+ * Often, an additional variable is required for this operation. 
+ * This is further illustrated in the following:
 
- * int z;
- * z = x;
- * x = y;
- * y = z;
+ * void swap(int x, int y){
+ *     int z = x;
+ *     x = y;
+ *     y = z;
+ * }
 
  * The above process is a typical displacement process.
- * When x assigns the value to x, the old value of x is lost.
- * That's why we created a variable z to create the first value of the value of x,
- * and finally, we have assigned to y.
+ * When we assign a value to x, the old value of x is lost.
+ * That's why we create a temporary variable z to store the initial value of x.
+ * z is further used to assign the initial value of x to y, to complete swapping.
 
  * Recursion
 
@@ -70,12 +71,12 @@ namespace sorting {
  * @param n size of the array
  */
 template <typename T>
-void recursive_bubble_sort(std::vector<T> *nums, int n) {
+void recursive_bubble_sort(std::vector<T> *nums, uint64_t n) {
     if (n == 1) {  //!< base case; when size of the array is 1
         return;
     }
 
-    for (int i = 0; i < n - 1; i++) {  //!< iterating over the entire array
+    for (uint64_t i = 0; i < n - 1; i++) {  //!< iterating over the entire array
         //!< if a larger number appears before the smaller one, swap them.
         if ((*nums)[i] > (*nums)[i + 1]) {
             std::swap((*nums)[i], (*nums)[i + 1]);
@@ -94,8 +95,8 @@ void recursive_bubble_sort(std::vector<T> *nums, int n) {
 static void test() {
     // 1st example. Creating an array of type `int`.
     std::cout << "1st test using `int`\n";
-    const int size = 6;
-    std::vector<int> arr;
+    const uint64_t size = 6;
+    std::vector<int64_t> arr;
     // populating the array
     arr.push_back(22);
     arr.push_back(46);
@@ -109,7 +110,7 @@ static void test() {
     assert(std::is_sorted(std::begin(arr), std::end(arr)));
     std::cout << " 1st test passed!\n";
     // printing the array
-    for (int i = 0; i < size; i++) {
+    for (uint64_t i = 0; i < size; i++) {
         std::cout << arr[i] << ", ";
     }
     std::cout << std::endl;
@@ -125,13 +126,13 @@ static void test() {
     double_arr.push_back(43.6);
     double_arr.push_back(74.1);
     double_arr.push_back(57.9);
-    //array populating ends
+    // array populating ends
 
     sorting::recursive_bubble_sort(&double_arr, size);
     assert(std::is_sorted(std::begin(double_arr), std::end(double_arr)));
     std::cout << " 2nd test passed!\n";
     // printing the array
-    for (int i = 0; i < size; i++) {
+    for (uint64_t i = 0; i < size; i++) {
         std::cout << double_arr[i] << ", ";
     }
     std::cout << std::endl;
