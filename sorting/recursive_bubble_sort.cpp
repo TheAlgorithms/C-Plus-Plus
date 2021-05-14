@@ -96,7 +96,7 @@ static void test() {
     std::cout << "1st test using `int`\n";
     const int size = 6;
     std::vector<int> arr;
-    //populating the array
+    // populating the array
     arr.push_back(22);
     arr.push_back(46);
     arr.push_back(94);
@@ -118,7 +118,7 @@ static void test() {
     std::cout << "2nd test using doubles\n";
     std::vector<double> double_arr;
 
-    //populating the array
+    // populating the array
     double_arr.push_back(20.4);
     double_arr.push_back(62.7);
     double_arr.push_back(12.2);
