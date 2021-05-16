@@ -3,7 +3,7 @@
  * @brief Implementation of [Shoelace formula](https://en.wikipedia.org/wiki/Shoelace_formula).
  *
  * @details
- * given a set of points of a simple polygon, the algorithm returns the area of the polygon
+ * Given a set of points of a simple polygon, the algorithm returns the area of the polygon.
  *
  * @author [Karimi Zayan](https://github.com/waffleSheep)
  */
