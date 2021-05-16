@@ -83,7 +83,8 @@ class Polygon_Area {
 }  // namespace geometry
 
 /**
- * This is the main function for testing the algorithm
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     // Area of polygon enclosed by points (0,0), (0,1), (1,1), (2,0). Expected
