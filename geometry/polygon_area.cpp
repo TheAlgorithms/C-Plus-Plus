@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of [Polygon Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon).
+ * @brief Implementation of [Polygon
+ * Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon).
  *
  * @details
  * Given a set of points of a simple polygon, the algorithm returns the area of
@@ -21,7 +22,9 @@
 namespace geometry {
 /**
  *  @namespace polygon_area
- *  @brief Functions for [Polygon Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon) implementation.
+ *  @brief Functions for [Polygon
+ * Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon)
+ * implementation.
  */
 namespace polygon_area {
 /**
