@@ -30,7 +30,7 @@ namespace polygon_area {
  */
 template <typename T>
 struct Point {
-    T x, y;  /// x and y values for a point
+    T x, y;  /// `x` and `y` values for a point
 };
 
 /**
