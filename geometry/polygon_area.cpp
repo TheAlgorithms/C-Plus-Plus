@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of [Shoelace
- * formula](https://en.wikipedia.org/wiki/Shoelace_formula).
+ * @brief Implementation of [Polygon Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon).
  *
  * @details
  * Given a set of points of a simple polygon, the algorithm returns the area of
