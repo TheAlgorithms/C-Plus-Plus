@@ -35,7 +35,7 @@ struct Point {
 
 /**
  * Class for Polygon Area
- * @tparam for numeric type of the points
+ * @tparam for the numeric type of the points
  */
 template <typename T>
 class Polygon_Area {
