@@ -21,7 +21,7 @@
 namespace geometry {
 /**
  *  @namespace polygon_area
- *  @brief polygon area functions
+ *  @brief Functions for [Polygon Area](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Polygon) implementation.
  */
 namespace polygon_area {
 /**
