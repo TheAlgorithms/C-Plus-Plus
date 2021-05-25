@@ -8,27 +8,24 @@
  *  For more details, refer Algorithms-Explanation
  */
 
-
 /* Log based C++ program to count number of
-*  digits in a number/integer */
+ *  digits in a number/integer */
 
 #include <cassert>
 #include <iostream>
 
-int main() 
-{
-    long long n;
+int main() {
+    long long n = 0;
     int count = 0;
     std::cout << "Enter an integer: ";
     std::cin >> n;
 
     /* iterate until n becomes 0
-    *  remove last digit from n in each iteration
-    *  increase count by 1 in each iteration */
-   
-    while (n != 0) 
-    {
-        n /= 10;      // n = n/10
+     *  remove last digit from n in each iteration
+     *  increase count by 1 in each iteration */
+
+    while (n != 0) {
+        n /= 10;  // n = n/10
         ++count;
     }
 
