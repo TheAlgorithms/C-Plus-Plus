@@ -15,7 +15,7 @@
 #include <iostream>
 
 int main() {
-    long long n = 0;
+    int n = 0;
     int count = 0;
     std::cout << "Enter an integer: ";
     std::cin >> n;
