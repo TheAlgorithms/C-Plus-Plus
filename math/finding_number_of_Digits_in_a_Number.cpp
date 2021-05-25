@@ -11,9 +11,13 @@
 /* Log based C++ program to count number of
  *  digits in a number/integer */
 
-#include <cassert>
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     int n = 0;
     int count = 0;
@@ -23,7 +27,6 @@ int main() {
     /* iterate until n becomes 0
      *  remove last digit from n in each iteration
      *  increase count by 1 in each iteration */
-
     while (n != 0) {
         n /= 10;  // n = n/10
         ++count;
