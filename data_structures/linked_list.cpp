@@ -167,6 +167,9 @@ void list::erase(int old_elem) {
     t->succ() = t->succ()->succ();
     to_be_removed.reset();
     if (t->succ() == nullptr) {
+        last = t;
+    }
+    if (first == last){
         last = nullptr;
     }
 }

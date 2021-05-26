@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * @file uint128_t.hpp
+=======
+ * @file
+>>>>>>> upstream/master
  *
  * @details Implementation of 128-bit unsigned integers.
  * @note The implementation can be flagged as not completed. This header is used
@@ -7,6 +11,7 @@
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
+<<<<<<< HEAD
 #include <algorithm>
 #include <ostream>
 #include <string>
@@ -14,6 +19,15 @@
 
 #ifdef _MSC_VER
 #include <intrin.h>
+=======
+#include <algorithm>  /// for `std::reverse` and other operations
+#include <ostream>    /// for `std::cout` overload
+#include <string>     /// for `std::string`
+#include <utility>    /// for `std::pair` library
+
+#ifdef _MSC_VER
+#include <intrin.h>  /// for _BitScanForward64 and __BitScanReverse64 operation
+>>>>>>> upstream/master
 #endif
 
 #ifndef CIPHERS_UINT128_T_HPP_
@@ -32,13 +46,23 @@ struct std::is_unsigned<uint128_t> : std::true_type {};
  * @details Adds two long integer, only used for printing numbers
  * @param first First integer string
  * @param second Second integer string
+<<<<<<< HEAD
  * @returns string denoting the addition of both the strings.
+=======
+ * @returns string denoting the addition of both the strings
+>>>>>>> upstream/master
  */
 std::string add(const std::string &first, const std::string &second) {
     std::string third;
     int16_t sum = 0, carry = 0;
+<<<<<<< HEAD
     for (int i = first.size() - 1, j = second.size() - 1; i >= 0 || j >= 0;
          --i, --j) {
+=======
+    for (int32_t i = static_cast<int32_t>(first.size()) - 1,
+                 j = static_cast<int32_t>(second.size()) - 1;
+         i >= 0 || j >= 0; --i, --j) {
+>>>>>>> upstream/master
         sum = ((i >= 0 ? first[i] - '0' : 0) + (j >= 0 ? second[j] - '0' : 0) +
                carry);
         carry = sum / 10;
@@ -53,10 +77,17 @@ std::string add(const std::string &first, const std::string &second) {
 }
 /**
  * @class uint128_t
+<<<<<<< HEAD
  * @details 128-bit numbers.
  */
 class uint128_t {
     uint64_t f, s;  /// First and second half of 128 bit number.
+=======
+ * @brief class for 128-bit unsigned integer
+ */
+class uint128_t {
+    uint64_t f{}, s{};  /// First and second half of 128 bit number
+>>>>>>> upstream/master
 
     /**
      * @brief Get integer from given string.
@@ -96,7 +127,11 @@ class uint128_t {
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
     explicit uint128_t(T low) : s(low), f(0) {}
+=======
+    explicit uint128_t(T low) : s(low) {}
+>>>>>>> upstream/master
 
     /**
      * @brief Parameterized constructor
@@ -117,13 +152,26 @@ class uint128_t {
      * @brief Copy constructor
      * @param num 128-bit unsigned integer
      */
+<<<<<<< HEAD
     uint128_t(const uint128_t &num) : f(num.f), s(num.s) {}
+=======
+    uint128_t(const uint128_t &num) = default;
+>>>>>>> upstream/master
 
     /**
      * @brief Move constructor
      * @param num 128-bit unsigned integer
      */
+<<<<<<< HEAD
     uint128_t(uint128_t &&num) : f(std::move(num.f)), s(std::move(num.s)) {}
+=======
+    uint128_t(uint128_t &&num) noexcept : f(num.f), s(num.s) {}
+
+    /**
+     * @brief Destructor for uint128_t
+     */
+    ~uint128_t() = default;
+>>>>>>> upstream/master
 
     /**
      * @brief Leading zeroes in binary
@@ -132,8 +180,14 @@ class uint128_t {
      */
     inline uint32_t _lez() {
 #ifndef _MSC_VER
+<<<<<<< HEAD
         if (f)
             return __builtin_clzll(f);
+=======
+        if (f) {
+            return __builtin_clzll(f);
+        }
+>>>>>>> upstream/master
         return 64 + __builtin_clzll(s);
 #else
         unsigned long r = 0;
@@ -154,8 +208,14 @@ class uint128_t {
      */
     inline uint32_t _trz() {
 #ifndef _MSC_VER
+<<<<<<< HEAD
         if (f)
             return __builtin_ctzll(f);
+=======
+        if (f) {
+            return __builtin_ctzll(f);
+        }
+>>>>>>> upstream/master
         return 64 + __builtin_ctzll(s);
 #else
         unsigned long r = 0;
@@ -169,6 +229,7 @@ class uint128_t {
 #endif
     }
 
+<<<<<<< HEAD
     inline uint32_t _len() { return _lez(); }
 
     // Casting operators
@@ -177,6 +238,22 @@ class uint128_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline operator T() const {
+=======
+    /**
+     * @brief casting operator to boolean value
+     * @returns true if value of this is non-zero, else false
+     */
+    inline explicit operator bool() const { return (f || s); }
+
+    /**
+     * @brief casting operator to any integer valu
+     * @tparam T any integer type
+     * @returns integer value casted to mentioned type
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline explicit operator T() const {
+>>>>>>> upstream/master
         return static_cast<T>(s);
     }
 
@@ -192,6 +269,15 @@ class uint128_t {
      */
     inline uint64_t upper() const { return f; }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator = for other types
+     * @tparam T denoting any integer type
+     * @param p an integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint128_t &operator=(const T &p) {
@@ -199,6 +285,7 @@ class uint128_t {
         return *this;
     }
 
+<<<<<<< HEAD
     inline uint128_t &operator=(const std::string &p) {
         __get_integer_from_string(p);
         return *this;
@@ -210,6 +297,28 @@ class uint128_t {
         return *this;
     }
 
+=======
+    /**
+     * @brief operator = for type string
+     * @param p a string to assign it's value to equivalent integer
+     * @returns this pointer with it's value equal to `p`
+     */
+    inline uint128_t &operator=(const std::string &p) {
+        this->__get_integer_from_string(p);
+        return *this;
+    }
+
+    /**
+     * @brief operator = for uint128_t
+     * @param p an 128-bit integer to assign it's value
+     * @returns this pointer with it's value equal to `p`
+     */
+    inline uint128_t &operator=(const uint128_t &p) = default;
+
+    /**
+     * @brief Move assignment operator
+     */
+>>>>>>> upstream/master
     inline uint128_t &operator=(uint128_t &&p) = default;
 
     /**
@@ -537,100 +646,265 @@ class uint128_t {
         return *this;
     }
 
+<<<<<<< HEAD
     // Comparison operators
+=======
+    /**
+     * @brief operator < for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is less than other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator<(const uint128_t &other) {
         return f < other.f || (f == other.f && s < other.s);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator <= for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is less than or equal to other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator<=(const uint128_t &other) {
         return f < other.f || (f == other.f && s <= other.s);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator > for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is greater than other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator>(const uint128_t &other) {
         return f > other.f || (f == other.f && s > other.s);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator >= for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is greater than or equal than other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator>=(const uint128_t &other) {
         return (f > other.f) || (f == other.f && s >= other.s);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator == for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is equal than other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator==(const uint128_t &other) {
         return f == other.f && s == other.s;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator != for uint128_t
+     * @param other number to be compared with this
+     * @returns true if this is not equal than other, else false
+     */
+>>>>>>> upstream/master
     inline bool operator!=(const uint128_t &other) {
         return f != other.f || s != other.s;
     }
 
+<<<<<<< HEAD
     inline bool operator!() { return !f && !s; }
 
+=======
+    /**
+     * @brief operator ! for uint128_t
+     * @returns true if this has zero value, else false
+     */
+    inline bool operator!() { return !f && !s; }
+
+    /**
+     * @brief operator && for uint128_t
+     * @param b number to be compared with this
+     * @returns true if both of the values are not zero, else false
+     */
+>>>>>>> upstream/master
     inline bool operator&&(const uint128_t &b) {
         return (s || f) && (b.s || b.f);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator || for uint128_t
+     * @param b number to be compared with this
+     * @returns true if one of the values are not zero, else false
+     */
+>>>>>>> upstream/master
     inline bool operator||(const uint128_t &b) {
         return (s || f) || (b.s || b.f);
     }
 
+<<<<<<< HEAD
     inline bool operator()() { return s || f; }
 
     // other operators
+=======
+    /**
+     * @brief operator () for uint128_t
+     * @returns true if this value is non-zero, else false
+     */
+    inline bool operator()() { return s || f; }
+
+    /**
+     * @brief operator < for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is less than other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator<(const T other) {
         return *this < uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator <= for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is less than or equal to other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator<=(const T other) {
         return *this <= uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator > for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is greater than other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator>(const T other) {
         return *this > uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator >= for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is greater than or equal other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator>=(const T other) {
         return *this >= uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator == for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is equal to other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator==(const T other) {
         return *this == uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator != for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is not equal to other, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator!=(const T other) {
         return *this != uint128_t(other);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator && for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is both values are non-zero, else false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator&&(const T b) {
         return (f || s) && b;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator || for other types
+     * @tparam T integral type
+     * @param other number to be compared with this
+     * @returns true if this is either one of the values are non-zero, else
+     * false
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator||(const T b) {
         return (f || s) || b;
     }
 
+<<<<<<< HEAD
     // Bitwise operators
     uint128_t operator~() { return uint128_t(~this->f, ~this->s); }
 
+=======
+    /**
+     * @brief operator ~ for uint128_t
+     * @returns 1's complement of this number
+     */
+    uint128_t operator~() { return uint128_t(~this->f, ~this->s); }
+
+    /**
+     * @brief operator << for uint128_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns value of this shifted by p to left
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t operator<<(const T p) {
         if (!p) {
             return uint128_t(f, s);
+<<<<<<< HEAD
         }
         if (p >= 64) {
             return uint128_t((this->s << (p - 64)), 0);
@@ -639,11 +913,32 @@ class uint128_t {
                          this->s << p);
     }
 
+=======
+        } else if (p >= 64 && p <= 128) {
+            return uint128_t((this->s << (p - 64)), 0);
+        } else if (p < 64 && p > 0) {
+            return uint128_t((this->f << p) + ((this->s >> (64 - p))),
+                             this->s << p);
+        }
+        return uint128_t(0);
+    }
+
+    /**
+     * @brief operator <<= for uint128_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns this shifted by p to left
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator<<=(const T p) {
         if (p) {
+<<<<<<< HEAD
             if (p >= 64) {
+=======
+            if (p >= 64 && p <= 128) {
+>>>>>>> upstream/master
                 this->f = (this->s << (p - 64));
                 this->s = 0;
             } else {
@@ -654,11 +949,21 @@ class uint128_t {
         return *this;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator >> for uint128_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns value of this shifted by p to right
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t operator>>(const T p) {
         if (!p) {
             return uint128_t(this->f, this->s);
+<<<<<<< HEAD
         }
         if (p >= 64) {
             return uint128_t(0, (this->f >> (p - 64)));
@@ -667,6 +972,23 @@ class uint128_t {
                          (this->s >> p) + (this->f << (64 - p)));
     }
 
+=======
+        } else if (p >= 64 && p <= 128) {
+            return uint128_t(0, (this->f >> (p - 64)));
+        } else if (p < 64 && p > 0) {
+            return uint128_t((this->f >> p),
+                             (this->s >> p) + (this->f << (64 - p)));
+        }
+        return uint128_t(0);
+    }
+
+    /**
+     * @brief operator >>= for uint128_t
+     * @tparam T integral type
+     * @param p number denoting number of shifts
+     * @returns this shifted by p to right
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator>>=(const T p) {
@@ -682,10 +1004,28 @@ class uint128_t {
         return *this;
     }
 
+<<<<<<< HEAD
     uint128_t operator&(const uint128_t &p) {
         return uint128_t(this->f & p.f, this->s & p.s);
     }
 
+=======
+    /**
+     * @brief operator & for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this & p (& is bit-wise operator)
+     */
+    inline uint128_t operator&(const uint128_t &p) {
+        return uint128_t(this->f & p.f, this->s & p.s);
+    }
+
+    /**
+     * @brief operator & for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this & p (& is bit-wise operator)
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t operator&(const T p) {
@@ -693,12 +1033,29 @@ class uint128_t {
         return tmp & uint128_t(p);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator &= for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this & p (& is bit-wise operator)
+     */
+>>>>>>> upstream/master
     uint128_t &operator&=(const uint128_t &p) {
         this->f &= p.f;
         this->s &= p.s;
         return *this;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @brief operator &= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this & p (& is bit-wise operator)
+     */
+>>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator&=(const T p) {
@@ -706,6 +1063,7 @@ class uint128_t {
         return *this;
     }
 
+<<<<<<< HEAD
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t operator|(const T p) {
@@ -716,19 +1074,60 @@ class uint128_t {
         return uint128_t(this->f | p.f, this->s | p.s);
     }
 
+=======
+    /**
+     * @brief operator | for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this | p (| is bit-wise operator)
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline uint128_t operator|(const T p) {
+        return uint128_t(p | s);
+    }
+
+    /**
+     * @brief operator | for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this | p (| is bit-wise OR operator)
+     */
+    inline uint128_t operator|(const uint128_t &p) {
+        return uint128_t(this->f | p.f, this->s | p.s);
+    }
+
+    /**
+     * @brief operator |= for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this | p (| is bit-wise OR operator)
+     */
+>>>>>>> upstream/master
     uint128_t &operator|=(const uint128_t &p) {
         f |= p.f;
         s |= p.s;
         return *this;
     }
 
+<<<<<<< HEAD
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator|=(const T p) {
+=======
+    /**
+     * @brief operator |= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this | p (| is bit-wise OR operator)
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline uint128_t &operator|=(const T p) {
+>>>>>>> upstream/master
         s |= p.s;
         return *this;
     }
 
+<<<<<<< HEAD
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t operator^(const T p) {
@@ -739,21 +1138,71 @@ class uint128_t {
         return uint128_t(this->f ^ p.f, this->s ^ p.s);
     }
 
+=======
+    /**
+     * @brief operator ^ for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline uint128_t operator^(const T p) {
+        return uint128_t(this->f, this->s ^ p);
+    }
+
+    /**
+     * @brief operator ^ for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     */
+    inline uint128_t operator^(const uint128_t &p) {
+        return uint128_t(this->f ^ p.f, this->s ^ p.s);
+    }
+
+    /**
+     * @brief operator ^= for uint128_t (bitwise operator)
+     * @param p number to be operated
+     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     */
+>>>>>>> upstream/master
     uint128_t &operator^=(const uint128_t &p) {
         f ^= p.f;
         s ^= p.s;
         return *this;
     }
 
+<<<<<<< HEAD
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint128_t &operator^=(const T &p) {
+=======
+    /**
+     * @brief operator ^= for other types (bitwise operator)
+     * @tparam T integral type
+     * @param p number to be operated
+     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     */
+    template <typename T, typename = typename std::enable_if<
+                              std::is_integral<T>::value, T>::type>
+    inline uint128_t &operator^=(const T &p) {
+>>>>>>> upstream/master
         s ^= p;
         return *this;
     }
 
     /**
+<<<<<<< HEAD
      * @brief Costly std::cout operation.
+=======
+     * @brief operator << for printing uint128_t integer
+     * @details Prints the uint128_t integer in decimal form
+     * @note Note that this operator is costly since it uses strings to print
+     * the value
+     * @param op ostream object
+     * @param p 128-bit integer
+     * @returns op, ostream object.
+>>>>>>> upstream/master
      */
     friend std::ostream &operator<<(std::ostream &op, const uint128_t &p) {
         if (!p.f) {
@@ -781,100 +1230,165 @@ class uint128_t {
 // Arithmetic operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator+(const T &p, const uint128_t &q) {
+=======
+inline uint128_t operator+(const T &p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) + q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator-(const T p, const uint128_t &q) {
+=======
+inline uint128_t operator-(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) - q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator*(const T p, const uint128_t &q) {
     return q * p;
+=======
+inline uint128_t operator*(const T p, const uint128_t &q) {
+    return uint128_t(p) * q;
+>>>>>>> upstream/master
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator/(const T p, const uint128_t &q) {
+=======
+inline uint128_t operator/(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) / q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator%(const T p, const uint128_t &q) {
+=======
+inline uint128_t operator%(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) % q;
 }
 
 // Bitwise operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator&(const T &p, const uint128_t &q) {
+=======
+inline uint128_t operator&(const T &p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) & q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator|(const T p, const uint128_t &q) {
+=======
+inline uint128_t operator|(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) | q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 uint128_t operator^(const T p, const uint128_t &q) {
+=======
+inline uint128_t operator^(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) ^ q;
 }
 
 // Boolean operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator&&(const T p, const uint128_t &q) {
+=======
+inline bool operator&&(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) && q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator||(const T p, const uint128_t &q) {
+=======
+inline bool operator||(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) || q;
 }
 
 // Comparison operators
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator==(const T p, const uint128_t &q) {
+=======
+inline bool operator==(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) == q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator!=(const T p, const uint128_t &q) {
+=======
+inline bool operator!=(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) != q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator<(const T p, const uint128_t &q) {
+=======
+inline bool operator<(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) < q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator<=(const T p, const uint128_t &q) {
+=======
+inline bool operator<=(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) <= q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator>(const T p, const uint128_t &q) {
+=======
+inline bool operator>(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) > q;
 }
 
 template <typename T, typename = typename std::enable_if<
                           std::is_integral<T>::value, T>::type>
+<<<<<<< HEAD
 bool operator>=(const T p, const uint128_t &q) {
+=======
+inline bool operator>=(const T p, const uint128_t &q) {
+>>>>>>> upstream/master
     return uint128_t(p) >= q;
 }
 

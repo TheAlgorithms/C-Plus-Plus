@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * @file elliptic_curve_key_exchange.cpp
+=======
+ * @file
+>>>>>>> upstream/master
  * @brief Implementation of [Elliptic Curve Diffie Hellman Key
  * Exchange](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange).
  *
@@ -21,6 +25,7 @@
  * alicePubKey * bobPrivKey = bobPubKey * alicePrivKey = secret
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
+<<<<<<< HEAD
 
 #include <algorithm>
 #include <cassert>
@@ -28,6 +33,12 @@
 #include <iostream>
 
 #include "uint256_t.hpp"
+=======
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+
+#include "uint256_t.hpp"  /// for 256-bit integer
+>>>>>>> upstream/master
 
 /**
  * @namespace ciphers
@@ -36,7 +47,13 @@
 namespace ciphers {
 /**
  * @brief namespace elliptic_curve_key_exchange
+<<<<<<< HEAD
  * @details Demonstration of ECDH (Elliptic Curve Diffie-Hellman) key exchange.
+=======
+ * @details Demonstration of [Elliptic Curve
+ * Diffie-Hellman](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange)
+ * key exchange.
+>>>>>>> upstream/master
  */
 namespace elliptic_curve_key_exchange {
 
@@ -45,10 +62,29 @@ namespace elliptic_curve_key_exchange {
  * @details Definition of Point in the curve.
  */
 typedef struct Point {
+<<<<<<< HEAD
     uint256_t x, y;
 
     inline bool operator==(const Point &p) { return x == p.x && y == p.y; }
 
+=======
+    uint256_t x, y;  /// x and y co-ordinates
+
+    /**
+     * @brief operator == for Point
+     * @details check whether co-ordinates are equal to the given point
+     * @param p given point to be checked with this
+     * @returns true if x and y are both equal with Point p, else false
+     */
+    inline bool operator==(const Point &p) { return x == p.x && y == p.y; }
+
+    /**
+     * @brief ostream operator for printing Point
+     * @param op ostream operator
+     * @param p Point to be printed on console
+     * @returns op, the ostream object
+     */
+>>>>>>> upstream/master
     friend std::ostream &operator<<(std::ostream &op, const Point &p) {
         op << p.x << " " << p.y;
         return op;
@@ -75,14 +111,21 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
             ans = (ans * number) % mod;
         }
         power >>= 1;
+<<<<<<< HEAD
         if (power)
             number = (number * number) % mod;
+=======
+        if (power) {
+            number = (number * number) % mod;
+        }
+>>>>>>> upstream/master
     }
     return ans;
 }
 
 /**
  * @brief Addition of points
+<<<<<<< HEAD
  * @details Add given point to generate third point
  * @param a First point
  * @param b Second point
@@ -93,6 +136,24 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
 Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
     uint256_t lambda;  /// Slope
     uint256_t zero;    /// value zero
+=======
+ * @details Add given point to generate third point. More description can be
+ * found
+ * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_addition),
+ * and
+ * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_doubling)
+ * @param a First point
+ * @param b Second point
+ * @param curve_a_coeff Coefficient `a` of the given curve (y^2 = x^3 + ax + b)
+ * % mod
+ * @param mod Given field
+ * @return the resultant point
+ */
+Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
+               uint256_t mod) {
+    uint256_t lambda(0);  /// Slope
+    uint256_t zero(0);    /// value zero
+>>>>>>> upstream/master
     lambda = zero = 0;
     uint256_t inf = ~zero;
     if (a.x != b.x || a.y != b.y) {
@@ -103,10 +164,23 @@ Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
         uint256_t num = (b.y - a.y + mod), den = (b.x - a.x + mod);
         lambda = (num * (exp(den, mod - 2, mod))) % mod;
     } else {
+<<<<<<< HEAD
         // Slope being infinite
         // Taking dertivative of y^2 = x^3 + ax + b
         // 2y dy = (3 * x^2 + a)dx
         // (dy/dx) = (3x^2 + a)/(2y)
+=======
+        /**
+         *  slope when the line is tangent to curve. This operation is performed
+         * while doubling. Taking derivative of `y^2 = x^3 + ax + b`
+         * => `2y dy = (3 * x^2 + a)dx`
+         * => `(dy/dx) = (3x^2 + a)/(2y)`
+         */
+        /**
+         * if y co-ordinate is zero, the slope is infinite, return inf.
+         * else calculate the slope (here % mod and store in lambda)
+         */
+>>>>>>> upstream/master
         if (!a.y) {
             return {inf, inf};
         }
@@ -130,7 +204,12 @@ Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
 /**
  * @brief multiply Point and integer
  * @details Multiply Point by a scalar factor (here it is a private key p). The
+<<<<<<< HEAD
  * multiplication is called as double and add method
+=======
+ * multiplication is called as [double and add
+ * method](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Double-and-add)
+>>>>>>> upstream/master
  * @param a Point to multiply
  * @param curve_a_coeff Coefficient of given curve (y^2 = x^3 + ax + b) % mod
  * @param p The scalar value
@@ -138,11 +217,19 @@ Point addition(Point a, Point b, uint256_t curve_a_coeff, uint256_t mod) {
  * @returns the resultant point
  */
 Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
+<<<<<<< HEAD
                uint256_t mod) {
     Point N = a;
     N.x %= mod;
     N.y %= mod;
     uint256_t inf;
+=======
+               const uint256_t &mod) {
+    Point N = a;
+    N.x %= mod;
+    N.y %= mod;
+    uint256_t inf{};
+>>>>>>> upstream/master
     inf = ~uint256_t(0);
     Point Q = {inf, inf};
     while (p) {
@@ -155,8 +242,14 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
             }
         }
         p >>= 1;
+<<<<<<< HEAD
         if (p)
             N = addition(N, N, curve_a_coeff, mod);
+=======
+        if (p) {
+            N = addition(N, N, curve_a_coeff, mod);
+        }
+>>>>>>> upstream/master
     }
     return Q;
 }
@@ -169,6 +262,7 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
  * @returns void
  */
 static void uint128_t_tests() {
+<<<<<<< HEAD
     // Tests 1: Operations test
     uint128_t a("122"), b("2312");
     assert(a + b == uint128_t("2434"));
@@ -177,20 +271,40 @@ static void uint128_t_tests() {
     assert(b / a == uint128_t("18"));
     assert(b % a == uint128_t("116"));
     assert((a & b) == uint128_t(8));
+=======
+    // 1st test: Operations test
+    uint128_t a("122"), b("2312");
+    assert(a + b == 2434);
+    assert(b - a == 2190);
+    assert(a * b == 282064);
+    assert(b / a == 18);
+    assert(b % a == 116);
+    assert((a & b) == 8);
+>>>>>>> upstream/master
     assert((a | b) == 2426);
     assert((a ^ b) == 2418);
     assert((a << 64) == uint128_t("2250502776992565297152"));
     assert((b >> 7) == 18);
 
+<<<<<<< HEAD
     // Tests 2: Operations test
+=======
+    // 2nd test: Operations test
+>>>>>>> upstream/master
     a = uint128_t("12321421424232142122");
     b = uint128_t("23123212");
     assert(a + b == uint128_t("12321421424255265334"));
     assert(a - b == uint128_t("12321421424209018910"));
     assert(a * b == uint128_t("284910839733861759501135864"));
+<<<<<<< HEAD
     assert(a / b == uint128_t("532859423865"));
     assert(a % b == uint128_t("3887742"));
     assert((a & b) == uint128_t(18912520));
+=======
+    assert(a / b == 532859423865LL);
+    assert(a % b == 3887742);
+    assert((a & b) == 18912520);
+>>>>>>> upstream/master
     assert((a | b) == uint128_t("12321421424236352814"));
     assert((a ^ b) == uint128_t("12321421424217440294"));
     assert((a << 64) == uint128_t("227290107637132170748078080907806769152"));
@@ -202,6 +316,7 @@ static void uint128_t_tests() {
  * @returns void
  */
 static void uint256_t_tests() {
+<<<<<<< HEAD
     // Tests 1: Operations test
     uint256_t a("122"), b("2312");
     assert(a + b == uint256_t("2434"));
@@ -210,12 +325,26 @@ static void uint256_t_tests() {
     assert(b / a == uint256_t("18"));
     assert(b % a == uint256_t("116"));
     assert((a & b) == uint256_t(8));
+=======
+    // 1st test: Operations test
+    uint256_t a("122"), b("2312");
+    assert(a + b == 2434);
+    assert(b - a == 2190);
+    assert(a * b == 282064);
+    assert(b / a == 18);
+    assert(b % a == 116);
+    assert((a & b) == 8);
+>>>>>>> upstream/master
     assert((a | b) == 2426);
     assert((a ^ b) == 2418);
     assert((a << 64) == uint256_t("2250502776992565297152"));
     assert((b >> 7) == 18);
 
+<<<<<<< HEAD
     // Tests 2: Operations test
+=======
+    // 2nd test: Operations test
+>>>>>>> upstream/master
     a = uint256_t("12321423124513251424232142122");
     b = uint256_t("23124312431243243215354315132413213212");
     assert(a + b == uint256_t("23124312443564666339867566556645355334"));
@@ -283,6 +412,10 @@ static void test() {
     std::cout << alice_shared_key << std::endl;
     std::cout << bob_shared_key << std::endl;
 
+<<<<<<< HEAD
+=======
+    // Check whether shared keys are equal
+>>>>>>> upstream/master
     assert(alice_shared_key == bob_shared_key);
 }
 
@@ -291,8 +424,14 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
+<<<<<<< HEAD
     uint128_t_tests();  // running predefined 128-bit unsigned integer tests.
     uint256_t_tests();  // running predefined 256-bit unsigned integer tests.
     test();             // running predefined tests
+=======
+    uint128_t_tests();  // running predefined 128-bit unsigned integer tests
+    uint256_t_tests();  // running predefined 256-bit unsigned integer tests
+    test();             // running self-test implementations
+>>>>>>> upstream/master
     return 0;
 }

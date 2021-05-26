@@ -10,6 +10,7 @@
 [![Doxygen CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Doxygen%20CI/badge.svg)](https://TheAlgorithms.github.io/C-Plus-Plus)
 [![Awesome CI](https://github.com/TheAlgorithms/C-Plus-Plus/workflows/Awesome%20CI%20Workflow/badge.svg)](https://github.com/TheAlgorithms/C-Plus-Plus/actions?query=workflow%3A%22Awesome+CI+Workflow%22)
 [![Income](https://img.shields.io/liberapay/receives/TheAlgorithms.svg?logo=liberapay)](https://liberapay.com/TheAlgorithms)
+[![Discord chat](https://img.shields.io/discord/808045925556682782.svg?logo=discord&colorB=7289DA)](https://discord.gg/c7MnfGFGa6)
 [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/TheAlgorithms/donate)
 
 ## Overview
