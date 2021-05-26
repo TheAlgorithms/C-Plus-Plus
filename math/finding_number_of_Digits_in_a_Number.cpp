@@ -1,5 +1,5 @@
 /**
- * @author amino19
+ * @author [ANSHUMAAN](https://github.com/amino19)
  * @file:[Program to count digits in an
  * integer](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods)
  *
