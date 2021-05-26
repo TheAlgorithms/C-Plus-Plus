@@ -20,7 +20,7 @@
  * @returns 0 on exit
  */
 int main() {
-    /* Initialize 'n' & 'count' by 0 */
+        // Initialize 'n' & 'count' by 0
     int n = 0;
     int count = 0;
 
@@ -31,10 +31,10 @@ int main() {
     std::cin >> n;
 
     /* iterate until n becomes 0
-     *  remove last digit from n in each iteration
-     *  increase count by 1 in each iteration */
+     * remove last digit from n in each iteration
+     * increase count by 1 in each iteration */
     while (n != 0) {
-        /* we can also use: n = n/10 */
+        // we can also use: n = n/10
         n /= 10;
         /*  each time while loop running, count will
          *  be increment by 1.
