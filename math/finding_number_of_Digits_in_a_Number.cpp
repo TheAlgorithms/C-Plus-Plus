@@ -26,11 +26,13 @@ int main() {
     /* Initialize 'n' & 'count' by 0 */
     int n = 0;
     int count = 0;
+
     /* 'cout' to ask input from user..
      * 'cin' to taking integer as input..
      */
     std::cout << "Enter an integer: ";
     std::cin >> n;
+
     /* iterate until n becomes 0
      *  remove last digit from n in each iteration
      *  increase count by 1 in each iteration */
@@ -42,5 +44,6 @@ int main() {
          */
         ++count;
     }
+
     std::cout << "Number of digits: " << count;
 }
