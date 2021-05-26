@@ -1,9 +1,5 @@
 /**
-<<<<<<< HEAD
- * @file uint128_t.hpp
-=======
  * @file
->>>>>>> upstream/master
  *
  * @details Implementation of 256-bit unsigned integers.
  * @note The implementation can be flagged as not completed. This header is used
@@ -11,17 +7,10 @@
  * Diffie-Hellman) Key exchange.
  * @author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
-<<<<<<< HEAD
-#include <string>
-#include <utility>
-
-#include "uint128_t.hpp"
-=======
 #include <string>   /// for `std::string`
 #include <utility>  /// for `std::pair` library
 
 #include "uint128_t.hpp"  /// for uint128_t integer
->>>>>>> upstream/master
 
 #ifndef CIPHERS_UINT256_T_HPP_
 #define CIPHERS_UINT256_T_HPP_
@@ -39,17 +28,10 @@ struct std::is_unsigned<uint256_t> : std::true_type {};
 
 /**
  * @class uint256_t
-<<<<<<< HEAD
- * @details 256-bit number class.
- */
-class uint256_t {
-    uint128_t f, s;  /// First and second half of 256 bit number.
-=======
  * @brief class for 256-bit unsigned integer
  */
 class uint256_t {
     uint128_t f{}, s{};  /// First and second half of 256 bit number
->>>>>>> upstream/master
 
     /**
      * @brief Get integer from given string.
@@ -83,14 +65,11 @@ class uint256_t {
     // Constructors
     uint256_t() = default;
 
-<<<<<<< HEAD
-=======
     /**
      * @brief Parameterized constructor
      * @tparam T template for integer types
      * @param low Integer denoting lower 128-bits
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     explicit uint256_t(T low) : s(low), f(0) {}
@@ -107,34 +86,22 @@ class uint256_t {
      * @brief Copy constructor
      * @param num 256-bit unsigned integer
      */
-<<<<<<< HEAD
-    uint256_t(const uint256_t &num) : f(num.f), s(num.s) {}
-=======
     uint256_t(const uint256_t &num) = default;
->>>>>>> upstream/master
 
     /**
      * @brief Move constructor
      * @param num 256-bit unsigned integer
      */
-<<<<<<< HEAD
-    uint256_t(uint256_t &&num) : f(std::move(num.f)), s(std::move(num.s)) {}
-=======
     uint256_t(uint256_t &&num) noexcept
         : f(std::move(num.f)), s(std::move(num.s)) {}
->>>>>>> upstream/master
 
     /**
      * @brief Parameterized constructor
      * @param high higher part 128-bit unsigned integer
      * @param low lower part 128-bit unsigned integer
      */
-<<<<<<< HEAD
-    uint256_t(const uint128_t &high, const uint128_t &low) : f(high), s(low) {}
-=======
     uint256_t(uint128_t high, uint128_t low)
         : f(std::move(high)), s(std::move(low)) {}
->>>>>>> upstream/master
 
     /**
      * @brief Parameterized constructor
@@ -144,27 +111,19 @@ class uint256_t {
     uint256_t(const uint64_t high, const uint64_t low) : f(high), s(low) {}
 
     /**
-<<<<<<< HEAD
-=======
      * @brief Destructor for uint256_t
      */
     ~uint256_t() = default;
 
     /**
->>>>>>> upstream/master
      * @brief Leading zeroes in binary
      * @details Calculates leading zeros in 256-bit integer
      * @returns Integer denoting leading zeroes
      */
     inline uint32_t _lez() {
-<<<<<<< HEAD
-        if (f)
-            return f._lez();
-=======
         if (f) {
             return f._lez();
         }
->>>>>>> upstream/master
         return 128 + s._lez();
     }
 
@@ -174,27 +133,6 @@ class uint256_t {
      * @returns Integer denoting Trailing zeroes
      */
     inline uint32_t _trz() {
-<<<<<<< HEAD
-        if (s)
-            return s._trz();
-        return 128 + f._trz();
-    }
-
-    inline uint32_t _len() { return _lez(); }
-
-    inline operator bool() const { return f || s; }
-
-    /**
-     * @brief casting operator
-     */
-    template <typename T, typename = typename std::enable_if<
-                              std::is_integral<T>::value, T>::type>
-    inline operator T() const {
-        return static_cast<T>(s);
-    }
-
-    inline operator uint128_t() const { return s; }
-=======
         if (s) {
             return s._trz();
         }
@@ -223,7 +161,6 @@ class uint256_t {
      * @returns returns lower 128-bit integer part
      */
     inline explicit operator uint128_t() const { return s; }
->>>>>>> upstream/master
 
     /**
      * @brief returns lower 128-bit integer part
@@ -237,15 +174,6 @@ class uint256_t {
      */
     inline uint128_t upper() const { return f; }
 
-<<<<<<< HEAD
-    // Assign
-    inline uint256_t &operator=(const uint256_t &p) {
-        this->f = p.f;
-        this->s = p.s;
-        return *this;
-    }
-
-=======
     /**
      * @brief operator = for uint256_t
      * @param p an 256-bit integer to assign it's value
@@ -259,7 +187,6 @@ class uint256_t {
      * @param p an integer to assign it's value
      * @returns this pointer with it's value equal to `p`
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator=(const T &p) {
@@ -267,25 +194,19 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator = for type string
      * @param p a string to assign it's value to equivalent integer
      * @returns this pointer with it's value equal to `p`
      */
->>>>>>> upstream/master
     inline uint256_t &operator=(const std::string &p) {
         __get_integer_from_string(p);
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief Move assignment operator
      */
->>>>>>> upstream/master
     inline uint256_t &operator=(uint256_t &&p) = default;
 
     /**
@@ -303,21 +224,12 @@ class uint256_t {
 
     /**
      * @brief operator + for uint256_t and other integer types.
-<<<<<<< HEAD
-     * @param p 128-bit unsigned integer
-     * @returns addition of this and p, returning uint256_t integer
-     */
-    inline uint256_t operator+(const uint256_t &p) {
-        bool app = s + p.s < s;
-        return uint256_t(f + app + p.f, p.s + s);
-=======
      * @param p 256-bit unsigned integer
      * @returns addition of this and p, returning uint256_t integer
      */
     inline uint256_t operator+(const uint256_t &p) {
         bool app = (s + p.s < s);
         return {f + app + p.f, s + p.s};
->>>>>>> upstream/master
     }
 
     /**
@@ -329,11 +241,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator+=(const T &p) {
-<<<<<<< HEAD
-        bool app = p + s < s;
-=======
         bool app = (p + s < s);
->>>>>>> upstream/master
         this->f += app;
         this->s += p;
         return *this;
@@ -345,15 +253,9 @@ class uint256_t {
      * @returns addition of this and p, returning this
      */
     inline uint256_t &operator+=(const uint256_t &p) {
-<<<<<<< HEAD
-        bool _app = (p.s + s < s);
-        f += _app + p.f;
-        s += p.s;
-=======
         bool app = (s + p.s < s);
         f = f + app + p.f;
         s = s + p.s;
->>>>>>> upstream/master
         return *this;
     }
 
@@ -384,11 +286,7 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator-(const T &p) {
-<<<<<<< HEAD
-        bool app = p > s;
-=======
         bool app = (p > s);
->>>>>>> upstream/master
         return uint256_t(f - app, s - p);
     }
 
@@ -398,13 +296,8 @@ class uint256_t {
      * @returns subtraction of this and p, returning uint256_t integer
      */
     inline uint256_t operator-(const uint256_t &p) {
-<<<<<<< HEAD
-        bool app = p.s > s;
-        return uint256_t(f - p.f - app, s - p.s);
-=======
         bool app = s < p.s;
         return {f - p.f - app, s - p.s};
->>>>>>> upstream/master
     }
 
     /**
@@ -440,15 +333,9 @@ class uint256_t {
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator-=(const T p) {
-<<<<<<< HEAD
-        bool app = p > s;
-        f -= app;
-        s -= p;
-=======
         bool app = (p > s);
         f = f - app;
         s = s - p;
->>>>>>> upstream/master
         return *this;
     }
 
@@ -458,15 +345,9 @@ class uint256_t {
      * @returns subtraction of this and p, returning this
      */
     inline uint256_t &operator-=(const uint256_t &p) {
-<<<<<<< HEAD
-        bool app = p.s > s;
-        f = f - app - p.f;
-        s -= p.s;
-=======
         bool app = s < p.s;
         f = f - app - p.f;
         s = s - p.s;
->>>>>>> upstream/master
         return *this;
     }
 
@@ -496,13 +377,8 @@ class uint256_t {
         int cc = (tmp + tmp2 < tmp);
         tmp += tmp2;
         cc += (tmp + fo < tmp);
-<<<<<<< HEAD
-        return uint256_t(f * p.s + s * p.f + fi + se.upper() + th.upper() + cc,
-                         tmp + fo);
-=======
         return {f * p.s + s * p.f + fi + se.upper() + th.upper() + cc,
                 tmp + fo};
->>>>>>> upstream/master
     }
 
     /**
@@ -519,11 +395,7 @@ class uint256_t {
 
     /**
      * @brief operator *= for uint256_t and other integer types.
-<<<<<<< HEAD
-     * @param p 128-bit unsigned integer
-=======
      * @param p 256-bit unsigned integer
->>>>>>> upstream/master
      * @returns multiplication of this and p, returning this
      */
     uint256_t &operator*=(const uint256_t &p) {
@@ -620,30 +492,17 @@ class uint256_t {
     }
 
     /**
-<<<<<<< HEAD
-     * @brief operator % for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns unsigned 128-bit remainder.
-=======
      * @brief operator % for uint256_t
      * @param p 256-bit unsigned integer
      * @returns unsigned 256-bit remainder.
->>>>>>> upstream/master
      */
     inline uint256_t operator%(const uint256_t &p) { return divide(p).second; }
 
     /**
-<<<<<<< HEAD
-     * @brief operator % for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns unsigned 128-bit remainder.
-=======
      * @brief operator % for uint256_t and other integer types.
      * @tparam T denoting integral type
      * @param p a type of integer variable
      * @returns unsigned 256-bit remainder.
->>>>>>> upstream/master
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -654,15 +513,9 @@ class uint256_t {
     }
 
     /**
-<<<<<<< HEAD
-     * @brief operator %= for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns this set as unsigned 128-bit remainder.
-=======
      * @brief operator %= for uint256_t
      * @param p 256-bit unsigned integer
      * @returns this set as unsigned 256-bit remainder.
->>>>>>> upstream/master
      */
     inline uint256_t &operator%=(const uint256_t &p) {
         *this = divide(p).second;
@@ -670,17 +523,10 @@ class uint256_t {
     }
 
     /**
-<<<<<<< HEAD
-     * @brief operator %= for uint128_t
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns this set as unsigned 128-bit remainder.
-=======
      * @brief operator %= for uint256_t
      * @tparam T denoting integral type
      * @param p a type of integer variable
      * @returns this set as unsigned 256-bit remainder.
->>>>>>> upstream/master
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -689,83 +535,60 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-    // Comparison operators
-=======
     /**
      * @brief operator < for uint256_t
      * @param other number to be compared with this
      * @returns true if this is less than other, else false
      */
->>>>>>> upstream/master
     inline bool operator<(const uint256_t &other) {
         return f < other.f || (f == other.f && s < other.s);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator <= for uint256_t
      * @param other number to be compared with this
      * @returns true if this is less than or equal to other, else false
      */
->>>>>>> upstream/master
     inline bool operator<=(const uint256_t &other) {
         return f < other.f || (f == other.f && s <= other.s);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator > for uint256_t
      * @param other number to be compared with this
      * @returns true if this is greater than other, else false
      */
->>>>>>> upstream/master
     inline bool operator>(const uint256_t &other) {
         return f > other.f || (f == other.f && s > other.s);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator >= for uint256_t
      * @param other number to be compared with this
      * @returns true if this is greater than or equal than other, else false
      */
->>>>>>> upstream/master
     inline bool operator>=(const uint256_t &other) {
         return (f > other.f) || (f == other.f && s >= other.s);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator == for uint256_t
      * @param other number to be compared with this
      * @returns true if this is equal than other, else false
      */
->>>>>>> upstream/master
     inline bool operator==(const uint256_t &other) {
         return f == other.f && s == other.s;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator != for uint256_t
      * @param other number to be compared with this
      * @returns true if this is not equal than other, else false
      */
->>>>>>> upstream/master
     inline bool operator!=(const uint256_t &other) {
         return !((*this) == other);
     }
 
-<<<<<<< HEAD
-    inline bool operator!() { return !f && !s; }
-
-=======
     /**
      * @brief operator ! for uint256_t
      * @returns true if this has zero value, else false
@@ -777,27 +600,19 @@ class uint256_t {
      * @param b number to be compared with this
      * @returns true if both of the values are not zero, else false
      */
->>>>>>> upstream/master
     inline bool operator&&(const uint256_t &b) {
         return (s || f) && (b.s || b.f);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator || for uint256_t
      * @param b number to be compared with this
      * @returns true if one of the values are not zero, else false
      */
->>>>>>> upstream/master
     inline bool operator||(const uint256_t &b) {
         return (s || f) || (b.s || b.f);
     }
 
-<<<<<<< HEAD
-    inline bool operator()() { return s || f; }
-
-=======
     /**
      * @brief operator () for uint256_t
      * @returns true if this value is non-zero, else false
@@ -810,105 +625,84 @@ class uint256_t {
      * @param other number to be compared with this
      * @returns true if this is less than other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator<(const T &other) {
         return *this < uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator <= for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is less than or equal to other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator<=(const T &other) {
         return *this <= uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator > for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is greater than other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator>(const T &other) {
         return *this > uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator >= for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is greater than or equal other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator>=(const T &other) {
         return *this >= uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator == for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is equal to other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator==(const T &other) {
         return *this == uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator != for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is not equal to other, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     bool operator!=(const T &other) {
         return *this != uint256_t(other);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator && for other types
      * @tparam T integral type
      * @param other number to be compared with this
      * @returns true if this is both values are non-zero, else false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator&&(const T &b) {
         return (s || f) && (b);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator || for other types
      * @tparam T integral type
@@ -916,18 +710,12 @@ class uint256_t {
      * @returns true if this is either one of the values are non-zero, else
      * false
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline bool operator||(const T &b) {
         return (s || f) || (b);
     }
 
-<<<<<<< HEAD
-    // Bitwise operators
-    inline uint256_t operator~() { return uint256_t(~f, ~s); }
-
-=======
     /**
      * @brief operator ~ for uint256_t
      * @returns 1's complement of this number
@@ -940,34 +728,24 @@ class uint256_t {
      * @param p number denoting number of shifts
      * @returns value of this shifted by p to left
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t operator<<(const T &p) {
         if (!p) {
-<<<<<<< HEAD
-            return uint256_t(this->f, this->s);
-        }
-        if (p >= 128) {
-=======
             return {this->f, this->s};
         } else if (p >= 128) {
->>>>>>> upstream/master
             return uint256_t((this->s << (p - 128)), uint128_t(0));
         }
         return uint256_t((this->f << p) + (this->s >> (128 - p)),
                          (this->s << p));
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator <<= for uint256_t
      * @tparam T integral type
      * @param p number denoting number of shifts
      * @returns this shifted by p to left
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t &operator<<=(const T &p) {
@@ -983,42 +761,30 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator >> for uint256_t
      * @tparam T integral type
      * @param p number denoting number of shifts
      * @returns value of this shifted by p to right
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t operator>>(const T &p) {
         if (!p) {
-<<<<<<< HEAD
-            return uint256_t(this->f, this->s);
-        }
-        if (p >= 128) {
-=======
             return {this->f, this->s};
         } else if (p >= 128) {
->>>>>>> upstream/master
             return uint256_t(uint128_t(0), (this->f >> (p - 128)));
         }
         return uint256_t((this->f >> p),
                          (this->s >> p) + (this->f << (128 - p)));
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator >>= for uint256_t
      * @tparam T integral type
      * @param p number denoting number of shifts
      * @returns this shifted by p to right
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     uint256_t &operator>>=(const T &p) {
@@ -1034,27 +800,18 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator & for other types (bitwise operator)
      * @tparam T integral type
      * @param p number to be operated
      * @returns value of this & p (& is bit-wise operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator&(const T &p) {
         return *this & uint256_t(p);
     }
 
-<<<<<<< HEAD
-    inline uint256_t operator&(const uint256_t &p) {
-        return uint256_t(f & p.f, s & p.s);
-    }
-
-=======
     /**
      * @brief operator & for uint256_t (bitwise operator)
      * @param p number to be operated
@@ -1069,22 +826,18 @@ class uint256_t {
      * @param p number to be operated
      * @returns this = this & p (& is bit-wise operator)
      */
->>>>>>> upstream/master
     inline uint256_t &operator&=(const uint256_t &p) {
         f &= p.f;
         s &= p.s;
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator &= for other types (bitwise operator)
      * @tparam T integral type
      * @param p number to be operated
      * @returns this = this & p (& is bit-wise operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator&=(const T p) {
@@ -1092,27 +845,18 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator | for other types (bitwise operator)
      * @tparam T integral type
      * @param p number to be operated
      * @returns value of this | p (| is bit-wise operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator|(const T &p) {
         return *this | uint256_t(p);
     }
 
-<<<<<<< HEAD
-    inline uint256_t operator|(const uint256_t &p) {
-        return uint256_t(this->f | p.f, this->s | p.s);
-    }
-
-=======
     /**
      * @brief operator | for uint256_t (bitwise operator)
      * @param p number to be operated
@@ -1128,7 +872,6 @@ class uint256_t {
      * @param p number to be operated
      * @returns this = this | p (| is bit-wise OR operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator|=(const T &p) {
@@ -1136,41 +879,29 @@ class uint256_t {
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator |= for uint256_t (bitwise operator)
      * @param p number to be operated
      * @returns this = this | p (| is bit-wise OR operator)
      */
->>>>>>> upstream/master
     inline uint256_t &operator|=(const uint256_t &p) {
         f |= p.f;
         s |= p.s;
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator ^ for other types (bitwise operator)
      * @tparam T integral type
      * @param p number to be operated
      * @returns value of this ^ p (^ is bit-wise XOR operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t operator^(const T &p) {
         return uint256_t(f, s ^ p);
     }
 
-<<<<<<< HEAD
-    inline uint256_t operator^(const uint256_t &p) {
-        return uint256_t(this->f ^ p.f, this->s ^ p.s);
-    }
-
-=======
     /**
      * @brief operator ^ for uint256_t (bitwise operator)
      * @param p number to be operated
@@ -1185,32 +916,24 @@ class uint256_t {
      * @param p number to be operated
      * @returns this = this ^ p (^ is bit-wise XOR operator)
      */
->>>>>>> upstream/master
     inline uint256_t &operator^=(const uint256_t &p) {
         f ^= p.f;
         s ^= p.s;
         return *this;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @brief operator ^= for other types (bitwise operator)
      * @tparam T integral type
      * @param p number to be operated
      * @returns this = this ^ p (^ is bit-wise XOR operator)
      */
->>>>>>> upstream/master
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     inline uint256_t &operator^=(const T &p) {
         s ^= p;
         return *this;
     }
-<<<<<<< HEAD
-    /**
-     * @brief Costly std::cout operation.
-=======
 
     /**
      * @brief operator << for printing uint256_t integer
@@ -1220,7 +943,6 @@ class uint256_t {
      * @param op ostream object
      * @param p 256-bit integer
      * @returns op, ostream object.
->>>>>>> upstream/master
      */
     friend std::ostream &operator<<(std::ostream &op, uint256_t p) {
         if (!p.f) {
