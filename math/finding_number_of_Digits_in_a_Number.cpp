@@ -19,7 +19,7 @@
  * @brief Main function
  * @returns 0 on exit
  */
-int main() {
+int main(void) {
     /* Initialize 'n' & 'count' by 0 */
     int n = 0;
     int count = 0;
