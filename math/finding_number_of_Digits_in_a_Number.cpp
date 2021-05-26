@@ -4,15 +4,12 @@
  * integer](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods)
  *
  * @brief Finding number of Digits in a Number
- * @details It is a very basic math of finding
- *  number of digits in a given number i.e, we
- *  can use it by inputting values whether it
- *  can be a positive/negative value, lets say
- *  integer.
- *  There is also second method to do it with,
- *  by using "K = floor(log10(N) + 1)", but its
- *  only applicable for numbers (not integers).
- *  For more details, refer Algorithms-Explanation
+ * @details It is a very basic math of finding number of digits in a given
+ * number i.e, we can use it by inputting values whether it can be a
+ * positive/negative value, lets say integer. There is also second method to do
+ * it with, by using "K = floor(log10(N) + 1)", but its only applicable for
+ * numbers (not integers).
+ * For more details, refer Algorithms-Explanation
  */
 
 #include <cassert>   /// for assert
@@ -46,4 +43,6 @@ int main() {
     }
 
     std::cout << "Number of digits: " << count;
+
+    return 0;
 }
