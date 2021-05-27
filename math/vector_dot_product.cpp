@@ -24,9 +24,9 @@
  * @author [Benjamin Tran](https://github.com/benhtran)
  */
  
-#include <iostream>
-#include <array>
-#include <cassert>
+#include <iostream>     /// for IO operations
+#include <array>       /// for std::array
+#include <cassert>    /// for assert
 
 using namespace std;
 
