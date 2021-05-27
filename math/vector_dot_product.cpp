@@ -16,8 +16,8 @@
  *
  * ### Example: 
  * Example execution:
- *	Enter components for first vector: -4 1 2
- *	Enter components for the second vector: 0 -2 3
+ *	* Enter components for first vector: -4 1 2
+ *	* Enter components for the second vector: 0 -2 3
  *  The dot product of your vectors is: 4
  * 
  *
