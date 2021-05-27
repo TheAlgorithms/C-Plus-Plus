@@ -30,6 +30,10 @@
 
 using namespace std;
 
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
 namespace math {
  
 	/**
