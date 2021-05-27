@@ -1,7 +1,7 @@
 /**
  * @file
  *
- * @brief Calculates the [dot product] https://en.wikipedia.org/wiki/Dot_product of two 3D mathematical vectors.
+ * @brief Calculates the [dot product](https://en.wikipedia.org/wiki/Dot_product) of two 3D mathematical vectors.
  *
  *
  * @details The dot product of two mathematical vectors is a scalar.
