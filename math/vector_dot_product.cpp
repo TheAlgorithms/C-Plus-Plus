@@ -21,7 +21,7 @@
  *  The dot product of your vectors is: 4
  * 
  *
- * @author [Benjamin Tran] (https://github.com/benhtran)
+ * @author [Benjamin Tran](https://github.com/benhtran)
  */
  
 #include <iostream>
