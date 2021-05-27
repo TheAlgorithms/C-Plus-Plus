@@ -44,9 +44,8 @@ namespace math {
 } /// namespace math
 
 /**
- * @brief test function.
- * @details test the dot() function
- * 
+ * @brief Self-test implementations
+ * @returns void
  */
 static void test() {
 	/// Performs a couple tests for the dot() function.
