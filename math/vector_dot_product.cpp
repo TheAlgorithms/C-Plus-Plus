@@ -41,7 +41,7 @@ namespace math {
 	* @param vec2 is an array containing the components of the second mathematical vector in the form {x,y,z}.
 	* @returns A double representing the scalar output.
 	*/
-	double dot (const array<double, 3> vec1, const array<double, 3> vec2) {
+	double dot (const std::array<double, 3> vec1, const std::array<double, 3> vec2) {
 		return ( (vec1[0] * vec2[0]) + (vec1[1] * vec2[1]) + (vec1[2] * vec2[2]) );
 	}
 }  // namespace math
@@ -76,12 +76,12 @@ int main() {
 	std::cin >> vec1[0] >> vec1[1] >> vec1[2];
 	
 	/// Get components for the second vector.
-	cout << "Enter components for second vector: ";
-	cin >> vec2[0] >> vec2[1] >> vec2[2];
+	std::cout << "Enter components for second vector: ";
+	std::cin >> vec2[0] >> vec2[1] >> vec2[2];
 	
 	/// Displays the result of the dot product operation.
 	double result = math::dot(vec1, vec2);
-	std::cout << "The dot product of your vectors is: " << result << "." << endl;
+	std::cout << "The dot product of your vectors is: " << result << "." << std::endl;
 	
 	return 0;
 }
