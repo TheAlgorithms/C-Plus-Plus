@@ -66,8 +66,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-	/// Tests the functions with sample inputs before moving on to user input.
-	test();
+	test();  // run self-test implementations
 	
 	/// Stores two vector representations for input.
 	array<double, 3> vec1;
