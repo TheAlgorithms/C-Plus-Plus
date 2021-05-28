@@ -45,7 +45,7 @@ namespace math {
 	double dot (const array<double, 3> vec1, const array<double, 3> vec2) {
 		return ( (vec1[0] * vec2[0]) + (vec1[1] * vec2[1]) + (vec1[2] * vec2[2]) );
 	}
-} /// namespace math
+}  // namespace math
 
 /**
  * @brief Self-test implementations
