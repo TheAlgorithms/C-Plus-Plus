@@ -28,7 +28,6 @@
 #include <array>       /// for std::array
 #include <cassert>    /// for assert
 
-using namespace std;
 
 /**
  * @namespace math
