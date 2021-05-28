@@ -61,6 +61,10 @@ static void test() {
 	assert(dot1 == -37);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
 	/// Tests the functions with sample inputs before moving on to user input.
 	test();
