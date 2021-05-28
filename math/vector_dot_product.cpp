@@ -81,7 +81,7 @@ int main() {
 	
 	/// Displays the result of the dot product operation.
 	double result = math::dot(vec1, vec2);
-	cout << "The dot product of your vectors is: " << result << "." << endl;
+	std::cout << "The dot product of your vectors is: " << result << "." << endl;
 	
 	return 0;
 }
