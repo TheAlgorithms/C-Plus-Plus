@@ -8,9 +8,9 @@
  *
  * @details The dot product of two mathematical vectors is a scalar.
  * Components of a vector are parts of a vector that determine its direction and
- *magnitude. A scalar is a quantity with only magnitude (no direction). The dot
- *product of two vectors can be found by getting the sum of the products of
- *their respective x, y, and z components.
+ * magnitude. A scalar is a quantity with only magnitude (no direction). The dot
+ * product of two vectors can be found by getting the sum of the products of
+ * their respective x, y, and z components.
  *
  * eg.) dot product of <1, 2, 3> and <4, 5, 6> = (1 * 4) + (2 * 5) + (3 * 6) =
  *32 32 would be the result from the above operation.
