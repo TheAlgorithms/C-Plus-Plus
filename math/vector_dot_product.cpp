@@ -68,8 +68,8 @@ int main() {
 	test();  // run self-test implementations
 	
 	/// Stores two vector representations for input.
-	array<double, 3> vec1;
-	array<double, 3> vec2;
+	std::array<double, 3> vec1;
+	std::array<double, 3> vec2;
 	
 	/// Get components for the first vector.
 	cout << "Enter components for first vector: ";
