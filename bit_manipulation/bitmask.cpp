@@ -163,12 +163,3 @@ int main() {
 	bitmask::example_advanced();
 	bitmask::problem_example::solve();
 }
-
-
-
-
-
-
-
-
-
