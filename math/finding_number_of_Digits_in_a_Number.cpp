@@ -20,7 +20,7 @@
  * @returns 0 on exit
  */
 int main() {
-        // Initialize 'n' & 'count' by 0
+    // Initialize 'n' & 'count' by 0
     int n = 0;
     int count = 0;
 
