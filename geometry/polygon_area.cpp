@@ -14,13 +14,13 @@
 #include<iostream>    /// for IO operations
 
 /**
- *  @namespace geometry
- *  @brief Geometry algorithms
+ * @namespace geometry
+ * @brief Geometry algorithms
  */
 namespace geometry{
     /**
-    *  @namespace polygon_area
-    *  @brief polygon area functions
+    * @namespace polygon_area
+    * @brief polygon area functions
     */
     namespace polygon_area {
         /**
@@ -41,7 +41,7 @@ namespace geometry{
             std::vector<Point<T>> points; /// list of all points in the 2d space
          public:
             /**
-             * Constructor of given class
+             * Constructor of a given class
              *
              * @param point_list list of all the points in the 2d space
              */
@@ -60,13 +60,16 @@ namespace geometry{
                 auto multiply_xy_of_two_points = [](const Point<T> &first_point, const Point<T> &second_point) {
                   return first_point.x * second_point.y;
                 };
-                auto first_point = points.begin(); //first point iterator
-                auto last_point = std::prev(points.end(), 1); //last point iterator
+                auto first_point = points.begin(); ///< first point iterator
+                auto last_point = std::prev(points.end(), 1); ///< last point iterator
+                //first "shoelace" term, it is the sum of the x value of every point not including the last point multiplied by the y value of the point after
                 auto first_term = std::inner_product(points.begin(), std::prev(points.end(), 1),
                                                      std::next(points.begin(), 1),
                                                      0, std::plus<T>(), multiply_xy_of_two_points);
+                //second "shoelace" term, it is the sum of the y value of every point not including the last point multiplied by the x value of the point after
                 auto second_term = std::inner_product(std::next(points.begin(), 1), points.end(), points.begin(), 0,
                                                       std::plus<T>(), multiply_xy_of_two_points);
+                //final area, which is a function of the two terms, the last point's x value multiplied by the first point's y value and the first point's x value multiplied by the last point's y value
                 return 0.5 *
                        std::abs(first_term - second_term + last_point->x * first_point->y - first_point->x * last_point->y);
             }
@@ -75,9 +78,9 @@ namespace geometry{
 }  // namespace geometry
 
 /**
- * This is the main function for testing the algorithm
+ * This is the testing function for testing the algorithm
  */
-int main() {
+void tests() {
     // Area of polygon enclosed by points (0,0), (0,1), (1,1), (2,0). Expected value is 1.5
     std::vector<geometry::polygon_area::Point<double>> v = {{0.0, 0.0},
                                                             {0.0, 1.0},
@@ -88,8 +91,8 @@ int main() {
     std::cout << "Test 1: passed" << std::endl;
     //Area of polygon enclosed by points (0,0), (0,1), (1,0). Expected value is 0.5
     std::vector<geometry::polygon_area::Point<double>> v1 = {{0.0, 0.0},
-                                                            {0.0, 1.0},
-                                                            {1.0, 0.0}};
+                                                             {0.0, 1.0},
+                                                             {1.0, 0.0}};
     geometry::polygon_area::Polygon_Area<double> p1(v1);
     assert(p1.get_polygon_area() == 0.5);
     std::cout << "Test 2: passed" << std::endl;
@@ -102,4 +105,12 @@ int main() {
     geometry::polygon_area::Polygon_Area<int> p2(v2);
     assert(p2.get_polygon_area() == 30);
     std::cout << "Test 3: passed" << std::endl;
+}
+
+
+/**
+ * This is the main function for running the test function
+ */
+int main() {
+    tests();
 }
