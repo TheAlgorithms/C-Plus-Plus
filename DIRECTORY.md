@@ -90,6 +90,7 @@
 ## Geometry
   * [Jarvis Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/jarvis_algorithm.cpp)
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
+  * [Polygon Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/polygon_area.cpp)
 
 ## Graph
   * [Bidirectional Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bidirectional_dijkstra.cpp)
