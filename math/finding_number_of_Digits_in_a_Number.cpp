@@ -1,5 +1,5 @@
 /**
- * @author [ANSHUMAAN](https://github.com/amino19)
+ * @author [aminos 🇮🇳](https://github.com/amino19)
  * @file
  *
  * @brief [Program to count digits 
@@ -24,9 +24,6 @@ int main() {
     int n = 0;
     int count = 0;
 
-    /* 'cout' to ask input from user..
-     * 'cin' to taking integer as input..
-     */
     std::cout << "Enter an integer: ";
     std::cin >> n;
 
