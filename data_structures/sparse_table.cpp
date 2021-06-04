@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cassert>
-#include <array>
+#include <iostream> /// for IO operations
+#include <cassert> /// for assert
+#include <array> /// for std::array
 /**
  *
  * @file
