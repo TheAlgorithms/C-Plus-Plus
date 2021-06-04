@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 #include <iostream>
 #include <cassert>
+#include <array>
 /**
  *
  * @file
@@ -47,14 +48,16 @@ namespace sparse_table {
         const static int N = 12345, M = 14;
 
         // The array to compute its sparse table.
-        int n, a[N];
+        int n;
+        std::array<int,N> a;
 
         //
         // Sparse table related variables.
         //
         // ST[j][i] : the sparse table value (min, max, ...etc) in the interval [i, i + (2^j) - 1].
         // LOG[i]   : floor(log2(i)).
-        int ST[M][N], LOG[N];
+        std::array<std::array<int,N>,M> ST;
+        std::array<int,N> LOG;
 
         /**
          * 
@@ -108,11 +111,11 @@ namespace sparse_table {
  * @brief testcase for sparse_table
  */
 static void test(){
-    int testcase[] = {1,2,3,4,5,6,7,8,9,10};
+    std::array<int,10> testcase = {1,2,3,4,5,6,7,8,9,10};
     int testcase_size = sizeof(testcase)/sizeof(testcase[0]);
-    
-    data_structures::sparse_table::Sparse_table st;
-    
+
+    data_structures::sparse_table::Sparse_table st{};
+
     // copying testcase to the struct
     std::copy(std::begin(testcase),std::end(testcase),std::begin(st.a));
     st.n = testcase_size;
