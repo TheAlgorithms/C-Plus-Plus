@@ -134,6 +134,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  // execute the tests
+    test();  // run self-test implementations
     return 0;
 }
