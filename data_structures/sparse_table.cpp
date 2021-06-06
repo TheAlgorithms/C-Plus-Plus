@@ -20,6 +20,10 @@
  * function. This implementation can be changed to other functions like
  * `gcd()`, `lcm()`, and `max()` by changing a few lines of code.
  */
+ 
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace data_structures
