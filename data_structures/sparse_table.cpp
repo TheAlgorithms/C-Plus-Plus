@@ -120,7 +120,7 @@ static void test() {
     assert(st.query(2, 6) == 2);  ///< as 2 is smallest from 2..6
     assert(st.query(3, 8) == 3);  ///< as 3 is smallest from 3..8
 
-    std::cout << "Testcase passed!" << std::endl;
+    std::cout << "Self-test implementations passed!" << std::endl;
 }
 
 /**
