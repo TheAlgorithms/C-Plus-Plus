@@ -42,7 +42,7 @@ namespace sparse_table {
  * function, for the given array `A`. The answer to queries are stored in the
  * array ST.
  */
-const static uint32_t N = 12345;  ///< the maximum size of the array.
+constexpr uint32_t N = 12345;  ///< the maximum size of the array.
 const static uint8_t M = 14;      ///< ceil(log2(N)).
 
 struct Sparse_table {
