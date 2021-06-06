@@ -44,7 +44,7 @@ namespace sparse_table {
 struct Sparse_table {
     const static int N = 12345;  ///< the maximum size of the array.
     const static int M = 14;     ///< ceil(log2(N)).
-    int n;                       ///< size of input array.
+    int n = 0;                       ///< size of input array.
 
     /** @warning check if `N` is not less than `n`. if so, manually increase the
      * value of N */
