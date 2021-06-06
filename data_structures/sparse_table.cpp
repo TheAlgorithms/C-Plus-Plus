@@ -1,6 +1,3 @@
-#include <array>     /// for std::array
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO operations
 /**
  *
  * @file
