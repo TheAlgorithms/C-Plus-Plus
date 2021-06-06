@@ -43,7 +43,7 @@ namespace sparse_table {
  * array ST.
  */
 constexpr uint32_t N = 12345;  ///< the maximum size of the array.
-const static uint8_t M = 14;   ///< ceil(log2(N)).
+constexpr uint8_t M = 14;      ///< ceil(log2(N)).
 
 struct Sparse_table {
     size_t n = 0;  ///< size of input array.
@@ -67,7 +67,7 @@ struct Sparse_table {
         LOG[0] = -1;
 
         for (size_t i = 0; i < n; ++i) {
-            ST[0][i] = i;
+            ST[0][i] = static_cast<int64_t>(i);
             LOG[i + 1] = LOG[i] + !(i & (i + 1));
         }
 
