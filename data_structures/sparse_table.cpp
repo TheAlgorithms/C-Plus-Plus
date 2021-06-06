@@ -16,7 +16,7 @@
  * If any element in the array changes, the complete data structure has to be
  * recomputed.
  *
- * @warning this sparse table is made for min(a1,a2,...an) duplicate invariant
+ * @warning this sparse table is made for `min(a1,a2,...an)` duplicate invariant
  * function. This implementation can be changed to other functions like
  * gcd(),lcm(),max() by changing few lines of code.
  */
