@@ -3,7 +3,7 @@
  * @file
  * @brief Implementation of Sparse Table
  *
- * @author [manncodes](https://github.com/manncodes)
+ * @author [Mann Patel](https://github.com/manncodes)
  *
  * @details
  * Sparse Table is a data structure, that allows answering range queries.
