@@ -38,7 +38,7 @@ namespace sparse_table {
 
 /**
  * @brief A struct to represent sparse table for `min()` as their invariant
- * function, for the given array `A`. The answer to queries are stored in array
+ * function, for the given array `A`. The answer to queries are stored in the array
  * ST.
  */
 struct Sparse_table {
