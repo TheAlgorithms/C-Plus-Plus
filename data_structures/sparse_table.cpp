@@ -18,7 +18,7 @@
  *
  * @warning this sparse table is made for `min(a1,a2,...an)` duplicate invariant
  * function. This implementation can be changed to other functions like
- * gcd(),lcm(),max() by changing few lines of code.
+ * `gcd()`, `lcm()`, and `max()` by changing a few lines of code.
  */
 
 /**
