@@ -71,8 +71,8 @@ struct Sparse_table {
             LOG[i + 1] = LOG[i] + !(i & (i + 1));
         }
 
-        for (size_t j = 1; (1 << j) <= n; ++j) {
-            for (size_t i = 0; (i + (1 << j)) <= n; ++i) {
+        for (size_t j = 1; static_cast<size_t>(1 << j) <= n; ++j) {
+            for (size_t i = 0; static_cast<size_t>(i + (1 << j)) <= n; ++i) {
                 int64_t x = ST[j - 1][i];
                 int64_t y = ST[j - 1][i + (1 << (j - 1))];
 
