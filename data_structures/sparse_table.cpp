@@ -42,10 +42,11 @@ namespace sparse_table {
  * function, for the given array `A`. The answer to queries are stored in the
  * array ST.
  */
+const static uint32_t N = 12345;  ///< the maximum size of the array.
+const static uint8_t M = 14;      ///< ceil(log2(N)).
+
 struct Sparse_table {
-    const static uint32_t N = 12345;  ///< the maximum size of the array.
-    const static uint8_t M = 14;      ///< ceil(log2(N)).
-    uint32_t n = 0;                   ///< size of input array.
+    size_t n = 0;  ///< size of input array.
 
     /** @warning check if `N` is not less than `n`. if so, manually increase the
      * value of N */
@@ -65,13 +66,13 @@ struct Sparse_table {
     void buildST() {
         LOG[0] = -1;
 
-        for (uint32_t i = 0; i < n; ++i) {
+        for (size_t i = 0; i < n; ++i) {
             ST[0][i] = i;
             LOG[i + 1] = LOG[i] + !(i & (i + 1));
         }
 
-        for (uint32_t j = 1; (1 << j) <= n; ++j) {
-            for (uint32_t i = 0; (i + (1 << j)) <= n; ++i) {
+        for (size_t j = 1; (1 << j) <= n; ++j) {
+            for (size_t i = 0; (i + (1 << j)) <= n; ++i) {
                 int64_t x = ST[j - 1][i];
                 int64_t y = ST[j - 1][i + (1 << (j - 1))];
 
@@ -89,7 +90,7 @@ struct Sparse_table {
      * @complexity: O(1)
      */
     int64_t query(int64_t l, int64_t r) {
-        int64_t g = LOG[r - l + 1];
+        int64_t g = LOG[r - l + 1];  ///< smallest power of 2 covering [l,r]
         int64_t x = ST[g][l];
         int64_t y = ST[g][r - (1 << g) + 1];
         return (A[x] <= A[y] ? x : y);
@@ -104,7 +105,7 @@ struct Sparse_table {
  */
 static void test() {
     std::array<int64_t, 10> testcase = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    uint32_t testcase_size = sizeof(testcase) / sizeof(testcase[0]);
+    size_t testcase_size = sizeof(testcase) / sizeof(testcase[0]);
 
     data_structures::sparse_table::Sparse_table st{};
 
