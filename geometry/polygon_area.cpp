@@ -119,6 +119,10 @@ void tests() {
 }
 
 /**
- * This is the main function for running the test function
+ * @brief Main function
+ * @returns 0 on exit
  */
-int main() { tests(); }
+int main() {
+    tests();  // run self-test implementations
+    return 0;
+}
