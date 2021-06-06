@@ -1,10 +1,8 @@
 /**
- *
  * @file
- * @brief Implementation of Sparse Table
- *
+ * @brief Implementation of [Sparse
+ * Table](https://brilliant.org/wiki/sparse-table/) for `min()` function.
  * @author [Mann Patel](https://github.com/manncodes)
- *
  * @details
  * Sparse Table is a data structure, that allows answering range queries.
  * It can answer most range queries in O(logn), but its true power is answering
@@ -16,11 +14,12 @@
  * If any element in the array changes, the complete data structure has to be
  * recomputed.
  *
- * @warning this sparse table is made for `min(a1,a2,...an)` duplicate invariant
+ * @warning
+ * This sparse table is made for `min(a1,a2,...an)` duplicate invariant
  * function. This implementation can be changed to other functions like
  * `gcd()`, `lcm()`, and `max()` by changing a few lines of code.
  */
- 
+
 #include <array>     /// for std::array
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
@@ -33,40 +32,34 @@ namespace data_structures {
 
 /**
  * @namespace sparse_table
- * @brief Implementation of Sparse Table for function : min()
- *
+ * @brief sparse table and it's util functions.
  */
 namespace sparse_table {
 
 /**
- * @brief A struct to represent sparse table
- *
+ * @brief A struct to represent sparse table for `min()` as their invariant
+ * function, for the given array `A`. The answer to queries are stored in array
+ * ST.
  */
 struct Sparse_table {
-    // N : the maximum size of the array.
-    // M : ceil(log2(N)).
-    const static int N = 12345, M = 14;
+    const static int N = 12345;  ///< the maximum size of the array.
+    const static int M = 14;     ///< ceil(log2(N)).
+    int n;                       ///< size of input array.
 
-    // The array to compute its sparse table.
-    int n;
-    std::array<int, N> a;
+    /** @warning check if `N` is not less than `n`. if so, manually increase the
+     * value of N */
 
-    //
-    // Sparse table related variables.
-    //
-    // ST[j][i] : the sparse table value (min, max, ...etc) in the interval [i,
-    // i + (2^j) - 1]. LOG[i]   : floor(log2(i)).
-    std::array<std::array<int, N>, M> ST;
-    std::array<int, N> LOG;
+    std::array<int, N> A;  ///< input array to perform RMQ.
+    std::array<std::array<int, N>, M>
+        ST;  ///< the sparse table storing `min()` values for given interval.
+    std::array<int, N> LOG;  ///< where floor(log2(i)) are precomputed.
 
     /**
-     *
-     * Builds the sparse table for computing min/max/gcd/lcm/...etc
-     * for any contiguous sub-segment of the array.
-     *
-     * This is an example of computing the index of the minimum value.
-     *
-     * Complexity: O(n.log(n))
+     * @brief Builds the sparse table for computing min/max/gcd/lcm/...etc
+     * for any contiguous sub-segment of the array.This is an example of
+     * computing the index of the minimum value.
+     * @return void
+     * @complexity: O(n.log(n))
      */
     void buildST() {
         LOG[0] = -1;
@@ -81,16 +74,16 @@ struct Sparse_table {
                 int x = ST[j - 1][i];
                 int y = ST[j - 1][i + (1 << (j - 1))];
 
-                ST[j][i] = (a[x] <= a[y] ? x : y);
+                ST[j][i] = (A[x] <= A[y] ? x : y);
             }
         }
     }
 
     /**
-     * Queries the sparse table for the value of the interval [l, r]
+     * @brief Queries the sparse table for the value of the interval [l, r]
      * (i.e. from l to r inclusive).
      *
-     * Complexity: O(1)
+     * @complexity: O(1)
      *
      * @param l the left index of the range (inclusive).
      * @param r the right index of the range (inclusive).
@@ -101,7 +94,7 @@ struct Sparse_table {
         int g = LOG[r - l + 1];
         int x = ST[g][l];
         int y = ST[g][r - (1 << g) + 1];
-        return (a[x] <= a[y] ? x : y);
+        return (A[x] <= A[y] ? x : y);
     }
 };
 }  // namespace sparse_table
@@ -117,16 +110,16 @@ static void test() {
 
     data_structures::sparse_table::Sparse_table st{};
 
-    // copying testcase to the struct
-    std::copy(std::begin(testcase), std::end(testcase), std::begin(st.a));
+    std::copy(std::begin(testcase), std::end(testcase),
+              std::begin(st.A));  ///< copying testcase to the struct
     st.n = testcase_size;
 
-    // precomputing sparse tree
-    st.buildST();
-    // pass queries of form [l,r]
-    assert(st.query(1, 9) == 1);  // as 1 is smallest from 1..9
-    assert(st.query(2, 6) == 2);  // as 2 is smallest from 2..6
-    assert(st.query(3, 8) == 3);  // as 3 is smallest from 3..8
+    st.buildST();  ///< precomputing sparse tree
+
+    // pass queries of the form: [l,r]
+    assert(st.query(1, 9) == 1);  ///< as 1 is smallest from 1..9
+    assert(st.query(2, 6) == 2);  ///< as 2 is smallest from 2..6
+    assert(st.query(3, 8) == 3);  ///< as 3 is smallest from 3..8
 
     std::cout << "Testcase passed!" << std::endl;
 }
