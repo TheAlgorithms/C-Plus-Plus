@@ -104,7 +104,8 @@ struct Sparse_table {
 }  // namespace data_structures
 
 /**
- * @brief testcase for sparse_table
+ * @brief Self-test implementations
+ * @returns void
  */
 static void test() {
     std::array<int, 10> testcase = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
