@@ -32,7 +32,7 @@ namespace data_structures {
 
 /**
  * @namespace sparse_table
- * @brief sparse table and it's util functions.
+ * @brief Functions for Implementation of [Sparse Table](https://brilliant.org/wiki/sparse-table/)
  */
 namespace sparse_table {
 
