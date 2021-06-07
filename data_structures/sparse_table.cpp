@@ -92,8 +92,8 @@ struct Sparse_table {
                                              ///< the range [j,i + pow(2,j-1)]
 
                 ST[j][i] =
-                    (A[x] <= A[y] ? x
-                                  : y);  ///< minimum value over the range[l,r]
+                    (A[x] <= A[y] ? x : y);  ///< represents minimum value over
+                                             ///< the range [j,i]
             }
         }
     }
