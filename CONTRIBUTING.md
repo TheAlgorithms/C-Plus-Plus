@@ -8,16 +8,16 @@ Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-P
 
 ### Contributor
 
-We are happy that you consider implementing algorithms and data structures for others! This repository is referred to and used by learners from around the globe. Being one of our contributors, you agree and confirm that:
+Being a contributor at The Algorithms, we request you to follow the points mentioned below:
 
 - You did your own work.
   - No plagiarism allowed. Any plagiarized work will not be merged.
-- Your work will be distributed under [MIT License](License) once your pull request has been merged.
+- Your work will be distributed under the [MIT License](License) once your pull request has been merged.
 - Your submitted work fulfills or mostly fulfills our styles and standards.
 
 **New implementation** New implementations are welcome!
 
-**Improving comments** and **adding tests** to existing algorithms are much appreciated.
+You can add new algorithms or data structures which are **not present in the repository** or that can **improve** the old implementations (**documentation**, **improving test cases**, removing bugs or in any other resonable sense)
 
 **Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.
 
@@ -26,7 +26,7 @@ We are happy that you consider implementing algorithms and data structures for o
 #### Code
 
 - Please use the directory structure of the repository.
-- File extension for the code should be `*.hpp`, `*.h` or `*.cpp`.
+- Make sure the file extensions should be `*.hpp`, `*.h` or `*.cpp`.
 - Don't use **`bits/stdc++.h`** because this is quite Linux-specific and slows down the compilation process.
 - Organize your code using **`struct`**, **`class`**, and/or **`namespace`** keywords
 - If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
@@ -41,7 +41,7 @@ We are happy that you consider implementing algorithms and data structures for o
 
 - Make sure you put useful comments in your code. Do not comment on obvious things.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
-- If you have modified/added documentation, please ensure that your language is concise and contains no grammar errors.
+- If you have modified/added documentation, please ensure that your language is concise and must not contain grammatical errors.
 - Do not update [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) along with other changes. First, create an issue and then link to that issue in your pull request to suggest specific changes required to [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md).
 - The repository follows [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and auto-generates the [repository website](https://thealgorithms.github.io/C-Plus-Plus). Please ensure the code is documented in this structure. A sample implementation is given below.
 
