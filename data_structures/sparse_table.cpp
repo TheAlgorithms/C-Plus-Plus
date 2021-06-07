@@ -108,11 +108,14 @@ struct Sparse_table {
      */
     int64_t query(int64_t l, int64_t r) {
         int64_t g = LOG[r - l + 1];  ///< smallest power of 2 covering [l,r]
-        int64_t x = ST[g][l];        ///< minimum value over the range [g,l]
-        int64_t y = ST[g][r - (1 << g) + 1];  ///< minimum value over the
-                                              ///< range [g, r - pow(2,g) + 1]
+        int64_t x = ST[g][l];  ///< represents minimum value over the range
+                               ///< [g,l]
+        int64_t y =
+            ST[g][r - (1 << g) + 1];  ///< represents minimum value over the
+                                      ///< range [g, r - pow(2,g) + 1]
 
-        return (A[x] <= A[y] ? x : y);  ///< minimum over the whole range [l,r]
+        return (A[x] <= A[y] ? x : y);  ///< represents minimum value over
+                                        ///< the whole range [l,r]
     }
 };
 }  // namespace sparse_table
