@@ -52,8 +52,7 @@ struct Sparse_table {
      * value of N */
 
     std::array<int64_t, N> A = {};  ///< input array to perform RMQ.
-    std::array<std::array<int64_t, N>, M> ST =
-        {};  ///< the sparse table storing `min()` values for given interval.
+    std::array<std::array<int64_t, N>, M> ST{};  ///< the sparse table storing `min()` values for given interval.
     std::array<int64_t, N> LOG = {};  ///< where floor(log2(i)) are precomputed.
 
     /**
