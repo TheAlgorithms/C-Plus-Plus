@@ -14,6 +14,8 @@
  * If any element in the array changes, the complete data structure has to be
  * recomputed.
  *
+ * @todo make stress tests.
+ *
  * @warning
  * This sparse table is made for `min(a1,a2,...an)` duplicate invariant
  * function. This implementation can be changed to other functions like
@@ -52,7 +54,8 @@ struct Sparse_table {
      * value of N */
 
     std::array<int64_t, N> A = {};  ///< input array to perform RMQ.
-    std::array<std::array<int64_t, N>, M> ST{};  ///< the sparse table storing `min()` values for given interval.
+    std::array<std::array<int64_t, N>, M>
+        ST{};  ///< the sparse table storing `min()` values for given interval.
     std::array<int64_t, N> LOG = {};  ///< where floor(log2(i)) are precomputed.
 
     /**
@@ -67,15 +70,30 @@ struct Sparse_table {
 
         for (size_t i = 0; i < n; ++i) {
             ST[0][i] = static_cast<int64_t>(i);
-            LOG[i + 1] = LOG[i] + !(i & (i + 1));
+            LOG[i + 1] = LOG[i] + !(i & (i + 1));  ///< precomputing `log2(i+1)`
         }
 
         for (size_t j = 1; static_cast<size_t>(1 << j) <= n; ++j) {
             for (size_t i = 0; static_cast<size_t>(i + (1 << j)) <= n; ++i) {
-                int64_t x = ST[j - 1][i];
-                int64_t y = ST[j - 1][i + (1 << (j - 1))];
+                /**
+                 * @note notice how we deal with the range of length `pow(2,i)`,
+                 * and we can reuse the computation that we did for the range of
+                 * length `pow(2,i-1)`.
+                 *
+                 * So, ST[j][i] = min( ST[j-1][i], ST[j-1][i + pow(2,j-1)]).
+                 * @example ST[2][3] = min(ST[1][3], ST[1][5])
+                 */
 
-                ST[j][i] = (A[x] <= A[y] ? x : y);
+                int64_t x = ST[j - 1][i];  ///< represents minimum value over
+                                           ///< the range [j,i]
+                int64_t y =
+                    ST[j - 1]
+                      [i + (1 << (j - 1))];  ///< represents minimum value over
+                                             ///< the range [j,i + pow(2,j-1)]
+
+                ST[j][i] =
+                    (A[x] <= A[y] ? x
+                                  : y);  ///< minimum value over the range[l,r]
             }
         }
     }
@@ -90,9 +108,11 @@ struct Sparse_table {
      */
     int64_t query(int64_t l, int64_t r) {
         int64_t g = LOG[r - l + 1];  ///< smallest power of 2 covering [l,r]
-        int64_t x = ST[g][l];
-        int64_t y = ST[g][r - (1 << g) + 1];
-        return (A[x] <= A[y] ? x : y);
+        int64_t x = ST[g][l];        ///< minimum value over the range [g,l]
+        int64_t y = ST[g][r - (1 << g) + 1];  ///< minimum value over the
+                                              ///< range [g, r - pow(2,g) + 1]
+
+        return (A[x] <= A[y] ? x : y);  ///< minimum over the whole range [l,r]
     }
 };
 }  // namespace sparse_table
@@ -103,14 +123,21 @@ struct Sparse_table {
  * @returns void
  */
 static void test() {
-    std::array<int64_t, 10> testcase = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    size_t testcase_size = sizeof(testcase) / sizeof(testcase[0]);
+    /* We take an array as an input on which we need to perform the ranged
+     * minimum queries[RMQ](https://en.wikipedia.org/wiki/Range_minimum_query).
+     */
+    std::array<int64_t, 10> testcase = {
+        1, 2, 3, 4, 5,
+        6, 7, 8, 9, 10};  ///< array on which RMQ will be performed.
+    size_t testcase_size =
+        sizeof(testcase) / sizeof(testcase[0]);  ///< size of self test's array
 
-    data_structures::sparse_table::Sparse_table st{};
+    data_structures::sparse_table::Sparse_table
+        st{};  ///< declaring sparse tree
 
     std::copy(std::begin(testcase), std::end(testcase),
-              std::begin(st.A));  ///< copying testcase to the struct
-    st.n = testcase_size;
+              std::begin(st.A));  ///< copying array to the struct
+    st.n = testcase_size;         ///< passing the array's size to the struct
 
     st.buildST();  ///< precomputing sparse tree
 
