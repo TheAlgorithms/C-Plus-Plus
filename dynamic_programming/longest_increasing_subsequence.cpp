@@ -11,10 +11,16 @@
  * @author [David Leal](https://github.com/Panquesito7)
  */
 
+#include <cassert>     /// for assert
 #include <iostream>    /// for IO operations
 #include <climits>     /// for std::max
 #include <vector>      /// for std::vector
 
+/**
+ * @namespace dynamic_programming
+ * @brief Dynamic Programming algorithms
+ */
+namespace dynamic_programming {
 /**
  * @brief Calculate the longest increasing subsequence for the specified numbers
  * @param a the array used to calculate the longest increasing subsequence
@@ -22,7 +28,7 @@
  * @returns the length of the longest increasing
  * subsequence in the `a` array of size `n`
  */
-int LIS(const std::vector<uint64_t> &a, const uint32_t &n) {
+uint64_t LIS(const std::vector<uint64_t> &a, const uint32_t &n) {
     std::vector<int> lis(n);
     for (int i = 0; i < n; ++i) {
         lis[i] = 1;
@@ -38,6 +44,21 @@ int LIS(const std::vector<uint64_t> &a, const uint32_t &n) {
         res = std::max(res, lis[i]);
     }
     return res;
+}
+}  // namespace dynamic_programming
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test(){
+    std::vector<uint64_t> a = {15,21,2,3,4,5,8,4,1,1};
+    uint32_t n  = a.size();
+
+    uint32_t result = dynamic_programming::LIS(a, n);
+    assert(result == 5);  ///< The longest increasing subsequence is `{2,3,4,5,8}`
+
+    std::cout << "Self-test implementations passed!" << std::endl;
 }
 
 /**
@@ -59,6 +80,8 @@ int main(int argc, char const *argv[]) {
         std::cin >> a[i];
     }
 
-    std::cout << "The result is: " << LIS(a, n) << std::endl;
+    std::cout << "\nThe result is: " << dynamic_programming::LIS(a, n) << std::endl;
+    test();  // run self-test implementations
+
     return 0;
 }
