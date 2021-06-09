@@ -5,7 +5,7 @@
  * @author [Motasim](https://github.com/motasimmakki)
  * @details
  * 
- * ->Iterative Preorder Traversal of a tree<-
+ * ###Iterative Preorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current, and pop and elemnt from the stack.
@@ -14,7 +14,7 @@
  * Repeat the same set of steps untill the Stack becomes empty.
  * And return the result array as the preorder traversal of a tree.
  * 
- * ->Iterative Postorder Traversal of a tree<-
+ * ###Iterative Postorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current, and pop and elemnt from the stack.
@@ -23,7 +23,7 @@
  * Repeat the same set of steps untill the Stack becomes empty.
  * Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.
  * 
- * ->Iterative Inorder Traversal of a tree<-
+ * ###Iterative Inorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current.
@@ -34,9 +34,10 @@
  * And return the result array as the inorder traversal of a tree.
  */
 #include<iostream> // For I/O operations.
-#include<stdlib.h> // For maloc function.
-#include<bits/stdc++.h> // For stack and vector.
-using namespace std; // for using namespace std.
+#include<cstdlib> // For malloc function.
+#include<stack> // For using stack.
+#include<vector> // For using vector.
+#include<algorithm> // For using reverse function.
 
 // struct that defines the structure of the node of a tree.
 struct BinaryTree
@@ -55,11 +56,15 @@ BT * createNewNode(int data){
 	return node;
 }
 
-// preOrderIterative() function that will perform the preorder traversal iteratively,
-// and return the result array that contain the preorder traversal of a tree.
-vector<int> preOrderIterative(BT* root){   
-    stack<BT*> stack;
-    vector<int> result;
+/**
+ * @brief preOrderIterative() function that will perform the preorder traversal iteratively,
+ * and return the result array that contain the preorder traversal of a tree.
+ * @param root head/root node of a tree.
+ * @return result that is containing the preorder traversal of a tree.
+ */
+std::vector<int> preOrderIterative(BT* root){   
+    std::stack<BT*> stack;
+    std::vector<int> result;
     
     stack.push(root);
     
@@ -77,11 +82,15 @@ vector<int> preOrderIterative(BT* root){
     return result;
 }
 
-// postOrderIterative() function that will perform the postorder traversal iteratively,
-// and return the result array that contain the postorder traversal of a tree.
-vector<int> postOrderIterative(BT* root){   
-    stack<BT*> stack;
-    vector<int> result;
+/**
+ * @brief postOrderIterative() function that will perform the postorder traversal iteratively,
+ * and return the result array that contain the postorder traversal of a tree.
+ * @param root head/root node of a tree.
+ * @return result that is containing the postorder traversal of a tree.
+ */
+std::vector<int> postOrderIterative(BT* root){   
+    std::stack<BT*> stack;
+    std::vector<int> result;
     
     stack.push(root);
     
@@ -101,11 +110,15 @@ vector<int> postOrderIterative(BT* root){
     return result;
 }
 
-// inOrderIterative() function that will perform the inorder traversal iteratively,
-// and return the result array that contain the inorder traversal of a tree.
-vector<int> inOrderIterative(BT* root) {
-        stack<BT*> stack;
-        vector<int> result;
+/**
+ * @brief inOrderIterative() function that will perform the inorder traversal iteratively,
+ * and return the result array that contain the inorder traversal of a tree.
+ * @param root head/root node of a tree.
+ * @return result that is containing the inorder traversal of a tree.
+ */
+std::vector<int> inOrderIterative(BT* root) {
+        std::stack<BT*> stack;
+        std::vector<int> result;
     
         BT* current = root;
         
@@ -141,24 +154,24 @@ int main(){
 
     // Calling preOrderIterative() function and passing a root node,
     // and printing its preorder traversal.
-    vector<int> result = preOrderIterative(root);
-    cout<< "\nPreOrder Traversal Is : "<< endl;
+    std::vector<int> result = preOrderIterative(root);
+    std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
     for(int i = 0; i < result.size(); i++)
-        cout<< result[i]<< "  ";
+        std::cout<< result[i]<< "  ";
     
     // Calling postOrderIterative() function and passing a root node,
     // and printing its postorder traversal.
     result = postOrderIterative(root);
-    cout<< "\nPostOrder Traversal Is : "<< endl;
+    std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
     for(int i = 0; i < result.size(); i++)
-        cout<< result[i]<< "  ";
+        std::cout<< result[i]<< "  ";
     
     // Calling inOrderIterative() function and passing a root node,
     // and printing its inorder traversal.
     result = inOrderIterative(root);
-    cout<< "\nInOrder Traversal Is : "<< endl;
+    std::cout<< "\nInOrder Traversal Is : "<< std::endl;
     for(int i = 0; i < result.size(); i++)
-        cout<< result[i]<< "  ";
+        std::cout<< result[i]<< "  ";
 
     // End of main() funtion.
     return 0;
