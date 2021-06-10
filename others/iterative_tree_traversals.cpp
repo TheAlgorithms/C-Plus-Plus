@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Iterative version of Preorder, Postorder and preorder traversal of tree,
- *  (https://en.wikipedia.org/wiki/Tree_traversal).
+ (https://en.wikipedia.org/wiki/Tree_traversal).
  * @author [Motasim](https://github.com/motasimmakki)
  * @details
  * 
@@ -156,22 +156,22 @@ int main(){
     // and printing its preorder traversal.
     std::vector<int> result = preOrderIterative(root);
     std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
-    for(int i = 0; i < result.size(); i++)
-        std::cout<< result[i]<< "  ";
+    for(auto i: result)
+        std::cout<< i<< "  ";
     
     // Calling postOrderIterative() function and passing a root node,
     // and printing its postorder traversal.
     result = postOrderIterative(root);
     std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
-    for(int i = 0; i < result.size(); i++)
-        std::cout<< result[i]<< "  ";
+    for(auto i: result)
+        std::cout<< i<< "  ";
     
     // Calling inOrderIterative() function and passing a root node,
     // and printing its inorder traversal.
     result = inOrderIterative(root);
     std::cout<< "\nInOrder Traversal Is : "<< std::endl;
-    for(int i = 0; i < result.size(); i++)
-        std::cout<< result[i]<< "  ";
+    for(auto i: result)
+        std::cout<< i<< "  ";
 
     // End of main() funtion.
     return 0;
