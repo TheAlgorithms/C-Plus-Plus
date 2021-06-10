@@ -23,7 +23,7 @@
  * Repeat the same set of steps untill the Stack becomes empty.
  * Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.
  * 
- * ###Iterative Inorder Traversal of a tree
+ * ### Iterative Inorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current.
