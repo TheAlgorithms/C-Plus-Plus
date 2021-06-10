@@ -30,7 +30,7 @@
  * Now iterate and take the current to the extreme left of the tree by traversing only to its left.
  * Pop the elemnt from the stack and assign it to the current.
  * Store the data of current into the result array.
- * Repeat the same set of steps untill the Stack becomes empty or the current becames NULL.
+ * Repeat the same set of steps until the Stack becomes empty or the current becomes NULL.
  * And return the result array as the inorder traversal of a tree.
  */
 #include<iostream> // For I/O operations.
