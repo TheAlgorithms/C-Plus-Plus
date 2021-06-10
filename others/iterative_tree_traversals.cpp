@@ -52,7 +52,7 @@ struct BinaryTree
 BT * createNewNode(int data){
 	BT *node = (BT*) malloc(sizeof(BT));
 	node->data = data;
-	node->left = node->right = NULL;
+	node->left = node->right = nullptr;
 	return node;
 }
 
