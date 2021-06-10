@@ -33,11 +33,11 @@
  * Repeat the same set of steps until the Stack becomes empty or the current becomes NULL.
  * And return the result array as the inorder traversal of a tree.
  */
-#include<iostream> // For I/O operations.
-#include<cstdlib> // For malloc function.
-#include<stack> // For using stack.
-#include<vector> // For using vector.
-#include<algorithm> // For using reverse function.
+#include <iostream>     /// for I/O operations
+#include <cstdlib>     /// for `malloc`
+#include <stack>       /// for `stack`
+#include <vector>     /// for `vector`
+#include <algorithm>  /// for `reverse`
 
 // struct that defines the structure of the node of a tree.
 struct BinaryTree
