@@ -49,8 +49,8 @@ struct BinaryTree
 
 // createNewNode() function that will allocate the memory for a node and,
 // along the data and return the node.
-BT * createNewNode(int data){
-	BT *node = (BT*) malloc(sizeof(BT));
+BT* createNewNode(int data){
+	BT* node = static_cast<BT*>(malloc(sizeof(BT)));
 	node->data = data;
 	node->left = node->right = nullptr;
 	return node;
@@ -73,10 +73,12 @@ std::vector<int> preOrderIterative(BT* root){
         BT* current = stack.top();
         stack.pop();
         
-        if(current->right)
+        if(current->right){
             stack.push(current->right);
-        if(current->left)
+        }
+        if(current->left){
             stack.push(current->left);
+        }
     }
     
     return result;
@@ -99,10 +101,12 @@ std::vector<int> postOrderIterative(BT* root){
         BT* current = stack.top();
         stack.pop();
         
-        if(current->left)
+        if(current->left){
             stack.push(current->left);
-        if(current->right)
+        }
+        if(current->right){
             stack.push(current->right);
+        }
     }
 
     reverse(result.begin(), result.end());
@@ -146,7 +150,7 @@ int main(){
          /   \
         4     5
     */
-    BT *root = createNewNode(1);
+    BT* root = createNewNode(1);
 	root->left=createNewNode(2);
 	root->right=createNewNode(3);
 	root->left->left=createNewNode(4);
@@ -156,22 +160,25 @@ int main(){
     // and printing its preorder traversal.
     std::vector<int> result = preOrderIterative(root);
     std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
-    for(auto i: result)
+    for(auto i: result){
         std::cout<< i<< "  ";
+    }
     
     // Calling postOrderIterative() function and passing a root node,
     // and printing its postorder traversal.
     result = postOrderIterative(root);
     std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
-    for(auto i: result)
+    for(auto i: result){
         std::cout<< i<< "  ";
+    }
     
     // Calling inOrderIterative() function and passing a root node,
     // and printing its inorder traversal.
     result = inOrderIterative(root);
     std::cout<< "\nInOrder Traversal Is : "<< std::endl;
-    for(auto i: result)
+    for(auto i: result){
         std::cout<< i<< "  ";
+    }
 
     // End of main() funtion.
     return 0;
