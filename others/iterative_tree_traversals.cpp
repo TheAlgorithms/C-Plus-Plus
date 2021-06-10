@@ -14,7 +14,7 @@
  * Repeat the same set of steps untill the Stack becomes empty.
  * And return the result array as the preorder traversal of a tree.
  * 
- * ###Iterative Postorder Traversal of a tree
+ * ### Iterative Postorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current, and pop and elemnt from the stack.
