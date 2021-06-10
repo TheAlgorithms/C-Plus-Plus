@@ -5,7 +5,7 @@
  * @author [Motasim](https://github.com/motasimmakki)
  * @details
  * 
- * ###Iterative Preorder Traversal of a tree
+ * ### Iterative Preorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
  * Push the root node into the stack.
  * Save the root into the variabe named as current, and pop and elemnt from the stack.
