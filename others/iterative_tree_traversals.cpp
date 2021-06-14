@@ -40,17 +40,16 @@
 #include <algorithm>  /// for `reverse`
 
 // struct that defines the structure of the node of a tree.
-struct BinaryTree
-{
-	int data;
-	struct BinaryTree *left;
-	struct BinaryTree *right;
-}typedef BT;
+using Node = struct BinaryTree{
+    int data;
+    struct BinaryTree *left;
+    struct BinaryTree *right;
+};
 
 // createNewNode() function that will allocate the memory for a node and,
 // along the data and return the node.
-BT *createNewNode(int data){
-	BT *node = static_cast<BT *>(malloc(sizeof(BT)));
+Node *createNewNode(int data){
+	Node *node = static_cast<Node *>(malloc(sizeof(Node)));
 	node->data = data;
 	node->left = node->right = nullptr;
 	return node;
@@ -62,15 +61,15 @@ BT *createNewNode(int data){
  * @param root head/root node of a tree.
  * @return result that is containing the preorder traversal of a tree.
  */
-std::vector<int> preOrderIterative(BT *root){   
-    std::stack<BT *> stack;
+std::vector<int> preOrderIterative(Node *root){   
+    std::stack<Node *> stack;
     std::vector<int> result;
     
     stack.push(root);
     
     while(!stack.empty()){
         result.push_back(stack.top()->data);
-        BT *current = stack.top();
+        Node *current = stack.top();
         stack.pop();
         
         if(current->right){
@@ -90,15 +89,15 @@ std::vector<int> preOrderIterative(BT *root){
  * @param root head/root node of a tree.
  * @return result that is containing the postorder traversal of a tree.
  */
-std::vector<int> postOrderIterative(BT *root){   
-    std::stack<BT *> stack;
+std::vector<int> postOrderIterative(Node *root){   
+    std::stack<Node *> stack;
     std::vector<int> result;
     
     stack.push(root);
     
     while(!stack.empty()){
         result.push_back(stack.top()->data);
-        BT *current = stack.top();
+        Node *current = stack.top();
         stack.pop();
         
         if(current->left){
@@ -120,11 +119,11 @@ std::vector<int> postOrderIterative(BT *root){
  * @param root head/root node of a tree.
  * @return result that is containing the inorder traversal of a tree.
  */
-std::vector<int> inOrderIterative(BT *root) {
-        std::stack<BT *> stack;
+std::vector<int> inOrderIterative(Node *root) {
+        std::stack<Node *> stack;
         std::vector<int> result;
     
-        BT *current = root;
+        Node *current = root;
         
         while(!stack.empty() || current){
             while(current){
@@ -150,7 +149,7 @@ int main(){
          /   \
         4     5
     */
-    BT *root = createNewNode(1);
+    Node *root = createNewNode(1);
 	root->left=createNewNode(2);
 	root->right=createNewNode(3);
 	root->left->left=createNewNode(4);
