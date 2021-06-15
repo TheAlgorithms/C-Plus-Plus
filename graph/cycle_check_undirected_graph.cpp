@@ -1,13 +1,14 @@
 /**
  * @file cycle_check_undirected graph.cpp
  *
- * @brief  Disjoint Set (Or Union-Find) algorithm to check for cycle in a undirected graph.
+ * @brief  [Disjoint Set (Or Union-Find) algorithm](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) check for cycle in a undirected graph.
  *
- * @author [Ashish Jha](mailto:b.ashishjha13@gmail.com)
+ * @author [Ashish Jha](mailto:b.ashishjha13@gmail.com) 
+ * 
  *
  */
 
-#include <iostream> // for std::cout
+#include <iostream> // for std::IO operations
 #include <utility>  // for std::pair
 #include <vector>   // for std::vector
 
@@ -96,8 +97,10 @@ public:
 };
 
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
+
 int main()
 {
       // Initialise parent of every node to -1.
