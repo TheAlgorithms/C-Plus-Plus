@@ -49,7 +49,7 @@ using Node = struct BinaryTree{
 // createNewNode() function that will allocate the memory for a node and,
 // along the data and return the node.
 Node *createNewNode(int data){
-	struct BinaryTree* node = (struct BinaryTree*) malloc(sizeof(struct BinaryTree));
+	auto node = static_cast<struct BinaryTree*>(malloc(sizeof(struct BinaryTree)));
 	node->data = data;
 	node->left = node->right = nullptr;
 	return node;
