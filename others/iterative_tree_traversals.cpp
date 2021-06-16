@@ -34,16 +34,28 @@
  * And return the result array as the inorder traversal of a tree.
  */
 #include <iostream>   /// for I/O operations
-#include <cstdlib>    /// for `malloc`
 #include <stack>      /// for `stack`
 #include <vector>     /// for `vector`
 #include <algorithm>  /// for `reverse`
 
-// struct that defines the structure of the node of a tree.
-using Node = struct BinaryTree{
+/*
+ * @brief defines the structure of a node of the tree.
+ */
+struct Node{
     int data;
-    struct BinaryTree *left;
-    struct BinaryTree *right;
+    struct Node *left;
+    struct Node *right;
+};
+
+/*
+ * @brief defines the functions associated with the binary tree.
+ */
+class BinaryTree{
+    public:
+        Node *createNewNode(int);
+        std::vector<int> preOrderIterative(Node *);
+        std::vector<int> postOrderIterative(Node *);
+        std::vector<int> inOrderIterative(Node *);
 };
 
 /**
@@ -51,11 +63,11 @@ using Node = struct BinaryTree{
  * @param data 
  * @return pointer to the newly created node with assigned data. 
  */
-Node *createNewNode(int data){
-	auto node = static_cast<struct BinaryTree*>(malloc(sizeof(struct BinaryTree)));
-	node->data = data;
-	node->left = node->right = nullptr;
-	return node;
+Node *  BinaryTree::createNewNode(int data){
+    Node *node = new Node();
+    node->data = data;
+    node->left = node->right = nullptr;
+    return node;
 }
 
 /**
@@ -64,7 +76,7 @@ Node *createNewNode(int data){
  * @param root head/root node of a tree.
  * @return result that is containing the preorder traversal of a tree.
  */
-std::vector<int> preOrderIterative(Node *root){   
+std::vector<int> BinaryTree::preOrderIterative(Node *root){   
     std::stack<Node *> stack;
     std::vector<int> result;
     
@@ -92,7 +104,7 @@ std::vector<int> preOrderIterative(Node *root){
  * @param root head/root node of a tree.
  * @return result that is containing the postorder traversal of a tree.
  */
-std::vector<int> postOrderIterative(Node *root){   
+std::vector<int> BinaryTree::postOrderIterative(Node *root){   
     std::stack<Node *> stack;
     std::vector<int> result;
     
@@ -122,7 +134,7 @@ std::vector<int> postOrderIterative(Node *root){
  * @param root head/root node of a tree.
  * @return result that is containing the inorder traversal of a tree.
  */
-std::vector<int> inOrderIterative(Node *root) {
+std::vector<int> BinaryTree::inOrderIterative(Node *root){
         std::stack<Node *> stack;
         std::vector<int> result;
     
@@ -152,15 +164,17 @@ int main(){
          /   \
         4     5
     */
-    Node *root = createNewNode(1);
-	root->left=createNewNode(2);
-	root->right=createNewNode(3);
-	root->left->left=createNewNode(4);
-	root->left->right=createNewNode(5);
+
+    BinaryTree binaryTree;
+    Node *root = binaryTree.createNewNode(1);
+    root->left = binaryTree.createNewNode(2);
+    root->right = binaryTree.createNewNode(3);
+    root->left->left = binaryTree.createNewNode(4);
+    root->left->right = binaryTree.createNewNode(5);
 
     // Calling preOrderIterative() function and passing a root node,
     // and printing its preorder traversal.
-    std::vector<int> result = preOrderIterative(root);
+    std::vector<int> result = binaryTree.preOrderIterative(root);
     std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
     for(auto i: result){
         std::cout<< i<< "  ";
@@ -168,7 +182,7 @@ int main(){
     
     // Calling postOrderIterative() function and passing a root node,
     // and printing its postorder traversal.
-    result = postOrderIterative(root);
+    result = binaryTree.postOrderIterative(root);
     std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
     for(auto i: result){
         std::cout<< i<< "  ";
@@ -176,7 +190,7 @@ int main(){
     
     // Calling inOrderIterative() function and passing a root node,
     // and printing its inorder traversal.
-    result = inOrderIterative(root);
+    result = binaryTree.inOrderIterative(root);
     std::cout<< "\nInOrder Traversal Is : "<< std::endl;
     for(auto i: result){
         std::cout<< i<< "  ";
