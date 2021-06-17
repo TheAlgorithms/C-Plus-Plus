@@ -60,8 +60,8 @@ class BinaryTree {
 
 /**
  * @brief will allocate the memory for a node and, along the data and return the node.
- * @param data 
- * @return pointer to the newly created node with assigned data. 
+ * @param data that a particular node stores in it
+ * @return pointer to the newly created node with assigned data 
  */
 Node *  BinaryTree::createNewNode(int data){
     Node *node = new Node();
@@ -101,8 +101,8 @@ std::vector<int> BinaryTree::preOrderIterative(Node *root){
 /**
  * @brief postOrderIterative() function that will perform the postorder traversal iteratively,
  * and return the result array that contain the postorder traversal of a tree.
- * @param root head/root node of a tree.
- * @return result that is containing the postorder traversal of a tree.
+ * @param root head/root node of a tree
+ * @return result that is containing the postorder traversal of a tree
  */
 std::vector<int> BinaryTree::postOrderIterative(Node *root){   
     std::stack<Node *> stack;
@@ -131,8 +131,8 @@ std::vector<int> BinaryTree::postOrderIterative(Node *root){
 /**
  * @brief inOrderIterative() function that will perform the inorder traversal iteratively,
  * and return the result array that contain the inorder traversal of a tree.
- * @param root head/root node of a tree.
- * @return result that is containing the inorder traversal of a tree.
+ * @param root head/root node of a tree
+ * @return result that is containing the inorder traversal of a tree
  */
 std::vector<int> BinaryTree::inOrderIterative(Node *root){
         std::stack<Node *> stack;
