@@ -198,6 +198,5 @@ int main(){
         std::cout<< i<< "  ";
     }
 
-    // End of main() funtion.
     return 0;
 }
