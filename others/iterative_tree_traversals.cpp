@@ -153,8 +153,10 @@ std::vector<int> BinaryTree::inOrderIterative(Node *root){
         return result;
     }
 
-// main() function or the driver function.
-// @returns 0 on exit.
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main(){
     // Creating a tree with the following structure,
     /* 
