@@ -73,7 +73,7 @@ Node *  BinaryTree::createNewNode(int data){
 /**
  * @brief preOrderIterative() function that will perform the preorder traversal iteratively,
  * and return the result array that contain the preorder traversal of a tree.
- * @param root head/root node of a tree.
+ * @param root head/root node of the tree
  * @return result that is containing the preorder traversal of a tree.
  */
 std::vector<int> BinaryTree::preOrderIterative(Node *root){   
