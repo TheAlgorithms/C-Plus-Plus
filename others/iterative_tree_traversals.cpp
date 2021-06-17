@@ -77,8 +77,9 @@ Node *  BinaryTree::createNewNode(int data){
  * @return result that is containing the preorder traversal of a tree
  */
 std::vector<int> BinaryTree::preOrderIterative(Node *root){   
-    std::stack<Node *> stack;
-    std::vector<int> result;
+    std::stack<Node *> stack;  ///< is used to find and traverse the child nodes
+    std::vector<int> result;  ///< list of values, sorted in post-order.
+
     
     stack.push(root);
     
