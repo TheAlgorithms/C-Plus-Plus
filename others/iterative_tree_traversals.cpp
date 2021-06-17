@@ -39,7 +39,7 @@
 #include <algorithm>  /// for `reverse`
 
 /*
- * @brief defines the structure of a node of the tree.
+ * @brief defines the structure of a node of the tree
  */
 struct Node{
     int data;
