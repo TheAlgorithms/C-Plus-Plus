@@ -42,7 +42,7 @@
  * @brief defines the structure of a node of the tree
  */
 struct Node {
-    int data;
+    int data = 0;
     struct Node *left;
     struct Node *right;
 };
