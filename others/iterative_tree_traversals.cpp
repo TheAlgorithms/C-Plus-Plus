@@ -136,8 +136,9 @@ std::vector<int> BinaryTree::postOrderIterative(Node *root){
  * @return result that is containing the inorder traversal of a tree
  */
 std::vector<int> BinaryTree::inOrderIterative(Node *root){
-        std::stack<Node *> stack;
-        std::vector<int> result;
+        std::stack<Node *> stack;  ///< is used to find and traverse the child nodes.
+        std::vector<int> result;  ///< List of values, sorted in in-order.
+
     
         Node *current = root;
         
