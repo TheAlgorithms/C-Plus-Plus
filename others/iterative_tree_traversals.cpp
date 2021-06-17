@@ -50,7 +50,7 @@ struct Node {
 /*
  * @brief defines the functions associated with the binary tree
  */
-class BinaryTree{
+class BinaryTree {
     public:
         Node *createNewNode(int);
         std::vector<int> preOrderIterative(Node *);
