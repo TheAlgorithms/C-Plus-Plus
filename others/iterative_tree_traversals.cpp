@@ -42,9 +42,9 @@
  * @brief defines the structure of a node of the tree
  */
 struct Node {
-    int data = 0;
-    struct Node *left;
-    struct Node *right;
+    int data = 0;  ///< The value/key of the node.
+    struct Node *left;  ///< struct pointer to left subtree.
+    struct Node *right;  ///< struct pointer to right subtree.
 };
 
 /*
