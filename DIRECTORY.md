@@ -297,6 +297,7 @@
   * [Quick Sort 3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort_3.cpp)
   * [Radix Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort.cpp)
   * [Radix Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort2.cpp)
+  * [Random Pivot Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/random_pivot_quick_sort.cpp)
   * [Recursive Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/recursive_bubble_sort.cpp)
   * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort.cpp)
