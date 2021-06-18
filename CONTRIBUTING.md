@@ -2,7 +2,7 @@
 
 ## Before contributing
 
-Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose) and clearly state your concerns.
+Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose) or ask in our [Discord server](https://discord.gg/c7MnfGFGa6), and clearly state your concerns.
 
 ## Contributing
 
@@ -12,8 +12,8 @@ Being a contributor at The Algorithms, we request you to follow the points menti
 
 - You did your own work.
   - No plagiarism allowed. Any plagiarized work will not be merged.
-- Your work will be distributed under the [MIT License](License) once your pull request has been merged.
-- Your submitted work fulfills or mostly fulfills our styles and standards.
+- Your work will be distributed under the [MIT License](https://github.com/TheAlgoritms/C-Plus-Plus/blob/master/LICENSE) once your pull request has been merged.
+- Please follow the repository guidelines and standards mentioned below.
 
 **New implementation** New implementations are welcome!
 
