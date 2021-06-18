@@ -436,11 +436,11 @@ template&lt;size_t N&gt; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            avg_pred_error = 0.f;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">// perform fit for each sample</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordtype">double</span> err = <a class="code" href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">fit</a>(X[i], Y[i]);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                avg_pred_error += std::abs(err);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            avg_pred_error /= N;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            avg_pred_error /= <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">// Print updates every 200th iteration</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="comment">// if (iter % 100 == 0)</span></div>
@@ -457,6 +457,7 @@ template&lt;size_t N&gt; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
 <div class="ttc" id="aclassmachine__learning_1_1adaline_html_a74e3c6c037b67895014414c5d75465e5"><div class="ttname"><a href="../../d6/d30/classmachine__learning_1_1adaline.html#a74e3c6c037b67895014414c5d75465e5">machine_learning::adaline::fit</a></div><div class="ttdeci">double fit(const std::vector&lt; double &gt; &amp;x, const int &amp;y)</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:119</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="agroup__machine__learning_html_ga5118e5cbc4f0886e27b3a7a2544dded1"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#ga5118e5cbc4f0886e27b3a7a2544dded1">MAX_ITER</a></div><div class="ttdeci">constexpr int MAX_ITER</div><div class="ttdef"><b>Definition:</b> adaline_learning.cpp:40</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

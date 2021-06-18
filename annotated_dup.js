@@ -1,6 +1,9 @@
 var annotated_dup =
 [
     [ "ciphers", "d6/d4e/namespaceciphers.html", [
+      [ "elliptic_curve_key_exchange", "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html", [
+        [ "Point", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point" ]
+      ] ],
       [ "HillCipher", "d6/d26/classciphers_1_1_hill_cipher.html", "d6/d26/classciphers_1_1_hill_cipher" ]
     ] ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", [
@@ -14,9 +17,15 @@ var annotated_dup =
       [ "queue_using_array", null, [
         [ "Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array" ]
       ] ],
+      [ "sparse_table", null, [
+        [ "Sparse_table", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table" ]
+      ] ],
       [ "tree_234", null, [
         [ "Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", "dd/d40/classdata__structures_1_1tree__234_1_1_node" ],
         [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234" ]
+      ] ],
+      [ "trie_using_hashmap", null, [
+        [ "Trie", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie" ]
       ] ],
       [ "Node", "d9/d49/structdata__structures_1_1_node.html", "d9/d49/structdata__structures_1_1_node" ],
       [ "SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", "d4/d90/classdata__structures_1_1_skip_list" ],
@@ -44,6 +53,10 @@ var annotated_dup =
       [ "Entry", "db/d19/structlinear__probing_1_1_entry.html", "db/d19/structlinear__probing_1_1_entry" ]
     ] ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", [
+      [ "aystar_search", null, [
+        [ "EightPuzzle", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle" ],
+        [ "AyStarSearch", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search" ]
+      ] ],
       [ "neural_network", null, [
         [ "layers", null, [
           [ "DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer" ]
@@ -82,6 +95,14 @@ var annotated_dup =
       [ "stats_computer1", "d7/d7c/classstatistics_1_1stats__computer1.html", "d7/d7c/classstatistics_1_1stats__computer1" ],
       [ "stats_computer2", "d8/dab/classstatistics_1_1stats__computer2.html", "d8/dab/classstatistics_1_1stats__computer2" ]
     ] ],
+    [ "std", "d8/dcc/namespacestd.html", [
+      [ "is_integral< uint128_t >", "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html", null ],
+      [ "is_arithmetic< uint128_t >", "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html", null ],
+      [ "is_unsigned< uint128_t >", "d5/d25/structstd_1_1is__unsigned_3_01uint128__t_01_4.html", null ],
+      [ "is_integral< uint256_t >", "d7/d47/structstd_1_1is__integral_3_01uint256__t_01_4.html", null ],
+      [ "is_arithmetic< uint256_t >", "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html", null ],
+      [ "is_unsigned< uint256_t >", "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html", null ]
+    ] ],
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", "d9/d90/struct_btree" ],
     [ "cll", "d5/d15/classcll.html", "d5/d15/classcll" ],
@@ -104,13 +125,15 @@ var annotated_dup =
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
+    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "RBtree", "d8/d72/class_r_btree.html", "d8/d72/class_r_btree" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", "d2/dc4/classstack__linked_list" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
-    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ]
+    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
+    [ "uint128_t", "db/d9a/classuint128__t.html", "db/d9a/classuint128__t" ],
+    [ "uint256_t", "d1/d83/classuint256__t.html", "d1/d83/classuint256__t" ]
 ];

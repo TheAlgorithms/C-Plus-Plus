@@ -256,13 +256,13 @@ template&lt;typename T &gt; </div>
 <p>Get matrix inverse using Row-trasnformations. Given matrix must be a square and non-singular. </p><dl class="section return"><dt>Returns</dt><dd>inverse matrix </dd></dl>
 <div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                      {</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// Assuming A is square matrix</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">size_t</span> N = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; inverse(N);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N; row++) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">// preallocatae a resultant identity matrix</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        inverse[row] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a>(N);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; N; col++) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            inverse[row][col] = (row == col) ? 1.f : 0.f;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
@@ -274,25 +274,25 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">// preallocatae a temporary matrix identical to A</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; temp(N);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N; row++) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> v(N);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; N; col++) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col = 0; col &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; col++) {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            v[col] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(A[row][col]);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        temp[row] = v;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// start transformations</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N; row++) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = row; row2 &lt; N &amp;&amp; temp[row][row] == 0; row2++) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = row; row2 &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; row2++) {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="comment">// this to ensure diagonal elements are not 0</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            temp[row] = temp[row] + temp[row2];</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            inverse[row] = inverse[row] + inverse[row2];</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col2 = row; col2 &lt; N &amp;&amp; temp[row][row] == 0; col2++) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> col2 = row; col2 &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> &amp;&amp; temp[row][row] == 0; col2++) {</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="comment">// this to further ensure diagonal elements are not 0</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; N; row2++) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                temp[row2][row] = temp[row2][row] + temp[row2][col2];</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                inverse[row2][row] = inverse[row2][row] + inverse[row2][col2];</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div>
@@ -309,7 +309,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        temp[row] = temp[row] / divisor;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        inverse[row] = inverse[row] / divisor;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">// Row transformations</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; N; row2++) {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row2 = 0; row2 &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row2++) {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">if</span> (row2 == row) {</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            }</div>
@@ -322,6 +322,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">return</span> inverse;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="aordinary__least__squares__regressor_8cpp_html_a4921874435266592b222e3f2eda0e01f"><div class="ttname"><a href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f">is_square</a></div><div class="ttdeci">bool is_square(std::vector&lt; std::vector&lt; T &gt;&gt; const &amp;A)</div><div class="ttdef"><b>Definition:</b> ordinary_least_squares_regressor.cpp:59</div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -394,8 +395,8 @@ template&lt;typename T &gt; </div>
 <p>function to check if given matrix is a square matrix </p><dl class="section return"><dt>Returns</dt><dd>1 if true, 0 if false </dd></dl>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                        {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Assuming A is square matrix</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">size_t</span> N = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (A[i].size() != N) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
@@ -424,14 +425,14 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;           {</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <a class="code" href="../../dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d">ols_test</a>();</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">size_t</span> N = 0, F = 0;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 0, F = 0;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of features: &quot;</span>;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">// number of features = columns</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; F;</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter number of samples: &quot;</span>;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">// number of samples = rows</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; N;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;float&gt;</a>&gt; <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>(N);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> Y(N);</div>
@@ -440,7 +441,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Enter training data. Per sample, provide features and one output.&quot;</span></div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; N; rows++) {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rows = 0; rows &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; rows++) {</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> v(F);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sample# &quot;</span> &lt;&lt; rows + 1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> cols = 0; cols &lt; F; cols++) {</div>
@@ -504,7 +505,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Self test checks </p>
 <div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">int</span> F = 3, N = 5;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">int</span> F = 3, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 5;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">/* test function = x^2 -5 */</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1 (quadratic function)....&quot;</span>;</div>
@@ -799,7 +800,7 @@ template&lt;typename T &gt; </div>
 <p>addition of two vectors of identical lengths </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
 <div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                                                     {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">size_t</span> N = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
@@ -808,7 +809,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> A;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N; row++) result[row] = A[row] + B[row];</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) result[row] = A[row] + B[row];</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
@@ -851,7 +852,7 @@ template&lt;typename T &gt; </div>
 <p>subtraction of two vectors of identical lengths </p><dl class="section return"><dt>Returns</dt><dd>resultant vector </dd></dl>
 <div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                                     {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// Number of rows in A</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">size_t</span> N = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(N);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
@@ -860,7 +861,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> A;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; N; row++) result[row] = A[row] - B[row];</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> row = 0; row &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; row++) result[row] = A[row] - B[row];</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>

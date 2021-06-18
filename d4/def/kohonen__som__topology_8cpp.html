@@ -123,7 +123,7 @@ Include dependency graph for kohonen_som_topology.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d8/d77/namespacemachine__learning"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/namespacemachine__learning.html">machine_learning</a></td></tr>
-<tr class="memdesc:d8/d77/namespacemachine__learning"><td class="mdescLeft">&#160;</td><td class="mdescRight">Machine learning algorithms. <br /></td></tr>
+<tr class="memdesc:d8/d77/namespacemachine__learning"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -306,7 +306,7 @@ Here is the call graph for this function:</div>
 <li><code>w12.csv</code>: trained SOM map </li>
 </ul>
 <div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;             {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">int</span> j = 0, N = 300;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">int</span> j = 0, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 300;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">int</span> features = 2;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordtype">int</span> num_out = 30;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt; X(N);</div>
@@ -337,6 +337,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="../../d8/d77/namespacemachine__learning.html#adc731720947b4bc2ab047c141e7d0299">kohonen_som</a>(X, &amp;W, 1e-4);      <span class="comment">// train the SOM</span></div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="../../d8/d77/namespacemachine__learning.html#a1d577f5d95b774ae97eb6838852d0df5">save_u_matrix</a>(<span class="stringliteral">&quot;w12.csv&quot;</span>, W);   <span class="comment">// save the resultant weights</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="agroup__machine__learning_html_ga6c606bc85a3e9fd9d010f874ad760336"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#ga6c606bc85a3e9fd9d010f874ad760336">save_2d_data</a></div><div class="ttdeci">int save_2d_data(const char *fname, const std::vector&lt; std::valarray&lt; double &gt;&gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:65</div></div>
 <div class="ttc" id="agroup__machine__learning_html_gaf5ce14f026d6d231bef29161bac2b485"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a></div><div class="ttdeci">double _random(double a, double b)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:53</div></div>
 <div class="ttc" id="akohonen__som__topology_8cpp_html_a6b5e744876fd980a3451cbb385d4e755"><div class="ttname"><a href="../../d4/def/kohonen__som__topology_8cpp.html#a6b5e744876fd980a3451cbb385d4e755">test_2d_classes</a></div><div class="ttdeci">void test_2d_classes(std::vector&lt; std::valarray&lt; double &gt;&gt; *data)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:330</div></div>
@@ -374,7 +375,7 @@ Here is the call graph for this function:</div>
 <li><code>w22.csv</code>: trained SOM map </li>
 </ul>
 <div class="fragment"><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;             {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">int</span> j = 0, N = 300;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">int</span> j = 0, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 300;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">int</span> features = 3;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">int</span> num_out = 30;</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt; X(N);</div>
@@ -435,7 +436,7 @@ Here is the call graph for this function:</div>
 <li><code>w32.csv</code>: trained SOM map </li>
 </ul>
 <div class="fragment"><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;             {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keywordtype">int</span> j = 0, N = 500;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keywordtype">int</span> j = 0, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = 500;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordtype">int</span> features = 3;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <span class="keywordtype">int</span> num_out = 30;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt; X(N);</div>
@@ -504,7 +505,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                                           {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> R = 0.3;  <span class="comment">// radius of cluster</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_classes = 4;</div>
@@ -519,7 +520,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">// select a random class for the point</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordtype">int</span> cls = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % num_classes;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
@@ -573,7 +574,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                                            {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> N = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> R = 0.3;  <span class="comment">// radius of cluster</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_classes = 4;</div>
@@ -588,7 +589,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="comment">// select a random class for the point</span></div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keywordtype">int</span> cls = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % num_classes;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
@@ -640,7 +641,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                                                            {</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> N = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>-&gt;size();</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> R = 0.2;  <span class="comment">// radius of cluster</span></div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_classes = 8;</div>
@@ -659,7 +660,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="comment">// select a random class for the point</span></div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordtype">int</span> cls = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % num_classes;</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>

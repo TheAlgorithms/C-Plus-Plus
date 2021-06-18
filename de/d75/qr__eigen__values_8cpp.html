@@ -184,20 +184,21 @@ Functions</h2></td></tr>
 </dl>
 <div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                        {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> i, j, tmp, lim2 = <a class="code" href="../../de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40">LIMS</a> &gt;&gt; 1;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> N = A-&gt;size();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a> = A-&gt;size();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        A[0][i][i] = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % <a class="code" href="../../de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40">LIMS</a>) - lim2;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> (j = i + 1; j &lt; N; j++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> (j = i + 1; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; j++) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            tmp = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % <a class="code" href="../../de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40">LIMS</a>) - lim2;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            A[0][i][j] = tmp;  <span class="comment">// summetrically distribute random values</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            A[0][j][i] = tmp;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="aqr__eigen__values_8cpp_html_aee57a411f07599034f5ceb8cc7d65b40"><div class="ttname"><a href="../../de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40">LIMS</a></div><div class="ttdeci">#define LIMS</div><div class="ttdef"><b>Definition:</b> qr_eigen_values.cpp:20</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

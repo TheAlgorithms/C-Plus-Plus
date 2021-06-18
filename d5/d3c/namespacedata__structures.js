@@ -11,9 +11,17 @@ var namespacedata__structures =
     [ "queue_using_array", null, [
       [ "Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array" ]
     ] ],
+    [ "sparse_table", null, [
+      [ "Sparse_table", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html", "da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table" ],
+      [ "M", "d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e", null ],
+      [ "N", "d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d", null ]
+    ] ],
     [ "tree_234", null, [
       [ "Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", "dd/d40/classdata__structures_1_1tree__234_1_1_node" ],
       [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234" ]
+    ] ],
+    [ "trie_using_hashmap", null, [
+      [ "Trie", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie" ]
     ] ],
     [ "Node", "d9/d49/structdata__structures_1_1_node.html", "d9/d49/structdata__structures_1_1_node" ],
     [ "SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", "d4/d90/classdata__structures_1_1_skip_list" ],

@@ -1,6 +1,6 @@
 var struct_queue =
 [
-    [ "Queue", "dc/db5/struct_queue.html#a7cfca3637d57c4a9e37351b3426ffd40", null ],
+    [ "Queue", "dc/db5/struct_queue.html#a1e85ea19bc49931cfcc392533735b0c5", null ],
     [ "createNode", "dc/db5/struct_queue.html#a7df5a5794b817bccb0d288e3e7893326", null ],
     [ "dequeue", "dc/db5/struct_queue.html#aa01ff898c2bdab7e804bf243eb5bfb31", null ],
     [ "enqueue", "dc/db5/struct_queue.html#a8e9326b15e162c2d7d663c5cfbdd4405", null ],

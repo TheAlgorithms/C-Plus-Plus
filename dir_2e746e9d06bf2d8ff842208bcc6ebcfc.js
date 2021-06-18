@@ -13,11 +13,13 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
     [ "queue_using_array.cpp", "d8/df0/queue__using__array_8cpp.html", "d8/df0/queue__using__array_8cpp" ],
     [ "queue_using_two_stacks.cpp", "df/dd0/queue__using__two__stacks_8cpp.html", "df/dd0/queue__using__two__stacks_8cpp" ],
     [ "skip_list.cpp", "d0/d5a/skip__list_8cpp.html", "d0/d5a/skip__list_8cpp" ],
+    [ "sparse_table.cpp", "d6/d42/data__structures_2sparse__table_8cpp.html", "d6/d42/data__structures_2sparse__table_8cpp" ],
     [ "stack.h", "d7/de0/stack_8h.html", [
       [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
       [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ]
     ] ],
     [ "tree_234.cpp", "db/dbc/tree__234_8cpp.html", "db/dbc/tree__234_8cpp" ],
     [ "trie_modern.cpp", "dc/d93/trie__modern_8cpp.html", "dc/d93/trie__modern_8cpp" ],
-    [ "trie_tree.cpp", "d7/d83/trie__tree_8cpp.html", "d7/d83/trie__tree_8cpp" ]
+    [ "trie_tree.cpp", "d7/d83/trie__tree_8cpp.html", "d7/d83/trie__tree_8cpp" ],
+    [ "trie_using_hashmap.cpp", "d5/d8a/trie__using__hashmap_8cpp.html", "d5/d8a/trie__using__hashmap_8cpp" ]
 ];

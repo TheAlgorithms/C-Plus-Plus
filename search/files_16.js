@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['wiggle_5fsort_2ecpp_3310',['wiggle_sort.cpp',['../d1/dcc/wiggle__sort_8cpp.html',1,'']]],
-  ['word_5fbreak_2ecpp_3311',['word_break.cpp',['../d3/d84/word__break_8cpp.html',1,'']]]
+  ['vector_5fcross_5fproduct_2ecpp_3427',['vector_cross_product.cpp',['../df/d66/vector__cross__product_8cpp.html',1,'']]],
+  ['vector_5fimportant_5ffunctions_2ecpp_3428',['vector_important_functions.cpp',['../d3/d61/vector__important__functions_8cpp.html',1,'']]],
+  ['vector_5fops_2ehpp_3429',['vector_ops.hpp',['../d8/d95/vector__ops_8hpp.html',1,'']]],
+  ['vigenere_5fcipher_2ecpp_3430',['vigenere_cipher.cpp',['../dd/d12/vigenere__cipher_8cpp.html',1,'']]]
 ];

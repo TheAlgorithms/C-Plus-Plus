@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('dd/d24/namespacedynamic__programming.h
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">dynamic_programming Namespace Reference</div>  </div>
 </div><!--header-->
@@ -97,11 +99,90 @@ $(document).ready(function(){initNavTree('dd/d24/namespacedynamic__programming.h
 
 <p>Dynamic Programming algorithms.  
 <a href="../../dd/d24/namespacedynamic__programming.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
+<tr class="memdesc:a0a2215194e58786c34db1ccaf8031079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the longest increasing subsequence for the specified numbers.  <a href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079">More...</a><br /></td></tr>
+<tr class="separator:a0a2215194e58786c34db1ccaf8031079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dynamic Programming algorithms. </p>
 <p>Dynamic programming algorithms.</p>
-<p>Dynamic Programming algorithm. </p>
-</div></div><!-- contents -->
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>Dynamic Programming algorithm.</p>
+<p>Dynamic Programming Algorithms.</p>
+<p>for <code>assert</code> for IO operations for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></code> library for <code><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> STL library</p>
+<p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a> for IO operations</p>
+<p>Dynamic Programming algorithms</p>
+<p>for assert for IO operations</p>
+<p>Dynamic Programming algorithms </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0a2215194e58786c34db1ccaf8031079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2215194e58786c34db1ccaf8031079">&#9670;&nbsp;</a></span>LIS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dynamic_programming::LIS </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the longest increasing subsequence for the specified numbers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>the array used to calculate the longest increasing subsequence </td></tr>
+    <tr><td class="paramname">n</td><td>the size used for the arrays </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the longest increasing subsequence in the <code>a</code> array of size <code>n</code> </dd></dl>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                              {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> lis(n);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        lis[i] = 1;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; i; ++j) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span> (a[i] &gt; a[j] &amp;&amp; lis[i] &lt; lis[j] + 1) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                lis[i] = lis[j] + 1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> res = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        res = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(res, lis[i]);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; int &gt;</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a0a2215194e58786c34db1ccaf8031079_cgraph.svg" width="314" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

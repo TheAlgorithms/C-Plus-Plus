@@ -1,5 +1,9 @@
 var namespacemachine__learning =
 [
+    [ "aystar_search", null, [
+      [ "EightPuzzle", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle" ],
+      [ "AyStarSearch", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search" ]
+    ] ],
     [ "neural_network", null, [
       [ "activations", null, [
         [ "drelu", "d2/d58/neural__network_8cpp.html#aa69e95a34054d7989bf446f96b2ffaf9", null ],

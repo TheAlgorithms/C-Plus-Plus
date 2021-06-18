@@ -150,6 +150,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9d4eb6ea3c35540d804d451f1716622d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a9d4eb6ea3c35540d804d451f1716622d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *nums, uint64_t n)</td></tr>
+<tr class="memdesc:ae3a775d99dbbb94c130a973df0cfddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array.  <a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">More...</a><br /></td></tr>
+<tr class="separator:ae3a775d99dbbb94c130a973df0cfddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5669396c6a6b1e14b97589b6e37980aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa">shell_sort</a> (T *arr, size_t LEN)</td></tr>
 <tr class="separator:a5669396c6a6b1e14b97589b6e37980aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +167,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sorting algorithms. </p>
 <p>for io operations</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></p>
 <p>Sorting Algorithms.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for assert for typedef datatype uint64_t for IO operations</p>
@@ -171,6 +176,8 @@ Functions</h2></td></tr>
 <p>Sorting algorithms</p>
 <p>Sorting algorithms</p>
 <p>header files for collection of functions for a macro called assert which can be used to verify assumptions for io operations</p>
+<p>Sorting algorithms</p>
+<p>for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></p>
 <p>Sorting algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a70a6a99d554280c326f80355c4d2c494"></a>
@@ -725,7 +732,7 @@ template&lt;std::size_t N&gt; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> *hole = <span class="keyword">new</span> <span class="keywordtype">int</span>[range]();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Copying all array values to pigeonhole</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        hole[arr[i] - *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>] = arr[i];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -743,6 +750,7 @@ template&lt;std::size_t N&gt; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> arr;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="amax_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max_element.html">std::max_element</a></div><div class="ttdeci">T max_element(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="amin_element_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min_element.html">std::min_element</a></div><div class="ttdeci">T min_element(T... args)</div></div>
@@ -993,6 +1001,76 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ae3a775d99dbbb94c130a973df0cfddcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a775d99dbbb94c130a973df0cfddcf">&#9670;&nbsp;</a></span>recursive_bubble_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::recursive_bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>nums</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is then dereferenced, so that the changes are reflected in the original vector. It also accepts a second parameter of type <code>int</code> and name <code>n</code>, which is the size of the array. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type of data variables in the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nums</td><td>our array of elements. </td></tr>
+    <tr><td class="paramname">n</td><td>size of the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; base case; when size of the array is 1</p>
+<p>&lt; iterating over the entire array</p>
+<p>&lt; if a larger number appears before the smaller one, swap them.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                           {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (n == 1) {  <span class="comment">//!&lt; base case; when size of the array is 1</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; n - 1; i++) {  <span class="comment">//!&lt; iterating over the entire array</span><span class="comment"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">        //!&lt; if a larger number appears before the smaller one, swap them.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> ((*nums)[i] &gt; (*nums)[i + 1]) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*nums)[i], (*nums)[i + 1]);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    //!&lt; calling the function after we have fixed the last element</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>    <a class="code" href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">recursive_bubble_sort</a>(nums, n - 1);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="ttc" id="anamespacesorting_html_ae3a775d99dbbb94c130a973df0cfddcf"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf">sorting::recursive_bubble_sort</a></div><div class="ttdeci">void recursive_bubble_sort(std::vector&lt; T &gt; *nums, uint64_t n)</div><div class="ttdoc">This is an implementation of the recursive_bubble_sort. A vector is passed to the function which is t...</div><div class="ttdef"><b>Definition:</b> recursive_bubble_sort.cpp:74</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_ae3a775d99dbbb94c130a973df0cfddcf_cgraph.svg" width="260" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="af2c5b92cbfe73f63f6074c61b0a45331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c5b92cbfe73f63f6074c61b0a45331">&#9670;&nbsp;</a></span>shell_sort() <span class="overload">[1/3]</span></h2>
 
@@ -1136,7 +1214,7 @@ template&lt;typename T , size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new array with elements shuffled from a given array </dd></dl>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                              {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; i++) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// Swaps i&#39;th  index with random index (less than array size)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(arr[i], arr[<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % N]);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>

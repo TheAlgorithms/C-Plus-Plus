@@ -178,7 +178,7 @@ template&lt;std::size_t N&gt; </div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                      {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> dt = rot * 2.f * M_PI / N;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> dt = rot * 2.f * M_PI / <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> R = 1.f;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> k1 = 1.f - k;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    int32_t step = 0;</div>
@@ -186,7 +186,7 @@ template&lt;std::size_t N&gt; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (step = 0; step &lt; N; step++) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (step = 0; step &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; step++) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">double</span> t = dt * step;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">double</span> first = R * (k1 * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(t) + l * k * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(k1 * t / k));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">double</span> second = R * (k1 * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(t) - l * k * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(k1 * t / k));</div>
@@ -195,6 +195,7 @@ template&lt;std::size_t N&gt; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="ttc" id="acos_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a></div><div class="ttdeci">T cos(T... args)</div></div>
+<div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

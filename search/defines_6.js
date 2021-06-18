@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pb_5149',['pb',['../d7/d35/matrix__exponentiation_8cpp.html#a276c5a0e984cf60015b27252fe04fe6b',1,'matrix_exponentiation.cpp']]],
-  ['prime_5150',['PRIME',['../d6/dce/rabin__karp_8cpp.html#ac4add2a227a10511e0128d63952030e8',1,'rabin_karp.cpp']]]
+  ['max_5325',['MAX',['../d4/d32/fibonacci__fast_8cpp.html#a392fb874e547e582e9c66a08a1f23326',1,'MAX():&#160;fibonacci_fast.cpp'],['../df/def/power__for__huge__numbers_8cpp.html#a392fb874e547e582e9c66a08a1f23326',1,'MAX():&#160;power_for_huge_numbers.cpp'],['../dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326',1,'MAX():&#160;paranthesis_matching.cpp'],['../d1/df3/hash__search_8cpp.html#a392fb874e547e582e9c66a08a1f23326',1,'MAX():&#160;hash_search.cpp'],['../dc/dfe/ternary__search_8cpp.html#a392fb874e547e582e9c66a08a1f23326',1,'MAX():&#160;ternary_search.cpp']]],
+  ['max_5fiterations_5326',['MAX_ITERATIONS',['../d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14',1,'bisection_method.cpp']]]
 ];

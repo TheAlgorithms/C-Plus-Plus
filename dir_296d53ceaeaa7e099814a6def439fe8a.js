@@ -20,6 +20,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "gcd_iterative_euclidean.cpp", "d4/da0/gcd__iterative__euclidean_8cpp.html", "d4/da0/gcd__iterative__euclidean_8cpp" ],
     [ "gcd_of_n_numbers.cpp", "d1/d11/gcd__of__n__numbers_8cpp.html", "d1/d11/gcd__of__n__numbers_8cpp" ],
     [ "gcd_recursive_euclidean.cpp", "d4/d45/gcd__recursive__euclidean_8cpp.html", "d4/d45/gcd__recursive__euclidean_8cpp" ],
+    [ "integral_approximation.cpp", "d1/de9/integral__approximation_8cpp.html", "d1/de9/integral__approximation_8cpp" ],
     [ "large_factorial.cpp", "d6/d9d/large__factorial_8cpp.html", "d6/d9d/large__factorial_8cpp" ],
     [ "large_number.h", "d4/d86/large__number_8h.html", [
       [ "large_number", "db/d82/classlarge__number.html", "db/d82/classlarge__number" ]

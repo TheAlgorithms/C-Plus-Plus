@@ -102,6 +102,12 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aec65db4e5c7317323227f026fe50ef11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11">integral_approx</a> (double lb, double ub, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;func, double delta=.0001)</td></tr>
+<tr class="memdesc:aec65db4e5c7317323227f026fe50ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes integral approximation.  <a href="../../dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11">More...</a><br /></td></tr>
+<tr class="separator:aec65db4e5c7317323227f026fe50ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50936ee98f4d40f17823befc65a32aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a50936ee98f4d40f17823befc65a32aec">test_eval</a> (double approx, double expected, double threshold)</td></tr>
+<tr class="memdesc:a50936ee98f4d40f17823befc65a32aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to evaluate if the approximated value is within <code>.XX%</code> threshold of the exact value.  <a href="../../dd/d47/namespacemath.html#a50936ee98f4d40f17823befc65a32aec">More...</a><br /></td></tr>
+<tr class="separator:a50936ee98f4d40f17823befc65a32aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa39ec943a4836c878e1614fd89b146f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">largestPower</a> (uint32_t n, const uint16_t &amp;p)</td></tr>
 <tr class="memdesc:afa39ec943a4836c878e1614fd89b146f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate largest power.  <a href="../../dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f">More...</a><br /></td></tr>
 <tr class="separator:afa39ec943a4836c878e1614fd89b146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,13 +134,22 @@ Functions</h2></td></tr>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>for io operations</p>
+<p>Evaluate recurrence relation using <a href="https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/">matrix exponentiation</a>.</p>
 <p>for assert</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for assert for int32_t type for atoi</p>
 <p>Mathematical algorithms</p>
 <p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms</p>
+<p>for assert for mathematical functions for passing in functions</p>
+<p>Mathematical functions</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
+<p>Mathematical algorithms</p>
+<p>Given a recurrence relation; evaluate the value of nth term. For e.g., For fibonacci series, recurrence series is <code>f(n) = f(n-1) + f(n-2)</code> where <code>f(0) = 0</code> and <code>f(1) = 1</code>. Note that the method used only demonstrates recurrence relation with one variable (n), unlike <code>nCr</code> problem, since it has two (n, r)</p>
+<h3><a class="anchor" id="autotoc_md67"></a>
+Algorithm</h3>
+<p>This problem can be solved using matrix exponentiation method. </p><dl class="section see"><dt>See also</dt><dd>here for simple <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp">number exponentiation algorithm</a> or <a href="https://en.wikipedia.org/wiki/Exponentiation_by_squaring">explaination here</a>. </dd></dl>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/AshishYUO">Ashish Daulatabad</a> for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> STL</dd></dl>
 <p>Mathematical algorithms</p>
 <p>for assert</p>
 <p>Mathematical algorithms</p>
@@ -168,6 +183,71 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Calculating 2^n</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> (1 &lt;&lt; n);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aec65db4e5c7317323227f026fe50ef11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec65db4e5c7317323227f026fe50ef11">&#9670;&nbsp;</a></span>integral_approx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double math::integral_approx </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em> = <code>.0001</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes integral approximation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lb</td><td>lower bound </td></tr>
+    <tr><td class="paramname">ub</td><td>upper bound </td></tr>
+    <tr><td class="paramname">func</td><td>function passed in </td></tr>
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integral approximation of function from [lb, ub] </dd></dl>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                             {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uint64_t numDeltas = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>((ub - lb) / delta);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numDeltas; i++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">double</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">begin</a> = lb + i * delta;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">double</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> = lb + (i + 1) * delta;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> += delta * (func(begin) + func(end)) / 2;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,7 +391,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,6 +580,54 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a50936ee98f4d40f17823befc65a32aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50936ee98f4d40f17823befc65a32aec">&#9670;&nbsp;</a></span>test_eval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void math::test_eval </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>approx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper to evaluate if the approximated value is within <code>.XX%</code> threshold of the exact value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">approx</td><td>aprroximate value </td></tr>
+    <tr><td class="paramname">exact</td><td>expected value </td></tr>
+    <tr><td class="paramname">threshold</td><td>values from [0, 1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    assert(approx &gt;= expected * (1 - threshold));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    assert(approx &lt;= expected * (1 + threshold));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

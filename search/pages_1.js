@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['guidelines_20for_20reviewers_20and_20maintainers_5157',['Guidelines for reviewers and maintainers',['../dc/db4/md__r_e_v_i_e_w_e_r__c_o_d_e.html',1,'']]]
+  ['contribution_20guidelines_5334',['CONTRIBUTION GUIDELINES',['../d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html',1,'']]],
+  ['contributor_20covenant_20code_20of_20conduct_5335',['Contributor Covenant Code of Conduct',['../d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html',1,'']]]
 ];
