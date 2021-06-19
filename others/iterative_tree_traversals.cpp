@@ -227,7 +227,7 @@ static void test3(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     // and storing the inorder traversal in result.
     result = binaryTree.inOrderIterative(root);
 
-    // Self-testing the result using assert.
+    // Self-testing the result using `assert`
     for(int i = 0; i < result.size(); i++)
         assert(actual_result[i] == result[i]);
 
