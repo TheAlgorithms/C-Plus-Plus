@@ -167,16 +167,15 @@ private:
     }
 
 public:
-    TestCases() {
+    void runTests(){
         log("Running Tests...");
+
         testCase_1();
         testCase_2();
         testCase_3();
-    }
 
-    ~TestCases() {
         log("Test Cases over!");
-        std::cout<<std::endl;
+        std::cout << std::endl;
     }
 
     void testCase_1() {
@@ -252,8 +251,8 @@ public:
 
 
 void testsDriver() {
-//     Test cases called in constructor of the class.
     TestCases tc = TestCases();
+    tc.runTests();
 }
 
 int main() {
@@ -265,7 +264,7 @@ int main() {
     std::array<int, inputSize> unsorted_array = generateUnsortedArray<inputSize>(50, 1000);
     std::cout << "Unsorted array is : " << std::endl;
     randomPivotQuickSort::showArray(unsorted_array);
-    
+
     std::array<int, inputSize> sorted_array = randomPivotQuickSort::quickSortRP(
             unsorted_array, 0,
             unsorted_array.size() - 1
@@ -273,4 +272,5 @@ int main() {
     std::cout << "Sorted array is : " << std::endl;
     randomPivotQuickSort::showArray(sorted_array);
 }
+
 
