@@ -179,7 +179,7 @@ static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     // and storing the preorder traversal in result.
     result = binaryTree.preOrderIterative(root); 
 
-    // Self-testing the result using assert.
+    // Self-testing the result using `assert`
     for(int i = 0; i < result.size(); i++)
         assert(actual_result[i] == result[i]);
 
