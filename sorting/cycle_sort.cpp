@@ -56,7 +56,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
         if (pos == cycle_start) {
             continue;
         }
-        else{
+        else {
             std::swap(item, arr[pos]);
         }
         // Rest of the  elements
