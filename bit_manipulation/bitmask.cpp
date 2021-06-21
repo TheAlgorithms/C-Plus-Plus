@@ -1,13 +1,15 @@
-#include <iostream>
 /**
  * @file
  * @brief Bitmask example
  * @details
- * Bitmask exaple with explanation and with example
+ * (Bitmask)[https://blog.bitsrc.io/the-art-of-bitmasking-ec58ab1b4c03] 
+ * example with explanation and with example
  * problem solution using bitmask
+ * 
  * @author [Yhtyyar Sahatov](https://github.com/Yhtiyar)
  */
 
+#include <iostream>   /// for IO operations
 /**
  * @namespace bitmask
  * @brief Bitmask examples
