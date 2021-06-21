@@ -24,7 +24,7 @@ namespace sorting {
  * @namespace cycle_sort
  * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  */
-namespace cycle_sort { 
+namespace cycle_sort {
 /**
  * @brief The main function implements cycleSort
  * @tparam T type of array
