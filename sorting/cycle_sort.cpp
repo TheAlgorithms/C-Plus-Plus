@@ -91,7 +91,7 @@ static void test() {
     // [4, 3, 2, 1] return [1, 2, 3, 4]
     std::vector<int> array1 = {4, 3, 2, 1};
     std::cout << "Test 1... ";
-    std::vector<int> arr1  = sorting::cycle_sort::cycleSort(array1);
+    std::vector<int> arr1 = sorting::cycle_sort::cycleSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
     std::cout << "passed" << std::endl;
 
