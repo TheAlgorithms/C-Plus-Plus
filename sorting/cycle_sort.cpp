@@ -80,8 +80,8 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
     }
     return arr;
 }
-} // namespace cycle_sort
-} // namespace sorting
+}  // namespace cycle_sort
+}  // namespace sorting
 
 /**
  * @brief Test implementations
