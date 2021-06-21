@@ -73,7 +73,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
             if (item == arr[pos]) {
                 continue;
             }
-            else{
+            else {
                 std::swap(item, arr[pos]);
             }
         }
