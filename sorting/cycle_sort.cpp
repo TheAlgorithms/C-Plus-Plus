@@ -10,10 +10,10 @@
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
-#include <algorithm> /// for std::is_sorted, std::swap
-#include <cassert>     /// for assert
-#include <iostream> /// for io operations
-#include <vector>    /// for std::vector 
+#include <algorithm>  /// for std::is_sorted, std::swap
+#include <cassert>    /// for assert
+#include <iostream>   /// for io operations
+#include <vector>     /// for std::vector
 
 /**
  * @namespace sorting
