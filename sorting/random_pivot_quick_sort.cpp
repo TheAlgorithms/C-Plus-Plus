@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief A cpp program for random pivot quick sort algorithm.
+ * @brief A cpp program for random pivot quick sort algorithm. 
+ * [Random Pivot Quick Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation)
  * @details Intro :
  *              - A random pivot quick sort algorithm is pretty much same as quick sort with a difference of having a logic of
  *                  selecting next pivot element from the input array.
@@ -37,12 +38,12 @@
  */
 
 
-#include <iostream>  // For IO ops
-#include <ctime>  // For initializing random number generator
-#include <cassert> // For assert (checking test cases)
-#include <algorithm> // For checking if an array is sorted or not
-#include <array>  // For avoiding c-style array implementation
-#include <tuple> // For returning multiple values form a function at once
+#include <iostream>       /// for IO operations
+#include <ctime>         /// for initializing random number generator
+#include <cassert>      /// for assert
+#include <algorithm>   /// for std::is_sorted()
+#include <array>      /// for std::array
+#include <tuple>     /// for returning multiple values form a function at once
 
 
 /**
