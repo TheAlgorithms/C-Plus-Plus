@@ -31,7 +31,7 @@ int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
  */
 void tests() {
     std::cout << "Test 1:\t n=395\n";
-    if(count_of_number_of_ciphers_in_factorial_n(395) == (int)97) {
+    if(count_of_number_of_ciphers_in_factorial_n(395) == 97) {
         std::cout << "passed\n";
     }
     else {
@@ -39,7 +39,7 @@ void tests() {
     }
 
     std::cout << "Test 2:\t n=977\n";
-    if(count_of_number_of_ciphers_in_factorial_n(977) == (int)242) {
+    if(count_of_number_of_ciphers_in_factorial_n(977) == 242) {
         std::cout << "passed\n";
     }
     else {
@@ -47,7 +47,7 @@ void tests() {
     }
 
     std::cout << "Test 3:\t n=871\n";
-    if(count_of_number_of_ciphers_in_factorial_n(871) == (int)215) {
+    if(count_of_number_of_ciphers_in_factorial_n(871) == 215) {
         std::cout << "passed\n";
     }
     else {
@@ -55,7 +55,7 @@ void tests() {
     }
 
     std::cout << "Test 4:\t n=239\n";
-    if(count_of_number_of_ciphers_in_factorial_n(239) == (int)57) {
+    if(count_of_number_of_ciphers_in_factorial_n(239) == 57) {
         std::cout << "passed\n";
     }
     else {
