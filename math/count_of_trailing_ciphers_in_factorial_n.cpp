@@ -1,7 +1,6 @@
 /**
  * @file
  * @brief Program to count number of ciphers in `n!`
- * number.
  * @author [Swastika Gupta](https://github.com/swastyy)
  */
 #include <cassert>
