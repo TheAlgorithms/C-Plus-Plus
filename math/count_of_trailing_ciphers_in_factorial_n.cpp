@@ -19,7 +19,7 @@ int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
  
     // Keep dividing n by powers of
     // 5 and update count
-    for (int i = 5; n / i >= 1; i *= 5) {
+    for (int i = 5; n / i >= 1; i *= 5){
         count += n / i;
     }
  
@@ -34,7 +34,7 @@ void tests() {
     if(count_of_number_of_ciphers_in_factorial_n(395) == 97) {
         std::cout << "passed\n";
     }
-    else {
+    else{
         std::cout << "failed\n";
     }
 
@@ -42,7 +42,7 @@ void tests() {
     if(count_of_number_of_ciphers_in_factorial_n(977) == 242) {
         std::cout << "passed\n";
     }
-    else {
+    else{
         std::cout << "failed\n";
     }
 
@@ -50,7 +50,7 @@ void tests() {
     if(count_of_number_of_ciphers_in_factorial_n(871) == 215) {
         std::cout << "passed\n";
     }
-    else {
+    else{
         std::cout << "failed\n";
     }
 
@@ -58,7 +58,7 @@ void tests() {
     if(count_of_number_of_ciphers_in_factorial_n(239) == 57) {
         std::cout << "passed\n";
     }
-    else {
+    else{
         std::cout << "failed\n";
     }
 }
