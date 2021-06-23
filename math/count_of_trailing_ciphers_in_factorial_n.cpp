@@ -42,8 +42,7 @@ void tests() {
     if(count_of_number_of_ciphers_in_factorial_n(977) == 242) {
         std::cout << "passed\n";
     }
-    else{
-        std::cout << "failed\n";
+    else{ std::cout << "failed\n";
     }
 
     std::cout << "Test 3:\t n=871\n";
