@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief A simple program to count the number of ciphers in a factorial of some
+ * @brief Program to count number of ciphers in `n!`
  * number.
  * @author [Swastika Gupta](https://github.com/swastyy)
  */
