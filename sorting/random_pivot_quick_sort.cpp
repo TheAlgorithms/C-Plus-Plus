@@ -1,37 +1,36 @@
 /**
  * @file
- * @brief A cpp program for random pivot quick sort algorithm. 
- * [Random Pivot Quick Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation)
- * @details Intro :
- *              - A random pivot quick sort algorithm is pretty much same as quick sort with a difference of having a logic of
- *                  selecting next pivot element from the input array.
- *              - Where in quick sort is fast, but still can give you the time complexity of O(n^2) in worst case.
- *              - To avoid hitting the time complexity of O(n^2), we use the logic of randomize the selection process of pivot
- *                  element.
+ * @brief Implementation of the [Random Pivot Quick Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation) algorithm.
+ * @details
+ *          * A random pivot quick sort algorithm is pretty much same as quick sort with a difference of having a logic of
+ *              selecting next pivot element from the input array.
+ *          * Where in quick sort is fast, but still can give you the time complexity of O(n^2) in worst case.
+ *          * To avoid hitting the time complexity of O(n^2), we use the logic of randomize the selection process of pivot
+ *              element.
  *
- *          Logic :
- *              - The logic is pretty simple, the only change is in the partitioning algorithm, which is selecting the
+ *          ### Logic
+ *              * The logic is pretty simple, the only change is in the partitioning algorithm, which is selecting the
  *                  pivot element.
- *              - Instead of selecting the last or the first element from array for pivot we use a random index to select
+ *              * Instead of selecting the last or the first element from array for pivot we use a random index to select
  *                  pivot element.
- *              - This avoids hitting the O(n^2) time complexity in practical use cases.
+ *              * This avoids hitting the O(n^2) time complexity in practical use cases.
  *
  *
  *
- *       (Partition Logic) :-
- *           -> Partitions are done such as numbers lower than the "pivot" element is arranged on the left side of the "pivot",
+ *       ### Partition Logic
+ *           * Partitions are done such as numbers lower than the "pivot" element is arranged on the left side of the "pivot",
  *               and number larger than the "pivot" element are arranged on the right part of the array.
  *
- *       (Algorithm) :-
- *           -> Select the pivot element randomly using getRandomIndex() function from this namespace.
- *           -> Initialize the pInd (partition index) from the start of the array.
- *           -> Loop through the array from start to less than end. (from start to < end).
+ *       ### Algorithm
+ *           * Select the pivot element randomly using getRandomIndex() function from this namespace.
+ *           * Initialize the pInd (partition index) from the start of the array.
+ *           * Loop through the array from start to less than end. (from start to < end).
  *               (Inside the loop) :-
- *                   -> Check if the current element (arr[i]) is less than the pivot element in each iteration.
- *                   -> If current element in the iteration is less than the pivot element,
+ *                   * Check if the current element (arr[i]) is less than the pivot element in each iteration.
+ *                   * If current element in the iteration is less than the pivot element,
  *                       then swap the elements at current index (i) and partition index (pInd) and increment the partition index by one.
- *           -> At the end of the loop, swap the pivot element with partition index element.
- *           -> Return the partition index from the function.
+ *           * At the end of the loop, swap the pivot element with partition index element.
+ *           * Return the partition index from the function.
  *
  * @author [Nitin Sharma](https://github.com/foo290)
  *
@@ -52,8 +51,8 @@
  */
 namespace sorting {
 /**
+ * @brief Functions for the [Random Pivot Quick Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation) implementation
  * @namespace random_pivot_quick_sort
- * @brief Functions for the Random Pivot Quick Sort implementation
  */
     namespace random_pivot_quick_sort {
         /**
@@ -304,4 +303,3 @@ int main(int argc, char *argv[]) {
     sorting::random_pivot_quick_sort::showArray(sorted_array);
     return 0;
 }
-
