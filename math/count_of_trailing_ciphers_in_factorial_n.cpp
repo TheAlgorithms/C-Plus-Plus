@@ -16,13 +16,13 @@
 int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
     // count is to store the number of 5's in factorial(n)
     int count = 0;
- 
+
     // Keep dividing n by powers of
     // 5 and update count
     for (int i = 5; n / i >= 1; i *= 5) {
-        count += (int)n / i;
+        count += static_cast<int>(n) / i;
     }
- 
+
     return count;
 }
 
