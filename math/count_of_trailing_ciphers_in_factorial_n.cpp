@@ -9,7 +9,7 @@
 /**
  * Function to count the number of ciphers.
  * @param n Number for which `n!` ciphers are returned
- * @return it returns the power of 5 in factorial of a given number.
+ * @return count Number of ciphers in `n!`.
  */
 
 int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
