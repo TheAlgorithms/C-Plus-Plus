@@ -20,7 +20,7 @@ int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
     // Keep dividing n by powers of
     // 5 and update count
     for (int i = 5; n / i >= 1; i *= 5) {
-        count += n / i;
+        count += (int)n / i;
     }
  
     return count;
