@@ -29,29 +29,15 @@ int count_of_number_of_ciphers_in_factorial_n(uint64_t n) {
  * @returns void
  */
 void tests() {
-    std::cout << "Test 1:\t n=395\n";
-    if (count_of_number_of_ciphers_in_factorial_n(395) == 97) {
-        std::cout << "passed\n";
-    }
-    std::cout << "failed\n";
-
-    std::cout << "Test 2:\t n=977\n";
-    if (count_of_number_of_ciphers_in_factorial_n(977) == 242) {
-        std::cout << "passed\n";
-    }
-    std::cout << "failed\n";
-
-    std::cout << "Test 3:\t n=871\n";
-    if (count_of_number_of_ciphers_in_factorial_n(871) == 215) {
-        std::cout << "passed\n";
-    }
-    std::cout << "failed\n";
-
-    std::cout << "Test 4:\t n=239\n";
-    if (count_of_number_of_ciphers_in_factorial_n(239) == 57) {
-        std::cout << "passed\n";
-    }
-    std::cout << "failed\n";
+    std::cout << "Running predefined tests...\n";
+    assert(count_of_number_of_ciphers_in_factorial_n(871) == 215);
+    assert(count_of_number_of_ciphers_in_factorial_n(977) == 242);
+    assert(count_of_number_of_ciphers_in_factorial_n(395) == 97);
+    assert(count_of_number_of_ciphers_in_factorial_n(669763357) == 167440831);
+    assert(count_of_number_of_ciphers_in_factorial_n(239) == 57);
+    assert(count_of_number_of_ciphers_in_factorial_n(535) == 132);
+    assert(count_of_number_of_ciphers_in_factorial_n(374960399) == 93740092);
+    std::cout << "Test Passed...!\n";
 }
 
 /** Main function
