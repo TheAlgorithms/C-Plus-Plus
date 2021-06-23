@@ -8,7 +8,7 @@
 
 /**
  * Function to count the number of ciphers.
- * @param n is the number to be given as argument.
+ * @param n Number for which `n!` ciphers are returned
  * @return it returns the power of 5 in factorial of a given number.
  */
 
