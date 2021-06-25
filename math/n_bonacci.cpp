@@ -46,10 +46,9 @@ std::vector<T> N_bonacci(const std::vector<T> &in_arr) {
     a[n] = 1;  /// similarily the sum of preceding N zeros and the (N+1)th 1 is
                /// also 1
     for (i = n + 1; i < m; i++) {
-        /*this is an optimized solution which works in O(M) time and takes O(M)
-         *extra space here we use the concept of sliding window the current term
-         *can be computed using the given formula
-         */
+         // this is an optimized solution that works in O(M) time and takes O(M)
+         // extra space here we use the concept of the sliding window the current term
+         // can be computed using the given formula
         a[i] = 2 * a[i - 1] - a[i - 1 - n];
     }
     return a;
