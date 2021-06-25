@@ -26,7 +26,7 @@ namespace math {
  */
 namespace n_bonacci {
 /**
- * @brief The main function implements n-bonacci series
+ * @brief Function implements n-bonacci series
  * @tparam T type of array
  * @param n,m m is the number of terms in n-bonacci sequence
  * @returns the n-bonacci sequence as vector array
