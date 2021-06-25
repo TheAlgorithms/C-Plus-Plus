@@ -30,7 +30,7 @@ namespace math {
 namespace n_bonacci {
 /**
  * @brief Function implements n-bonacci series
- * @param n, m is the number of terms in the n-Bonacci sequence
+ * @param n, m is the number of terms in the N-Bonacci sequence
  * @returns the n-bonacci sequence as vector array
  */
 std::vector<int> N_bonacci(int n, unsigned int m) {
