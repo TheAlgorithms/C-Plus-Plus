@@ -58,7 +58,8 @@ std::vector<T> N_bonacci(const std::vector<T> &in_arr) {
     return a;
 }
 }
-}
+}  // namespace n_bonacci
+}  // namespace math
 
 
 /**
