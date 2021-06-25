@@ -2,7 +2,6 @@
  * @file
  * @brief Implementation of the [Sublist Search
  * Algorithm](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
- * algorithm.
  * @details
  *       * Sublist search is used to detect a presence of one list in another
  * list.
