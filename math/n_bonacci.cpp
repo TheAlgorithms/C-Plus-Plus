@@ -68,7 +68,7 @@ static void test() {
     std::cout << "passed" << std::endl;
 
     // n = 5 m = 15 return [0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464]
-    std::cout << "Test 2... ";
+    std::cout << "2nd test";
     std::vector<int> arr2 = math::n_bonacci::N_bonacci(5,15);
     std::vector<int> output_array2 = {0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464};
     assert(std::equal(std::begin(arr2), std::end(arr2), std::begin(output_array2)));
