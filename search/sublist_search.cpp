@@ -23,9 +23,9 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  */
 
-#include <cassert>   // For assert
-#include <iostream>  // for IO operations
-#include <vector>    // For passing data as array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * A Node structure representing single link Node in a linked list.
