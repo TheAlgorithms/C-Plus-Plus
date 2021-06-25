@@ -18,10 +18,14 @@
 #include <iostream>   /// for io operations
 #include <vector>     /// for std::vector
 
-namespace math {
 /**
  * @namespace math
- * @brief Function for n-bonacci series
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
+ * @namespace n_bonacci
+ * @brief Functions for the [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers) implementation
  */
 namespace n_bonacci {
 /**
