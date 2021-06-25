@@ -32,25 +32,22 @@ namespace math {
 namespace n_bonacci {
 /**
  * @brief Function implements n-bonacci series
- * @param n, m is the number of terms in the N-Bonacci sequence
+ * @param n
+ * @param m is the number of terms in the N-Bonacci sequence
  * @returns the n-bonacci sequence as vector array
  */
 std::vector<int> N_bonacci(int n, unsigned int m) {
     /**
-     * This function finds N-bonacci series for @param n value and @param m
-     * terms
+     * This function finds N-bonacci series for @param n value and @param m terms
      */
 
     std::vector<int> a(m, 0);  // we create an empty array of size m
 
     int i = 0;
-    a[n - 1] = 1;  /// we initialise the (n-1)th term as 1 which is the sum of
-                   /// preceding N zeros
-    a[n] = 1;  /// similarily the sum of preceding N zeros and the (N+1)th 1 is
-               /// also 1
+    a[n - 1] = 1;  /// we initialise the (n-1)th term as 1 which is the sum of preceding N zeros
+    a[n] = 1;  /// similarily the sum of preceding N zeros and the (N+1)th 1 is also 1
     for (i = n + 1; i < m; i++) {
-        // this is an optimized solution that works in O(M) time and takes O(M)
-        // extra space here we use the concept of the sliding window the current
+        // this is an optimized solution that works in O(M) time and takes O(M) extra space here we use the concept of the sliding window the current
         // term can be computed using the given formula
         a[i] = 2 * a[i - 1] - a[i - 1 - n];
     }
@@ -88,7 +85,7 @@ static void test() {
 
     // n = 6 m = 17 return [0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248,
     // 492, 976]
-    std::cout << "Test 3... ";
+    std::cout << "3rd test";
     // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr3 = math::n_bonacci::N_bonacci(6, 17);
     // It is the expected output series of length m
@@ -99,7 +96,7 @@ static void test() {
     std::cout << "passed" << std::endl;
 
     // n = 56 m = 15 return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    std::cout << "Test 4... ";
+    std::cout << "4th test";
     // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr4 = math::n_bonacci::N_bonacci(56, 15);
     // It is the expected output series of length m
