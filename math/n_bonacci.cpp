@@ -66,7 +66,9 @@ std::vector<int> N_bonacci(int n, unsigned int m) {
 static void test() {
     // n = 1 m = 1 return [1, 1]
     std::cout << "1st test";
+    // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr1 = math::n_bonacci::N_bonacci(1, 1);
+    // It is the expected output series of length m
     std::vector<int> output_array1 = {1, 1};
     assert(std::equal(std::begin(arr1), std::end(arr1),
                       std::begin(output_array1)));
@@ -75,7 +77,9 @@ static void test() {
     // n = 5 m = 15 return [0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236,
     // 464]
     std::cout << "2nd test";
+    // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr2 = math::n_bonacci::N_bonacci(5, 15);
+    // It is the expected output series of length m
     std::vector<int> output_array2 = {0, 0,  0,  0,  1,   1,   2,  4,
                                       8, 16, 31, 61, 120, 236, 464};
     assert(std::equal(std::begin(arr2), std::end(arr2),
@@ -85,7 +89,9 @@ static void test() {
     // n = 6 m = 17 return [0, 0, 0, 0, 0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248,
     // 492, 976]
     std::cout << "Test 3... ";
+    // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr3 = math::n_bonacci::N_bonacci(6, 17);
+    // It is the expected output series of length m
     std::vector<int> output_array3 = {0, 0,  0,  0,  0,   1,   1,   2,  4,
                                       8, 16, 32, 63, 125, 248, 492, 976};
     assert(std::equal(std::begin(arr3), std::end(arr3),
@@ -94,7 +100,9 @@ static void test() {
 
     // n = 56 m = 15 return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     std::cout << "Test 4... ";
+    // first input is the param n and second one is the param m for N-bonacci func
     std::vector<int> arr4 = math::n_bonacci::N_bonacci(56, 15);
+    // It is the expected output series of length m
     std::vector<int> output_array4 = {0, 0, 0, 0, 0, 0, 0, 0,
                                       0, 0, 0, 0, 0, 0, 0};
     assert(std::equal(std::begin(arr4), std::end(arr4),
