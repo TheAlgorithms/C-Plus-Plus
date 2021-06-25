@@ -61,7 +61,7 @@ std::vector<int> N_bonacci(int n, unsigned int m) {
  */
 static void test() {
     // n = 1 m = 1 return [1, 1]
-    std::cout << "Test 1... ";
+    std::cout << "1st test";
     std::vector<int> arr1 = math::n_bonacci::N_bonacci(1,1);
     std::vector<int> output_array1 = {1, 1};
     assert(std::equal(std::begin(arr1), std::end(arr1), std::begin(output_array1)));
