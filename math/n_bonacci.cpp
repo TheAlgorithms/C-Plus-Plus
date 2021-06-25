@@ -31,7 +31,7 @@ namespace n_bonacci {
 /**
  * @brief Function implements n-bonacci series
  * @tparam T type of array
- * @param n,m m is the number of terms in n-bonacci sequence
+ * @param n is the number of terms in the N-Bonacci sequence
  * @returns the n-bonacci sequence as vector array
  */
 
