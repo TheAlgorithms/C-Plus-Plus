@@ -37,10 +37,6 @@ namespace n_bonacci {
  * @returns the n-bonacci sequence as vector array
  */
 std::vector<int> N_bonacci(int n, unsigned int m) {
-    /**
-     * This function finds N-bonacci series for @param n value and @param m terms
-     */
-
     std::vector<int> a(m, 0);  // we create an empty array of size m
 
     int i = 0;
