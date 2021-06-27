@@ -59,7 +59,7 @@ struct Node {
 };
 
 /**
- * @brief defines the functions associated with the binary tree.
+ * @brief defines the functions associated with the binary tree
  */
 class BinaryTree {
     public:
