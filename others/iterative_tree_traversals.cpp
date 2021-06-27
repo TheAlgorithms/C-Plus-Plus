@@ -52,7 +52,7 @@ namespace iterative_tree_traversals {
 /**
  * @brief defines the structure of a node of the tree
  */
-struct Node{
+struct Node {
     int data = 0;       ///< The value/key of the node.
     struct Node *left;  ///< struct pointer to left subtree.
     struct Node *right; ///< struct pointer to right subtree.
