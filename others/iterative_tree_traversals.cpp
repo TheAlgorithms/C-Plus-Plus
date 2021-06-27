@@ -71,7 +71,7 @@ class BinaryTree {
 
 /**
  * @brief will allocate the memory for a node and, along the data and return the node.
- * @param data 
+ * @param data value that a particular node will contain. 
  * @return pointer to the newly created node with assigned data. 
  */
 Node *  BinaryTree::createNewNode(int data) {
