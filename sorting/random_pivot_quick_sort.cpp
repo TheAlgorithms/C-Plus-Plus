@@ -40,7 +40,7 @@
 #include <iostream>       /// for IO operations
 #include <ctime>         /// for initializing random number generator
 #include <cassert>      /// for assert
-#include <algorithm>   /// for std::is_sorted()
+#include <algorithm>   /// for std::is_sorted(), std::swap()
 #include <array>      /// for std::array
 #include <tuple>     /// for returning multiple values form a function at once
 
@@ -62,106 +62,95 @@ namespace sorting {
          * @returns void
          * */
         template<size_t T>
-        void showArray(std::array<int, T> arr) {
-            for (int i = 0; i < arr.size(); i++) {
+        void showArray(std::array<int64_t , T> arr) {
+            for (int64_t i = 0; i < arr.size(); i++) {
                 std::cout << arr[i] << " ";
             }
             std::cout << std::endl;
         }
 
         /**
-         * @brief Takes the start and end indices of an array and returns a random integer between the range of those two
+         * @brief Takes the start and end indices of an array and returns a random int64_teger between the range of those two
          * for selecting pivot element.
          *
          * @param start The starting index.
          * @param end The ending index.
-         * @returns int A random number between start and end index.
+         * @returns int64_t A random number between start and end index.
          * */
-        int getRandomIndex(int start, int end) {
+        int64_t getRandomIndex(int64_t start, int64_t end) {
             srand(time(nullptr)); // Initialize random number generator.
-            int randomPivotIndex = start + rand() % (end - start + 1);
+            int64_t randomPivotIndex = start + rand() % (end - start + 1);
             return randomPivotIndex;
         }
 
         /**
-         * Nothing fancy, just a simple function to swap two elements in array.
-         * @tparam size size of the array to be passed as argument.
-         * @param arr The actual array.
-         * @param i An index of array.
-         * @param j Another index of the passed array
-         * @returns std::array<int, size> Same array with swapped elems.
-        */
-        template<size_t size>
-        std::array<int, size> swap(std::array<int, size> arr, int i, int j) {
-            // Nothing fancy, just a simple snippet to swap two numbers in an array.
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-            return arr;
-        }
-
-        /**
-         * A partition function which handles the partition logic of quick sort.
+         * @brief A partition function which handles the partition logic of quick sort.
          * @tparam size size of the array to be passed as argument.
          * @param start The start index of the passed array
          * @param end The ending index of the passed array
-         * @returns std::tuple<int, std::array<int, size>> A tuple of pivot index and pivot sorted array.
+         * @returns std::tuple<int64_t , std::array<int64_t , size>> A tuple of pivot index and pivot sorted array.
         */
         template<size_t size>
-        std::tuple<int, std::array<int, size>> partition(std::array<int, size> arr, int start, int end) {
+        std::tuple<int64_t , std::array<int64_t , size>> partition(std::array<int64_t , size> arr, int64_t start, int64_t end) {
 
-            int pivot = arr[end];  // Randomly selected element will be here from caller function (quickSortRP()).
-            int pInd = start;
+            int64_t pivot = arr[end];  // Randomly selected element will be here from caller function (quickSortRP()).
+            int64_t pInd = start;
 
-            for (int i = start; i < end; i++) {
+            for (int64_t i = start; i < end; i++) {
                 if (arr[i] <= pivot) {
-                    arr = swap(arr, i, pInd);  // swapping the elements from current index to pInd.
+                    std::swap(arr[i], arr[pInd]);  // swapping the elements from current index to pInd.
                     pInd++;
                 }
             }
-            arr = swap(arr, pInd, end);  // swapping the pivot element to its sorted position
+            std::swap(arr[pInd], arr[end]);  // swapping the pivot element to its sorted position
             return std::make_tuple(pInd, arr);
         }
 
+        /**
+         * @brief Random pivot quick sort function. This function is the starting point of the algorithm.
+         * @tparam size size of the array to be passed as argument.
+         * @param start The start index of the passed array
+         * @param end The ending index of the passed array
+         * @returns std::array<int64_t , size> A fully sorted array in ascending order.
+        */
         template<size_t size>
-        std::array<int, size> quickSortRP(std::array<int, size> arr, int start, int end) {
+        std::array<int64_t , size> quickSortRP(std::array<int64_t , size> arr, int64_t start, int64_t end) {
             if (start < end) {
 
-                int randomIndex = getRandomIndex(start, end);
+                int64_t randomIndex = getRandomIndex(start, end);
 
                 // switching the pivot with right most bound.
-                std::array<int, arr.size()> pivotRandomizedArray = swap(arr, end, randomIndex);
+                std::swap(arr[end], arr[randomIndex]);
 
-                int pivotIndex;
+                int64_t pivotIndex = 0;
                 // getting pivot index and pivot sorted array.
-                std::tie(pivotIndex, arr) = partition(pivotRandomizedArray, start, end);
+                std::tie(pivotIndex, arr) = partition(arr, start, end);
 
                 // Recursively calling
-                std::array<int, arr.size()> rightSortingLeft = quickSortRP(arr, start, pivotIndex - 1);
-                std::array<int, arr.size()> full_sorted = quickSortRP(rightSortingLeft, pivotIndex + 1, end);
+                std::array<int64_t , arr.size()> rightSortingLeft = quickSortRP(arr, start, pivotIndex - 1);
+                std::array<int64_t , arr.size()> full_sorted = quickSortRP(rightSortingLeft, pivotIndex + 1, end);
                 arr = full_sorted;
             }
             return arr;
         }
-    }
-}
-
+        }  // namespace random_pivot_quick_sort
+        }  // namespace sorting
 
 /**
- * A function utility to generate unsorted array of given size and range.
+ * @brief A function utility to generate unsorted array of given size and range.
  * @tparam size Size of the output array.
  * @param from Stating of the range.
  * @param to Ending of the range.
- * @returns std::array<int, size> Unsorted array of specified size.
+ * @returns std::array<int64_t , size> Unsorted array of specified size.
  * */
 template<size_t size>
-std::array<int, size> generateUnsortedArray(int from, int to) {
+std::array<int64_t , size> generateUnsortedArray(int64_t from, int64_t to) {
     srand(time(nullptr));
-    std::array<int, size> unsortedArray{};
+    std::array<int64_t , size> unsortedArray{};
     assert(from < to);
-    int i = 0;
+    int64_t i = 0;
     while (i < size) {
-        int randomNum = from + rand() % (to - from + 1);
+        int64_t randomNum = from + rand() % (to - from + 1);
         if (randomNum) {
             unsortedArray[i] = randomNum;
             i++;
@@ -176,6 +165,11 @@ std::array<int, size> generateUnsortedArray(int from, int to) {
  */
 class TestCases {
 private:
+    /**
+    * @brief A function to print64_t given message on console.
+    * @tparam T Type of the given message.
+    * @returns void
+    * */
     template<typename T>
     void log(T msg) {
         // It's just to avoid writing cout and endl
@@ -183,6 +177,10 @@ private:
     }
 
 public:
+    /**
+    * @brief Executes test cases
+    * @returns void
+    * */
     void runTests() {
         log("Running Tests...");
 
@@ -194,19 +192,23 @@ public:
         std::cout << std::endl;
     }
 
+    /**
+    * @brief A test case with single input
+    * @returns void
+    * */
     void testCase_1() {
-        const int inputSize = 1;
+        const int64_t inputSize = 1;
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         log("This is test case 1 for Random Pivot Quick Sort Algorithm : ");
         log("Description:");
         log("   EDGE CASE : Only contains one element");
-        std::array<int, inputSize> unsorted_arr{2};
+        std::array<int64_t , inputSize> unsorted_arr{2};
 
-        int start = 0;
-        int end = unsorted_arr.size() - 1; // length - 1
+        int64_t start = 0;
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm of data of length 50 ...");
-        std::array<int, unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
+        std::array<int64_t , unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
                 unsorted_arr, start, end
         );
         log("Algorithm finished!");
@@ -220,19 +222,23 @@ public:
 
     }
 
+    /**
+    * @brief A test case with input array of length 500
+    * @returns void
+    * */
     void testCase_2() {
-        const int inputSize = 500;
+        const int64_t inputSize = 500;
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         log("Description:");
         log("   BIG INPUT : Contains 500 elements and repeated elements");
         log("This is test case 2 for Random Pivot Quick Sort Algorithm : ");
-        std::array<int, inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
+        std::array<int64_t , inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
 
-        int start = 0;
-        int end = unsorted_arr.size() - 1; // length - 1
+        int64_t start = 0;
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm of data of length 500 ...");
-        std::array<int, unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
+        std::array<int64_t , unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
                 unsorted_arr, start, end
         );
         log("Algorithm finished!");
@@ -245,19 +251,23 @@ public:
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
+    /**
+    * @brief A test case with array of length 1000.
+    * @returns void
+    * */
     void testCase_3() {
-        const int inputSize = 1000;
+        const int64_t inputSize = 1000;
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         log("This is test case 3 for Random Pivot Quick Sort Algorithm : ");
         log("Description:");
         log("   LARGE INPUT : Contains 1000 elements and repeated elements");
-        std::array<int, inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
+        std::array<int64_t , inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
 
-        int start = 0;
-        int end = unsorted_arr.size() - 1; // length - 1
+        int64_t start = 0;
+        int64_t end = unsorted_arr.size() - 1; // length - 1
 
         log("Running algorithm...");
-        std::array<int, unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
+        std::array<int64_t , unsorted_arr.size()> sorted_arr = sorting::random_pivot_quick_sort::quickSortRP(
                 unsorted_arr, start, end
         );
         log("Algorithm finished!");
@@ -290,12 +300,12 @@ static void test() {
 int main(int argc, char *argv[]) {
     test(); // Executes various test cases.
 
-    const int inputSize = 10;
-    std::array<int, inputSize> unsorted_array = generateUnsortedArray<inputSize>(50, 1000);
+    const int64_t inputSize = 10;
+    std::array<int64_t , inputSize> unsorted_array = generateUnsortedArray<inputSize>(50, 1000);
     std::cout << "Unsorted array is : " << std::endl;
     sorting::random_pivot_quick_sort::showArray(unsorted_array);
 
-    std::array<int, inputSize> sorted_array = sorting::random_pivot_quick_sort::quickSortRP(
+    std::array<int64_t , inputSize> sorted_array = sorting::random_pivot_quick_sort::quickSortRP(
             unsorted_array, 0,
             unsorted_array.size() - 1
     );
