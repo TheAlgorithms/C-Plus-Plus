@@ -50,7 +50,7 @@ namespace others {
  */
 namespace iterative_tree_traversals {
 /**
- * @brief defines the structure of a node of the tree.
+ * @brief defines the structure of a node of the tree
  */
 struct Node{
     int data = 0;       ///< The value/key of the node.
