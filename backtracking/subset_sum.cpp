@@ -27,22 +27,22 @@ namespace Subsets {
  * @returns count of the number of subsets with required sum
  */
 
-std::uint64_t subset_sum(int sum, std::vector<int> &in_arr) {
+std::uint64_t subset_sum(int sum, const std::vector<int> &in_arr) {
    	int nelement = in_arr.size();	//number of subset element
 	int count_of_subset = 0;
 
-	for(int i=0; i < (1 << (nelement)); i++) {
+	for (int i=0; i < (1 << (nelement)); i++) {
 		std::vector<int> subset;
-		for( int j=0 ; j < nelement ; j++) {
+		for ( int j=0 ; j < nelement ; j++) {
 			if (i & (1<<j)) {
 				subset.push_back(in_arr[j]);
 			}
 		}
 		int check=0;
-		for( int k=0 ; k < subset.size(); k++) {
+		for ( int k=0 ; k < subset.size(); k++) {
 			check += subset[k];
 		}
-		if(check==sum) {
+		if (check==sum) {
 			count_of_subset++;
 		}
 	}
