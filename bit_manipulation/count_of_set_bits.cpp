@@ -28,10 +28,10 @@ namespace bitCount {
  * @returns count , the number set bit in binary representation of n
  */
 
-std::uint64_t countSetBits(unsigned int n) {
+std::uint64_t countSetBits(int n) {
     int count = 0; // "count" variable is used to count number of 1's in binary representation of the number
     while (n!=0) {
-        count += n&1;
+        count += n & 1;
         n=n>>1; // n=n/2 
     }
     return count;
