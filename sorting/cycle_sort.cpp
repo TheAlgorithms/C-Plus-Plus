@@ -1,15 +1,8 @@
 /**
  * @file
- * @brief Implementation of [Cycle
- * sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
- *
+ * @brief Implementation of [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  * @details
- * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best cas
- * and works in \f$O(n^2)\f$ in worst case. If a element is already at its
- * correct  position, do nothing. If a element is not at its correct position,
- * we then need to move it to its correct position by computing the correct
- * positions.Therefore, we should make sure the duplicate elements.
- *
+ * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best case and works in \f$O(n^2)\f$ in worst case. If a element is already at its correct  position, do nothing. If a element is not at its correct position, we then need to move it to its correct position by computing the correct positions.Therefore, we should make sure the duplicate elements.
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
@@ -25,8 +18,7 @@
 namespace sorting {
 /**
  * @namespace cycle_sort
- * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
- * algorithm
+ * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  */
 namespace cycle_sort {
 /**
@@ -58,8 +50,11 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
 
         // duplicate  elements
         while (item == arr[pos]) pos += 1;
-        std::swap(item, arr[pos]);
-
+        if (pos == cycle_start) {
+            continue;
+        } else {
+            std::swap(item, arr[pos]);
+        }
         // Rest of the  elements
         while (pos != cycle_start) {
             pos = cycle_start;
@@ -71,7 +66,11 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
             }
             // duplicate  elements
             while (item == arr[pos]) pos += 1;
-            std::swap(item, arr[pos]);
+            if (item == arr[pos]) {
+                continue;
+            } else {
+                std::swap(item, arr[pos]);
+            }
         }
     }
     return arr;
@@ -84,9 +83,8 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
  * @returns void
  */
 static void test() {
-    // [506, 48, 123, 79, 0, 362, 951, 500, 0] return [0, 0, 48, 79, 123, 362,
-    // 500, 506, 951]
-    std::vector<int> array1 = {506, 48, 123, 79, 0, 362, 951, 500, 0};
+    // [4, 3, 2, 1] return [1, 2, 3, 4]
+    std::vector<int> array1 = {4, 3, 2, 1};
     std::cout << "Test 1... ";
     std::vector<int> arr1 = sorting::cycle_sort::cycleSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
@@ -97,6 +95,20 @@ static void test() {
     std::cout << "Test 2... ";
     std::vector<double> arr2 = sorting::cycle_sort::cycleSort(array2);
     assert(std::is_sorted(std::begin(arr2), std::end(arr2)));
+    std::cout << "passed" << std::endl;
+
+    // [3, 3, 3, 3] return [3, 3, 3, 3]
+    std::vector<int> array3 = {3, 3, 3, 3};
+    std::cout << "Test 3... ";
+    std::vector<int> arr3 = sorting::cycle_sort::cycleSort(array3);
+    assert(std::is_sorted(std::begin(arr3), std::end(arr3)));
+    std::cout << "passed" << std::endl;
+
+    // [9, 4, 6, 8, 14, 3] return [9, 4, 6, 8, 14, 3]
+    std::vector<int> array4 = {3, 4, 6, 8, 9, 14};
+    std::cout << "Test 4... ";
+    std::vector<int> arr4 = sorting::cycle_sort::cycleSort(array4);
+    assert(std::is_sorted(std::begin(arr4), std::end(arr4)));
     std::cout << "passed" << std::endl;
 }
 
