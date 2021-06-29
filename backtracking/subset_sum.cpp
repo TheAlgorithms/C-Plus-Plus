@@ -30,7 +30,7 @@ namespace Subsets {
  */
 
 std::uint64_t subset_sum(int sum, const std::vector<int> &in_arr) {
-    int nelement = in_arr.size();  // number of subset element
+    int nelement = in_arr.size();
     int count_of_subset = 0;
 
     for (int i = 0; i < (1 << (nelement)); i++) {
