@@ -118,7 +118,7 @@ static void test() {
 }
 
 /**
- * @brief main function
+ * @brief Main function
  * @returns 0 on exit
  */
 int main() {
