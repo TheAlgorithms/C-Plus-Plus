@@ -6,6 +6,10 @@ Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-P
 
 ## Contributing
 
+### Maintainer/reviewer
+
+**Please check the [reviewer code](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/REVIEWER_CODE.md) file for maintainers and reviewers.**
+
 ### Contributor
 
 Being a contributor at The Algorithms, we request you to follow the points mentioned below:
@@ -49,7 +53,7 @@ You can add new algorithms or data structures which are **not present in the rep
 
 - Make sure to add examples and test cases in your `main()` function.
 - If you find an algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
-- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with the expected output. Use the `assert()` function to confirm that the tests will pass. Requires including the `cassert` header.
+- Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with the expected output. Use the `assert()` function to confirm that the tests will pass. Requires including the `cassert` library.
 
 #### Typical structure of a program
 
@@ -58,15 +62,15 @@ You can add new algorithms or data structures which are **not present in the rep
  * @file
  * @brief Add one line description here
  * @details
- * This is a multi line
+ * This is a multi-line
  * description containing links, references,
- * math equations, etc
+ * math equations, etc.
  * @author [Name](https://github.com/handle)
  * @see related_file.cpp, another_file.cpp
  */
 
-#include <cassert>
-#include
+#include <cassert>   /// for assert
+#include             /// for `some function here`
 
 /**
  * @namespace <check from other files in this repo>
@@ -74,7 +78,7 @@ You can add new algorithms or data structures which are **not present in the rep
 namespace name {
 
 /**
- * Class documentation
+ * @brief Class documentation
  */
 class class_name {
  private:
@@ -86,7 +90,7 @@ class class_name {
 }
 
 /**
- * Function documentation
+ * @brief Function documentation
  * @tparam T this is a one-line info about T
  * @param param1 on-line info about param1
  * @param param2 on-line info about param2
@@ -105,7 +109,7 @@ bool func(int param1, T param2) {
 } // namespace name
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
@@ -122,7 +126,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test(); // execute the tests
+    test();  // run self-test implementations
     // code here
     return 0;
 }
@@ -139,7 +143,7 @@ my_new_cpp_class.cpp    is correct format
 ```
 
 - It will be used to dynamically create a directory of files and implementation.
-- File name validation will run on docker to ensure validity.
+- File name validation will run on Docker to ensure validity.
 - If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if `median_search.cpp` already exists in the `search` folder, and you are contributing a new implementation, the filename should be `median_search2.cpp` and for a third implementation, `median_search3.cpp`.
 
 #### New Directory guidelines
@@ -196,7 +200,7 @@ cmake -B build -S .
 
 #### Static Code Analyzer
 
-We use [clang-tidy](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [.clang-tidy](.clang-tidy).
+We use [`clang-tidy`](https://clang.llvm.org/extra/clang-tidy/) as a static code analyzer with a configuration in [`.clang-tidy`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy).
 
 ```bash
 clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
@@ -204,7 +208,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 
 #### Code Formatter
 
-[__clang-format__](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
+[`__clang-format__`](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
 
 - Installation (only needs to be installed once.)
   - Mac (using home-brew): `brew install clang-format`
