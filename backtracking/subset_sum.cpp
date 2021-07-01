@@ -19,7 +19,7 @@ namespace backtracking {
  * @namespace Subsets
  * @brief Functions for counting subsets in a given array with a given sum
  * Time Complexity: O(n * 2^n), where ‘n’ is the number of elements in the given
- * array. size of the array.
+ * array.
  */
 namespace Subsets {
 /**
