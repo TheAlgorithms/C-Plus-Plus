@@ -5,8 +5,8 @@
  * @details
  *  * Sublist search is used to detect a presence of one list in another list.
  *  * Suppose we have a single-node list (let's say the first list), and we
- *  want to ensure that the list is present in another list (let's say the second
- *  list), then we can perform the sublist search to find it.
+ *  want to ensure that the list is present in another list (let's say the
+ * second list), then we can perform the sublist search to find it.
  *
  *  * For instance, the first list contains these elements: 23 -> 30 -> 41,
  *  and the second list contains these elements: 10 -> 15 -> 23 -> 30 -> 41
@@ -33,7 +33,9 @@
 namespace search {
 /**
  * @namespace sublist_search
- * @brief Functions for the [Sublist Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list) implementation
+ * @brief Functions for the [Sublist
+ * Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
+ * implementation
  */
 namespace sublist_search {
 /**
@@ -41,7 +43,7 @@ namespace sublist_search {
  */
 struct Node {
     uint32_t data = 0;
-    Node *next;
+    Node *next{};
 };
 
 /**
@@ -168,10 +170,13 @@ class TestCases {
         std::vector<uint64_t> sublistData = {6};
         std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
 
-        search::sublist_search::Node *sublistLL = search::sublist_search::makeLinkedList(sublistData);
-        search::sublist_search::Node *mainlistLL = search::sublist_search::makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -209,10 +214,13 @@ class TestCases {
             temp++;
         }
 
-        search::sublist_search::Node *sublistLL = search::sublist_search::makeLinkedList(sublistData);
-        search::sublist_search::Node *mainlistLL = search::sublist_search::makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -245,10 +253,13 @@ class TestCases {
             sublistData.push_back(i + 1);
         }
 
-        search::sublist_search::Node *sublistLL = search::sublist_search::makeLinkedList(sublistData);
-        search::sublist_search::Node *mainlistLL = search::sublist_search::makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -280,8 +291,10 @@ int main(int argc, char *argv[]) {
 
     std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
     std::vector<uint64_t> sublistData = {6, 8};
-    search::sublist_search::Node *mainlistLL = search::sublist_search::makeLinkedList(mainlistData);
-    search::sublist_search::Node *sublistLL = search::sublist_search::makeLinkedList(sublistData);
+    search::sublist_search::Node *mainlistLL =
+        search::sublist_search::makeLinkedList(mainlistData);
+    search::sublist_search::Node *sublistLL =
+        search::sublist_search::makeLinkedList(sublistData);
 
     bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
