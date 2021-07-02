@@ -35,54 +35,68 @@ struct Node {
 };
 
 /**
- * @brief Main searching function
- * @param sublist A linked list which is supposed to be searched in mainList.
- * @param mainList A linked list in which sublist will be searched.
- * @returns true if the sublist is found
- * @returns false if the sublist is NOT found
- */
-bool sublistSearch(Node *sublist, Node *mainList) {
-    if (sublist == nullptr || mainList == nullptr) {
-        return false;
-    }
+ * @namespace search
+ * @brief Searching algorithms
+ * */
+namespace search {
+    /**
+     * @namespace sublist_search
+     * @brief Functions for the [Sublist Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list) implementation
+     * */
+    namespace sublist_search {
 
-    Node *target_ptr = sublist;
-
-    while (mainList != nullptr) {
-        Node *main_ptr = mainList;  // Initialize main pointer to the current
-                                    // node of main list.
-
-        while (target_ptr != nullptr) {
-            if (main_ptr == nullptr) {
+        /**
+         * @brief Main searching function
+         * @param sublist A linked list which is supposed to be searched in mainList.
+         * @param mainList A linked list in which sublist will be searched.
+         * @returns true if the sublist is found
+         * @returns false if the sublist is NOT found
+         */
+        bool sublistSearch(Node *sublist, Node *mainList) {
+            if (sublist == nullptr || mainList == nullptr) {
                 return false;
-
-            } else if (main_ptr->data == target_ptr->data) {
-                // If the data of target node and main node is equal then move
-                // to the next node of both lists.
-                target_ptr = target_ptr->next;
-                main_ptr = main_ptr->next;
-
-            } else {
-                break;
             }
+
+            Node *target_ptr = sublist;
+
+            while (mainList != nullptr) {
+                Node *main_ptr = mainList;  // Initialize main pointer to the current
+                // node of main list.
+
+                while (target_ptr != nullptr) {
+                    if (main_ptr == nullptr) {
+                        return false;
+
+                    } else if (main_ptr->data == target_ptr->data) {
+                        // If the data of target node and main node is equal then move
+                        // to the next node of both lists.
+                        target_ptr = target_ptr->next;
+                        main_ptr = main_ptr->next;
+
+                    } else {
+                        break;
+                    }
+                }
+
+                if (target_ptr == nullptr) {
+                    // Is target pointer becomes null that means the target list is been
+                    // traversed without returning false. Which means the sublist has
+                    // been found and return ture.
+                    return true;
+                }
+
+                target_ptr = sublist;  // set the target pointer again to stating point
+                // of target list.
+                mainList = mainList->next;  // set the main pointer to the next element
+                // of the main list and repeat the algo.
+            }
+
+            // If the main list is exhausted, means sublist does not found, return false
+            return false;
         }
 
-        if (target_ptr == nullptr) {
-            // Is target pointer becomes null that means the target list is been
-            // traversed without returning false. Which means the sublist has
-            // been found and return ture.
-            return true;
-        }
-
-        target_ptr = sublist;  // set the target pointer again to stating point
-                               // of target list.
-        mainList = mainList->next;  // set the main pointer to the next element
-                                    // of the main list and repeat the algo.
-    }
-
-    // If the main list is exhausted, means sublist does not found, return false
-    return false;
-}
+    } // namespace sublist_search
+} // namespace search
 
 /**
  * @brief A simple function to print the linked list
@@ -122,17 +136,26 @@ Node *makeLinkedList(const std::vector<int> &data) {
 }
 
 /**
- * A class, encapsulating the necessary test cases.
+ * @brief A class, encapsulating the necessary test cases.
  */
 class TestCases {
- private:
-    template <typename T>
+private:
+    /**
+    * @brief A function to print given message on console.
+    * @tparam T Type of the given message.
+    * @returns void
+    * */
+    template<typename T>
     void log(T msg) {
         // It's just to avoid writing cout and endl
         std::cout << "[TESTS] : ---> " << msg << std::endl;
     }
 
- public:
+public:
+    /**
+    * @brief Executes test cases
+    * @returns void
+    * */
     void runTests() {
         log("Running Tests...");
 
@@ -144,11 +167,14 @@ class TestCases {
         std::cout << std::endl;
     }
 
+    /**
+    * @brief A test case contains edge case, Only contains one element.
+    * @returns void
+    * */
     void testCase_1() {
         const bool expectedOutput = true;
 
-        log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-            "~");
+        log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         log("This is test case 1 for sublist search Algorithm : ");
         log("Description:");
         log("   EDGE CASE : Only contains one element");
@@ -159,20 +185,23 @@ class TestCases {
         Node *sublistLL = makeLinkedList(sublistData);
         Node *mainlistLL = makeLinkedList(mainlistData);
 
-        bool exists = sublistSearch(sublistLL, mainlistLL);
+        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
         log("Assertion check passed!");
 
         log("[PASS] : TEST CASE 1 PASS!");
-        log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-            "~");
+        log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
         delete (sublistLL);
         delete (mainlistLL);
     }
 
+    /**
+    * @brief A test case which contains main list of 100 elements and sublist of 20.
+    * @returns void
+    * */
     void testCase_2() {
         const bool expectedOutput = true;
 
@@ -200,7 +229,7 @@ class TestCases {
         Node *sublistLL = makeLinkedList(sublistData);
         Node *mainlistLL = makeLinkedList(mainlistData);
 
-        bool exists = sublistSearch(sublistLL, mainlistLL);
+        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -211,6 +240,10 @@ class TestCases {
             "~");
     }
 
+    /**
+    * @brief A test case which contains main list of 50 elements and sublist of 20.
+    * @returns void
+    * */
     void testCase_3() {
         const bool expectedOutput = false;
 
@@ -236,7 +269,7 @@ class TestCases {
         Node *sublistLL = makeLinkedList(sublistData);
         Node *mainlistLL = makeLinkedList(mainlistData);
 
-        bool exists = sublistSearch(sublistLL, mainlistLL);
+        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -264,14 +297,14 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  // Executing various test cases first.
+    test();  // Run self test implementations
 
     std::vector<int> mainlistData = {2, 5, 6, 7, 8};
     std::vector<int> sublistData = {6, 8};
     Node *mainlistLL = makeLinkedList(mainlistData);
     Node *sublistLL = makeLinkedList(sublistData);
 
-    bool exists = sublistSearch(sublistLL, mainlistLL);
+    bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
     std::cout << "Sublist :" << std::endl;
     printLinkedList(sublistLL);
