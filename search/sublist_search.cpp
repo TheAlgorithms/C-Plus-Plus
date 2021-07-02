@@ -252,7 +252,7 @@ class TestCases {
  * @brief A test function that runs various checks
  * @returns void
  */
-void test() {
+static void test() {
     TestCases tc;
     tc.runTests();
 }
