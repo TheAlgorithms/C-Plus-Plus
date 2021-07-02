@@ -85,7 +85,7 @@ bool sublistSearch(Node *sublist, Node *mainList) {
 }
 
 /**
- * @brief A simple function to print the linked list.
+ * @brief A simple function to print the linked list
  * @param start The head of the linked list
  * @returns void
  */
