@@ -38,7 +38,8 @@ struct Node {
  * @brief Main searching function
  * @param sublist A linked list which is supposed to be searched in mainList.
  * @param mainList A linked list in which sublist will be searched.
- * @returns bool If the sublist is found, returns true, else false.
+ * @returns true if the sublist is found
+ * @returns false if the sublist is NOT found
  */
 bool sublistSearch(Node *sublist, Node *mainList) {
     if (sublist == nullptr || mainList == nullptr) {
