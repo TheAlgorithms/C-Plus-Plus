@@ -27,7 +27,7 @@
 #include <vector>    /// for std::vector
 
 /**
- * A Node structure representing single link Node in a linked list.
+ * @brief A Node structure representing a single link Node in a linked list.
  */
 struct Node {
     int data;
