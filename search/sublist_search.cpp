@@ -249,7 +249,7 @@ class TestCases {
 };
 
 /**
- * @brief A test function that runs various checks
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
