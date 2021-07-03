@@ -53,7 +53,7 @@ namespace iterative_tree_traversals {
  * @brief defines the structure of a node of the tree
  */
 struct Node {
-    int data = 0;       ///< The value/key of the node.
+    int64_t data = 0;       ///< The value/key of the node.
     struct Node *left;  ///< struct pointer to left subtree.
     struct Node *right; ///< struct pointer to right subtree.
 };
@@ -63,18 +63,18 @@ struct Node {
  */
 class BinaryTree {
     public:
-        Node *createNewNode(int);                    ///< function that will create new node for insertion.
-        std::vector<int> preOrderIterative(Node *);  ///< function that takes root of the tree as an argument, and returns its preorder traversal.
-        std::vector<int> postOrderIterative(Node *); ///< function that takes root of the tree as an argument, and returns its postorder traversal.
-        std::vector<int> inOrderIterative(Node *);   ///< function that takes root of the tree as an argument, and returns its inorder traversal.
+        Node *createNewNode(int64_t);                    ///< function that will create new node for insertion.
+        std::vector<int64_t> preOrderIterative(Node *);  ///< function that takes root of the tree as an argument, and returns its preorder traversal.
+        std::vector<int64_t> postOrderIterative(Node *); ///< function that takes root of the tree as an argument, and returns its postorder traversal.
+        std::vector<int64_t> inOrderIterative(Node *);   ///< function that takes root of the tree as an argument, and returns its inorder traversal.
 };
 
 /**
  * @brief will allocate the memory for a node and, along the data and return the node.
- * @param data value that a particular node will contain. 
+ * @param data value that a particular node will contain.
  * @return pointer to the newly created node with assigned data. 
  */
-Node *  BinaryTree::createNewNode(int data) {
+Node *  BinaryTree::createNewNode(int64_t data) {
     Node *node = new Node();
     node->data = data;
     node->left = node->right = nullptr;
@@ -87,9 +87,9 @@ Node *  BinaryTree::createNewNode(int data) {
  * @param root head/root node of a tree
  * @return result that is containing the preorder traversal of a tree
  */
-std::vector<int> BinaryTree::preOrderIterative(Node *root) {   
+std::vector<int64_t> BinaryTree::preOrderIterative(Node *root) {   
     std::stack<Node *> stack; ///< is used to find and traverse the child nodes.
-    std::vector<int> result;  ///< list of values, sorted in pre-order.
+    std::vector<int64_t> result;  ///< list of values, sorted in pre-order.
     
     stack.push(root);
     
@@ -115,9 +115,9 @@ std::vector<int> BinaryTree::preOrderIterative(Node *root) {
  * @param root head/root node of a tree
  * @return result that is containing the postorder traversal of a tree
  */
-std::vector<int> BinaryTree::postOrderIterative(Node *root) {   
+std::vector<int64_t> BinaryTree::postOrderIterative(Node *root) {   
     std::stack<Node *> stack; ///< is used to find and traverse the child nodes.
-    std::vector<int> result;  ///< List of values, sorted in post-order.
+    std::vector<int64_t> result;  ///< List of values, sorted in post-order.
     
     stack.push(root);
     
@@ -145,9 +145,9 @@ std::vector<int> BinaryTree::postOrderIterative(Node *root) {
  * @param root head/root node of a tree
  * @return result that is containing the inorder traversal of a tree
  */
-std::vector<int> BinaryTree::inOrderIterative(Node *root) {
+std::vector<int64_t> BinaryTree::inOrderIterative(Node *root) {
     std::stack<Node *> stack; ///< is used to find and traverse the child nodes.
-    std::vector<int> result;  ///< List of values, sorted in in-order.
+    std::vector<int64_t> result;  ///< List of values, sorted in in-order.
 
     Node *current = root;
     
@@ -172,8 +172,8 @@ std::vector<int> BinaryTree::inOrderIterative(Node *root) {
  * @param root head/root node of a tree
  */
 static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
-    std::vector<int> actual_result{1, 2, 4, 5, 3};
-    std::vector<int> result; ///< result stores the preorder traversal if the binary tree
+    std::vector<int64_t> actual_result{1, 2, 4, 5, 3};
+    std::vector<int64_t> result; ///< result stores the preorder traversal of the binary tree
 
     // Calling preOrderIterative() function by passing a root node,
     // and storing the preorder traversal in result.
@@ -191,13 +191,13 @@ static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, othe
 }
 
 /**
- * @brief Test the computed postorder with the actual postorder
+ * @brief Test the computed postorder with the actual postorder.
  * @param binaryTree instance of BinaryTree class
  * @param root head/root node of a tree
  */
 static void test2(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
-    std::vector<int> actual_result{4, 5, 2, 3, 1};
-    std::vector<int> result; ///< result stores the postorder traversal if the binary tree.
+    std::vector<int64_t> actual_result{4, 5, 2, 3, 1};
+    std::vector<int64_t> result; ///< result stores the postorder traversal of the binary tree.
 
     // Calling postOrderIterative() function by passing a root node,
     // and storing the postorder traversal in result.
@@ -220,8 +220,80 @@ static void test2(others::iterative_tree_traversals::BinaryTree binaryTree, othe
  * @param root head/root node of a tree
  */
 static void test3(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
-    std::vector<int> actual_result{4, 2, 5, 1, 3};
-    std::vector<int> result; ///< result stores the inorder traversal if the binary tree.
+    std::vector<int64_t> actual_result{4, 2, 5, 1, 3};
+    std::vector<int64_t> result; ///< result stores the inorder traversal of the binary tree.
+
+    // Calling inOrderIterative() function by passing a root node,
+    // and storing the inorder traversal in result.
+    result = binaryTree.inOrderIterative(root);
+
+    // Self-testing the result using `assert`
+    for(int i = 0; i < result.size(); i++)
+        assert(actual_result[i] == result[i]);
+
+    // Printing the result storing inorder.
+    std::cout<< "\nInOrder Traversal Is : "<< std::endl;
+    for(auto i: result) {
+        std::cout<< i<< "  ";
+    }
+}
+
+/**
+ * @brief Test the computed preorder with the actual preorder on negative value.
+ * @param binaryTree instance of BinaryTree class
+ * @param root head/root node of a tree
+ */
+static void test4(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
+    std::vector<int64_t> actual_result{-1, -2, -4, -5, -3};
+    std::vector<int64_t> result; ///< result stores the preorder traversal of the binary tree
+
+    // Calling preOrderIterative() function by passing a root node,
+    // and storing the preorder traversal in result.
+    result = binaryTree.preOrderIterative(root); 
+
+    // Self-testing the result using `assert`
+    for(int i = 0; i < result.size(); i++)
+        assert(actual_result[i] == result[i]);
+
+    // Printing the result storing preorder.
+    std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
+    for(auto i: result) {
+        std::cout<< i<< "  ";
+    }
+}
+
+/**
+ * @brief Test the computed postorder with the actual postorder on negative value.
+ * @param binaryTree instance of BinaryTree class
+ * @param root head/root node of a tree
+ */
+static void test5(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
+    std::vector<int64_t> actual_result{-4, -5, -2, -3, -1};
+    std::vector<int64_t> result; ///< result stores the postorder traversal of the binary tree.
+
+    // Calling postOrderIterative() function by passing a root node,
+    // and storing the postorder traversal in result.
+    result = binaryTree.postOrderIterative(root);
+
+    // Self-testing the result using `assert`
+    for(int i = 0; i < result.size(); i++)
+        assert(actual_result[i] == result[i]);
+
+    // Printing the result storing postorder.
+    std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
+    for(auto i: result) {
+        std::cout<< i<< "  ";
+    }
+}
+
+/**
+ * @brief Test the computed inorder with the actual inorder on negative value.
+ * @param binaryTree instance of BinaryTree class
+ * @param root head/root node of a tree
+ */
+static void test6(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
+    std::vector<int64_t> actual_result{-4, -2, -5, -1, -3};
+    std::vector<int64_t> result; ///< result stores the inorder traversal of the binary tree.
 
     // Calling inOrderIterative() function by passing a root node,
     // and storing the inorder traversal in result.
@@ -259,7 +331,7 @@ int main() {
     root->left->left = binaryTree.createNewNode(4);
     root->left->right = binaryTree.createNewNode(5);
 
-    
+    std::cout<< "\n| Tests for positive data value |"<< std::endl;
     test1(binaryTree, root);  // run preorder-iterative test
     std::cout<< "\nPre-order test Passed!"<< std::endl;
 
@@ -268,6 +340,23 @@ int main() {
 
     test3(binaryTree, root);  // run inorder-iterative test
     std::cout<< "\nIn-order test Passed!"<< std::endl;
+
+    // Modifying tree for negative values.
+    root->data = -1;
+    root->left->data = -2;
+    root->right->data = -3;
+    root->left->left->data = -4;
+    root->left->right->data = -5;
+
+    std::cout<< "\n| Tests for negative data values |"<< std::endl;
+    test4(binaryTree, root);  // run preorder-iterative test on negative values
+    std::cout<< "\nPre-order test on negative value Passed!"<< std::endl;
+
+    test5(binaryTree, root);  // run postorder-iterative test on negative values
+    std::cout<< "\nPost-order test on negative value Passed!"<< std::endl;
+
+    test6(binaryTree, root);  // run inorder-iterative test on negative values
+    std::cout<< "\nIn-order test on negative value Passed!"<< std::endl;
 
     return 0;
 }
