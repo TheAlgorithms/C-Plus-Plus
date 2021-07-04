@@ -3,21 +3,21 @@
  * @brief Implementation of the [Sublist Search
  * Algorithm](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
  * @details
- *       * Sublist search is used to detect a presence of one list in another
- * list.
- *       * Suppose we have a single-node list (let's say the first list), and we
- * want to ensure that the list is present in another list (let's say the second
- * list), then we can perform the sublist search to find it.
+ *  * Sublist search is used to detect a presence of one list in another list.
+ *  * Suppose we have a single-node list (let's say the first list), and we
+ *  want to ensure that the list is present in another list (let's say the
+ * second list), then we can perform the sublist search to find it.
  *
- *       * For instance, the first list contains these elements: 23 -> 30 -> 41,
- * and the second list contains these elements: 10 -> 15 -> 23 -> 30 -> 41
- * -> 49. At a glance, we see that the first list presents in the second list.
+ *  * For instance, the first list contains these elements: 23 -> 30 -> 41,
+ *  and the second list contains these elements: 10 -> 15 -> 23 -> 30 -> 41
+ *  -> 49. At a glance, we see that the first list presents in the second list.
  *
- *       ### Working
- *          * The sublist search algorithm works by comparing the first element
- * of the first list with the first element of the second list.
- *          * If the two values don't match, it goes to the next element of the
- * second list. It does this until the two values match.
+ * ### Working
+ *
+ *  * The sublist search algorithm works by comparing the first element
+ *  of the first list with the first element of the second list.
+ *  * If the two values don't match, it goes to the next element of the
+ *  second list. It does this until the two values match.
  *
  * @author [Nitin Sharma](https://github.com/foo290)
  */
@@ -27,11 +27,23 @@
 #include <vector>    /// for std::vector
 
 /**
- * @brief A Node structure representing a single link Node in a linked list.
+ * @namespace search
+ * @brief Searching algorithms
+ */
+namespace search {
+/**
+ * @namespace sublist_search
+ * @brief Functions for the [Sublist
+ * Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
+ * implementation
+ */
+namespace sublist_search {
+/**
+ * @brief A Node structure representing a single link Node in a linked list
  */
 struct Node {
-    int data;
-    Node *next;
+    uint32_t data = 0;
+    Node *next{};
 };
 
 /**
@@ -117,7 +129,7 @@ void printLinkedList(Node *start) {
  * stored in nodes of linked list.
  * @returns Node* A head pointer to the linked list.
  */
-Node *makeLinkedList(const std::vector<int> &data) {
+Node *makeLinkedList(const std::vector<uint64_t> &data) {
     Node *head = nullptr;
     Node *tail = nullptr;
     for (int i : data) {
@@ -134,9 +146,11 @@ Node *makeLinkedList(const std::vector<int> &data) {
     }
     return head;
 }
+}  // namespace sublist_search
+}  // namespace search
 
 /**
- * @brief A class, encapsulating the necessary test cases.
+ * @brief class encapsulating the necessary test cases
  */
 class TestCases {
 private:
@@ -179,13 +193,16 @@ public:
         log("Description:");
         log("   EDGE CASE : Only contains one element");
 
-        std::vector<int> sublistData = {6};
-        std::vector<int> mainlistData = {2, 5, 6, 7, 8};
+        std::vector<uint64_t> sublistData = {6};
+        std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
 
-        Node *sublistLL = makeLinkedList(sublistData);
-        Node *mainlistLL = makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -211,8 +228,8 @@ public:
         log("Description:");
         log("   contains main list of 100 elements and sublist of 20");
 
-        std::vector<int> sublistData(20);
-        std::vector<int> mainlistData(100);
+        std::vector<uint64_t> sublistData(20);
+        std::vector<uint64_t> mainlistData(100);
 
         for (int i = 0; i < 100; i++) {
             // Inserts 100 elements in main list
@@ -226,10 +243,13 @@ public:
             temp++;
         }
 
-        Node *sublistLL = makeLinkedList(sublistData);
-        Node *mainlistLL = makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -253,8 +273,8 @@ public:
         log("Description:");
         log("   contains main list of 50 elements and sublist of 20");
 
-        std::vector<int> sublistData(20);
-        std::vector<int> mainlistData(50);
+        std::vector<uint64_t> sublistData(20);
+        std::vector<uint64_t> mainlistData(50);
 
         for (int i = 0; i < 50; i++) {
             // Inserts 100 elements in main list
@@ -266,10 +286,13 @@ public:
             sublistData.push_back(i + 1);
         }
 
-        Node *sublistLL = makeLinkedList(sublistData);
-        Node *mainlistLL = makeLinkedList(mainlistData);
+        search::sublist_search::Node *sublistLL =
+            search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::Node *mainlistLL =
+            search::sublist_search::makeLinkedList(mainlistData);
 
-        bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+        bool exists =
+            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -297,26 +320,28 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  // Run self test implementations
+    test();  // run self-test implementations
 
-    std::vector<int> mainlistData = {2, 5, 6, 7, 8};
-    std::vector<int> sublistData = {6, 8};
-    Node *mainlistLL = makeLinkedList(mainlistData);
-    Node *sublistLL = makeLinkedList(sublistData);
+    std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
+    std::vector<uint64_t> sublistData = {6, 8};
+    search::sublist_search::Node *mainlistLL =
+        search::sublist_search::makeLinkedList(mainlistData);
+    search::sublist_search::Node *sublistLL =
+        search::sublist_search::makeLinkedList(sublistData);
 
     bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
     std::cout << "Sublist :" << std::endl;
-    printLinkedList(sublistLL);
+    search::sublist_search::printLinkedList(sublistLL);
 
     std::cout << "Main list : " << std::endl;
-    printLinkedList(mainlistLL);
+    search::sublist_search::printLinkedList(mainlistLL);
     std::cout << std::endl;
 
     if (exists) {
-        std::cout << "[TRUE] - sublist found in main list";
+        std::cout << "[TRUE] - sublist found in main list\n";
     } else {
-        std::cout << "[FALSE] - sublist NOT found in main list";
+        std::cout << "[FALSE] - sublist NOT found in main list\n";
     }
     return 0;
 }
