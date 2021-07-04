@@ -163,8 +163,8 @@ std::vector<int64_t> BinaryTree::inOrderIterative(Node *root) {
     }   
     return result;
 }
-}  //  namespace iterative_tree_traversals
-}  //  namespace others
+}  // namespace iterative_tree_traversals
+}  // namespace others
 
 /**
  * @brief Test the computed preorder with the actual preorder.
