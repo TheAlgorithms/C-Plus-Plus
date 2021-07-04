@@ -7,9 +7,9 @@
  */
 
 #include <cassert>   /// for assert
+#include <climits>   /// for std::max
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
-#include <climits>   /// for std::max
 /**
  * @namespace dynamic_programming
  * @brief House robber algorithm
