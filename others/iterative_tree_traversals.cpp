@@ -168,7 +168,7 @@ std::vector<int64_t> BinaryTree::inOrderIterative(Node *root) {
 
 /**
  * @brief Test the computed preorder with the actual preorder.
- * @param binaryTree instance of BinaryTree class
+ * @param binaryTree instance of the BinaryTree class
  * @param root head/root node of a tree
  */
 static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root){
