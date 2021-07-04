@@ -83,6 +83,7 @@ static void test() {
     assert(dynamic_programming::house_robber::houseRobber(array2,array2.size())==19); // here the four non-adjacent houses that are robbed are first, third, fifth and seventh with total sum money as 19
     std::cout << "passed" << std::endl;
 
+     // Test 3
     // [] return 0
     std::vector<int> array3 = {};
     std::cout << "Test 3... ";
