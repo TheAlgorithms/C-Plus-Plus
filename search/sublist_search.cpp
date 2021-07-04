@@ -37,25 +37,51 @@ namespace search {
  * Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
  * implementation
  */
-namespace sublist_search {
-/**
- * @brief A Node structure representing a single link Node in a linked list
- */
-struct Node {
-    uint32_t data = 0;
-    Node *next{};
-};
-
-/**
- * @namespace search
- * @brief Searching algorithms
- * */
-namespace search {
-    /**
-     * @namespace sublist_search
-     * @brief Functions for the [Sublist Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list) implementation
-     * */
     namespace sublist_search {
+        /**
+        * @brief A Node structure representing a single link Node in a linked list
+        */
+        struct Node {
+            uint32_t data = 0;
+            Node *next{};
+        };
+
+        /**
+         * @brief A simple function to print the linked list
+         * @param start The head of the linked list
+         * @returns void
+         */
+        void printLinkedList(Node *start) {
+            while (start != nullptr) {
+                std::cout << "->" << start->data;
+                start = start->next;
+            }
+            std::cout << std::endl;
+        }
+
+        /**
+         * @brief Makes a dummy linked list for testing.
+         * @param data A vector of "int" containing the data that is supposed to be
+         * stored in nodes of linked list.
+         * @returns Node* A head pointer to the linked list.
+         */
+        Node *makeLinkedList(const std::vector<uint64_t> &data) {
+            Node *head = nullptr;
+            Node *tail = nullptr;
+            for (int i : data) {
+                Node *node = new Node;
+                node->data = i;
+                node->next = nullptr;
+                if (head == nullptr) {
+                    head = node;
+                    tail = node;
+                } else {
+                    tail->next = node;
+                    tail = tail->next;
+                }
+            }
+            return head;
+        }
 
         /**
          * @brief Main searching function
@@ -110,44 +136,7 @@ namespace search {
     } // namespace sublist_search
 } // namespace search
 
-/**
- * @brief A simple function to print the linked list
- * @param start The head of the linked list
- * @returns void
- */
-void printLinkedList(Node *start) {
-    while (start != nullptr) {
-        std::cout << "->" << start->data;
-        start = start->next;
-    }
-    std::cout << std::endl;
-}
 
-/**
- * @brief Makes a dummy linked list for testing.
- * @param data A vector of "int" containing the data that is supposed to be
- * stored in nodes of linked list.
- * @returns Node* A head pointer to the linked list.
- */
-Node *makeLinkedList(const std::vector<uint64_t> &data) {
-    Node *head = nullptr;
-    Node *tail = nullptr;
-    for (int i : data) {
-        Node *node = new Node;
-        node->data = i;
-        node->next = nullptr;
-        if (head == nullptr) {
-            head = node;
-            tail = node;
-        } else {
-            tail->next = node;
-            tail = tail->next;
-        }
-    }
-    return head;
-}
-}  // namespace sublist_search
-}  // namespace search
 
 /**
  * @brief class encapsulating the necessary test cases
@@ -197,12 +186,12 @@ public:
         std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
 
         search::sublist_search::Node *sublistLL =
-            search::sublist_search::makeLinkedList(sublistData);
+                search::sublist_search::makeLinkedList(sublistData);
         search::sublist_search::Node *mainlistLL =
-            search::sublist_search::makeLinkedList(mainlistData);
+                search::sublist_search::makeLinkedList(mainlistData);
 
         bool exists =
-            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+                search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -244,12 +233,12 @@ public:
         }
 
         search::sublist_search::Node *sublistLL =
-            search::sublist_search::makeLinkedList(sublistData);
+                search::sublist_search::makeLinkedList(sublistData);
         search::sublist_search::Node *mainlistLL =
-            search::sublist_search::makeLinkedList(mainlistData);
+                search::sublist_search::makeLinkedList(mainlistData);
 
         bool exists =
-            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+                search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -287,12 +276,12 @@ public:
         }
 
         search::sublist_search::Node *sublistLL =
-            search::sublist_search::makeLinkedList(sublistData);
+                search::sublist_search::makeLinkedList(sublistData);
         search::sublist_search::Node *mainlistLL =
-            search::sublist_search::makeLinkedList(mainlistData);
+                search::sublist_search::makeLinkedList(mainlistData);
 
         bool exists =
-            search::sublist_search::sublistSearch(sublistLL, mainlistLL);
+                search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
         log("Checking assert expression...");
         assert(exists == expectedOutput);
@@ -325,9 +314,9 @@ int main(int argc, char *argv[]) {
     std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
     std::vector<uint64_t> sublistData = {6, 8};
     search::sublist_search::Node *mainlistLL =
-        search::sublist_search::makeLinkedList(mainlistData);
+            search::sublist_search::makeLinkedList(mainlistData);
     search::sublist_search::Node *sublistLL =
-        search::sublist_search::makeLinkedList(sublistData);
+            search::sublist_search::makeLinkedList(sublistData);
 
     bool exists = search::sublist_search::sublistSearch(sublistLL, mainlistLL);
 
