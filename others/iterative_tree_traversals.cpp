@@ -350,7 +350,7 @@ int main() {
 
     std::cout<< "\n| Tests for negative data values |"<< std::endl;
     test4(binaryTree, root);  // run preorder-iterative test on negative values
-    std::cout<< "\nPre-order test on negative value Passed!"<< std::endl;
+    std::cout<< "\nPre-order test on-negative value Passed!"<< std::endl;
 
     test5(binaryTree, root);  // run postorder-iterative test on negative values
     std::cout<< "\nPost-order test on negative value Passed!"<< std::endl;
