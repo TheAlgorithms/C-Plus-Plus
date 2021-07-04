@@ -46,7 +46,7 @@
 namespace others {
 /**
  * @namespace iterative_tree_traversals
- * @brief Functions for [Traversal of the Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm
+ * @brief Functions for the [Traversal of the Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm
  */
 namespace iterative_tree_traversals {
 /**
