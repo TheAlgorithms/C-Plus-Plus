@@ -54,8 +54,8 @@ namespace iterative_tree_traversals {
  */
 struct Node {
     int64_t data = 0;       ///< The value/key of the node.
-    struct Node *left;  ///< struct pointer to left subtree.
-    struct Node *right; ///< struct pointer to right subtree.
+    struct Node *left;     ///< struct pointer to left subtree.
+    struct Node *right;   ///< struct pointer to right subtree.
 };
 
 /**
