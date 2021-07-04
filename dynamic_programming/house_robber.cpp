@@ -34,27 +34,14 @@ std::uint64_t houseRobber(const std::vector<int> &money, int n) {
     if (n == 1) {  // if there is only one house
         return money[0];
     }
-    if (n == 2) {  // if there are two houses, one with the maximum amount of
-                   // money will be robbed
-        if (money[0] > money[1]) {
-            return money[0];
-        }
-        return money[1];
+    if (n == 2) {  // if there are two houses, one with the maximum amount of money will be robbed
+        return std::max(money[0],money[1]);
     }
     int max_value = 0;  // contains maximum stolen value at the end
     int value1 = money[0];
-    int value2 = 0;
-    if (money[0] > money[1]) {
-        value2 = money[0];
-    } else {
-        value2 = money[1];
-    }
+    int value2 = std::max(money[0],money[1]);
     for (int i = 2; i < n; i++) {
-        if (money[i] + value1 > value2) {
-            max_value = (money[i] + value1);
-        } else {
-            max_value = (value2);
-        }
+        max_value = std::max(money[i]+value1,value2);
         value1 = value2;
         value2 = max_value;
     }
@@ -89,7 +76,6 @@ static void test() {
               // third, fifth and seventh with total sum money as 19
     std::cout << "passed" << std::endl;
 
-    // Test 3
     // [] return 0
     std::vector<int> array3 = {};
     std::cout << "Test 3... ";
