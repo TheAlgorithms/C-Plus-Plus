@@ -69,6 +69,7 @@ std::uint64_t houseRobber(const std::vector<int> &money, int n) {
  * @returns void
  */
 static void test() {
+     //Test 1
     // [1, 2, 3, 1] return 4
     std::vector<int> array1 = {1, 2, 3, 1};
     std::cout << "Test 1... ";
