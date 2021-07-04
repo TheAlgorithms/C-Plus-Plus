@@ -52,7 +52,7 @@ static void test() {
     std::vector<int> array1 = {10, 90, 49, 2, 1, 5, 23};
     std::cout << "Test 1... ";
     std::vector<int> arr1 = sorting::wave_sort::waveSort(array1,7);
-    std::vector<int> o1 = {2, 1, 10, 5, 49, 23, 90};
+    const std::vector<int> o1 = {2, 1, 10, 5, 49, 23, 90};
     assert(std::equal(arr1.begin(),arr1.end(),o1.begin(),o1.end()));
     std::cout << "passed" << std::endl;
 
@@ -60,7 +60,7 @@ static void test() {
     std::vector<int> array2 = {1, 3, 4, 2, 7, 8};
     std::cout << "Test 2... ";
     std::vector<int> arr2 = sorting::wave_sort::waveSort(array2,6);
-    std::vector<int> o2 = {2, 1, 4, 3, 8, 7};
+    const std::vector<int> o2 = {2, 1, 4, 3, 8, 7};
     assert(std::equal(arr2.begin(),arr2.end(),o2.begin(),o2.end()));
     std::cout << "passed" << std::endl;
 
@@ -68,7 +68,7 @@ static void test() {
     std::vector<int> array3 = {3, 3, 3, 3};
     std::cout << "Test 3... ";
     std::vector<int> arr3 = sorting::wave_sort::waveSort(array3,4);
-    std::vector<int> o3 = {3, 3, 3, 3};
+    const std::vector<int> o3 = {3, 3, 3, 3};
     assert(std::equal(arr3.begin(),arr3.end(),o3.begin(),o3.end()));
     std::cout << "passed" << std::endl;
 
@@ -76,7 +76,7 @@ static void test() {
     std::vector<int> array4 = {9, 4, 6, 8, 14, 3};
     std::cout << "Test 4... ";
     std::vector<int> arr4 = sorting::wave_sort::waveSort(array4,6);
-    std::vector<int> o4 = {4, 3, 8, 6, 14, 9};
+    const std::vector<int> o4 = {4, 3, 8, 6, 14, 9};
     assert(std::equal(arr4.begin(),arr4.end(),o4.begin(),o4.end()));
     std::cout << "passed" << std::endl;
 }
