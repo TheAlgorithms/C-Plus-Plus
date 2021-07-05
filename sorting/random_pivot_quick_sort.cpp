@@ -44,7 +44,6 @@
 #include <array>      /// for std::array
 #include <tuple>     /// for returning multiple values form a function at once
 
-
 /**
  * @namespace sorting
  * @brief Sorting algorithms
