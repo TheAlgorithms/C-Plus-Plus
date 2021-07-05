@@ -157,7 +157,7 @@ namespace sorting {
             return unsortedArray;
         }
 
-    }  // namespace random_pivot_quick_sort
+}  // namespace random_pivot_quick_sort
 }  // namespace sorting
 
 /**
