@@ -33,7 +33,6 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  */
 
-
 #include <iostream>       /// for IO operations
 #include <ctime>         /// for initializing random number generator
 #include <cassert>      /// for assert
