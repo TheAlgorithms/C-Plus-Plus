@@ -133,32 +133,32 @@ namespace sorting {
             }
             return arr;
         }
-        }  // namespace random_pivot_quick_sort
-        }  // namespace sorting
 
-/**
- * @brief A function utility to generate unsorted array of given size and range.
- * @tparam size Size of the output array.
- * @param from Stating of the range.
- * @param to Ending of the range.
- * @returns std::array<int64_t , size> Unsorted array of specified size.
- * */
-template<size_t size>
-std::array<int64_t , size> generateUnsortedArray(int64_t from, int64_t to) {
-    srand(time(nullptr));
-    std::array<int64_t , size> unsortedArray{};
-    assert(from < to);
-    int64_t i = 0;
-    while (i < size) {
-        int64_t randomNum = from + rand() % (to - from + 1);
-        if (randomNum) {
-            unsortedArray[i] = randomNum;
-            i++;
+        /**
+         * @brief A function utility to generate unsorted array of given size and range.
+         * @tparam size Size of the output array.
+         * @param from Stating of the range.
+         * @param to Ending of the range.
+         * @returns std::array<int64_t , size> Unsorted array of specified size.
+         * */
+        template<size_t size>
+        std::array<int64_t , size> generateUnsortedArray(int64_t from, int64_t to) {
+            srand(time(nullptr));
+            std::array<int64_t , size> unsortedArray{};
+            assert(from < to);
+            int64_t i = 0;
+            while (i < size) {
+                int64_t randomNum = from + rand() % (to - from + 1);
+                if (randomNum) {
+                    unsortedArray[i] = randomNum;
+                    i++;
+                }
+            }
+            return unsortedArray;
         }
-    }
-    return unsortedArray;
-}
 
+    }  // namespace random_pivot_quick_sort
+}  // namespace sorting
 
 /**
  * A class, encapsulating the necessary test cases.
@@ -232,7 +232,7 @@ public:
         log("Description:");
         log("   BIG INPUT : Contains 500 elements and repeated elements");
         log("This is test case 2 for Random Pivot Quick Sort Algorithm : ");
-        std::array<int64_t , inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
+        std::array<int64_t , inputSize> unsorted_arr = sorting::random_pivot_quick_sort::generateUnsortedArray<inputSize>(1, 10000);
 
         int64_t start = 0;
         int64_t end = unsorted_arr.size() - 1; // length - 1
@@ -261,7 +261,7 @@ public:
         log("This is test case 3 for Random Pivot Quick Sort Algorithm : ");
         log("Description:");
         log("   LARGE INPUT : Contains 1000 elements and repeated elements");
-        std::array<int64_t , inputSize> unsorted_arr = generateUnsortedArray<inputSize>(1, 10000);
+        std::array<int64_t , inputSize> unsorted_arr = sorting::random_pivot_quick_sort::generateUnsortedArray<inputSize>(1, 10000);
 
         int64_t start = 0;
         int64_t end = unsorted_arr.size() - 1; // length - 1
@@ -301,7 +301,7 @@ int main(int argc, char *argv[]) {
     test(); // Executes various test cases.
 
     const int64_t inputSize = 10;
-    std::array<int64_t , inputSize> unsorted_array = generateUnsortedArray<inputSize>(50, 1000);
+    std::array<int64_t , inputSize> unsorted_array = sorting::random_pivot_quick_sort::generateUnsortedArray<inputSize>(50, 1000);
     std::cout << "Unsorted array is : " << std::endl;
     sorting::random_pivot_quick_sort::showArray(unsorted_array);
 
