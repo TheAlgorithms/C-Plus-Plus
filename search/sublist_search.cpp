@@ -43,7 +43,7 @@ namespace sublist_search {
  */
 struct Node {
     uint32_t data = 0;  ///< the key/value of the node
-    Node *next{};       // Pointer to the next node
+    Node *next{};       ///< pointer to the next node
 };
 
 /**
