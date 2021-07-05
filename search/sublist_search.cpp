@@ -42,7 +42,7 @@ namespace sublist_search {
  * @brief A Node structure representing a single link Node in a linked list
  */
 struct Node {
-    uint32_t data = 0;  // The key/value of the node
+    uint32_t data = 0;  ///< the key/value of the node
     Node *next{};       // Pointer to the next node
 };
 
