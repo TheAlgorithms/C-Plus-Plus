@@ -15,8 +15,6 @@
  *                  pivot element.
  *              * This avoids hitting the O(n^2) time complexity in practical use cases.
  *
- *
- *
  *       ### Partition Logic
  *           * Partitions are done such as numbers lower than the "pivot" element is arranged on the left side of the "pivot",
  *               and number larger than the "pivot" element are arranged on the right part of the array.
@@ -33,7 +31,6 @@
  *           * Return the partition index from the function.
  *
  * @author [Nitin Sharma](https://github.com/foo290)
- *
  */
 
 
@@ -218,7 +215,6 @@ public:
 
         log("[PASS] : TEST CASE 1 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
     }
 
     /**
