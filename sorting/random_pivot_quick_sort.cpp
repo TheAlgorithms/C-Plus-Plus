@@ -160,7 +160,7 @@ namespace sorting {
 }  // namespace sorting
 
 /**
- * A class, encapsulating the necessary test cases.
+ * @brief a class containing the necessary test cases
  */
 class TestCases {
 private:
