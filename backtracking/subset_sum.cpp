@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Program to Count number of subsets(both continuous and non-continuous
+ * @brief Program to Count number of subsets (non-continuous
  * subarrays) with a given sum
  *
  * @details Subset problem (https://en.wikipedia.org/wiki/Subset_sum_problem)
