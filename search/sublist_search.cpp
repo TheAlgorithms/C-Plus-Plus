@@ -346,7 +346,8 @@ int main(int argc, char *argv[]) {
     search::sublist_search::Node *mainlistLL =
         search::sublist_search::makeLinkedList(mainlistData);
     search::sublist_search::Node *sublistLL =
-        search::sublist_search::makeLinkedList(sublistData);
+        search::sublist_search::makeLinkedList(sublistData); ///< Main list in which sublist is to be
+                                                            ///< searched
 
     bool exists = search::sublist_search::sublistSearch(
         sublistLL, mainlistLL);  // boolean, if sublist exist or not
