@@ -5,6 +5,7 @@
  * @details
  *
  * ### Algorithm
+ *
  *  * Sublist search is used to detect a presence of one list in another list.
  *  * Suppose we have a single-node list (let's say the first list), and we
  *  want to ensure that the list is present in another list (let's say the
