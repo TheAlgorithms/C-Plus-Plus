@@ -94,12 +94,15 @@ $(document).ready(function(){initNavTree('d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.htm
 <div class="title">CONTRIBUTION GUIDELINES </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md11"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md16"></a>
 Before contributing</h1>
 <p>Welcome to <a href="https://github.com/TheAlgorithms/C-Plus-Plus">TheAlgorithms/C-Plus-Plus</a>! Before submitting pull requests, please make sure that you have <b>read the whole guidelines</b>. If you have any doubts about this contribution guide, please open <a href="https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose">an issue</a> or ask in our <a href="https://discord.gg/c7MnfGFGa6">Discord server</a>, and clearly state your concerns.</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Contributing</h1>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
+Maintainer/reviewer</h2>
+<p><b>Please check the <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/REVIEWER_CODE.md">reviewer code</a> file for maintainers and reviewers.</b></p>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Contributor</h2>
 <p>Being a contributor at The Algorithms, we request you to follow the points mentioned below:</p>
 <ul>
@@ -113,9 +116,9 @@ Contributor</h2>
 <p><b>New implementation</b> New implementations are welcome!</p>
 <p>You can add new algorithms or data structures which are <b>not present in the repository</b> or that can <b>improve</b> the old implementations (<b>documentation</b>, <b>improving test cases</b>, removing bugs or in any other resonable sense)</p>
 <p><b>Issues</b> Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.</p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Making Changes</h2>
-<h3><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 Code</h3>
 <ul>
 <li>Please use the directory structure of the repository.</li>
@@ -130,7 +133,7 @@ Code</h3>
 <li>Please conform to <a href="https://www.doxygen.nl/manual/docblocks.html">Doxygen</a> standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.</li>
 <li><b>Be consistent in the use of these guidelines.</b></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Documentation</h3>
 <ul>
 <li>Make sure you put useful comments in your code. Do not comment on obvious things.</li>
@@ -139,28 +142,28 @@ Documentation</h3>
 <li>Do not update <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md"><code>README.md</code></a> along with other changes. First, create an issue and then link to that issue in your pull request to suggest specific changes required to <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md"><code>README.md</code></a>.</li>
 <li>The repository follows <a href="https://www.doxygen.nl/manual/docblocks.html">Doxygen</a> standards and auto-generates the <a href="https://thealgorithms.github.io/C-Plus-Plus">repository website</a>. Please ensure the code is documented in this structure. A sample implementation is given below.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md17"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
 Test</h3>
 <ul>
 <li>Make sure to add examples and test cases in your <code><a class="el" href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main()</a></code> function.</li>
 <li>If you find an algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.</li>
-<li>Please try to add one or more <code><a class="el" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations.">test()</a></code> functions that will invoke the algorithm implementation on random test data with the expected output. Use the <code>assert()</code> function to confirm that the tests will pass. Requires including the <code>cassert</code> header.</li>
+<li>Please try to add one or more <code><a class="el" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations.">test()</a></code> functions that will invoke the algorithm implementation on random test data with the expected output. Use the <code>assert()</code> function to confirm that the tests will pass. Requires including the <code>cassert</code> library.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md18"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
 Typical structure of a program</h3>
 <div class="fragment"><div class="line"><span class="comment">/**</span></div>
 <div class="line"><span class="comment"> * @file</span></div>
 <div class="line"><span class="comment"> * @brief Add one line description here</span></div>
 <div class="line"><span class="comment"> * @details</span></div>
-<div class="line"><span class="comment"> * This is a multi line</span></div>
+<div class="line"><span class="comment"> * This is a multi-line</span></div>
 <div class="line"><span class="comment"> * description containing links, references,</span></div>
-<div class="line"><span class="comment"> * math equations, etc</span></div>
+<div class="line"><span class="comment"> * math equations, etc.</span></div>
 <div class="line"><span class="comment"> * @author [Name](https://github.com/handle)</span></div>
 <div class="line"><span class="comment"> * @see related_file.cpp, another_file.cpp</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><span class="preprocessor">#include</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span>   <span class="comment">/// for assert</span></div>
+<div class="line"><span class="preprocessor">#include             </span><span class="comment">/// for `some function here`</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
 <div class="line"><span class="comment"> * @namespace &lt;check from other files in this repo&gt;</span></div>
@@ -168,7 +171,7 @@ Typical structure of a program</h3>
 <div class="line"><span class="keyword">namespace </span>name {</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * Class documentation</span></div>
+<div class="line"><span class="comment"> * @brief Class documentation</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">class </span>class_name {</div>
 <div class="line"> <span class="keyword">private</span>:</div>
@@ -180,7 +183,7 @@ Typical structure of a program</h3>
 <div class="line">}</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * Function documentation</span></div>
+<div class="line"><span class="comment"> * @brief Function documentation</span></div>
 <div class="line"><span class="comment"> * @tparam T this is a one-line info about T</span></div>
 <div class="line"><span class="comment"> * @param param1 on-line info about param1</span></div>
 <div class="line"><span class="comment"> * @param param2 on-line info about param2</span></div>
@@ -199,7 +202,7 @@ Typical structure of a program</h3>
 <div class="line">} <span class="comment">// namespace name</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * @brief Test implementations</span></div>
+<div class="line"><span class="comment"> * @brief Self-test implementations</span></div>
 <div class="line"><span class="comment"> * @returns void</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
@@ -216,13 +219,13 @@ Typical structure of a program</h3>
 <div class="line"><span class="comment"> * @returns 0 on exit</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keywordtype">int</span> <a class="code" href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
-<div class="line">    <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(); <span class="comment">// execute the tests</span></div>
+<div class="line">    <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
 <div class="line">    <span class="comment">// code here</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="agraph__coloring_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> graph_coloring.cpp:96</div></div>
 <div class="ttc" id="arat__maze_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition:</b> rat_maze.cpp:84</div></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md19"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md25"></a>
 New File Name guidelines</h3>
 <ul>
 <li>Use lowercase words with <code>"_"</code> as a separator</li>
@@ -232,10 +235,10 @@ New File Name guidelines</h3>
 <div class="line">my_new_cpp_class.cpp    is correct format</div>
 </div><!-- fragment --><ul>
 <li>It will be used to dynamically create a directory of files and implementation.</li>
-<li>File name validation will run on docker to ensure validity.</li>
+<li>File name validation will run on Docker to ensure validity.</li>
 <li>If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if <code><a class="el" href="../../d9/d69/median__search_8cpp.html" title="Implementation of Median search algorithm. @cases from here">median_search.cpp</a></code> already exists in the <code>search</code> folder, and you are contributing a new implementation, the filename should be <code>median_search2.cpp</code> and for a third implementation, <code>median_search3.cpp</code>.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 New Directory guidelines</h3>
 <ul>
 <li>We recommend adding files to existing directories as much as possible.</li>
@@ -248,7 +251,7 @@ New Directory guidelines</h3>
 <li>Filepaths will be used to dynamically create a directory of our algorithms.</li>
 <li>Filepath validation will run on GitHub Actions to ensure compliance.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 Commit Guidelines</h3>
 <ul>
 <li>It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilled across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected.</li>
@@ -267,22 +270,22 @@ Commit Guidelines</h3>
 <li>docs: Documentation changes</li>
 <li>test: Correct existing tests or add new ones</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Pull Requests</h2>
 <ul>
 <li>Checkout our <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md">pull request template</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md23"></a>
+<h3><a class="anchor" id="autotoc_md29"></a>
 Building Locally</h3>
 <p>Before submitting a pull request, build the code locally or using the convenient <a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus"><img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code" class="inline"/></a> service.</p>
 <div class="fragment"><div class="line">cmake -B build -S .</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md24"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md30"></a>
 Static Code Analyzer</h3>
-<p>We use <a href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a> as a static code analyzer with a configuration in <a href="../../.clang-tidy">.clang-tidy</a>.</p>
+<p>We use <a href="https://clang.llvm.org/extra/clang-tidy/"><code>clang-tidy</code></a> as a static code analyzer with a configuration in <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy"><code>.clang-tidy</code></a>.</p>
 <div class="fragment"><div class="line">clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md25"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md31"></a>
 Code Formatter</h3>
-<p><a href="https://clang.llvm.org/docs/ClangFormat.html"><b>clang-format</b></a> is used for code forrmating.</p>
+<p><a href="https://clang.llvm.org/docs/ClangFormat.html"><code>__clang-format__</code></a> is used for code forrmating.</p>
 <ul>
 <li>Installation (only needs to be installed once.)<ul>
 <li>Mac (using home-brew): <code>brew install clang-format</code></li>
@@ -293,7 +296,7 @@ Code Formatter</h3>
 </li>
 <li>Running (all platforms): <code>clang-format -i -style="file" my_file.cpp</code></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md26"></a>
+<h3><a class="anchor" id="autotoc_md32"></a>
 GitHub Actions</h3>
 <ul>
 <li>Enable GitHub Actions on your fork of the repository. After enabling, it will execute <code>clang-tidy</code> and <code>clang-format</code> after every push (not a commit).<ul>
