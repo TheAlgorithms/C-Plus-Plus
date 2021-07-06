@@ -339,7 +339,7 @@ static void test() {
 int main(int argc, char *argv[]) {
     test();  /// run self-test implementations
 
-    std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8};
+    std::vector<uint64_t> mainlistData = {2, 5, 6, 7, 8}; ///< Main list in which sublist is to be searched
     std::vector<uint64_t> sublistData = {6, 8};
 
     search::sublist_search::Node *mainlistLL =
