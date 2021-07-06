@@ -129,6 +129,7 @@ var namespaces_dup =
     [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", "d4/dd2/namespacequadratic__probing" ],
     [ "queue_using_array", "d9/d70/namespacequeue__using__array.html", null ],
     [ "radix_sort", "da/dda/namespaceradix__sort.html", null ],
+    [ "random_pivot_quick_sort", "de/d6b/namespacerandom__pivot__quick__sort.html", null ],
     [ "range_queries", "dd/d69/namespacerange__queries.html", "dd/d69/namespacerange__queries" ],
     [ "rat_maze", "d9/d60/namespacerat__maze.html", null ],
     [ "runge_kutta", "d2/de7/namespacerunge__kutta.html", null ],
@@ -157,6 +158,13 @@ var namespaces_dup =
       [ "radix_sort", null, [
         [ "radix", "d8/d61/radix__sort2_8cpp.html#a8df9406972cda58c209b30ebae295daa", null ],
         [ "step_ith", "d8/d61/radix__sort2_8cpp.html#a302672a25ef4561eb41b4f9ef8e518b2", null ]
+      ] ],
+      [ "random_pivot_quick_sort", null, [
+        [ "generateUnsortedArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ad79f6a1484c1a421a4a82992f2490564", null ],
+        [ "getRandomIndex", "d1/daa/random__pivot__quick__sort_8cpp.html#aac5657b4fe2251cd21073f44233f6ea5", null ],
+        [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a96284b18dfdafdd67085166fc0e43246", null ],
+        [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#ab4669ac90ee144c7d0d51ab50890b6b1", null ],
+        [ "showArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ac3281dc34a9cfd7beb332419b8a0aa10", null ]
       ] ],
       [ "strand", null, [
         [ "strand_sort", "dc/dd9/strand__sort_8cpp.html#ad75dc6a599ecfe31dadfaf449ee565f6", null ]

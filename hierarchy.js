@@ -71,6 +71,7 @@ var hierarchy =
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", null ],
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
     [ "statistics::stats_computer2< T >", "d8/dab/classstatistics_1_1stats__computer2.html", null ],
+    [ "TestCases", "d5/d58/class_test_cases.html", null ],
     [ "operations_on_datastructures::trie_operations::Tnode", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html", null ],
     [ "tower", "d2/d2c/structtower.html", null ],
     [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
