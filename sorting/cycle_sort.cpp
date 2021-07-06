@@ -98,9 +98,9 @@ static void test() {
     std::cout << "passed" << std::endl;
 
     // [4.3, -6.5, -7.4, 0, 2.7, 1.8] return [-7.4, -6.5, 0, 1.8, 2.7, 4.3]
-    std::vector<double> array2 = {4.3, -6.5, -7.4, 0, 2.7, 1.8};
+    std::vector<int> array2 = {4.3, -6.5, -7.4, 0, 2.7, 1.8};
     std::cout << "Test 2... ";
-    std::vector<double> arr2 = sorting::cycle_sort::cycleSort(array2);
+    std::vector<int> arr2 = sorting::cycle_sort::cycleSort(array2);
     assert(std::is_sorted(std::begin(arr2), std::end(arr2)));
     std::cout << "passed" << std::endl;
 
