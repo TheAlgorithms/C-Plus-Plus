@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md70", null ],
-      [ "Features", "index.html#autotoc_md71", null ],
-      [ "Documentation", "index.html#autotoc_md72", null ],
-      [ "Contributions", "index.html#autotoc_md73", null ]
+      [ "Overview", "index.html#autotoc_md73", null ],
+      [ "Features", "index.html#autotoc_md74", null ],
+      [ "Documentation", "index.html#autotoc_md75", null ],
+      [ "Contributions", "index.html#autotoc_md76", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -124,18 +124,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"cpp/io/c/ungetwc.html",
-"cpp/string/multibyte/wcstombs.html",
-"d1/d83/classuint256__t.html#a303287d7bc8686dcb47fcb04720ad409",
-"d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a",
-"d4/dd2/namespacequadratic__probing.html",
-"d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a9883dfcceede9a42227d2d313ae86f85",
-"d7/d77/class_edge.html#a2449478938136b5ab7ef0e7d92e6990b",
-"d8/dee/avltree_8cpp.html#adb8e952bf1c266bae84111b9d6a12015",
-"da/d8d/depth__first__search_8cpp.html",
-"db/d9a/classuint128__t.html#ab07413c67d205e406abf3a9f554d59e1",
-"dd/d4f/class_solution.html#a7ee66ff56c3262f49139516c366a2529",
-"dir_19b2bf9199a15c634a08b1ede1dd896a.html"
+"cpp/io/c/ungetc.html",
+"cpp/string/multibyte/wcrtomb.html",
+"d1/d83/classuint256__t.html#a2d7c8a1a5ecaf3e0dcb4bf6b6cff2da2",
+"d2/de7/namespacerunge__kutta.html",
+"d4/db4/struct_segment_intersection.html",
+"d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html",
+"d7/d75/postfix__evaluation_8cpp.html#ae38bd3a177a6d61da3859a281233bbe1",
+"d8/dd5/check__factorial_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9",
+"da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3",
+"db/d9a/classuint128__t.html#a75767cb2b6fd47ecb1f721755fdc7639",
+"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#af564fd4b0992fff69f90de201542d3d1",
+"df/dd5/binary__search_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
