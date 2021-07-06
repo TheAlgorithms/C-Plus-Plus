@@ -98,6 +98,7 @@ static void test() {
     assert(std::is_sorted(std::begin(arr2), std::end(arr2)));
     std::cout << "passed" << std::endl;
 
+     // Test 3
     // [3, 3, 3, 3] return [3, 3, 3, 3]
     std::vector<int> array3 = {3, 3, 3, 3};
     std::cout << "Test 3... ";
