@@ -354,7 +354,7 @@ int main(int argc, char *argv[]) {
     std::cout << "Sublist: " << std::endl;
     search::sublist_search::printLinkedList(sublistLL);
 
-    std::cout << "Main list : " << std::endl;
+    std::cout << "Main list: " << std::endl;
     search::sublist_search::printLinkedList(mainlistLL);
     std::cout << std::endl;
 
