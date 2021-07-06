@@ -341,7 +341,7 @@ int main(int argc, char *argv[]) {
 
     std::vector<uint64_t> mainlistData = {
         2, 5, 6, 7, 8};  ///< Main list in which sublist is to be searched
-    std::vector<uint64_t> sublistData = {6, 8};
+    std::vector<uint64_t> sublistData = {6, 8}; ///< Sublist to be searched
 
     search::sublist_search::Node *mainlistLL =
         search::sublist_search::makeLinkedList(mainlistData);
