@@ -83,6 +83,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
  * @returns void
  */
 static void test() {
+    // Test 1
     // [4, 3, 2, 1] return [1, 2, 3, 4]
     std::vector<int> array1 = {4, 3, 2, 1};
     std::cout << "Test 1... ";
