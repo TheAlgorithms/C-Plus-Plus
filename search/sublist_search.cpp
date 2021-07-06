@@ -351,7 +351,7 @@ int main(int argc, char *argv[]) {
     bool exists = search::sublist_search::sublistSearch(
         sublistLL, mainlistLL);  // boolean, if sublist exist or not
 
-    std::cout << "Sublist :" << std::endl;
+    std::cout << "Sublist: " << std::endl;
     search::sublist_search::printLinkedList(sublistLL);
 
     std::cout << "Main list : " << std::endl;
