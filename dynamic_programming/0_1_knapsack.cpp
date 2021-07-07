@@ -22,10 +22,10 @@
  * @author [Pardeep](https://github.com/Pardeep009)
  */
 
-#include <array>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <array>     /// for std::vector
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace dynamic_programming
@@ -90,7 +90,7 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
 }  // namespace dynamic_programming
 
 /**
- * @brief Function to test above algorithm
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
@@ -124,7 +124,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    // Testing
+    // run self-test implementations
     test();
     return 0;
 }
