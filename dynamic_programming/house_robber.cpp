@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of [House Robber Problem] algorithm
+ * @brief Implementation of [House Robber Problem](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber) algorithm
  * @details
  * Solution of House robber problem uses a dynamic programming concept that
  * works in \f$O(n)\f$ time and works in \f$O(1)\f$ space.
