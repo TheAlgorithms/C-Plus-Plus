@@ -14,7 +14,7 @@
 
 /**
  * @namespace backtracking
- * @brief subset sum algorithm
+ * @brief Backtracking algorithms
  */
 namespace backtracking {
 /**
