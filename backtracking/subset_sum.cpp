@@ -83,7 +83,7 @@ static void test() {
     // Test 4
     std::cout << "4th test ";
     std::vector<int> array4 = {3, 3, 3, 3};
-    assert(backtracking::Subsets::subset_sum(6, array4) ==
+    assert(backtracking::subset_sum::subset_sum(6, array4) ==
            6);  // here we are expecting 6 subsets which sum up to 6 i.e.
                 // {(3,3),(3,3),(3,3),(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
