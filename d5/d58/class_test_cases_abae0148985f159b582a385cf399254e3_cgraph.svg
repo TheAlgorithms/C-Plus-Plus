@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" target="_top" xlink:title="A function to print64_t given message on console.">
+<g id="a_node3"><a xlink:href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" target="_top" xlink:title="A function to print given message on console.">
 <polygon fill="white" stroke="black" points="156,-38.5 156,-57.5 239,-57.5 239,-38.5 156,-38.5"/>
 <text text-anchor="middle" x="197.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::log</text>
 </a>

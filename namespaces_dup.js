@@ -134,7 +134,7 @@ var namespaces_dup =
     [ "rat_maze", "d9/d60/namespacerat__maze.html", null ],
     [ "runge_kutta", "d2/de7/namespacerunge__kutta.html", null ],
     [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
-    [ "search", "d9/dca/namespacesearch.html", null ],
+    [ "search", "d9/dca/namespacesearch.html", "d9/dca/namespacesearch" ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
@@ -210,6 +210,7 @@ var namespaces_dup =
       [ "recalculate_hash", "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893", null ]
     ] ],
     [ "strings", "df/dcb/namespacestrings.html", null ],
+    [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
     [ "trie_operations", "df/d8e/namespacetrie__operations.html", null ],
     [ "trie_using_hashmap", "d7/d0a/namespacetrie__using__hashmap.html", null ],

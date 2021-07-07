@@ -10,6 +10,7 @@ var dir_19b2bf9199a15c634a08b1ede1dd896a =
     [ "linear_search.cpp", "d9/d02/linear__search_8cpp.html", "d9/d02/linear__search_8cpp" ],
     [ "median_search.cpp", "d9/d69/median__search_8cpp.html", "d9/d69/median__search_8cpp" ],
     [ "saddleback_search.cpp", "d3/d22/saddleback__search_8cpp.html", "d3/d22/saddleback__search_8cpp" ],
+    [ "sublist_search.cpp", "d5/d45/sublist__search_8cpp.html", "d5/d45/sublist__search_8cpp" ],
     [ "ternary_search.cpp", "dc/dfe/ternary__search_8cpp.html", "dc/dfe/ternary__search_8cpp" ],
     [ "text_search.cpp", "dc/db5/text__search_8cpp.html", "dc/db5/text__search_8cpp" ]
 ];

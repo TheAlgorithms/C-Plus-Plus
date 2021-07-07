@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"cpp/io/c/setbuf.html":[9,0,71,377],
+"cpp/io/c/setvbuf.html":[9,0,71,382],
+"cpp/io/c/tmpfile.html":[9,0,71,451],
 "cpp/io/c/tmpnam.html":[9,0,71,452],
 "cpp/io/c/ungetc.html":[9,0,71,468],
 "cpp/io/c/ungetwc.html":[9,0,71,469],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "cpp/string/multibyte/mbrlen.html":[9,0,71,265],
 "cpp/string/multibyte/mbrtoc16.html":[9,0,71,266],
 "cpp/string/multibyte/mbrtoc32.html":[9,0,71,267],
-"cpp/string/multibyte/mbrtowc.html":[9,0,71,268],
-"cpp/string/multibyte/mbsinit.html":[9,0,71,269],
-"cpp/string/multibyte/mbsrtowcs.html":[9,0,71,270],
-"cpp/string/multibyte/mbstowcs.html":[9,0,71,271]
+"cpp/string/multibyte/mbrtowc.html":[9,0,71,268]
 };

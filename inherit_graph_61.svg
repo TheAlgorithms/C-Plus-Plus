@@ -37,9 +37,9 @@
 <path fill="none" stroke="midnightblue" d="M119.99,-67.67C128.56,-65.88 137.28,-64.07 145.67,-62.32"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="119.11,-64.28 110.03,-69.74 120.53,-71.13 119.11,-64.28"/>
 </g>
-<!-- Node73 -->
+<!-- Node74 -->
 <g id="node3" class="node">
-<title>Node73</title>
+<title>Node74</title>
 <g id="a_node3"><a xlink:href="d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" target="_top" xlink:title="A Basic Tree, which supports binary lifting.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-41.5 110,-41.5 110,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
@@ -48,9 +48,9 @@
 </a>
 </g>
 </g>
-<!-- Node73&#45;&gt;Node1 -->
+<!-- Node74&#45;&gt;Node1 -->
 <g id="edge2" class="edge">
-<title>Node73&#45;&gt;Node1</title>
+<title>Node74&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M119.99,-34.33C128.56,-36.12 137.28,-37.93 145.67,-39.68"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="120.53,-30.87 110.03,-32.26 119.11,-37.72 120.53,-30.87"/>
 </g>
