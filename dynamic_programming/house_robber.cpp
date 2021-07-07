@@ -13,7 +13,7 @@
 #include <vector>    /// for std::vector
 /**
  * @namespace dynamic_programming
- * @brief House robber algorithm
+ * @brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
