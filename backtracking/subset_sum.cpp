@@ -1,10 +1,11 @@
 /**
  * @file
- * @brief Implementation of the [Subset Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
+ * @brief Implementation of the [Subset
+ * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  * @details
  * We are given an array and a sum value. The algorithms find all
- * the subsets of that array with sum equal to the given sum and return such subsets
- * count. This approach will have exponential time complexity.
+ * the subsets of that array with sum equal to the given sum and return such
+ * subsets count. This approach will have exponential time complexity.
  * @author [Swastika Gupta](https://github.com/swastyy)
  */
 
@@ -19,7 +20,8 @@
 namespace backtracking {
 /**
  * @namespace Subsets
- * @brief Functions for the [Subset Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
+ * @brief Functions for the [Subset
+ * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  */
 namespace Subsets {
 /**
