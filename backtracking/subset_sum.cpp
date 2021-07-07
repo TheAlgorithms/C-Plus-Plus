@@ -19,9 +19,7 @@
 namespace backtracking {
 /**
  * @namespace Subsets
- * @brief Functions for counting subsets(both continuous and non-continuous
- * subarrays) in a given array with a given sum Time Complexity: O(n * 2^n),
- * where ‘n’ is the number of elements in the given array.
+ * @brief Functions for the [Subset Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  */
 namespace Subsets {
 /**
