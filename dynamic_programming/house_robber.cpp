@@ -54,7 +54,7 @@ std::uint64_t houseRobber(const std::vector<int> &money, int n) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
