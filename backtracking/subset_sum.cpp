@@ -1,10 +1,10 @@
 /**
  * @file
- * @brief We are given with an array and a sum value. The algorithms find all
- * the subsets of that array with sum equal to given sum and return such subsets
+ * @brief Implementation of the [Subset Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
+ * @details
+ * We are given an array and a sum value. The algorithms find all
+ * the subsets of that array with sum equal to the given sum and return such subsets
  * count. This approach will have exponential time complexity.
- *
- * @details Subset problem (https://en.wikipedia.org/wiki/Subset_sum_problem)
  * @author [Swastika Gupta](https://github.com/swastyy)
  */
 
