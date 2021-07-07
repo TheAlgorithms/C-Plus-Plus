@@ -337,7 +337,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  /// run self-test implementations
+    test();  // run self-test implementations
 
     std::vector<uint64_t> mainlistData = {
         2, 5, 6, 7, 8};  ///< Main list in which sublist is to be searched
