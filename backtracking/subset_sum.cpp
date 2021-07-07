@@ -59,7 +59,7 @@ static void test() {
     // Test 1
     std::cout << "1st test ";
     std::vector<int> array1 = {-7, -3, -2, 5, 8};  // input array
-    assert(backtracking::Subsets::subset_sum(0, array1) ==
+    assert(backtracking::subset_sum::subset_sum(0, array1) ==
            2);  // first argument in subset_sum function is the required sum and
                 // second is the input array
     std::cout << "passed" << std::endl;
