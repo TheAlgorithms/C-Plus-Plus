@@ -23,7 +23,7 @@ namespace backtracking {
  * @brief Functions for the [Subset
  * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  */
-namespace Subsets {
+namespace subset_sum {
 /**
  * @brief The main function implements count of subsets
  * @param sum is the required sum of any subset
