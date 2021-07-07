@@ -48,7 +48,7 @@ uint64_t subset_sum(int sum, const std::vector<int> &in_arr) {
     }
     return count_of_subset;
 }
-}  // namespace Subsets
+}  // namespace subset_sum
 }  // namespace backtracking
 
 /**
