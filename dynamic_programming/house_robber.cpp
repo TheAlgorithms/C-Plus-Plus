@@ -4,7 +4,7 @@
  * @details
  * Solution of House robber problem uses a dynamic programming concept that
  * works in \f$O(n)\f$ time and works in \f$O(1)\f$ space.
- * @author [Swastika Gupta](https://github.com/swastyy)
+ * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
