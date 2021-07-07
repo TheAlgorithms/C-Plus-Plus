@@ -6,7 +6,7 @@
  * We are given an array and a sum value. The algorithms find all
  * the subsets of that array with sum equal to the given sum and return such
  * subsets count. This approach will have exponential time complexity.
- * @author [Swastika Gupta](https://github.com/swastyy)
+ * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
