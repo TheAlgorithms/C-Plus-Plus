@@ -58,28 +58,28 @@ std::uint32_t houseRobber(const std::vector<uint32_t> &money, const uint32_t &n)
 static void test() {
     // Test 1
     // [1, 2, 3, 1] return 4
-    std::vector<int> array1 = {1, 2, 3, 1};
+    std::vector<uint32_t> array1 = {1, 2, 3, 1};
     std::cout << "Test 1... ";
     assert(dynamic_programming::house_robber::houseRobber(array1, array1.size()) == 4);  // here the two non-adjacent houses that are robbed are first and third with total sum money as 4
     std::cout << "passed" << std::endl;
 
     // Test 2
     // [6, 7, 1, 3, 8, 2, 4] return 19
-    std::vector<int> array2 = {6, 7, 1, 3, 8, 2, 4};
+    std::vector<uint32_t> array2 = {6, 7, 1, 3, 8, 2, 4};
     std::cout << "Test 2... ";
     assert(dynamic_programming::house_robber::houseRobber(array2, array2.size()) == 19);  // here the four non-adjacent houses that are robbed are first, third, fifth and seventh with total sum money as 19
     std::cout << "passed" << std::endl;
 
     // Test 3
     // [] return 0
-    std::vector<int> array3 = {};
+    std::vector<uint32_t> array3 = {};
     std::cout << "Test 3... ";
     assert(dynamic_programming::house_robber::houseRobber(array3, array3.size()) == 0);  // since there is no house no money can be robbed
     std::cout << "passed" << std::endl;
 
     // Test 4
     // [2,7,9,3,1] return 12
-    std::vector<int> array4 = {2, 7, 9, 3, 1};
+    std::vector<uint32_t> array4 = {2, 7, 9, 3, 1};
     std::cout << "Test 4... ";
     assert(dynamic_programming::house_robber::houseRobber(array4, array4.size()) == 12);  // here the three non-adjacent houses that are robbed are first, third and fifth with total sum money as 12
     std::cout << "passed" << std::endl;
