@@ -30,7 +30,7 @@ namespace house_robber {
  * @param n size of array
  * @returns maximum amount of money that can be robbed
  */
-std::uint64_t houseRobber(const std::vector<int> &money, int n) {
+std::uint64_t houseRobber(const std::vector<int> &money, const int &n) {
     if (n == 0) {  // if there is no house
         return 0;
     }
