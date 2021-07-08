@@ -20,7 +20,9 @@
 namespace dynamic_programming {
 /**
  * @namespace house_robber
- * @brief Functions for the [House Robber](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber) algorithm
+ * @brief Functions for the [House
+ * Robber](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber)
+ * algorithm
  */
 namespace house_robber {
 /**
