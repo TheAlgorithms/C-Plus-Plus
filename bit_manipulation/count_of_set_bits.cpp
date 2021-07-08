@@ -64,6 +64,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // execute the test
+    test();  // run self-test implementations
     return 0;
 }
