@@ -27,7 +27,7 @@ namespace dynamic_programming {
  */
 namespace house_robber {
 /**
- * @brief The main function implements house robber algorithm using dynamic
+ * @brief The main function that implements the House Robber algorithm using dynamic
  * programming
  * @param money array containing money in the ith house
  * @param n size of array
