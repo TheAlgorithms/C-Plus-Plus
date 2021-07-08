@@ -19,7 +19,7 @@
 namespace bit_manipulation {
 /**
  * @namespace bitCount
- * @brief Functions for counting set bits in binary representation of a number
+ * @brief Functions for the [count sets bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) implementation
  */
 namespace bitCount {
 /**
