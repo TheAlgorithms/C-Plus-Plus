@@ -1,13 +1,8 @@
 /**
  * @file
- * @brief Implementation of [Cycle
- * sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
+ * @brief Implementation of [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  * @details
- * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best
- * case and works in \f$O(n^2)\f$ in worst case. If a element is already at its
- * correct  position, do nothing. If a element is not at its correct position,
- * we then need to move it to its correct position by computing the correct
- * positions.Therefore, we should make sure the duplicate elements.
+ * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best case and works in \f$O(n^2)\f$ in worst case. If a element is already at its correct  position, do nothing. If a element is not at its correct position, we then need to move it to its correct position by computing the correct positions.Therefore, we should make sure the duplicate elements.
  * @author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
@@ -23,8 +18,7 @@
 namespace sorting {
 /**
  * @namespace cycle_sort
- * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
- * algorithm
+ * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  */
 namespace cycle_sort {
 /**
@@ -40,8 +34,7 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
         // initialize item
         T item = arr[cycle_start];
 
-        // Count the number of elements smaller than item, this  number is the
-        // correct index of item.
+        // Count the number of elements smaller than item, this  number is the correct index of item.
         int pos = cycle_start;
         for (size_t i = cycle_start + 1; i < arr.size(); i++) {
             if (arr[i] < item) {
