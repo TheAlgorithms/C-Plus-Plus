@@ -14,7 +14,7 @@
 
 /**
  * @namespace bit_manipulation
- * @brief bit set counting algorithm
+ * @brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
