@@ -29,7 +29,7 @@ namespace bitCount {
 /**
  * @brief The main function implements set bit count
  * @param n is the number whose set bit will be counted
- * @returns count , the number set bit in binary representation of n
+ * @returns the count of the number set bit in the binary representation of `n`
  */
 std::uint64_t countSetBits(int n) {
     int count = 0;  // "count" variable is used to count number of 1's in binary
