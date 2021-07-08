@@ -13,6 +13,7 @@
 #include <climits>   /// for std::max
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
+
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms
