@@ -1,6 +1,8 @@
 /**
  * @file
- * @brief Implementation to [count sets bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an integer.
+ * @brief Implementation to [count sets
+ * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
+ * integer.
  *
  * @details
  * Time Complexity :- O(log n)
@@ -19,7 +21,9 @@
 namespace bit_manipulation {
 /**
  * @namespace bitCount
- * @brief Functions for the [count sets bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) implementation
+ * @brief Functions for the [count sets
+ * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
+ * implementation
  */
 namespace bitCount {
 /**
