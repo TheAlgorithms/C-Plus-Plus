@@ -31,7 +31,7 @@ namespace bit_manipulation {
  * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
  * implementation
  */
-namespace bitCount {
+namespace count_of_set_bits {
 /**
  * @brief The main function implements set bit count
  * @param n is the number whose set bit will be counted
@@ -46,7 +46,7 @@ std::uint64_t countSetBits(int n) {
     }
     return count;
 }
-}  // namespace bitCount
+}  // namespace count_of_set_bits
 }  // namespace bit_manipulation
 
 /**
@@ -55,17 +55,17 @@ std::uint64_t countSetBits(int n) {
  */
 static void test() {
     // n = 4 return 1
-    assert(bit_manipulation::bitCount::countSetBits(4) == 1);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);
     // n = 6 return 2
-    assert(bit_manipulation::bitCount::countSetBits(6) == 2);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(6) == 2);
     // n = 13 return 3
-    assert(bit_manipulation::bitCount::countSetBits(13) == 3);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(13) == 3);
     // n = 9 return 2
-    assert(bit_manipulation::bitCount::countSetBits(9) == 2);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(9) == 2);
     // n = 15 return 4
-    assert(bit_manipulation::bitCount::countSetBits(15) == 4);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);
     // n = 25 return 3
-    assert(bit_manipulation::bitCount::countSetBits(25) == 3);
+    assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);
     std::cout << "All test cases passed" << std::endl;
 }
 
