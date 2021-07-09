@@ -38,6 +38,7 @@ var namespaces_dup =
     [ "bit_manipulation", "d7/d81/namespacebit__manipulation.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
+    [ "count_of_set_bits", "dd/dae/namespacecount__of__set__bits.html", null ],
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
     [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
