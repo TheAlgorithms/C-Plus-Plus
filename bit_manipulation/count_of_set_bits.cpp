@@ -11,8 +11,9 @@
  *
  * Set bits in a binary number is represented by 1. Whenever we calculate the
  * binary number of an integer value it is formed as the combination of 0’s and
- * 1’s. So digit 1 is known as a set bit in computer terms. Time Complexity :-
- * O(log n) Space complexity :- O(1)
+ * 1’s. So digit 1 is known as a set bit in computer terms.
+ * Time Complexity: O(log n)
+ * Space complexity: O(1)
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
