@@ -51,7 +51,7 @@ std::uint64_t countSetBits(int n) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
