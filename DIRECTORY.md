@@ -10,6 +10,7 @@
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
 ## Bit Manipulation
+  * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
