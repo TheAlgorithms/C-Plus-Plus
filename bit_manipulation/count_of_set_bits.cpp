@@ -25,7 +25,7 @@
  */
 namespace bit_manipulation {
 /**
- * @namespace bitCount
+ * @namespace count_of_set_bits
  * @brief Functions for the [count sets
  * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
  * implementation
