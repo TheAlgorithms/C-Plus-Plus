@@ -132,15 +132,15 @@ var NAVTREEINDEX =
 "cpp/iterator/distance.html",
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
-"d3/d2a/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1comparison__operator.html",
-"d4/def/kohonen__som__topology_8cpp.html#ac4010fe3a52a74e8b5b1aaadfe38b46f",
-"d6/d26/classciphers_1_1_hill_cipher.html#a7ca10cd1a0e8e3732391e0427d2d0213",
-"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a",
-"d8/df0/queue__using__array_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf",
-"db/d9a/classuint128__t.html#a95ac8be8f414fcbce09301b912f5079d",
-"dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11",
-"df/dea/namespacefalse__position.html"
+"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#af3aee573fbabd2c1510c0f74f842dd17",
+"d4/def/kohonen__som__topology_8cpp.html#ab3081e021270ba21a9fd88646f6a6e26",
+"d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0",
+"d7/d7a/namespacebinomial.html",
+"d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83",
+"da/d77/spirograph_8cpp.html",
+"db/d9a/classuint128__t.html#a817b66c32268cf46244058a50db99503",
+"dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244",
+"df/ddd/connected__components_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

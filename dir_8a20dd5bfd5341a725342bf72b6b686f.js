@@ -4,6 +4,7 @@ var dir_8a20dd5bfd5341a725342bf72b6b686f =
     [ "abbreviation.cpp", "d7/d73/abbreviation_8cpp.html", "d7/d73/abbreviation_8cpp" ],
     [ "coin_change_topdown.cpp", "d9/d31/coin__change__topdown_8cpp.html", "d9/d31/coin__change__topdown_8cpp" ],
     [ "cut_rod.cpp", "d6/d10/cut__rod_8cpp.html", "d6/d10/cut__rod_8cpp" ],
+    [ "house_robber.cpp", "d6/d26/house__robber_8cpp.html", "d6/d26/house__robber_8cpp" ],
     [ "kadane2.cpp", "db/dca/kadane2_8cpp.html", "db/dca/kadane2_8cpp" ],
     [ "longest_increasing_subsequence.cpp", "d7/d57/longest__increasing__subsequence_8cpp.html", "d7/d57/longest__increasing__subsequence_8cpp" ],
     [ "longest_palindromic_subsequence.cpp", "d0/d77/longest__palindromic__subsequence_8cpp.html", "d0/d77/longest__palindromic__subsequence_8cpp" ],
