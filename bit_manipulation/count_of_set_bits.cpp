@@ -66,7 +66,7 @@ static void test() {
     assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);
     // n = 25 return 3
     assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);
-    std::cout << "All test cases passed" << std::endl;
+    std::cout << "All test cases successfully passed!" << std::endl;
 }
 
 /**
