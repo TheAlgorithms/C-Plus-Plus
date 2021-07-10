@@ -24,7 +24,8 @@
 namespace backtracking {
 /**
  * @namespace subarraySum
- * @brief Functions for the [Subset sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
+ * @brief Functions for the [Subset
+ * sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
  */
 namespace subarraySum {
 /**
@@ -66,31 +67,42 @@ static void test() {
     // Test 1
     std::cout << "1st test ";
     std::vector<int> array1 = {-7, -3, -2, 5, 8};  // input array
-    assert(backtracking::subarraySum::subarray_sum(0, array1) == 1);  // first argument in subarray_sum function is the required sum and second is the input array, answer is the subarray {(-3,-2,5)}
+    assert(
+        backtracking::subarraySum::subarray_sum(0, array1) ==
+        1);  // first argument in subarray_sum function is the required sum and
+             // second is the input array, answer is the subarray {(-3,-2,5)}
     std::cout << "passed" << std::endl;
 
     // Test 2
     std::cout << "2nd test ";
     std::vector<int> array2 = {1, 2, 3, 3};
-    assert(backtracking::subarraySum::subarray_sum(6, array2) == 2);  // here we are expecting 2 subsets which sum up to 6 i.e. {(1,2,3),(3,3)}
+    assert(backtracking::subarraySum::subarray_sum(6, array2) ==
+           2);  // here we are expecting 2 subsets which sum up to 6 i.e.
+                // {(1,2,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 3
     std::cout << "3rd test ";
     std::vector<int> array3 = {1, 1, 1, 1};
-    assert(backtracking::subarraySum::subarray_sum(1, array3) == 4);  // here we are expecting 4 subsets which sum up to 1 i.e. {(1),(1),(1),(1)}
+    assert(backtracking::subarraySum::subarray_sum(1, array3) ==
+           4);  // here we are expecting 4 subsets which sum up to 1 i.e.
+                // {(1),(1),(1),(1)}
     std::cout << "passed" << std::endl;
 
     // Test 4
     std::cout << "4th test ";
     std::vector<int> array4 = {3, 3, 3, 3};
-    assert(backtracking::subarraySum::subarray_sum(6, array4) == 3);  // here we are expecting 3 subsets which sum up to 6 i.e. {(3,3),(3,3),(3,3)}
+    assert(backtracking::subarraySum::subarray_sum(6, array4) ==
+           3);  // here we are expecting 3 subsets which sum up to 6 i.e.
+                // {(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 5
     std::cout << "5th test ";
     std::vector<int> array5 = {};
-    assert(backtracking::subarraySum::subarray_sum(6, array5) == 0);  // here we are expecting 0 subsets which sum up to 6 i.e. we cannot select anything from an empty array
+    assert(backtracking::subarraySum::subarray_sum(6, array5) ==
+           0);  // here we are expecting 0 subsets which sum up to 6 i.e. we
+                // cannot select anything from an empty array
     std::cout << "passed" << std::endl;
 }
 
