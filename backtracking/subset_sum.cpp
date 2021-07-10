@@ -31,7 +31,7 @@ namespace subset_sum {
  * @returns count of the number of subsets with required sum
  */
 
-uint64_t subset_sum(uint64_t sum, const std::vector<uint64_t> &in_arr) {
+uint64_t subset_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
     int nelement = in_arr.size();
     int count_of_subset = 0;
 
@@ -58,42 +58,36 @@ uint64_t subset_sum(uint64_t sum, const std::vector<uint64_t> &in_arr) {
 static void test() {
     // Test 1
     std::cout << "1st test ";
-    std::vector<uint64_t> array1 = {-7, -3, -2, 5, 8};  // input array
-    assert(backtracking::subset_sum::subset_sum(0, array1) ==
-           2);  // first argument in subset_sum function is the required sum and
+    std::vector<int64_t> array1 = {-7, -3, -2, 5, 8};  // input array
+    assert(backtracking::subset_sum::subset_sum(0, array1) == 2);  // first argument in subset_sum function is the required sum and
                 // second is the input array
     std::cout << "passed" << std::endl;
 
     // Test 2
     std::cout << "2nd test ";
     std::vector<uint64_t> array2 = {1, 2, 3, 3};
-    assert(backtracking::subset_sum::subset_sum(6, array2) ==
-           3);  // here we are expecting 3 subsets which sum up to 6 i.e.
+    assert(backtracking::subset_sum::subset_sum(6, array2) == 3);  // here we are expecting 3 subsets which sum up to 6 i.e.
                 // {(1,2,3),(1,2,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 3
     std::cout << "3rd test ";
     std::vector<uint64_t> array3 = {1, 1, 1, 1};
-    assert(backtracking::subset_sum::subset_sum(1, array3) ==
-           4);  // here we are expecting 4 subsets which sum up to 1 i.e.
+    assert(backtracking::subset_sum::subset_sum(1, array3) == 4);  // here we are expecting 4 subsets which sum up to 1 i.e.
                 // {(1),(1),(1),(1)}
     std::cout << "passed" << std::endl;
 
     // Test 4
     std::cout << "4th test ";
     std::vector<uint64_t> array4 = {3, 3, 3, 3};
-    assert(backtracking::subset_sum::subset_sum(6, array4) ==
-           6);  // here we are expecting 6 subsets which sum up to 6 i.e.
+    assert(backtracking::subset_sum::subset_sum(6, array4) == 6);  // here we are expecting 6 subsets which sum up to 6 i.e.
                 // {(3,3),(3,3),(3,3),(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 5
     std::cout << "5th test ";
     std::vector<uint64_t> array5 = {};
-    assert(backtracking::subset_sum::subset_sum(6, array5) ==
-           0);  // here we are expecting 0 subsets which sum up to 6 i.e. we
-                // cannot select anything from an empty array
+    assert(backtracking::subset_sum::subset_sum(6, array5) == 0);  // here we are expecting 0 subsets which sum up to 6 i.e. we cannot select anything from an empty array
     std::cout << "passed" << std::endl;
 }
 
