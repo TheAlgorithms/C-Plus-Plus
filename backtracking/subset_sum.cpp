@@ -58,7 +58,7 @@ uint64_t subset_sum(uint64_t sum, const std::vector<uint64_t> &in_arr) {
 static void test() {
     // Test 1
     std::cout << "1st test ";
-    std::vector<int> array1 = {-7, -3, -2, 5, 8};  // input array
+    std::vector<uint64_t> array1 = {-7, -3, -2, 5, 8};  // input array
     assert(backtracking::subset_sum::subset_sum(0, array1) ==
            2);  // first argument in subset_sum function is the required sum and
                 // second is the input array
