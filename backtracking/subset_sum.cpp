@@ -90,7 +90,7 @@ static void test() {
 
     // Test 5
     std::cout << "5th test ";
-    std::vector<int> array5 = {};
+    std::vector<uint64_t> array5 = {};
     assert(backtracking::subset_sum::subset_sum(6, array5) ==
            0);  // here we are expecting 0 subsets which sum up to 6 i.e. we
                 // cannot select anything from an empty array
