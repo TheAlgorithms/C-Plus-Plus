@@ -23,10 +23,8 @@
  */
 namespace backtracking {
 /**
- * @namespace Subarrays
- * @brief Functions for counting subsets(only continuous subarrays) in a given
- * array with a given sum Time Complexity: O(n), where ‘n’ is the number of
- * elements in the given array.
+ * @namespace subarray_sum
+ * @brief Functions for the [Subset sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
  */
 namespace Subarrays {
 /**
