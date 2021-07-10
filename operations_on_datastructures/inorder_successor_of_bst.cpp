@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief An implementation for finding [Inorder successor of binary search tree](link)
+ * @brief An implementation for finding [Inorder successor of binary search tree](https://www.youtube.com/watch?v=5cPbNCrdotA&t=904s)
  * Inorder successor of a node is the next node in Inorder traversal of the Binary Tree. Inorder Successor is NULL for the last node in Inorder traversal.
  *
  * ### Case 1 : The given node has right node/subtree
@@ -112,13 +112,13 @@ namespace binary_search_tree {
      * @brief Search from the root node as we need to walk the tree starting from the root node to the given node,
      * by doing so, we are visiting every ancestor of the given node.
      * In order successor would be the deepest node in this path for which given node is in left subtree.
+     * Time complexity O(h)
      *
      * @param root A pointer to the root node of the BST
      * @param data The data (or the data of node) for which we have to find inorder successor.
      * @returns Node pointer to the inorder successor node.
      * */
     Node *getInorderSuccessor(Node *root, int64_t data) {
-        // O(h)
 
         Node *current = getNode(root, data);
         if (current == nullptr) return nullptr;
@@ -132,13 +132,14 @@ namespace binary_search_tree {
             Node *successor = nullptr;
             Node *ancestor = root;
 
-            while (ancestor != current) {
+            while (ancestor != current && ancestor != nullptr) {
 
+                // This means my current node is in left of the root node
                 if (current->data < ancestor->data) {
-                    // This means my current node is in left of the root node
                     successor = ancestor;
                     ancestor = ancestor->left;  // keep going left
-                } else {
+                }
+                else {
                     ancestor = ancestor->right;
                 }
             }
@@ -173,7 +174,7 @@ namespace binary_search_tree {
         }
         return root;
     }
-    }  // namespace binary_search_tree
+}  // namespace binary_search_tree
 
 /**
  * @brief class encapsulating the necessary test cases
@@ -235,6 +236,9 @@ public:
         assert(inorderSuccessor == expectedOutput);
         log("Assertion check passed!");
 
+        delete(inorderSuccessor);
+        delete(root);
+
         log("[PASS] : TEST CASE 1 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
@@ -266,6 +270,9 @@ public:
         assert(inorderSuccessor->data == expectedOutput);
         log("Assertion check passed!");
 
+        delete(inorderSuccessor);
+        delete(root);
+
         log("[PASS] : TEST CASE 2 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
@@ -296,6 +303,9 @@ public:
         log("Checking assert expression...");
         assert(inorderSuccessor->data == expectedOutput);
         log("Assertion check passed!");
+
+        delete(inorderSuccessor);
+        delete(root);
 
         log("[PASS] : TEST CASE 3 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -340,6 +350,9 @@ int main(int argc, char *argv[]) {
         std::cout<<"Target element is : "<<targetElement<<std::endl;
         std::cout<<"Inorder successor for target element is : "<<inorderSuccessor->data;
     }
+
+    delete(inorderSuccessor);
+    delete(root);
 
     return 0;
 }
