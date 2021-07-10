@@ -24,7 +24,8 @@
 namespace backtracking {
 /**
  * @namespace subarray_sum
- * @brief Functions for the [Subset sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
+ * @brief Functions for the [Subset
+ * sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
  */
 namespace Subarrays {
 /**
