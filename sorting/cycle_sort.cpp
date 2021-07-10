@@ -3,7 +3,7 @@
  * @brief Implementation of [Cycle
  * sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
  * @details
- * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in best
+ * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in the best
  * case and works in \f$O(n^2)\f$ in worst case. If a element is already at its
  * correct  position, do nothing. If a element is not at its correct position,
  * we then need to move it to its correct position by computing the correct
