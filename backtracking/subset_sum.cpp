@@ -74,7 +74,7 @@ static void test() {
 
     // Test 3
     std::cout << "3rd test ";
-    std::vector<int> array3 = {1, 1, 1, 1};
+    std::vector<uint64_t> array3 = {1, 1, 1, 1};
     assert(backtracking::subset_sum::subset_sum(1, array3) ==
            4);  // here we are expecting 4 subsets which sum up to 1 i.e.
                 // {(1),(1),(1),(1)}
