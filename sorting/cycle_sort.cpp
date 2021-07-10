@@ -91,9 +91,9 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
 static void test() {
     // Test 1
     // [4, 3, 2, 1] return [1, 2, 3, 4]
-    std::vector<int> array1 = {4, 3, 2, 1};
+    std::vector<uint32_t> array1 = {4, 3, 2, 1};
     std::cout << "Test 1... ";
-    std::vector<int> arr1 = sorting::cycle_sort::cycleSort(array1);
+    std::vector<uint32_t> arr1 = sorting::cycle_sort::cycleSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
     std::cout << "passed" << std::endl;
 
@@ -106,16 +106,16 @@ static void test() {
 
     // Test 3
     // [3, 3, 3, 3] return [3, 3, 3, 3]
-    std::vector<int> array3 = {3, 3, 3, 3};
+    std::vector<uint32_t> array3 = {3, 3, 3, 3};
     std::cout << "Test 3... ";
-    std::vector<int> arr3 = sorting::cycle_sort::cycleSort(array3);
+    std::vector<uint32_t> arr3 = sorting::cycle_sort::cycleSort(array3);
     assert(std::is_sorted(std::begin(arr3), std::end(arr3)));
     std::cout << "passed" << std::endl;
 
     // [9, 4, 6, 8, 14, 3] return [9, 4, 6, 8, 14, 3]
-    std::vector<int> array4 = {3, 4, 6, 8, 9, 14};
+    std::vector<uint32_t> array4 = {3, 4, 6, 8, 9, 14};
     std::cout << "Test 4... ";
-    std::vector<int> arr4 = sorting::cycle_sort::cycleSort(array4);
+    std::vector<uint32_t> arr4 = sorting::cycle_sort::cycleSort(array4);
     assert(std::is_sorted(std::begin(arr4), std::end(arr4)));
     std::cout << "passed" << std::endl;
 }
