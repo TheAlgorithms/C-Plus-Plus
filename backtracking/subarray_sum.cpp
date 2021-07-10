@@ -60,7 +60,7 @@ std::uint64_t subarray_sum(int sum, const std::vector<int> &in_arr) {
 }  // namespace backtracking
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
