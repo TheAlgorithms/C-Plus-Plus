@@ -25,8 +25,9 @@ void print(const sequence_t& s) {
 // Check if it's a magic sequence
 bool is_magic(const sequence_t& s) {
     for (unsigned int i = 0; i < s.size(); i++) {
-        if (std::count(s.cbegin(), s.cend(), i) != s[i])
+        if (std::count(s.cbegin(), s.cend(), i) != s[i]) {
             return false;
+        }
     }
     return true;
 }
@@ -40,13 +41,15 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
     if (depth == s->size()) {
-        if (is_magic(*s))
+        if (is_magic(*s)) {
             ret->push_back(*s);
+        }
     } else {
         for (unsigned int i = 0; i < s->size(); i++) {
             (*s)[depth] = i;
-            if (filtering(*s, depth + 1))
+            if (filtering(*s, depth + 1)) {
                 solve(s, ret, depth + 1);
+            }
         }
     }
 }
@@ -55,14 +58,14 @@ void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
 
 }  // namespace backtracking
 
-using namespace backtracking::magic_sequence;
-
 static void test() {
-    sequence_t s_magic = {6, 2, 1, 0, 0, 0, 1, 0, 0, 0};
-    assert(is_magic(s_magic));
+    backtracking::magic_sequence::sequence_t s_magic = {6, 2, 1, 0, 0,
+                                                        0, 1, 0, 0, 0};
+    assert(backtracking::magic_sequence::is_magic(s_magic));
 
-    sequence_t s_not_magic = {5, 2, 1, 0, 0, 0, 1, 0, 0, 0};
-    assert(!is_magic(s_not_magic));
+    backtracking::magic_sequence::sequence_t s_not_magic = {5, 2, 1, 0, 0,
+                                                            0, 1, 0, 0, 0};
+    assert(!backtracking::magic_sequence::is_magic(s_not_magic));
 }
 
 int main() {
@@ -70,9 +73,9 @@ int main() {
 
     for (unsigned int i = 2; i < 12; i++) {
         std::cout << "Solution for n = " << i << std::endl;
-        std::list<sequence_t>* r1 = new std::list<sequence_t>();
-        sequence_t* s1 = new sequence_t(i, i);
-        solve(s1, r1);
-        for (const auto& item : *r1) print(item);
+        std::list<backtracking::magic_sequence::sequence_t> r1;
+        backtracking::magic_sequence::sequence_t s1(i, i);
+        backtracking::magic_sequence::solve(&s1, &r1);
+        for (const auto& item : r1) backtracking::magic_sequence::print(item);
     }
 }
