@@ -13,9 +13,7 @@
  *        OR, we can also say in case if BST, find the minimum of the subtree
  * for a given node.
  *
- * ### Case 2
- *
- * The given node does not have a right node/subtree
+ * ### Case 2: The given node does not have a right node/subtree
  *
  * #### Method 1: Use parent pointer (store the address of parent nodes)
  *      If a node does not have right subtree, and we already visited the node
