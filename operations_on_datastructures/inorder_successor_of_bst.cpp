@@ -53,7 +53,7 @@ namespace operations_on_datastructures {
 namespace inorder_traversal_of_bst {
 
 /**
- * @brief A Node structure representing a single node in bst.
+ * @brief A Node structure representing a single node in BST
  */
 class Node {
  public:
