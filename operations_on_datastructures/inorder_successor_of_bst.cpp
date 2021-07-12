@@ -5,9 +5,7 @@
  * successor of a node is the next node in Inorder traversal of the Binary Tree.
  * Inorder Successor is NULL for the last node in Inorder traversal.
  *
- * ### Case 1
- *
- * The given node has right node/subtree
+ * ### Case 1: The given node has the right node/subtree
  *
  *      In this case the left most deepest node in the right subtree will come
  * just after the given node as we go to left deep in inorder.
