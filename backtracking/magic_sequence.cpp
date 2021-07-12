@@ -1,5 +1,5 @@
 /*
- * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/)
+ * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
  *
  * @details
  *
