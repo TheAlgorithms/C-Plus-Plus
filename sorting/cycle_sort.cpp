@@ -36,14 +36,14 @@ namespace cycle_sort {
 template <typename T>
 std::vector<T> cycleSort(const std::vector<T> &in_arr) {
     std::vector<T> arr(in_arr);
-    for (size_t cycle_start = 0; cycle_start <= arr.size() - 1; cycle_start++) {
+    for (int cycle_start = 0; cycle_start <= arr.size() - 1; cycle_start++) {
         // initialize item
         T item = arr[cycle_start];
 
         // Count the number of elements smaller than item, this  number is the
         // correct index of item.
         int pos = cycle_start;
-        for (size_t i = cycle_start + 1; i < arr.size(); i++) {
+        for (int i = cycle_start + 1; i < arr.size(); i++) {
             if (arr[i] < item) {
                 pos++;
             }
