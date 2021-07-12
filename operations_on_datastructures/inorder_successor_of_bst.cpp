@@ -377,7 +377,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test();  /// run self-test implementations
+    test();  // run self-test implementations
 
     operations_on_datastructures::inorder_traversal_of_bst::Node *root =
         nullptr;  ///< root node of the bst
