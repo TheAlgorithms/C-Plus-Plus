@@ -20,14 +20,14 @@
  * The given node does not have a right node/subtree
  *
  * #### Method 1: Use parent pointer (store the address of parent nodes)
- *      If a node does not have right subtree, and we already visited the node
+ *      * If a node does not have right subtree, and we already visited the node
  * itself, then the next node will be its parent node according to inorder
  * traversal, and if we are going to parent from left, then the parent would be
  * unvisited. In other words, go to the nearest ancestor for which given node
  * would be in left subtree.
  *
  * #### Method 2: Search from the root node
- *      In case if there is no link to the parent, we need to walk the tree
+ *      * In case if there is no link to the parent, we need to walk the tree
  * starting from the root node to the given node, by doing so, we are visiting
  * every ancestor of the given node. In order successor would be the deepest
  * node in this path for which given node is in left subtree.
