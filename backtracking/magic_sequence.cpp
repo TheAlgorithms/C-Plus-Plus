@@ -60,11 +60,10 @@ bool is_magic(const sequence_t& s) {
 
 /**
  * @brief Sub-solutions filtering
- *
  * @param s a magic sequence
  * @param depth tree depth
- * @return true if the sub-solution is valid
- * @return false otherwise
+ * @returns true if the sub-solution is valid
+ * @returns false if the sub-solution is NOT valid
  */
 bool filtering(const sequence_t& s, unsigned int depth) {
     return std::accumulate(s.cbegin(), s.cbegin() + depth,
@@ -73,7 +72,6 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 
 /**
  * @brief Solve the Magic Sequence problem
- *
  * @param s a magic sequence
  * @param ret list of valid magic sequences
  * @param depth depth in the tree
