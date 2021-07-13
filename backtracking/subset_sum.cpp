@@ -3,7 +3,7 @@
  * @brief Implementation of the [Subset
  * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  * @details
- * We are given an array and a sum value. The algorithms find all
+ * We are given an array and a sum value. The algorithm finds all
  * the subsets of that array with sum equal to the given sum and return such
  * subsets count. This approach will have exponential time complexity.
  * @author [Swastika Gupta](https://github.com/Swastyy)
