@@ -36,7 +36,6 @@ using sequence_t = std::vector<unsigned int>;
 
 /**
  * @brief print a magic sequence
- *
  * @param s a magic sequence
  */
 void print(const sequence_t& s) {
