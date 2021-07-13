@@ -99,7 +99,6 @@ void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
 
 /**
  * @brief Self-test implementations
- *
  * @returns void
  */
 static void test() {
