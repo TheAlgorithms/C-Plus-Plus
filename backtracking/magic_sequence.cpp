@@ -121,7 +121,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // run self-test implementations
 
     // solve magic sequences of size 2 to 11 and print the solutions
     for (unsigned int i = 2; i < 12; i++) {
