@@ -100,7 +100,7 @@ void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
 }  // namespace backtracking
 
 /**
- * @brief tests
+ * @brief Self-test implementations
  *
  * @returns void
  */
