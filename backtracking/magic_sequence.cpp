@@ -14,7 +14,7 @@
  */
 
 #include <algorithm> /// for std::count
-#include <cassert>   /// assert
+#include <cassert>   /// for assert
 #include <iostream>  /// IO operations
 #include <list>      /// std::list
 #include <numeric>   /// std::accumulate
