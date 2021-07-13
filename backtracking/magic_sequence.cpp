@@ -22,7 +22,7 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace
+ * @namespace backtracking
  * @brief Backtracking algorithms
  */
 namespace backtracking {
