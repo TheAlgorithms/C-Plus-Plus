@@ -29,7 +29,7 @@ namespace backtracking {
  */
 namespace subarraySum {
 /**
- * @brief The main function implements count of subarrays
+ * @brief The main function that implements the count of the subarrays
  * @param sum is the required sum of any subarrays
  * @param in_arr is the input array
  * @returns count of the number of subsets with required sum
