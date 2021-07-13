@@ -29,7 +29,7 @@ namespace backtracking {
 
 /**
  * @namespace magic_sequence
- * @brief Definition and solve magic sequence problem
+ * @brief Functions for the [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
  */
 namespace magic_sequence {
 using sequence_t = std::vector<unsigned int>;
