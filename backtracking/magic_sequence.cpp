@@ -116,6 +116,10 @@ static void test() {
     assert(!backtracking::magic_sequence::is_magic(s_not_magic));
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();
 
