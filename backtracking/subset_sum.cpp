@@ -79,7 +79,7 @@ static void test() {
                 // {(1),(1),(1),(1)}
     std::cout << "passed" << std::endl;
 
-    // Test 4
+    // 4th test
     std::cout << "4th test ";
     std::vector<int32_t> array4 = {3, 3, 3, 3};
     assert(backtracking::subset_sum::number_of_subsets(6, array4) ==
