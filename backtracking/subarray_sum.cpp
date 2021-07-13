@@ -19,7 +19,7 @@
 
 /**
  * @namespace backtracking
- * @brief subarray sum algorithm
+ * @brief Backtracking algorithms
  */
 namespace backtracking {
 /**
