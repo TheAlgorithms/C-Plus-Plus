@@ -1,6 +1,5 @@
 /*
- * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/)
- * implementation
+ * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
  *
  * @details Solve the magic sequence problem with a backtraking
  *
@@ -63,7 +62,7 @@ bool is_magic(const sequence_t& s) {
  * @brief Sub-solutions filtering
  *
  * @param s a magic sequence
- * @param depth
+ * @param depth tree depth
  * @return true if the sub-solution is valid
  * @return false otherwise
  */
@@ -107,7 +106,7 @@ static void test() {
                                                         0, 1, 0, 0, 0};
     assert(backtracking::magic_sequence::is_magic(s_magic));
 
-    // test a not valid magic sequence
+    // test a non-valid magic sequence
     backtracking::magic_sequence::sequence_t s_not_magic = {5, 2, 1, 0, 0,
                                                             0, 1, 0, 0, 0};
     assert(!backtracking::magic_sequence::is_magic(s_not_magic));
