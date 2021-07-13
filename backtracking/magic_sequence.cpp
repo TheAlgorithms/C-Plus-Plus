@@ -110,7 +110,6 @@ static void test() {
     backtracking::magic_sequence::sequence_t s_magic = {6, 2, 1, 0, 0,
                                                         0, 1, 0, 0, 0};
     assert(backtracking::magic_sequence::is_magic(s_magic));
-
     backtracking::magic_sequence::sequence_t s_not_magic = {5, 2, 1, 0, 0,
                                                             0, 1, 0, 0, 0};
     assert(!backtracking::magic_sequence::is_magic(s_not_magic));
