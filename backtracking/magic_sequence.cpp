@@ -9,7 +9,7 @@
  *  in $0$ to $n-1$, the number $i$ occurs exactly $x_i$ times in
  * the sequence. For instance, $6,2,1,0,0,0,1,0,0,0$ is a magic
  * sequence since $0$ occurs $6$ times in it, $1$ occurs twice, etc."
- * Quote of https://www.csplib.org/Problems/prob019/
+ * Quote taken from the [CSPLib](https://www.csplib.org/Problems/prob019/) website
  *
  * @author [Jxtopher](https://github.com/jxtopher)
  */
