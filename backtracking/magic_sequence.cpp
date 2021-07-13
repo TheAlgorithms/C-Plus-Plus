@@ -123,9 +123,14 @@ int main() {
     // solve magic sequences of size 2 to 11 and print the solutions
     for (unsigned int i = 2; i < 12; i++) {
         std::cout << "Solution for n = " << i << std::endl;
-        std::list<backtracking::magic_sequence::sequence_t> r1;
+        // valid magic sequence list
+        std::list<backtracking::magic_sequence::sequence_t> list_of_solutions;
+        // initialization of a sequence
         backtracking::magic_sequence::sequence_t s1(i, i);
-        backtracking::magic_sequence::solve(&s1, &r1);
-        for (const auto& item : r1) backtracking::magic_sequence::print(item);
+        // launch of solving the problem
+        backtracking::magic_sequence::solve(&s1, &list_of_solutions);
+        // print solutions
+        for (const auto& item : list_of_solutions)
+            backtracking::magic_sequence::print(item);
     }
 }
