@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief [Subset-sum](https://en.wikipedia.org/wiki/Subset_sum_problem) (only continuous subsets) problem
+ * @brief [Subset-sum](https://en.wikipedia.org/wiki/Subset_sum_problem) (only
+ * continuous subsets) problem
  * @details We are given an array and a sum value. The algorithms find all
  * the subarrays of that array with sum equal to the given sum and return such
  * subarrays count. This approach will have \f$O(n)\f$ time complexity and
