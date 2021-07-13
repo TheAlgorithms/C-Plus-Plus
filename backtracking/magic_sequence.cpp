@@ -62,7 +62,7 @@ bool is_magic(const sequence_t& s) {
 }
 
 /**
- * @brief Filtering of sub-solutions
+ * @brief Sub-solutions filtering
  *
  * @param s a magic sequence
  * @param depth
