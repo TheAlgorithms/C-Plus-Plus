@@ -75,7 +75,7 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 }
 
 /**
- * @brief solve magic squance problem
+ * @brief Solve the Magic Sequence problem
  *
  * @param s a magic sequence
  * @param ret list of valid magic sequences
