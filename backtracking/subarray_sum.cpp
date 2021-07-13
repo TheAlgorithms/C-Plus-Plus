@@ -1,14 +1,14 @@
 /**
  * @file
- * @brief We are given with an array and a sum value. The algorithms find all
- * the subarrays of that array with sum equal to given sum and return such
+ * @brief [Subset-sum](https://en.wikipedia.org/wiki/Subset_sum_problem) (only continuous subsets) problem
+ * @details We are given an array and a sum value. The algorithms find all
+ * the subarrays of that array with sum equal to the given sum and return such
  * subarrays count. This approach will have \f$O(n)\f$ time complexity and
- * \f$O(n)\f$ space complexity. NOTE: In this problem, we are only refering to
+ * \f$O(n)\f$ space complexity. NOTE: In this problem, we are only referring to
  * the continuous subsets as subarrays everywhere. Subarrays can be created
- * using deletion operation at the end or the front of an array only. The parent
+ * using deletion operation at the end of the front of an array only. The parent
  * array is also counted in subarrays having 0 number of deletion operations.
- * @details Subset sum(only continuous subsets) problem
- * (https://en.wikipedia.org/wiki/Subset_sum_problem)
+ *
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
