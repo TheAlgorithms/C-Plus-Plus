@@ -28,7 +28,7 @@
 namespace backtracking {
 
 /**
- * @namespace
+ * @namespace magic_sequence
  * @brief Definition and solve magic sequence problem
  */
 namespace magic_sequence {
