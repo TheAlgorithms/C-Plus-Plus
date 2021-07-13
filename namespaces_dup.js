@@ -22,6 +22,9 @@ var namespaces_dup =
       [ "rat_maze", null, [
         [ "solveMaze", "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3", null ]
       ] ],
+      [ "subset_sum", null, [
+        [ "number_of_subsets", "d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99", null ]
+      ] ],
       [ "graphColoring", "db/dc0/namespacebacktracking.html#a29360ddb1bad75caa61ec895b6e71986", null ],
       [ "isPossible", "db/dc0/namespacebacktracking.html#a80af16e57cfb6aaab2bf1da4c4db3308", null ],
       [ "isSafe", "db/dc0/namespacebacktracking.html#a5a6c3c2b065ea1c07adf2f638f8efc43", null ],
@@ -216,6 +219,7 @@ var namespaces_dup =
     ] ],
     [ "strings", "df/dcb/namespacestrings.html", null ],
     [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
+    [ "Subsets", "de/d95/namespace_subsets.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
     [ "trie_operations", "df/d8e/namespacetrie__operations.html", null ],
     [ "trie_using_hashmap", "d7/d0a/namespacetrie__using__hashmap.html", null ],
