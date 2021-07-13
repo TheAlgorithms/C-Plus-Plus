@@ -13,7 +13,7 @@
  * @author [Jxtopher](https://github.com/jxtopher)
  */
 
-#include <algorithm> /// std::count
+#include <algorithm> /// for std::count
 #include <cassert>   /// assert
 #include <iostream>  /// IO operations
 #include <list>      /// std::list
