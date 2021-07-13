@@ -16,10 +16,10 @@
 
 #include <algorithm>  /// for std::count
 #include <cassert>    /// for assert
-#include <iostream>   /// IO operations
-#include <list>       /// std::list
-#include <numeric>    /// std::accumulate
-#include <vector>     /// std::vector
+#include <iostream>   /// for IO operations
+#include <list>       /// for std::list
+#include <numeric>    /// for std::accumulate
+#include <vector>     /// for std::vector
 
 /**
  * @namespace
@@ -68,7 +68,6 @@ bool is_magic(const sequence_t& s) {
  * @param depth
  * @return true if the sub-solution is valid
  * @return false otherwise
- *
  */
 bool filtering(const sequence_t& s, unsigned int depth) {
     return std::accumulate(s.cbegin(), s.cbegin() + depth,
@@ -81,7 +80,6 @@ bool filtering(const sequence_t& s, unsigned int depth) {
  * @param s a magic sequence
  * @param ret list of valid magic sequences
  * @param depth depth in the tree
- *
  */
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
     if (depth == s->size()) {
@@ -104,11 +102,15 @@ void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
 /**
  * @brief tests
  *
+ * @returns void
  */
 static void test() {
+    // test a valid magic sequence
     backtracking::magic_sequence::sequence_t s_magic = {6, 2, 1, 0, 0,
                                                         0, 1, 0, 0, 0};
     assert(backtracking::magic_sequence::is_magic(s_magic));
+
+    // test a not valid magic sequence
     backtracking::magic_sequence::sequence_t s_not_magic = {5, 2, 1, 0, 0,
                                                             0, 1, 0, 0, 0};
     assert(!backtracking::magic_sequence::is_magic(s_not_magic));
@@ -117,6 +119,7 @@ static void test() {
 int main() {
     test();
 
+    // solve magic sequences of size 2 to 11 and print the solutions
     for (unsigned int i = 2; i < 12; i++) {
         std::cout << "Solution for n = " << i << std::endl;
         std::list<backtracking::magic_sequence::sequence_t> r1;
