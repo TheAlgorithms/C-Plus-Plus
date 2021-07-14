@@ -45,8 +45,8 @@ void print(const sequence_t& s) {
 /**
  * @brief Check if the sequence is magic
  * @param s a magic sequence
- * @return true if is a magic sequence
- * @return false otherwise
+ * @returns true if it's a magic sequence
+ * @returns false if it's NOT a magic sequence
  *
  */
 bool is_magic(const sequence_t& s) {
