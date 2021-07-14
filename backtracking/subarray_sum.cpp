@@ -24,11 +24,11 @@
  */
 namespace backtracking {
 /**
- * @namespace subarraySum
+ * @namespace subarray_sum
  * @brief Functions for the [Subset
  * sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
  */
-namespace subarraySum {
+namespace subarray_sum {
 /**
  * @brief The main function that implements the count of the subarrays
  * @param sum is the required sum of any subarrays
@@ -36,14 +36,14 @@ namespace subarraySum {
  * @returns count of the number of subsets with required sum
  */
 
-uint64_t subarray_sum(int sum, const std::vector<int> &in_arr) {
-    int nelement = in_arr.size();
-    int count_of_subset = 0;
-    int current_sum = 0;
-    std::unordered_map<int, int> sumarray;  // to store the subarrays count
+uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
+    int64_t nelement = in_arr.size();
+    int64_t count_of_subset = 0;
+    int64_t current_sum = 0;
+    std::unordered_map<int64_t, int64_t> sumarray;  // to store the subarrays count
                                             // frequency having some sum value
 
-    for (int i = 0; i < nelement; i++) {
+    for (int64_t i = 0; i < nelement; i++) {
         current_sum += in_arr[i];
 
         if (current_sum == sum) {
@@ -57,7 +57,7 @@ uint64_t subarray_sum(int sum, const std::vector<int> &in_arr) {
     }
     return count_of_subset;
 }
-}  // namespace subarraySum
+}  // namespace subarray_sum
 }  // namespace backtracking
 
 /**
@@ -67,41 +67,41 @@ uint64_t subarray_sum(int sum, const std::vector<int> &in_arr) {
 static void test() {
     // Test 1
     std::cout << "1st test ";
-    std::vector<int> array1 = {-7, -3, -2, 5, 8};  // input array
+    std::vector<int64_t> array1 = {-7, -3, -2, 5, 8};  // input array
     assert(
-        backtracking::subarraySum::subarray_sum(0, array1) ==
+        backtracking::subarray_sum::subarray_sum(0, array1) ==
         1);  // first argument in subarray_sum function is the required sum and
              // second is the input array, answer is the subarray {(-3,-2,5)}
     std::cout << "passed" << std::endl;
 
     // Test 2
     std::cout << "2nd test ";
-    std::vector<int> array2 = {1, 2, 3, 3};
-    assert(backtracking::subarraySum::subarray_sum(6, array2) ==
+    std::vector<int64_t> array2 = {1, 2, 3, 3};
+    assert(backtracking::subarray_sum::subarray_sum(6, array2) ==
            2);  // here we are expecting 2 subsets which sum up to 6 i.e.
                 // {(1,2,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 3
     std::cout << "3rd test ";
-    std::vector<int> array3 = {1, 1, 1, 1};
-    assert(backtracking::subarraySum::subarray_sum(1, array3) ==
+    std::vector<int64_t> array3 = {1, 1, 1, 1};
+    assert(backtracking::subarray_sum::subarray_sum(1, array3) ==
            4);  // here we are expecting 4 subsets which sum up to 1 i.e.
                 // {(1),(1),(1),(1)}
     std::cout << "passed" << std::endl;
 
     // Test 4
     std::cout << "4th test ";
-    std::vector<int> array4 = {3, 3, 3, 3};
-    assert(backtracking::subarraySum::subarray_sum(6, array4) ==
+    std::vector<int64_t> array4 = {3, 3, 3, 3};
+    assert(backtracking::subarray_sum::subarray_sum(6, array4) ==
            3);  // here we are expecting 3 subsets which sum up to 6 i.e.
                 // {(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
 
     // Test 5
     std::cout << "5th test ";
-    std::vector<int> array5 = {};
-    assert(backtracking::subarraySum::subarray_sum(6, array5) ==
+    std::vector<int64_t> array5 = {};
+    assert(backtracking::subarray_sum::subarray_sum(6, array5) ==
            0);  // here we are expecting 0 subsets which sum up to 6 i.e. we
                 // cannot select anything from an empty array
     std::cout << "passed" << std::endl;
