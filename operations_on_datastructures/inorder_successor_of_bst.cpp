@@ -404,7 +404,7 @@ int main(int argc, char *argv[]) {
     } else {
         std::cout << "Target element is : " << targetElement << std::endl;
         std::cout << "Inorder successor for target element is : "
-                  << inorderSuccessor->data;
+                  << inorderSuccessor->data << std::endl;
     }
 
     delete (inorderSuccessor);
