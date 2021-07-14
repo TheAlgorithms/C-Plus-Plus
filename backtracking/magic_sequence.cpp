@@ -73,7 +73,7 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 /**
  * @brief Solve the Magic Sequence problem
  * @param s a magic sequence
- * @param ret list of valid magic sequences
+ * @param ret list of the valid magic sequences
  * @param depth depth in the tree
  */
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
