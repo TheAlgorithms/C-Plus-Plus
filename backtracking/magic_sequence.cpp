@@ -31,11 +31,11 @@ namespace backtracking {
  * @brief Functions for the [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
  */
 namespace magic_sequence {
-using sequence_t = std::vector<unsigned int>;
+using sequence_t = std::vector<unsigned int>;  ///< Definition of the sequence type
 
 /**
  * @brief Print the magic sequence
- * @param s a magic sequence
+ * @param s working memory for the sequence
  */
 void print(const sequence_t& s) {
     for (const auto& item : s) std::cout << item << " ";
@@ -44,7 +44,7 @@ void print(const sequence_t& s) {
 
 /**
  * @brief Check if the sequence is magic
- * @param s a magic sequence
+ * @param s working memory for the sequence
  * @returns true if it's a magic sequence
  * @returns false if it's NOT a magic sequence
  *
@@ -60,8 +60,8 @@ bool is_magic(const sequence_t& s) {
 
 /**
  * @brief Sub-solutions filtering
- * @param s a magic sequence
- * @param depth tree depth
+ * @param s working memory for the sequence
+ * @param depth current depth in tree
  * @returns true if the sub-solution is valid
  * @returns false if the sub-solution is NOT valid
  */
@@ -72,9 +72,9 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 
 /**
  * @brief Solve the Magic Sequence problem
- * @param s a magic sequence
+ * @param s working memory for the sequence
  * @param ret list of the valid magic sequences
- * @param depth depth in the tree
+ * @param depth current depth in tree
  */
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
     if (depth == s->size()) {
