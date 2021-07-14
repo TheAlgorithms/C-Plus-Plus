@@ -7,7 +7,7 @@
  * @details
  * ### Case 1: The given node has the right node/subtree
  *
- *      In this case the left most deepest node in the right subtree will come
+ *      * In this case, the left-most deepest node in the right subtree will come
  * just after the given node as we go to left deep in inorder.
  *      - Go deep to left most node in right subtree.
  *        OR, we can also say in case if BST, find the minimum of the subtree
