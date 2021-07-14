@@ -1,11 +1,12 @@
 /**
  * @file
- * @brief Implementation of [Floyd's Cycle Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
+ * @brief Implementation of [Floyd's Cycle
+ * Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
  * @details Given an array of integers containing 'n + 1' integers, where each
  * integer is in the range [1, n] inclusive. If there is only one duplicate
- * number in the input array, this algorithm returns the duplicate number in O(1) space
- * and the time complexity is less than O(n^2) without modifying the original array,
- * otherwise, it returns -1.
+ * number in the input array, this algorithm returns the duplicate number in
+ * O(1) space and the time complexity is less than O(n^2) without modifying the
+ * original array, otherwise, it returns -1.
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
@@ -19,7 +20,8 @@
 namespace search {
 /**
  * @namespace cycle_detection
- * @brief Functions for the [Floyd's Cycle Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
+ * @brief Functions for the [Floyd's Cycle
+ * Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
  */
 namespace cycle_detection {
 /**
