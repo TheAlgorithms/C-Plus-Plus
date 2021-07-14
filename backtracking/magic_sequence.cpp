@@ -34,7 +34,7 @@ namespace magic_sequence {
 using sequence_t = std::vector<unsigned int>;
 
 /**
- * @brief print a magic sequence
+ * @brief Print the magic sequence
  * @param s a magic sequence
  */
 void print(const sequence_t& s) {
