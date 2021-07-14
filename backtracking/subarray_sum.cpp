@@ -40,8 +40,9 @@ uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
     int64_t nelement = in_arr.size();
     int64_t count_of_subset = 0;
     int64_t current_sum = 0;
-    std::unordered_map<int64_t, int64_t> sumarray;  // to store the subarrays count
-                                            // frequency having some sum value
+    std::unordered_map<int64_t, int64_t>
+        sumarray;  // to store the subarrays count
+                   // frequency having some sum value
 
     for (int64_t i = 0; i < nelement; i++) {
         current_sum += in_arr[i];
