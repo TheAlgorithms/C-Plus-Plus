@@ -1,5 +1,6 @@
 /*
- * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
+ * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/)
+ * implementation
  *
  * @details Solve the magic sequence problem with backtracking
  *
@@ -8,7 +9,8 @@
  * in $0$ to $n-1$, the number $i$ occurs exactly $x_i$ times in
  * the sequence. For instance, $6,2,1,0,0,0,1,0,0,0$ is a magic
  * sequence since $0$ occurs $6$ times in it, $1$ occurs twice, etc."
- * Quote taken from the [CSPLib](https://www.csplib.org/Problems/prob019/) website
+ * Quote taken from the [CSPLib](https://www.csplib.org/Problems/prob019/)
+ * website
  *
  * @author [Jxtopher](https://github.com/Jxtopher)
  */
@@ -27,10 +29,12 @@
 namespace backtracking {
 /**
  * @namespace magic_sequence
- * @brief Functions for the [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
+ * @brief Functions for the [Magic
+ * sequence](https://www.csplib.org/Problems/prob019/) implementation
  */
 namespace magic_sequence {
-using sequence_t = std::vector<unsigned int>;  ///< Definition of the sequence type
+using sequence_t =
+    std::vector<unsigned int>;  ///< Definition of the sequence type
 
 /**
  * @brief Print the magic sequence
@@ -126,7 +130,8 @@ int main() {
         // launch of solving the problem
         backtracking::magic_sequence::solve(&s1, &list_of_solutions);
         // print solutions
-        for (const auto& item : list_of_solutions)
+        for (const auto& item : list_of_solutions) {
             backtracking::magic_sequence::print(item);
+        }
     }
 }
