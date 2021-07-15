@@ -10,7 +10,7 @@
  * sequence since $0$ occurs $6$ times in it, $1$ occurs twice, etc."
  * Quote taken from the [CSPLib](https://www.csplib.org/Problems/prob019/) website
  *
- * @author [Jxtopher](https://github.com/jxtopher)
+ * @author [Jxtopher](https://github.com/Jxtopher)
  */
 
 #include <algorithm>  /// for std::count
