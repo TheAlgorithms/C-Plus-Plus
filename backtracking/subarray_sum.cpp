@@ -75,7 +75,7 @@ static void test() {
              // second is the input array, answer is the subarray {(-3,-2,5)}
     std::cout << "passed" << std::endl;
 
-    // Test 2
+    // 2nd test
     std::cout << "2nd test ";
     std::vector<int64_t> array2 = {1, 2, 3, 3};
     assert(backtracking::subarray_sum::subarray_sum(6, array2) ==
