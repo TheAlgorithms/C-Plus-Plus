@@ -23,7 +23,7 @@ namespace sorting {
  */
 namespace wave_sort {
 /**
- * @brief The main function implements waveSort
+ * @brief The main function implements that implements the Wave Sort algorithm
  * @tparam T type of array
  * @param in_arr array to be sorted
  * @returns arr the wave sorted array
