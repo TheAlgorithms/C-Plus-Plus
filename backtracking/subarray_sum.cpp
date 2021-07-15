@@ -83,7 +83,7 @@ static void test() {
                 // {(1,2,3),(3,3)}
     std::cout << "passed" << std::endl;
 
-    // Test 3
+    // 3rd test
     std::cout << "3rd test ";
     std::vector<int64_t> array3 = {1, 1, 1, 1};
     assert(backtracking::subarray_sum::subarray_sum(1, array3) ==
