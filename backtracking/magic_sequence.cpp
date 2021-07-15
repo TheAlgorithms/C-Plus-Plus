@@ -25,7 +25,6 @@
  * @brief Backtracking algorithms
  */
 namespace backtracking {
-
 /**
  * @namespace magic_sequence
  * @brief Functions for the [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
