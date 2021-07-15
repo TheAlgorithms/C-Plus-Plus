@@ -10,7 +10,6 @@
  */
 
 #include <cassert>   /// for assert
-#include <climits>   /// for std::max
 #include <iostream>  /// for io operations
 #include <unordered_map>    /// for std::unordered_map
 
