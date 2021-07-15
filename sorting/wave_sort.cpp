@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of [Wave
+ * @brief Implementation of the [Wave
  * sort](https://www.geeksforgeeks.org/sort-array-wave-form-2/) algorithm
  * @details
  * Wave Sort is a sorting algorithm that works in \f$O(nlogn)\f$ time assuming
