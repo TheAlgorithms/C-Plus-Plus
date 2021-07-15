@@ -49,7 +49,6 @@ void print(const sequence_t& s) {
  * @param s working memory for the sequence
  * @returns true if it's a magic sequence
  * @returns false if it's NOT a magic sequence
- *
  */
 bool is_magic(const sequence_t& s) {
     for (unsigned int i = 0; i < s.size(); i++) {
