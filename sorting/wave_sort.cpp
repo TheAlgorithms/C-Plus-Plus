@@ -45,7 +45,7 @@ std::vector<T> waveSort(const std::vector<T> &in_arr, int64_t n) {
 }  // namespace sorting
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
