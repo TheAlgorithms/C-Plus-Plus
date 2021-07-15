@@ -35,7 +35,6 @@ namespace backtracking {
 namespace magic_sequence {
 using sequence_t =
     std::vector<unsigned int>;  ///< Definition of the sequence type
-
 /**
  * @brief Print the magic sequence
  * @param s working memory for the sequence
