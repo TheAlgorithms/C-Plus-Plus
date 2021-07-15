@@ -1,7 +1,7 @@
 /*
  * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/) implementation
  *
- * @details Solve the magic sequence problem with a backtraking
+ * @details Solve the magic sequence problem with backtracking
  *
  * "A magic sequence of length $n$ is a sequence of integers $x_0
  * \ldots x_{n-1}$ between $0$ and $n-1$, such that for all $i$
