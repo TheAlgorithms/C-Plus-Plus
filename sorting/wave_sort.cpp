@@ -20,7 +20,7 @@
 namespace sorting {
 /**
  * @namespace wave_sort
- * @brief Functions for [Wave sort] algorithm
+ * @brief Functions for the [Wave sort](https://www.geeksforgeeks.org/sort-array-wave-form-2/) implementation
  */
 namespace wave_sort {
 /**
