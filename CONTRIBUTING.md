@@ -113,7 +113,7 @@ bool func(int param1, T param2) {
  * @returns void
  */
 static void test() {
-    /* desciptions of the following test */
+    /* descriptions of the following test */
     assert(func(...) == ...); // this ensures that the algorithm works as expected
 
     // can have multiple checks

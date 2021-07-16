@@ -30,11 +30,11 @@ namespace backtracking {
      */
     template <size_t V>
     void printSolution(const std::array <int, V>& color) {
-        std::cout << "Following are the assigned colors\n";
+        std::cout << "Following are the assigned colors" << std::endl;
         for (auto &col : color) {
             std::cout << col;
         }
-        std::cout << "\n";
+        std::cout << std::endl;
     }
 
     /** A utility function to check if the current color assignment is safe for
