@@ -65,7 +65,7 @@ uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
  * @returns void
  */
 static void test() {
-    // Test 1
+    // 1st test
     std::cout << "1st test ";
     std::vector<int64_t> array1 = {-7, -3, -2, 5, 8};  // input array
     assert(
