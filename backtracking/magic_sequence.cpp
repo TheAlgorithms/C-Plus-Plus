@@ -75,7 +75,7 @@ bool filtering(const sequence_t& s, unsigned int depth) {
  * @brief Solve the Magic Sequence problem
  * @param s working memory for the sequence
  * @param ret list of the valid magic sequences
- * @param depth current depth in tree
+ * @param depth current depth in the tree
  */
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
     if (depth == s->size()) {
