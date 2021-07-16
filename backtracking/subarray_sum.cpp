@@ -35,7 +35,6 @@ namespace subarray_sum {
  * @param in_arr is the input array
  * @returns count of the number of subsets with required sum
  */
-
 uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
     int64_t nelement = in_arr.size();
     int64_t count_of_subset = 0;
