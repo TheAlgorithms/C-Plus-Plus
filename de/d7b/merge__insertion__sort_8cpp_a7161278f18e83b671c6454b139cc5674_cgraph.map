@@ -1,9 +1,9 @@
 <map id="sorting::merge_insertion::mergeSort" name="sorting::merge_insertion::mergeSort">
-<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes ::sorting::merge_insertion::InsertionSort if window leng..." alt="" coords="5,88,167,129"/>
-<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="215,29,376,71"/>
-<area shape="rect" id="node4" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="243,95,348,122"/>
-<area shape="rect" id="node6" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="254,146,337,173"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="424,37,535,63"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="439,95,519,122"/>
-<area shape="rect" id="node7" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="450,146,509,173"/>
+<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes ::sorting::merge_insertion::InsertionSort if window leng..." alt="" coords="5,88,171,129"/>
+<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="219,29,384,71"/>
+<area shape="rect" id="node4" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="248,95,355,122"/>
+<area shape="rect" id="node6" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="259,146,343,173"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="432,37,543,63"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="447,95,527,122"/>
+<area shape="rect" id="node7" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="457,146,517,173"/>
 </map>

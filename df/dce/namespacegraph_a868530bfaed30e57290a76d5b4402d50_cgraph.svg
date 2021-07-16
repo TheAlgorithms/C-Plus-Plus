@@ -13,8 +13,8 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return...">
-<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 78,-19.5 78,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="39" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::dijkstra</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 79,-19.5 79,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="39.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph::dijkstra</text>
 </a>
 </g>
 </g>
@@ -22,16 +22,16 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="114,-0.5 114,-19.5 201,-19.5 201,-0.5 114,-0.5"/>
-<text text-anchor="middle" x="157.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
+<polygon fill="white" stroke="black" points="115,-0.5 115,-19.5 201,-19.5 201,-0.5 115,-0.5"/>
+<text text-anchor="middle" x="158" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M78.15,-10C86.35,-10 95.16,-10 103.81,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="103.83,-13.5 113.83,-10 103.83,-6.5 103.83,-13.5"/>
+<path fill="none" stroke="midnightblue" d="M79.29,-10C87.39,-10 96.05,-10 104.54,-10"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="104.77,-13.5 114.77,-10 104.77,-6.5 104.77,-13.5"/>
 </g>
 </g>
 </svg>

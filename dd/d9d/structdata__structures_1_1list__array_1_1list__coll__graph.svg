@@ -23,8 +23,8 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5,-78.5 5,-108.5 98,-108.5 98,-78.5 5,-78.5"/>
-<text text-anchor="start" x="13" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; uint64</text>
+<polygon fill="white" stroke="black" points="4.5,-78.5 4.5,-108.5 98.5,-108.5 98.5,-78.5 4.5,-78.5"/>
+<text text-anchor="start" x="12.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::array&lt; uint64</text>
 <text text-anchor="middle" x="51.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, 50 &gt;</text>
 </a>
 </g>
@@ -34,7 +34,7 @@
 <title>Node2&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M51.5,-68.09C51.5,-55.76 51.5,-41.22 51.5,-30.73"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="48,-68.2 51.5,-78.2 55,-68.21 48,-68.2"/>
-<text text-anchor="middle" x="62.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> data</text>
+<text text-anchor="middle" x="63" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> data</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -50,7 +50,7 @@
 <title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M51.5,-146.24C51.5,-134.41 51.5,-119.38 51.5,-108.58"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="48,-146.36 51.5,-156.36 55,-146.36 48,-146.36"/>
-<text text-anchor="middle" x="73" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+<text text-anchor="middle" x="73.5" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 </g>
 </svg>

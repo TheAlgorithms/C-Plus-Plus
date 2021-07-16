@@ -82,7 +82,7 @@
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/size.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="78.5,-0.5 78.5,-19.5 162.5,-19.5 162.5,-0.5 78.5,-0.5"/>
+<polygon fill="white" stroke="black" points="79,-0.5 79,-19.5 162,-19.5 162,-0.5 79,-0.5"/>
 <text text-anchor="middle" x="120.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::size</text>
 </a>
 </g>

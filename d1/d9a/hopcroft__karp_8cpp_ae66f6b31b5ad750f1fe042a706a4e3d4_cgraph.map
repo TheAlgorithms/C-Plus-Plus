@@ -1,10 +1,10 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function." alt="" coords="5,45,56,72"/>
-<area shape="rect" id="node2" href="$d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" title="function to add edge from u to v" alt="" coords="203,5,377,32"/>
-<area shape="rect" id="node4" href="$d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra..." alt="" coords="205,67,375,109"/>
+<area shape="rect" id="node2" href="$d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" title="function to add edge from u to v" alt="" coords="203,5,383,32"/>
+<area shape="rect" id="node4" href="$d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra..." alt="" coords="205,67,380,109"/>
 <area shape="rect" id="node8" href="$d1/d9a/hopcroft__karp_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="104,45,155,72"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="425,5,580,32"/>
-<area shape="rect" id="node5" href="$d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" title="This function checks for the possibility of augmented path availability." alt="" coords="431,60,574,87"/>
-<area shape="rect" id="node7" href="$d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" title="This functions checks whether an augmenting path is available exists beginning with free vertex u." alt="" coords="431,111,574,137"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="628,85,741,112"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="431,5,587,32"/>
+<area shape="rect" id="node5" href="$d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" title="This function checks for the possibility of augmented path availability." alt="" coords="437,60,581,87"/>
+<area shape="rect" id="node7" href="$d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" title="This functions checks whether an augmenting path is available exists beginning with free vertex u." alt="" coords="437,111,581,137"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="635,85,748,112"/>
 </map>

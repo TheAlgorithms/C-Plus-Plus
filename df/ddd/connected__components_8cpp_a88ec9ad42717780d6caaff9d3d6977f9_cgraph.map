@@ -1,8 +1,8 @@
 <map id="tests" name="tests">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a372ff051a7bc6c91d34a7b58edf8dfce" title="Function that add edge between two nodes or vertices of graph." alt="" coords="156,5,269,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="177,56,249,83"/>
-<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a9fc2ded2807582edf398e6d7c7114914" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,107,321,133"/>
-<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="375,81,479,108"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="369,132,485,159"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a372ff051a7bc6c91d34a7b58edf8dfce" title="Function that add edge between two nodes or vertices of graph." alt="" coords="157,5,274,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="179,56,251,83"/>
+<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a9fc2ded2807582edf398e6d7c7114914" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,107,327,133"/>
+<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="379,81,485,108"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="375,132,489,159"/>
 </map>

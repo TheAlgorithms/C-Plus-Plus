@@ -177,6 +177,9 @@ var namespaces_dup =
       [ "strand", null, [
         [ "strand_sort", "dc/dd9/strand__sort_8cpp.html#ad75dc6a599ecfe31dadfaf449ee565f6", null ]
       ] ],
+      [ "wave_sort", null, [
+        [ "waveSort", "db/d3f/wave__sort_8cpp.html#aa3e61ec7fbcf7f9b52de306e6dd6a41c", null ]
+      ] ],
       [ "wiggle_sort", null, [
         [ "wiggleSort", "d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d", null ]
       ] ],
@@ -226,6 +229,7 @@ var namespaces_dup =
     [ "util_functions", "d3/d17/namespaceutil__functions.html", null ],
     [ "vector_cross", "d4/d91/namespacevector__cross.html", null ],
     [ "vigenere", "d6/da2/namespacevigenere.html", null ],
+    [ "wave_sort", "d9/d21/namespacewave__sort.html", null ],
     [ "wiggle_sort", "d0/d52/namespacewiggle__sort.html", null ],
     [ "word_break", "d6/d53/namespaceword__break.html", null ],
     [ "XOR", "d7/d47/namespace_x_o_r.html", null ]

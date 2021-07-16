@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 496;
+var viewWidth = 503;
 var viewHeight = 532;
 var sectionId = 'dynsection-4';
 </script>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>test_3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-528 492,-528 492,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-528 499,-528 499,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
@@ -68,336 +68,336 @@ var sectionId = 'dynsection-4';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a79ab4601c4a95c0902ac04e779e5f54d" target="_top" xlink:title="Adds an undirected edge from node u to node v in the tree.">
-<polygon fill="white" stroke="black" points="80,-482.5 80,-523.5 190,-523.5 190,-482.5 80,-482.5"/>
+<polygon fill="white" stroke="black" points="80,-482.5 80,-523.5 193,-523.5 193,-482.5 80,-482.5"/>
 <text text-anchor="start" x="88" y="-511.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="88" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="135" y="-489.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::add_edge</text>
+<text text-anchor="middle" x="136.5" y="-489.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::add_edge</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M23.11,-248.55C23.95,-281.6 30.48,-392.98 80,-465 82.7,-468.93 85.95,-472.58 89.49,-475.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="87.23,-478.61 97.1,-482.44 91.77,-473.29 87.23,-478.61"/>
+<path fill="none" stroke="midnightblue" d="M23.08,-248.58C23.8,-281.7 30.02,-393.3 80,-465 82.74,-468.92 86.02,-472.57 89.6,-475.92"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="87.39,-478.63 97.3,-482.37 91.89,-473.27 87.39,-478.63"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="226,-496.5 226,-515.5 342,-515.5 342,-496.5 226,-496.5"/>
-<text text-anchor="middle" x="284" y="-503.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
+<polygon fill="white" stroke="black" points="229,-496.5 229,-515.5 346,-515.5 346,-496.5 229,-496.5"/>
+<text text-anchor="middle" x="287.5" y="-503.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M23.15,-248.58C24.13,-278.79 31.14,-373.24 80,-427 82.95,-430.24 221.89,-485.47 226,-487 231.57,-489.07 237.49,-491.16 243.33,-493.16"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="242.39,-496.54 252.99,-496.42 244.63,-489.91 242.39,-496.54"/>
+<path fill="none" stroke="midnightblue" d="M23.13,-248.59C24.06,-278.85 30.95,-373.41 80,-427 83.01,-430.29 224.81,-485.47 229,-487 234.69,-489.08 240.74,-491.19 246.69,-493.21"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="245.94,-496.65 256.53,-496.5 248.15,-490.01 245.94,-496.65"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#ae9e979edd69678b85665c01e2ee97828" target="_top" xlink:title="This function must be called after the tree adjacency list and node values are populated The function...">
-<polygon fill="white" stroke="black" points="80,-218.5 80,-259.5 190,-259.5 190,-218.5 80,-218.5"/>
+<polygon fill="white" stroke="black" points="80,-218.5 80,-259.5 193,-259.5 193,-218.5 80,-218.5"/>
 <text text-anchor="start" x="88" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="88" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="135" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::init</text>
+<text text-anchor="middle" x="136.5" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::init</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M44.14,-239C51.62,-239 60.48,-239 69.67,-239"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="69.72,-242.5 79.72,-239 69.72,-235.5 69.72,-242.5"/>
+<path fill="none" stroke="midnightblue" d="M44.16,-239C51.64,-239 60.5,-239 69.7,-239"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="69.79,-242.5 79.79,-239 69.79,-235.5 69.79,-242.5"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a4dfbf5d9df825eeb63b294c6849bdcab" target="_top" xlink:title="This function returns the sum of node values in the simple path from from node_1 to node_2.">
-<polygon fill="white" stroke="black" points="80,-376.5 80,-417.5 190,-417.5 190,-376.5 80,-376.5"/>
+<polygon fill="white" stroke="black" points="80,-376.5 80,-417.5 193,-417.5 193,-376.5 80,-376.5"/>
 <text text-anchor="start" x="88" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="88" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="135" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::query</text>
+<text text-anchor="middle" x="136.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::query</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M29.94,-248.88C46.35,-272.24 88.04,-331.58 113.39,-367.67"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="110.85,-370.13 119.46,-376.3 116.57,-366.11 110.85,-370.13"/>
+<path fill="none" stroke="midnightblue" d="M30.04,-248.88C46.74,-272.34 89.28,-332.08 114.94,-368.12"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="112.11,-370.19 120.76,-376.3 117.81,-366.13 112.11,-370.19"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
 <g id="a_node17"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a04cd96efaba147b19d3afc769b90ff70" target="_top" xlink:title="Set the values for all the nodes.">
-<polygon fill="white" stroke="black" points="80,-151.5 80,-192.5 190,-192.5 190,-151.5 80,-151.5"/>
+<polygon fill="white" stroke="black" points="80,-151.5 80,-192.5 193,-192.5 193,-151.5 80,-151.5"/>
 <text text-anchor="start" x="88" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="88" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="135" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::set_node_val</text>
+<text text-anchor="middle" x="136.5" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::set_node_val</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
 <g id="edge18" class="edge">
 <title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M38.9,-229.4C52.5,-221.19 72.72,-208.99 91.03,-197.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="93.07,-200.8 99.82,-192.63 89.45,-194.8 93.07,-200.8"/>
+<path fill="none" stroke="midnightblue" d="M39.12,-229.4C52.97,-221.15 73.58,-208.88 92.2,-197.79"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="94.06,-200.76 100.86,-192.63 90.47,-194.74 94.06,-200.76"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="240.5,-60.5 240.5,-79.5 327.5,-79.5 327.5,-60.5 240.5,-60.5"/>
-<text text-anchor="middle" x="284" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
+<polygon fill="white" stroke="black" points="244.5,-60.5 244.5,-79.5 330.5,-79.5 330.5,-60.5 244.5,-60.5"/>
+<text text-anchor="middle" x="287.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge20" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M26.18,-229.25C32.97,-209.89 50.72,-166.36 80,-142 123.34,-105.95 186.03,-87.39 230.26,-78.22"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="231.11,-81.62 240.24,-76.25 229.75,-74.75 231.11,-81.62"/>
+<path fill="none" stroke="midnightblue" d="M26.17,-229.24C32.94,-209.84 50.64,-166.26 80,-142 124.62,-105.12 189.34,-86.63 234.39,-77.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="235.08,-81.14 244.26,-75.84 233.78,-74.26 235.08,-81.14"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a9f1cb54ed09fde931bf3220d75ee4c57" target="_top" xlink:title="This function updates the value at node with val.">
-<polygon fill="white" stroke="black" points="80,-8.5 80,-49.5 190,-49.5 190,-8.5 80,-8.5"/>
+<polygon fill="white" stroke="black" points="80,-8.5 80,-49.5 193,-49.5 193,-8.5 80,-8.5"/>
 <text text-anchor="start" x="88" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="88" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="135" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::update</text>
+<text text-anchor="middle" x="136.5" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::update</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node19 -->
 <g id="edge21" class="edge">
 <title>Node1&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M24.77,-229.26C29.87,-203.12 46.39,-129.96 80,-79 85.27,-71.01 92.08,-63.42 99.07,-56.67"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="101.67,-59.04 106.68,-49.7 96.94,-53.88 101.67,-59.04"/>
+<path fill="none" stroke="midnightblue" d="M24.73,-229.23C29.73,-203.03 46.05,-129.73 80,-79 85.4,-70.93 92.4,-63.3 99.59,-56.54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="102.26,-58.85 107.4,-49.58 97.61,-53.62 102.26,-58.85"/>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M190.32,-504.11C198.58,-504.28 207.18,-504.45 215.67,-504.63"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="215.88,-508.13 225.95,-504.84 216.02,-501.13 215.88,-508.13"/>
+<path fill="none" stroke="midnightblue" d="M193.41,-504.13C201.62,-504.29 210.17,-504.46 218.59,-504.63"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="218.72,-508.14 228.79,-504.84 218.86,-501.14 218.72,-508.14"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74" target="_top" xlink:title="Function that specifies the type of operation involved when segments are combined.">
-<polygon fill="white" stroke="black" points="378,-327.5 378,-368.5 488,-368.5 488,-327.5 378,-327.5"/>
-<text text-anchor="start" x="386" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="386" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="433" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG::combine</text>
+<polygon fill="white" stroke="black" points="382,-327.5 382,-368.5 495,-368.5 495,-327.5 382,-327.5"/>
+<text text-anchor="start" x="390" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="390" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="438.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG::combine</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M149.8,-259.55C165.48,-281 193.19,-313.61 226,-329 270.16,-349.72 325.43,-353.8 367.61,-353.07"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="367.86,-356.56 377.76,-352.8 367.67,-349.57 367.86,-356.56"/>
+<path fill="none" stroke="midnightblue" d="M151.61,-259.56C167.62,-281.02 195.85,-313.63 229,-329 273.48,-349.62 328.97,-353.78 371.52,-353.11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="371.86,-356.6 381.76,-352.85 371.68,-349.6 371.86,-356.6"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" target="_top" xlink:title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)">
-<polygon fill="white" stroke="black" points="229,-278.5 229,-319.5 339,-319.5 339,-278.5 229,-278.5"/>
-<text text-anchor="start" x="237" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_hc</text>
+<polygon fill="white" stroke="black" points="231,-278.5 231,-319.5 344,-319.5 344,-278.5 231,-278.5"/>
+<text text-anchor="start" x="239" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_hc</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M186.59,-259.65C198.25,-264.41 210.77,-269.52 222.8,-274.43"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="221.74,-277.77 232.32,-278.31 224.38,-271.29 221.74,-277.77"/>
+<path fill="none" stroke="midnightblue" d="M188.78,-259.65C200.78,-264.48 213.69,-269.68 226.05,-274.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="224.8,-277.93 235.38,-278.42 227.41,-271.43 224.8,-277.93"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a0579062b384e54b611b80c6337c7f2c8" target="_top" xlink:title="Utility function to lable the nodes so that heavy chains have a contigous lable.">
-<polygon fill="white" stroke="black" points="229,-218.5 229,-259.5 339,-259.5 339,-218.5 229,-218.5"/>
-<text text-anchor="start" x="237" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_labels</text>
+<polygon fill="white" stroke="black" points="231,-218.5 231,-259.5 344,-259.5 344,-218.5 231,-218.5"/>
+<text text-anchor="start" x="239" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_labels</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M190.32,-239C199.57,-239 209.25,-239 218.73,-239"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="218.9,-242.5 228.9,-239 218.9,-235.5 218.9,-242.5"/>
+<path fill="none" stroke="midnightblue" d="M193.41,-239C202.29,-239 211.54,-239 220.62,-239"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="220.78,-242.5 230.78,-239 220.78,-235.5 220.78,-242.5"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a" target="_top" xlink:title="Utility function to assign highest parent that can be reached though heavy chains.">
-<polygon fill="white" stroke="black" points="229,-98.5 229,-139.5 339,-139.5 339,-98.5 229,-98.5"/>
-<text text-anchor="start" x="237" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_par</text>
+<polygon fill="white" stroke="black" points="231,-98.5 231,-139.5 344,-139.5 344,-98.5 231,-98.5"/>
+<text text-anchor="start" x="239" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::dfs_par</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node4&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M170.36,-218.32C177.24,-213.41 184.15,-207.88 190,-202 210.09,-181.82 204.77,-167.97 226,-149 227.32,-147.82 228.69,-146.67 230.11,-145.56"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="232.48,-148.17 238.6,-139.52 228.42,-142.46 232.48,-148.17"/>
+<path fill="none" stroke="midnightblue" d="M172.83,-218.43C179.9,-213.52 187,-207.95 193,-202 213.22,-181.95 207.73,-167.94 229,-149 230.3,-147.84 231.65,-146.71 233.05,-145.62"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="235.29,-148.32 241.42,-139.68 231.24,-142.61 235.29,-148.32"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ad22d760a5a33545a70e7ea5e1786c8dc" target="_top" xlink:title="This function must be called after the tree adjacency list and node values are populated The function...">
-<polygon fill="white" stroke="black" points="229,-158.5 229,-199.5 339,-199.5 339,-158.5 229,-158.5"/>
-<text text-anchor="start" x="237" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::init</text>
+<polygon fill="white" stroke="black" points="231,-158.5 231,-199.5 344,-199.5 344,-158.5 231,-158.5"/>
+<text text-anchor="start" x="239" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::init</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M186.59,-218.35C198.25,-213.59 210.77,-208.48 222.8,-203.57"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="224.38,-206.71 232.32,-199.69 221.74,-200.23 224.38,-206.71"/>
+<path fill="none" stroke="midnightblue" d="M188.78,-218.35C200.78,-213.52 213.69,-208.32 226.05,-203.34"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="227.41,-206.57 235.38,-199.58 224.8,-200.07 227.41,-206.57"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" target="_top" xlink:title="Utility function to populate the t_par vector.">
-<polygon fill="white" stroke="black" points="378,-128.5 378,-169.5 488,-169.5 488,-128.5 378,-128.5"/>
-<text text-anchor="start" x="386" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="386" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="433" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::dfs_lca</text>
+<polygon fill="white" stroke="black" points="382,-128.5 382,-169.5 495,-169.5 495,-128.5 382,-128.5"/>
+<text text-anchor="start" x="390" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="390" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="438.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::dfs_lca</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M339.32,-167.91C348.67,-166.01 358.46,-164.01 368.03,-162.05"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="368.81,-165.47 377.9,-160.04 367.41,-158.61 368.81,-165.47"/>
+<path fill="none" stroke="midnightblue" d="M344.41,-167.74C353.38,-165.94 362.74,-164.05 371.92,-162.2"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="372.66,-165.62 381.78,-160.22 371.28,-158.76 372.66,-165.62"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" target="_top" xlink:title="Utility function to compute sub&#45;tree sizes.">
-<polygon fill="white" stroke="black" points="378,-188.5 378,-229.5 488,-229.5 488,-188.5 378,-188.5"/>
-<text text-anchor="start" x="386" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="386" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="433" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::dfs_size</text>
+<polygon fill="white" stroke="black" points="382,-188.5 382,-229.5 495,-229.5 495,-188.5 382,-188.5"/>
+<text text-anchor="start" x="390" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="390" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="438.5" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::dfs_size</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M339.32,-190.09C348.67,-191.99 358.46,-193.99 368.03,-195.95"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="367.41,-199.39 377.9,-197.96 368.81,-192.53 367.41,-199.39"/>
+<path fill="none" stroke="midnightblue" d="M344.41,-190.26C353.38,-192.06 362.74,-193.95 371.92,-195.8"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="371.28,-199.24 381.78,-197.78 372.66,-192.38 371.28,-199.24"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a7d5b40c076347a6aabfb37a0590f2f24" target="_top" xlink:title="Utility function to break down a path query into two chain queries.">
-<polygon fill="white" stroke="black" points="229,-376.5 229,-417.5 339,-417.5 339,-376.5 229,-376.5"/>
-<text text-anchor="start" x="237" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::chain_query</text>
+<polygon fill="white" stroke="black" points="231,-376.5 231,-417.5 344,-417.5 344,-376.5 231,-376.5"/>
+<text text-anchor="start" x="239" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">::HLD::chain_query</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge13" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M190.32,-397C199.57,-397 209.25,-397 218.73,-397"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="218.9,-400.5 228.9,-397 218.9,-393.5 218.9,-400.5"/>
+<path fill="none" stroke="midnightblue" d="M193.41,-397C202.29,-397 211.54,-397 220.62,-397"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="220.78,-400.5 230.78,-397 220.78,-393.5 220.78,-400.5"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
 <g id="a_node15"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4" target="_top" xlink:title="The function returns the least common ancestor of two nodes.">
-<polygon fill="white" stroke="black" points="229,-436.5 229,-477.5 339,-477.5 339,-436.5 229,-436.5"/>
-<text text-anchor="start" x="237" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::lca</text>
+<polygon fill="white" stroke="black" points="231,-436.5 231,-477.5 344,-477.5 344,-436.5 231,-436.5"/>
+<text text-anchor="start" x="239" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::lca</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node15 -->
 <g id="edge16" class="edge">
 <title>Node12&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M186.59,-417.65C198.25,-422.41 210.77,-427.52 222.8,-432.43"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="221.74,-435.77 232.32,-436.31 224.38,-429.29 221.74,-435.77"/>
+<path fill="none" stroke="midnightblue" d="M188.78,-417.65C200.78,-422.48 213.69,-427.68 226.05,-432.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="224.8,-435.93 235.38,-436.42 227.41,-429.43 224.8,-435.93"/>
 </g>
 <!-- Node13&#45;&gt;Node5 -->
 <g id="edge14" class="edge">
 <title>Node13&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M339.32,-378.89C348.77,-375.74 358.67,-372.44 368.34,-369.22"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="369.52,-372.51 377.9,-366.03 367.31,-365.87 369.52,-372.51"/>
+<path fill="none" stroke="midnightblue" d="M344.41,-378.61C353.48,-375.63 362.94,-372.52 372.21,-369.47"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="373.37,-372.77 381.78,-366.33 371.18,-366.12 373.37,-372.77"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="403.5,-387.5 403.5,-406.5 462.5,-406.5 462.5,-387.5 403.5,-387.5"/>
-<text text-anchor="middle" x="433" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
+<polygon fill="white" stroke="black" points="409,-387.5 409,-406.5 468,-406.5 468,-387.5 409,-387.5"/>
+<text text-anchor="middle" x="438.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node14 -->
 <g id="edge15" class="edge">
 <title>Node13&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M339.32,-397C357.17,-397 376.63,-397 393.1,-397"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="393.44,-400.5 403.44,-397 393.44,-393.5 393.44,-400.5"/>
+<path fill="none" stroke="midnightblue" d="M344.41,-397C362.42,-397 381.99,-397 398.52,-397"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="398.89,-400.5 408.89,-397 398.89,-393.5 398.89,-400.5"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" target="_top" xlink:title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store...">
-<polygon fill="white" stroke="black" points="378,-436.5 378,-477.5 488,-477.5 488,-436.5 378,-436.5"/>
-<text text-anchor="start" x="386" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="386" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="433" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::lift</text>
+<polygon fill="white" stroke="black" points="382,-436.5 382,-477.5 495,-477.5 495,-436.5 382,-436.5"/>
+<text text-anchor="start" x="390" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="390" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="438.5" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Tree::lift</text>
 </a>
 </g>
 </g>
 <!-- Node15&#45;&gt;Node16 -->
 <g id="edge17" class="edge">
 <title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M339.32,-457C348.57,-457 358.25,-457 367.73,-457"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="367.9,-460.5 377.9,-457 367.9,-453.5 367.9,-460.5"/>
+<path fill="none" stroke="midnightblue" d="M344.41,-457C353.29,-457 362.54,-457 371.62,-457"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="371.78,-460.5 381.78,-457 371.78,-453.5 371.78,-460.5"/>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
 <g id="edge19" class="edge">
 <title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M153.73,-151.26C170.62,-132.64 197.63,-105.75 226,-89 229.59,-86.88 233.44,-84.96 237.39,-83.23"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="238.71,-86.47 246.71,-79.53 236.13,-79.97 238.71,-86.47"/>
+<path fill="none" stroke="midnightblue" d="M155.58,-151.26C172.8,-132.64 200.28,-105.75 229,-89 232.63,-86.88 236.52,-84.97 240.51,-83.24"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="241.89,-86.45 249.92,-79.54 239.33,-79.94 241.89,-86.45"/>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
 <g id="a_node20"><a xlink:href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a3c75bf5770790f8eba8cc92227b5400c" target="_top" xlink:title="Update the value at a node.">
-<polygon fill="white" stroke="black" points="229,-0.5 229,-41.5 339,-41.5 339,-0.5 229,-0.5"/>
-<text text-anchor="start" x="237" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
-<text text-anchor="start" x="237" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
-<text text-anchor="middle" x="284" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG::update</text>
+<polygon fill="white" stroke="black" points="231,-0.5 231,-41.5 344,-41.5 344,-0.5 231,-0.5"/>
+<text text-anchor="start" x="239" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
+<text text-anchor="start" x="239" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
+<text text-anchor="middle" x="287.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SG::update</text>
 </a>
 </g>
 </g>
 <!-- Node19&#45;&gt;Node20 -->
 <g id="edge22" class="edge">
 <title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M190.32,-26.04C199.57,-25.54 209.25,-25.01 218.73,-24.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="219.11,-27.98 228.9,-23.94 218.73,-20.99 219.11,-27.98"/>
+<path fill="none" stroke="midnightblue" d="M193.41,-26C202.29,-25.52 211.54,-25.02 220.62,-24.54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="220.98,-28.02 230.78,-23.99 220.6,-21.03 220.98,-28.02"/>
 </g>
 </g>
 </svg>

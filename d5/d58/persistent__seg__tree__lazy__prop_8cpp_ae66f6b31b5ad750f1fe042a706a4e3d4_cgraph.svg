@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 625;
+var viewWidth = 637;
 var viewHeight = 225;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>main</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-221 621,-221 621,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-221 633,-221 633,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
@@ -83,130 +83,130 @@ var sectionId = 'dynsection-1';
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a67d8371bc998c67d53e8f64db4f52767" target="_top" xlink:title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum...">
-<polygon fill="white" stroke="black" points="143,-186.5 143,-216.5 277,-216.5 277,-186.5 143,-186.5"/>
+<polygon fill="white" stroke="black" points="143,-186.5 143,-216.5 281,-216.5 281,-186.5 143,-186.5"/>
 <text text-anchor="start" x="151" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="210" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::construct</text>
+<text text-anchor="middle" x="212" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::construct</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M96.45,-118.39C104.35,-133.24 121.17,-161.27 143,-177.5 144.87,-178.89 146.83,-180.2 148.85,-181.45"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="147.6,-184.75 158.05,-186.47 150.95,-178.61 147.6,-184.75"/>
+<path fill="none" stroke="midnightblue" d="M96.43,-118.42C104.3,-133.3 121.09,-161.37 143,-177.5 144.88,-178.89 146.86,-180.2 148.89,-181.44"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="147.7,-184.77 158.16,-186.44 151.02,-178.61 147.7,-184.77"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" target="_top" xlink:title="Querying the range from index l to index r, checking at every node if it has some value to be propaga...">
-<polygon fill="white" stroke="black" points="143,-49.5 143,-79.5 277,-79.5 277,-49.5 143,-49.5"/>
+<polygon fill="white" stroke="black" points="143,-49.5 143,-79.5 281,-79.5 281,-49.5 143,-49.5"/>
 <text text-anchor="start" x="151" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="210" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::query</text>
+<text text-anchor="middle" x="212" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::query</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M107.35,-102.57C120.74,-97.55 140.66,-90.09 159.33,-83.1"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="160.8,-86.29 168.94,-79.5 158.35,-79.73 160.8,-86.29"/>
+<path fill="none" stroke="midnightblue" d="M107.12,-102.75C120.76,-97.73 141.33,-90.15 160.58,-83.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="162,-86.27 170.18,-79.53 159.58,-79.7 162,-86.27"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865" target="_top" xlink:title="Getting the number of versions after updates so far which is equal to the size of the pointers vector...">
-<polygon fill="white" stroke="black" points="143,-137.5 143,-167.5 277,-167.5 277,-137.5 143,-137.5"/>
+<polygon fill="white" stroke="black" points="143,-137.5 143,-167.5 281,-167.5 281,-137.5 143,-137.5"/>
 <text text-anchor="start" x="151" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="210" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">::size</text>
+<text text-anchor="middle" x="212" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M107.35,-114.43C120.74,-119.45 140.66,-126.91 159.33,-133.9"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="158.35,-137.27 168.94,-137.5 160.8,-130.71 158.35,-137.27"/>
+<path fill="none" stroke="midnightblue" d="M107.12,-114.25C120.76,-119.27 141.33,-126.85 160.58,-133.93"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="159.58,-137.3 170.18,-137.47 162,-130.73 159.58,-137.3"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="336.5,-121 336.5,-140 423.5,-140 423.5,-121 336.5,-121"/>
-<text text-anchor="middle" x="380" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
+<polygon fill="white" stroke="black" points="343,-121 343,-140 429,-140 429,-121 343,-121"/>
+<text text-anchor="middle" x="386" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node2&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M107.37,-109.71C148.38,-112.85 259.33,-121.34 326.06,-126.45"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="326.14,-129.97 336.38,-127.24 326.67,-122.99 326.14,-129.97"/>
+<path fill="none" stroke="midnightblue" d="M107.28,-109.68C149.18,-112.82 264.7,-121.48 332.83,-126.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="332.7,-130.09 342.93,-127.35 333.22,-123.11 332.7,-130.09"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#af16c0c87b29119f066041d6e71ab50e0" target="_top" xlink:title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ...">
-<polygon fill="white" stroke="black" points="143,-0.5 143,-30.5 277,-30.5 277,-0.5 143,-0.5"/>
+<polygon fill="white" stroke="black" points="143,-0.5 143,-30.5 281,-30.5 281,-0.5 143,-0.5"/>
 <text text-anchor="start" x="151" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="210" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
+<text text-anchor="middle" x="212" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M96.45,-98.61C104.35,-83.76 121.17,-55.73 143,-39.5 144.87,-38.11 146.83,-36.8 148.85,-35.55"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="150.95,-38.39 158.05,-30.53 147.6,-32.25 150.95,-38.39"/>
+<path fill="none" stroke="midnightblue" d="M96.43,-98.58C104.3,-83.7 121.09,-55.63 143,-39.5 144.88,-38.11 146.86,-36.8 148.89,-35.56"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="151.02,-38.39 158.16,-30.56 147.7,-32.23 151.02,-38.39"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" target="_top" xlink:title="If there is some value to be propagated to the passed node, value is added to the node and the childr...">
-<polygon fill="white" stroke="black" points="313,-44.5 313,-74.5 447,-74.5 447,-44.5 313,-44.5"/>
-<text text-anchor="start" x="321" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="380" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">::lazy</text>
+<polygon fill="white" stroke="black" points="317,-44.5 317,-74.5 455,-74.5 455,-44.5 317,-44.5"/>
+<text text-anchor="start" x="325" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
+<text text-anchor="middle" x="386" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">::lazy</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M277.4,-62.52C285.68,-62.28 294.2,-62.02 302.62,-61.77"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="302.92,-65.27 312.81,-61.47 302.71,-58.27 302.92,-65.27"/>
+<path fill="none" stroke="midnightblue" d="M281.47,-62.51C289.73,-62.27 298.22,-62.02 306.6,-61.78"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="306.87,-65.27 316.76,-61.48 306.66,-58.28 306.87,-65.27"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#acacb937f95a078a236a4a58f9630a045" target="_top" xlink:title="Creating a new node with the same values of curr node.">
-<polygon fill="white" stroke="black" points="483,-22.5 483,-52.5 617,-52.5 617,-22.5 483,-22.5"/>
-<text text-anchor="start" x="491" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
-<text text-anchor="middle" x="550" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::newKid</text>
+<polygon fill="white" stroke="black" points="491,-22.5 491,-52.5 629,-52.5 629,-22.5 491,-22.5"/>
+<text text-anchor="start" x="499" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::perSegTree</text>
+<text text-anchor="middle" x="560" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::newKid</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M447.4,-50.81C455.77,-49.71 464.39,-48.58 472.89,-47.47"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="473.35,-50.94 482.81,-46.17 472.44,-44 473.35,-50.94"/>
+<path fill="none" stroke="midnightblue" d="M455.47,-50.74C463.73,-49.69 472.22,-48.6 480.6,-47.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="481.29,-50.97 490.76,-46.23 480.4,-44.03 481.29,-50.97"/>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M277.4,-143.81C293.65,-141.68 310.82,-139.43 326.33,-137.4"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="326.79,-140.87 336.25,-136.1 325.88,-133.93 326.79,-140.87"/>
+<path fill="none" stroke="midnightblue" d="M281.47,-143.74C298.46,-141.57 316.39,-139.28 332.48,-137.22"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="333.28,-140.64 342.75,-135.9 332.39,-133.7 333.28,-140.64"/>
 </g>
 <!-- Node9&#45;&gt;Node5 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M268.35,-30.52C282.33,-34.18 297.4,-38.13 311.8,-41.9"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="311.07,-45.33 321.63,-44.47 312.84,-38.55 311.07,-45.33"/>
+<path fill="none" stroke="midnightblue" d="M271.71,-30.52C286.02,-34.18 301.46,-38.13 316.19,-41.9"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="315.71,-45.39 326.26,-44.47 317.44,-38.6 315.71,-45.39"/>
 </g>
 <!-- Node9&#45;&gt;Node6 -->
 <g id="edge11" class="edge">
 <title>Node9&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M277.37,-19.82C333.42,-23.47 413.69,-28.69 472.44,-32.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="472.57,-36.03 482.78,-33.19 473.03,-29.05 472.57,-36.03"/>
+<path fill="none" stroke="midnightblue" d="M281.36,-19.85C338.7,-23.49 420.61,-28.7 480.6,-32.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="480.58,-36.02 490.78,-33.16 481.03,-29.03 480.58,-36.02"/>
 </g>
 </g>
 </svg>

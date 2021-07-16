@@ -22,7 +22,7 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="20.5,-0.5 20.5,-19.5 74.5,-19.5 74.5,-0.5 20.5,-0.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="20,-0.5 20,-19.5 75,-19.5 75,-0.5 20,-0.5"/>
 <text text-anchor="middle" x="47.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>

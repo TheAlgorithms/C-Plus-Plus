@@ -1,11 +1,11 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,183,56,209"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="141,5,213,32"/>
-<area shape="rect" id="node3" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title=" " alt="" coords="115,56,239,83"/>
-<area shape="rect" id="node4" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title=" " alt="" coords="104,107,251,133"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="141,157,213,184"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="141,208,214,235"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="137,259,217,285"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/ios_base/sync_with_stdio.html#" title=" " alt="" coords="109,310,245,351"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="141,376,214,403"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="143,5,215,32"/>
+<area shape="rect" id="node3" href="$d2/d0b/fast__power_8cpp.html#a0d4e3f0099a6975b74a314a35bd0f94d" title=" " alt="" coords="115,56,242,83"/>
+<area shape="rect" id="node4" href="$d2/d0b/fast__power_8cpp.html#a8399b847626e5bba983cab7c7918b445" title=" " alt="" coords="104,107,253,133"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="143,157,215,184"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="142,208,215,235"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="139,259,219,285"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/ios_base/sync_with_stdio.html#" title=" " alt="" coords="111,310,247,351"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="143,376,215,403"/>
 </map>

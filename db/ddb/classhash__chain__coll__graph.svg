@@ -5,15 +5,15 @@
  -->
 <!-- Title: hash_chain Pages: 1 -->
 <svg width="265pt" height="173pt"
- viewBox="0.00 0.00 264.50 173.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 265.00 173.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 169)">
 <title>hash_chain</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-169 260.5,-169 260.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-169 261,-169 261,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Chain class with a given modulus.">
-<polygon fill="#bfbfbf" stroke="black" points="47,-0.5 47,-19.5 113,-19.5 113,-0.5 47,-0.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="46,-0.5 46,-19.5 114,-19.5 114,-0.5 46,-0.5"/>
 <text text-anchor="middle" x="80" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">hash_chain</text>
 </a>
 </g>
@@ -50,13 +50,13 @@
 <title>Node3&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M163.35,-62.1C140.6,-48.15 111.03,-30.02 93.92,-19.53"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="161.65,-65.16 172,-67.4 165.31,-59.19 161.65,-65.16"/>
-<text text-anchor="middle" x="152.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> head</text>
+<text text-anchor="middle" x="153" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> head</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="133.5,-145.5 133.5,-164.5 256.5,-164.5 256.5,-145.5 133.5,-145.5"/>
+<polygon fill="white" stroke="black" points="133,-145.5 133,-164.5 257,-164.5 257,-145.5 133,-145.5"/>
 <text text-anchor="middle" x="195" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; Node &gt;</text>
 </a>
 </g>
@@ -66,7 +66,7 @@
 <title>Node4&#45;&gt;Node3</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M195,-135.24C195,-123.41 195,-108.38 195,-97.58"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="191.5,-135.36 195,-145.36 198.5,-135.36 191.5,-135.36"/>
-<text text-anchor="middle" x="216.5" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+<text text-anchor="middle" x="217" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 </g>
 </svg>

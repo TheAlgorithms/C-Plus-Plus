@@ -1,5 +1,12 @@
 var NAVTREEINDEX10 =
 {
+"db/d82/classlarge__number.html#a2f5571e66305cf68bb8283e4aeda58bc":[10,0,27,7],
+"db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615":[10,0,27,5],
+"db/d82/classlarge__number.html#a622d84883180ff42f04955909adea5a9":[10,0,27,10],
+"db/d82/classlarge__number.html#a70d23d67535e67030db570e56c00e16d":[10,0,27,19],
+"db/d82/classlarge__number.html#a72ae1ef050c4c28c50952ecab22d4b94":[10,0,27,18],
+"db/d82/classlarge__number.html#a76ddf1ed1b00fb8c107ea56f7f91e42f":[10,0,27,3],
+"db/d82/classlarge__number.html#a778428c4761b6ea5e7770743f0eab5ab":[10,0,27,20],
 "db/d82/classlarge__number.html#a7ba872b9a3ce1f3da6c06c5409663cca":[10,0,27,21],
 "db/d82/classlarge__number.html#a959c5c1a982949bbf98e1ea0f9afe6a9":[10,0,27,17],
 "db/d82/classlarge__number.html#aad394466f3207b21b5d3e994b3a8ed72":[10,0,27,12],
@@ -134,8 +141,8 @@ var NAVTREEINDEX10 =
 "db/dc0/namespacebacktracking.html#ae1a76e21cb3934368d01cea7672d3906":[9,0,3,10],
 "db/dca/kadane2_8cpp.html":[11,0,4,5],
 "db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,4,5,0],
-"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[11,0,4,5,1],
 "db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[9,0,17,3,0],
+"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[11,0,4,5,1],
 "db/dd3/ode__forward__euler_8cpp.html":[11,0,13,9],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,13,9,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[11,0,13,9,5],
@@ -172,8 +179,8 @@ var NAVTREEINDEX10 =
 "dc/d52/linear__recurrence__matrix_8cpp.html#af5e240c0cfaabed122a0596f800b3d14":[9,0,40,2,0],
 "dc/d5a/rat__maze_8cpp.html":[11,0,0,6],
 "dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,6,2],
-"dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,6,1],
 "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[9,0,3,3,0],
+"dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,6,1],
 "dc/d5a/rat__maze_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,6,0],
 "dc/d61/classgraph_1_1_graph.html":[10,0,4,1],
 "dc/d61/classgraph_1_1_graph.html#a190c0eb4739b6a8dfc1c3f684e66d937":[10,0,4,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX10 =
 "dd/d0c/hamiltons__cycle_8cpp.html":[11,0,6,7],
 "dd/d0c/hamiltons__cycle_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299":[11,0,6,7,4],
 "dd/d0c/hamiltons__cycle_8cpp.html#a0ceb473236b5dc53a85e281ef528dd96":[11,0,6,7,0],
-"dd/d0c/hamiltons__cycle_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[11,0,6,7,1],
-"dd/d0c/hamiltons__cycle_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae":[11,0,6,7,3],
-"dd/d0c/hamiltons__cycle_8cpp.html#ae7880ce913f3058a35ff106d5be9e243":[11,0,6,7,2],
-"dd/d0d/insertion__sort_8cpp.html":[11,0,19,7],
-"dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49":[11,0,19,7,0],
-"dd/d0d/insertion__sort_8cpp.html#a78cb2f3b97b6db2c062b2a1df05c9ea9":[11,0,19,7,2],
-"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9":[11,0,19,7,4],
-"dd/d0d/insertion__sort_8cpp.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f":[11,0,19,7,1]
+"dd/d0c/hamiltons__cycle_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[11,0,6,7,1]
 };

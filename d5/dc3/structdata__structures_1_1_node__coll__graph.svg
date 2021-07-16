@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="4,-0.5 4,-19.5 117,-19.5 117,-0.5 4,-0.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="3,-0.5 3,-19.5 118,-19.5 118,-0.5 3,-0.5"/>
 <text text-anchor="middle" x="60.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::Node</text>
 </a>
 </g>
@@ -34,14 +34,14 @@
 <title>Node2&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M60.5,-57.05C60.5,-43.56 60.5,-28.65 60.5,-19.55"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="57,-57.43 60.5,-67.43 64,-57.43 57,-57.43"/>
-<text text-anchor="middle" x="78.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> forward</text>
+<text text-anchor="middle" x="79" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00"> forward</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5.5,-156.5 5.5,-186.5 115.5,-186.5 115.5,-156.5 5.5,-156.5"/>
-<text text-anchor="start" x="13.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
+<polygon fill="white" stroke="black" points="5,-156.5 5,-186.5 116,-186.5 116,-156.5 5,-156.5"/>
+<text text-anchor="start" x="13" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::shared_ptr&lt; data</text>
 <text text-anchor="middle" x="60.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">_structures::Node &gt;</text>
 </a>
 </g>
@@ -51,7 +51,7 @@
 <title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M60.5,-146.07C60.5,-134.06 60.5,-119.79 60.5,-108.53"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="57,-146.3 60.5,-156.3 64,-146.3 57,-146.3"/>
-<text text-anchor="middle" x="82" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+<text text-anchor="middle" x="82.5" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 </g>
 </svg>

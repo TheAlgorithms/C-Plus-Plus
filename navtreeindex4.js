@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a0579062b384e54b611b80c6337c7f2c8":[10,0,11,0,2,3],
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a1b336474d17eff1aa4be73d4068dc725":[10,0,11,0,2,10],
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a":[10,0,11,0,2,4],
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a4dfbf5d9df825eeb63b294c6849bdcab":[10,0,11,0,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "d4/d8d/jarvis__algorithm_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,5,0,3],
 "d4/d8d/jarvis__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,5,0,2],
 "d4/d90/classdata__structures_1_1_skip_list.html":[10,0,1,7],
-"d4/d90/classdata__structures_1_1_skip_list.html#a2249e3ab2f8a0f2334b90635202de4f2":[10,0,1,7,5],
-"d4/d90/classdata__structures_1_1_skip_list.html#a3e249c2c35a8b7f5ffd2d77fee60d650":[10,0,1,7,7]
+"d4/d90/classdata__structures_1_1_skip_list.html#a2249e3ab2f8a0f2334b90635202de4f2":[10,0,1,7,5]
 };

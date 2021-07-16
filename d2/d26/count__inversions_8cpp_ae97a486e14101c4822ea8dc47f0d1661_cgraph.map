@@ -1,7 +1,7 @@
 <map id="sorting::inversion::mergeSort" name="sorting::inversion::mergeSort">
-<area shape="rect" id="node1" title="Implement merge Sort and count inverions while merging." alt="" coords="5,23,127,65"/>
-<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="175,5,280,32"/>
-<area shape="rect" id="node4" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="186,56,269,83"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="328,5,408,32"/>
-<area shape="rect" id="node5" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="339,56,397,83"/>
+<area shape="rect" id="node1" title="Implement merge Sort and count inverions while merging." alt="" coords="5,23,128,65"/>
+<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="176,5,283,32"/>
+<area shape="rect" id="node4" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="187,56,271,83"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="331,5,411,32"/>
+<area shape="rect" id="node5" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="341,56,401,83"/>
 </map>

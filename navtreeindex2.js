@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"cpp/string/multibyte/mbrtoc16.html":[9,0,73,266],
 "cpp/string/multibyte/mbrtoc32.html":[9,0,73,267],
 "cpp/string/multibyte/mbrtowc.html":[9,0,73,268],
 "cpp/string/multibyte/mbsinit.html":[9,0,73,269],
@@ -48,8 +49,8 @@ var NAVTREEINDEX2 =
 "cpp/string/wide/wcstok.html":[9,0,73,512],
 "cpp/string/wide/wcstol.html":[9,0,73,513],
 "cpp/string/wide/wcstol.html":[9,0,73,515],
-"cpp/string/wide/wcstoul.html":[9,0,73,517],
 "cpp/string/wide/wcstoul.html":[9,0,73,518],
+"cpp/string/wide/wcstoul.html":[9,0,73,517],
 "cpp/string/wide/wcsxfrm.html":[9,0,73,520],
 "cpp/string/wide/wctrans.html":[9,0,73,523],
 "cpp/string/wide/wctype.html":[9,0,73,524],
@@ -92,8 +93,8 @@ var NAVTREEINDEX2 =
 "cpp/utility/program/system.html":[9,0,73,442],
 "cpp/utility/rel_ops/operator_cmp.html":[9,0,73,2,0],
 "cpp/utility/rel_ops/operator_cmp.html":[9,0,73,2,1],
-"cpp/utility/rel_ops/operator_cmp.html":[9,0,73,2,3],
 "cpp/utility/rel_ops/operator_cmp.html":[9,0,73,2,2],
+"cpp/utility/rel_ops/operator_cmp.html":[9,0,73,2,3],
 "cpp/utility/tuple/forward_as_tuple.html":[9,0,73,149],
 "cpp/utility/tuple/make_tuple.html":[9,0,73,260],
 "cpp/utility/tuple/tie.html":[9,0,73,449],
@@ -121,7 +122,7 @@ var NAVTREEINDEX2 =
 "d0/d3e/classdata__structures_1_1trie.html#a961eb5d576d2420f2036009154397c63":[10,0,1,8,4],
 "d0/d3e/classdata__structures_1_1trie.html#aab373beb3f618b90922528c68797d988":[10,0,1,8,1],
 "d0/d3e/classdata__structures_1_1trie.html#aeac27cfd397d2dd3f2f519efffafeeab":[10,0,1,8,2],
-"d0/d52/namespacewiggle__sort.html":[9,0,85],
+"d0/d52/namespacewiggle__sort.html":[9,0,86],
 "d0/d58/classgraph_1_1_rooted_tree.html":[10,0,4,3],
 "d0/d58/classgraph_1_1_rooted_tree.html#a2ee3ad1161ac2532da30c3e22c265ad3":[10,0,4,3,2],
 "d0/d58/classgraph_1_1_rooted_tree.html#a3831583a91914988897a4cc8748fda43":[10,0,4,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163":[10,0,48,9],
 "d1/d83/classuint256__t.html#a0590a8b45c2f7b31670606782614545e":[10,0,48,57],
 "d1/d83/classuint256__t.html#a092a766421ba5833452e86a2357d7cfa":[10,0,48,4],
-"d1/d83/classuint256__t.html#a19c88f8f2736750822b82ef9a7096d88":[10,0,48,56],
-"d1/d83/classuint256__t.html#a1fa3d95584d071add9b46597d3747b39":[10,0,48,2]
+"d1/d83/classuint256__t.html#a19c88f8f2736750822b82ef9a7096d88":[10,0,48,56]
 };

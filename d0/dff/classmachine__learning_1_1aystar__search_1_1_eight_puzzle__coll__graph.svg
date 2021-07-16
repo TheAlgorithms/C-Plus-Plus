@@ -40,7 +40,7 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5,-156.5 5,-175.5 102,-175.5 102,-156.5 5,-156.5"/>
+<polygon fill="white" stroke="black" points="5.5,-156.5 5.5,-175.5 101.5,-175.5 101.5,-156.5 5.5,-156.5"/>
 <text text-anchor="middle" x="53.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::pair&lt; int, int &gt;</text>
 </a>
 </g>
@@ -50,7 +50,7 @@
 <title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M53.5,-146.24C53.5,-134.41 53.5,-119.38 53.5,-108.58"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="50,-146.36 53.5,-156.36 57,-146.36 50,-146.36"/>
-<text text-anchor="middle" x="75" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
+<text text-anchor="middle" x="75.5" y="-130" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -67,7 +67,7 @@
 <title>Node4&#45;&gt;Node1</title>
 <path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M161.1,-70.31C150.51,-57.53 137.52,-41.86 128.3,-30.73"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="158.57,-72.74 167.65,-78.2 163.96,-68.27 158.57,-72.74"/>
-<text text-anchor="middle" x="165.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> board</text>
+<text text-anchor="middle" x="166" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00"> board</text>
 </g>
 </g>
 </svg>
