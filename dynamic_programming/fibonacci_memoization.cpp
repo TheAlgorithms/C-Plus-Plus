@@ -23,13 +23,12 @@ namespace dynamic_programming {
  */
 namespace fibonacci_memoization {
 /**
- * @brief The function that implements the nth Fibonacci number problem using
- * memoization
+ * @brief The function that implements the nth Fibonacci number problem using memoization.
  * @param n The index of the number in a Fibonacci series.
  * @param map_elements A map that contains previously encountered index-value pair.
  * @returns Element at the nth position in the Fibonacci series.
  */
-uint32_t nthFibonacci(int n, auto &map_elements)
+uint32_t nthFibonacci(int n, std::unordered_map<int,uint32_t> &map_elements)
 {
     if (n <= 1) {  // The numbers at index 0 and 1 are also 0 and 1.
         return n;
