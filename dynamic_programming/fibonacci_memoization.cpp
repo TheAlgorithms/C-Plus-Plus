@@ -29,7 +29,7 @@ namespace fibonacci_memoization {
  * @param map_elements A map that contains previously encountered index-value pair.
  * @returns Element at the nth position in fibonacci series.
  */
-std::uint32_t nthFibonacci(int n, auto &map_elements)
+uint32_t nthFibonacci(int n, auto &map_elements)
 {
     if (n <= 1)  // The numbers at index 0 and 1 are also 0 and 1.
         return n;
