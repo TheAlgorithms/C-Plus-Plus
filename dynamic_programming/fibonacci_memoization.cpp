@@ -31,8 +31,9 @@ namespace fibonacci_memoization {
  */
 uint32_t nthFibonacci(int n, auto &map_elements)
 {
-    if (n <= 1)  // The numbers at index 0 and 1 are also 0 and 1.
+    if (n <= 1) {  // The numbers at index 0 and 1 are also 0 and 1.
         return n;
+    }
     if(map_elements.find(n) == map_elements.end())  // If the element with key: n is not present, find() returns the last element.
     {
         map_elements.insert({n, (nthFibonacci(n-1, map_elements) + nthFibonacci(n-2,map_elements))});
