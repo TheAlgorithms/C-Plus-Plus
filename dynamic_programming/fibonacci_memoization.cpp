@@ -27,7 +27,7 @@ namespace fibonacci_memoization {
  * memoization
  * @param n The index of the number in a fibonacci series.
  * @param map_elements A map that contains previously encountered index-value pair.
- * @returns Element at the nth position in fibonacci series.
+ * @returns Element at the nth position in the Fibonacci series.
  */
 uint32_t nthFibonacci(int n, auto &map_elements)
 {
