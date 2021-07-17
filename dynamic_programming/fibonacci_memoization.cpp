@@ -25,7 +25,7 @@ namespace fibonacci_memoization {
 /**
  * @brief The function that implements the nth Fibonacci number problem using
  * memoization
- * @param n The index of the number in a fibonacci series.
+ * @param n The index of the number in a Fibonacci series.
  * @param map_elements A map that contains previously encountered index-value pair.
  * @returns Element at the nth position in the Fibonacci series.
  */
