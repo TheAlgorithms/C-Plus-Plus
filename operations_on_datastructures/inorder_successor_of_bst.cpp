@@ -208,8 +208,9 @@ Node *getInorderSuccessor(Node *root, int64_t data) {
  * @returns void
  * */
 void deallocate(Node *rootNode) {
-    if (rootNode == nullptr)
+    if (rootNode == nullptr) {
         return;
+    }
     deallocate(rootNode->left);
     deallocate(rootNode->right);
     delete (rootNode);
