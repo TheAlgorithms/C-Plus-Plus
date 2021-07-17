@@ -48,7 +48,7 @@ uint32_t nthFibonacci(int n, auto &map_elements)
  */
 static void test() {
 
-    // Test 1
+    // 1st test
     // 7 return 13.
     int num1 = 7;
     std::unordered_map<int,uint32_t> map_elements1;
