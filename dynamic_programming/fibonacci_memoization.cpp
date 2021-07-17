@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of [nth Fibonacci problem using 
- * memoization](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e)
+ * @brief Implementation of [nth Fibonacci problem](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e) using memoization
  * @details
  * nth Fibonacci number using memoization is used as a dynamic programming concept that
  * works in \f$O(n)\f$ time and works in \f$O(n)\f$ space.
