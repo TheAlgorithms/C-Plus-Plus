@@ -4,6 +4,13 @@ var namespaces_dup =
     [ "activations", "d5/d39/namespaceactivations.html", null ],
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", [
+      [ "magic_sequence", null, [
+        [ "sequence_t", "d7/d37/magic__sequence_8cpp.html#adeeca4f6f79e86923194ea51c26b37d0", null ],
+        [ "filtering", "d7/d37/magic__sequence_8cpp.html#a74a6a4a80fc2387a0c9c78d5ea18ae49", null ],
+        [ "is_magic", "d7/d37/magic__sequence_8cpp.html#afb1d9a25b782af31be4fc0802c7706b8", null ],
+        [ "print", "d7/d37/magic__sequence_8cpp.html#a537c6003094821f14bd93e5cfc2c32d9", null ],
+        [ "solve", "d7/d37/magic__sequence_8cpp.html#ab65c99bf555abf67525d91ffa405d5ad", null ]
+      ] ],
       [ "n_queens", null, [
         [ "isSafe", "d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160", null ],
         [ "printSolution", "d4/d3e/n__queens_8cpp.html#a40ae0c7fd04eb20e7f3bff13fc6a5808", null ],
@@ -107,6 +114,7 @@ var namespaces_dup =
     [ "linked_list", "d3/db0/namespacelinked__list.html", null ],
     [ "list_array", "d9/d27/namespacelist__array.html", null ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
+    [ "magic_sequence", "d8/d93/namespacemagic__sequence.html", null ],
     [ "math", "dd/d47/namespacemath.html", "dd/d47/namespacemath" ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
