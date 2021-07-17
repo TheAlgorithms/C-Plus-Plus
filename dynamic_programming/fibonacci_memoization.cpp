@@ -19,9 +19,7 @@
 namespace dynamic_programming {
 /**
  * @namespace fibonacci_memoization
- * @brief Functions for [nth Fibonacci
- * using memoization](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e)
- * algorithm
+ * @brief Functions for the [nth Fibonacci](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e) using memoization implementation
  */
 namespace fibonacci_memoization {
 /**
