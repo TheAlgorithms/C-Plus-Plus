@@ -73,7 +73,7 @@ static void test() {
     assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num3, map_elements3) == 610); // 15th fibonacci number is 610.
     std::cout<< "passed" << std::endl;
 
-    // Test 4
+    // 4th test
     // 31 return 1346269.
     int num4 = 31;
     std::unordered_map<int,uint32_t> map_elements4;
