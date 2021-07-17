@@ -194,8 +194,24 @@ namespace operations_on_datastructures {
                 return successor;  // Nodes with maximum vales will not have a successor
             }
         }
-}  // namespace inorder_traversal_of_bst
+        
+        /**
+         * @brief This function clears the memory allocated to entire tree recursively. Its just for clean up the 
+         * memory and not relevant to the actual topic.
+         * @param root Root node of the tree.
+         * @returns void
+         * */
+        void deallocate (Node* rootNode){
+            if (rootNode == nullptr) return;
+            deallocate(rootNode->left);
+            deallocate(rootNode->right);
+            delete(rootNode);
+        }
+
+    }  // namespace inorder_traversal_of_bst
 }  // namespace operations_on_datastructures
+
+
 
 /**
  * @brief class encapsulating the necessary test cases
@@ -267,8 +283,7 @@ public:
         assert(inorderSuccessor == expectedOutput);
         log("Assertion check passed!");
 
-        delete (inorderSuccessor);
-        delete (root);
+        operations_on_datastructures::inorder_traversal_of_bst::deallocate(root);  /// memory cleanup!
 
         log("[PASS] : TEST CASE 1 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -308,8 +323,7 @@ public:
         assert(inorderSuccessor->data == expectedOutput);
         log("Assertion check passed!");
 
-        delete (inorderSuccessor);
-        delete (root);
+        operations_on_datastructures::inorder_traversal_of_bst::deallocate(root); /// memory cleanup!
 
         log("[PASS] : TEST CASE 2 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -350,8 +364,7 @@ public:
         assert(inorderSuccessor->data == expectedOutput);
         log("Assertion check passed!");
 
-        delete (inorderSuccessor);
-        delete (root);
+        operations_on_datastructures::inorder_traversal_of_bst::deallocate(root);  /// memory cleanup!
 
         log("[PASS] : TEST CASE 3 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -401,8 +414,7 @@ int main(int argc, char *argv[]) {
                   << inorderSuccessor->data;
     }
 
-    delete (inorderSuccessor);
-    delete (root);
+    deallocate(root);  /// memory cleanup!
 
     return 0;
 }
