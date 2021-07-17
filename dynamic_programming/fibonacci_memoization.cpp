@@ -48,7 +48,6 @@ uint32_t nthFibonacci(int n, auto &map_elements)
  * @returns void
  */
 static void test() {
-
     // 1st test
     // 7 return 13.
     int num1 = 7;
