@@ -57,7 +57,7 @@ static void test() {
     std::cout<< "passed" << std::endl;
 
 
-    // Test 2
+    // 2nd test
     // 45 return 1134903170.
     int num2 = 45;
     std::unordered_map<int,uint32_t> map_elements2;
