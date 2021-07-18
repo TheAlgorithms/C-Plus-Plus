@@ -64,21 +64,25 @@ static void test() {
     // [3, 4, 8, 5, 9, 1, 2, 6, 7, 4] return 4
     std::vector<uint32_t> array1 = {3, 4, 8, 5, 9, 1, 2, 6, 7, 4};
     std::cout << "Test 1... ";
-    assert(search::cycle_detection::duplicateNumber(array1, array1.size()) == 4);  // here the duplicate number is 4
+    assert(search::cycle_detection::duplicateNumber(array1, array1.size()) ==
+           4);  // here the duplicate number is 4
     std::cout << "passed" << std::endl;
 
     // Test 2
     // [1, 2, 3, 4, 2] return 2
     std::vector<uint32_t> array2 = {1, 2, 3, 4, 2};
     std::cout << "Test 2... ";
-    assert(search::cycle_detection::duplicateNumber(array2, array2.size()) == 2);  // here the duplicate number is 2
+    assert(search::cycle_detection::duplicateNumber(array2, array2.size()) ==
+           2);  // here the duplicate number is 2
     std::cout << "passed" << std::endl;
 
     // Test 3
     // [] return -1
     std::vector<uint32_t> array3 = {};
     std::cout << "Test 3... ";
-    assert(search::cycle_detection::duplicateNumber(array3, array3.size()) == -1);  // since the input array is empty no duplicate number exists in this case
+    assert(search::cycle_detection::duplicateNumber(array3, array3.size()) ==
+           -1);  // since the input array is empty no duplicate number exists in
+                 // this case
     std::cout << "passed" << std::endl;
 }
 
