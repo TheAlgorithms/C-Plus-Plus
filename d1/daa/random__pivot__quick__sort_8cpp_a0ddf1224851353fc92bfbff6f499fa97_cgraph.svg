@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 705;
+var viewWidth = 670;
 var viewHeight = 208;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>main</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-204 701,-204 701,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-204 666,-204 666,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
@@ -68,16 +68,16 @@ var sectionId = 'dynsection-3';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="643,-152.5 643,-171.5 697,-171.5 697,-152.5 643,-152.5"/>
-<text text-anchor="middle" x="670" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
+<polygon fill="white" stroke="black" points="608,-152.5 608,-171.5 662,-171.5 662,-152.5 608,-152.5"/>
+<text text-anchor="middle" x="635" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M38.25,-160.32C48.6,-164.24 61.87,-168.9 74,-172 148.4,-191.04 167.71,-200 244.5,-200 244.5,-200 244.5,-200 395.5,-200 481.16,-200 580.49,-181.49 632.67,-170.3"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="633.74,-173.65 642.77,-168.11 632.25,-166.81 633.74,-173.65"/>
+<path fill="none" stroke="midnightblue" d="M38.25,-160.32C48.6,-164.24 61.87,-168.9 74,-172 148.4,-191.04 167.71,-200 244.5,-200 244.5,-200 244.5,-200 395.5,-200 468,-200 551.38,-182.66 597.86,-171.41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="598.88,-174.76 607.75,-168.97 597.2,-167.97 598.88,-174.76"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -127,28 +127,28 @@ var sectionId = 'dynsection-3';
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M270.53,-100.64C288.12,-107.32 312.7,-115.91 335,-121 441.6,-145.34 570.87,-156.01 632.67,-159.98"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="632.5,-163.48 642.7,-160.61 632.94,-156.49 632.5,-163.48"/>
+<path fill="none" stroke="midnightblue" d="M270.55,-100.54C288.15,-107.18 312.74,-115.75 335,-121 428.18,-142.97 540.67,-154.47 597.44,-159.25"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="597.44,-162.76 607.7,-160.09 598.02,-155.78 597.44,-162.76"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" target="_top" xlink:title="A function to print given message on console.">
-<polygon fill="white" stroke="black" points="507.5,-76.5 507.5,-95.5 589.5,-95.5 589.5,-76.5 507.5,-76.5"/>
-<text text-anchor="middle" x="548.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::log</text>
+<polygon fill="white" stroke="black" points="490,-76.5 490,-95.5 572,-95.5 572,-76.5 490,-76.5"/>
+<text text-anchor="middle" x="531" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::log</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M297.82,-100.51C309.96,-102.38 322.9,-104.05 335,-105 387.73,-109.14 401.38,-110.29 454,-105 469,-103.49 485.15,-100.65 499.74,-97.62"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="500.51,-101.04 509.55,-95.51 499.04,-94.19 500.51,-101.04"/>
+<path fill="none" stroke="midnightblue" d="M297.82,-100.51C309.96,-102.38 322.9,-104.05 335,-105 387.73,-109.14 401.51,-111.46 454,-105 465.69,-103.56 478.17,-100.92 489.57,-98.06"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="490.48,-101.44 499.26,-95.51 488.7,-94.67 490.48,-101.44"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" target="_top" xlink:title="A test case contains edge case, Only contains one element.">
+<g id="a_node7"><a xlink:href="../../d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" target="_top" xlink:title="A test case contains edge case, printing inorder successor of last node.">
 <polygon fill="white" stroke="black" points="335,-76.5 335,-95.5 454,-95.5 454,-76.5 335,-76.5"/>
 <text text-anchor="middle" x="394.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCases::testCase_1</text>
 </a>
@@ -193,41 +193,26 @@ var sectionId = 'dynsection-3';
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M564.63,-95.63C585.02,-108.59 621.49,-131.79 645.47,-147.04"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="643.67,-150.04 653.99,-152.45 647.43,-144.13 643.67,-150.04"/>
+<path fill="none" stroke="midnightblue" d="M544.92,-95.63C562.09,-108.42 592.63,-131.17 613.1,-146.43"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="611.08,-149.28 621.19,-152.45 615.26,-143.67 611.08,-149.28"/>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M454.27,-86C468.38,-86 483.33,-86 497.03,-86"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="497.23,-89.5 507.22,-86 497.22,-82.5 497.23,-89.5"/>
+<path fill="none" stroke="midnightblue" d="M454.1,-86C462.56,-86 471.21,-86 479.5,-86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="479.76,-89.5 489.76,-86 479.76,-82.5 479.76,-89.5"/>
 </g>
 <!-- Node8&#45;&gt;Node6 -->
 <g id="edge11" class="edge">
 <title>Node8&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M433.86,-57.59C453.82,-62.58 478.43,-68.73 499.63,-74.03"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="498.87,-77.45 509.42,-76.48 500.57,-70.66 498.87,-77.45"/>
+<path fill="none" stroke="midnightblue" d="M429.44,-57.59C446.72,-62.47 467.93,-68.46 486.41,-73.68"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="485.5,-77.06 496.07,-76.41 487.4,-70.33 485.5,-77.06"/>
 </g>
 <!-- Node9&#45;&gt;Node6 -->
 <g id="edge13" class="edge">
 <title>Node9&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M429.43,-19.54C437.61,-22.24 446.24,-25.43 454,-29 479.83,-40.87 507.39,-58.32 525.84,-70.78"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="523.89,-73.69 534.12,-76.45 527.85,-67.92 523.89,-73.69"/>
-</g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="490,-0.5 490,-19.5 607,-19.5 607,-0.5 490,-0.5"/>
-<text text-anchor="middle" x="548.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
-</a>
-</g>
-</g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge14" class="edge">
-<title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M454.27,-10C462.58,-10 471.19,-10 479.66,-10"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="479.89,-13.5 489.89,-10 479.89,-6.5 479.89,-13.5"/>
+<path fill="none" stroke="midnightblue" d="M431.22,-19.53C438.93,-22.15 446.89,-25.31 454,-29 475.29,-40.05 496.92,-56.95 511.64,-69.48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="509.6,-72.35 519.44,-76.27 514.2,-67.07 509.6,-72.35"/>
 </g>
 </g>
 </svg>
