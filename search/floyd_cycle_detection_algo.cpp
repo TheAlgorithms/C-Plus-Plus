@@ -78,7 +78,7 @@ static void test() {
            2);  // here the duplicate number is 2
     std::cout << "passed" << std::endl;
 
-    // Test 3
+    // 3rd test
     // [] return -1
     std::vector<uint32_t> array3 = {};
     std::cout << "Test 3... ";
