@@ -2,7 +2,8 @@
  * @file
  * @brief Implementation of [Floyd's Cycle
  * Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
- * @details Given an array of integers containing 'n + 1' integers, where each
+ * @details
+ * Given an array of integers containing 'n + 1' integers, where each
  * integer is in the range [1, n] inclusive. If there is only one duplicate
  * number in the input array, this algorithm returns the duplicate number in
  * O(1) space and the time complexity is less than O(n^2) without modifying the
