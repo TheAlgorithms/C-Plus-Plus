@@ -70,7 +70,7 @@ static void test() {
            4);  // here the duplicate number is 4
     std::cout << "passed" << std::endl;
 
-    // Test 2
+    // 2nd test
     // [1, 2, 3, 4, 2] return 2
     std::vector<uint32_t> array2 = {1, 2, 3, 4, 2};
     std::cout << "Test 2... ";
