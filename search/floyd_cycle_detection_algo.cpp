@@ -62,7 +62,7 @@ int32_t duplicateNumber(const std::vector<T> &in_arr, const uint32_t &n) {
  * @returns void
  */
 static void test() {
-    // Test 1
+    // 1st test
     // [3, 4, 8, 5, 9, 1, 2, 6, 7, 4] return 4
     std::vector<uint32_t> array1 = {3, 4, 8, 5, 9, 1, 2, 6, 7, 4};
     std::cout << "Test 1... ";
