@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"cpp/io/c/getwchar.html":[9,0,76,185],
 "cpp/io/c/perror.html":[9,0,76,317],
 "cpp/io/c/putchar.html":[9,0,76,327],
 "cpp/io/c/puts.html":[9,0,76,328],
@@ -157,9 +158,9 @@ var NAVTREEINDEX1 =
 "cpp/numeric/math/log1p.html":[9,0,76,249],
 "cpp/numeric/math/logb.html":[9,0,76,250],
 "cpp/numeric/math/modf.html":[9,0,76,286],
-"cpp/numeric/math/nan.html":[9,0,76,291],
-"cpp/numeric/math/nan.html":[9,0,76,292],
 "cpp/numeric/math/nan.html":[9,0,76,290],
+"cpp/numeric/math/nan.html":[9,0,76,292],
+"cpp/numeric/math/nan.html":[9,0,76,291],
 "cpp/numeric/math/nearbyint.html":[9,0,76,293],
 "cpp/numeric/math/nextafter.html":[9,0,76,296],
 "cpp/numeric/math/nextafter.html":[9,0,76,297],
@@ -192,8 +193,8 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/stof.html":[9,0,76,403],
 "cpp/string/basic_string/stof.html":[9,0,76,404],
 "cpp/string/basic_string/stof.html":[9,0,76,407],
-"cpp/string/basic_string/stol.html":[9,0,76,406],
 "cpp/string/basic_string/stol.html":[9,0,76,405],
+"cpp/string/basic_string/stol.html":[9,0,76,406],
 "cpp/string/basic_string/stol.html":[9,0,76,408],
 "cpp/string/basic_string/stoul.html":[9,0,76,409],
 "cpp/string/basic_string/stoul.html":[9,0,76,410],
@@ -201,8 +202,8 @@ var NAVTREEINDEX1 =
 "cpp/string/basic_string/to_wstring.html":[9,0,76,454],
 "cpp/string/byte/atof.html":[9,0,76,34],
 "cpp/string/byte/atoi.html":[9,0,76,36],
-"cpp/string/byte/atoi.html":[9,0,76,37],
 "cpp/string/byte/atoi.html":[9,0,76,35],
+"cpp/string/byte/atoi.html":[9,0,76,37],
 "cpp/string/byte/isalnum.html":[9,0,76,204],
 "cpp/string/byte/isalpha.html":[9,0,76,205],
 "cpp/string/byte/isblank.html":[9,0,76,206],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "cpp/string/byte/strxfrm.html":[9,0,76,437],
 "cpp/string/byte/tolower.html":[9,0,76,455],
 "cpp/string/byte/toupper.html":[9,0,76,456],
-"cpp/string/multibyte/btowc.html":[9,0,76,68],
-"cpp/string/multibyte/c16rtomb.html":[9,0,76,69]
+"cpp/string/multibyte/btowc.html":[9,0,76,68]
 };

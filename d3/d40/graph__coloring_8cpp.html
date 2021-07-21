@@ -100,8 +100,8 @@ $(document).ready(function(){initNavTree('d3/d40/graph__coloring_8cpp.html','../
 
 <p>prints the assigned colors using <a href="https://en.wikipedia.org/wiki/Graph_coloring">Graph Coloring</a> algorithm  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;array&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for graph_coloring.cpp:</div>
@@ -156,28 +156,25 @@ Functions</h2></td></tr>
 <p>Driver Code </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dc4/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2numerical_methods_2rungekutta_8cpp-example.html#a6">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/numerical_methods/rungekutta.cpp</a>, and <a class="el" href="../../dd/db0/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2sorting_2wiggle_sort_8cpp-example.html#a11">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/sorting/wiggle_sort.cpp</a>.</dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Create following graph and test whether it is 3 colorable</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// (3)---(2)</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// |   / |</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// |  /  |</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// | /   |</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// (0)---(1)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> V = 4;  <span class="comment">// number of vertices in the graph</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;std::array &lt;int, V&gt;</a>, V&gt; <a class="code" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;int, V&gt;</a>({0, 1, 1, 1}),</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;int, V&gt;</a>({1, 0, 1, 0}),</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;int, V&gt;</a>({1, 1, 0, 1}),</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;int, V&gt;</a>({1, 0, 1, 0})</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    };</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> m = 3;  <span class="comment">// Number of colors</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array &lt;int, V&gt;</a> color{};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    backtracking::graphColoring&lt;V&gt;(<a class="code" href="../../df/dce/namespacegraph.html">graph</a>, m, color, 0);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;           {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Create following graph and test whether it is 3 colorable</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// (3)---(2)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// |   / |</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// |  /  |</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// | /   |</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// (0)---(1)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> V = 4;  <span class="comment">// number of vertices in the graph</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, V&gt;</a>, V&gt; <a class="code" href="../../df/dce/namespacegraph.html">graph</a> = {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({0, 1, 1, 1}), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 0, 1, 0}),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 1, 0, 1}), <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a>({1, 0, 1, 0})};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> m = 3;  <span class="comment">// Number of colors</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, V&gt;</a> color{};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    backtracking::graphColoring&lt;V&gt;(<a class="code" href="../../df/dce/namespacegraph.html">graph</a>, m, color, 0);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
 </div><!-- fragment -->

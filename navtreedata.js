@@ -129,19 +129,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"cpp/io/c/perror.html",
-"cpp/string/multibyte/c32rtomb.html",
-"d1/d83/classuint256__t.html#a0590a8b45c2f7b31670606782614545e",
-"d2/d5a/subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d4/d7a/shell__sort2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
-"d5/d90/palindrome__partitioning_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d6/dd3/ode__midpoint__euler_8cpp.html",
-"d8/d89/namespacelinear__probing.html#a62fbd519adacd4e05706f34a7e551288",
-"d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475",
-"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a",
-"dc/d93/trie__modern_8cpp.html",
-"de/d9b/prime__numbers_8cpp.html#a3b91f208e8365c95a295cfe3e67df5c3",
-"globals_o.html"
+"cpp/io/c/getwchar.html",
+"cpp/string/multibyte/c16rtomb.html",
+"d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163",
+"d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99",
+"d4/d7a/shell__sort2_8cpp.html",
+"d5/d90/palindrome__partitioning_8cpp.html#a52ee22882858d2b1cf04293f02ed839a",
+"d6/dce/rabin__karp_8cpp.html#aed769d565b705a9b3e0eb1ec74088893",
+"d8/d89/namespacelinear__probing.html#a5ff22c1a04290e24ef3ba3d6a3a06386",
+"d9/dde/structdouble__hashing_1_1_entry.html",
+"db/d19/structlinear__probing_1_1_entry.html#a2139f643a3caf074da1db8a9fa16fa77",
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ace9c37dd1322d3745de9713c90df8003",
+"de/d9b/prime__numbers_8cpp.html",
+"globals_g.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

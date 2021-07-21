@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('d8/d90/iterative__tree__traversals_8cp
 
 <p>Iterative version of Preorder, Postorder, and preorder <a href="https://en.wikipedia.org/wiki/Tree_traversal">Traversal of the Tree</a>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;stack&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for iterative_tree_traversals.cpp:</div>
 <div class="dyncontent">
@@ -125,7 +125,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d0/d6f/namespaceothers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6f/namespaceothers.html">others</a></td></tr>
-<tr class="memdesc:d0/d6f/namespaceothers"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <code>assert</code> <br /></td></tr>
+<tr class="memdesc:d0/d6f/namespaceothers"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <code>vector</code> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dd/d73/namespaceiterative__tree__traversals"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d73/namespaceiterative__tree__traversals.html">iterative_tree_traversals</a></td></tr>
 <tr class="memdesc:dd/d73/namespaceiterative__tree__traversals"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://en.wikipedia.org/wiki/Tree_traversal">Traversal of the Tree</a> algorithm. <br /></td></tr>
@@ -187,64 +187,66 @@ Iterative Inorder Traversal of a tree</h3>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <p>&lt; instace of BinaryTree, used to access its members functions.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;           {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// Creating a tree with the following structure,</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">/* </span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">              1</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">            /   \</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">           2     3</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">         /   \</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">        4     5</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html">others::iterative_tree_traversals::BinaryTree</a> binaryTree; <span class="comment">///&lt; instace of BinaryTree, used to access its members functions.</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="../../d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html">others::iterative_tree_traversals::Node</a> *root = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(1);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    root-&gt;left = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(2);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    root-&gt;right = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(3);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    root-&gt;left-&gt;left = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(4);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    root-&gt;left-&gt;right = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(5);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\n| Tests for positive data value |&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a21d922dbb5905993960c6a7f0ba71ac0">test1</a>(binaryTree, root);  <span class="comment">// run preorder-iterative test</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPre-order test Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac35ae2868441f8a11c965b87b2494f21">test2</a>(binaryTree, root);  <span class="comment">// run postorder-iterative test</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPost-order test Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a425c4c8520991999ee6dbe13d99b87f4">test3</a>(binaryTree, root);  <span class="comment">// run inorder-iterative test</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nIn-order test Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// Modifying tree for negative values.</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    root-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -1;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    root-&gt;left-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -2;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    root-&gt;right-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -3;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    root-&gt;left-&gt;left-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -4;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    root-&gt;left-&gt;right-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -5;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\n| Tests for negative data values |&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2">test4</a>(binaryTree, root);  <span class="comment">// run preorder-iterative test on negative values</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPre-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8">test5</a>(binaryTree, root);  <span class="comment">// run postorder-iterative test on negative values</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPost-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89">test6</a>(binaryTree, root);  <span class="comment">// run inorder-iterative test on negative values</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nIn-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;           {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">// Creating a tree with the following structure,</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">              1</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">            /   \</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">           2     3</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">         /   \</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">        4     5</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html">others::iterative_tree_traversals::BinaryTree</a></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        binaryTree;  <span class="comment">///&lt; instace of BinaryTree, used to access its members</span><span class="comment"></span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">                     ///&lt; functions.</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"></span>    <a class="code" href="../../d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html">others::iterative_tree_traversals::Node</a> *root = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(1);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    root-&gt;left = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(2);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    root-&gt;right = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(3);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    root-&gt;left-&gt;left = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(4);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    root-&gt;left-&gt;right = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">createNewNode</a>(5);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n| Tests for positive data value |&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a21d922dbb5905993960c6a7f0ba71ac0">test1</a>(binaryTree, root);  <span class="comment">// run preorder-iterative test</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPre-order test Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac35ae2868441f8a11c965b87b2494f21">test2</a>(binaryTree, root);  <span class="comment">// run postorder-iterative test</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPost-order test Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a425c4c8520991999ee6dbe13d99b87f4">test3</a>(binaryTree, root);  <span class="comment">// run inorder-iterative test</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nIn-order test Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">// Modifying tree for negative values.</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    root-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -1;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    root-&gt;left-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -2;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    root-&gt;right-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -3;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    root-&gt;left-&gt;left-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -4;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    root-&gt;left-&gt;right-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/data.html">data</a> = -5;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n| Tests for negative data values |&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2">test4</a>(binaryTree, root);  <span class="comment">// run preorder-iterative test on negative values</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPre-order test on-negative value Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8">test5</a>(binaryTree, root);  <span class="comment">// run postorder-iterative test on negative values</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPost-order test on-negative value Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89">test6</a>(binaryTree, root);  <span class="comment">// run inorder-iterative test on negative values</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nIn-order test on-negative value Passed!&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html">others::iterative_tree_traversals::BinaryTree</a></div><div class="ttdoc">defines the functions associated with the binary tree</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:64</div></div>
-<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a3078a5ccf45d6a7031dcf46e43de65b6"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">others::iterative_tree_traversals::BinaryTree::createNewNode</a></div><div class="ttdeci">Node * createNewNode(int64_t)</div><div class="ttdoc">function that will create new node for insertion.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:77</div></div>
+<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html">others::iterative_tree_traversals::BinaryTree</a></div><div class="ttdoc">defines the functions associated with the binary tree</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:67</div></div>
+<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a3078a5ccf45d6a7031dcf46e43de65b6"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6">others::iterative_tree_traversals::BinaryTree::createNewNode</a></div><div class="ttdeci">Node * createNewNode(int64_t)</div><div class="ttdoc">function that will create new node for insertion.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:88</div></div>
 <div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/data.html">std::vector::data</a></div><div class="ttdeci">T data(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a038b236fe900f7bb7e57164f5bed66c2"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2">test4</a></div><div class="ttdeci">static void test4(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed preorder with the actual preorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:246</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a21d922dbb5905993960c6a7f0ba71ac0"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a21d922dbb5905993960c6a7f0ba71ac0">test1</a></div><div class="ttdeci">static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed preorder with the actual preorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:174</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a425c4c8520991999ee6dbe13d99b87f4"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a425c4c8520991999ee6dbe13d99b87f4">test3</a></div><div class="ttdeci">static void test3(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed inorder with the actual inorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:222</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_aa9ef334cd7eb607f4eb8732566ea00b8"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8">test5</a></div><div class="ttdeci">static void test5(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed postorder with the actual postorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:270</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_ac35ae2868441f8a11c965b87b2494f21"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac35ae2868441f8a11c965b87b2494f21">test2</a></div><div class="ttdeci">static void test2(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed postorder with the actual postorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:198</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_af727f920064f2b8f484b589b60d49b89"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89">test6</a></div><div class="ttdeci">static void test6(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed inorder with the actual inorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:294</div></div>
-<div class="ttc" id="astructothers_1_1iterative__tree__traversals_1_1_node_html"><div class="ttname"><a href="../../d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html">others::iterative_tree_traversals::Node</a></div><div class="ttdoc">defines the structure of a node of the tree</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:55</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a038b236fe900f7bb7e57164f5bed66c2"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2">test4</a></div><div class="ttdeci">static void test4(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed preorder with the actual preorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:272</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a21d922dbb5905993960c6a7f0ba71ac0"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a21d922dbb5905993960c6a7f0ba71ac0">test1</a></div><div class="ttdeci">static void test1(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed preorder with the actual preorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:191</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a425c4c8520991999ee6dbe13d99b87f4"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a425c4c8520991999ee6dbe13d99b87f4">test3</a></div><div class="ttdeci">static void test3(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed inorder with the actual inorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:245</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_aa9ef334cd7eb607f4eb8732566ea00b8"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8">test5</a></div><div class="ttdeci">static void test5(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed postorder with the actual postorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:300</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_ac35ae2868441f8a11c965b87b2494f21"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac35ae2868441f8a11c965b87b2494f21">test2</a></div><div class="ttdeci">static void test2(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed postorder with the actual postorder.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:218</div></div>
+<div class="ttc" id="aiterative__tree__traversals_8cpp_html_af727f920064f2b8f484b589b60d49b89"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89">test6</a></div><div class="ttdeci">static void test6(others::iterative_tree_traversals::BinaryTree binaryTree, others::iterative_tree_traversals::Node *root)</div><div class="ttdoc">Test the computed inorder with the actual inorder on negative value.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:327</div></div>
+<div class="ttc" id="astructothers_1_1iterative__tree__traversals_1_1_node_html"><div class="ttname"><a href="../../d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html">others::iterative_tree_traversals::Node</a></div><div class="ttdoc">defines the structure of a node of the tree</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:58</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,25 +293,27 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the preorder traversal of the binary tree</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{1, 2, 4, 5, 3};</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the preorder traversal of the binary tree</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// Calling preOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// and storing the preorder traversal in result.</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">preOrderIterative</a>(root); </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Printing the result storing preorder.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPreOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
-<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_ad4c6a8e67fb8267a65439b035666b5ae"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">others::iterative_tree_traversals::BinaryTree::preOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; preOrderIterative(Node *)</div><div class="ttdoc">function that takes root of the tree as an argument, and returns its preorder traversal.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:90</div></div>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                                             {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{1, 2, 4, 5, 3};</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the preorder traversal of the binary tree</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">// Calling preOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// and storing the preorder traversal in result.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">preOrderIterative</a>(root);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Printing the result storing preorder.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPreOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_ad4c6a8e67fb8267a65439b035666b5ae"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">others::iterative_tree_traversals::BinaryTree::preOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; preOrderIterative(Node *)</div><div class="ttdoc">preOrderIterative() function that will perform the preorder traversal iteratively,...</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:102</div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; int64_t &gt;</a></div></div>
 </div><!-- fragment -->
@@ -358,25 +362,27 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the postorder traversal of the binary tree.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{4, 5, 2, 3, 1};</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the postorder traversal of the binary tree.</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// Calling postOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// and storing the postorder traversal in result.</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">postOrderIterative</a>(root);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// Printing the result storing postorder.</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPostOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
-<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a636a07c90b7f312bb86d2ec104efca25"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">others::iterative_tree_traversals::BinaryTree::postOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; postOrderIterative(Node *)</div><div class="ttdoc">function that takes root of the tree as an argument, and returns its postorder traversal.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:118</div></div>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                             {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{4, 5, 2, 3, 1};</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the postorder traversal of the binary tree.</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// Calling postOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// and storing the postorder traversal in result.</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">postOrderIterative</a>(root);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">// Printing the result storing postorder.</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPostOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a636a07c90b7f312bb86d2ec104efca25"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">others::iterative_tree_traversals::BinaryTree::postOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; postOrderIterative(Node *)</div><div class="ttdoc">postOrderIterative() function that will perform the postorder traversal iteratively,...</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:132</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,25 +429,27 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the inorder traversal of the binary tree.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{4, 2, 5, 1, 3};</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the inorder traversal of the binary tree.</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">// Calling inOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">// and storing the inorder traversal in result.</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">inOrderIterative</a>(root);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="comment">// Printing the result storing inorder.</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nInOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
-<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a0c33f2c1a3a3deb486a1c33ee5239499"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">others::iterative_tree_traversals::BinaryTree::inOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; inOrderIterative(Node *)</div><div class="ttdoc">function that takes root of the tree as an argument, and returns its inorder traversal.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:148</div></div>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                             {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{4, 2, 5, 1, 3};</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the inorder traversal of the binary tree.</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// Calling inOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">// and storing the inorder traversal in result.</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">inOrderIterative</a>(root);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">// Printing the result storing inorder.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+<div class="ttc" id="aclassothers_1_1iterative__tree__traversals_1_1_binary_tree_html_a0c33f2c1a3a3deb486a1c33ee5239499"><div class="ttname"><a href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">others::iterative_tree_traversals::BinaryTree::inOrderIterative</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; inOrderIterative(Node *)</div><div class="ttdoc">inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul...</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:164</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -488,24 +496,26 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the preorder traversal of the binary tree</p>
-<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-1, -2, -4, -5, -3};</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the preorder traversal of the binary tree</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">// Calling preOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// and storing the preorder traversal in result.</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">preOrderIterative</a>(root); </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// Printing the result storing preorder.</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPreOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                                             {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-1, -2, -4, -5, -3};</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the preorder traversal of the binary tree</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">// Calling preOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="comment">// and storing the preorder traversal in result.</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae">preOrderIterative</a>(root);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// Printing the result storing preorder.</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPreOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -552,24 +562,26 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the postorder traversal of the binary tree.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-4, -5, -2, -3, -1};</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the postorder traversal of the binary tree.</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// Calling postOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">// and storing the postorder traversal in result.</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">postOrderIterative</a>(root);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// Printing the result storing postorder.</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPostOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                                             {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-4, -5, -2, -3, -1};</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the postorder traversal of the binary tree.</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Calling postOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// and storing the postorder traversal in result.</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25">postOrderIterative</a>(root);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">// Printing the result storing postorder.</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPostOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -616,24 +628,26 @@ Iterative Inorder Traversal of a tree</h3>
   </dd>
 </dl>
 <p>&lt; result stores the inorder traversal of the binary tree.</p>
-<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-4, -2, -5, -1, -3};</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>; <span class="comment">///&lt; result stores the inorder traversal of the binary tree.</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// Calling inOrderIterative() function by passing a root node,</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// and storing the inorder traversal in result.</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">inOrderIterative</a>(root);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++)</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        assert(actual_result[i] == result[i]);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Printing the result storing inorder.</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nInOrder Traversal Is : &quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i: result) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; i&lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                                             {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> actual_result{-4, -2, -5, -1, -3};</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;  <span class="comment">///&lt; result stores the inorder traversal of the binary tree.</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">// Calling inOrderIterative() function by passing a root node,</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">// and storing the inorder traversal in result.</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = binaryTree.<a class="code" href="../../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499">inOrderIterative</a>(root);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// Self-testing the result using `assert`</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.size(); i++) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        assert(actual_result[i] == result[i]);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// Printing the result storing inorder.</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInOrder Traversal Is : &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : result) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

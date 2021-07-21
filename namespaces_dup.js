@@ -29,6 +29,9 @@ var namespaces_dup =
       [ "rat_maze", null, [
         [ "solveMaze", "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3", null ]
       ] ],
+      [ "subarray_sum", null, [
+        [ "subarray_sum", "df/d94/subarray__sum_8cpp.html#af5687bbd9faf927fbd363c71e0baba5e", null ]
+      ] ],
       [ "subset_sum", null, [
         [ "number_of_subsets", "d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99", null ]
       ] ],
@@ -178,10 +181,10 @@ var namespaces_dup =
         [ "step_ith", "d8/d61/radix__sort2_8cpp.html#a302672a25ef4561eb41b4f9ef8e518b2", null ]
       ] ],
       [ "random_pivot_quick_sort", null, [
-        [ "generateUnsortedArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ad79f6a1484c1a421a4a82992f2490564", null ],
+        [ "generateUnsortedArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ad29ec5b3d242892675ba76acad5300a3", null ],
         [ "getRandomIndex", "d1/daa/random__pivot__quick__sort_8cpp.html#aac5657b4fe2251cd21073f44233f6ea5", null ],
-        [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a96284b18dfdafdd67085166fc0e43246", null ],
-        [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#ab4669ac90ee144c7d0d51ab50890b6b1", null ],
+        [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a80fcb0b18a1ff5588bb00c0ff3b7fb49", null ],
+        [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#a5c8eb5c4cb149b2f6c92582169532e92", null ],
         [ "showArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ac3281dc34a9cfd7beb332419b8a0aa10", null ]
       ] ],
       [ "strand", null, [
@@ -231,6 +234,7 @@ var namespaces_dup =
       [ "recalculate_hash", "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893", null ]
     ] ],
     [ "strings", "df/dcb/namespacestrings.html", null ],
+    [ "subarray_sum", "df/d74/namespacesubarray__sum.html", null ],
     [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
     [ "Subsets", "de/d95/namespace_subsets.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
