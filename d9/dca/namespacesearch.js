@@ -1,5 +1,8 @@
 var namespacesearch =
 [
+    [ "cycle_detection", null, [
+      [ "duplicateNumber", "db/dc4/floyd__cycle__detection__algo_8cpp.html#a81ffc7a2c6bf530c8a496864e7a3ad88", null ]
+    ] ],
     [ "median_search", null, [
       [ "median_of_medians", "d9/d69/median__search_8cpp.html#a868847218f694e78bf433a0ff7648bae", null ]
     ] ],

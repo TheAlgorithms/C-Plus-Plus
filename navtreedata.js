@@ -128,20 +128,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"cpp/iterator/distance.html",
-"cpp/thread/lock.html",
-"d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
-"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a832072498abeaa52ad43c4fc99cba248",
-"d4/dd2/namespacequadratic__probing.html#a90f9d8a71e3f148b65bcc0c1c8a49c70",
-"d5/ddb/bogo__sort_8cpp.html#ae1a3968e7947464bee7714f6d43b7002",
-"d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14",
-"d8/dab/classstatistics_1_1stats__computer2.html",
-"da/d4b/depth__first__search__with__stack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d93/check__prime_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"dd/d24/namespacedynamic__programming.html",
-"df/d64/jumpgame_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-""
+"",
+"cpp/io/c/perror.html",
+"cpp/string/multibyte/c32rtomb.html",
+"d1/d83/classuint256__t.html#a0590a8b45c2f7b31670606782614545e",
+"d2/d5a/subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d4/d7a/shell__sort2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
+"d5/d90/palindrome__partitioning_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d6/dd3/ode__midpoint__euler_8cpp.html",
+"d8/d89/namespacelinear__probing.html#a62fbd519adacd4e05706f34a7e551288",
+"d9/dde/structdouble__hashing_1_1_entry.html#a287b92112b6b43b34808a93778873475",
+"db/d19/structlinear__probing_1_1_entry.html#a4d84e90b73022083761f85f8586c4c2a",
+"dc/d93/trie__modern_8cpp.html",
+"de/d9b/prime__numbers_8cpp.html#a3b91f208e8365c95a295cfe3e67df5c3",
+"globals_o.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
