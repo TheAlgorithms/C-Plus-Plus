@@ -29,6 +29,7 @@ bool is_prime(T num) {
         return 0;
     }
     if (num >= 3) {
+        // Here only check till square root of a number;
         for (T i = 3; (i * i) <= (num); i = (i + 2)) {
             if ((num % i) == 0) {
                 result = false;
