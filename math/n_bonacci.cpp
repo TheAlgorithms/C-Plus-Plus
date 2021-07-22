@@ -11,7 +11,7 @@
  * In this code we take N and M as input where M is the number of terms
  * to be printed of the N-bonacci series
  *
- * @author [Swastika Gupta](https://github.com/swastyy)
+ * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 #include <algorithm>  /// for std::is_equal, std::swap
 #include <cassert>    /// for assert
