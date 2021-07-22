@@ -177,7 +177,7 @@ namespace adjacency_list_graph {
             }
         };
 
-    }  // namespace linked list
+    }  // namespace adjacency_list
 
 /**
  * @namespace graph
@@ -340,9 +340,11 @@ namespace adjacency_list_graph {
                     std::cout << "--> ";
                     for (auto indexPair : vertex->adjacencyList->getAsWeightedList()) {
                         Vertex *connectedNode = vertices[indexPair.first];
-                        if (connectedNode)
+                        if (connectedNode) {
                             std::cout << "(Node: " << connectedNode->data << ", weight : " << indexPair.second << "), ";
-                        else std::cout << "None ";
+                        } else {
+                            std::cout << "None ";
+                        }
                     }
                     std::cout << std::endl;
                 }
@@ -350,7 +352,7 @@ namespace adjacency_list_graph {
 /**
  * @brief Destructor to cleanup the allocated memory.
  * */
-            ~Graphs() {
+            void deallocateGraph() {
                 for (auto vertex: vertices) {
                     vertex->adjacencyList->deallocateLinkedList();
                     delete vertex->adjacencyList;
@@ -360,9 +362,8 @@ namespace adjacency_list_graph {
                 vertices.clear();
             }
         };
-}  // namespace graph
-}  // namespace adjacency list graph
-
+    }  // namespace graph
+}  // namespace adjacency_list_graph
 
 /**
  * @brief Test cases implementation.
@@ -425,6 +426,7 @@ namespace test_cases {
         log("Checking assert...");
         assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin(), output.end()));
         log("Assert check successful!");
+        graphs.deallocateGraph();
 
     }
 
@@ -457,11 +459,15 @@ namespace test_cases {
             graphs.addEdge(edge);
         }
 
-        std::vector<int64_t> output = graphs.getAllConnectedAsVertex(900);  /// vertex data to be inserted in graph as vertices
+        std::vector<int64_t> output = graphs.getAllConnectedAsVertex(
+                900);  /// vertex data to be inserted in graph as vertices
 
         log("Checking assert...");
         assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin(), output.end()));
         log("Assert check successful!");
+
+        graphs.deallocateGraph();
+
 
     }
 
@@ -500,6 +506,9 @@ namespace test_cases {
         assert(output == expectedOutput);
         log("Assert check successful!");
 
+        graphs.deallocateGraph();
+
+
     }
 
     static void executeTests() {
@@ -510,7 +519,7 @@ namespace test_cases {
         std::cout << "Test Cases Over!" << std::endl << std::endl;
     }
 
-}
+}  // namespace test_cases
 
 /**
  * @brief Main function
@@ -543,21 +552,7 @@ int main(int argc, char *argv[]) {
     }
 
     graphs.printGraph(); /// print the relationship of nodes and edges.
+    graphs.deallocateGraph();
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
