@@ -30,7 +30,7 @@ namespace math {
  */
 namespace n_bonacci {
 /**
- * @brief Finds the N-Bonacci series for the `n` parameter value and `m` parameter terms.
+ * @brief Finds the N-Bonacci series for the `n` parameter value and `m` parameter terms
  * @param n is in the N-Bonacci series
  * @param m is the number of terms in the N-Bonacci sequence
  * @returns the n-bonacci sequence as vector array
