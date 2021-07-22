@@ -424,7 +424,7 @@ namespace test_cases {
         std::vector<int64_t> output = graphs.getAllConnectedAsVertex(1);
 
         log("Checking assert...");
-        assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin(), output.end()));
+        assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin()));
         log("Assert check successful!");
         graphs.deallocateGraph();
 
@@ -463,7 +463,7 @@ namespace test_cases {
                 900);  /// vertex data to be inserted in graph as vertices
 
         log("Checking assert...");
-        assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin(), output.end()));
+        assert(std::equal(expectedOutput.begin(), expectedOutput.end(), output.begin()));
         log("Assert check successful!");
 
         graphs.deallocateGraph();
