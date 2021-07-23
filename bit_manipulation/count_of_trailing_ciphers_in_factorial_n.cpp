@@ -42,7 +42,7 @@ uint64_t numberOfCiphersInFactorialN(uint64_t n) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
