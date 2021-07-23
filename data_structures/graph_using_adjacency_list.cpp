@@ -398,6 +398,7 @@ class Graphs {
 }  // namespace graph
 }  // namespace adjacency_list_graph
 }  // namespace data_structures
+}  // namespace data_structures
 
 /**
  * @brief Test cases implementation.
