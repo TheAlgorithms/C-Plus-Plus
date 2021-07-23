@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief An implementation of
- * [graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)) using
+ * [graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type) using
  * [adjacency list](https://en.wikipedia.org/wiki/Adjacency_list).
  *
  * A graph is a data structure that consists of the following two components:
