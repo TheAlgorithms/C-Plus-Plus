@@ -11,7 +11,7 @@
  * The (u, v) pair of edges is ordered pair in case of a directed graph while
  * this is not the case in undirected graphs.
  *
- * ##Implimentation:
+ * ### Implementation
  * In case of adjacency list, the index of vertices which are connected to a
  * vertex is stored in a linked list connected to that vertex. The structure
  * looks like:
