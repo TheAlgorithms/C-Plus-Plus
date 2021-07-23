@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Program to count number of ciphers in `n!`(https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus).
+ * @brief [Count the number of ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus) in `n!` implementation
  * @details
  * We are given a number. The algorithm finds all
  * the zeroes at the end of factorial of that number.
