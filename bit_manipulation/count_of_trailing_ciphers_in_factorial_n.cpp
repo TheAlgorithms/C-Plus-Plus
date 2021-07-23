@@ -27,12 +27,12 @@
  */
 namespace bit_manipulation {
 /**
- * @namespace numberOfCiphersInFactorialN
+ * @namespace count_of_trailing_ciphers_in_factorial_n
  * @brief Functions for the [Count the number of
  * ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus)
  * in `n!` implementation
  */
-namespace numberOfCiphersInFactorialN {
+namespace count_of_trailing_ciphers_in_factorial_n {
 /**
  * @brief Function to count the number of trailing ciphers.
  * @param n, Number for which `n!` ciphers are returned
@@ -50,7 +50,7 @@ uint64_t numberOfCiphersInFactorialN(uint64_t n) {
 
     return count;
 }
-}  // namespace numberOfCiphersInFactorialN
+}  // namespace count_of_trailing_ciphers_in_factorial_n
 }  // namespace bit_manipulation
 
 /**
@@ -58,33 +58,33 @@ uint64_t numberOfCiphersInFactorialN(uint64_t n) {
  * @returns void
  */
 static void test() {
-    // Test 1
+    // 1st test
     std::cout << "1st test ";
-    assert(bit_manipulation::numberOfCiphersInFactorialN::
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(395) == 97);
     std::cout << "passed" << std::endl;
 
-    // Test 2
+    // 2nd test
     std::cout << "2nd test ";
-    assert(bit_manipulation::numberOfCiphersInFactorialN::
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(977) == 242);
     std::cout << "passed" << std::endl;
 
-    // Test 3
+    // 3rd test
     std::cout << "3rd test ";
-    assert(bit_manipulation::numberOfCiphersInFactorialN::
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(871) == 215);
     std::cout << "passed" << std::endl;
 
-    // Test 4
+    // 4th test
     std::cout << "4th test ";
-    assert(bit_manipulation::numberOfCiphersInFactorialN::
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(239) == 57);
     std::cout << "passed" << std::endl;
 
-    // Test 5
+    // 5th test
     std::cout << "5th test ";
-    assert(bit_manipulation::numberOfCiphersInFactorialN::
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(0) == 0);
     std::cout << "passed" << std::endl;
 }
