@@ -21,7 +21,7 @@
 namespace bit_manipulation {
 /**
  * @namespace numberOfCiphersInFactorialN
- * @brief Program to count number of ciphers in `n!`(https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus).
+ * @brief Functions for the [Count the number of ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus) in `n!` implementation
  */
 namespace numberOfCiphersInFactorialN {
  /**
