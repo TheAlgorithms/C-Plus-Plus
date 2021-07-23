@@ -56,7 +56,6 @@
  * @brief Implementation of graph data structure using adjacency list.
  */
 namespace adjacency_list_graph {
-
 /**
  * @namespace adjacency_list
  * @brief Implementation of linked list for adjacency list.
