@@ -29,7 +29,6 @@ namespace numberOfCiphersInFactorialN {
  * @param n, Number for which `n!` ciphers are returned
  * @return count, Number of ciphers in `n!`.
  */
-
 uint64_t numberOfCiphersInFactorialN(uint64_t n) {
     // count is to store the number of 5's in factorial(n)
     uint64_t count = 0;
