@@ -36,7 +36,7 @@
  * time will be O(n), where in adjacency matrix it was constant as we has to
  * access elements by index.
  *
- * #Applications:
+ * ### Applications
  *      * Graphs are used to represent many real-life applications:
  *      * Graphs are used to represent networks. The networks may include paths
  * in a city or telephone network or circuit network.
