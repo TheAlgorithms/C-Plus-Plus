@@ -57,6 +57,11 @@
  */
 namespace data_structures {
 /**
+ * @namespace data_structures
+ * @brief Algorithms with data structures
+ */
+namespace data_structures {
+/**
  * @namespace adjacency_list_graph
  * @brief Implementation of graph data structure using adjacency list.
  */
