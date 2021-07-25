@@ -1,8 +1,7 @@
 /**
  * @file
- * @brief [Count the number of
- ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus)
- in `n!` implementation
+ * @brief [Count the number of 
+ * ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus) in `n!` implementation
  * @details
  * Given an integer number as input. The goal is to find the number of trailing
  zeroes in the factorial calculated for
