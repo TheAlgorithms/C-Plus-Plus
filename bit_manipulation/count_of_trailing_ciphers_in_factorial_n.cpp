@@ -8,12 +8,9 @@
  * that number. A factorial of a number N is a product of all numbers in the
  range [1, N].
 
- * We know that we get a trailing zero only if the number is multiple of 10 or
- has a factor pair (2,5). In all factorials of
- * any number greater than 5, we have many 2s more than 5s in the prime
- factorization of that number. Dividing a
- * number by powers of 5 will give us the count of 5s in its factors. So, the
- number of 5s will tell us the number of trailing zeroes.
+ * We know that we get a trailing zero only if the number is multiple of 10 or has a factor pair (2,5). In all factorials of
+ * any number greater than 5, we have many 2s more than 5s in the prime factorization of that number. Dividing a
+ * number by powers of 5 will give us the count of 5s in its factors. So, the number of 5s will tell us the number of trailing zeroes.
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
