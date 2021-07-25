@@ -31,7 +31,7 @@ namespace bit_manipulation {
 namespace count_of_trailing_ciphers_in_factorial_n {
 /**
  * @brief Function to count the number of the trailing ciphers
- * @param n, Number for which `n!` ciphers are returned
+ * @param n number for which `n!` ciphers are returned
  * @return count, Number of ciphers in `n!`.
  */
 uint64_t numberOfCiphersInFactorialN(uint64_t n) {
