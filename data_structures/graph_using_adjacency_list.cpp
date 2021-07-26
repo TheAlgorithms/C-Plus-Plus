@@ -87,7 +87,7 @@ class LinkedList {
     /**
      * @brief Allocates a new node in heap for given data as a node and returns
      * it's pointer.
-     * @param data Data for the node.
+     * @param data The data for the node.
      * @returns A pointer to the newly allocated Node.
      * */
     static Node *getNode(int64_t data, int64_t weight) {
