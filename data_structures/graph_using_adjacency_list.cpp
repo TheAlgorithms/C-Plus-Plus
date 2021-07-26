@@ -236,7 +236,8 @@ class Graphs {
      * @brief A utility function to find the index of the given data in
      * vertices.
      * @param data Data of the vertex to be searched.
-     * @returns int64_t Index of the node if found, else -1.
+     * @returns int64_t if the index of the node IS found
+     * @returns -1 if the index of the node is NOT found
      * */
     int64_t getIndex(int64_t data) {
         for (int i = 0; i < vertices.size(); i++) {
