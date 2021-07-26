@@ -277,8 +277,8 @@ class Graphs {
     /**
      * @brief Adds an edge between two vertices.
      * @param edge A pair of int64_t data representing nodes/vertex in the graph
-     * @returns bool Returns true if the edge is added successfully else if the
-     * given node not found, will return false.
+     * @returns `true` if the edge IS added successfully
+     *  @returns `false` if the edge is NOT added successfully
      * */
     bool addEdge(std::pair<int64_t, int64_t> edge) {
         int64_t edgeFromIndex = getIndex(edge.first);
