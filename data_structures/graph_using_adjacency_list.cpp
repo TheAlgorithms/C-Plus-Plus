@@ -293,8 +293,8 @@ class Graphs {
      * @brief Adds a weighted edge between two vertices with the given weights.
      * @param edge A pair of int64_t data representing nodes/vertex in the
      * graph.
-     * @returns bool Returns true if the edge is added successfully else if the
-     * given node not found, will return false.
+     * @returns `true` if the edge IS added successfully
+     * @returns `false` if the edge is NOT added successfully
      * */
     bool addWeightedEdge(const std::vector<int64_t> &weightedEdge) {
         int64_t edgeFromIndex = getIndex(weightedEdge[0]);  /// edge from vertex
