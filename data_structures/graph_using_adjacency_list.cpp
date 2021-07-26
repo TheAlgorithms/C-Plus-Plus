@@ -385,7 +385,8 @@ class Graphs {
     }
 
     /**
-     * @brief function to cleanup the allocated memory.
+     * @brief function to cleanup the allocated memory
+     * @returns void
      * @returns void
      * */
     void deallocateGraph() {
