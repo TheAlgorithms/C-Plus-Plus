@@ -345,7 +345,7 @@ class Graphs {
      * @brief For a given data, will find all the connected vertices to that
      * node.
      * @param data Data for the node for which you want all the connected nodes.
-     * @returns std::vector A vector of vertices from the adjacency list of all
+     * @returns A vector of vertices from the adjacency list of all
      * the connected nodes.
      * */
     std::vector<int64_t> getAllConnectedAsVertex(int64_t data) {
