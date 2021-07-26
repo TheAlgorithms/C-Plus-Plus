@@ -207,7 +207,7 @@ class Vertex {
  public:
     int64_t data = 0;  ///< The key/value of the node
     adjacency_list::LinkedList
-        *adjacencyList;  ///< The adjacency list for storing edges.
+        *adjacencyList{};  ///< The adjacency list for storing edges.
 };
 
 /**
