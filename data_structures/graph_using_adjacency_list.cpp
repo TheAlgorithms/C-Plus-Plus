@@ -157,7 +157,7 @@ class LinkedList {
     /**
      * @brief A function which converts linked list in a vector with the edge
      * weight.
-     * @returns std::Vector A vector of data and their edge weight.
+     * @returns A vector of data and their edge weight.
      * */
     std::vector<std::pair<int64_t, int64_t>> getAsWeightedList() {
         std::vector<std::pair<int64_t, int64_t>> list;
