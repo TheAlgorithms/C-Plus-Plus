@@ -323,8 +323,8 @@ class Graphs {
      * @brief A function to check if the two nodes are connected or not.
      * @param nodeData1 Data of the first node.
      * @param nodeData2 Data of the second node.
-     * @returns bool Returns true if the edge exists between given two nodes
-     * else returns false.
+     * @returns `true` if the edge DOES exist between the given two nodes
+     * @returns `false` if the edge does NOT exit between the give two nodes
      * */
     bool isConnected(int64_t nodeData1, int64_t nodeData2) {
         int64_t index = getIndex(nodeData2);
