@@ -396,8 +396,9 @@ class Graphs {
 }  // namespace data_structures
 
 /**
- * @brief Test cases implementation.
- * */
+ * @namespace test_cases
+ * @brief Namespace containing all the needed self-test cases
+ */
 namespace test_cases {
 namespace graph =
     data_structures::adjacency_list_graph::graph;  /// namespace alias
