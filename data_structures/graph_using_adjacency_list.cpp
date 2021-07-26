@@ -555,7 +555,7 @@ static void executeTests() {
  * @param argc commandline argument count (ignored)
  * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
-// */
+ */
 int main(int argc, char *argv[]) {
     test_cases::executeTests();  // run self-test implementations
 
