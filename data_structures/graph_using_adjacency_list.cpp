@@ -206,7 +206,7 @@ class LinkedList {
 namespace graph {
 
 /**
- * @brief A Vertex structure representing a vertex in graph.
+ * @brief A Vertex structure representing a vertex in a graph.
  */
 class Vertex {
  public:
