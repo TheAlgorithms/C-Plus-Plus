@@ -8,6 +8,7 @@
   * [N Queens All Solution Optimised](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens_all_solution_optimised.cpp)
   * [Nqueen Print All Solutions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/nqueen_print_all_solutions.cpp)
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
+  * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
@@ -267,6 +268,7 @@
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/fibonacci_search.cpp)
+  * [Floyd Cycle Detection Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/floyd_cycle_detection_algo.cpp)
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search.cpp)
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search2.cpp)
