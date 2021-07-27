@@ -2,34 +2,27 @@
 
 struct node {
     int data;
-    struct node *next;
+    struct node* next;
 };
 class Queue {
-    node *front;
-    node *rear;
+    node* front=nullptr;
+    node* rear=nullptr;
 
- public:
-    Queue() {
-        front = NULL;
-        rear = NULL;
-    }
+public:
+    Queue() = default; 
     void createNode(int val) {
-        node *ptr;
-        node *nn;
-        nn = new node;
-        ptr = front;
+        auto* nn = new node;
         nn->data = val;
-        nn->next = NULL;
+        nn->next = nullptr;
         front = nn;
         rear = nn;
     }
     void enqueue(int val) {
-        if (front == NULL || rear == NULL) {
+        if (front == nullptr || rear == nullptr) {
             createNode(val);
-        } else {
-            node *ptr;
-            node *nn;
-            ptr = front;
+        }
+        else {
+            node* nn;
             nn = new node;
             nn->data = val;
             rear->next = nn;
@@ -38,19 +31,23 @@ class Queue {
         }
     }
     void dequeue() {
-        node *n;
+        node* n;
         n = front;
-        front = front->next;
-        delete (n);
+        if (n) {
+            front = front->next;
+            delete n;
+        }
     }
     void traverse() {
-        node *ptr;
+        node* ptr;
         ptr = front;
-        do {
-            std::cout << ptr->data << " ";
-            ptr = ptr->next;
-        } while (ptr != rear->next);
-        std::cout << front->data << std::endl;
+        if (ptr) {
+            do {
+                std::cout << ptr->data << " ";
+                ptr = ptr->next;
+            } while (ptr != rear->next);
+            std::cout << front->data << std::endl;
+        }
     }
 };
 int main(void) {
