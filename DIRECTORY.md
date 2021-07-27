@@ -165,6 +165,7 @@
   * [Fibonacci Large](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_large.cpp)
   * [Fibonacci Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_matrix_exponentiation.cpp)
   * [Fibonacci Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_sum.cpp)
+  * [Finding Number Of Digits In A Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/finding_number_of_digits_in_a_number.cpp)
   * [Gcd Iterative Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_iterative_euclidean.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
