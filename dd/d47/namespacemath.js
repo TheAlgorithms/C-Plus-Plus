@@ -20,6 +20,9 @@ var namespacemath =
       [ "mod_division", "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7", null ],
       [ "power", "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179", null ]
     ] ],
+    [ "n_bonacci", null, [
+      [ "N_bonacci", "db/d27/n__bonacci_8cpp.html#a767bc5427e0ebaf88ab5a7572a7d852e", null ]
+    ] ],
     [ "ncr_modulo_p", null, [
       [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
     ] ],

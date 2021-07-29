@@ -128,6 +128,7 @@ var namespaces_dup =
     [ "Minimum", "d4/d12/namespace_minimum.html", null ],
     [ "modular_division", "d1/d64/namespacemodular__division.html", null ],
     [ "morse", "d6/d8d/namespacemorse.html", null ],
+    [ "n_bonacci", "de/d36/namespacen__bonacci.html", null ],
     [ "n_queens", "d3/da1/namespacen__queens.html", null ],
     [ "n_queens_all_solutions", "df/d44/namespacen__queens__all__solutions.html", null ],
     [ "n_queens_optimized", "d8/d14/namespacen__queens__optimized.html", null ],
