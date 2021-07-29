@@ -52,6 +52,7 @@ var namespaces_dup =
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
     [ "count_of_set_bits", "dd/dae/namespacecount__of__set__bits.html", null ],
+    [ "count_of_trailing_ciphers_in_factorial_n", "dc/d2f/namespacecount__of__trailing__ciphers__in__factorial__n.html", null ],
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
     [ "cycle_detection", "da/d82/namespacecycle__detection.html", null ],
     [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],

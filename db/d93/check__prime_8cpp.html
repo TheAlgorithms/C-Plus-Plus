@@ -148,11 +148,11 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                     {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (num &lt;= 1) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num == 2) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((num &amp; 1) == 0) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (num &gt;= 3) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">for</span> (T i = 3; (i * i) &lt;= (num); i = (i + 2)) {</div>
@@ -189,7 +189,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    assert(<a class="code" href="../../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532">is_prime</a>(50) == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    assert(<a class="code" href="../../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532">is_prime</a>(115249) == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> num;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> num = 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the number to check if it is prime or not&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; num;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532">is_prime</a>(num);</div>
