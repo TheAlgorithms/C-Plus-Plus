@@ -37,16 +37,20 @@ std::string addStrings( std::string first, std::string second )
     int64_t len1 = first.size();
     int64_t len2 = second.size();
     int64_t length = std::max(len1,len2);
+    std::string zero = "0";
     if (len1 < len2) // make the string lengths equal
     {
         for (int64_t i = 0 ; i < len2 - len1 ; i++) {
-            first = '0' + first;
+            zero += first;
+            first = zero;
         }
     }
     else if (len1 > len2)
-    {
+    {   
+        zero = "0";
         for (int64_t i = 0 ; i < len1 - len2 ; i++) {
-            second = '0' + second;
+            zero += second;
+            second = zero;
         }
     }
     int64_t carry = 0; 
@@ -74,16 +78,20 @@ int64_t karatsuba_algorithm(std::string str1, std::string str2) {
     int64_t len1 = str1.size();
     int64_t len2 = str2.size();
     int64_t n = std::max(len1,len2);
+    std::string zero = "0";
     if (len1 < len2)
     {
         for (int64_t i = 0 ; i < len2 - len1 ; i++) {
-            str1 = '0' + str1;
+            zero += str1;
+            str1 = zero;
         }
     }
     else if (len1 > len2)
-    {
+    {   
+        zero = "0";
         for (int64_t i = 0 ; i < len1 - len2 ; i++) {
-            str2 = '0' + str2;
+            zero += str2;
+            str2 = zero;
         }
     }
     if(n==0) return 0;
