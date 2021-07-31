@@ -59,8 +59,9 @@ std::string addStrings( std::string first, std::string second )
         int64_t secondBit = second.at(i) - '0';
  
         int64_t sum = (firstBit ^ secondBit ^ carry)+'0'; // sum of 3 bits
- 
-        result = (char)sum + result;
+        sum = to_string(sum);
+        sum += result;
+        result = sum;
  
         carry = (firstBit&secondBit) | (secondBit&carry) | (firstBit&carry); // sum of 3 bits
     }
