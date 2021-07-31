@@ -39,17 +39,18 @@ std::string addStrings( std::string first, std::string second )
     int64_t length = std::max(len1,len2);
     if (len1 < len2) // make the string lengths equal
     {
-        for (int64_t i = 0 ; i < len2 - len1 ; i++)
+        for (int64_t i = 0 ; i < len2 - len1 ; i++) {
             first = '0' + first;
+        }
     }
     else if (len1 > len2)
     {
-        for (int64_t i = 0 ; i < len1 - len2 ; i++)
+        for (int64_t i = 0 ; i < len1 - len2 ; i++) {
             second = '0' + second;
+        }
     }
     int64_t carry = 0; 
-    for (int64_t i = length-1 ; i >= 0 ; i--)
-    {
+    for (int64_t i = length-1 ; i >= 0 ; i--) {
         int64_t firstBit = first.at(i) - '0';
         int64_t secondBit = second.at(i) - '0';
  
@@ -75,13 +76,15 @@ int64_t karatsuba_algorithm(std::string str1, std::string str2) {
     int64_t n = std::max(len1,len2);
     if (len1 < len2)
     {
-        for (int64_t i = 0 ; i < len2 - len1 ; i++)
+        for (int64_t i = 0 ; i < len2 - len1 ; i++) {
             str1 = '0' + str1;
+        }
     }
     else if (len1 > len2)
     {
-        for (int64_t i = 0 ; i < len1 - len2 ; i++)
+        for (int64_t i = 0 ; i < len1 - len2 ; i++) {
             str2 = '0' + str2;
+        }
     }
     if(n==0) return 0;
     if(n==1) return (str1[0] - '0')*(str2[0] - '0');
