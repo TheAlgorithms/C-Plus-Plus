@@ -37,18 +37,18 @@ namespace wildcard_matching {
  */
 std::vector<std::vector<int64_t>> dpTable(1000, std::vector<int64_t>(1000, -1));
 bool wildcard_matching(std::string s, std::string p, uint32_t pos1,
-                           uint32_t pos2) {
+                       uint32_t pos2) {
     uint32_t n = s.length();
     uint32_t m = p.length();
     // matching is successfull if both strings are done
     if (pos1 == n && pos2 == m) {
-        return 1;
+        return true;
     }
 
     // matching is unsuccessfull if pattern is not finished but matching string
     // is
     if (pos1 != n && pos2 == m) {
-        return 0;
+        return false;
     }
 
     // all the remaining characters of patterns must be * inorder to match with
