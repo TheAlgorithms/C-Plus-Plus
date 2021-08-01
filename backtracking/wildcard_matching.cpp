@@ -35,10 +35,10 @@ namespace wildcard_matching {
  * @param pos2 is the last index
  * @returns 1 if pattern matches with matching string otherwise 0
  */
-std::vector<std::vector<int>> dpTable(1000, std::vector<int>(1000, -1));
-int32_t wildcard_matching(std::string s, std::string p, int pos1, int pos2) {
-    int n = s.length();
-    int m = p.length();
+std::vector<std::vector<int64_t>> dpTable(1000, std::vector<int64_t>(1000, -1));
+uint32_t wildcard_matching(std::string s, std::string p, uint32_t pos1, uint32_t pos2) {
+    uint32_t n = s.length();
+    uint32_t m = p.length();
     // matching is successfull if both strings are done
     if (pos1 == n && pos2 == m) {
         return 1;
