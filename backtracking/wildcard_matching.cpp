@@ -36,7 +36,8 @@ namespace wildcard_matching {
  * @returns 1 if pattern matches with matching string otherwise 0
  */
 std::vector<std::vector<int64_t>> dpTable(1000, std::vector<int64_t>(1000, -1));
-uint32_t wildcard_matching(std::string s, std::string p, uint32_t pos1, uint32_t pos2) {
+uint32_t wildcard_matching(std::string s, std::string p, uint32_t pos1,
+                           uint32_t pos2) {
     uint32_t n = s.length();
     uint32_t m = p.length();
     // matching is successfull if both strings are done
