@@ -95,7 +95,7 @@ int32_t wildcard_matching(std::string s, std::string p, int pos1, int pos2)
 }  // namespace backtracking
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
