@@ -127,7 +127,7 @@ static void test() {
     assert(backtracking::wildcard_matching::wildcard_matching(matching4, pattern4, 0, 0) == 1);  // here the pattern matches with given string
     std::cout << "passed" << std::endl;
 
-    // Test 5
+    // 5th test
     std::cout << "5th test ";
     std::string matching5 = "baaabab";
     std::string pattern5 = "aa?ab";
