@@ -2,8 +2,10 @@
  * @file
  * @brief Implementation of the [Wildcard Matching](https://www.geeksforgeeks.org/wildcard-pattern-matching/) problem.
  * @details
- * Problem Statement: 
- * Given an matching string and a pattern, implement wildcard pattern matching with support for '?' and '*'. '?' Matches any single character. '*' Matches any sequence of characters (including the empty sequence). The matching should cover the entire matching string (not partial). Task is to determine if the pattern matches with the matching string
+ * Given a matching string and a pattern, implement wildcard pattern
+ * matching with support for `?` and `*`. `?` matches any single character.
+ * `*` matches any sequence of characters (including the empty sequence).
+ * The matching should cover the entire matching string (not partial). The task is to determine if the pattern matches with the matching string
  * @author [Swastika Gupta](https://github.com/Swastyy)
  */
 
