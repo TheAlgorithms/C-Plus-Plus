@@ -11,7 +11,6 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
-#include <string>    /// for string
 #include <cstring>   /// for string
 
 /**
