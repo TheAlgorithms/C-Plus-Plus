@@ -69,8 +69,9 @@ std::string addStrings(std::string first, std::string second) {
                 (firstBit & carry);  // sum of 3 bits
     }
 
-    if (carry)
+    if (carry) {
         result = '1' + result;  // adding 1 incase of overflow
+    }
     return result;
 }
 /**
