@@ -65,6 +65,9 @@
   * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_tree.cpp)
   * [Trie Using Hashmap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_using_hashmap.cpp)
 
+## Divide And Conquer
+  * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
+
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0_1_knapsack.cpp)
   * [Abbreviation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/abbreviation.cpp)
