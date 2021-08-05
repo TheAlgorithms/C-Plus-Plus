@@ -17,6 +17,7 @@
  * @author [Anup Kumar Panwar](https://github.com/AnupKumarPanwar)
  * @author [David Leal](https://github.com/Panquesito7)
  */
+
 #include <array>     /// for std::array
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
@@ -29,7 +30,7 @@ namespace backtracking {
 /**
  * @namespace graph_coloring
  * @brief Functions for the [Graph
- * Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorith,
+ * Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorithm,
  */
 namespace graph_coloring {
 /**

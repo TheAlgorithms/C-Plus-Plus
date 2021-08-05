@@ -2,14 +2,19 @@
 ## Backtracking
   * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/knight_tour.cpp)
+  * [Magic Sequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/magic_sequence.cpp)
   * [Minimax](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/minimax.cpp)
   * [N Queens](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens.cpp)
   * [N Queens All Solution Optimised](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/n_queens_all_solution_optimised.cpp)
   * [Nqueen Print All Solutions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/nqueen_print_all_solutions.cpp)
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
+  * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
+  * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
 
 ## Bit Manipulation
+  * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
+  * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
@@ -73,6 +78,7 @@
   * [Egg Dropping Puzzle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/egg_dropping_puzzle.cpp)
   * [Fibonacci Bottom Up](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/fibonacci_bottom_up.cpp)
   * [Floyd Warshall](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/floyd_warshall.cpp)
+  * [House Robber](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/house_robber.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane.cpp)
   * [Kadane2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/kadane2.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/longest_common_string.cpp)
@@ -175,6 +181,7 @@
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
   * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
+  * [N Bonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_bonacci.cpp)
   * [N Choose R](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_choose_r.cpp)
   * [Ncr Modulo P](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/ncr_modulo_p.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
@@ -216,6 +223,7 @@
   * [Circular Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/circular_linked_list.cpp)
   * [Circular Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/circular_queue_using_array.cpp)
   * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
+  * [Inorder Successor Of Bst](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/inorder_successor_of_bst.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
@@ -261,6 +269,7 @@
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/fibonacci_search.cpp)
+  * [Floyd Cycle Detection Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/floyd_cycle_detection_algo.cpp)
   * [Hash Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/hash_search.cpp)
   * [Interpolation Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search.cpp)
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/interpolation_search2.cpp)
@@ -308,6 +317,7 @@
   * [Strand Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/strand_sort.cpp)
   * [Swap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/swap_sort.cpp)
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/tim_sort.cpp)
+  * [Wave Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/wave_sort.cpp)
   * [Wiggle Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/wiggle_sort.cpp)
 
 ## Strings
