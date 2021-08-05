@@ -3,18 +3,20 @@
  * @brief [Sudoku Solver](https://en.wikipedia.org/wiki/Sudoku) algorithm.
  *
  * @details
- * Sudoku (数独, sūdoku, digit-single) (/suːˈdoʊkuː/, /-ˈdɒk-/, /sə-/, originally called
- * Number Place) is a logic-based, combinatorial number-placement puzzle. 
- * In classic sudoku, the objective is to fill a 9×9 grid with digits so that each column,
- * each row, and each of the nine 3×3 subgrids that compose the grid (also called "boxes", "blocks", or "regions")
+ * Sudoku (数独, sūdoku, digit-single) (/suːˈdoʊkuː/, /-ˈdɒk-/, /sə-/,
+ * originally called Number Place) is a logic-based, combinatorial
+ * number-placement puzzle. In classic sudoku, the objective is to fill a 9×9
+ * grid with digits so that each column, each row, and each of the nine 3×3
+ * subgrids that compose the grid (also called "boxes", "blocks", or "regions")
  * contain all of the digits from 1 to 9. The puzzle setter provides a
- * partially completed grid, which for a well-posed puzzle has a single solution.
+ * partially completed grid, which for a well-posed puzzle has a single
+ * solution.
  *
  * @author [DarthCoder3200](https://github.com/DarthCoder3200)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <iostream>   /// for IO operations
 #include <array>     /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking
@@ -23,7 +25,8 @@
 namespace backtracking {
 /**
  * @namespace sudoku_solver
- * @brief Functions for the [Sudoku Solver](https://en.wikipedia.org/wiki/Sudoku) implementation
+ * @brief Functions for the [Sudoku
+ * Solver](https://en.wikipedia.org/wiki/Sudoku) implementation
  */
 namespace sudoku_solver {
 /**
@@ -38,7 +41,8 @@ namespace sudoku_solver {
  * @returns `false` if 'mat' equals to 'no'
  */
 template <size_t V>
-bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, int no, int n) {
+bool isPossible(const std::array<std::array<int, V>, V> &mat, int i, int j,
+                int no, int n) {
     /// `no` shouldn't be present in either row i or column j
     for (int x = 0; x < n; x++) {
         if (mat[x][j] == no || mat[i][x] == no) {
@@ -64,16 +68,19 @@ bool isPossible(const std::array <std::array <int, V>, V> &mat, int i, int j, in
  * @brief Utility function to print the matrix
  * @tparam V number of vertices in array
  * @param mat matrix where numbers are saved
- * @param starting_mat copy of mat, required by printMat for highlighting the differences
+ * @param starting_mat copy of mat, required by printMat for highlighting the
+ * differences
  * @param n number of times loop will run
  * @return void
  */
 template <size_t V>
-void printMat(const std::array <std::array <int, V>, V> &mat, const std::array <std::array <int, V>, V> &starting_mat, int n) {
+void printMat(const std::array<std::array<int, V>, V> &mat,
+              const std::array<std::array<int, V>, V> &starting_mat, int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (starting_mat[i][j] != mat[i][j]) {
-                std::cout << "\033[93m" << mat[i][j] << "\033[0m" << " ";
+                std::cout << "\033[93m" << mat[i][j] << "\033[0m"
+                          << " ";
             } else {
                 std::cout << mat[i][j] << " ";
             }
@@ -92,14 +99,17 @@ void printMat(const std::array <std::array <int, V>, V> &mat, const std::array <
  * @brief Main function to implement the Sudoku algorithm
  * @tparam V number of vertices in array
  * @param mat matrix where numbers are saved
- * @param starting_mat copy of mat, required by printMat for highlighting the differences
+ * @param starting_mat copy of mat, required by printMat for highlighting the
+ * differences
  * @param i current index in rows
  * @param j current index in columns
  * @returns `true` if 'no' was placed
  * @returns `false` if 'no' was not placed
  */
 template <size_t V>
-bool solveSudoku(std::array <std::array <int, V>, V> &mat, const std::array <std::array <int, V>, V> &starting_mat, int i, int j) {
+bool solveSudoku(std::array<std::array<int, V>, V> &mat,
+                 const std::array<std::array<int, V>, V> &starting_mat, int i,
+                 int j) {
     /// Base Case
     if (i == 9) {
         /// Solved for 9 rows already
@@ -128,8 +138,8 @@ bool solveSudoku(std::array <std::array <int, V>, V> &mat, const std::array <std
             }
             /// Couldn't find a solution
             /// loop will place the next `no`.
-            }
         }
+    }
     /// Solution couldn't be found for any of the numbers provided
     mat[i][j] = 0;
     return false;
@@ -143,21 +153,20 @@ bool solveSudoku(std::array <std::array <int, V>, V> &mat, const std::array <std
  */
 int main() {
     const int V = 9;
-    std::array <std::array <int, V>, V> mat = { 
-        std::array <int, V> {5, 3, 0, 0, 7, 0, 0, 0, 0},
-        std::array <int, V> {6, 0, 0, 1, 9, 5, 0, 0, 0},
-        std::array <int, V> {0, 9, 8, 0, 0, 0, 0, 6, 0},
-        std::array <int, V> {8, 0, 0, 0, 6, 0, 0, 0, 3},
-        std::array <int, V> {4, 0, 0, 8, 0, 3, 0, 0, 1},
-        std::array <int, V> {7, 0, 0, 0, 2, 0, 0, 0, 6},
-        std::array <int, V> {0, 6, 0, 0, 0, 0, 2, 8, 0},
-        std::array <int, V> {0, 0, 0, 4, 1, 9, 0, 0, 5},
-        std::array <int, V> {0, 0, 0, 0, 8, 0, 0, 7, 9}
-    };
+    std::array<std::array<int, V>, V> mat = {
+        std::array<int, V>{5, 3, 0, 0, 7, 0, 0, 0, 0},
+        std::array<int, V>{6, 0, 0, 1, 9, 5, 0, 0, 0},
+        std::array<int, V>{0, 9, 8, 0, 0, 0, 0, 6, 0},
+        std::array<int, V>{8, 0, 0, 0, 6, 0, 0, 0, 3},
+        std::array<int, V>{4, 0, 0, 8, 0, 3, 0, 0, 1},
+        std::array<int, V>{7, 0, 0, 0, 2, 0, 0, 0, 6},
+        std::array<int, V>{0, 6, 0, 0, 0, 0, 2, 8, 0},
+        std::array<int, V>{0, 0, 0, 4, 1, 9, 0, 0, 5},
+        std::array<int, V>{0, 0, 0, 0, 8, 0, 0, 7, 9}};
 
     backtracking::sudoku_solver::printMat<V>(mat, mat, 9);
     std::cout << "Solution " << std::endl;
-    std::array <std::array <int, V>, V> starting_mat = mat;
+    std::array<std::array<int, V>, V> starting_mat = mat;
     backtracking::sudoku_solver::solveSudoku<V>(mat, starting_mat, 0, 0);
 
     return 0;

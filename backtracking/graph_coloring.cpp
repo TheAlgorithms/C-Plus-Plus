@@ -1,23 +1,25 @@
 /**
  * @file
  * @brief prints the assigned colors
- * using [Graph Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorithm
+ * using [Graph Coloring](https://en.wikipedia.org/wiki/Graph_coloring)
+ * algorithm
  *
  * @details
- * In graph theory, graph coloring is a special case of graph labeling; 
- * it is an assignment of labels traditionally called "colors" to elements of a graph subject to certain constraints. 
- * In its simplest form, it is a way of coloring the vertices of a graph such that no two adjacent vertices are of the same color; 
- * this is called a vertex coloring. Similarly, an edge coloring assigns
- * a color to each edge so that no two adjacent edges are of the same color,
- * and a face coloring of a planar graph assigns a color to each face or
+ * In graph theory, graph coloring is a special case of graph labeling;
+ * it is an assignment of labels traditionally called "colors" to elements of a
+ * graph subject to certain constraints. In its simplest form, it is a way of
+ * coloring the vertices of a graph such that no two adjacent vertices are of
+ * the same color; this is called a vertex coloring. Similarly, an edge coloring
+ * assigns a color to each edge so that no two adjacent edges are of the same
+ * color, and a face coloring of a planar graph assigns a color to each face or
  * region so that no two faces that share a boundary have the same color.
  *
  * @author [Anup Kumar Panwar](https://github.com/AnupKumarPanwar)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <iostream>    /// for IO operations
-#include <array>       /// for std::array
-#include <vector>      /// for std::vector
+#include <array>     /// for std::array
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace backtracking
@@ -26,7 +28,8 @@
 namespace backtracking {
 /**
  * @namespace graph_coloring
- * @brief Functions for the [Graph Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorith,
+ * @brief Functions for the [Graph
+ * Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorith,
  */
 namespace graph_coloring {
 /**
@@ -35,9 +38,9 @@ namespace graph_coloring {
  * @param color array of colors assigned to the nodes
  */
 template <size_t V>
-void printSolution(const std::array <int, V>& color) {
+void printSolution(const std::array<int, V>& color) {
     std::cout << "Following are the assigned colors\n";
-    for (auto &col : color) {
+    for (auto& col : color) {
         std::cout << col;
     }
     std::cout << "\n";
@@ -55,7 +58,8 @@ void printSolution(const std::array <int, V>& color) {
  * @returns `false` if the color is not safe to be assigned to the node
  */
 template <size_t V>
-bool isSafe(int v, const std::array<std::array <int, V>, V>& graph, const std::array <int, V>& color, int c) {
+bool isSafe(int v, const std::array<std::array<int, V>, V>& graph,
+            const std::array<int, V>& color, int c) {
     for (int i = 0; i < V; i++) {
         if (graph[v][i] && c == color[i]) {
             return false;
@@ -74,7 +78,8 @@ bool isSafe(int v, const std::array<std::array <int, V>, V>& graph, const std::a
  * @param v index of graph vertex to check
  */
 template <size_t V>
-void graphColoring(const std::array<std::array <int, V>, V>& graph, int m, std::array <int, V> color, int v) {
+void graphColoring(const std::array<std::array<int, V>, V>& graph, int m,
+                   std::array<int, V> color, int v) {
     // base case:
     // If all vertices are assigned a color then return true
     if (v == V) {
@@ -112,15 +117,12 @@ int main() {
     // (0)---(1)
 
     const int V = 4;  // number of vertices in the graph
-    std::array <std::array <int, V>, V> graph = {
-        std::array <int, V>({0, 1, 1, 1}),
-        std::array <int, V>({1, 0, 1, 0}),
-        std::array <int, V>({1, 1, 0, 1}),
-        std::array <int, V>({1, 0, 1, 0})
-    };
+    std::array<std::array<int, V>, V> graph = {
+        std::array<int, V>({0, 1, 1, 1}), std::array<int, V>({1, 0, 1, 0}),
+        std::array<int, V>({1, 1, 0, 1}), std::array<int, V>({1, 0, 1, 0})};
 
     int m = 3;  // Number of colors
-    std::array <int, V> color{};
+    std::array<int, V> color{};
 
     backtracking::graph_coloring::graphColoring<V>(graph, m, color, 0);
     return 0;

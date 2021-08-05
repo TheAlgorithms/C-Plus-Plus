@@ -1,14 +1,14 @@
 /**
  * @file
- * @brief [Eight Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) 
+ * @brief [Eight Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
  * puzzle, printing all solutions
  *
  * @author [Himani Negi](https://github.com/Himani2000)
  * @author [David Leal](https://github.com/Panquesito7)
  *
  */
-#include <iostream>   /// for IO operations
-#include <array>      /// for std::array
+#include <array>     /// for std::array
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking
@@ -18,7 +18,8 @@ namespace backtracking {
 /**
  * @namespace n_queens_all_solutions
  * @brief Functions for the [Eight
- * Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) puzzle with all solutions.
+ * Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) puzzle with all
+ * solutions.
  */
 namespace n_queens_all_solutions {
 /**
@@ -47,7 +48,8 @@ void PrintSol(const std::array<std::array<int, n>, n>& board) {
  * @returns `false` if queen can't be placed on matrix
  */
 template <size_t n>
-bool CanIMove(const std::array<std::array<int, n>, n>& board, int row, int col) {
+bool CanIMove(const std::array<std::array<int, n>, n>& board, int row,
+              int col) {
     /// check in the row
     for (int i = 0; i < col; i++) {
         if (board[row][i] == 1) {

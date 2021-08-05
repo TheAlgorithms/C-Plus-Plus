@@ -6,21 +6,22 @@
  * @details
  * Minimax (sometimes MinMax, MM or saddle point) is a decision rule used in
  * artificial intelligence, decision theory, game theory, statistics,
- * and philosophy for minimizing the possible loss for a worst case (maximum loss) scenario.
- * When dealing with gains, it is referred to as "maximin"—to maximize the minimum gain.
- * Originally formulated for two-player zero-sum game theory, covering both the cases where players take
- * alternate moves and those where they make simultaneous moves, it has also been extended to more
- * complex games and to general decision-making in the presence of uncertainty.
- * 
+ * and philosophy for minimizing the possible loss for a worst case (maximum
+ * loss) scenario. When dealing with gains, it is referred to as "maximin"—to
+ * maximize the minimum gain. Originally formulated for two-player zero-sum game
+ * theory, covering both the cases where players take alternate moves and those
+ * where they make simultaneous moves, it has also been extended to more complex
+ * games and to general decision-making in the presence of uncertainty.
+ *
  * @author [Gleison Batista](https://github.com/gleisonbs)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <algorithm>   /// for std::max, std::min
-#include <cmath>       /// for log2
-#include <iostream>    /// for IO operations
-#include <array>       /// for std::array
+#include <algorithm>  /// for std::max, std::min
+#include <array>      /// for std::array
+#include <cmath>      /// for log2
+#include <iostream>   /// for IO operations
 
-/** 
+/**
  * @namespace backtracking
  * @brief Backtracking algorithms
  */
@@ -56,7 +57,7 @@ int main() {
     std::array<int, 8> scores = {90, 23, 6, 33, 21, 65, 123, 34423};
     double height = log2(scores.size());
 
-    std::cout << "Optimal value: " << backtracking::minimax(0, 0, true, scores, height)
-              << std::endl;
+    std::cout << "Optimal value: "
+              << backtracking::minimax(0, 0, true, scores, height) << std::endl;
     return 0;
 }

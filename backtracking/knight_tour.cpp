@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief [Knight's tour](https://en.wikipedia.org/wiki/Knight%27s_tour) algorithm
+ * @brief [Knight's tour](https://en.wikipedia.org/wiki/Knight%27s_tour)
+ * algorithm
  *
  * @details
  * A knight's tour is a sequence of moves of a knight on a chessboard
@@ -12,8 +13,8 @@
  * @author [Nikhil Arora](https://github.com/nikhilarora068)
  * @author [David Leal](https://github.com/Panquesito7)
  */
-#include <iostream>    /// for IO operations
-#include <array>       /// for std::array
+#include <array>     /// for std::array
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking
@@ -22,7 +23,8 @@
 namespace backtracking {
 /**
  * @namespace knight_tour
- * @brief Functions for the [Knight's tour](https://en.wikipedia.org/wiki/Knight%27s_tour) algorithm
+ * @brief Functions for the [Knight's
+ * tour](https://en.wikipedia.org/wiki/Knight%27s_tour) algorithm
  */
 namespace knight_tour {
 /**
@@ -35,7 +37,7 @@ namespace knight_tour {
  * @returns `false` if ....
  */
 template <size_t V>
-bool issafe(int x, int y, const std::array <std::array <int, V>, V>& sol) {
+bool issafe(int x, int y, const std::array<std::array<int, V>, V> &sol) {
     return (x < V && x >= 0 && y < V && y >= 0 && sol[x][y] == -1);
 }
 
@@ -52,8 +54,8 @@ bool issafe(int x, int y, const std::array <std::array <int, V>, V>& sol) {
  * @returns `false` if solution does not exist
  */
 template <size_t V>
-bool solve(int x, int y, int mov, std::array <std::array <int, V>, V> &sol,
-    const std::array <int, V> &xmov, std::array <int, V> &ymov) {
+bool solve(int x, int y, int mov, std::array<std::array<int, V>, V> &sol,
+           const std::array<int, V> &xmov, std::array<int, V> &ymov) {
     int k = 0, xnext = 0, ynext = 0;
 
     if (mov == V * V) {
@@ -69,8 +71,7 @@ bool solve(int x, int y, int mov, std::array <std::array <int, V>, V> &sol,
 
             if (solve<V>(xnext, ynext, mov + 1, sol, xmov, ymov) == true) {
                 return true;
-            }
-             else {
+            } else {
                 sol[xnext][ynext] = -1;
             }
         }
@@ -86,25 +87,28 @@ bool solve(int x, int y, int mov, std::array <std::array <int, V>, V> &sol,
  */
 int main() {
     const int n = 8;
-    std::array <std::array <int, n>, n> sol = { 0 };
+    std::array<std::array<int, n>, n> sol = {0};
 
-    int i, j;
+    int i = 0, j = 0;
     for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) { sol[i][j] = -1; }
+        for (j = 0; j < n; j++) {
+            sol[i][j] = -1;
+        }
     }
 
-    std::array <int, n> xmov = { 2, 1, -1, -2, -2, -1, 1, 2 };
-    std::array <int, n> ymov = { 1, 2, 2, 1, -1, -2, -2, -1 };
+    std::array<int, n> xmov = {2, 1, -1, -2, -2, -1, 1, 2};
+    std::array<int, n> ymov = {1, 2, 2, 1, -1, -2, -2, -1};
 
     sol[0][0] = 0;
 
     bool flag = backtracking::knight_tour::solve<n>(0, 0, 1, sol, xmov, ymov);
     if (flag == false) {
         std::cout << "Error: Solution does not exist\n";
-    }
-    else {
+    } else {
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) { std::cout << sol[i][j] << "  "; }
+            for (j = 0; j < n; j++) {
+                std::cout << sol[i][j] << "  ";
+            }
             std::cout << "\n";
         }
     }

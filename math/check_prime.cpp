@@ -47,7 +47,7 @@ int main() {
     assert(is_prime(50) == false);
     assert(is_prime(115249) == true);
 
-    int num;
+    int num = 0;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;
     bool result = is_prime(num);
