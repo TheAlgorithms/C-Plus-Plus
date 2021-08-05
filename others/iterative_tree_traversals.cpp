@@ -204,8 +204,9 @@ static void test2(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     result = binaryTree.postOrderIterative(root);
 
     // Self-testing the result using `assert`
-    for(int i = 0; i < result.size(); i++)
+    for(int i = 0; i < result.size(); i++) {
         assert(actual_result[i] == result[i]);
+    }
 
     // Printing the result storing postorder.
     std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
@@ -228,8 +229,9 @@ static void test3(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     result = binaryTree.inOrderIterative(root);
 
     // Self-testing the result using `assert`
-    for(int i = 0; i < result.size(); i++)
+    for(int i = 0; i < result.size(); i++) {
         assert(actual_result[i] == result[i]);
+    }
 
     // Printing the result storing inorder.
     std::cout<< "\nInOrder Traversal Is : "<< std::endl;
@@ -252,8 +254,9 @@ static void test4(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     result = binaryTree.preOrderIterative(root); 
 
     // Self-testing the result using `assert`
-    for(int i = 0; i < result.size(); i++)
+    for(int i = 0; i < result.size(); i++) {
         assert(actual_result[i] == result[i]);
+    }
 
     // Printing the result storing preorder.
     std::cout<< "\nPreOrder Traversal Is : "<< std::endl;
@@ -276,8 +279,9 @@ static void test5(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     result = binaryTree.postOrderIterative(root);
 
     // Self-testing the result using `assert`
-    for(int i = 0; i < result.size(); i++)
+    for(int i = 0; i < result.size(); i++) {
         assert(actual_result[i] == result[i]);
+    }
 
     // Printing the result storing postorder.
     std::cout<< "\nPostOrder Traversal Is : "<< std::endl;
@@ -300,8 +304,9 @@ static void test6(others::iterative_tree_traversals::BinaryTree binaryTree, othe
     result = binaryTree.inOrderIterative(root);
 
     // Self-testing the result using `assert`
-    for(int i = 0; i < result.size(); i++)
+    for(int i = 0; i < result.size(); i++) {
         assert(actual_result[i] == result[i]);
+    }
 
     // Printing the result storing inorder.
     std::cout<< "\nInOrder Traversal Is : "<< std::endl;

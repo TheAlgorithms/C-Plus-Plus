@@ -7,8 +7,8 @@
  * @author [David Leal](https://github.com/Panquesito7)
  *
  */
-#include <iostream>
-#include <array>
+#include <iostream>   /// for IO operations
+#include <array>      /// for std::array
 
 /**
  * @namespace backtracking
@@ -17,12 +17,12 @@
 namespace backtracking {
 /**
  * @namespace n_queens_all_solutions
- * @brief Functions for [Eight
+ * @brief Functions for the [Eight
  * Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) puzzle with all solutions.
  */
 namespace n_queens_all_solutions {
 /**
- * Utility function to print matrix
+ * @brief Utility function to print matrix
  * @tparam n number of matrix size
  * @param board matrix where numbers are saved
  */
@@ -38,7 +38,7 @@ void PrintSol(const std::array<std::array<int, n>, n>& board) {
 }
 
 /**
- * Check if a queen can be placed on matrix
+ * @brief Check if a queen can be placed on the matrix
  * @tparam n number of matrix size
  * @param board matrix where numbers are saved
  * @param row current index in rows
@@ -70,7 +70,7 @@ bool CanIMove(const std::array<std::array<int, n>, n>& board, int row, int col) 
 }
 
 /**
- * Solve n queens problem
+ * @brief Main function to solve the N Queens problem
  * @tparam n number of matrix size
  * @param board matrix where numbers are saved
  * @param col current index in columns
@@ -89,11 +89,12 @@ void NQueenSol(std::array<std::array<int, n>, n> board, int col) {
         }
     }
 }
-}   // namespace n_queens_all_solutions
+}  // namespace n_queens_all_solutions
 }  // namespace backtracking
 
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     const int n = 4;

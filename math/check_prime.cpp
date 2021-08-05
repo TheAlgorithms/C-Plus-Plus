@@ -22,11 +22,11 @@ template <typename T>
 bool is_prime(T num) {
     bool result = true;
     if (num <= 1) {
-        return 0;
+        return false;
     } else if (num == 2) {
-        return 1;
+        return true;
     } else if ((num & 1) == 0) {
-        return 0;
+        return false;
     }
     if (num >= 3) {
         for (T i = 3; (i * i) < (num); i = (i + 2)) {
