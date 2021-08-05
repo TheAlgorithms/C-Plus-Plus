@@ -98,10 +98,12 @@ int64_t karatsuba_algorithm(std::string str1, std::string str2) {
             str2 = zero;
         }
     }
-    if (n == 0)
+    if (n == 0) {
         return 0;
-    if (n == 1)
+    }
+    if (n == 1) {
         return (str1[0] - '0') * (str2[0] - '0');
+    }
     int64_t fh = n / 2;     // first half of string
     int64_t sh = (n - fh);  // second half of string
 
