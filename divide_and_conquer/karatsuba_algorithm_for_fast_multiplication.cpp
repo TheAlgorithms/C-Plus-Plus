@@ -133,7 +133,7 @@ static void test() {
     // 1st test
     std::string s11 = "1";
     std::string s12 = "1010";
-    std::cout << "Test 1... ";
+    std::cout << "1st test... ";
     assert(divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm(
                s11, s12) == 10);  // here the multiplication is 10
     std::cout << "passed" << std::endl;
