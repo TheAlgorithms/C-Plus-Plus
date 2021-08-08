@@ -138,9 +138,9 @@ var NAVTREEINDEX =
 "d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14",
 "d8/dab/classstatistics_1_1stats__computer2.html",
 "da/d4b/depth__first__search__with__stack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57",
-"dd/d12/vigenere__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002",
-"df/d2c/elliptic__curve__key__exchange_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"db/d82/classlarge__number.html#aeb22d2aae39d1b1e0bd39c7f47b333eb",
+"dd/d0d/insertion__sort_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9",
+"df/d10/namespacepancake__sort.html",
 ""
 ];
 

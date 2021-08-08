@@ -35,6 +35,10 @@ var namespaces_dup =
       [ "subset_sum", null, [
         [ "number_of_subsets", "d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99", null ]
       ] ],
+      [ "wildcard_matching", null, [
+        [ "wildcard_matching", "dc/d14/wildcard__matching_8cpp.html#a182d0f016b34e40f86be8d6df05dc9ac", null ],
+        [ "dpTable", "dc/d14/wildcard__matching_8cpp.html#a597f5c6e23f88d339c80eb83f8a6e8ff", null ]
+      ] ],
       [ "graphColoring", "db/dc0/namespacebacktracking.html#a29360ddb1bad75caa61ec895b6e71986", null ],
       [ "isPossible", "db/dc0/namespacebacktracking.html#a80af16e57cfb6aaab2bf1da4c4db3308", null ],
       [ "isSafe", "db/dc0/namespacebacktracking.html#a5a6c3c2b065ea1c07adf2f638f8efc43", null ],
@@ -247,6 +251,7 @@ var namespaces_dup =
     [ "vigenere", "d6/da2/namespacevigenere.html", null ],
     [ "wave_sort", "d9/d21/namespacewave__sort.html", null ],
     [ "wiggle_sort", "d0/d52/namespacewiggle__sort.html", null ],
+    [ "wildcard_matching", "db/d03/namespacewildcard__matching.html", null ],
     [ "word_break", "d6/d53/namespaceword__break.html", null ],
     [ "XOR", "d7/d47/namespace_x_o_r.html", null ]
 ];
