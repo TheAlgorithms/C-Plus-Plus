@@ -63,6 +63,7 @@ var namespaces_dup =
     [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
     [ "depth_first_search", "d8/da7/namespacedepth__first__search.html", null ],
     [ "disjoint_union", "de/db4/namespacedisjoint__union.html", null ],
+    [ "divide_and_conquer", "dd/dba/namespacedivide__and__conquer.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
       [ "abbreviation", null, [
@@ -116,6 +117,7 @@ var namespaces_dup =
     [ "iterative_tree_traversals", "dd/d73/namespaceiterative__tree__traversals.html", null ],
     [ "jarvis", "d5/da7/namespacejarvis.html", null ],
     [ "kadane", "d6/d74/namespacekadane.html", null ],
+    [ "karatsuba_algorithm", "de/d41/namespacekaratsuba__algorithm.html", null ],
     [ "Knapsack", "d7/daf/namespace_knapsack.html", null ],
     [ "layers", "d5/d2c/namespacelayers.html", null ],
     [ "linear_algebra", "d3/d78/namespacelinear__algebra.html", null ],

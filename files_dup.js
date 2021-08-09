@@ -4,6 +4,7 @@ var files_dup =
     [ "bit_manipulation", "dir_f3c4fbc4e901afa0a54d0623c5574aa7.html", "dir_f3c4fbc4e901afa0a54d0623c5574aa7" ],
     [ "ciphers", "dir_4d6e05837bf820fb089a8a8cdf2f42b7.html", "dir_4d6e05837bf820fb089a8a8cdf2f42b7" ],
     [ "data_structures", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc.html", "dir_2e746e9d06bf2d8ff842208bcc6ebcfc" ],
+    [ "divide_and_conquer", "dir_93bc990c5cceb745f78af6949e9ef947.html", "dir_93bc990c5cceb745f78af6949e9ef947" ],
     [ "dynamic_programming", "dir_8a20dd5bfd5341a725342bf72b6b686f.html", "dir_8a20dd5bfd5341a725342bf72b6b686f" ],
     [ "geometry", "dir_e3380d2178455503f266746fb14246a5.html", "dir_e3380d2178455503f266746fb14246a5" ],
     [ "graph", "dir_12552d7fa429bf94a2e32e5cf39f7e69.html", "dir_12552d7fa429bf94a2e32e5cf39f7e69" ],
