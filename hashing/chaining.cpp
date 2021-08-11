@@ -102,7 +102,7 @@ class hash_chain {
         std::shared_ptr<Node> temp = head[h];
         if (!head[h]) {
             // index does not exist!
-            std::cout << "Element not found";
+            std::cout << "Element not found"<<endl;
             return false;
         }
 
@@ -110,19 +110,19 @@ class hash_chain {
         while (temp->data != x && temp->next) temp = temp->next;
 
         if (temp->next) {
-            std::cout << "Element found";
+            std::cout << "Element found"<<endl;
             return true;
         }
 
         // implicit else condition
         // i.e., temp->next == nullptr
         if (temp->data == x) {
-            std::cout << "Element found";
+            std::cout << "Element found"<<endl;
             return true;
         }
 
         // further implicit else condition
-        std::cout << "Element not found";
+        std::cout << "Element not found"<<endl;
         return false;
     }
 };
@@ -132,7 +132,7 @@ class hash_chain {
  */
 int main() {
     int c = 0, x = 0, mod = 0, h = 0;
-    std::cout << "Enter the size of Hash Table. = ";
+    std::cout << "Enter the size of Hash Table. = "<<endl;
     std::cin >> mod;
 
     hash_chain mychain(mod);
@@ -149,22 +149,22 @@ int main() {
         std::cin >> c;
         switch (c) {
             case 1:
-                std::cout << "Enter element to add = ";
+                std::cout << "Enter element to add = "<<endl;
                 std::cin >> x;
                 h = mychain.hash(x);
                 h = std::abs(h);
                 mychain.add(x, h);
                 break;
             case 2:
-                std::cout << "Enter element to search = ";
+                std::cout << "Enter element to search = "<<endl;
                 std::cin >> x;
                 h = mychain.hash(x);
                 mychain.find(x, h);
                 break;
             case 3:
-                std::cout << "Enter element to generate hash = ";
+                std::cout << "Enter element to generate hash = "<<endl;
                 std::cin >> x;
-                std::cout << "Hash of " << x << " is = " << mychain.hash(x);
+                std::cout << "Hash of " << x << " is = " << mychain.hash(x)<<endl;
                 break;
             case 4:
                 mychain.display();
