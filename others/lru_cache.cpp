@@ -6,7 +6,7 @@
  * Lru is a part of cache algorithms (also frequently called cache replacement
  * algorithms or cache replacement policies).
  *
- * ### Logic:
+ * ### Logic
  *      * Discards the least recently used items first.
  *      * This algorithm requires keeping track of what was used when, which is
  * expensive if one wants to make sure the algorithm always discards the least
