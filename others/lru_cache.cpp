@@ -68,7 +68,7 @@ class LRUCache {
     int hits = 0;  ///< Total number of hits, or total number of times a page
     ///< was found in cache.
     int pageFault = 0;  ///< Total number of miss/page fault, or total number of
-    ///< times a page was not found in cache
+                        ///< times a page was not found in cache
 
  public:
     /**
