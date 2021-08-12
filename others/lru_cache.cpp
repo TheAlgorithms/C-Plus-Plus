@@ -17,7 +17,7 @@
  *      * In such an implementation, every time a cache-line is used, the age of
  * all other cache-lines changes
  *
- * ### Algorithm explanation:
+ * ### Algorithm explanation
  *      For a cache of page frame x:
  *          * Check if the page is present in cache.
  *          * If not present, then check is the cache is full or not:
