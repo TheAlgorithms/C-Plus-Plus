@@ -45,10 +45,10 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  * */
 
-#include <list>  /// for std::list
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO Operations
-#include <unordered_map> /// for std::unordered_map
+#include <cassert>        /// for assert
+#include <iostream>       /// for IO Operations
+#include <list>           /// for std::list
+#include <unordered_map>  /// for std::unordered_map
 
 /**
  * @namespace lru_cache
@@ -59,75 +59,75 @@ namespace lru_cache {
 /**
  * @brief LRU cache class
  */
-    class LRUCache {
-        int pageFrame;         ///< Page frame, or total size of the cache.
-        std::list<int> cache;  ///< Cache linked list (using the STL)
-        std::unordered_map<int, std::list<int>::iterator>
-                pageMap;  ///< Hash map containing pages and their addresses
+class LRUCache {
+    int pageFrame;         ///< Page frame, or total size of the cache.
+    std::list<int> cache;  ///< Cache linked list (using the STL)
+    std::unordered_map<int, std::list<int>::iterator>
+        pageMap;  ///< Hash map containing pages and their addresses
 
-        int hits = 0;  ///< Total number of hits, or total number of times a page
-        ///< was found in cache.
-        int pageFault = 0;  ///< Total number of miss/page fault, or total number of
-        ///< times a page was not found in cache
+    int hits = 0;  ///< Total number of hits, or total number of times a page
+    ///< was found in cache.
+    int pageFault = 0;  ///< Total number of miss/page fault, or total number of
+    ///< times a page was not found in cache
 
-    public:
-        /**
-         * @brief Constructor, Initialize thee LRU class with page frame.
-         * @param pf Page frame or total size of cache.
-         * */
-        explicit LRUCache(int pf) { pageFrame = pf; }
+ public:
+    /**
+     * @brief Constructor, Initialize thee LRU class with page frame.
+     * @param pf Page frame or total size of cache.
+     * */
+    explicit LRUCache(int pf) { pageFrame = pf; }
 
-        /**
-         * @brief Refer to a page, or request a page from memory.
-         * @param page The page that you are referring to.
-         * @returns void
-         * */
-        void refer(int page) {
-            // If the page requested not in cache.
-            if (pageMap.find(page) == pageMap.end()) {
-                pageFault++;  ///< Increase the page fault by one.
+    /**
+     * @brief Refer to a page, or request a page from memory.
+     * @param page The page that you are referring to.
+     * @returns void
+     * */
+    void refer(int page) {
+        // If the page requested not in cache.
+        if (pageMap.find(page) == pageMap.end()) {
+            pageFault++;  ///< Increase the page fault by one.
 
-                // Check if the cache is full
-                if (cache.size() == pageFrame) {
-                    // delete the last page from cache
-                    int lastPage = cache.back();
-                    cache.pop_back();
-                    pageMap.erase(lastPage);
-                }
+            // Check if the cache is full
+            if (cache.size() == pageFrame) {
+                // delete the last page from cache
+                int lastPage = cache.back();
+                cache.pop_back();
+                pageMap.erase(lastPage);
             }
-                // The requested page is in the cache
-            else {
-                hits++;
-                // present in cache, erase from current position to bring in front
-                cache.erase(pageMap[page]);
-            }
-            // Push it in the front of the cache and update the page reference in
-            // page map.
-            cache.push_front(page);
-            pageMap[page] = cache.begin();
         }
-
-        /**
-         * @brief A function to display the current cache
-         * @returns Void
-         * */
-        void display() {
-            for (int &it : cache) {
-                std::cout << it << " ";
-            }
-            std::cout << std::endl;
+        // The requested page is in the cache
+        else {
+            hits++;
+            // present in cache, erase from current position to bring in front
+            cache.erase(pageMap[page]);
         }
-        /**
-         * @brief A function to get page hits
-         * @returns int
-         * */
-        int getHits() const { return hits; }
-        /**
-         * @brief A function to get page fault
-         * @returns int
-         * */
-        int getPageFault() const { return pageFault; }
-    };
+        // Push it in the front of the cache and update the page reference in
+        // page map.
+        cache.push_front(page);
+        pageMap[page] = cache.begin();
+    }
+
+    /**
+     * @brief A function to display the current cache
+     * @returns Void
+     * */
+    void display() {
+        for (int &it : cache) {
+            std::cout << it << " ";
+        }
+        std::cout << std::endl;
+    }
+    /**
+     * @brief A function to get page hits
+     * @returns int
+     * */
+    int getHits() const { return hits; }
+    /**
+     * @brief A function to get page fault
+     * @returns int
+     * */
+    int getPageFault() const { return pageFault; }
+};
 
 }  // namespace lru_cache
 
@@ -137,11 +137,11 @@ namespace lru_tests {
  * @tparam T Type of the given message.
  * @returns void
  * */
-    template <typename T>
-    void log(T msg) {
-        // It's just to avoid writing cout and endl
-        std::cout << "[TESTS] : ---> " << msg << std::endl;
-    }
+template <typename T>
+void log(T msg) {
+    // It's just to avoid writing cout and endl
+    std::cout << "[TESTS] : ---> " << msg << std::endl;
+}
 
 /**
  * @brief A simple test case
@@ -149,26 +149,26 @@ namespace lru_tests {
  * miss
  * @returns void
  * */
-    static void test_1() {
-        int expected_hits = 2;
-        int expected_pageFault = 4;
+static void test_1() {
+    int expected_hits = 2;
+    int expected_pageFault = 4;
 
-        log("Running Test-1...");
+    log("Running Test-1...");
 
-        lru_cache::LRUCache cache(4);
-        cache.refer(1);
-        cache.refer(2);
-        cache.refer(5);
-        cache.refer(1);
-        cache.refer(4);
-        cache.refer(5);
+    lru_cache::LRUCache cache(4);
+    cache.refer(1);
+    cache.refer(2);
+    cache.refer(5);
+    cache.refer(1);
+    cache.refer(4);
+    cache.refer(5);
 
-        log("Checking assert statement...");
-        assert(cache.getHits() == expected_hits &&
-               cache.getPageFault() == expected_pageFault);
-        log("Assert successful!");
-        log("Test-1 complete!");
-    }
+    log("Checking assert statement...");
+    assert(cache.getHits() == expected_hits &&
+           cache.getPageFault() == expected_pageFault);
+    log("Assert successful!");
+    log("Test-1 complete!");
+}
 
 /**
  * @brief A test case contains hits more than cache size
@@ -176,26 +176,26 @@ namespace lru_tests {
  * miss
  * @returns void
  * */
-    static void test_2() {
-        int expected_hits = 4;
-        int expected_pageFault = 2;
+static void test_2() {
+    int expected_hits = 4;
+    int expected_pageFault = 2;
 
-        log("Running Test-2...");
+    log("Running Test-2...");
 
-        lru_cache::LRUCache cache(4);
-        cache.refer(1);
-        cache.refer(1);
-        cache.refer(1);
-        cache.refer(1);
-        cache.refer(1);
-        cache.refer(5);
+    lru_cache::LRUCache cache(4);
+    cache.refer(1);
+    cache.refer(1);
+    cache.refer(1);
+    cache.refer(1);
+    cache.refer(1);
+    cache.refer(5);
 
-        log("Checking assert statement...");
-        assert(cache.getHits() == expected_hits &&
-               cache.getPageFault() == expected_pageFault);
-        log("Assert successful!");
-        log("Test-2 complete!");
-    }
+    log("Checking assert statement...");
+    assert(cache.getHits() == expected_hits &&
+           cache.getPageFault() == expected_pageFault);
+    log("Assert successful!");
+    log("Test-2 complete!");
+}
 
 /**
  * @brief A simple test case
@@ -203,38 +203,38 @@ namespace lru_tests {
  * miss
  * @returns void
  * */
-    static void test_3() {
-        int expected_hits = 1;
-        int expected_pageFault = 5;
+static void test_3() {
+    int expected_hits = 1;
+    int expected_pageFault = 5;
 
-        log("Running Test-3...");
+    log("Running Test-3...");
 
-        lru_cache::LRUCache cache(4);
-        cache.refer(1);
-        cache.refer(2);
-        cache.refer(3);
-        cache.refer(4);
-        cache.refer(5);
-        cache.refer(5);
+    lru_cache::LRUCache cache(4);
+    cache.refer(1);
+    cache.refer(2);
+    cache.refer(3);
+    cache.refer(4);
+    cache.refer(5);
+    cache.refer(5);
 
-        log("Checking assert statement...");
-        assert(cache.getHits() == expected_hits &&
-               cache.getPageFault() == expected_pageFault);
-        log("Assert successful!");
-        log("Test-3 complete!");
-    }
+    log("Checking assert statement...");
+    assert(cache.getHits() == expected_hits &&
+           cache.getPageFault() == expected_pageFault);
+    log("Assert successful!");
+    log("Test-3 complete!");
+}
 
 /**
  * @brief A function to invoke all test cases
  * @returns void
  * */
-    static void run_tests() {
-        test_1();
-        test_2();
-        test_3();
-        log("");
-        log("TESTS COMPLETED!");
-    }
+static void run_tests() {
+    test_1();
+    test_2();
+    test_3();
+    log("");
+    log("TESTS COMPLETED!");
+}
 }  // namespace lru_tests
 
 /**
