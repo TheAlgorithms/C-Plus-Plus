@@ -134,8 +134,8 @@ class LRUCache {
     int getPageFault() const { return pageFault; }
 };
 
-}  // namespace others
 }  // namespace lru_cache
+}  // namespace others
 
 namespace lru_tests {
 /**
