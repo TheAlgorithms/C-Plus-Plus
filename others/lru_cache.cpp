@@ -245,8 +245,6 @@ static void run_tests() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
 int main() {
