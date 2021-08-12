@@ -188,7 +188,7 @@ static void test_2() {
 
     log("Running Test-2...");
 
-    lru_cache::LRUCache cache(4);
+    others::lru_cache::LRUCache cache(4);
     cache.refer(1);
     cache.refer(1);
     cache.refer(1);
