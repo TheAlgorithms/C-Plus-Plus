@@ -46,8 +46,9 @@
  * */
 
 #include <bits/stdc++.h>  /// for std::list
-#include <cassert>       /// for assert
-#include <iostream>     /// for IO Operations
+
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO Operations
 
 /**
  * @namespace lru_cache
