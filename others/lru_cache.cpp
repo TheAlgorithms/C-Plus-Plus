@@ -51,6 +51,11 @@
 #include <unordered_map>  /// for std::unordered_map
 
 /**
+ * @namespace others
+ * @brief Other algorithms
+ */
+namespace others {
+/**
  * @namespace lru_cache
  * @brief Implementation of LRU caching algorithm
  */
