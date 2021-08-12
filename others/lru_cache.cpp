@@ -53,10 +53,10 @@ namespace lru_cache {
         std::list<int> cache;  ///< Cache linked list (using the STL)
         std::unordered_map<int, std::list<int>::iterator> pageMap;  ///< Hash map containing pages and their addresses
 
-    public:
         int hits = 0;  ///< Total number of hits, or total number of times a page was found in cache.
         int pageFault = 0;  ///< Total number of miss/page fault, or total number of times a page was not found in cache
 
+    public:
 /**
  * @brief Constructor, Initialize thee LRU class with page frame.
  * @param pf Page frame or total size of cache.
@@ -105,8 +105,24 @@ namespace lru_cache {
             }
             std::cout << std::endl;
         }
+/**
+ * @brief A function to get page hits
+ * @returns int
+ * */
+        int getHits() const{
+            return hits;
+        }
+/**
+ * @brief A function to get page fault
+ * @returns int
+ * */
+        int getPageFault() const{
+            return pageFault;
+        }
+
     };
-}  // lru_cache
+
+    }  // namespace lru_cache
 
 namespace lru_tests {
 /**
@@ -140,7 +156,7 @@ namespace lru_tests {
         cache.refer(5);
 
         log("Checking assert statement...");
-        assert(cache.hits == expected_hits && cache.pageFault == expected_pageFault);
+        assert(cache.getHits() == expected_hits && cache.getPageFault() == expected_pageFault);
         log("Assert successful!");
         log("Test-1 complete!");
     }
@@ -165,7 +181,7 @@ namespace lru_tests {
         cache.refer(5);
 
         log("Checking assert statement...");
-        assert(cache.hits == expected_hits && cache.pageFault == expected_pageFault);
+        assert(cache.getHits() == expected_hits && cache.getPageFault() == expected_pageFault);
         log("Assert successful!");
         log("Test-2 complete!");
     }
@@ -190,7 +206,7 @@ namespace lru_tests {
         cache.refer(5);
 
         log("Checking assert statement...");
-        assert(cache.hits == expected_hits && cache.pageFault == expected_pageFault);
+        assert(cache.getHits() == expected_hits && cache.getPageFault() == expected_pageFault);
         log("Assert successful!");
         log("Test-3 complete!");
     }
@@ -228,7 +244,7 @@ int main() {
 
     cache.display();
 
-    std::cout<<"Hits: "<< cache.hits << " Miss: " << cache.pageFault;
+    std::cout<<"Hits: "<< cache.getHits() << " Miss: " << cache.getPageFault();
     return 0;
 }
 
