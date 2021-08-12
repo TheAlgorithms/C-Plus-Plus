@@ -11,9 +11,11 @@
   * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
   * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
+  * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
+  * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
@@ -63,6 +65,9 @@
   * [Trie Modern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_modern.cpp)
   * [Trie Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_tree.cpp)
   * [Trie Using Hashmap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_using_hashmap.cpp)
+
+## Divide And Conquer
+  * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
 
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/0_1_knapsack.cpp)
@@ -180,6 +185,7 @@
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
   * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
+  * [N Bonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_bonacci.cpp)
   * [N Choose R](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_choose_r.cpp)
   * [Ncr Modulo P](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/ncr_modulo_p.cpp)
   * [Number Of Positive Divisors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/number_of_positive_divisors.cpp)
