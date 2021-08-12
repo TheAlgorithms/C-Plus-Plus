@@ -251,7 +251,7 @@ int main() {
     lru_tests::run_tests();
 
     // Usage
-    lru_cache::LRUCache cache(4);
+    others::lru_cache::LRUCache cache(4);
     cache.refer(1);
     cache.refer(2);
     cache.refer(3);
