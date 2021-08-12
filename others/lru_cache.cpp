@@ -45,10 +45,9 @@
  * @author [Nitin Sharma](https://github.com/foo290)
  * */
 
-#include <bits/stdc++.h>  /// for std::vector
-
-#include <cassert>   /// for IO Operations
-#include <iostream>  /// for assert
+#include <bits/stdc++.h>  /// for std::list
+#include <cassert>       /// for assert
+#include <iostream>     /// for IO Operations
 
 /**
  * @namespace lru_cache
