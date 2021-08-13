@@ -1,8 +1,7 @@
 // https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 // C++ program to sort an array
 // with 0, 1 and 2 in a single pass(DNF sort)
-#include <bits/stdc++.h>
-         using namespace std;
+#include <iostream>
 
 // Function to sort the input array,
 // the array is assumed
@@ -18,7 +17,7 @@ void sort012(int a[], int arr_size) {
         switch (a[mid]) {
             // If the element is 0
             case 0:
-                swap(a[lo++], a[mid++]);
+                std::swap(a[lo++], a[mid++]);
                 break;
 
             // If the element is 1 .
@@ -28,7 +27,7 @@ void sort012(int a[], int arr_size) {
 
             // If the element is 2
             case 2:
-                swap(a[mid], a[hi--]);
+                std::swap(a[mid], a[hi--]);
                 break;
         }
     }
@@ -37,7 +36,8 @@ void sort012(int a[], int arr_size) {
 // Function to print array arr[]
 void printArray(int arr[], int arr_size) {
     // Iterate and print every element
-    for (int i = 0; i < arr_size; i++) cout << arr[i] << " ";
+    for (int i = 0; i < arr_size; i++) 
+        std::cout << arr[i] << " ";
 }
 
 // Driver Code
@@ -47,11 +47,9 @@ int main() {
 
     sort012(arr, n);
 
-    cout << "array after segregation ";
+    std::cout << "array after segregation ";
 
     printArray(arr, n);
 
     return 0;
 }
-
- 
