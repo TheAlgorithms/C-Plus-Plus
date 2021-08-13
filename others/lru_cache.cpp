@@ -30,7 +30,7 @@
  *  Every time a requested page is  not found in cache, that is a miss or page
  * fault, and if the page is present in cache, then its a hit.
  *
- * ## Data Structure used:
+ * ## Data Structure used
  *  * In the algorithm below we used two different data structure, one is linked
  * list and other one is a hash map
  *  * The linked list is used to contain the pages and the hash map contains the
