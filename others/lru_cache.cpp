@@ -57,7 +57,8 @@
 namespace others {
 /**
  * @namespace lru_cache
- * @brief Implementation of the [LRU caching algorithm](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU))
+ * @brief Implementation of the [LRU caching
+ * algorithm](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU))
  */
 namespace lru_cache {
 /**
@@ -72,9 +73,8 @@ class LRUCache {
     uint64_t hits =
         0;  ///< Total number of hits, or total number of times a page
     ///< was found in cache.
-    uint64_t pageFault =
-        0;  ///< Total number of miss/page fault, or total number of
-            ///< times a page was not found in cache
+    uint64_t pageFault = 0;  ///< Total number of miss/page fault, or total
+                             ///< number of times a page was not found in cache
 
  public:
     /**
