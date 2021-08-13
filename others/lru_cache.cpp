@@ -75,7 +75,7 @@ class LRUCache {
     ///< was found in cache.
     uint64_t pageFault =
         0;  ///< Total number of miss/page fault, or total number of
-    ///< times a page was not found in cache
+            ///< times a page was not found in cache
 
  public:
     /**
