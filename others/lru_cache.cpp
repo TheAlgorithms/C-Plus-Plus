@@ -57,10 +57,9 @@
 namespace others {
 /**
  * @namespace lru_cache
- * @brief Implementation of LRU caching algorithm
+ * @brief Implementation of the [LRU caching algorithm](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU))
  */
 namespace lru_cache {
-
 /**
  * @brief LRU cache class
  */
