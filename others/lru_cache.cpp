@@ -263,6 +263,6 @@ int main() {
     cache.display();
 
     std::cout << "Hits: " << cache.getHits()
-              << " Miss: " << cache.getPageFault();
+              << " Miss: " << cache.getPageFault() << std::endl;
     return 0;
 }
