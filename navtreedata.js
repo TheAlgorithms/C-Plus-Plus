@@ -129,20 +129,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"cpp/io/c/getchar.html",
-"cpp/string/byte/toupper.html",
-"d1/d83/classuint256__t.html#a02616a4a46727b4c158b2b90de8c75c3",
-"d2/d5a/subset__sum_8cpp.html",
-"d4/d68/qr__decompose_8h.html#ad16da2183db22378435042f26af43d5f",
-"d5/d8a/trie__using__hashmap_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d6/dce/rabin__karp_8cpp.html#a8fb0bc932ba8b582c9f4c71338d050f8",
-"d8/d89/namespacelinear__probing.html#a2de838f453df67b72411eefb7faf833c",
-"d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03",
-"db/d0d/prime__factorization_8cpp.html",
-"dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3",
-"de/d6a/knuth__morris__pratt_8cpp.html",
-"globals.html"
+"annotated.html",
+"cpp/iterator/distance.html",
+"cpp/thread/lock.html",
+"d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
+"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a832072498abeaa52ad43c4fc99cba248",
+"d4/dd2/namespacequadratic__probing.html#a90f9d8a71e3f148b65bcc0c1c8a49c70",
+"d5/ddb/bogo__sort_8cpp.html#a4c5bd73ffb6082f63dc57d8dcc76794f",
+"d7/d6a/bisection__method_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70",
+"d8/da7/namespacedepth__first__search.html",
+"da/d4b/depth__first__search__with__stack_8cpp.html#ae198aeaad22ccd56712b7380bd62f777",
+"db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93",
+"dd/d0c/hamiltons__cycle_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",
+"de/dde/lowest__common__ancestor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+""
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
