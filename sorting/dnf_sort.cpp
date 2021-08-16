@@ -66,30 +66,30 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
 static void test() {
     // Test 1
     // [1, 0, 2, 1] return [0, 1, 1, 2]
-    std::vector<uint32_t> array1 = {0, 1, 1, 2};
+    std::vector<uint64_t> array1 = {0, 1, 1, 2};
     std::cout << "Test 1... ";
-    std::vector<uint32_t> arr1 = sorting::dnf_sort::dnfSort(array1);
+    std::vector<uint64_t> arr1 = sorting::dnf_sort::dnfSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
     std::cout << "passed" << std::endl;
     // Test 2
     // [1, 0, 0, 1, 1, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2]
-    std::vector<uint32_t> array2 = {1, 0, 0, 1, 1, 0, 2, 1};
+    std::vector<uint64_t> array2 = {1, 0, 0, 1, 1, 0, 2, 1};
     std::cout << "Test 2... ";
-    std::vector<uint32_t> arr2 = sorting::dnf_sort::dnfSort(array2);
+    std::vector<uint64_t> arr2 = sorting::dnf_sort::dnfSort(array2);
     assert(std::is_sorted(std::begin(arr2), std::end(arr2)));
     std::cout << "passed" << std::endl;
     // Test 3
     // [1, 1, 0, 0, 1, 2, 2, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]
-    std::vector<uint32_t> array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};
+    std::vector<uint64_t> array3 = {1, 1, 0, 0, 1, 2, 2, 0, 2, 1};
     std::cout << "Test 3... ";
-    std::vector<uint32_t> arr3 = sorting::dnf_sort::dnfSort(array3);
+    std::vector<uint64_t> arr3 = sorting::dnf_sort::dnfSort(array3);
     assert(std::is_sorted(std::begin(arr3), std::end(arr3)));
     std::cout << "passed" << std::endl;
     // Test 4
     // [2, 2, 2, 0, 0, 1, 1] return [0, 0, 1, 1, 2, 2, 2]
-    std::vector<uint32_t> array4 = {2, 2, 2, 0, 0, 1, 1};
+    std::vector<uint64_t> array4 = {2, 2, 2, 0, 0, 1, 1};
     std::cout << "Test 4... ";
-    std::vector<uint32_t> arr4 = sorting::dnf_sort::dnfSort(array4);
+    std::vector<uint64_t> arr4 = sorting::dnf_sort::dnfSort(array4);
     assert(std::is_sorted(std::begin(arr4), std::end(arr4)));
     std::cout << "passed" << std::endl;
 }
