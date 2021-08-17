@@ -20,8 +20,8 @@
 namespace sorting {
 /**
  * @namespace dnf_sort
- * @brief Functions for [DNF
- * sort](https://en.wikipedia.org/wiki/Dutch_national_flag_problem)
+ * @brief Functions for the [DNF
+ * sort](https://en.wikipedia.org/wiki/Dutch_national_flag_problem) implementation
  */
 namespace dnf_sort {
 /**
