@@ -63,6 +63,10 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
 }// namespace dnf_sort
 }// namespace sorting
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     // Test 1
     // [1, 0, 2, 1] return [0, 1, 1, 2]
