@@ -60,8 +60,8 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
     }
     return arr;
 }
-}// namespace dnf_sort
-}// namespace sorting
+}  // namespace dnf_sort
+}  // namespace sorting
 
 /**
  * @brief Self-test implementations
