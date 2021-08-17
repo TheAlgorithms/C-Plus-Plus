@@ -6,7 +6,7 @@
  * C++ program to sort an array with 0, 1 and 2 in a single pass(DNF sort).
  * Since one traversal of the array is there hence it works in O(n) time
  * complexity.
- * @author [GeeksForGeeks](https://www.geeksforgeeks.org/)
+ * @author [Sujal Gupta](https://github.com/heysujal)
  */
 
 #include <algorithm>  /// for std::is_sorted
