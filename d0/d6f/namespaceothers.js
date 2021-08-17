@@ -4,6 +4,9 @@ var namespaceothers =
       [ "Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node" ],
       [ "BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree" ]
     ] ],
+    [ "lru_cache", null, [
+      [ "LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache" ]
+    ] ],
     [ "postfix_expression", null, [
       [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ],
       [ "evaluate", "d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338", null ],

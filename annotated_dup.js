@@ -83,6 +83,9 @@ var annotated_dup =
         [ "Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node" ],
         [ "BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree" ]
       ] ],
+      [ "lru_cache", null, [
+        [ "LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache" ]
+      ] ],
       [ "postfix_expression", null, [
         [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ]
       ] ]
@@ -133,8 +136,8 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", "d5/d29/struct_min_heap_node" ],
     [ "mst", "d1/d77/structmst.html", "d1/d77/structmst" ],
-    [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
+    [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],

@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md84", null ],
-      [ "Features", "index.html#autotoc_md85", null ],
-      [ "Documentation", "index.html#autotoc_md86", null ],
-      [ "Contributions", "index.html#autotoc_md87", null ]
+      [ "Overview", "index.html#autotoc_md87", null ],
+      [ "Features", "index.html#autotoc_md88", null ],
+      [ "Documentation", "index.html#autotoc_md89", null ],
+      [ "Contributions", "index.html#autotoc_md90", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -134,15 +134,15 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
 "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a832072498abeaa52ad43c4fc99cba248",
-"d4/dd2/namespacequadratic__probing.html#a90f9d8a71e3f148b65bcc0c1c8a49c70",
-"d5/ddb/bogo__sort_8cpp.html#a4c5bd73ffb6082f63dc57d8dcc76794f",
-"d7/d6a/bisection__method_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70",
-"d8/da7/namespacedepth__first__search.html",
-"da/d4b/depth__first__search__with__stack_8cpp.html#ae198aeaad22ccd56712b7380bd62f777",
-"db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93",
-"dd/d0c/hamiltons__cycle_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",
-"de/dde/lowest__common__ancestor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-""
+"d4/dd2/namespacequadratic__probing.html",
+"d5/dab/structdata__structures_1_1list__array_1_1list.html#ae5c15d93819c4e437ebb7a1b41f2d594",
+"d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54",
+"d8/d95/vector__ops_8hpp.html#abe6b58ec16abe0f6f8ac195e04aa8abd",
+"da/d41/uint128__t_8hpp.html#a1b359e53da68ae18fe293dcb3c4d7f9f",
+"db/d71/quadratic__probing__hash__table_8cpp.html#a8f877db9460c8e472719908b9a018ffb",
+"dc/dc5/paranthesis__matching_8cpp.html#a392fb874e547e582e9c66a08a1f23326",
+"de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742",
+"globals_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
