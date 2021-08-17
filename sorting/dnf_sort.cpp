@@ -68,7 +68,7 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
  * @returns void
  */
 static void test() {
-    // Test 1
+    // 1st test
     // [1, 0, 2, 1] return [0, 1, 1, 2]
     std::vector<uint64_t> array1 = {0, 1, 1, 2};
     std::cout << "Test 1... ";
