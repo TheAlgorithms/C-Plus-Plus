@@ -24,7 +24,7 @@ class hash_chain {
     };
 
     std::vector<std::shared_ptr<Node>> head;  ///< array of nodes
-    int _mod;                                        ///< modulus of the class
+    int _mod;                                 ///< modulus of the class
 
  public:
     /**
@@ -164,7 +164,8 @@ int main() {
             case 3:
                 std::cout << "Enter element to generate hash = " << std::endl;
                 std::cin >> x;
-                std::cout << "Hash of " << x << " is = " << mychain.hash(x) << std::endl;
+                std::cout << "Hash of " << x << " is = " << mychain.hash(x)
+                          << std::endl;
                 break;
             case 4:
                 mychain.display();
