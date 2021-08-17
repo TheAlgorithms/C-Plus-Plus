@@ -75,7 +75,7 @@ static void test() {
     std::vector<uint64_t> arr1 = sorting::dnf_sort::dnfSort(array1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
     std::cout << "passed" << std::endl;
-    // Test 2
+    // 2nd test
     // [1, 0, 0, 1, 1, 0, 2, 1] return [0, 0, 0, 1, 1, 1, 1, 2]
     std::vector<uint64_t> array2 = {1, 0, 0, 1, 1, 0, 2, 1};
     std::cout << "Test 2... ";
