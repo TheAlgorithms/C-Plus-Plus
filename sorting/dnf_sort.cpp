@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Implementation of DNF
- * sort(https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)
+ * @brief Implementation of the [DNF
+ * sort](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/) implementation
  * @details
  * C++ program to sort an array with 0, 1 and 2 in a single pass(DNF sort).
  * Since one traversal of the array is there hence it works in O(n) time
