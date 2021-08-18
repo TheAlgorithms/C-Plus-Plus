@@ -13,6 +13,7 @@
 #include <cassert>    /// for assert
 #include <iostream>   /// for std::swap and io operations
 #include <vector>     /// for std::vector
+
 /**
  * @namespace sorting
  * @breif Sorting algorithms
