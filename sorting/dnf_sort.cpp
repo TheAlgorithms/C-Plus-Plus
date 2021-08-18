@@ -35,9 +35,9 @@ namespace dnf_sort {
 template <typename T>
 std::vector<T> dnfSort(const std::vector<T> &in_arr) {
     std::vector<T> arr(in_arr);
-    int lo = 0;
-    int hi = arr.size() - 1;
-    int mid = 0;
+    uint64_t lo = 0;
+    uint64_t hi = arr.size() - 1;
+    uint64_t mid = 0;
 
     // Iterate till all the elements
     // are sorted
