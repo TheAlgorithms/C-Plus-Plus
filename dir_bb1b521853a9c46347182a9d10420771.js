@@ -5,6 +5,7 @@ var dir_bb1b521853a9c46347182a9d10420771 =
     [ "comb_sort.cpp", "d9/dfd/comb__sort_8cpp.html", "d9/dfd/comb__sort_8cpp" ],
     [ "count_inversions.cpp", "d2/d26/count__inversions_8cpp.html", "d2/d26/count__inversions_8cpp" ],
     [ "cycle_sort.cpp", "de/d07/cycle__sort_8cpp.html", "de/d07/cycle__sort_8cpp" ],
+    [ "dnf_sort.cpp", "d6/d1a/dnf__sort_8cpp.html", "d6/d1a/dnf__sort_8cpp" ],
     [ "gnome_sort.cpp", "d2/d21/gnome__sort_8cpp.html", "d2/d21/gnome__sort_8cpp" ],
     [ "heap_sort.cpp", "d2/d52/heap__sort_8cpp.html", "d2/d52/heap__sort_8cpp" ],
     [ "insertion_sort.cpp", "dd/d0d/insertion__sort_8cpp.html", "dd/d0d/insertion__sort_8cpp" ],

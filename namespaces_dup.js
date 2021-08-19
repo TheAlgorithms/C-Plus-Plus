@@ -64,6 +64,7 @@ var namespaces_dup =
     [ "depth_first_search", "d8/da7/namespacedepth__first__search.html", null ],
     [ "disjoint_union", "de/db4/namespacedisjoint__union.html", null ],
     [ "divide_and_conquer", "dd/dba/namespacedivide__and__conquer.html", null ],
+    [ "dnf_sort", "d9/d75/namespacednf__sort.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
       [ "abbreviation", null, [
@@ -176,6 +177,9 @@ var namespaces_dup =
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
         [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ad0cfe2e54b1d3f9d0ca648265d917c6a", null ]
+      ] ],
+      [ "dnf_sort", null, [
+        [ "dnfSort", "d6/d1a/dnf__sort_8cpp.html#a60688fc307dbb4b71969dfc191e1e67b", null ]
       ] ],
       [ "inversion", null, [
         [ "countInversion", "d2/d26/count__inversions_8cpp.html#a3332498eabf6579ef059c0d0e9f4ec80", null ],
