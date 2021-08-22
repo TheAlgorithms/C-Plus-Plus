@@ -11,9 +11,9 @@
  * @author your name [Kunal Kumar](https://github.com/kunalkumar37)
  */
 
-#include <cassert>   //for assert
-#include <iostream>  //for input output operations
-#include <vector>    //for std::vector
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
 /**
  * @namespace bit_manipulation
