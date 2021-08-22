@@ -1,5 +1,5 @@
 /**
- * @file same_number_of_bits.cpp
+ * @file
  *
  * @brief Implementation to [Next higher number with same number of set
  * bits](https://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
