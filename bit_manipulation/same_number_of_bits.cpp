@@ -57,7 +57,6 @@ std::uint64_t samenumberofbits(uint64_t n) {
  * @brief Self-test implementations
  * @returns void
  */
-
 static void test() {
     // n=1 return 2
     assert(bit_manipulation::same_number_of_bits::samenumberofbits(1) == 2);
