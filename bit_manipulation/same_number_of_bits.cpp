@@ -72,7 +72,6 @@ static void test() {
 
 /**
  * @brief Main function
- *
  * @return 0 on exit
  */
 int main() {
