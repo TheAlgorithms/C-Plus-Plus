@@ -28,7 +28,6 @@ namespace bit_manipulation {
  * bits]
  */
 namespace same_number_of_bits {
-
 /**
  * @brief The main function implements same number of bits
 
