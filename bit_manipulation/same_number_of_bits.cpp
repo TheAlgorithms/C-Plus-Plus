@@ -27,7 +27,6 @@ namespace bit_manipulation {
  * @brief functions for the [Next higher number with the same number of set
  * bits]
  */
-
 namespace same_number_of_bits {
 
 /**
