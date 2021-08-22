@@ -12,7 +12,7 @@
 
 #include<cassert>   //for assert
 #include<iostream>   //for input output operations
-#include<vector>    //fro std::vector
+#include<vector>    //for std::vector
 
 /**
  * @namespace bit_manipulation
