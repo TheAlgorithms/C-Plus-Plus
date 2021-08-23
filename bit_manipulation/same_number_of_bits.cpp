@@ -29,7 +29,6 @@ namespace bit_manipulation {
 namespace same_number_of_bits {
 /**
  * @brief The main function implements same number of bits
-
  * @returns this function returns next higher with same number of set bits as n
  */
 std::uint64_t samenumberofbits(uint64_t n) {
