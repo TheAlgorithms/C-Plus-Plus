@@ -8,7 +8,7 @@
  * 1 bits in it's binary representation.
  *
  *
- * @author your name [Kunal Kumar](https://github.com/kunalkumar37)
+ * @author [Kunal Kumar](https://github.com/kunalkumar37)
  */
 
 #include <cassert>   /// for assert
