@@ -571,7 +571,8 @@ static void test() {
                         }
                     }
                     if (m != first.get_size()) {
-                        ret += abs(m - i) + abs(n - j);
+                        ret += (std::max(m, i) - std::min(m, i)) +
+                               (std::max(n, j) - std::min(n, j));
                     }
                 }
             }
@@ -679,7 +680,8 @@ static void test() {
                         }
                     }
                     if (m != first.get_size()) {
-                        ret += abs(m - i) + abs(n - j);
+                        ret += (std::max(m, i) - std::min(m, i)) +
+                               (std::max(n, j) - std::min(n, j));
                     }
                 }
             }
