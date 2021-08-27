@@ -17,7 +17,7 @@
  * This is the function that calculate Fast inverse square root.
  * The following code is the fast inverse square root implementation from Quake
  * III Arena (Adapted for C++)
- * More info: https://en.wikipedia.org/wiki/Fast_inverse_square_root
+ * More information can be found at [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
  * @tparam T floating type
  * @tparam iterations inverse square root, the greater the number of iterations,
  * the more exact the result will be (1 or 2).
