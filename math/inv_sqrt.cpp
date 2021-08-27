@@ -6,9 +6,9 @@
  * from Quake III Arena (C++ version) and with standard lib (cmath)
  */
 
-#include <cmath>
-#include <iostream>
-#include <type_traits>
+#include <cmath>        /// for `std::sqrt`
+#include <iostream>     /// for `std::cout`
+#include <type_traits>  /// for `static_assert`
 
 #define MagicNBR_32 0x5f3759df
 #define MagicNBR_64 0x5fe6eb50c7b537a9
