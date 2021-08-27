@@ -14,7 +14,7 @@
 #define MagicNBR_64 0x5fe6eb50c7b537a9
 
 /**
- * This is the function that calculate Fast inverse square root.
+ * @brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root implementation from Quake
  * III Arena (Adapted for C++)
  * More information can be found at [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
