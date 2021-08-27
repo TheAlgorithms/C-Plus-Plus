@@ -27,16 +27,17 @@ inline T Fast_InvSqrt(T x) {
                   "T must be floating point type");
     static_assert(iterations == 1 or iterations == 2,
                   "itarations must equal 1 or 2");
-    typedef typename std::conditional<sizeof(T) == 8, std::int64_t,
-                                      std::int32_t>::type Tint;
+    using Tint = typename std::conditional<sizeof(T) == 8, std::int64_t,
+                                           std::int32_t>::type;
     T y = x;
     T x2 = y * 0.5;
     Tint i = *(Tint *)&y;
     i = (sizeof(T) == 8 ? 0x5fe6eb50c7b537a9 : 0x5f3759df) - (i >> 1);
     y = *(T *)&i;
     y = y * (1.5 - (x2 * y * y));
-    if (iterations == 2)
+    if (iterations == 2) {
         y = y * (1.5 - (x2 * y * y));
+    }
     return y;
 }
 
