@@ -44,7 +44,7 @@ inline T Fast_InvSqrt(T x) {
 }
 
 /**
- * This is the function that calculate Fast inverse square root.
+ * @brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root with standard lib (cmath)
  * More info:
  * https://www.linkedin.com/pulse/fast-inverse-square-root-still-armin-kassemi-langroodi
