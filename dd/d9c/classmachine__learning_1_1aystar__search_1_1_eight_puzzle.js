@@ -18,5 +18,5 @@ var classmachine__learning_1_1aystar__search_1_1_eight_puzzle =
     [ "operator==", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915", null ],
     [ "operator<<", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a53237f6f7d19e9601a1e6ba90749a20d", null ],
     [ "board", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a35d8f14ca17218f236c09ff9ad864f9c", null ],
-    [ "moves", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ada9dd16b9aafa97dd15f1e7be8ad586b", null ]
+    [ "moves", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71", null ]
 ];

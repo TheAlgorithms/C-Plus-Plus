@@ -48,18 +48,18 @@
 <path fill="none" stroke="midnightblue" d="M38.41,-48C46.92,-48 57.57,-48 68.54,-48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="68.65,-51.5 78.65,-48 68.65,-44.5 68.65,-51.5"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="../../db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099" target="_top" xlink:title=" ">
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="../../db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-0.5 74,-19.5 185,-19.5 185,-0.5 74,-0.5"/>
 <text text-anchor="middle" x="129.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SieveOfEratosthenes</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node1&#45;&gt;Node6</title>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4" class="edge">
+<title>Node1&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M38.49,-41.48C48.92,-37.81 62.18,-33.14 74,-29 79.63,-27.03 85.6,-24.94 91.43,-22.91"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="92.76,-26.15 101.05,-19.55 90.45,-19.54 92.76,-26.15"/>
 </g>
@@ -78,24 +78,18 @@
 <path fill="none" stroke="midnightblue" d="M180.19,-48C195.48,-48 212.32,-48 227.68,-48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="228.03,-51.5 238.03,-48 228.03,-44.5 228.03,-51.5"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="221,-0.5 221,-19.5 338,-19.5 338,-0.5 221,-0.5"/>
 <text text-anchor="middle" x="279.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
-<title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M167.85,-38.41C187.2,-33.44 211.03,-27.32 231.61,-22.04"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="232.61,-25.4 241.42,-19.52 230.87,-18.62 232.61,-25.4"/>
-</g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge6" class="edge">
-<title>Node6&#45;&gt;Node5</title>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node5&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M185.19,-10C193.38,-10 201.92,-10 210.35,-10"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="210.56,-13.5 220.56,-10 210.56,-6.5 210.56,-13.5"/>
 </g>

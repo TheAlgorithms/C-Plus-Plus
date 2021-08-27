@@ -101,6 +101,12 @@ $(document).ready(function(){initNavTree('da/d70/structmachine__learning_1_1ayst
 
 <p>Struct that handles all the information related to the current state.  
  <a href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for machine_learning::aystar_search::AyStarSearch&lt; Puzzle &gt;::Info:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d9e/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info__coll__graph.svg" width="184" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,9 +138,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab047f7d2fe77b461e454929a5c0e3cbc"><td class="memItemLeft" align="right" valign="top"><a id="ab047f7d2fe77b461e454929a5c0e3cbc"></a>
-Puzzle&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:ab047f7d2fe77b461e454929a5c0e3cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94862762ad167506dcb0cdebf007d04c"><td class="memItemLeft" align="right" valign="top"><a id="a94862762ad167506dcb0cdebf007d04c"></a>
+<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; Puzzle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a94862762ad167506dcb0cdebf007d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331d1070d008a4f9d55775a51013baa3"><td class="memItemLeft" align="right" valign="top"><a id="a331d1070d008a4f9d55775a51013baa3"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = 0</td></tr>
 <tr class="memdesc:a331d1070d008a4f9d55775a51013baa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current state. <br /></td></tr>
@@ -213,8 +219,7 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;: state(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A)) {}</div>
-<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
+<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;: state(std::make_shared&lt;Puzzle&gt;(A)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,9 +274,11 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            : state(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A)), <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(h_value), <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(d) {}</div>
-<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a003a30bb165be50ce503c17df90c128d"><div class="ttname"><a href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">machine_learning::aystar_search::AyStarSearch::Info::depth</a></div><div class="ttdeci">size_t depth</div><div class="ttdoc">stores h score</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:297</div></div>
-<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a331d1070d008a4f9d55775a51013baa3"><div class="ttname"><a href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">machine_learning::aystar_search::AyStarSearch::Info::heuristic_value</a></div><div class="ttdeci">size_t heuristic_value</div><div class="ttdoc">Holds the current state.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:296</div></div>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            : state(std::make_shared&lt;Puzzle&gt;(A)),</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(h_value),</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(d) {}</div>
+<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a003a30bb165be50ce503c17df90c128d"><div class="ttname"><a href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">machine_learning::aystar_search::AyStarSearch::Info::depth</a></div><div class="ttdeci">size_t depth</div><div class="ttdoc">stores h score</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:296</div></div>
+<div class="ttc" id="astructmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info_html_a331d1070d008a4f9d55775a51013baa3"><div class="ttname"><a href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">machine_learning::aystar_search::AyStarSearch::Info::heuristic_value</a></div><div class="ttdeci">size_t heuristic_value</div><div class="ttdoc">Holds the current state.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:295</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -308,9 +315,9 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            : state(A.state),</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(A.heuristic_value),</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(A.depth) {}</div>
+<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            : state(std::make_shared&lt;Puzzle&gt;(A.state)),</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(A.heuristic_value),</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(A.depth) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,9 +354,10 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            : state(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state)),</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value)),</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth)) {}</div>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            : state(std::make_shared&lt;Puzzle&gt;(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state))),</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value)),</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;              <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth)) {}</div>
+<div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,12 +395,12 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                       {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            state = A.state;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = A.heuristic_value;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a> = A.depth;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                       {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            state = A.state;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = A.heuristic_value;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a> = A.depth;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,12 +437,12 @@ template&lt;typename Puzzle &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                           {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            state = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                           {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            state = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.state);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3">heuristic_value</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.heuristic_value);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <a class="code" href="../../da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d">depth</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.depth);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

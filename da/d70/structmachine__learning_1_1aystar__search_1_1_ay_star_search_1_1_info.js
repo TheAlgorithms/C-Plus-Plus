@@ -10,5 +10,5 @@ var structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info =
     [ "operator=", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#aea763e487cf100668d4eff160e40c3fa", null ],
     [ "depth", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d", null ],
     [ "heuristic_value", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3", null ],
-    [ "state", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#ab047f7d2fe77b461e454929a5c0e3cbc", null ]
+    [ "state", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a94862762ad167506dcb0cdebf007d04c", null ]
 ];

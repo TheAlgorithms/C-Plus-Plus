@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('dd/d9c/classmachine__learning_1_1aysta
 <div class="dynheader">
 Collaboration diagram for machine_learning::aystar_search::EightPuzzle&lt; N &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dff/classmachine__learning_1_1aystar__search_1_1_eight_puzzle__coll__graph.svg" width="323" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dff/classmachine__learning_1_1aystar__search_1_1_eight_puzzle__coll__graph.svg" width="651" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -172,9 +172,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a35d8f14ca17218f236c09ff9ad864f9c"><td class="memItemLeft" align="right" valign="top"><a id="a35d8f14ca17218f236c09ff9ad864f9c"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; uint32_t, N &gt;, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>board</b></td></tr>
 <tr class="separator:a35d8f14ca17218f236c09ff9ad864f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9dd16b9aafa97dd15f1e7be8ad586b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ada9dd16b9aafa97dd15f1e7be8ad586b">moves</a></td></tr>
-<tr class="memdesc:ada9dd16b9aafa97dd15f1e7be8ad586b"><td class="mdescLeft">&#160;</td><td class="mdescRight">N x N array to store the current state of the Puzzle.  <a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ada9dd16b9aafa97dd15f1e7be8ad586b">More...</a><br /></td></tr>
-<tr class="separator:ada9dd16b9aafa97dd15f1e7be8ad586b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73857052e69b86347859d9148933f71"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int8_t, int8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71">moves</a></td></tr>
+<tr class="memdesc:aa73857052e69b86347859d9148933f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">N x N array to store the current state of the Puzzle.  <a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71">More...</a><br /></td></tr>
+<tr class="separator:aa73857052e69b86347859d9148933f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -227,7 +227,7 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        : board(init) {}</div>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        : board(init) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,7 +264,7 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;: board(A.board) {}</div>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;: board(A.board) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,7 +301,7 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        : board(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board)) {}</div>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        : board(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board)) {}</div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 </div><!-- fragment -->
 </div>
@@ -334,16 +334,16 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>A helper array to evaluate the next state from current state;. </p>
 <p>Finds an empty space in puzzle (in this case; a zero) </p><dl class="section return"><dt>Returns</dt><dd>a pair indicating integer distances from top and right respectively, else returns -1, -1 </dd></dl>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                            {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">if</span> (!board[i][j]) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordflow">return</span> {i, j};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> {-1, -1};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                            {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">if</span> (!board[i][j]) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    <span class="keywordflow">return</span> {i, j};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> {-1, -1};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 </div><!-- fragment -->
 </div>
@@ -376,29 +376,29 @@ template&lt;size_t N = 3&gt; </div>
 <p>Find all possible states after processing all possible moves, given the current state of the puzzle. </p>
 <dl class="section return"><dt>Returns</dt><dd>list of vector containing all possible next moves </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the implementation is compulsory to create A* search </dd></dl>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                        {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keyword">auto</span> zero_pos = <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a01564e5136ca270c45382e5ea55dc6ec">find_zero</a>();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">// vector which will contain all possible state from current state</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EightPuzzle&lt;N&gt;</a>&gt; NewStates;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;move : <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ada9dd16b9aafa97dd15f1e7be8ad586b">moves</a>) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.first + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first) &amp;&amp;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.second + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second)) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="comment">// swap with the possible moves</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;uint32_t, N&gt;</a>, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; new_config = board;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(new_config[zero_pos.first][zero_pos.second],</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                          new_config[zero_pos.first + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first]</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                    [zero_pos.second + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second]);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                EightPuzzle&lt;N&gt; new_state(new_config);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="comment">// Store new state and calculate heuristic value, and depth</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                NewStates.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(new_state);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> NewStates;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                        {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keyword">auto</span> zero_pos = <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a01564e5136ca270c45382e5ea55dc6ec">find_zero</a>();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">// vector which will contain all possible state from current state</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EightPuzzle&lt;N&gt;</a>&gt; NewStates;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;move : <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71">moves</a>) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.first + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first) &amp;&amp;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(zero_pos.second + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second)) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="comment">// swap with the possible moves</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;uint32_t, N&gt;</a>, <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>&gt; new_config = board;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(new_config[zero_pos.first][zero_pos.second],</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                          new_config[zero_pos.first + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.first]</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                    [zero_pos.second + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">move</a>.second]);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                EightPuzzle&lt;N&gt; new_state(new_config);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="comment">// Store new state and calculate heuristic value, and depth</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                NewStates.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">emplace_back</a>(new_state);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> NewStates;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a01564e5136ca270c45382e5ea55dc6ec"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a01564e5136ca270c45382e5ea55dc6ec">machine_learning::aystar_search::EightPuzzle::find_zero</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; find_zero()</div><div class="ttdoc">A helper array to evaluate the next state from current state;.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:74</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a48d054230468b79037964f474d842b6e"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">machine_learning::aystar_search::EightPuzzle::in_range</a></div><div class="ttdeci">bool in_range(const uint32_t value) const</div><div class="ttdoc">check whether the index value is bounded within the puzzle area</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:89</div></div>
-<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_ada9dd16b9aafa97dd15f1e7be8ad586b"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ada9dd16b9aafa97dd15f1e7be8ad586b">machine_learning::aystar_search::EightPuzzle::moves</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, int &gt; &gt; moves</div><div class="ttdoc">N x N array to store the current state of the Puzzle.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:63</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a01564e5136ca270c45382e5ea55dc6ec"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a01564e5136ca270c45382e5ea55dc6ec">machine_learning::aystar_search::EightPuzzle::find_zero</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint32_t &gt; find_zero()</div><div class="ttdoc">A helper array to evaluate the next state from current state;.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:75</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_a48d054230468b79037964f474d842b6e"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">machine_learning::aystar_search::EightPuzzle::in_range</a></div><div class="ttdeci">bool in_range(const uint32_t value) const</div><div class="ttdoc">check whether the index value is bounded within the puzzle area</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:90</div></div>
+<div class="ttc" id="aclassmachine__learning_1_1aystar__search_1_1_eight_puzzle_html_aa73857052e69b86347859d9148933f71"><div class="ttname"><a href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71">machine_learning::aystar_search::EightPuzzle::moves</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt; moves</div><div class="ttdoc">N x N array to store the current state of the Puzzle.</div><div class="ttdef"><b>Definition:</b> a_star_search.cpp:64</div></div>
 <div class="ttc" id="aemplace_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/emplace_back.html">std::vector::emplace_back</a></div><div class="ttdeci">T emplace_back(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
@@ -458,12 +458,12 @@ template&lt;size_t N = 3&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>non-negative integer denoting the value at ith row and jth column </dd>
 <dd>
 -1 if invalid i or j position </dd></dl>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                           {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(i) &amp;&amp; <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(j)) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> board[i][j];</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                           {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(i) &amp;&amp; <a class="code" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e">in_range</a>(j)) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> board[i][j];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -500,7 +500,7 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>returns the size of the <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html" title="A class defining EightPuzzle/15-Puzzle game.">EightPuzzle</a> (number of row / column) </p>
 <dl class="section return"><dt>Returns</dt><dd>N, the size of the puzzle. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; }</div>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -538,9 +538,7 @@ template&lt;size_t N = 3&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if index is within the board, else <code>false</code> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                     {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> value &gt;= 0 &amp;&amp; value &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{ <span class="keywordflow">return</span> value &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -572,16 +570,16 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether one board is lexicographically smaller </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this-&gt;state is lexicographically smaller than <code>check.state</code>, else <code>false</code> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                      {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                                      {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
 <div class="ttc" id="aword__break_8cpp_html_a272b0f5cdb4e41fd6dee4538b808c06a"><div class="ttname"><a href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">dynamic_programming::word_break::check</a></div><div class="ttdeci">bool check(const std::string &amp;s, const std::unordered_set&lt; std::string &gt; &amp;strSet, int pos, std::vector&lt; int &gt; *dp)</div><div class="ttdoc">Function that checks if the string passed in param can be segmented from position 'pos',...</div><div class="ttdef"><b>Definition:</b> word_break.cpp:80</div></div>
 </div><!-- fragment -->
 </div>
@@ -614,16 +612,16 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether one board is lexicographically smaller or equal </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this-&gt;state is lexicographically smaller than <code>check.state</code> or same, else <code>false</code> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                       {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                                       {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    <span class="keywordflow">return</span> board[i][j] &lt; <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j];</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -660,10 +658,10 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                 {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        board = A.board;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                 {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        board = A.board;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -700,10 +698,10 @@ template&lt;size_t N = 3&gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                     {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        board = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                                     {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        board = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(A.board);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -741,19 +739,19 @@ template&lt;size_t N = 3&gt; </div>
 
 <p>check whether two boards are equal </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if check.state is equal to <code>this-&gt;state</code>, else <code>false</code> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                                       {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.get_size() != N) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                       {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.get_size() != N) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">if</span> (board[i][j] != <a class="code" href="../../d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a">check</a>.board[i][j]) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -803,21 +801,21 @@ template&lt;size_t N = 3&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ostream operator op </dd></dl>
-<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                                                     {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                op &lt;&lt; SomeState.board[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            op &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> op;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++i) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code" href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">N</a>; ++j) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                op &lt;&lt; SomeState.board[i][j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            op &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> op;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ada9dd16b9aafa97dd15f1e7be8ad586b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada9dd16b9aafa97dd15f1e7be8ad586b">&#9670;&nbsp;</a></span>moves</h2>
+<a id="aa73857052e69b86347859d9148933f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73857052e69b86347859d9148933f71">&#9670;&nbsp;</a></span>moves</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -828,7 +826,7 @@ template&lt;size_t N = 3&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt;int, int&gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::moves</td>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt;int8_t, int8_t&gt; &gt; <a class="el" href="../../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html">machine_learning::aystar_search::EightPuzzle</a>&lt; N &gt;::moves</td>
         </tr>
       </table>
   </td>
