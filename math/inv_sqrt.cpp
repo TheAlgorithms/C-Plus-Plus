@@ -34,6 +34,9 @@ inline T Fast_InvSqrt(T x) {
     Tint i = *(Tint *)&y;
     i = (sizeof(T) == 8 ? 0x5fe6eb50c7b537a9 : 0x5f3759df) - (i >> 1);
     y = *(T *)&i;
+
+    y = *reinterpret_cast<T *>(&i);
+
     y = y * (1.5 - (x2 * y * y));
     if (iterations == 2) {
         y = y * (1.5 - (x2 * y * y));
