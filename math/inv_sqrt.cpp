@@ -10,17 +10,14 @@
 #include <iostream>     /// for IO operations
 #include <type_traits>  /// for `static_assert`
 
-#define MagicNBR_32 0x5f3759df
-#define MagicNBR_64 0x5fe6eb50c7b537a9
-
 /**
  * @brief This is the function that calculates the fast inverse square root.
- * The following code is the fast inverse square root implementation from Quake
- * III Arena (Adapted for C++)
- * More information can be found at [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
+ * The following code is the fast inverse square root implementation from
+ * Quake III Arena (Adapted for C++) More information can be found at
+ * [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
  * @tparam T floating type
- * @tparam iterations inverse square root, the greater the number of iterations,
- * the more exact the result will be (1 or 2).
+ * @tparam iterations inverse square root, the greater the number of
+ * iterations, the more exact the result will be (1 or 2).
  * @param x value to calculate
  * @return T return inverse square root
  */
@@ -35,7 +32,7 @@ inline T Fast_InvSqrt(T x) {
     T y = x;
     T x2 = y * 0.5;
     Tint i = *(Tint *)&y;
-    i = (sizeof(T) == 8 ? MagicNBR_64 : MagicNBR_32) - (i >> 1);
+    i = (sizeof(T) == 8 ? 0x5fe6eb50c7b537a9 : 0x5f3759df) - (i >> 1);
     y = *(T *)&i;
     y = y * (1.5 - (x2 * y * y));
     if (iterations == 2)
