@@ -60,7 +60,10 @@ T Standard_InvSqrt(T number) {
     return 1.0f / squareRoot;
 }
 
-/** main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     std::cout << "The Fast inverse square root of 36 is: "
               << Fast_InvSqrt<float, 1>(36.0f) << std::endl;
