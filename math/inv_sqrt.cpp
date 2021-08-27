@@ -7,7 +7,7 @@
  */
 
 #include <cmath>        /// for `std::sqrt`
-#include <iostream>     /// for `std::cout`
+#include <iostream>     /// for IO operations
 #include <type_traits>  /// for `static_assert`
 
 #define MagicNBR_32 0x5f3759df
