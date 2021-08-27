@@ -3,7 +3,7 @@
  * @brief Calculate the inverse inverse root.
  * @details
  * Two implementation to calculate inverse inverse root,
- * from Quake III Arena (C++ version) and with standard lib (cmath)
+ * from Quake III Arena (C++ version) and with a standard library (`cmath`)
  */
 
 #include <cmath>        /// for `std::sqrt`
