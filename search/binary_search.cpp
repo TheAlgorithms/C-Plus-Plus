@@ -6,7 +6,7 @@
 #include <iostream>
 
 /** binary_search function
- * \param [in] a array to sort
+ * \param [in] a array to search
  * \param [in] r right hand limit = \f$n-1\f$
  * \param [in] key value to find
  * \returns index if T is found
