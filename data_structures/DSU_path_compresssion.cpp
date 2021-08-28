@@ -1,8 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
-
-#define vi vector<int>
 
 //Disjoint set union 
 class DSU{
@@ -12,7 +11,7 @@ class DSU{
         // setSize: size of each chunk(set)
         // maxElement : max of each set, using maxElement[representative]
         // minElement : min of each set, using minElement[representative]
-        vi p,depth,setSize,maxElement,minElement;
+        vector<int> p,depth,setSize,maxElement,minElement;
     public:
         // parameter : int n -> maximum number of items
         DSU(int n){
@@ -83,7 +82,7 @@ class DSU{
         }
         //returns min max size of i's set
         void get(int i){
-            cout << get_min(i) << " " << get_max(i) << " " <<size(i) << endl; 
+            cout << "min:" << get_min(i) << " max:" << get_max(i) << " size of set:" <<size(i) << endl; 
         }
         //number of elements of each set
         int size(int i){
@@ -123,25 +122,27 @@ output case#1:
         4 5 2
         1 5 5
 */
+//T(n) = O(n)
 int main(){
-    std::ios_base::sync_with_stdio(0);std::cin.tie(0);std::cout.tie(0);
-    int n,q;cin>>n;cin>>q;
+    int n,q;
+    n = 10; q = 11;
     //n: number of items
     //q: number of queries to be made
     DSU d(n+1);
+    //set 1
+    cout << "set 1:"<<endl;
+    d.UnionSet(1,2); //performs union operation on 1 and 2
+    d.UnionSet(1,4);
+    cout << "Representative of "<< 4 << " is "<< d.findSet(4) << endl; //find the representative of the set which 4 belongs to.
+    d.get(4); //print min max and size of set.
 
-    while(q--){
-        string op;cin>>op;
-        if(op == "union"){
-            int i,j;
-            cin >> i >> j;
-            d.UnionSet(i,j); //performs union operation on i and j
-        }else{
-            int i;
-            cin >> i;
-            d.get(i); //print min max and size of set.
-        }
-    }
+    //set 2
+    cout << "\nset 2"<<endl;
+    d.UnionSet(3,5);
+    d.UnionSet(5,6);
+    d.UnionSet(5,7);
+    cout << "Representative of " << 7 <<" is " << d.findSet(7) << endl;
+    d.get(3);
     
     
 }

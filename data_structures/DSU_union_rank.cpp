@@ -1,14 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
 
 using namespace std;
 
-#define vi vector<int> 
 class DSU{
     private:
         // p: keeps track of parent of i
         // depth: tracks the depth of i
         // setSize: size of each chunk(set)
-        vi p,depth,setSize;
+        vector<int> p,depth,setSize;
     public:
         //parameter : int n -> maximum number of items
         DSU(int n){
@@ -61,16 +62,35 @@ class DSU{
             }
             return false;
         }
+        void getParents(int i){
+            while(p[i]!=i){
+                cout << i << " ->";
+                i = p[i];
+            }
+            cout << p[i] << endl;
+        }
         
 };
 
 int main(){
-    //number of items
-    int n;cin>>n;
-
+    int n;
+    n = 10; 
+    //n: number of items
     DSU d(n+1);
-    //perform operations here
-    d.unionSet(2,4);
-    d.unionSet(3,4);
-    cout <<  d.findSet(2) <<endl;
+    d.unionSet(2,1); //performs union operation on 1 and 2
+    d.unionSet(1,4);
+    d.unionSet(8,1);
+    
+    d.unionSet(3,5);
+    d.unionSet(5,6);
+    d.unionSet(5,7);
+
+    d.unionSet(9,10);
+    d.unionSet(2,10);
+
+    //keeping track of the changes using parent pointers
+    d.getParents(7);
+    d.getParents(2);
+
+
 }
