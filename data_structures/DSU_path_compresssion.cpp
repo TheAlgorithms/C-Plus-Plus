@@ -98,36 +98,12 @@ class DSU{
         }
 
 };
-/*
-test case#1:
-        5 11
-        union 1 2
-        get 3
-        get 2
-        union 2 3
-        get 2
-        union 1 3
-        get 5
-        union 4 5
-        get 5
-        union 4 1
-        get 5
-*/
-/*
-output case#1:
-        3 3 1
-        1 2 2
-        1 3 3
-        5 5 1
-        4 5 2
-        1 5 5
-*/
+
 //T(n) = O(n)
 int main(){
-    int n,q;
-    n = 10; q = 11;
+    int n;
+    n = 10;
     //n: number of items
-    //q: number of queries to be made
     DSU d(n+1);
     //set 1
     cout << "set 1:"<<endl;
