@@ -22,14 +22,14 @@ template <typename T>
 bool is_prime(T num) {
     bool result = true;
     if (num <= 1) {
-        return 0;
+        return false;
     } else if (num == 2) {
-        return 1;
+        return true;
     } else if ((num & 1) == 0) {
-        return 0;
+        return false;
     }
     if (num >= 3) {
-        for (T i = 3; (i * i) < (num); i = (i + 2)) {
+        for (T i = 3; (i * i) <= (num); i = (i + 2)) {
             if ((num % i) == 0) {
                 result = false;
                 break;
@@ -47,7 +47,7 @@ int main() {
     assert(is_prime(50) == false);
     assert(is_prime(115249) == true);
 
-    int num;
+    int num = 0;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;
     bool result = is_prime(num);
