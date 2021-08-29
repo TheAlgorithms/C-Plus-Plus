@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Calculate the inverse inverse root.
+ * @brief Implementation of [Fast Inverse Square Root](https://medium.com/hard-mode/the-legendary-fast-inverse-square-root-e51fee3b49d9).
  * @details
  * Two implementation to calculate inverse inverse root,
  * from Quake III Arena (C++ version) and with a standard library (`cmath`)
