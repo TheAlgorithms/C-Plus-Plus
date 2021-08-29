@@ -20,7 +20,6 @@
  * @brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
-
 /**
  * @namespace same_number_of_bits
  * @brief Functions for the [Next higher number with the same number of set
