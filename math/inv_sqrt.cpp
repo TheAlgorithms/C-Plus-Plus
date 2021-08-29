@@ -43,8 +43,8 @@ inline T Fast_InvSqrt(T x) {
 /**
  * @brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root with standard lib (cmath)
- * More info:
- * https://www.linkedin.com/pulse/fast-inverse-square-root-still-armin-kassemi-langroodi
+ * More information can be found at
+ * [LinkedIn](https://www.linkedin.com/pulse/fast-inverse-square-root-still-armin-kassemi-langroodi)
  * @tparam T floating type
  * @param x value to calculate
  * @return T return inverse square root
