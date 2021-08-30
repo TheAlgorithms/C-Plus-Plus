@@ -12,7 +12,7 @@
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
-#include <vector>    /// for vector STL
+#include <vector>    /// for std::vector STL
 #ifdef _MSC_VER
 #include <string>  /// for string (required for MS Visual C++)
 #else
