@@ -166,8 +166,8 @@ static void test() {
                 // cannot select anything from an empty array
     std::cout << "passed" << std::endl;
     
-    // Test 5 
-    // 2nd Method
+    // 5th test
+    // 2nd method
     // input array = same as used in 5th test above.
     std::cout << "5th test, 2nd method";
     assert(backtracking::subset_sum::number_of_subsets2(6, array5) ==
