@@ -88,6 +88,13 @@ int main() {
     std::cout << "The Fast inverse square root of 36 is: "
               << Fast_InvSqrt<double, 2>(36.0f) << " (2 iterations)"
               << std::endl;
+    std::cout << "The Fast inverse square root of 100 is: "
+              << Fast_InvSqrt(100.0f)
+              << " (With default template type and iterations: double, 2)"
+              << std::endl;
     std::cout << "The Standard inverse square root of 36 is: "
               << Standard_InvSqrt<float>(36.0f) << std::endl;
+    std::cout << "The Standard inverse square root of 100 is: "
+              << Standard_InvSqrt(100.0f)
+              << " (With default template type: double)" << std::endl;
 }
