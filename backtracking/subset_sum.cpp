@@ -97,7 +97,7 @@ static void test() {
     // 1st test
     // 2nd method
     // input array = same as used in 1st test above.
-    std::cout << "1st test 2nd Method ";
+    std::cout << "1st test, 2nd method";
     assert(backtracking::subset_sum::number_of_subsets2(0, array1) ==
            2);  // first argument in subset_sum function is the required sum and
                 // second is the input array
