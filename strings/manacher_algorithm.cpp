@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Implementation of the
- * [Manacher's
+ * @brief Implementation of [Manacher's
  * Algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring)
  * @details
  * Manacher's Algorithm is used to find longest palindromic substring within a
@@ -11,12 +10,13 @@
  * @author [Riti Kumari](https://github.com/riti2409)
  */
 
-#include <cassert>   // for asserting test cases
-#include <iostream>  // for IO operations
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for vector STL
 #ifdef _MSC_VER
-#include <string>  // required for MS Visual C++
+#include <string>  /// for string (required for MS Visual C++)
 #else
-#include <cstring>
+#include <cstring>  /// for string
 #endif
 
 /**
@@ -26,8 +26,7 @@
 namespace strings {
 /**
  * @namespace manacher
- * @brief Functions for the
- * [Manacher's
+ * @brief Functions for [Manacher's
  * Algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring)
  * implementation
  */
@@ -35,7 +34,7 @@ namespace manacher {
 /**
  * @brief A function that implements Manacher's algorithm
  * @param prototype is the string where algorithm finds a palindromic substring.
- * This string can contain any character except @ # &
+ * This string can contain any character except `@` `#` `&`
  * @returns the largest palindromic substring
  */
 std::string manacher(const std::string &prototype) {
@@ -49,16 +48,19 @@ std::string manacher(const std::string &prototype) {
         }
         stuffed_string = "@#" + stuffed_string + "&";
 
-        int palindrome_max_half_length[stuffed_string.size()] = {
-            0};  // this array will consist of largest possible half length of
+        std::vector<int> palindrome_max_half_length(
+            stuffed_string.size(),
+            0);  // int palindrome_max_half_length[stuffed_string.size()] = {0};
+                 // this array will consist of largest possible half length of
                  // palindrome centered at index (say i with respect to the
                  // stuffed string). This value will be lower bound of half
                  // length since single character is a palindrome in itself.
 
         int bigger_center =
-            0;          // this is the index of the center of palindromic
-                        // substring which would be considered as the larger
-                        // palindrome, having symmetric halves
+            0;  // this is the index of the center of palindromic
+                // substring which would be considered as the larger
+                // palindrome, having symmetric halves
+
         int right = 0;  // this is the maximum length of the palindrome from
                         // 'bigger_center' to the rightmost end
 
@@ -148,10 +150,14 @@ static void test() {
     assert(strings::manacher::manacher("") == "");
     assert(strings::manacher::manacher("abababc") == "ababa");
     assert(strings::manacher::manacher("cbaabd") == "baab");
+    assert(strings::manacher::manacher("DedzefDeD") == "DeD");
+    assert(strings::manacher::manacher("XZYYXXYZXX") == "YXXY");
+    assert(strings::manacher::manacher("1sm222m10abc") == "m222m");
+    assert(strings::manacher::manacher("798989591") == "98989");
     assert(strings::manacher::manacher("xacdedcax") == "xacdedcax");
-    assert(strings::manacher::manacher("xacddcax") == "xacddcax");
+    assert(strings::manacher::manacher("xaccax") == "xaccax");
     assert(strings::manacher::manacher("a") == "a");
-    assert(strings::manacher::manacher("ab") == "a");
+    assert(strings::manacher::manacher("xy") == "x");
     assert(strings::manacher::manacher("abced") == "a");
 }
 
