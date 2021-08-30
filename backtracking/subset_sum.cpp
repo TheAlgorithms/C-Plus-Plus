@@ -36,8 +36,6 @@ namespace subset_sum {
  * @param in_arr is the input array
  * @returns count of the number of subsets with required sum
  */
- 
-//1st Method
 uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &in_arr) {
     int32_t nelement = in_arr.size();
     uint64_t count_of_subset = 0;
