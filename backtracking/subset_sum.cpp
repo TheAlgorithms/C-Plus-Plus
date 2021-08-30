@@ -148,8 +148,8 @@ static void test() {
                 // {(3,3),(3,3),(3,3),(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
 
-    // Test 4
-    // 2nd Method
+    // 4th test
+    // 2nd method
     // input array = same as used in 4th test above.
     std::cout << "4th test, 2nd method";
     assert(backtracking::subset_sum::number_of_subsets2(6, array4) ==
