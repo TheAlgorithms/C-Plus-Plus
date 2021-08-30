@@ -80,19 +80,6 @@ uint64_t number_of_subsets2(int32_t sum, const std::vector<int32_t> &in_arr) {
 }  // namespace subset_sum
 }  // namespace backtracking
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
 /**
  * @brief Test implementations
  * @returns void
