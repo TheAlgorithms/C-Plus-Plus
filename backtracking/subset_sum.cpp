@@ -94,7 +94,7 @@ static void test() {
                 // second is the input array
     std::cout << "passed" << std::endl;
     
-    // Test 1 
+    // 1st test
     // 2nd Method 
     // input array = same as used in 1st test above.
     std::cout << "1st test 2nd Method ";
