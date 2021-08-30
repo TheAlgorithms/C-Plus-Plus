@@ -3,9 +3,9 @@
  * @brief Implementation of [Manacher's
  * Algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring)
  * @details
- * Manacher's Algorithm is used to find longest palindromic substring within a
- * string in O(n) time. It exploits the property of a palindrome that its first
- * half is symmetric to the last half, and thus if the first half is a
+ * Manacher's Algorithm is used to find the longest palindromic substring within
+ * a string in O(n) time. It exploits the property of a palindrome that its
+ * first half is symmetric to the last half, and thus if the first half is a
  * palindrome, then last half is also a palindrome.
  * @author [Riti Kumari](https://github.com/riti2409)
  */
