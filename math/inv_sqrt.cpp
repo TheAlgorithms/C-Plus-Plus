@@ -24,7 +24,7 @@
  * @param x value to calculate
  * @return the inverse square root
  */
-template <typename T, char iterations = 2>
+template <typename T = double, char iterations = 2>
 inline T Fast_InvSqrt(T x) {
     using Tint = typename std::conditional<sizeof(T) == 8, std::int64_t,
                                            std::int32_t>::type;
@@ -52,7 +52,7 @@ inline T Fast_InvSqrt(T x) {
  * @param number value to calculate
  * @return the inverse square root
  */
-template <typename T>
+template <typename T = double>
 T Standard_InvSqrt(T number) {
     T squareRoot = sqrt(number);
     return 1.0f / squareRoot;
@@ -68,12 +68,12 @@ static void test() {
     /* Tests with multiple values */
     assert(std::fabs(Standard_InvSqrt<float>(100.0f) - 0.0998449f) < epsilon);
     assert(std::fabs(Standard_InvSqrt<double>(36.0f) - 0.166667f) < epsilon);
-    assert(std::fabs(Standard_InvSqrt<double>(12.0f) - 0.288423f) < epsilon);
+    assert(std::fabs(Standard_InvSqrt(12.0f) - 0.288423f) < epsilon);
     assert(std::fabs(Standard_InvSqrt<double>(5.0f) - 0.447141f) < epsilon);
 
-    assert(std::fabs(Fast_InvSqrt<float>(100.0f) - 0.0998449f) < epsilon);
-    assert(std::fabs(Fast_InvSqrt<double>(36.0f) - 0.166667f) < epsilon);
-    assert(std::fabs(Fast_InvSqrt<double>(12.0f) - 0.288423) < epsilon);
+    assert(std::fabs(Fast_InvSqrt<float, 1>(100.0f) - 0.0998449f) < epsilon);
+    assert(std::fabs(Fast_InvSqrt<double, 1>(36.0f) - 0.166667f) < epsilon);
+    assert(std::fabs(Fast_InvSqrt(12.0f) - 0.288423) < epsilon);
     assert(std::fabs(Fast_InvSqrt<double>(5.0f) - 0.447141) < epsilon);
 }
 
