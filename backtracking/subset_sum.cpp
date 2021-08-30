@@ -86,7 +86,7 @@ uint64_t number_of_subsets2(int32_t sum, const std::vector<int32_t> &in_arr) {
  */
 static void test() {
     // 1st test
-    // 1st Method
+    // 1st method
     std::cout << "1st test, 1st method ";
     std::vector<int32_t> array1 = {-7, -3, -2, 5, 8};  // input array
     assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
