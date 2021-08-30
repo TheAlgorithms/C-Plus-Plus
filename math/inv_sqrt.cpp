@@ -20,7 +20,7 @@
  * @tparam iterations inverse square root, the greater the number of
  * iterations, the more exact the result will be (1 or 2).
  * @param x value to calculate
- * @return T return inverse square root
+ * @return the inverse square root
  */
 template <typename T, char iterations = 2>
 inline T Fast_InvSqrt(T x) {
