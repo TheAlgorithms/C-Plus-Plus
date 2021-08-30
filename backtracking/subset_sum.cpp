@@ -184,7 +184,7 @@ static void test() {
     // Test 5 
     // 2nd Method
     // input array = same as used in 5th test above.
-    std::cout << "5th test 2nd Method ";
+    std::cout << "5th test, 2nd method";
     assert(backtracking::subset_sum::number_of_subsets2(6, array5) ==
            0);  // here we are expecting 0 subsets which sum up to 6 i.e. we
                 // cannot select anything from an empty array
