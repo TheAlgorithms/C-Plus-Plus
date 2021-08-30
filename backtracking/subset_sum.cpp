@@ -158,7 +158,7 @@ static void test() {
     std::cout << "passed" << std::endl;
 
     // Test 5
-    // 1st Method
+    // 1st method
     std::cout << "5th test 1st Method ";
     std::vector<int32_t> array5 = {};
     assert(backtracking::subset_sum::number_of_subsets(6, array5) ==
