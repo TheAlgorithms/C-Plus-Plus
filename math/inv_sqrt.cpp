@@ -49,7 +49,7 @@ inline T Fast_InvSqrt(T x) {
  * More information can be found at
  * [LinkedIn](https://www.linkedin.com/pulse/fast-inverse-square-root-still-armin-kassemi-langroodi)
  * @tparam T floating type
- * @param x value to calculate
+ * @param number value to calculate
  * @return the inverse square root
  */
 template <typename T>
