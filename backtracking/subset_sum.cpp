@@ -8,7 +8,7 @@
  * subsets count. This approach will have exponential time complexity.
  * @author [Swastika Gupta](https://github.com/Swastyy)
  * 
- * Second Method added : This method used dynamic programming to  
+ * Second Method added: This method used dynamic programming to  
  * reduce the time complexity of solution from exponential ,i.e, O(n*2^n) to O(n*sum_of_elements)
  * dp[{i,j}] defines the number of possible subsets with sum 'j' , by considering only the first 'i' elements
  * of the array
