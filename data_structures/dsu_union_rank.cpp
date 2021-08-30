@@ -2,7 +2,9 @@
 #include <vector>
 
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::vector;
 
 class DSU{
     private:
@@ -12,7 +14,7 @@ class DSU{
         vector<int> p,depth,setSize;
     public:
         //parameter : int n -> maximum number of items
-        DSU(int n){
+        explicit DSU(int n){
             p.assign(n,0);
             //initially all of them their own parents
             depth.assign(n,0);
@@ -43,7 +45,7 @@ class DSU{
             //always keeping the min as x
             //in order to create a shallow tree
             if(depth[x]>depth[y]){
-                swap(x,y);
+                std::swap(x,y);
             }
             //making the shallower tree' root parent of the deeper root
             p[x] = y;
@@ -73,8 +75,7 @@ class DSU{
 };
 
 int main(){
-    int n;
-    n = 10; 
+    int n = 10; 
     //n: number of items
     DSU d(n+1);
     d.unionSet(2,1); //performs union operation on 1 and 2
@@ -93,4 +94,5 @@ int main(){
     d.getParents(2);
 
 
+    return 0;
 }
