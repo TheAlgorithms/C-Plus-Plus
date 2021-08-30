@@ -85,7 +85,7 @@ uint64_t number_of_subsets2(int32_t sum, const std::vector<int32_t> &in_arr) {
  * @returns void
  */
 static void test() {
-    // Test 1
+    // 1st test
     // 1st Method
     std::cout << "1st test 1st Method ";
     std::vector<int32_t> array1 = {-7, -3, -2, 5, 8};  // input array
