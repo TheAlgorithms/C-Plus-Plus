@@ -157,7 +157,7 @@ static void test() {
                 // {(3,3),(3,3),(3,3),(3,3),(3,3),(3,3)}
     std::cout << "passed" << std::endl;
 
-    // Test 5
+    // 5th test
     // 1st method
     std::cout << "5th test, 1st method";
     std::vector<int32_t> array5 = {};
