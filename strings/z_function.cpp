@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief The Z function for finding occurences of a pattern 
+ * @brief The [Z function](https://cp-algorithms.com/string/z-function.html) for finding occurences of a pattern 
  * within a piece of text with time and space complexity O(n + m)
  * @details 
  * DESCRIPTION
@@ -8,8 +8,6 @@
  * i-th element is equal to the greatest number of characters starting 
  * from the position i that coincide with the first characters of s.
  * 2. Eg string : ababb then z[2]=2 as s[2]=s[0] and s[3]=s[1] and s[4]!=s[2]
- * LINK
- * https://cp-algorithms.com/string/z-function.html
  * @author [Ritika Gupta](https://github.com/RitikaGupta8734)
  */
 
@@ -56,20 +54,26 @@ std::vector<int> find_pat_in_text(const std::string &pattern, const std::string 
     return matching_indexes;
 }  
 
-
-/** Main function */
-int main() {
+void testing(){
+    
+    // usual case
     std::string text1 = "alskfjaldsabc1abc1abcbksbcdnsdabcabc";
     std::string pattern1 = "abc";
     
     std::vector<int> matching_indexes1=find_pat_in_text(pattern1,text1);
     assert((matching_indexes1 == std::vector<int>{10,14,18,30,33}));
     
+    // corner case
     std::string text2 = "greengrass";
     std::string pattern2 = "abc";
     
     std::vector<int> matching_indexes2=find_pat_in_text(pattern2,text2);
     assert((matching_indexes2 == std::vector<int>{}));
+}
 
+/** Main function */
+int main() {
+    
+    testing();  
     return 0;
 }
