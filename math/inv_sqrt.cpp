@@ -82,7 +82,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // run self-test implementations
     std::cout << "The Fast inverse square root of 36 is: "
               << Fast_InvSqrt<float, 1>(36.0f) << std::endl;
     std::cout << "The Fast inverse square root of 36 is: "
