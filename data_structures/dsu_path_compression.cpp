@@ -1,22 +1,46 @@
-#include <iostream>
-#include <vector>
+/**
+ * @file
+ * @brief [DSU(Disjoint sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
+ * @details
+ * dsu : It is a very powerful data structure which keeps track of different 
+ * clusters(sets) of elements, these sets are disjoint(doesnot have a common element).
+ * Disjoint sets uses cases : for finding connected components in a graph,
+ * used in Kruskal's algorithm for finding Minimum Spanning tree.
+ * Operations that can be performed:
+ * 1) UnionSet(i,j): add(element i and j to the set)
+ * 2) findSet(i): returns the representative of the set to which i belogngs to.
+ * 3) get_max(i),get_min(i) : returns the maximum and minimum 
+ * Below is the class-based approach which uses the heuristic of path compression.
+ * Using path compression in findSet(i),we are able to get to the representative of i
+ * in O(1) time.
+ * @author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
+ * @see dsu_union_rank.cpp
+ */
+
+#include <iostream> ///for io
+#include <vector>   ///for using vectors
 
 using std::cout;
 using std::endl;
 using std::vector;
 
-//Disjoint set union 
-class DSU{
+/**
+ * @brief Disjoint sets union data structure, class based representation.
+ * @param n number of elements
+ */
+class dsu{
     private:
-        // p: keeps track of parent of i
-        // depth: tracks the depth of i
-        // setSize: size of each chunk(set)
-        // maxElement : max of each set, using maxElement[representative]
-        // minElement : min of each set, using minElement[representative]
-        vector<int> p,depth,setSize,maxElement,minElement;
+        vector<int> p; ///<keeps track of the parent of ith element
+        vector<int> depth; ///<tracks the depth(rank) of i in the tree
+        vector<int> setSize;///<size of each chunk(set)
+        vector<int> maxElement;/// <maximum of each set to which i belongs to
+        vector<int> minElement;/// <minimum of each set to which i belongs to
     public:
-        // parameter : int n -> maximum number of items
-        explicit DSU(int n){
+        /**
+        * @brief contructor for initialising all data members.
+        * @param n number of elements
+        */
+        explicit dsu(int n){
             p.assign(n,0);
             //initially all of them are their own parents.
             for(int i=0;i<n;i++){
@@ -38,15 +62,25 @@ class DSU{
             }
         }
 
-        //returns the leader/representative of the set
+        /**
+         * @brief Method to find the representative of the set to which i belongs to, T(n) = O(1)
+         * @param i element of some set
+         * @returns representative of the set to which i belongs to. 
+         */
         int findSet(int i){
+            /// using path compression
             if(p[i]==i){
                 return i;
             }
-            //path compression i -> root(representative)
             return (p[i] = findSet(p[i]));
         }
-        //union of 2 sets
+        /**
+         * @brief Method that combines two disjoint sets to which i and j belongs to 
+         * and make a single set having a common representative.
+         * @param i element of some set
+         * @param j element of some set
+         * @returns void
+        */
         void UnionSet(int i,int j){
             //check if both belongs to same set or not
             if(isSame(i,j)){
@@ -75,37 +109,61 @@ class DSU{
             maxElement[y] = std::max(maxElement[x],maxElement[y]);
             minElement[y] = std::min(minElement[x],minElement[y]);
         }
-        //checks if both belongs to same set
+        /**
+         * @brief A utility function which check whether i and j belongs to
+         * same set or not
+         * @param i element of some set
+         * @param j element of some set
+         * @returns `true` if element i and j are in same set
+         * @returns `false` if element i and j are not in same set
+         */
         bool isSame(int i,int j){
             if(findSet(i) == findSet(j)){
                 return true;
             }
             return false;
         }
-        //returns min max size of i's set
+        /**
+         * @brief prints the minimum, maximum and size of the set to which i belongs to
+         * @param i element of some set
+         * @returns void
+         */
         void get(int i){
             cout << "min:" << get_min(i) << " max:" << get_max(i) << " size of set:" <<size(i) << endl; 
         }
-        //number of elements of each set
+        /**
+         * @brief A utility function that returns the size of the set to which i belongs to
+         * @param i element of some set
+         * @returns size of the set to which i belongs to
+         */
         int size(int i){
             return setSize[findSet(i)];
         }
-        //returns max of the set whose part is i
+        /**
+         * @brief A utility function that returns the max element of the set to which i belongs to
+         * @param i element of some set
+         * @returns maximum of the set to which i belongs to
+         */
         int get_max(int i){
             return maxElement[findSet(i)];
         }
-        //returns min of the set whose part is i
+        /**
+         * @brief A utility function that returns the min element of the set to which i belongs to
+         * @param i element of some set
+         * @returns minimum of the set to which i belongs to 
+         */
         int get_min(int i){
             return minElement[findSet(i)];
         }
 
 };
-
-//T(n) = O(n)
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ * */
 int main(){
-    int n = 10;
-    //n: number of items
-    DSU d(n+1);
+    int n = 10;///< number of items
+    dsu d(n+1);///< object of class disjoint sets
     //set 1
     cout << "set 1:"<<endl;
     d.UnionSet(1,2); //performs union operation on 1 and 2

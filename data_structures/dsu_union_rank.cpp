@@ -1,20 +1,45 @@
-#include <iostream>
-#include <vector>
+/**
+ * @file
+ * @brief [dsu(Disjoint sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
+ * @details
+ * dsu : It is a very powerful data structure which keeps track of different 
+ * clusters(sets) of elements, these sets are disjoint(doesnot have a common element).
+ * Disjoint sets uses cases : for finding connected components in a graph,
+ * used in Kruskal's algorithm for finding Minimum Spanning tree.
+ * Operations that can be performed:
+ * 1) UnionSet(i,j): add(element i and j to the set)
+ * 2) findSet(i): returns the representative of the set to which i belogngs to.
+ * 3) getParents(i): prints the parent of i and so on and so forth.
+ * Below is the class-based approach which uses the heuristic of union-ranks.
+ * Using union-rank in findSet(i),we are able to get to the representative of i
+ * in slightly delayed O(logN) time but it allows us to keep tracks of the parent of i.
+ * @author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
+ * @see dsu_path_compression.cpp
+ */
+
+#include <iostream> ///for io
+#include <vector> ///for using vectors
 
 
 using std::cout;
 using std::endl;
 using std::vector;
 
-class DSU{
+/**
+ * @brief Disjoint sets union data structure, class based representation.
+ * @param n number of elements
+ */
+class dsu{
     private:
-        // p: keeps track of parent of i
-        // depth: tracks the depth of i
-        // setSize: size of each chunk(set)
-        vector<int> p,depth,setSize;
+        vector<int> p; ///<keeps track of the parent of ith element
+        vector<int> depth; ///<tracks the depth(rank) of i in the tree
+        vector<int> setSize;///<size of each chunk(set)
     public:
-        //parameter : int n -> maximum number of items
-        explicit DSU(int n){
+        /**
+         * @brief constructor for initialising all data members 
+         * @param n number of elements
+         */
+        explicit dsu(int n){
             p.assign(n,0);
             //initially all of them their own parents
             depth.assign(n,0);
@@ -25,14 +50,25 @@ class DSU{
                 setSize[i] = 1;
             }
         }
+        /**
+         * @brief Method to find the representative of the set to which i belongs to, T(n) = O(logN)
+         * @param i element of some set
+         * @returns representative of the set to which i belongs to
+         */
         int findSet(int i){
-            //union rank i - > p[i]
+            /// using union-rank
             while(i!=p[i]){
                 i = p[i];
             }
             return i;
         }
-        //union of 2 sets
+        /**
+         * @brief Method that combines two disjoint sets to which i and j belongs to and make 
+         * a single set having a common representative.
+         * @param i element of some set
+         * @param j element of some set
+         * @returns void
+         */
         void unionSet(int i,int j){
             //check if both belongs to same set or not
             if(isSame(i,j)){
@@ -57,13 +93,24 @@ class DSU{
             //total size of the resultant set
             setSize[y]+=setSize[x];
         }
-        // checks if both belongs to same set
+        /**
+         * @brief A utility function which check whether i and j belongs to same set or not
+         * @param i element of some set
+         * @param j element of some set
+         * @returns `true` if element i and j are in same set
+         * @returns `false` if element i and j are not in same set
+         */
         bool isSame(int i,int j){
             if(findSet(i) == findSet(j)){
                 return true;
             }
             return false;
         }
+        /**
+         * @brief Method to print all the parents of i, or the path from i to representative.
+         * @param i element of some set
+         * @returns void
+         */
         void getParents(int i){
             while(p[i]!=i){
                 cout << i << " ->";
@@ -74,10 +121,13 @@ class DSU{
         
 };
 
+/**
+ * @brief Main function
+ * @returns 0 on exit 
+ */
 int main(){
-    int n = 10; 
-    //n: number of items
-    DSU d(n+1);
+    int n = 10; ///<number of elements
+    dsu d(n+1); ///< object of class disjoint sets
     d.unionSet(2,1); //performs union operation on 1 and 2
     d.unionSet(1,4);
     d.unionSet(8,1);
