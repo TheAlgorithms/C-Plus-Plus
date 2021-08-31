@@ -30,15 +30,18 @@ inline T Fast_InvSqrt(T x) {
                                            std::int32_t>::type;
     T y = x;
     T x2 = y * 0.5;
-    Tint i = *(Tint *)&y;
-    i = (sizeof(T) == 8 ? 0x5fe6eb50c7b537a9 : 0x5f3759df) - (i >> 1);
-    y = *(T *)&i;
 
-    y = *reinterpret_cast<T *>(&i);
+    Tint i =
+        *reinterpret_cast<Tint *>(&y);  // Store floating-point bits in integer
 
-    y = y * (1.5 - (x2 * y * y));
+    i = (sizeof(T) == 8 ? 0x5fe6eb50c7b537a9 : 0x5f3759df) -
+        (i >> 1);  // Initial guess for Newton's method
+
+    y = *reinterpret_cast<T *>(&i);  // Convert new bits into float
+
+    y = y * (1.5 - (x2 * y * y));  // 1st iteration Newton's method
     if (iterations == 2) {
-        y = y * (1.5 - (x2 * y * y));
+        y = y * (1.5 - (x2 * y * y));  // 2nd iteration, the more exact result
     }
     return y;
 }
