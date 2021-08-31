@@ -136,6 +136,7 @@ var namespaces_dup =
     ] ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
     [ "magic_sequence", "d8/d93/namespacemagic__sequence.html", null ],
+    [ "manacher", "d8/dc6/namespacemanacher.html", null ],
     [ "math", "dd/d47/namespacemath.html", "dd/d47/namespacemath" ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],

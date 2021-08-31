@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['machine_5flearning_3293',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
-  ['magic_5fsequence_3294',['magic_sequence',['../d8/d93/namespacemagic__sequence.html',1,'']]],
+  ['machine_5flearning_3292',['machine_learning',['../d8/d77/namespacemachine__learning.html',1,'']]],
+  ['magic_5fsequence_3293',['magic_sequence',['../d8/d93/namespacemagic__sequence.html',1,'']]],
+  ['manacher_3294',['manacher',['../d8/dc6/namespacemanacher.html',1,'']]],
   ['math_3295',['math',['../dd/d47/namespacemath.html',1,'']]],
   ['median_5fsearch_3296',['median_search',['../da/dd4/namespacemedian__search.html',1,'']]],
   ['merge_5finsertion_3297',['merge_insertion',['../de/d0a/namespacemerge__insertion.html',1,'']]],
