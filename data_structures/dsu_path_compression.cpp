@@ -2,7 +2,7 @@
  * @file
  * @brief [DSU(Disjoint sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
  * @details
- * dsu : It is a very powerful data structure which keeps track of different 
+ * DSU: It is a very powerful data structure that keeps track of different
  * clusters(sets) of elements, these sets are disjoint(doesnot have a common element).
  * Disjoint sets uses cases : for finding connected components in a graph,
  * used in Kruskal's algorithm for finding Minimum Spanning tree.
