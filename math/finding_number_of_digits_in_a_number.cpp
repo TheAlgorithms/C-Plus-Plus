@@ -22,10 +22,10 @@
  * @brief Main function
  * @returns 0 on exit
  */
-int main() {
-    // Initialize `n` & `count` by 0
-    int n = 0;
-    int count = 0;
+uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
+    // Initialize `count` by 0
+
+    uint64_t count = 0;
 
     std::cout << "Enter an integer: ";
     std::cin >> n;
@@ -41,5 +41,35 @@ int main() {
     }
     std::cout << "Number of digits: " << count;
 
+    return 0;
+}
+
+void test(uint64_t count, uint64_t expected) {
+    assert(finding_number_of_digits_in_a_number(count) == expected);
+}
+
+void tests() {
+    std::cout << "Test 1:\t n=5\t...";
+    test(5, 1);
+    std::cout << "passed\n";
+
+    std::cout << "Test 2:\t n=15\t...";
+    test(15, 2);
+    std::cout << "passed\n";
+
+    std::cout << "Test 3:\t n=0\t...";
+    test(0, 1);
+    std::cout << "passed\n";
+
+    std::cout << "Test 3:\t n=0\t...";
+    test(-10, 2);
+    std::cout << "passed\n";
+}
+
+/**
+ * Main function
+ */
+int main() {
+    tests();
     return 0;
 }
