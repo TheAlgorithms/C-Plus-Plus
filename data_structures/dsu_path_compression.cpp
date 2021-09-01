@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief [DSU(Disjoint sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
+ * @brief [DSU (Disjoint sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
  * @details
  * DSU: It is a very powerful data structure that keeps track of different
  * clusters(sets) of elements, these sets are disjoint(doesnot have a common element).
