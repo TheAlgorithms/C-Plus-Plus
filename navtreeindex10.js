@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"db/d3f/wave__sort_8cpp.html#aa3e61ec7fbcf7f9b52de306e6dd6a41c":[11,0,20,21,2],
+"db/d3f/wave__sort_8cpp.html#aa3e61ec7fbcf7f9b52de306e6dd6a41c":[9,0,80,8,0],
+"db/d3f/wave__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,20,21,1],
+"db/d3f/wave__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,20,21,0],
+"db/d66/struct_item.html":[10,0,26],
 "db/d66/struct_item.html#a05e743552459fc8c2abdc80a0f4f0b0a":[10,0,26,1],
 "db/d66/struct_item.html#a62e6c5a24f2618be18e46407857c98de":[10,0,26,0],
 "db/d6f/namespaceheavy__light__decomposition.html":[9,0,28],
@@ -172,8 +177,8 @@ var NAVTREEINDEX10 =
 "db/dc4/floyd__cycle__detection__algo_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,19,3,1],
 "db/dca/kadane2_8cpp.html":[11,0,5,5],
 "db/dca/kadane2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,5,5,0],
-"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[11,0,5,5,1],
 "db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[9,0,21,3,0],
+"db/dca/kadane2_8cpp.html#af3029007a422a914a85c0b0122f1c7b4":[11,0,5,5,1],
 "db/dd3/ode__forward__euler_8cpp.html":[11,0,14,9],
 "db/dd3/ode__forward__euler_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,14,9,3],
 "db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f":[11,0,14,9,5],
@@ -184,8 +189,8 @@ var NAVTREEINDEX10 =
 "db/df3/happy__number_8cpp.html#a00ccdb1166a7c83ac3c33ac67a2532b7":[11,0,16,5,0],
 "db/df3/happy__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,5,1],
 "dc/d14/wildcard__matching_8cpp.html":[11,0,0,10],
-"dc/d14/wildcard__matching_8cpp.html#a182d0f016b34e40f86be8d6df05dc9ac":[9,0,3,7,0],
 "dc/d14/wildcard__matching_8cpp.html#a182d0f016b34e40f86be8d6df05dc9ac":[11,0,0,10,2],
+"dc/d14/wildcard__matching_8cpp.html#a182d0f016b34e40f86be8d6df05dc9ac":[9,0,3,7,0],
 "dc/d14/wildcard__matching_8cpp.html#a597f5c6e23f88d339c80eb83f8a6e8ff":[11,0,0,10,3],
 "dc/d14/wildcard__matching_8cpp.html#a597f5c6e23f88d339c80eb83f8a6e8ff":[9,0,3,7,1],
 "dc/d14/wildcard__matching_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,10,1],
@@ -218,8 +223,8 @@ var NAVTREEINDEX10 =
 "dc/d52/linear__recurrence__matrix_8cpp.html#af5e240c0cfaabed122a0596f800b3d14":[9,0,50,2,0],
 "dc/d5a/rat__maze_8cpp.html":[11,0,0,6],
 "dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,6,2],
-"dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,6,1],
 "dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[9,0,3,4,0],
+"dc/d5a/rat__maze_8cpp.html#ab99107bfb4c6934cd4691868c66c0aa3":[11,0,0,6,1],
 "dc/d5a/rat__maze_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,6,0],
 "dc/d61/classgraph_1_1_graph.html":[10,0,4,1],
 "dc/d61/classgraph_1_1_graph.html#a190c0eb4739b6a8dfc1c3f684e66d937":[10,0,4,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a891264e2eb1357b2b3282e5532250869":[10,0,6,1,0,0,7],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a8e4c57922478ccc2b7c6277c05608714":[10,0,6,1,0,0,8],
 "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0":[10,0,6,1,0,0,3],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#acc6cfdcc9d6e5170340abae63234a442":[10,0,6,1,0,0,9],
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ace9c37dd1322d3745de9713c90df8003":[10,0,6,1,0,0,11],
-"dc/d93/trie__modern_8cpp.html":[11,0,3,16],
-"dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,3,16,2],
-"dc/db4/md__r_e_v_i_e_w_e_r__c_o_d_e.html":[6],
-"dc/db5/struct_queue.html":[10,0,37]
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#acc6cfdcc9d6e5170340abae63234a442":[10,0,6,1,0,0,9]
 };
