@@ -59,7 +59,6 @@ std::vector<int> find_pat_in_text(const std::string &pattern, const std::string 
  * @returns void
  */
 static void test(){
-    
     // usual case
     std::string text1 = "alskfjaldsabc1abc1abcbksbcdnsdabcabc";
     std::string pattern1 = "abc";
