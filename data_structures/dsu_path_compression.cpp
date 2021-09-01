@@ -17,8 +17,8 @@
  * @see dsu_union_rank.cpp
  */
 
-#include <iostream> ///for io
-#include <vector>   ///for using vectors
+#include <iostream> /// for IO operations
+#include <vector>   /// for std::vector
 
 using std::cout;
 using std::endl;
