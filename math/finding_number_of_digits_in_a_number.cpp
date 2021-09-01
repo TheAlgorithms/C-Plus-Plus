@@ -19,16 +19,13 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief The main function that checks
+ * the number of digits in a number.
+ * @param n the number to check its digits
+ * @returns the digits count
  */
 uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
-    // Initialize `count` by 0
-
-    uint64_t count = 0;
-
-    std::cout << "Enter an integer: ";
-    std::cin >> n;
+    uint64_t count = 0;  ///< the variable used for the digits count
 
     // iterate until `n` becomes 0
     // remove last digit from `n` in each iteration
@@ -39,37 +36,31 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
         // each time the loop is running, `count` will be incremented by 1.
         ++count;
     }
-    std::cout << "Number of digits: " << count;
 
-    return 0;
-}
-
-void test(uint64_t count, uint64_t expected) {
-    assert(finding_number_of_digits_in_a_number(count) == expected);
-}
-
-void tests() {
-    std::cout << "Test 1:\t n=5\t...";
-    test(5, 1);
-    std::cout << "passed\n";
-
-    std::cout << "Test 2:\t n=15\t...";
-    test(15, 2);
-    std::cout << "passed\n";
-
-    std::cout << "Test 3:\t n=0\t...";
-    test(0, 1);
-    std::cout << "passed\n";
-
-    std::cout << "Test 3:\t n=0\t...";
-    test(-10, 2);
-    std::cout << "passed\n";
+    return count;
 }
 
 /**
- * Main function
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    assert(finding_number_of_digits_in_a_number(5492) == 4);
+    assert(finding_number_of_digits_in_a_number(-0) == 0);
+    assert(finding_number_of_digits_in_a_number(10000) == 5);
+    assert(finding_number_of_digits_in_a_number(9) == 1);
+    assert(finding_number_of_digits_in_a_number(100000) == 6);
+    assert(finding_number_of_digits_in_a_number(13) == 2);
+    assert(finding_number_of_digits_in_a_number(564) == 3);
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
-    tests();
+    test();  // run self-test implementations
     return 0;
 }
