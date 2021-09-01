@@ -21,7 +21,7 @@
 #include <cassert>   /// for assert
 
 /**
- * Generate the Z-function for the inputted string.
+ * @brief Generate the Z-function for the inputted string.
  * \param[in] pattern text on which to apply the Z-function
  * \returns the Z-function output as a vector array
  */
@@ -38,7 +38,7 @@ std::vector<int> Z_function(const std::string &pattern) {
 }
 
 /**
- * Using Z_function to find a pattern in a text
+ * @brief Using Z_function to find a pattern in a text
  * \param[in] pattern string pattern to search
  * \param[in] text text in which to search
  * \returns a vector of starting indexes where pattern is found in the text 
@@ -54,7 +54,11 @@ std::vector<int> find_pat_in_text(const std::string &pattern, const std::string 
     return matching_indexes;
 }  
 
-void testing(){
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test(){
     
     // usual case
     std::string text1 = "alskfjaldsabc1abc1abcbksbcdnsdabcabc";
@@ -71,7 +75,10 @@ void testing(){
     assert((matching_indexes2 == std::vector<int>{}));
 }
 
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     
     testing();  
