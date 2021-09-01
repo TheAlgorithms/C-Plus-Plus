@@ -114,8 +114,8 @@ class dsu{
          * same set or not
          * @param i element of some set
          * @param j element of some set
-         * @returns `true` if element i and j are in same set
-         * @returns `false` if element i and j are not in same set
+         * @returns `true` if element `i` and `j` ARE in the same set
+         * @returns `false` if element `i` and `j` are NOT in same set
          */
         bool isSame(int i,int j){
             if(findSet(i) == findSet(j)){
