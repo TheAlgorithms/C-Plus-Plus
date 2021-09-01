@@ -31,12 +31,16 @@ std::vector<uint64_t> Z_function(const std::string &pattern) {
     std::vector<uint64_t> z(pattern_length, 0);
 
     for (uint64_t i = 1, l = 0, r = 0; i < pattern_length; i++) {
-        if (i <= r)
+        if (i <= r) {
             z[i] = std::min(r - i + 1, z[i - l]);
-        while (i + z[i] < pattern_length && pattern[z[i]] == pattern[i + z[i]])
+        }
+        while (i + z[i] < pattern_length &&
+               pattern[z[i]] == pattern[i + z[i]]) {
             z[i]++;
-        if (i + z[i] - 1 > r)
+        }
+        if (i + z[i] - 1 > r) {
             r = i + z[i] - 1;
+        }
     }
     return z;
 }
@@ -48,14 +52,15 @@ std::vector<uint64_t> Z_function(const std::string &pattern) {
  * \returns a vector of starting indexes where pattern is found in the text
  */
 std::vector<uint64_t> find_pat_in_text(const std::string &pattern,
-                                  const std::string &text) {
+                                       const std::string &text) {
     uint64_t text_length = text.size(), pattern_length = pattern.size();
     std::vector<uint64_t> z = Z_function(pattern + '#' + text);
     std::vector<uint64_t> matching_indexes;
 
     for (uint64_t i = 0; i < text_length; i++) {
-        if (z[i + pattern_length + 1] == pattern_length)
+        if (z[i + pattern_length + 1] == pattern_length) {
             matching_indexes.push_back(i);
+        }
     }
     return matching_indexes;
 }
