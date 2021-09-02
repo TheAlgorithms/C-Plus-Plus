@@ -7,7 +7,7 @@
  * 1. The Z-function for a string is an array of length n where the
  * i-th element is equal to the greatest number of characters starting
  * from the position i that coincide with the first characters of s.
- * 2. Eg string : ababb then z[2]=2 as s[2]=s[0] and s[3]=s[1] and s[4]!=s[2]
+ * 2. E.g.: string: ababb then z[2]=2 as s[2]=s[0] and s[3]=s[1] and s[4]!=s[2]
  * @author [Ritika Gupta](https://github.com/RitikaGupta8734)
  */
 
