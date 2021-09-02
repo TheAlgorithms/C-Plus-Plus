@@ -4,7 +4,6 @@
  * finding occurences of a pattern within a piece of text with time and space
  * complexity O(n + m)
  * @details
- * DESCRIPTION
  * 1. The Z-function for a string is an array of length n where the
  * i-th element is equal to the greatest number of characters starting
  * from the position i that coincide with the first characters of s.
