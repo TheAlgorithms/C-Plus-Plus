@@ -19,6 +19,7 @@
 
 #include <iostream> /// for IO operations
 #include <vector>  /// for std::vector
+#include <cassert>   /// for assert
 
 
 using std::cout;
@@ -31,20 +32,20 @@ using std::vector;
  */
 class dsu{
     private:
-        vector<int> p; ///<keeps track of the parent of ith element
-        vector<int> depth; ///<tracks the depth(rank) of i in the tree
-        vector<int> setSize;///<size of each chunk(set)
+        vector<uint64_t> p; ///<keeps track of the parent of ith element
+        vector<uint64_t> depth; ///<tracks the depth(rank) of i in the tree
+        vector<uint64_t> setSize;///<size of each chunk(set)
     public:
         /**
          * @brief constructor for initialising all data members 
          * @param n number of elements
          */
-        explicit dsu(int n){
+        explicit dsu(uint64_t n){
             p.assign(n,0);
             //initially all of them their own parents
             depth.assign(n,0);
             setSize.assign(n,0);
-            for(int i=0;i<n;i++){
+            for(uint64_t i=0;i<n;i++){
                 p[i] = i;
                 depth[i] = 0;
                 setSize[i] = 1;
@@ -55,7 +56,7 @@ class dsu{
          * @param i element of some set
          * @returns representative of the set to which i belongs to
          */
-        int findSet(int i){
+        uint64_t findSet(uint64_t i){
             /// using union-rank
             while(i!=p[i]){
                 i = p[i];
@@ -69,14 +70,14 @@ class dsu{
          * @param j element of some set
          * @returns void
          */
-        void unionSet(int i,int j){
+        void unionSet(uint64_t i,uint64_t j){
             //check if both belongs to same set or not
             if(isSame(i,j)){
                 return;
             }
             //we find representative of the i and j
-            int x = findSet(i);
-            int y = findSet(j);
+            uint64_t x = findSet(i);
+            uint64_t y = findSet(j);
 
             //always keeping the min as x
             //in order to create a shallow tree
@@ -100,7 +101,7 @@ class dsu{
          * @returns `true` if element i and j are in same set
          * @returns `false` if element i and j are not in same set
          */
-        bool isSame(int i,int j){
+        bool isSame(uint64_t i,uint64_t j){
             if(findSet(i) == findSet(j)){
                 return true;
             }
@@ -111,37 +112,71 @@ class dsu{
          * @param i element of some set
          * @returns void
          */
-        void getParents(int i){
+        vector<uint64_t> getParents(uint64_t i){
+            vector<uint64_t> ans;
             while(p[i]!=i){
-                cout << i << " ->";
+                ans.push_back(i);
                 i = p[i];
             }
-            cout << p[i] << endl;
+            ans.push_back(i);
+            return ans;
         }
         
 };
+/**
+ * @brief Self-implementation Test case #1
+ * @returns void
+ */
+static void test1() {
+    /* checks the parents in the resultant structures */
+    cout << "Test case# 1: passed"<<endl;
+    uint64_t n = 10; ///<number of elements
+    dsu d(n+1); ///< object of class disjoint sets
+    d.unionSet(2,1); //performs union operation on 1 and 2
+    d.unionSet(1,4);
+    d.unionSet(8,1);
+    d.unionSet(3,5);
+    d.unionSet(5,6);
+    d.unionSet(5,7);
+    d.unionSet(9,10);
+    d.unionSet(2,10);
+    //keeping track of the changes using parent pointers
+    vector<uint64_t> ans = {7,5};
+    for(uint64_t i=0;i<ans.size();i++){
+        assert(d.getParents(7).at(i) == ans[i]); //makes sure algorithm works fine
+    }
+}
+/**
+ * @brief Self-implementation Test case #2
+ * @returns void
+ */
+static void test2() {
+    /* checks the parents in the resultant structures */
+    cout << "Test case# 2: passed"<<endl;
+    uint64_t n = 10; ///<number of elements
+    dsu d(n+1); ///< object of class disjoint sets
+    d.unionSet(2,1); //performs union operation on 1 and 2
+    d.unionSet(1,4);
+    d.unionSet(8,1);
+    d.unionSet(3,5);
+    d.unionSet(5,6);
+    d.unionSet(5,7);
+    d.unionSet(9,10);
+    d.unionSet(2,10);
 
+    //keeping track of the changes using parent pointers
+    vector<uint64_t> ans = {2,1,10};
+    for(uint64_t i=0;i<ans.size();i++){
+        assert(d.getParents(2).at(i) == ans[i]); //makes sure algorithm works fine
+    }
+}
 /**
  * @brief Main function
  * @returns 0 on exit 
  */
 int main(){
-    int n = 10; ///<number of elements
-    dsu d(n+1); ///< object of class disjoint sets
-    d.unionSet(2,1); //performs union operation on 1 and 2
-    d.unionSet(1,4);
-    d.unionSet(8,1);
-    
-    d.unionSet(3,5);
-    d.unionSet(5,6);
-    d.unionSet(5,7);
-
-    d.unionSet(9,10);
-    d.unionSet(2,10);
-
-    //keeping track of the changes using parent pointers
-    d.getParents(7);
-    d.getParents(2);
+    test1();
+    test2();
 
 
     return 0;

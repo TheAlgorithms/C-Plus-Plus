@@ -19,6 +19,7 @@
 
 #include <iostream> /// for IO operations
 #include <vector>   /// for std::vector
+#include <cassert>   /// for assert
 
 using std::cout;
 using std::endl;
@@ -30,34 +31,34 @@ using std::vector;
  */
 class dsu{
     private:
-        vector<int> p; ///<keeps track of the parent of ith element
-        vector<int> depth; ///<tracks the depth(rank) of i in the tree
-        vector<int> setSize;///<size of each chunk(set)
-        vector<int> maxElement;/// <maximum of each set to which i belongs to
-        vector<int> minElement;/// <minimum of each set to which i belongs to
+        vector<uint64_t> p; ///<keeps track of the parent of ith element
+        vector<uint64_t> depth; ///<tracks the depth(rank) of i in the tree
+        vector<uint64_t> setSize;///<size of each chunk(set)
+        vector<uint64_t> maxElement;/// <maximum of each set to which i belongs to
+        vector<uint64_t> minElement;/// <minimum of each set to which i belongs to
     public:
         /**
         * @brief contructor for initialising all data members.
         * @param n number of elements
         */
-        explicit dsu(int n){
+        explicit dsu(uint64_t n){
             p.assign(n,0);
             //initially all of them are their own parents.
-            for(int i=0;i<n;i++){
+            for(uint64_t i=0;i<n;i++){
                 p[i] = i;
             }
             //initially all have depth =0
             depth.assign(n,0);
             maxElement.assign(n,0);
             minElement.assign(n,0);
-            for(int i=0;i<n;i++){
+            for(uint64_t i=0;i<n;i++){
                 depth[i] = 0;
                 maxElement[i] = i;
                 minElement[i] = i;
             }
             setSize.assign(n,0);
             //initially set size will be 1
-            for(int i=0;i<n;i++){
+            for(uint64_t i=0;i<n;i++){
                 setSize[i]=1;
             }
         }
@@ -67,7 +68,7 @@ class dsu{
          * @param i element of some set
          * @returns representative of the set to which i belongs to. 
          */
-        int findSet(int i){
+        uint64_t findSet(uint64_t i){
             /// using path compression
             if(p[i]==i){
                 return i;
@@ -81,15 +82,15 @@ class dsu{
          * @param j element of some set
          * @returns void
         */
-        void UnionSet(int i,int j){
+        void UnionSet(uint64_t i,uint64_t j){
             //check if both belongs to same set or not
             if(isSame(i,j)){
                 return;
             }
 
             //we find the representative of the i and j
-            int x = findSet(i);
-            int y = findSet(j);
+            uint64_t x = findSet(i);
+            uint64_t y = findSet(j);
 
             //always keeping the min as x
             //shallow tree
@@ -117,7 +118,7 @@ class dsu{
          * @returns `true` if element `i` and `j` ARE in the same set
          * @returns `false` if element `i` and `j` are NOT in same set
          */
-        bool isSame(int i,int j){
+        bool isSame(uint64_t i,uint64_t j){
             if(findSet(i) == findSet(j)){
                 return true;
             }
@@ -128,15 +129,20 @@ class dsu{
          * @param i element of some set
          * @returns void
          */
-        void get(int i){
-            cout << "min:" << get_min(i) << " max:" << get_max(i) << " size of set:" <<size(i) << endl; 
+        vector<uint64_t> get(uint64_t i){
+            vector<uint64_t> ans;
+            ans.push_back(get_min(i));
+            ans.push_back(get_max(i));
+            ans.push_back(size(i));
+            return ans;
+
         }
         /**
          * @brief A utility function that returns the size of the set to which i belongs to
          * @param i element of some set
          * @returns size of the set to which i belongs to
          */
-        int size(int i){
+        uint64_t size(uint64_t i){
             return setSize[findSet(i)];
         }
         /**
@@ -144,7 +150,7 @@ class dsu{
          * @param i element of some set
          * @returns maximum of the set to which i belongs to
          */
-        int get_max(int i){
+        uint64_t get_max(uint64_t i){
             return maxElement[findSet(i)];
         }
         /**
@@ -152,32 +158,58 @@ class dsu{
          * @param i element of some set
          * @returns minimum of the set to which i belongs to 
          */
-        int get_min(int i){
+        uint64_t get_min(uint64_t i){
             return minElement[findSet(i)];
         }
 
 };
 /**
+ * @brief Self-implementation Test case #1
+ * @returns void
+ */
+static void test1() {
+    /* the minimum, maximum and size of the set*/
+    uint64_t n = 10;///< number of items
+    dsu d(n+1);///< object of class disjoint sets
+    //set 1
+    cout << "Test case# 1: passed"<<endl;
+    d.UnionSet(1,2); //performs union operation on 1 and 2
+    d.UnionSet(1,4); //performs union operation on 1 and 4
+    vector<uint64_t> ans = {1,4,3};
+    for(uint64_t i=0;i<ans.size();i++){
+        assert(d.get(4).at(i) == ans[i]); //makes sure algorithm works fine
+    }
+}
+/**
+ * @brief Self-implementation Test case #2
+ * @returns void
+ */
+static void test2() {
+    /* the minimum, maximum and size of the set */
+    uint64_t n = 10;///< number of items
+    dsu d(n+1);///< object of class disjoint sets
+    //set 1
+    cout << "Test case# 2: passed"<<endl;
+    d.UnionSet(3,5);
+    d.UnionSet(5,6);
+    d.UnionSet(5,7);
+    vector<uint64_t> ans = {3,7,4};
+    for(uint64_t i=0;i<ans.size();i++){
+        assert(d.get(3).at(i) == ans[i]); //makes sure algorithm works fine
+    }
+}
+
+
+/**
  * @brief Main function
  * @returns 0 on exit
  * */
 int main(){
-    int n = 10;///< number of items
+    uint64_t n = 10;///< number of items
     dsu d(n+1);///< object of class disjoint sets
-    //set 1
-    cout << "set 1:"<<endl;
-    d.UnionSet(1,2); //performs union operation on 1 and 2
-    d.UnionSet(1,4);
-    cout << "Representative of "<< 4 << " is "<< d.findSet(4) << endl; //find the representative of the set which 4 belongs to.
-    d.get(4); //print min max and size of set.
 
-    //set 2
-    cout << "\nset 2"<<endl;
-    d.UnionSet(3,5);
-    d.UnionSet(5,6);
-    d.UnionSet(5,7);
-    cout << "Representative of " << 7 <<" is " << d.findSet(7) << endl;
-    d.get(3);
+    test1(); //< test case# 1
+    test2(); //< test case# 2
     
     return 0;
 }
