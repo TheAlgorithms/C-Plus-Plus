@@ -129,7 +129,6 @@ class dsu{
  */
 static void test1() {
     /* checks the parents in the resultant structures */
-    cout << "Test case# 1: passed"<<endl;
     uint64_t n = 10; ///<number of elements
     dsu d(n+1); ///< object of class disjoint sets
     d.unionSet(2,1); //performs union operation on 1 and 2
@@ -145,6 +144,7 @@ static void test1() {
     for(uint64_t i=0;i<ans.size();i++){
         assert(d.getParents(7).at(i) == ans[i]); //makes sure algorithm works fine
     }
+    cout << "Test case# 1: passed"<<endl;
 }
 /**
  * @brief Self-implementation Test case #2
@@ -152,7 +152,6 @@ static void test1() {
  */
 static void test2() {
     /* checks the parents in the resultant structures */
-    cout << "Test case# 2: passed"<<endl;
     uint64_t n = 10; ///<number of elements
     dsu d(n+1); ///< object of class disjoint sets
     d.unionSet(2,1); //performs union operation on 1 and 2
@@ -169,6 +168,7 @@ static void test2() {
     for(uint64_t i=0;i<ans.size();i++){
         assert(d.getParents(2).at(i) == ans[i]); //makes sure algorithm works fine
     }
+    cout << "Test case# 2: passed"<<endl;
 }
 /**
  * @brief Main function

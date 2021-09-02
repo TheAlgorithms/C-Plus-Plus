@@ -172,13 +172,13 @@ static void test1() {
     uint64_t n = 10;///< number of items
     dsu d(n+1);///< object of class disjoint sets
     //set 1
-    cout << "Test case# 1: passed"<<endl;
     d.UnionSet(1,2); //performs union operation on 1 and 2
     d.UnionSet(1,4); //performs union operation on 1 and 4
     vector<uint64_t> ans = {1,4,3};
     for(uint64_t i=0;i<ans.size();i++){
         assert(d.get(4).at(i) == ans[i]); //makes sure algorithm works fine
     }
+    cout << "Test case# 1: passed"<<endl;
 }
 /**
  * @brief Self-implementation Test case #2
@@ -189,7 +189,6 @@ static void test2() {
     uint64_t n = 10;///< number of items
     dsu d(n+1);///< object of class disjoint sets
     //set 1
-    cout << "Test case# 2: passed"<<endl;
     d.UnionSet(3,5);
     d.UnionSet(5,6);
     d.UnionSet(5,7);
@@ -197,6 +196,7 @@ static void test2() {
     for(uint64_t i=0;i<ans.size();i++){
         assert(d.get(3).at(i) == ans[i]); //makes sure algorithm works fine
     }
+    cout << "Test case# 2: passed"<<endl;
 }
 
 
