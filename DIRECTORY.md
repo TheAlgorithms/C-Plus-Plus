@@ -174,6 +174,7 @@
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
   * [Integral Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation.cpp)
+  * [Inv Sqrt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/inv_sqrt.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
   * [Largest Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/largest_power.cpp)
@@ -330,4 +331,5 @@
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
+  * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/manacher_algorithm.cpp)
   * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
