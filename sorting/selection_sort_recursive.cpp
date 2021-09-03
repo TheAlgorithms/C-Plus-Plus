@@ -75,7 +75,7 @@ void selectionSortRecursive(std::vector<T> &in_arr,
         return;
     }
     uint64_t min_element_idx =
-        find_min_index::findMinIndex(in_arr, current_position);
+        selection_sort_recursive::findMinIndex(in_arr, current_position);
     if (min_element_idx != current_position) {
         std::swap(in_arr[min_element_idx], in_arr[current_position]);
     }
