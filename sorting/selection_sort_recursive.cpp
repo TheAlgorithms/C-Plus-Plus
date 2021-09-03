@@ -39,7 +39,7 @@ namespace sorting {
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
  */
-namespace find_min_index {
+namespace selection_sort_recursive {
 /**
  * @brief The main function finds the index of the minimum element
  * @tparam T type of array
