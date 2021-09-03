@@ -81,7 +81,7 @@ static void test() {
     std::string text2 = "greengrass";
     std::string pattern2 = "abc";
 
-    //  matching_indexes2 gets the indexes where pattern2 exists in text2
+    // matching_indexes2 gets the indexes where pattern2 exists in text2
     std::vector<uint64_t> matching_indexes2 = find_pat_in_text(pattern2, text2);
     assert((matching_indexes2 == std::vector<uint64_t>{}));
 }
