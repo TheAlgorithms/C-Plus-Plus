@@ -4,13 +4,6 @@ var namespaces_dup =
     [ "activations", "d5/d39/namespaceactivations.html", null ],
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", [
-      [ "magic_sequence", null, [
-        [ "sequence_t", "d7/d37/magic__sequence_8cpp.html#adeeca4f6f79e86923194ea51c26b37d0", null ],
-        [ "filtering", "d7/d37/magic__sequence_8cpp.html#a74a6a4a80fc2387a0c9c78d5ea18ae49", null ],
-        [ "is_magic", "d7/d37/magic__sequence_8cpp.html#afb1d9a25b782af31be4fc0802c7706b8", null ],
-        [ "print", "d7/d37/magic__sequence_8cpp.html#a537c6003094821f14bd93e5cfc2c32d9", null ],
-        [ "solve", "d7/d37/magic__sequence_8cpp.html#ab65c99bf555abf67525d91ffa405d5ad", null ]
-      ] ],
       [ "n_queens", null, [
         [ "isSafe", "d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160", null ],
         [ "printSolution", "d4/d3e/n__queens_8cpp.html#a40ae0c7fd04eb20e7f3bff13fc6a5808", null ],
@@ -36,8 +29,7 @@ var namespaces_dup =
         [ "number_of_subsets", "d2/d5a/subset__sum_8cpp.html#a7cb50d36a59427a33f64a266dac83d99", null ]
       ] ],
       [ "wildcard_matching", null, [
-        [ "wildcard_matching", "dc/d14/wildcard__matching_8cpp.html#a182d0f016b34e40f86be8d6df05dc9ac", null ],
-        [ "dpTable", "dc/d14/wildcard__matching_8cpp.html#a597f5c6e23f88d339c80eb83f8a6e8ff", null ]
+        [ "dpTable", "dc/d14/wildcard__matching_8cpp.html#a4a5b107f93db24e424b12899fa692c5a", null ]
       ] ],
       [ "graphColoring", "db/dc0/namespacebacktracking.html#a29360ddb1bad75caa61ec895b6e71986", null ],
       [ "isPossible", "db/dc0/namespacebacktracking.html#a80af16e57cfb6aaab2bf1da4c4db3308", null ],
@@ -69,7 +61,7 @@ var namespaces_dup =
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
       [ "abbreviation", null, [
         [ "abbreviation", "d7/d73/abbreviation_8cpp.html#af53b2f647bee9c5b75ef8dd9ef685dc8", null ],
-        [ "abbreviation_recursion", "d7/d73/abbreviation_8cpp.html#a4e606aa4c764ad8d13e49eab002ec7b9", null ]
+        [ "abbreviation_recursion", "d7/d73/abbreviation_8cpp.html#add60b8858720bf217df22d992d0fefaa", null ]
       ] ],
       [ "cut_rod", null, [
         [ "maxProfitByCuttingRod", "d6/d10/cut__rod_8cpp.html#a1cc523a30c18c63eac58220c3c494cfa", null ]
@@ -157,13 +149,13 @@ var namespaces_dup =
     [ "pancake_sort", "df/d10/namespacepancake__sort.html", null ],
     [ "postfix_expression", "d4/de6/namespacepostfix__expression.html", null ],
     [ "qr_algorithm", "d2/d3b/namespaceqr__algorithm.html", [
-      [ "eigen_values", "d2/d3b/namespaceqr__algorithm.html#a763896dbb4a7e95c4a1e614ac0819d66", null ],
-      [ "operator<<", "d2/d3b/namespaceqr__algorithm.html#a7c63c78d6839b8ad73b77c161210b514", null ],
-      [ "operator<<", "d2/d3b/namespaceqr__algorithm.html#a240edf2b6b5942c0e5f2c9d3e326797f", null ],
-      [ "qr_decompose", "d2/d3b/namespaceqr__algorithm.html#ab1ac74497ffb2101040cc1efe3546de8", null ],
+      [ "eigen_values", "d2/d3b/namespaceqr__algorithm.html#a28e2fa3e803abaea6c568dc45d69d8cc", null ],
+      [ "operator<<", "d2/d3b/namespaceqr__algorithm.html#adfbdf47277c8cfee229b05b72f1f7834", null ],
+      [ "operator<<", "d2/d3b/namespaceqr__algorithm.html#a257425cb2365359da51c6fe6741834d8", null ],
+      [ "qr_decompose", "d2/d3b/namespaceqr__algorithm.html#a73ce637634fc49e1d10d190eb388ebf1", null ],
       [ "vector_dot", "d2/d3b/namespaceqr__algorithm.html#a8ea313a1a1b5f9d0e3e332c29c6446ec", null ],
       [ "vector_mag", "d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f", null ],
-      [ "vector_proj", "d2/d3b/namespaceqr__algorithm.html#a5422c76bfa322620de611083bd518d71", null ]
+      [ "vector_proj", "d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc", null ]
     ] ],
     [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", "d4/dd2/namespacequadratic__probing" ],
     [ "queue_using_array", "d9/d70/namespacequeue__using__array.html", null ],
@@ -177,10 +169,10 @@ var namespaces_dup =
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
-        [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ad0cfe2e54b1d3f9d0ca648265d917c6a", null ]
+        [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ae79a9d247691fce0d655fce75f1c04fa", null ]
       ] ],
       [ "dnf_sort", null, [
-        [ "dnfSort", "d6/d1a/dnf__sort_8cpp.html#a60688fc307dbb4b71969dfc191e1e67b", null ]
+        [ "dnfSort", "d6/d1a/dnf__sort_8cpp.html#a621767fe711db64fe57a2ac4987b11f0", null ]
       ] ],
       [ "inversion", null, [
         [ "countInversion", "d2/d26/count__inversions_8cpp.html#a3332498eabf6579ef059c0d0e9f4ec80", null ],
@@ -198,26 +190,26 @@ var namespaces_dup =
         [ "reverse", "d3/d92/pancake__sort_8cpp.html#a99e27ad84ad43df9977776b1a8d5416e", null ]
       ] ],
       [ "radix_sort", null, [
-        [ "radix", "d8/d61/radix__sort2_8cpp.html#a8df9406972cda58c209b30ebae295daa", null ],
-        [ "step_ith", "d8/d61/radix__sort2_8cpp.html#a302672a25ef4561eb41b4f9ef8e518b2", null ]
+        [ "radix", "d8/d61/radix__sort2_8cpp.html#ae0cfd94fa3765b53d4ec7893ffaee5f8", null ],
+        [ "step_ith", "d8/d61/radix__sort2_8cpp.html#a98ead7d43b11505398daf9a894f122f9", null ]
       ] ],
       [ "random_pivot_quick_sort", null, [
-        [ "generateUnsortedArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ad29ec5b3d242892675ba76acad5300a3", null ],
+        [ "generateUnsortedArray", "d1/daa/random__pivot__quick__sort_8cpp.html#a40675d2eb960c71ca31ec475ba90120d", null ],
         [ "getRandomIndex", "d1/daa/random__pivot__quick__sort_8cpp.html#aac5657b4fe2251cd21073f44233f6ea5", null ],
-        [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a80fcb0b18a1ff5588bb00c0ff3b7fb49", null ],
-        [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#a5c8eb5c4cb149b2f6c92582169532e92", null ],
+        [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a3d1c39e1ff42c04fb8ec0c0b9411cd3e", null ],
+        [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5", null ],
         [ "showArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ac3281dc34a9cfd7beb332419b8a0aa10", null ]
       ] ],
       [ "strand", null, [
-        [ "strand_sort", "dc/dd9/strand__sort_8cpp.html#ad75dc6a599ecfe31dadfaf449ee565f6", null ]
+        [ "strand_sort", "dc/dd9/strand__sort_8cpp.html#a2bea2fe5dd38ed63610fdeaddf5785cd", null ]
       ] ],
       [ "wave_sort", null, [
-        [ "waveSort", "db/d3f/wave__sort_8cpp.html#aa3e61ec7fbcf7f9b52de306e6dd6a41c", null ]
+        [ "waveSort", "db/d3f/wave__sort_8cpp.html#a7d4f243b9dc13ace4ef77e30dbc56f12", null ]
       ] ],
       [ "wiggle_sort", null, [
-        [ "wiggleSort", "d1/dcc/wiggle__sort_8cpp.html#a52955ecf8669ff6c5b9b1e66bd7db41d", null ]
+        [ "wiggleSort", "d1/dcc/wiggle__sort_8cpp.html#a99eeded693ac073717282fae365957a1", null ]
       ] ],
-      [ "gnomeSort", "d5/d91/namespacesorting.html#a70a6a99d554280c326f80355c4d2c494", null ],
+      [ "gnomeSort", "d5/d91/namespacesorting.html#aa3677f87b5b4756bc77e9e34c5f27935", null ],
       [ "gnomeSort", "d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1", null ],
       [ "insertionSort", "d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f", null ],
       [ "insertionSort", "d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9", null ],
@@ -226,16 +218,16 @@ var namespaces_dup =
       [ "non_recursive_merge_sort", "d5/d91/namespacesorting.html#a140d913e42fb94176a0b2c8b29a80420", null ],
       [ "non_recursive_merge_sort", "d5/d91/namespacesorting.html#a27236b8d3df3832e1f1225576a122534", null ],
       [ "partition", "d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e", null ],
-      [ "pigeonSort", "d5/d91/namespacesorting.html#a2f6a7a66934f345f86038a280234e706", null ],
+      [ "pigeonSort", "d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3", null ],
       [ "quickSort", "d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178", null ],
       [ "quicksort", "d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168", null ],
-      [ "quicksort", "d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d", null ],
-      [ "randomized_bogosort", "d5/d91/namespacesorting.html#a4c5bd73ffb6082f63dc57d8dcc76794f", null ],
+      [ "quicksort", "d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de", null ],
+      [ "randomized_bogosort", "d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd", null ],
       [ "recursive_bubble_sort", "d5/d91/namespacesorting.html#ae3a775d99dbbb94c130a973df0cfddcf", null ],
       [ "shell_sort", "d5/d91/namespacesorting.html#af2c5b92cbfe73f63f6074c61b0a45331", null ],
       [ "shell_sort", "d5/d91/namespacesorting.html#a5669396c6a6b1e14b97589b6e37980aa", null ],
       [ "shell_sort", "d5/d91/namespacesorting.html#a4d76603c54d3dc56146e92d10a043924", null ],
-      [ "shuffle", "d5/d91/namespacesorting.html#aedfb88e2d6fff1871f038221fe5870fe", null ]
+      [ "shuffle", "d5/d91/namespacesorting.html#a7bfe11bd4703eacd1dab93f25ec639c5", null ]
     ] ],
     [ "sparse_table", "d9/d55/namespacesparse__table.html", null ],
     [ "spirograph", "da/dd3/namespacespirograph.html", [
@@ -249,7 +241,7 @@ var namespaces_dup =
       [ "brute_force", "d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8", null ],
       [ "check_if_equal", "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd", null ],
       [ "create_hash", "d9/d03/namespacestring__search.html#a8fb0bc932ba8b582c9f4c71338d050f8", null ],
-      [ "getFailureArray", "d9/d03/namespacestring__search.html#aa422aab133d4ed5e5d6022a7f701271f", null ],
+      [ "getFailureArray", "d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f", null ],
       [ "kmp", "d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93", null ],
       [ "rabin_karp", "d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9", null ],
       [ "recalculate_hash", "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893", null ]

@@ -1,4 +1,0 @@
-<map id="graph::explore" name="graph::explore">
-<area shape="rect" id="node1" title="Explores the given vertex, exploring a vertex means traversing over all the vertices which are connec..." alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="160,5,267,32"/>
-</map>

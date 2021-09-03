@@ -9,9 +9,7 @@ var class_complex =
     [ "operator+", "da/d5a/class_complex.html#a820afcbb330df716577459d7a3aa3a1c", null ],
     [ "operator-", "da/d5a/class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da", null ],
     [ "operator/", "da/d5a/class_complex.html#ac38437c10eb798f176c384a695171b90", null ],
-    [ "operator=", "da/d5a/class_complex.html#a889215b7b004a3e7ec4d785ca5e7a2ba", null ],
+    [ "operator=", "da/d5a/class_complex.html#a4ac9f529d54cacf2969f2c7179b4c4ac", null ],
     [ "operator~", "da/d5a/class_complex.html#a8d5427f6c42c15283031d73e1418c59d", null ],
-    [ "real", "da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6", null ],
-    [ "im", "da/d5a/class_complex.html#a776d595d5a1b576e9136cbc6bac0589c", null ],
-    [ "re", "da/d5a/class_complex.html#a843ce2f85af4c57db9063c86f3cd9607", null ]
+    [ "real", "da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6", null ]
 ];

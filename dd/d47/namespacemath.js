@@ -4,30 +4,23 @@ var namespacemath =
       [ "calculate", "d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978", null ]
     ] ],
     [ "fibonacci_sum", null, [
-      [ "matrix", "de/dc3/fibonacci__sum_8cpp.html#ae18ea07a8d7fe90ff25abb7c7d1ee5b1", null ],
       [ "fiboSum", "de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742", null ],
       [ "multiply", "de/dc3/fibonacci__sum_8cpp.html#a9c83cca09a3e4ff2a25c816a9303448e", null ],
       [ "power", "de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311", null ],
       [ "result", "de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa", null ]
-    ] ],
-    [ "linear_recurrence_matrix", null, [
-      [ "get_nth_term_of_recurrence_series", "dc/d52/linear__recurrence__matrix_8cpp.html#af5e240c0cfaabed122a0596f800b3d14", null ],
-      [ "is_zero_matrix", "dc/d52/linear__recurrence__matrix_8cpp.html#a7487322bae85648c89da86f34431c103", null ],
-      [ "matrix_exponentiation", "dc/d52/linear__recurrence__matrix_8cpp.html#ab55e45ae404ea360e9eebac8f63692f7", null ],
-      [ "matrix_multiplication", "dc/d52/linear__recurrence__matrix_8cpp.html#a759a232b9d5ab032062b8560343c6af3", null ]
     ] ],
     [ "modular_division", null, [
       [ "mod_division", "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7", null ],
       [ "power", "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179", null ]
     ] ],
     [ "n_bonacci", null, [
-      [ "N_bonacci", "db/d27/n__bonacci_8cpp.html#a767bc5427e0ebaf88ab5a7572a7d852e", null ]
+      [ "N_bonacci", "db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d", null ]
     ] ],
     [ "ncr_modulo_p", null, [
       [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
     ] ],
     [ "vector_cross", null, [
-      [ "cross", "df/d66/vector__cross__product_8cpp.html#abed307975124243d63fe2e118254defe", null ],
+      [ "cross", "df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9", null ],
       [ "mag", "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8", null ]
     ] ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],

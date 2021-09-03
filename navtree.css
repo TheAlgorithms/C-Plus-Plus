@@ -87,6 +87,7 @@
   position: absolute;
   left: 0px;
   width: 250px;
+  overflow : hidden;
 }
 
 .ui-resizable .ui-resizable-handle {

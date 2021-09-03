@@ -2,12 +2,12 @@
 <area shape="rect" id="node1" title="A helper function used by post&#45;merge insert." alt="" coords="5,187,155,228"/>
 <area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="957,34,1107,75"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/get.html#" title=" " alt="" coords="233,92,369,118"/>
-<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a0f60199d0d175c248c67bfad9b9bdafe" title="Get next node which is possibly contains item." alt="" coords="203,142,400,198"/>
+<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a91322b3bb0b2b2175eb56e9e10d7db46" title="Get next node which is possibly contains item." alt="" coords="203,142,400,198"/>
 <area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="227,223,376,264"/>
 <area shape="rect" id="node7" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805" title="A helper function used during post&#45;merge insert." alt="" coords="209,288,394,330"/>
 <area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr/reset.html#" title=" " alt="" coords="228,354,375,381"/>
 <area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="464,92,660,134"/>
-<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5f6d943abaac52a236fe5d945e9d0e25" title="Get the child pointer at position of index." alt="" coords="487,288,637,330"/>
+<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="487,288,637,330"/>
 <area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4808acb43668ff8cfd6f7cb44ceedad3" title="Get item of the \index index." alt="" coords="489,354,635,395"/>
 <area shape="rect" id="node10" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="960,219,1104,260"/>
 <area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95" title="Merge node to a not&#45;full target node." alt="" coords="448,158,676,199"/>

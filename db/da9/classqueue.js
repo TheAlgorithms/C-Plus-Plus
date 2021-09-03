@@ -9,6 +9,5 @@ var classqueue =
     [ "front", "db/da9/classqueue.html#a36d47fdbedc199609818385110d9f922", null ],
     [ "isEmptyQueue", "db/da9/classqueue.html#ac2fff88dce4d7d2eb7134af382bd1b31", null ],
     [ "queueFront", "db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5", null ],
-    [ "queueRear", "db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5", null ],
-    [ "size", "db/da9/classqueue.html#ab45a4bfef7eba256a9c027bae86fc196", null ]
+    [ "queueRear", "db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5", null ]
 ];

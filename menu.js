@@ -36,15 +36,91 @@ function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
     }
     return result;
   }
-
-  $('#main-nav').append(makeTree(menudata,relPath));
-  $('#main-nav').children(':first').addClass('sm sm-dox').attr('id','main-menu');
+  var searchBox;
   if (searchEnabled) {
     if (serverSide) {
-      $('#main-menu').append('<li style="float:right"><div id="MSearchBox" class="MSearchBoxInactive"><div class="left"><form id="FSearchBox" action="'+relPath+searchPage+'" method="get"><img id="MSearchSelect" src="'+relPath+'search/mag.svg" alt=""/><input type="text" id="MSearchField" name="query" value="'+search+'" size="20" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)"></form></div><div class="right"></div></div></li>');
+      searchBox='<div id="MSearchBox" class="MSearchBoxInactive">'+
+                 '<div class="left">'+
+                  '<form id="FSearchBox" action="'+relPath+searchPage+
+                    '" method="get"><img id="MSearchSelect" src="'+
+                    relPath+'search/mag.svg" alt=""/>'+
+                  '<input type="text" id="MSearchField" name="query" value="'+search+
+                    '" size="20" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)"'+
+                    ' onblur="searchBox.OnSearchFieldFocus(false)">'+
+                  '</form>'+
+                 '</div>'+
+                 '<div class="right"></div>'+
+                '</div>';
     } else {
-      $('#main-menu').append('<li style="float:right"><div id="MSearchBox" class="MSearchBoxInactive"><span class="left"><img id="MSearchSelect" src="'+relPath+'search/mag_sel.svg" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt=""/><input type="text" id="MSearchField" value="'+search+'" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)"/></span><span class="right"><a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="'+relPath+'search/close.svg" alt=""/></a></span></div></li>');
+      searchBox='<div id="MSearchBox" class="MSearchBoxInactive">'+
+                 '<span class="left">'+
+                  '<img id="MSearchSelect" src="'+relPath+
+                     'search/mag_sel.svg" onmouseover="return searchBox.OnSearchSelectShow()"'+
+                     ' onmouseout="return searchBox.OnSearchSelectHide()" alt=""/>'+
+                  '<input type="text" id="MSearchField" value="'+search+
+                    '" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" '+
+                    'onblur="searchBox.OnSearchFieldFocus(false)" '+
+                    'onkeyup="searchBox.OnSearchFieldChange(event)"/>'+
+                 '</span>'+
+                 '<span class="right"><a id="MSearchClose" '+
+                  'href="javascript:searchBox.CloseResultsWindow()">'+
+                  '<img id="MSearchCloseImg" border="0" src="'+relPath+
+                  'search/close.svg" alt=""/></a>'
+                 '</span>'
+                '</div>';
     }
+  }
+
+  $('#main-nav').before('<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>'+
+                        '<label class="main-menu-btn" for="main-menu-state">'+
+                        '<span class="main-menu-btn-icon"></span> '+
+                        'Toggle main menu visibility</label>'+
+                        '<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>'+
+                        '</div>');
+  $('#main-nav').append(makeTree(menudata,relPath));
+  $('#main-nav').children(':first').addClass('sm sm-dox').attr('id','main-menu');
+  if (searchBox) {
+    $('#main-menu').append('<li id="searchBoxPos2" style="float:right"></li>');
+  }
+  var $mainMenuState = $('#main-menu-state');
+  var prevWidth = 0;
+  if ($mainMenuState.length) {
+    function initResizableIfExists() {
+      if (typeof initResizable==='function') initResizable();
+    }
+    // animate mobile menu
+    $mainMenuState.change(function(e) {
+      var $menu = $('#main-menu');
+      var options = { duration: 250, step: initResizableIfExists };
+      if (this.checked) {
+        options['complete'] = function() { $menu.css('display', 'block') };
+        $menu.hide().slideDown(options);
+      } else {
+        options['complete'] = function() { $menu.css('display', 'none') };
+        $menu.show().slideUp(options);
+      }
+    });
+    // set default menu visibility
+    function resetState() {
+      var $menu = $('#main-menu');
+      var $mainMenuState = $('#main-menu-state');
+      var newWidth = $(window).outerWidth();
+      if (newWidth!=prevWidth) {
+        if ($(window).outerWidth()<768) {
+          $mainMenuState.prop('checked',false); $menu.hide();
+          $('#searchBoxPos1').html(searchBox);
+          $('#searchBoxPos2').hide();
+        } else {
+          $menu.show();
+          $('#searchBoxPos1').empty();
+          $('#searchBoxPos2').html(searchBox);
+          $('#searchBoxPos2').show();
+        }
+        prevWidth = newWidth;
+      }
+    }
+    $(window).ready(function() { resetState(); initResizableIfExists(); });
+    $(window).resize(resetState);
   }
   $('#main-menu').smartmenus();
 }

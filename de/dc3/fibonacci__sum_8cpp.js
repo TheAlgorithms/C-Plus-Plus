@@ -1,6 +1,5 @@
 var fibonacci__sum_8cpp =
 [
-    [ "matrix", "de/dc3/fibonacci__sum_8cpp.html#ae18ea07a8d7fe90ff25abb7c7d1ee5b1", null ],
     [ "fiboSum", "de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742", null ],
     [ "main", "de/dc3/fibonacci__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "multiply", "de/dc3/fibonacci__sum_8cpp.html#a9c83cca09a3e4ff2a25c816a9303448e", null ],

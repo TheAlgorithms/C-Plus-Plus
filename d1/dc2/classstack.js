@@ -6,7 +6,7 @@ var classstack =
     [ "clear", "d1/dc2/classstack.html#a5cc5efbbd4ea14b3e378580f1388423b", null ],
     [ "display", "d1/dc2/classstack.html#a67f65710c376f67d1ba3bde45a9cb628", null ],
     [ "isEmptyStack", "d1/dc2/classstack.html#a066e4505155b009913c47b2648b1067a", null ],
-    [ "operator=", "d1/dc2/classstack.html#a61370d5fbaf9ec6bca4a8c114c1058e1", null ],
+    [ "operator=", "d1/dc2/classstack.html#a2b4d767447067c8bebca791b747733a1", null ],
     [ "pop", "d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc", null ],
     [ "push", "d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d", null ],
     [ "top", "d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344", null ],

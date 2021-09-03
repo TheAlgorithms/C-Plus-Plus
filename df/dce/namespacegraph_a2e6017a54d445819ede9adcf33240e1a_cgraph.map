@@ -1,5 +1,0 @@
-<map id="graph::depth_first_search" name="graph::depth_first_search">
-<area shape="rect" id="node1" title="initiates depth first search algorithm." alt="" coords="5,23,131,65"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="183,5,289,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="179,56,293,83"/>
-</map>

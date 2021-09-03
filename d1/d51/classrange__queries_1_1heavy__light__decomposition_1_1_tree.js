@@ -10,7 +10,6 @@ var classrange__queries_1_1heavy__light__decomposition_1_1_tree =
     [ "lca", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae2b407e64aaf9878fbee7ee6efe9c7d4", null ],
     [ "lift", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3", null ],
     [ "set_node_val", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a04cd96efaba147b19d3afc769b90ff70", null ],
-    [ "HLD", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#afcdadbdea1e2391cebbb17d2c1ae2f0b", null ],
     [ "t_adj", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ab1aeaefa1bd97b867c652ba916fbdb43", null ],
     [ "t_depth", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a0efd0b9c564092f443ca97030d866ef1", null ],
     [ "t_maxlift", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ab2ab020f798d00be2613ecf63074b7c1", null ],

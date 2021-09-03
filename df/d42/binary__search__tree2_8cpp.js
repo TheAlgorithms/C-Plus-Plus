@@ -1,8 +1,7 @@
 var binary__search__tree2_8cpp =
 [
-    [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
-    [ "bst_node", "dd/db6/structbinary__search__tree_1_1bst__node.html", "dd/db6/structbinary__search__tree_1_1bst__node" ],
-    [ "main", "df/d42/binary__search__tree2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "binary_search_tree< T >", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
+    [ "binary_search_tree< T >::bst_node", "dd/db6/structbinary__search__tree_1_1bst__node.html", "dd/db6/structbinary__search__tree_1_1bst__node" ],
     [ "test_contains", "df/d42/binary__search__tree2_8cpp.html#a1d42876440ac5346e2850a32497385c3", null ],
     [ "test_find_max", "df/d42/binary__search__tree2_8cpp.html#a9856b68e2cba50d2e26a1cbe374e0365", null ],
     [ "test_find_min", "df/d42/binary__search__tree2_8cpp.html#af2847a901160fd45b4044550e9921cb4", null ],

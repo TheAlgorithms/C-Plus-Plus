@@ -325,11 +325,14 @@ function selectAndHighlight(hash,n)
     $(n.itemDiv).addClass('selected');
     $(n.itemDiv).attr('id','selected');
   }
-  if ($('#nav-tree-contents .item:first').hasClass('selected')) {
-    $('#nav-sync').css('top','30px');
-  } else {
-    $('#nav-sync').css('top','5px');
+  var topOffset=5;
+  if (typeof page_layout!=='undefined' && page_layout==1) {
+    topOffset+=$('#top').outerHeight();
   }
+  if ($('#nav-tree-contents .item:first').hasClass('selected')) {
+    topOffset+=25;
+  }
+  $('#nav-sync').css('top',topOffset+'px');
   showRoot();
 }
 

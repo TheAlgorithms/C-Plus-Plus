@@ -1,9 +1,5 @@
 var classdata__structures_1_1tree__234_1_1_tree234 =
 [
-    [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a58d9c491d36e9499a5e757454418abd2", null ],
-    [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac9099c95f6ff571169b1d8d6ad9ab57d", null ],
-    [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aad307a836df0f2ba1ee2e82a48b83fef", null ],
-    [ "~Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac4e7d1eb145af5e18b11c26f94a01e0e", null ],
     [ "DeleteNode", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a273511e84a5243ffffe81be28bd24855", null ],
     [ "GetTreeMaxItem", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657", null ],
     [ "GetTreeMinItem", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36", null ],
@@ -15,8 +11,6 @@ var classdata__structures_1_1tree__234_1_1_tree234 =
     [ "Merge", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9", null ],
     [ "MergeNode", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805", null ],
     [ "MergeNodeNotFull", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95", null ],
-    [ "operator=", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#abb8a213b152c15b2b155f7a3a4e56425", null ],
-    [ "operator=", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a205e5ad2882c7c618ab9d60e5b725284", null ],
     [ "Print", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165", null ],
     [ "PrintNode", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be", null ],
     [ "Remove", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a5da1be3f5b5d967ebb36a201f3ebad11", null ],

@@ -1,12 +1,11 @@
 <map id="machine_learning::adaline::fit" name="machine_learning::adaline::fit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,60,201,87"/>
-<area shape="rect" id="node2" href="$d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56" title=" " alt="" coords="475,53,652,94"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="700,5,815,32"/>
-<area shape="rect" id="node5" href="$d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3" title=" " alt="" coords="249,162,427,203"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="721,60,793,87"/>
-<area shape="rect" id="node6" href="$d6/d30/classmachine__learning_1_1adaline.html#a082f758fb55fe19f22b3df66f89b2325" title=" " alt="" coords="475,221,652,262"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="504,287,623,313"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="501,337,625,364"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="507,119,620,145"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/inner_product.html#" title=" " alt="" coords="499,169,628,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,201,98"/>
+<area shape="rect" id="node2" href="$d6/d30/classmachine__learning_1_1adaline.html#ac8a9c2aaaa63b0f27ea176857e1e7d56" title=" " alt="" coords="475,5,652,47"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="700,67,815,94"/>
+<area shape="rect" id="node5" href="$d6/d30/classmachine__learning_1_1adaline.html#ab11242d9ad5b03a75911e29b04f78fd3" title=" " alt="" coords="249,144,427,185"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="721,13,793,39"/>
+<area shape="rect" id="node6" href="$d6/d30/classmachine__learning_1_1adaline.html#a082f758fb55fe19f22b3df66f89b2325" title=" " alt="" coords="475,224,652,265"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="501,290,625,317"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="507,122,620,149"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/inner_product.html#" title=" " alt="" coords="499,173,628,199"/>
 </map>

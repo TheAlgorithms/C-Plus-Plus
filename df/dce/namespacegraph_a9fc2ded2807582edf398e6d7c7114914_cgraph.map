@@ -1,5 +1,0 @@
-<map id="graph::getConnectedComponents" name="graph::getConnectedComponents">
-<area shape="rect" id="node1" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="5,31,228,57"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="280,5,387,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="276,56,391,83"/>
-</map>

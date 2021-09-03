@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,137,56,163"/>
-<area shape="rect" id="node2" href="$d5/d58/persistent__seg__tree__lazy__prop_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations." alt="" coords="104,137,148,163"/>
-<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a67d8371bc998c67d53e8f64db4f52767" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="196,5,380,47"/>
-<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="196,188,380,229"/>
-<area shape="rect" id="node7" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865" title="Getting the number of versions after updates so far which is equal to the size of the pointers vector..." alt="" coords="196,71,380,112"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="463,107,577,134"/>
-<area shape="rect" id="node9" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#af16c0c87b29119f066041d6e71ab50e0" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="196,253,380,295"/>
-<area shape="rect" id="node5" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="428,195,612,236"/>
-<area shape="rect" id="node6" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#acacb937f95a078a236a4a58f9630a045" title="Creating a new node with the same values of curr node." alt="" coords="660,224,844,265"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,191,56,218"/>
+<area shape="rect" id="node2" href="$d5/d58/persistent__seg__tree__lazy__prop_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Test implementations." alt="" coords="104,191,148,218"/>
+<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="196,29,380,71"/>
+<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="196,119,380,160"/>
+<area shape="rect" id="node7" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0fe4e431f3e09c274ecd7d2d58dcb865" title="Getting the number of versions after updates so far which is equal to the size of the pointers vector..." alt="" coords="196,184,380,225"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="231,250,345,277"/>
+<area shape="rect" id="node9" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="196,325,380,367"/>
+<area shape="rect" id="node5" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="428,267,612,308"/>
+<area shape="rect" id="node6" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="660,296,844,337"/>
 </map>

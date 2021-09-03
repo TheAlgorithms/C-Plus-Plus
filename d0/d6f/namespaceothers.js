@@ -1,8 +1,8 @@
 var namespaceothers =
 [
     [ "iterative_tree_traversals", null, [
-      [ "Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node" ],
-      [ "BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree" ]
+      [ "BinaryTree", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html", "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree" ],
+      [ "Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node" ]
     ] ],
     [ "lru_cache", null, [
       [ "LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache" ]

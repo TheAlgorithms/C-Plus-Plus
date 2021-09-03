@@ -1,8 +1,7 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,64,56,91"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a372ff051a7bc6c91d34a7b58edf8dfce" title="Function that add edge between two nodes or vertices of graph." alt="" coords="108,5,225,32"/>
-<area shape="rect" id="node3" href="$df/dce/namespacegraph.html#a2e6017a54d445819ede9adcf33240e1a" title="initiates depth first search algorithm." alt="" coords="104,57,229,98"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="131,123,203,149"/>
-<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="281,39,388,65"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="277,89,392,116"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="108,5,225,32"/>
+<area shape="rect" id="node3" href="$df/dce/namespacegraph.html#ab5428a3519267a28bba4b4310cfbb6ae" title="initiates depth first search algorithm." alt="" coords="104,57,229,98"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="131,123,203,149"/>
+<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="277,64,384,91"/>
 </map>

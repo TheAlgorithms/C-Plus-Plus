@@ -6,9 +6,8 @@ var structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info =
     [ "Info", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a572de12115e39e34dde6e68b707d59f5", null ],
     [ "Info", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a6abc89925ae7055a63b428e61525ad7a", null ],
     [ "~Info", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#aa816af5a64b37c86be8acda89fdefba2", null ],
-    [ "operator=", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a348ddd7679a5402af8dd173ced4a8c43", null ],
-    [ "operator=", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#aea763e487cf100668d4eff160e40c3fa", null ],
+    [ "operator=", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#ac77d992953fa0de10a755e5a9aa06317", null ],
+    [ "operator=", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#ad3993dbca9c5b3ef9ac361dc7f62ce57", null ],
     [ "depth", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d", null ],
-    [ "heuristic_value", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3", null ],
-    [ "state", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a94862762ad167506dcb0cdebf007d04c", null ]
+    [ "heuristic_value", "da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3", null ]
 ];

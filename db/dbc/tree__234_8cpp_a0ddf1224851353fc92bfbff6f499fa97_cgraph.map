@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,455,56,482"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="104,405,172,431"/>
-<area shape="rect" id="node3" href="$db/dbc/tree__234_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="simple test to insert a given array and delete some item, and print the tree" alt="" coords="113,455,163,482"/>
-<area shape="rect" id="node26" href="$db/dbc/tree__234_8cpp.html#af1ac73779b0fcfbbdce3976c0ca57342" title="simple test to insert continuous number of range [0, n), and print the tree" alt="" coords="113,513,163,539"/>
-<area shape="rect" id="node4" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="229,440,379,481"/>
-<area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="232,505,376,547"/>
-<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a5da1be3f5b5d967ebb36a201f3ebad11" title="Remove item from tree." alt="" coords="221,353,387,395"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,431,56,458"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="104,381,172,407"/>
+<area shape="rect" id="node3" href="$db/dbc/tree__234_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="simple test to insert a given array and delete some item, and print the tree" alt="" coords="113,431,163,458"/>
+<area shape="rect" id="node26" href="$db/dbc/tree__234_8cpp.html#af1ac73779b0fcfbbdce3976c0ca57342" title="simple test to insert continuous number of range [0, n), and print the tree" alt="" coords="113,489,163,515"/>
+<area shape="rect" id="node4" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="229,416,379,457"/>
+<area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="232,481,376,523"/>
+<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a5da1be3f5b5d967ebb36a201f3ebad11" title="Remove item from tree." alt="" coords="221,341,387,383"/>
 <area shape="rect" id="node5" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="450,397,646,439"/>
 <area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="479,529,617,555"/>
 <area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="512,630,584,657"/>
@@ -22,9 +22,9 @@
 <area shape="rect" id="node24" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="717,528,913,569"/>
 <area shape="rect" id="node25" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="713,593,918,635"/>
 <area shape="rect" id="node14" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="991,5,1161,47"/>
-<area shape="rect" id="node15" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#abe9725b6422fd974642f9c9618b0f3be" title="Get rightmose child of the current node." alt="" coords="971,71,1181,112"/>
-<area shape="rect" id="node17" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a692a971c577511abdf7027e7e92a031b" title="Get leftmose child of the current node." alt="" coords="975,136,1177,177"/>
+<area shape="rect" id="node15" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="971,71,1181,112"/>
+<area shape="rect" id="node17" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="975,136,1177,177"/>
 <area shape="rect" id="node18" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="993,201,1159,243"/>
-<area shape="rect" id="node27" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="255,571,353,598"/>
+<area shape="rect" id="node27" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="255,547,353,574"/>
 <area shape="rect" id="node28" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a84ab7b4fe7442b5e2eeed8c050bb86bd" title="In&#45;order traverse." alt="" coords="220,623,388,664"/>
 </map>

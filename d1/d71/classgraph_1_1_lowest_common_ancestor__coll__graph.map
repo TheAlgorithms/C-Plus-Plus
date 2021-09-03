@@ -1,9 +1,5 @@
 <map id="graph::LowestCommonAncestor" name="graph::LowestCommonAncestor">
-<area shape="rect" id="node1" title=" " alt="" coords="151,392,363,419"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="253,95,409,136"/>
-<area shape="rect" id="node5" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="120,213,251,240"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="5,5,125,32"/>
-<area shape="rect" id="node4" href="$d0/d58/classgraph_1_1_rooted_tree.html" title=" " alt="" coords="119,303,252,329"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map.html" title=" " alt="" coords="89,95,229,136"/>
-<area shape="rect" id="node7" title=" " alt="" coords="165,5,203,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,217,197"/>
+<area shape="rect" id="node2" href="$d0/d58/classgraph_1_1_rooted_tree.html" title=" " alt="" coords="45,81,178,108"/>
+<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html" title=" " alt="" coords="46,5,177,32"/>
 </map>

@@ -1,19 +1,19 @@
 var ordinary__least__squares__regressor_8cpp =
 [
-    [ "fit_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a38ff1d954e9b7de93eb20e2dd101a045", null ],
-    [ "get_inverse", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a98ab8f75d981088369b89b8be2182483", null ],
-    [ "get_transpose", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a889f9de199fa793497c864d8e493af05", null ],
-    [ "is_square", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4921874435266592b222e3f2eda0e01f", null ],
+    [ "fit_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#aaddc683af581b51351e1023d2a01ef3b", null ],
+    [ "get_inverse", "dc/d38/ordinary__least__squares__regressor_8cpp.html#af7243bdc6ae3c7169f01b85bb226e66a", null ],
+    [ "get_transpose", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a21c80569aaffb7bf1657e54fa4b97deb", null ],
+    [ "is_square", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a8fa731952b0ee3bc7ec51c51ed21911e", null ],
     [ "main", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
     [ "ols_test", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4261f3c3c3dfdb86f3004eb8aaffea8d", null ],
-    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a9b2b5da35a6ba8ae203c33739ef0b91d", null ],
-    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ab6171f4db68a5e50ae0f3500a63acd26", null ],
-    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a64d9dd5c5816d6d907b00e5f4b0372a5", null ],
-    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6", null ],
-    [ "operator+", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a67249e31221231cf3aaf3cfd870372d0", null ],
-    [ "operator-", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a31be3fe36e76b87d5616ff8e7918cd24", null ],
-    [ "operator/", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a30acf52af3184bc22274234ef5a73536", null ],
-    [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a98eb5807f21b783c341cab402ced6732", null ],
-    [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#aa799b4cec1681219887d89d037cfab50", null ],
-    [ "predict_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4bcaaf41c66da4d3a471dacef133def7", null ]
+    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a207b3a99fd5974d3117e0b0ac0aad234", null ],
+    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae2edd40354a1ca7aeaee3d1e3589e713", null ],
+    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a865e8d26a01962cc93aca66e71346f37", null ],
+    [ "operator*", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a42535e20e97d85aa61271e0894cc0359", null ],
+    [ "operator+", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a01e6c7bf2b09272578b9c5819ce0f36f", null ],
+    [ "operator-", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a4a6a560dbdd0177633783b72db37dc19", null ],
+    [ "operator/", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a7a2d742b9a3ae7b85292e1f86428bb4f", null ],
+    [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#a7075a0fccad9b2d79be0275bfe8948d4", null ],
+    [ "operator<<", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ab1ad727903d7817c2758d25bcb52cbc8", null ],
+    [ "predict_OLS_regressor", "dc/d38/ordinary__least__squares__regressor_8cpp.html#ade6e463f37878fe2a219f927c65b5493", null ]
 ];

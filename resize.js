@@ -53,7 +53,7 @@ function initResizable()
       date.setTime(date.getTime()+(10*365*24*60*60*1000)); // default expiration is one week
       expiration = date.toGMTString();
     }
-    document.cookie = cookie_namespace + "_" + cookie + "=" + val + "; expires=" + expiration+"; path=/";
+    document.cookie = cookie_namespace + "_" + cookie + "=" + val + "; SameSite=Lax; expires=" + expiration+"; path=/";
   }
 
   function resizeWidth()
@@ -75,10 +75,20 @@ function initResizable()
   {
     var headerHeight = header.outerHeight();
     var footerHeight = footer.outerHeight();
-    var windowHeight = $(window).height() - headerHeight - footerHeight;
-    content.css({height:windowHeight + "px"});
-    navtree.css({height:windowHeight + "px"});
-    sidenav.css({height:windowHeight + "px"});
+    var windowHeight = $(window).height();
+    var contentHeight,navtreeHeight,sideNavHeight;
+    if (typeof page_layout==='undefined' || page_layout==0) { /* DISABLE_INDEX=NO */
+      contentHeight = windowHeight - headerHeight - footerHeight;
+      navtreeHeight = contentHeight;
+      sideNavHeight = contentHeight;
+    } else if (page_layout==1) { /* DISABLE_INDEX=YES */
+      contentHeight = windowHeight - footerHeight;
+      navtreeHeight = windowHeight - headerHeight;
+      sideNavHeight = windowHeight;
+    }
+    content.css({height:contentHeight + "px"});
+    navtree.css({height:navtreeHeight + "px"});
+    sidenav.css({height:sideNavHeight + "px"});
     var width=$(window).width();
     if (width!=collapsedWidth) {
       if (width<desktop_vp && collapsedWidth>=desktop_vp) {

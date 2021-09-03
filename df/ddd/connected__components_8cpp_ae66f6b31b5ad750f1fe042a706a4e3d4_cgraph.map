@@ -1,9 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,68,56,95"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a372ff051a7bc6c91d34a7b58edf8dfce" title="Function that add edge between two nodes or vertices of graph." alt="" coords="255,5,373,32"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="255,5,373,32"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="278,68,350,95"/>
-<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a9fc2ded2807582edf398e6d7c7114914" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="203,131,425,157"/>
-<area shape="rect" id="node7" href="$df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="104,43,155,69"/>
-<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a8e9885e0dd49fcf8262a9868124deac9" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="477,105,584,132"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="473,156,588,183"/>
+<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="203,131,425,157"/>
+<area shape="rect" id="node6" href="$df/ddd/connected__components_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="104,43,155,69"/>
+<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="473,131,580,157"/>
 </map>

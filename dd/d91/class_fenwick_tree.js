@@ -5,7 +5,5 @@ var class_fenwick_tree =
     [ "offset", "dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10", null ],
     [ "sum", "dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699", null ],
     [ "sum_range", "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9", null ],
-    [ "update", "dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00", null ],
-    [ "bit", "dd/d91/class_fenwick_tree.html#aa8ecebf6f4ad9faaf4b826668d9409bb", null ],
-    [ "n", "dd/d91/class_fenwick_tree.html#a4816596da965b5f0871d77b5a1985aa1", null ]
+    [ "update", "dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00", null ]
 ];

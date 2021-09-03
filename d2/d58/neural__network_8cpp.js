@@ -1,7 +1,7 @@
 var neural__network_8cpp =
 [
-    [ "DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer" ],
-    [ "NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network" ],
+    [ "machine_learning::neural_network::layers::DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer" ],
+    [ "machine_learning::neural_network::NeuralNetwork", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html", "d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network" ],
     [ "drelu", "d2/d58/neural__network_8cpp.html#aa69e95a34054d7989bf446f96b2ffaf9", null ],
     [ "dsigmoid", "d2/d58/neural__network_8cpp.html#a76eb66212d577f948a457b6e29d87c46", null ],
     [ "dtanh", "d2/d58/neural__network_8cpp.html#a2a5e874b9774aa5362dbcf288828b95c", null ],

@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.9.1 */
+/* The standard CSS for doxygen 1.9.2 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -228,6 +228,33 @@ a.codeRef, a.codeRef:visited, a.lineRef, a.lineRef:visited {
 	color: #4665A2; 
 }
 
+a.code.hl_class { /* style for links to class names in code snippets */ }
+a.code.hl_struct { /* style for links to struct names in code snippets */ }
+a.code.hl_union { /* style for links to union names in code snippets */ }
+a.code.hl_interface { /* style for links to interface names in code snippets */ }
+a.code.hl_protocol { /* style for links to protocol names in code snippets */ }
+a.code.hl_category { /* style for links to category names in code snippets */ }
+a.code.hl_exception { /* style for links to exception names in code snippets */ }
+a.code.hl_service { /* style for links to service names in code snippets */ }
+a.code.hl_singleton { /* style for links to singleton names in code snippets */ }
+a.code.hl_concept { /* style for links to concept names in code snippets */ }
+a.code.hl_namespace { /* style for links to namespace names in code snippets */ }
+a.code.hl_package { /* style for links to package names in code snippets */ }
+a.code.hl_define { /* style for links to macro names in code snippets */ }
+a.code.hl_function { /* style for links to function names in code snippets */ }
+a.code.hl_variable { /* style for links to variable names in code snippets */ }
+a.code.hl_typedef { /* style for links to typedef names in code snippets */ }
+a.code.hl_enumvalue { /* style for links to enum value names in code snippets */ }
+a.code.hl_enumeration { /* style for links to enumeration names in code snippets */ }
+a.code.hl_signal { /* style for links to Qt signal names in code snippets */ }
+a.code.hl_slot { /* style for links to Qt slot names in code snippets */ }
+a.code.hl_friend { /* style for links to friend names in code snippets */ }
+a.code.hl_dcop { /* style for links to KDE3 DCOP names in code snippets */ }
+a.code.hl_property { /* style for links to property names in code snippets */ }
+a.code.hl_event { /* style for links to event names in code snippets */ }
+a.code.hl_sequence { /* style for links to sequence names in code snippets */ }
+a.code.hl_dictionary { /* style for links to dictionary names in code snippets */ }
+
 /* @end */
 
 dl.el {
@@ -313,6 +340,7 @@ div.line.glow {
 
 span.lineno {
 	padding-right: 4px;
+        margin-right: 9px;
 	text-align: right;
 	border-right: 2px solid #0F0;
 	background-color: #E8E8E8;
@@ -437,6 +465,12 @@ address.footer {
 img.footer {
 	border: 0px;
 	vertical-align: middle;
+}
+
+.compoundTemplParams {
+	color: #4665A2;
+	font-size: 80%;
+	line-height: 120%;
 }
 
 /* @group Code Colorization */
@@ -1341,14 +1375,14 @@ dl.section dd {
 
 #projectname
 {
-	font: 300% Tahoma, Arial,sans-serif;
+	font: 200% Tahoma, Arial,sans-serif;
 	margin: 0px;
 	padding: 2px 0px;
 }
     
 #projectbrief
 {
-	font: 120% Tahoma, Arial,sans-serif;
+	font: 90% Tahoma, Arial,sans-serif;
 	margin: 0px;
 	padding: 0px;
 }

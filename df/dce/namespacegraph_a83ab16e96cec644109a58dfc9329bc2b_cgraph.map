@@ -1,0 +1,4 @@
+<map id="graph::getConnectedComponents" name="graph::getConnectedComponents">
+<area shape="rect" id="node1" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="5,29,228,56"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="276,29,383,56"/>
+</map>

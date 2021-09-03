@@ -1,6 +1,6 @@
 var elliptic__curve__key__exchange_8cpp =
 [
-    [ "Point", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point" ],
+    [ "ciphers::elliptic_curve_key_exchange::Point", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point" ],
     [ "Point", "df/d2c/elliptic__curve__key__exchange_8cpp.html#af0a6e3521629c25c2b5d620f26429830", null ],
     [ "addition", "df/d2c/elliptic__curve__key__exchange_8cpp.html#acc5fe9c2032fb7582c38a20d1fa69bcf", null ],
     [ "exp", "df/d2c/elliptic__curve__key__exchange_8cpp.html#ac00616a4e40d3cd5cfb4da87d9ff9af0", null ],

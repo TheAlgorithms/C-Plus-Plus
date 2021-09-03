@@ -1,8 +1,5 @@
 <map id="graph::LowestCommonAncestor::LowestCommonAncestor" name="graph::LowestCommonAncestor::LowestCommonAncestor">
-<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." alt="" coords="5,64,217,105"/>
-<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " alt="" coords="265,64,477,105"/>
-<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="527,5,680,47"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="525,71,681,98"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="540,122,667,149"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="729,13,844,39"/>
+<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." alt="" coords="5,5,217,47"/>
+<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " alt="" coords="265,5,477,47"/>
+<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="525,5,679,47"/>
 </map>

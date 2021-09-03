@@ -1,6 +1,6 @@
 var postfix__evaluation_8cpp =
 [
-    [ "Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ],
+    [ "others::postfix_expression::Stack", "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html", "d5/d8a/classothers_1_1postfix__expression_1_1_stack" ],
     [ "evaluate", "d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338", null ],
     [ "is_number", "d7/d75/postfix__evaluation_8cpp.html#a4c27f949c9d6659be9f5bd2ccbe1360a", null ],
     [ "main", "d7/d75/postfix__evaluation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],

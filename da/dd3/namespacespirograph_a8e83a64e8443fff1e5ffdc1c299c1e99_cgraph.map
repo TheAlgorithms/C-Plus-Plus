@@ -1,0 +1,10 @@
+<map id="spirograph::test" name="spirograph::test">
+<area shape="rect" id="node1" title="Test function to save resulting points to a CSV file." alt="" coords="5,107,119,133"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="176,5,313,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="168,56,321,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/setw.html#" title=" " alt="" coords="207,107,282,133"/>
+<area shape="rect" id="node5" href="$da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac" title=" " alt="" coords="167,157,323,184"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_stringstream/str.html#" title=" " alt="" coords="173,208,316,235"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="371,132,439,159"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="373,183,437,209"/>
+</map>

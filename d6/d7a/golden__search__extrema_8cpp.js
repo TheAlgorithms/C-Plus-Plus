@@ -1,6 +1,5 @@
 var golden__search__extrema_8cpp =
 [
-    [ "_USE_MATH_DEFINES", "d6/d7a/golden__search__extrema_8cpp.html#a525335710b53cb064ca56b936120431e", null ],
     [ "EPSILON", "d6/d7a/golden__search__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70", null ],
     [ "get_minima", "d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b", null ],
     [ "main", "d6/d7a/golden__search__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],

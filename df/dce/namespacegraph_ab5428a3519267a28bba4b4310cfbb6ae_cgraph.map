@@ -1,0 +1,4 @@
+<map id="graph::depth_first_search" name="graph::depth_first_search">
+<area shape="rect" id="node1" title="initiates depth first search algorithm." alt="" coords="5,22,131,63"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="179,29,285,56"/>
+</map>
