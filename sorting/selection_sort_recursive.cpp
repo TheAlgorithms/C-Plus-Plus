@@ -58,7 +58,6 @@ uint64_t findMinIndex(std::vector<T> &in_arr, uint64_t current_position = 0) {
     }
     return answer;
 }
-}  // namespace find_min_index
 
 /**
  * @brief The main function implements Selection sort
