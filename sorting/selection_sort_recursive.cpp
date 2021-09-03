@@ -90,7 +90,7 @@ static void test() {
     // 1st test
     // [1, 0, 2, 1] return [0, 1, 1, 2]
     std::vector<uint64_t> array1 = {0, 1, 1, 2};
-    std::cout << "Test 1... ";
+    std::cout << "1st test... ";
     sorting::selection_sort_recursive::selectionSortRecursive(array1);
     assert(std::is_sorted(std::begin(array1), std::end(array1)));
     std::cout << "passed" << std::endl;
