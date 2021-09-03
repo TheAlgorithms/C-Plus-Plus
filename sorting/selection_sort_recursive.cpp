@@ -39,7 +39,6 @@ namespace sorting {
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
  */
-
 namespace find_min_index {
 /**
  * @brief The main function finds the index of the minimum element
