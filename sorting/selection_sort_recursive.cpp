@@ -4,22 +4,26 @@
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
  * @details
- * The selection sort algorithm divides the input list into two parts: a sorted sublist of items which is built up from 
- * left to right at the front (left) of the list, and a sublist of the remaining unsorted items that occupy the rest 
- * of the list. Initially, the sorted sublist is empty, and the unsorted sublist is the entire input list. The algorithm 
- * proceeds by finding the smallest (or largest, depending on the sorting order) element in the unsorted sublist, 
- * exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist 
- * boundaries one element to the right.
- * 
+ * The selection sort algorithm divides the input list into two parts: a sorted
+ * sublist of items which is built up from left to right at the front (left) of
+ * the list, and a sublist of the remaining unsorted items that occupy the rest
+ * of the list. Initially, the sorted sublist is empty, and the unsorted sublist
+ * is the entire input list. The algorithm proceeds by finding the smallest (or
+ * largest, depending on the sorting order) element in the unsorted sublist,
+ * exchanging (swapping) it with the leftmost unsorted element (putting it in
+ * sorted order), and moving the sublist boundaries one element to the right.
+ *
  * ### Implementation
  * FindMinIndex
- * This function finds the minimum element of the array(list) recursively by simply comparing the minimum element of
- * array reduced size by 1 and compares it to the last element of the array to find the minimum of the whole array. 
- * 
+ * This function finds the minimum element of the array(list) recursively by
+ * simply comparing the minimum element of array reduced size by 1 and compares
+ * it to the last element of the array to find the minimum of the whole array.
+ *
  * SelectionSortRecursive
- * Just like selection sort, it divides the list into two parts (i.e.: sorted and unsorted) and finds the minimum of the
- * unsorted array. By calling the `FindMinIndex` function, it swaps the minimum element with the first element of the list, and then
- * solves recursively for the remaining unsorted list.
+ * Just like selection sort, it divides the list into two parts (i.e.: sorted
+ * and unsorted) and finds the minimum of the unsorted array. By calling the
+ * `FindMinIndex` function, it swaps the minimum element with the first element
+ * of the list, and then solves recursively for the remaining unsorted list.
  * @author [Tushar Khanduri](https://github.com/Tushar-K24)
  */
 
