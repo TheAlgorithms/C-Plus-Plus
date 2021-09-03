@@ -8,83 +8,73 @@
  * @author [Tushar Khanduri](https://github.com/Tushar-K24)
  */
 
-#include <algorithm> /// for std::is_sorted
-#include <cassert>   /// for assert
-#include <iostream>  /// for std::swap and io operations
-#include <vector>    /// for std::vector
+#include <algorithm>  /// for std::is_sorted
+#include <cassert>    /// for assert
+#include <iostream>   /// for std::swap and io operations
+#include <vector>     /// for std::vector
 
 /**
  * @namespace sorting
  * @brief Sorting algorithms
  */
-namespace sorting
-{
-    /**
+namespace sorting {
+/**
  * @namespace selection_sort_recursive
  * @brief Functions for the [Selection
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
  */
 
-    namespace find_min_index
-    {
-        /**
+namespace find_min_index {
+/**
  * @brief The main function finds the index of the minimum element
  * @tparam T type of array
  * @param in_arr array whose minimum element is to be returned
  * @param current_position position/index from where the in_arr starts
  * @returns index of the minimum element
  */
-        template <typename T>
-        uint64_t findMinIndex(std::vector<T> &in_arr, uint64_t current_position = 0)
-        {
-            if (current_position + 1 == in_arr.size())
-            {
-                return current_position;
-            }
-            uint64_t answer = findMinIndex(in_arr, current_position + 1);
-            if (in_arr[current_position] < in_arr[answer])
-            {
-                answer = current_position;
-            }
-            return answer;
-        }
-    } // namespace find_min_index
+template <typename T>
+uint64_t findMinIndex(std::vector<T> &in_arr, uint64_t current_position = 0) {
+    if (current_position + 1 == in_arr.size()) {
+        return current_position;
+    }
+    uint64_t answer = findMinIndex(in_arr, current_position + 1);
+    if (in_arr[current_position] < in_arr[answer]) {
+        answer = current_position;
+    }
+    return answer;
+}
+}  // namespace find_min_index
 
-    namespace selection_sort_recursive
-    {
-        /**
+namespace selection_sort_recursive {
+/**
  * @brief The main function implements Selection sort
  * @tparam T type of array
  * @param in_arr array to be sorted,
  * @param current_position position/index from where the in_arr starts
  * @returns void
  */
-        template <typename T>
-        void selectionSortRecursive(std::vector<T> &in_arr,
-                                    uint64_t current_position = 0)
-        {
-            if (current_position == in_arr.size())
-            {
-                return;
-            }
-            uint64_t min_element_idx =
-                find_min_index::findMinIndex(in_arr, current_position);
-            if (min_element_idx != current_position)
-            {
-                std::swap(in_arr[min_element_idx], in_arr[current_position]);
-            }
-            selectionSortRecursive(in_arr, current_position + 1);
-        }
-    } // namespace selection_sort_recursive
-} // namespace sorting
+template <typename T>
+void selectionSortRecursive(std::vector<T> &in_arr,
+                            uint64_t current_position = 0) {
+    if (current_position == in_arr.size()) {
+        return;
+    }
+    uint64_t min_element_idx =
+        find_min_index::findMinIndex(in_arr, current_position);
+    if (min_element_idx != current_position) {
+        std::swap(in_arr[min_element_idx], in_arr[current_position]);
+    }
+    selectionSortRecursive(in_arr, current_position + 1);
+}
+}  // namespace selection_sort_recursive
+}  // namespace sorting
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
-static void test()
-{
+static void test() {
     // 1st test
     // [1, 0, 2, 1] return [0, 1, 1, 2]
     std::vector<uint64_t> array1 = {0, 1, 1, 2};
@@ -119,8 +109,7 @@ static void test()
  * @brief Main function
  * @returns 0 on exit
  */
-int main()
-{
-    test(); // run self-test implementations
+int main() {
+    test();  // run self-test implementations
     return 0;
 }
