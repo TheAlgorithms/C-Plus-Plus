@@ -42,7 +42,7 @@ class dsu{
          */
         explicit dsu(uint64_t n){
             p.assign(n,0);
-            //initially all of them their own parents
+            ///initially all of them are their own parents
             depth.assign(n,0);
             setSize.assign(n,0);
             for(uint64_t i=0;i<n;i++){
@@ -71,27 +71,27 @@ class dsu{
          * @returns void
          */
         void unionSet(uint64_t i,uint64_t j){
-            //check if both belongs to same set or not
+            ///checks if both belongs to same set or not
             if(isSame(i,j)){
                 return;
             }
-            //we find representative of the i and j
+            ///we find representative of the i and j
             uint64_t x = findSet(i);
             uint64_t y = findSet(j);
 
-            //always keeping the min as x
-            //in order to create a shallow tree
+            ///always keeping the min as x
+            ///in order to create a shallow tree
             if(depth[x]>depth[y]){
                 std::swap(x,y);
             }
-            //making the shallower tree' root parent of the deeper root
+            ///making the shallower tree, root parent of the deeper root
             p[x] = y;
 
-            //if same depth then increase one's depth
+            ///if same depth, then increase one's depth
             if(depth[x] == depth[y]){
                 depth[y]++;
             }
-            //total size of the resultant set
+            ///total size of the resultant set
             setSize[y]+=setSize[x];
         }
         /**
@@ -124,14 +124,14 @@ class dsu{
         
 };
 /**
- * @brief Self-implementation Test case #1
+ * @brief Self-implementations, 1st test
  * @returns void
  */
 static void test1() {
     /* checks the parents in the resultant structures */
     uint64_t n = 10; ///<number of elements
     dsu d(n+1); ///< object of class disjoint sets
-    d.unionSet(2,1); //performs union operation on 1 and 2
+    d.unionSet(2,1); ///< performs union operation on 1 and 2
     d.unionSet(1,4);
     d.unionSet(8,1);
     d.unionSet(3,5);
@@ -139,22 +139,22 @@ static void test1() {
     d.unionSet(5,7);
     d.unionSet(9,10);
     d.unionSet(2,10);
-    //keeping track of the changes using parent pointers
+    ///keeping track of the changes using parent pointers
     vector<uint64_t> ans = {7,5};
     for(uint64_t i=0;i<ans.size();i++){
-        assert(d.getParents(7).at(i) == ans[i]); //makes sure algorithm works fine
+        assert(d.getParents(7).at(i) == ans[i]); ///makes sure algorithm works fine
     }
-    cout << "Test case# 1: passed"<<endl;
+    cout << "1st test passed!"<<endl;
 }
 /**
- * @brief Self-implementation Test case #2
+ * @brief Self-implementations, 2nd test
  * @returns void
  */
 static void test2() {
     /* checks the parents in the resultant structures */
     uint64_t n = 10; ///<number of elements
     dsu d(n+1); ///< object of class disjoint sets
-    d.unionSet(2,1); //performs union operation on 1 and 2
+    d.unionSet(2,1); ///performs union operation on 1 and 2
     d.unionSet(1,4);
     d.unionSet(8,1);
     d.unionSet(3,5);
@@ -163,12 +163,12 @@ static void test2() {
     d.unionSet(9,10);
     d.unionSet(2,10);
 
-    //keeping track of the changes using parent pointers
+    ///keeping track of the changes using parent pointers
     vector<uint64_t> ans = {2,1,10};
     for(uint64_t i=0;i<ans.size();i++){
-        assert(d.getParents(2).at(i) == ans[i]); //makes sure algorithm works fine
+        assert(d.getParents(2).at(i) == ans[i]); ///makes sure algorithm works fine
     }
-    cout << "Test case# 2: passed"<<endl;
+    cout << "2nd test passed!"<<endl;
 }
 /**
  * @brief Main function
