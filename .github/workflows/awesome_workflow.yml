@@ -124,3 +124,4 @@ jobs:
           submodules: true
       - run: cmake -B ./build -S .
       - run: cmake --build build
+[![Awesome CI Workflow](https://github.com/TheAlgorithms/C-Plus-Plus/actions/workflows/awesome_workflow.yml/badge.svg)](https://github.com/TheAlgorithms/C-Plus-Plus/actions/workflows/awesome_workflow.yml)
