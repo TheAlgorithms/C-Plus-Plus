@@ -94,21 +94,21 @@ class dsu {
         uint64_t x = findSet(i);
         uint64_t y = findSet(j);
 
-        // always keeping the min as x
-        // shallow tree
+        /// always keeping the min as x
+        /// shallow tree
         if (depth[x] > depth[y]) {
             std::swap(x, y);
         }
-        // making the shallower root's parent the deeper root
+        /// making the shallower root's parent the deeper root
         p[x] = y;
 
-        // if same depth then increase one's depth
+        /// if same depth, then increase one's depth
         if (depth[x] == depth[y]) {
             depth[y]++;
         }
-        // total size of the resultant set.
+        /// total size of the resultant set
         setSize[y] += setSize[x];
-        // changing the maximum elements
+        /// changing the maximum elements
         maxElement[y] = std::max(maxElement[x], maxElement[y]);
         minElement[y] = std::min(minElement[x], minElement[y]);
     }
@@ -176,10 +176,10 @@ static void test1() {
     for (uint64_t i = 0; i < ans.size(); i++) {
         assert(d.get(4).at(i) == ans[i]);  // makes sure algorithm works fine
     }
-    cout << "Test case# 1: passed" << endl;
+    cout << "1st test passed!" << endl;
 }
 /**
- * @brief Self-implementation Test case #2
+ * @brief Self-implementations, 2nd test
  * @returns void
  */
 static void test2() {
@@ -194,7 +194,7 @@ static void test2() {
     for (uint64_t i = 0; i < ans.size(); i++) {
         assert(d.get(3).at(i) == ans[i]);  // makes sure algorithm works fine
     }
-    cout << "Test case# 2: passed" << endl;
+    cout << "2nd test passed!" << endl;
 }
 
 /**
