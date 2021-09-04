@@ -57,7 +57,7 @@ class dsu{
                 minElement[i] = i;
             }
             setSize.assign(n,0);
-            //initially set size will be 1
+            /// initially set size will be equals to one
             for(uint64_t i=0;i<n;i++){
                 setSize[i]=1;
             }
