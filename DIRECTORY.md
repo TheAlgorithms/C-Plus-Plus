@@ -334,3 +334,4 @@
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
   * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/manacher_algorithm.cpp)
   * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
+  * [Z Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/z_function.cpp)
