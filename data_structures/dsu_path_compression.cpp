@@ -83,7 +83,7 @@ class dsu{
          * @returns void
         */
         void UnionSet(uint64_t i,uint64_t j){
-            //check if both belongs to same set or not
+            /// check if both belongs to the same set or not
             if(isSame(i,j)){
                 return;
             }
