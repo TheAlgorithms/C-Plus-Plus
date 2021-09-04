@@ -43,7 +43,7 @@ class dsu{
         */
         explicit dsu(uint64_t n){
             p.assign(n,0);
-            //initially all of them are their own parents.
+            /// initially, all of them are their own parents
             for(uint64_t i=0;i<n;i++){
                 p[i] = i;
             }
