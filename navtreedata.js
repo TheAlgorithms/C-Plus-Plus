@@ -134,15 +134,15 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#aa28ae272e9176557133a10dffa3b94dc",
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f",
-"d4/d86/large__number_8h_source.html",
-"d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de",
-"d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a0431ec5c876e1154d8e1e5f89e1ab34a",
-"d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786",
-"d9/dd1/namespacelinear__recurrence__matrix.html",
-"db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417",
-"dc/dc5/paranthesis__matching_8cpp.html#ade525d33459755a32ba21e1b6910ff21",
-"de/d7b/merge__insertion__sort_8cpp.html#a7161278f18e83b671c6454b139cc5674",
-"globals_func_g.html"
+"d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
+"d5/d91/namespacesorting.html#a27236b8d3df3832e1f1225576a122534",
+"d6/db8/inv__sqrt_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d8/d77/namespacemachine__learning.html#a496302e3371aa7b478cb7d5917904bdd",
+"d9/d90/struct_btree.html",
+"db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d",
+"dc/dc5/paranthesis__matching_8cpp.html",
+"de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40",
+"globals_func_b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

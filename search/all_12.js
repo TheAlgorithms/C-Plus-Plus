@@ -23,8 +23,8 @@ var searchData=
   ['quick_5fexit_20',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',0,'std']]],
   ['quick_5fsort_2ecpp_21',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
   ['quick_5fsort_5f3_2ecpp_22',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]],
-  ['quicksort_23',['quickSort',['../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178',1,'sorting']]],
-  ['quicksort_24',['quicksort',['../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168',1,'sorting::quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)'],['../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de',1,'sorting::quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)']]],
+  ['quicksort_23',['quicksort',['../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168',1,'sorting::quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)'],['../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de',1,'sorting::quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)']]],
+  ['quicksort_24',['quickSort',['../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178',1,'sorting']]],
   ['quicksortrp_25',['quickSortRP',['../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5',1,'sorting::random_pivot_quick_sort']]],
   ['quiet_5fnan_26',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]
 ];
