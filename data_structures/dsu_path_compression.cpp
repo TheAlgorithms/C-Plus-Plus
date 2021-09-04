@@ -162,7 +162,7 @@ class dsu {
     uint64_t get_min(uint64_t i) { return minElement[findSet(i)]; }
 };
 /**
- * @brief Self-implementation Test case #1
+ * @brief Self-test implementations, 1st test
  * @returns void
  */
 static void test1() {
