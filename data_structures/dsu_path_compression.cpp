@@ -47,7 +47,7 @@ class dsu{
             for(uint64_t i=0;i<n;i++){
                 p[i] = i;
             }
-            //initially all have depth =0
+            /// initially all have depth are equals to zero
             depth.assign(n,0);
             maxElement.assign(n,0);
             minElement.assign(n,0);
