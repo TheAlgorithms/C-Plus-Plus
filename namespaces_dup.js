@@ -166,6 +166,7 @@ var namespaces_dup =
     [ "runge_kutta", "d2/de7/namespacerunge__kutta.html", null ],
     [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
     [ "search", "d9/dca/namespacesearch.html", "d9/dca/namespacesearch" ],
+    [ "selection_sort_recursive", "df/d4a/namespaceselection__sort__recursive.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
@@ -199,6 +200,10 @@ var namespaces_dup =
         [ "partition", "d1/daa/random__pivot__quick__sort_8cpp.html#a3d1c39e1ff42c04fb8ec0c0b9411cd3e", null ],
         [ "quickSortRP", "d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5", null ],
         [ "showArray", "d1/daa/random__pivot__quick__sort_8cpp.html#ac3281dc34a9cfd7beb332419b8a0aa10", null ]
+      ] ],
+      [ "selection_sort_recursive", null, [
+        [ "findMinIndex", "d4/d9f/selection__sort__recursive_8cpp.html#a5454eeb691725ccac0f59df1e133f834", null ],
+        [ "selectionSortRecursive", "d4/d9f/selection__sort__recursive_8cpp.html#ab6f7b33a070e376e1f4374e534435e89", null ]
       ] ],
       [ "strand", null, [
         [ "strand_sort", "dc/dd9/strand__sort_8cpp.html#a2bea2fe5dd38ed63610fdeaddf5785cd", null ]
