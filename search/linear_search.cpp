@@ -24,7 +24,7 @@ int LinearSearch(int *array, int size, int key) {
 }
 
 /** main function */
-void main() {
+int main() {
     int size;
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
@@ -49,5 +49,5 @@ void main() {
     }
 
     delete[] array;//deleting the array after performing the functions in order to avoid from further errors or program clashes
-   // return 0;
+    return 0;
 }
