@@ -4,7 +4,12 @@
 // the origin city?
 // This is the naive approach to solve this problem.
 
-#include <bits/stdc++.h>
+// References:
+// https://en.wikipedia.org/wiki/Travelling_salesman_problem
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int TravellingSalesmanProblem(vector<vector<int>> cities, int src, int V) {
