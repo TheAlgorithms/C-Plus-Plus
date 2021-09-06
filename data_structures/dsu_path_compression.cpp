@@ -35,8 +35,8 @@ class dsu {
     vector<uint64_t> p;           ///< keeps track of the parent of ith element
     vector<uint64_t> depth;       ///< tracks the depth(rank) of i in the tree
     vector<uint64_t> setSize;     ///< size of each chunk(set)
-    vector<uint64_t> maxElement;  /// <maximum of each set to which i belongs to
-    vector<uint64_t> minElement;  /// <minimum of each set to which i belongs to
+    vector<uint64_t> maxElement;  ///< maximum of each set to which i belongs to
+    vector<uint64_t> minElement;  ///< minimum of each set to which i belongs to
  public:
     /**
      * @brief contructor for initialising all data members.
