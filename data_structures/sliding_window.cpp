@@ -23,14 +23,16 @@ namespace data_structures {
 template <typename T>
 class Sliding_window : private std::vector<T> {
  public:
-    Sliding_window(unsigned int window_size) : m_window_size(window_size) {}
+    explicit Sliding_window(unsigned int window_size)
+        : m_window_size(window_size) {}
 
     /**
      * @brief add item
      */
     void add_item(T item) {
-        if (this->size() >= m_window_size)
+        if (this->size() >= m_window_size) {
             this->pop_back();
+        }
 
         this->insert(this->begin(), item);
     }
