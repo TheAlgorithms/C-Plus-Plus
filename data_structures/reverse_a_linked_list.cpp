@@ -50,7 +50,7 @@ void create(Node **head, int n) {
 }
 /**
  * function displays all the elements in the list
- * @returns 'void'
+ * @returns void
  * @param node pointer for traversing the list.
  */
 void printList(Node *node) {
