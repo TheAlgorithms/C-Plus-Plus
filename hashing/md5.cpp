@@ -1,10 +1,8 @@
 /**
- * @file md5.cpp
- * @author tGautot (https://github.com/tGautot)
+ * @file
+ * @author [tGautot](https://github.com/tGautot)
  * @brief Simple C++ implementation of the [MD5 Hashing
  * Algorithm](https://en.wikipedia.org/wiki/MD5)
- *
- *
  *
  * @details
  * The [MD5 Algorithm](https://en.wikipedia.org/wiki/MD5) is a
@@ -20,7 +18,7 @@
  * time, yet it is still widely used. This weakness was exploited by the
  * [Flame Malware](https://en.wikipedia.org/wiki/Flame_(malware)) in 2012
  *
- * ### The Algorithm
+ * ### Algorithm
  * First of all, all values are expected to be in [little endian]
  * (https://en.wikipedia.org/wiki/Endianness). This is especially important
  * when using part of the bytestring as an integer.
@@ -42,8 +40,8 @@
  * some implmenetations can work on bytestream, messages of unknown length.
  */
 
-#include <algorithm>
-#include <array>  // To avoid c-style array (thanks clang-tidy)
+#include <algorithm>  // Used for std::copy
+#include <array>      // To avoid c-style array (thanks clang-tidy)
 #include <cassert>
 #include <cstring>  // Used for std::memcopy
 #include <iostream>
@@ -51,16 +49,20 @@
 #include <vector>  // To avoid c-style array of runtime size (thanks clang-tidy)
 
 /**
+ * @namespace hashing
+ *
+ * @brief Hashing algorithms
+ */
+namespace hashing {
+/**
  * @namespace MD5
  *
- * @brief MD5 algorithm for hashing plus some function it uses
- *
+ * @brief Functions for the [MD5](https://en.wikipedia.org/wiki/MD5) algorithm
+ * implementation
  */
 namespace md5 {
-
 /**
  * @brief Rotates the bits of a 32-bit unsigned integer
- *
  * @param n Integer to rotate
  * @param rotate How many bits for the rotation
  * @return uint32_t The rotated integer
@@ -71,12 +73,10 @@ uint32_t leftRotate32bits(uint32_t n, std::size_t rotate) {
 
 /**
  * @brief Checks whether integers are stored as big endian or not
- *
- * @note Taken from [this](https://stackoverflow.com/a/1001373) stackoverflow
+ * @note Taken from [this](https://stackoverflow.com/a/1001373) StackOverflow
  * post
- *
- * @return true
- * @return false
+ * @return true IF integers are detected to work as big-endian
+ * @return false IF integers are detected to work as little-endian
  */
 bool isBigEndian() {
     union {
@@ -89,9 +89,8 @@ bool isBigEndian() {
 
 /**
  * @brief Sets 32-bit integer to little-endian if needed
- *
- * @param n
- * @return uint32_t
+ * @param n Number to set to little-endian (uint32_t)
+ * @return uint32_t param n with binary representation as little-endian
  */
 uint32_t toLittleEndian32(uint32_t n) {
     if (!isBigEndian()) {
@@ -104,9 +103,8 @@ uint32_t toLittleEndian32(uint32_t n) {
 
 /**
  * @brief Sets 64-bit integer to little-endian if needed
- *
- * @param n
- * @return uint32_t
+ * @param n Number to set to little-endian (uint64_t)
+ * @return uint64_t param n with binary representation as little-endian
  */
 uint64_t toLittleEndian64(uint64_t n) {
     if (!isBigEndian()) {
@@ -304,49 +302,69 @@ void* hash(const std::string& message) {
     return hash_bs(&message[0], message.size());
 }
 }  // namespace md5
+}  // namespace hashing
 
+/**
+ * @brief Self-test implementations of well-known MD5 hashes
+ * @returns void
+ */
 void test() {
-    void* sig = md5::hash("");
+    void* sig = hashing::md5::hash("");
     std::cout << "Hashing empty string" << std::endl;
-    std::cout << md5::sig2hex(sig) << std::endl << std::endl;
-    assert(md5::sig2hex(sig).compare("d41d8cd98f00b204e9800998ecf8427e") == 0);
+    std::cout << hashing::md5::sig2hex(sig) << std::endl << std::endl;
+    assert(hashing::md5::sig2hex(sig).compare(
+               "d41d8cd98f00b204e9800998ecf8427e") == 0);
 
-    void* sig2 = md5::hash("The quick brown fox jumps over the lazy dog");
+    void* sig2 =
+        hashing::md5::hash("The quick brown fox jumps over the lazy dog");
     std::cout << "Hashing The quick brown fox jumps over the lazy dog"
               << std::endl;
-    std::cout << md5::sig2hex(sig2) << std::endl << std::endl;
-    assert(md5::sig2hex(sig2).compare("9e107d9d372bb6826bd81d3542a419d6") == 0);
+    std::cout << hashing::md5::sig2hex(sig2) << std::endl << std::endl;
+    assert(hashing::md5::sig2hex(sig2).compare(
+               "9e107d9d372bb6826bd81d3542a419d6") == 0);
 
-    void* sig3 = md5::hash("The quick brown fox jumps over the lazy dog.");
+    void* sig3 =
+        hashing::md5::hash("The quick brown fox jumps over the lazy dog.");
     std::cout << "Hashing "
                  "The quick brown fox jumps over the lazy dog."
               << std::endl;
-    std::cout << md5::sig2hex(sig3) << std::endl << std::endl;
-    assert(md5::sig2hex(sig3).compare("e4d909c290d0fb1ca068ffaddf22cbd0") == 0);
+    std::cout << hashing::md5::sig2hex(sig3) << std::endl << std::endl;
+    assert(hashing::md5::sig2hex(sig3).compare(
+               "e4d909c290d0fb1ca068ffaddf22cbd0") == 0);
 
-    void* sig4 = md5::hash(
+    void* sig4 = hashing::md5::hash(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
     std::cout
         << "Hashing "
            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
         << std::endl;
-    std::cout << md5::sig2hex(sig4) << std::endl << std::endl;
-    assert(md5::sig2hex(sig4).compare("d174ab98d277d9f5a5611c2c9f419d9f") == 0);
+    std::cout << hashing::md5::sig2hex(sig4) << std::endl << std::endl;
+    assert(hashing::md5::sig2hex(sig4).compare(
+               "d174ab98d277d9f5a5611c2c9f419d9f") == 0);
 }
 
+/**
+ * @brief Puts user in a loop where inputs can be given and MD5 hash will be
+ * computed and printed
+ * @returns void
+ */
 void interactive() {
     while (true) {
         std::string input;
         std::cout << "Enter a message to be hashed (only one line): "
                   << std::endl;
         std::getline(std::cin, input);
-        void* sig = md5::hash(input);
-        std::cout << "Hash is: " << md5::sig2hex(sig) << std::endl;
+        void* sig = hashing::md5::hash(input);
+        std::cout << "Hash is: " << hashing::md5::sig2hex(sig) << std::endl;
     }
 }
 
+/**
+ * @brief Main function, calls the tests and then invokes interactive mode
+ * @returns 0 on exit
+ */
 int main() {
-    test();
+    test();  // run self-test implementations
     interactive();
     return 0;
 }
