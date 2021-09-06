@@ -77,8 +77,7 @@ void reverseList(Node **head) {
     *head = prev;
 }
 /**
- * Main function:
- * Allows the user add ,display and reverse values from the list.
+ * @brief Main function
  * @returns 0 on exit
  */
 int main() {
