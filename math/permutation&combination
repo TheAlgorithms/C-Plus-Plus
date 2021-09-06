@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int fact(int n)
+ {
+   if (n == 0 || n == 1)
+    return 1;
+   else
+    return n * fact(n - 1);//used recursion
+}
+int main()
+ {
+   int n, r, combn, perm;
+   cout<<"Enter value of n : ";
+   cin>>n;
+   cout<<"\nEnter value of r : ";
+   cin>>r;
+
+   combn = fact(n) / (fact(r) * fact(n-r));
+   cout << "\nCombination : " << combn;
+
+   perm = fact(n) / fact(n-r);
+   cout << "\nPermutation : " << perm;
+
+   return 0;
+}
