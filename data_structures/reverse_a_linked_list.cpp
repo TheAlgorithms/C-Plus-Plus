@@ -49,7 +49,7 @@ void create(Node **head, int n) {
     }
 }
 /**
- * function displays all the elements in the list
+ * @brief Utility function that displays all the elements in the list
  * @returns void
  * @param node pointer for traversing the list.
  */
