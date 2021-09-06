@@ -52,27 +52,28 @@
 
 /**
  * @namespace MD5
- * 
+ *
  * @brief MD5 algorithm for hashing plus some function it uses
- * 
+ *
  */
 namespace md5 {
 
 /**
  * @brief Rotates the bits of a 32-bit unsigned integer
- * 
+ *
  * @param n Integer to rotate
  * @param rotate How many bits for the rotation
  * @return uint32_t The rotated integer
  */
-uint32_t leftRotate32bits(uint32_t n, std::size_t rotate){
+uint32_t leftRotate32bits(uint32_t n, std::size_t rotate) {
     return (n << rotate) | (n >> (32 - rotate));
 }
 
 /**
  * @brief Checks whether integers are stored as big endian or not
  *
- * @note Taken from [this](https://stackoverflow.com/a/1001373) stackoverflow post
+ * @note Taken from [this](https://stackoverflow.com/a/1001373) stackoverflow
+ * post
  *
  * @return true
  * @return false
@@ -88,12 +89,12 @@ bool isBigEndian() {
 
 /**
  * @brief Sets 32-bit integer to little-endian if needed
- * 
+ *
  * @param n
- * @return uint32_t 
+ * @return uint32_t
  */
 uint32_t toLittleEndian32(uint32_t n) {
-    if(!isBigEndian()){
+    if (!isBigEndian()) {
         return ((n << 24) & 0xFF000000) | ((n << 8) & 0x00FF0000) |
                ((n >> 8) & 0x0000FF00) | ((n >> 24) & 0x000000FF);
     }
@@ -104,45 +105,46 @@ uint32_t toLittleEndian32(uint32_t n) {
 /**
  * @brief Sets 64-bit integer to little-endian if needed
  *
- * @param n 
+ * @param n
  * @return uint32_t
  */
 uint64_t toLittleEndian64(uint64_t n) {
     if (!isBigEndian()) {
-        return ((n << 56) & 0xFF00000000000000) | ((n << 40) & 0x00FF000000000000) |
-               ((n << 24) & 0x0000FF0000000000) | ((n << 8) & 0x000000FF00000000) |
-               ((n >> 8) & 0x00000000FF000000) | ((n >> 24) & 0x0000000000FF0000) |
-               ((n >> 40) & 0x000000000000FF00) | ((n >> 56) & 0x00000000000000FF);
+        return ((n << 56) & 0xFF00000000000000) |
+               ((n << 40) & 0x00FF000000000000) |
+               ((n << 24) & 0x0000FF0000000000) |
+               ((n << 8) & 0x000000FF00000000) |
+               ((n >> 8) & 0x00000000FF000000) |
+               ((n >> 24) & 0x0000000000FF0000) |
+               ((n >> 40) & 0x000000000000FF00) |
+               ((n >> 56) & 0x00000000000000FF);
         ;
     }
     // Machine works on little endian, no need to change anything
     return n;
 }
 
-
 /**
  * @brief Transforms the 128-bit MD5 signature into a 32 char hex string
- * 
+ *
  * @param sig The MD5 signature (Expected 16 bytes)
  * @return std::string The hex signature
  */
-std::string sig2hex(void* sig) { 
+std::string sig2hex(void* sig) {
     const char* hexChars = "0123456789abcdef";
     auto* intsig = static_cast<uint32_t*>(sig);
     std::string hex = "";
     for (uint8_t i = 0; i < 4; i++) {
-
-        for (uint8_t j = 0; j < 8; j++){
+        for (uint8_t j = 0; j < 8; j++) {
             hex.push_back(hexChars[(intsig[i] >> 4 * (7 - j)) & 0xF]);
         }
     }
     return hex;
 }
 
-
 /**
  * @brief The MD5 algorithm itself, taking in a bytestring
- * 
+ *
  * @param input_bs The bytestring to hash
  * @param input_size The size (in BYTES) of the input
  * @return void* Pointer to the 128-bit signature
@@ -152,23 +154,24 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
 
     // Step 0: Initial Data (Those are decided in the MD5 protocol)
     // s is the shift used in the leftrotate each round
-    std::array<uint32_t, 64> s = {7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,
-                   5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20,
-                   4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,
-                   6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21};
+    std::array<uint32_t, 64> s = {
+        7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,
+        5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20, 5, 9,  14, 20,
+        4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,
+        6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21};
     // K is pseudo-random values used each round
     // The values can be obtained by the following python code:
 
     /**
      * @brief Values of K are pseudo-random and used to "salt" each round
      * The values can be obtained by the following python code
-     * 
+     *
      * @code{.py}
      * from math import floor, sin
-     *  
+     *
      * for i in range(64):
      *     print(floor(2**32 * abs(sin(i+1))))
-     * @endcode 
+     * @endcode
      */
     std::array<uint32_t, 64> K = {
         3614090360, 3905402710, 606105819,  3250441966, 4118548399, 1200080426,
@@ -191,7 +194,7 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
 
     // Step 1: Processing the bytestring
 
-    // First compute the size the padded message will have 
+    // First compute the size the padded message will have
     // so it is possible to allocate the right amount of memory
     uint64_t padded_message_size = 0;
     if (input_size % 64 < 56) {
@@ -206,14 +209,14 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
     std::copy(input, input + input_size, padded_message.begin());
 
     // Afterwards comes a single 1 bit and then only zeroes
-    padded_message[input_size] = 1 << 7; // 10000000
-    for (uint64_t i = input_size; i % 64 != 56; i++){
+    padded_message[input_size] = 1 << 7;  // 10000000
+    for (uint64_t i = input_size; i % 64 != 56; i++) {
         if (i == input_size) {
             continue;  // pass first iteration
         }
         padded_message[i] = 0;
     }
-    
+
     // We then have to add the 64-bit size of the message at the end
     // When there is a conversion from int to bytestring or vice-versa
     // We always need to make sure it is little endian
@@ -222,15 +225,14 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
         padded_message[padded_message_size - 8 + i] =
             (input_bitsize_le >> (56 - 8 * i)) & 0xFF;
     }
-    
+
     // Already allocate memory for blocks
     std::array<uint32_t, 16> blocks{};
 
     // Rounds
     for (uint64_t chunk = 0; chunk * 64 < padded_message_size; chunk++) {
-        
         // First, build the 16 32-bits blocks from the chunk
-        for (uint8_t bid = 0; bid < 16; bid++){
+        for (uint8_t bid = 0; bid < 16; bid++) {
             blocks[bid] = 0;
 
             // Having to build a 32-bit word from 4-bit words
@@ -239,7 +241,6 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
                 blocks[bid] = (blocks[bid] << 8) +
                               padded_message[chunk * 64 + bid * 4 + cid];
             }
-        
         }
 
         A = a0;
@@ -248,9 +249,9 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
         D = d0;
 
         // Main "hashing" loop
-        for (uint8_t i = 0; i < 64; i++){
+        for (uint8_t i = 0; i < 64; i++) {
             uint32_t F = 0, g = 0;
-            if(i < 16){
+            if (i < 16) {
                 F = (B & C) | ((~B) & D);
                 g = i;
             } else if (i < 32) {
@@ -263,34 +264,31 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
                 F = C ^ (B | (~D));
                 g = (7 * i) % 16;
             }
-            
 
             // Update the accumulators
             F += A + K[i] + toLittleEndian32(blocks[g]);
-            
+
             A = D;
             D = C;
             C = B;
             B += leftRotate32bits(F, s[i]);
-            
         }
         // Update the state with this chunk's hash
         a0 += A;
         b0 += B;
         c0 += C;
         d0 += D;
-        
     }
-    
+
     // Build signature from state
     // Note, any type could be used for the signature
     // uint8_t was used to make the 16 bytes obvious
     auto* sig = new uint8_t[16];
-    for (uint8_t i = 0; i < 4; i++){
-        sig[i]    = (a0 >> (24 - 8 * i)) & 0xFF;
-        sig[i+4]  = (b0 >> (24 - 8 * i)) & 0xFF;
-        sig[i+8]  = (c0 >> (24 - 8 * i)) & 0xFF;
-        sig[i+12] = (d0 >> (24 - 8 * i)) & 0xFF;
+    for (uint8_t i = 0; i < 4; i++) {
+        sig[i] = (a0 >> (24 - 8 * i)) & 0xFF;
+        sig[i + 4] = (b0 >> (24 - 8 * i)) & 0xFF;
+        sig[i + 8] = (c0 >> (24 - 8 * i)) & 0xFF;
+        sig[i + 12] = (d0 >> (24 - 8 * i)) & 0xFF;
     }
 
     return sig;
@@ -298,7 +296,7 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
 
 /**
  * @brief Converts the string to bytestring and calls the main algorithm
- * 
+ *
  * @param message Plain character message to hash
  * @return void* Pointer to the MD5 signature
  */
@@ -307,7 +305,7 @@ void* hash(const std::string& message) {
 }
 }  // namespace md5
 
-void test(){
+void test() {
     void* sig = md5::hash("");
     std::cout << "Hashing empty string" << std::endl;
     std::cout << md5::sig2hex(sig) << std::endl << std::endl;
@@ -336,8 +334,8 @@ void test(){
     assert(md5::sig2hex(sig4).compare("d174ab98d277d9f5a5611c2c9f419d9f") == 0);
 }
 
-void interactive(){
-    while(true){
+void interactive() {
+    while (true) {
         std::string input;
         std::cout << "Enter a message to be hashed (only one line): "
                   << std::endl;
