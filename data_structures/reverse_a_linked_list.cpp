@@ -9,11 +9,11 @@
  * the pointers) starting from the first link. Whichever link points to null
  * is considered the last link and is pointed to the new value.
  *
- * Linked List can be reversed by using 3 pointers: current, previous, and next_node;
- * we keep iterating until the last node. Meanwhile, before changing to the next
- * of current, we store it in the next_node pointer, now we store the prev
- * pointer in the current of next, this is where the actual reversal happens.
- * And then we move the prev and current pointers one step forward.
+ * Linked List can be reversed by using 3 pointers: current, previous, and
+ * next_node; we keep iterating until the last node. Meanwhile, before changing
+ * to the next of current, we store it in the next_node pointer, now we store
+ * the prev pointer in the current of next, this is where the actual reversal
+ * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
  */
