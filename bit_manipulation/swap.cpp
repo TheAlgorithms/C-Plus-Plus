@@ -15,6 +15,13 @@
 
 using namespace std;
 
+namespace bit_manipulation {
+/**
+ * @namespace hamming_distance
+ * @brief Functions for [Hamming
+ * distance](https://en.wikipedia.org/wiki/Hamming_distance) implementation
+ */
+namespace swap {
 
 /*function to swap two values*/
 void swap_XOR(int *first, int *second){   //passing pointers
@@ -28,6 +35,13 @@ As we are using call by referance, so we don't need to return anything after swa
 because we are changing the values at the address of orginial variables which will led 
 to change of the values in the original variables inself.
 */
+}  // namespace hamming_distance
+}  // namespace bit_manipulation
+
+
+static void test() {
+    assert(bit_manipulation::swap::swap_XOR(11, 2) == (2,11));
+}
 
 
 /**
@@ -40,17 +54,17 @@ int main()
     int b = 30; //initializing second variable named "b" with 30
     int *ptr1 = &a;  //pointer pointing to first variable
     int *ptr2 = &b; //pointer pointing to second variable
-  
+    test();  // execute the tests
  //Printing Values of A and B before swapping.
-  cout<<"The Value of A before swaping is = "<<a<<"\n";
-  cout<<"The Value of B before swaing is = "<<b<<"\n;
+  std::cout<<"The Value of A before swaping is = "<<a<<"\n";
+  std::cout<<"The Value of B before swaing is = "<<b<<"\n";
   
     swap_XOR(ptr1,ptr2);    /* here we are passing two pointers which is also known as pass by reference in which we 
   pass address of variable instead of the value*/
  
  //Printing Values of A and B after swapping.
-   cout<<"The Value of A after swaping is = "<<a<<"\n";
-   cout<<"The Value of B after swaing is = "<<b<<"\n;
+   std::cout<<"The Value of A after swaping is = "<<a<<"\n";
+   std::cout<<"The Value of B after swaping is = "<<b<<"\n";
     
     return 0; 
 }
