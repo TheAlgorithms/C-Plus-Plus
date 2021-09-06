@@ -142,7 +142,7 @@ static void test1() {
     ///keeping track of the changes using parent pointers
     vector<uint64_t> ans = {7,5};
     for(uint64_t i=0;i<ans.size();i++){
-        assert(d.getParents(7).at(i) == ans[i]); ///makes sure algorithm works fine
+        assert(d.getParents(7).at(i) == ans[i]); // makes sure algorithm works fine
     }
     cout << "1st test passed!"<<endl;
 }
