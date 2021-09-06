@@ -132,7 +132,7 @@ static void test() {
     assert(sliding_window.size() == 5);
 
     // Sum of sliding window elements
-    unsigned int sum = 0;
+    int sum = 0;
     for (const auto& item : sliding_window) sum += item;
     assert(sum = 163);
 }
