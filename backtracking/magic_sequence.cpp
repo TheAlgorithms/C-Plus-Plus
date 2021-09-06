@@ -132,4 +132,5 @@ int main() {
             backtracking::magic_sequence::print(item);
         }
     }
+    return 0;
 }
