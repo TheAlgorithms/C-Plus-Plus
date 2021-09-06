@@ -12,7 +12,7 @@
  */
  
 #include <iostream>   // for IO operations
-
+#include <assert.h>
 using namespace std;
 
 namespace bit_manipulation {
@@ -24,11 +24,13 @@ namespace bit_manipulation {
 namespace swap {
 
 /*function to swap two values*/
-void swap_XOR(int *first, int *second){   //passing pointers
+int swap_XOR(int *first, int *second){   //passing pointers
       // swaping code
     *first = *first ^ *second;   //doing XOR of first and second and assigning to first
     *second = *first ^ *second;  //doing XOR of first and second and assigning to second
     *first = *first ^ *second;   //doing XOR of first and second and assigning to first
+
+    return *first; //only for text condition
 }
 /*
 As we are using call by referance, so we don't need to return anything after swapping 
@@ -39,8 +41,11 @@ to change of the values in the original variables inself.
 }  // namespace bit_manipulation
 
 
-static void test() {
-    assert(bit_manipulation::swap::swap_XOR(11, 2) == (2,11));
+static void test(int a,int b) {
+    int *p1, *p2;
+    p1 = &a;
+    p2 = &b;
+    assert(bit_manipulation::swap::swap_XOR(p1, p2)==a); //checking for text condition
 }
 
 
@@ -54,12 +59,12 @@ int main()
     int b = 30; //initializing second variable named "b" with 30
     int *ptr1 = &a;  //pointer pointing to first variable
     int *ptr2 = &b; //pointer pointing to second variable
-    test();  // execute the tests
+    test(a,b);  // execute the tests
  //Printing Values of A and B before swapping.
   std::cout<<"The Value of A before swaping is = "<<a<<"\n";
   std::cout<<"The Value of B before swaing is = "<<b<<"\n";
   
-    swap_XOR(ptr1,ptr2);    /* here we are passing two pointers which is also known as pass by reference in which we 
+    bit_manipulation::swap::swap_XOR(ptr1,ptr2);    /* here we are passing two pointers which is also known as pass by reference in which we 
   pass address of variable instead of the value*/
  
  //Printing Values of A and B after swapping.
