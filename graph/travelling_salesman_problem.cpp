@@ -1,50 +1,108 @@
-// Travelling salesman problem states that:
-// Given a list of cities and the distances between each pair of cities, what is
-// the shortest possible route that visits each city exactly once and returns to
-// the origin city?
-// This is the naive approach to solve this problem.
+/**
+ * @file
+ * @brief [Travelling Salesman Problem]
+ * (https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+ *
+ * @author [Mayank Mamgain](http://github.com/Mayank17M)
+ *
+ * @details
+ * Travelling salesman problem asks:
+ * Given a list of cities and the distances between each pair of cities, what is
+ * the shortest possible route that visits each city exactly once and returns to
+ * the origin city?
+ * TSP can be modelled as an undirected weighted graph, such that cities are the
+ * graph's vertices, paths are the graph's edges, and a path's distance is the
+ * edge's weight. It is a minimization problem starting and finishing at a
+ * specified vertex after having visited each other vertex exactly once.
+ * This is the naive implementation of the problem.
+ */
 
-// References:
-// https://en.wikipedia.org/wiki/Travelling_salesman_problem
+#include <limits.h>
 
 #include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <vector>
-using namespace std;
 
-int TravellingSalesmanProblem(vector<vector<int>> cities, int src, int V) {
-    vector<int> vtx;
+/**
+ * @namespace graph
+ * @brief Graph Algorithms
+ */
+
+namespace graph {
+
+/**
+ * @brief Function calculates the minimum path distance that will cover all the
+ * cities starting from the source.
+ *
+ * @param cities matrix representation of cities
+ * @param src Point from where salesman is starting
+ * @param V number of vertices in the graph
+ *
+ */
+
+int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
+                              int V) {
+    //// vtx stores the vertexs of the graph
+    std::vector<int> vtx;
     for (int i = 0; i < V; i++) {
         if (i != src) {
             vtx.push_back(i);
         }
     }
 
-    // store minimum weight Hamiltonian Cycle.
+    //// store minimum weight Hamiltonian Cycle.
     int min_path = INT_MAX;
     do {
-        // store current Path weight(cost)
+        //// store current Path weight(cost)
         int curr_weight = 0;
 
-        // compute current path weight
+        //// compute current path weight
         int k = src;
-        for (int i = 0; i < vtx.size(); i++) {
-            curr_weight += cities[k][vtx[i]];
+        for (auto i = 0U; i < vtx.size(); i++) {
+            curr_weight += (*cities)[k][vtx[i]];
             k = vtx[i];
         }
-        curr_weight += cities[k][src];
+        curr_weight += (*cities)[k][src];
 
-        // update minimum
-        min_path = min(min_path, curr_weight);
+        //// update minimum
+        min_path = std::min(min_path, curr_weight);
 
     } while (next_permutation(vtx.begin(), vtx.end()));
 
     return min_path;
 }
+}  // namespace graph
 
-int main() {
-    vector<vector<int>> cities = {
+/** Function to test the Algorithm */
+void tests() {
+    std::cout << "Initiatinig Predefined Tests..." << std::endl;
+    std::cout << "Initiating Test 1..." << std::endl;
+    std::vector<std::vector<int>> cities = {
         {0, 20, 42, 35}, {20, 0, 30, 34}, {42, 30, 0, 12}, {35, 34, 12, 0}};
     int V = cities.size();
-    cout << TravellingSalesmanProblem(cities, 0, V);
+    assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 97);
+    std::cout << "Test 1 Passed..." << std::endl;
+
+    std::cout << "Initiating Test 2..." << std::endl;
+    cities = {{0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
+    V = cities.size();
+    assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 75);
+    std::cout << "Test 2 Passed..." << std::endl;
+
+    std::cout << "Initiating Test 3..." << std::endl;
+    cities = {
+        {0, 10, 15, 20}, {10, 0, 35, 25}, {15, 35, 0, 30}, {20, 25, 30, 0}};
+    V = cities.size();
+    assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 80);
+    std::cout << "Test 3 Passed..." << std::endl;
+}
+
+/** Main function */
+int main() {
+    tests();
+    std::vector<std::vector<int>> cities = {
+        {0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
+    int V = cities.size();
+    std::cout << graph::TravellingSalesmanProblem(&cities, 0, V);
 }
