@@ -32,9 +32,9 @@ using std::vector;
  */
 class dsu{
     private:
-        vector<uint64_t> p; ///<keeps track of the parent of ith element
-        vector<uint64_t> depth; ///<tracks the depth(rank) of i in the tree
-        vector<uint64_t> setSize;///<size of each chunk(set)
+        vector<uint64_t> p;          ///< keeps track of the parent of ith element
+        vector<uint64_t> depth;      ///< tracks the depth(rank) of i in the tree
+        vector<uint64_t> setSize;    ///< size of each chunk(set)
     public:
         /**
          * @brief constructor for initialising all data members 
