@@ -16,6 +16,7 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
+ * Graphic Explanation:https://bit.ly/38JLVRd
  */
 #include <iostream>
 #include <memory>
