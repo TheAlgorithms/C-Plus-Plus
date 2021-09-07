@@ -18,8 +18,8 @@
  * completion of an iteration.
  * Graphic Explanation:https://bit.ly/38JLVRd
  */
-#include <iostream>
-#include <memory>
+#include <iostream>/// for I/O operations
+#include <memory> /// for dynamic memory
 #include <cassert> /// for assert
 
 /**
@@ -57,7 +57,7 @@ class list {
         // Initialize the first link
     }
 
-    void insert(int new_elem);
+    void insert(int32_t new_elem);
     void reverseList();
     void display();
     int top();
@@ -70,7 +70,7 @@ class list {
  * function adds new element to the end of the list
  * @param new_elem to be added to the end of the list
  */
-void list::insert(int n) {
+void list::insert(int32_t n) {
    Node *new_node = new Node();
     Node *temp = nullptr;
     new_node->val = n;
@@ -143,7 +143,7 @@ void list::display() {
 
 static void test() {
     data_structures::linked_list::list L;
-    // Insert testing
+  // 1st test
    
     L.insert(11);
     L.insert(12);
@@ -159,7 +159,7 @@ static void test() {
     //Reversal Testing
     assert(L.top()==18);
     assert(L.last()==11);
-    L.display();
+    std::cout << "passed" << std::endl;
   
 }
 
