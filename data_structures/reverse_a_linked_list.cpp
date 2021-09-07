@@ -18,55 +18,82 @@
  * completion of an iteration.
  */
 #include <iostream>
+#include <memory>
+#include <cassert> /// for assert
 
 /**
- * A Node class containing a value and pointer to next node;
+ * @namespace data_structures
+ * @brief Data Structures algorithms
  */
-class Node {
- public:
-    int val;     ///< value of the current link
-    Node *next;  ///< pointer to the next value on the list
+namespace data_structures {
+
+/**
+ * @namespace linked_list
+ * @brief Functions for singly linked list algorithm
+ */
+namespace linked_list {
+/**
+ * A Node class containing a value and pointer to another link
+ */
+class Node
+{
+public:
+int val;     ///< value of the current link
+Node *next;  ///< pointer to the next value on the list
 };
+
+/**
+ * A list class containing a sequence of links
+ */
+class list {
+ private:
+   Node * head;  // link before the actual first element  
+ public:
+    /**
+     * List constructor. Initializes the first link.
+     */
+    list() {
+        // Initialize the first link
+        head = nullptr;
+       
+    }
+
+    void insert(int new_elem);
+    void reverseList();
+    void display();
+    int top();
+    int last();
+};
+
+
+
 /**
  * function adds new element to the end of the list
- * @param n to be added to the end of the list and
- * double pointer to the head node of the list to
- * reflect the changes globally in the whole program
+ * @param new_elem to be added to the end of the list
  */
-void create(Node **head, int n) {
-    Node *new_node = new Node();
+void list::insert(int n) {
+   Node *new_node = new Node();
     Node *temp = nullptr;
     new_node->val = n;
     new_node->next = nullptr;
-    if (*head == nullptr) {
-        *head = new_node;
+    if (head == nullptr) {
+        head = new_node;
     } else {
-        temp = *head;
+        temp = head;
         while (temp->next != nullptr) {
             temp = temp->next;
         }
         temp->next = new_node;
     }
 }
-/**
- * @brief Utility function that displays all the elements in the list
- * @returns void
- * @param node pointer for traversing the list.
- */
-void printList(Node *node) {
-    while (node != nullptr) {
-        std::cout << node->val << "\t";
-        node = node->next;
-    }
-    std::cout << "\n";
-}
 
 /**
- * function reverseList for reversing the  list
- * @param double pointer to head node
+ * function reverseList for reversing the  list 
+ * @brief Using current,previous and next pointer.
+ * @returns 'void'
  */
-void reverseList(Node **head) {
-    Node *curr = *head;
+void list:: reverseList() {
+    Node *curr = head;
     Node *prev = nullptr, *next_node = nullptr;
     while (curr != nullptr) {
         next_node = curr->next;
@@ -74,49 +101,74 @@ void reverseList(Node **head) {
         prev = curr;
         curr = next_node;
     }
-    *head = prev;
+    head = prev;
 }
+/**
+ * function to find the top element of the list
+ * @returns 'int'
+ */
+int list::top()
+{
+    int n=head->val;
+    return n;
+}
+/**
+ * function to find the last element of the list
+ *  @returns 'int'
+ */
+int list::last()
+{
+    Node *t=head;
+    while(t->next!=nullptr)
+    {
+        t=t->next;
+    }
+    return t->val;
+}
+/**
+ * function displays all the elements in the list
+ * @returns 'void'
+ */
+void list::display() {
+    Node *node=head;
+    while (node != nullptr) {
+        std::cout << node->val << "\t";
+        node = node->next;
+    }
+    std::cout << "\n";
+}
+
+
+}  // namespace linked_list
+}  // namespace data_structures
+
+static void test() {
+    data_structures::linked_list::list L;
+    // Insert testing
+   
+    L.insert(11);
+    L.insert(12);
+    L.insert(15);
+    L.insert(10);
+    L.insert(12);
+    L.insert(20);
+    L.insert(18);
+    assert(L.top()==11);
+    assert(L.last()==18);
+    L.display(); // To print the array
+    L.reverseList();
+    //Reversal Testing
+    assert(L.top()==18);
+    assert(L.last()==11);
+    L.display();
+  
+}
+
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    int n = 0;
-    Node *head = nullptr;
-    while (true) {
-        std::cout << "\n1. Insert";
-        std::cout << "\n2. Display";
-        std::cout << "\n3. Resverse";
-        std::cout << "\n4. Exit";
-        std::cout << "\n\nEnter you choice : ";
-        std::cin >> n;
-
-        switch (n) {
-            case 1: {
-                int a = 0;
-                std::cout << "\nEnter the element to be inserted : ";
-                std::cin >> a;
-                create(&head, a);
-
-                break;
-            }
-            case 2: {
-                std::cout << "Printing the Linked List\n";
-                std::cout << "\n";
-                printList(head);
-
-                break;
-            }
-            case 3: {
-                reverseList(&head);
-                break;
-            }
-            case 4: {
-                exit(0);
-            }
-            default:
-                std::cout << "Invalid input\n";
-        }
-    }
+     test(); // Execute the tests
     return 0;
 }
