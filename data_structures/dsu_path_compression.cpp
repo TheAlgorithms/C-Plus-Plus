@@ -166,7 +166,7 @@ class dsu {
  * @returns void
  */
 static void test1() {
-    /* the minimum, maximum and size of the set*/
+    // the minimum, maximum, and size of the set
     uint64_t n = 10;  ///< number of items
     dsu d(n + 1);     ///< object of class disjoint sets
     // set 1
