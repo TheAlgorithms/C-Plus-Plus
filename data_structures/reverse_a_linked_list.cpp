@@ -47,15 +47,13 @@ Node *next;  ///< pointer to the next value on the list
  */
 class list {
  private:
-   Node * head;  // link before the actual first element  
+    Node *head{nullptr};  // link before the actual first element
  public:
     /**
      * List constructor. Initializes the first link.
      */
     list() {
         // Initialize the first link
-        head = nullptr;
-       
     }
 
     void insert(int new_elem);
