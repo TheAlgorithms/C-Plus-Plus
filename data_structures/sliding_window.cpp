@@ -1,4 +1,3 @@
-
 /*
  * @brief Sliding window implementation
  *
