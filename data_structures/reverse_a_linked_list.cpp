@@ -3,7 +3,7 @@
  * @brief Implementation of reversing a single linked list algorithm.
  * @details
  * The linked list is a data structure used for holding a sequence of
- * values, which can be added, displayed,reversed ,removed.
+ * values, which can be added, displayed,reversed or removed.
  * ### Algorithm
  * Values can be added by iterating to the end of a list(by following
  * the pointers) starting from the first link. Whichever link points to null
@@ -18,16 +18,15 @@
  * completion of an iteration.
  * Graphic Explanation:https://bit.ly/3nbVrFe
  */
-#include <iostream>/// for I/O operations
-#include <memory> /// for dynamic memory
-#include <cassert> /// for assert
+#include <iostream>      /// for I/O operations
+#include <memory>        /// for dynamic memory
+#include <cassert>       /// for assert
 
 /**
  * @namespace data_structures
  * @brief Data Structures algorithms
  */
 namespace data_structures {
-
 /**
  * @namespace linked_list
  * @brief Functions for singly linked list algorithm
@@ -39,8 +38,8 @@ namespace linked_list {
 class Node
 {
 public:
-int val;     ///< value of the current link
-Node *next;  ///< pointer to the next value on the list
+int val;              /// value of the current link
+Node *next;          /// pointer to the next value on the list
 };
 
 /**
@@ -48,7 +47,7 @@ Node *next;  ///< pointer to the next value on the list
  */
 class list {
  private:
-    Node *head{nullptr};  // link before the actual first element
+    Node *head{nullptr};   // link before the actual first element
  public:
     /**
      * List constructor. Initializes the first link.
@@ -102,9 +101,11 @@ void list:: reverseList() {
     }
     head = prev;
 }
+
 /**
  * function to find the top element of the list
- * @returns 'int'
+ * @returns 'int n'
+ * @brief returns the first element in the list
  */
 int list::top()
 {
@@ -113,7 +114,8 @@ int list::top()
 }
 /**
  * function to find the last element of the list
- *  @returns 'int'
+ *  @returns 'int t->val'
+ *  @brief returns the last element of the list
  */
 int list::last()
 {
@@ -124,6 +126,7 @@ int list::last()
     }
     return t->val;
 }
+
 /**
  * function displays all the elements in the list
  * @returns 'void'
@@ -141,6 +144,10 @@ void list::display() {
 }  // namespace linked_list
 }  // namespace data_structures
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     data_structures::linked_list::list L;
   // 1st test
@@ -168,6 +175,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-     test(); // Execute the tests
+    test();      //run self-test implementations
     return 0;
 }
