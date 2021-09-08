@@ -42,10 +42,10 @@
 
 #include <algorithm>  // Used for std::copy
 #include <array>      // To avoid c-style array (thanks clang-tidy)
-#include <cassert>
+#include <cassert> // Used for assert
 #include <cstring>  // Used for std::memcopy
-#include <iostream>
-#include <string>
+#include <iostream> // Used for IO operations
+#include <string> // Used for strings
 #include <vector>  // To avoid c-style array of runtime size (thanks clang-tidy)
 
 /**
@@ -308,7 +308,7 @@ void* hash(const std::string& message) {
  * @brief Self-test implementations of well-known MD5 hashes
  * @returns void
  */
-void test() {
+static void test() {
     void* sig = hashing::md5::hash("");
     std::cout << "Hashing empty string" << std::endl;
     std::cout << hashing::md5::sig2hex(sig) << std::endl << std::endl;
@@ -348,7 +348,7 @@ void test() {
  * computed and printed
  * @returns void
  */
-void interactive() {
+static void interactive() {
     while (true) {
         std::string input;
         std::cout << "Enter a message to be hashed (only one line): "
@@ -360,11 +360,15 @@ void interactive() {
 }
 
 /**
- * @brief Main function, calls the tests and then invokes interactive mode
+ * @brief Main function
+ * Calls the tests and then invokes interactive mode
  * @returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
+    
+    // Launch interactive mode where user can input messages and see 
+    // their hash
     interactive();
     return 0;
 }
