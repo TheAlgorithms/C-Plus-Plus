@@ -122,9 +122,6 @@ int list::top() {
         int n = head->val;
         return n;
     }
-    else
-    return 0;
-    
 }
 /**
  * function to find the last element of the list
@@ -139,8 +136,6 @@ int list::last() {
         }
         return t->val;
     }
-    else return 0;
-    
 }
 
 /**
