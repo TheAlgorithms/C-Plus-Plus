@@ -161,12 +161,11 @@ static void test() {
     L.insert(18);
     assert(L.top()==11);
     assert(L.last()==18);
-    L.display(); // To print the array
     L.reverseList();
     //Reversal Testing
     assert(L.top()==18);
     assert(L.last()==11);
-    std::cout << "passed" << std::endl;
+    std::cout << "Passed" << std::endl;
   
 }
 
