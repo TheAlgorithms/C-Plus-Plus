@@ -15,7 +15,7 @@
 
 /**
  * @namespace data_structures
- * @brief data_structures
+ * @brief Data Structures algorithms
  */
 namespace data_structures {
 
