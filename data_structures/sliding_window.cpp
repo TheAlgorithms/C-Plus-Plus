@@ -109,7 +109,7 @@ class Sliding_window : private std::vector<T> {
 
  private:
     unsigned int m_window_size;
-};  // class Sliding_window
+};
 }  // namespace data_structures
 
 /**
