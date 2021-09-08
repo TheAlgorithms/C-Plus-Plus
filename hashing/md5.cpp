@@ -42,10 +42,10 @@
 
 #include <algorithm>  // Used for std::copy
 #include <array>      // To avoid c-style array (thanks clang-tidy)
-#include <cassert> // Used for assert
-#include <cstring>  // Used for std::memcopy
-#include <iostream> // Used for IO operations
-#include <string> // Used for strings
+#include <cassert>    // Used for assert
+#include <cstring>    // Used for std::memcopy
+#include <iostream>   // Used for IO operations
+#include <string>     // Used for strings
 #include <vector>  // To avoid c-style array of runtime size (thanks clang-tidy)
 
 /**
@@ -366,8 +366,8 @@ static void interactive() {
  */
 int main() {
     test();  // run self-test implementations
-    
-    // Launch interactive mode where user can input messages and see 
+
+    // Launch interactive mode where user can input messages and see
     // their hash
     interactive();
     return 0;
