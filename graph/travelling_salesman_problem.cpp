@@ -10,25 +10,24 @@
  * Given a list of cities and the distances between each pair of cities, what is
  * the shortest possible route that visits each city exactly once and returns to
  * the origin city?
- * TSP can be modelled as an undirected weighted graph, such that cities are the
+ * TSP can be modeled as an undirected weighted graph, such that cities are the
  * graph's vertices, paths are the graph's edges, and a path's distance is the
  * edge's weight. It is a minimization problem starting and finishing at a
  * specified vertex after having visited each other vertex exactly once.
  * This is the naive implementation of the problem.
  */
 
-#include <limits.h>
+#include <limits.h>  /// header for limits of integral types
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <algorithm>  /// for std::min
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
+#include <vector>     /// header for std::vector
 
 /**
  * @namespace graph
  * @brief Graph Algorithms
  */
-
 namespace graph {
 
 /**
@@ -74,8 +73,11 @@ int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
 }
 }  // namespace graph
 
-/** Function to test the Algorithm */
-void tests() {
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
     std::cout << "Initiating Test 1..." << std::endl;
     std::vector<std::vector<int>> cities = {
@@ -98,11 +100,15 @@ void tests() {
     std::cout << "Test 3 Passed..." << std::endl;
 }
 
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     tests();
     std::vector<std::vector<int>> cities = {
         {0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     int V = cities.size();
     std::cout << graph::TravellingSalesmanProblem(&cities, 0, V);
+    return 0;
 }
