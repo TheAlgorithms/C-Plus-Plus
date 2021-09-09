@@ -121,10 +121,9 @@ int list::top() {
     if (!isEmpty()) {
         int n = head->val;
         return n;
+    } else {
+        return 0;
     }
-    else
-    return 0;
-    
 }
 /**
  * function to find the last element of the list
@@ -138,9 +137,8 @@ int list::last() {
             t = t->next;
         }
         return t->val;
-    }
-    else return 0;
-    
+    } else
+        return 0;
 }
 }  // namespace linked_list
 }  // namespace data_structures
