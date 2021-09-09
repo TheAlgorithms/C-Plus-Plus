@@ -105,7 +105,7 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests();  // run self-test implementations
     std::vector<std::vector<int>> cities = {
         {0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     int V = cities.size();
