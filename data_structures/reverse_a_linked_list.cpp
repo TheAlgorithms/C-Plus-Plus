@@ -137,8 +137,9 @@ int list::last() {
             t = t->next;
         }
         return t->val;
-    } else
+    } else {
         return 0;
+    }
 }
 }  // namespace linked_list
 }  // namespace data_structures
