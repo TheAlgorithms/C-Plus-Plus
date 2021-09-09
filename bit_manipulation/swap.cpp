@@ -12,15 +12,10 @@
  */
  
 #include <iostream>   // for IO operations
-#include <assert.h>
-using namespace std;
+#include <cassert>
 
 namespace bit_manipulation {
-/**
- * @namespace hamming_distance
- * @brief Functions for [Hamming
- * distance](https://en.wikipedia.org/wiki/Hamming_distance) implementation
- */
+
 namespace swap {
 
 /*function to swap two values*/
@@ -37,14 +32,12 @@ As we are using call by referance, so we don't need to return anything after swa
 because we are changing the values at the address of orginial variables which will led 
 to change of the values in the original variables inself.
 */
-}  // namespace hamming_distance
-}  // namespace bit_manipulation
+}  
+} 
 
 
 static void test(int a,int b) {
-    int *p1, *p2;
-    p1 = &a;
-    p2 = &b;
+    int *p1=&a, *p2=&b;
     assert(bit_manipulation::swap::swap_XOR(p1, p2)==a); //checking for text condition
 }
 
