@@ -335,7 +335,7 @@ static void test() {
                "e4d909c290d0fb1ca068ffaddf22cbd0") == 0);
 
     // Hashes "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-    // (notice the additional period) and stores signature
+    // and stores signature
     void* sig4 = hashing::md5::hash(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
     std::cout
