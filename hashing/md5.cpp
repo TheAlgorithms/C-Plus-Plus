@@ -3,7 +3,6 @@
  * @author [tGautot](https://github.com/tGautot)
  * @brief Simple C++ implementation of the [MD5 Hashing
  * Algorithm](https://en.wikipedia.org/wiki/MD5)
- *
  * @details
  * The [MD5 Algorithm](https://en.wikipedia.org/wiki/MD5) is a
  * hashing algorithm which was designed in 1991 by [Ronal
@@ -35,7 +34,6 @@
  * For more precisions on these operations please see the [Wikipedia
  * aritcle](https://en.wikipedia.org/wiki/MD5#Algorithm).
  * The signature given by MD5 is its 128 bit state once all rounds are done.
- *
  * @note This is a simple implementation for a byte string but
  * some implmenetations can work on bytestream, messages of unknown length.
  */
@@ -122,7 +120,6 @@ uint64_t toLittleEndian64(uint64_t n) {
 
 /**
  * @brief Transforms the 128-bit MD5 signature into a 32 char hex string
- *
  * @param sig The MD5 signature (Expected 16 bytes)
  * @return std::string The hex signature
  */
@@ -140,7 +137,6 @@ std::string sig2hex(void* sig) {
 
 /**
  * @brief The MD5 algorithm itself, taking in a bytestring
- *
  * @param input_bs The bytestring to hash
  * @param input_size The size (in BYTES) of the input
  * @return void* Pointer to the 128-bit signature
@@ -161,7 +157,6 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
     /**
      * @brief Values of K are pseudo-random and used to "salt" each round
      * The values can be obtained by the following python code
-     *
      * @code{.py}
      * from math import floor, sin
      *
@@ -292,7 +287,6 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
 
 /**
  * @brief Converts the string to bytestring and calls the main algorithm
- *
  * @param message Plain character message to hash
  * @return void* Pointer to the MD5 signature
  */
