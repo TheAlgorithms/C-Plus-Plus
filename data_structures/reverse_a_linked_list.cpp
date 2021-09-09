@@ -142,22 +142,6 @@ int list::last() {
     else return 0;
     
 }
-
-/**
- * function displays all the elements in the list
- * @returns 'void'
- */
-void list::display() {
-    if (!isEmpty()) {
-        Node *node = head;
-        while (node != nullptr) {
-            std::cout << node->val << "\t";
-            node = node->next;
-        }
-        std::cout << std::endl;
-    }
-}
-
 }  // namespace linked_list
 }  // namespace data_structures
 
