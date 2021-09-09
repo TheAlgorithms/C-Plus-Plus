@@ -32,13 +32,27 @@ As we are using call by referance, so we don't need to return anything after swa
 because we are changing the values at the address of orginial variables which will led 
 to change of the values in the original variables inself.
 */
-}  
+   }  
 } 
 
 
-static void test(int a,int b) {
-    int *p1=&a, *p2=&b;
-    assert(bit_manipulation::swap::swap_XOR(p1, p2)==a); //checking for text condition
+static void test() {
+    int a = 20; //initializing first variable named "a" with 20
+    int b = 30; //initializing second variable named "b" with 30
+    int *ptr1 = &a;  //pointer pointing to first variable
+    int *ptr2 = &b; //pointer pointing to second variable
+     //Printing Values of A and B before swapping.
+  std::cout<<"The Value of A before swaping is = "<<a<<"\n";
+  std::cout<<"The Value of B before swaing is = "<<b<<"\n";
+  
+    bit_manipulation::swap::swap_XOR(ptr1,ptr2);    /* here we are passing two pointers which is also known as pass by reference in which we 
+  pass address of variable instead of the value*/
+ 
+    assert(bit_manipulation::swap::swap_XOR(ptr1, ptr2)==a); //checking for text condition
+ 
+ //Printing Values of A and B after swapping.
+   std::cout<<"The Value of A after swaping is = "<<a<<"\n";
+   std::cout<<"The Value of B after swaping is = "<<b<<"\n";
 }
 
 
@@ -48,21 +62,7 @@ static void test(int a,int b) {
  */
 int main()
 {
-    int a = 20; //initializing first variable named "a" with 20
-    int b = 30; //initializing second variable named "b" with 30
-    int *ptr1 = &a;  //pointer pointing to first variable
-    int *ptr2 = &b; //pointer pointing to second variable
-    test(a,b);  // execute the tests
- //Printing Values of A and B before swapping.
-  std::cout<<"The Value of A before swaping is = "<<a<<"\n";
-  std::cout<<"The Value of B before swaing is = "<<b<<"\n";
-  
-    bit_manipulation::swap::swap_XOR(ptr1,ptr2);    /* here we are passing two pointers which is also known as pass by reference in which we 
-  pass address of variable instead of the value*/
- 
- //Printing Values of A and B after swapping.
-   std::cout<<"The Value of A after swaping is = "<<a<<"\n";
-   std::cout<<"The Value of B after swaping is = "<<b<<"\n";
-    
+    test();  // execute the tests   
     return 0; 
 }
+
