@@ -50,13 +50,11 @@
 
 /**
  * @namespace hashing
- *
  * @brief Hashing algorithms
  */
 namespace hashing {
 /**
  * @namespace MD5
- *
  * @brief Functions for the [MD5](https://en.wikipedia.org/wiki/MD5) algorithm
  * implementation
  */
@@ -309,36 +307,50 @@ void* hash(const std::string& message) {
  * @returns void
  */
 static void test() {
+    // Hashes empty string and stores signature
     void* sig = hashing::md5::hash("");
     std::cout << "Hashing empty string" << std::endl;
+    // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig) << std::endl << std::endl;
+    // Test with cassert wether sig is correct from expected value
     assert(hashing::md5::sig2hex(sig).compare(
                "d41d8cd98f00b204e9800998ecf8427e") == 0);
 
+    // Hashes "The quick brown fox jumps over the lazy dog" and stores signature
     void* sig2 =
         hashing::md5::hash("The quick brown fox jumps over the lazy dog");
     std::cout << "Hashing The quick brown fox jumps over the lazy dog"
               << std::endl;
+    // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig2) << std::endl << std::endl;
+    // Test with cassert wether sig is correct from expected value
     assert(hashing::md5::sig2hex(sig2).compare(
                "9e107d9d372bb6826bd81d3542a419d6") == 0);
 
+    // Hashes "The quick brown fox jumps over the lazy dog." (notice the
+    // additional period) and stores signature
     void* sig3 =
         hashing::md5::hash("The quick brown fox jumps over the lazy dog.");
     std::cout << "Hashing "
                  "The quick brown fox jumps over the lazy dog."
               << std::endl;
+    // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig3) << std::endl << std::endl;
+    // Test with cassert wether sig is correct from expected value
     assert(hashing::md5::sig2hex(sig3).compare(
                "e4d909c290d0fb1ca068ffaddf22cbd0") == 0);
 
+    // Hashes "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    // (notice the additional period) and stores signature
     void* sig4 = hashing::md5::hash(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
     std::cout
         << "Hashing "
            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
         << std::endl;
+    // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig4) << std::endl << std::endl;
+    // Test with cassert wether sig is correct from expected value
     assert(hashing::md5::sig2hex(sig4).compare(
                "d174ab98d277d9f5a5611c2c9f419d9f") == 0);
 }
@@ -361,7 +373,6 @@ static void interactive() {
 
 /**
  * @brief Main function
- * Calls the tests and then invokes interactive mode
  * @returns 0 on exit
  */
 int main() {
