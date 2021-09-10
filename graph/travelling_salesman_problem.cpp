@@ -22,7 +22,6 @@
 #include <iostream>         /// for IO operations
 #include <limits>           /// for limits of integral types
 #include <vector>           /// header for std::vector
-#define max_int 2147483647  /// define INT_MAX
 
 /**
  * @namespace graph
@@ -50,14 +49,14 @@ int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
     }
 
     //// store minimum weight Hamiltonian Cycle.
-    int32_t min_path = max_int;
+    int32_t min_path = 2147483647;
     do {
         //// store current Path weight(cost)
         int32_t curr_weight = 0;
 
         //// compute current path weight
         int k = src;
-        for (auto i = 0U; i < vtx.size(); i++) {
+        for (uint64_t i = 0; i < vtx.size(); i++) {
             curr_weight += (*cities)[k][vtx[i]];
             k = vtx[i];
         }
