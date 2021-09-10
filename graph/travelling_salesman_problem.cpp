@@ -96,7 +96,7 @@ static void tests() {
         {0, 10, 15, 20}, {10, 0, 35, 25}, {15, 35, 0, 30}, {20, 25, 30, 0}};
     V = cities.size();
     assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 80);
-    std::cout << "Test 3 Passed..." << std::endl;
+    std::cout << "3rd test passed..." << std::endl;
 }
 
 /**
