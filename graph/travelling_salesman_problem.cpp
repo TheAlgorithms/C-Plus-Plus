@@ -21,7 +21,7 @@
 #include <cassert>          /// for assert
 #include <iostream>         /// for IO operations
 #include <limits>           /// for limits of integral types
-#include <vector>           /// header for std::vector
+#include <vector>           /// for std::vector
 
 /**
  * @namespace graph
