@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief [Travelling Salesman Problem]
- * (https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+ * (https://en.wikipedia.org/wiki/Travelling_salesman_problem) implementation
  *
  * @author [Mayank Mamgain](http://github.com/Mayank17M)
  *
@@ -17,8 +17,7 @@
  * This is the naive implementation of the problem.
  */
 
-#include <limits.h>  /// header for limits of integral types
-
+#include <limits>  /// for limits of integral types
 #include <algorithm>  /// for std::min
 #include <cassert>    /// for assert
 #include <iostream>   /// for IO operations
@@ -39,7 +38,6 @@ namespace graph {
  * @param V number of vertices in the graph
  *
  */
-
 int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
                               int V) {
     //// vtx stores the vertexs of the graph
@@ -84,20 +82,20 @@ static void tests() {
         {0, 20, 42, 35}, {20, 0, 30, 34}, {42, 30, 0, 12}, {35, 34, 12, 0}};
     int V = cities.size();
     assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 97);
-    std::cout << "Test 1 Passed..." << std::endl;
+    std::cout << "1st test passed..." << std::endl;
 
     std::cout << "Initiating Test 2..." << std::endl;
     cities = {{0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     V = cities.size();
     assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 75);
-    std::cout << "Test 2 Passed..." << std::endl;
+    std::cout << "2nd test passed..." << std::endl;
 
     std::cout << "Initiating Test 3..." << std::endl;
     cities = {
         {0, 10, 15, 20}, {10, 0, 35, 25}, {15, 35, 0, 30}, {20, 25, 30, 0}};
     V = cities.size();
     assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 80);
-    std::cout << "Test 3 Passed..." << std::endl;
+    std::cout << "3rd test passed..." << std::endl;
 }
 
 /**
@@ -105,7 +103,7 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();
+    tests();  // run self-test implementations
     std::vector<std::vector<int>> cities = {
         {0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     int V = cities.size();
