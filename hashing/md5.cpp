@@ -364,7 +364,6 @@ static void interactive() {
  * @returns 0 on exit
  */
 int main() {
-    hashing::md5::isBigEndian();
     test();  // run self-test implementations
 
     // Launch interactive mode where user can input messages and see
