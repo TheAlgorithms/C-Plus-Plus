@@ -108,6 +108,6 @@ int main() {
     std::vector<std::vector<int>> cities = {
         {0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     int V = cities.size();
-    std::cout << graph::TravellingSalesmanProblem(&cities, 0, V);
+    std::cout << graph::TravellingSalesmanProblem(&cities, 0, V) << std::endl;
     return 0;
 }
