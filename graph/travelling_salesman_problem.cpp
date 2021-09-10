@@ -17,11 +17,11 @@
  * This is the naive implementation of the problem.
  */
 
-#include <algorithm>        /// for std::min
-#include <cassert>          /// for assert
-#include <iostream>         /// for IO operations
-#include <limits>           /// for limits of integral types
-#include <vector>           /// for std::vector
+#include <algorithm>  /// for std::min
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
+#include <limits>     /// for limits of integral types
+#include <vector>     /// for std::vector
 
 /**
  * @namespace graph
@@ -56,9 +56,9 @@ int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
 
         //// compute current path weight
         int k = src;
-        for (uint64_t i = 0; i < vtx.size(); i++) {
-            curr_weight += (*cities)[k][vtx[i]];
-            k = vtx[i];
+        for (int i : vtx) {
+            curr_weight += (*cities)[k][i];
+            k = i;
         }
         curr_weight += (*cities)[k][src];
 
