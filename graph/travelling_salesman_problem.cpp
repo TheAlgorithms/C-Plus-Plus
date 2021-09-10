@@ -89,7 +89,7 @@ static void tests() {
     cities = {{0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};
     V = cities.size();
     assert(graph::TravellingSalesmanProblem(&cities, 0, V) == 75);
-    std::cout << "Test 2 Passed..." << std::endl;
+    std::cout << "2nd test passed..." << std::endl;
 
     std::cout << "Initiating Test 3..." << std::endl;
     cities = {
