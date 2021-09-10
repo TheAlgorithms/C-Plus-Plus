@@ -17,8 +17,7 @@
  * This is the naive implementation of the problem.
  */
 
-#include <limits.h>  /// header for limits of integral types
-
+#include <limits>  /// for limits of integral types
 #include <algorithm>  /// for std::min
 #include <cassert>    /// for assert
 #include <iostream>   /// for IO operations
