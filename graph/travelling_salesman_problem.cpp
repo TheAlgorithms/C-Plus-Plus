@@ -51,10 +51,10 @@ int TravellingSalesmanProblem(std::vector<std::vector<int>> *cities, int src,
     }
 
     //// store minimum weight Hamiltonian Cycle.
-    int min_path = INT_MAX;
+    int32_t min_path = INT_MAX;
     do {
         //// store current Path weight(cost)
-        int curr_weight = 0;
+        int32_t curr_weight = 0;
 
         //// compute current path weight
         int k = src;
