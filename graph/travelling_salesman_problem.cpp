@@ -17,11 +17,12 @@
  * This is the naive implementation of the problem.
  */
 
-#include <limits>  /// for limits of integral types
-#include <algorithm>  /// for std::min
-#include <cassert>    /// for assert
-#include <iostream>   /// for IO operations
-#include <vector>     /// header for std::vector
+#include <algorithm>        /// for std::min
+#include <cassert>          /// for assert
+#include <iostream>         /// for IO operations
+#include <limits>           /// for limits of integral types
+#include <vector>           /// header for std::vector
+#define INT_MAX 2147483647  /// define INT_MAX
 
 /**
  * @namespace graph
