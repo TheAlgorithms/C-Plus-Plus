@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief [Travelling Salesman Problem]
- * (https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+ * (https://en.wikipedia.org/wiki/Travelling_salesman_problem) implementation
  *
  * @author [Mayank Mamgain](http://github.com/Mayank17M)
  *
