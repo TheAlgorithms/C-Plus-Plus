@@ -38,13 +38,13 @@
  * some implmenetations can work on bytestream, messages of unknown length.
  */
 
-#include <algorithm>  // Used for std::copy
-#include <array>      // To avoid c-style array (thanks clang-tidy)
-#include <cassert>    // Used for assert
-#include <cstring>    // Used for std::memcopy
-#include <iostream>   // Used for IO operations
-#include <string>     // Used for strings
-#include <vector>  // To avoid c-style array of runtime size (thanks clang-tidy)
+#include <algorithm>  /// Used for std::copy
+#include <array>      /// Used for std::array
+#include <cassert>    /// Used for assert
+#include <cstring>    /// Used for std::memcopy
+#include <iostream>   /// Used for IO operations
+#include <string>     /// Used for strings
+#include <vector>     /// Used for std::vector
 
 /**
  * @namespace hashing
@@ -66,7 +66,6 @@ namespace md5 {
 uint32_t leftRotate32bits(uint32_t n, std::size_t rotate) {
     return (n << rotate) | (n >> (32 - rotate));
 }
-
 /**
  * @brief Checks whether integers are stored as big endian or not
  * @note Taken from [this](https://stackoverflow.com/a/1001373) StackOverflow
@@ -82,7 +81,6 @@ bool isBigEndian() {
 
     return bint.c[0] == 1;
 }
-
 /**
  * @brief Sets 32-bit integer to little-endian if needed
  * @param n Number to set to little-endian (uint32_t)
@@ -96,7 +94,6 @@ uint32_t toLittleEndian32(uint32_t n) {
     // Machine works on little endian, no need to change anything
     return n;
 }
-
 /**
  * @brief Sets 64-bit integer to little-endian if needed
  * @param n Number to set to little-endian (uint64_t)
@@ -117,7 +114,6 @@ uint64_t toLittleEndian64(uint64_t n) {
     // Machine works on little endian, no need to change anything
     return n;
 }
-
 /**
  * @brief Transforms the 128-bit MD5 signature into a 32 char hex string
  * @param sig The MD5 signature (Expected 16 bytes)
@@ -125,16 +121,14 @@ uint64_t toLittleEndian64(uint64_t n) {
  */
 std::string sig2hex(void* sig) {
     const char* hexChars = "0123456789abcdef";
-    auto* intsig = static_cast<uint32_t*>(sig);
+    auto* intsig = static_cast<uint8_t*>(sig);
     std::string hex = "";
-    for (uint8_t i = 0; i < 4; i++) {
-        for (uint8_t j = 0; j < 8; j++) {
-            hex.push_back(hexChars[(intsig[i] >> 4 * (7 - j)) & 0xF]);
-        }
+    for (uint8_t i = 0; i < 16; i++) {
+        hex.push_back(hexChars[(intsig[i] >> 4) & 0xF]);
+        hex.push_back(hexChars[(intsig[i]) & 0xF]);
     }
     return hex;
 }
-
 /**
  * @brief The MD5 algorithm itself, taking in a bytestring
  * @param input_bs The bytestring to hash
@@ -274,17 +268,17 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
     // Build signature from state
     // Note, any type could be used for the signature
     // uint8_t was used to make the 16 bytes obvious
+    // The sig needs to be little endian
     auto* sig = new uint8_t[16];
     for (uint8_t i = 0; i < 4; i++) {
-        sig[i] = (a0 >> (24 - 8 * i)) & 0xFF;
-        sig[i + 4] = (b0 >> (24 - 8 * i)) & 0xFF;
-        sig[i + 8] = (c0 >> (24 - 8 * i)) & 0xFF;
-        sig[i + 12] = (d0 >> (24 - 8 * i)) & 0xFF;
+        sig[i] = (a0 >> (8 * i)) & 0xFF;
+        sig[i + 4] = (b0 >> (8 * i)) & 0xFF;
+        sig[i + 8] = (c0 >> (8 * i)) & 0xFF;
+        sig[i + 12] = (d0 >> (8 * i)) & 0xFF;
     }
 
     return sig;
 }
-
 /**
  * @brief Converts the string to bytestring and calls the main algorithm
  * @param message Plain character message to hash
@@ -306,7 +300,7 @@ static void test() {
     std::cout << "Hashing empty string" << std::endl;
     // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig) << std::endl << std::endl;
-    // Test with cassert wether sig is correct from expected value
+    // Test with cassert whether sig is correct from the expected value
     assert(hashing::md5::sig2hex(sig).compare(
                "d41d8cd98f00b204e9800998ecf8427e") == 0);
 
@@ -317,7 +311,7 @@ static void test() {
               << std::endl;
     // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig2) << std::endl << std::endl;
-    // Test with cassert wether sig is correct from expected value
+    // Test with cassert whether sig is correct from the expected value
     assert(hashing::md5::sig2hex(sig2).compare(
                "9e107d9d372bb6826bd81d3542a419d6") == 0);
 
@@ -330,7 +324,7 @@ static void test() {
               << std::endl;
     // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig3) << std::endl << std::endl;
-    // Test with cassert wether sig is correct from expected value
+    // Test with cassert whether sig is correct from the expected value
     assert(hashing::md5::sig2hex(sig3).compare(
                "e4d909c290d0fb1ca068ffaddf22cbd0") == 0);
 
@@ -344,7 +338,7 @@ static void test() {
         << std::endl;
     // Prints signature hex representation
     std::cout << hashing::md5::sig2hex(sig4) << std::endl << std::endl;
-    // Test with cassert wether sig is correct from expected value
+    // Test with cassert whether sig is correct from the expected value
     assert(hashing::md5::sig2hex(sig4).compare(
                "d174ab98d277d9f5a5611c2c9f419d9f") == 0);
 }
@@ -370,6 +364,7 @@ static void interactive() {
  * @returns 0 on exit
  */
 int main() {
+    hashing::md5::isBigEndian();
     test();  // run self-test implementations
 
     // Launch interactive mode where user can input messages and see
