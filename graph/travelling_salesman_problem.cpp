@@ -54,13 +54,8 @@ int TravellingSalesmanProblem(std::vector<std::vector<uint32_t>> *cities,
         int32_t curr_weight = 0;
 
         //// compute current path weight
-<<<<<<< HEAD
-        int32_t k = src;
-        for (auto i : vtx) {
-=======
         int k = src;
         for (int i : vtx) {
->>>>>>> 9b9b4a92eadf56b37b4507432acf05f727ac8124
             curr_weight += (*cities)[k][i];
             k = i;
         }
