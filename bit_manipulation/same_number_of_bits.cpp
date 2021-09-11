@@ -7,7 +7,6 @@
  * we have given a number let's say n, find next number with same number of
  * 1 bits in it's binary representation.
  *
- *
  * @author [Kunal Kumar](https://github.com/kunalkumar37)
  */
 
