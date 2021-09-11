@@ -5,7 +5,7 @@
  * bits](https://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
  * @details
  * we have given a number let's say n, find next number with same number of
- * 1 bits in it's binary representation.
+ * 1 bit in its binary representation.
  *
  * @author [Kunal Kumar](https://github.com/kunalkumar37)
  */
