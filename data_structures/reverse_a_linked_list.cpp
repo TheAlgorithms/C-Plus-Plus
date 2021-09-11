@@ -1,11 +1,12 @@
 /**
  * @file
- * @brief Implementation of reversing a single linked list algorithm.
+ * @brief Implementation of  [Reversing
+ * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
  * @details
  * The linked list is a data structure used for holding a sequence of
- * values, which can be added, displayed,reversed or removed.
+ * values, which can be added, displayed,reversed, or removed.
  * ### Algorithm
- * Values can be added by iterating to the end of a list(by following
+ * Values can be added by iterating to the end of a list (by following
  * the pointers) starting from the first link. Whichever link points to null
  * is considered the last link and is pointed to the new value.
  *
@@ -16,7 +17,8 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
- * Graphic Explanation:https://bit.ly/3nbVrFe
+ * Graphic Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
+ * 
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
@@ -37,7 +39,7 @@ namespace linked_list {
  */
 class Node {
  public:
-    int val;     /// value of the current link
+    int32_t val;     /// value of the current link
     Node *next;  /// pointer to the next value on the list
 };
 
@@ -58,8 +60,8 @@ class list {
     void insert(int32_t new_elem);
     void reverseList();
     void display();
-    int top();
-    int last();
+    int32_t top();
+    int32_t last();
 };
 
 /**
@@ -114,12 +116,12 @@ void list::reverseList() {
 
 /**
  * function to find the top element of the list
- * @returns 'int n'
+ * @returns 'int32_t n'
  * @brief returns the first element in the list
  */
-int list::top() {
+int32_t list::top() {
     if (!isEmpty()) {
-        int n = head->val;
+        int32_t n = head->val;
         return n;
     } else {
         return 0;
@@ -127,10 +129,10 @@ int list::top() {
 }
 /**
  * function to find the last element of the list
- *  @returns 'int t->val'
+ *  @returns 'int32_t t->val'
  *  @brief returns the last element of the list
  */
-int list::last() {
+int32_t list::last() {
     if (!isEmpty()) {
         Node *t = head;
         while (t->next != nullptr) {
@@ -156,8 +158,8 @@ static void test() {
     L.insert(12);
     L.insert(15);
     L.insert(10);
-    L.insert(12);
-    L.insert(20);
+    L.insert(-12);
+    L.insert(-20);
     L.insert(18);
     assert(L.top() == 11);
     assert(L.last() == 18);
