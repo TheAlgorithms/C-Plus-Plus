@@ -17,8 +17,9 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
- * Graphic Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
- * 
+ * Graphic
+ * Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
+ *
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
@@ -39,8 +40,8 @@ namespace linked_list {
  */
 class Node {
  public:
-    int32_t val;     /// value of the current link
-    Node *next;  /// pointer to the next value on the list
+    int32_t val;  /// value of the current link
+    Node *next;   /// pointer to the next value on the list
 };
 
 /**
