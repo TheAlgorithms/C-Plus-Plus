@@ -62,7 +62,7 @@ static void test() {
     assert(bit_manipulation::same_number_of_bits::samenumberofbits(3) == 5);
     // n=15 return 23
     assert(bit_manipulation::same_number_of_bits::samenumberofbits(15) == 23);
-    std::cout << "all the test cases are successfully passed!!" << std::endl;
+    std::cout << "All the test cases have successfully passed!" << std::endl;
 }
 
 /**
