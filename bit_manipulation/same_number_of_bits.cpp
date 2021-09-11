@@ -4,7 +4,7 @@
  * @brief Implementation to [Next higher number with same number of set
  * bits](https://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
  * @details
- * we have given a number let's say n, find next number with same number of
+ * We have given a number let's say n, find next number with the same number of
  * 1 bit in its binary representation.
  *
  * @author [Kunal Kumar](https://github.com/kunalkumar37)
