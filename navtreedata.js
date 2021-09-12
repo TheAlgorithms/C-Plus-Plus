@@ -142,7 +142,7 @@ var NAVTREEINDEX =
 "db/d19/structlinear__probing_1_1_entry.html",
 "dc/d93/trie__modern_8cpp.html",
 "de/d75/qr__eigen__values_8cpp.html",
-"globals_c.html"
+"functions_~.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

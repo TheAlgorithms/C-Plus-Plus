@@ -138,13 +138,17 @@ Functions</h2></td></tr>
 <tr class="memitem:adc68cbc8ba09eb1142265935c0d45b84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84">dijkstra</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *adj, int s, int t)</td></tr>
 <tr class="memdesc:adc68cbc8ba09eb1142265935c0d45b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and returns the shortest distance of target from the source.  <a href="../../df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84">More...</a><br /></td></tr>
 <tr class="separator:adc68cbc8ba09eb1142265935c0d45b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7706341d006e20d1ae58274187a3346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346">TravellingSalesmanProblem</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &gt; *cities, int32_t src, uint32_t V)</td></tr>
+<tr class="memdesc:ab7706341d006e20d1ae58274187a3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates the minimum path distance that will cover all the cities starting from the source.  <a href="../../df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346">More...</a><br /></td></tr>
+<tr class="separator:ab7706341d006e20d1ae58274187a3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms.</p>
 <p >for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a></p>
-<p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms </p>
+<p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms</p>
+<p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for assert for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9125ceb66bfbec3093bba64c2c1e99e2" name="a9125ceb66bfbec3093bba64c2c1e99e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9125ceb66bfbec3093bba64c2c1e99e2">&#9670;&nbsp;</a></span>addEdge() <span class="overload">[1/3]</span></h2>
@@ -625,6 +629,91 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a83ab16e96cec644109a58dfc9329bc2b_cgraph.svg" width="388" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab7706341d006e20d1ae58274187a3346" name="ab7706341d006e20d1ae58274187a3346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7706341d006e20d1ae58274187a3346">&#9670;&nbsp;</a></span>TravellingSalesmanProblem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graph::TravellingSalesmanProblem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &gt; *&#160;</td>
+          <td class="paramname"><em>cities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>V</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function calculates the minimum path distance that will cover all the cities starting from the source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cities</td><td>matrix representation of cities </td></tr>
+    <tr><td class="paramname">src</td><td><a class="el" href="../../d8/dc8/struct_point.html">Point</a> from where salesman is starting </td></tr>
+    <tr><td class="paramname">V</td><td>number of vertices in the graph </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                       {<span class="comment"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    //// vtx stores the vertexs of the graph</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a> vtx;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; V; i++) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span> (i != src) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(i);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    //// store minimum weight Hamiltonian Cycle.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"></span>    int32_t min_path = 2147483647;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">do</span> {<span class="comment"></span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">        //// store current Path weight(cost)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span>        int32_t curr_weight = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">        //// compute current path weight</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span>        <span class="keywordtype">int</span> k = src;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : vtx) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            curr_weight += (*cities)[k][i];</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            k = i;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        curr_weight += (*cities)[k][src];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">        //// update minimum</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"></span>        min_path = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(min_path, curr_weight);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    } <span class="keywordflow">while</span> (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/next_permutation.html">next_permutation</a>(vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), vtx.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>()));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> min_path;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
+<div class="ttc" id="anext_permutation_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/next_permutation.html">std::next_permutation</a></div><div class="ttdeci">T next_permutation(T... args)</div></div>
+<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_ab7706341d006e20d1ae58274187a3346_cgraph.svg" width="395" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -29,5 +29,6 @@ var namespacegraph =
     [ "dijkstra", "df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84", null ],
     [ "explore", "df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8", null ],
     [ "explore", "df/dce/namespacegraph.html#a64c1db5aad7502c6f08e4652f6edd463", null ],
-    [ "getConnectedComponents", "df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b", null ]
+    [ "getConnectedComponents", "df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b", null ],
+    [ "TravellingSalesmanProblem", "df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346", null ]
 ];
