@@ -5,7 +5,7 @@
  * @details
  * The linked list is a data structure used for holding a sequence of
  * values, which can be added, displayed, reversed, or removed.
- 
+
  * ### Algorithm
  * Values can be added by iterating to the end of a list (by following
  * the pointers) starting from the first link. Whichever link points to null
