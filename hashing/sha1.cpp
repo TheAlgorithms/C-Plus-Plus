@@ -18,7 +18,7 @@
 #include <string>     // Used for strings
 #include <vector>  // To avoid c-style array of runtime size (thanks clang-tidy)
 
-// TODO: remove
+// TODO(runner): remove
 #include <bitset>
 
 /**
