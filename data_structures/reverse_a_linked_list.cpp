@@ -18,7 +18,8 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
- * [A graphic explanation and view of what's happening behind the scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
+ * [A graphic explanation and view of what's happening behind the
+ scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  *
  */
 #include <cassert>   /// for assert
