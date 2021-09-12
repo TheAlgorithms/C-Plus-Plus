@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of  [Reversing
+ * @brief Implementation of [Reversing
  * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
  * @details
  * The linked list is a data structure used for holding a sequence of
