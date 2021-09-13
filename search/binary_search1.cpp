@@ -230,7 +230,12 @@ namespace binary_search_test {
 	};
 
 }
-/** main function */
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char const* argv[]) {
 	binary_search_test::TestCases test;
 	test.run_tests();  // run self-test implementations
