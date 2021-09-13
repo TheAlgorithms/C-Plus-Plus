@@ -233,6 +233,6 @@ namespace binary_search_test {
 /** main function */
 int main(int argc, char const* argv[]) {
 	binary_search_test::TestCases test;
-	test.run_tests();
+	test.run_tests();  // run self-test implementations
 	return 0;
 }
