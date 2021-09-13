@@ -236,4 +236,3 @@ int main(int argc, char const* argv[]) {
 	test.run_tests();
 	return 0;
 }
-
