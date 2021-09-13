@@ -169,7 +169,7 @@ static void test() {
     // Reversal Testing
     assert(L.top() == 18);
     assert(L.last() == 11);
-    std::cout << "Passed" << std::endl;
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
