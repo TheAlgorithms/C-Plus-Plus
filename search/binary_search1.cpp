@@ -1,15 +1,20 @@
 /**
  * @file
- * @brief [Binary search
- * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+ * @brief Binary search algorithm
+ * Binary search algorithm is an efficient algorithm to find the index of a key in a sorted array.
+ * It works by repeatedly comparing the key with the middle element of the array and narrowing down the range 
+ * based on the result of comparison. If the given key is less than the middle element, search repeats with the
+ * left part of the array and vice versa.
+ * The running time of the algorithm in worst case is logarithmic.
  * @author [Mohammad Golzar](https://github.com/m-golzar)
  */
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
-#include <array>
-#include <cassert>
+
+#include <iostream>  // for IO operations
+#include <vector>  // for testing the algorithm with std::vector
+#include <string> // for testing the binary_search algorithm with std::string
+#include <array> // for testing the binary_search algorithm with std::array
+#include <cassert> // for assert
+
 /**
 * @namespace search
 * @brief Searching algorithms
@@ -35,25 +40,28 @@ namespace search {
 			int right_limit = container.size() - 1;
 			int left_limit = 0;
 			while (left_limit <= right_limit) {
-				/// calculate middle index of the range in current iteration.
+				// calculate middle index of the range in current iteration.
 				int middle = left_limit + (right_limit - left_limit) / 2;
-				/// in case we have found the key, just return the index.
-				if (key == container[middle])
+				// in case we have found the key, just return the index.
+				if (key == container[middle]) {
 					return middle;
-				/// if desired key is less than the key at the middle index, it should be located in left side of the middle index
-				/// so adjust the range right limit to search left side in the next iteration.
-				else if (key < container[middle])
+				}
+				// if desired key is less than the key at the middle index, it should be located in left side of the middle index
+				// so adjust the range right limit to search left side in the next iteration.
+				else if (key < container[middle]) {
 					right_limit = middle - 1;
-				/// if desired key is grater than the key at the middle index, it should be located in right side of the middle index
-				/// so adjust the range left limit to search right side in the next iteration.
-				else
+				}
+				// if desired key is grater than the key at the middle index, it should be located in right side of the middle index
+				// so adjust the range left limit to search right side in the next iteration.
+				else {
 					left_limit = middle + 1;
+				}
 			}
-			/// return -1 in case we did not find the key.
+			// return -1 in case we did not find the key.
 			return -1;
 		}
-	}
-}
+	} // namspace binary_search
+} // namespace search
 
 /**
 * @namespace test_classes
@@ -71,7 +79,7 @@ namespace binary_search_test {
 	template<typename T>
 	class ContainerClass {
 	public:
-		ContainerClass() :m_elements{} {};
+		explicit ContainerClass() :m_elements{} {};
 		void push_back(const T& element) {
 			m_elements.push_back(element);
 		}
@@ -85,7 +93,7 @@ namespace binary_search_test {
 			return m_elements[index];
 		}
 	private:
-		std::vector<T> m_elements;
+		std::vector<T> m_elements{};
 	};
 
 	/**
@@ -99,7 +107,7 @@ namespace binary_search_test {
 		friend bool operator==(const KeyClass& lhs, const KeyClass& rhs);
 		friend bool operator< (const KeyClass& lhs, const KeyClass& rhs);
 	public:
-		KeyClass(int value = 0) :m_value(value) {};
+		explicit KeyClass(int value = 0) :m_value(value) {};
 		int get() const {
 			return m_value;
 		}
@@ -226,10 +234,10 @@ namespace binary_search_test {
 			log("[PASS] : TEST CASE 4_2 PASS!");
 			log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}	
-
 	};
 
-}
+}  // namespace binary_search_test
+
 /**
  * @brief Main function
  * @param argc commandline argument count (ignored)
