@@ -275,6 +275,7 @@
 
 ## Search
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search.cpp)
+  * [Binary Search1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/binary_search1.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/fibonacci_search.cpp)
   * [Floyd Cycle Detection Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/floyd_cycle_detection_algo.cpp)
