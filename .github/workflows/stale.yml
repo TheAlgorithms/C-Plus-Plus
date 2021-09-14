@@ -16,4 +16,3 @@ jobs:
           exempt-pr-labels: 'dont-close,approved'
           days-before-stale: 30
           days-before-close: 7
-          operations-per-run: 5
