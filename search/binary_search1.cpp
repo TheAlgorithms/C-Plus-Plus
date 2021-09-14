@@ -2,7 +2,7 @@
  * @file
  * @brief Binary search algorithm
  * Binary search algorithm is an efficient algorithm to find the index of a key in a sorted array.
- * It works by repeatedly comparing the key with the middle element of the array and narrowing down the range 
+ * It works by repeatedly comparing the key with the middle element of the array and narrowing down the range
  * based on the result of comparison. If the given key is less than the middle element, search repeats with the
  * left part of the array and vice versa.
  * The running time of the algorithm in worst case is logarithmic.
@@ -15,10 +15,10 @@
 #include <array> // for testing the binary_search algorithm with std::array
 #include <cassert> // for assert
 
-/**
-* @namespace search
-* @brief Searching algorithms
-*/
+ /**
+ * @namespace search
+ * @brief Searching algorithms
+ */
 namespace search {
 
 	/**
@@ -40,28 +40,28 @@ namespace search {
 			int right_limit = container.size() - 1;
 			int left_limit = 0;
 			while (left_limit <= right_limit) {
-				// calculate middle index of the range in current iteration.
+				/// calculate middle index of the range in current iteration.
 				int middle = left_limit + (right_limit - left_limit) / 2;
-				// in case we have found the key, just return the index.
+				/// in case we have found the key, just return the index.
 				if (key == container[middle]) {
 					return middle;
 				}
-				// if desired key is less than the key at the middle index, it should be located in left side of the middle index
-				// so adjust the range right limit to search left side in the next iteration.
+				/// if desired key is less than the key at the middle index, it should be located in left side of the middle index
+				/// so adjust the range right limit to search left side in the next iteration.
 				else if (key < container[middle]) {
 					right_limit = middle - 1;
 				}
-				// if desired key is grater than the key at the middle index, it should be located in right side of the middle index
-				// so adjust the range left limit to search right side in the next iteration.
+				/// if desired key is grater than the key at the middle index, it should be located in right side of the middle index
+				/// so adjust the range left limit to search right side in the next iteration.
 				else {
 					left_limit = middle + 1;
 				}
 			}
-			// return -1 in case we did not find the key.
+			/// return -1 in case we did not find the key.
 			return -1;
 		}
-	} // namspace binary_search
-} // namespace search
+	} /// namspace binary_search
+} /// namespace search
 
 /**
 * @namespace test_classes
@@ -72,7 +72,6 @@ namespace binary_search_test {
 
 	/**
 	*@brief sample class implemented to show the usage of algorithm with user defined types.
-	*
 	* ContainerClass class is a simple user defined container to show the usage of binary_search algorithm.
 	* please note that ContainerClass class is implemented just for test purposes.
 	*/
@@ -98,7 +97,6 @@ namespace binary_search_test {
 
 	/**
 	*@brief sample class implemented to show the usage of algorithm with user defined types.
-	*
 	* KeyClass class is a simple user defined data type to show the usage of binary_search algorithm.
 	* please note that KeyClass class is implemented just for test purposes.
 	*/
@@ -115,17 +113,17 @@ namespace binary_search_test {
 		int m_value = 0;
 	};
 
-	std::ostream & operator<<(const KeyClass& key, std::ostream& rhs)
+	std::ostream& operator<<(const KeyClass& key, std::ostream& rhs)
 	{
 		return rhs << key.get();
 	}
 
-	bool operator==(const KeyClass & lhs, const KeyClass & rhs)
+	bool operator==(const KeyClass& lhs, const KeyClass& rhs)
 	{
 		return (lhs.get() == rhs.get());
 	}
 
-	bool operator<(const KeyClass & lhs, const KeyClass & rhs)
+	bool operator<(const KeyClass& lhs, const KeyClass& rhs)
 	{
 		return (lhs.get() < rhs.get());
 	}
@@ -195,14 +193,17 @@ namespace binary_search_test {
 		*/
 		void test_case3() {
 			using Vector = std::vector<KeyClass>;
-			Vector vec = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-			KeyClass key = 5;
+			Vector vec;
+			for (int i = 1; i < 11; ++i) {
+				vec.push_back(KeyClass(i));
+			}
+			KeyClass key(5);
 			int result = binary_search<Vector, KeyClass>(vec, key);
 			log("Checking assert expression...");
 			assert(result == 4);
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 3_1 PASS!");
-			key = 20;
+			key = KeyClass(20);
 			result = binary_search<Vector, KeyClass>(vec, key);
 			log("Checking assert expression...");
 			assert(result == -1);
@@ -233,7 +234,7 @@ namespace binary_search_test {
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 4_2 PASS!");
 			log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		}	
+		}
 	};
 
 }  // namespace binary_search_test
@@ -246,6 +247,6 @@ namespace binary_search_test {
  */
 int main(int argc, char const* argv[]) {
 	binary_search_test::TestCases test;
-	test.run_tests();  // run self-test implementations
+	test.run_tests();  /// run self-test implementations
 	return 0;
 }
