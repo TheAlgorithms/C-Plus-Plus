@@ -1,6 +1,5 @@
 #include<iostream>
 
-// Structure of the node 
 struct Node{
     int val;
     Node* left;
@@ -10,7 +9,7 @@ struct Node{
 Node* create_node(int data){
     Node* temp = new Node;
     temp->val = data;
-    temp->left = temp->right = NULL;
+    temp->left = temp->right = nullptr;
     return temp;
 }
 
@@ -19,27 +18,33 @@ void insert(int data,Node* root){
     // value of data to be inserted then we go in
     // left subtree
     if(root->val > data){
-        if(root->left != NULL)
+        if(root->left != nullptr){
             insert(data,root->left);
-        else
+        }
+        else{
             root->left=create_node(data);
+        }
     }
     // if the value of the root node is lesser than
     // value of data to be inserted then we go in
     // right subtree
     if(root->val < data){
-        if(root->right != NULL)
+        if(root->right != nullptr){
             insert(data,root->right);
-        else
+        }
+        else{
             root->right=create_node(data);
+        }
     }
 }
 
 void postorder_traversal(Node* root){
-    if(root->left!=NULL)
+    if(root->left!=nullptr){
         postorder_traversal(root->left);
-    if(root->right!=NULL)
+    }
+    if(root->right!=nullptr){
         postorder_traversal(root->right);
+    }
 
     std::cout<<root->val<<" ";
 }
@@ -64,6 +69,6 @@ int main(){
 
     postorder_traversal(root);
     return 0;
+    // Time Complexity   : O(n)
+    // Space Complexity  : O(1)   
 }
-// Time Complexity O(N)
-// Space Complexity O(1)
