@@ -1,6 +1,7 @@
 #include<iostream>
 
-std::struct Node{
+// Structure of the node 
+struct Node{
     int val;
     Node* left;
     Node* right;
