@@ -1,7 +1,6 @@
 #include<iostream>
-using namespace std;
 
-struct Node{
+std::struct Node{
     int val;
     Node* left;
     Node* right;
@@ -41,7 +40,7 @@ void postorder_traversal(Node* root){
     if(root->right!=NULL)
         postorder_traversal(root->right);
 
-    cout<<root->val<<" ";
+    std::cout<<root->val<<" ";
 }
 
 int main(){
