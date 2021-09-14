@@ -22,7 +22,7 @@
 namespace search {
 
 	/**
-	 * @namespace sublist_search
+	 * @namespace binary_search
 	 * @brief Functions for the [binary_search]
 	 * implementation
 	 */
@@ -72,13 +72,14 @@ namespace binary_search_test {
 
 	/**
 	*@brief sample class implemented to show the usage of algorithm with user defined types.
+	*
 	* ContainerClass class is a simple user defined container to show the usage of binary_search algorithm.
 	* please note that ContainerClass class is implemented just for test purposes.
 	*/
 	template<typename T>
 	class ContainerClass {
 	public:
-		explicit ContainerClass() :m_elements{} {};
+		explicit ContainerClass() {};
 		void push_back(const T& element) {
 			m_elements.push_back(element);
 		}
@@ -97,6 +98,7 @@ namespace binary_search_test {
 
 	/**
 	*@brief sample class implemented to show the usage of algorithm with user defined types.
+	*
 	* KeyClass class is a simple user defined data type to show the usage of binary_search algorithm.
 	* please note that KeyClass class is implemented just for test purposes.
 	*/
@@ -128,7 +130,6 @@ namespace binary_search_test {
 		return (lhs.get() < rhs.get());
 	}
 
-	using namespace search::binary_search;
 
 	/**
 	*@brief this class is implemented to encapsulate sample test cases
@@ -155,13 +156,13 @@ namespace binary_search_test {
 			using Array = std::array<int, 10>;
 			Array array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 			int key = 5;
-			int result = binary_search<Array, int>(array, key);
+			int result = search::binary_search::binary_search<Array, int>(array, key);
 			log("Checking assert expression...");
 			assert(result == 4);
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 1_1 PASS!");
 			key = 20;
-			result = binary_search<Array, int>(array, key);
+			result = search::binary_search::binary_search<Array, int>(array, key);
 			log("Checking assert expression...");
 			assert(result == -1);
 			log("Assertion check passed!");
@@ -175,13 +176,13 @@ namespace binary_search_test {
 			using Vector = std::vector<int>;
 			Vector vec = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 			int key = 5;
-			int result = binary_search<Vector, int>(vec, key);
+			int result = search::binary_search::binary_search<Vector, int>(vec, key);
 			log("Checking assert expression...");
 			assert(result == 4);
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 2_1 PASS!");
 			key = 20;
-			result = binary_search<Vector, int>(vec, key);
+			result = search::binary_search::binary_search<Vector, int>(vec, key);
 			log("Checking assert expression...");
 			assert(result == -1);
 			log("Assertion check passed!");
@@ -198,13 +199,13 @@ namespace binary_search_test {
 				vec.push_back(KeyClass(i));
 			}
 			KeyClass key(5);
-			int result = binary_search<Vector, KeyClass>(vec, key);
+			int result = search::binary_search::binary_search<Vector, KeyClass>(vec, key);
 			log("Checking assert expression...");
 			assert(result == 4);
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 3_1 PASS!");
 			key = KeyClass(20);
-			result = binary_search<Vector, KeyClass>(vec, key);
+			result = search::binary_search::binary_search<Vector, KeyClass>(vec, key);
 			log("Checking assert expression...");
 			assert(result == -1);
 			log("Assertion check passed!");
@@ -219,16 +220,17 @@ namespace binary_search_test {
 			using Container = ContainerClass<std::string>;
 			std::vector<std::string> strings{ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
 			Container container;
-			for (const auto& str : strings)
+			for (const auto& str : strings) {
 				container.push_back(str);
+			}
 			std::string key = "E";
-			int result = binary_search<Container, std::string>(container, key);
+			int result = search::binary_search::binary_search<Container, std::string>(container, key);
 			log("Checking assert expression...");
 			assert(result == 4);
 			log("Assertion check passed!");
 			log("[PASS] : TEST CASE 4_1 PASS!");
 			key = "O";
-			result = binary_search<Container, std::string>(container, key);
+			result = search::binary_search::binary_search<Container, std::string>(container, key);
 			log("Checking assert expression...");
 			assert(result == -1);
 			log("Assertion check passed!");
