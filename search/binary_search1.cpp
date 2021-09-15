@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Binary search algorithm
+ * @brief Implementation of the [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
  * Binary search algorithm is an efficient algorithm to find the index of a key
  * in a sorted array. It works by repeatedly comparing the key with the middle
  * element of the array and narrowing down the range based on the result of
