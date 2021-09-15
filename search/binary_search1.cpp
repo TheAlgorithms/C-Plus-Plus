@@ -74,7 +74,7 @@ int binary_search(const Container& container, const Key& key) {
 namespace binary_search_test {
 
 /**
- *@brief sample class implemented to show the usage of algorithm with user
+ * @brief sample class implemented to show the usage of the algorithm with user
  *defined types.
  *
  * ContainerClass class is a simple user defined container to show the usage of
