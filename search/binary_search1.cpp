@@ -11,11 +11,11 @@
  * @author [Mohammad Golzar](https://github.com/m-golzar)
  */
 
-#include <array>     // for testing the binary_search algorithm with std::array
-#include <cassert>   // for assert
-#include <iostream>  // for IO operations
-#include <string>    // for testing the binary_search algorithm with std::string
-#include <vector>    // for testing the algorithm with std::vector
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <string>    /// for testing the algorithm with std::string
+#include <vector>    /// for std::vector
 
 /**
  * @namespace search
