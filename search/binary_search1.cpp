@@ -25,7 +25,7 @@ namespace search {
 
 /**
  * @namespace binary_search
- * @brief Functions for the [binary_search]
+ * @brief Functions for the [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
  * implementation
  */
 namespace binary_search {
