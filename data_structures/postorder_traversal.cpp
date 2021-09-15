@@ -45,8 +45,8 @@ void postorder_traversal(Node* root){
     if(root->right!=nullptr){
         postorder_traversal(root->right);
     }
-
     std::cout<<root->val<<" ";
+    delete root;
 }
 
 int main(){
