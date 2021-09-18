@@ -17,12 +17,14 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
- * Graphic Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
- * 
+ * Graphic
+ * Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
+ *
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
 #include <memory>    /// for dynamic memory
+#include <new>       /// for managing  dynamic storage
 
 /**
  * @namespace data_structures
@@ -39,8 +41,8 @@ namespace linked_list {
  */
 class Node {
  public:
-    int32_t val;     /// value of the current link
-    Node *next;  /// pointer to the next value on the list
+    int32_t val;  /// value of the current link
+    Node *next;   /// pointer to the next value on the list
 };
 
 /**
@@ -48,13 +50,13 @@ class Node {
  */
 class list {
  private:
-    Node *head = nullptr;  // link before the actual first element
+    Node *head;  // link before the actual first element
  public:
     /**
      * List constructor. Initializes the first link.
      */
     list() {
-        // Initialize the first link
+        head = nullptr;  // Initialize the first link
     }
     bool isEmpty();
     void insert(int32_t new_elem);
@@ -65,40 +67,38 @@ class list {
 };
 
 /**
- * function checks if list is empty
+ * @brief function checks if list is empty
  * @returns true if list is empty
  * @returns false if list is not empty
  */
-bool list::isEmpty() {
-    if (head == nullptr) {
-        return true;
-    } else {
-        return false;
-    }
-}
+bool list::isEmpty() { return head == nullptr; }
 
 /**
- * function adds new element to the end of the list
+ * @brief function adds new element to the end of the list
  * @param new_elem to be added to the end of the list
  */
 void list::insert(int32_t n) {
-    Node *new_node = new Node();
-    Node *temp = nullptr;
-    new_node->val = n;
-    new_node->next = nullptr;
-    if (isEmpty()) {
-        head = new_node;
-    } else {
-        temp = head;
-        while (temp->next != nullptr) {
-            temp = temp->next;
+    try {
+        Node *new_node = new Node();
+        Node *temp = nullptr;
+        new_node->val = n;
+        new_node->next = nullptr;
+        if (isEmpty()) {
+            head = new_node;
+        } else {
+            temp = head;
+            while (temp->next != nullptr) {
+                temp = temp->next;
+            }
+            temp->next = new_node;
         }
-        temp->next = new_node;
+    } catch (std::bad_alloc &exception) {
+        std::cerr << "bad_alloc detected: " << exception.what() << "\n";
     }
 }
 
 /**
- * function reverseList for reversing the  list
+ * @brief function reverseList for reversing the  list
  * @brief Using current,previous and next pointer.
  * @returns 'void'
  */
@@ -115,32 +115,35 @@ void list::reverseList() {
 }
 
 /**
- * function to find the top element of the list
+ * @brief function to find the top element of the list
  * @returns 'int32_t n'
  * @brief returns the first element in the list
  */
 int32_t list::top() {
-    if (!isEmpty()) {
-        int32_t n = head->val;
-        return n;
-    } else {
-        return 0;
+    try {
+        if (!isEmpty()) {
+            return head->val;
+        }
+    } catch (const std::exception &e) {
+        std::cerr << "List is empty" << e.what() << '\n';
     }
 }
 /**
- * function to find the last element of the list
+ *  @brief function to find the last element of the list
  *  @returns 'int32_t t->val'
  *  @brief returns the last element of the list
  */
 int32_t list::last() {
-    if (!isEmpty()) {
-        Node *t = head;
-        while (t->next != nullptr) {
-            t = t->next;
+    try {
+        if (!isEmpty()) {
+            Node *t = head;
+            while (t->next != nullptr) {
+                t = t->next;
+            }
+            return t->val;
         }
-        return t->val;
-    } else {
-        return 0;
+    } catch (const std::exception &e) {
+        std::cerr << "List is empty" << e.what() << '\n';
     }
 }
 }  // namespace linked_list
@@ -153,7 +156,6 @@ int32_t list::last() {
 static void test() {
     data_structures::linked_list::list L;
     // 1st test
-
     L.insert(11);
     L.insert(12);
     L.insert(15);
