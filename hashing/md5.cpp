@@ -351,7 +351,7 @@ static void test() {
 static void interactive() {
     while (true) {
         std::string input;
-        std::cout << "Enter a message to be hashed (Ctrl-C to stop program): "
+        std::cout << "Enter a message to be hashed (Ctrl-C to exit): "
                   << std::endl;
         std::getline(std::cin, input);
         void* sig = hashing::md5::hash(input);
