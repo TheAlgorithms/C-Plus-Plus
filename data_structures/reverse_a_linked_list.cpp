@@ -1,11 +1,10 @@
 /**
  * @file
- * @brief Implementation of [Reversing
+ * @brief Implementation of  [Reversing
  * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
  * @details
  * The linked list is a data structure used for holding a sequence of
- * values, which can be added, displayed, reversed, or removed.
-
+ * values, which can be added, displayed,reversed, or removed.
  * ### Algorithm
  * Values can be added by iterating to the end of a list (by following
  * the pointers) starting from the first link. Whichever link points to null
@@ -18,14 +17,9 @@
  * happens. And then we move the prev and current pointers one step forward.
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
-<<<<<<< HEAD
- * Graphic
- * Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
-=======
- * [A graphic explanation and view of what's happening behind the
- scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
->>>>>>> 3635d1b7257e1909d9ee82b1ebecd83af8870d6e
- *
+
+ *[A graphic explanation and view of what's happening behind the
+ *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
@@ -175,7 +169,7 @@ static void test() {
     // Reversal Testing
     assert(L.top() == 18);
     assert(L.last() == 11);
-    std::cout << "All tests have successfully passed!" << std::endl;
+    std::cout << "Passed" << std::endl;
 }
 
 /**
