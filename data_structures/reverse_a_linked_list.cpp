@@ -19,12 +19,17 @@
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Graphic
  * Explanation:https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing
 =======
  * [A graphic explanation and view of what's happening behind the
  scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
 >>>>>>> 3635d1b7257e1909d9ee82b1ebecd83af8870d6e
+=======
+ * [A graphic explanation and view of what's happening behind the
+ scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
+>>>>>>> 25e0fa925bdc9bda0cb2ca5909137e954d49d3a3
  *
  */
 #include <cassert>   /// for assert
