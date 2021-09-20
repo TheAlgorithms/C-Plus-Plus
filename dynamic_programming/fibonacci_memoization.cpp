@@ -10,7 +10,7 @@
 
 #include <cassert>            /// for assert
 #include <iostream>          /// for io operations
-#include <unordered_map>    /// for std::unordered_map
+#include <cstring>           /// for memset
 
 /**
  * @namespace dynamic_programming
@@ -25,19 +25,20 @@ namespace fibonacci_memoization {
 /**
  * @brief The function that implements the nth Fibonacci number problem using memoization.
  * @param n The index of the number in a Fibonacci series.
- * @param map_elements A map that contains previously encountered index-value pair.
+ * @param term
  * @returns Element at the nth position in the Fibonacci series.
  */
-uint32_t nthFibonacci(int n, std::unordered_map<int,uint32_t> &map_elements)
+long long int nthFibonacci(int n, int term[])
 {
-    if (n <= 1) {  // The numbers at index 0 and 1 are also 0 and 1.
+    if(n<=1)
+    {
         return n;
     }
-    if(map_elements.find(n) == map_elements.end())  // If the element with key: n is not present, find() returns the last element.
+    if(term[n] != -1)
     {
-        map_elements.insert({n, (nthFibonacci(n-1, map_elements) + nthFibonacci(n-2,map_elements))});
+        return term[n];
     }
-    return map_elements.at(n);
+    return term[n] = nthFibonacci(n-1,term) + nthFibonacci(n-2,term);
 }
 }  // namespace fibonacci_memoization
 }  // namespace dynamic_programming
@@ -50,34 +51,38 @@ static void test() {
     // 1st test
     // 7 return 13.
     int num1 = 7;
-    std::unordered_map<int,uint32_t> map_elements1;
+    int term1[num1+1];\
+    memset(term1,-1,sizeof(term1));
     std::cout << "Test 1... ";
-    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num1, map_elements1) == 13); // 7th fibonacci number is 13.
+    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num1, term1) == 13); // 7th fibonacci number is 13.
     std::cout<< "passed" << std::endl;
 
 
     // 2nd test
     // 45 return 1134903170.
     int num2 = 45;
-    std::unordered_map<int,uint32_t> map_elements2;
+    int term2[num2+1];
+    memset(term2,-1,sizeof(term2));
     std::cout << "Test 2... ";
-    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num2, map_elements2) == 1134903170); // 45th fibonacci number is 1134903170.
+    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num2, term2) == 1134903170); // 45th fibonacci number is 1134903170.
     std::cout<< "passed" << std::endl;
 
     // 3rd test
     // 15 return 610.
     int num3 = 15;
-    std::unordered_map<int,uint32_t> map_elements3;
+    int term3[num3+1];
+    memset(term3,-1,sizeof(term3));
     std::cout << "Test 3... ";
-    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num3, map_elements3) == 610); // 15th fibonacci number is 610.
+    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num3, term3) == 610); // 15th fibonacci number is 610.
     std::cout<< "passed" << std::endl;
 
     // 4th test
     // 31 return 1346269.
     int num4 = 31;
-    std::unordered_map<int,uint32_t> map_elements4;
+    int term4[num4 + 1] = {0};
+    memset(term4,-1,sizeof(term4));
     std::cout << "Test 4... ";
-    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num4, map_elements4) ==  1346269); // 31th fibonacci number is 1346269.
+    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num4, term4) ==  1346269); // 31th fibonacci number is 1346269.
     std::cout<< "passed" << std::endl;
 }
 
