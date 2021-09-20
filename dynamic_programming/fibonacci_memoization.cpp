@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of [nth Fibonacci problem](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e) using memoization
+ * @brief Implementation of [nth Fibonacci problem](https://medium.com/@andrewsouthard1/dynamic-programming-recursion-memoization-and-bottom-up-algorithms-61c882d1c7e)
+ * using memoization
  * @details
  * nth Fibonacci number using memoization is used as a dynamic programming concept that
  * works in \f$O(n)\f$ time and works in \f$O(n)\f$ space.
@@ -25,10 +26,10 @@ namespace fibonacci_memoization {
 /**
  * @brief The function that implements the nth Fibonacci number problem using memoization.
  * @param n The index of the number in a Fibonacci series.
- * @param term
+ * @param term The array which holds the ith fibonacci number at ith index.
  * @returns Element at the nth position in the Fibonacci series.
  */
-long long int nthFibonacci(int n, int term[])
+uint32_t nthFibonacci(int n, int term[])
 {
     if(n<=1)
     {
