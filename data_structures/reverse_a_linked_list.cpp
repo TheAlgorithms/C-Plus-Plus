@@ -21,6 +21,7 @@
  *[A graphic explanation and view of what's happening behind the
  *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  */
+
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
 #include <memory>    /// for dynamic memory
