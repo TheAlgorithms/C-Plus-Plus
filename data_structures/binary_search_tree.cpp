@@ -1,32 +1,18 @@
 /**
  * \file
  * \brief A simple tree implementation using structured nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation - C style - and does not
- * utilize any of the C++ STL features.
  */
 #include <iostream>
+#include <list>
 
 struct node {
     int val;
-    node *left;
-    node *right;
+    node* left;
+    node* right;
 };
+node* root;
 
-struct Queue {
-    node *t[100];
-    int front;
-    int rear;
-};
-
-Queue queue;
-
-void enqueue(node *n) { queue.t[queue.rear++] = n; }
-
-node *dequeue() { return (queue.t[queue.front++]); }
-
-void Insert(node *n, int x) {
+void insert(node *n, int x) {
     if (x < n->val) {
         if (n->left == NULL) {
             node *temp = new node;
@@ -35,9 +21,9 @@ void Insert(node *n, int x) {
             temp->right = NULL;
             n->left = temp;
         } else {
-            Insert(n->left, x);
+            insert(n->left, x);
         }
-    } else {
+    } else if (x > n->val) {
         if (n->right == NULL) {
             node *temp = new node;
             temp->val = x;
@@ -45,34 +31,34 @@ void Insert(node *n, int x) {
             temp->right = NULL;
             n->right = temp;
         } else {
-            Insert(n->right, x);
+            insert(n->right, x);
         }
     }
 }
 
-int findMaxInLeftST(node *n) {
+int findMaxInLeftST(node* n) {
     while (n->right != NULL) {
         n = n->right;
     }
     return n->val;
 }
-
-void Remove(node *p, node *n, int x) {
+void remove(node* p, node* n, int x) {
     if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
-            if (x < p->val) {
+        if (n->left == NULL && n->right == NULL) {
+            if (x > p->val) {
                 p->right = NULL;
             } else {
                 p->left = NULL;
             }
         } else if (n->right == NULL) {
-            if (x < p->val) {
+            if (x > p->val) {
                 p->right = n->left;
             } else {
                 p->left = n->left;
             }
+
         } else if (n->left == NULL) {
-            if (x < p->val) {
+            if (x > p->val) {
                 p->right = n->right;
             } else {
                 p->left = n->right;
@@ -80,21 +66,31 @@ void Remove(node *p, node *n, int x) {
         } else {
             int y = findMaxInLeftST(n->left);
             n->val = y;
-            Remove(n, n->right, y);
+            remove(n, n->left, x);
         }
-    } else if (x < n->val) {
-        Remove(n, n->left, x);
+    } else if (n->val > x) {
+        remove(n, n->left, x);
     } else {
-        Remove(n, n->right, x);
+        remove(n, n->right, x);
     }
 }
 
 void BFT(node *n) {
-    if (n != NULL) {
+    std::list<node* > queue;
+
+    queue.push_back(n);
+
+    while (!queue.empty()) {
+        n = queue.front();
         std::cout << n->val << "  ";
-        enqueue(n->left);
-        enqueue(n->right);
-        BFT(dequeue());
+        queue.pop_front();
+
+        if (n->left != NULL) {
+            queue.push_back(n->left);
+        }
+        if (n->right != NULL) {
+            queue.push_back(n->right);
+        }
     }
 }
 
@@ -123,12 +119,10 @@ void Post(node *n) {
 }
 
 int main() {
-    queue.front = 0;
-    queue.rear = 0;
     int value;
     int ch;
-    node *root = new node;
-    std::cout << "\nEnter the value of root node :";
+    node* root= new node();
+    std::cout << "\nEnter the Root node Value: ";
     std::cin >> value;
     root->val = value;
     root->left = NULL;
@@ -136,39 +130,49 @@ int main() {
     do {
         std::cout << "\n1. Insert"
                   << "\n2. Delete"
-                  << "\n3. Breadth First"
-                  << "\n4. Preorder Depth First"
-                  << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
-
-        std::cout << "\nEnter Your Choice : ";
+                  << "\n3. Breadth First Traverse"
+                  << "\n4. Pre-Order"
+                  << "\n5. In-Order"
+                  << "\n6. Post-Order"
+                  << "\n7. Exit"
+                  << "\nEnter the Choice: ";
         std::cin >> ch;
-        int x;
+
         switch (ch) {
         case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
+            int x;
+            std::cout << "\nEnter the value to Insert:";
             std::cin >> x;
-            Insert(root, x);
+            insert(root, x);
             break;
         case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
+            int del;
+            std::cout << "\nEnter the value to be deleted:";
+            std::cin >> del;
+            remove(root, root, del);
             break;
         case 3:
+            std::cout << "\nBreadth First Traverse:";
             BFT(root);
             break;
         case 4:
+            std::cout << "\nPre-Order Traversal:";
             Pre(root);
             break;
         case 5:
+            std::cout << "\nIn-Order Traversal:";
             In(root);
             break;
         case 6:
+            std::cout << "\nPost-Order Traversal:";
             Post(root);
             break;
+        case 7:
+            exit(0);
+        default:
+            std::cout << "\nInvalid Choice!!";
         }
-    } while (ch != 0);
+    } while (ch != 7);
 
     return 0;
 }
