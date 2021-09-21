@@ -7,10 +7,10 @@
 
 struct node {
     int val;
-    node* left;
-    node* right;
+    node *left;
+    node *right;
 };
-node* root;
+node *root;
 
 void insert(node *n, int x) {
     if (x < n->val) {
