@@ -356,6 +356,16 @@ static void interactive() {
         std::getline(std::cin, input);
         void* sig = hashing::md5::hash(input);
         std::cout << "Hash is: " << hashing::md5::sig2hex(sig) << std::endl;
+
+        while (true) {
+            std::cout << "Want to enter another message? (y/n) ";
+            std::getline(std::cin, input);
+            if (input.compare("y") == 0) {
+                break;
+            } else if (input.compare("n") == 0) {
+                return;
+            }
+        }
     }
 }
 
