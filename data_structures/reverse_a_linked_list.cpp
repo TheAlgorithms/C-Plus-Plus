@@ -1,10 +1,10 @@
 /**
  * @file
- * @brief Implementation of  [Reversing
+ * @brief Implementation of [Reversing
  * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
  * @details
  * The linked list is a data structure used for holding a sequence of
- * values, which can be added, displayed,reversed, or removed.
+ * values, which can be added, displayed, reversed, or removed.
  * ### Algorithm
  * Values can be added by iterating to the end of a list (by following
  * the pointers) starting from the first link. Whichever link points to null
@@ -18,7 +18,7 @@
  * Then the head node is made to point to the last node (prev pointer) after
  * completion of an iteration.
 
- *[A graphic explanation and view of what's happening behind the
+ * [A graphic explanation and view of what's happening behind the
  *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  */
 
@@ -68,15 +68,15 @@ class list {
 };
 
 /**
- * @brief function checks if list is empty
- * @returns true if list is empty
- * @returns false if list is not empty
+ * @brief Utility function that checks if the list is empty
+ * @returns true if the list is empty
+ * @returns false if the list is not empty
  */
 bool list::isEmpty() { return head == nullptr; }
 
 /**
- * @brief function adds new element to the end of the list
- * @param new_elem to be added to the end of the list
+ * @brief Utility function that adds a new element at the end of the list
+ * @param new_elem element be added at the end of the list
  */
 void list::insert(int32_t n) {
     try {
@@ -99,9 +99,9 @@ void list::insert(int32_t n) {
 }
 
 /**
- * @brief function reverseList for reversing the  list
- * @brief Using current,previous and next pointer.
- * @returns 'void'
+ * @brief Utility function for reversing a list
+ * @brief Using the current, previous, and next pointer.
+ * @returns void
  */
 void list::reverseList() {
     Node *curr = head;
@@ -116,9 +116,8 @@ void list::reverseList() {
 }
 
 /**
- * @brief function to find the top element of the list
- * @returns 'int32_t n'
- * @brief returns the first element in the list
+ * @brief Utility function to find the top element of the list
+ * @returns the top element of the list
  */
 int32_t list::top() {
     try {
@@ -130,9 +129,8 @@ int32_t list::top() {
     }
 }
 /**
- *  @brief function to find the last element of the list
- *  @returns 'int32_t t->val'
- *  @brief returns the last element of the list
+ *  @brief Utility function to find the last element of the list
+ *  @returns the last element of the list
  */
 int32_t list::last() {
     try {
