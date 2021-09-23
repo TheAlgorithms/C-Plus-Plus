@@ -29,13 +29,13 @@
  * some implmenetations can work on bytestream, messages of unknown length.
  */
 
-#include <algorithm>  // Used for std::copy
-#include <array>      // Used for std::array
-#include <cassert>    // Used for assert
-#include <cstring>    // Used for std::memcopy
-#include <iostream>   // Used for IO operations
-#include <string>     // Used for strings
-#include <vector>     // Used for std::vector
+#include <algorithm>  /// For std::copy
+#include <array>      /// For std::array
+#include <cassert>    /// For assert
+#include <cstring>    /// For std::memcopy
+#include <iostream>   /// For IO operations
+#include <string>     /// For strings
+#include <vector>     /// For std::vector
 
 /**
  * @namespace hashing
