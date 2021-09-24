@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md87", null ],
-      [ "Features", "index.html#autotoc_md88", null ],
-      [ "Documentation", "index.html#autotoc_md89", null ],
-      [ "Contributions", "index.html#autotoc_md90", null ]
+      [ "Overview", "index.html#autotoc_md88", null ],
+      [ "Features", "index.html#autotoc_md89", null ],
+      [ "Documentation", "index.html#autotoc_md90", null ],
+      [ "Contributions", "index.html#autotoc_md91", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -136,13 +136,13 @@ var NAVTREEINDEX =
 "d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f",
 "d4/d83/sum__of__digits_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
 "d5/d90/palindrome__partitioning_8cpp.html#a52ee22882858d2b1cf04293f02ed839a",
-"d6/db0/binomial__dist_8cpp.html#a76ed6ce71415fb400b65f0656cef3d25",
-"d8/d76/morse__code_8cpp.html#ac9f294b0dec08a4a11d477a32f9bd829",
-"d9/d69/median__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d19/structlinear__probing_1_1_entry.html",
-"dc/d93/trie__modern_8cpp.html",
-"de/d75/qr__eigen__values_8cpp.html",
-"functions_~.html"
+"d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a78be932dac71c90f485a67d4fda877e2",
+"d8/d6c/line__segment__intersection_8cpp.html",
+"d9/d5d/extended__euclid__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46",
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a19aaccad279b22dbbb6c55e5697b4114",
+"de/d23/disjoint__set_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"functions_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
