@@ -141,6 +141,7 @@
   * [Linear Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/linear_probing_hash_table.cpp)
   * [Md5](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/md5.cpp)
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
+  * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/sha1.cpp)
 
 ## Linear Algebra
   * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/linear_algebra/gram_schmidt.cpp)
