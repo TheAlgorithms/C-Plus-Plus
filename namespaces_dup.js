@@ -169,6 +169,7 @@ var namespaces_dup =
     [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
     [ "search", "d9/dca/namespacesearch.html", "d9/dca/namespacesearch" ],
     [ "selection_sort_recursive", "df/d4a/namespaceselection__sort__recursive.html", null ],
+    [ "SHA", "de/dd3/namespace_s_h_a.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [

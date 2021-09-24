@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md88", null ],
-      [ "Features", "index.html#autotoc_md89", null ],
-      [ "Documentation", "index.html#autotoc_md90", null ],
-      [ "Contributions", "index.html#autotoc_md91", null ]
+      [ "Overview", "index.html#autotoc_md89", null ],
+      [ "Features", "index.html#autotoc_md90", null ],
+      [ "Documentation", "index.html#autotoc_md91", null ],
+      [ "Contributions", "index.html#autotoc_md92", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -138,11 +138,11 @@ var NAVTREEINDEX =
 "d5/d90/palindrome__partitioning_8cpp.html#a52ee22882858d2b1cf04293f02ed839a",
 "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a78be932dac71c90f485a67d4fda877e2",
 "d8/d6c/line__segment__intersection_8cpp.html",
-"d9/d5d/extended__euclid__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46",
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a19aaccad279b22dbbb6c55e5697b4114",
-"de/d23/disjoint__set_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"functions_p.html"
+"d9/d49/structdata__structures_1_1_node.html#ac916d833aad2b9c41f01a92db2f8c48e",
+"db/d01/brent__method__extrema_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"dc/d64/md__coding_guidelines.html#autotoc_md12",
+"de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f",
+"functions_func_~.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,0 +1,5 @@
+<map id="hashing::sha1::hash_bs" name="hashing::sha1::hash_bs">
+<area shape="rect" id="node1" title="The SHA&#45;1 algorithm itself, taking in a bytestring." alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="216,5,340,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="240,56,316,83"/>
+</map>
