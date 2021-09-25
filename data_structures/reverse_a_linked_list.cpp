@@ -65,6 +65,7 @@ class list {
     void display();
     int32_t top();
     int32_t last();
+    int32_t traverse(int32_t index);
 };
 
 /**
@@ -145,6 +146,26 @@ int32_t list::last() {
         std::cerr << "List is empty" << e.what() << '\n';
     }
 }
+/**
+ *  @brief Utility function to find the i th element of the list
+ *  @returns the i th element of the list
+ */
+int32_t list::traverse(int index) {
+    Node *current = head;
+
+    int count = 0;
+    while (current != NULL) {
+        if (count == index)
+            return (current->val);
+        count++;
+        current = current->next;
+    }
+
+    /* if we get to this line,the caller was asking for a non-existent element
+    so we assert fail */
+    assert(0);
+}
+
 }  // namespace linked_list
 }  // namespace data_structures
 
@@ -167,6 +188,11 @@ static void test() {
     L.reverseList();
     // Reversal Testing
     assert(L.top() == 18);
+    assert(L.traverse(1) == -20);
+    assert(L.traverse(2) == -12);
+    assert(L.traverse(3) == 10);
+    assert(L.traverse(4) == 15);
+    assert(L.traverse(5) == 12);
     assert(L.last() == 11);
     std::cout << "Passed" << std::endl;
 }
