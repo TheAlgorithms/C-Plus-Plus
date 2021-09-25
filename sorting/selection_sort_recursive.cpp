@@ -52,7 +52,8 @@ namespace selection_sort_recursive {
  * @returns index of the minimum element
  */
 template <typename T>
-uint64_t findMinIndex(const std::vector<T> &in_arr, uint64_t current_position = 0) {
+uint64_t findMinIndex(const std::vector<T> &in_arr,
+                      uint64_t current_position = 0) {
     if (current_position + 1 == in_arr.size()) {
         return current_position;
     }
