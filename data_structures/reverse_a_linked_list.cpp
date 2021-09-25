@@ -154,9 +154,10 @@ int32_t list::traverse(int index) {
     Node *current = head;
 
     int count = 0;
-    while (current != NULL) {
-        if (count == index)
+    while (current != nullptr) {
+        if (count == index) {
             return (current->val);
+        }
         count++;
         current = current->next;
     }
