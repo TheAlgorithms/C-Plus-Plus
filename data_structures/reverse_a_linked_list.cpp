@@ -195,7 +195,7 @@ static void test() {
     assert(L.traverse(4) == 15);
     assert(L.traverse(5) == 12);
     assert(L.last() == 11);
-    std::cout << "Passed" << std::endl;
+    std::cout << "All tests have successfully passed!" << std::endl;
 }
 
 /**
