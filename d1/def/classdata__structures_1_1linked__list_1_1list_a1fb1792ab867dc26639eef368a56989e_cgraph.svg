@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" target="_top" xlink:title="Utility function that checks if the list is empty.">
 <polygon fill="white" stroke="black" points="153,-39 153,-69 270,-69 270,-39 153,-39"/>
 <text text-anchor="start" x="161" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
 <text text-anchor="middle" x="211.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::isEmpty</text>

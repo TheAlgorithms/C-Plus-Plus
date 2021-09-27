@@ -3,6 +3,7 @@ var namespacedata__structures =
     [ "linked_list", null, [
       [ "link", "de/d9d/classdata__structures_1_1linked__list_1_1link.html", "de/d9d/classdata__structures_1_1linked__list_1_1link" ],
       [ "list", "d1/def/classdata__structures_1_1linked__list_1_1list.html", "d1/def/classdata__structures_1_1linked__list_1_1list" ],
+      [ "Node", "d4/d0e/classdata__structures_1_1linked__list_1_1_node.html", "d4/d0e/classdata__structures_1_1linked__list_1_1_node" ],
       [ "isDigit", "da/dc3/linked__list_8cpp.html#ab1a372fe1e605bc0e0987dcdd7361180", null ]
     ] ],
     [ "list_array", null, [
