@@ -250,7 +250,6 @@ static void test2() {
      *               / \
      *              7   8
      *
-     *
      *******************************************************************************/
 
     others::recursive_tree_traversals::BinaryTree
