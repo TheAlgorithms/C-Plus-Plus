@@ -5,7 +5,12 @@
  * @filename    : c.cpp
  */
 
-#include "bits/stdc++.h"
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <cmath>     /// for fabs
+#include <iostream>  /// for io operations
+#include "math.h"
+
 #define int          long long int
 #define mp           make_pair
 #define pb           emplace_back
