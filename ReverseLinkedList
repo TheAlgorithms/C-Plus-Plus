@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+ 
+// Representation of a node
+struct Node {
+    int data;
+    Node* next;
+};
+ 
+// Function to insert node
+void insert(Node** root, int item)
+{
+    Node* temp = new Node;
+    Node* ptr;
+    temp->data = item;
+    temp->next = NULL;
+ 
+    if (*root == NULL)
+        *root = temp;
+    else {
+        ptr = *root;
+        while (ptr->next != NULL)
+            ptr = ptr->next;
+        ptr->next = temp;
+    }
+}
+ 
+void display(Node* root)
+{
+    while (root != NULL) {
+        cout << root->data << " ";
+        root = root->next;
+    }
+    cout<<endl;
+}
+ 
+Node *arrayToList(int arr[], int n)
+{
+    Node *root = NULL;
+    for (int i = 0; i < n; i++)
+        insert(&root, arr[i]);
+   return root;
+}
+// Reverse Linked list!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Node* reverseList(Node* head) {
+    Node* cur=head,* prev=NULL,* next;
+    while(cur){
+        next=cur->next;
+        cur->next=prev;
+        prev=cur;
+        cur=next;
+    }
+    return prev;
+}
+
+int main()
+{
+    int arr[] = { 1, 2, 3, 4, 5 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    Node* root = arrayToList(arr, n);
+    display(root);
+    //reverse Linked List
+    root=reverseList(root);
+    display(root);
+    return 0;
+}
