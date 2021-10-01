@@ -41,20 +41,34 @@ Node *arrayToList(int arr[], int n)
         insert(&root, arr[i]);
    return root;
 }
-// Reverse Linked list!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Node* reverseList(Node* head) {
-    Node* cur=head,* prev=NULL,* next;
-    while(cur){
-        next=cur->next;
-        cur->next=prev;
-        prev=cur;
-        cur=next;
+// Reverse Linked list with recusion!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Node* newhead;
+Node* rev(Node* head){
+    if(!head){
+        return NULL;
     }
-    return prev;
+    if(!head->next){
+        newhead = head;
+        return head;
+    }
+    Node* temp=rev(head->next);
+    temp->next = head;
+    head->next = NULL;
+    return head;
+}
+Node* reverseList(Node* head) {
+    rev(head);
+    return(newhead);
 }
 
 int main()
-{
+{	
+	//Sample tests 
+	/*
+	{5,4,3,2,1}
+	{1,2,1,2,1,2}
+	{10,100000,100,100}
+	*/
     int arr[] = { 1, 2, 3, 4, 5 };
     int n = sizeof(arr) / sizeof(arr[0]);
     Node* root = arrayToList(arr, n);
