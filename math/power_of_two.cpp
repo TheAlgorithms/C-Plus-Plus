@@ -104,7 +104,7 @@ int main() {
     test(); //run self-test implementations
 
     //UN - COMMENT BELOW LINE TO TAKE USER INPUTS
-     user_input_test(); 
+    // user_input_test(); 
 
     
     return 0;
