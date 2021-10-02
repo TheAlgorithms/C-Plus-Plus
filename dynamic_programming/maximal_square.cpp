@@ -18,14 +18,16 @@ square from point (1, 3) to (2, 4) contain maximum area which of length 2.
 
 
 */
-#include<bits/stdc++.h>
+#include<iostream>
+using std::cin;
+using std::cout;
 using namespace std;
 
 int main(){
     
     cout<<"Enter the Height and Width of matrix respectively:\n";
     int H, W;
-    cin>>H>>W;  // H=height of matrix,  W=width of matrix
+    cin>>H>>W;  /* H=height of matrix,  W=width of matrix */
 
     int matrix[H][W];
 
@@ -36,9 +38,18 @@ int main(){
         }
     }
 
-   
-    int lengthof_square_submatrix[H][W];
-    memset(lengthof_square_submatrix, 0, sizeof(lengthof_square_submatrix));  // initialize all the value with zero
+     
+      int lengthof_square_submatrix[H][W];
+
+     /* initialize all the value with zero */
+      for(int row=0; row<H; row++){
+        for(int col=0; col<W; col++){
+            lengthof_square_submatrix[row][col]=0;
+        }
+    }
+
+
+
 
     /*
     lengthof_square_submatrix[r][c]==(length of maximum square submatrix containing all value 1 and ending at rth row and cth column.)
@@ -96,7 +107,7 @@ int main(){
     */
 
 
-    int max_length_square=0;   // max_length_square--->maximum length of square containing all value in it is 1. 
+    int maximum_length_square=0;   /* maximum_length_square--->maximum length of square containing all value in it is 1. */
 
     for(int row=0; row<H; row++){
         for(int col=0; col<W; col++){
@@ -106,17 +117,21 @@ int main(){
                 lengthof_square_submatrix[row][col]=1;
 
                 if(row>0 && col>0)
-                lengthof_square_submatrix[row][col]=1+min({lengthof_square_submatrix[row][col-1], lengthof_square_submatrix[row-1][col], lengthof_square_submatrix[row-1][col-1]});
+                lengthof_square_submatrix[row][col]=1+min(min(lengthof_square_submatrix[row][col-1], lengthof_square_submatrix[row-1][col]) , lengthof_square_submatrix[row-1][col-1]);
             }
+            
 
-            max_length_square=max(max_length_square, lengthof_square_submatrix[row][col]);
+            if(maximum_length_square < lengthof_square_submatrix[row][col] ){
+                maximum_length_square = lengthof_square_submatrix[row][col];
+
+            }
         }
     }
     
-    // So maximum square area containing all the value 1 is (max_length_square*max_length_square).
-     int answer=max_length_square*max_length_square;
+    /* So maximum square area containing all the value 1 is (max_length_square*max_length_square). */
+      int answer=maximum_length_square*maximum_length_square;
 
-     cout<<answer<<"\n";
+     cout<< answer <<"\n";
 
     
 }
