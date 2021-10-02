@@ -15,31 +15,45 @@ struct point {
 };
 
 /**
- * Compare two points
- * it returns true if the first point is on the left of the second point
+ * @brief Compare two points
+ * @param a the first point
+ * @param b the second point
+ * @returns `true` if the first point is on the left of the second point
  * or the first point is below the second point if they have the same x value
+ * @returns `false` otherwise
  */
 bool compare(point a, point b) {
     return a.x < b.x || (a.x == b.x && a.y < b.y);
 }
 
 /**
- * it returns true if orientation of the three points is clockwise
+ * @param a the first point
+ * @param b the second point
+ * @param c the third point
+ * @returns `true` if orientation of the three points is clockwise
+ * @returns `false` otherwise
  */
 bool cw(point a, point b, point c) {
     return a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y) < 0;
 }
 
 /**
- * it returns true if orientation of the three points is counter clockwise
+ * @param a the first point
+ * @param b the second point
+ * @param c the third point
+ * @returns `true` if orientation of the three points is counter clockwise
+ * @returns `false` otherwise
  */
 bool ccw(point a, point b, point c) {
     return a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y) > 0;
 }
 
 /**
- * it make cw check if check_type = 1
- * it make ccw check if check_type = 2
+ * @brief it make cw check if check_type = 1 and ccw check if check_type = 2
+ * @param check_type the type check which is !cw or !ccw
+ * @param a the first point
+ * @param b the second point
+ * @param c the third point
  */
 bool check(int check_type, point a, point b, point c) {
     switch (check_type) {
@@ -54,8 +68,12 @@ bool check(int check_type, point a, point b, point c) {
 }
 
 /**
+ * @brief
  * it adds the current point to the convex hull
  * and remove any unnecessary points
+ * @param convex_hull the convex hull to add the point to
+ * @param current the point to add it to the convex hull
+ * @param type the type which upper convex hull or lower
  */
 void add_point(vector<point>& convex_hull, point current, int type) {
     point last, second_last;
@@ -75,7 +93,8 @@ void add_point(vector<point>& convex_hull, point current, int type) {
 }
 
 /**
- * it returns the minimum convex hull edges that include all the points
+ * @param points The point to be included in the convex hull
+ * @return the minimum convex hull edges that include all the points
  */
 void convex_hull_construction(vector<point>& points) {
     if (points.size() == 1)
