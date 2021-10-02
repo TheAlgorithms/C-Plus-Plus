@@ -13,9 +13,9 @@ Output:
 4
 
 (0-index nxm matrix)
-Explanation: square from point (1, 2) to (2, 3) contain maximum area which of length 2 or
-square from point (1, 3) to (2, 4) contain maximum area which of length 2.
-
+Explanation: square from point (1, 2) to (2, 3) contain maximum  length of 2 unit or
+square from point (1, 3) to (2, 4) contain maximum length 2 unit.
+ so area is 2*2=4;
 
 */
 #include<iostream>
