@@ -1,13 +1,13 @@
 /**
  * @file
  * @brief Construct convex hull from points using Graham's Scan.
- * @details
- * Given N points on a plane, and the objective is to generate a convex hull
- * which is the smallest convex polygon that contains all the given points.
  * @author Ayman Azzam
  */
 
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 struct point {
@@ -91,7 +91,7 @@ void convex_hull_construction(vector<point>& points) {
     vector<point> up_hull, low_hull;
     up_hull.push_back(left_point);
     low_hull.push_back(left_point);
-    for (int i = 1; i < (int)points.size(); i++) {
+    for (int i = 1; i < points.size(); i++) {
         current = points[i];
         /*** if the current point in the upper convex hull ***/
         if (i == points.size() - 1 || cw(left_point, current, right_point))
@@ -104,9 +104,8 @@ void convex_hull_construction(vector<point>& points) {
             add_point(low_hull, current, 2);
     }
 
-    /********** Union the upper and lower convex hulls **********/
     points.clear();
-    for (int i = 0; i < (int)up_hull.size(); i++) points.push_back(up_hull[i]);
+    for (int i = 0; i < up_hull.size(); i++) points.push_back(up_hull[i]);
     for (int i = low_hull.size() - 2; i > 0; i--) points.push_back(low_hull[i]);
 }
 
@@ -132,10 +131,13 @@ static void test() {
     points.push_back(p3);
     points.push_back(p4);
     points.push_back(p5);
-
     convex_hull_construction(points);
-    for (int i = 0; i < (int)points.size(); i++)
-        cout << "(" << points[i].x << ", " << points[i].y << ")" << endl;
+
+    vector<point> expected = {{2, 10}, {4, 12}, {6, 12}, {4, 8}};
+    for (int i = 0; i < points.size(); i++) {
+        assert(points[i].x == expected[i].x);
+        assert(points[i].y == expected[i].y);
+    }
 }
 
 int main() {
