@@ -13,67 +13,67 @@ Made by Anuran Roy (https://github.com/anuran-roy)
 #include <vector>
 
 #define ll long long int
-using namespace std;
+// using namespace std;
 
-hash<string> hashfunc;
+std::hash<std::string> hashfunc;
 
 typedef struct content  // The metadata of a block
 {
-    string lastblock;
+    std::string lastblock;
     ll bno;
 } block;
 
-string getTime() {  // method to get the current time
-    return to_string(time(nullptr));
+std::string getTime() {  // method to get the current time
+    return std::__cxx11::to_string(time(nullptr));
 }
 
 void proofOfWork(int time) {  // a simple proof-of-work algorithm
-    cout << "\nSolving the proof of work puzzle worth " << time / 1000
-         << "seconds...\n\n";
-    this_thread::sleep_for(chrono::milliseconds(time));
+    std::cout << "\nSolving the proof of work puzzle worth " << time / 1000
+              << "seconds...\n\n";
+    std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
 class Transaction  // The smallest unit of a blockchain - The Transaction
 {
  public:
     Transaction() {}
-    Transaction(string sender, string receiver, float amt) {
+    Transaction(std::string sender, std::string receiver, float amt) {
         senderAddress = sender;
         receiverAddress = receiver;
         amount = amt;
     }
 
     void printDetails() {
-        cout << "Sender:\t" << senderAddress << endl;
-        cout << "Receiver:\t" << receiverAddress << endl;
-        cout << "Amount:\t" << amount << endl;
+        std::cout << "Sender:\t" << senderAddress << std::endl;
+        std::cout << "Receiver:\t" << receiverAddress << std::endl;
+        std::cout << "Amount:\t" << amount << std::endl;
     }
     float getAmount() { return amount; }
-    string getReceiver() { return receiverAddress; }
-    string getSender() { return senderAddress; }
+    std::string getReceiver() { return receiverAddress; }
+    std::string getSender() { return senderAddress; }
 
  protected:
-    string senderAddress;
-    string receiverAddress;
+    std::string senderAddress;
+    std::string receiverAddress;
     float amount;
 };
 
 class Node  // The encapsulation of a Transaction
 {
  public:
-    Node(const Transaction &a, ll num, string lastblock) {
+    Node(const Transaction &a, ll num, std::string lastblock) {
         nodeTransaction = a;
         current.lastblock = lastblock;
         current.bno = num;
     }
     block getDetails() { return current; }
     void printDetails() {
-        cout << "\nTransaction Info:\n";
+        std::cout << "\nTransaction Info:\n";
         nodeTransaction.printDetails();
 
-        cout << "\n\nBlock Info:\n";
-        cout << "Block number:\n" << current.bno << endl;
-        cout << "Hash of last block:\n" << current.lastblock << endl;
+        std::cout << "\n\nBlock Info:\n";
+        std::cout << "Block number:\n" << current.bno << std::endl;
+        std::cout << "Hash of last block:\n" << current.lastblock << std::endl;
     }
     Transaction getTransaction() { return nodeTransaction; }
 
@@ -82,28 +82,29 @@ class Node  // The encapsulation of a Transaction
     block current;
 };
 
-string hashNode(Node a) {
+std::string hashNode(Node a) {
     block details = a.getDetails();
-    string t = getTime() + details.lastblock + to_string(details.bno);
+    std::string t =
+        getTime() + details.lastblock + std::__cxx11::to_string(details.bno);
 
-    return to_string(hashfunc(t));
+    return std::__cxx11::to_string(hashfunc(t));
 }
 
 bool NodeEquals(Node a, Node b) {
     bool resp = false;
-    string t1_sender = a.getTransaction().getSender();
-    string t1_receiver = a.getTransaction().getReceiver();
+    std::string t1_sender = a.getTransaction().getSender();
+    std::string t1_receiver = a.getTransaction().getReceiver();
     float t1_amount = a.getTransaction().getAmount();
 
-    string t2_sender = b.getTransaction().getSender();
-    string t2_receiver = b.getTransaction().getReceiver();
+    std::string t2_sender = b.getTransaction().getSender();
+    std::string t2_receiver = b.getTransaction().getReceiver();
     float t2_amount = b.getTransaction().getAmount();
 
     ll t1_bno = a.getDetails().bno;
-    string t1_lastblock = a.getDetails().lastblock;
+    std::string t1_lastblock = a.getDetails().lastblock;
 
     ll t2_bno = b.getDetails().bno;
-    string t2_lastblock = b.getDetails().lastblock;
+    std::string t2_lastblock = b.getDetails().lastblock;
 
     if (t1_sender == t2_sender) {
         if (t1_receiver == t2_receiver) {
@@ -122,8 +123,8 @@ bool NodeEquals(Node a, Node b) {
 class Ledger  // The sequenced chain of blocks
 {
  public:
-    vector<Node> getLedger() { return ledger; }
-    void setLedger(vector<Node> &a) { ledger.assign(a.begin(), a.end()); }
+    std::vector<Node> getLedger() { return ledger; }
+    void setLedger(std::vector<Node> &a) { ledger.assign(a.begin(), a.end()); }
     void addToLedger(const Node &a) {
         const Node b = a;
         ledger.push_back(b);
@@ -133,23 +134,23 @@ class Ledger  // The sequenced chain of blocks
     Node getInstance(int i) { return ledger[i]; }
 
  private:
-    vector<Node> ledger;
+    std::vector<Node> ledger;
 };
 
 class User  // A user in the blockchain network
 {
  public:
-    User(string seed, float amt) {
-        address = to_string(hashfunc(seed));
+    User(std::string seed, float amt) {
+        address = std::__cxx11::to_string(hashfunc(seed));
         balance = amt;
     }
-    string getAddress() { return address; }
+    std::string getAddress() { return address; }
     bool receiveToken(float amt) {
         if (amt >= 0.0) {
             balance += amt;
             return true;
         } else {
-            cout << "\n\nCannot receive negative amount of tokens.\n\n";
+            std::cout << "\n\nCannot receive negative amount of tokens.\n\n";
             return false;
         }
     }
@@ -161,47 +162,47 @@ class User  // A user in the blockchain network
             return false;
         }
     }
-    void setUserLedger(const vector<Node> &a) {
+    void setUserLedger(const std::vector<Node> &a) {
         ledgerCopy.assign(a.begin(), a.end());
     }
     void getDetails() {
-        cout << "\nUser address:\t" << address;
-        cout << "\nBalance:\t" << balance << "\n\n";
-        cout << "\nLedger details for user:" << endl;
+        std::cout << "\nUser address:\t" << address;
+        std::cout << "\nBalance:\t" << balance << "\n\n";
+        std::cout << "\nLedger details for user:" << std::endl;
         for (int i = 0; i < ledgerCopy.size(); i++)
             ledgerCopy[i].printDetails();
     }
-    vector<Node> getUserLedger() { return ledgerCopy; }
+    std::vector<Node> getUserLedger() { return ledgerCopy; }
 
  private:
-    string address;
+    std::string address;
     float balance;
-    vector<Node> ledgerCopy;
+    std::vector<Node> ledgerCopy;
 };
 
 User makeUser(float amt) {
-    string seed;
-    cout << "\n\nEnter seed phrase:\n\n";
-    cin >> seed;
+    std::string seed;
+    std::cout << "\n\nEnter seed phrase:\n\n";
+    std::cin >> seed;
     User newUser = User(seed, amt);
     return newUser;
 }
 
 bool compareLedgers(User a, User b) {
-    // cout << "\ncompareLedgers() invoked!\n";
-    vector<Node> l1;
-    // cout << "Going to invoke assign() for l1\n\n";
+    // std::cout << "\ncompareLedgers() invoked!\n";
+    std::vector<Node> l1;
+    // std::cout << "Going to invoke assign() for l1\n\n";
     l1 = a.getUserLedger();
     // l1.assign(a.getUserLedger().begin(), a.getUserLedger().end());
-    vector<Node> l2;
-    // cout << "Going to invoke assign() for l2\n\n";
+    std::vector<Node> l2;
+    // std::cout << "Going to invoke assign() for l2\n\n";
     l2 = b.getUserLedger();
     // l2.assign(b.getUserLedger().begin(), b.getUserLedger().end());
 
     if (l1.size() == l2.size()) {
         for (int i = 0; i < l1.size(); i++) {
             if (NodeEquals(l1[i], l2[i])) {
-                cout << "";
+                std::cout << "";
             } else {
                 return false;
             }
@@ -244,102 +245,105 @@ class Contract : protected Transaction {
     bool transit(User &sender, User &receiver, float amt) {
         if (sender.sendToken(amt)) {
             receiver.receiveToken(amt);
-            cout << "\n\nTransaction complete!\n\n";
+            std::cout << "\n\nTransaction complete!\n\n";
             return true;
         } else {
-            cout << "\n\nTransaction couldn't be completed. Check the balance "
-                    "of sender, and the amount of tokens sent.\n\n";
+            std::cout
+                << "\n\nTransaction couldn't be completed. Check the balance "
+                   "of sender, and the amount of tokens sent.\n\n";
             return false;
         }
     }
     // int num;
 };
 
-Node makeNode(string usr1, string usr2, float amt, string THash, ll bnum) {
+Node makeNode(std::string usr1, std::string usr2, float amt, std::string THash,
+              ll bnum) {
     Transaction tx = Transaction(usr1, usr2, amt);
     Node nNode = Node(tx, bnum, THash);
 
     return nNode;
 }
 
-void propagate() { cout << ""; }
+void propagate() { std::cout << ""; }
 
 int main() {
     Ledger ledgerInstance = Ledger();
 
-    cout << "\nEnter number of mock transactions to generate:\n";
+    std::cout << "\nEnter number of mock transactions to generate:\n";
     int n;
-    cin >> n;
+    std::cin >> n;
 
     Node genesisBlock = Node(Transaction("__init__", "__init__", 0.00), 1,
-                             to_string(hashfunc("0")));
-    cout << "\n"
-         << "Genesis block:\nHash: " << hashNode(genesisBlock) << "\n";
-    string THash = hashNode(genesisBlock);
+                             std::__cxx11::to_string(hashfunc("0")));
+    std::cout << "\n"
+              << "Genesis block:\nHash: " << hashNode(genesisBlock) << "\n";
+    std::string THash = hashNode(genesisBlock);
     Contract democontract = Contract();
 
-    cout << "\n\nEnter balance of sender to initialize with:";
+    std::cout << "\n\nEnter balance of sender to initialize with:";
     float a;
-    cin >> a;
+    std::cin >> a;
     User u1 = makeUser(a);
-    string sender = u1.getAddress();
+    std::string sender = u1.getAddress();
 
-    cout << "\n\nEnter balance of receiver to initialize with:";
-    cin >> a;
+    std::cout << "\n\nEnter balance of receiver to initialize with:";
+    std::cin >> a;
     User u2 = makeUser(a);
-    string receiver = u2.getAddress();
+    std::string receiver = u2.getAddress();
 
     ledgerInstance.addToLedger(genesisBlock);
 
     for (int i = 0; i < n - 1; i++) {
-        cout << "\n\n-----------------------------\n\nMaking new block..."
-             << endl;
-        cout << "Hash of last block: " << THash << endl;
+        std::cout << "\n\n-----------------------------\n\nMaking new block..."
+                  << std::endl;
+        std::cout << "Hash of last block: " << THash << std::endl;
 
-        cout << "Enter amount to be transacted for Transaction ID "
-             << to_string(i + 1) << ":\n";
-        cin >> a;
+        std::cout << "Enter amount to be transacted for Transaction ID "
+                  << std::__cxx11::to_string(i + 1) << ":\n";
+        std::cin >> a;
         Node nd = makeNode(sender, receiver, a * 1.00, THash, i + 2);
         nd.printDetails();
         if (democontract.validate(u1, u2, nd)) {
             THash = hashNode(nd);
-            cout << "Hash of current block: " << THash
-                 << "\n\n-----------------------------\n\n";
+            std::cout << "Hash of current block: " << THash
+                      << "\n\n-----------------------------\n\n";
             ledgerInstance.addToLedger(nd);
         } else {
-            cout << "Block is not valid according to contract. Discarding "
-                    "block...\n\n-----------------------------\n\n";
+            std::cout << "Block is not valid according to contract. Discarding "
+                         "block...\n\n-----------------------------\n\n";
         }
         proofOfWork(5000);
 
         u1.setUserLedger(ledgerInstance.getLedger());
         u2.setUserLedger(ledgerInstance.getLedger());
     }
-    cout << "\n\n--------------------------------- Printing Ledger "
-            "---------------------------------"
-         << endl;
+    std::cout << "\n\n--------------------------------- Printing Ledger "
+                 "---------------------------------"
+              << std::endl;
     for (int i = 0; i < ledgerInstance.ledgerLength(); i++) {
-        cout << "\n\n---------------------------------" << endl;
+        std::cout << "\n\n---------------------------------" << std::endl;
         if (i > 0) {
             ledgerInstance.printInstance(i);
         } else {
-            cout << "\n\nGenesis block (Block #1)";
+            std::cout << "\n\nGenesis block (Block #1)";
         }
-        cout << "\n\n---------------------------------" << endl;
+        std::cout << "\n\n---------------------------------" << std::endl;
     }
 
-    cout
+    std::cout
         << "\n========================================\nBalance of sender now: "
-        << endl;
+        << std::endl;
     u1.getDetails();
 
-    cout << "\n========================================\nBalance of receiver "
-            "now: "
-         << endl;
+    std::cout
+        << "\n========================================\nBalance of receiver "
+           "now: "
+        << std::endl;
     u2.getDetails();
 
-    cout << "\n\nAre the ledgers same?\n\n";
-    cout << compareLedgers(u1, u2) << endl;
+    std::cout << "\n\nAre the ledgers same?\n\n";
+    std::cout << compareLedgers(u1, u2) << std::endl;
 
     return 0;
 }
