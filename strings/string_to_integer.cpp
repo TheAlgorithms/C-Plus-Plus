@@ -23,18 +23,17 @@ int charToDigit(const char& c) {
  */
 int string_to_integer(const std::string &str) {
     unsigned int result = 0;
-    int i = 0;
+    bool isNegative = str[0] == '-';
+    bool isForcePositive = str[0] == '+';
+    int i = (isNegative || isForcePositive) ? 1 : 0;
 
-    if(str[i] == '-' || str[i] == '+') {
-        i++;
-    }
     std::cout << result << std::endl;
 
     while('0' <= str[i] && str[i] <= '9') {
 
         // if we are out of integer limit
         if(result >= 2147483647) {
-            if(str[0] == '-' && result >= 2147483648)
+            if(isNegative && result >= 2147483648)
                 return -2147483648;
 
             return 2147483647;
@@ -44,7 +43,7 @@ int string_to_integer(const std::string &str) {
         result += charToDigit(str[i++]);
     }
 
-    if(str[0] == '-')
+    if(isNegative)
         result *= -1;
 
     return result;
