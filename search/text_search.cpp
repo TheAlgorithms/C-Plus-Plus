@@ -2,6 +2,7 @@
  * \file
  * \brief Search for words in a long textual paragraph.
  */
+#include <cassert>
 #include <cstdlib>
 #include <iostream>
 #ifdef _MSC_VER
@@ -24,10 +25,13 @@ std::string lower(std::string word) {
     return lc;
 }
 
+void test() { assert(lower("abcd").compare("abcd") == 0); }
+
 int main() {
+    test();  // Testing the lower() function.
     std::string paragraph;
     std::cout << "Please enter your paragraph: \n";
-    getline(std::cin, paragraph);
+    std::getline(std::cin, paragraph);
     std::cout << "\nHello, your paragraph is:\n " << paragraph << "!\n";
     std::cout << "\nThe size of your paragraph = " << paragraph.size()
               << " characters. \n\n";
@@ -39,7 +43,7 @@ int main() {
         while (true) {
             std::string word;
             std::cout << "Please enter the word you are searching for: ";
-            getline(std::cin, word);
+            std::getline(std::cin, word);
             std::cout << "Ignore case? 1 = Yes, 0 = No" << std::endl;
             std::cin >> ch;
             if (ch == 1) {
