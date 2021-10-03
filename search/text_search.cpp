@@ -25,6 +25,11 @@ std::string lower(std::string word) {  // convert a C++ string to lowercase
     return lc;
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+
 void test() {
     assert(lower("abcd").compare("abcd") == 0);
     assert(lower("abc").compare("abcd") == -1);
@@ -32,7 +37,7 @@ void test() {
 }
 
 int main() {
-    test();  // Testing the lower() function.
+    test();  // run self-test implementations
     std::string paragraph;
     std::cout << "Please enter your paragraph: \n";
     std::getline(std::cin, paragraph);
