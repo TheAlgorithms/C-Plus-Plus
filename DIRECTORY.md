@@ -52,6 +52,7 @@
   * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_linkedlist.cpp)
   * [Queue Using Two Stacks](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_two_stacks.cpp)
   * [Rb Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/rb_tree.cpp)
+  * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/reverse_a_linked_list.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/sparse_table.cpp)
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
@@ -139,7 +140,9 @@
   * [Chaining](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/chaining.cpp)
   * [Double Hash Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/double_hash_hash_table.cpp)
   * [Linear Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/linear_probing_hash_table.cpp)
+  * [Md5](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/md5.cpp)
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
+  * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/sha1.cpp)
 
 ## Linear Algebra
   * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/linear_algebra/gram_schmidt.cpp)
