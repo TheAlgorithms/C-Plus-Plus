@@ -14,7 +14,7 @@
 /** Main function
  */
 
-std::string lower(std::string word) {
+std::string lower(std::string word) {  // convert a C++ string to lowercase
     int length = word.length();
     std::string lc = "";
 
@@ -25,7 +25,11 @@ std::string lower(std::string word) {
     return lc;
 }
 
-void test() { assert(lower("abcd").compare("abcd") == 0); }
+void test() {
+    assert(lower("abcd").compare("abcd") == 0);
+    assert(lower("abc").compare("abcd") == -1);
+    assert(lower("abcd").compare("abc") == 1);
+}
 
 int main() {
     test();  // Testing the lower() function.
