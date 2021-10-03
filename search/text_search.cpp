@@ -30,7 +30,7 @@ std::string lower(std::string word) {  // convert a C++ string to lowercase
  * @returns void
  */
 
-void test() {
+static void test() {
     assert(lower("abcd").compare("abcd") == 0);
     assert(lower("abc").compare("abcd") == -1);
     assert(lower("abcd").compare("abc") == 1);
