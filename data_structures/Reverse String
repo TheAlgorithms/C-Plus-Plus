@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string s,rev;
+	cin>>s;
+	rev=s;
+	//cout<<s<<endl;
+	int n=s.length();
+	//for(int i=0;i<n/2;i++)
+	//swap(s[i],s[n-i-1]);
+	int j=0;
+	for(int i=n-1;i>=0;i--)
+	{
+		rev[i]=s[j];
+		j++;
+	}
+	cout<<rev<<" "<<endl;
+	
+	for(int i=n-1;i>=0;i--)
+	cout<<s[i];
+}
