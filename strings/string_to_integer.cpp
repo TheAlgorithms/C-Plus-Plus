@@ -27,8 +27,6 @@ int string_to_integer(const std::string &str) {
     bool isForcePositive = str[0] == '+';
     int i = (isNegative || isForcePositive) ? 1 : 0;
 
-    std::cout << result << std::endl;
-
     while('0' <= str[i] && str[i] <= '9') {
 
         // if we are out of integer limit
