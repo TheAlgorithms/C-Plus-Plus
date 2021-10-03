@@ -1,11 +1,9 @@
-// This is Full Binary Search Tree with Insertion, Deletion, Search and inorder_Traversal of tree with user interaction (kind of application)
-// As well as the time complexity of each function
+// This is user interactive Binary Search Tree with Insertion, Deletion, Search and inorder_Traversal of tree. (kind of application)
 
 #include <iostream>
 using namespace std;
 #define ll long long
 #define endl "\n"
-//---------- Ayush Rudani ----------//
 
 class Node
 {
