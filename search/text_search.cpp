@@ -13,7 +13,7 @@
 
 /**
  * @brief function to convert a C++ string to lower case
- * @param accepts an std::string as input
+ * @param word takes an std::string as input
  * @returns std::string
  */
 std::string lower(std::string word) {
