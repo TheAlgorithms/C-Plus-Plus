@@ -23,8 +23,6 @@
 #include <list>
 #include <set>
 
-using namespace std;
-
 /**
  * @namespace probability
  * @brief Probability algorithms
@@ -35,10 +33,10 @@ namespace probability {
  * @brief A class to calculate the median of a leading sliding window at the back of a stream of integer values.
  */
 class WindowedMedian {
-    const int _windowSize;                      // Sliding window size
-    list<int> _window;                          // A sliding window of values along the stream
-    multiset<int> _sortedValues;                // A DS to represent a balanced multi-value binary search tree (BST)
-    multiset<int>::const_iterator _itMedian;    // An iterator that points to the root of the multi-value BST
+    const int _windowSize;              // Sliding window size
+    std::list<int> _window;             // A sliding window of values along the stream
+    std::multiset<int> _sortedValues;   // A DS to represent a balanced multi-value binary search tree (BST)
+    std::multiset<int>::const_iterator _itMedian;   // An iterator that points to the root of the multi-value BST
     
     /**
      * @brief Inserts a value to a sorted multi-value BST
@@ -54,13 +52,15 @@ class WindowedMedian {
         
         // If new value goes to left tree branch, and number of elements is even, the new median in the balanced tree
         // is the left child of the median before the insertion
-        if (value < *_itMedian && sz % 2 == 0)
+        if (value < *_itMedian && sz % 2 == 0) {
             --_itMedian;    // O(1) - traversing one step to the left child
+        }
         
         // However, if the new value goes to the right branch, the previous median's right child is the new median in
         // the balanced tree
-        else if (value >= *_itMedian && sz % 2 != 0)
+        else if (value >= *_itMedian && sz % 2 != 0) {
             ++_itMedian;    // O(1) - traversing one step to the right child
+        }
     }
     
     /**
@@ -72,13 +72,15 @@ class WindowedMedian {
         
         // If the erased value is on the left branch or the median itself and the number of elements is even, the new
         // median will be the right child of the current one
-        if (value <= *_itMedian && sz % 2 == 0)
+        if (value <= *_itMedian && sz % 2 == 0) {
             ++_itMedian;    // O(1) - traversing one step to the right child
+        }
         
         // However, is the erased value is on the right branch or the median itself, and the number of elements is odd,
         // the new median will be the left child of the current one
-        else if (value >= *_itMedian && sz % 2 != 0)
+        else if (value >= *_itMedian && sz % 2 != 0) {
             --_itMedian;    // O(1) - traversing one step to the left child
+        }
         
         // Find the (first) position of the value we want to erase, and erase it
         const auto it = _sortedValues.find(value);  // O(logN)
@@ -91,7 +93,7 @@ public:
      * @brief Constructs a WindowedMedian object
      * @param windowSize Sliding window size
      */
-    WindowedMedian(int windowSize) : _windowSize(windowSize) {};
+    explicit WindowedMedian(int windowSize) : _windowSize(windowSize) {};
     
     /**
      * @brief Insert a new value to the stream
@@ -113,9 +115,10 @@ public:
      * @return Median of sliding window. For even window size return the average between the two values in the middle
      */
     float getMedian() const {
-        if (_sortedValues.size() % 2 != 0)
+        if (_sortedValues.size() % 2 != 0) {
             return *_itMedian;  // O(1)
-        return 0.5 * *_itMedian + 0.5 * *next(_itMedian);   // O(1)
+        }
+        return 0.5f * *_itMedian + 0.5f * *next(_itMedian);   // O(1)
     }
     
     /**
@@ -126,9 +129,10 @@ public:
         auto window = _window;
         window.sort();      // Sort window - O(NlogN)
         auto median = *next(window.begin(), window.size() / 2); // Find value in the middle - O(N)
-        if (window.size() % 2 != 0)
+        if (window.size() % 2 != 0) {
             return median;
-        return 0.5 * median + 0.5 * *next(window.begin(), window.size() / 2 - 1);   // O(N)
+        }
+        return 0.5f * median + 0.5f * *next(window.begin(), window.size() / 2 - 1);   // O(N)
     }
 };
 }   // namespace probability
@@ -139,10 +143,10 @@ public:
  * @param vals Stream of values
  * @param windowSize Size of sliding window
  */
-static void test(const vector<int> &vals, int windowSize) {
+static void test(const std::vector<int> &vals, int windowSize) {
     probability::WindowedMedian windowedMedian(windowSize);
-    for (int i = 0; i < vals.size(); i++) {
-        windowedMedian.insert(vals[i]);
+    for (const auto val : vals) {
+        windowedMedian.insert(val);
         
         // Comparing medians: efficient function vs. Naive one
         assert(windowedMedian.getMedian() == windowedMedian.getMedianNaive());
@@ -167,12 +171,15 @@ int main(int argc, const char * argv[]) {
     test({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440, 1115438165, 1784484492,
         74243042, 114807987}, 6);
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    std::vector<int> vals;
     for (int i = 8; i < 100; i++) {
         const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);
         auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10);
-        vector<int> vals;
-        for (int i = 0; i < n; i++)
+        vals.clear();
+        vals.reserve(n);
+        for (int i = 0; i < n; i++) {
             vals.push_back(rand() - RAND_MAX);
+        }
         test(vals, windowSize);
     }
     return 0;
