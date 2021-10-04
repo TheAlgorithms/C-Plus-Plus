@@ -45,16 +45,12 @@ std::uint32_t houseRobber(const std::vector<uint32_t> &money,
                    // money will be robbed
         return std::max(money[0], money[1]);
     }
-    uint32_t max_value = 0;  // contains maximum stolen value at the end
-    uint32_t value1 = money[0];
-    uint32_t value2 = std::max(money[0], money[1]);
+    money[1] = std::max(money[0], money[1]);  // contains maximum stolen value at the end
     for (uint32_t i = 2; i < n; i++) {
-        max_value = std::max(money[i] + value1, value2);
-        value1 = value2;
-        value2 = max_value;
+        money[i] = std::max(money[i] + money[i-2], money[i-1]);
     }
 
-    return max_value;
+    return money[n-1];
 }
 }  // namespace house_robber
 }  // namespace dynamic_programming
