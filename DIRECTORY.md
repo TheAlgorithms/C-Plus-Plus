@@ -273,6 +273,7 @@
   * [Heavy Light Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/heavy_light_decomposition.cpp)
   * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
   * [Persistent Seg Tree Lazy Prop](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/persistent_seg_tree_lazy_prop.cpp)
+  * [Prefix Sum Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/prefix_sum_array.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/sparse_table.cpp)
 
