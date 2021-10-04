@@ -22,6 +22,10 @@
 #include <list>         // for std::list - used to manage sliding window
 #include <set>          // for std::multiset - used to manage multi-value sorted sliding window values
 
+#include <ctime>        // for std::time - needed in testing
+#include <cstdlib>      // for std::rand - needed in testing
+#include <vector>       // for std::vector - needed in testing
+
 /**
  * @namespace probability
  * @brief Probability algorithms
@@ -136,7 +140,6 @@ public:
 };
 }   // namespace probability
 
-#include <vector>
 /**
  * @brief A testing function
  * @param vals Stream of values
@@ -152,8 +155,6 @@ static void test(const std::vector<int> &vals, int windowSize) {
     }
 }
 
-#include <cstdlib>
-#include <ctime>
 /**
  * @brief Main function
  * @param argc commandline argument count (ignored)
