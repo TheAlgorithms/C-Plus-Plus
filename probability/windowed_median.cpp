@@ -4,8 +4,8 @@
  *
  * @details
  * Given a stream of integers, the algorithm calculates the median of a fix size window at the back of the stream. The leading time complexity of this algorithm is
- * O(log(N), and it is inspired by the known algorithm to calculate the median of an infinite stream of values, with the proper modifications to account for the finite
- * window size for which the median is needed
+ * O(log(N), and it is inspired by the known algorithm to [find median from (infinite) data stream](https://www.tutorialcup.com/interview/algorithm/find-median-from-data-stream.htm), with the proper modifications to account
+ * for the finite window size for which the median is requested
  *
  * ### Algorithm
  * The sliding window is managed by a list, which guarantees O(1) for both pushing and popping. Each new value is pushed to the window back, while a value
@@ -15,13 +15,11 @@
  * whenever values are inserted or erased to/from BST. The root of the tree is the median! Hence, median retrieval is always O(1)
  *
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
- * @author [Yaniv Hollander] (https://github.com/YanivHollander)
+ * @author [Yaniv Hollander](https://github.com/YanivHollander)
  */
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <list>
-#include <set>
+#include <cassert>      // For assert
+#include <list>         // For std::list - used to manage sliding window
+#include <set>          // For std::multiset - used to manage multi-value sorted sliding window values
 
 /**
  * @namespace probability
