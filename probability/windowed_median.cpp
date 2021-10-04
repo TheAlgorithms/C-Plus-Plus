@@ -17,13 +17,13 @@
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
  * @author [Yaniv Hollander](https://github.com/YanivHollander)
  */
-#include <cassert>      // for assert
-#include <list>         // for std::list - used to manage sliding window
-#include <set>          // for std::multiset - used to manage multi-value sorted sliding window values
+#include <cassert>      /// for assert
+#include <list>         /// for std::list - used to manage sliding window
+#include <set>          /// for std::multiset - used to manage multi-value sorted sliding window values
 
-#include <ctime>        // for std::time - needed in testing
-#include <cstdlib>      // for std::rand - needed in testing
-#include <vector>       // for std::vector - needed in testing
+#include <ctime>        /// for std::time - needed in testing
+#include <cstdlib>      /// for std::rand - needed in testing
+#include <vector>       /// for std::vector - needed in testing
 
 /**
  * @namespace probability
