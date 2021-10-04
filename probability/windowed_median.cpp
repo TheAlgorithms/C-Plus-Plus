@@ -15,7 +15,7 @@
  * whenever values are inserted or erased to/from BST. The root of the tree is the median! Hence, median retrieval is always O(1)
  *
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
- * @author [Yaniv Hollander] (https://github.com/YanivHollander)
+ * @author [Yaniv Hollander](https://github.com/YanivHollander)
  */
 #include <algorithm>
 #include <cassert>
