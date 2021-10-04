@@ -16,15 +16,30 @@
 #include <iostream>
 #include <vector>
 
+/**
+ * @namespace range_queries
+ * @brief Range Queries algorithms
+ */
+namespace range_queries {
+/**
+ * @namespace prefix_sum_array
+ * @brief Range sum queries using prefix-sum-array
+ */
+namespace prefix_sum_array {
+
+std::vector<int> PSA(1, 0);
+
+void build(std::vector<int> original_array) {
+    for (int i = 1; i <= static_cast<int>(original_array.size()); i++) {
+        PSA.push_back(PSA[i - 1] + original_array[i]);
+    }
+}
+
+int query(int beg, int end) { return PSA[end] - PSA[beg - 1]; }
+}  // namespace prefix_sum_array
+}  // namespace range_queries
+
 /* Macros */
-
-constexpr int ARRAY_LENGHT = 10;
-
-/* Global Declarations */
-
-std::vector<int> PSA(ARRAY_LENGHT + 1,
-                     0);  // PSA structure, initialized with 0's. Plus one in
-                          // lenght for the leading zero.
 
 /**
  * Main function
@@ -34,17 +49,15 @@ int main() {
     std::vector<int> values{0,  123, 0,  2,  -2, 5,
                             24, 0,   23, -1, -1};  // original array
 
-    for (int i = 1; i <= ARRAY_LENGHT;
-         i++) {  // building the sctructure 1-indexed
-        PSA[i] = PSA[i - 1] +
-                 values[i];  // sums the previous sum with the current value
-    }
-
+    range_queries::prefix_sum_array::build(values);
     // queries are of the type: sum of the range [a, b] = psa[b] - psa[a-1]
 
-    assert(PSA[10] == 173);         // sum of the entire array
-    assert(PSA[6] - PSA[3] == 27);  // the sum of the interval [4, 6]
-    assert(PSA[9] - PSA[4] == 51);  // the sum of the interval [5, 9]
+    assert(range_queries::prefix_sum_array::query(1, 10) ==
+           173);  // sum of the entire array
+    assert(range_queries::prefix_sum_array::query(4, 6) ==
+           27);  // the sum of the interval [4, 6]
+    assert(range_queries::prefix_sum_array::query(5, 9) ==
+           51);  // the sum of the interval [5, 9]
 
     return 0;
 }
