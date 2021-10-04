@@ -152,7 +152,9 @@ static void test() {
     points.push_back(p5);
     convex_hull_construction(points);
 
-    vector<point> expected = {{2, 10}, {4, 12}, {6, 12}, {4, 8}};
+    point arr[] = {{2, 10}, {4, 12}, {6, 12}, {4, 8}};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    vector<point> expected (arr, arr + n);
     for (int i = 0; i < points.size(); i++) {
         assert(points[i].x == expected[i].x);
         assert(points[i].y == expected[i].y);
