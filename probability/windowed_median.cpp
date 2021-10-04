@@ -17,9 +17,10 @@
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
  * @author [Yaniv Hollander](https://github.com/YanivHollander)
  */
-#include <cassert>      // For assert
-#include <list>         // For std::list - used to manage sliding window
-#include <set>          // For std::multiset - used to manage multi-value sorted sliding window values
+#include <cassert>      // for assert
+#include <cstdint>      // for std::uint32_t
+#include <list>         // for std::list - used to manage sliding window
+#include <set>          // for std::multiset - used to manage multi-value sorted sliding window values
 
 /**
  * @namespace probability
@@ -31,7 +32,7 @@ namespace probability {
  * @brief A class to calculate the median of a leading sliding window at the back of a stream of integer values.
  */
 class WindowedMedian {
-    const int _windowSize;              // Sliding window size
+    const std::uint32_t _windowSize;    // Sliding window size
     std::list<int> _window;             // A sliding window of values along the stream
     std::multiset<int> _sortedValues;   // A DS to represent a balanced multi-value binary search tree (BST)
     std::multiset<int>::const_iterator _itMedian;   // An iterator that points to the root of the multi-value BST
@@ -91,7 +92,7 @@ public:
      * @brief Constructs a WindowedMedian object
      * @param windowSize Sliding window size
      */
-    explicit WindowedMedian(int windowSize) : _windowSize(windowSize) {};
+    explicit WindowedMedian(std::uint32_t windowSize) : _windowSize(windowSize) {};
     
     /**
      * @brief Insert a new value to the stream
