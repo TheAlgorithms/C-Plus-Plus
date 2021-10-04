@@ -11,10 +11,12 @@
 #include <cstring>
 #endif
 
-/** Main function
+/**
+ * @brief function to convert a C++ string to lower case
+ * @param accepts an std::string as input
+ * @returns std::string
  */
-
-std::string lower(std::string word) {  // convert a C++ string to lowercase
+std::string lower(std::string word) {
     int length = word.length();
     std::string lc = "";
 
@@ -29,13 +31,14 @@ std::string lower(std::string word) {  // convert a C++ string to lowercase
  * @brief Self-test implementations
  * @returns void
  */
-
 static void test() {
     assert(lower("abcd").compare("abcd") == 0);
     assert(lower("abc").compare("abcd") == -1);
     assert(lower("abcd").compare("abc") == 1);
 }
 
+/** Main function
+ */
 int main() {
     test();  // run self-test implementations
     std::string paragraph;
@@ -56,8 +59,12 @@ int main() {
             std::cout << "Ignore case? 1 = Yes, 0 = No" << std::endl;
             std::cin >> ch;
             if (ch == 1) {
-                std::string lowerCase = lower(paragraph);
-                std::string lowerCaseWord = lower(word);
+                std::string lowerCase = lower(
+                    paragraph);  // convert std::string paragraph to lowercase
+                                 // and store it in std::string lowerCase
+                std::string lowerCaseWord =
+                    lower(word);  // convert std::string paragraph to lowercase
+                                  // and store it in std::string lowerCase
 
                 std::cout << "Hello, your word is " << word << "!\n";
                 if (lowerCase.find(lowerCaseWord) == std::string::npos) {
