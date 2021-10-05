@@ -32,7 +32,7 @@
 #include <cstdlib>  /// for std::rand - needed in testing
 #include <ctime>    /// for std::time - needed in testing
 #include <list>     /// for std::list - used to manage sliding window
-#include <set>  /// for std::multiset - used to manage multi-value sorted sliding window values
+#include <set>      /// for std::multiset - used to manage multi-value sorted sliding window values
 #include <vector>  /// for std::vector - needed in testing
 
 /**
