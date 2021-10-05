@@ -4,7 +4,7 @@
  * data stream
  *
  * @details
- * Given a stream of integers, the algorithm calculates the median of a fix size
+ * Given a stream of integers, the algorithm calculates the median of a fixed size
  * window at the back of the stream. The leading time complexity of this
  * algorithm is O(log(N), and it is inspired by the known algorithm to [find
  * median from (infinite) data
