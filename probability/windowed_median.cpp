@@ -49,13 +49,13 @@ using size_type = Window::size_type;
  * back of a stream of integer values.
  */
 class WindowedMedian {
-    const size_type _windowSize;  // Sliding window size
-    Window _window;               // A sliding window of values along the stream
-    std::multiset<int> _sortedValues;  // A DS to represent a balanced
-                                       // multi-value binary search tree (BST)
+    const size_type _windowSize;  ///< sliding window size
+    Window _window;               ///< a sliding window of values along the stream
+    std::multiset<int> _sortedValues;  ///< a DS to represent a balanced
+                                       /// multi-value binary search tree (BST)
     std::multiset<int>::const_iterator
-        _itMedian;  // An iterator that points to the root of the multi-value
-                    // BST
+        _itMedian;  ///< an iterator that points to the root of the multi-value
+                    /// BST
 
     /**
      * @brief Inserts a value to a sorted multi-value BST
