@@ -1,6 +1,13 @@
 // You can read more about the reason behind the algorithm itself here:
 // https://en.wikipedia.org/wiki/Date_of_Easter
 
+  /* Testing data:
+ * 2003 - 20th of April (4/20) - Passed
+ * 1830 - 11th of April (4/11) - Passed
+ * 2020 - 12th of April (4/12) - Passed
+ * 1910 - 27th of March (3/27) - Passed
+ */
+
 class easter 
 {
  public:
@@ -8,7 +15,7 @@ class easter
     {
         if (y > 1582) 
         {
-            // Calculations
+            // Calculations (It's not worth going into detail and naming each of these differently)
             int a = y % 19;
             int b = y / 100;
             int c = y % 100;
