@@ -17,7 +17,7 @@
  * pushing and popping. Each new value is pushed to the window back, while a
  * value from the front of the window is popped. In addition, the algorithm
  * manages a multi-value binary search tree (BST), implemented by std::multiset.
- * For each new value that is inserted to the window, it is also inserted to the
+ * For each new value that is inserted into the window, it is also inserted to the
  * BST. When a value is popped from the window, it is also erased from the BST.
  * Both insertion and erasion to/from the BST are O(logN) in time, with N the
  * size of the window. Finally, the algorithm keeps a pointer to the root of the
