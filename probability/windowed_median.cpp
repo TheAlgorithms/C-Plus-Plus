@@ -169,6 +169,7 @@ class WindowedMedian {
                0.5f * *next(window.begin(), window.size() / 2 - 1);  // O(N)
     }
 };
+}  // namespace windowed_median
 }  // namespace probability
 
 /**
