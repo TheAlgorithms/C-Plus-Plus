@@ -16,7 +16,10 @@ class easter
         if (y > 1582) 
         {
             // Calculations (It's not worth going into detail and naming each of these differently)
+
+            //Year of Metonic Cycle
             int a = y % 19;
+
             int b = y / 100;
             int c = y % 100;
             int d = b / 4;
@@ -26,7 +29,10 @@ class easter
             int h = (19 * a + b - d - g + 15) % 30;
             int i = c / 4;
             int k = c % 4;
+
+            //The number of days from Paschal full moon to next Sunday
             int r = (32 + 2 * e + 2 * i - h - k) % 7;
+
             int m = (a + 11 * h + 22 * r) / 451;
             int n = (h + r - 7 * m + 114) / 31;
             int p = (h + r - 7 * m + 114) % 31;
