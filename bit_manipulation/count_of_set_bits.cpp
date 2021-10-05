@@ -33,7 +33,7 @@ namespace count_of_set_bits {
 * @param n is the number whose set bit will be counted
 * @returns total number of set-bits in binary representation of number 'n'
 */
-std::uint64_t countSetBits(long long n) { // long long is preferred over int so that
+std::uint64_t countSetBits(std :: int64_t n) { // int64_t is preferred over int so that
                                           // no Overflow can be there.
 
     int count = 0; // "count" variable is used to count number of set-bits('1') in
