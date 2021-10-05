@@ -40,6 +40,11 @@
  * @brief Probability algorithms
  */
 namespace probability {
+/**
+ * @namespace windowed_median
+ * @brief Functions for the Windowed Median algorithm implementation
+ */
+namespace windowed_median {
 using Window = std::list<int>;
 using size_type = Window::size_type;
 
