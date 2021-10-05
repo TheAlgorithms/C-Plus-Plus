@@ -45,7 +45,7 @@ namespace sorting {
  *******************************************************************************/
 
 void selectionSort(
-    std::array<int, 8>& arr,
+    std::array<int, 8> &arr,
     int len) {  // Array size is const, can be modified by replacing "8" at (Ln
                 // 45, Col 21) & (Ln 45, Col 60).
     for (auto it = 0; it < len; ++it) {
