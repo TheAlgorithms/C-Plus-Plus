@@ -1,6 +1,8 @@
 /**
- * @file prefix_sum_array.cpp
- * @brief Implementation of [Prefix Sum Array] data structure
+ * @file
+ * @brief
+ * Implementation of [Prefix Sum
+ * Array](https://en.wikipedia.org/wiki/Prefix_sum) data structure.
  *
  * @details
  * Prefix Sum Array is a data structure, that allows answering sum in some range
@@ -12,9 +14,9 @@
  * * Range Query : O(1) \n
  */
 
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <cassert>   // for assert function
+#include <iostream>  // for IO operations
+#include <vector>    // for using the STL vector data structure
 
 /**
  * @namespace range_queries
@@ -29,22 +31,26 @@ namespace prefix_sum_array {
 
 std::vector<int> PSA(1, 0);
 
+/**
+ * @brief function that builds the PSA
+ */
 void build(std::vector<int> original_array) {
     for (int i = 1; i <= static_cast<int>(original_array.size()); i++) {
         PSA.push_back(PSA[i - 1] + original_array[i]);
     }
 }
-
+/**
+ * @brief query function
+ * @returns sum of the range [a, b]
+ */
 int query(int beg, int end) { return PSA[end] - PSA[beg - 1]; }
 }  // namespace prefix_sum_array
 }  // namespace range_queries
 
-/* Macros */
-
 /**
- * Main function
+ * @brief Main function
+ * @returns 0 on exit
  */
-
 int main() {
     std::vector<int> values{0,  123, 0,  2,  -2, 5,
                             24, 0,   23, -1, -1};  // original array
