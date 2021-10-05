@@ -178,7 +178,7 @@ class WindowedMedian {
  * @param windowSize Size of sliding window
  */
 static void test(const std::vector<int> &vals, int windowSize) {
-    probability::WindowedMedian windowedMedian(windowSize);
+    probability::windowed_median::WindowedMedian windowedMedian(windowSize);
     for (const auto val : vals) {
         windowedMedian.insert(val);
 
