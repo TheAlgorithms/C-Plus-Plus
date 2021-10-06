@@ -33,7 +33,7 @@
 #include <ctime>    /// for std::time - needed in testing
 #include <list>     /// for std::list - used to manage sliding window
 #include <set>      /// for std::multiset - used to manage multi-value sorted sliding window values
-#include <vector>  /// for std::vector - needed in testing
+#include <vector>   /// for std::vector - needed in testing
 
 /**
  * @namespace probability
@@ -102,7 +102,7 @@ class WindowedMedian {
             ++_itMedian;  // O(1) - traversing one step to the right child
         }
 
-        // However, is the erased value is on the right branch or the median
+        // However, if the erased value is on the right branch or the median
         // itself, and the number of elements is odd, the new median will be the
         // left child of the current one
         else if (value >= *_itMedian && sz % 2 != 0) {
@@ -126,6 +126,7 @@ class WindowedMedian {
      * @param value New value to insert
      */
     void insert(int value) {
+        
         // Push new value to the back of the sliding window - O(1)
         _window.push_back(value);
         insertToSorted(value);  // Insert value to the multi-value BST - O(logN)
@@ -178,7 +179,7 @@ class WindowedMedian {
  * @param windowSize Size of sliding window
  */
 static void test(const std::vector<int> &vals, int windowSize) {
-    probability::WindowedMedian windowedMedian(windowSize);
+    probability::windowed_median::WindowedMedian windowedMedian(windowSize);
     for (const auto val : vals) {
         windowedMedian.insert(val);
 
@@ -189,31 +190,37 @@ static void test(const std::vector<int> &vals, int windowSize) {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
+ * @param argc command line argument count (ignored)
+ * @param argv command line array of arguments (ignored)
  * @returns 0 on exit
  */
 int main(int argc, const char *argv[]) {
-    test({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);
-    test({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);
-    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);
-    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);
-    test({3, 3, 3, 3, -7, 3, 3, 3, 3}, 3);
-    test({4, 3, 3, -5, 7, 1, 3, 4, 5}, 5);
+    
+    // A few fixed test cases
+    test({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);   // Array of sorted values; odd window size
+    test({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);   // Array of sorted values - decreasing; odd window size
+    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);      // Even window size
+    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);   // Array with repeating values
+    test({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);   // Array with same values except one
+    test({4, 3, 3, -5, -5, 1, 3, 4, 5}, 5); // Array that includes repeating values including negatives
+    
+    // Array with large values - sum of few pairs exceeds MAX_INT. Window size is even - testing calculation of
+    // average median between two middle values
     test({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,
-          1115438165, 1784484492, 74243042, 114807987},
-         6);
+          1115438165, 1784484492, 74243042, 114807987}, 6);
+    
+    // Random test cases
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
     std::vector<int> vals;
     for (int i = 8; i < 100; i++) {
-        const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);
-        auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10);
+        const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);    // Array size in the range [5, 20]
+        auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10); // Window size in the range [3, 10]
         vals.clear();
         vals.reserve(n);
         for (int i = 0; i < n; i++) {
-            vals.push_back(rand() - RAND_MAX);
+            vals.push_back(rand() - RAND_MAX);  // Random array values (positive/negative)
         }
-        test(vals, windowSize);
+        test(vals, windowSize); // Testing randomized test
     }
     return 0;
 }
