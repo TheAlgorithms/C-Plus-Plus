@@ -26,8 +26,8 @@
  * \returns maximum contiguous subarray sum
  */
 template <std::size_t SIZE>
-int max_subarray_sum(std::array<int, SIZE> arr, int length) {
-    int current_max = INT_MIN, current_sum = 0;
+int max_subarray_sum(std::array<int64_t, SIZE> arr, uint64_t length) {
+    int64_t current_max = INT_MIN, current_sum = 0;
     for (int i = 0; i < length; i++) {
         current_sum = current_sum + arr[i];
         if (current_max < current_sum) {
@@ -46,14 +46,17 @@ int max_subarray_sum(std::array<int, SIZE> arr, int length) {
  * @returns void
  */
 static void test() {
-    std::array<int, 4> arr = {1, 2, 3, 4};
-    std::array<int, 5> arr1 = {-1, -2, -4, -6, 7};
+    std::array<int64_t, 4> arr = {1, 2, 3, 4};
+    std::array<int64_t, 5> arr1 = {-1, -2, -4, -6, 7};
     assert(max_subarray_sum(arr, 4) == 10);
     assert(max_subarray_sum(arr1, 5) == 7);
     std::cout << "all test cases passed!";
 }
 
-/** main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // Below is the code for accepting array from the user and then
     // calling the function for the required output.
@@ -64,7 +67,7 @@ int main() {
     // std::size_t n;  // variable for length of input array
     // std::cout << "Enter length of the array: ";
     // std::cin >> n;
-    // std::array<int, 100> arr = {0};
+    // std::array<int64_t, 100> arr = {0};
     // // we need to give a constant in size. Hence we have allocated 100
     // for now.
     // for (int i = 0; i < n; i++)
@@ -72,18 +75,12 @@ int main() {
     // {
     //     std::cin >> arr[i];
     // }
-    // for (int i = 0; i < 100; i++)
-    // taking input of each element of the array
-    //
-    // {
-    //     std::cout << arr[i] << std::endl;
-    // }
+    // code for accepting array from user ends
 
     // int max_sum = max_subarray_sum(arr, n);
     // std::cout << "Maximum contiguous sum for this array is : " << max_sum
     //           << std::endl;
 
-    // code for accepting array from user ends
     test();  // run self-test implementations
     return 0;
 }
