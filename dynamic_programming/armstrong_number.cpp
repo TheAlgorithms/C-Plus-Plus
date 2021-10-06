@@ -1,5 +1,8 @@
 // Program to check whether a number is an armstrong number or not
 #include <bits/stdc++.h>
+include <iostream>
+using std::cin;
+using std::cout;
 using namespace std;
 
 int main() {
