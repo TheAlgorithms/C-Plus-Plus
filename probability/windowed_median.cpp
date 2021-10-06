@@ -174,7 +174,7 @@ class WindowedMedian {
 }  // namespace probability
 
 /**
- * @brief A testing function
+ * @brief Self-test implementations
  * @param vals Stream of values
  * @param windowSize Size of sliding window
  */
