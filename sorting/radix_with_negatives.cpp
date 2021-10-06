@@ -56,7 +56,6 @@ void print_v(std::vector<int> v) {
 
 /**
  * This function separates the main vector into two: one containing negative integers and one containing non-negative integers.
- *
  * @param v Vector with non-negative integers.
  * @param neg_v Vector with negative integers.
  */
