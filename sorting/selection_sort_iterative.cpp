@@ -5,14 +5,14 @@
  *swapping
  * @details
  * The selection sort algorithm divides the input vector into two parts: a
- *sorted subvector of items which is built up from left to right at the front
- *(left) of the vector, and a subvector of the remaining unsorted items that
- *occupy the rest of the vector. Initially, the sorted subvector is empty, and
- *the unsorted subvector is the entire input vector. The algorithm proceeds by
- *finding the smallest (or largest, depending on the sorting order) element in
- *the unsorted subvector, exchanging (swapping) it with the leftmost unsorted
- *element (putting it in sorted order), and moving the subvector boundaries one
- *element to the right.
+ * sorted subvector of items which is built up from left to right at the front
+ * (left) of the vector, and a subvector of the remaining unsorted items that
+ * occupy the rest of the vector. Initially, the sorted subvector is empty, and
+ * the unsorted subvector is the entire input vector. The algorithm proceeds by
+ * finding the smallest (or largest, depending on the sorting order) element in
+ * the unsorted subvector, exchanging (swapping) it with the leftmost unsorted
+ * element (putting it in sorted order), and moving the subvector boundaries one
+ * element to the right.
  *
  * ### Implementation
  *
