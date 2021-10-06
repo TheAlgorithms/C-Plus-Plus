@@ -26,10 +26,10 @@
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *******************************************************************************/
-#include <algorithm>  ///for std::is_sorted
-#include <cassert>    ///for std::assert
-#include <iostream>   ///for IO operations
-#include <vector>     ///for std::vector
+#include <algorithm>  /// for std::is_sorted
+#include <cassert>    /// for std::assert
+#include <iostream>   /// for IO operations
+#include <vector>     /// for std::vector
 
 /******************************************************************************
  * @namespace sorting
