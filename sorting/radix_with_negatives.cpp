@@ -70,7 +70,6 @@ void split_v(std::vector<int> &v, std::vector<int> &neg_v) {
 
 /**
  * This function converts positive to negative and negative to positive.
- *
  * @param v Vector whose elements will be changed.
  */
 void neg_pos(std::vector<int> &v) {
