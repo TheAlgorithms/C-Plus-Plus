@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
-#include <bits/stdc++.h>
 #include <type_traits>
 #include <utility>
 #include <iomanip>
