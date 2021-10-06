@@ -67,24 +67,24 @@ class WindowedMedian {
      * @param value Value to insert
      */
     void insertToSorted(int value) {
-        _sortedValues.insert(value);  // Insert value to BST - O(logN)
+        _sortedValues.insert(value);  /// Insert value to BST - O(logN)
         const auto sz = _sortedValues.size();
-        if (sz == 1) {  // For the first value, set median iterator to BST root
+        if (sz == 1) {  /// For the first value, set median iterator to BST root
             _itMedian = _sortedValues.begin();
             return;
         }
 
-        // If new value goes to left tree branch, and number of elements is
-        // even, the new median in the balanced tree is the left child of the
-        // median before the insertion
+        /// If new value goes to left tree branch, and number of elements is
+        /// even, the new median in the balanced tree is the left child of the
+        /// median before the insertion
         if (value < *_itMedian && sz % 2 == 0) {
             --_itMedian;  // O(1) - traversing one step to the left child
         }
 
-        // However, if the new value goes to the right branch, the previous
-        // median's right child is the new median in the balanced tree
+        /// However, if the new value goes to the right branch, the previous
+        /// median's right child is the new median in the balanced tree
         else if (value >= *_itMedian && sz % 2 != 0) {
-            ++_itMedian;  // O(1) - traversing one step to the right child
+            ++_itMedian;  /// O(1) - traversing one step to the right child
         }
     }
 
@@ -95,21 +95,21 @@ class WindowedMedian {
     void eraseFromSorted(int value) {
         const auto sz = _sortedValues.size();
 
-        // If the erased value is on the left branch or the median itself and
-        // the number of elements is even, the new median will be the right
-        // child of the current one
+        /// If the erased value is on the left branch or the median itself and
+        /// the number of elements is even, the new median will be the right
+        /// child of the current one
         if (value <= *_itMedian && sz % 2 == 0) {
-            ++_itMedian;  // O(1) - traversing one step to the right child
+            ++_itMedian;  /// O(1) - traversing one step to the right child
         }
 
-        // However, if the erased value is on the right branch or the median
-        // itself, and the number of elements is odd, the new median will be the
-        // left child of the current one
+        /// However, if the erased value is on the right branch or the median
+        /// itself, and the number of elements is odd, the new median will be the
+        /// left child of the current one
         else if (value >= *_itMedian && sz % 2 != 0) {
             --_itMedian;  // O(1) - traversing one step to the left child
         }
 
-        // Find the (first) position of the value we want to erase, and erase it
+        /// Find the (first) position of the value we want to erase, and erase it
         const auto it = _sortedValues.find(value);  // O(logN)
         _sortedValues.erase(it);                    // O(logN)
     }
@@ -127,15 +127,15 @@ class WindowedMedian {
      */
     void insert(int value) {
         
-        // Push new value to the back of the sliding window - O(1)
+        /// Push new value to the back of the sliding window - O(1)
         _window.push_back(value);
         insertToSorted(value);  // Insert value to the multi-value BST - O(logN)
-        if (_window.size() > _windowSize) {  // If exceeding size of window, pop
-                                             // from its left side
-            eraseFromSorted(_window.front());  // Erase from the multi-value BST
-                                               // the window left side value
+        if (_window.size() > _windowSize) {  /// If exceeding size of window, pop
+                                             /// from its left side
+            eraseFromSorted(_window.front());  /// Erase from the multi-value BST
+                                               /// the window left side value
             _window
-                .pop_front();  // Pop the left side value from the window - O(1)
+                .pop_front();  /// Pop the left side value from the window - O(1)
         }
     }
 
@@ -148,7 +148,7 @@ class WindowedMedian {
         if (_sortedValues.size() % 2 != 0) {
             return *_itMedian;  // O(1)
         }
-        return 0.5f * *_itMedian + 0.5f * *next(_itMedian);  // O(1)
+        return 0.5f * *_itMedian + 0.5f * *next(_itMedian);  /// O(1)
     }
 
     /**
@@ -159,19 +159,19 @@ class WindowedMedian {
      */
     float getMedianNaive() const {
         auto window = _window;
-        window.sort();  // Sort window - O(NlogN)
+        window.sort();  /// Sort window - O(NlogN)
         auto median =
             *next(window.begin(),
-                  window.size() / 2);  // Find value in the middle - O(N)
+                  window.size() / 2);  /// Find value in the middle - O(N)
         if (window.size() % 2 != 0) {
             return median;
         }
         return 0.5f * median +
-               0.5f * *next(window.begin(), window.size() / 2 - 1);  // O(N)
+               0.5f * *next(window.begin(), window.size() / 2 - 1);  /// O(N)
     }
 };
-}  // namespace windowed_median
-}  // namespace probability
+}  /// namespace windowed_median
+}  /// namespace probability
 
 /**
  * @brief Self-test implementations
@@ -183,7 +183,7 @@ static void test(const std::vector<int> &vals, int windowSize) {
     for (const auto val : vals) {
         windowedMedian.insert(val);
 
-        // Comparing medians: efficient function vs. Naive one
+        /// Comparing medians: efficient function vs. Naive one
         assert(windowedMedian.getMedian() == windowedMedian.getMedianNaive());
     }
 }
@@ -196,31 +196,31 @@ static void test(const std::vector<int> &vals, int windowSize) {
  */
 int main(int argc, const char *argv[]) {
     
-    // A few fixed test cases
-    test({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);   // Array of sorted values; odd window size
-    test({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);   // Array of sorted values - decreasing; odd window size
-    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);      // Even window size
-    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);   // Array with repeating values
-    test({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);   // Array with same values except one
-    test({4, 3, 3, -5, -5, 1, 3, 4, 5}, 5); // Array that includes repeating values including negatives
+    /// A few fixed test cases
+    test({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);   /// Array of sorted values; odd window size
+    test({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);   /// Array of sorted values - decreasing; odd window size
+    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);      /// Even window size
+    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);   /// Array with repeating values
+    test({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);   /// Array with same values except one
+    test({4, 3, 3, -5, -5, 1, 3, 4, 5}, 5); /// Array that includes repeating values including negatives
     
-    // Array with large values - sum of few pairs exceeds MAX_INT. Window size is even - testing calculation of
-    // average median between two middle values
+    /// Array with large values - sum of few pairs exceeds MAX_INT. Window size is even - testing calculation of
+    /// average median between two middle values
     test({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,
           1115438165, 1784484492, 74243042, 114807987}, 6);
     
-    // Random test cases
+    /// Random test cases
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
     std::vector<int> vals;
     for (int i = 8; i < 100; i++) {
-        const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);    // Array size in the range [5, 20]
-        auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10); // Window size in the range [3, 10]
+        const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);    /// Array size in the range [5, 20]
+        auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10); /// Window size in the range [3, 10]
         vals.clear();
         vals.reserve(n);
         for (int i = 0; i < n; i++) {
-            vals.push_back(rand() - RAND_MAX);  // Random array values (positive/negative)
+            vals.push_back(rand() - RAND_MAX);  /// Random array values (positive/negative)
         }
-        test(vals, windowSize); // Testing randomized test
+        test(vals, windowSize); /// Testing randomized test
     }
     return 0;
 }
