@@ -14,25 +14,25 @@
  * Space complexity: O(1)
  * @author [Prashant Thakur](https://github.com/prashant-th18)
  */
-#include <cassert> // for assert
-#include <iostream> // for I/O operations
+#include <cassert>   /// for assert
+#include <iostream> /// for IO operations
 /**
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
-* @namespace count_of_set_bits
-* @brief Functions for the [count sets
-* bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
-* implementation
-*/
+ * @namespace count_of_set_bits
+ * @brief Functions for the [count sets
+ * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
+ * implementation
+ */
 namespace count_of_set_bits {
 /**
-* @brief The main function implements set bit count
-* @param n is the number whose set bit will be counted
-* @returns total number of set-bits in binary representation of number 'n'
-*/
+ * @brief The main function implements set bit count
+ * @param n is the number whose set bit will be counted
+ * @returns total number of set-bits in binary representation of number 'n'
+ */
 std::uint64_t countSetBits(std :: int64_t n) { // int64_t is preferred over int so that
                                           // no Overflow can be there.
 
