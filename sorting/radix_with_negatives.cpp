@@ -78,7 +78,7 @@ void neg_pos(std::vector<int> &v) {
     }
 }
 
-/*!
+/**
  * This function joins two vectors.
  * 
  * @param v Vector with non-negative integers.
