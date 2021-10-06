@@ -88,6 +88,7 @@ int main() {
                               << std::endl;
                 }
             }
+            std::cout << "\nPress Ctrl + C to exit the program.\n\n";
             std::cin.get();
         }
     }
