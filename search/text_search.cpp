@@ -56,7 +56,7 @@ int main() {
             std::string word;
             std::cout << "Please enter the word you are searching for: ";
             std::getline(std::cin, word);
-            std::cout << "Ignore case? 1 = Yes, 0 = No" << std::endl;
+            std::cout << "Ignore case-sensitive? 1 = Yes, 0 = No" << std::endl;
             std::cin >> ch;
             if (ch == 1) {
                 std::string lowerCase = lower(
