@@ -31,7 +31,6 @@ class Compare{
     }
 };
 
-// Where the magic happens. This is where I compute the status of all the processes post their completion
 /**
  * @brief Class which implements the FCFS scheduling algorithm
  *  S: Data type of Process id
