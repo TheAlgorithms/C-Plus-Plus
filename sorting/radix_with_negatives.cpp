@@ -13,7 +13,6 @@
 #include <iostream>
 /*!
  * This function implements the Radix Sorting Algorithm based on the **less significant digit** (LSD).
- * 
  * @note This is a non-comparison sort algorithm. This version works for any kind of integers.
  *
  * @param v Vector to be sorted.
