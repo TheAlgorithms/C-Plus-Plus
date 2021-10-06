@@ -1,8 +1,8 @@
 /******************************************************************************
  * @file
  * @brief Implementation of the [Selection
- *sort](https://en.wikipedia.org/wiki/Selection_sort) implementation using
- *swapping
+ * sort](https://en.wikipedia.org/wiki/Selection_sort) implementation using
+ * swapping
  * @details
  * The selection sort algorithm divides the input vector into two parts: a
  * sorted subvector of items which is built up from left to right at the front
