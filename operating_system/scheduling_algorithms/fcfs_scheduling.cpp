@@ -40,6 +40,7 @@ class Compare{
 template<typename S, typename T, typename E>
 class FCFS{
     /**
+     * Priority queue of schedules(stored as tuples) of processes.
      * In each tuple
      * 1st element: Process id
      * 2nd element: Arrival Time
@@ -49,10 +50,22 @@ class FCFS{
      * 6th element: Waiting time
     */
     priority_queue<tuple<S, T, E, double, double, double>, vector<tuple<S, T, E, double, double, double>>, Compare<S, T, E>> schedule;
-    vector<tuple<S, T, E, double, double, double>> result;
+
+    // Stores final status of all the processes after completing execution.
+    vector<tuple<S, T, E, double, double, double>> result; 
+    
+    // Stores process ids. Used for confirming absence of a process while adding it.
     unordered_set<S> idList;
     public:
+    /**
+     * @brief add the process to the ready queue if it isn't already there
+     * @param id: Process id
+     * @param arrival: Arrival time of the process
+     * @param burst: Burst time of the process
+     * 
+    */
     void addProcess(S id, T arrival, E burst){
+        // Add if process with process id not found in idList.
         if(idList.find(id) == idList.end()) {
             tuple<S, T, E, double, double, double> t = make_tuple(id, arrival, burst, 0, 0, 0);
             schedule.push(t);
