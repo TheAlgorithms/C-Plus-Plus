@@ -96,7 +96,11 @@ void join(std::vector<int> &v, std::vector<int> &neg_v) {
 }
 
 
-int main() {  
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
     std::vector<int> v = {23, -10, 20, -11, 12, -6, 7};  
     std::vector<int> neg_v;
     
