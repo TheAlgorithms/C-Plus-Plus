@@ -37,7 +37,9 @@ static void test() {
     assert(lower("abcd").compare("abc") == 1);
 }
 
-/** Main function
+/**
+ * @brief Main function
+ * @returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
