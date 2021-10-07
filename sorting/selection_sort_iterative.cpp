@@ -37,7 +37,6 @@
  * @brief Sorting algorithms
  *******************************************************************************/
 namespace sorting {
-
 /******************************************************************************
  * @brief The main function which implements Selection sort
  * @param arr vector to be sorted:-> template
