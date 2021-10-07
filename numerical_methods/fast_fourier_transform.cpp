@@ -55,8 +55,8 @@ complex<double>* FastFourierTransform(complex<double>*p,int n)
 
 	for(int i=0;i<n/2;i++)
 	{
-		y[i]=ye[i]+pow(om,i)*yo[i]; ///Updating the first n/2 elemnts
-		y[i+n/2]=ye[i]-pow(om,i)*yo[i];///Updating the last n/2 elemnts
+		y[i]=ye[i]+pow(om,i)*yo[i]; ///Updating the first n/2 elements
+		y[i+n/2]=ye[i]-pow(om,i)*yo[i];///Updating the last n/2 elements
 	}
 
 	return y;///Return the list 
