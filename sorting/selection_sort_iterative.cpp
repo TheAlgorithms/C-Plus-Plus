@@ -25,6 +25,7 @@
  * sorted order), and moving the subvector boundaries one element to the right.
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
+ * @author Unknown author
  *******************************************************************************/
 #include <algorithm>  /// for std::is_sorted
 #include <cassert>    /// for std::assert
