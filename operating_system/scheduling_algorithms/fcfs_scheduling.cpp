@@ -17,9 +17,6 @@ using std::tuple;
 using std::endl;
 using std::left;
 
-
-
-
 /** 
  * @brief Comparator class for Priority queue
  *  S: Data type of Process id
@@ -156,7 +153,7 @@ int main(){
 
     //Sample test case
     int n = 3;
-    tuple<int, int, int> input[n] = {
+    vector<tuple<int, int, int>> input = {
         make_tuple(1, 0, 30),
         make_tuple(2, 0, 5),
         make_tuple(3, 0, 5)
