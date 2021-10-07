@@ -4,7 +4,21 @@
 #include <queue>
 #include <cmath>
 #include <cstdio>
-using namespace std;
+#include <iomanip>
+
+using std::cin;
+using std::cout;
+using std::get;
+using std::priority_queue;
+using std::unordered_set;
+using std::make_tuple;
+using std::vector;
+using std::tuple;
+using std::endl;
+using std::left;
+
+
+
 
 /** 
  * @brief Comparator class for Priority queue
@@ -116,13 +130,21 @@ class FCFS{
     void printResult(){
         cout << "Status of all the proceses post completion is as follows:" << endl;
 
-        printf("%-17s%-17s%-17s%-17s%-17s%-17s\n", "Process Id", "Arrival Time", "Burst Time", 
-                    "Completion Time", "Turnaround Time", "Waiting Time"
-                );
+        cout << std::setw(17) << left << "Process Id"
+             << std::setw(17) << left << "Arrival Time"
+             << std::setw(17) << left << "Burst Time"
+             << std::setw(17) << left << "Completion Time"
+             << std::setw(17) << left << "Turnaround Time"
+             << std::setw(17) << left << "Waiting Time" << endl;
+             
         for(size_t i{}; i < result.size(); i++){
-            printf("%-17d%-17d%-17d%-17.2lf%-17.2lf%-17.2lf\n", get<0>(result[i]), get<1>(result[i]), get<2>(result[i]), 
-                get<3>(result[i]), get<4>(result[i]), get<5>(result[i])
-                );
+            cout << std::setprecision(2) << std::fixed 
+                 << std::setw(17) << left << get<0>(result[i])
+                 << std::setw(17) << left << get<1>(result[i])
+                 << std::setw(17) << left << get<2>(result[i])
+                 << std::setw(17) << left << get<3>(result[i])
+                 << std::setw(17) << left << get<4>(result[i])
+                 << std::setw(17) << left << get<5>(result[i]) << endl;
         }
     }
     
@@ -141,7 +163,6 @@ int main(){
     };
 
     for(int i{}; i < n; i++){
-        int id, arrival, burst;
         readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]), get<2>(input[i]));
     }
 
