@@ -49,8 +49,8 @@ public:
         return static_cast<uint32_t>(inverse_cumulative_distribution(uniform_sample)) + 1;
     }
 
-    float range_tries(const uint32_t& min_tries = 0, const uint32_t& max_tries = std::numeric_limits<uint32_t>::max()) {
-        float cdf_lower = cumulative_distribution(min_tries);
+    float range_tries(const uint32_t& min_tries = 1, const uint32_t& max_tries = std::numeric_limits<uint32_t>::max()) {
+        float cdf_lower = cumulative_distribution(min_tries - 1);
         float cdf_upper = max_tries == std::numeric_limits<uint32_t>::max() ? 1.0f : cumulative_distribution(max_tries);
         return cdf_upper - cdf_lower;
     }
@@ -96,8 +96,8 @@ static void test() {
     assert(std::abs(dist.cumulative_distribution(6) - 0.882351) < threshold);
     assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
-    assert(std::abs(dist.range_tries(2) - 0.49f) < threshold);
-    assert(std::abs(dist.range_tries(4, 11) - 0.2203267f) < threshold);
+    assert(std::abs(dist.range_tries(3) - 0.49f) < threshold);
+    assert(std::abs(dist.range_tries(5, 11) - 0.2203267f) < threshold);
     std::cout << "All tests passed" << std::endl;
     sample_test(dist);
 
@@ -111,8 +111,8 @@ static void test() {
     assert(std::abs(dist.cumulative_distribution(6) - 0.984375) < threshold);
     assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
-    assert(std::abs(dist.range_tries(2) - 0.25f) < threshold);
-    assert(std::abs(dist.range_tries(4, 11) - 0.062011f) < threshold);
+    assert(std::abs(dist.range_tries(3) - 0.25f) < threshold);
+    assert(std::abs(dist.range_tries(5, 11) - 0.062011f) < threshold);
     std::cout << "All tests passed" << std::endl;
     sample_test(dist);
 
@@ -126,8 +126,8 @@ static void test() {
     assert(std::abs(dist.cumulative_distribution(6) - 0.999936) < threshold);
     assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
-    assert(std::abs(dist.range_tries(2) - 0.04f) < threshold);
-    assert(std::abs(dist.range_tries(4, 11) - 0.00159997f) < threshold);
+    assert(std::abs(dist.range_tries(3) - 0.04f) < threshold);
+    assert(std::abs(dist.range_tries(5, 11) - 0.00159997f) < threshold);
     std::cout << "All tests passed" << std::endl;
     sample_test(dist);
 
