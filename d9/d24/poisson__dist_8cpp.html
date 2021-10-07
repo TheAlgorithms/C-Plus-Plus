@@ -268,12 +268,13 @@ Here is the call graph for this function:</div>
 \[P = \sum_i p(\mu,i)\]
 </p>
  <div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                                                            {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">double</span> probability = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">double</span> <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a> = 0;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = lower; i &lt;= upper; i++) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        probability += <a class="code hl_function" href="../../d9/d24/poisson__dist_8cpp.html#a69a136b32707bdc7950fb9057b5fa1e1">poisson_x_successes</a>(expected, i);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a> += <a class="code hl_function" href="../../d9/d24/poisson__dist_8cpp.html#a69a136b32707bdc7950fb9057b5fa1e1">poisson_x_successes</a>(expected, i);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> probability;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="ttc" id="anamespaceprobability_html"><div class="ttname"><a href="../../d4/ded/namespaceprobability.html">probability</a></div><div class="ttdoc">for std::vector - needed in testing</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

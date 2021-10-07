@@ -47,8 +47,8 @@ var hierarchy =
     [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "data_structures::tree_234::Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", null ],
     [ "data_structures::trie_using_hashmap::Trie::Node", "d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node< Kind >", "d5/da1/structnode.html", null ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::Node", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html", null ],
     [ "others::iterative_tree_traversals::Node", "d2/d9a/structothers_1_1iterative__tree__traversals_1_1_node.html", null ],
     [ "range_queries::perSegTree::Node", "d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html", null ],
@@ -58,8 +58,8 @@ var hierarchy =
     [ "geometry::jarvis::Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ],
     [ "Point", "d8/dc8/struct_point.html", null ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "queue< Kind >", "db/da9/classqueue.html", null ],
+    [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "data_structures::queue_using_array::Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", null ],
     [ "RBtree", "d8/d72/class_r_btree.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
@@ -94,5 +94,6 @@ var hierarchy =
       [ "std::is_unsigned< uint256_t >", "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html", null ]
     ] ],
     [ "uint128_t", "db/d9a/classuint128__t.html", null ],
-    [ "uint256_t", "d1/d83/classuint256__t.html", null ]
+    [ "uint256_t", "d1/d83/classuint256__t.html", null ],
+    [ "probability::windowed_median::WindowedMedian", "df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html", null ]
 ];
