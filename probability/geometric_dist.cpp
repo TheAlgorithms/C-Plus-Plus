@@ -58,7 +58,84 @@ public:
 
 }  // namespace probability
 
-int main() {
+void sample_test(probability::geometric_distribution& dist) {
+    uint32_t n_tries = 1000000;
+    auto* tries = new float[n_tries];
 
+    float mean = 0.0f;
+    for (uint32_t i = 0; i < n_tries; ++i) {
+        tries[i] = dist.draw_sample();
+        mean += tries[i];
+    }
+
+    mean /= static_cast<float>(n_tries);
+
+    float var = 0.0f;
+    for (uint32_t i = 0; i < n_tries; ++i) {
+        var += (tries[i] - mean) * (tries[i] - mean);
+    }
+
+    var /= static_cast<float>(n_tries - 1);
+
+    delete[] tries;
+
+    std::cout << "This value should be near " << dist.expected_value() << ": " << mean << std::endl;
+    std::cout << "This value should be near " << dist.variance() << ": " << var << std::endl;
+}
+
+static void test() {
+    probability::geometric_distribution dist(0.3);
+
+    const float threshold = 1e-3f;
+
+    std::cout << "Starting tests for p = 0.3..." << std::endl;
+    assert(std::abs(dist.expected_value() - 3.33333333f) < threshold);
+    assert(std::abs(dist.variance() - 7.77777777f) < threshold);
+    assert(std::abs(dist.standard_deviation() - 2.788866755) < threshold);
+    assert(std::abs(dist.probability_density(5) - 0.07203) < threshold);
+    assert(std::abs(dist.cumulative_distribution(6) - 0.882351) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.range_tries() - 1.0f) < threshold);
+    assert(std::abs(dist.range_tries(2) - 0.49f) < threshold);
+    assert(std::abs(dist.range_tries(4, 11) - 0.2203267f) < threshold);
+    std::cout << "All tests passed" << std::endl;
+    sample_test(dist);
+
+    dist = probability::geometric_distribution(0.5f);
+
+    std::cout << "Starting tests for p = 0.5..." << std::endl;
+    assert(std::abs(dist.expected_value() - 2.0f) < threshold);
+    assert(std::abs(dist.variance() - 2.0f) < threshold);
+    assert(std::abs(dist.standard_deviation() - 1.4142135f) < threshold);
+    assert(std::abs(dist.probability_density(5) - 0.03125) < threshold);
+    assert(std::abs(dist.cumulative_distribution(6) - 0.984375) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.range_tries() - 1.0f) < threshold);
+    assert(std::abs(dist.range_tries(2) - 0.25f) < threshold);
+    assert(std::abs(dist.range_tries(4, 11) - 0.062011f) < threshold);
+    std::cout << "All tests passed" << std::endl;
+    sample_test(dist);
+
+    dist = probability::geometric_distribution(0.8f);
+
+    std::cout << "Starting tests for p = 0.8..." << std::endl;
+    assert(std::abs(dist.expected_value() - 1.25f) < threshold);
+    assert(std::abs(dist.variance() - 0.3125f) < threshold);
+    assert(std::abs(dist.standard_deviation() - 0.559016f) < threshold);
+    assert(std::abs(dist.probability_density(5) - 0.00128) < threshold);
+    assert(std::abs(dist.cumulative_distribution(6) - 0.999936) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.range_tries() - 1.0f) < threshold);
+    assert(std::abs(dist.range_tries(2) - 0.04f) < threshold);
+    assert(std::abs(dist.range_tries(4, 11) - 0.00159997f) < threshold);
+    std::cout << "All tests passed" << std::endl;
+    sample_test(dist);
+
+
+}
+
+int main() {
+    srand(time(nullptr));
+    test();
     return 0;
 }
