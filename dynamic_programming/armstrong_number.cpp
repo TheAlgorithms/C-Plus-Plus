@@ -11,6 +11,9 @@ int main() {
     cin >> n;
     
     temp = n;
+    
+    /* First Count the number of digits
+       in the given number */
     while(temp != 0)
     {
         rem = temp%10;
@@ -18,6 +21,10 @@ int main() {
         count++;
     }
 
+    /* Calaculation for checking of armstrongs number i.e. 
+       in a n digit number sum of the digits raised to a power of n
+       is equal to the original number */
+    
     temp = n;
     while(temp!=0)
     {
