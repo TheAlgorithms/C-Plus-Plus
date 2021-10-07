@@ -268,6 +268,7 @@
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/binomial_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/poisson_dist.cpp)
+  * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/windowed_median.cpp)
 
 ## Range Queries
   * [Fenwick Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/fenwick_tree.cpp)
