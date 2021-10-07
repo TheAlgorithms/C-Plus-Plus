@@ -1,12 +1,11 @@
 /**
  * @file
  * @brief Implementation to [count number of set bits of a number]
- * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
+ * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
+ * integer.
  *
  * @details
- * We are given a integer number. We need to calculate number of set bits in it.
- * So firstly we will calculate the binary representation of our integer number
- * and then total set bits of the number.
+ * We are given an integer number. We need to calculate the number of set bits in it.
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
