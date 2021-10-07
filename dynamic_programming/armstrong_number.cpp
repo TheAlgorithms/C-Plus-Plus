@@ -3,7 +3,6 @@
 include <iostream>
 using std::cin;
 using std::cout;
-using namespace std;
 
 int main() {
     int n, temp, rem, count = 0, sum=0;
