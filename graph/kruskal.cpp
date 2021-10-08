@@ -8,26 +8,30 @@ const int mx = 1e6 + 5;
 using ll = int64_t;
 
 std::array<ll, mx> parent;
+std::array<ll,mx> sz;
 ll node, edge;
 std::vector<std::pair<ll, std::pair<ll, ll>>> edges;
 void initial() {
     for (int i = 0; i < node + edge; ++i) {
         parent[i] = i;
+        sz[i] = 1;
     }
 }
 
-int root(int i) {
-    while (parent[i] != i) {
-        parent[i] = parent[parent[i]];
-        i = parent[i];
-    }
-    return i;
+int root(int i) {//path compresseion added
+    if(parent[i] == i)
+        return parent[i];
+    return parent[i] = root(parent[i]);
 }
 
-void join(int x, int y) {
-    int root_x = root(x);  // Disjoint set union by rank
+void join(int x, int y) {//union by rank added
+    int root_x = root(x);  
     int root_y = root(y);
+    if(sz[root_x]>sz[root_y]){
+        std::swap(root_x,root_y);
+    }
     parent[root_x] = root_y;
+    sz[root_y]+=sz[root_x];
 }
 
 ll kruskal() {
