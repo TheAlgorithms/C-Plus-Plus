@@ -54,10 +54,10 @@ int query(int beg, int end) { return PSA[end] - PSA[beg - 1]; }
 }  // namespace range_queries
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Self-test implementations
+ * @returns void
  */
-int main() {
+static void test() {
     std::vector<int> values{0,  123, 0,  2,  -2, 5,
                             24, 0,   23, -1, -1};  // original array
 
@@ -70,6 +70,13 @@ int main() {
            27);  // the sum of the interval [4, 6]
     assert(range_queries::prefix_sum_array::query(5, 9) ==
            51);  // the sum of the interval [5, 9]
+}
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    test();
     return 0;
 }
