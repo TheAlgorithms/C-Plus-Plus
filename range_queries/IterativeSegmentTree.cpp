@@ -1,5 +1,6 @@
 //Find the Maximum in given range with updates.
-#include <bits/stdc++.h>
+#include <iostream.h>
+#include<vector>
 using namespace std;
 //struct s(n,x);
 struct SegTree
