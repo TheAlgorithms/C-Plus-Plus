@@ -13,6 +13,7 @@
  * * Running Time Complexity \n
  * * Build : O(N) \n
  * * Range Query : O(1) \n
+ * @author [Paulo Vitor Lima Borges](https://github.com/PauloVLB)
  */
 
 #include <cassert>   /// for assert
