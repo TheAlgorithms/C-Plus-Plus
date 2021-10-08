@@ -155,7 +155,7 @@ static void test1() {
  * @returns void
  */
 static void test2() {
-    /* checks the parents in the resultant structures */
+    // checks the parents in the resultant structures 
     uint64_t n = 10;   ///< number of elements
     dsu d(n + 1);      ///< object of class disjoint sets
     d.unionSet(2, 1);  /// performs union operation on 1 and 2
