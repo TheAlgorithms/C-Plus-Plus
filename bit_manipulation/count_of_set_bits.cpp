@@ -11,6 +11,7 @@
  * set bit in computer terms.
  * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
+ * @author [Swastika Gupta](https://github.com/Swastyy)
  * @author [Prashant Thakur](https://github.com/prashant-th18)
  */
 #include <cassert>   /// for assert
