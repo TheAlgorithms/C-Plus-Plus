@@ -7,11 +7,20 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+/**
+ * @namespace ciphers
+ * @brief Cipher algorithms
+ */
+namespace ciphers{
+/**
+ *  @namespace rot13_encode
+ *  @brief Functions for [rot13 encode and decode](https://en.wikipedia.org/wiki/ROT13) implementation.
+ * */
+namespace rot13_encode{
 
-string rot13_encode(string s){
+std::string rot13_encode(std::string s){
     // Encode only A~Z, a~z.
-    int tmp;
+    int tmp=0;
     for(int i = 0; i < s.length(); i++){
         if(s[i]>='A'&&s[i]<='Z'){
             tmp = s[i] - 'A';
@@ -29,10 +38,12 @@ string rot13_encode(string s){
     }
     return s;
 }
+} // namespace rot13_encode
 
-string rot13_decode(string s){
+namespace rot13_decode{
+std::string rot13_decode(std::string s){
     // Decode only A~Z, a~z .
-    int tmp;
+    int tmp=0;
     for(int i = 0; i < s.length(); i++){
         if(s[i]>='A'&&s[i]<='Z'){
             tmp = s[i] - 'A';
@@ -54,16 +65,18 @@ string rot13_decode(string s){
     }
     return s;
 }
+} // namespace rot13_decode
+} // namespace ciphers
 
 static void test(){
-    string s;
+    std::string s;
     s = "test_WOrd01";
     
-    s = rot13_encode(s);
-    cout << "rot13_encode:"<< s << endl;
+    s = ciphers::rot13_encode::rot13_encode(s);
+    std::cout << "rot13_encode:"<< s << std::endl;
 
-    s = rot13_decode(s);
-    cout << "rot13_decode:" << s << endl;
+    s = ciphers::rot13_decode::rot13_decode(s);
+    std::cout << "rot13_decode:" << s << std::endl;
 }
 
 int main() {
