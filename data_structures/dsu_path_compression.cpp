@@ -206,8 +206,8 @@ int main() {
     uint64_t n = 10;  ///< number of items
     dsu d(n + 1);     ///< object of class disjoint sets
 
-    test1();  //< test case# 1
-    test2();  //< test case# 2
+    test1();  // run 1st test case
+    test2();  // run 2nd test case
 
     return 0;
 }
