@@ -31,7 +31,7 @@ namespace range_queries {
  */
 namespace prefix_sum_array {
 
-std::vector<int> PSA(1, 0);
+std::vector<int64_t> PSA(1, 0);
 
 /**
  * @brief function that builds the PSA
