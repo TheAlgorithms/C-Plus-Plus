@@ -31,7 +31,7 @@ namespace count_of_set_bits {
 /**
  * @brief The main function implements set bit count
  * @param n is the number whose set bit will be counted
- * @returns total number of set-bits in binary representation of number 'n'
+ * @returns total number of set-bits in the binary representation of number `n`
  */
 std::uint64_t countSetBits(std :: int64_t n) { // int64_t is preferred over int so that
                                           // no Overflow can be there.
@@ -75,8 +75,7 @@ static void test() {
  * @brief Main function
  * @returns 0 on exit
  */
-  int main()
-  {
+int main() {
     test(); // run self-test implementations
     return 0;
-  }
+}
