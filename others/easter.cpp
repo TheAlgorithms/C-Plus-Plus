@@ -11,7 +11,7 @@
 * You can read more about the date of Easter here:
 * https://en.wikipedia.org/wiki/Date_of_Easter
 * 
-* @author AlternateWalls (https://github.com/AlternateWalls)
+* @author [AlternateWalls](https://github.com/AlternateWalls)
 */ 
 
 #include <cassert>    /// for assert
