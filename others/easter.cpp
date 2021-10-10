@@ -44,7 +44,6 @@ class EasterYearMonthDay {
  * @returns An instance of the easterYearMonthDay calss that contains the
  * information (Ex. 420 - 4/20 or April 20th)
  */
-
 EasterYearMonthDay findEaster(int y) {
     if (y > 1582) {
         int a = y % 19;   // Year's location on Metonic Calendar
