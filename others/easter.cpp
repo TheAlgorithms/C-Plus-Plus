@@ -14,9 +14,8 @@
 * @author AlternateWalls (https://github.com/AlternateWalls)
 */ 
 
-//Includes
-#include <cassert>  
-#include <iostream>
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
 
 /*
 * @brief Contains information for Easter date 
