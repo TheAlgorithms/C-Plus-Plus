@@ -245,6 +245,7 @@
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
+  * [Easter](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/easter.cpp)
   * [Fast Integer Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_integer_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/iterative_tree_traversals.cpp)
