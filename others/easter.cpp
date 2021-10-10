@@ -23,9 +23,9 @@
 class EasterYearMonthDay 
 {
 public:
-    int year;   // Year Easter is on
-    int month;  // Month Easter is on
-    int day;    // Day Easter is on
+    int year;   ///< year Easter is on
+    int month;  ///< month Easter is on
+    int day;    ///< day Easter is on
 
     EasterYearMonthDay(int newYear, int newMonth, int newDay) 
     {
