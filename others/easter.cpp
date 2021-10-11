@@ -75,11 +75,11 @@ EasterYearMonthDay findEaster(int y) {
     }
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
-    /*
-     * @brief Inputting different year values and comparing the outputs to a
-     * calendar
-     */
 
     // 2003 | April 20th
     assert(findEaster(2003).month == 4);  // Should return true
