@@ -29,7 +29,10 @@
  * @brief Probability algorithms
  */
 namespace probability {
-
+/**
+ * @namespace geometric_dist
+ * @brief Functions for the [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution) algorithm implementation
+namespace geometric_dist {
 /**
  * @brief Returns a random number between [0,1]
  * @returns A uniformly distributed random number between 0 (included) and 1 (included)
@@ -133,7 +136,7 @@ public:
         return cdf_upper - cdf_lower;
     }
 };
-
+}  // namespace geometric_dist
 }  // namespace probability
 
 /**
@@ -142,7 +145,7 @@ public:
  * These should be close to the expected value and variance of the given distribution to pass.
  * @param dist The distribution to test
  */
-void sample_test(probability::geometric_distribution& dist) {
+void sample_test(probability::geometric_dist::geometric_distribution& dist) {
     uint32_t n_tries = 1000000;
     std::vector<float> tries;
     tries.resize(n_tries);
@@ -172,7 +175,7 @@ void sample_test(probability::geometric_distribution& dist) {
  * @returns void
  */
 static void test() {
-    probability::geometric_distribution dist(0.3);
+    probability::geometric_dist::geometric_distribution dist(0.3);
 
     const float threshold = 1e-3f;
 
@@ -189,7 +192,7 @@ static void test() {
     std::cout << "All tests passed" << std::endl;
     sample_test(dist);
 
-    dist = probability::geometric_distribution(0.5f);
+    dist = probability::geometric_dist::geometric_distribution(0.5f);
 
     std::cout << "Starting tests for p = 0.5..." << std::endl;
     assert(std::abs(dist.expected_value() - 2.0f) < threshold);
@@ -204,7 +207,7 @@ static void test() {
     std::cout << "All tests passed" << std::endl;
     sample_test(dist);
 
-    dist = probability::geometric_distribution(0.8f);
+    dist = probability::geometric_dist::geometric_distribution(0.8f);
 
     std::cout << "Starting tests for p = 0.8..." << std::endl;
     assert(std::abs(dist.expected_value() - 1.25f) < threshold);
