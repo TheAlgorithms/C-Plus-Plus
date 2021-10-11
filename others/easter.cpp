@@ -1,6 +1,7 @@
 /*
  * @file
- * @brief Determines the [Date of Easter](https://en.wikipedia.org/wiki/Date_of_Easter) after 1582
+ * @brief Determines the [Date of
+ * Easter](https://en.wikipedia.org/wiki/Date_of_Easter) after 1582
  *
  * @details
  * The date of Easter is determined in each year through a calculation known as
@@ -80,7 +81,6 @@ EasterYearMonthDay findEaster(int y) {
  * @returns void
  */
 static void test() {
-
     // 2003 | April 20th
     assert(findEaster(2003).month == 4);  // Should return true
     assert(findEaster(2003).day == 20);   // Should return true
