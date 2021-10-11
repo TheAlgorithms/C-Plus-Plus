@@ -62,7 +62,7 @@ public:
      * @brief The expected value of a geometrically distributed random variable X
      * @returns E[X] = 1/p
      */
-    float expected_value() {
+    float expected_value() const {
        return 1.0f/ p;
     }
 
@@ -70,7 +70,7 @@ public:
      * @brief The variance of a geometrically distributed random variable X
      * @returns V[X] = (1 - p) / p^2
      */
-    float variance() {
+    float variance() const {
        return (1.0f - p) / (p * p);
     }
 
@@ -78,7 +78,7 @@ public:
      * @brief The standard deviation of a geometrically distributed random variable X
      * @returns \sigma = \sqrt{V[X]}
      */
-    float standard_deviation() {
+    float standard_deviation() const {
        return std::sqrt(variance());
     }
 
@@ -89,7 +89,7 @@ public:
      * @param k The number of trials to observe the first success in [1,\infty)
      * @returns A number between [0,1] according to p * (1-p)^{k-1}
      */
-    float probability_density(const uint32_t& k) {
+    float probability_density(const uint32_t& k) const {
         return std::pow((1.0f - p), static_cast<float>(k - 1)) * p;
     }
 
@@ -99,7 +99,7 @@ public:
      * @param k The number of trials in [1,\infty)
      * @returns The probability to have success within k trials
      */
-    float cumulative_distribution(const uint32_t& k) {
+    float cumulative_distribution(const uint32_t& k) const {
         return 1.0f - std::pow((1.0f - p), static_cast<float>(k));
     }
 
@@ -110,7 +110,7 @@ public:
      * @param cdf The probability in [0,1]
      * @returns The number of (exact) trials.
      */
-    float inverse_cumulative_distribution(const float& cdf) {
+    float inverse_cumulative_distribution(const float& cdf) const {
         return std::log(1.0f - cdf) / std::log(1.0f - p);
     }
 
@@ -118,7 +118,7 @@ public:
      * @brief Generates a (discrete) sample according to the geometrical distribution
      * @returns A geometrically distributed number in [1,\infty)
      */
-    uint32_t draw_sample() {
+    uint32_t draw_sample() const {
         float uniform_sample = generate_uniform();
         return static_cast<uint32_t>(inverse_cumulative_distribution(uniform_sample)) + 1;
     }
@@ -132,7 +132,7 @@ public:
      * @param max_tries The maximum number of tries in [min_tries, \infty) (inclusive)
      * @returns The probability of having success within a range of tries [min_tries, max_tries]
      */
-    float range_tries(const uint32_t& min_tries = 1, const uint32_t& max_tries = std::numeric_limits<uint32_t>::max()) {
+    float range_tries(const uint32_t& min_tries = 1, const uint32_t& max_tries = std::numeric_limits<uint32_t>::max()) const {
         float cdf_lower = cumulative_distribution(min_tries - 1);
         float cdf_upper = max_tries == std::numeric_limits<uint32_t>::max() ? 1.0f : cumulative_distribution(max_tries);
         return cdf_upper - cdf_lower;
