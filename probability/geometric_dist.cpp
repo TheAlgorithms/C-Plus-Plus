@@ -23,6 +23,7 @@
 #include <iostream>   /// for std::cout
 #include <limits>     /// for std::numeric_limits
 #include <random>     /// for random numbers
+#include <vector>     /// for std::vector
 
 /**
  * @namespace probability
@@ -144,7 +145,8 @@ public:
  */
 void sample_test(probability::geometric_distribution& dist) {
     uint32_t n_tries = 1000000;
-    auto* tries = new float[n_tries];
+    std::vector<float> tries;
+    tries.resize(n_tries);
 
     float mean = 0.0f;
     for (uint32_t i = 0; i < n_tries; ++i) {
@@ -161,8 +163,6 @@ void sample_test(probability::geometric_distribution& dist) {
 
     //Unbiased estimate of variance
     var /= static_cast<float>(n_tries - 1);
-
-    delete[] tries;
 
     std::cout << "This value should be near " << dist.expected_value() << ": " << mean << std::endl;
     std::cout << "This value should be near " << dist.variance() << ": " << var << std::endl;
