@@ -13,7 +13,6 @@
  * k - The number of tries
  *
  * @author [Domenic Zingsheim](https://github.com/DerAndereDomenic)
- *
  */
 
 #include <cassert>    /// for assert
