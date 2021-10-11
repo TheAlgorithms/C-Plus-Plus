@@ -32,6 +32,7 @@ namespace probability {
 /**
  * @namespace geometric_dist
  * @brief Functions for the [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution) algorithm implementation
+ */
 namespace geometric_dist {
 /**
  * @brief Returns a random number between [0,1]
