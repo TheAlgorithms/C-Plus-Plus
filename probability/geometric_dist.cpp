@@ -2,6 +2,7 @@
  * @file
  * @brief [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
  *
+ * @details
  * The geometric distribution models the experiment of doing Bernoulli trials until a
  * sucess was observed. There are two formulations of the geometric distribution:
  * 1) The probability distribution of the number X of Bernoulli trials needed to get one success, supported on the set { 1, 2, 3, ... }
@@ -172,7 +173,7 @@ void sample_test(probability::geometric_dist::geometric_distribution& dist) {
 }
 
 /**
- * @brief Self-test implementation
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
