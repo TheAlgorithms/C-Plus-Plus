@@ -102,6 +102,6 @@ static void test() {
 
 // Main
 int main() {
-    test();
+    test();  // run self-test implementations
     return 0;
 }
