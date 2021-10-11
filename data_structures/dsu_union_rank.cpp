@@ -180,8 +180,8 @@ static void test2() {
  * @returns 0 on exit
  */
 int main() {
-    test1();
-    test2();
+    test1();  // run 1st test case
+    test2();  // run 2nd test case
 
     return 0;
 }
