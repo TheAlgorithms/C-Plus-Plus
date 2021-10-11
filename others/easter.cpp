@@ -29,7 +29,7 @@ class EasterYearMonthDay {
     uint64_t month;  ///< month Easter is on
     uint64_t day;    ///< day Easter is on
 
-    EasterYearMonthDay(int newYear, int newMonth, int newDay) {
+    EasterYearMonthDay(uint64_t newYear, uint64_t newMonth, uint64_t newDay) {
         year = newYear;  // Assigns year to class
         month = newMonth;
         day = newDay;
@@ -43,7 +43,7 @@ class EasterYearMonthDay {
  * @returns An instance of the easterYearMonthDay calss that contains the
  * information (Ex. 420 - 4/20 or April 20th)
  */
-EasterYearMonthDay findEaster(int y) {
+EasterYearMonthDay findEaster(uint64_t y) {
     if (y > 1582) {
         uint64_t a = y % 19;  // Year's location on Metonic Calendar
         uint64_t b = y / 100;  // Century index
