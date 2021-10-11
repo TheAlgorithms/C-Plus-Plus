@@ -12,8 +12,6 @@
  * desire to associate the date of Easter with the date of the Jewish feast of
  * Passover which, Christians believe, is when Jesus was crucified.
  *
- * You can read more about the date of Easter here:
- * https://en.wikipedia.org/wiki/Date_of_Easter
  *
  * @author [AlternateWalls](https://github.com/AlternateWalls)
  */
