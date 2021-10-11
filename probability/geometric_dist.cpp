@@ -1,5 +1,5 @@
 /**
- * @file probability/geometric_dist.cpp
+ * @file
  * @brief [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
  *
  * The geometric distribution models the experiment of doing Bernoulli trials until a
