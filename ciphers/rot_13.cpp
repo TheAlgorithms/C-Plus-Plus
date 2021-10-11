@@ -7,8 +7,8 @@
  * developed in ancient Rome.
  * @author [pond](https://github.com/pond-e)
  */
-#include <iostream>
-#include <string>
+#include <iostream>  /// for IO operations
+#include <string>    /// for assert
 
 /**
  * @namespace ciphers
@@ -82,7 +82,10 @@ static void test() {
     s = ciphers::rot13::rot13_decode(s);
     std::cout << "rot13_decode:" << s << std::endl;
 }
-
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();  // run self-test implementations
     return 0;
