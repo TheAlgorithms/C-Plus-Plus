@@ -221,8 +221,6 @@ static void test() {
     assert(std::abs(dist.range_tries(5, 11) - 0.00159997f) < threshold);
     std::cout << "All tests have successfully passed!" << std::endl;
     sample_test(dist);
-
-
 }
 
 /**
