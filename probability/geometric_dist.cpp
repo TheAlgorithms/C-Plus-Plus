@@ -228,6 +228,6 @@ static void test() {
  */
 int main() {
     srand(time(nullptr));
-    test();
+    test();  // run self-test implementations
     return 0;
 }
