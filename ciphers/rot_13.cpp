@@ -16,11 +16,11 @@
  */
 namespace ciphers {
 /**
- *  @namespace rot13_encode
+ *  @namespace rot13
  *  @brief Functions for [rot13 encode and
  * decode](https://en.wikipedia.org/wiki/ROT13) implementation.
  * */
-namespace rot13_encode {
+namespace rot13 {
 
 std::string rot13_encode(std::string s) {
     // Encode only A~Z, a~z.
@@ -42,9 +42,7 @@ std::string rot13_encode(std::string s) {
     }
     return s;
 }
-}  // namespace rot13_encode
 
-namespace rot13_decode {
 std::string rot13_decode(std::string s) {
     // Decode only A~Z, a~z .
     int tmp = 0;
@@ -71,17 +69,17 @@ std::string rot13_decode(std::string s) {
     }
     return s;
 }
-}  // namespace rot13_decode
+}  // namespace rot13
 }  // namespace ciphers
 
 static void test() {
     std::string s;
     s = "test_WOrd01";
 
-    s = ciphers::rot13_encode::rot13_encode(s);
+    s = ciphers::rot13::rot13_encode(s);
     std::cout << "rot13_encode:" << s << std::endl;
 
-    s = ciphers::rot13_decode::rot13_decode(s);
+    s = ciphers::rot13::rot13_decode(s);
     std::cout << "rot13_decode:" << s << std::endl;
 }
 
