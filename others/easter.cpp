@@ -100,7 +100,10 @@ static void test() {
     assert(findEaster(1400).day == 0);    // Should return true
 }
 
-// Main
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();  // run self-test implementations
     return 0;
