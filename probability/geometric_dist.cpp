@@ -169,6 +169,7 @@ void sample_test(probability::geometric_distribution& dist) {
 
 /**
  * @brief Self-test implementation
+ * @returns void
  */
 static void test() {
     probability::geometric_distribution dist(0.3);
