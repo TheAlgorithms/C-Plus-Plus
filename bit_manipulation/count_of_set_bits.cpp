@@ -41,6 +41,9 @@ namespace count_of_set_bits {
 std::uint64_t countSetBits(int n) {
     int count = 0;  // "count" variable is used to count number of 1's in binary
                     // representation of the number
+    if(n > 0 && (n & (n-1) == 0)){  // check if a number is power of 2, if yes. Answer is 1 always. No need to go through the wholw while loop
+        return 1;
+    }
     while (n != 0) {
         count += n & 1;
         n = n >> 1;  // n=n/2
