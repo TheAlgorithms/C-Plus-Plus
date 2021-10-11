@@ -1,6 +1,6 @@
 /*
  * @file
- * @brief Determines the date of Easter after 1582
+ * @brief Determines the [Date of Easter](https://en.wikipedia.org/wiki/Date_of_Easter) after 1582
  *
  * @details
  * The date of Easter is determined in each year through a calculation known as
