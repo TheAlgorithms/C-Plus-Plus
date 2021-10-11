@@ -1,8 +1,9 @@
-#include <cmath>    /// for log2
-#include <iostream> /// for io
+#include <cmath>     /// for log2
+#include <iostream>  /// for io
+#include <vector>    /// for vector
 
-void ConsTree(long long arr[], long long segtree[],
-              int low, int high, int pos) {
+void ConsTree(std::vector<int> &arr, std::vector<int> &segtree, int low,
+              int high, int pos) {
     if (low == high) {
         segtree[pos] = arr[low];
         return;
@@ -14,10 +15,11 @@ void ConsTree(long long arr[], long long segtree[],
     segtree[pos] = segtree[2 * pos + 1] + segtree[2 * pos + 2];
 }
 
-long long query(long long segtree[], long long lazy[],
-                int qlow, int qhigh, int low, int high, int pos) {
-    if (low > high || qlow > high || low > qhigh)
+int query(std::vector<int> &segtree, std::vector<int> &lazy, int qlow,
+          int qhigh, int low, int high, int pos) {
+    if (low > high || qlow > high || low > qhigh) {
         return 0;
+    }
 
     if (lazy[pos] != 0) {
         segtree[pos] += lazy[pos] * (high - low + 1);
@@ -29,8 +31,9 @@ long long query(long long segtree[], long long lazy[],
         lazy[pos] = 0;
     }
 
-    if (qlow <= low && qhigh >= high)
+    if (qlow <= low && qhigh >= high) {
         return segtree[pos];
+    }
 
     int mid = (low + high) / 2;
 
@@ -38,10 +41,11 @@ long long query(long long segtree[], long long lazy[],
            query(segtree, lazy, qlow, qhigh, mid + 1, high, 2 * pos + 2);
 }
 
-void update(long long segtree[], long long lazy[],
-            int start, int end, int delta, int low, int high, int pos) {
-    if (low > high)
+void update(std::vector<int> &segtree, std::vector<int> &lazy, int start,
+            int end, int delta, int low, int high, int pos) {
+    if (low > high) {
         return;
+    }
 
     if (lazy[pos] != 0) {
         segtree[pos] += lazy[pos] * (high - low + 1);
@@ -53,8 +57,9 @@ void update(long long segtree[], long long lazy[],
         lazy[pos] = 0;
     }
 
-    if (start > high || end < low)
+    if (start > high || end < low) {
         return;
+    }
 
     if (start <= low && end >= high) {
         segtree[pos] += delta * (high - low + 1);
@@ -77,15 +82,15 @@ void update(long long segtree[], long long lazy[],
 int main() {
     std::cout << "Enter number of elements: ";
 
-    int n;
+    int n = 0;
     std::cin >> n;
 
-    int max = 2 * pow(2, ceil(log2(n))) - 1;
-    long long arr[n] = {0}, lazy[max] = {0}, segtree[max];
+    int max = (int)(2 * pow(2, ceil(log2(n))) - 1);
+    std::vector<int> arr(n), lazy(max), segtree(max);
 
     ConsTree(arr, segtree, 0, n - 1, 0);
 
-    int choice;
+    int choice = 0;
     do {
         std::cout << "\nMake your choice:\n"
                      "1: Range update (input)\n"
@@ -96,13 +101,13 @@ int main() {
         if (choice == 1) {
             std::cout << "Enter 1-indexed lower bound, upper bound & value:\n";
 
-            int p, q, v;
+            int p = 1, q = 1, v = 0;
             std::cin >> p >> q >> v;
             update(segtree, lazy, p - 1, q - 1, v, 0, n - 1, 0);
         } else if (choice == 2) {
             std::cout << "Enter 1-indexed lower bound & upper bound:\n";
 
-            int p, q;
+            int p = 1, q = 1;
             std::cin >> p >> q;
             std::cout << query(segtree, lazy, p - 1, q - 1, 0, n - 1, 0);
             std::cout << "\n";
