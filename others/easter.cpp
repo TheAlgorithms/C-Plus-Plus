@@ -25,7 +25,7 @@
  */
 class EasterYearMonthDay {
  public:
-    uint64_t year;  ///< year Easter is on
+    uint64_t year;   ///< year Easter is on
     uint64_t month;  ///< month Easter is on
     uint64_t day;    ///< day Easter is on
 
@@ -45,7 +45,7 @@ class EasterYearMonthDay {
  */
 EasterYearMonthDay findEaster(uint64_t y) {
     if (y > 1582) {
-        uint64_t a = y % 19;  // Year's location on Metonic Calendar
+        uint64_t a = y % 19;   // Year's location on Metonic Calendar
         uint64_t b = y / 100;  // Century index
         uint64_t c = y % 100;
         uint64_t d = b / 4;
@@ -53,11 +53,12 @@ EasterYearMonthDay findEaster(uint64_t y) {
         uint64_t f = (b + 8) / 25;
         uint64_t g = (b - f + 1) / 3;
         uint64_t h = (19 * a + b - d - g + 15) %
-                30;  // Days from Mar. 21st until the full moon
+                     30;  // Days from Mar. 21st until the full moon
         uint64_t i = c / 4;
         uint64_t k = c % 4;
-        uint64_t r = (32 + 2 * e + 2 * i - h - k) %
-                7;  // The number of days from Paschal full moon to next Sunday
+        uint64_t r =
+            (32 + 2 * e + 2 * i - h - k) %
+            7;  // The number of days from Paschal full moon to next Sunday
         uint64_t m = (a + 11 * h + 22 * r) / 451;
         uint64_t n = (h + r - 7 * m + 114) / 31;  // Month of Easter
         uint64_t p = (h + r - 7 * m + 114) % 31;  // p + 1 is the day of Easter
