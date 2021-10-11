@@ -147,7 +147,7 @@ public:
  * These should be close to the expected value and variance of the given distribution to pass.
  * @param dist The distribution to test
  */
-void sample_test(probability::geometric_dist::geometric_distribution& dist) {
+void sample_test(const probability::geometric_dist::geometric_distribution& dist) {
     uint32_t n_tries = 1000000;
     std::vector<float> tries;
     tries.resize(n_tries);
