@@ -2,8 +2,9 @@
     C++ program : Circular Queue using array
 */
 
-# include<bits/stdc++.h>
-# include<conio.h>      //for getch()
+#include<iostream>      //for input output
+#include<stdlib.h>      //for system("cls")
+#include<conio.h>       //for getch()
 using namespace std;
 
 #define MAX 10          //max size of array
