@@ -16,14 +16,14 @@
 
 using std::cin;
 using std::cout;
-using std::get;
-using std::priority_queue;
-using std::unordered_set;
-using std::make_tuple;
-using std::vector;
-using std::tuple;
 using std::endl;
+using std::get;
 using std::left;
+using std::make_tuple;
+using std::priority_queue;
+using std::tuple;
+using std::unordered_set;
+using std::vector;
 
 /** 
  * @class Compare
@@ -73,15 +73,19 @@ class FCFS{
      * 4th element: Completion time
      * 5th element: Turnaround time
      * 6th element: Waiting time
-    */
-    priority_queue<tuple<S, T, E, double, double, double>, vector<tuple<S, T, E, double, double, double>>, Compare<S, T, E>> schedule;
+     */
+    priority_queue<tuple<S, T, E, double, double, double>,
+                   vector<tuple<S, T, E, double, double, double>>,
+                   Compare<S, T, E>>
+        schedule;
 
     // Stores final status of all the processes after completing the execution.
     vector<tuple<S, T, E, double, double, double>> result; 
     
     // Stores process IDs. Used for confirming absence of a process while adding it.
     unordered_set<S> idList;
-    public:
+
+ public:
     /**
      * @brief adds the process to the ready queue if it isn't already there
      * @param ID: Process ID
@@ -97,7 +101,6 @@ class FCFS{
             schedule.push(t);
             idList.insert(id);
         }
-        
     }
 
     /**
@@ -115,11 +118,12 @@ class FCFS{
         // Variable to keep track of time elapsed so far
         double timeElapsed = 0;
 
-        while(!schedule.empty()){
+        while (!schedule.empty()) {
             tuple<S, T, E, double, double, double> cur = schedule.top();
-            
-            // If the current process arrived at time t2, the last process completed its execution at time t1, and t2 > t1.
-            if(get<1>(cur) > timeElapsed){
+
+            // If the next process arrived at time t2, the last process
+            // completed its execution at time t1, and t2 > t1.
+            if (get<1>(cur) > timeElapsed) {
                 timeElapsed += get<1>(cur) - timeElapsed;
             }
 
@@ -128,7 +132,7 @@ class FCFS{
             
             // Completion time of the current process will be same as time elapsed so far
             get<3>(cur) = timeElapsed;
-            
+
             // Turnaround time = Completion time - Arrival time
             get<4>(cur) = get<3>(cur) - get<1>(cur);
 
@@ -165,8 +169,6 @@ class FCFS{
                  << std::setw(17) << left << get<5>(result[i]) << endl;
         }
     }
-    
-
 };
 
 /**
@@ -174,17 +176,17 @@ class FCFS{
  * @returns 0 on exit
 */
 int main(){
-    FCFS<unsigned int ,unsigned int, unsigned int> readyQueue;
+    FCFS<uint32_t ,uint32_t, uint32_t> readyQueue;
 
-    //Sample test case
+    // Sample test case
     int n = 3;
-    vector<tuple<unsigned int, unsigned int, unsigned int>> input = {
+    vector<tuple<uint32_t, uint32_t, uint32_t>> input = {
         make_tuple(1, 0, 30),
         make_tuple(2, 0, 5),
         make_tuple(3, 0, 5)
     };
 
-    for(unsigned int i{}; i < n; i++){
+    for(uint32_t i{}; i < n; i++){
         readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]), get<2>(input[i]));
     }
 

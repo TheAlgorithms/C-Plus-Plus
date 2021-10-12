@@ -29,6 +29,9 @@
   * [Vigenere Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/vigenere_cipher.cpp)
   * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
+## Cpu Scheduling Algorithms
+  * [Fcfs Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/cpu_scheduling_algorithms/fcfs_scheduling.cpp)
+
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
@@ -267,6 +270,7 @@
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/binomial_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/poisson_dist.cpp)
+  * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/windowed_median.cpp)
 
 ## Range Queries
   * [Fenwick Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/fenwick_tree.cpp)
