@@ -36,12 +36,14 @@ void show() {
 int main() {
     int ch, x;
     do {
+        std::cout << "\n0. Exit or Ctrl+C";
         std::cout << "\n1. Push";
         std::cout << "\n2. Pop";
         std::cout << "\n3. Print";
-        std::cout << "\nEnter Your Choice : ";
+        std::cout << "\nEnter Your Choice: ";
         std::cin >> ch;
         switch(ch){
+        case 0: break;
         case 1: std::cout << "\nInsert : ";
                 std::cin >> x;
                 push(x);
@@ -50,6 +52,7 @@ int main() {
                 break;
         case 3: show();
                 break;
+        default: std::cout << "Invalid option!\n"; break;
         }
     } while (ch != 0);
 
