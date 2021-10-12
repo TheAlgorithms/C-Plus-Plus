@@ -5,7 +5,7 @@ using std::cin;
 using std::cout;
 
 int main() {
-    int n = 0, temp = 0, rem = 0, count = 0, sum=0;
+    int n = 0, temp = 0, rem = 0, count = 0, sum = 0;
     cout << "Enter a number: ";
     cin >> n;
     
