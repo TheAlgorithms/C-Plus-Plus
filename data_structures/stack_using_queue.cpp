@@ -35,7 +35,7 @@ namespace data_structures {
 
         /**
          * @brief Inserts an element to the top of the stack.
-         * @param val is the element that will be inserted into the stack
+         * @param val the element that will be inserted into the stack
          * @returns void
          */
         void push(int val)
