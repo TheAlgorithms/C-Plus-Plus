@@ -36,7 +36,7 @@ int main() {
     if (sum == n) {
         cout << n << " is an armstrong number";
     }
-    else
+    else {
         cout << n << " is not an armstrong number";
     }
     
