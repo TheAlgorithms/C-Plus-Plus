@@ -7,8 +7,8 @@
  * References used: [StudyTonight](https://www.studytonight.com/data-structures/stack-using-queue),
  * @author [tushar2407](https://github.com/tushar2407)
  */
-#include<iostream> // for IO operations
-#include <queue> // for queue data structure
+#include <iostream> /// for IO operations
+#include <queue> /// for queue data structure
 
 /**
  * @namespace data_strcutres
@@ -22,7 +22,7 @@ namespace data_structures {
     {
         std::queue<int64_t> main_q; ///< stores the current state of the stack
         std::queue<int64_t> auxiliary_q; ///< used to carry out intermediate operations to implement stack
-        int current_size = 0; ///< stores the current size of the stack
+        uint32_t current_size = 0; ///< stores the current size of the stack
         
         /**
          * Returns the top most element of the stack
@@ -34,8 +34,8 @@ namespace data_structures {
         }
 
         /**
-         * Inserts an element to the top of the stack.
-         * @param val is the element which will be inserted into the stack
+         * @brief Inserts an element to the top of the stack.
+         * @param val is the element that will be inserted into the stack
          */
         void push(int val)
         {
@@ -50,7 +50,7 @@ namespace data_structures {
         }
         
         /**
-         * Removes the topmost element from the stack
+         * @brief Removes the topmost element from the stack
          */
         void pop()
         {
@@ -61,7 +61,7 @@ namespace data_structures {
         }
 
         /**
-         * Returns the current size of the stack.
+         * @brief Utility function to return the current size of the stack
          * @return current size of stack
          */
         int size()
