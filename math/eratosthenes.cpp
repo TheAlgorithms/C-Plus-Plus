@@ -1,10 +1,25 @@
-#include <iostream>
-#include <vector>
-#include <chrono>
-#include <string>
+/**
+ * @file
+ * @brief The Sieve of Eratosthenes
+ * @details
+ * [Wikipedia](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+ * Pass "print" as a command line arg to see the generated list of primes
+ * @author [Keval Kapdee](https://github.com/thechubbypanda)
+ */
 
+#include <iostream> // For IO
+#include <vector> // For array-like storage
+#include <chrono> // For timing the sieve
+#include <string> // For string handling
+
+/**
+ * @brief Main function
+ * @param argc commandline argument count
+ * @param argv commandline array of arguments
+ * @returns 0 on exit
+ */
 int main(int argc, char *argv[]) {
-	auto end = 10000;
+    auto end = 10000;
 	auto primes = std::vector<bool>(end, true);
 
 	auto start = std::chrono::high_resolution_clock::now();
