@@ -41,14 +41,6 @@ bool pythagoras_calculation(double h,double p,double b){
  * @brief Self-test implementations
  * @returns void
  */
-/**
- * @brief Self-test implementations
- * @returns void
- */
-/**
- * @brief Self-test implementations
- * @returns void
- */
 static void test(){
     /*tests with a variety of numbers if the number given satisfies the pythagoras theorem  */
     assert(pythagoras_calculation(5,4,3) == true);
