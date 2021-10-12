@@ -14,7 +14,8 @@
  * 
  * if the square of h is equal to the square of p and b combined the function returns true
  * else the function returns false
- *  
+ *
+ * @author [bubbl337](https://github.com/bubbl337)
  */
 
 #include<cassert>
@@ -36,15 +37,18 @@ bool pythagoras_calculation(double h,double p,double b){
     else{return false;}
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test(){
     /*tests with a variety of numbers if the number given satisfies the pythagoras theorem  */
-    assert(pythagoras_calculation(5,4,3) == true);    //first test
-
-    assert(pythagoras_calculation(12,5,6) == false);   //second test
-
-    assert(pythagoras_calculation(13,12,5) == true);    //third test
-
-    assert(pythagoras_calculation(25,20,15) == true);    //final test
+    assert(pythagoras_calculation(5,4,3) == true);
+    assert(pythagoras_calculation(12,5,6) == false);
+    assert(pythagoras_calculation(13,12,5) == true);
+    assert(pythagoras_calculation(25,20,15) == true);
+    
+    std::cout << "All tests have successfully passed!\n";
 
 }
 
@@ -55,7 +59,6 @@ static void test(){
  * @returns 0 on exit   
  */
 int main(int argc, char *argv[]){
-    test();
-    std::cout<<"success\n";
+    test();  // run self-test implementations
     return 0;    
 }
