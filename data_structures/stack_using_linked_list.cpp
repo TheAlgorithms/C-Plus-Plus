@@ -41,14 +41,15 @@ int main() {
         std::cout << "\n3. Print";
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
-        if (ch == 1) {
-            std::cout << "\nInsert : ";
-            std::cin >> x;
-            push(x);
-        } else if (ch == 2) {
-            pop();
-        } else if (ch == 3) {
-            show();
+        switch(ch){
+        case 1: std::cout << "\nInsert : ";
+                std::cin >> x;
+                push(x);
+                break;
+        case 2: pop();
+                break;
+        case 3: show();
+                break;
         }
     } while (ch != 0);
 
