@@ -1,22 +1,27 @@
 /**
- * @file stack_using_queue.cpp
  * @brief Stack Data Structure Using the Queue Data Structure
  * @details
  * Using 2 Queues inside the Stack class, we can easily implement Stack
  * data structure with heavy computation in push function.
+ * 
+ * References used: [StudyTonight](https://www.studytonight.com/data-structures/stack-using-queue),
  * @author [tushar2407](https://github.com/tushar2407)
  */
-#include<iostream>
-#include <queue>
-// using namespace std;
-namespace{
+#include<iostream> // for IO operations
+#include <queue> // for queue data structure
+
+/**
+ * @namespace data_strcutres
+ * @brief Data structures algorithms
+ */
+namespace data_structures {
     /**
-     * Stack Class implementation for basic methods of Stack Data Structure.  
+     * @brief Stack Class implementation for basic methods of Stack Data Structure.  
      */
     struct Stack
     {
-        std::queue<int> main_q; ///< stores the current state of the stack
-        std::queue<int> auxiliary_q; ///< used to carry out intermediate operations to implement stack
+        std::queue<int64_t> main_q; ///< stores the current state of the stack
+        std::queue<int64_t> auxiliary_q; ///< used to carry out intermediate operations to implement stack
         int current_size = 0; ///< stores the current size of the stack
         
         /**
@@ -64,10 +69,10 @@ namespace{
             return current_size;
         }
     };
-}
+} // namespace data_structures
 
 /**
- * Main function:
+ * @brief Main function
  * Creates a stack and pushed some value into it.
  * Through a series of push and pop functions on stack,
  * it demostrates the functionality of the custom stack
@@ -77,23 +82,23 @@ namespace{
 int main()
 {
 
-    Stack s;
+    data_structures::Stack s;
     s.push(1);
     s.push(2);
     s.push(3);
   
-    std::cout << "current size: " << s.size() << "\n";
-    std::cout << s.top() << "\n";
+    std::cout<<"current size: "<<s.size()<<"\n";
+    std::cout<<s.top()<<"\n";
     s.pop();
-    std::cout << s.top() << "\n";
+    std::cout<<s.top()<<"\n";
     s.pop();
-    std::cout << s.top() << "\n";
+    std::cout<<s.top()<<"\n";
     s.push(5);
     std::cout<<s.top()<<"\n";
     s.pop();
     std::cout<<s.top()<<"\n";
-  
-    std::cout << "current size: " << s.size() << "\n";
+
+    std::cout<<"current size: "<<s.size()<<"\n";
 
     return 0;
 
