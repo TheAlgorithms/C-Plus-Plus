@@ -28,7 +28,7 @@
  * @param h double
  * @param p double
  * @param b double
- * @returns bool
+ * @returns bool whether the numbers are in accordance to the Pythagorean theorem
  */
 bool pythagoras_calculation(double h,double p,double b){
     if (pow(h,2) == pow(p,2)+pow(b,2)){
