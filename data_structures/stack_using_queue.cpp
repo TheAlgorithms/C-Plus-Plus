@@ -4,11 +4,11 @@
  * Using 2 Queues inside the Stack class, we can easily implement Stack
  * data structure with heavy computation in push function.
  * 
- * References used: [StudyTonight](https://www.studytonight.com/data-structures/stack-using-queue),
+ * References used: [StudyTonight](https://www.studytonight.com/data-structures/stack-using-queue)
  * @author [tushar2407](https://github.com/tushar2407)
  */
 #include <iostream> /// for IO operations
-#include <queue> /// for queue data structure
+#include <queue>   /// for queue data structure
 
 /**
  * @namespace data_strcutres
@@ -26,7 +26,7 @@ namespace data_structures {
         
         /**
          * Returns the top most element of the stack
-         * @return top element of the queue
+         * @returns top element of the queue
          */
         int top()
         {
@@ -36,6 +36,7 @@ namespace data_structures {
         /**
          * @brief Inserts an element to the top of the stack.
          * @param val is the element that will be inserted into the stack
+         * @returns void
          */
         void push(int val)
         {
@@ -51,6 +52,7 @@ namespace data_structures {
         
         /**
          * @brief Removes the topmost element from the stack
+         * @returns void
          */
         void pop()
         {
@@ -62,7 +64,7 @@ namespace data_structures {
 
         /**
          * @brief Utility function to return the current size of the stack
-         * @return current size of stack
+         * @returns current size of stack
          */
         int size()
         {
@@ -101,5 +103,4 @@ int main()
     std::cout<<"current size: "<<s.size()<<"\n";
 
     return 0;
-
 }
