@@ -130,7 +130,7 @@ class FCFS{
     /**
      * @brief Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algorithm.
      * 
-     * @description FCFS is a non-preemptive algorithm in which the process which arrives first gets executed first. If two or 
+     * @details FCFS is a non-preemptive algorithm in which the process which arrives first gets executed first. If two or 
      * more processes arrive together then the process with smaller process ID runs first (each process has a unique proces ID).
      * 
      * I used a min priority queue of tuples to accomplish this task. The processes are ordered by their arrival times. If arrival
@@ -196,9 +196,16 @@ class FCFS{
 
 };
 
+/**
+ * @brief function to be used for testing purposes. This function guarantees the correct solution for FCFS scheduling algorithm.
+ * @param input the input data
+ * @details Sorts the input vector according to arrival time. Processes whose arrival times are same get sorted according to process ID
+ * For each process, completion time, turnaround time and completion time are calculated, inserted in a tuple, which is added to the vector result.
+ * @returns a vector of tuples consisting of process ID, arrival time, burst time, completion time, turnaround time and waiting time for each process.
+*/ 
 template<typename S, typename T, typename E>
-vector<tuple<S, T, E, double, double, double>> get_final_status(vector<tuple<uint32_t, uint32_t, uint32_t>>& input){
-    sort(input.begin(), input.end(), sortcol<S, T, E>);
+vector<tuple<S, T, E, double, double, double>> get_final_status(vector<tuple<uint32_t, uint32_t, uint32_t>> input){
+    sort(input.begin(), input.end(), sortcol<uint32_t ,uint32_t, uint32_t>);
     vector<tuple<S, T, E, double, double, double>> result(input.size());
     double timeElapsed = 0;
     for(size_t i{}; i < input.size(); i++){
@@ -226,16 +233,16 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(vector<tuple<uin
 
 void test(){
     for(int i{}; i < 1000; i++){
-        srand(time(0));
+        srand(time(nullptr));
         int n = 1 + rand()%1000;
         FCFS<uint32_t ,uint32_t, uint32_t> readyQueue;
         vector<tuple<uint32_t, uint32_t, uint32_t>> input(n);
 
         for(int i{}; i < n; i++){
             get<0>(input[i]) = i;
-            srand(time(0));
+            srand(time(nullptr));
             get<1>(input[i]) = 1 + rand()%10000;
-            srand(time(0));
+            srand(time(nullptr));
             get<2>(input[i]) = 1 + rand()%10000;
         }
 
