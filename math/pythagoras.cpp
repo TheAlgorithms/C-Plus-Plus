@@ -1,6 +1,8 @@
 /**
  * @file
- * @brief a program to check if the given number satisfies the pythagoras theorem(h^2 = p^2 + b^2)
+ * @brief a program to check if the given number satisfies the pythagoras theorem which states that 
+ * “In a right-angled triangle, the square of the hypotenuse side is equal to the sum of squares of the other two sides“.
+ * mathematically, it can be written as (h^2 = p^2 + b^2) 
  * 
  * @details
  * more info on: https://en.wikipedia.org/wiki/Pythagorean_theorem
