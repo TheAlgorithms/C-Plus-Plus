@@ -6,10 +6,10 @@
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
-#include <iostream> // For IO
-#include <vector> // For array-like storage
-#include <chrono> // For timing the sieve
-#include <string> // For string handling
+#include <iostream>  /// For IO operations
+#include <vector>   /// For std::vector
+#include <chrono>  /// For timing the sieve
+#include <string>  /// For string handling
 
 /**
  * @brief Main function
