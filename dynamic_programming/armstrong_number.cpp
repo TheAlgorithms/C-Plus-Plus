@@ -14,7 +14,6 @@ int main() {
     /* First Count the number of digits
        in the given number */
     while(temp != 0) {
-        rem = temp%10;
         temp /= 10;
         count++;
     }
@@ -26,7 +25,7 @@ int main() {
     temp = n;
     while(temp!=0) {
         rem = temp%10;
-        sum += pow(rem,count);
+        sum += (int) pow(rem,count);
         temp/=10;
     }
     
