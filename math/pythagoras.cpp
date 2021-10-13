@@ -1,6 +1,5 @@
 /**
  * @file
- * 
  * @brief a program to check if the given number satisfies the pythagoras theorem(h^2 = p^2 + b^2)
  * 
  * @details
