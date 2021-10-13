@@ -2,11 +2,12 @@
  * @file
  * @brief The Sieve of Eratosthenes
  * @details
- * Store an array of booleans where a true value indicates that it's index is prime.
- * For all the values in the array starting from 2 which we know is prime, we
- * walk the array in multiples of the current outer value setting them to not prime.
- * If we remove all multiples of a value as we see it, we'll be left with just primes.
- * Pass "print" as a command line arg to see the generated list of primes
+ * Store an array of booleans where a true value indicates that it's index is
+ * prime. For all the values in the array starting from 2 which we know is
+ * prime, we walk the array in multiples of the current outer value setting them
+ * to not prime. If we remove all multiples of a value as we see it, we'll be
+ * left with just primes. Pass "print" as a command line arg to see the
+ * generated list of primes
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
@@ -50,8 +51,9 @@ int main(int argc, char *argv[]) {
     // Print the primes if we see that "print" was passed as an arg
     if (argc > 1 && argv[1] == std::string("print")) {
         for (int i = 0; i < primes.size(); i++) {
-            if (primes[i])
+            if (primes[i]) {
                 std::cout << i << std::endl;
+            }
         }
     }
 
