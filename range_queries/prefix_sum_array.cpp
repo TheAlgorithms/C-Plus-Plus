@@ -49,7 +49,7 @@ void build(std::vector<int> original_array) {
  * @param end end of the interval to sum
  * @returns sum of the range [beg, end]
  */
-int query(int64_t beg, int64_t end) { return PSA[end] - PSA[beg - 1]; }
+int64_t query(int64_t beg, int64_t end) { return PSA[end] - PSA[beg - 1]; }
 
 }  // namespace prefix_sum_array
 }  // namespace range_queries
