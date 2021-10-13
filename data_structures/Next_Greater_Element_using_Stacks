@@ -1,6 +1,8 @@
 // A Stack based C++ program to find next
 // greater element for all array elements.
-#include <bits/stdc++.h>
+#include <iostream>
+#include<stack>
+#include<math.h>
 using namespace std;
  
 /* prints element and NGE pair for all
