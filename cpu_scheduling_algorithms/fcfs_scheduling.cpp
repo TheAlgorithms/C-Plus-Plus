@@ -9,15 +9,15 @@
  * @author Pratyush Vatsa(https://github.com/Pratyush219)
  */
 
-#include <algorithm>      // for sorting
-#include <cassert>        //for assert
-#include <cstdlib>        // random number generation
-#include <ctime>          // for time
-#include <iomanip>        // for formatting the output
-#include <iostream>       // for IO operations
-#include <queue>          // for priority_queue
-#include <unordered_set>  // for using unordered_set
-#include <vector>         // for using vector
+#include <algorithm>      /// for sorting
+#include <cassert>        /// for assert
+#include <cstdlib>        /// random number generation
+#include <ctime>          /// for time
+#include <iomanip>        /// for formatting the output
+#include <iostream>       /// for IO operations
+#include <queue>          /// for priority_queue
+#include <unordered_set>  /// for std::unordered_set
+#include <vector>         /// for using vector
 
 using std::cin;
 using std::cout;
@@ -224,7 +224,7 @@ class FCFS {
 template <typename S, typename T, typename E>
 vector<tuple<S, T, E, double, double, double>> get_final_status(
     vector<tuple<uint32_t, uint32_t, uint32_t>> input) {
-    sort(input.begin(), input.end(), sortcol<uint32_t, uint32_t, uint32_t>);
+    sort(input.begin(), input.end(), sortcol<S, T, E>);
     vector<tuple<S, T, E, double, double, double>> result(input.size());
     double timeElapsed = 0;
     for (size_t i{}; i < input.size(); i++) {
