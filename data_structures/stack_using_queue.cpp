@@ -89,18 +89,18 @@ int main()
     s.push(2);
     s.push(3);
   
-    std::cout<<"current size: "<<s.size()<<"\n";
-    std::cout<<s.top()<<"\n";
+    std::cout << "Current size: " << s.size() << "\n";
+    std::cout << s.top() << "\n";
     s.pop();
-    std::cout<<s.top()<<"\n";
+    std::cout << s.top() << "\n";
     s.pop();
-    std::cout<<s.top()<<"\n";
+    std::cout << s.top() << "\n";
     s.push(5);
-    std::cout<<s.top()<<"\n";
+    std::cout << s.top() << "\n";
     s.pop();
-    std::cout<<s.top()<<"\n";
+    std::cout << s.top() << "\n";
 
-    std::cout<<"current size: "<<s.size()<<"\n";
+    std::cout << "Current size: " << s.size() << "\n";
 
     return 0;
 }
