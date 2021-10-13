@@ -2,7 +2,6 @@
  * @file
  * @brief The Sieve of Eratosthenes
  * @details
- * [Wikipedia](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
  * Pass "print" as a command line arg to see the generated list of primes
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
