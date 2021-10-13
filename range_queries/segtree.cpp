@@ -1,7 +1,18 @@
+#include <cassert>   /// for assert
 #include <cmath>     /// for log2
 #include <iostream>  /// for io
 #include <vector>    /// for vector
 
+/**
+ * @brief   Constructs the initial segment tree
+ *
+ * @param   arr input to construct the tree out of
+ * @param   segtree the segment tree
+ * @param   low inclusive lowest index of arr to begin at
+ * @param   high inclusive highest index of arr to end at
+ * @param   pos index of segtree to fill (eg. root node)
+ * @returns void
+ */
 void ConsTree(const std::vector<int> &arr, std::vector<int> *segtree, int low,
               int high, int pos) {
     if (low == high) {
@@ -15,6 +26,18 @@ void ConsTree(const std::vector<int> &arr, std::vector<int> *segtree, int low,
     (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];
 }
 
+/**
+ * @brief   Returns the sum of all elements in a range
+ *
+ * @param   segtree the segment tree
+ * @param   lazy for lazy propagation
+ * @param   qlow lower index of the required query
+ * @param   qhigh higher index of the required query
+ * @param   low lower index of query for this function call
+ * @param   high higher index of query for this function call
+ * @param   pos index of segtree to consider (eg. root node)
+ * @return  int result of the range query for this function call
+ */
 int query(std::vector<int> *segtree, std::vector<int> *lazy, int qlow,
           int qhigh, int low, int high, int pos) {
     if (low > high || qlow > high || low > qhigh) {
@@ -41,6 +64,19 @@ int query(std::vector<int> *segtree, std::vector<int> *lazy, int qlow,
            query(segtree, lazy, qlow, qhigh, mid + 1, high, 2 * pos + 2);
 }
 
+/**
+ * @brief   Updates a range of the segment tree
+ *
+ * @param   segtree the segment tree
+ * @param   lazy for lazy propagation
+ * @param   start lower index of the required query
+ * @param   end higher index of the required query
+ * @param   delta integer to add to each element of the range
+ * @param   low lower index of query for this function call
+ * @param   high higher index of query for this function call
+ * @param   pos index of segtree to consider (eg. root node)
+ * @returns void
+ */
 void update(std::vector<int> *segtree, std::vector<int> *lazy, int start,
             int end, int delta, int low, int high, int pos) {
     if (low > high) {
@@ -79,7 +115,35 @@ void update(std::vector<int> *segtree, std::vector<int> *lazy, int start,
     (*segtree)[pos] = (*segtree)[2 * pos + 1] + (*segtree)[2 * pos + 2];
 }
 
+/**
+ * @brief   Self-test implementation
+ *
+ * @returns void
+ */
+static void test() {
+    int max = static_cast<int>(2 * pow(2, ceil(log2(7))) - 1);
+    assert(max == 15);
+
+    std::vector<int> arr{1, 2, 3, 4, 5, 6, 7}, lazy(max), segtree(max);
+    ConsTree(arr, &segtree, 0, 7 - 1, 0);
+
+    assert(query(&segtree, &lazy, 1, 5, 0, 7 - 1, 0) == 2 + 3 + 4 + 5 + 6);
+
+    update(&segtree, &lazy, 2, 4, 1, 0, 7 - 1, 0);
+    assert(query(&segtree, &lazy, 1, 5, 0, 7 - 1, 0) == 2 + 4 + 5 + 6 + 6);
+
+    update(&segtree, &lazy, 0, 6, -2, 0, 7 - 1, 0);
+    assert(query(&segtree, &lazy, 0, 4, 0, 7 - 1, 0) == -1 + 0 + 2 + 3 + 4);
+}
+
+/**
+ * @brief   Main function
+ *
+ * @return  0 on exit
+ */
 int main() {
+    test();
+
     std::cout << "Enter number of elements: ";
 
     int n = 0;
