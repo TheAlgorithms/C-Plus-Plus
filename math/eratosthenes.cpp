@@ -2,6 +2,10 @@
  * @file
  * @brief The Sieve of Eratosthenes
  * @details
+ * Store an array of booleans where a true value indicates that it's index is prime.
+ * For all the values in the array starting from 2 which we know is prime, we
+ * walk the array in multiples of the current outer value setting them to not prime.
+ * If we remove all multiples of a value as we see it, we'll be left with just primes.
  * Pass "print" as a command line arg to see the generated list of primes
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
