@@ -75,16 +75,11 @@ namespace data_structures {
 } // namespace data_structures
 
 /**
- * @brief Main function
- * Creates a stack and pushed some value into it.
- * Through a series of push and pop functions on stack,
- * it demostrates the functionality of the custom stack
- * declared above.
- * @returns 0 on exit
+ * @brief Self-test implementations
+ * @returns void
  */
-int main()
+void test()
 {
-
     data_structures::Stack s;
     s.push(1); /// insert an element into the stack
     s.push(2); /// insert an element into the stack
@@ -107,6 +102,18 @@ int main()
     assert(s.top()==1); /// topmost element in the stack should now be 1
     
     assert(s.size()==1); /// size should be 1
+}
 
+/**
+ * @brief Main function
+ * Creates a stack and pushed some value into it.
+ * Through a series of push and pop functions on stack,
+ * it demostrates the functionality of the custom stack
+ * declared above.
+ * @returns 0 on exit
+ */
+int main()
+{
+    test();
     return 0;
 }
