@@ -16,13 +16,14 @@
  * @author [Domenic Zingsheim](https://github.com/DerAndereDomenic)
  */
 
-#include <cmath>        /// for math functions
-#include <cstdint>      /// for fixed size data types
-#include <ctime>        /// for time to initialize rng
-#include <functional>   /// for function pointers
-#include <iostream>     /// for std::cout
-#include <random>       /// for random number generation
-#include <vector>       /// for std::vector
+#define _USE_MATH_DEFINES   /// for M_PI on windows
+#include <cmath>            /// for math functions
+#include <cstdint>          /// for fixed size data types
+#include <ctime>            /// for time to initialize rng
+#include <functional>       /// for function pointers
+#include <iostream>         /// for std::cout
+#include <random>           /// for random number generation
+#include <vector>           /// for std::vector
 
 /**
  * @namespace math
