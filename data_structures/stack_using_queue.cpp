@@ -9,6 +9,7 @@
  */
 #include <iostream> /// for IO operations
 #include <queue>   /// for queue data structure
+#include <cassert> /// for testing the program
 
 /**
  * @namespace data_strcutres
@@ -85,22 +86,27 @@ int main()
 {
 
     data_structures::Stack s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
+    s.push(1); /// insert an element into the stack
+    s.push(2); /// insert an element into the stack
+    s.push(3); /// insert an element into the stack
   
-    std::cout << "Current size: " << s.size() << "\n";
-    std::cout << s.top() << "\n";
-    s.pop();
-    std::cout << s.top() << "\n";
-    s.pop();
-    std::cout << s.top() << "\n";
-    s.push(5);
-    std::cout << s.top() << "\n";
-    s.pop();
-    std::cout << s.top() << "\n";
-
-    std::cout << "Current size: " << s.size() << "\n";
+    assert(s.size()==3); /// size should be 3
+    
+    assert(s.top()==3); /// topmost element in the stack should be 3
+    
+    s.pop(); /// remove the topmost element from the stack
+    assert(s.top()==2); /// topmost element in the stack should now be 2
+    
+    s.pop(); /// remove the topmost element from the stack
+    assert(s.top()==1);
+    
+    s.push(5); /// insert an element into the stack
+    assert(s.top()==5); /// topmost element in the stack should now be 5
+    
+    s.pop(); /// remove the topmost element from the stack
+    assert(s.top()==1); /// topmost element in the stack should now be 1
+    
+    assert(s.size()==1); /// size should be 1
 
     return 0;
 }
