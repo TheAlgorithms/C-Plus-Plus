@@ -1,4 +1,5 @@
 /**
+ * @file
  * @brief Implementation of FCFS CPU scheduling algorithm
  * @details
  * FCFS is a non-preemptive CPU scheduling algorithm in which whichever process
