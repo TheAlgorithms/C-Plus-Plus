@@ -8,15 +8,15 @@
  * @author [Pratyush Vatsa](https://github.com/Pratyush219)
  */
 
-#include <iostream>       /// for IO operations
-#include <queue>          /// for std::priority_queue
-#include <unordered_set>  /// for std::unordered_set
-#include <vector>         /// for std::vector
 #include <algorithm>      /// for sorting
 #include <cassert>        /// for assert
 #include <cstdlib>        /// random number generation
 #include <ctime>          /// for time
 #include <iomanip>        /// for formatting the output
+#include <iostream>       /// for IO operations
+#include <queue>          /// for std::priority_queue
+#include <unordered_set>  /// for std::unordered_set
+#include <vector>         /// for std::vector
 
 using std::cin;
 using std::cout;
@@ -271,7 +271,8 @@ void test() {
             readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]),
                                   get<2>(input[i]));
         }
-        vector<tuple<uint32_t, uint32_t, uint32_t, double, double, double>> res = get_final_status<uint32_t, uint32_t, uint32_t>(input);
+        vector<tuple<uint32_t, uint32_t, uint32_t, double, double, double>>
+            res = get_final_status<uint32_t, uint32_t, uint32_t>(input);
         assert(res == readyQueue.scheduleForFcfs());
         // readyQueue.printResult();
     }
