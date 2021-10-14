@@ -1,12 +1,11 @@
 /**
- * @file fcfs_scheduling.cpp
  * @brief Implementation of FCFS CPU scheduling algorithm
  * @details
  * FCFS is a non-preemptive CPU scheduling algorithm in which whichever process
  * arrives first, gets executed first. If two or more processes arrive
  * simultaneously, the process with smaller process ID gets executed first.
  * @link https://bit.ly/3ABNXOC
- * @author Pratyush Vatsa(https://github.com/Pratyush219)
+ * @author [Pratyush Vatsa](https://github.com/Pratyush219)
  */
 
 #include <iostream>       /// for IO operations
@@ -32,14 +31,14 @@ using std::tuple;
 using std::unordered_set;
 using std::vector;
 /**
- * @brief Comparator function for sorting of vector
+ * @brief Comparator function for sorting a vector
  * @tparam S Data type of Process ID
  * @tparam T Data type of Arrival time
  * @tparam E Data type of Burst time
- * @param t1 first tuple
- * @param t2 second tuple
- * @returns true if t1 and t2 are in CORRECT ORDER
- * @returns false if t1 and t2 are in INCORRECT ORDER
+ * @param t1 First tuple
+ * @param t2 Second tuple
+ * @returns true if t1 and t2 are in the CORRECT order
+ * @returns false if t1 and t2 are in the INCORRECT order
  */
 template <typename S, typename T, typename E>
 bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
@@ -62,8 +61,8 @@ template <typename S, typename T, typename E>
 class Compare {
  public:
     /**
-     * @param t1 first tuple
-     * @param t2 second tuple
+     * @param t1 First tuple
+     * @param t2 Second tuple
      * @brief A comparator function that checks whether to swap the two tuples
      * or not.
      * @link Refer to
@@ -119,10 +118,10 @@ class FCFS {
 
  public:
     /**
-     * @brief adds the process to the ready queue if it isn't already there
+     * @brief Adds the process to the ready queue if it isn't already there
      * @param ID Process ID
-     * @param arrival Arrival time of the process
-     * @param burst Burst time of the process
+     * @param Arrival Arrival time of the process
+     * @param Burst Burst time of the process
      * @returns void
      *
      */
@@ -211,14 +210,14 @@ class FCFS {
 };
 
 /**
- * @brief function to be used for testing purposes. This function guarantees the
+ * @brief Function to be used for testing purposes. This function guarantees the
  * correct solution for FCFS scheduling algorithm.
- * @param input the input data
+ * @param Input the input data
  * @details Sorts the input vector according to arrival time. Processes whose
  * arrival times are same get sorted according to process ID For each process,
  * completion time, turnaround time and completion time are calculated, inserted
  * in a tuple, which is added to the vector result.
- * @returns a vector of tuples consisting of process ID, arrival time, burst
+ * @returns A vector of tuples consisting of process ID, arrival time, burst
  * time, completion time, turnaround time and waiting time for each process.
  */
 template <typename S, typename T, typename E>
@@ -249,6 +248,10 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
     return result;
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+*/
 void test() {
     for (int i{}; i < 1000; i++) {
         srand(time(nullptr));
@@ -272,7 +275,7 @@ void test() {
         assert(res == readyQueue.scheduleForFcfs());
         // readyQueue.printResult();
     }
-    cout << "All tests passed" << endl;
+    cout << "All the tests have successfully passed!" << endl;
 }
 
 /**
@@ -280,6 +283,6 @@ void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test(); // Ru self-test implementations
     return 0;
 }
