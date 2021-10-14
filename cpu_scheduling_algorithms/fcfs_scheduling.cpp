@@ -251,7 +251,7 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
 /**
  * @brief Self-test implementations
  * @returns void
-*/
+ */
 void test() {
     for (int i{}; i < 1000; i++) {
         srand(time(nullptr));
@@ -284,6 +284,6 @@ void test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // Ru self-test implementations
+    test();  // Ru self-test implementations
     return 0;
 }
