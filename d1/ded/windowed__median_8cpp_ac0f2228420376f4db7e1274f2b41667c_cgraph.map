@@ -5,7 +5,7 @@
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="145,107,219,133"/>
 <area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="114,157,250,184"/>
 <area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="142,208,222,235"/>
-<area shape="rect" id="node7" href="$d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601" title="namespace probability" alt="" coords="160,259,204,285"/>
+<area shape="rect" id="node7" href="$d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601" title="Self&#45;test implementations." alt="" coords="160,259,204,285"/>
 <area shape="rect" id="node18" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="146,309,218,336"/>
 <area shape="rect" id="node8" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d" title="Gets the median of the values in the sliding window." alt="" coords="308,164,495,220"/>
 <area shape="rect" id="node9" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="308,244,495,300"/>

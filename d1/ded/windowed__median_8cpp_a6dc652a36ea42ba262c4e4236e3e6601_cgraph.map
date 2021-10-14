@@ -1,5 +1,5 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="namespace probability" alt="" coords="5,100,49,127"/>
+<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,100,49,127"/>
 <area shape="rect" id="node2" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a938cafbdf70dc01e86e9bb12d29ec65d" title="Gets the median of the values in the sliding window." alt="" coords="97,5,284,61"/>
 <area shape="rect" id="node3" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a61804988fcb1a6caf640f8291979aaa6" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="97,85,284,141"/>
 <area shape="rect" id="node5" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7" title="Insert a new value to the stream." alt="" coords="97,223,284,279"/>

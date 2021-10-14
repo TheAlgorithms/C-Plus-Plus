@@ -142,7 +142,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601" target="_top" xlink:title="namespace probability">
+<g id="a_node7"><a xlink:href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601" target="_top" xlink:title="Self&#45;test implementations.">
 <polygon fill="white" stroke="black" points="116,-228.5 116,-247.5 149,-247.5 149,-228.5 116,-228.5"/>
 <text text-anchor="middle" x="132.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">test</text>
 </a>

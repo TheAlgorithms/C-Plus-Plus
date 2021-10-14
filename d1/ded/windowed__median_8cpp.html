@@ -141,7 +141,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>probability::windowe
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6dc652a36ea42ba262c4e4236e3e6601"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;vals, int windowSize)</td></tr>
-<tr class="memdesc:a6dc652a36ea42ba262c4e4236e3e6601"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace probability  <a href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">More...</a><br /></td></tr>
+<tr class="memdesc:a6dc652a36ea42ba262c4e4236e3e6601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">More...</a><br /></td></tr>
 <tr class="separator:a6dc652a36ea42ba262c4e4236e3e6601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f2228420376f4db7e1274f2b41667c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ded/windowed__median_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main</a> (int argc, const char *argv[])</td></tr>
 <tr class="memdesc:ac0f2228420376f4db7e1274f2b41667c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="../../d1/ded/windowed__median_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">More...</a><br /></td></tr>
@@ -203,36 +203,45 @@ Algorithm</h3>
 <p >Window size in the range [3, 10]</p>
 <p >Random array values (positive/negative)</p>
 <p >Testing randomized test</p>
-<div class="fragment"><div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                                       {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment"></span></div>
+<div class="fragment"><div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                                       {<span class="comment"></span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">    /// A few fixed test cases</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"></span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);   <span class="comment">/// Array of sorted values; odd window size</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);   <span class="comment">/// Array of sorted values - decreasing; odd window size</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({9, 8, 7, 6, 5, 4, 5, 6}, 4);      <span class="comment">/// Even window size</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);   <span class="comment">/// Array with repeating values</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);   <span class="comment">/// Array with same values except one</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({4, 3, 3, -5, -5, 1, 3, 4, 5}, 5); <span class="comment">/// Array that includes repeating values including negatives</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment"></span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">    /// Array with large values - sum of few pairs exceeds MAX_INT. Window size is even - testing calculation of</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">    /// average median between two middle values</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"></span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>          1115438165, 1784484492, 74243042, 114807987}, 6);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="comment"></span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">    /// Random test cases</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment"></span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>)));</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> vals;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 8; i &lt; 100; i++) {</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n = 1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() / ((RAND_MAX + 5u) / 20);    <span class="comment">/// Array size in the range [5, 20]</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keyword">auto</span> windowSize = 1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() / ((RAND_MAX + 3u) / 10); <span class="comment">/// Window size in the range [3, 10]</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/clear.html">clear</a>();</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(n);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() - RAND_MAX);  <span class="comment">/// Random array values (positive/negative)</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>(vals, windowSize); <span class="comment">/// Testing randomized test</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"></span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({1, 2, 3, 4, 5, 6, 7, 8, 9},</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>         3);  <span class="comment">/// Array of sorted values; odd window size</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({9, 8, 7, 6, 5, 4, 3, 2, 1},</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>         3);  <span class="comment">/// Array of sorted values - decreasing; odd window size</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({9, 8, 7, 6, 5, 4, 5, 6}, 4);     <span class="comment">/// Even window size</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);  <span class="comment">/// Array with repeating values</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);  <span class="comment">/// Array with same values except one</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({4, 3, 3, -5, -5, 1, 3, 4, 5},</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>         5);  <span class="comment">/// Array that includes repeating values including negatives</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"></span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">    /// Array with large values - sum of few pairs exceeds MAX_INT. Window size</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">    /// is even - testing calculation of average median between two middle</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">    /// values</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment"></span>    <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>          1115438165, 1784484492, 74243042, 114807987},</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>         6);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"></span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">    /// Random test cases</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"></span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> vals;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 8; i &lt; 100; i++) {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n =</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() /</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    ((RAND_MAX + 5u) / 20);  <span class="comment">/// Array size in the range [5, 20]</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keyword">auto</span> windowSize =</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() / ((RAND_MAX + 3u) /</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                               10);  <span class="comment">/// Window size in the range [3, 10]</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/clear.html">clear</a>();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(n);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            vals.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>() - RAND_MAX);  <span class="comment">/// Random array values (positive/negative)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <a class="code hl_function" href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a>(vals, windowSize);  <span class="comment">/// Testing randomized test</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
 <div class="ttc" id="aclear_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/clear.html">std::vector::clear</a></div><div class="ttdeci">T clear(T... args)</div></div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
@@ -240,7 +249,7 @@ Algorithm</h3>
 <div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
 <div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-<div class="ttc" id="awindowed__median_8cpp_html_a6dc652a36ea42ba262c4e4236e3e6601"><div class="ttname"><a href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a></div><div class="ttdeci">static void test(const std::vector&lt; int &gt; &amp;vals, int windowSize)</div><div class="ttdoc">namespace probability</div><div class="ttdef"><b>Definition:</b> windowed_median.cpp:181</div></div>
+<div class="ttc" id="awindowed__median_8cpp_html_a6dc652a36ea42ba262c4e4236e3e6601"><div class="ttname"><a href="../../d1/ded/windowed__median_8cpp.html#a6dc652a36ea42ba262c4e4236e3e6601">test</a></div><div class="ttdeci">static void test(const std::vector&lt; int &gt; &amp;vals, int windowSize)</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> windowed_median.cpp:182</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -284,8 +293,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>namespace probability </p>
-<p >Self-test implementations </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Self-test implementations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vals</td><td>Stream of values </td></tr>
     <tr><td class="paramname">windowSize</td><td>Size of sliding window </td></tr>
@@ -293,15 +302,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <p >Comparing medians: efficient function vs. Naive one</p>
-<div class="fragment"><div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                                             {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_class" href="../../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html">probability::windowed_median::WindowedMedian</a> windowedMedian(windowSize);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> val : vals) {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        windowedMedian.insert(val);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"></span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">        /// Comparing medians: efficient function vs. Naive one</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"></span>        assert(windowedMedian.getMedian() == windowedMedian.getMedianNaive());</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
+<div class="fragment"><div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                                                             {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_class" href="../../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html">probability::windowed_median::WindowedMedian</a> windowedMedian(windowSize);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> val : vals) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        windowedMedian.insert(val);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">        /// Comparing medians: efficient function vs. Naive one</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"></span>        assert(windowedMedian.getMedian() == windowedMedian.getMedianNaive());</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
 <div class="ttc" id="aclassprobability_1_1windowed__median_1_1_windowed_median_html"><div class="ttname"><a href="../../df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html">probability::windowed_median::WindowedMedian</a></div><div class="ttdoc">A class to calculate the median of a leading sliding window at the back of a stream of integer values...</div><div class="ttdef"><b>Definition:</b> windowed_median.cpp:56</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

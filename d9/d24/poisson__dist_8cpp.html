@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 <tr class="separator:a63ffd347e75d5ed7a518cbcfbfeec71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a136b32707bdc7950fb9057b5fa1e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d24/poisson__dist_8cpp.html#a69a136b32707bdc7950fb9057b5fa1e1">poisson_x_successes</a> (double expected, double x)</td></tr>
 <tr class="separator:a69a136b32707bdc7950fb9057b5fa1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c9e74079278ca10e3b97a8d5391c9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d24/poisson__dist_8cpp.html#ad9c9e74079278ca10e3b97a8d5391c9a">poisson_range_successes</a> (double expected, double lower, double upper)</td></tr>
+<tr class="memitem:ad9c9e74079278ca10e3b97a8d5391c9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d24/poisson__dist_8cpp.html#ad9c9e74079278ca10e3b97a8d5391c9a">poisson_range_successes</a> (double expected, double <a class="el" href="../../dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9">lower</a>, double upper)</td></tr>
 <tr class="separator:ad9c9e74079278ca10e3b97a8d5391c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d24/poisson__dist_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d24/poisson__dist_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="608" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d24/poisson__dist_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="660" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -269,16 +269,17 @@ Here is the call graph for this function:</div>
 </p>
  <div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                                                            {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">double</span> <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a> = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = lower; i &lt;= upper; i++) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code hl_function" href="../../dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9">lower</a>; i &lt;= upper; i++) {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a> += <a class="code hl_function" href="../../d9/d24/poisson__dist_8cpp.html#a69a136b32707bdc7950fb9057b5fa1e1">poisson_x_successes</a>(expected, i);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../d4/ded/namespaceprobability.html">probability</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="anamespaceprobability_html"><div class="ttname"><a href="../../d4/ded/namespaceprobability.html">probability</a></div><div class="ttdoc">Probability algorithms.</div></div>
+<div class="ttc" id="atext__search_8cpp_html_a3f8975d227cd0e58f298b380c5dac0d9"><div class="ttname"><a href="../../dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9">lower</a></div><div class="ttdeci">std::string lower(std::string word)</div><div class="ttdoc">function to convert a C++ string to lower case</div><div class="ttdef"><b>Definition:</b> text_search.cpp:19</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d24/poisson__dist_8cpp_ad9c9e74079278ca10e3b97a8d5391c9a_cgraph.svg" width="510" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d24/poisson__dist_8cpp_ad9c9e74079278ca10e3b97a8d5391c9a_cgraph.svg" width="562" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
