@@ -6,7 +6,6 @@
  * mathematically, it can be written as (h^2 = p^2 + b^2)
  *
  * @details
- * more info on: https://en.wikipedia.org/wiki/Pythagorean_theorem
  *
  * the pythagoras theorem states that the area of the square whose side is the
  * hypotenuse is equal to the sum of the areas of the squares on the other two
