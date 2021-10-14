@@ -253,7 +253,7 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
  * @brief Self-test implementations
  * @returns void
  */
-void test() {
+static void test() {
     for (int i{}; i < 1000; i++) {
         srand(time(nullptr));
         int n = 1 + rand() % 1000;
