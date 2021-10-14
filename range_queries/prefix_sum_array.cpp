@@ -38,7 +38,7 @@ std::vector<int64_t> PSA(1, 0);
  * @param original_array original array of values
  * @returns void
  */
-void build(std::vector<int> original_array) {
+void build(std::vector<int64_t> original_array) {
     for (int i = 1; i <= static_cast<int>(original_array.size()); i++) {
         PSA.push_back(PSA[i - 1] + original_array[i]);
     }
@@ -59,8 +59,8 @@ int64_t query(int64_t beg, int64_t end) { return PSA[end] - PSA[beg - 1]; }
  * @returns void
  */
 static void test() {
-    std::vector<int> values{0,  123, 0,  2,  -2, 5,
-                            24, 0,   23, -1, -1};  // original array
+    std::vector<int64_t> values{0,  123, 0,  2,  -2, 5,
+                                24, 0,   23, -1, -1};  // original array
 
     range_queries::prefix_sum_array::build(values);
     // queries are of the type: sum of the range [a, b] = psa[b] - psa[a-1]
