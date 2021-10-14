@@ -119,9 +119,9 @@ class FCFS {
  public:
     /**
      * @brief Adds the process to the ready queue if it isn't already there
-     * @param ID Process ID
-     * @param Arrival Arrival time of the process
-     * @param Burst Burst time of the process
+     * @param id Process ID
+     * @param arrival Arrival time of the process
+     * @param burst Burst time of the process
      * @returns void
      *
      */
@@ -212,7 +212,7 @@ class FCFS {
 /**
  * @brief Function to be used for testing purposes. This function guarantees the
  * correct solution for FCFS scheduling algorithm.
- * @param Input the input data
+ * @param input the input data
  * @details Sorts the input vector according to arrival time. Processes whose
  * arrival times are same get sorted according to process ID For each process,
  * completion time, turnaround time and completion time are calculated, inserted
