@@ -26,18 +26,20 @@ std::string rot13_encode(std::string s) {
     // Encode only A~Z, a~z.
     int tmp = 0;
     for (char& i : s) {
-        if (i >= 'A' && i <= 'Z') {
-            tmp = i - 'A';
+        if (i >= 65 && i <= 90) {
+            // 65 is A, 90 is Z
+            tmp = i - 65;
             // Shift by 13 characters
             tmp += 13;
             tmp %= 26;
-            i = 'A' + tmp;
-        } else if (i >= 'a' && i <= 'z') {
-            tmp = i - 'a';
+            i = 65 + tmp;
+        } else if (i >= 97 && i <= 122) {
+            // 97 is a, 122 is z
+            tmp = i - 97;
             // Shift by 13 characters
             tmp += 13;
             tmp %= 26;
-            i = 'a' + tmp;
+            i = 97 + tmp;
         }
     }
     return s;
@@ -47,24 +49,26 @@ std::string rot13_decode(std::string s) {
     // Decode only A~Z, a~z .
     int tmp = 0;
     for (char& i : s) {
-        if (i >= 'A' && i <= 'Z') {
-            tmp = i - 'A';
+        if (i >= 65 && i <= 90) {
+            // 65 is A, 90 is Z
+            tmp = i - 65;
             // Fixed so that the value does not become negative when "-13" is
             // set.
             tmp += 26;
             // Shift by 13 characters
             tmp -= 13;
             tmp %= 26;
-            i = 'A' + tmp;
-        } else if (i >= 'a' && i <= 'z') {
-            tmp = i - 'a';
+            i = 65 + tmp;
+        } else if (i >= 97 && i <= 122) {
+            // 97 is a, 122 is z
+            tmp = i - 97;
             // Fixed so that the value does not become negative when "-13" is
             // set.
             tmp += 26;
             // Shift by 13 characters
             tmp -= 13;
             tmp %= 26;
-            i = 'a' + tmp;
+            i = 97 + tmp;
         }
     }
     return s;
