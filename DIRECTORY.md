@@ -269,6 +269,7 @@
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/bayes_theorem.cpp)
   * [Binomial Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/binomial_dist.cpp)
+  * [Geometric Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/geometric_dist.cpp)
   * [Poisson Dist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/poisson_dist.cpp)
   * [Windowed Median](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/windowed_median.cpp)
 
