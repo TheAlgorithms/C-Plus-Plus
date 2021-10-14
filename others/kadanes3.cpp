@@ -50,7 +50,7 @@ static void test() {
     std::array<int64_t, 5> arr1 = {-1, -2, -4, -6, 7};
     assert(max_subarray_sum(arr, 4) == 10);
     assert(max_subarray_sum(arr1, 5) == 7);
-    std::cout << "all test cases passed!";
+    std::cout << "All test cases have passed!\n";
 }
 
 /**
