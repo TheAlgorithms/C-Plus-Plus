@@ -21,9 +21,9 @@ namespace data_structures {
      */
     struct Stack
     {
-        std::queue<int64_t> main_q; ///< stores the current state of the stack
-        std::queue<int64_t> auxiliary_q; ///< used to carry out intermediate operations to implement stack
-        uint32_t current_size = 0; ///< stores the current size of the stack
+        std::queue<int64_t> main_q;         ///< stores the current state of the stack
+        std::queue<int64_t> auxiliary_q;    ///< used to carry out intermediate operations to implement stack
+        uint32_t current_size = 0;          ///< stores the current size of the stack
         
         /**
          * Returns the top most element of the stack
@@ -72,7 +72,7 @@ namespace data_structures {
             return current_size;
         }
     };
-} // namespace data_structures
+}  // namespace data_structures
 
 /**
  * @brief Self-test implementations
@@ -114,6 +114,6 @@ static void test()
  */
 int main()
 {
-    test(); /// run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
