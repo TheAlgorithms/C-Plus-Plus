@@ -1,8 +1,17 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <map>
 #define mod 1000000007
 #define ll long long
 using namespace std;
 
+/**
+ * The following code makes use of Map STL.
+ * Following features of map are depicted in the below code:
+ * (a) Insertion in a map
+ * (b) Finding an entry in a map
+ * (c) Removing elements from a map
+ * (d) Iterating over a map
+ */
 int main() 
 {
     ios_base::sync_with_stdio(false);
@@ -30,7 +39,8 @@ int main()
     M.erase("Paris");
 
     //Iterate over map
-    for(auto it=M.begin();it!=M.end();it++)
+    for(auto it=M.begin();it!=M.end();it++) {
         cout<<it->first<<", "<<it->second<<endl;
+    }
 
 }
