@@ -1,8 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 #define mod 1000000007
 #define ll long long
 using namespace std;
 
+/**
+ * This code is a basic implementation for use of vector STL in C++.
+ * The below code includes:
+ * (a) Creation of vectors
+ * (b) Traversing vectors
+ * (c) Sorting in vecotrs
+ */
 int main() 
 {
     ios_base::sync_with_stdio(false);
@@ -25,12 +33,14 @@ int main()
     sort(arr.begin(),arr.end());
 
     //iterating over vector, way #1:
-    for(int i=0;i<arr.size();i++)
+    for(int i=0;i<arr.size();i++) {
         cout<<arr[i]<<" ";
+    }
     cout<<endl;
 
     //iterating over vector, way #2:
-    for(auto it=arr.begin();it!=arr.end();it++)
+    for(auto it=arr.begin();it!=arr.end();it++) {
         cout<<*it<<" ";
+    }
     cout<<endl;
 }
