@@ -18,14 +18,13 @@ int main()
     M["New York"]=2;
 
     //Find an entry in a map #1
-    if(M.count("Paris")) {
-        std::cout<<"Paris present in map"<<std::endl;
-    }
+    assert(M.count("Paris"));
 
     //Find an entry in a map #2
     auto it=M.find("Paris");
     if(it!=M.end()) {
-        std::cout<<"Paris present in map with value: "<<it->second<<std::endl;
+        assert("Paris"==it->first);
+        assert(1==it->second);
     }
 
     //Remove from map
