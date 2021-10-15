@@ -105,8 +105,8 @@ double integral_monte_carlo(const double& start_point, const Function& function,
     return integral / static_cast<double>(samples.size());
 }
 
-} //namespace monte_carlo
-} //namespace math
+}  // namespace monte_carlo
+}  // namespace math
 
 /**
  * @brief Self-test implementations
@@ -191,6 +191,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
