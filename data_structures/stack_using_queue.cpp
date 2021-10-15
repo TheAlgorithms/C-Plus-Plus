@@ -78,7 +78,7 @@ namespace data_structures {
  * @brief Self-test implementations
  * @returns void
  */
-void test()
+static void test()
 {
     data_structures::Stack s;
     s.push(1); /// insert an element into the stack
@@ -114,6 +114,6 @@ void test()
  */
 int main()
 {
-    test();
+    test(); /// run self-test implementations
     return 0;
 }
