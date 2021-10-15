@@ -1,6 +1,5 @@
 #include <iostream>
 #include <map>
-using namespace std;
 
 /**
  * The following code makes use of Map STL.
@@ -12,7 +11,7 @@ using namespace std;
  */
 int main() 
 {
-    map<string,int> M;
+    std::map<std::string,int> M;
 
     //Insert in map
     M["Paris"]=1;
@@ -20,21 +19,21 @@ int main()
 
     //Find an entry in a map #1
     if(M.count("Paris")) {
-        cout<<"Paris present in map"<<endl;
+        std::cout<<"Paris present in map"<<std::endl;
     }
 
     //Find an entry in a map #2
     auto it=M.find("Paris");
     if(it!=M.end()) {
-        cout<<"Paris present in map with value: "<<it->second<<endl;
+        std::cout<<"Paris present in map with value: "<<it->second<<std::endl;
     }
 
     //Remove from map
     M.erase("Paris");
 
     //Iterate over map
-    for(auto it=M.begin();it!=M.end();it++) {
-        cout<<it->first<<", "<<it->second<<endl;
+    for(std::pair<std::string,int> item : M) {
+        std::cout<<item.first<<", "<<item.second<<std::endl;
     }
 
 }
