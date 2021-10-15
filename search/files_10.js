@@ -11,8 +11,9 @@ var searchData=
   ['postfix_5fevaluation_2ecpp_8',['postfix_evaluation.cpp',['../d7/d75/postfix__evaluation_8cpp.html',1,'']]],
   ['power_5ffor_5fhuge_5fnumbers_2ecpp_9',['power_for_huge_numbers.cpp',['../df/def/power__for__huge__numbers_8cpp.html',1,'']]],
   ['power_5fof_5ftwo_2ecpp_10',['power_of_two.cpp',['../d4/d38/power__of__two_8cpp.html',1,'']]],
-  ['primality_5ftest_2ecpp_11',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
-  ['prime_5ffactorization_2ecpp_12',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
-  ['prime_5fnumbers_2ecpp_13',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
-  ['primes_5fup_5fto_5fbillion_2ecpp_14',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]]
+  ['prefix_5fsum_5farray_2ecpp_11',['prefix_sum_array.cpp',['../d1/d9e/prefix__sum__array_8cpp.html',1,'']]],
+  ['primality_5ftest_2ecpp_12',['primality_test.cpp',['../da/d7b/primality__test_8cpp.html',1,'']]],
+  ['prime_5ffactorization_2ecpp_13',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
+  ['prime_5fnumbers_2ecpp_14',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
+  ['primes_5fup_5fto_5fbillion_2ecpp_15',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]]
 ];
