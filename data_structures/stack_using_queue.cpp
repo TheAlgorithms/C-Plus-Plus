@@ -78,6 +78,7 @@ namespace stack_using_queue {
             return current_size;
         }
     };
+}  // namespace stack_using_queue
 }  // namespace data_structures
 
 /**
