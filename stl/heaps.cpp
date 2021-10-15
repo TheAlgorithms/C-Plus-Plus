@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <cassert>
 
 /**
  * The following code deals with STL Maxheap usage.
