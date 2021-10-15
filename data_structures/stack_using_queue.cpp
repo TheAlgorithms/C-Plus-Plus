@@ -9,7 +9,7 @@
  */
 #include <iostream> /// for IO operations
 #include <queue>   /// for queue data structure
-#include <cassert> /// for testing the program
+#include <cassert> /// for assert
 
 /**
  * @namespace data_strcutres
