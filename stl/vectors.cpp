@@ -17,10 +17,11 @@ int main()
     arr.push_back(2);
 
     //access vector elements
-    std::cout<<arr[0]<<" "<<arr[1]<<std::endl;
+    assert(1==arr[0]);
+    assert(2==arr[1]);
 
     //check size of vector
-    std::cout<<arr.size()<<std::endl;
+    assert(2==arr.size());
 
     //sort a vector
     sort(arr.begin(),arr.end());
@@ -29,5 +30,4 @@ int main()
     for(int i : arr) {
         std::cout<<i<<" ";
     }
-    std::cout<<std::endl;
 }
