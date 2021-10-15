@@ -1,15 +1,16 @@
-#include <bits/stdc++.h>
-#define mod 1000000007
-#define ll long long
-using namespace std;
+#include <iostream>
+#include <queue>
 
+/**
+ * The following code deals with STL Maxheap usage.
+ * The code depicts following:
+ * (a) Push in a heap.
+ * (b) Popping elements from heap.
+ * (c) Accessing the largest element in a heap.
+ */
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
-    priority_queue<int> maxHeap;
+    std::priority_queue<int> maxHeap;
 
     //Insert in a maxHeap
     maxHeap.push(1);
@@ -18,10 +19,9 @@ int main()
     maxHeap.push(5);
 
     //Accessing largest element in a maxHeap
-    cout<<maxHeap.top()<<endl;
+    assert(10==maxHeap.top());
 
     //Popping out elements from the maxHeap
     maxHeap.pop();
-    cout<<maxHeap.top()<<endl;
-
+    assert(5==maxHeap.top());
 }
