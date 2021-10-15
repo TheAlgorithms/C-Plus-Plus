@@ -16,6 +16,11 @@
  * @brief Data structures algorithms
  */
 namespace data_structures {
+/**
+ * @namespace stack_using_queue
+ * @brief Functions for the [Stack Using Queue](https://www.studytonight.com/data-structures/stack-using-queue) implementation
+ */
+namespace stack_using_queue {
     /**
      * @brief Stack Class implementation for basic methods of Stack Data Structure.  
      */
