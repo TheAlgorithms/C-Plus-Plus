@@ -86,7 +86,7 @@ namespace stack_using_queue {
  */
 static void test()
 {
-    data_structures::Stack s;
+    data_structures::stack_using_queue::Stack s;
     s.push(1); /// insert an element into the stack
     s.push(2); /// insert an element into the stack
     s.push(3); /// insert an element into the stack
