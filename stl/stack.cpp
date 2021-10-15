@@ -1,22 +1,28 @@
-#include <bits/stdc++.h>
-#define mod 1000000007
-#define ll long long
-using namespace std;
+#include <iostream>
+#include <stack>
 
+/**
+ * The following code depicts the usage of C++ STL Stack.
+ * The code covers following:
+ * (a) Pushing elements to STL Stack.
+ * (b) Popping elements from STL Stack.
+ * (c) Checking top element in the STL Stack.
+ */
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    std::stack<int> S;
 
-    stack<int> S;
     //Insert in stack
-    for(int i=1;i<10;i++)
+    for(int i=1;i<10;i++) {
         S.push(i);
+    }
 
-    //Pop from stack
+    //Traversing from stack
     while(!S.empty()){
-        cout<<S.top()<<" ";
+        // Picking top element from the stack
+        std::cout<<S.top()<<" ";
+
+        //Removing elements from the top of stack
         S.pop();
     }
 }
