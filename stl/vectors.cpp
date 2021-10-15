@@ -25,15 +25,9 @@ int main()
     //sort a vector
     sort(arr.begin(),arr.end());
 
-    //iterating over vector, way #1:
-    for(int i=0;i<arr.size();i++) {
-        std::cout<<arr[i]<<" ";
-    }
-    std::cout<<std::endl;
-
-    //iterating over vector, way #2:
-    for(int item : arr) {
-        std::cout<<item<<" ";
+    //iterating over vector
+    for(int i : arr) {
+        std::cout<<i<<" ";
     }
     std::cout<<std::endl;
 }
