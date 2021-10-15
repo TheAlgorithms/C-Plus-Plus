@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <cassert>
 
 /**
  * The following code depicts the usage of C++ STL Stack.
