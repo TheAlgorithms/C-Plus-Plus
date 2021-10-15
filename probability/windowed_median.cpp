@@ -4,8 +4,8 @@
  * data stream
  *
  * @details
- * Given a stream of integers, the algorithm calculates the median of a fixed size
- * window at the back of the stream. The leading time complexity of this
+ * Given a stream of integers, the algorithm calculates the median of a fixed
+ * size window at the back of the stream. The leading time complexity of this
  * algorithm is O(log(N), and it is inspired by the known algorithm to [find
  * median from (infinite) data
  * stream](https://www.tutorialcup.com/interview/algorithm/find-median-from-data-stream.htm),
@@ -17,13 +17,13 @@
  * pushing and popping. Each new value is pushed to the window back, while a
  * value from the front of the window is popped. In addition, the algorithm
  * manages a multi-value binary search tree (BST), implemented by std::multiset.
- * For each new value that is inserted into the window, it is also inserted to the
- * BST. When a value is popped from the window, it is also erased from the BST.
- * Both insertion and erasion to/from the BST are O(logN) in time, with N the
- * size of the window. Finally, the algorithm keeps a pointer to the root of the
- * BST, and updates its position whenever values are inserted or erased to/from
- * BST. The root of the tree is the median! Hence, median retrieval is always
- * O(1)
+ * For each new value that is inserted into the window, it is also inserted to
+ * the BST. When a value is popped from the window, it is also erased from the
+ * BST. Both insertion and erasion to/from the BST are O(logN) in time, with N
+ * the size of the window. Finally, the algorithm keeps a pointer to the root of
+ * the BST, and updates its position whenever values are inserted or erased
+ * to/from BST. The root of the tree is the median! Hence, median retrieval is
+ * always O(1)
  *
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
  * @author [Yaniv Hollander](https://github.com/YanivHollander)
@@ -32,8 +32,8 @@
 #include <cstdlib>  /// for std::rand - needed in testing
 #include <ctime>    /// for std::time - needed in testing
 #include <list>     /// for std::list - used to manage sliding window
-#include <set>      /// for std::multiset - used to manage multi-value sorted sliding window values
-#include <vector>   /// for std::vector - needed in testing
+#include <set>  /// for std::multiset - used to manage multi-value sorted sliding window values
+#include <vector>  /// for std::vector - needed in testing
 
 /**
  * @namespace probability
@@ -55,7 +55,7 @@ using size_type = Window::size_type;
  */
 class WindowedMedian {
     const size_type _windowSize;  ///< sliding window size
-    Window _window;               ///< a sliding window of values along the stream
+    Window _window;  ///< a sliding window of values along the stream
     std::multiset<int> _sortedValues;  ///< a DS to represent a balanced
                                        /// multi-value binary search tree (BST)
     std::multiset<int>::const_iterator
@@ -103,13 +103,14 @@ class WindowedMedian {
         }
 
         /// However, if the erased value is on the right branch or the median
-        /// itself, and the number of elements is odd, the new median will be the
-        /// left child of the current one
+        /// itself, and the number of elements is odd, the new median will be
+        /// the left child of the current one
         else if (value >= *_itMedian && sz % 2 != 0) {
             --_itMedian;  // O(1) - traversing one step to the left child
         }
 
-        /// Find the (first) position of the value we want to erase, and erase it
+        /// Find the (first) position of the value we want to erase, and erase
+        /// it
         const auto it = _sortedValues.find(value);  // O(logN)
         _sortedValues.erase(it);                    // O(logN)
     }
@@ -126,16 +127,16 @@ class WindowedMedian {
      * @param value New value to insert
      */
     void insert(int value) {
-        
         /// Push new value to the back of the sliding window - O(1)
         _window.push_back(value);
         insertToSorted(value);  // Insert value to the multi-value BST - O(logN)
-        if (_window.size() > _windowSize) {  /// If exceeding size of window, pop
-                                             /// from its left side
-            eraseFromSorted(_window.front());  /// Erase from the multi-value BST
-                                               /// the window left side value
-            _window
-                .pop_front();  /// Pop the left side value from the window - O(1)
+        if (_window.size() > _windowSize) {  /// If exceeding size of window,
+                                             /// pop from its left side
+            eraseFromSorted(
+                _window.front());  /// Erase from the multi-value BST
+                                   /// the window left side value
+            _window.pop_front();   /// Pop the left side value from the window -
+                                   /// O(1)
         }
     }
 
@@ -170,8 +171,8 @@ class WindowedMedian {
                0.5f * *next(window.begin(), window.size() / 2 - 1);  /// O(N)
     }
 };
-}  /// namespace windowed_median
-}  /// namespace probability
+}  // namespace windowed_median
+}  // namespace probability
 
 /**
  * @brief Self-test implementations
@@ -195,32 +196,41 @@ static void test(const std::vector<int> &vals, int windowSize) {
  * @returns 0 on exit
  */
 int main(int argc, const char *argv[]) {
-    
     /// A few fixed test cases
-    test({1, 2, 3, 4, 5, 6, 7, 8, 9}, 3);   /// Array of sorted values; odd window size
-    test({9, 8, 7, 6, 5, 4, 3, 2, 1}, 3);   /// Array of sorted values - decreasing; odd window size
-    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);      /// Even window size
-    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);   /// Array with repeating values
-    test({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);   /// Array with same values except one
-    test({4, 3, 3, -5, -5, 1, 3, 4, 5}, 5); /// Array that includes repeating values including negatives
-    
-    /// Array with large values - sum of few pairs exceeds MAX_INT. Window size is even - testing calculation of
-    /// average median between two middle values
+    test({1, 2, 3, 4, 5, 6, 7, 8, 9},
+         3);  /// Array of sorted values; odd window size
+    test({9, 8, 7, 6, 5, 4, 3, 2, 1},
+         3);  /// Array of sorted values - decreasing; odd window size
+    test({9, 8, 7, 6, 5, 4, 5, 6}, 4);     /// Even window size
+    test({3, 3, 3, 3, 3, 3, 3, 3, 3}, 3);  /// Array with repeating values
+    test({3, 3, 3, 3, 7, 3, 3, 3, 3}, 3);  /// Array with same values except one
+    test({4, 3, 3, -5, -5, 1, 3, 4, 5},
+         5);  /// Array that includes repeating values including negatives
+
+    /// Array with large values - sum of few pairs exceeds MAX_INT. Window size
+    /// is even - testing calculation of average median between two middle
+    /// values
     test({470211272, 101027544, 1457850878, 1458777923, 2007237709, 823564440,
-          1115438165, 1784484492, 74243042, 114807987}, 6);
-    
+          1115438165, 1784484492, 74243042, 114807987},
+         6);
+
     /// Random test cases
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
     std::vector<int> vals;
     for (int i = 8; i < 100; i++) {
-        const auto n = 1 + std::rand() / ((RAND_MAX + 5u) / 20);    /// Array size in the range [5, 20]
-        auto windowSize = 1 + std::rand() / ((RAND_MAX + 3u) / 10); /// Window size in the range [3, 10]
+        const auto n =
+            1 + std::rand() /
+                    ((RAND_MAX + 5u) / 20);  /// Array size in the range [5, 20]
+        auto windowSize =
+            1 + std::rand() / ((RAND_MAX + 3u) /
+                               10);  /// Window size in the range [3, 10]
         vals.clear();
         vals.reserve(n);
         for (int i = 0; i < n; i++) {
-            vals.push_back(rand() - RAND_MAX);  /// Random array values (positive/negative)
+            vals.push_back(
+                rand() - RAND_MAX);  /// Random array values (positive/negative)
         }
-        test(vals, windowSize); /// Testing randomized test
+        test(vals, windowSize);  /// Testing randomized test
     }
     return 0;
 }
