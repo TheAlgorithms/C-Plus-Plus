@@ -256,11 +256,11 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
 static void test() {
     for (int i{}; i < 1000; i++) {
         srand(time(nullptr));
-        int n = 1 + rand() % 1000;
+        uint32_t n = 1 + rand() % 1000;
         FCFS<uint32_t, uint32_t, uint32_t> readyQueue;
         vector<tuple<uint32_t, uint32_t, uint32_t>> input(n);
 
-        for (int i{}; i < n; i++) {
+        for (uint32_t i{}; i < n; i++) {
             get<0>(input[i]) = i;
             srand(time(nullptr));
             get<1>(input[i]) = 1 + rand() % 10000;
