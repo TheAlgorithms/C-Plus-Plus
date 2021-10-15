@@ -1,7 +1,5 @@
 #include <iostream>
 #include <map>
-#define mod 1000000007
-#define ll long long
 using namespace std;
 
 /**
@@ -14,10 +12,6 @@ using namespace std;
  */
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
     map<string,int> M;
 
     //Insert in map
