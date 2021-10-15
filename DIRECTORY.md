@@ -248,6 +248,7 @@
   * [Fast Integer Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_integer_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/iterative_tree_traversals.cpp)
+  * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/kadanes3.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
