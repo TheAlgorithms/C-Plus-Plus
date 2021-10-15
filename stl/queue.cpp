@@ -1,22 +1,28 @@
-#include <bits/stdc++.h>
-#define mod 1000000007
-#define ll long long
-using namespace std;
+#include <iostream>
+#include <queue>
 
+/**
+ * The following code depicts the usage of C++ STL Queue.
+ * The code covers following:
+ * (a) Pushing elements to STL Queue.
+ * (b) Popping elements from STL Queue.
+ * (c) Checking top element in the STL Queue.
+ */
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    std::queue<int> Q;
 
-    queue<int> Q;
-    //Insert in queue
-    for(int i=1;i<10;i++)
+    //Insert in stack
+    for(int i=1;i<10;i++) {
         Q.push(i);
+    }
 
-    //Pop from queue
+    //Traversing from Queue
     while(!Q.empty()){
-        cout<<Q.front()<<" ";
+        // Picking top element from the Queue
+        std::cout<<Q.front()<<" ";
+
+        //Removing elements from the top of Queue
         Q.pop();
     }
 }
