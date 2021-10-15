@@ -1,6 +1,17 @@
-#include <iostream>
-#include <queue>
-#include <cassert>
+/**
+ * @file
+ * @brief This code is a basic implementation for use of priority_queue STL in C++.
+ * @details
+ * The below code includes:
+ * (a) Push in a heap.
+ * (b) Popping elements from heap.
+ * (c) Accessing the largest element in a heap.
+ * @author abhishek vanjani(https://github.com/KillerAV)
+ */
+
+#include <iostream> /// For input output
+#include <queue> /// For usage of priority_queue
+#include <cassert> /// For asserts
 
 /**
  * The following code deals with STL Maxheap usage.
