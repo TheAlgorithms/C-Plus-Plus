@@ -57,8 +57,9 @@ namespace data_structures {
          */
         void pop()
         {
-            if(main_q.empty())
-                return ;
+            if(main_q.empty()) {
+                return;
+            }
             main_q.pop();
             current_size--;
         }
