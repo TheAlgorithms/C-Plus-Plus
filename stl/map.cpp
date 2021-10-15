@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <cassert>
 
 /**
  * The following code makes use of Map STL.
