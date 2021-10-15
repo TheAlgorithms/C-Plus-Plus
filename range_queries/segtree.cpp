@@ -1,5 +1,5 @@
 /**
- * @file    segtree.cpp
+ * @file
  * @brief   Implementation of [Segment Tree]
  *          (https://en.wikipedia.org/wiki/Segment_tree) data structure
  *
@@ -14,6 +14,9 @@
  * * Space Complexity : O(NlogN) \n
  * * Build Time Complexity : O(NlogN) \n
  * * Query Time Complexity : O(logN) \n
+ *
+ * @author  [Madhav Gaba](https://github.com/madhavgaba)
+ * @author  [Soham Roy](https://github.com/sohamroy19)
  */
 
 #include <cassert>   /// for assert
