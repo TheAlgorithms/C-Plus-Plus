@@ -24,22 +24,20 @@ namespace rot13 {
 
 std::string rot13_encode(std::string s) {
     // Encode only A~Z, a~z.
-    int tmp = 0;
+    char tmp = 0;
     for (char& i : s) {
-        if (i >= 65 && i <= 90) {
-            // 65 is A, 90 is Z
-            tmp = i - 65;
+        if (i >= 'A' && i <= 'Z') {
+            tmp = i - 'A';
             // Shift by 13 characters
-            tmp += 13;
-            tmp %= 26;
-            i = 65 + tmp;
-        } else if (i >= 97 && i <= 122) {
-            // 97 is a, 122 is z
-            tmp = i - 97;
+            tmp += char(13);
+            tmp %= char(26);
+            i = 'A' + tmp;
+        } else if (i >= 'a' && i <= 'z') {
+            tmp = i - 'a';
             // Shift by 13 characters
-            tmp += 13;
-            tmp %= 26;
-            i = 97 + tmp;
+            tmp += char(13);
+            tmp %= char(26);
+            i = 'a' + tmp;
         }
     }
     return s;
@@ -47,28 +45,26 @@ std::string rot13_encode(std::string s) {
 
 std::string rot13_decode(std::string s) {
     // Decode only A~Z, a~z .
-    int tmp = 0;
+    char tmp = 0;
     for (char& i : s) {
-        if (i >= 65 && i <= 90) {
-            // 65 is A, 90 is Z
-            tmp = i - 65;
+        if (i >= 'A' && i <= 'Z') {
+            tmp = i - 'A';
             // Fixed so that the value does not become negative when "-13" is
             // set.
-            tmp += 26;
+            tmp += char(26);
             // Shift by 13 characters
-            tmp -= 13;
-            tmp %= 26;
-            i = 65 + tmp;
-        } else if (i >= 97 && i <= 122) {
-            // 97 is a, 122 is z
-            tmp = i - 97;
+            tmp -= char(13);
+            tmp %= char(26);
+            i = 'A' + tmp;
+        } else if (i >= 'a' && i <= 'z') {
+            tmp = i - 'a';
             // Fixed so that the value does not become negative when "-13" is
             // set.
-            tmp += 26;
+            tmp += char(26);
             // Shift by 13 characters
-            tmp -= 13;
-            tmp %= 26;
-            i = 97 + tmp;
+            tmp -= char(13);
+            tmp %= char(26);
+            i = 'a' + tmp;
         }
     }
     return s;
