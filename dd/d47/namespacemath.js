@@ -13,6 +13,10 @@ var namespacemath =
       [ "mod_division", "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7", null ],
       [ "power", "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179", null ]
     ] ],
+    [ "monte_carlo", null, [
+      [ "generate_samples", "db/d40/integral__approximation2_8cpp.html#a71249ee535f16f8ed2e9cc8f0199a2cf", null ],
+      [ "integral_monte_carlo", "db/d40/integral__approximation2_8cpp.html#af7da9ba8932f1f48b9bbc2d80471af51", null ]
+    ] ],
     [ "n_bonacci", null, [
       [ "N_bonacci", "db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d", null ]
     ] ],
