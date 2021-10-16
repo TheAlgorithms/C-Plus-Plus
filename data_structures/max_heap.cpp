@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include <algorithm>
 #include <set>
 #include <math.h>
