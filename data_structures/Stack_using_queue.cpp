@@ -1,12 +1,36 @@
+/* 
+We are given a Queue data structure that supports standard operations like enqueue() and dequeue(). 
+We need to implement a Stack data structure using only instances of Queue and queue operations allowed on the instances.
+
+Program to implement a stack using two queue 
+
+A stack can be implemented using two queues. Let stack to be implemented be ‘s’ and queues used to implement be ‘q1’ and ‘q2’. 
+
+This method makes sure that newly entered element is always at the front of ‘q1’, so that pop operation just dequeues from ‘q1’. 
+‘q2’ is used to put every new element at front of ‘q1’.
+ 
+push(s, x) operation’s step are described below: 
+Enqueue x to q2
+One by one dequeue everything from q1 and enqueue to q2.
+Swap the names of q1 and q2
+pop(s) operation’s function are described below: 
+Dequeue an item from q1 and return it.
+Below is the implementation of the above approach: 
+
+
+*/
 /* Program to implement a stack using
 two queue */
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
+#include <queue>
+#include <stack>
+#include <vector>
 
-using namespace std;
 
 class Stack {
 	// Two inbuilt queues
-	queue<int> q1, q2;
+	std::queue<int> q1, q2;
 
 	// To maintain current number of
 	// elements
@@ -33,7 +57,7 @@ public:
 		}
 
 		// swap the names of two queues
-		queue<int> q = q1;
+		std::queue<int> q = q1;
 		q1 = q2;
 		q2 = q;
 	}
@@ -69,15 +93,13 @@ int main()
 	s.push(2);
 	s.push(3);
 
-	cout << "current size: " << s.size()
-		<< endl;
-	cout << s.top() << endl;
+	std::cout << "current size: " << s.size() << std::endl;
+	std::cout << s.top() << std::endl;
 	s.pop();
-	cout << s.top() << endl;
+	std::cout << s.top() << std::endl;
 	s.pop();
-	cout << s.top() << endl;
+	std::cout << s.top() << std::endl;
 
-	cout << "current size: " << s.size()
-		<< endl;
+	std::cout << "current size: " << s.size() << std::endl;
 	return 0;
 }
