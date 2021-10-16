@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <unordered_map>
 
@@ -55,7 +56,7 @@ class Trie {
         node->isEnd = true;
     }
 
-    bool search(string word) {
+    bool has(string word) {
         TrieNode *node = root;
 
         for (char c : word) {
@@ -85,3 +86,25 @@ class Trie {
 
     void erase(string word) { erase(word, 0, root); }
 };
+
+// example code
+
+int main() {
+    Trie trie;
+
+    trie.insert("hello");
+    trie.insert("hello");
+    trie.insert("hi");
+    trie.insert("teabag");
+    trie.insert("teacan");
+
+    cout << trie.has("tea") << endl;
+    cout << trie.startsWith("tea") << endl;
+    cout << trie.has("teabag") << endl;
+    cout << trie.has("teacan") << endl;
+    cout << trie.has("hi") << endl;
+    cout << trie.has("hey") << endl;
+    cout << trie.has("hello") << endl;
+
+    return 0;
+}
