@@ -2,10 +2,10 @@
 We are given a Queue data structure that supports standard operations like enqueue() and dequeue(). 
 We need to implement a Stack data structure using only instances of Queue and queue operations allowed on the instances.
 
-Program to implement a stack using two queue 
+Program to implement a stack using two queue.
 
 A stack can be implemented using two queues. Let stack to be implemented be ‘s’ and queues used to implement be ‘q1’ and ‘q2’. 
-
+method - By making push operation costly:
 This method makes sure that newly entered element is always at the front of ‘q1’, so that pop operation just dequeues from ‘q1’. 
 ‘q2’ is used to put every new element at front of ‘q1’.
  
