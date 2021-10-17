@@ -1,13 +1,21 @@
 /**
  * @file
  * @brief [Atbash cipher](https://en.wikipedia.org/wiki/Atbash) implementation
+ * @details The Atbash cipher is a subsitution cipher where the letters of the
+ * alphabet are in reverse. For example, A is replaced with Z, B is replaced
+ * with Y, etc.
+ *
+ * ### Algorithm
+ * The algorithm takes a string, and looks up the corresponding reversed letter
+ * for each letter in the word and replaces it. Spaces are ignored and case is
+ * preserved.
  *
  * @author [Focusucof](https://github.com/Focusucof)
  */
-#include <cassert>  /// for assert
-#include <map>      /// for std::map
-#include <string>   /// for std::string
+#include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
+#include <map>       /// for std::map
+#include <string>    /// for std::string
 
 /** \namespace ciphers
  * \brief Algorithms for encryption and decryption
@@ -69,6 +77,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
