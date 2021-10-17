@@ -15,7 +15,6 @@
 #include<complex>///For storing points and coefficents
 #include <cassert>///For Assertions
 # define pi    3.14159265358979323846 
-using namespace std;
 
 /**
  * @brief FastFourierTransform is a recursive function which returns list of complex numbers
@@ -25,16 +24,16 @@ using namespace std;
  * @returns y if n!=1
  */
 
-complex<double>* FastFourierTransform(complex<double>*p,int n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
 {
 
 	if(n==1) return p; ///Base Case To return 
 
-	complex<double> om=complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
+	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
-	complex<double> *pe= new complex<double>[n/2]; /// Coefficents of even power
+	std::complex<double> *pe= new std::complex<double>[n/2]; /// Coefficents of even power
 
-	complex<double> *po= new complex<double>[n/2]; ///Coefficents of odd power
+	std::complex<double> *po= new std::complex<double>[n/2]; ///Coefficents of odd power
 
 	int k1=0,k2=0;
 	for(int j=0;j<n;j++)
@@ -48,11 +47,11 @@ complex<double>* FastFourierTransform(complex<double>*p,int n)
 
 	}
 
-	complex<double>*ye=FastFourierTransform(pe,n/2);///Recursive Call
+	std::complex<double>*ye=FastFourierTransform(pe,n/2);///Recursive Call
 	
-	complex<double>*yo=FastFourierTransform(po,n/2);///Recursive Call
+	std::complex<double>*yo=FastFourierTransform(po,n/2);///Recursive Call
 
-	complex<double>*y=new complex<double>[n];///Final value representation list
+	std::complex<double>*y=new std::complex<double>[n];///Final value representation list
 
 
 	for(int i=0;i<n/2;i++)
@@ -74,23 +73,23 @@ complex<double>* FastFourierTransform(complex<double>*p,int n)
 static void test() {
     /* descriptions of the following test */
     
-    complex<double> t1[2]={1,2};///Test case 1
+    std::complex<double> t1[2]={1,2};///Test case 1
 	
-    complex<double> t2[4]={1,2,3,4};///Test case 2
+    std::complex<double> t2[4]={1,2,3,4};///Test case 2
 		
 
 
-    int n1=sizeof(t1)/sizeof(complex<double>);
-    int n2=sizeof(t2)/sizeof(complex<double>);
+    int n1=sizeof(t1)/sizeof(std::complex<double>);
+    int n2=sizeof(t2)/sizeof(std::complex<double>);
 
     
-    complex<double> r1[2]={{3,0},{-1,0} };///True Answer for test case 1
+    std::complex<double> r1[2]={{3,0},{-1,0} };///True Answer for test case 1
 	
-    complex<double> r2[4]={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
+    std::complex<double> r2[4]={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
 		
 
-    complex<double> *o1=FastFourierTransform(t1,n1);
-    complex<double> *o2=FastFourierTransform(t2,n2);
+    std::complex<double> *o1=FastFourierTransform(t1,n1);
+    std::complex<double> *o2=FastFourierTransform(t2,n2);
     
     
     for(int i=0;i<n1;i++)
