@@ -7,6 +7,7 @@
 #include <cassert>  // for assert
 #include <map>      // for std::map
 #include <string>   // for std::string
+#include <iostream>
 
 /** \namespace ciphers
  * \brief Algorithms for encryption and decryption
@@ -52,14 +53,15 @@ std::string atbash_cipher(std::string text) {
 void test() {
     // Test 1
     std::string text = "Hello World";
-    std::string expected = "Svool dliow";
+    std::string expected = "Svool Dliow";
     std::string encrypted_text = ciphers::atbash::atbash_cipher(text);
     std::string decrypted_text = ciphers::atbash::atbash_cipher(encrypted_text);
     assert(expected == encrypted_text);
     assert(text == decrypted_text);
     std::cout << "Original text: " << text;
-    std::cout << " , Encrypted text: " << encrypted;
-    std::cout << " , Decrypted text: " << decrypted << std::endl;
+    std::cout << ", Expected text: " << expected;
+    std::cout << ", Encrypted text: " << encrypted_text;
+    std::cout << ", Decrypted text: " << decrypted_text << std::endl;
 }
 
 int main() {
