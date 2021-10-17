@@ -15,7 +15,7 @@ void push(int x) {
 }
 
 void pop() {
-    if (top_var == NULL) {
+    if (top_var == nullptr) {
         std::cout << "\nUnderflow";
     } else {
         node *t = top_var;
@@ -27,28 +27,38 @@ void pop() {
 
 void show() {
     node *t = top_var;
-    while (t != NULL) {
+    while (t != nullptr) {
         std::cout << t->val << "\n";
         t = t->next;
     }
 }
 
 int main() {
-    int ch, x;
+    int ch = 0, x = 0;
     do {
+        std::cout << "\n0. Exit or Ctrl+C";
         std::cout << "\n1. Push";
         std::cout << "\n2. Pop";
         std::cout << "\n3. Print";
-        std::cout << "\nEnter Your Choice : ";
+        std::cout << "\nEnter Your Choice: ";
         std::cin >> ch;
-        if (ch == 1) {
-            std::cout << "\nInsert : ";
-            std::cin >> x;
-            push(x);
-        } else if (ch == 2) {
-            pop();
-        } else if (ch == 3) {
-            show();
+        switch (ch) {
+            case 0:
+                break;
+            case 1:
+                std::cout << "\nInsert : ";
+                std::cin >> x;
+                push(x);
+                break;
+            case 2:
+                pop();
+                break;
+            case 3:
+                show();
+                break;
+            default:
+                std::cout << "Invalid option!\n";
+                break;
         }
     } while (ch != 0);
 
