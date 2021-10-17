@@ -1,7 +1,9 @@
 /**
  * @fast_fourier_transform.cpp
  * @brief A fast Fourier transform (FFT) is an algorithm that computes the 
- * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT).
+ * discrete Fourier transform (DFT) of a sequence , or its inverse (IDFT) , this algorithm
+ * has application in use case scenario where a user wants to find points of a function
+ * in short period time by just using the coefficents of the polynomial function.
  * @details
  * https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to
   -solve-polynomial-multiplication-8018d511162f
@@ -65,6 +67,8 @@ complex<double>* FastFourierTransform(complex<double>*p,int n)
 
 /**
  * @brief Self-test implementations
+ *declaring two test cases and checking for the error
+ *in predicted and true value is less than 0.000000000001.
  * @returns void
  */
 static void test() {
@@ -72,17 +76,17 @@ static void test() {
     
     complex<double> t1[2]={1,2};///Test case 1
 	
-	complex<double> t2[4]={1,2,3,4};///Test case 2
+    complex<double> t2[4]={1,2,3,4};///Test case 2
 		
 
 
-	int n1=sizeof(t1)/sizeof(complex<double>);
-	int n2=sizeof(t2)/sizeof(complex<double>);
+    int n1=sizeof(t1)/sizeof(complex<double>);
+    int n2=sizeof(t2)/sizeof(complex<double>);
 
     
     complex<double> r1[2]={{3,0},{-1,0} };///True Answer for test case 1
 	
-	complex<double> r2[4]={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
+    complex<double> r2[4]={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
 		
 
     complex<double> *o1=FastFourierTransform(t1,n1);
@@ -91,13 +95,13 @@ static void test() {
     
     for(int i=0;i<n1;i++)
     {
-        assert(r1[i].real()-o1->real()<0.000000000001 and r1[i].imag()-o1->imag()<0.000000000001 );
+        assert(r1[i].real()-o1->real()<0.000000000001 and r1[i].imag()-o1->imag()<0.000000000001 );/// Comparing for both real and imaginary values for test case 1
         o1++;
     }
     
     for(int i=0;i<n2;i++)
     {
-        assert(r2[i].real()-o2->real()<0.000000000001 and r2[i].imag()-o2->imag()<0.000000000001  );
+        assert(r2[i].real()-o2->real()<0.000000000001 and r2[i].imag()-o2->imag()<0.000000000001  );/// Comparing for both real and imaginary values for test case 2
         o2++;
     }
     
@@ -108,6 +112,7 @@ static void test() {
  * @brief Main function
  * @param argc commandline argument count (ignored)
  * @param argv commandline array of arguments (ignored)
+ * calls automated test function to test the working of fast fourier transform.
  * @returns 0 on exit
  */
  
@@ -118,5 +123,5 @@ int main(int argc, char const *argv[])
 	
    test();
     
-	return 0;
+   return 0;
 }
