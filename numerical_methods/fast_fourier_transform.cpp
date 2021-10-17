@@ -1,5 +1,5 @@
 /**
- * @fast_fourier_transform.cpp
+ * @file
  * @brief A fast Fourier transform (FFT) is an algorithm that computes the 
  * discrete Fourier transform (DFT) of a sequence , or its inverse (IDFT) , this algorithm
  * has application in use case scenario where a user wants to find points of a function
