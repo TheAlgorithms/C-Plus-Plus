@@ -4,10 +4,10 @@
  *
  * @author [Focusucof](https://github.com/Focusucof)
  */
-#include <cassert>  // for assert
-#include <map>      // for std::map
-#include <string>   // for std::string
-#include <iostream>
+#include <cassert>  /// for assert
+#include <map>      /// for std::map
+#include <string>   /// for std::string
+#include <iostream>  /// for IO operations
 
 /** \namespace ciphers
  * \brief Algorithms for encryption and decryption
