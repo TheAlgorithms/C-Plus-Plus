@@ -1,5 +1,5 @@
-#include<iostream>
-#include<climits>
+#include <climits>
+#include <iostream>
 
 int maxSubArraySum(int a[], int size) {
     int max_so_far = INT_MIN, max_ending_here = 0;
@@ -14,7 +14,6 @@ int maxSubArraySum(int a[], int size) {
     }
     return max_so_far;
 }
-
 
 int main() {
     int n, i;

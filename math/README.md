@@ -1,3 +1,4 @@
+# Prime factorization # {#section}
 Prime Factorization is a very important and useful technique to factorize any number into its prime factors. It has various applications in the field of number theory.
 
 The method of prime factorization involves two function calls.

@@ -30,5 +30,8 @@
 
 # Executables
 *.exe
+a.out
 *.out
 *.app
+
+build/

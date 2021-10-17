@@ -8,18 +8,18 @@
  * 1 2
  * 1 3
  * 2 4
- * which can be represented as                 
- *   1                      
- *  / \                     
- * 2   3                    
- * |                        
- * 4            
- * 
+ * which can be represented as
+ *   1
+ *  / \
+ * 2   3
+ * |
+ * 4
+ *
  * Height of the tree : - 2
-*/
+ */
 
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 
 // global declarations
 // no of nodes max limit.
@@ -37,7 +37,7 @@ void depth_first_search(int u) {
             depth_first_search(v);
 
             // select maximum sub-tree height from all children.
-            child_height = std::max(child_height, dp[v]+1);
+            child_height = std::max(child_height, dp[v] + 1);
         }
     }
     // assigned the max child height to current visited node.
@@ -61,9 +61,9 @@ int main() {
         adj[v].push_back(u);
     }
     // initialize all nodes as unvisited.
-    visited.assign(number_of_nodes+1, false);
+    visited.assign(number_of_nodes + 1, false);
     // initialize depth of all nodes to 0.
-    dp.assign(number_of_nodes+1, 0);
+    dp.assign(number_of_nodes + 1, 0);
     // function call which will initialize the height of all nodes.
     depth_first_search(1);
     std::cout << "Height of the Tree : " << dp[1] << std::endl;

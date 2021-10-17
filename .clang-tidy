@@ -1,0 +1,6 @@
+---
+Checks:          '-*,google-*,clang-analyzer-*,-clang-analyzer-security.insecureAPI.*,cppcoreguidelines-*,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-pro-bounds-*,openmp-*,performance-*,portability-*,modernize-*,-modernize-use-trailing-*'
+WarningsAsErrors: '*,-google-readability-*,-google-explicit-constructor,-modernize-*,modernize-avoid-c-arrays,-performance-move-const-arg,-performance-noexcept-move-constructor,-performance-unnecessary-value-param,-cppcoreguidelines-init-variables,-cppcoreguidelines-pro-*,-cppcoreguidelines-owning-memory,-clang-analyzer-cplusplus.Move'
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle:     '{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: true, ColumnLimit: 80, AccessModifierOffset: -3, AlignConsecutiveMacros: true }'
