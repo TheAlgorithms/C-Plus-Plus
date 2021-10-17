@@ -50,7 +50,7 @@ std::string atbash_cipher(std::string text) {
  * @brief Self-test implementations
  * @returns void
  */
-void test() {
+static void test() {
     // 1st test
     std::string text = "Hello World";
     std::string expected = "Svool Dliow";
