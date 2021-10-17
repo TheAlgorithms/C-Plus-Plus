@@ -2,7 +2,7 @@
  * @file atbash_cipher.cpp
  * @brief atbash cipher implementation
  *
- * @author
+ * @author [Focusucof](https://github.com/Focusucof)
  */
 #include <cassert>  // for assert
 #include <map>      // for std::map
