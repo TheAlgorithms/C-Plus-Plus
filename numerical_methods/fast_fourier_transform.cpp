@@ -10,10 +10,10 @@
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
-#include<iostream>///Standard Library for input and output
-#include<cmath>///For sine,cosine functions
-#include<complex>///For storing points and coefficents
-#include <cassert>///For Assertions
+#include<iostream>   /// for IO operations
+#include<cmath>     /// for mathematical-related functions
+#include<complex>  /// for storing points and coefficents
+#include <cassert> /// for assert
 # define pi    3.14159265358979323846 
 
 /**
