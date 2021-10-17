@@ -117,9 +117,6 @@ static void test() {
 
 int main(int argc, char const *argv[])
 {
-	
-	
-   test();
-    
+   test();  // run self-test implementations
    return 0;
 }
