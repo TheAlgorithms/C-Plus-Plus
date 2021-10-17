@@ -142,8 +142,8 @@ var NAVTREEINDEX =
 "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74",
 "da/d9a/palindrome__of__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
 "db/dc4/floyd__cycle__detection__algo_8cpp.html#a81ffc7a2c6bf530c8a496864e7a3ad88",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a26a976171392d257ca0f814ed73e0658",
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#af0a6e3521629c25c2b5d620f26429830",
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a3dc09f4742a0e1167ed202f7bf94721b",
+"df/d72/modular__division_8cpp.html",
 ""
 ];
 
