@@ -65,8 +65,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
 
 /**
  * @brief Self-test implementations
- *declaring two test cases and checking for the error
- *in predicted and true value is less than 0.000000000001.
+ * declaring two test cases and checking for the error
+ * in predicted and true value is less than 0.000000000001.
  * @returns void
  */
 static void test() {
