@@ -51,7 +51,7 @@ std::string atbash_cipher(std::string text) {
  * @returns void
  */
 void test() {
-    // Test 1
+    // 1st test
     std::string text = "Hello World";
     std::string expected = "Svool Dliow";
     std::string encrypted_text = ciphers::atbash::atbash_cipher(text);
