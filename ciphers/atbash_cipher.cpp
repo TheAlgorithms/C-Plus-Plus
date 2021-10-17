@@ -47,7 +47,7 @@ std::string atbash_cipher(std::string text) {
 }  // namespace ciphers
 
 /**
- * @brief Function to test above algorithm
+ * @brief Self-test implementations
  * @returns void
  */
 void test() {
