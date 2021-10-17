@@ -23,7 +23,6 @@
  * @returns p if n==1
  * @returns y if n!=1
  */
-
 std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
 {
 
