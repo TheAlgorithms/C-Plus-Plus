@@ -30,6 +30,9 @@
   * [Vigenere Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/vigenere_cipher.cpp)
   * [Xor Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/xor_cipher.cpp)
 
+## Cpu Scheduling Algorithms
+  * [Fcfs Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/cpu_scheduling_algorithms/fcfs_scheduling.cpp)
+
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
@@ -180,6 +183,7 @@
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
   * [Integral Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation.cpp)
+  * [Integral Approximation2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation2.cpp)
   * [Inv Sqrt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/inv_sqrt.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
@@ -246,9 +250,11 @@
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
   * [Decimal To Roman Numeral](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_roman_numeral.cpp)
+  * [Easter](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/easter.cpp)
   * [Fast Integer Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/fast_integer_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/iterative_tree_traversals.cpp)
+  * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/kadanes3.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/matrix_exponentiation.cpp)
   * [Palindrome Of Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/palindrome_of_number.cpp)
@@ -276,6 +282,7 @@
   * [Heavy Light Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/heavy_light_decomposition.cpp)
   * [Mo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/mo.cpp)
   * [Persistent Seg Tree Lazy Prop](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/persistent_seg_tree_lazy_prop.cpp)
+  * [Prefix Sum Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/prefix_sum_array.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/segtree.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/range_queries/sparse_table.cpp)
 
