@@ -113,8 +113,6 @@ static void test() {
  * calls automated test function to test the working of fast fourier transform.
  * @returns 0 on exit
  */
- 
-
 int main(int argc, char const *argv[])
 {
    test();  // run self-test implementations
