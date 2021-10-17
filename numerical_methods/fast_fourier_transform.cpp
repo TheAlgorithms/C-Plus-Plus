@@ -59,7 +59,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
 		y[i+n/2]=ye[i]-pow(om,i)*yo[i];///Updating the last n/2 elements
 	}
 
-	return y;///Return the list 
+	return y;///Returns the list 
 	
 }
 
