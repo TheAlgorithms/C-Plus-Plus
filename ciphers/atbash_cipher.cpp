@@ -1,6 +1,6 @@
 /**
- * @file atbash_cipher.cpp
- * @brief atbash cipher implementation
+ * @file
+ * @brief [Atbash cipher](https://en.wikipedia.org/wiki/Atbash) implementation
  *
  * @author [Focusucof](https://github.com/Focusucof)
  */
@@ -69,6 +69,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();
+    test(); // run self-test implementations
     return 0;
 }
