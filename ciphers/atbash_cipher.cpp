@@ -33,7 +33,7 @@ std::map<char, char> atbash_cipher_map = {
 /**
  * @brief atbash cipher encryption and decryption
  * @param text Plaintext to be encrypted
- * @returns std::string
+ * @returns encoded or decoded string
  */
 std::string atbash_cipher(std::string text) {
     std::string result;
@@ -64,6 +64,10 @@ void test() {
     std::cout << ", Decrypted text: " << decrypted_text << std::endl;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();
     return 0;
