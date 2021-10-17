@@ -23,7 +23,7 @@
  * @returns p if n==1
  * @returns y if n!=1
  */
-std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
 {
 
 	if(n==1) return p; ///Base Case To return 
@@ -34,8 +34,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
 
 	std::complex<double> *po= new std::complex<double>[n/2]; ///Coefficents of odd power
 
-	int k1=0,k2=0;
-	for(int j=0;j<n;j++)
+	uint64_t  k1=0,k2=0;
+	for(uint64_t j=0;j<n;j++)
 	{
 		if(j%2==0){
 			pe[k1++]=p[j]; ///Assigning values of even coefficents
@@ -53,7 +53,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,int n)
 	std::complex<double>*y=new std::complex<double>[n];///Final value representation list
 
 
-	for(int i=0;i<n/2;i++)
+	for(uint64_t i=0;i<n/2;i++)
 	{
 		y[i]=ye[i]+pow(om,i)*yo[i]; ///Updating the first n/2 elements
 		y[i+n/2]=ye[i]-pow(om,i)*yo[i];///Updating the last n/2 elements
@@ -78,8 +78,8 @@ static void test() {
 		
 
 
-    int n1=sizeof(t1)/sizeof(std::complex<double>);
-    int n2=sizeof(t2)/sizeof(std::complex<double>);
+    uint8_t  n1=sizeof(t1)/sizeof(std::complex<double>);
+    uint8_t  n2=sizeof(t2)/sizeof(std::complex<double>);
 
     
     std::complex<double> r1[2]={{3,0},{-1,0} };///True Answer for test case 1
@@ -91,13 +91,13 @@ static void test() {
     std::complex<double> *o2=FastFourierTransform(t2,n2);
     
     
-    for(int i=0;i<n1;i++)
+    for(uint8_t i=0;i<n1;i++)
     {
         assert(r1[i].real()-o1->real()<0.000000000001 and r1[i].imag()-o1->imag()<0.000000000001 );/// Comparing for both real and imaginary values for test case 1
         o1++;
     }
     
-    for(int i=0;i<n2;i++)
+    for(uint8_t i=0;i<n2;i++)
     {
         assert(r2[i].real()-o2->real()<0.000000000001 and r2[i].imag()-o2->imag()<0.000000000001  );/// Comparing for both real and imaginary values for test case 2
         o2++;
