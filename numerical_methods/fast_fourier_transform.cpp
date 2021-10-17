@@ -93,13 +93,13 @@ static void test() {
     
     for(uint8_t i=0;i<n1;i++)
     {
-        assert(r1[i].real()-o1->real()<0.000000000001 and r1[i].imag()-o1->imag()<0.000000000001 );/// Comparing for both real and imaginary values for test case 1
+        assert((r1[i].real()-o1->real()<0.000000000001 ) and (r1[i].imag()-o1->imag()<0.000000000001 ));/// Comparing for both real and imaginary values for test case 1
         o1++;
     }
     
     for(uint8_t i=0;i<n2;i++)
     {
-        assert(r2[i].real()-o2->real()<0.000000000001 and r2[i].imag()-o2->imag()<0.000000000001  );/// Comparing for both real and imaginary values for test case 2
+        assert((r2[i].real()-o2->real()<0.000000000001 )and ( r2[i].imag()-o2->imag()<0.000000000001  ));/// Comparing for both real and imaginary values for test case 2
         o2++;
     }
     
