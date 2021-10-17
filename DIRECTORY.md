@@ -217,6 +217,7 @@
   * [Brent Method Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/brent_method_extrema.cpp)
   * [Durand Kerner Roots](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/durand_kerner_roots.cpp)
   * [False Position](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/false_position.cpp)
+  * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/fast_fourier_transform.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
