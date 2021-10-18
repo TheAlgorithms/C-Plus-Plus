@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief A fast Fourier transform (FFT) is an algorithm that computes the 
+ * @brief [A fast Fourier transform (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f) is an algorithm that computes the 
  * discrete Fourier transform (DFT) of a sequence , or its inverse (IDFT) , this algorithm
  * has application in use case scenario where a user wants to find points of a function
  * in short period time by just using the coefficents of the polynomial function.
