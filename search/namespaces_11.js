@@ -12,13 +12,14 @@ var searchData=
   ['sorting_9',['sorting',['../d5/d91/namespacesorting.html',1,'']]],
   ['sparse_5ftable_10',['sparse_table',['../d9/d55/namespacesparse__table.html',1,'']]],
   ['spirograph_11',['spirograph',['../da/dd3/namespacespirograph.html',1,'']]],
-  ['statistics_12',['statistics',['../d2/dcf/namespacestatistics.html',1,'']]],
-  ['std_13',['std',['../d8/dcc/namespacestd.html',1,'']]],
-  ['strand_14',['strand',['../d8/d1d/namespacestrand.html',1,'']]],
-  ['string_5fsearch_15',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
-  ['strings_16',['strings',['../df/dcb/namespacestrings.html',1,'']]],
-  ['subarray_5fsum_17',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
-  ['sublist_5fsearch_18',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
-  ['subsets_19',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['this_5fthread_20',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
+  ['stack_5fusing_5fqueue_12',['stack_using_queue',['../df/d1c/namespacestack__using__queue.html',1,'']]],
+  ['statistics_13',['statistics',['../d2/dcf/namespacestatistics.html',1,'']]],
+  ['std_14',['std',['../d8/dcc/namespacestd.html',1,'']]],
+  ['strand_15',['strand',['../d8/d1d/namespacestrand.html',1,'']]],
+  ['string_5fsearch_16',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
+  ['strings_17',['strings',['../df/dcb/namespacestrings.html',1,'']]],
+  ['subarray_5fsum_18',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
+  ['sublist_5fsearch_19',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
+  ['subsets_20',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
+  ['this_5fthread_21',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
 ];

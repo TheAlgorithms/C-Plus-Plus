@@ -17,6 +17,9 @@ var namespacedata__structures =
       [ "M", "d6/d42/data__structures_2sparse__table_8cpp.html#af7db62f21983565c64d5d42d2a49888e", null ],
       [ "N", "d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d", null ]
     ] ],
+    [ "stack_using_queue", null, [
+      [ "Stack", "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html", "db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack" ]
+    ] ],
     [ "tree_234", null, [
       [ "Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", "dd/d40/classdata__structures_1_1tree__234_1_1_node" ],
       [ "Tree234", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html", "d3/d95/classdata__structures_1_1tree__234_1_1_tree234" ]

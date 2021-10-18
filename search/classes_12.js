@@ -21,7 +21,7 @@ var searchData=
   ['sregex_5fiterator_18',['sregex_iterator',['http://en.cppreference.com/w/cpp/regex/regex_iterator.html',0,'std']]],
   ['sregex_5ftoken_5fiterator_19',['sregex_token_iterator',['http://en.cppreference.com/w/cpp/regex/regex_token_iterator.html',0,'std']]],
   ['ssub_5fmatch_20',['ssub_match',['http://en.cppreference.com/w/cpp/regex/sub_match.html',0,'std']]],
-  ['stack_21',['Stack',['../d5/d8a/classothers_1_1postfix__expression_1_1_stack.html',1,'others::postfix_expression']]],
+  ['stack_21',['Stack',['../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html',1,'data_structures::stack_using_queue::Stack'],['../d5/d8a/classothers_1_1postfix__expression_1_1_stack.html',1,'others::postfix_expression::Stack']]],
   ['stack_22',['stack',['../d1/dc2/classstack.html',1,'stack&lt; Type &gt;'],['http://en.cppreference.com/w/cpp/container/stack.html',0,'std::stack&lt; T &gt;']]],
   ['stack_5flinkedlist_23',['stack_linkedList',['../d2/dc4/classstack__linked_list.html',1,'']]],
   ['state_5ftype_24',['state_type',['http://en.cppreference.com/w/cpp/locale/codecvt.html',0,'std::codecvt::state_type'],['http://en.cppreference.com/w/cpp/locale/codecvt.html',0,'std::codecvt_byname::state_type'],['http://en.cppreference.com/w/cpp/locale/codecvt.html',0,'std::codecvt_utf16::state_type'],['http://en.cppreference.com/w/cpp/locale/codecvt.html',0,'std::codecvt_utf8::state_type'],['http://en.cppreference.com/w/cpp/locale/codecvt.html',0,'std::codecvt_utf8_utf16::state_type']]],

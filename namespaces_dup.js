@@ -52,6 +52,7 @@ var namespaces_dup =
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
     [ "cycle_detection", "da/d82/namespacecycle__detection.html", null ],
     [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],
+    [ "data_strcutres", "dd/db1/namespacedata__strcutres.html", null ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
     [ "depth_first_search", "d8/da7/namespacedepth__first__search.html", null ],
     [ "disjoint_union", "de/db4/namespacedisjoint__union.html", null ],
@@ -246,6 +247,7 @@ var namespaces_dup =
       [ "spirograph", "da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac", null ],
       [ "test", "da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99", null ]
     ] ],
+    [ "stack_using_queue", "df/d1c/namespacestack__using__queue.html", null ],
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
     [ "std", "d8/dcc/namespacestd.html", "d8/dcc/namespacestd" ],
     [ "strand", "d8/d1d/namespacestrand.html", null ],
