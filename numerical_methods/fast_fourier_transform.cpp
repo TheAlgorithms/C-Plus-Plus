@@ -16,8 +16,6 @@
 #include <cassert> /// for assert
 #include <vector>   /// for storing test cases
 
-
-
 /**
  * @brief FastFourierTransform is a recursive function which returns list of complex numbers
  * @param p List of Coefficents in form of complex numbers
