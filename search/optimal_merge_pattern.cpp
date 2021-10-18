@@ -1,4 +1,5 @@
 /**
+                                        Hacktoberfest2021
 Node represents a file with a given size also given nodes are greater than 2 
 
 1. Add all the nodes in a priority queue (Min Heap).{node.weight = file size}
