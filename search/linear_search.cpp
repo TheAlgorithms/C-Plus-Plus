@@ -25,12 +25,12 @@ int LinearSearch(int *array, int size, int key) {
 
 /** main function */
 int main() {
-    int size;
+    int size = 0;
     std::cout << "\nEnter the size of the Array : ";
     std::cin >> size;
 
     int *array = new int[size];
-    int key;
+    int key = 0;
 
     // Input array
     std::cout << "\nEnter the Array of " << size << " numbers : ";
