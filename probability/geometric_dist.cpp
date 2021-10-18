@@ -1,13 +1,16 @@
 /**
  * @file
- * @brief [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
+ * @brief [Geometric
+ * Distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
  *
  * @details
- * The geometric distribution models the experiment of doing Bernoulli trials until a
- * sucess was observed. There are two formulations of the geometric distribution:
- * 1) The probability distribution of the number X of Bernoulli trials needed to get one success, supported on the set { 1, 2, 3, ... }
- * 2) The probability distribution of the number Y = X − 1 of failures before the first success, supported on the set { 0, 1, 2, 3, ... }
- * Here, the first one is implemented.
+ * The geometric distribution models the experiment of doing Bernoulli trials
+ * until a sucess was observed. There are two formulations of the geometric
+ * distribution: 1) The probability distribution of the number X of Bernoulli
+ * trials needed to get one success, supported on the set { 1, 2, 3, ... } 2)
+ * The probability distribution of the number Y = X − 1 of failures before the
+ * first success, supported on the set { 0, 1, 2, 3, ... } Here, the first one
+ * is implemented.
  *
  * Common variables used:
  * p - The success probability
@@ -16,14 +19,14 @@
  * @author [Domenic Zingsheim](https://github.com/DerAndereDomenic)
  */
 
-#include <cassert>    /// for assert
-#include <cmath>      /// for math functions
-#include <cstdint>    /// for fixed size data types
-#include <ctime>      /// for time to initialize rng
-#include <iostream>   /// for std::cout
-#include <limits>     /// for std::numeric_limits
-#include <random>     /// for random numbers
-#include <vector>     /// for std::vector
+#include <cassert>   /// for assert
+#include <cmath>     /// for math functions
+#include <cstdint>   /// for fixed size data types
+#include <ctime>     /// for time to initialize rng
+#include <iostream>  /// for std::cout
+#include <limits>    /// for std::numeric_limits
+#include <random>    /// for random numbers
+#include <vector>    /// for std::vector
 
 /**
  * @namespace probability
@@ -32,12 +35,15 @@
 namespace probability {
 /**
  * @namespace geometric_dist
- * @brief Functions for the [Geometric Distribution](https://en.wikipedia.org/wiki/Geometric_distribution) algorithm implementation
+ * @brief Functions for the [Geometric
+ * Distribution](https://en.wikipedia.org/wiki/Geometric_distribution) algorithm
+ * implementation
  */
 namespace geometric_dist {
 /**
  * @brief Returns a random number between [0,1]
- * @returns A uniformly distributed random number between 0 (included) and 1 (included)
+ * @returns A uniformly distributed random number between 0 (included) and 1
+ * (included)
  */
 float generate_uniform() {
     return static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
@@ -46,12 +52,11 @@ float generate_uniform() {
 /**
  * @brief A class to model the geometric distribution
  */
-class geometric_distribution
-{
-private:
-    float p;    ///< The succes probability p
+class geometric_distribution {
+ private:
+    float p;  ///< The succes probability p
 
-public:
+ public:
     /**
      * @brief Constructor for the geometric distribution
      * @param p The success probability
@@ -59,28 +64,24 @@ public:
     explicit geometric_distribution(const float& p) : p(p) {}
 
     /**
-     * @brief The expected value of a geometrically distributed random variable X
+     * @brief The expected value of a geometrically distributed random variable
+     * X
      * @returns E[X] = 1/p
      */
-    float expected_value() const {
-       return 1.0f/ p;
-    }
+    float expected_value() const { return 1.0f / p; }
 
     /**
      * @brief The variance of a geometrically distributed random variable X
      * @returns V[X] = (1 - p) / p^2
      */
-    float variance() const {
-       return (1.0f - p) / (p * p);
-    }
+    float variance() const { return (1.0f - p) / (p * p); }
 
     /**
-     * @brief The standard deviation of a geometrically distributed random variable X
+     * @brief The standard deviation of a geometrically distributed random
+     * variable X
      * @returns \sigma = \sqrt{V[X]}
      */
-    float standard_deviation() const {
-       return std::sqrt(variance());
-    }
+    float standard_deviation() const { return std::sqrt(variance()); }
 
     /**
      * @brief The probability density function
@@ -95,7 +96,8 @@ public:
 
     /**
      * @brief The cumulative distribution function
-     * @details The sum of all probabilities up to (and including) k trials. Basically CDF(k) = P(x <= k)
+     * @details The sum of all probabilities up to (and including) k trials.
+     * Basically CDF(k) = P(x <= k)
      * @param k The number of trials in [1,\infty)
      * @returns The probability to have success within k trials
      */
@@ -105,8 +107,9 @@ public:
 
     /**
      * @brief The inverse cumulative distribution function
-     * @details This functions answers the question: Up to how many trials are needed to have success with a probability of cdf?
-     * The exact floating point value is reported.
+     * @details This functions answers the question: Up to how many trials are
+     * needed to have success with a probability of cdf? The exact floating
+     * point value is reported.
      * @param cdf The probability in [0,1]
      * @returns The number of (exact) trials.
      */
@@ -115,26 +118,37 @@ public:
     }
 
     /**
-     * @brief Generates a (discrete) sample according to the geometrical distribution
+     * @brief Generates a (discrete) sample according to the geometrical
+     * distribution
      * @returns A geometrically distributed number in [1,\infty)
      */
     uint32_t draw_sample() const {
         float uniform_sample = generate_uniform();
-        return static_cast<uint32_t>(inverse_cumulative_distribution(uniform_sample)) + 1;
+        return static_cast<uint32_t>(
+                   inverse_cumulative_distribution(uniform_sample)) +
+               1;
     }
 
     /**
-     * @brief This function computes the probability to have success in a given range of tries
+     * @brief This function computes the probability to have success in a given
+     * range of tries
      * @details Computes P(min_tries <= x <= max_tries).
-     * Can be used to calculate P(x >= min_tries) by not passing a second argument.
-     * Can be used to calculate P(x <= max_tries) by passing 1 as the first argument
+     * Can be used to calculate P(x >= min_tries) by not passing a second
+     * argument. Can be used to calculate P(x <= max_tries) by passing 1 as the
+     * first argument
      * @param min_tries The minimum number of tries in [1,\infty) (inclusive)
-     * @param max_tries The maximum number of tries in [min_tries, \infty) (inclusive)
-     * @returns The probability of having success within a range of tries [min_tries, max_tries]
+     * @param max_tries The maximum number of tries in [min_tries, \infty)
+     * (inclusive)
+     * @returns The probability of having success within a range of tries
+     * [min_tries, max_tries]
      */
-    float range_tries(const uint32_t& min_tries = 1, const uint32_t& max_tries = std::numeric_limits<uint32_t>::max()) const {
+    float range_tries(const uint32_t& min_tries = 1,
+                      const uint32_t& max_tries =
+                          std::numeric_limits<uint32_t>::max()) const {
         float cdf_lower = cumulative_distribution(min_tries - 1);
-        float cdf_upper = max_tries == std::numeric_limits<uint32_t>::max() ? 1.0f : cumulative_distribution(max_tries);
+        float cdf_upper = max_tries == std::numeric_limits<uint32_t>::max()
+                              ? 1.0f
+                              : cumulative_distribution(max_tries);
         return cdf_upper - cdf_lower;
     }
 };
@@ -144,10 +158,12 @@ public:
 /**
  * @brief Tests the sampling method of the geometric distribution
  * @details Draws 1000000 random samples and estimates mean and variance
- * These should be close to the expected value and variance of the given distribution to pass.
+ * These should be close to the expected value and variance of the given
+ * distribution to pass.
  * @param dist The distribution to test
  */
-void sample_test(const probability::geometric_dist::geometric_distribution& dist) {
+void sample_test(
+    const probability::geometric_dist::geometric_distribution& dist) {
     uint32_t n_tries = 1000000;
     std::vector<float> tries;
     tries.resize(n_tries);
@@ -165,11 +181,13 @@ void sample_test(const probability::geometric_dist::geometric_distribution& dist
         var += (tries[i] - mean) * (tries[i] - mean);
     }
 
-    //Unbiased estimate of variance
+    // Unbiased estimate of variance
     var /= static_cast<float>(n_tries - 1);
 
-    std::cout << "This value should be near " << dist.expected_value() << ": " << mean << std::endl;
-    std::cout << "This value should be near " << dist.variance() << ": " << var << std::endl;
+    std::cout << "This value should be near " << dist.expected_value() << ": "
+              << mean << std::endl;
+    std::cout << "This value should be near " << dist.variance() << ": " << var
+              << std::endl;
 }
 
 /**
@@ -187,7 +205,9 @@ static void test() {
     assert(std::abs(dist.standard_deviation() - 2.788866755) < threshold);
     assert(std::abs(dist.probability_density(5) - 0.07203) < threshold);
     assert(std::abs(dist.cumulative_distribution(6) - 0.882351) < threshold);
-    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(
+                        dist.cumulative_distribution(8)) -
+                    8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
     assert(std::abs(dist.range_tries(3) - 0.49f) < threshold);
     assert(std::abs(dist.range_tries(5, 11) - 0.2203267f) < threshold);
@@ -202,7 +222,9 @@ static void test() {
     assert(std::abs(dist.standard_deviation() - 1.4142135f) < threshold);
     assert(std::abs(dist.probability_density(5) - 0.03125) < threshold);
     assert(std::abs(dist.cumulative_distribution(6) - 0.984375) < threshold);
-    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(
+                        dist.cumulative_distribution(8)) -
+                    8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
     assert(std::abs(dist.range_tries(3) - 0.25f) < threshold);
     assert(std::abs(dist.range_tries(5, 11) - 0.062011f) < threshold);
@@ -217,7 +239,9 @@ static void test() {
     assert(std::abs(dist.standard_deviation() - 0.559016f) < threshold);
     assert(std::abs(dist.probability_density(5) - 0.00128) < threshold);
     assert(std::abs(dist.cumulative_distribution(6) - 0.999936) < threshold);
-    assert(std::abs(dist.inverse_cumulative_distribution(dist.cumulative_distribution(8)) - 8) < threshold);
+    assert(std::abs(dist.inverse_cumulative_distribution(
+                        dist.cumulative_distribution(8)) -
+                    8) < threshold);
     assert(std::abs(dist.range_tries() - 1.0f) < threshold);
     assert(std::abs(dist.range_tries(3) - 0.04f) < threshold);
     assert(std::abs(dist.range_tries(5, 11) - 0.00159997f) < threshold);
