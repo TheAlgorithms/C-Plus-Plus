@@ -14,7 +14,9 @@
 #include<cmath>     /// for mathematical-related functions
 #include<complex>  /// for storing points and coefficents
 #include <cassert> /// for assert
-# define pi    3.14159265358979323846 
+#include<vector>
+
+
 
 /**
  * @brief FastFourierTransform is a recursive function which returns list of complex numbers
@@ -25,7 +27,8 @@
  */
 std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
 {
-
+    double pi = 2*asin(1.0);///Declaring value of pi
+    
 	if(n==1) return p; ///Base Case To return 
 
 	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
@@ -82,9 +85,9 @@ static void test() {
     uint8_t  n2=sizeof(t2)/sizeof(std::complex<double>);
 
     
-    std::complex<double> r1[2]={{3,0},{-1,0} };///True Answer for test case 1
+    std::vector<std::complex<double>> r1={{3,0},{-1,0} };///True Answer for test case 1
 	
-    std::complex<double> r2[4]={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
+    std::vector<std::complex<double>> r2={{10,0},{-2,-2},{-2,0},{-2,2} };///True Answer for test case 2
 		
 
     std::complex<double> *o1=FastFourierTransform(t1,n1);
