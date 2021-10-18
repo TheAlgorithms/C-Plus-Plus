@@ -70,6 +70,7 @@ static void test() {
     std::cout << ", Expected text: " << expected << std::endl;
     std::cout << ", Encrypted text: " << encrypted_text << std::endl;
     std::cout << ", Decrypted text: " << decrypted_text << std::endl;
+    std::cout << "\nAll tests have successfully passed!\n;
 }
 
 /**
