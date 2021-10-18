@@ -61,8 +61,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
 		y[i]=ye[i]+pow(om,i)*yo[i]; ///Updating the first n/2 elements
 		y[i+n/2]=ye[i]-pow(om,i)*yo[i];///Updating the last n/2 elements
 	}
-    free(ye);
-    free(yo);
+    delete ye;
+    delete yo;
 	return y;///Returns the list 
 	
 }
@@ -113,8 +113,8 @@ static void test() {
         o2++;
     }
     
-    free(o1);
-    free(o2);
+    delete o1;
+    delete o2;
     
 }
 
