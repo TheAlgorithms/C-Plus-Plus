@@ -63,6 +63,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
 	}
     delete[] ye;
     delete[] yo;
+    delete[] pe;
+    delete[] po;
 	return y;///Returns the list 
 	
 }
@@ -115,6 +117,8 @@ static void test() {
     
     delete[] o1;
     delete[] o2;
+    delete[] t1;
+    delete[] t2;
     
 }
 
