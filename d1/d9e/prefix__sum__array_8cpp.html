@@ -218,7 +218,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d9e/prefix__sum__array_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="154" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d9e/prefix__sum__array_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="258" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -296,16 +296,23 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">range_queries::prefix_sum_array::build</a>(values);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// queries are of the type: sum of the range [a, b] = psa[b] - psa[a-1]</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(range_queries::prefix_sum_array::query(1, 10) ==</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(<a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d">range_queries::prefix_sum_array::query</a>(1, 10) ==</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>           173);  <span class="comment">// sum of the entire array</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert(range_queries::prefix_sum_array::query(4, 6) ==</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert(<a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d">range_queries::prefix_sum_array::query</a>(4, 6) ==</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>           27);  <span class="comment">// the sum of the interval [4, 6]</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(range_queries::prefix_sum_array::query(5, 9) ==</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(<a class="code hl_function" href="../../d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d">range_queries::prefix_sum_array::query</a>(5, 9) ==</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>           51);  <span class="comment">// the sum of the interval [5, 9]</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 <div class="ttc" id="aprefix__sum__array_8cpp_html_ab36151479ad37d53ef9fcb60a274b1d9"><div class="ttname"><a href="../../d1/d9e/prefix__sum__array_8cpp.html#ab36151479ad37d53ef9fcb60a274b1d9">range_queries::prefix_sum_array::build</a></div><div class="ttdeci">void build(std::vector&lt; int64_t &gt; original_array)</div><div class="ttdoc">function that builds the PSA</div><div class="ttdef"><b>Definition:</b> prefix_sum_array.cpp:41</div></div>
+<div class="ttc" id="asegtree_8cpp_html_a423a97ea0c7ea6e33b5844a6858d902d"><div class="ttname"><a href="../../d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d">query</a></div><div class="ttdeci">int64_t query(std::vector&lt; int64_t &gt; *segtree, std::vector&lt; int64_t &gt; *lazy, uint64_t qlow, uint64_t qhigh, uint64_t low, uint64_t high, uint64_t pos)</div><div class="ttdoc">Returns the sum of all elements in a range.</div><div class="ttdef"><b>Definition:</b> segtree.cpp:62</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d9e/prefix__sum__array_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="159" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
