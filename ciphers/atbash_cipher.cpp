@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief [Atbash cipher](https://en.wikipedia.org/wiki/Atbash) implementation
+ * @brief [Atbash Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
  * @details The Atbash cipher is a subsitution cipher where the letters of the
  * alphabet are in reverse. For example, A is replaced with Z, B is replaced
  * with Y, etc.
