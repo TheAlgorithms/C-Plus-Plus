@@ -61,6 +61,7 @@
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_linked_list.cpp)
+  * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_queue.cpp)
   * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_queue.cpp)
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack_students.cpp)
