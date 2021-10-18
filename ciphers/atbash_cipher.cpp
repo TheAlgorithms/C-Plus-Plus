@@ -22,7 +22,7 @@
  */
 namespace ciphers {
 /** \namespace atbash
- * \brief atbash cipher implementation
+ * \brief Functions for the [Atbash Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
  */
 namespace atbash {
 std::map<char, char> atbash_cipher_map = {
