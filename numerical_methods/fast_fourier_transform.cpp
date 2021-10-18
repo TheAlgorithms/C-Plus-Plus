@@ -23,7 +23,7 @@
  * @returns p if n==1
  * @returns y if n!=1
  */
-std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t  n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p ,uint64_t n)
 {
     double pi = 2*asin(1.0);///Declaring value of pi
     
