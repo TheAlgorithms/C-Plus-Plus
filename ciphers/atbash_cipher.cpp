@@ -66,9 +66,9 @@ static void test() {
     std::string decrypted_text = ciphers::atbash::atbash_cipher(encrypted_text);
     assert(expected == encrypted_text);
     assert(text == decrypted_text);
-    std::cout << "Original text: " << text;
-    std::cout << ", Expected text: " << expected;
-    std::cout << ", Encrypted text: " << encrypted_text;
+    std::cout << "Original text: " << text << std::endl;
+    std::cout << ", Expected text: " << expected << std::endl;
+    std::cout << ", Encrypted text: " << encrypted_text << std::endl;
     std::cout << ", Decrypted text: " << decrypted_text << std::endl;
 }
 
