@@ -12,38 +12,64 @@ Node represents a file with a given size also given nodes are greater than 2
 4. count is the final answer
  **/
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include <queue>
+#include <vector>
+
 using namespace std;
-#define int long long
  
-signed main() {
-    int n;
-    cout<<"Enter size of array-"<<endl;
-     cin >> n;
+// Function to find minimum computation
+int minComputation(int size, int files[])
+{
  
-    vector<int> a(n);
-    cout<<"Enter array of "<<n<<" elements"<<endl;
-    for(int i=0; i<n; i++) {
-        cin >> a[i];
+    // Create a min heap
+    priority_queue<int, vector<int>, greater<int> > pq;
+ 
+    for (int i = 0; i < size; i++) {
+ 
+        // Add sizes to priorityQueue
+        pq.push(files[i]);
     }
  
-    priority_queue<int, vector<int>, greater<int>> minheap;
-    for(int i=0; i<n; i++) {
-        minheap.push(a[i]);
+    // Variable to count total Computation
+    int count = 0;
+ 
+    while (pq.size() > 1) {
+ 
+        // pop two smallest size element
+        // from the min heap
+        int first_smallest = pq.top();
+        pq.pop();
+        int second_smallest = pq.top();
+        pq.pop();
+ 
+        int temp = first_smallest + second_smallest;
+ 
+        // Add the current computations
+        // with the previous one's
+        count += temp;
+ 
+        // Add new combined file size
+        // to priority queue or min heap
+        pq.push(temp);
     }
+    return count;
+}
  
-    int ans = 0;
+// Driver code
+int main()
+{
  
-    while(minheap.size() > 1) {
-        int e1 = minheap.top();
-        minheap.pop();
-        int e2 = minheap.top();
-        minheap.pop();
+    // No of files
+    int n = 6;
  
-        ans += e1 + e2;
-        minheap.push(e1 + e2);
-    }
- cout<<"Minimum Value-  "<<endl;
-    cout << ans << endl;
+    // 6 files with their sizes
+    int files[] = { 2, 3, 4, 5, 6, 7 };
+ 
+    // Total no of computations
+    // do be done final answer
+    cout << "Minimum Computations = "
+         << minComputation(n, files);
+ 
     return 0;
 }
