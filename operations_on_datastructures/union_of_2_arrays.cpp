@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Implementation for the [Union of two sorted
- * Arrays](https://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/)
+ * Arrays](https://en.wikipedia.org/wiki/Union_(set_theory))
  * algorithm.
  * @details A binary tree can be reversed by swapping the left and
  * right child of a node at each node, starting from the root, and
@@ -48,8 +48,8 @@ void print(std::vector<int32_t> array) {
 std::vector<int32_t> get_union(std::vector<int32_t> first,
                                std::vector<int32_t> second) {
     std::vector<int32_t> res;         ///< Vector to hold the union
-    size_t f_index;                   ///< Index for the first array
-    size_t s_index;                   ///< Index for the second array
+    size_t f_index = 0;               ///< Index for the first array
+    size_t s_index = 0;               ///< Index for the second array
     size_t f_length = first.size();   ///< Length of first array
     size_t s_length = second.size();  ///< Length of second array
     while (f_index < f_length && s_index < s_length) {
@@ -82,29 +82,28 @@ std::vector<int32_t> get_union(std::vector<int32_t> first,
 
 }  // namespace operations_on_datastructures
 
+/**
+ * @namespace tests
+ * @brief Testcases to check Reversal of Binary Tree.
+ */
+namespace tests {
+using namespace operations_on_datastructures;
+void test1() {
+    std::vector<int32_t> a = {};
+    std::vector<int32_t> b = {};
+    std::vector<int32_t> result = get_union(a, b);
+    assert(result == a);
+    print(result);
+}
+}  // namespace tests
+
+static void test() { tests::test1(); }
+
+/**
+ * @brief main function
+ * @returns 0 on exit
+ */
 int main() {
-    int m, n, i = 0, j = 0;
-    cout << "Enter size of both arrays:";
-    cin >> m >> n;
-    int a[m];
-    int b[n];
-    cout << "Enter elements of array 1:";
-    for (i = 0; i < m; i++) cin >> a[i];
-    cout << "Enter elements of array 2:";
-    for (i = 0; i < n; i++) cin >> b[i];
-    i = 0;
-    j = 0;
-    while ((i < m) && (j < n)) {
-        if (a[i] < b[j])
-            cout << a[i++] << " ";
-        else if (a[i] > b[j])
-            cout << b[j++] << " ";
-        else {
-            cout << a[i++];
-            j++;
-        }
-    }
-    while (i < m) cout << a[i++] << " ";
-    while (j < n) cout << b[j++] << " ";
+    test();  // run self-test implementations
     return 0;
 }
