@@ -16,8 +16,8 @@
  */
 namespace ciphers {
 /**
- *  @namespace rot13
- *  @brief Functions for [rot13 encode and
+ * @namespace rot13
+ * @brief Functions for the [Rot13 encode and
  * decode](https://en.wikipedia.org/wiki/ROT13) implementation.
  * */
 namespace rot13 {
