@@ -24,9 +24,10 @@ namespace operations_on_datastructures {
 /**
  * @brief Prints the values of a vector sequentially, ending with a newline
  * character.
+ * @param array Reference to the array to be printed
  * @returns void
  */
-void print(std::vector<int32_t> &array) {
+void print(const std::vector<int32_t> &array) {
     for (int64_t i : array) {
         std::cout << i << " ";  /// Print each value in the array
     }
@@ -44,8 +45,8 @@ void print(std::vector<int32_t> &array) {
  * @param second A std::vector of sorted integer values
  * @returns A std::vector of the union of the two arrays, in ascending order
  */
-std::vector<int32_t> get_union(std::vector<int32_t> &first,
-                               std::vector<int32_t> &second) {
+std::vector<int32_t> get_union(const std::vector<int32_t> &first,
+                               const std::vector<int32_t> &second) {
     std::vector<int32_t> res;         ///< Vector to hold the union
     size_t f_index = 0;               ///< Index for the first array
     size_t s_index = 0;               ///< Index for the second array
@@ -54,7 +55,6 @@ std::vector<int32_t> get_union(std::vector<int32_t> &first,
     int32_t next = 0;  ///< Integer to store value of the next element
 
     while (f_index < f_length && s_index < s_length) {
-        int32_t next;  ///< Integer to store value of the next element
         if (first[f_index] < second[s_index]) {
             next = first[f_index];  ///< Append from first array
             f_index++;              ///< Increment index of second array
