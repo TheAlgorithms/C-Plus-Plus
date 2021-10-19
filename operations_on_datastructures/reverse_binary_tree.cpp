@@ -248,6 +248,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  ///< Run our Test cases
+    test();  // run self-test implementations
     return 0;
 }
