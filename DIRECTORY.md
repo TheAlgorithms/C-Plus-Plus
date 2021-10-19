@@ -19,6 +19,7 @@
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
+  * [Atbash Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/atbash_cipher.cpp)
   * [Base64 Encoding](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/base64_encoding.cpp)
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Elliptic Curve Key Exchange](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/elliptic_curve_key_exchange.cpp)
@@ -61,6 +62,7 @@
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_linked_list.cpp)
+  * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_queue.cpp)
   * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_queue.cpp)
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack_students.cpp)
