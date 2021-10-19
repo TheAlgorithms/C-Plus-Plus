@@ -151,7 +151,7 @@ class BinaryTree {
  * @namespace tests
  */
 namespace tests {
-using operations_on_datastructures::reverse_binary_tree;
+using operations_on_datastructures::reverse_binary_tree::BinaryTree;
 void test1() {
     BinaryTree bst;
     bst.add(5);
