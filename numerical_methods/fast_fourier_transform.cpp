@@ -7,8 +7,9 @@
  algorithm
  * has application in use case scenario where a user wants to find points of a
  function
- * in short period time by just using the coefficents of the polynomial
+ * in short period time by just using the coefficents of the polynomial 
  function.
+ * It can be also used to find inverse fourier transform by just switching the value of omega.
  * @details
  * https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to
   -solve-polynomial-multiplication-8018d511162f
@@ -65,10 +66,10 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
         y[i + n / 2] =
             ye[i] - pow(om, i) * yo[i];  /// Updating the last n/2 elements
     }
-    delete[] ye;
-    delete[] yo;
-    delete[] pe;
-    delete[] po;
+    delete[] ye; /// Deleting dynamic array ye
+    delete[] yo; /// Deleting dynamic array yo
+    delete[] pe; /// Deleting dynamic array pe
+    delete[] po; /// Deleting dynamic array po
     return y;  /// Returns the list
 }
 
@@ -119,10 +120,10 @@ static void test() {
         o2++;
     }
 
-    delete[] o1;
-    delete[] o2;
-    delete[] t1;
-    delete[] t2;
+    delete[] o1; /// Deleting dynamic array o1
+    delete[] o2; /// Deleting dynamic array o2
+    delete[] t1; /// Deleting dynamic array t1
+    delete[] t2; /// Deleting dynamic array t2
 }
 
 /**
