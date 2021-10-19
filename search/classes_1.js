@@ -55,7 +55,7 @@ var searchData=
   ['binary_5ffunction_52',['binary_function',['http://en.cppreference.com/w/cpp/utility/functional/binary_function.html',0,'std']]],
   ['binary_5fnegate_53',['binary_negate',['http://en.cppreference.com/w/cpp/utility/functional/binary_negate.html',0,'std']]],
   ['binary_5fsearch_5ftree_54',['binary_search_tree',['../d9/dde/classbinary__search__tree.html',1,'']]],
-  ['binarytree_55',['BinaryTree',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html',1,'others::iterative_tree_traversals']]],
+  ['binarytree_55',['BinaryTree',['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree'],['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html',1,'others::iterative_tree_traversals::BinaryTree']]],
   ['binomial_5fdistribution_56',['binomial_distribution',['http://en.cppreference.com/w/cpp/numeric/random/binomial_distribution.html',0,'std']]],
   ['bit_5fand_57',['bit_and',['http://en.cppreference.com/w/cpp/utility/functional/bit_and.html',0,'std']]],
   ['bit_5fnot_58',['bit_not',['http://en.cppreference.com/w/cpp/utility/functional/bit_not.html',0,'std']]],

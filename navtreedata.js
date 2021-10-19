@@ -136,15 +136,15 @@ var NAVTREEINDEX =
 "d1/d83/classuint256__t.html#aa0e532832640e9fe273b35c481b18963",
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a9f1cb54ed09fde931bf3220d75ee4c57",
 "d4/d48/hamming__distance_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d5/d83/lcm__sum_8cpp.html#a04065193d190d605e1f0d0d93a87e244",
-"d6/d7a/golden__search__extrema_8cpp.html#a6d0455dd5c30adda100e95f0423c786e",
-"d8/d28/classrange__queries_1_1per_seg_tree.html#af87494e6cf012d28c4f5b9d1c15f9c5d",
-"d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html",
-"da/d9a/class_graph.html#aa99d44d3179d5bbbfa84a5031cf80cb1",
-"db/da9/classqueue.html#a592c0580551ec0d3b4d43e8198d8a377",
-"dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d",
-"df/d42/binary__search__tree2_8cpp.html#a1d42876440ac5346e2850a32497385c3",
-""
+"d5/d67/complex__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"d6/d74/namespacekadane.html",
+"d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79",
+"d9/d23/classgraph_1_1_lowest_common_ancestor.html#a80825a4fd4c41860b689d253dd2c8e93",
+"da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#ad3993dbca9c5b3ef9ac361dc7f62ce57",
+"db/d9a/classuint128__t.html#abfc6a8765039cacc829a5cd386b5a066",
+"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e",
+"df/d06/decimal__to__binary_8cpp.html",
+"globals_s.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

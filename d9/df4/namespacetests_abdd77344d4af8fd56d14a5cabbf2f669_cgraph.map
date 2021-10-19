@@ -1,0 +1,4 @@
+<map id="tests::test2" name="tests::test2">
+<area shape="rect" id="node1" title="A Test to check an edge case (NULL root element)" alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="140,5,255,32"/>
+</map>
