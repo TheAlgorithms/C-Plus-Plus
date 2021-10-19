@@ -31,10 +31,10 @@ struct Node {
     /**
      * @brief Creates a new Node with some initial data
      */
-    Node(int _data) {
-        data = _data;  ///< Set value of Node data
-        left = NULL;   ///< Initialize left child to NULL
-        right = NULL;  ///< Initialize right child to NULL
+    explicit Node(int _data) {
+        data = _data;     ///< Set value of Node data
+        left = nullptr;   ///< Initialize left child to NULL
+        right = nullptr;  ///< Initialize right child to NULL
     }
 };
 
@@ -56,7 +56,7 @@ class BinaryTree {
      * @returns Node pointer to the root
      */
     Node* insert(int data, Node* pivot) {
-        if (pivot == NULL) {
+        if (pivot == nullptr) {
             return new Node(data);  ///< Create new node
         }
         if (data <= pivot->data) {
@@ -75,7 +75,7 @@ class BinaryTree {
      * @returns Node pointer to root node
      */
     Node* reverseBinaryTree(Node* pivot) {
-        if (pivot == NULL) {
+        if (pivot == nullptr) {
             return pivot;  ///< Base case
         }
         Node* temp = pivot->left;  ///< pointer to the left subtree
@@ -88,11 +88,11 @@ class BinaryTree {
     /**
      * @brief Creates a BinaryTree with a root pointing to NULL.
      */
-    BinaryTree() { root = NULL; }
+    BinaryTree() { root = nullptr; }
     /**
      * @brief Creates a BinaryTree with a root with an initial value.
      */
-    BinaryTree(int data) { root = new Node(data); }
+    explicit BinaryTree(int data) { root = new Node(data); }
     /**
      * @brief Adds a new Node to the Binary Tree
      */
@@ -113,7 +113,7 @@ class BinaryTree {
      */
     std::vector<int> get_level_order() {
         std::vector<int> data;  ///< Result vector of int
-        if (root == NULL) {
+        if (root == nullptr) {
             return data;  ///< Return empty vector if root is Invalid
         }
         std::queue<Node*> nodes;  ///< Queue of the nodes in the tree
@@ -122,10 +122,10 @@ class BinaryTree {
             Node* temp = nodes.back();   ///< Copy the first element
             data.push_back(temp->data);  ///< Add the element to the data
             nodes.pop();                 ///< Remove element
-            if (temp->left != NULL) {
+            if (temp->left != nullptr) {
                 nodes.push(temp->left);  ///< Insert left node
             }
-            if (temp->right != NULL) {
+            if (temp->right != nullptr) {
                 nodes.push(temp->right);  ///< Insert right node
             }
         }  /// Add nodes while Tree is not empty
