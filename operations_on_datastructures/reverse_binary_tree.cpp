@@ -82,29 +82,50 @@ class BinaryTree {
     BinaryTree(int data) { root = new Node(data); }
     void add(int data) { root = insert(data, root); }
     void reverse() { root = reverseBinaryTree(root); }
+    /**
+     * @brief Level order traversal of a tree consists of visiting its
+     * elements, top to bottom, left to right. This function performs
+     * level order traversal and returns the node datas as a vector.
+     * @details The function uses a queue to append and remove elements
+     * as they are visited, and then adds their children, if any. This
+     * ensures that the elements are visited layer-by-layer, starting
+     * from the root of the Tree.
+     * @returns vector<int> of nodes of the tree.
+     */
     std::vector<int> get_level_order() {
-        std::vector<int> data;
+        std::vector<int> data;  ///< Result vector of int
         if (root == NULL) {
-            return data;
+            return data;  ///< Return empty vector if root is Invalid
         }
-        std::queue<Node*> nodes;
-        nodes.push(root);
+        std::queue<Node*> nodes;  ///< Queue of the nodes in the tree
+        nodes.push(root);         ///< Insert root into the queue
         while (!nodes.empty()) {
-            Node* temp = nodes.back();
-            data.push_back(temp);
-            nodes.pop();
+            Node* temp = nodes.back();   ///< Copy the first element
+            data.push_back(temp->data);  ///< Add the element to the data
+            nodes.pop();                 ///< Remove element
             if (temp->left != NULL) {
-                nodes.push(temp->left);
+                nodes.push(temp->left);  ///< Insert left node
             }
             if (temp->right != NULL) {
-                nodes.push(temp->right);
+                nodes.push(temp->right);  ///< Insert right node
             }
-        }
+        }  /// Add nodes while Tree is not empty
         return data;
+    }
+    /**
+     * @brief Prints all of the elements in the tree to stdout
+     * level-by-level, using the get_level_order() function.
+     */
+    void print() {
+        for (int i : get_level_order()) {
+            std::cout << i << " ";  /// Print each element in the tree
+        }
+        std::cout << "\n";  /// Print newline
     }
 };
 
 }  // namespace reverse_binary_tree
 }  // namespace operations_on_datastructures
+static void tests() {}
 
 int main() {}
