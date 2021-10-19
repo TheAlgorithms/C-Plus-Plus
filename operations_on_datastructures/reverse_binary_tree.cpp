@@ -1,7 +1,12 @@
 /**
  * @file
- * @brief An implemention for Reversing a Binary Tree recursively.
- *
+ * @brief An implemention for [Reversing a Binary
+ * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively.
+ * @details A binary tree can be reversed by swapping the left and
+ * right child of a node at each node, starting from the root, and
+ * cascading below. This solution aims to provide an implementation of
+ * a recursive reversal of a binary tree.
+ * @author [Alvin](https://github.com/polarvoid)
  */
 
 #include <cassert>   /// For assert
@@ -119,7 +124,7 @@ class BinaryTree {
         std::queue<Node*> nodes;  ///< Queue of the nodes in the tree
         nodes.push(root);         ///< Insert root into the queue
         while (!nodes.empty()) {
-            Node* temp = nodes.back();   ///< Copy the first element
+            Node* temp = nodes.front();  ///< Copy the first element
             data.push_back(temp->data);  ///< Add the element to the data
             nodes.pop();                 ///< Remove element
             if (temp->left != NULL) {
@@ -149,29 +154,100 @@ class BinaryTree {
 
 /**
  * @namespace tests
+ * @brief Testcases to check Reversal of Binary Tree.
  */
 namespace tests {
-using operations_on_datastructures::reverse_binary_tree::BinaryTree;
+using operations_on_datastructures::reverse_binary_tree::
+    BinaryTree;  ///< Use the BinaryTree
+/**
+ * @brief A Test to check an edge case (single element reversal)
+ */
 void test1() {
     BinaryTree bst;
+    std::vector<int> pre_reversal, post_reversal;
+    std::cout << "TEST CASE 1\n";
+    std::cout << "Initializing tree with a single element (5)\n";
     bst.add(5);
+    pre_reversal = bst.get_level_order();
+    std::cout << "Before reversal: ";
     bst.print();
+    std::cout << "After reversal: ";
+    bst.reverse();
+    post_reversal = bst.get_level_order();
+    assert(pre_reversal.size() ==
+           post_reversal.size());  ///< Check for equal sizes
+    assert(pre_reversal.size() ==
+           1);  ///< Ensure that there is only one element
+    assert(pre_reversal[0] ==
+           post_reversal[0]);  ///< Check if both elements are same
+    bst.print();
+    std::cout << "TEST PASSED!\n\n";
 }
+/**
+ * @brief A Test to check an edge case (NULL root element)
+ */
 void test2() {
     BinaryTree bst;
-    bst.add(7);
-    bst.add(5);
-    bst.add(9);
+    std::vector<int> pre_reversal, post_reversal;
+    std::cout << "TEST CASE 2\n";
+    std::cout << "Creating empty tree (root points to NULL)\n";
+    pre_reversal = bst.get_level_order();
+    std::cout << "Before reversal: ";
     bst.print();
+    std::cout << "After reversal: ";
+    bst.reverse();
+    post_reversal = bst.get_level_order();
+    assert(pre_reversal.size() ==
+           post_reversal.size());  ///< Check for equal sizes
+    assert(pre_reversal.size() ==
+           0);  ///< Ensure that there is only one element
+    bst.print();
+    std::cout << "TEST PASSED!\n\n";
+}
+/**
+ * @brief A Test to check correct reversal of a Binary Tree
+ */
+void test3() {
+    BinaryTree bst;
+    std::vector<int> pre_reversal, post_reversal;
+    std::vector<int> pre_res = {4, 3, 6, 2, 5, 7, 1};
+    std::vector<int> post_res = {4, 6, 3, 7, 5, 2, 1};
+    std::cout << "TEST CASE 3\n";
+    std::cout << "Creating tree with elements (4, 6, 3, 2, 5, 7, 1)\n";
+    bst.add(4);
+    bst.add(6);
+    bst.add(3);
+    bst.add(2);
+    bst.add(5);
+    bst.add(7);
+    bst.add(1);
+    pre_reversal = bst.get_level_order();
+    assert(pre_reversal == pre_res);  ///< Check for equality
+    std::cout << "Before reversal: ";
+    bst.print();
+    std::cout << "After reversal: ";
+    bst.reverse();
+    post_reversal = bst.get_level_order();
+    assert(post_reversal == post_res);  ///< Check for equality
+    bst.print();
+    std::cout << "TEST PASSED!\n\n";
 }
 }  // namespace tests
 
+/**
+ * @brief Function to test the correctness of the Tree Reversal
+ */
 static void test() {
-    tests::test1();
-    tests::test2();
+    tests::test1();  ///< Single element test
+    tests::test2();  ///< No element test
+    tests::test3();  ///< Correct reversal test
 }
 
+/**
+ * @brief main function
+ * @returns 0 on exit
+ */
 int main() {
-    test();
+    test();  ///< Run our Test cases
     return 0;
 }
