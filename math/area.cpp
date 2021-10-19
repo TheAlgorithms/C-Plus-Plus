@@ -95,9 +95,37 @@ T cylinder_surface_area(T radius, T height) {
 }
 
 static void test() {
+    // Testing I/O variables
+    int int_input;
+    int int_expected;
+    int int_area;
+
+    float float_input;
+    float float_expected;
+    float float_area;
+
 	// 1st test
-    int area = circle_area(5);
-    std::cout << area;
+    std::cout << "SQUARE AREA: " << std::endl << std::endl;
+    int_input = 5;
+    int_expected = 25;
+    int_area = square_area(int_input);
+    std::cout << "Input: " << int_input << std::endl;
+    std::cout << "Expected Output: " << int_expected << std::endl;
+    std::cout << "Output: " << int_area << std::endl;
+    assert(int_area == int_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 2nd test
+    float_input = 2.5;
+    float_expected = 6.25;
+    float_area = square_area(float_input);
+
+    std::cout << "Input: " << float_input << std::endl;
+    std::cout << "Expected Output: " << float_expected << std::endl;
+    std::cout << "Output: " << float_area << std::endl;
+    assert(float_area == float_expected);
+    std::cout << "TEST PASSED" << std::endl;
+
 }
 
 int main() {
