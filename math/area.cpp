@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief [Area Formula](https://en.wikipedia.org/wiki/Area) implementations
+ * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of various shapes
  * @details
  * 
  * @author [Focusucof](https://github.com/Focusucof)
