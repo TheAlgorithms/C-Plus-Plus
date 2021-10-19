@@ -22,13 +22,64 @@ using namespace std;
  */
 namespace operations_on_datastructures {
 
-void print(vector<int32_t> array) {
+/**
+ * @brief Prints the values of a vector sequentially, ending with a newline
+ * character.
+ * @returns void
+ */
+void print(std::vector<int32_t> array) {
     for (int64_t i : array) {
         std::cout << i << " ";  /// Print each value in the array
     }
     std::cout << "\n";  /// Print newline
 }
-vector<int32_t> get_union(vector<int32_t> first, vector<int32_t> second) {}
+
+/**
+ * @brief Gets the union of two sorted arrays, and returns them in a
+ * vector.
+ * @details An algorithm is used that compares the elements of the two vectors,
+ * appending the one that has a lower value, and incrementing the index for that
+ * array. If one of the arrays reaches its end, all the elements of the other
+ * are appended to the resultant vector.
+ * @param first A std::vector of sorted integer values
+ * @param second A std::vector of sorted integer values
+ * @returns A std::vector of the union of the two arrays, in ascending order
+ */
+std::vector<int32_t> get_union(std::vector<int32_t> first,
+                               std::vector<int32_t> second) {
+    std::vector<int32_t> res;         ///< Vector to hold the union
+    size_t f_index;                   ///< Index for the first array
+    size_t s_index;                   ///< Index for the second array
+    size_t f_length = first.size();   ///< Length of first array
+    size_t s_length = second.size();  ///< Length of second array
+    while (f_index < f_length && s_index < s_length) {
+        int32_t next;  ///< Integer to store value of the next element
+        if (first[f_index] < second[s_index]) {
+            next = first[f_index];  ///< Append from first array
+            f_index++;              ///< Increment index of second array
+        } else if (first[f_index] > second[s_index]) {
+            next = second[s_index];  ///< Append from second array
+            s_index++;               ///< Increment index of second array
+        } else {
+            next = first[f_index];  ///< Element is the same in both
+            f_index++;              ///< Increment index of first array
+            s_index++;              ///< Increment index of second array too
+        }
+        if (next != res.back()) {
+            res.push_back(next);  ///< Add the element if it is unique
+        }
+    }
+    while (f_index < f_length) {
+        res.push_back(first[f_index]);  ///< Append remaining elements
+        f_index++;
+    }
+    while (s_index < s_length) {
+        res.push_back(second[s_index]);  ///< Append remaining elements
+        s_index++;
+    }
+    return res;
+}
+
 }  // namespace operations_on_datastructures
 
 int main() {
