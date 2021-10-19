@@ -19,7 +19,7 @@
  * @param visited is the vector which stores whether a given node has been traversed or not yet
  * @returns boolean
  */
-bool checkBipartite(std::vector<std::vector<int64_t>>& graph, int64_t index, std::vector<int64_t>& visited)
+bool checkBipartite(std::vector<std::vector<int64_t>> graph, int64_t index, std::vector<int64_t> visited)
 {
     std::queue<int64_t> q; ///< stores the neighbouring node indexes in squence of being reached
     q.push(index);         /// insert the current node into the queue
@@ -49,7 +49,7 @@ bool checkBipartite(std::vector<std::vector<int64_t>>& graph, int64_t index, std
  * @param graph is a 2D matrix whose rows or the first index signify the node and values in that row signify the nodes it is connected to
  * @returns booleans
  */
-bool isBipartite(std::vector<std::vector<int64_t>>& graph) 
+bool isBipartite(std::vector<std::vector<int64_t>> graph) 
 {
     std::vector<int64_t> visited(graph.size()); ///< stores boolean values which signify whether that node had been visited or not
     
