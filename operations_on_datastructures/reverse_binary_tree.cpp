@@ -1,12 +1,8 @@
 /**
  * @file
-<<<<<<< Updated upstream
  * @brief Implementation for the [Reversing a Binary
- * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively algorithm.
-=======
- * @brief Implemention for [Reversing a Binary
- * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively.
->>>>>>> Stashed changes
+ * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively
+ * algorithm.
  * @details A binary tree can be reversed by swapping the left and
  * right child of a node at each node, starting from the root, and
  * cascading below. This solution aims to provide an implementation of
@@ -27,7 +23,8 @@ namespace operations_on_datastructures {
 
 /**
  * @namespace reverse_binary_tree
- * @brief Functions for the [Reverse a Binary Tree](https://www.geeksforgeeks.org/reverse-tree-path/) implementation
+ * @brief Functions for the [Reverse a Binary
+ * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) implementation
  */
 namespace reverse_binary_tree {
 
