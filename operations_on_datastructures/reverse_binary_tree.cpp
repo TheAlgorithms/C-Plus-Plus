@@ -22,7 +22,7 @@ namespace operations_on_datastructures {
 
 /**
  * @namespace reverse_binary_tree
- * @brief Functions for Creating and Reversing a Binary Tree
+ * @brief Functions for the [Reverse a Binary Tree](https://www.geeksforgeeks.org/reverse-tree-path/) implementation
  */
 namespace reverse_binary_tree {
 
