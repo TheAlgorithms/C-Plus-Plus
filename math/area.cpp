@@ -58,6 +58,34 @@ int parallelogram_area(int base, int height) {
 	return base * height;
 }
 
+/**
+ * @brief surface area of a cube ( 6 * (l * l))
+ * @param length is the length of the cube
+ * @returns surface area of the cube
+ */
+int cube_surface_area(int length) {
+	return 6 * length * length;
+}
+
+/**
+ * @brief surface area of a sphere ( 4 * pi * r^2)
+ * @param radius is the radius of the sphere
+ * @returns surface area of the sphere
+ */
+int sphere_surface_area(int radius) {
+	return 4 * M_PI * pow(radius, 2);
+}
+
+/**
+ * @brief surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)
+ * @param radius is the radius of the cylinder
+ * @param height is the height of the cylinder
+ * @returns surface area of the cylinder
+ */
+int cylinder_surface_area(int radius, int height) {
+    return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+}
+
 static void test() {
 	// 1st test
 	int area = square_area(4);
