@@ -15,7 +15,8 @@
  * @param length is the length of the square
  * @returns area of square 
  */
-int square_area(int length) {
+template <typename T>
+T square_area(T length) {
 	return length * length;
 }
 
@@ -25,7 +26,8 @@ int square_area(int length) {
  * @param width is the width of the rectangle
  * @returns area of the rectangle
  */
-int rect_area(int length, int width) {
+template <typename T>
+T rect_area(T length, T width) {
 	return length * width;
 }
 
@@ -35,7 +37,8 @@ int rect_area(int length, int width) {
  * @param height is the length of the tallest point in the triangle
  * @returns area of the triangle 
  */
-int triangle_area(int base, int height) {
+template <typename T>
+T triangle_area(T base, T height) {
 	return base * height / 2;
 }
 
@@ -44,7 +47,8 @@ int triangle_area(int base, int height) {
  * @param radius is the radius of the circle
  * @returns area of the circle
  */
-int circle_area(int radius) {
+template <typename T>
+T circle_area(T radius) {
 	return M_PI * pow(radius, 2);
 }
 
@@ -54,7 +58,8 @@ int circle_area(int radius) {
  * @param height is the length of the tallest point in the parallelogram
  * @returns area of the parallelogram
  */
-int parallelogram_area(int base, int height) {
+template <typename T>
+T parallelogram_area(T base, T height) {
 	return base * height;
 }
 
@@ -63,7 +68,8 @@ int parallelogram_area(int base, int height) {
  * @param length is the length of the cube
  * @returns surface area of the cube
  */
-int cube_surface_area(int length) {
+template <typename T>
+T cube_surface_area(T length) {
 	return 6 * length * length;
 }
 
@@ -72,7 +78,8 @@ int cube_surface_area(int length) {
  * @param radius is the radius of the sphere
  * @returns surface area of the sphere
  */
-int sphere_surface_area(int radius) {
+template <typename T>
+T sphere_surface_area(T radius) {
 	return 4 * M_PI * pow(radius, 2);
 }
 
@@ -82,13 +89,14 @@ int sphere_surface_area(int radius) {
  * @param height is the height of the cylinder
  * @returns surface area of the cylinder
  */
-int cylinder_surface_area(int radius, int height) {
+template <typename T>
+T cylinder_surface_area(T radius, T height) {
     return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
 }
 
 static void test() {
 	// 1st test
-	int area = square_area(4);
+    int area = circle_area(5);
     std::cout << area;
 }
 
