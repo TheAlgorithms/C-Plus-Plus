@@ -57,30 +57,49 @@ class BinaryTree {
      */
     Node* insert(int data, Node* pivot) {
         if (pivot == NULL) {
-            return new Node(data);
+            return new Node(data);  ///< Create new node
         }
         if (data <= pivot->data) {
-            pivot->left = insert(data, pivot->left);
+            pivot->left =
+                insert(data, pivot->left);  ///< Insert Node to the left
         } else {
-            pivot->right = insert(data, pivot->right);
+            pivot->right =
+                insert(data, pivot->right);  ///< Insert node to the right
         }
         return pivot;
     }
+    /**
+     * @brief Reverses a Binary Tree recursively by swapping the left and
+     * right subtrees and their children.
+     * @param pivot A reference to the root of the (sub)tree
+     * @returns Node pointer to root node
+     */
     Node* reverseBinaryTree(Node* pivot) {
         if (pivot == NULL) {
-            return pivot;
+            return pivot;  ///< Base case
         }
-        Node* temp = pivot->left;
-        pivot->left = reverseBinaryTree(pivot->right);
-        pivot->right = reverseBinaryTree(temp);
+        Node* temp = pivot->left;  ///< pointer to the left subtree
+        pivot->left = reverseBinaryTree(pivot->right);  ///< Swap
+        pivot->right = reverseBinaryTree(temp);         ///< Swap
         return pivot;
     }
 
  public:
+    /**
+     * @brief Creates a BinaryTree with a root pointing to NULL.
+     */
     BinaryTree() { root = NULL; }
-    BinaryTree(Node* _root) { root = _root; }
+    /**
+     * @brief Creates a BinaryTree with a root with an initial value.
+     */
     BinaryTree(int data) { root = new Node(data); }
+    /**
+     * @brief Adds a new Node to the Binary Tree
+     */
     void add(int data) { root = insert(data, root); }
+    /**
+     * Reverses the Binary Tree
+     */
     void reverse() { root = reverseBinaryTree(root); }
     /**
      * @brief Level order traversal of a tree consists of visiting its
@@ -115,6 +134,7 @@ class BinaryTree {
     /**
      * @brief Prints all of the elements in the tree to stdout
      * level-by-level, using the get_level_order() function.
+     * @returns void
      */
     void print() {
         for (int i : get_level_order()) {
@@ -126,6 +146,32 @@ class BinaryTree {
 
 }  // namespace reverse_binary_tree
 }  // namespace operations_on_datastructures
-static void tests() {}
 
-int main() {}
+/**
+ * @namespace tests
+ */
+namespace tests {
+using operations_on_datastructures::reverse_binary_tree;
+void test1() {
+    BinaryTree bst;
+    bst.add(5);
+    bst.print();
+}
+void test2() {
+    BinaryTree bst;
+    bst.add(7);
+    bst.add(5);
+    bst.add(9);
+    bst.print();
+}
+}  // namespace tests
+
+static void tests() {
+    tests::test1();
+    tests::test2();
+}
+
+int main() {
+    tests();
+    return 0;
+}
