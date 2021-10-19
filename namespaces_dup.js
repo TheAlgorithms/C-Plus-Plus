@@ -2,6 +2,7 @@ var namespaces_dup =
 [
     [ "abbreviation", "d0/df8/namespaceabbreviation.html", null ],
     [ "activations", "d5/d39/namespaceactivations.html", null ],
+    [ "atbash", "de/db3/namespaceatbash.html", null ],
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", [
       [ "n_queens", null, [

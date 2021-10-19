@@ -1,5 +1,8 @@
 var namespaceciphers =
 [
+    [ "atbash", null, [
+      [ "atbash_cipher", "dc/dfb/atbash__cipher_8cpp.html#ae633d82f248dffe0d2f6bdf82e56b7b5", null ]
+    ] ],
     [ "caesar", null, [
       [ "decrypt", "d6/d2c/caesar__cipher_8cpp.html#a355e69511cd2006b5c4c80ae95b71056", null ],
       [ "encrypt", "d6/d2c/caesar__cipher_8cpp.html#ac3381121289548640b1c27a58a8524c3", null ]

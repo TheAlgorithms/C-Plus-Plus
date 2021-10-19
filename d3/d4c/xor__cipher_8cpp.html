@@ -112,7 +112,7 @@ Include dependency graph for xor_cipher.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d6/d4e/namespaceciphers"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/namespaceciphers.html">ciphers</a></td></tr>
-<tr class="memdesc:d6/d4e/namespaceciphers"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Base64" target="_blank">Base64 Encoding and Decoding</a> <br /></td></tr>
+<tr class="memdesc:d6/d4e/namespaceciphers"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d7/d47/namespace_x_o_r"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/namespace_x_o_r.html">XOR</a></td></tr>
 <tr class="memdesc:d7/d47/namespace_x_o_r"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for <a href="https://en.wikipedia.org/wiki/XOR_cipher" target="_blank">XOR cipher</a> algorithm. <br /></td></tr>
@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <li>\( (B {\oplus} A) {\oplus} B = B {\oplus} 0 = B \)</li>
 </ul>
 <p >where \(\oplus\) symbol denotes the exclusive disjunction (<a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a>) operation. This operation is sometimes called modulus 2 addition (or subtraction, which is identical). With this logic, a string of text can be encrypted by applying the bitwise <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operator to every character using a given key. To decrypt the output, merely reapplying the <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> function with the key will remove the cipher.</p>
-<h3><a class="anchor" id="autotoc_md2"></a>
+<h3><a class="anchor" id="autotoc_md3"></a>
 Algorithm</h3>
 <p >Choose the key for encryption and apply <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operation to each character of a string. Reapplying <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> operation to each character of encrypted string will give original string back.</p>
 <dl class="section note"><dt>Note</dt><dd>This program implements <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> Cipher for string with ASCII characters.</dd></dl>
