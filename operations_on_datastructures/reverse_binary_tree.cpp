@@ -166,12 +166,12 @@ void test2() {
 }
 }  // namespace tests
 
-static void tests() {
+static void test() {
     tests::test1();
     tests::test2();
 }
 
 int main() {
-    tests();
+    test();
     return 0;
 }
