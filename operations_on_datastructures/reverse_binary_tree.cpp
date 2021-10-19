@@ -1,7 +1,12 @@
 /**
  * @file
+<<<<<<< Updated upstream
  * @brief Implementation for the [Reversing a Binary
  * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively algorithm.
+=======
+ * @brief Implemention for [Reversing a Binary
+ * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively.
+>>>>>>> Stashed changes
  * @details A binary tree can be reversed by swapping the left and
  * right child of a node at each node, starting from the root, and
  * cascading below. This solution aims to provide an implementation of
@@ -30,13 +35,13 @@ namespace reverse_binary_tree {
  * @brief A Node struct that represents a single node in a Binary Tree
  */
 struct Node {
-    int data;     ///< The value of the Node
-    Node* left;   ///< The Node's left child
-    Node* right;  ///< The Node's right child
+    int64_t data;  ///< The value of the Node
+    Node* left;    ///< The Node's left child
+    Node* right;   ///< The Node's right child
     /**
      * @brief Creates a new Node with some initial data
      */
-    explicit Node(int _data) {
+    explicit Node(int64_t _data) {
         data = _data;     ///< Set value of Node data
         left = nullptr;   ///< Initialize left child to NULL
         right = nullptr;  ///< Initialize right child to NULL
@@ -60,7 +65,7 @@ class BinaryTree {
      * @param pivot A pointer to the root node of the (sub)tree
      * @returns Node pointer to the root
      */
-    Node* insert(int data, Node* pivot) {
+    Node* insert(int64_t data, Node* pivot) {
         if (pivot == nullptr) {
             return new Node(data);  ///< Create new node
         }
@@ -97,11 +102,11 @@ class BinaryTree {
     /**
      * @brief Creates a BinaryTree with a root with an initial value.
      */
-    explicit BinaryTree(int data) { root = new Node(data); }
+    explicit BinaryTree(int64_t data) { root = new Node(data); }
     /**
      * @brief Adds a new Node to the Binary Tree
      */
-    void add(int data) { root = insert(data, root); }
+    void add(int64_t data) { root = insert(data, root); }
     /**
      * Reverses the Binary Tree
      */
@@ -114,10 +119,10 @@ class BinaryTree {
      * as they are visited, and then adds their children, if any. This
      * ensures that the elements are visited layer-by-layer, starting
      * from the root of the Tree.
-     * @returns vector<int> of nodes of the tree.
+     * @returns vector<int64_t> of nodes of the tree.
      */
-    std::vector<int> get_level_order() {
-        std::vector<int> data;  ///< Result vector of int
+    std::vector<int64_t> get_level_order() {
+        std::vector<int64_t> data;  ///< Result vector of int
         if (root == nullptr) {
             return data;  ///< Return empty vector if root is Invalid
         }
@@ -164,7 +169,7 @@ using operations_on_datastructures::reverse_binary_tree::
  */
 void test1() {
     BinaryTree bst;
-    std::vector<int> pre_reversal, post_reversal;
+    std::vector<int64_t> pre_reversal, post_reversal;
     std::cout << "TEST CASE 1\n";
     std::cout << "Initializing tree with a single element (5)\n";
     bst.add(5);
@@ -188,7 +193,7 @@ void test1() {
  */
 void test2() {
     BinaryTree bst;
-    std::vector<int> pre_reversal, post_reversal;
+    std::vector<int64_t> pre_reversal, post_reversal;
     std::cout << "TEST CASE 2\n";
     std::cout << "Creating empty tree (root points to NULL)\n";
     pre_reversal = bst.get_level_order();
@@ -209,9 +214,9 @@ void test2() {
  */
 void test3() {
     BinaryTree bst;
-    std::vector<int> pre_reversal, post_reversal;
-    std::vector<int> pre_res = {4, 3, 6, 2, 5, 7, 1};
-    std::vector<int> post_res = {4, 6, 3, 7, 5, 2, 1};
+    std::vector<int64_t> pre_reversal, post_reversal;
+    std::vector<int64_t> pre_res = {4, 3, 6, 2, 5, 7, 1};
+    std::vector<int64_t> post_res = {4, 6, 3, 7, 5, 2, 1};
     std::cout << "TEST CASE 3\n";
     std::cout << "Creating tree with elements (4, 6, 3, 2, 5, 7, 1)\n";
     bst.add(4);
