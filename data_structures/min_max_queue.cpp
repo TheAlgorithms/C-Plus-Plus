@@ -18,9 +18,7 @@
 #include <iostream>
 #include <deque>
 #include <queue>
-using std::cout;
 using std::deque;
-using std::endl;
 using std::queue;
 
 /**
@@ -107,6 +105,47 @@ namespace min_max_queue {
 }  // namespace min_max_queue
 }  // namespace data_structures
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    data_structures::min_max_queue::MinMaxQueue q;
+    // Enqueing
+    q.push(3);
+    assert(q.getMax() == 3);
+    assert(q.getMin() == 3);
+    q.push(4);
+    assert(q.getMax() == 4);
+    assert(q.getMin() == 3);
+    q.push(0);
+    assert(q.getMax() == 4);
+    assert(q.getMin() == 0);
+    q.push(92);
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 0);
+    q.push(12);
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 0);
+    // Dequeueing
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 0);
+    q.pop();
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 0);
+    q.pop();
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 0);
+    q.pop();
+    assert(q.getMax() == 92);
+    assert(q.getMin() == 12);
+    q.pop();
+    assert(q.getMax() == 12);
+    assert(q.getMin() == 12);
+    q.pop();
+
+    std::cout << "All tests have successfully passed!" << std::endl;
+}
 
 
 /**
@@ -117,22 +156,7 @@ namespace min_max_queue {
  */
 
 int main(int argc, char *argv[]) {
-    data_structures::min_max_queue::MinMaxQueue q;
-    int testArray[8] = {3, 4, 0, 92, 12, 34, 25, 1};
-
-    //Push array elements one by one
-    for(int a : testArray){
-        q.push(a);
-        cout << "Max: " << q.getMax() << " Min: " << q.getMin() << endl;
-    }
-
-    cout << "<Elements Added>" << endl;
-
-    //Pop the elements of the queue
-    while(!q.Q.empty()){
-        cout << "Max: " << q.getMax() << " Min: " << q.getMin() << endl;       
-        q.pop();        
-    }
+    test();
 
     return 0;
 }
