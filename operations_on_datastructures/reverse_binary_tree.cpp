@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Implementation for the [Reversing a Binary
- * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively.
+ * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively algorithm.
  * @details A binary tree can be reversed by swapping the left and
  * right child of a node at each node, starting from the root, and
  * cascading below. This solution aims to provide an implementation of
