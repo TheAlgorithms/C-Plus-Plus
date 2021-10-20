@@ -13,6 +13,11 @@
 #include <cassert> /// for assert
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
  * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
  * @param length is the length of the square
  * @returns area of square 
