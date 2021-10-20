@@ -91,13 +91,14 @@ std::vector<int32_t> get_union(const std::vector<int32_t> &first,
 
 /**
  * @namespace tests
- * @brief Testcases to check Reversal of Binary Tree.
+ * @brief Testcases to check Union of Two Arrays.
  */
 namespace tests {
 using operations_on_datastructures::get_union;
 using operations_on_datastructures::print;
 /**
  * @brief A Test to check an edge case (two empty arrays)
+ * @returns void
  */
 void test1() {
     std::cout << "TEST CASE 1\n";
@@ -112,6 +113,7 @@ void test1() {
 }
 /**
  * @brief A Test to check an edge case (one empty array)
+ * @returns void
  */
 void test2() {
     std::cout << "TEST CASE 2\n";
@@ -126,6 +128,7 @@ void test2() {
 }
 /**
  * @brief A Test to check correct functionality with a simple test case
+ * @returns void
  */
 void test3() {
     std::cout << "TEST CASE 3\n";
@@ -141,6 +144,7 @@ void test3() {
 }
 /**
  * @brief A Test to check correct functionality with duplicate values
+ * @returns void
  */
 void test4() {
     std::cout << "TEST CASE 4\n";
@@ -156,6 +160,7 @@ void test4() {
 }
 /**
  * @brief A Test to check correct functionality with a harder test case
+ * @returns void
  */
 void test5() {
     std::cout << "TEST CASE 5\n";
