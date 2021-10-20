@@ -15,8 +15,8 @@
  */
 
 #include <cassert>   // for assert
-#include <iostream>  // for IO operations
 #include <deque>     // for std::deque
+#include <iostream>  // for IO operations
 #include <queue>     // for std::queue
 using std::deque;
 using std::queue;
@@ -31,19 +31,19 @@ namespace min_max_queue {
 /**
  * @brief Implementation of the Min/Max Queue Class
  */
-    class MinMaxQueue {
-    public:
-        // To maintain order of elements
-        queue<int64_t> Q;
+class MinMaxQueue {
+ public:
+    // To maintain order of elements
+    queue<int64_t> Q;
 
-        // Deqeue to get Minimum in O(1)
-        deque<int64_t> D_min;
-        // Deqeue to get Maximum in O(1)
-        deque<int64_t> D_max;
-        
-        // Function to push a element
-        // into the queue
-        void push(int64_t element) {
+    // Deqeue to get Minimum in O(1)
+    deque<int64_t> D_min;
+    // Deqeue to get Maximum in O(1)
+    deque<int64_t> D_max;
+
+    // Function to push a element
+    // into the queue
+    void push(int64_t element) {
         Q.push(element);
 
         // If Queue is empty
@@ -147,6 +147,6 @@ static void test() {
  */
 
 int main(int argc, char *argv[]) {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
