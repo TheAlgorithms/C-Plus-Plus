@@ -8,9 +8,9 @@
  * @author [Focusucof](https://github.com/Focusucof)
  */
 #define _USE_MATH_DEFINES
-#include <math.h> // for M_PI definition and pow()
-#include <iostream> // for IO operations
-#include <cassert> // for assert
+#include <cmath>  /// for M_PI definition and pow()
+#include <iostream> /// for IO operations
+#include <cassert> /// for assert
 
 /**
  * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
