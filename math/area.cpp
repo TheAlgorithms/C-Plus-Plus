@@ -9,6 +9,7 @@
  */
 #define _USE_MATH_DEFINES
 #include <cmath>  /// for M_PI definition and pow()
+#include <cstdint> /// for 
 #include <iostream> /// for IO operations
 #include <cassert> /// for assert
 
@@ -174,7 +175,7 @@ static void test() {
     double_length = 2.5;
     double_width = 5.7;
     double_expected = 14.25;
-    double_area = rect_area(double_length, double_width);
+    double_area = math::rect_area(double_length, double_width);
 
     std::cout << "AREA OF A RECTANGLE (double)" << std::endl;
     std::cout << "Input Length: " << double_length << std::endl;
@@ -268,6 +269,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-	test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
