@@ -14,10 +14,10 @@
  * @author [Chirag](https://github.com/soul0101)
  */
 
-#include <cassert>  /// for assert
-#include <deque>
-#include <iostream>
-#include <queue>
+#include <cassert>   // for assert
+#include <iostream>  // for IO operations
+#include <deque>     // for std::deque
+#include <queue>     // for std::queue
 using std::deque;
 using std::queue;
 
@@ -31,19 +31,19 @@ namespace min_max_queue {
 /**
  * @brief Implementation of the Min/Max Queue Class
  */
-class MinMaxQueue {
- public:
-    // To maintain order of elements
-    queue<int> Q;
+    class MinMaxQueue {
+    public:
+        // To maintain order of elements
+        queue<int64_t> Q;
 
-    // Deqeue to get Minimum in O(1)
-    deque<int> D_min;
-    // Deqeue to get Maximum in O(1)
-    deque<int> D_max;
-
-    // Function to push a element
-    // into the queue
-    void push(int element) {
+        // Deqeue to get Minimum in O(1)
+        deque<int64_t> D_min;
+        // Deqeue to get Maximum in O(1)
+        deque<int64_t> D_max;
+        
+        // Function to push a element
+        // into the queue
+        void push(int64_t element) {
         Q.push(element);
 
         // If Queue is empty
@@ -89,9 +89,9 @@ class MinMaxQueue {
         Q.pop();
     }
 
-    int getMin() { return D_min.front(); }
+    int64_t getMin() { return D_min.front(); }
 
-    int getMax() { return D_max.front(); }
+    int64_t getMax() { return D_max.front(); }
 };
 
 }  // namespace min_max_queue
@@ -147,7 +147,6 @@ static void test() {
  */
 
 int main(int argc, char *argv[]) {
-    test();
-
+    test(); // run self-test implementations
     return 0;
 }
