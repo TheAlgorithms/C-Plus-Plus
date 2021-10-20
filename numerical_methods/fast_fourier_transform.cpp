@@ -10,6 +10,8 @@
  * in short period time by just using the coefficents of the polynomial 
  function.
  * It can be also used to find inverse fourier transform by just switching the value of omega.
+ * @time complexity
+ * this algorithm computes the DFT in O(nlogn) time in comparison to traditional O(n^2).
  * @details
  * https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to
   -solve-polynomial-multiplication-8018d511162f
