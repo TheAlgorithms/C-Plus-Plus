@@ -9,7 +9,7 @@
  */
 #define _USE_MATH_DEFINES
 #include <cmath>  /// for M_PI definition and pow()
-#include <cstdint> /// for 
+#include <cstdint> /// for uint16_t datatype
 #include <iostream> /// for IO operations
 #include <cassert> /// for assert
 
@@ -115,12 +115,12 @@ T cylinder_surface_area(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    int int_length;
-    int int_width;
-    int int_expected;
-    int int_area;
-    int int_base;
-    int int_height;
+    uint16_t int_length;
+    uint16_t int_width;
+    uint16_t int_expected;
+    uint16_t int_area;
+    uint16_t int_base;
+    uint16_t int_height;
 
     float float_length;
     float float_expected;
