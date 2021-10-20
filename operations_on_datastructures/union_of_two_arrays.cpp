@@ -192,6 +192,7 @@ void test6() {
 
 /**
  * @brief Function to test the correctness of get_union() function
+ * @returns void
  */
 static void test() {
     tests::test1();
