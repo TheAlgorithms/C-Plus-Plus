@@ -172,6 +172,7 @@ void test5() {
 /**
  * @brief A Test to check correct functionality with an array sorted using
  * std::sort
+ * @returns void
  */
 void test6() {
     std::cout << "TEST CASE 6\n";
