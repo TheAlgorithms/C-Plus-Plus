@@ -10,10 +10,10 @@
  * @author [Alvin](https://github.com/polarvoid)
  */
 
-#include <algorithm>  /// For std::sort
-#include <cassert>    /// For assert
-#include <iostream>   /// For IO operations
-#include <vector>     /// For std::vector
+#include <algorithm>  /// for std::sort
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
+#include <vector>     /// for std::vector
 
 /**
  * @namespace operations_on_datastructures
