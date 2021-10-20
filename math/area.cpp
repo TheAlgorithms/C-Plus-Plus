@@ -1,7 +1,9 @@
 /**
  * @file
  * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of various shapes
- * @details The area of 
+ * @details The area of a shape is the amount of 2D space it takes up. 
+ * All shapes have a formula to get the area of any given shape. 
+ * These implementations support multiple return types.
  * 
  * @author [Focusucof](https://github.com/Focusucof)
  */
