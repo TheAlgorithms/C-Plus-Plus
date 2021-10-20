@@ -19,6 +19,7 @@
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
+  * [Atbash Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/atbash_cipher.cpp)
   * [Base64 Encoding](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/base64_encoding.cpp)
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Elliptic Curve Key Exchange](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/elliptic_curve_key_exchange.cpp)
@@ -241,6 +242,7 @@
   * [Inorder Successor Of Bst](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/inorder_successor_of_bst.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
+  * [Reverse Binary Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_binary_tree.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
   * [Trie Multiple Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/trie_multiple_search.cpp)
   * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_2_arrays.cpp)
