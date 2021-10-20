@@ -3,10 +3,10 @@
  * @brief Implementation for the [Union of two sorted
  * Arrays](https://en.wikipedia.org/wiki/Union_(set_theory))
  * algorithm.
- * @details A binary tree can be reversed by swapping the left and
- * right child of a node at each node, starting from the root, and
- * cascading below. This solution aims to provide an implementation of
- * a recursive reversal of a binary tree.
+ * @details The Union of two arrays is the collection of all the unique elements
+ * in the first array, combined with all of the unique elements of a second
+ * array. This implementation uses ordered arrays, and an algorithm to correctly
+ * order them and return the result as a new array (vector).
  * @author [Alvin](https://github.com/polarvoid)
  */
 
