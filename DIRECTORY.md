@@ -162,6 +162,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
   * [Binomial Calculate](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binomial_calculate.cpp)
