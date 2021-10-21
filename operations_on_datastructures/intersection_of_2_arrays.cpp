@@ -52,7 +52,6 @@ std::vector<int32_t> get_intersection(const std::vector<int32_t> &first,
     size_t s_index = 0;               ///< Index for the second array
     size_t f_length = first.size();   ///< Length of first array
     size_t s_length = second.size();  ///< Length of second array
-    int32_t next = 0;  ///< Integer to store value of the next element
 
     while (f_index < f_length && s_index < s_length) {
         if (first[f_index] < second[s_index]) {
@@ -60,12 +59,12 @@ std::vector<int32_t> get_intersection(const std::vector<int32_t> &first,
         } else if (first[f_index] > second[s_index]) {
             s_index++;  ///< Increment index of second array
         } else {
-            next = first[f_index];  ///< A common element was found
-            f_index++;              ///< Increment index of first array
-            s_index++;              ///< Increment index of second array too
-        }
-        if ((res.size() == 0) || (next != res.back())) {
-            res.push_back(next);  ///< Add the element if it is unique
+            if ((res.size() == 0) || (first[f_index] != res.back())) {
+                res.push_back(
+                    first[f_index]);  ///< Add the element if it is unique
+            }
+            f_index++;  ///< Increment index of first array
+            s_index++;  ///< Increment index of second array too
         }
     }
     return res;
@@ -149,7 +148,7 @@ void test4() {
 void test5() {
     std::cout << "TEST CASE 5\n";
     std::cout << "Intialized a = {1, 2, 3, 4, 6, 7, 9} b = {2, 3, 4, 5}\n";
-    std::cout << "Expected result: {1, 2, 3, 4, 5, 6, 7, 9}\n";
+    std::cout << "Expected result: {2, 3, 4}\n";
     std::vector<int32_t> a = {1, 2, 3, 4, 6, 7, 9};
     std::vector<int32_t> b = {2, 3, 4, 5};
     std::vector<int32_t> result = get_intersection(a, b);
@@ -167,7 +166,7 @@ void test6() {
     std::cout << "TEST CASE 6\n";
     std::cout << "Intialized a = {1, 3, 3, 2, 5, 9, 4, 7, 3, 2} ";
     std::cout << "b = {11, 3, 7, 8, 6}\n";
-    std::cout << "Expected result: {1, 2, 3, 4, 5, 6, 7, 8, 9, 11}\n";
+    std::cout << "Expected result: {3, 7}\n";
     std::vector<int32_t> a = {1, 3, 3, 2, 5, 9, 4, 7, 3, 2};
     std::vector<int32_t> b = {11, 3, 7, 8, 6};
     std::sort(a.begin(), a.end());  ///< Sort vector a
