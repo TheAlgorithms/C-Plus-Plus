@@ -1,17 +1,24 @@
 /**
  * @file railfence_cipher.cpp
- * @brief  Implementation of [Railfence Cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
+ * @brief  Implementation of 
+ * [Railfence Cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
  * @details
- * The rail fence cipher (also called a zigzag cipher) is a form of classical transposition cipher. 
- * It derives its name from the manner in which encryption is performed. 
- * Encryption: In the rail fence cipher, the plaintext is written downwards diagonally on successive "rails" of an imaginary fence, 
- * then moving up when the bottom rail is reached, down again when the top rail is reached, and so on until the whole plaintext is written out. 
- * The ciphertext is then read off in rows. 
- * Decryption: Let N  be the number of rails used during encryption. Observe that as the plaintext is written, 
- * the sequence of each letter's vertical position on the rails varies up and down in a repeating cycle. 
- * In general the sequence repeats with a period of 2 ( N − 1 ).
- * Let L be the length of the string to be decrypted. Suppose for a moment that L is a multiple of 2 ( N − 1 ) and let K = L /2 ( N − 1 ). 
- * One begins by splitting the ciphertext  into strings such that the length of the first and last string is K and the length of each intermediate string is 2 K.
+ * The rail fence cipher (also called a zigzag cipher) is a form of classical 
+ * transposition cipher. It derives its name from the manner in which encryption 
+ * is performed. 
+ * Encryption: In the rail fence cipher, the plaintext is written downwards 
+ * diagonally on successive "rails" of an imaginary fence, then moving up when
+ * the bottom rail is reached, down again when the top rail is reached, and so
+ * on until the whole plaintext is written out. The ciphertext is then read 
+ * off in rows. 
+ * Decryption: Let N be the number of rails used during encryption. Observe that
+ * as the plaintext is written, the sequence of each letter's vertical position
+ * on the rails varies up and down in a repeating cycle. In general the sequence
+ * repeats with a period of 2(N−1). Let L be the length of the string to be 
+ * decrypted. Suppose for a moment that L is a multiple of 2(N−1) and let 
+ * K = L/2(N−1). One begins by splitting the ciphertext  into strings such that
+ * the length of the first and last string is K and the length of each 
+ * intermediate string is 2K.
  * @author [Sumaiya Fatma](https://github.com/sumushi)
  */
 
@@ -26,7 +33,8 @@ namespace ciphers
 {
 
     /** \namespace railfence
-     * \brief Functions for [Railfence cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher) algorithm.
+     * \brief Functions for 
+     * [Railfence cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher).
      */
     namespace railfence
     {
@@ -41,7 +49,7 @@ namespace ciphers
         {
             int len = text.length();
             std::string encrypted_text = ""; // Empty string to store encrypted text
-            char rail[key][len];   // Empty matrix to cipher plain text into rails
+            char rail[key][len];             // Empty matrix to cipher plain text into rails
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
                     rail[i][j] = '-'; // Filling the rail matrix to distinguish between filled and unfilled cells
@@ -84,7 +92,7 @@ namespace ciphers
         {
             int len = text.length();
             std::string decrypted_text = ""; // Empty string to store decrypted text
-            char rail[key][len];   // Empty matrix to cipher plain text into rails
+            char rail[key][len];             // Empty matrix to cipher plain text into rails
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
                     rail[i][j] = '-'; // Filling the rail matrix to distinguish between filled and unfilled cells
@@ -116,8 +124,8 @@ namespace ciphers
                     }
                 }
             }
-            down = 0;                               // reset the value of down
-            r = 0, c = 0;                           // reset the value of c and r
+            down = 0;                     // reset the value of down
+            r = 0, c = 0;                 // reset the value of c and r
             for (int i = 0; i < len; i++) // Moving thhrough the rail matrix in zig-zag manner using down flag and r and c values
             {
                 if (r == 0 || r == key - 1)     // if at first or last row
