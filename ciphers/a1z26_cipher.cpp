@@ -24,7 +24,8 @@
 namespace ciphers {
 /**
  * @namespace a1z26
- * @brief Functions for [A1Z26](https://www.dcode.fr/letter-number-cipher) encryption and decryption implementation
+ * @brief Functions for [A1Z26](https://www.dcode.fr/letter-number-cipher)
+ * encryption and decryption implementation
  */
 namespace a1z26 {
 
