@@ -15,9 +15,9 @@
  * the rails varies up and down in a repeating cycle. In general the
  * sequence repeats with a period of 2(N−1). Let L be the length of the
  * string to be decrypted. Suppose for a moment that L is a multiple of
- * 2(N−1) and let K = L/2(N−1). One begins by splitting the ciphertext
- * into strings such that the length of the first and last string is K and
- * the length of each intermediate string is 2K.
+ * 2(N−1) and let K = L/2(N−1). One begins by splitting the ciphertext into
+ * strings such that the length of the first and last string is K and the
+ * length of each intermediate string is 2K.
  * @author [Sumaiya Fatma](https://github.com/sumushi)
  */
 
@@ -49,44 +49,51 @@ namespace ciphers
             std::string encrypted_text = "";
             // Empty matrix to cipher text into rails
             char rail[key][len];
-            // Filling the rail matrix to distinguish between filled and unfilled cells
+            // Filling the rail matrix to distinguish between filled and
+            // unfilled cells
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
                     rail[i][j] = '-';
-            bool down = 0;  // Using a flag to check whether to move up or down
-            int r = 0, c = 0; // r is row number and c defines the coloumn number
-
-            // iterating through each character of provided string and putting
-            // it at the right place in rail matrix
+            // Using a flag to check whether to move up or down
+            bool down = 0;
+            // r is row number and c defines the coloumn number
+            int r = 0, c = 0;
+            // iterating through each character of provided string and
+            // putting it at the right place in rail matrix
             for (int i = 0; i < len; i++)
             {
-                if (r == 0 || r == key - 1) // if at first or last row
-                    down = !down;           // reverse the direction of filling
-                rail[r][c++] = text[i]; /* Fill in the cell, 
-                                        move a column forward */
+                // if at first or last row reverse the direction of filling
+                if (r == 0 || r == key - 1)
+                    down = !down;
+                /* Fill in the cell, move a column forward */
+                rail[r][c++] = text[i];
                 if (down)
                 {
-                    r++; // if direction is down, move one row below
+                    // if direction is down, move one row below
+                    r++;
                 }
                 else
                 {
-                    r--; // if direction is up, move one row above
+                    // if direction is up, move one row above
+                    r--;
                 }
             }
             for (int i = 0; i < key; i++)
             {
-                for (int j = 0; j < len; j++) /* iterating through each element
-                                               of rail matrix left to right */
+                /* iterating through each element of rail matrix left to
+                right */
+                for (int j = 0; j < len; j++)
                 {
                     if (rail[i][j] != '-')
                     {
-                        encrypted_text += rail[i][j]; /* If matrix was filled,
-                                                    adding the filled character 
-                                                    to output */
+                        /* If matrix was filled,adding the filled character
+                        to output */
+                        encrypted_text += rail[i][j];
                     }
                 }
             }
-            return encrypted_text; // Returning encrypted text
+            // Returning encrypted text
+            return encrypted_text;
         }
         /**
          * Decrypt given text using railfence cipher.
@@ -97,64 +104,81 @@ namespace ciphers
         std::string decrypt(const std::string &text, const int &key)
         {
             int len = text.length();
-            std::string decrypted_text = ""; // Empty string stores decrypted 
-            char rail[key][len]; // Empty matrix ciphers plain text into rails
+            // Empty string stores decrypted
+            std::string decrypted_text = "";
+            // Empty matrix ciphers plain text into rails
+            char rail[key][len];
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
-                    rail[i][j] = '-'; /* Filling the rail matrix to 
-                                      distinguish between filled and 
-                                      unfilled cells */
-            bool down = 0;            // Using a flag to check direction
-            int r = 0, c = 0; // r equal row number and c equals coloumn number
-
-            for (int i = 0; i < len; i++) /* iterating through each character
-                                         of provided string to mark the cells
-                                          to be filled */
-            {
-                if (r == 0 || r == key - 1) // if at first or last row
-                    down = !down;      // reverse the direction of filling
-                rail[r][c++] = '*'; // Mark the cell and move a column forward
+                    /* Filling the rail matrix to distinguish between
+                    filled and unfilled cells */
+                    rail[i][j] = '-';
+            // Using a flag to check direction
+            bool down = 0;
+            // r equal row number and c equals coloumn number
+            int r = 0, c = 0;
+            /* iterating through each character of provided string to mark
+            the cells to be filled */
+            for (int i = 0; i < len; i++)
+            { // if at first or last row
+                if (r == 0 || r == key - 1)
+                    // reverse the direction of filling
+                    down = !down;
+                // Mark the cell and move a column forward
+                rail[r][c++] = '*';
                 if (down)
                 {
-                    r++; // if direction is down, move one row below
+                    // if direction is down, move one row below
+                    r++;
                 }
                 else
                 {
-                    r--; // if direction is up, move one row above
+                    // if direction is up, move one row above
+                    r--;
                 }
             }
             int n = 0;
             for (int i = 0; i < key; i++)
             {
-                for (int j = 0; j < len; j++) /* iterating through each element
-                                             of rail matrix left to right */
+                /* iterating through each element of rail matrix left to
+                right */
+                for (int j = 0; j < len; j++)
                 {
                     if (rail[i][j] != '-')
                     {
-                        rail[i][j] = text[n++]; /* If matrix cell was marked, 
-                                        filling a character from input text */
+                        /* If matrix cell was marked, filling a character
+                        from input text */
+                        rail[i][j] = text[n++];
                     }
                 }
             }
-            down = 0;                     // reset the value of down
-            r = 0, c = 0;                 // reset the value of c and r
-            for (int i = 0; i < len; i++) /* Moving through the rail matrix
-                                         in zig-zag manner using down flag 
-                                         and r and c values */
+            // reset the value of down
+            down = 0;
+            // reset the value of c and r
+            r = 0, c = 0;
+            /* Moving through the rail matrix in zig-zag manner using down
+            flag and r and c values */
+            for (int i = 0; i < len; i++)
             {
-                if (r == 0 || r == key - 1)     // if at first or last row
-                    down = !down;        // reverse the direction of filling
-                decrypted_text += rail[r][c++]; // Add the char to output
+                // if at first or last row
+                if (r == 0 || r == key - 1)
+                    // reverse the direction of filling
+                    down = !down;
+                // Add the char to output
+                decrypted_text += rail[r][c++];
                 if (down)
                 {
-                    r++; // if direction is down, move one row below
+                    // if direction is down, move one row below
+                    r++; 
                 }
                 else
                 {
-                    r--; // if direction is up, move one row above
+                    // if direction is up, move one row above
+                    r--;
                 }
             }
-            return decrypted_text; // Returning decrypted text
+            // Returning decrypted text
+            return decrypted_text; 
         }
     } // namespace railfence
 } // namespace ciphers
