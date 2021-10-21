@@ -80,6 +80,7 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
     delete[] po; /// Deleting dynamic array po
     return y;  /// Returns the list
 }
+}  // namespace numerical_methods
 
 /**
  * @brief Self-test implementations
