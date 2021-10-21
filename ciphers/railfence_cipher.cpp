@@ -45,7 +45,8 @@ namespace ciphers
         std::string encrypt(const std::string &text, const int &key)
         {
             int len = text.length();
-            std::string encrypted_text = ""; // Empty string stores encrypted
+            // Empty string stores encrypted
+            std::string encrypted_text = "";
             char rail[key][len]; // Empty matrix to cipher text into rails
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
