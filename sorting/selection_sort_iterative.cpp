@@ -46,7 +46,7 @@ namespace sorting {
 template <typename T>
 void selectionSort(std::vector<T> &arr, uint64_t len) {
     for (uint64_t it = 0; it < len; ++it) {
-        int64_t min = it;  // set min value
+        uint64_t min = it;  // set min value
         for (uint64_t it2 = it + 1; it2 < len + 1; ++it2) {
             if (arr[it2] < arr[min]) {  // check which element is smaller
                 min = it2;  // store index of smallest element to min
@@ -54,7 +54,7 @@ void selectionSort(std::vector<T> &arr, uint64_t len) {
         }
 
         if (min != it) {  // swap if min does not match to i
-            int64_t tmp = arr[min];
+            uint64_t tmp = arr[min];
             arr[min] = arr[it];
             arr[it] = tmp;
         }
