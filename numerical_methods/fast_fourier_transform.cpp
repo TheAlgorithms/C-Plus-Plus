@@ -45,7 +45,7 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
         return p;  /// Base Case To return
     }
 
-    std::complex<double> om = std::complex<double>(
+    auto om = std::complex<double>(
         cos(2 * pi / n), sin(2 * pi / n));  /// Calculating value of omega
 
     auto *pe = new std::complex<double>[n / 2];  /// Coefficents of even power
@@ -61,11 +61,9 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
             po[k2++] = p[j];  /// Assigning value of odd coefficents
     }
 
-    std::complex<double> *ye =
-        FastFourierTransform(pe, n / 2);  /// Recursive Call
+    auto *ye = FastFourierTransform(pe, n / 2);  /// Recursive Call
 
-    std::complex<double> *yo =
-        FastFourierTransform(po, n / 2);  /// Recursive Call
+    auto *yo = FastFourierTransform(po, n / 2);  /// Recursive Call
 
     auto *y = new std::complex<double>[n];  /// Final value representation list
 
@@ -110,8 +108,8 @@ static void test() {
     std::vector<std::complex<double>> r2 = {
         {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
 
-    std::complex<double> *o1 = numerical_methods::FastFourierTransform(t1, n1);
-    std::complex<double> *o2 = numerical_methods::FastFourierTransform(t2, n2);
+    auto *o1 = numerical_methods::FastFourierTransform(t1, n1);
+    auto *o2 = numerical_methods::FastFourierTransform(t2, n2);
 
     for (uint8_t i = 0; i < n1; i++) {
         assert((r1[i].real() - o1->real() < 0.000000000001) &&
