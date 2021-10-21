@@ -115,23 +115,23 @@ T cylinder_surface_area(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    uint16_t int_length;
-    uint16_t int_width;
-    uint16_t int_expected;
-    uint16_t int_area;
-    uint16_t int_base;
-    uint16_t int_height;
+    uint16_t int_length; // 16 bit integer length input
+    uint16_t int_width; // 16 bit integer width input
+    uint16_t int_base;   // 16 bit integer base input
+    uint16_t int_height;    // 16 bit integer height input
+    uint16_t int_expected; // 16 bit integer expected output
+    uint16_t int_area; // 16 bit integer output
 
-    float float_length;
-    float float_expected;
-    float float_area;
+    float float_length; // float length input
+    float float_expected; // float expected output
+    float float_area; // float output
 
-    double double_length;
-    double double_width;
-    double double_expected;
-    double double_area;
-    double double_radius;
-    double double_height;
+    double double_length; // double length input
+    double double_width; // double width input
+    double double_radius;    // double radius input
+    double double_height;    // double height input
+    double double_expected; // double expected output
+    double double_area; // double output
 
 	// 1st test
     int_length = 5;
