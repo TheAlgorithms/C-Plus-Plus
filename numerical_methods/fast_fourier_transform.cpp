@@ -47,7 +47,8 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
 
     auto om = std::complex<double>(
         cos(2 * pi / n), sin(2 * pi / n));  /// Calculating value of omega
-
+    
+    /// auto is used inplace of std::complex<double> to reduce complexity   
     auto *pe = new std::complex<double>[n / 2];  /// Coefficents of even power
 
     auto *po = new std::complex<double>[n / 2];  /// Coefficents of odd power
@@ -92,7 +93,7 @@ static void test() {
     auto *t1 = new std::complex<double>[2];  /// Test case 1
     t1[0] = {1, 0};
     t1[1] = {2, 0};
-
+    /// auto is used inplace of std::complex<double> to reduce complexity    
     auto *t2 = new std::complex<double>[4];  /// Test case 2
     t2[0] = {1, 0};
     t2[1] = {2, 0};
