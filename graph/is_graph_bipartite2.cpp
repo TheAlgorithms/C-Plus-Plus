@@ -1,8 +1,14 @@
 /**
  * @brief Check whether a given graph is bipartite or not
  * @details
- * Using a graph in the form of adjacency list, check whether the 
- * given graph is a bipartite or not.
+ * A bipartite graph is the one whose nodes can be divided into two 
+ * disjoint sets in such a way that the nodes in a set are not 
+ * connected to each other at all, i.e. no intra-set connections. 
+ * The only connections that exist are that of inter-set, 
+ * i.e. the nodes from one set are connected to a subset of nodes 
+ * in the other set.
+ * In this implementation, using a graph in the form of adjacency 
+ * list, check whether the given graph is a bipartite or not.
  * 
  * References used: [GeeksForGeeks](https://www.geeksforgeeks.org/bipartite-graph/)
  * @author [tushar2407](https://github.com/tushar2407)
@@ -12,6 +18,11 @@
 #include <vector>   /// for vector data structure
 #include <cassert>  /// for assert
 
+/**
+ * @namespace graph
+ * @brief Graphical algorithms
+ */
+namespace graph {
 /**
  * @brief function to check whether the passed graph is bipartite or not
  * @param graph is a 2D matrix whose rows or the first index signify the node and values in that row signify the nodes it is connected to
@@ -65,6 +76,8 @@ bool isBipartite(std::vector<std::vector<int64_t>> graph)
     }
     return true;
 }
+}  // namespace graph
+
 /**
  * @brief Self-test implementations
  * @returns void
@@ -78,7 +91,7 @@ static void test()
         {0,2}
     };
 
-    assert(isBipartite(graph) == true); /// check whether the above defined graph is indeed bipartite
+    assert(graph::isBipartite(graph) == true); /// check whether the above defined graph is indeed bipartite
 
     std::vector<std::vector<int64_t>> graph_not_bipartite = {
         {1,2,3},
@@ -87,7 +100,7 @@ static void test()
         {0,2}
     };
 
-    assert(isBipartite(graph_not_bipartite) == false); /// check whether the above defined graph is indeed bipartite
+    assert(graph::isBipartite(graph_not_bipartite) == false); /// check whether the above defined graph is indeed bipartite
 }
 /**
  * @brief Main function
