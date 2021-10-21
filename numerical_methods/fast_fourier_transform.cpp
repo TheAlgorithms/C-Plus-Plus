@@ -110,8 +110,8 @@ static void test() {
     std::vector<std::complex<double>> r2 = {
         {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
 
-    std::complex<double> *o1 = FastFourierTransform(t1, n1);
-    std::complex<double> *o2 = FastFourierTransform(t2, n2);
+    std::complex<double> *o1 = numerical_methods::FastFourierTransform(t1, n1);
+    std::complex<double> *o2 = numerical_methods::FastFourierTransform(t2, n2);
 
     for (uint8_t i = 0; i < n1; i++) {
         assert((r1[i].real() - o1->real() < 0.000000000001) &&
