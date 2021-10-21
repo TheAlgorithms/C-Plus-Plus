@@ -169,7 +169,7 @@ namespace ciphers
                 if (down)
                 {
                     // if direction is down, move one row below
-                    r++; 
+                    r++;
                 }
                 else
                 {
@@ -178,7 +178,7 @@ namespace ciphers
                 }
             }
             // Returning decrypted text
-            return decrypted_text; 
+            return decrypted_text;
         }
     } // namespace railfence
 } // namespace ciphers
