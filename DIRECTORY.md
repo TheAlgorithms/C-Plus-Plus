@@ -245,7 +245,7 @@
   * [Reverse Binary Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_binary_tree.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
   * [Trie Multiple Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/trie_multiple_search.cpp)
-  * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_2_arrays.cpp)
+  * [Union Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_two_arrays.cpp)
 
 ## Others
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
