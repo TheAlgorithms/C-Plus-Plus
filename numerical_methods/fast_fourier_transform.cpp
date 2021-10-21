@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief [A fast Fourier transform
- (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f)
+ * (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f)
  is an algorithm that computes the
  * discrete Fourier transform (DFT) of a sequence , or its inverse (IDFT) , this
  algorithm
