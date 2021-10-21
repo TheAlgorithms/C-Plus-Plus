@@ -56,9 +56,9 @@ namespace ciphers
             bool down = 0;  // Using a flag to check whether to move up or down
             int r = 0, c = 0; // r is row number and c defines the coloumn number
 
-            for (int i = 0; i < len; i++)  /* iterating through each character 
-                                           of provided string and putting it at 
-                                          the right place in rail matrix */
+            // iterating through each character of provided string and putting
+            // it at the right place in rail matrix
+            for (int i = 0; i < len; i++)
             {
                 if (r == 0 || r == key - 1) // if at first or last row
                     down = !down;           // reverse the direction of filling
