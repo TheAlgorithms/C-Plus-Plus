@@ -31,7 +31,7 @@ bool is_prime(T num) {
     }
     else {
         for (T i = 5; (i * i) <= (num); i = (i + 6)) {
-            if ((num % i) == 0 || (num%(i+2)==0 )){
+            if ((num % i) == 0 || (num%(i+2)==0 )) {
                 result = false;
                 break;
             }
