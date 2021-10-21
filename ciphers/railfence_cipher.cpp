@@ -49,10 +49,10 @@ namespace ciphers
             std::string encrypted_text = "";
             // Empty matrix to cipher text into rails
             char rail[key][len];
+            // Filling the rail matrix to distinguish between filled and unfilled cells
             for (int i = 0; i < key; i++)
                 for (int j = 0; j < len; j++)
-                    rail[i][j] = '-';  /* Filling the rail matrix to distinguish       
-                                      between filled and unfilled cells */
+                    rail[i][j] = '-';
             bool down = 0;  // Using a flag to check whether to move up or down
             int r = 0, c = 0; // r is row number and c defines the coloumn number
 
