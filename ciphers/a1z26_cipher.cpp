@@ -73,7 +73,7 @@ std::string encrypt(std::string text) {
  * not
  * @returns the decrypted string in all uppercase or all lowercase
  */
-std::string decrypt(std::string text, bool bReturnUppercase = false) {
+std::string decrypt(const std::string& text, bool bReturnUppercase = false) {
     std::string result;
 
     // split words seperated by spaces into a vector array
@@ -84,18 +84,18 @@ std::string decrypt(std::string text, bool bReturnUppercase = false) {
         word_array.push_back(word);
     }
 
-    for (int i = 0; i < word_array.size(); i++) {
-        std::replace(word_array[i].begin(), word_array[i].end(), '-', ' ');
+    for (auto& i : word_array) {
+        std::replace(i.begin(), i.end(), '-', ' ');
         std::vector<std::string> text_array;
 
-        std::stringstream ss(word_array[i]);
+        std::stringstream ss(i);
         std::string res_text;
         while (ss >> res_text) {
             text_array.push_back(res_text);
         }
 
-        for (int i = 0; i < text_array.size(); i++) {
-            result += a1z26_decrypt_map[stoi(text_array[i])];
+        for (auto& i : text_array) {
+            result += a1z26_decrypt_map[stoi(i)];
         }
 
         result += ' ';
