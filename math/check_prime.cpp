@@ -11,8 +11,8 @@
  * if it's a factor then we will return false otherwise true after the loop terminates at the terminating condition which is (i*i<=num)
  */
 
-#include <cassert>
-#include <iostream>
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
 
 /**
  * Function to check if the given number is prime or not.
