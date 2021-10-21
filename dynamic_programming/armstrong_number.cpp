@@ -5,35 +5,30 @@ using std::cin;
 using std::cout;
 
 int main() {
-    int n = 0, temp = 0, rem = 0, count = 0, sum = 0;
+    int n = 0;
     cout << "Enter a number: ";
     cin >> n;
-
-    temp = n;
-
-    /* First Count the number of digits
-       in the given number */
-    while (temp != 0) {
-        temp /= 10;
-        count++;
+    
+    string original = to_string(n);
+    bool palindrome = true ; 
+    for(int i=0;i<original.length();i++)
+    {
+        if(original[i]!=original[original.length()-i-1])
+        {
+            palindrome = false;
+            break;
+        }
     }
-
-    /* Calaculation for checking of armstrongs number i.e.
-       in a n digit number sum of the digits raised to a power of n
-       is equal to the original number */
-
-    temp = n;
-    while (temp != 0) {
-        rem = temp % 10;
-        sum += static_cast<int>(pow(rem, count));
-        temp /= 10;
+    
+    if(palindrome)
+    {
+        cout<<"It is Palindrome number";
     }
+    else
+    {
+        cout<<"It is not a Palindrome number";
 
-    if (sum == n) {
-        cout << n << " is an armstrong number";
-    } else {
-        cout << n << " is not an armstrong number";
     }
-
+    
     return 0;
 }
