@@ -47,7 +47,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
 	
 	}
     
-    	double pi = 2 * asin(1.0);  /// Declaring value of pi
+    	auto pi = 2 * asin(1.0);  /// Declaring value of pi
     
 	auto om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
