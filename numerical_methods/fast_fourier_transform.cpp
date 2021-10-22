@@ -38,7 +38,7 @@ namespace numerical_methods {
  * @returns y if n!=1
  */
 
-std::complex<double>* FastFourierTransform(std::complex<double>*p,double n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
 {
 
 	if(n==1){
@@ -86,12 +86,12 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,double n)
 	}
 	
 	delete[] ye; /// Deleting dynamic array ye
-    delete[] yo; /// Deleting dynamic array yo
+    	delete[] yo; /// Deleting dynamic array yo
 	return y;
 	
 }
 
-}/// namespace numerical_methods
+}// namespace numerical_methods
 
 /**
  * @brief Self-test implementations
@@ -113,8 +113,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,double n)
     t2[2]={3,0};
     t2[3]={4,0};
 
-    double n1 = 2;
-    double n2 = 4;
+    uint64_t n1 = 2;
+    uint64_t n2 = 4;
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
