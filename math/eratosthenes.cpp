@@ -13,15 +13,16 @@
  * @author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
+#include <cassert>   /// For assert
 #include <chrono>    /// For timing the sieve
 #include <iostream>  /// For IO operations
 #include <string>    /// For string handling
 #include <vector>    /// For std::vector
-#include <cassert>   /// For assert
 
 /**
  * @brief Performs the sieve
- * @param vec Array of bools, all initialised to true, where the number of elements is the highest number we wish to check for primeness
+ * @param vec Array of bools, all initialised to true, where the number of
+ * elements is the highest number we wish to check for primeness
  * @returns void
  */
 void sieve(std::vector<bool>& vec) {
@@ -64,7 +65,7 @@ void test() {
     assert(primes[5] == true);
     assert(primes[6] == false);
     assert(primes[7] == true);
-    assert(primes[8] == true);
+    assert(primes[8] == false);
     assert(primes[9] == false);
 }
 
@@ -74,9 +75,9 @@ void test() {
  * @param argv commandline array of arguments
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
     test();
-    
+
     // The largest prime we will check for
     auto max = 10000;
 
