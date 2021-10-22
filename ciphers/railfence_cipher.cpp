@@ -48,11 +48,13 @@ std::string encrypt(const std::string &text, const int &key) {
   char rail[key][len];
   /* Filling the rail matrix to distinguish between filled and
   unfilled cells */
-  for (int i = 0; i < key; i++)
-    for (int j = 0; j < len; j++)
+  for (int i = 0; i < key; i++) {
+    for (int j = 0; j < len; j++) {
       rail[i][j] = '-';
+    }
+  }
   /* Using a flag to check whether to move up or down */
-  bool down = 0;
+  bool down = false;
   /* r is row number and c defines the coloumn number */
   int r = 0, c = 0;
   /* iterating through each character of provided string and
@@ -60,8 +62,9 @@ std::string encrypt(const std::string &text, const int &key) {
   for (int i = 0; i < len; i++) {
     /* if at first or last row reverse the direction of filling
     rows */
-    if (r == 0 || r == key - 1)
+    if (r == 0 || r == key - 1) {
       down = !down;
+    }
     /* Fill in the cell, move a column forward */
     rail[r][c++] = text[i];
     if (down) {
@@ -98,22 +101,25 @@ std::string decrypt(const std::string &text, const int &key) {
   std::string decrypted_text = "";
   /* Empty matrix ciphers plain text into rails */
   char rail[key][len];
-  for (int i = 0; i < key; i++)
-    for (int j = 0; j < len; j++)
+  for (int i = 0; i < key; i++) {
+    for (int j = 0; j < len; j++) {
       /* Filling the rail matrix to distinguish between
       filled and unfilled cells */
       rail[i][j] = '-';
+    }
+  }
   /* Using a flag to check direction */
-  bool down = 0;
+  bool down = false;
   /* r equal row number and c equals coloumn number */
   int r = 0, c = 0;
   /* iterating through each character of provided string to mark
   the cells to be filled */
   for (int i = 0; i < len; i++) {
     /* if at first or last row */
-    if (r == 0 || r == key - 1)
+    if (r == 0 || r == key - 1) {
       /* reverse the direction of filling */
       down = !down;
+    }
     /* Mark the cell and move a column forward */
     rail[r][c++] = '*';
     if (down) {
@@ -144,9 +150,10 @@ std::string decrypt(const std::string &text, const int &key) {
   flag and r and c values */
   for (int i = 0; i < len; i++) {
     /* if at first or last row */
-    if (r == 0 || r == key - 1)
+    if (r == 0 || r == key - 1) {
       /* reverse the direction of filling */
       down = !down;
+    }
     /* Add the char to output */
     decrypted_text += rail[r][c++];
     if (down) {
