@@ -19,30 +19,75 @@
 #include <vector>    /// For std::vector
 
 /**
+ * @brief Performs the sieve
+ * @param vec Array of bools, all initialised to true, where the number of elements is the highest number we wish to check for primeness
+ * @returns void
+ */
+void sieve(std::vector<bool>& vec) {
+    vec[0] = false;
+    vec[1] = false;
+
+    // The sieve sets values to false as they are found not prime
+    for (int n = 2; n < vec.size(); n++) {
+        for (int multiple = n << 1; multiple < max; multiple += n) {
+            vec[multiple] = false;
+        }
+    }
+}
+
+/**
+ * @brief Prints all the indexes of true values in the passed std::vector
+ * @param primes The vector that has been passed through `sieve(...)`
+ * @returns void
+ */
+void print_primes(std::vector<bool> const& primes) {
+    for (int i = 0; i < primes.size(); i++) {
+        if (primes[i]) {
+            std::cout << i << std::endl;
+        }
+    }
+}
+
+/**
+ * @brief Self-tests the sieve function for major inconsistencies
+ * @returns void
+ */
+void test() {
+    auto primes = std::vector<bool>(10, true);
+    sieve(primes);
+    assert(primes[0] == false);
+    assert(primes[1] == false);
+    assert(primes[2] == true);
+    assert(primes[3] == true);
+    assert(primes[4] == false);
+    assert(primes[5] == true);
+    assert(primes[6] == false);
+    assert(primes[7] == true);
+    assert(primes[8] == true);
+    assert(primes[9] == false);
+}
+
+/**
  * @brief Main function
  * @param argc commandline argument count
  * @param argv commandline array of arguments
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
+    test()
+    
     // The largest prime we will check for
     auto max = 10000;
 
-    // Store a boolean for every number wich states if that index is prime or
+    // Store a boolean for every number which states if that index is prime or
     // not
     auto primes = std::vector<bool>(max, true);
 
+    // Store the algorithm start time
     auto start = std::chrono::high_resolution_clock::now();
 
-    primes[0] = false;
-    primes[1] = false;
-
-    // The sieve sets values to false as they are found not prime
-    for (int n = 2; n < max; n++) {
-        for (int multiple = n << 1; multiple < max; multiple += n) {
-            primes[multiple] = false;
-        }
-    }
+    // Run the sieve
+    sieve(primes);
 
     // Time difference calculation
     auto time = std::chrono::duration_cast<
@@ -52,13 +97,10 @@ int main(int argc, char *argv[]) {
 
     // Print the primes if we see that "print" was passed as an arg
     if (argc > 1 && argv[1] == std::string("print")) {
-        for (int i = 0; i < primes.size(); i++) {
-            if (primes[i]) {
-                std::cout << i << std::endl;
-            }
-        }
+        print_primes(primes);
     }
 
+    // Print the time taken we found earlier
     std::cout << "Time taken: " << time << " seconds" << std::endl;
 
     return 0;
