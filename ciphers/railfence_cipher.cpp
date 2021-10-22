@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief  Implementation of [Railfence
+ * @brief Implementation of [Railfence
  * Cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
  * @details
  * The rail fence cipher (also called a zigzag cipher) is a form of
