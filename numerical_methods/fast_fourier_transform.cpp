@@ -103,8 +103,15 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
  static void test() {
     /* descriptions of the following test */
 
-    std::complex<double> t1[2]={1,2}; /// Test case 1
-    std::complex<double> t2[4]={1,2,3,4}; /// Test case 2
+    auto *t1= new std::complex<double>[2]; /// Test case 1
+    auto *t2= new std::complex<double>[4];; /// Test case 2
+    
+    t1[0]={1,0};
+    t1[1]={2,0};
+    t2[0]={1,0};
+    t2[1]={2,0};
+    t2[2]={3,0};
+    t2[3]={4,0};
 
     uint64_t n1 = 2;
     uint64_t n2 = 4;
@@ -133,6 +140,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
         o2++;
     }
 
+    delete[] t1;
+    delete[] t2;
     
 }
 
