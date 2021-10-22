@@ -229,7 +229,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="../../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" target="_top" xlink:title=" ">
+<g id="a_node13"><a xlink:href="../../db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" target="_top" xlink:title="for IO operations">
 <polygon fill="white" stroke="black" points="460.5,-76.5 460.5,-95.5 514.5,-95.5 514.5,-76.5 460.5,-76.5"/>
 <text text-anchor="middle" x="487.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">is_prime</text>
 </a>
