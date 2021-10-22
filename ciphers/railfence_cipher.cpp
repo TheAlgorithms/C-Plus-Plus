@@ -1,5 +1,5 @@
 /**
- * @file railfence_cipher.cpp
+ * @file
  * @brief  Implementation of [Railfence
  * Cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
  * @details
