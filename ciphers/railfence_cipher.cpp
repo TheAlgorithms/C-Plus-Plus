@@ -30,8 +30,8 @@
  */
 namespace ciphers {
 
-/** \namespace railfence \brief Functions for [Railfence
- * cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher).
+/** \namespace railfence \brief Functions for the [Railfence
+ * cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher) implementation.
  */
 namespace railfence {
 
