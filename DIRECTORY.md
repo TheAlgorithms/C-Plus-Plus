@@ -19,6 +19,7 @@
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
+  * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/a1z26_cipher.cpp)
   * [Atbash Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/atbash_cipher.cpp)
   * [Base64 Encoding](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/base64_encoding.cpp)
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
