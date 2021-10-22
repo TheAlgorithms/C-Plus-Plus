@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief The Sieve of Eratosthenes
+ * @brief [The Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
  * @details
  * Store an array of booleans where a true value indicates that it's index is
  * prime. For all the values in the array starting from 2 which we know is
