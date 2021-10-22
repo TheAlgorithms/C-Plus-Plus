@@ -17,6 +17,7 @@
 #include <iostream>  /// For IO operations
 #include <string>    /// For string handling
 #include <vector>    /// For std::vector
+#include <cassert>   /// For assert
 
 /**
  * @brief Performs the sieve
@@ -29,7 +30,7 @@ void sieve(std::vector<bool>& vec) {
 
     // The sieve sets values to false as they are found not prime
     for (int n = 2; n < vec.size(); n++) {
-        for (int multiple = n << 1; multiple < max; multiple += n) {
+        for (int multiple = n << 1; multiple < vec.size(); multiple += n) {
             vec[multiple] = false;
         }
     }
@@ -74,7 +75,7 @@ void test() {
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
-    test()
+    test();
     
     // The largest prime we will check for
     auto max = 10000;
