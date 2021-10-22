@@ -168,8 +168,8 @@ std::string decrypt(const std::string &text, const int &key) {
   /* Returning decrypted text */
   return decrypted_text;
 }
-} // namespace railfence
-} // namespace ciphers
+}  // namespace railfence
+}  // namespace ciphers
 
 /**
  * Function to test above algorithm
