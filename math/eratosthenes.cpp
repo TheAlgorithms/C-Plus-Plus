@@ -25,14 +25,14 @@
  * elements is the highest number we wish to check for primeness
  * @returns void
  */
-void sieve(std::vector<bool>& vec) {
-    vec[0] = false;
-    vec[1] = false;
+void sieve(std::vector<bool>* vec) {
+    (*vec)[0] = false;
+    (*vec)[1] = false;
 
     // The sieve sets values to false as they are found not prime
-    for (int n = 2; n < vec.size(); n++) {
-        for (int multiple = n << 1; multiple < vec.size(); multiple += n) {
-            vec[multiple] = false;
+    for (int n = 2; n < vec->size(); n++) {
+        for (int multiple = n << 1; multiple < vec->size(); multiple += n) {
+            (*vec)[multiple] = false;
         }
     }
 }
@@ -56,7 +56,7 @@ void print_primes(std::vector<bool> const& primes) {
  */
 void test() {
     auto primes = std::vector<bool>(10, true);
-    sieve(primes);
+    sieve(&primes);
     assert(primes[0] == false);
     assert(primes[1] == false);
     assert(primes[2] == true);
@@ -89,7 +89,7 @@ int main(int argc, char* argv[]) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // Run the sieve
-    sieve(primes);
+    sieve(&primes);
 
     // Time difference calculation
     auto time = std::chrono::duration_cast<
