@@ -69,7 +69,7 @@ void selectionSort(std::vector<T> &arr, uint64_t len) {
 static void test() {
     // testcase #1
     // [1, 0, 0, 1, 1, 0, 2, 1] returns [0, 0, 0, 1, 1, 1, 1, 2]
-    std::vector<int64_t> vector1 = {1, 0, 0, 1, 1, 0, 2, 1};
+    std::vector<uint64_t> vector1 = {1, 0, 0, 1, 1, 0, 2, 1};
     uint64_t vector1size = vector1.size();
     std::cout << "1st test... ";
     sorting::selectionSort(vector1, vector1size);
@@ -79,7 +79,7 @@ static void test() {
     // testcase #2
     // [19, 22, 540, 241, 156, 140, 12, 1] returns [1, 12, 19, 22, 140, 156,
     // 241,540]
-    std::vector<int64_t> vector2 = {19, 22, 540, 241, 156, 140, 12, 1};
+    std::vector<uint64_t> vector2 = {19, 22, 540, 241, 156, 140, 12, 1};
     uint64_t vector2size = vector2.size();
     std::cout << "2nd test... ";
     sorting::selectionSort(vector2, vector2size);
@@ -88,7 +88,7 @@ static void test() {
 
     // testcase #3
     // [11, 20, 30, 41, 15, 60, 82, 15] returns [11, 15, 15, 20, 30, 41, 60, 82]
-    std::vector<int64_t> vector3 = {11, 20, 30, 41, 15, 60, 82, 15};
+    std::vector<uint64_t> vector3 = {11, 20, 30, 41, 15, 60, 82, 15};
     uint64_t vector3size = vector3.size();
     std::cout << "3rd test... ";
     sorting::selectionSort(vector3, vector3size);
@@ -98,7 +98,7 @@ static void test() {
     // testcase #4
     // [1, 9, 11, 546, 26, 65, 212, 14, -11] returns [-11, 1, 9, 11, 14, 26, 65,
     // 212, 546]
-    std::vector<int64_t> vector4 = {1, 9, 11, 546, 26, 65, 212, 14, -11};
+    std::vector<uint64_t> vector4 = {1, 9, 11, 546, 26, 65, 212, 14};
     uint64_t vector4size = vector2.size();
     std::cout << "4th test... ";
     sorting::selectionSort(vector4, vector4size);
