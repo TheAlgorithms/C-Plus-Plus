@@ -172,9 +172,10 @@ std::string decrypt(const std::string &text, const int &key) {
 }  // namespace ciphers
 
 /**
- * Function to test above algorithm
+ * @brief Self-test implementations
+ * @returns void
  */
-void test() {
+static void test() {
   std::cout << "******************Test Cases******************" << std::endl;
   // Test 1
   std::string text1 = "ALANTURING";
