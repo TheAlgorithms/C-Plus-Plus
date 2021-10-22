@@ -25,7 +25,8 @@
 #include <iostream>    /// for IO operations
 
 /**
- * \namespace ciphers \brief Algorithms for encryption and decryption
+ * \namespace ciphers
+ * \brief Algorithms for encryption and decryption
  */
 namespace ciphers {
 
