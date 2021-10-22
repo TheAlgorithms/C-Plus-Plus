@@ -38,7 +38,7 @@ namespace numerical_methods {
  * @returns y if n!=1
  */
 
-std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
 {
 
 	if(n==1){
@@ -113,8 +113,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
     t2[2]={3,0};
     t2[3]={4,0};
 
-    uint64_t n1 = 2;
-    uint64_t n2 = 4;
+    uint8_t n1 = 2;
+    uint8_t n2 = 4;
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
