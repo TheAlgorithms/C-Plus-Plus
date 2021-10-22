@@ -37,49 +37,61 @@ namespace numerical_methods {
  * @returns p if n==1
  * @returns y if n!=1
  */
-std::complex<double> *FastFourierTransform(std::complex<double> *p,
-                                           uint64_t n) {
-    double pi = 2 * asin(1.0);  /// Declaring value of pi
 
-    if (n == 1) {
-        return p;  /// Base Case To return
-    }
+std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
+{
 
-    auto om = std::complex<double>(
-        cos(2 * pi / n), sin(2 * pi / n));  /// Calculating value of omega
+	if(n==1){
+	    
+	    return p; ///Base Case To return
+	
+	}
     
-    /// auto is used inplace of std::complex<double> to reduce complexity   
-    auto *pe = new std::complex<double>[n / 2];  /// Coefficents of even power
+    double pi = 2 * asin(1.0);  /// Declaring value of pi
+    
+	auto om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
-    auto *po = new std::complex<double>[n / 2];  /// Coefficents of odd power
+	auto *pe= new std::complex<double>[n/2]; /// Coefficents of even power
 
-    uint64_t k1 = 0, k2 = 0;
-    for (uint64_t j = 0; j < n; j++) {
-        if (j % 2 == 0) {
-            pe[k1++] = p[j];  /// Assigning values of even coefficents
+	auto *po= new std::complex<double>[n/2]; ///Coeeficents of odd power
 
-        } else
-            po[k2++] = p[j];  /// Assigning value of odd coefficents
-    }
+	int k1=0,k2=0;
+	for(int j=0;j<n;j++)
+	{
+		if(j%2==0){
+			pe[k1++]=p[j]; ///Assigning values of even ceofficents
 
-    auto *ye = FastFourierTransform(pe, n / 2);  /// Recursive Call
+		}
+		else po[k2++]=p[j]; ///Assigning value of odd coefficents
 
-    auto *yo = FastFourierTransform(po, n / 2);  /// Recursive Call
 
-    auto *y = new std::complex<double>[n];  /// Final value representation list
+	}
 
-    for (uint64_t i = 0; i < n / 2; i++) {
-        y[i] = ye[i] + pow(om, i) * yo[i];  /// Updating the first n/2 elements
-        y[i + n / 2] =
-            ye[i] - pow(om, i) * yo[i];  /// Updating the last n/2 elements
-    }
-    delete[] ye; /// Deleting dynamic array ye
+	auto *ye=FastFourierTransform(pe,n/2); ///Recursive Call
+	
+	auto *yo=FastFourierTransform(po,n/2); ///Recursive Call
+
+	auto *y=new std::complex<double>[n];  /// Final value representation list
+
+	k1=0,k2=0;
+
+	for(int i=0;i<n/2;i++)
+	{
+		y[i]=ye[k1]+pow(om,i)*yo[k2];    /// Updating the first n/2 elements
+		y[i+n/2]=ye[k1]-pow(om,i)*yo[k2];/// Updating the last n/2 elements
+
+		k1++;
+		k2++;
+
+	}
+	
+	delete[] ye; /// Deleting dynamic array ye
     delete[] yo; /// Deleting dynamic array yo
-    delete[] pe; /// Deleting dynamic array pe
-    delete[] po; /// Deleting dynamic array po
-    return y;  /// Returns the list
+	return y;
+	
 }
-}  // namespace numerical_methods
+
+}/// namespace numerical_methods
 
 /**
  * @brief Self-test implementations
@@ -87,22 +99,15 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p,
  * in predicted and true value is less than 0.000000000001.
  * @returns void
  */
-static void test() {
+ 
+ static void test() {
     /* descriptions of the following test */
 
-    auto *t1 = new std::complex<double>[2];  /// Test case 1
-    t1[0] = {1, 0};
-    t1[1] = {2, 0};
-    /// auto is used inplace of std::complex<double> to reduce complexity    
-    auto *t2 = new std::complex<double>[4];  /// Test case 2
-    t2[0] = {1, 0};
-    t2[1] = {2, 0};
-    t2[2] = {3, 0};
-    t2[3] = {4, 0};
+    std::complex<double> t1[2]={1,2}; /// Test case 1
+    std::complex<double> t2[4]={1,2,3,4}; /// Test case 2
 
-    uint8_t n1 = sizeof(t1) / sizeof(std::complex<double>);
-    uint8_t n2 = sizeof(t2) / sizeof(std::complex<double>);
-
+    uint8_t n1 = 2;
+    uint8_t n2 = 4;
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
@@ -128,10 +133,7 @@ static void test() {
         o2++;
     }
 
-    delete[] o1; /// Deleting dynamic array o1
-    delete[] o2; /// Deleting dynamic array o2
-    delete[] t1; /// Deleting dynamic array t1
-    delete[] t2; /// Deleting dynamic array t2
+    
 }
 
 /**
@@ -141,7 +143,10 @@ static void test() {
  * calls automated test function to test the working of fast fourier transform.
  * @returns 0 on exit
  */
-int main(int argc, char const *argv[]) {
-    test();  // run self-test implementations
-    return 0;
+
+int main(int argc, char const *argv[])
+{
+	
+	test();/// run self-test implementations
+	return 0;
 }
