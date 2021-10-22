@@ -140,11 +140,11 @@ var NAVTREEINDEX =
 "d6/d74/namespacekadane.html",
 "d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79",
 "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae",
-"da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a331d1070d008a4f9d55775a51013baa3",
-"db/d9a/classuint128__t.html#a8bf81f7f5f5c98f197822ec88e106c6c",
+"da/d70/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1_info.html#a003a30bb165be50ce503c17df90c128d",
+"db/d9a/classuint128__t.html#a857a3c69c1e775a1bd3935c2bfbb02df",
 "dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a8417d01c88b99ca56289843509fb71f9",
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50",
-"globals_func_r.html"
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a5cf972a2c994a4fa1a89fc77bd5ad503",
+"globals_func_i.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
