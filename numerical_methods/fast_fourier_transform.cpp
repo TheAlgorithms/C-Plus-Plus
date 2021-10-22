@@ -38,7 +38,7 @@ namespace numerical_methods {
  * @returns y if n!=1
  */
 
-std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,double n)
 {
 
 	if(n==1){
@@ -47,7 +47,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
 	
 	}
     
-    double pi = 2 * asin(1.0);  /// Declaring value of pi
+    	double pi = 2 * asin(1.0);  /// Declaring value of pi
     
 	auto om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
@@ -106,8 +106,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
     std::complex<double> t1[2]={1,2}; /// Test case 1
     std::complex<double> t2[4]={1,2,3,4}; /// Test case 2
 
-    uint8_t n1 = 2;
-    uint8_t n2 = 4;
+    double n1 = 2;
+    double n2 = 4;
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
