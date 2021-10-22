@@ -101,6 +101,7 @@ static void test()
     };
 
     assert(graph::isBipartite(graph_not_bipartite) == false); /// check whether the above defined graph is indeed bipartite
+    std::cout << "All tests have successfully passed!\n";
 }
 /**
  * @brief Main function
