@@ -38,7 +38,7 @@ namespace numerical_methods {
  * @returns y if n!=1
  */
 
-std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
+std::complex<double>* FastFourierTransform(std::complex<double>*p,double n)
 {
 
 	if(n==1){
@@ -47,9 +47,9 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
 	
 	}
     
-    	auto pi = 2 * asin(1.0);  /// Declaring value of pi
+    	double pi = 2 * asin(1.0);  /// Declaring value of pi
     
-	auto om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
+	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
 	auto *pe= new std::complex<double>[n/2]; /// Coefficents of even power
 
@@ -113,8 +113,8 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint64_t n)
     t2[2]={3,0};
     t2[3]={4,0};
 
-    uint64_t n1 = 2;
-    uint64_t n2 = 4;
+    double n1 = 2;
+    double n2 = 4;
     std::vector<std::complex<double>> r1 = {
         {3, 0}, {-1, 0}};  /// True Answer for test case 1
 
