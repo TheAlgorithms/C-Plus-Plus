@@ -200,7 +200,6 @@ static void test() {
 
 /** Driver Code */
 int main() {
-  // Testing
-  test();
+  test();  // run self-test implementations
   return 0;
 }
