@@ -4,7 +4,7 @@
  * Rotation](https://www.javatpoint.com/program-to-right-rotate-the-elements-of-an-array)
  * algorithm.
  * @details Shifting an array to the right involves moving each element of the
- * array so that it occupies a position of a certain shift value before its
+ * array so that it occupies a position of a certain shift value after its
  * current one. This implementation uses a result vector and does not mutate the
  * input.
  * @see array_left_rotation.cpp
@@ -39,7 +39,7 @@ void print(const std::vector<int32_t> &array) {
  * new vector with the result. The original vector is not mutated.
  * @details Shifts the values of the vector, by creating a new vector and adding
  * values from the shift index to the end, then appending the rest of the
- * elements from the start of the vector.
+ * elements to the start of the vector.
  * @param array A reference to the input std::vector
  * @param shift The amount to be shifted to the right
  * @returns A std::vector with the shifted values
