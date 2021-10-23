@@ -43,8 +43,8 @@ namespace sorting {
  * @param len length of vector to be sorted
  * @returns void
  *******************************************************************************/
-template <typename T>
-void selectionSort(std::vector<T> &arr, uint64_t len) {
+
+void selectionSort(std::vector<uint64_t> &arr, uint64_t len) {
     for (uint64_t it = 0; it < len; ++it) {
         uint64_t min = it;  // set min value
         for (uint64_t it2 = it + 1; it2 < len + 1; ++it2) {
