@@ -1,11 +1,11 @@
-#include <iostream>
-#include <cmath>
-#include <cstdlib>
-#include <cassert>
-#include <functional>
-#include <map>
+#include <iostream> /// for IO operations
+#include <cmath> /// for math functions
+#include <cassert> /// for assert
+#include <cstdlib> /// for std::atof
+#include <functional> /// for std::function
+#include <map> /// for std::map container
 
-/*!
+/**
  * @file
  * @brief Implementation of the Composite Simpson Rule for the approximation
  *
@@ -33,15 +33,20 @@
  *
  * Add sample function by replacing one of the f, g, k, l and the assert
  *
- * @author ggkogkou
+ * @author [ggkogkou](https://github.com/ggkogkou)
  *
 */
 
 /**
+ * @namespace numerical_methods
+ * @brief Numerical algorithms/methods
+ */
+namespace numerical_methods {
+/**
  * @namespace simpson_method
  * @brief Contains the Simpson's method implementation
 */
-namespace simpson_method{
+    namespace simpson_method {
 /**
  * @fn double evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func)
  * @brief Calculate integral or assert if integral is not a number (Nan)
@@ -51,8 +56,9 @@ namespace simpson_method{
  * @param func: choose the function that will be evaluated
  * @returns the result of the integration
 */
-    double evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func);
-} // simspon_method end
+        double evaluate_by_simpson(int N, double h, double a, std::function<double(double)> func);
+    } // namespace simpson_method
+} // namespace numerical_methods
 
 /**
  * @fn double f(double x)
@@ -60,20 +66,49 @@ namespace simpson_method{
  * @param x The independent variable xi
  * @returns the value of the dependent variable yi = f(xi)
 */
-double f(double x);
-/**
- * @brief Another test function
-*/
-double g(double x);
-/**
- * @brief Another test function
-*/
-double k(double x);
-/**
- * @brief Another test function
-*/
-double l(double x);
+double f(double x){
+    return std::sqrt(x) + std::log(x);
+}
+/** @brief Another test function */
+double g(double x){
+    return std::exp(-x) * (4 - std::pow(x, 2));
+}
+/** @brief Another test function */
+double k(double x){
+    return std::sqrt(2*std::pow(x, 3)+3);
+}
+/** @brief Another test function*/
+double l(double x){
+    return x + std::log(2*x+1);
+}
 
+/**
+ * \brief Self-test implementations
+ * @param N is the number of intervals
+ * @param h is the step
+ * @param a is x0
+ * @param b is the end of the interval
+ * @param used_argv_parameters is 'true' if argv parameters are given and 'false' if not
+*/
+static void test(int N, double h, double a,double b, bool used_argv_parameters){
+    // Call the functions and find the integral of each function
+    double result_f = numerical_methods::simpson_method::evaluate_by_simpson(N, h, a, f);
+    assert((used_argv_parameters || (result_f >= 4.09 && result_f <= 4.10)) && "The result of f(x) is wrong");
+    std::cout << "The result of integral f(x) on interval [" << a << ", " << b << "] is equal to: " << result_f << std::endl;
+
+    double result_g = numerical_methods::simpson_method::evaluate_by_simpson(N, h, a, g);
+    assert((used_argv_parameters || (result_g >= 0.27 && result_g <= 0.28)) && "The result of g(x) is wrong");
+    std::cout << "The result of integral g(x) on interval [" << a << ", " << b << "] is equal to: " << result_g << std::endl;
+
+    double result_k = numerical_methods::simpson_method::evaluate_by_simpson(N, h, a, k);
+    assert((used_argv_parameters || (result_k >= 9.06 && result_k <= 9.07)) && "The result of k(x) is wrong");
+    std::cout << "The result of integral k(x) on interval [" << a << ", " << b << "] is equal to: " << result_k << std::endl;
+
+    double result_l = numerical_methods::simpson_method::evaluate_by_simpson(N, h, a, l);
+    assert((used_argv_parameters || (result_l >= 7.16 && result_l <= 7.17)) && "The result of l(x) is wrong");
+    std::cout << "The result of integral l(x) on interval [" << a << ", " << b << "] is equal to: " << result_l << std::endl;
+
+}
 
 int main(int argc, char** argv){
     int N = 16; /// Number of intervals to divide the integration interval. MUST BE EVEN
@@ -100,37 +135,20 @@ int main(int argc, char** argv){
     // Find the step
     h = (b-a)/N;
 
-    // Call the functions and find the integral of each function
-    double result_f = simpson_method::evaluate_by_simpson(N, h, a, f);
-    assert((used_argv_parameters || (result_f >= 4.09 && result_f <= 4.10)) && "The result of f(x) is wrong");
-    std::cout << "The result of integral f(x) on interval [" << a << ", " << b << "] is equal to: " << result_f << std::endl;
-
-    double result_g = simpson_method::evaluate_by_simpson(N, h, a, g);
-    assert((used_argv_parameters || (result_g >= 0.27 && result_g <= 0.28)) && "The result of g(x) is wrong");
-    std::cout << "The result of integral g(x) on interval [" << a << ", " << b << "] is equal to: " << result_g << std::endl;
-
-    double result_k = simpson_method::evaluate_by_simpson(N, h, a, k);
-    assert((used_argv_parameters || (result_k >= 9.06 && result_k <= 9.07)) && "The result of k(x) is wrong");
-    std::cout << "The result of integral k(x) on interval [" << a << ", " << b << "] is equal to: " << result_k << std::endl;
-
-    double result_l = simpson_method::evaluate_by_simpson(N, h, a, l);
-    assert((used_argv_parameters || (result_l >= 7.16 && result_l <= 7.17)) && "The result of l(x) is wrong");
-    std::cout << "The result of integral l(x) on interval [" << a << ", " << b << "] is equal to: " << result_l << std::endl;
-
-
+    test(N, h, a, b, used_argv_parameters); /// run self-test implementations
 
     return 0;
 }
 
-double simpson_method::evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func){
-    std::map<int, double> data_table; /// Contains the data points. key: i, value: f(xi)
+double numerical_methods::simpson_method::evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func){
+    std::map<int, double> data_table; // Contains the data points. key: i, value: f(xi)
     double xi = a; // Initialize xi to the starting point x0 = a
 
     // Create the data table
     double temp;
     for(int i=0; i<=N; i++){
         temp = func(xi);
-        data_table.insert(std::pair<int ,double>(i, temp)); /// add i and f(xi)
+        data_table.insert(std::pair<int ,double>(i, temp)); // add i and f(xi)
         xi += h; // Get the next point xi for the next iteration
     }
 
@@ -150,28 +168,4 @@ double simpson_method::evaluate_by_simpson(int N, double h, double a, std::funct
     assert(!std::isnan(evaluate_integral) && "The definite integral can't be evaluated. Check the validity of your input.\n");
     // Else return
     return evaluate_integral;
-}
-
-/*
------------- Test sample functions below ----------------------------
-*/
-
-// Sample function f(x) = sqrt(x) + log(x)
-double f(double x){
-    return std::sqrt(x) + std::log(x);
-}
-
-// Sample function g(x) = e^-x * (4 - x^2)
-double g(double x){
-    return std::exp(-x) * (4 - std::pow(x, 2));
-}
-
-// Sample function k(x) = sqrt(2x^3+3)
-double k(double x){
-    return std::sqrt(2*std::pow(x, 3)+3);
-}
-
-// Sample function l(x) = x+ln(2x+1)
-double l(double x){
-    return x + std::log(2*x+1);
 }
