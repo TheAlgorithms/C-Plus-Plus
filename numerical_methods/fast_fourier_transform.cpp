@@ -51,18 +51,18 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
     
 	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
-	auto *pe= new std::complex<double>[n/2]; /// Coefficents of even power
+	auto *pe= new std::complex<double>[n/2]; /// Coefficients of even power
 
-	auto *po= new std::complex<double>[n/2]; ///Coeeficents of odd power
+	auto *po= new std::complex<double>[n/2]; ///Coefficients of odd power
 
 	int k1=0,k2=0;
 	for(int j=0;j<n;j++)
 	{
 		if(j%2==0){
-			pe[k1++]=p[j]; ///Assigning values of even ceofficents
+			pe[k1++]=p[j]; ///Assigning values of even Coefficients
 
 		}
-		else po[k2++]=p[j]; ///Assigning value of odd coefficents
+		else po[k2++]=p[j]; ///Assigning value of odd Coefficients
 
 
 	}
