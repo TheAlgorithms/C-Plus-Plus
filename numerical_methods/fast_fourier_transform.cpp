@@ -51,9 +51,9 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
     
 	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
 
-	std::complex<double> *pe= new std::complex<double>[n/2]; /// Coefficients of even power
+	auto *pe= new std::complex<double>[n/2]; /// Coefficients of even power
 
-	std::complex<double> *po= new std::complex<double>[n/2]; ///Coefficients of odd power
+	auto *po= new std::complex<double>[n/2]; ///Coefficients of odd power
 
 	int k1=0,k2=0;
 	for(int j=0;j<n;j++)
@@ -71,7 +71,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
 	
 	std::complex<double> *yo=FastFourierTransform(po,n/2); ///Recursive Call
 
-	std::complex<double> *y=new std::complex<double>[n];  /// Final value representation list
+	auto *y=new std::complex<double>[n];  /// Final value representation list
 
 	k1=0,k2=0;
 
