@@ -1,0 +1,65 @@
+//a magic number is a natural number that has both the digits 7 and 9 in it eg. 78, 879,....
+               given any number n, find the closest magic number to n.
+
+               1. input:  8
+                  output: 79
+
+               2. input: 900
+                  output: 897
+           
+ #include <bits/stdc++.h>
+using namespace std;
+
+bool checkMagic(int n){
+    int flag7 = -1, flag9 = -1;
+
+    while(n > 0){
+        if(n % 10 == 7){
+            flag7 = 1;
+        }else if(n % 10 == 9){
+            flag9 = 1;
+        }
+
+        n = n / 10;
+    }
+    if(flag7 != -1 && flag9 != -1)
+    return true;
+    else return false;
+}
+
+int main() {
+    int n;
+    cin>>n;
+    if(checkMagic(n)){
+        cout<<"is a Magic Number";
+        exit(0);
+    }
+
+    int len = 0, dummy = n;
+
+    while(dummy>0){
+        len++;
+        dummy = dummy/10;
+        
+             
+    }
+
+    if(len == 1) cout<<79;
+
+    else if(len == 2){
+        if(abs(n-79)<abs(n-97)) cout<<79;
+        else cout<<97;
+    }else{
+        int num1 = n, num2 = n;
+        while(!checkMagic(num1)) num1++;
+        while(!checkMagic(num2)) num2--;
+
+        if(abs(n-num1)<abs(n-num2)) cout<<num1;
+        else cout<<num2;
+    }
+
+}
+
+                  
+                  
+                  
