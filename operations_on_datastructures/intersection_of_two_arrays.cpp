@@ -7,6 +7,7 @@
  * that are common in both the first and second arrays. This implementation uses
  * ordered arrays, and an algorithm to correctly order them and return the
  * result as a new array (vector).
+ * @see union_of_two_arrays.cpp
  * @author [Alvin](https://github.com/polarvoid)
  */
 
