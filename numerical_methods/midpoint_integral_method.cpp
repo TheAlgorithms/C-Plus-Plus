@@ -2,8 +2,8 @@
 #include <cmath> /// for math functions
 #include <cassert> /// for assert
 #include <cstdlib> /// for std::atof
-#include <functional> /// forstd::function
-#include <map> /// for std::map
+#include <functional> /// for std::function
+#include <map> /// for std::map container
 
 /*!
  * @file
@@ -24,47 +24,54 @@
 */
 
 /**
+ * @namespace numerical_methods
+ * @brief Numerical algorithms/methods
+ */
+namespace numerical_methods {
+/**
  * @namespace midpoint_rule
  * \brief Contains the function of the midpoint method implementation
 */
-namespace midpoint_rule{
-    /*!
-     * @fn double midpoint(const int N, const double h, const double a, const std::function<double (double)>& func)
-     * \brief Implement midpoint method
-     * @param N is the number of intervals
-     * @param h is the step
-     * @param a is x0
-     * @param func is the function that will be integrated
-     * @returns the result of the integration
-    */
-    double midpoint(const int N, const double h, const double a, const std::function<double (double)>& func){
-        std::map<int, double> data_table; // Contains the data points, key: i, value: f(xi)
-        double xi = a; // Initialize xi to the starting point x0 = a
+    namespace midpoint_rule {
+        /*!
+         * @fn double midpoint(const int N, const double h, const double a, const std::function<double (double)>& func)
+         * \brief Implement midpoint method
+         * @param N is the number of intervals
+         * @param h is the step
+         * @param a is x0
+         * @param func is the function that will be integrated
+         * @returns the result of the integration
+        */
+        double midpoint(const int N, const double h, const double a, const std::function<double(double)> &func) {
+            std::map<int, double> data_table; // Contains the data points, key: i, value: f(xi)
+            double xi = a; // Initialize xi to the starting point x0 = a
 
-        // Create the data table
-        // Loop from x0 to xN-1
-        double temp;
-        for(int i=0; i<N; i++){
-            temp = func(xi + h/2); // find f(xi+h/2)
-            data_table.insert(std::pair<int ,double>(i, temp)); // add i and f(xi)
-            xi += h; // Get the next point xi for the next iteration
+            // Create the data table
+            // Loop from x0 to xN-1
+            double temp;
+            for (int i = 0; i < N; i++) {
+                temp = func(xi + h / 2); // find f(xi+h/2)
+                data_table.insert(std::pair<int, double>(i, temp)); // add i and f(xi)
+                xi += h; // Get the next point xi for the next iteration
+            }
+
+            // Evaluate the integral.
+            // Remember: {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}
+            double evaluate_integral = 0;
+            for (int i = 0; i < N; i++) evaluate_integral += data_table.at(i);
+
+            // Multiply by the coefficient h
+            evaluate_integral *= h;
+
+            // If the result calculated is nan, then the user has given wrong input interval.
+            assert(!std::isnan(evaluate_integral) &&
+                   "The definite integral can't be evaluated. Check the validity of your input.\n");
+            // Else return
+            return evaluate_integral;
         }
 
-        // Evaluate the integral.
-        // Remember: {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}
-        double evaluate_integral = 0;
-        for(int i=0; i<N; i++) evaluate_integral += data_table.at(i);
-
-        // Multiply by the coefficient h
-        evaluate_integral *= h;
-
-        // If the result calculated is nan, then the user has given wrong input interval.
-        assert(!std::isnan(evaluate_integral) && "The definite integral can't be evaluated. Check the validity of your input.\n");
-        // Else return
-        return evaluate_integral;
-    }
-
-} // namespace midpoint_rule
+    } // namespace midpoint_rule
+} // namespace numerical_methods
 
 /**
  * \brief A function f(x) that will be used to test the method
@@ -88,29 +95,29 @@ double l(double x){
 }
 
 /**
- * \brief Self-test implememtations
+ * \brief Self-test implementations
  * @param N is the number of intervals
  * @param h is the step
  * @param a is x0
  * @param b is the end of the interval
- * @param used_argv_parameters is 'true' if argv parameteres are given and 'false' if not
+ * @param used_argv_parameters is 'true' if argv parameters are given and 'false' if not
 */
 static void test(int N, double h, double a,double b, bool used_argv_parameters){
     // Call midpoint() for each of the test functions f, g, k, l
     // Assert with two decimal point precision
-    double result_f = midpoint_rule::midpoint(N, h, a, f);
+    double result_f = numerical_methods::midpoint_rule::midpoint(N, h, a, f);
     assert((used_argv_parameters || (result_f >= 4.09 && result_f <= 4.10)) && "The result of f(x) is wrong");
     std::cout << "The result of integral f(x) on interval [" << a << ", " << b << "] is equal to: " << result_f << std::endl;
 
-    double result_g = midpoint_rule::midpoint(N, h, a, g);
+    double result_g = numerical_methods::midpoint_rule::midpoint(N, h, a, g);
     assert((used_argv_parameters || (result_g >= 0.27 && result_g <= 0.28)) && "The result of g(x) is wrong");
     std::cout << "The result of integral g(x) on interval [" << a << ", " << b << "] is equal to: " << result_g << std::endl;
 
-    double result_k = midpoint_rule::midpoint(N, h, a, k);
+    double result_k = numerical_methods::midpoint_rule::midpoint(N, h, a, k);
     assert((used_argv_parameters || (result_k >= 9.06 && result_k <= 9.07)) && "The result of k(x) is wrong");
     std::cout << "The result of integral k(x) on interval [" << a << ", " << b << "] is equal to: " << result_k << std::endl;
 
-    double result_l = midpoint_rule::midpoint(N, h, a, l);
+    double result_l = numerical_methods::midpoint_rule::midpoint(N, h, a, l);
     assert((used_argv_parameters || (result_l >= 7.16 && result_l <= 7.17)) && "The result of l(x) is wrong");
     std::cout << "The result of integral l(x) on interval [" << a << ", " << b << "] is equal to: " << result_l << std::endl;
 
