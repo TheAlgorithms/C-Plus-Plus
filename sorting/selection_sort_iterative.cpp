@@ -39,7 +39,7 @@
 namespace sorting {
 /******************************************************************************
  * @brief The main function which implements Selection sort
- * @param arr vector to be sorted:-> template
+ * @param arr vector to be sorted
  * @param len length of vector to be sorted
  * @returns void
  *******************************************************************************/
@@ -47,7 +47,7 @@ namespace sorting {
 void selectionSort(std::vector<uint64_t> &arr, uint64_t len) {
     for (uint64_t it = 0; it < len; ++it) {
         uint64_t min = it;  // set min value
-        for (uint64_t it2 = it + 1; it2 < len + 1; ++it2) {
+        for (uint64_t it2 = it + 1; it2 < len; ++it2) {
             if (arr[it2] < arr[min]) {  // check which element is smaller
                 min = it2;  // store index of smallest element to min
             }
