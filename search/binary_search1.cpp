@@ -138,7 +138,7 @@ bool operator<(const KeyClass& lhs, const KeyClass& rhs) {
 }
 
 /**
- *@brief this class is implemented to encapsulate sample test cases
+ * @brief this class is implemented to encapsulate sample test cases
  */
 class TestCases {
  private:
