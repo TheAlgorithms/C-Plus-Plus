@@ -41,25 +41,30 @@ namespace sorting {
  * @brief The main function which implements Selection sort
  * @param arr vector to be sorted
  * @param len length of vector to be sorted
- * @returns void
+ * @returns @param array resultant sorted vector
  *******************************************************************************/
 
-void selectionSort(std::vector<uint64_t> &arr, uint64_t len) {
-    for (uint64_t it = 0; it < len; ++it) {
-        uint64_t min = it;  // set min value
-        for (uint64_t it2 = it + 1; it2 < len; ++it2) {
-            if (arr[it2] < arr[min]) {  // check which element is smaller
-                min = it2;  // store index of smallest element to min
+    std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr, uint64_t len) {
+        
+        std::vector<uint64_t> array(arr.begin(), arr.end()); //declare a vector in which result will be stored
+        for (uint64_t it = 0; it < len; ++it) {
+
+            uint64_t min = it;  // set min value
+            for (uint64_t it2 = it + 1; it2 < len; ++it2) {
+                if (array[it2] < array[min]) {  // check which element is smaller
+                    min = it2;  // store index of smallest element to min
+                }
+            }
+
+            if (min != it) {  // swap if min does not match to i
+                uint64_t tmp = array[min];
+                array[min] = array[it];
+                array[it] = tmp;
             }
         }
 
-        if (min != it) {  // swap if min does not match to i
-            uint64_t tmp = arr[min];
-            arr[min] = arr[it];
-            arr[it] = tmp;
-        }
+        return array; //return sorted vector
     }
-}
 }  // namespace sorting
 
 /*******************************************************************************
@@ -72,8 +77,9 @@ static void test() {
     std::vector<uint64_t> vector1 = {1, 0, 0, 1, 1, 0, 2, 1};
     uint64_t vector1size = vector1.size();
     std::cout << "1st test... ";
-    sorting::selectionSort(vector1, vector1size);
-    assert(std::is_sorted(vector1.begin(), vector1.end()));
+    std::vector<uint64_t> result_test1;
+    result_test1 = sorting::selectionSort(vector1, vector1size);
+    assert(std::is_sorted(result_test1.begin(), result_test1.end()));
     std::cout << "Passed" << std::endl;
 
     // testcase #2
@@ -82,8 +88,9 @@ static void test() {
     std::vector<uint64_t> vector2 = {19, 22, 540, 241, 156, 140, 12, 1};
     uint64_t vector2size = vector2.size();
     std::cout << "2nd test... ";
-    sorting::selectionSort(vector2, vector2size);
-    assert(std::is_sorted(vector2.begin(), vector2.end()));
+    std::vector<uint64_t> result_test2;
+    result_test2 = sorting::selectionSort(vector2, vector2size);
+    assert(std::is_sorted(result_test2.begin(),result_test2.end()));
     std::cout << "Passed" << std::endl;
 
     // testcase #3
@@ -91,8 +98,9 @@ static void test() {
     std::vector<uint64_t> vector3 = {11, 20, 30, 41, 15, 60, 82, 15};
     uint64_t vector3size = vector3.size();
     std::cout << "3rd test... ";
-    sorting::selectionSort(vector3, vector3size);
-    assert(std::is_sorted(vector3.begin(), vector3.end()));
+    std::vector<uint64_t> result_test3;
+    result_test3 = sorting::selectionSort(vector3, vector3size);
+    assert(std::is_sorted(result_test3.begin(), result_test3.end()));
     std::cout << "Passed" << std::endl;
 
     // testcase #4
@@ -101,8 +109,9 @@ static void test() {
     std::vector<uint64_t> vector4 = {1, 9, 11, 546, 26, 65, 212, 14};
     uint64_t vector4size = vector2.size();
     std::cout << "4th test... ";
-    sorting::selectionSort(vector4, vector4size);
-    assert(std::is_sorted(vector4.begin(), vector4.end()));
+    std::vector<uint64_t> result_test4;
+    result_test4 = sorting::selectionSort(vector4, vector4size);
+    assert(std::is_sorted(result_test4.begin(), result_test4.end()));
     std::cout << "Passed" << std::endl;
 }
 
