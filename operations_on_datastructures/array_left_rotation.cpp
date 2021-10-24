@@ -49,10 +49,10 @@ std::vector<int32_t> shift_left(const std::vector<int32_t> &array,
         return {};  ///< We got an invalid shift, return empty array
     }
     std::vector<int32_t> res(array.size());  ///< Result array
-    for (int i = shift; i < array.size(); i++) {
+    for (size_t i = shift; i < array.size(); i++) {
         res[i - shift] = array[i];  ///< Add values after the shift index
     }
-    for (int i = 0; i < shift; i++) {
+    for (size_t i = 0; i < shift; i++) {
         res[array.size() - shift + i] =
             array[i];  ///< Add the values from the start
     }
