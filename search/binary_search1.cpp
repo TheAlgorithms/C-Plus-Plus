@@ -102,9 +102,9 @@ class ContainerClass {
  * @brief sample class implemented to show the usage of the algorithm with user
  *defined types.
  *
- * KeyClass class is a simple user defined data type to show the usage of
- *binary_search algorithm. please note that KeyClass class is implemented just
- *for test purposes.
+ * KeyClass class is a simple user-defined data type to show the usage of
+ * binary_search algorithm. please note that KeyClass class is implemented just
+ * for test purposes.
  */
 class KeyClass {
     friend std::ostream& operator<<(const KeyClass& key, std::ostream& rhs);
