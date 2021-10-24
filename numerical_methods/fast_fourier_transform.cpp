@@ -156,6 +156,6 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
 int main(int argc, char const *argv[])
 {
 	
-	test();/// run self-test implementations
+	test();/// run self-test implementations with 2 defined test cases
 	return 0;
 }
