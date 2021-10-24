@@ -44,27 +44,28 @@ namespace sorting {
  * @returns @param array resultant sorted vector
  *******************************************************************************/
 
-    std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr, uint64_t len) {
-        
-        std::vector<uint64_t> array(arr.begin(), arr.end()); //declare a vector in which result will be stored
-        for (uint64_t it = 0; it < len; ++it) {
-
-            uint64_t min = it;  // set min value
-            for (uint64_t it2 = it + 1; it2 < len; ++it2) {
-                if (array[it2] < array[min]) {  // check which element is smaller
-                    min = it2;  // store index of smallest element to min
-                }
-            }
-
-            if (min != it) {  // swap if min does not match to i
-                uint64_t tmp = array[min];
-                array[min] = array[it];
-                array[it] = tmp;
+std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr,
+                                    uint64_t len) {
+    std::vector<uint64_t> array(
+        arr.begin(),
+        arr.end());  // declare a vector in which result will be stored
+    for (uint64_t it = 0; it < len; ++it) {
+        uint64_t min = it;  // set min value
+        for (uint64_t it2 = it + 1; it2 < len; ++it2) {
+            if (array[it2] < array[min]) {  // check which element is smaller
+                min = it2;  // store index of smallest element to min
             }
         }
 
-        return array; //return sorted vector
+        if (min != it) {  // swap if min does not match to i
+            uint64_t tmp = array[min];
+            array[min] = array[it];
+            array[it] = tmp;
+        }
     }
+
+    return array;  // return sorted vector
+}
 }  // namespace sorting
 
 /*******************************************************************************
@@ -90,7 +91,7 @@ static void test() {
     std::cout << "2nd test... ";
     std::vector<uint64_t> result_test2;
     result_test2 = sorting::selectionSort(vector2, vector2size);
-    assert(std::is_sorted(result_test2.begin(),result_test2.end()));
+    assert(std::is_sorted(result_test2.begin(), result_test2.end()));
     std::cout << "Passed" << std::endl;
 
     // testcase #3
