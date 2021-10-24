@@ -81,8 +81,8 @@ namespace binary_search_test {
  *defined types.
  *
  * ContainerClass class is a simple user defined container to show the usage of
- *binary_search algorithm. please note that ContainerClass class is implemented
- *just for test purposes.
+ * binary_search algorithm. please note that ContainerClass class is implemented
+ * just for test purposes.
  */
 template <typename T>
 class ContainerClass {
