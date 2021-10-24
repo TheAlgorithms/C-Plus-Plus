@@ -19,5 +19,6 @@ var namespaceoperations__on__datastructures =
       [ "Tnode", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode" ]
     ] ],
     [ "get_union", "da/d6d/namespaceoperations__on__datastructures.html#a2b8ff06a84b041457873840bf82e2d74", null ],
-    [ "print", "da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20", null ]
+    [ "print", "da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20", null ],
+    [ "shift_right", "da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86", null ]
 ];
