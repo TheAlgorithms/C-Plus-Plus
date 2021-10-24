@@ -14,7 +14,7 @@
 #include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
 
-#define PI 3.14
+constexpr double PI = 3.14;
 
 /**
  * @brief The volume of a [cube](https://en.wikipedia.org/wiki/Cube)
