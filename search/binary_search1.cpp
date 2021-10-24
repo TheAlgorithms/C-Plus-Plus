@@ -77,7 +77,7 @@ namespace binary_search_test {
 
 /**
  * @brief sample class implemented to show the usage of the algorithm with user
- *defined types.
+ * defined types.
  *
  * ContainerClass class is a simple user defined container to show the usage of
  * binary_search algorithm. please note that ContainerClass class is implemented
