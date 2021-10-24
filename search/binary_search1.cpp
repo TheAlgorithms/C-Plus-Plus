@@ -22,7 +22,6 @@
  * @brief Searching algorithms
  */
 namespace search {
-
 /**
  * @namespace binary_search
  * @brief Functions for the [Binary
