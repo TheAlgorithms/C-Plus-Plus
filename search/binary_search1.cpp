@@ -11,11 +11,11 @@
  * @author [Mohammad Golzar](https://github.com/m-golzar)
  */
 
-#include <array>     // for std::array
-#include <cassert>   // for assert
-#include <iostream>  // for IO operations
-#include <string>    // for std::string
-#include <vector>    // for std::vector
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <string>    /// for std::string
+#include <vector>    /// for std::vector
 
 /**
  * @namespace search
