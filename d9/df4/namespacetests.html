@@ -122,7 +122,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Testcases to check Union of Two Arrays. </p>
-<p >Testcases to check Reversal of Binary Tree. </p>
+<p >Testcases to check Reversal of Binary Tree.</p>
+<p >Testcases to check intersection of Two Arrays. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a167c24bd817469ae47358d12e034f2d5" name="a167c24bd817469ae47358d12e034f2d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a167c24bd817469ae47358d12e034f2d5">&#9670;&nbsp;</a></span>test1()</h2>
@@ -140,14 +141,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A Test to check an simple case. </p>
-<p >A Test to check an edge case (two empty arrays)</p>
 <p >&lt; Use the BinaryTree</p>
+<p >A Test to check an edge case (two empty arrays)</p>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>A Test to check an edge case (single element reversal) </p>
 <p >&lt; Should print 4 5 1 2 3</p>
+<p >&lt; Check if result is empty</p>
+<p >&lt; Should only print newline</p>
 <p >&lt; Check for equal sizes</p>
 <p >&lt; Ensure that there is only one element</p>
 <p >&lt; Check if both elements are same</p>
+<p >&lt; Check if result is empty</p>
+<p >&lt; Should only print newline</p>
 <p >&lt; Check if result is empty</p>
 <p >&lt; Should only print newline</p>
 <p >&lt; Check for equal sizes</p>
@@ -195,14 +200,18 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A Test to check an empty vector. </p>
-<p >A Test to check an edge case (one empty array)</p>
 <p >A Test to check an edge case (NULL root element)</p>
+<p >A Test to check an edge case (one empty array)</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p >&lt; Should print empty newline</p>
+<p >&lt; Check if result is equal to a</p>
+<p >&lt; Should only print newline</p>
 <p >&lt; Check for equal sizes</p>
 <p >&lt; Ensure that there is only one element</p>
 <p >&lt; Check if result is equal to b</p>
 <p >&lt; Should print 2 3</p>
+<p >&lt; Check if result is equal to a</p>
+<p >&lt; Should only print newline</p>
 <p >&lt; Check for equal sizes</p>
 <p >&lt; Ensure that there is only one element</p>
 <p >&lt; Check if result is equal to b</p>
@@ -243,15 +252,19 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A Test to check an invalid shift value. </p>
-<p >A Test to check correct functionality with a simple test case.</p>
 <p >A Test to check correct reversal of a Binary Tree.</p>
+<p >A Test to check correct functionality with a simple test case.</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p >&lt; 7 &gt; 5</p>
 <p >&lt; Should print empty newline</p>
+<p >&lt; Check if result is correct</p>
+<p >&lt; Should print 6</p>
 <p >&lt; Check for equality</p>
 <p >&lt; Check for equality</p>
 <p >&lt; Check if result is correct</p>
 <p >&lt; Should print 2 3 4 6</p>
+<p >&lt; Check if result is correct</p>
+<p >&lt; Should print 6</p>
 <p >&lt; Check for equality</p>
 <p >&lt; Check for equality</p>
 <p >&lt; Check if result is correct</p>
@@ -296,7 +309,11 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p >&lt; Should print {420, 2, 4, ..., 418}</p>
 <p >&lt; Check if result is correct</p>
+<p >&lt; Should print 4 6</p>
+<p >&lt; Check if result is correct</p>
 <p >&lt; Should print 2 3 4 6 7</p>
+<p >&lt; Check if result is correct</p>
+<p >&lt; Should print 4 6</p>
 <p >&lt; Check if result is correct</p>
 <p >&lt; Should print 2 3 4 6 7</p>
 <div class="fragment"><div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>             {</div>
@@ -348,7 +365,11 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p >&lt; Should print 1 2 3 4 5</p>
 <p >&lt; Check if result is correct</p>
+<p >&lt; Should print 2 3 4</p>
+<p >&lt; Check if result is correct</p>
 <p >&lt; Should print 1 2 3 4 5 6 7 9</p>
+<p >&lt; Check if result is correct</p>
+<p >&lt; Should print 2 3 4</p>
 <p >&lt; Check if result is correct</p>
 <p >&lt; Should print 1 2 3 4 5 6 7 9</p>
 <div class="fragment"><div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>             {</div>
@@ -390,26 +411,34 @@ Here is the call graph for this function:</div>
 <p >&lt; Sort vector a</p>
 <p >&lt; Sort vector b</p>
 <p >&lt; Check if result is correct</p>
+<p >&lt; Should print 3 7</p>
+<p >&lt; Sort vector a</p>
+<p >&lt; Sort vector b</p>
+<p >&lt; Check if result is correct</p>
 <p >&lt; Should print 1 2 3 4 5 6 7 8 9 11</p>
-<div class="fragment"><div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>             {</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST CASE 6\n&quot;</span>;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Intialized a = {1, 3, 3, 2, 5, 9, 4, 3, 2} &quot;</span>;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;b = {11, 3, 7, 8, 6}\n&quot;</span>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected result: {1, 2, 3, 4, 5, 6, 7, 8, 9, 11}\n&quot;</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> a = {1, 3, 3, 2, 5, 9, 4, 3, 2};</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> b = {11, 3, 7, 8, 6};</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(a.begin(), a.end());  <span class="comment">///&lt; Sort vector a</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>());  <span class="comment">///&lt; Sort vector b</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="../../da/d6d/namespaceoperations__on__datastructures.html#a2b8ff06a84b041457873840bf82e2d74">get_union</a>(a, b);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11};</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    assert(result == expected);  <span class="comment">///&lt; Check if result is correct</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_function" href="../../d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9">print</a>(result);               <span class="comment">///&lt; Should print 1 2 3 4 5 6 7 8 9 11</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED!\n\n&quot;</span>;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<p >&lt; Sort vector a</p>
+<p >&lt; Sort vector b</p>
+<p >&lt; Check if result is correct</p>
+<p >&lt; Should print 1 2 3 4 5 6 7 8 9 11</p>
+<div class="fragment"><div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>             {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST CASE 6\n&quot;</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Intialized a = {1, 3, 3, 2, 5, 9, 4, 7, 3, 2} &quot;</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;b = {11, 3, 7, 8, 6}\n&quot;</span>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expected result: {3, 7}\n&quot;</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> a = {1, 3, 3, 2, 5, 9, 4, 7, 3, 2};</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> b = {11, 3, 7, 8, 6};</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(a.begin(), a.end());  <span class="comment">///&lt; Sort vector a</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a>(b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), b.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>());  <span class="comment">///&lt; Sort vector b</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="../../da/d6d/namespaceoperations__on__datastructures.html#adaf9a06f0c236c2d95c97e441ea2d12e">get_intersection</a>(a, b);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> expected = {3, 7};</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    assert(result == expected);  <span class="comment">///&lt; Check if result is correct</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <a class="code hl_function" href="../../d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9">print</a>(result);               <span class="comment">///&lt; Should print 3 7</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;TEST PASSED!\n\n&quot;</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
-<div class="ttc" id="anamespaceoperations__on__datastructures_html_a2b8ff06a84b041457873840bf82e2d74"><div class="ttname"><a href="../../da/d6d/namespaceoperations__on__datastructures.html#a2b8ff06a84b041457873840bf82e2d74">operations_on_datastructures::get_union</a></div><div class="ttdeci">std::vector&lt; int32_t &gt; get_union(const std::vector&lt; int32_t &gt; &amp;first, const std::vector&lt; int32_t &gt; &amp;second)</div><div class="ttdoc">Gets the union of two sorted arrays, and returns them in a vector.</div><div class="ttdef"><b>Definition:</b> union_of_two_arrays.cpp:48</div></div>
+<div class="ttc" id="anamespaceoperations__on__datastructures_html_adaf9a06f0c236c2d95c97e441ea2d12e"><div class="ttname"><a href="../../da/d6d/namespaceoperations__on__datastructures.html#adaf9a06f0c236c2d95c97e441ea2d12e">operations_on_datastructures::get_intersection</a></div><div class="ttdeci">std::vector&lt; int32_t &gt; get_intersection(const std::vector&lt; int32_t &gt; &amp;first, const std::vector&lt; int32_t &gt; &amp;second)</div><div class="ttdoc">Gets the intersection of two sorted arrays, and returns them in a vector.</div><div class="ttdef"><b>Definition:</b> intersection_of_two_arrays.cpp:49</div></div>
 <div class="ttc" id="asort_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a></div><div class="ttdeci">T sort(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

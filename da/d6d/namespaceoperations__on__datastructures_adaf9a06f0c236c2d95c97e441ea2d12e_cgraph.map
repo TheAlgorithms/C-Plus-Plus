@@ -1,0 +1,6 @@
+<map id="operations_on_datastructures::get_intersection" name="operations_on_datastructures::get_intersection">
+<area shape="rect" id="node1" title="Gets the intersection of two sorted arrays, and returns them in a vector." alt="" coords="5,49,204,90"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="271,5,389,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="252,56,408,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="273,107,387,133"/>
+</map>

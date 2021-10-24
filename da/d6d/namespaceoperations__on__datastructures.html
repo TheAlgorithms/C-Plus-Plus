@@ -107,6 +107,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86">shift_right</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;array, size_t shift)</td></tr>
 <tr class="memdesc:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the given vector to the right by the shift amount and returns a new vector with the result. The original vector is not mutated.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86">More...</a><br /></td></tr>
 <tr class="separator:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf9a06f0c236c2d95c97e441ea2d12e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#adaf9a06f0c236c2d95c97e441ea2d12e">get_intersection</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;first, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;second)</td></tr>
+<tr class="memdesc:adaf9a06f0c236c2d95c97e441ea2d12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the intersection of two sorted arrays, and returns them in a vector.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#adaf9a06f0c236c2d95c97e441ea2d12e">More...</a><br /></td></tr>
+<tr class="separator:adaf9a06f0c236c2d95c97e441ea2d12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8ff06a84b041457873840bf82e2d74"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#a2b8ff06a84b041457873840bf82e2d74">get_union</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;first, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;second)</td></tr>
 <tr class="memdesc:a2b8ff06a84b041457873840bf82e2d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the union of two sorted arrays, and returns them in a vector.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#a2b8ff06a84b041457873840bf82e2d74">More...</a><br /></td></tr>
 <tr class="separator:a2b8ff06a84b041457873840bf82e2d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,13 +122,94 @@ Functions</h2></td></tr>
 <p >Operations on Data Structures</p>
 <p >for assert for IO Operations</p>
 <p >Operations on data structures</p>
+<p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a> for assert for IO operations</p>
+<p >Operations on Data Structures</p>
 <p >For assert For IO operations For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></p>
 <p >Operations on Data Structures</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/count.html">std::count</a> for assert for tolower for string operations for IO Operations</p>
-<p >Operations on data structures</p>
-<p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/sort.html">std::sort</a> for assert for IO operations</p>
-<p >Operations on Data Structures </p>
+<p >Operations on data structures </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="adaf9a06f0c236c2d95c97e441ea2d12e" name="adaf9a06f0c236c2d95c97e441ea2d12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf9a06f0c236c2d95c97e441ea2d12e">&#9670;&nbsp;</a></span>get_intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; operations_on_datastructures::get_intersection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the intersection of two sorted arrays, and returns them in a vector. </p>
+<p >An algorithm is used that compares the elements of the two vectors, incrementing the index of the smaller of the two. If the elements are the same, the element is appended to the result array to be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of sorted integer values </td></tr>
+    <tr><td class="paramname">second</td><td>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of sorted integer values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> of the intersection of the two arrays, in ascending order </dd></dl>
+<p >&lt; Vector to hold the intersection</p>
+<p >&lt; Index for the first array</p>
+<p >&lt; Index for the second array</p>
+<p >&lt; Length of first array</p>
+<p >&lt; Length of second array</p>
+<p >&lt; Increment index of second array</p>
+<p >&lt; Increment index of second array</p>
+<p >&lt; Add the element if it is unique</p>
+<p >&lt; Increment index of first array</p>
+<p >&lt; Increment index of second array too</p>
+<div class="fragment"><div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                                                        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> res;         <span class="comment">///&lt; Vector to hold the intersection</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">size_t</span> f_index = 0;               <span class="comment">///&lt; Index for the first array</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">size_t</span> s_index = 0;               <span class="comment">///&lt; Index for the second array</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">size_t</span> f_length = first.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();   <span class="comment">///&lt; Length of first array</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">size_t</span> s_length = second.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">///&lt; Length of second array</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">while</span> (f_index &lt; f_length &amp;&amp; s_index &lt; s_length) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span> (first[f_index] &lt; second[s_index]) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            f_index++;  <span class="comment">///&lt; Increment index of second array</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (first[f_index] &gt; second[s_index]) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            s_index++;  <span class="comment">///&lt; Increment index of second array</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> ((res.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 0) || (first[f_index] != res.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/back.html">back</a>())) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                res.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    first[f_index]);  <span class="comment">///&lt; Add the element if it is unique</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            f_index++;  <span class="comment">///&lt; Increment index of first array</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            s_index++;  <span class="comment">///&lt; Increment index of second array too</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/back.html">std::vector::back</a></div><div class="ttdeci">T back(T... args)</div></div>
+<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d6d/namespaceoperations__on__datastructures_adaf9a06f0c236c2d95c97e441ea2d12e_cgraph.svg" width="414" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a2b8ff06a84b041457873840bf82e2d74" name="a2b8ff06a84b041457873840bf82e2d74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b8ff06a84b041457873840bf82e2d74">&#9670;&nbsp;</a></span>get_union()</h2>
 
@@ -219,11 +303,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
-<div class="ttc" id="aback_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/back.html">std::vector::back</a></div><div class="ttdeci">T back(T... args)</div></div>
 <div class="ttc" id="anext_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/next.html">std::next</a></div><div class="ttdeci">T next(T... args)</div></div>
-<div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -257,6 +337,10 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p >Print each value in the array</p>
+<p >Print newline</p>
+<p >Print each value in the array</p>
+<p >Print newline</p>
 <p >Print each value in the array</p>
 <p >Print newline</p>
 <p >Print each value in the array</p>
