@@ -1,0 +1,3 @@
+<map id="dsu::findSet" name="dsu::findSet">
+<area shape="rect" id="node1" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="5,29,97,56"/>
+</map>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p_0',['p',['../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a57c168cd6eb85718eab97da658a698ad',1,'math::ncr_modulo_p::NCRModuloP::p()'],['../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#ad5ed23a251dbe55ad1ed06bf1a465ad3',1,'probability::geometric_dist::geometric_distribution::p()']]],
+  ['p_0',['p',['../dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb',1,'dsu::p()'],['../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a57c168cd6eb85718eab97da658a698ad',1,'math::ncr_modulo_p::NCRModuloP::p()'],['../da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#ad5ed23a251dbe55ad1ed06bf1a465ad3',1,'probability::geometric_dist::geometric_distribution::p()']]],
   ['pagefault_1',['pageFault',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a09cbe562b0c396329607f5d388d57c9c',1,'others::lru_cache::LRUCache']]],
   ['pageframe_2',['pageFrame',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a1aafd0444b410e0fcb66287e9954c893',1,'others::lru_cache::LRUCache']]],
   ['pagemap_3',['pageMap',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa4d6db56109af196ffc7e5f72bc9907c',1,'others::lru_cache::LRUCache']]],

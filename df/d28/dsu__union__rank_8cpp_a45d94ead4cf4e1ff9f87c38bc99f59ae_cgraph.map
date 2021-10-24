@@ -1,0 +1,9 @@
+<map id="test2" name="test2">
+<area shape="rect" id="node1" title="Self&#45;implementations, 2nd test." alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="294,5,338,32"/>
+<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="104,56,220,83"/>
+<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="110,107,214,133"/>
+<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="412,81,504,108"/>
+<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="268,107,364,133"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="277,157,355,184"/>
+</map>

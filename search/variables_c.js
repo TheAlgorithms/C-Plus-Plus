@@ -8,7 +8,9 @@ var searchData=
   ['max_5fiterations_5',['MAX_ITERATIONS',['../de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d',1,'newton_raphson_method.cpp']]],
   ['max_5flevel_6',['MAX_LEVEL',['../d5/d3c/namespacedata__structures.html#ac0d7e0be24da9f41bcb19745873c436a',1,'data_structures']]],
   ['max_5fsize_7',['max_size',['../d8/df0/queue__using__array_8cpp.html#a2d49e79bd164c298912db252970520d8',1,'queue_using_array.cpp']]],
-  ['min_5fdistance_8',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]],
-  ['month_9',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
-  ['moves_10',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
+  ['maxelement_8',['maxElement',['../dd/d1f/classdsu.html#a4ade6f16c418fc98b54452f7b0252a53',1,'dsu']]],
+  ['min_5fdistance_9',['MIN_DISTANCE',['../d8/d77/namespacemachine__learning.html#a7220dbb7fa896d83bfb7a50e4fce1786',1,'machine_learning']]],
+  ['minelement_10',['minElement',['../dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63',1,'dsu']]],
+  ['month_11',['month',['../d1/df6/class_easter_year_month_day.html#a01a068eae0b6fa8f86f5f60c2840bbde',1,'EasterYearMonthDay']]],
+  ['moves_12',['moves',['../dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71',1,'machine_learning::aystar_search::EightPuzzle']]]
 ];

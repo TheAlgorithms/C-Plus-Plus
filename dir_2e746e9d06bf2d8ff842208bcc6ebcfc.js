@@ -6,6 +6,8 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
     [ "binary_search_tree2.cpp", "df/d42/binary__search__tree2_8cpp.html", "df/d42/binary__search__tree2_8cpp" ],
     [ "binaryheap.cpp", "de/dc3/binaryheap_8cpp.html", "de/dc3/binaryheap_8cpp" ],
     [ "disjoint_set.cpp", "de/d23/disjoint__set_8cpp.html", "de/d23/disjoint__set_8cpp" ],
+    [ "dsu_path_compression.cpp", "d3/dae/dsu__path__compression_8cpp.html", "d3/dae/dsu__path__compression_8cpp" ],
+    [ "dsu_union_rank.cpp", "df/d28/dsu__union__rank_8cpp.html", "df/d28/dsu__union__rank_8cpp" ],
     [ "linked_list.cpp", "da/dc3/linked__list_8cpp.html", "da/dc3/linked__list_8cpp" ],
     [ "linkedlist_implentation_usingarray.cpp", "d3/dce/linkedlist__implentation__usingarray_8cpp.html", "d3/dce/linkedlist__implentation__usingarray_8cpp" ],
     [ "list_array.cpp", "d7/d00/list__array_8cpp.html", "d7/d00/list__array_8cpp" ],

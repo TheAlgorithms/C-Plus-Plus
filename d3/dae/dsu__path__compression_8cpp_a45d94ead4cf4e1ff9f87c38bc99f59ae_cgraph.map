@@ -1,0 +1,14 @@
+<map id="test2" name="test2">
+<area shape="rect" id="node1" title="Self&#45;implementations, 2nd test." alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node2" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="287,5,331,32"/>
+<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="122,81,191,108"/>
+<area shape="rect" id="node8" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="104,284,209,311"/>
+<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="257,56,360,83"/>
+<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="259,107,358,133"/>
+<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="271,157,346,184"/>
+<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="408,157,500,184"/>
+<area shape="rect" id="node9" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="261,259,357,285"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="273,309,345,336"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="274,360,343,387"/>
+<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="269,411,348,437"/>
+</map>

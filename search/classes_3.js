@@ -13,7 +13,8 @@ var searchData=
   ['divides_10',['divides',['http://en.cppreference.com/w/cpp/utility/functional/divides.html',0,'std']]],
   ['domain_5ferror_11',['domain_error',['http://en.cppreference.com/w/cpp/error/domain_error.html',0,'std']]],
   ['double_5flinked_5flist_12',['double_linked_list',['../d9/dee/classdouble__linked__list.html',1,'']]],
-  ['duration_13',['duration',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono']]],
-  ['duration_5fvalues_14',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
-  ['dynarray_15',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std']]]
+  ['dsu_13',['dsu',['../dd/d1f/classdsu.html',1,'']]],
+  ['duration_14',['duration',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono']]],
+  ['duration_5fvalues_15',['duration_values',['http://en.cppreference.com/w/cpp/chrono/duration_values.html',0,'std::chrono']]],
+  ['dynarray_16',['dynarray',['http://en.cppreference.com/w/cpp/container/dynarray.html',0,'std']]]
 ];

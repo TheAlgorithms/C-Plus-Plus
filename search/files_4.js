@@ -10,5 +10,7 @@ var searchData=
   ['dnf_5fsort_2ecpp_7',['dnf_sort.cpp',['../d6/d1a/dnf__sort_8cpp.html',1,'']]],
   ['double_5ffactorial_2ecpp_8',['double_factorial.cpp',['../d7/d89/double__factorial_8cpp.html',1,'']]],
   ['double_5fhash_5fhash_5ftable_2ecpp_9',['double_hash_hash_table.cpp',['../d6/d80/double__hash__hash__table_8cpp.html',1,'']]],
-  ['durand_5fkerner_5froots_2ecpp_10',['durand_kerner_roots.cpp',['../da/df2/durand__kerner__roots_8cpp.html',1,'']]]
+  ['dsu_5fpath_5fcompression_2ecpp_10',['dsu_path_compression.cpp',['../d3/dae/dsu__path__compression_8cpp.html',1,'']]],
+  ['dsu_5funion_5frank_2ecpp_11',['dsu_union_rank.cpp',['../df/d28/dsu__union__rank_8cpp.html',1,'']]],
+  ['durand_5fkerner_5froots_2ecpp_12',['durand_kerner_roots.cpp',['../da/df2/durand__kerner__roots_8cpp.html',1,'']]]
 ];

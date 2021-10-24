@@ -1,0 +1,8 @@
+<map id="dsu::UnionSet" name="dsu::UnionSet">
+<area shape="rect" id="node1" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="5,105,111,132"/>
+<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="303,29,395,56"/>
+<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="159,55,255,81"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="171,105,243,132"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="172,156,241,183"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="167,207,246,233"/>
+</map>
