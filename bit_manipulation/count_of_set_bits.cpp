@@ -1,26 +1,21 @@
 /**
  * @file
- * @brief Implementation to [count sets
- * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
+ * @brief Implementation to [count number of set bits of a number]
+ * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
  * integer.
  *
  * @details
- * We are given an integer number. Let’s say, number. The task is to first
- * calculate the binary digit of a number and then calculate the total set bits
- * of a number.
+ * We are given an integer number. We need to calculate the number of set bits in it.
  *
- * Set bits in a binary number is represented by 1. Whenever we calculate the
- * binary number of an integer value it is formed as the combination of 0’s and
- * 1’s. So digit 1 is known as a set bit in computer terms.
- * Time Complexity: O(log n)
+ * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
+ * set bit in computer terms.
+ * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
  * @author [Swastika Gupta](https://github.com/Swastyy)
+ * @author [Prashant Thakur](https://github.com/prashant-th18)
  */
-
 #include <cassert>   /// for assert
-#include <iostream>  /// for io operations
-#include <vector>    /// for std::vector
-
+#include <iostream> /// for IO operations
 /**
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
@@ -36,24 +31,27 @@ namespace count_of_set_bits {
 /**
  * @brief The main function implements set bit count
  * @param n is the number whose set bit will be counted
- * @returns the count of the number set bit in the binary representation of `n`
+ * @returns total number of set-bits in the binary representation of number `n`
  */
-std::uint64_t countSetBits(int n) {
-    int count = 0;  // "count" variable is used to count number of 1's in binary
-                    // representation of the number
-    while (n != 0) {
-        count += n & 1;
-        n = n >> 1;  // n=n/2
+std::uint64_t countSetBits(std :: int64_t n) { // int64_t is preferred over int so that
+                                          // no Overflow can be there.
+
+    int count = 0; // "count" variable is used to count number of set-bits('1') in
+                   // binary representation of number 'n'
+    while (n != 0)
+    {
+        ++count;
+        n = (n & (n - 1));
     }
     return count;
+    // Why this algorithm is better than the standard one?
+    // Because this algorithm runs the same number of times as the number of
+    // set-bits in it. Means if my number is having "3" set bits, then this while loop
+    // will run only "3" times!!
 }
 }  // namespace count_of_set_bits
 }  // namespace bit_manipulation
 
-/**
- * @brief Self-test implementations
- * @returns void
- */
 static void test() {
     // n = 4 return 1
     assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);
@@ -67,9 +65,12 @@ static void test() {
     assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);
     // n = 25 return 3
     assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);
+    // n = 97 return 3
+    assert(bit_manipulation::count_of_set_bits::countSetBits(97) == 3);
+    // n = 31 return 5
+    assert(bit_manipulation::count_of_set_bits::countSetBits(31) == 5);
     std::cout << "All test cases successfully passed!" << std::endl;
 }
-
 /**
  * @brief Main function
  * @returns 0 on exit

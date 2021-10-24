@@ -19,6 +19,8 @@
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
 
 ## Ciphers
+  * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/a1z26_cipher.cpp)
+  * [Atbash Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/atbash_cipher.cpp)
   * [Base64 Encoding](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/base64_encoding.cpp)
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/caesar_cipher.cpp)
   * [Elliptic Curve Key Exchange](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/elliptic_curve_key_exchange.cpp)
@@ -63,6 +65,7 @@
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_linked_list.cpp)
+  * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack_using_queue.cpp)
   * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_queue.cpp)
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/test_stack_students.cpp)
@@ -184,6 +187,7 @@
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
   * [Gcd Recursive Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_recursive_euclidean.cpp)
   * [Integral Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation.cpp)
+  * [Integral Approximation2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/integral_approximation2.cpp)
   * [Inv Sqrt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/inv_sqrt.cpp)
   * [Large Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_factorial.cpp)
   * [Large Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/large_number.h)
@@ -241,9 +245,10 @@
   * [Inorder Successor Of Bst](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/inorder_successor_of_bst.cpp)
   * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
+  * [Reverse Binary Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_binary_tree.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
   * [Trie Multiple Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/trie_multiple_search.cpp)
-  * [Union Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_2_arrays.cpp)
+  * [Union Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_two_arrays.cpp)
 
 ## Others
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
