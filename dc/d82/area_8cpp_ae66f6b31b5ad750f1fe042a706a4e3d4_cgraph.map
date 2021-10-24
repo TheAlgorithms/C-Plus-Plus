@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,208,56,235"/>
+<area shape="rect" id="node2" href="$dc/d82/area_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,208,148,235"/>
+<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75" title="area of a circle (pi" alt="" coords="229,5,353,32"/>
+<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c" title="surface area of a cube ( 6 * (l" alt="" coords="205,56,378,83"/>
+<area shape="rect" id="node5" href="$dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864" title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)" alt="" coords="196,107,387,133"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="255,157,327,184"/>
+<area shape="rect" id="node8" href="$dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f" title="area of a parallelogram (b * h)" alt="" coords="205,208,378,235"/>
+<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca" title="area of a rectangle (l * w)" alt="" coords="233,259,349,285"/>
+<area shape="rect" id="node10" href="$dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656" title="surface area of a sphere ( 4 * pi * r^2)" alt="" coords="199,309,384,336"/>
+<area shape="rect" id="node11" href="$dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049" title="area of a square (l * l)" alt="" coords="225,360,358,387"/>
+<area shape="rect" id="node12" href="$dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc" title="area of a triangle (b * h / 2)" alt="" coords="223,411,360,437"/>
+<area shape="rect" id="node6" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="435,208,493,235"/>
+</map>

@@ -1,5 +1,6 @@
 var dir_296d53ceaeaa7e099814a6def439fe8a =
 [
+    [ "area.cpp", "dc/d82/area_8cpp.html", "dc/d82/area_8cpp" ],
     [ "armstrong_number.cpp", "d4/d5d/math_2armstrong__number_8cpp.html", "d4/d5d/math_2armstrong__number_8cpp" ],
     [ "binary_exponent.cpp", "de/dcf/binary__exponent_8cpp.html", "de/dcf/binary__exponent_8cpp" ],
     [ "binomial_calculate.cpp", "d8/db1/binomial__calculate_8cpp.html", "d8/db1/binomial__calculate_8cpp" ],
