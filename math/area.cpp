@@ -8,10 +8,10 @@
  * @author [Focusucof](https://github.com/Focusucof)
  */
 #define _USE_MATH_DEFINES
-#include <cmath>  /// for M_PI definition and pow()
-#include <cstdint> /// for uint16_t datatype
+#include <cmath>    /// for M_PI definition and pow()
+#include <cstdint>   /// for uint16_t datatype
 #include <iostream> /// for IO operations
-#include <cassert> /// for assert
+#include <cassert>  /// for assert
 
 /**
  * @namespace math
