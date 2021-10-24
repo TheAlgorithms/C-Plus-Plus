@@ -50,10 +50,10 @@ std::vector<int32_t> shift_right(const std::vector<int32_t> &array,
         return {};  ///< We got an invalid shift, return empty array
     }
     std::vector<int32_t> res(array.size());  ///< Result array
-    for (int i = shift; i < array.size(); i++) {
+    for (size_t i = shift; i < array.size(); i++) {
         res[i] = array[i - shift];  ///< Add values after the shift index
     }
-    for (int i = 0; i < shift; i++) {
+    for (size_t i = 0; i < shift; i++) {
         res[i] =
             array[array.size() - shift + i];  ///< Add the values from the start
     }
