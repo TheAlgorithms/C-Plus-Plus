@@ -98,7 +98,7 @@ class ContainerClass {
 };
 
 /**
- *@brief sample class implemented to show the usage of algorithm with user
+ * @brief sample class implemented to show the usage of the algorithm with user
  *defined types.
  *
  * KeyClass class is a simple user defined data type to show the usage of
