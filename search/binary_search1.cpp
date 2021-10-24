@@ -29,7 +29,8 @@ namespace search {
  */
 namespace binary_search {
 
-/** binary_search function
+/**
+ * @brief The main function that implements the Binary Search algorithm
  * \tparam Container type of a container to search, Container must support ([])
  * operator and size() method.
  * \tparam Key the key type, Key must support (== && <) operators.
