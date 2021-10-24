@@ -28,7 +28,7 @@ namespace operations_on_datastructures {
  * @returns void
  */
 void print(const std::vector<int32_t> &array) {
-    for (int64_t i : array) {
+    for (int32_t i : array) {
         std::cout << i << " ";  /// Print each value in the array
     }
     std::cout << "\n";  /// Print newline
