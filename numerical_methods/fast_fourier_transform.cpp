@@ -138,6 +138,8 @@ static void test() {
 
     delete[] t1;
     delete[] t2;
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
