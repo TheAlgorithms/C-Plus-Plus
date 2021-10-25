@@ -14,8 +14,6 @@
 #include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
 
-constexpr double PI = 3.14;
-
 /**
  * @brief The volume of a [cube](https://en.wikipedia.org/wiki/Cube)
  * @param length The length of the cube
@@ -43,10 +41,11 @@ T rect_prism_volume(T length, T width, T height) {
  * @brief The volume of a [cone](https://en.wikipedia.org/wiki/Cone)
  * @param radius The radius of the base circle
  * @param height The height of the cone
+ * @param PI The definition of the constant PI
  * @returns The volume of the cone
  */
 template <typename T>
-T cone_volume(T radius, T height) {
+T cone_volume(T radius, T height, double PI = 3.14) {
     return std::pow(radius, 2) * PI * height / 3;
 }
 
@@ -80,10 +79,11 @@ T pyramid_volume(T length, T width, T height) {
 /**
  * @brief The volume of a [sphere](https://en.wikipedia.org/wiki/Sphere)
  * @param radius The radius of the sphere
+ * @param PI The definition of the constant PI
  * @returns The volume of the sphere
  */
 template <typename T>
-T sphere_volume(T radius) {
+T sphere_volume(T radius, double PI = 3.14) {
     return PI * std::pow(radius, 3) * 4 / 3;
 }
 
@@ -91,10 +91,11 @@ T sphere_volume(T radius) {
  * @brief The volume of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
  * @param radius The radius of the base circle
  * @param height The height of the cylinder
+ * @param PI The definition of the constant PI
  * @returns The volume of the cylinder
  */
 template <typename T>
-T cylinder_volume(T radius, T height) {
+T cylinder_volume(T radius, T height, double PI = 3.14) {
     return PI * std::pow(radius, 2) * height;
 }
 
