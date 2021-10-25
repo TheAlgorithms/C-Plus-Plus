@@ -159,22 +159,21 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>total number of set-bits in the binary representation of number <code>n</code> </dd></dl>
-<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                         { <span class="comment">// int64_t is preferred over int so that</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                          <span class="comment">// no Overflow can be there.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">int</span> count = 0; <span class="comment">// &quot;count&quot; variable is used to count number of set-bits(&#39;1&#39;) in</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                   <span class="comment">// binary representation of number &#39;n&#39;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">while</span> (n != 0)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ++count;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        n = (n &amp; (n - 1));</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> count;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Why this algorithm is better than the standard one?</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Because this algorithm runs the same number of times as the number of</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// set-bits in it. Means if my number is having &quot;3&quot; set bits, then this while loop</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// will run only &quot;3&quot; times!!</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="fragment"><div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                   {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        <span class="comment">// no Overflow can be there.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> count = 0;  <span class="comment">// &quot;count&quot; variable is used to count number of set-bits(&#39;1&#39;)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="comment">// in binary representation of number &#39;n&#39;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">while</span> (n != 0) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        ++count;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        n = (n &amp; (n - 1));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Why this algorithm is better than the standard one?</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Because this algorithm runs the same number of times as the number of</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// set-bits in it. Means if my number is having &quot;3&quot; set bits, then this</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// while loop will run only &quot;3&quot; times!!</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -202,10 +201,10 @@ Here is the call graph for this function:</div>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>           {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    test();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="fragment"><div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>           {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    test();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,25 +230,25 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                   {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// n = 4 return 1</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// n = 6 return 2</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(6) == 2);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// n = 13 return 3</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(13) == 3);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// n = 9 return 2</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(9) == 2);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// n = 15 return 4</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// n = 25 return 3</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// n = 97 return 3</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(97) == 3);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// n = 31 return 5</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(31) == 5);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                   {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// n = 4 return 1</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// n = 6 return 2</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(6) == 2);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// n = 13 return 3</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(13) == 3);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// n = 9 return 2</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(9) == 2);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// n = 15 return 4</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// n = 25 return 3</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// n = 97 return 3</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(97) == 3);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// n = 31 return 5</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(bit_manipulation::count_of_set_bits::countSetBits(31) == 5);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 </div><!-- fragment -->

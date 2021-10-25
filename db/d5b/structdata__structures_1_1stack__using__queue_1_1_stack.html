@@ -98,8 +98,7 @@ $(document).ready(function(){initNavTree('db/d5b/structdata__structures_1_1stack
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure. <br  />
-  
+<p><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure.  
  <a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,9 +121,7 @@ Public Attributes</h2></td></tr>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>main_q</b></td></tr>
 <tr class="memdesc:acf8ca54d5dd6676f255fff3dedacc7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the current state of the stack <br /></td></tr>
 <tr class="separator:acf8ca54d5dd6676f255fff3dedacc7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f80f87fc6f6ded938426698bba89323"><td class="memItemLeft" align="right" valign="top"><a id="a2f80f87fc6f6ded938426698bba89323" name="a2f80f87fc6f6ded938426698bba89323"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>auxiliary_q</b></td></tr>
-<tr class="memdesc:a2f80f87fc6f6ded938426698bba89323"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to carry out intermediate operations to implement stack <br /></td></tr>
+<tr class="memitem:a2f80f87fc6f6ded938426698bba89323"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a></td></tr>
 <tr class="separator:a2f80f87fc6f6ded938426698bba89323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdfd2f4418c70b1bda50f2c3e416d80b"><td class="memItemLeft" align="right" valign="top"><a id="afdfd2f4418c70b1bda50f2c3e416d80b" name="afdfd2f4418c70b1bda50f2c3e416d80b"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> = 0</td></tr>
@@ -132,8 +129,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
 <tr class="separator:afdfd2f4418c70b1bda50f2c3e416d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure. <br  />
- </p>
+<div class="textblock"><p ><a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Class implementation for basic methods of <a class="el" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html" title="Stack Class implementation for basic methods of Stack Data Structure.">Stack</a> Data Structure. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abdd461689df4983a3ad3b05d853cf5eb" name="abdd461689df4983a3ad3b05d853cf5eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdd461689df4983a3ad3b05d853cf5eb">&#9670;&nbsp;</a></span>pop()</h2>
@@ -160,15 +156,15 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
 
 <p>Removes the topmost element from the stack. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty()) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>--;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_acf8ca54d5dd6676f255fff3dedacc7c6"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">data_structures::stack_using_queue::Stack::main_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; main_q</div><div class="ttdoc">stores the current state of the stack</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:29</div></div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_afdfd2f4418c70b1bda50f2c3e416d80b"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">data_structures::stack_using_queue::Stack::current_size</a></div><div class="ttdeci">uint32_t current_size</div><div class="ttdoc">stores the current size of the stack</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:31</div></div>
+<div class="fragment"><div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>               {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty()) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>--;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_acf8ca54d5dd6676f255fff3dedacc7c6"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">data_structures::stack_using_queue::Stack::main_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; main_q</div><div class="ttdoc">stores the current state of the stack</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:31</div></div>
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_afdfd2f4418c70b1bda50f2c3e416d80b"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">data_structures::stack_using_queue::Stack::current_size</a></div><div class="ttdeci">uint32_t current_size</div><div class="ttdoc">stores the current size of the stack</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -204,17 +200,16 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(val);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">while</span>(!<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty())</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front());</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">swap</a>(<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>, <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>++;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_a2f80f87fc6f6ded938426698bba89323"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">data_structures::stack_using_queue::Stack::auxiliary_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; auxiliary_q</div><div class="ttdoc">used to carry out intermediate operations to implement stack</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:30</div></div>
+<div class="fragment"><div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                       {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(val);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.empty()) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>.push(<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front());</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.pop();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">swap</a>(<a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>, <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">auxiliary_q</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>++;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="ttc" id="astructdata__structures_1_1stack__using__queue_1_1_stack_html_a2f80f87fc6f6ded938426698bba89323"><div class="ttname"><a href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#a2f80f87fc6f6ded938426698bba89323">data_structures::stack_using_queue::Stack::auxiliary_q</a></div><div class="ttdeci">std::queue&lt; int64_t &gt; auxiliary_q</div><div class="ttdef"><b>Definition:</b> stack_using_queue.cpp:32</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment -->
 </div>
@@ -244,9 +239,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
 
 <p>Utility function to return the current size of the stack. </p>
 <dl class="section return"><dt>Returns</dt><dd>current size of stack </dd></dl>
-<div class="fragment"><div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#afdfd2f4418c70b1bda50f2c3e416d80b">current_size</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,10 +266,24 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_size</b> 
 </table>
 </div><div class="memdoc">
 <p >Returns the top most element of the stack </p><dl class="section return"><dt>Returns</dt><dd>top element of the queue </dd></dl>
-<div class="fragment"><div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="fragment"><div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/d5b/structdata__structures_1_1stack__using__queue_1_1_stack.html#acf8ca54d5dd6676f255fff3dedacc7c6">main_q</a>.front(); }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2f80f87fc6f6ded938426698bba89323" name="a2f80f87fc6f6ded938426698bba89323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f80f87fc6f6ded938426698bba89323">&#9670;&nbsp;</a></span>auxiliary_q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a>&lt;int64_t&gt; data_structures::stack_using_queue::Stack::auxiliary_q</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >used to carry out intermediate operations to implement stack </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

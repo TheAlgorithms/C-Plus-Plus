@@ -5,7 +5,7 @@ var namespaceciphers =
       [ "encrypt", "de/db6/a1z26__cipher_8cpp.html#a77a6b827a0b9c7aca2d705811459d744", null ]
     ] ],
     [ "atbash", null, [
-      [ "atbash_cipher", "dc/dfb/atbash__cipher_8cpp.html#ae633d82f248dffe0d2f6bdf82e56b7b5", null ]
+      [ "atbash_cipher", "dc/dfb/atbash__cipher_8cpp.html#a8f7dd4dcd3df7c512c20482afc2dbb9d", null ]
     ] ],
     [ "caesar", null, [
       [ "decrypt", "d6/d2c/caesar__cipher_8cpp.html#a355e69511cd2006b5c4c80ae95b71056", null ],
