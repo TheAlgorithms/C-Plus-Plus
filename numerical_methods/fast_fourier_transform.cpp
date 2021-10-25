@@ -100,8 +100,7 @@ static void test() {
     /* descriptions of the following test */
 
     auto *t1 = new std::complex<double>[2];  /// Test case 1
-    auto *t2 = new std::complex<double>[4];
-    ;  /// Test case 2
+    auto *t2 = new std::complex<double>[4];  /// Test case 2
 
     t1[0] = {1, 0};
     t1[1] = {2, 0};
