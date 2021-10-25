@@ -12,7 +12,7 @@
  * set bit in computer terms.
  * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
- * @author [Diksha Singhal](https://github.com/Swastyy)
+ * @author [Diksha Singhal](https://github.com/diksha137)
  */
 #include <cassert>   /// for assert
 #include <iostream> /// for IO operations
@@ -24,7 +24,7 @@
 namespace bit_manipulation {
 /**
  * @namespace rightmost_set_bit
- * @brief Functions for the [ rightmost set
+ * @brief Functions for the [rightmost set
  * bit](https://www.geeksforgeeks.org/position-of-rightmost-set-bit/)
  * implementation
  */
