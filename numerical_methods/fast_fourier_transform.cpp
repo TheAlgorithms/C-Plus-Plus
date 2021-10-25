@@ -90,7 +90,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
 	
 }
 
-}// namespace numerical_methods
+}  // namespace numerical_methods
 
 /**
  * @brief Self-test implementations
