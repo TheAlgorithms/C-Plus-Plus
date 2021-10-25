@@ -15,6 +15,11 @@
 #include <iostream>  /// for IO operations
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
  * @brief The volume of a [cube](https://en.wikipedia.org/wiki/Cube)
  * @param length The length of the cube
  * @returns The volume of the cube
