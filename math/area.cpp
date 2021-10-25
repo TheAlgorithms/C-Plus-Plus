@@ -1,17 +1,19 @@
 /**
  * @file
- * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of various shapes
- * @details The area of a shape is the amount of 2D space it takes up. 
- * All shapes have a formula to get the area of any given shape. 
+ * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of
+ * various shapes
+ * @details The area of a shape is the amount of 2D space it takes up.
+ * All shapes have a formula to get the area of any given shape.
  * These implementations support multiple return types.
- * 
+ *
  * @author [Focusucof](https://github.com/Focusucof)
  */
 #define _USE_MATH_DEFINES
-#include <cmath>    /// for M_PI definition and pow()
-#include <cstdint>   /// for uint16_t datatype
-#include <iostream> /// for IO operations
 #include <cassert>  /// for assert
+#include <cmath>    /// for M_PI definition and pow()
+#include <cmath>
+#include <cstdint>   /// for uint16_t datatype
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace math
@@ -115,25 +117,25 @@ T cylinder_surface_area(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    uint16_t int_length; // 16 bit integer length input
-    uint16_t int_width; // 16 bit integer width input
-    uint16_t int_base;   // 16 bit integer base input
-    uint16_t int_height;    // 16 bit integer height input
-    uint16_t int_expected; // 16 bit integer expected output
-    uint16_t int_area; // 16 bit integer output
+    uint16_t int_length = 0;    // 16 bit integer length input
+    uint16_t int_width = 0;     // 16 bit integer width input
+    uint16_t int_base = 0;      // 16 bit integer base input
+    uint16_t int_height = 0;    // 16 bit integer height input
+    uint16_t int_expected = 0;  // 16 bit integer expected output
+    uint16_t int_area = 0;      // 16 bit integer output
 
-    float float_length; // float length input
-    float float_expected; // float expected output
-    float float_area; // float output
+    float float_length = NAN;    // float length input
+    float float_expected = NAN;  // float expected output
+    float float_area = NAN;      // float output
 
-    double double_length; // double length input
-    double double_width; // double width input
-    double double_radius;    // double radius input
-    double double_height;    // double height input
-    double double_expected; // double expected output
-    double double_area; // double output
+    double double_length = NAN;    // double length input
+    double double_width = NAN;     // double width input
+    double double_radius = NAN;    // double radius input
+    double double_height = NAN;    // double height input
+    double double_expected = NAN;  // double expected output
+    double double_area = NAN;      // double output
 
-	// 1st test
+    // 1st test
     int_length = 5;
     int_expected = 25;
     int_area = math::square_area(int_length);
@@ -201,7 +203,9 @@ static void test() {
 
     // 6th test
     double_radius = 6;
-    double_expected = 113.09733552923255; // rounded down because the double datatype truncates after 14 decimal places
+    double_expected =
+        113.09733552923255;  // rounded down because the double datatype
+                             // truncates after 14 decimal places
     double_area = math::circle_area(double_radius);
 
     std::cout << "AREA OF A CIRCLE" << std::endl;
@@ -239,7 +243,8 @@ static void test() {
 
     // 9th test
     double_radius = 10.0;
-    double_expected = 1256.6370614359172; // rounded down because the whole value gets truncated
+    double_expected = 1256.6370614359172;  // rounded down because the whole
+                                           // value gets truncated
     double_area = math::sphere_surface_area(double_radius);
 
     std::cout << "SURFACE AREA OF A SPHERE" << std::endl;
