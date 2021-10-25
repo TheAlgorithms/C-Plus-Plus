@@ -6,8 +6,7 @@
  * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT).
  * @details
  * This
- * algorithm
- * has application in use case scenario where a user wants to find points of a
+ * algorithm has application in use case scenario where a user wants to find points of a
  * function
  * in a short time by just using the coefficients of the polynomial
  * function.
