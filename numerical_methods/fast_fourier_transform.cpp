@@ -12,7 +12,7 @@
  * function.
  * It can be also used to find inverse fourier transform by just switching the
  value of omega.
- * @time complexity
+ * Time complexity
  * this algorithm computes the DFT in O(nlogn) time in comparison to traditional
  O(n^2).
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
