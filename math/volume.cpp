@@ -103,6 +103,7 @@ template <typename T>
 T cylinder_volume(T radius, T height, double PI = 3.14) {
     return PI * std::pow(radius, 2) * height;
 }
+}  // namespace math
 
 /**
  * @brief Self-test implementations
