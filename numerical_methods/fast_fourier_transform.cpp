@@ -2,13 +2,13 @@
  * @file
  * @brief [A fast Fourier transform
  * (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f)
- is an algorithm that computes the
- * discrete Fourier transform (DFT) of a sequence , or its inverse (IDFT) , this
- algorithm
+ * is an algorithm that computes the
+ * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT), this
+ * algorithm
  * has application in use case scenario where a user wants to find points of a
- function
- * in short period time by just using the coefficents of the polynomial 
- function.
+ * function
+ * in a short time by just using the coefficients of the polynomial 
+ * function.
  * It can be also used to find inverse fourier transform by just switching the value of omega.
  * @time complexity
  * this algorithm computes the DFT in O(nlogn) time in comparison to traditional O(n^2).
