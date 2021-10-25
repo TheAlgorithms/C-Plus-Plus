@@ -111,21 +111,21 @@ T cylinder_volume(T radius, T height, double PI = 3.14) {
  */
 static void test() {
     // Input variables
-    uint32_t int_length;
-    uint32_t int_width;
-    uint32_t int_base;
-    uint32_t int_height;
-    uint32_t int_depth;
+    uint32_t int_length = 0; // 32 bit integer length input
+    uint32_t int_width = 0;  // 32 bit integer width input
+    uint32_t int_base = 0;   // 32 bit integer base input
+    uint32_t int_height = 0; // 32 bit integer height input
+    uint32_t int_depth = 0;  // 32 bit integer depth input
 
-    double double_radius;
-    double double_height;
+    double double_radius = NAN; // double radius input
+    double double_height = NAN; // double height input
 
     // Output variables
-    uint32_t int_expected;
-    uint32_t int_volume;
+    uint32_t int_expected = 0; // 32 bit integer expected output
+    uint32_t int_volume = 0;   // 32 bit integer output
 
-    double double_expected;
-    double double_volume;
+    double double_expected = NAN; // double expected output
+    double double_volume = NAN;   // double output
 
     // 1st test
     int_length = 5;
