@@ -7,6 +7,7 @@
  * in the first array, combined with all of the unique elements of a second
  * array. This implementation uses ordered arrays, and an algorithm to correctly
  * order them and return the result as a new array (vector).
+ * @see intersection_of_two_arrays.cpp
  * @author [Alvin](https://github.com/polarvoid)
  */
 
