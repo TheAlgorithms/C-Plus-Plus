@@ -1,97 +1,74 @@
-#include <iostream>
-using namespace std;
+/**
+ * @file
+ * @brief Implementation for the [Union of two sorted
+ * Arrays](https://en.wikipedia.org/wiki/Union_(set_theory))
+ * algorithm.
+ * @details The Union of two arrays is the collection of all the unique elements
+ * in the first array, combined with all of the unique elements of a second
+ * array. This implementation uses ordered arrays, and an algorithm to correctly
+ * order them and return the result as a new array (vector).
+ * @author [Alvin](https://github.com/polarvoid)
+ */
 
-struct node {
-    int val;
-    node *next;
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
+
+/**
+ * @namespace operations_on_datastructures
+ * @brief Operations on Data Structures
+ */
+namespace operations_on_datastructures {
+
+/**
+ * @namespace circular_linked_list
+ * @brief Functions for the Circular Linked List implementation
+ */
+namespace circular_linked_list {
+
+/**
+ * @brief A Node struct that represents a single node in a Binary Tree
+ */
+struct Node {
+    int64_t data;  ///< The value of the Node
+    Node* next;    ///< The Node's successor
+    /**
+     * @brief Creates a new Node with some initial data
+     */
+    explicit Node(int64_t _data) {
+        data = _data;    ///< Set value of Node data
+        next = nullptr;  ///< Initialize successor
+    }
+    /**
+     * @brief Creates a new Node with initial data and a successor
+     */
+    explicit Node(int64_t _data, Node* _next) {
+        data = _data;  ///< Set value of Node data
+        next = _next;  ///< Initialize successor
+    }
 };
 
-node *start;
+}  // namespace circular_linked_list
 
-void insert(int x) {
-    node *t = start;
+}  // namespace operations_on_datastructures
 
-    if (start != NULL) {
-        while (t->next != start) {
-            t = t->next;
-        }
-        node *n = new node;
-        t->next = n;
-        n->val = x;
-        n->next = start;
-    } else {
-        node *n = new node;
-        n->val = x;
-        start = n;
-        n->next = start;
-    }
-}
+/**
+ * @namespace tests
+ * @brief Testcases to check Circular Linkedd List.
+ */
+namespace tests {}  // namespace tests
 
-void remove(int x) {
-    node *t = start;
-    node *p;
-    while (t->val != x) {
-        p = t;
-        t = t->next;
-    }
-    p->next = t->next;
-    delete t;
-}
+/**
+ * @brief Function to test the correctness of the circular linked list
+ * @returns void
+ */
+static void test() {}
 
-void search(int x) {
-    node *t = start;
-    int found = 0;
-    while (t->next != start) {
-        if (t->val == x) {
-            cout << "\nFound";
-            found = 1;
-            break;
-        }
-        t = t->next;
-    }
-    if (found == 0) {
-        cout << "\nNot Found";
-    }
-}
-
-void show() {
-    node *t = start;
-    do {
-        cout << t->val << "\t";
-        t = t->next;
-    } while (t != start);
-}
-
+/**
+ * @brief main function
+ * @returns 0 on exit
+ */
 int main() {
-    int choice, x;
-    do {
-        cout << "\n1. Insert";
-        cout << "\n2. Delete";
-        cout << "\n3. Search";
-        cout << "\n4. Print";
-        cout << "\n\nEnter you choice : ";
-        cin >> choice;
-        switch (choice) {
-        case 1:
-            cout << "\nEnter the element to be inserted : ";
-            cin >> x;
-            insert(x);
-            break;
-        case 2:
-            cout << "\nEnter the element to be removed : ";
-            cin >> x;
-            remove(x);
-            break;
-        case 3:
-            cout << "\nEnter the element to be searched : ";
-            cin >> x;
-            search(x);
-            break;
-        case 4:
-            show();
-            break;
-        }
-    } while (choice != 0);
-
+    test();  // run self-test implementations
     return 0;
 }
