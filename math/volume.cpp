@@ -130,7 +130,7 @@ static void test() {
     // 1st test
     int_length = 5;
     int_expected = 125;
-    int_volume = cube_volume(int_length);
+    int_volume = math::cube_volume(int_length);
 
     std::cout << "VOLUME OF A CUBE" << std::endl;
     std::cout << "Input Length: " << int_length << std::endl;
@@ -144,7 +144,7 @@ static void test() {
     int_width = 3;
     int_height = 5;
     int_expected = 60;
-    int_volume = rect_prism_volume(int_length, int_width, int_height);
+    int_volume = math::rect_prism_volume(int_length, int_width, int_height);
 
     std::cout << "VOLUME OF A RECTANGULAR PRISM" << std::endl;
     std::cout << "Input Length: " << int_length << std::endl;
@@ -159,7 +159,7 @@ static void test() {
     double_radius = 5;
     double_height = 7;
     double_expected = 183.16666666666666;  // truncated to 14 decimal places
-    double_volume = cone_volume(double_radius, double_height);
+    double_volume = math::cone_volume(double_radius, double_height);
 
     std::cout << "VOLUME OF A CONE" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
@@ -174,7 +174,7 @@ static void test() {
     int_height = 4;
     int_depth = 5;
     int_expected = 30;
-    int_volume = triangle_prism_volume(int_base, int_height, int_depth);
+    int_volume = math::triangle_prism_volume(int_base, int_height, int_depth);
 
     std::cout << "VOLUME OF A TRIANGULAR PRISM" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
@@ -190,7 +190,7 @@ static void test() {
     int_width = 3;
     int_height = 5;
     int_expected = 50;
-    int_volume = pyramid_volume(int_length, int_width, int_height);
+    int_volume = math::pyramid_volume(int_length, int_width, int_height);
 
     std::cout << "VOLUME OF A PYRAMID" << std::endl;
     std::cout << "Input Length: " << int_length << std::endl;
@@ -204,7 +204,7 @@ static void test() {
     // 6th test
     double_radius = 3;
     double_expected = 113.04;
-    double_volume = sphere_volume(double_radius);
+    double_volume = math::sphere_volume(double_radius);
 
     std::cout << "VOLUME OF A SPHERE" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
@@ -217,7 +217,7 @@ static void test() {
     double_radius = 5;
     double_height = 2;
     double_expected = 157;
-    double_volume = cylinder_volume(double_radius, double_height);
+    double_volume = math::cylinder_volume(double_radius, double_height);
 
     std::cout << "VOLUME OF A CYLINDER" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
