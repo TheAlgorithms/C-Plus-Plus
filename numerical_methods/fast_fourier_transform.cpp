@@ -7,11 +7,13 @@
  * algorithm
  * has application in use case scenario where a user wants to find points of a
  * function
- * in a short time by just using the coefficients of the polynomial 
+ * in a short time by just using the coefficients of the polynomial
  * function.
- * It can be also used to find inverse fourier transform by just switching the value of omega.
+ * It can be also used to find inverse fourier transform by just switching the
+ value of omega.
  * @time complexity
- * this algorithm computes the DFT in O(nlogn) time in comparison to traditional O(n^2).
+ * this algorithm computes the DFT in O(nlogn) time in comparison to traditional
+ O(n^2).
  * @details
  * https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to
   -solve-polynomial-multiplication-8018d511162f
@@ -37,57 +39,52 @@ namespace numerical_methods {
  * @returns p if n==1
  * @returns y if n!=1
  */
-std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
-{
+std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
+    if (n == 1) {
+        return p;  /// Base Case To return
+    }
 
-	if(n==1){
-	    
-	    return p; ///Base Case To return
-	
-	}
-    
-    	double pi = 2 * asin(1.0);  /// Declaring value of pi
-    
-	std::complex<double> om=std::complex<double>(cos(2*pi/n),sin(2*pi/n));  ///Calculating value of omega
+    double pi = 2 * asin(1.0);  /// Declaring value of pi
 
-	auto *pe= new std::complex<double>[n/2]; /// Coefficients of even power
+    std::complex<double> om = std::complex<double>(
+        cos(2 * pi / n), sin(2 * pi / n));  /// Calculating value of omega
 
-	auto *po= new std::complex<double>[n/2]; ///Coefficients of odd power
+    auto *pe = new std::complex<double>[n / 2];  /// Coefficients of even power
 
-	int k1=0,k2=0;
-	for(int j=0;j<n;j++)
-	{
-		if(j%2==0){
-			pe[k1++]=p[j]; ///Assigning values of even Coefficients
+    auto *po = new std::complex<double>[n / 2];  /// Coefficients of odd power
 
-		}
-		else po[k2++]=p[j]; ///Assigning value of odd Coefficients
+    int k1 = 0, k2 = 0;
+    for (int j = 0; j < n; j++) {
+        if (j % 2 == 0) {
+            pe[k1++] = p[j];  /// Assigning values of even Coefficients
 
+        } else
+            po[k2++] = p[j];  /// Assigning value of odd Coefficients
+    }
 
-	}
+    std::complex<double> *ye =
+        FastFourierTransform(pe, n / 2);  /// Recursive Call
 
-	std::complex<double> *ye=FastFourierTransform(pe,n/2); ///Recursive Call
-	
-	std::complex<double> *yo=FastFourierTransform(po,n/2); ///Recursive Call
+    std::complex<double> *yo =
+        FastFourierTransform(po, n / 2);  /// Recursive Call
 
-	auto *y=new std::complex<double>[n];  /// Final value representation list
+    auto *y = new std::complex<double>[n];  /// Final value representation list
 
-	k1=0,k2=0;
+    k1 = 0, k2 = 0;
 
-	for(int i=0;i<n/2;i++)
-	{
-		y[i]=ye[k1]+pow(om,i)*yo[k2];    /// Updating the first n/2 elements
-		y[i+n/2]=ye[k1]-pow(om,i)*yo[k2];/// Updating the last n/2 elements
+    for (int i = 0; i < n / 2; i++) {
+        y[i] =
+            ye[k1] + pow(om, i) * yo[k2];  /// Updating the first n/2 elements
+        y[i + n / 2] =
+            ye[k1] - pow(om, i) * yo[k2];  /// Updating the last n/2 elements
 
-		k1++;
-		k2++;
+        k1++;
+        k2++;
+    }
 
-	}
-	
-	delete[] ye; /// Deleting dynamic array ye
-    	delete[] yo; /// Deleting dynamic array yo
-	return y;
-	
+    delete[] ye;  /// Deleting dynamic array ye
+    delete[] yo;  /// Deleting dynamic array yo
+    return y;
 }
 
 }  // namespace numerical_methods
@@ -98,19 +95,20 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
  * in predicted and true value is less than 0.000000000001.
  * @returns void
  */
- 
- static void test() {
+
+static void test() {
     /* descriptions of the following test */
 
-    std::complex<double> *t1= new std::complex<double>[2]; /// Test case 1
-    std::complex<double> *t2= new std::complex<double>[4];; /// Test case 2
-    
-    t1[0]={1,0};
-    t1[1]={2,0};
-    t2[0]={1,0};
-    t2[1]={2,0};
-    t2[2]={3,0};
-    t2[3]={4,0};
+    auto *t1 = new std::complex<double>[2];  /// Test case 1
+    auto *t2 = new std::complex<double>[4];
+    ;  /// Test case 2
+
+    t1[0] = {1, 0};
+    t1[1] = {2, 0};
+    t2[0] = {1, 0};
+    t2[1] = {2, 0};
+    t2[2] = {3, 0};
+    t2[3] = {4, 0};
 
     uint8_t n1 = 2;
     uint8_t n2 = 4;
@@ -141,7 +139,6 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
 
     delete[] t1;
     delete[] t2;
-    
 }
 
 /**
@@ -152,9 +149,7 @@ std::complex<double>* FastFourierTransform(std::complex<double>*p,uint8_t n)
  * @returns 0 on exit
  */
 
-int main(int argc, char const *argv[])
-{
-	
-	test();  // run self-test implementations with 2 defined test cases
-	return 0;
+int main(int argc, char const *argv[]) {
+    test();  // run self-test implementations with 2 defined test cases
+    return 0;
 }
