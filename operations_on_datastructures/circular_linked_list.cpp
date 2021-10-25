@@ -48,6 +48,18 @@ struct Node {
     }
 };
 
+class CircularLinkedList {
+ private:
+    Node* root;  ///< Pointer to the root node
+    Node* end;   ///< Pointer to the last node
+
+ public:
+    CircularLinkedList() {
+        root = nullptr;
+        end = nullptr;
+    }
+};
+
 }  // namespace circular_linked_list
 
 }  // namespace operations_on_datastructures
