@@ -16,9 +16,6 @@
  * @time complexity
  * this algorithm computes the DFT in O(nlogn) time in comparison to traditional
  O(n^2).
- * @details
- * https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to
-  -solve-polynomial-multiplication-8018d511162f
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
