@@ -218,6 +218,7 @@
   * [Sum Of Binomial Coefficient](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_binomial_coefficient.cpp)
   * [Sum Of Digits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_digits.cpp)
   * [Vector Cross Product](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/vector_cross_product.cpp)
+  * [Volume](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/volume.cpp)
 
 ## Numerical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
@@ -339,7 +340,7 @@
   * [Radix Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort2.cpp)
   * [Random Pivot Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/random_pivot_quick_sort.cpp)
   * [Recursive Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/recursive_bubble_sort.cpp)
-  * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort.cpp)
+  * [Selection Sort Iterative](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort_iterative.cpp)
   * [Selection Sort Recursive](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort_recursive.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort.cpp)
   * [Shell Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort2.cpp)
