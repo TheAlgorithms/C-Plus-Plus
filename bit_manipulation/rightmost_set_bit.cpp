@@ -16,7 +16,7 @@
  */
 #include <cassert>   /// for assert
 #include <iostream> /// for IO operations
-#include <math.h>   /// for math operations like log2
+#include <cmath>   /// for math operations like log2
 /**
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
