@@ -39,7 +39,7 @@ bool checkBipartite(std::vector<std::vector<int64_t>> graph, int64_t index, std:
     {
         int64_t u = q.front();
         q.pop();
-        for(int i=0;i<graph[u].size();i++)
+        for(uint64_t i=0;i<graph[u].size();i++)
         {
             int64_t v = graph[u][i];    ///< stores the neighbour of the current node
             if(!visited[v])             /// check whether the neighbour node is travelled already or not
@@ -64,7 +64,7 @@ bool isBipartite(std::vector<std::vector<int64_t>> graph)
 {
     std::vector<int64_t> visited(graph.size()); ///< stores boolean values which signify whether that node had been visited or not
     
-    for(int i=0;i<graph.size();i++)
+    for(uint64_t i=0;i<graph.size();i++)
     {    
         if(!visited[i]) /// if the current node is not visited then check whether the sub-graph of that node is a bipartite or not
         {
