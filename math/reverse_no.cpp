@@ -2,7 +2,7 @@
 using namespace std;  
 int main()  
 {  
-int n, reverse=0, rem;    
+int n=0, reverse=0, rem=0;    
 cout<<"Enter a number: ";    
 cin>>n;    
   while(n!=0)    
