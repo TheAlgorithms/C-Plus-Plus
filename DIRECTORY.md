@@ -217,6 +217,7 @@
   * [Sum Of Binomial Coefficient](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_binomial_coefficient.cpp)
   * [Sum Of Digits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_digits.cpp)
   * [Vector Cross Product](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/vector_cross_product.cpp)
+  * [Volume](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/volume.cpp)
 
 ## Numerical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
