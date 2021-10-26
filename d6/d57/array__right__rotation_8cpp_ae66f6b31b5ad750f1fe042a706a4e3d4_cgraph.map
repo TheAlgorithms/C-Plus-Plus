@@ -7,7 +7,7 @@
 <area shape="rect" id="node11" href="$d9/df4/namespacetests.html#a2b9769e44683dcb67fe1083ad91e134d" title="A Test to check a very large input." alt="" coords="196,208,283,235"/>
 <area shape="rect" id="node13" href="$d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86" title="A Test to check a shift of zero." alt="" coords="196,5,283,32"/>
 <area shape="rect" id="node4" href="$d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9" title=" " alt="" coords="406,136,454,163"/>
-<area shape="rect" id="node7" href="$da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86" title="Shifts the given vector to the right by the shift amount and returns a new vector with the result...." alt="" coords="331,70,529,111"/>
+<area shape="rect" id="node7" href="$da/d6d/namespaceoperations__on__datastructures.html#afce39cf843989a39811a49ebe29dd6d8" title="Shifts the given vector to the left by the shift amount and returns a new vector with the result...." alt="" coords="331,70,529,111"/>
 <area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="599,183,671,209"/>
 <area shape="rect" id="node6" href="$db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" title="for IO operations" alt="" coords="599,132,671,159"/>
 <area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="577,77,692,104"/>

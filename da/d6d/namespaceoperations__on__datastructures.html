@@ -104,6 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6109193567a5b7e36a27f2b4865fce20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20">print</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;array)</td></tr>
 <tr class="memdesc:a6109193567a5b7e36a27f2b4865fce20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the values of a vector sequentially, ending with a newline character.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20">More...</a><br /></td></tr>
 <tr class="separator:a6109193567a5b7e36a27f2b4865fce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce39cf843989a39811a49ebe29dd6d8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#afce39cf843989a39811a49ebe29dd6d8">shift_left</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;array, size_t shift)</td></tr>
+<tr class="memdesc:afce39cf843989a39811a49ebe29dd6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the given vector to the left by the shift amount and returns a new vector with the result. The original vector is not mutated.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#afce39cf843989a39811a49ebe29dd6d8">More...</a><br /></td></tr>
+<tr class="separator:afce39cf843989a39811a49ebe29dd6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86">shift_right</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;array, size_t shift)</td></tr>
 <tr class="memdesc:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the given vector to the right by the shift amount and returns a new vector with the result. The original vector is not mutated.  <a href="../../da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86">More...</a><br /></td></tr>
 <tr class="separator:a1bfb8711f49e591eb168ccaa3df6fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,14 +350,80 @@ Here is the call graph for this function:</div>
 <p >Print newline</p>
 <p >Print each value in the array</p>
 <p >Print newline</p>
-<div class="fragment"><div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                            {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">for</span> (int32_t i : array) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;  <span class="comment">/// Print each value in the array</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;  <span class="comment">/// Print newline</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<p >Print each value in the array</p>
+<p >Print newline</p>
+<p >Print each value in the array</p>
+<p >Print newline</p>
+<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                            {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (int32_t i : array) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;  <span class="comment">/// Print each value in the array</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;  <span class="comment">/// Print newline</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="afce39cf843989a39811a49ebe29dd6d8" name="afce39cf843989a39811a49ebe29dd6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce39cf843989a39811a49ebe29dd6d8">&#9670;&nbsp;</a></span>shift_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; operations_on_datastructures::shift_left </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>shift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shifts the given vector to the left by the shift amount and returns a new vector with the result. The original vector is not mutated. </p>
+<p >Shifts the values of the vector, by creating a new vector and adding values from the shift index to the end, then appending the rest of the elements from the start of the vector. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>A reference to the input <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </td></tr>
+    <tr><td class="paramname">shift</td><td>The amount to be shifted to the left </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> with the shifted values </dd></dl>
+<p >&lt; We got an invalid shift, return empty array</p>
+<p >&lt; Result array</p>
+<p >&lt; Add values after the shift index</p>
+<p >&lt; Add the values from the start</p>
+<div class="fragment"><div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                              {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> (array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() &lt;= shift) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> {};  <span class="comment">///&lt; We got an invalid shift, return empty array</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int32_t&gt;</a> res(array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>());  <span class="comment">///&lt; Result array</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = shift; i &lt; array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        res[i - shift] = array[i];  <span class="comment">///&lt; Add values after the shift index</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; shift; i++) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        res[array.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() - shift + i] =</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            array[i];  <span class="comment">///&lt; Add the values from the start</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d6d/namespaceoperations__on__datastructures_afce39cf843989a39811a49ebe29dd6d8_cgraph.svg" width="372" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a1bfb8711f49e591eb168ccaa3df6fb86" name="a1bfb8711f49e591eb168ccaa3df6fb86"></a>

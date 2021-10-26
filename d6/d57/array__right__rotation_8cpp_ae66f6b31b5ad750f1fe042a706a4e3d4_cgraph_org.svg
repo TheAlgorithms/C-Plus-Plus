@@ -126,10 +126,10 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../da/d6d/namespaceoperations__on__datastructures.html#a1bfb8711f49e591eb168ccaa3df6fb86" target="_top" xlink:title="Shifts the given vector to the right by the shift amount and returns a new vector with the result....">
+<g id="a_node7"><a xlink:href="../../da/d6d/namespaceoperations__on__datastructures.html#afce39cf843989a39811a49ebe29dd6d8" target="_top" xlink:title="Shifts the given vector to the left by the shift amount and returns a new vector with the result....">
 <polygon fill="white" stroke="black" points="244,-93 244,-123 393,-123 393,-93 244,-93"/>
 <text text-anchor="start" x="252" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
-<text text-anchor="middle" x="318.5" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">::shift_right</text>
+<text text-anchor="middle" x="318.5" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">::shift_left</text>
 </a>
 </g>
 </g>
