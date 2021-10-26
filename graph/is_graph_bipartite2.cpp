@@ -30,7 +30,7 @@ namespace graph {
  * @param visited is the vector which stores whether a given node has been traversed or not yet
  * @returns boolean
  */
-bool checkBipartite(std::vector<std::vector<int64_t>> graph, int64_t index, std::vector<int64_t> visited)
+bool checkBipartite(const std::vector<std::vector<int64_t>> &graph, int64_t index, std::vector<int64_t> &visited)
 {
     std::queue<int64_t> q; ///< stores the neighbouring node indexes in squence of being reached
     q.push(index);         /// insert the current node into the queue
