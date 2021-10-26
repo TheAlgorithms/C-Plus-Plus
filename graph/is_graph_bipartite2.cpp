@@ -30,11 +30,11 @@ namespace graph {
  * @param visited is the vector which stores whether a given node has been traversed or not yet
  * @returns boolean
  */
-bool checkBipartite(const std::vector<std::vector<int64_t>> &graph, int64_t index, std::vector<int64_t> &visited)
+bool checkBipartite(const std::vector<std::vector<int64_t>> &graph, int64_t index, std::vector<int64_t> *visited)
 {
     std::queue<int64_t> q; ///< stores the neighbouring node indexes in squence of being reached
     q.push(index);         /// insert the current node into the queue
-    visited[index] = 1;    /// mark the current node as travelled
+    (*visited)[index] = 1;    /// mark the current node as travelled
     while(q.size())
     {
         int64_t u = q.front();
@@ -42,12 +42,12 @@ bool checkBipartite(const std::vector<std::vector<int64_t>> &graph, int64_t inde
         for(uint64_t i=0;i<graph[u].size();i++)
         {
             int64_t v = graph[u][i];    ///< stores the neighbour of the current node
-            if(!visited[v])             /// check whether the neighbour node is travelled already or not
+            if(!(*visited)[v])             /// check whether the neighbour node is travelled already or not
             {
-                visited[v] = (visited[u]==1)?-1:1;  /// colour the neighbouring node with different colour than the current node
+                (*visited)[v] = ((*visited)[u]==1)?-1:1;  /// colour the neighbouring node with different colour than the current node
                 q.push(v);                          /// insert the neighbouring node into the queue
             }
-            else if(visited[v] == visited[u])   /// if both the current node and its neighbour has the same state then it is not a bipartite graph
+            else if((*visited)[v] == (*visited)[u])   /// if both the current node and its neighbour has the same state then it is not a bipartite graph
             {
                 return false;
             }
@@ -68,7 +68,7 @@ bool isBipartite(const std::vector<std::vector<int64_t>> &graph)
     {    
         if(!visited[i]) /// if the current node is not visited then check whether the sub-graph of that node is a bipartite or not
         {
-            if(!checkBipartite(graph, i, visited))
+            if(!checkBipartite(graph, i, &visited))
             {
                 return false;
             }
