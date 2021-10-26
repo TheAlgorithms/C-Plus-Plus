@@ -29,8 +29,11 @@ var namespacemath =
     ] ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],
     [ "circle_area", "dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75", null ],
+    [ "cone_volume", "dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7", null ],
     [ "cube_surface_area", "dd/d47/namespacemath.html#abc46c784a297fc1d2eb8b33a327fba4c", null ],
+    [ "cube_volume", "dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725", null ],
     [ "cylinder_surface_area", "dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864", null ],
+    [ "cylinder_volume", "dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca", null ],
     [ "integral_approx", "dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11", null ],
     [ "largestPower", "dd/d47/namespacemath.html#afa39ec943a4836c878e1614fd89b146f", null ],
     [ "lcmSum", "dd/d47/namespacemath.html#a04065193d190d605e1f0d0d93a87e244", null ],
@@ -39,9 +42,13 @@ var namespacemath =
     [ "parallelogram_area", "dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f", null ],
     [ "power", "dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d", null ],
     [ "power_of_two", "dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185", null ],
+    [ "pyramid_volume", "dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c", null ],
     [ "rect_area", "dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca", null ],
+    [ "rect_prism_volume", "dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12", null ],
     [ "sphere_surface_area", "dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656", null ],
+    [ "sphere_volume", "dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551", null ],
     [ "square_area", "dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049", null ],
     [ "test_eval", "dd/d47/namespacemath.html#a50936ee98f4d40f17823befc65a32aec", null ],
-    [ "triangle_area", "dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc", null ]
+    [ "triangle_area", "dd/d47/namespacemath.html#ab3b920cc56442abd92279ba23b50f4dc", null ],
+    [ "triangle_prism_volume", "dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c", null ]
 ];
