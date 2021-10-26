@@ -60,7 +60,7 @@ bool checkBipartite(const std::vector<std::vector<int64_t>> &graph, int64_t inde
  * @param graph is a 2D matrix whose rows or the first index signify the node and values in that row signify the nodes it is connected to
  * @returns booleans
  */
-bool isBipartite(std::vector<std::vector<int64_t>> graph) 
+bool isBipartite(const std::vector<std::vector<int64_t>> &graph) 
 {
     std::vector<int64_t> visited(graph.size()); ///< stores boolean values which signify whether that node had been visited or not
     
