@@ -19,14 +19,13 @@
  *
  * @author [ggkogkou](https://github.com/ggkogkou)
  */
-#include <cassert>     /// for assert
-#include <cmath>       /// for math functions
+#include <cassert>  /// for assert
+#include <cmath>    /// for math functions
+#include <cmath>
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
 #include <iostream>    /// for IO operations
 #include <map>         /// for std::map container
-
-#include "math.h"
 
 /**
  * @namespace numerical_methods
@@ -159,8 +158,9 @@ int main(int argc, char** argv) {
         // Check if a<b else abort
         assert(a < b && "a has to be less than b");
         assert(N > 0 && "N has to be > 0");
-        if (N < 4 || a != 1 || b != 3)
+        if (N < 4 || a != 1 || b != 3) {
             used_argv_parameters = true;
+        }
         std::cout << "You selected N=" << N << ", a=" << a << ", b=" << b
                   << std::endl;
     } else {
