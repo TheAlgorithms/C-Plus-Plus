@@ -46,6 +46,8 @@
     * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/main_cll.cpp)
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/disjoint_set.cpp)
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/doubly_linked_list.cpp)
+  * [Dsu Path Compression](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/dsu_path_compression.cpp)
+  * [Dsu Union Rank](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/dsu_union_rank.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linkedlist_implentation_usingarray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/list_array.cpp)
@@ -163,6 +165,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
   * [Binomial Calculate](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binomial_calculate.cpp)
@@ -214,6 +217,7 @@
   * [Sum Of Binomial Coefficient](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_binomial_coefficient.cpp)
   * [Sum Of Digits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/sum_of_digits.cpp)
   * [Vector Cross Product](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/vector_cross_product.cpp)
+  * [Volume](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/volume.cpp)
 
 ## Numerical Methods
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
@@ -241,7 +245,7 @@
   * [Circular Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/circular_queue_using_array.cpp)
   * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
   * [Inorder Successor Of Bst](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/inorder_successor_of_bst.cpp)
-  * [Intersection Of 2 Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_2_arrays.cpp)
+  * [Intersection Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_two_arrays.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
   * [Reverse Binary Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_binary_tree.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
@@ -335,7 +339,7 @@
   * [Radix Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/radix_sort2.cpp)
   * [Random Pivot Quick Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/random_pivot_quick_sort.cpp)
   * [Recursive Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/recursive_bubble_sort.cpp)
-  * [Selection Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort.cpp)
+  * [Selection Sort Iterative](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort_iterative.cpp)
   * [Selection Sort Recursive](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/selection_sort_recursive.cpp)
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort.cpp)
   * [Shell Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/shell_sort2.cpp)
