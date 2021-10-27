@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <array>
+#include <unistd.h>
 
 /**
  * Basic C++ function to use sleep sort. Basically, this function sort a array in a BIG O of O(max(input)+n),
@@ -11,7 +13,7 @@
 **/
 int main() {
 	// Instantiates a 5-position array.
-	int a[] = {10,9,8,7,6};
+	std::array<int, 5> a = {10, 5, 2, 7, 6};
 	int c = sizeof(a) / sizeof(a[0]);
 
 	// Creates a new process using fork and then makes the program sleep.
@@ -19,7 +21,8 @@ int main() {
 	sleep(c = a[c]);
 
 	// When the sleep process ends, it prints to the user the current number.  
-	printf("%d\n", c);
-	wait(0);
+	std::cout << c << std::endl;
+	wait(nullptr);
+
 	return 0;
 }
