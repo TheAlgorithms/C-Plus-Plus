@@ -1,8 +1,8 @@
 /**
  * @file
  * @brief A numerical method for easy [approximation of
- * integrals](https://en.wikipedia.org/wiki/Midpoint_method) \details The idea
- * is to split the interval into N of intervals and use as interpolation points
+ * integrals](https://en.wikipedia.org/wiki/Midpoint_method) 
+ * @details The idea is to split the interval into N of intervals and use as interpolation points
  * the xi for which it applies that xi = x0 + i*h, where h is a step defined as
  * h = (b-a)/N where a and b are the first and last points of the interval of
  * the integration [a, b].
@@ -20,7 +20,6 @@
  */
 #include <cassert>  /// for assert
 #include <cmath>    /// for math functions
-#include <cmath>
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
 #include <iostream>    /// for IO operations
@@ -33,7 +32,7 @@
 namespace numerical_methods {
 /**
  * @namespace midpoint_rule
- * \brief Contains the function of the midpoint method implementation
+ * @brief Contains the function of the midpoint method implementation
  */
 namespace midpoint_rule {
 /*!
@@ -48,7 +47,7 @@ namespace midpoint_rule {
 double midpoint(const int N, const double h, const double a,
                 const std::function<double(double)>& func) {
     std::map<int, double>
-        data_table;  // Contains the data points, key: i, value: f(xi)
+            data_table;  // Contains the data points, key: i, value: f(xi)
     double xi = a;   // Initialize xi to the starting point x0 = a
 
     // Create the data table
@@ -77,11 +76,8 @@ double midpoint(const int N, const double h, const double a,
     return evaluate_integral;
 }
 
-}  // namespace midpoint_rule
-}  // namespace numerical_methods
-
 /**
- * \brief A function f(x) that will be used to test the method
+ * @brief A function f(x) that will be used to test the method
  * @param x The independent variable xi
  * @returns the value of the dependent variable yi = f(xi)
  */
@@ -93,8 +89,11 @@ double k(double x) { return std::sqrt(2 * std::pow(x, 3) + 3); }
 /** @brief Another test function */
 double l(double x) { return x + std::log(2 * x + 1); }
 
+}  // namespace midpoint_rule
+}  // namespace numerical_methods
+
 /**
- * \brief Self-test implementations
+ * @brief Self-test implementations
  * @param N is the number of intervals
  * @param h is the step
  * @param a is x0
@@ -106,25 +105,25 @@ static void test(int N, double h, double a, double b,
                  bool used_argv_parameters) {
     // Call midpoint() for each of the test functions f, g, k, l
     // Assert with two decimal point precision
-    double result_f = numerical_methods::midpoint_rule::midpoint(N, h, a, f);
+    double result_f = numerical_methods::midpoint_rule::midpoint(N, h, a, numerical_methods::midpoint_rule::f);
     assert((used_argv_parameters || (result_f >= 4.09 && result_f <= 4.10)) &&
            "The result of f(x) is wrong");
     std::cout << "The result of integral f(x) on interval [" << a << ", " << b
               << "] is equal to: " << result_f << std::endl;
 
-    double result_g = numerical_methods::midpoint_rule::midpoint(N, h, a, g);
+    double result_g = numerical_methods::midpoint_rule::midpoint(N, h, a, numerical_methods::midpoint_rule::g);
     assert((used_argv_parameters || (result_g >= 0.27 && result_g <= 0.28)) &&
            "The result of g(x) is wrong");
     std::cout << "The result of integral g(x) on interval [" << a << ", " << b
               << "] is equal to: " << result_g << std::endl;
 
-    double result_k = numerical_methods::midpoint_rule::midpoint(N, h, a, k);
+    double result_k = numerical_methods::midpoint_rule::midpoint(N, h, a, numerical_methods::midpoint_rule::k);
     assert((used_argv_parameters || (result_k >= 9.06 && result_k <= 9.07)) &&
            "The result of k(x) is wrong");
     std::cout << "The result of integral k(x) on interval [" << a << ", " << b
               << "] is equal to: " << result_k << std::endl;
 
-    double result_l = numerical_methods::midpoint_rule::midpoint(N, h, a, l);
+    double result_l = numerical_methods::midpoint_rule::midpoint(N, h, a, numerical_methods::midpoint_rule::l);
     assert((used_argv_parameters || (result_l >= 7.16 && result_l <= 7.17)) &&
            "The result of l(x) is wrong");
     std::cout << "The result of integral l(x) on interval [" << a << ", " << b
@@ -139,14 +138,14 @@ static void test(int N, double h, double a, double b,
  */
 int main(int argc, char** argv) {
     int N = 16;  /// Number of intervals to divide the integration interval.
-                 /// MUST BE EVEN
+    /// MUST BE EVEN
     double a = 1, b = 3;  /// Starting and ending point of the integration in
-                          /// the real axis
+    /// the real axis
     double h = NAN;       /// Step, calculated by a, b and N
 
     bool used_argv_parameters =
-        false;  // If argv parameters are used then the assert must be omitted
-                // for the tst cases
+            false;  // If argv parameters are used then the assert must be omitted
+    // for the test cases
 
     // Get user input (by the command line parameters or the console after
     // displaying messages)
@@ -170,7 +169,7 @@ int main(int argc, char** argv) {
     // Find the step
     h = (b - a) / N;
 
-    test(N, h, a, b, used_argv_parameters);  /// run self-test implementations
+    test(N, h, a, b, used_argv_parameters);  // run self-test implementations
 
     return 0;
 }
