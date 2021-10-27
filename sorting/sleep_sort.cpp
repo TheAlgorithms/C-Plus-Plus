@@ -18,7 +18,8 @@ int main() {
     int c = sizeof(a) / sizeof(a[0]);
 
     // Creates a new child process using fork and then makes the program sleep.
-    while (--c >= 1 && !fork());
+    while (--c >= 1 && !fork())
+        ;
     sleep(c = a[c]);
 
     // When the sleep process ends, it prints to the user the current number.
