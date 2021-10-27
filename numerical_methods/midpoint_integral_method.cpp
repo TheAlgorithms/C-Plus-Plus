@@ -15,7 +15,6 @@
  * argv[2] = a, argv[3] = b. In this case if the default values N=16, a=1, b=3
  * are changed then the tests/assert are disabled.
  *
- * More info: [Link to wikipedia](https://en.wikipedia.org/wiki/Midpoint_method)
  *
  * @author [ggkogkou](https://github.com/ggkogkou)
  */
