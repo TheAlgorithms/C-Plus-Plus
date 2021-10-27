@@ -133,7 +133,12 @@ static void test(int N, double h, double a, double b,
               << "] is equal to: " << result_l << std::endl;
 }
 
-/** main function */
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char** argv) {
     int N = 16;  /// Number of intervals to divide the integration interval.
                  /// MUST BE EVEN
