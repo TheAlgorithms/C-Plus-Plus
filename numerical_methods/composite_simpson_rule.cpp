@@ -81,6 +81,8 @@ double l(double x){
 }
 }  // namespace simpson_method
 }  // namespace numerical_methods
+}  // namespace simpson_method
+}  // namespace numerical_methods
 
 /**
  * \brief Self-test implementations
