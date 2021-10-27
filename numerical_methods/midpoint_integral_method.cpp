@@ -1,6 +1,6 @@
 /*!
  * @file
- * \brief A numerical method for easy approximation of integrals
+ * \brief A numerical method for easy [approximation of integrals](https://en.wikipedia.org/wiki/Midpoint_method)
  * \details The idea is to split the interval into N of intervals and use as interpolation points the xi
  * for which it applies that xi = x0 + i*h, where h is a step defined as h = (b-a)/N where a and b are the
  * first and last points of the interval of the integration [a, b].
