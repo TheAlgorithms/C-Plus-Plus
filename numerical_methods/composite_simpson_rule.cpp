@@ -56,7 +56,7 @@ namespace numerical_methods {
  * @param func: choose the function that will be evaluated
  * @returns the result of the integration
 */
-        double evaluate_by_simpson(int N, double h, double a, std::function<double(double)> func);
+double evaluate_by_simpson(int N, double h, double a, std::function<double(double)> func);
 
 /**
  * @fn double f(double x)
