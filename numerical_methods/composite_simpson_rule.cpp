@@ -50,9 +50,9 @@ namespace numerical_methods {
 /**
  * @fn double evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func)
  * @brief Calculate integral or assert if integral is not a number (Nan)
- * @param N: number of intervals
- * @param h: step
- * @param a: x0
+ * @param N number of intervals
+ * @param h step
+ * @param a x0
  * @param func: choose the function that will be evaluated
  * @returns the result of the integration
 */
