@@ -21,9 +21,9 @@
  * @author [Sumaiya Fatma](https://github.com/sumushi)
  */
 
-#include <cassert>  /// for assert
-#include <iostream> /// for IO operations
-#include <vector>   /// for vector operations
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for vector operations
 
 /**
  * \namespace ciphers
@@ -43,55 +43,55 @@ namespace railfence {
  * @returns new encrypted text
  */
 std::string encrypt(const std::string &text, const int &key) {
-  int len = text.length();
-  /* Empty string stores encrypted */
-  std::string encrypted_text = "";
-  /* Empty matrix to cipher text into rails */
-  std::vector<std::vector<char>> rail(key);
-  /* Filling the rail matrix to distinguish between filled and
-unfilled cells */
-  for (int i = 0; i < key; i++) {
-    std::vector<char> p(len);
-    for (int j = 0; j < len; j++) {
-      p[j] = '-';
+    int len = text.length();
+    /* Empty string stores encrypted */
+    std::string encrypted_text = "";
+    /* Empty matrix to cipher text into rails */
+    std::vector<std::vector<char>> rail(key);
+    /* Filling the rail matrix to distinguish between filled and
+  unfilled cells */
+    for (int i = 0; i < key; i++) {
+        std::vector<char> p(len);
+        for (int j = 0; j < len; j++) {
+            p[j] = '-';
+        }
+        rail[i] = p;
     }
-    rail[i] = p;
-  }
-  /* Using a flag to check whether to move up or down */
-  bool down = false;
-  /* r is row number and c defines the coloumn number */
-  int r = 0, c = 0;
-  /* iterating through each character of provided string and
-putting it at the right place in rail matrix */
-  for (int i = 0; i < len; i++) {
-    /* if at first or last row reverse the direction of filling
-rows */
-    if (r == 0 || r == key - 1) {
-      down = !down;
+    /* Using a flag to check whether to move up or down */
+    bool down = false;
+    /* r is row number and c defines the coloumn number */
+    int r = 0, c = 0;
+    /* iterating through each character of provided string and
+  putting it at the right place in rail matrix */
+    for (int i = 0; i < len; i++) {
+        /* if at first or last row reverse the direction of filling
+    rows */
+        if (r == 0 || r == key - 1) {
+            down = !down;
+        }
+        /* Fill in the cell, move a column forward */
+        rail[r][c++] = text[i];
+        if (down) {
+            /* if direction is down, move one row below */
+            r++;
+        } else {
+            /* if direction is up, move one row above */
+            r--;
+        }
     }
-    /* Fill in the cell, move a column forward */
-    rail[r][c++] = text[i];
-    if (down) {
-      /* if direction is down, move one row below */
-      r++;
-    } else {
-      /* if direction is up, move one row above */
-      r--;
+    for (int i = 0; i < key; i++) {
+        /* iterating through each element of rail matrix left to
+    right */
+        for (int j = 0; j < len; j++) {
+            if (rail[i][j] != '-') {
+                /* If matrix was filled,adding the filled character
+            to output */
+                encrypted_text += rail[i][j];
+            }
+        }
     }
-  }
-  for (int i = 0; i < key; i++) {
-    /* iterating through each element of rail matrix left to
-right */
-    for (int j = 0; j < len; j++) {
-      if (rail[i][j] != '-') {
-        /* If matrix was filled,adding the filled character
-    to output */
-        encrypted_text += rail[i][j];
-      }
-    }
-  }
-  /* Returning encrypted text */
-  return encrypted_text;
+    /* Returning encrypted text */
+    return encrypted_text;
 }
 /**
  * Decrypt given text using railfence cipher.
@@ -100,107 +100,107 @@ right */
  * @returns new decrypted text
  */
 std::string decrypt(const std::string &text, const int &key) {
-  int len = text.length();
-  /* Empty string stores decrypted */
-  std::string decrypted_text = "";
-  /* Empty matrix ciphers plain text into rails */
-  std::vector<std::vector<char>> rail(key);
-  for (int i = 0; i < key; i++) {
-    std::vector<char> p(len);
-    for (int j = 0; j < len; j++) {
-      /* Filling the rail matrix to distinguish between
-  filled and unfilled cells */
-      p[j] = '-';
+    int len = text.length();
+    /* Empty string stores decrypted */
+    std::string decrypted_text = "";
+    /* Empty matrix ciphers plain text into rails */
+    std::vector<std::vector<char>> rail(key);
+    for (int i = 0; i < key; i++) {
+        std::vector<char> p(len);
+        for (int j = 0; j < len; j++) {
+            /* Filling the rail matrix to distinguish between
+        filled and unfilled cells */
+            p[j] = '-';
+        }
+        rail[i] = p;
     }
-    rail[i] = p;
-  }
-  /* Using a flag to check direction */
-  bool down = false;
-  /* r equal row number and c equals coloumn number */
-  int r = 0, c = 0;
-  /* iterating through each character of provided string to mark
-the cells to be filled */
-  for (int i = 0; i < len; i++) {
-    /* if at first or last row */
-    if (r == 0 || r == key - 1) {
-      /* reverse the direction of filling */
-      down = !down;
+    /* Using a flag to check direction */
+    bool down = false;
+    /* r equal row number and c equals coloumn number */
+    int r = 0, c = 0;
+    /* iterating through each character of provided string to mark
+  the cells to be filled */
+    for (int i = 0; i < len; i++) {
+        /* if at first or last row */
+        if (r == 0 || r == key - 1) {
+            /* reverse the direction of filling */
+            down = !down;
+        }
+        /* Mark the cell and move a column forward */
+        rail[r][c++] = '*';
+        if (down) {
+            /* if direction is down, move one row below */
+            r++;
+        } else {
+            /* if direction is up, move one row above */
+            r--;
+        }
     }
-    /* Mark the cell and move a column forward */
-    rail[r][c++] = '*';
-    if (down) {
-      /* if direction is down, move one row below */
-      r++;
-    } else {
-      /* if direction is up, move one row above */
-      r--;
+    int n = 0;
+    for (int i = 0; i < key; i++) {
+        /* iterating through each element of rail matrix left to
+    right */
+        for (int j = 0; j < len; j++) {
+            if (rail[i][j] != '-') {
+                /* If matrix cell was marked, filling a character
+            from input text */
+                rail[i][j] = text[n++];
+            }
+        }
     }
-  }
-  int n = 0;
-  for (int i = 0; i < key; i++) {
-    /* iterating through each element of rail matrix left to
-right */
-    for (int j = 0; j < len; j++) {
-      if (rail[i][j] != '-') {
-        /* If matrix cell was marked, filling a character
-    from input text */
-        rail[i][j] = text[n++];
-      }
+    /* reset the value of down */
+    down = false;
+    /* reset the value of c and r */
+    r = 0, c = 0;
+    /* Moving through the rail matrix in zig-zag manner using down
+  flag and r and c values */
+    for (int i = 0; i < len; i++) {
+        /* if at first or last row */
+        if (r == 0 || r == key - 1) {
+            /* reverse the direction of filling */
+            down = !down;
+        }
+        /* Add the char to output */
+        decrypted_text += rail[r][c++];
+        if (down) {
+            /* if direction is down, move one row below */
+            r++;
+        } else {
+            /* if direction is up, move one row above */
+            r--;
+        }
     }
-  }
-  /* reset the value of down */
-  down = false;
-  /* reset the value of c and r */
-  r = 0, c = 0;
-  /* Moving through the rail matrix in zig-zag manner using down
-flag and r and c values */
-  for (int i = 0; i < len; i++) {
-    /* if at first or last row */
-    if (r == 0 || r == key - 1) {
-      /* reverse the direction of filling */
-      down = !down;
-    }
-    /* Add the char to output */
-    decrypted_text += rail[r][c++];
-    if (down) {
-      /* if direction is down, move one row below */
-      r++;
-    } else {
-      /* if direction is up, move one row above */
-      r--;
-    }
-  }
-  /* Returning decrypted text */
-  return decrypted_text;
+    /* Returning decrypted text */
+    return decrypted_text;
 }
-} // namespace railfence
-} // namespace ciphers
+}  // namespace railfence
+}  // namespace ciphers
 
 /**
  * @brief Self-test implementations
  * @returns void
  */
 static void test() {
-  std::cout << "******************Test Cases******************" << std::endl;
-  // Test 1
-  std::string text1 = "ALANTURING";
-  std::string encrypted1 = ciphers::railfence::encrypt(text1, 4);
-  std::string decrypted1 = ciphers::railfence::decrypt(encrypted1, 4);
-  assert(text1 == decrypted1);
-  std::cout << "Original text : " << text1;
-  std::cout << "\nEncrypted text (with rails = 4) : " << encrypted1;
-  std::cout << "\nDecrypted text : " << decrypted1 << std::endl;
-  std::cout << "**********************************************" << std::endl;
+    std::cout << "******************Test Cases******************" << std::endl;
+    // Test 1
+    std::string text1 = "ALANTURING";
+    std::string encrypted1 = ciphers::railfence::encrypt(text1, 4);
+    std::string decrypted1 = ciphers::railfence::decrypt(encrypted1, 4);
+    assert(text1 == decrypted1);
+    std::cout << "Original text : " << text1;
+    std::cout << "\nEncrypted text (with rails = 4) : " << encrypted1;
+    std::cout << "\nDecrypted text : " << decrypted1 << std::endl;
+    std::cout << "**********************************************" << std::endl;
 
-  // Test 2
-  std::string text2 = "helloworld";
-  std::string encrypted2 = ciphers::railfence::encrypt(text2, 3);
-  std::string decrypted2 = ciphers::railfence::decrypt(encrypted2, 3);
-  assert(text2 == decrypted2);
-  std::cout << "Original text : " << text2;
-  std::cout << "\nEncrypted text (with rails = 3) : " << encrypted2;
-  std::cout << "\nDecrypted text : " << decrypted2 << std::endl;
-  std::cout << "**********************************************" << std::endl;
+    // Test 2
+    std::string text2 = "helloworld";
+    std::string encrypted2 = ciphers::railfence::encrypt(text2, 3);
+    std::string decrypted2 = ciphers::railfence::decrypt(encrypted2, 3);
+    assert(text2 == decrypted2);
+    std::cout << "Original text : " << text2;
+    std::cout << "\nEncrypted text (with rails = 3) : " << encrypted2;
+    std::cout << "\nDecrypted text : " << decrypted2 << std::endl;
+    std::cout << "**********************************************" << std::endl;
 }
 
 /**
@@ -208,6 +208,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-  test(); // run self-test implementations
-  return 0;
+    test();  // run self-test implementations
+    return 0;
 }
