@@ -203,7 +203,10 @@ static void test() {
   std::cout << "**********************************************" << std::endl;
 }
 
-/** Driver Code */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
   test(); // run self-test implementations
   return 0;
