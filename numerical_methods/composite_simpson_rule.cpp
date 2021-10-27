@@ -79,6 +79,8 @@ double k(double x){
 double l(double x){
     return x + std::log(2*x+1);
 }
+}  // namespace simpson_method
+}  // namespace numerical_methods
 
 /**
  * \brief Self-test implementations
