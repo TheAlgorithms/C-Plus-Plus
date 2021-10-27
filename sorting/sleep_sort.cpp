@@ -17,7 +17,7 @@ int main() {
     std::array<int, 5> a = {10, 5, 2, 7, 6};
     int c = sizeof(a) / sizeof(a[0]);
 
-    // Creates a new process using fork and then makes the program sleep.
+    // Creates a new child process using fork and then makes the program sleep.
     while (--c >= 1 && !fork());
     sleep(c = a[c]);
 
