@@ -22,7 +22,8 @@
  */
 namespace ciphers {
 /** \namespace atbash
- * \brief Functions for the [Atbash Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
+ * \brief Functions for the [Atbash
+ * Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
  */
 namespace atbash {
 std::map<char, char> atbash_cipher_map = {
@@ -43,7 +44,7 @@ std::map<char, char> atbash_cipher_map = {
  * @param text Plaintext to be encrypted
  * @returns encoded or decoded string
  */
-std::string atbash_cipher(std::string text) {
+std::string atbash_cipher(const std::string& text) {
     std::string result;
     for (char letter : text) {
         result += atbash_cipher_map[letter];
