@@ -35,7 +35,7 @@ namespace numerical_methods {
  * @brief Functions for the [Midpoint Integral](https://en.wikipedia.org/wiki/Midpoint_method) method implementation
  */
 namespace midpoint_rule {
-/*!
+/**
  * @fn double midpoint(const int N, const double h, const double a, const
  * std::function<double (double)>& func) \brief Implement midpoint method
  * @param N is the number of intervals
