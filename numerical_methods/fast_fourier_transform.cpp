@@ -93,7 +93,6 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
  * in predicted and true value is less than 0.000000000001.
  * @returns void
  */
-
 static void test() {
     /* descriptions of the following test */
 
