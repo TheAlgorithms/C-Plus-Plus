@@ -1,7 +1,8 @@
 /**
  * @file
- * @brief Binary Exponentiation (divide-and-conquer)
+ * @brief Binary Exponentiation (divide-and-conquer); see [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring)
  * @author [jay-tux](github.com/jay-tux)
+ * Computes base ^ exp by dividing exp by two while squaring base (reducing the amount of multiplications).
  */
 
 #include <cassert>  /// for assert
@@ -46,7 +47,7 @@ result_t binaryExp(input_t base, input_t exp) {
 }  // namespace divide_and_conquer
 
 /**
- * @brief Self-tests
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
