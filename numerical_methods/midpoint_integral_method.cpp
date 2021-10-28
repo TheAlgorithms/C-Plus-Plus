@@ -23,6 +23,7 @@
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
 #include <iostream>    /// for IO operations
+#include <stdint>      /// for integer allocation
 #include <map>         /// for std::map container
 
 /**
@@ -38,17 +39,16 @@ namespace numerical_methods {
  */
 namespace midpoint_rule {
 /**
- * @fn double midpoint(const int N, const double h, const double a, const
+ * @fn double midpoint(const std::int32_t N, const double h, const double a, const
  * std::function<double (double)>& func)
- * \brief Main function for implementing the Midpoint Integral Method
- * implementation
+ * @brief Main function for implementing the Midpoint Integral Method implementation
  * @param N is the number of intervals
  * @param h is the step
  * @param a is x0
  * @param func is the function that will be integrated
  * @returns the result of the integration
  */
-double midpoint(const int N, const double h, const double a,
+double midpoint(const std::int32_t N, const double h, const double a,
                 const std::function<double(double)>& func) {
     std::map<int, double>
         data_table;  // Contains the data points, key: i, value: f(xi)
@@ -57,16 +57,16 @@ double midpoint(const int N, const double h, const double a,
     // Create the data table
     // Loop from x0 to xN-1
     double temp = NAN;
-    for (int i = 0; i < N; i++) {
+    for (std::uint8_t i = 0; i < N; i++) {
         temp = func(xi + h / 2);                             // find f(xi+h/2)
-        data_table.insert(std::pair<int, double>(i, temp));  // add i and f(xi)
+        data_table.insert(std::pair<std::int32_t, double>(i, temp));  // add i and f(xi)
         xi += h;  // Get the next point xi for the next iteration
     }
 
     // Evaluate the integral.
     // Remember: {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}
     double evaluate_integral = 0;
-    for (int i = 0; i < N; i++) evaluate_integral += data_table.at(i);
+    for (std::uint8_t i = 0; i < N; i++) evaluate_integral += data_table.at(i);
 
     // Multiply by the coefficient h
     evaluate_integral *= h;
@@ -83,14 +83,26 @@ double midpoint(const int N, const double h, const double a,
 /**
  * @brief A function f(x) that will be used to test the method
  * @param x The independent variable xi
- * @returns the value of the dependent variable yi = f(xi)
+ * @returns the value of the dependent variable yi = f(xi) = sqrt(xi) + ln(xi)
  */
 double f(double x) { return std::sqrt(x) + std::log(x); }
-/** @brief Another test function */
+/**
+ * @brief A function g(x) that will be used to test the method
+ * @param x The independent variable xi
+ * @returns the value of the dependent variable yi = g(xi) = e^(-xi) * (4 - xi^2)
+ */
 double g(double x) { return std::exp(-x) * (4 - std::pow(x, 2)); }
-/** @brief Another test function */
+/**
+ * @brief A function k(x) that will be used to test the method
+ * @param x The independent variable xi
+ * @returns the value of the dependent variable yi = k(xi) = sqrt(2*xi^3 + 3)
+ */
 double k(double x) { return std::sqrt(2 * std::pow(x, 3) + 3); }
-/** @brief Another test function */
+/**
+ * @brief A function l(x) that will be used to test the method
+ * @param x The independent variable xi
+ * @returns the value of the dependent variable yi = l(xi) = xi + ln(2*xi + 1)
+ */
 double l(double x) { return x + std::log(2 * x + 1); }
 
 }  // namespace midpoint_rule
@@ -105,7 +117,7 @@ double l(double x) { return x + std::log(2 * x + 1); }
  * @param used_argv_parameters is 'true' if argv parameters are given and
  * 'false' if not
  */
-static void test(int N, double h, double a, double b,
+static void test(std::int32_t N, double h, double a, double b,
                  bool used_argv_parameters) {
     // Call midpoint() for each of the test functions f, g, k, l
     // Assert with two decimal point precision
@@ -145,7 +157,7 @@ static void test(int N, double h, double a, double b,
  * @returns 0 on exit
  */
 int main(int argc, char** argv) {
-    int N = 16;  /// Number of intervals to divide the integration interval.
+    std::int32_t N = 16;  /// Number of intervals to divide the integration interval.
     /// MUST BE EVEN
     double a = 1, b = 3;  /// Starting and ending point of the integration in
     /// the real axis
