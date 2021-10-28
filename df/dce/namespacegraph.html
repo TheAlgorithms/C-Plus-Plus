@@ -138,16 +138,26 @@ Functions</h2></td></tr>
 <tr class="memitem:adc68cbc8ba09eb1142265935c0d45b84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84">dijkstra</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; int, int &gt; &gt; &gt; *adj, int s, int t)</td></tr>
 <tr class="memdesc:adc68cbc8ba09eb1142265935c0d45b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and returns the shortest distance of target from the source.  <a href="../../df/dce/namespacegraph.html#adc68cbc8ba09eb1142265935c0d45b84">More...</a><br /></td></tr>
 <tr class="separator:adc68cbc8ba09eb1142265935c0d45b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7">checkBipartite</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;graph, int64_t index, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; *visited)</td></tr>
+<tr class="memdesc:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to check whether the passed graph is bipartite or not  <a href="../../df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7">More...</a><br /></td></tr>
+<tr class="separator:a8e1b547cd407c0774e63f0dc95cda9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b0551489c613a681cc83b34450da4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#a84b0551489c613a681cc83b34450da4b">isBipartite</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;graph)</td></tr>
+<tr class="memdesc:a84b0551489c613a681cc83b34450da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the given graph is bipartite else returns false  <a href="../../df/dce/namespacegraph.html#a84b0551489c613a681cc83b34450da4b">More...</a><br /></td></tr>
+<tr class="separator:a84b0551489c613a681cc83b34450da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7706341d006e20d1ae58274187a3346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346">TravellingSalesmanProblem</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint32_t &gt; &gt; *cities, int32_t src, uint32_t V)</td></tr>
 <tr class="memdesc:ab7706341d006e20d1ae58274187a3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates the minimum path distance that will cover all the cities starting from the source.  <a href="../../df/dce/namespacegraph.html#ab7706341d006e20d1ae58274187a3346">More...</a><br /></td></tr>
 <tr class="separator:ab7706341d006e20d1ae58274187a3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms. </p>
+<p >Check whether a given graph is bipartite or not.</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> algorithms.</p>
 <p >for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a></p>
 <p ><a class="el" href="../../dc/d61/classgraph_1_1_graph.html">Graph</a> Algorithms</p>
+<p >A bipartite graph is the one whose nodes can be divided into two disjoint sets in such a way that the nodes in a set are not connected to each other at all, i.e. no intra-set connections. The only connections that exist are that of inter-set, i.e. the nodes from one set are connected to a subset of nodes in the other set. In this implementation, using a graph in the form of adjacency list, check whether the given graph is a bipartite or not.</p>
+<p >References used: <a href="https://www.geeksforgeeks.org/bipartite-graph/" target="_blank">GeeksForGeeks</a> </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/tushar2407" target="_blank">tushar2407</a> for IO operations for queue data structure for vector data structure for assert</dd></dl>
+<p>Graphical algorithms</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for assert for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9125ceb66bfbec3093bba64c2c1e99e2" name="a9125ceb66bfbec3093bba64c2c1e99e2"></a>
@@ -311,6 +321,91 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 
+</div>
+</div>
+<a id="a8e1b547cd407c0774e63f0dc95cda9e7" name="a8e1b547cd407c0774e63f0dc95cda9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1b547cd407c0774e63f0dc95cda9e7">&#9670;&nbsp;</a></span>checkBipartite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graph::checkBipartite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; *&#160;</td>
+          <td class="paramname"><em>visited</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function to check whether the passed graph is bipartite or not </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>is a 2D matrix whose rows or the first index signify the node and values in that row signify the nodes it is connected to </td></tr>
+    <tr><td class="paramname">index</td><td>is the valus of the node currently under observation </td></tr>
+    <tr><td class="paramname">visited</td><td>is the vector which stores whether a given node has been traversed or not yet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<p >&lt; stores the neighbouring node indexes in squence of being reached</p>
+<p >insert the current node into the queue</p>
+<p >mark the current node as travelled</p>
+<p >&lt; stores the neighbour of the current node</p>
+<p >check whether the neighbour node is travelled already or not</p>
+<p >colour the neighbouring node with different colour than the current node</p>
+<p >insert the neighbouring node into the queue</p>
+<p >if both the current node and its neighbour has the same state then it is not a bipartite graph</p>
+<p >return true when all the connected nodes of the current nodes are travelled and satisify all the above conditions</p>
+<div class="fragment"><div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue&lt;int64_t&gt;</a> q; <span class="comment">///&lt; stores the neighbouring node indexes in squence </span><span class="comment"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">                           /// of being reached</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span>    q.push(index);         <span class="comment">/// insert the current node into the queue</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    (*visited)[index] = 1; <span class="comment">/// mark the current node as travelled</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">while</span>(q.size())</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        int64_t u = q.front();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        q.pop();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">for</span>(uint64_t i=0;i&lt;<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[u].size();i++)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            int64_t v = <a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>[u][i];    <span class="comment">///&lt; stores the neighbour of the current node</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span>(!(*visited)[v])          <span class="comment">/// check whether the neighbour node is </span><span class="comment"></span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">                                        /// travelled already or not</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span>            {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                (*visited)[v] = ((*visited)[u]==1)?-1:1;  <span class="comment">/// colour the neighbouring node with </span><span class="comment"></span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">                                                          /// different colour than the current node</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span>                q.push(v);      <span class="comment">/// insert the neighbouring node into the queue</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((*visited)[v] == (*visited)[u])   <span class="comment">/// if both the current node and its neighbour</span><span class="comment"></span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">                                                      /// has the same state then it is not a bipartite graph</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span>            {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;    <span class="comment">/// return true when all the connected nodes of the current </span><span class="comment"></span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">                    /// nodes are travelled and satisify all the above conditions</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span>}</div>
+<div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="../../df/dce/namespacegraph.html">graph</a></div><div class="ttdoc">Graph Algorithms.</div></div>
+<div class="ttc" id="aqueue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/queue.html">std::queue</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5428a3519267a28bba4b4310cfbb6ae" name="ab5428a3519267a28bba4b4310cfbb6ae"></a>
@@ -629,6 +724,59 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a83ab16e96cec644109a58dfc9329bc2b_cgraph.svg" width="388" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a84b0551489c613a681cc83b34450da4b" name="a84b0551489c613a681cc83b34450da4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b0551489c613a681cc83b34450da4b">&#9670;&nbsp;</a></span>isBipartite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graph::isBipartite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int64_t &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns true if the given graph is bipartite else returns false </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>is a 2D matrix whose rows or the first index signify the node and values in that row signify the nodes it is connected to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>booleans </dd></dl>
+<p >&lt; stores boolean values which signify whether that node had been visited or not</p>
+<p >if the current node is not visited then check whether the sub-graph of that node is a bipartite or not</p>
+<div class="fragment"><div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> visited(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size()); <span class="comment">///&lt; stores boolean values </span><span class="comment"></span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">                                                /// which signify whether that node had been visited or not</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span>    </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">for</span>(uint64_t i=0;i&lt;<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>.size();i++)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {    </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span>(!visited[i]) <span class="comment">/// if the current node is not visited then check </span><span class="comment"></span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">                        /// whether the sub-graph of that node is a bipartite or not</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span>        {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span>(!<a class="code hl_function" href="../../df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7">checkBipartite</a>(<a class="code hl_namespace" href="../../df/dce/namespacegraph.html">graph</a>, i, &amp;visited))</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="ttc" id="anamespacegraph_html_a8e1b547cd407c0774e63f0dc95cda9e7"><div class="ttname"><a href="../../df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7">graph::checkBipartite</a></div><div class="ttdeci">bool checkBipartite(const std::vector&lt; std::vector&lt; int64_t &gt; &gt; &amp;graph, int64_t index, std::vector&lt; int64_t &gt; *visited)</div><div class="ttdoc">function to check whether the passed graph is bipartite or not</div><div class="ttdef"><b>Definition:</b> is_graph_bipartite2.cpp:35</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_a84b0551489c613a681cc83b34450da4b_cgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

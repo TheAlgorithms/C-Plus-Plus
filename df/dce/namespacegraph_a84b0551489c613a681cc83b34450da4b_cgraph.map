@@ -1,0 +1,4 @@
+<map id="graph::isBipartite" name="graph::isBipartite">
+<area shape="rect" id="node1" title="returns true if the given graph is bipartite else returns false" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a8e1b547cd407c0774e63f0dc95cda9e7" title="function to check whether the passed graph is bipartite or not" alt="" coords="176,5,323,32"/>
+</map>
