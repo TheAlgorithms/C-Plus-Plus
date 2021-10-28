@@ -1,0 +1,91 @@
+/**
+ * @file
+ * @brief Binary Exponentiation (divide-and-conquer)
+ * @author [jay-tux](github.com/jay-tux)
+ */
+
+#include <cassert> /// for assert
+#include <ctime> /// for time
+#include <cstdlib> /// for srand, rand
+#include <cmath> /// for powl
+
+/**
+ * @namespace divide_and_conquer
+ * @brief Divide and Conquer algorithms
+ */
+namespace divide_and_conquer {
+/**
+ * @namespace binary_exponentiation
+ * @brief Binary Exponentiation using bitshifts
+ */
+namespace binary_exponentiation {
+/**
+ * @brief Result type is a type alias for long long unsigned int
+ */
+typedef unsigned long long result_t;
+/**
+ * @brief Input type is a type aligas for long long unsigned int
+ */
+typedef unsigned long long input_t;
+
+/**
+ * @brief Computes base^exp
+ * @param base the base to exponentiate
+ * @param exp the power to which to exponentiate
+ * @returns base^exp (without overflow checking)
+ */
+result_t binaryExp(input_t base, input_t exp) {
+    if(exp == 0) return 1;
+    result_t sub = binaryExp(base, exp >> 1); // divide by 2 by shifting
+    sub = sub * sub; // square
+    return (exp & 1) ? sub * base : sub;
+}
+} // namespace binary_exponentiation
+} // namespace divide_and_conquer
+
+/**
+ * @brief Self-tests
+ * @returns void
+ */
+static void test() {
+    std::srand(std::time(nullptr));
+
+    using namespace divide_and_conquer::binary_exponentiation;
+    typedef double pow_t;
+    input_t base, exp;
+    result_t res, stdlib;
+
+    // test base case 100 times
+    exp = 0L;
+    for(int i = 0; i < 100; i++) {
+        base = std::rand();
+        assert(binaryExp(base, exp) == 1); // a^0 = 1
+    }
+
+    // test each of 100 random bases with 100 random exponents
+    // check using builtin exponentiation
+    for(int i = 0; i < 100; i++) {
+        for(int j = 0; j < 100; j++) {
+            // limit ranges to avoid overflow errors
+            base = std::rand() % 12;
+            exp = std::rand() % 12;
+            res = binaryExp(base, exp);
+            stdlib = static_cast<result_t>(std::pow(
+              static_cast<pow_t>(base),
+              static_cast<pow_t>(exp)
+            ));
+            assert(res == stdlib); // a^b = a^b
+        }
+    }
+}
+
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
+int main(int argc, char *argv[]) {
+    test();  // run self-test implementations
+    return 0;
+}
