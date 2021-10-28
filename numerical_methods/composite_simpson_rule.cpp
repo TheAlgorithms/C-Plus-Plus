@@ -119,6 +119,12 @@ static void test(int N, double h, double a,double b, bool used_argv_parameters){
 
 }
 
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char** argv){
     int N = 16; /// Number of intervals to divide the integration interval. MUST BE EVEN
     double a = 1, b = 3; /// Starting and ending point of the integration in the real axis
