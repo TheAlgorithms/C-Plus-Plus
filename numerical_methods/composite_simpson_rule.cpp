@@ -37,12 +37,6 @@
 #include <functional>   /// for std::function
 #include <map>          /// for std::map container
 
-#include <iostream>      /// for IO operations
-#include <cmath>        /// for math functions
-#include <cassert>      /// for assert
-#include <cstdlib>      /// for std::atof
-#include <functional>   /// for std::function
-#include <map>          /// for std::map container
 
 /**
  * @namespace numerical_methods
