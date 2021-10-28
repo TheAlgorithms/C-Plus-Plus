@@ -8,6 +8,7 @@
 #include <ctime> /// for time
 #include <cstdlib> /// for srand, rand
 #include <cmath> /// for powl
+#include <cstdint> /// for uint64_t
 
 /**
  * @namespace divide_and_conquer
@@ -22,11 +23,11 @@ namespace binary_exponentiation {
 /**
  * @brief Result type is a type alias for long long unsigned int
  */
-using uint64_t result_t;
+using result_t = std::uint64_t;
 /**
  * @brief Input type is a type aligas for long long unsigned int
  */
-using uint64_t input_t;
+using input_t = std::uint64_t;
 
 /**
  * @brief Computes base^exp
@@ -51,7 +52,6 @@ static void test() {
     std::srand(std::time(nullptr));
 
     using namespace divide_and_conquer::binary_exponentiation;
-    using double pow_t = 0;
     input_t base = 0, exp = 0;
     result_t res = 0, stdlib = 0;
 
@@ -70,8 +70,8 @@ static void test() {
             exp = std::rand() % 12;
             res = binaryExp(base, exp);
             stdlib = static_cast<result_t>(std::pow(
-              static_cast<pow_t>(base),
-              static_cast<pow_t>(exp)
+              static_cast<double>(base),
+              static_cast<double>(exp)
             ));
             assert(res == stdlib); // a^b = a^b
         }
