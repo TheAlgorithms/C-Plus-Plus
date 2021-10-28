@@ -22,11 +22,11 @@ namespace binary_exponentiation {
 /**
  * @brief Result type is a type alias for long long unsigned int
  */
-typedef unsigned long long result_t;
+using uint64_t result_t;
 /**
  * @brief Input type is a type aligas for long long unsigned int
  */
-typedef unsigned long long input_t;
+using uint64_t input_t;
 
 /**
  * @brief Computes base^exp
@@ -51,12 +51,11 @@ static void test() {
     std::srand(std::time(nullptr));
 
     using namespace divide_and_conquer::binary_exponentiation;
-    typedef double pow_t;
-    input_t base, exp;
-    result_t res, stdlib;
+    using double pow_t = 0;
+    input_t base = 0, exp = 0;
+    result_t res = 0, stdlib = 0;
 
     // test base case 100 times
-    exp = 0L;
     for(int i = 0; i < 100; i++) {
         base = std::rand();
         assert(binaryExp(base, exp) == 1); // a^0 = 1
