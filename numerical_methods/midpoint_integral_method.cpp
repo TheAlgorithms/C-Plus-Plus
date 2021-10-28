@@ -40,7 +40,8 @@ namespace midpoint_rule {
 /**
  * @fn double midpoint(const int N, const double h, const double a, const
  * std::function<double (double)>& func)
- * \brief Main function for implementing the Midpoint Integral Method implementation
+ * \brief Main function for implementing the Midpoint Integral Method
+ * implementation
  * @param N is the number of intervals
  * @param h is the step
  * @param a is x0
