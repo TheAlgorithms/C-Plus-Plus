@@ -32,7 +32,7 @@
 namespace numerical_methods {
 /**
  * @namespace midpoint_rule
- * @brief Contains the function of the midpoint method implementation
+ * @brief Functions for the [Midpoint Integral](https://en.wikipedia.org/wiki/Midpoint_method) method implementation
  */
 namespace midpoint_rule {
 /*!
