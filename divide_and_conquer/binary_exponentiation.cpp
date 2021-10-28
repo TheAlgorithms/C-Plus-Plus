@@ -37,8 +37,9 @@ using input_t = std::uint64_t;
  * @returns base^exp (without overflow checking)
  */
 result_t binaryExp(input_t base, input_t exp) {
-    if (exp == 0)
+    if (exp == 0) {
         return 1;
+    }
     result_t sub = binaryExp(base, exp >> 1);  // divide by 2 by shifting
     sub = sub * sub;                           // square
     return (exp & 1) ? sub * base : sub;
