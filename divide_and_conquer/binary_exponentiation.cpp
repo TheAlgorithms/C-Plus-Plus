@@ -51,7 +51,10 @@ result_t binaryExp(input_t base, input_t exp) {
 static void test() {
     std::srand(std::time(nullptr));
 
-    using namespace divide_and_conquer::binary_exponentiation;
+    using divide_and_conquer::binary_exponentiation::input_t;
+    using divide_and_conquer::binary_exponentiation::result_t;
+    using divide_and_conquer::binary_exponentiation::binaryExp;
+
     input_t base = 0, exp = 0;
     result_t res = 0, stdlib = 0;
 
