@@ -19,7 +19,7 @@
 namespace divide_and_conquer {
 /**
  * @namespace binary_exponentiation
- * @brief Binary Exponentiation using bitshifts
+ * @brief Implementation of the [Binary Exponentiation](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) algorithm using bitshifts
  */
 namespace binary_exponentiation {
 /**
