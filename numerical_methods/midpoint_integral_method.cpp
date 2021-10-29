@@ -20,10 +20,10 @@
  */
 #include <cassert>     /// for assert
 #include <cmath>       /// for math functions
+#include <cstdint>     /// for integer allocation
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
 #include <iostream>    /// for IO operations
-#include <cstdint>      /// for integer allocation
 #include <map>         /// for std::map container
 
 /**
@@ -39,9 +39,10 @@ namespace numerical_methods {
  */
 namespace midpoint_rule {
 /**
- * @fn double midpoint(const std::int32_t N, const double h, const double a, const
- * std::function<double (double)>& func)
- * @brief Main function for implementing the Midpoint Integral Method implementation
+ * @fn double midpoint(const std::int32_t N, const double h, const double a,
+ * const std::function<double (double)>& func)
+ * @brief Main function for implementing the Midpoint Integral Method
+ * implementation
  * @param N is the number of intervals
  * @param h is the step
  * @param a is x0
@@ -58,8 +59,9 @@ double midpoint(const std::int32_t N, const double h, const double a,
     // Loop from x0 to xN-1
     double temp = NAN;
     for (std::uint8_t i = 0; i < N; i++) {
-        temp = func(xi + h / 2);                             // find f(xi+h/2)
-        data_table.insert(std::pair<std::int32_t, double>(i, temp));  // add i and f(xi)
+        temp = func(xi + h / 2);  // find f(xi+h/2)
+        data_table.insert(
+            std::pair<std::int32_t, double>(i, temp));  // add i and f(xi)
         xi += h;  // Get the next point xi for the next iteration
     }
 
@@ -89,7 +91,8 @@ double f(double x) { return std::sqrt(x) + std::log(x); }
 /**
  * @brief A function g(x) that will be used to test the method
  * @param x The independent variable xi
- * @returns the value of the dependent variable yi = g(xi) = e^(-xi) * (4 - xi^2)
+ * @returns the value of the dependent variable yi = g(xi) = e^(-xi) * (4 -
+ * xi^2)
  */
 double g(double x) { return std::exp(-x) * (4 - std::pow(x, 2)); }
 /**
@@ -157,7 +160,8 @@ static void test(std::int32_t N, double h, double a, double b,
  * @returns 0 on exit
  */
 int main(int argc, char** argv) {
-    std::int32_t N = 16;  /// Number of intervals to divide the integration interval.
+    std::int32_t N =
+        16;  /// Number of intervals to divide the integration interval.
     /// MUST BE EVEN
     double a = 1, b = 3;  /// Starting and ending point of the integration in
     /// the real axis
