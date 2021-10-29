@@ -13,9 +13,9 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Knight&#39;s tour algorithm">
-<polygon fill="#bfbfbf" stroke="black" points="8.5,-56.5 8.5,-86.5 110.5,-86.5 110.5,-56.5 8.5,-56.5"/>
-<text text-anchor="start" x="16.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking/knight</text>
-<text text-anchor="middle" x="59.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">_tour.cpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-56.5 0.5,-86.5 102.5,-86.5 102.5,-56.5 0.5,-56.5"/>
+<text text-anchor="start" x="8.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">backtracking/knight</text>
+<text text-anchor="middle" x="51.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">_tour.cpp</text>
 </a>
 </g>
 </g>
@@ -23,31 +23,31 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-19.5 55,-19.5 55,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="27.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
+<polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-19.5 39,-19.5 39,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="19.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M51.92,-56.4C47.46,-48.11 41.78,-37.55 37.02,-28.71"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="39.98,-26.81 32.16,-19.66 33.81,-30.12 39.98,-26.81"/>
+<path fill="none" stroke="midnightblue" d="M43.92,-56.4C39.46,-48.11 33.78,-37.55 29.02,-28.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="31.98,-26.81 24.16,-19.66 25.81,-30.12 31.98,-26.81"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="73,-0.5 73,-19.5 112,-19.5 112,-0.5 73,-0.5"/>
-<text text-anchor="middle" x="92.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
+<polygon fill="white" stroke="#bfbfbf" points="57,-0.5 57,-19.5 112,-19.5 112,-0.5 57,-0.5"/>
+<text text-anchor="middle" x="84.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M67.32,-56.4C71.97,-48.02 77.9,-37.33 82.84,-28.42"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="85.91,-30.1 87.7,-19.66 79.79,-26.71 85.91,-30.1"/>
+<path fill="none" stroke="midnightblue" d="M59.32,-56.4C63.97,-48.02 69.9,-37.33 74.84,-28.42"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="77.91,-30.1 79.7,-19.66 71.79,-26.71 77.91,-30.1"/>
 </g>
 </g>
 </svg>

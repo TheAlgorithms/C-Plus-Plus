@@ -100,28 +100,30 @@ $(document).ready(function(){initNavTree('df/dfb/minimax_8cpp.html','../../'); i
 <p>returns which is the longest/shortest number using <a href="https://en.wikipedia.org/wiki/Minimax" target="_blank">minimax</a> algorithm  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;array&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for minimax.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d36/minimax_8cpp__incl.svg" width="346" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d36/minimax_8cpp__incl.svg" width="347" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:db/dc0/namespacebacktracking"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
-<tr class="memdesc:db/dc0/namespacebacktracking"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backtracking algorithms. <br /></td></tr>
+<tr class="memdesc:db/dc0/namespacebacktracking"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplParams" colspan="2">template&lt;size_t T&gt; </td></tr>
 <tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a> (int depth, int node_index, bool is_max, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, T &gt; &amp;scores, double <a class="el" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>)</td></tr>
+<tr class="memdesc:a78540bcb5ef3473b2348cbc34748ec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which is the maximum/minimum number in the array.  <a href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">More...</a><br /></td></tr>
 <tr class="separator:a78540bcb5ef3473b2348cbc34748ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/minimax_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="../../df/dfb/minimax_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -146,20 +148,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Main function </p>
-<div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>           {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 8&gt;</a> scores = {90, 23, 6, 33, 21, 65, 123, 34423};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a> = log2(scores.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>());</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Optimal value: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a>(0, 0, <span class="keyword">true</span>, scores, <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>              &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>           {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 8&gt;</a> scores = {90, 23, 6, 33, 21, 65, 123, 34423};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a> = log2(scores.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>());</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Optimal value: &quot;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>              &lt;&lt; <a class="code hl_function" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a>(0, 0, <span class="keyword">true</span>, scores, <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition:</b> avltree.cpp:31</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacebacktracking_html_a78540bcb5ef3473b2348cbc34748ec50"><div class="ttname"><a href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a></div><div class="ttdeci">int minimax(int depth, int node_index, bool is_max, const std::array&lt; int, T &gt; &amp;scores, double height)</div><div class="ttdef"><b>Definition:</b> minimax.cpp:38</div></div>
+<div class="ttc" id="anamespacebacktracking_html_a78540bcb5ef3473b2348cbc34748ec50"><div class="ttname"><a href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a></div><div class="ttdeci">int minimax(int depth, int node_index, bool is_max, const std::array&lt; int, T &gt; &amp;scores, double height)</div><div class="ttdoc">Check which is the maximum/minimum number in the array.</div><div class="ttdef"><b>Definition:</b> minimax.cpp:39</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array/size.html">std::array::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

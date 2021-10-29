@@ -1,4 +1,4 @@
 <map id="backtracking::n_queens_all_solutions::PrintSol" name="backtracking::n_queens_all_solutions::PrintSol">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node1" title="Utility function to print matrix." alt="" coords="5,5,168,47"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="216,13,288,39"/>
 </map>

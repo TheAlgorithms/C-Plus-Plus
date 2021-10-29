@@ -1,5 +1,5 @@
 <map id="backtracking::minimax" name="backtracking::minimax">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,159,83"/>
+<area shape="rect" id="node1" title="Check which is the maximum/minimum number in the array." alt="" coords="5,56,159,83"/>
 <area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="213,5,272,32"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="207,56,279,83"/>
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="208,107,277,133"/>

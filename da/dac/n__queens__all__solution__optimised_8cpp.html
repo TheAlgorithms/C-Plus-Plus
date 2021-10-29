@@ -111,7 +111,7 @@ Include dependency graph for n_queens_all_solution_optimised.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:db/dc0/namespacebacktracking"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html">backtracking</a></td></tr>
-<tr class="memdesc:db/dc0/namespacebacktracking"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backtracking algorithms. <br /></td></tr>
+<tr class="memdesc:db/dc0/namespacebacktracking"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d8/d14/namespacen__queens__optimized"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/namespacen__queens__optimized.html">n_queens_optimized</a></td></tr>
 <tr class="memdesc:d8/d14/namespacen__queens__optimized"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" target="_blank">Eight Queens</a> puzzle optimized. <br /></td></tr>
@@ -244,7 +244,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::array&lt;int, n&gt;</a>, n&gt; board{};</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span> (n % 2 == 0) {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= n / 2 - 1; i++) {  <span class="comment">// 😎</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= n / 2 - 1; i++) {</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">if</span> (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                board[i][0] = 1;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <a class="code hl_function" href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a>(board, 1);</div>
@@ -252,7 +252,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= n / 2; i++) {  <span class="comment">// 😏</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= n / 2; i++) {</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span> (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                board[i][0] = 1;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <a class="code hl_function" href="../../da/dac/n__queens__all__solution__optimised_8cpp.html#a23c0547e4fd1708e6fb643b08327a60f">backtracking::n_queens_optimized::NQueenSol</a>(board, 1);</div>

@@ -22,8 +22,8 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="9.5,-0.5 9.5,-19.5 64.5,-19.5 64.5,-0.5 9.5,-0.5"/>
-<text text-anchor="middle" x="37" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
+<polygon fill="white" stroke="#bfbfbf" points="17.5,-0.5 17.5,-19.5 56.5,-19.5 56.5,-0.5 17.5,-0.5"/>
+<text text-anchor="middle" x="37" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
 </a>
 </g>
 </g>
@@ -37,8 +37,8 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="82.5,-0.5 82.5,-19.5 121.5,-19.5 121.5,-0.5 82.5,-0.5"/>
-<text text-anchor="middle" x="102" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">array</text>
+<polygon fill="white" stroke="#bfbfbf" points="74.5,-0.5 74.5,-19.5 129.5,-19.5 129.5,-0.5 74.5,-0.5"/>
+<text text-anchor="middle" x="102" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
