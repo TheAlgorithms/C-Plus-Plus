@@ -47,7 +47,7 @@ struct tuple<T, T2> {
  */
 template <size_t index, typename T, typename ... TRest>
 constexpr auto get(tuple<T, TRest...> tp) {
-  if constexpr(index == 0) return tp.val;
+  if constexpr(index == 0) { return tp.val; }
   else if constexpr(!tp.has_next) {
     if constexpr(index != 1) throw std::runtime_error("Invalid index");
     return tp.rest;
@@ -55,8 +55,8 @@ constexpr auto get(tuple<T, TRest...> tp) {
   else return get<index - 1>(tp.rest);
 }
 
-} // namespace data_structures
 } // namespace tuple
+} // namespace data_structures
 
 /**
  * @brief Self-test implementations
@@ -64,16 +64,15 @@ constexpr auto get(tuple<T, TRest...> tp) {
  */
 static void test() {
     using data_structures::tuple::tuple;
-    using data_structures::tuple::get;
 
     tuple<int, float, char> tp(7, 0.5f, 'a');
 
-    assert(get<0>(tp) == 7);
-    assert(get<1>(tp) == 0.5f);
-    assert(get<2>(tp) == 'a');
+    assert(data_structures::tuple::get<0>(tp) == 7);
+    assert(data_structures::tuple::get<1>(tp) == 0.5f);
+    assert(data_structures::tuple::get<2>(tp) == 'a');
 
     try {
-      get<3>(tp);
+	    data_structures::tuple::get<3>(tp);
       assert("Invalid index not caught" && false);
     }
     catch(std::runtime_error) {}
