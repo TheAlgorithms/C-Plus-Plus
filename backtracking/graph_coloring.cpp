@@ -22,6 +22,8 @@
 #include <vector>
 
 /**
+better use 
+using namespace std;
  * @namespace
  * @brief Backtracking algorithms
  */
