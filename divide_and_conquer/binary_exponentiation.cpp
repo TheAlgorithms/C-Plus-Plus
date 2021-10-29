@@ -1,6 +1,8 @@
 /**
  * @file
- * @brief Implementation of the [Binary Exponentiation (divide-and-conquer)](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) algorithm
+ * @brief Implementation of the [Binary Exponentiation
+ * (divide-and-conquer)](https://en.wikipedia.org/wiki/Exponentiation_by_squaring)
+ * algorithm
  * @author [jay-tux](github.com/jay-tux)
  * Computes base ^ exp by dividing exp by two while squaring base (reducing the
  * amount of multiplications).
@@ -19,7 +21,9 @@
 namespace divide_and_conquer {
 /**
  * @namespace binary_exponentiation
- * @brief Implementation of the [Binary Exponentiation](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) algorithm using bitshifts
+ * @brief Implementation of the [Binary
+ * Exponentiation](https://en.wikipedia.org/wiki/Exponentiation_by_squaring)
+ * algorithm using bitshifts
  */
 namespace binary_exponentiation {
 /**
