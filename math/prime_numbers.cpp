@@ -12,11 +12,12 @@
 std::vector<int> primes(int max) {
     std::vector<int> res;
     std::vector<bool> is_not_prime(max+1, false);
-    for (int i = 2; i <= max; i++) {
+    for (size_t i = 2; i <= max; i++) {
         if (!is_not_prime[i]) res.emplace_back(i);
         for(int p: res) {
-            if (i*p > max) break;
-            is_not_prime[i*p] = true;
+            size_t k = i*p;
+            if (k > max) break;
+            is_not_prime[k] = true;
             if (i%p == 0) break;
         }
     }
