@@ -10,13 +10,14 @@
  * and store in a list
  */
 std::vector<int> primes(int max) {
-    max++;
     std::vector<int> res;
-    std::vector<bool> numbers(max, false);
-    for (int i = 2; i < max; i++) {
-        if (!numbers[i]) {
-            for (int j = i; j < max; j += i) numbers[j] = true;
-            res.push_back(i);
+    std::vector<bool> is_not_prime(max+1, false);
+    for (int i = 2; i <= max; i++) {
+        if (!is_not_prime[i]) res.emplace_back(i);
+        for(int p: res) {
+            if (i*p > max) break;
+            is_not_prime[i*p] = true;
+            if (i%p == 0) break;
         }
     }
     return res;
@@ -25,9 +26,9 @@ std::vector<int> primes(int max) {
 /** main function */
 int main() {
     std::cout << "Calculate primes up to:\n>> ";
-    int n;
+    int n = 0;
     std::cin >> n;
     std::vector<int> ans = primes(n);
-    for (int i = 0; i < ans.size(); i++) std::cout << ans[i] << ' ';
+    for(int p: ans) std::cout << p << ' ';
     std::cout << std::endl;
 }
