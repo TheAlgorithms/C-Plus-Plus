@@ -23,7 +23,7 @@
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
 #include <iostream>    /// for IO operations
-#include <stdint>      /// for integer allocation
+#include <cstdint>      /// for integer allocation
 #include <map>         /// for std::map container
 
 /**
