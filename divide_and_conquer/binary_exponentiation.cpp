@@ -86,6 +86,7 @@ static void test() {
             assert(res == stdlib);  // a^b = a^b
         }
     }
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
