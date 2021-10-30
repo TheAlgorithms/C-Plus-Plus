@@ -8,12 +8,12 @@
  * amount of multiplications).
  */
 
-#include <iostream> /// for IO operations
-#include <cassert>  /// for assert
-#include <cmath>    /// for powl
-#include <cstdint>  /// for uint64_t
-#include <cstdlib>  /// for srand, rand
-#include <ctime>    /// for time
+#include <cassert>   /// for assert
+#include <cmath>     /// for powl
+#include <cstdint>   /// for uint64_t
+#include <cstdlib>   /// for srand, rand
+#include <ctime>     /// for time
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace divide_and_conquer
