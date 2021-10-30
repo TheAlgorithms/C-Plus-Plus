@@ -9,7 +9,7 @@
 /** Generate an increasingly large number of primes
  * and store in a list
  */
-std::vector<int> primes(int max) {
+std::vector<int> primes(size_t max) {
     std::vector<int> res;
     std::vector<bool> is_not_prime(max + 1, false);
     for (size_t i = 2; i <= max; i++) {
