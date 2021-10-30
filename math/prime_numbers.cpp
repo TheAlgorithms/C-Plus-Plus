@@ -13,15 +13,18 @@ std::vector<int> primes(size_t max) {
     std::vector<int> res;
     std::vector<bool> is_not_prime(max + 1, false);
     for (size_t i = 2; i <= max; i++) {
-        if (!is_not_prime[i])
+        if (!is_not_prime[i]) {
             res.emplace_back(i);
+        }
         for (int p : res) {
             size_t k = i * p;
-            if (k > max)
+            if (k > max) {
                 break;
+            }
             is_not_prime[k] = true;
-            if (i % p == 0)
+            if (i % p == 0) {
                 break;
+            }
         }
     }
     return res;
