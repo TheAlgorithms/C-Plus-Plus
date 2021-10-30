@@ -8,6 +8,7 @@
  * amount of multiplications).
  */
 
+#include <iostream> /// for IO operations
 #include <cassert>  /// for assert
 #include <cmath>    /// for powl
 #include <cstdint>  /// for uint64_t
