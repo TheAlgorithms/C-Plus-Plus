@@ -21,7 +21,8 @@ namespace operations_on_datastructures {
 
 /**
  * @namespace circular_linked_list
- * @brief Functions for the [Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) implementation
+ * @brief Functions for the [Circular Linked
+ * List](https://www.geeksforgeeks.org/circular-linked-list/) implementation
  */
 namespace circular_linked_list {
 
