@@ -58,7 +58,7 @@ double midpoint(const std::int32_t N, const double h, const double a,
     // Create the data table
     // Loop from x0 to xN-1
     double temp = NAN;
-    for (std::uint8_t i = 0; i < N; i++) {
+    for (std::int32_t i = 0; i < N; i++) {
         temp = func(xi + h / 2);  // find f(xi+h/2)
         data_table.insert(
             std::pair<std::int32_t, double>(i, temp));  // add i and f(xi)
@@ -68,7 +68,7 @@ double midpoint(const std::int32_t N, const double h, const double a,
     // Evaluate the integral.
     // Remember: {f(x0+h/2) + f(x1+h/2) + ... + f(xN-1+h/2)}
     double evaluate_integral = 0;
-    for (std::uint8_t i = 0; i < N; i++) evaluate_integral += data_table.at(i);
+    for (std::int32_t i = 0; i < N; i++) evaluate_integral += data_table.at(i);
 
     // Multiply by the coefficient h
     evaluate_integral *= h;
