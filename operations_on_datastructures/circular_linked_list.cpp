@@ -1,8 +1,7 @@
 /**
  * @file
- * @brief Implementation for the [Union of two sorted
- * Arrays](https://en.wikipedia.org/wiki/Union_(set_theory))
- * algorithm.
+ * @brief Implementation for a [Circular Linked
+ * List](https://www.geeksforgeeks.org/circular-linked-list/).
  * @details The Union of two arrays is the collection of all the unique elements
  * in the first array, combined with all of the unique elements of a second
  * array. This implementation uses ordered arrays, and an algorithm to correctly
@@ -48,12 +47,18 @@ struct Node {
     }
 };
 
+/**
+ * @brief A class that implements a Circular Linked List.
+ */
 class CircularLinkedList {
  private:
     Node* root;  ///< Pointer to the root node
     Node* end;   ///< Pointer to the last node
 
  public:
+    /**
+     * @brief Creates an empty CircularLinkedList.
+     */
     CircularLinkedList() {
         root = nullptr;
         end = nullptr;
