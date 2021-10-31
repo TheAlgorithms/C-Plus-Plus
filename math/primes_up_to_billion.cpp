@@ -23,7 +23,7 @@ void Sieve(int64_t n) {
 
 /** Main function */
 int main() {
-	prime.set();  // intitize '1' to every index
+    prime.set();  // intitize '1' to every index
     Sieve(100000000);
     int64_t n;
     std::cin >> n;  // 10006187
