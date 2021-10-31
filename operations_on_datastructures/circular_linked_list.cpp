@@ -70,7 +70,7 @@ class CircularLinkedList {
      * @param values The vector of integer values that is to be inserted
      * @returns void
      */
-    void insert(std::vector<int64_t> values) {
+    void insert(const std::vector<int64_t>& values) {
         for (int64_t value : values) {
             insert(value);
         }
