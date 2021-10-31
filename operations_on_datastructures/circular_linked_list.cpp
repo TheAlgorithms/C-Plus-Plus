@@ -68,6 +68,20 @@ class CircularLinkedList {
         end = nullptr;
     }
     /**
+     * @brief Cleans up memory
+     */
+    ~CircularLinkedList() {
+        if (root == nullptr) {
+            return;
+        }
+        Node* node = root;
+        do {
+            Node* temp = node;
+            node = node->next;
+            delete (temp);
+        } while (node != root);
+    }
+    /**
      * @brief Inserts all the values from a vector into the Circular Linked List
      * @details Goes through each element in the vector sequentially, inserting
      * it into the list
@@ -238,6 +252,7 @@ void test4() {
     a.insert(start);
     assert(a.values(start) == res);
     a.print(start);
+    delete (start);  ///< Free memory of the Node
     std::cout << "TEST PASSED!\n\n";
 }
 
