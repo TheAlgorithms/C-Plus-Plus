@@ -167,7 +167,7 @@ class CircularLinkedList {
 
 /**
  * @namespace tests
- * @brief Testcases to check Circular Linkedd List.
+ * @brief Testcases to check Circular Linked List.
  */
 namespace tests {
 using operations_on_datastructures::circular_linked_list::CircularLinkedList;
