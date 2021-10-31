@@ -1,10 +1,3 @@
-#include <iostream> /// for IO operations
-#include <cmath> /// for math functions
-#include <cassert> /// for assert
-#include <cstdlib> /// for std::atof
-#include <functional> /// for std::function
-#include <map> /// for std::map container
-
 /**
  * @file
  * @brief Implementation of the Composite Simpson Rule for the approximation
@@ -37,6 +30,14 @@
  *
 */
 
+#include <iostream>      /// for IO operations
+#include <cmath>        /// for math functions
+#include <cassert>      /// for assert
+#include <cstdlib>      /// for std::atof
+#include <functional>   /// for std::function
+#include <map>          /// for std::map container
+
+
 /**
  * @namespace numerical_methods
  * @brief Numerical algorithms/methods
@@ -46,19 +47,17 @@ namespace numerical_methods {
  * @namespace simpson_method
  * @brief Contains the Simpson's method implementation
 */
-    namespace simpson_method {
+namespace simpson_method {
 /**
  * @fn double evaluate_by_simpson(int N, double h, double a, std::function<double (double)> func)
  * @brief Calculate integral or assert if integral is not a number (Nan)
- * @param N: number of intervals
- * @param h: step
- * @param a: x0
+ * @param N number of intervals
+ * @param h step
+ * @param a x0
  * @param func: choose the function that will be evaluated
  * @returns the result of the integration
 */
-        double evaluate_by_simpson(int N, double h, double a, std::function<double(double)> func);
-    } // namespace simpson_method
-} // namespace numerical_methods
+double evaluate_by_simpson(int N, double h, double a, std::function<double(double)> func);
 
 /**
  * @fn double f(double x)
@@ -81,6 +80,8 @@ double k(double x){
 double l(double x){
     return x + std::log(2*x+1);
 }
+}  // namespace simpson_method
+}  // namespace numerical_methods
 
 /**
  * \brief Self-test implementations
@@ -110,6 +111,12 @@ static void test(int N, double h, double a,double b, bool used_argv_parameters){
 
 }
 
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char** argv){
     int N = 16; /// Number of intervals to divide the integration interval. MUST BE EVEN
     double a = 1, b = 3; /// Starting and ending point of the integration in the real axis
