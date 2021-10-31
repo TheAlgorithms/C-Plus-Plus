@@ -128,6 +128,7 @@ int32_t list::top() {
     } catch (const std::exception &e) {
         std::cerr << "List is empty" << e.what() << '\n';
     }
+    return 0;
 }
 /**
  *  @brief Utility function to find the last element of the list
@@ -145,6 +146,7 @@ int32_t list::last() {
     } catch (const std::exception &e) {
         std::cerr << "List is empty" << e.what() << '\n';
     }
+    return 0;
 }
 /**
  *  @brief Utility function to find the i th element of the list
@@ -165,6 +167,7 @@ int32_t list::traverse(int index) {
     /* if we get to this line,the caller was asking for a non-existent element
     so we assert fail */
     assert(0);
+    return 0;
 }
 
 }  // namespace linked_list
