@@ -252,7 +252,6 @@ void test4() {
     a.insert(start);
     assert(a.values(start) == res);
     a.print(start);
-    delete (start);  ///< Free memory of the Node
     std::cout << "TEST PASSED!\n\n";
 }
 
