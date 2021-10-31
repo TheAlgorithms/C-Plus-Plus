@@ -1,6 +1,7 @@
 // C++ program to Implement a stack
 //using singly linked list
-#include <bits/stdc++.h>
+#include <iostream>
+#include <stack>
 using namespace std;
 
 // Declare linked list node
