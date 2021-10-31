@@ -124,6 +124,7 @@
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hamiltons_cycle.cpp)
   * [Hopcroft Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/hopcroft_karp.cpp)
   * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite.cpp)
+  * [Is Graph Bipartite2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/is_graph_bipartite2.cpp)
   * [Kosaraju](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kosaraju.cpp)
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
   * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
