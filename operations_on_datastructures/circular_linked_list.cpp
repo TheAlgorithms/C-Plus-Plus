@@ -34,6 +34,7 @@ struct Node {
     Node* next;    ///< The Node's successor
     /**
      * @brief Creates a new Node with some initial data
+     * @param _data Value of Node
      */
     explicit Node(int64_t _data) {
         data = _data;    ///< Set value of Node data
@@ -41,6 +42,8 @@ struct Node {
     }
     /**
      * @brief Creates a new Node with initial data and a successor
+     * @param _data Value of Node
+     * @param _next Pointer to the next Node
      */
     explicit Node(int64_t _data, Node* _next) {
         data = _data;  ///< Set value of Node data
