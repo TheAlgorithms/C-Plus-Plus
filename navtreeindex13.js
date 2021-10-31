@@ -31,7 +31,7 @@ var NAVTREEINDEX13 =
 "de/d88/travelling__salesman__problem_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,8,11,0],
 "de/d95/namespace_subsets.html":[9,0,105],
 "de/d9b/prime__numbers_8cpp.html":[11,0,14,42],
-"de/d9b/prime__numbers_8cpp.html#a541b9728fd1db77516fee913763da90e":[11,0,14,42,1],
+"de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a":[11,0,14,42,1],
 "de/d9b/prime__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,42,0],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html":[10,0,1,0,0],
 "de/d9d/classdata__structures_1_1linked__list_1_1link.html":[9,0,18,0,0],

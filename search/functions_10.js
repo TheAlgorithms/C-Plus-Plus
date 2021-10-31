@@ -57,7 +57,7 @@ var searchData=
   ['prev_54',['prev',['http://en.cppreference.com/w/cpp/iterator/prev.html',0,'std']]],
   ['prev_5fpermutation_55',['prev_permutation',['http://en.cppreference.com/w/cpp/algorithm/prev_permutation.html',0,'std']]],
   ['prime_5ffactorization_56',['prime_factorization',['../db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46',1,'prime_factorization.cpp']]],
-  ['primes_57',['primes',['../de/d9b/prime__numbers_8cpp.html#a541b9728fd1db77516fee913763da90e',1,'prime_numbers.cpp']]],
+  ['primes_57',['primes',['../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a',1,'prime_numbers.cpp']]],
   ['print_58',['print',['../da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20',1,'operations_on_datastructures::print()'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9',1,'print():&#160;sieve_of_eratosthenes.cpp']]],
   ['print_59',['Print',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165',1,'data_structures::tree_234::Tree234']]],
   ['print_60',['print',['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a5cf972a2c994a4fa1a89fc77bd5ad503',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree']]],

@@ -96,7 +96,7 @@ var searchData=
   ['prime_5ffactorization_2ecpp_93',['prime_factorization.cpp',['../db/d0d/prime__factorization_8cpp.html',1,'']]],
   ['prime_5fnumbers_94',['prime_numbers',['../db/d0d/prime__factorization_8cpp.html#af097796783684712b8326e5b82bfd4fe',1,'prime_factorization.cpp']]],
   ['prime_5fnumbers_2ecpp_95',['prime_numbers.cpp',['../de/d9b/prime__numbers_8cpp.html',1,'']]],
-  ['primes_96',['primes',['../de/d9b/prime__numbers_8cpp.html#a541b9728fd1db77516fee913763da90e',1,'prime_numbers.cpp']]],
+  ['primes_96',['primes',['../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a',1,'prime_numbers.cpp']]],
   ['primes_5fup_5fto_5fbillion_2ecpp_97',['primes_up_to_billion.cpp',['../d4/d9c/primes__up__to__billion_8cpp.html',1,'']]],
   ['print_98',['Print',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165',1,'data_structures::tree_234::Tree234']]],
   ['print_99',['print',['../da/d6d/namespaceoperations__on__datastructures.html#a6109193567a5b7e36a27f2b4865fce20',1,'operations_on_datastructures::print()'],['../d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9',1,'print():&#160;sieve_of_eratosthenes.cpp'],['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a5cf972a2c994a4fa1a89fc77bd5ad503',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree::print()']]],
