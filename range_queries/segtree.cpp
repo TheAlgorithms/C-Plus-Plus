@@ -144,7 +144,7 @@ void update(std::vector<int64_t> *segtree, std::vector<int64_t> *lazy,
  * @returns void
  */
 static void test() {
-    int64_t max = static_cast<int64_t>(2 * pow(2, ceil(log2(7))) - 1);
+    auto max = static_cast<int64_t>(2 * pow(2, ceil(log2(7))) - 1);
     assert(max == 15);
 
     std::vector<int64_t> arr{1, 2, 3, 4, 5, 6, 7}, lazy(max), segtree(max);
@@ -172,7 +172,7 @@ int main() {
     uint64_t n = 0;
     std::cin >> n;
 
-    uint64_t max = static_cast<uint64_t>(2 * pow(2, ceil(log2(n))) - 1);
+    auto max = static_cast<uint64_t>(2 * pow(2, ceil(log2(n))) - 1);
     std::vector<int64_t> arr(n), lazy(max), segtree(max);
 
     int choice = 0;
