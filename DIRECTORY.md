@@ -230,6 +230,7 @@
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
+  * [Midpoint Integral Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/midpoint_integral_method.cpp)
   * [Newton Raphson Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/newton_raphson_method.cpp)
   * [Ode Forward Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_forward_euler.cpp)
   * [Ode Midpoint Euler](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/ode_midpoint_euler.cpp)
