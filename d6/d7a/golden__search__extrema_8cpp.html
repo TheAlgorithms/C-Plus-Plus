@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        c = lim_b - ratio;  <span class="comment">// right-side section start</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        d = lim_a + ratio;  <span class="comment">// left-side section end</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (f(c) &lt; f(d)) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">f</a>(c) &lt; <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">f</a>(d)) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">// select left section</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            lim_b = d;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        } <span class="keywordflow">else</span> {</div>
@@ -235,6 +235,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="agolden__search__extrema_8cpp_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="../../d6/d7a/golden__search__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdoc">solution accuracy limit</div><div class="ttdef"><b>Definition:</b> golden_search_extrema.cpp:17</div></div>
 <div class="ttc" id="ainfinity_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/numeric_limits/infinity.html">std::numeric_limits::infinity</a></div><div class="ttdeci">T infinity(T... args)</div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_a7ee8e824ef3e138a9a21883b26d97226"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">numerical_methods::midpoint_rule::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:90</div></div>
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

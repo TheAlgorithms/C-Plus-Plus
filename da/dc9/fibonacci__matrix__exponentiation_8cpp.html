@@ -178,9 +178,9 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;k&lt;2;k++)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>&lt;2;<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            res[i][j]=(res[i][j]%mod+((Identity[i][k]%mod*transition[k][j]%mod))%mod)%mod;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            res[i][j]=(res[i][j]%mod+((Identity[i][<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>]%mod*transition[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>][j]%mod))%mod)%mod;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
@@ -199,9 +199,9 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;2;j++)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;k&lt;2;k++)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>&lt;2;<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        res1[i][j]=(res1[i][j]%mod+((transition[i][k]%mod*transition[k][j]%mod))%mod)%mod;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        res1[i][j]=(res1[i][j]%mod+((transition[i][<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>]%mod*transition[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>][j]%mod))%mod)%mod;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
@@ -218,6 +218,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> ((result[0]%mod*Identity[0][0]%mod)%mod+(<a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[1]%mod*Identity[1][0]%mod)%mod)%mod;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae9f66040f8e0ba73c1c741261c22a52a"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">numerical_methods::midpoint_rule::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">A function k(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:103</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>

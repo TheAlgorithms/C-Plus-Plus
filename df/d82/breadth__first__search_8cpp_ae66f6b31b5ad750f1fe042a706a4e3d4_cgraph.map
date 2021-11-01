@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,89,56,116"/>
-<area shape="rect" id="node2" href="$dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19" title=" " alt="" coords="203,19,369,45"/>
-<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981" title=" " alt="" coords="209,74,363,115"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="250,148,322,175"/>
-<area shape="rect" id="node9" href="$df/d82/breadth__first__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title=" " alt="" coords="104,64,155,91"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="417,5,545,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="422,56,541,83"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="425,107,538,133"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="421,157,541,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="250,5,322,32"/>
+<area shape="rect" id="node3" href="$df/d82/breadth__first__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title=" " alt="" coords="104,56,155,83"/>
+<area shape="rect" id="node4" href="$dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19" title=" " alt="" coords="203,56,369,83"/>
+<area shape="rect" id="node5" href="$dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981" title=" " alt="" coords="209,107,363,149"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="417,39,545,65"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="422,89,541,116"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="425,140,538,167"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="421,191,541,217"/>
 </map>

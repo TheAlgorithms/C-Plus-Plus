@@ -355,12 +355,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; R1; i++) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; C2; j++) {</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            OUT[0][i][j] = 0.f;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; C1; k++) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                OUT[0][i][j] += A[i][k] * B[k][j];</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a> &lt; C1; <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                OUT[0][i][j] += A[i][<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>] * B[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>][j];</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae9f66040f8e0ba73c1c741261c22a52a"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">numerical_methods::midpoint_rule::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">A function k(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:103</div></div>
 <div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>
 </div><!-- fragment -->
 </div>

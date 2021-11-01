@@ -369,7 +369,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// First insert the new key at the end</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>++;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = k;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Fix the min heap property if it is violated</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
@@ -378,6 +378,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae9f66040f8e0ba73c1c741261c22a52a"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">numerical_methods::midpoint_rule::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">A function k(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:103</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -433,11 +434,11 @@ Here is the call graph for this function:</div>
 <p >to heapify a subtree with the root at given index</p>
 <p >A recursive method to heapify a subtree with the root at given index This method assumes that the subtrees are already heapified </p>
 <div class="fragment"><div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                              {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">int</span> l = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">int</span> r = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">right</a>(i);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">int</span> smallest = i;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (l &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[l] &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i])</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        smallest = l;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        smallest = <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">if</span> (r &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[r] &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest])</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        smallest = r;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">if</span> (smallest != i) {</div>
@@ -447,6 +448,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 <div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:31</div></div>
 <div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:34</div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_ad53616fb4fa6880ae876bcba53365c51"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">numerical_methods::midpoint_rule::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">A function l(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:109</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

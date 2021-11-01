@@ -1,11 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,163,56,190"/>
-<area shape="rect" id="node2" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#abf7c97616b873ffeebdd0eac2d19d13e" title=" " alt="" coords="104,5,260,47"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="146,71,218,98"/>
-<area shape="rect" id="node5" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a1fb1792ab867dc26639eef368a56989e" title=" " alt="" coords="104,253,260,295"/>
-<area shape="rect" id="node7" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ad585670a392c7e842c992d088093dff5" title=" " alt="" coords="104,123,260,164"/>
-<area shape="rect" id="node8" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a098be172c737f236763afdb8cada4835" title=" " alt="" coords="104,188,260,229"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="148,319,216,346"/>
-<area shape="rect" id="node3" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" title="Utility function that checks if the list is empty." alt="" coords="308,156,464,197"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/reset.html#" title=" " alt="" coords="312,261,460,287"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="104,5,176,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stol.html#" title=" " alt="" coords="106,56,174,83"/>
 </map>

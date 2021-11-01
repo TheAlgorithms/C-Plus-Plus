@@ -227,7 +227,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">double</span> v = lim_a + M_GOLDEN_RATIO * (lim_b - lim_a);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">double</span> u, w = v, x = v;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">double</span> fu, fv = f(v);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">double</span> fu, fv = <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">f</a>(v);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">double</span> fw = fv, fx = fv;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">double</span> mid_point = (lim_a + lim_b) / 2.f;</div>
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            u = -tolerance;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        u += x;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        fu = f(u);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        fu = <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">f</a>(u);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">// update variables</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (fu &lt;= fx) {</div>
@@ -314,6 +314,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="abrent__method__extrema_8cpp_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="../../db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdoc">system accuracy limit</div><div class="ttdef"><b>Definition:</b> brent_method_extrema.cpp:23</div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_a7ee8e824ef3e138a9a21883b26d97226"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226">numerical_methods::midpoint_rule::f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:90</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

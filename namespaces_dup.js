@@ -146,6 +146,7 @@ var namespaces_dup =
     [ "MD5", "dd/d43/namespace_m_d5.html", null ],
     [ "median_search", "da/dd4/namespacemedian__search.html", null ],
     [ "merge_insertion", "de/d0a/namespacemerge__insertion.html", null ],
+    [ "midpoint_rule", "d9/daa/namespacemidpoint__rule.html", null ],
     [ "mincoins_topdown", "d5/db8/namespacemincoins__topdown.html", null ],
     [ "Minimum", "d4/d12/namespace_minimum.html", null ],
     [ "modular_division", "d1/d64/namespacemodular__division.html", null ],

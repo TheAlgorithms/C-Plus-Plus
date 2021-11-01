@@ -316,14 +316,14 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                                                             {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    uint32_t i = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* i --&gt; index of left sub-array */</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    uint32_t j = mid + 1;    <span class="comment">/* j --&gt; index for right sub-array */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    uint32_t k = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    uint32_t <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    uint32_t inv_count = 0;  <span class="comment">// inversion count</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">while</span> ((i &lt;= mid) &amp;&amp; (j &lt;= right)) {</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (arr[i] &lt;= arr[j]) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            temp[k++] = arr[i++];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            temp[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++] = arr[i++];</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            temp[k++] = arr[j++];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            temp[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++] = arr[j++];</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            inv_count +=</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                (mid - i +</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                 1);  <span class="comment">// tricky; may vary depending on selection of sub-array</span></div>
@@ -331,18 +331,19 @@ template&lt;typename T &gt; </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// Add remaining elements from the larger subarray to the end of temp</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">while</span> (i &lt;= mid) {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        temp[k++] = arr[i++];</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        temp[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++] = arr[i++];</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">while</span> (j &lt;= right) {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        temp[k++] = arr[j++];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        temp[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++] = arr[j++];</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// Copy temp[] to arr[]</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">for</span> (k = left; k &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; k++) {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        arr[k] = temp[k];</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">for</span> (k = left; <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a> &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>++) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        arr[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>] = temp[<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">k</a>];</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> inv_count;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 <div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
+<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae9f66040f8e0ba73c1c741261c22a52a"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a">numerical_methods::midpoint_rule::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">A function k(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:103</div></div>
 </div><!-- fragment -->
 </div>
 </div>
