@@ -76,7 +76,7 @@
   * [Trie Using Hashmap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_using_hashmap.cpp)
 
 ## Divide And Conquer
-  * [Binary Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/binary_exponentiation.cpp)
+  * [Binary Exponentiation2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/binary_exponentiation2.cpp)
   * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
 
 ## Dynamic Programming
