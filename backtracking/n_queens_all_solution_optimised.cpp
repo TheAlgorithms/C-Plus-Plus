@@ -111,7 +111,7 @@ int main() {
     std::array<std::array<int, n>, n> board{};
 
     if (n % 2 == 0) {
-        for (int i = 0; i <= n / 2 - 1; i++) {  // 😎
+        for (int i = 0; i <= n / 2 - 1; i++) {
             if (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {
                 board[i][0] = 1;
                 backtracking::n_queens_optimized::NQueenSol(board, 1);
@@ -119,7 +119,7 @@ int main() {
             }
         }
     } else {
-        for (int i = 0; i <= n / 2; i++) {  // 😏
+        for (int i = 0; i <= n / 2; i++) {
             if (backtracking::n_queens_optimized::CanIMove(board, i, 0)) {
                 board[i][0] = 1;
                 backtracking::n_queens_optimized::NQueenSol(board, 1);
