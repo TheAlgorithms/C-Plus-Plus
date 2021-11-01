@@ -163,21 +163,21 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >An implementation for finding the <a href="https://www.youtube.com/watch?v=5cPbNCrdotA" target="_blank">Inorder successor of a binary search tree</a> Inorder successor of a node is the next node in Inorder traversal of the Binary Tree. Inorder Successor is NULL for the last node in Inorder traversal. </p>
-<h3><a class="anchor" id="autotoc_md82"></a>
+<h3><a class="anchor" id="autotoc_md87"></a>
 Case 1: The given node has the right node/subtree</h3>
 <pre class="fragment"> * In this case, the left-most deepest node in the right subtree will
 </pre><p> come just after the given node as we go to left deep in inorder.</p><ul>
 <li>Go deep to left most node in right subtree. OR, we can also say in case if BST, find the minimum of the subtree for a given node.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md83"></a>
+<h3><a class="anchor" id="autotoc_md88"></a>
 Case 2: The given node does not have a right node/subtree</h3>
-<h4><a class="anchor" id="autotoc_md84"></a>
+<h4><a class="anchor" id="autotoc_md89"></a>
 Method 1: Use parent pointer (store the address of parent nodes)</h4>
 <ul>
 <li>If a node does not have the right subtree, and we already visited the node itself, then the next node will be its parent node according to inorder traversal, and if we are going to parent from left, then the parent would be unvisited.</li>
 <li>In other words, go to the nearest ancestor for which given node would be in left subtree.</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md85"></a>
+<h4><a class="anchor" id="autotoc_md90"></a>
 Method 2: Search from the root node</h4>
 <ul>
 <li>In case if there is no link from a child node to the parent node, we need to walk down the tree starting from the root node to the given node, by doing so, we are visiting every ancestor of the given node.</li>

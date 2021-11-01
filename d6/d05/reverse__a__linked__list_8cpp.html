@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implementation of <a href="https://simple.wikipedia.org/wiki/Linked_list" target="_blank">Reversing a single linked list</a> </p>
 <p >The linked list is a data structure used for holding a sequence of values, which can be added, displayed, reversed, or removed. </p>
-<h3><a class="anchor" id="autotoc_md37"></a>
+<h3><a class="anchor" id="autotoc_md42"></a>
 Algorithm</h3>
 <p >Values can be added by iterating to the end of a list (by following the pointers) starting from the first link. Whichever link points to null is considered the last link and is pointed to the new value.</p>
 <p >Linked List can be reversed by using 3 pointers: current, previous, and next_node; we keep iterating until the last node. Meanwhile, before changing to the next of current, we store it in the next_node pointer, now we store the prev pointer in the current of next, this is where the actual reversal happens. And then we move the prev and current pointers one step forward. Then the head node is made to point to the last node (prev pointer) after completion of an iteration.</p>

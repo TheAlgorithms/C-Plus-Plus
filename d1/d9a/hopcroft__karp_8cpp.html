@@ -137,22 +137,22 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implementation of <a href="https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm" target="_blank">Hopcroft–Karp</a> algorithm. </p>
 <p >The Hopcroft–Karp algorithm is an algorithm that takes as input a bipartite graph and produces as output a maximum cardinality matching, it runs in O(E√V) time in worst case.</p>
-<h3><a class="anchor" id="autotoc_md70"></a>
+<h3><a class="anchor" id="autotoc_md75"></a>
 Bipartite graph</h3>
 <p >A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets U and V such that every edge connects a vertex in U to one in V. Vertex sets U and V are usually called the parts of the graph. Equivalently, a bipartite graph is a graph that does not contain any odd-length cycles.</p>
-<h3><a class="anchor" id="autotoc_md71"></a>
+<h3><a class="anchor" id="autotoc_md76"></a>
 Matching and Not-Matching edges</h3>
 <p >Given a matching M, edges that are part of matching are called Matching edges and edges that are not part of M (or connect free nodes) are called Not-Matching edges.</p>
-<h3><a class="anchor" id="autotoc_md72"></a>
+<h3><a class="anchor" id="autotoc_md77"></a>
 Maximum cardinality matching</h3>
 <p >Given a bipartite graphs G = ( V = ( X , Y ) , E ) whose partition has the parts X and Y, with E denoting the edges of the graph, the goal is to find a matching with as many edges as possible. Equivalently, a matching that covers as many vertices as possible.</p>
-<h3><a class="anchor" id="autotoc_md73"></a>
+<h3><a class="anchor" id="autotoc_md78"></a>
 Augmenting paths</h3>
 <p >Given a matching M, an augmenting path is an alternating path that starts from and ends on free vertices. All single edge paths that start and end with free vertices are augmenting paths.</p>
-<h3><a class="anchor" id="autotoc_md74"></a>
+<h3><a class="anchor" id="autotoc_md79"></a>
 Concept</h3>
 <p >A matching M is not maximum if there exists an augmenting path. It is also true other way, i.e, a matching is maximum if no augmenting path exists.</p>
-<h3><a class="anchor" id="autotoc_md75"></a>
+<h3><a class="anchor" id="autotoc_md80"></a>
 Algorithm</h3>
 <p >1) Initialize the Maximal Matching M as empty. 2) While there exists an Augmenting Path P Remove matching edges of P from M and add not-matching edges of P to M (This increases size of M by 1 as P starts and ends with a free vertex i.e. a node that is not part of matching.) 3) Return M.</p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Krishnapal4050" target="_blank">Krishna Pal Deora</a> </dd></dl>

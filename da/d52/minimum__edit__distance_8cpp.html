@@ -136,7 +136,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implementation of <a href="https://en.wikipedia.org/wiki/Edit_distance" target="_blank">Minimum Edit Distance</a> using Dynamic Programing. </p>
 <p >Given two strings str1 &amp; str2 and we have to calculate the minimum number of operations (Insert, Remove, Replace) required to convert str1 to str2.</p>
-<h3><a class="anchor" id="autotoc_md67"></a>
+<h3><a class="anchor" id="autotoc_md72"></a>
 Algorithm</h3>
 <p >We will solve this problem using Naive recursion. But as we are approaching with a DP solution. So, we will take a DP array to store the solution of all sub-problems so that we don't have to perform recursion again and again. Now to solve the problem, We can traverse all characters from either right side of the strings or left side. Suppose we will do it from the right side. So, there are two possibilities for every pair of characters being traversed.</p><ol type="1">
 <li>If the last characters of two strings are the same, Ignore the characters and get the count for the remaining string. So, we get the solution for lengths m-1 and n-1 in a DP array.</li>

@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <li>Store salted password</li>
 </ol>
 <p >However <a class="el" href="../../dd/d43/namespace_m_d5.html" title="Functions for the MD5 algorithm implementation.">MD5</a> has be know to be cryptographically weak for quite some time, yet it is still widely used. This weakness was exploited by the <a href="https://en.wikipedia.org/wiki/Flame_(malware)" target="_blank">Flame Malware</a> in 2012</p>
-<h3><a class="anchor" id="autotoc_md76"></a>
+<h3><a class="anchor" id="autotoc_md81"></a>
 Algorithm</h3>
 <p >First of all, all values are expected to be in <a href="https://en.wikipedia.org/wiki/Endianness" target="_blank">little endian</a>. This is especially important when using part of the bytestring as an integer.</p>
 <p >The first step of the algorithm is to pad the message for its length to be a multiple of 64 (bytes). This is done by first adding 0x80 (10000000) and then only zeroes until the last 8 bytes must be filled, where then the 64 bit size of the input will be added</p>

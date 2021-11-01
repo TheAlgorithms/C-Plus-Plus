@@ -93,15 +93,15 @@ $(document).ready(function(){initNavTree('d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.htm
   <div class="headertitle"><div class="title">CONTRIBUTION GUIDELINES </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md17"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md22"></a>
 Before contributing</h1>
 <p >Welcome to <a href="https://github.com/TheAlgorithms/C-Plus-Plus" target="_blank">TheAlgorithms/C-Plus-Plus</a>! Before submitting pull requests, please make sure that you have <b>read the whole guidelines</b>. If you have any doubts about this contribution guide, please open <a href="https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose" target="_blank">an issue</a> or ask in our <a href="https://discord.gg/c7MnfGFGa6" target="_blank">Discord server</a>, and clearly state your concerns.</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Contributing</h1>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Maintainer/reviewer</h2>
 <p ><b>Please check the <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/REVIEWER_CODE.md" target="_blank">reviewer code</a> file for maintainers and reviewers.</b></p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Contributor</h2>
 <p >Being a contributor at The Algorithms, we request you to follow the points mentioned below:</p>
 <ul>
@@ -116,9 +116,9 @@ Contributor</h2>
 <p >You can add new algorithms or data structures which are <b>not present in the repository</b> or that can <b>improve</b> the old implementations (<b>documentation</b>, <b>improving test cases</b>, removing bugs or in any other resonable sense)</p>
 <p ><b>Issues</b> Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.
 
-@subsection autotoc_md21 Making Changes
+@subsection autotoc_md26 Making Changes
 
-@subsubsection autotoc_md22 Code
+@subsubsection autotoc_md27 Code
 
 - Please use the directory structure of the repository.
 - Make sure the file extensions should be &lt;tt&gt;*.hpp&lt;/tt&gt;, &lt;tt&gt;*.h&lt;/tt&gt; or &lt;tt&gt;*.cpp&lt;/tt&gt;.
@@ -132,7 +132,7 @@ Contributor</h2>
 - Please conform to &lt;a href="<a href="https://www.doxygen.nl/manual/docblocks.html">https://www.doxygen.nl/manual/docblocks.html</a>" target="_blank" &gt;Doxygen&lt;/a&gt; standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
 - &lt;strong&gt;Be consistent in the use of these guidelines.&lt;/strong&gt;
 
-@subsubsection autotoc_md23 Documentation
+@subsubsection autotoc_md28 Documentation
 
 - Make sure you put useful comments in your code. Do not comment on obvious things.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure. If you want to create a new directory, then please check if a similar category has been recently suggested or created by other pull requests.
@@ -140,13 +140,13 @@ Contributor</h2>
 - Do not update &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md</a>" target="_blank" &gt;&lt;tt&gt;README.md&lt;/tt&gt;&lt;/a&gt; along with other changes. First, create an issue and then link to that issue in your pull request to suggest specific changes required to &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md</a>" target="_blank" &gt;&lt;tt&gt;README.md&lt;/tt&gt;&lt;/a&gt;.
 - The repository follows &lt;a href="<a href="https://www.doxygen.nl/manual/docblocks.html">https://www.doxygen.nl/manual/docblocks.html</a>" target="_blank" &gt;Doxygen&lt;/a&gt; standards and auto-generates the &lt;a href="<a href="https://thealgorithms.github.io/C-Plus-Plus">https://thealgorithms.github.io/C-Plus-Plus</a>" target="_blank" &gt;repository website&lt;/a&gt;. Please ensure the code is documented in this structure. A sample implementation is given below.
 
-@subsubsection autotoc_md24 Test
+@subsubsection autotoc_md29 Test
 
 - Make sure to add examples and test cases in your &lt;tt&gt;main()&lt;/tt&gt; function.
 - If you find an algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
 - Please try to add one or more &lt;tt&gt;test()&lt;/tt&gt; functions that will invoke the algorithm implementation on random test data with the expected output. Use the &lt;tt&gt;assert()&lt;/tt&gt; function to confirm that the tests will pass. Requires including the &lt;tt&gt;cassert&lt;/tt&gt; library.
 
-@subsubsection autotoc_md25 Typical structure of a program
+@subsubsection autotoc_md30 Typical structure of a program
 
 @code{cpp} 
 /**
@@ -223,7 +223,7 @@ int main(int argc, char *argv[]) {
 }
 @endcode
 
-@subsubsection autotoc_md26 New File Name guidelines
+@subsubsection autotoc_md31 New File Name guidelines
 
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as a separator
 - For instance
@@ -237,7 +237,7 @@ my_new_cpp_class.cpp    is correct format
 - File name validation will run on Docker to ensure validity.
 - If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if &lt;tt&gt;median_search.cpp&lt;/tt&gt; already exists in the &lt;tt&gt;search&lt;/tt&gt; folder, and you are contributing a new implementation, the filename should be &lt;tt&gt;median_search2.cpp&lt;/tt&gt; and for a third implementation, &lt;tt&gt;median_search3.cpp&lt;/tt&gt;.
 
-@subsubsection autotoc_md27 New Directory guidelines
+@subsubsection autotoc_md32 New Directory guidelines
 
 - We recommend adding files to existing directories as much as possible.
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as separator ( no spaces or &lt;tt&gt;"-"&lt;/tt&gt; allowed )
@@ -251,7 +251,7 @@ some_new_fancy_category         is correct
 - Filepaths will be used to dynamically create a directory of our algorithms.
 - Filepath validation will run on GitHub Actions to ensure compliance.
 
-@subsubsection autotoc_md28 Commit Guidelines
+@subsubsection autotoc_md33 Commit Guidelines
 
 - It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilled across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected.
 
@@ -276,11 +276,11 @@ Common prefixes:
 - docs: Documentation changes
 - test: Correct existing tests or add new ones
 
-@subsection autotoc_md29 Pull Requests
+@subsection autotoc_md34 Pull Requests
 
 - Checkout our &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md</a>" target="_blank" &gt;pull request template&lt;/a&gt;
 
-@subsubsection autotoc_md30 Building Locally
+@subsubsection autotoc_md35 Building Locally
 
 Before submitting a pull request,
  build the code locally or using the convenient &lt;a href="<a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus">https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus</a>" target="_blank" &gt;&lt;img src="<a href="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod">https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod</a>" alt="Gitpod Ready-to-Code"/&gt;&lt;/a&gt; service.
@@ -289,7 +289,7 @@ Before submitting a pull request,
 cmake -B build -S .
 @endcode
 
-@subsubsection autotoc_md31 Static Code Analyzer
+@subsubsection autotoc_md36 Static Code Analyzer
 
 We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://clang.llvm.org/extra/clang-tidy/</a>" target="_blank" &gt;&lt;tt&gt;clang-tidy&lt;/tt&gt;&lt;/a&gt; as a static code analyzer with a configuration in &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy</a>" target="_blank" &gt;&lt;tt&gt;.clang-tidy&lt;/tt&gt;&lt;/a&gt;.
 
@@ -297,7 +297,7 @@ We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://cl
 clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 @endcode
 
-@subsubsection autotoc_md32 Code Formatter
+@subsubsection autotoc_md37 Code Formatter
 
 &lt;a href="<a href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a>" target="_blank" &gt;&lt;tt&gt;__clang-format__&lt;/tt&gt;&lt;/a&gt; is used for code forrmating.
 
@@ -308,7 +308,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
   - Linux (Debian): &lt;tt&gt;sudo apt-get install clang-format-10 clang-tidy-10&lt;/tt&gt;
 - Running (all platforms): &lt;tt&gt;clang-format -i -style="file" my_file.cpp&lt;/tt&gt;
 
-@subsubsection autotoc_md33 GitHub Actions
+@subsubsection autotoc_md38 GitHub Actions
 
 - Enable GitHub Actions on your fork of the repository.
 After enabling, it will execute &lt;tt&gt;clang-tidy&lt;/tt&gt; and &lt;tt&gt;clang-format&lt;/tt&gt; after every push (not a commit).

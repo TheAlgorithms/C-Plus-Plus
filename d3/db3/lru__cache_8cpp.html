@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >An implementation of <a href="https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU)" target="_blank">LRU Cache</a>. Lru is a part of cache algorithms (also frequently called cache replacement algorithms or cache replacement policies). </p>
-<h3><a class="anchor" id="autotoc_md89"></a>
+<h3><a class="anchor" id="autotoc_md94"></a>
 Logic</h3>
 <ul>
 <li>Discards the least recently used items first.</li>
@@ -158,7 +158,7 @@ Logic</h3>
 <li>General implementations of this technique require keeping "age bits" for cache-lines and track the "Least Recently Used" cache-line based on age-bits.</li>
 <li>In such an implementation, every time a cache-line is used, the age of all other cache-lines changes</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md90"></a>
+<h3><a class="anchor" id="autotoc_md95"></a>
 Algorithm explanation</h3>
 <p >For a cache of page frame x:</p><ul>
 <li>Check if the page is present in cache.</li>
@@ -170,7 +170,7 @@ Algorithm explanation</h3>
 </li>
 </ul>
 <p >Every time a requested page is not found in cache, that is a miss or page fault, and if the page is present in cache, then its a hit.</p>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md96"></a>
 Data Structure used</h2>
 <ul>
 <li>In the algorithm below we used two different data structure, one is linked list and other one is a hash map</li>

@@ -157,13 +157,13 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Iterative version of Preorder, Postorder, and preorder <a href="https://en.wikipedia.org/wiki/Tree_traversal" target="_blank">Traversal of the Tree</a> </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/motasimmakki" target="_blank">Motasim</a></dd></dl>
-<h3><a class="anchor" id="autotoc_md86"></a>
+<h3><a class="anchor" id="autotoc_md91"></a>
 Iterative Preorder Traversal of a tree</h3>
 <p >Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first right child then left child. Repeat the same set of steps untill the Stack becomes empty. And return the result array as the preorder traversal of a tree.</p>
-<h3><a class="anchor" id="autotoc_md87"></a>
+<h3><a class="anchor" id="autotoc_md92"></a>
 Iterative Postorder Traversal of a tree</h3>
 <p >Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first left child then right child. Repeat the same set of steps untill the Stack becomes empty. Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.</p>
-<h3><a class="anchor" id="autotoc_md88"></a>
+<h3><a class="anchor" id="autotoc_md93"></a>
 Iterative Inorder Traversal of a tree</h3>
 <p >Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current. Now iterate and take the current to the extreme left of the tree by traversing only to its left. Pop the elemnt from the stack and assign it to the current. Store the data of current into the result array. Repeat the same set of steps until the Stack becomes empty or the current becomes NULL. And return the result array as the inorder traversal of a tree. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
