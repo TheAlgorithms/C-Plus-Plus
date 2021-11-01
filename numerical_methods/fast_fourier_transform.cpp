@@ -22,7 +22,7 @@
 #include <cmath>     /// for mathematical-related functions
 #include <complex>   /// for storing points and coefficents
 #include <iostream>  /// for IO operations
-#include <vector>    /// for storing test cases
+#include <vector>    /// for std::vector
 
 /**
  * @namespace numerical_methods
