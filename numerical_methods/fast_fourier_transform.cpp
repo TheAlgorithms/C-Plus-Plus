@@ -149,6 +149,7 @@ static void test() {
  */
 
 int main(int argc, char const *argv[]) {
-    test();  // run self-test implementations with 2 defined test cases
+    test();  //  run self-test implementations
+              //  with 2 defined test cases
     return 0;
 }
