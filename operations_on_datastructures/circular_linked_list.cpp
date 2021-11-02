@@ -70,9 +70,13 @@ class CircularLinkedList {
     /**
      * @brief Copy constructor for CircularLinkedList.
      */
-    CircularLinkedList(CircularLinkedList& copy) {
+    CircularLinkedList(const CircularLinkedList& copy) {
         root = copy.root;
         end = copy.end;
+    }
+    void operator=(const CircularLinkedList& other) {
+        root = other.root;
+        end = other.end;
     }
     /**
      * @brief Cleans up memory
