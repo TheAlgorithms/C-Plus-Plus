@@ -74,7 +74,7 @@ class CircularLinkedList {
         root = copy.root;
         end = copy.end;
     }
-    CircularLinkedList(CircularLinkedList&& source) {
+    CircularLinkedList(CircularLinkedList&& source) noexcept {
         root = source.root;
         end = source.end;
     }
@@ -82,7 +82,7 @@ class CircularLinkedList {
         root = other.root;
         end = other.end;
     }
-    CircularLinkedList& operator=(CircularLinkedList&& other) {
+    CircularLinkedList& operator=(CircularLinkedList&& other) noexcept {
         root = other.root;
         end = other.end;
     }
