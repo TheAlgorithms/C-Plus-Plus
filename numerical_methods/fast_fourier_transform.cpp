@@ -123,8 +123,9 @@ static void test() {
         {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
 
     std::complex<double> *o1 = numerical_methods::FastFourierTransform(t1, n1);
+    std::complex<double> *t3=o1;  /// Temporary variable used to delete memory location of o1
     std::complex<double> *o2 = numerical_methods::FastFourierTransform(t2, n2);
-
+    std::complex<double> *t4=o2; /// Temporary variable used to delete memory location of o2
     for (uint8_t i = 0; i < n1; i++) {
         assert((r1[i].real() - o1->real() < 0.000000000001) &&
                (r1[i].imag() - o1->imag() <
@@ -144,7 +145,8 @@ static void test() {
     
     delete[] t1;
     delete[] t2;
-
+    delete[] t3;
+    delete[] t4;
     std::cout << "All tests have successfully passed!\n";
 }
 
