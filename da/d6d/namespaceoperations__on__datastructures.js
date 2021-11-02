@@ -1,5 +1,9 @@
 var namespaceoperations__on__datastructures =
 [
+    [ "circular_linked_list", null, [
+      [ "CircularLinkedList", "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html", "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list" ],
+      [ "Node", "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html", "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node" ]
+    ] ],
     [ "inorder_traversal_of_bst", null, [
       [ "Node", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node" ],
       [ "deallocate", "d4/d32/inorder__successor__of__bst_8cpp.html#a7b20eb99272665c1777949e26ab59589", null ],
