@@ -83,7 +83,7 @@ class CircularLinkedList {
      * @brief Move constructor for CircularLinkedList
      * @param source rvalue reference to a Circular Linked List
      */
-    CircularLinkedList(CircularLinkedList&& source) {
+    CircularLinkedList(CircularLinkedList&& source) noexcept {
         root = source.root;
         end = source.end;
         source.root = nullptr;
@@ -108,7 +108,7 @@ class CircularLinkedList {
      * @param other rvalue reference to a Circular Linked List
      * @returns Reference to CircularLinkedList
      */
-    CircularLinkedList& operator=(CircularLinkedList&& other) {
+    CircularLinkedList& operator=(CircularLinkedList&& other) noexcept {
         root = other.root;
         end = other.end;
         other.root = nullptr;
