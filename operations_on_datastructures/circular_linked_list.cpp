@@ -102,6 +102,7 @@ class CircularLinkedList {
             insert(node->data);
             node = node->next;
         }
+        return *this;
     }
     /**
      * @brief Move assignment operator
@@ -113,6 +114,7 @@ class CircularLinkedList {
         end = other.end;
         other.root = nullptr;
         other.end = nullptr;
+        return *this;
     }
     /**
      * @brief Cleans up memory when destroyed
