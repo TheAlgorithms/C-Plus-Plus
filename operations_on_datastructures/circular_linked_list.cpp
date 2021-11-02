@@ -71,25 +71,57 @@ class CircularLinkedList {
      * @brief Copy constructor for CircularLinkedList.
      */
     CircularLinkedList(const CircularLinkedList& copy) {
-        root = copy.root;
-        end = copy.end;
+        erase();
+        root = nullptr;
+        Node* node = copy.root;
+        while (node != nullptr) {
+            insert(node->data);
+            node = node->next;
+        }
     }
+    /**
+     * @brief Move constructor for CircularLinkedList
+     * @param source rvalue reference to a Circular Linked List
+     */
     CircularLinkedList(CircularLinkedList&& source) {
         root = source.root;
         end = source.end;
+        source.root = nullptr;
+        source.end = nullptr;
     }
+    /**
+     * @brief Copy assignment operator
+     * @param other Reference to a Circular Linked List
+     * @returns Reference to CircularLinkedList
+     */
     CircularLinkedList& operator=(const CircularLinkedList& other) {
-        root = other.root;
-        end = other.end;
+        erase();
+        root = nullptr;
+        Node* node = other.root;
+        while (node != nullptr) {
+            insert(node->data);
+            node = node->next;
+        }
     }
+    /**
+     * @brief Move assignment operator
+     * @param other rvalue reference to a Circular Linked List
+     * @returns Reference to CircularLinkedList
+     */
     CircularLinkedList& operator=(CircularLinkedList&& other) {
         root = other.root;
         end = other.end;
+        other.root = nullptr;
+        other.end = nullptr;
     }
     /**
-     * @brief Cleans up memory
+     * @brief Cleans up memory when destroyed
      */
-    ~CircularLinkedList() {
+    ~CircularLinkedList() { erase(); }
+    /**
+     * Iteratively frees each node in the Circular Linked List from the heap
+     */
+    void erase() {
         if (root == nullptr) {
             return;
         }
@@ -99,6 +131,8 @@ class CircularLinkedList {
             node = node->next;
             delete (temp);
         } while (node != root);
+        root = nullptr;
+        end = nullptr;
     }
     /**
      * @brief Inserts all the values from a vector into the Circular Linked List
