@@ -74,7 +74,15 @@ class CircularLinkedList {
         root = copy.root;
         end = copy.end;
     }
-    void operator=(const CircularLinkedList& other) {
+    CircularLinkedList(CircularLinkedList&& source) {
+        root = source.root;
+        end = source.end;
+    }
+    CircularLinkedList& operator=(const CircularLinkedList& other) {
+        root = other.root;
+        end = other.end;
+    }
+    CircularLinkedList& operator=(CircularLinkedList&& other) {
         root = other.root;
         end = other.end;
     }
