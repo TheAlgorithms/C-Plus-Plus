@@ -158,7 +158,24 @@ var namespaces_dup =
     [ "n_queens_optimized", "d8/d14/namespacen__queens__optimized.html", null ],
     [ "ncr_modulo_p", "d4/db9/namespacencr__modulo__p.html", null ],
     [ "neural_network", "d0/d2e/namespaceneural__network.html", null ],
-    [ "numerical_methods", "d1/de0/namespacenumerical__methods.html", null ],
+    [ "numerical_methods", "d1/de0/namespacenumerical__methods.html", [
+      [ "false_position", null, [
+        [ "eq", "dd/d29/false__position_8cpp.html#a85a6ec58b5064d63d4f0df3854496713", null ],
+        [ "printRoot", "dd/d29/false__position_8cpp.html#a85cb7bfb90abc898e042d624372c5345", null ],
+        [ "regula_falsi", "dd/d29/false__position_8cpp.html#a7d69b49dc37da1c02b3ab8c7fe783494", null ]
+      ] ],
+      [ "midpoint_rule", null, [
+        [ "f", "df/d11/midpoint__integral__method_8cpp.html#a7ee8e824ef3e138a9a21883b26d97226", null ],
+        [ "g", "df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040", null ],
+        [ "k", "df/d11/midpoint__integral__method_8cpp.html#ae9f66040f8e0ba73c1c741261c22a52a", null ],
+        [ "l", "df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51", null ],
+        [ "midpoint", "df/d11/midpoint__integral__method_8cpp.html#a7072493d1f0f8a91b2a71d4cc456c09c", null ]
+      ] ],
+      [ "runge_kutta", null, [
+        [ "rungeKutta", "d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856", null ]
+      ] ],
+      [ "FastFourierTransform", "d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150", null ]
+    ] ],
     [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", "da/d6d/namespaceoperations__on__datastructures" ],
     [ "others", "d0/d6f/namespaceothers.html", "d0/d6f/namespaceothers" ],
     [ "palindrome_partitioning", "d5/d89/namespacepalindrome__partitioning.html", null ],
