@@ -5,7 +5,8 @@
  * integer.
  *
  * @details
- * We are given an integer number. We need to calculate the number of set bits in it.
+ * We are given an integer number. We need to calculate the number of set bits
+ * in it.
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
@@ -15,7 +16,7 @@
  * @author [Prashant Thakur](https://github.com/prashant-th18)
  */
 #include <cassert>   /// for assert
-#include <iostream> /// for IO operations
+#include <iostream>  /// for IO operations
 /**
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
@@ -33,21 +34,21 @@ namespace count_of_set_bits {
  * @param n is the number whose set bit will be counted
  * @returns total number of set-bits in the binary representation of number `n`
  */
-std::uint64_t countSetBits(std :: int64_t n) { // int64_t is preferred over int so that
-                                          // no Overflow can be there.
+std::uint64_t countSetBits(
+    std ::int64_t n) {  // int64_t is preferred over int so that
+                        // no Overflow can be there.
 
-    int count = 0; // "count" variable is used to count number of set-bits('1') in
-                   // binary representation of number 'n'
-    while (n != 0)
-    {
+    int count = 0;  // "count" variable is used to count number of set-bits('1')
+                    // in binary representation of number 'n'
+    while (n != 0) {
         ++count;
         n = (n & (n - 1));
     }
     return count;
     // Why this algorithm is better than the standard one?
     // Because this algorithm runs the same number of times as the number of
-    // set-bits in it. Means if my number is having "3" set bits, then this while loop
-    // will run only "3" times!!
+    // set-bits in it. Means if my number is having "3" set bits, then this
+    // while loop will run only "3" times!!
 }
 }  // namespace count_of_set_bits
 }  // namespace bit_manipulation
