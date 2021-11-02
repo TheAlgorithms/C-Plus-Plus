@@ -56,8 +56,8 @@ struct Node {
  */
 class CircularLinkedList {
  private:
-    Node* root;  ///< Pointer to the root Node
-    Node* end;   ///< Pointer to the last Node
+    Node* root;   ///< Pointer to the root Node
+    Node* end{};  ///< Pointer to the last Node
 
  public:
     /**
