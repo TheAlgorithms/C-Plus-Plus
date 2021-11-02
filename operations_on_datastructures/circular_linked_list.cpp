@@ -68,6 +68,13 @@ class CircularLinkedList {
         end = nullptr;
     }
     /**
+     * @brief Copy constructor for CircularLinkedList.
+     */
+    CircularLinkedList(CircularLinkedList& copy) {
+        root = copy.root;
+        end = copy.end;
+    }
+    /**
      * @brief Cleans up memory
      */
     ~CircularLinkedList() {
