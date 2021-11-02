@@ -79,6 +79,13 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
         k1++;
         k2++;
     }
+ 
+    if(n!=2){
+     
+        delete[] pe;
+        delete[] po;
+        
+    }
 
     delete[] ye;  /// Deleting dynamic array ye
     delete[] yo;  /// Deleting dynamic array yo
@@ -133,7 +140,8 @@ static void test() {
                                    /// values for test case 2
         o2++;
     }
-
+    
+    
     delete[] t1;
     delete[] t2;
 
