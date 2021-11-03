@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief [An  inverse fast Fourier transform
+ * @brief [An inverse fast Fourier transform
  * (IFFT)](https://www.geeksforgeeks.org/python-inverse-fast-fourier-transformation/)
  * is an algorithm that computes the inverse fourier transform.
  * @details
