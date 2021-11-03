@@ -119,30 +119,30 @@ static void test() {
         {1, 0}, {2, 0}, {3, 0}, {4, 0}};  /// True Answer for test case 2
 
     std::complex<double> *o1 = numerical_methods::InverseFastFourierTransform(t1, n1);
-    std::complex<double> *t3=o1;  /// Temporary variable used to delete memory location of o1
+    
     std::complex<double> *o2 = numerical_methods::InverseFastFourierTransform(t2, n2);
-    std::complex<double> *t4=o2; /// Temporary variable used to delete memory location of o2
+
     for (uint8_t i = 0; i < n1; i++) {
-        assert((r1[i].real() - o1->real() < 0.000000000001) &&
-               (r1[i].imag() - o1->imag() <
+        assert((r1[i].real() - o1[i].real() < 0.000000000001) &&
+               (r1[i].imag() - o1[i].imag() <
                 0.000000000001));  /// Comparing for both real and imaginary
                                    /// values for test case 1
-        o1++;
+        
     }
 
     for (uint8_t i = 0; i < n2; i++) {
-        assert((r2[i].real() - o2->real() < 0.000000000001) &&
-               (r2[i].imag() - o2->imag() <
+        assert((r2[i].real() - o2[i].real() < 0.000000000001) &&
+               (r2[i].imag() - o2[i].imag() <
                 0.000000000001));  /// Comparing for both real and imaginary
                                    /// values for test case 2
-        o2++;
+        
     }
     
     
     delete[] t1;
     delete[] t2;
-    delete[] t3;
-    delete[] t4;
+    delete[] o1;
+    delete[] o2;
     std::cout << "All tests have successfully passed!\n";
 }
 
