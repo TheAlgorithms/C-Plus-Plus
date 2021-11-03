@@ -348,19 +348,19 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="comment">// Main &quot;hashing&quot; loop</span></div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 64; i++) {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            uint32_t F = 0, <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            uint32_t F = 0, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0;</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">if</span> (i &lt; 16) {</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                F = (B &amp; C) | ((~B) &amp; D);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = i;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = i;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 32) {</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                F = (D &amp; B) | ((~D) &amp; C);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = (5 * i + 1) % 16;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (5 * i + 1) % 16;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 48) {</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                F = B ^ C ^ D;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = (3 * i + 5) % 16;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (3 * i + 5) % 16;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                F = C ^ (B | (~D));</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = (7 * i) % 16;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = (7 * i) % 16;</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="comment">// Update the accumulators</span></div>
@@ -393,11 +393,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> sig;</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:113</div></div>
 <div class="ttc" id="acopy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="amd5_8cpp_html_a694712c9665051ba52b686387b87a689"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#a694712c9665051ba52b686387b87a689">hashing::md5::toLittleEndian32</a></div><div class="ttdeci">uint32_t toLittleEndian32(uint32_t n)</div><div class="ttdoc">Sets 32-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition:</b> md5.cpp:89</div></div>
 <div class="ttc" id="amd5_8cpp_html_a6be48c1e6e742f9bd329f501d61dcaef"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#a6be48c1e6e742f9bd329f501d61dcaef">hashing::md5::toLittleEndian64</a></div><div class="ttdeci">uint64_t toLittleEndian64(uint64_t n)</div><div class="ttdoc">Sets 64-bit integer to little-endian if needed.</div><div class="ttdef"><b>Definition:</b> md5.cpp:102</div></div>
 <div class="ttc" id="amd5_8cpp_html_add2bf982d5dd64a45d13cba52c2b371d"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d">hashing::md5::leftRotate32bits</a></div><div class="ttdeci">uint32_t leftRotate32bits(uint32_t n, std::size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> md5.cpp:66</div></div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae682ee71af44b1e9e884849cc6a6b040"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">numerical_methods::midpoint_rule::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">A function g(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:97</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

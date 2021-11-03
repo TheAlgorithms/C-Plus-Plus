@@ -201,7 +201,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p >Main function: Allows the user add and delete values from the list. Also allows user to search for and display values in the list. </p><dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <div class="fragment"><div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>           {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_class" href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordtype">int</span> choice = 0;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordtype">int</span> x = 0;</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s;</div>
@@ -220,7 +220,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>.push_back(x);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.push_back(x);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                }</div>
@@ -230,7 +230,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                    <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>.erase(x);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.erase(x);</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                }</div>
@@ -241,13 +241,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;data_structures::linked_list::link&gt;</a> found =</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                        <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>.search(x);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                        <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.search(x);</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>.display();</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.display();</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            <span class="keywordflow">default</span>:</div>
@@ -261,8 +261,8 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aclassdata__structures_1_1linked__list_1_1list_html"><div class="ttname"><a href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html">data_structures::linked_list::list</a></div><div class="ttdef"><b>Definition:</b> linked_list.cpp:81</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:117</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ad53616fb4fa6880ae876bcba53365c51"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">numerical_methods::midpoint_rule::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">A function l(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:109</div></div>
 <div class="ttc" id="ashared_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a></div></div>
 <div class="ttc" id="astol_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a></div><div class="ttdeci">T stoi(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">

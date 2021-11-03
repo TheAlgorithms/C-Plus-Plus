@@ -159,20 +159,20 @@ Functions</h2></td></tr>
 <dd>
 -1 if T is not found </dd></dl>
 <div class="fragment"><div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                                           {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">while</span> (l &lt;= r) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">int</span> m = <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> + (r - <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a>) / 2;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">int</span> m = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + (r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>) / 2;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> (key == a[m])</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> m;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (key &lt; a[m])</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            r = m - 1;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> = m + 1;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = m + 1;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ad53616fb4fa6880ae876bcba53365c51"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">numerical_methods::midpoint_rule::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">A function l(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:109</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:117</div></div>
 </div><!-- fragment -->
 </div>
 </div>

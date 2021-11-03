@@ -304,23 +304,23 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="comment">// Main &quot;hashing&quot; loop</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 80; i++) {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            uint32_t F = 0, <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            uint32_t F = 0, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">if</span> (i &lt; 20) {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                F = (b &amp; c) | ((~b) &amp; d);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0x5A827999;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0x5A827999;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 40) {</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                F = b ^ c ^ d;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0x6ED9EBA1;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0x6ED9EBA1;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i &lt; 60) {</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                F = (b &amp; c) | (b &amp; d) | (c &amp; d);</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0x8F1BBCDC;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0x8F1BBCDC;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                F = b ^ c ^ d;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = 0xCA62C1D6;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = 0xCA62C1D6;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            }</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="comment">// Update the accumulators</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            uint32_t temp = <a class="code hl_function" href="../../d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d">leftRotate32bits</a>(a, 5) + F + e + <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> + blocks[i];</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            uint32_t temp = <a class="code hl_function" href="../../d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d">leftRotate32bits</a>(a, 5) + F + e + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> + blocks[i];</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            e = d;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            d = c;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            c = <a class="code hl_function" href="../../d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d">leftRotate32bits</a>(b, 30);</div>
@@ -350,9 +350,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">return</span> sig;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:113</div></div>
 <div class="ttc" id="acopy_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/copy.html">std::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="amd5_8cpp_html_add2bf982d5dd64a45d13cba52c2b371d"><div class="ttname"><a href="../../d5/d96/md5_8cpp.html#add2bf982d5dd64a45d13cba52c2b371d">hashing::md5::leftRotate32bits</a></div><div class="ttdeci">uint32_t leftRotate32bits(uint32_t n, std::size_t rotate)</div><div class="ttdoc">Rotates the bits of a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> md5.cpp:66</div></div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae682ee71af44b1e9e884849cc6a6b040"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">numerical_methods::midpoint_rule::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">A function g(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:97</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

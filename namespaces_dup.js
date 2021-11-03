@@ -175,6 +175,12 @@ var namespaces_dup =
       [ "runge_kutta", null, [
         [ "rungeKutta", "d1/da6/rungekutta_8cpp.html#a7b9f40c7b5e9749cc550f19be3dc8856", null ]
       ] ],
+      [ "simpson_method", null, [
+        [ "f", "d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397", null ],
+        [ "g", "d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad", null ],
+        [ "k", "d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442", null ],
+        [ "l", "d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a", null ]
+      ] ],
       [ "FastFourierTransform", "d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150", null ]
     ] ],
     [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", "da/d6d/namespaceoperations__on__datastructures" ],
@@ -206,6 +212,7 @@ var namespaces_dup =
     [ "selection_sort_recursive", "df/d4a/namespaceselection__sort__recursive.html", null ],
     [ "SHA", "de/dd3/namespace_s_h_a.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
+    [ "simpson_method", "d3/d6d/namespacesimpson__method.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
         [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ae79a9d247691fce0d655fce75f1c04fa", null ]

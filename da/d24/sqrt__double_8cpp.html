@@ -175,7 +175,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (a &gt; 0 &amp;&amp; a &lt; 1) {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> 1 / <a class="code hl_function" href="../../da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc">Sqrt</a>(1 / a);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> = 0, r = a;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0, r = a;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">/* Epsilon is the precision.</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    A great precision is</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    between 1e-7 and 1e-12.</span></div>
@@ -183,19 +183,19 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    */</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">double</span> epsilon = 1e-12;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">while</span> (l &lt;= r) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">double</span> mid = (<a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> + r) / 2;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">double</span> mid = (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + r) / 2;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (mid * mid &gt; a) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            r = mid;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (a - mid * mid &lt; epsilon) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">return</span> mid;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">l</a> = mid;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = mid;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ad53616fb4fa6880ae876bcba53365c51"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ad53616fb4fa6880ae876bcba53365c51">numerical_methods::midpoint_rule::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">A function l(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:109</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:117</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

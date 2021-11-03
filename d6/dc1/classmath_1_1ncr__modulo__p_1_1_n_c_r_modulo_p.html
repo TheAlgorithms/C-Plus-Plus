@@ -284,7 +284,7 @@ Here is the call graph for this function:</div>
 <p >@params[in] the numbers 'a' and 'm' from above equation </p><dl class="section return"><dt>Returns</dt><dd>the modular inverse of a </dd></dl>
 <div class="fragment"><div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                                             {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        int64_t x = 0, y = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        uint64_t <a class="code hl_function" href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">g</a> = <a class="code hl_function" href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#afde201f4687740454302c444f507a926">gcdExtended</a>(a, m, &amp;x, &amp;y);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        uint64_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">g</a> = <a class="code hl_function" href="../../d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#afde201f4687740454302c444f507a926">gcdExtended</a>(a, m, &amp;x, &amp;y);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (g != 1) {  <span class="comment">// modular inverse doesn&#39;t exist</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        } <span class="keywordflow">else</span> {</div>
@@ -292,7 +292,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
-<div class="ttc" id="amidpoint__integral__method_8cpp_html_ae682ee71af44b1e9e884849cc6a6b040"><div class="ttname"><a href="../../df/d11/midpoint__integral__method_8cpp.html#ae682ee71af44b1e9e884849cc6a6b040">numerical_methods::midpoint_rule::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">A function g(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> midpoint_integral_method.cpp:97</div></div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a2f67508d5f392b0321772169342c98ad"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad">numerical_methods::simpson_method::g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:113</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
