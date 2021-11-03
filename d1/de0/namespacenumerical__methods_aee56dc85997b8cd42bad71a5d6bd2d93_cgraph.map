@@ -1,0 +1,5 @@
+<map id="numerical_methods::InverseFastFourierTransform" name="numerical_methods::InverseFastFourierTransform">
+<area shape="rect" id="node1" title="InverseFastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="5,29,200,71"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="248,11,381,38"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="251,62,378,89"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,37,56,63"/>
+<area shape="rect" id="node2" href="$d9/d37/inverse__fast__fourier__transform_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,37,148,63"/>
+<area shape="rect" id="node3" href="$d1/de0/namespacenumerical__methods.html#aee56dc85997b8cd42bad71a5d6bd2d93" title="InverseFastFourierTransform is a recursive function which returns list of complex numbers." alt="" coords="196,29,391,71"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="439,11,572,38"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="442,62,569,89"/>
+</map>
