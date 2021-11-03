@@ -34,6 +34,7 @@
 * @author [Lajat Manekar](https://github.com/Lazeeez)
 * 
 *******************************************************************************/
+#include <iostream>     /// for IO operations
 #include <stack>        /// for std::stack
 #include <vector>       /// for std::vector
 #include <algorithm>    /// for std::swap
