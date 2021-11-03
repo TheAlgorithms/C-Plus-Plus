@@ -37,7 +37,7 @@
 #include <iostream>                       /// for IO Operations
 #include <cassert>                        /// for std::assert
 #include <vector>                         /// for std::vector
-#include <./graham_scan_functions.h>      /// for all the functions used
+#include "./graham_scan_functions.h"      /// for all the functions used
 
 /*******************************************************************************
  * @brief Self-test implementations
