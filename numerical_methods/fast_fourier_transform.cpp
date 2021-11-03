@@ -6,7 +6,8 @@
  * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT).
  * @details
  * This
- * algorithm has application in use case scenario where a user wants to find points of a
+ * algorithm has application in use case scenario where a user wants to find
+ points of a
  * function
  * in a short time by just using the coefficients of the polynomial
  * function.
@@ -56,8 +57,9 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
         if (j % 2 == 0) {
             pe[k1++] = p[j];  /// Assigning values of even Coefficients
 
-        } else
+        } else {
             po[k2++] = p[j];  /// Assigning value of odd Coefficients
+        }
     }
 
     std::complex<double> *ye =
@@ -79,12 +81,10 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
         k1++;
         k2++;
     }
- 
-    if(n!=2){
-     
+
+    if (n != 2) {
         delete[] pe;
         delete[] po;
-        
     }
 
     delete[] ye;  /// Deleting dynamic array ye
@@ -123,9 +123,11 @@ static void test() {
         {10, 0}, {-2, -2}, {-2, 0}, {-2, 2}};  /// True Answer for test case 2
 
     std::complex<double> *o1 = numerical_methods::FastFourierTransform(t1, n1);
-    std::complex<double> *t3=o1;  /// Temporary variable used to delete memory location of o1
+    std::complex<double> *t3 =
+        o1;  /// Temporary variable used to delete memory location of o1
     std::complex<double> *o2 = numerical_methods::FastFourierTransform(t2, n2);
-    std::complex<double> *t4=o2; /// Temporary variable used to delete memory location of o2
+    std::complex<double> *t4 =
+        o2;  /// Temporary variable used to delete memory location of o2
     for (uint8_t i = 0; i < n1; i++) {
         assert((r1[i].real() - o1->real() < 0.000000000001) &&
                (r1[i].imag() - o1->imag() <
@@ -141,8 +143,7 @@ static void test() {
                                    /// values for test case 2
         o2++;
     }
-    
-    
+
     delete[] t1;
     delete[] t2;
     delete[] t3;
@@ -160,6 +161,6 @@ static void test() {
 
 int main(int argc, char const *argv[]) {
     test();  //  run self-test implementations
-              //  with 2 defined test cases
+             //  with 2 defined test cases
     return 0;
 }
