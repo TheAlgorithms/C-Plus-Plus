@@ -34,10 +34,10 @@
 * @author [Lajat Manekar](https://github.com/Lazeeez)
 *
 *******************************************************************************/
-#include <iostream>                                                     /// for IO Operations
-#include <cassert>                                                      /// for std::assert
-#include <vector>                                                       /// for std::vector
-#include </workspace/C-Plus-Plus/geometry/graham_scan_functions.h>      /// for all the functions used
+#include <iostream>                       /// for IO Operations
+#include <cassert>                        /// for std::assert
+#include <vector>                         /// for std::vector
+#include <./graham_scan_functions.h>      /// for all the functions used
 
 /*******************************************************************************
  * @brief Self-test implementations
