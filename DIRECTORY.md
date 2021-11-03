@@ -229,6 +229,7 @@
   * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/fast_fourier_transform.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
+  * [Inverse Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/inverse_fast_fourier_transform.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
   * [Midpoint Integral Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/midpoint_integral_method.cpp)
