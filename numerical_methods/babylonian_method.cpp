@@ -8,7 +8,7 @@
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
-#include <iostream> /// for IO operations
+#include <iostream>  /// for IO operations
 #include <cassert>   /// for assert
 
 /**
