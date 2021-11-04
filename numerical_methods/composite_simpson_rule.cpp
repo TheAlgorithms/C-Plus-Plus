@@ -44,8 +44,6 @@
 #include <iostream>    /// for IO operations
 #include <map>         /// for std::map container
 
-#include "math.h"
-
 /**
  * @namespace numerical_methods
  * @brief Numerical algorithms/methods
