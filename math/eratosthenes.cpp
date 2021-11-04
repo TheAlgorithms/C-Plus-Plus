@@ -49,6 +49,7 @@ void print_primes(std::vector<bool> const& primes) {
         }
     }
 }
+}  // namespace math
 
 /**
  * @brief Self-tests the sieve function for major inconsistencies
