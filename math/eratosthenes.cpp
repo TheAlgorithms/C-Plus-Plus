@@ -57,7 +57,7 @@ void print_primes(std::vector<bool> const& primes) {
  */
 static void test() {
     auto primes = std::vector<bool>(10, true);
-    sieve(&primes);
+    math::sieve(&primes);
     assert(primes[0] == false);
     assert(primes[1] == false);
     assert(primes[2] == true);
