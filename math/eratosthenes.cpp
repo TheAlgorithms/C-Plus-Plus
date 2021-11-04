@@ -73,6 +73,8 @@ static void test() {
     assert(primes[7] == true);
     assert(primes[8] == false);
     assert(primes[9] == false);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
