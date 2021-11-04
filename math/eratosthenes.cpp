@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
 
     // Print the primes if we see that "print" was passed as an arg
     if (argc > 1 && argv[1] == std::string("print")) {
-        print_primes(primes);
+        math::print_primes(primes);
     }
 
     // Print the time taken we found earlier
