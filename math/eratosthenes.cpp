@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // Run the sieve
-    sieve(&primes);
+    math::sieve(&primes);
 
     // Time difference calculation
     auto time = std::chrono::duration_cast<
