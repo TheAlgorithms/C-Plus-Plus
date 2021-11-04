@@ -54,7 +54,7 @@ void print_primes(std::vector<bool> const& primes) {
  * @brief Self-tests the sieve function for major inconsistencies
  * @returns void
  */
-void test() {
+static void test() {
     auto primes = std::vector<bool>(10, true);
     sieve(&primes);
     assert(primes[0] == false);
