@@ -20,6 +20,11 @@
 #include <vector>    /// For std::vector
 
 /**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
  * @brief Performs the sieve
  * @param vec Array of bools, all initialised to true, where the number of
  * elements is the highest number we wish to check for primeness
