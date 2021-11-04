@@ -43,7 +43,7 @@
  * @brief Self-test implementations
  * @returns void
  *******************************************************************************/
-void test() {
+static void test() {
     std::vector<geometry::grahamscan::Point> points = {{0, 3},
                                                        {1, 1},
                                                        {2, 2},
