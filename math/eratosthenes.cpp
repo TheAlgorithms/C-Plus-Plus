@@ -77,7 +77,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
-    test();
+    test();  // run self-test implementations
 
     // The largest prime we will check for
     auto max = 10000;
