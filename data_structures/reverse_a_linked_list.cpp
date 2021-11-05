@@ -1,3 +1,31 @@
+
+/**
+ * @file
+ * @brief Implementation of [Reversing
+ * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
+ * @details
+ * The linked list is a data structure used for holding a sequence of
+ * values, which can be added, displayed, reversed, or removed.
+ * ### Algorithm
+ * Values can be added by iterating to the end of a list (by following
+ * the pointers) starting from the first link. Whichever link points to null
+ * is considered the last link and is pointed to the new value.
+ *
+ * Linked List can be reversed by using 3 pointers: current, previous, and
+ * next_node; we keep iterating until the last node. Meanwhile, before changing
+ * to the next of current, we store it in the next_node pointer, now we store
+ * the prev pointer in the current of next, this is where the actual reversal
+ * happens. And then we move the prev and current pointers one step forward.
+ * Then the head node is made to point to the last node (prev pointer) after
+ * completion of an iteration.
+ * [A graphic explanation and view of what's happening behind the
+ *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
+ */
+
+
+
+
+
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
 #include <memory>    /// for dynamic memory
@@ -98,11 +126,11 @@ bool list::top(int checkvalue) {
         }
     } catch (const std::exception &e) {
         std::cerr << "List is empty" << e.what() << '\n';
-// Function top should return a value of type int32_t but does not return a value here
+// returning false value is item is not found i.e lisked is empty
     }
     return false;
 }
-// Function top should return a value of type int32_t but does not return a value here
+
 /**
  *  @brief Utility function to find the last element of the list
  *  @returns the last element of the list
@@ -118,12 +146,12 @@ bool list::last(int checkvalue) {
         }
     } catch (const std::exception &e) {
         std::cerr << "List is empty" << e.what() << '\n';
-// Function last should return a value of type int32_t but does not return a value here
+// returning false value is item is not found i.e lisked is empty
     }
     return false;
 
 }
-// Function last should return a value of type int32_t but does not return a value here
+
 /**
  *  @brief Utility function to find the i th element of the list
  *  @returns the i th element of the list
@@ -138,10 +166,9 @@ bool list::traverse(int index,int positonvaluecheck) {
         count++;
         current = current->next;
     }
-    /* if we get to this line,the caller was asking for a non-existent element
-    so we assert fail */
+    /* if we can't get value or not able to traverse the linklist then directly we can return false statement */
     return false;
-// Function traverse should return a value of type int32_t but does not return a value here
+
 }
 }  // namespace linked_list
 }  // namespace data_structures
