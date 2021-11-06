@@ -63,18 +63,18 @@ struct Point {
 
 Point p0;
 
-    /******************************************************************************
-    * @brief A utility function to find next to top in a stack.
-    * @param S Stack to be used for the process.
-    * @returns @param Point Co-ordinates of the Point <int, int>
-    *******************************************************************************/
-    Point nextToTop(std::stack<Point> *S) {
-        Point p = S->top();
-        S->pop();
-        Point res = S->top();
-        S->push(p);
-        return res;
-    }
+/******************************************************************************
+ * @brief A utility function to find next to top in a stack.
+ * @param S Stack to be used for the process.
+ * @returns @param Point Co-ordinates of the Point <int, int>
+ *******************************************************************************/
+Point nextToTop(std::stack<Point> *S) {
+    Point p = S->top();
+    S->pop();
+    Point res = S->top();
+    S->push(p);
+    return res;
+}
 
 /******************************************************************************
  * @brief A utility function to return square of distance between p1 and p2.
@@ -165,25 +165,28 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
         m++;  // Update size of modified array
     }
 
-        // If modified array of points has less than 3 points, convex hull is not possible
-        if (m < 3) return {};
+    // If modified array of points has less than 3 points, convex hull is not
+    // possible
+    if (m < 3)
+        return {};
 
-        // Create an empty stack and push first three points to it.
-        std::stack <Point> S;
-        S.push(points[0]);
-        S.push(points[1]);
-        S.push(points[2]);
+    // Create an empty stack and push first three points to it.
+    std::stack<Point> S;
+    S.push(points[0]);
+    S.push(points[1]);
+    S.push(points[2]);
 
-        // Process remaining n-3 points
-        for (int i = 3; i < m; i++) {
-            // Keep removing top while the angle formed by
-            // points next-to-top, top, and points[i] makes
-            // a non-left turn
-            while (S.size() > 1 && orientation(nextToTop(&S), S.top(), points[i]) != 2) {
-                S.pop();
-            }
-            S.push(points[i]);
+    // Process remaining n-3 points
+    for (int i = 3; i < m; i++) {
+        // Keep removing top while the angle formed by
+        // points next-to-top, top, and points[i] makes
+        // a non-left turn
+        while (S.size() > 1 &&
+               orientation(nextToTop(&S), S.top(), points[i]) != 2) {
+            S.pop();
         }
+        S.push(points[i]);
+    }
     // If modified array of points has less than 3 points, convex hull is not
     // possible
     if (m < 3) {
@@ -201,7 +204,8 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
         // Keep removing top while the angle formed by
         // points next-to-top, top, and points[i] makes
         // a non-left turn
-        while (St.size() > 1 && orientation(nextToTop(&St), St.top(), points[i]) != 2) {
+        while (St.size() > 1 &&
+               orientation(nextToTop(&St), St.top(), points[i]) != 2) {
             St.pop();
         }
         St.push(points[i]);
