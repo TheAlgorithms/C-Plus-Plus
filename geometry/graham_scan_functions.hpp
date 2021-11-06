@@ -167,8 +167,9 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
 
     // If modified array of points has less than 3 points, convex hull is not
     // possible
-    if (m < 3)
-        return {};
+    if (m < 3) {
+        return {}
+    };
 
     // Create an empty stack and push first three points to it.
     std::stack<Point> S;
