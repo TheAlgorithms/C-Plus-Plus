@@ -63,11 +63,11 @@ namespace geometry::grahamscan {
     * @param S Stack to be used for the process.
     * @returns @param Point Co-ordinates of the Point <int, int>
     *******************************************************************************/
-    Point nextToTop(std::stack<Point> S) {
-        Point p = S.top();
-        S.pop();
-        Point res = S.top();
-        S.push(p);
+    Point nextToTop(std::stack<Point> *S) {
+        Point p = S->top();
+        S->pop();
+        Point res = S->top();
+        S->push(p);
         return res;
     }
 
@@ -174,7 +174,7 @@ namespace geometry::grahamscan {
             // Keep removing top while the angle formed by
             // points next-to-top, top, and points[i] makes
             // a non-left turn
-            while (S.size() > 1 && orientation(nextToTop(S), S.top(), points[i]) != 2) {
+            while (S.size() > 1 && orientation(nextToTop(&S), S.top(), points[i]) != 2) {
                 S.pop();
             }
             S.push(points[i]);
