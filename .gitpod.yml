@@ -12,7 +12,7 @@ github:
 
 vscode:
   extensions:
-    - ms-vscode.cpptools
+  # - ms-vscode.cpptools
     - twxs.cmake
     - ms-vscode.cmake-tools
     - mhutchie.git-graph
