@@ -62,7 +62,6 @@ struct Point {
 // to  the first point Used in compare function of qsort()
 Point p0;
 
-<<<<<<< HEAD
     /******************************************************************************
     * @brief A utility function to find next to top in a stack.
     * @param S Stack to be used for the process.
@@ -75,19 +74,6 @@ Point p0;
         S->push(p);
         return res;
     }
-=======
-/******************************************************************************
- * @brief A utility function to find next to top in a stack.
- * @param S Stack to be used for the process.
- * @returns @param Point Co-ordinates of the Point <int, int>
- *******************************************************************************/
-Point nextToTop(std::stack<Point> S) {
-    Point p = S.top();
-    S.pop();
-    Point res = S.top();
-    S.push(p);
-    return res;
-}
 
 /******************************************************************************
  * @brief A utility function to return square of distance between p1 and p2.
@@ -109,7 +95,6 @@ int distSq(Point p1, Point p2) {
  *******************************************************************************/
 int orientation(Point p, Point q, Point r) {
     int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
->>>>>>> ea117764ef5456625c8167ba72673ff5e6c019e6
 
     if (val == 0) {
         return 0;  // collinear
@@ -179,7 +164,6 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
         m++;  // Update size of modified array
     }
 
-<<<<<<< HEAD
         // If modified array of points has less than 3 points, convex hull is not possible
         if (m < 3) return {};
 
@@ -199,13 +183,11 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
             }
             S.push(points[i]);
         }
-=======
     // If modified array of points has less than 3 points, convex hull is not
     // possible
     if (m < 3) {
         return {}
     };
->>>>>>> ea117764ef5456625c8167ba72673ff5e6c019e6
 
     // Create an empty stack and push first three points to it.
     std::stack<Point> S;
