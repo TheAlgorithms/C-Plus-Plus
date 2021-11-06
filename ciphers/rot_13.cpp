@@ -24,7 +24,7 @@ namespace rot13 {
 
 std::string rot13_encode(std::string s) {
     // Encode only A~Z, a~z.
-    unsigned char tmp = 0;
+    char tmp = 0;
     for (char& i : s) {
         if (i >= 'A' && i <= 'Z') {
             tmp = i - 'A';
