@@ -24,20 +24,20 @@ namespace rot13 {
 
 std::string rot13_encode(std::string s) {
     // Encode only A~Z, a~z.
-    char tmp = 0;
+    unsigned char tmp = 0;
     for (char& i : s) {
         if (i >= 'A' && i <= 'Z') {
-            tmp = i - 'A';
+            tmp = char(i - 'A');
             // Shift by 13 characters
             tmp += char(13);
             tmp %= char(26);
-            i = 'A' + tmp;
+            i = char('A' + tmp);
         } else if (i >= 'a' && i <= 'z') {
-            tmp = i - 'a';
+            tmp = char(i - 'a');
             // Shift by 13 characters
             tmp += char(13);
             tmp %= char(26);
-            i = 'a' + tmp;
+            i = char('a' + tmp);
         }
     }
     return s;
@@ -48,23 +48,23 @@ std::string rot13_decode(std::string s) {
     char tmp = 0;
     for (char& i : s) {
         if (i >= 'A' && i <= 'Z') {
-            tmp = i - 'A';
+            tmp = char(i - 'A');
             // Fixed so that the value does not become negative when "-13" is
             // set.
             tmp += char(26);
             // Shift by 13 characters
             tmp -= char(13);
             tmp %= char(26);
-            i = 'A' + tmp;
+            i = char('A' + tmp);
         } else if (i >= 'a' && i <= 'z') {
-            tmp = i - 'a';
+            tmp = char(i - 'a');
             // Fixed so that the value does not become negative when "-13" is
             // set.
             tmp += char(26);
             // Shift by 13 characters
             tmp -= char(13);
             tmp %= char(26);
-            i = 'a' + tmp;
+            i = char('a' + tmp);
         }
     }
     return s;
@@ -82,6 +82,7 @@ static void test() {
     s = ciphers::rot13::rot13_decode(s);
     std::cout << "rot13_decode:" << s << std::endl;
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
