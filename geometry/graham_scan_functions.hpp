@@ -96,8 +96,9 @@ int distSq(Point p1, Point p2) {
 int orientation(Point p, Point q, Point r) {
     int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
 
-    if (val == 0)
-        return 0;              // collinear
+    if (val == 0) {
+        return 0;  // collinear
+    }
     return (val > 0) ? 1 : 2;  // clock or counter-clock wise
 }
 
@@ -165,8 +166,9 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
 
     // If modified array of points has less than 3 points, convex hull is not
     // possible
-    if (m < 3)
-        return {};
+    if (m < 3) {
+        return {}
+    };
 
     // Create an empty stack and push first three points to it.
     std::stack<Point> S;
