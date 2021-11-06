@@ -8,7 +8,8 @@
  * @author [pond](https://github.com/pond-e)
  */
 #include <iostream>  /// for IO operations
-#include <string>    /// for assert
+#include <string>    /// for string use-cases
+#include <assert>   /// for assert
 
 /**
  * @namespace ciphers
