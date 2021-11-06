@@ -45,7 +45,7 @@ std::string rot13_encode(std::string s) {
 
 std::string rot13_decode(std::string s) {
     // Decode only A~Z, a~z .
-    unsigned char tmp = 0;
+    char tmp = 0;
     for (char& i : s) {
         if (i >= 'A' && i <= 'Z') {
             tmp = i - 'A';
