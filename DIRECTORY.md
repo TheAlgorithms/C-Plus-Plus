@@ -108,6 +108,8 @@
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/word_break.cpp)
 
 ## Geometry
+  * [Graham Scan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_algorithm.cpp)
+  * [Graham Scan Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_functions.hpp)
   * [Jarvis Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/jarvis_algorithm.cpp)
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
 

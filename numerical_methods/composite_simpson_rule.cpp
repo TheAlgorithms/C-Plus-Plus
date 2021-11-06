@@ -35,8 +35,9 @@
  *
  */
 
-#include <cassert>     /// for assert
-#include <cmath>       /// for math functions
+#include <cassert>  /// for assert
+#include <cmath>    /// for math functions
+#include <cmath>
 #include <cstdint>     /// for integer allocation
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
@@ -64,13 +65,13 @@ namespace simpson_method {
  * @returns the result of the integration
  */
 double evaluate_by_simpson(std::int32_t N, double h, double a,
-                           std::function<double(double)> func) {
+                           const std::function<double(double)>& func) {
     std::map<std::int32_t, double>
         data_table;  // Contains the data points. key: i, value: f(xi)
     double xi = a;   // Initialize xi to the starting point x0 = a
 
     // Create the data table
-    double temp;
+    double temp = NAN;
     for (std::int32_t i = 0; i <= N; i++) {
         temp = func(xi);
         data_table.insert(
@@ -82,12 +83,13 @@ double evaluate_by_simpson(std::int32_t N, double h, double a,
     // Remember: f(x0) + 4*f(x1) + 2*f(x2) + ... + 2*f(xN-2) + 4*f(xN-1) + f(xN)
     double evaluate_integral = 0;
     for (std::int32_t i = 0; i <= N; i++) {
-        if (i == 0 || i == N)
+        if (i == 0 || i == N) {
             evaluate_integral += data_table.at(i);
-        else if (i % 2 == 1)
+        } else if (i % 2 == 1) {
             evaluate_integral += 4 * data_table.at(i);
-        else
+        } else {
             evaluate_integral += 2 * data_table.at(i);
+        }
     }
 
     // Multiply by the coefficient h/3
@@ -170,7 +172,7 @@ int main(int argc, char** argv) {
                           /// interval. MUST BE EVEN
     double a = 1, b = 3;  /// Starting and ending point of the integration in
                           /// the real axis
-    double h;             /// Step, calculated by a, b and N
+    double h = NAN;       /// Step, calculated by a, b and N
 
     bool used_argv_parameters =
         false;  // If argv parameters are used then the assert must be omitted
@@ -180,18 +182,20 @@ int main(int argc, char** argv) {
     // displaying messages)
     if (argc == 4) {
         N = std::atoi(argv[1]);
-        a = (double)std::atof(argv[2]);
-        b = (double)std::atof(argv[3]);
+        a = std::atof(argv[2]);
+        b = std::atof(argv[3]);
         // Check if a<b else abort
         assert(a < b && "a has to be less than b");
         assert(N > 0 && "N has to be > 0");
-        if (N < 16 || a != 1 || b != 3)
+        if (N < 16 || a != 1 || b != 3) {
             used_argv_parameters = true;
+        }
         std::cout << "You selected N=" << N << ", a=" << a << ", b=" << b
                   << std::endl;
-    } else
+    } else {
         std::cout << "Default N=" << N << ", a=" << a << ", b=" << b
                   << std::endl;
+    }
 
     // Find the step
     h = (b - a) / N;
