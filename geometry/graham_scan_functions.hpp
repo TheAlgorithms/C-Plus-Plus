@@ -63,7 +63,7 @@ namespace geometry::grahamscan {
     * @param S Stack to be used for the process.
     * @returns @param Point Co-ordinates of the Point <int, int>
     *******************************************************************************/
-    Point nextToTop(const std::stack<Point> &S) {
+    Point nextToTop(std::stack<Point> S) {
         Point p = S.top();
         S.pop();
         Point res = S.top();
