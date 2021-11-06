@@ -60,6 +60,7 @@ struct Point {
 
 // A global point needed for sorting points with reference
 // to  the first point Used in compare function of qsort()
+
 Point p0;
 
     /******************************************************************************
