@@ -186,33 +186,32 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
     // If modified array of points has less than 3 points, convex hull is not
     // possible
     if (m < 3) {
-        return {}
+        return {};
     };
 
     // Create an empty stack and push first three points to it.
-    std::stack<Point> S;
-    S.push(points[0]);
-    S.push(points[1]);
-    S.push(points[2]);
+    std::stack<Point> St;
+    St.push(points[0]);
+    St.push(points[1]);
+    St.push(points[2]);
 
     // Process remaining n-3 points
     for (int i = 3; i < m; i++) {
         // Keep removing top while the angle formed by
         // points next-to-top, top, and points[i] makes
         // a non-left turn
-        while (S.size() > 1 &&
-               orientation(nextToTop(S), S.top(), points[i]) != 2) {
-            S.pop();
+        while (St.size() > 1 && orientation(nextToTop(&St), St.top(), points[i]) != 2) {
+            St.pop();
         }
-        S.push(points[i]);
+        St.push(points[i]);
     }
 
     std::vector<Point> result;
     // Now stack has the output points, push them into the resultant vector
-    while (!S.empty()) {
-        Point p = S.top();
+    while (!St.empty()) {
+        Point p = St.top();
         result.push_back(p);
-        S.pop();
+        St.pop();
     }
 
     return result;  // return resultant vector with Convex Hull co-ordinates.
