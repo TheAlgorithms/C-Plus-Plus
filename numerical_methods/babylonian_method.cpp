@@ -9,10 +9,9 @@
  * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
-#include <cassert>   /// for assert
+#include <cassert>  /// for assert
+#include <cmath>
 #include <iostream>  /// for IO operations
-
-#include "math.h"
 
 /**
  * @namespace numerical_methods
