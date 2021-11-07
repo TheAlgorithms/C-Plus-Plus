@@ -13,7 +13,7 @@
  *subset.
  *
  * The worst case time complexity of Jarvis’s Algorithm is O(n^2). Using
- *Graham’s scan algorithm, we can find Convex Hull in O(nLogn) time.
+ * Graham’s scan algorithm, we can find Convex Hull in O(nLogn) time.
  *
  * ### Implementation
  *
