@@ -45,10 +45,16 @@
 #include <vector>     /// for std::vector
 
 /******************************************************************************
- * @namespace geometry::grahamscan
+ * @namespace geometry
  * @brief geometric algorithms
  *******************************************************************************/
-namespace geometry::grahamscan {
+namespace geometry {
+
+/******************************************************************************
+ * @namespace graham scan
+ * @brief convex hull algorithm
+ *******************************************************************************/
+    namespace grahamscan {
 
 /******************************************************************************
  * @struct Point
@@ -222,4 +228,5 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
 
     return result;  // return resultant vector with Convex Hull co-ordinates.
 }
-}  // namespace geometry::grahamscan
+}  //namespace grahamscan
+}  // namespace geometry
