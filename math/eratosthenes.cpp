@@ -30,30 +30,30 @@ namespace math {
  * elements is the highest number we wish to check for primeness
  * @returns void
  */
-void sieve(std::vector<bool>* vec) {
-    (*vec)[0] = false;
-    (*vec)[1] = false;
+    void sieve(std::vector<bool> *vec) {
+        (*vec)[0] = false;
+        (*vec)[1] = false;
 
-    // The sieve sets values to false as they are found not prime
-    for (long unsigned int n = 2; n < vec->size(); n++) {
-        for (long unsigned int multiple = n << 1; multiple < vec->size(); multiple += n) {
-            (*vec)[multiple] = false;
+        // The sieve sets values to false as they are found not prime
+        for (uint64_t n = 2; n < vec->size(); n++) {
+            for (uint64_t multiple = n << 1; multiple < vec->size(); multiple += n) {
+                (*vec)[multiple] = false;
+            }
         }
     }
-}
 
 /**
  * @brief Prints all the indexes of true values in the passed std::vector
  * @param primes The vector that has been passed through `sieve(...)`
  * @returns void
  */
-void print_primes(std::vector<bool> const& primes) {
-    for (long unsigned int i = 0; i < primes.size(); i++) {
-        if (primes[i]) {
-            std::cout << i << std::endl;
+    void print_primes(std::vector<bool> const &primes) {
+        for (uint64_t i = 0; i < primes.size(); i++) {
+            if (primes[i]) {
+                std::cout << i << std::endl;
+            }
         }
     }
-}
 }  // namespace math
 
 /**
@@ -83,7 +83,7 @@ static void test() {
  * @param argv commandline array of arguments
  * @returns 0 on exit
  */
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     test();  // run self-test implementations
 
     // The largest prime we will check for
@@ -101,9 +101,9 @@ int main(int argc, char* argv[]) {
 
     // Time difference calculation
     auto time = std::chrono::duration_cast<
-                    std::chrono::duration<double, std::ratio<1>>>(
-                    std::chrono::high_resolution_clock::now() - start)
-                    .count();
+            std::chrono::duration<double, std::ratio<1>>>(
+            std::chrono::high_resolution_clock::now() - start)
+            .count();
 
     // Print the primes if we see that "print" was passed as an arg
     if (argc > 1 && argv[1] == std::string("print")) {
