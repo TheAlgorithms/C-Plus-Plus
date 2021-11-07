@@ -100,19 +100,19 @@ $(document).ready(function(){initNavTree('dc/d9c/babylonian__method_8cpp.html','
 <p><a href="https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method" target="_blank">A babylonian method (BM)</a> is an algorithm that computes the square root.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;math.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for babylonian_method.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d08/babylonian__method_8cpp__incl.svg" width="260" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d08/babylonian__method_8cpp__incl.svg" width="258" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d1/de0/namespacenumerical__methods"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a></td></tr>
-<tr class="memdesc:d1/de0/namespacenumerical__methods"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="memdesc:d1/de0/namespacenumerical__methods"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -166,12 +166,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                                       {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="../../dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">//  run self-test implementations</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>             <span class="comment">//  with 2 defined test cases</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
-<div class="ttc" id="ababylonian__method_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> babylonian_method.cpp:63</div></div>
+<div class="fragment"><div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                                       {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="../../dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">//  run self-test implementations</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>             <span class="comment">//  with 2 defined test cases</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="ttc" id="ababylonian__method_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> babylonian_method.cpp:62</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -214,35 +214,35 @@ Here is the call graph for this function:</div>
 <p >Test result for testcase 2</p>
 <p >Testing for test Case 1</p>
 <p >Testing for test Case 2</p>
-<div class="fragment"><div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                   {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">/* descriptions of the following test */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">auto</span> testcase1 = 125348;  <span class="comment">/// Testcase 1</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span> testcase2 = 752080;  <span class="comment">/// Testcase 2</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span> real_output1 = 354.045194855;  <span class="comment">/// Real Output 1</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">auto</span> real_output2 = 867.225460881;  <span class="comment">/// Real Output 2</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> test_result1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase1);<span class="comment"></span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">    /// Test result for testcase 1</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span>    <span class="keyword">auto</span> test_result2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase2);<span class="comment"></span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /// Test result for testcase 2</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result1, real_output1) -</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result1, real_output1) &lt;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>           0.0001);<span class="comment"></span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">    /// Testing for test Case 1</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result2, real_output2) -</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result2, real_output2) &lt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>           0.0001);<span class="comment"></span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    /// Testing for test Case 2</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="fragment"><div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                   {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">/* descriptions of the following test */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span> testcase1 = 125348;  <span class="comment">/// Testcase 1</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">auto</span> testcase2 = 752080;  <span class="comment">/// Testcase 2</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> real_output1 = 354.045194855;  <span class="comment">/// Real Output 1</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span> real_output2 = 867.225460881;  <span class="comment">/// Real Output 2</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span> test_result1 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase1);<span class="comment"></span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    /// Test result for testcase 1</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span>    <span class="keyword">auto</span> test_result2 = <a class="code hl_function" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a>(testcase2);<span class="comment"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">    /// Test result for testcase 2</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result1, real_output1) -</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result1, real_output1) &lt;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>           0.0001);<span class="comment"></span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    /// Testing for test Case 1</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"></span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(test_result2, real_output2) -</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>               <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(test_result2, real_output2) &lt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>           0.0001);<span class="comment"></span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">    /// Testing for test Case 2</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anamespacenumerical__methods_html_a28e67885f8606564cc8335f483f63309"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a></div><div class="ttdeci">double babylonian_method(double radicand)</div><div class="ttdoc">Babylonian methods is an iterative function which returns square root of radicand.</div><div class="ttdef"><b>Definition:</b> babylonian_method.cpp:31</div></div>
+<div class="ttc" id="anamespacenumerical__methods_html_a28e67885f8606564cc8335f483f63309"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">numerical_methods::babylonian_method</a></div><div class="ttdeci">double babylonian_method(double radicand)</div><div class="ttdoc">Babylonian methods is an iterative function which returns square root of radicand.</div><div class="ttdef"><b>Definition:</b> babylonian_method.cpp:30</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
