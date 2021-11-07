@@ -22,161 +22,184 @@
  *scenes](https://drive.google.com/file/d/1pM5COF0wx-wermnNy_svtyZquaCUP2xS/view?usp=sharing)
  */
 
-
-
-
-
-#include <cassert>   /// for assert
-#include <iostream>  /// for I/O operations
-#include <memory>    /// for dynamic memory
-#include <new>       /// for managing  dynamic storage
+#include <cassert>  /// for assert
+#include <iostream> /// for I/O operations
+#include <memory>   /// for dynamic memory
+#include <new>      /// for managing  dynamic storage
 /**
  * @namespace data_structures
  * @brief Data Structures algorithms
  */
-namespace data_structures {
-/**
+namespace data_structures
+{
+    /**
  * @namespace linked_list
  * @brief Functions for singly linked list algorithm
  */
-namespace linked_list {
-/**
+    namespace linked_list
+    {
+        /**
  * A Node class containing a value and pointer to another link
  */
-class Node {
- public:
-    int32_t val;  /// value of the current link
-    Node *next;   /// pointer to the next value on the list
-};
-/**
+        class Node
+        {
+        public:
+            int32_t val; /// value of the current link
+            Node *next;  /// pointer to the next value on the list
+        };
+        /**
  * A list class containing a sequence of links
  */
-class list {
- private:
-    Node *head;  // link before the actual first element
- public:
-    /**
+        class list
+        {
+        private:
+            Node *head; // link before the actual first element
+        public:
+            /**
      * List constructor. Initializes the first link.
      */
-    list() {
-        head = nullptr;  // Initialize the first link
-    }
-    bool isEmpty();
-    void insert(int32_t new_elem);
-    void reverseList();
-    void display();
-    bool top(int checkvalue);
-    bool last(int checkvalue);
-    bool traverse(int32_t index,int positionvaluecheck);
-};
-/**
+            list()
+            {
+                head = nullptr; // Initialize the first link
+            }
+            bool isEmpty();
+            void insert(int32_t new_elem);
+            void reverseList();
+            void display();
+            bool top(int checkvalue);
+            bool last(int checkvalue);
+            bool traverse(int32_t index, int positionvaluecheck);
+        };
+        /**
  * @brief Utility function that checks if the list is empty
  * @returns true if the list is empty
  * @returns false if the list is not empty
  */
-bool list::isEmpty() { return head == nullptr; }
-/**
+        bool list::isEmpty() { return head == nullptr; }
+        /**
  * @brief Utility function that adds a new element at the end of the list
  * @param new_elem element be added at the end of the list
  */
-void list::insert(int32_t n) {
-    try {
-        Node *new_node = new Node();
-        Node *temp = nullptr;
-        new_node->val = n;
-        new_node->next = nullptr;
-        if (isEmpty()) {
-            head = new_node;
-        } else {
-            temp = head;
-            while (temp->next != nullptr) {
-                temp = temp->next;
+        void list::insert(int32_t n)
+        {
+            try
+            {
+                Node *new_node = new Node();
+                Node *temp = nullptr;
+                new_node->val = n;
+                new_node->next = nullptr;
+                if (isEmpty())
+                {
+                    head = new_node;
+                }
+                else
+                {
+                    temp = head;
+                    while (temp->next != nullptr)
+                    {
+                        temp = temp->next;
+                    }
+                    temp->next = new_node;
+                }
             }
-            temp->next = new_node;
+            catch (std::bad_alloc &exception)
+            {
+                std::cerr << "bad_alloc detected: " << exception.what() << "\n";
+            }
         }
-    } catch (std::bad_alloc &exception) {
-        std::cerr << "bad_alloc detected: " << exception.what() << "\n";
-    }
-}
-/**
+        /**
  * @brief Utility function for reversing a list
  * @brief Using the current, previous, and next pointer.
  * @returns void
  */
-void list::reverseList() {
-    Node *curr = head;
-    Node *prev = nullptr, *next_node = nullptr;
-    while (curr != nullptr) {
-        next_node = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = next_node;
-    }
-    head = prev;
-}
-/**
+        void list::reverseList()
+        {
+            Node *curr = head;
+            Node *prev = nullptr, *next_node = nullptr;
+            while (curr != nullptr)
+            {
+                next_node = curr->next;
+                curr->next = prev;
+                prev = curr;
+                curr = next_node;
+            }
+            head = prev;
+        }
+        /**
  * @brief Utility function to find the top element of the list
  * @returns the top element of the list
  */
-bool list::top(int checkvalue) {
-    try {
-        if (!isEmpty()) {
-             return (head->val==checkvalue)?true:false;
-            
+        bool list::top(int checkvalue)
+        {
+            try
+            {
+                if (!isEmpty())
+                {
+                    return (head->val == checkvalue) ? true : false;
+                }
+            }
+            catch (const std::exception &e)
+            {
+                std::cerr << "List is empty" << e.what() << '\n';
+                // returning false value is item is not found i.e lisked is empty
+            }
+            return false;
         }
-    } catch (const std::exception &e) {
-        std::cerr << "List is empty" << e.what() << '\n';
-// returning false value is item is not found i.e lisked is empty
-    }
-    return false;
-}
 
-/**
+        /**
  *  @brief Utility function to find the last element of the list
  *  @returns the last element of the list
  */
-bool list::last(int checkvalue) {
-    try {
-        if (!isEmpty()) {
-            Node *t = head;
-            while (t->next != nullptr) {
-                t = t->next;
+        bool list::last(int checkvalue)
+        {
+            try
+            {
+                if (!isEmpty())
+                {
+                    Node *t = head;
+                    while (t->next != nullptr)
+                    {
+                        t = t->next;
+                    }
+                    return (t->val == checkvalue) ? true : false;
+                }
             }
-             return (t->val==checkvalue)?true:false;
+            catch (const std::exception &e)
+            {
+                std::cerr << "List is empty" << e.what() << '\n';
+                // returning false value is item is not found i.e lisked is empty
+            }
+            return false;
         }
-    } catch (const std::exception &e) {
-        std::cerr << "List is empty" << e.what() << '\n';
-// returning false value is item is not found i.e lisked is empty
-    }
-    return false;
 
-}
-
-/**
+        /**
  *  @brief Utility function to find the i th element of the list
  *  @returns the i th element of the list
  */
-bool list::traverse(int index,int positonvaluecheck) {
-    Node *current = head;
-    int count = 0;
-    while (current != nullptr) {
-        if (count == index) {
-            return (current->val==positonvaluecheck)?true:false;
+        bool list::traverse(int index, int positonvaluecheck)
+        {
+            Node *current = head;
+            int count = 0;
+            while (current != nullptr)
+            {
+                if (count == index)
+                {
+                    return (current->val == positonvaluecheck) ? true : false;
+                }
+                count++;
+                current = current->next;
+            }
+            /* if we can't get value or not able to traverse the linklist then directly we can return false statement */
+            return false;
         }
-        count++;
-        current = current->next;
-    }
-    /* if we can't get value or not able to traverse the linklist then directly we can return false statement */
-    return false;
-
-}
-}  // namespace linked_list
-}  // namespace data_structures
+    } // namespace linked_list
+} // namespace data_structures
 /**
  * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void test()
+{
     data_structures::linked_list::list L;
     // 1st test
     L.insert(11);
@@ -186,16 +209,16 @@ static void test() {
     L.insert(-12);
     L.insert(-20);
     L.insert(18);
-    assert(L.top(11) );
+    assert(L.top(11));
     assert(L.last(18));
     L.reverseList();
     // Reversal Testing
     assert(L.top(18));
-    assert(L.traverse(1,-20));
-    assert(L.traverse(2,-12) );
-    assert(L.traverse(3,10) );
-    assert(L.traverse(4,15) );
-    assert(L.traverse(5,12));
+    assert(L.traverse(1, -20));
+    assert(L.traverse(2, -12));
+    assert(L.traverse(3, 10));
+    assert(L.traverse(4, 15));
+    assert(L.traverse(5, 12));
     assert(L.last(11));
     std::cout << "All tests have successfully passed!" << std::endl;
 }
@@ -203,7 +226,8 @@ static void test() {
  * @brief Main function
  * @returns 0 on exit
  */
-int main() {
-    test();  // run self-test implementations
+int main()
+{
+    test(); // run self-test implementations
     return 0;
 }
