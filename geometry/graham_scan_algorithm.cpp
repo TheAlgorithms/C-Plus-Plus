@@ -63,7 +63,7 @@ static void test() {
         assert(derived_result[i].x == expected_result[i].x);
         assert(derived_result[i].y == expected_result[i].y);
     }
-    std::cout << "Passed" << std::endl;
+    std::cout << "passed!" << std::endl;
 }
 
 /*******************************************************************************
