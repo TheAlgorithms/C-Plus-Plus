@@ -54,7 +54,7 @@ namespace geometry {
  * @namespace graham scan
  * @brief convex hull algorithm
  *******************************************************************************/
-    namespace grahamscan {
+namespace grahamscan {
 
 /******************************************************************************
  * @struct Point
@@ -228,5 +228,5 @@ std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
 
     return result;  // return resultant vector with Convex Hull co-ordinates.
 }
-}  //namespace grahamscan
+}  // namespace grahamscan
 }  // namespace geometry
