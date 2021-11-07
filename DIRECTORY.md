@@ -223,6 +223,7 @@
   * [Volume](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/volume.cpp)
 
 ## Numerical Methods
+  * [Babylonian Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/babylonian_method.cpp)
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
   * [Brent Method Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/brent_method_extrema.cpp)
   * [Composite Simpson Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/composite_simpson_rule.cpp)
