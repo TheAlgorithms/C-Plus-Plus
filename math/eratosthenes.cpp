@@ -35,8 +35,8 @@ void sieve(std::vector<bool>* vec) {
     (*vec)[1] = false;
 
     // The sieve sets values to false as they are found not prime
-    for (int n = 2; n < vec->size(); n++) {
-        for (int multiple = n << 1; multiple < vec->size(); multiple += n) {
+    for (long unsigned int n = 2; n < vec->size(); n++) {
+        for (long unsigned int multiple = n << 1; multiple < vec->size(); multiple += n) {
             (*vec)[multiple] = false;
         }
     }
@@ -48,7 +48,7 @@ void sieve(std::vector<bool>* vec) {
  * @returns void
  */
 void print_primes(std::vector<bool> const& primes) {
-    for (int i = 0; i < primes.size(); i++) {
+    for (long unsigned int i = 0; i < primes.size(); i++) {
         if (primes[i]) {
             std::cout << i << std::endl;
         }
