@@ -121,32 +121,26 @@ void list::reverseList() {
  * @returns the top element of the list
  */
 int32_t list::top() {
-    try {
-        if (!isEmpty()) {
-            return head->val;
-        }
-    } catch (const std::exception &e) {
-        std::cerr << "List is empty" << e.what() << '\n';
+    if (!isEmpty()) {
+        return head->val;
+    } else {
+        throw std::logic_error("List is empty");
     }
-    return 0;
 }
 /**
  *  @brief Utility function to find the last element of the list
  *  @returns the last element of the list
  */
 int32_t list::last() {
-    try {
-        if (!isEmpty()) {
-            Node *t = head;
-            while (t->next != nullptr) {
-                t = t->next;
-            }
-            return t->val;
+    if (!isEmpty()) {
+        Node *t = head;
+        while (t->next != nullptr) {
+            t = t->next;
         }
-    } catch (const std::exception &e) {
-        std::cerr << "List is empty" << e.what() << '\n';
+        return t->val;
+    } else {
+        throw std::logic_error("List is empty");
     }
-    return 0;
 }
 /**
  *  @brief Utility function to find the i th element of the list
@@ -166,8 +160,7 @@ int32_t list::traverse(int index) {
 
     /* if we get to this line,the caller was asking for a non-existent element
     so we assert fail */
-    assert(0);
-    return 0;
+    exit(1);
 }
 
 }  // namespace linked_list
