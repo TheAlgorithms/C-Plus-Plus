@@ -1,5 +1,6 @@
 var dir_9c6faab82c22511b50177aa2e38e2780 =
 [
+    [ "babylonian_method.cpp", "dc/d9c/babylonian__method_8cpp.html", "dc/d9c/babylonian__method_8cpp" ],
     [ "bisection_method.cpp", "d7/d6a/bisection__method_8cpp.html", "d7/d6a/bisection__method_8cpp" ],
     [ "brent_method_extrema.cpp", "db/d01/brent__method__extrema_8cpp.html", "db/d01/brent__method__extrema_8cpp" ],
     [ "composite_simpson_rule.cpp", "d4/d18/composite__simpson__rule_8cpp.html", "d4/d18/composite__simpson__rule_8cpp" ],

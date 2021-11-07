@@ -181,6 +181,7 @@ var namespaces_dup =
         [ "k", "d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442", null ],
         [ "l", "d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a", null ]
       ] ],
+      [ "babylonian_method", "d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309", null ],
       [ "FastFourierTransform", "d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150", null ],
       [ "InverseFastFourierTransform", "d1/de0/namespacenumerical__methods.html#aee56dc85997b8cd42bad71a5d6bd2d93", null ]
     ] ],

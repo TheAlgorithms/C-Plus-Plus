@@ -96,11 +96,14 @@ $(document).ready(function(){initNavTree('d1/de0/namespacenumerical__methods.htm
 </div><!--header-->
 <div class="contents">
 
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a> container  
+<p>for IO operations  
 <a href="../../d1/de0/namespacenumerical__methods.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a28e67885f8606564cc8335f483f63309"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">babylonian_method</a> (double radicand)</td></tr>
+<tr class="memdesc:a28e67885f8606564cc8335f483f63309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Babylonian methods is an iterative function which returns square root of radicand.  <a href="../../d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309">More...</a><br /></td></tr>
+<tr class="separator:a28e67885f8606564cc8335f483f63309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a158fd271b9a53e8f3f60b08b18857150"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">FastFourierTransform</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; double &gt; *p, uint8_t n)</td></tr>
 <tr class="memdesc:a158fd271b9a53e8f3f60b08b18857150"><td class="mdescLeft">&#160;</td><td class="mdescRight">FastFourierTransform is a recursive function which returns list of complex numbers.  <a href="../../d1/de0/namespacenumerical__methods.html#a158fd271b9a53e8f3f60b08b18857150">More...</a><br /></td></tr>
 <tr class="separator:a158fd271b9a53e8f3f60b08b18857150"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,10 +112,13 @@ Functions</h2></td></tr>
 <tr class="separator:aee56dc85997b8cd42bad71a5d6bd2d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a> container </p>
+<div class="textblock"><p >for IO operations </p>
 <p >Numerical Methods.</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p >for io operations</p>
+<p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/map.html">std::map</a> container</p>
+<p >for assert</p>
+<p >Numerical algorithms/methods</p>
 <p >for assert for math functions for integer allocation for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atof.html">std::atof</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a> for IO operations</p>
 <p >Numerical algorithms/methods</p>
 <p >for math operations</p>
@@ -120,6 +126,70 @@ Functions</h2></td></tr>
 <p >for assert for mathematical-related functions for storing points and coefficents for IO operations</p>
 <p >Numerical algorithms/methods </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a28e67885f8606564cc8335f483f63309" name="a28e67885f8606564cc8335f483f63309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e67885f8606564cc8335f483f63309">&#9670;&nbsp;</a></span>babylonian_method()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double numerical_methods::babylonian_method </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radicand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Babylonian methods is an iterative function which returns square root of radicand. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radicand</td><td>is the radicand </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>x1 the square root of radicand </dd></dl>
+<p >To find initial root or rough approximation</p>
+<p >Real Initial value will be i-1 as loop stops on +1 value</p>
+<p >Storing previous value for comparison</p>
+<p >Storing calculated value for comparison</p>
+<p >Temp variable to x0 and x1</p>
+<p >Newly calculated root</p>
+<p >Returning final root</p>
+<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                          {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">int</span> i = 1;  <span class="comment">/// To find initial root or rough approximation</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">while</span> (i * i &lt;= radicand) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        i++;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    i--;  <span class="comment">/// Real Initial value will be i-1 as loop stops on +1 value</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">double</span> x0 = i;  <span class="comment">/// Storing previous value for comparison</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">double</span> x1 =</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        (radicand / x0 + x0) / 2;  <span class="comment">/// Storing calculated value for comparison</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">double</span> temp = NAN;             <span class="comment">/// Temp variable to x0 and x1</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">while</span> (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(x0, x1) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(x0, x1) &lt; 0.0001) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        temp = (radicand / x1 + x1) / 2;  <span class="comment">/// Newly calculated root</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        x0 = x1;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        x1 = temp;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> x1;  <span class="comment">/// Returning final root</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
+<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/de0/namespacenumerical__methods_a28e67885f8606564cc8335f483f63309_cgraph.svg" width="276" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a158fd271b9a53e8f3f60b08b18857150" name="a158fd271b9a53e8f3f60b08b18857150"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a158fd271b9a53e8f3f60b08b18857150">&#9670;&nbsp;</a></span>FastFourierTransform()</h2>
 
