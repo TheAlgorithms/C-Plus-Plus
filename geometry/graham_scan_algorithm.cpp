@@ -58,7 +58,7 @@ static void test() {
 
     derived_result = geometry::grahamscan::convexHull(points, points.size());
 
-    std::cout << "Test#1...";
+    std::cout << "1st test: ";
     for (int i = 0; i < expected_result.size(); i++) {
         assert(derived_result[i].x == expected_result[i].x);
         assert(derived_result[i].y == expected_result[i].y);
