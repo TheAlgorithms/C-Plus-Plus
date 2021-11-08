@@ -22,9 +22,9 @@
  * points be sorting them with respect to the bottom-most point. Once the points
  * are sorted, they form a simple closed path.
  * The sorting criteria is to use the orientation to compare angles without
- *actually computing them (See the compare() function below) because computation
- *of actual angles would be inefficient since trigonometric functions are not
- *simple to evaluate.
+ * actually computing them (See the compare() function below) because computation
+ * of actual angles would be inefficient since trigonometric functions are not
+ * simple to evaluate.
  *
  * Accept or Reject Points
  * Once we have the closed path, the next step is to traverse the path and
