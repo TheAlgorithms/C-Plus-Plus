@@ -30,10 +30,10 @@
  * Once we have the closed path, the next step is to traverse the path and
  * remove concave points on this path using orientation. The first two points in
  * sorted array are always part of Convex Hull. For remaining points, we keep
- *track of recent three points, and find the angle formed by them. Let the three
- *points be prev(p), curr(c) and next(n). If orientation of these points
- *(considering them in same order) is not counterclockwise, we discard c,
- *otherwise we keep it.
+ * track of recent three points, and find the angle formed by them. Let the three
+ * points be prev(p), curr(c) and next(n). If the orientation of these points
+ * (considering them in the same order) is not counterclockwise, we discard c,
+ * otherwise we keep it.
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
