@@ -35,8 +35,9 @@
  *
  */
 
-#include <cassert>     /// for assert
-#include <cmath>       /// for math functions
+#include <cassert>  /// for assert
+#include <cmath>    /// for math functions
+#include <cmath>
 #include <cstdint>     /// for integer allocation
 #include <cstdlib>     /// for std::atof
 #include <functional>  /// for std::function
