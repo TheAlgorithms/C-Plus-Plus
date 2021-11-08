@@ -10,7 +10,7 @@
  * Euclidean space, or equivalently as the set of all convex combinations of
  * points in the subset. For a bounded subset of the plane, the convex hull may
  * be visualized as the shape enclosed by a rubber band stretched around the
- *subset.
+ * subset.
  *
  * The worst case time complexity of Jarvis’s Algorithm is O(n^2). Using
  * Graham’s scan algorithm, we can find Convex Hull in O(nLogn) time.
