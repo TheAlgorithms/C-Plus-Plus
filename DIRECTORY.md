@@ -102,6 +102,7 @@
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/matrix_chain_multiplication.cpp)
   * [Minimum Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/minimum_edit_distance.cpp)
   * [Palindrome Partitioning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/palindrome_partitioning.cpp)
+  * [Partition Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/partition_problem.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/shortest_common_supersequence.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
