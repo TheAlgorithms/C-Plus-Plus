@@ -43,10 +43,10 @@ optimized bubble sort algorithm. It's right down there.
 int main() {
     int n;
     bool swap_check = true;
-    std::cout << "Enter the amount of numbers to sort: ";
+    std::cout << "Enter the amount of numbers to sort: " std::endl;
     std::cin >> n;
     std::vector<int> numbers;
-    std::cout << "Enter " << n << " numbers: ";
+    std::cout << "Enter " << n << " numbers: " std::endl;
     int num;
 
     // Input
@@ -71,10 +71,10 @@ int main() {
     }
 
     // Output
-    std::cout << "\nSorted Array : ";
+    std::cout << "\nSorted Array : " std::endl;
     for (int i = 0; i < numbers.size(); i++) {
         if (i != numbers.size() - 1) {
-            std::cout << numbers[i] << ", ";
+            std::cout << numbers[i] << ", " std::endl;
         } else {
             std::cout << numbers[i] << std::endl;
         }
