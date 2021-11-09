@@ -84,7 +84,7 @@ bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
  * @brief Self-test implementations
  * @returns void
  *******************************************************************************/
-void test() {
+static void test() {
     std::vector<uint64_t> arr = {{1, 3, 3, 2, 3, 2}};
     uint64_t n = arr.size();
     bool expected_result = true;
