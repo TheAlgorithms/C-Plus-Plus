@@ -49,7 +49,7 @@ namespace dp {
          * @param size Size of the vector.
          * @returns @param bool whether the vector can be partitioned or not.
          *******************************************************************************/
-        bool findPartiion(std::vector<uint64_t> &arr, uint64_t size) {
+        bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
             uint64_t sum = std::accumulate(arr.begin() , arr.end() , 0); // Calculate sum of all elements
 
             if (sum % 2 != 0) return false;     //if sum is odd, it cannot be divided into two equal sum
