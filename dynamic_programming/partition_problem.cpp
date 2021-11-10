@@ -27,10 +27,10 @@
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
  *******************************************************************************/
+#include <cassert>   /// for assert
 #include <iostream>  /// for IO Operations
 #include <numeric>   /// for std::accumulate
 #include <vector>    /// for std::vector
-#include <cassert>   /// for assert
 
 /******************************************************************************
  * @namespace dp
