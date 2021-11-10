@@ -30,6 +30,7 @@
 #include <iostream>  /// for IO Operations
 #include <numeric>   /// for std::accumulate
 #include <vector>    /// for std::vector
+#include <cassert>   /// for assert
 
 /******************************************************************************
  * @namespace dp
