@@ -1,7 +1,7 @@
 /******************************************************************************
  * @file
  * @brief Implementation of the [Partition
- *Problem](https://en.wikipedia.org/wiki/Partition_problem )
+ * Problem](https://en.wikipedia.org/wiki/Partition_problem )
  * @details
  * The partition problem, or number partitioning, is the task of deciding
  * whether a given multiset S of positive integers can be partitioned into two
