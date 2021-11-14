@@ -39,6 +39,9 @@ var annotated_dup =
       [ "Entry", "d9/dde/structdouble__hashing_1_1_entry.html", "d9/dde/structdouble__hashing_1_1_entry" ]
     ] ],
     [ "geometry", "d5/d5f/namespacegeometry.html", [
+      [ "grahamscan", null, [
+        [ "Point", "d7/d48/structgeometry_1_1grahamscan_1_1_point.html", null ]
+      ] ],
       [ "jarvis", null, [
         [ "Convexhull", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull" ],
         [ "Point", "d9/d5a/structgeometry_1_1jarvis_1_1_point.html", null ]
@@ -141,8 +144,8 @@ var annotated_dup =
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
-    [ "compare", "d1/db3/structcompare.html", null ],
     [ "Compare", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
+    [ "compare", "d1/db3/structcompare.html", null ],
     [ "Complex", "da/d5a/class_complex.html", "da/d5a/class_complex" ],
     [ "CycleCheck", "d3/dbb/class_cycle_check.html", "d3/dbb/class_cycle_check" ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],

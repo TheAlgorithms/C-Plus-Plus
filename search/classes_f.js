@@ -11,7 +11,7 @@ var searchData=
   ['piecewise_5flinear_5fdistribution_8',['piecewise_linear_distribution',['http://en.cppreference.com/w/cpp/numeric/random/piecewise_linear_distribution.html',0,'std']]],
   ['placeholders_9',['placeholders',['http://en.cppreference.com/w/cpp/utility/functional/placeholders.html',0,'std']]],
   ['plus_10',['plus',['http://en.cppreference.com/w/cpp/utility/functional/plus.html',0,'std']]],
-  ['point_11',['Point',['../d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html',1,'ciphers::elliptic_curve_key_exchange::Point'],['../d9/d5a/structgeometry_1_1jarvis_1_1_point.html',1,'geometry::jarvis::Point'],['../d8/dc8/struct_point.html',1,'Point']]],
+  ['point_11',['Point',['../d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html',1,'ciphers::elliptic_curve_key_exchange::Point'],['../d7/d48/structgeometry_1_1grahamscan_1_1_point.html',1,'geometry::grahamscan::Point'],['../d9/d5a/structgeometry_1_1jarvis_1_1_point.html',1,'geometry::jarvis::Point'],['../d8/dc8/struct_point.html',1,'Point']]],
   ['pointer_5fsafety_12',['pointer_safety',['http://en.cppreference.com/w/cpp/memory/gc/pointer_safety.html',0,'std']]],
   ['pointer_5ftraits_13',['pointer_traits',['http://en.cppreference.com/w/cpp/memory/pointer_traits.html',0,'std']]],
   ['poisson_5fdistribution_14',['poisson_distribution',['http://en.cppreference.com/w/cpp/numeric/random/poisson_distribution.html',0,'std']]],
