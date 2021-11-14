@@ -7,5 +7,6 @@ var searchData=
   ['divide_5fand_5fconquer_4',['divide_and_conquer',['../dd/dba/namespacedivide__and__conquer.html',1,'']]],
   ['dnf_5fsort_5',['dnf_sort',['../d9/d75/namespacednf__sort.html',1,'']]],
   ['double_5fhashing_6',['double_hashing',['../d0/d65/namespacedouble__hashing.html',1,'']]],
-  ['dynamic_5fprogramming_7',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]]
+  ['dp_7',['dp',['../df/d88/namespacedp.html',1,'']]],
+  ['dynamic_5fprogramming_8',['dynamic_programming',['../dd/d24/namespacedynamic__programming.html',1,'']]]
 ];

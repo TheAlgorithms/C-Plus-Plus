@@ -151,7 +151,7 @@ var NAVTREEINDEX =
 "dc/d82/area_8cpp.html#ac5803413618fcfb922cb32c6db0fc864",
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ab7fd890a7ccf756e4b3313087b76a8c2",
 "df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a6b52b7851750f28d53508e63c52a69f7",
-""
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

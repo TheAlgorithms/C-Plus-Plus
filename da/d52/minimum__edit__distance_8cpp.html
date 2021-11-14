@@ -206,7 +206,7 @@ Algorithm</h3>
 <p >returning the minimum cost of operations needed to convert str1 to str2</p>
 <div class="fragment"><div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                                                            {<span class="comment"></span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">  /// Create a table to store results of subproblems</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt;dp(m+1, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(n+1)); <span class="comment">/// creasting 2D vector dp to store the results of subproblems</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span>  <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt;<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(m+1, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(n+1)); <span class="comment">/// creasting 2D vector dp to store the results of subproblems</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">  /// Fill d[][] in bottom up manner</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span>  <span class="keywordflow">for</span> (uint64_t i = 0; i &lt;= m; i++) {</div>
@@ -214,34 +214,35 @@ Algorithm</h3>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">      /// If first string is empty, only option is to</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">      /// insert all characters of second string</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span>      <span class="keywordflow">if</span> (i == 0) {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        dp[i][j] = j; <span class="comment">/// Minimum operations = j</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][j] = j; <span class="comment">/// Minimum operations = j</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">      /// If second string is empty, only option is to</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">      /// remove all characters of second string</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (j == 0) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        dp[i][j] = i; <span class="comment">/// Minimum operations = i</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][j] = i; <span class="comment">/// Minimum operations = i</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">      /// If last characters are same, ignore last char</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">      /// and recur for remaining string</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"></span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (str1[i - 1] == str2[j - 1]) {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        dp[i][j] = dp[i - 1][j - 1];</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][j] = <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i - 1][j - 1];</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      }</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">      /// If the last character is different, consider all</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">      /// possibilities and find the minimum</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"></span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        dp[i][j] = 1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>(dp[i][j - 1],      <span class="comment">// Insert</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                           dp[i - 1][j],      <span class="comment">// Remove</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                           dp[i - 1][j - 1]); <span class="comment">// Replace</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][j] = 1 + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a>(<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i][j - 1],      <span class="comment">// Insert</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                           <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i - 1][j],      <span class="comment">// Remove</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                           <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[i - 1][j - 1]); <span class="comment">// Replace</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">return</span> dp[m][n]; <span class="comment">/// returning the minimum cost of operations needed to convert str1 to str2</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[m][n]; <span class="comment">/// returning the minimum cost of operations needed to convert str1 to str2</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
+<div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition:</b> partition_problem.cpp:39</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>

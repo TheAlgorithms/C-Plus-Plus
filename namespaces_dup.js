@@ -68,6 +68,7 @@ var namespaces_dup =
     [ "divide_and_conquer", "dd/dba/namespacedivide__and__conquer.html", null ],
     [ "dnf_sort", "d9/d75/namespacednf__sort.html", null ],
     [ "double_hashing", "d0/d65/namespacedouble__hashing.html", "d0/d65/namespacedouble__hashing" ],
+    [ "dp", "df/d88/namespacedp.html", null ],
     [ "dynamic_programming", "dd/d24/namespacedynamic__programming.html", [
       [ "abbreviation", null, [
         [ "abbreviation", "d7/d73/abbreviation_8cpp.html#af53b2f647bee9c5b75ef8dd9ef685dc8", null ],
