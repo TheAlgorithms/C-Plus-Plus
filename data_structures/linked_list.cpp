@@ -34,7 +34,7 @@ namespace linked_list {
  * This function checks if the string passed consists
  * of only digits.
  * @param s To be checked if s contains only integers
- * @returns true if there are only only digits present in the string
+ * @returns true if there are only digits present in the string
  * @returns false if any other character is found
  */
 bool isDigit(const std::string& s) {
