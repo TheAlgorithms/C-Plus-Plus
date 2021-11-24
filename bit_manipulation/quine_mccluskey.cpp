@@ -2,14 +2,29 @@
  * @file quine_mccluskey.cpp
  * @author [jang-jaehyuk](https://github.com/jang-jaehyuk)
  * @brief Implementation of [minimization of
- * Boolean functions](https://en.wikipedia.org/wiki/Quine-McCluskey_algorithm).
+ * Boolean functions](https://en.wikipedia.org/wiki/Quine-McCluskey_algorithm)
+ * @details The Quine-McCluskey algorithm is an algorithm that minimizes logical expressions.
+ * The minimum form of a logical function can be obtained deterministically.
+ * f_{A,B,C,D}=BC'D'+AB'+AC
+ * The above expression minimizes the following expression and is logically equivalent.
+ * f_{A,B,C,D}=A'BC'D'+AB'C'D'+AB'C'D+AB'CD'+AB'CD+ABC'D'+ABCD'+ABCD
+ * The algorithm goes through two main steps.
+ * 1. Find all the Prime Implicants of a given function.
+ * 2. Find the Essential Prime Implicant from the candidate term table using the candidate terms.
  */
 
 #include <iostream> /// for io operations
 #include <vector> /// for store the implicant
 #include <algorithm> /// for sorting implicant
+#include <string>	/// for string
+#include <cassert>   /// for assert
 
-using namespace std;
+using std::cout;
+using std::vector;
+using std::cin;
+using std::endl;
+using std::min;
+using std::string;
 
 /**
  * @brief This structure is for organizing the bits.
@@ -28,6 +43,9 @@ typedef struct BitNode {
  * @for implementing an algorithm.
  */
 class McCluskey {
+	vector<BitNode> columnlist[6];
+	vector<BitNode> pi;
+	vector<BitNode> epi;
 	int select[16];	/// The selected number is initialized to 1 in this array.
 public:
 	/**
@@ -38,40 +56,39 @@ public:
 	}
 	/**
 	 * @brief This is a function that receives a number from 0 to 15, creates a node, and adds it to the vector.
+	 * param1 array of selected numbers
+	 * parma2 number of selected numbers
 	 * @return a vector of nodes for the selected numbers
 	 */
-	vector<BitNode> selectNum() {
+	vector<BitNode> selectNum(int *num, int cnt) {
 		BitNode selectN;
 		vector<BitNode> v;
-		int n;	///variable to be input
-		do {
+
+		for (int i = 0; i < cnt; i++) {
 			selectN.a = 0;
 			selectN.b = 0;
 			selectN.c = 0;
 			selectN.d = 0;
 			selectN.howmany1 = 0;
 			selectN.v.clear();
-
-			cin >> n;
-
-			select[n] = 1;
+			select[num[i]] = 1;
 			// Convert selected number to 8421 bit
-			if ((n % 2) == 1) {
+			if ((num[i] % 2) == 1) {
 				selectN.d = 1;
 			}
-			if ((n % 4) > 1) {
+			if ((num[i] % 4) > 1) {
 				selectN.c = 1;
 			}
-			if ((n % 8) > 3) {
+			if ((num[i] % 8) > 3) {
 				selectN.b = 1;
 			}
-			if (n > 7) {
+			if (num[i] > 7) {
 				selectN.a = 1;
 			}
 			selectN.howmany1 = count1(selectN.a, selectN.b, selectN.c, selectN.d);
-			selectN.v.push_back(n);
+			selectN.v.push_back(num[i]);
 			v.push_back(selectN);
-		} while (getc(stdin) == ' ');	///until you press enter
+		}
 		return v;
 	}
 	/**
@@ -230,8 +247,8 @@ public:
 	* m(8,10,12)	     X    X	       X
 	* m(10,11,15)* 			  X    X	   X
 	* in the first column, with minterm 4, there is only one "X".
-	* This means that m(4,12) is essential. So we place a star next to it. 
-	* Minterm 15 also has only one "X", so m(10,11,14,15) is also essential. 
+	* This means that m(4,12) is essential. So we place a star next to it.
+	* Minterm 15 also has only one "X", so m(10,11,14,15) is also essential.
 	* Now all columns with one "X" are covered.
 	* @param exam) vector in which pi exists
 	* @return vector<BitNode>& epi
@@ -325,6 +342,7 @@ public:
 			pushOk = true;
 			additionEpi.v.clear();
 		}
+		pi.clear();
 		return epi;
 	}
 
@@ -333,72 +351,109 @@ public:
 	* @param epi vector
 	* @return void
 	*/
-	void prettyprint(vector<BitNode>& epi) {
+	string prettyprint(vector<BitNode>& epi) {
+		string outst;
 		for (unsigned int i = 0; i < epi.size(); i++) {
 			if ((epi[i].a == 2) && (epi[i].b == 2) && (epi[i].c == 2) && (epi[i].d == 2)) {
 				printf("1");
+				outst += '1';
 			}
 			if (epi[i].a == 1) {
 				printf("A");
+				outst += 'A';
 			}
 			else if (epi[i].a == 0) {
 				printf("A'");
+				outst += 'A\'';
 			}
 			if (epi[i].b == 1) {
 				printf("B");
+				outst += 'B';
 			}
 			else if (epi[i].b == 0) {
 				printf("B'");
+				outst += 'B\'';
 			}
 			if (epi[i].c == 1) {
 				printf("C");
+				outst += 'C';
 			}
 			else if (epi[i].c == 0) {
 				printf("C'");
+				outst += 'C\'';
 			}
 			if (epi[i].d == 1) {
 				printf("D");
+				outst += 'D';
 			}
 			else if (epi[i].d == 0) {
 				printf("D'");
+				outst += 'D\'';
 			}
 			if ((i < epi.size() - 1) && (!equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
 				printf(" + ");
+				outst += ' + ';
 			}
 			else if ((i < epi.size() - 1) && (equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
 				printf(" or ");
+				outst += ' or ';
 			}
 		}
+		epi.clear();
+		memset(select, 0, sizeof(int) * 16);
+		return outst;
+	}
+	/**
+	* @brief execution function
+	* 
+	* @return void
+	*/
+	string quineExe(int* num, int cnt) {
+		columnlist[0] = selectNum(num, cnt);
+		int count = 0;
+		while (columnlist[count].size() != 0) {	// until no merge
+			columnlist[count + 1] = mergingBit(columnlist[count]);
+			delNotPi(columnlist[count], columnlist[count + 1]);
+			for (unsigned int i = 0; i < columnlist[count].size(); i++) {
+				pi.push_back(columnlist[count][i]);
+			}
+			columnlist[count].clear();
+			count++;
+		}
+		epi = findEpi(pi);
+		return prettyprint(epi);
 	}
 };
-int main() {
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+
 	McCluskey quine;
-	vector<BitNode> columnlist[6];
-	vector<BitNode> pi;
-	vector<BitNode> epi;
-	columnlist[0] = quine.selectNum();
-	/**
-	* @sample input 
-	* 0 1 2 5 6 7 8 9 10 14
-	**/
+	int cnt = 0;
+	string out1("B'C' + CD' + A'BD");	///expected output
+	string out2("B'C' + BC + A'B' or A'C"); ///expected output
+	string out3("B'C'D + A'B'C + A'BC' + BCD"); ///expected output
+	int ex1[] = { 0, 1, 2, 5, 6, 7, 8, 9, 10, 14 };
+	cnt = sizeof(ex1)/sizeof(int);
+	assert(out1.compare(quine.quineExe(ex1, cnt)));
+	cout << endl;
 
-	int count = 0;
-	while (columnlist[count].size() != 0) {	// until no merge
-		columnlist[count + 1] = quine.mergingBit(columnlist[count]);
-		quine.delNotPi(columnlist[count], columnlist[count + 1]);
-		for (unsigned int i = 0; i < columnlist[count].size(); i++) {
-			pi.push_back(columnlist[count][i]);
-		}
-		columnlist[count].clear();
-		count++;
-	}
+	int ex2[] = { 0, 1, 2, 3, 6, 7, 8, 9, 14, 15 };
+	cnt = sizeof(ex2) / sizeof(int);
+	assert(out2.compare(quine.quineExe(ex2, cnt)));
+	cout << endl;
 
-	epi = quine.findEpi(pi);
-
-	quine.prettyprint(epi);
-	/**
-	* @sample output
-	* B'C' + CD' + A'BD
-	**/
+	int ex3[] = { 1, 2, 3, 4, 5, 7, 9, 15 };
+	cnt = sizeof(ex3) / sizeof(int);
+	assert(out3.compare(quine.quineExe(ex3, cnt)));
+}
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+	test();
 	return 0;
 }
