@@ -1,5 +1,5 @@
 /**
- * @file quine_macluskey.cpp
+ * @file
  * @author [jang-jaehyuk](https://github.com/jang-jaehyuk)
  * @brief Implementation of [minimization of
  * Boolean functions](https://en.wikipedia.org/wiki/Quine-McCluskey_algorithm).
