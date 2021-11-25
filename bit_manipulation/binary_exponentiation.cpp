@@ -1,10 +1,11 @@
 /*
     author : @sishir2001
 */
+#include <cassert>
 #include <iostream>
 using namespace std;
 
-long binaryExponention(int x, int n) {
+long binary_exponention(int x, int n) {
     // @param x : base number
     // @param n : exponent
     // T(N) = O(log(n))
@@ -20,11 +21,13 @@ long binaryExponention(int x, int n) {
     }
     return res;
 }
+void test() {
+    assert(binary_exponention(2, 2) == 4);
+    assert(binary_exponention(3, 2) == 9);
+    assert(binary_exponention(4, 2) == 16);
+}
 
 int main(int argc, char *argv[]) {
-    int x, n;
-    cout << "Enter x(base) and n(exponent):";
-    cin >> x >> n;
-    cout << "Power(" << x << "," << n << ") : " << binaryExponention(x, n);
+    test();
     return 0;
 }
