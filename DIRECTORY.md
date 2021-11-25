@@ -17,6 +17,7 @@
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
+  * [Quine Mccluskey](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/quine_mccluskey.cpp)
 
 ## Ciphers
   * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/a1z26_cipher.cpp)
