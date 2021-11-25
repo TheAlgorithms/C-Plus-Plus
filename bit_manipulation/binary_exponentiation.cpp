@@ -42,7 +42,11 @@ long binaryExponentiation(int x, int n) {
 }
 }  // namespace binary_exponentiation
 }  // namespace bit_manipulation
-void test() {
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
     assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
                2, 2) == 4);  // x = 2 n = 2 return 4
     assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
