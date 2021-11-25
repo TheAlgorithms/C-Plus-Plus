@@ -8,7 +8,7 @@
  **/
 
 #include <cassert>   /// for assert
-#include <iostream>  /// for IO
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace bit_manipulation
