@@ -1,10 +1,10 @@
 /**
- * @bit_manipulation
+ * @file
  * @brief Binary exponentiation for calculating power
  * Implemented this algorithm :https://cp-algorithms.com/algebra/binary-exp.html
  * Time complexity : O(log(n))
  * Space complexity : O(1)
- * @author Jaladi Saai Sishir(https://github.com/sishir2001)
+ * @author [Jaladi Saai Sishir](https://github.com/sishir2001)
  **/
 
 #include <cassert>   /// for assert
@@ -28,8 +28,8 @@ namespace binary_exponentiation {
  * @param n is the exponent for the power
  * @returns power(x,n) i.e x^n of type long (64 bits)
  */
-long binaryExponentiation(int x, int n) {
-    long res = 1;  // variable for storing the final result
+std::int64_t binaryExponentiation(std::int64_t x, std::int64_t n) {
+    std::int64_t res = 1;  // variable for storing the final result
     while (n != 0) {
         if (n % 2 == 1) {
             // last bit is 1
