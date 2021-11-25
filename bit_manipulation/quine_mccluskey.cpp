@@ -1,22 +1,24 @@
 /**
- * @file quine_mccluskey.cpp
+ * @file
  * @author [jang-jaehyuk](https://github.com/jang-jaehyuk)
  * @brief Implementation of [minimization of
  * Boolean functions](https://en.wikipedia.org/wiki/Quine-McCluskey_algorithm)
- * @details The Quine-McCluskey algorithm is an algorithm that minimizes logical expressions.
+ * @details
+ * The Quine-McCluskey algorithm is an algorithm that minimizes logical expressions.
  * The minimum form of a logical function can be obtained deterministically.
  * f_{A,B,C,D}=BC'D'+AB'+AC
  * The above expression minimizes the following expression and is logically equivalent.
  * f_{A,B,C,D}=A'BC'D'+AB'C'D'+AB'C'D+AB'CD'+AB'CD+ABC'D'+ABCD'+ABCD
- * The algorithm goes through two main steps.
+ * 
+ * ### Algorithm
  * 1. Find all the Prime Implicants of a given function.
  * 2. Find the Essential Prime Implicant from the candidate term table using the candidate terms.
  */
 
-#include <iostream> /// for io operations
-#include <vector> /// for store the implicant
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 #include <algorithm> /// for sorting implicant
-#include <string>	/// for string
+#include <string>    /// for string operations
 #include <cassert>   /// for assert
 
 using std::cout;
@@ -432,9 +434,9 @@ static void test() {
 
 	McCluskey quine;
 	int cnt = 0;
-	string out1("B'C' + CD' + A'BD");	///expected output
-	string out2("B'C' + BC + A'B' or A'C"); ///expected output
-	string out3("B'C'D + A'B'C + A'BC' + BCD"); ///expected output
+	string out1("B'C' + CD' + A'BD");	/// expected output
+	string out2("B'C' + BC + A'B' or A'C"); /// expected output
+	string out3("B'C'D + A'B'C + A'BC' + BCD"); /// expected output
 	int ex1[] = { 0, 1, 2, 5, 6, 7, 8, 9, 10, 14 };
 	cnt = sizeof(ex1)/sizeof(int);
 	assert(out1.compare(quine.quineExe(ex1, cnt)));
@@ -454,6 +456,6 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-	test();
+	test();  // run self-test implementations
 	return 0;
 }
