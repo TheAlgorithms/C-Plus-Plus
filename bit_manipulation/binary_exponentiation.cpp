@@ -42,21 +42,15 @@ long binaryExponentiation(int x, int n) {
 }
 }  // namespace binary_exponentiation
 }  // namespace bit_manipulation
-void test() {
-    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
-               2, 2) == 4);  // x = 2 n = 2 return 4
-    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
-               3, 2) == 9);  // x = 3 n = 2 return 9
-    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
-               4, 2) == 16);  // x = 4 n = 2 return 16
-    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
-               5, 2) == 25);  // x = 5 n = 2 return 25
-    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(
-               6, 2) == 36);  // x = 6 n = 2 return 36
-    std::cout << "All tests passed"
-              << "\n";
-}
+void test(){
 
+    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(2, 2) == 4);  // x = 2 n = 2 return 4
+    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(3, 2) == 9);  // x = 3 n = 2 return 9
+    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(4, 2) == 16);  // x = 4 n = 2 return 16
+    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(5, 2) == 25);  // x = 5 n = 2 return 25
+    assert(bit_manipulation::binary_exponentiation::binaryExponentiation(6, 2) == 36);  // x = 6 n = 2 return 36
+    std::cout << "All tests passed"<< "\n";
+}
 /**
  * @brief Main function
  * @returns 0 on exit
