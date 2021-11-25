@@ -28,7 +28,7 @@ namespace binary_exponentiation {
  * @param n is the exponent for the power
  * @returns power(x,n) i.e x^n of type long (64 bits)
  */
-long binaryExponentiation(int x, int n) {
+int64_t binaryExponentiation(int x, int n) {
     int64_t res = 1;  // variable for storing the final result
     while (n != 0) {
         if (n % 2 == 1) {
