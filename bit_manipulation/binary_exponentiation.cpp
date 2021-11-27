@@ -1,7 +1,8 @@
 /**
  * @file
  * @brief Binary exponentiation for calculating power
- * Implemented this algorithm :https://cp-algorithms.com/algebra/binary-exp.html
+ * @details
+ * reference link :https://cp-algorithms.com/algebra/binary-exp.html
  * Time complexity : O(log(n))
  * Space complexity : O(1)
  * @author [Jaladi Saai Sishir](https://github.com/sishir2001)
