@@ -42,6 +42,7 @@ int64_t binaryExponentiation(int x, int n) {
 }
 }  // namespace binary_exponentiation
 }  // namespace bit_manipulation
+
 /**
  * @brief Self-test implementations
  * @returns void
