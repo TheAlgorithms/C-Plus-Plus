@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Binary exponentiation for calculating power
+ * @brief Implementation of the [Binary exponentiation](https://cp-algorithms.com/algebra/binary-exp.html) algorithm for calculating power
  * @details
  * Time complexity : O(log(n))
  * Space complexity : O(1)
