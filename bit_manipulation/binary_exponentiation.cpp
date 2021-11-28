@@ -18,7 +18,7 @@ namespace bit_manipulation {
 /**
  * @namespace binary_exponentiation
  * @brief Functions for the [binary
- * exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
+ * exponentiation](https://cp-algorithms.com/algebra/binary-exp.html) algorithm implementation
  * implementation
  */
 namespace binary_exponentiation {
