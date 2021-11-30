@@ -9,7 +9,7 @@
  * f_{A,B,C,D}=BC'D'+AB'+AC
  * The above expression minimizes the following expression and is logically equivalent.
  * f_{A,B,C,D}=A'BC'D'+AB'C'D'+AB'C'D+AB'CD'+AB'CD+ABC'D'+ABCD'+ABCD
- * 
+ *
  * ### Algorithm
  * 1. Find all the Prime Implicants of a given function.
  * 2. Find the Essential Prime Implicant from the candidate term table using the candidate terms.
@@ -62,7 +62,7 @@ public:
 	 * parma2 number of selected numbers
 	 * @return a vector of nodes for the selected numbers
 	 */
-	vector<BitNode> selectNum(int *num, int cnt) {
+	vector<BitNode> selectNum(int* num, int cnt) {
 		BitNode selectN;
 		vector<BitNode> v;
 
@@ -260,14 +260,14 @@ public:
 		vector<int> epirow;
 		int picollect[16];
 		memset(picollect, 0, sizeof(int) * 16);
-		for (unsigned int i = 0; i < pi.size(); i++) {				// Counts the number that became pi
-			for (unsigned int j = 0; j < pi[i].v.size(); j++) {		// (since we only have to have one numeric value in the column to find the epi).
+		for (uint32_t i = 0; i < pi.size(); i++) {				// Counts the number that became pi
+			for (uint32_t j = 0; j < pi[i].v.size(); j++) {		// (since we only have to have one numeric value in the column to find the epi).
 				picollect[pi[i].v[j]]++;
 			}
 		}
 
-		for (unsigned int i = 0; i < pi.size(); i++) {			// Find pi with only one number in the column and push_back it to the epi vector.
-			for (unsigned int j = 0; j < pi[i].v.size(); j++) {
+		for (uint32_t i = 0; i < pi.size(); i++) {			// Find pi with only one number in the column and push_back it to the epi vector.
+			for (uint32_t j = 0; j < pi[i].v.size(); j++) {
 				for (int k = 0; k < 16; k++) {
 					bool duplicateImplicant = false;
 					if ((picollect[k] == 1) && (pi[i].v[j] == k)) {
@@ -283,7 +283,7 @@ public:
 				}
 			}
 		}
-		for (unsigned int i = 0; i < epi.size(); i++) {					// Since there is only one column number, the row numbers belonging to epi are separately stored in a vector.
+		for (uint32_t i = 0; i < epi.size(); i++) {					// Since there is only one column number, the row numbers belonging to epi are separately stored in a vector.
 			for (unsigned int j = 0; j < epi[i].v.size(); j++) {		// the row numbers belonging to epi are separately stored in a vector.
 				select[epi[i].v[j]] = 0;
 			}
@@ -300,9 +300,9 @@ public:
 		BitNode additionEpi;
 		vector<vector<BitNode>> addEpi;	//additional epi
 		int count = 0;
-		for (unsigned int i = 0; i < pi.size(); i++) {
-			for (unsigned int j = 0; j < pi[i].v.size(); j++) {
-				for (unsigned int k = 0; k < epirow.size(); k++) {
+		for (uint32_t i = 0; i < pi.size(); i++) {
+			for (uint32_t j = 0; j < pi[i].v.size(); j++) {
+				for (uint32_t k = 0; k < epirow.size(); k++) {
 					if (epirow[k] == pi[i].v[j]) {
 						areUEpi = true;
 						additionEpi.v.push_back(pi[i].v[j]);
@@ -322,7 +322,7 @@ public:
 				* @details If 0 and 1 are included to be epi
 				* (0,2) cannot be pushed_back if (0,1) already exists in epi
 				*/
-				for (unsigned int l = 0; l < epi.size(); l++) {
+				for (uint32_t l = 0; l < epi.size(); l++) {
 					if (epi[l].v.size() > additionEpi.v.size()) {
 						if (belongsToArr(epi[l].v, additionEpi.v, epi[l].v.size(), additionEpi.v.size())) {
 							pushOk = false;
@@ -355,7 +355,7 @@ public:
 	*/
 	string prettyprint(vector<BitNode>& epi) {
 		string outst;
-		for (unsigned int i = 0; i < epi.size(); i++) {
+		for (uint32_t i = 0; i < epi.size(); i++) {
 			if ((epi[i].a == 2) && (epi[i].b == 2) && (epi[i].c == 2) && (epi[i].d == 2)) {
 				printf("1");
 				outst += '1';
@@ -407,7 +407,7 @@ public:
 	}
 	/**
 	* @brief execution function
-	* 
+	*
 	* @return void
 	*/
 	string quineExe(int* num, int cnt) {
@@ -416,7 +416,7 @@ public:
 		while (columnlist[count].size() != 0) {	// until no merge
 			columnlist[count + 1] = mergingBit(columnlist[count]);
 			delNotPi(columnlist[count], columnlist[count + 1]);
-			for (unsigned int i = 0; i < columnlist[count].size(); i++) {
+			for (uint32_t i = 0; i < columnlist[count].size(); i++) {
 				pi.push_back(columnlist[count][i]);
 			}
 			columnlist[count].clear();
@@ -438,7 +438,7 @@ static void test() {
 	string out2("B'C' + BC + A'B' or A'C"); /// expected output
 	string out3("B'C'D + A'B'C + A'BC' + BCD"); /// expected output
 	int ex1[] = { 0, 1, 2, 5, 6, 7, 8, 9, 10, 14 };
-	cnt = sizeof(ex1)/sizeof(int);
+	cnt = sizeof(ex1) / sizeof(int);
 	assert(out1.compare(quine.quineExe(ex1, cnt)));
 	cout << endl;
 
