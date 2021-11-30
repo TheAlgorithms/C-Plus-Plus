@@ -354,51 +354,51 @@ public:
 	* @return void
 	*/
 	string prettyprint(vector<BitNode>& epi) {
-		string outst;
+		string outst = "";
 		for (uint32_t i = 0; i < epi.size(); i++) {
 			if ((epi[i].a == 2) && (epi[i].b == 2) && (epi[i].c == 2) && (epi[i].d == 2)) {
 				printf("1");
-				outst += '1';
+				outst += "1";
 			}
 			if (epi[i].a == 1) {
 				printf("A");
-				outst += 'A';
+				outst += "A";
 			}
 			else if (epi[i].a == 0) {
 				printf("A'");
-				outst += 'A\'';
+				outst += "A'";
 			}
 			if (epi[i].b == 1) {
 				printf("B");
-				outst += 'B';
+				outst += "B";
 			}
 			else if (epi[i].b == 0) {
 				printf("B'");
-				outst += 'B\'';
+				outst += "B'";
 			}
 			if (epi[i].c == 1) {
 				printf("C");
-				outst += 'C';
+				outst += "C";
 			}
 			else if (epi[i].c == 0) {
 				printf("C'");
-				outst += 'C\'';
+				outst += "C'";
 			}
 			if (epi[i].d == 1) {
 				printf("D");
-				outst += 'D';
+				outst += "D";
 			}
 			else if (epi[i].d == 0) {
 				printf("D'");
-				outst += 'D\'';
+				outst += "D'";
 			}
 			if ((i < epi.size() - 1) && (!equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
 				printf(" + ");
-				outst += ' + ';
+				outst += "+";
 			}
 			else if ((i < epi.size() - 1) && (equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
 				printf(" or ");
-				outst += ' or ';
+				outst += "or";
 			}
 		}
 		epi.clear();
