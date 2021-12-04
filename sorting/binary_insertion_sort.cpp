@@ -4,7 +4,12 @@
  * (Insertion Sort)](https://en.wikipedia.org/wiki/Insertion_sort)
  *
  * \details
- * If the cost of comparisons exceeds the cost of swaps, as is the case for example with       * string keys stored by reference or with human interaction (such as choosing one of a pair   * displayed side-by-side), then using binary insertion sort may yield better performance.    * Binary insertion sort employs a binary search to determine the correct location to insert   * new elements, and therefore performs ⌈log2 n⌉ comparisons in the worst case. When each     * element in the array is searched for and inserted this is O(n log n).   
+ * If the cost of comparisons exceeds the cost of swaps, as is the case for example with 
+ * string keys stored by reference or with human interaction (such as choosing one of a pair
+ * displayed side-by-side), then using binary insertion sort may yield better performance.
+ * Binary insertion sort employs a binary search to determine the correct location to insert
+ * new elements, and therefore performs ⌈log2 n⌉ comparisons in the worst case.
+ * When each element in the array is searched for and inserted this is O(n log n).   
  * The algorithm as a whole still has a running time of O(n2) on average because of the series * of swaps required for each insertion.
  * However it has several advantages such as
  * 1. Easy to implement
