@@ -54,7 +54,7 @@ public:
 	* @brief Initialize the member variable as a constructor.
 	*/
 	McCluskey() {
-		wmemset(select, 0, sizeof(int) * 16);
+		memset(select, 0, sizeof(int) * 16);
 	}
 	/**
 	 * @brief This is a function that receives a number from 0 to 15, creates a node, and adds it to the vector.
@@ -259,7 +259,7 @@ public:
 		vector<BitNode> epi;
 		vector<int> epirow;
 		std::array<uint32_t, 16> picollect;
-		wmemset(picollect, 0, sizeof(int) * 16);
+		memset(picollect, 0, sizeof(int) * 16);
 		for (uint32_t i = 0; i < pi.size(); i++) {				// Counts the number that became pi
 			for (uint32_t j = 0; j < pi[i].v.size(); j++) {		// (since we only have to have one numeric value in the column to find the epi).
 				picollect[pi[i].v[j]]++;
@@ -402,7 +402,7 @@ public:
 			}
 		}
 		epi.clear();
-		wmemset(select, 0, sizeof(int) * 16);
+		memset(select, 0, sizeof(int) * 16);
 		return outst;
 	}
 	/**
