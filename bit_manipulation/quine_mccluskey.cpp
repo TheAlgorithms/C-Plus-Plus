@@ -32,12 +32,12 @@ using std::string;
  * @brief This structure is for organizing the bits.
  */
 typedef struct BitNode {
-	vector<int> v; /// combined numbers or selected number
-	int a = 0;	/// first bit value 
-	int b = 0;	/// second bit value 
-	int c = 0;	/// third bit value 
-	int d = 0;	/// fourth bit value 
-	int howmany1 = 0;	/// number of 1
+	vector<uint32_t> v; /// combined numbers or selected number
+	uint32_t a = 0;	/// first bit value 
+	uint32_t b = 0;	/// second bit value 
+	uint32_t c = 0;	/// third bit value 
+	uint32_t d = 0;	/// fourth bit value 
+	uint32_t howmany1 = 0;	/// number of 1
 }BitNode;
 
 /**
@@ -66,7 +66,7 @@ public:
 		BitNode selectN;
 		vector<BitNode> v;
 
-		for (int i = 0; i < cnt; i++) {
+		for (uint32_t i = 0; i < cnt; i++) {
 			selectN.a = 0;
 			selectN.b = 0;
 			selectN.c = 0;
@@ -136,11 +136,11 @@ public:
 	vector<BitNode> mergingBit(vector<BitNode>& columnlist) {
 		BitNode selectN;
 		vector<BitNode> v;
-		for (unsigned int i = 0; i < columnlist.size() - 1; i++) {
-			for (unsigned int j = i + 1; j < columnlist.size(); j++) {
+		for (uint32_t i = 0; i < columnlist.size() - 1; i++) {
+			for (uint32_t j = i + 1; j < columnlist.size(); j++) {
 				if (comparebit(columnlist[j], columnlist[i]) == 1) { // merge when the condition is met while traversing
 					selectN.v.clear();
-					for (unsigned int k = 0; k < columnlist[i].v.size(); k++) {	//insert combined numbers
+					for (uint32_t k = 0; k < columnlist[i].v.size(); k++) {	//insert combined numbers
 						selectN.v.push_back(columnlist[i].v[k]);
 						selectN.v.push_back(columnlist[j].v[k]);
 					}
@@ -166,7 +166,7 @@ public:
 					}
 					selectN.howmany1 = count1(selectN.a, selectN.b, selectN.c, selectN.d);
 					bool duplicateImplicant = false;
-					for (unsigned int k = 0; k < v.size(); k++) {	// If there are duplicate terms before push_back, push_back is not performed.
+					for (uint32_t k = 0; k < v.size(); k++) {	// If there are duplicate terms before push_back, push_back is not performed.
 						if ((v[k].a == selectN.a) && (v[k].b == selectN.b) && (v[k].c == selectN.c) && (v[k].d == selectN.d)) {
 							duplicateImplicant = true;
 						}
@@ -192,7 +192,7 @@ public:
 	*/
 	void delNotPi(vector<BitNode>& columnlist1, vector<BitNode>& columnlist2) {
 		for (int i = columnlist1.size() - 1; i >= 0; i--) {
-			for (unsigned int j = 0; j < columnlist2.size(); j++) {
+			for (uint32_t j = 0; j < columnlist2.size(); j++) {
 				if (selectPi(columnlist1[i], columnlist2[j])) {
 					columnlist1.erase(columnlist1.begin() + i);
 					break;
@@ -211,8 +211,8 @@ public:
 	*/
 	bool selectPi(BitNode node1, BitNode node2) {
 		int commonCnt = 0;	//count on equal numbers
-		for (unsigned int i = 0; i < node1.v.size(); i++) {
-			for (unsigned int j = 0; j < node2.v.size(); j++) {
+		for (uint32_t i = 0; i < node1.v.size(); i++) {
+			for (uint32_tj = 0; j < node2.v.size(); j++) {
 				if (node1.v[i] == node2.v[j]) {
 					commonCnt++;
 				}
