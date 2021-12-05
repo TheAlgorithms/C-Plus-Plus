@@ -20,7 +20,7 @@
 #include <algorithm> /// for sorting implicant
 #include <string>    /// for string operations
 #include <cassert>   /// for assert
-
+#include <array>     /// for array
 using std::cout;
 using std::vector;
 using std::cin;
@@ -48,13 +48,13 @@ class McCluskey {
 	vector<BitNode> columnlist[6];
 	vector<BitNode> pi;
 	vector<BitNode> epi;
-	uint32_t select[16];	/// The selected number is initialized to 1 in this array.
+	std::array<uint32_t, 16> select;	/// The selected number is initialized to 1 in this array.
 public:
 	/**
 	* @brief Initialize the member variable as a constructor.
 	*/
 	McCluskey() {
-		memset(select, 0, sizeof(int) * 16);
+		wmemset(select, 0, sizeof(int) * 16);
 	}
 	/**
 	 * @brief This is a function that receives a number from 0 to 15, creates a node, and adds it to the vector.
@@ -258,8 +258,8 @@ public:
 	vector<BitNode> findEpi(vector<BitNode>& pi) {
 		vector<BitNode> epi;
 		vector<int> epirow;
-		uint32_t picollect[16];
-		memset(picollect, 0, sizeof(int) * 16);
+		std::array<uint32_t, 16> picollect;
+		wmemset(picollect, 0, sizeof(int) * 16);
 		for (uint32_t i = 0; i < pi.size(); i++) {				// Counts the number that became pi
 			for (uint32_t j = 0; j < pi[i].v.size(); j++) {		// (since we only have to have one numeric value in the column to find the epi).
 				picollect[pi[i].v[j]]++;
@@ -357,7 +357,7 @@ public:
 		string outst = "";
 		for (uint32_t i = 0; i < epi.size(); i++) {
 			if ((epi[i].a == 2) && (epi[i].b == 2) && (epi[i].c == 2) && (epi[i].d == 2)) {
-				printf("1");
+				cout << "1";
 				outst += "1";
 			}
 			if (epi[i].a == 1) {
@@ -365,44 +365,44 @@ public:
 				outst += "A";
 			}
 			else if (epi[i].a == 0) {
-				printf("A'");
+				cout << "A'";
 				outst += "A'";
 			}
 			if (epi[i].b == 1) {
-				printf("B");
+				cout << "B";
 				outst += "B";
 			}
 			else if (epi[i].b == 0) {
-				printf("B'");
+				cout << "B'";
 				outst += "B'";
 			}
 			if (epi[i].c == 1) {
-				printf("C");
+				cout << "C";
 				outst += "C";
 			}
 			else if (epi[i].c == 0) {
-				printf("C'");
+				cout << "C'";
 				outst += "C'";
 			}
 			if (epi[i].d == 1) {
-				printf("D");
+				cout << "D";
 				outst += "D";
 			}
 			else if (epi[i].d == 0) {
-				printf("D'");
+				cout << "D'";
 				outst += "D'";
 			}
 			if ((i < epi.size() - 1) && (!equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
-				printf(" + ");
+				cout << " + ";
 				outst += "+";
 			}
 			else if ((i < epi.size() - 1) && (equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
-				printf(" or ");
+				cout << " or ";
 				outst += "or";
 			}
 		}
 		epi.clear();
-		memset(select, 0, sizeof(int) * 16);
+		wmemset(select, 0, sizeof(int) * 16);
 		return outst;
 	}
 	/**
@@ -437,17 +437,17 @@ static void test() {
 	string out1("B'C' + CD' + A'BD");	/// expected output
 	string out2("B'C' + BC + A'B' or A'C"); /// expected output
 	string out3("B'C'D + A'B'C + A'BC' + BCD"); /// expected output
-	uint32_t ex1[] = { 0, 1, 2, 5, 6, 7, 8, 9, 10, 14 };
+	std::array<uint32_t, 10> ex1;
 	cnt = sizeof(ex1) / sizeof(int);
 	assert(out1.compare(quine.quineExe(ex1, cnt)));
 	cout << endl;
 
-	uint32_t ex2[] = { 0, 1, 2, 3, 6, 7, 8, 9, 14, 15 };
+	std::array<uint32_t, 10> ex2;
 	cnt = sizeof(ex2) / sizeof(int);
 	assert(out2.compare(quine.quineExe(ex2, cnt)));
 	cout << endl;
-
-	uint32_t ex3[] = { 1, 2, 3, 4, 5, 7, 9, 15 };
+	
+	std::array<uint32_t, 8> ex3;
 	cnt = sizeof(ex3) / sizeof(int);
 	assert(out3.compare(quine.quineExe(ex3, cnt)));
 }
