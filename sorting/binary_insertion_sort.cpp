@@ -37,10 +37,10 @@
  * \f{bmatrix}{10 &20 &30 &40 &50\f}
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
+#include <algorithm>    /// for algorithm functions
+#include <cassert>      /// for assert
+#include <iostream>     /// for IO operations
+#include <vector>       /// for working with vectors
 
 /**
  * \namespace sorting
@@ -58,12 +58,12 @@ namespace sorting {
  * \returns the index of most suitable position of val.
  */
 template<class T>
-int binary_search(std::vector<T> &arr,T val,int low,int high)
+int64_t binary_search(std::vector<T> &arr,T val,int64_t low,int64_t high)
 {
     if (high <= low)
         return (val > arr[low]) ? (low + 1) : low;
     
-    int mid = low + (high-low)/2;
+    int64_t mid = low + (high-low)/2;
     if(arr[mid]>val)
         return binary_search(arr,val,low,mid-1);
     else if(arr[mid]<val)
@@ -80,12 +80,12 @@ int binary_search(std::vector<T> &arr,T val,int low,int high)
  */
 template <typename T>
 void insertionSort_binsrch(std::vector<T> &arr) {
-    int n = arr.size();
+    int64_t n = arr.size();
 
-    for (int i = 1; i < n; i++) {
+    for (int64_t i = 1; i < n; i++) {
         T key = arr[i];
-        int j = i - 1;
-        int loc = sorting::binary_search(arr,key,0,j);
+        int64_t j = i - 1;
+        int64_t loc = sorting::binary_search(arr,key,0,j);
         while (j >= loc) {
             arr[j + 1] = arr[j];
             j--;
@@ -103,7 +103,7 @@ static void test() {
     /* descriptions of the following test */
     /* 1st test: 
        [5, -3, -1, -2, 7] returns [-3, -2, -1, 5, 7] */
-    std::vector<int> arr1({5, -3, -1, -2, 7});
+    std::vector<int64_t> arr1({5, -3, -1, -2, 7});
     std::cout << "Test 1... ";
     sorting::insertionSort_binsrch(arr1);
     assert(std::is_sorted(std::begin(arr1), std::end(arr1)));
@@ -111,7 +111,7 @@ static void test() {
 
     /* 2nd test: 
        [12, 26, 15, 91, 32, 54, 41] returns [12, 15, 26, 32, 41, 54, 91] */
-    std::vector<int> arr2({12, 26, 15, 91, 32, 54, 41});
+    std::vector<int64_t> arr2({12, 26, 15, 91, 32, 54, 41});
     std::cout << "Test 2... ";
     sorting::insertionSort_binsrch(arr2);
     assert(std::is_sorted(std::begin(arr2), std::end(arr2)));
