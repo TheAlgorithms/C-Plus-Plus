@@ -99,7 +99,7 @@ void insertionSort_binsrch(std::vector<T> &arr) {
  * @brief Self-test implementations
  * @returns void
  */
-void test() {
+static void test() {
     /* descriptions of the following test */
     /* 1st test: 
        [5, -3, -1, -2, 7] returns [-3, -2, -1, 5, 7] */
