@@ -20,7 +20,7 @@
 #include <algorithm> /// for sorting implicant
 #include <string>    /// for string operations
 #include <cassert>   /// for assert
-#include <array>     /// for array
+
 using std::cout;
 using std::vector;
 using std::cin;
@@ -32,7 +32,7 @@ using std::string;
  * @brief This structure is for organizing the bits.
  */
 typedef struct BitNode {
-	vector<uint32_t> v; /// combined numbers or selected number
+	vector<int> v; /// combined numbers or selected number
 	uint32_t a = 0;	/// first bit value 
 	uint32_t b = 0;	/// second bit value 
 	uint32_t c = 0;	/// third bit value 
@@ -48,7 +48,7 @@ class McCluskey {
 	vector<BitNode> columnlist[6];
 	vector<BitNode> pi;
 	vector<BitNode> epi;
-	std::array<uint32_t, 16> select;	/// The selected number is initialized to 1 in this array.
+	int select[16];	/// The selected number is initialized to 1 in this array.
 public:
 	/**
 	* @brief Initialize the member variable as a constructor.
@@ -66,7 +66,7 @@ public:
 		BitNode selectN;
 		vector<BitNode> v;
 
-		for (uint32_t i = 0; i < cnt; i++) {
+		for (int i = 0; i < cnt; i++) {
 			selectN.a = 0;
 			selectN.b = 0;
 			selectN.c = 0;
@@ -97,8 +97,8 @@ public:
 	* @brief This function checks how many bits of two nodes are different.
 	* @return a number of different bits
 	*/
-	uint32_t comparebit(BitNode node1, BitNode node2) {
-		uint32_t i = 0;
+	int comparebit(BitNode node1, BitNode node2) {
+		int i = 0;
 		if (node1.a != node2.a) i++;
 		if (node1.b != node2.b) i++;
 		if (node1.c != node2.c) i++;
@@ -109,7 +109,7 @@ public:
 	* @brief If there is only one bit difference among the two nodes, a function to know the bit position
 	* @return 0~4
 	*/
-	uint32_t bitposition(BitNode node1, BitNode node2) {
+	int bitposition(BitNode node1, BitNode node2) {
 		if (node1.a != node2.a) return 4;
 		if (node1.b != node2.b) return 3;
 		if (node1.c != node2.c) return 2;
@@ -120,8 +120,8 @@ public:
 	* @brief function that counts the number of 1
 	* @return 0~4
 	*/
-	uint32_t count1(int a, int b, int c, int d) {
-		uint32_t cnt1 = 0;
+	int count1(int a, int b, int c, int d) {
+		int cnt1 = 0;
 		if (a == 1) cnt1++;
 		if (b == 1) cnt1++;
 		if (c == 1) cnt1++;
@@ -136,11 +136,11 @@ public:
 	vector<BitNode> mergingBit(vector<BitNode>& columnlist) {
 		BitNode selectN;
 		vector<BitNode> v;
-		for (uint32_t i = 0; i < columnlist.size() - 1; i++) {
-			for (uint32_t j = i + 1; j < columnlist.size(); j++) {
+		for (unsigned int i = 0; i < columnlist.size() - 1; i++) {
+			for (unsigned int j = i + 1; j < columnlist.size(); j++) {
 				if (comparebit(columnlist[j], columnlist[i]) == 1) { // merge when the condition is met while traversing
 					selectN.v.clear();
-					for (uint32_t k = 0; k < columnlist[i].v.size(); k++) {	//insert combined numbers
+					for (unsigned int k = 0; k < columnlist[i].v.size(); k++) {	//insert combined numbers
 						selectN.v.push_back(columnlist[i].v[k]);
 						selectN.v.push_back(columnlist[j].v[k]);
 					}
@@ -166,7 +166,7 @@ public:
 					}
 					selectN.howmany1 = count1(selectN.a, selectN.b, selectN.c, selectN.d);
 					bool duplicateImplicant = false;
-					for (uint32_t k = 0; k < v.size(); k++) {	// If there are duplicate terms before push_back, push_back is not performed.
+					for (unsigned int k = 0; k < v.size(); k++) {	// If there are duplicate terms before push_back, push_back is not performed.
 						if ((v[k].a == selectN.a) && (v[k].b == selectN.b) && (v[k].c == selectN.c) && (v[k].d == selectN.d)) {
 							duplicateImplicant = true;
 						}
@@ -191,8 +191,8 @@ public:
 	* @return void
 	*/
 	void delNotPi(vector<BitNode>& columnlist1, vector<BitNode>& columnlist2) {
-		for (int32_t i = columnlist1.size() - 1; i >= 0; i--) {
-			for (uint32_t j = 0; j < columnlist2.size(); j++) {
+		for (int i = columnlist1.size() - 1; i >= 0; i--) {
+			for (unsigned int j = 0; j < columnlist2.size(); j++) {
 				if (selectPi(columnlist1[i], columnlist2[j])) {
 					columnlist1.erase(columnlist1.begin() + i);
 					break;
@@ -210,9 +210,9 @@ public:
 	* @param2 exam) nodes in a column twice merged
 	*/
 	bool selectPi(BitNode node1, BitNode node2) {
-		uint32_t commonCnt = 0;	//count on equal numbers
-		for (uint32_t i = 0; i < node1.v.size(); i++) {
-			for (uint32_tj = 0; j < node2.v.size(); j++) {
+		int commonCnt = 0;	//count on equal numbers
+		for (unsigned int i = 0; i < node1.v.size(); i++) {
+			for (unsigned int j = 0; j < node2.v.size(); j++) {
 				if (node1.v[i] == node2.v[j]) {
 					commonCnt++;
 				}
@@ -230,9 +230,9 @@ public:
 		return true;
 	}
 	bool belongsToArr(vector<int>& v1, vector<int>& v2, int n1, int n2) {	// function to check if a vector belongs to another vector
-		uint32_t count = 0;
-		for (uint32_t i = 0; i < n1; ++i) {
-			for (uint32_t j = 0; j < n2; ++j) {
+		int count = 0;
+		for (int i = 0; i < n1; ++i) {
+			for (int j = 0; j < n2; ++j) {
 				if (v1[i] == v2[j]) count++;
 			}
 		}
@@ -258,7 +258,7 @@ public:
 	vector<BitNode> findEpi(vector<BitNode>& pi) {
 		vector<BitNode> epi;
 		vector<int> epirow;
-		std::array<uint32_t, 16> picollect;
+		int picollect[16];
 		memset(picollect, 0, sizeof(int) * 16);
 		for (uint32_t i = 0; i < pi.size(); i++) {				// Counts the number that became pi
 			for (uint32_t j = 0; j < pi[i].v.size(); j++) {		// (since we only have to have one numeric value in the column to find the epi).
@@ -268,10 +268,10 @@ public:
 
 		for (uint32_t i = 0; i < pi.size(); i++) {			// Find pi with only one number in the column and push_back it to the epi vector.
 			for (uint32_t j = 0; j < pi[i].v.size(); j++) {
-				for (uint32_t k = 0; k < 16; k++) {
+				for (int k = 0; k < 16; k++) {
 					bool duplicateImplicant = false;
 					if ((picollect[k] == 1) && (pi[i].v[j] == k)) {
-						for (uint32_t l = 0; l < epi.size(); l++) {		//If there are duplicate terms before push_back, push_back is not performed.
+						for (unsigned int l = 0; l < epi.size(); l++) {		//If there are duplicate terms before push_back, push_back is not performed.
 							if ((epi[l].a == pi[i].a) && (epi[l].b == pi[i].b) && (epi[l].c == pi[i].c) && (epi[l].d == pi[i].d)) {
 								duplicateImplicant = true;
 							}
@@ -284,11 +284,11 @@ public:
 			}
 		}
 		for (uint32_t i = 0; i < epi.size(); i++) {					// Since there is only one column number, the row numbers belonging to epi are separately stored in a vector.
-			for (uint32_t j = 0; j < epi[i].v.size(); j++) {		// the row numbers belonging to epi are separately stored in a vector.
+			for (unsigned int j = 0; j < epi[i].v.size(); j++) {		// the row numbers belonging to epi are separately stored in a vector.
 				select[epi[i].v[j]] = 0;
 			}
 		}
-		for (uint32_t i = 0; i < 16; i++) {
+		for (int i = 0; i < 16; i++) {
 			if (select[i] == 1) {
 				epirow.push_back(i);
 			}
@@ -296,10 +296,10 @@ public:
 
 		bool areUEpi = false;
 		bool pushOk = true;
-		uint32_t duplicateN = 0;
+		int duplicateN = 0;
 		BitNode additionEpi;
 		vector<vector<BitNode>> addEpi;	//additional epi
-		uint32_t count = 0;
+		int count = 0;
 		for (uint32_t i = 0; i < pi.size(); i++) {
 			for (uint32_t j = 0; j < pi[i].v.size(); j++) {
 				for (uint32_t k = 0; k < epirow.size(); k++) {
@@ -357,7 +357,7 @@ public:
 		string outst = "";
 		for (uint32_t i = 0; i < epi.size(); i++) {
 			if ((epi[i].a == 2) && (epi[i].b == 2) && (epi[i].c == 2) && (epi[i].d == 2)) {
-				cout << "1";
+				printf("1");
 				outst += "1";
 			}
 			if (epi[i].a == 1) {
@@ -365,39 +365,39 @@ public:
 				outst += "A";
 			}
 			else if (epi[i].a == 0) {
-				cout << "A'";
+				printf("A'");
 				outst += "A'";
 			}
 			if (epi[i].b == 1) {
-				cout << "B";
+				printf("B");
 				outst += "B";
 			}
 			else if (epi[i].b == 0) {
-				cout << "B'";
+				printf("B'");
 				outst += "B'";
 			}
 			if (epi[i].c == 1) {
-				cout << "C";
+				printf("C");
 				outst += "C";
 			}
 			else if (epi[i].c == 0) {
-				cout << "C'";
+				printf("C'");
 				outst += "C'";
 			}
 			if (epi[i].d == 1) {
-				cout << "D";
+				printf("D");
 				outst += "D";
 			}
 			else if (epi[i].d == 0) {
-				cout << "D'";
+				printf("D'");
 				outst += "D'";
 			}
 			if ((i < epi.size() - 1) && (!equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
-				cout << " + ";
+				printf(" + ");
 				outst += "+";
 			}
 			else if ((i < epi.size() - 1) && (equalArrays(epi[i].v, epi[i + 1].v, min(epi[i].v.size(), epi[i + 1].v.size())))) {
-				cout << " or ";
+				printf(" or ");
 				outst += "or";
 			}
 		}
@@ -412,7 +412,7 @@ public:
 	*/
 	string quineExe(int* num, int cnt) {
 		columnlist[0] = selectNum(num, cnt);
-		uint32_t count = 0;
+		int count = 0;
 		while (columnlist[count].size() != 0) {	// until no merge
 			columnlist[count + 1] = mergingBit(columnlist[count]);
 			delNotPi(columnlist[count], columnlist[count + 1]);
@@ -433,21 +433,21 @@ public:
 static void test() {
 
 	McCluskey quine;
-	uint32_t cnt = 0;
+	int cnt = 0;
 	string out1("B'C' + CD' + A'BD");	/// expected output
 	string out2("B'C' + BC + A'B' or A'C"); /// expected output
 	string out3("B'C'D + A'B'C + A'BC' + BCD"); /// expected output
-	std::array<uint32_t, 10> ex1;
+	int ex1[] = { 0, 1, 2, 5, 6, 7, 8, 9, 10, 14 };
 	cnt = sizeof(ex1) / sizeof(int);
 	assert(out1.compare(quine.quineExe(ex1, cnt)));
 	cout << endl;
 
-	std::array<uint32_t, 10> ex2;
+	int ex2[] = { 0, 1, 2, 3, 6, 7, 8, 9, 14, 15 };
 	cnt = sizeof(ex2) / sizeof(int);
 	assert(out2.compare(quine.quineExe(ex2, cnt)));
 	cout << endl;
-	
-	std::array<uint32_t, 8> ex3;
+
+	int ex3[] = { 1, 2, 3, 4, 5, 7, 9, 15 };
 	cnt = sizeof(ex3) / sizeof(int);
 	assert(out3.compare(quine.quineExe(ex3, cnt)));
 }
