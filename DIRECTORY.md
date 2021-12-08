@@ -102,12 +102,15 @@
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/matrix_chain_multiplication.cpp)
   * [Minimum Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/minimum_edit_distance.cpp)
   * [Palindrome Partitioning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/palindrome_partitioning.cpp)
+  * [Partition Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/partition_problem.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/shortest_common_supersequence.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/word_break.cpp)
 
 ## Geometry
+  * [Graham Scan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_algorithm.cpp)
+  * [Graham Scan Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_functions.hpp)
   * [Jarvis Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/jarvis_algorithm.cpp)
   * [Line Segment Intersection](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/line_segment_intersection.cpp)
 
@@ -221,6 +224,7 @@
   * [Volume](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/volume.cpp)
 
 ## Numerical Methods
+  * [Babylonian Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/babylonian_method.cpp)
   * [Bisection Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/bisection_method.cpp)
   * [Brent Method Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/brent_method_extrema.cpp)
   * [Composite Simpson Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/composite_simpson_rule.cpp)

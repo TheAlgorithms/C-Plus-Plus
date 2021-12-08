@@ -429,7 +429,7 @@ class uint256_t {
         tmp <<= left;
         uint256_t quotient(0);
         uint256_t zero(0);
-        while (left >= 0 && tmp2 >= p) {
+        while (tmp2 >= p) {
             uint16_t shf = tmp2._lez() - tmp._lez();
             if (shf) {
                 tmp >>= shf;
