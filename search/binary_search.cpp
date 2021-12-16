@@ -1,7 +1,7 @@
 /******************************************************************************
  * @file
  * @brief [Binary search
- *algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+ * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
  * @details
  * Binary search is a search algorithm that finds the position of a target value
  * within a sorted array. Binary search compares the target value to the middle
