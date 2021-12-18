@@ -51,7 +51,7 @@ namespace search {
      * @param number value to be searched
      * @returns integer index of `number` in vector `arr`
      *******************************************************************************/
-        uint64_t interpolationSearch(std::vector<uint64_t> &arr, uint64_t number) {
+        uint64_t interpolationSearch(const std::vector<uint64_t> &arr, uint64_t number) {
             uint64_t size = arr.size();
             uint64_t low = 0, high = (size - 1);
 
