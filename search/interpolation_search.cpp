@@ -42,7 +42,7 @@ namespace search {
 
 /******************************************************************************
  * @namespace interpolation_search
- * @brief interpolation search searching algorihm
+ * @brief Functions for the [Interpolation Search](https://en.wikipedia.org/wiki/interpolation_search) algorithm implementation
  *******************************************************************************/
 namespace interpolation_search {
 
