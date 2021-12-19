@@ -116,6 +116,6 @@ static void tests() {
  * @returns 0 on exit
  *******************************************************************************/
 int main() {
-    tests();  // Condition of target found
+    tests();  // run self-test implementations
     return 0;
 }
