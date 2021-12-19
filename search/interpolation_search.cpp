@@ -95,7 +95,7 @@ uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
  * @brief Self-test implementation
  * @returns void
  *******************************************************************************/
-void tests() {
+static void tests() {
     // testcase
     // array = [10, 12, 13, 16, 18, 19, 20, 21, 1, 2, 3, 4, 22, 23, 24, 33, 35,
     // 42, 47] , Value = 33 should return 15
