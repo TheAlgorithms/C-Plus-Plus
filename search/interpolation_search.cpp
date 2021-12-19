@@ -49,7 +49,7 @@ namespace search {
 namespace interpolation_search {
 
 /******************************************************************************
- * @brief The main function which implements binary search
+ * @brief The main function which implements interpolation search
  * @param arr vector to be searched in
  * @param number value to be searched
  * @returns integer index of `number` in vector `arr`
