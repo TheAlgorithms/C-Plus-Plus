@@ -1,7 +1,7 @@
 
 /******************************************************************************
  * @file
- * @brief [interpolation search
+ * @brief [Interpolation search
  * algorithm](https://en.wikipedia.org/wiki/interpolation_search)
  *
  * @details
