@@ -110,7 +110,7 @@ static void tests() {
         search::interpolation_search::interpolationSearch(arr, number);
     std::cout << "Testcase : ";
     assert(derived_answer == expected_answer);
-    std::cout << "Passed!";
+    std::cout << "Passed!\n";
 }
 
 /*******************************************************************************
