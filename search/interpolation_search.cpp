@@ -108,7 +108,7 @@ static void tests() {
     uint64_t expected_answer = 15;
     uint64_t derived_answer =
         search::interpolation_search::interpolationSearch(arr, number);
-    std::cout << "Testcase : ";
+    std::cout << "Testcase: ";
     assert(derived_answer == expected_answer);
     std::cout << "Passed!\n";
 }
