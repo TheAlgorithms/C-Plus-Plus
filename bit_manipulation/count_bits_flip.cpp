@@ -57,6 +57,10 @@ std::uint64_t countBitsFlip(
 }  // namespace count_bits_flip
 }  // namespace bit_manipulation
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     // A = 10, B = 20 return 4
     assert(bit_manipulation::count_bits_flip::countBitsFlip(10, 20) == 4);
