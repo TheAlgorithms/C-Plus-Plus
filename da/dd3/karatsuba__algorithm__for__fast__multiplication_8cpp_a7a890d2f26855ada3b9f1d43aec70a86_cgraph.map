@@ -1,10 +1,10 @@
 <map id="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm" name="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm">
-<area shape="rect" id="node1" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,125,156,181"/>
-<area shape="rect" id="node2" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#a7d1dbae365c7746295d3322e6f7f80b6" title="Helper function for the main function, that implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="204,92,355,148"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="447,5,519,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="427,208,538,235"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="217,223,341,249"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="433,56,532,83"/>
-<area shape="rect" id="node6" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="403,107,563,133"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="433,157,532,184"/>
+<area shape="rect" id="node1" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,125,152,181"/>
+<area shape="rect" id="node2" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#a7d1dbae365c7746295d3322e6f7f80b6" title="Helper function for the main function, that implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="200,92,347,148"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="436,5,509,32"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="417,208,529,235"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="211,223,335,249"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="423,56,522,83"/>
+<area shape="rect" id="node6" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="395,107,551,133"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="423,157,522,184"/>
 </map>

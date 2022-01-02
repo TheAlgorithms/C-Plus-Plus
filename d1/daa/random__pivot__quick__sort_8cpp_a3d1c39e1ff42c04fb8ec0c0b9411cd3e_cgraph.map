@@ -1,5 +1,5 @@
 <map id="sorting::random_pivot_quick_sort::partition" name="sorting::random_pivot_quick_sort::partition">
-<area shape="rect" id="node1" title="A partition function which handles the partition logic of quick sort." alt="" coords="5,23,156,65"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/make_tuple.html#" title=" " alt="" coords="204,5,320,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="223,56,301,83"/>
+<area shape="rect" id="node1" title="A partition function which handles the partition logic of quick sort." alt="" coords="5,23,152,65"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/make_tuple.html#" title=" " alt="" coords="200,5,315,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="218,56,297,83"/>
 </map>

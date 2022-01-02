@@ -1,5 +1,5 @@
 <map id="math/large_number.h" name="math/large_number.h">
-<area shape="rect" id="node1" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="113,5,261,32"/>
-<area shape="rect" id="node2" href="$de/de4/fibonacci__large_8cpp.html" title="Computes N^th Fibonacci number given as input argument. Uses custom build arbitrary integers library ..." alt="" coords="5,80,176,107"/>
-<area shape="rect" id="node3" href="$d6/d9d/large__factorial_8cpp.html" title="Compute factorial of any arbitratily large number/." alt="" coords="201,80,365,107"/>
+<area shape="rect" id="node1" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="111,5,253,32"/>
+<area shape="rect" id="node2" href="$de/de4/fibonacci__large_8cpp.html" title="Computes N^th Fibonacci number given as input argument. Uses custom build arbitrary integers library ..." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node3" href="$d6/d9d/large__factorial_8cpp.html" title="Compute factorial of any arbitratily large number/." alt="" coords="196,80,357,107"/>
 </map>

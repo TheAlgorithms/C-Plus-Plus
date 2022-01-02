@@ -1,11 +1,11 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function." alt="" coords="5,55,56,81"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="816,43,888,69"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="819,43,891,69"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="104,55,213,81"/>
 <area shape="rect" id="node4" href="$d1/daa/random__pivot__quick__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="137,131,181,157"/>
 <area shape="rect" id="node5" href="$d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" title="Executes test cases." alt="" coords="261,137,404,164"/>
-<area shape="rect" id="node6" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="659,144,768,171"/>
-<area shape="rect" id="node7" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="452,144,611,171"/>
-<area shape="rect" id="node8" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="452,195,611,221"/>
-<area shape="rect" id="node9" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="452,245,611,272"/>
+<area shape="rect" id="node6" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="660,144,771,171"/>
+<area shape="rect" id="node7" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="452,144,612,171"/>
+<area shape="rect" id="node8" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="452,195,612,221"/>
+<area shape="rect" id="node9" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="452,245,612,272"/>
 </map>

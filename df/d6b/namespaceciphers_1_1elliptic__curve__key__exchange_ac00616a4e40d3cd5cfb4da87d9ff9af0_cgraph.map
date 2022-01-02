@@ -1,4 +1,4 @@
 <map id="ciphers::elliptic_curve_key_exchange::exp" name="ciphers::elliptic_curve_key_exchange::exp">
-<area shape="rect" id="node1" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node2" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="203,13,247,39"/>
+<area shape="rect" id="node1" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node2" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="201,13,244,39"/>
 </map>

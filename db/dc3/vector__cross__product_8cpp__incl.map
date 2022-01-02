@@ -1,7 +1,7 @@
 <map id="math/vector_cross_product.cpp" name="math/vector_cross_product.cpp">
-<area shape="rect" id="node1" title="Calculates the Cross Product and the magnitude of two mathematical 3D vectors." alt="" coords="65,5,273,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,79,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="103,80,155,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,80,238,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="263,80,328,107"/>
+<area shape="rect" id="node1" title="Calculates the Cross Product and the magnitude of two mathematical 3D vectors." alt="" coords="63,5,268,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,80,152,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="176,80,235,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="259,80,325,107"/>
 </map>

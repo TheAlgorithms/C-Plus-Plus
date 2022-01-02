@@ -1,6 +1,6 @@
 <map id="ciphers/vigenere_cipher.cpp" name="ciphers/vigenere_cipher.cpp">
-<area shape="rect" id="node1" title="Implementation of Vigenère cipher algorithm." alt="" coords="36,5,224,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,79,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="103,80,157,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,80,247,107"/>
+<area shape="rect" id="node1" title="Implementation of Vigenère cipher algorithm." alt="" coords="38,5,221,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="102,80,157,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="181,80,246,107"/>
 </map>

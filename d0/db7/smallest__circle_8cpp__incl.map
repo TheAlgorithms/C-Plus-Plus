@@ -1,6 +1,6 @@
 <map id="others/smallest_circle.cpp" name="others/smallest_circle.cpp">
-<area shape="rect" id="node1" title="Get centre and radius of the smallest circle that circumscribes given set of points." alt="" coords="37,5,213,32"/>
+<area shape="rect" id="node1" title="Get centre and radius of the smallest circle that circumscribes given set of points." alt="" coords="37,5,211,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,64,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,80,162,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="187,80,245,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="88,80,160,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="184,80,243,107"/>
 </map>

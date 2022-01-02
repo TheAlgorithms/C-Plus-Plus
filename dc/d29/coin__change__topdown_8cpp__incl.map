@@ -1,7 +1,7 @@
 <map id="dynamic_programming/coin_change_topdown.cpp" name="dynamic_programming/coin_change_topdown.cpp">
-<area shape="rect" id="node1" title="Minimum coins change problem is a problem used to find the minimum number of coins required to comple..." alt="" coords="78,5,262,47"/>
+<area shape="rect" id="node1" title="Minimum coins change problem is a problem used to find the minimum number of coins required to comple..." alt="" coords="80,5,260,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,71,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,95,154,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,95,252,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="277,95,335,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,95,155,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="179,95,251,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="275,95,334,121"/>
 </map>

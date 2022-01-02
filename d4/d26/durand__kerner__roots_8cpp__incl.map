@@ -1,12 +1,12 @@
 <map id="numerical_methods/durand_kerner_roots.cpp" name="numerical_methods/durand_kerner_roots.cpp">
-<area shape="rect" id="node1" title="Compute all possible approximate roots of any given polynomial using Durand Kerner algorithm" alt="" coords="315,5,499,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,83,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,95,173,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="197,95,256,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="280,95,352,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="377,95,437,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="461,95,515,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="539,95,605,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="630,95,703,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="728,95,797,121"/>
+<area shape="rect" id="node1" title="Compute all possible approximate roots of any given polynomial using Durand Kerner algorithm" alt="" coords="313,5,492,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,80,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,95,170,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="195,95,253,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="278,95,349,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="373,95,433,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="457,95,511,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="536,95,603,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="627,95,699,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="723,95,791,121"/>
 </map>

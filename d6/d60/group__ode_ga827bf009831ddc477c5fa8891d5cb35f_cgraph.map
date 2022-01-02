@@ -1,4 +1,4 @@
 <map id="semi_implicit_euler_step" name="semi_implicit_euler_step">
-<area shape="rect" id="node1" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="5,5,173,32"/>
-<area shape="rect" id="node2" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="221,5,292,32"/>
+<area shape="rect" id="node1" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="219,5,287,32"/>
 </map>

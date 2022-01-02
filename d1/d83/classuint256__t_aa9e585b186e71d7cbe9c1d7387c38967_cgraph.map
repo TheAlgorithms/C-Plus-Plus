@@ -1,5 +1,5 @@
 <map id="uint256_t::operator*" name="uint256_t::operator*">
-<area shape="rect" id="node1" title="operator * for uint256_t and other integer types." alt="" coords="5,31,144,57"/>
-<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#aa69e1064c0b0b1df1c61acd2ea04fabd" title="returns lower 64&#45;bit integer part" alt="" coords="193,5,309,32"/>
-<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#a1ee2f1ffbd9984faad34883eb45e9705" title="returns upper 64&#45;bit integer part" alt="" coords="192,56,311,83"/>
+<area shape="rect" id="node1" title="operator * for uint256_t and other integer types." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#aa69e1064c0b0b1df1c61acd2ea04fabd" title="returns lower 64&#45;bit integer part" alt="" coords="188,5,303,32"/>
+<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#a1ee2f1ffbd9984faad34883eb45e9705" title="returns upper 64&#45;bit integer part" alt="" coords="188,56,303,83"/>
 </map>

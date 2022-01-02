@@ -1,10 +1,10 @@
 <map id="math/large_number.h" name="math/large_number.h">
-<area shape="rect" id="node1" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="253,5,401,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,83,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,80,173,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="197,80,272,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="296,80,357,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="382,80,455,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="479,80,563,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="588,80,647,107"/>
+<area shape="rect" id="node1" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="253,5,395,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,80,170,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="195,80,269,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="293,80,355,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="379,80,451,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="475,80,557,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="581,80,640,107"/>
 </map>

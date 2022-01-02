@@ -1,4 +1,4 @@
 <map id="others::postfix_expression::push" name="others::postfix_expression::push">
-<area shape="rect" id="node1" title="Pushing operand, also called the number in the array to the stack." alt="" coords="5,5,183,47"/>
-<area shape="rect" id="node2" href="$d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83" title=" " alt="" coords="231,13,323,39"/>
+<area shape="rect" id="node1" title="Pushing operand, also called the number in the array to the stack." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="$d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83" title=" " alt="" coords="228,13,323,39"/>
 </map>

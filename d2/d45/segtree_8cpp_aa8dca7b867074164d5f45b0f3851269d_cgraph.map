@@ -1,6 +1,6 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title="Self&#45;test implementation." alt="" coords="5,104,49,131"/>
-<area shape="rect" id="node2" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="97,29,177,56"/>
-<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d" title="Returns the sum of all elements in a range." alt="" coords="109,104,165,131"/>
-<area shape="rect" id="node4" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="106,179,169,205"/>
+<area shape="rect" id="node2" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="97,29,176,56"/>
+<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#a423a97ea0c7ea6e33b5844a6858d902d" title="Returns the sum of all elements in a range." alt="" coords="109,104,164,131"/>
+<area shape="rect" id="node4" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="106,179,167,205"/>
 </map>

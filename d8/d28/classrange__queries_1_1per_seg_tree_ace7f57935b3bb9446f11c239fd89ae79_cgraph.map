@@ -1,4 +1,4 @@
 <map id="range_queries::perSegTree::lazy" name="range_queries::perSegTree::lazy">
-<area shape="rect" id="node1" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="237,5,421,47"/>
+<area shape="rect" id="node1" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="232,5,411,47"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="dynamic_programming/word_break.cpp" name="dynamic_programming/word_break.cpp">
-<area shape="rect" id="node1" title="Word Break Problem" alt="" coords="181,5,338,47"/>
+<area shape="rect" id="node1" title="Word Break Problem" alt="" coords="183,5,336,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,71,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,95,154,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,95,252,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,95,155,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="179,95,251,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="276,95,331,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="355,95,463,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="487,95,546,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="355,95,459,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="483,95,542,121"/>
 </map>

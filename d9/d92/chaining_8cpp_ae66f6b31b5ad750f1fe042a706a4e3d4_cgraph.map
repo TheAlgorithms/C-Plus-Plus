@@ -1,9 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,132,56,159"/>
-<area shape="rect" id="node2" href="$dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff" title="create and add a new node with a give value and at a given height" alt="" coords="113,5,233,32"/>
-<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="307,56,346,83"/>
-<area shape="rect" id="node4" href="$dd/d1c/classhash__chain.html#a706964ad13587fc9a8b3fe8381d410ed" title="Display the chain." alt="" coords="104,157,243,184"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="291,157,363,184"/>
-<area shape="rect" id="node6" href="$dd/d1c/classhash__chain.html#a55aa5c6753cb8853152d469c375d946a" title="Find if a value and corresponding hash exist." alt="" coords="114,107,233,133"/>
-<area shape="rect" id="node7" href="$dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64" title="Compute the hash of a value for current chain." alt="" coords="110,259,237,285"/>
+<area shape="rect" id="node2" href="$dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff" title="create and add a new node with a give value and at a given height" alt="" coords="114,5,231,32"/>
+<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="306,56,345,83"/>
+<area shape="rect" id="node4" href="$dd/d1c/classhash__chain.html#a706964ad13587fc9a8b3fe8381d410ed" title="Display the chain." alt="" coords="104,157,241,184"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="289,157,361,184"/>
+<area shape="rect" id="node6" href="$dd/d1c/classhash__chain.html#a55aa5c6753cb8853152d469c375d946a" title="Find if a value and corresponding hash exist." alt="" coords="114,107,231,133"/>
+<area shape="rect" id="node7" href="$dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64" title="Compute the hash of a value for current chain." alt="" coords="111,259,235,285"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="math::monte_carlo::integral_monte_carlo" name="math::monte_carlo::integral_monte_carlo">
-<area shape="rect" id="node1" title="Compute an approximation of an integral using Monte Carlo integration." alt="" coords="5,78,152,119"/>
-<area shape="rect" id="node2" href="$db/d40/integral__approximation2_8cpp.html#a71249ee535f16f8ed2e9cc8f0199a2cf" title="short&#45;hand for std::functions used in this implementation" alt="" coords="200,49,340,90"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="213,115,327,141"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="431,5,501,32"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="388,56,544,83"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="398,107,534,133"/>
+<area shape="rect" id="node1" title="Compute an approximation of an integral using Monte Carlo integration." alt="" coords="5,78,148,119"/>
+<area shape="rect" id="node2" href="$db/d40/integral__approximation2_8cpp.html#a71249ee535f16f8ed2e9cc8f0199a2cf" title="short&#45;hand for std::functions used in this implementation" alt="" coords="196,49,335,90"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="207,115,323,141"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="425,5,495,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="383,56,537,83"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="393,107,527,133"/>
 </map>

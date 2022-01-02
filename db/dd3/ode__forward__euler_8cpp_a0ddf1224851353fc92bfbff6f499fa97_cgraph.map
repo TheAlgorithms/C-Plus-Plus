@@ -1,16 +1,16 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,132,56,159"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atof.html#" title=" " alt="" coords="141,81,210,108"/>
-<area shape="rect" id="node3" href="$d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9" title="Compute approximation using the forward&#45;Euler method in the given limits." alt="" coords="123,183,227,209"/>
-<area shape="rect" id="node11" href="$db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f" title=" " alt="" coords="104,132,247,159"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="333,233,410,260"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="303,81,440,108"/>
-<area shape="rect" id="node6" href="$d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723" title="Compute next step approximation using the forward&#45;Euler method." alt="" coords="303,335,439,361"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="295,132,448,159"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="303,284,439,311"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="330,183,413,209"/>
-<area shape="rect" id="node7" href="$db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="496,335,567,361"/>
-<area shape="rect" id="node12" href="$db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" title="Exact solution of the problem. Used for solution comparison." alt="" coords="318,31,425,57"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="497,56,565,83"/>
-<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="499,5,563,32"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atof.html#" title=" " alt="" coords="139,81,210,108"/>
+<area shape="rect" id="node3" href="$d6/d60/group__ode.html#gae0509f8843e2bc42de2abbd00a14b7b9" title="Compute approximation using the forward&#45;Euler method in the given limits." alt="" coords="125,183,225,209"/>
+<area shape="rect" id="node11" href="$db/dd3/ode__forward__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f" title=" " alt="" coords="104,132,245,159"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="330,233,409,260"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="300,81,439,108"/>
+<area shape="rect" id="node6" href="$d6/d60/group__ode.html#ga195d23bbdfcb80e83c9cda45c9ad5723" title="Compute next step approximation using the forward&#45;Euler method." alt="" coords="303,335,435,361"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="293,132,445,159"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="302,284,437,311"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="329,183,410,209"/>
+<area shape="rect" id="node7" href="$db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="494,335,562,361"/>
+<area shape="rect" id="node12" href="$db/dd3/ode__forward__euler_8cpp.html#af3adf7b092a87868917ee5fb4255192b" title="Exact solution of the problem. Used for solution comparison." alt="" coords="316,31,423,57"/>
+<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="493,56,563,83"/>
+<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="495,5,561,32"/>
 </map>

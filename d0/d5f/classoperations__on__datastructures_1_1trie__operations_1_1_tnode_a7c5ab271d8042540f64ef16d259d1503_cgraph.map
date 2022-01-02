@@ -1,7 +1,7 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::SearchFreqSuggestions" name="operations_on_datastructures::trie_operations::Tnode::SearchFreqSuggestions">
-<area shape="rect" id="node1" title="Lists out the most frequent words in trie with the longest prefix of the search key that is present i..." alt="" coords="5,24,204,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="517,6,589,33"/>
-<area shape="rect" id="node3" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#aacafb8c9f3ebac7ac6c01d9645bb67b6" title="Function to display the 3 suggestions with highest frequency of search hits." alt="" coords="252,24,451,80"/>
-<area shape="rect" id="node4" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#a9e556f52c837190ecf4265b1f05cfe9c" title="Recursive function to suggest most frequently searched entries of trie which have a given common pref..." alt="" coords="252,128,451,184"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="499,142,608,169"/>
+<area shape="rect" id="node1" title="Lists out the most frequent words in trie with the longest prefix of the search key that is present i..." alt="" coords="5,24,199,80"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="506,6,578,33"/>
+<area shape="rect" id="node3" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#aacafb8c9f3ebac7ac6c01d9645bb67b6" title="Function to display the 3 suggestions with highest frequency of search hits." alt="" coords="247,24,440,80"/>
+<area shape="rect" id="node4" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#a9e556f52c837190ecf4265b1f05cfe9c" title="Recursive function to suggest most frequently searched entries of trie which have a given common pref..." alt="" coords="247,128,440,184"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="488,142,596,169"/>
 </map>

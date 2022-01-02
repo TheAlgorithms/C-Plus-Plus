@@ -1,6 +1,6 @@
 var dir_c11585dfcef32a26e29098facab6c144 =
 [
-    [ "graph_coloring.cpp", "d3/d40/graph__coloring_8cpp.html", "d3/d40/graph__coloring_8cpp" ],
+    [ "graph_coloringg.cpp", "df/d80/graph__coloringg_8cpp.html", "df/d80/graph__coloringg_8cpp" ],
     [ "knight_tour.cpp", "d1/d2a/knight__tour_8cpp.html", "d1/d2a/knight__tour_8cpp" ],
     [ "minimax.cpp", "df/dfb/minimax_8cpp.html", "df/dfb/minimax_8cpp" ],
     [ "n_queens.cpp", "d4/d3e/n__queens_8cpp.html", "d4/d3e/n__queens_8cpp" ],

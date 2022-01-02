@@ -1,5 +1,5 @@
 <map id="uint256_t::divide" name="uint256_t::divide">
-<area shape="rect" id="node1" title="divide function for uint256_t and other integer types." alt="" coords="5,5,124,32"/>
-<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163" title="Leading zeroes in binary." alt="" coords="172,5,281,32"/>
-<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="329,5,439,32"/>
+<area shape="rect" id="node1" title="divide function for uint256_t and other integer types." alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163" title="Leading zeroes in binary." alt="" coords="171,5,277,32"/>
+<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="325,5,432,32"/>
 </map>

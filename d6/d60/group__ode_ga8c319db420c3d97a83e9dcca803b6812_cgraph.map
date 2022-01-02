@@ -1,4 +1,4 @@
 <map id="midpoint_euler_step" name="midpoint_euler_step">
-<area shape="rect" id="node1" title="Compute next step approximation using the midpoint&#45;Euler method." alt="" coords="5,5,148,32"/>
-<area shape="rect" id="node2" href="$d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="196,5,267,32"/>
+<area shape="rect" id="node1" title="Compute next step approximation using the midpoint&#45;Euler method." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="192,5,260,32"/>
 </map>

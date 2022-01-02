@@ -1,6 +1,6 @@
 <map id="test_find_min" name="test_find_min">
-<area shape="rect" id="node1" title="Function for testing find_min()." alt="" coords="5,88,107,115"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="187,5,259,32"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="155,81,291,122"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="155,170,291,211"/>
+<area shape="rect" id="node1" title="Function for testing find_min()." alt="" coords="5,88,105,115"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,5,255,32"/>
+<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="153,81,285,122"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,170,285,211"/>
 </map>

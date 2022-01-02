@@ -1,7 +1,7 @@
 <map id="dynamic_programming::word_break::check" name="dynamic_programming::word_break::check">
-<area shape="rect" id="node1" title="Function that checks if the string passed in param can be segmented from position &#39;pos&#39;,..." alt="" coords="5,59,163,100"/>
-<area shape="rect" id="node2" href="$d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81" title="Function that checks if the string passed in param is present in the the unordered_set passed." alt="" coords="211,29,368,71"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="227,95,351,122"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/end.html#" title=" " alt="" coords="416,7,579,34"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/find.html#" title=" " alt="" coords="431,59,564,100"/>
+<area shape="rect" id="node1" title="Function that checks if the string passed in param can be segmented from position &#39;pos&#39;,..." alt="" coords="5,59,159,100"/>
+<area shape="rect" id="node2" href="$d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81" title="Function that checks if the string passed in param is present in the the unordered_set passed." alt="" coords="207,29,360,71"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="222,95,345,122"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/end.html#" title=" " alt="" coords="408,7,567,34"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/find.html#" title=" " alt="" coords="422,59,553,100"/>
 </map>

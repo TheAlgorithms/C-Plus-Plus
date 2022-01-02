@@ -1,8 +1,8 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title="Function to test the provided algorithm above." alt="" coords="5,35,49,61"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="145,5,217,32"/>
-<area shape="rect" id="node3" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2" title="multiply Point and integer" alt="" coords="97,57,265,98"/>
-<area shape="rect" id="node4" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf" title="Addition of points." alt="" coords="313,57,483,98"/>
-<area shape="rect" id="node5" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="531,57,680,98"/>
-<area shape="rect" id="node6" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="728,64,772,91"/>
+<area shape="rect" id="node3" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2" title="multiply Point and integer" alt="" coords="97,57,264,98"/>
+<area shape="rect" id="node4" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf" title="Addition of points." alt="" coords="312,57,479,98"/>
+<area shape="rect" id="node5" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="527,57,675,98"/>
+<area shape="rect" id="node6" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="723,64,765,91"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="binary_search_tree::remove" name="binary_search_tree::remove">
-<area shape="rect" id="node1" title="Remove a specified value from the BST." alt="" coords="5,5,141,47"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="189,5,325,47"/>
+<area shape="rect" id="node1" title="Remove a specified value from the BST." alt="" coords="5,5,137,47"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="185,5,317,47"/>
 </map>

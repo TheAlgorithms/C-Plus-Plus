@@ -1,14 +1,14 @@
 <map id="machine_learning::kohonen_som" name="machine_learning::kohonen_som">
-<area shape="rect" id="node1" title=" " alt="" coords="5,157,224,184"/>
-<area shape="rect" id="node2" href="$d8/d77/namespacemachine__learning.html#ae868ad43698a1d69ba46ea3827d7d2c3" title=" " alt="" coords="272,150,448,191"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="541,31,611,57"/>
-<area shape="rect" id="node4" href="$d9/d66/group__machine__learning.html#ga60f9186ccb682724a8792a2bf81e9b9e" title=" " alt="" coords="530,81,622,108"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="540,132,612,159"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="541,183,611,209"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="541,233,611,260"/>
-<area shape="rect" id="node12" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="496,284,656,311"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="726,5,806,32"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/distance.html#" title=" " alt="" coords="717,56,815,83"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="731,107,801,133"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min_element.html#" title=" " alt="" coords="704,157,828,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,217,184"/>
+<area shape="rect" id="node2" href="$d8/d77/namespacemachine__learning.html#ae868ad43698a1d69ba46ea3827d7d2c3" title=" " alt="" coords="265,150,436,191"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="527,31,597,57"/>
+<area shape="rect" id="node4" href="$d9/d66/group__machine__learning.html#ga60f9186ccb682724a8792a2bf81e9b9e" title=" " alt="" coords="517,81,607,108"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="525,132,599,159"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="527,183,597,209"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="527,233,597,260"/>
+<area shape="rect" id="node12" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="484,284,640,311"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="710,5,789,32"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/distance.html#" title=" " alt="" coords="701,56,798,83"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="715,107,784,133"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min_element.html#" title=" " alt="" coords="688,157,811,184"/>
 </map>

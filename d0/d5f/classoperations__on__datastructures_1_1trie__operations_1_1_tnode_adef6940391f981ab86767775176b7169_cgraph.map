@@ -1,4 +1,4 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::DeleteFrom" name="operations_on_datastructures::trie_operations::Tnode::DeleteFrom">
-<area shape="rect" id="node1" title="Function recursively deletes the substring character by character iterating through the string to be ..." alt="" coords="5,29,204,85"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="252,44,363,71"/>
+<area shape="rect" id="node1" title="Function recursively deletes the substring character by character iterating through the string to be ..." alt="" coords="5,29,199,85"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="247,44,359,71"/>
 </map>

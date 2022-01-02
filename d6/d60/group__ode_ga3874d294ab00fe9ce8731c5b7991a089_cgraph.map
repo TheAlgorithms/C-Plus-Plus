@@ -1,10 +1,10 @@
 <map id="semi_implicit_euler" name="semi_implicit_euler">
-<area shape="rect" id="node1" title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits." alt="" coords="5,132,141,159"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="235,5,312,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="205,56,342,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="197,107,350,133"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="205,157,341,184"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="232,208,315,235"/>
-<area shape="rect" id="node7" href="$d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="189,259,357,285"/>
-<area shape="rect" id="node8" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="405,259,476,285"/>
+<area shape="rect" id="node1" title="Compute approximation using the semi&#45;implicit&#45;Euler method in the given limits." alt="" coords="5,132,139,159"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="230,5,309,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="200,56,339,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="193,107,345,133"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="202,157,337,184"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="229,208,310,235"/>
+<area shape="rect" id="node7" href="$d6/d60/group__ode.html#ga827bf009831ddc477c5fa8891d5cb35f" title="Compute next step approximation using the semi&#45;implicit&#45;Euler method." alt="" coords="187,259,352,285"/>
+<area shape="rect" id="node8" href="$d3/d06/ode__semi__implicit__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="400,259,468,285"/>
 </map>

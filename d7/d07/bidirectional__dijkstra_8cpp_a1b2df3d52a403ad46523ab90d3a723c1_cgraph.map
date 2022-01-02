@@ -1,4 +1,4 @@
 <map id="graph::bidirectional_dijkstra::Bidijkstra" name="graph::bidirectional_dijkstra::Bidijkstra">
-<area shape="rect" id="node1" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,29,140,71"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="188,37,297,63"/>
+<area shape="rect" id="node1" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,29,139,71"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="187,37,295,63"/>
 </map>

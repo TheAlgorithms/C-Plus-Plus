@@ -1,6 +1,6 @@
 <map id="uint256_t::operator/=" name="uint256_t::operator/=">
-<area shape="rect" id="node1" title="operator /= for uint256_t" alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html#a8161d52d369e525f4e61129376adfcf1" title="divide function for uint256_t and other integer types." alt="" coords="199,5,317,32"/>
-<area shape="rect" id="node3" href="$d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163" title="Leading zeroes in binary." alt="" coords="365,5,475,32"/>
-<area shape="rect" id="node4" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="523,5,632,32"/>
+<area shape="rect" id="node1" title="operator /= for uint256_t" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html#a8161d52d369e525f4e61129376adfcf1" title="divide function for uint256_t and other integer types." alt="" coords="196,5,313,32"/>
+<area shape="rect" id="node3" href="$d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163" title="Leading zeroes in binary." alt="" coords="361,5,468,32"/>
+<area shape="rect" id="node4" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="516,5,623,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="range_queries::heavy_light_decomposition::HLD&lt; X &gt;" name="range_queries::heavy_light_decomposition::HLD&lt; X &gt;">
-<area shape="rect" id="node1" title="The Heavy&#45;Light Decomposition class." alt="" coords="204,45,355,101"/>
-<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="5,5,156,61"/>
-<area shape="rect" id="node3" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="5,85,156,141"/>
+<area shape="rect" id="node1" title="The Heavy&#45;Light Decomposition class." alt="" coords="200,45,347,101"/>
+<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="5,5,152,61"/>
+<area shape="rect" id="node3" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="5,85,152,141"/>
 </map>

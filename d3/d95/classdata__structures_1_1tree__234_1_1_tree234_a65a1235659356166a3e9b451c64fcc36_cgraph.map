@@ -1,5 +1,5 @@
 <map id="data_structures::tree_234::Tree234::GetTreeMinItem" name="data_structures::tree_234::Tree234::GetTreeMinItem">
-<area shape="rect" id="node1" title="Get the min item of the tree." alt="" coords="5,39,217,80"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="265,5,467,47"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="283,71,449,112"/>
+<area shape="rect" id="node1" title="Get the min item of the tree." alt="" coords="5,39,212,80"/>
+<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="260,5,459,47"/>
+<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="277,71,442,112"/>
 </map>

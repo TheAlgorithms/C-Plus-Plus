@@ -1,6 +1,6 @@
 <map id="probability::geometric_dist::geometric_distribution::draw_sample" name="probability::geometric_dist::geometric_distribution::draw_sample">
-<area shape="rect" id="node1" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="5,59,193,115"/>
-<area shape="rect" id="node2" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="268,29,431,71"/>
-<area shape="rect" id="node3" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="241,95,457,151"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="505,110,571,137"/>
+<area shape="rect" id="node1" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="5,59,191,115"/>
+<area shape="rect" id="node2" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="265,29,424,71"/>
+<area shape="rect" id="node3" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="239,95,451,151"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="499,110,564,137"/>
 </map>

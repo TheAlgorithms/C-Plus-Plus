@@ -1,5 +1,5 @@
 <map id="numerical_methods::runge_kutta::rungeKutta" name="numerical_methods::runge_kutta::rungeKutta">
-<area shape="rect" id="node1" title="the Runge Kutta method finds the value of integration of a function in the given limits...." alt="" coords="5,29,171,71"/>
-<area shape="rect" id="node2" href="$d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579" title="for using the vector container" alt="" coords="219,11,284,38"/>
-<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="232,62,271,89"/>
+<area shape="rect" id="node1" title="the Runge Kutta method finds the value of integration of a function in the given limits...." alt="" coords="5,29,167,71"/>
+<area shape="rect" id="node2" href="$d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579" title="for using the vector container" alt="" coords="215,11,279,38"/>
+<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="227,62,266,89"/>
 </map>

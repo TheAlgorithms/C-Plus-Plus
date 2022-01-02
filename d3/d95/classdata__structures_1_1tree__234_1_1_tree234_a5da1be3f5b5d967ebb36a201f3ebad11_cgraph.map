@@ -1,17 +1,17 @@
 <map id="data_structures::tree_234::Tree234::Remove" name="data_structures::tree_234::Tree234::Remove">
-<area shape="rect" id="node1" title="Remove item from tree." alt="" coords="5,332,171,373"/>
-<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" title="Main function implement the pre&#45;merge remove operation." alt="" coords="219,332,443,373"/>
-<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="491,71,705,112"/>
-<area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="492,136,704,177"/>
-<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="524,201,672,243"/>
-<area shape="rect" id="node10" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="520,267,676,308"/>
-<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="509,332,687,373"/>
-<area shape="rect" id="node12" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="521,397,675,439"/>
-<area shape="rect" id="node13" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="505,463,691,504"/>
-<area shape="rect" id="node14" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="500,528,696,569"/>
-<area shape="rect" id="node15" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="495,593,701,635"/>
-<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="773,5,944,47"/>
-<area shape="rect" id="node5" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="753,71,964,112"/>
-<area shape="rect" id="node7" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="758,136,959,177"/>
-<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="775,201,942,243"/>
+<area shape="rect" id="node1" title="Remove item from tree." alt="" coords="5,332,168,373"/>
+<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a61dd051a74e5f36c8dc03dae8dca6ef4" title="Main function implement the pre&#45;merge remove operation." alt="" coords="216,332,435,373"/>
+<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac85ba5abfd6d34dcd908b2afe6464657" title="Get the max item of the tree." alt="" coords="483,71,693,112"/>
+<area shape="rect" id="node6" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a65a1235659356166a3e9b451c64fcc36" title="Get the min item of the tree." alt="" coords="485,136,691,177"/>
+<area shape="rect" id="node9" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="515,201,661,243"/>
+<area shape="rect" id="node10" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a6c5f929afcbad5219646990edee22e18" title="Check if node is a 3&#45;node or 4&#45;node, this is useful when we delete item from 2&#45;3&#45;4 tree." alt="" coords="511,267,665,308"/>
+<area shape="rect" id="node11" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e" title="Do the actual left rotate operation." alt="" coords="501,332,675,373"/>
+<area shape="rect" id="node12" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a36f4d5f603f7edb7db7c73fb53ba14e9" title="Merge the item at index of the parent node, and its left and right child." alt="" coords="513,397,663,439"/>
+<area shape="rect" id="node13" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="497,463,679,504"/>
+<area shape="rect" id="node14" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ac5361479dd996eb331759f33808657d9" title="A handy function to try if we can do a left rotate to the target node." alt="" coords="491,528,685,569"/>
+<area shape="rect" id="node15" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#aec0642d1d151521ca7c70ea85cdb15d3" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="487,593,689,635"/>
+<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="761,5,930,47"/>
+<area shape="rect" id="node5" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="741,71,949,112"/>
+<area shape="rect" id="node7" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#ac6f619a1605cb46196360889fff4529e" title="Get leftmose child of the current node." alt="" coords="746,136,945,177"/>
+<area shape="rect" id="node8" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a5438d0a47850f520b2262b5a42f75b71" title="get min item (leftmost) in the current node" alt="" coords="763,201,928,243"/>
 </map>

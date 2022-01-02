@@ -1,5 +1,5 @@
 <map id="operator==" name="operator==">
-<area shape="rect" id="node1" title="Operator overload of &#39;==&#39; on Complex class. Logical Equal overload for our Complex class." alt="" coords="5,31,92,57"/>
-<area shape="rect" id="node2" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="140,5,251,32"/>
-<area shape="rect" id="node3" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="143,56,247,83"/>
+<area shape="rect" id="node1" title="Operator overload of &#39;==&#39; on Complex class. Logical Equal overload for our Complex class." alt="" coords="5,31,91,57"/>
+<area shape="rect" id="node2" href="$da/d5a/class_complex.html#af8aacf982e2e6c142921bc850f6dc974" title="Member function to get imaginary value of our complex number. Member function (getter) to access the ..." alt="" coords="139,5,249,32"/>
+<area shape="rect" id="node3" href="$da/d5a/class_complex.html#a312e4b19146128408fb06e0150b0faf6" title="Member function to get real value of our complex number. Member function (getter) to access the class..." alt="" coords="143,56,245,83"/>
 </map>

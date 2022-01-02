@@ -1,8 +1,8 @@
 <map id="double_hashing::doubleHash" name="double_hashing::doubleHash">
-<area shape="rect" id="node1" title="Performs double hashing to resolve collisions." alt="" coords="5,107,200,133"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="315,5,387,32"/>
-<area shape="rect" id="node3" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="264,56,439,83"/>
-<area shape="rect" id="node4" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="248,107,455,133"/>
-<area shape="rect" id="node5" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="260,157,443,184"/>
-<area shape="rect" id="node6" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="261,209,442,250"/>
+<area shape="rect" id="node1" title="Performs double hashing to resolve collisions." alt="" coords="5,107,195,133"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="308,5,380,32"/>
+<area shape="rect" id="node3" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="259,56,429,83"/>
+<area shape="rect" id="node4" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="243,107,445,133"/>
+<area shape="rect" id="node5" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="256,157,432,184"/>
+<area shape="rect" id="node6" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="256,209,432,250"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="dynamic_programming/shortest_common_supersequence.cpp" name="dynamic_programming/shortest_common_supersequence.cpp">
-<area shape="rect" id="node1" title="SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z,..." alt="" coords="83,5,339,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,79,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="103,95,157,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="182,95,241,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="265,95,342,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="367,95,432,121"/>
+<area shape="rect" id="node1" title="SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z,..." alt="" coords="85,5,336,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="102,95,157,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="181,95,240,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="264,95,339,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="363,95,429,121"/>
 </map>

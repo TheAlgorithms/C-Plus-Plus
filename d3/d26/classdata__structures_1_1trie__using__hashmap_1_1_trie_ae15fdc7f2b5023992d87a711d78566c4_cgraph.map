@@ -1,6 +1,6 @@
 <map id="data_structures::trie_using_hashmap::Trie::predict_words" name="data_structures::trie_using_hashmap::Trie::predict_words">
-<area shape="rect" id="node1" title="predict/recommend a word that starts with a given prefix" alt="" coords="5,29,159,85"/>
-<area shape="rect" id="node2" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n..." alt="" coords="207,29,360,85"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/pop_back.html#" title=" " alt="" coords="413,19,559,45"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="408,69,564,96"/>
+<area shape="rect" id="node1" title="predict/recommend a word that starts with a given prefix" alt="" coords="5,29,156,85"/>
+<area shape="rect" id="node2" href="$d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a7bbe538c8015e8ce158e7ed43f605ebd" title="helper function to predict/recommend words that starts with a given prefix from the end of prefix&#39;s n..." alt="" coords="204,29,355,85"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/pop_back.html#" title=" " alt="" coords="408,19,552,45"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="403,69,557,96"/>
 </map>

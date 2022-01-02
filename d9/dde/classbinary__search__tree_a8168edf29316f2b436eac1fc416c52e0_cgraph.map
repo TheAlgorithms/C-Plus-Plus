@@ -1,4 +1,4 @@
 <map id="binary_search_tree::insert" name="binary_search_tree::insert">
-<area shape="rect" id="node1" title="Insert a new value into the BST." alt="" coords="5,29,141,71"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="189,29,325,71"/>
+<area shape="rect" id="node1" title="Insert a new value into the BST." alt="" coords="5,29,137,71"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="185,29,317,71"/>
 </map>

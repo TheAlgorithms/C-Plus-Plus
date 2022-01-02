@@ -1,5 +1,5 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::SearchSuggestions" name="operations_on_datastructures::trie_operations::Tnode::SearchSuggestions">
-<area shape="rect" id="node1" title="Lists out all the words in trie with the longest prefix of the search key that is present in the trie..." alt="" coords="5,5,204,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="499,20,571,47"/>
-<area shape="rect" id="node3" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#a097913c4badec2b60d50a171ecc299fe" title="Recursive function to suggest all the entries of trie which have a given common prefix." alt="" coords="252,49,451,105"/>
+<area shape="rect" id="node1" title="Lists out all the words in trie with the longest prefix of the search key that is present in the trie..." alt="" coords="5,5,199,61"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="488,20,560,47"/>
+<area shape="rect" id="node3" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#a097913c4badec2b60d50a171ecc299fe" title="Recursive function to suggest all the entries of trie which have a given common prefix." alt="" coords="247,49,440,105"/>
 </map>

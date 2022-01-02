@@ -1,6 +1,6 @@
 <map id="data_structures::tree_234::Node::InsertItem" name="data_structures::tree_234::Node::InsertItem">
-<area shape="rect" id="node1" title="Insert item to the proper position of the node and return the position index." alt="" coords="5,71,163,112"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="238,5,389,47"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="211,71,416,112"/>
-<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="241,136,385,177"/>
+<area shape="rect" id="node1" title="Insert item to the proper position of the node and return the position index." alt="" coords="5,71,161,112"/>
+<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a22fd25c6c811c64b6b27b0850d8c532f" title="Check if item is in the node." alt="" coords="237,5,386,47"/>
+<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a306a30931f54c84098b38d6bc8f4a956" title="Insert a value to the index position." alt="" coords="209,71,413,112"/>
+<area shape="rect" id="node4" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a4a37381c0ef93d5ae2118b2e554974dd" title="Check if node is a full (4&#45;node)" alt="" coords="240,136,383,177"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function." alt="" coords="5,31,56,57"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="253,5,325,32"/>
-<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" title="Calculate the longest increasing subsequence for the specified numbers." alt="" coords="196,68,381,95"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="251,5,323,32"/>
+<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079" title="Calculate the longest increasing subsequence for the specified numbers." alt="" coords="196,68,377,95"/>
 <area shape="rect" id="node5" href="$d7/d57/longest__increasing__subsequence_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,31,148,57"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="429,68,501,95"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="425,68,499,95"/>
 </map>

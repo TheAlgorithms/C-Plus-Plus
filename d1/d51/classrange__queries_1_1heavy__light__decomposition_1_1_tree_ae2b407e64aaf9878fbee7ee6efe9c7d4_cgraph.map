@@ -1,4 +1,4 @@
 <map id="range_queries::heavy_light_decomposition::Tree::lca" name="range_queries::heavy_light_decomposition::Tree::lca">
-<area shape="rect" id="node1" title="The function returns the least common ancestor of two nodes." alt="" coords="5,5,156,61"/>
-<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="204,5,355,61"/>
+<area shape="rect" id="node1" title="The function returns the least common ancestor of two nodes." alt="" coords="5,5,152,61"/>
+<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="200,5,347,61"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="probability::windowed_median::WindowedMedian::insert" name="probability::windowed_median::WindowedMedian::insert">
-<area shape="rect" id="node1" title="Insert a new value to the stream." alt="" coords="5,169,192,225"/>
-<area shape="rect" id="node2" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#af544e271ea19a6fd69a6b3ed6816453e" title="Erases a value from a sorted multi&#45;value BST." alt="" coords="240,5,427,61"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/front.html#" title=" " alt="" coords="285,85,382,112"/>
-<area shape="rect" id="node4" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a3a7f57679e9cd6c9f042dfd0612b2b24" title="Inserts a value to a sorted multi&#45;value BST." alt="" coords="240,136,427,192"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_front.html#" title=" " alt="" coords="270,216,397,243"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_back.html#" title=" " alt="" coords="265,267,401,293"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="286,317,381,344"/>
+<area shape="rect" id="node1" title="Insert a new value to the stream." alt="" coords="5,169,188,225"/>
+<area shape="rect" id="node2" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#af544e271ea19a6fd69a6b3ed6816453e" title="Erases a value from a sorted multi&#45;value BST." alt="" coords="236,5,419,61"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/front.html#" title=" " alt="" coords="278,85,377,112"/>
+<area shape="rect" id="node4" href="$df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#a3a7f57679e9cd6c9f042dfd0612b2b24" title="Inserts a value to a sorted multi&#45;value BST." alt="" coords="236,136,419,192"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/pop_front.html#" title=" " alt="" coords="264,216,391,243"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/push_back.html#" title=" " alt="" coords="259,267,395,293"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/size.html#" title=" " alt="" coords="279,317,376,344"/>
 </map>

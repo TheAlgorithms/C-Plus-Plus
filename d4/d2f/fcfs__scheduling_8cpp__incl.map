@@ -1,12 +1,12 @@
 <map id="cpu_scheduling_algorithms/fcfs_scheduling.cpp" name="cpu_scheduling_algorithms/fcfs_scheduling.cpp">
-<area shape="rect" id="node1" title="Implementation of FCFS CPU scheduling algorithm." alt="" coords="301,5,485,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,83,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,95,173,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="197,95,257,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="281,95,335,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="359,95,428,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="453,95,526,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="551,95,609,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="634,95,742,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="767,95,825,121"/>
+<area shape="rect" id="node1" title="Implementation of FCFS CPU scheduling algorithm." alt="" coords="301,5,480,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,80,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,95,170,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="194,95,254,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="278,95,333,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="357,95,424,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="448,95,520,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="545,95,602,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="627,95,731,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="755,95,813,121"/>
 </map>

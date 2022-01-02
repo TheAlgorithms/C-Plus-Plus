@@ -1,4 +1,4 @@
 <map id="binary_search_tree::get_elements_postorder" name="binary_search_tree::get_elements_postorder">
-<area shape="rect" id="node1" title="Get all values of the BST in post&#45;order order." alt="" coords="5,29,179,71"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#a87c0a35845d27e0f6fc1f4eaa0333362" title="Recursive function to traverse the tree in post&#45;order order." alt="" coords="227,29,368,71"/>
+<area shape="rect" id="node1" title="Get all values of the BST in post&#45;order order." alt="" coords="5,29,175,71"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#a87c0a35845d27e0f6fc1f4eaa0333362" title="Recursive function to traverse the tree in post&#45;order order." alt="" coords="223,29,361,71"/>
 </map>

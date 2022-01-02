@@ -1,7 +1,7 @@
 <map id="test_get_elements_preorder" name="test_get_elements_preorder">
-<area shape="rect" id="node1" title="Function for testing get_elements_preorder()." alt="" coords="5,64,195,91"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="290,5,362,32"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a5764c1cf848f84a5b77462036a6d8c13" title="Get all values of the BST in pre&#45;order order." alt="" coords="243,57,409,98"/>
-<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="258,146,394,187"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1" title="Recursive function to traverse the tree in pre&#45;order order." alt="" coords="457,57,593,98"/>
+<area shape="rect" id="node1" title="Function for testing get_elements_preorder()." alt="" coords="5,64,188,91"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="281,5,353,32"/>
+<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a5764c1cf848f84a5b77462036a6d8c13" title="Get all values of the BST in pre&#45;order order." alt="" coords="236,57,399,98"/>
+<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="251,146,383,187"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#ab81edd415324d372632c42dc7dbcb9e1" title="Recursive function to traverse the tree in pre&#45;order order." alt="" coords="447,57,579,98"/>
 </map>

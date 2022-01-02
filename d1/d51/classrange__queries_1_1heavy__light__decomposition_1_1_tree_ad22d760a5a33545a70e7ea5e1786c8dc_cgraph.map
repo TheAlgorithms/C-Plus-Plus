@@ -1,5 +1,5 @@
 <map id="range_queries::heavy_light_decomposition::Tree::init" name="range_queries::heavy_light_decomposition::Tree::init">
-<area shape="rect" id="node1" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="5,81,156,137"/>
-<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="204,29,355,85"/>
-<area shape="rect" id="node3" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="204,133,355,189"/>
+<area shape="rect" id="node1" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="5,81,152,137"/>
+<area shape="rect" id="node2" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="200,29,347,85"/>
+<area shape="rect" id="node3" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="200,133,347,189"/>
 </map>

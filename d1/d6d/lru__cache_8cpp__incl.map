@@ -1,7 +1,7 @@
 <map id="others/lru_cache.cpp" name="others/lru_cache.cpp">
-<area shape="rect" id="node1" title="An implementation of LRU Cache. Lru is a part of cache algorithms (also frequently called cache repla..." alt="" coords="99,5,244,32"/>
+<area shape="rect" id="node1" title="An implementation of LRU Cache. Lru is a part of cache algorithms (also frequently called cache repla..." alt="" coords="100,5,243,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,71,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,80,168,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,80,167,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="192,80,231,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="255,80,371,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="255,80,365,107"/>
 </map>

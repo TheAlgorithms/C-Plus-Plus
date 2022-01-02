@@ -1,6 +1,6 @@
 <map id="test_find_max" name="test_find_max">
-<area shape="rect" id="node1" title="Function for testing find_max()." alt="" coords="5,88,111,115"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="191,5,263,32"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="159,81,295,122"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="159,170,295,211"/>
+<area shape="rect" id="node1" title="Function for testing find_max()." alt="" coords="5,88,109,115"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="187,5,259,32"/>
+<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="157,81,289,122"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="157,170,289,211"/>
 </map>

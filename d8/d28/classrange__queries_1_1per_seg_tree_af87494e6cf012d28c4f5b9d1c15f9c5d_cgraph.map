@@ -1,6 +1,6 @@
 <map id="range_queries::perSegTree::update" name="range_queries::perSegTree::update">
-<area shape="rect" id="node1" title="Doing range update by passing the left and right indexes of the range as well as the value to be adde..." alt="" coords="5,35,189,76"/>
-<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="237,35,421,76"/>
-<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="469,5,653,47"/>
-<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="701,35,885,76"/>
+<area shape="rect" id="node1" title="Doing range update by passing the left and right indexes of the range as well as the value to be adde..." alt="" coords="5,35,184,76"/>
+<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a24487eda25123bc4d112e8430821a6c6" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="232,35,411,76"/>
+<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="459,5,637,47"/>
+<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="685,35,864,76"/>
 </map>

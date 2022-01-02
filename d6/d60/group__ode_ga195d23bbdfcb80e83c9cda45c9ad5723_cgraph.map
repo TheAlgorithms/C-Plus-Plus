@@ -1,4 +1,4 @@
 <map id="forward_euler_step" name="forward_euler_step">
-<area shape="rect" id="node1" title="Compute next step approximation using the forward&#45;Euler method." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="node2" href="$db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="189,5,260,32"/>
+<area shape="rect" id="node1" title="Compute next step approximation using the forward&#45;Euler method." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$db/dd3/ode__forward__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="185,5,253,32"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="double_hashing::remove" name="double_hashing::remove">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,173,83"/>
-<area shape="rect" id="node2" href="$d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" title="Performs double hashing to resolve collisions." alt="" coords="221,81,416,108"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="531,5,603,32"/>
-<area shape="rect" id="node4" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="480,56,655,83"/>
-<area shape="rect" id="node5" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="464,107,671,133"/>
-<area shape="rect" id="node6" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="476,157,659,184"/>
-<area shape="rect" id="node7" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="477,209,658,250"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$d0/d65/namespacedouble__hashing.html#a8f8ff4fb018e1bb32d67d8a1885d3200" title="Performs double hashing to resolve collisions." alt="" coords="216,81,405,108"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="519,5,591,32"/>
+<area shape="rect" id="node4" href="$d0/d65/namespacedouble__hashing.html#a0d90726ed1de7b3d2ae261baed048003" title="Hash a key. Uses the STL library&#39;s std::hash() function." alt="" coords="469,56,640,83"/>
+<area shape="rect" id="node5" href="$d0/d65/namespacedouble__hashing.html#a33968a1178289ab61445dd4000df7082" title="Used for second hash function." alt="" coords="453,107,656,133"/>
+<area shape="rect" id="node6" href="$d0/d65/namespacedouble__hashing.html#ac2adfce49ac57f6dbd1778d2c1ce0d2b" title=" " alt="" coords="467,157,643,184"/>
+<area shape="rect" id="node7" href="$d0/d65/namespacedouble__hashing.html#a29f543e2626bad58907661e1e45028a6" title=" " alt="" coords="467,209,643,250"/>
 </map>

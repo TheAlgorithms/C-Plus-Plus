@@ -1,5 +1,5 @@
 <map id="ciphers::elliptic_curve_key_exchange::addition" name="ciphers::elliptic_curve_key_exchange::addition">
-<area shape="rect" id="node1" title="Addition of points." alt="" coords="5,5,175,47"/>
-<area shape="rect" id="node2" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="223,5,372,47"/>
-<area shape="rect" id="node3" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="420,13,464,39"/>
+<area shape="rect" id="node1" title="Addition of points." alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0" title="This function calculates number raised to exponent power under modulo mod using Modular Exponentiatio..." alt="" coords="220,5,368,47"/>
+<area shape="rect" id="node3" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="416,13,459,39"/>
 </map>

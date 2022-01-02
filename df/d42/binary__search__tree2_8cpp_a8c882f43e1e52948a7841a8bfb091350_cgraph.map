@@ -1,8 +1,8 @@
 <map id="test_insert" name="test_insert">
-<area shape="rect" id="node1" title="Function for testing insert()." alt="" coords="5,177,89,204"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="169,5,241,32"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="137,81,273,122"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="137,170,273,211"/>
-<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="137,259,273,301"/>
-<area shape="rect" id="node6" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="137,325,273,366"/>
+<area shape="rect" id="node1" title="Function for testing insert()." alt="" coords="5,177,88,204"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="166,5,238,32"/>
+<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="136,81,268,122"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="136,170,268,211"/>
+<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="136,259,268,301"/>
+<area shape="rect" id="node6" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="136,325,268,366"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="midpoint_euler" name="midpoint_euler">
-<area shape="rect" id="node1" title="Compute approximation using the midpoint&#45;Euler method in the given limits." alt="" coords="5,132,115,159"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="201,5,278,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="171,56,308,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="163,107,316,133"/>
-<area shape="rect" id="node5" href="$d6/d60/group__ode.html#ga8c319db420c3d97a83e9dcca803b6812" title="Compute next step approximation using the midpoint&#45;Euler method." alt="" coords="168,157,311,184"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="171,208,307,235"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="198,259,281,285"/>
-<area shape="rect" id="node6" href="$d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="364,157,435,184"/>
+<area shape="rect" id="node1" title="Compute approximation using the midpoint&#45;Euler method in the given limits." alt="" coords="5,132,112,159"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/clock.html#" title=" " alt="" coords="197,5,275,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="167,56,305,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="160,107,312,133"/>
+<area shape="rect" id="node5" href="$d6/d60/group__ode.html#ga8c319db420c3d97a83e9dcca803b6812" title="Compute next step approximation using the midpoint&#45;Euler method." alt="" coords="167,157,305,184"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="169,208,303,235"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/perror.html#" title=" " alt="" coords="195,259,277,285"/>
+<area shape="rect" id="node6" href="$d6/dd3/ode__midpoint__euler_8cpp.html#abaeae8f62a018d197f0187a1c80a90fe" title="Problem statement for a system with first&#45;order differential equations. Updates the system differenti..." alt="" coords="360,157,428,184"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="data_structures::tree_234::Tree234::GetTreeMaxItem" name="data_structures::tree_234::Tree234::GetTreeMaxItem">
-<area shape="rect" id="node1" title="Get the max item of the tree." alt="" coords="5,39,220,80"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="288,5,459,47"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="268,71,479,112"/>
+<area shape="rect" id="node1" title="Get the max item of the tree." alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a2753b6053b8c86c5bd987a44fdfa0a57" title="Get max item (rightmost) in the current node." alt="" coords="283,5,453,47"/>
+<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a731f9ae385840cf0a06d55e7f9924a94" title="Get rightmose child of the current node." alt="" coords="264,71,472,112"/>
 </map>

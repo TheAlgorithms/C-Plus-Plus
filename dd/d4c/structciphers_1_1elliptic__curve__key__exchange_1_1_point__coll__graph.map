@@ -1,5 +1,5 @@
 <map id="ciphers::elliptic_curve_key_exchange::Point" name="ciphers::elliptic_curve_key_exchange::Point">
-<area shape="rect" id="node1" title="Definition of struct Point." alt="" coords="5,213,159,255"/>
-<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html" title="class for 256&#45;bit unsigned integer" alt="" coords="43,109,121,136"/>
-<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html" title="class for 128&#45;bit unsigned integer" alt="" coords="43,5,121,32"/>
+<area shape="rect" id="node1" title="Definition of struct Point." alt="" coords="5,213,156,255"/>
+<area shape="rect" id="node2" href="$d1/d83/classuint256__t.html" title="class for 256&#45;bit unsigned integer" alt="" coords="43,109,118,136"/>
+<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html" title="class for 128&#45;bit unsigned integer" alt="" coords="43,5,118,32"/>
 </map>

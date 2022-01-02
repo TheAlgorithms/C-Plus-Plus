@@ -1,12 +1,12 @@
 <map id="machine_learning/adaline_learning.cpp" name="machine_learning/adaline_learning.cpp">
-<area shape="rect" id="node1" title="Adaptive Linear Neuron (ADALINE) implementation" alt="" coords="281,5,454,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,57,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="81,95,147,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="171,95,230,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="254,95,313,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="337,95,397,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="422,95,475,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="500,95,573,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="598,95,667,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="691,95,750,121"/>
+<area shape="rect" id="node1" title="Adaptive Linear Neuron (ADALINE) implementation" alt="" coords="284,5,452,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="81,95,146,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="170,95,230,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="255,95,313,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="338,95,398,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="422,95,477,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="501,95,573,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="598,95,666,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="691,95,749,121"/>
 </map>

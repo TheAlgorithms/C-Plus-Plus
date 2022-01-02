@@ -1,10 +1,10 @@
 <map id="hashing/sha1.cpp" name="hashing/sha1.cpp">
-<area shape="rect" id="node1" title="Simple C++ implementation of the SHA&#45;1 Hashing Algorithm" alt="" coords="241,5,367,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,83,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,80,159,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="183,80,249,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="273,80,335,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="359,80,433,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="457,80,511,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="536,80,595,107"/>
+<area shape="rect" id="node1" title="Simple C++ implementation of the SHA&#45;1 Hashing Algorithm" alt="" coords="238,5,362,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="104,80,155,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="179,80,245,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,80,331,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="355,80,427,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="451,80,506,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="531,80,589,107"/>
 </map>

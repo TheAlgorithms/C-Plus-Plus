@@ -1,12 +1,12 @@
 <map id="test2" name="test2">
 <area shape="rect" id="node1" title="simple test to insert continuous number of range [0, n), and print the tree" alt="" coords="5,145,56,171"/>
-<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="113,33,263,75"/>
-<area shape="rect" id="node4" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="116,108,260,149"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="139,174,237,201"/>
-<area shape="rect" id="node10" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a84ab7b4fe7442b5e2eeed8c050bb86bd" title="In&#45;order traverse." alt="" coords="104,249,272,291"/>
-<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="320,5,516,47"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="349,71,487,98"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="382,245,454,271"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="350,122,486,149"/>
-<area shape="rect" id="node8" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be" title="Print the tree to a dot file. You can convert it to picture with graphviz." alt="" coords="331,173,505,215"/>
+<area shape="rect" id="node2" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e" title="Insert item to tree." alt="" coords="113,33,259,75"/>
+<area shape="rect" id="node4" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a2e9a9db7792cf5383f4c4cc418255165" title="Print tree into a dot file." alt="" coords="115,108,257,149"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="137,174,235,201"/>
+<area shape="rect" id="node10" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a84ab7b4fe7442b5e2eeed8c050bb86bd" title="In&#45;order traverse." alt="" coords="104,249,268,291"/>
+<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a07811b3c564a3a443b106c9aa717629d" title="A insert implementation of pre&#45;split." alt="" coords="316,5,508,47"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="343,71,481,98"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="376,245,448,271"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="345,122,479,149"/>
+<area shape="rect" id="node8" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be" title="Print the tree to a dot file. You can convert it to picture with graphviz." alt="" coords="327,173,497,215"/>
 </map>

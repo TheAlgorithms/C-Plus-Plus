@@ -1,11 +1,11 @@
 <map id="graphics/spirograph.cpp" name="graphics/spirograph.cpp">
-<area shape="rect" id="node1" title="Implementation of Spirograph" alt="" coords="236,5,400,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,57,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="82,80,141,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="165,80,225,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="250,80,303,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="327,80,394,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="418,80,487,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="512,80,585,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="610,80,679,107"/>
+<area shape="rect" id="node1" title="Implementation of Spirograph" alt="" coords="237,5,397,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,56,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="80,80,139,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="163,80,223,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="247,80,302,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="327,80,393,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="417,80,484,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="508,80,580,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="604,80,673,107"/>
 </map>

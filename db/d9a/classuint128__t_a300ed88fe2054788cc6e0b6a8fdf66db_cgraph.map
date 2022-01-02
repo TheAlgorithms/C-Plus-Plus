@@ -1,5 +1,5 @@
 <map id="uint128_t::operator/=" name="uint128_t::operator/=">
-<area shape="rect" id="node1" title="operator /= for uint128_t" alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#a8bf81f7f5f5c98f197822ec88e106c6c" title="divide function for uint128_t and other integer types." alt="" coords="199,5,317,32"/>
-<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="365,5,475,32"/>
+<area shape="rect" id="node1" title="operator /= for uint128_t" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$db/d9a/classuint128__t.html#a8bf81f7f5f5c98f197822ec88e106c6c" title="divide function for uint128_t and other integer types." alt="" coords="196,5,313,32"/>
+<area shape="rect" id="node3" href="$db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2" title="Leading zeroes in binary." alt="" coords="361,5,468,32"/>
 </map>

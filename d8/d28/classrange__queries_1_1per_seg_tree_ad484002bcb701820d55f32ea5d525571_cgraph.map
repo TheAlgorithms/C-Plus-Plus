@@ -1,6 +1,6 @@
 <map id="range_queries::perSegTree::query" name="range_queries::perSegTree::query">
-<area shape="rect" id="node1" title="Querying the range from index l to index r, getting the sum of the elements whose index x satisfies l..." alt="" coords="5,29,189,71"/>
-<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="237,29,421,71"/>
-<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="469,29,653,71"/>
-<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="701,29,885,71"/>
+<area shape="rect" id="node1" title="Querying the range from index l to index r, getting the sum of the elements whose index x satisfies l..." alt="" coords="5,29,184,71"/>
+<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ae8ae4b1835e5e8aec32f68c5059ed4d4" title="Querying the range from index l to index r, checking at every node if it has some value to be propaga..." alt="" coords="232,29,411,71"/>
+<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="459,29,637,71"/>
+<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="685,29,864,71"/>
 </map>

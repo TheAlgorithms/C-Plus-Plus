@@ -1,4 +1,4 @@
 <map id="graph::disjoint_union::union_sets" name="graph::disjoint_union::union_sets">
-<area shape="rect" id="node1" title="Merge 2 components to become one." alt="" coords="5,29,151,71"/>
-<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="199,29,344,71"/>
+<area shape="rect" id="node1" title="Merge 2 components to become one." alt="" coords="5,29,147,71"/>
+<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="195,29,336,71"/>
 </map>

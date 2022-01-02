@@ -1,13 +1,13 @@
 <map id="machine_learning::aystar_search::AyStarSearch::a_star_search" name="machine_learning::aystar_search::AyStarSearch::a_star_search">
-<area shape="rect" id="node1" title=" " alt="" coords="5,193,176,249"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/begin.html#" title=" " alt="" coords="257,5,362,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/emplace.html#" title=" " alt="" coords="248,56,371,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/empty.html#" title=" " alt="" coords="255,107,364,133"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/end.html#" title=" " alt="" coords="262,157,357,184"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/end.html#" title=" " alt="" coords="258,208,361,235"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/erase.html#" title=" " alt="" coords="257,259,362,285"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/find.html#" title=" " alt="" coords="263,309,356,336"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/find.html#" title=" " alt="" coords="480,368,583,395"/>
-<area shape="rect" id="node10" href="$da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html#a0a26aa9ad3d73707370d9fe83707aca4" title="A helper solution: launches when a solution for AyStarSearch is found." alt="" coords="224,411,395,467"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="443,425,620,452"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,193,172,249"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/begin.html#" title=" " alt="" coords="251,5,356,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/emplace.html#" title=" " alt="" coords="242,56,365,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/empty.html#" title=" " alt="" coords="248,107,359,133"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/end.html#" title=" " alt="" coords="256,157,351,184"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/end.html#" title=" " alt="" coords="252,208,355,235"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/erase.html#" title=" " alt="" coords="250,259,357,285"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/find.html#" title=" " alt="" coords="256,309,351,336"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/find.html#" title=" " alt="" coords="471,368,574,395"/>
+<area shape="rect" id="node10" href="$da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html#a0a26aa9ad3d73707370d9fe83707aca4" title="A helper solution: launches when a solution for AyStarSearch is found." alt="" coords="220,411,387,467"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="435,425,611,452"/>
 </map>

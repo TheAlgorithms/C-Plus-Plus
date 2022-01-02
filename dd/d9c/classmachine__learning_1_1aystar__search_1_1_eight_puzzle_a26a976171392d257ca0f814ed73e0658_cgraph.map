@@ -1,7 +1,7 @@
 <map id="machine_learning::aystar_search::EightPuzzle::generate_possible_moves" name="machine_learning::aystar_search::EightPuzzle::generate_possible_moves">
-<area shape="rect" id="node1" title="Find all possible states after processing all possible moves, given the current state of the puzzle." alt="" coords="5,83,212,139"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="276,5,453,32"/>
-<area shape="rect" id="node3" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3" title="A helper array to evaluate the next state from current state;." alt="" coords="260,57,469,98"/>
-<area shape="rect" id="node4" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="261,122,468,163"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="325,188,404,215"/>
+<area shape="rect" id="node1" title="Find all possible states after processing all possible moves, given the current state of the puzzle." alt="" coords="5,83,209,139"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="273,5,449,32"/>
+<area shape="rect" id="node3" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3" title="A helper array to evaluate the next state from current state;." alt="" coords="257,57,464,98"/>
+<area shape="rect" id="node4" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="259,122,462,163"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="321,188,400,215"/>
 </map>

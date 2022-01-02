@@ -1,7 +1,7 @@
 <map id="backtracking/subarray_sum.cpp" name="backtracking/subarray_sum.cpp">
-<area shape="rect" id="node1" title="Subset&#45;sum (only continuous subsets) problem" alt="" coords="114,5,266,47"/>
+<area shape="rect" id="node1" title="Subset&#45;sum (only continuous subsets) problem" alt="" coords="113,5,264,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,71,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,95,168,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,95,308,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="333,95,391,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,95,167,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,95,303,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="327,95,386,121"/>
 </map>

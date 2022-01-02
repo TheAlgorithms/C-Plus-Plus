@@ -1,10 +1,10 @@
 <map id="test_remove" name="test_remove">
-<area shape="rect" id="node1" title="Function for testing remove()." alt="" coords="5,267,101,294"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="149,29,285,71"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="181,95,253,122"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="149,171,285,212"/>
-<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="149,260,285,301"/>
-<area shape="rect" id="node6" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="149,349,285,391"/>
-<area shape="rect" id="node7" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="149,415,285,456"/>
-<area shape="rect" id="node8" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="149,480,285,521"/>
+<area shape="rect" id="node1" title="Function for testing remove()." alt="" coords="5,267,100,294"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="148,29,280,71"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="178,95,250,122"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="148,171,280,212"/>
+<area shape="rect" id="node5" href="$d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153" title="Recursive function to find the minimum value in the BST." alt="" coords="148,260,280,301"/>
+<area shape="rect" id="node6" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="148,349,280,391"/>
+<area shape="rect" id="node7" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="148,415,280,456"/>
+<area shape="rect" id="node8" href="$d9/dde/classbinary__search__tree.html#a564fe43e7e8f7ecb6f10667a70fbc6f3" title="Get the number of values in the BST." alt="" coords="148,480,280,521"/>
 </map>

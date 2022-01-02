@@ -1,3 +1,3 @@
 <map id="operations_on_datastructures::inorder_traversal_of_bst::deallocate" name="operations_on_datastructures::inorder_traversal_of_bst::deallocate">
-<area shape="rect" id="node1" title="This function clears the memory allocated to entire tree recursively. Its just for clean up the memor..." alt="" coords="5,29,204,85"/>
+<area shape="rect" id="node1" title="This function clears the memory allocated to entire tree recursively. Its just for clean up the memor..." alt="" coords="5,29,199,85"/>
 </map>

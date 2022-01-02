@@ -1,9 +1,9 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,56,49,83"/>
 <area shape="rect" id="node2" href="$d5/d58/class_test_cases.html#aeabea90c02f9159e4a784bbf736e1e23" title="Executes test cases." alt="" coords="97,56,240,83"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="652,5,724,32"/>
-<area shape="rect" id="node4" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="495,56,604,83"/>
-<area shape="rect" id="node5" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="288,56,447,83"/>
-<area shape="rect" id="node6" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="288,107,447,133"/>
-<area shape="rect" id="node7" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="288,157,447,184"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="655,5,727,32"/>
+<area shape="rect" id="node4" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="496,56,607,83"/>
+<area shape="rect" id="node5" href="$d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008" title="A test case contains edge case, printing inorder successor of last node." alt="" coords="288,56,448,83"/>
+<area shape="rect" id="node6" href="$d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3" title="A test case which contains main list of 100 elements and sublist of 20." alt="" coords="288,107,448,133"/>
+<area shape="rect" id="node7" href="$d5/d58/class_test_cases.html#ad9f95c09931625b41e3be1f88d1e28c5" title="A test case which contains main list of 50 elements and sublist of 20." alt="" coords="288,157,448,184"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="dynamic_programming::kadane::maxSubArray" name="dynamic_programming::kadane::maxSubArray">
-<area shape="rect" id="node1" title="maxSubArray function is used to calculate the maximum sum subarray and returns the value of maximum s..." alt="" coords="5,29,167,71"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="215,37,287,63"/>
+<area shape="rect" id="node1" title="maxSubArray function is used to calculate the maximum sum subarray and returns the value of maximum s..." alt="" coords="5,29,164,71"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="212,37,285,63"/>
 </map>

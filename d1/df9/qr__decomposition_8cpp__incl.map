@@ -1,13 +1,13 @@
 <map id="numerical_methods/qr_decomposition.cpp" name="numerical_methods/qr_decomposition.cpp">
-<area shape="rect" id="node1" title="Program to compute the QR decomposition of a given matrix." alt="" coords="95,5,248,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,57,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="21,169,79,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="104,169,164,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="389,95,442,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="188,169,261,196"/>
-<area shape="rect" id="node7" href="$d4/d68/qr__decompose_8h.html" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="235,95,364,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="549,169,618,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="285,169,337,196"/>
-<area shape="rect" id="node10" title=" " alt="" coords="362,169,431,196"/>
-<area shape="rect" id="node11" title=" " alt="" coords="455,169,525,196"/>
+<area shape="rect" id="node1" title="Program to compute the QR decomposition of a given matrix." alt="" coords="94,5,245,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="17,169,76,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="101,169,161,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="383,95,438,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="185,169,257,196"/>
+<area shape="rect" id="node7" href="$d4/d68/qr__decompose_8h.html" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="233,95,359,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="544,169,611,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="281,169,335,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="359,169,427,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="451,169,519,196"/>
 </map>

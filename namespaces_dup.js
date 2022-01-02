@@ -7,9 +7,9 @@ var namespaces_dup =
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", [
       [ "graph_coloring", null, [
-        [ "graphColoring", "d3/d40/graph__coloring_8cpp.html#a40337efc5dad761096489bf2c5b1c80c", null ],
-        [ "isSafe", "d3/d40/graph__coloring_8cpp.html#a976efe049deb042bf1f02612e181ab1d", null ],
-        [ "printSolution", "d3/d40/graph__coloring_8cpp.html#a8c47fa37fb6eeeb781b2ec1b05af6b07", null ]
+        [ "graphColoring", "df/d80/graph__coloringg_8cpp.html#a40337efc5dad761096489bf2c5b1c80c", null ],
+        [ "isSafe", "df/d80/graph__coloringg_8cpp.html#a976efe049deb042bf1f02612e181ab1d", null ],
+        [ "printSolution", "df/d80/graph__coloringg_8cpp.html#a8c47fa37fb6eeeb781b2ec1b05af6b07", null ]
       ] ],
       [ "knight_tour", null, [
         [ "issafe", "d1/d2a/knight__tour_8cpp.html#af27031fbff093ffd625f64010d98aab2", null ],

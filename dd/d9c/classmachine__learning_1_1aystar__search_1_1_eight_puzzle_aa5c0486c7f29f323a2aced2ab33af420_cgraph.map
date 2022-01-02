@@ -1,4 +1,4 @@
 <map id="machine_learning::aystar_search::EightPuzzle::get" name="machine_learning::aystar_search::EightPuzzle::get">
-<area shape="rect" id="node1" title="get the value from i units from right and j units from left side of the board" alt="" coords="5,5,179,47"/>
-<area shape="rect" id="node2" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="227,5,433,47"/>
+<area shape="rect" id="node1" title="get the value from i units from right and j units from left side of the board" alt="" coords="5,5,177,47"/>
+<area shape="rect" id="node2" href="$dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a48d054230468b79037964f474d842b6e" title="check whether the index value is bounded within the puzzle area" alt="" coords="225,5,428,47"/>
 </map>

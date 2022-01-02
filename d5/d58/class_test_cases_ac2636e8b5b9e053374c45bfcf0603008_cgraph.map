@@ -1,7 +1,7 @@
 <map id="TestCases::testCase_1" name="TestCases::testCase_1">
-<area shape="rect" id="node1" title="A test case with single input." alt="" coords="5,56,164,83"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="216,5,317,32"/>
-<area shape="rect" id="node3" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="212,56,321,83"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="212,107,321,133"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="369,56,441,83"/>
+<area shape="rect" id="node1" title="A test case with single input." alt="" coords="5,56,165,83"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="218,5,319,32"/>
+<area shape="rect" id="node3" href="$d5/d58/class_test_cases.html#aa3aa3d5bf666f327ee8e2d11d397b06e" title="A function to print given message on console." alt="" coords="213,56,324,83"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="214,107,323,133"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="372,56,444,83"/>
 </map>

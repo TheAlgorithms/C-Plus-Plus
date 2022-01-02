@@ -1,5 +1,5 @@
 <map id="math::modular_division::mod_division" name="math::modular_division::mod_division">
-<area shape="rect" id="node1" title="This function calculates modular division." alt="" coords="5,29,164,71"/>
-<area shape="rect" id="node2" href="$dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" title="This function calculates a raised to exponent b under modulo c using modular exponentiation." alt="" coords="212,37,308,63"/>
-<area shape="rect" id="node3" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="356,37,400,63"/>
+<area shape="rect" id="node1" title="This function calculates modular division." alt="" coords="5,29,161,71"/>
+<area shape="rect" id="node2" href="$dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d" title="This function calculates a raised to exponent b under modulo c using modular exponentiation." alt="" coords="209,37,304,63"/>
+<area shape="rect" id="node3" href="$d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa" title=" " alt="" coords="352,37,395,63"/>
 </map>

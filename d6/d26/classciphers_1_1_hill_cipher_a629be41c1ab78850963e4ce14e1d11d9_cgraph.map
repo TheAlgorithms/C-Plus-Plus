@@ -1,4 +1,4 @@
 <map id="ciphers::HillCipher::rand_range" name="ciphers::HillCipher::rand_range">
-<area shape="rect" id="node1" title="Function to generate a random integer in a given interval." alt="" coords="5,5,136,47"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="184,13,257,39"/>
+<area shape="rect" id="node1" title="Function to generate a random integer in a given interval." alt="" coords="5,5,135,47"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="183,13,256,39"/>
 </map>

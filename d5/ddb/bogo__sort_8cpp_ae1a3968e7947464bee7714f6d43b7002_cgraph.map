@@ -1,10 +1,10 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title=" " alt="" coords="5,141,49,168"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/begin.html#" title=" " alt="" coords="295,5,412,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/end.html#" title=" " alt="" coords="300,57,407,84"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="303,167,404,193"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="130,221,203,248"/>
-<area shape="rect" id="node6" href="$d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd" title=" " alt="" coords="97,105,236,146"/>
-<area shape="rect" id="node8" href="$d5/ddb/bogo__sort_8cpp.html#ae8adaeff66471f9ed84f2e673b38a859" title=" " alt="" coords="121,272,212,299"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/random_shuffle.html#" title=" " alt="" coords="284,112,423,139"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/begin.html#" title=" " alt="" coords="292,5,408,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/end.html#" title=" " alt="" coords="297,57,403,84"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="299,167,401,193"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="129,221,202,248"/>
+<area shape="rect" id="node6" href="$d5/d91/namespacesorting.html#affc6ee160142cd017f8c4b213437d0fd" title=" " alt="" coords="97,105,233,146"/>
+<area shape="rect" id="node8" href="$d5/ddb/bogo__sort_8cpp.html#ae8adaeff66471f9ed84f2e673b38a859" title=" " alt="" coords="121,272,210,299"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/random_shuffle.html#" title=" " alt="" coords="281,112,419,139"/>
 </map>

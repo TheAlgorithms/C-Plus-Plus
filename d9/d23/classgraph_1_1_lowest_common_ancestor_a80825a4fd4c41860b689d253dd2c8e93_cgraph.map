@@ -1,5 +1,5 @@
 <map id="graph::LowestCommonAncestor::LowestCommonAncestor" name="graph::LowestCommonAncestor::LowestCommonAncestor">
-<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." alt="" coords="5,5,217,47"/>
-<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " alt="" coords="265,5,477,47"/>
-<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="525,5,679,47"/>
+<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." alt="" coords="5,5,215,47"/>
+<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " alt="" coords="263,5,472,47"/>
+<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="520,5,668,47"/>
 </map>

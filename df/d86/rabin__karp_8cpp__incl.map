@@ -1,7 +1,7 @@
 <map id="strings/rabin_karp.cpp" name="strings/rabin_karp.cpp">
-<area shape="rect" id="node1" title="The Rabin&#45;Karp Algorithm for finding a pattern within a piece of text with complexity O(n + m)" alt="" coords="93,5,247,32"/>
+<area shape="rect" id="node1" title="The Rabin&#45;Karp Algorithm for finding a pattern within a piece of text with complexity O(n + m)" alt="" coords="93,5,244,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,71,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="95,80,154,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,80,252,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="277,80,338,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="178,80,250,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="274,80,335,107"/>
 </map>

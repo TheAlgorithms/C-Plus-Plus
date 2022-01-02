@@ -1,5 +1,5 @@
 <map id="numerical_methods/qr_decompose.h" name="numerical_methods/qr_decompose.h">
-<area shape="rect" id="node1" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="93,5,247,47"/>
-<area shape="rect" id="node2" href="$d3/d24/qr__decomposition_8cpp.html" title="Program to compute the QR decomposition of a given matrix." alt="" coords="5,95,159,136"/>
-<area shape="rect" id="node3" href="$de/d75/qr__eigen__values_8cpp.html" title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method." alt="" coords="183,95,336,136"/>
+<area shape="rect" id="node1" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="92,5,243,47"/>
+<area shape="rect" id="node2" href="$d3/d24/qr__decomposition_8cpp.html" title="Program to compute the QR decomposition of a given matrix." alt="" coords="5,95,156,136"/>
+<area shape="rect" id="node3" href="$de/d75/qr__eigen__values_8cpp.html" title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method." alt="" coords="180,95,331,136"/>
 </map>

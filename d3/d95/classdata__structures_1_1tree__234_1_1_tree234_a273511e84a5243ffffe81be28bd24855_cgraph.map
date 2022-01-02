@@ -1,5 +1,5 @@
 <map id="data_structures::tree_234::Tree234::DeleteNode" name="data_structures::tree_234::Tree234::DeleteNode">
-<area shape="rect" id="node1" title="Recursive release the tree." alt="" coords="5,39,192,80"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="243,5,393,47"/>
-<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" title="Get the item count that current saved in the node." alt="" coords="240,71,396,112"/>
+<area shape="rect" id="node1" title="Recursive release the tree." alt="" coords="5,39,188,80"/>
+<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a164574a9209b5df66368530d090b32c4" title="Get the child pointer at position of index." alt="" coords="239,5,387,47"/>
+<area shape="rect" id="node3" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#aac82e17daa088ede9ee00dc69c1e6f06" title="Get the item count that current saved in the node." alt="" coords="236,71,389,112"/>
 </map>

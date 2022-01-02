@@ -1,4 +1,4 @@
 <map id="probability::windowed_median::WindowedMedian::getMedianNaive" name="probability::windowed_median::WindowedMedian::getMedianNaive">
-<area shape="rect" id="node1" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="5,5,192,61"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/sort.html#" title=" " alt="" coords="240,20,333,47"/>
+<area shape="rect" id="node1" title="A naive and inefficient method to obtain the median of the sliding window. Used for testing!" alt="" coords="5,5,188,61"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list/sort.html#" title=" " alt="" coords="236,20,331,47"/>
 </map>
