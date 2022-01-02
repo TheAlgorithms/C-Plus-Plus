@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Implementation to  calculate an estimate of the number π (Pi).
+ * https://en.wikipedia.org/wiki/File:Pi_30K.gif
  *
  * @details
  * We take a random point P with coordinates (x, y) such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. If x² + y² ≤ 1, then the 
