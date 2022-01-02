@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation to [toggle bits in a given range]
+ * @brief Implementation to [Toggle Bits in a given Range]
  * (https://www.geeksforgeeks.org/toggle-bits-given-range/).
  *
  * @details
@@ -26,7 +26,7 @@ representation of 17 are toggled.
 namespace bit_manipulation {
 /**
  * @namespace toggle_bits
- * @brief Functions for the [toggle bits](https://www.geeksforgeeks.org/toggle-bits-given-range/)
+ * @brief Functions for the [Toggle Bits](https://www.geeksforgeeks.org/toggle-bits-given-range/)
  * implementation
  */
 namespace toggle_bits {
@@ -38,9 +38,9 @@ namespace toggle_bits {
  * @returns the new number 'n' after toggling the bits in the range.
  */
 std::uint64_t toggleBits(
-    std ::int64_t n,
-    std ::int64_t l,
-    std ::int64_t r) {  // int64_t is preferred over int so that
+    std::int64_t n,
+    std::int64_t l,
+    std::int64_t r) {  // int64_t is preferred over int so that
                         // no Overflow can be there.
 
     int i = 1;
@@ -59,6 +59,10 @@ std::uint64_t toggleBits(
 }  // namespace toggle_bits
 }  // namespace bit_manipulation
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     // n = 17, l=2,r=3 return 23
     assert(bit_manipulation::toggle_bits::toggleBits(17,2,3) == 23);
