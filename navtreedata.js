@@ -146,12 +146,12 @@ var NAVTREEINDEX =
 "d6/d42/miller__rabin_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9",
 "d7/d89/double__factorial_8cpp.html#a0a3c417360400093891a9ccddaa4be26",
 "d8/dab/classstatistics_1_1stats__computer2.html",
-"da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html#a48284e156fdd48fd0c41008c7e48f201",
-"db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d",
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a19aaccad279b22dbbb6c55e5697b4114",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ae145ac4a0d2ec58945b58fad3c04f00f",
-"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aac676369661d15a3eb782c0fee77d45d",
-"namespacemembers_type.html"
+"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html",
+"db/d3f/wave__sort_8cpp.html#a7d4f243b9dc13ace4ef77e30dbc56f12",
+"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#a2871146feaaa453558239df67b21e0d2",
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af22395b8e9e04222aa93a329523faef9",
+"df/d34/classprobability_1_1windowed__median_1_1_windowed_median.html#aacd76f078632faee1a8788d031e6c2de",
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
