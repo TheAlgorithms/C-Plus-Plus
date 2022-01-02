@@ -14,7 +14,7 @@
  * @author [Qannaf AL-SAHMI](https://github.com/Qannaf)
  */
 
-#include <iostream>  /// for std::cout
+#include <iostream>  /// for IO operations
 #include <vector>    /// for vector
 #include <stdlib.h>  /// for rand 
 
