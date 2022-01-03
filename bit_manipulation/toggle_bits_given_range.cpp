@@ -5,7 +5,8 @@
  *
  * @details
  * We are given a non-negative number n and two values l and r. The problem is
- * to toggle the bits in the range l to r in the binary representation of n, i.e,
+ * to toggle the bits in the range l to r in the binary representation of n,
+i.e,
  * to toggle bits from the rightmost lth bit to the rightmost rth bit. A toggle
  * operation flips a bit 0 to 1 and a bit 1 to 0.
  * Example:- Input : n = 17, l = 2, r = 3
