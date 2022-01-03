@@ -9,10 +9,10 @@
  * to toggle bits from the rightmost lth bit to the rightmost rth bit. A toggle
  * operation flips a bit 0 to 1 and a bit 1 to 0.
  * Example:- Input : n = 17, l = 2, r = 3
-            Output : 23
-            (17)10 = (10001)2
-            (23)10 = (10111)2
-            The bits in the range 2 to 3 in the binary
+ *            Output : 23
+ *            (17)10 = (10001)2
+ *            (23)10 = (10111)2
+ *           The bits in the range 2 to 3 in the binary
 representation of 17 are toggled.
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
