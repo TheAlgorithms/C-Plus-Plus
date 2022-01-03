@@ -40,8 +40,8 @@ namespace count_bits_flip {
  * @returns total number of bits needed to be flipped to convert A to B
  */
 std::uint64_t countBitsFlip(
-    std ::int64_t A,
-    std ::int64_t B) {  // int64_t is preferred over int so that
+    std::int64_t A,
+    std::int64_t B) {  // int64_t is preferred over int so that
                         // no Overflow can be there.
 
     int count =
