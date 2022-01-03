@@ -42,7 +42,7 @@ namespace count_bits_flip {
 std::uint64_t countBitsFlip(
     std::int64_t A,
     std::int64_t B) {  // int64_t is preferred over int so that
-                        // no Overflow can be there.
+                       // no Overflow can be there.
 
     int count =
         0;  // "count" variable is used to count number of bits flip of the
