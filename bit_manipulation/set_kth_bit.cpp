@@ -6,9 +6,9 @@
  * integer.
  *
  * @details
- *Given a number N and a value K. From the right, set the Kth bit in the binary
- *representation of N. The position of Least Significant Bit(or last bit) is 0,
- *the second last bit is 1 and so on. in it.
+ * Given a number N and a value K. From the right, set the Kth bit in the binary
+ * representation of N. The position of Least Significant Bit(or last bit) is 0,
+ * the second last bit is 1 and so on. in it.
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
