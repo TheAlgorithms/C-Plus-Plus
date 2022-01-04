@@ -278,6 +278,7 @@
   * [Pascal Triangle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/pascal_triangle.cpp)
   * [Postfix Evaluation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/postfix_evaluation.cpp)
   * [Primality Test](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/primality_test.cpp)
+  * [Recursive Tree Traversal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/recursive_tree_traversal.cpp)
   * [Smallest Circle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/smallest_circle.cpp)
   * [Sparse Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/sparse_matrix.cpp)
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
