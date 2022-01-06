@@ -16,8 +16,8 @@
  * we are back at n again.
  *
  * In normal inorder traversal, we visit the left subtree before the right
- *subtree. If we visit the right subtree before visiting the left subtree, it is
- *referred to as reverse inorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it is
+ * referred to as reverse inorder traversal.
  *
  * ### Iterative Preorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a preorder fashion, we must do
@@ -30,8 +30,8 @@
  * we are back at n again.
  *
  * In normal preorder traversal, visit the left subtree before the right
- *subtree. If we visit the right subtree before visiting the left subtree, it is
- *referred to as reverse preorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it is
+ * referred to as reverse preorder traversal.
  *
  * ### Iterative Postorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a postorder fashion, we must do
@@ -44,8 +44,8 @@
  * (N) Process n itself.
  *
  * In normal postorder traversal, visit the left subtree before the right
- *subtree. If we visit the right subtree before visiting the left subtree, it is
- *referred to as reverse postorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it is
+ * referred to as reverse postorder traversal.
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
@@ -64,8 +64,8 @@ namespace others {
 /******************************************************************************
  * @namespace interpolation_search
  * @brief Functions for the Recursive version of Inorder, Preorder, and
- *Postorder [Traversal of the
- *Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm implementation
+ * Postorder [Traversal of the
+ * Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm implementation
  *******************************************************************************/
 namespace recursive_tree_traversals {
 
@@ -82,7 +82,7 @@ struct Node {
 };
 /******************************************************************************
  * @brief BT used to make the entire structure of the binary tree and the
- *functions associated with the binary tree
+ * functions associated with the binary tree
  *******************************************************************************/
 class BT {
  public:
@@ -123,7 +123,7 @@ Node *BT::createNewNode(uint64_t data) {
 /******************************************************************************
  * @brief inorder() function that will perform the inorder traversal
  * recursively, and return the resultant vector that contain the inorder
- *traversal of a tree.
+ * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the inorder traversal of a tree
  *******************************************************************************/
@@ -143,7 +143,7 @@ std::vector<uint64_t> BT::inorder(Node *root) {
 /******************************************************************************
  * @brief preorder function that will perform the preorder traversal
  * recursively, and return the resultant vector that contain the preorder
- *traversal of a tree.
+ * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the preorder traversal of a tree
  *******************************************************************************/
@@ -163,7 +163,7 @@ std::vector<uint64_t> BT::preorder(Node *root) {
 /******************************************************************************
  * @brief postorder function that will perform the postorder traversal
  * recursively, and return the result vector that contain the postorder
- *traversal of a tree.
+ * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the postorder traversal of a tree
  *******************************************************************************/
