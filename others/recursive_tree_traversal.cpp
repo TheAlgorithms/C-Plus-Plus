@@ -16,8 +16,8 @@
  * we are back at n again.
  *
  * In normal inorder traversal, we visit the left subtree before the right
- * subtree. If we visit the right subtree before visiting the left subtree, it is
- * referred to as reverse inorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it
+ *is referred to as reverse inorder traversal.
  *
  * ### Iterative Preorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a preorder fashion, we must do
@@ -30,8 +30,8 @@
  * we are back at n again.
  *
  * In normal preorder traversal, visit the left subtree before the right
- * subtree. If we visit the right subtree before visiting the left subtree, it is
- * referred to as reverse preorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it
+ *is referred to as reverse preorder traversal.
  *
  * ### Iterative Postorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a postorder fashion, we must do
@@ -44,8 +44,8 @@
  * (N) Process n itself.
  *
  * In normal postorder traversal, visit the left subtree before the right
- * subtree. If we visit the right subtree before visiting the left subtree, it is
- * referred to as reverse postorder traversal.
+ * subtree. If we visit the right subtree before visiting the left subtree, it
+ *is referred to as reverse postorder traversal.
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
