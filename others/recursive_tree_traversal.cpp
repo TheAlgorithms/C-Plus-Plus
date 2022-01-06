@@ -17,7 +17,7 @@
  *
  * In normal inorder traversal, we visit the left subtree before the right
  * subtree. If we visit the right subtree before visiting the left subtree, it
- *is referred to as reverse inorder traversal.
+ * is referred to as reverse inorder traversal.
  *
  * ### Iterative Preorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a preorder fashion, we must do
@@ -31,7 +31,7 @@
  *
  * In normal preorder traversal, visit the left subtree before the right
  * subtree. If we visit the right subtree before visiting the left subtree, it
- *is referred to as reverse preorder traversal.
+ * is referred to as reverse preorder traversal.
  *
  * ### Iterative Postorder Traversal of a tree
  * For traversing a (non-empty) binary tree in a postorder fashion, we must do
@@ -45,7 +45,7 @@
  *
  * In normal postorder traversal, visit the left subtree before the right
  * subtree. If we visit the right subtree before visiting the left subtree, it
- *is referred to as reverse postorder traversal.
+ * is referred to as reverse postorder traversal.
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
@@ -372,6 +372,6 @@ static void tests() {
  * @returns 0 on exit
  *******************************************************************************/
 int main() {
-    tests();
+    tests();  // run self-test implementations
     return 0;
 }
