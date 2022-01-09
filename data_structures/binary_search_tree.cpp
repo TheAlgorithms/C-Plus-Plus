@@ -7,6 +7,7 @@
  * utilize any of the C++ STL features.
  */
 #include <iostream>
+#define MAX_SIZE 100
 
 struct node {
     int val;
@@ -25,6 +26,42 @@ Queue queue;
 void enqueue(node *n) { queue.t[queue.rear++] = n; }
 
 node *dequeue() { return (queue.t[queue.front++]); }
+
+node *createBST(int arr[], int size){        
+    node *btr,*root = new node;
+    root -> val = arr[0];
+    root -> left = root -> right = NULL;
+    btr = root;
+    for(int i = 1; i < size; i++){
+        root = btr;
+        abc:
+        if(arr[i] < root -> val) {
+            if(!root -> left) {
+                node *temp = new node;
+                temp -> val = arr[i];
+                temp -> left = temp -> right = NULL;
+                root -> left = temp;
+            }
+            else {
+                root = root -> left;
+                goto abc;
+            }
+        }
+        else {
+            if(!root -> right) {
+                node *temp = new node;
+                temp -> val = arr[i];
+                temp -> left = temp -> right = NULL;
+                root -> right = temp;
+            }
+            else { 
+                root = root -> right;
+                goto abc; 
+            }
+        }
+    }
+    return btr;
+}
 
 void Insert(node *n, int x) {
     if (x < n->val) {
@@ -49,6 +86,7 @@ void Insert(node *n, int x) {
         }
     }
 }
+
 
 int findMaxInLeftST(node *n) {
     while (n->right != NULL) {
@@ -126,7 +164,7 @@ int main() {
     queue.front = 0;
     queue.rear = 0;
     int value;
-    int ch;
+    int ch,sizeIn,DataSet[MAX_SIZE];
     node *root = new node;
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
@@ -139,7 +177,8 @@ int main() {
                   << "\n3. Breadth First"
                   << "\n4. Preorder Depth First"
                   << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
+                  << "\n6. Postorder Depth First"
+                  << "\n7. Create BST from Unsorted/Sorted Array";
 
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
@@ -167,6 +206,15 @@ int main() {
         case 6:
             Post(root);
             break;
+        case 7:
+            std::cout << "\nEnter the size "<< std::endl;
+            std::cin >> sizeIn;
+            std::cout << "\nEnter the array(any order) : "<< std::endl;
+            for(int xy=0;xy < sizeIn;xy++){
+                std::cin>>DataSet[xy];
+            }
+            root = createBST(DataSet, sizeIn);
+            std::cout << "Successfully created!";
         }
     } while (ch != 0);
 
