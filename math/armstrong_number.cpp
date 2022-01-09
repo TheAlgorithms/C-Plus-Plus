@@ -34,18 +34,18 @@ int number_of_digits(int num) {
  * @return `false` if the number is not armstrong.
  */
 bool is_armstrong(int number) {
-    // If the number is less than 0, then it is not a armstrong number.
+    // If the number is less than 0, then it is not an armstrong number.
     if (number < 0) {
         return false;
     }
     int sum = 0;
     int temp = number;
-    // Finding the total number of digits in the number
+    // Finding the total number of digits in the number.
     int total_digits = number_of_digits(number);
     while (temp > 0) {
         int rem = temp % 10;
         // Finding each digit raised to the power total digit and add it to the
-        // total sum
+        // total sum.
         sum = sum + std::pow(rem, total_digits);
         temp = temp / 10;
     }
