@@ -184,10 +184,10 @@ std::vector<uint64_t> BT::postorder(Node *root) {
 
 }  // namespace others
 
-/*******************************************************************************
+/**
  * @brief 1st test-case
  * @returns void
- *******************************************************************************/
+ */
 void test1() {
     others::recursive_tree_traversals::BT obj1;
     others::recursive_tree_traversals::Node *root = obj1.createNewNode(2);
