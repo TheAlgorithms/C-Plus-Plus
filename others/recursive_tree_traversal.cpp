@@ -160,13 +160,13 @@ std::vector<uint64_t> BT::preorder(Node *root) {
     return preorder_result;
 }
 
-/******************************************************************************
+/**
  * @brief postorder function that will perform the postorder traversal
  * recursively, and return the result vector that contain the postorder
  * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the postorder traversal of a tree
- *******************************************************************************/
+ */
 std::vector<uint64_t> BT::postorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
         return {};
