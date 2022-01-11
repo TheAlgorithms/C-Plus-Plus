@@ -69,12 +69,12 @@ namespace others {
  */
 namespace recursive_tree_traversals {
 
-/******************************************************************************
+/**
  * @brief The structure to hold Nodes of the tree.
  * @param data Value that will be stored in the node.
  * @param left follow up left subtree.
  * @param right follow up right subtree.
- *******************************************************************************/
+ */
 struct Node {
     uint64_t data = 0;     ///< The value/key of the node.
     struct Node *left{};   ///< struct pointer to left subtree.
