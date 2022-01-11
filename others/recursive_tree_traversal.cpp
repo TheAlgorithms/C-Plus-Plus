@@ -55,7 +55,7 @@
 #include <iostream>  /// for I/O operations
 #include <vector>    /// for vector
 
-/******************************************************************************
+/**
  * @namespace others
  * @brief Other algorithms
  *******************************************************************************/
