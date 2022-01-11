@@ -17,10 +17,7 @@
  * fast->next!=null and similarlly we print the slow->data
  */
 
-
-#include <iostream>  /// for I/O operations
- 
-using namespace std;// defining namespace for cout , cin
+ #include <iostream>
 
 /**
  * A Node class containing a value and pointer to another link
@@ -29,9 +26,9 @@ class node{
 public:
     int data;
     node*next;
-    node(int data){
+    explicit node(int data){
         this->data=data;
-        next=NULL;
+        next=nullptr;
     }
 };
 /*
@@ -43,18 +40,18 @@ void midpoint(int len,node*head){
     node*slow = head;
     node*fast=head->next;
     if(len%2){
-        while(fast!=NULL){
+        while(fast!=nullptr){
             slow=slow->next;
             fast=fast->next->next;
         }
-        cout<<slow->data<<" ";
+        std::cout<<slow->data<<" ";
     }
     else{
-        while(fast->next!=NULL){
+        while(fast->next!=nullptr){
             slow=slow->next;
             fast=fast->next->next;
         }
-        cout<<slow->data<<" ";
+        std::cout<<slow->data<<" ";
     }
 }
 
@@ -64,8 +61,8 @@ void midpoint(int len,node*head){
  */
 void print(node*head){
     node*temp = head;
-    while(temp!=NULL){
-        cout<<temp->data<<" ";
+    while(temp!=nullptr){
+        std::cout<<temp->data<<" ";
         temp = temp->next;
     }
 }
@@ -76,11 +73,11 @@ void print(node*head){
 int length(node*head){
     int len =0;
     node*temp = head;
-    while(temp!=NULL){
+    while(temp!=nullptr){
         temp=temp->next;
         len++;
     }
-    cout<<"The middle element is:";
+    std::cout<<"The middle element is:";
     return len;
     /*
     * returning the final length of the linked list 
@@ -91,6 +88,9 @@ int length(node*head){
  * @brief Main function
  * @returns 0 on exit
  */
+
+
+
 int main(){
 
     /*
@@ -98,17 +98,17 @@ int main(){
     * each other by next and head pointer by dynamically.
     */
 
-    node * head = NULL;
-    node* n1 = new  node(1);
-    node * n2 = new node(2);
-    node * n3 = new node(3);
-    node * n4 = new node(4);
-    node * n5 = new node(5);
+    node * head = nullptr;
+    node *n1 = new  node(1);
+    node *n2 = new node(2);
+    node *n3 = new node(3);
+    node *n4 = new node(4);
+    node *n5 = new node(5);
     
     head = n1;
     n1->next = n2;
     n2->next = n3;
-    n3->next=n4;
+    n3->next= n4;
     n4->next = n5;
     
     int len1 = length(head);
