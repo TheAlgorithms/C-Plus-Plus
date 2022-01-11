@@ -49,7 +49,7 @@
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
- ******************************************************************************/
+ */
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
@@ -80,10 +80,10 @@ struct Node {
     struct Node *left{};   ///< struct pointer to left subtree.
     struct Node *right{};  ///< struct pointer to right subtree.
 };
-/******************************************************************************
+/**
  * @brief BT used to make the entire structure of the binary tree and the
  * functions associated with the binary tree
- *******************************************************************************/
+ */
 class BT {
  public:
     std::vector<uint64_t>
@@ -107,12 +107,12 @@ class BT {
                   // returns its postorder traversal.
 };
 
-/******************************************************************************
+/**
  * @brief will allocate the memory for a node and, along the data and return the
  * node.
  * @param data value that a particular node will contain.
  * @return pointer to the newly created node with assigned data.
- *******************************************************************************/
+ */
 Node *BT::createNewNode(uint64_t data) {
     Node *node = new Node();
     node->data = data;
@@ -120,13 +120,13 @@ Node *BT::createNewNode(uint64_t data) {
     return node;
 }
 
-/******************************************************************************
+/*
  * @brief inorder() function that will perform the inorder traversal
  * recursively, and return the resultant vector that contain the inorder
  * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the inorder traversal of a tree
- *******************************************************************************/
+ **/
 std::vector<uint64_t> BT::inorder(Node *root) {
     if (root == nullptr) {  // return if the current node is empty
         return {};
@@ -140,13 +140,13 @@ std::vector<uint64_t> BT::inorder(Node *root) {
     return inorder_result;
 }
 
-/******************************************************************************
+/**
  * @brief preorder function that will perform the preorder traversal
  * recursively, and return the resultant vector that contain the preorder
  * traversal of a tree.
  * @param root head/root node of a tree
  * @return result that is containing the preorder traversal of a tree
- *******************************************************************************/
+ */
 std::vector<uint64_t> BT::preorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
         return {};
@@ -242,10 +242,10 @@ void test1() {
     std::cout << std::endl;
 }
 
-/*******************************************************************************
+/**
  * @brief 2nd test-case
  * @returns void
- *******************************************************************************/
+ */
 void test2() {
     others::recursive_tree_traversals::BT obj2;
     others::recursive_tree_traversals::Node *root = obj2.createNewNode(1);
@@ -299,10 +299,10 @@ void test2() {
     std::cout << std::endl;
 }
 
-/*******************************************************************************
+/**
  * @brief 3rd test-case
  * @returns void
- *******************************************************************************/
+ */
 void test3() {
     others::recursive_tree_traversals::BT obj3;
     others::recursive_tree_traversals::Node *root = obj3.createNewNode(1);
@@ -366,11 +366,10 @@ static void tests() {
     std::cout << "3rd test-case" << std::endl;
     test3();  // run 3rd test-case
 }
-
-/*******************************************************************************
+/**
  * @brief Main function
  * @returns 0 on exit
- *******************************************************************************/
+ */
 int main() {
     tests();  // run self-test implementations
     return 0;
