@@ -61,12 +61,12 @@
  */
 namespace others {
 
-/******************************************************************************
+/**
  * @namespace interpolation_search
  * @brief Functions for the Recursive version of Inorder, Preorder, and
  * Postorder [Traversal of the
  * Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm implementation
- *******************************************************************************/
+ */
 namespace recursive_tree_traversals {
 
 /******************************************************************************
