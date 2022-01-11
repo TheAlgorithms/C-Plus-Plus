@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Recursive version of Inorder, Preorder, and Postorder [Traversal of
  * the Tree] (https://en.wikipedia.org/wiki/Tree_traversal)
