@@ -14,6 +14,7 @@
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
+  * [Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_bits_flip.cpp)
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
@@ -320,6 +321,7 @@
 
 ## Sorting
   * [Bead Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bead_sort.cpp)
+  * [Binary Insertion Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/binary_insertion_sort.cpp)
   * [Bitonic Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bitonic_sort.cpp)
   * [Bogo Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bogo_sort.cpp)
   * [Bubble Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/bubble_sort.cpp)
