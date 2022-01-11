@@ -16,26 +16,30 @@
  * isthat we need to check instead of fast!=null we have to chek 
  * fast->next!=null and similarlly we print the slow->data
  */
-
  #include <iostream> // for I/O operations
 
 /**
  * A Node class containing a value and pointer to another link
+ * Containing the explicit constructor which contains
+ * @param data that always initialize to the node data every time 
+ * after creating node and next to nullptr. 
  */
 class node{
 public:
-    int data;            // The value / key of the node . 
-    node*next;          //  pointer pointing to the next node adress.
+    int data;            ///< The value / key of the node 
+    node*next;          ///<  pointer pointing to the next node adress.
     explicit node(int data){
         this->data=data;
         next=nullptr;
     }
 };
-/*
- * A midpoint function use to calculate the mid element of the l.l
+
+/**
+ * function use to calculate the mid element of the linked list.
+ * @param len is the length of the linked list .
+ * @param head stored the first node address of the linkedlist .
+ * @returns 'void' 
  */
-
-
 void midpoint(int len,node*head){
     node*slow = head;
     node*fast=head->next;
@@ -56,8 +60,10 @@ void midpoint(int len,node*head){
 }
 
 /**
- * A print function takes the head node and traverse the l.l
- * and print the data
+ * function takes the head node and traverse the l.l
+ * and print the data . 
+ * @param head stored the first node address of the linkedlist .
+ * @returns 'void' 
  */
 void print(node*head){
     node*temp = head;
@@ -66,9 +72,12 @@ void print(node*head){
         temp = temp->next;
     }
 }
+
 /**
- * A length function takes head pointer as a arg and 
- * and len variable increment by 1 whenever we move head by 1
+ * function used to calculate the length of the linked
+ * list .
+ * @param head stored the first node address of the linkedlist .
+ * @returns len that is the length of the linked list.
  */
 int length(node*head){
     int len =0;
@@ -85,18 +94,15 @@ int length(node*head){
 }
 
 /**
- * @brief Main function
+ * Main function :
+ * Initializing head pointer to the nullptr . 
+ * creating the  nodes(dynamically) of the linked list and connecting
+ * each other by next and head pointer by dynamically.
+ * Allows user to calculate the length of the linked list 
+ * Also allows user to calculate and display the mid element from the linked list .
  * @returns 0 on exit
  */
-
-
 int main(){
-
-    /*
-    * creating all nodes of the linked list and connecting
-    * each other by next and head pointer by dynamically.
-    */
-
     node * head = nullptr;
     node *n1 = new  node(1);
     node *n2 = new node(2);
@@ -113,5 +119,4 @@ int main(){
     int len1 = length(head);
     midpoint(len1,head);
     return 0;
-
 }
