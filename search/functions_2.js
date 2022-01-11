@@ -42,7 +42,7 @@ var searchData=
   ['bidijkstra_39',['Bidijkstra',['../d7/d07/bidirectional__dijkstra_8cpp.html#a1b2df3d52a403ad46523ab90d3a723c1',1,'graph::bidirectional_dijkstra']]],
   ['binary_5fnegate_40',['binary_negate',['http://en.cppreference.com/w/cpp/utility/functional/binary_negate.html',0,'std::binary_negate']]],
   ['binary_5fs_41',['binary_s',['../d8/d8a/exponential__search_8cpp.html#ab06cedad209456eae95d37b7cd66acae',1,'exponential_search.cpp']]],
-  ['binary_5fsearch_42',['binary_search',['../df/dd5/binary__search_8cpp.html#a78df202b718cfe3c2c9216979b08298d',1,'binary_search():&#160;binary_search.cpp'],['http://en.cppreference.com/w/cpp/algorithm/binary_search.html',0,'std::binary_search()']]],
+  ['binary_5fsearch_42',['binary_search',['../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd',1,'sorting::binary_search()'],['http://en.cppreference.com/w/cpp/algorithm/binary_search.html',0,'std::binary_search()']]],
   ['binary_5fsearch_5ftree_43',['binary_search_tree',['../d9/dde/classbinary__search__tree.html#aa67321ed575ca313cd71d833d91234a6',1,'binary_search_tree']]],
   ['binarysearch_44',['BinarySearch',['../d5/dab/structdata__structures_1_1list__array_1_1list.html#a3b4abfffc730e07fcbd5844e09add8cd',1,'data_structures::list_array::list']]],
   ['binarytree_45',['BinaryTree',['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abcb1cc8da7b6759dc92cbe0254697c56',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree::BinaryTree()'],['../de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abb44646a26a446efae7704c80efc011b',1,'operations_on_datastructures::reverse_binary_tree::BinaryTree::BinaryTree(int64_t data)']]],

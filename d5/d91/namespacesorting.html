@@ -96,11 +96,19 @@ $(document).ready(function(){initNavTree('d5/d91/namespacesorting.html','../../'
 </div><!--header-->
 <div class="contents">
 
-<p>Sorting algorithms.  
+<p>for working with vectors  
 <a href="../../d5/d91/namespacesorting.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a034d8b276518a902962e87d3158b64fd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a034d8b276518a902962e87d3158b64fd"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">binary_search</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr, T val, int64_t low, int64_t high)</td></tr>
+<tr class="memdesc:a034d8b276518a902962e87d3158b64fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary search function to find the most suitable pace for an element.  <a href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">More...</a><br /></td></tr>
+<tr class="separator:a034d8b276518a902962e87d3158b64fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4bc75cca6dd8294af2d0e328006c68"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5f4bc75cca6dd8294af2d0e328006c68"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a5f4bc75cca6dd8294af2d0e328006c68">insertionSort_binsrch</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr)</td></tr>
+<tr class="memdesc:a5f4bc75cca6dd8294af2d0e328006c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion sort function to sort the vector.  <a href="../../d5/d91/namespacesorting.html#a5f4bc75cca6dd8294af2d0e328006c68">More...</a><br /></td></tr>
+<tr class="separator:a5f4bc75cca6dd8294af2d0e328006c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7bfe11bd4703eacd1dab93f25ec639c5">shuffle</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; T, N &gt; arr)</td></tr>
 <tr class="separator:a7bfe11bd4703eacd1dab93f25ec639c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +174,15 @@ Functions</h2></td></tr>
 <tr class="separator:af2c5b92cbfe73f63f6074c61b0a45331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Sorting algorithms. </p>
+<div class="textblock"><p >for working with vectors </p>
 <p >for io operations</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></p>
 <p >for returning multiple values form a function at once</p>
 <p >Sorting Algorithms.</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p >Sorting algorithms.</p>
+<p >for algorithm functions for assert for IO operations</p>
+<p >Sorting algorithms</p>
 <p >for assert for typedef datatype uint64_t for IO operations</p>
 <p >Sorting algorithms</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> for assert for io operations</p>
@@ -191,6 +202,86 @@ Functions</h2></td></tr>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> for assert for IO operations</p>
 <p >Sorting algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a034d8b276518a902962e87d3158b64fd" name="a034d8b276518a902962e87d3158b64fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034d8b276518a902962e87d3158b64fd">&#9670;&nbsp;</a></span>binary_search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t sorting::binary_search </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binary search function to find the most suitable pace for an element. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The generic data type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>The actual vector in which we are searching a suitable place for the element.</td></tr>
+    <tr><td class="paramname">val</td><td>The value for which suitable place is to be found. </td></tr>
+    <tr><td class="paramname">low</td><td>The lower bound of the range we are searching in. </td></tr>
+    <tr><td class="paramname">high</td><td>The upper bound of the range we are searching in. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of most suitable position of val. </dd></dl>
+<div class="fragment"><div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                                                           {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (high &lt;= low) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> (val &gt; arr[low]) ? (low + 1) : low;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    int64_t mid = low + (high - low) / 2;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (arr[mid] &gt; val) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">binary_search</a>(arr, val, low, mid - 1);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (arr[mid] &lt; val) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">binary_search</a>(arr, val, mid + 1, high);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> mid + 1;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="ttc" id="anamespacesorting_html_a034d8b276518a902962e87d3158b64fd"><div class="ttname"><a href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">sorting::binary_search</a></div><div class="ttdeci">int64_t binary_search(std::vector&lt; T &gt; &amp;arr, T val, int64_t low, int64_t high)</div><div class="ttdoc">Binary search function to find the most suitable pace for an element.</div><div class="ttdef"><b>Definition:</b> binary_insertion_sort.cpp:63</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a034d8b276518a902962e87d3158b64fd_cgraph.svg" width="162" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="aa3677f87b5b4756bc77e9e34c5f27935" name="aa3677f87b5b4756bc77e9e34c5f27935"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3677f87b5b4756bc77e9e34c5f27935">&#9670;&nbsp;</a></span>gnomeSort() <span class="overload">[1/2]</span></h2>
 
@@ -405,6 +496,61 @@ template&lt;typename T &gt; </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a5f4bc75cca6dd8294af2d0e328006c68" name="a5f4bc75cca6dd8294af2d0e328006c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4bc75cca6dd8294af2d0e328006c68">&#9670;&nbsp;</a></span>insertionSort_binsrch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::insertionSort_binsrch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insertion sort function to sort the vector. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The generic data type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>The actual vector to sort. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Void. </dd></dl>
+<div class="fragment"><div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                              {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    int64_t n = arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (int64_t i = 1; i &lt; n; i++) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        T key = arr[i];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        int64_t j = i - 1;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        int64_t loc = <a class="code hl_function" href="../../d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd">sorting::binary_search</a>(arr, key, 0, j);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">while</span> (j &gt;= loc) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            arr[j + 1] = arr[j];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            j--;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        arr[j + 1] = key;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a5f4bc75cca6dd8294af2d0e328006c68_cgraph.svg" width="352" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="aa26de383227859210f14dcf12201a079" name="aa26de383227859210f14dcf12201a079"></a>

@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,107,56,133"/>
+<area shape="rect" id="node2" href="$d8/dcc/binary__insertion__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,107,148,133"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/begin.html#" title=" " alt="" coords="228,5,307,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/iterator/end.html#" title=" " alt="" coords="233,56,302,83"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="231,107,303,133"/>
+<area shape="rect" id="node6" href="$d5/d91/namespacesorting.html#a5f4bc75cca6dd8294af2d0e328006c68" title="Insertion sort function to sort the vector." alt="" coords="196,158,339,199"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="217,224,318,251"/>
+<area shape="rect" id="node7" href="$d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd" title="Binary search function to find the most suitable pace for an element." alt="" coords="387,140,537,167"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="404,191,520,217"/>
+</map>

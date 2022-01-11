@@ -1,6 +1,5 @@
 var dir_19b2bf9199a15c634a08b1ede1dd896a =
 [
-    [ "binary_search.cpp", "df/dd5/binary__search_8cpp.html", "df/dd5/binary__search_8cpp" ],
     [ "exponential_search.cpp", "d8/d8a/exponential__search_8cpp.html", "d8/d8a/exponential__search_8cpp" ],
     [ "fibonacci_search.cpp", "de/d0d/fibonacci__search_8cpp.html", "de/d0d/fibonacci__search_8cpp" ],
     [ "floyd_cycle_detection_algo.cpp", "db/dc4/floyd__cycle__detection__algo_8cpp.html", "db/dc4/floyd__cycle__detection__algo_8cpp" ],

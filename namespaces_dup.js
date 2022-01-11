@@ -262,10 +262,12 @@ var namespaces_dup =
       [ "wiggle_sort", null, [
         [ "wiggleSort", "d1/dcc/wiggle__sort_8cpp.html#a99eeded693ac073717282fae365957a1", null ]
       ] ],
+      [ "binary_search", "d5/d91/namespacesorting.html#a034d8b276518a902962e87d3158b64fd", null ],
       [ "gnomeSort", "d5/d91/namespacesorting.html#aa3677f87b5b4756bc77e9e34c5f27935", null ],
       [ "gnomeSort", "d5/d91/namespacesorting.html#a2f8bc626eb57acae24a94636a23af6a1", null ],
       [ "insertionSort", "d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f", null ],
       [ "insertionSort", "d5/d91/namespacesorting.html#a78cb2f3b97b6db2c062b2a1df05c9ea9", null ],
+      [ "insertionSort_binsrch", "d5/d91/namespacesorting.html#a5f4bc75cca6dd8294af2d0e328006c68", null ],
       [ "merge", "d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079", null ],
       [ "non_recursive_merge_sort", "d5/d91/namespacesorting.html#ae97f4dd815654c4682f564afd718e824", null ],
       [ "non_recursive_merge_sort", "d5/d91/namespacesorting.html#a140d913e42fb94176a0b2c8b29a80420", null ],

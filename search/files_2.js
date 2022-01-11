@@ -4,7 +4,7 @@ var searchData=
   ['bayes_5ftheorem_2ecpp_1',['bayes_theorem.cpp',['../d5/d67/bayes__theorem_8cpp.html',1,'']]],
   ['bidirectional_5fdijkstra_2ecpp_2',['bidirectional_dijkstra.cpp',['../d7/d07/bidirectional__dijkstra_8cpp.html',1,'']]],
   ['binary_5fexponent_2ecpp_3',['binary_exponent.cpp',['../de/dcf/binary__exponent_8cpp.html',1,'']]],
-  ['binary_5fsearch_2ecpp_4',['binary_search.cpp',['../df/dd5/binary__search_8cpp.html',1,'']]],
+  ['binary_5finsertion_5fsort_2ecpp_4',['binary_insertion_sort.cpp',['../d8/dcc/binary__insertion__sort_8cpp.html',1,'']]],
   ['binary_5fsearch_5ftree_2ecpp_5',['binary_search_tree.cpp',['../d3/d26/binary__search__tree_8cpp.html',1,'']]],
   ['binary_5fsearch_5ftree2_2ecpp_6',['binary_search_tree2.cpp',['../df/d42/binary__search__tree2_8cpp.html',1,'']]],
   ['binaryheap_2ecpp_7',['binaryheap.cpp',['../de/dc3/binaryheap_8cpp.html',1,'']]],
