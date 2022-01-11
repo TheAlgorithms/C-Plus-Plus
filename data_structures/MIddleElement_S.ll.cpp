@@ -17,15 +17,15 @@
  * fast->next!=null and similarlly we print the slow->data
  */
 
- #include <iostream>
+ #include <iostream> // for I/O operations
 
 /**
  * A Node class containing a value and pointer to another link
  */
 class node{
 public:
-    int data;
-    node*next;
+    int data;            // The value / key of the node . 
+    node*next;          //  pointer pointing to the next node adress.
     explicit node(int data){
         this->data=data;
         next=nullptr;
@@ -90,7 +90,6 @@ int length(node*head){
  */
 
 
-
 int main(){
 
     /*
@@ -114,6 +113,5 @@ int main(){
     int len1 = length(head);
     midpoint(len1,head);
     return 0;
-
 
 }
