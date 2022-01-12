@@ -15,6 +15,7 @@ var dir_9510827d0b234b3cc54b29892f217477 =
     [ "pascal_triangle.cpp", "dc/d1a/pascal__triangle_8cpp.html", "dc/d1a/pascal__triangle_8cpp" ],
     [ "postfix_evaluation.cpp", "d7/d75/postfix__evaluation_8cpp.html", "d7/d75/postfix__evaluation_8cpp" ],
     [ "primality_test.cpp", "da/d7b/primality__test_8cpp.html", "da/d7b/primality__test_8cpp" ],
+    [ "recursive_tree_traversal.cpp", "dc/de1/recursive__tree__traversal_8cpp.html", "dc/de1/recursive__tree__traversal_8cpp" ],
     [ "smallest_circle.cpp", "d0/d01/smallest__circle_8cpp.html", "d0/d01/smallest__circle_8cpp" ],
     [ "sparse_matrix.cpp", "d3/d19/sparse__matrix_8cpp.html", "d3/d19/sparse__matrix_8cpp" ],
     [ "spiral_print.cpp", "db/d07/spiral__print_8cpp.html", "db/d07/spiral__print_8cpp" ],

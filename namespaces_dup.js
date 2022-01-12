@@ -120,6 +120,7 @@ var namespaces_dup =
     [ "horspool", "d5/d02/namespacehorspool.html", null ],
     [ "house_robber", "d2/de1/namespacehouse__robber.html", null ],
     [ "inorder_successor_of_bst", "dd/d74/namespaceinorder__successor__of__bst.html", null ],
+    [ "interpolation_search", "d1/d64/namespaceinterpolation__search.html", null ],
     [ "inversion", "d9/d13/namespaceinversion.html", null ],
     [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "iterative_tree_traversals", "dd/d73/namespaceiterative__tree__traversals.html", null ],

@@ -14,5 +14,9 @@ var namespaceothers =
       [ "pop", "d7/d75/postfix__evaluation_8cpp.html#a421baa2002a64bc0bfc3e1b64800d734", null ],
       [ "postfix_evaluation", "d7/d75/postfix__evaluation_8cpp.html#ae38bd3a177a6d61da3859a281233bbe1", null ],
       [ "push", "d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea", null ]
+    ] ],
+    [ "recursive_tree_traversals", null, [
+      [ "BT", "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html", "dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t" ],
+      [ "Node", "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node.html", "d9/df7/structothers_1_1recursive__tree__traversals_1_1_node" ]
     ] ]
 ];
