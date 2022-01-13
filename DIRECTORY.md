@@ -366,6 +366,7 @@
   * [Brute Force String Searching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/brute_force_string_searching.cpp)
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
+  * [Longest Substr Without Repeating Chars](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/longest_substr_without_repeating_chars.cpp)
   * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/manacher_algorithm.cpp)
   * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
   * [Z Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/z_function.cpp)
