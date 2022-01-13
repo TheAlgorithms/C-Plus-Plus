@@ -30,8 +30,13 @@ using std::pair;
 using std::string;
 
 /**
- * This function takes a string as input, and returns the length of the longest
- * substring that contains no repeated characters
+ * @param string named "input"
+ * @returns integer that equals length of the longest substring of "input" that
+ * contains no repeated character
+ *
+ * @brief This function takes a string as input, and returns the length of the
+ * longest substring that contains no repeated characters
+ *
  */
 
 int solver(string input) {
