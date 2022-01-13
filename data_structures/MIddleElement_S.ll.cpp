@@ -16,18 +16,20 @@
  * isthat we need to check instead of fast!=null we have to chek 
  * fast->next!=null and similarlly we print the slow->data
  */
- #include <iostream> // for I/O operations
+#include <iostream> /// for I/O operations
 
 /**
- * A Node class containing a value and pointer to another link
+ * @brief A Node class containing a value and pointer to another link
  * Containing the explicit constructor which contains
- * @param data that always initialize to the node data every time 
  * after creating node and next to nullptr. 
  */
 class node{
 public:
-    int data;            ///< The value / key of the node 
+    int data=0;            ///< The value / key of the node 
     node*next;          ///<  pointer pointing to the next node adress.
+ /*
+ * @param data stores the value of the node
+ */
     explicit node(int data){
         this->data=data;
         next=nullptr;
@@ -35,10 +37,10 @@ public:
 };
 
 /**
- * function use to calculate the mid element of the linked list.
- * @param len is the length of the linked list .
- * @param head stored the first node address of the linkedlist .
- * @returns 'void' 
+ * @brief Function use to calculate the mid element of the linked list
+ * @param len length of the linked list
+ * @param head stores the first node address of the LinkedList
+ * @returns void 
  */
 void midpoint(int len,node*head){
     node*slow = head;
@@ -60,10 +62,10 @@ void midpoint(int len,node*head){
 }
 
 /**
- * function takes the head node and traverse the l.l
- * and print the data . 
- * @param head stored the first node address of the linkedlist .
- * @returns 'void' 
+ * @brief function takes the head node and traverses the l.l
+ * and prints the data 
+ * @param head stores the first node address of the linkedlist 
+ * @returns void 
  */
 void print(node*head){
     node*temp = head;
@@ -74,10 +76,9 @@ void print(node*head){
 }
 
 /**
- * function used to calculate the length of the linked
- * list .
- * @param head stored the first node address of the linkedlist .
- * @returns len that is the length of the linked list.
+ * @brief Utility function to calculate the length of the linked list
+ * @param head stores the first node address of the LinkedList
+ * @returns the length of the linked list
  */
 int length(node*head){
     int len =0;
