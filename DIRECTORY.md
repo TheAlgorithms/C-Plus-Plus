@@ -14,6 +14,7 @@
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
+  * [Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_bits_flip.cpp)
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
@@ -278,6 +279,7 @@
   * [Pascal Triangle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/pascal_triangle.cpp)
   * [Postfix Evaluation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/postfix_evaluation.cpp)
   * [Primality Test](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/primality_test.cpp)
+  * [Recursive Tree Traversal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/recursive_tree_traversal.cpp)
   * [Smallest Circle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/smallest_circle.cpp)
   * [Sparse Matrix](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/sparse_matrix.cpp)
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
