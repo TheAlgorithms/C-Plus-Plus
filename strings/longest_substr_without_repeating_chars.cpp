@@ -1,7 +1,10 @@
 /**
  * @file
  * @brief Greedy algorithm to find length of longest substring without repeating
- * characters
+ * characters. The following
+ * [resource](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
+ * was referred to
+ *
  *
  * @details
  * We are given a string. We need to compute the length of the longest
@@ -19,7 +22,12 @@
 #include <map>
 #include <string>
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::map;
+using std::max;
+using std::pair;
+using std::string;
 
 /**
  * This function takes a string as input, and returns the length of the longest
@@ -68,7 +76,11 @@ int solver(string input) {
     return ans;
 }
 
-void tests() {
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
     pair<string, int> testcases[5];
 
     testcases[0] = {"abccdefgh", 6};
@@ -102,4 +114,10 @@ void tests() {
             "**********************\n";
 }
 
-int main() { tests(); }
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    tests();  // run self-test implementations
+}
