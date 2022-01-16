@@ -1,5 +1,5 @@
 <map id="machine_learning/neural_network.cpp" name="machine_learning/neural_network.cpp">
-<area shape="rect" id="node1" title="Implementation of Multilayer Perceptron." alt="" coords="379,5,541,47"/>
+<area shape="rect" id="node1" title="Implementation of [Multilayer Perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron)." alt="" coords="379,5,541,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,169,80,196"/>
 <area shape="rect" id="node3" title=" " alt="" coords="498,95,563,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="104,169,165,196"/>
@@ -10,6 +10,6 @@
 <area shape="rect" id="node9" title=" " alt="" coords="855,95,910,121"/>
 <area shape="rect" id="node10" title=" " alt="" coords="375,169,443,196"/>
 <area shape="rect" id="node11" title=" " alt="" coords="468,169,527,196"/>
-<area shape="rect" id="node12" href="$d8/d95/vector__ops_8hpp.html" title="Various functions for vectors associated with &lt;a href=&quot;https://en.wikipedia.org/wiki/Multilayer_perce..." alt="" coords="261,95,371,121"/>
+<area shape="rect" id="node12" href="$d8/d95/vector__ops_8hpp.html" title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en..." alt="" coords="261,95,371,121"/>
 <area shape="rect" id="node13" title=" " alt="" coords="286,169,351,196"/>
 </map>

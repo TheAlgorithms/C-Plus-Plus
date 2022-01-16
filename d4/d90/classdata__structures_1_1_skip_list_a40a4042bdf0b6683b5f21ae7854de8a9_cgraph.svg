@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="196.5,-106.5 196.5,-125.5 250.5,-125.5 250.5,-106.5 196.5,-106.5"/>
 <text text-anchor="middle" x="223.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -68,7 +68,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/random/rand#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="322,-62.5 322,-81.5 377,-81.5 377,-62.5 322,-62.5"/>
 <text text-anchor="middle" x="349.5" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::rand</text>
 </a>

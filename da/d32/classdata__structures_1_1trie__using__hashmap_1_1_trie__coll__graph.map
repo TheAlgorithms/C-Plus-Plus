@@ -1,0 +1,6 @@
+<map id="data_structures::trie_using_hashmap::Trie" name="data_structures::trie_using_hashmap::Trie">
+<area shape="rect" id="node1" title="Trie class, implementation of trie using hashmap in each trie node for all the characters of char16_t..." alt="" coords="286,5,437,47"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr" title=" " alt="" coords="5,86,168,142"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_map" title=" " alt="" coords="277,71,445,157"/>
+<area shape="rect" id="node3" href="$d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html" title="struct representing a trie node." alt="" coords="543,153,732,195"/>
+</map>

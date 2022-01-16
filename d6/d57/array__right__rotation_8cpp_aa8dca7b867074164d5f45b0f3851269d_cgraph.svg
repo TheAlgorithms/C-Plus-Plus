@@ -127,7 +127,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="368.5,-19.5 368.5,-38.5 422.5,-38.5 422.5,-19.5 368.5,-19.5"/>
 <text text-anchor="middle" x="395.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -157,7 +157,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node7"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="352,-98.5 352,-117.5 439,-117.5 439,-98.5 352,-98.5"/>
 <text text-anchor="middle" x="395.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>
@@ -208,7 +208,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back.html#" xlink:title=" ">
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/push_back#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="185.5,-0.5 185.5,-19.5 301.5,-19.5 301.5,-0.5 185.5,-0.5"/>
 <text text-anchor="middle" x="243.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::push_back</text>
 </a>

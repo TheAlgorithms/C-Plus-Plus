@@ -24,6 +24,8 @@ var searchData=
   ['true_5ftype_21',['true_type',['http://en.cppreference.com/w/cpp/types/integral_constant.html',0,'std']]],
   ['try_5fto_5flock_5ft_22',['try_to_lock_t',['http://en.cppreference.com/w/cpp/thread/lock_tag_t.html',0,'std']]],
   ['tuple_23',['tuple',['http://en.cppreference.com/w/cpp/utility/tuple.html',0,'std']]],
-  ['type_5findex_24',['type_index',['http://en.cppreference.com/w/cpp/types/type_index.html',0,'std']]],
-  ['type_5finfo_25',['type_info',['http://en.cppreference.com/w/cpp/types/type_info.html',0,'std']]]
+  ['tuple_3c_20int_2c_20int_2c_20int_20_3e_24',['tuple&lt; int, int, int &gt;',['http://en.cppreference.com/w/cpp/utility/tuple.html',0,'std']]],
+  ['tuple_3c_20s_2c_20t_2c_20e_2c_20double_2c_20double_2c_20double_20_3e_25',['tuple&lt; S, T, E, double, double, double &gt;',['http://en.cppreference.com/w/cpp/utility/tuple.html',0,'std']]],
+  ['type_5findex_26',['type_index',['http://en.cppreference.com/w/cpp/types/type_index.html',0,'std']]],
+  ['type_5finfo_27',['type_info',['http://en.cppreference.com/w/cpp/types/type_info.html',0,'std']]]
 ];

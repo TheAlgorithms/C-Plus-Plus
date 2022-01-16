@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="&lt;a href=&quot;https://en.wikipedia.org/wiki/Component_(graph_theory)&quot;">
+<g id="a_node1"><a xlink:title="[Graph Connected Components (Connected Components)] (https://en.wikipedia.org/wiki/Component_(graph_t...">
 <polygon fill="#bfbfbf" stroke="black" points="51,-56.5 51,-75.5 217,-75.5 217,-56.5 51,-56.5"/>
 <text text-anchor="middle" x="134" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">graph/connected_components.cpp</text>
 </a>

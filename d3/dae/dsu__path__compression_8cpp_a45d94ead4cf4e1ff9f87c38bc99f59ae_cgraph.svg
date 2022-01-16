@@ -30,192 +30,207 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M38.35,-263.94C48.74,-267.74 62.01,-272.4 74,-276 118.09,-289.23 170.3,-301.58 200.64,-308.42"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="200.25,-311.92 210.77,-310.69 201.78,-305.09 200.25,-311.92"/>
+<path fill="none" stroke="midnightblue" d="M30.25,-266.57C40.5,-275.53 57.11,-288.47 74,-295 116.2,-311.31 169.43,-314.33 200.4,-314.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="200.75,-318.02 210.74,-314.49 200.73,-311.02 200.75,-318.02"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" target="_top" xlink:title="prints the minimum, maximum and size of the set to which i belongs to">
-<polygon fill="white" stroke="black" points="87.5,-247.5 87.5,-266.5 139.5,-266.5 139.5,-247.5 87.5,-247.5"/>
-<text text-anchor="middle" x="113.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get</text>
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/at#" xlink:title=" ">
+<polygon fill="white" stroke="black" points="75,-266.5 75,-285.5 152,-285.5 152,-266.5 75,-266.5"/>
+<text text-anchor="middle" x="113.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::at</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M38.28,-257C49.33,-257 63.79,-257 77.01,-257"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="77.26,-260.5 87.26,-257 77.26,-253.5 77.26,-260.5"/>
+<path fill="none" stroke="midnightblue" d="M38.28,-260.75C46.01,-262.34 55.42,-264.28 64.91,-266.22"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="64.25,-269.66 74.75,-268.25 65.66,-262.81 64.25,-269.66"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="../../dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" target="_top" xlink:title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com...">
+<!-- Node4 -->
+<g id="node4" class="node">
+<title>Node4</title>
+<g id="a_node4"><a xlink:href="../../dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" target="_top" xlink:title="prints the minimum, maximum and size of the set to which i belongs to">
+<polygon fill="white" stroke="black" points="87.5,-228.5 87.5,-247.5 139.5,-247.5 139.5,-228.5 87.5,-228.5"/>
+<text text-anchor="middle" x="113.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M38.28,-253.25C49.44,-250.95 64.08,-247.95 77.4,-245.21"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="78.17,-248.62 87.26,-243.18 76.76,-241.77 78.17,-248.62"/>
+</g>
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="../../dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" target="_top" xlink:title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com...">
 <polygon fill="white" stroke="black" points="74,-95.5 74,-114.5 153,-114.5 153,-95.5 74,-95.5"/>
 <text text-anchor="middle" x="113.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::UnionSet</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge11" class="edge">
-<title>Node1&#45;&gt;Node8</title>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge12" class="edge">
+<title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M25.79,-247.49C40.84,-222.75 81.43,-156.05 101.28,-123.44"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="104.51,-124.87 106.72,-114.5 98.53,-121.23 104.51,-124.87"/>
 </g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge3" class="edge">
-<title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M133.16,-266.54C152,-276.17 181.18,-291.09 201.79,-301.62"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="200.36,-304.83 210.86,-306.26 203.55,-298.59 200.36,-304.83"/>
-</g>
-<!-- Node4 -->
-<g id="node4" class="node">
-<title>Node4</title>
-<g id="a_node4"><a xlink:href="../../dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" target="_top" xlink:title="A utility function that returns the max element of the set to which i belongs to.">
-<polygon fill="white" stroke="black" points="189,-266.5 189,-285.5 265,-285.5 265,-266.5 189,-266.5"/>
-<text text-anchor="middle" x="227" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get_max</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node4 -->
+<!-- Node4&#45;&gt;Node2 -->
 <g id="edge4" class="edge">
-<title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M139.52,-261.26C151.09,-263.23 165.21,-265.64 178.67,-267.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="178.33,-271.43 188.78,-269.66 179.51,-264.53 178.33,-271.43"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="../../dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" target="_top" xlink:title="A utility function that returns the min element of the set to which i belongs to.">
-<polygon fill="white" stroke="black" points="190.5,-228.5 190.5,-247.5 263.5,-247.5 263.5,-228.5 190.5,-228.5"/>
-<text text-anchor="middle" x="227" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get_min</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node6 -->
-<g id="edge7" class="edge">
-<title>Node3&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M139.52,-252.74C151.61,-250.68 166.51,-248.14 180.51,-245.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="181.22,-249.18 190.49,-244.05 180.04,-242.28 181.22,-249.18"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="../../dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" target="_top" xlink:title="A utility function that returns the size of the set to which i belongs to.">
-<polygon fill="white" stroke="black" points="199,-190.5 199,-209.5 255,-209.5 255,-190.5 199,-190.5"/>
-<text text-anchor="middle" x="227" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::size</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node7 -->
-<g id="edge9" class="edge">
-<title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M133.16,-247.46C150.93,-238.38 177.9,-224.59 198.2,-214.21"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="199.97,-217.24 207.28,-209.57 196.78,-211.01 199.97,-217.24"/>
+<title>Node4&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M137.27,-247.57C142.64,-250.28 148.2,-253.46 153,-257 171.72,-270.81 170.39,-281.04 189,-295 192.98,-297.98 197.5,-300.74 201.97,-303.17"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="200.41,-306.3 210.92,-307.68 203.56,-300.05 200.41,-306.3"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" target="_top" xlink:title="Method to find the representative of the set to which i belongs to, T(n) = O(1)">
-<polygon fill="white" stroke="black" points="301,-190.5 301,-209.5 370,-209.5 370,-190.5 301,-190.5"/>
-<text text-anchor="middle" x="335.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::findSet</text>
+<g id="a_node5"><a xlink:href="../../dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" target="_top" xlink:title="A utility function that returns the max element of the set to which i belongs to.">
+<polygon fill="white" stroke="black" points="189,-266.5 189,-285.5 265,-285.5 265,-266.5 189,-266.5"/>
+<text text-anchor="middle" x="227" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get_max</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M139.52,-246.53C153.88,-251.42 172.19,-257.66 188.26,-263.14"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="187.33,-266.52 197.92,-266.43 189.59,-259.89 187.33,-266.52"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="../../dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" target="_top" xlink:title="A utility function that returns the min element of the set to which i belongs to.">
+<polygon fill="white" stroke="black" points="190.5,-228.5 190.5,-247.5 263.5,-247.5 263.5,-228.5 190.5,-228.5"/>
+<text text-anchor="middle" x="227" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::get_min</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node7 -->
+<g id="edge8" class="edge">
+<title>Node4&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M139.52,-238C151.5,-238 166.22,-238 180.1,-238"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="180.49,-241.5 190.49,-238 180.49,-234.5 180.49,-241.5"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="../../dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" target="_top" xlink:title="A utility function that returns the size of the set to which i belongs to.">
+<polygon fill="white" stroke="black" points="199,-190.5 199,-209.5 255,-209.5 255,-190.5 199,-190.5"/>
+<text text-anchor="middle" x="227" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::size</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node8 -->
+<g id="edge10" class="edge">
+<title>Node4&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M139.52,-229.47C154.09,-224.51 172.73,-218.15 188.97,-212.62"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="190.38,-215.84 198.72,-209.3 188.12,-209.21 190.38,-215.84"/>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="../../dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" target="_top" xlink:title="Method to find the representative of the set to which i belongs to, T(n) = O(1)">
+<polygon fill="white" stroke="black" points="301,-190.5 301,-209.5 370,-209.5 370,-190.5 301,-190.5"/>
+<text text-anchor="middle" x="335.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::findSet</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge6" class="edge">
+<title>Node5&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M248.41,-266.5C253.93,-263.67 259.81,-260.41 265,-257 283.58,-244.81 303,-228.54 316.58,-216.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="319.12,-218.92 324.21,-209.63 314.44,-213.72 319.12,-218.92"/>
 </g>
-<!-- Node5&#45;&gt;Node5 -->
-<g id="edge6" class="edge">
-<title>Node5&#45;&gt;Node5</title>
+<!-- Node6&#45;&gt;Node6 -->
+<g id="edge7" class="edge">
+<title>Node6&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M318.85,-209.76C310.76,-218.57 316.3,-228 335.5,-228 347.5,-228 354.16,-224.31 355.5,-219.4"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="358.74,-218.05 352.15,-209.76 352.12,-220.35 358.74,-218.05"/>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge8" class="edge">
-<title>Node6&#45;&gt;Node5</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge9" class="edge">
+<title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M254.87,-228.41C267.99,-223.73 283.97,-218.03 298.15,-212.97"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="299.39,-216.24 307.63,-209.59 297.04,-209.65 299.39,-216.24"/>
 </g>
-<!-- Node7&#45;&gt;Node5 -->
-<g id="edge10" class="edge">
-<title>Node7&#45;&gt;Node5</title>
+<!-- Node8&#45;&gt;Node6 -->
+<g id="edge11" class="edge">
+<title>Node8&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M255.15,-200C265.92,-200 278.59,-200 290.6,-200"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="290.92,-203.5 300.92,-200 290.92,-196.5 290.92,-203.5"/>
 </g>
-<!-- Node8&#45;&gt;Node5 -->
-<g id="edge12" class="edge">
-<title>Node8&#45;&gt;Node5</title>
+<!-- Node9&#45;&gt;Node6 -->
+<g id="edge13" class="edge">
+<title>Node9&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M132.02,-114.56C146.97,-122.56 169.14,-134.07 189,-143 225.68,-159.49 268.67,-176 298.36,-186.97"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="297.3,-190.31 307.89,-190.47 299.71,-183.74 297.3,-190.31"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" target="_top" xlink:title="A utility function which check whether i and j belongs to same set or not.">
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="../../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" target="_top" xlink:title="A utility function which check whether i and j belongs to same set or not.">
 <polygon fill="white" stroke="black" points="191.5,-114.5 191.5,-133.5 262.5,-133.5 262.5,-114.5 191.5,-114.5"/>
 <text text-anchor="middle" x="227" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">dsu::isSame</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge13" class="edge">
-<title>Node8&#45;&gt;Node9</title>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge14" class="edge">
+<title>Node9&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M153.18,-111.59C162.33,-113.15 172.15,-114.82 181.53,-116.42"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="181.04,-119.89 191.48,-118.12 182.21,-112.99 181.04,-119.89"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="199.5,-76.5 199.5,-95.5 254.5,-95.5 254.5,-76.5 199.5,-76.5"/>
 <text text-anchor="middle" x="227" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node10 -->
-<g id="edge15" class="edge">
-<title>Node8&#45;&gt;Node10</title>
+<!-- Node9&#45;&gt;Node11 -->
+<g id="edge16" class="edge">
+<title>Node9&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M153.18,-98.41C164.84,-96.42 177.59,-94.25 189.13,-92.28"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="190.04,-95.68 199.31,-90.55 188.86,-88.78 190.04,-95.68"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="201,-38.5 201,-57.5 253,-57.5 253,-38.5 201,-38.5"/>
 <text text-anchor="middle" x="227" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node11 -->
-<g id="edge16" class="edge">
-<title>Node8&#45;&gt;Node11</title>
+<!-- Node9&#45;&gt;Node12 -->
+<g id="edge17" class="edge">
+<title>Node9&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M133.16,-95.46C150.93,-86.38 177.9,-72.59 198.2,-62.21"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="199.97,-65.24 207.28,-57.57 196.78,-59.01 199.97,-65.24"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node">
-<title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="197.5,-0.5 197.5,-19.5 256.5,-19.5 256.5,-0.5 197.5,-0.5"/>
 <text text-anchor="middle" x="227" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node12 -->
-<g id="edge17" class="edge">
-<title>Node8&#45;&gt;Node12</title>
+<!-- Node9&#45;&gt;Node13 -->
+<g id="edge18" class="edge">
+<title>Node9&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M122.37,-95.13C135.12,-79.6 161.63,-49.16 189,-29 191.09,-27.46 193.31,-25.98 195.6,-24.58"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="197.57,-27.49 204.56,-19.53 194.13,-21.39 197.57,-27.49"/>
 </g>
-<!-- Node9&#45;&gt;Node5 -->
-<g id="edge14" class="edge">
-<title>Node9&#45;&gt;Node5</title>
+<!-- Node10&#45;&gt;Node6 -->
+<g id="edge15" class="edge">
+<title>Node10&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M243.27,-133.58C250,-137.89 257.97,-143.1 265,-148 281.73,-159.67 300.2,-173.53 313.89,-184.01"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="312.07,-187.03 322.13,-190.35 316.34,-181.48 312.07,-187.03"/>
 </g>

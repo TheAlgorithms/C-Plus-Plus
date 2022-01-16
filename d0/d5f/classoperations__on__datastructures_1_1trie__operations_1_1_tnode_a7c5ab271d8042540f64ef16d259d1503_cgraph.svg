@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="375.5,-113.5 375.5,-132.5 429.5,-132.5 429.5,-113.5 375.5,-113.5"/>
 <text text-anchor="middle" x="402.5" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>
@@ -84,7 +84,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="362,-11.5 362,-30.5 443,-30.5 443,-11.5 362,-11.5"/>
 <text text-anchor="middle" x="402.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>

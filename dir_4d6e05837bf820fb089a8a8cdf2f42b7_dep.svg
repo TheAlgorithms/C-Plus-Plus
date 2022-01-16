@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>dir_4d6e05837bf820fb089a8a8cdf2f42b7</title>
 <g id="a_node1"><a xlink:href="dir_4d6e05837bf820fb089a8a8cdf2f42b7.html" target="_top" xlink:title="ciphers">
-<polygon fill="#eeeeff" stroke="black" points="77.5,-108 23.5,-108 23.5,-72 77.5,-72 77.5,-108"/>
+<polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="77.5,-108 23.5,-108 23.5,-72 77.5,-72 77.5,-108"/>
 <text text-anchor="middle" x="50.5" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">ciphers</text>
 </a>
 </g>
@@ -22,7 +22,7 @@
 <g id="node2" class="node">
 <title>dir_9c6faab82c22511b50177aa2e38e2780</title>
 <g id="a_node2"><a xlink:href="dir_9c6faab82c22511b50177aa2e38e2780.html" target="_top" xlink:title="numerical_methods">
-<polygon fill="none" stroke="black" points="101,-36 0,-36 0,0 101,0 101,-36"/>
+<polygon fill="none" stroke="#404040" points="101,-36 0,-36 0,0 101,0 101,-36"/>
 <text text-anchor="middle" x="50.5" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00">numerical_methods</text>
 </a>
 </g>
@@ -32,7 +32,7 @@
 <title>dir_4d6e05837bf820fb089a8a8cdf2f42b7&#45;&gt;dir_9c6faab82c22511b50177aa2e38e2780</title>
 <path fill="none" stroke="black" d="M50.5,-71.7C50.5,-63.98 50.5,-54.71 50.5,-46.11"/>
 <polygon fill="black" stroke="black" points="54,-46.1 50.5,-36.1 47,-46.1 54,-46.1"/>
-<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000002_000017.html" target="_top" xlink:title="1">
+<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000002_000016.html" target="_top" xlink:title="1">
 <text text-anchor="middle" x="56.84" y="-47.2" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
 </a>
 </g>

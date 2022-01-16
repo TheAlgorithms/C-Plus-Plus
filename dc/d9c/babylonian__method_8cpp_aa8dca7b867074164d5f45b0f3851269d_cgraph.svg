@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/max#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="212,-42.2 212,-61.2 267,-61.2 267,-42.2 212,-42.2"/>
 <text text-anchor="middle" x="239.5" y="-49.2" font-family="Helvetica,sans-Serif" font-size="10.00">std::max</text>
 </a>
@@ -52,7 +52,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/min#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="213.5,-1.2 213.5,-20.2 265.5,-20.2 265.5,-1.2 213.5,-1.2"/>
 <text text-anchor="middle" x="239.5" y="-8.2" font-family="Helvetica,sans-Serif" font-size="10.00">std::min</text>
 </a>

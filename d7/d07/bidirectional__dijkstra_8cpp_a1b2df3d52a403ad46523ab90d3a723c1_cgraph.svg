@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/pair/make_pair#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="136,-6 136,-25 217,-25 217,-6 136,-6"/>
 <text text-anchor="middle" x="176.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::make_pair</text>
 </a>

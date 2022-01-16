@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/list/sort.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/list/sort#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="173,-11.5 173,-30.5 244,-30.5 244,-11.5 173,-11.5"/>
 <text text-anchor="middle" x="208.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::list::sort</text>
 </a>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/assign.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/assign#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="176,-76.5 176,-95.5 274,-95.5 274,-76.5 176,-76.5"/>
 <text text-anchor="middle" x="225" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::assign</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="181.5,-38.5 181.5,-57.5 268.5,-57.5 268.5,-38.5 181.5,-38.5"/>
 <text text-anchor="middle" x="225" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>

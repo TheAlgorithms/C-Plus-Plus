@@ -61,7 +61,8 @@ var searchData=
   ['bit_5fnot_58',['bit_not',['http://en.cppreference.com/w/cpp/utility/functional/bit_not.html',0,'std']]],
   ['bit_5for_59',['bit_or',['http://en.cppreference.com/w/cpp/utility/functional/bit_or.html',0,'std']]],
   ['bitset_60',['bitset',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
-  ['bst_5fnode_61',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html',1,'binary_search_tree']]],
-  ['bt_62',['BT',['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html',1,'others::recursive_tree_traversals']]],
-  ['btree_63',['Btree',['../d9/d90/struct_btree.html',1,'']]]
+  ['bitset_3c_20maxn_20_3e_61',['bitset&lt; MAXN &gt;',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
+  ['bst_5fnode_62',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html',1,'binary_search_tree']]],
+  ['bt_63',['BT',['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html',1,'others::recursive_tree_traversals']]],
+  ['btree_64',['Btree',['../d9/d90/struct_btree.html',1,'']]]
 ];

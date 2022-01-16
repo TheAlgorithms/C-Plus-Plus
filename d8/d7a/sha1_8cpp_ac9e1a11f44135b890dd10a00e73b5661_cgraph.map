@@ -1,6 +1,6 @@
 <map id="interactive" name="interactive">
 <area shape="rect" id="node1" title="Puts user in a loop where inputs can be given and SHA&#45;1 hash will be computed and printed." alt="" coords="5,56,88,83"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/compare.html#" title=" " alt="" coords="136,5,275,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="169,56,241,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline.html#" title=" " alt="" coords="162,107,249,133"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/compare#" title=" " alt="" coords="136,5,275,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl#" title=" " alt="" coords="169,56,241,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline#" title=" " alt="" coords="162,107,249,133"/>
 </map>

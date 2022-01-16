@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/basic_string/c_str#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="167,-38.5 167,-57.5 255,-57.5 255,-38.5 167,-38.5"/>
 <text text-anchor="middle" x="211" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string::c_str</text>
 </a>

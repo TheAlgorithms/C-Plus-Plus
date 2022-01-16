@@ -1,0 +1,6 @@
+<map id="FCFS::scheduleForFcfs" name="FCFS::scheduleForFcfs">
+<area shape="rect" id="node1" title="Algorithm for scheduling CPU processes according to the First Come First Serve(FCFS) scheduling algor..." alt="" coords="5,71,168,98"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/empty#" title=" " alt="" coords="231,5,360,47"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/pop#" title=" " alt="" coords="216,71,375,98"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/priority_queue/top#" title=" " alt="" coords="218,122,373,149"/>
+</map>

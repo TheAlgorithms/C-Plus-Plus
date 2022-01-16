@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/begin#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="133,-114.5 133,-133.5 225,-133.5 225,-114.5 133,-114.5"/>
 <text text-anchor="middle" x="179" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::begin</text>
 </a>
@@ -43,7 +43,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/end#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="136.5,-76.5 136.5,-95.5 221.5,-95.5 221.5,-76.5 136.5,-76.5"/>
 <text text-anchor="middle" x="179" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::end</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/sort#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="152.5,-38.5 152.5,-57.5 205.5,-57.5 205.5,-38.5 152.5,-38.5"/>
 <text text-anchor="middle" x="179" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::sort</text>
 </a>
@@ -73,7 +73,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/algorithm/swap#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="149.5,-0.5 149.5,-19.5 208.5,-19.5 208.5,-0.5 149.5,-0.5"/>
 <text text-anchor="middle" x="179" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::swap</text>
 </a>

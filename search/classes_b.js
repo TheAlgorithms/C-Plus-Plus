@@ -10,13 +10,14 @@ var searchData=
   ['linkedlist_7',['linkedlist',['../d0/dff/structlinkedlist.html',1,'']]],
   ['list_8',['list',['../d1/def/classdata__structures_1_1linked__list_1_1list.html',1,'data_structures::linked_list::list'],['../d5/dab/structdata__structures_1_1list__array_1_1list.html',1,'data_structures::list_array::list'],['../d8/d10/structlist.html',1,'list'],['http://en.cppreference.com/w/cpp/container/list.html',0,'std::list&lt; T &gt;']]],
   ['list_3c_20int_20_3e_9',['list&lt; int &gt;',['http://en.cppreference.com/w/cpp/container/list.html',0,'std']]],
-  ['locale_10',['locale',['http://en.cppreference.com/w/cpp/locale/locale.html',0,'std']]],
-  ['lock_5fguard_11',['lock_guard',['http://en.cppreference.com/w/cpp/thread/lock_guard.html',0,'std']]],
-  ['logic_5ferror_12',['logic_error',['http://en.cppreference.com/w/cpp/error/logic_error.html',0,'std']]],
-  ['logical_5fand_13',['logical_and',['http://en.cppreference.com/w/cpp/utility/functional/logical_and.html',0,'std']]],
-  ['logical_5fnot_14',['logical_not',['http://en.cppreference.com/w/cpp/utility/functional/logical_not.html',0,'std']]],
-  ['logical_5for_15',['logical_or',['http://en.cppreference.com/w/cpp/utility/functional/logical_or.html',0,'std']]],
-  ['lognormal_5fdistribution_16',['lognormal_distribution',['http://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]],
-  ['lowestcommonancestor_17',['LowestCommonAncestor',['../d9/d23/classgraph_1_1_lowest_common_ancestor.html',1,'graph']]],
-  ['lrucache_18',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache']]]
+  ['list_3c_20uint64_5ft_20_3e_10',['list&lt; uint64_t &gt;',['http://en.cppreference.com/w/cpp/container/list.html',0,'std']]],
+  ['locale_11',['locale',['http://en.cppreference.com/w/cpp/locale/locale.html',0,'std']]],
+  ['lock_5fguard_12',['lock_guard',['http://en.cppreference.com/w/cpp/thread/lock_guard.html',0,'std']]],
+  ['logic_5ferror_13',['logic_error',['http://en.cppreference.com/w/cpp/error/logic_error.html',0,'std']]],
+  ['logical_5fand_14',['logical_and',['http://en.cppreference.com/w/cpp/utility/functional/logical_and.html',0,'std']]],
+  ['logical_5fnot_15',['logical_not',['http://en.cppreference.com/w/cpp/utility/functional/logical_not.html',0,'std']]],
+  ['logical_5for_16',['logical_or',['http://en.cppreference.com/w/cpp/utility/functional/logical_or.html',0,'std']]],
+  ['lognormal_5fdistribution_17',['lognormal_distribution',['http://en.cppreference.com/w/cpp/numeric/random/lognormal_distribution.html',0,'std']]],
+  ['lowestcommonancestor_18',['LowestCommonAncestor',['../d9/d23/classgraph_1_1_lowest_common_ancestor.html',1,'graph']]],
+  ['lrucache_19',['LRUCache',['../d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html',1,'others::lru_cache']]]
 ];

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atof.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atof#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74.5,-152.5 74.5,-171.5 127.5,-171.5 127.5,-152.5 74.5,-152.5"/>
 <text text-anchor="middle" x="101" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atof</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atoi.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/string/byte/atoi#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="75,-114.5 75,-133.5 127,-133.5 127,-114.5 75,-114.5"/>
 <text text-anchor="middle" x="101" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::atoi</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="74,-76.5 74,-95.5 128,-95.5 128,-76.5 74,-76.5"/>
 <text text-anchor="middle" x="101" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>

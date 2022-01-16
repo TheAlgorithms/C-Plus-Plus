@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/io/manip/endl#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="161,-56.5 161,-75.5 215,-75.5 215,-56.5 161,-56.5"/>
 <text text-anchor="middle" x="188" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::endl</text>
 </a>

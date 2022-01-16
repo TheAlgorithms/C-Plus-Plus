@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implementation of Multilayer Perceptron.">
+<g id="a_node1"><a xlink:title="Implementation of [Multilayer Perceptron] (https://en.wikipedia.org/wiki/Multilayer_perceptron).">
 <polygon fill="#bfbfbf" stroke="black" points="280,-112.5 280,-142.5 402,-142.5 402,-112.5 280,-112.5"/>
 <text text-anchor="start" x="288" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">machine_learning/neural</text>
 <text text-anchor="middle" x="341" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">_network.cpp</text>
@@ -172,7 +172,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d8/d95/vector__ops_8hpp.html" target="_top" xlink:title="Various functions for vectors associated with &lt;a href=&quot;https://en.wikipedia.org/wiki/Multilayer_perce...">
+<g id="a_node12"><a xlink:href="../../d8/d95/vector__ops_8hpp.html" target="_top" xlink:title="Various functions for vectors associated with [NeuralNetwork (aka Multilayer Perceptron)] (https://en...">
 <polygon fill="white" stroke="black" points="191.5,-56.5 191.5,-75.5 274.5,-75.5 274.5,-56.5 191.5,-56.5"/>
 <text text-anchor="middle" x="233" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">vector_ops.hpp</text>
 </a>

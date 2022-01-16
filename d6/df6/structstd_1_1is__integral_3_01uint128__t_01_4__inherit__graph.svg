@@ -21,8 +21,8 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integral_constant.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="30.5,-56.5 30.5,-75.5 107.5,-75.5 107.5,-56.5 30.5,-56.5"/>
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/types/integral_constant" xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="30.5,-56.5 30.5,-75.5 107.5,-75.5 107.5,-56.5 30.5,-56.5"/>
 <text text-anchor="middle" x="69" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::true_type</text>
 </a>
 </g>

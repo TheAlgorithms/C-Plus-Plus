@@ -1,0 +1,7 @@
+<map id="data_structures::stack_using_queue::Stack::push" name="data_structures::stack_using_queue::Stack::push">
+<area shape="rect" id="node1" title="Inserts an element to the top of the stack." alt="" coords="5,74,185,115"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty#" title=" " alt="" coords="233,5,360,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front#" title=" " alt="" coords="238,56,355,83"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop#" title=" " alt="" coords="241,107,353,133"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push#" title=" " alt="" coords="237,157,356,184"/>
+</map>

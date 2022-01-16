@@ -74,7 +74,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array/data.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/array/data#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="314,-100.5 314,-119.5 397,-119.5 397,-100.5 314,-100.5"/>
 <text text-anchor="middle" x="355.5" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::array::data</text>
 </a>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/move.html#" xlink:title=" ">
+<g id="a_node5"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/utility/move#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="325.5,-56.5 325.5,-75.5 385.5,-75.5 385.5,-56.5 325.5,-56.5"/>
 <text text-anchor="middle" x="355.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::move</text>
 </a>

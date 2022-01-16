@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.9.2 */
+/* The standard CSS for doxygen 1.9.3 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -262,7 +262,7 @@ dl.el {
 }
 
 ul {
-  overflow: hidden; /*Fixed: list item bullets overlap floating elements*/
+  overflow: visible;
 }
 
 #side-nav ul {
@@ -1356,6 +1356,11 @@ dl.section dd {
 }
 
 
+#projectrow
+{
+	height: 56px;
+}
+
 #projectlogo
 {
 	text-align: center;
@@ -1371,6 +1376,7 @@ dl.section dd {
 #projectalign
 {
         vertical-align: middle;
+        padding-left: 0.5em;
 }
 
 #projectname
@@ -1521,6 +1527,10 @@ span.emoji {
          */
 }
 
+span.obfuscator {
+  display: none;
+}
+
 .PageDocRTL-title div.toc li.level1 {
   margin-left: 0 !important;
   margin-right: 0;
@@ -1575,7 +1585,7 @@ tr.heading h2 {
 
 #powerTip {
 	cursor: default;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	background-color: white;
 	border: 1px solid gray;
 	border-radius: 4px 4px 4px 4px;
@@ -1812,6 +1822,10 @@ table.DocNodeLTR {
    width: auto;
    margin-right: auto;
    margin-left: 0;
+}
+
+code.JavaDocCode
+  direction:ltr;
 }
 
 tt, code, kbd, samp

@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implementation of Kadane Algorithm">
+<g id="a_node1"><a xlink:title="Implementation of [Kadane Algorithm] (https://en.wikipedia.org/wiki/Kadane%27s_algorithm)">
 <polygon fill="#bfbfbf" stroke="black" points="21.5,-56.5 21.5,-86.5 136.5,-86.5 136.5,-56.5 21.5,-56.5"/>
 <text text-anchor="start" x="29.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">dynamic_programming</text>
 <text text-anchor="middle" x="79" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/kadane2.cpp</text>

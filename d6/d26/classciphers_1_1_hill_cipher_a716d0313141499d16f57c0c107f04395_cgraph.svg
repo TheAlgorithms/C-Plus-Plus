@@ -52,7 +52,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size.html#" xlink:title=" ">
+<g id="a_node4"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/container/vector/size#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="377,-6 377,-25 464,-25 464,-6 377,-6"/>
 <text text-anchor="middle" x="420.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector::size</text>
 </a>

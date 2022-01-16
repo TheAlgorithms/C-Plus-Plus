@@ -84,7 +84,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="169,-236.89 169,-255.89 270,-255.89 270,-236.89 169,-236.89"/>
 <text text-anchor="middle" x="219.5" y="-243.89" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr::get</text>
 </a>
@@ -148,7 +148,7 @@ var sectionId = 'dynsection-5';
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html#" xlink:title=" ">
+<g id="a_node16"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="165,-39.89 165,-58.89 274,-58.89 274,-39.89 165,-39.89"/>
 <text text-anchor="middle" x="219.5" y="-46.89" font-family="Helvetica,sans-Serif" font-size="10.00">std::unique_ptr::reset</text>
 </a>

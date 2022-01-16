@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html#" xlink:title=" ">
+<g id="a_node2"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/imag#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="179,-38.5 179,-57.5 279,-57.5 279,-38.5 179,-38.5"/>
 <text text-anchor="middle" x="229" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::imag</text>
 </a>
@@ -43,7 +43,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real.html#" xlink:title=" ">
+<g id="a_node3"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/numeric/complex/real#" xlink:title=" ">
 <polygon fill="white" stroke="black" points="181.5,-0.5 181.5,-19.5 276.5,-19.5 276.5,-0.5 181.5,-0.5"/>
 <text text-anchor="middle" x="229" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::complex::real</text>
 </a>

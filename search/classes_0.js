@@ -15,8 +15,16 @@ var searchData=
   ['allocator_5farg_5ft_12',['allocator_arg_t',['http://en.cppreference.com/w/cpp/memory/allocator_arg_t.html',0,'std']]],
   ['allocator_5ftraits_13',['allocator_traits',['http://en.cppreference.com/w/cpp/memory/allocator_traits.html',0,'std']]],
   ['array_14',['array',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
-  ['atomic_15',['atomic',['http://en.cppreference.com/w/cpp/atomic/atomic.html',0,'std']]],
-  ['atomic_5fflag_16',['atomic_flag',['http://en.cppreference.com/w/cpp/atomic/atomic_flag.html',0,'std']]],
-  ['auto_5fptr_17',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',0,'std']]],
-  ['aystarsearch_18',['AyStarSearch',['../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html',1,'machine_learning::aystar_search']]]
+  ['array_3c_20data_5fstructures_3a_3atree_5f234_3a_3anode_20_2a_2c_204_20_3e_15',['array&lt; data_structures::tree_234::Node *, 4 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20float_2c_2020_20_3e_16',['array&lt; float, 20 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20int16_5ft_2c_20max_5fsize_20_3e_17',['array&lt; int16_t, max_size &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20int64_5ft_2c_203_20_3e_18',['array&lt; int64_t, 3 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20int64_5ft_2c_20n_20_3e_19',['array&lt; int64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20std_3a_3aarray_3c_20int64_5ft_2c_20n_20_3e_2c_20m_20_3e_20',['array&lt; std::array&lt; int64_t, N &gt;, M &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20std_3a_3aarray_3c_20uint32_5ft_2c_203_20_3e_2c_203_20_3e_21',['array&lt; std::array&lt; uint32_t, 3 &gt;, 3 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20uint64_5ft_2c_2050_20_3e_22',['array&lt; uint64_t, 50 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['atomic_23',['atomic',['http://en.cppreference.com/w/cpp/atomic/atomic.html',0,'std']]],
+  ['atomic_5fflag_24',['atomic_flag',['http://en.cppreference.com/w/cpp/atomic/atomic_flag.html',0,'std']]],
+  ['auto_5fptr_25',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',0,'std']]],
+  ['aystarsearch_26',['AyStarSearch',['../da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html',1,'machine_learning::aystar_search']]]
 ];
