@@ -1,9 +1,7 @@
 /**
  * @file
- * @brief Greedy algorithm to find length of longest substring without repeating
- * characters. The following
- * [resource](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
- * was referred to
+ * @brief Greedy algorithm to find the [length of the longest substring without repeating
+ * characters](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
  *
  *
  * @details
