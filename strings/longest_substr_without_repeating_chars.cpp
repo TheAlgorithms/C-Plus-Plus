@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Greedy algorithm to find the [length of the longest substring without repeating
+ * @brief Greedy algorithm to find the [length of the longest substring without
+ * repeating
  * characters](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
  *
  *
@@ -14,11 +15,10 @@
  * @author [Nishant Mahesh](https://github.com/nishant-mahesh)
  */
 
-#include <algorithm>  // To use the inbuilt 'max' function
-#include <cassert>
-#include <iostream>
-#include <map>
-#include <string>
+#include <algorithm>  // To use the inbuilt algorithmic functions, eg: 'max'
+#include <iostream>   // For IO Operations
+#include <map>     // Used to efficiently store and retrieve (key, value) pairs
+#include <string>  // For string operations
 
 using std::cin;
 using std::cout;
