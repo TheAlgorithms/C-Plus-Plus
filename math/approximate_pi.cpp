@@ -52,11 +52,11 @@ namespace math {
 }  // namespace math
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Self-test implementations
+ * @returns void
  */
-int main() {
-    std::vector<math::Point> rands;
+static void test() {
+        std::vector<math::Point> rands;
     for (std::size_t i = 0; i < 100000; i++) {
         math::Point p;
         p.x = rand() / (double)RAND_MAX; // 0 <= x <= 1
@@ -64,6 +64,16 @@ int main() {
         rands.push_back(p);
     }
     std::cout << math::approximate_pi(rands);          // ~3.14
+}
+
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
+int main(int argc, char *argv[]) {
+    test();  // run self-test implementations
     return 0;
 }
 
