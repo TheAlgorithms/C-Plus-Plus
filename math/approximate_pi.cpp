@@ -16,7 +16,7 @@
 
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
-#include <cstdlib>  /// for rand
+#include <cstdlib>  /// for std::rand
 
 /**
  * @namespace math
