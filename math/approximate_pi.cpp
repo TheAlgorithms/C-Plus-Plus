@@ -23,11 +23,6 @@
  * @brief Mathematical algorithms
  */
 namespace math {
-/**
- * @brief Function to test above algorithm
- * @param n description
- * @returns void
- */
 
     /**
      * structure of points containing two numbers, respectively x and y such that 0 ≤ x ≤ 1 and 0 ≤ y ≤ 1. 
