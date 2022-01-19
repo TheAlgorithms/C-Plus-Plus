@@ -27,6 +27,8 @@ var namespacemath =
       [ "cross", "df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9", null ],
       [ "mag", "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8", null ]
     ] ],
+    [ "Point", "de/d4f/structmath_1_1_point.html", null ],
+    [ "approximate_pi", "dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188", null ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],
     [ "circle_area", "dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75", null ],
     [ "cone_volume", "dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7", null ],

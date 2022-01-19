@@ -75,7 +75,8 @@ var annotated_dup =
     [ "math", "dd/d47/namespacemath.html", [
       [ "ncr_modulo_p", null, [
         [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
-      ] ]
+      ] ],
+      [ "Point", "de/d4f/structmath_1_1_point.html", null ]
     ] ],
     [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", [
       [ "circular_linked_list", null, [
@@ -148,8 +149,8 @@ var annotated_dup =
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
-    [ "compare", "d1/db3/structcompare.html", null ],
     [ "Compare", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
+    [ "compare", "d1/db3/structcompare.html", null ],
     [ "Complex", "da/d5a/class_complex.html", "da/d5a/class_complex" ],
     [ "CycleCheck", "d3/dbb/class_cycle_check.html", "d3/dbb/class_cycle_check" ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],
@@ -167,8 +168,8 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],

@@ -139,19 +139,19 @@ var NAVTREEINDEX =
 "annotated.html",
 "cpp/iterator/distance.html",
 "cpp/thread/lock.html",
-"d1/d83/classuint256__t.html#a9ddd133cee83f3a2ab6ed60a7ccbc250",
-"d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a6e486767434e44076c1ac374a22da726",
-"d4/d32/inorder__successor__of__bst_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d5/d58/class_test_cases.html#ac2636e8b5b9e053374c45bfcf0603008",
-"d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d",
-"d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b",
-"d8/d9c/union__of__two__arrays_8cpp.html#a167c24bd817469ae47358d12e034f2d5",
-"d9/df4/namespacetests.html#aacafde185abd8670abee51157f273dc2",
-"db/d0d/prime__factorization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a1802cf6197a255055cb734d626abc101",
-"df/d11/midpoint__integral__method_8cpp.html#a7072493d1f0f8a91b2a71d4cc456c09c",
-"globals_func_q.html"
+"d1/d83/classuint256__t.html#a90ce75bec5b525de55bbf92c564a2261",
+"d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a",
+"d4/d32/inorder__successor__of__bst_8cpp.html#a7f6f73a33beec448c27cc1d70b220702",
+"d5/d58/class_test_cases.html#abae0148985f159b582a385cf399254e3",
+"d6/d30/classmachine__learning_1_1adaline.html#ae347040516e995c8fb8ca2e5c0496daa",
+"d7/d7c/classstatistics_1_1stats__computer1.html#a27f0a03e2fd2254f1c81fe668226bd92",
+"d8/d9a/fast__fourier__transform_8cpp.html#a158fd271b9a53e8f3f60b08b18857150",
+"d9/df4/namespacetests.html",
+"db/d0d/prime__factorization_8cpp.html",
+"dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19",
+"dd/d91/class_fenwick_tree.html#aaddab1f03d4941212a82cc647b1adb17",
+"df/d06/decimal__to__binary_8cpp.html#a10df57491019f0ac39b492740fb388f7",
+"globals_func_i.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
