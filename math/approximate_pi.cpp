@@ -63,7 +63,7 @@ static void test() {
         p.y = rand() / (double)RAND_MAX; // 0 <= y <= 1
         rands.push_back(p);
     }
-    std::cout << math::approximate_pi(rands);          // ~3.14
+    std::cout << math::approximate_pi(rands) << std::endl;          // ~3.14
 }
 
 /**
