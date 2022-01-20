@@ -8,6 +8,7 @@
  */
 
 #include <iostream>   /// for IO operations
+#include <cassert>    /// for assert
 
 /**
  * \brief [Algorithm implementation for linear search]
@@ -31,36 +32,75 @@ int LinearSearch(int *array, int size, int key)
 }
 
 /**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
+    int size = 4;
+    int *array = new int[size];
+    for (int i = 0; i < size; i++) {
+        array[i] = i;
+    }
+
+    assert(LinearSearch(array, size, 0) == 0);
+    assert(LinearSearch(array, size, 1) == 1);
+    assert(LinearSearch(array, size, 2) == 2);
+
+    size = 6;
+    for (int i = 0; i < size; i++) {
+        array[i] = i;
+    }
+
+    assert(LinearSearch(array, size, 3) == 3);
+    assert(LinearSearch(array, size, 1) == 1);
+    assert(LinearSearch(array, size, 5) == 5);
+
+    std::cout << "All tests have successfully passed!\n";
+    delete[] array; // free memory up
+}
+
+/**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    int size = 0;
-    std::cout << "\nEnter the size of the array: ";
-    std::cin >> size;
+    int mode = 0;
 
-    int *array = new int[size];
-    int key = 0;
+    std::cout << "Choose mode\n";
+    std::cout << "Self-test mode (1), interactive mode (2): ";
 
-    // Input for the array elements
-    std::cout << "Enter the array of " << size << " numbers: ";
-    for (int i = 0; i < size; i++) {
-        std::cin >> array[i];
+    std::cin >> mode;
+
+    if (mode == 2) {
+        int size = 0;
+        std::cout << "\nEnter the size of the array: ";
+        std::cin >> size;
+
+        int *array = new int[size];
+        int key = 0;
+
+        // Input for the array elements
+        std::cout << "Enter the array of " << size << " numbers: ";
+        for (int i = 0; i < size; i++) {
+            std::cin >> array[i];
+        }
+
+        std::cout << "\nEnter the number to be searched: ";
+        std::cin >> key;
+
+        int index = LinearSearch(array, size, key);
+        if (index != -1)
+        {
+            std::cout << "Number found at index: " << index << "\n";
+        } 
+        else
+        {
+            std::cout << "Array element not found";
+        }
+        delete[] array;
     }
-
-    std::cout << "\nEnter the number to be searched: ";
-    std::cin >> key;
-
-    int index = LinearSearch(array, size, key);
-    if (index != -1)
-    {
-        std::cout << "Number found at index: " << index;
-    } 
-    else 
-    {
-        std::cout << "Array element not found";
+    else {
+        tests();  // run self-test implementations
     }
-
-    delete[] array;
     return 0;
 }
