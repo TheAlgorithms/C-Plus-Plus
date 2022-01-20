@@ -1,4 +1,9 @@
 // This is Connect-Four game for two players.
+// A board with 6 rows and 8 columns is displayed.
+// Two players are assigned the symbols "x" and "o".
+// They take turns to choose the column where their respective symbol can be inserted.
+// A player wins when 4 spaces are connected: Horizontally, Vertically, Diagonally Forward, Diagonally Backward.
+// The program declares the winner.
 
 #include <iostream>
 using namespace std;
