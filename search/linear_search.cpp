@@ -2,8 +2,12 @@
  * \file
  * \brief [Linear search
  * algorithm](https://en.wikipedia.org/wiki/Linear_search)
+ *
+ * @author Unknown author
+ * @author [Ritika Mukherjee](https://github.com/ritikaa17)
  */
-#include <iostream>
+
+#include <iostream>   /// for IO operations
 
 /**
  * \brief [Algorithm implementation for linear search]
@@ -26,32 +30,35 @@ int LinearSearch(int *array, int size, int key)
     return -1;
 }
 
-/** main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    int size;
-    std::cout << "\nEnter the size of the Array : ";
+    int size = 0;
+    std::cout << "\nEnter the size of the array: ";
     std::cin >> size;
 
     int *array = new int[size];
-    int key;
+    int key = 0;
 
-    /*User gets to input array elements*/
-    std::cout << "\nEnter the Array of " << size << " numbers : ";
+    // Input for the array elements
+    std::cout << "Enter the array of " << size << " numbers: ";
     for (int i = 0; i < size; i++) {
         std::cin >> array[i];
     }
 
-    std::cout << "\nEnter the number to be searched : ";
+    std::cout << "\nEnter the number to be searched: ";
     std::cin >> key;
 
     int index = LinearSearch(array, size, key);
     if (index != -1)
     {
-        std::cout << "\nNumber found at index : " << index;
+        std::cout << "Number found at index: " << index;
     } 
     else 
     {
-        std::cout << "\nArray element Not found!";
+        std::cout << "Array element not found";
     }
 
     delete[] array;
