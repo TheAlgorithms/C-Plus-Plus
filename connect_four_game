@@ -1,0 +1,152 @@
+// This is Connect-Four game for two players.
+
+#include <iostream>
+using namespace std;
+
+const int COLS = 8;
+const int ROWS = 6;
+
+void printBoard(char [][COLS], int);
+void initializeBoard(char [][COLS], int);
+int insertChip(char [][COLS], int, int &, char);
+bool checkIfWinner(char [][COLS], int, int, char);
+
+
+// Main method
+int main() {
+
+    // Set up the array and print the board
+    char array[ROWS][COLS];
+    initializeBoard(array, ROWS);
+    printBoard(array, ROWS);
+    cout << endl;
+
+    // Tell the players about the tokens
+    cout << "Player 1: x\n";
+    cout << "Player 2: o\n";
+    cout << endl;
+
+    // Initializing game variables
+    int count = 1;
+    bool win = false;
+    bool fill = false;
+    int num;
+    char token;
+
+    // Setting the game in the while loop till there is a winner or a draw
+    // Asking for column option from players
+    while (!win && !fill) {
+        int col;
+        fill = true;
+        num = (count % 2 == 1) ? 1 : 2;
+        token = (count % 2 == 1) ? 'x' : 'o';
+        cout << "Player " << num << ": Which column would you like to choose?  ";
+        cin >> col;
+        col -= 1;
+        cout << endl;
+        while (col <= -1 || col >= COLS) {
+            cout << "Please enter a valid index. ";
+            cin >> col;
+            col -= 1;
+            cout << endl;
+        }
+        int row = insertChip(array, ROWS, col, token);
+        printBoard(array, ROWS);
+        cout << endl;
+        win = checkIfWinner(array, col, row, token);
+
+        // Checking for remaining empty spaces
+        for (auto & i : array) {
+            for (char j : i)
+                if (j == '-') {
+                    fill = false;
+                    break;
+                }
+        }
+        count++;
+    }
+
+    // Declaring the winner
+    if (fill && !win)
+        cout << "Draw. Nobody wins.\n";
+    else
+        cout << "Player " << num << " won the game!\n";
+
+    system("pause");
+    return 0;
+}
+
+// Method for printing the board
+void printBoard(char array[][COLS], int rows) {
+    for (int i = rows - 1; i > -1; i--) {
+        for (int j = 0; j < COLS; j++)
+            cout << array[i][j] << " ";
+        cout << endl;
+    }
+}
+
+
+// Method for initializing the board with "-"
+ void initializeBoard(char array[][COLS], int rows) {
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < COLS; j++)
+            array[i][j] = '-';
+
+}
+
+
+// Places the token in the column that the user has chosen.
+// Finds the next available spot in that column if already occupied
+// Returns the row that the token is placed
+int insertChip(char array[][COLS], int rows, int &col, char chipType) {
+    int row = 0;
+    while (array[row][col] != '-' )
+        row++;
+    while (row == rows) {
+        cout << "Column already filled. Enter another column. ";
+        cin >> col;
+        col = col - 1;
+        cout << endl;
+        while (col <= -1 || col >= COLS) {
+            cout << "Please enter a valid index. ";
+            cin >> col;
+            cout << endl;
+        }
+        row = 0;
+        while (array[row][col] != '-' )
+            row++;
+    }
+    array[row][col] = chipType;
+    return row;
+}
+
+
+// After a token is added, checks if the specified chip type, creates four in a row
+// Horizontally, Vertically, Diagonally Forward, Diagonally Backward
+// Returns true if someone won and false otherwise
+bool checkIfWinner(char array[][COLS], int col, int row, char chipType) {
+    bool win = false;
+    if(row >= 3)
+        if(array[row - 1][col] == chipType && array[row - 2][col] == chipType && array[row - 3][col] == chipType)
+            win = true;
+    if(col <= COLS - 4)
+        if(array[row][col + 1] == chipType && array[row][col + 2] == chipType && array[row][col + 3] == chipType)
+            win = true;
+    if(col <= COLS - 3  && col >= 1)
+        if(array[row][col - 1] == chipType && array[row][col + 1] == chipType && array[row][col + 2] == chipType)
+            win = true;
+    if(col <= COLS - 2  && col >= 2)
+        if(array[row][col - 2] == chipType && array[row][col - 1] == chipType && array[row][col + 1] == chipType)
+            win = true;
+    if(col <= COLS - 1  && col >= 3)
+        if(array[row][col - 3] == chipType && array[row][col - 2] == chipType && array[row][col - 1] == chipType)
+            win = true;
+    if(row >= 3 && col <= COLS - 4)
+        if(array[row - 1][col + 1] == chipType && array[row - 2][col + 2] == chipType && array[row - 3][col + 3] == chipType)
+            win = true;
+    if(row >= 3 && col <= COLS - 1  && col >= 3)
+        if(array[row - 1][col - 1] == chipType && array[row - 2][col - 2] == chipType && array[row - 3][col - 3] == chipType)
+            win = true;
+    return win;
+}
+
