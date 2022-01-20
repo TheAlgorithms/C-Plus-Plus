@@ -76,6 +76,11 @@ int main() {
         std::cout << "\nEnter the size of the array: ";
         std::cin >> size;
 
+        while ((size <= 1) || (size >= 30)) {
+            std::cout << "Size cannot be less than zero. Please choose another value: ";
+            std::cin >> size;
+        }
+
         int *array = new int[size];
         int key = 0;
 
