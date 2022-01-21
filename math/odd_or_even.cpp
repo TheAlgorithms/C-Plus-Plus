@@ -45,7 +45,7 @@ void test() {
 }
 
 /**
- * Main Function
+ * Main Function to test tests
  */
 int main() {
     test();
