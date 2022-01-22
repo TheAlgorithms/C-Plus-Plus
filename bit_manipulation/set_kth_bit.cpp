@@ -64,9 +64,8 @@ static void test() {
     assert(bit_manipulation::set_kth_bit::setKthBit(25, 1) == 27);
     // n = 400001,5 return 400033
     assert(bit_manipulation::set_kth_bit::setKthBit(400001, 5) == 400033);
-    // n = 123 return 123
-    assert(bit_manipulation::set_kth_bit::setKthBit(123, 3) == 123);
-
+    // n = 123,3 return 131
+    assert(bit_manipulation::set_kth_bit::setKthBit(123, 3) == 131);
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
