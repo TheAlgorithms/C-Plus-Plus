@@ -61,6 +61,7 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
+    cout << "Testing...\n";
     test();  // run self-test implementations
     return 0;
 }
