@@ -80,7 +80,7 @@ bool sameQ(std::queue<T> param1, std::queue<T> param2) {
 }
 
 
-int main() { 
+void test(){
     /** 
      * Main function, contains a simple test which can be updated to any data type
      * Also contains the assert test function.
@@ -90,7 +90,7 @@ int main() {
     for (int i = 0; i < 10; i++) {
         q1.push(rand() % 100);
     }
-    
+
     std::cout << "The quueue BEFORE reversal is:";
     data_structures::reverse_queue::print(q1);
 
@@ -99,4 +99,7 @@ int main() {
     data_structures::reverse_queue::print(q2);
 
     assert(data_structures::reverse_queue::sameQ(q1, q2) == true); // self-check
+}
+int main() { 
+test();
 }
