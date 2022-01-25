@@ -15,11 +15,10 @@
  * @author [Nishant Mahesh](https://github.com/nishant-mahesh)
  */
 
-#include <algorithm>  // To use the inbuilt algorithmic functions, eg: 'max'
-#include <iostream>   // For IO Operations
-#include <map>     // Used to efficiently store and retrieve (key, value) pairs
-#include <string>  // For string operations
-
+#include <algorithm>  /// for the built-in algorithmic functions
+#include <iostream>   /// for IO Operations
+#include <map>       /// used to efficiently store and retrieve (key, value) pairs
+#include <string>   /// for std::string
 using std::cin;
 using std::cout;
 using std::map;
@@ -123,4 +122,5 @@ static void tests() {
  */
 int main() {
     tests();  // run self-test implementations
+    return 0;
 }
