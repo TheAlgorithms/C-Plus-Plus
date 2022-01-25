@@ -17,6 +17,8 @@
 */
 #include <iostream>
 using namespace std;
+using std::cout; // For displaying output
+using std::cin; // For taking user input
 
 // Global constants COLS and ROWS for the standard (row * column) 2D game board
 const int COLS = 8;
@@ -45,12 +47,12 @@ int main() {
     char array[ROWS][COLS];
     initializeBoard(array, ROWS);
     printBoard(array, ROWS);
-    cout << endl;
+    std::cout << endl;
 
     // Tell the players about the tokens 'x' and 'o'
-    cout << "Player 1: x\n";
-    cout << "Player 2: o\n";
-    cout << endl;
+    std::cout << "Player 1: x\n";
+    std::cout << "Player 2: o\n";
+    std::cout << endl;
 
     // Initializing game variables
     int count = 1;     // Counts each turn played till the board is full
@@ -66,17 +68,17 @@ int main() {
         int row = 0;
         num = (count % 2 == 1) ? 1 : 2;
         token = (count % 2 == 1) ? 'x' : 'o';
-        cout << "Player " << num << ": Enter a valid column number :  ";
-        cin >> col;
+        std::cout << "Player " << num << ": Enter a valid column number :  ";
+        std::cin >> col;
         col -= 1;
-        cout << endl;
+        std::cout << endl;
 
         // Checking if the player inputs an invalid column number
         while (col <= -1 || col >= COLS) {
-            cout << "Please enter a valid index. ";
-            cin >> col;
+            std::cout << "Please enter a valid index. ";
+            std::cin >> col;
             col -= 1;
-            cout << endl;
+            std::cout << endl;
         }
 
         // Checking for the highest available row
@@ -91,7 +93,7 @@ int main() {
         if (row != ROWS) {
             array[row][col] = token;
             printBoard(array, ROWS);
-            cout << endl;
+            std::cout << endl;
 
         /**
           * checkIfWinner function checks after every turn if a player is the winner
@@ -108,10 +110,12 @@ int main() {
     }
 
     // Declaring the winner or if there is a draw
-    if (count > (ROWS * COLS) && !win)
-        cout << "Draw. Nobody wins.\n";
-    else
-        cout << "Player " << num << " won the game!\n";
+    if (count > (ROWS * COLS) && !win) {
+        std::cout << "Draw. Nobody wins.\n";
+    }
+    else {
+        std::cout << "Player " << num << " won the game!\n";
+    }
 
     return 0;
 }
@@ -119,17 +123,20 @@ int main() {
 // Method for printing the board with tokens or '-' if a space is yet to be chosen
 void printBoard(char array[][COLS], int rows) {
     for (int i = rows - 1; i > -1; i--) {
-        for (int j = 0; j < COLS; j++)
-            cout << array[i][j] << " ";
-        cout << endl;
+        for (int j = 0; j < COLS; j++) {
+            std::cout << array[i][j] << " ";
+        }
+        std::cout << endl;
     }
 }
 
 // Method for initializing the board with "-"
 void initializeBoard(char array[][COLS], int rows) {
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < COLS; j++)
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < COLS; j++) {
             array[i][j] = '-';
+        }
+    }
 }
 
 /**
@@ -148,33 +155,49 @@ bool checkIfWinner(char array[][COLS], int col, int row, char chipType) {
     // After a token is added, checks if the specified token / chip type creates four in a row
     // Horizontally, Vertically, Diagonally Right, Diagonally Left
 
-    if(row >= 3)
-        if(array[row - 1][col] == chipType && array[row - 2][col] == chipType && array[row - 3][col] == chipType)
+    if(row >= 3) {
+        if (array[row - 1][col] == chipType && array[row - 2][col] == chipType && array[row - 3][col] == chipType) {
             win = true;   // Connects the current token with 3 vertically below
+        }
+    }
 
-    if(col <= COLS - 4)
-        if(array[row][col + 1] == chipType && array[row][col + 2] == chipType && array[row][col + 3] == chipType)
+    if(col <= COLS - 4) {
+        if (array[row][col + 1] == chipType && array[row][col + 2] == chipType && array[row][col + 3] == chipType) {
             win = true;   // Connects the current token with 3 horizontally to its right
+        }
+    }
 
-    if(col <= COLS - 3  && col >= 1)
-        if(array[row][col - 1] == chipType && array[row][col + 1] == chipType && array[row][col + 2] == chipType)
+    if(col <= COLS - 3  && col >= 1) {
+        if (array[row][col - 1] == chipType && array[row][col + 1] == chipType && array[row][col + 2] == chipType) {
             win = true;   // Connects the current token with 1 horizontally to its left and 2 horizontally to its right
+        }
+    }
 
-    if(col <= COLS - 2  && col >= 2)
-        if(array[row][col - 2] == chipType && array[row][col - 1] == chipType && array[row][col + 1] == chipType)
+    if(col <= COLS - 2  && col >= 2) {
+        if (array[row][col - 2] == chipType && array[row][col - 1] == chipType && array[row][col + 1] == chipType) {
             win = true;   // Connects the current token with 2 horizontally to its left and 1 horizontally to its right
+        }
+    }
 
-    if(col <= COLS - 1  && col >= 3)
-        if(array[row][col - 3] == chipType && array[row][col - 2] == chipType && array[row][col - 1] == chipType)
+    if(col <= COLS - 1  && col >= 3) {
+        if (array[row][col - 3] == chipType && array[row][col - 2] == chipType && array[row][col - 1] == chipType) {
             win = true;   // Connects the current token with 3 horizontally to its left
+        }
+    }
 
-    if(row >= 3 && col <= COLS - 4)
-        if(array[row - 1][col + 1] == chipType && array[row - 2][col + 2] == chipType && array[row - 3][col + 3] == chipType)
+    if(row >= 3 && col <= COLS - 4) {
+        if (array[row - 1][col + 1] == chipType && array[row - 2][col + 2] == chipType &&
+            array[row - 3][col + 3] == chipType) {
             win = true;   // Connects the current token with 3 diagonally downward to its right
+        }
+    }
 
-    if(row >= 3 && col <= COLS - 1  && col >= 3)
-        if(array[row - 1][col - 1] == chipType && array[row - 2][col - 2] == chipType && array[row - 3][col - 3] == chipType)
+    if(row >= 3 && col <= COLS - 1  && col >= 3) {
+        if (array[row - 1][col - 1] == chipType && array[row - 2][col - 2] == chipType &&
+            array[row - 3][col - 3] == chipType) {
             win = true;   // Connects the current token with 3 diagonally downward to its left
+        }
+    }
 
     return win;
 }
