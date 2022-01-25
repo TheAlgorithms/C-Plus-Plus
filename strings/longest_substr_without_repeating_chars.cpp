@@ -27,7 +27,9 @@ using std::pair;
 using std::string;
 
 /**
- * @param string named "input"
+ * @param string named "input" that is used to calculate the lonngest substring
+ * that contains no repeated character
+ *
  * @returns integer that equals length of the longest substring of "input" that
  * contains no repeated character
  *
