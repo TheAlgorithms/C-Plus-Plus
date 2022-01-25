@@ -16,8 +16,8 @@
  * isthat we need to check instead of fast!=null we have to chek 
  * fast->next!=null and similarlly we print the slow->data
  */
-#include <cassert>   ///  for assert
-#include <iostream> /// for I/O operations
+#include <cassert>    /// for assert
+#include <iostream>   /// for I/O operations
 
 /**
  * @brief A Node class containing a value and pointer to another link
@@ -107,8 +107,8 @@ int length(node*head){
 * @return void
 */
 static void test(){
-	// 1st test
-	node * head = nullptr;
+    // 1st test
+    node * head = nullptr;
     node *n1 = new  node(1);
     node *n2 = new node(2);
     node *n3 = new node(3);
@@ -122,9 +122,9 @@ static void test(){
     int len1 = length(head);
     // Length of the linked list
     assert(len1 == 5);
-    //Midpoint of linked list 
+    // Midpoint of linked list 
     assert(midpoint(len1,head) == 3);
-    std::cout<<"All tests have sucessfully passed!"<<std::endl;
+    std::cout << "All tests have sucessfully passed!" << std::endl;
 }
 
 /**
@@ -132,6 +132,6 @@ static void test(){
  * @returns 0 on exit
  */
 int main(){
-	test();  //run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
