@@ -16,6 +16,7 @@
  * isthat we need to check instead of fast!=null we have to chek 
  * fast->next!=null and similarlly we print the slow->data
  */
+#include <cassert>   ///  for assert
 #include <iostream> /// for I/O operations
 
 /**
@@ -42,7 +43,7 @@ public:
  * @param head stores the first node address of the LinkedList
  * @returns void 
  */
-void midpoint(int len,node*head){
+int  midpoint(int len,node*head){
     node*slow = head;
     node*fast=head->next;
     if(len%2){
@@ -50,15 +51,18 @@ void midpoint(int len,node*head){
             slow=slow->next;
             fast=fast->next->next;
         }
-        std::cout<<slow->data<<" ";
+        return slow->data;
+        // std::cout<<slow->data<<" ";
     }
     else{
         while(fast->next!=nullptr){
             slow=slow->next;
             fast=fast->next->next;
         }
-        std::cout<<slow->data<<" ";
+
+        return slow->data;
     }
+    return 0;
 }
 
 /**
@@ -87,37 +91,46 @@ int length(node*head){
         temp=temp->next;
         len++;
     }
-    std::cout<<"The middle element is:";
     return len;
     /*
     * returning the final length of the linked list 
     */
 }
-
 /**
- * Main function :
+* @brief Self-test implementations
  * Initializing head pointer to the nullptr . 
  * creating the  nodes(dynamically) of the linked list and connecting
  * each other by next and head pointer by dynamically.
  * Allows user to calculate the length of the linked list 
  * Also allows user to calculate and display the mid element from the linked list .
- * @returns 0 on exit
- */
-int main(){
-    node * head = nullptr;
+* @return void
+*/
+
+static void test(){
+	// 1st test
+	node * head = nullptr;
     node *n1 = new  node(1);
     node *n2 = new node(2);
     node *n3 = new node(3);
     node *n4 = new node(4);
     node *n5 = new node(5);
-    
     head = n1;
     n1->next = n2;
     n2->next = n3;
     n3->next= n4;
-    n4->next = n5;
-    
+    n4->next = n5; 
     int len1 = length(head);
-    midpoint(len1,head);
+    // Length of the linked list
+    assert(len1 == 5);
+    //Midpoint of linked list 
+    assert(midpoint(len1,head) == 3);
+    std::cout<<"All tests have sucessfully passed!"<<std::endl;
+}
+/**
+ * Main function :
+ * @returns 0 on exit
+ */
+int main(){
+	test();  //run self-test implementations
     return 0;
 }
