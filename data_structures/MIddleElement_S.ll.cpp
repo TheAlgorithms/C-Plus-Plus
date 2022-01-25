@@ -96,6 +96,7 @@ int length(node*head){
     * returning the final length of the linked list 
     */
 }
+
 /**
 * @brief Self-test implementations
  * Initializing head pointer to the nullptr . 
@@ -105,7 +106,6 @@ int length(node*head){
  * Also allows user to calculate and display the mid element from the linked list .
 * @return void
 */
-
 static void test(){
 	// 1st test
 	node * head = nullptr;
@@ -126,6 +126,7 @@ static void test(){
     assert(midpoint(len1,head) == 3);
     std::cout<<"All tests have sucessfully passed!"<<std::endl;
 }
+
 /**
  * Main function :
  * @returns 0 on exit
