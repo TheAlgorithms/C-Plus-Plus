@@ -51,9 +51,10 @@ static void test() {
         q1.push(i);
         q2.push(11-i);
     }
+	operations_on_datastructures::reverse(q1);
 
-    assert(reverse(q1) == q2); // this ensures that the algorithm works as expected
-    cout << "Test Passed\n";
+    assert(q1 == q2); // this ensures that the algorithm works as expected
+    cout << "Test Passed\n"; // won't output if test fails
 }
 
 /**
