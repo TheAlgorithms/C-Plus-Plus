@@ -33,7 +33,7 @@ namespace longest_substr_length {
 
             for (int j = i + 1; j < input.length(); j++) {
 
-                if (counts[input.substr(j, 1)] == NULL) {
+                if (counts[input.substr(j, 1)] == 0) {
                     counts[input.substr(j, 1)] = 1;
 
                     if (j == input.length() - 1) {
