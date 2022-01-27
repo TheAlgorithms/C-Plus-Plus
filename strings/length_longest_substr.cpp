@@ -10,6 +10,11 @@
 #include <unordered_map>  /// for std::unordered_map
 #include <iostream>       /// for IO operations
 
+/**
+ * @namespace longest_substr_length
+ * @brief Functions for the Length of longest substring (without
+ * repeating characters) algorithm implementation
+ */
 namespace longest_substr_length {
 
     /**
