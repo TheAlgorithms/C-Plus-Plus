@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Length of longest substring (without repeating characters)
+ * @brief Length of longest substring without repeating characters (https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
  * @author [Katherine Hartley](https://github.com/krhartley)
  * @date 01-23-2022
  */
