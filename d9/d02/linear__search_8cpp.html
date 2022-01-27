@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('d9/d02/linear__search_8cpp.html','../.
 <p><a href="https://en.wikipedia.org/wiki/Linear_search" target="_blank">Linear search algorithm</a>  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for linear_search.cpp:</div>
 <div class="dyncontent">
@@ -109,12 +110,20 @@ Include dependency graph for linear_search.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a84ac3988a534eb60ca351ed6caf56d84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a> (int *array, int size, int key)</td></tr>
+<tr class="memdesc:a84ac3988a534eb60ca351ed6caf56d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert  <a href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">More...</a><br /></td></tr>
 <tr class="separator:a84ac3988a534eb60ca351ed6caf56d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
+<tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">More...</a><br /></td></tr>
+<tr class="separator:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d02/linear__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="../../d9/d02/linear__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a href="https://en.wikipedia.org/wiki/Linear_search" target="_blank">Linear search algorithm</a> </p>
+<dl class="section author"><dt>Author</dt><dd>Unknown author </dd>
+<dd>
+<a href="https://github.com/ritikaa17" target="_blank">Ritika Mukherjee</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a84ac3988a534eb60ca351ed6caf56d84" name="a84ac3988a534eb60ca351ed6caf56d84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84ac3988a534eb60ca351ed6caf56d84">&#9670;&nbsp;</a></span>LinearSearch()</h2>
@@ -147,7 +156,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Algorithm implementation </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>for assert </p>
+<p >for IO operations</p>
+<p >[Algorithm implementation for linear search] </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>array to search in </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>length of array </td></tr>
@@ -158,15 +170,17 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>index where the key-value occurs in the array </dd>
 <dd>
 -1 if key-value not found </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (array[i] == key) {</div>
-<div class="line"><span class="lineno">   19</span>            <span class="keywordflow">return</span> i;</div>
-<div class="line"><span class="lineno">   20</span>        }</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) </div>
+<div class="line"><span class="lineno">   24</span>    {</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">if</span> (array[i] == key) {</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">/* We reach here only in case element is not present in array, return an invalid entry in that case*/</span></div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   32</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -185,37 +199,110 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>           {</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">int</span> size;</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the size of the Array : &quot;</span>;</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">int</span> *array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> key;</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// Input array</span></div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the Array of &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; numbers : &quot;</span>;</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><span class="lineno">   38</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; array[i];</div>
-<div class="line"><span class="lineno">   39</span>    }</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number to be searched : &quot;</span>;</div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">int</span> index = <a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, key);</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (index != -1) {</div>
-<div class="line"><span class="lineno">   46</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nNumber found at index : &quot;</span> &lt;&lt; index;</div>
-<div class="line"><span class="lineno">   47</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   48</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nNot found&quot;</span>;</div>
-<div class="line"><span class="lineno">   49</span>    }</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="keyword">delete</span>[] array;</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   53</span>}</div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>           {</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">int</span> mode = 0;</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Choose mode\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Self-test mode (1), interactive mode (2): &quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; mode;</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (mode == 2) {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordtype">int</span> size = 0;</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the size of the array: &quot;</span>;</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">while</span> ((size &lt;= 1) || (size &gt;= 30)) {</div>
+<div class="line"><span class="lineno">   80</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Size cannot be less than zero. Please choose another value: &quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordtype">int</span> *array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordtype">int</span> key = 0;</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>        <span class="comment">// Input for the array elements</span></div>
+<div class="line"><span class="lineno">   88</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the array of &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; numbers: &quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">   90</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; array[i];</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number to be searched: &quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; key;</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordtype">int</span> index = <a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, key);</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">if</span> (index != -1)</div>
+<div class="line"><span class="lineno">   98</span>        {</div>
+<div class="line"><span class="lineno">   99</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number found at index: &quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>        } </div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  102</span>        {</div>
+<div class="line"><span class="lineno">  103</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Array element not found&quot;</span>;</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keyword">delete</span>[] array;</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  111</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="alinear__search_8cpp_html_a84ac3988a534eb60ca351ed6caf56d84"><div class="ttname"><a href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a></div><div class="ttdeci">int LinearSearch(int *array, int size, int key)</div><div class="ttdef"><b>Definition:</b> linear_search.cpp:16</div></div>
+<div class="ttc" id="alinear__search_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="../../d9/d02/linear__search_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> linear_search.cpp:38</div></div>
+<div class="ttc" id="alinear__search_8cpp_html_a84ac3988a534eb60ca351ed6caf56d84"><div class="ttname"><a href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a></div><div class="ttdeci">int LinearSearch(int *array, int size, int key)</div><div class="ttdoc">for assert</div><div class="ttdef"><b>Definition:</b> linear_search.cpp:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">&#9670;&nbsp;</a></span>tests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                    {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> size = 4;</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> *array = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">   42</span>        array[i] = i;</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 0) == 0);</div>
+<div class="line"><span class="lineno">   46</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 1) == 1);</div>
+<div class="line"><span class="lineno">   47</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 2) == 2);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    size = 6;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">   51</span>        array[i] = i;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 3) == 3);</div>
+<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 1) == 1);</div>
+<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="../../d9/d02/linear__search_8cpp.html#a84ac3988a534eb60ca351ed6caf56d84">LinearSearch</a>(array, size, 5) == 5);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keyword">delete</span>[] array; <span class="comment">// free memory up</span></div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
