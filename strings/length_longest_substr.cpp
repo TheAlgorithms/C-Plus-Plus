@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Length of longest substring (without repeating characters)
- * @author [Katherine Hartley] (https://github.com/krhartley)
+ * @author [Katherine Hartley](https://github.com/krhartley)
  * @date 01-23-2022
  */
 
