@@ -50,7 +50,7 @@ int binary_exponentiation(int base, int exponent) {
 }  // namespace divide_and_conquer
 
 /**
- * @brief Function to test binary_exponentiation
+ * @brief Self-test implementations
  * @returns void
  */
 static void test() {
