@@ -22,9 +22,9 @@ int brute_force(const std::string &text, const std::string &pattern) {
     size_t pattern_length = pattern.length();
     size_t text_length    = text.length();
     int index = -1;
-    if (pat_l <= txt_l) {
-        for (size_t i = 0; i < txt_l - pat_l + 1; i++) {
-            std::string s = text.substr(i, pat_l);
+    if (pattern_length <= txt_l) {
+        for (size_t i = 0; i < txt_l - pattern_length + 1; i++) {
+            std::string s = text.substr(i, pattern_length);
             if (s == pattern) {
                 index = i;
                 break;
