@@ -13,14 +13,18 @@
 #include <iostream>
 #include <queue>
 #include <stack>
-using namespace std;
+using std::cout;
+using std::endl;
+using std::queue;
+using std::stack;
+
 
 
 template <typename T>
-void printQueue(queue<T>& queue){
-    while (!_queue.empty()){
-        cout << _queue.front()<< " ";
-        _queue.pop();
+void printQueue(queue<T>& q){
+    while (!q.empty()){
+        cout << q.front()<< " ";
+        q.pop();
     }
     cout << endl;
 }
