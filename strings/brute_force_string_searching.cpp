@@ -15,7 +15,7 @@ namespace string_search {
  * Find a pattern in a string by comparing the pattern to every substring.
  * @param text     Any string that might contain the pattern.
  * @param pattern  String that we are searching for.
- * @return         Index where the pattern starts in the text
+ * @return         i - Index where the pattern starts in the text
  * @return         -1 if the pattern was not found.
  */
 int brute_force(const std::string &text, const std::string &pattern) {
