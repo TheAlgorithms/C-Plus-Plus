@@ -24,10 +24,7 @@ int brute_force(const std::string &text, const std::string &pattern) {
 
     if (pattern_length <= text_length) {
         for (size_t i = 0; i < text_length - pattern_length + 1; ++i) {
-            std::string s = text.substr(i, pattern_length);
-            if (s == pattern) {
-                return i;
-            }
+            if (text.substr(i, pattern_length) == pattern) return i;
         }
     }
     return -1;
