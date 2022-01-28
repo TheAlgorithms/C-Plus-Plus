@@ -21,7 +21,7 @@ namespace string_search {
 int brute_force(const std::string &text, const std::string &pattern) {
     size_t pattern_length = pattern.length();
     size_t text_length    = text.length();
-    int index = -1;
+
     if (pattern_length <= text_length) {
         for (size_t i = 0; i < text_length - pattern_length + 1; i++) {
             std::string s = text.substr(i, pattern_length);
