@@ -84,7 +84,6 @@ static void test() {
  */
 int main()
 {
-    // Test algorithm
-    test();
+    test();  // run self-test implementations
     return 0;
 }
