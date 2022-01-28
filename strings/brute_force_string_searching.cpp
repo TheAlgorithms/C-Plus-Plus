@@ -20,7 +20,7 @@ namespace string_search {
  */
 int brute_force(const std::string &text, const std::string &pattern) {
     size_t pattern_length = pattern.length();
-    size_t txt_l = text.length();
+    size_t text_length    = text.length();
     int index = -1;
     if (pat_l <= txt_l) {
         for (size_t i = 0; i < txt_l - pat_l + 1; i++) {
