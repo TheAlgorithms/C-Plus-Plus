@@ -287,6 +287,7 @@
   * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/stairs_pattern.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tower_of_hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
+  * [Connect Four Game](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/connect_four_game.cpp)
 
 ## Probability
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
