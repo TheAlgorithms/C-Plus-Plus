@@ -9,8 +9,8 @@
  * @author [Mason Green](https://github.com/masongreen30)
  */
 
-#include <cassert>
-#include <iostream>
+#include <cassert>    /// for assert
+#include <iostream>   /// for IO operations
 
 /**
  * @namespace divide_and_conquer
