@@ -23,7 +23,7 @@ namespace operations_on_datastructures {
  * @param A reference to the queue.
  * @returns void.
  */
-void print(std::queue<int> q) {
+void print(const std::queue<int> q) {
     for (int i = 0; i < q.size(); i++) {
         std::cout << q.front();
         q.pop();
@@ -36,7 +36,7 @@ void print(std::queue<int> q) {
  * @param A reference to the queue to be reversed.
  * @returns The reversed queue.
  */
-std::queue<int> reverse(std::queue<int>& q) {
+std::queue<int> reverse(const std::queue<int>& q) {
     std::queue<int> reversed;
     std::stack<int> stk;
     while (!q.empty()) {
