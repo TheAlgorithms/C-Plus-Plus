@@ -19,7 +19,7 @@ namespace string_search {
  * @return         -1 if the pattern was not found.
  */
 int brute_force(const std::string &text, const std::string &pattern) {
-    size_t pat_l = pattern.length();
+    size_t pattern_length = pattern.length();
     size_t txt_l = text.length();
     int index = -1;
     if (pat_l <= txt_l) {
