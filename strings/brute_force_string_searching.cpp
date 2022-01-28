@@ -27,7 +27,6 @@ int brute_force(const std::string &text, const std::string &pattern) {
             std::string s = text.substr(i, pattern_length);
             if (s == pattern) {
                 return i;
-                break;
             }
         }
     }
