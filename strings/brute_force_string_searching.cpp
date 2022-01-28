@@ -31,7 +31,7 @@ int brute_force(const std::string &text, const std::string &pattern) {
             }
         }
     }
-    return index;
+    return -1;
 }
 }  // namespace string_search
 
