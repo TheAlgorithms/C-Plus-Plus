@@ -12,8 +12,8 @@
 *
 * @author [Arunabh Bhattacharya](https://github.com/arunabh-cloud)
 */
-#include <iostream>   //for input/output
-#include <array>    //for game board
+#include <iostream>   /// for IO operations
+#include <array>     /// for std::array
 
 using std::cout;
 using std::cin;
