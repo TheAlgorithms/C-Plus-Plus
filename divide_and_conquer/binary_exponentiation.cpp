@@ -19,7 +19,7 @@
 namespace divide_and_conquer {
 /**
  * @namespace karatsuba_algorithm
- * @brief Function for Binary Exponentiation
+ * @brief Function for the [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html) algorithm implementation
  */
 namespace binary_exponentiation {
 /**
