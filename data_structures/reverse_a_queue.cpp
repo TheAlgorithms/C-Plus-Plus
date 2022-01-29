@@ -1,17 +1,20 @@
 /**
  * @author [sng125](https://github.com/sng125)
  * @file
- * @brief Implementation of [Reversing a Queue](https://www.geeksforgeeks.org/reversing-a-queue/)
+ * @brief Implementation of [Reversing a
+ * Queue](https://www.geeksforgeeks.org/reversing-a-queue/)
  * @details
- * A queue can be reversed by using a temporary Stack data structure which follows Last In First Out (LIFO).
- * By popping every element of a queue into a stack, the last element inserted will be the first element to
- * leave the stack, and the first element inserted will be the last element to leave the stack.
+ * A queue can be reversed by using a temporary Stack data structure which
+ * follows Last In First Out (LIFO). By popping every element of a queue into a
+ * stack, the last element inserted will be the first element to leave the
+ * stack, and the first element inserted will be the last element to leave the
+ * stack.
  */
 
-#include <iostream> // for IO operations
-#include <cassert> // for asserting during testing
-#include <queue> // for testing stl queue
-#include <stack> // for storing reversed queue
+#include <cassert>   // for asserting during testing
+#include <iostream>  // for IO operations
+#include <queue>     // for testing stl queue
+#include <stack>     // for storing reversed queue
 
 /**
  * @brief Function reverses a queue of integers using a stack data structure
@@ -41,7 +44,7 @@ void test_reverse_queue() {
     int end = 10;
     std::queue<int> q;
     std::cout << "Original queue: ";
-    for (int i=start; i<=end; i++){
+    for (int i = start; i <= end; i++) {
         std::cout << i << " ";
         q.push(i);
     }
@@ -49,7 +52,7 @@ void test_reverse_queue() {
     // Queue values should equal numbers from 'end' to 'start'
     q = reverse_queue(q);
     std::cout << "\nReversed queue: ";
-    for (int i=end; i>=start; i--){
+    for (int i = end; i >= start; i--) {
         assert(q.front() == i);
         std::cout << q.front() << " ";
         q.pop();
