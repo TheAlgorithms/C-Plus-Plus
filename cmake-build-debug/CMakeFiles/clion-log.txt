@@ -1,0 +1,8 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/jaredanthofer/CLionProjects/C-Plus-Plus
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) (Required is at least version "3.0")
+-- Could NOT find OpenMP (missing: OpenMP_CXX_FOUND CXX) (Required is at least version "3.0")
+-- No OpenMP found, no multithreading.
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jaredanthofer/CLionProjects/C-Plus-Plus/cmake-build-debug

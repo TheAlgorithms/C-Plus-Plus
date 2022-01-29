@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/elliptic_curve_key_exchange.dir/elliptic_curve_key_exchange.cpp.o -o elliptic_curve_key_exchange 

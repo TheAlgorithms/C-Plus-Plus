@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jaredanthofer/CLionProjects/C-Plus-Plus/backtracking/graph_coloringg.cpp
+array
+-
+iostream
+-
+vector
+-
+

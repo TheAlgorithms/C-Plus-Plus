@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/max_flow_with_ford_fulkerson_and_edmond_karp_algo.dir/max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp.o -o max_flow_with_ford_fulkerson_and_edmond_karp_algo 

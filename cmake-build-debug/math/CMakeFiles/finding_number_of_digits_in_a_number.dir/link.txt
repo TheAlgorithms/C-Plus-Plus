@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/finding_number_of_digits_in_a_number.dir/finding_number_of_digits_in_a_number.cpp.o -o finding_number_of_digits_in_a_number 
