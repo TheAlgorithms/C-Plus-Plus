@@ -31,7 +31,8 @@ std::queue<int> reverse_queue(std::queue<int> q) {
 }
 
 /**
- * @brief Tests reverse_queue method by comparing original
+ * @brief Tests reverse_queue by comparing with original queue reversed with
+ * for loop
  * @returns void
  */
 void test_reverse_queue() {
