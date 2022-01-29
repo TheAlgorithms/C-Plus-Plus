@@ -62,6 +62,7 @@
   * [Queue Using Two Stacks](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/queue_using_two_stacks.cpp)
   * [Rb Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/rb_tree.cpp)
   * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/reverse_a_linked_list.cpp)
+  * [Reverse A Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/reverse_a_queue.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/sparse_table.cpp)
   * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/stack.h)
@@ -171,6 +172,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
