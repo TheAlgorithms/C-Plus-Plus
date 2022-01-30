@@ -28,25 +28,33 @@ namespace reverse_queue{
  * @brief Utility function to print the queue
  */
     void print(std::queue<int>& Queue) {
-        while (!Queue.empty()) {
-            std::cout << Queue.front() << " ";
+        int n = Queue.size();
+        for (int i = 0; i < n; i++) {
+            int val = Queue.front();
+            std::cout<<val<<" ";
             Queue.pop();
-        }
+            Queue.push(val);
+    }
     }
 /**
  * @brief Utility function to reverse the queue using a stack
+ * A queue is FIFO and a Stack is LIFO
+ * So copying a queue into a stack and the stack back into the queue will reverse the values.
  */
     void reverse_queue(std::queue<int>& Queue){    
         std::stack<int> Stack;
         int n = Queue.size();
 
         for (int i = 0; i < n; i++) {
-            Stack.push(Queue.front());
+            int val = Queue.front();
             Queue.pop();
+            Stack.push(val);
         }
         for (int i = 0; i < n; i++) {
-            Queue.push(Stack.top());
+            int val = Stack.top();
             Stack.pop();
+            Queue.push(val);
+            
         }
     }
 
