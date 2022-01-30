@@ -12,6 +12,7 @@
 #include <iostream>  /// for IO operations
 #include <queue>     /// for queue data structure
 #include <stack>     /// for stack data structure
+#include <chrono>    /// time data
 
 /**
  * @namespace data_strcutres
@@ -37,11 +38,13 @@ namespace reverse_queue{
  */
     void reverse_queue(std::queue<int>& Queue){    
         std::stack<int> Stack;
-        while (!Queue.empty()) {
+        int n = Queue.size();
+
+        for (int i = 0; i < n; i++) {
             Stack.push(Queue.front());
             Queue.pop();
         }
-        while (!Stack.empty()) {
+        for (int i = 0; i < n; i++) {
             Queue.push(Stack.top());
             Stack.pop();
         }
@@ -100,7 +103,13 @@ int main() {
     Queue.push(1);
     Queue.push(2);
     Queue.push(3);
+
+    auto start = std::chrono::high_resolution_clock::now();
     data_structures::reverse_queue::reverse_queue(Queue);
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    std::cout << "Time to execute: "<< duration.count() <<"ms"<<std::endl;
+    std::cout << "Reverse of Queue: ";
     data_structures::reverse_queue::print(Queue);
    
     return 0;
