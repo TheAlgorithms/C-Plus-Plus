@@ -31,7 +31,7 @@ T square_perimeter(T length) {
 }
 
 /**
- * @brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) ( 2(l * w) )
+ * @brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) ( 2(l + w) )
  * @param length is the length of the rectangle
  * @param width is the width of the rectangle
  * @returns perimeter of the rectangle
