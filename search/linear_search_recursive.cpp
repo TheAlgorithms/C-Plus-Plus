@@ -4,6 +4,10 @@
 **/
 
 #include <iostream> //input & output services
+#include <cassert> //
+
+
+
 
 int LinearSearch(int *array, int size, int key){
     //If the last element in the array is the key, this returns its index
@@ -16,8 +20,23 @@ int LinearSearch(int *array, int size, int key){
     }
     return LinearSearch(array, size-1, key); //recursively searches remaining elements
 }
+static void test() {
+    /* tests search on basic arrays */
+    int arrSize = 10;
+    int *arr = new int[arrSize];
+    for(int i = 0; i < arrSize; i++){
+        arr[i] = i;
+    }
+
+    assert(LinearSearch(arr, arrSize, 0) == 0); // this ensures that the algorithm works as expected
+    assert(LinearSearch(arr, arrSize, 5) == 5);
+    assert(LinearSearch(arr, arrSize, 9) == 9);
+    // can have multiple checks
+}
 
 int main(){
+    
+    test();
     //Allows user arrays to be created and searched
     int arrSize = 0;
     std::cout << "Enter the size of array to be searched: ";
