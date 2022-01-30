@@ -11,10 +11,10 @@
  * stack.
  */
 
-#include <cassert>   // for asserting during testing
-#include <iostream>  // for IO operations
-#include <queue>     // for testing stl queue
-#include <stack>     // for storing reversed queue
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+#include <queue>     /// for testing stl queue
+#include <stack>     /// for storing reversed queue
 
 /**
  * @brief Function reverses a queue of integers using a stack data structure
