@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Implementations for the [perimeter](https://en.wikipedia.org/wiki/Perimeter) of
- * various shapes
+ * @brief Implementations for the
+ * [perimeter](https://en.wikipedia.org/wiki/Perimeter) of various shapes
  * @details The  of a shape is the amount of 2D space it takes up.
  * All shapes have a formula to get the perimeter of any given shape.
  * These implementations support multiple return types.
@@ -9,8 +9,8 @@
  * @author [OGscorpion](https://github.com/OGscorpion)
  */
 #define _USE_MATH_DEFINES
-#include <cassert>  /// for assert
-#include <cmath>    /// for M_PI definition and pow()
+#include <cassert>   /// for assert
+#include <cmath>     /// for M_PI definition and pow()
 #include <cstdint>   /// for uint16_t datatype
 #include <iostream>  /// for IO operations
 
@@ -30,7 +30,8 @@ T square_perimeter(T length) {
 }
 
 /**
- * @brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) ( 2(l + w) )
+ * @brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (
+ * 2(l + w) )
  * @param length is the length of the rectangle
  * @param width is the width of the rectangle
  * @returns perimeter of the rectangle
@@ -41,7 +42,8 @@ T rect_perimeter(T length, T width) {
 }
 
 /**
- * @brief perimeter of a [triangle](https://en.wikipedia.org/wiki/Triangle) (a + b + c)
+ * @brief perimeter of a [triangle](https://en.wikipedia.org/wiki/Triangle) (a +
+ * b + c)
  * @param base is the length of the bottom side of the triangle
  * @param height is the length of the tallest point in the triangle
  * @returns perimeter of the triangle
@@ -52,7 +54,8 @@ T triangle_perimeter(T base, T height, T hypotenuse) {
 }
 
 /**
- * @brief perimeter of a [circle](https://en.wikipedia.org/wiki/perimeter_of_a_circle) (2 * pi * r)
+ * @brief perimeter of a
+ * [circle](https://en.wikipedia.org/wiki/perimeter_of_a_circle) (2 * pi * r)
  * @param radius is the radius of the circle
  * @returns perimeter of the circle
  */
@@ -62,19 +65,20 @@ T circle_perimeter(T radius) {
 }
 
 /**
- * @brief perimeter of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
- * 2(b + h)
+ * @brief perimeter of a
+ * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + h)
  * @param base is the length of the bottom side of the parallelogram
  * @param height is the length of the tallest point in the parallelogram
  * @returns perimeter of the parallelogram
  */
 template <typename T>
 T parallelogram_perimeter(T base, T height) {
-    return  2 * (base + height);
+    return 2 * (base + height);
 }
 
 /**
- * @brief surface perimeter of a [cube](https://en.wikipedia.org/wiki/Cube) ( 12 * l)
+ * @brief surface perimeter of a [cube](https://en.wikipedia.org/wiki/Cube) ( 12
+ * * l)
  * @param length is the length of the cube
  * @returns surface perimeter of the cube
  */
@@ -84,7 +88,9 @@ T cube_surface_perimeter(T length) {
 }
 
 /**
- * @brief surface perimeter of a [n-polygon](https://www.cuemath.com/measurement/perimeter-of-polygon/) ( n * l)
+ * @brief surface perimeter of a
+ * [n-polygon](https://www.cuemath.com/measurement/perimeter-of-polygon/) ( n *
+ * l)
  * @param length is the length of the polygon
  * @param sides is the number of sides of the polygon
  * @returns surface perimeter of the polygon
@@ -95,8 +101,8 @@ T n_polygon_surface_perimeter(T sides, T length) {
 }
 
 /**
- * @brief surface perimeter of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
- * (2 * radius + 2 * height)
+ * @brief surface perimeter of a
+ * [cylinder](https://en.wikipedia.org/wiki/Cylinder) (2 * radius + 2 * height)
  * @param radius is the radius of the cylinder
  * @param height is the height of the cylinder
  * @returns surface perimeter of the cylinder
@@ -113,24 +119,24 @@ T cylinder_surface_perimeter(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    uint16_t int_length = 0;    // 16 bit integer length input
-    uint16_t int_width = 0;     // 16 bit integer width input
-    uint16_t int_base = 0;      // 16 bit integer base input
-    uint16_t int_height = 0;    // 16 bit integer height input
+    uint16_t int_length = 0;      // 16 bit integer length input
+    uint16_t int_width = 0;       // 16 bit integer width input
+    uint16_t int_base = 0;        // 16 bit integer base input
+    uint16_t int_height = 0;      // 16 bit integer height input
     uint16_t int_hypotenuse = 0;  // 16 bit integer hypotenuse input
-    uint16_t int_sides = 0;     // 16 bit integer sides input
-    uint16_t int_expected = 0;  // 16 bit integer expected output
-    uint16_t int_perimeter = 0;      // 16 bit integer output
+    uint16_t int_sides = 0;       // 16 bit integer sides input
+    uint16_t int_expected = 0;    // 16 bit integer expected output
+    uint16_t int_perimeter = 0;   // 16 bit integer output
 
-    float float_length = NAN;    // float length input
-    float float_expected = NAN;  // float expected output
-    float float_perimeter = NAN;      // float output
+    float float_length = NAN;     // float length input
+    float float_expected = NAN;   // float expected output
+    float float_perimeter = NAN;  // float output
 
-    double double_length = NAN;    // double length input
-    double double_width = NAN;     // double width input
-    double double_radius = NAN;    // double radius input
-    double double_height = NAN;    // double height input
-    double double_expected = NAN;  // double expected output
+    double double_length = NAN;     // double length input
+    double double_width = NAN;      // double width input
+    double double_radius = NAN;     // double radius input
+    double double_height = NAN;     // double height input
+    double double_expected = NAN;   // double expected output
     double double_perimeter = NAN;  // double output
 
     // 1st test
@@ -190,7 +196,8 @@ static void test() {
     int_height = 3;
     int_hypotenuse = 5;
     int_expected = 18;
-    int_perimeter = math::triangle_perimeter(int_base, int_height, int_hypotenuse);
+    int_perimeter =
+        math::triangle_perimeter(int_base, int_height, int_hypotenuse);
 
     std::cout << "perimeter OF A TRIANGLE" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
@@ -204,7 +211,7 @@ static void test() {
     double_radius = 6;
     double_expected =
         37.69911184307752;  // rounded down because the double datatype
-                             // truncates after 14 decimal places
+                            // truncates after 14 decimal places
     double_perimeter = math::circle_perimeter(double_radius);
 
     std::cout << "perimeter OF A CIRCLE" << std::endl;
@@ -243,7 +250,7 @@ static void test() {
     // 9th test
     int_sides = 7;
     int_length = 10;
-    int_expected = 70; 
+    int_expected = 70;
     int_perimeter = math::n_polygon_surface_perimeter(int_sides, int_length);
 
     std::cout << "SURFACE perimeter OF A N-POLYGON" << std::endl;
@@ -258,7 +265,8 @@ static void test() {
     double_radius = 4.0;
     double_height = 7.0;
     double_expected = 22.0;
-    double_perimeter = math::cylinder_surface_perimeter(double_radius, double_height);
+    double_perimeter =
+        math::cylinder_surface_perimeter(double_radius, double_height);
 
     std::cout << "SURFACE perimeter OF A CYLINDER" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
