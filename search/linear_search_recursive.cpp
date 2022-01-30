@@ -4,11 +4,7 @@
 **/
 
 #include <iostream> //input & output services
-#include <array>
-#include <cassert> //
-
-
-
+#include <cassert> //for assert
 
 int LinearSearch(int *array, int size, int key){
     //If the last element in the array is the key, this returns its index
@@ -21,6 +17,7 @@ int LinearSearch(int *array, int size, int key){
     }
     return LinearSearch(array, size-1, key); //recursively searches remaining elements
 }
+
 static void test() {
     /* tests search on basic arrays */
     int arrSize = 10; 
@@ -78,7 +75,7 @@ int main(){
     std::cout << "What number would you like to search? " << std::endl;
     std::cin >> key;
     int result = LinearSearch(array, arrSize, key);
-    
+
     if(result == -1){
         std::cout << "Element was not found in the given array" << std::endl;
     }
