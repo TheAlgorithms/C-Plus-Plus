@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cll\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sparse_table">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/sparse_table.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 sparse_table"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sparse_table/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/sparse_table.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 sparse_table/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rb_tree">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/rb_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 rb_tree"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rb_tree/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/rb_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 rb_tree/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dsu_path_compression">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/dsu_path_compression.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsu_path_compression"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dsu_path_compression/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/dsu_path_compression.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsu_path_compression/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_tree">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binary_search_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_tree"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_tree/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binary_search_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_tree/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjoint_set">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/disjoint_set.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 disjoint_set"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjoint_set/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/disjoint_set.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 disjoint_set/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binaryheap">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binaryheap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binaryheap"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binaryheap/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binaryheap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binaryheap/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avltree">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/avltree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 avltree"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avltree/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/avltree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 avltree/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_tree2">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binary_search_tree2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_tree2"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_tree2/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/binary_search_tree2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_tree2/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="morrisinorder">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/morrisinorder.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 morrisinorder"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="morrisinorder/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/morrisinorder.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 morrisinorder/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="circular_queue_using_linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/circular_queue_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 circular_queue_using_linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="circular_queue_using_linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/circular_queue_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 circular_queue_using_linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doubly_linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/doubly_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 doubly_linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doubly_linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/doubly_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 doubly_linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_tree">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_tree"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_tree/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_tree/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dsu_union_rank">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/dsu_union_rank.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsu_union_rank"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dsu_union_rank/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/dsu_union_rank.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsu_union_rank/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skip_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/skip_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 skip_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skip_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/skip_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 skip_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linkedlist_implentation_usingarray">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/linkedlist_implentation_usingarray.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkedlist_implentation_usingarray"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linkedlist_implentation_usingarray/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/linkedlist_implentation_usingarray.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 linkedlist_implentation_usingarray/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_array">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/list_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_array"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_array/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/list_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_array/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_linkedlist">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_linkedlist.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_linkedlist"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_linkedlist/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_linkedlist.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_linkedlist/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_array">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_array"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_array/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_array/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/tree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_array2">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_array2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_array2"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_array2/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_array2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_array2/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_two_stacks">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_two_stacks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_two_stacks"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_using_two_stacks/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/queue_using_two_stacks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_using_two_stacks/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reverse_a_linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/reverse_a_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 reverse_a_linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reverse_a_linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/reverse_a_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 reverse_a_linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_array">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_array"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_array/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_array.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_array/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_modern">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_modern.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_modern"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_modern/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_modern.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_modern/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_linked_list">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_linked_list"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_linked_list/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_linked_list.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_linked_list/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_queue">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_queue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_queue"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stack_using_queue/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/stack_using_queue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 stack_using_queue/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_queue">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_queue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_queue"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_queue/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_queue.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_queue/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_stack">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_stack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_stack/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_stack.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_stack_students">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_stack_students.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack_students"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_stack_students/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/test_stack_students.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack_students/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_234">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/tree_234.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_234"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_234/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/tree_234.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_234/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_using_hashmap">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_using_hashmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_using_hashmap"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie_using_hashmap/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/trie_using_hashmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie_using_hashmap/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cll">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/cll.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 cll"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cll/fast">
+				<Option output="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/cll.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 cll/fast"/>
+					<CompileFile command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cmake-build-debug/cll/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/avltree.cpp">
+			<Option target="avltree"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/binary_search_tree.cpp">
+			<Option target="binary_search_tree"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/binary_search_tree2.cpp">
+			<Option target="binary_search_tree2"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/binaryheap.cpp">
+			<Option target="binaryheap"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/circular_queue_using_linked_list.cpp">
+			<Option target="circular_queue_using_linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cll/cll.cpp">
+			<Option target="cll"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cll/cll.h">
+			<Option target="cll"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cll/main_cll.cpp">
+			<Option target="cll"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/disjoint_set.cpp">
+			<Option target="disjoint_set"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/doubly_linked_list.cpp">
+			<Option target="doubly_linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/dsu_path_compression.cpp">
+			<Option target="dsu_path_compression"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/dsu_union_rank.cpp">
+			<Option target="dsu_union_rank"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/linked_list.cpp">
+			<Option target="linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/linkedlist_implentation_usingarray.cpp">
+			<Option target="linkedlist_implentation_usingarray"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/list_array.cpp">
+			<Option target="list_array"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/morrisinorder.cpp">
+			<Option target="morrisinorder"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/queue_using_array.cpp">
+			<Option target="queue_using_array"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/queue_using_array2.cpp">
+			<Option target="queue_using_array2"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/queue_using_linked_list.cpp">
+			<Option target="queue_using_linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/queue_using_linkedlist.cpp">
+			<Option target="queue_using_linkedlist"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/queue_using_two_stacks.cpp">
+			<Option target="queue_using_two_stacks"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/rb_tree.cpp">
+			<Option target="rb_tree"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/reverse_a_linked_list.cpp">
+			<Option target="reverse_a_linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/skip_list.cpp">
+			<Option target="skip_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/sparse_table.cpp">
+			<Option target="sparse_table"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/stack_using_array.cpp">
+			<Option target="stack_using_array"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/stack_using_linked_list.cpp">
+			<Option target="stack_using_linked_list"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/stack_using_queue.cpp">
+			<Option target="stack_using_queue"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/test_queue.cpp">
+			<Option target="test_queue"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/test_stack.cpp">
+			<Option target="test_stack"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/test_stack_students.cpp">
+			<Option target="test_stack_students"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/tree.cpp">
+			<Option target="tree"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/tree_234.cpp">
+			<Option target="tree_234"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/trie_modern.cpp">
+			<Option target="trie_modern"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/trie_tree.cpp">
+			<Option target="trie_tree"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/trie_using_hashmap.cpp">
+			<Option target="trie_using_hashmap"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/yashh/Desktop/C-Plus-Plus/data_structures/cll/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cll\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\circular_queue_using_linked_list.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\circular_queue_using_linked_list.dir/objects.a @CMakeFiles\circular_queue_using_linked_list.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\circular_queue_using_linked_list.dir/objects.a -Wl,--no-whole-archive -o circular_queue_using_linked_list.exe -Wl,--out-implib,libcircular_queue_using_linked_list.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\circular_queue_using_linked_list.dir\linklibs.rsp

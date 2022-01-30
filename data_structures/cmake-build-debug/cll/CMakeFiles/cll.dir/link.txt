@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cll.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\cll.dir/objects.a @CMakeFiles\cll.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\cll.dir/objects.a -Wl,--no-whole-archive -o cll.exe -Wl,--out-implib,libcll.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cll.dir\linklibs.rsp

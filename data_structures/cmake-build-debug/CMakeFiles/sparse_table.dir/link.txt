@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\sparse_table.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\sparse_table.dir/objects.a @CMakeFiles\sparse_table.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\sparse_table.dir/objects.a -Wl,--no-whole-archive -o sparse_table.exe -Wl,--out-implib,libsparse_table.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sparse_table.dir\linklibs.rsp

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\binary_search_tree2.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\binary_search_tree2.dir/objects.a @CMakeFiles\binary_search_tree2.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\binary_search_tree2.dir/objects.a -Wl,--no-whole-archive -o binary_search_tree2.exe -Wl,--out-implib,libbinary_search_tree2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\binary_search_tree2.dir\linklibs.rsp

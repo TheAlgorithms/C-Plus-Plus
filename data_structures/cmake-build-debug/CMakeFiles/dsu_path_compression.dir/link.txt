@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\dsu_path_compression.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\dsu_path_compression.dir/objects.a @CMakeFiles\dsu_path_compression.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\dsu_path_compression.dir/objects.a -Wl,--no-whole-archive -o dsu_path_compression.exe -Wl,--out-implib,libdsu_path_compression.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dsu_path_compression.dir\linklibs.rsp

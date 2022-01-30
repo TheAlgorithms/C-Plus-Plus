@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\linkedlist_implentation_usingarray.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\linkedlist_implentation_usingarray.dir/objects.a @CMakeFiles\linkedlist_implentation_usingarray.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\linkedlist_implentation_usingarray.dir/objects.a -Wl,--no-whole-archive -o linkedlist_implentation_usingarray.exe -Wl,--out-implib,liblinkedlist_implentation_usingarray.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\linkedlist_implentation_usingarray.dir\linklibs.rsp

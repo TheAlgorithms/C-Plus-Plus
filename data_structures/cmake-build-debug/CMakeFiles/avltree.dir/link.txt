@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\avltree.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\avltree.dir/objects.a @CMakeFiles\avltree.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\avltree.dir/objects.a -Wl,--no-whole-archive -o avltree.exe -Wl,--out-implib,libavltree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\avltree.dir\linklibs.rsp

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\disjoint_set.dir/objects.a
+C:\mingw\mingw32\bin\ar.exe cr CMakeFiles\disjoint_set.dir/objects.a @CMakeFiles\disjoint_set.dir\objects1.rsp
+C:\mingw\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\disjoint_set.dir/objects.a -Wl,--no-whole-archive -o disjoint_set.exe -Wl,--out-implib,libdisjoint_set.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\disjoint_set.dir\linklibs.rsp
