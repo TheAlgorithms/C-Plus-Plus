@@ -143,6 +143,11 @@ int main()
 
     //it seems that since the penalty is so much higher than the weight, the best common substring is usually
     //just the first letter they have in common becuase any mismatch after that destroys 10 letters.
+    cout << "*********************************************************************************************************" << endl;
+    cout << "Each of the following tests will be completed using randomly generated strings of length 1 - 250."
+    << " The weights of the HCS for each of those strings will be tracked and averaged for each set of weights" <<
+    " and penalties." << endl;
+    cout << "*********************************************************************************************************" << endl << endl;
 
     cout << "Testing with all weights = 1 and penalty = 10..." << endl;
 
