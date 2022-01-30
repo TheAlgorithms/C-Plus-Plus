@@ -18,7 +18,7 @@
  * @param String s, the given string to find the substring.
  * @returns Return an integer that indicates the size of the longest substring with no repeating characters.
  */
-int lengthOfLongestSubstring(std::string s) {   
+uint8_t lengthOfLongestSubstring(std::string s) {   
     int l = 0, r = 0, res = 0; // initialize left pointer, right pointer, and result
     int arr[256] = {0}; // array to keep track of the quantity of each characters by using char as indices
 
@@ -69,3 +69,4 @@ int main(int argc, char *argv[]) {
     // code here
     return 0;
 }
+
