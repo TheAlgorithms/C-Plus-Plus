@@ -1,6 +1,6 @@
 /**
 * @file
-* @brief [Fibonacci Sequence ](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Extension_to_negative_integers)
+* @brief [Fibonacci Sequence](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Extension_to_negative_integers)
 *
 * @details
 * This program generates both negative and positive fibonacci sequence
