@@ -45,7 +45,7 @@ namespace math {
 
 /**
  * @brief Self-test implementations
- * @returns Frobenius number
+ * @returns void
  */
 static void test() {
     std::cout << "a=3, b=7";
@@ -75,9 +75,11 @@ static void test() {
 
 /**
  * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
 int main(int argc, char* argv[]) {
-    test();
+    test();  // run self-test implementations
     return 0;
 }
