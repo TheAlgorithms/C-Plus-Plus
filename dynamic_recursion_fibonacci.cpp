@@ -21,7 +21,7 @@
  */
 int fibRec(int n) {
     if (n < 0) {
-        return (fibRec(-n)) * (int)pow(-1, abs(n));
+        return (fibRec(-n)) * static_cast<int>(pow(-1, abs(n)));
     }
     else if (n == 0 || n == 1) {
         return n;
@@ -40,7 +40,7 @@ int fibRec(int n) {
  */
 int fibTab(int n) {
     if (n < 0) {
-       return (fibTab(-n)) * (int)pow(-1, abs(n));
+       return (fibTab(-n)) * static_cast<int>(pow(-1, abs(n)));
     }
     else if (n == 0 || n == 1) {
         return n;
