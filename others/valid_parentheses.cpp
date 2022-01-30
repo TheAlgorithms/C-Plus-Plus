@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Stack implementation to check Valid Parentheses in string
- * (https://leetcode.com/problems/valid-parentheses/)
+ * @brief [Stack implementation to check Valid Parentheses in string]
+   (https://leetcode.com/problems/valid-parentheses/)
  *
  * @details
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and
@@ -21,13 +21,14 @@
 
 /**
  * @namespace others
- * @brief other algorithms
+ * @brief Other algorithms
  */
 namespace others {
 
 /**
  * @namespace valid_parentheses
- * @brief Functions for implementation
+ * @brief Functions for the [Check Valid Parentheses in string]
+   (https://leetcode.com/problems/valid-parentheses/)
  *
  */
 namespace valid_parentheses {
@@ -62,12 +63,15 @@ bool is_valid(std::string input) {
             // bracket, string invalid
             else
                 return false;
+
         }
     }
 
     // If there are open parentheses unmatched, string invalid
-    if (!stk.empty())
+    if (!stk.empty()) {
         return false;
+
+    }
 
     return true;
 }
