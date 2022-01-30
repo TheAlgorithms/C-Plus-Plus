@@ -1,4 +1,7 @@
+#include <time.h>
+
 #include <iostream>
+#include <stack>
 using namespace std;
 
 struct node {
@@ -7,6 +10,7 @@ struct node {
 };
 
 node *front, *rear;
+int count;
 
 void Enque(int x) {
     if (rear == NULL) {
@@ -24,14 +28,19 @@ void Enque(int x) {
         rear->next = n;
         rear = n;
     }
+
+    count++;
 }
 
-void Deque() {
+void Deque(bool print) {
     if (rear == NULL && front == NULL) {
         cout << "\nUnderflow";
     } else {
+        count--;
         node *t = front;
-        cout << "\n" << t->val << " deleted";
+        if (print) {
+            cout << "\n" << t->val << " deleted";
+        }
         front = front->next;
         delete t;
         if (front == NULL)
@@ -47,12 +56,42 @@ void show() {
     }
 }
 
+static void Reverse1() {
+    stack<int> s;
+    while (count != 0) {
+        int x = front->val;
+        s.push(x);
+        Deque(false);
+    }
+    while (!s.empty()) {
+        int x = s.top();
+        Enque(x);
+        s.pop();
+    }
+}
+
+static void Reverse2() {
+    if (count == 0) {
+        return;
+    }
+
+    int x = front->val;
+    Deque(false);
+
+    Reverse2();
+
+    Enque(x);
+}
+
 int main() {
     int ch, x;
+    clock_t t;
     do {
         cout << "\n1. Enque";
         cout << "\n2. Deque";
         cout << "\n3. Print";
+        cout << "\n4. Reverse with stack";
+        cout << "\n5. Reverse with recursion";
         cout << "\nEnter Your Choice : ";
         cin >> ch;
         if (ch == 1) {
@@ -60,10 +99,24 @@ int main() {
             cin >> x;
             Enque(x);
         } else if (ch == 2) {
-            Deque();
+            Deque(true);
+            cout << "\n";
         } else if (ch == 3) {
             show();
+        } else if (ch == 4) {
+            t = clock();
+            Reverse1();
+            t = clock() - t;
+            show();
+            cout << "\nThis took " << t << " units of time.\n";
+        } else if (ch == 5) {
+            t = clock();
+            Reverse2();
+            t = clock() - t;
+            show();
+            cout << "\nThis took " << t << " units of time.\n";
         }
+
     } while (ch != 0);
 
     return 0;
