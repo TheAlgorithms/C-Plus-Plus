@@ -30,6 +30,11 @@ int lengthOfLongestSubstring(std::string s) {
             
             arr[s[l]]--; // decrement the count of each character in the substring
             l++; // move the left pointer up
+
+            if(s.length() - l <= res){  //if the current "window" plus the rest of the string is less than or equal to the longest substring, 
+                                        //there is no need to check the rest.
+                return res;
+            }
         }
 
         res = std::max(res, r - l + 1); // compare the current substring length with the new substring length
