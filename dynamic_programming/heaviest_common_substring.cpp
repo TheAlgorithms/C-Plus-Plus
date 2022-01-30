@@ -10,8 +10,12 @@
 
 using namespace std;
 
-//pulled from: https://stackoverflow.com/questions/440133/how-do-i-create-a-random-alpha-numeric-string-in-c
-//generate a random string of a certain length
+//! Function to randomly generate strings of a given length
+/*!
+    Takes in an integer and generates a random string of that length. The set of 
+    characters is all 26 capitals from the English alphabet. This code was pulled from
+    https://stackoverflow.com/questions/440133/how-do-i-create-a-random-alpha-numeric-string-in-c.
+*/
 string gen_random(const int len)
 {
     static const char alphanum[] =
@@ -27,6 +31,11 @@ string gen_random(const int len)
     return tmp_s;
 }
 
+//! This is the algorithm for Heaviest Common Substring
+/*!
+    Takes in a penalty value, two strings, and a map of weights for the characters.
+    Returns a pair<string, double> with the HCS and its associated weight.
+*/
 pair<string, double> HCS(double penalty, string first, string second,
                          unordered_map<char, double> weights)
 {
@@ -72,10 +81,14 @@ pair<string, double> HCS(double penalty, string first, string second,
     return hcs;
 }
 
+//! This function establishes the weights for the set of characters.
+/*!
+    Uses all 26 capital letters from English. Takes in a reference to a hash table for the weights.
+    Actual frequency data is based upon the frequency of the letters in english, and is pulled from:
+    https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html 
+*/
 void getFreqencies(unordered_map<char, double> &weights)
 {
-    //frequencies pulled from https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html
-    //based off the frequencies of letters in the english language
     weights['E'] = 11.1607;
     weights['A'] = 8.4966;
     weights['R'] = 7.5809;
@@ -104,6 +117,7 @@ void getFreqencies(unordered_map<char, double> &weights)
     weights['Q'] = 0.1962;
 }
 
+//! Returns the average weight of a vector of weights. Fairly simple.
 double average(vector<double> weights)
 {
     double total = 0;
@@ -117,6 +131,7 @@ double average(vector<double> weights)
 int main()
 {
     srand (static_cast <unsigned> (time(0)));
+    //! hash table for the character weights
     unordered_map<char, double> weights;
     vector<pair<int, double>> times;
     vector<double> for_averages;
