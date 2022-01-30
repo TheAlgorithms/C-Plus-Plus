@@ -2,9 +2,6 @@
  * @file
  * @brief algorithm for faster exponentiation
  * @details
- * This is a multi-line
- * description containing links, references,
- * math equations, etc.
  * @author [Sarah Foster](https://github.com/fostersarah)
  * @see related_file.cpp, another_file.cpp
  */
@@ -28,19 +25,17 @@ namespace binary_exponentiation {
 /**
  *@brief Helper function for the main function, that implements Binary
  * exponentiation for efficient exponent calculations
- * @param first the input integer base
- * @param second the input integer exponent
+ * @param first the input, base
+ * @param second the input, exponent
  * @returns the answer to the exponentiation
  */
-
-// put the functions that carries out the operation here
 
 long binary_exponentiation(long base, long power) {
     string binary = bitset<64>(power).to_string();
     long multiplier = base;
     long answer = 1;
 
-    if (base == 0) {
+    if (base == 0 && power > 0) {
         return 0;
     }
 
@@ -55,14 +50,13 @@ long binary_exponentiation(long base, long power) {
 /**
  * @brief Function documentation
  * @tparam T this is a one-line info about T
- * @param param1 on-line info about param1
- * @param param2 on-line info about param2
- * @returns `true` if ...
- * @returns `false` if ...
+ * @param param1 is the base
+ * @param param2 is the exponent
+ * @returns `true` if binary exponentiation correctly calculates the exponent
+ * @returns `false` if the wrong answer is outputted
  */
 
 bool func(long param1, long param2) {
-    // function statements here
     long test = binary_exponentiation::binary_exponentiation(param1, param2);
     long answer = pow(param1, param2);
     if (test != answer) {
@@ -78,11 +72,17 @@ bool func(long param1, long param2) {
  * @returns void
  */
 static void test() {
-    /* descriptions of the following test */
+    // tests edge cases and regular cases of exponent calculations
     assert(divide_and_conquer::binary_exponentiation::func(2, 5) ==
            true);  // this ensures that the algorithm works as expected
     assert(divide_and_conquer::binary_exponentiation::func(5, 0) == true);
     assert(divide_and_conquer::binary_exponentiation::func(0, 5) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(0, 0) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(10, 10) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(1, 0) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(0, 1) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(3, 9) == true);
+    assert(divide_and_conquer::binary_exponentiation::func(2, 14) == true);
 
     // can have multiple checks
 }
