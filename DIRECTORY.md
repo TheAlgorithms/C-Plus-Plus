@@ -171,6 +171,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
@@ -286,6 +287,7 @@
   * [Spiral Print](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/spiral_print.cpp)
   * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/stairs_pattern.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tower_of_hanoi.cpp)
+  * [Tree Level Count](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tree_level_count.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
 
 ## Probability
