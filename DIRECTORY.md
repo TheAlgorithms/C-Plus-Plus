@@ -171,6 +171,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
@@ -257,6 +258,7 @@
   * [Get Size Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/get_size_of_linked_list.cpp)
   * [Inorder Successor Of Bst](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/inorder_successor_of_bst.cpp)
   * [Intersection Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/intersection_of_two_arrays.cpp)
+  * [Middle Element Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/middle_element_doubly_linked_list.cpp)
   * [Reverse A Linked List Using Recusion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_a_linked_list_using_recusion.cpp)
   * [Reverse Binary Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/reverse_binary_tree.cpp)
   * [Selectionsortlinkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/selectionsortlinkedlist.cpp)
