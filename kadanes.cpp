@@ -26,7 +26,7 @@ namespace math {
  * @return largest possible subarray sum
  */
 
- int Kadanes(std::vector<int> &arr)
+ int Kadanes(std::vector<int> arr)
 {
 
   //  maxTemp is used to find every positive continuous segment 
@@ -37,11 +37,15 @@ namespace math {
     for (int i = 0; i < s; i++)
     {
         maxTemp+= arr[i]; //add each element in the array each iteration to check every subarrays sum (maxTemp)
-        if(maxSum < maxTemp) 
-          maxSum=maxTemp; //maxSum ends up as the biggest subarray sum
+        if(maxSum < maxTemp) {
+maxSum=maxTemp; //maxSum ends up as the biggest subarray sum
+        }
+          
         
-        if(maxTemp<0) 
+        if(maxTemp<0) {
           maxTemp=0; //if the segment's sum is ever negative, set it to 0 because the biggest subarray sum will never be a negative number
+        } 
+         
         
 }
  return maxSum;
@@ -52,12 +56,14 @@ namespace math {
  * @param vector to print
  * @return void
  */
-void printVect(std::vector<int> &v)
+void printVect(std::vector<int> v)
 {
   int s= v.size();
-  for (int i=0; i < s; i++)
-    std::cout << v[i] << " ";
+  for (int i=0; i < s; i++) {
+     std::cout << v[i] << " ";
     std::cout << std::endl;
+  }
+    
 }
  
 /**
@@ -73,22 +79,20 @@ void printVect(std::vector<int> &v)
     printVect(vect);
     int max = math::Kadanes(vect);
    std:: cout << "The maximum contiguous sum is " << max<<std::endl;
-     int arr1[] = {-2,-4,2,-1,6,-3};
-      int size2 = sizeof(arr1)/sizeof(arr1[0]);
+     
     std::cout<< "Array example 2 is: \n"; 
     printVect(vect2);
     int max2 = math::Kadanes(vect2);
     std::cout << "The maximum contiguous sum is "<< max2<<std::endl;
-    int arr2[] = {-6,3,-4,8,-2,-3,5,-9};
-      int size3 = sizeof(arr2)/sizeof(arr2[0]);
+ 
     std::cout<< "Array example 3 is: \n"; 
     printVect(vect3);
     int max3 = math::Kadanes(vect3);
     std::cout << "The maximum contiguous sum is " << max3<<std::endl;
  }
- 
+
 int main()
 {
-  test(); 
+  test();
     return 0;
 }
