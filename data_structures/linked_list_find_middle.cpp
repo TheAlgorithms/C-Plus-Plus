@@ -1,12 +1,11 @@
 /**
  * @file
  * @brief A linked list implementation using nodes to find the middle element
- * @warning This program does not use a sort function to order the linked list, order is based on original data entry
+ * @warning This program does not use a sort function to order the linked list, order is based on original data entry, unsigned 32 bit int
  */
 
-#include <iostream>
-#include <cassert>
-#include <array>
+#include <iostream> ///for IO operations
+#include <cassert>  ///for assert
 
 /**
 * @brief Structure for Node
@@ -23,7 +22,7 @@ struct Node
 * @param valueIn is the value of the node to be added
 * @returns void
 */
-void addNode(struct Node** head, int valueIn)
+void addNode(struct Node** head, uint32_t valueIn)
 {
     
     struct Node* ptr = new Node; /*< Create new Node to store in linked list */
@@ -63,7 +62,7 @@ int midPoint(struct Node** head)
         fastptr = fastptr->next->next;
     }
     //store value of middle node and return the integer value
-    int ans = slowptr->val;
+    uint32_t ans = slowptr->val;
     return ans;
 }
 
@@ -73,10 +72,10 @@ int midPoint(struct Node** head)
 * @param numNodes number of nodes in linked list
 * @returns void, prints out linked list
 */
-void printArr(int *n, int numNodes)
+void printArr(uint32_t *n, uint32_t numNodes)
 {
     //takes the array from the main function per user specification
-    int sizeOfArr = numNodes;
+    uint32_t sizeOfArr = numNodes;
     //prints until the last element of the array has been reached
     for(int i = 0; i < sizeOfArr; i++)
     {
@@ -99,7 +98,7 @@ static void test1()
     addNode(&front, 3);
     addNode(&front, 4);
     addNode(&front, 5);
-    int middle = midPoint(&front);
+    uint32_t middle = midPoint(&front);
     assert (middle == 3);   //ensures Tortoise and Hare algorithm finds the middle element
 }
 
@@ -114,7 +113,7 @@ static void test2()
     addNode(&front, 2);
     addNode(&front, 3);
     addNode(&front, 4);
-    int middle = midPoint(&front);
+    uint32_t middle = midPoint(&front);
     assert (middle == 3);   //ensures Tortoise and Hare algorithm selects second element in pair of middle elements
 }
 
@@ -130,8 +129,9 @@ int main()
     std::cout<< "How many nodes would you like to insert into the Linked List?" << std::endl;
     int numNodes;
     std::cin>> numNodes;
-    int *n = new int[numNodes];
+    uint32_t *n = new uint32_t[numNodes];
     std::cout<< "Enter the node values (press 'Enter' after each value): " << std::endl;
+    std::cout<< "*Values must be unsigned integers (32-bit limit)*" << std::endl;
 
     for(int i = 0; i < numNodes; i++)
     {
@@ -142,7 +142,7 @@ int main()
     printArr(n, numNodes);
     //destroys dynamically allocated array
     delete[] n;
-    int midElement = midPoint(&head);
+    uint32_t midElement = midPoint(&head);
     std::cout<<std::endl;
     std::cout<< "The value of the middle element is: " << midElement << std::endl;
     return 0;
