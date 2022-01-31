@@ -58,6 +58,7 @@ bool horspool(const std::string &text, const std::string &prototype) {
         int j = i, k = 0;
         bool flag = true;
 
+        // Return 'true', if the returned substring is equal to prototype.
         if (text.substr(j - prototype.size() + 1, prototype.size()) == prototype) return true;
         else {
             if (shiftTable.contains(text[i])) {
