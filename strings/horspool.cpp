@@ -24,7 +24,7 @@ namespace horspool {
  * @return Shift Table of Horspool's algorithm
  */
 std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
-    std::unordered_map<char, size_t> shiftTable;  // A HashMap for shift table that has characters for keys and integers for values
+    std::unordered_map<char, size_t> shiftTable;  // A HashMap for shift table that has characters for keys and unsigned integers for values
 
     for (size_t i = 0, last_index = prototype.size() - 1; i < last_index + 1; ++i) {  // Checking all characters of prototype string
         if (shiftTable.count(prototype[i])) {
@@ -32,10 +32,9 @@ std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
                 shiftTable[prototype[i]] = last_index - i;
             }
         } else {
-            shiftTable.emplace(prototype[i], i != last_index ? last_index - i : last_index + 1);  // Insert the current character as key,
-                                                                                    // if 'i' is the index of the last character, insert the
-                                                                                    // size of prototype string - i - 1 as value,
-                                                                                    // size of prototype string otherwise.
+            // Insert the current character as key. Insert the size of prototype string - i - 1 as value if 'i'
+            // is the index of the last character, size of prototype string, otherwise.
+            shiftTable.emplace(prototype[i], i != last_index ? last_index - i : last_index + 1);
         }
     }
     return shiftTable;
