@@ -18,7 +18,7 @@
 namespace operations_on_datastructures {
 
 /**
-* @namespace LinkedList
+* @namespace linked_list
 * @brief Functions for the doubly-linked list implementation
 */
 namespace linked_list {
