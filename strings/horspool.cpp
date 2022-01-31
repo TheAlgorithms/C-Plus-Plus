@@ -36,7 +36,7 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
                     prototype[i], prototype.size() - i -
                                       1);  // Insert the character as key and the size of prototype string - index of character - 1 as value
             } else {
-                shiftTable.insert(std::make_pair(
+                shiftTable.emplace(std::make_pair(
                     prototype[i],
                     prototype.size()));  // Insert the character as key and the size of prototype string as value
             }
