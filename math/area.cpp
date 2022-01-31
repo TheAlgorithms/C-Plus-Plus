@@ -25,10 +25,10 @@ namespace math {
  * @param length is the length of the square
  * @returns area of square
  */
-template <typename T>
-T square_area(T length) {
-    return length * length;
-}
+    template <typename T>
+    T square_area(T length) {
+        return length * length;
+    }
 
 /**
  * @brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
@@ -36,10 +36,10 @@ T square_area(T length) {
  * @param width is the width of the rectangle
  * @returns area of the rectangle
  */
-template <typename T>
-T rect_area(T length, T width) {
-    return length * width;
-}
+    template <typename T>
+    T rect_area(T length, T width) {
+        return length * width;
+    }
 
 /**
  * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
@@ -48,21 +48,34 @@ T rect_area(T length, T width) {
  * @param height is the length of the tallest point in the triangle
  * @returns area of the triangle
  */
-template <typename T>
-T triangle_area(T base, T height) {
-    return base * height / 2;
-}
+    template <typename T>
+    T triangle_area(T base, T height) {
+        return base * height / 2;
+    }
 
+/**
+ * @brief area of a [triangle] (https://en.wikipedia.org/wiki/Triangle) (sqrt(s
+ * * (s - a) * (s - b) * (s - c))
+ * @param a is the length of side a
+ * @param b is the length of side b
+ * @param c is the length of side c
+ * @returns are of the triangle
+ */
+    template<typename T>
+    T triangle_area(T a, T b, T c){
+        T s = (a + b + c) / 2;
+        return sqrt(s * (s - a) * (s - b) * (s - c));
+    }
 /**
  * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
  * * r^2)
  * @param radius is the radius of the circle
  * @returns area of the circle
  */
-template <typename T>
-T circle_area(T radius) {
-    return M_PI * pow(radius, 2);
-}
+    template <typename T>
+    T circle_area(T radius) {
+        return M_PI * pow(radius, 2);
+    }
 
 /**
  * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
@@ -71,10 +84,10 @@ T circle_area(T radius) {
  * @param height is the length of the tallest point in the parallelogram
  * @returns area of the parallelogram
  */
-template <typename T>
-T parallelogram_area(T base, T height) {
-    return base * height;
-}
+    template <typename T>
+    T parallelogram_area(T base, T height) {
+        return base * height;
+    }
 
 /**
  * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
@@ -82,10 +95,10 @@ T parallelogram_area(T base, T height) {
  * @param length is the length of the cube
  * @returns surface area of the cube
  */
-template <typename T>
-T cube_surface_area(T length) {
-    return 6 * length * length;
-}
+    template <typename T>
+    T cube_surface_area(T length) {
+        return 6 * length * length;
+    }
 
 /**
  * @brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
@@ -93,10 +106,10 @@ T cube_surface_area(T length) {
  * @param radius is the radius of the sphere
  * @returns surface area of the sphere
  */
-template <typename T>
-T sphere_surface_area(T radius) {
-    return 4 * M_PI * pow(radius, 2);
-}
+    template <typename T>
+    T sphere_surface_area(T radius) {
+        return 4 * M_PI * pow(radius, 2);
+    }
 
 /**
  * @brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
@@ -105,10 +118,10 @@ T sphere_surface_area(T radius) {
  * @param height is the height of the cylinder
  * @returns surface area of the cylinder
  */
-template <typename T>
-T cylinder_surface_area(T radius, T height) {
-    return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
-}
+    template <typename T>
+    T cylinder_surface_area(T radius, T height) {
+        return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+    }
 }  // namespace math
 
 /**
@@ -134,6 +147,9 @@ static void test() {
     double double_height = NAN;    // double height input
     double double_expected = NAN;  // double expected output
     double double_area = NAN;      // double output
+    double double_side_a = NAN;    // double side a input
+    double double_side_b = NAN;    // double side b input
+    double double_side_c = NAN;    // double side c input
 
     // 1st test
     int_length = 5;
@@ -193,7 +209,7 @@ static void test() {
     int_expected = 15;
     int_area = math::triangle_area(int_base, int_height);
 
-    std::cout << "AREA OF A TRIANGLE" << std::endl;
+    std::cout << "AREA OF A TRIANGLE (base and height)" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
     std::cout << "Input Height: " << int_height << std::endl;
     std::cout << "Expected Output: " << int_expected << std::endl;
@@ -202,10 +218,26 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 6th test
+    double_side_a = 3;
+    double_side_b = 4;
+    double_side_c = 5;
+    double_expected = 6;
+    double_area = math::triangle_area(double_side_a,double_side_b,double_side_c);
+
+    std::cout << "AREA OF A TRIANGLE (sides)" << std::endl;
+    std::cout << "Input Side A " << double_side_a << std::endl;
+    std::cout << "Input Side B " << double_side_b << std::endl;
+    std::cout << "Input Side C " << double_side_c << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_area << std::endl;
+    assert(double_area == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 7th test
     double_radius = 6;
     double_expected =
-        113.09733552923255;  // rounded down because the double datatype
-                             // truncates after 14 decimal places
+            113.09733552923255;  // rounded down because the double datatype
+    // truncates after 14 decimal places
     double_area = math::circle_area(double_radius);
 
     std::cout << "AREA OF A CIRCLE" << std::endl;
@@ -215,7 +247,7 @@ static void test() {
     assert(double_area == double_expected);
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
-    // 7th test
+    // 8th test
     int_base = 6;
     int_height = 7;
     int_expected = 42;
@@ -229,7 +261,7 @@ static void test() {
     assert(int_area == int_expected);
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
-    // 8th test
+    // 9th test
     double_length = 5.5;
     double_expected = 181.5;
     double_area = math::cube_surface_area(double_length);
@@ -241,10 +273,10 @@ static void test() {
     assert(double_area == double_expected);
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
-    // 9th test
+    // 10th test
     double_radius = 10.0;
     double_expected = 1256.6370614359172;  // rounded down because the whole
-                                           // value gets truncated
+    // value gets truncated
     double_area = math::sphere_surface_area(double_radius);
 
     std::cout << "SURFACE AREA OF A SPHERE" << std::endl;
@@ -254,7 +286,7 @@ static void test() {
     assert(double_area == double_expected);
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
-    // 10th test
+    // 11th test
     double_radius = 4.0;
     double_height = 7.0;
     double_expected = 276.46015351590177;

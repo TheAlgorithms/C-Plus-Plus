@@ -34,71 +34,87 @@ namespace data_structures {
  * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
  * implementation.
  */
-namespace queue_using_array {
+    namespace queue_using_array {
 
 /**
  * @brief Queue_Array class containing the main data and also index of head and
  * tail of the array.
  */
-class Queue_Array {
- public:
-    void enqueue(const int16_t&);  ///< Add element to the first of the queue
-    int dequeue();                 ///< Delete element from back of the queue
-    void display() const;          ///< Show all saved data
- private:
-    int8_t front{-1};                     ///< Index of head of the array
-    int8_t rear{-1};                      ///< Index of tail of the array
-    std::array<int16_t, max_size> arr{};  ///< All stored data
-};
+        class Queue_Array {
+        public:
+            void enqueue(const int16_t&);  ///< Add element to the first of the queue
+            int dequeue();                 ///< Delete element from back of the queue
+            void display() const;          ///< Show all saved data
+            void reverse();                ///< Reverse the entire queue
+        private:
+            int8_t front{-1};                     ///< Index of head of the array
+            int8_t rear{-1};                      ///< Index of tail of the array
+            std::array<int16_t, max_size> arr{};  ///< All stored data
+        };
 
 /**
  * @brief Adds new element to the end of the queue
  * @param ele to be added to the end of the queue
  */
-void Queue_Array::enqueue(const int16_t& ele) {
-    if (rear == arr.size() - 1) {
-        std::cout << "\nStack is full";
-    } else if (front == -1 && rear == -1) {
-        front = 0;
-        rear = 0;
-        arr[rear] = ele;
-    } else if (rear < arr.size()) {
-        ++rear;
-        arr[rear] = ele;
-    }
-}
+        void Queue_Array::enqueue(const int16_t& ele) {
+            if (rear == arr.size() - 1) {
+                std::cout << "\nQueue is full";
+            } else if (front == -1 && rear == -1) {
+                front = 0;
+                rear = 0;
+                arr[rear] = ele;
+            } else if (rear < arr.size()) {
+                ++rear;
+                arr[rear] = ele;
+            }
+        }
 
 /**
  * @brief Remove element that is located at the first of the queue
  * @returns data that is deleted if queue is not empty
  */
-int Queue_Array::dequeue() {
-    int8_t d{0};
-    if (front == -1) {
-        std::cout << "\nstack is empty ";
-        return 0;
-    } else if (front == rear) {
-        d = arr.at(front);
-        front = rear = -1;
-    } else {
-        d = arr.at(front++);
-    }
+        int Queue_Array::dequeue() {
+            int8_t d{0};
+            if (front == -1) {
+                std::cout << "\nQueue is empty ";
+                return 0;
+            } else if (front == rear) {
+                d = arr.at(front);
+                front = rear = -1;
+            } else {
+                d = arr.at(front++);
+            }
 
-    return d;
-}
+            return d;
+        }
 
 /**
  * @brief Utility function to show all elements in the queue
  */
-void Queue_Array::display() const {
-    if (front == -1) {
-        std::cout << "\nStack is empty";
-    } else {
-        for (int16_t i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
-    }
-}
+        void Queue_Array::display() const {
+            if (front == -1) {
+                std::cout << "\nQueue is empty";
+            } else {
+                for (int16_t i{front}; i <= rear; ++i) std::cout << arr.at(i) << " ";
+            }
+        }
 
-}  // namespace queue_using_array
+/**
+* @brief Utility function to reverse all elements in the queue
+*/
+        void Queue_Array::reverse() {
+            if(front == -1){
+                std::cout << "\nQueue is empty";
+            }else{
+                for(int16_t i{front}; i <= rear/2; ++i){
+                    int16_t temp = arr.at(i);
+                    arr.at(i) = arr.at(rear - i);
+                    arr.at(rear - i) = temp;
+                }
+            }
+        }
+
+    }  // namespace queue_using_array
 }  // namespace data_structures
 
 /**
@@ -115,6 +131,7 @@ int main() {
     std::cout << "\n1. enqueue(Insertion) ";
     std::cout << "\n2. dequeue(Deletion)";
     std::cout << "\n3. Display";
+    std::cout << "\n4. Reverse";
     std::cout << "\n4. Exit";
     while (true) {
         std::cout << "\nEnter your choice ";
@@ -129,6 +146,8 @@ int main() {
         } else if (op == 3) {
             ob.display();
         } else if (op == 4) {
+            ob.reverse();
+        } else if (op == 5) {
             exit(0);
         } else {
             std::cout << "\nWrong choice ";

@@ -34,12 +34,25 @@ void show() {
     }
 }
 
+void reverse() {
+    if (front == rear){
+        cout << "\n Underflow";
+    }else {
+        for (int i = front; i <= rear / 2 - 1; i++) {
+            int temp = queue[i];
+            queue[i] = queue[rear - i - 1];
+            queue[rear - i - 1] = temp;
+        }
+    }
+}
+
 int main() {
     int ch, x;
     do {
         cout << "\n1. Enque";
         cout << "\n2. Deque";
         cout << "\n3. Print";
+        cout << "\n4. Reverse";
         cout << "\nEnter Your Choice : ";
         cin >> ch;
         if (ch == 1) {
@@ -50,6 +63,8 @@ int main() {
             Deque();
         } else if (ch == 3) {
             show();
+        } else if (ch == 4) {
+            reverse();
         }
     } while (ch != 0);
 
