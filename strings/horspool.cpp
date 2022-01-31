@@ -60,6 +60,8 @@ bool horspool(const std::string &text, const std::string &prototype) {
         // Return 'true', if the returned substring is equal to prototype.
         if (text.substr(j - prototype.size() + 1, prototype.size()) == prototype) return true;
 
+        // shift index as many steps as value at shiftTable[text[i]], if character at text[i] is found in shiftTable,
+        // shift as many steps as size of prototype otherwise.
         i += shiftTable.contains(text[i]) ? shiftTable[text[i]] : prototype.size();
     }
     return false;
