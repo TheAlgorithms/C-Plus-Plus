@@ -58,20 +58,8 @@ bool horspool(const std::string &text, const std::string &prototype) {
         int j = i, k = 0;
         bool flag = true;
 
-        for (int z = static_cast<int>(prototype.size() - 1); z >= 0 && flag;
-             z--) {  // Checking if all characters of substring are equal with all characters of string
-            if (text[j] == prototype[z]) {
-                k++;
-                j--;
-            } else {
-                flag = false;  // If two characters are not equal set flag to false and break from loop
-            }
-        }
-
-        if (k ==
-            prototype.size()) {  // If all characters match then return true
-            return true;
-        } else {
+        if (text.substr(j - prototype.size() + 1, prototype.size()) == prototype) return true;
+        else {
             if (shiftTable.contains(text[i])) {
                 i += shiftTable[text[i]];  // If shift table contains the character then shift index as many steps as value
             } else {
