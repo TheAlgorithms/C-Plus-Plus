@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int length, breadth;
+    cout << "What is the rectangle's length? ";
+    cin >> length;
+    cout << "What is the rectangle's breadth? ";
+    cin >> breadth;
+
+    int perimeter = 2 * (length + breadth);
+    int area = length * breadth;
+    
+    if (perimeter > area) {
+        cout << "Peri" << endl << perimeter;
+    }
+    else if (perimeter < area) {
+        cout << "Area" << endl << area;
+    }
+    else {
+        cout << "Eq" << endl << area;
+    }
+    return 0;
+}
