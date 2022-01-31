@@ -57,7 +57,7 @@ bool horspool(const std::string &text, const std::string &prototype) {
         auto j = i;
 
         // Return 'true', if the returned substring is equal to prototype.
-        if (text.substr(j - prototype_size + 1, prototype_size) == prototype) return true;
+        if (text.substr(i - prototype_size + 1, prototype_size) == prototype) return true;
 
         // shift index as many steps as value at shiftTable[text[i]], if character at text[i] is found in shiftTable,
         // shift as many steps as size of prototype otherwise.
