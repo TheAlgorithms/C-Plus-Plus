@@ -2,10 +2,10 @@
 * @file
 * @brief Sliding window solution to find the longest substring with no repeating characters
 * @details
-    * Given a string we are required to find the
-    * longest possible substring without any repeating characters.
-    * The time and space complexity are both O(n) since an unordered set is used
-    * and the entire string is traversed.
+ * Given a string we are required to find the
+ * longest possible substring without any repeating characters.
+ * The time and space complexity are both O(n) since an unordered set is used
+ * and the entire string is traversed.
 * @author [Saketh Renangi](https://github.com/rensaketh)
 */
 
