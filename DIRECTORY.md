@@ -171,6 +171,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/binary_exponent.cpp)
@@ -264,6 +265,7 @@
   * [Union Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_two_arrays.cpp)
 
 ## Others
+  * [Binary To Decimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/binary_to_decimal.cpp)
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
