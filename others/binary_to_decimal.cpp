@@ -9,10 +9,11 @@
  * @author [Vishwa Krishnan](https://github.com/vishwakrishnan02)
  */
 
-#include <cassert>
-#include <iostream>
-#include <string>
-#include <algorithm>
+
+#include <iostream>   /// for IO operations
+#include <cassert>    /// for assert
+#include <string>     /// for binary string input
+#include <algorithm>  /// for power operation
 
 
  /**
@@ -57,7 +58,10 @@ namespace others {
     }
 }
 
-
+/**
+ * @brief Self-test implementations
+ * @returns 0 on exit
+ */
 static void test() {
 
     //Input: 0 | Output: 0
@@ -82,8 +86,12 @@ static void test() {
 
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main()
 {
-    test(); //Runs all the self-implemented test cases.
+    test(); // run self-test implementations
     return 0;
 }
