@@ -23,8 +23,8 @@ namespace horspool {
  * @param prototype is the substring that we use to find shift table
  * @return Shift Table of Horspool's algorithm
  */
-std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
-    std::unordered_map<char, int>
+std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
+    std::unordered_map<char, size_t>
         shiftTable;  // A HashMap for shift table that has characters for keys and integers for values
 
     for (size_t i = 0; i < prototype.size(); ++i) {  // Checking all characters of prototype string
