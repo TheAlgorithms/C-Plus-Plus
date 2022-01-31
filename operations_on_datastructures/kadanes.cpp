@@ -15,10 +15,10 @@
 #include<iostream>
 #include<vector>
 /**
- * @namespace math
- * @brief Mathematical functions
+ * @namespace operations_on_datastructures
+ * @brief Operations on Data Structures
  */
-namespace math {
+namespace operations_on_datastructures {
   
 /**
  * @brief kadanes algorithm (https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
@@ -50,7 +50,7 @@ maxSum=maxTemp; //maxSum ends up as the biggest subarray sum
 }
  return maxSum;
 }
-} //namespace math
+} //namespace operations_on_datastructures
 /**
  * @brief function to print the vector
  * @param vector to print
@@ -77,17 +77,17 @@ void printVect(std::vector<int> v)
     
     std::cout<< "Array example 1 is: \n"; 
     printVect(vect);
-    int max = math::Kadanes(vect);
+    int max = operations_on_datastructures::Kadanes(vect);
    std:: cout << "The maximum contiguous sum is " << max<<std::endl;
      
     std::cout<< "Array example 2 is: \n"; 
     printVect(vect2);
-    int max2 = math::Kadanes(vect2);
+    int max2 = operations_on_datastructures::Kadanes(vect2);
     std::cout << "The maximum contiguous sum is "<< max2<<std::endl;
  
     std::cout<< "Array example 3 is: \n"; 
     printVect(vect3);
-    int max3 = math::Kadanes(vect3);
+    int max3 = operations_on_datastructures::Kadanes(vect3);
     std::cout << "The maximum contiguous sum is " << max3<<std::endl;
  }
 
@@ -96,3 +96,4 @@ int main()
   test();
     return 0;
 }
+
