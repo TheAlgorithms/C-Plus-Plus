@@ -75,7 +75,7 @@ public:
 
     /**
      * @brief Sets middle of LinkedList.
-     * @param middle Pointer to set middle
+     * @param node Pointer to set middle
      */
     void setMiddle(Node* node) {
         middle = node;
@@ -92,7 +92,7 @@ public:
         Node* slow = head; ///< set slow pointer to start
         Node* fast = head; ///< set fast pointer to start
         if (head != nullptr) {
-            while (fast != nullptr && fast->next != nullptr) { ///< while fast pointer can still move
+            while (fast != nullptr && fast->next != nullptr) {
                 fast = fast->next->next;  ///< fast advances two nodes
                 slow = slow->next;  ///< slow advances one node
             }
@@ -108,7 +108,7 @@ public:
 
     /**
      * @brief Adds a new node to the end of the list.
-     * @param value The integer value of the node
+     * @param value The integer value of the new node
      * @returns void
      */
     void addNode(int value) {
