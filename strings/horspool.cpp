@@ -72,7 +72,7 @@ bool horspool(const std::string &text, const std::string &prototype) {
             prototype.size()) {  // If all characters match then return true
             return true;
         } else {
-            if (shiftTable.find(text[i]) != shiftTable.end()) {
+            if (shiftTable.contains(text[i])) {
                 i += shiftTable[text[i]];  // If shift table contains the character then shift index as many steps as value
             } else {
                 i += prototype.size();  // If character does not exist in shift table then shift index as many steps as size of prototype string
