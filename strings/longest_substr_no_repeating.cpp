@@ -23,9 +23,9 @@
  * with no repeated characters
  */
 
-int lengthOfLongestSubstring(std::string s) {
+uint64_t lengthOfLongestSubstring(std::string s) {
     std::unordered_set<char> letters;
-    int leftPointer = 0, rightPointer = 0, length = 0;
+    uint64_t leftPointer = 0, rightPointer = 0, length = 0;
     while (rightPointer < s.length()) {
         if (letters.find(s.at(rightPointer)) == letters.end()) {
             letters.insert(s.at(rightPointer));
