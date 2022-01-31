@@ -26,13 +26,13 @@ namespace horspool {
 std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
     std::unordered_map<char, size_t> shiftTable;  // A HashMap for shift table that has characters for keys and integers for values
 
-    for (size_t i = 0, size = prototype.size(); i < size; ++i) {  // Checking all characters of prototype string
+    for (size_t i = 0, last_index = prototype.size() - 1; i < last_index + 1; ++i) {  // Checking all characters of prototype string
         if (shiftTable.count(prototype[i])) {
-            if (i != size - 1) {
-                shiftTable[prototype[i]] = size - i - 1;
+            if (i != last_index) {
+                shiftTable[prototype[i]] = last_index - i;
             }
         } else {
-            shiftTable.emplace(prototype[i], i != size - 1 ? size - i - 1 : size);  // Insert the current character as key,
+            shiftTable.emplace(prototype[i], i != last_index ? last_index - i : last_index + 1);  // Insert the current character as key,
                                                                                     // if 'i' is the index of the last character, insert the
                                                                                     // size of prototype string - i - 1 as value,
                                                                                     // size of prototype string otherwise.
