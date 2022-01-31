@@ -27,7 +27,7 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
     std::unordered_map<char, int>
         shiftTable;  // A HashMap for shift table that has characters for keys and integers for values
 
-    for (int i = 0; i < prototype.size();
+    for (size_t i = 0; i < prototype.size();
          i++) {  // Checking all characters of prototype string
         if (shiftTable.find(prototype[i]) ==
             shiftTable.end()) {  // If character does not exist in HashMap
