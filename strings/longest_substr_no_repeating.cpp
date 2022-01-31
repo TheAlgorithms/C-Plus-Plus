@@ -9,9 +9,9 @@
 * @author [Saketh Renangi](https://github.com/rensaketh)
 */
 
-#include <cassert>   /// for assert
+#include <cassert>         /// for assert
 #include <unordered_set>  /// for unordered_set
-#include <string> //for string
+#include <string>        /// for string
 
 /**
  * @brief This function uses the sliding window approach to
