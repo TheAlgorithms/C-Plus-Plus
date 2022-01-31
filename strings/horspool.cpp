@@ -51,18 +51,17 @@ bool horspool(const std::string &text, const std::string &prototype) {
     std::unordered_map<char, size_t> shiftTable = findShiftTable(
         prototype);  // Initialise shift table calling findShiftTable function
 
-    int i = static_cast<int>(
-        prototype.size() -
-        1);  // Index that we shift in text to find the substring
+    auto prototype_size = prototype.size();
+    auto i = prototype_size - 1; // Index that we shift in text to find the substring
     while (i < text.size()) {
         int j = i;
 
         // Return 'true', if the returned substring is equal to prototype.
-        if (text.substr(j - prototype.size() + 1, prototype.size()) == prototype) return true;
+        if (text.substr(j - prototype_size + 1, prototype_size) == prototype) return true;
 
         // shift index as many steps as value at shiftTable[text[i]], if character at text[i] is found in shiftTable,
         // shift as many steps as size of prototype otherwise.
-        i += shiftTable.contains(text[i]) ? shiftTable[text[i]] : prototype.size();
+        i += shiftTable.contains(text[i]) ? shiftTable[text[i]] : prototype_size;
     }
     return false;
 }
