@@ -30,12 +30,8 @@ std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
     for (size_t i = 0, size = prototype.size(); i < size; ++i) {  // Checking all characters of prototype string
         if (shiftTable.find(prototype[i]) ==
             shiftTable.end()) {  // If character does not exist in HashMap
-            if (i != size - 1) {
-                shiftTable.emplace(prototype[i], size - i - 1);  // Insert the character as key and the size of prototype string - index of character - 1 as value
-            } else {
-                shiftTable.emplace(prototype[i], size);  // Insert the character as key and the size of prototype string as value
-            }
-        } else {
+                shiftTable.emplace(prototype[i], i != size - 1 ? size - i - 1 : size);  // Insert the character as key and the size of prototype string - index of character - 1 as value
+	} else {
             if (i != size - 1) {
                 shiftTable[prototype[i]] = size - i - 1;
             }
