@@ -54,7 +54,6 @@ bool horspool(const std::string &text, const std::string &prototype) {
     auto prototype_size = prototype.size();
     auto i = prototype_size - 1; // Index that we shift in text to find the substring
     while (i < text.size()) {
-        auto j = i;
 
         // Return 'true', if the returned substring is equal to prototype.
         if (text.substr(i - prototype_size + 1, prototype_size) == prototype) return true;
