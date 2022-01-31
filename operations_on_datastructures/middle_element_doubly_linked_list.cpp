@@ -9,7 +9,7 @@
  * and a data value. This implementation includes
  * an algorithm to find the middle node.
  * @author [Bryan Etzine](https://github.com/bryetz)
- * @see middle_element_doubly_LinkedList.cpp
+ * @see middle_element_doubly_linked_list.cpp
  */
 
 #include <cassert>   /// for assert
