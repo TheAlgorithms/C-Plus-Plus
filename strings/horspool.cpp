@@ -32,9 +32,9 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
         if (shiftTable.find(prototype[i]) ==
             shiftTable.end()) {  // If character does not exist in HashMap
             if (i != prototype.size() - 1) {
-                shiftTable.emplace(std::make_pair(
+                shiftTable.emplace(
                     prototype[i], prototype.size() - i -
-                                      1));  // Insert the character as key and the size of prototype string - index of character - 1 as value
+                                      1);  // Insert the character as key and the size of prototype string - index of character - 1 as value
             } else {
                 shiftTable.insert(std::make_pair(
                     prototype[i],
