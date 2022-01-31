@@ -88,7 +88,7 @@ public:
      * of the doubly linked list, the slow pointer will be at the middle.
      * @returns A pointer to the middle node.
      */
-    Node* find_middle() {
+    Node* findMiddle() {
         Node* slow = head; ///< set slow pointer to start
         Node* fast = head; ///< set fast pointer to start
         if (head != nullptr) {
@@ -111,7 +111,7 @@ public:
      * @param value The integer value of the node
      * @returns void
      */
-    void add_node(int value) {
+    void addNode(int value) {
         auto newNode = new Node();
         newNode->value = value;
         if (head == nullptr) {  ///< First node (head) is null. Linked list is empty.
@@ -144,14 +144,14 @@ namespace tests {
         }
 
         std::cout << "Inserting " << numElements << " nodes." << std::endl;
-        for (int i = 1; i < numElements; i++) {
-            linked->add_node(i);
+        for (int i = 1; i <= numElements; i++) {
+            linked->addNode(i);
         }
 
-        linked->setMiddle(linked->find_middle());
-        if (numElements % 2 == 0) { ///< Even number of elements
-            assert(linked->getMiddle()->value == numElements / 2);
-        } else { ///< Odd number of elements
+        linked->setMiddle(linked->findMiddle());
+        if (numElements % 2 == 0) { ///< Even number of elements, two middle nodes
+            assert(linked->getMiddle()->value == (numElements / 2) + 1); ///< must be second middle node
+        } else { ///< Odd number of elements, one middle node
             assert(linked->getMiddle()->value == (numElements + 1) / 2);
         }
     }
