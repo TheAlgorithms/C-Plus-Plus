@@ -63,10 +63,9 @@ bool check_if_equal(const std::string& pattern, const std::string& text,
 
 /**
  *  Perform string pattern search using Rabin-Karp algorithm
- *  @param[in] str string to search in
- *  @param[in] pat pattern to search for
- *  @return index of first occurrence of pattern
- *  @return -1 if pattern not found
+ *  @param[in] text string to search in
+ *  @param[in] pattern string to search for
+ *  @return index of first occurrence of pattern, -1 otherwise
  */
 int rabin_karp(const std::string& text, const std::string& pattern) {
     int64_t pat_hash = create_hash(pattern, pattern.size());
