@@ -48,8 +48,9 @@ std::string manacher(const std::string &prototype) {
         }
         stuffed_string = "@#" + stuffed_string + '&';
 
+        auto stuffed_str_size = stuffed_string.size();
         std::vector<uint64_t> palindrome_max_half_length(
-            stuffed_string.size(),
+            stuffed_str_size,
             0);  // this array will consist of largest possible half length of
                  // palindrome centered at index (say i with respect to the
                  // stuffed string). This value will be lower bound of half
@@ -65,7 +66,7 @@ std::string manacher(const std::string &prototype) {
 
         // i is considered as center lying within one half of the palindrone
         // which is centered at 'bigger_center'
-        for (uint64_t i = 1; i < stuffed_string.size() - 1; i++) {
+        for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
             if (i < right) {  // when i is before right end, considering
                               // 'bigger_center' as center of palindrome
                 uint64_t opposite_to_i =
@@ -102,7 +103,7 @@ std::string manacher(const std::string &prototype) {
         uint64_t half_length = 0;   // half length of the largest palindrome
         uint64_t center_index = 0;  // index of center of the largest palindrome
 
-        for (uint64_t i = 1; i < stuffed_string.size() - 1; i++) {
+        for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
             if (palindrome_max_half_length[i] > half_length) {
                 half_length = palindrome_max_half_length[i];
                 center_index = i;
