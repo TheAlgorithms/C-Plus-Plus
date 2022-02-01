@@ -31,6 +31,26 @@ namespace strings {
  * implementation
  */
 namespace manacher {
+
+/**
+ * @brief A helper function to simplify manacher(const std::string&)
+ * @param half_length is half the length of the largest palindrome
+ * @param center_index index of center of the largest palindrome
+ * @param s main string we extract from
+ * @returns the largest palindromic substring
+ */
+auto palindromic_substring(uint64_t half_length, uint64_t center_index,
+                           const std::string& s) {
+    auto start = center_index - half_length + 1;  // substring[0]
+    auto end = center_index + half_length - 1;    // substring[n - 1]
+    std::string substring;
+    for (auto index = start; index <= end; index += 2) {
+        substring += s[index];
+    }
+
+    return substring;
+}
+
 /**
  * @brief A function that implements Manacher's algorithm
  * @param prototype is the string where algorithm finds a palindromic substring.
