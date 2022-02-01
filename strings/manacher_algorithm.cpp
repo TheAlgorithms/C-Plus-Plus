@@ -143,16 +143,8 @@ std::string manacher(const std::string& prototype) {
     }
 
     // now extracting the first largest palindrome
-    uint64_t half_length = 0;   // half length of the largest palindrome
-    uint64_t center_index = 0;  // index of center of the largest palindrome
-
-    for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
-        if (auto current_max_half_length = palindrome_max_half_length[i];
-            current_max_half_length > half_length) {
-            half_length = current_max_half_length;
-            center_index = i;
-        }
-    }
+    auto const& [half_length, center_index]{
+        extract_indices(palindrome_max_half_length, stuffed_str_size)};
 
     // if length = 0, then there does not exist any palindrome with length > 1
     // so we can return a character from string as substring
