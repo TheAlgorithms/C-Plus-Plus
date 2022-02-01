@@ -57,7 +57,7 @@ bool kmp(const std::string &pattern, const std::string &text) {
     std::vector<int> failure = getFailureArray(pattern);
 
     int k = 0;
-    for (int j = 0; j < text_length; j++) {
+    for (size_t j = 0; j < text_length; j++) {
         while (k != -1 && pattern[k] != text[j]) {
             k = failure[k];
         }
