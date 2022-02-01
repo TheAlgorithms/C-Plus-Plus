@@ -49,9 +49,9 @@ int64_t recalculate_hash(const std::string& s, size_t old_index,
 
 /**
  * compare if two sub-strings are equal
- * \param[in] str1 string pattern to search
- * \param[in] str2 text in which to search
- * \param[in] start1 starting index for str1
+ * \param[in] pattern string pattern to search
+ * \param[in] text string in which to search
+ * \param[in] index starting index for pattern
  * \returns `true` if pattern was found, false otherwise
  * @note can this be replaced by std::string::compare?
  */
