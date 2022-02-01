@@ -114,10 +114,7 @@ std::string manacher(const std::string& prototype) {
         }
     }
 
-    std::string
-        palindromic_substring;  // contains the resulting largest palindrome
-
-    if (half_length > 0) {
+    if (std::string palindromic_substring; half_length > 0) {
         // extra information: when '#' is the center, then palindromic
         // substring will have even length, else palindromic substring will
         // have odd length
@@ -130,13 +127,14 @@ std::string manacher(const std::string& prototype) {
         for (uint64_t index = start; index <= end; index += 2) {
             palindromic_substring += stuffed_string[index];
         }
+        return palindromic_substring;  // contains the resulting largest
+                                       // palindrome
     } else {
         // if length = 0, then there does not exist any palindrome of length
         // > 1 so we can assign any character of length 1 from string as the
         // palindromic substring
-        palindromic_substring = prototype[0];
+        return {prototype[0]};
     }
-    return palindromic_substring;
 }
 
 }  // namespace manacher
