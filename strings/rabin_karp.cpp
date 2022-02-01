@@ -65,14 +65,8 @@ bool check_if_equal(const std::string& pattern, const std::string& text,
     if (end1 - start1 != end2) {
         return false;
     }
-    while (start1 <= end1 && start2 <= end2) {
-        if (pattern[start1] != text[start2]) {
-            return false;
-        }
-        start1++;
-        start2++;
-    }
-    return true;
+    auto distance = std::min(end1 - start1, end2);
+    return pattern.substr(start1, distance) == text.substr(start2, distance);
 }
 
 /**
