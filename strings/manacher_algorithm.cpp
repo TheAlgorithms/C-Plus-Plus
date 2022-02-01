@@ -134,12 +134,11 @@ std::string manacher(const std::string& prototype) {
         }
     }
 
+    // if length = 0, then there does not exist any palindrome with length > 1
+    // so we can return a character from string as substring
     return half_length > 0 ? palindromic_substring(half_length, center_index,
                                                    stuffed_string)
                            : std::string{prototype[0]};
-    // if length = 0, then there does not exist any palindrome of length
-    // > 1 so we can assign any character of length 1 from string as the
-    // palindromic substring
 }
 
 }  // namespace manacher
