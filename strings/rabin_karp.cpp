@@ -24,7 +24,7 @@ namespace string_search {
  */
 int64_t create_hash(const std::string& s, size_t n) {
     int64_t result = 0;
-    for (int i = 0; i < n; ++i) {
+    for (size_t i = 0; i < n; ++i) {
         result += (int64_t)(s[i] * (int64_t)pow(PRIME, i));
     }
     return result;
