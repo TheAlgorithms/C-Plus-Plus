@@ -36,7 +36,7 @@ std::vector<int> getFailureArray(const std::string &pattern) {
     failure[0] = -1;
     int j = -1;
 
-    for (int i = 0; i < pattern_length; i++) {
+    for (size_t i = 0; i < pattern_length; i++) {
         while (j != -1 && pattern[j] != pattern[i]) {
             j = failure[j];
         }
