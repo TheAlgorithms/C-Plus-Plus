@@ -31,7 +31,7 @@ namespace string_search {
  * \returns the partial match table as a vector array
  */
 std::vector<int> getFailureArray(const std::string &pattern) {
-    int pattern_length = pattern.size();
+    auto pattern_length = pattern.size();
     std::vector<int> failure(pattern_length + 1);
     failure[0] = -1;
     int j = -1;
