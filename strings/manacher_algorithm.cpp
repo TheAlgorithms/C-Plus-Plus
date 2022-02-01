@@ -46,7 +46,7 @@ std::string manacher(const std::string &prototype) {
             stuffed_string += str;
             stuffed_string += '#';
         }
-        stuffed_string = "@#" + stuffed_string + "&";
+        stuffed_string = "@#" + stuffed_string + '&';
 
         std::vector<uint64_t> palindrome_max_half_length(
             stuffed_string.size(),
