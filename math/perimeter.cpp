@@ -3,7 +3,7 @@
  * @brief Implementations for the
  * [perimeter](https://en.wikipedia.org/wiki/Perimeter) of various shapes
  * @details The  of a shape is the amount of 2D space it takes up.
- * All shapes have a formula to get the perimeter of any given shape.
+ * All shapes have a formula for their perimeter.
  * These implementations support multiple return types.
  *
  * @author [OGscorpion](https://github.com/OGscorpion)
