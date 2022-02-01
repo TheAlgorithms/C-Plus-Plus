@@ -33,17 +33,20 @@ int64_t create_hash(const std::string& s, size_t n) {
 /**
  * re-hash a string using known existing hash
  * \param[in] s source of string to hash
- * \param[in] old_index previous index of string
- * \param[in] new_index new index of string
- * \param[in] old_hash previous hash of substring
- * \param[in] patLength length of substring to hash
+ * \param[in] previous_index previous index of string
+ * \param[in] previous_hased_value previous hash of substring
+ * \param[in] pattern_length length of substring to hash
  * \returns new hash integer
  */
-int64_t recalculate_hash(const std::string& s, size_t old_index,
-                         size_t new_index, int64_t old_hash, size_t patLength) {
-    int64_t new_hash = old_hash - s[old_index];
+int64_t recalculate_hash(const std::string& s, size_t previous_index,
+                         int64_t previous_hased_value, size_t pattern_length) {
+    auto current_index = previous_index + pattern_length;
+
+    int64_t new_hash = previous_hased_value - s[previous_index];
     new_hash /= PRIME;
-    new_hash += (int64_t)(s[new_index] * (int64_t)pow(PRIME, patLength - 1));
+    new_hash +=
+        (int64_t)(s[current_index] * (int64_t)pow(PRIME, pattern_length - 1));
+
     return new_hash;
 }
 
@@ -79,8 +82,7 @@ int rabin_karp(const std::string& text, const std::string& pattern) {
             return i;
         }
         if (i < string_variance) {
-            hashed_text = recalculate_hash(text, i, i + pattern_size,
-                                           hashed_text, pattern_size);
+            hashed_text = recalculate_hash(text, i, hashed_text, pattern_size);
         }
     }
     return -1;  // return -1 if given pattern not found
