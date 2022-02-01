@@ -57,11 +57,7 @@ int64_t recalculate_hash(const std::string& s, size_t old_index,
  */
 bool check_if_equal(const std::string& pattern, const std::string& text,
                     size_t index) {
-    auto text_length = text.length();
-    auto end1 = index + text_length - 1;
-    auto end2 = text_length - 1;
-
-    auto distance = std::min(end1 - index, end2);
+    auto distance = text.size() - 1;
     return pattern.substr(index, distance) == text.substr(0, distance);
 }
 
