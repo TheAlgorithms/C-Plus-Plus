@@ -57,8 +57,7 @@ std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
  * @returns false if text string does not contain prototype string
  */
 bool horspool(const std::string &text, const std::string &prototype) {
-    auto shiftTable = findShiftTable(
-        prototype);  // Initialise shift table calling findShiftTable function
+    auto shiftTable = findShiftTable(prototype);  // Initialise shift table
 
     auto prototype_size = prototype.size();
     auto i = prototype_size -
