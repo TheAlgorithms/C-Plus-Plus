@@ -74,7 +74,7 @@ int rabin_karp(const std::string& text, const std::string& pattern) {
     int64_t hashed_pattern = create_hash(pattern, pattern_size);
     int64_t hashed_text = create_hash(text, pattern_size);
 
-    for (int i = 0; i <= string_variance; ++i) {
+    for (size_t i = 0; i <= string_variance; ++i) {
         if (hashed_pattern == hashed_text && check_if_equal(text, pattern, i)) {
             return i;
         }
