@@ -112,8 +112,8 @@ std::string manacher(const std::string& prototype) {
             }
         }
 
-        std::string palindromic_substring =
-            "";  // contains the resulting largest palindrome
+        std::string
+            palindromic_substring;  // contains the resulting largest palindrome
 
         if (half_length > 0) {
             // extra information: when '#' is the center, then palindromic
