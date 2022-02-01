@@ -33,6 +33,26 @@ namespace strings {
 namespace manacher {
 
 /**
+ * @brief A helper function to extract indices
+ * @param stuffed_str_sz is the length of the stuffed string
+ * @param v contains largest possible half length of palindrome
+ * @returns a pair, {half length of largest palindrome, and index of its center}
+ */
+auto extract_indices(const std::vector<uint64_t>& v, uint64_t stuffed_str_sz) {
+    uint64_t half_length = 0;
+    uint64_t center_index = 0;
+
+    for (uint64_t i{1}; i < stuffed_str_sz - 1; ++i) {
+        if (auto max_half_length = v[i]; max_half_length > half_length) {
+            half_length = max_half_length;
+            center_index = i;
+        }
+    }
+
+    return std::pair{half_length, center_index};
+}
+
+/**
  * @brief A helper function to simplify manacher(const std::string&)
  * @param half_length is half the length of the largest palindrome
  * @param center_index index of center of the largest palindrome
