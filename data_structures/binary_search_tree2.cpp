@@ -238,6 +238,20 @@ class binary_search_tree {
         callback(node->value);
     }
 
+    void print_leaves(std::function<void(T)> callback, std::unique_ptr<bst_node>& node){
+        if(!node){
+            return;
+        }
+
+        if(node->left == nullptr) && root->right == nullptr){
+            callback(node->value);
+        }
+
+        print_leaves(callback, node->right);
+        print_leaves(callback, node->left);
+
+    }
+
  public:
     /**
      * @brief Construct a new Binary Search Tree object.
@@ -345,6 +359,18 @@ class binary_search_tree {
         std::vector<T> result;
         traverse_postorder([&](T node_value) { result.push_back(node_value); },
                            root_);
+        return result;
+    }
+
+    /**
+     * @brief Get all values of the BST leaves.
+     *
+     * @return std::vector<T> List of values, sorted in in-order order.
+     */
+    std::vector<T> get_print_leaves() {
+        std::vector<T> result;
+        print_leaves([&](T node_value) { result.push_back(node_value); },
+                         root_);
         return result;
     }
 };
@@ -552,6 +578,30 @@ static void test_get_elements_postorder() {
     std::cout << "ok" << std::endl;
 }
 
+/**
+ * @brief Function for testing get_elements_postorder().
+ * 
+ * @returns `void`
+ */
+static void test_print_leaves() {
+    std::cout << "Testing BST print_leaves...";
+
+    binary_search_tree<int> tree;
+    tree.insert(1);
+    tree.insert(2);
+    tree.insert(3);
+    tree.insert(4);
+    tree.insert(5);
+    tree.insert(6);
+    tree.insert(7);
+
+    std::vector<int> expected = {4, 5, 6, 7};
+    std::vector<int> actual = tree.get_print_leaves();
+    assert(actual == expected);
+
+    std::cout << "ok" << std::endl;
+}
+
 int main() {
     test_insert();
     test_remove();
@@ -561,4 +611,5 @@ int main() {
     test_get_elements_inorder();
     test_get_elements_preorder();
     test_get_elements_postorder();
+    test_print_leaves();
 }
