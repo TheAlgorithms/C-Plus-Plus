@@ -38,109 +38,105 @@ namespace manacher {
  * @returns the largest palindromic substring
  */
 std::string manacher(const std::string& prototype) {
-    if (prototype.size() > 0) {
-        // stuffing characters between the input string to handle cases with
-        // even length palindrome
-        std::string stuffed_string;
-        for (auto const& str : prototype) {
-            stuffed_string += str;
-            stuffed_string += '#';
-        }
-        stuffed_string = "@#" + stuffed_string + '&';
+    if (prototype.empty())
+        return {};  // handling case when string is empty
 
-        auto stuffed_str_size = stuffed_string.size();
-        std::vector<uint64_t> palindrome_max_half_length(
-            stuffed_str_size,
-            0);  // this array will consist of largest possible half length of
-                 // palindrome centered at index (say i with respect to the
-                 // stuffed string). This value will be lower bound of half
-                 // length since single character is a palindrome in itself.
-
-        uint64_t bigger_center =
-            0;  // this is the index of the center of palindromic
-                // substring which would be considered as the larger
-                // palindrome, having symmetric halves
-
-        uint64_t right = 0;  // this is the maximum length of the palindrome
-                             // from 'bigger_center' to the rightmost end
-
-        // i is considered as center lying within one half of the palindrone
-        // which is centered at 'bigger_center'
-        for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
-            if (i < right) {  // when i is before right end, considering
-                              // 'bigger_center' as center of palindrome
-                uint64_t opposite_to_i =
-                    2 * bigger_center -
-                    i;  // this is the opposite end of string, if
-                        // centered at center, and having one end as i
-
-                // finding the minimum possible half length among
-                // the palindrome on having center at opposite end,
-                // and the string between i and right end,
-                // considering 'bigger_center' as center of palindrome
-                palindrome_max_half_length[i] = std::min(
-                    palindrome_max_half_length[opposite_to_i], right - i);
-            }
-
-            // expanding the palindrome across the maximum stored length in the
-            // array, centered at i
-            auto& current_max_half_length = palindrome_max_half_length[i];
-            while (stuffed_string[i + (current_max_half_length + 1)] ==
-                   stuffed_string[i - (current_max_half_length + 1)]) {
-                palindrome_max_half_length[i]++;
-            }
-
-            // if palindrome centered at i exceeds the rightmost end of
-            // palindrome centered at 'bigger_center', then i will be made the
-            // 'bigger_center' and right value will also be updated with respect
-            // to center i
-            if (i + current_max_half_length > right) {
-                bigger_center = i;
-                right = i + current_max_half_length;
-            }
-        }
-
-        // now extracting the first largest palindrome
-        uint64_t half_length = 0;   // half length of the largest palindrome
-        uint64_t center_index = 0;  // index of center of the largest palindrome
-
-        for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
-            if (auto current_max_half_length = palindrome_max_half_length[i];
-                current_max_half_length > half_length) {
-                half_length = current_max_half_length;
-                center_index = i;
-            }
-        }
-
-        std::string
-            palindromic_substring;  // contains the resulting largest palindrome
-
-        if (half_length > 0) {
-            // extra information: when '#' is the center, then palindromic
-            // substring will have even length, else palindromic substring will
-            // have odd length
-
-            uint64_t start =
-                center_index - half_length +
-                1;  // index of first character of palindromic substring
-            uint64_t end =
-                center_index + half_length -
-                1;  // index of last character of palindromic substring
-            for (uint64_t index = start; index <= end; index += 2) {
-                palindromic_substring += stuffed_string[index];
-            }
-        } else {
-            // if length = 0, then there does not exist any palindrome of length
-            // > 1 so we can assign any character of length 1 from string as the
-            // palindromic substring
-            palindromic_substring = prototype[0];
-        }
-        return palindromic_substring;
-
-    } else {
-        // handling case when string is empty
-        return "";
+    // stuffing characters between the input string to handle cases with
+    // even length palindrome
+    std::string stuffed_string;
+    for (auto const& str : prototype) {
+        stuffed_string += str;
+        stuffed_string += '#';
     }
+    stuffed_string = "@#" + stuffed_string + '&';
+
+    auto stuffed_str_size = stuffed_string.size();
+    std::vector<uint64_t> palindrome_max_half_length(
+        stuffed_str_size,
+        0);  // this array will consist of largest possible half length of
+             // palindrome centered at index (say i with respect to the
+             // stuffed string). This value will be lower bound of half
+             // length since single character is a palindrome in itself.
+
+    uint64_t bigger_center =
+        0;  // this is the index of the center of palindromic
+            // substring which would be considered as the larger
+            // palindrome, having symmetric halves
+
+    uint64_t right = 0;  // this is the maximum length of the palindrome
+                         // from 'bigger_center' to the rightmost end
+
+    // i is considered as center lying within one half of the palindrone
+    // which is centered at 'bigger_center'
+    for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
+        if (i < right) {  // when i is before right end, considering
+                          // 'bigger_center' as center of palindrome
+            uint64_t opposite_to_i =
+                2 * bigger_center -
+                i;  // this is the opposite end of string, if
+                    // centered at center, and having one end as i
+
+            // finding the minimum possible half length among
+            // the palindrome on having center at opposite end,
+            // and the string between i and right end,
+            // considering 'bigger_center' as center of palindrome
+            palindrome_max_half_length[i] =
+                std::min(palindrome_max_half_length[opposite_to_i], right - i);
+        }
+
+        // expanding the palindrome across the maximum stored length in the
+        // array, centered at i
+        auto& current_max_half_length = palindrome_max_half_length[i];
+        while (stuffed_string[i + (current_max_half_length + 1)] ==
+               stuffed_string[i - (current_max_half_length + 1)]) {
+            palindrome_max_half_length[i]++;
+        }
+
+        // if palindrome centered at i exceeds the rightmost end of
+        // palindrome centered at 'bigger_center', then i will be made the
+        // 'bigger_center' and right value will also be updated with respect
+        // to center i
+        if (i + current_max_half_length > right) {
+            bigger_center = i;
+            right = i + current_max_half_length;
+        }
+    }
+
+    // now extracting the first largest palindrome
+    uint64_t half_length = 0;   // half length of the largest palindrome
+    uint64_t center_index = 0;  // index of center of the largest palindrome
+
+    for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
+        if (auto current_max_half_length = palindrome_max_half_length[i];
+            current_max_half_length > half_length) {
+            half_length = current_max_half_length;
+            center_index = i;
+        }
+    }
+
+    std::string
+        palindromic_substring;  // contains the resulting largest palindrome
+
+    if (half_length > 0) {
+        // extra information: when '#' is the center, then palindromic
+        // substring will have even length, else palindromic substring will
+        // have odd length
+
+        uint64_t start =
+            center_index - half_length +
+            1;  // index of first character of palindromic substring
+        uint64_t end = center_index + half_length -
+                       1;  // index of last character of palindromic substring
+        for (uint64_t index = start; index <= end; index += 2) {
+            palindromic_substring += stuffed_string[index];
+        }
+    } else {
+        // if length = 0, then there does not exist any palindrome of length
+        // > 1 so we can assign any character of length 1 from string as the
+        // palindromic substring
+        palindromic_substring = prototype[0];
+    }
+    return palindromic_substring;
 }
 
 }  // namespace manacher
