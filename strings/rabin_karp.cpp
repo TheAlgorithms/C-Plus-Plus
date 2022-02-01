@@ -55,9 +55,9 @@ int64_t recalculate_hash(const std::string& s, size_t old_index,
  * \returns `true` if pattern was found, false otherwise
  * @note can this be replaced by std::string::compare?
  */
-bool check_if_equal(const std::string& str1, const std::string& str2,
+bool check_if_equal(const std::string& pattern, const std::string& text,
                     size_t start1) {
-    auto text_length = str2.length();
+    auto text_length = text.length();
     std::size_t start2{};
     auto end1 = start1 + text_length - 1;
     auto end2 = text_length - 1;
@@ -66,7 +66,7 @@ bool check_if_equal(const std::string& str1, const std::string& str2,
         return false;
     }
     while (start1 <= end1 && start2 <= end2) {
-        if (str1[start1] != str2[start2]) {
+        if (pattern[start1] != text[start2]) {
             return false;
         }
         start1++;
