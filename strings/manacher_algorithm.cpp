@@ -39,7 +39,7 @@ namespace manacher {
  */
 std::string manacher(const std::string& prototype) {
     if (prototype.empty())
-        return {};  // handling case when string is empty
+        return {};
 
     // stuffing characters between the input string to handle cases with
     // even length palindrome
