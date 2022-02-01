@@ -33,6 +33,22 @@ namespace strings {
 namespace manacher {
 
 /**
+ * @brief A function to stuff characters between a string to handle cases with
+ * even length palindrome
+ * @param s text to facilitate stuffing
+ * @returns a copy of 's' with stuffed characters
+ */
+auto stuffed(const std::string& s) {
+    std::string stuffed_str;
+    for (auto const& c : s) {
+        stuffed_str += c;
+        stuffed_str += '#';
+    }
+
+    return stuffed_str = "@#" + stuffed_str + '&';
+}
+
+/**
  * @brief A helper function to extract indices
  * @param stuffed_str_sz is the length of the stuffed string
  * @param v contains largest possible half length of palindrome
@@ -81,14 +97,7 @@ std::string manacher(const std::string& prototype) {
     if (prototype.empty())
         return {};
 
-    // stuffing characters between the input string to handle cases with
-    // even length palindrome
-    std::string stuffed_string;
-    for (auto const& str : prototype) {
-        stuffed_string += str;
-        stuffed_string += '#';
-    }
-    stuffed_string = "@#" + stuffed_string + '&';
+    std::string stuffed_string = stuffed(prototype);
 
     auto stuffed_str_size = stuffed_string.size();
     std::vector<uint64_t> palindrome_max_half_length(
