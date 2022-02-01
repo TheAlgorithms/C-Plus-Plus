@@ -40,8 +40,7 @@ std::vector<int> getFailureArray(const std::string &pattern) {
         while (j != -1 && pattern[j] != pattern[i]) {
             j = failure[j];
         }
-        j++;
-        failure[i + 1] = j;
+        failure[i + 1] = ++j;
     }
     return failure;
 }
