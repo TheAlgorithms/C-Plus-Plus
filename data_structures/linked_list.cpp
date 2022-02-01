@@ -233,9 +233,6 @@ int main() {
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
         switch (choice) {
-            case 0:
-                std::cout << "\nExiting the program...\n";
-                break;
             case 1:
                 std::cout << "\nEnter the element to be inserted : ";
                 std::cin >> s;
