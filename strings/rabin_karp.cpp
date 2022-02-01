@@ -51,14 +51,17 @@ int64_t recalculate_hash(const std::string& s, size_t old_index,
  * compare if two sub-strings are equal
  * \param[in] str1 string pattern to search
  * \param[in] str2 text in which to search
- * \param[in] start1,end1 start and end indices for substring in str1
- * \param[in] start2,end2 start and end indices for substring in str2
- * \returns `true` if pattern was found
- * \returns `false` if pattern was not found
+ * \param[in] start1 starting index for str1
+ * \returns `true` if pattern was found, false otherwise
  * @note can this be replaced by std::string::compare?
  */
 bool check_if_equal(const std::string& str1, const std::string& str2,
-                    int start1, int end1, int start2, int end2) {
+                    int start1) {
+    auto pattern_length = str2.length();
+    std::size_t start2{};
+    auto end1 = start1 + pattern_length - 1;
+    auto end2 = pattern_length - 1;
+
     if (end1 - start1 != end2 - start2) {
         return false;
     }
@@ -84,9 +87,7 @@ int rabin_karp(const std::string& str, const std::string& pat) {
     int64_t pat_hash = create_hash(pat, pat.size());
     int64_t str_hash = create_hash(str, pat.size());
     for (int i = 0; i <= str.size() - pat.size(); ++i) {
-        if (pat_hash == str_hash &&
-            check_if_equal(str, pat, i, i + pat.size() - 1, 0,
-                           pat.size() - 1)) {
+        if (pat_hash == str_hash && check_if_equal(str, pat, i)) {
             return i;
         }
         if (i < str.size() - pat.size()) {
