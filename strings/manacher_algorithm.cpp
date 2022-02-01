@@ -63,6 +63,50 @@ auto expand_palindrome(const std::string& s, uint64_t& max_length, uint64_t i) {
 }
 
 /**
+ * @brief A function to find the min possible half length among the palindrome
+ * @param stuffed_string text returned from stuffed(const std::string&)
+ * @returns a vector of largest possible half length of palindrome centered at
+ * index (say i with respect to the stuffed string). This value will be lower
+ * bound of half length since single character is a palindrome in itself.
+ */
+auto possible_half_lengths(const std::string& stuffed_string) {
+    auto stuffed_str_size = stuffed_string.size();
+    std::vector<uint64_t> half_lengths(stuffed_str_size);
+
+    uint64_t bigger_center =
+        0;  // index of the center of palindromic substring which would be
+            // considered as the larger palindrome, having symmetric halves
+
+    uint64_t right = 0;  // maximum length of the palindrome from
+                         // 'bigger_center' to the rightmost end
+
+    // i is considered as center lying within one half of the palindrone
+    // which is centered at 'bigger_center'
+    for (uint64_t i = 1; i < stuffed_str_size - 1; ++i) {
+        if (i < right) {
+            auto opposite_to_i =
+                2 * bigger_center - i;  // opposite end of string, if centered
+                                        // at center, and having one end as i
+
+            half_lengths[i] = std::min(half_lengths[opposite_to_i], right - i);
+        }
+
+        auto& current_max_half_length = half_lengths[i];
+        expand_palindrome(stuffed_string, current_max_half_length, i);
+
+        // if palindrome centered at i exceeds the rightmost end of palindrome
+        // centered at 'bigger_center', then i will be made the 'bigger_center'
+        // and right value will also be updated with respect to center i
+        if (i + current_max_half_length > right) {
+            bigger_center = i;
+            right = i + current_max_half_length;
+        }
+    }
+
+    return half_lengths;
+}
+
+/**
  * @brief A helper function to extract indices
  * @param stuffed_str_sz is the length of the stuffed string
  * @param v contains largest possible half length of palindrome
@@ -114,51 +158,7 @@ std::string manacher(const std::string& prototype) {
     std::string stuffed_string = stuffed(prototype);
 
     auto stuffed_str_size = stuffed_string.size();
-    std::vector<uint64_t> palindrome_max_half_length(
-        stuffed_str_size,
-        0);  // this array will consist of largest possible half length of
-             // palindrome centered at index (say i with respect to the
-             // stuffed string). This value will be lower bound of half
-             // length since single character is a palindrome in itself.
-
-    uint64_t bigger_center =
-        0;  // this is the index of the center of palindromic
-            // substring which would be considered as the larger
-            // palindrome, having symmetric halves
-
-    uint64_t right = 0;  // this is the maximum length of the palindrome
-                         // from 'bigger_center' to the rightmost end
-
-    // i is considered as center lying within one half of the palindrone
-    // which is centered at 'bigger_center'
-    for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
-        if (i < right) {  // when i is before right end, considering
-                          // 'bigger_center' as center of palindrome
-            uint64_t opposite_to_i =
-                2 * bigger_center -
-                i;  // this is the opposite end of string, if
-                    // centered at center, and having one end as i
-
-            // finding the minimum possible half length among
-            // the palindrome on having center at opposite end,
-            // and the string between i and right end,
-            // considering 'bigger_center' as center of palindrome
-            palindrome_max_half_length[i] =
-                std::min(palindrome_max_half_length[opposite_to_i], right - i);
-        }
-
-        auto& current_max_half_length = palindrome_max_half_length[i];
-        expand_palindrome(stuffed_string, current_max_half_length, i);
-
-        // if palindrome centered at i exceeds the rightmost end of
-        // palindrome centered at 'bigger_center', then i will be made the
-        // 'bigger_center' and right value will also be updated with respect
-        // to center i
-        if (i + current_max_half_length > right) {
-            bigger_center = i;
-            right = i + current_max_half_length;
-        }
-    }
+    auto palindrome_max_half_length = possible_half_lengths(stuffed_string);
 
     auto const& [half_length, center_index]{
         extract_indices(palindrome_max_half_length, stuffed_str_size)};
