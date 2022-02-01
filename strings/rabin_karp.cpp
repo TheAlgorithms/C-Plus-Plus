@@ -56,7 +56,7 @@ int64_t recalculate_hash(const std::string& s, size_t old_index,
  * @note can this be replaced by std::string::compare?
  */
 bool check_if_equal(const std::string& str1, const std::string& str2,
-                    int start1) {
+                    size_t start1) {
     auto pattern_length = str2.length();
     std::size_t start2{};
     auto end1 = start1 + pattern_length - 1;
