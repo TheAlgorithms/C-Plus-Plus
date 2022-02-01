@@ -69,7 +69,7 @@ auto expand_palindrome(const std::string& s, uint64_t& max_length, uint64_t i) {
  * index (say i with respect to the stuffed string). This value will be lower
  * bound of half length since single character is a palindrome in itself.
  */
-auto possible_half_lengths(const std::string& stuffed_string) {
+auto half_lengths(const std::string& stuffed_string) {
     auto stuffed_str_size = stuffed_string.size();
     std::vector<uint64_t> half_lengths(stuffed_str_size);
 
@@ -158,7 +158,7 @@ std::string manacher(const std::string& prototype) {
     std::string stuffed_string = stuffed(prototype);
 
     auto stuffed_str_size = stuffed_string.size();
-    auto palindrome_max_half_length = possible_half_lengths(stuffed_string);
+    auto palindrome_max_half_length = half_lengths(stuffed_string);
 
     auto const& [half_length, center_index]{
         extract_indices(palindrome_max_half_length, stuffed_str_size)};
