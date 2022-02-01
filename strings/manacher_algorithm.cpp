@@ -160,7 +160,7 @@ std::string manacher(const std::string& prototype) {
     auto stuffed_str_size = stuffed_string.size();
 
     auto const& [half_length, center_index]{
-        extract_indices(half_lengths(stuffed_string), stuffed_str_size)};
+        extract_indices(half_lengths(stuffed_string), stuffed_string.size())};
 
     // now extracting the first largest palindrome...
     // if length = 0, then there does not exist any palindrome with length > 1
