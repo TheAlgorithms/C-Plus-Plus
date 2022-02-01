@@ -68,16 +68,17 @@ bool check_if_equal(const std::string& pattern, const std::string& text,
  *  @return index of first occurrence of pattern, -1 otherwise
  */
 int rabin_karp(const std::string& text, const std::string& pattern) {
-    int64_t hashed_pattern = create_hash(pattern, pattern.size());
-    int64_t hashed_text = create_hash(text, pattern.size());
+    auto pattern_size = pattern.size();
+    int64_t hashed_pattern = create_hash(pattern, pattern_size);
+    int64_t hashed_text = create_hash(text, pattern_size);
 
-    for (int i = 0; i <= text.size() - pattern.size(); ++i) {
+    for (int i = 0; i <= text.size() - pattern_size; ++i) {
         if (hashed_pattern == hashed_text && check_if_equal(text, pattern, i)) {
             return i;
         }
-        if (i < text.size() - pattern.size()) {
-            hashed_text = recalculate_hash(text, i, i + pattern.size(),
-                                           hashed_text, pattern.size());
+        if (i < text.size() - pattern_size) {
+            hashed_text = recalculate_hash(text, i, i + pattern_size,
+                                           hashed_text, pattern_size);
         }
     }
     return -1;  // return -1 if given pattern not found
