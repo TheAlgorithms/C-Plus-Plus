@@ -39,8 +39,8 @@ int64_t create_hash(const std::string& s, size_t n) {
  * \param[in] patLength length of substring to hash
  * \returns new hash integer
  */
-int64_t recalculate_hash(const std::string& s, int old_index, int new_index,
-                         int64_t old_hash, int patLength) {
+int64_t recalculate_hash(const std::string& s, size_t old_index,
+                         size_t new_index, int64_t old_hash, size_t patLength) {
     int64_t new_hash = old_hash - s[old_index];
     new_hash /= PRIME;
     new_hash += (int64_t)(s[new_index] * (int64_t)pow(PRIME, patLength - 1));
