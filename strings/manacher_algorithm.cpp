@@ -44,7 +44,7 @@ std::string manacher(const std::string &prototype) {
         std::string stuffed_string;
         for (auto const& str : prototype) {
             stuffed_string += str;
-            stuffed_string += "#";
+            stuffed_string += '#';
         }
         stuffed_string = "@#" + stuffed_string + "&";
 
