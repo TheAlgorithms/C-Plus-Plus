@@ -69,14 +69,16 @@ bool check_if_equal(const std::string& pattern, const std::string& text,
  */
 int rabin_karp(const std::string& text, const std::string& pattern) {
     auto pattern_size = pattern.size();
+    auto string_variance = text.size() - pattern_size;
+
     int64_t hashed_pattern = create_hash(pattern, pattern_size);
     int64_t hashed_text = create_hash(text, pattern_size);
 
-    for (int i = 0; i <= text.size() - pattern_size; ++i) {
+    for (int i = 0; i <= string_variance; ++i) {
         if (hashed_pattern == hashed_text && check_if_equal(text, pattern, i)) {
             return i;
         }
-        if (i < text.size() - pattern_size) {
+        if (i < string_variance) {
             hashed_text = recalculate_hash(text, i, i + pattern_size,
                                            hashed_text, pattern_size);
         }
