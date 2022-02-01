@@ -158,7 +158,6 @@ std::string manacher(const std::string& prototype) {
     std::string stuffed_string = stuffed(prototype);
 
     auto stuffed_str_size = stuffed_string.size();
-    auto palindrome_max_half_length;
 
     auto const& [half_length, center_index]{
         extract_indices(half_lengths(stuffed_string), stuffed_str_size)};
