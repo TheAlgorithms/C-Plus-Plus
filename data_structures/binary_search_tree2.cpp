@@ -239,7 +239,7 @@ class binary_search_tree {
     }
 
     void print_leaves(std::function<void(T)> callback, std::unique_ptr<bst_node>& node){
-        if(!node){
+        if(node){
             return;
         }
 
@@ -579,7 +579,7 @@ static void test_get_elements_postorder() {
 }
 
 /**
- * @brief Function for testing get_elements_postorder().
+ * @brief Function for testing get_print_leaves().
  * 
  * @returns `void`
  */
