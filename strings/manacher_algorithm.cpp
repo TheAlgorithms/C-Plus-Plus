@@ -37,7 +37,7 @@ namespace manacher {
  * This string can contain any character except `@` `#` `&`
  * @returns the largest palindromic substring
  */
-std::string manacher(const std::string &prototype) {
+std::string manacher(const std::string& prototype) {
     if (prototype.size() > 0) {
         // stuffing characters between the input string to handle cases with
         // even length palindrome
@@ -84,8 +84,9 @@ std::string manacher(const std::string &prototype) {
 
             // expanding the palindrome across the maximum stored length in the
             // array, centered at i
-            while (stuffed_string[i + (palindrome_max_half_length[i] + 1)] ==
-                   stuffed_string[i - (palindrome_max_half_length[i] + 1)]) {
+            auto& current_max_half_length = palindrome_max_half_length[i];
+            while (stuffed_string[i + (current_max_half_length + 1)] ==
+                   stuffed_string[i - (current_max_half_length + 1)]) {
                 palindrome_max_half_length[i]++;
             }
 
@@ -93,9 +94,9 @@ std::string manacher(const std::string &prototype) {
             // palindrome centered at 'bigger_center', then i will be made the
             // 'bigger_center' and right value will also be updated with respect
             // to center i
-            if (i + palindrome_max_half_length[i] > right) {
+            if (i + current_max_half_length > right) {
                 bigger_center = i;
-                right = i + palindrome_max_half_length[i];
+                right = i + current_max_half_length;
             }
         }
 
@@ -104,8 +105,9 @@ std::string manacher(const std::string &prototype) {
         uint64_t center_index = 0;  // index of center of the largest palindrome
 
         for (uint64_t i = 1; i < stuffed_str_size - 1; i++) {
-            if (palindrome_max_half_length[i] > half_length) {
-                half_length = palindrome_max_half_length[i];
+            if (auto current_max_half_length = palindrome_max_half_length[i];
+                current_max_half_length > half_length) {
+                half_length = current_max_half_length;
                 center_index = i;
             }
         }
