@@ -41,7 +41,7 @@ std::string manacher(const std::string &prototype) {
     if (prototype.size() > 0) {
         // stuffing characters between the input string to handle cases with
         // even length palindrome
-        std::string stuffed_string = "";
+        std::string stuffed_string;
         for (auto str : prototype) {
             stuffed_string += str;
             stuffed_string += "#";
