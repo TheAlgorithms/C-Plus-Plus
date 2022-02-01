@@ -34,7 +34,7 @@ std::unordered_map<char, size_t> findShiftTable(const std::string &prototype) {
 
     for (size_t i = 0, last_index = prototype.size() - 1; i < last_index + 1;
          ++i) {  // Checking all characters of prototype string
-        if (shiftTable.contains(prototype[i])) {
+        if (shiftTable.count(prototype[i])) {
             if (i != last_index) {
                 shiftTable[prototype[i]] = last_index - i;
             }
@@ -69,7 +69,7 @@ bool horspool(const std::string &text, const std::string &prototype) {
         // shift index as many steps as value at shiftTable[text[i]], if
         // character at text[i] is found in shiftTable, shift as many steps as
         // size of prototype otherwise.
-        i += shiftTable.contains(text[i]) ? shiftTable[text[i]] : prototype_size;
+        i += shiftTable.count(text[i]) ? shiftTable[text[i]] : prototype_size;
     }
     return false;
 }
