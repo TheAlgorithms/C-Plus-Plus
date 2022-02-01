@@ -49,6 +49,20 @@ auto stuffed(const std::string& s) {
 }
 
 /**
+ * @brief A function expanding the palindrome across the maximum stored length
+ * in the array, centered at i
+ * @param s text returned from stuffed(const std::string&)
+ * @param max_length current max half length of palindrome
+ * @param i center lying within one half of the palindrone
+ * @returns void
+ */
+auto expand_palindrome(const std::string& s, uint64_t& max_length, uint64_t i) {
+    while (s[i + (max_length + 1)] == s[i - (max_length + 1)]) {
+        ++max_length;
+    }
+}
+
+/**
  * @brief A helper function to extract indices
  * @param stuffed_str_sz is the length of the stuffed string
  * @param v contains largest possible half length of palindrome
@@ -133,13 +147,8 @@ std::string manacher(const std::string& prototype) {
                 std::min(palindrome_max_half_length[opposite_to_i], right - i);
         }
 
-        // expanding the palindrome across the maximum stored length in the
-        // array, centered at i
         auto& current_max_half_length = palindrome_max_half_length[i];
-        while (stuffed_string[i + (current_max_half_length + 1)] ==
-               stuffed_string[i - (current_max_half_length + 1)]) {
-            palindrome_max_half_length[i]++;
-        }
+        expand_palindrome(stuffed_string, current_max_half_length, i);
 
         // if palindrome centered at i exceeds the rightmost end of
         // palindrome centered at 'bigger_center', then i will be made the
