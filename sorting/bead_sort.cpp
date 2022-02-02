@@ -6,7 +6,7 @@
 #define BEAD(i, j) beads[i * max + j]
 
 // function to perform the above algorithm
-void beadSort(int *a, int len) {
+void beadSort(int *a, size_t len) {
     int max = *std::max_element(a, a + len);
 
     // allocating memory
