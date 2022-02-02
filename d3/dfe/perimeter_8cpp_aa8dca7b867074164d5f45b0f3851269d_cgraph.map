@@ -1,0 +1,13 @@
+<map id="test" name="test">
+<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,247,49,273"/>
+<area shape="rect" id="node2" href="$dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953" title="perimeter of a circle (2 * pi * r)" alt="" coords="106,5,257,32"/>
+<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#a8998ca7b1886d1d7d00aef3b457a9b1b" title="surface perimeter of a cube ( 12" alt="" coords="113,57,250,98"/>
+<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#a1d4df7a4e43a2eac1acc0ac610487c73" title="surface perimeter of a cylinder (2 * radius + 2 * height)" alt="" coords="104,122,259,163"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl#" title=" " alt="" coords="145,188,217,215"/>
+<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f" title="surface perimeter of a n&#45;polygon ( n * l)" alt="" coords="97,239,265,281"/>
+<area shape="rect" id="node8" href="$dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3" title="perimeter of a parallelogram 2(b + h)" alt="" coords="113,305,249,346"/>
+<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6" title="perimeter of a rectangle ( 2(l + w) )" alt="" coords="110,371,253,397"/>
+<area shape="rect" id="node10" href="$dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14" title="perimeter of a square (4 * l)" alt="" coords="102,421,261,448"/>
+<area shape="rect" id="node11" href="$dd/d47/namespacemath.html#a3d1e4db743b189f309327572663415f3" title="perimeter of a triangle (a + b + c)" alt="" coords="100,472,263,499"/>
+<area shape="rect" id="node5" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="313,312,371,339"/>
+</map>

@@ -42,6 +42,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "n_choose_r.cpp", "d1/dbb/n__choose__r_8cpp.html", "d1/dbb/n__choose__r_8cpp" ],
     [ "ncr_modulo_p.cpp", "de/dab/ncr__modulo__p_8cpp.html", "de/dab/ncr__modulo__p_8cpp" ],
     [ "number_of_positive_divisors.cpp", "d0/da2/number__of__positive__divisors_8cpp.html", "d0/da2/number__of__positive__divisors_8cpp" ],
+    [ "perimeter.cpp", "d3/dfe/perimeter_8cpp.html", "d3/dfe/perimeter_8cpp" ],
     [ "power_for_huge_numbers.cpp", "df/def/power__for__huge__numbers_8cpp.html", "df/def/power__for__huge__numbers_8cpp" ],
     [ "power_of_two.cpp", "d4/d38/power__of__two_8cpp.html", "d4/d38/power__of__two_8cpp" ],
     [ "prime_factorization.cpp", "db/d0d/prime__factorization_8cpp.html", "db/d0d/prime__factorization_8cpp" ],
