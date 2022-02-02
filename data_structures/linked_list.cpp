@@ -169,7 +169,7 @@ void list::erase(int old_elem) {
     if (t->succ() == nullptr) {
         last = t;
     }
-    if (first == last){
+    if (first == last) {
         last = nullptr;
     }
 }
