@@ -40,10 +40,9 @@ void beadSort(int *a, size_t len) {
 
 // driver function to test the algorithm
 int main() {
-    int a[] = {5, 3, 1, 7, 4, 1, 1, 20};
-    int len = sizeof(a) / sizeof(a[0]);
+    std::array<int, 8> a{5, 3, 1, 7, 4, 1, 1, 20};
 
-    beadSort(a, len);
+    beadSort(a, a.size());
 
     for (auto const& element : a) printf("%d ", element);
 
