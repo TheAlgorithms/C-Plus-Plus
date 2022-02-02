@@ -7,8 +7,9 @@
 #define BEAD(i, j) beads[i * max + j]
 
 // function to perform the above algorithm
-void beadSort(int *a, size_t len) {
-    int max = *std::max_element(a, a + len);
+void beadSort(std::array<int, 8>& a) {
+    auto len = a.size();
+    int max = *std::max_element(std::begin(a), std::end(a));
 
     auto beads = std::make_unique<unsigned char[]>(max * len);
 
@@ -42,7 +43,7 @@ void beadSort(int *a, size_t len) {
 int main() {
     std::array<int, 8> a{5, 3, 1, 7, 4, 1, 1, 20};
 
-    beadSort(a, a.size());
+    beadSort(a);
 
     for (auto const& element : a) printf("%d ", element);
 
