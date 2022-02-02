@@ -14,7 +14,7 @@ void beadSort(int *a, size_t len) {
 
     // mark the beads
     for (int i = 0; i < len; i++)
-        for (int j = 0; j < a[i]; j++) BEAD(i, j) = 1;
+        std::memset(beads.get() + i * max, 1, a[i]);
 
     for (int j = 0; j < max; j++) {
         // count how many beads are on each post
