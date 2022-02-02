@@ -15,18 +15,18 @@ void beadSort(std::array<int, 8>& a) {
     auto index = [&](auto const& i) { return beads.get() + i * max; };
 
     // mark the beads
-    for (int i = 0; i < len; i++) std::memset(index(i), 1, a[i]);
+    for (size_t i = 0; i < len; i++) std::memset(index(i), 1, a[i]);
 
     for (int j = 0; j < max; j++) {
         // count how many beads are on each post
         int sum = 0;
-        for (int i = 0; i < len; i++) {
+        for (size_t i = 0; i < len; i++) {
             sum += BEAD(i, j);
             BEAD(i, j) = 0;
         }
 
         // Move beads down
-        for (int i = len - sum; i < len; i++) BEAD(i, j) = 1;
+        for (size_t i = len - sum; i < len; i++) BEAD(i, j) = 1;
     }
 
     // Put sorted values in array using beads
