@@ -71,7 +71,7 @@ void card_game_class::card_game_function(int number_of_red_card,
               << number_of_blue_card << " blue cards, " << number_of_red_tokens
               << " red tokens, and " << number_of_blue_tokens << " blue tokens."
               << std::endl;
-    // as long as there are cards and tokens left, the players can play
+
     turn_tracker = 0;  // keeps tracks of which turn the player is playing
     while (turn_tracker < total_number_of_turns) {
         std::cout << "Choose the color of your token or quit. The option for "
