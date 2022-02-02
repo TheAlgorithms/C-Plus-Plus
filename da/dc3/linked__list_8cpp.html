@@ -215,49 +215,52 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  233</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\nEnter you choice : &quot;</span>;</div>
 <div class="line"><span class="lineno">  234</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
 <div class="line"><span class="lineno">  235</span>        <span class="keywordflow">switch</span> (choice) {</div>
-<div class="line"><span class="lineno">  236</span>            <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  237</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be inserted : &quot;</span>;</div>
-<div class="line"><span class="lineno">  238</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
-<div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
-<div class="line"><span class="lineno">  241</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
-<div class="line"><span class="lineno">  242</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.push_back(x);</div>
-<div class="line"><span class="lineno">  243</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  244</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  245</span>                }</div>
-<div class="line"><span class="lineno">  246</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  247</span>            <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">  248</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be removed : &quot;</span>;</div>
-<div class="line"><span class="lineno">  249</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
-<div class="line"><span class="lineno">  250</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
-<div class="line"><span class="lineno">  251</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
-<div class="line"><span class="lineno">  252</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.erase(x);</div>
-<div class="line"><span class="lineno">  253</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  254</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  255</span>                }</div>
-<div class="line"><span class="lineno">  256</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  257</span>            <span class="keywordflow">case</span> 3:</div>
-<div class="line"><span class="lineno">  258</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be searched : &quot;</span>;</div>
-<div class="line"><span class="lineno">  259</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
-<div class="line"><span class="lineno">  260</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
-<div class="line"><span class="lineno">  261</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
-<div class="line"><span class="lineno">  262</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;data_structures::linked_list::link&gt;</a> found =</div>
-<div class="line"><span class="lineno">  263</span>                        <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.search(x);</div>
-<div class="line"><span class="lineno">  264</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  265</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  266</span>                }</div>
-<div class="line"><span class="lineno">  267</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  268</span>            <span class="keywordflow">case</span> 4:</div>
-<div class="line"><span class="lineno">  269</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.display();</div>
-<div class="line"><span class="lineno">  270</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  271</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  272</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  273</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Invalid Input\n&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  236</span>            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><span class="lineno">  237</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nQuitting the program...\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  238</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  240</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be inserted : &quot;</span>;</div>
+<div class="line"><span class="lineno">  241</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
+<div class="line"><span class="lineno">  244</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
+<div class="line"><span class="lineno">  245</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.push_back(x);</div>
+<div class="line"><span class="lineno">  246</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  247</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  248</span>                }</div>
+<div class="line"><span class="lineno">  249</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  250</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  251</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be removed : &quot;</span>;</div>
+<div class="line"><span class="lineno">  252</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
+<div class="line"><span class="lineno">  253</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
+<div class="line"><span class="lineno">  254</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
+<div class="line"><span class="lineno">  255</span>                    <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.erase(x);</div>
+<div class="line"><span class="lineno">  256</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  257</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  258</span>                }</div>
+<div class="line"><span class="lineno">  259</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  260</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  261</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the element to be searched : &quot;</span>;</div>
+<div class="line"><span class="lineno">  262</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; s;</div>
+<div class="line"><span class="lineno">  263</span>                <span class="keywordflow">if</span> (data_structures::linked_list::isDigit(s)) {</div>
+<div class="line"><span class="lineno">  264</span>                    x = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/stol.html">std::stoi</a>(s);</div>
+<div class="line"><span class="lineno">  265</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;data_structures::linked_list::link&gt;</a> found =</div>
+<div class="line"><span class="lineno">  266</span>                        <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.search(x);</div>
+<div class="line"><span class="lineno">  267</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  268</span>                    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Wrong Input!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  269</span>                }</div>
+<div class="line"><span class="lineno">  270</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  271</span>            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><span class="lineno">  272</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a>.display();</div>
+<div class="line"><span class="lineno">  273</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  274</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  275</span>        }</div>
-<div class="line"><span class="lineno">  276</span>    } <span class="keywordflow">while</span> (choice != 0);</div>
-<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  278</span>}</div>
+<div class="line"><span class="lineno">  275</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  276</span>                <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Invalid Input\n&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  277</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  278</span>        }</div>
+<div class="line"><span class="lineno">  279</span>    } <span class="keywordflow">while</span> (choice != 0);</div>
+<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  281</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
