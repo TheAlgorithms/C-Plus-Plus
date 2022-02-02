@@ -31,7 +31,8 @@ void beadSort(std::array<int, 8>& a) {
 
     // Put sorted values in array using beads
     for (int i = 0; i < len; i++) {
-        a[i] = std::distance(index(i), std::find(index(i), index(i) + max, 0));
+        auto first{index(i)};
+        a[i] = std::distance(first, std::find(first, first + max, 0));
     }
 }
 
