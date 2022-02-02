@@ -1,16 +1,13 @@
 // C++ program to implement gravity/bead sort
 #include <cstdio>
 #include <cstring>
+#include <algorithm>
 
 #define BEAD(i, j) beads[i * max + j]
 
 // function to perform the above algorithm
 void beadSort(int *a, int len) {
-    // Find the maximum element
-    int max = a[0];
-    for (int i = 1; i < len; i++)
-        if (a[i] > max)
-            max = a[i];
+    int max = *std::max_element(a, a + len);
 
     // allocating memory
     unsigned char *beads = new unsigned char[max * len];
