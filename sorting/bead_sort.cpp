@@ -45,7 +45,9 @@ int main() {
 
     beadSort(a, len);
 
-    for (int i = 0; i < len; i++) printf("%d ", a[i]);
+    for (auto const& element : a) printf("%d ", element);
+
+    printf("\n");
 
     return 0;
 }
