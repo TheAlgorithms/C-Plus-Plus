@@ -1,8 +1,8 @@
 // C++ program to implement gravity/bead sort
+#include <algorithm>
 #include <cstdio>
 #include <cstring>
 #include <memory>
-#include <algorithm>
 
 #define BEAD(i, j) beads[i * max + j]
 
@@ -12,10 +12,10 @@ void beadSort(std::array<int, 8>& a) {
     int max = *std::max_element(std::begin(a), std::end(a));
 
     auto beads = std::make_unique<unsigned char[]>(max * len);
+    auto index = [&](auto const& i) { return beads.get() + i * max; };
 
     // mark the beads
-    for (int i = 0; i < len; i++)
-        std::memset(beads.get() + i * max, 1, a[i]);
+    for (int i = 0; i < len; i++) std::memset(index(i), 1, a[i]);
 
     for (int j = 0; j < max; j++) {
         // count how many beads are on each post
@@ -31,11 +31,7 @@ void beadSort(std::array<int, 8>& a) {
 
     // Put sorted values in array using beads
     for (int i = 0; i < len; i++) {
-        int j;
-        for (j = 0; j < max && BEAD(i, j); j++) {
-        }
-
-        a[i] = j;
+        a[i] = std::distance(index(i), std::find(index(i), index(i) + max, 0));
     }
 }
 
