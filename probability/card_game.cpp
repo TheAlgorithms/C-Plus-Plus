@@ -12,7 +12,7 @@
  * is generated is tossed.
  * @author [Dhrubo Mondal](https://github.com/dhrubo28)
  */
-#include <stdlib.h>
+#include <cstdlib>
 
 #include <iostream>
 #include <string>
