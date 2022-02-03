@@ -7,11 +7,10 @@
 #include <iostream>
 
 /*The parameter dir indicates the sorting direction, ASCENDING
-   or DESCENDING; if (a[i] > a[j]) agrees with the direction,
-   then a[i] and a[j] are interchanged.*/
-void compAndSwap(int a[], int i, int j, int dir) {
-    if (dir == (a[i] > a[j]))
-        std::swap(a[i], a[j]);
+   or DESCENDING; if (a > b) agrees with the direction,
+   then 'a' and 'b' are interchanged.*/
+void compAndSwap(int& a, int& b, int dir) {
+    return dir == a > b ? std::swap(a, b) : void();
 }
 
 /*It recursively sorts a bitonic sequence in ascending order,
@@ -21,7 +20,7 @@ void compAndSwap(int a[], int i, int j, int dir) {
 void bitonicMerge(int a[], int low, int cnt, int dir) {
     if (cnt > 1) {
         int k = cnt / 2;
-        for (int i = low; i < low + k; i++) compAndSwap(a, i, i + k, dir);
+        for (int i = low; i < low + k; i++) compAndSwap(a[i], a[i + k], dir);
         bitonicMerge(a, low, k, dir);
         bitonicMerge(a, low + k, k, dir);
     }
