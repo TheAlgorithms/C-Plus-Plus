@@ -33,12 +33,11 @@ namespace sorting {
  * @returns new array with elements shuffled from a given array
  */
 template <typename T, size_t N>
-std::array <T, N> shuffle (std::array <T, N> arr) {
+auto shuffle (std::array <T, N>& arr) {
     for (int i = 0; i < N; i++) {
         // Swaps i'th  index with random index (less than array size)
         std::swap(arr[i], arr[std::rand() % N]);
     }
-    return arr;
 }
 /**
  * Implement randomized Bogosort algorithm and sort the elements of a given array.

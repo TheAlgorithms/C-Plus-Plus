@@ -7,7 +7,8 @@
 #define BEAD(i, j) beads[i * max + j]
 
 // function to perform the above algorithm
-void beadSort(std::array<int, 8>& a) {
+template <typename T, size_t N>
+void beadSort(std::array<T, N>& a) {
     auto len = a.size();
     int max = *std::max_element(std::begin(a), std::end(a));
 
