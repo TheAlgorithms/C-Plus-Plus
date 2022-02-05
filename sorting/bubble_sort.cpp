@@ -41,6 +41,19 @@ optimized bubble sort algorithm. It's right down there.
 #include <iostream>
 #include <vector>
 
+auto get_n_numbers(std::size_t size) {
+    std::vector<int> numbers;
+    numbers.reserve(size);
+
+    int number{};
+    for (size_t i{}; i < size; ++i) {
+        std::cin >> number;
+        numbers.push_back(number);
+    }
+
+    return numbers;
+}
+
 auto print(std::vector<int> const& numbers) {
     if (numbers.empty())
         return;
@@ -57,15 +70,9 @@ int main() {
     bool swap_check = true;
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
-    std::vector<int> numbers;
     std::cout << "Enter " << n << " numbers: ";
-    int num;
 
-    // Input
-    for (int i = 0; i < n; i++) {
-        std::cin >> num;
-        numbers.push_back(num);
-    }
+    auto numbers = get_n_numbers(n);
 
     // Bubble Sorting
     for (int i = 0; (i < n) && (swap_check); i++) {
