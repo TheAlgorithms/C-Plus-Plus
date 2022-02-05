@@ -37,8 +37,20 @@ can't get the best status in the code we shared above. This happens on the
 optimized bubble sort algorithm. It's right down there.
 */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
+
+auto print(std::vector<int> const& numbers) {
+    if (numbers.empty())
+        return;
+
+    std::cout << numbers[0];
+
+    std::for_each(begin(numbers) + 1, end(numbers),
+                  [](auto number) { std::cout << ", " << number; });
+    std::cout << '\n';
+}
 
 int main() {
     int n;
@@ -70,14 +82,8 @@ int main() {
         }
     }
 
-    // Output
     std::cout << "\nSorted Array : ";
-    for (int i = 0; i < numbers.size(); i++) {
-        if (i != numbers.size() - 1) {
-            std::cout << numbers[i] << ", ";
-        } else {
-            std::cout << numbers[i] << std::endl;
-        }
-    }
+    print(numbers);
+
     return 0;
 }
