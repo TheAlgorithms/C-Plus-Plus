@@ -30,7 +30,7 @@ namespace sorting {
  * @tparam T typename of the array
  * @tparam N length of array
  * @param arr array to shuffle
- * @returns new array with elements shuffled from a given array
+ * @returns void
  */
 template <typename T, size_t N>
 auto shuffle (std::array <T, N>& arr) {
