@@ -34,7 +34,7 @@ namespace sorting {
  */
 template <typename T, size_t N>
 auto shuffle (std::array <T, N>& arr) {
-    for (int i = 0; i < N; i++) {
+    for (size_t i = 0; i < N; i++) {
         // Swaps i'th  index with random index (less than array size)
         std::swap(arr[i], arr[std::rand() % N]);
     }
