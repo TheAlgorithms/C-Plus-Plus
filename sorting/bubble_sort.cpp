@@ -66,8 +66,7 @@ auto print(std::vector<int> const& numbers) {
 }
 
 int main() {
-    int n;
-    bool swap_check = true;
+    std::size_t n{};
     std::cout << "Enter the amount of numbers to sort: ";
     std::cin >> n;
     std::cout << "Enter " << n << " numbers: ";
@@ -75,6 +74,7 @@ int main() {
     auto numbers = get_n_numbers(n);
 
     // Bubble Sorting
+    bool swap_check = true;
     for (int i = 0; (i < n) && (swap_check); i++) {
         swap_check = false;
         for (int j = 0; j < n - 1 - i; j++) {
