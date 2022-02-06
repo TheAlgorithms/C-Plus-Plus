@@ -54,6 +54,25 @@ auto get_n_numbers(std::size_t size) {
     return numbers;
 }
 
+auto bubble_sort(std::vector<int>& numbers) {
+    auto array_size{numbers.size()};
+    bool swap_check = true;
+
+    for (int i = 0; (i < array_size) && (swap_check); i++) {
+        swap_check = false;
+        for (int j = 0; j < array_size - 1 - i; j++) {
+            if (numbers[j] > numbers[j + 1]) {
+                swap_check = true;
+                std::swap(numbers[j],
+                          numbers[j + 1]);  // by changing swap location.
+                                            // I mean, j. If the number is
+                                            // greater than j + 1, then it
+                                            // means the location.
+            }
+        }
+    }
+}
+
 auto print(std::vector<int> const& numbers) {
     if (numbers.empty())
         return;
@@ -73,21 +92,7 @@ int main() {
 
     auto numbers = get_n_numbers(n);
 
-    // Bubble Sorting
-    bool swap_check = true;
-    for (int i = 0; (i < n) && (swap_check); i++) {
-        swap_check = false;
-        for (int j = 0; j < n - 1 - i; j++) {
-            if (numbers[j] > numbers[j + 1]) {
-                swap_check = true;
-                std::swap(numbers[j],
-                          numbers[j + 1]);  // by changing swap location.
-                                            // I mean, j. If the number is
-                                            // greater than j + 1, then it
-                                            // means the location.
-            }
-        }
-    }
+    bubble_sort(numbers);
 
     std::cout << "\nSorted Array : ";
     print(numbers);
