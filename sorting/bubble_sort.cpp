@@ -60,6 +60,12 @@ auto get_n_numbers(std::size_t size) {
     return numbers;
 }
 
+/**
+ * @brief function that implements bubble sorting
+ * 
+ * @param numbers array of numbers to be sorted 
+ * @return void
+ */
 auto bubble_sort(std::vector<int>& numbers) {
     auto array_size{numbers.size()};
     bool swap_check = true;
