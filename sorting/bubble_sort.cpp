@@ -43,7 +43,7 @@ optimized bubble sort algorithm. It's right down there.
 
 /**
  * @brief Get the n numbers object
- * 
+ *
  * @param size the number of elements in the container to be returned
  * @return a std::vector<int>
  */
@@ -62,8 +62,8 @@ auto get_n_numbers(std::size_t size) {
 
 /**
  * @brief function that implements bubble sorting
- * 
- * @param numbers array of numbers to be sorted 
+ *
+ * @param numbers array of numbers to be sorted
  * @return void
  */
 auto bubble_sort(std::vector<int>& numbers) {
@@ -85,6 +85,12 @@ auto bubble_sort(std::vector<int>& numbers) {
     }
 }
 
+/**
+ * @brief function for printing elements in an array
+ *
+ * @param numbers array of numbers to be printed
+ * @return void
+ */
 auto print(std::vector<int> const& numbers) {
     if (numbers.empty())
         return;
