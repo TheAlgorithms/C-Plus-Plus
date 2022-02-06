@@ -41,6 +41,12 @@ optimized bubble sort algorithm. It's right down there.
 #include <iostream>
 #include <vector>
 
+/**
+ * @brief Get the n numbers object
+ * 
+ * @param size the number of elements in the container to be returned
+ * @return a std::vector<int>
+ */
 auto get_n_numbers(std::size_t size) {
     std::vector<int> numbers;
     numbers.reserve(size);
