@@ -21,7 +21,7 @@ Being a contributor at The Algorithms, we request you to follow the points menti
 
 **New implementation** New implementations are welcome!
 
-You can add new algorithms or data structures which are **not present in the repository** or that can **improve** the old implementations (**documentation**, **improving test cases**, removing bugs or in any other resonable sense)
+You can add new algorithms or data structures which are **not present in the repository** or that can **improve** the old implementations (**documentation**, **improving test cases**, removing bugs or in any other reasonable sense)
 
 **Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.
 
@@ -32,7 +32,7 @@ You can add new algorithms or data structures which are **not present in the rep
 - Please use the directory structure of the repository.
 - Make sure the file extensions should be `*.hpp`, `*.h` or `*.cpp`.
 - Don't use **`bits/stdc++.h`** because this is quite Linux-specific and slows down the compilation process.
-- Organize your code using **`struct`**, **`class`**, and/or **`namespace`** keywords
+- Organize your code using **`struct`**, **`class`**, and/or **`namespace`** keywords.
 - If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
@@ -208,7 +208,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 
 #### Code Formatter
 
-[`__clang-format__`](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
+[`__clang-format__`](https://clang.llvm.org/docs/ClangFormat.html) is used for code formatting.
 
 - Installation (only needs to be installed once.)
   - Mac (using home-brew): `brew install clang-format`
