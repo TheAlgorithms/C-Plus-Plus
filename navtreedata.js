@@ -142,16 +142,16 @@ var NAVTREEINDEX =
 "d1/d83/classuint256__t.html#a90ce75bec5b525de55bbf92c564a2261",
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a",
 "d4/d32/inorder__successor__of__bst_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",
-"d5/d4c/group__sorting.html#ga135e4c638e3bcf548bd122b5f49a3e72",
-"d6/d30/classmachine__learning_1_1adaline.html#a4cd8fe438032fedaa66f93bfd66f5492",
-"d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea",
-"d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e",
-"d9/dde/classbinary__search__tree.html#af9a2c7c187a7ca3142c77ce342ef3153",
-"db/d01/brent__method__extrema_8cpp.html#a0283886819c7c140a023582b7269e2d0",
-"dc/d5a/rat__maze_8cpp.html",
-"dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725",
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abb44646a26a446efae7704c80efc011b",
-"functions_~.html"
+"d5/d4c/group__sorting.html",
+"d6/d30/classmachine__learning_1_1adaline.html#a28160d17e492597a2f112e0d38551cda",
+"d7/d75/postfix__evaluation_8cpp.html#a5b97d12e8b61484f756a8721992bfae1",
+"d8/d95/vector__ops_8hpp_source.html",
+"d9/dde/classbinary__search__tree.html#ad9912e8574538e86f9bd2c38e7e63d03",
+"db/d01/brent__method__extrema_8cpp.html",
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"dd/d47/namespacemath.html#ad0acf82b7bc920182bf8322d1e103953",
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#ab6a17a04aa93aaaef71e038e8cc2edeb",
+"functions_x.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -100,10 +100,11 @@ $(document).ready(function(){initNavTree('d4/d38/power__of__two_8cpp.html','../.
 <p>Implementation to check whether a number is a power of 2 or not.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for power_of_two.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dad/power__of__two_8cpp__incl.svg" width="172" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/dad/power__of__two_8cpp__incl.svg" width="175" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -115,9 +116,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">math::power_of_two</a> (int n)</td></tr>
-<tr class="memdesc:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to test above algorithm.  <a href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">More...</a><br /></td></tr>
-<tr class="separator:a89ab7d6c3e3ee72a8cbaa85127986185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a> (int n)</td></tr>
+<tr class="memdesc:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds whether a number is power of 2 or not.  <a href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">More...</a><br /></td></tr>
+<tr class="separator:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d38/power__of__two_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d4/d38/power__of__two_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">More...</a><br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd6be45be425ae28c62ce3bfb4b40dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d38/power__of__two_8cpp.html#adfd6be45be425ae28c62ce3bfb4b40dc">user_input_test</a> ()</td></tr>
+<tr class="memdesc:adfd6be45be425ae28c62ce3bfb4b40dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take user input in the test cases (optional; currently commented)  <a href="../../d4/d38/power__of__two_8cpp.html#adfd6be45be425ae28c62ce3bfb4b40dc">More...</a><br /></td></tr>
+<tr class="separator:adfd6be45be425ae28c62ce3bfb4b40dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d38/power__of__two_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="../../d4/d38/power__of__two_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +136,9 @@ Functions</h2></td></tr>
 Algorithm</h3>
 <p >Let the input number be n, then the bitwise and between n and n-1 will let us know whether the number is power of 2 or not</p>
 <p >For Example, If N= 32 then N-1 is 31, if we perform bitwise and of these two numbers then the result will be zero, which indicates that it is the power of 2 If N=23 then N-1 is 22, if we perform bitwise and of these two numbers then the result will not be zero , which indicates that it is not the power of 2 </p><dl class="section note"><dt>Note</dt><dd>This implementation is better than naive recursive or iterative approach.</dd></dl>
-<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/neha-hasija17" target="_blank">Neha Hasija</a> </dd></dl>
+<dl class="section author"><dt>Author</dt><dd><a href="https://github.com/neha-hasija17" target="_blank">Neha Hasija</a> </dd>
+<dd>
+<a href="https://github.com/Rijul24" target="_blank">Rijul.S</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
@@ -149,30 +158,120 @@ Algorithm</h3>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<p >n stores the input from the user</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>           {</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="../../d4/d38/power__of__two_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>(); <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// uncomment the line below to take user inputs</span></div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">//user_input_test();</span></div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="apower__of__two_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d4/d38/power__of__two_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> power_of_two.cpp:59</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d38/power__of__two_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="342" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&nbsp;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                   {</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;First case testing... \n&quot;</span>; <span class="comment">// for n = 32 return 1</span></div>
+<div class="line"><span class="lineno">   61</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a>(32) == 1);</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Second case testing... \n&quot;</span>; <span class="comment">// for n = 5 return 0</span></div>
+<div class="line"><span class="lineno">   65</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a>(5) == 0);</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Third case testing... \n&quot;</span>; <span class="comment">// for n = 232 return 0</span></div>
+<div class="line"><span class="lineno">   69</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a>(232) == 0);</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nPassed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nAll test cases have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="anamespacemath_html_a8a48be4d7f14e34c5c92925bc1cbf3bb"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a></div><div class="ttdeci">int power_of_two(int n)</div><div class="ttdoc">This function finds whether a number is power of 2 or not.</div><div class="ttdef"><b>Definition:</b> power_of_two.cpp:42</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d38/power__of__two_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="243" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adfd6be45be425ae28c62ce3bfb4b40dc" name="adfd6be45be425ae28c62ce3bfb4b40dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd6be45be425ae28c62ce3bfb4b40dc">&#9670;&nbsp;</a></span>user_input_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void user_input_test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Take user input in the test cases (optional; currently commented) </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p >function call with</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>           {</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">int</span> n = 0;<span class="comment"></span></div>
-<div class="line"><span class="lineno">   60</span><span class="comment">    /// n stores the input from the user</span></div>
-<div class="line"><span class="lineno">   61</span><span class="comment"></span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;enter a number &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;<span class="comment"></span></div>
-<div class="line"><span class="lineno">   63</span><span class="comment">    /// function call with @param n</span></div>
-<div class="line"><span class="lineno">   64</span><span class="comment"></span>    <a class="code hl_function" href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">math::power_of_two</a>(n);</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   66</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                       {</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordtype">int</span> n = 0; <span class="comment">// input from user</span></div>
+<div class="line"><span class="lineno">   81</span>    </div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter a number &quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n; </div>
+<div class="line"><span class="lineno">   84</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   85</span><span class="comment">    /// function call with @param n</span></div>
+<div class="line"><span class="lineno">   86</span><span class="comment"></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code hl_function" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">math::power_of_two</a>(n);</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (result == 1) {</div>
+<div class="line"><span class="lineno">   88</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Yes, the number &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; is a power of 2\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">else</span> { </div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;No, the number &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot; is not a power of 2\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacemath_html_a89ab7d6c3e3ee72a8cbaa85127986185"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">math::power_of_two</a></div><div class="ttdeci">void power_of_two(int n)</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition:</b> power_of_two.cpp:36</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d38/power__of__two_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="250" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d38/power__of__two_8cpp_adfd6be45be425ae28c62ce3bfb4b40dc_cgraph.svg" width="310" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

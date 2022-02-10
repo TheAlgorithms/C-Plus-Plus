@@ -48,7 +48,7 @@ var namespacemath =
     [ "parallelogram_area", "dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f", null ],
     [ "parallelogram_perimeter", "dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3", null ],
     [ "power", "dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d", null ],
-    [ "power_of_two", "dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185", null ],
+    [ "power_of_two", "dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb", null ],
     [ "pyramid_volume", "dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c", null ],
     [ "rect_area", "dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca", null ],
     [ "rect_perimeter", "dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6", null ],
