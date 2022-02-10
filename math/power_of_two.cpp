@@ -46,9 +46,9 @@ int power_of_two(int n) {
     
     if (result == 0) {
         return 1;
-    } else {
-        return 0;
     }
+
+    return 0;
 }
 }  // namespace math
 
