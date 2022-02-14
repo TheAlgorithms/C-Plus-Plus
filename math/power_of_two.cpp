@@ -22,9 +22,8 @@
  * @author [Rijul.S](https://github.com/Rijul24)
  */
 
-#include <iostream>  /// for IO operations
 #include <cassert>   /// for assert
-
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace math
@@ -43,7 +42,7 @@ int power_of_two(int n) {
     /// result stores the
     /// bitwise and of n and n-1
     int result = n & (n - 1);
-    
+
     if (result == 0) {
         return 1;
     }
@@ -57,15 +56,15 @@ int power_of_two(int n) {
  * @returns void
  */
 static void test() {
-    std::cout << "First case testing... \n"; // for n = 32 return 1
+    std::cout << "First case testing... \n";  // for n = 32 return 1
     assert(math::power_of_two(32) == 1);
     std::cout << "\nPassed!\n";
 
-    std::cout << "Second case testing... \n"; // for n = 5 return 0
+    std::cout << "Second case testing... \n";  // for n = 5 return 0
     assert(math::power_of_two(5) == 0);
     std::cout << "\nPassed!\n";
 
-    std::cout << "Third case testing... \n"; // for n = 232 return 0
+    std::cout << "Third case testing... \n";  // for n = 232 return 0
     assert(math::power_of_two(232) == 0);
     std::cout << "\nPassed!\n";
 
@@ -77,17 +76,16 @@ static void test() {
  * @returns void
  */
 void user_input_test() {
-    int n = 0; // input from user
-    
+    int n = 0;  // input from user
+
     std::cout << "Enter a number " << std::endl;
-    std::cin >> n; 
+    std::cin >> n;
 
     /// function call with @param n
     int result = math::power_of_two(n);
     if (result == 1) {
         std::cout << "Yes, the number " << n << " is a power of 2\n";
-    }
-    else { 
+    } else {
         std::cout << "No, the number " << n << " is not a power of 2\n";
     }
 }
@@ -97,10 +95,10 @@ void user_input_test() {
  * @returns 0 on exit
  */
 int main() {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
 
     // uncomment the line below to take user inputs
-    //user_input_test();
+    // user_input_test();
 
     return 0;
 }
