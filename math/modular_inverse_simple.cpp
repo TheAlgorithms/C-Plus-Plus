@@ -13,8 +13,6 @@
 #include <cassert>
 #include <iostream>
 
-using namespace std;
-
 /**
  * @brief Function imod
  *  Responsible for calculating the modular inverse from x % y
@@ -39,23 +37,22 @@ int imod(int x, int y) {
  * @returns void
  */
 static void test() {
-    cout << "First case testing... \n";
+    std::cout << "First case testing... \n";
     // for a = 3 and b = 11 return 4
-    cout << imod(3, 11) << endl;
     assert(imod(3, 11) == 4);
-    cout << "\nPassed!\n";
+    std::cout << "\nPassed!\n";
 
-    cout << "Second case testing... \n";
+    std::cout << "Second case testing... \n";
     // for a = 3 and b = 26 return 9
     assert(imod(3, 26) == 9);
-    cout << "\nPassed!\n";
+    std::cout << "\nPassed!\n";
 
-    cout << "Third case testing... \n";
+    std::cout << "Third case testing... \n";
     // for a = 7 and b = 26 return 15
     assert(imod(7, 26) == 15);
-    cout << "\nPassed!\n";
+    std::cout << "\nPassed!\n";
 
-    cout << "\nAll test cases have successfully passed!\n";
+    std::cout << "\nAll test cases have successfully passed!\n";
 }
 /**
  * @brief Main function
