@@ -13,10 +13,6 @@
 #include <cassert>
 #include <iostream>
 
-// Macro
-#define Key(A)       (A)
-#define module(A, B) (Key(A) % Key(B))
-
 using namespace std;
 
 /**
@@ -27,13 +23,13 @@ using namespace std;
  * @returns the modular inverse
  */
 int imod(int x, int y) {
-    int aux;
+    int aux = 0;
     int itr = 0;
 
     do {  // run the algorithm while not find the inverse
         aux = y * itr + 1;
         itr++;
-    } while (module(aux, x));  // while module(aux, x) is different of zero
+    } while (aux % x);  // while module aux % x is different of zero
 
     return aux / x;
 }
