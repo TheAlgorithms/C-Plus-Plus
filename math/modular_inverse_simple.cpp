@@ -10,8 +10,8 @@
  * https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
  */
 
-#include <cassert>
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @brief Function imod
@@ -20,9 +20,9 @@
  * @param y number
  * @returns the modular inverse
  */
-int imod(int x, int y) {
-    int aux = 0;
-    int itr = 0;
+uint64_t imod(uint64_t x, uint64_t y) {  // positive integer expected
+    uint64_t aux = 0;                    // auxiliary variable
+    uint64_t itr = 0;                    // iteration counter
 
     do {  // run the algorithm while not find the inverse
         aux = y * itr + 1;
@@ -33,7 +33,7 @@ int imod(int x, int y) {
 }
 
 /**
- * @brief Some test cases
+ * @brief  self-test implementations
  * @returns void
  */
 static void test() {
@@ -59,5 +59,5 @@ static void test() {
  * @returns 0 on exit
  */
 int main() {
-    test();  // run tests implementations
+    test();  // run  self-test implementations
 };
