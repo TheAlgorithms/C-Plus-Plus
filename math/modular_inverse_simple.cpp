@@ -27,7 +27,8 @@ using namespace std;
  * @returns the modular inverse
  */
 int imod(int x, int y) {
-    int aux, itr = 0;
+    int aux;
+    int itr = 0;
 
     do {  // run the algorithm while not find the inverse
         aux = y * itr + 1;
