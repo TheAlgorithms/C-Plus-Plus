@@ -13,9 +13,9 @@ void bucketSort(std::array<T, N>& arr) {
     auto bucket = std::make_unique<std::vector<float>[]>(arr_size);
 
     // 2) Put array elements in different buckets
-    for (std::size_t i = 0; i < arr_size; i++) {
-        std::size_t index = arr_size * arr[i];  // Index in bucket
-        bucket[index].emplace_back(arr[i]);
+    for (auto const& elem : arr) {
+        std::size_t index = arr_size * elem;
+        bucket[index].emplace_back(elem);
     }
 
     // 3) Sort individual buckets
