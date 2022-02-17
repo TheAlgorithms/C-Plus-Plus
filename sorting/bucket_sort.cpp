@@ -9,27 +9,26 @@ template <typename T, std::size_t N>
 void bucketSort(std::array<T, N>& arr) {
     auto arr_size = arr.size();
     // 1) Create n empty buckets
-    std::vector<float> *b = new std::vector<float>[arr_size];
+    std::vector<float> *bucket = new std::vector<float>[arr_size];
 
     // 2) Put array elements in different buckets
     for (std::size_t i = 0; i < arr_size; i++) {
         int bi = arr_size * arr[i];  // Index in bucket
-        b[bi].push_back(arr[i]);
+        bucket[bi].push_back(arr[i]);
     }
 
     // 3) Sort individual buckets
-    for (std::size_t i = 0; i < arr_size; i++) std::sort(b[i].begin(), b[i].end());
+    for (std::size_t i = 0; i < arr_size; i++) std::sort(bucket[i].begin(), bucket[i].end());
 
     // 4) Concatenate all buckets into arr[]
     int index = 0;
     for (std::size_t i = 0; i < arr_size; i++)
-        for (std::size_t j = 0; j < b[i].size(); j++) arr[index++] = b[i][j];
-    delete[] b;
+        for (std::size_t j = 0; j < bucket[i].size(); j++) arr[index++] = bucket[i][j];
+    delete[] bucket;
 }
 
 /* Driver program to test above funtion */
 int main() {
-    // float arr[] = {0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
     std::array<float, 6> arr{0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
     int n = sizeof(arr) / sizeof(arr[0]);
     bucketSort(arr);
