@@ -28,13 +28,20 @@ void bucketSort(std::array<T, N>& arr) {
             arr[index] = buckets[i][j];
 }
 
+template <typename T, std::size_t N>
+auto print(std::array<T, N> arr) {
+    std::cout << "Sorted array is \n";
+
+    for (auto const& elem : arr) std::cout << elem << ' ';
+    std::cout << std::endl;
+}
+
 /* Driver program to test above funtion */
 int main() {
     std::array<float, 6> arr{0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    bucketSort(arr);
 
-    std::cout << "Sorted array is \n";
-    for (int i = 0; i < n; i++) std::cout << arr[i] << " ";
+    bucketSort(arr);
+    print(arr);
+
     return 0;
 }
