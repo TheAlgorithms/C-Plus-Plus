@@ -36,7 +36,7 @@ auto print(std::array<T, N> arr) {
     std::cout << std::endl;
 }
 
-/* Driver program to test above funtion */
+/* Driver program to test above function */
 int main() {
     std::array<float, 6> arr{0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
 
