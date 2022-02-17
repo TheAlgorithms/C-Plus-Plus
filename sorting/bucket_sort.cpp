@@ -10,21 +10,21 @@ template <typename T, std::size_t N>
 void bucketSort(std::array<T, N>& arr) {
     auto arr_size = arr.size();
     // 1) Create n empty buckets
-    auto bucket = std::make_unique<std::vector<float>[]>(arr_size);
+    auto buckets = std::make_unique<std::vector<float>[]>(arr_size);
 
     // 2) Put array elements in different buckets
     for (auto const& elem : arr) {
         std::size_t index = arr_size * elem;
-        bucket[index].emplace_back(elem);
+        buckets[index].emplace_back(elem);
     }
 
     // 3) Sort individual buckets
-    for (std::size_t i = 0; i < arr_size; i++) std::sort(bucket[i].begin(), bucket[i].end());
+    for (std::size_t i = 0; i < arr_size; i++) std::sort(buckets[i].begin(), buckets[i].end());
 
     // 4) Concatenate all buckets into arr[]
     int index = 0;
     for (std::size_t i = 0; i < arr_size; i++)
-        for (std::size_t j = 0; j < bucket[i].size(); j++) arr[index++] = bucket[i][j];
+        for (std::size_t j = 0; j < buckets[i].size(); j++) arr[index++] = buckets[i][j];
 }
 
 /* Driver program to test above funtion */
