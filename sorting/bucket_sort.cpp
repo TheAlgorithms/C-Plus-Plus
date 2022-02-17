@@ -7,22 +7,22 @@
 // Function to sort arr[] of size n using bucket sort
 template <typename T, std::size_t N>
 void bucketSort(std::array<T, N>& arr) {
-    auto n = arr.size();
+    auto arr_size = arr.size();
     // 1) Create n empty buckets
-    std::vector<float> *b = new std::vector<float>[n];
+    std::vector<float> *b = new std::vector<float>[arr_size];
 
     // 2) Put array elements in different buckets
-    for (int i = 0; i < n; i++) {
-        int bi = n * arr[i];  // Index in bucket
+    for (int i = 0; i < arr_size; i++) {
+        int bi = arr_size * arr[i];  // Index in bucket
         b[bi].push_back(arr[i]);
     }
 
     // 3) Sort individual buckets
-    for (int i = 0; i < n; i++) std::sort(b[i].begin(), b[i].end());
+    for (int i = 0; i < arr_size; i++) std::sort(b[i].begin(), b[i].end());
 
     // 4) Concatenate all buckets into arr[]
     int index = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < arr_size; i++)
         for (int j = 0; j < b[i].size(); j++) arr[index++] = b[i][j];
     delete[] b;
 }
