@@ -19,12 +19,13 @@ void bucketSort(std::array<T, N>& arr) {
     }
 
     // 3) Sort individual buckets
-    for (std::size_t i = 0; i < arr_size; i++) std::sort(buckets[i].begin(), buckets[i].end());
+    for (std::size_t i = 0; i < arr_size; i++)
+        std::sort(buckets[i].begin(), buckets[i].end());
 
     // 4) Concatenate all buckets into arr[]
-    int index = 0;
-    for (std::size_t i = 0; i < arr_size; i++)
-        for (std::size_t j = 0; j < buckets[i].size(); j++) arr[index++] = buckets[i][j];
+    for (std::size_t i{}, index{}; i < arr_size; ++i)
+        for (std::size_t j{}; j < buckets[i].size(); ++j, ++index)
+            arr[index] = buckets[i][j];
 }
 
 /* Driver program to test above funtion */
