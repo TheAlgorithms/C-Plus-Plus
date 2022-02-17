@@ -13,8 +13,8 @@ void bucketSort(std::array<T, N>& arr) {
 
     // 2) Put array elements in different buckets
     for (std::size_t i = 0; i < arr_size; i++) {
-        int bi = arr_size * arr[i];  // Index in bucket
-        bucket[bi].push_back(arr[i]);
+        std::size_t index = arr_size * arr[i];  // Index in bucket
+        bucket[index].push_back(arr[i]);
     }
 
     // 3) Sort individual buckets
