@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <array>
 #include <iostream>
+#include <memory>
 #include <vector>
 
 // Function to sort arr[] of size n using bucket sort
@@ -9,7 +10,7 @@ template <typename T, std::size_t N>
 void bucketSort(std::array<T, N>& arr) {
     auto arr_size = arr.size();
     // 1) Create n empty buckets
-    std::vector<float> *bucket = new std::vector<float>[arr_size];
+    auto bucket = std::make_unique<std::vector<float>[]>(arr_size);
 
     // 2) Put array elements in different buckets
     for (std::size_t i = 0; i < arr_size; i++) {
@@ -24,7 +25,6 @@ void bucketSort(std::array<T, N>& arr) {
     int index = 0;
     for (std::size_t i = 0; i < arr_size; i++)
         for (std::size_t j = 0; j < bucket[i].size(); j++) arr[index++] = bucket[i][j];
-    delete[] bucket;
 }
 
 /* Driver program to test above funtion */
