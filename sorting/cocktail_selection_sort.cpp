@@ -9,28 +9,28 @@
 
 // Iterative Version
 
-void CocktailSelectionSort(std::vector<int> *vec, int low, int high) {
+void CocktailSelectionSort(std::vector<int> &vec, int low, int high) {
     while (low <= high) {
-        int minimum = (*vec)[low];
+        int minimum = vec[low];
         int minimumindex = low;
-        int maximum = (*vec)[high];
+        int maximum = vec[high];
         int maximumindex = high;
 
         for (int i = low; i <= high; i++) {
-            if ((*vec)[i] >= maximum) {
-                maximum = (*vec)[i];
+            if (vec[i] >= maximum) {
+                maximum = vec[i];
                 maximumindex = i;
             }
-            if ((*vec)[i] <= minimum) {
-                minimum = (*vec)[i];
+            if (vec[i] <= minimum) {
+                minimum = vec[i];
                 minimumindex = i;
             }
         }
         if (low != maximumindex || high != minimumindex) {
-            std::swap((*vec)[low], (*vec)[minimumindex]);
-            std::swap((*vec)[high], (*vec)[maximumindex]);
+            std::swap(vec[low], vec[minimumindex]);
+            std::swap(vec[high], vec[maximumindex]);
         } else {
-            std::swap((*vec)[low], (*vec)[high]);
+            std::swap(vec[low], vec[high]);
         }
 
         low++;
@@ -66,7 +66,7 @@ void CocktailSelectionSort_v2(std::vector<int> *vec, int low, int high) {
         std::swap((*vec)[low], (*vec)[high]);
     }
 
-    CocktailSelectionSort(vec, low + 1, high - 1);
+    CocktailSelectionSort(*vec, low + 1, high - 1);
 }
 
 // main function, select any one of iterative or recursive version
@@ -86,7 +86,7 @@ int main() {
     std::cin >> method;
 
     if (method == 0) {
-        CocktailSelectionSort(&v, 0, n - 1);
+        CocktailSelectionSort(v, 0, n - 1);
     } else if (method == 1) {
         CocktailSelectionSort_v2(&v, 0, n - 1);
     } else {
