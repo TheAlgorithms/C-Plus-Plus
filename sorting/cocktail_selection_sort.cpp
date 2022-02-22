@@ -91,9 +91,9 @@ int main() {
     }
 
     std::cout << "Enter method: \n\t0: iterative\n\t1: recursive:\t";
-
+    
+    int method;
     do {
-        int method;
         std::cin >> method;
 
         method == 0   ? CocktailSelectionSort(v, 0, n - 1)
