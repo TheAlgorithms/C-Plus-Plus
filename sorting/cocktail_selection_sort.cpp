@@ -5,6 +5,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 #include <vector>
 
 // Iterative Version
@@ -94,9 +95,8 @@ int main() {
         return -1;
     }
     std::cout << "Sorted elements are\n";
-    for (int i = 0; i < n; ++i) {
-        std::cout << v[i] << " ";
-    }
-
+    std::copy(begin(v), end(v), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << std::endl;
+    
     return 0;
 }
