@@ -70,6 +70,10 @@ void CocktailSelectionSort_v2(std::vector<int> &vec, int low, int high) {
     CocktailSelectionSort(vec, low + 1, high - 1);
 }
 
+void unknown_method() {
+    std::cerr << "Please enter [0/1] to seclect method: ";
+}
+
 // main function, select any one of iterative or recursive version
 
 int main() {
@@ -82,21 +86,20 @@ int main() {
         std::cin >> v[i];
     }
 
-    int method;
     std::cout << "Enter method: \n\t0: iterative\n\t1: recursive:\t";
-    std::cin >> method;
 
-    if (method == 0) {
-        CocktailSelectionSort(v, 0, n - 1);
-    } else if (method == 1) {
-        CocktailSelectionSort_v2(v, 0, n - 1);
-    } else {
-        std::cerr << "Unknown method" << std::endl;
-        return -1;
-    }
+    do {
+        int method;
+        std::cin >> method;
+
+        method == 0   ? CocktailSelectionSort(v, 0, n - 1)
+        : method == 1 ? CocktailSelectionSort_v2(v, 0, n - 1)
+                      : unknown_method();
+    } while (method != 0 && method != 1);
+
     std::cout << "Sorted elements are\n";
     std::copy(begin(v), end(v), std::ostream_iterator<int>(std::cout, " "));
     std::cout << std::endl;
-    
+
     return 0;
 }
