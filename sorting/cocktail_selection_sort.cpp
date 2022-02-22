@@ -103,7 +103,7 @@ int main() {
                         : unknown_method();
     } while (std::cin.fail() || method != 0 && method != 1);
 
-    std::cout << "Sorted elements are\n";
+    std::cout << "\nSorted elements are: ";
     std::copy(begin(v), end(v), std::ostream_iterator<int>(std::cout, " "));
     std::cout << std::endl;
 
