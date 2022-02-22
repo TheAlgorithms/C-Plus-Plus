@@ -70,6 +70,10 @@ void CocktailSelectionSort_v2(std::vector<int> &vec, int low, int high) {
     CocktailSelectionSort(vec, low + 1, high - 1);
 }
 
+/**
+ * @brief the function called when the user enters a either than 0/1 
+ * 
+ */
 void unknown_method() {
     std::cerr << "Please enter [0/1] to seclect method: ";
 }
