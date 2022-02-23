@@ -105,14 +105,7 @@ void execute_method(std::vector<int> &v, int option) {
 // main function, select any one of iterative or recursive version
 
 int main() {
-    int n;
-    std::cout << "Enter number of elements\n";
-    std::cin >> n;
-    std::vector<int> v(n);
-    std::cout << "Enter all the elements\n";
-    for (int i = 0; i < n; ++i) {
-        std::cin >> v[i];
-    }
+    std::vector<int> v{3, 2, 1, 0, 9, 5, 8, 21, 19, 9};
 
     execute_method(v, user_input());
 
