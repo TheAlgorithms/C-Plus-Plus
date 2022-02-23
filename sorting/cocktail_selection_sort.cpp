@@ -73,8 +73,8 @@ void CocktailSelectionSort_v2(std::vector<int> &vec, int low, int high) {
 
 /**
  * @brief Get user's input - 0 or 1
- * 
- * @return user's option 
+ *
+ * @return user's option
  */
 int user_input() {
     int option{};
@@ -83,7 +83,8 @@ int user_input() {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
-        std::cout << "Please select an option 0 -> iterative or 1 -> recursive: ";
+        std::cout
+            << "Please select an option 0 -> iterative or 1 -> recursive: ";
         std::cin >> option;
     } while (std::cin.fail() || option < 0 || option > 1);
 
