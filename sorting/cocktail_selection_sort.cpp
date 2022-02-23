@@ -72,12 +72,31 @@ void CocktailSelectionSort_v2(std::vector<int> &vec, int low, int high) {
 }
 
 /**
+ * @brief Get user's input - 0 or 1
+ * 
+ * @return user's option 
+ */
+int user_input() {
+    int option{};
+    do {
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
+        std::cout << "Please select an option 0 -> iterative or 1 -> recursive: ";
+        std::cin >> option;
+    } while (std::cin.fail() || option < 0 || option > 1);
+
+    return option;
+}
+
+/**
  * @brief a function that calls the iterative or recursive version of cocktail
  * selection sort based on the users selection
  *
  * @param option input from the user
  */
-void execute_method(std::vector<int>& v, int option) {
+void execute_method(std::vector<int> &v, int option) {
     auto last_index = v.size() - 1;
     return !option ? CocktailSelectionSort(v, 0, last_index)
                    : CocktailSelectionSort_v2(v, 0, last_index);
@@ -95,9 +114,7 @@ int main() {
         std::cin >> v[i];
     }
 
-    std::cout << "Enter method: \n\t0: iterative\n\t1: recursive:\t";
-
-    execute_method(v, user_input(0, 1));
+    execute_method(v, user_input());
 
     std::cout << "\nSorted elements are: ";
     std::copy(begin(v), end(v), std::ostream_iterator<int>(std::cout, " "));
