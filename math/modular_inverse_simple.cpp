@@ -3,7 +3,7 @@
  * @brief simple implementation of modular multiplicative inverse
  *
  * @details
- * this algorithm calculates the modular inverse iteratively
+ * this algorithm calculates the modular inverse x^{-1} mod y iteratively
  *
  * @ref
  * https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
@@ -14,7 +14,8 @@
 
 /**
  * @brief Function imod
- *    Responsible for calculating the modular inverse of x with respect to y
+ * Responsible for calculating the modular inverse of x with respect to y,
+ * x^{-1} mod y
  * @param x number
  * @param y number
  * @returns the modular inverse
