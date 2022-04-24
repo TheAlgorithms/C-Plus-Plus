@@ -1,10 +1,9 @@
 /**
  * @file
- * @brief simple implementation of adaption modular multiplicative inverse
- * algorithm
+ * @brief simple implementation of modular multiplicative inverse
  *
  * @details
- * this algorithm calculate the modular inverse iteratively
+ * this algorithm calculates the modular inverse iteratively
  *
  * @ref
  * https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
