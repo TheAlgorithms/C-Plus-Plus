@@ -14,7 +14,7 @@
 
 /**
  * @brief Function imod
- *  Responsible for calculating the modular inverse from x % y
+ *    Responsible for calculating the modular inverse of x with respect to y
  * @param x number
  * @param y number
  * @returns the modular inverse
