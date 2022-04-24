@@ -11,7 +11,6 @@
  */
 
 #include <cassert>   /// for assert
-#include <cstdint>   /// for uint64_t type
 #include <iostream>  /// for IO operations
 
 /**
