@@ -21,14 +21,14 @@
  * @param y number
  * @returns the modular inverse
  */
-uint64_t imod(uint64_t x, uint64_t y) {  // positive integer expected
-    uint64_t aux = 0;                    // auxiliary variable
-    uint64_t itr = 0;                    // iteration counter
+uint64_t imod(uint64_t x, uint64_t y) {
+    uint64_t aux = 0;  // auxiliary variable
+    uint64_t itr = 0;  // iteration counter
 
     do {  // run the algorithm while not find the inverse
         aux = y * itr + 1;
         itr++;
-    } while (aux % x);  // while module aux % x is different of zero
+    } while (aux % x);  // while module aux % x non-zero
 
     return aux / x;
 }
