@@ -28,12 +28,11 @@
  * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
-#include <array>     /// for std::array
-#include <cassert>   /// for assert
-#include <cmath>     /// for fabs
+#include <array>    /// for std::array
+#include <cassert>  /// for assert
+#include <cmath>    /// for fabs
+#include <cmath>
 #include <iostream>  /// for io operations
-
-#include "math.h"
 
 /**
  * @namespace linear_algebra
@@ -132,8 +131,9 @@ void gram_schmidt(int r, const int& c,
 
     while (k <= r) {
         if (k == 1) {
-            for (int j = 0; j < c; j++)
+            for (int j = 0; j < c; j++) {
                 B[0][j] = A[0][j];  /// First vector is copied as it is.
+            }
         }
 
         else {
@@ -195,8 +195,9 @@ static void test() {
             }
         }
     }
-    if (flag == 0)
+    if (flag == 0) {
         std::cout << "Vectors are linearly dependent\n";
+    }
     assert(flag == 1);
     std::cout << "Passed Test Case 1\n ";
 
@@ -215,8 +216,9 @@ static void test() {
             }
         }
     }
-    if (flag == 0)
+    if (flag == 0) {
         std::cout << "Vectors are linearly dependent\n";
+    }
     assert(flag == 1);
     std::cout << "Passed Test Case 2\n";
 
@@ -235,8 +237,9 @@ static void test() {
             }
         }
     }
-    if (flag == 0)
+    if (flag == 0) {
         std::cout << "Vectors are linearly dependent\n";
+    }
     assert(flag == 1);
     std::cout << "Passed Test Case 3\n";
 }
@@ -284,7 +287,8 @@ int main() {
             }
         }
     }
-    if (flag == 0)
+    if (flag == 0) {
         std::cout << "Vectors are linearly dependent\n";
+    }
     return 0;
 }
