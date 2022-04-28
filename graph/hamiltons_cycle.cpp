@@ -9,7 +9,7 @@
  * vertices on which position in `i`'s binary representation is `1` so as
  * \f$j\f$ would be the last one.
  *
- * In the the end if any cell in \f$(2^n - 1)^{\mbox{th}}\f$ row is `true` there
+ * In the end if any cell in \f$(2^n - 1)^{\mbox{th}}\f$ row is `true` there
  * exists hamiltonian cycle.
  *
  * @author [vakhokoto](https://github.com/vakhokoto)

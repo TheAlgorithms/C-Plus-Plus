@@ -265,11 +265,11 @@ class NeuralNetwork {
             std::cerr << std::endl;
             std::exit(EXIT_FAILURE);
         }
-        // Network should have atleast two layers
+        // Network should have at least two layers
         if (config.size() <= 1) {
             std::cerr << "ERROR (" << __func__ << ") : ";
             std::cerr << "Invalid size of network, ";
-            std::cerr << "Atleast two layers are required";
+            std::cerr << "At least two layers are required";
             std::exit(EXIT_FAILURE);
         }
         // Reconstructing all pretrained layers
@@ -321,11 +321,11 @@ class NeuralNetwork {
             std::cerr << std::endl;
             std::exit(EXIT_FAILURE);
         }
-        // Network should have atleast two layers
+        // Network should have at least two layers
         if (config.size() <= 1) {
             std::cerr << "ERROR (" << __func__ << ") : ";
             std::cerr << "Invalid size of network, ";
-            std::cerr << "Atleast two layers are required";
+            std::cerr << "At least two layers are required";
             std::exit(EXIT_FAILURE);
         }
         // Separately creating first layer so it can have unit matrix

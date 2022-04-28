@@ -91,7 +91,7 @@ bool no_occurence_tests(){
 }
 
 /**
- * @brief random tests which cover cases when we have one, multiple or zero occurences of the value we're looking for
+ * @brief random tests which cover cases when we have one, multiple or zero occurrences of the value we're looking for
 */
 bool random_tests(){
     bool passed = true;

@@ -92,7 +92,7 @@ int Bidijkstra(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
     /// setting all the distances initially to INF
     std::vector<std::vector<uint64_t>> dist(2, std::vector<uint64_t>(n, INF));
 
-    /// creating a a vector of min heap using priority queue
+    /// creating a vector of min heap using priority queue
     /// pq[0] contains the min heap for the direct search
     /// pq[1] contains the min heap for the reverse search
 

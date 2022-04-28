@@ -50,7 +50,7 @@ namespace word_break {
 
 /**
  * @brief Function that checks if the string passed in param is present in
- * the the unordered_set passed
+ * the unordered_set passed
  *
  * @param str the string to be searched
  * @param strSet unordered set of string, that is to be looked into

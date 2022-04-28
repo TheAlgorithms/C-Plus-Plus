@@ -2,7 +2,7 @@
  * @file
  * @brief Generate fibonacci sequence
  *
- * Calculate the the value on Fibonacci's sequence given an
+ * Calculate the value on Fibonacci's sequence given an
  * integer as input.
  * \f[\text{fib}(n) = \text{fib}(n-1) + \text{fib}(n-2)\f]
  *
@@ -31,7 +31,7 @@ uint64_t fibonacci(uint64_t n) {
  * Function for testing the fibonacci() function with a few
  * test cases and assert statement.
  * @returns `void`
-*/
+ */
 static void test() {
     uint64_t test_case_1 = fibonacci(0);
     assert(test_case_1 == 0);

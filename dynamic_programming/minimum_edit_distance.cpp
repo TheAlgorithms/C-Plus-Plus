@@ -26,8 +26,8 @@
  * the first string and compute the minimum cost for all three operations
  * and take the minimum of three values in the DP array.
  * For Insert: Recur for m and n-1
- * For Remove: Recur for for m-1 and n
- * For Replace: Recur for for m-1 and n-1
+ * For Remove: Recur for  m-1 and n
+ * For Replace: Recur for m-1 and n-1
  *
  * @author [Nirjas Jakilim](github.com/nirzak)
  */

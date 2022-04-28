@@ -36,7 +36,7 @@ namespace cycle_detection {
 template <typename T>
 int32_t duplicateNumber(const std::vector<T> &in_arr, const uint32_t &n) {
     if (n == 0 ||
-        n == 1) {  // to find duplicate in an array its size should be atleast 2
+        n == 1) {  // to find duplicate in an array its size should be at least 2
         return -1;
     }
     uint32_t tortoise = in_arr[0];  // variable tortoise is used for the longer

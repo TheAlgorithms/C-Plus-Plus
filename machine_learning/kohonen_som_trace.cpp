@@ -7,7 +7,7 @@
  *
  * This example implements a powerful self organizing map algorithm.
  * The algorithm creates a connected network of weights that closely
- * follows the given data points. This this creates a chain of nodes that
+ * follows the given data points. This creates a chain of nodes that
  * resembles the given input shape.
  *
  * \author [Krishna Vedala](https://github.com/kvedala)

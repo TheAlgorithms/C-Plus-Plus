@@ -50,12 +50,12 @@ namespace wiggle_sort {
  */
 template <typename T>  // this allows to have vectors of ints, double, float,
                        // etc
-                       std::vector<T> wiggleSort(const std::vector<T> &arr) {
+std::vector<T> wiggleSort(const std::vector<T> &arr) {
     uint32_t size = arr.size();
 
     std::vector<T> out(
         arr);  // create a copy of input vector. this way, the original input
-               // vector does not get modified. a sorted array is is returned.
+               // vector does not get modified. a sorted array is returned.
 
     for (int i = 0; i < size; i += 2) {
         if (i > 0 && out[i - 1] > out[i]) {

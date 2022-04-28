@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i <= n; i++) {
         cout << "catalan (" << i << ") = " << catalan_dp(i) << endl;
         // NOTE: Since `cat` is a global array, calling `catalan_dp`
-        // repeatedly will not recompute the the values already computed
+        // repeatedly will not recompute the values already computed
         // as in case of pre-computed values, the array will simply return them,
         // instead of recomputing them.
     }

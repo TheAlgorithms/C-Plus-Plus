@@ -5,7 +5,7 @@
  * Bayes' theorem allows one to find \f$P(A|B)\f$ given \f$P(B|A)\f$ or
  * \f$P(B|A)\f$ given \f$P(A|B)\f$ and \f$P(A)\f$ and \f$P(B)\f$.\n
  * Note that \f$P(A|B)\f$ is read 'The probability of A given that the event B
- * has occured'.
+ * has occurred'.
  */
 #include <iostream>
 

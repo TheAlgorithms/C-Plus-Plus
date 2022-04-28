@@ -10,7 +10,7 @@ int main() {
     int m, n;
     int counterZeros = 0;
 
-    std::cout << "Enter dimensions of matrix (seperated with space): ";
+    std::cout << "Enter dimensions of matrix (separated with space): ";
     std::cin >> m;
     std::cin >> n;
 

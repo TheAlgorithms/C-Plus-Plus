@@ -46,7 +46,7 @@ std::map<char, uint8_t> a1z26_encrypt_map = {
 /**
  * @brief a1z26 encryption implementation
  * @param text is the plaintext input
- * @returns encoded string with dashes to seperate letters
+ * @returns encoded string with dashes to separate letters
  */
 std::string encrypt(std::string text) {
     std::string result;
@@ -78,7 +78,7 @@ std::string encrypt(std::string text) {
 std::string decrypt(const std::string& text, bool bReturnUppercase = false) {
     std::string result;
 
-    // split words seperated by spaces into a vector array
+    // split words separated by spaces into a vector array
     std::vector<std::string> word_array;
     std::stringstream sstream(text);
     std::string word;

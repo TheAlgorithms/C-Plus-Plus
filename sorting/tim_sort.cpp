@@ -4,8 +4,8 @@
 
 const int RUN = 32;
 
-// this function sorts array from left index to to right index which is of size
-// atmost RUN
+// this function sorts array from left index to right index which is of size
+// at most RUN
 void insertionSort(int arr[], int left, int right) {
     for (int i = left + 1; i <= right; i++) {
         int temp = arr[i];

@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief The [Z function](https://cp-algorithms.com/string/z-function.html) for
- * finding occurences of a pattern within a piece of text with time and space
+ * finding occurrences of a pattern within a piece of text with time and space
  * complexity O(n + m)
  * @details
  * 1. The Z-function for a string is an array of length n where the

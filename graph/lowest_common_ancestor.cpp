@@ -73,7 +73,7 @@ class Graph {
      */
     int number_of_vertices() const { return neighbors.size(); }
 
-    /** \brief for each vertex it stores a list indicies of its neighbors */
+    /** \brief for each vertex it stores a list indices of its neighbors */
     std::vector<std::vector<int> > neighbors;
 };
 

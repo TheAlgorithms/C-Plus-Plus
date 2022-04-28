@@ -33,7 +33,7 @@ namespace sorting {
  */
 namespace pancake_sort {
 /**
- * @brief This implementation is for reversing elements in a a C-style array .
+ * @brief This implementation is for reversing elements in a C-style array.
  * @param [start,end] arr our vector of elements.
  * @param start starting index of array
  * @param end ending index of array
