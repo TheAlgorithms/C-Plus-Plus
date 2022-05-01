@@ -8,6 +8,7 @@
  *until n is one. For example, the sequence for n=3 is as follows:
  *3→10→5→16→8→4→2→1
  *Your task is to simulate the execution of the algorithm for a given value of n.
+ *@author [BhumikaTewary](https://github.com/bhumikatewary)
  */
  
  
