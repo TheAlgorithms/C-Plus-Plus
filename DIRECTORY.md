@@ -158,9 +158,6 @@
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/sha1.cpp)
 
-## Linear Algebra
-  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/linear_algebra/gram_schmidt.cpp)
-
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
@@ -208,6 +205,7 @@
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
   * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
+  * [Modular Inverse Simple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_simple.cpp)
   * [N Bonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_bonacci.cpp)
   * [N Choose R](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_choose_r.cpp)
   * [Ncr Modulo P](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/ncr_modulo_p.cpp)
@@ -237,6 +235,7 @@
   * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/fast_fourier_transform.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
+  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gram_schmidt.cpp)
   * [Inverse Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/inverse_fast_fourier_transform.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
