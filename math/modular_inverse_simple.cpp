@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief simple implementation of modular multiplicative inverse
+ * @brief Simple implementation of [modular multiplicative inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
  *
  * @details
  * this algorithm calculates the modular inverse x^{-1} \mod y iteratively
