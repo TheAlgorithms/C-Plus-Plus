@@ -3,7 +3,7 @@
  * @brief Quick sort algorithm
  *
  * Implementation Details -
- *      Quick Sort is a divide and conquer algorithm. It picks and element as
+ *      Quick Sort is a divide and conquer algorithm. It picks an element as
  *      pivot and partition the given array around the picked pivot. There
  *      are many different versions of quickSort that pick pivot in different
  *      ways.
@@ -15,9 +15,9 @@
  *
  *      The key process in quickSort is partition(). Target of partition is,
  *      given an array and an element x(say) of array as pivot, put x at it's
- *      correct position in sorted array and put all smaller elements (samller
+ *      correct position in sorted array and put all smaller elements (smaller
  *      than x) before x, and put all greater elements (greater than x) after
- *      x. All this should be done in linear time
+ *      x. All this should be done in linear time.
  *
  */
 
