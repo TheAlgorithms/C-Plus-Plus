@@ -1,32 +1,5 @@
 var namespacemath =
 [
-    [ "binomial", null, [
-      [ "calculate", "d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978", null ]
-    ] ],
-    [ "fibonacci_sum", null, [
-      [ "fiboSum", "de/dc3/fibonacci__sum_8cpp.html#a493fbaa7a94e3b7ca573111237bb3742", null ],
-      [ "multiply", "de/dc3/fibonacci__sum_8cpp.html#a9c83cca09a3e4ff2a25c816a9303448e", null ],
-      [ "power", "de/dc3/fibonacci__sum_8cpp.html#a7cf5feaf168b88e74544da59ed830311", null ],
-      [ "result", "de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa", null ]
-    ] ],
-    [ "modular_division", null, [
-      [ "mod_division", "df/d72/modular__division_8cpp.html#a905e368ae121beb7e7ea35349ddcdac7", null ],
-      [ "power", "df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179", null ]
-    ] ],
-    [ "monte_carlo", null, [
-      [ "generate_samples", "db/d40/integral__approximation2_8cpp.html#a71249ee535f16f8ed2e9cc8f0199a2cf", null ],
-      [ "integral_monte_carlo", "db/d40/integral__approximation2_8cpp.html#af7da9ba8932f1f48b9bbc2d80471af51", null ]
-    ] ],
-    [ "n_bonacci", null, [
-      [ "N_bonacci", "db/d27/n__bonacci_8cpp.html#a6849b68f760be628d5975ab3eddec63d", null ]
-    ] ],
-    [ "ncr_modulo_p", null, [
-      [ "NCRModuloP", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html", "d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p" ]
-    ] ],
-    [ "vector_cross", null, [
-      [ "cross", "df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9", null ],
-      [ "mag", "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8", null ]
-    ] ],
     [ "Point", "de/d4f/structmath_1_1_point.html", null ],
     [ "approximate_pi", "dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188", null ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],

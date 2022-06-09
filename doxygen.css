@@ -1,4 +1,4 @@
-/* The standard CSS for doxygen 1.9.3 */
+/* The standard CSS for doxygen 1.9.4 */
 
 body, table, div, p, dl {
 	font: 400 14px/22px Roboto,sans-serif;
@@ -1824,7 +1824,7 @@ table.DocNodeLTR {
    margin-left: 0;
 }
 
-code.JavaDocCode
+code.JavaDocCode {
   direction:ltr;
 }
 

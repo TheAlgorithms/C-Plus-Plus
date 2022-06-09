@@ -1,14 +1,15 @@
 <map id="ciphers/hill_cipher.cpp" name="ciphers/hill_cipher.cpp">
-<area shape="rect" id="node1" title="Implementation of Hill cipher algorithm." alt="" coords="301,5,452,32"/>
+<area shape="rect" id="node1" title="Implementation of Hill cipher algorithm." alt="" coords="347,5,497,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,87,71,114"/>
 <area shape="rect" id="node3" title=" " alt="" coords="95,87,154,114"/>
 <area shape="rect" id="node4" title=" " alt="" coords="178,87,239,114"/>
 <area shape="rect" id="node5" title=" " alt="" coords="264,87,319,114"/>
 <area shape="rect" id="node6" title=" " alt="" coords="343,87,410,114"/>
 <area shape="rect" id="node7" title=" " alt="" coords="434,87,501,114"/>
-<area shape="rect" id="node8" title=" " alt="" coords="550,169,622,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="576,87,631,114"/>
-<area shape="rect" id="node10" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="655,80,802,121"/>
-<area shape="rect" id="node11" title=" " alt="" coords="651,169,719,196"/>
-<area shape="rect" id="node12" title=" " alt="" coords="743,169,802,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="494,169,566,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="797,87,852,114"/>
+<area shape="rect" id="node10" title=" " alt="" coords="590,169,649,196"/>
+<area shape="rect" id="node11" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="626,80,773,121"/>
+<area shape="rect" id="node12" title=" " alt="" coords="673,169,741,196"/>
+<area shape="rect" id="node13" title=" " alt="" coords="766,169,825,196"/>
 </map>

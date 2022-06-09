@@ -1,5 +1,5 @@
 <map id="graphics/spirograph.cpp" name="graphics/spirograph.cpp">
-<area shape="rect" id="node1" title="Implementation of Spirograph" alt="" coords="237,5,397,32"/>
+<area shape="rect" id="node1" title="Implementation of Spirograph" alt="" coords="280,5,440,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,56,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="80,80,139,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="163,80,223,107"/>
@@ -8,4 +8,5 @@
 <area shape="rect" id="node7" title=" " alt="" coords="417,80,484,107"/>
 <area shape="rect" id="node8" title=" " alt="" coords="508,80,580,107"/>
 <area shape="rect" id="node9" title=" " alt="" coords="604,80,673,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="697,80,756,107"/>
 </map>

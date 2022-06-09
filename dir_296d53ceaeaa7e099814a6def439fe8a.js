@@ -27,9 +27,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "integral_approximation2.cpp", "db/d40/integral__approximation2_8cpp.html", "db/d40/integral__approximation2_8cpp" ],
     [ "inv_sqrt.cpp", "d6/db8/inv__sqrt_8cpp.html", "d6/db8/inv__sqrt_8cpp" ],
     [ "large_factorial.cpp", "d6/d9d/large__factorial_8cpp.html", "d6/d9d/large__factorial_8cpp" ],
-    [ "large_number.h", "d4/d86/large__number_8h.html", [
-      [ "large_number", "db/d82/classlarge__number.html", "db/d82/classlarge__number" ]
-    ] ],
+    [ "large_number.h", "d4/d86/large__number_8h.html", "d4/d86/large__number_8h" ],
     [ "largest_power.cpp", "d5/d7a/largest__power_8cpp.html", "d5/d7a/largest__power_8cpp" ],
     [ "lcm_sum.cpp", "d5/d83/lcm__sum_8cpp.html", "d5/d83/lcm__sum_8cpp" ],
     [ "least_common_multiple.cpp", "d4/d21/least__common__multiple_8cpp.html", "d4/d21/least__common__multiple_8cpp" ],

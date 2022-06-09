@@ -17,10 +17,7 @@ var dir_2e746e9d06bf2d8ff842208bcc6ebcfc =
     [ "reverse_a_linked_list.cpp", "d6/d05/reverse__a__linked__list_8cpp.html", "d6/d05/reverse__a__linked__list_8cpp" ],
     [ "skip_list.cpp", "d0/d5a/skip__list_8cpp.html", "d0/d5a/skip__list_8cpp" ],
     [ "sparse_table.cpp", "d6/d42/data__structures_2sparse__table_8cpp.html", "d6/d42/data__structures_2sparse__table_8cpp" ],
-    [ "stack.h", "d7/de0/stack_8h.html", [
-      [ "node< Kind >", "d5/da1/structnode.html", "d5/da1/structnode" ],
-      [ "stack< Type >", "d1/dc2/classstack.html", "d1/dc2/classstack" ]
-    ] ],
+    [ "stack.h", "d7/de0/stack_8h.html", "d7/de0/stack_8h" ],
     [ "tree_234.cpp", "db/dbc/tree__234_8cpp.html", "db/dbc/tree__234_8cpp" ],
     [ "trie_modern.cpp", "dc/d93/trie__modern_8cpp.html", "dc/d93/trie__modern_8cpp" ],
     [ "trie_tree.cpp", "d7/d83/trie__tree_8cpp.html", "d7/d83/trie__tree_8cpp" ],

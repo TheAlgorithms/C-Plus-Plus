@@ -1,24 +1,5 @@
 var namespacestd =
 [
-    [ "chrono", null, [
-      [ "duration_cast", "http://en.cppreference.com/w/cpp/chrono/duration/duration_cast.html", null ],
-      [ "time_point_cast", "http://en.cppreference.com/w/cpp/chrono/time_point/time_point_cast.html", null ]
-    ] ],
-    [ "experimental", null, [
-      [ "make_optional", "http://en.cppreference.com/w/cpp/experimental/optional/make_optional.html", null ]
-    ] ],
-    [ "rel_ops", null, [
-      [ "operator!=", "http://en.cppreference.com/w/cpp/utility/rel_ops/operator_cmp.html", null ],
-      [ "operator<=", "http://en.cppreference.com/w/cpp/utility/rel_ops/operator_cmp.html", null ],
-      [ "operator>", "http://en.cppreference.com/w/cpp/utility/rel_ops/operator_cmp.html", null ],
-      [ "operator>=", "http://en.cppreference.com/w/cpp/utility/rel_ops/operator_cmp.html", null ]
-    ] ],
-    [ "this_thread", null, [
-      [ "get_id", "http://en.cppreference.com/w/cpp/thread/get_id.html", null ],
-      [ "sleep_for", "http://en.cppreference.com/w/cpp/thread/sleep_for.html", null ],
-      [ "sleep_until", "http://en.cppreference.com/w/cpp/thread/sleep_until.html", null ],
-      [ "yield", "http://en.cppreference.com/w/cpp/thread/yield.html", null ]
-    ] ],
     [ "is_arithmetic< uint128_t >", "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html", null ],
     [ "is_arithmetic< uint256_t >", "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html", null ],
     [ "is_integral< uint128_t >", "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html", null ],

@@ -12,7 +12,6 @@ var files_dup =
     [ "graphics", "dir_e79632891301b850df87e9c0030293fa.html", "dir_e79632891301b850df87e9c0030293fa" ],
     [ "greedy_algorithms", "dir_0eaa691bd54ab0922ca7f50599de6d22.html", "dir_0eaa691bd54ab0922ca7f50599de6d22" ],
     [ "hashing", "dir_ece9b94c107bbaa1dd68197a8c9983b9.html", "dir_ece9b94c107bbaa1dd68197a8c9983b9" ],
-    [ "linear_algebra", "dir_8c4128baa09a573ad2b8b8c0061a04c9.html", "dir_8c4128baa09a573ad2b8b8c0061a04c9" ],
     [ "machine_learning", "dir_3343723ae086de42ee4ca9774da3a13f.html", "dir_3343723ae086de42ee4ca9774da3a13f" ],
     [ "math", "dir_296d53ceaeaa7e099814a6def439fe8a.html", "dir_296d53ceaeaa7e099814a6def439fe8a" ],
     [ "numerical_methods", "dir_9c6faab82c22511b50177aa2e38e2780.html", "dir_9c6faab82c22511b50177aa2e38e2780" ],

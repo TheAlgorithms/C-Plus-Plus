@@ -745,6 +745,10 @@ function createResults()
       {
        srLink.setAttribute('target','_parent');
       }
+      else
+      {
+       srLink.setAttribute('target','_blank');
+      }
       var srScope = document.createElement('span');
       setClassAttr(srScope,'SRScope');
       srScope.innerHTML = searchData[e][1][1][2];
@@ -766,6 +770,10 @@ function createResults()
         if (searchData[e][1][c+1][1])
         {
          srChild.setAttribute('target','_parent');
+        }
+        else
+        {
+         srChild.setAttribute('target','_blank');
         }
         srChild.innerHTML = searchData[e][1][c+1][2];
         srChildren.appendChild(srChild);
