@@ -5,9 +5,6 @@
  *
  * @details
  * this algorithm calculates the modular inverse x^{-1} \mod y iteratively
- *
- * @ref
- * https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
  */
 
 #include <cassert>   /// for assert
