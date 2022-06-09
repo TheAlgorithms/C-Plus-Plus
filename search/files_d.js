@@ -14,5 +14,6 @@ var searchData=
   ['modular_5fdivision_2ecpp_11',['modular_division.cpp',['../df/d72/modular__division_8cpp.html',1,'']]],
   ['modular_5fexponentiation_2ecpp_12',['modular_exponentiation.cpp',['../d0/d6d/modular__exponentiation_8cpp.html',1,'']]],
   ['modular_5finverse_5ffermat_5flittle_5ftheorem_2ecpp_13',['modular_inverse_fermat_little_theorem.cpp',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html',1,'']]],
-  ['morse_5fcode_2ecpp_14',['morse_code.cpp',['../d8/d76/morse__code_8cpp.html',1,'']]]
+  ['modular_5finverse_5fsimple_2ecpp_14',['modular_inverse_simple.cpp',['../d6/d2d/modular__inverse__simple_8cpp.html',1,'']]],
+  ['morse_5fcode_2ecpp_15',['morse_code.cpp',['../d8/d76/morse__code_8cpp.html',1,'']]]
 ];
