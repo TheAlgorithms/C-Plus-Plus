@@ -158,9 +158,6 @@
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/sha1.cpp)
 
-## Linear Algebra
-  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/linear_algebra/gram_schmidt.cpp)
-
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
@@ -238,6 +235,7 @@
   * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/fast_fourier_transform.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
+  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gram_schmidt.cpp)
   * [Inverse Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/inverse_fast_fourier_transform.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
