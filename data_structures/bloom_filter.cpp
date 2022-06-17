@@ -2,10 +2,25 @@
  * @file bloom_filter.cpp
  * @brief [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
  * generic implementation in C++
- * @details Basic bloom filter doesn't support deleting of elements, so
- * we don't need to implement deletion in bloom filter and bitset.
+ * @details A Bloom filter is a space-efficient probabilistic data structure,
+ * a query returns either "possibly in set" or "definitely not in set".
+ *
+ * More generally, fewer than 10 bits per element are required for a 1% false
+ * positive probability, independent of the size or number of elements in the
+ * set.
+ *
+ * It helps us to not make an "expensive operations", like disk IO - we can
+ * use bloom filter to check incoming request, and with a good probability
+ * get an answer of bloom filter, that we don't need to make our "expensive
+ * operation"
+ *
+ * For math details, please, [look
+ * here](https://en.wikipedia.org/wiki/Bloom_filter)
  *
  * [Very good use case example](https://stackoverflow.com/a/30247022)
+ *
+ * Basic bloom filter doesn't support deleting of elements, so
+ * we don't need to implement deletion in bloom filter and bitset in our case.
  * @author [DanArmor](https://github.com/DanArmor)
  */
 
