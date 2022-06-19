@@ -176,7 +176,7 @@ static void test_bitset() {
  * @param s string to get hash from
  * @return hash for a string
  */
-static std::size_t hashDJB2(std::string const &s) {
+static std::size_t hashDJB2(std::string const& s) {
     std::size_t hash = 5381;
     for (char c : s) {
         hash = ((hash << 5) + hash) + c;
@@ -192,7 +192,7 @@ static std::size_t hashDJB2(std::string const &s) {
  * @param s string to get hash from
  * @return hash for a string
  */
-static std::size_t hashStr(std::string const &s) {
+static std::size_t hashStr(std::string const& s) {
     std::size_t h = 37;
     std::size_t A = 54059;
     std::size_t B = 76963;
