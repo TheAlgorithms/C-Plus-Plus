@@ -40,8 +40,8 @@ class Bitset {
         sizeof(std::size_t);  ///< size of integer type, that we are using in
                               ///< our bitset
  public:
-    Bitset(std::size_t initSize);
-    std::size_t size(void);
+    explicit Bitset(std::size_t initSize);
+    std::size_t size();
     void add(std::size_t x);
     bool contains(std::size_t x);
 };
@@ -51,7 +51,7 @@ class Bitset {
  *
  * @return size of inner array
  */
-std::size_t Bitset::size(void) { return data.size(); }
+std::size_t Bitset::size() { return data.size(); }
 /**
  * @brief Constructor for Bitset
  *
@@ -158,12 +158,12 @@ bool BloomFilter<T>::contains(T x) {
  *
  * @return void
  */
-static void test_bitset(void) {
+static void test_bitset() {
     Bitset set(2);
     std::vector<std::size_t> toCheck{0, 1, 5, 8, 63, 64, 67, 127};
-    for (std::size_t i = 0; i < toCheck.size(); i++) {
-        set.add(toCheck[i]);
-        assert(set.contains(toCheck[i]));
+    for (auto x : toCheck) {
+        set.add(x);
+        assert(set.contains(x));
     }
     assert(set.contains(128) == false);
     assert(set.contains(256) == false);
@@ -176,10 +176,10 @@ static void test_bitset(void) {
  * @param s string to get hash from
  * @return hash for a string
  */
-static std::size_t hashDJB2(std::string s) {
+static std::size_t hashDJB2(std::string const &s) {
     std::size_t hash = 5381;
-    for (std::size_t i = 0; i < s.size(); i++) {
-        hash = ((hash << 5) + hash) + s[i];
+    for (char c : s) {
+        hash = ((hash << 5) + hash) + c;
     }
     return hash;
 }
@@ -192,12 +192,12 @@ static std::size_t hashDJB2(std::string s) {
  * @param s string to get hash from
  * @return hash for a string
  */
-static std::size_t hashStr(std::string s) {
+static std::size_t hashStr(std::string const &s) {
     std::size_t h = 37;
     std::size_t A = 54059;
     std::size_t B = 76963;
-    for (std::size_t i = 0; i < s.size(); i++) {
-        h = (h * A) ^ (s[i] * B);
+    for (char c : s) {
+        h = (h * A) ^ (c * B);
     }
     return h;
 }
@@ -206,18 +206,18 @@ static std::size_t hashStr(std::string s) {
  * @brief Test for bloom filter with string as generic type
  * @return void
  */
-static void test_bloom_filter_string(void) {
+static void test_bloom_filter_string() {
     BloomFilter<std::string> filter(10, {hashDJB2, hashStr});
     std::vector<std::string> toCheck{"hello", "world", "!"};
     std::vector<std::string> toFalse{"false", "world2", "!!!"};
-    for (std::size_t i = 0; i < toCheck.size(); i++) {
-        filter.add(toCheck[i]);
+    for (auto& x : toCheck) {
+        filter.add(x);
     }
-    for (std::size_t i = 0; i < toFalse.size(); i++) {
-        assert(filter.contains(toFalse[i]) == false);
+    for (auto& x : toFalse) {
+        assert(filter.contains(x) == false);
     }
-    for (std::size_t i = 0; i < toCheck.size(); i++) {
-        assert(filter.contains(toCheck[i]));
+    for (auto& x : toCheck) {
+        assert(filter.contains(x));
     }
 }
 
@@ -243,28 +243,29 @@ std::size_t hashInt_1(int x) {
  * @return hash for x
  */
 std::size_t hashInt_2(int x) {
-    x = (x ^ (x >> 30)) * std::size_t(0xbf58476d1ce4e5b9);
-    x = (x ^ (x >> 27)) * std::size_t(0x94d049bb133111eb);
-    x = x ^ (x >> 31);
-    return x;
+    auto y = static_cast<std::size_t>(x);
+    y = (y ^ (y >> 30)) * static_cast<std::size_t>(0xbf58476d1ce4e5b9);
+    y = (y ^ (y >> 27)) * static_cast<std::size_t>(0x94d049bb133111eb);
+    y = y ^ (y >> 31);
+    return y;
 }
 
 /**
  * @brief Test for bloom filter with int as generic type
  * @return void
  */
-static void test_bloom_filter_int(void) {
+static void test_bloom_filter_int() {
     BloomFilter<int> filter(20, {hashInt_1, hashInt_2});
     std::vector<int> toCheck{100, 200, 300, 50};
     std::vector<int> toFalse{1, 2, 3, 4, 5, 6, 7, 8};
-    for (std::size_t i = 0; i < toCheck.size(); i++) {
-        filter.add(toCheck[i]);
+    for (int x : toCheck) {
+        filter.add(x);
     }
-    for (std::size_t i = 0; i < toFalse.size(); i++) {
-        assert(filter.contains(toFalse[i]) == false);
+    for (int x : toFalse) {
+        assert(filter.contains(x) == false);
     }
-    for (std::size_t i = 0; i < toCheck.size(); i++) {
-        assert(filter.contains(toCheck[i]));
+    for (int x : toCheck) {
+        assert(filter.contains(x));
     }
 }
 
@@ -272,7 +273,7 @@ static void test_bloom_filter_int(void) {
  * @brief Main function
  * @returns 0 on exit
  */
-int main(void) {
+int main() {
     test_bitset();  // run test for bitset, because bloom filter is depend on it
     test_bloom_filter_string();
     test_bloom_filter_int();
