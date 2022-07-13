@@ -52,6 +52,7 @@ class Bitset {
  * @return size of inner array
  */
 std::size_t Bitset::size() { return data.size(); }
+
 /**
  * @brief Constructor for Bitset
  *
@@ -193,13 +194,13 @@ static std::size_t hashDJB2(std::string const& s) {
  * @return hash for a string
  */
 static std::size_t hashStr(std::string const& s) {
-    std::size_t h = 37;
-    std::size_t A = 54059;
-    std::size_t B = 76963;
+    std::size_t hash = 37;
+    std::size_t primeNum1 = 54059;
+    std::size_t primeNum2 = 76963;
     for (char c : s) {
-        h = (h * A) ^ (c * B);
+        hash = (hash * primeNum1) ^ (c * primeNum2);
     }
-    return h;
+    return hash;
 }
 
 /**
