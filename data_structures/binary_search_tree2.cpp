@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief A generic [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) implementation.
+ * @brief A generic [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) implementation. (https://www.scaler.com/topics/data-structures/binary-search-tree/)
  * @see binary_search_tree.cpp
  */
 
