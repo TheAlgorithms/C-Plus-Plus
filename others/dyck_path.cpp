@@ -18,10 +18,14 @@ int countDyckPaths(unsigned int num)
  
 //1st test
 static void test(){
-    num = 4;
-    expected_result = 14;
-    result = countDyckPaths(num);
+    //Assigned the number for Dyck path and the ecpected result
+    int num = 4;
+    int expected_result = 14;
 
+    //get the actual result from the countDyckPaths function
+    int result = countDyckPaths(num);
+
+    // use assert function to return the test result of the function
     std::cout<<"Number for Diyck Path: " << num <<std::endl;
     std::cout<<"Expected Result of Dyck Path: " << expected_result <<std::endl;
     std::cout << "Result of Dyck Paths is " << result <<std:: endl;
