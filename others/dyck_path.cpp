@@ -1,8 +1,9 @@
 #include<iostream> 
-using namespace std;
+using std::swap;
+#include <cassert>  /// for assert
  
 // Function to count the result of Dyck Paths
-int countDyckPaths(unsigned int num)
+int countDyckPaths( int num)
 {
     // Compute value of 2nCn
     int res = 1;
