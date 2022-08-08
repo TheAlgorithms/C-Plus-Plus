@@ -2,10 +2,10 @@
 using std::swap;
 #include <cassert>  /// for assert
  
-// Function to count the result of Dyck Paths
+/// Function to count the result of Dyck Paths
 int countDyckPaths(int num)
 {
-    // Compute value of 2nCn
+    /// Compute value of 2nCn
     int res = 1;
     for (int i = 0; i < num; ++i)
     {
@@ -17,16 +17,16 @@ int countDyckPaths(int num)
     return res / (num+1);
 }
  
-//1st test
+/// 1st test
 static void test(){
-    //Assigned the number for Dyck path and the ecpected result
+    /// Assigned the number for Dyck path and the ecpected result
     int num = 4;
     int expected_result = 14;
 
-    //get the actual result from the countDyckPaths function
+    /// get the actual result from the countDyckPaths function
     int result = countDyckPaths(num);
 
-    // use assert function to return the test result of the function
+    /// use assert function to return the test result of the function
     std::cout<<"Number for Diyck Path: " << num <<std::endl;
     std::cout<<"Expected Result of Dyck Path: " << expected_result <<std::endl;
     std::cout << "Result of Dyck Paths is " << result <<std:: endl;
