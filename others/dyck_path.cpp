@@ -13,7 +13,7 @@ int countDyckPaths(int num)
         res /= (i + 1);
     }
  
-    // return 2nCn/(n+1)
+    /// return 2nCn/(n+1)
     return res / (num+1);
 }
  
