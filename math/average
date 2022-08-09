@@ -1,0 +1,57 @@
+/**
+ * @file
+ * @brief C++ program to find average of given list
+ */
+#include <iostream>
+#include <cassert>
+#include <vector>
+
+ /** function to find average of given list */
+double average(std::vector<double> n) {
+
+    double sum = 0;
+    for (int i = 0; i < n.size(); ++i) {
+        sum += n[i];
+    }
+    return sum / n.size();
+}
+
+/**
+ * Function for testing the average() function with a
+ * first test case of myNumbers[5] = { 1, 2, 3, 4, 5 } and assert statement.
+ */
+void test1() {
+    std::vector<double> myNumbers = { 1, 2, 3, 4, 5 };
+    double test_case_1 = average(myNumbers);
+    assert(test_case_1 == 3);
+}
+
+/**
+ * Function for testing the average() function with a
+ * second test case of myNumbers[5] = { -10, -20, 30, 40, 50 } and assert statement.
+ */
+void test2() {
+    std::vector<double> myNumbers = { 10, 20, 30, 40, 50 };
+    double test_case_1 = average(myNumbers);
+    assert(test_case_1 == 30);
+}
+
+/**
+ * Function for testing the average() with
+ * all the test cases.
+ */
+void test() {
+    // First test.
+    test1();
+    // Second test.
+    test2();
+}
+
+
+/** Main function */
+int main() {
+
+    test();
+    std::cout << "Success." << std::endl;
+    return 0;
+}
