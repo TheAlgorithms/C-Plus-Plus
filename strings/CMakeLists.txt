@@ -1,3 +1,4 @@
+set(CMAKE_CXX_STANDARD 11)
 # If necessary, use the RELATIVE flag, otherwise each source file may be listed
 # with full pathname. RELATIVE may makes it easier to extract an executable name
 # automatically.

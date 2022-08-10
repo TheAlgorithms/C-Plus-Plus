@@ -9,6 +9,7 @@
 #include <cstring>
 #endif
 #include <vector>
+using namespace std;
 
 namespace string_search {
 /**
@@ -18,7 +19,7 @@ namespace string_search {
  * @return         Index where the pattern starts in the text
  * @return         -1 if the pattern was not found.
  */
-int brute_force(const std::string &text, const std::string &pattern) {
+int brute_force(const string &text, const string &pattern) {
     size_t pat_l = pattern.length();
     size_t txt_l = text.length();
     int index = -1;
@@ -35,10 +36,11 @@ int brute_force(const std::string &text, const std::string &pattern) {
 }
 }  // namespace string_search
 
+
 using string_search::brute_force;
 
 /** set of test cases */
-const std::vector<std::vector<std::string>> test_set = {
+const vector<vector<string>> test_set = {
     // {text, pattern, expected output}
     {"a", "aa", "-1"},  {"a", "a", "0"},    {"ba", "b", "0"},
     {"bba", "bb", "0"}, {"bbca", "c", "2"}, {"ab", "b", "1"}};
@@ -48,10 +50,10 @@ int main() {
     for (const auto &i : test_set) {
         int output = brute_force(i[0], i[1]);
 
-        if (std::to_string(output) == i[2]) {
-            std::cout << "success\n";
+        if (to_string(output) == i[2]) {
+            cout << "success\n";
         } else {
-            std::cout << "failure\n";
+            cout << "failure\n";
         }
     }
     return 0;
