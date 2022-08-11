@@ -202,7 +202,7 @@ var searchData=
   ['isprime_199',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'modular_inverse_fermat_little_theorem.cpp']]],
   ['isprint_200',['isprint',['http://en.cppreference.com/w/cpp/string/byte/isprint.html',0,'std']]],
   ['ispunct_201',['ispunct',['http://en.cppreference.com/w/cpp/string/byte/ispunct.html',0,'std']]],
-  ['issafe_202',['isSafe',['../df/d80/graph__coloringg_8cpp.html#a976efe049deb042bf1f02612e181ab1d',1,'backtracking::graph_coloring::isSafe()'],['../d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160',1,'backtracking::n_queens::isSafe()']]],
+  ['issafe_202',['isSafe',['../d3/d40/graph__coloring_8cpp.html#a976efe049deb042bf1f02612e181ab1d',1,'backtracking::graph_coloring::isSafe()'],['../d4/d3e/n__queens_8cpp.html#a5730b6683f6adcf5c5ef75cf53dc7160',1,'backtracking::n_queens::isSafe()']]],
   ['issafe_203',['issafe',['../d1/d2a/knight__tour_8cpp.html#af27031fbff093ffd625f64010d98aab2',1,'backtracking::knight_tour']]],
   ['issame_204',['isSame',['../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303',1,'dsu::isSame(uint64_t i, uint64_t j)'],['../dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303',1,'dsu::isSame(uint64_t i, uint64_t j)']]],
   ['isspace_205',['isspace',['http://en.cppreference.com/w/cpp/string/byte/isspace.html',0,'std']]],
