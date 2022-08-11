@@ -1,6 +1,6 @@
 
 ## Backtracking
-  * [Graph Coloringg](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/graph_coloringg.cpp)
+  * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/knight_tour.cpp)
   * [Magic Sequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/magic_sequence.cpp)
   * [Minimax](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/minimax.cpp)
