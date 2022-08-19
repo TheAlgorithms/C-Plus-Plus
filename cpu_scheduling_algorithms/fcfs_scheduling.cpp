@@ -24,7 +24,7 @@ using std::cout;
 using std::endl;
 using std::get;
 using std::left;
-using std::make_tuple;
+using std::make_tuple; //error: no member named 'make_tuple' in namespace 'std' using std::make_tuple;
 using std::priority_queue;
 using std::rand;
 using std::srand;

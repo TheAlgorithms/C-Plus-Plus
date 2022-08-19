@@ -1,6 +1,8 @@
 # If necessary, use the RELATIVE flag, otherwise each source file may be listed
 # with full pathname. RELATIVE may makes it easier to extract an executable name
 # automatically.
+set(CMAKE_CXX_STANDARD 14)
+
 file( GLOB APP_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp )
 # file( GLOB APP_SOURCES ${CMAKE_SOURCE_DIR}/*.c )
 # AUX_SOURCE_DIRECTORY(${CMAKE_CURRENT_SOURCE_DIR} APP_SOURCES)
