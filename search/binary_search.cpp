@@ -116,6 +116,8 @@ void test2() {
     std::cout << "Test #2: ";
     assert(derived_ans == expected_ans);
     std::cout << "Passed!" << std::endl;
+//    for(i : arr)
+//        std::cout<< i<<endl;
 }
 
 /*******************************************************************************
