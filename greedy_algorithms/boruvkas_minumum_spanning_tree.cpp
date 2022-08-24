@@ -21,7 +21,7 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
-#include <limits.h>
+#include <climits>
 
 /**
  * @namespace graph
