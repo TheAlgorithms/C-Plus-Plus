@@ -8,7 +8,7 @@
  * 
  * @details
  * Boruvka's algorithm is a greepy algorithm to find the MST by starting with small trees, and combining
- * them to build bigger ones. It assumes that all nodes are connected.
+ * them to build bigger ones. 
  *	1. Creates a group for every vertex.
  *	2. looks through each edge of every vertex for the smallest weight. Keeps track
  *		of the smallest edge for each of the current groups. 
@@ -16,12 +16,14 @@
  *		edge to the MST. 
  *  4. Repeat step 2-3 until all vertices are combined into a single group.
  * 
+ * It assumes that the graph is connected. Non-connected edges can be represented using 0 or INT_MAX
+ * 
 */
 
-#include <iostream>
-#include <vector>
-#include <cassert>
-#include <climits>
+#include <iostream> //for io operations
+#include <vector>	//for vector storage
+#include <cassert>	//for assert
+#include <climits>	//to utilize INT_MAX
 
 /**
  * @namespace graph
@@ -30,8 +32,10 @@
 namespace graph { 
 
 /**
- * Recursively returns the parent at the root of the parent tree
- * @params parent vector, int vertex to find parent of
+ * @brief Recursively returns the vertex's parent at the root of the tree
+ * @param parent vector
+ * @param int vertex to find parent of
+ * @returns parent vertex
  */
 int findParent(std::vector<std::pair<int,int>> & parent, int v) {
 
@@ -44,10 +48,7 @@ int findParent(std::vector<std::pair<int,int>> & parent, int v) {
 
 /**
  * @brief the implementation of boruvka's algorithm
- * 
- * @param a graph adjancency matrix stored as 2d vectors.
- * Non-connections can be represented using 0 or INT_MAX
- * 
+ * @param a graph adjancency matrix stored as 2d vectors. 
  * @returns the MST as 2d vectors
  */
 std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
@@ -153,7 +154,8 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 }
 }
 /**
- * Used for testing. Counts the sum of edges in the minimum spanning tree.
+ * @brief counts the sum of edges in the given tree
+ * @param 2d vector adjacency matrix
  * @returns the int size of the tree
  */
 int test_findGraphSum(std::vector<std::vector<int>> adj) {
@@ -173,7 +175,7 @@ int test_findGraphSum(std::vector<std::vector<int>> adj) {
 }
 
 /**
- * Self-tests to insure validity
+ * @brief Self-test implementation
 */
 void tests() {
 	std::cout << "Starting tests" << std::endl;
@@ -201,7 +203,12 @@ void tests() {
 	std::cout << "2nd test passed" << std::endl;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
+    int main() {
 	tests();
 	
 	return 0;	
