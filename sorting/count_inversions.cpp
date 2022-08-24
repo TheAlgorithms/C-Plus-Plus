@@ -219,6 +219,7 @@ static void test() {
     assert(inv_count3 == result3);
     // Test 4
     std::vector<char> arr4 = {'a', 'b', 'c', 'd', 'e'};
+    std::cout << arr4 << std::endl;
     uint32_t size4 = arr4.size();
     uint32_t inv_count4 = 0;
     uint32_t result4 = sorting::inversion::countInversion(arr4.data(), size4);
