@@ -9,6 +9,6 @@ var dir_c11585dfcef32a26e29098facab6c144 =
     [ "rat_maze.cpp", "dc/d5a/rat__maze_8cpp.html", "dc/d5a/rat__maze_8cpp" ],
     [ "subarray_sum.cpp", "df/d94/subarray__sum_8cpp.html", "df/d94/subarray__sum_8cpp" ],
     [ "subset_sum.cpp", "d2/d5a/subset__sum_8cpp.html", "d2/d5a/subset__sum_8cpp" ],
-    [ "sudoku_solve.cpp", "d6/d7b/sudoku__solve_8cpp.html", "d6/d7b/sudoku__solve_8cpp" ],
+    [ "sudoku_solver.cpp", "d3/d05/sudoku__solver_8cpp.html", "d3/d05/sudoku__solver_8cpp" ],
     [ "wildcard_matching.cpp", "dc/d14/wildcard__matching_8cpp.html", "dc/d14/wildcard__matching_8cpp" ]
 ];

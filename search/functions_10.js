@@ -67,7 +67,7 @@ var searchData=
   ['printf_64',['printf',['http://en.cppreference.com/w/cpp/io/c/fprintf.html',0,'std']]],
   ['printinorder_65',['printInorder',['../d4/d32/inorder__successor__of__bst_8cpp.html#a5d7266b934ca50c4f53e4f1e725d89a4',1,'operations_on_datastructures::inorder_traversal_of_bst']]],
   ['printlinkedlist_66',['printLinkedList',['../d5/d45/sublist__search_8cpp.html#ad1028bc215281d62e344af99da57fab2',1,'search::sublist_search']]],
-  ['printmat_67',['printMat',['../d6/d7b/sudoku__solve_8cpp.html#ab040a12d7684cd85fb3684f4211ea5ac',1,'backtracking::sudoku_solver']]],
+  ['printmat_67',['printMat',['../d3/d05/sudoku__solver_8cpp.html#ab040a12d7684cd85fb3684f4211ea5ac',1,'backtracking::sudoku_solver']]],
   ['printnode_68',['PrintNode',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#af260f0760344771bf8fce4fc9b1739be',1,'data_structures::tree_234::Tree234']]],
   ['printresult_69',['printResult',['../dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793',1,'FCFS']]],
   ['printroot_70',['printRoot',['../dd/d29/false__position_8cpp.html#a85cb7bfb90abc898e042d624372c5345',1,'numerical_methods::false_position']]],

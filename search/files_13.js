@@ -23,7 +23,7 @@ var searchData=
   ['sublist_5fsearch_2ecpp_20',['sublist_search.cpp',['../d5/d45/sublist__search_8cpp.html',1,'']]],
   ['subset_5fsum_2ecpp_21',['subset_sum.cpp',['../d2/d5a/subset__sum_8cpp.html',1,'']]],
   ['successive_5fapproximation_2ecpp_22',['successive_approximation.cpp',['../df/dc8/successive__approximation_8cpp.html',1,'']]],
-  ['sudoku_5fsolve_2ecpp_23',['sudoku_solve.cpp',['../d6/d7b/sudoku__solve_8cpp.html',1,'']]],
+  ['sudoku_5fsolver_2ecpp_23',['sudoku_solver.cpp',['../d3/d05/sudoku__solver_8cpp.html',1,'']]],
   ['sum_5fof_5fbinomial_5fcoefficient_2ecpp_24',['sum_of_binomial_coefficient.cpp',['../d4/d9d/sum__of__binomial__coefficient_8cpp.html',1,'']]],
   ['sum_5fof_5fdigits_2ecpp_25',['sum_of_digits.cpp',['../d4/d83/sum__of__digits_8cpp.html',1,'']]]
 ];

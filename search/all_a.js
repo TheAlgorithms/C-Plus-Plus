@@ -196,7 +196,7 @@ var searchData=
   ['islower_193',['islower',['http://en.cppreference.com/w/cpp/string/byte/islower.html',0,'std']]],
   ['isnan_194',['isnan',['http://en.cppreference.com/w/cpp/numeric/math/isnan.html',0,'std']]],
   ['isnormal_195',['isnormal',['http://en.cppreference.com/w/cpp/numeric/math/isnormal.html',0,'std']]],
-  ['ispossible_196',['isPossible',['../d6/d7b/sudoku__solve_8cpp.html#a07dc6acffd0500de9bdbf16b3ade94b0',1,'backtracking::sudoku_solver']]],
+  ['ispossible_196',['isPossible',['../d3/d05/sudoku__solver_8cpp.html#a07dc6acffd0500de9bdbf16b3ade94b0',1,'backtracking::sudoku_solver']]],
   ['isprime_197',['IsPrime',['../da/d7b/primality__test_8cpp.html#a2bfa6adead2bdcbf1dac94cbe08d7eaf',1,'primality_test.cpp']]],
   ['isprime_198',['isprime',['../db/d0d/prime__factorization_8cpp.html#a7fe38b570a51e448430d6a0f072c2f23',1,'prime_factorization.cpp']]],
   ['isprime_199',['isPrime',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a09660096b134753128952246f4f4e4bd',1,'modular_inverse_fermat_little_theorem.cpp']]],
