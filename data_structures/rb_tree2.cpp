@@ -1451,7 +1451,11 @@ void LargerComprehensiveRemoveTest() {
 }
 
 
-int main(){
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
     
     TestSimpleConstructor();
 
