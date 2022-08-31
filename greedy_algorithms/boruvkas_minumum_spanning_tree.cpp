@@ -209,7 +209,6 @@ void tests() {
  */
 int main() {
     int main() {
-	tests();
-	
-	return 0;	
+	tests();  // run self-test implementations
+	return 0;
 }
