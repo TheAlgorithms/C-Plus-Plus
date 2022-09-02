@@ -1,20 +1,20 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,275,56,301"/>
-<area shape="rect" id="node2" href="$de/d72/geometric__dist_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,275,148,301"/>
-<area shape="rect" id="node3" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" title="The cumulative distribution function." alt="" coords="429,5,615,61"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="486,275,558,301"/>
-<area shape="rect" id="node6" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413" title="The expected value of a geometrically distributed random variable X." alt="" coords="429,325,615,381"/>
-<area shape="rect" id="node7" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="663,259,875,315"/>
-<area shape="rect" id="node9" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aee973db9f0435e0cb4cc70f8eb3447a1" title="The probability density function." alt="" coords="196,144,381,200"/>
-<area shape="rect" id="node10" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69" title="This function computes the probability to have success in a given range of tries." alt="" coords="196,64,381,120"/>
-<area shape="rect" id="node12" href="$de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6" title="Tests the sampling method of the geometric distribution." alt="" coords="242,395,335,421"/>
-<area shape="rect" id="node16" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" title="The variance of a geometrically distributed random variable X." alt="" coords="429,536,615,592"/>
-<area shape="rect" id="node17" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2" title="The standard deviation of a geometrically distributed random variable X." alt="" coords="196,536,381,592"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,273,56,298"/>
+<area shape="rect" id="node2" href="$de/d72/geometric__dist_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,273,148,298"/>
+<area shape="rect" id="node3" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" title="The cumulative distribution function." alt="" coords="429,6,615,61"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="486,273,558,298"/>
+<area shape="rect" id="node6" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a41051365f8ac7700f2ed5880a6760413" title="The expected value of a geometrically distributed random variable X." alt="" coords="429,322,615,377"/>
+<area shape="rect" id="node7" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf" title="The inverse cumulative distribution function." alt="" coords="663,255,875,310"/>
+<area shape="rect" id="node9" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aee973db9f0435e0cb4cc70f8eb3447a1" title="The probability density function." alt="" coords="196,142,381,197"/>
+<area shape="rect" id="node10" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a4620163a196709484225774d87de6d69" title="This function computes the probability to have success in a given range of tries." alt="" coords="196,63,381,118"/>
+<area shape="rect" id="node12" href="$de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6" title="Tests the sampling method of the geometric distribution." alt="" coords="242,402,335,427"/>
+<area shape="rect" id="node16" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aea8b0d649f0dc9a6f8baf3341a0b4960" title="The variance of a geometrically distributed random variable X." alt="" coords="429,529,615,583"/>
+<area shape="rect" id="node17" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a0a10c512e13dd3a052e1c6d7f4d6f0f2" title="The standard deviation of a geometrically distributed random variable X." alt="" coords="196,529,381,583"/>
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="733,79,805,105"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="923,273,988,300"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="439,85,605,112"/>
-<area shape="rect" id="node13" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="429,405,615,461"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="459,485,585,512"/>
-<area shape="rect" id="node14" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="689,413,848,454"/>
-<area shape="rect" id="node18" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="487,616,557,643"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="923,270,988,295"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="439,85,605,110"/>
+<area shape="rect" id="node13" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a8aae1cebcf42ed2332f1c7217c401aa3" title="Generates a (discrete) sample according to the geometrical distribution." alt="" coords="429,401,615,455"/>
+<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="459,479,585,505"/>
+<area shape="rect" id="node14" href="$de/d72/geometric__dist_8cpp.html#a82964ca6180507deb5fafc71050012ba" title="Returns a random number between [0,1]." alt="" coords="689,408,848,448"/>
+<area shape="rect" id="node18" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="487,607,557,633"/>
 </map>

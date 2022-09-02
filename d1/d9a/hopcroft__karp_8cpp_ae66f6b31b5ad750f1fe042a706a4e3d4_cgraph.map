@@ -1,10 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,35,56,61"/>
-<area shape="rect" id="node2" href="$d1/d9a/hopcroft__karp_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="104,35,155,61"/>
-<area shape="rect" id="node3" href="$d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" title="function to add edge from u to v" alt="" coords="203,5,377,32"/>
-<area shape="rect" id="node5" href="$d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra..." alt="" coords="205,57,375,98"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="425,5,580,32"/>
-<area shape="rect" id="node6" href="$d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" title="This function checks for the possibility of augmented path availability." alt="" coords="431,60,574,87"/>
-<area shape="rect" id="node8" href="$d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" title="This functions checks whether an augmenting path is available exists beginning with free vertex u." alt="" coords="431,135,574,161"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="628,97,741,124"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,35,56,60"/>
+<area shape="rect" id="node2" href="$d1/d9a/hopcroft__karp_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="104,35,155,60"/>
+<area shape="rect" id="node3" href="$d8/d69/classgraph_1_1_h_k_graph.html#a3b49011c09cf90a116ab53bef61cd95a" title="function to add edge from u to v" alt="" coords="203,5,377,31"/>
+<area shape="rect" id="node5" href="$d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d" title="This function counts the number of augmenting paths between left and right sides of the Bipartite gra..." alt="" coords="205,55,375,95"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="425,5,580,31"/>
+<area shape="rect" id="node6" href="$d8/d69/classgraph_1_1_h_k_graph.html#a7491add14d9fc04f679114ca6d6f0f93" title="This function checks for the possibility of augmented path availability." alt="" coords="431,59,574,84"/>
+<area shape="rect" id="node8" href="$d8/d69/classgraph_1_1_h_k_graph.html#ae794950cb3407b6b47d3dc986cf714c0" title="This functions checks whether an augmenting path is available exists beginning with free vertex u." alt="" coords="431,132,574,157"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="628,96,741,121"/>
 </map>

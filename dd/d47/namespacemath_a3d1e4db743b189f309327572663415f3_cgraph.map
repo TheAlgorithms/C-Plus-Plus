@@ -1,4 +1,5 @@
 <map id="math::triangle_perimeter" name="math::triangle_perimeter">
-<area shape="rect" id="node1" title="perimeter of a triangle (a + b + c)" alt="" coords="5,5,168,32"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="216,5,273,32"/>
+<area shape="rect" id="node1" title="perimeter of a triangle (a + b + c)" alt="" coords="5,29,168,55"/>
+<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="216,29,273,55"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="321,29,395,55"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="numerical_methods/ode_midpoint_euler.cpp" name="numerical_methods/ode_midpoint_euler.cpp">
-<area shape="rect" id="node1" title="Solve a multivariable first order ordinary differential equation (ODEs) using midpoint Euler method" alt="" coords="121,5,281,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,95,143,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="168,95,235,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="259,95,331,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="355,95,423,121"/>
+<area shape="rect" id="node1" title="Solve a multivariable first order ordinary differential equation (ODEs) using midpoint Euler method" alt="" coords="121,5,281,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,64,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,93,143,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="168,93,235,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="259,93,331,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="355,93,423,119"/>
 </map>

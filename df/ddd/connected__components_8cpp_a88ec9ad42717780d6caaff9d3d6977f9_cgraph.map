@@ -1,8 +1,8 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="156,5,269,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="177,56,249,83"/>
-<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,107,321,133"/>
-<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="375,81,479,108"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="369,132,485,159"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$df/dce/namespacegraph.html#a9125ceb66bfbec3093bba64c2c1e99e2" title="Function that add edge between two nodes or vertices of graph." alt="" coords="156,5,269,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="177,55,249,80"/>
+<area shape="rect" id="node4" href="$df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b" title="Function that perfoms depth first search algorithm on graph and calculated the number of connected co..." alt="" coords="104,104,321,129"/>
+<area shape="rect" id="node5" href="$df/dce/namespacegraph.html#a3ae80bc4c6a79d041b4f3a6589eb7fb8" title="Utility function for depth first seach algorithm this function explores the vertex which is passed in..." alt="" coords="375,79,479,104"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="369,128,485,153"/>
 </map>

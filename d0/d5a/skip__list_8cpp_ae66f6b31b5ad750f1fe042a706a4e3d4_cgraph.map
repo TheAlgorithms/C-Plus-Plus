@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,197,56,224"/>
-<area shape="rect" id="node2" href="$d4/d90/classdata__structures_1_1_skip_list.html#a812611f80b8079268dbb19cc4e9bee5c" title=" " alt="" coords="104,15,271,57"/>
-<area shape="rect" id="node4" href="$d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9" title=" " alt="" coords="104,98,271,139"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="533,131,607,157"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="147,248,227,275"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="151,299,224,325"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="366,5,438,32"/>
-<area shape="rect" id="node5" href="$d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4" title=" " alt="" coords="319,57,485,98"/>
-<area shape="rect" id="node7" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="371,147,433,173"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,195,56,220"/>
+<area shape="rect" id="node2" href="$d4/d90/classdata__structures_1_1_skip_list.html#a812611f80b8079268dbb19cc4e9bee5c" title=" " alt="" coords="104,15,271,55"/>
+<area shape="rect" id="node4" href="$d4/d90/classdata__structures_1_1_skip_list.html#a40a4042bdf0b6683b5f21ae7854de8a9" title=" " alt="" coords="104,97,271,137"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="533,129,607,155"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="147,245,227,271"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="151,295,224,320"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="366,5,438,31"/>
+<area shape="rect" id="node5" href="$d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4" title=" " alt="" coords="319,55,485,95"/>
+<area shape="rect" id="node7" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="371,144,433,169"/>
 </map>

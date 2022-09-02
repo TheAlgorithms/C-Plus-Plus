@@ -1,9 +1,9 @@
 <map id="graph::depth_first_search::dfs" name="graph::depth_first_search::dfs">
-<area shape="rect" id="node1" title="Explores the given vertex, exploring a vertex means traversing over all the vertices which are connec..." alt="" coords="5,99,128,141"/>
-<area shape="rect" id="node2" href="$d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc" title=" " alt="" coords="212,31,295,57"/>
-<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d" title=" " alt="" coords="208,81,299,108"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="176,132,331,159"/>
-<area shape="rect" id="node7" href="$d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344" title=" " alt="" coords="213,183,293,209"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="415,5,487,32"/>
-<area shape="rect" id="node4" href="$d1/dc2/classstack.html#a066e4505155b009913c47b2648b1067a" title=" " alt="" coords="379,56,523,83"/>
+<area shape="rect" id="node1" title="Explores the given vertex, exploring a vertex means traversing over all the vertices which are connec..." alt="" coords="5,97,128,137"/>
+<area shape="rect" id="node2" href="$d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc" title=" " alt="" coords="212,29,295,55"/>
+<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d" title=" " alt="" coords="208,79,299,104"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="176,128,331,153"/>
+<area shape="rect" id="node7" href="$d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344" title=" " alt="" coords="213,177,293,203"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="415,5,487,31"/>
+<area shape="rect" id="node4" href="$d1/dc2/classstack.html#a066e4505155b009913c47b2648b1067a" title=" " alt="" coords="379,55,523,80"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="ciphers::a1z26::decrypt" name="ciphers::a1z26::decrypt">
-<area shape="rect" id="node1" title="a1z26 decryption implementation" alt="" coords="5,31,164,57"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="212,5,367,32"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/replace.html#" title=" " alt="" coords="244,56,335,83"/>
+<area shape="rect" id="node1" title="a1z26 decryption implementation" alt="" coords="5,55,164,80"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="212,5,367,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/replace.html#" title=" " alt="" coords="244,55,335,80"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/transform.html#" title=" " alt="" coords="238,104,341,129"/>
 </map>

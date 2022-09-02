@@ -1,11 +1,11 @@
 <map id="numerical_methods/qr_decompose.h" name="numerical_methods/qr_decompose.h">
-<area shape="rect" id="node1" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="267,5,418,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,95,149,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="173,95,240,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="264,95,336,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="360,95,413,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="438,95,506,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="530,95,598,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="623,95,681,121"/>
+<area shape="rect" id="node1" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="267,5,418,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,64,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,93,149,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="173,93,240,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="264,93,336,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="360,93,413,119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="438,93,506,119"/>
+<area shape="rect" id="node8" title=" " alt="" coords="530,93,598,119"/>
+<area shape="rect" id="node9" title=" " alt="" coords="623,93,681,119"/>
 </map>

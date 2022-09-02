@@ -82,7 +82,7 @@ var searchData=
   ['array_3c_20int64_5ft_2c_20n_20_3e_79',['array&lt; int64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
   ['array_3c_20std_3a_3aarray_3c_20int64_5ft_2c_20n_20_3e_2c_20m_20_3e_80',['array&lt; std::array&lt; int64_t, N &gt;, M &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
   ['array_3c_20std_3a_3aarray_3c_20uint32_5ft_2c_203_20_3e_2c_203_20_3e_81',['array&lt; std::array&lt; uint32_t, 3 &gt;, 3 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
-  ['array_3c_20uint64_5ft_2c_2050_20_3e_82',['array&lt; uint64_t, 50 &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
+  ['array_3c_20uint64_5ft_2c_20n_20_3e_82',['array&lt; uint64_t, N &gt;',['http://en.cppreference.com/w/cpp/container/array.html',0,'std']]],
   ['array_5fleft_5frotation_2ecpp_83',['array_left_rotation.cpp',['../d9/d14/array__left__rotation_8cpp.html',1,'']]],
   ['array_5fright_5frotation_2ecpp_84',['array_right_rotation.cpp',['../d6/d57/array__right__rotation_8cpp.html',1,'']]],
   ['asctime_85',['asctime',['http://en.cppreference.com/w/cpp/chrono/c/asctime.html',0,'std']]],

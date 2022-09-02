@@ -1,4 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" id="node2" href="$de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec" title=" " alt="" coords="104,5,185,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec" title=" " alt="" coords="114,5,195,31"/>
+<area shape="rect" id="node3" href="$de/d23/disjoint__set_8cpp.html#a2fb0a7cd26a477e2d48ba7e0118bc985" title=" " alt="" coords="104,55,205,80"/>
+<area shape="rect" id="node5" href="$de/d23/disjoint__set_8cpp.html#a44481bb75386fbb0f958a388d4b9f757" title=" " alt="" coords="127,104,183,129"/>
+<area shape="rect" id="node4" href="$de/d23/disjoint__set_8cpp.html#a34b9ead0608e676d9ae5188672427cc8" title=" " alt="" coords="253,80,300,105"/>
 </map>

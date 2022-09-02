@@ -1,11 +1,11 @@
 <map id="numerical_methods/lu_decompose.cpp" name="numerical_methods/lu_decompose.cpp">
-<area shape="rect" id="node1" title="LU decomposition of a square matrix" alt="" coords="133,5,282,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,71,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,95,149,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="174,95,241,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="242,169,314,196"/>
-<area shape="rect" id="node6" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="316,95,459,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="339,169,407,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="431,169,490,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="514,169,573,196"/>
+<area shape="rect" id="node1" title="LU decomposition of a square matrix" alt="" coords="133,5,282,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,71,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,93,149,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="174,93,241,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="242,167,314,192"/>
+<area shape="rect" id="node6" href="$d1/dbe/lu__decomposition_8h.html" title="Functions associated with LU Decomposition of a square matrix." alt="" coords="316,93,459,119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="339,167,407,192"/>
+<area shape="rect" id="node8" title=" " alt="" coords="431,167,490,192"/>
+<area shape="rect" id="node9" title=" " alt="" coords="514,167,573,192"/>
 </map>

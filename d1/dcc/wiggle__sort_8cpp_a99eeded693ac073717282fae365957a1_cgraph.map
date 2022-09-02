@@ -1,3 +1,5 @@
 <map id="sorting::wiggle_sort::wiggleSort" name="sorting::wiggle_sort::wiggleSort">
-<area shape="rect" id="node1" title="Function used for sorting the elements in wave form." alt="" coords="5,29,140,71"/>
+<area shape="rect" id="node1" title="Function used for sorting the elements in wave form." alt="" coords="5,29,140,69"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="188,11,304,37"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="207,61,285,86"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="math::rect_prism_volume" name="math::rect_prism_volume">
-<area shape="rect" id="node1" title="The volume of a rectangular prism." alt="" coords="5,5,175,32"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="223,5,280,32"/>
+<area shape="rect" id="node1" title="The volume of a rectangular prism." alt="" coords="5,29,175,55"/>
+<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="223,29,280,55"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="328,29,401,55"/>
 </map>

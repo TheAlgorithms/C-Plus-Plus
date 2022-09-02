@@ -22,38 +22,45 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
+var once=1;
 function initResizable()
 {
   var cookie_namespace = 'doxygen';
-  var sidenav,navtree,content,header,collapsed,collapsedWidth=0,barWidth=6,desktop_vp=768,titleHeight;
+  var sidenav,navtree,content,header,barWidth=6,desktop_vp=768,titleHeight;
 
-  function readCookie(cookie)
+  function readSetting(cookie)
   {
-    var myCookie = cookie_namespace+"_"+cookie+"=";
-    if (document.cookie) {
-      var index = document.cookie.indexOf(myCookie);
-      if (index != -1) {
-        var valStart = index + myCookie.length;
-        var valEnd = document.cookie.indexOf(";", valStart);
-        if (valEnd == -1) {
-          valEnd = document.cookie.length;
+    if (window.chrome) {
+      var val = localStorage.getItem(cookie_namespace+'_width');
+      if (val) return val;
+    } else {
+      var myCookie = cookie_namespace+"_"+cookie+"=";
+      if (document.cookie) {
+        var index = document.cookie.indexOf(myCookie);
+        if (index != -1) {
+          var valStart = index + myCookie.length;
+          var valEnd = document.cookie.indexOf(";", valStart);
+          if (valEnd == -1) {
+            valEnd = document.cookie.length;
+          }
+          var val = document.cookie.substring(valStart, valEnd);
+          return val;
         }
-        var val = document.cookie.substring(valStart, valEnd);
-        return val;
       }
     }
-    return 0;
+    return 250;
   }
 
-  function writeCookie(cookie, val, expiration)
+  function writeSetting(cookie, val)
   {
-    if (val==undefined) return;
-    if (expiration == null) {
+    if (window.chrome) {
+      localStorage.setItem(cookie_namespace+"_width",val);
+    } else {
       var date = new Date();
       date.setTime(date.getTime()+(10*365*24*60*60*1000)); // default expiration is one week
       expiration = date.toGMTString();
+      document.cookie = cookie_namespace + "_" + cookie + "=" + val + "; SameSite=Lax; expires=" + expiration+"; path=/";
     }
-    document.cookie = cookie_namespace + "_" + cookie + "=" + val + "; SameSite=Lax; expires=" + expiration+"; path=/";
   }
 
   function resizeWidth()
@@ -61,13 +68,19 @@ function initResizable()
     var windowWidth = $(window).width() + "px";
     var sidenavWidth = $(sidenav).outerWidth();
     content.css({marginLeft:parseInt(sidenavWidth)+"px"});
-    writeCookie('width',sidenavWidth-barWidth, null);
+    if (typeof page_layout!=='undefined' && page_layout==1) {
+      footer.css({marginLeft:parseInt(sidenavWidth)+"px"});
+    }
+    writeSetting('width',sidenavWidth-barWidth);
   }
 
   function restoreWidth(navWidth)
   {
     var windowWidth = $(window).width() + "px";
     content.css({marginLeft:parseInt(navWidth)+barWidth+"px"});
+    if (typeof page_layout!=='undefined' && page_layout==1) {
+      footer.css({marginLeft:parseInt(navWidth)+barWidth+"px"});
+    }
     sidenav.css({width:navWidth + "px"});
   }
 
@@ -89,19 +102,6 @@ function initResizable()
     content.css({height:contentHeight + "px"});
     navtree.css({height:navtreeHeight + "px"});
     sidenav.css({height:sideNavHeight + "px"});
-    var width=$(window).width();
-    if (width!=collapsedWidth) {
-      if (width<desktop_vp && collapsedWidth>=desktop_vp) {
-        if (!collapsed) {
-          collapseExpand();
-        }
-      } else if (width>desktop_vp && collapsedWidth<desktop_vp) {
-        if (collapsed) {
-          collapseExpand();
-        }
-      }
-      collapsedWidth=width;
-    }
     if (location.hash.slice(1)) {
       (document.getElementById(location.hash.slice(1))||document.body).scrollIntoView();
     }
@@ -109,15 +109,17 @@ function initResizable()
 
   function collapseExpand()
   {
+    var newWidth;
     if (sidenav.width()>0) {
-      restoreWidth(0);
-      collapsed=true;
+      newWidth=0;
     }
     else {
-      var width = readCookie('width');
-      if (width>200 && width<$(window).width()) { restoreWidth(width); } else { restoreWidth(200); }
-      collapsed=false;
+      var width = readSetting('width');
+      newWidth = (width>250 && width<$(window).width()) ? width : 250;
     }
+    restoreWidth(newWidth);
+    var sidenavWidth = $(sidenav).outerWidth();
+    writeSetting('width',sidenavWidth-barWidth);
   }
 
   header  = $("#top");
@@ -136,7 +138,7 @@ function initResizable()
     $('#nav-sync').css({ right:'34px' });
     barWidth=20;
   }
-  var width = readCookie('width');
+  var width = readSetting('width');
   if (width) { restoreWidth(width); } else { resizeWidth(); }
   resizeHeight();
   var url = location.href;
@@ -144,7 +146,10 @@ function initResizable()
   if (i>=0) window.location.hash=url.substr(i);
   var _preventDefault = function(evt) { evt.preventDefault(); };
   $("#splitbar").bind("dragstart", _preventDefault).bind("selectstart", _preventDefault);
-  $(".ui-resizable-handle").dblclick(collapseExpand);
+  if (once) {
+    $(".ui-resizable-handle").dblclick(collapseExpand);
+    once=0
+  }
   $(window).on('load',resizeHeight);
 }
 /* @license-end */

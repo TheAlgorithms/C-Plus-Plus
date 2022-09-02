@@ -8,7 +8,7 @@ var searchData=
   ['linear_5fcongruential_5fengine_5',['linear_congruential_engine',['http://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine.html',0,'std']]],
   ['link_6',['link',['../de/d9d/classdata__structures_1_1linked__list_1_1link.html',1,'data_structures::linked_list']]],
   ['linkedlist_7',['linkedlist',['../d0/dff/structlinkedlist.html',1,'']]],
-  ['list_8',['list',['../d1/def/classdata__structures_1_1linked__list_1_1list.html',1,'data_structures::linked_list::list'],['../d5/dab/structdata__structures_1_1list__array_1_1list.html',1,'data_structures::list_array::list'],['../d8/d10/structlist.html',1,'list'],['http://en.cppreference.com/w/cpp/container/list.html',0,'std::list&lt; T &gt;']]],
+  ['list_8',['list',['../d1/def/classdata__structures_1_1linked__list_1_1list.html',1,'data_structures::linked_list::list'],['../d5/dab/structdata__structures_1_1list__array_1_1list.html',1,'data_structures::list_array::list&lt; N &gt;'],['../d8/d10/structlist.html',1,'list'],['http://en.cppreference.com/w/cpp/container/list.html',0,'std::list&lt; T &gt;']]],
   ['list_3c_20int_20_3e_9',['list&lt; int &gt;',['http://en.cppreference.com/w/cpp/container/list.html',0,'std']]],
   ['list_3c_20uint64_5ft_20_3e_10',['list&lt; uint64_t &gt;',['http://en.cppreference.com/w/cpp/container/list.html',0,'std']]],
   ['locale_11',['locale',['http://en.cppreference.com/w/cpp/locale/locale.html',0,'std']]],

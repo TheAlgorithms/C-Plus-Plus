@@ -1,12 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="main function" alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node2" href="$d4/db6/reverse__binary__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the correctness of the Tree Reversal." alt="" coords="104,81,148,108"/>
-<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." alt="" coords="196,31,284,57"/>
-<area shape="rect" id="node9" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." alt="" coords="196,81,284,108"/>
-<area shape="rect" id="node10" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." alt="" coords="196,132,284,159"/>
-<area shape="rect" id="node4" href="$d8/ddf/sieve__of__eratosthenes_8cpp.html#a235843bdf82d2a6cc8596ae8fd3b8df9" title=" " alt="" coords="405,52,452,79"/>
-<area shape="rect" id="node7" href="$da/d6d/namespaceoperations__on__datastructures.html#afce39cf843989a39811a49ebe29dd6d8" title="Shifts the given vector to the left by the shift amount and returns a new vector with the result...." alt="" coords="332,103,525,145"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="595,56,667,83"/>
-<area shape="rect" id="node6" href="$db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532" title="for IO operations" alt="" coords="596,5,667,32"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="573,111,689,137"/>
+<area shape="rect" id="node1" title="main function" alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$d4/db6/reverse__binary__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the correctness of the Tree Reversal." alt="" coords="104,55,148,80"/>
+<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." alt="" coords="196,5,284,31"/>
+<area shape="rect" id="node4" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." alt="" coords="196,55,284,80"/>
+<area shape="rect" id="node5" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." alt="" coords="196,104,284,129"/>
 </map>

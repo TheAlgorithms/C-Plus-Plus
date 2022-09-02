@@ -1,0 +1,9 @@
+<map id="ciphers::HillCipher::generate_encryption_key" name="ciphers::HillCipher::generate_encryption_key">
+<area shape="rect" id="node1" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid..." alt="" coords="5,77,180,117"/>
+<area shape="rect" id="node2" href="$d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0" title="Compute GCD of two integers using Euler&#39;s algorithm." alt="" coords="228,5,387,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " alt="" coords="264,55,351,80"/>
+<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9" title="Function to generate a random integer in a given interval." alt="" coords="243,105,372,145"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="267,169,347,195"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="435,5,513,31"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="437,112,511,137"/>
+</map>

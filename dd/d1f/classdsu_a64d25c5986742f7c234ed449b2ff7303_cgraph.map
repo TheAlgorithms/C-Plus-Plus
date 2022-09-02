@@ -1,4 +1,4 @@
 <map id="dsu::isSame" name="dsu::isSame">
-<area shape="rect" id="node1" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="5,29,100,56"/>
-<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="148,29,240,56"/>
+<area shape="rect" id="node1" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="5,29,100,55"/>
+<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="148,29,240,55"/>
 </map>

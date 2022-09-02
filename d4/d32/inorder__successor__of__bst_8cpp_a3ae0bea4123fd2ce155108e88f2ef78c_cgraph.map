@@ -1,0 +1,4 @@
+<map id="operations_on_datastructures::inorder_traversal_of_bst::Insert" name="operations_on_datastructures::inorder_traversal_of_bst::Insert">
+<area shape="rect" id="node1" title="Inserts the given data in BST while maintaining the properties of BST." alt="" coords="5,29,199,84"/>
+<area shape="rect" id="node2" href="$d4/d32/inorder__successor__of__bst_8cpp.html#a7f6f73a33beec448c27cc1d70b220702" title="Allocates a new node in heap for given data and returns it&#39;s pointer." alt="" coords="247,29,440,84"/>
+</map>
