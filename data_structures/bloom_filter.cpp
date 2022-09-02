@@ -1,5 +1,5 @@
 /**
- * @file bloom_filter.cpp
+ * @file
  * @brief [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
  * generic implementation in C++
  * @details A Bloom filter is a space-efficient probabilistic data structure,
@@ -14,8 +14,6 @@
  * get an answer of bloom filter, that we don't need to make our "expensive
  * operation"
  *
- * For math details, please, [look
- * here](https://en.wikipedia.org/wiki/Bloom_filter)
  *
  * [Very good use case example](https://stackoverflow.com/a/30247022)
  *
@@ -24,8 +22,8 @@
  * @author [DanArmor](https://github.com/DanArmor)
  */
 
-#include <cassert>     ///< for assert
-#include <functional>  ///< for list of hash functions for bloom filter constructor
+#include <cassert>           ///< for assert
+#include <functional>        ///< for list of hash functions for bloom filter constructor
 #include <initializer_list>  ///< for initializer_list for bloom filter constructor
 #include <string>            ///< for testing on strings
 #include <vector>            ///< for vector
@@ -78,8 +76,8 @@ void Bitset::add(std::size_t x) {
  * @brief Doest bitset contains element x
  *
  * @param x position in bitset to check
- * @return true if: bit on position x is 1
- * @return false if: bit on position x is 0
+ * @return true if bit on position x is 1
+ * @return false if bit on position x is 0
  */
 bool Bitset::contains(std::size_t x) {
     std::size_t blockIndex = x / blockSize;
@@ -140,8 +138,8 @@ void BloomFilter<T>::add(T x) {
  *
  * @tparam T type, that we need to hash
  * @param x element to check in filter
- * @return true if: element probably appears in filter
- * @return false if: element certainly does not appear in filter
+ * @return true if the element probably appears in the filter
+ * @return false if the element certainly does not appear in the filter
  */
 template <typename T>
 bool BloomFilter<T>::contains(T x) {
