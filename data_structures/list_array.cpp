@@ -29,7 +29,7 @@ namespace list_array {
     /**
      * @brief Structure of List with supporting methods.
      */
-    template <int N>
+    template <uint64_t N>
     struct list {
         std::array<uint64_t, N> data{}; // Array that implement list
         uint64_t top = 0; // Pointer to the last element
