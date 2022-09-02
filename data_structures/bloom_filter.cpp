@@ -90,7 +90,7 @@ bool Bitset::contains(std::size_t x) {
 /**
  * @brief Bloom filter template class
  *
- * @tparam T type, that we need to hash
+ * @tparam T type of elements that we need to filter
  */
 template <typename T>
 class BloomFilter {
@@ -109,7 +109,7 @@ class BloomFilter {
 /**
  * @brief Constructor for Bloom filter
  *
- * @tparam T type, that we need to hash
+ * @tparam T type of elements that we need to filter
  * @param size initial size of Bloom filter
  * @param funks hash functions for T type
  */
@@ -122,7 +122,7 @@ BloomFilter<T>::BloomFilter(
 /**
  * @brief Add function for Bloom filter
  *
- * @tparam T type, that we need to hash
+ * @tparam T type of elements that we need to filter
  * @param x element to add to filter
  * @return void
  */
@@ -136,7 +136,7 @@ void BloomFilter<T>::add(T x) {
 /**
  * @brief Check element function for Bloom filter
  *
- * @tparam T type, that we need to hash
+ * @tparam T type of elements that we need to filter
  * @param x element to check in filter
  * @return true if the element probably appears in the filter
  * @return false if the element certainly does not appear in the filter
@@ -150,22 +150,6 @@ bool BloomFilter<T>::contains(T x) {
         }
     }
     return true;
-}
-
-/**
- * @brief Test for bitset
- *
- * @return void
- */
-static void test_bitset() {
-    Bitset set(2);
-    std::vector<std::size_t> toCheck{0, 1, 5, 8, 63, 64, 67, 127};
-    for (auto x : toCheck) {
-        set.add(x);
-        assert(set.contains(x));
-    }
-    assert(set.contains(128) == false);
-    assert(set.contains(256) == false);
 }
 
 /**
@@ -266,6 +250,22 @@ static void test_bloom_filter_int() {
     for (int x : toCheck) {
         assert(filter.contains(x));
     }
+}
+
+/**
+ * @brief Test for bitset
+ *
+ * @return void
+ */
+static void test_bitset() {
+    Bitset set(2);
+    std::vector<std::size_t> toCheck{0, 1, 5, 8, 63, 64, 67, 127};
+    for (auto x : toCheck) {
+        set.add(x);
+        assert(set.contains(x));
+    }
+    assert(set.contains(128) == false);
+    assert(set.contains(256) == false);
 }
 
 /**
