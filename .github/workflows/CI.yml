@@ -1,4 +1,4 @@
-name: CMake
+name: Check Code Quality and Code Coverage
 
 on: [push, pull_request]
 #  push:
