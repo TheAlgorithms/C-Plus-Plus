@@ -475,27 +475,27 @@ bool list::isEmpty() {
 data_structures/linked_list.cpp:96:10: note: Technically the member function 'data_structures::linked_list::list::isEmpty' can be const.
     bool isEmpty();
          ^
-data_structures/list_array.cpp:229:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(11) == 0); // search for the existing element
-             ^
-data_structures/list_array.cpp:230:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(12) == 2);
-             ^
-data_structures/list_array.cpp:231:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(50) == -1); // search for the non-existing element
-             ^
-data_structures/list_array.cpp:239:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(11) == 1); // search for the existing element
-             ^
-data_structures/list_array.cpp:240:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(12) == 2);
-             ^
 data_structures/list_array.cpp:241:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
-    assert(L.search(50) == -1); // search for the non-existing element
+    assert(L.search(11) == 0);  // search for the existing element
              ^
-data_structures/list_array.cpp:191:14: style:inconclusive: Technically the member function 'list < 50 >::show' can be const. [functionConst]
-        void show() {
+data_structures/list_array.cpp:242:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
+    assert(L.search(12) == 2);
              ^
+data_structures/list_array.cpp:243:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
+    assert(L.search(50) == -1);  // search for the non-existing element
+             ^
+data_structures/list_array.cpp:251:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
+    assert(L.search(11) == 1);  // search for the existing element
+             ^
+data_structures/list_array.cpp:252:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
+    assert(L.search(12) == 2);
+             ^
+data_structures/list_array.cpp:253:14: warning: Assert statement calls a function which may have desired side effects: 'search'. [assertWithSideEffect]
+    assert(L.search(50) == -1);  // search for the non-existing element
+             ^
+data_structures/list_array.cpp:203:10: style:inconclusive: Technically the member function 'list < 50 >::show' can be const. [functionConst]
+    void show() {
+         ^
 data_structures/queue_using_linkedlist.cpp:18:10: style:inconclusive: Technically the member function 'stack_linkedList::display' can be const. [functionConst]
     void display();
          ^
