@@ -1,4 +1,4 @@
-name: Check Code Quality and Code Coverage
+name: Check Code Coverage
 
 on: [push, pull_request]
 #  push:
@@ -11,24 +11,10 @@ on: [push, pull_request]
 #  BUILD_TYPE: Release
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
-      - name: Cpp Check
-        uses: deep5050/cppcheck-action@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
-          
-      - name: Publish Report    
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'master' 
-          
-      - name: Check Code Coverage
+      - uses: actions/checkout@v2
       - run: yarn # Install dependencies
       - run: yarn test --coverage # Run test
       - run: bash <(curl -s https://codecov.io/bash) # Upload to Codecov
