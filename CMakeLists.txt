@@ -42,9 +42,6 @@ add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
 add_subdirectory(graph)
 
-enable_testing()
-add_subdirectory(tests)
-
 cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
 find_package(Doxygen OPTIONAL_COMPONENTS dot dia)
