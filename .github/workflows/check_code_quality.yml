@@ -20,7 +20,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_NAME: 'master' 
           
-      - name: Check Code Coverage
-        uses: romeovs/lcov-reporter-action@v0.2.16
+      - name: Post coverage report
+        uses: romeovs/lcov-reporter-action@v0.3.1
         with:
-          lcov-file: ./coverage/lcov.info
+          lcov-file: "${{ env.WORKING_DIRECTORY }}/coverage/lcov_head.info"
+          lcov-base: "${{ env.WORKING_DIRECTORY }}/coverage/lcov.info"
+          github-token: "${{ secrets.SA_GITHUB_TOKEN }}"
+          delete-old-comments: true
+          filter-changed-files: true
