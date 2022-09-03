@@ -17,19 +17,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         
-      #- name: Cpp Check
-        #uses: deep5050/cppcheck-action@main
-        #with:
-          #github_token: ${{ secrets.GITHUB_TOKEN}}
+      - name: Cpp Check
+        uses: deep5050/cppcheck-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN}}
           
-      #- name: Publish Report    
-        #uses: mikeal/publish-to-github-action@master
-        #env:
-          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #BRANCH_NAME: 'master' 
+      - name: Publish Report    
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'master' 
           
       - name: Check Code Coverage
-        uses: brokeyourbike/codeclimate-action@v0.1
+        uses: danhunsaker/clover-reporter-action@v0.2.17-clover
         with:
-          token: ${{ secrets.CODECLIMATE_TOKEN }}
-          files: ./coverage1.xml,./coverage2.xml
+          github-token: ${{ secrets.GITHUB_TOKEN }}
