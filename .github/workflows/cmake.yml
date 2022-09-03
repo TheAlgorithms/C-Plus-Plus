@@ -28,14 +28,8 @@ jobs:
           #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #BRANCH_NAME: 'master' 
           
-      - name: format code coverage
-        uses: ./.github/actions/cc-test-reporter
+      - name: Check Code Coverage
+        uses: brokeyourbike/codeclimate-action@v0.1
         with:
-          subcommand: "format-coverage -t lcov ./coverage/lcov.info"
-          
-      - name: upload code coverage
-        uses: ./.github/actions/cc-test-reporter
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          subcommand: "upload-coverage"
+          token: ${{ secrets.CODECLIMATE_TOKEN }}
+          files: ./coverage1.xml,./coverage2.xml
