@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
           
       - name: Cpp Check
         uses: deep5050/cppcheck-action@main
@@ -30,8 +30,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_NAME: 'master' 
 
-      - name: Check code coverage
-        uses: danhunsaker/clover-reporter-action@v0.2.17-clover
+      - name: Summary Report of Code Coverage
+        uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          clover-file: ./coverage/clover.xml
+          filename: coverage.cobertura.xml
