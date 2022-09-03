@@ -30,14 +30,9 @@ jobs:
           BRANCH_NAME: 'master' 
 
       - name: Check Code Coverage
-        uses: irongut/CodeCoverageSummary@v1.3.0
+        uses: codacy/codacy-coverage-reporter-action@v1
         with:
-          filename: coverage/**/coverage.cobertura.xml
-          badge: true
-          fail_below_min: true
-          format: markdown
-          hide_branch_rate: false
-          hide_complexity: true
-          indicators: true
-          output: both
-          thresholds: '60 80'
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          # or
+          # api-token: ${{ secrets.CODACY_API_TOKEN }}
+          coverage-reports: cobertura.xml
