@@ -110,6 +110,8 @@
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/dynamic_programming/word_break.cpp)
 
+## [Find Smallest X And Y In Algebra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master//find_smallest_x_and_y_in_algebra.cpp)
+
 ## Geometry
   * [Graham Scan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_algorithm.cpp)
   * [Graham Scan Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/geometry/graham_scan_functions.hpp)
