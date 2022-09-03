@@ -17,22 +17,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
           
-      - name: Cpp Check
-        uses: deep5050/cppcheck-action@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
+      #- name: Cpp Check
+        #uses: deep5050/cppcheck-action@main
+        #with:
+          #github_token: ${{ secrets.GITHUB_TOKEN}}
           
         
-      - name: Publish Report    
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'master' 
-
-      - name: Check Code Coverage
-        uses: codacy/codacy-coverage-reporter-action@v1
-        with:
-          #project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          # or
-          api-token: ${{ secrets.CODACY_API_TOKEN }}
-          coverage-reports: cobertura.xml
+      #- name: Publish Report    
+        #uses: mikeal/publish-to-github-action@master
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         # BRANCH_NAME: 'master' 
+         
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v3
+      - name: Run sonarqube
+        run: sonar-scanner
+             -Dsonar.organization=1corp 
+             -Dsonar.projectKey=Claro-Club-Mobile 
+             -Dsonar.sources=$GITHUB_WORKSPACE 
+             -Dsonar.host.url=${{ secrets.SONAR_URL }} 
+             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
