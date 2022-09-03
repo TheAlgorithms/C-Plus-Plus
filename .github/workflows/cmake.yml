@@ -18,14 +18,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
           
-      - name: cppcheck
+      - name: Cpp Check
         uses: deep5050/cppcheck-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           
         
-      - name: publish report    
+      - name: Publish Report    
         uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'master' # your branch name goes here
+          BRANCH_NAME: 'master' 
+
+      - name: Check code coverage
+        uses: devmasx/coverage-check-action@v1.2.0
+        with:
+          type: simplecov
+          result_path: coverage/.last_run.json
+          min_coverage: 90
+          token: ${{ github.token }}
