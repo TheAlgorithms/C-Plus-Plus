@@ -21,7 +21,10 @@ jobs:
           BRANCH_NAME: 'master' 
           
       - name: Code Coverage Report
-        uses: ziishaned/jest-reporter-action@v0.0.1
+        uses: romeovs/lcov-reporter-action@v0.3.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-command: "yarn jest --coverage"
+          lcov-file: "${{ env.WORKING_DIRECTORY }}/coverage/lcov_head.info"
+          lcov-base: "${{ env.WORKING_DIRECTORY }}/coverage/lcov.info"
+          github-token: "${{ secrets.SA_GITHUB_TOKEN }}"
+          delete-old-comments: true
+          filter-changed-files: true
