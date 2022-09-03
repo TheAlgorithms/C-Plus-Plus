@@ -1,14 +1,14 @@
 name: CMake
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [push, pull_request]
+#  push:
+#    branches: [ "master" ]
+#  pull_request:
+#    branches: [ "master" ]
 
-env:
-  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Release
+#env:
+  ## Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+#  BUILD_TYPE: Release
 
 jobs:
   build:
@@ -32,13 +32,22 @@ jobs:
 
     # Runs code analysis with cppcheck.
     - name: Cpp Check
-      # Use the 'cppcheck-action@master' GitHub action.
-      uses: tonybaloney/cppcheck-action@master
+      # Use the 'cppcheck-action@main' GitHub action.
+      uses: deep5050/cppcheck-action@main
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN}}
+    
+    - name: publish report    
+      uses: mikeal/publish-to-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_NAME: 'master' # your branch name goes here
     
     # Check Code Coverage in clover format with percentage (0 - 100) required to pass.
     - name: Check Code Coverage
-      uses: themichaelhall/check-code-coverage@v1
+      uses: devmasx/coverage-check-action@v1.2.0
       with:
-        report: coverage.xml
-        required-percentage: 80
-      
+        type: simplecov
+        result_path: coverage/.last_run.json
+        min_coverage: 90
+        token: ${{ github.token }}
