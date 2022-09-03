@@ -1,0 +1,36 @@
+name: Upload CodeCov Report
+on: [push, pull_request]
+jobs:
+  run:
+    runs-on: windows-latest
+    name: Build, Test , Upload Code Coverage Report
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: ‘2’
+        id: checkout_code
+      - name: Setup MSBuild and add to PATH
+        uses: microsoft/setup-msbuild@v1.0.2
+        id: setup_msbuild
+      - name: Run MSBuild
+        id: run_msbuild
+        run: msbuild /p:Configuration=Debug /p:Platform=x86 HelloCovDemo.sln
+      - name: Setup VSTest and add to PATH
+        uses: darenm/Setup-VSTest@v1
+        id: setup_vstest
+      - name: Setup OpenCppCoverage and add to PATh
+        id: setup_opencppcoverage
+        run: |
+          choco install OpenCppCoverage -y
+          echo "C:\Program Files\OpenCppCoverage" >> $env:GITHUB_PATH
+      - name: Generate Report
+        id: generate_test_report
+        shell: cmd
+        run: OpenCppCoverage.exe --sources HelloCov --export_type cobertura:HelloCov.xml -- "vstest.console.exe" Debug\HelloTest.dll
+      - name: Upload Report to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          files: ./HelloCov.xml
+          fail_ci_if_error: true
+          functionalities: fix

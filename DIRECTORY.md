@@ -10,7 +10,7 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
-  * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
+  * [Sudoku Solver](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solver.cpp)
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
@@ -187,6 +187,7 @@
   * [Fibonacci Large](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_large.cpp)
   * [Fibonacci Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_matrix_exponentiation.cpp)
   * [Fibonacci Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/fibonacci_sum.cpp)
+  * [Find Number Of Iteration To Kaprekar Constant](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/find_number_of_iteration_to_kaprekar_constant.cpp)
   * [Finding Number Of Digits In A Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/finding_number_of_digits_in_a_number.cpp)
   * [Gcd Iterative Euclidean](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_iterative_euclidean.cpp)
   * [Gcd Of N Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/gcd_of_n_numbers.cpp)
