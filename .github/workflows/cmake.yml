@@ -12,42 +12,20 @@ on: [push, pull_request]
 
 jobs:
   build:
-    # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
-    # You can convert this to a matrix build if you need cross-platform coverage.
-    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+    name: cppcheck-test
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Configure project
-      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
-      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
-
-    - name: Build project
-      # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
-
-    # Runs code analysis with cppcheck.
-    - name: Cpp Check
-      # Use the 'cppcheck-action@main' GitHub action.
-      uses: deep5050/cppcheck-action@main
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN}}
-    
-    - name: publish report    
-      uses: mikeal/publish-to-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_NAME: 'master' # your branch name goes here
-    
-    # Check Code Coverage in clover format with percentage (0 - 100) required to pass.
-    - name: Check Code Coverage
-      uses: devmasx/coverage-check-action@v1.2.0
-      with:
-        type: simplecov
-        result_path: coverage/.last_run.json
-        min_coverage: 90
-        token: ${{ github.token }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+          
+      - name: cppcheck
+        uses: deep5050/cppcheck-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN}}
+          
+        
+      - name: publish report    
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'master' # your branch name goes here
