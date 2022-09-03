@@ -31,9 +31,7 @@ jobs:
           BRANCH_NAME: 'master' 
 
       - name: Check code coverage
-        uses: devmasx/coverage-check-action@v1.2.0
+        uses: danhunsaker/clover-reporter-action@v0.2.17-clover
         with:
-          type: simplecov
-          result_path: coverage/.last_run.json
-          min_coverage: 90
-          token: ${{ github.token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          clover-file: ./coverage/clover.xml
