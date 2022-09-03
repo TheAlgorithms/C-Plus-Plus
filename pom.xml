@@ -1,23 +1,51 @@
-<build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.jenkins.plugins</groupId>
+  <artifactId>code-coverage-api-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>UNVERSIONED</version>
+
+  <name>Aggregator for Code Coverage Plugin</name>
+
+  <modules>
+    <module>plugin</module>
+    <module>ui-tests</module>
+  </modules>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+    <maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+
+  <build>
     <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>2.7</version>
-            <configuration>
-                <formats>
-                    <format>xml</format>
-                </formats>
-                <check/>
-            </configuration>
-            <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>cobertura</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+      <!-- Do not deploy anything except for the plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>${maven-deploy-plugin.version}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
     </plugins>
-</build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+            <testSource>${java.version}</testSource>
+            <testTarget>${java.version}</testTarget>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
