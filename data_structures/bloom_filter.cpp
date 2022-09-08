@@ -29,6 +29,11 @@
 #include <vector>            ///< for vector
 
 /**
+ * @namespace data_structures
+ * @brief Data Structures algorithms
+ */
+namespace data_structures {
+/**
  * @brief Simple bitset implementation for bloom filter
  */
 class Bitset {
@@ -232,6 +237,7 @@ std::size_t hashInt_2(int x) {
     y = y ^ (y >> 31);
     return y;
 }
+} // namespace data_structures
 
 /**
  * @brief Test for bloom filter with int as generic type
