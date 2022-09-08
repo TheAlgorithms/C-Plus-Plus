@@ -225,7 +225,8 @@ std::size_t hashInt_2(int x) {
  * @return void
  */
 static void test_bloom_filter_string() {
-    data_structures::BloomFilter<std::string> filter(10, {data_structures::hashDJB2, data_structures::hashStr});
+    data_structures::BloomFilter<std::string> filter(
+        10, {data_structures::hashDJB2, data_structures::hashStr});
     std::vector<std::string> toCheck{"hello", "world", "!"};
     std::vector<std::string> toFalse{"false", "world2", "!!!"};
     for (auto& x : toCheck) {
@@ -244,7 +245,8 @@ static void test_bloom_filter_string() {
  * @return void
  */
 static void test_bloom_filter_int() {
-    data_structures::BloomFilter<int> filter(20, {data_structures::hashInt_1, data_structures::hashInt_2});
+    data_structures::BloomFilter<int> filter(
+        20, {data_structures::hashInt_1, data_structures::hashInt_2});
     std::vector<int> toCheck{100, 200, 300, 50};
     std::vector<int> toFalse{1, 2, 3, 4, 5, 6, 7, 8};
     for (int x : toCheck) {
