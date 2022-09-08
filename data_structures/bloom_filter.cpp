@@ -191,25 +191,6 @@ static std::size_t hashStr(std::string const& s) {
 }
 
 /**
- * @brief Test for bloom filter with string as generic type
- * @return void
- */
-static void test_bloom_filter_string() {
-    BloomFilter<std::string> filter(10, {hashDJB2, hashStr});
-    std::vector<std::string> toCheck{"hello", "world", "!"};
-    std::vector<std::string> toFalse{"false", "world2", "!!!"};
-    for (auto& x : toCheck) {
-        filter.add(x);
-    }
-    for (auto& x : toFalse) {
-        assert(filter.contains(x) == false);
-    }
-    for (auto& x : toCheck) {
-        assert(filter.contains(x));
-    }
-}
-
-/**
  * @brief [Hash function for
  * test](https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key)
  *
@@ -240,11 +221,30 @@ std::size_t hashInt_2(int x) {
 } // namespace data_structures
 
 /**
+ * @brief Test for bloom filter with string as generic type
+ * @return void
+ */
+static void test_bloom_filter_string() {
+    data_structures::BloomFilter<std::string> filter(10, {data_structures::hashDJB2, data_structures::hashStr});
+    std::vector<std::string> toCheck{"hello", "world", "!"};
+    std::vector<std::string> toFalse{"false", "world2", "!!!"};
+    for (auto& x : toCheck) {
+        filter.add(x);
+    }
+    for (auto& x : toFalse) {
+        assert(filter.contains(x) == false);
+    }
+    for (auto& x : toCheck) {
+        assert(filter.contains(x));
+    }
+}
+
+/**
  * @brief Test for bloom filter with int as generic type
  * @return void
  */
 static void test_bloom_filter_int() {
-    BloomFilter<int> filter(20, {hashInt_1, hashInt_2});
+    data_structures::BloomFilter<int> filter(20, {data_structures::hashInt_1, data_structures::hashInt_2});
     std::vector<int> toCheck{100, 200, 300, 50};
     std::vector<int> toFalse{1, 2, 3, 4, 5, 6, 7, 8};
     for (int x : toCheck) {
@@ -264,7 +264,7 @@ static void test_bloom_filter_int() {
  * @return void
  */
 static void test_bitset() {
-    Bitset set(2);
+    data_structures::Bitset set(2);
     std::vector<std::size_t> toCheck{0, 1, 5, 8, 63, 64, 67, 127};
     for (auto x : toCheck) {
         set.add(x);
