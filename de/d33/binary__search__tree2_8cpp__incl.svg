@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A generic binary search tree implementation.">
+<g id="a_node1"><a xlink:title="A generic binary search tree implementation. Here you can find more information about the algorithm: ...">
 <polygon fill="#999999" stroke="#666666" points="228,-85 115,-85 115,-55 228,-55 228,-85"/>
 <text text-anchor="start" x="123" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures/binary</text>
 <text text-anchor="middle" x="171.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_search_tree2.cpp</text>
