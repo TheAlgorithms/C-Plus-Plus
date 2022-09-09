@@ -20,16 +20,16 @@
  * 
 */
 
-#include <iostream> //for io operations
-#include <vector>	//for vector storage
-#include <cassert>	//for assert
-#include <climits>	//to utilize INT_MAX
+#include <iostream> /// for IO operations
+#include <vector> /// for std::vector
+#include <cassert> /// for assert
+#include <climits> /// for INT_MAX
 
 /**
- * @namespace graph
- * @brief Graph for MST
+ * @namespace greedy_algorithms
+ * @brief Greedy_Algorithms
  */
-namespace graph { 
+namespace greedy_algorithms { 
 
 /**
  * @brief Recursively returns the vertex's parent at the root of the tree
@@ -37,7 +37,7 @@ namespace graph {
  * @param int vertex to find parent of
  * @returns parent vertex
  */
-int findParent(std::vector<std::pair<int,int>> & parent, int v) {
+int findParent(std::vector<std::pair<int,int>> parent, const int v) {
 
 	if (parent[v].first != v) {
 		parent[v].first = findParent(parent, parent[v].first);
@@ -56,8 +56,9 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 	int size = adj.size();
 	int total_groups = size;
 
-	if (size <= 1)
-		return adj;
+	if (size <= 1) {
+        return adj;
+    }
 
 	//Stores the current Minimum Spanning Tree. As groups are combined, they are added to the MST
 	std::vector<std::vector<int>> MST(size, std::vector<int>(size, INT_MAX));
@@ -82,8 +83,9 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 		for (int i = 0; i < size; i++) {
 			for (int j = i+1; j < size; j++) {
 
-				if (adj[i][j] == INT_MAX || adj[i][j] == 0) //No connection
-					continue;
+				if (adj[i][j] == INT_MAX || adj[i][j] == 0) {  // No connection
+                    continue;
+                }
 
 				//Finds the parents of the start and end points to make sure they arent in the same group
 				int parentA = findParent(parent, i);
@@ -130,8 +132,9 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 
 				//Makes sure the two nodes dont share the same parent. Would happen if the two groups have been 
 				//	merged previously through a common shortest edge
-				if (parentA == parentB)
-					continue;
+                if (parentA == parentB) {
+                    continue;
+                }
 
 				//Tries to balance the trees as much as possible as they are merged. The parent of the shallower
 				//	tree will be pointed to the parent of the deeper tree.
@@ -152,7 +155,8 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 	}	
 	return MST;	
 }
-}
+} // namespace greedy_algorithms
+
 /**
  * @brief counts the sum of edges in the given tree
  * @param 2d vector adjacency matrix
@@ -175,9 +179,9 @@ int test_findGraphSum(std::vector<std::vector<int>> adj) {
 }
 
 /**
- * @brief Self-test implementation
+ * @brief Self-test implementations
 */
-void tests() {
+static void tests() {
 	std::cout << "Starting tests" << std::endl;
 	std::vector<std::vector<int>> graph = {
 		{0, 5, INT_MAX, 3, INT_MAX} ,
@@ -186,7 +190,7 @@ void tests() {
 		{3, INT_MAX, INT_MAX, 0, INT_MAX} ,
 		{INT_MAX, 5, 3, INT_MAX, 0} ,
 	};
-	std::vector<std::vector<int>> MST = graph::boruvkas(graph);
+	std::vector<std::vector<int>> MST = greedy_algorithms::boruvkas(graph);
 	assert(test_findGraphSum(MST) == 13);
 	std::cout << "1st test passed" << std::endl;
 
@@ -197,7 +201,7 @@ void tests() {
 		{ 6, 8, 0, 0, 9 },
 		{ 0, 5, 7, 9, 0 }
 	};
-	MST = graph::boruvkas(graph);
+	MST = greedy_algorithms::boruvkas(graph);
 	assert(test_findGraphSum(MST) == 16);
 
 	std::cout << "2nd test passed" << std::endl;
@@ -208,8 +212,6 @@ void tests() {
  * @returns 0 on exit
  */
 int main() {
-    int main() {
-	tests();
-	
+	tests();	
 	return 0;	
 }
