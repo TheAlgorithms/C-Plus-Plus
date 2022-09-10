@@ -44,10 +44,10 @@ class Bitset {
         sizeof(std::size_t);  ///< size of integer type, that we are using in
                               ///< our bitset
  public:
-    explicit Bitset(std::size_t initSize);
+    explicit Bitset(std::size_t);
     std::size_t size();
-    void add(std::size_t x);
-    bool contains(std::size_t x);
+    void add(std::size_t);
+    bool contains(std::size_t);
 };
 
 /**
@@ -106,10 +106,10 @@ class BloomFilter {
         hashFunks;  ///< hash functions for T type
 
  public:
-    BloomFilter(std::size_t size,
-                std::initializer_list<std::function<std::size_t(T)>> funks);
-    void add(T x);
-    bool contains(T x);
+    BloomFilter(std::size_t,
+                std::initializer_list<std::function<std::size_t(T)>>);
+    void add(T);
+    bool contains(T);
 };
 
 /**
