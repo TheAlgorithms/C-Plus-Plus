@@ -1,5 +1,5 @@
 /**
- * @file median_search2.cpp
+ * @file
  *
  * @details
  * Given a linked list L[0,....,n] of n numbers, find the middle node.
