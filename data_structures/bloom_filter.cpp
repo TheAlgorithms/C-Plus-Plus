@@ -219,7 +219,7 @@ std::size_t hashInt_2(int x) {
     y = y ^ (y >> 31);
     return y;
 }
-} // namespace data_structures
+}  // namespace data_structures
 
 /**
  * @brief Test for bloom filter with string as generic type
