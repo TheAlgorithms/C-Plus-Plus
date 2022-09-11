@@ -51,15 +51,13 @@ class Bitset {
 };
 
 /**
- * @brief Returns size of inner array
- *
- * @return size of inner array
+ * @brief Utility function to return the size of the inner array
+ * @returns the size of inner array
  */
 std::size_t Bitset::size() { return data.size(); }
 
 /**
- * @brief Constructor for Bitset
- *
+ * @brief BitSet class constructor
  * @param initSize amount of blocks, each contain sizeof(std::size_t) bits
  */
 Bitset::Bitset(std::size_t initSize) : data(initSize) {}
@@ -68,7 +66,7 @@ Bitset::Bitset(std::size_t initSize) : data(initSize) {}
  * @brief Turn bit on position x to 1s
  *
  * @param x position to turn bit on
- * @return void
+ * @returns void
  */
 void Bitset::add(std::size_t x) {
     std::size_t blockIndex = x / blockSize;
@@ -82,8 +80,8 @@ void Bitset::add(std::size_t x) {
  * @brief Doest bitset contains element x
  *
  * @param x position in bitset to check
- * @return true if bit on position x is 1
- * @return false if bit on position x is 0
+ * @returns true if bit position x is 1
+ * @returns false if bit position x is 0
  */
 bool Bitset::contains(std::size_t x) {
     std::size_t blockIndex = x / blockSize;
@@ -95,7 +93,6 @@ bool Bitset::contains(std::size_t x) {
 
 /**
  * @brief Bloom filter template class
- *
  * @tparam T type of elements that we need to filter
  */
 template <typename T>
@@ -118,6 +115,7 @@ class BloomFilter {
  * @tparam T type of elements that we need to filter
  * @param size initial size of Bloom filter
  * @param funks hash functions for T type
+ * @returns none
  */
 template <typename T>
 BloomFilter<T>::BloomFilter(
@@ -130,7 +128,7 @@ BloomFilter<T>::BloomFilter(
  *
  * @tparam T type of elements that we need to filter
  * @param x element to add to filter
- * @return void
+ * @returns void
  */
 template <typename T>
 void BloomFilter<T>::add(T x) {
@@ -159,11 +157,11 @@ bool BloomFilter<T>::contains(T x) {
 }
 
 /**
- * @brief [Function djb2](http://www.cse.yorku.ca/~oz/hash.html), to get hash
- * for string
+ * @brief [Function djb2](http://www.cse.yorku.ca/~oz/hash.html)
+ * to get hash for the given string.
  *
  * @param s string to get hash from
- * @return hash for a string
+ * @returns hash for a string
  */
 static std::size_t hashDJB2(std::string const& s) {
     std::size_t hash = 5381;
@@ -176,10 +174,10 @@ static std::size_t hashDJB2(std::string const& s) {
 /**
  * @brief [Hash
  * function](https://stackoverflow.com/questions/8317508/hash-function-for-a-string),
- * to get hash for string
+ * to get hash for the given string.
  *
  * @param s string to get hash from
- * @return hash for a string
+ * @returns hash for the given string
  */
 static std::size_t hashStr(std::string const& s) {
     std::size_t hash = 37;
@@ -195,8 +193,8 @@ static std::size_t hashStr(std::string const& s) {
  * @brief [Hash function for
  * test](https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key)
  *
- * @param x int to get hash from
- * @return hash for x
+ * @param x to get hash from
+ * @returns hash for the `x` parameter
  */
 std::size_t hashInt_1(int x) {
     x = ((x >> 16) ^ x) * 0x45d9f3b;
@@ -209,8 +207,8 @@ std::size_t hashInt_1(int x) {
  * @brief [Hash function for
  * test](https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key)
  *
- * @param x int to get hash from
- * @return hash for x
+ * @param x to get hash from
+ * @returns hash for the `x` parameter
  */
 std::size_t hashInt_2(int x) {
     auto y = static_cast<std::size_t>(x);
@@ -223,7 +221,7 @@ std::size_t hashInt_2(int x) {
 
 /**
  * @brief Test for bloom filter with string as generic type
- * @return void
+ * @returns void
  */
 static void test_bloom_filter_string() {
     data_structures::BloomFilter<std::string> filter(
@@ -243,7 +241,7 @@ static void test_bloom_filter_string() {
 
 /**
  * @brief Test for bloom filter with int as generic type
- * @return void
+ * @returns void
  */
 static void test_bloom_filter_int() {
     data_structures::BloomFilter<int> filter(
@@ -264,7 +262,7 @@ static void test_bloom_filter_int() {
 /**
  * @brief Test for bitset
  *
- * @return void
+ * @returns void
  */
 static void test_bitset() {
     data_structures::Bitset set(2);
@@ -283,6 +281,7 @@ static void test_bitset() {
  */
 int main() {
     // run self-test implementations
+
     test_bitset();  // run test for bitset, because bloom filter is depending on it
     test_bloom_filter_string();
     test_bloom_filter_int();
