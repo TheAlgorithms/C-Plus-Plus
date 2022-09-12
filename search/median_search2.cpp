@@ -34,6 +34,7 @@ struct ListNode {
 namespace search {
 /**
  * @namespace median_search
+ * @brief Functions for the Median Search algorithm implementation.
  */
 namespace median_search2 {
 /**
