@@ -17,15 +17,15 @@
  * Definition for singly-linked list.
  */
 struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    int val;												// The value stored in the node
+    ListNode *next;											// Pointer to the next node
+    ListNode() : val(0), next(nullptr) {}					// Default constructor
+    ListNode(int x) : val(x), next(nullptr) {}				// Constructor with value for node->val provided
+    ListNode(int x, ListNode *next) : val(x), next(next) {}	// Constructor with values provided for node->val and node->next
  };
  
- #include <iostream>
- #include <cassert>
+ #include <iostream> // for IO operations
+ #include <cassert>  // for assert in tests
 
 /**
  * @namespace search
@@ -91,10 +91,10 @@ static void test() {
 		delete head;
 	}
 	
-	ListNode* head = new ListNode;
+	head = new ListNode;
 	head->val = 1;
 	
-	ListNode* temp1 = head;
+	temp1 = head;
 	for(int i = 1; i < 7; ++i)
 	{
 		ListNode* temp2 = new ListNode;
@@ -104,7 +104,7 @@ static void test() {
 		temp1 = temp2;
 	}
 	
-	ListNode* median = search::median_search2::middleNode(head);
+	median = search::median_search2::middleNode(head);
 	assert(4 == median->val);		// 3 is the value of the median node.
 	std::cout << "test case:1 passed\n";
 	
@@ -114,6 +114,7 @@ static void test() {
 		ListNode* t = head->next;
 		delete head;
 	}
+	std::cout << "test case:2 passed\n";
 	std::cout << "--All tests passed--\n";
 }
 
