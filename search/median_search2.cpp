@@ -62,9 +62,11 @@ ListNode* middleNode(ListNode* head) {
 }  // namespace search
 
 /**
- * Function to test above algorithm
+ * @brief Self-test implementations
+ * @returns void
  */
-void test(){
+ */
+static void test() {
 	ListNode* head = new ListNode;
 	head->val = 1;
 	
