@@ -99,16 +99,23 @@ $(document).ready(function(){initNavTree('d5/d3c/namespacedata__structures.html'
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">data_structures Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Data Structures algorithms.  
+<p>for IO operations  
 <a href="../../d5/d3c/namespacedata__structures.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dae/classdata__structures_1_1_bitset.html">Bitset</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple bitset implementation for bloom filter.  <a href="../../d9/dae/classdata__structures_1_1_bitset.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/classdata__structures_1_1_bloom_filter.html">BloomFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloom filter template class.  <a href="../../dc/dd4/classdata__structures_1_1_bloom_filter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/structdata__structures_1_1_node.html">Node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d90/classdata__structures_1_1_skip_list.html">SkipList</a></td></tr>
@@ -116,6 +123,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/classdata__structures_1_1trie.html">trie</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a> implementation for small-case English alphabets <code>a-z</code>  <a href="../../d0/d3e/classdata__structures_1_1trie.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a271c753baf6dc5ac6f19fa03c5873eb4"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4">hashDJB2</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> const &amp;s)</td></tr>
+<tr class="memdesc:a271c753baf6dc5ac6f19fa03c5873eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="http://www.cse.yorku.ca/~oz/hash.html" target="_blank">Function djb2</a> to get hash for the given string.  <a href="../../d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4">More...</a><br /></td></tr>
+<tr class="separator:a271c753baf6dc5ac6f19fa03c5873eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35eb2bc3edbb52f9c5f0b1e51046ef15"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15">hashStr</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> const &amp;s)</td></tr>
+<tr class="memdesc:a35eb2bc3edbb52f9c5f0b1e51046ef15"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://stackoverflow.com/questions/8317508/hash-function-for-a-string" target="_blank">Hash function</a>, to get hash for the given string.  <a href="../../d5/d3c/namespacedata__structures.html#a35eb2bc3edbb52f9c5f0b1e51046ef15">More...</a><br /></td></tr>
+<tr class="separator:a35eb2bc3edbb52f9c5f0b1e51046ef15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6deb9d4a0f63ea97aef3dce4c6c6677"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677">hashInt_1</a> (int x)</td></tr>
+<tr class="memdesc:aa6deb9d4a0f63ea97aef3dce4c6c6677"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key" target="_blank">Hash function for test</a>  <a href="../../d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677">More...</a><br /></td></tr>
+<tr class="separator:aa6deb9d4a0f63ea97aef3dce4c6c6677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed236419034917c5270c1dccd220b5c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c">hashInt_2</a> (int x)</td></tr>
+<tr class="memdesc:a9ed236419034917c5270c1dccd220b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key" target="_blank">Hash function for test</a>  <a href="../../d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c">More...</a><br /></td></tr>
+<tr class="separator:a9ed236419034917c5270c1dccd220b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -129,14 +151,16 @@ constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>PROBABILIT
 <tr class="separator:a903639d8e6f955dd8d5c263781455d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Data Structures algorithms. </p>
+<div class="textblock"><p >for IO operations </p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/to_string.html">std::to_string</a></p>
-<p >for IO operations</p>
 <p >Data-structure algorithms.</p>
 <p >for managing dynamic storage</p>
 <p >Algorithms with data structures.</p>
 <p >for assert</p>
+<p >Data Structures algorithms.</p>
+<p >for assert for list of hash functions for bloom filter constructor for initializer_list for bloom filter constructor for testing on strings for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p >Data Structures algorithms</p>
 <p >for io operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></p>
 <p >Algorithms with data structures</p>
 <p >for assert for I/O operations for dynamic memory</p>
@@ -147,7 +171,162 @@ constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>PROBABILIT
 <p >Algorithms with data structures</p>
 <p >for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a></p>
 <p >Data structures algorithms </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a271c753baf6dc5ac6f19fa03c5873eb4" name="a271c753baf6dc5ac6f19fa03c5873eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271c753baf6dc5ac6f19fa03c5873eb4">&#9670;&#160;</a></span>hashDJB2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::hashDJB2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> const &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a href="http://www.cse.yorku.ca/~oz/hash.html" target="_blank">Function djb2</a> to get hash for the given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>string to get hash from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hash for a string </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>                                              {</div>
+<div class="line"><span class="lineno">  167</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> hash = 5381;</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">for</span> (<span class="keywordtype">char</span> c : s) {</div>
+<div class="line"><span class="lineno">  169</span>        hash = ((hash &lt;&lt; 5) + hash) + c;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">return</span> hash;</div>
+<div class="line"><span class="lineno">  172</span>}</div>
+<div class="ttc" id="asize_t_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa6deb9d4a0f63ea97aef3dce4c6c6677" name="aa6deb9d4a0f63ea97aef3dce4c6c6677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6deb9d4a0f63ea97aef3dce4c6c6677">&#9670;&#160;</a></span>hashInt_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::hashInt_1 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a href="https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key" target="_blank">Hash function for test</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>to get hash from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hash for the <code>x</code> parameter </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  199</span>                           {</div>
+<div class="line"><span class="lineno">  200</span>    x = ((x &gt;&gt; 16) ^ x) * 0x45d9f3b;</div>
+<div class="line"><span class="lineno">  201</span>    x = ((x &gt;&gt; 16) ^ x) * 0x45d9f3b;</div>
+<div class="line"><span class="lineno">  202</span>    x = (x &gt;&gt; 16) ^ x;</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">  204</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ed236419034917c5270c1dccd220b5c" name="a9ed236419034917c5270c1dccd220b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed236419034917c5270c1dccd220b5c">&#9670;&#160;</a></span>hashInt_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::hashInt_2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a href="https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key" target="_blank">Hash function for test</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>to get hash from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hash for the <code>x</code> parameter </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  213</span>                           {</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keyword">auto</span> y = <span class="keyword">static_cast&lt;</span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a><span class="keyword">&gt;</span>(x);</div>
+<div class="line"><span class="lineno">  215</span>    y = (y ^ (y &gt;&gt; 30)) * <span class="keyword">static_cast&lt;</span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a><span class="keyword">&gt;</span>(0xbf58476d1ce4e5b9);</div>
+<div class="line"><span class="lineno">  216</span>    y = (y ^ (y &gt;&gt; 27)) * <span class="keyword">static_cast&lt;</span><a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a><span class="keyword">&gt;</span>(0x94d049bb133111eb);</div>
+<div class="line"><span class="lineno">  217</span>    y = y ^ (y &gt;&gt; 31);</div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">return</span> y;</div>
+<div class="line"><span class="lineno">  219</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35eb2bc3edbb52f9c5f0b1e51046ef15" name="a35eb2bc3edbb52f9c5f0b1e51046ef15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35eb2bc3edbb52f9c5f0b1e51046ef15">&#9670;&#160;</a></span>hashStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> data_structures::hashStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> const &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a href="https://stackoverflow.com/questions/8317508/hash-function-for-a-string" target="_blank">Hash function</a>, to get hash for the given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>string to get hash from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hash for the given string </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  182</span>                                             {</div>
+<div class="line"><span class="lineno">  183</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> hash = 37;</div>
+<div class="line"><span class="lineno">  184</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> primeNum1 = 54059;</div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> primeNum2 = 76963;</div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">for</span> (<span class="keywordtype">char</span> c : s) {</div>
+<div class="line"><span class="lineno">  187</span>        hash = (hash * primeNum1) ^ (c * primeNum2);</div>
+<div class="line"><span class="lineno">  188</span>    }</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">return</span> hash;</div>
+<div class="line"><span class="lineno">  190</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

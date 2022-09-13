@@ -16,6 +16,7 @@ var searchData=
   ['front_5finsert_5fiterator_13',['front_insert_iterator',['http://en.cppreference.com/w/cpp/iterator/front_insert_iterator.html',0,'std']]],
   ['fstream_14',['fstream',['http://en.cppreference.com/w/cpp/io/basic_fstream.html',0,'std']]],
   ['function_15',['function',['http://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
-  ['future_16',['future',['http://en.cppreference.com/w/cpp/thread/future.html',0,'std']]],
-  ['future_5ferror_17',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
+  ['function_3c_20std_3a_3asize_5ft_28t_29_3e_16',['function&lt; std::size_t(T)&gt;',['http://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std']]],
+  ['future_17',['future',['http://en.cppreference.com/w/cpp/thread/future.html',0,'std']]],
+  ['future_5ferror_18',['future_error',['http://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
 ];

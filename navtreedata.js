@@ -141,14 +141,14 @@ var NAVTREEINDEX =
 "d1/d9e/prefix__sum__array_8cpp.html#a7c8fd967c36dbba5fdf9c71faed604cf",
 "d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
 "d4/ded/namespaceprobability.html",
-"d6/d26/house__robber_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
-"d7/d7f/section.html",
-"d8/dcc/binary__insertion__sort_8cpp.html",
-"da/d4b/depth__first__search__with__stack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"db/d9a/classuint128__t.html#a7737bb30a5480c7286546b911d82e696",
-"dd/d40/classdata__structures_1_1tree__234_1_1_node.html#a28944bb16ec22650b47fe3e80e3e13f8",
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#ab6a17a04aa93aaaef71e038e8cc2edeb",
-"globals_func_z.html"
+"d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41",
+"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2",
+"d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7",
+"da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html",
+"db/d9a/classuint128__t.html#a279209a184db20a7ffc8e687fdb05be2",
+"dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0",
+"de/db3/namespaceatbash.html",
+"functions_type.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -60,9 +60,11 @@ var searchData=
   ['bit_5fand_57',['bit_and',['http://en.cppreference.com/w/cpp/utility/functional/bit_and.html',0,'std']]],
   ['bit_5fnot_58',['bit_not',['http://en.cppreference.com/w/cpp/utility/functional/bit_not.html',0,'std']]],
   ['bit_5for_59',['bit_or',['http://en.cppreference.com/w/cpp/utility/functional/bit_or.html',0,'std']]],
-  ['bitset_60',['bitset',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
-  ['bitset_3c_20maxn_20_3e_61',['bitset&lt; MAXN &gt;',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
-  ['bst_5fnode_62',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html',1,'binary_search_tree']]],
-  ['bt_63',['BT',['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html',1,'others::recursive_tree_traversals']]],
-  ['btree_64',['Btree',['../d9/d90/struct_btree.html',1,'']]]
+  ['bitset_60',['Bitset',['../d9/dae/classdata__structures_1_1_bitset.html',1,'data_structures']]],
+  ['bitset_61',['bitset',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
+  ['bitset_3c_20maxn_20_3e_62',['bitset&lt; MAXN &gt;',['http://en.cppreference.com/w/cpp/utility/bitset.html',0,'std']]],
+  ['bloomfilter_63',['BloomFilter',['../dc/dd4/classdata__structures_1_1_bloom_filter.html',1,'data_structures']]],
+  ['bst_5fnode_64',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html',1,'binary_search_tree']]],
+  ['bt_65',['BT',['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html',1,'others::recursive_tree_traversals']]],
+  ['btree_66',['Btree',['../d9/d90/struct_btree.html',1,'']]]
 ];

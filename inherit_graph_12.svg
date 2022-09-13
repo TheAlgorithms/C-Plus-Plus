@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d4/d0e/classdata__structures_1_1linked__list_1_1_node.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="de/d9d/classdata__structures_1_1linked__list_1_1link.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="116,-30 0,-30 0,0 116,0 116,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
-<text text-anchor="middle" x="58" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_list::Node</text>
+<text text-anchor="middle" x="58" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_list::link</text>
 </a>
 </g>
 </g>

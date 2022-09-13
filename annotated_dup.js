@@ -31,6 +31,8 @@ var annotated_dup =
       [ "trie_using_hashmap", null, [
         [ "Trie", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html", "d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie" ]
       ] ],
+      [ "Bitset", "d9/dae/classdata__structures_1_1_bitset.html", "d9/dae/classdata__structures_1_1_bitset" ],
+      [ "BloomFilter", "dc/dd4/classdata__structures_1_1_bloom_filter.html", "dc/dd4/classdata__structures_1_1_bloom_filter" ],
       [ "Node", "d9/d49/structdata__structures_1_1_node.html", "d9/d49/structdata__structures_1_1_node" ],
       [ "SkipList", "d4/d90/classdata__structures_1_1_skip_list.html", "d4/d90/classdata__structures_1_1_skip_list" ],
       [ "trie", "d0/d3e/classdata__structures_1_1trie.html", "d0/d3e/classdata__structures_1_1trie" ]
@@ -168,12 +170,12 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
-    [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Node", "db/d8b/struct_node.html", null ],
+    [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", null ],
-    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
+    [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
     [ "RBtree", "d8/d72/class_r_btree.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", null ],

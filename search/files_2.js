@@ -11,10 +11,11 @@ var searchData=
   ['binomial_5fcalculate_2ecpp_8',['binomial_calculate.cpp',['../d8/db1/binomial__calculate_8cpp.html',1,'']]],
   ['binomial_5fdist_2ecpp_9',['binomial_dist.cpp',['../d6/db0/binomial__dist_8cpp.html',1,'']]],
   ['bisection_5fmethod_2ecpp_10',['bisection_method.cpp',['../d7/d6a/bisection__method_8cpp.html',1,'']]],
-  ['bogo_5fsort_2ecpp_11',['bogo_sort.cpp',['../d5/ddb/bogo__sort_8cpp.html',1,'']]],
-  ['breadth_5ffirst_5fsearch_2ecpp_12',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
-  ['brent_5fmethod_5fextrema_2ecpp_13',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
-  ['brute_5fforce_5fstring_5fsearching_2ecpp_14',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
-  ['bubble_5fsort_2ecpp_15',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
-  ['buzz_5fnumber_2ecpp_16',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
+  ['bloom_5ffilter_2ecpp_11',['bloom_filter.cpp',['../d9/dab/bloom__filter_8cpp.html',1,'']]],
+  ['bogo_5fsort_2ecpp_12',['bogo_sort.cpp',['../d5/ddb/bogo__sort_8cpp.html',1,'']]],
+  ['breadth_5ffirst_5fsearch_2ecpp_13',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
+  ['brent_5fmethod_5fextrema_2ecpp_14',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
+  ['brute_5fforce_5fstring_5fsearching_2ecpp_15',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
+  ['bubble_5fsort_2ecpp_16',['bubble_sort.cpp',['../d8/d13/bubble__sort_8cpp.html',1,'']]],
+  ['buzz_5fnumber_2ecpp_17',['buzz_number.cpp',['../d1/d76/buzz__number_8cpp.html',1,'']]]
 ];
