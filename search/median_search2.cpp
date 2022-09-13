@@ -39,7 +39,7 @@ namespace search {
 namespace median_search2 {
 /**
 * This function searches for the median of a linked list.
-* @param head, The head of the linked list.
+* @param head The head of the linked list.
 * @returns Median node of the linked list.
 */  
 ListNode* middleNode(ListNode* head) {
