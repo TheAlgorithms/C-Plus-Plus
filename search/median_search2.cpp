@@ -65,7 +65,6 @@ ListNode* middleNode(ListNode* head) {
  * @brief Self-test implementations
  * @returns void
  */
- */
 static void test() {
 	ListNode* head = new ListNode;
 	head->val = 1;
