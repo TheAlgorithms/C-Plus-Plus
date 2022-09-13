@@ -24,8 +24,8 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}	// Constructor with values provided for node->val and node->next
  };
  
- #include <iostream> // for IO operations
- #include <cassert>  // for assert in tests
+ #include <iostream> /// for IO operations
+ #include <cassert>  /// for assert
 
 /**
  * @namespace search
