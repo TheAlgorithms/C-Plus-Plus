@@ -2,7 +2,12 @@
  * @file
  *
  * @details
- * Given a linked list L[0,....,n] of n numbers, find the middle node.
+ * Given a linked list L[0,....,n] of n numbers, find the middle node. 
+ * The technique utilized in this implementation is the "Floyd's tortise and hare" approach. Wikipedia link to technique: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_tortoise_and_hare
+ * This technique uses two pointers that iterate through the list at different 'speeds' in order to solve problems.
+ * In this implementation, for every iteration the slow pointer advances one node while the fast pointer advances two nodes. 
+ * The result of this is that since the fast pointer moves twice as fast as the slow pointer, when the fast pointer reaches the end of the list 
+ * the slow pointer will be pointing to the middle node of the list. 
  *
  * Here are some example lists you can use to see how the algorithm works
  * A = [1,2,3,4,5]
