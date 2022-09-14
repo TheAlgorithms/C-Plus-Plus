@@ -10,7 +10,7 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
-  * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
+  * [Sudoku Solver](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solver.cpp)
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
@@ -41,6 +41,7 @@
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
   * [Binary Search Tree2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree2.cpp)
   * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binaryheap.cpp)
+  * [Bloom Filter](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/bloom_filter.cpp)
   * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/circular_queue_using_linked_list.cpp)
   * Cll
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/cll.cpp)
