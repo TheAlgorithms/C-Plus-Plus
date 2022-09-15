@@ -22,11 +22,11 @@
  * Definition for singly-linked list.
  */
 struct ListNode {
-    int val;												// The value stored in the node
-    ListNode *next;											// Pointer to the next node
-    ListNode() : val(0), next(nullptr) {}					// Default constructor
-    ListNode(int x) : val(x), next(nullptr) {}				// Constructor with value for node->val provided
-    ListNode(int x, ListNode *next) : val(x), next(next) {}	// Constructor with values provided for node->val and node->next
+    int val;                                                   ///< the value stored in the node
+    ListNode *next;                                            ///< pointer to the next node
+    ListNode() : val(0), next(nullptr) {}                     ///< default constructor
+    ListNode(int x) : val(x), next(nullptr) {}               ///< constructor with value for node->val provided
+    ListNode(int x, ListNode *next) : val(x), next(next) {}  ///< constructor with values provided for node->val and node->next
  };
  
  #include <iostream> /// for IO operations
