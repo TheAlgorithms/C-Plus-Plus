@@ -17,6 +17,9 @@
  * @author [Benjamin Weiss](https://github.com/weiss-ben)
  */
 
+#include <iostream> /// for IO operations
+#include <cassert>  /// for assert
+
 /**
  * Definition for singly-linked list.
  */
@@ -27,9 +30,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}               ///< constructor with value for node->val provided
     ListNode(int x, ListNode *next) : val(x), next(next) {}  ///< constructor with values provided for node->val and node->next
  };
- 
- #include <iostream> /// for IO operations
- #include <cassert>  /// for assert
 
 /**
  * @namespace search
