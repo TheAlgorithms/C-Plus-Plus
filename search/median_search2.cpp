@@ -70,7 +70,7 @@ ListNode* middleNode(ListNode* head) {
         slowptr = slowptr->next;
         fastptr = fastptr->next->next;
     }
-	
+
     return (fastptr->next) ? slowptr->next : slowptr;
 }
 }  // namespace median_search2
@@ -96,20 +96,20 @@ static void test() {
     ListNode* median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
     std::cout << "test case:1 passed\n";
-	
+
     // Clean up
     while (head1) {
         ListNode* t = head1;
         head1 = head1->next;
         delete t;
     }
-	delete head1;
-	delete temp;
-	
-	// Test case # 2
+    delete head1;
+    delete temp;
+
+    // Test case # 2
     auto* head2 = new ListNode;
     head2->val = 1;
-	
+
     ListNode* temp2 = head2;
     for (int i = 1; i < 7; ++i) {
         auto temp3 = new ListNode;
@@ -129,9 +129,9 @@ static void test() {
         head2 = head2->next;
         delete t;
     }
-	delete head2;
-	delete temp2;
-	
+    delete head2;
+    delete temp2;
+
     std::cout << "test case:2 passed\n";
     std::cout << "--All tests passed--\n";
 }
