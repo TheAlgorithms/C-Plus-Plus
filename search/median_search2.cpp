@@ -97,8 +97,9 @@ static void test() {
 
     // Clean up
     while (head) {
-        ListNode* t = head->next;
-        delete head;
+        ListNode* t = head;
+        head = head->next;
+        delete t;
     }
 
     head = new ListNode;
@@ -106,7 +107,7 @@ static void test() {
 
     temp1 = head;
     for (int i = 1; i < 7; ++i) {
-        ListNode* temp2 = new ListNode;
+        auto temp2 = new ListNode;
         temp2->val = i;
 
         temp1->next = temp2;
