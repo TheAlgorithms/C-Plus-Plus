@@ -62,7 +62,7 @@ ListNode* middleNode(ListNode* head) {
     }
 
     // Fast and slow pointers
-    ListNode* fastptr;
+    ListNode* fastptr = nullptr;
     ListNode* slowptr = fastptr = head;
 
     // fast jumps 2 while slow jumps 1
@@ -70,7 +70,7 @@ ListNode* middleNode(ListNode* head) {
         slowptr = slowptr->next;
         fastptr = fastptr->next->next;
     }
-	
+
     return (fastptr->next) ? slowptr->next : slowptr;
 }
 }  // namespace median_search2
@@ -82,48 +82,48 @@ ListNode* middleNode(ListNode* head) {
  */
 static void test() {
     auto* head1 = new ListNode;
-	head1->val = 1;
+    head1->val = 1;
 
     ListNode* temp = head1;
     for (int i = 2; i < 6; ++i) {
-		// Allocate next
-		auto* temp1 = new ListNode;
-		temp1->val = i;
-		
-		// Advance
+        // Allocate next
+        auto* temp1 = new ListNode;
+        temp1->val = i;
+
+        // Advance
         temp->next = temp1;
         temp = temp1;
     }
-	temp->next = nullptr;
-	
+    temp->next = nullptr;
+
     ListNode* median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
     std::cout << "test case:1 passed\n";
-	
+
     // Clean up
     while (head1) {
         ListNode* t = head1;
         head1 = head1->next;
         delete t;
     }
-	delete head1;
-	delete temp;
-	
-	// Test case # 2
+    delete head1;
+    delete temp;
+
+    // Test case # 2
     auto* head2 = new ListNode;
-	head2->val = 1;
-	
+    head2->val = 1;
+
     ListNode* temp2 = head2;
     for (int i = 2; i < 7; ++i) {
-		// Allocate next
-		auto* temp3 = new ListNode;
-		temp3->val = i;
-		
-		// Advance
+        // Allocate next
+        auto* temp3 = new ListNode;
+        temp3->val = i;
+
+        // Advance
         temp2->next = temp3;
         temp2 = temp3;
     }
-	temp2->next = nullptr;
+    temp2->next = nullptr;
 
     ListNode* median1 = search::median_search2::middleNode(head2);
     assert(4 == median1->val);  // 4 is the value of the median node.
@@ -135,10 +135,10 @@ static void test() {
         head2 = head2->next;
         delete t;
     }
-	delete head2;
-	delete temp2;
-	
-    std::cout << "--All tests passed--\n"; 
+    delete head2;
+    delete temp2;
+
+    std::cout << "--All tests passed--\n";
 }
 
 /**
