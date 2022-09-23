@@ -70,6 +70,7 @@ ListNode* middleNode(ListNode* head) {
         slowptr = slowptr->next;
         fastptr = fastptr->next->next;
     }
+	
     return (fastptr->next) ? slowptr->next : slowptr;
 }
 }  // namespace median_search2
@@ -80,51 +81,57 @@ ListNode* middleNode(ListNode* head) {
  * @returns void
  */
 static void test() {
-    auto* head = new ListNode;
-    head->val = 1;
+    auto* head1 = new ListNode;
+    head1->val = 1;
 
-    ListNode* temp1 = head;
+    ListNode* temp = head1;
     for (int i = 1; i < 6; ++i) {
-        auto temp2 = new ListNode;
-        temp2->val = i;
+        auto* temp1 = new ListNode;
+        temp1->val = i;
 
-        temp1->next = temp2;
-        temp1 = temp2;
+        temp->next = temp1;
+        temp = temp1;
     }
 
-    ListNode* median = search::median_search2::middleNode(head);
+    ListNode* median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
     std::cout << "test case:1 passed\n";
-
+	
     // Clean up
-    while (head) {
-        ListNode* t = head;
-        head = head->next;
+    while (head1) {
+        ListNode* t = head1;
+        head1 = head1->next;
         delete t;
     }
-
-    head = new ListNode;
-    head->val = 1;
-
-    temp1 = head;
+	delete head1;
+	delete temp;
+	
+	// Test case # 2
+    auto* head2 = new ListNode;
+    head2->val = 1;
+	
+    ListNode* temp2 = head2;
     for (int i = 1; i < 7; ++i) {
-        auto temp2 = new ListNode;
-        temp2->val = i;
+        auto temp3 = new ListNode;
+        temp3->val = i;
 
-        temp1->next = temp2;
-        temp1 = temp2;
+        temp2->next = temp3;
+        temp2 = temp3;
     }
 
-    median = search::median_search2::middleNode(head);
-    assert(4 == median->val);  // 3 is the value of the median node.
+    median = search::median_search2::middleNode(head2);
+    assert(4 == median->val);  // 4 is the value of the median node.
     std::cout << "test case:1 passed\n";
 
     // Clean up
-    while (head) {
-        ListNode* t = head;
-        head = head->next;
+    while (head2) {
+        ListNode* t = head2;
+        head2 = head2->next;
         delete t;
     }
+	delete head2;
+	delete temp2;
+	
     std::cout << "test case:2 passed\n";
     std::cout << "--All tests passed--\n";
 }
