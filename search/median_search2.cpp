@@ -28,10 +28,10 @@
  * Definition for singly-linked list.
  */
 struct ListNode {
-    int val;                               ///< the value stored in the node
-    ListNode* next;                        ///< pointer to the next node
-    ListNode() : val(0), next(nullptr) {}  ///< default constructor
-    ListNode(int x)
+    int val{0};               ///< the value stored in the node
+    ListNode* next{nullptr};  ///< pointer to the next node
+    ListNode() {}             ///< default constructor
+    explicit ListNode(int x)
         : val(x),
           next(nullptr) {}  ///< constructor with value for node->val provided
     ListNode(int x, ListNode* next)
@@ -57,11 +57,12 @@ namespace median_search2 {
  * @returns Median node of the linked list.
  */
 ListNode* middleNode(ListNode* head) {
-    if (!head)
+    if (!head) {
         return nullptr;
+    }
 
     // Fast and slow pointers
-    ListNode* fastptr;
+    ListNode* fastptr = nullptr;
     ListNode* slowptr = fastptr = head;
 
     // fast jumps 2 while slow jumps 1
@@ -79,7 +80,7 @@ ListNode* middleNode(ListNode* head) {
  * @returns void
  */
 static void test() {
-    ListNode* head = new ListNode;
+    auto* head = new ListNode;
     head->val = 1;
 
     ListNode* temp1 = head;
