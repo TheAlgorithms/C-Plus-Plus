@@ -19,6 +19,7 @@
  * print median(B) #should be 4
  *
  * @author [Benjamin Weiss](https://github.com/weiss-ben)
+ * @see median_search.cpp
  */
 
 #include <cassert>   /// for assert
