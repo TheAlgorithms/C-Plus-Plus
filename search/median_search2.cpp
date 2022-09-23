@@ -31,10 +31,9 @@
 struct ListNode {
     int val{0};               ///< the value stored in the node
     ListNode* next{nullptr};  ///< pointer to the next node
-    ListNode() {}             ///< default constructor
+    ListNode() = default;     ///< default constructor
     explicit ListNode(int x)
-        : val(x),
-          next(nullptr) {}  ///< constructor with value for node->val provided
+        : val(x) {}  ///< constructor with value for node->val provided
     ListNode(int x, ListNode* next)
         : val(x),
           next(next) {
