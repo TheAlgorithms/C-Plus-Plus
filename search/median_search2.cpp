@@ -62,7 +62,7 @@ ListNode* middleNode(ListNode* head) {
     }
 
     // Fast and slow pointers
-    ListNode* fastptr = nullptr;
+    ListNode* fastptr;
     ListNode* slowptr = fastptr = head;
 
     // fast jumps 2 while slow jumps 1
@@ -82,17 +82,20 @@ ListNode* middleNode(ListNode* head) {
  */
 static void test() {
     auto* head1 = new ListNode;
-    head1->val = 1;
+	head1->val = 1;
 
     ListNode* temp = head1;
-    for (int i = 1; i < 6; ++i) {
-        auto* temp1 = new ListNode;
-        temp1->val = i;
-
+    for (int i = 2; i < 6; ++i) {
+		// Allocate next
+		auto* temp1 = new ListNode;
+		temp1->val = i;
+		
+		// Advance
         temp->next = temp1;
         temp = temp1;
     }
-
+	temp->next = nullptr;
+	
     ListNode* median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
     std::cout << "test case:1 passed\n";
@@ -108,20 +111,23 @@ static void test() {
 	
 	// Test case # 2
     auto* head2 = new ListNode;
-    head2->val = 1;
+	head2->val = 1;
 	
     ListNode* temp2 = head2;
-    for (int i = 1; i < 7; ++i) {
-        auto temp3 = new ListNode;
-        temp3->val = i;
-
+    for (int i = 2; i < 7; ++i) {
+		// Allocate next
+		auto* temp3 = new ListNode;
+		temp3->val = i;
+		
+		// Advance
         temp2->next = temp3;
         temp2 = temp3;
     }
+	temp2->next = nullptr;
 
-    median = search::median_search2::middleNode(head2);
-    assert(4 == median->val);  // 4 is the value of the median node.
-    std::cout << "test case:1 passed\n";
+    ListNode* median1 = search::median_search2::middleNode(head2);
+    assert(4 == median1->val);  // 4 is the value of the median node.
+    std::cout << "test case:2 passed\n";
 
     // Clean up
     while (head2) {
@@ -132,8 +138,7 @@ static void test() {
 	delete head2;
 	delete temp2;
 	
-    std::cout << "test case:2 passed\n";
-    std::cout << "--All tests passed--\n";
+    std::cout << "--All tests passed--\n"; 
 }
 
 /**
