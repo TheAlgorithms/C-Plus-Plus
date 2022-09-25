@@ -121,12 +121,9 @@ static void test() {
     assert(4 == median1->val);  // 4 is the value of the median node.
     std::cout << "test case:2 passed\n";
 
-    // Clean up
-    while (head2) {
-        ListNode* t = head2;
-        head2 = head2->next;
-        delete t;
-    }
+    delete head1;
+    delete temp;
+    
     delete head2;
     delete temp2;
 
