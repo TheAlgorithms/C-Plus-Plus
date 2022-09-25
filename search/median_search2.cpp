@@ -100,7 +100,6 @@ static void test() {
     assert(3 == median->val);  // 3 is the value of the median node.
     std::cout << "test case:1 passed\n";
 
-
     // Test case # 2
     auto* head2 = new ListNode;
     head2->val = 1;
@@ -123,7 +122,7 @@ static void test() {
 
     delete head1;
     delete temp;
-    
+
     delete head2;
     delete temp2;
 
