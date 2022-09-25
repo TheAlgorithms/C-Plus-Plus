@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.htm
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md22"></a>
 Before contributing</h1>
-<p >Welcome to <a href="https://github.com/TheAlgorithms/C-Plus-Plus" target="_blank">TheAlgorithms/C-Plus-Plus</a>! Before submitting pull requests, please make sure that you have <b>read the whole guidelines</b>. If you have any doubts about this contribution guide, please open <a href="https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose" target="_blank">an issue</a> or ask in our <a href="https://discord.gg/c7MnfGFGa6" target="_blank">Discord server</a>, and clearly state your concerns.</p>
+<p >Welcome to <a href="https://github.com/TheAlgorithms/C-Plus-Plus" target="_blank">TheAlgorithms/C-Plus-Plus</a>! Before submitting pull requests, please make sure that you have <b>read the whole guidelines</b>. If you have any doubts about this contribution guide, please open <a href="https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose" target="_blank">an issue</a> or ask on our <a href="https://discord.gg/c7MnfGFGa6" target="_blank">Discord server</a>, and clearly state your concerns.</p>
 <h1><a class="anchor" id="autotoc_md23"></a>
 Contributing</h1>
 <h2><a class="anchor" id="autotoc_md24"></a>
@@ -113,14 +113,14 @@ Contributor</h2>
 <p >Being a contributor at The Algorithms, we request you to follow the points mentioned below:</p>
 <ul>
 <li>You did your own work.<ul>
-<li>No plagiarism allowed. Any plagiarized work will not be merged.</li>
+<li>No plagiarism is allowed. Any plagiarized work will not be merged.</li>
 </ul>
 </li>
 <li>Your work will be distributed under the <a href="https://github.com/TheAlgoritms/C-Plus-Plus/blob/master/LICENSE" target="_blank">MIT License</a> once your pull request has been merged.</li>
 <li>Please follow the repository guidelines and standards mentioned below.</li>
 </ul>
 <p ><b>New implementation</b> New implementations are welcome!</p>
-<p >You can add new algorithms or data structures which are <b>not present in the repository</b> or that can <b>improve</b> the old implementations (<b>documentation</b>, <b>improving test cases</b>, removing bugs or in any other reasonable sense)</p>
+<p >You can add new algorithms or data structures that are <b>not present in the repository</b> or that can <b>improve</b> the old implementations (<b>documentation</b>, <b>improving test cases</b>, removing bugs, or in any other reasonable sense)</p>
 <p ><b>Issues</b> Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.
 
 @subsection autotoc_md26 Making Changes
@@ -128,7 +128,7 @@ Contributor</h2>
 @subsubsection autotoc_md27 Code
 
 - Please use the directory structure of the repository.
-- Make sure the file extensions should be &lt;tt&gt;*.hpp&lt;/tt&gt;, &lt;tt&gt;*.h&lt;/tt&gt; or &lt;tt&gt;*.cpp&lt;/tt&gt;.
+- Make sure the file extensions are &lt;tt&gt;*.hpp&lt;/tt&gt;, &lt;tt&gt;*.h&lt;/tt&gt; or &lt;tt&gt;*.cpp&lt;/tt&gt;.
 - Don't use **&lt;tt&gt;bits/stdc++.h&lt;/tt&gt;** because this is quite Linux-specific and slows down the compilation process.
 - Organize your code using **&lt;tt&gt;struct&lt;/tt&gt;**, **&lt;tt&gt;class&lt;/tt&gt;**, and/or **&lt;tt&gt;namespace&lt;/tt&gt;** keywords.
 - If an implementation of the algorithm already exists, please refer to the @ref new-file-name-guidelines "file-name section below".
@@ -136,7 +136,7 @@ Contributor</h2>
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
 - Our automated testing runs &lt;a href="<a href="https://cmake.org/">https://cmake.org/</a>" target="_blank" &gt;&lt;strong&gt;CMake&lt;/strong&gt;&lt;/a&gt; on all the pull requests, so please be sure that your code passes before submitting.
-- Please conform to &lt;a href="<a href="https://www.doxygen.nl/manual/docblocks.html">https://www.doxygen.nl/manual/docblocks.html</a>" target="_blank" &gt;Doxygen&lt;/a&gt; standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
+- Please conform to &lt;a href="<a href="https://www.doxygen.nl/manual/docblocks.html">https://www.doxygen.nl/manual/docblocks.html</a>" target="_blank" &gt;Doxygen&lt;/a&gt; standards and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
 - &lt;strong&gt;Be consistent in the use of these guidelines.&lt;/strong&gt;
 
 @subsubsection autotoc_md28 Documentation
@@ -158,7 +158,8 @@ Contributor</h2>
 @icode{cpp} 
 /**
  * @file
- * @brief Add one line description here
+ * @brief Add one line description here. Should contain a Wikipedia
+ * link or another source explaining the algorithm/implementation.
  * @details
  * This is a multi-line
  * description containing links, references,
@@ -171,7 +172,8 @@ Contributor</h2>
 #include             /// for `some function here`
 
 /**
- * @namespace &lt;check from other files in this repo&gt;
+ * @namespace &lt;folder name&gt;
+ * @brief &lt;namespace description&gt;
  */
 namespace name {
 
@@ -180,11 +182,11 @@ namespace name {
  */
 class class_name {
  private:
-    int variable;  ///&lt; short info of this variable
+    int variable;   ///&lt; short info of this variable
     char *message;  ///&lt; short info
 
  public:
-    // other members also documented as below
+    // other members should be also documented as below
 }
 
 /**
@@ -204,7 +206,7 @@ bool func(int param1, T param2) {
 
     return true;
 }
-} // namespace name
+}  // namespace name
 
 /**
  * @brief Self-test implementations
@@ -242,7 +244,7 @@ my_new_cpp_class.cpp    is correct format
 
 - It will be used to dynamically create a directory of files and implementation.
 - File name validation will run on Docker to ensure validity.
-- If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if &lt;tt&gt;median_search.cpp&lt;/tt&gt; already exists in the &lt;tt&gt;search&lt;/tt&gt; folder, and you are contributing a new implementation, the filename should be &lt;tt&gt;median_search2.cpp&lt;/tt&gt; and for a third implementation, &lt;tt&gt;median_search3.cpp&lt;/tt&gt;.
+- If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if &lt;tt&gt;median_search.cpp&lt;/tt&gt; already exists in the &lt;tt&gt;search&lt;/tt&gt; folder, and you are contributing a new implementation, the filename should be &lt;tt&gt;median_search2.cpp&lt;/tt&gt;. For a third implementation, &lt;tt&gt;median_search3.cpp&lt;/tt&gt;, and so on.
 
 @subsubsection autotoc_md32 New Directory guidelines
 
@@ -273,7 +275,8 @@ Examples of commit messages with semantic prefixes:
 fix: xyz algorithm bug
 feat: add xyx algorithm, class xyz
 test: add test for xyz algorithm
-docs: add comments and explanation to xyz algorithm
+docs: add comments and explanation to xyz algorithm/improve contributing guidelines
+chore: update Gitpod badge
 @endicode
 
 Common prefixes:
@@ -282,6 +285,7 @@ Common prefixes:
 - feat: A new feature
 - docs: Documentation changes
 - test: Correct existing tests or add new ones
+- chore: Miscellaneous changes that do not match any of the above.
 
 @subsection autotoc_md34 Pull Requests
 
