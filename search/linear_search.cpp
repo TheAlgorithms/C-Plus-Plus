@@ -82,18 +82,10 @@ int main()
         std::cout << "\nEnter the size of the array [in range 1-30 ]: ";
         std::cin >> size;
 
-        while (size <= 0 || size > 30)
-        {
-            if (size <= 0)
-            {
-                std::cout << "Size cannot be less than zero. Please choose another value: ";
-                std::cin >> size;
-            }
-            if (size > 30)
-            {
-                std::cout << "Size entered more than 30. Please choose a lower value: ";
-                std::cin >> size;
-            }
+        while (size <= 0 || size > 30){
+            std::cout << "Size can only be 1-30. Please choose another value: ";
+            std::cin >> size;
+        }
         }
 
         int *array = new int[size];
