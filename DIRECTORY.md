@@ -318,6 +318,7 @@
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/linear_search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search.cpp)
+  * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/saddleback_search.cpp)
   * [Sublist Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/sublist_search.cpp)
   * [Ternary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/ternary_search.cpp)
