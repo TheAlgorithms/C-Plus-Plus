@@ -86,7 +86,6 @@ int main()
             std::cout << "Size can only be 1-30. Please choose another value: ";
             std::cin >> size;
         }
-        }
 
         int *array = new int[size];
         int key = 0;
