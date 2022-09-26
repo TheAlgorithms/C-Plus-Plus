@@ -143,12 +143,12 @@ var NAVTREEINDEX =
 "d4/ded/namespaceprobability.html",
 "d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41",
 "d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2",
-"d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7",
-"da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html",
-"db/d9a/classuint128__t.html#a279209a184db20a7ffc8e687fdb05be2",
-"dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0",
-"de/db3/namespaceatbash.html",
-"functions_type.html"
+"d8/db1/binomial__calculate_8cpp.html",
+"da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#aaf762e88c66918d7afda4234f28a7ddf",
+"db/d9a/classuint128__t.html#a0a4623fae71566dfcf2e742c8c156798",
+"dd/d12/vigenere__cipher_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"de/d9b/prime__numbers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"functions_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

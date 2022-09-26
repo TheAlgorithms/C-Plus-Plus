@@ -46,6 +46,7 @@ var hierarchy =
     [ "data_structures::linked_list::list", "d1/def/classdata__structures_1_1linked__list_1_1list.html", null ],
     [ "data_structures::list_array::list< N >", "d5/dab/structdata__structures_1_1list__array_1_1list.html", null ],
     [ "list", "d8/d10/structlist.html", null ],
+    [ "ListNode", "d7/da4/struct_list_node.html", null ],
     [ "graph::LowestCommonAncestor", "d9/d23/classgraph_1_1_lowest_common_ancestor.html", null ],
     [ "others::lru_cache::LRUCache", "d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html", null ],
     [ "MinHeap", "d2/d05/class_min_heap.html", null ],
