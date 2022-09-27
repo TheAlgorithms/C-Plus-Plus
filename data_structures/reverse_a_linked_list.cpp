@@ -146,7 +146,7 @@ int32_t list::last() {
  *  @brief Utility function to find the i th element of the list
  *  @returns the i th element of the list
  */
-int32_t list::traverse(int index) {
+int32_t list::traverse(int32_t index) {
     Node *current = head;
 
     int count = 0;
