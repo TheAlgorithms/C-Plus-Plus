@@ -1,6 +1,6 @@
 
 ## Backtracking
-  * [Graph Coloringg](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/graph_coloringg.cpp)
+  * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/knight_tour.cpp)
   * [Magic Sequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/magic_sequence.cpp)
   * [Minimax](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/minimax.cpp)
@@ -10,7 +10,7 @@
   * [Rat Maze](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/rat_maze.cpp)
   * [Subarray Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subarray_sum.cpp)
   * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp)
-  * [Sudoku Solve](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solve.cpp)
+  * [Sudoku Solver](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/sudoku_solver.cpp)
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
@@ -41,6 +41,7 @@
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree.cpp)
   * [Binary Search Tree2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binary_search_tree2.cpp)
   * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/binaryheap.cpp)
+  * [Bloom Filter](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/bloom_filter.cpp)
   * [Circular Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/circular_queue_using_linked_list.cpp)
   * Cll
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/cll/cll.cpp)
@@ -158,9 +159,6 @@
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/hashing/sha1.cpp)
 
-## Linear Algebra
-  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/linear_algebra/gram_schmidt.cpp)
-
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/machine_learning/adaline_learning.cpp)
@@ -208,6 +206,7 @@
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
   * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
+  * [Modular Inverse Simple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_simple.cpp)
   * [N Bonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_bonacci.cpp)
   * [N Choose R](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_choose_r.cpp)
   * [Ncr Modulo P](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/ncr_modulo_p.cpp)
@@ -237,6 +236,7 @@
   * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/fast_fourier_transform.cpp)
   * [Gaussian Elimination](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gaussian_elimination.cpp)
   * [Golden Search Extrema](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/golden_search_extrema.cpp)
+  * [Gram Schmidt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/gram_schmidt.cpp)
   * [Inverse Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/inverse_fast_fourier_transform.cpp)
   * [Lu Decompose](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decompose.cpp)
   * [Lu Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/lu_decomposition.h)
@@ -318,6 +318,7 @@
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/linear_search.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search.cpp)
+  * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/saddleback_search.cpp)
   * [Sublist Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/sublist_search.cpp)
   * [Ternary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/ternary_search.cpp)
