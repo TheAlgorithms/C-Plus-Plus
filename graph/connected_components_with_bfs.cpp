@@ -29,21 +29,22 @@
 //                  WE WILL LEARN CALCULATING NO. OF CONNECTED COMPONENTS IN GRAPH USING BFS BY SOLVING A HACKEREARTH QUESTION
 //                  LINK=   https://www.hackerearth.com/problem/algorithm/connected-components-in-a-graph/
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
-#include <queue>
 
-using namespace std;      // using namespace std so that we have not to write std:: again and again
+#include <iostream>  // for IO operations
+#include <vector>    //for using vectors to make graph or adjacency list
+#include <queue>     //for using queue data structure for pushing and poping nodes during bfs
 
-int connected_components_bfs(vector<vector<int>>adj,int nodes) // {adj} is adjacency list of graph and {nodes} is number of nodes in graph 
+/**
+ * @brief connected_components_bfs function
+ * @returns number of connected components on exit
+ */
+int connected_components_bfs(std::vector<std::vector<int>>adj,int nodes) // {adj} is adjacency list of graph and {nodes} is number of nodes in graph 
 {
    int components=0;          // initialize no. of components in graph as 0
    int start=1;              // source node declaration as number 1 we can assign 0 if number of nodes starts from zero
    int end=(nodes+start-1);
-   vector<bool>vis(nodes+1,0);  // vector for visited node used during running of bfs
-   queue<int>q;                  // {q} parameter is queue which stores childs to be visited in bfs
+   std::vector<bool>vis(nodes+1,0);  // vector for visited node used during running of bfs
+   std::queue<int>q;                  // {q} parameter is queue which stores childs to be visited in bfs
    for(int node=start;node<=end;node++)          // running loop from starting node to end node
    {
       if(vis[node])continue;      // if node is visted means its component in graph has been calculted so we continue loop
@@ -65,26 +66,27 @@ int connected_components_bfs(vector<vector<int>>adj,int nodes) // {adj} is adjac
    return components;                   // returning components in graph
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 
 int main()
 {
    int nodes,edges;                    // {nodes} is no. of nodes and {edges} are no. of edges which will given in question as input
-   cin>>nodes>>edges;                  // taking input
-   vector<vector<int>>adj(nodes+1);    // declaring adjacency list for graph and assigning its size as of no. of nodes and adding one to it such that we have access to last number node 
+   std::cin>>nodes>>edges;                  // taking input
+   std::vector<std::vector<int>>adj(nodes+1);    // declaring adjacency list for graph and assigning its size as of no. of nodes and adding one to it such that we have access to last number node 
    for(int i=1;i<=edges;i++)           // running loop for taking input
    {
       int node_a,node_b;              
-      cin>>node_a>>node_b;             // taking input for edge
+      std::cin>>node_a>>node_b;             // taking input for edge
       adj[node_a].push_back(node_b);   // pushing into graph as bidirectional edge
       adj[node_b].push_back(node_a);
    }
 
    int connected_components;             // declaring connected_components which stores answer
    connected_components=connected_components_bfs(adj,nodes);   // calling function
-   cout<<connected_components<<endl;                   // printing answer
-
-
-
+   std::cout<<connected_components<<std::endl;                   // printing answer
+   return 0;   // exiting main function
 }
-
 
