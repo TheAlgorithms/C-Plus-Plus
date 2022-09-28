@@ -10,7 +10,7 @@ public:
         v.resize(k);
         cap=k;
     }
-    
+    //adding element into the queue
     bool enQueue(int value) {
         if(isFull())
             return false;
@@ -19,7 +19,7 @@ public:
         size++;
         return true;
     }
-    
+    //removing element from queue
     bool deQueue() {
         if(isEmpty())
             return false;
@@ -30,25 +30,25 @@ public:
         size--;
         return true;
     }
-    
+    //front of queue
     int Front() {
         if(isEmpty())
             return -1;
        return v[0];
     }
-    
+    //rear of queue
     int Rear() {
         if(isEmpty())
             return -1;
         return v[r-1];
     }
-    
+    //is queue empty?
     bool isEmpty() {
         if(size==0)
             return true;
         return false;
     }
-    
+    //is queue full?
     bool isFull() {
         if(size==cap)
             return true;
