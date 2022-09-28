@@ -122,6 +122,7 @@
   * [Breadth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/breadth_first_search.cpp)
   * [Bridge Finding With Tarjan Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/bridge_finding_with_tarjan_algorithm.cpp)
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components.cpp)
+  * [Connected Components With Bfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_bfs.cpp)
   * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/connected_components_with_dsu.cpp)
   * [Cycle Check Directed Graph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/cycle_check_directed_graph.cpp)
   * [Depth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/depth_first_search.cpp)
