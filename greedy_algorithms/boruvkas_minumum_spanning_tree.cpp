@@ -3,7 +3,7 @@
  * @file
  *
  * @brief
- * Borůvkas Algorithm to find the Minimum Spanning Tree (https://en.wikipedia.org/wiki/Borůvka's_algorithm)
+ * [Borůvkas Algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) to find the Minimum Spanning Tree
  * 
  * 
  * @details
@@ -27,7 +27,7 @@
 
 /**
  * @namespace greedy_algorithms
- * @brief Greedy_Algorithms
+ * @brief Greedy Algorithms
  */
 namespace greedy_algorithms { 
 
@@ -71,7 +71,7 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 	std::vector <std::pair<int, int>> parent; //Stores the parent of the vertex and its current depth
 
 	for (int i = 0; i < size; i++) {
-		parent.push_back(std::make_pair(i, 0)); //Sets parent of each vertex to itself, depth is 0
+		parent.emplace_back(std::make_pair(i, 0)); //Sets parent of each vertex to itself, depth is 0
 	}
 
 	//Repeat until all are in a single group
@@ -155,7 +155,6 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 	}	
 	return MST;	
 }
-} // namespace greedy_algorithms
 
 /**
  * @brief counts the sum of edges in the given tree
@@ -177,9 +176,10 @@ int test_findGraphSum(std::vector<std::vector<int>> adj) {
 	}
 	return sum;
 }
-
+} // namespace greedy_algorithms
 /**
  * @brief Self-test implementations
+ * @returns void
 */
 static void tests() {
 	std::cout << "Starting tests" << std::endl;
@@ -191,7 +191,7 @@ static void tests() {
 		{INT_MAX, 5, 3, INT_MAX, 0} ,
 	};
 	std::vector<std::vector<int>> MST = greedy_algorithms::boruvkas(graph);
-	assert(test_findGraphSum(MST) == 13);
+	assert(greedy_algorithms::test_findGraphSum(MST) == 13);
 	std::cout << "1st test passed" << std::endl;
 
 	graph = {
@@ -202,7 +202,7 @@ static void tests() {
 		{ 0, 5, 7, 9, 0 }
 	};
 	MST = greedy_algorithms::boruvkas(graph);
-	assert(test_findGraphSum(MST) == 16);
+    assert(greedy_algorithms::test_findGraphSum(MST) == 16);
 
 	std::cout << "2nd test passed" << std::endl;
 }
@@ -212,6 +212,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-	tests();	
+    tests();  // run self-test implementations
 	return 0;	
 }
