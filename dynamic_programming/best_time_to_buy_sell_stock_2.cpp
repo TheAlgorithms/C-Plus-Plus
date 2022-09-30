@@ -2,6 +2,9 @@
 
 using namespace std;
 
+// Memoization Solution
+// Time Complexity - O(N * 2)
+// Space Complexity - O(N * 2) + Auxiliary Stack Space O(N)
 int f(vector<int>& prices, int n, int i, bool buy, vector<vector<int>>& dp){
     if (i == n - 1){
         if (!buy) return prices[i];
@@ -19,6 +22,33 @@ int f(vector<int>& prices, int n, int i, bool buy, vector<vector<int>>& dp){
     return dp[i][buy] = profit;
 }
 
+// Dynamic Programming solution using 2D Matrix
+// Time Complexity - O(N * 2)
+// Space Complexity - O(N * 2)
+int maxProfit(vector<int>& prices) {
+    int n = prices.size();
+    vector<vector<int>> dp(n, vector<int>(2, 0));
+    dp[n - 1][0] = prices[n - 1];
+
+    for (int i = n - 2; i >= 0; i--){
+        for (int buy = 0; buy < 2; buy++){
+            int profit = 0;
+            if (buy){
+                profit = max(-prices[i] + dp[i + 1][!buy], dp[i + 1][buy]);
+            }
+            else{
+                profit = max(prices[i] + dp[i + 1][!buy], dp[i + 1][buy]);
+            }
+            dp[i][buy] = profit;
+        }
+    }
+
+    return dp[0][1];
+}
+
+// Space Optimized DP with only two 1D arrays
+// Time Complexity - O(N * 2)
+// Space Complexity - O(N)
 int maxProfit(vector<int>& prices) {
     int n = prices.size();
     vector<int> prev(2, 0);
