@@ -7,8 +7,8 @@
  * @author [Ritika Mukherjee](https://github.com/ritikaa17)
  */
 
-#include <iostream>   /// for IO operations
-#include <cassert>    /// for assert
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * \brief [Algorithm implementation for linear search]
@@ -18,16 +18,15 @@
  * \returns index where the key-value occurs in the array
  * \returns -1 if key-value not found
  */
-int LinearSearch(int *array, int size, int key) 
-{
-    for (int i = 0; i < size; ++i) 
-    {
+int LinearSearch(int *array, int size, int key) {
+    for (int i = 0; i < size; ++i) {
         if (array[i] == key) {
             return i;
         }
     }
 
-    /* We reach here only in case element is not present in array, return an invalid entry in that case*/
+    /* We reach here only in case element is not present in array, return an
+     * invalid entry in that case*/
     return -1;
 }
 
@@ -56,7 +55,7 @@ static void tests() {
     assert(LinearSearch(array, size, 5) == 5);
 
     std::cout << "All tests have successfully passed!\n";
-    delete[] array; // free memory up
+    delete[] array;  // free memory up
 }
 
 /**
@@ -73,11 +72,11 @@ int main() {
 
     if (mode == 2) {
         int size = 0;
-        std::cout << "\nEnter the size of the array: ";
+        std::cout << "\nEnter the size of the array [in range 1-30 ]: ";
         std::cin >> size;
 
-        while ((size <= 1) || (size >= 30)) {
-            std::cout << "Size cannot be less than zero. Please choose another value: ";
+        while (size <= 0 || size > 30) {
+            std::cout << "Size can only be 1-30. Please choose another value: ";
             std::cin >> size;
         }
 
@@ -94,17 +93,13 @@ int main() {
         std::cin >> key;
 
         int index = LinearSearch(array, size, key);
-        if (index != -1)
-        {
+        if (index != -1) {
             std::cout << "Number found at index: " << index << "\n";
-        } 
-        else
-        {
+        } else {
             std::cout << "Array element not found";
         }
         delete[] array;
-    }
-    else {
+    } else {
         tests();  // run self-test implementations
     }
     return 0;
