@@ -22,7 +22,7 @@ class Node
             delete next;
             next = NULL;
         }
-        cout << "Memory is free to use now " << value << endl;
+        cout << "Memory is free to use now" << value << endl;
     }
 
 };
