@@ -1,7 +1,14 @@
-#include <bits/stdc++.h>
+/**
+ * \file
+ * \brief [Delete a Node Without Head Pointer
+ * in Linked List](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list)
+ * @author [Anshu Saini](https://github.com/anshu189)
+ */
+
+#include <iostream>
 using namespace std;
 
-// Initializing a Linked List
+// Initializing a Linked List using Class Node
 class Node{
 public:
     int data;
@@ -32,10 +39,34 @@ void insertattail(Node* &tail, int data){
 
 // Deleting a single Node without head Pointer in Linked List
 // Time Complexity: O(1)
-// Auxilliary Space: O(1)  
+// Auxilliary Space: O(1)
 void delwohead(Node* del){
     del->data=del->next->data;
     del->next=del->next->next;
+}
+
+static void test( Node* head,Node* tail) {
+    Node* tempnode=head; // Declare an unchanged head pointer
+    Node* nodetobedeleted=head; // Declaring a Node to store the node which is to be deleted
+    // Append elements using for loop in Linked List
+    for(int i=0;i<5;++i){
+        insertattail(tail,i);
+    }
+
+    // Our Linked List right now => 1 0 1 2 3 4
+    cout<<"<= Original Linked List =>"<<endl;
+    printList(head);
+
+    // Deleting the second(2nd) element from the linked list
+    for(int i=0;i<2;++i){
+        nodetobedeleted=tempnode;
+        tempnode=tempnode->next;
+    }
+    delwohead(nodetobedeleted); // Funtion to delete a particular Node
+    cout<<endl<<"<= New Linked List after deleting second element =>"<<endl;
+    
+    printList(head); // Prints out the new Linke List after deletion
+    cout<<"Test case have been successfully passed!"<<endl<<endl;
 }
 
 // Driver Function
@@ -43,25 +74,35 @@ int main(){
     Node* mainode=new Node(1);
     Node* head=mainode;
     Node* tail=mainode;
-    Node* nodetobedeleted=mainode;
-
-    insertattail(tail,3);
-    insertattail(tail,4);
-    insertattail(tail,7);
-    insertattail(tail,9);
+    Node* delnode=mainode;
     
-    // Our Linked List right now => 1 3 4 7 9
-    cout<<"<= Original Linked List =>"<<endl;
-    printList(head);
+    // Run Self Test Case
+    test(head,tail);
+    
+    // User Driven Code
+    int n,ele,ndeleted;
+    cout<<"Enter the size of Linked List: ";
+    cin>>n; //Input the size of Linked List
 
-    // Let assume we want to delete the 2nd element from the Linked List
-    for(int i=0;i<2;++i){
-        nodetobedeleted=head;
-        head=head->next;
+    cout<<"Enter the elements to be inserted in Linked List: ";
+    // Input the elements for Linked List
+    for(int i=0;i<n;++i){
+        cin>>ele;
+        insertattail(tail,ele);
     }
-    // This will delete the second element from the Linked List i.e. 3
-    delwohead(nodetobedeleted);
-    cout<<endl<<"<= New Linked List after deleting second element =>"<<endl;
+    mainode=mainode->next;
+    head=mainode;
+    cout<<"<= Original Linked List =>"<<endl;
+    printList(mainode);
+
+    cout<<"Enter the node position to be deleted: ";
+    cin>>ndeleted; // Input the node position to be deleted 
+    for(int i=0;i<ndeleted;++i){
+        delnode=head;
+        head=head->next;       
+    }
+    // Node to be deleted stored in delnode
+    delwohead(delnode);
     printList(mainode);
     return 0;
 }
