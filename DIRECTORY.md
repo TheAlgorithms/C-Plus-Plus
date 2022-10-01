@@ -266,6 +266,7 @@
   * [Union Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/operations_on_datastructures/union_of_two_arrays.cpp)
 
 ## Others
+  * [Burrows Wheeler Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/burrows_wheeler_transform.cpp)
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/buzz_number.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/decimal_to_hexadecimal.cpp)
