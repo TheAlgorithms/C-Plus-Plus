@@ -75,8 +75,10 @@ int editDistDP(string str1, string str2, int m, int n) {
 }
 
 int main() {
-    string str1 = "sunday";
-    string str2 = "saturday";
+    string str1;
+    string str2;
+
+    cin >> str1 >> str2;
 
     cout << editDist(str1, str2, str1.length(), str2.length()) << endl;
     cout << editDistDP(str1, str2, str1.length(), str2.length()) << endl;
