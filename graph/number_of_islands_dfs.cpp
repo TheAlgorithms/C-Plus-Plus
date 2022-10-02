@@ -48,25 +48,25 @@ class matrix {
         m = cols;
         mat.resize(n, std::vector<char>(m));
     }
-    void dfs(std::vector<std::vector<char> > &mat, int row,
+    void dfs(std::vector<std::vector<char> > *mat, int row,
              int col);  // dfs function that helps us find the number of islands
 };
 /**
  * @brief this is a dfs funtion which checks all the connected 1s
  * the function returns if it goes out of bound of matrix
  */
-void matrix::dfs(std::vector<std::vector<char> > &matrix, int row, int col) {
-    if (row < 0 || row >= matrix.size() || col < 0 || col >= matrix[0].size()) {
+void matrix::dfs(std::vector<std::vector<char> > *mat, int row, int col) {
+    if (row < 0 || row >= (*mat).size() || col < 0 || col >= (*mat)[0].size()) {
         return;
     }
-    if (matrix[row][col] == '0') {
+    if ((*mat)[row][col] == '0') {
         return;
     }
-    matrix[row][col] = '0';
-    dfs(matrix, row - 1, col);
-    dfs(matrix, row + 1, col);
-    dfs(matrix, row, col + 1);
-    dfs(matrix, row, col - 1);
+    (*mat)[row][col] = '0';
+    dfs(mat, row - 1, col);
+    dfs(mat, row + 1, col);
+    dfs(mat, row, col + 1);
+    dfs(mat, row, col - 1);
 }
 
 }  // namespace number_of_islands
@@ -88,7 +88,7 @@ static void test() {
     for (int i = 0; i < mat.size(); i++) {
         for (int j = 0; j < mat[0].size(); j++) {
             if (mat[i][j] == '1') {
-                ocean.dfs(mat, i, j);
+                ocean.dfs(&mat, i, j);
                 ans++;
             }
         }
