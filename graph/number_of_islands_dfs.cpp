@@ -7,10 +7,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-//#include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-#define int int64_t
 
 void dfs(vector<vector<char>> &matrix, int row, int col) {
     if (row < 0 || row >= matrix.size() || col < 0 || col >= matrix[0].size()) {
@@ -26,10 +23,7 @@ void dfs(vector<vector<char>> &matrix, int row, int col) {
     dfs(matrix, row, col - 1);
 }
 
-int32_t main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
+int main() {
     // taking inputs of rows and columns
     int n, m;
     cin >> n >> m;
