@@ -1,6 +1,36 @@
-/* Warshall's Algorithm is used to determine the transitive closure of a directed graph or all paths in a directed graph by using the adjacency matrix. For this, it generates a sequence of n matrices. Where, n is used to describe the number of vertices. */
-/* In this program, maximum value of nodes that can be taken under consideration is 10 (which is changeable) */
+/* Warshall's Algorithm is used to determine
+the transitive closure of a directed graph 
+or all paths in a directed graph by using the adjacency matrix. 
+For this, it generates a sequence of n matrices.
+Where, n is used to describe the number of vertices. 
+
+i.e.,
+R(0), ..., R(k-1), R(k), ... , R(n) 
+
+*/
+/* In this program, maximum value of nodes 
+that can be taken under consideration is 10
+(which is changeable) */
 /* The time complexity of this algorithm is O(n^3) */
+
+/*
+In order to generate R(k) from R(k-1),
+the following rules will be implemented:
+
+Rule 1: In row i and column j, 
+if the element is 1 in R(k-1), 
+then in R(k), it will also remain 1.
+
+Rule 2: In row i and column j,
+if the element is 0 in R(k-1), 
+then the element in R(k) will be changed to 1 
+iff the element in its column j and row k,
+and the element in row i and column k are both 1's in R(k-1). 
+
+The resulting matrix after following the steps n times and obtaining
+n number of matrices, the nth matrix is the transitive closure for
+the given adjacency matrix.
+*/
 
 #include<iostream> //For IO Operations
 using namespace std;
@@ -82,3 +112,40 @@ void Print_Matrix(int A[10][10], int n)
     cout<<"\n";
   }
 }
+
+/* Example Output:
+
+Enter number of nodes (at most 10): 4
+
+Type 1 if yes and 0 if no to the following questions. Is there a path from 1 to 1: 1
+Is there a path from 1 to 2: 0
+Is there a path from 1 to 3: 0
+Is there a path from 1 to 4: 1
+Is there a path from 2 to 1: 0
+Is there a path from 2 to 2: 1
+Is there a path from 2 to 3: 1
+Is there a path from 2 to 4: 0
+Is there a path from 3 to 1: 0
+Is there a path from 3 to 2: 0
+Is there a path from 3 to 3: 0
+Is there a path from 3 to 4: 1
+Is there a path from 4 to 1: 0
+Is there a path from 4 to 2: 0
+Is there a path from 4 to 3: 0
+Is there a path from 4 to 4: 0
+
+Adjacency matrix is:
+
+1 0 0 1
+0 1 1 0
+0 0 0 1
+0 0 0 0
+
+Transitive Closure:
+
+1 0 0 1
+0 1 1 1
+0 0 0 1
+0 0 0 0
+
+*/
