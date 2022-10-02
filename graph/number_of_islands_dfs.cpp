@@ -36,7 +36,6 @@ namespace number_of_islands {
 class matrix {
  private:
     int n, m;  // dimensions of graph
-    int ans;   // number of islands in the ocean
     std::vector<std::vector<char> >
         mat;  // matrix that stores the ocean(0s and 1s)
 
@@ -49,7 +48,7 @@ class matrix {
         m = cols;
         mat.resize(n, std::vector<char>(m));
     }
-    void dfs(std::vector<std::vector<char> > &matrix, int row,
+    void dfs(std::vector<std::vector<char> > &mat, int row,
              int col);  // dfs function that helps us find the number of islands
 };
 /**
