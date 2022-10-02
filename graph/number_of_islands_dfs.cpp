@@ -19,7 +19,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
 /**
  * @namespace islands
@@ -36,27 +35,28 @@ namespace number_of_islands {
  */
 class matrix {
  private:
-    int n, m;                   // dimensions of graph
-    int ans;                    // number of islands in the ocean
-    vector<vector<char> > mat;  // matrix that stores the ocean(0s and 1s)
+    int n, m;  // dimensions of graph
+    int ans;   // number of islands in the ocean
+    std::vector<std::vector<char> >
+        mat;  // matrix that stores the ocean(0s and 1s)
 
  public:
     /**
      * @brief Constructor that initializes the matrix of oceans on creation
      */
-    explicit matrix(vector<vector<char> > mat, int rows, int cols) {
+    explicit matrix(std::vector<std::vector<char> > mat, int rows, int cols) {
         n = rows;
         m = cols;
-        mat.resize(n, vector<char>(m));
+        mat.resize(n, std::vector<char>(m));
     }
-    void dfs(vector<vector<char> > &matrix, int row,
+    void dfs(std::vector<std::vector<char> > &matrix, int row,
              int col);  // dfs function that helps us find the number of islands
 };
 /**
  * @brief this is a dfs funtion which checks all the connected 1s
  * the function returns if it goes out of bound of matrix
  */
-void matrix::dfs(vector<vector<char> > &matrix, int row, int col) {
+void matrix::dfs(std::vector<std::vector<char> > &matrix, int row, int col) {
     if (row < 0 || row >= matrix.size() || col < 0 || col >= matrix[0].size()) {
         return;
     }
@@ -74,7 +74,7 @@ void matrix::dfs(vector<vector<char> > &matrix, int row, int col) {
 }  // namespace islands
 
 static void test() {
-    vector<vector<char> > mat;
+    std::vector<std::vector<char> > mat;
     islands::number_of_islands::matrix ocean(
         mat, 4, 5);  // creating a ocean with 1s(land) and 0s(water)
     // initializing the matrix
@@ -94,7 +94,7 @@ static void test() {
             }
         }
     }
-    cout << ans << endl;
+    std::cout << ans << std::endl;
 }
 
 int main() {
