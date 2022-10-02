@@ -1,4 +1,7 @@
-/* Warshall's Algorithm is used to determine
+/* 
+@file
+@brief
+Warshall's Algorithm is used to determine
 the transitive closure of a directed graph 
 or all paths in a directed graph by using the adjacency matrix. 
 For this, it generates a sequence of n matrices.
@@ -7,13 +10,13 @@ Where, n is used to describe the number of vertices.
 i.e.,
 R(0), ..., R(k-1), R(k), ... , R(n) 
 
-*/
-/* In this program, maximum value of nodes 
+In this program, maximum value of nodes 
 that can be taken under consideration is 10
-(which is changeable) */
-/* The time complexity of this algorithm is O(n^3) */
+(which is changeable)
 
-/*
+The time complexity of this algorithm is O(n^3)
+
+@details
 In order to generate R(k) from R(k-1),
 the following rules will be implemented:
 
@@ -30,6 +33,8 @@ and the element in row i and column k are both 1's in R(k-1).
 The resulting matrix after following the steps n times and obtaining
 n number of matrices, the nth matrix is the transitive closure for
 the given adjacency matrix.
+
+@author [Abhilipsa Sahoo](https://github.com/abhilipsasahoo03)
 */
 
 #include<iostream> //For IO Operations
