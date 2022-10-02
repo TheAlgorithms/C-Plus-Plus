@@ -37,13 +37,17 @@ the given adjacency matrix.
 @author [Abhilipsa Sahoo](https://github.com/abhilipsasahoo03)
 */
 
-#include<iostream> //For IO Operations
-using namespace std;
 
-void Transitive_Closure(int Arr[10][10], int node);
+#include<iostream>//For IO Operations
+#include<cassert>
+
+int Transitive_Closure(int Arr[10][10], int node);
 void Print_Matrix(int A[10][10], int n);
+static void test();
 int main()
 {
+    cout<<"\nInitializing tests...";
+    test();
     int n, i, j, ans;
     int Arr[10][10];
     cout << "\nEnter number of nodes (at most 10): ";
@@ -70,11 +74,25 @@ int main()
     Transitive_Closure(Arr, n);
     return 0;
 }
-
-//Finds Transitive Closure
-void Transitive_Closure(int Arr[10][10], int node)
+// Automating tests to check if the algorithm runs perfectly
+static void test()
 {
-  int row, col, k;
+  //Test 1
+  int Arr1[10][10] = {{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 0, 0, 1}, {0, 0, 0, 0}};
+  assert(Transitive_Closure(Arr1, 4) == 263);
+  cout<<"\nTest 1 completed";
+
+  int Arr2[10][10] = {{0, 0, 1, 0}, {1, 0, 0, 1}, {0, 0, 0, 0}, {0, 1, 0, 0}};
+  assert(Transitive_Closure(Arr2, 4) == 11565);
+  cout<<"\nTest 2 completed";
+  cout<<"\nAll tests completed successfully";
+
+}
+//Finds Transitive Closure
+int Transitive_Closure(int Arr[10][10], int node)
+{
+  int row, col, k, sum=0, mul, prod=1;
+  int val;
   int Res[10][10];
 
   //Initializes matrix to zero
@@ -92,16 +110,30 @@ void Transitive_Closure(int Arr[10][10], int node)
       for(col=0; col<node; col++) 
       {
         if((Arr[row][col]==1)||(Arr[row][k]==1 && Arr[k][col]==1))
-          {
+         {
             Res[row][col] = 1;
-          }
+         }
       }
     }
   }
-    cout<<"\nTransitive Closure: \n";
-    Print_Matrix(Res, node);
-    
-    
+  
+  for(row=0; row<node; row++)
+  {
+    for(col=0; col<node; col++)
+    {
+      if(Res[row][col]==1)
+      {
+        mul = (row+1) * (col+1);
+        sum = sum + mul;
+        prod = prod * mul;
+      }
+    }
+  }
+  val = prod/sum;
+  cout<<"\nTransitive Closure: \n";
+  Print_Matrix(Res, node);
+  cout<<"\nValue: "<<val;
+  return val;  
 }
 
 //Prints Matrix
@@ -117,6 +149,7 @@ void Print_Matrix(int A[10][10], int n)
     cout<<"\n";
   }
 }
+
 
 /* Example Output:
 
