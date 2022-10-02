@@ -25,14 +25,14 @@ void dfs(vector<vector<char>> &matrix, int row, int col) {
 
 int main() {
     // taking inputs of rows and columns
-    int n, m;
+    int n = 0, m = 0;
     cin >> n >> m;
 
     // initializing the number of islands
     int ans = 0;
 
     // creating the 2D Matrix
-    vector<vector<char>> matrix(n, vector<char>(m));
+    vector<vector<char>> matrix(n, vector<char>(m, 0));
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cin >> matrix[i][j];
