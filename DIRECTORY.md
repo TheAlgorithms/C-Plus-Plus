@@ -135,6 +135,7 @@
   * [Kruskal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/kruskal.cpp)
   * [Lowest Common Ancestor](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/lowest_common_ancestor.cpp)
   * [Max Flow With Ford Fulkerson And Edmond Karp Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp)
+  * [Number Of Islands Dfs](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/number_of_islands_dfs.cpp)
   * [Prim](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/prim.cpp)
   * [Topological Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort.cpp)
   * [Topological Sort By Kahns Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/graph/topological_sort_by_kahns_algo.cpp)
