@@ -5,7 +5,7 @@
  * A* is an informed search algorithm, or a best-first search, meaning that it
  * is formulated in terms of weighted graphs: starting from a specific starting
  * node of a graph (initial state), it aims to find a path to the given goal
- * node having the smallest cost (least distance travelled, shortest time,
+ * node having the smallest cost (least distance traveled, shortest time,
  * etc.). It evaluates by maintaining a tree of paths originating at the start
  * node and extending those paths one edge at a time until it reaches the final
  * state.
@@ -266,7 +266,7 @@ class EightPuzzle {
  * @details AyStarSearch class is defined as the informed search algorithm
  * that is formulated in terms of weighted graphs: starting from a specific
  * starting node of a graph (initial state), it aims to find a path to the given
- * goal node having the smallest cost (least distance travelled, shortest time,
+ * goal node having the smallest cost (least distance traveled, shortest time,
  * etc.)
  * The weighted edges (or cost) is evaluated on two factors, G score
  * (cost required from starting node or initial state to current state) and H
@@ -276,7 +276,7 @@ class EightPuzzle {
  * The best search would be the final state having minimum `F(state)` value
  * @tparam Puzzle denotes the puzzle or problem involving initial state and
  * final state to be solved by A* search.
- * @note 1. The algorithm is referred from pesudocode from
+ * @note 1. The algorithm is referred from pseudoscope from
  * [Wikipedia page](https://en.wikipedia.org/wiki/A*_search_algorithm)
  * as is.
  * 2. For `AyStarSearch` to work, the definitions for template Puzzle is
@@ -420,7 +420,7 @@ class AyStarSearch {
     }
     /**
      * Main algorithm for finding `FinalState`, given the `InitialState`
-     * @param dist the heuristic finction, defined by the user
+     * @param dist the heuristic function, defined by the user
      * @param permissible_depth the depth at which the A* search discards
      * searching for solution
      * @returns List of moves from Final state to initial state, if

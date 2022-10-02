@@ -28,7 +28,7 @@
 #include <iostream>
 #include <valarray>
 #include <vector>
-#ifdef _OPENMP  // check if OpenMP based parallellization is available
+#ifdef _OPENMP  // check if OpenMP based parallelization is available
 #include <omp.h>
 #endif
 
@@ -48,9 +48,9 @@ double _random(double a, double b) {
 }
 
 /**
- * Save a given n-dimensional data martix to file.
+ * Save a given n-dimensional data matrix to file.
  *
- * \param[in] fname filename to save in (gets overwriten without confirmation)
+ * \param[in] fname filename to save in (gets overwritten without confirmation)
  * \param[in] X matrix to save
  * \returns 0 if all ok
  * \returns -1 if file creation failed
@@ -112,12 +112,12 @@ void update_weights(const std::valarray<double> &x,
 #endif
     // step 1: for each output point
     for (j = 0; j < num_out; j++) {
-        // compute Euclidian distance of each output
+        // compute Euclidean distance of each output
         // point from the current sample
         (*D)[j] = (((*W)[j] - x) * ((*W)[j] - x)).sum();
     }
 
-    // step 2:  get closest node i.e., node with snallest Euclidian distance to
+    // step 2:  get closest node i.e., node with smallest Euclidean distance to
     // the current pattern
     auto result = std::min_element(std::begin(*D), std::end(*D));
     // double d_min = *result;
@@ -157,7 +157,7 @@ void kohonen_som_tracer(const std::vector<std::valarray<double>> &X,
 
     std::valarray<double> D(num_out);
 
-    // Loop alpha from 1 to slpha_min
+    // Loop alpha from 1 to alpha_min
     do {
         // Loop for each sample pattern in the data set
         for (int sample = 0; sample < num_samples; sample++) {
@@ -262,7 +262,7 @@ void test1() {
 }
 
 /** Creates a random set of points distributed *near* the locus
- * of the [Lamniscate of
+ * of the [Lemniscate of
  * Gerono](https://en.wikipedia.org/wiki/Lemniscate_of_Gerono).
  * \f{eqnarray*}{
  * \delta r &=& 0.2\\
@@ -274,7 +274,7 @@ void test1() {
  * \f}
  * \param[out] data matrix to store data in
  */
-void test_lamniscate(std::vector<std::valarray<double>> *data) {
+void test_Lemniscate(std::vector<std::valarray<double>> *data) {
     const int N = data->size();
     const double dr = 0.2;
     int i = 0;
@@ -292,12 +292,12 @@ void test_lamniscate(std::vector<std::valarray<double>> *data) {
 }
 
 /** Test that creates a random set of points distributed *near* the locus
- * of the [Lamniscate of
+ * of the [Lemniscate of
  * Gerono](https://en.wikipedia.org/wiki/Lemniscate_of_Gerono) and trains an SOM
  * that finds that circular pattern. The following
  * [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files are created
  * to validate the execution:
- * * `test2.csv`: random test samples points with a lamniscate pattern
+ * * `test2.csv`: random test samples points with a Lemniscate pattern
  * * `w21.csv`: initial random map
  * * `w22.csv`: trained SOM map
  *
@@ -336,7 +336,7 @@ void test2() {
         }
     }
 
-    test_lamniscate(&X);              // create test data around the lamniscate
+    test_Lemniscate(&X);              // create test data around the Lemniscate
     save_nd_data("test2.csv", X);     // save test data points
     save_nd_data("w21.csv", W);       // save initial random weights
     kohonen_som_tracer(X, &W, 0.01);  // train the SOM
@@ -385,7 +385,7 @@ void test_3d_classes(std::vector<std::valarray<double>> *data) {
         data[0][i][1] = _random(centres[cls][1] - R, centres[cls][1] + R);
         data[0][i][2] = _random(centres[cls][2] - R, centres[cls][2] + R);
 
-        /* The follosing can also be used
+        /* The following can also be used
         for (int j = 0; j < 3; j++)
             data[0][i][j] = _random(centres[cls][j] - R, centres[cls][j] + R);
         */
@@ -435,7 +435,7 @@ void test3() {
         }
     }
 
-    test_3d_classes(&X);              // create test data around the lamniscate
+    test_3d_classes(&X);              // create test data around the Lemniscate
     save_nd_data("test3.csv", X);     // save test data points
     save_nd_data("w31.csv", W);       // save initial random weights
     kohonen_som_tracer(X, &W, 0.01);  // train the SOM

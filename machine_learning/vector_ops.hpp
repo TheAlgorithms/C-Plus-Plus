@@ -144,7 +144,7 @@ void equal_shuffle(std::vector<std::vector<std::valarray<T>>> &A,
         std::exit(EXIT_FAILURE);
     }
     for (size_t i = 0; i < A.size(); i++) {  // For every element in A and B
-        // Genrating random index < size of A and B
+        // Generating random index < size of A and B
         std::srand(std::chrono::system_clock::now().time_since_epoch().count());
         size_t random_index = std::rand() % A.size();
         // Swap elements in both A and B with same random index
@@ -184,7 +184,7 @@ void uniform_random_initialization(std::vector<std::valarray<T>> &A,
 }
 
 /**
- * Function to Intialize 2D vector as unit matrix
+ * Function to Initialize 2D vector as unit matrix
  * @tparam T typename of the vector
  * @param A 2D vector to be initialized
  * @param shape required shape
@@ -204,7 +204,7 @@ void unit_matrix_initialization(std::vector<std::valarray<T>> &A,
 }
 
 /**
- * Function to Intialize 2D vector as zeroes
+ * Function to Initialize 2D vector as zeroes
  * @tparam T typename of the vector
  * @param A 2D vector to be initialized
  * @param shape required shape
@@ -319,7 +319,7 @@ size_t argmax(const std::vector<std::valarray<T>> &A) {
 }
 
 /**
- * Function which applys supplied function to every element of 2D vector
+ * Function which applies supplied function to every element of 2D vector
  * @tparam T typename of the vector
  * @param A 2D vector on which function will be applied
  * @param func Function to be applied
@@ -444,7 +444,7 @@ std::vector<std::valarray<T>> operator-(
     }
     std::vector<std::valarray<T>> C;         // Vector to store result
     for (size_t i = 0; i < A.size(); i++) {  // For every row
-        C.push_back(A[i] - B[i]);            // Elementwise substraction
+        C.push_back(A[i] - B[i]);            // Elementwise subtraction
     }
     return C;  // Return new resultant 2D vector
 }

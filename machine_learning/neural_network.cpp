@@ -126,7 +126,7 @@ class DenseLayer {
  public:
     // To store activation function and it's derivative
     double (*activation_function)(const double &);
-    double (*dactivation_function)(const double &);
+    double (*deactivation_function)(const double &);
     int neurons;             // To store number of neurons (used in summary)
     std::string activation;  // To store activation name (used in summary)
     std::vector<std::valarray<double>> kernel;  // To store kernel (aka weights)
@@ -136,7 +136,7 @@ class DenseLayer {
      * @param neurons number of neurons
      * @param activation activation function for layer
      * @param kernel_shape shape of kernel
-     * @param random_kernel flag for whether to intialize kernel randomly
+     * @param random_kernel flag for whether to Initialize kernel randomly
      */
     DenseLayer(const int &neurons, const std::string &activation,
                const std::pair<size_t, size_t> &kernel_shape,
@@ -144,18 +144,18 @@ class DenseLayer {
         // Choosing activation (and it's derivative)
         if (activation == "sigmoid") {
             activation_function = neural_network::activations::sigmoid;
-            dactivation_function = neural_network::activations::sigmoid;
+            deactivation_function = neural_network::activations::sigmoid;
         } else if (activation == "relu") {
             activation_function = neural_network::activations::relu;
-            dactivation_function = neural_network::activations::drelu;
+            deactivation_function = neural_network::activations::drelu;
         } else if (activation == "tanh") {
             activation_function = neural_network::activations::tanh;
-            dactivation_function = neural_network::activations::dtanh;
+            deactivation_function = neural_network::activations::dtanh;
         } else if (activation == "none") {
-            // Set identity function in casse of none is supplied
+            // Set identity function in cases of none is supplied
             activation_function =
                 neural_network::util_functions::identity_function;
-            dactivation_function =
+            deactivation_function =
                 neural_network::util_functions::identity_function;
         } else {
             // If supplied activation is invalid
@@ -185,18 +185,18 @@ class DenseLayer {
         // Choosing activation (and it's derivative)
         if (activation == "sigmoid") {
             activation_function = neural_network::activations::sigmoid;
-            dactivation_function = neural_network::activations::sigmoid;
+            deactivation_function = neural_network::activations::sigmoid;
         } else if (activation == "relu") {
             activation_function = neural_network::activations::relu;
-            dactivation_function = neural_network::activations::drelu;
+            deactivation_function = neural_network::activations::drelu;
         } else if (activation == "tanh") {
             activation_function = neural_network::activations::tanh;
-            dactivation_function = neural_network::activations::dtanh;
+            deactivation_function = neural_network::activations::dtanh;
         } else if (activation == "none") {
-            // Set identity function in casse of none is supplied
+            // Set identity function in cases of none is supplied
             activation_function =
                 neural_network::util_functions::identity_function;
-            dactivation_function =
+            deactivation_function =
                 neural_network::util_functions::identity_function;
         } else {
             // If supplied activation is invalid
@@ -401,7 +401,8 @@ class NeuralNetwork {
             std::valarray<double> x_data,
                 y_data;                  // To store single sample and label
             std::stringstream ss(line);  // Constructing stringstream from line
-            std::string token;  // To store each token in line (seprated by ',')
+            std::string
+                token;  // To store each token in line (separated by ',')
             while (std::getline(ss, token, ',')) {  // For each token
                 // Insert numerical value of token in x_data
                 x_data = insert_element(x_data, std::stod(token));
@@ -413,7 +414,7 @@ class NeuralNetwork {
                 if (y_data.size() > 1) {
                     y_data[x_data[x_data.size() - 1]] = 1;
                 }
-                // If task is regrssion (of single value)
+                // If task is regression (of single value)
                 else {
                     y_data[0] = x_data[x_data.size() - 1];
                 }
@@ -424,7 +425,7 @@ class NeuralNetwork {
                 if (y_data.size() > 1) {
                     y_data[x_data[x_data.size() - 1]] = 1;
                 }
-                // If task is regrssion (of single value)
+                // If task is regression (of single value)
                 else {
                     y_data[0] = x_data[x_data.size() - 1];
                 }
@@ -502,7 +503,7 @@ class NeuralNetwork {
             auto start =
                 std::chrono::high_resolution_clock::now();  // Start clock
             double loss = 0,
-                   acc = 0;  // Intialize performance metrics with zero
+                   acc = 0;  // Initialize performance metrics with zero
             // For each starting index of batch
             for (size_t batch_start = 0; batch_start < X.size();
                  batch_start += batch_size) {
@@ -515,13 +516,13 @@ class NeuralNetwork {
                     // They will be averaged and applied to kernel
                     std::vector<std::vector<std::valarray<double>>> gradients;
                     gradients.resize(this->layers.size());
-                    // First intialize gradients to zero
+                    // First initialize gradients to zero
                     for (size_t i = 0; i < gradients.size(); i++) {
                         zeroes_initialization(
                             gradients[i], get_shape(this->layers[i].kernel));
                     }
                     predicted = activations.back();  // Predicted vector
-                    cur_error = predicted - Y[i];    // Absoulute error
+                    cur_error = predicted - Y[i];    // Absolute error
                     // Calculating loss with MSE
                     loss += sum(apply_function(
                         cur_error, neural_network::util_functions::square));
@@ -536,7 +537,7 @@ class NeuralNetwork {
                             cur_error,
                             apply_function(
                                 activations[j + 1],
-                                this->layers[j].dactivation_function));
+                                this->layers[j].deactivation_function));
                         // Calculating gradient for current layer
                         grad = multiply(transpose(activations[j]), cur_error);
                         // Change error according to current kernel values
@@ -553,8 +554,8 @@ class NeuralNetwork {
                     }
                 }
             }
-            auto stop =
-                std::chrono::high_resolution_clock::now();  // Stoping the clock
+            auto stop = std::chrono::high_resolution_clock::now();  // Stopping
+                                                                    // the clock
             // Calculate time taken by epoch
             auto duration =
                 std::chrono::duration_cast<std::chrono::microseconds>(stop -
@@ -606,7 +607,7 @@ class NeuralNetwork {
     void evaluate(const std::vector<std::vector<std::valarray<double>>> &X,
                   const std::vector<std::vector<std::valarray<double>>> &Y) {
         std::cout << "INFO: Evaluation Started" << std::endl;
-        double acc = 0, loss = 0;  // intialize performance metrics with zero
+        double acc = 0, loss = 0;  // initialize performance metrics with zero
         for (size_t i = 0; i < X.size(); i++) {  // For every sample in input
             // Get predictions
             std::vector<std::valarray<double>> pred =
@@ -622,7 +623,7 @@ class NeuralNetwork {
         }
         acc /= X.size();   // Averaging accuracy
         loss /= X.size();  // Averaging loss
-        // Prinitng performance of the model
+        // Printing performance of the model
         std::cout << "Evaluation: Loss: " << loss;
         std::cout << ", Accuracy: " << acc << std::endl;
         return;
@@ -731,7 +732,7 @@ class NeuralNetwork {
      */
     NeuralNetwork load_model(const std::string &file_name) {
         std::ifstream in_file;            // Ifstream to read file
-        in_file.open(file_name.c_str());  // Openinig file
+        in_file.open(file_name.c_str());  // Opening file
         // If there is any problem in opening file
         if (!in_file.is_open()) {
             std::cerr << "ERROR (" << __func__ << ") : ";

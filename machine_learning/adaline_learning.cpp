@@ -189,7 +189,7 @@ class adaline {
     /**
      * convenient function to check if input feature vector size matches the
      * model weights size
-     * \param[in] x fecture vector to check
+     * \param[in] x feature vector to check
      * \returns `true` size matches
      * \returns `false` size does not match
      */

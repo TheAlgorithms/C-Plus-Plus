@@ -11,8 +11,8 @@
  * This example implements a powerful unsupervised learning algorithm called as
  * a self organizing map. The algorithm creates a connected network of weights
  * that closely follows the given data points. This thus creates a topological
- * map of the given data i.e., it maintains the relationship between varipus
- * data points in a much higher dimesional space by creating an equivalent in a
+ * map of the given data i.e., it maintains the relationship between various
+ * data points in a much higher dimensional space by creating an equivalent in a
  * 2-dimensional space.
  * <img alt="Trained topological maps for the test cases in the program"
  * src="https://raw.githubusercontent.com/TheAlgorithms/C-Plus-Plus/docs/images/machine_learning/2D_Kohonen_SOM.svg"
@@ -35,7 +35,7 @@
 #include <iostream>
 #include <valarray>
 #include <vector>
-#ifdef _OPENMP  // check if OpenMP based parallellization is available
+#ifdef _OPENMP  // check if OpenMP based parallelization is available
 #include <omp.h>
 #endif
 
@@ -55,9 +55,9 @@ double _random(double a, double b) {
 }
 
 /**
- * Save a given n-dimensional data martix to file.
+ * Save a given n-dimensional data matrix to file.
  *
- * \param[in] fname filename to save in (gets overwriten without confirmation)
+ * \param[in] fname filename to save in (gets overwritten without confirmation)
  * \param[in] X matrix to save
  * \returns 0 if all ok
  * \returns -1 if file creation failed
@@ -133,7 +133,7 @@ constexpr double MIN_DISTANCE = 1e-4;
  * [U-matrix](https://en.wikipedia.org/wiki/U-matrix) from the trained
  * 3D weiths matrix and save to disk.
  *
- * \param [in] fname filename to save in (gets overwriten without
+ * \param [in] fname filename to save in (gets overwritten without
  * confirmation)
  * \param [in] W model matrix to save
  * \returns 0 if all ok
@@ -163,7 +163,7 @@ int save_u_matrix(const char *fname,
 #ifdef _OPENMP
 #pragma omp parallel for reduction(+ : distance)
 #endif
-            for (l = from_x; l < to_x; l++) {      // scan neighborhoor in x
+            for (l = from_x; l < to_x; l++) {      // scan neighborhood in x
                 for (m = from_y; m < to_y; m++) {  // scan neighborhood in y
                     auto d = W[i][j] - W[l][m];
                     double d2 = std::pow(d, 2).sum();
@@ -215,7 +215,7 @@ double update_weights(const std::valarray<double> &X,
     for (x = 0; x < num_out_x; x++) {
         for (y = 0; y < num_out_y; y++) {
             (*D)[x][y] = 0.f;
-            // compute Euclidian distance of each output
+            // compute Euclidean distance of each output
             // point from the current sample
             auto d = ((*W)[x][y] - X);
             (*D)[x][y] = (d * d).sum();
@@ -223,7 +223,7 @@ double update_weights(const std::valarray<double> &X,
         }
     }
 
-    // step 2:  get closest node i.e., node with snallest Euclidian distance
+    // step 2:  get closest node i.e., node with smallest Euclidean distance
     // to the current pattern
     int d_min_x = 0, d_min_y = 0;
     get_min_2d(*D, &d_min, &d_min_x, &d_min_y);
@@ -282,7 +282,7 @@ void kohonen_som(const std::vector<std::valarray<double>> &X,
     double past_dmin = 1.f;   // average minimum distance of all samples
     double dmin_ratio = 1.f;  // change per step
 
-    // Loop alpha from 1 to slpha_min
+    // Loop alpha from 1 to alpha_min
     for (; alpha > 0 && dmin_ratio > 1e-5; alpha -= 1e-4, iter++) {
         // Loop for each sample pattern in the data set
         for (int sample = 0; sample < num_samples; sample++) {
@@ -351,7 +351,7 @@ void test_2d_classes(std::vector<std::valarray<double>> *data) {
         data[0][i][0] = _random(centres[cls][0] - R, centres[cls][0] + R);
         data[0][i][1] = _random(centres[cls][1] - R, centres[cls][1] + R);
 
-        /* The follosing can also be used
+        /* The following can also be used
         for (int j = 0; j < 2; j++)
             data[i][j] = _random(centres[class][j] - R, centres[class][j] + R);
         */
@@ -433,7 +433,7 @@ void test_3d_classes1(std::vector<std::valarray<double>> *data) {
         data[0][i][1] = _random(centres[cls][1] - R, centres[cls][1] + R);
         data[0][i][2] = _random(centres[cls][2] - R, centres[cls][2] + R);
 
-        /* The follosing can also be used
+        /* The following can also be used
         for (int j = 0; j < 3; j++)
             data[i][j] = _random(centres[class][j] - R, centres[class][j] + R);
         */
@@ -444,7 +444,7 @@ void test_3d_classes1(std::vector<std::valarray<double>> *data) {
  * 3D space and trains an SOM that finds the topological pattern. The following
  * [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files are created
  * to validate the execution:
- * * `test2.csv`: random test samples points with a lamniscate pattern
+ * * `test2.csv`: random test samples points with a lemniscate pattern
  * * `w21.csv`: initial random map
  * * `w22.csv`: trained SOM map
  */
@@ -519,7 +519,7 @@ void test_3d_classes2(std::vector<std::valarray<double>> *data) {
         data[0][i][1] = _random(centres[cls][1] - R, centres[cls][1] + R);
         data[0][i][2] = _random(centres[cls][2] - R, centres[cls][2] + R);
 
-        /* The follosing can also be used
+        /* The following can also be used
         for (int j = 0; j < 3; j++)
             data[i][j] = _random(centres[class][j] - R, centres[class][j] + R);
         */

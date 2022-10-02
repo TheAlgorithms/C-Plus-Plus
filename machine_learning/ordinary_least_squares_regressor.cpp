@@ -187,7 +187,7 @@ std::vector<T> operator-(std::vector<T> const &A, std::vector<T> const &B) {
     std::vector<T> result(N);
 
     if (B.size() != N) {
-        std::cerr << "Vector dimensions shouldbe identical!" << std::endl;
+        std::cerr << "Vector dimensions should be identical!" << std::endl;
         return A;
     }
 
@@ -208,7 +208,7 @@ std::vector<T> operator+(std::vector<T> const &A, std::vector<T> const &B) {
     std::vector<T> result(N);
 
     if (B.size() != N) {
-        std::cerr << "Vector dimensions shouldbe identical!" << std::endl;
+        std::cerr << "Vector dimensions should be identical!" << std::endl;
         return A;
     }
 
@@ -218,7 +218,7 @@ std::vector<T> operator+(std::vector<T> const &A, std::vector<T> const &B) {
 }
 
 /**
- * Get matrix inverse using Row-trasnformations. Given matrix must
+ * Get matrix inverse using Row-transformations. Given matrix must
  * be a square and non-singular.
  * \returns inverse matrix
  **/
@@ -230,7 +230,7 @@ std::vector<std::vector<float>> get_inverse(
 
     std::vector<std::vector<float>> inverse(N);
     for (size_t row = 0; row < N; row++) {
-        // preallocatae a resultant identity matrix
+        // preallocate a resultant identity matrix
         inverse[row] = std::vector<float>(N);
         for (size_t col = 0; col < N; col++) {
             inverse[row][col] = (row == col) ? 1.f : 0.f;
@@ -242,7 +242,7 @@ std::vector<std::vector<float>> get_inverse(
         return inverse;
     }
 
-    // preallocatae a temporary matrix identical to A
+    // preallocate a temporary matrix identical to A
     std::vector<std::vector<float>> temp(N);
     for (size_t row = 0; row < N; row++) {
         std::vector<float> v(N);
@@ -340,7 +340,7 @@ std::vector<float> fit_OLS_regressor(std::vector<std::vector<T>> const &X,
 }
 
 /**
- * Given data and OLS model coeffficients, predict
+ * Given data and OLS model coefficients, predict
  * regression estimates. This operation is defined as
  * \f[y_{\text{row}=i} = \sum_{j=\text{columns}}\beta_j\cdot X_{i,j}\f]
  *
