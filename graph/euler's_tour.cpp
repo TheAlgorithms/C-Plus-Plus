@@ -4,6 +4,16 @@ Euler tour is defined as a way of traversing tree such that each vertex is added
 to the tour when we visit it (either moving down from parent vertex or returning
 from child vertex). We start from root and reach back to root after visiting all
 vertices. It requires exactly 2*n-1 vertices to store Euler tour.
+
+Test Case :
+input:
+4
+1 2
+2 3
+2 4
+
+output:
+1 2 3 2 4 2 1
 */
 
 #include <iostream>
