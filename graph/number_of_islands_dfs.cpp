@@ -16,15 +16,15 @@
  * @author [Harsh Agrawal](https://github.com/harshagrawal523)
  *
  */
-#include <iostream>
-#include <string>
-#include <vector>
+#include <iostream>  // for IO operations
+#include <string>    // for strings
+#include <vector>    // for vectors
 
 /**
- * @namespace islands
- * @brief DFS algorithms
+ * @namespace graph
+ * @brief Graphical algorithms
  */
-namespace islands {
+namespace graph {
 /**
  * @namespace number_of_islands
  * @brief Functions for counting the number of islands
@@ -35,9 +35,9 @@ namespace number_of_islands {
  */
 class matrix {
  private:
-    int n, m;  // dimensions of graph
+    int n, m;  ///< dimensions of the graph
     std::vector<std::vector<char> >
-        mat;  // matrix that stores the ocean(0s and 1s)
+        mat;  ///< matrix that stores the ocean(0s and 1s)
 
  public:
     /**
@@ -48,8 +48,9 @@ class matrix {
         m = cols;
         mat.resize(n, std::vector<char>(m));
     }
-    void dfs(std::vector<std::vector<char> > *mat, int row,
-             int col);  // dfs function that helps us find the number of islands
+    void dfs(
+        std::vector<std::vector<char> > *mat, int row,
+        int col);  ///< DFS function that helps us find the number of islands
 };
 /**
  * @brief this is a dfs funtion which checks all the connected 1s
@@ -70,11 +71,16 @@ void matrix::dfs(std::vector<std::vector<char> > *mat, int row, int col) {
 }
 
 }  // namespace number_of_islands
-}  // namespace islands
+}  // namespace graph
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 
 static void test() {
     std::vector<std::vector<char> > mat;
-    islands::number_of_islands::matrix ocean(
+    graph::number_of_islands::matrix ocean(
         mat, 4, 5);  // creating a ocean with 1s(land) and 0s(water)
     // initializing the matrix
     mat = {{'1', '1', '1', '1', '0'},
@@ -96,6 +102,10 @@ static void test() {
     std::cout << ans << std::endl;
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test();  // Testing
 
