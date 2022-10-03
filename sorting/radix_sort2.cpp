@@ -7,7 +7,7 @@
  * digit using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as
  * subroutine. Running time of radix sort is O(d*(n+b)) where b is the base for
  * representing numbers and d in the max digits in input integers and n is
- * number of unsigned integers. consider example for n = 5, aray elements =
+ * number of unsigned integers. consider example for n = 5, array elements =
  * 432,234,143,332,123 sorting digit by digit sorting according to 1) 1st digit
  * place
  * => 432, 332, 143, 123, 234
@@ -83,7 +83,7 @@ std::vector<uint64_t> radix(const std::vector<uint64_t>& ar) {
     std::vector<uint64_t> temp = ar;
     for (int i = 1; max_ele / i > 0;
          i *= 10) {  // loop breaks when i > max_ele because no further digits
-                     // left to makes changes in aray.
+                     // left to makes changes in array.
         temp = step_ith(i, temp);
     }
     for (uint64_t i : temp) {

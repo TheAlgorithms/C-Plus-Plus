@@ -15,7 +15,7 @@
  *
  *      The key process in quickSort is partition(). Target of partition is,
  *      given an array and an element x(say) of array as pivot, put x at it's
- *      correct position in sorted array and put all smaller elements (samller
+ *      correct position in sorted array and put all smaller elements (smaller
  *      than x) before x, and put all greater elements (greater than x) after
  *      x. All this should be done in linear time
  *

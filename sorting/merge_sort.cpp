@@ -2,8 +2,8 @@
  *  \addtogroup sorting Sorting Algorithms
  *  @{
  *  \file
- *  \brief [Merege Sort Algorithm
- *  (MEREGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
+ *  \brief [Merge Sort Algorithm
+ *  (MERGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
  *
  *  \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
