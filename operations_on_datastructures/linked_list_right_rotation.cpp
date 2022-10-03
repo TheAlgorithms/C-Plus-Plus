@@ -7,6 +7,7 @@
 
 #include <cassert> /// for assert
 #include <iostream>
+#include <memory>
 
 namespace operations_on_datastructures
 {
