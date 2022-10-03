@@ -6,7 +6,7 @@
  **/
 
 #include <cassert> /// for assert
-#include "bits/stdc++.h"
+#include <iostream>
 
 namespace operations_on_datastructures
 {
