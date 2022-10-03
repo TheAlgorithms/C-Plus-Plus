@@ -1,0 +1,70 @@
+/*
+this is an optimized solution for the mouse to find the cheese in the final grid of n*n matrices
+*/
+#include<iostream>
+using namespace std;
+
+bool isSafe(int** arr,int x,int y,int n){
+
+    if(x<n && y<n && arr[x][y]==1){
+        return true;
+    }
+    return false;
+}
+
+bool mousecheesemaze(int** arr,int x,int y,int n,int** path){
+if(x==n-1 && y==n-1){
+    path[x][y]=1;
+    return true;
+}
+
+
+    if(isSafe(arr,x,y,n)){
+        path[x][y]=1;
+        if(mousecheesemaze(arr,x+1,y,n,path)){
+            return true;
+        }
+        if(mousecheesemaze(arr,x,y+1,n,path)){
+            return true;
+        }
+        path[x][y]=0;
+        return false;
+
+    }
+    return false;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    int** arr = new int* [n];
+    for(int i=0;i<n;i++){
+        arr[i]=new int[n];
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cin>>arr[i][j];
+        }
+    }
+
+    int** path = new int* [n];
+    for(int i=0;i<n;i++){
+        path[i]=new int[n];
+        for (int j=0;j<n;j++){
+            path[i][j]=0;
+        }
+    }
+
+    if(mousecheesemaze(arr,0,0,n,solArr)){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                cout<<path[i][j]<<" ";
+            }cout<<endl;
+        }
+    }
+    return 0;
+
+}
