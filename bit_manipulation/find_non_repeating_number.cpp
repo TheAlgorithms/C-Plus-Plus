@@ -25,18 +25,18 @@
  */
 namespace bit_manipulation {
 /**
- * @namespace setKthBit
+ * @namespace find_non_repeating_integer
  * @brief Functions to find the non repeating integer
  * in an array of repeating integers. [Single
  * Number](https://leetcode.com/problems/single-number/)
  */
-namespace find_single_number {
+namespace find_non_repeating_integer {
 /**
  * @brief The main function implements find single number
  * @param nums vector of integers
  * @returns returns the integer that occurs only once
  */
-int find_single_number(std::vector<int>& nums) {
+int64_t find_non_repeating_integer(const std::vector<int>& nums) {
     // The idea is based on the property of XOR.
     // We know that 'a' XOR 'a' is '0' and '0' XOR 'b'
     // is b.
@@ -66,9 +66,15 @@ static void test() {
     std::vector<int> nums_two{203, 3434, 4545, 3434, 4545};
     std::vector<int> nums_three{90, 1, 3, 90, 3};
 
-    assert(bit_manipulation::find_single_number::find_single_number(nums_one) == 4);   // 4 is non repeating
-    assert(bit_manipulation::find_single_number::find_single_number(nums_two) == 203); // 203 is non repeating
-    assert(bit_manipulation::find_single_number::find_single_number(nums_three) == 1); // 1 is non repeating
+    assert(bit_manipulation::find_non_repeating_integer::
+               find_non_repeating_integer(nums_one) ==
+           4);  // 4 is non repeating
+    assert(bit_manipulation::find_non_repeating_integer::
+               find_non_repeating_integer(nums_two) ==
+           203);  // 203 is non repeating
+    assert(bit_manipulation::find_non_repeating_integer::
+               find_non_repeating_integer(nums_three) ==
+           1);  // 1 is non repeating
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
