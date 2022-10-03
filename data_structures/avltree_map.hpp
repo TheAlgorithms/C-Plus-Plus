@@ -1,6 +1,7 @@
 /**
- * @file avltree_map.hpp
- * @brief An AVLTree-based map implementation
+ * @file
+ * @brief An [AVLTree](https://en.wikipedia.org/wiki/AVL_tree)-based
+ *  map implementation
  * @details The map is sorted according to the natural ordering of its
  *  keys or by a {@code Compare} function provided; This implementation
  *  provides guaranteed log(n) time cost for the contains, get, insert
@@ -11,14 +12,13 @@
 #ifndef AVLTREE_MAP_HPP
 #define AVLTREE_MAP_HPP
 
-#include <cstdint>
-#include <cstddef>
-#include <cassert>
-#include <memory>
-#include <functional>
-#include <utility>
-#include <stack>
-#include <vector>
+#include <cstdint>      /// for standard integer definitions
+#include <cstddef>      /// for standard definitions like `std::size_t`
+#include <cassert>      /// for assert
+#include <memory>       /// for smart pointers
+#include <functional>   /// for functional programming
+#include <stack>        /// for `std::stack`
+#include <vector>       /// for `std::vector`
 
 /**
  * An AVLTree-based map implementation
@@ -478,7 +478,7 @@ class AvlTreeMap
      * @return AvlTreeMap<Key, Value>::Entry
      * @throws NoSuchMappingException
      */
-    Entry getHigherEntry(K key)
+    Entry getHigherEntry(K key) const
     {
         if (this->root == nullptr) {
             throw NoSuchMappingException("No higher entry exists in this map");

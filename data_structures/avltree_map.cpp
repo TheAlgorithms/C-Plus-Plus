@@ -1,16 +1,19 @@
 /**
- * @file avltree_map.cpp
- * @brief Unit testings for avltree_map.hpp
+ * @file
+ * @brief Unit testings for `AvlTreeMap<K, V>`
+ * @details This file contains the unit testings for `AvlTreeMap<K, V>`
+ *  including insertions, deletions and queries. These tests cover all
+ *  the code that contains the main algorithmic logic.
+ *  If a unit test succeeds, it will print "testName: success",
+ *  otherwise, it will print "testName: failed `[reason]`".
  * @author [r.ivance](https://github.com/RIvance)
  * @see avltree_map.hpp
  */
 
 #include "avltree_map.hpp"
 
-#include <map>
-#include <iostream>
-#include <set>
-#include <algorithm>
+#include <iostream>     /// for IO operations
+#include <set>          /// for `std::set`
 
 struct AssertionFailed : public std::exception
 {
@@ -57,6 +60,9 @@ TestMap initWithKeys(const std::vector<int> & keys)
     return map;
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::insert
+ */
 void testInsert()
 {
     TestMap map;
@@ -70,6 +76,9 @@ void testInsert()
     }));
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::operator[]
+ */
 void testAssign()
 {
     TestMap map;
@@ -87,6 +96,9 @@ void testAssign()
     }));
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::remove
+ */
 void testRemove()
 {
     TestMap map = initWithKeys({ 1, 5, 9, 7, 2, 3, 8, 4, 0, 6 });
@@ -100,6 +112,9 @@ void testRemove()
     }));
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::get
+ */
 void testGet()
 {
     TestMap map = initWithKeys({ 3, 7, 5, 0, 9, 4, 6, 2, 1, 8 });
@@ -113,6 +128,9 @@ void testGet()
     ASSERT_THROW(map.get(256), NoSuchMappingException);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getOrInsert
+ */
 void testGetOrInsert()
 {
     TestMap map = initWithKeys({ 9, 3, 7, 1, 2, 8 });
@@ -122,6 +140,9 @@ void testGetOrInsert()
     ASSERT_EQUAL(map.getOrInsert(6, -6), -6);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::size
+ */
 void testSize()
 {
     TestMap map = initWithKeys({ 3, 7, 5, 0, 9, 4, 6, 2, 1, 8 });
@@ -132,6 +153,9 @@ void testSize()
     ASSERT_EQUAL(map.size(), 7);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::clear
+ */
 void testClear()
 {
     TestMap map = initWithKeys({ 3, 7, 5, 0, 9, 4, 6, 2, 1, 8 });
@@ -139,6 +163,9 @@ void testClear()
     ASSERT_EQUAL(map.empty(), true);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getAndRemove
+ */
 void testGetAndRemove()
 {
     TestMap map = initWithKeys({ 3, 7, 5, 0, 9, 4, 6, 2, 1, 8 });
@@ -152,6 +179,9 @@ void testGetAndRemove()
     }));
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::removeAll
+ */
 void testRemoveAll()
 {
     TestMap map = initWithKeys({ 3, 7, 5, 0, 9, 4, 6, 2, 1, 8 });
@@ -164,6 +194,9 @@ void testRemoveAll()
     }));
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getCeilingEntry
+ */
 void testGetCeilingEntry()
 {
     TestMap map = initWithKeys({ 1, 5, 9, 4, 0, 6 });
@@ -175,6 +208,9 @@ void testGetCeilingEntry()
     ASSERT_THROW(map.getCeilingEntry(100), TestMap::NoSuchMappingException);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getFloorEntry
+ */
 void testGetFloorEntry()
 {
     TestMap map = initWithKeys({ 1, 5, 9, 4, 0, 6 });
@@ -186,6 +222,9 @@ void testGetFloorEntry()
     ASSERT_THROW(map.getFloorEntry(-1), TestMap::NoSuchMappingException);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getHeigherEntry
+ */
 void testGetHigherEntry()
 {
     TestMap map = initWithKeys({ 1, 5, 9, 4, 0, 6 });
@@ -197,6 +236,9 @@ void testGetHigherEntry()
     ASSERT_THROW(map.getHigherEntry(100), TestMap::NoSuchMappingException);
 }
 
+/**
+ * @brief Test AvlTreeMap<K, V>::getLowerEntry
+ */
 void testGetLowerEntry()
 {
     TestMap map = initWithKeys({ 1, 5, 9, 4, 0, 6 });
@@ -208,6 +250,10 @@ void testGetLowerEntry()
     ASSERT_THROW(map.getLowerEntry(-1), TestMap::NoSuchMappingException);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main()
 {
     RUN_TEST(testInsert);
