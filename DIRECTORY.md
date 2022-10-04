@@ -249,6 +249,7 @@
   * [Qr Decomposition](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_decomposition.cpp)
   * [Qr Eigen Values](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/qr_eigen_values.cpp)
   * [Rungekutta](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/rungekutta.cpp)
+  * [Secant Method](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/secant_method.cpp)
   * [Successive Approximation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/numerical_methods/successive_approximation.cpp)
 
 ## Operations On Datastructures
