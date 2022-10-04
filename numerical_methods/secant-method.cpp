@@ -22,7 +22,6 @@ double f(double x) { return x * x * x * x - 29.0; } // The Function f(x)
 
 /** Main Function */
 int main() {
-
     double x1 = 5, x0 = 4, tolerance = 1.0E-12; // Points and Tolerance Value
     std::cout << std::setprecision(20) << std::fixed; // Set Precision
 
