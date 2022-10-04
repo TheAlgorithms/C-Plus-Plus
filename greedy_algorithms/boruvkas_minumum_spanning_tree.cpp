@@ -68,11 +68,12 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 			
 	//Step 1: Create a group for each vertex
 
-	std::vector <std::pair<int, int>> parent; //Stores the parent of the vertex and its current depth
+	// Stores the parent of the vertex and its current depth, both initialized to 0
+	std::vector<std::pair<int, int>> parent(size, std::make_pair(0, 0));  
 
-	for (int i = 0; i < size; i++) {
-		parent.emplace_back(std::make_pair(i, 0)); //Sets parent of each vertex to itself, depth is 0
-	}
+    for (int i = 0; i < size; i++) {
+        parent[i].first = i;  // Sets parent of each vertex to itself, depth remains 0
+    }
 
 	//Repeat until all are in a single group
 	while (total_groups > 1) {
