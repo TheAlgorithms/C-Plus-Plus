@@ -18,11 +18,11 @@
  * Space complexity: O(n)
  * @author [Utkarsh Yadav](https://github.com/Rytnix)
  */
-#include <algorithm>
-#include <cassert>   /// for assert
+#include <algorithm>   /// for std::min
+#include <cassert>    /// for assert
 #include <iostream>  /// for IO operations
-#include <vector>   // for vector lib.
-#include <limits>  // for min func.
+#include <vector>   /// for std::vector 
+#include <limits>  /// for limits of integral types
 
 /**
  * @namespace bit_manipulation
@@ -74,8 +74,8 @@ std::uint64_t travelling_salesman_using_bit_manipulation(std::vector<std::vector
     dp[setOfCities][city] = ans;
     return ans;
 }
-}
-}
+} // namespace travelling_salesman_using_bit_manipulation
+} // namespace bit_manipulation
 
 
 
@@ -117,5 +117,4 @@ static void test() {
 int main() {
     test();  // run self-test implementations
     return 0;
-
 }
