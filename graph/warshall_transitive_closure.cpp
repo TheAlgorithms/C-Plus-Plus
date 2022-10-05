@@ -1,46 +1,48 @@
-/* 
-@file
-@brief
-Warshall's Algorithm is used to determine
-the transitive closure of a directed graph 
-or all paths in a directed graph by using the adjacency matrix. 
-For this, it generates a sequence of n matrices.
-Where, n is used to describe the number of vertices. 
-
-i.e.,
-R(0), ..., R(k-1), R(k), ... , R(n) 
-
-In this program, maximum value of nodes 
-that can be taken under consideration is 10
-(which is changeable)
-
-Reason: In Warshall's algo, Θ(n^3) is the worst-case cost.
-Even Brute Force method seems a viable option when compared
-to this. Therefore static 2D array is used with fixed
-input size of 10 inputs in this program in order to demonstrate
-the implementation and maintain responsiveness. 
-
-The time complexity of this algorithm is O(n^3)
-
-@details
-In order to generate R(k) from R(k-1),
-the following rules will be implemented:
-
-Rule 1: In row i and column j, 
-if the element is 1 in R(k-1), 
-then in R(k), it will also remain 1.
-
-Rule 2: In row i and column j,
-if the element is 0 in R(k-1), 
-then the element in R(k) will be changed to 1 
-iff the element in its column j and row k,
-and the element in row i and column k are both 1's in R(k-1). 
-
-The resulting matrix after following the steps n times and obtaining
-n number of matrices, the nth matrix is the transitive closure for
-the given adjacency matrix.
-
-@author [Abhilipsa Sahoo](https://github.com/abhilipsasahoo03)
+/**
+* @file
+* @brief Implementation of Warshall's Algorithm in C++
+* @details
+* [Warshall's Transitive Closure Algorithm](https://www.javatpoint.com/warshalls-algorithm)
+* Warshall's Algorithm is used to determine
+* the transitive closure of a directed graph 
+* or all paths in a directed graph by using the adjacency matrix. 
+* For this, it generates a sequence of n matrices.
+* Where, n is used to describe the number of vertices. 
+*
+* i.e.,
+* R(0), ..., R(k-1), R(k), ... , R(n) 
+*
+* In this program, maximum value of nodes 
+* that can be taken under consideration is 10
+* (which is changeable)
+*
+* Reason: In Warshall's algo, Θ(n^3) is the worst-case cost.
+* Even Brute Force method seems a viable option when compared
+* to this. Therefore static 2D array is used with fixed
+* input size of 10 inputs in this program in order to demonstrate
+* the implementation and maintain responsiveness. 
+*
+* The time complexity of this algorithm is O(n^3)
+*
+* @Algorithm
+* In order to generate R(k) from R(k-1),
+* the following rules will be implemented:
+*
+* Rule 1: In row i and column j, 
+* if the element is 1 in R(k-1), 
+* then in R(k), it will also remain 1.
+*
+* Rule 2: In row i and column j,
+* if the element is 0 in R(k-1), 
+* then the element in R(k) will be changed to 1 
+* iff the element in its column j and row k,
+* and the element in row i and column k are both 1's in R(k-1). 
+*
+* The resulting matrix after following the steps n times and obtaining
+* n number of matrices, the nth matrix is the transitive closure for
+* the given adjacency matrix.
+*
+* @author [Abhilipsa Sahoo](https://github.com/abhilipsasahoo03)
 */
 
 
@@ -48,7 +50,7 @@ the given adjacency matrix.
 #include<cassert> //For using assert()
 
 
-// Automating tests to check if the algorithm runs perfectly
+/* Automating tests to check if the algorithm runs perfectly */
 static void test()
 {
   //Test 1
@@ -63,7 +65,8 @@ static void test()
   cout<<"\nAll tests completed successfully";
 
 }
-//Finds Transitive Closure
+
+/* Finds Transitive Closure */
 int Transitive_Closure(int Arr[10][10], int node)
 {
   int row, col, k, sum=0, mul, prod=1;
@@ -92,6 +95,9 @@ int Transitive_Closure(int Arr[10][10], int node)
     }
   }
   
+  /** Generating unique value that can be returned 
+  * and mapped to unique transitive closure matrix
+  */
   for(row=0; row<node; row++)
   {
     for(col=0; col<node; col++)
@@ -111,7 +117,7 @@ int Transitive_Closure(int Arr[10][10], int node)
   return val;  
 }
 
-//Prints Matrix
+/* Prints Matrix */
 void Print_Matrix(int A[10][10], int n)
 {
   int i, j;
@@ -125,7 +131,7 @@ void Print_Matrix(int A[10][10], int n)
   }
 }
 
-//Main function
+/* Main function */
 int main()
 {
     cout<<"\nInitializing tests...";
@@ -157,39 +163,39 @@ int main()
     return 0;
 }
 
-/* Example Output:
-
-Enter number of nodes (at most 10): 4
-
-Type 1 if yes and 0 if no to the following questions. Is there a path from 1 to 1: 1
-Is there a path from 1 to 2: 0
-Is there a path from 1 to 3: 0
-Is there a path from 1 to 4: 1
-Is there a path from 2 to 1: 0
-Is there a path from 2 to 2: 1
-Is there a path from 2 to 3: 1
-Is there a path from 2 to 4: 0
-Is there a path from 3 to 1: 0
-Is there a path from 3 to 2: 0
-Is there a path from 3 to 3: 0
-Is there a path from 3 to 4: 1
-Is there a path from 4 to 1: 0
-Is there a path from 4 to 2: 0
-Is there a path from 4 to 3: 0
-Is there a path from 4 to 4: 0
-
-Adjacency matrix is:
-
-1 0 0 1
-0 1 1 0
-0 0 0 1
-0 0 0 0
-
-Transitive Closure:
-
-1 0 0 1
-0 1 1 1
-0 0 0 1
-0 0 0 0
-
+/** Example Output:
+*
+* Enter number of nodes (at most 10): 4
+*
+* Type 1 if yes and 0 if no to the following questions. Is there a path from 1 to 1: 1
+* Is there a path from 1 to 2: 0
+* Is there a path from 1 to 3: 0
+* Is there a path from 1 to 4: 1
+* Is there a path from 2 to 1: 0
+* Is there a path from 2 to 2: 1
+* Is there a path from 2 to 3: 1
+* Is there a path from 2 to 4: 0
+* Is there a path from 3 to 1: 0
+* Is there a path from 3 to 2: 0
+* Is there a path from 3 to 3: 0
+* Is there a path from 3 to 4: 1
+* Is there a path from 4 to 1: 0
+* Is there a path from 4 to 2: 0
+* Is there a path from 4 to 3: 0
+* Is there a path from 4 to 4: 0
+*
+* Adjacency matrix is:
+*
+* 1 0 0 1
+* 0 1 1 0
+* 0 0 0 1
+* 0 0 0 0
+*
+* Transitive Closure:
+*
+* 1 0 0 1
+* 0 1 1 1
+* 0 0 0 1
+* 0 0 0 0
+*
 */
