@@ -7,6 +7,7 @@
  * utilize any of the C++ STL features.
  */
 #include <iostream>
+using namespace std;
 
 struct node {
     int val;
@@ -26,28 +27,31 @@ void enqueue(node *n) { queue.t[queue.rear++] = n; }
 
 node *dequeue() { return (queue.t[queue.front++]); }
 
-void Insert(node *n, int x) {
-    if (x < n->val) {
-        if (n->left == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->left = temp;
-        } else {
-            Insert(n->left, x);
-        }
-    } else {
-        if (n->right == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->right = temp;
-        } else {
-            Insert(n->right, x);
-        }
-    }
+struct node *Insert(node *n, int x) {
+	// If the tree is empty or when we reach a null leaf node we add a new node
+	if(n == NULL)
+	{
+		n = (struct node*)malloc(sizeof(struct node));
+		n->val = x;
+		n->left = NULL;
+		n->right = NULL;
+	}
+	else
+	{
+		/*since this is a binary search tree we don't have the need to have nodes with the same value on the tree.
+		  In this case, when the value we want to add is greater than the root node we call the insert function again
+		  pointing to the right node. The same is valid for the left node when the value is samller than the root node.
+		  We repeat this until we find a null leaf node to store our new node. */
+		if(x > n->val)
+		{
+			n->right = Insert(n->right, x);
+		}
+		if(x < n->val)
+		{
+			n->left = Insert(n->left, x);
+		}
+	}
+	return n;
 }
 
 int findMaxInLeftST(node *n) {
@@ -127,12 +131,10 @@ int main() {
     queue.rear = 0;
     int value;
     int ch;
-    node *root = new node;
+    struct node *root = NULL;
     std::cout << "\nEnter the value of root node :";
     std::cin >> value;
-    root->val = value;
-    root->left = NULL;
-    root->right = NULL;
+    root = Insert(root, value);
     do {
         std::cout << "\n1. Insert"
                   << "\n2. Delete"
