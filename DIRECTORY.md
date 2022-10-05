@@ -19,6 +19,7 @@
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/bit_manipulation/set_kth_bit.cpp)
+  * [Travelling Salesman using Bitmanipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/travelling_salesman_using_bit_manipulation)
 
 ## Ciphers
   * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/ciphers/a1z26_cipher.cpp)
