@@ -45,12 +45,13 @@ T rect_perimeter(T length, T width) {
  * @brief perimeter of a [triangle](https://en.wikipedia.org/wiki/Triangle) (a +
  * b + c)
  * @param base is the length of the bottom side of the triangle
- * @param height is the length of the tallest point in the triangle
+ * @param left_side is the length of the left side corresponding to the base of triangle
+ * @param right_side is the length of the right side corresponding to the base of triangle
  * @returns perimeter of the triangle
  */
 template <typename T>
-T triangle_perimeter(T base, T height, T hypotenuse) {
-    return base + height + hypotenuse;
+T triangle_perimeter(T base, T left_side, T right_side) {
+    return base + left_side + right_side;
 }
 
 /**
@@ -67,13 +68,13 @@ T circle_perimeter(T radius) {
 /**
  * @brief perimeter of a
  * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + h)
- * @param base is the length of the bottom side of the parallelogram
- * @param height is the length of the tallest point in the parallelogram
+ * @param parallel_side1 is the length of the one of the adjacent sides of the parallelogram
+ * @param parallel_side2 is the length of the other adjaccent side of the parallelogram
  * @returns perimeter of the parallelogram
  */
 template <typename T>
-T parallelogram_perimeter(T base, T height) {
-    return 2 * (base + height);
+T parallelogram_perimeter(T parallel_side1, T parallel_side2) {
+    return 2 * (parallel_side1 + parallel_side2);
 }
 
 /**
@@ -102,14 +103,14 @@ T n_polygon_surface_perimeter(T sides, T length) {
 
 /**
  * @brief surface perimeter of a
- * [cylinder](https://en.wikipedia.org/wiki/Cylinder) (2 * radius + 2 * height)
+ * [cylinder](https://en.wikipedia.org/wiki/Cylinder) 2 * (2 * pi * radius + height)
  * @param radius is the radius of the cylinder
  * @param height is the height of the cylinder
  * @returns surface perimeter of the cylinder
  */
 template <typename T>
 T cylinder_surface_perimeter(T radius, T height) {
-    return (2 * radius) + (2 * height);
+    return ( 2 * radius ) + ( 2  * height );
 }
 }  // namespace math
 
@@ -119,25 +120,28 @@ T cylinder_surface_perimeter(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    uint16_t int_length = 0;      // 16 bit integer length input
-    uint16_t int_width = 0;       // 16 bit integer width input
-    uint16_t int_base = 0;        // 16 bit integer base input
-    uint16_t int_height = 0;      // 16 bit integer height input
-    uint16_t int_hypotenuse = 0;  // 16 bit integer hypotenuse input
-    uint16_t int_sides = 0;       // 16 bit integer sides input
-    uint16_t int_expected = 0;    // 16 bit integer expected output
-    uint16_t int_perimeter = 0;   // 16 bit integer output
+    uint16_t int_length = 0;           // 16 bit integer length input
+    uint16_t int_width = 0;            // 16 bit integer width input
+    uint16_t int_base = 0;             // 16 bit integer base input
+    uint16_t int_height = 0;           // 16 bit integer height input
+    uint16_t int_left_side = 0;        // 16 bit integer left side input
+    uint16_t int_right_side = 0;       // 16 bit integer right side input
+    uint16_t int_parallel_side1 = 0;   // 16 bit integer left side input
+    uint16_t int_parallel_side2 = 0;   // 16 bit integer right side input
+    uint16_t int_sides = 0;            // 16 bit integer sides input
+    uint16_t int_expected = 0;         // 16 bit integer expected output
+    uint16_t int_perimeter = 0;        // 16 bit integer output
 
-    float float_length = NAN;     // float length input
-    float float_expected = NAN;   // float expected output
-    float float_perimeter = NAN;  // float output
+    float float_length = NAN;          // float length input
+    float float_expected = NAN;        // float expected output
+    float float_perimeter = NAN;       // float output
 
-    double double_length = NAN;     // double length input
-    double double_width = NAN;      // double width input
-    double double_radius = NAN;     // double radius input
-    double double_height = NAN;     // double height input
-    double double_expected = NAN;   // double expected output
-    double double_perimeter = NAN;  // double output
+    double double_length = NAN;        // double length input
+    double double_width = NAN;         // double width input
+    double double_radius = NAN;        // double radius input
+    double double_height = NAN;        // double height input
+    double double_expected = NAN;      // double expected output
+    double double_perimeter = NAN;     // double output
 
     // 1st test
     int_length = 5;
@@ -193,15 +197,16 @@ static void test() {
 
     // 5th test
     int_base = 10;
-    int_height = 3;
-    int_hypotenuse = 5;
+    int_left_side = 3;
+    int_right_side = 5;
     int_expected = 18;
     int_perimeter =
-        math::triangle_perimeter(int_base, int_height, int_hypotenuse);
+        math::triangle_perimeter(int_base, int_left_side, int_right_side);
 
     std::cout << "perimeter OF A TRIANGLE" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
+    std::cout << "Input Left Side: " << int_left_side << std::endl;
+    std::cout << "Input Right Side: " << int_right_side << std::endl;
     std::cout << "Expected Output: " << int_expected << std::endl;
     std::cout << "Output: " << int_perimeter << std::endl;
     assert(int_perimeter == int_expected);
@@ -222,14 +227,14 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 7th test
-    int_base = 6;
-    int_height = 7;
+    int_parallel_side1 = 6;
+    int_parallel_side2 = 7;
     int_expected = 26;
-    int_perimeter = math::parallelogram_perimeter(int_base, int_height);
+    int_perimeter = math::parallelogram_perimeter(int_parallel_side1, int_parallel_side2);
 
     std::cout << "perimeter OF A PARALLELOGRAM" << std::endl;
-    std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
+    std::cout << "Input Base: " << int_parallel_side1 << std::endl;
+    std::cout << "Input Height: " << int_parallel_side2 << std::endl;
     std::cout << "Expected Output: " << int_expected << std::endl;
     std::cout << "Output: " << int_perimeter << std::endl;
     assert(int_perimeter == int_expected);
