@@ -76,6 +76,20 @@ T parallelogram_area(T base, T height) {
     return base * height;
 }
 
+ /**
+ * @brief area of a
+ * [trapezoid/trapezium with two parallel
+ * side](https://en.wikipedia.org/wiki/Trapezoid) ((b1 + b2)/2]*h)
+ * @param base1 is the length of one of the parallel side of the trapezium
+ * @param base2 is the length of other parallel side of the trapezium
+ * @param height is the length between both parallel side
+ * @returns area of the trapezium/trapezoid
+ */
+template <typename T>
+T trapezoid_area(T base1, T base2, T height) {
+    return (((base1 + base2)/2)*height);
+}
+    
 /**
  * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
  * * l))
@@ -262,6 +276,23 @@ static void test() {
 
     std::cout << "SURFACE AREA OF A CYLINDER" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
+    std::cout << "Input Height: " << double_height << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_area << std::endl;
+    assert(double_area == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+    
+    // 11th test
+    double_base1 = 10.0;
+    double_base2 = 20.0;
+    double_height = 7.0;
+    double_expected = 105.0;
+    double_area =
+        math::trapezoid_area(double_base1, double_base2, double_height);
+
+    std::cout << "AREA OF A TRAPEZOID WITH TWO PARALLEL SIDE" << std::endl;
+    std::cout << "Input Base1: " << double_base1 << std::endl;
+    std::cout << "Input Base2: " << double_base2 << std::endl;
     std::cout << "Input Height: " << double_height << std::endl;
     std::cout << "Expected Output: " << double_expected << std::endl;
     std::cout << "Output: " << double_area << std::endl;
