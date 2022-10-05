@@ -7,7 +7,6 @@
  * utilize any of the C++ STL features.
  */
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
