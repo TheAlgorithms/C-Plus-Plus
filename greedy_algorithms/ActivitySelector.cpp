@@ -1,30 +1,22 @@
-
-// C++ program for activity selection problem.
-// The following implementation assumes that the activities
-// are already sorted according to their finish time
 #include <iostream>
 using namespace std;
 
-// Prints a maximum set of activities that can be done by a single
+// Prints a maximum number of activities that can be done by a single
 // person, one at a time.
-//  n   -->  Total number of activities
-//  s[] -->  An array that contains start time of all activities
-//  f[] -->  An array that contains finish time of all activities
-void printMaxActivities(int s[], int f[], int n) {
+void activitySelector(int start_time[], int finish_time[], int total_num) {
     int i, j;
 
-    cout << "Following activities are selected " << endl;
+    cout << "Selected Activities" << endl;
 
-    // The first activity always gets selected
+    // Initialising with the first activity
     i = 0;
     cout << " " << i;
 
     // Consider rest of the activities
-    for (j = 1; j < n; j++) {
-        // If this activity has start time greater than or
-        // equal to the finish time of previously selected
-        // activity, then select it
-        if (s[j] >= f[i]) {
+    for (j = 1; j < total_num; j++) {
+        // If start time of next activity in the list is more than the finish
+        // time of previous activity it gets selected
+        if (start_time[j] >= finish_time[i]) {
             cout << " " << j;
             i = j;
         }
@@ -33,9 +25,9 @@ void printMaxActivities(int s[], int f[], int n) {
 
 // driver program to test above function
 int main() {
-    int s[] = {1, 3, 0, 5, 8, 5};
-    int f[] = {2, 4, 6, 7, 9, 9};
-    int n = sizeof(s) / sizeof(s[0]);
-    printMaxActivities(s, f, n);
+    int start_time[] = {1, 3, 5, 7, 9, 9};
+    int finish_time[] = {2, 4, 6, 7, 10, 9};
+    int total_num = sizeof(start_time) / sizeof(start_time[0]);
+    activitySelector(start_time, finish_time, total_num);
     return 0;
 }
