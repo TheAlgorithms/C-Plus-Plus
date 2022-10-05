@@ -1,8 +1,9 @@
 /**
 * @file
 * @brief Implementation of Warshall's Algorithm in C++
-* @details
 * [Warshall's Transitive Closure Algorithm](https://www.javatpoint.com/warshalls-algorithm)
+* 
+* @details
 * Warshall's Algorithm is used to determine
 * the transitive closure of a directed graph 
 * or all paths in a directed graph by using the adjacency matrix. 
@@ -24,7 +25,6 @@
 *
 * The time complexity of this algorithm is O(n^3)
 *
-* @Algorithm
 * In order to generate R(k) from R(k-1),
 * the following rules will be implemented:
 *
