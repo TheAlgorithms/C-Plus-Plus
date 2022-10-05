@@ -50,7 +50,10 @@
 #include<cassert> //For using assert()
 
 
-/* Automating tests to check if the algorithm runs perfectly */
+/** Automating tests to check if the algorithm runs perfectlyperfectly
+* for two test cases
+* @return None
+
 static void test()
 {
   //Test 1
@@ -66,7 +69,13 @@ static void test()
 
 }
 
-/* Finds Transitive Closure */
+/** Finds Transitive Closure for the adjacency matrix
+* and calculates and assigns a unique value to return
+* at the time of assertion
+* @param integer type Adjacency matrix Arr of nxn where
+* node = n (< = 10 )
+* @return int val
+*/
 int Transitive_Closure(int Arr[10][10], int node)
 {
   int row, col, k, sum=0, mul, prod=1;
@@ -94,10 +103,8 @@ int Transitive_Closure(int Arr[10][10], int node)
       }
     }
   }
-  
-  /** Generating unique value that can be returned 
-  * and mapped to unique transitive closure matrix
-  */
+  // Generating unique value that can be returned 
+  // This value is mapped to unique transitive closure matrix
   for(row=0; row<node; row++)
   {
     for(col=0; col<node; col++)
@@ -117,7 +124,12 @@ int Transitive_Closure(int Arr[10][10], int node)
   return val;  
 }
 
-/* Prints Matrix */
+/** Prints Matrix 
+* @param integer 2D array matrix A of nxn where
+* n is the input size which equals number of rows
+* as well as number of columns
+* @return None
+*/
 void Print_Matrix(int A[10][10], int n)
 {
   int i, j;
@@ -131,7 +143,10 @@ void Print_Matrix(int A[10][10], int n)
   }
 }
 
-/* Main function */
+/** Main function 
+* @param None
+* @return 0
+*/
 int main()
 {
     cout<<"\nInitializing tests...";
