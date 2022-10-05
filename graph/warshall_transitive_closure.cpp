@@ -14,6 +14,12 @@ In this program, maximum value of nodes
 that can be taken under consideration is 10
 (which is changeable)
 
+Reason: In Warshall's algo, Θ(n^3) is the worst-case cost.
+Even Brute Force method seems a viable option when compared
+to this. Therefore static 2D array is used with fixed
+input size of 10 inputs in this program in order to demonstrate
+the implementation and maintain responsiveness. 
+
 The time complexity of this algorithm is O(n^3)
 
 @details
@@ -38,42 +44,10 @@ the given adjacency matrix.
 */
 
 
-#include<iostream>//For IO Operations
-#include<cassert>
+#include<iostream> //For IO Operations
+#include<cassert> //For using assert()
 
-int Transitive_Closure(int Arr[10][10], int node);
-void Print_Matrix(int A[10][10], int n);
-static void test();
-int main()
-{
-    cout<<"\nInitializing tests...";
-    test();
-    int n, i, j, ans;
-    int Arr[10][10];
-    cout << "\nEnter number of nodes (at most 10): ";
-    cin >> n;
-    cout << "\nType 1 if yes and 0 if no to the following questions. ";
-    for(i=1; i<=n; i++) 
-    {
-      for(j=1; j<=n; j++)
-      {
-        cout<<"Is there a path from "<<i<<" to "<<j<<": ";
-        cin>>ans;
-        if(ans == 0)
-        {
-          Arr[i-1][j-1] = 0;
-        }
-        else if(ans == 1)
-        {
-          Arr[i-1][j-1] = 1;
-        }
-      }
-    }
-    cout<<"\nAdjacency matrix is: \n";
-    Print_Matrix(Arr, n);
-    Transitive_Closure(Arr, n);
-    return 0;
-}
+
 // Automating tests to check if the algorithm runs perfectly
 static void test()
 {
@@ -82,6 +56,7 @@ static void test()
   assert(Transitive_Closure(Arr1, 4) == 263);
   cout<<"\nTest 1 completed";
 
+  //Test 2
   int Arr2[10][10] = {{0, 0, 1, 0}, {1, 0, 0, 1}, {0, 0, 0, 0}, {0, 1, 0, 0}};
   assert(Transitive_Closure(Arr2, 4) == 11565);
   cout<<"\nTest 2 completed";
@@ -150,6 +125,37 @@ void Print_Matrix(int A[10][10], int n)
   }
 }
 
+//Main function
+int main()
+{
+    cout<<"\nInitializing tests...";
+    test();
+    int n, i, j, ans;
+    int Arr[10][10];
+    cout << "\nEnter number of nodes (at most 10): ";
+    cin >> n;
+    cout << "\nType 1 if yes and 0 if no to the following questions. ";
+    for(i=1; i<=n; i++) 
+    {
+      for(j=1; j<=n; j++)
+      {
+        cout<<"Is there a path from "<<i<<" to "<<j<<": ";
+        cin>>ans;
+        if(ans == 0)
+        {
+          Arr[i-1][j-1] = 0;
+        }
+        else if(ans == 1)
+        {
+          Arr[i-1][j-1] = 1;
+        }
+      }
+    }
+    cout<<"\nAdjacency matrix is: \n";
+    Print_Matrix(Arr, n);
+    Transitive_Closure(Arr, n);
+    return 0;
+}
 
 /* Example Output:
 
