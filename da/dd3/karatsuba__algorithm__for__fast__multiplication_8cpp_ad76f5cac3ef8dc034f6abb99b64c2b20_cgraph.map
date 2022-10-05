@@ -1,7 +1,6 @@
-<map id="divide_and_conquer::karatsuba_algorithm::addStrings" name="divide_and_conquer::karatsuba_algorithm::addStrings">
-<area shape="rect" id="node1" title="Helper function for the main function, that implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,65,152,120"/>
+<map id="divide_and_conquer::karatsuba_algorithm::add_strings" name="divide_and_conquer::karatsuba_algorithm::add_strings">
+<area shape="rect" id="node1" title="Binary addition." alt="" coords="5,40,152,95"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="207,5,305,31"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="219,55,293,80"/>
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="200,104,312,129"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="207,153,305,179"/>
 </map>

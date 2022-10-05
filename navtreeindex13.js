@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"functions_k.html":[10,3,0,10],
 "functions_l.html":[10,3,0,11],
 "functions_m.html":[10,3,0,12],
 "functions_n.html":[10,3,0,13],
@@ -69,8 +70,8 @@ var NAVTREEINDEX13 =
 "globals_w.html":[11,1,0,21],
 "globals_z.html":[11,1,0,22],
 "hierarchy.html":[10,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md100":[0,0],
 "index.html#autotoc_md101":[0,1],
 "index.html#autotoc_md102":[0,2],
