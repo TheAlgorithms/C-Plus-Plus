@@ -25,7 +25,7 @@ namespace divide_and_conquer {
 /**
  * @namespace karatsuba_algorithm
  * @brief Functions for the [Karatsuba algorithm for fast
- * multiplication](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
+ * multiplication](https://en.wikipedia.org/wiki/Karatsuba_algorithm) implementation
  */
 namespace karatsuba_algorithm {
 /**
@@ -43,25 +43,29 @@ std::string add_strings(std::string first, std::string second) {
     std::string zero = "0";
     if (len1 < len2) {
         for (int64_t i = 0; i < len2 - len1; i++) {
-            first = zero + first;
+            zero += first;
+            first = zero;
+            zero = "0"; // Prevents CI from failing
         }
     } else if (len1 > len2) {
         for (int64_t i = 0; i < len1 - len2; i++) {
-            second = zero + second;
+            zero += second;
+            second = zero;
+            zero = "0"; // Prevents CI from failing
         }
     }
 
     int64_t length = std::max(len1, len2);
-    char carry = 0;
+    int64_t carry = 0;
     for (int64_t i = length - 1; i >= 0; i--) {
         int64_t firstBit = first.at(i) - '0';
         int64_t secondBit = second.at(i) - '0';
 
-        char sum = (firstBit ^ secondBit ^ carry) + '0';  // sum of 3 bits
+        int64_t sum = (char(firstBit ^ secondBit ^ carry)) + '0';  // sum of 3 bits
         result.insert(result.begin(), sum);
 
-        carry = (firstBit & secondBit) | (secondBit & carry) |
-                (firstBit & carry);  // sum of 3 bits
+        carry = char((firstBit & secondBit) | (secondBit & carry) |
+                (firstBit & carry));  // sum of 3 bits
     }
 
     if (carry) {
@@ -69,6 +73,7 @@ std::string add_strings(std::string first, std::string second) {
     }
     return result;
 }
+
 /**
  * @brief Wrapper function for substr that considers leading zeros.
  * @param str, the binary input string.
@@ -78,7 +83,7 @@ std::string add_strings(std::string first, std::string second) {
  * @returns the "safe" substring for the algorithm *without* leading zeros
  * @returns "0" if substring spans to leading zeros only
  */
-std::string safe_substr(std::string str, int64_t x1, int64_t x2, int64_t n) {
+std::string safe_substr(const std::string &str, int64_t x1, int64_t x2, int64_t n) {
     int64_t len = str.size();
 
     if (len >= n) {
@@ -96,11 +101,12 @@ std::string safe_substr(std::string str, int64_t x1, int64_t x2, int64_t n) {
         return str.substr(y1, x2);
     }
 }
+
 /**
  * @brief The main function implements Karatsuba's algorithm for fast
  * multiplication
- * @param str1, the input string 1
- * @param str2, the input string 2
+ * @param str1 the input string 1
+ * @param str2 the input string 2
  * @returns the product number value
  */
 int64_t karatsuba_algorithm(std::string str1, std::string str2) {
