@@ -1,0 +1,71 @@
+class Solution {
+    
+    int memSolve2(vector<int>& days, vector<int>& cost, vector<int> &dp, int index=0){
+        if(index>=days.size()) return 0;
+        
+        if(dp[index]!=-1) return dp[index];
+        
+        int one=cost[0]+memSolve2(days, cost, dp, index+1);
+        int i;        
+        for(i=index; i<days.size() && days[i]<days[index]+7; i++);
+        int two=cost[1]+memSolve2(days, cost, dp, i);
+        
+        for(i=index; i<days.size() && days[i]<days[index]+30; i++);
+        int three=cost[2]+memSolve2(days, cost, dp, i);
+        
+        return dp[index]=min(min(one,two),three);
+            
+    }
+    
+    int tabSolve(vector<int>& days, vector<int>& cost){
+        
+        vector<int> dp(days.size()+1, INT_MAX - *max_element(cost.begin(), cost.end()));
+        dp[days.size()]=0;
+        
+        for(int j=days.size()-1; j>=0; j--){
+            
+        int one=cost[0]+dp[j+1];
+        int i;        
+        for(i=j; i<days.size() && days[i]<days[j]+7; i++);
+        int two=cost[1]+dp[i];
+        
+        for(i=j; i<days.size() && days[i]<days[j]+30; i++);
+        int three=cost[2]+dp[i];
+            
+        dp[j]=min(min(one,two),three);
+        }
+        
+        return dp[0];
+    }
+    
+    int opti(vector<int>& days, vector<int>& cost){
+        
+        queue< pair<int,int> > month;
+        queue< pair<int,int> > week;
+        int ans=0;
+        
+        for( int day : days ){
+            while( !month.empty() && month.front().first+30 <= day ) month.pop();
+            
+            while( !week.empty() && week.front().first+7 <= day ) week.pop();
+            
+            week.push(make_pair(day, ans+cost[1]));
+            month.push(make_pair(day, ans+cost[2]));
+            
+            ans=min(min(week.front().second, month.front().second), ans+cost[0]);            
+        }
+        
+        return ans;
+        
+    }
+    
+public:
+    int mincostTickets(vector<int>& days, vector<int>& costs) {
+        return opti(days, costs);
+        
+        return tabSolve(days, costs);
+        
+        vector<int> dp(days.size(), -1);
+        return memSolve2(days, costs, dp, 0);
+    }
+};
