@@ -53,7 +53,7 @@
 /** Automating tests to check if the algorithm runs perfectlyperfectly
 * for two test cases
 * @return None
-
+*/
 static void test()
 {
   //Test 1
