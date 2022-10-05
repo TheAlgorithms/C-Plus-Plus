@@ -1,0 +1,40 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(int i , int arr[],int sum,int target ,vector<int>ans,int n)
+{
+   if(i>=n) 
+   {
+       if(sum==target)
+       {
+           for(auto it : ans) 
+           {
+               cout<<it<<" ";
+              
+           }
+            cout<<endl;
+         
+       }
+         return;
+   }
+   ans.push_back(arr[i]);
+   sum+=arr[i];
+   solve(i+1,arr,sum,target ,ans,n);
+   sum-=arr[i];
+   ans.pop_back();
+   
+   solve(i+1,arr,sum,target ,ans,n);
+}
+
+
+
+int main() {
+
+int arr[]={1,2,1};
+int n =3;
+int target=2;
+vector<int>ans;
+
+solve(0,arr,0,target ,ans,n);
+}
