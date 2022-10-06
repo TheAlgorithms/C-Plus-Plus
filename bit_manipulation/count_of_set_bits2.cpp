@@ -10,7 +10,6 @@
  */
 
 #include <cassert>   /// for assert
-#include <stdio.h>   //stdio.h is a header file which has the necessary information to include the input/output related functions in our program.
 #include <iostream>
 /**
  * @namespace bit_manipulation
@@ -40,6 +39,11 @@ std::uint64_t countSetBits(
 }  // namespace no_of_set_bits
 }  // namespace bit_manipulation
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+
 static void test() {
     // n = 1 return 1
     assert(bit_manipulation::no_of_set_bits::countSetBits(1) == 1);
@@ -59,11 +63,14 @@ static void test() {
     assert(bit_manipulation::no_of_set_bits::countSetBits(32) == 1);
     std::cout << "Test cases passed successfully" << std::endl;
 }
+
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
+    std::cout << std::endl;
     return 0;
+ 
 }
