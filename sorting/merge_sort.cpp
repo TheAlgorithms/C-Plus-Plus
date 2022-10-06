@@ -134,6 +134,17 @@ static void test() {
         std::cout << arr3[i] << ", ";
     }
     std::cout << std::endl;
+
+    // test case 4
+    int arr4[] = {20, 11, 29, 60, 0, 55, 47, 80, 96, 98};
+    int size4 = sizeof(arr4) / sizeof(arr4[0]);
+    sorting::mergesort::mergeSort(arr4, 0, size4 - 1);
+    std::cout << "Passed\n";
+    sorting::mergesort::mergeSort(arr4, 0, size4 - 1);
+    for (int i = 0; i < size4; i++) {
+        std::cout << arr4[i] << ", ";
+    }
+    std::cout << std::endl;
 }
 
 /** Main function */
