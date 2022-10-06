@@ -44,7 +44,8 @@ void fillBadChar(int badChar[], int m, string pat) {
 }
 
 /**
- * Boyer Moore algorithm to find a pattern in a text
+ * @brief Boyer Moore algorithm to find a pattern in a text.
+ * It will print where the pattern has been found.
  * \param[in] text text in which to search
  * \param[in] pattern string pattern to search
  * print where pattern found 
