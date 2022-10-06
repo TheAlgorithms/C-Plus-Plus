@@ -1,105 +1,82 @@
-/**
- *  \addtogroup sorting Sorting Algorithms
- *  @{
- *  \file
- *  \brief [Merege Sort Algorithm
- *  (MEREGE SORT)](https://en.wikipedia.org/wiki/Merge_sort) implementation
- *
- *  \author [Ayaan Khan](http://github.com/ayaankhan98)
- *
- *  \details
- *  Merge Sort is an efficient, general purpose, comparison
- *  based sorting algorithm.
- *  Merge Sort is a divide and conquer algorithm
- *
- */
-#include <iostream>
+#include <bits/stdc++.h>
+#define vi vector<int>
+using namespace std;
+void merge(vi &v,int e,int b,int a,int c,int r)
+{
+    vi v1,v2,v3,v4;
+    for(int i=0;i<b-e+1;i++)
+    v1.push_back(v[e+i]);
+    for(int j=0;j<a-b;j++)
+    v2.push_back(v[b+j+1]);
+    for(int j=0;j<c-a;j++)
+    v3.push_back(v[j+a+1]);
+    for(int j=0;j<r-c;j++)
+    v4.push_back(v[c+j+1]);
 
-/**
- *
- * The merge() function is used for merging two halves.
- * The merge(arr, l, m, r) is key process that assumes that
- * arr[l..m] and arr[m+1..r] are sorted and merges the two
- * sorted sub-arrays into one.
- *
- * @param arr - array with two halves arr[l...m] and arr[m+1...l]
- * @param l - left index or start index of first half array
- * @param m - right index or end index of first half array
- *
- * (The second array starts form m+1 and goes till l)
- *
- * @param r - end index or right index of second half array
- */
-void merge(int *arr, int l, int m, int r) {
-    int i, j, k;
-    int n1 = m - l + 1;
-    int n2 = r - m;
 
-    int *L = new int[n1], *R = new int[n2];
+    v1.push_back(INT_MAX);
+    v2.push_back(INT_MAX);
+    v3.push_back(INT_MAX);
+    v4.push_back(INT_MAX);
 
-    for (i = 0; i < n1; i++) L[i] = arr[l + i];
-    for (j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
-
-    i = 0;
-    j = 0;
-    k = l;
-    while (i < n1 || j < n2) {
-        if (j >= n2 || (i < n1 && L[i] <= R[j])) {
-            arr[k] = L[i];
-            i++;
-        } else {
-            arr[k] = R[j];
-            j++;
-        }
+    int i=0,j=0,k=0,l=0;
+    vector<int> x;
+    while(i<v1.size() && j<v2.size() && k<v3.size() && l<v4.size())
+    {
+        if(v1[i]==INT_MAX && v2[j]==INT_MAX && v3[k]==INT_MAX  && v4[l]==INT_MAX)
+        break;
+        else if(v1[i]<v2[j] && v1[i]<v3[k] && v1[i]<v4[l])
+       { x.push_back(v1[i]);
+i++;
+       }
+        else if(v1[i]>v2[j] && v2[j]<v3[k] && v2[j]<v4[l])
+      {  x.push_back(v2[j]);
+j++;
+      }
+      else if(v1[i]>v3[k] && v2[j]>v3[k] && v4[l]>v3[k])
+      {
+        x.push_back(v3[k]);
         k++;
+
+      }
+      else
+      {
+        x.push_back(v4[l]);
+        l++;
+      }
+
     }
+  
+   for(int i=0;i<x.size();i++)
+   {
+    v[e+i]=x[i];
 
-    delete[] L;
-    delete[] R;
+   }
 }
+void mergesort(vi &v,int l,int h)
+{
+    if(l<h)
+    {
+        int a=(l+h)/2;
+        int b=(a+l)/2;
+        int c=(a+h)/2;
 
-/**
- * Merge sort is a divide and conquer algorithm, it divides the
- * input array into two halves and calls itself for the two halves
- * and then calls merge() to merge the two halves
- *
- * @param arr - array to be sorted
- * @param l - left index or start index of array
- * @param r - right index or end index of array
- *
- */
-void mergeSort(int *arr, int l, int r) {
-    if (l < r) {
-        int m = l + (r - l) / 2;
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-        merge(arr, l, m, r);
+       
+        mergesort(v,l,b);
+        mergesort(v,b+1,a);
+        mergesort(v,a+1,c);
+        mergesort(v,c+1,h);
+        merge(v,l,b,a,c,h);
+
     }
 }
+int main(int argc, char const *argv[])
+{
 
-/**
- * Utility function used to print the array after
- * sorting
- */
-void show(int *arr, int size) {
-    for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
-    std::cout << "\n";
-}
+vector<int> v={23,1,100,987,-100,0,56};
+mergesort(v,0,v.size()-1);
+for(int i=0;i<v.size();i++)
+cout<<v[i]<<" ";
 
-/** Main function */
-int main() {
-    int size;
-    std::cout << "Enter the number of elements : ";
-    std::cin >> size;
-    int *arr = new int[size];
-    std::cout << "Enter the unsorted elements : ";
-    for (int i = 0; i < size; ++i) {
-        std::cin >> arr[i];
-    }
-    mergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array : ";
-    show(arr, size);
-    delete[] arr;
     return 0;
 }
-/** @} */
