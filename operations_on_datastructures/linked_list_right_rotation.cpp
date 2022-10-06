@@ -178,7 +178,7 @@ namespace operations_on_datastructures
         std::cout << "\n";
     }
 
-} ///< operation_on_datastructures
+}  // namespace operation_on_datastructures
 
 /**
  * @brief Main function
