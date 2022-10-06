@@ -15,7 +15,7 @@
 
 ## Overview
 
-This repository is a collection of open-source implementation of a variety of algorithms implemented in C++ and licensed under [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE). These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations and the associated documentation are meant to provide a learning resource for educators and students. Hence, one may find more than one implementation for the same objective but using a different algorithm strategies and optimizations.
+This repository is a collection of open-source implementation of a variety of algorithms implemented in [C++](https://www.interviewbit.com/cpp-interview-questions/) and licensed under [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE). These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations and the associated documentation are meant to provide a learning resource for educators and students. Hence, one may find more than one implementation for the same objective but using a different algorithm strategies and optimizations.
 
 ## Features
 
