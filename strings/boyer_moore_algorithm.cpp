@@ -84,7 +84,10 @@ void boyer_moore(string txt, string pat) {
     }
 }
 
-/* Main Function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     string txt = "AABAACAADAABAABA";
     string pat = "AABA";
