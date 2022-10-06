@@ -48,7 +48,7 @@ void fillBadChar(int badChar[], int m, string pat) {
  * It will print where the pattern has been found.
  * \param[in] text text in which to search
  * \param[in] pattern string pattern to search
- * print where pattern found 
+ * @returns void
  */
 
 void boyer_moore(string txt, string pat) {
