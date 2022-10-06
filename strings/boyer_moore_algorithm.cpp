@@ -18,7 +18,7 @@
 
 #include <iostream>
 #ifdef _MSC_VER
-#include <string>  // use this for MS Visual C++
+#include <string>  /// use this for MS Visual C++
 #else
 #include <cstring>
 #endif
