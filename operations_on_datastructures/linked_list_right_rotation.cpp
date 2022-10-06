@@ -6,8 +6,8 @@
  **/
 
 #include <cassert> /// for assert
-#include <iostream>
-#include <memory>
+#include <iostream> /// for IO operations
+#include <memory> /// for dynamic memory allocator
 
 /**
  * @namespace operations_on_datastructures
