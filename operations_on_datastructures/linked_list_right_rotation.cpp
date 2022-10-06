@@ -9,6 +9,10 @@
 #include <iostream>
 #include <memory>
 
+/**
+ * @namespace operations_on_datastructures
+ * @brief Operations on Data Structures
+ */
 namespace operations_on_datastructures
 {
 
