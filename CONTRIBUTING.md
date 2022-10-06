@@ -2,7 +2,7 @@
 
 ## Before contributing
 
-Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose) or ask in our [Discord server](https://discord.gg/c7MnfGFGa6), and clearly state your concerns.
+Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)! Before submitting pull requests, please make sure that you have **read the whole guidelines**. If you have any doubts about this contribution guide, please open [an issue](https://github.com/TheAlgorithms/C-Plus-Plus/issues/new/choose) or ask on our [Discord server](https://discord.gg/c7MnfGFGa6), and clearly state your concerns.
 
 ## Contributing
 
@@ -15,13 +15,13 @@ Welcome to [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-P
 Being a contributor at The Algorithms, we request you to follow the points mentioned below:
 
 - You did your own work.
-  - No plagiarism allowed. Any plagiarized work will not be merged.
-- Your work will be distributed under the [MIT License](https://github.com/TheAlgoritms/C-Plus-Plus/blob/master/LICENSE) once your pull request has been merged.
+  - No plagiarism is allowed. Any plagiarized work will not be merged.
+- Your work will be distributed under the [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE) once your pull request has been merged.
 - Please follow the repository guidelines and standards mentioned below.
 
 **New implementation** New implementations are welcome!
 
-You can add new algorithms or data structures which are **not present in the repository** or that can **improve** the old implementations (**documentation**, **improving test cases**, removing bugs or in any other resonable sense)
+You can add new algorithms or data structures that are **not present in the repository** or that can **improve** the old implementations (**documentation**, **improving test cases**, removing bugs, or in any other reasonable sense)
 
 **Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm. This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request, and it will be evaluated by project maintainers.
 
@@ -30,15 +30,15 @@ You can add new algorithms or data structures which are **not present in the rep
 #### Code
 
 - Please use the directory structure of the repository.
-- Make sure the file extensions should be `*.hpp`, `*.h` or `*.cpp`.
+- Make sure the file extensions are `*.hpp`, `*.h` or `*.cpp`.
 - Don't use **`bits/stdc++.h`** because this is quite Linux-specific and slows down the compilation process.
 - Organize your code using **`struct`**, **`class`**, and/or **`namespace`** keywords.
 - If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
-- Our automated testing runs [__CMake__](https://cmake.org/) on all the pull requests, so please be sure that your code passes before submitting.
-- Please conform to [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standard and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
+- Our automated testing runs [**CMake**](https://cmake.org/) on all the pull requests, so please be sure that your code passes before submitting.
+- Please conform to [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and document the code as much as possible. This not only facilitates the readers but also generates the correct info on the website.
 - **Be consistent in the use of these guidelines.**
 
 #### Documentation
@@ -60,7 +60,8 @@ You can add new algorithms or data structures which are **not present in the rep
 ```cpp
 /**
  * @file
- * @brief Add one line description here
+ * @brief Add one line description here. Should contain a Wikipedia
+ * link or another source explaining the algorithm/implementation.
  * @details
  * This is a multi-line
  * description containing links, references,
@@ -73,7 +74,8 @@ You can add new algorithms or data structures which are **not present in the rep
 #include             /// for `some function here`
 
 /**
- * @namespace <check from other files in this repo>
+ * @namespace <folder name>
+ * @brief <namespace description>
  */
 namespace name {
 
@@ -82,11 +84,11 @@ namespace name {
  */
 class class_name {
  private:
-    int variable;  ///< short info of this variable
+    int variable;   ///< short info of this variable
     char *message;  ///< short info
 
  public:
-    // other members also documented as below
+    // other members should be also documented as below
 }
 
 /**
@@ -106,7 +108,7 @@ bool func(int param1, T param2) {
 
     return true;
 }
-} // namespace name
+}  // namespace name
 
 /**
  * @brief Self-test implementations
@@ -144,7 +146,7 @@ my_new_cpp_class.cpp    is correct format
 
 - It will be used to dynamically create a directory of files and implementation.
 - File name validation will run on Docker to ensure validity.
-- If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if `median_search.cpp` already exists in the `search` folder, and you are contributing a new implementation, the filename should be `median_search2.cpp` and for a third implementation, `median_search3.cpp`.
+- If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if `median_search.cpp` already exists in the `search` folder, and you are contributing a new implementation, the filename should be `median_search2.cpp`. For a third implementation, `median_search3.cpp`, and so on.
 
 #### New Directory guidelines
 
@@ -175,7 +177,8 @@ Examples of commit messages with semantic prefixes:
 fix: xyz algorithm bug
 feat: add xyx algorithm, class xyz
 test: add test for xyz algorithm
-docs: add comments and explanation to xyz algorithm
+docs: add comments and explanation to xyz algorithm/improve contributing guidelines
+chore: update Gitpod badge
 ```
 
 Common prefixes:
@@ -184,6 +187,7 @@ Common prefixes:
 - feat: A new feature
 - docs: Documentation changes
 - test: Correct existing tests or add new ones
+- chore: Miscellaneous changes that do not match any of the above.
 
 ### Pull Requests
 
@@ -208,7 +212,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 
 #### Code Formatter
 
-[`__clang-format__`](https://clang.llvm.org/docs/ClangFormat.html) is used for code forrmating.
+[`clang-format`](https://clang.llvm.org/docs/ClangFormat.html) is used for code formatting.
 
 - Installation (only needs to be installed once.)
   - Mac (using home-brew): `brew install clang-format`
