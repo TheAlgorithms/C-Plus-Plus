@@ -9,7 +9,7 @@
  * @see related_file.cpp, another_file.cpp
  */
 
-#include <cassert>   /// for assert
+#include <cassert>  /// for assert
 #include <iostream>
 /**
  * @namespace bit_manipulation
@@ -72,5 +72,4 @@ int main() {
     test();  // run self-test implementations
     std::cout << std::endl;
     return 0;
- 
 }
