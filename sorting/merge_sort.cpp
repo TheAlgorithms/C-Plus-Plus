@@ -13,7 +13,8 @@
  *  Merge Sort is a divide and conquer algorithm
  *
  */
-#include <iostream>
+#include <cassert>   ///for assert
+#include <iostream>  ///for input-output operations
 
 /**
  *
@@ -30,7 +31,11 @@
  *
  * @param r - end index or right index of second half array
  */
-void merge(int *arr, int l, int m, int r) {
+
+namespace sorting {
+namespace mergesort {
+
+int *merge(int *arr, int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -56,6 +61,7 @@ void merge(int *arr, int l, int m, int r) {
 
     delete[] L;
     delete[] R;
+    return arr;
 }
 
 /**
@@ -68,13 +74,14 @@ void merge(int *arr, int l, int m, int r) {
  * @param r - right index or end index of array
  *
  */
-void mergeSort(int *arr, int l, int r) {
+int *mergeSort(int *arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
         mergeSort(arr, m + 1, r);
-        merge(arr, l, m, r);
+        arr = merge(arr, l, m, r);
     }
+    return arr;
 }
 
 /**
@@ -86,20 +93,72 @@ void show(int *arr, int size) {
     std::cout << "\n";
 }
 
+}  // namespace mergesort
+
+}  // namespace sorting
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    // test case 1
+    int arr1[] = {10, 5, 9, 1, 29, 4, 15};
+    int size1 = sizeof(arr1) / sizeof(arr1[0]);
+    sorting::mergesort::mergeSort(arr1, 0, size1 - 1);
+    std::cout << "Passed\n";
+    sorting::mergesort::mergeSort(arr1, 0, size1 - 1);
+    for (int i = 0; i < size1; i++) {
+        std::cout << arr1[i] << ", ";
+    }
+    std::cout << std::endl;
+
+    // test case 2
+    int arr2[] = {69, 100, 24, 32, 78, 1, 55, 63, 30};
+    int size2 = sizeof(arr2) / sizeof(arr2[0]);
+    sorting::mergesort::mergeSort(arr2, 0, size2 - 1);
+    std::cout << "Passed\n";
+    sorting::mergesort::mergeSort(arr2, 0, size2 - 1);
+    for (int i = 0; i < size2; i++) {
+        std::cout << arr2[i] << ", ";
+    }
+    std::cout << std::endl;
+
+    // test case 3
+    int arr3[] = {20, 11, 29, 60, 0, 55, 47, 80, 96, 98};
+    int size3 = sizeof(arr3) / sizeof(arr3[0]);
+    sorting::mergesort::mergeSort(arr3, 0, size3 - 1);
+    std::cout << "Passed\n";
+    sorting::mergesort::mergeSort(arr3, 0, size3 - 1);
+    for (int i = 0; i < size3; i++) {
+        std::cout << arr3[i] << ", ";
+    }
+    std::cout << std::endl;
+}
+
 /** Main function */
 int main() {
-    int size;
-    std::cout << "Enter the number of elements : ";
-    std::cin >> size;
-    int *arr = new int[size];
-    std::cout << "Enter the unsorted elements : ";
-    for (int i = 0; i < size; ++i) {
-        std::cin >> arr[i];
+    int x;
+    std::cout << "Enter your mode of operation : (1) Interactive Mode (2) "
+                 "Self Test Mode \n";
+    std::cin >> x;
+    if (x == 1) {
+        int size;
+        std::cout << "Enter the number of elements : ";
+        std::cin >> size;
+        int *arr = new int[size];
+        std::cout << "Enter the unsorted elements : ";
+        for (int i = 0; i < size; ++i) {
+            std::cin >> arr[i];
+        }
+        sorting::mergesort::mergeSort(arr, 0, size - 1);
+        std::cout << "Sorted array : ";
+        sorting::mergesort::show(arr, size);
+        delete[] arr;
+    } else {
+        test();
     }
-    mergeSort(arr, 0, size - 1);
-    std::cout << "Sorted array : ";
-    show(arr, size);
-    delete[] arr;
+
     return 0;
 }
 /** @} */
