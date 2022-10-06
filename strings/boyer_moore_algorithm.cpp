@@ -24,7 +24,7 @@
 #endif
 using namespace std;
 
-constexpr int BAD 256;
+#define BAD 256
 
 
 /**
