@@ -1,19 +1,30 @@
+/*
+  @author [Rajat Garg](https://github.com/Rajat379)
+  @file
 
-#include <bits/stdc++.h>
-using namespace std;
+  Implementation of a vertex cover in a graph.
+*/
 
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <list>
+
+namespace {
 class Graph {
     int V;
-    list<int> *adj;  // Pointer to an array containing adjacency lists
+    std::list<int> *adj;  // Pointer to an array containing adjacency lists
  public:
     Graph(int V);
     void addEdge(int v, int w);  // function to add an edge to graph
     void printVertexCover();     // prints vertex cover
 };
 
+}  // namespace
+
 Graph::Graph(int V) {
     this->V = V;
-    adj = new list<int>[V];
+    adj = new std::list<int>[V];
 }
 
 void Graph::addEdge(int v, int w) {
@@ -27,7 +38,7 @@ void Graph::printVertexCover() {
     bool visited[V];
     for (int i = 0; i < V; i++) visited[i] = false;
 
-    list<int>::iterator i;
+    std::list<int>::iterator i;
 
     for (int u = 0; u < V; u++) {
         // An edge is only picked when both visited[u] and visited[v]
@@ -50,7 +61,7 @@ void Graph::printVertexCover() {
     // Print the vertex cover
     for (int i = 0; i < V; i++)
         if (visited[i])
-            cout << i << " ";
+            std::cout << i << " ";
 }
 
 int main() {
@@ -62,7 +73,11 @@ int main() {
     g.addEdge(4, 5);
     g.addEdge(5, 6);
 
+    // Created a graph with 7 nodes
+    // Established the vertices amongst them
     g.printVertexCover();
+
+    // Final ouput - 0 1 3 4 5 6
 
     return 0;
 }
