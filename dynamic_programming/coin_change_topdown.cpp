@@ -49,9 +49,6 @@ int64_t mincoins(const T &n, const std::vector<T> &coins, const int16_t &t,
     if (n == 0) {
         return 0;
     }
-    if (dp[n] != 0) {
-        return dp[n];
-    }
     int ans = INT_MAX;  // variable to store min coins
     for (int i = 0; i < t; i++) {
         if (n - coins[i] >= 0) {  // if after subtracting the current
