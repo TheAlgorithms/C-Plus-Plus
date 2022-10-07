@@ -17,15 +17,16 @@
  */
 
 #include <iostream>
+#include<cassert> // for assert
+#include<vector> // for std::vector
 #ifdef _MSC_VER
 #include <string>  /// use this for MS Visual C++
 #else
-#include <cstring>
+#include <cstring> // for string
 #endif
-using namespace std;
 
-#define BAD 256
 
+constexpr int BAD = 256;
 
 /**
  * Filling Bad Char Heuristic
@@ -35,7 +36,7 @@ using namespace std;
  * void function fill badChar array
  */
 
-void fillBadChar(int badChar[], int m, string pat) {
+void fillBadChar(int badChar[], int m, std::string pat) {
     // First fill it with -1
     for (int i = 0; i < BAD; i++) badChar[i] = -1;
 
@@ -45,18 +46,18 @@ void fillBadChar(int badChar[], int m, string pat) {
 
 /**
  * @brief Boyer Moore algorithm to find a pattern in a text.
- * It will print where the pattern has been found.
  * \param[in] text text in which to search
  * \param[in] pattern string pattern to search
- * @returns void
+ * @returns vector of indexes where found
  */
 
-void boyer_moore(string txt, string pat) {
+std::vector<int> boyer_moore(std::string txt, std::string pat) {
     int n = txt.length();  
     int m = pat.length();  
 
     int badChar[BAD];
-   
+    std::vector<int> ans;
+
     fillBadChar(badChar, m, pat);
 
     int s = 0;  
@@ -68,7 +69,7 @@ void boyer_moore(string txt, string pat) {
             j--;
 
         if (j < 0) {  // If all char are matched then j is less than 0
-            cout << "Pattern found at " << s << endl;  
+            ans.push_back(s);  
 
             /* Shift the pattern so that the next character in text aligns
             with the last occurrence of it in pattern. The condition s+m < n
@@ -80,8 +81,27 @@ void boyer_moore(string txt, string pat) {
             make sure that we get a positive shift. We may get a negative shift
             if the last occurrence of bad character in pattern is on the right
             side of the current character. */
-            s += max(1, j - badChar[txt[s + j]]);
+            s += std::max(1, j - badChar[txt[s + j]]);
     }
+    return ans;
+}
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test(){
+    std::string txt = "AABAACAADAABAABA";
+    std::string pat = "AABA";
+
+    std::vector<int> ans = boyer_moore(txt, pat);
+    assert((ans == std::vector<int>{0,9,12}));
+    
+    std::string txt2 = "ABAAABCD";
+    std::string pat2 = "ABC";
+
+    std::vector<int> ans2 = boyer_moore(txt2, pat2);
+    assert((ans2 == std::vector<int>{4}));
 }
 
 /**
@@ -89,23 +109,7 @@ void boyer_moore(string txt, string pat) {
  * @returns 0 on exit
  */
 int main() {
-    string txt = "AABAACAADAABAABA";
-    string pat = "AABA";
-
-    boyer_moore(txt, pat);
-
-    /* Output
-    * Pattern found at 0
-    * Pattern found at 9
-    * Pattern found at 12
-    */
-
-    /* Sample Test Case
-    * string txt = "ABAAABCD";
-    * string pat = "ABC";
-    * boyer_moore(txt, pat);
-    * // output -> Pattern found at 4
-    */
+    test(); // run self-teest implementation
 
     return 0;
 }
