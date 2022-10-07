@@ -148,7 +148,8 @@ static void test() {
     double double_height = NAN;    // double height input
     double double_expected = NAN;  // double expected output
     double double_area = NAN;      // double output
-
+    double double_base1 = NAN;    // double Base1 input
+    double double_base2 = NAN;     // double Base2 input
     // 1st test
     int_length = 5;
     int_expected = 25;
