@@ -19,12 +19,11 @@
  */
 
 
-#include <vector> /// std::vector
-#include <utility> /// std::pair
-#include <unordered_map> /// std::std::unordered_map
-#include <cmath> /// std::floor
-
-#include <string> /// tests
+#include <vector> /// for std::vector
+#include <utility> /// for std::pair
+#include <unordered_map> /// for std::unordered_map
+#include <cmath> /// for std::floor
+#include <string> /// for std::string
 #include <cassert>   /// for assert
 
 
