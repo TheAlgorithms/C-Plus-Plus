@@ -37,21 +37,21 @@ can't get the best status in the code we shared above. This happens on the
 optimized bubble sort algorithm. It's right down there.
 */
 
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
+using namespace std;
 
 int main() {
     int n;
     bool swap_check = true;
-    std::cout << "Enter the amount of numbers to sort: ";
-    std::cin >> n;
-    std::vector<int> numbers;
-    std::cout << "Enter " << n << " numbers: ";
+    cout << "Enter the amount of numbers to sort: ";
+    cin >> n;
+    vector<int> numbers;
+    cout << "Enter " << n << " numbers: ";
     int num;
 
     // Input
     for (int i = 0; i < n; i++) {
-        std::cin >> num;
+        cin >> num;
         numbers.push_back(num);
     }
 
@@ -61,7 +61,7 @@ int main() {
         for (int j = 0; j < n - 1 - i; j++) {
             if (numbers[j] > numbers[j + 1]) {
                 swap_check = true;
-                std::swap(numbers[j],
+                swap(numbers[j],
                           numbers[j + 1]);  // by changing swap location.
                                             // I mean, j. If the number is
                                             // greater than j + 1, then it
@@ -71,12 +71,12 @@ int main() {
     }
 
     // Output
-    std::cout << "\nSorted Array : ";
+    cout << "\nSorted Array : ";
     for (int i = 0; i < numbers.size(); i++) {
         if (i != numbers.size() - 1) {
-            std::cout << numbers[i] << ", ";
+            cout << numbers[i] << ", ";
         } else {
-            std::cout << numbers[i] << std::endl;
+            cout << numbers[i] << endl;
         }
     }
     return 0;
