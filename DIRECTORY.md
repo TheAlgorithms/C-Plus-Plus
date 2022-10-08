@@ -205,6 +205,7 @@
   * [Miller Rabin](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/miller_rabin.cpp)
   * [Modular Division](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_division.cpp)
   * [Modular Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
+  * [Modular Inverse Extended Euclidean Algorithm](https://github.com/akshatjai258/C-Plus-Plus/blob/master/math/modular_multiplicative_inverse_eucledian.cpp)
   * [Modular Inverse Fermat Little Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_fermat_little_theorem.cpp)
   * [Modular Inverse Simple](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_inverse_simple.cpp)
   * [N Bonacci](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/n_bonacci.cpp)
