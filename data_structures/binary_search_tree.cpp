@@ -99,12 +99,14 @@ void BFT(node *n) {
 }
 
 void Pre(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
+    std::cout << ->val<< "  ";
+    
+    if (n->left) {
         Pre(n->left);
+    }
+    if (n->right) {
         Pre(n->right);
     }
-}
 
 void In(node *n) {
     if (n != NULL) {
