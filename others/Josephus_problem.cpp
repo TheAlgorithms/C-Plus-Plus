@@ -43,7 +43,9 @@ void solve() {
 int main() {
     FIO;
 
-    // int t; cin>>t; while(t--)
+    // test case - 7
+    // output - 2 4 6 1 5 3 7
+
     solve();
 
     return 0;
