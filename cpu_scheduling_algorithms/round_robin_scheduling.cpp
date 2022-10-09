@@ -1,4 +1,5 @@
 #include <iomanip>
+#include <cassert>
 #include <string>
 #include <iostream>
 #include <queue>
@@ -17,30 +18,54 @@ struct ProcessResult : public Process {
     uint32_t turn_around_time;
     uint32_t waiting_time;
 
-    ProcessResult(const Process& process, uint32_t time_elapsed) : Process(process) {
-        completion_time = time_elapsed;
+    ProcessResult(const Process& process, uint32_t completion_time)
+        : Process(process), completion_time(completion_time) {
         turn_around_time = completion_time - arrival_time;
         waiting_time = turn_around_time - burst_time;
+    }
+    
+    bool operator==(const ProcessResult& p) const {
+        return id == p.id && arrival_time == p.arrival_time &&
+               burst_time == p.burst_time &&
+               completion_time == p.completion_time &&
+               turn_around_time == p.turn_around_time &&
+               waiting_time == p.waiting_time;
     }
 };
 
 std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
                                      uint32_t time_slice);
-
 std::ostream& operator<<(std::ostream& ostream,
                          const std::vector<ProcessResult>& results);
-
-int main() {
-    std::vector<Process> processes{{0, 3, 3}, {1, 8, 5}, {2, 5, 4}};
-    const uint32_t kTimeSlice{2};
-    std::vector<ProcessResult> results = RRExecute(processes, kTimeSlice);
-    std::cout << results;
-    std::getchar();
-    return 0;
-}
+void Test();
 
 bool CompareAT(const Process& p1, const Process& p2) {
     return p1.arrival_time < p2.arrival_time;
+}
+
+int main() {
+    Test();
+    return 0;
+}
+
+void Test() {
+    std::vector<Process> processes{
+        {0, 70, 3}, {1, 9, 2}, {2, 3, 39}, {3, 5, 29}, {4, 30, 90}};
+    const uint32_t kTimeSlice{3};
+    std::vector<ProcessResult> results = RRExecute(processes, kTimeSlice);
+
+    std::vector<uint32_t> completion_times({80, 14, 100, 82, 166});
+    std::vector<ProcessResult> correct_results;
+    for (size_t i = 0; i < processes.size(); i++) {
+        correct_results.emplace_back(processes[i], completion_times[i]);
+    }
+
+    std::sort(results.begin(), results.end(), CompareAT);
+    std::sort(correct_results.begin(), correct_results.end(), CompareAT);
+
+    std::cout << results;
+    assert(results == correct_results);
+    std::cout << "All test passed";
 }
 
 void CheckArriveProcess(const std::vector<Process>& processes,
@@ -90,6 +115,9 @@ std::ostream& operator<<(std::ostream& ostream,
         ostream << std::setw(17) << std::left << str;
     };
 
+    std::vector<ProcessResult> sorted = results;
+    std::sort(sorted.begin(), sorted.end(), CompareAT);
+
     PrintCell("Process ID");
     PrintCell("Arrival Time");
     PrintCell("Burst Time");
@@ -98,7 +126,7 @@ std::ostream& operator<<(std::ostream& ostream,
     PrintCell("Waiting Time");
     ostream << std::endl;
 
-    for (auto& p : results) {
+    for (auto& p : sorted) {
         PrintCell(std::to_string(p.id));
         PrintCell(std::to_string(p.arrival_time));
         PrintCell(std::to_string(p.burst_time));
