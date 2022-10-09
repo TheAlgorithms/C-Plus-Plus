@@ -16,7 +16,7 @@
  *     -> Pattern P moves past the mismatched character.
  */
 
-#include <iostream>
+#include <iostream> /// for IO operations
 #include<cassert> // for assert
 #include<vector> // for std::vector
 #ifdef _MSC_VER
