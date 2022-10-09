@@ -82,9 +82,15 @@ static void test() {
     std::cout << "passed" << std::endl;
 
     // 5th test
-    std::cout << "5th test ";
+    std::cout << "5th test";
     assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
                numberOfCiphersInFactorialN(0) == 0);
+    std::cout << "passed" << std::endl;
+
+    // 6th test
+    std::cout << "6th test";
+    assert(bit_manipulation::count_of_trailing_ciphers_in_factorial_n::
+               numberOfCiphersInFactorialN(414) == 101);
     std::cout << "passed" << std::endl;
 }
 
