@@ -150,16 +150,16 @@ void Test() {
 
 std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
                                      uint32_t time_slice) {
-    std::vector<Process> sorted_processes = processes;
-    std::sort(sorted_processes.begin(), sorted_processes.end(), CompareAT);
-
     std::queue<std::pair<Process, uint32_t>> schedule;
     std::set<uint32_t> arrived_processes;
+
     std::vector<ProcessResult> results;
     results.reserve(processes.size());
-    uint32_t time_elapsed = sorted_processes[0].arrival_time;
 
-    CheckArriveProcess(sorted_processes, arrived_processes, schedule,
+    uint32_t time_elapsed =
+        std::min_element(processes.begin(), processes.end(), CompareAT)->arrival_time;
+
+    CheckArriveProcess(processes, arrived_processes, schedule,
                        time_elapsed);
 
     while (!schedule.empty()) {
@@ -171,7 +171,7 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 		current.second -= elapsed;
 		time_elapsed += elapsed;
 
-		CheckArriveProcess(sorted_processes, arrived_processes, schedule,
+		CheckArriveProcess(processes, arrived_processes, schedule,
 						   time_elapsed);
 
         if (current.second > 0) {
