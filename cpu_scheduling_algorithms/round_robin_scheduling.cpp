@@ -65,6 +65,11 @@ struct ProcessResult : public Process {
 };
 
 /**
+ * Represent remaining burst time of a process.
+ */
+using BTLeft = uint32_t;
+
+/**
  * @brief Execute processes based on Round-robin algorithm.
  * 
  * \param processes Processes to be executed
@@ -115,7 +120,7 @@ bool CompareAT(const Process& p1, const Process& p2) {
  */
 void CheckArriveProcess(const std::vector<Process>& processes,
                         std::set<uint32_t>& arrived_process,
-                        std::queue<std::pair<Process, uint32_t>>& schedule,
+                        std::queue<std::pair<Process, BTLeft>>& schedule,
                         uint32_t time_elapsed);
 
 /**
@@ -134,12 +139,14 @@ void Test() {
     const uint32_t kTimeSlice{3};
     std::vector<ProcessResult> results = RRExecute(processes, kTimeSlice);
 
-    std::vector<uint32_t> completion_times({80, 14, 100, 82, 166});
+    std::vector<uint32_t> correct_completion_times({80, 14, 100, 82, 166});
     std::vector<ProcessResult> correct_results;
+    // Generate correct process results based on correct completion times
     for (size_t i = 0; i < processes.size(); i++) {
-        correct_results.emplace_back(processes[i], completion_times[i]);
+        correct_results.emplace_back(processes[i], correct_completion_times[i]);
     }
 
+    // Sort the results and correct results so they're exactly the same
     std::sort(results.begin(), results.end(), CompareAT);
     std::sort(correct_results.begin(), correct_results.end(), CompareAT);
 
@@ -150,12 +157,13 @@ void Test() {
 
 std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
                                      uint32_t time_slice) {
-    std::queue<std::pair<Process, uint32_t>> schedule;
+    std::queue<std::pair<Process, BTLeft>> schedule;
     std::set<uint32_t> arrived_processes;
 
     std::vector<ProcessResult> results;
     results.reserve(processes.size());
 
+    // The time of the first process execution will be the lowest process AT
     uint32_t time_elapsed =
         std::min_element(processes.begin(), processes.end(), CompareAT)->arrival_time;
 
@@ -163,9 +171,12 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
                        time_elapsed);
 
     while (!schedule.empty()) {
-        std::pair<Process, uint32_t> current = schedule.front();
+        std::pair<Process, BTLeft> current = schedule.front();
         schedule.pop();
 
+        // If process burst time < time slice, then the process will be
+        // executed for the burst time amount of time, not the time
+        // quantum/slice
         uint32_t elapsed =
             (current.second > time_slice) ? time_slice : current.second;
 		current.second -= elapsed;
@@ -178,6 +189,8 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 			schedule.push(current);
             continue;
         }
+        // Generate process result based on the completion time (time
+        // that has elapsed)
         results.emplace_back(current.first, time_elapsed);
     }
 
@@ -216,7 +229,7 @@ std::ostream& operator<<(std::ostream& ostream,
 
 void CheckArriveProcess(const std::vector<Process> &processes,
                         std::set<uint32_t>& arrived_process,
-                        std::queue<std::pair<Process, uint32_t>>& schedule,
+                        std::queue<std::pair<Process, BTLeft>>& schedule,
                         uint32_t time_elapsed) {
     for (auto& p : processes) {
         if (p.arrival_time > time_elapsed ||
