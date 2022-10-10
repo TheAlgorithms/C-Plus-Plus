@@ -9,14 +9,14 @@
  * @author [Daemon19](https://github.com/Daemon19)
  */
 
-#include <iomanip>
-#include <cassert>
-#include <string>
-#include <iostream>
-#include <queue>
-#include <set>
-#include <utility>
-#include <vector>
+#include <iomanip>  // For formatting process results output
+#include <cassert>  // For testing the round-robin algorithm
+#include <string>   // For converting int type to string
+#include <iostream> // For outputting process execution results
+#include <queue>    // Container for process execution turn
+#include <set>      // Container for processes that have arrived
+#include <utility>  // So I can use std::pair
+#include <vector>   // Container for processes that will be executed
 
 /**
  * @brief Represent a process to be executed.
