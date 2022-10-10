@@ -3,7 +3,7 @@
 // tested on : https://cses.fi/problemset/task/1145/
 
 #include <iostream>
-#include <set>
+
 using namespace std;
 int LIS(int arr[], int n) {
     set<int> active;  // The current built LIS.
@@ -29,8 +29,10 @@ int LIS(int arr[], int n) {
 }
 int main(int argc, char const* argv[]) {
     int n;
+    cout << "Enter size of array: ";
     cin >> n;
     int a[n];
+    cout << "Enter array elements: ";
     for (int i = 0; i < n; ++i) {
         cin >> a[i];
     }
