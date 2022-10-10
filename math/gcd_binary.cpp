@@ -30,9 +30,9 @@ int binary_gcd(int a, int b) {
 
 int main() {
     // Some testing code to verify results
-    std::cout << binary_gcd(10, 20) << "\n";
-    std::cout << binary_gcd(36, 20) << "\n";
-    std::cout << binary_gcd(98, 60) << "\n";
-    std::cout << binary_gcd(100, 40) << "\n";
+    std::cout << "binary_gcd(10, 20) = "  << binary_gcd(10, 20)<< "\n";
+    std::cout << "binary_gcd(36, 20) = " << binary_gcd(36, 20) << "\n";
+    std::cout << "binary_gcd(98, 60) = " << binary_gcd(98, 60) << "\n";
+    std::cout << "binary_gcd(100, 40) = " << binary_gcd(100, 40) << "\n";
     return 0;
 }
