@@ -1,12 +1,4 @@
 /**
- * @file
- * @brief [Graph Dijkstras Shortest Path Algorithm
- * (Dijkstra's Shortest Path)]
- * (https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
- *
- * @author [Ayaan Khan](http://github.com/ayaankhan98)
- *
- * @details
  * Dijkstra's Algorithm is used to find the shortest path from a source
  * vertex to all other reachable vertex in the graph.
  * The algorithm initially assumes all the nodes are unreachable from the
