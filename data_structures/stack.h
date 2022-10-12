@@ -70,7 +70,7 @@ class stack {
     }
 
  private:
-    void delete_all_nodes() {
+    void deleteAllNodes() {
         node<Type> *curNode = stackTop;
         while (curNode != nullptr) {
             const auto tmpNode = curNode->next;
@@ -82,7 +82,7 @@ class stack {
 
  public:
     /** Destructor */
-    ~stack() { delete_all_nodes(); }
+    ~stack() { deleteAllNodes(); }
 
     /** Determine whether the stack is empty */
     bool isEmptyStack() { return (stackTop == nullptr); }
@@ -118,7 +118,7 @@ class stack {
 
     /** Clear stack */
     void clear() {
-        delete_all_nodes();
+        deleteAllNodes();
         size = 0;
     }
 
@@ -126,7 +126,7 @@ class stack {
     stack<Type> &operator=(const stack<Type> &otherStack) {
         node<Type> *newNode, *current, *last;
 
-        delete_all_nodes();
+        deleteAllNodes();
         if (otherStack.stackTop == nullptr) {
             stackTop = nullptr;
         } else {
