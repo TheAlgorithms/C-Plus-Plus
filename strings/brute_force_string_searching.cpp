@@ -4,7 +4,7 @@
  */
 #include <iostream>
 #ifdef _MSC_VER
-#include <string>  // use this for MS Visucal C++
+#include <string>  // use this for MS Visual C++
 #else
 #include <cstring>
 #endif
@@ -45,13 +45,14 @@ const std::vector<std::vector<std::string>> test_set = {
 
 /** Main function */
 int main() {
-    for (size_t i = 0; i < test_set.size(); i++) {
-        int output = brute_force(test_set[i][0], test_set[i][1]);
+    for (const auto &i : test_set) {
+        int output = brute_force(i[0], i[1]);
 
-        if (std::to_string(output) == test_set[i][2])
+        if (std::to_string(output) == i[2]) {
             std::cout << "success\n";
-        else
+        } else {
             std::cout << "failure\n";
+        }
     }
     return 0;
 }

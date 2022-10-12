@@ -28,7 +28,7 @@
  *
  * (The second array starts form m+1 and goes till l)
  *
- * @param l - end index or right index of second half array
+ * @param r - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
     int i, j, k;
