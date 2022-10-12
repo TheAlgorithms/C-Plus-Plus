@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct node {
     int val;
@@ -78,10 +77,10 @@ bool detect_cycle_in_linked_list(node *p) {
 void show() {
     node *t = start;
     while (t != NULL) {
-        cout << t->val << " ";
+        std::cout << t->val << " ";
         t = t->next;
     }
-    cout << endl;
+    std::cout << "\n";
 }
 
 int main() {
@@ -92,9 +91,9 @@ int main() {
     insert(5, 0);
 
     if (detect_cycle_in_linked_list(start))
-        cout << "Cycle detected!" << endl;
+        std::cout << "Cycle detected!" << "\n";
     else
-        cout << "No cycle detected." << endl;
+       std::cout << "No cycle detected." << "\n";
 
     /**
     * Comment the above part and uncommnent the lines below to see how the
@@ -105,9 +104,9 @@ int main() {
     insert(4, -1);
     insert(5, 2);
     if (detect_cycle_in_linked_list(start))
-        cout << "Cycle detected!" << endl;
+        std::cout << "Cycle detected!" << "\n";
     else
-        cout << "No cycle detected." << endl;
+        std::cout << "No cycle detected." << "\n";
     */
 
     return 0;
