@@ -47,10 +47,6 @@ class stack {
     explicit stack(const stack<Type> &otherStack) {
         node<Type> *newNode, *current, *last;
 
-        /* If stack is no empty, make it empty */
-        if (stackTop != nullptr) {
-            stackTop = nullptr;
-        }
         if (otherStack.stackTop == nullptr) {
             stackTop = nullptr;
         } else {
@@ -73,8 +69,20 @@ class stack {
         size = otherStack.size;
     }
 
+ private:
+    void delete_all_nodes() {
+        node<Type> *curNode = stackTop;
+        while (curNode != nullptr) {
+            const auto tmpNode = curNode->next;
+            delete curNode;
+            curNode = tmpNode;
+        }
+        stackTop = nullptr;
+    }
+
+ public:
     /** Destructor */
-    ~stack() {}
+    ~stack() { delete_all_nodes(); }
 
     /** Determine whether the stack is empty */
     bool isEmptyStack() { return (stackTop == nullptr); }
@@ -109,16 +117,16 @@ class stack {
     }
 
     /** Clear stack */
-    void clear() { stackTop = nullptr; }
+    void clear() {
+        delete_all_nodes();
+        size = 0;
+    }
 
     /** Overload "=" the assignment operator */
     stack<Type> &operator=(const stack<Type> &otherStack) {
         node<Type> *newNode, *current, *last;
 
-        /* If stack is no empty, make it empty */
-        if (stackTop != nullptr) {
-            stackTop = nullptr;
-        }
+        delete_all_nodes();
         if (otherStack.stackTop == nullptr) {
             stackTop = nullptr;
         } else {
