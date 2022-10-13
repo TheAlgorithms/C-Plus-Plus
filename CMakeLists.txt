@@ -26,6 +26,7 @@ if(USE_OPENMP)
     endif()
 endif()
     
+add_subdirectory(cpu_scheduling_algorithms)
 add_subdirectory(math)
 add_subdirectory(others)
 add_subdirectory(search)
