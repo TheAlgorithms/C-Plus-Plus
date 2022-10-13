@@ -71,13 +71,11 @@ class stack {
 
  private:
     void deleteAllNodes() {
-        node<Type> *curNode = stackTop;
-        while (curNode != nullptr) {
-            const auto tmpNode = curNode->next;
-            delete curNode;
-            curNode = tmpNode;
+        while (stackTop != nullptr) {
+            const auto tmpNode = stackTop;
+            stackTop = stackTop->next;
+            delete tmpNode;
         }
-        stackTop = nullptr;
     }
 
  public:
