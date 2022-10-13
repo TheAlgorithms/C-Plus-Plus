@@ -178,5 +178,4 @@ int main()
 }
 
 // Time Complexity: T(N) = 7T(N/2) + O(N^2) => O(N^Log7)
-// which is approximately O(N^2.8074) Code Contributed By:
-// lucasletum
+// which is approximately O(N^2.8074) 
