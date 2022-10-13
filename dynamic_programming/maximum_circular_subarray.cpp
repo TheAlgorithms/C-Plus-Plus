@@ -1,8 +1,15 @@
-// C++ program for maximum contiguous circular sum problem
+/**
+* @file
+* @brief C++ program for maximum contiguous circular sum problem using Kadane's Algorithm [https://en.wikipedia.org/wiki/Maximum_subarray_problem]
+* @details
+* The idea is to modify Kadane’s algorithm to find a minimum contiguous subarray sum and the maximum contiguous subarray sum,
+* then check for the maximum value between the max_value and the value left after subtracting min_value from the total sum.
+* Geeks For Geeks link [https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/]
+*/
+
+#include <cassert>   
 #include <iostream>
-using namespace std;
-  
-// The function returns maximum circular contiguous sum in a[]
+using namespace std;  
 
 int maxCircularSum(int a[], int n)
 {
@@ -36,17 +43,27 @@ int maxCircularSum(int a[], int n)
     // returning the maximum value
     return max(max_so_far, sum - min_so_far);
 }
-  
-int main()
-{
-    int size;
-    cout << "Enter size of array: ";
-    cin >> size;
-    int a[size];
-    cout << "Enter the elements of the array: ";
-    for (int i = 0; i < size; i++) {
-      cin >> a[i];
-    }
-    cout << "Maximum circular sum is " << maxCircularSum(a, size) << endl;
-    return 0;
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    // description of the test
+    // Input: arr[] = {8, -8, 9, -9, 10, -11, 12}
+    // Output: 22 
+    // Explanation: Subarray 12, 8, -8, 9, -9, 10 gives the maximum sum, that is 22.
+
+    int n = 7; // size of the array
+    int arr[7] = {8, -8, 9, -9, 10, -11, 12}; 
+    assert(maxCircularSum(arr, n) == 22); // this ensures that the algorithm works as expected
+
+    int arrr[7] = {8, -8, 10, -9, 10, -11, 12};
+    assert(maxCircularSum(arrr, n) == 23);
+}
+
+
+int main(int argc, char *argv[]) {
+     test();  // run self-test implementations
+     return 0;
 }
