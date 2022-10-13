@@ -1,51 +1,47 @@
-//  A C++ Program to find the longest common prefix
-#include<bits/stdc++.h>
+// C++ program to find longest common prefix
+// of given array of words.
+#include<iostream>
+#include<algorithm>
+
 using namespace std;
 
-// A Utility Function to find the common prefix between
-// strings- str1 and str2
-string commonPrefixUtil(string& str1, string& str2)
+// Function to find the longest common prefix
+string longestCommonPrefix(string ar[], int n)
 {
-    string result = "";
-    int len = min(str1.length(), str2.length());
 
-    // Compare str1 and str2
-    for (int i = 0; i < len; i++)
-    {
-        if (str1[i] != str2[i])
-            break;
-        result += str1[i];
-    }
+	// If size is 0, return empty string
+	if (n == 0)
+		return "";
 
-    return (result);
+	if (n == 1)
+		return ar[0];
+
+	// Sort the given array
+	sort(ar, ar + n);
+
+	// Find the minimum length from
+	// first and last string
+	int en = min(ar[0].size(),
+				ar[n - 1].size());
+
+	// Now the common prefix in first and
+	// last string is the longest common prefix
+	string first = ar[0], last = ar[n - 1];
+	int i = 0;
+	while (i < en && first[i] == last[i])
+		i++;
+
+	string pre = first.substr(0, i);
+	return pre;
 }
 
-// A Function that returns the longest common prefix
-// from the array of strings
-string commonPrefix (string arr[], int n)
-{
-    string prefix =  arr[0];
-
-    for (int i=1; i < n; i++)
-        prefix = commonPrefixUtil(prefix, arr[i]);
-
-    return (prefix);
-}
-
-// Driver program to test above function
+// Driver Code
 int main()
 {
-    string arr[] = {"geeksforgeeks", "geeks",
-                    "geek", "geezer"};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    string ans = commonPrefix(arr, n);
-
-    if (ans.length())
-        printf ("The longest common prefix is - %s",
-                 ans.c_str());
-    else
-        printf("There is no common prefix");
-
-    return (0);
+	string ar[] = {"geeksforgeeks", "geeks",
+						"geek", "geezer"};
+	int n = sizeof(ar) / sizeof(ar[0]);
+	cout << "The longest common prefix is: "
+		<< longestCommonPrefix(ar, n);
+	return 0;
 }
