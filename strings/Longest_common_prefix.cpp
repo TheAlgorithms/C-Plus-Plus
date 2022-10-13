@@ -38,8 +38,8 @@ string longestCommonPrefix(string ar[], int n)
 // Driver Code
 int main()
 {
-	string ar[] = {"geeksforgeeks", "geeks",
-						"geek", "geezer"};
+	string ar[] = {"computerscience", "computer",
+						"science", "terscience"};
 	int n = sizeof(ar) / sizeof(ar[0]);
 	cout << "The longest common prefix is: "
 		<< longestCommonPrefix(ar, n);
