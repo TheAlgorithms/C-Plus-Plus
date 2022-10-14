@@ -21,7 +21,7 @@ unsigned long long int aliquot_sum(unsigned long long int num) {
 
     unsigned long long int sum = 0;
 
-    for (int i = 1; i <= num / 2; i++) {
+    for (unsigned long long int i = 1; i <= num / 2; i++) {
         if(num % i == 0) {
             sum += i;
         }
