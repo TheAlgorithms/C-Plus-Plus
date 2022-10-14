@@ -1,10 +1,10 @@
 /**
- * @file stack.h
+ * @file stack.hpp
  * @author danghai
  * @brief  This class specifies the basic operation on a stack as a linked list
  **/
-#ifndef DATA_STRUCTURES_STACK_H_
-#define DATA_STRUCTURES_STACK_H_
+#ifndef DATA_STRUCTURES_STACK_HPP_
+#define DATA_STRUCTURES_STACK_HPP_
 
 #include <cassert>
 #include <iostream>
@@ -153,4 +153,4 @@ class stack {
     int size;             ///< size of stack
 };
 
-#endif  // DATA_STRUCTURES_STACK_H_
+#endif  // DATA_STRUCTURES_STACK_HPP_
