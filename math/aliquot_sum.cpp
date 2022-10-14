@@ -8,29 +8,24 @@
  * For example, the Aliquot sum of 18 = 1 + 2 + 3 + 6 + 9 = 21
  */
 
-#include <stdexcept>
 #include <cassert>
 
 /**
  * Function to return the aliquot sum of a number
  * @param num The input number
  */
-int aliquot_sum(int num) {
-	if(num < 0) {
-        throw std::invalid_argument("Received negative value");
-	}
-
-	if(num == 0 || num == 1) {
+unsigned long long int aliquot_sum(unsigned long long int num) {
+    if(num == 0 || num == 1) {
         return 0; // The aliquot sum for 0 and 1 is 0
-	}
+    }
 
-    int sum = 0;
+    unsigned long long int sum = 0;
 
     for (int i = 1; i <= num / 2; i++) {
-		if(num % i == 0) {
-			sum += i;
-		}
-	}
+        if(num % i == 0) {
+            sum += i;
+        }
+    }
 
     return sum;
 }
@@ -39,13 +34,13 @@ int aliquot_sum(int num) {
  * Function for testing the aliquot_sum() function with all the test cases
  */
 void test() {
-	// Aliquot sum of 10 is 1 + 2 + 5 = 8
-	assert(aliquot_sum(10) == 8);
-	// Aliquot sum of 15 is 1 + 3 + 5 = 9
-	assert(aliquot_sum(15) == 9);
-	// Aliquot sum of 1 is 0
+    // Aliquot sum of 10 is 1 + 2 + 5 = 8
+    assert(aliquot_sum(10) == 8);
+    // Aliquot sum of 15 is 1 + 3 + 5 = 9
+    assert(aliquot_sum(15) == 9);
+    // Aliquot sum of 1 is 0
     assert(aliquot_sum(1) == 0);
-	// Aliquot sum of 97 is 1 (the aliquot sum of a prime number is 1)
+    // Aliquot sum of 97 is 1 (the aliquot sum of a prime number is 1)
     assert(aliquot_sum(97) == 1);
 }
 
@@ -53,6 +48,6 @@ void test() {
  * Main function
  */
 int main() {
-	test();
+    test();
     return 0;
 }
