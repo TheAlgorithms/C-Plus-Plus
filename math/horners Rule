@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int hornersRule(vector<int>& arr,int n,int deg){
+    int result= arr[0];
+    for(int i=1;i<n;i++){
+        result=result*deg+ arr[i];
+    }
+    return result;
+
+}
+int main(){
+    // Let us evaluate value of 2x3 - 6x2 + 2x - 1 for x = 3
+    vector<int> poly= {2, -6, 2, -1};
+    int deg=3;
+    int n=poly.size();
+    cout<<"Value of Polynomial is "<<hornersRule(poly,n,deg);
+return 0;
+}
