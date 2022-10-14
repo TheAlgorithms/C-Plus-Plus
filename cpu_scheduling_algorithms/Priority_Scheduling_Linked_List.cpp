@@ -1,3 +1,9 @@
+/*
+ * @file Priority Scheduling
+ * @brief This is a Priority Scheduling program developed with Linked List. 
+ * @author [Vivek Utture](https://github.com/vivekutture)
+ */
+ 
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
