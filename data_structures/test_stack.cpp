@@ -10,10 +10,11 @@ int main() {
     std::cout
         << "---------------------- Test isEmptyStack ----------------------"
         << std::endl;
-    if (stk.isEmptyStack())
+    if (stk.isEmptyStack()) {
         std::cout << "PASS" << std::endl;
-    else
+    } else {
         std::cout << "FAIL" << std::endl;
+    }
     std::cout << "---------------------- Test push ----------------------"
               << std::endl;
     std::cout << "After pushing 10 20 30 40 into stack: " << std::endl;
@@ -25,10 +26,11 @@ int main() {
     std::cout << "---------------------- Test top ----------------------"
               << std::endl;
     int value = stk.top();
-    if (value == 40)
+    if (value == 40) {
         std::cout << "PASS" << std::endl;
-    else
+    } else {
         std::cout << "FAIL" << std::endl;
+    }
     std::cout << "---------------------- Test pop ----------------------"
               << std::endl;
     stk.display();

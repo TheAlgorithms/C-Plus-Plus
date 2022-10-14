@@ -15,10 +15,11 @@
 #include <string>
 
 #include "./stack.hpp"
+#include "math.h"
 
 int main(int argc, char* argv[]) {
-    double GPA;
-    double highestGPA;
+    double GPA = NAN;
+    double highestGPA = NAN;
     std::string name;
 
     assert(argc == 2);
