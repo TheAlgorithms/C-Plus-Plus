@@ -9,13 +9,13 @@
  ************************************************************
  * */
 #include <cassert>
+#include <cmath>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
 
 #include "./stack.hpp"
-#include "math.h"
 
 int main(int argc, char* argv[]) {
     double GPA = NAN;
