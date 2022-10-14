@@ -1,3 +1,9 @@
+/*
+ * @file Priority Scheduling
+ * @brief This is a Priority Scheduling program developed with an array. 
+ * @author [VIvek Utture](https://github.com/vivekutture)
+ */
+ 
 #include <iostream>
 using namespace std;
 #define maxsize 4
