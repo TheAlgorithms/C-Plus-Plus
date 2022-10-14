@@ -1,5 +1,5 @@
 /**
- * @file stack.hpp
+ * @file
  * @author danghai
  * @brief  This class specifies the basic operation on a stack as a linked list
  **/
