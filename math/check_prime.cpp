@@ -51,6 +51,12 @@ int main() {
     int num = 0;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;
+     
+    if(!(int)num)
+    {
+        cout<<"Enter a number not a stringer or decimal.";
+        exit(1);
+    }
     bool result = is_prime(num);
     if (result) {
         std::cout << num << " is a prime number" << std::endl;
