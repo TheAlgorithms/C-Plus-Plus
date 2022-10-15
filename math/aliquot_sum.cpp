@@ -14,7 +14,7 @@
  * Function to return the aliquot sum of a number
  * @param num The input number
  */
-unsigned long long int aliquot_sum(unsigned long long int num) {
+unsigned long long int aliquot_sum(const unsigned long long int num) {
     if(num == 0 || num == 1) {
         return 0; // The aliquot sum for 0 and 1 is 0
     }
