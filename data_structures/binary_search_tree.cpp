@@ -1,4 +1,6 @@
 #include <iostream>
+#include <limits>
+#include <string>
 
 struct node {
     int val;
@@ -115,6 +117,22 @@ void Post(node *n) {
     }
 }
 
+int ReadInt() {
+    int var;
+
+    while (true) {
+        std::cin >> var;
+        if (!std::cin.good()) {
+            std::cout << "Option invalid\n";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else
+            break;
+    }
+
+    return var;
+}
+
 int main() {
     queue.front = 0;
     queue.rear = 0;
@@ -122,7 +140,7 @@ int main() {
     int ch;
     node *root = new node;
     std::cout << "\nEnter the value of root node :";
-    std::cin >> value;
+    value = ReadInt();
     root->val = value;
     root->left = NULL;
     root->right = NULL;
@@ -136,17 +154,26 @@ int main() {
                   << "\n6. Postorder Depth First";
 
         std::cout << "\nEnter Your Choice : ";
-        std::cin >> ch;
+        // std::cin >> ch;
+        do {
+            ch = ReadInt();
+
+            if (ch <= 0 || ch > 6) {
+                std::cout << "Option invalid\n";
+            }
+        } while (ch <= 0 || ch > 6);
+
         int x;
+
         switch (ch) {
             case 1:
                 std::cout << "\nEnter the value to be Inserted : ";
-                std::cin >> x;
+                x = ReadInt();
                 Insert(root, x);
                 break;
             case 2:
                 std::cout << "\nEnter the value to be Deleted : ";
-                std::cin >> x;
+                x = ReadInt();
                 Remove(root, root, x);
                 break;
             case 3:
