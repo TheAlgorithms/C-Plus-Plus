@@ -3,6 +3,8 @@
  * @file
  * @brief [Interpolation search
  * algorithm](https://en.wikipedia.org/wiki/interpolation_search)
+  * @brief [Interpolation search
+ * algorithm](https://www.geeksforgeeks.org/interpolation-search/)
  *
  * @details
  * interpolation search resembles the method by which people search a telephone
@@ -69,10 +71,7 @@ uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
             return -1;
         }
         // Probing the position with keeping uniform distribution in mind.
-        uint64_t pos =
-            low +
-            ((static_cast<uint64_t>(high - low) / (arr[high] - arr[low])) *
-             (number - arr[low]));
+        uint64_t pos = low + ((static_cast<uint64_t>(high - low) / (arr[high] - arr[low])) * (number - arr[low]));
 
         if (arr[pos] == number) {
             return pos;  // Condition of target found
@@ -105,7 +104,7 @@ static void tests() {
                                   22, 23, 24, 33, 35, 42, 47}};
     sort(arr.begin(), arr.end());
     uint64_t number = 33;  // Element to be searched
-    uint64_t expected_answer = 15;
+    uint64_t expected_answer = 15; //Expected Answer
     uint64_t derived_answer =
         search::interpolation_search::interpolationSearch(arr, number);
     std::cout << "Testcase: ";
