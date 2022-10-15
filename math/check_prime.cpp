@@ -7,12 +7,14 @@
  * @brief
  * Reduced all possibilities of a number which cannot be prime.
  * Eg: No even number, except 2 can be a prime number, hence we will increment
- * our loop with i+2 jumping on all odd numbers only. If number is <= 1 or if it
- * is even except 2, break the loop and return false telling number is not
- * prime.
+ * our loop with i+6 jumping and check for i or i+2 to be a factor of the
+ * number; if it's a factor then we will return false otherwise true after the
+ * loop terminates at the terminating condition which is (i*i<=num)
  */
-#include <cassert>
-#include <iostream>
+
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
+
 /**
  * Function to check if the given number is prime or not.
  * @param num number to be checked.
@@ -23,14 +25,13 @@ bool is_prime(T num) {
     bool result = true;
     if (num <= 1) {
         return false;
-    } else if (num == 2) {
+    } else if (num == 2 || num == 3) {
         return true;
-    } else if ((num & 1) == 0) {
+    } else if ((num % 2) == 0 || num % 3 == 0) {
         return false;
-    }
-    if (num >= 3) {
-        for (T i = 3; (i * i) <= (num); i = (i + 2)) {
-            if ((num % i) == 0) {
+    } else {
+        for (T i = 5; (i * i) <= (num); i = (i + 6)) {
+            if ((num % i) == 0 || (num % (i + 2) == 0)) {
                 result = false;
                 break;
             }

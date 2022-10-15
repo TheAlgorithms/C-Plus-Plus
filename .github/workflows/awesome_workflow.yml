@@ -21,8 +21,8 @@ jobs:
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
         run: |
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git config --global user.name David Leal
+          git config --global user.email 'Panquesito7@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Filename Formatter
         run: |
