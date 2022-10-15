@@ -1,11 +1,3 @@
-/**
- * \file
- * \brief A simple tree implementation using structured nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation - C style - and does not
- * utilize any of the C++ STL features.
- */
 #include <iostream>
 
 struct node {
@@ -96,6 +88,7 @@ void BFT(node *n) {
         enqueue(n->right);
         BFT(dequeue());
     }
+    std::cout << "\n\n";
 }
 
 void Pre(node *n) {
@@ -134,6 +127,7 @@ int main() {
     root->left = NULL;
     root->right = NULL;
     do {
+        system("cls");
         std::cout << "\n1. Insert"
                   << "\n2. Delete"
                   << "\n3. Breadth First"
@@ -145,29 +139,34 @@ int main() {
         std::cin >> ch;
         int x;
         switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
+            case 1:
+                std::cout << "\nEnter the value to be Inserted : ";
+                std::cin >> x;
+                Insert(root, x);
+                break;
+            case 2:
+                std::cout << "\nEnter the value to be Deleted : ";
+                std::cin >> x;
+                Remove(root, root, x);
+                break;
+            case 3:
+                BFT(root);
+                system("pause");
+                break;
+            case 4:
+                Pre(root);
+                system("pause");
+                break;
+            case 5:
+                In(root);
+                system("pause");
+                break;
+            case 6:
+                Post(root);
+                system("pause");
+                break;
         }
+
     } while (ch != 0);
 
     return 0;
