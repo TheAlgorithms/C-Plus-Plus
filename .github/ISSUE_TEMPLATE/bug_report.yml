@@ -3,9 +3,6 @@ description: Create a report to help us improve. Report bugs found while using t
 title: "[BUG]"
 labels: [bug]
 body:
-  - type: markdown
-    attributes:
-      value: "Provide a general summary of the issue in the Title above"
   - type: textarea
     id: description
     attributes:
@@ -13,27 +10,20 @@ body:
       description: Provide a general summary of the issue in the Title above
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expectedbhv
     attributes:
       label: Expected behavior
       description: Tell us what should happen
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: actualbhv
     attributes:
       label: Actual behavior
       description: Tell us what happens instead
     validations:
       required: true
-  - type: input
-    id: possiblefix
-    attributes:
-      label: Possible fix
-      description: Not obligatory, but suggest a fix or reason for the bug
-    validations:
-      required: false
   - type: textarea
     id: steps
     attributes:
@@ -47,7 +37,7 @@ body:
         3.
         4.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: context
     attributes:
