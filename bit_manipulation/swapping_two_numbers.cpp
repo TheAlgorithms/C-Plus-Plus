@@ -9,21 +9,31 @@
  * @author [Puneet Tripathi](https://github.com/PuneetTri)
  */
 
-#include<iostream>
-using namespace std;
+#include<iostream>  // For standard I/O, in our case printing values of variable 'a' and 'b'
+#include<cassert> // For testcases check
 
-int main() {
-    int a, b;
+bool bitwiseSwap(int a, int b) {
+    /* Explanation of below code is assuming that value of a = 2,
+    *  and value of b = 3.
+    *  For the test-case #1, value of a and b will be 2 and 3 respectively
+    */
 
     /* XOR bitwise operator compares two corresponding bits and return
     *  value 0 if both are equal and returns 1 if both are not equal
     */
 
-    a=2; // Binary equivalent to 2 is 0010
-    b=3; // Binary equivalent to 3 is 0011
+    
+    // a = 2; Binary equivalent to 2 is 0010
+    // b = 3; Binary equivalent to 3 is 0011
 
-    cout << "Before swapping" << endl;
-    cout << "A: " << a << ", B: " << b << endl;
+    /* Storing value of a and b in temporary variables to later check if
+    *  values did swap or not.
+    */
+    int temp_a = a;
+    int temp_b = b;
+
+    std::cout << "Before swapping" << std::endl;
+    std::cout << "A: " << a << ", B: " << b << std::endl;
 
     a = a^b; // Binary equivalent to 2^3 is 0001 or in decimal: 1
     b = a^b; // Binary equivalent to 1^3 is 0010 or in decimal: 2(Originally: 3)
@@ -46,6 +56,33 @@ int main() {
     *  and can be accessed by XOR-ing it with the other variable
     */
 
-    cout << "After swapping" << endl;
-    cout << "A: " << a << ", B: " << b;
+    std::cout << "After swapping" << std::endl;
+    std::cout << "A: " << a << ", B: " << b << std::endl;
+    std::cout << std::endl; // For better spacing between test-cases
+
+    // Return true if values swapped or else return false
+    if(temp_a == b && temp_b == a) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+static void test() {
+    /* Following tests would check for multiple cases that values of 
+    variables do actually swap */
+    std::cout << "Test-case: #1" << std::endl;
+    assert(bitwiseSwap(2,3) == true); // TC #1
+    std::cout << "Test-case: #2" << std::endl;
+    assert(bitwiseSwap(0,53) == true); // TC #2
+    std::cout << "Test-case: #3" << std::endl;
+    assert(bitwiseSwap(622,733) == true); // TC #3
+    std::cout << "Test-case: #4" << std::endl;
+    assert(bitwiseSwap(-8246,-9357) == true); // TC #4
+    std::cout << "Test-case: #5" << std::endl;
+    assert(bitwiseSwap(7,7) == true); // TC #5
+}
+
+int main() {
+    test(); // Run multiple testcases to test our algorithm
 }
