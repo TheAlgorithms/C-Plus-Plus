@@ -13,9 +13,11 @@
  * @author [Puneet Tripathi](https://github.com/PuneetTri)
  */
 
-#include<iostream>
-using namespace std;
+#include<iostream>  // For standard I/O
+#include<cassert> // For testcases check
+#include<time.h> // For shuffling array using srand(time(NULL))
 
+// For the nodes of Binary Search Tree
 struct node {
     int data;
     node *left;
@@ -112,10 +114,59 @@ void tree_sort(int arr[], int size) {
     // We then also perform a inorder traversal, this brings our time complexity to: O(N+N*log(N)) -> O(N*log(N))
 }
 
-int main() {
-    int arr[] = {7,7,8,8,6,12,4,3,2,54,123,1,2,3,5,123,211};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    tree_sort(arr,size);
+// Utility function to check if array is sorted
+bool isSorted(int arr[], int size) {
+    for(int i=0; i<size-1; i++) {
+        if(arr[i] > arr[i+1]) {
+            return false;
+        }
+    }
+    return true;
+}
 
-    for(int i=0; i<size; i++) cout << arr[i] << " ";
+// Utility function to shuffle array randomly
+void shuffle(int arr[], int n) {
+    srand(time(NULL));
+    
+    for(int i=0; i<n; i++) {
+        int rnd = rand() % (n-i);
+        int temp = arr[i];
+        arr[i] = arr[rnd];
+        arr[rnd] = temp;
+    }
+}
+
+static void test(int t) {
+    /* Following tests would check for multiple cases that array
+    *  is sorted correctly or not 
+    */
+    for(int i=1; i<=t; i++) {
+        int arr[i]; // Create array size of i, to test array of multiple sizes
+
+        // Add default array values
+        for(int j=0; j<i; j++) {
+            arr[j] = j+1;
+        }
+
+        shuffle(arr, i); // Shuffle the array, so there is no bias in results
+
+        // Print before and after of all test cases
+        std::cout << "Test-case: #" << i << std::endl;
+        std::cout << "Before sorting:" << std::endl;
+        for(int k=0; k<i; k++) std::cout << arr[k] << " ";
+        std::cout << std::endl;
+        std::cout << std::endl; // For better spacing between test cases
+
+        tree_sort(arr, i); // Sort the array using tree_sort
+        
+        std::cout << "After sorting:" << std::endl;
+        for(int k=0; k<i; k++) std::cout << arr[k] << " ";
+        std::cout << std::endl;
+        std::cout << std::endl; // For better spacing between test cases
+        assert(isSorted(arr,i) == true); // TC #i 
+    }
+}
+
+int main() {
+    test(100); // Run multiple testcases to test our algorithm
 }
