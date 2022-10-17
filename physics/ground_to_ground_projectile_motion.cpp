@@ -73,8 +73,54 @@ T max_height(T initial_velocity, T angle, float gravity = 9.81) {
  * @returns void
  */
 static void test() {
-    float initial_velocity = 5.0;
-    float angle = 40.0;
+    // initial input variables
+    float initial_velocity = 5.0;  // float initial_velocity input
+    float angle = 40.0;            // float angle input
+
+    // 1st test
+    float expected_time_of_flight = 0.655;  // expected output
+    float flight_time_output =
+        std::round(physics::time_of_flight(initial_velocity, angle) * 1000.0) /
+        1000.0;  // round output to 3 decimal places
+
+    std::cout << "Projectile Flight Time (float)" << std::endl;
+    std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
+    std::cout << "Input Angle: " << angle << std::endl;
+    std::cout << "Expected Output: " << expected_time_of_flight << std::endl;
+    std::cout << "Output: " << flight_time_output << std::endl;
+    assert(flight_time_output == expected_time_of_flight);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 2nd test
+    float expected_horizontal_range = 2.51;
+    float horizontal_range_output =
+        std::round(physics::horizontal_range(initial_velocity, angle,
+                                             flight_time_output) *
+                   100.0) /
+        100.0;  // round output to 2 decimal places
+
+    std::cout << "Projectile Horizontal Range (float)" << std::endl;
+    std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
+    std::cout << "Input Angle: " << angle << std::endl;
+    std::cout << "Input Time Of Flight: " << flight_time_output << std::endl;
+    std::cout << "Expected Output: " << expected_horizontal_range << std::endl;
+    std::cout << "Output: " << horizontal_range_output << std::endl;
+    assert(horizontal_range_output == expected_horizontal_range);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 3rd test
+    float expected_max_height = 0.526;
+    float max_height_output =
+        std::round(physics::max_height(initial_velocity, angle) * 1000.0) /
+        1000.0;  // round output to 3 decimal places
+
+    std::cout << "Projectile Max Height (float)" << std::endl;
+    std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
+    std::cout << "Input Angle: " << angle << std::endl;
+    std::cout << "Expected Output: " << expected_max_height << std::endl;
+    std::cout << "Output: " << max_height_output << std::endl;
+    assert(max_height_output == expected_max_height);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
 }
 
 /**
