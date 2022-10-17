@@ -79,6 +79,7 @@
   * [Trie Using Hashmap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/trie_using_hashmap.cpp)
 
 ## Divide And Conquer
+  * [Fast Fourier Transform](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/fast_fourier_transform.cpp)
   * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
 
 ## Dynamic Programming
