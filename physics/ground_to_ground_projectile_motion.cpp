@@ -78,7 +78,7 @@ static void test() {
     float angle = 40.0;            // float angle input
 
     // 1st test
-    float expected_time_of_flight = 0.655;  // expected output
+    float expected_time_of_flight = 0.655;  // expected time output
     float flight_time_output =
         std::round(physics::time_of_flight(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
@@ -92,7 +92,7 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 2nd test
-    float expected_horizontal_range = 2.51;
+    float expected_horizontal_range = 2.51; // expected range output
     float horizontal_range_output =
         std::round(physics::horizontal_range(initial_velocity, angle,
                                              flight_time_output) *
@@ -109,7 +109,7 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 3rd test
-    float expected_max_height = 0.526;
+    float expected_max_height = 0.526; // expected height output
     float max_height_output =
         std::round(physics::max_height(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
