@@ -25,7 +25,7 @@ namespace physics {
  * @param PI The definition of the constant PI
  * @returns Angle in degrees
  */
-float degrees_to_radians(float radian, float PI = 3.14) {
+double degrees_to_radians(double radian, double PI = 3.14) {
     return (radian * (PI / 180));
 }
 
@@ -37,8 +37,8 @@ float degrees_to_radians(float radian, float PI = 3.14) {
  * @returns The time that the projectile is in the air for
  */
 template <typename T>
-T time_of_flight(T initial_velocity, T angle, float gravity = 9.81) {
-    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
+T time_of_flight(T initial_velocity, T angle, double gravity = 9.81) {
+    double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return 2.0 * Viy / gravity;
 }
 
@@ -50,7 +50,7 @@ T time_of_flight(T initial_velocity, T angle, float gravity = 9.81) {
  */
 template <typename T>
 T horizontal_range(T initial_velocity, T angle, T time) {
-    float Vix = initial_velocity * (std::cos(degrees_to_radians(angle))); // calculate x component of the initial velocity
+    double Vix = initial_velocity * (std::cos(degrees_to_radians(angle))); // calculate x component of the initial velocity
     return Vix * time;
 }
 
@@ -62,8 +62,8 @@ T horizontal_range(T initial_velocity, T angle, T time) {
  * @returns The max height that the projectile reaches
  */
 template <typename T>
-T max_height(T initial_velocity, T angle, float gravity = 9.81) {
-    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
+T max_height(T initial_velocity, T angle, double gravity = 9.81) {
+    double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return (std::pow(Viy, 2) / (2.0 * gravity));
 }
 }  // namespace physics
@@ -74,16 +74,16 @@ T max_height(T initial_velocity, T angle, float gravity = 9.81) {
  */
 static void test() {
     // initial input variables
-    float initial_velocity = 5.0;  // float initial_velocity input
-    float angle = 40.0;            // float angle input
+    double initial_velocity = 5.0;  // double initial_velocity input
+    double angle = 40.0;            // double angle input
 
     // 1st test
-    float expected_time_of_flight = 0.655;  // expected time output
-    float flight_time_output =
+    double expected_time_of_flight = 0.655;  // expected time output
+    double flight_time_output =
         std::round(physics::time_of_flight(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
 
-    std::cout << "Projectile Flight Time (float)" << std::endl;
+    std::cout << "Projectile Flight Time (double)" << std::endl;
     std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
     std::cout << "Input Angle: " << angle << std::endl;
     std::cout << "Expected Output: " << expected_time_of_flight << std::endl;
@@ -92,14 +92,14 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 2nd test
-    float expected_horizontal_range = 2.51; // expected range output
-    float horizontal_range_output =
+    double expected_horizontal_range = 2.51; // expected range output
+    double horizontal_range_output =
         std::round(physics::horizontal_range(initial_velocity, angle,
                                              flight_time_output) *
                    100.0) /
         100.0;  // round output to 2 decimal places
 
-    std::cout << "Projectile Horizontal Range (float)" << std::endl;
+    std::cout << "Projectile Horizontal Range (double)" << std::endl;
     std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
     std::cout << "Input Angle: " << angle << std::endl;
     std::cout << "Input Time Of Flight: " << flight_time_output << std::endl;
@@ -109,12 +109,12 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 3rd test
-    float expected_max_height = 0.526; // expected height output
-    float max_height_output =
+    double expected_max_height = 0.526; // expected height output
+    double max_height_output =
         std::round(physics::max_height(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
 
-    std::cout << "Projectile Max Height (float)" << std::endl;
+    std::cout << "Projectile Max Height (double)" << std::endl;
     std::cout << "Input Initial Velocity: " << initial_velocity << std::endl;
     std::cout << "Input Angle: " << angle << std::endl;
     std::cout << "Expected Output: " << expected_max_height << std::endl;
