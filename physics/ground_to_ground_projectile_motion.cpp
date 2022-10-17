@@ -38,7 +38,7 @@ float degrees_to_radians(float radian, float PI = 3.14) {
  */
 template <typename T>
 T time_of_flight(T initial_velocity, T angle, float gravity = 9.81) {
-    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle)));
+    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return 2.0 * Viy / gravity;
 }
 
@@ -50,7 +50,7 @@ T time_of_flight(T initial_velocity, T angle, float gravity = 9.81) {
  */
 template <typename T>
 T horizontal_range(T initial_velocity, T angle, T time) {
-    float Vix = initial_velocity * (std::cos(degrees_to_radians(angle)));
+    float Vix = initial_velocity * (std::cos(degrees_to_radians(angle))); // calculate x component of the initial velocity
     return Vix * time;
 }
 
@@ -63,7 +63,7 @@ T horizontal_range(T initial_velocity, T angle, T time) {
  */
 template <typename T>
 T max_height(T initial_velocity, T angle, float gravity = 9.81) {
-    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle)));
+    float Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return (std::pow(Viy, 2) / (2.0 * gravity));
 }
 }  // namespace physics
