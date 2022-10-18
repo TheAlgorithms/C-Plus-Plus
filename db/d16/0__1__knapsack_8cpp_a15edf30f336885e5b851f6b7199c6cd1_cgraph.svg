@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Picking up all those items whose combined weight is below given capacity and calculating value of tho...">
+<g id="a_node1"><a xlink:title="Picking up all those items whose combined weight is below the given capacity and calculating the valu...">
 <polygon fill="#999999" stroke="#666666" points="157,-30 0,-30 0,0 157,0 157,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">dynamic_programming</text>
 <text text-anchor="middle" x="78.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::knapsack::maxKnapsackValue</text>
