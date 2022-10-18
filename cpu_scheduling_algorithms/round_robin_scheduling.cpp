@@ -120,8 +120,8 @@ bool CompareAT(const Process& p1, const Process& p2) {
  * \param time_elapsed Time that has elapsed after processes execution
  */
 void CheckArriveProcess(const std::vector<Process>& processes,
-                        std::set<uint32_t>& arrived_process,
-                        std::queue<std::pair<Process, BTLeft>>& schedule,
+                        std::set<uint32_t>* arrived_process,
+                        std::queue<std::pair<Process, BTLeft>>* schedule,
                         uint32_t time_elapsed);
 
 /**
@@ -172,7 +172,7 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
     uint32_t time_elapsed =
         std::min_element(processes.begin(), processes.end(), CompareAT)->arrival_time;
 
-    CheckArriveProcess(processes, arrived_processes, schedule,
+    CheckArriveProcess(processes, &arrived_processes, &schedule,
                        time_elapsed);
 
     while (!schedule.empty()) {
@@ -187,7 +187,7 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 		current.second -= elapsed;
 		time_elapsed += elapsed;
 
-		CheckArriveProcess(processes, arrived_processes, schedule,
+		CheckArriveProcess(processes, &arrived_processes, &schedule,
 						   time_elapsed);
 
         if (current.second > 0) {
@@ -233,15 +233,15 @@ std::ostream& operator<<(std::ostream& ostream,
 }
 
 void CheckArriveProcess(const std::vector<Process> &processes,
-                        std::set<uint32_t>& arrived_process,
-                        std::queue<std::pair<Process, BTLeft>>& schedule,
+                        std::set<uint32_t>* arrived_process,
+                        std::queue<std::pair<Process, BTLeft>>* schedule,
                         uint32_t time_elapsed) {
     for (auto& p : processes) {
         if (p.arrival_time > time_elapsed ||
-            arrived_process.find(p.id) != arrived_process.end()) {
+            arrived_process->find(p.id) != arrived_process->end()) {
             continue;
         }
-        schedule.emplace(p, p.burst_time);
-        arrived_process.insert(p.id);
+        schedule->emplace(p, p.burst_time);
+        arrived_process->insert(p.id);
     }
 }
