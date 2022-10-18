@@ -22,23 +22,23 @@
  * @brief Represent a process to be executed.
  */
 struct Process {
-    uint32_t id;
-    uint32_t arrival_time;
-    uint32_t burst_time;
+    uint32_t id;            ///< Used to distinguish processes
+    uint32_t arrival_time;  ///< The time at which the process arrives
+    uint32_t burst_time;    ///< Time required to complete process execution
 };
 
 /**
  * @brief Represent the result of a process execution.
  */
 struct ProcessResult : public Process {
-    uint32_t completion_time;
-    uint32_t turn_around_time;
-    uint32_t waiting_time;
+    uint32_t completion_time;   ///< The time at which the process execution is finished
+    uint32_t turn_around_time;  ///< The turn around time required for the process to complete
+    uint32_t waiting_time;      ///< Process waiting time before execution
 
     /**
      * @brief Constructor that calculate member variables based on a
      * process and completion time.
-     * 
+     *
      * \param process A process that have been executed
      * \param completion_time The process execution finish time
      */
@@ -47,10 +47,10 @@ struct ProcessResult : public Process {
         turn_around_time = completion_time - arrival_time;
         waiting_time = turn_around_time - burst_time;
     }
-    
+
     /**
      * @brief Compare each member variable.
-     * 
+     *
      * \param p ProcessResult to be compared with
      * \return true if the processes IS equal
      * \return false if the processes IS NOT equal
@@ -71,7 +71,7 @@ using BTLeft = uint32_t;
 
 /**
  * @brief Execute processes based on Round-robin algorithm.
- * 
+ *
  * \param processes Processes to be executed
  * \param time_slice Time slice for processes execution
  * \return Results of each process execution
@@ -81,7 +81,7 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 
 /**
  * @brief Print a table containing process results data.
- * 
+ *
  * \return ostream inputted ostream
  */
 std::ostream& operator<<(std::ostream& ostream,
@@ -89,7 +89,7 @@ std::ostream& operator<<(std::ostream& ostream,
 
 /**
  * @brief Self-test implementations.
- * 
+ *
  * \returns void
  */
 void Test();
@@ -97,10 +97,10 @@ void Test();
 
 /**
  * @brief Comparator function for sorting processes.
- * 
+ *
  * \param p1 Process to be compared
  * \param p2 Process to be compared
- * \return 
+ * \return
  */
 bool CompareAT(const Process& p1, const Process& p2) {
     return p1.arrival_time < p2.arrival_time;
@@ -112,7 +112,7 @@ bool CompareAT(const Process& p1, const Process& p2) {
  * If a process arrive after the give time_elapsed, then the process
  * will be pushed into the schedule queue and inserted into the
  * arrived_process set.
- * 
+ *
  * \param processes Processes that will be checked for arrival
  * \param arrived_process A set containing processes that has arrived
  * \param schedule Queue containing pair of process and its remaining burst time
@@ -125,7 +125,7 @@ void CheckArriveProcess(const std::vector<Process>& processes,
 
 /**
  * @brief Entry point of the program.
- * 
+ *
  * \return 0 on exit
  */
 int main() {
