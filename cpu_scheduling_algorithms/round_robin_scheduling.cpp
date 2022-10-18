@@ -9,15 +9,15 @@
  * @author [Daemon19](https://github.com/Daemon19)
  */
 
-#include <iomanip>      /// For formatting process results output
-#include <cassert>      /// For testing the round-robin algorithm
-#include <string>       /// For converting int type to string
-#include <iostream>     /// For outputting process execution results
-#include <queue>        /// Container for process execution turn
-#include <set>          /// Container for processes that have arrived
-#include <utility>      /// So I can use std::pair
-#include <vector>       /// Container for processes that will be executed
-#include <algorithm>    /// So I can use std::sort
+#include <algorithm>  /// So I can use std::sort
+#include <cassert>    /// For testing the round-robin algorithm
+#include <iomanip>    /// For formatting process results output
+#include <iostream>   /// For outputting process execution results
+#include <queue>      /// Container for process execution turn
+#include <set>        /// Container for processes that have arrived
+#include <string>     /// For converting int type to string
+#include <utility>    /// So I can use std::pair
+#include <vector>     /// Container for processes that will be executed
 
 /**
  * @brief Represent a process to be executed.
@@ -32,8 +32,10 @@ struct Process {
  * @brief Represent the result of a process execution.
  */
 struct ProcessResult : public Process {
-    uint32_t completion_time;   ///< The time at which the process execution is finished
-    uint32_t turn_around_time;  ///< The turn around time required for the process to complete
+    uint32_t completion_time;   ///< The time at which the process execution is
+                                ///< finished
+    uint32_t turn_around_time;  ///< The turn around time required for the
+                                ///< process to complete
     uint32_t waiting_time;      ///< Process waiting time before execution
 
     /**
@@ -94,7 +96,6 @@ std::ostream& operator<<(std::ostream& ostream,
  * \returns void
  */
 static void Test();
-
 
 /**
  * @brief Comparator function for sorting processes.
@@ -170,10 +171,10 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 
     // The time of the first process execution will be the lowest process AT
     uint32_t time_elapsed =
-        std::min_element(processes.begin(), processes.end(), CompareAT)->arrival_time;
+        std::min_element(processes.begin(), processes.end(), CompareAT)
+            ->arrival_time;
 
-    CheckArriveProcess(processes, &arrived_processes, &schedule,
-                       time_elapsed);
+    CheckArriveProcess(processes, &arrived_processes, &schedule, time_elapsed);
 
     while (!schedule.empty()) {
         std::pair<Process, BTLeft> current = schedule.front();
@@ -184,14 +185,14 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
         // quantum/slice
         uint32_t elapsed =
             (current.second > time_slice) ? time_slice : current.second;
-		current.second -= elapsed;
-		time_elapsed += elapsed;
+        current.second -= elapsed;
+        time_elapsed += elapsed;
 
-		CheckArriveProcess(processes, &arrived_processes, &schedule,
-						   time_elapsed);
+        CheckArriveProcess(processes, &arrived_processes, &schedule,
+                           time_elapsed);
 
         if (current.second > 0) {
-			schedule.push(current);
+            schedule.push(current);
             continue;
         }
         // Generate process result based on the completion time (time
@@ -204,7 +205,7 @@ std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
 
 std::ostream& operator<<(std::ostream& ostream,
                          const std::vector<ProcessResult>& results) {
-    auto PrintCell = [&](const std::string &str) {
+    auto PrintCell = [&](const std::string& str) {
         ostream << std::setw(17) << std::left << str;
     };
 
@@ -232,7 +233,7 @@ std::ostream& operator<<(std::ostream& ostream,
     return ostream;
 }
 
-void CheckArriveProcess(const std::vector<Process> &processes,
+void CheckArriveProcess(const std::vector<Process>& processes,
                         std::set<uint32_t>* arrived_process,
                         std::queue<std::pair<Process, BTLeft>>* schedule,
                         uint32_t time_elapsed) {
