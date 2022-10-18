@@ -92,7 +92,7 @@ std::ostream& operator<<(std::ostream& ostream,
  *
  * \returns void
  */
-void Test();
+static void Test();
 
 
 /**
