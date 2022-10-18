@@ -2,6 +2,7 @@
  * @file
  * @brief Implementation of [The Jacobi Method]
  (https://en.wikipedia.org/wiki/Jacobi_method#Algorithm)
+ (https://college.cengage.com/mathematics/larson/elementary_linear/5e/students/ch08-10/chap_10_2.pdf)
  * @details
  * ### Algorithm
  *
