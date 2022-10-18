@@ -35,6 +35,7 @@
 
 ## Cpu Scheduling Algorithms
   * [Fcfs Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/cpu_scheduling_algorithms/fcfs_scheduling.cpp)
+  * [Round Robin Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/cpu_scheduling_algorithms/round_robin_scheduling.cpp)
 
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/avltree.cpp)
