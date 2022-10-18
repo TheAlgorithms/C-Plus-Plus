@@ -18,3 +18,7 @@ foreach( testsourcefile ${APP_SOURCES} )
     install(TARGETS ${testname} DESTINATION "bin/sorting")
 
 endforeach( testsourcefile ${APP_SOURCES} )
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries("sleep_sort" PRIVATE Threads::Threads)
