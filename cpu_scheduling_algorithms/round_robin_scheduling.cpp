@@ -134,7 +134,11 @@ int main() {
     return 0;
 }
 
-void Test() {
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void Test() {
     std::vector<Process> processes{
         {0, 70, 3}, {1, 9, 2}, {2, 3, 39}, {3, 5, 29}, {4, 30, 90}};
     const uint32_t kTimeSlice{3};
