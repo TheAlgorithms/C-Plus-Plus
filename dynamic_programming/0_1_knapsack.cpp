@@ -39,8 +39,8 @@ namespace dynamic_programming {
 namespace knapsack {
 /**
  * @brief Picking up all those items whose combined weight is below
- * the given capacity and calculating the value of those picked items. Trying all
- * possible combinations will yield the maximum knapsack value.
+ * the given capacity and calculating the value of those picked items. Trying
+ * all possible combinations will yield the maximum knapsack value.
  * @tparam n size of the weight and value array
  * @param capacity capacity of the carrying bag
  * @param weight array representing the weight of items
@@ -62,9 +62,9 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
                 // will be zero
                 maxValue[i][j] = 0;
             } else if (weight[i - 1] <= j) {
-                // if the ith item's weight(in the actual array it will be at i-1)
-                // is less than or equal to the allowed weight i.e. j then we
-                // can pick that item for our knapsack. maxValue will be the
+                // if the ith item's weight(in the actual array it will be at
+                // i-1) is less than or equal to the allowed weight i.e. j then
+                // we can pick that item for our knapsack. maxValue will be the
                 // obtained either by picking the current item or by not picking
                 // current item
 
@@ -76,8 +76,9 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
 
                 maxValue[i][j] = std::max(profit1, profit2);
             } else {
-                // as the weight of the current item is greater than the allowed weight, so
-                // maxProfit will be profit obtained by excluding the current item.
+                // as the weight of the current item is greater than the allowed
+                // weight, so maxProfit will be profit obtained by excluding the
+                // current item.
                 maxValue[i][j] = maxValue[i - 1][j];
             }
         }
