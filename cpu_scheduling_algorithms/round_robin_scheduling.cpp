@@ -16,7 +16,7 @@
 #include <queue>      /// Container for process execution turn
 #include <set>        /// Container for processes that have arrived
 #include <string>     /// For converting int type to string
-#include <utility>    /// So I can use std::pair
+#include <utility>    /// For std::pair
 #include <vector>     /// Container for processes that will be executed
 
 /**
