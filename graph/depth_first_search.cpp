@@ -53,6 +53,7 @@ namespace graph {
  * @param v second vertex
  *
  */
+//add edge function
 void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
     /*
      *
