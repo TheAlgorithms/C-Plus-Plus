@@ -1,49 +1,55 @@
-//Stack is an LIFO data structure which means last in first out.
-//Queue is an FIF0 data structure which means first in first out.
-// iostream stands for  standard input-output stream,this header file contains definitions of objects like cin, cout.
-// stacks and queue library are used for implementing inbuilt stacks and queues
+/**
+ * QueueImplementation.cpp
+ * Saqlain Zarjis Ansari (https://github.com/Mysterious786)
+ * https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues 
+ * Implementation of Queue using two Stacks 
+ */
+
 #include <iostream>
 #include <stack>
 #include <queue>
 
+/** Definition of the queue class */
 struct Queue
 {
-    //std is an abbreviation of "standard". std is the "standard namespace". cout , cin are only defined in the “std” namespace. 
+   
 
     std::stack<int> stack1, stack2;
 
-    // enqueue --> function used to push element
+  
     void enqueue(int x)
-    {
-        // Move all elements from s1 to s2
-        while (!stack1.empty())
+     {
+        /** Move all elements from s1 to s2*/ 
+        
+        while (!stack1.empty()) /// Determine whether the stack1 is empty
         {
             stack2.push(stack1.top());
             stack1.pop();
         }
 
-        // Push item into s1
+        /**Push item into s1*/ 
         stack1.push(x);
 
-        // Push everything back to s1
-        while (!stack2.empty())
+        /**Push everything back to s1*/ 
+
+        while (!stack2.empty()) /// Determine whether the stack2 is empty 
         {
             stack1.push(stack2.top());
             stack2.pop();
         }
     }
 
-    // Dequeue(function to remove an element) an item from the queue
+    /**Remove item front the Stack*/
     int dequeue()
     {
-        // if first stack is empty
+        /**Determine whether first stack is empty*/ 
         if (stack1.empty())
         {
             std::cout << "queue is Empty";
             exit(0);
         }
 
-        // Return the top of stack1
+        /**Return the top of stack1*/ 
         int x = stack1.top();
         stack1.pop();
         return x;
@@ -68,6 +74,7 @@ int main()
 
     return 0;
 }
-// OUTPUT-->  3 4 5 6 7 
+// DATA_STRUCTURES_QUEUE_IMPLEMENTATION_USING_TWO_STACKS
 
+  
 
