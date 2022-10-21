@@ -1,80 +1,109 @@
 /**
- * QueueImplementation.cpp
- * Saqlain Zarjis Ansari (https://github.com/Mysterious786)
- * https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues 
- * Implementation of Queue using two Stacks 
+ * @author [saqlain] (https://github.com/Mysterious786)
+ * @file
+ *
+ * Implementation of a Queue using Single Stacks.
+ *
  */
 
 #include <iostream>
 #include <stack>
-#include <queue>
-
-/** Definition of the queue class */
-struct Queue
+#include <cstdlib>
+namespace
 {
-   
+    /**
+     * Queue data structure.Store elements in FIFO
+     * (first-in-first-out) manner.
+     *
+     */
 
-    std::stack<int> stack1, stack2;
-
-  
-    void enqueue(int x)
-     {
-        /** Move all elements from s1 to s2*/ 
-        
-        while (!stack1.empty()) /// Determine whether the stack1 is empty
-        {
-            stack2.push(stack1.top());
-            stack1.pop();
-        }
-
-        /**Push item into s1*/ 
-        stack1.push(x);
-
-        /**Push everything back to s1*/ 
-
-        while (!stack2.empty()) /// Determine whether the stack2 is empty 
-        {
-            stack1.push(stack2.top());
-            stack2.pop();
-        }
-    }
-
-    /**Remove item front the Stack*/
-    int dequeue()
+    class Queue
     {
-        /**Determine whether first stack is empty*/ 
-        if (stack1.empty())
+        std::stack<int> s;
+
+    public:
+        /**
+         * Pushes data to the back of queue
+         */
+        void enqueue(int data)
         {
-            std::cout << "queue is Empty";
-            exit(0);
+            /**
+             *  Push item into the First Stack
+             */
+            s.push(data);
         }
 
-        /**Return the top of stack1*/ 
-        int x = stack1.top();
-        stack1.pop();
-        return x;
-    }
-};
+        /**
+         * Remove an item from the queue
+         */
+        int dequeue()
+        {
+            /**
+             * Determines whether the stack is empty
+             */
+            if (s.empty())
+            {
+                std::cout << "Underflow!!";
+                exit(0);
+            }
 
+            /**
+             *Removes item from the Stack
+             */
+            int top = s.top();
+            s.pop();
+
+            
+            /**
+             * Determines whether the stack becomes empty,and returns the popped item
+             */
+            if (s.empty())
+            {
+                return top;
+            }
+
+            /**
+             * Recursion call
+             */
+            int item = dequeue();
+
+            /**
+             * push popped item back into the stack
+             */
+            s.push(top);
+
+            
+            /**
+             * return the result of dequeue() call
+             */
+            return item;
+        }
+    };
+}
+/**
+ * Main function, calls enqueue and dequeue
+ */
 int main()
 {
+
+    int keys[] = {1, 2, 3, 4, 5};
     Queue q;
-    q.enqueue(3);
-    q.enqueue(4);
-    q.enqueue(5);
-    q.enqueue(6);
-    q.enqueue(7);
 
-    std::cout << q.dequeue() <<" ";
-    std::cout << q.dequeue() <<" ";
-    std::cout << q.dequeue()<<" ";
-    std::cout << q.dequeue()<<" ";
-    std::cout << q.dequeue()<<" ";
+    /**
+     * Adding key to the Queue
+     */
 
+    for (int key : keys)
+    {
+        q.enqueue(key);
+    }
+    /**
+     * Print
+     *
+     */
+    std::cout << q.dequeue() << " ";
+    std::cout << q.dequeue() << " ";
 
     return 0;
 }
-// DATA_STRUCTURES_QUEUE_IMPLEMENTATION_USING_TWO_STACKS
-
-  
 
