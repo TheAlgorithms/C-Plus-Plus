@@ -371,5 +371,7 @@
   * [Horspool](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/horspool.cpp)
   * [Knuth Morris Pratt](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/knuth_morris_pratt.cpp)
   * [Manacher Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/manacher_algorithm.cpp)
+  * [Naive Pattern Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/naive_pattern_search.cpp)
   * [Rabin Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/rabin_karp.cpp)
+  * [Test Naive Pattern Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/test_naive_pattern_search.cpp)
   * [Z Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/strings/z_function.cpp)
