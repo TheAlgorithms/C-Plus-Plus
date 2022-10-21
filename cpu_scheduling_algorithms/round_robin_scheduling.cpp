@@ -92,13 +92,6 @@ std::ostream& operator<<(std::ostream& ostream,
                          const std::vector<ProcessResult>& results);
 
 /**
- * @brief Self-test implementations.
- *
- * \returns void
- */
-static void Test();
-
-/**
  * @brief Comparator function for sorting processes.
  *
  * \param p1 Process to be compared
@@ -127,16 +120,6 @@ void CheckArriveProcess(const std::vector<Process>& processes,
                         uint32_t time_elapsed);
 
 /**
- * @brief Entry point of the program.
- *
- * \return 0 on exit
- */
-int main() {
-    Test();
-    return 0;
-}
-
-/**
  * @brief Self-test implementations
  * @returns void
  */
@@ -160,6 +143,16 @@ static void Test() {
     std::cout << results;
     assert(results == correct_results);
     std::cout << "All test passed";
+}
+
+/**
+ * @brief Entry point of the program.
+ *
+ * \return 0 on exit
+ */
+int main() {
+    Test();
+    return 0;
 }
 
 std::vector<ProcessResult> RRExecute(const std::vector<Process>& processes,
