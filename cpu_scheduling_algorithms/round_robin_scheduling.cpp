@@ -142,7 +142,7 @@ static void Test() {
 
     std::cout << results;
     assert(results == correct_results);
-    std::cout << "All test passed";
+    std::cout << "All test passed.\n";
 }
 
 /**
