@@ -1,82 +1,148 @@
-/**
- * @file
- * @brief Implementation to [count number of set bits of a number]
- * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
- * integer.
- *
- * @details
- * We are given an integer number. We need to calculate the number of set bits
- * in it.
- *
- * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
- * set bit in computer terms.
- * Worst Case Time Complexity: O(log n)
- * Space complexity: O(1)
- * @author [Swastika Gupta](https://github.com/Swastyy)
- * @author [Prashant Thakur](https://github.com/prashant-th18)
- */
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO operations
-/**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
- */
-namespace bit_manipulation {
-/**
- * @namespace count_of_set_bits
- * @brief Functions for the [count sets
- * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
- * implementation
- */
-namespace count_of_set_bits {
-/**
- * @brief The main function implements set bit count
- * @param n is the number whose set bit will be counted
- * @returns total number of set-bits in the binary representation of number `n`
- */
-std::uint64_t countSetBits(
-    std ::int64_t n) {  // int64_t is preferred over int so that
-                        // no Overflow can be there.
+// C++ program to Count set
+// # Method 1
 
-    int count = 0;  // "count" variable is used to count number of set-bits('1')
-                    // in binary representation of number 'n'
-    while (n != 0) {
-        ++count;
-        n = (n & (n - 1));
+// bits in an integer
+#include <bits/stdc++.h>
+using namespace std;
+ 
+/* Function to get no of set bits in binary
+representation of positive integer n */
+
+unsigned int countSetBits(unsigned int n)
+{
+    unsigned int count = 0;
+    while (n) {
+        count += n & 1;
+        n >>= 1;
     }
     return count;
-    // Why this algorithm is better than the standard one?
-    // Because this algorithm runs the same number of times as the number of
-    // set-bits in it. Means if my number is having "3" set bits, then this
-    // while loop will run only "3" times!!
 }
-}  // namespace count_of_set_bits
-}  // namespace bit_manipulation
-
-static void test() {
-    // n = 4 return 1
-    assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);
-    // n = 6 return 2
-    assert(bit_manipulation::count_of_set_bits::countSetBits(6) == 2);
-    // n = 13 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(13) == 3);
-    // n = 9 return 2
-    assert(bit_manipulation::count_of_set_bits::countSetBits(9) == 2);
-    // n = 15 return 4
-    assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);
-    // n = 25 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);
-    // n = 97 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(97) == 3);
-    // n = 31 return 5
-    assert(bit_manipulation::count_of_set_bits::countSetBits(31) == 5);
-    std::cout << "All test cases successfully passed!" << std::endl;
-}
-/**
- * @brief Main function
- * @returns 0 on exit
- */
-int main() {
-    test();  // run self-test implementations
+ 
+/* Program to test function countSetBits */
+int main()
+{
+    int i;
+    cin>>i;
+    cout << countSetBits(i);
     return 0;
 }
+
+
+/*
+
+# Method 2
+
+// cpp implementation of recursive approach to find the
+// number of set bits in binary representation of positive
+// integer n
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// recursive function to count set bits
+int countSetBits(int n)
+{
+    // base case
+    if (n == 0)
+        return 0;
+    else
+        // if last bit set add 1 else add 0
+        return (n & 1) + countSetBits(n >> 1);
+}
+ 
+// driver code
+int main()
+{
+    int n;
+    cin >> n;
+    // function calling
+    cout << countSetBits(n);
+    return 0;
+}
+
+*/
+
+/*
+
+# Method 3
+
+// C++ program to Count set
+// bits in an integer
+#include <iostream>
+using namespace std;
+class count{
+    /* Function to get no of set bits in binary
+representation of passed binary no. */
+
+public:
+    unsigned int countSetBits(int n)
+    {
+        unsigned int count = 0;
+        while (n) {
+            n &= (n - 1);
+            count++;
+        }
+        return count;
+    }
+};
+
+*/
+
+/*
+
+# Method 4
+
+// CPP implementation for recursive
+// approach to find the number of set
+// bits using Brian Kernighan’s Algorithm
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// recursive function to count set bits
+int countSetBits(int n)
+{
+    // base case
+    if (n == 0)
+        return 0;
+    else
+        return 1 + countSetBits(n & (n - 1));
+}
+ 
+*/
+
+/*
+
+# Method 5
+
+// C++ implementation of the approach
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int BitsSetTable256[256];
+ 
+// Function to initialise the lookup table
+void initialize()
+{
+ 
+    // To initially generate the
+    // table algorithmically
+    BitsSetTable256[0] = 0;
+    for (int i = 0; i < 256; i++)
+    {
+        BitsSetTable256[i] = (i & 1) +
+        BitsSetTable256[i / 2];
+    }
+}
+ 
+// Function to return the count
+// of set bits in n
+int countSetBits(int n)
+{
+    return (BitsSetTable256[n & 0xff] +
+            BitsSetTable256[(n >> 8) & 0xff] +
+            BitsSetTable256[(n >> 16) & 0xff] +
+            BitsSetTable256[n >> 24]);
+}
+ 
+
+*/
