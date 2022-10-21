@@ -9,7 +9,7 @@
  * @author [Daemon19](https://github.com/Daemon19)
  */
 
-#include <algorithm>  /// So I can use std::sort
+#include <algorithm>  /// For std::sort
 #include <cassert>    /// For testing the round-robin algorithm
 #include <iomanip>    /// For formatting process results output
 #include <iostream>   /// For outputting process execution results
