@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Implementation of Round Robin CPU scheduling algorithm
+ * @brief Implementation of [Round Robin CPU
+ * scheduling](https://en.wikipedia.org/wiki/Round-robin_scheduling) algorithm
  * @details
  * Round-robin is a preemptive CPU scheduling algorithm where each
  * ready task runs turn by turn only in a cyclic queue for a limited
