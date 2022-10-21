@@ -133,6 +133,7 @@ void test3() {
     std::cout << "Test #3: ";
     assert(derived_ans == expected_ans);
     std::cout << "Passed!" << std::endl;
+    std::cout << "All test passes successfully!" << std::endl;
 }
 
 /*******************************************************************************
