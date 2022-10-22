@@ -8,16 +8,16 @@
  * has occured'.
  */
 #include <iostream>
-
+using namespace std;
 /** returns P(A|B)
  */
-double bayes_AgivenB(double BgivenA, double A, double B) {
+inline double bayes_AgivenB(double BgivenA, double A, double B) {
     return (BgivenA * A) / B;
 }
 
 /** returns P(B|A)
  */
-double bayes_BgivenA(double AgivenB, double A, double B) {
+inline double bayes_BgivenA(double AgivenB, double A, double B) {
     return (AgivenB * B) / A;
 }
 
@@ -28,7 +28,7 @@ int main() {
     double B = 0.1;
     double BgivenA = 0.9;
     double AgivenB = bayes_AgivenB(BgivenA, A, B);
-    std::cout << "A given B = " << AgivenB << std::endl;
-    std::cout << "B given A = " << bayes_BgivenA(AgivenB, A, B) << std::endl;
+    cout << "A given B = " << AgivenB << :endl;
+    cout << "B given A = " << bayes_BgivenA(AgivenB, A, B) << endl;
     return 0;
 }
