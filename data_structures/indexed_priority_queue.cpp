@@ -43,9 +43,9 @@ class IPQ
 		std::unordered_map<T1,T2> val; ///< key : val
 		std::unordered_map<T1,int> pm; ///< key : heap index
 		std::unordered_map<int,T1> im; ///< heap index : key
-
-	public:
 		int size = 0; ///< the size of the heap
+		
+	public:
 						
 		/**
 		 * @brief Constructor for IPQ
@@ -128,6 +128,14 @@ class IPQ
 			swim(pos);
 		}
 
+		/**
+		 * @brief returns the number of elements in the IPQ
+	     */
+		int getSize()
+		{
+			return size;
+		}
+
 	private:
 		
 		/**
@@ -206,7 +214,7 @@ static void test() {
 	ipqA.insert(5,2);
 
 	std::vector<std::pair<int,int>> heapA;
-	while(ipqA.size)
+	while(ipqA.getSize())
 	{
 		auto x = ipqA.pop();
 		heapA.push_back(x);
@@ -232,7 +240,7 @@ static void test() {
 	ipqB.remove("c++");
 
 	std::vector<std::pair<std::string,int>> heapB;
-	while(ipqB.size)
+	while(ipqB.getSize())
 	{
 		auto x = ipqB.pop();
 		heapB.push_back(x);
