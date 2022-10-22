@@ -14,7 +14,7 @@
  */
 
 #include<iostream>  // For standard I/O
-#include<cassert> // For testcases check
+#include<cassert> // For assert
 #include<time.h> // For shuffling array using srand(time(NULL))
 
 // For the nodes of Binary Search Tree
