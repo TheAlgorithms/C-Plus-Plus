@@ -10,7 +10,7 @@
  */
 
 #include<iostream>  // For standard I/O, in our case printing values of variable 'a' and 'b'
-#include<cassert> // For testcases check
+#include<cassert> // For assert
 
 bool bitwiseSwap(int a, int b) {
     /* Explanation of below code is assuming that value of a = 2,
