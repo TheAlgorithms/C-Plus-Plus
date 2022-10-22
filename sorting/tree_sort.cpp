@@ -3,12 +3,12 @@
  * @brief Tree Sort Algorithm 
  * More about it: https://en.wikipedia.org/wiki/Tree_sort
  * @details
- * Tree sort algorithm is a stable sorting algorithm which uses property of how a BST stores data.
+ * Tree sort algorithm is a stable sorting algorithm that uses the property of how a BST stores data.
  * Tree sort performs an inorder traversal on a BST to get the sorted order of elements.
  * Worst case time-complexity of tree_sort is O(N*log(N)), given that the tree is balanced.
  * To ensure that we use a balanced BST, we are using left-leaning Red-Black BST implementation of BST
  * ensuring that our tree stays balanced all the time.
- * Best case, Average case, Worst case time complexity for tree_sort: N*log(N)
+ * Best case, Average case, the Worst case time complexity for tree_sort: N*log(N)
  * Space complexity: O(n)
  * @author [Puneet Tripathi](https://github.com/PuneetTri)
  */
