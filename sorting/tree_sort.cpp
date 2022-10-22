@@ -79,8 +79,8 @@ node *insert(int val, node *root) {
     if(val > root->data) root->right = insert(val, root->right);
 
     /* Check if any of the red link subtrees are leaning in the wrong direction
-    *  This is a left-leaning Red-Black BST, so all red-links should be left leaning, by definition.
-    *  For more information about it; refer to wikipedia link at top
+    *  This is a left-leaning Red-Black BST, so all red-links should be left-leaning, by definition.
+    *  For more information about it; refer to Wikipedia link at top
     */ 
     if(isRed(root->right) && !isRed(root->left)) root = rotateLeft(root);
     if(isRed(root->left) && !isRed(root->left->left)) root = rotateRight(root);
