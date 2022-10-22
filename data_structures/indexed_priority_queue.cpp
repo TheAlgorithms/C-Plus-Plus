@@ -3,7 +3,7 @@
  * @brief This is an implementation of an min indexed priority queue,
  * which, unlike a regular priority queue, has key value pairs, which 
  * can be looked up in O(1), just like a hashmap. lower priority numbers
- * refer to higher priority.
+ * refer to higher priority. 
  * @details
  * As mentioned in the brief, an indexed priority queue operates on 
  * the basis of a hashmap, providing its benefit of having O(1) searching
@@ -13,7 +13,8 @@
  * implementation are the unique identifiers or stored values of the 
  * queue, whilst the values refer to the comparable that will be used
  * to prioritise different items. 
- * refer to william fiset's video for a more detailed explanation:
+ * More information can be found [here](https://en.wikipedia.org/wiki/Priority_queue)
+ * refer to william fiset's video for a video explanation:
  * https://youtu.be/jND_WJ8r7FE
  * @author [ron0studios](https://github.com/ron0studios)
  */
@@ -204,6 +205,15 @@ class IPQ
 		}
 };
 
+
+/**
+ * @brief Self-test implementations
+ * @details Runs 2 tests. The first test confirms whether
+ * the priority queue performs with insertions in order. The
+ * second test confirms whether the queue operates with delete
+ * operations and can handle other datatypes. 
+ * @returns void
+ */
 static void test() {
 	// test round A (basic insertion)
 	IPQ<int,int> ipqA;
