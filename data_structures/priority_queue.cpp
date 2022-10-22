@@ -18,7 +18,7 @@
  */
 
 #include<iostream> // For standard I/O
-#include<cassert> // For testcases check
+#include<cassert> // For assert
 #include<utility> // For importing swap utility function
 
 // Class 
