@@ -1,124 +1,78 @@
-#include <limits.h>
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-// Wrapper class for storing a graph
-class Graph {
- public:
-    int vertexNum;
-    int **edges;
+#define ll  long long int
+#define vi  vector<int>
+#define vll vector<long long int>
 
-    // Constructs a graph with V vertices and E edges
-    Graph(const int V) {
-        // initializes the array edges.
-        this->edges = new int *[V];
-        for (int i = 0; i < V; i++) {
-            edges[i] = new int[V];
+#define INF 1e12
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+typedef tuple<int, int, int> iii;
+
+int main(){
+    #ifndef ONLINE_JUDGE 
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
+    std::ios::sync_with_stdio(false);
+    
+    int n,m;
+
+    cin >> n >> m;
+
+    vector<vii> AL(n+1, vii());
+    int u, v, w;
+    
+    for (int i = 0; i < m; ++i)
+    {   
+        cin >> u >> v >> w;
+        // The graph here is undirected:
+        AL[u].emplace_back(v, w);
+        AL[v].emplace_back(u, w);
+    }
+
+    vll dist(n+1, INF);
+    dist[1] = 0;
+    
+    vi pred(n+1, -1);
+    pred[1] = 1;
+
+    priority_queue<ii, vector<ii>, greater<ii>> pq; 
+    pq.push({0, 1});
+
+    // sort the pairs by non-decreasing distance from s
+    while (!pq.empty()) {                          // main loop
+        auto [d, u] = pq.top(); pq.pop();          // shortest unvisited u
+
+        if (d > dist[u]) continue;                 // a very important check
+
+        for (auto &[v, w] : AL[u]) {               // all edges from u
+            if (dist[u]+w >= dist[v]) continue;    // not improving, skip
+        
+            dist[v] = dist[u]+w;                   // relax operation
+            pred[v] = u;
+            pq.push({dist[v], v});                 // enqueue better pair
+        
         }
-
-        // fills the array with zeros.
-        for (int i = 0; i < V; i++) {
-            for (int j = 0; j < V; j++) {
-                edges[i][j] = 0;
-            }
-        }
-
-        this->vertexNum = V;
     }
-
-    // Adds the given edge to the graph
-    void addEdge(int src, int dst, int weight) {
-        this->edges[src][dst] = weight;
-    }
-};
-// Utility function to find minimum distance vertex in mdist
-int minDistance(int mdist[], bool vset[], int V) {
-    int minVal = INT_MAX, minInd = 0;
-    for (int i = 0; i < V; i++) {
-        if (!vset[i] && (mdist[i] < minVal)) {
-            minVal = mdist[i];
-            minInd = i;
-        }
-    }
-
-    return minInd;
-}
-
-// Utility function to print distances
-void print(int dist[], int V) {
-    cout << "\nVertex  Distance" << endl;
-    for (int i = 0; i < V; i++) {
-        if (dist[i] < INT_MAX)
-            cout << i << "\t" << dist[i] << endl;
-        else
-            cout << i << "\tINF" << endl;
-    }
-}
-
-// The main function that finds the shortest path from given source
-// to all other vertices using Dijkstra's Algorithm.It doesn't work on negative
-// weights
-void Dijkstra(Graph graph, int src) {
-    int V = graph.vertexNum;
-    int mdist[V];  // Stores updated distances to vertex
-    bool vset[V];  // vset[i] is true if the vertex i included
-    // in the shortest path tree
-
-    // Initialise mdist and vset. Set distance of source as zero
-    for (int i = 0; i < V; i++) {
-        mdist[i] = INT_MAX;
-        vset[i] = false;
-    }
-
-    mdist[src] = 0;
-
-    // iterate to find shortest path
-    for (int count = 0; count < V - 1; count++) {
-        int u = minDistance(mdist, vset, V);
-
-        vset[u] = true;
-
-        for (int v = 0; v < V; v++) {
-            if (!vset[v] && graph.edges[u][v] &&
-                mdist[u] + graph.edges[u][v] < mdist[v]) {
-                mdist[v] = mdist[u] + graph.edges[u][v];
-            }
+    if(dist[n] == INF)
+        cout << "-1";
+    else{
+        vi path;
+        int current = n;
+        while(current != 1){
+            path.push_back(current);
+            current = pred[current];
+        } 
+        path.push_back(current);
+        reverse(path.begin(),path.end());
+        for(auto x : path){
+            cout << x << " "; 
         }
     }
 
-    print(mdist, V);
-}
+ return 0;   
 
-// Driver Function
-int main() {
-    int V, E, gsrc;
-    int src, dst, weight;
-    cout << "Enter number of vertices: ";
-    cin >> V;
-    cout << "Enter number of edges: ";
-    cin >> E;
-    Graph G(V);
-    for (int i = 0; i < E; i++) {
-        cout << "\nEdge " << i + 1 << "\nEnter source: ";
-        cin >> src;
-        cout << "Enter destination: ";
-        cin >> dst;
-        cout << "Enter weight: ";
-        cin >> weight;
-
-        // makes sure source and destionation are in the proper bounds.
-        if (src >= 0 && src < V && dst >= 0 && dst < V) {
-            G.addEdge(src, dst, weight);
-        } else {
-            cout << "source and/or destination out of bounds" << endl;
-            i--;
-            continue;
-        }
-    }
-    cout << "\nEnter source:";
-    cin >> gsrc;
-    Dijkstra(G, gsrc);
-
-    return 0;
 }
