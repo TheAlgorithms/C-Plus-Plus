@@ -19,13 +19,12 @@
  */
 
 
-#include <vector> /// std::vector
-#include <utility> /// std::pair
-#include <unordered_map> /// std::std::unordered_map
-#include <cmath> /// std::floor
-
-#include <string> /// tests
-#include <cassert>   /// for assert
+#include <vector>          /// for std::vector
+#include <utility>        /// for std::pair
+#include <unordered_map> /// for std::unordered_map
+#include <cmath>        /// for std::floor
+#include <string>       /// for std::string
+#include <cassert>      /// for assert
 
 
 /**
@@ -256,8 +255,12 @@ static void test() {
 	assert(heapB == expectedB);
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main()
 {
-	test();
+    test();  // run self-test implementations
     return 0;
 }

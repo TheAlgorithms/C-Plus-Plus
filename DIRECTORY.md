@@ -51,6 +51,7 @@
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/doubly_linked_list.cpp)
   * [Dsu Path Compression](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/dsu_path_compression.cpp)
   * [Dsu Union Rank](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/dsu_union_rank.cpp)
+  * [Indexed Priority Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/indexed_priority_queue.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/linkedlist_implentation_usingarray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/data_structures/list_array.cpp)
