@@ -1,6 +1,16 @@
-// Hamiltonian Path: https://en.wikipedia.org/wiki/Hamiltonian_path
+/**
+ * @file
+ * @brief The implementation of [Hamilton's
+ * cycle](https://en.wikipedia.org/wiki/Hamiltonian_path) backtracking solution for
+ * vertices number less than 5.
+ * @details
+ * A code for the same problem was already present in this repo using dp, but I tried to implement it using recursion.
+ *
+ * @author [aditi-dey29](https://github.com/aditi-dey29)
+ */
 
 /* Hamiltonian Cycle detection algorithm using backtracking */
+#include <cassert>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -76,10 +86,10 @@ int main(){
 	//	| / \ |
 	//	(3)-------(4) 
 	bool graph1[V][V] = {{0, 1, 0, 1, 0},
-						{1, 0, 1, 1, 1},
-						{0, 1, 0, 0, 1},
-						{1, 1, 0, 0, 1},
-						{0, 1, 1, 1, 0}};
+			     {1, 0, 1, 1, 1},
+			     {0, 1, 0, 0, 1},
+			     {1, 1, 0, 0, 1},
+			     {0, 1, 1, 1, 0}};
 	
 	// Printing the solution
 	hamCycle(graph1);
