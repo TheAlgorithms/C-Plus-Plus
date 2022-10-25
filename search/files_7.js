@@ -8,5 +8,6 @@ var searchData=
   ['gnome_5fsort_2ecpp_5',['gnome_sort.cpp',['../d2/d21/gnome__sort_8cpp.html',1,'']]],
   ['golden_5fsearch_5fextrema_2ecpp_6',['golden_search_extrema.cpp',['../d6/d7a/golden__search__extrema_8cpp.html',1,'']]],
   ['gram_5fschmidt_2ecpp_7',['gram_schmidt.cpp',['../d5/d33/gram__schmidt_8cpp.html',1,'']]],
-  ['graph_5fcoloring_2ecpp_8',['graph_coloring.cpp',['../d3/d40/graph__coloring_8cpp.html',1,'']]]
+  ['graph_5fcoloring_2ecpp_8',['graph_coloring.cpp',['../d3/d40/graph__coloring_8cpp.html',1,'']]],
+  ['ground_5fto_5fground_5fprojectile_5fmotion_2ecpp_9',['ground_to_ground_projectile_motion.cpp',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html',1,'']]]
 ];

@@ -19,7 +19,7 @@ var searchData=
   ['hash_5fbs_16',['hash_bs',['../d8/d7a/sha1_8cpp.html#a7be3471f7e489d7d0df42b97a48bf141',1,'hashing::sha1::hash_bs()'],['../d5/d96/md5_8cpp.html#a5341431cef7fcfc33794326e1deb2425',1,'hashing::md5::hash_bs()']]],
   ['hash_5fchain_17',['hash_chain',['../dd/d1c/classhash__chain.html',1,'hash_chain'],['../dd/d1c/classhash__chain.html#a80c8b902a15b4fd062ed727ecf8f3595',1,'hash_chain::hash_chain()']]],
   ['hash_5fcode_18',['hash_code',['http://en.cppreference.com/w/cpp/types/type_index/hash_code.html',0,'std::type_index::hash_code()'],['http://en.cppreference.com/w/cpp/types/type_info/hash_code.html',0,'std::type_info::hash_code()']]],
-  ['hash_5ffunction_19',['hash_function',['http://en.cppreference.com/w/cpp/container/unordered_multiset/hash_function.html',0,'std::unordered_multiset::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_map/hash_function.html',0,'std::unordered_map::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/hash_function.html',0,'std::unordered_multimap::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_set/hash_function.html',0,'std::unordered_set::hash_function()']]],
+  ['hash_5ffunction_19',['hash_function',['http://en.cppreference.com/w/cpp/container/unordered_set/hash_function.html',0,'std::unordered_set::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_map/hash_function.html',0,'std::unordered_map::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/hash_function.html',0,'std::unordered_multimap::hash_function()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/hash_function.html',0,'std::unordered_multiset::hash_function()']]],
   ['hash_5fsearch_20',['hash_search',['../d1/df3/hash__search_8cpp.html#a36ea13c16028f18ef2d5ff47f3fda7a2',1,'hash_search.cpp']]],
   ['hash_5fsearch_2ecpp_21',['hash_search.cpp',['../d1/df3/hash__search_8cpp.html',1,'']]],
   ['hashdjb2_22',['hashDJB2',['../d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4',1,'data_structures']]],
@@ -51,11 +51,12 @@ var searchData=
   ['hld_48',['HLD',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a6e486767434e44076c1ac374a22da726',1,'range_queries::heavy_light_decomposition::HLD::HLD()'],['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html',1,'range_queries::heavy_light_decomposition::HLD&lt; X &gt;']]],
   ['hopcroft_5fkarp_2ecpp_49',['hopcroft_karp.cpp',['../d1/d9a/hopcroft__karp_8cpp.html',1,'']]],
   ['hopcroftkarpalgorithm_50',['hopcroftKarpAlgorithm',['../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d',1,'graph::HKGraph']]],
-  ['horspool_51',['horspool',['../d5/d02/namespacehorspool.html',1,'horspool'],['../d3/dfe/horspool_8cpp.html#a9884bca75ce39c116697ea2574adb37d',1,'strings::horspool::horspool()']]],
-  ['horspool_2ecpp_52',['horspool.cpp',['../d3/dfe/horspool_8cpp.html',1,'']]],
-  ['hours_53',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours::hours()'],['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono::hours']]],
-  ['house_5frobber_54',['house_robber',['../d2/de1/namespacehouse__robber.html',1,'']]],
-  ['house_5frobber_2ecpp_55',['house_robber.cpp',['../d6/d26/house__robber_8cpp.html',1,'']]],
-  ['houserobber_56',['houseRobber',['../d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8',1,'dynamic_programming::house_robber']]],
-  ['hypot_57',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
+  ['horizontal_5frange_51',['horizontal_range',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff',1,'physics::ground_to_ground_projectile_motion']]],
+  ['horspool_52',['horspool',['../d5/d02/namespacehorspool.html',1,'horspool'],['../d3/dfe/horspool_8cpp.html#a9884bca75ce39c116697ea2574adb37d',1,'strings::horspool::horspool()']]],
+  ['horspool_2ecpp_53',['horspool.cpp',['../d3/dfe/horspool_8cpp.html',1,'']]],
+  ['hours_54',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours::hours()'],['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono::hours']]],
+  ['house_5frobber_55',['house_robber',['../d2/de1/namespacehouse__robber.html',1,'']]],
+  ['house_5frobber_2ecpp_56',['house_robber.cpp',['../d6/d26/house__robber_8cpp.html',1,'']]],
+  ['houserobber_57',['houseRobber',['../d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8',1,'dynamic_programming::house_robber']]],
+  ['hypot_58',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
 ];

@@ -3,11 +3,11 @@ var searchData=
   ['h_0',['h',['../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001',1,'hash_search.cpp']]],
   ['hadamard_5fproduct_1',['hadamard_product',['../d8/d77/namespacemachine__learning.html#acafa3e62b686aebdbad81c4f89913f43',1,'machine_learning']]],
   ['hamilton_5fcycle_2',['hamilton_cycle',['../dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4',1,'hamiltons_cycle.cpp']]],
-  ['hamming_5fdistance_3',['hamming_distance',['../d4/d48/hamming__distance_8cpp.html#abfe6fbb2f3460a2623c96f283178a07a',1,'bit_manipulation::hamming_distance::hamming_distance(uint64_t a, uint64_t b)'],['../d4/d48/hamming__distance_8cpp.html#a40ba9fe8b5df5c268f0c7d677ff2fe80',1,'bit_manipulation::hamming_distance::hamming_distance(const std::string &amp;a, const std::string &amp;b)']]],
+  ['hamming_5fdistance_3',['hamming_distance',['../d4/d48/hamming__distance_8cpp.html#a40ba9fe8b5df5c268f0c7d677ff2fe80',1,'bit_manipulation::hamming_distance::hamming_distance(const std::string &amp;a, const std::string &amp;b)'],['../d4/d48/hamming__distance_8cpp.html#abfe6fbb2f3460a2623c96f283178a07a',1,'bit_manipulation::hamming_distance::hamming_distance(uint64_t a, uint64_t b)']]],
   ['hardware_5fconcurrency_4',['hardware_concurrency',['http://en.cppreference.com/w/cpp/thread/thread/hardware_concurrency.html',0,'std::thread']]],
   ['has_5ffacet_5',['has_facet',['http://en.cppreference.com/w/cpp/locale/has_facet.html',0,'std']]],
   ['haschildren_6',['hasChildren',['../dd/d2f/class_trie.html#a6d10eb1669453395d1900ebd401954fb',1,'Trie']]],
-  ['hash_7',['hash',['../d5/d96/md5_8cpp.html#a88705fab5f92adf3427b4cf76ff33edb',1,'hashing::md5::hash()'],['../d8/d7a/sha1_8cpp.html#a2397f2444a05e4d1487c67e215410d3c',1,'hashing::sha1::hash()'],['../dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64',1,'hash_chain::hash()'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',0,'std::collate_byname::hash()'],['http://en.cppreference.com/w/cpp/utility/hash/hash.html',0,'std::hash::hash()'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',0,'std::collate::hash()']]],
+  ['hash_7',['hash',['../d8/d7a/sha1_8cpp.html#a2397f2444a05e4d1487c67e215410d3c',1,'hashing::sha1::hash()'],['../d5/d96/md5_8cpp.html#a88705fab5f92adf3427b4cf76ff33edb',1,'hashing::md5::hash()'],['../dd/d1c/classhash__chain.html#a846a2f921f8fb7ea572e03901b671d64',1,'hash_chain::hash()'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',0,'std::collate_byname::hash()'],['http://en.cppreference.com/w/cpp/utility/hash/hash.html',0,'std::hash::hash()'],['http://en.cppreference.com/w/cpp/locale/collate/hash.html',0,'std::collate::hash()']]],
   ['hash_5fbs_8',['hash_bs',['../d8/d7a/sha1_8cpp.html#a7be3471f7e489d7d0df42b97a48bf141',1,'hashing::sha1::hash_bs()'],['../d5/d96/md5_8cpp.html#a5341431cef7fcfc33794326e1deb2425',1,'hashing::md5::hash_bs()']]],
   ['hash_5fchain_9',['hash_chain',['../dd/d1c/classhash__chain.html#a80c8b902a15b4fd062ed727ecf8f3595',1,'hash_chain']]],
   ['hash_5fcode_10',['hash_code',['http://en.cppreference.com/w/cpp/types/type_index/hash_code.html',0,'std::type_index::hash_code()'],['http://en.cppreference.com/w/cpp/types/type_info/hash_code.html',0,'std::type_info::hash_code()']]],
@@ -25,8 +25,9 @@ var searchData=
   ['hkgraph_22',['HKGraph',['../d8/d69/classgraph_1_1_h_k_graph.html#a0da5aa674d3b3e54a38251ee60d7cd64',1,'graph::HKGraph::HKGraph(int m, int n)'],['../d8/d69/classgraph_1_1_h_k_graph.html#af02b0c83911070ac6d95fc9905e58aa9',1,'graph::HKGraph::HKGraph()']]],
   ['hld_23',['HLD',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a6e486767434e44076c1ac374a22da726',1,'range_queries::heavy_light_decomposition::HLD']]],
   ['hopcroftkarpalgorithm_24',['hopcroftKarpAlgorithm',['../d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d',1,'graph::HKGraph']]],
-  ['horspool_25',['horspool',['../d3/dfe/horspool_8cpp.html#a9884bca75ce39c116697ea2574adb37d',1,'strings::horspool']]],
-  ['hours_26',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours']]],
-  ['houserobber_27',['houseRobber',['../d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8',1,'dynamic_programming::house_robber']]],
-  ['hypot_28',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
+  ['horizontal_5frange_25',['horizontal_range',['../d9/d29/ground__to__ground__projectile__motion_8cpp.html#a10362eb607d7882bac3a0688504b00ff',1,'physics::ground_to_ground_projectile_motion']]],
+  ['horspool_26',['horspool',['../d3/dfe/horspool_8cpp.html#a9884bca75ce39c116697ea2574adb37d',1,'strings::horspool']]],
+  ['hours_27',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours']]],
+  ['houserobber_28',['houseRobber',['../d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8',1,'dynamic_programming::house_robber']]],
+  ['hypot_29',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
 ];
