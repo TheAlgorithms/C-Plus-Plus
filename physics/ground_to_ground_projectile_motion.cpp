@@ -14,11 +14,16 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace Physics
+ * @namespace physics
  * @brief Physics algorithms
  */
 namespace physics {
-
+/**
+ * @namespace ground_to_ground_projectile_motion
+ * @brief Functions for the Ground to ground [projectile
+ * motion](https://en.wikipedia.org/wiki/Projectile_motion) equation
+ */
+namespace ground_to_ground_projectile_motion {
 /**
  * @brief Convert radians to degrees
  * @param radian Angle in radians
@@ -66,6 +71,7 @@ T max_height(T initial_velocity, T angle, double gravity = 9.81) {
     double Viy = initial_velocity * (std::sin(degrees_to_radians(angle))); // calculate y component of the initial velocity
     return (std::pow(Viy, 2) / (2.0 * gravity));
 }
+}  // namespace ground_to_ground_projectile_motion
 }  // namespace physics
 
 /**
@@ -80,7 +86,7 @@ static void test() {
     // 1st test
     double expected_time_of_flight = 0.655;  // expected time output
     double flight_time_output =
-        std::round(physics::time_of_flight(initial_velocity, angle) * 1000.0) /
+        std::round(physics::ground_to_ground_projectile_motion::time_of_flight(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
 
     std::cout << "Projectile Flight Time (double)" << std::endl;
@@ -94,7 +100,7 @@ static void test() {
     // 2nd test
     double expected_horizontal_range = 2.51; // expected range output
     double horizontal_range_output =
-        std::round(physics::horizontal_range(initial_velocity, angle,
+        std::round(physics::ground_to_ground_projectile_motion::horizontal_range(initial_velocity, angle,
                                              flight_time_output) *
                    100.0) /
         100.0;  // round output to 2 decimal places
@@ -111,7 +117,7 @@ static void test() {
     // 3rd test
     double expected_max_height = 0.526; // expected height output
     double max_height_output =
-        std::round(physics::max_height(initial_velocity, angle) * 1000.0) /
+        std::round(physics::ground_to_ground_projectile_motion::max_height(initial_velocity, angle) * 1000.0) /
         1000.0;  // round output to 3 decimal places
 
     std::cout << "Projectile Max Height (double)" << std::endl;
