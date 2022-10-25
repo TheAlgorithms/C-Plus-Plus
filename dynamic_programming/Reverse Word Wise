@@ -1,5 +1,4 @@
 #include <iostream>
-#include "solution.h"
 #include<cstring>
 using namespace std;
 void reverseStringWordWise(char input[]) { 
