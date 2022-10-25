@@ -1,7 +1,6 @@
-#include<bits/stdc++.h>
+#include<iostream>
 #include<cassert>
 
-using namespace std;
 
 #define ll long long
 #define pb push_back
@@ -11,13 +10,6 @@ using namespace std;
 #define mp make_pair
 #define ii pair<int,int>
 #define vii vector<ii>
-
-static void tests(){
-  assert(binary_exponentiation(2,2)==4);
-  assert(binary_exponentiation(4,2)==16);
-  assert(binary_exponentiation(2,10)==1024);
-  cout<<"All tests successfully passed!\n";
-}
 
 // the concept is to do exponentiation by converting the power to a sum of powers of 2.
 // example: 3^13  we can convert 13 to 8+4+1. which can be represented by 1101. so to do 3^13 we can do instead
@@ -35,22 +27,25 @@ ll binary_exponentiation(ll a,ll b){
   return res;
 }
 
+static void tests(){
+  assert(binary_exponentiation(2,2)==4);
+  assert(binary_exponentiation(4,2)==16);
+  assert(binary_exponentiation(2,10)==1024);
+  std::cout<<"All tests successfully passed!\n";
+}
+
 int main(){
-  
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
   int mode;
-  cout<<"Please enter the mode you want to use \n (1) Self-Test Mode \n (2) Interactive Test Mode \n";
-  cin>>mode;
+  std::cout<<"Please enter the mode you want to use \n (1) Self-Test Mode \n (2) Interactive Test Mode \n";
+  std::cin>>mode;
   if(mode==1){
     ll a,b;
-    cout<<"Enter the base:\n";
-    cin>>a;
-    cout<<"Enter the exponent:\n";
-    cout<<b;
-    cout<<"The exponent of "<<a<<"^"<<b<<"is:\n";
-    cout<<binary_exponentiation(a,b);
+    std::cout<<"Enter the base:\n";
+    std::cin>>a;
+    std::cout<<"Enter the exponent:\n";
+    std::cout<<b;
+    std::cout<<"The exponent of "<<a<<"^"<<b<<"is:\n";
+    std::cout<<binary_exponentiation(a,b);
   }
   else{
     tests();
