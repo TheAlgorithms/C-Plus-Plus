@@ -290,6 +290,9 @@
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/tower_of_hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/others/vector_important_functions.cpp)
 
+## Physics
+  * [Ground To Ground Projectile Motion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/physics/ground_to_ground_projectile_motion.cpp)
+
 ## Probability
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
   * [Bayes Theorem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/bayes_theorem.cpp)
