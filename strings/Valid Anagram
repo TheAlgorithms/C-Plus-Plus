@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool isAnagram(string s, string t) 
+{
+        unordered_map<char,int> umap;
+        int i=0;
+        while(s[i]!='\0'){
+            umap[s[i]]++;
+            i++;
+        }
+        int j=0;
+        while(t[j]!='\0'){
+            umap[t[j]]--;
+            j++;
+        }
+        int counter=0;
+        for(auto it:umap){
+            if(it.second!=0)
+                counter=1;
+        }
+        if(counter==1)
+            return false;
+        return true;
+            
+}
+int main()
+{
+ string s,t;
+ cin>>s;
+ cin>>t;
+ bool ans=isAnagram(s,t);
+ if(ans)
+   cout<<"True"<<endl;
+ else
+   cout<<"False"<<endl;
+}
