@@ -1,27 +1,27 @@
-#include <iostream>
+#include <iostream>  //for io operations
 
 struct node {
-    int val;
+    int val;  // node of linked list declared
     node *next;
 };
 
-node *top_var;
+node *top_var;  // initialises top of the stack
 
 void push(int x) {
     node *n = new node;
-    n->val = x;
-    n->next = top_var;
-    top_var = n;
+    n->val = x;         // initialises the input value of the new node as x
+    n->next = top_var;  // passes the next pointer to top of stack
+    top_var = n;        // top now points to the new node created
 }
 
 void pop() {
-    if (top_var == nullptr) {
+    if (top_var == nullptr) {  // checks for empty stack
         std::cout << "\nUnderflow";
     } else {
-        node *t = top_var;
-        std::cout << "\n" << t->val << " deleted";
-        top_var = top_var->next;
-        delete t;
+        node *t = top_var;  // points to top element to store deletion
+        std::cout << "\n" << t->val << " deleted";  // outputs element deleted
+        top_var = top_var->next;  // moves top pointer to next element
+        delete t;                 // deletes top element
     }
 }
 
@@ -29,7 +29,7 @@ void show() {
     node *t = top_var;
     while (t != nullptr) {
         std::cout << t->val << "\n";
-        t = t->next;
+        t = t->next;  // shifts pointer till stack bottom is reached
     }
 }
 

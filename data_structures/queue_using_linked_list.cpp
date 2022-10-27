@@ -9,41 +9,44 @@ struct node {
 node *front, *rear;
 
 void Enque(int x) {
-    if (rear == NULL) {
+    if (rear == NULL) {  // check if queueis empty
         node *n = new node;
         n->val = x;
         n->next = NULL;
         rear = n;
-        front = n;
+        front = n;  // front and rear pointer assigned to only queue element
     }
 
     else {
         node *n = new node;
         n->val = x;
         n->next = NULL;
-        rear->next = n;
-        rear = n;
+        rear->next = n;  // adds node to rear of the queue
+        rear = n;  // shifts pointer so that it points towards newly added last
+                   // element
     }
 }
 
 void Deque() {
-    if (rear == NULL && front == NULL) {
+    if (rear == NULL && front == NULL) {  // checks if queue is empty
         cout << "\nUnderflow";
     } else {
         node *t = front;
         cout << "\n" << t->val << " deleted";
-        front = front->next;
+        front = front->next;  // shifts front pointer as first element has to be
+                              // deleted
         delete t;
-        if (front == NULL)
-            rear = NULL;
+        if (front == NULL)  // checks if the deletion makes queue empty
+            rear = NULL;    // initialises rear as null when queue has been
+                          // emptied
     }
 }
 
 void show() {
     node *t = front;
     while (t != NULL) {
-        cout << t->val << "\t";
-        t = t->next;
+        cout << t->val << "\t";  // displays all elements till last
+        t = t->next;             // element of queue is displayed
     }
 }
 
