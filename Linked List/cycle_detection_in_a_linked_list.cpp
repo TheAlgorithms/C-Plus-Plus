@@ -20,14 +20,19 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
         
+        //Nodes slow and fast pointing to head initially which would then traverse over the list to find the loop
         ListNode *slow = head, *fast = head;
         
         while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
+            
+            //When there is a loop
             if (slow == fast) return true;
         }
         
+        
+        //No loop is present
         return false;
     }
 };
