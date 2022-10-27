@@ -38,7 +38,7 @@ void Deque() {
         delete t;
         if (front == NULL)  // checks if the deletion makes queue empty
             rear = NULL;    // initialises rear as null when queue has been
-                          // emptied
+                            // emptied
     }
 }
 
