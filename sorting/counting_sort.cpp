@@ -1,57 +1,64 @@
-#include <iostream>
+// C++ Program for counting sort
+#include <bits/stdc++.h>
+#include <string.h>
 using namespace std;
+#define RANGE 255
 
-int Max(int Arr[], int N) {
-    int max = Arr[0];
-    for (int i = 1; i < N; i++)
-        if (Arr[i] > max)
-            max = Arr[i];
-    return max;
+// The main function that sort
+// the given string arr[] in
+// alphabetical order
+void countSort(char arr[])
+{
+	// The output character array
+	// that will have sorted arr
+	char output[strlen(arr)];
+
+	// Create a count array to store count of individual
+	// characters and initialize count array as 0
+	int count[RANGE + 1], i;
+	memset(count, 0, sizeof(count));
+
+	// Store count of each character
+	for (i = 0; arr[i]; ++i)
+		++count[arr[i]];
+
+	// Change count[i] so that count[i] now contains actual
+	// position of this character in output array
+	for (i = 1; i <= RANGE; ++i)
+		count[i] += count[i - 1];
+
+	// Build the output character array
+	for (i = 0; arr[i]; ++i) {
+		output[count[arr[i]] - 1] = arr[i];
+		--count[arr[i]];
+	}
+
+	/*
+	For Stable algorithm
+	for (i = sizeof(arr)-1; i>=0; --i)
+	{
+		output[count[arr[i]]-1] = arr[i];
+		--count[arr[i]];
+	}
+	
+	For Logic : See implementation
+	*/
+
+	// Copy the output array to arr, so that arr now
+	// contains sorted characters
+	for (i = 0; arr[i]; ++i)
+		arr[i] = output[i];
 }
 
-int Min(int Arr[], int N) {
-    int min = Arr[0];
-    for (int i = 1; i < N; i++)
-        if (Arr[i] < min)
-            min = Arr[i];
-    return min;
+// Driver code
+int main()
+{
+	char arr[] = "geeksforgeeks";
+
+	countSort(arr);
+
+	cout << "Sorted character array is " << arr;
+	return 0;
 }
 
-void Print(int Arr[], int N) {
-    for (int i = 0; i < N; i++) cout << Arr[i] << ", ";
-}
-
-int *Counting_Sort(int Arr[], int N) {
-    int max = Max(Arr, N);
-    int min = Min(Arr, N);
-    int *Sorted_Arr = new int[N];
-
-    int *Count = new int[max - min + 1];
-
-    for (int i = 0; i < N; i++) Count[Arr[i] - min]++;
-
-    for (int i = 1; i < (max - min + 1); i++) Count[i] += Count[i - 1];
-
-    for (int i = N - 1; i >= 0; i--) {
-        Sorted_Arr[Count[Arr[i] - min] - 1] = Arr[i];
-        Count[Arr[i] - min]--;
-    }
-
-    return Sorted_Arr;
-}
-
-int main() {
-    int Arr[] = {47, 65, 20, 66, 25, 53, 64, 69, 72, 22,
-                 74, 25, 53, 15, 42, 36, 4,  69, 86, 19},
-        N = 20;
-    int *Sorted_Arr;
-
-    cout << "\n\tOrignal Array = ";
-    Print(Arr, N);
-    Sorted_Arr = Counting_Sort(Arr, N);
-    cout << "\n\t Sorted Array = ";
-    Print(Sorted_Arr, N);
-    cout << endl;
-
-    return 0;
-}
+// This code is contributed by rathbhupendra
