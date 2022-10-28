@@ -2,16 +2,29 @@
  * @file
  * @brief Implementation of [The Jacobi Method]
  (https://en.wikipedia.org/wiki/Jacobi_method#Algorithm)
- (https://college.cengage.com/mathematics/larson/elementary_linear/5e/students/ch08-10/chap_10_2.pdf)
  * @details
  * ### Algorithm
+ *
+ * 1) Input taken : A->(coefficient matrix), b->(column vector), ite->(number of
+ iterations)
+ * 2) Other variables taken : n->(order of A), prev->(initial column vector and
+ to store the current value),
+ * succ->(column vector to store updated value)
+ * 3) For (i=1, i<=ite, ++i){
+ *      For (j=1, j<=n, ++j){
+ *          succ[j] = (b[j] - Summation[A[j][k]*prev[k], 1<=k<=n and
+ k!=j])/A[j][j]
+ *      }
+ *      prev = succ
+ * }
+ * 4) Print[succ]
  *
  * This is an iterative method to solve the system of linear equations
  * with two assumptions :-
  * 1) system has a unique solution.
  * 2) the coefficient matrix has not zeros on main diagonal.
  *
- * Implementation:
+ * Implementation on a model problem :
  * model problem:
  * a11*x + a12*y + a13*z = b1 |\
  * a21*x + a22*y + a23*z = b2    >> Given system of Equation.
@@ -24,6 +37,7 @@
  *
  * Then we have an initial approximation values variables in vector X =
  * [x0,y0,z0] Iterations : (Note: in xi,yi,zi , i represent the iteration no.)
+ * (the Inner loop iterations from the algorithm!)
  * x(i+1) = (b1 - a12*yi - a13*zi)/a11
  * y(i+1) = (b2 - a21*xi - a23*zi)/a22
  * z(i+1) = (b3 - a32*xi - a32*yi)/a33
@@ -45,7 +59,8 @@ using std::vector;
 
 /**
  * @namespace jacobi
- * @brief
+ * @brief Class for the [Jacobi Method]
+   (https://en.wikipedia.org/wiki/Jacobi_method) implementation
  */
 
 namespace jacobi {
@@ -53,6 +68,13 @@ namespace jacobi {
 /**
  *@brief jacobi_method documentation
  * jacobi_method class is to implement [The Jacobi Method].
+ * This class object taking the essential inputs like
+ * 1) The coefficient matrix
+ * 2) column vector
+ * 3) number of iterations i.e no. of time approximations to be performed
+ *
+ * Then Function [jacobi()] peforms the algorithm with the data members and
+ * returns the final approximation.
  */
 
 class jacobi_method {
@@ -72,7 +94,7 @@ class jacobi_method {
 
 /**
  * @brief jacobi_method()
- *
+ * This function is class constructor which initiates the class data members.
  * @param c_m coefficient matrix
  * @param c_v column vector
  * @param iterations number of iterations
@@ -90,6 +112,8 @@ jacobi_method::jacobi_method(vector<vector<float>> c_m, vector<float> c_v,
 
 /**
  * @brief calc()
+ * It performing a small calculation part in the algorithm implementation :
+    Summation[A[j][k]*prev[k], 1<=k<=n and k!=j]
  *
  * @param x previous approximated solution values
  * @param k index value of corresponding evaluating function
@@ -111,7 +135,8 @@ float jacobi_method::calc(vector<float> x, int k) {
 
 /**
  * @brief jacobi()
- *
+ * Function performing algorithm with class data members.
+ * please refer file documentation for algorithm.
  * @return vector<float>
  */
 
@@ -130,14 +155,14 @@ vector<float> jacobi_method::jacobi() {
 
 /**
  * @brief roundoff()
- *
+ * roundoff the values to some no. of decimals.
  * @param value value to be roundoff
  * @param prec number of decimals places
- * @return float
+ * @return double
  */
 
 double roundoff(float value, unsigned char prec) {
-    float pow_10 = pow(10.0f, (float)prec);
+    float pow_10 = pow(10.0f, static_cast<float>(prec));
     return round(value * pow_10) / pow_10;
 }
 
@@ -161,7 +186,7 @@ static void test() {
 /**
  * @brief Main function
  *
- * @return 0 on exit
+ * @returns 0 on exit
  */
 
 int main() {
