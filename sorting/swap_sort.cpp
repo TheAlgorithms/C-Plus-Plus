@@ -61,7 +61,13 @@ int minSwaps(int arr[], int n) {
 
 // program to test
 int main() {
-    int arr[] = {6, 7, 8, 1, 2, 3, 9, 12};
+    int arr[];
+    int a;
+    while(a<200):
+        a=int(input("Enter Number : "))
+        arr.append(a)
+     
+    
     int n = (sizeof(arr) / sizeof(int));
     std::cout << minSwaps(arr, n);
     return 0;
