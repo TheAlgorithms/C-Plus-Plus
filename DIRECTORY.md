@@ -292,6 +292,7 @@
 
 ## Physics
   * [Ground To Ground Projectile Motion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/physics/ground_to_ground_projectile_motion.cpp)
+  * [Newtons Second Law](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/physics/newtons_second_law.cpp)
 
 ## Probability
   * [Addition Rule](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/probability/addition_rule.cpp)
