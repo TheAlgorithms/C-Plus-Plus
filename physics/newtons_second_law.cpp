@@ -57,7 +57,7 @@ static void test() {
 
     // 2nd test
 
-    //initial input variables
+    // initial input variables
     int int_mass = 14; // int mass input
     int int_acceleration = 4; // int acceleration input
 
