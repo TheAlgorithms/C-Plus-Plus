@@ -16,7 +16,7 @@ Being a contributor at The Algorithms, we request you to follow the points menti
 
 - You did your own work.
   - No plagiarism is allowed. Any plagiarized work will not be merged.
-- Your work will be distributed under the [MIT License](https://github.com/TheAlgoritms/C-Plus-Plus/blob/master/LICENSE) once your pull request has been merged.
+- Your work will be distributed under the [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE) once your pull request has been merged.
 - Please follow the repository guidelines and standards mentioned below.
 
 **New implementation** New implementations are welcome!
