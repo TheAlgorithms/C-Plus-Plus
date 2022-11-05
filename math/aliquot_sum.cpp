@@ -39,11 +39,12 @@ uint64_t aliquot_sum(const uint64_t num) {
     return sum;
 }
 }  // namespace math
+
 /**
  * @brief Self-test implementations
  * @returns void
  */
-void test() {
+static void test() {
     // Aliquot sum of 10 is 1 + 2 + 5 = 8
     assert(math::aliquot_sum(10) == 8);
     // Aliquot sum of 15 is 1 + 3 + 5 = 9
