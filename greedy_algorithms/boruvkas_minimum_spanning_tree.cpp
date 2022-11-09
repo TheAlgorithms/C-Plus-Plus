@@ -210,7 +210,6 @@ static void tests() {
 	};
     MST = greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas(graph);
     assert(greedy_algorithms::boruvkas_minimum_spanning_tree::test_findGraphSum(MST) == 16);
-
 	std::cout << "2nd test passed" << std::endl;
 }
 
@@ -220,5 +219,5 @@ static void tests() {
  */
 int main() {
     tests();  // run self-test implementations
-	return 0;	
+    return 0;
 }
