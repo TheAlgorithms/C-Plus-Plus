@@ -22,8 +22,8 @@
 
 #include <iostream>    /// for IO operations
 #include <vector>      /// for std::vector
-#include <cassert>	   /// for assert
-#include <climits>	   /// for INT_MAX
+#include <cassert>     /// for assert
+#include <climits>     /// for INT_MAX
 
 /**
  * @namespace greedy_algorithms
