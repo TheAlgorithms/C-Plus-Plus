@@ -20,16 +20,21 @@
  * 
 */
 
-#include <iostream> /// for IO operations
-#include <vector> /// for std::vector
-#include <cassert> /// for assert
-#include <climits> /// for INT_MAX
+#include <iostream>    /// for IO operations
+#include <vector>      /// for std::vector
+#include <cassert>	   /// for assert
+#include <climits>	   /// for INT_MAX
 
 /**
  * @namespace greedy_algorithms
  * @brief Greedy Algorithms
  */
 namespace greedy_algorithms { 
+/**
+ * @namespace boruvkas_minimum_spanning_tree
+ * @brief Functions for the [Borůvkas Algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) implementation
+ */
+namespace boruvkas_minimum_spanning_tree {
 
 /**
  * @brief Recursively returns the vertex's parent at the root of the tree
@@ -177,7 +182,8 @@ int test_findGraphSum(std::vector<std::vector<int>> adj) {
 	}
 	return sum;
 }
-} // namespace greedy_algorithms
+}  // namespace boruvkas_minimum_spanning_tree
+}  // namespace greedy_algorithms
 /**
  * @brief Self-test implementations
  * @returns void
@@ -191,8 +197,8 @@ static void tests() {
 		{3, INT_MAX, INT_MAX, 0, INT_MAX} ,
 		{INT_MAX, 5, 3, INT_MAX, 0} ,
 	};
-	std::vector<std::vector<int>> MST = greedy_algorithms::boruvkas(graph);
-	assert(greedy_algorithms::test_findGraphSum(MST) == 13);
+    std::vector<std::vector<int>> MST = greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas(graph);
+    assert(greedy_algorithms::boruvkas_minimum_spanning_tree::test_findGraphSum(MST) == 13);
 	std::cout << "1st test passed" << std::endl;
 
 	graph = {
@@ -202,8 +208,8 @@ static void tests() {
 		{ 6, 8, 0, 0, 9 },
 		{ 0, 5, 7, 9, 0 }
 	};
-	MST = greedy_algorithms::boruvkas(graph);
-    assert(greedy_algorithms::test_findGraphSum(MST) == 16);
+    MST = greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas(graph);
+    assert(greedy_algorithms::boruvkas_minimum_spanning_tree::test_findGraphSum(MST) == 16);
 
 	std::cout << "2nd test passed" << std::endl;
 }
