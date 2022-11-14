@@ -93,7 +93,7 @@ int main() {
         std::cout << "\n";
         std::cin >> arr[i];
     }
-    quickSort(arr, 0, size);
+    quickSort(arr, 0, size-1);
     std::cout << "Sorted array\n";
     show(arr, size);
     delete[] arr;
