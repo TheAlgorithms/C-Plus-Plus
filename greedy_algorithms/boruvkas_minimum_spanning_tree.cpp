@@ -138,7 +138,7 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 
 				//Makes sure the two nodes dont share the same parent. Would happen if the two groups have been 
 				//	merged previously through a common shortest edge
-                if (parentA == parentB) {
+				if (parentA == parentB) {
 					continue;
 				}
 
