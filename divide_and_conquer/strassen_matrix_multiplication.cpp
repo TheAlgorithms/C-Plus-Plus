@@ -5,7 +5,7 @@
 #include <vector>
 
 /// Complement of 0 is a max integer.
-#define MAX_SIZE ~0ULL
+constexpr size_t MAX_SIZE = ~0ULL;
 /**
  * @brief Matrix class.
  */
