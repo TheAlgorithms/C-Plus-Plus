@@ -230,7 +230,8 @@ class Matrix {
                                    bool>::type>
     inline Matrix operator*(const Matrix<Number> &other) const {
         assert(_mat[0].size() == other._mat.size());
-        auto [row, col] = this->size();
+        auto size = this->size();
+        const size_t row = size.first, col = size.second;
         // Main condition for applying strassen's method:
         // 1: matrix should be a square matrix
         // 2: matrix should be of even size (mat.size() % 2 == 0)
@@ -397,17 +398,16 @@ class Matrix {
 void test() {
     const size_t s = 1024;
     auto matrix_demo = Matrix<size_t>(s, s);
-    auto [row, col] = matrix_demo.size();
-    for (size_t i = 0; i < row; ++i) {
-        for (size_t j = 0; j < col; ++j) {
+
+    for (size_t i = 0; i < s; ++i) {
+        for (size_t j = 0; j < s; ++j) {
             matrix_demo[i][j] = i + j;
         }
     }
 
     auto matrix_demo2 = Matrix<size_t>(s, s);
-    std::tie(row, col) = matrix_demo2.size();
-    for (size_t i = 0; i < row; ++i) {
-        for (size_t j = 0; j < col; ++j) {
+    for (size_t i = 0; i < s; ++i) {
+        for (size_t j = 0; j < s; ++j) {
             matrix_demo2[i][j] = 2 + i + j;
         }
     }
