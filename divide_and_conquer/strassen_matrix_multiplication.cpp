@@ -26,7 +26,7 @@ class Matrix {
     template <typename Integer,
               typename = typename std::enable_if<
                   std::is_integral<Integer>::value, Integer>::type>
-    Matrix(const Integer size) {
+    explicit Matrix(const Integer size) {
         for (size_t i = 0; i < size; ++i) {
             _mat.emplace_back(std::vector<T>(size, 0));
         }
