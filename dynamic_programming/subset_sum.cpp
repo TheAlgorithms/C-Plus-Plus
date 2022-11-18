@@ -11,7 +11,7 @@
  * the array. For example, array = [1, -10, 2, 31, -6], targetSum = -14. 
  * Output: true => We can pick subset [-10, 2, -6] with sum as 
  * (-10) + 2 + (-6) = -14.
- * @author [KillerAV] (https://github.com/KillerAV)
+ * @author [KillerAV](https://github.com/KillerAV)
  */
 
 #include <cassert>        /// for std::assert
