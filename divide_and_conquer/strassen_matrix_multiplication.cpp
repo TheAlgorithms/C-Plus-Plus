@@ -4,6 +4,18 @@
 #include <tuple>
 #include <vector>
 
+/**
+ * @namespace divide_and_conquer
+ * @brief Divide and Conquer algorithms
+ */
+namespace divide_and_conquer {
+
+/**
+ * @namespace strassens_multiplication
+ * @brief Namespace for performing strassen's multiplication
+ */
+namespace strassens_multiplication {
+
 /// Complement of 0 is a max integer.
 constexpr size_t MAX_SIZE = ~0ULL;
 /**
@@ -392,12 +404,17 @@ class Matrix {
     }
 };
 
+}  // namespace strassens_multiplication
+
+}  // namespace divide_and_conquer
+
 /**
  * @brief Method for testing current implementation
  */
 void test() {
     const size_t s = 1024;
-    auto matrix_demo = Matrix<size_t>(s, s);
+    auto matrix_demo =
+        divide_and_conquer::strassens_multiplication::Matrix<size_t>(s, s);
 
     for (size_t i = 0; i < s; ++i) {
         for (size_t j = 0; j < s; ++j) {
@@ -405,7 +422,8 @@ void test() {
         }
     }
 
-    auto matrix_demo2 = Matrix<size_t>(s, s);
+    auto matrix_demo2 =
+        divide_and_conquer::strassens_multiplication::Matrix<size_t>(s, s);
     for (size_t i = 0; i < s; ++i) {
         for (size_t j = 0; j < s; ++j) {
             matrix_demo2[i][j] = 2 + i + j;
