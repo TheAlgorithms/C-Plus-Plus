@@ -21,7 +21,7 @@
  *      x. All this should be done in linear time
  *
  * @author [David Leal](https://github.com/Panquesito7)
- * @author Unknown author
+ * @author [popoapp](https://github.com/popoapp)
  */
 
 #include <algorithm>  /// for std::is_sorted
