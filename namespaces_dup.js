@@ -21,7 +21,6 @@ var namespaces_dup =
     [ "cut_rod", "d8/d36/namespacecut__rod.html", null ],
     [ "cycle_detection", "da/d82/namespacecycle__detection.html", null ],
     [ "cycle_sort", "d4/dfb/namespacecycle__sort.html", null ],
-    [ "data_strcutres", "dd/db1/namespacedata__strcutres.html", null ],
     [ "data_structures", "d5/d3c/namespacedata__structures.html", "d5/d3c/namespacedata__structures" ],
     [ "depth_first_search", "d8/da7/namespacedepth__first__search.html", null ],
     [ "disjoint_union", "de/db4/namespacedisjoint__union.html", null ],
