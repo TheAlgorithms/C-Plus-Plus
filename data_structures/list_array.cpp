@@ -29,8 +29,9 @@ namespace list_array {
     /**
      * @brief Structure of List with supporting methods.
      */
+    template <uint64_t N>
     struct list {
-        std::array<uint64_t, 50> data{}; // Array that implement list
+        std::array<uint64_t, N> data{}; // Array that implement list
         uint64_t top = 0; // Pointer to the last element
         bool isSorted = false; // indicator whether list is sorted or not
         /**
@@ -41,7 +42,7 @@ namespace list_array {
          * @param val element that will be searched
          * @return index of element in the list if present else -1
          */
-        uint64_t BinarySearch(const std::array<uint64_t, 50> &dataArr, const uint64_t &first, const uint64_t &last,
+        uint64_t BinarySearch(const std::array<uint64_t, N> &dataArr, const uint64_t &first, const uint64_t &last,
                               const uint64_t &val) {
             // If both pointer cross each other means no element present in the list which is equal to the val
             if (last < first) {
@@ -68,7 +69,7 @@ namespace list_array {
          * @param val element that will be searched
          * @return index of element in the list if present else -1
          */
-        uint64_t LinearSearch(const std::array<uint64_t, 50> &dataArr, const uint64_t &val) const {
+        uint64_t LinearSearch(const std::array<uint64_t, N> &dataArr, const uint64_t &val) const {
             // Going through each element in the list
             for (uint64_t i = 0; i < top; i++) {
                 if (dataArr[i] == val) {
@@ -131,7 +132,7 @@ namespace list_array {
          */
         void insert(const uint64_t &val) {
             // overflow check
-            if (top == 49) {
+            if (top == N) {
                 std::cout << "\nOverflow";
                 return;
             }
@@ -203,7 +204,7 @@ namespace list_array {
  * @returns void
  */
 static void test() {
-    data_structures::list_array::list L;
+    data_structures::list_array::list<50> L;
 
     // Insert testing
     L.insert(11);
