@@ -320,6 +320,7 @@
   * [Interpolation Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/interpolation_search2.cpp)
   * [Jump Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/jump_search.cpp)
   * [Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/linear_search.cpp)
+  * [Linear Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/linear_search2.cpp)
   * [Median Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search.cpp)
   * [Median Search2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/median_search2.cpp)
   * [Saddleback Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/saddleback_search.cpp)
