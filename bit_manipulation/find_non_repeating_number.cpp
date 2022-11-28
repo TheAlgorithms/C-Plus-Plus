@@ -52,7 +52,7 @@ int64_t find_non_repeating_integer(const std::vector<int>& nums) {
 
     return _xor;
 }
-}  // namespace find_single_number
+}  // namespace find_non_repeating_integer
 }  // namespace bit_manipulation
 
 /**
