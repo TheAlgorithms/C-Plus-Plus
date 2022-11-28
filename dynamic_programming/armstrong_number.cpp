@@ -18,8 +18,8 @@ int main() {
         count++;
     }
 
-    /* Calaculation for checking of armstrongs number i.e.
-       in a n digit number sum of the digits raised to a power of n
+    /* Calculation for checking of armstrongs number i.e.
+       in an n-digit number sum of the digits is raised to a power of n
        is equal to the original number */
 
     temp = n;
