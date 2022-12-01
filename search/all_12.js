@@ -22,9 +22,9 @@ var searchData=
   ['queuefront_19',['queueFront',['../db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5',1,'queue']]],
   ['queuerear_20',['queueRear',['../db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5',1,'queue']]],
   ['quick_5fexit_21',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',0,'std']]],
-  ['quick_5fsort_2ecpp_22',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
-  ['quick_5fsort_5f3_2ecpp_23',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]],
-  ['quicksort_24',['quickSort',['../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178',1,'sorting']]],
+  ['quick_5fsort_22',['quick_sort',['../d0/d2b/namespacequick__sort.html',1,'quick_sort'],['../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394',1,'sorting::quick_sort::quick_sort(std::vector&lt; T &gt; *arr, const int &amp;low, const int &amp;high)'],['../d1/d21/quick__sort_8cpp.html#a53adad7e4d83e1495df25fe8dbb4cc05',1,'sorting::quick_sort::quick_sort(std::vector&lt; T &gt; arr, const int &amp;low, const int &amp;high)']]],
+  ['quick_5fsort_2ecpp_23',['quick_sort.cpp',['../d1/d21/quick__sort_8cpp.html',1,'']]],
+  ['quick_5fsort_5f3_2ecpp_24',['quick_sort_3.cpp',['../d3/d4c/quick__sort__3_8cpp.html',1,'']]],
   ['quicksort_25',['quicksort',['../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168',1,'sorting::quicksort(std::vector&lt; T &gt; *arr, int32_t low, int32_t high)'],['../d5/d91/namespacesorting.html#a6eb67c2f91c98cf4464f75b5882022de',1,'sorting::quicksort(std::vector&lt; T &gt; arr, int32_t low, int32_t high)']]],
   ['quicksortrp_26',['quickSortRP',['../d1/daa/random__pivot__quick__sort_8cpp.html#a7d2e7465e7b5d54c2de6d5e9db1ea6a5',1,'sorting::random_pivot_quick_sort']]],
   ['quiet_5fnan_27',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]]

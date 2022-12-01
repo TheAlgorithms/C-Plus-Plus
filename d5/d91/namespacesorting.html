@@ -154,10 +154,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </td></tr>
 <tr class="memitem:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a0e9e1b21a1684585e9e50f9afe4d53a3">pigeonSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, N &gt; arr)</td></tr>
 <tr class="separator:a0e9e1b21a1684585e9e50f9afe4d53a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7f25f31c50523990437abf2ac3907e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">partition</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a7e7f25f31c50523990437abf2ac3907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b66a1c652291b9a346ec7342967178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">quickSort</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a50b66a1c652291b9a346ec7342967178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9f59fe72dacc1f1218ef3c303d843168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a9f59fe72dacc1f1218ef3c303d843168">quicksort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr, int32_t low, int32_t high)</td></tr>
 <tr class="separator:a9f59fe72dacc1f1218ef3c303d843168"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +192,8 @@ Functions</h2></td></tr>
 <p >Sorting algorithms</p>
 <p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> and io operations</p>
 <p >@breif Sorting algorithms</p>
+<p >Sorting algorithms</p>
+<p >for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a> for std::assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a> for IO operations</p>
 <p >Sorting algorithms</p>
 <p >header files for collection of functions for a macro called assert which can be used to verify assumptions for io operations</p>
 <p >Sorting algorithms</p>
@@ -819,60 +817,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a7e7f25f31c50523990437abf2ac3907e" name="a7e7f25f31c50523990437abf2ac3907e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e7f25f31c50523990437abf2ac3907e">&#9670;&#160;</a></span>partition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sorting::partition </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arr</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot </p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>                                            {</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">int</span> pivot = arr[high];  <span class="comment">// taking the last element as pivot</span></div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> i = (low - 1);      <span class="comment">// Index of smaller element</span></div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = low; j &lt; high; j++) {</div>
-<div class="line"><span class="lineno">   42</span>        <span class="comment">// If current element is smaller than or</span></div>
-<div class="line"><span class="lineno">   43</span>        <span class="comment">// equal to pivot</span></div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (arr[j] &lt;= pivot) {</div>
-<div class="line"><span class="lineno">   45</span>            i++;  <span class="comment">// increment index of smaller element</span></div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordtype">int</span> temp = arr[i];</div>
-<div class="line"><span class="lineno">   47</span>            arr[i] = arr[j];</div>
-<div class="line"><span class="lineno">   48</span>            arr[j] = temp;</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordtype">int</span> temp = arr[i + 1];</div>
-<div class="line"><span class="lineno">   52</span>    arr[i + 1] = arr[high];</div>
-<div class="line"><span class="lineno">   53</span>    arr[high] = temp;</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> (i + 1);</div>
-<div class="line"><span class="lineno">   55</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a0e9e1b21a1684585e9e50f9afe4d53a3" name="a0e9e1b21a1684585e9e50f9afe4d53a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e9e1b21a1684585e9e50f9afe4d53a3">&#9670;&#160;</a></span>pigeonSort()</h2>
 
@@ -932,54 +876,6 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a0e9e1b21a1684585e9e50f9afe4d53a3_cgraph.svg" width="316" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a50b66a1c652291b9a346ec7342967178" name="a50b66a1c652291b9a346ec7342967178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50b66a1c652291b9a346ec7342967178">&#9670;&#160;</a></span>quickSort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sorting::quickSort </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arr</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >The main function that implements QuickSort arr[] --&gt; Array to be sorted, low --&gt; Starting index, high --&gt; Ending index </p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                                             {</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (low &lt; high) {</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordtype">int</span> p = partition(arr, low, high);</div>
-<div class="line"><span class="lineno">   66</span>        quickSort(arr, low, p - 1);</div>
-<div class="line"><span class="lineno">   67</span>        quickSort(arr, p + 1, high);</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a50b66a1c652291b9a346ec7342967178_cgraph.svg" width="298" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

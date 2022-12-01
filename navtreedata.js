@@ -139,17 +139,17 @@ var NAVTREEINDEX =
 "annotated.html",
 "cpp/iterator/inserter.html",
 "cpp/utility/forward.html",
-"d1/d9e/prefix__sum__array_8cpp.html",
-"d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8",
-"d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1",
-"d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590",
-"d7/d7c/classstatistics_1_1stats__computer1.html",
-"d8/dab/classstatistics_1_1stats__computer2.html#ab444d485c9e7db35bdc2ff6b7775291a",
-"da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html#a47b9bc9815a2e7123ac1dc13e5377301",
-"db/d82/classlarge__number.html#a8d4364ee5a62964451d8cfee82649687",
-"dd/d0c/hamiltons__cycle_8cpp.html",
-"de/d7b/merge__insertion__sort_8cpp.html#af4de4067a9a866ffd985c5b5055ccedf",
-"functions_func_m.html"
+"d1/d83/classuint256__t.html#aff4d49cf84de64301b169ad974f00bad",
+"d3/d6d/namespacesimpson__method.html",
+"d4/dd2/namespacequadratic__probing.html#aeb6bca8db4768226f8ea8291ea4f83f6",
+"d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706",
+"d7/d77/class_edge.html#a415a5d002fe11c58711e48aabe975980",
+"d8/dab/classstatistics_1_1stats__computer2.html#a8290966ad468f2a8c266d008bc60720e",
+"da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html",
+"db/d82/classlarge__number.html#a7ba872b9a3ce1f3da6c06c5409663cca",
+"dc/dfe/ternary__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"de/d7b/merge__insertion__sort_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"functions_func_k.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

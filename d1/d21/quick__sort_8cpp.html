@@ -104,14 +104,17 @@ $(document).ready(function(){initNavTree('d1/d21/quick__sort_8cpp.html','../../'
 </div><!--header-->
 <div class="contents">
 
-<p>Quick sort algorithm.  
+<p><a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">Quick sort implementation</a> in C++  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for quick_sort.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/db2/quick__sort_8cpp__incl.svg" width="168" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/db2/quick__sort_8cpp__incl.svg" width="434" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -120,28 +123,50 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d5/d91/namespacesorting"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html">sorting</a></td></tr>
 <tr class="memdesc:d5/d91/namespacesorting"><td class="mdescLeft">&#160;</td><td class="mdescRight">for working with vectors <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d2b/namespacequick__sort"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/namespacequick__sort.html">quick_sort</a></td></tr>
+<tr class="memdesc:d0/d2b/namespacequick__sort"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for the <a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">Quick sort implementation</a> in C++. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e7f25f31c50523990437abf2ac3907e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a7e7f25f31c50523990437abf2ac3907e">sorting::partition</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a7e7f25f31c50523990437abf2ac3907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b66a1c652291b9a346ec7342967178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a50b66a1c652291b9a346ec7342967178">sorting::quickSort</a> (int arr[], int low, int high)</td></tr>
-<tr class="separator:a50b66a1c652291b9a346ec7342967178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34859945724cc7de3cc71936715aec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#ad34859945724cc7de3cc71936715aec6">show</a> (int arr[], int size)</td></tr>
-<tr class="separator:ad34859945724cc7de3cc71936715aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2a2cc2d319240f3b65c5b2f479ed82"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1b2a2cc2d319240f3b65c5b2f479ed82"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a1b2a2cc2d319240f3b65c5b2f479ed82">sorting::quick_sort::partition</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr, const int &amp;low, const int &amp;high)</td></tr>
+<tr class="memdesc:a1b2a2cc2d319240f3b65c5b2f479ed82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the array taking the last element as pivot.  <a href="../../d1/d21/quick__sort_8cpp.html#a1b2a2cc2d319240f3b65c5b2f479ed82">More...</a><br /></td></tr>
+<tr class="separator:a1b2a2cc2d319240f3b65c5b2f479ed82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6213e8008356ac6eda9427f3f4b394"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5e6213e8008356ac6eda9427f3f4b394"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr, const int &amp;low, const int &amp;high)</td></tr>
+<tr class="memdesc:a5e6213e8008356ac6eda9427f3f4b394"><td class="mdescLeft">&#160;</td><td class="mdescRight">the main function that implements Quick Sort.  <a href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">More...</a><br /></td></tr>
+<tr class="separator:a5e6213e8008356ac6eda9427f3f4b394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53adad7e4d83e1495df25fe8dbb4cc05"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a53adad7e4d83e1495df25fe8dbb4cc05"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a53adad7e4d83e1495df25fe8dbb4cc05">sorting::quick_sort::quick_sort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; arr, const int &amp;low, const int &amp;high)</td></tr>
+<tr class="memdesc:a53adad7e4d83e1495df25fe8dbb4cc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">the main function that implements Quick Sort.  <a href="../../d1/d21/quick__sort_8cpp.html#a53adad7e4d83e1495df25fe8dbb4cc05">More...</a><br /></td></tr>
+<tr class="separator:a53adad7e4d83e1495df25fe8dbb4cc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccefcf6fcca62c54939c5ec9a93109b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aeccefcf6fcca62c54939c5ec9a93109b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;arr, const int &amp;size)</td></tr>
+<tr class="memdesc:aeccefcf6fcca62c54939c5ec9a93109b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to print the array contents.  <a href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">More...</a><br /></td></tr>
+<tr class="separator:aeccefcf6fcca62c54939c5ec9a93109b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
+<tr class="memdesc:a483bb8ccf42aaf7375a83e91490eda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d1/d21/quick__sort_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">More...</a><br /></td></tr>
+<tr class="separator:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/quick__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="../../d1/d21/quick__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Quick sort algorithm. </p>
-<p >Implementation Details - Quick Sort is a divide and conquer algorithm. It picks and element as pivot and partition the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.</p>
-<ol type="1">
-<li>Always pick the first element as pivot</li>
-<li>Always pick the last element as pivot (implemented below)</li>
-<li>Pick a random element as pivot</li>
-<li>Pick median as pivot</li>
-</ol>
-<p >The key process in quickSort is partition(). Target of partition is, given an array and an element x(say) of array as pivot, put x at it's correct position in sorted array and put all smaller elements (samller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time </p>
+<div class="textblock"><p ><a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">Quick sort implementation</a> in C++ </p>
+<p >Quick Sort is a <a href="https://en.wikipedia.org/wiki/Category:Divide-and-conquer_algorithms" target="_blank">divide and conquer algorithm</a>. It picks an element as pivot and partition the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways. </p><pre class="fragment"> 1. Always pick the first element as pivot
+ 2. Always pick the last element as pivot (implemented below)
+ 3. Pick a random element as pivot
+ 4. Pick median as pivot
+
+ The key process in quickSort is partition(). Target of partition is,
+ given an array and an element x(say) of array as pivot, put x at it's
+ correct position in sorted array and put all smaller elements (samller
+ than x) before x, and put all greater elements (greater than x) after
+ x. All this should be done in linear time
+</pre> <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/Panquesito7" target="_blank">David Leal</a> </dd>
+<dd>
+<a href="https://github.com/popoapp" target="_blank">popoapp</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -158,48 +183,281 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Driver program to test above functions </p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>           {</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">int</span> size;</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number of elements : &quot;</span>;</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordtype">int</span> *arr = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the unsorted elements : &quot;</span>;</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><span class="lineno">   93</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   94</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>    quickSort(arr, 0, size);</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sorted array\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   98</span>    show(arr, size);</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keyword">delete</span>[] arr;</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>           {</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordtype">int</span> choice = 0;</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\tAvailable modes\t\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1. Self-tests mode\n2. Interactive mode&quot;</span>;</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nChoose a mode: &quot;</span>;</div>
+<div class="line"><span class="lineno">  208</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
+<div class="line"><span class="lineno">  209</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">while</span> ((choice != 1) &amp;&amp; (choice != 2)) {</div>
+<div class="line"><span class="lineno">  212</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Invalid option. Choose between the valid modes: &quot;</span>;</div>
+<div class="line"><span class="lineno">  213</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; choice;</div>
+<div class="line"><span class="lineno">  214</span>    }</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">if</span> (choice == 1) {</div>
+<div class="line"><span class="lineno">  217</span>        <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  219</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (choice == 2) {</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordtype">int</span> size = 0;</div>
+<div class="line"><span class="lineno">  221</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnter the number of elements: &quot;</span>;</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; size;</div>
+<div class="line"><span class="lineno">  224</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> arr(size);</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div>
+<div class="line"><span class="lineno">  227</span>            &lt;&lt; <span class="stringliteral">&quot;\nEnter the unsorted elements (can be negative/decimal): &quot;</span>;</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
+<div class="line"><span class="lineno">  230</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  231</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; arr[i];</div>
+<div class="line"><span class="lineno">  232</span>        }</div>
+<div class="line"><span class="lineno">  233</span>        <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a>(&amp;arr, 0, size - 1);</div>
+<div class="line"><span class="lineno">  234</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nSorted array: \n&quot;</span>;</div>
+<div class="line"><span class="lineno">  235</span>        <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a>(arr, size);</div>
+<div class="line"><span class="lineno">  236</span>    }</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  238</span>}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-</div><!-- fragment -->
+<div class="ttc" id="aquick__sort_8cpp_html_a483bb8ccf42aaf7375a83e91490eda1e"><div class="ttname"><a href="../../d1/d21/quick__sort_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a></div><div class="ttdeci">static void tests()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:135</div></div>
+<div class="ttc" id="aquick__sort_8cpp_html_a5e6213e8008356ac6eda9427f3f4b394"><div class="ttname"><a href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a></div><div class="ttdeci">void quick_sort(std::vector&lt; T &gt; *arr, const int &amp;low, const int &amp;high)</div><div class="ttdoc">the main function that implements Quick Sort.</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:86</div></div>
+<div class="ttc" id="aquick__sort_8cpp_html_aeccefcf6fcca62c54939c5ec9a93109b"><div class="ttname"><a href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a></div><div class="ttdeci">void show(const std::vector&lt; T &gt; &amp;arr, const int &amp;size)</div><div class="ttdoc">Utility function to print the array contents.</div><div class="ttdef"><b>Definition:</b> quick_sort.cpp:123</div></div>
+<div class="ttc" id="asrand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a></div><div class="ttdeci">T srand(T... args)</div></div>
+<div class="ttc" id="atime_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a></div><div class="ttdeci">T time(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="339" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<a id="ad34859945724cc7de3cc71936715aec6" name="ad34859945724cc7de3cc71936715aec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad34859945724cc7de3cc71936715aec6">&#9670;&#160;</a></span>show()</h2>
+
+</div>
+</div>
+<a id="a1b2a2cc2d319240f3b65c5b2f479ed82" name="a1b2a2cc2d319240f3b65c5b2f479ed82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2a2cc2d319240f3b65c5b2f479ed82">&#9670;&#160;</a></span>partition()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void show </td>
+          <td class="memname">int sorting::quick_sort::partition </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arr</em>[], </td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sorts the array taking the last element as pivot. </p>
+<p >This function takes last element as pivot, places the pivot element at its correct position in sorted array, and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>array type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>the array with contents given by the user </td></tr>
+    <tr><td class="paramname">low</td><td>first point of the array (starting index) </td></tr>
+    <tr><td class="paramname">high</td><td>last point of the array (ending index) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of the smaller element </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                  {</div>
+<div class="line"><span class="lineno">   59</span>    T pivot = (*arr)[high];  <span class="comment">// taking the last element as pivot</span></div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">int</span> i = (low - 1);       <span class="comment">// Index of smaller element</span></div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = low; j &lt; high; j++) {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="comment">// If current element is smaller than or</span></div>
+<div class="line"><span class="lineno">   64</span>        <span class="comment">// equal to pivot</span></div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> ((*arr)[j] &lt;= pivot) {</div>
+<div class="line"><span class="lineno">   66</span>            i++;  <span class="comment">// increment index of smaller element</span></div>
+<div class="line"><span class="lineno">   67</span>            <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*arr)[i], (*arr)[j]);</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>((*arr)[i + 1], (*arr)[high]);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> (i + 1);</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_a1b2a2cc2d319240f3b65c5b2f479ed82_cgraph.svg" width="267" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5e6213e8008356ac6eda9427f3f4b394" name="a5e6213e8008356ac6eda9427f3f4b394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6213e8008356ac6eda9427f3f4b394">&#9670;&#160;</a></span>quick_sort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::quick_sort::quick_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the main function that implements Quick Sort. </p>
+<p >Void function used in T (array type) function, which then can be used as self-tests or other functionalities. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>array type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array to be sorted </td></tr>
+    <tr><td class="paramname">low</td><td>starting index </td></tr>
+    <tr><td class="paramname">high</td><td>ending index </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                    {</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (low &lt; high) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordtype">int</span> p = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/partition.html">partition</a>(arr, low, high);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_namespace" href="../../d0/d2b/namespacequick__sort.html">quick_sort</a>(arr, low, p - 1);</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_namespace" href="../../d0/d2b/namespacequick__sort.html">quick_sort</a>(arr, p + 1, high);</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>}</div>
+<div class="ttc" id="anamespacequick__sort_html"><div class="ttname"><a href="../../d0/d2b/namespacequick__sort.html">quick_sort</a></div><div class="ttdoc">Functions for the Quick sort implementation in C++.</div></div>
+<div class="ttc" id="apartition_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/partition.html">std::partition</a></div><div class="ttdeci">T partition(T... args)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a53adad7e4d83e1495df25fe8dbb4cc05" name="a53adad7e4d83e1495df25fe8dbb4cc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53adad7e4d83e1495df25fe8dbb4cc05">&#9670;&#160;</a></span>quick_sort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; sorting::quick_sort::quick_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the main function that implements Quick Sort. </p>
+<p >T (array type) function which calls the void function. Can be used for self-tests and other functionalities. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>array type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>array to be sorted </td></tr>
+    <tr><td class="paramname">low</td><td>starting index </td></tr>
+    <tr><td class="paramname">high</td><td>ending index </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                                           {</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (low &lt; high) {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordtype">int</span> p = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/partition.html">partition</a>(&amp;arr, low, high);</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_namespace" href="../../d0/d2b/namespacequick__sort.html">quick_sort</a>(&amp;arr, low, p - 1);</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_namespace" href="../../d0/d2b/namespacequick__sort.html">quick_sort</a>(&amp;arr, p + 1, high);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> arr;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeccefcf6fcca62c54939c5ec9a93109b" name="aeccefcf6fcca62c54939c5ec9a93109b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccefcf6fcca62c54939c5ec9a93109b">&#9670;&#160;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void sorting::quick_sort::show </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -209,11 +467,121 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                               {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   79</span>}</div>
+
+<p>Utility function to print the array contents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>the array to be printed </td></tr>
+    <tr><td class="paramname">size</td><td>size of the given array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                    {</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; arr[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  126</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a483bb8ccf42aaf7375a83e91490eda1e" name="a483bb8ccf42aaf7375a83e91490eda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bb8ccf42aaf7375a83e91490eda1e">&#9670;&#160;</a></span>tests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tests </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>                    {</div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// 1st test (normal numbers)</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> arr_sorted = <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a>(</div>
+<div class="line"><span class="lineno">  139</span>        arr, 0, <span class="keywordtype">int</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr)) - 1);</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr_sorted), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr_sorted)));</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n1st test: passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="comment">// 2nd test (normal and negative numbers)</span></div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr2 = {9,    15,   28,   96,  500, -4, -58,</div>
+<div class="line"><span class="lineno">  146</span>                                 -977, -238, -800, -21, -53, -55};</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int64_t&gt;</a> arr_sorted2 = <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a>(</div>
+<div class="line"><span class="lineno">  148</span>        arr2, 0, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr2) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr2));</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr_sorted2), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr_sorted2)));</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test: passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    <span class="comment">// 3rd test (decimal and normal numbers)</span></div>
+<div class="line"><span class="lineno">  154</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr3 = {29,  36,   1100, 0,      77,     1,</div>
+<div class="line"><span class="lineno">  155</span>                                6.7, 8.97, 1.74, 950.10, -329.65};</div>
+<div class="line"><span class="lineno">  156</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> arr_sorted3 = <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a>(</div>
+<div class="line"><span class="lineno">  157</span>        arr3, 0, <span class="keywordtype">int</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr3) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr3)) - 1);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr_sorted3), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr_sorted3)));</div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test: passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// 4th test (random decimal and negative numbers)</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordtype">size_t</span> size = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 750 + 100;</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> arr4(size);</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; size; i++) {</div>
+<div class="line"><span class="lineno">  167</span>        arr4[i] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>()) /</div>
+<div class="line"><span class="lineno">  168</span>                      <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(RAND_MAX / 999.99 - 0.99) -</div>
+<div class="line"><span class="lineno">  169</span>                  250;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;float&gt;</a> arr4_sorted = <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#a5e6213e8008356ac6eda9427f3f4b394">sorting::quick_sort::quick_sort</a>(</div>
+<div class="line"><span class="lineno">  173</span>        arr4, 0, <span class="keywordtype">int</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4)) - 1);</div>
+<div class="line"><span class="lineno">  174</span>    assert(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4_sorted), <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4_sorted)));</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;4th test: passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment">// Printing all sorted arrays</span></div>
+<div class="line"><span class="lineno">  179</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n\tPrinting all sorted arrays:\t\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st array:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  182</span>    <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a>(arr_sorted, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr));</div>
+<div class="line"><span class="lineno">  183</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  184</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd array:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a>(arr_sorted2, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr2) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr2));</div>
+<div class="line"><span class="lineno">  186</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd array:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  188</span>    <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a>(arr_sorted3,</div>
+<div class="line"><span class="lineno">  189</span>                              <span class="keywordtype">int</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr3) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr3)) - 1);</div>
+<div class="line"><span class="lineno">  190</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  191</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Start: 4th array:\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  192</span>    <a class="code hl_function" href="../../d1/d21/quick__sort_8cpp.html#aeccefcf6fcca62c54939c5ec9a93109b">sorting::quick_sort::show</a>(</div>
+<div class="line"><span class="lineno">  193</span>        arr4_sorted, <span class="keywordtype">int</span>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a>(arr4_sorted) - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a>(arr4_sorted)) - 1);</div>
+<div class="line"><span class="lineno">  194</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nEnd: 4th array.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  195</span>}</div>
+<div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/begin.html">std::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
+<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
+<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+<div class="ttc" id="ais_sorted_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/is_sorted.html">std::is_sorted</a></div><div class="ttdeci">T is_sorted(T... args)</div></div>
+<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d21/quick__sort_8cpp_a483bb8ccf42aaf7375a83e91490eda1e_cgraph.svg" width="211" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
