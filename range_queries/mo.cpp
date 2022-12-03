@@ -1,3 +1,6 @@
+#include <cmath>
+// sqrt and other mathematical function is defined in the cmath header file
+// which is missng.
 #include <iostream>
 using namespace std;
 const int N = 1e6 + 5;
@@ -29,7 +32,7 @@ int main() {
     int n, t, i, j, k = 0;
     scanf("%d", &n);
     for (i = 0; i < n; i++) scanf("%d", &a[i]);
-    bucket_size = ceil(sqrt(n));
+    bucket_size = ceil(sqrt(n));  // As cmath header file is used here
     scanf("%d", &t);
     for (i = 0; i < t; i++) {
         scanf("%d %d", &q[i].l, &q[i].r);
