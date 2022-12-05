@@ -45,7 +45,7 @@
 namespace graph {
 /**
  * \brief
- * Adds and edge between two vertices of graph say u and v in this
+ * Adds an edge between two vertices of graph say u and v in this
  * case.
  *
  * @param adj Adjacency list representation of graph
@@ -53,7 +53,7 @@ namespace graph {
  * @param v second vertex
  *
  */
-void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
+void addEdge(std::vector<std::vector<size_t>> &adj, size_t u, size_t v) {
     /*
      *
      * Here we are considering undirected graph that's the
@@ -61,8 +61,8 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
      * and also adding u to the adjacency list representation of v
      *
      */
-    (*adj)[u - 1].push_back(v - 1);
-    (*adj)[v - 1].push_back(u - 1);
+    adj[u - 1].push_back(v - 1);
+    adj[v - 1].push_back(u - 1);
 }
 
 /**
@@ -78,11 +78,11 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
  *
  */
 void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
-             std::vector<bool> *visited) {
+             std::vector<bool> &visited) {
     std::cout << v + 1 << " ";
-    (*visited)[v] = true;
+    visited[v] = true;
     for (auto x : adj[v]) {
-        if (!(*visited)[x]) {
+        if (!visited[x]) {
             explore(adj, x, visited);
         }
     }
@@ -101,7 +101,7 @@ void depth_first_search(const std::vector<std::vector<size_t>> &adj,
     size_t vertices = adj.size();
 
     std::vector<bool> visited(vertices, false);
-    explore(adj, start, &visited);
+    explore(adj, start, visited);
 }
 }  // namespace graph
 
@@ -122,7 +122,7 @@ int main() {
     while (edges--) {
         size_t u = 0, v = 0;
         std::cin >> u >> v;
-        graph::addEdge(&adj, u, v);
+        graph::addEdge(adj, u, v);
     }
 
     /// running depth first search over graph
