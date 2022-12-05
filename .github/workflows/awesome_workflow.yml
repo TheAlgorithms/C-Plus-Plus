@@ -122,5 +122,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           submodules: true
+      - if: matrix.os == 'windows-latest'
+        run: del C:/Strawberry/c/lib/libglut.a
       - run: cmake -B ./build -S .
       - run: cmake --build build
