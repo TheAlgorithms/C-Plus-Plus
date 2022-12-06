@@ -54,7 +54,6 @@ uint64_t count_digits(uint64_t n) {
     if(n < 0){
         n = -n;
     }
-    
     // log(0) is undefined
     else if(n == 0){
     //handling the value 0
