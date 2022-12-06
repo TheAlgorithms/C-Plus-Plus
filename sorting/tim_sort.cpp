@@ -1,12 +1,17 @@
 // C++ program to perform TimSort.
 #include <algorithm>
 #include <iostream>
+#include <cassert>
+#include <vector>
 
+namespace sorting {
 const int RUN = 32;
 
 // this function sorts array from left index to to right index which is of size
 // atmost RUN
-void insertionSort(int arr[], int left, int right) {
+
+template <typename T>
+void insertionSort(T *arr, int left, int right) {
     for (int i = left + 1; i <= right; i++) {
         int temp = arr[i];
         int j = i - 1;
@@ -17,12 +22,12 @@ void insertionSort(int arr[], int left, int right) {
         arr[j + 1] = temp;
     }
 }
-
 // merge function merges the sorted runs
-void merge(int arr[], int l, int m, int r) {
+template <typename T>
+void merge(T *arr, int l, int m, int r) {
     // original array is broken in two parts, left and right array
     int len1 = m - l + 1, len2 = r - m;
-    int *left = new int[len1], *right = new int[len2];
+    T *left = new T[len1], *right = new T[len2];
     for (int i = 0; i < len1; i++) left[i] = arr[l + i];
     for (int i = 0; i < len2; i++) right[i] = arr[m + 1 + i];
 
@@ -58,9 +63,10 @@ void merge(int arr[], int l, int m, int r) {
     delete[] left;
     delete[] right;
 }
-
 // iterative Timsort function to sort the array[0...n-1] (similar to merge sort)
-void timSort(int arr[], int n) {
+//using array
+template <typename T>
+void timSort(T *arr, int n) {
     // Sort individual subarrays of size RUN
     for (int i = 0; i < n; i += RUN)
         insertionSort(arr, i, std::min((i + 31), (n - 1)));
@@ -82,23 +88,65 @@ void timSort(int arr[], int n) {
         }
     }
 }
-
-// utility function to print the Array
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) printf("%d  ", arr[i]);
-    std::cout << std::endl;
 }
 
-// Driver program to test above function
-int main() {
-    int arr[] = {5, 21, 7, 23, 19};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Given Array is\n");
-    printArray(arr, n);
+void tests() {
+    // positive case
+    int arr1[10] = {10, 99, 56, 8, 128, 1, 76, 48, 300, 4};
+    std::cout << "Test 1... ";
+    sorting::timSort(arr1, 10);
+    assert(std::is_sorted(arr1, arr1 + 10));
+    std::cout << "passed" << '\n';
 
-    timSort(arr, n);
+    // negative case
+    int arr2[8] = {-55, -20, -5, -77, -12, -45, -32, -10};
+    std::cout << "Test 2... ";
+    sorting::timSort(arr2, 8);
+    assert(std::is_sorted(arr2, arr2 + 8));
+    std::cout << "passed" << '\n';
 
-    printf("After Sorting Array is\n");
-    printArray(arr, n);
+    // mix positive and negative
+    int arr3[8] = {1028, 45, -60, 0, -14, 35, 7, -4};
+    std::cout << "Test 3... ";
+    sorting::timSort(arr3, 8);
+    assert(std::is_sorted(arr3, arr3 + 8));
+    std::cout << "passed" << '\n';
+
+    // float
+    float arr4[8] = {4.0, -7.4, 0, 17.5, -2.3, 6.4, 1.5, -6.6};
+    std::cout << "Test 4... ";
+    sorting::timSort(arr4, 8);
+    assert(std::is_sorted(arr4, arr4 + 8));
+    std::cout << "passed" << '\n';
+}
+
+int main() { 
+    tests(); 
+
+    // For user interaction
+    size_t n;
+    std::cout << "Enter the length of array (0 to exit)";
+    std::cin >> n;
+
+    if (n == 0) {
+        return 0;
+    }
+
+    int *arr = new int[n];
+    std::cout << "Enter any" << n << "Numbers for Unsorted Array : ";
+
+    for (int i = 0; i < n; i++) {
+        std::cin >> arr[i];
+    }
+
+    sorting::timSort(arr, n);
+
+    std::cout << "\nSorted Array : ";
+    for (int i = 0; i < n; i++) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << '\n';
+
+    delete[] arr;
     return 0;
 }
