@@ -11,19 +11,18 @@ jobs:
     name: Code Formatter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # v2 is broken for git diff
+      - uses: actions/checkout@v3 # v2 is broken for git diff
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v2
       - name: requirements
         run: | 
-          sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-10 clang-format-10
-        # checks are passing with less errors when used with this version. 
-        # The default installs v6.0 which did not work out well in my tests
+          sudo apt-get -qq update
+          sudo apt-get -qq install clang-tidy clang-format
       - name: Setup Git Specs
         run: |
-          git config --global user.name David Leal
-          git config --global user.email 'Panquesito7@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git config --global user.name github-actions[bot]
+          git config --global user.email 'github-actions@users.noreply.github.com'
       - name: Filename Formatter
         run: |
           IFS=$'\n'
@@ -53,9 +52,7 @@ jobs:
           git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
       - name: Get file changes
         run: |
-          git remote -v
           git branch
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
       - name: Configure for static lint checks
