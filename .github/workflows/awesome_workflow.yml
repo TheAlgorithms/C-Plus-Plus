@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-python@v2
       - name: requirements
         run: | 
-          sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-10 clang-format-10
+          sudo apt-get -qq update
+          sudo apt-get -qq install clang-tidy clang-format
         # checks are passing with less errors when used with this version. 
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
