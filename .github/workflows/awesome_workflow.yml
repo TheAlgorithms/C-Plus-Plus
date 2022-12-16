@@ -25,7 +25,7 @@ jobs:
       - name: Filename Formatter
         run: |
           wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/filename_formatter.sh
-          chmod u=rwx,g=r,o=r filename_formatter.sh
+          chmod +x filename_formatter.sh
           ./filename_formatter.sh . .cpp,.hpp
       - name: Update DIRECTORY.md
         run: |
