@@ -1,18 +1,18 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title=" " coords="5,228,56,253"/>
-<area shape="rect" id="node2" href="$da/df2/durand__kerner__roots_8cpp.html#a2c35b320ace8677f9b331faf94f8b2fd" title=" " coords="104,203,239,228"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " coords="135,252,208,277"/>
-<area shape="rect" id="node3" href="$da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377" title=" " coords="299,5,427,31"/>
-<area shape="rect" id="node4" href="$da/df2/durand__kerner__roots_8cpp.html#a90219e35062007d1f1b68e9af071ab5c" title=" " coords="316,104,409,129"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " coords="328,153,397,179"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " coords="287,203,439,228"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isinf.html#" title=" " coords="327,252,399,277"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " coords="323,301,402,327"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="326,351,399,376"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " coords="295,400,430,425"/>
-<area shape="rect" id="node14" href="$da/df2/durand__kerner__roots_8cpp.html#ae2ab49ba1969d7a5988f9bc2c8924569" title=" " coords="313,55,412,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " coords="487,55,620,80"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " coords="490,104,617,129"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/fprintf.html#" title=" " coords="508,153,599,179"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " coords="517,5,589,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,228,56,253"/>
+<area shape="rect" id="node2" href="$da/df2/durand__kerner__roots_8cpp.html#a2c35b320ace8677f9b331faf94f8b2fd" title=" " alt="" coords="104,203,239,228"/>
+<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="135,252,208,277"/>
+<area shape="rect" id="node3" href="$da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377" title=" " alt="" coords="299,5,427,31"/>
+<area shape="rect" id="node4" href="$da/df2/durand__kerner__roots_8cpp.html#a90219e35062007d1f1b68e9af071ab5c" title=" " alt="" coords="316,104,409,129"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="328,153,397,179"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="287,203,439,228"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isinf.html#" title=" " alt="" coords="327,252,399,277"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " alt="" coords="323,301,402,327"/>
+<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="326,351,399,376"/>
+<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="295,400,430,425"/>
+<area shape="rect" id="node14" href="$da/df2/durand__kerner__roots_8cpp.html#ae2ab49ba1969d7a5988f9bc2c8924569" title=" " alt="" coords="313,55,412,80"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/imag.html#" title=" " alt="" coords="487,55,620,80"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/complex/real.html#" title=" " alt="" coords="490,104,617,129"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/c/fprintf.html#" title=" " alt="" coords="508,153,599,179"/>
+<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="517,5,589,31"/>
 </map>

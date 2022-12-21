@@ -1,5 +1,5 @@
 <map id="physics::ground_to_ground_projectile_motion::horizontal_range" name="physics::ground_to_ground_projectile_motion::horizontal_range">
-<area shape="rect" id="node1" title="Calculate the horizontal distance that the projectile travels." coords="5,35,179,89"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " coords="279,5,348,31"/>
-<area shape="rect" id="node3" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." coords="227,79,400,133"/>
+<area shape="rect" id="node1" title="Calculate the horizontal distance that the projectile travels." alt="" coords="5,35,179,89"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/cos.html#" title=" " alt="" coords="279,5,348,31"/>
+<area shape="rect" id="node3" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." alt="" coords="227,79,400,133"/>
 </map>

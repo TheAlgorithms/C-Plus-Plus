@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,127,56,152"/>
-<area shape="rect" id="node2" href="$d6/d05/reverse__a__linked__list_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." coords="104,127,148,152"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="237,5,309,31"/>
-<area shape="rect" id="node4" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a4649fc2c5d09dc58608cd9299db9946f" title="Utility function that adds a new element at the end of the list." coords="196,55,351,95"/>
-<area shape="rect" id="node7" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70" title="Utility function for reversing a list." coords="196,119,351,159"/>
-<area shape="rect" id="node8" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ab2d20da40d800897c31a649799d5e43d" title="Utility function to find the top element of the list." coords="196,183,351,223"/>
-<area shape="rect" id="node9" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#af42071da0067130389cb12fc526ea4fe" title="Utility function to find the i th element of the list." coords="196,247,351,287"/>
-<area shape="rect" id="node5" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" title="Utility function that checks if the list is empty." coords="399,147,553,187"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/error/exception/what.html#" title=" " coords="407,63,545,88"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,127,56,152"/>
+<area shape="rect" id="node2" href="$d6/d05/reverse__a__linked__list_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,127,148,152"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="237,5,309,31"/>
+<area shape="rect" id="node4" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a4649fc2c5d09dc58608cd9299db9946f" title="Utility function that adds a new element at the end of the list." alt="" coords="196,55,351,95"/>
+<area shape="rect" id="node7" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70" title="Utility function for reversing a list." alt="" coords="196,119,351,159"/>
+<area shape="rect" id="node8" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ab2d20da40d800897c31a649799d5e43d" title="Utility function to find the top element of the list." alt="" coords="196,183,351,223"/>
+<area shape="rect" id="node9" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#af42071da0067130389cb12fc526ea4fe" title="Utility function to find the i th element of the list." alt="" coords="196,247,351,287"/>
+<area shape="rect" id="node5" href="$d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" title="Utility function that checks if the list is empty." alt="" coords="399,147,553,187"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/error/exception/what.html#" title=" " alt="" coords="407,63,545,88"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="others::postfix_expression::postfix_evaluation" name="others::postfix_expression::postfix_evaluation">
-<area shape="rect" id="node1" title="Postfix Evaluation algorithm to compute the value from given input array." coords="5,154,180,194"/>
-<area shape="rect" id="node2" href="$d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338" title="Evaluate answer using given last two operands from and operation." coords="228,55,403,95"/>
-<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83" title=" " coords="673,92,768,117"/>
-<area shape="rect" id="node6" href="$d7/d75/postfix__evaluation_8cpp.html#a4c27f949c9d6659be9f5bd2ccbe1360a" title="Checks if scanned string is a number." coords="228,203,403,243"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stof.html#" title=" " coords="280,268,351,293"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/c_str.html#" title=" " coords="479,5,597,31"/>
-<area shape="rect" id="node4" href="$d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea" title="Pushing operand, also called the number in the array to the stack." coords="451,55,625,95"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " coords="499,171,577,196"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " coords="479,220,597,245"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/empty.html#" title=" " coords="476,269,600,295"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " coords="483,319,593,344"/>
+<area shape="rect" id="node1" title="Postfix Evaluation algorithm to compute the value from given input array." alt="" coords="5,154,180,194"/>
+<area shape="rect" id="node2" href="$d7/d75/postfix__evaluation_8cpp.html#a59fd597e0ea394abe027ced4d2ea3338" title="Evaluate answer using given last two operands from and operation." alt="" coords="228,55,403,95"/>
+<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83" title=" " alt="" coords="673,92,768,117"/>
+<area shape="rect" id="node6" href="$d7/d75/postfix__evaluation_8cpp.html#a4c27f949c9d6659be9f5bd2ccbe1360a" title="Checks if scanned string is a number." alt="" coords="228,203,403,243"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/stof.html#" title=" " alt="" coords="280,268,351,293"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/c_str.html#" title=" " alt="" coords="479,5,597,31"/>
+<area shape="rect" id="node4" href="$d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea" title="Pushing operand, also called the number in the array to the stack." alt="" coords="451,55,625,95"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="499,171,577,196"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="479,220,597,245"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/empty.html#" title=" " alt="" coords="476,269,600,295"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="483,319,593,344"/>
 </map>

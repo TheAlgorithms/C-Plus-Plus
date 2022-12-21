@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,99,56,124"/>
-<area shape="rect" id="node2" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a2aaf88c9954ef3ab686f8e4bfbd87622" title="Delete element from back of the queue." coords="104,5,284,60"/>
-<area shape="rect" id="node4" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a688b7ea064739ea9fa66bf64bf4ae631" title="Show all saved data." coords="104,84,284,139"/>
-<area shape="rect" id="node5" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663" title="Add element to the first of the queue." coords="104,163,284,217"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/at.html#" title=" " coords="339,60,435,85"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " coords="332,177,441,203"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,99,56,124"/>
+<area shape="rect" id="node2" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a2aaf88c9954ef3ab686f8e4bfbd87622" title="Delete element from back of the queue." alt="" coords="104,5,284,60"/>
+<area shape="rect" id="node4" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a688b7ea064739ea9fa66bf64bf4ae631" title="Show all saved data." alt="" coords="104,84,284,139"/>
+<area shape="rect" id="node5" href="$d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a4dc64488c36f84d927365fa8d1933663" title="Add element to the first of the queue." alt="" coords="104,163,284,217"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/at.html#" title=" " alt="" coords="339,60,435,85"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="332,177,441,203"/>
 </map>

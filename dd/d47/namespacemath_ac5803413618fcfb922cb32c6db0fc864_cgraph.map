@@ -1,5 +1,5 @@
 <map id="math::cylinder_surface_area" name="math::cylinder_surface_area">
-<area shape="rect" id="node1" title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)" coords="5,29,192,55"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " coords="240,29,297,55"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="345,29,419,55"/>
+<area shape="rect" id="node1" title="surface area of a cylinder (2 * pi * r * h + 2 * pi * r^2)" alt="" coords="5,29,192,55"/>
+<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="240,29,297,55"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="345,29,419,55"/>
 </map>

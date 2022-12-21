@@ -1,19 +1,19 @@
 <map id="ciphers::HillCipher::generate_keys" name="ciphers::HillCipher::generate_keys">
-<area shape="rect" id="node1" title="Generate encryption and decryption key pair." coords="5,262,135,302"/>
-<area shape="rect" id="node2" href="$d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" title=" " coords="431,56,538,81"/>
-<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706" title="Generate decryption matrix from an encryption matrix key." coords="183,207,357,247"/>
-<area shape="rect" id="node11" href="$d6/d26/classciphers_1_1_hill_cipher.html#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid..." coords="183,339,357,379"/>
-<area shape="rect" id="node17" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " coords="216,404,324,429"/>
-<area shape="rect" id="node3" href="$d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" title=" " coords="612,5,735,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="783,81,899,107"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " coords="450,157,519,183"/>
-<area shape="rect" id="node7" href="$d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" title=" " coords="420,207,549,247"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/round.html#" title=" " coords="445,272,525,297"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " coords="445,321,525,347"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="637,215,709,240"/>
-<area shape="rect" id="node12" href="$d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0" title="Compute GCD of two integers using Euler&#39;s algorithm." coords="405,371,564,396"/>
-<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " coords="441,420,528,445"/>
-<area shape="rect" id="node15" href="$d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9" title="Function to generate a random integer in a given interval." coords="420,470,549,510"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="634,371,713,396"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " coords="637,477,710,503"/>
+<area shape="rect" id="node1" title="Generate encryption and decryption key pair." alt="" coords="5,262,135,302"/>
+<area shape="rect" id="node2" href="$d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" title=" " alt="" coords="431,56,538,81"/>
+<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706" title="Generate decryption matrix from an encryption matrix key." alt="" coords="183,207,357,247"/>
+<area shape="rect" id="node11" href="$d6/d26/classciphers_1_1_hill_cipher.html#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid..." alt="" coords="183,339,357,379"/>
+<area shape="rect" id="node17" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="216,404,324,429"/>
+<area shape="rect" id="node3" href="$d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" title=" " alt="" coords="612,5,735,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="783,81,899,107"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="450,157,519,183"/>
+<area shape="rect" id="node7" href="$d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" title=" " alt="" coords="420,207,549,247"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/round.html#" title=" " alt="" coords="445,272,525,297"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="445,321,525,347"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="637,215,709,240"/>
+<area shape="rect" id="node12" href="$d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0" title="Compute GCD of two integers using Euler&#39;s algorithm." alt="" coords="405,371,564,396"/>
+<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " alt="" coords="441,420,528,445"/>
+<area shape="rect" id="node15" href="$d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9" title="Function to generate a random integer in a given interval." alt="" coords="420,470,549,510"/>
+<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="634,371,713,396"/>
+<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="637,477,710,503"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="physics::ground_to_ground_projectile_motion::max_height" name="physics::ground_to_ground_projectile_motion::max_height">
-<area shape="rect" id="node1" title="Calculate the max height of the projectile." coords="5,93,179,148"/>
-<area shape="rect" id="node2" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." coords="227,29,400,84"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " coords="277,108,349,133"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " coords="281,157,346,183"/>
+<area shape="rect" id="node1" title="Calculate the max height of the projectile." alt="" coords="5,93,179,148"/>
+<area shape="rect" id="node2" href="$d9/d29/ground__to__ground__projectile__motion_8cpp.html#aba1d26faf6a5379c28cae458956241de" title="Convert radians to degrees." alt="" coords="227,29,400,84"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="277,108,349,133"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sin.html#" title=" " alt="" coords="281,157,346,183"/>
 </map>

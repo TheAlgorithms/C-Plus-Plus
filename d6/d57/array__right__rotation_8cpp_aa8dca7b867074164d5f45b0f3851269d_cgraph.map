@@ -1,9 +1,9 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Function to test the correctness of shift_right() function." coords="5,104,49,129"/>
-<area shape="rect" id="node2" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." coords="97,5,185,31"/>
-<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." coords="97,55,185,80"/>
-<area shape="rect" id="node4" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." coords="97,104,185,129"/>
-<area shape="rect" id="node5" href="$d9/df4/namespacetests.html#a2b9769e44683dcb67fe1083ad91e134d" title="A Test to check a very large input." coords="97,153,185,179"/>
-<area shape="rect" id="node7" href="$d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86" title="A Test to check a shift of zero." coords="97,203,185,228"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="233,153,388,179"/>
+<area shape="rect" id="node1" title="Function to test the correctness of shift_right() function." alt="" coords="5,104,49,129"/>
+<area shape="rect" id="node2" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." alt="" coords="97,5,185,31"/>
+<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." alt="" coords="97,55,185,80"/>
+<area shape="rect" id="node4" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." alt="" coords="97,104,185,129"/>
+<area shape="rect" id="node5" href="$d9/df4/namespacetests.html#a2b9769e44683dcb67fe1083ad91e134d" title="A Test to check a very large input." alt="" coords="97,153,185,179"/>
+<area shape="rect" id="node7" href="$d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86" title="A Test to check a shift of zero." alt="" coords="97,203,185,228"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="233,153,388,179"/>
 </map>

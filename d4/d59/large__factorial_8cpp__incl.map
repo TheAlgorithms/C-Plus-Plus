@@ -1,12 +1,12 @@
 <map id="math/large_factorial.cpp" name="math/large_factorial.cpp">
-<area shape="rect" id="node1" title="Compute factorial of any arbitratily large number/." coords="94,5,255,31"/>
-<area shape="rect" id="node2" title=" " coords="5,152,67,177"/>
-<area shape="rect" id="node3" title=" " coords="307,79,362,104"/>
-<area shape="rect" id="node4" title=" " coords="91,152,163,177"/>
-<area shape="rect" id="node5" href="$d4/d86/large__number_8h.html" title="Library to perform arithmatic operations on arbitrarily large numbers." coords="165,79,283,104"/>
-<area shape="rect" id="node6" title=" " coords="565,152,640,177"/>
-<area shape="rect" id="node7" title=" " coords="187,152,253,177"/>
-<area shape="rect" id="node8" title=" " coords="277,152,352,177"/>
-<area shape="rect" id="node9" title=" " coords="376,152,459,177"/>
-<area shape="rect" id="node10" title=" " coords="483,152,541,177"/>
+<area shape="rect" id="node1" title="Compute factorial of any arbitratily large number/." alt="" coords="94,5,255,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,152,67,177"/>
+<area shape="rect" id="node3" title=" " alt="" coords="307,79,362,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="91,152,163,177"/>
+<area shape="rect" id="node5" href="$d4/d86/large__number_8h.html" title="Library to perform arithmatic operations on arbitrarily large numbers." alt="" coords="165,79,283,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="565,152,640,177"/>
+<area shape="rect" id="node7" title=" " alt="" coords="187,152,253,177"/>
+<area shape="rect" id="node8" title=" " alt="" coords="277,152,352,177"/>
+<area shape="rect" id="node9" title=" " alt="" coords="376,152,459,177"/>
+<area shape="rect" id="node10" title=" " alt="" coords="483,152,541,177"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="numerical_methods::simpson_method::f" name="numerical_methods::simpson_method::f">
-<area shape="rect" id="node1" title="A function f(x) that will be used to test the method." coords="5,29,148,69"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " coords="199,11,264,37"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " coords="196,61,267,86"/>
+<area shape="rect" id="node1" title="A function f(x) that will be used to test the method." alt="" coords="5,29,148,69"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="199,11,264,37"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="196,61,267,86"/>
 </map>

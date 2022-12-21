@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,33,56,59"/>
-<area shape="rect" id="node2" href="$dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." coords="104,33,148,59"/>
-<area shape="rect" id="node3" href="$d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309" title="Babylonian methods is an iterative function which returns square root of radicand." coords="196,26,339,66"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="387,7,460,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " coords="389,60,458,85"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,33,56,59"/>
+<area shape="rect" id="node2" href="$dc/d9c/babylonian__method_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,33,148,59"/>
+<area shape="rect" id="node3" href="$d1/de0/namespacenumerical__methods.html#a28e67885f8606564cc8335f483f63309" title="Babylonian methods is an iterative function which returns square root of radicand." alt="" coords="196,26,339,66"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="387,7,460,32"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="389,60,458,85"/>
 </map>

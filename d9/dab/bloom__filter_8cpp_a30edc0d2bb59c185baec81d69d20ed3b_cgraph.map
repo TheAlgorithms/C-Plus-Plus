@@ -1,5 +1,5 @@
 <map id="test_bloom_filter_int" name="test_bloom_filter_int">
-<area shape="rect" id="node1" title="Test for bloom filter with int as generic type." coords="5,31,144,56"/>
-<area shape="rect" id="node2" href="$d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677" title="Hash function for test" coords="192,5,369,31"/>
-<area shape="rect" id="node3" href="$d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c" title="Hash function for test" coords="192,55,369,80"/>
+<area shape="rect" id="node1" title="Test for bloom filter with int as generic type." alt="" coords="5,31,144,56"/>
+<area shape="rect" id="node2" href="$d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677" title="Hash function for test" alt="" coords="192,5,369,31"/>
+<area shape="rect" id="node3" href="$d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c" title="Hash function for test" alt="" coords="192,55,369,80"/>
 </map>

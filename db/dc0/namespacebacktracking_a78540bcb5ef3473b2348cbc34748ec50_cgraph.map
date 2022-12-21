@@ -1,6 +1,6 @@
 <map id="backtracking::minimax" name="backtracking::minimax">
-<area shape="rect" id="node1" title="Check which is the maximum/minimum number in the array." coords="5,80,159,105"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " coords="213,29,270,55"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="324,55,397,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " coords="207,131,276,156"/>
+<area shape="rect" id="node1" title="Check which is the maximum/minimum number in the array." alt="" coords="5,80,159,105"/>
+<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="213,29,270,55"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="324,55,397,80"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="207,131,276,156"/>
 </map>

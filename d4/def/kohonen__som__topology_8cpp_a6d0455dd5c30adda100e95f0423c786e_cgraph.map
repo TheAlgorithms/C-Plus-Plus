@@ -1,12 +1,12 @@
 <map id="test3" name="test3">
-<area shape="rect" id="node1" title=" " coords="5,59,56,84"/>
-<area shape="rect" id="node2" href="$d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485" title=" " coords="316,7,388,32"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="129,34,203,59"/>
-<area shape="rect" id="node5" href="$d9/d66/group__machine__learning.html#gabc90175770bf0d5853c466e14993a08c" title=" " coords="115,158,217,183"/>
-<area shape="rect" id="node10" href="$d4/def/kohonen__som__topology_8cpp.html#a4b7ab643f6a5002f991837de46f70653" title=" " coords="104,83,228,108"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " coords="476,32,549,58"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " coords="283,207,421,232"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " coords="276,256,428,282"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " coords="285,108,419,134"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strerror.html#" title=" " coords="307,158,397,183"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,59,56,84"/>
+<area shape="rect" id="node2" href="$d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485" title=" " alt="" coords="316,7,388,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="129,34,203,59"/>
+<area shape="rect" id="node5" href="$d9/d66/group__machine__learning.html#gabc90175770bf0d5853c466e14993a08c" title=" " alt="" coords="115,158,217,183"/>
+<area shape="rect" id="node10" href="$d4/def/kohonen__som__topology_8cpp.html#a4b7ab643f6a5002f991837de46f70653" title=" " alt="" coords="104,83,228,108"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="476,32,549,58"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="283,207,421,232"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/is_open.html#" title=" " alt="" coords="276,256,428,282"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/open.html#" title=" " alt="" coords="285,108,419,134"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strerror.html#" title=" " alt="" coords="307,158,397,183"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="graph/bidirectional_dijkstra.cpp" name="graph/bidirectional_dijkstra.cpp">
-<area shape="rect" id="node1" title="[Bidirectional Dijkstra Shortest Path Algorithm] (https://www.coursera.org/learn/algorithms&#45;on&#45;graphs..." coords="195,5,321,45"/>
-<area shape="rect" id="node2" title=" " coords="5,93,71,119"/>
-<area shape="rect" id="node3" title=" " coords="95,93,167,119"/>
-<area shape="rect" id="node4" title=" " coords="191,93,245,119"/>
-<area shape="rect" id="node5" title=" " coords="269,93,327,119"/>
-<area shape="rect" id="node6" title=" " coords="351,93,405,119"/>
-<area shape="rect" id="node7" title=" " coords="429,93,487,119"/>
+<area shape="rect" id="node1" title="[Bidirectional Dijkstra Shortest Path Algorithm] (https://www.coursera.org/learn/algorithms&#45;on&#45;graphs..." alt="" coords="195,5,321,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,71,119"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,93,167,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="191,93,245,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,93,327,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="351,93,405,119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="429,93,487,119"/>
 </map>

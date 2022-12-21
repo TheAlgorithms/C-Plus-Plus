@@ -1,8 +1,8 @@
 <map id="ciphers::HillCipher::codec" name="ciphers::HillCipher::codec">
-<area shape="rect" id="node1" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." coords="5,92,135,132"/>
-<area shape="rect" id="node2" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." coords="183,5,312,45"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " coords="186,70,309,95"/>
-<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" coords="183,120,312,160"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="360,154,476,179"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " coords="378,101,458,126"/>
+<area shape="rect" id="node1" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." alt="" coords="5,92,135,132"/>
+<area shape="rect" id="node2" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." alt="" coords="183,5,312,45"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="186,70,309,95"/>
+<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="183,120,312,160"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="360,154,476,179"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="378,101,458,126"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,81,56,107"/>
-<area shape="rect" id="node2" href="$dc/de1/recursive__tree__traversal_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." coords="104,81,155,107"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="371,5,443,31"/>
-<area shape="rect" id="node4" href="$dc/de1/recursive__tree__traversal_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title="1st test&#45;case" coords="203,56,253,81"/>
-<area shape="rect" id="node10" href="$dc/de1/recursive__tree__traversal_8cpp.html#a0283886819c7c140a023582b7269e2d0" title="2nd test&#45;case" coords="203,105,253,131"/>
-<area shape="rect" id="node11" href="$dc/de1/recursive__tree__traversal_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" title="3rd test&#45;case" coords="203,155,253,180"/>
-<area shape="rect" id="node5" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154" title="will allocate the memory for a node and, along the data and return the node." coords="301,55,512,95"/>
-<area shape="rect" id="node6" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a5224e6c2ba322b17cc2c3287b77742d5" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." coords="321,231,492,271"/>
-<area shape="rect" id="node8" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." coords="325,143,489,183"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " coords="579,219,696,244"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="560,151,715,176"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,81,56,107"/>
+<area shape="rect" id="node2" href="$dc/de1/recursive__tree__traversal_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Self&#45;test implementations." alt="" coords="104,81,155,107"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="371,5,443,31"/>
+<area shape="rect" id="node4" href="$dc/de1/recursive__tree__traversal_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0" title="1st test&#45;case" alt="" coords="203,56,253,81"/>
+<area shape="rect" id="node10" href="$dc/de1/recursive__tree__traversal_8cpp.html#a0283886819c7c140a023582b7269e2d0" title="2nd test&#45;case" alt="" coords="203,105,253,131"/>
+<area shape="rect" id="node11" href="$dc/de1/recursive__tree__traversal_8cpp.html#a6d0455dd5c30adda100e95f0423c786e" title="3rd test&#45;case" alt="" coords="203,155,253,180"/>
+<area shape="rect" id="node5" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154" title="will allocate the memory for a node and, along the data and return the node." alt="" coords="301,55,512,95"/>
+<area shape="rect" id="node6" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a5224e6c2ba322b17cc2c3287b77742d5" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." alt="" coords="321,231,492,271"/>
+<area shape="rect" id="node8" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="325,143,489,183"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="579,219,696,244"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="560,151,715,176"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " coords="5,31,56,56"/>
-<area shape="rect" id="node2" href="$dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9" title=" " coords="104,5,273,31"/>
-<area shape="rect" id="node5" href="$dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00" title=" " coords="321,56,465,81"/>
-<area shape="rect" id="node3" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " coords="328,7,459,32"/>
-<area shape="rect" id="node4" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " coords="513,32,652,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,56"/>
+<area shape="rect" id="node2" href="$dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9" title=" " alt="" coords="104,5,273,31"/>
+<area shape="rect" id="node5" href="$dd/d91/class_fenwick_tree.html#a2e9ea4fcbe0786487f4535c1cfc7aa00" title=" " alt="" coords="321,56,465,81"/>
+<area shape="rect" id="node3" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " alt="" coords="328,7,459,32"/>
+<area shape="rect" id="node4" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="513,32,652,57"/>
 </map>

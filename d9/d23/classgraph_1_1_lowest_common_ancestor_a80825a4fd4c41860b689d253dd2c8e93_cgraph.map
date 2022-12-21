@@ -1,8 +1,8 @@
 <map id="graph::LowestCommonAncestor::LowestCommonAncestor" name="graph::LowestCommonAncestor::LowestCommonAncestor">
-<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." coords="5,63,215,103"/>
-<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " coords="263,63,472,103"/>
-<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " coords="523,5,671,45"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="520,70,675,95"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " coords="534,119,661,145"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="723,13,839,38"/>
+<area shape="rect" id="node1" title="Stores the tree and precomputs &quot;up lifts&quot;." alt="" coords="5,63,215,103"/>
+<area shape="rect" id="node2" href="$d9/d23/classgraph_1_1_lowest_common_ancestor.html#a42589cc39d6bbff6c997152f1b96e356" title=" " alt="" coords="263,63,472,103"/>
+<area shape="rect" id="node3" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="523,5,671,45"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="520,70,675,95"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="534,119,661,145"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="723,13,839,38"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="sorting/pancake_sort.cpp" name="sorting/pancake_sort.cpp">
-<area shape="rect" id="node1" title="pancake sort sorts a disordered stack of pancakes by flipping any number of pancakes using a spatula ..." coords="100,5,268,31"/>
-<area shape="rect" id="node2" title=" " coords="5,79,80,104"/>
-<area shape="rect" id="node3" title=" " coords="105,79,170,104"/>
-<area shape="rect" id="node4" title=" " coords="195,79,267,104"/>
-<area shape="rect" id="node5" title=" " coords="291,79,349,104"/>
+<area shape="rect" id="node1" title="pancake sort sorts a disordered stack of pancakes by flipping any number of pancakes using a spatula ..." alt="" coords="100,5,268,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,80,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,79,170,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="195,79,267,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="291,79,349,104"/>
 </map>

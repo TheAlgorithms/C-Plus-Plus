@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0":[11,0,20,11,4],
 "dc/dfe/ternary__search_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,20,11,5],
 "dc/dfe/ternary__search_8cpp.html#aef655a27eb82efa299bf9d0becf6e9c8":[11,0,20,11,7],
 "dd/d0c/hamiltons__cycle_8cpp.html":[11,0,8,7],
@@ -34,8 +35,8 @@ var NAVTREEINDEX11 =
 "dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a":[10,0,24,4],
 "dd/d1f/classdsu.html#a126e3002a464e53cd54b07ba56482a72":[10,0,24,1],
 "dd/d1f/classdsu.html#a126e3002a464e53cd54b07ba56482a72":[10,0,24,0],
-"dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c":[10,0,24,3],
 "dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c":[10,0,24,2],
+"dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c":[10,0,24,3],
 "dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c":[10,0,24,10],
 "dd/d1f/classdsu.html#a1d77aad7fc39fe7140d834cd347e5c63":[10,0,24,15],
 "dd/d1f/classdsu.html#a1ef0b0462a0dda63514f641cbb7dd8cb":[10,0,24,16],
@@ -227,8 +228,8 @@ var NAVTREEINDEX11 =
 "de/d48/struct_trie_1_1_trie_node.html":[10,0,52,0],
 "de/d4a/class_compare.html":[10,0,19],
 "de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,19,0],
-"de/d4f/structmath_1_1_point.html":[10,0,7,1],
 "de/d4f/structmath_1_1_point.html":[9,0,60,0],
+"de/d4f/structmath_1_1_point.html":[10,0,7,1],
 "de/d6a/knuth__morris__pratt_8cpp.html":[11,0,22,2],
 "de/d6a/knuth__morris__pratt_8cpp.html#a26a58225ce7d3fa9d4c2f5349a65ed93":[11,0,22,2,1],
 "de/d6a/knuth__morris__pratt_8cpp.html#a996573527312d5255e1495b879e8a34f":[11,0,22,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "de/d75/qr__eigen__values_8cpp.html#abb8bf4c55e10685a5eb2ad3797fde1ae":[11,0,14,20,4],
 "de/d75/qr__eigen__values_8cpp.html#aee57a411f07599034f5ceb8cc7d65b40":[11,0,14,20,0],
 "de/d7b/merge__insertion__sort_8cpp.html":[11,0,21,10],
-"de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1":[11,0,21,10,0],
-"de/d7b/merge__insertion__sort_8cpp.html#a7161278f18e83b671c6454b139cc5674":[11,0,21,10,3]
+"de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1":[11,0,21,10,0]
 };

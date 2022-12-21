@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,104,56,129"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="131,5,203,31"/>
-<area shape="rect" id="node3" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d" title=" " coords="111,79,222,104"/>
-<area shape="rect" id="node5" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25" title=" " coords="104,128,229,153"/>
-<area shape="rect" id="node7" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " coords="145,177,188,203"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="285,79,363,104"/>
-<area shape="rect" id="node6" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#abe92d63a0ff9bda7e304df510d5dd217" title=" " coords="277,128,371,153"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,104,56,129"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="131,5,203,31"/>
+<area shape="rect" id="node3" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#acba15ca55b3e7dcb91f3c65d72ba052d" title=" " alt="" coords="111,79,222,104"/>
+<area shape="rect" id="node5" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#a1792ac7c33aaf26b860ab55f5652ab25" title=" " alt="" coords="104,128,229,153"/>
+<area shape="rect" id="node7" href="$d4/da0/gcd__iterative__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e" title=" " alt="" coords="145,177,188,203"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="285,79,363,104"/>
+<area shape="rect" id="node6" href="$d9/d5d/extended__euclid__algorithm_8cpp.html#abe92d63a0ff9bda7e304df510d5dd217" title=" " alt="" coords="277,128,371,153"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="dsu::get" name="dsu::get">
-<area shape="rect" id="node1" title="prints the minimum, maximum and size of the set to which i belongs to" coords="5,55,75,80"/>
-<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." coords="123,5,224,31"/>
-<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." coords="125,55,222,80"/>
-<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." coords="136,104,211,129"/>
-<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" coords="272,55,364,80"/>
+<area shape="rect" id="node1" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="5,55,75,80"/>
+<area shape="rect" id="node2" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="123,5,224,31"/>
+<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="125,55,222,80"/>
+<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="136,104,211,129"/>
+<area shape="rect" id="node3" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="272,55,364,80"/>
 </map>

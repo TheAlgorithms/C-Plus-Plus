@@ -1,5 +1,5 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Self&#45;test implementations." coords="5,5,49,31"/>
-<area shape="rect" id="node2" href="$dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9" title="function to convert a C++ string to lower case" coords="97,5,151,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " coords="199,5,321,31"/>
+<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,5,49,31"/>
+<area shape="rect" id="node2" href="$dc/db5/text__search_8cpp.html#a3f8975d227cd0e58f298b380c5dac0d9" title="function to convert a C++ string to lower case" alt="" coords="97,5,151,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="199,5,321,31"/>
 </map>

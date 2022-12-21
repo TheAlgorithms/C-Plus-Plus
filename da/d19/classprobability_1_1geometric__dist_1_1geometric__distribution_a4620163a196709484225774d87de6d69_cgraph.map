@@ -1,6 +1,6 @@
 <map id="probability::geometric_dist::geometric_distribution::range_tries" name="probability::geometric_dist::geometric_distribution::range_tries">
-<area shape="rect" id="node1" title="This function computes the probability to have success in a given range of tries." coords="5,37,191,92"/>
-<area shape="rect" id="node2" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" title="The cumulative distribution function." coords="239,5,424,60"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " coords="249,84,414,109"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " coords="472,20,544,45"/>
+<area shape="rect" id="node1" title="This function computes the probability to have success in a given range of tries." alt="" coords="5,37,191,92"/>
+<area shape="rect" id="node2" href="$da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html#a08328dc7d62188427111f176b56a105a" title="The cumulative distribution function." alt="" coords="239,5,424,60"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="249,84,414,109"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="472,20,544,45"/>
 </map>

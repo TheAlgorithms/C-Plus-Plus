@@ -1,8 +1,8 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." coords="5,95,56,121"/>
-<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." coords="104,70,193,95"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " coords="113,119,185,145"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " coords="241,5,373,45"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " coords="272,70,343,95"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="268,119,347,145"/>
+<area shape="rect" id="node1" title="Test function to find maxima for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="5,95,56,121"/>
+<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="104,70,193,95"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="113,119,185,145"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="241,5,373,45"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="272,70,343,95"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="268,119,347,145"/>
 </map>

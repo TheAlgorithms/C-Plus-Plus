@@ -1,27 +1,27 @@
 <map id="test1" name="test1">
-<area shape="rect" id="node1" title="Self test 1 &#45; using 3x3 randomly generated key." coords="5,441,56,467"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " coords="104,288,243,313"/>
-<area shape="rect" id="node3" href="$d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b" title="Decrypt a given text using a given key." coords="109,338,238,378"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="891,508,1007,533"/>
-<area shape="rect" id="node10" href="$d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917" title="Encrypt a given text using a given key." coords="109,402,238,442"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="745,559,817,584"/>
-<area shape="rect" id="node12" href="$d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5" title="Generate encryption and decryption key pair." coords="109,466,238,506"/>
-<area shape="rect" id="node4" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." coords="313,138,443,178"/>
-<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." coords="528,170,657,210"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " coords="531,5,654,31"/>
-<area shape="rect" id="node8" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" coords="528,106,657,146"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " coords="741,217,821,243"/>
-<area shape="rect" id="node13" href="$d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" title=" " coords="539,501,646,527"/>
-<area shape="rect" id="node15" href="$d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706" title="Generate decryption matrix from an encryption matrix key." coords="291,602,465,642"/>
-<area shape="rect" id="node19" href="$d6/d26/classciphers_1_1_hill_cipher.html#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid..." coords="291,335,465,375"/>
-<area shape="rect" id="node25" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " coords="324,501,432,527"/>
-<area shape="rect" id="node14" href="$d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" title=" " coords="720,457,843,483"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " coords="558,667,627,692"/>
-<area shape="rect" id="node17" href="$d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" title=" " coords="528,602,657,642"/>
-<area shape="rect" id="node18" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/round.html#" title=" " coords="553,768,633,793"/>
-<area shape="rect" id="node20" href="$d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0" title="Compute GCD of two integers using Euler&#39;s algorithm." coords="513,285,672,311"/>
-<area shape="rect" id="node22" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " coords="549,400,636,425"/>
-<area shape="rect" id="node23" href="$d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9" title="Function to generate a random integer in a given interval." coords="528,335,657,375"/>
-<area shape="rect" id="node21" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="742,285,821,311"/>
-<area shape="rect" id="node24" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " coords="745,343,818,368"/>
+<area shape="rect" id="node1" title="Self test 1 &#45; using 3x3 randomly generated key." alt="" coords="5,441,56,467"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/basic_ofstream/close.html#" title=" " alt="" coords="104,288,243,313"/>
+<area shape="rect" id="node3" href="$d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b" title="Decrypt a given text using a given key." alt="" coords="109,338,238,378"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="891,508,1007,533"/>
+<area shape="rect" id="node10" href="$d6/d26/classciphers_1_1_hill_cipher.html#aa8bbb6e4a5749f6008b06602d5103917" title="Encrypt a given text using a given key." alt="" coords="109,402,238,442"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="745,559,817,584"/>
+<area shape="rect" id="node12" href="$d6/d26/classciphers_1_1_hill_cipher.html#a405b0a28d66a61239d3565d5256f9cb5" title="Generate encryption and decryption key pair." alt="" coords="109,466,238,506"/>
+<area shape="rect" id="node4" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa" title="Convenience function to perform block cipher operations. The operations are identical for both encryp..." alt="" coords="313,138,443,178"/>
+<area shape="rect" id="node5" href="$d6/d26/classciphers_1_1_hill_cipher.html#ae77cad522fa44b8c985779a7188d2f41" title="Get the index of a character in the STRKEY." alt="" coords="528,170,657,210"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="531,5,654,31"/>
+<area shape="rect" id="node8" href="$d6/d26/classciphers_1_1_hill_cipher.html#ad36cbcc7a458b3f3a2af0c4aa1126590" title="helper function to perform vector multiplication with encryption or decryption matrix" alt="" coords="528,106,657,146"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/strlen.html#" title=" " alt="" coords="741,217,821,243"/>
+<area shape="rect" id="node13" href="$d1/dbe/lu__decomposition_8h.html#a3108d43bd32c6fb3b3c158476c51ba7f" title=" " alt="" coords="539,501,646,527"/>
+<area shape="rect" id="node15" href="$d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706" title="Generate decryption matrix from an encryption matrix key." alt="" coords="291,602,465,642"/>
+<area shape="rect" id="node19" href="$d6/d26/classciphers_1_1_hill_cipher.html#a642f70fb54cb50b00fb6df7c3f2b120e" title="Generate encryption matrix of a given size. Larger size matrices are difficult to generate but provid..." alt="" coords="291,335,465,375"/>
+<area shape="rect" id="node25" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="324,501,432,527"/>
+<area shape="rect" id="node14" href="$d1/dbe/lu__decomposition_8h.html#a75b8a228c6419ecda6077255d6d60509" title=" " alt="" coords="720,457,843,483"/>
+<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="558,667,627,692"/>
+<area shape="rect" id="node17" href="$d6/d26/classciphers_1_1_hill_cipher.html#a2eb58750b978a93ac5e6eb29e3e570b7" title=" " alt="" coords="528,602,657,642"/>
+<area shape="rect" id="node18" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/round.html#" title=" " alt="" coords="553,768,633,793"/>
+<area shape="rect" id="node20" href="$d6/d26/classciphers_1_1_hill_cipher.html#a7760f3665651a0a37937c79c62f219c0" title="Compute GCD of two integers using Euler&#39;s algorithm." alt="" coords="513,285,672,311"/>
+<area shape="rect" id="node22" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " alt="" coords="549,400,636,425"/>
+<area shape="rect" id="node23" href="$d6/d26/classciphers_1_1_hill_cipher.html#a629be41c1ab78850963e4ce14e1d11d9" title="Function to generate a random integer in a given interval." alt="" coords="528,335,657,375"/>
+<area shape="rect" id="node21" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="742,285,821,311"/>
+<area shape="rect" id="node24" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="745,343,818,368"/>
 </map>

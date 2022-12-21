@@ -1,7 +1,7 @@
 <map id="hash_chain" name="hash_chain">
-<area shape="rect" id="node1" title="Chain class with a given modulus." coords="53,309,141,335"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " coords="5,143,160,183"/>
-<area shape="rect" id="node3" href="$db/d8b/struct_node.html" title=" " coords="85,5,139,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " coords="126,93,290,119"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " coords="130,207,291,247"/>
+<area shape="rect" id="node1" title="Chain class with a given modulus." alt="" coords="53,309,141,335"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,143,160,183"/>
+<area shape="rect" id="node3" href="$db/d8b/struct_node.html" title=" " alt="" coords="85,5,139,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="126,93,290,119"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="130,207,291,247"/>
 </map>

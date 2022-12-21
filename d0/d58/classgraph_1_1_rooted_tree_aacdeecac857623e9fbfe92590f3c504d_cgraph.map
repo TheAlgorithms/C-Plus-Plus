@@ -1,10 +1,10 @@
 <map id="graph::RootedTree::RootedTree" name="graph::RootedTree::RootedTree">
-<area shape="rect" id="node1" title="Constructs the tree by calculating parent for every vertex. Assumes a valid description of a tree is ..." coords="5,105,144,145"/>
-<area shape="rect" id="node2" href="$d0/d58/classgraph_1_1_rooted_tree.html#ae6928f3ebd491541e9570e746b877c1e" title="Calculate the parents for all the vertices in the tree. Implements the breadth first search algorithm..." coords="192,105,331,145"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " coords="389,5,516,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " coords="394,55,511,80"/>
-<area shape="rect" id="node5" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " coords="379,105,527,145"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " coords="397,169,509,195"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " coords="393,219,512,244"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="575,112,691,137"/>
+<area shape="rect" id="node1" title="Constructs the tree by calculating parent for every vertex. Assumes a valid description of a tree is ..." alt="" coords="5,105,144,145"/>
+<area shape="rect" id="node2" href="$d0/d58/classgraph_1_1_rooted_tree.html#ae6928f3ebd491541e9570e746b877c1e" title="Calculate the parents for all the vertices in the tree. Implements the breadth first search algorithm..." alt="" coords="192,105,331,145"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="389,5,516,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="394,55,511,80"/>
+<area shape="rect" id="node5" href="$dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904" title=" " alt="" coords="379,105,527,145"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="397,169,509,195"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="393,219,512,244"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="575,112,691,137"/>
 </map>

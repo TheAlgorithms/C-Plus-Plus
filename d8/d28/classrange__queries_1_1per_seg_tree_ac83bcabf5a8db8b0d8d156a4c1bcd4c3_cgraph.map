@@ -1,7 +1,7 @@
 <map id="range_queries::perSegTree::construct" name="range_queries::perSegTree::construct">
-<area shape="rect" id="node1" title="Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed i..." coords="5,112,184,152"/>
-<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." coords="232,29,411,69"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " coords="257,94,385,119"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="244,143,399,169"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="263,193,379,218"/>
+<area shape="rect" id="node1" title="Constructing the segment tree with the values in the passed vector. Returned root pointer is pushed i..." alt="" coords="5,112,184,152"/>
+<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4" title="Constructing the segment tree with the early passed vector. Every call creates a node to hold the sum..." alt="" coords="232,29,411,69"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="257,94,385,119"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="244,143,399,169"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="263,193,379,218"/>
 </map>

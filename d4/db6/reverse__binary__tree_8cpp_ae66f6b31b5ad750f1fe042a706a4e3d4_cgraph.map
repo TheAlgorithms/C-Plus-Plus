@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="main function" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$d4/db6/reverse__binary__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the correctness of the Tree Reversal." coords="104,55,148,80"/>
-<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." coords="196,5,284,31"/>
-<area shape="rect" id="node4" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." coords="196,55,284,80"/>
-<area shape="rect" id="node5" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." coords="196,104,284,129"/>
+<area shape="rect" id="node1" title="main function" alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$d4/db6/reverse__binary__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the correctness of the Tree Reversal." alt="" coords="104,55,148,80"/>
+<area shape="rect" id="node3" href="$d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5" title="A Test to check an simple case." alt="" coords="196,5,284,31"/>
+<area shape="rect" id="node4" href="$d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669" title="A Test to check an empty vector." alt="" coords="196,55,284,80"/>
+<area shape="rect" id="node5" href="$d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76" title="A Test to check an invalid shift value." alt="" coords="196,104,284,129"/>
 </map>

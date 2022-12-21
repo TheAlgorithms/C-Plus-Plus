@@ -232,7 +232,7 @@ int main(int argc, char *argv[]) {
 }
 @endicode
 
-@subsubsection autotoc_md31 New File Name guidelines
+@subsubsection autotoc_md31 File Name guidelines
 
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as a separator
 - For instance
@@ -246,7 +246,7 @@ my_new_cpp_class.cpp    is correct format
 - File name validation will run on Docker to ensure validity.
 - If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if &lt;tt&gt;median_search.cpp&lt;/tt&gt; already exists in the &lt;tt&gt;search&lt;/tt&gt; folder, and you are contributing a new implementation, the filename should be &lt;tt&gt;median_search2.cpp&lt;/tt&gt;. For a third implementation, &lt;tt&gt;median_search3.cpp&lt;/tt&gt;, and so on.
 
-@subsubsection autotoc_md32 New Directory guidelines
+@subsubsection autotoc_md32 Directory guidelines
 
 - We recommend adding files to existing directories as much as possible.
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as separator ( no spaces or &lt;tt&gt;"-"&lt;/tt&gt; allowed )
@@ -260,7 +260,41 @@ some_new_fancy_category         is correct
 - Filepaths will be used to dynamically create a directory of our algorithms.
 - Filepath validation will run on GitHub Actions to ensure compliance.
 
-@subsubsection autotoc_md33 Commit Guidelines
+@paragraph autotoc_md33 Integrating CMake in a new directory
+
+In case a new directory is 100% required, &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file in the root directory needs to be updated, and a new &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file needs to be created within the new directory.
+
+An example of how your new &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file should look like. Note that if there are any extra libraries/setup required, you must include that in this file as well.
+
+@icode{cmake} 
+# If necessary, use the RELATIVE flag, otherwise each source file may be listed
+# with full pathname. The RELATIVE flag makes it easier to extract an executable's name
+# automatically.
+
+file( GLOB APP_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp )
+foreach( testsourcefile ${APP_SOURCES} )
+    string( REPLACE ".cpp" "" testname ${testsourcefile} ) # File type. Example: `.cpp`
+    add_executable( ${testname} ${testsourcefile} )
+
+    set_target_properties(${testname} PROPERTIES LINKER_LANGUAGE CXX)
+    if(OpenMP_CXX_FOUND)
+        target_link_libraries(${testname} OpenMP::OpenMP_CXX)
+    endif()
+    install(TARGETS ${testname} DESTINATION "bin/&lt;foldername&gt;") # Folder name. Do NOT include `&lt;&gt;`
+
+endforeach( testsourcefile ${APP_SOURCES} )
+@endicode
+
+The &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file in the root directory should be updated to include the new directory.\
+Include your new directory after the last subdirectory. Example:
+
+@icode{cmake} 
+...
+add_subdirectory(divide_and_conquer)
+add_subdirectory(&lt;foldername&gt;)
+@endicode
+
+@subsubsection autotoc_md34 Commit Guidelines
 
 - It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilled across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected.
 
@@ -287,11 +321,11 @@ Common prefixes:
 - test: Correct existing tests or add new ones
 - chore: Miscellaneous changes that do not match any of the above.
 
-@subsection autotoc_md34 Pull Requests
+@subsection autotoc_md35 Pull Requests
 
 - Checkout our &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md</a>" target="_blank" &gt;pull request template&lt;/a&gt;
 
-@subsubsection autotoc_md35 Building Locally
+@subsubsection autotoc_md36 Building Locally
 
 Before submitting a pull request,
  build the code locally or using the convenient &lt;a href="<a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus">https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus</a>" target="_blank" &gt;&lt;img src="<a href="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod">https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod</a>" alt="Gitpod Ready-to-Code"/&gt;&lt;/a&gt; service.
@@ -300,7 +334,7 @@ Before submitting a pull request,
 cmake -B build -S .
 @endicode
 
-@subsubsection autotoc_md36 Static Code Analyzer
+@subsubsection autotoc_md37 Static Code Analyzer
 
 We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://clang.llvm.org/extra/clang-tidy/</a>" target="_blank" &gt;&lt;tt&gt;clang-tidy&lt;/tt&gt;&lt;/a&gt; as a static code analyzer with a configuration in &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy</a>" target="_blank" &gt;&lt;tt&gt;.clang-tidy&lt;/tt&gt;&lt;/a&gt;.
 
@@ -308,7 +342,7 @@ We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://cl
 clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 @endicode
 
-@subsubsection autotoc_md37 Code Formatter
+@subsubsection autotoc_md38 Code Formatter
 
 &lt;a href="<a href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a>" target="_blank" &gt;&lt;tt&gt;clang-format&lt;/tt&gt;&lt;/a&gt; is used for code formatting.
 
@@ -319,7 +353,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
   - Linux (Debian): &lt;tt&gt;sudo apt-get install clang-format-10 clang-tidy-10&lt;/tt&gt;
 - Running (all platforms): &lt;tt&gt;clang-format -i -style="file" my_file.cpp&lt;/tt&gt;
 
-@subsubsection autotoc_md38 GitHub Actions
+@subsubsection autotoc_md39 GitHub Actions
 
 - Enable GitHub Actions on your fork of the repository.
 After enabling, it will execute &lt;tt&gt;clang-tidy&lt;/tt&gt; and &lt;tt&gt;clang-format&lt;/tt&gt; after every push (not a commit).

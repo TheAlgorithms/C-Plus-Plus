@@ -1,8 +1,8 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Test implementations." coords="5,109,49,134"/>
-<area shape="rect" id="node2" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#aa960d714d449612f25256850d72325f1" title="Insert the new element in the list." coords="97,5,235,45"/>
-<area shape="rect" id="node3" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a98f7d9079c0868e0f4e67d5c52174fb6" title="To remove the element from the list." coords="97,69,235,109"/>
-<area shape="rect" id="node4" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a0b7acf65026df1e9dd13eebf309dda5e" title="Utility function to print array." coords="97,133,235,173"/>
-<area shape="rect" id="node5" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a133635ad53bd89e3947ca02448819180" title="Sort the list." coords="97,197,235,237"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="283,205,361,230"/>
+<area shape="rect" id="node1" title="Test implementations." alt="" coords="5,109,49,134"/>
+<area shape="rect" id="node2" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#aa960d714d449612f25256850d72325f1" title="Insert the new element in the list." alt="" coords="97,5,235,45"/>
+<area shape="rect" id="node3" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a98f7d9079c0868e0f4e67d5c52174fb6" title="To remove the element from the list." alt="" coords="97,69,235,109"/>
+<area shape="rect" id="node4" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a0b7acf65026df1e9dd13eebf309dda5e" title="Utility function to print array." alt="" coords="97,133,235,173"/>
+<area shape="rect" id="node5" href="$d5/dab/structdata__structures_1_1list__array_1_1list.html#a133635ad53bd89e3947ca02448819180" title="Sort the list." alt="" coords="97,197,235,237"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="283,205,361,230"/>
 </map>

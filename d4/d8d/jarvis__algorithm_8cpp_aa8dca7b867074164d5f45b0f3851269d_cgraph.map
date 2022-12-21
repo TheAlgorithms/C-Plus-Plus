@@ -1,7 +1,7 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title=" " coords="5,71,49,97"/>
-<area shape="rect" id="node2" href="$d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1" title=" " coords="97,35,285,75"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="133,99,249,125"/>
-<area shape="rect" id="node3" href="$d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#a54df5f9a8f37170bd97c91127664655c" title=" " coords="333,5,521,45"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="350,70,505,95"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,49,97"/>
+<area shape="rect" id="node2" href="$d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1" title=" " alt="" coords="97,35,285,75"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="133,99,249,125"/>
+<area shape="rect" id="node3" href="$d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#a54df5f9a8f37170bd97c91127664655c" title=" " alt="" coords="333,5,521,45"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="350,70,505,95"/>
 </map>

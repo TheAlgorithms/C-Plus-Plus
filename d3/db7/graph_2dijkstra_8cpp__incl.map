@@ -1,10 +1,10 @@
 <map id="graph/dijkstra.cpp" name="graph/dijkstra.cpp">
-<area shape="rect" id="node1" title="[Graph Dijkstras Shortest Path Algorithm (Dijkstra&#39;s Shortest Path)] (https://en.wikipedia...." coords="241,5,366,31"/>
-<area shape="rect" id="node2" title=" " coords="5,79,71,104"/>
-<area shape="rect" id="node3" title=" " coords="95,79,167,104"/>
-<area shape="rect" id="node4" title=" " coords="191,79,245,104"/>
-<area shape="rect" id="node5" title=" " coords="269,79,338,104"/>
-<area shape="rect" id="node6" title=" " coords="363,79,420,104"/>
-<area shape="rect" id="node7" title=" " coords="445,79,498,104"/>
-<area shape="rect" id="node8" title=" " coords="522,79,581,104"/>
+<area shape="rect" id="node1" title="[Graph Dijkstras Shortest Path Algorithm (Dijkstra&#39;s Shortest Path)] (https://en.wikipedia...." alt="" coords="241,5,366,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,71,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,79,167,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="191,79,245,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,79,338,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="363,79,420,104"/>
+<area shape="rect" id="node7" title=" " alt="" coords="445,79,498,104"/>
+<area shape="rect" id="node8" title=" " alt="" coords="522,79,581,104"/>
 </map>

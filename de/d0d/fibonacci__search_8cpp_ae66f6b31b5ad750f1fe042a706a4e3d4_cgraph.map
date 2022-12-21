@@ -1,17 +1,17 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " coords="5,204,56,229"/>
-<area shape="rect" id="node2" href="$de/d0d/fibonacci__search_8cpp.html#a5e144326104e57a3808aed7eb098db0d" title="random tests for checking performance when an array doesn&#39;t contain an element" coords="104,228,243,253"/>
-<area shape="rect" id="node14" href="$de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f" title="random tests which cover cases when we have one, multiple or zero occurences of the value we&#39;re looki..." coords="123,179,224,204"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " coords="307,301,429,327"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " coords="308,351,428,376"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " coords="311,55,425,80"/>
-<area shape="rect" id="node6" href="$de/d0d/fibonacci__search_8cpp.html#a0bc61b3903d9a53061bf31e5d110fe61" title="using fibonacci search algorithm finds an index of a given element in a sorted array" coords="308,104,428,129"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/find.html#" title=" " coords="333,153,403,179"/>
-<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="291,203,445,228"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " coords="331,252,405,277"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/remove.html#" title=" " coords="323,400,413,425"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " coords="493,55,621,80"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " coords="523,104,592,129"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " coords="499,153,615,179"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " coords="333,5,403,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,204,56,229"/>
+<area shape="rect" id="node2" href="$de/d0d/fibonacci__search_8cpp.html#a5e144326104e57a3808aed7eb098db0d" title="random tests for checking performance when an array doesn&#39;t contain an element" alt="" coords="104,228,243,253"/>
+<area shape="rect" id="node14" href="$de/d0d/fibonacci__search_8cpp.html#a2aa09bef74ee063c1331de0883af4f4f" title="random tests which cover cases when we have one, multiple or zero occurences of the value we&#39;re looki..." alt="" coords="123,179,224,204"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="307,301,429,327"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="308,351,428,376"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="311,55,425,80"/>
+<area shape="rect" id="node6" href="$de/d0d/fibonacci__search_8cpp.html#a0bc61b3903d9a53061bf31e5d110fe61" title="using fibonacci search algorithm finds an index of a given element in a sorted array" alt="" coords="308,104,428,129"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/find.html#" title=" " alt="" coords="333,153,403,179"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="291,203,445,228"/>
+<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="331,252,405,277"/>
+<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/remove.html#" title=" " alt="" coords="323,400,413,425"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="493,55,621,80"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="523,104,592,129"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="499,153,615,179"/>
+<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " alt="" coords="333,5,403,31"/>
 </map>

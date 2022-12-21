@@ -1,5 +1,5 @@
 <map id="data_structures::tree_234::Tree234::TryRightRotate" name="data_structures::tree_234::Tree234::TryRightRotate">
-<area shape="rect" id="node1" title="A handy function to try if we can do a right rotate to the target node." coords="5,37,208,77"/>
-<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." coords="274,5,421,45"/>
-<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." coords="256,69,439,109"/>
+<area shape="rect" id="node1" title="A handy function to try if we can do a right rotate to the target node." alt="" coords="5,37,208,77"/>
+<area shape="rect" id="node2" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html#afd9f83e2d5d7f22f79c1348e98914631" title="Check if node is a 2&#45;node." alt="" coords="274,5,421,45"/>
+<area shape="rect" id="node3" href="$d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae68f8e62be02657c1287def6b38d7cc9" title="Do the actual right rotate operation." alt="" coords="256,69,439,109"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,79,56,104"/>
-<area shape="rect" id="node2" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the provided algorithm above." coords="137,29,181,55"/>
-<area shape="rect" id="node5" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#a8800c8a84d77dadadb05ad5e83b77ef4" title="Function to test the uint128_t header." coords="104,79,215,104"/>
-<area shape="rect" id="node6" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#a37775d1724ffe404c088dabbc8da91ae" title="Function to test the uint256_t header." coords="104,128,215,153"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="263,5,335,31"/>
-<area shape="rect" id="node4" href="$df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" title=" " coords="265,55,332,80"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,79,56,104"/>
+<area shape="rect" id="node2" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Function to test the provided algorithm above." alt="" coords="137,29,181,55"/>
+<area shape="rect" id="node5" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#a8800c8a84d77dadadb05ad5e83b77ef4" title="Function to test the uint128_t header." alt="" coords="104,79,215,104"/>
+<area shape="rect" id="node6" href="$df/d2c/elliptic__curve__key__exchange_8cpp.html#a37775d1724ffe404c088dabbc8da91ae" title="Function to test the uint256_t header." alt="" coords="104,128,215,153"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="263,5,335,31"/>
+<area shape="rect" id="node4" href="$df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9" title=" " alt="" coords="265,55,332,80"/>
 </map>

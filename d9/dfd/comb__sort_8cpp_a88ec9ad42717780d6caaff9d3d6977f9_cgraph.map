@@ -1,8 +1,8 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " coords="114,29,195,55"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " coords="104,79,205,104"/>
-<area shape="rect" id="node3" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " coords="253,5,352,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="263,55,342,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="400,5,473,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " alt="" coords="114,29,195,55"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="104,79,205,104"/>
+<area shape="rect" id="node3" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " alt="" coords="253,5,352,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="263,55,342,80"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="400,5,473,31"/>
 </map>

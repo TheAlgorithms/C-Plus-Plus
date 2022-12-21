@@ -1,5 +1,5 @@
 <map id="graph::disjoint_union::union_sets" name="graph::disjoint_union::union_sets">
-<area shape="rect" id="node1" title="Merge 2 components to become one." coords="5,59,147,99"/>
-<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." coords="195,29,336,69"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="226,94,305,119"/>
+<area shape="rect" id="node1" title="Merge 2 components to become one." alt="" coords="5,59,147,99"/>
+<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="195,29,336,69"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="226,94,305,119"/>
 </map>

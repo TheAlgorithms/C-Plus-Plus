@@ -1,7 +1,7 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title="Test function to find root for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the real root of a function in the given interval." coords="104,29,193,55"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " coords="113,79,185,104"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " coords="245,5,316,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " coords="241,55,320,80"/>
+<area shape="rect" id="node1" title="Test function to find root for the function &#160;in the interval &#160;&#160;&#160;Expected result: ." alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="$db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the real root of a function in the given interval." alt="" coords="104,29,193,55"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="113,79,185,104"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="245,5,316,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="241,55,320,80"/>
 </map>

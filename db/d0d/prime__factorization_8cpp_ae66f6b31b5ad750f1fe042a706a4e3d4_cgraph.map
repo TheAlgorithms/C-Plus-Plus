@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="141,5,213,31"/>
-<area shape="rect" id="node3" href="$db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46" title=" " coords="111,55,243,80"/>
-<area shape="rect" id="node5" href="$db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099" title=" " coords="104,104,251,129"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " coords="322,55,430,80"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="299,104,453,129"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="141,5,213,31"/>
+<area shape="rect" id="node3" href="$db/d0d/prime__factorization_8cpp.html#a0ece0145fb29a5cf48378c23dde2da46" title=" " alt="" coords="111,55,243,80"/>
+<area shape="rect" id="node5" href="$db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099" title=" " alt="" coords="104,104,251,129"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="322,55,430,80"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="299,104,453,129"/>
 </map>

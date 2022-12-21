@@ -1,9 +1,9 @@
 <map id="test2" name="test2">
-<area shape="rect" id="node1" title="2nd test&#45;case" coords="5,111,56,137"/>
-<area shape="rect" id="node2" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154" title="will allocate the memory for a node and, along the data and return the node." coords="104,5,315,45"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="173,70,245,95"/>
-<area shape="rect" id="node4" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a5224e6c2ba322b17cc2c3287b77742d5" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." coords="124,144,295,184"/>
-<area shape="rect" id="node6" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." coords="127,232,291,272"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " coords="381,171,499,197"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " coords="363,239,517,265"/>
+<area shape="rect" id="node1" title="2nd test&#45;case" alt="" coords="5,111,56,137"/>
+<area shape="rect" id="node2" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a08711eb2d741f4b51d980cff03b53154" title="will allocate the memory for a node and, along the data and return the node." alt="" coords="104,5,315,45"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="173,70,245,95"/>
+<area shape="rect" id="node4" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#a5224e6c2ba322b17cc2c3287b77742d5" title="postorder function that will perform the postorder traversal recursively, and return the result vecto..." alt="" coords="124,144,295,184"/>
+<area shape="rect" id="node6" href="$dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb" title="preorder function that will perform the preorder traversal recursively, and return the resultant vect..." alt="" coords="127,232,291,272"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="381,171,499,197"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="363,239,517,265"/>
 </map>

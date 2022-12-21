@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." coords="5,93,56,119"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " coords="145,5,217,31"/>
-<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " coords="311,68,369,93"/>
-<area shape="rect" id="node5" href="$db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50" title="Check which is the maximum/minimum number in the array." coords="104,131,257,156"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " coords="126,180,235,205"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " coords="423,93,496,119"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " coords="305,169,375,195"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,93,56,119"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="145,5,217,31"/>
+<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="311,68,369,93"/>
+<area shape="rect" id="node5" href="$db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50" title="Check which is the maximum/minimum number in the array." alt="" coords="104,131,257,156"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/size.html#" title=" " alt="" coords="126,180,235,205"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="423,93,496,119"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="305,169,375,195"/>
 </map>
