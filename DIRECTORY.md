@@ -145,7 +145,6 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
-  * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
   * [Jumpgame](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jumpgame.cpp)
   * [Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/knapsack.cpp)
@@ -174,6 +173,7 @@
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/armstrong_number.cpp)
   * [Binary Exponent](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/binary_exponent.cpp)
+  * [Binary Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/binary_exponentiation.cpp)
   * [Binomial Calculate](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/binomial_calculate.cpp)
   * [Check Amicable Pair](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/check_amicable_pair.cpp)
   * [Check Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/check_factorial.cpp)
