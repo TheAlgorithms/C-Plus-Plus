@@ -43,6 +43,7 @@ add_subdirectory(data_structures)
 add_subdirectory(machine_learning)
 add_subdirectory(numerical_methods)
 add_subdirectory(graph)
+add_subdirectory(divide_and_conquer)
 
 cmake_policy(SET CMP0054 NEW)
 cmake_policy(SET CMP0057 NEW)
