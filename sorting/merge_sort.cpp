@@ -22,11 +22,11 @@
  * arr[l..m] and arr[m+1..r] are sorted and merges the two
  * sorted sub-arrays into one.
  *
- * @param arr - array with two halves arr[l...m] and arr[m+1...l]
+ * @param arr - array with two halves arr[l...m] and arr[m+1...r]
  * @param l - left index or start index of first half array
  * @param m - right index or end index of first half array
  *
- * (The second array starts form m+1 and goes till l)
+ * (The second array starts form m+1 and goes till r)
  *
  * @param r - end index or right index of second half array
  */
