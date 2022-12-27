@@ -38,7 +38,7 @@ bool isPowerOfTwo(
     std ::int64_t n) {  // int64_t is preferred over int so that
                         // no Overflow can be there.
 
-    return n > 0 && not (n & n - 1); // If we subtract a power of 2 numbers by 1 
+    return n > 0 && !(n & n - 1); // If we subtract a power of 2 numbers by 1 
     // then all unset bits after the only set bit become set; and the set bit becomes unset.
 
     // If a number n is a power of 2 then bitwise and of n-1 and n will be zero.
