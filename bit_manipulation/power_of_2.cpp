@@ -1,7 +1,7 @@
 /**
  * @file
- * @brief Implementation to [Find whether a given number is power of 2]
- * (https://www.geeksforgeeks.org/program-to-find-whether-a-given-number-is-power-of-2/).
+ * @brief [Find whether a given number is power of 2]
+ * (https://www.geeksforgeeks.org/program-to-find-whether-a-given-number-is-power-of-2/) implementation
  *
  * @details
  * We are given a positive integer number. We need to check whether the number is power of
@@ -13,8 +13,10 @@
  * Space complexity: O(1)
  * @author [Prafful Gupta](https://github.com/EcstaticPG-25811)
  */
+
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
+
 /**
  * @namespace bit_manipulation
  * @brief Bit manipulation algorithms
@@ -46,6 +48,10 @@ bool isPowerOfTwo(
 }  // namespace count_of_set_bits
 }  // namespace bit_manipulation
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     // n = 4 return true
     assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(4) == true);
