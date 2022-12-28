@@ -8,87 +8,60 @@
 
 #include <cassert>
 #include <iostream>
+#include <memory>
+#include <vector>
 
 /** Definition of the node as a linked-list
- * \tparam Type type of data nodes of the linked list should contain
+ * \tparam ValueType type of data nodes of the linked list should contain
  */
-template <class Type>
+template <class ValueType>
 struct node {
-    Type data;         ///< data at current node
-    node<Type> *next;  ///< pointer to the next ::node instance
+    ValueType data = {};  ///< data at current node
+    std::shared_ptr<node<ValueType>> next =
+        {};  ///< pointer to the next ::node instance
 };
 
+template <typename Node, typename Action>
+void traverse(const std::shared_ptr<Node>& inNode, const Action& action) {
+    if (inNode) {
+        action(inNode);
+        traverse(inNode->next, action);
+    }
+}
+
 /** Definition of the stack class
- * \tparam Type type of data nodes of the linked list in the stack should
+ * \tparam value_type type of data nodes of the linked list in the stack should
  * contain
  */
-template <class Type>
+template <class ValueType>
 class stack {
  public:
+    using value_type = ValueType;
+
     /** Show stack */
     void display() {
-        node<Type> *current = stackTop;
         std::cout << "Top --> ";
-        while (current != nullptr) {
-            std::cout << current->data << "  ";
-            current = current->next;
-        }
+        traverse(stackTop,
+                 [](const auto inNode) { std::cout << inNode->data << "  "; });
         std::cout << std::endl;
         std::cout << "Size of stack: " << size << std::endl;
     }
 
-    /** Default constructor*/
-    stack() {
-        stackTop = nullptr;
-        size = 0;
-    }
-
-    /** Copy constructor*/
-    explicit stack(const stack<Type> &otherStack) {
-        node<Type> *newNode, *current, *last;
-
-        if (otherStack.stackTop == nullptr) {
-            stackTop = nullptr;
-        } else {
-            current = otherStack.stackTop;
-            stackTop = new node<Type>;
-            stackTop->data = current->data;
-            stackTop->next = nullptr;
-            last = stackTop;
-            current = current->next;
-            /* Copy the remaining stack */
-            while (current != nullptr) {
-                newNode = new node<Type>;
-                newNode->data = current->data;
-                newNode->next = nullptr;
-                last->next = newNode;
-                last = newNode;
-                current = current->next;
-            }
-        }
-        size = otherStack.size;
-    }
-
- private:
-    void deleteAllNodes() {
-        while (stackTop != nullptr) {
-            const auto tmpNode = stackTop;
-            stackTop = stackTop->next;
-            delete tmpNode;
-        }
+    auto toVector() const {
+        std::vector<value_type> res;
+        res.reserve(this->size);
+        traverse(stackTop,
+                 [&res](const auto inNode) { res.push_back(inNode->data); });
+        return res;
     }
 
  public:
-    /** Destructor */
-    ~stack() { deleteAllNodes(); }
-
     /** Determine whether the stack is empty */
     bool isEmptyStack() { return (stackTop == nullptr); }
 
     /** Add new item to the stack */
-    void push(Type item) {
-        node<Type> *newNode;
-        newNode = new node<Type>;
+    void push(const value_type& item) {
+        auto newNode = std::make_shared<node<value_type>>();
         newNode->data = item;
         newNode->next = stackTop;
         stackTop = newNode;
@@ -96,18 +69,15 @@ class stack {
     }
 
     /** Return the top element of the stack */
-    Type top() {
+    value_type top() const {
         assert(stackTop != nullptr);
         return stackTop->data;
     }
 
     /** Remove the top element of the stack */
     void pop() {
-        node<Type> *temp;
         if (!isEmptyStack()) {
-            temp = stackTop;
             stackTop = stackTop->next;
-            delete temp;
             size--;
         } else {
             std::cout << "Stack is empty !" << std::endl;
@@ -116,41 +86,13 @@ class stack {
 
     /** Clear stack */
     void clear() {
-        deleteAllNodes();
+        stackTop = nullptr;
         size = 0;
     }
 
-    /** Overload "=" the assignment operator */
-    stack<Type> &operator=(const stack<Type> &otherStack) {
-        node<Type> *newNode, *current, *last;
-
-        deleteAllNodes();
-        if (otherStack.stackTop == nullptr) {
-            stackTop = nullptr;
-        } else {
-            current = otherStack.stackTop;
-            stackTop = new node<Type>;
-            stackTop->data = current->data;
-            stackTop->next = nullptr;
-            last = stackTop;
-            current = current->next;
-            /* Copy the remaining stack */
-            while (current != nullptr) {
-                newNode = new node<Type>;
-                newNode->data = current->data;
-                newNode->next = nullptr;
-                last->next = newNode;
-                last = newNode;
-                current = current->next;
-            }
-        }
-        size = otherStack.size;
-        return *this;
-    }
-
  private:
-    node<Type> *stackTop; /**< Pointer to the stack */
-    int size;             ///< size of stack
+    std::shared_ptr<node<value_type>> stackTop = {}; /**< Pointer to the stack */
+    std::size_t size = 0;                           ///< size of stack
 };
 
 #endif  // DATA_STRUCTURES_STACK_HPP_
