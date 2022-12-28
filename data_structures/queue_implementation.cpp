@@ -6,9 +6,9 @@
  *
  */
 
-#include <iostream>
-#include <stack>
-#include <cstdlib>
+#include <iostream>  /// for IO operations
+#include <stack>     /// for stack operations
+#include <cstdlib>   /// for datatype conversion
 namespace
 {
     /**
