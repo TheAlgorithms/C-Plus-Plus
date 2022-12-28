@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
 #include <cassert>
+#include <iostream>
+#include <numeric>
+#include <vector>
 
 /*--------------------------------------------------------------------------
 /Iterate through the array from both sides to find the index of search_item.
@@ -23,7 +23,7 @@
 int double_linear_search(std::vector<int> list, int search_item) {
     // define the start and end index of the given array
     int start_ind = 0;
-    int end_ind = static_cast<int>(list.size()-1);
+    int end_ind = static_cast<int>(list.size() - 1);
     while (start_ind <= end_ind) {
         if (list[start_ind] == search_item) {
             return start_ind;
@@ -36,7 +36,7 @@ int double_linear_search(std::vector<int> list, int search_item) {
     return -1;
 }
 
-void test(std::vector<int> list, int number, int expected) { 
+void test(std::vector<int> list, int number, int expected) {
     auto result = double_linear_search(std::move(list), number);
     std::cout << "Expected value" << expected << " in search for " << number
               << ":\t" << (result == expected ? "PASS" : "FAIL") << std::endl;
@@ -53,6 +53,5 @@ int main() {
     test(short_list, 1, 0);
     test(short_list, 5, 1);
     test(short_list, 100, -1);
-    test(short_list, 10, 3);    
+    test(short_list, 10, 3);
 }
-    

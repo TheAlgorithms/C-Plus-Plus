@@ -15,7 +15,7 @@ where number of pairs line is given by user
 
 /** main function */
 int main() {
-    int l, st = 2, x, r, z, n, sp;
+    int l = 0, st = 2, x = 0, r = 0, z = 0, n = 0, sp = 0;
     std::cout << "Enter number of pair - ";
     std::cin >> x;
     z = x;

@@ -46,7 +46,7 @@ int64_t find_non_repeating_integer(const std::vector<int>& nums) {
 
     int _xor = 0;
 
-    for (const int& num: nums) {
+    for (const int& num : nums) {
         _xor ^= num;
     }
 
