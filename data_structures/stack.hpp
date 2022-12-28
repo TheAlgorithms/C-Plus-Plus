@@ -1,15 +1,16 @@
 /**
  * @file
  * @author danghai
+ * @author [Piotr Idzik](https://github.com/vil02)
  * @brief  This class specifies the basic operation on a stack as a linked list
  **/
 #ifndef DATA_STRUCTURES_STACK_HPP_
 #define DATA_STRUCTURES_STACK_HPP_
 
-#include <cassert>
-#include <iostream>
+#include <cassert>         /// for assert
+#include <iostream>        /// for IO operations
 #include <memory>
-#include <vector>
+#include <vector>          /// for std::vector
 
 /** Definition of the node as a linked-list
  * \tparam ValueType type of data nodes of the linked list should contain
