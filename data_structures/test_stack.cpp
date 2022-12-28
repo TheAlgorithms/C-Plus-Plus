@@ -17,7 +17,7 @@ void assertEqual(const T& valA, const T& valB) {
 
 template <typename T>
 void testConstructedStackIsEmpty() {
-    stack<T> curStack;
+    const stack<T> curStack;
     assertTrue(curStack.isEmptyStack());
 }
 

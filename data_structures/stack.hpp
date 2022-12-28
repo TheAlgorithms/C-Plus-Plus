@@ -40,7 +40,7 @@ class stack {
     using value_type = ValueType;
 
     /** Show stack */
-    void display() {
+    void display() const {
         std::cout << "Top --> ";
         traverse(stackTop, [](const std::shared_ptr<node<value_type>> inNode) {
             std::cout << inNode->data << "  ";
@@ -61,7 +61,7 @@ class stack {
 
  public:
     /** Determine whether the stack is empty */
-    bool isEmptyStack() { return (stackTop == nullptr); }
+    bool isEmptyStack() const { return (stackTop == nullptr); }
 
     /** Add new item to the stack */
     void push(const value_type& item) {
