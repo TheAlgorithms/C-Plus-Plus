@@ -41,17 +41,20 @@ class stack {
     /** Show stack */
     void display() {
         std::cout << "Top --> ";
-        traverse(stackTop,
-                 [](const auto inNode) { std::cout << inNode->data << "  "; });
+        traverse(stackTop, [](const std::shared_ptr<node<value_type>> inNode) {
+            std::cout << inNode->data << "  ";
+        });
         std::cout << std::endl;
         std::cout << "Size of stack: " << size << std::endl;
     }
 
-    auto toVector() const {
+    std::vector<value_type> toVector() const {
         std::vector<value_type> res;
         res.reserve(this->size);
         traverse(stackTop,
-                 [&res](const auto inNode) { res.push_back(inNode->data); });
+                 [&res](const std::shared_ptr<node<value_type>> inNode) {
+                     res.push_back(inNode->data);
+                 });
         return res;
     }
 
@@ -91,8 +94,9 @@ class stack {
     }
 
  private:
-    std::shared_ptr<node<value_type>> stackTop = {}; /**< Pointer to the stack */
-    std::size_t size = 0;                           ///< size of stack
+    std::shared_ptr<node<value_type>> stackTop =
+        {};                /**< Pointer to the stack */
+    std::size_t size = 0;  ///< size of stack
 };
 
 #endif  // DATA_STRUCTURES_STACK_HPP_
