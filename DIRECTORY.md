@@ -313,6 +313,7 @@
 
 ## Search
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/binary_search.cpp)
+  * [Double Linear Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/double_linear_search.cpp)
   * [Exponential Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/exponential_search.cpp)
   * [Fibonacci Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/fibonacci_search.cpp)
   * [Floyd Cycle Detection Algo](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/floyd_cycle_detection_algo.cpp)
