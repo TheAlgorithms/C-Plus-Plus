@@ -57,6 +57,7 @@
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/list_array.cpp)
   * [Morrisinorder](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/morrisinorder.cpp)
   * [Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue.h)
+  * [Queue Implementation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_implementation.cpp)
   * [Queue Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_array.cpp)
   * [Queue Using Array2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_array2.cpp)
   * [Queue Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_linked_list.cpp)
