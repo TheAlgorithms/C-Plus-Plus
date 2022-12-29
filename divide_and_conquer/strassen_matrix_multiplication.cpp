@@ -305,8 +305,8 @@ class Matrix {
         Matrix C = Matrix<Number>(_mat.size(), other._mat[0].size());
 
         for (size_t i = 0; i < _mat.size(); ++i) {
-            for (size_t j = 0; j < other._mat[0].size(); ++j) {
-                for (size_t k = 0; k < _mat[0].size(); ++k) {
+            for (size_t k = 0; k < _mat[0].size(); ++k) {
+                for (size_t j = 0; j < other._mat[0].size(); ++j) {
                     C._mat[i][j] += _mat[i][k] * other._mat[k][j];
                 }
             }
@@ -412,7 +412,7 @@ class Matrix {
  * @brief Method for testing current implementation
  */
 void test() {
-    const size_t s = 1024;
+    const size_t s = 2048;
     auto matrix_demo =
         divide_and_conquer::strassens_multiplication::Matrix<size_t>(s, s);
 
