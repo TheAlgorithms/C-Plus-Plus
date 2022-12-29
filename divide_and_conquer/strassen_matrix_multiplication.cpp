@@ -1,8 +1,20 @@
-#include <cassert>
-#include <chrono>
-#include <iostream>
-#include <tuple>
-#include <vector>
+/**
+ * @brief [Strassen's
+ * algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) is one of the
+ * methods for multiplying two matrices. It is one of the faster algorithms for
+ * larger matrices than naive multiplication method.
+ *
+ * It involves dividing each matrices into 4 blocks, given they are evenly
+ * divisible, and are combined with new defined matrices involving 7 matrix
+ * multiplications instead of eight, yielding O(n^2.8073) complexity.
+ *
+ * @author [AshishYUO](https://github.com/AshishYUO)
+ */
+#include <cassert>   /// For assert operation
+#include <chrono>    /// For std::chrono; time measurement
+#include <iostream>  /// For I/O operations
+#include <tuple>     /// For std::tuple
+#include <vector>    /// For creating dynamic arrays
 
 /**
  * @namespace divide_and_conquer
@@ -409,9 +421,10 @@ class Matrix {
 }  // namespace divide_and_conquer
 
 /**
- * @brief Method for testing current implementation
+ * @brief Self-test implementations
+ * @returns void
  */
-void test() {
+static void test() {
     const size_t s = 2048;
     auto matrix_demo =
         divide_and_conquer::strassens_multiplication::Matrix<size_t>(s, s);
@@ -450,8 +463,9 @@ void test() {
 
 /**
  * @brief main function
+ * @returns 0 on exit
  */
 int main() {
-    test();
+    test();  // run self-test implementation
     return 0;
 }
