@@ -172,6 +172,10 @@ static void test(int t) {
     }
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test(100); // Run multiple testcases to test our algorithm
 }
