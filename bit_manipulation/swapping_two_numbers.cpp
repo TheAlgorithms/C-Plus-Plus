@@ -67,6 +67,10 @@ bool bitwiseSwap(int a, int b) {
     }
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     /* Following tests would check for multiple cases that values of 
     variables do actually swap */
