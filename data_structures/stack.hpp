@@ -10,6 +10,7 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <memory>
+#include <stdexcept>
 #include <vector>  /// for std::vector
 
 /** Definition of the node as a linked-list
@@ -59,6 +60,13 @@ class stack {
         return res;
     }
 
+ private:
+    void ensureNotEmpty() const {
+        if (isEmptyStack()) {
+            throw std::invalid_argument("Stack is empty.");
+        }
+    }
+
  public:
     /** Determine whether the stack is empty */
     bool isEmptyStack() const { return (stackTop == nullptr); }
@@ -74,18 +82,15 @@ class stack {
 
     /** Return the top element of the stack */
     value_type top() const {
-        assert(stackTop != nullptr);
+        ensureNotEmpty();
         return stackTop->data;
     }
 
     /** Remove the top element of the stack */
     void pop() {
-        if (!isEmptyStack()) {
-            stackTop = stackTop->next;
-            size--;
-        } else {
-            std::cout << "Stack is empty !" << std::endl;
-        }
+        ensureNotEmpty();
+        stackTop = stackTop->next;
+        size--;
     }
 
     /** Clear stack */

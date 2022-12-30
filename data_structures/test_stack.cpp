@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include <vector>
 
 #include "./stack.hpp"
@@ -167,6 +168,28 @@ void testAssign() {
     assertEqual(stackB.toVector(), otherExpectedDataB);
 }
 
+void testTopThrowsAnvalidArgumentWhenStackEmpty() {
+    const stack<long double> curStack;
+    bool wasException = false;
+    try {
+        curStack.top();
+    } catch (const std::invalid_argument&) {
+        wasException = true;
+    }
+    assertTrue(wasException);
+}
+
+void testPopThrowsAnvalidArgumentWhenStackEmpty() {
+    stack<bool> curStack;
+    bool wasException = false;
+    try {
+        curStack.pop();
+    } catch (const std::invalid_argument&) {
+        wasException = true;
+    }
+    assertTrue(wasException);
+}
+
 int main() {
     testConstructedStackIsEmpty<int>();
     testConstructedStackIsEmpty<char>();
@@ -182,6 +205,9 @@ int main() {
     testPoppingFromOrginalDoesNotChangeCopy();
 
     testAssign();
+
+    testTopThrowsAnvalidArgumentWhenStackEmpty();
+    testPopThrowsAnvalidArgumentWhenStackEmpty();
 
     std::cout << "All tests pass!\n";
     return 0;
