@@ -8,7 +8,7 @@
 */
 
 #include <cassert>   /// for assert
-#include <iostream>   /// for IO stream    
+#include <iostream>   /// for IO operations    
 using namespace std;  
 
 int maxCircularSum(int a[], int n)
