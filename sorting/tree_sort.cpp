@@ -19,7 +19,7 @@
 namespace tree_sort{
     // For the nodes of Binary Search Tree
     struct node {
-        int data;
+        int data = 0;
         node *left;
         node *right;
         bool RED; // Color of parent link
