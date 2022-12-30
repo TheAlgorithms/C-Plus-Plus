@@ -13,7 +13,7 @@
 #include <queue>     /// for queue data structure
 
 /**
- * @namespace data_strcutres
+ * @namespace data_structures
  * @brief Data structures algorithms
  */
 namespace data_structures {
