@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Swapping two numbers using Bitwise operator
- * More about it: https://betterexplained.com/articles/swap-two-variables-using-xor
+ * @brief [Swap two numbers using Bitwise Operator](https://betterexplained.com/articles/swap-two-variables-using-xor) implementation
  * @details
  * This program is part of bitwise manipulation programs, this one
  * specifically helps us swap two numbers without using an auxillary
