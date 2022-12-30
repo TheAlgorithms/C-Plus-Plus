@@ -127,7 +127,7 @@ bool isSorted(int arr[], int size) {
 
 // Utility function to shuffle array randomly
 void shuffle(int arr[], int n) {
-    srand(time(NULL));
+    srand(time(nullptr));
     
     for(int i=0; i<n; i++) {
         int rnd = rand() % (n-i);
