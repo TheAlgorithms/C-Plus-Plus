@@ -7,8 +7,8 @@
 * Geeks For Geeks link [https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/]
 */
 
-#include <cassert>   
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>   /// for IO stream    
 using namespace std;  
 
 int maxCircularSum(int a[], int n)
