@@ -86,6 +86,10 @@ static void test() {
     assert(bitwiseSwap(7,7) == true); // TC #5
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     test(); // Run multiple testcases to test our algorithm
 }
