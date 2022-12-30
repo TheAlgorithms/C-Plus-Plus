@@ -1,7 +1,6 @@
 /**
  * @file
- * @brief Tree Sort Algorithm 
- * More about it: https://en.wikipedia.org/wiki/Tree_sort
+ * @brief Implementation of a [tree sorting](https://en.wikipedia.org/wiki/Tree_sort) algorithm
  * @details
  * Tree sort algorithm is a stable sorting algorithm which uses property of how a BST stores data.
  * Tree sort performs an inorder traversal on a BST to get the sorted order of elements.
