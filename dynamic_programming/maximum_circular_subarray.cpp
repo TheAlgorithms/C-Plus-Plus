@@ -1,10 +1,10 @@
 /**
 * @file
-* @brief C++ program for maximum contiguous circular sum problem using Kadane's Algorithm [https://en.wikipedia.org/wiki/Maximum_subarray_problem]
+* @brief C++ program for maximum contiguous circular sum problem using [Kadane's Algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
 * @details
 * The idea is to modify Kadane’s algorithm to find a minimum contiguous subarray sum and the maximum contiguous subarray sum,
 * then check for the maximum value between the max_value and the value left after subtracting min_value from the total sum.
-* Geeks For Geeks link [https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/]
+* [Geeks For Geeks](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
 */
 
 #include <cassert>   /// for assert
