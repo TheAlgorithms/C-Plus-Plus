@@ -14,7 +14,7 @@
 
 #include<iostream>  // For standard I/O
 #include<cassert> // For testcases check
-#include<time.h> // For shuffling array using srand(time(NULL))
+#include<ctime> // For shuffling array using srand(time(NULL))
 
 namespace tree_sort{
     // For the nodes of Binary Search Tree
