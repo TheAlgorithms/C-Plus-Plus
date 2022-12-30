@@ -137,6 +137,10 @@ void shuffle(int arr[], int n) {
     }
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test(int t) {
     /* Following tests would check for multiple cases that array
     *  is sorted correctly or not 
