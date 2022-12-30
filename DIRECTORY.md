@@ -72,7 +72,6 @@
   * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_queue.cpp)
   * [Test Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_queue.cpp)
   * [Test Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_stack.cpp)
-  * [Test Stack Legacy](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_stack_legacy.cpp)
   * [Test Stack Students](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/test_stack_students.cpp)
   * [Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/tree.cpp)
   * [Tree 234](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/tree_234.cpp)
