@@ -36,6 +36,7 @@
 
 ## Cpu Scheduling Algorithms
   * [Fcfs Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/cpu_scheduling_algorithms/fcfs_scheduling.cpp)
+  * [Sjf Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/cpu_scheduling_algorithms/sjf_scheduling.cpp)
 
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avltree.cpp)
