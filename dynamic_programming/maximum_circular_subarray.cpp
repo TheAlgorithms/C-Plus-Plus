@@ -9,30 +9,40 @@
 
 #include <cassert>   // for assert
 #include <iostream>   // for IO operations
+#include <vector>   // for vectors    
+// using namespace std;  
 
-int maxCircularSum(int a[], int n)
+
+/**
+ * @brief returns the maximum contiguous circular sum of an array
+ * 
+ * @param a is the array
+ * @param n is the size of the array
+ * @return int which is the maximum sum
+ */
+int maxCircularSum(std::vector<int>& arr)
 {
     // Edge Case
-    if (n == 1)
-        return a[0];
+    if (arr.size() == 1)
+        return arr[0];
   
-    // Sum variable which store total sum of the array.
+    // Sum variable which stores total sum of the array.
     int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum += a[i];
+    for (int i = 0; i < arr.size(); i++) {
+        sum += arr[i];
     }
   
     // Every variable stores first value of the array.
-    int current_max = a[0], max_so_far = a[0], current_min = a[0], min_so_far = a[0];
+    int current_max = arr[0], max_so_far = arr[0], current_min = arr[0], min_so_far = arr[0];
   
     // Concept of Kadane's Algorithm
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < arr.size(); i++) {
         // Kadane's Algorithm to find Maximum subarray sum.
-        current_max = std::max(current_max + a[i], a[i]);
+        current_max = std::max(current_max + arr[i], arr[i]);
         max_so_far = std::max(max_so_far, current_max);
   
         // Kadane's Algorithm to find Minimum subarray sum.
-        current_min = std::min(current_min + a[i], a[i]);
+        current_min = std::min(current_min + arr[i], arr[i]);
         min_so_far = std::min(min_so_far, current_min);
     }
   
@@ -54,11 +64,11 @@ static void test() {
     // Explanation: Subarray 12, 8, -8, 9, -9, 10 gives the maximum sum, that is 22.
 
     int n = 7; // size of the array
-    int arr[7] = {8, -8, 9, -9, 10, -11, 12}; 
-    assert(maxCircularSum(arr, n) == 22); // this ensures that the algorithm works as expected
+    std::vector<int> arr = {8, -8, 9, -9, 10, -11, 12}; 
+    assert(maxCircularSum(arr) == 22); // this ensures that the algorithm works as expected
 
-    int arrr[7] = {8, -8, 10, -9, 10, -11, 12};
-    assert(maxCircularSum(arrr, n) == 23);
+    std::vector<int> arrr = {8, -8, 10, -9, 10, -11, 12};
+    assert(maxCircularSum(arrr) == 23);
 }
 
 
