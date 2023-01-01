@@ -1,4 +1,7 @@
 
+## Trie
+  * [Trie Implementation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/Trie/trie_implementation.cpp)
+
 ## Backtracking
   * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/knight_tour.cpp)
@@ -98,6 +101,7 @@
   * [House Robber](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/house_robber.cpp)
   * [Kadane](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/kadane.cpp)
   * [Kadane2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/kadane2.cpp)
+  * [Kadane Algorith](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/kadane_algorith.cpp)
   * [Longest Common String](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_common_string.cpp)
   * [Longest Common Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_common_subsequence.cpp)
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence.cpp)
