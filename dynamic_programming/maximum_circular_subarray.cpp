@@ -13,6 +13,11 @@
 
 
 /**
+ * @namespace dynamic_programming
+ * @brief Dynamic Programming algorithms
+ */
+namespace dynamic_programming {
+/**
  * @brief returns the maximum contiguous circular sum of an array
  * 
  * @param arr is the array/vector
