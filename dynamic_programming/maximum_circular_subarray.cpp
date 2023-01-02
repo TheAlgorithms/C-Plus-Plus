@@ -15,8 +15,7 @@
 /**
  * @brief returns the maximum contiguous circular sum of an array
  * 
- * @param a is the array
- * @param n is the size of the array
+ * @param arr is the array/vector
  * @return int which is the maximum sum
  */
 int maxCircularSum(std::vector<int>& arr)
