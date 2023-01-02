@@ -69,7 +69,7 @@ static void test() {
 
     int n = 7; // size of the array
     std::vector<int> arr = {8, -8, 9, -9, 10, -11, 12}; 
-    assert(maxCircularSum(arr) == 22); // this ensures that the algorithm works as expected
+    assert(dynamic_programming::maxCircularSum(arr) == 22); // this ensures that the algorithm works as expected
 
     std::vector<int> arrr = {8, -8, 10, -9, 10, -11, 12};
     assert(maxCircularSum(arrr) == 23);
