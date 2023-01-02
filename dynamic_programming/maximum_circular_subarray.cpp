@@ -7,10 +7,9 @@
 * [Geeks For Geeks](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
 */
 
-#include <cassert>   // for assert
-#include <iostream>   // for IO operations
-#include <vector>   // for vectors    
-// using namespace std;  
+#include <cassert>     /// for assert
+#include <iostream>   /// for IO operations
+#include <vector>     /// for std::vector
 
 
 /**
