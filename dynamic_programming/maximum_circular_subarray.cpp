@@ -71,8 +71,8 @@ static void test() {
     std::vector<int> arr = {8, -8, 9, -9, 10, -11, 12}; 
     assert(dynamic_programming::maxCircularSum(arr) == 22); // this ensures that the algorithm works as expected
 
-    std::vector<int> arrr = {8, -8, 10, -9, 10, -11, 12};
-    assert(maxCircularSum(arrr) == 23);
+    arr = {8, -8, 10, -9, 10, -11, 12};
+    assert(dynamic_programming::maxCircularSum(arr) == 23);
 }
 
 
