@@ -55,6 +55,7 @@ int maxCircularSum(std::vector<int>& arr)
     // returning the maximum value
     return std::max(max_so_far, sum - min_so_far);
 }
+}  // namespace dynamic_programming
 
 /**
  * @brief Self-test implementations
