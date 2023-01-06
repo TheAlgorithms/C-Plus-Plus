@@ -26,6 +26,7 @@
 #include <cmath>        /// for std::floor
 #include <string>       /// for std::string
 #include <cassert>      /// for assert
+#include <iostream>     /// for IO operations
 
 
 /**
@@ -263,6 +264,7 @@ static void test() {
 	};
 
 	assert(heapB == expectedB);
+	std::cout << "All tests have successfully passed!\n";
 }
 
 /**
