@@ -7,11 +7,10 @@
 #ifndef DATA_STRUCTURES_STACK_HPP_
 #define DATA_STRUCTURES_STACK_HPP_
 
-#include <cassert>   /// for assert
-#include <iostream>  /// for IO operations
-#include <memory>
-#include <stdexcept>
-#include <vector>  /// for std::vector
+#include <iostream>   /// for IO operations
+#include <memory>     /// for std::shared_ptr
+#include <stdexcept>  /// for std::invalid_argument
+#include <vector>     /// for std::vector
 
 /** Definition of the node as a linked-list
  * \tparam ValueType type of data nodes of the linked list should contain
