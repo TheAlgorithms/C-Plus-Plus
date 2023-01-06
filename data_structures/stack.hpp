@@ -42,7 +42,7 @@ class stack {
     /** Show stack */
     void display() const {
         std::cout << "Top --> ";
-        traverse(stackTop, [](const std::shared_ptr<node<value_type>> inNode) {
+        traverse(stackTop, [](const std::shared_ptr<node<value_type>>& inNode) {
             std::cout << inNode->data << "  ";
         });
         std::cout << std::endl;
@@ -53,7 +53,7 @@ class stack {
         std::vector<value_type> res;
         res.reserve(this->size);
         traverse(stackTop,
-                 [&res](const std::shared_ptr<node<value_type>> inNode) {
+                 [&res](const std::shared_ptr<node<value_type>>& inNode) {
                      res.push_back(inNode->data);
                  });
         return res;
