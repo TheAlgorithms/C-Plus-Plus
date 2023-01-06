@@ -48,6 +48,7 @@
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/cll/cll.cpp)
     * [Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/cll/cll.h)
     * [Main Cll](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/cll/main_cll.cpp)
+  * [Delete Node Without Head](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/delete_node_without_head.cpp)
   * [Disjoint Set](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/disjoint_set.cpp)
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/doubly_linked_list.cpp)
   * [Dsu Path Compression](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/dsu_path_compression.cpp)
