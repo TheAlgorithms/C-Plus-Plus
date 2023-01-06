@@ -28,6 +28,7 @@
   * [Caesar Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/caesar_cipher.cpp)
   * [Elliptic Curve Key Exchange](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/elliptic_curve_key_exchange.cpp)
   * [Hill Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/hill_cipher.cpp)
+  * [Monoalphabetic Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/monoalphabetic_cipher.cpp)
   * [Morse Code](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/morse_code.cpp)
   * [Uint128 T](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/uint128_t.hpp)
   * [Uint256 T](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/uint256_t.hpp)
