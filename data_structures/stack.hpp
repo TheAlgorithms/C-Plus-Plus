@@ -23,10 +23,10 @@ struct node {
 };
 
 template <typename Node, typename Action>
-void traverse(const std::shared_ptr<Node>& inNode, const Action& action) {
+void traverse(const Node* const inNode, const Action& action) {
     if (inNode) {
-        action(inNode);
-        traverse(inNode->next, action);
+        action(*inNode);
+        traverse(inNode->next.get(), action);
     }
 }
 
@@ -42,8 +42,8 @@ class stack {
     /** Show stack */
     void display() const {
         std::cout << "Top --> ";
-        traverse(stackTop, [](const std::shared_ptr<node<value_type>>& inNode) {
-            std::cout << inNode->data << "  ";
+        traverse(stackTop.get(), [](const node<value_type>& inNode) {
+            std::cout << inNode.data << "  ";
         });
         std::cout << std::endl;
         std::cout << "Size of stack: " << size << std::endl;
@@ -52,10 +52,9 @@ class stack {
     std::vector<value_type> toVector() const {
         std::vector<value_type> res;
         res.reserve(this->size);
-        traverse(stackTop,
-                 [&res](const std::shared_ptr<node<value_type>>& inNode) {
-                     res.push_back(inNode->data);
-                 });
+        traverse(stackTop.get(), [&res](const node<value_type>& inNode) {
+            res.push_back(inNode.data);
+        });
         return res;
     }
 
