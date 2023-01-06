@@ -267,6 +267,8 @@
   * [Union Of Two Arrays](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/operations_on_datastructures/union_of_two_arrays.cpp)
 
 ## Others
+  * Hangman Game
+    * [Hangman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/Hangman_game/Hangman.cpp)
   * [Buzz Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/buzz_number.cpp)
   * [Decimal To Binary](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/decimal_to_binary.cpp)
   * [Decimal To Hexadecimal](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/decimal_to_hexadecimal.cpp)
