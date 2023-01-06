@@ -275,6 +275,7 @@
   * [Fast Integer Input](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/fast_integer_input.cpp)
   * [Happy Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/happy_number.cpp)
   * [Iterative Tree Traversals](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/iterative_tree_traversals.cpp)
+  * [Josephus Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/josephus_problem.cpp)
   * [Kadanes3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/kadanes3.cpp)
   * [Lru Cache](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/lru_cache.cpp)
   * [Matrix Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/matrix_exponentiation.cpp)
