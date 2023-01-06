@@ -1,25 +1,14 @@
-#include <iostream>
-#include <stdexcept>
-#include <vector>
+#include <cassert>    /// for assert
+#include <iostream>   /// for std::cout
+#include <stdexcept>  /// std::invalid_argument
+#include <vector>     /// for std::vector
 
 #include "./stack.hpp"
-
-void assertTrue(const bool inValue) {
-    if (!inValue) {
-        std::cout << "Assertion fails!\n";
-        exit(1);
-    }
-}
-
-template <typename T>
-void assertEqual(const T& valA, const T& valB) {
-    assertTrue(valA == valB);
-}
 
 template <typename T>
 void testConstructedStackIsEmpty() {
     const stack<T> curStack;
-    assertTrue(curStack.isEmptyStack());
+    assert(curStack.isEmptyStack());
 }
 
 void testPush() {
@@ -30,7 +19,7 @@ void testPush() {
     curStack.push(30);
     curStack.push(40);
     const auto expectedData = std::vector<valueType>({40, 30, 20, 10});
-    assertEqual(curStack.toVector(), expectedData);
+    assert(curStack.toVector() == expectedData);
 }
 
 void testTop() {
@@ -40,7 +29,7 @@ void testTop() {
     curStack.push(2);
     curStack.push(3);
     curStack.push(4);
-    assertEqual(curStack.top(), static_cast<valueType>(4));
+    assert(curStack.top() == static_cast<valueType>(4));
 }
 
 void testPop() {
@@ -50,13 +39,13 @@ void testPop() {
     curStack.push(200);
     curStack.push(300);
 
-    assertEqual(curStack.top(), static_cast<valueType>(300));
+    assert(curStack.top() == static_cast<valueType>(300));
     curStack.pop();
-    assertEqual(curStack.top(), static_cast<valueType>(200));
+    assert(curStack.top() == static_cast<valueType>(200));
     curStack.pop();
-    assertEqual(curStack.top(), static_cast<valueType>(100));
+    assert(curStack.top() == static_cast<valueType>(100));
     curStack.pop();
-    assertTrue(curStack.isEmptyStack());
+    assert(curStack.isEmptyStack());
 }
 
 void testClear() {
@@ -64,7 +53,7 @@ void testClear() {
     curStack.push(1000);
     curStack.push(2000);
     curStack.clear();
-    assertTrue(curStack.isEmptyStack());
+    assert(curStack.isEmptyStack());
 }
 
 void testCopyOfStackHasSameData() {
@@ -73,7 +62,7 @@ void testCopyOfStackHasSameData() {
     stackA.push(200);
     stackA.push(3000);
     const auto stackB(stackA);
-    assertEqual(stackA.toVector(), stackB.toVector());
+    assert(stackA.toVector() == stackB.toVector());
 }
 
 void testPushingToCopyDoesNotChangeOriginal() {
@@ -88,8 +77,8 @@ void testPushingToCopyDoesNotChangeOriginal() {
     const auto expectedDataA = std::vector<valueType>({30, 20, 10});
     const auto expectedDataB = std::vector<valueType>({40, 30, 20, 10});
 
-    assertEqual(stackA.toVector(), expectedDataA);
-    assertEqual(stackB.toVector(), expectedDataB);
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
 }
 
 void testPoppingFromCopyDoesNotChangeOriginal() {
@@ -104,8 +93,8 @@ void testPoppingFromCopyDoesNotChangeOriginal() {
     const auto expectedDataA = std::vector<valueType>({30, 20, 10});
     const auto expectedDataB = std::vector<valueType>({20, 10});
 
-    assertEqual(stackA.toVector(), expectedDataA);
-    assertEqual(stackB.toVector(), expectedDataB);
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
 }
 
 void testPushingToOrginalDoesNotChangeCopy() {
@@ -120,8 +109,8 @@ void testPushingToOrginalDoesNotChangeCopy() {
     const auto expectedDataA = std::vector<valueType>({40, 30, 20, 10});
     const auto expectedDataB = std::vector<valueType>({30, 20, 10});
 
-    assertEqual(stackA.toVector(), expectedDataA);
-    assertEqual(stackB.toVector(), expectedDataB);
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
 }
 
 void testPoppingFromOrginalDoesNotChangeCopy() {
@@ -136,8 +125,8 @@ void testPoppingFromOrginalDoesNotChangeCopy() {
     const auto expectedDataA = std::vector<valueType>({20, 10});
     const auto expectedDataB = std::vector<valueType>({30, 20, 10});
 
-    assertEqual(stackA.toVector(), expectedDataA);
-    assertEqual(stackB.toVector(), expectedDataB);
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
 }
 
 void testAssign() {
@@ -153,8 +142,8 @@ void testAssign() {
     const auto expectedDataA = std::vector<valueType>({20, 10});
     const auto expectedDataB = std::vector<valueType>({40, 30, 20, 10});
 
-    assertEqual(stackA.toVector(), expectedDataA);
-    assertEqual(stackB.toVector(), expectedDataB);
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
 
     stackB = stackA;
     stackA.pop();
@@ -164,8 +153,8 @@ void testAssign() {
     const auto otherExpectedDataA = std::vector<valueType>({10});
     const auto otherExpectedDataB = std::vector<valueType>({6, 5, 20, 10});
 
-    assertEqual(stackA.toVector(), otherExpectedDataA);
-    assertEqual(stackB.toVector(), otherExpectedDataB);
+    assert(stackA.toVector() == otherExpectedDataA);
+    assert(stackB.toVector() == otherExpectedDataB);
 }
 
 void testTopThrowsAnvalidArgumentWhenStackEmpty() {
@@ -176,7 +165,7 @@ void testTopThrowsAnvalidArgumentWhenStackEmpty() {
     } catch (const std::invalid_argument&) {
         wasException = true;
     }
-    assertTrue(wasException);
+    assert(wasException);
 }
 
 void testPopThrowsAnvalidArgumentWhenStackEmpty() {
@@ -187,7 +176,7 @@ void testPopThrowsAnvalidArgumentWhenStackEmpty() {
     } catch (const std::invalid_argument&) {
         wasException = true;
     }
-    assertTrue(wasException);
+    assert(wasException);
 }
 
 int main() {
