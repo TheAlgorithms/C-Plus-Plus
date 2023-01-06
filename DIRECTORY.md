@@ -1,4 +1,6 @@
 
+## [Addstrings1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD//addstrings1.cpp)
+
 ## Backtracking
   * [Graph Coloring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/graph_coloring.cpp)
   * [Knight Tour](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/knight_tour.cpp)
@@ -160,6 +162,8 @@
   * [Quadratic Probing Hash Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/quadratic_probing_hash_table.cpp)
   * [Sha1](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/hashing/sha1.cpp)
 
+## [Longest Nice Substring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD//longest_nice_substring.cpp)
+
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/adaline_learning.cpp)
@@ -291,6 +295,10 @@
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/tower_of_hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/vector_important_functions.cpp)
 
+## [Pathsum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD//pathsum.cpp)
+
+## [Pathsum3](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD//pathsum3.cpp)
+
 ## Physics
   * [Ground To Ground Projectile Motion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/physics/ground_to_ground_projectile_motion.cpp)
 
@@ -310,6 +318,8 @@
   * [Prefix Sum Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/prefix_sum_array.cpp)
   * [Segtree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/segtree.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/range_queries/sparse_table.cpp)
+
+## [Remove Nth Node From The End Of Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD//remove_nth_node_from_the_end_of_linked_list.cpp)
 
 ## Search
   * [Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/binary_search.cpp)
