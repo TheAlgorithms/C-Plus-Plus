@@ -17,6 +17,7 @@
   * [Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_bits_flip.cpp)
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
+  * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
 
@@ -51,7 +52,6 @@
   * [Doubly Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/doubly_linked_list.cpp)
   * [Dsu Path Compression](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/dsu_path_compression.cpp)
   * [Dsu Union Rank](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/dsu_union_rank.cpp)
-  * [Indexed Priority Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/indexed_priority_queue.cpp)
   * [Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/linked_list.cpp)
   * [Linkedlist Implentation Usingarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/linkedlist_implentation_usingarray.cpp)
   * [List Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/list_array.cpp)
