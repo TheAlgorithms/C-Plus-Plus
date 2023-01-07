@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Implementation of [Kadane
- * Algorithm] (https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
+ * Algorithm](https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
  *
  * @details
  * Kadane algorithm is used to find the maximum sum subarray in an array and
