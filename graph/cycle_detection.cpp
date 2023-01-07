@@ -23,7 +23,7 @@ class Graph {
   //typical DFS for the graph , we have to store colored nodes in visited and a parent vector with previous
   void dfs_help(int u, vector<status> &visited, vector<int> &previous) const {
     visited[u] = STARTED;
-    for (int v : adj[u])
+    for (int v : adj[u]){
       if (visited[v] == NOT_STARTED) {// if its unvisited we update the previous vector
         previous[v] = u;
         //and we dfs recursively again
@@ -33,6 +33,7 @@ class Graph {
       	// so we throw the pair of nodes to print the cycle
         throw make_pair(u, v);
       }
+     }
       //if we finish the traversal , we update the current node to FINISHED
     visited[u] = FINISHED;
   }
@@ -70,15 +71,18 @@ class Graph {
     vector<status> visited(V, NOT_STARTED);//visited vector , at start all NOT_STARTED
     vector<int> previous(V, -1);//parent vector with all values at -1
     try {
-      for (int u = 0; u < V; ++u)
-        if (visited[u] == NOT_STARTED)//if node's unvisited , we dfs
+      for (int u = 0; u < V; ++u){
+        if (visited[u] == NOT_STARTED){//if node's unvisited , we dfs
           dfs_help(u, visited, previous);
+	 }
+       }
       return false;//there's no cycle
     } catch (const pair<int, int> &p) {//here we catch-if there's a cycle- the pair of nodes from dfs_help
       path.clear();
-      for (int u = p.first; u != p.second; u = previous[u])
+      for (int u = p.first; u != p.second; u = previous[u]){
       	//we traverse the parent vector and we update the path
         path.push_back(u);
+      }
       path.push_back(p.second);//we push the last node
       path.push_back(p.first);//we add the first node to clearly see the cycle
       reverse(path.begin(), path.end());//we reverse so we can have a better outcome(because its from end to start)
