@@ -56,7 +56,7 @@ int findParent(std::vector<std::pair<int,int>> parent, const int v) {
  */
 std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 
-	int size = adj.size();
+	size_t size = adj.size();
 	int total_groups = size;
 
 	if (size <= 1) {
@@ -167,7 +167,7 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
  */
 int test_findGraphSum(std::vector<std::vector<int>> adj) {
 
-	int size = adj.size();
+	size_t size = adj.size();
 	int sum = 0;
 
 	//Moves through one side of the adj matrix, counting the sums of each edge
