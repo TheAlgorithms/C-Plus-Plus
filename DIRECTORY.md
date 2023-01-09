@@ -327,6 +327,7 @@
   * [Sublist Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/sublist_search.cpp)
   * [Ternary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/ternary_search.cpp)
   * [Text Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/text_search.cpp)
+  * [Unbounded Binary Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/search/unbounded_binary_search.cpp)
 
 ## Sorting
   * [Bead Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/bead_sort.cpp)
