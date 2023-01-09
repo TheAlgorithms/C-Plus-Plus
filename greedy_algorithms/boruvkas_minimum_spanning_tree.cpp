@@ -57,7 +57,7 @@ int findParent(std::vector<std::pair<int,int>> parent, const int v) {
 std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 
 	size_t size = adj.size();
-	int total_groups = size;
+	size_t total_groups = size;
 
 	if (size <= 1) {
 		return adj;
@@ -153,7 +153,7 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 				// Add the connection to the MST, using both halves of the adj matrix
 				MST[start][end] = adj[start][end];
 				MST[end][start] = adj[end][start];
-				total_groups--;	//one fewer group
+				total_groups--;	// one fewer group
 			}
 		}
 	}	
