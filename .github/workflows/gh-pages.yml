@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - name: Install requirements
@@ -19,7 +19,7 @@ jobs:
       - name: build
         run: cmake --build build -t doc
       - name: gh-pages
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
         with:
           ref: "gh-pages"
           clean: false
