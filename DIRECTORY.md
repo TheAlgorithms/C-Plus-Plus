@@ -179,6 +179,7 @@
   * [Check Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/check_factorial.cpp)
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/check_prime.cpp)
   * [Complex Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/complex_numbers.cpp)
+  * [Determinant Value](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/determinant_value.cpp)
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/double_factorial.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/extended_euclid_algorithm.cpp)
