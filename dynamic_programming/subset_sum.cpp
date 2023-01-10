@@ -43,7 +43,7 @@ namespace subset_sum {
 bool subset_sum_recursion(
     const std::vector<int> &arr, 
     int targetSum, 
-    std::vector<std::unordered_map<int, bool>> &dp,
+    std::vector<std::unordered_map<int, bool>> *dp,
     int index = 0) {
         
     if(targetSum == 0) { // Found a valid subset with required sum.
@@ -53,13 +53,13 @@ bool subset_sum_recursion(
         return false;
     }
 
-    if (dp[index].count(targetSum)) { // Answer already present in map
-        return dp[index][targetSum];
+    if ((*dp)[index].count(targetSum)) { // Answer already present in map
+        return (*dp)[index][targetSum];
     }
         
     bool ans = subset_sum_recursion(arr, targetSum - arr[index], dp, index + 1) 
       || subset_sum_recursion(arr, targetSum, dp, index + 1);
-    dp[index][targetSum] = ans; // Save ans in dp map.
+    (*dp)[index][targetSum] = ans; // Save ans in dp map.
     return ans;
 }
 
@@ -70,9 +70,9 @@ bool subset_sum_recursion(
  * @returns true/false based on if the target sum subset exists or not.
  */
 bool subset_sum_problem(const std::vector<int> &arr, const int targetSum) {
-    int n = arr.size();
+    size_t n = arr.size();
     std::vector<std::unordered_map<int, bool>> dp(n);
-    return subset_sum_recursion(arr, targetSum, dp);
+    return subset_sum_recursion(arr, targetSum, &dp);
 }
 }  // namespace subset_sum
 }  // namespace dynamic_programming
