@@ -107,7 +107,7 @@ class Knn {
             auto current = this->X_.at(i);
             auto label = this->Y_.at(i);
             auto distance = euclidean_distance(current, sample);
-            distances.push_back(std::pair<double, int>(distance, label));
+            distances.emplace_back(distance, label);
         }
         std::sort(distances.begin(), distances.end());
         for (int i = 0; i < k; i++) {
@@ -156,7 +156,7 @@ static void test() {
 
     std::vector<std::vector<double>> X2 = {
         {0.0, 0.0, 0.0}, {0.25, 0.25, 0.0}, {0.0, 0.5, 0.0}, {0.5, 0.5, 0.0},
-        {1.0, 0.5, 0.0}, {1.0, 1.0, 0.0}, {1.0, 1.0, 1.0}, {1.5, 1.5, 1.0}};
+        {1.0, 0.5, 0.0}, {1.0, 1.0, 0.0},   {1.0, 1.0, 1.0}, {1.5, 1.5, 1.0}};
     std::vector<int> Y2 = {1, 1, 1, 1, 2, 2, 3, 3};
     auto model2 = machine_learning::k_nearest_neighbors::Knn(X2, Y2);
     std::vector<double> sample5 = {1.2, 1.2, 0.0};
