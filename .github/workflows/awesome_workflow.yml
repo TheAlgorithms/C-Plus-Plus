@@ -1,51 +1,32 @@
 name: Awesome CI Workflow
-
 on: [push, pull_request]
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+permissions:
+  contents: write
 
 jobs:
   MainSequence:
     name: Code Formatter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # v2 is broken for git diff
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
       - name: requirements
         run: | 
-          sudo apt -qq -y update
-          sudo apt -qq install clang-tidy-10 clang-format-10
+          sudo apt-get -qq update
+          sudo apt-get -qq install clang-tidy clang-format
         # checks are passing with less errors when used with this version. 
         # The default installs v6.0 which did not work out well in my tests
       - name: Setup Git Specs
         run: |
-          git config --global user.name David Leal
-          git config --global user.email 'Panquesito7@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git config --global user.name github-actions[bot]
+          git config --global user.email 'github-actions@users.noreply.github.com'
       - name: Filename Formatter
         run: |
-          IFS=$'\n'
-          for fname in `find . -type f -name '*.cpp' -o -name '*.cc' -o -name '*.h'`
-          do 
-            echo "${fname}"
-            new_fname=`echo ${fname} | tr ' ' '_'`
-            echo "      ${new_fname}"
-            new_fname=`echo ${new_fname} | tr 'A-Z' 'a-z'`
-            echo "      ${new_fname}"
-            new_fname=`echo ${new_fname} | tr '-' '_'`
-            echo "      ${new_fname}"
-            new_fname=${new_fname/.cc/.cpp}
-            echo "      ${new_fname}"
-            if [ ${fname} != ${new_fname} ]
-            then
-              echo "      ${fname} --> ${new_fname}"
-              git "mv" "${fname}" ${new_fname}
-            fi
-          done
-          git commit -am "formatting filenames ${GITHUB_SHA::8}" ||  true
-
+          wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/filename_formatter.sh
+          chmod +x filename_formatter.sh
+          ./filename_formatter.sh . .cpp,.hpp
       - name: Update DIRECTORY.md
         run: |
           wget https://raw.githubusercontent.com/TheAlgorithms/scripts/main/build_directory_md.py
@@ -53,9 +34,7 @@ jobs:
           git commit -m "updating DIRECTORY.md" DIRECTORY.md ||  true
       - name: Get file changes
         run: |
-          git remote -v
           git branch
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git diff --diff-filter=dr --name-only origin/master > git_diff.txt
           echo "Files changed-- `cat git_diff.txt`"
       - name: Configure for static lint checks
@@ -81,10 +60,10 @@ jobs:
           if not cpp_files:
             sys.exit(0)
 
-          subprocess.run(["clang-tidy-10", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
+          subprocess.run(["clang-tidy", "--fix", "-p=build", "--extra-arg=-std=c++11", *cpp_files, "--"], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
-          subprocess.run(["clang-format-10", "-i", "-style=file", *cpp_files], 
+          subprocess.run(["clang-format", "-i", "-style=file", *cpp_files], 
               check=True, text=True, stderr=subprocess.STDOUT)
 
           upper_files = [file for file in cpp_files if file != file.lower()]
@@ -108,8 +87,8 @@ jobs:
       - name: Commit and push changes
         run: |
           git diff DIRECTORY.md
-          git commit -am "clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" ||  true
-          git push --force origin HEAD:$GITHUB_REF || true
+          git commit -am "clang-format and clang-tidy fixes for ${GITHUB_SHA::8}" || true
+          git push origin HEAD:$GITHUB_REF || true
 
   build:
     name: Compile checks
@@ -119,7 +98,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - run: cmake -B ./build -S .
