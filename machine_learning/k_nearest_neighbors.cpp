@@ -74,17 +74,17 @@ class Knn {
     Knn(const Knn& model) = default;
 
     /**
-     * Copy assignment operator for class NeuralNetwork
+     * Copy assignment operator for class Knn
      */
     Knn& operator=(const Knn& model) = default;
 
     /**
-     * Move constructor for class NeuralNetwork
+     * Move constructor for class Knn
      */
     Knn(Knn&&) = default;
 
     /**
-     * Move assignment operator for class NeuralNetwork
+     * Move assignment operator for class Knn
      */
     Knn& operator=(Knn&&) = default;
 
