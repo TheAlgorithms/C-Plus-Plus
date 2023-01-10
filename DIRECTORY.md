@@ -81,6 +81,7 @@
 
 ## Divide And Conquer
   * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
+  * [Strassens Matrix Mulitplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/divide_and_conquer/strassens_matrix_mulitplication.cpp)
 
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/0_1_knapsack.cpp)
