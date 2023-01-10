@@ -3,20 +3,19 @@
  * @brief Implementation of [K-Nearest Neighbors algorithm]
  * (https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm).
  * @author [Luiz Carlos Cosmi Filho](https://github.com/luizcarloscf)
- * @details
- * Program that implements the k-nearest neighbors algorithm, also known as KNN
- * or k-NN, a supervised learning classifier, which uses proximity to make
- * classifications. This implementantion uses the Euclidean Distance to find the
- * K-nearest neighbors.
+ * @details Program that implements the k-nearest neighbors algorithm, also
+ * known as KNN or k-NN, a supervised learning classifier, which uses proximity
+ * to make classifications. This implementantion uses the Euclidean Distance as
+ * distance metric to find the K-nearest neighbors.
  */
 
-#include <algorithm>      // for std::transform and std::sort
-#include <cassert>        // for assert
-#include <cmath>          // for std::pow and std::sqrt
-#include <iostream>       // for std::cout
-#include <numeric>        // for std::accumulate
-#include <unordered_map>  // for std::unordered_map
-#include <vector>         // for std::vector
+#include <algorithm>      /// for std::transform and std::sort
+#include <cassert>        /// for assert
+#include <cmath>          /// for std::pow and std::sqrt
+#include <iostream>       /// for std::cout
+#include <numeric>        /// for std::accumulate
+#include <unordered_map>  /// for std::unordered_map
+#include <vector>         /// for std::vector
 
 /**
  * @namespace machine_learning
@@ -34,10 +33,10 @@ namespace k_nearest_neighbors {
  * @brief Compute the Euclidean distance between two vectors.
  *
  * @tparam T typename of the vector
- * @param a First unidimentional vector
- * @param b Second unidimentional vector
+ * @param a first unidimentional vector
+ * @param b second unidimentional vector
  * @return double scalar representing the Euclidean distance between provided
- * vectors.
+ * vectors
  */
 template <typename T>
 double euclidean_distance(const std::vector<T>& a, const std::vector<T>& b) {
@@ -49,8 +48,8 @@ double euclidean_distance(const std::vector<T>& a, const std::vector<T>& b) {
 }
 
 /**
- * @brief K-Nearest Neighbors (Knn) implementation using Euclidean distance as
- * metric distance.
+ * @brief K-Nearest Neighbors (Knn) class using Euclidean distance as
+ * distance metric.
  */
 class Knn {
  private:
@@ -61,15 +60,16 @@ class Knn {
     /**
      * @brief Construct a new Knn object.
      * @details Using lazy-learning approch, just holds in memory the dataset.
-     * @param X Attributes vector
-     * @param Y Labels vector
+     * @param X attributes vector
+     * @param Y labels vector
      */
     explicit Knn(std::vector<std::vector<double>>& X, std::vector<int>& Y)
         : X_(X), Y_(Y){};
+
     /**
      * Copy Constructor for class Knn.
      *
-     * @param model instance of class to be copied.
+     * @param model instance of class to be copied
      */
     Knn(const Knn& model) = default;
 
@@ -92,16 +92,15 @@ class Knn {
      * @brief Destroy the Knn object
      */
     ~Knn() = default;
+
     /**
      * @brief Classify sample.
-     *
-     * @param sample Sample
-     * @param k Number of neighbor
-     * @return int Most frequent neighbor label
+     * @param sample sample
+     * @param k number of neighbor
+     * @return int most frequent neighbor label
      */
     int predict(std::vector<double>& sample, int k) {
         std::vector<int> neighbors;
-        std::vector<std::pair<double, std::vector<double>>> points;
         std::vector<std::pair<double, int>> distances;
         for (size_t i = 0; i < this->X_.size(); ++i) {
             auto current = this->X_.at(i);
@@ -115,7 +114,6 @@ class Knn {
             neighbors.push_back(label);
         }
         std::unordered_map<int, int> frequency;
-        // building frequency of each neighbor
         for (auto neighbor : neighbors) {
             ++frequency[neighbor];
         }
@@ -139,6 +137,7 @@ class Knn {
  * @returns void
  */
 static void test() {
+    std::cout << "------- Test 1 -------" << std::endl;
     std::vector<std::vector<double>> X1 = {{0.0, 0.0}, {0.25, 0.25},
                                            {0.0, 0.5}, {0.5, 0.5},
                                            {1.0, 0.5}, {1.0, 1.0}};
@@ -148,12 +147,12 @@ static void test() {
     std::vector<double> sample2 = {0.1, 0.1};
     std::vector<double> sample3 = {0.1, 0.5};
     std::vector<double> sample4 = {1.0, 0.75};
-
     assert(model1.predict(sample1, 2) == 2);
     assert(model1.predict(sample2, 2) == 1);
     assert(model1.predict(sample3, 2) == 1);
     assert(model1.predict(sample4, 2) == 2);
-
+    std::cout << "... Passed" << std::endl;
+    std::cout << "------- Test 2 -------" << std::endl;
     std::vector<std::vector<double>> X2 = {
         {0.0, 0.0, 0.0}, {0.25, 0.25, 0.0}, {0.0, 0.5, 0.0}, {0.5, 0.5, 0.0},
         {1.0, 0.5, 0.0}, {1.0, 1.0, 0.0},   {1.0, 1.0, 1.0}, {1.5, 1.5, 1.0}};
@@ -163,18 +162,32 @@ static void test() {
     std::vector<double> sample6 = {0.1, 0.1, 0.0};
     std::vector<double> sample7 = {0.1, 0.5, 0.0};
     std::vector<double> sample8 = {1.0, 0.75, 1.0};
-
     assert(model2.predict(sample5, 2) == 2);
     assert(model2.predict(sample6, 2) == 1);
     assert(model2.predict(sample7, 2) == 1);
     assert(model2.predict(sample8, 2) == 3);
+    std::cout << "... Passed" << std::endl;
+    std::cout << "------- Test 3 -------" << std::endl;
+    std::vector<std::vector<double>> X3 = {{0.0}, {1.0}, {2.0}, {3.0},
+                                           {4.0}, {5.0}, {6.0}, {7.0}};
+    std::vector<int> Y3 = {1, 1, 1, 1, 2, 2, 2, 2};
+    auto model3 = machine_learning::k_nearest_neighbors::Knn(X3, Y3);
+    std::vector<double> sample9 = {0.5};
+    std::vector<double> sample10 = {2.9};
+    std::vector<double> sample11 = {5.5};
+    std::vector<double> sample12 = {7.5};
+    assert(model3.predict(sample9, 3) == 1);
+    assert(model3.predict(sample10, 3) == 1);
+    assert(model3.predict(sample11, 3) == 2);
+    assert(model3.predict(sample12, 3) == 2);
+    std::cout << "... Passed" << std::endl;
 }
 
 /**
  * @brief Main function
  * @param argc commandline argument count (ignored)
  * @param argv commandline array of arguments (ignored)
- * @return int
+ * @return int 0 on exit
  */
 int main(int argc, char* argv[]) {
     test();  // run self-test implementations
