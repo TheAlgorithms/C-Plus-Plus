@@ -1,5 +1,9 @@
-<map id="stack&lt; Type &gt;" name="stack&lt; Type &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,317,112,343"/>
-<area shape="rect" id="node2" href="$d5/da1/structnode.html" title=" " alt="" coords="7,229,110,255"/>
-<area shape="rect" id="node3" href="$d5/da1/structnode.html" title=" " alt="" coords="9,37,109,62"/>
+<map id="stack&lt; ValueType &gt;" name="stack&lt; ValueType &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="81,684,220,709"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,581,155,621"/>
+<area shape="rect" id="node3" href="$d5/da1/structnode.html" title=" " alt="" coords="11,493,149,519"/>
+<area shape="rect" id="node4" href="$d5/da1/structnode.html" title="for std::vector" alt="" coords="114,37,214,62"/>
+<area shape="rect" id="node6" href="$d5/da1/structnode.html" title=" " alt="" coords="97,229,231,255"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="108,391,257,431"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/size_t.html" title=" " alt="" coords="179,589,261,614"/>
 </map>

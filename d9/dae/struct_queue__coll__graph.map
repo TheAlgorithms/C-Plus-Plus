@@ -1,4 +1,6 @@
 <map id="Queue" name="Queue">
-<area shape="rect" id="node1" title=" " alt="" coords="25,185,85,211"/>
-<area shape="rect" id="node2" href="$d5/da1/structnode.html" title=" " alt="" coords="5,37,105,62"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,65,255"/>
+<area shape="rect" id="node2" href="$d5/da1/structnode.html" title="for std::vector" alt="" coords="107,37,207,62"/>
+<area shape="rect" id="node4" href="$d5/da1/structnode.html" title=" " alt="" coords="89,229,224,255"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="133,317,282,357"/>
 </map>

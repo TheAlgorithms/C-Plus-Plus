@@ -15,7 +15,7 @@ var searchData=
   ['spiral_5fprint_2ecpp_12',['spiral_print.cpp',['../db/d07/spiral__print_8cpp.html',1,'']]],
   ['spirograph_2ecpp_13',['spirograph.cpp',['../da/d77/spirograph_8cpp.html',1,'']]],
   ['sqrt_5fdouble_2ecpp_14',['sqrt_double.cpp',['../da/d24/sqrt__double_8cpp.html',1,'']]],
-  ['stack_2eh_15',['stack.h',['../d7/de0/stack_8h.html',1,'']]],
+  ['stack_2ehpp_15',['stack.hpp',['../df/d47/stack_8hpp.html',1,'']]],
   ['stairs_5fpattern_2ecpp_16',['stairs_pattern.cpp',['../d5/def/stairs__pattern_8cpp.html',1,'']]],
   ['strand_5fsort_2ecpp_17',['strand_sort.cpp',['../dc/dd9/strand__sort_8cpp.html',1,'']]],
   ['string_5ffibonacci_2ecpp_18',['string_fibonacci.cpp',['../de/d47/string__fibonacci_8cpp.html',1,'']]],

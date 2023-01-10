@@ -1,9 +1,8 @@
 <map id="test3" name="test3">
-<area shape="rect" id="node1" title="Test the computed inorder with the actual inorder." alt="" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="484,5,556,31"/>
-<area shape="rect" id="node3" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="104,72,261,127"/>
-<area shape="rect" id="node4" href="$d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc" title=" " alt="" coords="313,55,396,80"/>
-<area shape="rect" id="node6" href="$d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d" title=" " alt="" coords="309,104,400,129"/>
-<area shape="rect" id="node7" href="$d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344" title=" " alt="" coords="315,153,395,179"/>
-<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a066e4505155b009913c47b2648b1067a" title=" " alt="" coords="448,55,592,80"/>
+<area shape="rect" id="node1" title="Test the computed inorder with the actual inorder." alt="" coords="5,37,56,63"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="147,5,219,31"/>
+<area shape="rect" id="node3" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="104,55,261,109"/>
+<area shape="rect" id="node4" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="313,20,396,45"/>
+<area shape="rect" id="node5" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="309,69,400,95"/>
+<area shape="rect" id="node6" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="315,119,395,144"/>
 </map>

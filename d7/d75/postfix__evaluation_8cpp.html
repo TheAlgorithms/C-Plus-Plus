@@ -247,12 +247,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="ac_str_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html">std::string::c_str</a></div><div class="ttdeci">T c_str(T... args)</div></div>
-<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdef"><b>Definition:</b> stack.h:26</div></div>
+<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdef"><b>Definition:</b> stack.hpp:38</div></div>
 <div class="ttc" id="apostfix__evaluation_8cpp_html_ad77f8c9cc594975756838d498c237cea"><div class="ttname"><a href="../../d7/d75/postfix__evaluation_8cpp.html#ad77f8c9cc594975756838d498c237cea">others::postfix_expression::push</a></div><div class="ttdeci">void push(float operand, Stack *stack)</div><div class="ttdoc">Pushing operand, also called the number in the array to the stack.</div><div class="ttdef"><b>Definition:</b> postfix_evaluation.cpp:44</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_a59fd597e0ea394abe027ced4d2ea3338_cgraph.svg" width="551" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_a59fd597e0ea394abe027ced4d2ea3338_cgraph.svg" width="408" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -360,19 +360,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>operand float on top of stack </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>                        {</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">float</span> operand = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_function" href="../../d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83">stack</a>[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>];</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>--;</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">float</span> operand = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;stack[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>];</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>--;</div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> operand;</div>
 <div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="aclassstack_html_a5b64337ec34b12e98458bb9b9d5f8f83"><div class="ttname"><a href="../../d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83">stack::stack</a></div><div class="ttdeci">stack()</div><div class="ttdef"><b>Definition:</b> stack.h:41</div></div>
-<div class="ttc" id="aclassstack_html_a7289037c059aaad492b4d68e6bd54453"><div class="ttname"><a href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stack::stackTop</a></div><div class="ttdeci">node&lt; Type &gt; * stackTop</div><div class="ttdef"><b>Definition:</b> stack.h:146</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_a421baa2002a64bc0bfc3e1b64800d734_cgraph.svg" width="358" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+<div class="ttc" id="aclassstack_html_ab2fb22962a841a45707e70fb6109ddf4"><div class="ttname"><a href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stack::stackTop</a></div><div class="ttdeci">std::shared_ptr&lt; node&lt; value_type &gt; &gt; stackTop</div><div class="ttdef"><b>Definition:</b> stack.hpp:101</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae38bd3a177a6d61da3859a281233bbe1" name="ae38bd3a177a6d61da3859a281233bbe1"></a>
@@ -425,9 +418,9 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
 <div class="line"><span class="lineno">  130</span>        j++;</div>
 <div class="line"><span class="lineno">  131</span>    }</div>
 <div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83">stack</a>[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.stack[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>] &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  134</span> </div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83">stack</a>[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>];</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.stack[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>];</div>
 <div class="line"><span class="lineno">  136</span>}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="apostfix__evaluation_8cpp_html_a4c27f949c9d6659be9f5bd2ccbe1360a"><div class="ttname"><a href="../../d7/d75/postfix__evaluation_8cpp.html#a4c27f949c9d6659be9f5bd2ccbe1360a">others::postfix_expression::is_number</a></div><div class="ttdeci">bool is_number(const std::string &amp;s)</div><div class="ttdoc">Checks if scanned string is a number.</div><div class="ttdef"><b>Definition:</b> postfix_evaluation.cpp:65</div></div>
@@ -436,7 +429,7 @@ template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_ae38bd3a177a6d61da3859a281233bbe1_cgraph.svg" width="100%" height="562"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_ae38bd3a177a6d61da3859a281233bbe1_cgraph.svg" width="631" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -478,16 +471,10 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   44</span>                                       {</div>
-<div class="line"><span class="lineno">   45</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>++;</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_function" href="../../d1/dc2/classstack.html#a5b64337ec34b12e98458bb9b9d5f8f83">stack</a>[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#a7289037c059aaad492b4d68e6bd54453">stackTop</a>] = operand;</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>++;</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;stack[<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>] = operand;</div>
 <div class="line"><span class="lineno">   47</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d75/postfix__evaluation_8cpp_ad77f8c9cc594975756838d498c237cea_cgraph.svg" width="328" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a8eeb7d346d5cd6335d9780fb7c0f15" name="a6a8eeb7d346d5cd6335d9780fb7c0f15"></a>

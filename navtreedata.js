@@ -142,16 +142,16 @@ var NAVTREEINDEX =
 "cpp/iterator/inserter.html",
 "cpp/utility/forward.html",
 "d1/d83/classuint256__t.html#aff4d49cf84de64301b169ad974f00bad",
-"d3/d6d/namespacesimpson__method.html",
-"d4/dd2/namespacequadratic__probing.html#aeb6bca8db4768226f8ea8291ea4f83f6",
-"d6/d26/classciphers_1_1_hill_cipher.html#ab02c7563889bf1e363deb8e21967b706",
-"d7/d77/class_edge.html",
-"d8/dab/classstatistics_1_1stats__computer2.html",
-"d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5",
-"db/d82/classlarge__number.html#a771e9b28cfddf1ad94668566e396e350",
-"dc/dfe/ternary__search_8cpp.html#ae30dfe2894191bfeffe5b3b1854b95b0",
-"de/d7b/merge__insertion__sort_8cpp.html#a7161278f18e83b671c6454b139cc5674",
-"functions_func_i.html"
+"d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8",
+"d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1",
+"d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa",
+"d7/d7c/classstatistics_1_1stats__computer1.html",
+"d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e",
+"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html",
+"db/d82/classlarge__number.html#ab84f29685709cbb3b6fd29b7b4a7bc7b",
+"dd/d0c/hamiltons__cycle_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae",
+"de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d",
+"functions_func_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -69,7 +69,7 @@ var searchData=
   ['_7eshared_5flock_66',['~shared_lock',['http://en.cppreference.com/w/cpp/thread/shared_lock/~shared_lock.html',0,'std::shared_lock']]],
   ['_7eshared_5fptr_67',['~shared_ptr',['http://en.cppreference.com/w/cpp/memory/shared_ptr/~shared_ptr.html',0,'std::shared_ptr']]],
   ['_7esmatch_68',['~smatch',['http://en.cppreference.com/w/cpp/regex/match_results/~match_results.html',0,'std::smatch']]],
-  ['_7estack_69',['~stack',['http://en.cppreference.com/w/cpp/container/stack/~stack.html',0,'std::stack::~stack()'],['../d1/dc2/classstack.html#a0ac1dba9c7019acdc825b31d06eb0b71',1,'stack::~stack()']]],
+  ['_7estack_69',['~stack',['http://en.cppreference.com/w/cpp/container/stack/~stack.html',0,'std::stack']]],
   ['_7estreambuf_70',['~streambuf',['http://en.cppreference.com/w/cpp/io/basic_streambuf/~basic_streambuf.html',0,'std::streambuf']]],
   ['_7estrstream_71',['~strstream',['http://en.cppreference.com/w/cpp/io/strstream/~strstream.html',0,'std::strstream']]],
   ['_7estrstreambuf_72',['~strstreambuf',['http://en.cppreference.com/w/cpp/io/strstreambuf/~strstreambuf.html',0,'std::strstreambuf']]],
