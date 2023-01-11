@@ -9,7 +9,11 @@
 #include <iostream>  /// for IO operations
 #include <stack>     /// for stack operations
 #include <cstdlib>   /// for datatype conversion
-namespace
+/**
+ * @brief Data structures
+ * @namespace
+ */
+namespace data_structures
 {
     /**
      * Queue data structure.Store elements in FIFO
