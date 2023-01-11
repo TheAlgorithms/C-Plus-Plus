@@ -35,7 +35,7 @@ void display_all(const Node* const inNode) {
 
 template <typename Node>
 std::vector<typename Node::value_type> push_all_to_vector(
-    const Node* const inNode, const std::size_t expected_size=0) {
+    const Node* const inNode, const std::size_t expected_size = 0) {
     std::vector<typename Node::value_type> res;
     if (expected_size != 0) {
         res.reserve(expected_size);

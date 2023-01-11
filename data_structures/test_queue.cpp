@@ -1,5 +1,5 @@
-#include <cassert>  /// for assert
-#include <iostream> /// for std::cout
+#include <cassert>   /// for assert
+#include <iostream>  /// for std::cout
 
 #include "./queue.hpp"
 
