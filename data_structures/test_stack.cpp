@@ -157,7 +157,7 @@ void testAssign() {
     assert(stackB.toVector() == otherExpectedDataB);
 }
 
-void testTopThrowsAnvalidArgumentWhenStackEmpty() {
+void testTopThrowsAnInvalidArgumentWhenStackEmpty() {
     const stack<long double> curStack;
     bool wasException = false;
     try {
@@ -168,7 +168,7 @@ void testTopThrowsAnvalidArgumentWhenStackEmpty() {
     assert(wasException);
 }
 
-void testPopThrowsAnvalidArgumentWhenStackEmpty() {
+void testPopThrowsAnInvalidArgumentWhenStackEmpty() {
     stack<bool> curStack;
     bool wasException = false;
     try {
@@ -195,8 +195,8 @@ int main() {
 
     testAssign();
 
-    testTopThrowsAnvalidArgumentWhenStackEmpty();
-    testPopThrowsAnvalidArgumentWhenStackEmpty();
+    testTopThrowsAnInvalidArgumentWhenStackEmpty();
+    testPopThrowsAnInvalidArgumentWhenStackEmpty();
 
     std::cout << "All tests pass!\n";
     return 0;
