@@ -37,9 +37,7 @@ template <typename Node>
 std::vector<typename Node::value_type> push_all_to_vector(
     const Node* const inNode, const std::size_t expected_size = 0) {
     std::vector<typename Node::value_type> res;
-    if (expected_size != 0) {
-        res.reserve(expected_size);
-    }
+    res.reserve(expected_size);
     traverse(inNode,
              [&res](const Node& curNode) { res.push_back(curNode.data); });
     return res;
