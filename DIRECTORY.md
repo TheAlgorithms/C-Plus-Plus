@@ -63,6 +63,7 @@
   * [Queue Using Linkedlist](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_linkedlist.cpp)
   * [Queue Using Two Stacks](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/queue_using_two_stacks.cpp)
   * [Rb Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/rb_tree.cpp)
+  * [Rb Tree2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/rb_tree2.cpp)
   * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/reverse_a_linked_list.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/sparse_table.cpp)
