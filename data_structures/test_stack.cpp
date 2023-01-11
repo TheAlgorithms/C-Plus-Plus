@@ -1,59 +1,203 @@
-#include <iostream>
+#include <cassert>    /// for assert
+#include <iostream>   /// for std::cout
+#include <stdexcept>  /// std::invalid_argument
+#include <vector>     /// for std::vector
 
-#include "./stack.h"
+#include "./stack.hpp"
+
+template <typename T>
+void testConstructedStackIsEmpty() {
+    const stack<T> curStack;
+    assert(curStack.isEmptyStack());
+}
+
+void testPush() {
+    using valueType = int;
+    stack<valueType> curStack;
+    curStack.push(10);
+    curStack.push(20);
+    curStack.push(30);
+    curStack.push(40);
+    const auto expectedData = std::vector<valueType>({40, 30, 20, 10});
+    assert(curStack.toVector() == expectedData);
+}
+
+void testTop() {
+    using valueType = unsigned;
+    stack<valueType> curStack;
+    curStack.push(1);
+    curStack.push(2);
+    curStack.push(3);
+    curStack.push(4);
+    assert(curStack.top() == static_cast<valueType>(4));
+}
+
+void testPop() {
+    using valueType = int;
+    stack<valueType> curStack;
+    curStack.push(100);
+    curStack.push(200);
+    curStack.push(300);
+
+    assert(curStack.top() == static_cast<valueType>(300));
+    curStack.pop();
+    assert(curStack.top() == static_cast<valueType>(200));
+    curStack.pop();
+    assert(curStack.top() == static_cast<valueType>(100));
+    curStack.pop();
+    assert(curStack.isEmptyStack());
+}
+
+void testClear() {
+    stack<int> curStack;
+    curStack.push(1000);
+    curStack.push(2000);
+    curStack.clear();
+    assert(curStack.isEmptyStack());
+}
+
+void testCopyOfStackHasSameData() {
+    stack<int> stackA;
+    stackA.push(10);
+    stackA.push(200);
+    stackA.push(3000);
+    const auto stackB(stackA);
+    assert(stackA.toVector() == stackB.toVector());
+}
+
+void testPushingToCopyDoesNotChangeOriginal() {
+    using valueType = int;
+    stack<valueType> stackA;
+    stackA.push(10);
+    stackA.push(20);
+    stackA.push(30);
+    auto stackB(stackA);
+    stackB.push(40);
+
+    const auto expectedDataA = std::vector<valueType>({30, 20, 10});
+    const auto expectedDataB = std::vector<valueType>({40, 30, 20, 10});
+
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
+}
+
+void testPoppingFromCopyDoesNotChangeOriginal() {
+    using valueType = int;
+    stack<valueType> stackA;
+    stackA.push(10);
+    stackA.push(20);
+    stackA.push(30);
+    auto stackB(stackA);
+    stackB.pop();
+
+    const auto expectedDataA = std::vector<valueType>({30, 20, 10});
+    const auto expectedDataB = std::vector<valueType>({20, 10});
+
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
+}
+
+void testPushingToOrginalDoesNotChangeCopy() {
+    using valueType = int;
+    stack<valueType> stackA;
+    stackA.push(10);
+    stackA.push(20);
+    stackA.push(30);
+    const auto stackB(stackA);
+    stackA.push(40);
+
+    const auto expectedDataA = std::vector<valueType>({40, 30, 20, 10});
+    const auto expectedDataB = std::vector<valueType>({30, 20, 10});
+
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
+}
+
+void testPoppingFromOrginalDoesNotChangeCopy() {
+    using valueType = int;
+    stack<valueType> stackA;
+    stackA.push(10);
+    stackA.push(20);
+    stackA.push(30);
+    const auto stackB(stackA);
+    stackA.pop();
+
+    const auto expectedDataA = std::vector<valueType>({20, 10});
+    const auto expectedDataB = std::vector<valueType>({30, 20, 10});
+
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
+}
+
+void testAssign() {
+    using valueType = int;
+    stack<valueType> stackA;
+    stackA.push(10);
+    stackA.push(20);
+    stackA.push(30);
+    stack<valueType> stackB = stackA;
+    stackA.pop();
+    stackB.push(40);
+
+    const auto expectedDataA = std::vector<valueType>({20, 10});
+    const auto expectedDataB = std::vector<valueType>({40, 30, 20, 10});
+
+    assert(stackA.toVector() == expectedDataA);
+    assert(stackB.toVector() == expectedDataB);
+
+    stackB = stackA;
+    stackA.pop();
+    stackB.push(5);
+    stackB.push(6);
+
+    const auto otherExpectedDataA = std::vector<valueType>({10});
+    const auto otherExpectedDataB = std::vector<valueType>({6, 5, 20, 10});
+
+    assert(stackA.toVector() == otherExpectedDataA);
+    assert(stackB.toVector() == otherExpectedDataB);
+}
+
+void testTopThrowsAnvalidArgumentWhenStackEmpty() {
+    const stack<long double> curStack;
+    bool wasException = false;
+    try {
+        curStack.top();
+    } catch (const std::invalid_argument&) {
+        wasException = true;
+    }
+    assert(wasException);
+}
+
+void testPopThrowsAnvalidArgumentWhenStackEmpty() {
+    stack<bool> curStack;
+    bool wasException = false;
+    try {
+        curStack.pop();
+    } catch (const std::invalid_argument&) {
+        wasException = true;
+    }
+    assert(wasException);
+}
 
 int main() {
-    stack<int> stk;
-    std::cout << "---------------------- Test construct ----------------------"
-              << std::endl;
-    stk.display();
-    std::cout
-        << "---------------------- Test isEmptyStack ----------------------"
-        << std::endl;
-    if (stk.isEmptyStack())
-        std::cout << "PASS" << std::endl;
-    else
-        std::cout << "FAIL" << std::endl;
-    std::cout << "---------------------- Test push ----------------------"
-              << std::endl;
-    std::cout << "After pushing 10 20 30 40 into stack: " << std::endl;
-    stk.push(10);
-    stk.push(20);
-    stk.push(30);
-    stk.push(40);
-    stk.display();
-    std::cout << "---------------------- Test top ----------------------"
-              << std::endl;
-    int value = stk.top();
-    if (value == 40)
-        std::cout << "PASS" << std::endl;
-    else
-        std::cout << "FAIL" << std::endl;
-    std::cout << "---------------------- Test pop ----------------------"
-              << std::endl;
-    stk.display();
-    stk.pop();
-    stk.pop();
-    std::cout << "After popping 2 times: " << std::endl;
-    stk.display();
-    std::cout << "---------------------- Test overload = operator "
-                 "----------------------"
-              << std::endl;
-    stack<int> stk1;
-    std::cout << "stk current: " << std::endl;
-    stk.display();
-    std::cout << std::endl << "Assign stk1 = stk " << std::endl;
-    stk1 = stk;
-    stk1.display();
-    std::cout << std::endl << "After pushing 8 9 10 into stk1:" << std::endl;
-    stk1.push(8);
-    stk1.push(9);
-    stk1.push(10);
-    stk1.display();
-    std::cout << std::endl << "stk current: " << std::endl;
-    stk.display();
-    std::cout << "Assign back stk = stk1:" << std::endl;
-    stk = stk1;
-    stk.display();
+    testConstructedStackIsEmpty<int>();
+    testConstructedStackIsEmpty<char>();
+
+    testPush();
+    testPop();
+    testClear();
+
+    testCopyOfStackHasSameData();
+    testPushingToCopyDoesNotChangeOriginal();
+    testPoppingFromCopyDoesNotChangeOriginal();
+    testPushingToOrginalDoesNotChangeCopy();
+    testPoppingFromOrginalDoesNotChangeCopy();
+
+    testAssign();
+
+    testTopThrowsAnvalidArgumentWhenStackEmpty();
+    testPopThrowsAnvalidArgumentWhenStackEmpty();
+
+    std::cout << "All tests pass!\n";
     return 0;
 }
