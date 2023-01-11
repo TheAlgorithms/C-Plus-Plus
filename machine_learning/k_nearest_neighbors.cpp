@@ -3,10 +3,10 @@
  * @brief Implementation of [K-Nearest Neighbors algorithm]
  * (https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm).
  * @author [Luiz Carlos Cosmi Filho](https://github.com/luizcarloscf)
- * @details Program that implements the k-nearest neighbors algorithm, also
- * known as KNN or k-NN, a supervised learning classifier, which uses proximity
- * to make classifications. This implementantion uses the Euclidean Distance as
- * distance metric to find the K-nearest neighbors.
+ * @details K-nearest neighbors algorithm, also known as KNN or k-NN, is a
+ * supervised learning classifier, which uses proximity to make classifications.
+ * This implementantion uses the Euclidean Distance as distance metric to find
+ * the K-nearest neighbors.
  */
 
 #include <algorithm>      /// for std::transform and std::sort
@@ -96,8 +96,8 @@ class Knn {
     /**
      * @brief Classify sample.
      * @param sample sample
-     * @param k number of neighbor
-     * @return int most frequent neighbor label
+     * @param k number of neighbors
+     * @return int label of most frequent neighbors
      */
     int predict(std::vector<double>& sample, int k) {
         std::vector<int> neighbors;
