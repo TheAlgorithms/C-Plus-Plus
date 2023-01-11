@@ -17,6 +17,7 @@
   * [Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_bits_flip.cpp)
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
+  * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
 
@@ -65,7 +66,7 @@
   * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/reverse_a_linked_list.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/sparse_table.cpp)
-  * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack.h)
+  * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack.hpp)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_linked_list.cpp)
   * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_queue.cpp)
