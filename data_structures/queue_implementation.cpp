@@ -1,5 +1,5 @@
 /**
- * @author [saqlain] (https://github.com/Mysterious786)
+ * @author [saqlain](https://github.com/Mysterious786)
  * @file
  *
  * Implementation of a Queue using Single Stacks.
