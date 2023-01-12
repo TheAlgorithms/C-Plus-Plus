@@ -26,7 +26,7 @@ class queue {
  private:
     void ensureNotEmpty() const {
         if (isEmptyQueue()) {
-            throw std::invalid_argument("Stack is empty.");
+            throw std::invalid_argument("Queue is empty.");
         }
     }
 
