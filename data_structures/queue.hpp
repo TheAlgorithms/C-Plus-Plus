@@ -50,7 +50,7 @@ class queue {
     }
 
     /** Return the first element of the queue */
-    ValueType front() const {
+    value_type front() const {
         ensureNotEmpty();
         return queueFront->data;
     }
