@@ -46,7 +46,7 @@ class queue {
             queueRear->next = newNode;
             queueRear = queueRear->next;
         }
-        size++;
+        ++size;
     }
 
     /** Return the first element of the queue */
@@ -59,7 +59,7 @@ class queue {
     void deQueue() {
         ensureNotEmpty();
         queueFront = queueFront->next;
-        size--;
+        --size;
     }
 
     /** Clear queue */
