@@ -343,7 +343,7 @@ class Matrix {
         // multiplication, or the matrix is of odd size, then go with the naive
         // multiplication route;
         // else; go with the strassen's method.
-        if (size <= 128ULL || (size & 1ULL)) {
+        if (size <= 64ULL || (size & 1ULL)) {
             return this->naive_multiplication(other);
         } else {
             const Matrix<Number>
@@ -425,7 +425,7 @@ class Matrix {
  * @returns void
  */
 static void test() {
-    const size_t s = 2048;
+    const size_t s = 512;
     auto matrix_demo =
         divide_and_conquer::strassens_multiplication::Matrix<size_t>(s, s);
 
