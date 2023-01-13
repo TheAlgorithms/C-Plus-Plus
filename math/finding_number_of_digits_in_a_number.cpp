@@ -16,8 +16,8 @@
  */
 
 #include <cassert>   /// for assert
+#include <cmath>     /// for log calculation
 #include <iostream>  /// for IO operations
-#include <cmath>    /// for log calculation
 
 /**
  * @brief The main function that checks
@@ -50,16 +50,16 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
  * @returns the digits count
  */
 uint64_t count_digits(uint64_t n) {
-    // to handle the negative numbers 
-    if(n < 0){
+    // to handle the negative numbers
+    if (n < 0) {
         n = -n;
     }
     // log(0) is undefined
-    else if(n == 0){
-    //handling the value 0
-     return 0;    
+    else if (n == 0) {
+        // handling the value 0
+        return 0;
     }
-    uint64_t count = floor(log10(uint64_t(n)) + 1);
+    uint64_t count = floor(log10(n) + 1);
 
     return count;
 }
@@ -87,12 +87,11 @@ static void test() {
     std::cout << "All tests have successfully passed!\n";
 }
 
-
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
