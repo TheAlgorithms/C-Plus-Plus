@@ -59,7 +59,7 @@ uint64_t count_digits(uint64_t n) {
     //handling the value 0
      return 0;    
     }
-    uint64_t count = floor(log10(n) + 1);
+    uint64_t count = floor(log10(uint64_t(n)) + 1);
 
     return count;
 }
