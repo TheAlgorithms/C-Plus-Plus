@@ -11,7 +11,9 @@ class queue {
 
  public:
     using value_type = ValueType;
-    /** Show queue */
+    /**
+     * @brief prints the queue into the std::cout
+     */
     void display() const {
         std::cout << "Front --> ";
         display_all(this->queueFront.get());
@@ -19,11 +21,20 @@ class queue {
         std::cout << "Size of queue: " << size << '\n';
     }
 
+    /**
+     * @brief converts the queue into the std::vector
+     * @return std::vector containning all of the elements of the queue in the
+     * same order
+     */
     std::vector<value_type> toVector() const {
         return push_all_to_vector(this->queueFront.get(), this->size);
     }
 
  private:
+    /**
+     * @brief throws an exception if queue is empty
+     * @exception std::invalid_argument if queue is empty
+     */
     void ensureNotEmpty() const {
         if (isEmptyQueue()) {
             throw std::invalid_argument("Queue is empty.");
@@ -31,10 +42,15 @@ class queue {
     }
 
  public:
-    /** Determine whether the queue is empty */
+    /**
+     * @brief checks if the queue has no elements
+     * @return true if the queue is empty, false otherwise
+     */
     bool isEmptyQueue() const { return (queueFront == nullptr); }
 
-    /** Add new item to the queue */
+    /**
+     * @brief inserts a new item into the queue
+     */
     void enQueue(const value_type& item) {
         auto newNode = std::make_shared<node_type>();
         newNode->data = item;
@@ -49,20 +65,28 @@ class queue {
         ++size;
     }
 
-    /** Return the first element of the queue */
+    /**
+     * @return the first element of the queue
+     * @exception std::invalid_argument if queue is empty
+     */
     value_type front() const {
         ensureNotEmpty();
         return queueFront->data;
     }
 
-    /** Remove the top element of the queue */
+    /**
+     * @brief removes the first element from the queue
+     * @exception std::invalid_argument if queue is empty
+     */
     void deQueue() {
         ensureNotEmpty();
         queueFront = queueFront->next;
         --size;
     }
 
-    /** Clear queue */
+    /**
+     * @brief removes all of the elements of the queue
+     */
     void clear() {
         queueFront = nullptr;
         queueRear = nullptr;
