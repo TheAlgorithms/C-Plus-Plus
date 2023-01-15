@@ -5,13 +5,16 @@
  * @details
  * We are given an array and a sum value. The algorithm finds all
  * the subsets of that array with sum equal to the given sum and return such
- * subsets count. This approach will have exponential time complexity.
+ * subsets count.
+ * Horowitz and Sahni algorithm used below will run in exponential time but 
+ * with better run-time(i.e., n/2*(2^(n/2))) than naive implementation of n*(2^n)
+ * @author [Agamya Yadav](https://github.com/Agamya-Yadav)
  */
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
-#include <map>
+#include <unordered_map>
 
 /**
  * @namespace backtracking
@@ -19,27 +22,27 @@
  */
 namespace backtracking {
 /**
- * @namespace Subsets
+ * @namespace 
  * @brief Functions for the [Subset
- * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
+ * Sum - Counting Problem]
  */
 namespace subset_sum {
 /**
  * @brief The main function implements count of subsets
  * @param sum is the required sum of any subset
- * @param in_arr is the input array
+ * @param arr is the input array
  * @returns count of the number of subsets with required sum
  */
-uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &in_arr) {
-    int32_t nelement = in_arr.size();
-    uint64_t count_of_subset = 0;
-    std::map<int32_t, int> map_1;
+uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &arr) {
+    int32_t nelement = arr.size();
+    uint64_t count_of_subset = 0;  // counts number of subsets
+    std::unordered_map<int32_t, int> map_1;
     int l_element = nelement / 2, r_element = nelement - l_element; 
     for(int32_t i = 1; i < (1 << (l_element)); i++){
         int32_t check = 0;
         for(int32_t j = 0; j < l_element; j++){
             if((i >> j) & 1){
-                check += (in_arr[j]);
+                check += (arr[j]);
             }
         }
         if(check == sum){
@@ -52,7 +55,7 @@ uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &in_arr) {
         int32_t check = 0;
         for(int32_t j = 0; j < r_element; j++){
             if((i >> j) & 1){
-                check += (in_arr[l_element+j]);
+                check += (arr[l_element+j]);
             }
         }
         if(check == sum){
