@@ -25,7 +25,8 @@ namespace machine_learning {
 
 /**
  * @namespace k_nearest_neighbors
- * @brief K-nearest neighbors algorithm
+ * @brief Functions for the [K-Nearest Neighbors algorithm]
+ * (https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) implementation
  */
 namespace k_nearest_neighbors {
 
