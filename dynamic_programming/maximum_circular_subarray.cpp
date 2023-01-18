@@ -73,6 +73,8 @@ static void test() {
 
     arr = {8, -8, 10, -9, 10, -11, 12};
     assert(dynamic_programming::maxCircularSum(arr) == 23);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 
