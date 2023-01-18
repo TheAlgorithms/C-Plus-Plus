@@ -52,17 +52,17 @@ int maxCircularSum(std::vector<int>& arr)
     if (min_so_far == sum)
         return max_so_far;
   
-    // returning the maximum value
+    // Return the maximum value
     return std::max(max_so_far, sum - min_so_far);
 }
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
+ * @brief Self-test implementation
  * @returns void
  */
 static void test() {
-    // description of the test
+    // Description of the test
     // Input: arr[] = {8, -8, 9, -9, 10, -11, 12}
     // Output: 22 
     // Explanation: Subarray 12, 8, -8, 9, -9, 10 gives the maximum sum, that is 22.
