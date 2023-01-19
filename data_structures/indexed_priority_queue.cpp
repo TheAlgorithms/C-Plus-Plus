@@ -59,10 +59,10 @@ class IPQ
 			}
         }
 
-        /**
+        	/**
 		 * @brief check if the queue contains a certain key
 		 * @param key the key to check for
-	     */
+	     	 */
 		bool contains(T1 key)
 		{
             if (pm.count(key)) {  // c++11
@@ -75,7 +75,7 @@ class IPQ
 		 * @brief inserts a key-value pair into the heap
 		 * @param key the key to insert
 		 * @param value the key's associated priority
-	     */
+	     	 */
 		void insert(T1 key, T2 value)
 		{
 			// add node to bottom right of heap
@@ -91,7 +91,7 @@ class IPQ
 		/**
 		 * @brief peeks the front of the priority queue
 		 * @returns a key value pair of T1 and T2
-	     */
+	     	 */
 		std::pair<T1,T2> peek()
 		{
 			std::pair<T1,T2> x = std::make_pair(im[0], val[im[0]]);
@@ -101,7 +101,7 @@ class IPQ
 		/**
 		 * @brief removes the front element of the priority queue
 		 * @returns a key value pair of the front element before popping
-	     */
+	     	 */
 		std::pair<T1,T2> pop()
 		{
 			std::pair<T1,T2> x = std::make_pair(im[0], val[im[0]]);
@@ -112,7 +112,7 @@ class IPQ
 		/**
 		 * @brief removes a given key of the priority queue
 		 * @param key the key to remove
-	     */
+	     	 */
 		void remove(T1 key)
 		{
 			if(!contains(key)) return;
@@ -131,7 +131,7 @@ class IPQ
 
 		/**
 		 * @brief returns the number of elements in the IPQ
-	     */
+	     	 */
 		int getSize()
 		{
 			return size;
@@ -143,7 +143,7 @@ class IPQ
 		 * @brief swaps two key value pairs in the heap
 		 * @param i the heap index of the first pair
 		 * @param j the heap index ot the second pair
-	     */
+	     	 */
 		void swap(int i, int j)
 		{
 			pm[im[j]] = i;
@@ -157,7 +157,7 @@ class IPQ
 		 * @brief An algorithm to set a misplaced item in a heap
 		 * to its correct place by swapping with children.
 		 * @param node the heap index to sink
-	     */
+	     	 */
 		void sink(int node) 
 		{
 			while(true)
@@ -193,7 +193,7 @@ class IPQ
 		 * @brief An algorithm to set a misplaced item in a heap
 		 * to its correct place by swapping with parents.
 		 * @param node the heap index to swim
-	     */
+	     	 */
 		void swim(int node) 
 		{
 			int i = std::floor((node-1)/2);
