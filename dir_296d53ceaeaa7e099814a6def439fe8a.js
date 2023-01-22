@@ -1,5 +1,6 @@
 var dir_296d53ceaeaa7e099814a6def439fe8a =
 [
+    [ "aliquot_sum.cpp", "de/d99/aliquot__sum_8cpp.html", "de/d99/aliquot__sum_8cpp" ],
     [ "approximate_pi.cpp", "d0/d51/approximate__pi_8cpp.html", "d0/d51/approximate__pi_8cpp" ],
     [ "area.cpp", "dc/d82/area_8cpp.html", "dc/d82/area_8cpp" ],
     [ "armstrong_number.cpp", "d4/d5d/math_2armstrong__number_8cpp.html", "d4/d5d/math_2armstrong__number_8cpp" ],

@@ -1,6 +1,7 @@
 var namespacemath =
 [
     [ "Point", "de/d4f/structmath_1_1_point.html", null ],
+    [ "aliquot_sum", "dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf", null ],
     [ "approximate_pi", "dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188", null ],
     [ "binomialCoeffSum", "dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea", null ],
     [ "circle_area", "dd/d47/namespacemath.html#a40e36c67da78d2131408c57ee091ad75", null ],

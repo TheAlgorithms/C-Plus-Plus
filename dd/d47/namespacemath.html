@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('dd/d47/namespacemath.html','../../'); 
 </div><!--header-->
 <div class="contents">
 
-<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>  
+<p>for IO operations  
 <a href="../../dd/d47/namespacemath.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -114,6 +114,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab37f3a7302a84179aae682c79d8390bf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ab37f3a7302a84179aae682c79d8390bf">aliquot_sum</a> (const uint64_t num)</td></tr>
+<tr class="separator:ab37f3a7302a84179aae682c79d8390bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#abf7f2a6d91f1ca6c89698792aea3f188">approximate_pi</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="../../de/d4f/structmath_1_1_point.html">Point</a> &gt; &amp;pts)</td></tr>
 <tr class="separator:abf7f2a6d91f1ca6c89698792aea3f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971ce57e368f2f631cf1f4ff3f864049"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -235,15 +237,17 @@ Functions</h2></td></tr>
 <tr class="separator:abde24398be43538c62e4a496968e60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a> </p>
+<div class="textblock"><p>for IO operations </p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>for io operations</p>
 <p>Evaluate recurrence relation using <a href="https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/" target="_blank">matrix exponentiation</a>.</p>
 <p>for assert</p>
 <p>Math algorithms.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
-<p>for IO operations</p>
 <p>for M_PI definition and pow()</p>
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></p>
+<p>for assert</p>
+<p>Mathematical algorithms</p>
 <p>for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>Mathematical algorithms</p>
 <p>for assert for uint16_t datatype for IO operations</p>
@@ -263,8 +267,6 @@ Algorithm</h3>
 <p>This problem can be solved using matrix exponentiation method. </p><dl class="section see"><dt>See also</dt><dd>here for simple <a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp" target="_blank">number exponentiation algorithm</a> or <a href="https://en.wikipedia.org/wiki/Exponentiation_by_squaring" target="_blank">explaination here</a>. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/AshishYUO" target="_blank">Ashish Daulatabad</a> for assert for IO operations for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> STL</dd></dl>
 <p>Mathematical algorithms</p>
-<p>for assert</p>
-<p>Mathematical algorithms</p>
 <p>for std::is_equal, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a> for assert for IO operations</p>
 <p>Mathematical algorithms</p>
 <p>for assert for io operations</p>
@@ -276,6 +278,46 @@ Algorithm</h3>
 <p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a> for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a></p>
 <p>Mathematical algorithms </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ab37f3a7302a84179aae682c79d8390bf" name="ab37f3a7302a84179aae682c79d8390bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37f3a7302a84179aae682c79d8390bf">&#9670;&#160;</a></span>aliquot_sum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::aliquot_sum </td>
+          <td>(</td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to return the aliquot sum of a number </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The input number </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                         {</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (num == 0 || num == 1) {</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> 0;  <span class="comment">// The aliquot sum for 0 and 1 is 0</span></div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    uint64_t sum = 0;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">for</span> (uint64_t i = 1; i &lt;= num / 2; i++) {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (num % i == 0) {</div>
+<div class="line"><span class="lineno">   35</span>            sum += i;</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>;</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+<div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:232</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="abf7f2a6d91f1ca6c89698792aea3f188" name="abf7f2a6d91f1ca6c89698792aea3f188"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf7f2a6d91f1ca6c89698792aea3f188">&#9670;&#160;</a></span>approximate_pi()</h2>
 
