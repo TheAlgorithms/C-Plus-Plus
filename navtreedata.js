@@ -25,12 +25,7 @@
 var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
-    [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md102", null ],
-      [ "Features", "index.html#autotoc_md103", null ],
-      [ "Documentation", "index.html#autotoc_md104", null ],
-      [ "Contributions", "index.html#autotoc_md105", null ]
-    ] ],
+    [ "The Algorithms - C++", "index.html", "index" ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md5", null ],
       [ "Our Standards", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md6", null ],
@@ -139,19 +134,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"cpp/iterator/inserter.html",
-"cpp/utility/forward.html",
-"d1/d83/classuint256__t.html#aff4d49cf84de64301b169ad974f00bad",
-"d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8",
-"d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html#aeec46e86786ddd461464b07a77c4d5f1",
-"d6/d26/classciphers_1_1_hill_cipher.html#ad667fa0860977f6d6d443fa1dbcd80aa",
-"d7/d7c/classstatistics_1_1stats__computer1.html",
-"d8/dab/classstatistics_1_1stats__computer2.html#acf2e84df4fc386bb3295016ef8fd156e",
-"da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html",
-"db/d82/classlarge__number.html#ab84f29685709cbb3b6fd29b7b4a7bc7b",
-"dd/d0c/hamiltons__cycle_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae",
-"de/d85/decimal__to__roman__numeral_8cpp.html#a003fb4e1b08279fe4cd50fbbc2782c2d",
-"functions_func_n.html"
+"cpp/iterator/distance.html",
+"cpp/thread/lock.html",
+"d1/d83/classuint256__t.html#addff5645f6005e7b50a6ad0731e4f19c",
+"d3/d4c/xor__cipher_8cpp.html",
+"d4/db9/namespacencr__modulo__p.html",
+"d6/d26/classciphers_1_1_hill_cipher.html#a427acfac1dbff3f48a2b071d449d965b",
+"d7/d73/abbreviation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d",
+"d8/d9c/union__of__two__arrays_8cpp.html#a2b8ff06a84b041457873840bf82e2d74",
+"d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76",
+"db/d71/quadratic__probing__hash__table_8cpp.html#ada6f1f44f7e83b0094fbcbe170788486",
+"dc/de1/recursive__tree__traversal_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0",
+"de/d72/geometric__dist_8cpp.html#a70fd1cc5c3a2813f28683dc75dcd65b6",
+"functions.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

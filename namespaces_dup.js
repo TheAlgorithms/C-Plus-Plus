@@ -170,6 +170,7 @@ var namespaces_dup =
       [ "test5", "d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86", null ],
       [ "test6", "d9/df4/namespacetests.html#aacafde185abd8670abee51157f273dc2", null ]
     ] ],
+    [ "travellingSalesman_bitmanipulation", "d7/d3f/namespacetravelling_salesman__bitmanipulation.html", null ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
     [ "trie_operations", "df/d8e/namespacetrie__operations.html", null ],
     [ "trie_using_hashmap", "d7/d0a/namespacetrie__using__hashmap.html", null ],
