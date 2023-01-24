@@ -162,6 +162,7 @@ var namespaces_dup =
     [ "strings", "df/dcb/namespacestrings.html", null ],
     [ "subarray_sum", "df/d74/namespacesubarray__sum.html", null ],
     [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
+    [ "subset_sum", "dc/d3a/namespacesubset__sum.html", null ],
     [ "Subsets", "de/d95/namespace_subsets.html", null ],
     [ "sudoku_solver", "d8/d9f/namespacesudoku__solver.html", null ],
     [ "tests", "d9/df4/namespacetests.html", [

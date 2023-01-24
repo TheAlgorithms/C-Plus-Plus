@@ -22,7 +22,8 @@ var searchData=
   ['strings_19',['strings',['../df/dcb/namespacestrings.html',1,'']]],
   ['subarray_5fsum_20',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
   ['sublist_5fsearch_21',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
-  ['subsets_22',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['sudoku_5fsolver_23',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]],
-  ['this_5fthread_24',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
+  ['subset_5fsum_22',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
+  ['subsets_23',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
+  ['sudoku_5fsolver_24',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]],
+  ['this_5fthread_25',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
 ];

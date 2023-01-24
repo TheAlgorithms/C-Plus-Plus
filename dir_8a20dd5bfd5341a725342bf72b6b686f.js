@@ -11,5 +11,6 @@ var dir_8a20dd5bfd5341a725342bf72b6b686f =
     [ "minimum_edit_distance.cpp", "da/d52/minimum__edit__distance_8cpp.html", "da/d52/minimum__edit__distance_8cpp" ],
     [ "palindrome_partitioning.cpp", "d5/d90/palindrome__partitioning_8cpp.html", "d5/d90/palindrome__partitioning_8cpp" ],
     [ "shortest_common_supersequence.cpp", "d7/d65/shortest__common__supersequence_8cpp.html", "d7/d65/shortest__common__supersequence_8cpp" ],
+    [ "subset_sum.cpp", "d6/d80/dynamic__programming_2subset__sum_8cpp.html", "d6/d80/dynamic__programming_2subset__sum_8cpp" ],
     [ "word_break.cpp", "d3/d84/word__break_8cpp.html", "d3/d84/word__break_8cpp" ]
 ];
