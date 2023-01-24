@@ -85,7 +85,7 @@ class queue {
     }
 
     /**
-     * @brief removes all of the elements of the queue
+     * @brief removes all elements from the queue
      */
     void clear() {
         queueFront = nullptr;
