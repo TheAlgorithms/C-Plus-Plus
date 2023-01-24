@@ -1,0 +1,6 @@
+<map id="greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas" name="greedy_algorithms::boruvkas_minimum_spanning_tree::boruvkas">
+<area shape="rect" id="node1" title="the implementation of boruvka&#39;s algorithm" alt="" coords="5,93,200,148"/>
+<area shape="rect" id="node2" href="$d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html#a95de0f5e70e83164dbd1b4c515565e84" title="Recursively returns the vertex&#39;s parent at the root of the tree." alt="" coords="248,29,443,84"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="291,108,399,133"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="287,157,403,183"/>
+</map>
