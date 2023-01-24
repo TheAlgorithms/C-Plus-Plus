@@ -20,6 +20,7 @@
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
+  * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
 
 ## Ciphers
   * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/a1z26_cipher.cpp)
@@ -66,7 +67,7 @@
   * [Reverse A Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/reverse_a_linked_list.cpp)
   * [Skip List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/skip_list.cpp)
   * [Sparse Table](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/sparse_table.cpp)
-  * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack.h)
+  * [Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack.hpp)
   * [Stack Using Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_array.cpp)
   * [Stack Using Linked List](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_linked_list.cpp)
   * [Stack Using Queue](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/stack_using_queue.cpp)
