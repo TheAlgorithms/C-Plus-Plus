@@ -1,0 +1,12 @@
+<map id="divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication" name="divide_and_conquer::strassens_multiplication::Matrix::strassens_multiplication">
+<area shape="rect" id="node1" title="Strassens method of multiplying two matrices References: https://en.wikipedia.org/wiki/Strassen_algor..." alt="" coords="5,187,220,242"/>
+<area shape="rect" id="node2" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ab6534125643a02c114bd4cddba9bc17f" title="Horizontally stack the matrix (one after the other)" alt="" coords="277,17,447,71"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="728,187,844,213"/>
+<area shape="rect" id="node5" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a5d8eb669b37a27224376b08515b4ee50" title="Naive multiplication performed on this." alt="" coords="268,147,456,202"/>
+<area shape="rect" id="node6" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#ae4e183ec8eab778cb243e4ae0b22a0f1" title="Get the matrix shape." alt="" coords="507,263,677,318"/>
+<area shape="rect" id="node7" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#a1fcb7db9bdeabd874712ec4f00483d17" title="Creates a new matrix and returns a part of it." alt="" coords="277,226,447,281"/>
+<area shape="rect" id="node8" href="$dc/d13/classdivide__and__conquer_1_1strassens__multiplication_1_1_matrix.html#af12ceffdc07cc87eca8a4a8ac87d60fe" title="Horizontally stack the matrix (current matrix above the other)" alt="" coords="277,357,447,411"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="515,46,669,71"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="532,394,652,419"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="504,443,680,469"/>
+</map>

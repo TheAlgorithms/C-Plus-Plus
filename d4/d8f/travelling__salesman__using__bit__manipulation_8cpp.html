@@ -109,8 +109,8 @@ $(document).ready(function(){initNavTree('d4/d8f/travelling__salesman__using__bi
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for travelling_salesman_using_bit_manipulation.cpp:</div>
 <div class="dyncontent">
@@ -164,11 +164,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>           {</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="atravelling__salesman__using__bit__manipulation_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> travelling_salesman_using_bit_manipulation.cpp:84</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  138</span>           {</div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+<div class="ttc" id="atravelling__salesman__using__bit__manipulation_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> travelling_salesman_using_bit_manipulation.cpp:99</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -203,36 +203,44 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                   {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// 1st test-case</span></div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dist = {</div>
-<div class="line"><span class="lineno">   87</span>        {0, 20, 42, 35}, {20, 0, 30, 34}, {42, 30, 0, 12}, {35, 34, 12, 0}</div>
-<div class="line"><span class="lineno">   88</span>    };</div>
-<div class="line"><span class="lineno">   89</span>    uint32_t V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(1 &lt;&lt; V, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
-<div class="line"><span class="lineno">   91</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::travelling_salesman_using_bit_manipulation(dist, 1, 0, V, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>) == 97);</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test-case: passed!&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="comment">// 2nd test-case</span></div>
-<div class="line"><span class="lineno">   95</span>    dist = {{0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};</div>
-<div class="line"><span class="lineno">   96</span>    V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dp1(1 &lt;&lt; V, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
-<div class="line"><span class="lineno">   98</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::travelling_salesman_using_bit_manipulation(dist, 1, 0, V, dp1) == 75);</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test-case: passed!&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// 3rd test-case</span></div>
-<div class="line"><span class="lineno">  101</span>    dist = {</div>
-<div class="line"><span class="lineno">  102</span>        {0, 10, 15, 20}, {10, 0, 35, 25}, {15, 35, 0, 30}, {20, 25, 30, 0}</div>
-<div class="line"><span class="lineno">  103</span>    };</div>
-<div class="line"><span class="lineno">  104</span>    V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dp2(1 &lt;&lt; V, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
-<div class="line"><span class="lineno">  106</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::travelling_salesman_using_bit_manipulation(dist, 1, 0, V, dp2) == 80);</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test-case: passed!&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>                   {</div>
+<div class="line"><span class="lineno">  100</span>    <span class="comment">// 1st test-case</span></div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dist = {</div>
+<div class="line"><span class="lineno">  102</span>        {0, 20, 42, 35}, {20, 0, 30, 34}, {42, 30, 0, 12}, {35, 34, 12, 0}};</div>
+<div class="line"><span class="lineno">  103</span>    uint32_t V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(1 &lt;&lt; V, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
+<div class="line"><span class="lineno">  105</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::</div>
+<div class="line"><span class="lineno">  106</span>               <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">travelling_salesman_using_bit_manipulation</a>(dist, 1, 0, V, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>) ==</div>
+<div class="line"><span class="lineno">  107</span>           97);</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;1st test-case: passed!&quot;</span></div>
+<div class="line"><span class="lineno">  109</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    <span class="comment">// 2nd test-case</span></div>
+<div class="line"><span class="lineno">  112</span>    dist = {{0, 5, 10, 15}, {5, 0, 20, 30}, {10, 20, 0, 35}, {15, 30, 35, 0}};</div>
+<div class="line"><span class="lineno">  113</span>    V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dp1(1 &lt;&lt; V,</div>
+<div class="line"><span class="lineno">  115</span>                                           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
+<div class="line"><span class="lineno">  116</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::</div>
+<div class="line"><span class="lineno">  117</span>               <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">travelling_salesman_using_bit_manipulation</a>(dist, 1, 0, V, dp1) ==</div>
+<div class="line"><span class="lineno">  118</span>           75);</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;2nd test-case: passed!&quot;</span></div>
+<div class="line"><span class="lineno">  120</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// 3rd test-case</span></div>
+<div class="line"><span class="lineno">  122</span>    dist = {{0, 10, 15, 20}, {10, 0, 35, 25}, {15, 35, 0, 30}, {20, 25, 30, 0}};</div>
+<div class="line"><span class="lineno">  123</span>    V = dist.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint32_t&gt;</a>&gt; dp2(1 &lt;&lt; V,</div>
+<div class="line"><span class="lineno">  125</span>                                           <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint32_t&gt;</a>(V, -1));</div>
+<div class="line"><span class="lineno">  126</span>    assert(bit_manipulation::travelling_salesman_using_bit_manipulation::</div>
+<div class="line"><span class="lineno">  127</span>               <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">travelling_salesman_using_bit_manipulation</a>(dist, 1, 0, V, dp2) ==</div>
+<div class="line"><span class="lineno">  128</span>           80);</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;3rd test-case: passed!&quot;</span></div>
+<div class="line"><span class="lineno">  131</span>              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition:</b> partition_problem.cpp:39</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
+<div class="ttc" id="atravelling__salesman__using__bit__manipulation_8cpp_html_ad08f082be02c3437c2fe89cb035fcee1"><div class="ttname"><a href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">bit_manipulation::travelling_salesman_using_bit_manipulation::travelling_salesman_using_bit_manipulation</a></div><div class="ttdeci">std::uint64_t travelling_salesman_using_bit_manipulation(std::vector&lt; std::vector&lt; uint32_t &gt; &gt; dist, std::uint64_t setOfCities, std::uint64_t city, std::uint64_t n, std::vector&lt; std::vector&lt; uint32_t &gt; &gt; &amp;dp)</div><div class="ttdoc">The function implements travellingSalesman using bitmanipulation.</div><div class="ttdef"><b>Definition:</b> travelling_salesman_using_bit_manipulation.cpp:52</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -299,31 +307,36 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>minimum cost of traversing whole nodes/cities from starting point back to starting point </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span>    <span class="comment">//base case;</span></div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (setOfCities == (1 &lt;&lt; n) - 1) <span class="comment">// we have covered all the cities</span></div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> dist[city][0]; <span class="comment">//return the cost from the current city to the original city.</span></div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city] != -1)</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city];</div>
-<div class="line"><span class="lineno">   62</span>    <span class="comment">//otherwise try all possible options</span></div>
-<div class="line"><span class="lineno">   63</span>    uint64_t ans = 2147483647 ;</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> choice = 0; choice &lt; n; choice++) {</div>
-<div class="line"><span class="lineno">   65</span>        <span class="comment">//check if the city is visited or not.</span></div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> ((setOfCities &amp; (1 &lt;&lt; choice)) == 0 ) { <span class="comment">// this means that this perticular city is not visited.</span></div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> subProb = dist[city][choice] + <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">travelling_salesman_using_bit_manipulation</a>(dist, setOfCities | (1 &lt;&lt; choice), choice, n, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
-<div class="line"><span class="lineno">   68</span>            <span class="comment">// Here we are doing a recursive call to tsp with the updated set of city/node</span></div>
-<div class="line"><span class="lineno">   69</span>            <span class="comment">// and choice which tells that where we are currently.</span></div>
-<div class="line"><span class="lineno">   70</span>            ans = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(ans, subProb);</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span> </div>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// base case;</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (setOfCities == (1 &lt;&lt; n) - 1) {  <span class="comment">// we have covered all the cities</span></div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> dist[city][0];  <span class="comment">// return the cost from the current city to the</span></div>
+<div class="line"><span class="lineno">   68</span>                               <span class="comment">// original city.</span></div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city] != -1) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city];</div>
 <div class="line"><span class="lineno">   73</span>    }</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city] = ans;</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> ans;</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// otherwise try all possible options</span></div>
+<div class="line"><span class="lineno">   75</span>    uint64_t ans = 2147483647;</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> choice = 0; choice &lt; n; choice++) {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// check if the city is visited or not.</span></div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> ((setOfCities &amp; (1 &lt;&lt; choice)) ==</div>
+<div class="line"><span class="lineno">   79</span>            0) {  <span class="comment">// this means that this perticular city is not visited.</span></div>
+<div class="line"><span class="lineno">   80</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> subProb =</div>
+<div class="line"><span class="lineno">   81</span>                dist[city][choice] +</div>
+<div class="line"><span class="lineno">   82</span>                <a class="code hl_function" href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">travelling_salesman_using_bit_manipulation</a>(</div>
+<div class="line"><span class="lineno">   83</span>                    dist, setOfCities | (1 &lt;&lt; choice), choice, n, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
+<div class="line"><span class="lineno">   84</span>            <span class="comment">// Here we are doing a recursive call to tsp with the updated set of</span></div>
+<div class="line"><span class="lineno">   85</span>            <span class="comment">// city/node and choice which tells that where we are currently.</span></div>
+<div class="line"><span class="lineno">   86</span>            ans = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(ans, subProb);</div>
+<div class="line"><span class="lineno">   87</span>        }</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[setOfCities][city] = ans;</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">   91</span>}</div>
 <div class="ttc" id="ainteger_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a></div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="atravelling__salesman__using__bit__manipulation_8cpp_html_ad08f082be02c3437c2fe89cb035fcee1"><div class="ttname"><a href="../../d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ad08f082be02c3437c2fe89cb035fcee1">bit_manipulation::travelling_salesman_using_bit_manipulation::travelling_salesman_using_bit_manipulation</a></div><div class="ttdeci">std::uint64_t travelling_salesman_using_bit_manipulation(std::vector&lt; std::vector&lt; uint32_t &gt; &gt; dist, std::uint64_t setOfCities, std::uint64_t city, std::uint64_t n, std::vector&lt; std::vector&lt; uint32_t &gt; &gt; &amp;dp)</div><div class="ttdoc">The function implements travellingSalesman using bitmanipulation.</div><div class="ttdef"><b>Definition:</b> travelling_salesman_using_bit_manipulation.cpp:48</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

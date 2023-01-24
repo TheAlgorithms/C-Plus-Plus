@@ -12,9 +12,9 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="[Borůvkas Algorithm](https://en.wikipedia.org/wiki/Borůvka&#39;s_algorithm) to find the Minimum Spanning ...">
-<polygon fill="#999999" stroke="#666666" points="199,-85 53,-85 53,-55 199,-55 199,-85"/>
-<text text-anchor="start" x="61" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">greedy_algorithms/boruvkas</text>
-<text text-anchor="middle" x="126" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_minimum_spanning_tree.cpp</text>
+<polygon fill="#999999" stroke="#666666" points="196.5,-85 50.5,-85 50.5,-55 196.5,-55 196.5,-85"/>
+<text text-anchor="start" x="58.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">greedy_algorithms/boruvkas</text>
+<text text-anchor="middle" x="123.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_minimum_spanning_tree.cpp</text>
 </a>
 </g>
 </g>
@@ -22,61 +22,61 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="54,-19 0,-19 0,0 54,0 54,-19"/>
-<text text-anchor="middle" x="27" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="49,-19 0,-19 0,0 49,0 49,-19"/>
+<text text-anchor="middle" x="24.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#63b8ff" d="M101.53,-54.54C86.36,-45.58 66.94,-34.1 51.73,-25.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="53.66,-22.19 43.27,-20.12 50.1,-28.22 53.66,-22.19"/>
+<path fill="none" stroke="#63b8ff" d="M99.03,-54.54C83.86,-45.58 64.44,-34.1 49.23,-25.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="51.16,-22.19 40.77,-20.12 47.6,-28.22 51.16,-22.19"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="116,-19 72,-19 72,0 116,0 116,-19"/>
-<text text-anchor="middle" x="94" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="112,-19 67,-19 67,0 112,0 112,-19"/>
+<text text-anchor="middle" x="89.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">climits</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M118.09,-54.54C113.92,-46.91 108.75,-37.46 104.27,-29.27"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="107.34,-27.6 99.47,-20.5 101.2,-30.96 107.34,-27.6"/>
+<path fill="none" stroke="#63b8ff" d="M115.1,-54.54C110.61,-46.82 105.04,-37.24 100.25,-28.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="103.35,-27.37 95.3,-20.48 97.3,-30.89 103.35,-27.37"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="183.5,-19 134.5,-19 134.5,0 183.5,0 183.5,-19"/>
-<text text-anchor="middle" x="159" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="184.5,-19 130.5,-19 130.5,0 184.5,0 184.5,-19"/>
+<text text-anchor="middle" x="157.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M134.16,-54.54C138.51,-46.82 143.91,-37.24 148.57,-28.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="151.5,-30.92 153.36,-20.49 145.4,-27.48 151.5,-30.92"/>
+<path fill="none" stroke="#63b8ff" d="M131.9,-54.54C136.39,-46.82 141.96,-37.24 146.75,-28.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="149.7,-30.89 151.7,-20.48 143.65,-27.37 149.7,-30.89"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="246.5,-19 201.5,-19 201.5,0 246.5,0 246.5,-19"/>
-<text text-anchor="middle" x="224" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">climits</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="246.5,-19 202.5,-19 202.5,0 246.5,0 246.5,-19"/>
+<text text-anchor="middle" x="224.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M150.22,-54.54C165.24,-45.58 184.46,-34.1 199.52,-25.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="201.09,-28.25 207.88,-20.12 197.5,-22.24 201.09,-28.25"/>
+<path fill="none" stroke="#63b8ff" d="M148.47,-54.54C163.94,-45.58 183.75,-34.1 199.27,-25.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="201.02,-28.15 207.92,-20.1 197.51,-22.09 201.02,-28.15"/>
 </g>
 </g>
 </svg>

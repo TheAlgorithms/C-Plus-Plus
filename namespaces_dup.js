@@ -150,6 +150,7 @@ var namespaces_dup =
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
     [ "std", "d8/dcc/namespacestd.html", "d8/dcc/namespacestd" ],
     [ "strand", "d8/d1d/namespacestrand.html", null ],
+    [ "strassens_multiplication", "d3/d91/namespacestrassens__multiplication.html", null ],
     [ "string_search", "d9/d03/namespacestring__search.html", [
       [ "brute_force", "d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8", null ],
       [ "check_if_equal", "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd", null ],

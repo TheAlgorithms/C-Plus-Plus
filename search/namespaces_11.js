@@ -18,12 +18,13 @@ var searchData=
   ['statistics_15',['statistics',['../d2/dcf/namespacestatistics.html',1,'']]],
   ['std_16',['std',['../d8/dcc/namespacestd.html',1,'']]],
   ['strand_17',['strand',['../d8/d1d/namespacestrand.html',1,'']]],
-  ['string_5fsearch_18',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
-  ['strings_19',['strings',['../df/dcb/namespacestrings.html',1,'']]],
-  ['subarray_5fsum_20',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
-  ['sublist_5fsearch_21',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
-  ['subset_5fsum_22',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
-  ['subsets_23',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['sudoku_5fsolver_24',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]],
-  ['this_5fthread_25',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
+  ['strassens_5fmultiplication_18',['strassens_multiplication',['../d3/d91/namespacestrassens__multiplication.html',1,'']]],
+  ['string_5fsearch_19',['string_search',['../d9/d03/namespacestring__search.html',1,'']]],
+  ['strings_20',['strings',['../df/dcb/namespacestrings.html',1,'']]],
+  ['subarray_5fsum_21',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
+  ['sublist_5fsearch_22',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
+  ['subset_5fsum_23',['subset_sum',['../dc/d3a/namespacesubset__sum.html',1,'']]],
+  ['subsets_24',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
+  ['sudoku_5fsolver_25',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]],
+  ['this_5fthread_26',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
 ];

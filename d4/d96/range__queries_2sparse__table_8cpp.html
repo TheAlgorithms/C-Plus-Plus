@@ -106,10 +106,10 @@ $(document).ready(function(){initNavTree('d4/d96/range__queries_2sparse__table_8
 
 <p>Implementation of <a href="https://en.wikipedia.org/wiki/Range_minimum_query" target="_blank">Sparse Table</a> data structure.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sparse_table.cpp:</div>
 <div class="dyncontent">
@@ -188,23 +188,23 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>created sparse table data structure </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                                     {</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">int</span> n = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a> &gt; table(20, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>(n+5, 0));</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordtype">int</span> curLen = 0;</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0 ; i &lt;= logs[n] ; i++) {</div>
-<div class="line"><span class="lineno">   59</span>        curLen = 1 &lt;&lt; i;</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0 ; j + curLen &lt; n ; j++) {</div>
-<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span> (curLen == 1) {</div>
-<div class="line"><span class="lineno">   62</span>                table[i][j] = A[j];</div>
-<div class="line"><span class="lineno">   63</span>            }</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   65</span>                table[i][j] = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(table[i-1][j], table[i-1][j + curLen/2]);</div>
-<div class="line"><span class="lineno">   66</span>            }</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> table;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                                                  {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">int</span> n = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;T&gt;</a> &gt; table(20, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a>(n + 5, 0));</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">int</span> curLen = 0;</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= logs[n]; i++) {</div>
+<div class="line"><span class="lineno">   62</span>        curLen = 1 &lt;&lt; i;</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j + curLen &lt; n; j++) {</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">if</span> (curLen == 1) {</div>
+<div class="line"><span class="lineno">   65</span>                table[i][j] = A[j];</div>
+<div class="line"><span class="lineno">   66</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   67</span>                table[i][j] =</div>
+<div class="line"><span class="lineno">   68</span>                    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(table[i - 1][j], table[i - 1][j + curLen / 2]);</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> table;</div>
+<div class="line"><span class="lineno">   73</span>}</div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
@@ -241,15 +241,15 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>corresponding vector of the log table </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                {</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordtype">int</span> n = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> logs(n);</div>
-<div class="line"><span class="lineno">   39</span>    logs[1] = 0;</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2 ; i &lt; n ; i++) {</div>
-<div class="line"><span class="lineno">   41</span>        logs[i] = logs[i/2] + 1;</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> logs;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> n = A.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;T&gt;</a> logs(n);</div>
+<div class="line"><span class="lineno">   41</span>    logs[1] = 0;</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt; n; i++) {</div>
+<div class="line"><span class="lineno">   43</span>        logs[i] = logs[i / 2] + 1;</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> logs;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -308,11 +308,11 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>minimum value for the [beg, end] range for the input array </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>                                                                                                  {</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordtype">int</span> p = logs[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - beg + 1];</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">int</span> pLen = 1 &lt;&lt; p;</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(table[p][beg], table[p][end - pLen + 1]);</div>
-<div class="line"><span class="lineno">   85</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                      {</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordtype">int</span> p = logs[<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/end.html">end</a> - beg + 1];</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> pLen = 1 &lt;&lt; p;</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(table[p][beg], table[p][end - pLen + 1]);</div>
+<div class="line"><span class="lineno">   89</span>}</div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -339,17 +339,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Main function </p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>           {</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> A{1, 2, 0, 3, 9};</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> logs = <a class="code hl_function" href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300">range_queries::sparse_table::computeLogs</a>(A);</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a> &gt;  table = <a class="code hl_function" href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc">range_queries::sparse_table::buildTable</a>(A, logs);</div>
-<div class="line"><span class="lineno">   96</span>    assert(range_queries::sparse_table::getMinimum(0, 0, logs, table) == 1);</div>
-<div class="line"><span class="lineno">   97</span>    assert(range_queries::sparse_table::getMinimum(0, 4, logs, table) == 0);</div>
-<div class="line"><span class="lineno">   98</span>    assert(range_queries::sparse_table::getMinimum(2, 4, logs, table) == 0);</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  100</span>}</div>
-<div class="ttc" id="arange__queries_2sparse__table_8cpp_html_a40810d8c0fe3f8cf432ab128b1ae0300"><div class="ttname"><a href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300">range_queries::sparse_table::computeLogs</a></div><div class="ttdeci">std::vector&lt; T &gt; computeLogs(const std::vector&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:36</div></div>
-<div class="ttc" id="arange__queries_2sparse__table_8cpp_html_a803a2451e87021d14ae06f148383e6bc"><div class="ttname"><a href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc">range_queries::sparse_table::buildTable</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; buildTable(const std::vector&lt; T &gt; &amp;A, const std::vector&lt; T &gt; &amp;logs)</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:54</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>           {</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> A{1, 2, 0, 3, 9};</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> logs = <a class="code hl_function" href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300">range_queries::sparse_table::computeLogs</a>(A);</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a> &gt; table =</div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_function" href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc">range_queries::sparse_table::buildTable</a>(A, logs);</div>
+<div class="line"><span class="lineno">  101</span>    assert(range_queries::sparse_table::getMinimum(0, 0, logs, table) == 1);</div>
+<div class="line"><span class="lineno">  102</span>    assert(range_queries::sparse_table::getMinimum(0, 4, logs, table) == 0);</div>
+<div class="line"><span class="lineno">  103</span>    assert(range_queries::sparse_table::getMinimum(2, 4, logs, table) == 0);</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="arange__queries_2sparse__table_8cpp_html_a40810d8c0fe3f8cf432ab128b1ae0300"><div class="ttname"><a href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a40810d8c0fe3f8cf432ab128b1ae0300">range_queries::sparse_table::computeLogs</a></div><div class="ttdeci">std::vector&lt; T &gt; computeLogs(const std::vector&lt; T &gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:38</div></div>
+<div class="ttc" id="arange__queries_2sparse__table_8cpp_html_a803a2451e87021d14ae06f148383e6bc"><div class="ttname"><a href="../../d4/d96/range__queries_2sparse__table_8cpp.html#a803a2451e87021d14ae06f148383e6bc">range_queries::sparse_table::buildTable</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; buildTable(const std::vector&lt; T &gt; &amp;A, const std::vector&lt; T &gt; &amp;logs)</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:56</div></div>
 </div><!-- fragment -->
 </div>
 </div>

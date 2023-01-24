@@ -12,9 +12,9 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Implementation of Sparse Table data structure.">
-<polygon fill="#999999" stroke="#666666" points="177,-85 67,-85 67,-55 177,-55 177,-85"/>
-<text text-anchor="start" x="75" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries/sparse</text>
-<text text-anchor="middle" x="122" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_table.cpp</text>
+<polygon fill="#999999" stroke="#666666" points="189,-85 79,-85 79,-55 189,-55 189,-85"/>
+<text text-anchor="start" x="87" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries/sparse</text>
+<text text-anchor="middle" x="134" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_table.cpp</text>
 </a>
 </g>
 </g>
@@ -22,61 +22,61 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="44,-19 0,-19 0,0 44,0 44,-19"/>
-<text text-anchor="middle" x="22" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="56,-19 0,-19 0,0 56,0 56,-19"/>
+<text text-anchor="middle" x="28" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">algorithm</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#63b8ff" d="M97.28,-54.54C81.96,-45.58 62.34,-34.1 46.98,-25.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="48.83,-22.14 38.43,-20.11 45.29,-28.18 48.83,-22.14"/>
+<path fill="none" stroke="#63b8ff" d="M107.8,-54.54C91.4,-45.49 70.36,-33.88 54.01,-24.85"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="55.8,-21.85 45.35,-20.08 52.42,-27.97 55.8,-21.85"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="111.5,-19 62.5,-19 62.5,0 111.5,0 111.5,-19"/>
-<text text-anchor="middle" x="87" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="123.5,-19 74.5,-19 74.5,0 123.5,0 123.5,-19"/>
+<text text-anchor="middle" x="99" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">cassert</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M113.35,-54.54C108.73,-46.82 103,-37.24 98.06,-28.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="101.11,-27.26 92.97,-20.47 95.1,-30.85 101.11,-27.26"/>
+<path fill="none" stroke="#63b8ff" d="M125.35,-54.54C120.73,-46.82 115,-37.24 110.06,-28.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="113.11,-27.26 104.97,-20.47 107.1,-30.85 113.11,-27.26"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="184,-19 130,-19 130,0 184,0 184,-19"/>
-<text text-anchor="middle" x="157" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="196,-19 142,-19 142,0 196,0 196,-19"/>
+<text text-anchor="middle" x="169" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">iostream</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M130.65,-54.54C135.27,-46.82 141,-37.24 145.94,-28.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="148.9,-30.85 151.03,-20.47 142.89,-27.26 148.9,-30.85"/>
+<path fill="none" stroke="#63b8ff" d="M142.65,-54.54C147.27,-46.82 153,-37.24 157.94,-28.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="160.9,-30.85 163.03,-20.47 154.89,-27.26 160.9,-30.85"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="258,-19 202,-19 202,0 258,0 258,-19"/>
-<text text-anchor="middle" x="230" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">algorithm</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="258,-19 214,-19 214,0 258,0 258,-19"/>
+<text text-anchor="middle" x="236" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">vector</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M148.7,-54.54C165.56,-45.4 187.24,-33.66 203.98,-24.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="205.21,-27.91 212.34,-20.07 201.88,-21.75 205.21,-27.91"/>
+<path fill="none" stroke="#63b8ff" d="M159.21,-54.54C174.99,-45.49 195.23,-33.88 210.97,-24.85"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="212.33,-28.11 219.26,-20.1 208.85,-22.04 212.33,-28.11"/>
 </g>
 </g>
 </svg>

@@ -108,12 +108,12 @@ $(document).ready(function(){initNavTree('d6/d80/dynamic__programming_2subset__s
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for subset_sum.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d53/dynamic__programming_2subset__sum_8cpp__incl.svg" width="391" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d53/dynamic__programming_2subset__sum_8cpp__incl.svg" width="392" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -161,10 +161,10 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>           {</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_function" href="../../d0/dfe/backtracking_2subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the test</span></div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  125</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>           {</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="../../d0/dfe/backtracking_2subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// execute the test</span></div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  123</span>}</div>
 <div class="ttc" id="abacktracking_2subset__sum_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d0/dfe/backtracking_2subset__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Test implementations.</div><div class="ttdef"><b>Definition:</b> subset_sum.cpp:57</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -208,11 +208,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true/false based on if the target sum subset exists or not. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                        {</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordtype">size_t</span> n = arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::unordered_map&lt;int, bool&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(n);</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum, &amp;<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                                        {</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">size_t</span> n = arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::unordered_map&lt;int, bool&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(n);</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum, &amp;<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 <div class="ttc" id="adynamic__programming_2subset__sum_8cpp_html_a280fcfb2f6fe49a31c4da572e7032607"><div class="ttname"><a href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">dynamic_programming::subset_sum::subset_sum_recursion</a></div><div class="ttdeci">bool subset_sum_recursion(const std::vector&lt; int &gt; &amp;arr, int targetSum, std::vector&lt; std::unordered_map&lt; int, bool &gt; &gt; *dp, int index=0)</div><div class="ttdef"><b>Definition:</b> subset_sum.cpp:43</div></div>
 <div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition:</b> partition_problem.cpp:39</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
@@ -272,24 +272,24 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true/false based on if the target sum subset exists or not. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                   {</div>
-<div class="line"><span class="lineno">   48</span>        </div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span>(targetSum == 0) { <span class="comment">// Found a valid subset with required sum.</span></div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                         {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (targetSum == 0) {  <span class="comment">// Found a valid subset with required sum.</span></div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (index == arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) {  <span class="comment">// End of array</span></div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span>(index == arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>()) { <span class="comment">// End of array</span></div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> ((*<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)[index].count(targetSum)) { <span class="comment">// Answer already present in map</span></div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> (*<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)[index][targetSum];</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span>        </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">bool</span> ans = <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum - arr[index], <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>, index + 1) </div>
-<div class="line"><span class="lineno">   61</span>      || <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>, index + 1);</div>
-<div class="line"><span class="lineno">   62</span>    (*dp)[index][targetSum] = ans; <span class="comment">// Save ans in dp map.</span></div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> ans;</div>
-<div class="line"><span class="lineno">   64</span>}</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> ((*<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)[index].count(targetSum)) {  <span class="comment">// Answer already present in map</span></div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> (*<a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>)[index][targetSum];</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordtype">bool</span> ans =</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum - arr[index], <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>, index + 1) ||</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#a280fcfb2f6fe49a31c4da572e7032607">subset_sum_recursion</a>(arr, targetSum, <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>, index + 1);</div>
+<div class="line"><span class="lineno">   60</span>    (*dp)[index][targetSum] = ans;  <span class="comment">// Save ans in dp map.</span></div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> ans;</div>
+<div class="line"><span class="lineno">   62</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -324,41 +324,41 @@ Here is the call graph for this function:</div>
 
 <p>Test Function. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                   {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// custom input vector</span></div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a>&gt; custom_input_arr(3);</div>
-<div class="line"><span class="lineno">   87</span>    custom_input_arr[0] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> {1, -10, 2, 31, -6};</div>
-<div class="line"><span class="lineno">   88</span>    custom_input_arr[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> {2, 3, 4};</div>
-<div class="line"><span class="lineno">   89</span>    custom_input_arr[2] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> {0, 1, 0, 1, 0};</div>
-<div class="line"><span class="lineno">   90</span>    </div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> custom_input_target_sum(3);</div>
-<div class="line"><span class="lineno">   92</span>    custom_input_target_sum[0] = -14;</div>
-<div class="line"><span class="lineno">   93</span>    custom_input_target_sum[1] = 10;</div>
-<div class="line"><span class="lineno">   94</span>    custom_input_target_sum[2] = 2;</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <span class="comment">// calculated output vector by pal_part Function</span></div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> calculated_output(3);</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><span class="lineno">  100</span>        calculated_output[i] =</div>
-<div class="line"><span class="lineno">  101</span>            <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50">dynamic_programming::subset_sum::subset_sum_problem</a>(</div>
-<div class="line"><span class="lineno">  102</span>                custom_input_arr[i], custom_input_target_sum[i]);</div>
-<div class="line"><span class="lineno">  103</span>    }</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">// expected output vector</span></div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_output{<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">true</span>};</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>    <span class="comment">// Testing implementation via assert function</span></div>
-<div class="line"><span class="lineno">  109</span>    <span class="comment">// It will throw error if any of the expected test fails</span></div>
-<div class="line"><span class="lineno">  110</span>    <span class="comment">// Else it will give nothing</span></div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><span class="lineno">  112</span>        assert(expected_output[i] == calculated_output[i]);</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests passed successfully!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  116</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                   {</div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// custom input vector</span></div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;int&gt;</a>&gt; custom_input_arr(3);</div>
+<div class="line"><span class="lineno">   85</span>    custom_input_arr[0] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>{1, -10, 2, 31, -6};</div>
+<div class="line"><span class="lineno">   86</span>    custom_input_arr[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>{2, 3, 4};</div>
+<div class="line"><span class="lineno">   87</span>    custom_input_arr[2] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>{0, 1, 0, 1, 0};</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> custom_input_target_sum(3);</div>
+<div class="line"><span class="lineno">   90</span>    custom_input_target_sum[0] = -14;</div>
+<div class="line"><span class="lineno">   91</span>    custom_input_target_sum[1] = 10;</div>
+<div class="line"><span class="lineno">   92</span>    custom_input_target_sum[2] = 2;</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// calculated output vector by pal_part Function</span></div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> calculated_output(3);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">   98</span>        calculated_output[i] =</div>
+<div class="line"><span class="lineno">   99</span>            <a class="code hl_function" href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50">dynamic_programming::subset_sum::subset_sum_problem</a>(</div>
+<div class="line"><span class="lineno">  100</span>                custom_input_arr[i], custom_input_target_sum[i]);</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// expected output vector</span></div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a> expected_output{<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">true</span>};</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// Testing implementation via assert function</span></div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// It will throw error if any of the expected test fails</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// Else it will give nothing</span></div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  110</span>        assert(expected_output[i] == calculated_output[i]);</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests passed successfully!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="adynamic__programming_2subset__sum_8cpp_html_ac94e6c0dee11278ac0a5491f1b9a4a50"><div class="ttname"><a href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50">dynamic_programming::subset_sum::subset_sum_problem</a></div><div class="ttdeci">bool subset_sum_problem(const std::vector&lt; int &gt; &amp;arr, const int targetSum)</div><div class="ttdef"><b>Definition:</b> subset_sum.cpp:72</div></div>
+<div class="ttc" id="adynamic__programming_2subset__sum_8cpp_html_ac94e6c0dee11278ac0a5491f1b9a4a50"><div class="ttname"><a href="../../d6/d80/dynamic__programming_2subset__sum_8cpp.html#ac94e6c0dee11278ac0a5491f1b9a4a50">dynamic_programming::subset_sum::subset_sum_problem</a></div><div class="ttdeci">bool subset_sum_problem(const std::vector&lt; int &gt; &amp;arr, const int targetSum)</div><div class="ttdef"><b>Definition:</b> subset_sum.cpp:70</div></div>
 </div><!-- fragment -->
 </div>
 </div>
