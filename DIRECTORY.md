@@ -20,6 +20,7 @@
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
+  * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
 
 ## Ciphers
   * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/a1z26_cipher.cpp)
