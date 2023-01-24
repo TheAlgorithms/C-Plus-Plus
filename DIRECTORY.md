@@ -172,6 +172,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Aliquot Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/aliquot_sum.cpp)
   * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/armstrong_number.cpp)
