@@ -104,7 +104,7 @@ void test() {
     std::string decrypted1 = ciphers::caesar::decrypt(encrypted1, 17);
     assert(text1 == decrypted1);
     std::cout << "Original text : " << text1;
-    std::cout << " , Encrypted text (with shift = 21) : " << encrypted1;
+    std::cout << " , Encrypted text (with shift = 17) : " << encrypted1;
     std::cout << " , Decrypted text : "<< decrypted1 << std::endl;
     // Test 2
     std::string text2 = "HELLOWORLD";
