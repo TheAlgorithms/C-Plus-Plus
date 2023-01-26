@@ -13,9 +13,7 @@
  * implementation are the unique identifiers or stored values of the 
  * queue, whilst the values refer to the comparable that will be used
  * to prioritise different items. 
- * More information can be found [here](https://en.wikipedia.org/wiki/Priority_queue)
- * refer to william fiset's video for a video explanation:
- * https://youtu.be/jND_WJ8r7FE
+ * Refer to [William Fiset's video](https://youtu.be/jND_WJ8r7FE) for a good explanation.
  * @author [ron0studios](https://github.com/ron0studios)
  */
 
