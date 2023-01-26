@@ -4,7 +4,7 @@
 * @details
 * The idea is to modify Kadane’s algorithm to find a minimum contiguous subarray sum and the maximum contiguous subarray sum,
 * then check for the maximum value between the max_value and the value left after subtracting min_value from the total sum.
-* [Geeks For Geeks](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
+* For more information, check [Geeks For Geeks](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/) explanation page.
 */
 
 #include <cassert>     /// for assert
