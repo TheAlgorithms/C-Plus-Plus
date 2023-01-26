@@ -20,6 +20,7 @@
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
+  * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
 
 ## Ciphers
   * [A1Z26 Cipher](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/ciphers/a1z26_cipher.cpp)
@@ -82,6 +83,7 @@
 
 ## Divide And Conquer
   * [Karatsuba Algorithm For Fast Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/divide_and_conquer/karatsuba_algorithm_for_fast_multiplication.cpp)
+  * [Strassen Matrix Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/divide_and_conquer/strassen_matrix_multiplication.cpp)
 
 ## Dynamic Programming
   * [0 1 Knapsack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/0_1_knapsack.cpp)
@@ -110,6 +112,7 @@
   * [Partition Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/partition_problem.cpp)
   * [Searching Of Element In Dynamic Array](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/searching_of_element_in_dynamic_array.cpp)
   * [Shortest Common Supersequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/shortest_common_supersequence.cpp)
+  * [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/subset_sum.cpp)
   * [Tree Height](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/tree_height.cpp)
   * [Word Break](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/word_break.cpp)
 
@@ -146,6 +149,7 @@
   * [Spirograph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graphics/spirograph.cpp)
 
 ## Greedy Algorithms
+  * [Boruvkas Minimum Spanning Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/boruvkas_minimum_spanning_tree.cpp)
   * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/dijkstra.cpp)
   * [Huffman](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/huffman.cpp)
   * [Jumpgame](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/greedy_algorithms/jumpgame.cpp)
@@ -171,6 +175,7 @@
   * [Vector Ops](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/vector_ops.hpp)
 
 ## Math
+  * [Aliquot Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/aliquot_sum.cpp)
   * [Approximate Pi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/approximate_pi.cpp)
   * [Area](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/area.cpp)
   * [Armstrong Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/armstrong_number.cpp)
