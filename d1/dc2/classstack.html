@@ -107,11 +107,14 @@ $(document).ready(function(){initNavTree('d1/dc2/classstack.html','../../'); ini
 </div><!--header-->
 <div class="contents">
 
+<p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>  
+ <a href="../../d1/dc2/classstack.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../df/d47/stack_8hpp_source.html">stack.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for stack&lt; ValueType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/dcb/classstack__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dcb/classstack__coll__graph.svg" width="506" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,8 +148,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab2fb22962a841a45707e70fb6109ddf4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../d5/da1/structnode.html">node</a>&lt; value_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a></td></tr>
-<tr class="separator:ab2fb22962a841a45707e70fb6109ddf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb3dac828e32b4ec014ff4b5d43a6b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt; value_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a></td></tr>
+<tr class="separator:aefb3dac828e32b4ec014ff4b5d43a6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6b2b93ec970296940798ee98a5072e"><td class="memItemLeft" align="right" valign="top"><a id="a0a6b2b93ec970296940798ee98a5072e" name="a0a6b2b93ec970296940798ee98a5072e"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> = 0</td></tr>
 <tr class="memdesc:a0a6b2b93ec970296940798ee98a5072e"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of stack <br /></td></tr>
@@ -154,7 +157,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ValueType&gt;<br />
-class stack&lt; ValueType &gt;</div><p>Definition of the stack class </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+class stack&lt; ValueType &gt;</div><p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a> </p>
+<p>for <a class="el" href="../../db/d8b/struct_node.html">Node</a> Definition of the stack class </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">value_type</td><td>type of data nodes of the linked list in the stack should contain </td></tr>
   </table>
@@ -186,12 +190,12 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Clear stack </p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>                 {</div>
-<div class="line"><span class="lineno">   96</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> = 0;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-<div class="ttc" id="aclassstack_html_a0a6b2b93ec970296940798ee98a5072e"><div class="ttname"><a href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">stack::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdoc">size of stack</div><div class="ttdef"><b>Definition:</b> stack.hpp:103</div></div>
-<div class="ttc" id="aclassstack_html_ab2fb22962a841a45707e70fb6109ddf4"><div class="ttname"><a href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stack::stackTop</a></div><div class="ttdeci">std::shared_ptr&lt; node&lt; value_type &gt; &gt; stackTop</div><div class="ttdef"><b>Definition:</b> stack.hpp:101</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                 {</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> = 0;</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="ttc" id="aclassstack_html_a0a6b2b93ec970296940798ee98a5072e"><div class="ttname"><a href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">stack::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdoc">size of stack</div><div class="ttdef"><b>Definition:</b> stack.hpp:77</div></div>
+<div class="ttc" id="aclassstack_html_aefb3dac828e32b4ec014ff4b5d43a6b8"><div class="ttname"><a href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stack::stackTop</a></div><div class="ttdeci">std::shared_ptr&lt; Node&lt; value_type &gt; &gt; stackTop</div><div class="ttdef"><b>Definition:</b> stack.hpp:75</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -220,18 +224,15 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Show stack </p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                         {</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Top --&gt; &quot;</span>;</div>
-<div class="line"><span class="lineno">   45</span>        traverse(<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>(), [](<span class="keyword">const</span> <a class="code hl_class" href="../../d5/da1/structnode.html">node&lt;value_type&gt;</a>&amp; inNode) {</div>
-<div class="line"><span class="lineno">   46</span>            std::cout &lt;&lt; inNode.data &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><span class="lineno">   47</span>        });</div>
-<div class="line"><span class="lineno">   48</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   49</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Size of stack: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                         {</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Top --&gt; &quot;</span>;</div>
+<div class="line"><span class="lineno">   26</span>        display_all(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>());</div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Size of stack: &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="aget_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">std::shared_ptr::get</a></div><div class="ttdeci">T get(T... args)</div></div>
-<div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition:</b> avltree.cpp:13</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -265,12 +266,12 @@ template&lt;class ValueType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">isEmptyStack</a>()) {</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Stack is empty.&quot;</span>);</div>
-<div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>    }</div>
-<div class="ttc" id="aclassstack_html_a163eb9a6206c874c9bf98d032fca11c5"><div class="ttname"><a href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">stack::isEmptyStack</a></div><div class="ttdeci">bool isEmptyStack() const</div><div class="ttdef"><b>Definition:</b> stack.hpp:70</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">isEmptyStack</a>()) {</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;Stack is empty.&quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="ttc" id="aclassstack_html_a163eb9a6206c874c9bf98d032fca11c5"><div class="ttname"><a href="../../d1/dc2/classstack.html#a163eb9a6206c874c9bf98d032fca11c5">stack::isEmptyStack</a></div><div class="ttdeci">bool isEmptyStack() const</div><div class="ttdef"><b>Definition:</b> stack.hpp:44</div></div>
 <div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -300,7 +301,7 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Determine whether the stack is empty </p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a> == <span class="keyword">nullptr</span>); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> == <span class="keyword">nullptr</span>); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,11 +330,11 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Remove the top element of the stack </p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>               {</div>
-<div class="line"><span class="lineno">   89</span>        ensureNotEmpty();</div>
-<div class="line"><span class="lineno">   90</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a> = <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>-&gt;next;</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>--;</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>               {</div>
+<div class="line"><span class="lineno">   63</span>        ensureNotEmpty();</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> = <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>-&gt;next;</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>--;</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -363,13 +364,13 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Add new item to the stack </p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                      {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;node&lt;value_type&gt;&gt;();</div>
-<div class="line"><span class="lineno">   75</span>        newNode-&gt;data = item;</div>
-<div class="line"><span class="lineno">   76</span>        newNode-&gt;next = <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>;</div>
-<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a> = newNode;</div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>++;</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                      {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&lt;value_type&gt;&gt;();</div>
+<div class="line"><span class="lineno">   49</span>        newNode-&gt;data = item;</div>
+<div class="line"><span class="lineno">   50</span>        newNode-&gt;next = <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>;</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a> = newNode;</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>++;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,10 +399,10 @@ template&lt;class ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Return the top element of the stack </p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>                           {</div>
-<div class="line"><span class="lineno">   83</span>        ensureNotEmpty();</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>-&gt;data;</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                           {</div>
+<div class="line"><span class="lineno">   57</span>        ensureNotEmpty();</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>-&gt;data;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,22 +430,15 @@ template&lt;class ValueType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                                           {</div>
-<div class="line"><span class="lineno">   53</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;value_type&gt;</a> res;</div>
-<div class="line"><span class="lineno">   54</span>        res.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e">size</a>);</div>
-<div class="line"><span class="lineno">   55</span>        traverse(<a class="code hl_variable" href="../../d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>(), [&amp;res](<span class="keyword">const</span> <a class="code hl_class" href="../../d5/da1/structnode.html">node&lt;value_type&gt;</a>&amp; inNode) {</div>
-<div class="line"><span class="lineno">   56</span>            res.push_back(inNode.data);</div>
-<div class="line"><span class="lineno">   57</span>        });</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> res;</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="ttc" id="areserve_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/reserve.html">std::vector::reserve</a></div><div class="ttdeci">T reserve(T... args)</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                           {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> push_all_to_vector(this-&gt;<a class="code hl_variable" href="../../d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8">stackTop</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/get.html">get</a>(), this-&gt;size);</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab2fb22962a841a45707e70fb6109ddf4" name="ab2fb22962a841a45707e70fb6109ddf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2fb22962a841a45707e70fb6109ddf4">&#9670;&#160;</a></span>stackTop</h2>
+<a id="aefb3dac828e32b4ec014ff4b5d43a6b8" name="aefb3dac828e32b4ec014ff4b5d43a6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb3dac828e32b4ec014ff4b5d43a6b8">&#9670;&#160;</a></span>stackTop</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +449,7 @@ template&lt;class ValueType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt;<a class="el" href="../../d5/da1/structnode.html">node</a>&lt;value_type&gt; &gt; <a class="el" href="../../d1/dc2/classstack.html">stack</a>&lt; ValueType &gt;::stackTop</td>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt;<a class="el" href="../../db/d8b/struct_node.html">Node</a>&lt;value_type&gt; &gt; <a class="el" href="../../d1/dc2/classstack.html">stack</a>&lt; ValueType &gt;::stackTop</td>
         </tr>
       </table>
   </td>

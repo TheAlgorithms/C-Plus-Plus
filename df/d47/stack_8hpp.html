@@ -98,22 +98,19 @@ $(document).ready(function(){initNavTree('df/d47/stack_8hpp.html','../../'); ini
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">stack.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>This class specifies the basic operation on a stack as a linked list.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d09/node_8hpp_source.html">node.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for stack.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/deb/stack_8hpp__incl.svg" width="363" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/deb/stack_8hpp__incl.svg" width="270" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -121,61 +118,16 @@ Include dependency graph for stack.hpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da1/structnode.html">node&lt; Kind &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>  <a href="../../d5/da1/structnode.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/classstack.html">stack&lt; ValueType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>  <a href="../../d1/dc2/classstack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a990a87f74d83899124b2254bef8d0e98"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../db/d8b/struct_node.html">Node</a> , typename Action &gt; </td></tr>
-<tr class="memitem:a990a87f74d83899124b2254bef8d0e98"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d47/stack_8hpp.html#a990a87f74d83899124b2254bef8d0e98">traverse</a> (const <a class="el" href="../../db/d8b/struct_node.html">Node</a> *const inNode, const Action &amp;action)</td></tr>
-<tr class="separator:a990a87f74d83899124b2254bef8d0e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class specifies the basic operation on a stack as a linked list. </p>
 <dl class="section author"><dt>Author</dt><dd>danghai </dd>
 <dd>
 <a href="https://github.com/vil02" target="_blank">Piotr Idzik</a> </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a990a87f74d83899124b2254bef8d0e98" name="a990a87f74d83899124b2254bef8d0e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a990a87f74d83899124b2254bef8d0e98">&#9670;&#160;</a></span>traverse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="../../db/d8b/struct_node.html">Node</a> , typename Action &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void traverse </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/d8b/struct_node.html">Node</a> *const&#160;</td>
-          <td class="paramname"><em>inNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Action &amp;&#160;</td>
-          <td class="paramname"><em>action</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                                              {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (inNode) {</div>
-<div class="line"><span class="lineno">   28</span>        action(*inNode);</div>
-<div class="line"><span class="lineno">   29</span>        traverse(inNode-&gt;next.get(), action);</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

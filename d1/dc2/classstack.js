@@ -7,5 +7,5 @@ var classstack =
     [ "push", "d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d", null ],
     [ "top", "d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709", null ],
     [ "size", "d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e", null ],
-    [ "stackTop", "d1/dc2/classstack.html#ab2fb22962a841a45707e70fb6109ddf4", null ]
+    [ "stackTop", "d1/dc2/classstack.html#aefb3dac828e32b4ec014ff4b5d43a6b8", null ]
 ];

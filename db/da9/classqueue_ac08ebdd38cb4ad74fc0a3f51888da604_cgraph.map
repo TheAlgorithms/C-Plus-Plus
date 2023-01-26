@@ -1,0 +1,4 @@
+<map id="queue::ensureNotEmpty" name="queue::ensureNotEmpty">
+<area shape="rect" id="node1" title="throws an exception if queue is empty" alt="" coords="5,5,168,31"/>
+<area shape="rect" id="node2" href="$db/da9/classqueue.html#a4bc52ad6ed6b0cc33ad05f87f05f8bec" title="checks if the queue has no elements" alt="" coords="216,5,367,31"/>
+</map>

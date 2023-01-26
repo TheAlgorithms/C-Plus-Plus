@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queuefront_0',['queueFront',['../db/da9/classqueue.html#ac16ccadebb765e1ddbe415cdce1a17a5',1,'queue']]],
-  ['queuerear_1',['queueRear',['../db/da9/classqueue.html#ae2a7a36270f5d15218a180fa59e5b3a5',1,'queue']]]
+  ['queuefront_0',['queueFront',['../db/da9/classqueue.html#af6780e9b43326f557da405b65f7ad094',1,'queue']]],
+  ['queuerear_1',['queueRear',['../db/da9/classqueue.html#a7611df63ebefae613d311039d7305143',1,'queue']]]
 ];

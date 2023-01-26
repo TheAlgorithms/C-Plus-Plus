@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html" target="_top" xlink:title="A Node struct that represents a single node in a Binary Tree.">
+<g id="a_node1"><a xlink:href="d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html" target="_top" xlink:title="Class defining the structure of trie node and containing the methods to perform operations on them.">
 <polygon fill="white" stroke="#666666" points="145,-30 0,-30 0,0 145,0 145,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">operations_on_datastructures</text>
-<text text-anchor="middle" x="72.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::reverse_binary_tree::Node</text>
+<text text-anchor="middle" x="72.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::trie_operations::Tnode</text>
 </a>
 </g>
 </g>

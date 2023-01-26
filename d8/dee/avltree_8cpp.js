@@ -1,6 +1,6 @@
 var avltree_8cpp =
 [
-    [ "node< Kind >", "d5/da1/structnode.html", "d5/da1/structnode" ],
+    [ "node", "d5/da1/structnode.html", null ],
     [ "createNode", "d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6", null ],
     [ "deleteNode", "d8/dee/avltree_8cpp.html#a9977e004a42fade067836b295a0aa7c1", null ],
     [ "getBalance", "d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546", null ],

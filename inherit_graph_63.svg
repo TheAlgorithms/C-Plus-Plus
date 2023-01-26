@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="d5/da1/structnode.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="db/d8b/struct_node.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="103,-19 0,-19 0,0 103,0 103,-19"/>
-<text text-anchor="middle" x="51.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">node&lt; value_type &gt;</text>
+<text text-anchor="middle" x="51.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Node&lt; ValueType &gt;</text>
 </a>
 </g>
 </g>

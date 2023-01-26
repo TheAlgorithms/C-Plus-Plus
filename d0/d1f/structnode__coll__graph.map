@@ -1,6 +1,3 @@
-<map id="node&lt; Kind &gt;" name="node&lt; Kind &gt;">
-<area shape="rect" id="node1" title="for std::vector" alt="" coords="5,493,105,519"/>
-<area shape="rect" id="node2" href="$d5/da1/structnode.html" title="for std::vector" alt="" coords="89,37,189,62"/>
-<area shape="rect" id="node4" href="$d5/da1/structnode.html" title=" " alt="" coords="72,229,207,255"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="83,391,233,431"/>
+<map id="node" name="node">
+<area shape="rect" id="node1" title=" " alt="" coords="5,37,56,62"/>
 </map>
