@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief This is an implementation of an min indexed priority queue,
+ * @brief [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue) implementation,
  * which, unlike a regular priority queue, has key value pairs, which 
  * can be looked up in O(1), just like a hashmap. lower priority numbers
  * refer to higher priority. 
