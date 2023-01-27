@@ -18,16 +18,18 @@
  * Space reduction :
  * for i the fibonacci store only i-1 th and i-2 th state.
  */
-#include <cassert>  /// for assert
-#include <iostream>
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms
  */
-using namespace std;
 int fib(int n) {
     if (n < 0) {
         return -1;
+    }
+    if (n == 0) {
+        return 0;
     }
     int res[3];
     res[0] = 0;
@@ -39,13 +41,23 @@ int fib(int n) {
     }
     return res[1];
 }
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 static void test() {
     assert(fib(-2) == -1);
     assert(fib(0) == 0);
     assert(fib(1) == 1);
     assert(fib(17) == 1597);
 }
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main(int argc, char const *argv[]) {
-    test();
+    test();  // run self-test implementations
     return 0;
 }
