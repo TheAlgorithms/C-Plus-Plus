@@ -64,9 +64,8 @@ node *minValue(node *root) {
 
 /** Balanced Insertion */
 node *insert(node *root, int item) {
-    node *nn = createNode(item);
     if (root == NULL)
-        return nn;
+        return createNode(item);
     if (item < root->data)
         root->left = insert(root->left, item);
     else
@@ -115,6 +114,15 @@ node *deleteNode(node *root, int key) {
     return root;
 }
 
+/** Calls delete on every node */
+void deleteAllNodes(const node *const root) {
+    if (root) {
+        deleteAllNodes(root->left);
+        deleteAllNodes(root->right);
+        delete root;
+    }
+}
+
 /** LevelOrder (Breadth First Search) */
 void levelOrder(node *root) {
     std::queue<node *> q;
@@ -144,5 +152,6 @@ int main() {
     root = deleteNode(root, 4);  // Deletin key with value 4
     std::cout << "\nLevelOrder: ";
     levelOrder(root);
+    deleteAllNodes(root);
     return 0;
 }
