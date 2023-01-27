@@ -76,6 +76,9 @@ static void test() {
     assert(finding_number_of_digits_in_a_number(100000) == 6);
     assert(finding_number_of_digits_in_a_number(13) == 2);
     assert(finding_number_of_digits_in_a_number(564) == 3);
+}
+
+static void test_count_digits() {
     assert(count_digits(5492) == 4);
     assert(count_digits(-0) == 0);
     assert(count_digits(10000) == 5);
@@ -83,15 +86,15 @@ static void test() {
     assert(count_digits(100000) == 6);
     assert(count_digits(13) == 2);
     assert(count_digits(564) == 3);
-
-    std::cout << "All tests have successfully passed!\n";
 }
-
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-test implementations
+    // run self-test implementations
+    test();  
+    test_count_digits();
+    std::cout << "All tests have successfully passed!\n";
     return 0;
 }
