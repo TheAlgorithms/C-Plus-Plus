@@ -19,6 +19,7 @@ using node = struct node {
 
 /**
  * @brief creates and returns a new node
+ * @param[in] data value stored in the node
  * @return newly created node
  */
 node *createNode(int data) {
@@ -31,6 +32,7 @@ node *createNode(int data) {
 }
 
 /**
+ * @param[in] root the root of the tree
  * @return height of tree
  */
 int height(node *root) {
@@ -41,11 +43,13 @@ int height(node *root) {
 }
 
 /**
+ * @param[in] root of the tree
  * @return difference between height of left and right subtree
  */
 int getBalance(node *root) { return height(root->left) - height(root->right); }
 
 /**
+ * @param root of the tree to be rotated
  * @return node after right rotation
  */
 node *rightRotate(node *root) {
@@ -57,6 +61,7 @@ node *rightRotate(node *root) {
 }
 
 /**
+ * @param root of the tree to be rotated
  * @return node after left rotation
  */
 node *leftRotate(node *root) {
@@ -68,6 +73,7 @@ node *leftRotate(node *root) {
 }
 
 /**
+ * @param root of the tree
  * @returns node with minimum value in the tree
  */
 node *minValue(node *root) {
@@ -79,6 +85,8 @@ node *minValue(node *root) {
 
 /**
  * @bried inserts a new element into AVL tree
+ * @param root of the tree
+ * @param[in] item the element to be insterted into the tree
  * @return root of the updated tree
  */
 node *insert(node *root, int item) {
@@ -107,6 +115,8 @@ node *insert(node *root, int item) {
 
 /**
  * @brief removed a given element from AVL tree
+ * @param root of the tree
+ * @param[in] key the element to be deleted from the tree
  * @return root of the updated tree
  */
 node *deleteNode(node *root, int key) {
@@ -142,6 +152,7 @@ node *deleteNode(node *root, int key) {
 
 /**
  * @brief calls delete on every node
+ * @param root of the tree
  */
 void deleteAllNodes(const node *const root) {
     if (root) {
@@ -153,6 +164,7 @@ void deleteAllNodes(const node *const root) {
 
 /**
  * @brief prints given tree in the LevelOrder
+ * @param root of the tree
  */
 void levelOrder(node *root) {
     std::queue<node *> q;
