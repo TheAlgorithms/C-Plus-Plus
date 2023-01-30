@@ -17,7 +17,10 @@ using node = struct node {
     struct node *right;
 };
 
-/** Create and return a new Node */
+/**
+ * @brief creates and returns a new node
+ * @return newly created node
+ */
 node *createNode(int data) {
     node *nn = new node();
     nn->data = data;
@@ -27,7 +30,9 @@ node *createNode(int data) {
     return nn;
 }
 
-/** Returns height of tree */
+/**
+ * @return height of tree
+ */
 int height(node *root) {
     if (root == nullptr) {
         return 0;
@@ -35,10 +40,14 @@ int height(node *root) {
     return 1 + std::max(height(root->left), height(root->right));
 }
 
-/** Returns difference between height of left and right subtree */
+/**
+ * @return difference between height of left and right subtree
+ */
 int getBalance(node *root) { return height(root->left) - height(root->right); }
 
-/** Returns Node after Right Rotation */
+/**
+ * @return node after right rotation
+ */
 node *rightRotate(node *root) {
     node *t = root->left;
     node *u = t->right;
@@ -47,7 +56,9 @@ node *rightRotate(node *root) {
     return t;
 }
 
-/** Returns Node after Left Rotation */
+/**
+ * @return node after left rotation
+ */
 node *leftRotate(node *root) {
     node *t = root->right;
     node *u = t->left;
@@ -56,7 +67,9 @@ node *leftRotate(node *root) {
     return t;
 }
 
-/** Returns node with minimum value in the tree */
+/**
+ * @returns node with minimum value in the tree
+ */
 node *minValue(node *root) {
     if (root->left == nullptr) {
         return root;
@@ -64,7 +77,10 @@ node *minValue(node *root) {
     return minValue(root->left);
 }
 
-/** Balanced Insertion */
+/**
+ * @bried inserts a new element into AVL tree
+ * @return root of the updated tree
+ */
 node *insert(node *root, int item) {
     if (root == nullptr) {
         return createNode(item);
@@ -89,7 +105,10 @@ node *insert(node *root, int item) {
     return root;
 }
 
-/** Balanced Deletion */
+/**
+ * @brief removed a given element from AVL tree
+ * @return root of the updated tree
+ */
 node *deleteNode(node *root, int key) {
     if (root == nullptr) {
         return root;
@@ -121,7 +140,9 @@ node *deleteNode(node *root, int key) {
     return root;
 }
 
-/** Calls delete on every node */
+/**
+ * @brief calls delete on every node
+ */
 void deleteAllNodes(const node *const root) {
     if (root) {
         deleteAllNodes(root->left);
@@ -130,7 +151,9 @@ void deleteAllNodes(const node *const root) {
     }
 }
 
-/** LevelOrder (Breadth First Search) */
+/**
+ * @brief prints given tree in the LevelOrder
+ */
 void levelOrder(node *root) {
     std::queue<node *> q;
     q.push(root);
@@ -147,7 +170,6 @@ void levelOrder(node *root) {
     }
 }
 
-/** Main function */
 int main() {
     // Testing AVL Tree
     node *root = nullptr;
