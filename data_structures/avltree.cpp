@@ -84,7 +84,7 @@ node *minValue(node *root) {
 }
 
 /**
- * @bried inserts a new element into AVL tree
+ * @brief inserts a new element into AVL tree
  * @param root of the tree
  * @param[in] item the element to be insterted into the tree
  * @return root of the updated tree
@@ -114,7 +114,7 @@ node *insert(node *root, int item) {
 }
 
 /**
- * @brief removed a given element from AVL tree
+ * @brief removes a given element from AVL tree
  * @param root of the tree
  * @param[in] key the element to be deleted from the tree
  * @return root of the updated tree
