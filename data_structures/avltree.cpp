@@ -116,29 +116,23 @@ node *insert(node *root, int item) {
 /**
  * @brief removes a given element from AVL tree
  * @param root of the tree
- * @param[in] key the element to be deleted from the tree
+ * @param[in] element the element to be deleted from the tree
  * @return root of the updated tree
  */
-node *deleteNode(node *root, int key) {
+node *deleteNode(node *root, int element) {
     if (root == nullptr) {
         return root;
     }
-    if (key < root->data) {
-        root->left = deleteNode(root->left, key);
-    } else if (key > root->data) {
-        root->right = deleteNode(root->right, key);
+    if (element < root->data) {
+        root->left = deleteNode(root->left, element);
+    } else if (element > root->data) {
+        root->right = deleteNode(root->right, element);
 
     } else {
         // Node to be deleted is leaf node or have only one Child
-        if (!root->right) {
-            node *temp = root->left;
-            delete (root);
-            root = nullptr;
-            return temp;
-        } else if (!root->left) {
-            node *temp = root->right;
-            delete (root);
-            root = nullptr;
+        if (!root->right || !root->left) {
+            node *temp = !root->right ? root->left : root->right;
+            delete root;
             return temp;
         }
         // Node to be deleted have both left and right subtrees
