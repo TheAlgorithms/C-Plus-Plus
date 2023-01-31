@@ -176,6 +176,10 @@ void levelOrder(node *root) {
     }
 }
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // Testing AVL Tree
     node *root = nullptr;
