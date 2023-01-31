@@ -53,6 +53,7 @@ var namespaces_dup =
     [ "is_graph_bipartite", "de/d83/namespaceis__graph__bipartite.html", null ],
     [ "iterative_tree_traversals", "dd/d73/namespaceiterative__tree__traversals.html", null ],
     [ "jarvis", "d5/da7/namespacejarvis.html", null ],
+    [ "k_nearest_neighbors", "d7/d4c/namespacek__nearest__neighbors.html", null ],
     [ "kadane", "d6/d74/namespacekadane.html", null ],
     [ "karatsuba_algorithm", "de/d41/namespacekaratsuba__algorithm.html", null ],
     [ "Knapsack", "d7/daf/namespace_knapsack.html", null ],

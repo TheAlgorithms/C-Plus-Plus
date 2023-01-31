@@ -21,11 +21,12 @@ var searchData=
   ['vector_3c_20std_3a_3asize_5ft_20_3e_18',['vector&lt; std::size_t &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
   ['vector_3c_20std_3a_3atuple_3c_20int_2c_20int_2c_20int_20_3e_20_3e_19',['vector&lt; std::tuple&lt; int, int, int &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
   ['vector_3c_20std_3a_3avalarray_3c_20double_20_3e_20_3e_20',['vector&lt; std::valarray&lt; double &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20std_3a_3avector_3c_20int_20_3e_20_3e_21',['vector&lt; std::vector&lt; int &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20std_3a_3avector_3c_20t_20_3e_20_3e_22',['vector&lt; std::vector&lt; T &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20tuple_3c_20s_2c_20t_2c_20e_2c_20double_2c_20double_2c_20double_20_3e_20_3e_23',['vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20uint64_5ft_20_3e_24',['vector&lt; uint64_t &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20unsigned_20char_20_3e_25',['vector&lt; unsigned char &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20unsigned_20int_20_3e_26',['vector&lt; unsigned int &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
-  ['vector_3c_20x_20_3e_27',['vector&lt; X &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]]
+  ['vector_3c_20std_3a_3avector_3c_20double_20_3e_20_3e_21',['vector&lt; std::vector&lt; double &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20std_3a_3avector_3c_20int_20_3e_20_3e_22',['vector&lt; std::vector&lt; int &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20std_3a_3avector_3c_20t_20_3e_20_3e_23',['vector&lt; std::vector&lt; T &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20tuple_3c_20s_2c_20t_2c_20e_2c_20double_2c_20double_2c_20double_20_3e_20_3e_24',['vector&lt; tuple&lt; S, T, E, double, double, double &gt; &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20uint64_5ft_20_3e_25',['vector&lt; uint64_t &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20unsigned_20char_20_3e_26',['vector&lt; unsigned char &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20unsigned_20int_20_3e_27',['vector&lt; unsigned int &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]],
+  ['vector_3c_20x_20_3e_28',['vector&lt; X &gt;',['http://en.cppreference.com/w/cpp/container/vector.html',0,'std']]]
 ];

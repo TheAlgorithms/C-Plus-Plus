@@ -71,6 +71,9 @@ var annotated_dup =
         [ "AyStarSearch", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search.html", "da/d02/classmachine__learning_1_1aystar__search_1_1_ay_star_search" ],
         [ "EightPuzzle", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html", "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle" ]
       ] ],
+      [ "k_nearest_neighbors", null, [
+        [ "Knn", "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html", "da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn" ]
+      ] ],
       [ "neural_network", null, [
         [ "layers", null, [
           [ "DenseLayer", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html", "dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer" ]
@@ -156,8 +159,8 @@ var annotated_dup =
     [ "binary_search_tree", "d9/dde/classbinary__search__tree.html", "d9/dde/classbinary__search__tree" ],
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
-    [ "Compare", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
     [ "compare", "d1/db3/structcompare.html", null ],
+    [ "Compare", "de/d4a/class_compare.html", "de/d4a/class_compare" ],
     [ "Complex", "da/d5a/class_complex.html", "da/d5a/class_complex" ],
     [ "CycleCheck", "d3/dbb/class_cycle_check.html", "d3/dbb/class_cycle_check" ],
     [ "double_linked_list", "d9/dee/classdouble__linked__list.html", null ],
@@ -176,8 +179,8 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
-    [ "Node", "db/d8b/struct_node.html", null ],
     [ "node", "d5/da1/structnode.html", null ],
+    [ "Node", "db/d8b/struct_node.html", null ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],

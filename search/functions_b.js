@@ -6,8 +6,9 @@ var searchData=
   ['key_5feq_3',['key_eq',['http://en.cppreference.com/w/cpp/container/unordered_map/key_eq.html',0,'std::unordered_map::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/key_eq.html',0,'std::unordered_multimap::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/key_eq.html',0,'std::unordered_multiset::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_set/key_eq.html',0,'std::unordered_set::key_eq()']]],
   ['kill_5fdependency_4',['kill_dependency',['http://en.cppreference.com/w/cpp/atomic/kill_dependency.html',0,'std']]],
   ['kmp_5',['kmp',['../d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93',1,'string_search']]],
-  ['knuth_5fb_6',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',0,'std::knuth_b']]],
-  ['kohonen_5fsom_7',['kohonen_som',['../d8/d77/namespacemachine__learning.html#ac43d294e21a0c4fa33c53757df054576',1,'machine_learning']]],
-  ['kohonen_5fsom_5ftracer_8',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#a042f435bca0839e721fc1574a61e8da3',1,'machine_learning']]],
-  ['kth_5fancestor_9',['kth_ancestor',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a8f7bca1746d40f21ad832fcea59aa6c6',1,'range_queries::heavy_light_decomposition::Tree']]]
+  ['knn_6',['Knn',['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a188d29ffcefdb5900a8cd41eccd89200',1,'machine_learning::k_nearest_neighbors::Knn::Knn(std::vector&lt; std::vector&lt; double &gt; &gt; &amp;X, std::vector&lt; int &gt; &amp;Y)'],['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a9f5885c40112481ae5b588fe81d7910b',1,'machine_learning::k_nearest_neighbors::Knn::Knn(const Knn &amp;model)=default'],['../da/d94/classmachine__learning_1_1k__nearest__neighbors_1_1_knn.html#a4b17dcf17c847f0295b60029512c120e',1,'machine_learning::k_nearest_neighbors::Knn::Knn(Knn &amp;&amp;)=default']]],
+  ['knuth_5fb_7',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',0,'std::knuth_b']]],
+  ['kohonen_5fsom_8',['kohonen_som',['../d8/d77/namespacemachine__learning.html#ac43d294e21a0c4fa33c53757df054576',1,'machine_learning']]],
+  ['kohonen_5fsom_5ftracer_9',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#a042f435bca0839e721fc1574a61e8da3',1,'machine_learning']]],
+  ['kth_5fancestor_10',['kth_ancestor',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a8f7bca1746d40f21ad832fcea59aa6c6',1,'range_queries::heavy_light_decomposition::Tree']]]
 ];
