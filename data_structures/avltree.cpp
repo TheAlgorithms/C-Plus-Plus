@@ -158,7 +158,7 @@ void deleteAllNodes(const node *const root) {
 
 /**
  * @brief prints given tree in the LevelOrder
- * @param root of the tree
+ * @param[in] root of the tree
  */
 void levelOrder(node *root) {
     std::queue<node *> q;
