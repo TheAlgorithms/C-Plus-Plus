@@ -1,3 +1,11 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
 /*
 
 Code for Strassen's Matrix Multiplication Algorithm
@@ -26,29 +34,42 @@ Code Contributed by: Tiger Sharks
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main()
 {
-    int m1[2][2], m2[2][2], res[2][2], x, y;
+    //int m1[2][2], m2[2][2],
+    int res[2][2], x, y;
+    std::vector<vector<int>> m1;
+    std::vector<vector<int>> m2;
+    int temp=0;
+    
     int p, q, r, s, t, u, v;
-
-    cout << endl << "Enter the Elements for Matrix 1:" << endl;
-    for (x = 0; x < 2; x++)
-    {
-        for (y = 0; y < 2; y++)
-        {
-            cin >> m1[x][y];
-        }
+    
+    cout<<"Enter the elements of Matrix 1:"<<endl;
+    for(int i=0; i<2; i++){ 
+    
+        vector<int> row;
+    for(int j=0; j<2; j++){
+         cin>>temp;
+      row.push_back(temp);// I don't know how to push_back here!!
     }
+        m1.push_back(row);
+    }
+
 
     cout << endl << "Enter the Elements for Matrix 2:" << endl;
     for (x = 0; x < 2; x++)
     {
+        vector<int> row;
         for (y = 0; y < 2; y++)
         {
-            cin >> m2[x][y];
+            cin >> temp;
+            row.push_back(temp);
         }
+        
+        m2.push_back(row);
     }
 
     p = (m1[0][0] + m1[1][1]) * (m2[0][0] + m2[1][1]);
