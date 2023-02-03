@@ -23,13 +23,6 @@
  */
 namespace bit_manipulation {
 /**
- * @namespace count_of_set_bits
- * @brief Functions for the [check power of
- * 2](https://www.geeksforgeeks.org/program-to-find-whether-a-given-number-is-power-of-2/)
- * implementation
- */
-namespace count_of_set_bits {
-/**
  * @brief The main function implements check for power of 2
  * @param n is the number who will be checked
  * @returns either true or false
@@ -45,7 +38,6 @@ bool isPowerOfTwo(
     // The expression n&(n-1) will not work when n is 0. 
     // To handle this case also, our expression will become n& (!n&(n-1)) 
 }
-}  // namespace count_of_set_bits
 }  // namespace bit_manipulation
 
 /**
@@ -54,21 +46,21 @@ bool isPowerOfTwo(
  */
 static void test() {
     // n = 4 return true
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(4) == true);
+    assert(bit_manipulation::isPowerOfTwo(4) == true);
     // n = 6 return false
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(6) == false);
+    assert(bit_manipulation::isPowerOfTwo(6) == false);
     // n = 13 return false
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(13) == false);
+    assert(bit_manipulation::isPowerOfTwo(13) == false);
     // n = 64 return true
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(64) == true);
+    assert(bit_manipulation::isPowerOfTwo(64) == true);
     // n = 15 return false
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(15) == false);
+    assert(bit_manipulation::isPowerOfTwo(15) == false);
     // n = 32 return true
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(32) == true);
+    assert(bit_manipulation::isPowerOfTwo(32) == true);
     // n = 97 return false
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(97) == false);
+    assert(bit_manipulation::isPowerOfTwo(97) == false);
     // n = 1024 return true
-    assert(bit_manipulation::count_of_set_bits::isPowerOfTwo(1024) == true);
+    assert(bit_manipulation::isPowerOfTwo(1024) == true);
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
