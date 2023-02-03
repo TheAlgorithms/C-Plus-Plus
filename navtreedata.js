@@ -141,12 +141,12 @@ var NAVTREEINDEX =
 "d4/d9f/selection__sort__recursive_8cpp.html#ab6f7b33a070e376e1f4374e534435e89",
 "d6/d1a/dnf__sort_8cpp.html",
 "d7/d56/count__bits__flip_8cpp.html",
-"d8/d95/vector__ops_8hpp.html#ad0bdc88e5f1be47c46c0f0c8ebf754bb",
-"d9/dde/classbinary__search__tree.html#aa67321ed575ca313cd71d833d91234a6",
-"db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d",
-"dc/d82/area_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html#abce10afbf9e16ce4a788af6b58abbebb",
-"df/dce/namespacegraph.html#a83ab16e96cec644109a58dfc9329bc2b"
+"d8/d95/vector__ops_8hpp.html#acafa3e62b686aebdbad81c4f89913f43",
+"d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2",
+"db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"dc/d82/area_8cpp.html#ab31d141f7c5b551746b1eee0eb4dedca",
+"dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793",
+"df/dcb/namespacestrings.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

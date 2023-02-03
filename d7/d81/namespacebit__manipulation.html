@@ -97,12 +97,21 @@ $(document).ready(function(){initNavTree('d7/d81/namespacebit__manipulation.html
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">bit_manipulation Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>for IO operations  
 <a href="../../d7/d81/namespacebit__manipulation.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5032470c9974bbd6ec254bf296530a5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">isPowerOfTwo</a> (std ::int64_t n)</td></tr>
+<tr class="memdesc:a5032470c9974bbd6ec254bf296530a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements check for power of 2.  <br /></td></tr>
+<tr class="separator:a5032470c9974bbd6ec254bf296530a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>for IO operations </p>
 <p>Bit manipulation algorithms.</p>
@@ -115,7 +124,45 @@ $(document).ready(function(){initNavTree('d7/d81/namespacebit__manipulation.html
 <p>for assert</p>
 <p>Bit Manipulation algorithms</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a> for assert for IO operations for limits of integral types for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a5032470c9974bbd6ec254bf296530a5f" name="a5032470c9974bbd6ec254bf296530a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5032470c9974bbd6ec254bf296530a5f">&#9670;&#160;</a></span>isPowerOfTwo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bit_manipulation::isPowerOfTwo </td>
+          <td>(</td>
+          <td class="paramtype">std ::int64_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The main function implements check for power of 2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>is the number who will be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>either true or false </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                   {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="line"><span class="lineno">   32</span>                        <span class="comment">// no Overflow can be there.</span></div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> n &gt; 0 &amp;&amp; !(n &amp; n - 1); <span class="comment">// If we subtract a power of 2 numbers by 1 </span></div>
+<div class="line"><span class="lineno">   35</span>    <span class="comment">// then all unset bits after the only set bit become set; and the set bit becomes unset.</span></div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// If a number n is a power of 2 then bitwise and of n-1 and n will be zero.</span></div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// The expression n&amp;(n-1) will not work when n is 0. </span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// To handle this case also, our expression will become n&amp; (!n&amp;(n-1)) </span></div>
+<div class="line"><span class="lineno">   40</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

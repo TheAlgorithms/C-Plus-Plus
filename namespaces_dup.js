@@ -11,7 +11,9 @@ var namespaces_dup =
     [ "base64_encoding", "d9/dc9/namespacebase64__encoding.html", null ],
     [ "bidirectional_dijkstra", "d4/d13/namespacebidirectional__dijkstra.html", null ],
     [ "binomial", "d7/d7a/namespacebinomial.html", null ],
-    [ "bit_manipulation", "d7/d81/namespacebit__manipulation.html", null ],
+    [ "bit_manipulation", "d7/d81/namespacebit__manipulation.html", [
+      [ "isPowerOfTwo", "d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f", null ]
+    ] ],
     [ "boruvkas_minimum_spanning_tree", "d8/d64/namespaceboruvkas__minimum__spanning__tree.html", null ],
     [ "caesar", "dd/d81/namespacecaesar.html", null ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", "d6/d4e/namespaceciphers" ],
