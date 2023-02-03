@@ -169,6 +169,7 @@
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/adaline_learning.cpp)
+  * [K Nearest Neighbors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/k_nearest_neighbors.cpp)
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/kohonen_som_trace.cpp)
   * [Neural Network](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/neural_network.cpp)
