@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('db/dc0/namespacebacktracking.html','..
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplParams" colspan="2">template&lt;size_t T&gt; </td></tr>
-<tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">minimax</a> (int depth, int node_index, bool is_max, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, T &gt; &amp;scores, double <a class="el" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>)</td></tr>
+<tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">minimax</a> (int depth, int node_index, bool is_max, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, T &gt; &amp;scores, double height)</td></tr>
 <tr class="memdesc:a78540bcb5ef3473b2348cbc34748ec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which is the maximum/minimum number in the array.  <br /></td></tr>
 <tr class="separator:a78540bcb5ef3473b2348cbc34748ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -193,22 +193,21 @@ template&lt;size_t T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the maximum or minimum number </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>                                                           {</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (depth == <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>) {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (depth == height) {</div>
 <div class="line"><span class="lineno">   42</span>        <span class="keywordflow">return</span> scores[node_index];</div>
 <div class="line"><span class="lineno">   43</span>    }</div>
 <div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">int</span> v1 = minimax(depth + 1, node_index * 2, !is_max, scores, <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>);</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> v2 = minimax(depth + 1, node_index * 2 + 1, !is_max, scores, <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">int</span> v1 = minimax(depth + 1, node_index * 2, !is_max, scores, height);</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> v2 = minimax(depth + 1, node_index * 2 + 1, !is_max, scores, height);</div>
 <div class="line"><span class="lineno">   47</span> </div>
 <div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> is_max ? <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(v1, v2) : <a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::min(v1, v2);</div>
 <div class="line"><span class="lineno">   49</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition:</b> avltree.cpp:31</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/dc0/namespacebacktracking_a78540bcb5ef3473b2348cbc34748ec50_cgraph.svg" width="403" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/dc0/namespacebacktracking_a78540bcb5ef3473b2348cbc34748ec50_cgraph.svg" width="286" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

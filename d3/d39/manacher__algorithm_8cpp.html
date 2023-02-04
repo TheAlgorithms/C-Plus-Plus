@@ -221,7 +221,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   60</span>                <span class="comment">// substring which would be considered as the larger</span></div>
 <div class="line"><span class="lineno">   61</span>                <span class="comment">// palindrome, having symmetric halves</span></div>
 <div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>        uint64_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = 0;  <span class="comment">// this is the maximum length of the palindrome</span></div>
+<div class="line"><span class="lineno">   63</span>        uint64_t right = 0;  <span class="comment">// this is the maximum length of the palindrome</span></div>
 <div class="line"><span class="lineno">   64</span>                             <span class="comment">// from &#39;bigger_center&#39; to the rightmost end</span></div>
 <div class="line"><span class="lineno">   65</span> </div>
 <div class="line"><span class="lineno">   66</span>        <span class="comment">// i is considered as center lying within one half of the palindrone</span></div>
@@ -255,7 +255,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   94</span>            <span class="comment">// to center i</span></div>
 <div class="line"><span class="lineno">   95</span>            <span class="keywordflow">if</span> (i + palindrome_max_half_length[i] &gt; right) {</div>
 <div class="line"><span class="lineno">   96</span>                bigger_center = i;</div>
-<div class="line"><span class="lineno">   97</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = i + palindrome_max_half_length[i];</div>
+<div class="line"><span class="lineno">   97</span>                right = i + palindrome_max_half_length[i];</div>
 <div class="line"><span class="lineno">   98</span>            }</div>
 <div class="line"><span class="lineno">   99</span>        }</div>
 <div class="line"><span class="lineno">  100</span> </div>
@@ -302,7 +302,6 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  141</span>}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>

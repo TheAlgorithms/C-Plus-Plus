@@ -249,15 +249,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (left &lt; right) {</div>
 <div class="line"><span class="lineno">   51</span>            <span class="keywordflow">if</span> (right - left &lt; <a class="code hl_define" href="../../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc">absolutePrecision</a>) {</div>
-<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
+<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= right; i++)</div>
 <div class="line"><span class="lineno">   53</span>                    <span class="keywordflow">if</span> (A[i] == target)</div>
 <div class="line"><span class="lineno">   54</span>                        <span class="keywordflow">return</span> i;</div>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   57</span>            }</div>
 <div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordtype">int</span> oneThird = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keywordtype">int</span> twoThird = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordtype">int</span> oneThird = (left + right) / 3 + 1;</div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordtype">int</span> twoThird = (left + right) * 2 / 3 + 1;</div>
 <div class="line"><span class="lineno">   61</span> </div>
 <div class="line"><span class="lineno">   62</span>            <span class="keywordflow">if</span> (A[oneThird] == target)</div>
 <div class="line"><span class="lineno">   63</span>                <span class="keywordflow">return</span> oneThird;</div>
@@ -265,18 +265,17 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   65</span>                <span class="keywordflow">return</span> twoThird;</div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target &gt; A[twoThird])</div>
-<div class="line"><span class="lineno">   68</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = twoThird + 1;</div>
+<div class="line"><span class="lineno">   68</span>                left = twoThird + 1;</div>
 <div class="line"><span class="lineno">   69</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (target &lt; A[oneThird])</div>
-<div class="line"><span class="lineno">   70</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = oneThird - 1;</div>
+<div class="line"><span class="lineno">   70</span>                right = oneThird - 1;</div>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   73</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = oneThird + 1, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = twoThird - 1;</div>
+<div class="line"><span class="lineno">   73</span>                left = oneThird + 1, right = twoThird - 1;</div>
 <div class="line"><span class="lineno">   74</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   75</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   76</span>        }</div>
 <div class="line"><span class="lineno">   77</span>    }</div>
 <div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
 <div class="ttc" id="aternary__search_8cpp_html_ae01eda5098801bb6b5b778828fb4fddc"><div class="ttname"><a href="../../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc">absolutePrecision</a></div><div class="ttdeci">#define absolutePrecision</div><div class="ttdef"><b>Definition:</b> ternary_search.cpp:22</div></div>
 </div><!-- fragment -->
 </div>
@@ -369,15 +368,15 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>                                                                 {</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (left &lt; right) {</div>
 <div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (right - left &lt; <a class="code hl_define" href="../../dc/dfe/ternary__search_8cpp.html#ae01eda5098801bb6b5b778828fb4fddc">absolutePrecision</a>) {</div>
-<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; i++)</div>
+<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = left; i &lt;= right; i++)</div>
 <div class="line"><span class="lineno">   94</span>                <span class="keywordflow">if</span> (A[i] == target)</div>
 <div class="line"><span class="lineno">   95</span>                    <span class="keywordflow">return</span> i;</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   98</span>        }</div>
 <div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">int</span> oneThird = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) / 3 + 1;</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordtype">int</span> twoThird = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>) * 2 / 3 + 1;</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">int</span> oneThird = (left + right) / 3 + 1;</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordtype">int</span> twoThird = (left + right) * 2 / 3 + 1;</div>
 <div class="line"><span class="lineno">  102</span> </div>
 <div class="line"><span class="lineno">  103</span>        <span class="keywordflow">if</span> (A[oneThird] == target)</div>
 <div class="line"><span class="lineno">  104</span>            <span class="keywordflow">return</span> oneThird;</div>

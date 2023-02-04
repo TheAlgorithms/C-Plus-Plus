@@ -164,14 +164,14 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>                                                              {</div>
 <div class="line"><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = routes.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><span class="lineno">   32</span>    <span class="comment">// height of dp array which is 2^n</span></div>
-<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a> = 1 &lt;&lt; n;</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bool&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(<a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a>(n, <span class="keyword">false</span>));</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> height = 1 &lt;&lt; n;</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bool&gt;</a>&gt; <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>(height, <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bool&gt;</a>(n, <span class="keyword">false</span>));</div>
 <div class="line"><span class="lineno">   35</span> </div>
 <div class="line"><span class="lineno">   36</span>    <span class="comment">// to fill in the [2^i, i] cells with true</span></div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><span class="lineno">   38</span>        <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[1 &lt;&lt; i][i] = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   39</span>    }</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>; i++) {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; height; i++) {</div>
 <div class="line"><span class="lineno">   41</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;size_t&gt;</a> zeros, ones;</div>
 <div class="line"><span class="lineno">   42</span>        <span class="comment">// finding positions with 1s and 0s and separate them</span></div>
 <div class="line"><span class="lineno">   43</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> pos = 0; pos &lt; n; ++pos) {</div>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   64</span> </div>
 <div class="line"><span class="lineno">   65</span>    <span class="keywordtype">bool</span> is_cycle = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; i++) {</div>
-<div class="line"><span class="lineno">   67</span>        is_cycle |= <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[<a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a> - 1][i];</div>
+<div class="line"><span class="lineno">   67</span>        is_cycle |= <a class="code hl_namespace" href="../../df/d88/namespacedp.html">dp</a>[height - 1][i];</div>
 <div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (is_cycle) {  <span class="comment">// if true, all subsequent loop will be true. hence</span></div>
 <div class="line"><span class="lineno">   69</span>                         <span class="comment">// break</span></div>
 <div class="line"><span class="lineno">   70</span>            <span class="keywordflow">break</span>;</div>
@@ -206,7 +206,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   72</span>    }</div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> is_cycle;</div>
 <div class="line"><span class="lineno">   74</span>}</div>
-<div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition:</b> avltree.cpp:31</div></div>
 <div class="ttc" id="anamespacedp_html"><div class="ttname"><a href="../../df/d88/namespacedp.html">dp</a></div><div class="ttdoc">for std::vector</div><div class="ttdef"><b>Definition:</b> partition_problem.cpp:39</div></div>
 <div class="ttc" id="apush_back_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
@@ -214,7 +213,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_abcf824e347eecfeeb69ea0280f34f3e4_cgraph.svg" width="444" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_abcf824e347eecfeeb69ea0280f34f3e4_cgraph.svg" width="323" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -265,7 +264,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="642" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="520" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -311,7 +310,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_ae7880ce913f3058a35ff106d5be9e243_cgraph.svg" width="543" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_ae7880ce913f3058a35ff106d5be9e243_cgraph.svg" width="422" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -361,7 +360,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a45d94ead4cf4e1ff9f87c38bc99f59ae_cgraph.svg" width="543" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a45d94ead4cf4e1ff9f87c38bc99f59ae_cgraph.svg" width="422" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -406,7 +405,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a0cc94918b6831f308d4fe4fa27f08299_cgraph.svg" width="543" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d0c/hamiltons__cycle_8cpp_a0cc94918b6831f308d4fe4fa27f08299_cgraph.svg" width="422" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

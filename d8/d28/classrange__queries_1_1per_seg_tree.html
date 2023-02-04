@@ -275,14 +275,13 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  110</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  111</span>            uint32_t mid = i + (j - i) / 2;</div>
 <div class="line"><span class="lineno">  112</span>            <span class="keyword">auto</span> leftt = <a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(i, mid);</div>
-<div class="line"><span class="lineno">  113</span>            <span class="keyword">auto</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = <a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(mid + 1, j);</div>
-<div class="line"><span class="lineno">  114</span>            newNode-&gt;val = leftt-&gt;val + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;val;</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keyword">auto</span> right = <a class="code hl_function" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a6d3f2465a7c5803a1ff16c5378bcc5e4">construct</a>(mid + 1, j);</div>
+<div class="line"><span class="lineno">  114</span>            newNode-&gt;val = leftt-&gt;val + right-&gt;val;</div>
 <div class="line"><span class="lineno">  115</span>            newNode-&gt;left = leftt;</div>
-<div class="line"><span class="lineno">  116</span>            newNode-&gt;right = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>;</div>
+<div class="line"><span class="lineno">  116</span>            newNode-&gt;right = right;</div>
 <div class="line"><span class="lineno">  117</span>        }</div>
 <div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> newNode;</div>
 <div class="line"><span class="lineno">  119</span>    }</div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
 <div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:14</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

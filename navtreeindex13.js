@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"df/dc8/successive__approximation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,14,22,2],
+"df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456":[11,0,14,22,1],
 "df/dcb/namespacestrings.html":[9,0,114],
 "df/dce/namespacegraph.html":[9,0,34],
 "df/dce/namespacegraph.html#a0e30e0dca68cb6e4f671440819b35b6a":[9,0,34,6],
@@ -57,8 +59,8 @@ var NAVTREEINDEX13 =
 "dir_f3c4fbc4e901afa0a54d0623c5574aa7.html":[11,0,1],
 "examples.html":[12],
 "files.html":[11,0],
-"functions.html":[10,3,0],
 "functions.html":[10,3,0,0],
+"functions.html":[10,3,0],
 "functions_a.html":[10,3,0,1],
 "functions_b.html":[10,3,0,2],
 "functions_c.html":[10,3,0,3],

@@ -149,16 +149,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>either true or false </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                   {  <span class="comment">// int64_t is preferred over int so that</span></div>
-<div class="line"><span class="lineno">   32</span>                        <span class="comment">// no Overflow can be there.</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                 {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="line"><span class="lineno">   32</span>                                      <span class="comment">// no Overflow can be there.</span></div>
 <div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> n &gt; 0 &amp;&amp; !(n &amp; n - 1); <span class="comment">// If we subtract a power of 2 numbers by 1 </span></div>
-<div class="line"><span class="lineno">   35</span>    <span class="comment">// then all unset bits after the only set bit become set; and the set bit becomes unset.</span></div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <span class="comment">// If a number n is a power of 2 then bitwise and of n-1 and n will be zero.</span></div>
-<div class="line"><span class="lineno">   38</span>    <span class="comment">// The expression n&amp;(n-1) will not work when n is 0. </span></div>
-<div class="line"><span class="lineno">   39</span>    <span class="comment">// To handle this case also, our expression will become n&amp; (!n&amp;(n-1)) </span></div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> n &gt; 0 &amp;&amp; !(n &amp; n - 1);  <span class="comment">// If we subtract a power of 2 numbers by 1</span></div>
+<div class="line"><span class="lineno">   35</span>    <span class="comment">// then all unset bits after the only set bit become set; and the set bit</span></div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// becomes unset.</span></div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// If a number n is a power of 2 then bitwise and of n-1 and n will be zero.</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// The expression n&amp;(n-1) will not work when n is 0.</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// To handle this case also, our expression will become n&amp; (!n&amp;(n-1))</span></div>
+<div class="line"><span class="lineno">   41</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

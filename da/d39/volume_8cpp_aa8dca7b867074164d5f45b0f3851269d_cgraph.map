@@ -1,14 +1,12 @@
 <map id="test" name="test">
-<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,195,49,220"/>
-<area shape="rect" id="node2" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="114,169,250,195"/>
-<area shape="rect" id="node6" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="114,268,250,293"/>
-<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca" title="The volume of a cylinder" alt="" coords="105,219,259,244"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="146,367,218,392"/>
-<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c" title="The volume of a pyramid" alt="" coords="105,5,259,31"/>
-<area shape="rect" id="node10" href="$dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12" title="The volume of a rectangular prism." alt="" coords="97,55,267,80"/>
-<area shape="rect" id="node11" href="$dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551" title="The volume of a sphere" alt="" coords="109,317,255,343"/>
-<area shape="rect" id="node12" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="112,105,252,145"/>
-<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="322,112,379,137"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="315,243,387,268"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="435,112,508,137"/>
+<area shape="rect" id="node1" title="Self&#45;test implementations." alt="" coords="5,179,49,204"/>
+<area shape="rect" id="node2" href="$dd/d47/namespacemath.html#a3fe35440c27758ecc2287e08217d63a7" title="The volume of a cone" alt="" coords="114,5,250,31"/>
+<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#ae413098478fa38acaac887b7654f0725" title="The volume of a cube" alt="" coords="114,55,250,80"/>
+<area shape="rect" id="node5" href="$dd/d47/namespacemath.html#abde24398be43538c62e4a496968e60ca" title="The volume of a cylinder" alt="" coords="105,104,259,129"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="146,153,218,179"/>
+<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c" title="The volume of a pyramid" alt="" coords="105,203,259,228"/>
+<area shape="rect" id="node8" href="$dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12" title="The volume of a rectangular prism." alt="" coords="97,252,267,277"/>
+<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551" title="The volume of a sphere" alt="" coords="109,301,255,327"/>
+<area shape="rect" id="node10" href="$dd/d47/namespacemath.html#a2d704a7b72a6b2db8b76c8581b577b2c" title="The volume of a triangular prism." alt="" coords="112,351,252,391"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="315,80,387,105"/>
 </map>

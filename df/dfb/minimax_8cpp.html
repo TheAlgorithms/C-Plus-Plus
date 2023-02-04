@@ -126,7 +126,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplParams" colspan="2">template&lt;size_t T&gt; </td></tr>
-<tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a> (int depth, int node_index, bool is_max, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, T &gt; &amp;scores, double <a class="el" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>)</td></tr>
+<tr class="memitem:a78540bcb5ef3473b2348cbc34748ec50"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a> (int depth, int node_index, bool is_max, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; int, T &gt; &amp;scores, double height)</td></tr>
 <tr class="memdesc:a78540bcb5ef3473b2348cbc34748ec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which is the maximum/minimum number in the array.  <br /></td></tr>
 <tr class="separator:a78540bcb5ef3473b2348cbc34748ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/minimax_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -160,14 +160,13 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>           {</div>
 <div class="line"><span class="lineno">   57</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, 8&gt;</a> scores = {90, 23, 6, 33, 21, 65, 123, 34423};</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a> = log2(scores.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>());</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">double</span> height = log2(scores.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array/size.html">size</a>());</div>
 <div class="line"><span class="lineno">   59</span> </div>
 <div class="line"><span class="lineno">   60</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Optimal value: &quot;</span></div>
-<div class="line"><span class="lineno">   61</span>              &lt;&lt; <a class="code hl_function" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a>(0, 0, <span class="keyword">true</span>, scores, <a class="code hl_function" href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   61</span>              &lt;&lt; <a class="code hl_function" href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a>(0, 0, <span class="keyword">true</span>, scores, height) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aavltree_8cpp_html_ae4a66d8b0c2b0d626aea45977e358c83"><div class="ttname"><a href="../../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83">height</a></div><div class="ttdeci">int height(node *root)</div><div class="ttdef"><b>Definition:</b> avltree.cpp:31</div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anamespacebacktracking_html_a78540bcb5ef3473b2348cbc34748ec50"><div class="ttname"><a href="../../db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50">backtracking::minimax</a></div><div class="ttdeci">int minimax(int depth, int node_index, bool is_max, const std::array&lt; int, T &gt; &amp;scores, double height)</div><div class="ttdoc">Check which is the maximum/minimum number in the array.</div><div class="ttdef"><b>Definition:</b> minimax.cpp:39</div></div>
@@ -175,7 +174,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dfb/minimax_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="502" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dfb/minimax_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="384" height="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

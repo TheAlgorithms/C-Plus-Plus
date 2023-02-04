@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"db/d3c/tower__of__hanoi_8cpp.html#a746d9a3984bba88fd6dd91978f6931ed":[11,0,16,20,3],
+"db/d3c/tower__of__hanoi_8cpp.html#ab037f72a5eac476535a6cfbbcb965417":[11,0,16,20,4],
 "db/d3c/tower__of__hanoi_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,20,1],
 "db/d3c/tower__of__hanoi_8cpp.html#af4cfc41e546f1f8d25f01e0804e8b61d":[11,0,16,20,2],
 "db/d3f/wave__sort_8cpp.html":[11,0,21,23],
@@ -228,12 +230,12 @@ var NAVTREEINDEX10 =
 "dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981":[9,0,34,0,2],
 "dc/d61/classgraph_1_1_graph.html#a59940c462861f2fcf4951d1b6c084e6a":[10,0,5,1,5],
 "dc/d61/classgraph_1_1_graph.html#a59940c462861f2fcf4951d1b6c084e6a":[9,0,34,0,5],
-"dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19":[10,0,5,1,1],
 "dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19":[9,0,34,0,1],
+"dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19":[10,0,5,1,1],
 "dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5":[10,0,5,1,0],
 "dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5":[9,0,34,0,0],
-"dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904":[10,0,5,1,3],
 "dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904":[9,0,34,0,3],
+"dc/d61/classgraph_1_1_graph.html#a8930d1470d132b19e430d1c71f94c904":[10,0,5,1,3],
 "dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0":[10,0,5,1,4],
 "dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0":[9,0,34,0,4],
 "dc/d64/md__coding_guidelines.html":[2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html":[9,0,110,6],
 "dc/d82/area_8cpp.html":[11,0,13,2],
 "dc/d82/area_8cpp.html#a40e36c67da78d2131408c57ee091ad75":[11,0,13,2,0],
-"dc/d82/area_8cpp.html#a5de184925e68658f15415dd53954df4f":[11,0,13,2,4],
-"dc/d82/area_8cpp.html#a971ce57e368f2f631cf1f4ff3f864049":[11,0,13,2,7],
-"dc/d82/area_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,13,2,8]
+"dc/d82/area_8cpp.html#a5de184925e68658f15415dd53954df4f":[11,0,13,2,4]
 };

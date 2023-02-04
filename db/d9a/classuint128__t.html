@@ -799,8 +799,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  458</span>            <span class="keywordflow">return</span> {<a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(1), <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(0)};</div>
 <div class="line"><span class="lineno">  459</span>        }</div>
 <div class="line"><span class="lineno">  460</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> tmp = p, tmp2 = *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  461</span>        uint16_t <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = tmp.<a class="code hl_function" href="../../db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2">_lez</a>() - <a class="code hl_function" href="../../db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
-<div class="line"><span class="lineno">  462</span>        tmp &lt;&lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;</div>
+<div class="line"><span class="lineno">  461</span>        uint16_t left = tmp.<a class="code hl_function" href="../../db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2">_lez</a>() - <a class="code hl_function" href="../../db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2">_lez</a>();</div>
+<div class="line"><span class="lineno">  462</span>        tmp &lt;&lt;= left;</div>
 <div class="line"><span class="lineno">  463</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> quotient(0);</div>
 <div class="line"><span class="lineno">  464</span>        <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a> zero(0);</div>
 <div class="line"><span class="lineno">  465</span>        <span class="keywordflow">while</span> (tmp2 &gt;= p) {</div>
@@ -808,21 +808,20 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  467</span>            <span class="keywordflow">if</span> (shf) {</div>
 <div class="line"><span class="lineno">  468</span>                tmp &gt;&gt;= shf;</div>
 <div class="line"><span class="lineno">  469</span>                quotient &lt;&lt;= shf;</div>
-<div class="line"><span class="lineno">  470</span>                <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> -= shf;</div>
+<div class="line"><span class="lineno">  470</span>                left -= shf;</div>
 <div class="line"><span class="lineno">  471</span>            }</div>
 <div class="line"><span class="lineno">  472</span>            <span class="keywordflow">if</span> (tmp2 &lt; tmp) {</div>
 <div class="line"><span class="lineno">  473</span>                tmp &gt;&gt;= 1;</div>
 <div class="line"><span class="lineno">  474</span>                quotient &lt;&lt;= 1;</div>
-<div class="line"><span class="lineno">  475</span>                --<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;</div>
+<div class="line"><span class="lineno">  475</span>                --left;</div>
 <div class="line"><span class="lineno">  476</span>            }</div>
 <div class="line"><span class="lineno">  477</span>            tmp2 -= tmp;</div>
 <div class="line"><span class="lineno">  478</span>            ++quotient;</div>
 <div class="line"><span class="lineno">  479</span>        }</div>
-<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">return</span> {quotient &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>, tmp2};</div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">return</span> {quotient &lt;&lt; left, tmp2};</div>
 <div class="line"><span class="lineno">  481</span>    }</div>
 <div class="ttc" id="aclassuint128__t_html"><div class="ttname"><a href="../../db/d9a/classuint128__t.html">uint128_t</a></div><div class="ttdoc">class for 128-bit unsigned integer</div><div class="ttdef"><b>Definition:</b> uint128_t.hpp:59</div></div>
 <div class="ttc" id="aclassuint128__t_html_af139bb6e630f1a61919f180978611cd2"><div class="ttname"><a href="../../db/d9a/classuint128__t.html#af139bb6e630f1a61919f180978611cd2">uint128_t::_lez</a></div><div class="ttdeci">uint32_t _lez()</div><div class="ttdoc">Leading zeroes in binary.</div><div class="ttdef"><b>Definition:</b> uint128_t.hpp:139</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

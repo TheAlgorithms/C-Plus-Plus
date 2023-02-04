@@ -1,14 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,56,104"/>
-<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#a9977e004a42fade067836b295a0aa7c1" title=" " alt="" coords="104,79,192,104"/>
-<area shape="rect" id="node5" href="$d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" title=" " alt="" coords="121,177,175,203"/>
-<area shape="rect" id="node12" href="$d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" title=" " alt="" coords="107,5,189,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="240,5,357,31"/>
-<area shape="rect" id="node4" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="261,79,336,104"/>
-<area shape="rect" id="node6" href="$d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" title=" " alt="" coords="254,128,343,153"/>
-<area shape="rect" id="node7" href="$d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" title=" " alt="" coords="255,177,342,203"/>
-<area shape="rect" id="node10" href="$d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" title=" " alt="" coords="259,227,338,252"/>
-<area shape="rect" id="node11" href="$d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" title=" " alt="" coords="255,276,342,301"/>
-<area shape="rect" id="node8" href="$d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83" title=" " alt="" coords="405,177,463,203"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="511,177,584,203"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,116,56,141"/>
+<area shape="rect" id="node2" href="$d8/dee/avltree_8cpp.html#a82659e9e223e520cf91d7e55c4a3f88c" title="calls delete on every node" alt="" coords="104,29,215,55"/>
+<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#aa29a7fdc2db1784f5a6e25025ff7cbf5" title="removes a given element from AVL tree" alt="" coords="115,152,203,177"/>
+<area shape="rect" id="node6" href="$d8/dee/avltree_8cpp.html#a2473fe7416332495b2678ebe89652e4b" title="inserts a new element into AVL tree" alt="" coords="132,251,187,276"/>
+<area shape="rect" id="node11" href="$d8/dee/avltree_8cpp.html#ae197eb50188fb761346952b9b5f6be59" title="prints given tree in the LevelOrder" alt="" coords="119,79,200,104"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="263,79,380,104"/>
+<area shape="rect" id="node5" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="284,152,359,177"/>
+<area shape="rect" id="node7" href="$d8/dee/avltree_8cpp.html#a48d897353aeb6a721dbc6b6c57e035e6" title="creates and returns a new node" alt="" coords="277,201,366,227"/>
+<area shape="rect" id="node8" href="$d8/dee/avltree_8cpp.html#aaa457ffec24c9643f2768e7a65e96546" title=" " alt="" coords="278,251,365,276"/>
+<area shape="rect" id="node9" href="$d8/dee/avltree_8cpp.html#a473eee1803e4e44a54d685e4b0eef5a6" title=" " alt="" coords="282,300,361,325"/>
+<area shape="rect" id="node10" href="$d8/dee/avltree_8cpp.html#adfc1d482a564c041756719667b955b8c" title=" " alt="" coords="278,349,365,375"/>
 </map>

@@ -321,9 +321,9 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of inversions found in merge step </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   85</span>                                                                             {</div>
-<div class="line"><span class="lineno">   86</span>    uint32_t i = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* i --&gt; index of left sub-array */</span></div>
+<div class="line"><span class="lineno">   86</span>    uint32_t i = left;       <span class="comment">/* i --&gt; index of left sub-array */</span></div>
 <div class="line"><span class="lineno">   87</span>    uint32_t j = mid + 1;    <span class="comment">/* j --&gt; index for right sub-array */</span></div>
-<div class="line"><span class="lineno">   88</span>    uint32_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
+<div class="line"><span class="lineno">   88</span>    uint32_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> = left;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
 <div class="line"><span class="lineno">   89</span>    uint32_t inv_count = 0;  <span class="comment">// inversion count</span></div>
 <div class="line"><span class="lineno">   90</span> </div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">while</span> ((i &lt;= mid) &amp;&amp; (j &lt;= right)) {</div>
@@ -344,13 +344,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  106</span>        temp[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++] = arr[j++];</div>
 <div class="line"><span class="lineno">  107</span>    }</div>
 <div class="line"><span class="lineno">  108</span>    <span class="comment">// Copy temp[] to arr[]</span></div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (k = left; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt;= <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (k = left; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt;= right; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
 <div class="line"><span class="lineno">  110</span>        arr[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] = temp[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>];</div>
 <div class="line"><span class="lineno">  111</span>    }</div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> inv_count;</div>
 <div class="line"><span class="lineno">  113</span>}</div>
 <div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:117</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -410,7 +409,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  133</span>    uint32_t mid = 0, inv_count = 0;</div>
 <div class="line"><span class="lineno">  134</span>    <span class="keywordflow">if</span> (right &gt; left) {</div>
 <div class="line"><span class="lineno">  135</span>        <span class="comment">// midpoint to split the array</span></div>
-<div class="line"><span class="lineno">  136</span>        mid = (<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>) / 2;</div>
+<div class="line"><span class="lineno">  136</span>        mid = (right + left) / 2;</div>
 <div class="line"><span class="lineno">  137</span>        <span class="comment">// Add inversions in left and right sub-arrays</span></div>
 <div class="line"><span class="lineno">  138</span>        inv_count += <a class="code hl_function" href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(arr, temp, left, mid);  <span class="comment">// left sub-array</span></div>
 <div class="line"><span class="lineno">  139</span>        inv_count += <a class="code hl_function" href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(arr, temp, mid + 1, right);</div>

@@ -156,11 +156,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>           {</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="../../dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="apower__of__2_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> power_of_2.cpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>           {</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_function" href="../../dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="apower__of__2_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> power_of_2.cpp:48</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -195,28 +195,28 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                   {</div>
-<div class="line"><span class="lineno">   48</span>    <span class="comment">// n = 4 return true</span></div>
-<div class="line"><span class="lineno">   49</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(4) == <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   50</span>    <span class="comment">// n = 6 return false</span></div>
-<div class="line"><span class="lineno">   51</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(6) == <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// n = 13 return false</span></div>
-<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(13) == <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   54</span>    <span class="comment">// n = 64 return true</span></div>
-<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(64) == <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   56</span>    <span class="comment">// n = 15 return false</span></div>
-<div class="line"><span class="lineno">   57</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(15) == <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="comment">// n = 32 return true</span></div>
-<div class="line"><span class="lineno">   59</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(32) == <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// n = 97 return false</span></div>
-<div class="line"><span class="lineno">   61</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(97) == <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   62</span>    <span class="comment">// n = 1024 return true</span></div>
-<div class="line"><span class="lineno">   63</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(1024) == <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                   {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">// n = 4 return true</span></div>
+<div class="line"><span class="lineno">   50</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(4) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// n = 6 return false</span></div>
+<div class="line"><span class="lineno">   52</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(6) == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// n = 13 return false</span></div>
+<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(13) == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// n = 64 return true</span></div>
+<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(64) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// n = 15 return false</span></div>
+<div class="line"><span class="lineno">   58</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(15) == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// n = 32 return true</span></div>
+<div class="line"><span class="lineno">   60</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(32) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// n = 97 return false</span></div>
+<div class="line"><span class="lineno">   62</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(97) == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// n = 1024 return true</span></div>
+<div class="line"><span class="lineno">   64</span>    assert(<a class="code hl_function" href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a>(1024) == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacebit__manipulation_html_a5032470c9974bbd6ec254bf296530a5f"><div class="ttname"><a href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a></div><div class="ttdeci">bool isPowerOfTwo(std ::int64_t n)</div><div class="ttdoc">The main function implements check for power of 2.</div><div class="ttdef"><b>Definition:</b> power_of_2.cpp:30</div></div>
+<div class="ttc" id="anamespacebit__manipulation_html_a5032470c9974bbd6ec254bf296530a5f"><div class="ttname"><a href="../../d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f">bit_manipulation::isPowerOfTwo</a></div><div class="ttdeci">bool isPowerOfTwo(std ::int64_t n)</div><div class="ttdoc">The main function implements check for power of 2.</div><div class="ttdef"><b>Definition:</b> power_of_2.cpp:31</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
