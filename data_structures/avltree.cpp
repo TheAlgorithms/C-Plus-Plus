@@ -6,38 +6,52 @@
  * \warning This program is a poor implementation and does not utilize any of
  * the C++ STL features.
  */
-#include <algorithm>
-#include <iostream>
-#include <queue>
+#include <algorithm>  /// for std::max
+#include <iostream>   /// for std::cout
+#include <queue>      /// for std::queue
 
-typedef struct node {
+using node = struct node {
     int data;
     int height;
     struct node *left;
     struct node *right;
-} node;
+};
 
-/** Create and return a new Node */
+/**
+ * @brief creates and returns a new node
+ * @param[in] data value stored in the node
+ * @return newly created node
+ */
 node *createNode(int data) {
     node *nn = new node();
     nn->data = data;
     nn->height = 0;
-    nn->left = NULL;
-    nn->right = NULL;
+    nn->left = nullptr;
+    nn->right = nullptr;
     return nn;
 }
 
-/** Returns height of tree */
+/**
+ * @param[in] root the root of the tree
+ * @return height of tree
+ */
 int height(node *root) {
-    if (root == NULL)
+    if (root == nullptr) {
         return 0;
+    }
     return 1 + std::max(height(root->left), height(root->right));
 }
 
-/** Returns difference between height of left and right subtree */
+/**
+ * @param[in] root of the tree
+ * @return difference between height of left and right subtree
+ */
 int getBalance(node *root) { return height(root->left) - height(root->right); }
 
-/** Returns Node after Right Rotation */
+/**
+ * @param root of the tree to be rotated
+ * @return node after right rotation
+ */
 node *rightRotate(node *root) {
     node *t = root->left;
     node *u = t->right;
@@ -46,7 +60,10 @@ node *rightRotate(node *root) {
     return t;
 }
 
-/** Returns Node after Left Rotation */
+/**
+ * @param root of the tree to be rotated
+ * @return node after left rotation
+ */
 node *leftRotate(node *root) {
     node *t = root->right;
     node *u = t->left;
@@ -55,55 +72,67 @@ node *leftRotate(node *root) {
     return t;
 }
 
-/** Returns node with minimum value in the tree */
+/**
+ * @param root of the tree
+ * @returns node with minimum value in the tree
+ */
 node *minValue(node *root) {
-    if (root->left == NULL)
+    if (root->left == nullptr) {
         return root;
+    }
     return minValue(root->left);
 }
 
-/** Balanced Insertion */
+/**
+ * @brief inserts a new element into AVL tree
+ * @param root of the tree
+ * @param[in] item the element to be insterted into the tree
+ * @return root of the updated tree
+ */
 node *insert(node *root, int item) {
-    node *nn = createNode(item);
-    if (root == NULL)
-        return nn;
-    if (item < root->data)
+    if (root == nullptr) {
+        return createNode(item);
+    }
+    if (item < root->data) {
         root->left = insert(root->left, item);
-    else
+    } else {
         root->right = insert(root->right, item);
+    }
     int b = getBalance(root);
     if (b > 1) {
-        if (getBalance(root->left) < 0)
+        if (getBalance(root->left) < 0) {
             root->left = leftRotate(root->left);  // Left-Right Case
-        return rightRotate(root);                 // Left-Left Case
+        }
+        return rightRotate(root);  // Left-Left Case
     } else if (b < -1) {
-        if (getBalance(root->right) > 0)
+        if (getBalance(root->right) > 0) {
             root->right = rightRotate(root->right);  // Right-Left Case
-        return leftRotate(root);                     // Right-Right Case
+        }
+        return leftRotate(root);  // Right-Right Case
     }
     return root;
 }
 
-/** Balanced Deletion */
-node *deleteNode(node *root, int key) {
-    if (root == NULL)
+/**
+ * @brief removes a given element from AVL tree
+ * @param root of the tree
+ * @param[in] element the element to be deleted from the tree
+ * @return root of the updated tree
+ */
+node *deleteNode(node *root, int element) {
+    if (root == nullptr) {
         return root;
-    if (key < root->data)
-        root->left = deleteNode(root->left, key);
-    else if (key > root->data)
-        root->right = deleteNode(root->right, key);
+    }
+    if (element < root->data) {
+        root->left = deleteNode(root->left, element);
+    } else if (element > root->data) {
+        root->right = deleteNode(root->right, element);
 
-    else {
+    } else {
         // Node to be deleted is leaf node or have only one Child
-        if (!root->right) {
-            node *temp = root->left;
-            delete (root);
-            root = NULL;
-            return temp;
-        } else if (!root->left) {
-            node *temp = root->right;
-            delete (root);
-            root = NULL;
+        if (!root->right || !root->left) {
+            node *temp = !root->right ? root->left : root->right;
+            delete root;
             return temp;
         }
         // Node to be deleted have both left and right subtrees
@@ -115,7 +144,22 @@ node *deleteNode(node *root, int key) {
     return root;
 }
 
-/** LevelOrder (Breadth First Search) */
+/**
+ * @brief calls delete on every node
+ * @param root of the tree
+ */
+void deleteAllNodes(const node *const root) {
+    if (root) {
+        deleteAllNodes(root->left);
+        deleteAllNodes(root->right);
+        delete root;
+    }
+}
+
+/**
+ * @brief prints given tree in the LevelOrder
+ * @param[in] root of the tree
+ */
 void levelOrder(node *root) {
     std::queue<node *> q;
     q.push(root);
@@ -123,18 +167,23 @@ void levelOrder(node *root) {
         root = q.front();
         std::cout << root->data << " ";
         q.pop();
-        if (root->left)
+        if (root->left) {
             q.push(root->left);
-        if (root->right)
+        }
+        if (root->right) {
             q.push(root->right);
+        }
     }
 }
 
-/** Main function */
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     // Testing AVL Tree
-    node *root = NULL;
-    int i;
+    node *root = nullptr;
+    int i = 0;
     for (i = 1; i <= 7; i++) root = insert(root, i);
     std::cout << "LevelOrder: ";
     levelOrder(root);
@@ -144,5 +193,6 @@ int main() {
     root = deleteNode(root, 4);  // Deletin key with value 4
     std::cout << "\nLevelOrder: ";
     levelOrder(root);
+    deleteAllNodes(root);
     return 0;
 }
