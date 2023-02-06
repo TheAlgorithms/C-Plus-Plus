@@ -182,58 +182,55 @@ class RedBlackTree {
                 int ios_val = InOrderSuccessor(node_to_delete)->val;
                 Remove(ios_val);
                 node_to_delete->val = ios_val;
+                return;
             }
-            else {
-                // node to delete has no children -- disconnect node from its parent
-                if (node_to_delete->left == nullptr && node_to_delete->right == nullptr) {
-                    // removing a root with no children
-                    if (root == node_to_delete) {
-                        // root replaced with a null pointer to empty tree
-                        root = nullptr;
-                        replacement_node = root;
-                    }
-                    else {
-                        // node's location is still needed for fixing tree, so it's only marked as null for now
-                        node_to_delete->treatAsNull = true;
-                    }
-                }
-                // node to delete has one child -- node's child moves up to replace deleted node
+            // node to delete has no children -- disconnect node from its parent
+            if (node_to_delete->left == nullptr && node_to_delete->right == nullptr) {
+                // guard clause for if root is not the node to delete
+                if (root != node_to_delete) node_to_delete->treatAsNull = true;
                 else {
-                    // removing a root with one child
-                    if (root == node_to_delete) {
-                        // root replaced with root's child and root properties are reset
-                        root = MeToOnlyChildPtr(node_to_delete);
-                        root->parent = nullptr;
-                        root->color = COLOR_BLACK;
-                        replacement_node = root;
-                    }
-                    else {
-                        // setting parent and child pointers for the node's one child
-                        ParentToMePtr(node_to_delete) = MeToOnlyChildPtr(node_to_delete);
-                        MeToOnlyChildPtr(node_to_delete)->parent = node_to_delete->parent;
-                        replacement_node = MeToOnlyChildPtr(node_to_delete);
-                    }
+                    // root replaced with a null pointer to empty tree
+                    root = nullptr;
+                    replacement_node = root;
                 }
-                // Now check Rotate/Recolor conditions...
-                if (root != nullptr) {
-                    // a replacement node that's red or at the root just needs to be recolored black
-                    if (replacement_node == root || replacement_node->color == COLOR_RED) {
-                        replacement_node->color = COLOR_BLACK;
-                    }
-                    // deleted node was black and replacement node is black/null, causes double-blackness problem in tree that needs to be fixed
-                    else if (node_to_delete->color == COLOR_BLACK && (replacement_node->color == COLOR_BLACK || replacement_node->treatAsNull == true)) {
-                        replacement_node->color = COLOR_DOUBLE_BLACK;
-                        fix_double_black(replacement_node);
-                    }
-                }
-                // if node to delete is a leaf, disconnect it from its parent after treating it as null to fix any double-blackness issues in tree
-                if (node_to_delete->treatAsNull == true) {
-                    ParentToMePtr(node_to_delete) = nullptr;
-                }
-                // finally delete node's memory and decrement tree size
-                delete node_to_delete;
-                numItems--;
             }
+            // node to delete has one child -- node's child moves up to replace deleted node
+            else {
+                // removing a root with one child
+                if (root == node_to_delete) {
+                    // root replaced with root's child and root properties are reset
+                    root = MeToOnlyChildPtr(node_to_delete);
+                    root->parent = nullptr;
+                    root->color = COLOR_BLACK;
+                    replacement_node = root;
+                }
+                else {
+                    // setting parent and child pointers for the node's one child
+                    ParentToMePtr(node_to_delete) = MeToOnlyChildPtr(node_to_delete);
+                    MeToOnlyChildPtr(node_to_delete)->parent = node_to_delete->parent;
+                    replacement_node = MeToOnlyChildPtr(node_to_delete);
+                }
+            }
+
+            // Now check Rotate/Recolor conditions...
+            if (root != nullptr) {
+                // a replacement node that's red or at the root just needs to be recolored black
+                if (replacement_node == root || replacement_node->color == COLOR_RED) {
+                    replacement_node->color = COLOR_BLACK;
+                }
+                // deleted node was black and replacement node is black/null, causes double-blackness problem in tree that needs to be fixed
+                else if (node_to_delete->color == COLOR_BLACK && (replacement_node->color == COLOR_BLACK || replacement_node->treatAsNull == true)) {
+                    replacement_node->color = COLOR_DOUBLE_BLACK;
+                    fix_double_black(replacement_node);
+                }
+            }
+            // if node to delete is a leaf, disconnect it from its parent after treating it as null to fix any double-blackness issues in tree
+            if (node_to_delete->treatAsNull == true) {
+                ParentToMePtr(node_to_delete) = nullptr;
+            }
+            // finally delete node's memory and decrement tree size
+            delete node_to_delete;
+            numItems--;
         }
 
         /**
