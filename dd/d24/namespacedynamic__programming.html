@@ -111,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0a2215194e58786c34db1ccaf8031079"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a0a2215194e58786c34db1ccaf8031079">LIS</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint64_t &gt; &amp;a, const uint32_t &amp;n)</td></tr>
 <tr class="memdesc:a0a2215194e58786c34db1ccaf8031079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the longest increasing subsequence for the specified numbers.  <br /></td></tr>
 <tr class="separator:a0a2215194e58786c34db1ccaf8031079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5239174fa0d987f2c67edc1f2af82beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb">maxCircularSum</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memdesc:a5239174fa0d987f2c67edc1f2af82beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum contiguous circular sum of an array  <br /></td></tr>
+<tr class="separator:a5239174fa0d987f2c67edc1f2af82beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dynamic Programming algorithms. </p>
@@ -187,6 +190,72 @@ Functions</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a0a2215194e58786c34db1ccaf8031079_cgraph.svg" width="314" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5239174fa0d987f2c67edc1f2af82beb" name="a5239174fa0d987f2c67edc1f2af82beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5239174fa0d987f2c67edc1f2af82beb">&#9670;&#160;</a></span>maxCircularSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dynamic_programming::maxCircularSum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the maximum contiguous circular sum of an array </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>is the array/vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int which is the maximum sum </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    <span class="comment">// Edge Case</span></div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>() == 1)</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> arr[0];</div>
+<div class="line"><span class="lineno">   31</span>  </div>
+<div class="line"><span class="lineno">   32</span>    <span class="comment">// Sum variable which stores total sum of the array.</span></div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">int</span> sum = 0;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   35</span>        sum += arr[i];</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span>  </div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// Every variable stores first value of the array.</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> current_max = arr[0], max_so_far = arr[0], current_min = arr[0], min_so_far = arr[0];</div>
+<div class="line"><span class="lineno">   40</span>  </div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// Concept of Kadane&#39;s Algorithm</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; arr.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="comment">// Kadane&#39;s Algorithm to find Maximum subarray sum.</span></div>
+<div class="line"><span class="lineno">   44</span>        current_max = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(current_max + arr[i], arr[i]);</div>
+<div class="line"><span class="lineno">   45</span>        max_so_far = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_so_far, current_max);</div>
+<div class="line"><span class="lineno">   46</span>  </div>
+<div class="line"><span class="lineno">   47</span>        <span class="comment">// Kadane&#39;s Algorithm to find Minimum subarray sum.</span></div>
+<div class="line"><span class="lineno">   48</span>        current_min = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(current_min + arr[i], arr[i]);</div>
+<div class="line"><span class="lineno">   49</span>        min_so_far = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(min_so_far, current_min);</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span>  </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (min_so_far == sum)</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> max_so_far;</div>
+<div class="line"><span class="lineno">   54</span>  </div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// Return the maximum value</span></div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_so_far, sum - min_so_far);</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d24/namespacedynamic__programming_a5239174fa0d987f2c67edc1f2af82beb_cgraph.svg" width="328" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

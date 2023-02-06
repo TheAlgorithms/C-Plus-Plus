@@ -1,5 +1,10 @@
 var NAVTREEINDEX12 =
 {
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a09da9e5b801ede4764bc812975ff7f29":[10,0,17,0,3],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778":[10,0,17,0,0],
+"dd/db6/structbinary__search__tree_1_1bst__node.html#a55c165b9e0e5b50a23104e0604dcc788":[10,0,17,0,1],
+"dd/dba/namespacedivide__and__conquer.html":[9,0,23],
+"dd/dca/class_f_c_f_s.html":[10,0,28],
 "dd/dca/class_f_c_f_s.html#a8fbfe4d85f7576b4a7aade07d29fbd69":[10,0,28,0],
 "dd/dca/class_f_c_f_s.html#aa25dbe30ba9930b5a7c1a6d11758bd91":[10,0,28,2],
 "dd/dca/class_f_c_f_s.html#abb361a612b18bb189aa6d3c49288b793":[10,0,28,1],
@@ -48,8 +53,8 @@ var NAVTREEINDEX12 =
 "de/d48/struct_trie_1_1_trie_node.html":[10,0,53,0],
 "de/d4a/class_compare.html":[10,0,21],
 "de/d4a/class_compare.html#afbdf9a44adb49728dc704155d7d1570c":[10,0,21,0],
-"de/d4f/structmath_1_1_point.html":[10,0,8,1],
 "de/d4f/structmath_1_1_point.html":[9,0,63,0],
+"de/d4f/structmath_1_1_point.html":[10,0,8,1],
 "de/d6a/knuth__morris__pratt_8cpp.html":[11,0,22,2],
 "de/d6a/knuth__morris__pratt_8cpp.html#a26a58225ce7d3fa9d4c2f5349a65ed93":[11,0,22,2,1],
 "de/d6a/knuth__morris__pratt_8cpp.html#a996573527312d5255e1495b879e8a34f":[11,0,22,2,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX12 =
 "df/d8e/namespacetrie__operations.html":[9,0,123],
 "df/d94/subarray__sum_8cpp.html":[11,0,0,7],
 "df/d94/subarray__sum_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,0,7,2],
-"df/d94/subarray__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,7,0],
-"df/d94/subarray__sum_8cpp.html#af5687bbd9faf927fbd363c71e0baba5e":[11,0,0,7,1],
-"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[9,0,110,10],
-"df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html":[10,0,16,5],
-"df/dc8/successive__approximation_8cpp.html":[11,0,14,22],
-"df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389":[11,0,14,22,0]
+"df/d94/subarray__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,7,0]
 };
