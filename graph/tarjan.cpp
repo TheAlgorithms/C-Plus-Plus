@@ -6,15 +6,18 @@
 namespace graph {
 
 
-/*
-AUTHOR -> NISARG PIPALIYA
-ALGORITHM -> TARJAN'S ARTICULATION POINT ALGORITHM
-
-here in tarjan's algorithm to find articulation point we are searching for backedges in graph.
-here the discovery time array keeps track of the vertex we are visiting by assigning discovery time to it that is just a variable having 
-of number of vertex we visited and from low_time array we come to know that the vertex we are visiting was that previously visited by us?
-if yes then low_time[i] < discovery_time[i] which means back-edge exists and this current vertex is not articulation point.
-*/
+/**
+ * @file
+ * @brief Implementation for [Tarjan's articulation points algorithm](https://en.wikipedia.org/wiki/Biconnected_component#Algorithms)
+ * @author [Nisarg Pipaliya](https://github.com/NisargPipaliya)
+ * @details From Wikipedia:
+ * The classic sequential algorithm for computing biconnected components
+ * in a connected undirected graph is due to John Hopcroft and Robert Tarjan (1973).
+ * It runs in linear time, and is based on depth-first search.
+ * The idea is to run a depth-first search while maintaining the following information:
+ *      1.the depth of each vertex in the depth-first-search tree (once it gets visited), and
+ *      2.for each vertex v, the lowest depth of neighbors of all descendants of v (including v itself) in the depth-first-search tree, called the lowpoint.
+ */
 
 void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
 {
