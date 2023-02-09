@@ -32,12 +32,13 @@ public:
 
     void addEdge(int uvertex, int vvertex, int weight = 0)
     {
-        if(isDirected==true)
+        if(isDirected) {
         return;
+        }
 
-        allEdges.push_back(make_pair(uvertex,vvertex));
+        allEdges.emplace_back(uvertex,vvertex);
         
-        allWEdges.push_back(make_pair(weight,make_pair(uvertex,vvertex)));
+        allWEdges.emplace_back(weight,make_pair(uvertex,vvertex));
         
         flag=1;
         g[uvertex].push_back(make_pair(vvertex, weight));
