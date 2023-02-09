@@ -21,11 +21,9 @@ public:
     vector<pair<int,pair<int,int> >> allWEdges; //it stores weight and vertex of edges.
 
 
-    graph(int default_vertex = 10)
+    explicit graph(int default_vertex = 10) : vertex(default_vertex)
     {
-        vertex = default_vertex;
         g.resize(vertex);
-        // visited.resize(vertex);
     }
 
     /*
