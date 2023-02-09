@@ -106,7 +106,7 @@ public:
     }
     void getInfo()
     {
-        cout<<"This graph follows adjecency list representation as vector< list< pair<int,int> > > \n here int pair first is vertex and second is weight of that vertex by defalut it is zero."<<endl;
+        cout<<"This graph follows adjacency list representation as vector< list< pair<int,int> > > \n here int pair first is vertex and second is weight of that vertex by default it is zero."<<endl;
         cout<<"Number of vertices : "<<vertex<<endl;
 
         for(auto i:g)
