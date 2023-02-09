@@ -18,7 +18,12 @@ namespace graph {
  *      1.the depth of each vertex in the depth-first-search tree (once it gets visited), and
  *      2.for each vertex v, the lowest depth of neighbors of all descendants of v (including v itself) in the depth-first-search tree, called the lowpoint.
  */
-
+/**
+ * @brief Find articulation points with Tarjan's algorithm
+ * @param tg Pointer to target graph
+ * @param start_vertex Location to start the search
+ * @param result Pointer to location to store the results
+ */
 void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
 {
     static vector<bool> visited(tg.vertex,false);
