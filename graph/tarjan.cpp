@@ -56,8 +56,11 @@ void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
     }
 }
 
-int main(void)
-{
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
     set<int> result;
     graph tarjan(7);
 
@@ -87,16 +90,24 @@ int main(void)
         cout<<i<<" ";
     }
     cout<<endl;
-    
+
 
     cout<<"Articulation Points By Tarjan's Algorithm : "<<endl;
-    
+
     tarjans_ap(tarjan,0,result);
     for(auto i : result)
     {
         cout<<i<<" ";
     }
     cout<<endl;
+}
 
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main()
+{
+    test(); // Run self-test implementations
     return 0;
 }
