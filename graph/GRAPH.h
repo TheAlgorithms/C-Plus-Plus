@@ -109,7 +109,7 @@ public:
         cout<<"This graph follows adjacency list representation as vector< list< pair<int,int> > > \n here int pair first is vertex and second is weight of that vertex by default it is zero."<<endl;
         cout<<"Number of vertices : "<<vertex<<endl;
 
-        for(auto i:g)
+        for(const auto& i:g)
         {
             for(auto j : i)
             {
