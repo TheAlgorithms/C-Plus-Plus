@@ -1,4 +1,10 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<queue>
+#include<list>
+#include<tuple>
+#include<set>
+
 using namespace std;
 
 #ifndef GRAPH_h
