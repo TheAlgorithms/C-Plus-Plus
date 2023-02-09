@@ -1,5 +1,9 @@
 #include "GRAPH.h"  /*  DO DOWNLOAD GRAPH.H USERDEFINED LIB TOO.*/
-using namespace std;
+/**
+ * @namespace graph
+ * @brief Graph algorithms
+ */
+namespace graph {
 
 
 /*
