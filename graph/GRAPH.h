@@ -5,7 +5,6 @@
 #include<tuple>
 #include<set>
 
-using namespace std;
 
 #ifndef GRAPH_h
 #define GRAPH_h
