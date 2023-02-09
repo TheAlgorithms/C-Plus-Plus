@@ -16,7 +16,6 @@ public:
 
     vector<list<pair<int, int>>> g;
     int vertex;
-    // vector<bool> visited;
     bool isDirected=false;
     int flag=0;
     vector<pair<int,int>> allEdges; // for keeping track of all edges used for cycle detection.
