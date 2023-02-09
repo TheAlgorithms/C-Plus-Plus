@@ -19,7 +19,7 @@ public:
     // vector<bool> visited;
     bool isDirected=false;
     int flag=0;
-    vector<pair<int,int>> allEdges; // for keeping trackof all edges used for cycle detection.
+    vector<pair<int,int>> allEdges; // for keeping track of all edges used for cycle detection.
     vector<pair<int,pair<int,int> >> allWEdges; //it stores weight and vertex of edges.
 
 
