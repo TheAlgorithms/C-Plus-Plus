@@ -98,7 +98,7 @@ public:
 
         for(auto i : g[start_vertex])
         {
-            if(visited[i.first] == false)
+            if(!visited[i.first])
             {
                 DFS(i.first,result);
             }
