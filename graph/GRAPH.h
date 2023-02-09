@@ -55,7 +55,7 @@ public:
 
     void addDirectedEdge(int uvertex, int vvertex, int weight = 0) // use when we need to directed graph
     {
-        if(isDirected==false && flag!=0)
+        if(!isDirected && flag!=0)
         return;
         
         allEdges.push_back(make_pair(uvertex,vvertex));
