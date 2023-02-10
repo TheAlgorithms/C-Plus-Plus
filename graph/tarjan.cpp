@@ -1,10 +1,124 @@
-#include "GRAPH.h"  /*  DO DOWNLOAD GRAPH.H USERDEFINED LIB TOO.*/
+#include<iostream> /// for general input and output
+#include<vector> /// for storing graph
+#include<queue> /// used for BFS algorithm in below namespace
+#include<list>  /// used for making adjacency list representation of graph
+#include<set>   /// for returning result of tarjan's agorithm
+
 /**
  * @namespace graph
  * @brief Graph algorithms
  */
 namespace graph {
+class Graph
+{
+public:
 
+    std::vector<std::list<std::pair<int, int>>> g;
+    int vertex;
+    bool isDirected=false;
+    int flag=0;
+    std::vector<std::pair<int,int>> allEdges; // for keeping track of all edges used for cycle detection.
+    std::vector<std::pair<int,std::pair<int,int> >> allWEdges; //it stores weight and vertex of edges.
+
+
+    explicit Graph(int default_vertex = 10) 
+    {
+        g.resize(vertex);
+        vertex=default_vertex;
+    }
+
+    /*
+                                UNDIRECTED GRAPH
+    */
+
+    void addEdge(int uvertex, int vvertex, int weight = 0)
+    {
+        if(isDirected) {
+        return;
+        }
+
+        allEdges.emplace_back(uvertex,vvertex);
+        
+        allWEdges.emplace_back(weight,std::make_pair(uvertex,vvertex));
+        
+        flag=1;
+        g[uvertex].push_back(std::make_pair(vvertex, weight));
+        g[vvertex].push_back(std::make_pair(uvertex, weight));
+    }
+
+    
+    /*
+                                DIRECTED GRAPH
+    */
+
+    void addDirectedEdge(int uvertex, int vvertex, int weight = 0) // use when we need to directed graph
+    {
+        if(!isDirected && flag!=0)
+        return;
+        
+        allEdges.push_back(std::make_pair(uvertex,vvertex));
+       
+            allWEdges.push_back(std::make_pair(weight,std::make_pair(uvertex,vvertex)));
+
+        isDirected=true;
+        g[uvertex].push_back(std::make_pair(vvertex, weight));
+    }
+
+    std::vector<int> BFS(int start_vertex)
+    {
+        std::vector<int> ans;
+        std::vector<bool> visited(vertex,false);
+        std::queue<int> q;
+        q.push(start_vertex);
+        visited[start_vertex]=true;
+
+        while(!q.empty())
+        {
+            int u=q.front();
+            ans.push_back(u);
+            q.pop();
+            for(auto i : g[u])
+            {
+                if(visited[i.first]==false)
+                {
+                    q.push(i.first);
+                    visited[i.first]=true;
+                }
+            }
+        }
+        return ans;
+    }
+    void DFS(int start_vertex , std::vector<int> &result)
+    {
+        static std::vector<bool> visited(vertex,false);
+        visited[start_vertex]=true;
+        result.push_back(start_vertex);
+
+        for(auto i : g[start_vertex])
+        {
+            if(!visited[i.first])
+            {
+                DFS(i.first,result);
+            }
+        }
+    }
+    void getInfo()
+    {
+        std::cout<<"This graph follows adjacency list representation as vector< list< pair<int,int> > > \n here int pair first is vertex and second is weight of that vertex by default it is zero."<<std::endl;
+        std::cout<<"Number of vertices : "<<vertex<<std::endl;
+
+        for(const auto& i:g)
+        {
+            for(auto j : i)
+            {
+             std::cout<<"Vertex "<<j.first<<" Weight "<<j.second<<std::endl;
+            }
+        }
+    }
+
+};
+
+}
 
 /**
  * @file
@@ -24,12 +138,12 @@ namespace graph {
  * @param start_vertex Location to start the search
  * @param result Pointer to location to store the results
  */
-void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
+void tarjans_ap(graph::Graph&tg,int start_vertex,std::set<int> &result)
 {
-    static vector<bool> visited(tg.vertex,false);
-    static vector<int> discovery_time(tg.vertex,0);
-    static vector<int> low_time(tg.vertex,0);
-    static vector<int> parent(tg.vertex,-1);
+    static std::vector<bool> visited(tg.vertex,false);
+    static std::vector<int> discovery_time(tg.vertex,0);
+    static std::vector<int> low_time(tg.vertex,0);
+    static std::vector<int> parent(tg.vertex,-1);
     static int time=1;
 
     visited[start_vertex]=true;
@@ -44,7 +158,7 @@ void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
             parent[it.first]=start_vertex;
             tarjans_ap(tg,it.first,result);
 
-            low_time[start_vertex] = min(low_time[it.first],low_time[start_vertex]);
+            low_time[start_vertex] = std::min(low_time[it.first],low_time[start_vertex]);
 
             if(parent[start_vertex]==-1 && child>1)
             result.insert(start_vertex);
@@ -52,7 +166,7 @@ void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
             result.insert(start_vertex);
         }
         else if(it.first!=parent[start_vertex])
-        low_time[start_vertex]=min(low_time[start_vertex],discovery_time[it.first]);
+        low_time[start_vertex] = std::min(low_time[start_vertex],discovery_time[it.first]);
     }
 }
 
@@ -61,8 +175,8 @@ void tarjans_ap(graph&tg,int start_vertex,set<int> &result)
  * @returns void
  */
 static void test() {
-    set<int> result;
-    graph tarjan(7);
+    std::set<int> result;
+    graph::Graph tarjan(7);
 
     tarjan.addEdge(0,1);
     tarjan.addEdge(0,3);
@@ -73,33 +187,33 @@ static void test() {
     tarjan.addEdge(3,5);
     tarjan.addEdge(4,5);
 
-    cout<<"BFS"<<endl;
-    vector<int>bfs = tarjan.BFS(0);
+    std::cout<<"BFS"<<std::endl;
+    std::vector<int>bfs = tarjan.BFS(0);
 
     for(auto i : bfs)
     {
-        cout<<i<<" ";
+        std::cout<<i<<" ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
 
-    cout<<"DFS"<<endl;
-    vector<int> dfs;
+    std::cout<<"DFS"<<std::endl;
+    std::vector<int> dfs;
     tarjan.DFS(0,dfs);
     for(auto i : dfs)
     {
-        cout<<i<<" ";
+        std::cout<<i<<" ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
 
 
-    cout<<"Articulation Points By Tarjan's Algorithm : "<<endl;
+    std::cout<<"Articulation Points By Tarjan's Algorithm : "<<std::endl;
 
     tarjans_ap(tarjan,0,result);
     for(auto i : result)
     {
-        cout<<i<<" ";
+        std::cout<<i<<" ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
 }
 
 /**
