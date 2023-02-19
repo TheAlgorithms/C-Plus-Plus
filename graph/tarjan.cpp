@@ -24,7 +24,7 @@ public:
     explicit Graph(int default_vertex = 10) 
     {
         g.resize(vertex);
-        vertex=default_vertex;
+        this->vertex=default_vertex;
     }
 
     /*
@@ -42,8 +42,8 @@ public:
         allWEdges.emplace_back(weight,std::make_pair(uvertex,vvertex));
         
         flag=1;
-        g[uvertex].push_back(std::make_pair(vvertex, weight));
-        g[vvertex].push_back(std::make_pair(uvertex, weight));
+        g[uvertex].emplace_back(std::make_pair(vvertex, weight));
+        g[vvertex].emplace_back(std::make_pair(uvertex, weight));
     }
 
     
@@ -54,14 +54,16 @@ public:
     void addDirectedEdge(int uvertex, int vvertex, int weight = 0) // use when we need to directed graph
     {
         if(!isDirected && flag!=0)
-        return;
+        {
+            return;
+        }
         
-        allEdges.push_back(std::make_pair(uvertex,vvertex));
+        allEdges.emplace_back(std::make_pair(uvertex,vvertex));
        
-            allWEdges.push_back(std::make_pair(weight,std::make_pair(uvertex,vvertex)));
+            allWEdges.emplace_back(std::make_pair(weight,std::make_pair(uvertex,vvertex)));
 
         isDirected=true;
-        g[uvertex].push_back(std::make_pair(vvertex, weight));
+        g[uvertex].emplace_back(std::make_pair(vvertex, weight));
     }
 
     std::vector<int> BFS(int start_vertex)
@@ -75,14 +77,14 @@ public:
         while(!q.empty())
         {
             int u=q.front();
-            ans.push_back(u);
+            ans.emplace_back(u);
             q.pop();
             for(auto i : g[u])
             {
                 if(visited[i.first]==false)
                 {
                     q.push(i.first);
-                    visited[i.first]=true;
+                    visited[i.first]=true;                              
                 }
             }
         }
@@ -92,7 +94,7 @@ public:
     {
         static std::vector<bool> visited(vertex,false);
         visited[start_vertex]=true;
-        result.push_back(start_vertex);
+        result.emplace_back(start_vertex);
 
         for(auto i : g[start_vertex])
         {
@@ -161,12 +163,18 @@ void tarjans_ap(graph::Graph&tg,int start_vertex,std::set<int> &result)
             low_time[start_vertex] = std::min(low_time[it.first],low_time[start_vertex]);
 
             if(parent[start_vertex]==-1 && child>1)
-            result.insert(start_vertex);
+            {
+                result.insert(start_vertex);
+            }
             else if(parent[start_vertex]!=-1 && discovery_time[start_vertex]<=low_time[it.first])
-            result.insert(start_vertex);
+            {
+                result.insert(start_vertex);
+            }
         }
         else if(it.first!=parent[start_vertex])
-        low_time[start_vertex] = std::min(low_time[start_vertex],discovery_time[it.first]);
+        {
+            low_time[start_vertex] = std::min(low_time[start_vertex],discovery_time[it.first]);
+        }
     }
 }
 
