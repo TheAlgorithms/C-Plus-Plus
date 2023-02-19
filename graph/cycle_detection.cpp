@@ -1,5 +1,9 @@
-#include <vector> //path saving and node colouring
+#include <vector> //for std::vector<T>
 #include <iostream> //for IO operations
+
+// The algorithm is using the colouring technique for finding a cycle in a graph
+// you can see more details here : https://en.wikipedia.org/wiki/Graph_coloring
+
 
 class Graph {
  private:
@@ -89,6 +93,13 @@ class Graph {
 };
 
 int main(){
+    /**
+    * @brief Main function
+    *
+    * @param v: number of vertices
+    * @param u: number of edges
+    * @param path: path saving array
+    */
     int v , u;
     std::cout << "Enter the number of vertices , :";
     std::cin >> v;
