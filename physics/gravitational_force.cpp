@@ -1,3 +1,13 @@
+/**
+ * @file gravitational_force.cpp
+ * @brief
+ * https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation
+ * @details
+ *newton's law of universal gravitation
+ * @author [Ayaanlehashi11](https://github.com/ayaanlehashi11)
+ * @see
+ */
+
 #include <iostream>
 #include <cmath>
 #include <cstdint>
