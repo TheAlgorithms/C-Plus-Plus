@@ -81,15 +81,15 @@ static void test() {
     /* Following tests would check for multiple cases that values of 
     variables do actually swap */
     std::cout << "Test-case: #1" << std::endl;
-    assert(bitwiseSwap(2,3) == true); // TC #1
+    assert(bit_manipulation::bitwiseSwap(2,3) == true); // TC #1
     std::cout << "Test-case: #2" << std::endl;
-    assert(bitwiseSwap(0,53) == true); // TC #2
+    assert(bit_manipulation::bitwiseSwap(0,53) == true); // TC #2
     std::cout << "Test-case: #3" << std::endl;
-    assert(bitwiseSwap(622,733) == true); // TC #3
+    assert(bit_manipulation::bitwiseSwap(622,733) == true); // TC #3
     std::cout << "Test-case: #4" << std::endl;
-    assert(bitwiseSwap(-8246,-9357) == true); // TC #4
+    assert(bit_manipulation::bitwiseSwap(-8246,-9357) == true); // TC #4
     std::cout << "Test-case: #5" << std::endl;
-    assert(bitwiseSwap(7,7) == true); // TC #5
+    assert(bit_manipulation::bitwiseSwap(7,7) == true); // TC #5
 }
 
 /**
