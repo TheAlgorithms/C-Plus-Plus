@@ -71,6 +71,7 @@ bool bitwiseSwap(int a, int b) {
         return false;
     }
 }
+}  // namespace bit_manipulation
 
 /**
  * @brief Self-test implementations
