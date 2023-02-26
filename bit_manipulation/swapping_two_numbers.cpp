@@ -11,6 +11,11 @@
 #include <iostream>  /// for IO operations
 #include <cassert>  /// for assert
 
+/**
+ * @brief Bit Manipulation algorithms
+ * @namespace
+ */
+namespace bit_manipulation {
 bool bitwiseSwap(int a, int b) {
     /* Explanation of below code is assuming that value of a = 2,
     *  and value of b = 3.
