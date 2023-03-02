@@ -47,6 +47,7 @@ class Node {
 
 Node* copy_all_nodes(const Node* const node) {
     if (node) {
+        // NOLINTNEXTLINE(cppcoreguidelines-owning-memory)
         Node* res = new Node();
         res->val = node->val;
         res->next = copy_all_nodes(node->next);
@@ -58,6 +59,7 @@ Node* copy_all_nodes(const Node* const node) {
 /**
  * A list class containing a sequence of links
  */
+// NOLINTNEXTLINE(cppcoreguidelines-special-member-functions)
 class list {
  private:
     Node* head = nullptr;  // link before the actual first element
@@ -91,6 +93,7 @@ bool list::isEmpty() const { return head == nullptr; }
  */
 void list::insert(int32_t n) {
     try {
+        // NOLINTNEXTLINE(cppcoreguidelines-owning-memory)
         Node* new_node = new Node();
         Node* temp = nullptr;
         new_node->val = n;
