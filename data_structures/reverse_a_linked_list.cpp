@@ -190,8 +190,9 @@ void list::copy_all_nodes_from_list(const list& other) {
 list::list(const list& other) { copy_all_nodes_from_list(other); }
 
 list& list::operator=(const list& other) {
-    if (this == &other)
+    if (this == &other) {
         return *this;
+    }
     delete_all_nodes();
 
     copy_all_nodes_from_list(other);
