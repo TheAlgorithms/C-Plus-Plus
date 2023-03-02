@@ -24,7 +24,6 @@
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
-#include <memory>    /// for dynamic memory
 #include <new>       /// for managing  dynamic storage
 
 /**
