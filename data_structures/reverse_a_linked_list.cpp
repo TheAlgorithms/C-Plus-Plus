@@ -65,6 +65,7 @@ class list {
     int32_t top();
     int32_t last();
     int32_t traverse(int32_t index);
+    ~list();
 };
 
 /**
@@ -160,6 +161,14 @@ int32_t list::traverse(int32_t index) {
     /* if we get to this line,the caller was asking for a non-existent element
     so we assert fail */
     exit(1);
+}
+
+list::~list() {
+    while (head != nullptr) {
+        const auto tmp_node = head->next;
+        delete head;
+        head = tmp_node;
+    }
 }
 
 }  // namespace linked_list
