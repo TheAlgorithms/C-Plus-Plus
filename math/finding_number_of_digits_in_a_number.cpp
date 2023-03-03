@@ -45,7 +45,7 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
 /**
  * @brief This function finds the number of digits
  * in constant time
- * TC :O(1)
+ * TC: O(1)
  * @param n the number to check its digits
  * @returns the digits count
  */
