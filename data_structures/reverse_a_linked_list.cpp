@@ -233,9 +233,6 @@ static void test() {
     std::cout << "All tests have successfully passed!" << std::endl;
 }
 
-/**
- * @brief tests copy constructor
- */
 void test_copy_constructor() {
     data_structures::linked_list::list L;
     L.insert(10);
