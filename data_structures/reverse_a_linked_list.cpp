@@ -195,6 +195,7 @@ void list::delete_all_nodes() {
 list::~list() { delete_all_nodes(); }
 
 void list::copy_all_nodes_from_list(const list& other) {
+    assert(isEmpty());
     head = copy_all_nodes(other.head);
 }
 
