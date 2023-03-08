@@ -45,6 +45,11 @@ class Node {
     Node* next;   /// pointer to the next value on the list
 };
 
+/**
+ *  @brief creates a deep copy of a list starting at the input node
+ *  @param[in] node pointer to the first node/head of the list to be copied
+ *  @return pointer to the first node/head of the copied list or nullptr
+ */
 Node* copy_all_nodes(const Node* const node) {
     if (node) {
         // NOLINTNEXTLINE(cppcoreguidelines-owning-memory)
@@ -176,6 +181,9 @@ int32_t list::traverse(int32_t index) const {
     exit(1);
 }
 
+/**
+ *  @brief calls delete operator on every node in the represented list
+ */
 void list::delete_all_nodes() {
     while (head != nullptr) {
         const auto tmp_node = head->next;
@@ -190,8 +198,14 @@ void list::copy_all_nodes_from_list(const list& other) {
     head = copy_all_nodes(other.head);
 }
 
+/**
+ *  @brief copy constructor creating a deep copy of every node of the input
+ */
 list::list(const list& other) { copy_all_nodes_from_list(other); }
 
+/**
+ *  @brief assignment operator creating a deep copy of every node of the input
+ */
 list& list::operator=(const list& other) {
     if (this == &other) {
         return *this;
