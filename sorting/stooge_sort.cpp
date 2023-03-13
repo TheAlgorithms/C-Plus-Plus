@@ -14,7 +14,8 @@
  */
 
 #include <vector> /// for vector
-#include <iostream> /// for cout
+#include <cassert> /// for assert
+#include <algorithm>  /// for std::is_sorted
 
 /**
  * The stoogeSort() function is used for sorting the array.
@@ -39,18 +40,41 @@ void stoogeSort(std::vector<int> *L, int i, int j) {
 }
 
 /**
+ * @brief Function to test sorting algorithm
+ */
+void test1() {
+	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
+	stoogeSort(&L, 0, L.size() - 1);
+	assert(std::is_sorted(std::begin(L), std::end(L)));
+}
+
+/**
+ * @brief Function to test sorting algorithm, one element
+ */
+void test2() {
+	std::vector<int> L = { -1};
+	stoogeSort(&L, 0, L.size() - 1);
+	assert(std::is_sorted(std::begin(L), std::end(L)));
+}
+
+/**
+ * @brief Function to test sorting algorithm, repeating elements
+ */
+void test3() {
+	std::vector<int> L = { 1, 2, 5, 4, 1, 5};
+	stoogeSort(&L, 0, L.size() - 1);
+	assert(std::is_sorted(std::begin(L), std::end(L)));
+}
+
+/**
  * @brief Main function
  * @param argc commandline argument count (ignored)
  * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
 int main() {
-	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
-	stoogeSort(&L, 0, L.size() - 1);
-	std::cout << "Sorted array:" << std::endl;
-	for (int i = 0; i < L.size(); i++) {
-		std::cout << L[i] << " ";
-	}
-	std::cout << std::endl;
+	test1();
+	test2();
+	test3();
 	return 0;
 }
