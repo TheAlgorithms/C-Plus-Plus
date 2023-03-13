@@ -13,9 +13,16 @@
  * on the street on average. Space complexity is O(1).
  */
 
-#include <vector>
-#include <iostream>
+#include <vector> /// for vector
+#include <iostream> /// for cout
 
+/**
+ * The stoogeSort() function is used for sorting the array.
+ *
+ * @param L - vector of values (int) to be sorted in in place (ascending order)
+ * @param i - the first index of the array (0)
+ * @param j - the last index of the array (L.size() - 1)
+ */
 void stoogeSort(std::vector<int> *L, int i, int j) {
 	if (i < j) {
 		if ((*L)[i] > (*L)[j]) {	
@@ -31,6 +38,12 @@ void stoogeSort(std::vector<int> *L, int i, int j) {
 	return;
 }
 
+/**
+ * @brief Main function
+ * @param argc commandline argument count (ignored)
+ * @param argv commandline array of arguments (ignored)
+ * @returns 0 on exit
+ */
 int main() {
 	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
 	stoogeSort(&L, 0, L.size() - 1);
