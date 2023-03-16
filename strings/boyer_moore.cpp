@@ -12,8 +12,10 @@
 
 #define APLHABET_SIZE CHAR_MAX
 
-/// @brief A structure representing all the data we need to search the
-/// preprocessed pattern in text.
+/**
+ * @brief A structure representing all the data we need to search the
+ * preprocessed pattern in text.
+ */
 struct pattern {
     std::string pat;
 
@@ -21,9 +23,13 @@ struct pattern {
     std::vector<size_t> good_suffix;
 };
 
-/// @brief A function that preprocess the good suffix thable
-/// @param str The string being preprocessed
-/// @param arg The good suffix table
+/**
+ * @brief A function that preprocess the good suffix thable
+ * 
+ * @param str The string being preprocessed
+ * @param arg The good suffix table
+ * @return void
+ */
 void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(str.size() + 1, 0);
 
@@ -63,9 +69,13 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     }
 }
 
-/// @brief A function that preprocess the bad char table
-/// @param str The string being preprocessed
-/// @param arg The bad char table
+/**
+ * @brief A function that preprocess the bad char table
+ * 
+ * @param str The string being preprocessed
+ * @param arg The bad char table
+ * @return void
+ */
 void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(APLHABET_SIZE, str.length());
 
@@ -73,19 +83,25 @@ void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
         arg[str[i]] = str.length() - i - 1;
 }
 
-/// @brief A function that initializes pattern
-/// @param str Text used for initialization
-/// @param arg Initialized structure
+/**
+ * @brief A function that initializes pattern
+ * 
+ * @param str Text used for initialization
+ * @param arg Initialized structure
+ * @return void
+ */
 void init_pattern(const std::string& str, pattern& arg) {
     arg.pat = str;
     init_bad_char(str, arg.bad_char);
     init_good_suffix(str, arg.good_suffix);
 }
-
-/// @brief A function that implements Boyer-Moore's algorithm.
-/// @param str Text we are seatching in.
-/// @param arg pattern structure containing the preprocessed pattern
-/// @return (vector of) indexes of the occurrences of pattern in text
+/**
+ * @brief A function that implements Boyer-Moore's algorithm.
+ * 
+ * @param str Text we are seatching in.
+ * @param arg pattern structure containing the preprocessed pattern
+ * @return (vector of) indexes of the occurrences of pattern in text
+ */
 std::vector<size_t> search(const std::string& str, const pattern& arg) {
     size_t index_position = arg.pat.size() - 1;
     std::vector<size_t> index_storage;
@@ -112,11 +128,14 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
     return index_storage;
 }
 
-/// @brief Check if pat is prefix of str
-/// @param str pointer to some part of the input text
-/// @param pat the searched pattern
-/// @param len length of the searched pattern
-/// @return true if pat is prefix of str. false otherwise.
+/**
+ * @brief Check if pat is prefix of str.
+ * 
+ * @param str pointer to some part of the input text.
+ * @param pat the searched pattern.
+ * @param len length of the searched pattern
+ * @return true if pat is prefix of str. false otherwise.
+ */
 bool is_prefix(const char* str, const char* pat, size_t len) {
     if (strlen(str) < len)
         return false;
@@ -149,8 +168,11 @@ void pat_test(const char* text) {
         assert(is_prefix(text + idx, "pat", 3));
     }
 }
-
-void tests() {
+/**
+ * @brief Self-test implementations
+ * @return void
+ */
+static void tests() {
     const char* text =
         "When pat Mr. and Mrs. pat Dursley woke up on the dull, gray  \
                             Tuesday our story starts, \
@@ -163,4 +185,11 @@ void tests() {
     pat_test(text);
 }
 
-int main() { tests(); }
+/**
+ * @brief Main function
+ * 
+ * @return 0
+ */
+int main() { 
+    tests(); 
+}
