@@ -4,11 +4,11 @@
  * text.
  * @author [Stoycho Kyosev](https://github.com/stoychoX)
  */
-#include <cassert>
-#include <cstring>
-#include <iostream>
-#include <limits>
-#include <vector>
+#include <cassert> /// for assert
+#include <cstring> /// for strlen
+#include <limits>  /// for CHAR_MAX macro
+#include<string>   /// for std::string
+#include <vector>  /// for std::vector
 
 #define APLHABET_SIZE CHAR_MAX
 
