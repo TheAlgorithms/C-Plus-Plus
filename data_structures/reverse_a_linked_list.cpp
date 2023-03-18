@@ -124,7 +124,8 @@ void list::insert(int32_t n) {
  */
 void list::reverseList() {
     Node* curr = head;
-    Node *prev = nullptr, *next_node = nullptr;
+    Node* prev = nullptr;
+    Node* next_node = nullptr;
     while (curr != nullptr) {
         next_node = curr->next;
         curr->next = prev;
