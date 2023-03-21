@@ -7,7 +7,7 @@
 #include <iostream>  /// for IO operations
 #include <cassert>   /// for assert
 #include <queue>     /// for storing node in level order traversal
-using namespace std;
+#include <sstream>   /// for converting expected output to a string
 
 class Node {
 public:
@@ -38,7 +38,7 @@ public:
         }
 
         // queue for level order traversal
-        queue<Node*> q;
+        std::queue<Node*> q;
         q.push(root);
 
         while (!q.empty()) {
@@ -74,10 +74,72 @@ public:
         if (node == NULL) return;       // stop traversal if node is NULL
 
         inorderTraversal(node->left);   // recursively traverse current node's left subtree
-        cout << node->data << " ";      // print the current node's data
+        std::cout << node->data << " ";      // print the current node's data
         inorderTraversal(node->right);  // recursively traverse current node's right subtree
     }
 };
+
+/**
+* @brief [Self-tests for inorder tree traversal]
+* @returns void
+*/
+void test() {
+    BinaryTree tree;    // create a tree
+    Node *root = NULL;  // root node
+
+    /* without any nodes (including root) */
+    std::stringstream expected_output;
+    expected_output << "";
+
+    // Redirect cout to a stringstream buffer
+    std::stringstream actual_output;
+    std::streambuf* old = std::cout.rdbuf(actual_output.rdbuf());
+    tree.inorderTraversal(root);
+    std::cout.rdbuf(old);  // restore cout
+
+    assert(actual_output.str() == expected_output.str());
+
+    /* with only a root node */
+    tree.insertNode(root, 8);
+
+    expected_output << "8 ";
+
+    old = std::cout.rdbuf(actual_output.rdbuf());
+    tree.inorderTraversal(root);
+    std::cout.rdbuf(old);
+
+    assert(actual_output.str() == expected_output.str());
+
+    /* perfect binary tree */
+    tree.insertNode(root, 3);
+    tree.insertNode(root, 10);
+    tree.insertNode(root, 1);
+    tree.insertNode(root, 6);
+    tree.insertNode(root, 5);
+    tree.insertNode(root, 2);
+
+    expected_output << "1 3 6 8 5 10 2 ";
+    old = std::cout.rdbuf(actual_output.rdbuf());
+    tree.inorderTraversal(root);
+    std::cout.rdbuf(old);
+
+    assert(actual_output.str() == expected_output.str());
+    expected_output.clear();
+    actual_output.clear();
+
+    /* complete binary tree */
+    tree.insertNode(root, 14);
+    tree.insertNode(root, 4);
+    tree.insertNode(root, 7);
+    tree.insertNode(root, 13);
+
+    expected_output << "14 1 4 3 7 6 13 8 5 10 2 ";
+    old = std::cout.rdbuf(actual_output.rdbuf());
+    tree.inorderTraversal(root);
+    std::cout.rdbuf(old);
+
+    assert(actual_output.str() == expected_output.str());
+}
 
 /**
  * @brief Main function
@@ -85,11 +147,13 @@ public:
  */
 int main() {
     // Testing inorder traversal
-    BinaryTree tree;  // create a tree
-    Node *root = NULL; // root node
+    test();
+
+    BinaryTree tree;    // create a tree
+    Node *root = NULL;  // root node
     
     for(int i = 0; i < 15; i++) tree.insertNode(root, i);
-    cout << "Inorder Traversal: ";
+    std::cout << "Inorder Traversal: ";
     tree.inorderTraversal(root);
 
     return 0;
