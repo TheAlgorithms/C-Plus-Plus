@@ -18,11 +18,11 @@
 #include <algorithm>  /// for std::is_sorted
 
 /**
- * The stoogeSort() function is used for sorting the array.
- *
+ * @brief The stoogeSort() function is used for sorting the array.
  * @param L - vector of values (int) to be sorted in in place (ascending order)
  * @param i - the first index of the array (0)
  * @param j - the last index of the array (L.size() - 1)
+ * @returns void
  */
 void stoogeSort(std::vector<int> *L, int i, int j) {
 	if (i < j) {
@@ -41,6 +41,7 @@ void stoogeSort(std::vector<int> *L, int i, int j) {
 
 /**
  * @brief Function to test sorting algorithm
+ * @returns void
  */
 void test1() {
 	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
@@ -50,6 +51,7 @@ void test1() {
 
 /**
  * @brief Function to test sorting algorithm, one element
+ * @returns void
  */
 void test2() {
 	std::vector<int> L = { -1};
@@ -59,6 +61,7 @@ void test2() {
 
 /**
  * @brief Function to test sorting algorithm, repeating elements
+ * @returns void
  */
 void test3() {
 	std::vector<int> L = { 1, 2, 5, 4, 1, 5};
