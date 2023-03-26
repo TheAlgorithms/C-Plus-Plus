@@ -1605,7 +1605,7 @@ void LargeRandomRemoveMemoryTest() {
         }
     }
     // getting numbers to remove, starting from end of vector
-    int idx = random_numbers.size() - 1;
+    size_t idx = random_numbers.size() - 1;
 
     // then removing the numbers until tree is empty
     // (checking for memory issues/exceptions)
