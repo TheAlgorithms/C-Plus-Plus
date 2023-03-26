@@ -186,14 +186,15 @@ class RedBlackTree {
          */
         void Remove(int data) {
             RBTNode* node_to_delete = Find(data);
-            // this variable represents the node that will replace the
-            // deleted node
+
+            // to store the node that will replace the deleted node
             RBTNode* replacement_node = node_to_delete;
 
-            // to check how many children the node to delete has
-            unsigned int num_children = 0;
-            if (node_to_delete->left != nullptr) num_children++;
-            if (node_to_delete->right != nullptr) num_children++;
+            // to check number of children the node to delete has
+            unsigned int num_children = get_num_children(node_to_delete);
+
+            // to check if node to delete is also the root node
+            bool is_root = (node_to_delete == root);
 
             // node to delete has two children -- update node with its
             // IOS value and remove IOS node
@@ -249,6 +250,22 @@ class RedBlackTree {
             // finally delete node's memory and decrement tree size
             delete node_to_delete;
             numItems--;
+        }
+
+        /**
+         * @brief Returns the number of children for
+         * the given node (0, 1, or 2)
+         * 
+         * @param node the tree node to check
+         * @return unsigned int number of children this node has
+         */
+        unsigned int get_num_children(RBTNode* node) {
+            // to check how many children the node has
+            unsigned int num_children = 0;
+            if (node->left != nullptr) num_children++;
+            if (node->right != nullptr) num_children++;
+
+            return num_children;
         }
 
         /**
