@@ -16,6 +16,7 @@
  * @param start_vertex Location to start the search
  * @param result Pointer to location to store the results
  */
+ 
 #include<iostream> /// for general input and output
 #include<vector> /// for storing graph
 #include<queue> /// used for BFS algorithm in below namespace
@@ -31,27 +32,27 @@ class Graph
 {
 public:
 
-    std::vector<std::list<std::pair<int, int>>> g;
-    int vertex;
-    bool isDirected=false;
-    int flag=0;
-    std::vector<std::pair<int,int>> allEdges; // for keeping track of all edges used for cycle detection.
-    std::vector<std::pair<int,std::pair<int,int> >> allWEdges; //it stores weight and vertex of edges.
+    std::vector<std::list<std::pair<int, int>>> g;   // adjecency list to store graph
+    int vertex;                                     // Total number of vertices in graph
+    bool isDirected=false;                          // to check is graph is directed or not
+    int flag=0;                                 
+    std::vector<std::pair<int,int>> allEdges;                           // for keeping track of all edges used for cycle detection.
+    std::vector<std::pair<int,std::pair<int,int> >> allWEdges;         //it stores weight and vertex of edges.
 
 
-    explicit Graph(int default_vertex = 10) 
+    explicit Graph(int default_vertex = 10)      // Constructor for Graph Class, default_vertex -> formal argument that sets default vertex size.
     {
-        g.resize(vertex);
-        this->vertex=default_vertex;
+        g.resize(vertex);               // resizing the adjecency list
+        this->vertex=default_vertex;    // setting value of class variable.
     }
 
     /*
                                 UNDIRECTED GRAPH
     */
 
-    void addEdge(int uvertex, int vvertex, int weight = 0)
-    {
-        if(isDirected) {
+    void addEdge(int uvertex, int vvertex, int weight = 0)          // if graph is undirected then this function is called.
+    {                                                              //  formal arguments uvertex,vvertex -> it suggest that there exists edge between this two vertices, weight is used if graph is weighted.
+        if(isDirected) {            
         return;
         }
 
