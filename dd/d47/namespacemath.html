@@ -150,6 +150,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5803413618fcfb922cb32c6db0fc864"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ac5803413618fcfb922cb32c6db0fc864">cylinder_surface_area</a> (T radius, T height)</td></tr>
 <tr class="memdesc:ac5803413618fcfb922cb32c6db0fc864"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface area of a <a href="https://en.wikipedia.org/wiki/Cylinder" target="_blank">cylinder</a> (2 * pi * r * h + 2 * pi * r^2)  <br /></td></tr>
 <tr class="separator:ac5803413618fcfb922cb32c6db0fc864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91366864111e1fac29722ca45e02ea8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f">sieve</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *vec)</td></tr>
+<tr class="memdesc:a91366864111e1fac29722ca45e02ea8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the sieve.  <br /></td></tr>
+<tr class="separator:a91366864111e1fac29722ca45e02ea8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09d59850865012a6fd95d89954c82e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">print_primes</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; const &amp;<a class="el" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>)</td></tr>
+<tr class="memdesc:ad09d59850865012a6fd95d89954c82e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the indexes of true values in the passed <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>.  <br /></td></tr>
+<tr class="separator:ad09d59850865012a6fd95d89954c82e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec65db4e5c7317323227f026fe50ef11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11">integral_approx</a> (double lb, double ub, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;func, double delta=.0001)</td></tr>
 <tr class="memdesc:aec65db4e5c7317323227f026fe50ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes integral approximation.  <br /></td></tr>
 <tr class="separator:aec65db4e5c7317323227f026fe50ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +250,7 @@ Functions</h2></td></tr>
 <p>for assert</p>
 <p>Math algorithms.</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
+<p>Mathematical algorithms.</p>
 <p>for M_PI definition and pow()</p>
 <p>for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></p>
 <p>for assert</p>
@@ -254,6 +261,7 @@ Functions</h2></td></tr>
 <p>Mathematical algorithms</p>
 <p>for assert for int32_t type for atoi</p>
 <p>Mathematical algorithms</p>
+<p>For assert For timing the sieve For IO operations For string handling For <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></p>
 <p>for assert for <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> and <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></p>
 <p>Mathematical algorithms</p>
 <p>for assert for mathematical functions for passing in functions</p>
@@ -1265,6 +1273,50 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ad09d59850865012a6fd95d89954c82e4" name="ad09d59850865012a6fd95d89954c82e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09d59850865012a6fd95d89954c82e4">&#9670;&#160;</a></span>print_primes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void math::print_primes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>primes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints all the indexes of true values in the passed <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primes</td><td>The vector that has been passed through <code>sieve(...)</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                                                 {</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; <a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); i++) {</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>[i]) {</div>
+<div class="line"><span class="lineno">   54</span>            <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; i &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   55</span>        }</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+<div class="ttc" id="aprime__numbers_8cpp_html_a9575f3a51eeb8a57d657b3db6a4b441a"><div class="ttname"><a href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a></div><div class="ttdeci">std::vector&lt; int &gt; primes(size_t max)</div><div class="ttdef"><b>Definition:</b> prime_numbers.cpp:12</div></div>
+<div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_ad09d59850865012a6fd95d89954c82e4_cgraph.svg" width="530" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a94db02b3c9e55a69ac1696f30e2f761c" name="a94db02b3c9e55a69ac1696f30e2f761c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94db02b3c9e55a69ac1696f30e2f761c">&#9670;&#160;</a></span>pyramid_volume()</h2>
 
@@ -1449,6 +1501,51 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> length * width * height;</div>
 <div class="line"><span class="lineno">   43</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a91366864111e1fac29722ca45e02ea8f" name="a91366864111e1fac29722ca45e02ea8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91366864111e1fac29722ca45e02ea8f">&#9670;&#160;</a></span>sieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void math::sieve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; *&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs the sieve. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Array of bools, all initialised to true, where the number of elements is the highest number we wish to check for primeness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                 {</div>
+<div class="line"><span class="lineno">   34</span>    (*vec)[0] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   35</span>    (*vec)[1] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// The sieve sets values to false as they are found not prime</span></div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">for</span> (uint64_t n = 2; n &lt; vec-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); n++) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">for</span> (uint64_t multiple = n &lt;&lt; 1; multiple &lt; vec-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><span class="lineno">   40</span>             multiple += n) {</div>
+<div class="line"><span class="lineno">   41</span>            (*vec)[multiple] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_a91366864111e1fac29722ca45e02ea8f_cgraph.svg" width="266" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ab7f29862d30df351c317eedd60a0c656" name="ab7f29862d30df351c317eedd60a0c656"></a>
