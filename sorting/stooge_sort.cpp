@@ -8,8 +8,8 @@
  *	- sort first two thirds of the array
  *	- sort last two thirds of the array
  *  - sort first two thirds of the array
- * It's time complexity is O(n^(log3/log1.5)), which is about O(n^2.7), 
- * which makes it to be not the most efficient sorting algorithm 
+ * It's time complexity is O(n^(log3/log1.5)), which is about O(n^2.7),
+ * which makes it to be not the most efficient sorting algorithm
  * on the street on average. Space complexity is O(1).
  */
 
@@ -17,20 +17,20 @@
 #include <cassert> /// for assert
 #include <algorithm>  /// for std::is_sorted
 
-/**
- * @brief The stoogeSort() function is used for sorting the array.
- * @param L - vector of values (int) to be sorted in in place (ascending order)
- * @param i - the first index of the array (0)
- * @param j - the last index of the array (L.size() - 1)
- * @returns void
- */
-void stoogeSort(std::vector<int> *L, int i, int j) {
+ /**
+  * @brief The stoogeSort() function is used for sorting the array.
+  * @param L - vector of values (int) to be sorted in in place (ascending order)
+  * @param i - the first index of the array (0)
+  * @param j - the last index of the array (L.size() - 1)
+  * @returns void
+  */
+void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
 	if (i < j) {
-		if ((*L)[i] > (*L)[j]) {	
+		if ((*L)[i] > (*L)[j]) {
 			std::swap((*L)[i], (*L)[j]);
 		}
 		if (j - i > 1) {
-			int third = (j - i + 1) / 3;
+			size_t third = (j - i + 1) / 3;
 			stoogeSort(L, i, j - third);
 			stoogeSort(L, i + third, j);
 			stoogeSort(L, i, j - third);
@@ -54,7 +54,7 @@ void test1() {
  * @returns void
  */
 void test2() {
-	std::vector<int> L = { -1};
+	std::vector<int> L = { -1 };
 	stoogeSort(&L, 0, L.size() - 1);
 	assert(std::is_sorted(std::begin(L), std::end(L)));
 }
@@ -64,7 +64,7 @@ void test2() {
  * @returns void
  */
 void test3() {
-	std::vector<int> L = { 1, 2, 5, 4, 1, 5};
+	std::vector<int> L = { 1, 2, 5, 4, 1, 5 };
 	stoogeSort(&L, 0, L.size() - 1);
 	assert(std::is_sorted(std::begin(L), std::end(L)));
 }
