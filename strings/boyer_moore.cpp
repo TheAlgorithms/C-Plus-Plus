@@ -10,7 +10,7 @@
 #include<string>   /// for std::string
 #include <vector>  /// for std::vector
 
-#define APLHABET_SIZE CHAR_MAX
+#define APLHABET_SIZE CHAR_MAX ///< number of symbols in the alphabet we use
 
 /**
  * @brief A structure representing all the data we need to search the
@@ -19,7 +19,10 @@
 struct pattern {
     std::string pat;
 
+    /// @brief bad char table used in Bad Character Heuristic [https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/]
     std::vector<size_t> bad_char;
+
+    /// @brief good suffix table used for Good Suffix heuristic [https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/?ref=rp]
     std::vector<size_t> good_suffix;
 };
 
