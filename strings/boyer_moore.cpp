@@ -4,14 +4,26 @@
  * text.
  * @author [Stoycho Kyosev](https://github.com/stoychoX)
  */
-#include <cassert> /// for assert
-#include <cstring> /// for strlen
-#include <limits>  /// for CHAR_MAX macro
-#include<string>   /// for std::string
-#include <vector>  /// for std::vector
+#include <cassert>  /// for assert
+#include <cstring>  /// for strlen
+#include <limits>   /// for CHAR_MAX macro
+#include <string>   /// for std::string
+#include <vector>   /// for std::vector
 
-#define APLHABET_SIZE CHAR_MAX ///< number of symbols in the alphabet we use
+#define APLHABET_SIZE CHAR_MAX  ///< number of symbols in the alphabet we use
 
+/**
+ * @namespace
+ * @brief String algorithms
+ */
+namespace strings {
+/**
+ * @namespace
+ * @brief Functions for the [Boyer
+ * Moore](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
+ * algorithm implementation
+ */
+namespace boyer_moore {
 /**
  * @brief A structure representing all the data we need to search the
  * preprocessed pattern in text.
@@ -19,16 +31,18 @@
 struct pattern {
     std::string pat;
 
-    /// @brief bad char table used in Bad Character Heuristic [https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/]
+    /// @brief bad char table used in Bad Character Heuristic
+    /// [https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/]
     std::vector<size_t> bad_char;
 
-    /// @brief good suffix table used for Good Suffix heuristic [https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/?ref=rp]
+    /// @brief good suffix table used for Good Suffix heuristic
+    /// [https://www.geeksforgeeks.org/boyer-moore-algorithm-good-suffix-heuristic/?ref=rp]
     std::vector<size_t> good_suffix;
 };
 
 /**
  * @brief A function that preprocess the good suffix thable
- * 
+ *
  * @param str The string being preprocessed
  * @param arg The good suffix table
  * @return void
@@ -74,7 +88,7 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
 
 /**
  * @brief A function that preprocess the bad char table
- * 
+ *
  * @param str The string being preprocessed
  * @param arg The bad char table
  * @return void
@@ -88,7 +102,7 @@ void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
 
 /**
  * @brief A function that initializes pattern
- * 
+ *
  * @param str Text used for initialization
  * @param arg Initialized structure
  * @return void
@@ -100,7 +114,7 @@ void init_pattern(const std::string& str, pattern& arg) {
 }
 /**
  * @brief A function that implements Boyer-Moore's algorithm.
- * 
+ *
  * @param str Text we are seatching in.
  * @param arg pattern structure containing the preprocessed pattern
  * @return (vector of) indexes of the occurrences of pattern in text
@@ -133,7 +147,7 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
 
 /**
  * @brief Check if pat is prefix of str.
- * 
+ *
  * @param str pointer to some part of the input text.
  * @param pat the searched pattern.
  * @param len length of the searched pattern
@@ -149,26 +163,28 @@ bool is_prefix(const char* str, const char* pat, size_t len) {
 
     return true;
 }
+}  // namespace boyer_moore
+}  // namespace strings
 
 void and_test(const char* text) {
-    pattern ands;
-    init_pattern("and", ands);
-    std::vector<size_t> indexes = search(text, ands);
+    strings::boyer_moore::pattern ands;
+    strings::boyer_moore::init_pattern("and", ands);
+    std::vector<size_t> indexes = strings::boyer_moore::search(text, ands);
 
     assert(indexes.size() == 2);
-    assert(is_prefix(text + indexes[0], "and", 3));
-    assert(is_prefix(text + indexes[1], "and", 3));
+    assert(strings::boyer_moore::is_prefix(text + indexes[0], "and", 3));
+    assert(strings::boyer_moore::is_prefix(text + indexes[1], "and", 3));
 }
 
 void pat_test(const char* text) {
-    pattern pat;
-    init_pattern("pat", pat);
-    std::vector<size_t> indexes = search(text, pat);
+    strings::boyer_moore::pattern pat;
+    strings::boyer_moore::init_pattern("pat", pat);
+    std::vector<size_t> indexes = strings::boyer_moore::search(text, pat);
 
     assert(indexes.size() == 6);
 
     for (const auto& idx : indexes) {
-        assert(is_prefix(text + idx, "pat", 3));
+        assert(strings::boyer_moore::is_prefix(text + idx, "pat", 3));
     }
 }
 /**
@@ -190,9 +206,10 @@ static void tests() {
 
 /**
  * @brief Main function
- * 
- * @return 0
+ *
+ * @return 0 on exit
  */
-int main() { 
-    tests(); 
+int main() {
+    tests();  // run self-test implementations
+    return 0;
 }
