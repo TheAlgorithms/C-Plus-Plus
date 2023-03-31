@@ -16,6 +16,7 @@
 #include <vector> /// for vector
 #include <cassert> /// for assert
 #include <algorithm>  /// for std::is_sorted
+#include <iostream>   /// for IO operations
 
  /**
   * @brief The stoogeSort() function is used for sorting the array.
@@ -79,5 +80,7 @@ int main() {
 	test1();
 	test2();
 	test3();
+    
+    std::cout << "All tests have successfully passed!\n";
 	return 0;
 }
