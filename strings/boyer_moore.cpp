@@ -54,7 +54,7 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     // is also a proper prefix.
     std::vector<size_t> border_pos(str.size() + 1, 0);
 
-    int current_char = str.length();
+    size_t current_char = str.length();
 
     size_t border_index = str.length() + 1;
 
@@ -63,8 +63,9 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     while (current_char > 0) {
         while (border_index <= str.length() &&
                str[current_char - 1] != str[border_index - 1]) {
-            if (arg[border_index] == 0)
+            if (arg[border_index] == 0) {
                 arg[border_index] = border_index - current_char;
+            }
 
             border_index = border_pos[border_index];
         }
@@ -77,12 +78,14 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     size_t largest_border_index = border_pos[0];
 
     for (size_t i = 0; i < str.size(); i++) {
-        if (arg[i] == 0)
+        if (arg[i] == 0) {
             arg[i] = largest_border_index;
+        }
 
         // If we go pass the largest border we find the next one as we iterate
-        if (i == largest_border_index)
+        if (i == largest_border_index) {
             largest_border_index = border_pos[largest_border_index];
+        }
     }
 }
 
@@ -96,8 +99,9 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
 void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(APLHABET_SIZE, str.length());
 
-    for (size_t i = 0; i < str.length(); i++)
+    for (size_t i = 0; i < str.length(); i++) {
         arg[str[i]] = str.length() - i - 1;
+    }
 }
 
 /**
@@ -124,8 +128,8 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
     std::vector<size_t> index_storage;
 
     while (index_position < str.length()) {
-        int index_string = index_position;
-        int index_pattern = arg.pat.size() - 1;
+        size_t index_string = index_position;
+        size_t index_pattern = arg.pat.size() - 1;
 
         while (index_pattern >= 0 &&
                str[index_string] == arg.pat[index_pattern]) {
@@ -154,12 +158,15 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
  * @return true if pat is prefix of str. false otherwise.
  */
 bool is_prefix(const char* str, const char* pat, size_t len) {
-    if (strlen(str) < len)
+    if (strlen(str) < len) {
         return false;
+    }
 
-    for (size_t i = 0; i < len; i++)
-        if (str[i] != pat[i])
+    for (size_t i = 0; i < len; i++) {
+        if (str[i] != pat[i]) {
             return false;
+        }
+    }
 
     return true;
 }
