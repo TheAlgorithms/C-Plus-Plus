@@ -75,7 +75,7 @@ static void first_test() {
     assert(finding_number_of_digits_in_a_number(9) == 1);
     assert(finding_number_of_digits_in_a_number(100000) == 6);
     assert(finding_number_of_digits_in_a_number(13) == 2);
-    assert(finding_number_of_digits_in_a_number(564) == 3);         
+    assert(finding_number_of_digits_in_a_number(564) == 3);
 }
 
 static void second_test() {
@@ -93,7 +93,7 @@ static void second_test() {
  */
 int main() {
     // run self-test implementations
-    first_test();  
+    first_test();
     second_test();
     std::cout << "All tests have successfully passed!\n";
     return 0;
