@@ -9,8 +9,9 @@
  * number i.e, we can use it by inputting values whether it can be a
  * positive/negative value, let's say: an integer. There is also a second
  * method: by using "K = floor(log10(N) + 1)", but it's only applicable for
- * numbers (not integers). The code for that is also included (finding_number_of_digits_in_a_number_using_log).
- * For more details, refer to the
+ * numbers (not integers). The code for that is also included
+ * (finding_number_of_digits_in_a_number_using_log). For more details, refer to
+ * the
  * [Algorithms-Explanation](https://github.com/TheAlgorithms/Algorithms-Explanation/blob/master/en/Basic%20Math/Finding
  * the number of digits in a number.md) repository.
  */
