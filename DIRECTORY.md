@@ -19,6 +19,7 @@
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
   * [Hamming Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/hamming_distance.cpp)
+  * [Power Of 2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/power_of_2.cpp)
   * [Set Kth Bit](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/set_kth_bit.cpp)
   * [Travelling Salesman Using Bit Manipulation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/travelling_salesman_using_bit_manipulation.cpp)
 
@@ -107,6 +108,7 @@
   * [Longest Increasing Subsequence (Nlogn)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence_(nlogn).cpp)
   * [Longest Palindromic Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_palindromic_subsequence.cpp)
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/matrix_chain_multiplication.cpp)
+  * [Maximum Circular Subarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/maximum_circular_subarray.cpp)
   * [Minimum Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/minimum_edit_distance.cpp)
   * [Palindrome Partitioning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/palindrome_partitioning.cpp)
   * [Partition Problem](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/partition_problem.cpp)
@@ -168,6 +170,7 @@
 ## Machine Learning
   * [A Star Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/a_star_search.cpp)
   * [Adaline Learning](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/adaline_learning.cpp)
+  * [K Nearest Neighbors](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/k_nearest_neighbors.cpp)
   * [Kohonen Som Topology](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/kohonen_som_topology.cpp)
   * [Kohonen Som Trace](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/kohonen_som_trace.cpp)
   * [Neural Network](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/machine_learning/neural_network.cpp)
@@ -186,6 +189,7 @@
   * [Check Prime](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/check_prime.cpp)
   * [Complex Numbers](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/complex_numbers.cpp)
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/double_factorial.cpp)
+  * [Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/eratosthenes.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/eulers_totient_function.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/extended_euclid_algorithm.cpp)
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/factorial.cpp)
