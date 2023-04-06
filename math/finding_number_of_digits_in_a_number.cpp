@@ -44,12 +44,12 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
 
 /**
  * @brief This function finds the number of digits
- * in constant time
+ * in constant time using logarithmic function
  * TC: O(1)
  * @param n the number to check its digits
  * @returns the digits count
  */
-uint64_t count_digits(uint64_t n) {
+double finding_number_of_digits_in_a_number_using_log(double n) {
     // to handle the negative numbers
     if (n < 0) {
         n = -n;
@@ -59,7 +59,7 @@ uint64_t count_digits(uint64_t n) {
         // handling the value 0
         return 0;
     }
-    uint64_t count = floor(log10(n) + 1);
+    double count = floor(log10(n) + 1);
 
     return count;
 }
@@ -68,24 +68,24 @@ uint64_t count_digits(uint64_t n) {
  * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void first_test() {
     assert(finding_number_of_digits_in_a_number(5492) == 4);
     assert(finding_number_of_digits_in_a_number(-0) == 0);
     assert(finding_number_of_digits_in_a_number(10000) == 5);
     assert(finding_number_of_digits_in_a_number(9) == 1);
     assert(finding_number_of_digits_in_a_number(100000) == 6);
     assert(finding_number_of_digits_in_a_number(13) == 2);
-    assert(finding_number_of_digits_in_a_number(564) == 3);
+    assert(finding_number_of_digits_in_a_number(564) == 3);         
 }
 
-static void test_count_digits() {
-    assert(count_digits(5492) == 4);
-    assert(count_digits(-0) == 0);
-    assert(count_digits(10000) == 5);
-    assert(count_digits(9) == 1);
-    assert(count_digits(100000) == 6);
-    assert(count_digits(13) == 2);
-    assert(count_digits(564) == 3);
+static void second_test() {
+    assert(finding_number_of_digits_in_a_number_using_log(5492) == 4);
+    assert(finding_number_of_digits_in_a_number_using_log(-0) == 0);
+    assert(finding_number_of_digits_in_a_number_using_log(10000) == 5);
+    assert(finding_number_of_digits_in_a_number_using_log(9) == 1);
+    assert(finding_number_of_digits_in_a_number_using_log(100000) == 6);
+    assert(finding_number_of_digits_in_a_number_using_log(13) == 2);
+    assert(finding_number_of_digits_in_a_number_using_log(564) == 3);
 }
 /**
  * @brief Main function
@@ -93,8 +93,8 @@ static void test_count_digits() {
  */
 int main() {
     // run self-test implementations
-    test();  
-    test_count_digits();
+    first_test();  
+    second_test();
     std::cout << "All tests have successfully passed!\n";
     return 0;
 }
