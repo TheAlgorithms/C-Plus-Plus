@@ -41,6 +41,8 @@
 
 ## Data Structures
   * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avltree.cpp)
+  * [Avltree Map](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avltree_map.cpp)
+  * [Avltree Map](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avltree_map.hpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binary_search_tree.cpp)
   * [Binary Search Tree2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binary_search_tree2.cpp)
   * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binaryheap.cpp)
