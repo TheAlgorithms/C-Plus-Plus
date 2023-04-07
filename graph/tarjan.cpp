@@ -39,8 +39,13 @@ public:
     std::vector<std::pair<int,int>> allEdges;                           // for keeping track of all edges used for cycle detection.
     std::vector<std::pair<int,std::pair<int,int> >> allWEdges;         //it stores weight and vertex of edges.
 
-
-    explicit Graph(int default_vertex = 10)      // Constructor for Graph Class, default_vertex -> formal argument that sets default vertex size.
+    /**
+     * @brief Constructor for Graph Class
+     * @parameters default_vertex -> formal argument that sets default vertex
+     * @returns void
+    */
+   
+    explicit Graph(int default_vertex = 10)      
     {
         g.resize(vertex);               // resizing the adjecency list
         this->vertex=default_vertex;    // setting value of class variable.
@@ -52,17 +57,18 @@ public:
 
     void addEdge(int uvertex, int vvertex, int weight = 0)          // if graph is undirected then this function is called.
     {                                                              //  formal arguments uvertex,vvertex -> it suggest that there exists edge between this two vertices, weight is used if graph is weighted.
-        if(isDirected) {            
-        return;
+        if(isDirected) {            // here it checks that if we have made directed graph then it would not allow us to add an undirected edge
+        return;     
         }
 
-        allEdges.emplace_back(uvertex,vvertex);
-        
-        allWEdges.emplace_back(weight,std::make_pair(uvertex,vvertex));
-        
+        allEdges.emplace_back(uvertex,vvertex); // adding edge to the vector
+        allWEdges.emplace_back(
+            weight,
+            std::make_pair(uvertex, vvertex));  // adding edge to the vector
+
         flag=1;
-        g[uvertex].emplace_back(std::make_pair(vvertex, weight));
-        g[vvertex].emplace_back(std::make_pair(uvertex, weight));
+        g[uvertex].emplace_back(std::make_pair(vvertex, weight));  // adding edge to the adjcency list
+        g[vvertex].emplace_back(std::make_pair(uvertex, weight));  // adding edge to adjcency list
     }
 
     
@@ -72,17 +78,18 @@ public:
 
     void addDirectedEdge(int uvertex, int vvertex, int weight = 0) // use when we need to directed graph
     {
-        if(!isDirected && flag!=0)
+        if(!isDirected && flag!=0)      // if graph is undirected and we try to add directed edge then return and it is not first edge
         {
             return;
         }
-        
-        allEdges.emplace_back(std::make_pair(uvertex,vvertex));
-       
-            allWEdges.emplace_back(std::make_pair(weight,std::make_pair(uvertex,vvertex)));
+        allEdges.emplace_back(
+            std::make_pair(uvertex, vvertex));  // adding edge to the vector
+        allWEdges.emplace_back(std::make_pair(
+            weight,
+            std::make_pair(uvertex, vvertex)));  // adding edge to the vector
 
         isDirected=true;
-        g[uvertex].emplace_back(std::make_pair(vvertex, weight));
+        g[uvertex].emplace_back(std::make_pair(vvertex, weight)); // adding edge to adjcency list
     }
 
     std::vector<int> BFS(int start_vertex)
@@ -123,20 +130,6 @@ public:
             }
         }
     }
-    void getInfo()
-    {
-        std::cout<<"This graph follows adjacency list representation as vector< list< pair<int,int> > > \n here int pair first is vertex and second is weight of that vertex by default it is zero."<<std::endl;
-        std::cout<<"Number of vertices : "<<vertex<<std::endl;
-
-        for(const auto& i:g)
-        {
-            for(auto j : i)
-            {
-             std::cout<<"Vertex "<<j.first<<" Weight "<<j.second<<std::endl;
-            }
-        }
-    }
-
 };
 
 }
@@ -195,7 +188,7 @@ static void test() {
     tarjan.addEdge(3,4);
     tarjan.addEdge(3,5);
     tarjan.addEdge(4,5);
-
+    // std::cout << "hello" << std::endl;
     std::cout<<"BFS"<<std::endl;
     std::vector<int>bfs = tarjan.BFS(0);
 
