@@ -1,5 +1,5 @@
 /**
- * @file
+ * @file avltree_map.hpp
  * @brief An [AVLTree](https://en.wikipedia.org/wiki/AVL_tree)-based
  *  map implementation
  * @details The map is sorted according to the natural ordering of its
@@ -21,11 +21,11 @@
 #include <vector>       /// for `std::vector`
 
 /**
- * An AVLTree-based map implementation
- * https://en.wikipedia.org/wiki/AVL_tree
+ * @brief An AVLTree-based map implementation
+ *  https://en.wikipedia.org/wiki/AVL_tree
  * @tparam Key the type of keys maintained by this map
  * @tparam Value the type of mapped values
- * @tparam Compare
+ * @tparam Compare the comparator function
  */
 template <
     typename Key, typename Value,
@@ -35,17 +35,20 @@ class AvlTreeMap
 {
   private:
 
-    using USize = size_t;
-    using Factor = int64_t;
+    using USize = size_t;           ///< size type alias
+    using Factor = int64_t;         ///< int64_t as the balance factor
 
-    Compare compare = Compare();
+    Compare compare = Compare();    ///< the comparator
 
   public:
 
+    /**
+     * @brief The key-value entry type
+     */
     struct Entry
     {
-        Key key;
-        Value value;
+        Key key;        ///< the key of the entry
+        Value value;    ///< the value of the entry
 
         bool operator==(const Entry & rhs) const noexcept
         {
@@ -62,28 +65,60 @@ class AvlTreeMap
 
     struct Node
     {
-        using Ptr = std::shared_ptr<Node>;
-        using Provider = const std::function<Ptr(void)> &;
-        using Consumer = const std::function<void(const Ptr &)> &;
+        using Ptr = std::shared_ptr<Node>;                          ///< node pointer type
+        using Provider = const std::function<Ptr(void)> &;          ///< node provider function type
+        using Consumer = const std::function<void(const Ptr &)> &;  ///< node consumer function type
 
-        Key key;
-        Value value {};
+        Key key;                ///< the key of the node, used for ordering
+        Value value {};         ///< the value of the node
 
-        Ptr left = nullptr;
-        Ptr right = nullptr;
+        Ptr left = nullptr;     ///< the left child
+        Ptr right = nullptr;    ///< the right child
 
+        /**
+         * @brief The height of the node from the leaves
+         * @details The height of a node is the number of nodes
+         *  on the longest path from the node to a leaf.
+         *  The height of a leaf is 1.
+         */
         USize height = 1;
 
         explicit Node(Key k) : key(std::move(k)) {}
         explicit Node(Key k, Value v) : key(std::move(k)), value(std::move(v)) {}
+        
+        Node(const Node& other) = default;
+        Node(Node&& other) noexcept = default;
+        
+        Node& operator=(const Node& other) = default;
+        Node& operator=(Node&& other) noexcept = default;
 
         ~Node() = default;
+
+        /**
+         * @brief Recursively clone the subtree rooted at this node
+         * @return Node::Ptr the root of the cloned subtree
+         */
+        Ptr clone() const
+        {
+            Ptr node = std::make_shared<Node>(Node(this->key, this->value));
+            if (this->left != nullptr) {
+                node->left = this->left->clone();
+            }
+            if (this->right != nullptr) {
+                node->right = this->right->clone();
+            }
+            return node;
+        }
 
         inline bool isLeaf() const noexcept
         {
             return this->left == nullptr && this->right == nullptr;
         }
 
+        /**
+         * @brief Update the height of this node according to its children
+         * @returns void
+         */
         inline void updateHeight() noexcept
         {
             if (this->isLeaf()) {
@@ -97,53 +132,75 @@ class AvlTreeMap
             }
         }
 
+        /**
+         * @brief Get the balance factor of this node
+         * @return Factor the balance factor
+         */
         inline Factor factor() const noexcept
         {
             if (this->isLeaf()) {
                 return 0;
             } else if (this->left == nullptr) {
-                return (Factor) this->right->height;
+                return static_cast<Factor>(this->right->height);
             } else if (this->right == nullptr) {
-                return (Factor) -this->left->height;
+                return static_cast<Factor>(-this->left->height);
             } else {
-                return (Factor) (this->right->height - this->left->height);
+                return static_cast<Factor>(this->right->height - this->left->height);
             }
         }
 
+        /**
+         * @brief Convert this node to an entry
+         * @return Entry
+         */
         inline Entry entry() const
         {
             return Entry { key, value };
         }
 
+        /**
+         * @brief Construct a node from a given key
+         * @param k key
+         * @return Node::Ptr
+         */
         static Ptr from(const Key & k)
         {
             return std::make_shared<Node>(Node(k));
         }
 
-        static Ptr from(const Key & k, const Value & v)
+        /**
+         * @brief Construct a node from a given pair of key and value
+         * @param k key
+         * @param v value
+         * @return Node::Ptr
+         */
+        static Ptr from(const Key & k, const Value& v)
         {
             return std::make_shared<Node>(Node(k, v));
         }
     };
 
-    using NodePtr = typename Node::Ptr;
-    using ConstNodePtr = const NodePtr&;
-    using NodeProvider = typename Node::Provider;
-    using NodeConsumer = typename Node::Consumer;
+    using NodePtr = typename Node::Ptr;             ///< node pointer type
+    using ConstNodePtr = const NodePtr&;            ///< const node pointer type
+    using NodeProvider = typename Node::Provider;   ///< node provider function type
+    using NodeConsumer = typename Node::Consumer;   ///< node consumer function type
 
-    NodePtr root = nullptr;
-    USize count = 0;
+    NodePtr root = nullptr;     ///< the root node of the tree
+    USize count = 0;            ///< the number of nodes(entries) in the tree map
 
-    using K = const Key&;
-    using V = const Value&;
+    using K = const Key&;       ///< constant key parameter type alias
+    using V = const Value&;     ///< constant value parameter type alias
 
   public:
 
-    using EntryList = std::vector<Entry>;
-    using KeyValueConsumer = const std::function<void(K, V)> &;
-    using MutKeyValueConsumer = const std::function<void(K, Value &)> &;
-    using KeyValueFilter = const std::function<bool(K, V)> &;
+    using EntryList = std::vector<Entry>;            ///< vector of entries
+    using KeyValueConsumer = const std::function<void(K, V)> &;          ///< key-value consumer function type
+    using MutKeyValueConsumer = const std::function<void(K, Value&)> &; ///< mutable key-value consumer function type
+    using KeyValueFilter = const std::function<bool(K, V)> &;            ///< key-value filter function type
 
+    /**
+     * @brief Exception thrown when a mapping is not found
+     */
     class NoSuchMappingException : protected std::exception
     {
       private:
@@ -159,7 +216,35 @@ class AvlTreeMap
     AvlTreeMap() noexcept = default;
 
     /**
-     * Returns the number of entries in this map.
+     * @brief Clone constructor
+     * @param other the other map to clone
+     */
+    AvlTreeMap(const AvlTreeMap & other) noexcept
+    {
+        this->root = other.root->clone();
+        this->count = other.count;
+    }
+    
+    AvlTreeMap(AvlTreeMap && other) noexcept = default;
+    
+    /**
+     * @brief Copy assignment operator
+     * @param other the other map to copy
+     * @return AvlTreeMap&
+     */
+    AvlTreeMap& operator=(const AvlTreeMap & other) noexcept
+    {
+        this->root = other.root->clone();
+        this->count = other.count;
+        return *this;
+    }
+    
+    AvlTreeMap& operator=(AvlTreeMap && other) noexcept = default;
+    
+    ~AvlTreeMap() noexcept = default;
+
+    /**
+     * @brief Returns the number of entries in this map.
      * @return size_t
      */
     inline USize size() const noexcept
@@ -168,7 +253,7 @@ class AvlTreeMap
     }
 
     /**
-     * Returns true if this collection contains no elements.
+     * @brief Returns true if this collection contains no elements.
      * @return bool
      */
     inline bool empty() const noexcept
@@ -177,7 +262,8 @@ class AvlTreeMap
     }
 
     /**
-     * Removes all of the elements from this map.
+     * @brief Removes all of the elements from this map.
+     * @returns void
      */
     void clear() noexcept
     {
@@ -186,10 +272,10 @@ class AvlTreeMap
     }
 
     /**
-     * Returns the value to which the specified key is mapped; If this map
-     * contains no mapping for the key, a {@code NoSuchMappingException} will
-     * be thrown.
-     * @param key
+     * @brief Returns the value to which the specified key is mapped; If this map
+     *  contains no mapping for the key, a {@code NoSuchMappingException} will
+     *  be thrown.
+     * @param key the key whose associated value is to be returned
      * @return AvlTreeMap<Key, Value>::Value
      * @throws NoSuchMappingException
      */
@@ -208,13 +294,13 @@ class AvlTreeMap
     }
 
     /**
-     * Returns the value to which the specified key is mapped; If this map
-     * contains no mapping for the key, a new mapping with a default value
-     * will be inserted.
-     * @param key
-     * @return AvlTreeMap<Key, Value>::Value &
+     * @brief Returns the value to which the specified key is mapped; If this map
+     *  contains no mapping for the key, a new mapping with a default value
+     *  will be inserted.
+     * @param key the key whose associated value is to be returned
+     * @return AvlTreeMap<Key, Value>::Value&
      */
-    Value & getOrDefault(K key)
+    Value& getOrDefault(K key)
     {
         if (this->root == nullptr) {
             this->root = Node::from(key);
@@ -228,8 +314,8 @@ class AvlTreeMap
     }
 
     /**
-     * Returns true if this map contains a mapping for the specified key.
-     * @param key
+     * @brief Returns true if this map contains a mapping for the specified key.
+     * @param key the key whose presence in this map is to be tested
      * @return bool
      */
     bool contains(K key) const
@@ -238,9 +324,10 @@ class AvlTreeMap
     }
 
     /**
-     * Associates the specified value with the specified key in this map.
-     * @param key
-     * @param value
+     * @brief Associates the specified value with the specified key in this map.
+     * @param key the key of the mapping
+     * @param value the value to be associated with the key
+     * @returns void
      */
     void insert(K key, V value)
     {
@@ -253,11 +340,11 @@ class AvlTreeMap
     }
 
     /**
-     * If the specified key is not already associated with a value, associates
-     * it with the given value and returns true, else returns false.
-     * @param key
-     * @param value
-     * @return bool
+     * @brief If the specified key is not already associated with a value,
+     *  associates it with the given value and returns true, else returns false.
+     * @param key the key of the mapping
+     * @param value the value to be associated with the key
+     * @return bool true if the key is not already associated with a value
      */
     bool insertIfAbsent(K key, V value)
     {
@@ -272,14 +359,14 @@ class AvlTreeMap
     }
 
     /**
-     * If the specified key is not already associated with a value, associates
-     * it with the given value and returns the value, else returns the associated
-     * value.
-     * @param key
-     * @param value
-     * @return
+     * @brief If the specified key is not already associated with a value, associates
+     *  it with the given value and returns the value, else returns the associated
+     *  value.
+     * @param key the key of the mapping
+     * @param value the value to be associated with the key
+     * @return Value& the mutable value reference associated with the key
      */
-    Value & getOrInsert(K key, V value)
+    Value& getOrInsert(K key, V value)
     {
         if (this->root == nullptr) {
             this->root = Node::from(key, value);
@@ -293,12 +380,23 @@ class AvlTreeMap
         }
     }
 
+    /**
+     * @brief Gets the value associated with the specified key
+     * @param key the key of the mapping
+     * @return Value the value associated with the key
+     */
     Value operator[](K key) const
     {
         return this->get(key);
     }
 
-    Value & operator[](K key)
+    /**
+     * @brief Gets the value associated with the specified key
+     *  as a mutable reference
+     * @param key the key of the mapping
+     * @return Value& the mutable value reference associated with the key
+     */
+    Value& operator[](K key)
     {
         return this->getOrDefault(key);
     }
@@ -307,7 +405,7 @@ class AvlTreeMap
      * Removes the mapping for a key from this map if it is present;
      * Returns true if the mapping is present else returns false
      * @param key the key of the mapping
-     * @return bool
+     * @return bool true if the mapping is present else returns false
      */
     bool remove(K key)
     {
@@ -319,9 +417,9 @@ class AvlTreeMap
     }
 
     /**
-     * Removes the mapping for a key from this map if it is present and returns the
-     * value which is mapped to the key; If this map contains no mapping for the key,
-     * a {@code NoSuchMappingException} will be thrown.
+     * @brief Removes the mapping for a key from this map if it is present and returns
+     *  the value which is mapped to the key; If this map contains no mapping for the key,
+     *  a {@code NoSuchMappingException} will be thrown.
      * @param key
      * @return AvlTreeMap<Key, Value>::Value
      * @throws NoSuchMappingException
@@ -345,10 +443,10 @@ class AvlTreeMap
     }
 
     /**
-     * Gets the entry corresponding to the specified key; if no such entry
-     * exists, returns the entry for the least key greater than the specified
-     * key; if no such entry exists (i.e., the greatest key in the Tree is less
-     * than the specified key), a {@code NoSuchMappingException} will be thrown.
+     * @brief Gets the entry corresponding to the specified key; if no such entry
+     *  exists, returns the entry for the least key greater than the specified
+     *  key; if no such entry exists (i.e., the greatest key in the Tree is less
+     *  than the specified key), a {@code NoSuchMappingException} will be thrown.
      * @param key
      * @return AvlTreeMap<Key, Value>::Entry
      * @throws NoSuchMappingException
@@ -408,9 +506,9 @@ class AvlTreeMap
     }
 
     /**
-     * Gets the entry corresponding to the specified key; if no such entry exists,
-     * returns the entry for the greatest key less than the specified key;
-     * if no such entry exists, a {@code NoSuchMappingException} will be thrown.
+     * @brief Gets the entry corresponding to the specified key; if no such entry
+     *  exists, returns the entry for the greatest key less than the specified key;
+     *  if no such entry exists, a {@code NoSuchMappingException} will be thrown.
      * @param key
      * @return AvlTreeMap<Key, Value>::Entry
      * @throws NoSuchMappingException
@@ -470,10 +568,10 @@ class AvlTreeMap
     }
 
     /**
-     * Gets the entry for the least key greater than the specified
-     * key; if no such entry exists, returns the entry for the least
-     * key greater than the specified key; if no such entry exists,
-     * a {@code NoSuchMappingException} will be thrown.
+     * @brief Gets the entry for the least key greater than the specified
+     *  key; if no such entry exists, returns the entry for the least
+     *  key greater than the specified key; if no such entry exists,
+     *  a {@code NoSuchMappingException} will be thrown.
      * @param key
      * @return AvlTreeMap<Key, Value>::Entry
      * @throws NoSuchMappingException
@@ -530,9 +628,9 @@ class AvlTreeMap
     }
 
     /**
-     * Returns the entry for the greatest key less than the specified key; if
-     * no such entry exists (i.e., the least key in the Tree is greater than
-     * the specified key), a {@code NoSuchMappingException} will be thrown.
+     * @brief Returns the entry for the greatest key less than the specified key;
+     *  if no such entry exists (i.e., the least key in the Tree is greater than
+     *  the specified key), a {@code NoSuchMappingException} will be thrown.
      * @param key
      * @return AvlTreeMap<Key, Value>::Entry
      * @throws NoSuchMappingException
@@ -588,8 +686,10 @@ class AvlTreeMap
     }
 
     /**
-     * Remove all entries that satisfy the filter condition.
-     * @param filter
+     * @brief Remove all entries that satisfy the filter condition.
+     * @param filter A function that takes a pair of key and value 
+     *  as parameters and returns a boolean.
+     * @returns void
      */
     void removeAll(KeyValueFilter filter)
     {
@@ -605,9 +705,10 @@ class AvlTreeMap
     }
 
     /**
-     * Performs the given action for each key and value entry in this map.
-     * The value is immutable for the action.
-     * @param action
+     * @brief Performs the given action for each key and value entry in this map.
+     *  The value is immutable for the action.
+     * @param action A function that takes a pair of key and value as parameters.
+     * @returns void
      */
     void forEach(KeyValueConsumer action) const
     {
@@ -617,9 +718,10 @@ class AvlTreeMap
     }
 
     /**
-     * Performs the given action for each key and value entry in this map.
-     * The value is mutable for the action.
-     * @param action
+     * @brief Performs the given action for each key and value entry in this map.
+     *  The value is mutable for the action.
+     * @param action A function that takes a pair of key and value as parameters.
+     * @returns void
      */
     void forEachMut(MutKeyValueConsumer action)
     {
@@ -629,7 +731,7 @@ class AvlTreeMap
     }
 
     /**
-     * Returns a list containing all of the entries in this map.
+     * @brief Returns a list containing all of the entries in this map.
      * @return AvlTreeMap<Key, Value>::EntryList
      */
     EntryList toEntryList() const
@@ -643,6 +745,11 @@ class AvlTreeMap
 
   private:
 
+    /**
+     * @brief Left rotation, used to reduce the height of a subtree.
+     * @param node the node to be rotated.
+     * @return AvlTreeMap<Key, Value>::NodePtr the new root of the subtree.
+     */
     static NodePtr rotateLeft(ConstNodePtr node)
     {
         //     |                       |
@@ -661,6 +768,11 @@ class AvlTreeMap
         return successor;
     }
 
+    /**
+     * @brief Right rotation, used to reduce the height of a subtree.
+     * @param node the node to be rotated.
+     * @return AvlTreeMap<Key, Value>::NodePtr the new root of the subtree.
+     */
     static NodePtr rotateRight(ConstNodePtr node)
     {
         //       |                   |
@@ -679,6 +791,12 @@ class AvlTreeMap
         return successor;
     }
 
+    /**
+     * @brief Swap the key and value of two nodes.
+     * @param lhs
+     * @param rhs
+     * @returns void
+     */
     static void swapNode(NodePtr & lhs, NodePtr & rhs)
     {
         std::swap(lhs->key, rhs->key);
@@ -686,6 +804,11 @@ class AvlTreeMap
         std::swap(lhs, rhs);
     }
 
+    /**
+     * @brief Recursively maintain the balance of the tree with rotations.
+     * @param node the node to be fixed.
+     * @returns void
+     */
     static void fixBalance(NodePtr & node)
     {
         if (node->factor() < -1) {
@@ -733,6 +856,13 @@ class AvlTreeMap
         }
     }
 
+    /**
+     * @brief Get the node with the given key, or insert a new provided node.
+     * @param node the root node of the subtree
+     * @param key the key to search for
+     * @param provide the function to provide a new node
+     * @return NodePtr the node with the given key
+     */
     NodePtr getNodeOrProvide(NodePtr & node, K key, NodeProvider provide)
     {
         assert(node != nullptr);
@@ -772,6 +902,12 @@ class AvlTreeMap
         return result;
     }
 
+    /**
+     * @brief Get the node with the given key.
+     * @param node the root node of the subtree
+     * @param key the key to search for
+     * @return NodePtr the node with the given key
+     */
     NodePtr getNode(ConstNodePtr node, K key) const
     {
         assert(node != nullptr);
@@ -789,6 +925,14 @@ class AvlTreeMap
         }
     }
 
+    /**
+     * @brief Insert a new node with the given key and value.
+     * @param node the root node of the subtree
+     * @param key the key to insert
+     * @param value the value to insert
+     * @param replace whether to replace the value if the key already exists
+     * @returns void
+     */
     void insert(NodePtr & node, K key, V value, bool replace = true)
     {
         assert(node != nullptr);
@@ -827,6 +971,13 @@ class AvlTreeMap
         }
     }
 
+    /**
+     * @brief Remove the node with the given key.
+     * @param node the root node of the subtree
+     * @param key the key to search for
+     * @param action the function to perform on the node
+     * @return bool whether the node was removed
+     */
     bool remove(NodePtr & node, K key, NodeConsumer action)
     {
         assert(node != nullptr);
@@ -930,6 +1081,11 @@ class AvlTreeMap
         return true;
     }
 
+    /**
+     * @brief Inorder traversal of the tree.
+     * @param action the function to perform on each node
+     * @returns void
+     */
     void inorderTraversal(NodeConsumer action) const
     {
         if (this->root == nullptr) {

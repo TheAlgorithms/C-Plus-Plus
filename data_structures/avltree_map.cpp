@@ -1,5 +1,5 @@
 /**
- * @file
+ * @file avltree_map.cpp
  * @brief Unit testings for `AvlTreeMap<K, V>`
  * @details This file contains the unit testings for `AvlTreeMap<K, V>`
  *  including insertions, deletions and queries. These tests cover all
@@ -10,11 +10,14 @@
  * @see avltree_map.hpp
  */
 
-#include "avltree_map.hpp"
+#include "avltree_map.hpp"  /// for `AvlTreeMap<K, V>`
 
-#include <iostream>     /// for IO operations
-#include <set>          /// for `std::set`
+#include <iostream>         /// for IO operations
+#include <set>              /// for `std::set`
 
+/**
+ * @brief The exception thrown when an assertion failed
+ */
 struct AssertionFailed : public std::exception
 {
     const char* reason;
@@ -22,21 +25,37 @@ struct AssertionFailed : public std::exception
     const char* what() const noexcept override { return reason; }
 };
 
+/**
+ * @brief Assert that two values are equal
+ */
 #define ASSERT_EQUAL(actual, ...) do { \
     if (!((actual) == (typeof(actual))(__VA_ARGS__))) throw AssertionFailed(#actual" != "#__VA_ARGS__); \
 } while (false)
 
+/**
+ * @brief Assert if the code throws an exception
+ */
 #define ASSERT_THROW(code, Ex) do { \
     try { code; } \
     catch (Ex & e) { break; } \
     throw AssertionFailed(#Ex" is not thrown"); \
 } while (false)
 
+/**
+ * @brief Run a test
+ */
 #define RUN_TEST(test) do { \
     try { test(); std::cout << #test":\tsucceeded" << std::endl; } \
     catch (std::exception & ex) { std::cout << #test":\tfailed `" << ex.what() << "`" << std::endl; } \
 } while (false)
 
+/**
+ * @brief Test if two vectors are equal
+ * @tparam T the type of the elements in the vectors
+ * @param actual
+ * @param expected
+ * @returns true if the two vectors are equal, false otherwise
+ */
 template <typename T>
 bool operator==(const std::vector<T> & actual, const std::vector<T> & expected)
 {
@@ -49,8 +68,13 @@ bool operator==(const std::vector<T> & actual, const std::vector<T> & expected)
     return true;
 }
 
-using TestMap = AvlTreeMap<int, int>;
+using TestMap = AvlTreeMap<int, int>;   ///< The type of the map used in the tests
 
+/**
+ * @brief Initialize a map with the given keys
+ * @param keys
+ * @returns void
+ */
 TestMap initWithKeys(const std::vector<int> & keys)
 {
     TestMap map;
@@ -62,6 +86,7 @@ TestMap initWithKeys(const std::vector<int> & keys)
 
 /**
  * @brief Test AvlTreeMap<K, V>::insert
+ * @returns void
  */
 void testInsert()
 {
@@ -98,6 +123,7 @@ void testAssign()
 
 /**
  * @brief Test AvlTreeMap<K, V>::remove
+ * @returns void
  */
 void testRemove()
 {
@@ -114,6 +140,7 @@ void testRemove()
 
 /**
  * @brief Test AvlTreeMap<K, V>::get
+ * @returns void
  */
 void testGet()
 {
@@ -130,6 +157,7 @@ void testGet()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getOrInsert
+ * @returns void
  */
 void testGetOrInsert()
 {
@@ -142,6 +170,7 @@ void testGetOrInsert()
 
 /**
  * @brief Test AvlTreeMap<K, V>::size
+ * @returns void
  */
 void testSize()
 {
@@ -155,6 +184,7 @@ void testSize()
 
 /**
  * @brief Test AvlTreeMap<K, V>::clear
+ * @returns void
  */
 void testClear()
 {
@@ -165,6 +195,7 @@ void testClear()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getAndRemove
+ * @returns void
  */
 void testGetAndRemove()
 {
@@ -181,6 +212,7 @@ void testGetAndRemove()
 
 /**
  * @brief Test AvlTreeMap<K, V>::removeAll
+ * @returns void
  */
 void testRemoveAll()
 {
@@ -196,6 +228,7 @@ void testRemoveAll()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getCeilingEntry
+ * @returns void
  */
 void testGetCeilingEntry()
 {
@@ -210,6 +243,7 @@ void testGetCeilingEntry()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getFloorEntry
+ * @returns void
  */
 void testGetFloorEntry()
 {
@@ -224,6 +258,7 @@ void testGetFloorEntry()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getHeigherEntry
+ * @returns void
  */
 void testGetHigherEntry()
 {
@@ -238,6 +273,7 @@ void testGetHigherEntry()
 
 /**
  * @brief Test AvlTreeMap<K, V>::getLowerEntry
+ * @returns void
  */
 void testGetLowerEntry()
 {
@@ -252,7 +288,7 @@ void testGetLowerEntry()
 
 /**
  * @brief Main function
- * @returns 0 on exit
+ * @return 0 on exit
  */
 int main()
 {
