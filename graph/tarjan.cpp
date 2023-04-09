@@ -28,6 +28,11 @@
  * @brief Graph algorithms
  */
 namespace graph {
+/**
+* @class Graph
+* @brief this class has the BFS,DFS and articulation point algorithm
+* and various supporting methods for the implementation of tarjans articulation point algorithm.
+*/
 class Graph
 {
 public:
