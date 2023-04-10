@@ -6,7 +6,7 @@
  */
 #include <cassert>  /// for assert
 #include <cstring>  /// for strlen
-#include <limits>   /// for CHAR_MAX macro
+#include <climits>   /// for CHAR_MAX macro
 #include <string>   /// for std::string
 #include <vector>   /// for std::vector
 
