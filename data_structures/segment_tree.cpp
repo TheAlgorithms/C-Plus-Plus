@@ -29,8 +29,8 @@ namespace data_structures {
 template <class T>
 class SegmentTree {
 private:
-    const int ID = 0;   ///< Comb(ID, x) = x
-    std::vector<int> t; ///< Vector to represent the tree
+    const T ID = 0;   ///< Comb(ID, x) = x
+    std::vector<T> t; ///< Vector to represent the tree
     int size;
 private:
     /**
@@ -59,7 +59,7 @@ private:
      * @param pos The position to update
      * @param val The value to update it to
      */
-    void update(int i, int l, int r, int pos, int val) {
+    void update(int i, int l, int r, int pos, T val) {
         if(l == r) t[i] = val;
         else {
             int m = mid(l, r);
@@ -77,7 +77,7 @@ private:
      * @param tr The right endpoint of the range
      * @return The comb operation applied to all values between tl and tr
      */
-    int range_comb(int i, int l, int r, int tl, int tr) {
+    T range_comb(int i, int l, int r, int tl, int tr) {
         if(l == tl && r == tr) return t[i];
         if(tl > tr) return 0;
         int m = mid(l, r);
@@ -90,7 +90,7 @@ public:
      * @param pos The position to update
      * @param val The value to update it to
      */
-    void update(int pos, int val) {
+    void update(int pos, T val) {
         update(1, 1, size, pos, val);
     }
     /**
@@ -99,7 +99,7 @@ public:
      * @param r The right endpoint of the range
      * @return The value of the comb operations
      */
-    int range_comb(int l, int r) {
+    T range_comb(int l, int r) {
         return range_comb(1, 1, size, l, r);
     }
 };
