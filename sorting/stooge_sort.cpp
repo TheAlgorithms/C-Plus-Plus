@@ -26,18 +26,18 @@
   * @returns void
   */
 void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
-	if (i < j) {
-		if ((*L)[i] > (*L)[j]) {
-			std::swap((*L)[i], (*L)[j]);
-		}
-		if (j - i > 1) {
-			size_t third = (j - i + 1) / 3;
-			stoogeSort(L, i, j - third);
-			stoogeSort(L, i + third, j);
-			stoogeSort(L, i, j - third);
-		}
-	}
-	return;
+    if (i >= j) {
+        return;
+    }
+    if ((*L)[i] > (*L)[j]) {
+        std::swap((*L)[i], (*L)[j]);
+    }
+    if (j - i > 1) {
+        size_t third = (j - i + 1) / 3;
+        stoogeSort(L, i, j - third);
+        stoogeSort(L, i + third, j);
+        stoogeSort(L, i, j - third);
+    }
 }
 
 /**
