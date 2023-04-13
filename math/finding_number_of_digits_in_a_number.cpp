@@ -51,15 +51,16 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
  * @returns the digits count
  */
 double finding_number_of_digits_in_a_number_using_log(double n) {
+    // log(0) is undefined
+    if (n == 0) {
+        return 0;
+    }
+
     // to handle the negative numbers
     if (n < 0) {
         n = -n;
     }
-    // log(0) is undefined
-    else if (n == 0) {
-        // handling the value 0
-        return 0;
-    }
+
     double count = floor(log10(n) + 1);
 
     return count;
