@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71":[10,0,7,0,1,17],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ab7fd890a7ccf756e4b3313087b76a8c2":[10,0,7,0,1,1],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ad45fde095ac00effe1fe00b1d85ff9c7":[10,0,7,0,1,2],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ade14b0e1a88543b91426e2008e4d0f99":[10,0,7,0,1,9],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ae145ac4a0d2ec58945b58fad3c04f00f":[10,0,7,0,1,8],
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af22395b8e9e04222aa93a329523faef9":[10,0,7,0,1,3],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af778034b2942ecac6df1e9ec8b5412ee":[10,0,7,0,1,12],
 "dd/da0/todo.html":[7],
 "dd/da8/pigeonhole__sort_8cpp.html":[11,0,21,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8":[11,0,13,55,1],
 "df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,13,55,3],
 "df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,55,2],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html":[9,0,12,0],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2":[9,0,12,0,4],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#ac00616a4e40d3cd5cfb4da87d9ff9af0":[9,0,12,0,3],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[9,0,12,0,2],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#af0a6e3521629c25c2b5d620f26429830":[9,0,12,0,1],
-"df/d72/modular__division_8cpp.html":[11,0,13,35],
-"df/d72/modular__division_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,13,35,0]
+"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html":[9,0,12,0]
 };

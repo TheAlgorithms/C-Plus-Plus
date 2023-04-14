@@ -138,15 +138,15 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#acefecc3b1a4044f2be5ab46eea0099bf",
 "d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4",
-"d4/d9d/sum__of__binomial__coefficient_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"d6/d0c/namespacehashing.html",
-"d7/d47/namespace_x_o_r.html",
-"d8/d95/vector__ops_8hpp.html#a54bf1f3c43271a5fc93101f6ae2e6269",
-"d9/dde/classbinary__search__tree.html#a2fcf37549bd002c174a45b0b4203c2bd",
-"db/d19/structlinear__probing_1_1_entry.html",
-"dc/d61/classgraph_1_1_graph.html#acebf0505d625b043bb9c8c27c7a8def0",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af778034b2942ecac6df1e9ec8b5412ee",
-"df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179"
+"d4/d9c/primes__up__to__billion_8cpp.html#a031cada84819ed6426f58e4f7e81261c",
+"d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html#a9883dfcceede9a42227d2d313ae86f85",
+"d7/d35/matrix__exponentiation_8cpp.html#a702a9fc90e79b05b863cc4efa26ae2ec",
+"d8/d95/vector__ops_8hpp.html#a0cc29566568e0383dd7d374068cbe6b3",
+"d9/dc9/namespacebase64__encoding.html",
+"db/d0d/prime__factorization_8cpp.html#affe577b9bce8f604f5e2f861c63c7099",
+"dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19",
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71",
+"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#a17f3d667241b88115a95282cdd719cb2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
