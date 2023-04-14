@@ -1,0 +1,39 @@
+# The objective of this GitHub Action is to update the leetcode DIRECTORY.md file (if needed)
+# when doing a git push
+name: leetcode_directory_writer
+on:
+  push:
+    paths:
+      - 'leetcode/src/**.cpp'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - name: Add python dependencies
+        run: |
+          pip install requests
+      - name: Write LeetCode DIRECTORY.md
+        run: |
+          python3 scripts/leetcode_directory_md.py 2>&1 | tee leetcode/DIRECTORY.md
+          git pull || true
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        id: commit-push
+        with:
+          commit_message: 'docs: updating `leetcode/DIRECTORY.md`'
+          branch: 'leetcode-directory-${{ github.sha }}'
+          create_branch: true
+      - name: Creating and merging the PR
+        shell: bash
+        if: steps.commit-push.outputs.changes_detected == 'true'
+        run: |
+          gh pr create --base ${GITHUB_REF##*/} --head leetcode-directory-${{ github.sha }} --title 'docs: updating `leetcode/DIRECTORY.md`' --body 'Updated LeetCode directory (see the diff. for changes).'
+          gh pr merge --admin --merge --subject 'docs: updating `leetcode/DIRECTORY.md' --delete-branch
+        env:
+          GH_TOKEN: ${{ github.token }}
