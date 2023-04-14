@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d1/d83/classuint256__t.html#acefecc3b1a4044f2be5ab46eea0099bf":[10,0,55,72],
 "d1/d83/classuint256__t.html#ad4928175eaaaa2b559bc945affe63ad2":[10,0,55,19],
 "d1/d83/classuint256__t.html#ad5bd38b2d3becca998457af1124d6e8b":[10,0,55,14],
 "d1/d83/classuint256__t.html#ad74d33215517459c2b33ace7a9c6bc13":[10,0,55,62],
@@ -198,8 +199,8 @@ var NAVTREEINDEX3 =
 "d2/da7/namespacefind__non__repeating__integer.html":[9,0,30],
 "d2/dc4/classstack__linked_list.html":[10,0,50],
 "d2/dcf/namespacestatistics.html":[9,0,109],
-"d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[10,0,16,2],
 "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[9,0,110,7],
+"d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html":[10,0,16,2],
 "d2/de1/namespacehouse__robber.html":[9,0,42],
 "d2/de7/namespacerunge__kutta.html":[9,0,97],
 "d2/de9/heavy__light__decomposition_8cpp.html":[11,0,19,1],
@@ -207,8 +208,8 @@ var NAVTREEINDEX3 =
 "d2/de9/heavy__light__decomposition_8cpp.html#a458410412185a5f09199deaff7157a8d":[11,0,19,1,5],
 "d2/de9/heavy__light__decomposition_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,19,1,3],
 "d2/de9/heavy__light__decomposition_8cpp.html#af31ec5409537703d9c8a47350386b32a":[11,0,19,1,6],
-"d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html":[9,0,110,5],
 "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html":[10,0,16,0],
+"d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html":[9,0,110,5],
 "d3/d05/sudoku__solver_8cpp.html":[11,0,0,9],
 "d3/d05/sudoku__solver_8cpp.html#a07dc6acffd0500de9bdbf16b3ade94b0":[11,0,0,9,0],
 "d3/d05/sudoku__solver_8cpp.html#ab040a12d7684cd85fb3684f4211ea5ac":[11,0,0,9,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d3/d40/graph__coloring_8cpp.html":[11,0,0,0],
 "d3/d40/graph__coloring_8cpp.html#a40337efc5dad761096489bf2c5b1c80c":[11,0,0,0,0],
 "d3/d40/graph__coloring_8cpp.html#a8c47fa37fb6eeeb781b2ec1b05af6b07":[11,0,0,0,3],
-"d3/d40/graph__coloring_8cpp.html#a976efe049deb042bf1f02612e181ab1d":[11,0,0,0,1],
-"d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,0,0,2]
+"d3/d40/graph__coloring_8cpp.html#a976efe049deb042bf1f02612e181ab1d":[11,0,0,0,1]
 };

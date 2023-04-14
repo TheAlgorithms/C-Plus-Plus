@@ -106,11 +106,12 @@ $(document).ready(function(){initNavTree('d0/d46/finding__number__of__digits__in
 <p>[Program to count digits in an integer](<a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods">https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods</a>)  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for finding_number_of_digits_in_a_number.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d4a/finding__number__of__digits__in__a__number_8cpp__incl.svg" width="194" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d4a/finding__number__of__digits__in__a__number_8cpp__incl.svg" width="256" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -119,9 +120,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a8a3b522a675ab4cdec2d275f6f7798a1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a> (uint64_t n)</td></tr>
 <tr class="memdesc:a8a3b522a675ab4cdec2d275f6f7798a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations  <br /></td></tr>
 <tr class="separator:a8a3b522a675ab4cdec2d275f6f7798a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
-<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
-<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0862b67cf73651707ece04673e1ae49"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a> (double n)</td></tr>
+<tr class="memdesc:ac0862b67cf73651707ece04673e1ae49"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds the number of digits in constant time using logarithmic function TC: O(1)  <br /></td></tr>
+<tr class="separator:ac0862b67cf73651707ece04673e1ae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c15b7f1aedd4419a65cd49562cc300"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300">first_test</a> ()</td></tr>
+<tr class="memdesc:ab4c15b7f1aedd4419a65cd49562cc300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:ab4c15b7f1aedd4419a65cd49562cc300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b222ea7f3e6e3128e67d546b654d3a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8b222ea7f3e6e3128e67d546b654d3a9">second_test</a> ()</td></tr>
+<tr class="separator:a8b222ea7f3e6e3128e67d546b654d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +135,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>[Program to count digits in an integer](<a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods">https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods</a>) </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/amino19" target="_blank">aminos 🇮🇳</a></dd></dl>
-<p>It is a very basic math of finding number of digits in a given number i.e, we can use it by inputting values whether it can be a positive/negative value, let's say: an integer. There is also a second method: by using "K = floor(log10(N) + 1)", but it's only applicable for numbers (not integers). For more details, refer to the <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/blob/master/en/Basic%20Math/Finding
+<p>It is a very basic math of finding number of digits in a given number i.e, we can use it by inputting values whether it can be a positive/negative value, let's say: an integer. There is also a second method: by using "K = floor(log10(N) + 1)", but it's only applicable for numbers (not integers). The code for that is also included (finding_number_of_digits_in_a_number_using_log). For more details, refer to the <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/blob/master/en/Basic%20Math/Finding
 the number of digits in a number.md" target="_blank">Algorithms-Explanation</a> repository. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8a3b522a675ab4cdec2d275f6f7798a1" name="a8a3b522a675ab4cdec2d275f6f7798a1"></a>
@@ -149,8 +155,8 @@ the number of digits in a number.md" target="_blank">Algorithms-Explanation</a> 
 </div><div class="memdoc">
 
 <p>for IO operations </p>
-<p>for assert</p>
-<p>The main function that checks the number of digits in a number. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>for assert for log calculation</p>
+<p>The main function that checks the number of digits in a number. TC : O(number of digits) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>the number to check its digits </td></tr>
   </table>
@@ -158,22 +164,110 @@ the number of digits in a number.md" target="_blank">Algorithms-Explanation</a> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the digits count </dd></dl>
 <p>&lt; the variable used for the digits count</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                          {</div>
-<div class="line"><span class="lineno">   28</span>    uint64_t count = 0;  <span class="comment">///&lt; the variable used for the digits count</span></div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    <span class="comment">// iterate until `n` becomes 0</span></div>
-<div class="line"><span class="lineno">   31</span>    <span class="comment">// remove last digit from `n` in each iteration</span></div>
-<div class="line"><span class="lineno">   32</span>    <span class="comment">// increase `count` by 1 in each iteration</span></div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">while</span> (n != 0) {</div>
-<div class="line"><span class="lineno">   34</span>        <span class="comment">// we can also use `n = n / 10`</span></div>
-<div class="line"><span class="lineno">   35</span>        n /= 10;</div>
-<div class="line"><span class="lineno">   36</span>        <span class="comment">// each time the loop is running, `count` will be incremented by 1.</span></div>
-<div class="line"><span class="lineno">   37</span>        ++count;</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> count;</div>
-<div class="line"><span class="lineno">   41</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                          {</div>
+<div class="line"><span class="lineno">   31</span>    uint64_t count = 0;  <span class="comment">///&lt; the variable used for the digits count</span></div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="comment">// iterate until `n` becomes 0</span></div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// remove last digit from `n` in each iteration</span></div>
+<div class="line"><span class="lineno">   35</span>    <span class="comment">// increase `count` by 1 in each iteration</span></div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">while</span> (n != 0) {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="comment">// we can also use `n = n / 10`</span></div>
+<div class="line"><span class="lineno">   38</span>        n /= 10;</div>
+<div class="line"><span class="lineno">   39</span>        <span class="comment">// each time the loop is running, `count` will be incremented by 1.</span></div>
+<div class="line"><span class="lineno">   40</span>        ++count;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ac0862b67cf73651707ece04673e1ae49" name="ac0862b67cf73651707ece04673e1ae49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0862b67cf73651707ece04673e1ae49">&#9670;&#160;</a></span>finding_number_of_digits_in_a_number_using_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double finding_number_of_digits_in_a_number_using_log </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finds the number of digits in constant time using logarithmic function TC: O(1) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the number to check its digits </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the digits count </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                                {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// log(0) is undefined</span></div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (n == 0) {</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// to handle the negative numbers</span></div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (n &lt; 0) {</div>
+<div class="line"><span class="lineno">   61</span>        n = -n;</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordtype">double</span> count = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/floor.html">floor</a>(<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/log10.html">log10</a>(n) + 1);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+<div class="ttc" id="afloor_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/floor.html">std::floor</a></div><div class="ttdeci">T floor(T... args)</div></div>
+<div class="ttc" id="alog10_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/log10.html">std::log10</a></div><div class="ttdeci">T log10(T... args)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4c15b7f1aedd4419a65cd49562cc300" name="ab4c15b7f1aedd4419a65cd49562cc300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c15b7f1aedd4419a65cd49562cc300">&#9670;&#160;</a></span>first_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void first_test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>                         {</div>
+<div class="line"><span class="lineno">   74</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(5492) == 4);</div>
+<div class="line"><span class="lineno">   75</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(-0) == 0);</div>
+<div class="line"><span class="lineno">   76</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(10000) == 5);</div>
+<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(9) == 1);</div>
+<div class="line"><span class="lineno">   78</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(100000) == 6);</div>
+<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(13) == 2);</div>
+<div class="line"><span class="lineno">   80</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(564) == 3);</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="afinding__number__of__digits__in__a__number_8cpp_html_a8a3b522a675ab4cdec2d275f6f7798a1"><div class="ttname"><a href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a></div><div class="ttdeci">uint64_t finding_number_of_digits_in_a_number(uint64_t n)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition:</b> finding_number_of_digits_in_a_number.cpp:30</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d46/finding__number__of__digits__in__a__number_8cpp_ab4c15b7f1aedd4419a65cd49562cc300_cgraph.svg" width="299" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -194,22 +288,26 @@ the number of digits in a number.md" target="_blank">Algorithms-Explanation</a> 
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>           {</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   66</span>}</div>
-<div class="ttc" id="afinding__number__of__digits__in__a__number_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> finding_number_of_digits_in_a_number.cpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>           {</div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300">first_test</a>();</div>
+<div class="line"><span class="lineno">   99</span>    second_test();</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="afinding__number__of__digits__in__a__number_8cpp_html_ab4c15b7f1aedd4419a65cd49562cc300"><div class="ttname"><a href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ab4c15b7f1aedd4419a65cd49562cc300">first_test</a></div><div class="ttdeci">static void first_test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> finding_number_of_digits_in_a_number.cpp:73</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d46/finding__number__of__digits__in__a__number_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="368" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d46/finding__number__of__digits__in__a__number_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="398" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
+<a id="a8b222ea7f3e6e3128e67d546b654d3a9" name="a8b222ea7f3e6e3128e67d546b654d3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b222ea7f3e6e3128e67d546b654d3a9">&#9670;&#160;</a></span>second_test()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +316,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void test </td>
+          <td class="memname">static void second_test </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -230,29 +328,17 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Self-test implementations. </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                   {</div>
-<div class="line"><span class="lineno">   48</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(5492) == 4);</div>
-<div class="line"><span class="lineno">   49</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(-0) == 0);</div>
-<div class="line"><span class="lineno">   50</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(10000) == 5);</div>
-<div class="line"><span class="lineno">   51</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(9) == 1);</div>
-<div class="line"><span class="lineno">   52</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(100000) == 6);</div>
-<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(13) == 2);</div>
-<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a>(564) == 3);</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="afinding__number__of__digits__in__a__number_8cpp_html_a8a3b522a675ab4cdec2d275f6f7798a1"><div class="ttname"><a href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#a8a3b522a675ab4cdec2d275f6f7798a1">finding_number_of_digits_in_a_number</a></div><div class="ttdeci">uint64_t finding_number_of_digits_in_a_number(uint64_t n)</div><div class="ttdoc">for IO operations</div><div class="ttdef"><b>Definition:</b> finding_number_of_digits_in_a_number.cpp:27</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d46/finding__number__of__digits__in__a__number_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="270" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                          {</div>
+<div class="line"><span class="lineno">   84</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(5492) == 4);</div>
+<div class="line"><span class="lineno">   85</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(-0) == 0);</div>
+<div class="line"><span class="lineno">   86</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(10000) == 5);</div>
+<div class="line"><span class="lineno">   87</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(9) == 1);</div>
+<div class="line"><span class="lineno">   88</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(100000) == 6);</div>
+<div class="line"><span class="lineno">   89</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(13) == 2);</div>
+<div class="line"><span class="lineno">   90</span>    assert(<a class="code hl_function" href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a>(564) == 3);</div>
+<div class="line"><span class="lineno">   91</span>}</div>
+<div class="ttc" id="afinding__number__of__digits__in__a__number_8cpp_html_ac0862b67cf73651707ece04673e1ae49"><div class="ttname"><a href="../../d0/d46/finding__number__of__digits__in__a__number_8cpp.html#ac0862b67cf73651707ece04673e1ae49">finding_number_of_digits_in_a_number_using_log</a></div><div class="ttdeci">double finding_number_of_digits_in_a_number_using_log(double n)</div><div class="ttdoc">This function finds the number of digits in constant time using logarithmic function TC: O(1)</div><div class="ttdef"><b>Definition:</b> finding_number_of_digits_in_a_number.cpp:53</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

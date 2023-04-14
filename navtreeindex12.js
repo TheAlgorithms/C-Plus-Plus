@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#af778034b2942ecac6df1e9ec8b5412ee":[10,0,7,0,1,12],
 "dd/da0/todo.html":[7],
 "dd/da8/pigeonhole__sort_8cpp.html":[11,0,21,14],
 "dd/da8/pigeonhole__sort_8cpp.html#a0e9e1b21a1684585e9e50f9afe4d53a3":[11,0,21,14,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#acc5fe9c2032fb7582c38a20d1fa69bcf":[9,0,12,0,2],
 "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html#af0a6e3521629c25c2b5d620f26429830":[9,0,12,0,1],
 "df/d72/modular__division_8cpp.html":[11,0,13,35],
-"df/d72/modular__division_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,13,35,0],
-"df/d72/modular__division_8cpp.html#a66cdf93153cbd1408bd74ac68961d179":[11,0,13,35,2]
+"df/d72/modular__division_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[11,0,13,35,0]
 };
