@@ -22,7 +22,6 @@
 namespace backtracking {
 /**
  * @brief generate_parentheses class
- * @namespace generate_parentheses
  */
 class generate_parentheses {
  private:
