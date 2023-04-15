@@ -32,7 +32,7 @@ uint64_t phiFunction(uint64_t n) {
 
     return result;
 }
-} // namespace math
+}  // namespace math
 
 /**
  * @brief Self-test implementations
