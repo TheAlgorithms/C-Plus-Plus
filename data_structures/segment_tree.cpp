@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief A data structure to quickly do operations on ranges: [Segment Tree](https://en.wikipedia.org/wiki/Segment_tree)
+ * @brief A data structure to quickly do operations on ranges: the [Segment Tree](https://en.wikipedia.org/wiki/Segment_tree) algorithm implementation
  * @details
  * Implementation of the segment tree data structre
  *
