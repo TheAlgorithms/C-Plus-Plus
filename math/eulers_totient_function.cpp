@@ -39,6 +39,10 @@ static void test() {
     assert(math::phiFunction(1) == 1);
     assert(math::phiFunction(2) == 1);
     assert(math::phiFunction(10) == 4);
+    assert(math::phiFunction(123456) == 41088);
+    assert(math::phiFunction(808017424794) == 263582333856);
+    assert(math::phiFunction(3141592) == 1570792);
+    assert(math::phiFunction(27182818) == 12545904);
 }
 
 /**
