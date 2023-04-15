@@ -2,9 +2,25 @@
  * @file
  * @brief Implementation of [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
  * @description
- * Euler's Totient is also known as the phi function hence the name in the code.
- * Equation:
- * φ(n) = Πp|n (1 - 1/p)
+ * Euler Totient Function is also known as phi function.
+ * \f[\phi(n) =
+ * \phi\left({p_1}^{a_1}\right)\cdot\phi\left({p_2}^{a_2}\right)\ldots\f] where
+ * \f$p_1\f$, \f$p_2\f$, \f$\ldots\f$ are prime factors of n.
+ * <br/>3 Euler's properties:
+ * 1. \f$\phi(n) = n-1\f$
+ * 2. \f$\phi(n^k) = n^k - n^{k-1}\f$
+ * 3. \f$\phi(a,b) = \phi(a)\cdot\phi(b)\f$ where a and b are relative primes.
+ *
+ * Applying this 3 properties on the first equation.
+ * \f[\phi(n) =
+ * n\cdot\left(1-\frac{1}{p_1}\right)\cdot\left(1-\frac{1}{p_2}\right)\cdots\f]
+ * where \f$p_1\f$,\f$p_2\f$... are prime factors.
+ * Hence Implementation in \f$O\left(\sqrt{n}\right)\f$.
+ * <br/>Some known values are:
+ * * \f$\phi(100) = 40\f$
+ * * \f$\phi(1) = 1\f$
+ * * \f$\phi(17501) = 15120\f$
+ * * \f$\phi(1420) = 560\f$
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
