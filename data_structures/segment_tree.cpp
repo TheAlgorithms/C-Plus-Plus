@@ -124,5 +124,6 @@ static void test() {
  * @brief Main function
  */
 int main() {
-    test();
+    test();  // run self-test implementations
+    return 0;
 }
