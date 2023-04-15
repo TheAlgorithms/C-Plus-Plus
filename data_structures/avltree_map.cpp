@@ -1,5 +1,5 @@
 /**
- * @file avltree_map.cpp
+ * @file
  * @brief Unit testings for `AvlTreeMap<K, V>`
  * @details This file contains the unit testings for `AvlTreeMap<K, V>`
  *  including insertions, deletions and queries. These tests cover all

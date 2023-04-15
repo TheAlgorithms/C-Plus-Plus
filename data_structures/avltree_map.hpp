@@ -1,5 +1,5 @@
 /**
- * @file avltree_map.hpp
+ * @file
  * @brief An [AVLTree](https://en.wikipedia.org/wiki/AVL_tree)-based
  *  map implementation
  * @details The map is sorted according to the natural ordering of its
@@ -63,6 +63,12 @@ class AvlTreeMap
 
   private:
 
+    /**
+     * @brief The node type
+     * @details A node is a basic unit of the AVLTree, which
+     *  contains the key, value, balance factor, height and
+     *  pointers to its children.
+     */
     struct Node
     {
         using Ptr = std::shared_ptr<Node>;                          ///< node pointer type
@@ -110,6 +116,10 @@ class AvlTreeMap
             return node;
         }
 
+        /**
+         * @brief Whether this node is a leaf
+         * @return bool true if this node is a leaf, false otherwise
+         */
         inline bool isLeaf() const noexcept
         {
             return this->left == nullptr && this->right == nullptr;
