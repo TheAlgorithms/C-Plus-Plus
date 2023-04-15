@@ -12,10 +12,10 @@
  * @author [Nishant Chatterjee](https://github.com/nishantc1527)
  */
 
-#include <iostream>     // For IO operations
-#include <vector>       // For std::vector
-#include <algorithm>    // For std::min and std::max
-#include <cassert>      // For assert
+#include <iostream>     /// For IO operations
+#include <vector>       /// For std::vector
+#include <algorithm>    /// For std::min and std::max
+#include <cassert>      /// For assert
 
 /*
  * @namespace data_structures
