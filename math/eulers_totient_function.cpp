@@ -11,8 +11,11 @@
 #include <iostream> // for io operations
 #include <cassert> // for assert
 
+/**
+ * @brief Mathematical algorithms
+ * @namespace
+ */
 namespace math {
-
 /**
  * @brief Function to calculate Euler's Totient
  * @param n is the number to find the Euler's Totient of.
