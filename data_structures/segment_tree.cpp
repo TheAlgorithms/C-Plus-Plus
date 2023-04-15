@@ -106,7 +106,8 @@ public:
 } // namespace data_structures
 
 /**
- * @brief self test implementations
+ * @brief Self-test implementations
+ * @returns void
  */
 static void test() {
     data_structures::SegmentTree<int> t(5);
