@@ -18,7 +18,8 @@
 #include <cassert>      /// For assert
 
 /*
- * @namespace data_structures
+ * @namespace
+ * @brief Data structures
  */
 namespace data_structures {
 /**
