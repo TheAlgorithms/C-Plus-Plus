@@ -1,8 +1,7 @@
 /**
  * @file
- * @brief Generates all combinations of well-formed parentheses.
- * [Generate
- Parentheses](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/794/)
+ * @brief Well-formed [Generated
+ Parentheses](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/794/) with all combinations.
  *
  * @details a sequence of parentheses is well-formed if each opening parentheses
  * has a corresponding closing parenthesis
