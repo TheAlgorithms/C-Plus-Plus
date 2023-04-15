@@ -24,7 +24,7 @@ All LeetCode problems can be found [**here**](https://leetcode.com/problemset/al
 If you have a solution to any of these problems (which are not being **repeated**, that's great! Here are the steps:
 
 1. Add a new file in `leetcode/src` with the number of the problem.
-    - For example: if the problem's number is 98, the filename should be `98.cpp`.
+   - For example: if the problem's number is 98, the filename should be `98.cpp`.
 2. Provide a small description of the solution at the top of the file. A function should go below that. For example:
 
 ```c
@@ -37,7 +37,7 @@ If you have a solution to any of these problems (which are not being **repeated*
 
 3. Do not provide a `main` function. Use the required standalone functions instead.
 4. Doxygen documentation isn't used in LeetCode solutions. Simple/small documentation or comments should be fine.
-5. Don't include libraries/headers such as `iostream`. Your file should be the solution to the problem only.
+5. Please include dependency libraries/headers such as `<iostream>`, `<vector>` along with the `Solution` class to the problem. This will help the CI to succeed without the dependency errors.
 
 > **Note**
 > There was a requirement to update the `leetcode/DIRECTORY.md` file with details of the solved problem. It's not required anymore. The information about the problem is fetched automatically throughout the LeetCode API.
