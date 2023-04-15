@@ -24,7 +24,6 @@
 namespace data_structures {
 /**
  * @brief class representation of the segment tree
- * @param n The size of the tree
  * @tparam T The type of the class that goes in the datastructure
  */
 template <class T>
