@@ -18,6 +18,9 @@ jobs:
       - name: Add python dependencies
         run: |
           pip install requests
+      - name: Write LeetCode DIRECTORY.md
+        run: |
+          python3 scripts/leetcode_directory_md.py 2>&1 | tee leetcode/DIRECTORY.md
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         id: commit-push
