@@ -28,11 +28,11 @@
  *
  * There are two shift rules:
  *
- * The bad character rule
- * [https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_bad_character_rule]
+ * [The bad character rule]
+ * (https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_bad_character_rule)
  *
- * The good suffix rule
- * [https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_good_suffix_rule]
+ * [The good suffix rule]
+ * (https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_good_suffix_rule)
  *
  * The shift rules are implemented as constant-time table lookups, using tables
  * generated during the preprocessing of P.
