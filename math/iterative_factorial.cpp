@@ -8,14 +8,20 @@
 #include <stdint.h>
 
 #include <cassert>
+#include <exception>
 #include <iostream>
 
 /// @brief Calculates the factorial iteratively.
-/// @param n Nth factorial. Maximum=20 because it's the biggest that is accepted
-/// without giving a warning.
+/// @param n Nth factorial.
 /// @return Factorial.
-/// @warning Assert cannot detect inaccuracies (>20)! because the int overflows.
-unsigned long long iterativeFactorial(unsigned int n) {
+/// @warning Maximum=20 because 21! returns 1.419e+19, which is not 21! but
+/// (21! % UINT64_MAX) after overflowing twice. No 128-bit variables in C++, so
+/// unless you use [abseil](https://abseil.io) or similar libraries, maximum is
+/// 20!.
+unsigned long long iterativeFactorial(unsigned short n) {
+    if (n > 20)
+        throw new std::invalid_argument("Maximum n value is 20");
+
     /// 1 because 0! == 1
     unsigned long long accumulator = 1;
 
@@ -48,13 +54,7 @@ static void test() {
 int main() {
     test();
 
-    std::cout << "10! = " << iterativeFactorial(10) << "\n"
-              << "Overflow:\n"
-                 "21! = "
-              << iterativeFactorial(21) << " == (21! \% UINT64_MAX("
-              << UINT64_MAX
-              << "))\n"
-                 "(Overflows 2 times)";
+    std::cout << "10! = " << iterativeFactorial(10);
 
     return 0;
 }
