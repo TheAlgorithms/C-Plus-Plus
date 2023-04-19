@@ -8,9 +8,12 @@
  */
 
 #include <array>
+#include <cassert>
 #include <cmath>
 #include <complex>
 #include <exception>
+#include <iomanip>
+#include <iostream>
 
 /// @brief Quadratic equation calculator.
 /// @param a quadratic coefficient.
@@ -70,4 +73,15 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     }
 
     return solutions;
+}
+
+int main() {
+    std::array<std::complex<long double>, 2> aaa = quadraticEquation(1, 1, 1);
+    std::cout << "The complex roots of x^2 + x + 1 are " << aaa[0] << " and "
+              << aaa[1]
+              << ".\nMore precisely, and with the inaccuracy of floating point "
+                 "numbers, "
+              << std::setprecision(100) << aaa[0] << " and " << aaa[1] << "\n";
+
+    return 0;
 }
