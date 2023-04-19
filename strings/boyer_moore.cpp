@@ -1,12 +1,46 @@
 /**
  * @file
- * @brief Boyer-moore's algorithm finding all occurrences of pattern in given
- * text.
+ * @brief
+ * The Boyer–Moore algorithm searches for occurrences of pattern P in text T by
+ * performing explicit character comparisons at different alignments. Instead of
+ * a brute-force search of all alignments (of which there are n - m + 1),
+ * Boyer–Moore uses information gained by preprocessing P to skip as many
+ * alignments as possible.
+ *
+ * The key insight in this algorithm is that if the end of the pattern is
+ * compared to the text, then jumps along the text can be made rather than
+ * checking every character of the text. The reason that this works is that in
+ * lining up the pattern against the text, the last character of the pattern is
+ * compared to the character in the text.
+ *
+ * If the characters do not match, there is no need to continue searching
+ * backwards along the text. This leaves us with two cases.
+ *
+ * Case 1:
+ * If the character in the text does not match any of the characters in the
+ * pattern, then the next character in the text to check is located m characters
+ * farther along the text, where m is the length of the pattern.
+ *
+ * Case 2:
+ * If the character in the text is in the pattern, then a partial shift of the
+ * pattern along the text is done to line up along the matching character and
+ * the process is repeated.
+ *
+ * There are two shift rules:
+ *
+ * The bad character rule
+ * [https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_bad_character_rule]
+ *
+ * The good suffix rule
+ * [https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm#The_good_suffix_rule]
+ *
+ * The shift rules are implemented as constant-time table lookups, using tables
+ * generated during the preprocessing of P.
  * @author [Stoycho Kyosev](https://github.com/stoychoX)
  */
 #include <cassert>  /// for assert
+#include <climits>  /// for CHAR_MAX macro
 #include <cstring>  /// for strlen
-#include <climits>   /// for CHAR_MAX macro
 #include <string>   /// for std::string
 #include <vector>   /// for std::vector
 
