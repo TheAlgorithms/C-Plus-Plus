@@ -75,7 +75,21 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     return solutions;
 }
 
+static void test() {
+    std::array<std::complex<long double>, 2> realCase{
+        std::complex<long double>{1, 0}, std::complex<long double>{1, 0}};
+    assert(quadraticEquation(1, -2, 1) == realCase);
+
+    std::array<std::complex<long double>, 2> complexCase{
+        std::complex<long double>{-2, -1}, std::complex<long double>{-2, 1}};
+    assert(quadraticEquation(1, 4, 5) == complexCase);
+
+    return;
+}
+
 int main() {
+    test();
+
     std::array<std::complex<long double>, 2> aaa = quadraticEquation(1, 1, 1);
     std::cout << "The complex roots of x^2 + x + 1 are " << aaa[0] << " and "
               << aaa[1]
