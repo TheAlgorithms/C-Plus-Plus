@@ -34,7 +34,7 @@
 namespace math {
 /**
  * @brief Function to calculate Euler's Totient
- * @param n is the number to find the Euler's Totient of.
+ * @param n the number to find the Euler's Totient of
  */
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
