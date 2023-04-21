@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d7/d35/matrix__exponentiation_8cpp.html#a600eaf353befc174637855795f12d258":[11,0,16,9,0],
 "d7/d35/matrix__exponentiation_8cpp.html#a702a9fc90e79b05b863cc4efa26ae2ec":[11,0,16,9,6],
 "d7/d35/matrix__exponentiation_8cpp.html#a9977ad12548c4a49dee9dc3f0685aa54":[11,0,16,9,8],
 "d7/d35/matrix__exponentiation_8cpp.html#ad8389ed58fd0ec66df248014775ad1fa":[11,0,16,9,3],
@@ -53,10 +54,10 @@ var NAVTREEINDEX7 =
 "d7/d7c/classstatistics_1_1stats__computer1.html#a350bf6c429691d3578c4dfc6679a0797":[9,0,109,0,4],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[10,0,15,0,0],
 "d7/d7c/classstatistics_1_1stats__computer1.html#a390697dcee210b91823ceff04b25081b":[9,0,109,0,0],
-"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[9,0,109,0,1],
 "d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[10,0,15,0,1],
-"d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1":[9,0,109,0,2],
+"d7/d7c/classstatistics_1_1stats__computer1.html#aa13bf7c38de112f71921a5525d71a2f2":[9,0,109,0,1],
 "d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1":[10,0,15,0,2],
+"d7/d7c/classstatistics_1_1stats__computer1.html#af57e942d49f4fd70f059f224b4ac07e1":[9,0,109,0,2],
 "d7/d7f/section.html":[5],
 "d7/d81/namespacebit__manipulation.html":[9,0,9],
 "d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f":[9,0,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "d8/d90/iterative__tree__traversals_8cpp.html#ac35ae2868441f8a11c965b87b2494f21":[11,0,16,6,4],
 "d8/d90/iterative__tree__traversals_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,16,6,2],
 "d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89":[11,0,16,6,8],
-"d8/d93/namespacemagic__sequence.html":[9,0,61],
-"d8/d95/vector__ops_8hpp.html":[11,0,12,6]
+"d8/d93/namespacemagic__sequence.html":[9,0,61]
 };

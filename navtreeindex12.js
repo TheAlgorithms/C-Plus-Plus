@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa5c0486c7f29f323a2aced2ab33af420":[10,0,7,0,1,7],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa73857052e69b86347859d9148933f71":[10,0,7,0,1,17],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ab7fd890a7ccf756e4b3313087b76a8c2":[10,0,7,0,1,1],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ad45fde095ac00effe1fe00b1d85ff9c7":[10,0,7,0,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9":[11,0,13,55,0],
 "df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8":[11,0,13,55,1],
 "df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[11,0,13,55,3],
-"df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,55,2],
-"df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html":[9,0,12,0]
+"df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[11,0,13,55,2]
 };

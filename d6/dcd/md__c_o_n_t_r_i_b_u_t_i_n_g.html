@@ -131,7 +131,7 @@ Contributor</h2>
 - Make sure the file extensions are &lt;tt&gt;*.hpp&lt;/tt&gt;, &lt;tt&gt;*.h&lt;/tt&gt; or &lt;tt&gt;*.cpp&lt;/tt&gt;.
 - Don't use **&lt;tt&gt;bits/stdc++.h&lt;/tt&gt;** because this is quite Linux-specific and slows down the compilation process.
 - Organize your code using **&lt;tt&gt;struct&lt;/tt&gt;**, **&lt;tt&gt;class&lt;/tt&gt;**, and/or **&lt;tt&gt;namespace&lt;/tt&gt;** keywords.
-- If an implementation of the algorithm already exists, please refer to the @ref new-file-name-guidelines "file-name section below".
+- If an implementation of the algorithm already exists, please refer to the @ref file-name-guidelines "file-name section below".
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
@@ -152,13 +152,85 @@ Contributor</h2>
 - Make sure to add examples and test cases in your &lt;tt&gt;main()&lt;/tt&gt; function.
 - If you find an algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
 - Please try to add one or more &lt;tt&gt;test()&lt;/tt&gt; functions that will invoke the algorithm implementation on random test data with the expected output. Use the &lt;tt&gt;assert()&lt;/tt&gt; function to confirm that the tests will pass. Requires including the &lt;tt&gt;cassert&lt;/tt&gt; library.
+- Test cases should fully verify that your program works as expected. Rather than asking the user for input, it's best to make sure the given output is the correct output.
 
-@subsubsection autotoc_md30 Typical structure of a program
+@paragraph autotoc_md30 Self-test examples
+
+1. &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp#L137">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp#L137</a>" target="_blank" &gt;Quick sort&lt;/a&gt; testing (complex).
+
+@icode{cpp} 
+// Let's make sure the array of numbers is ordered after calling the function.
+std::vector&lt;uint64_t&gt; arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
+std::vector&lt;uint64_t&gt; arr_sorted = sorting::quick_sort::quick_sort(
+    arr, 0, int(std::end(arr) - std::begin(arr)) - 1);
+
+assert(std::is_sorted(std::begin(arr_sorted), std::end(arr_sorted)));
+@endicode
+
+2. &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp#L58">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp#L58</a>" target="_blank" &gt;Subset Sum&lt;/a&gt; testing (medium).
+
+@icode{cpp} 
+std::vector&lt;int32_t&gt; array1 = {-7, -3, -2, 5, 8};  // input array
+assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
+    2);  // first argument in subset_sum function is the required sum and
+         // second is the input array
+@endicode
+
+3. Small C++ program that showcases and explains the use of tests.
+
+@icode{cpp} 
+#include &lt;vector&gt;   /// for std::vector
+#include &lt;cassert&gt;  /// for assert
+
+/**
+ * @brief Verifies if the given array
+ * contains the given number on it.
+ * @tparam T the type of array (e.g., `int`, `float`, etc.)
+ * @param arr the array to be used for checking
+ * @param number the number to check if it's inside the array
+ * @return false if the number was NOT found in the array
+ * @return true if the number WAS found in the array
+ */
+template &lt;typename T&gt;
+bool is_number_on_array(const std::vector&lt;T&gt; &amp;arr, const int &amp;number) {
+    for (int i = 0; i &lt; sizeof(arr) / sizeof(int); i++) {
+        if (arr[i] == number) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    return false;
+}
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
+    std::vector&lt;int&gt; arr = { 9, 14, 21, 98, 67 };
+
+    assert(is_number_on_array(arr, 9) == true);
+    assert(is_number_on_array(arr, 4) == false);
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    tests(); // run self-test implementations
+}
+@endicode
+
+@subsubsection autotoc_md31 Typical structure of a program
 
 @icode{cpp} 
 /**
  * @file
- * @brief Add one line description here. Should contain a Wikipedia
+ * @brief Add one-line description here. Should contain a Wikipedia
  * link or another source explaining the algorithm/implementation.
  * @details
  * This is a multi-line
@@ -172,7 +244,7 @@ Contributor</h2>
 #include             /// for `some function here`
 
 /**
- * @namespace &lt;folder name&gt;
+ * @namespace
  * @brief &lt;namespace description&gt;
  */
 namespace name {
@@ -232,7 +304,7 @@ int main(int argc, char *argv[]) {
 }
 @endicode
 
-@subsubsection autotoc_md31 File Name guidelines
+@subsubsection autotoc_md32 File Name guidelines
 
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as a separator
 - For instance
@@ -246,7 +318,7 @@ my_new_cpp_class.cpp    is correct format
 - File name validation will run on Docker to ensure validity.
 - If an implementation of the algorithm already exists and your version is different from that implemented, please use incremental numeric digit as a suffix. For example: if &lt;tt&gt;median_search.cpp&lt;/tt&gt; already exists in the &lt;tt&gt;search&lt;/tt&gt; folder, and you are contributing a new implementation, the filename should be &lt;tt&gt;median_search2.cpp&lt;/tt&gt;. For a third implementation, &lt;tt&gt;median_search3.cpp&lt;/tt&gt;, and so on.
 
-@subsubsection autotoc_md32 Directory guidelines
+@subsubsection autotoc_md33 Directory guidelines
 
 - We recommend adding files to existing directories as much as possible.
 - Use lowercase words with &lt;tt&gt;"_"&lt;/tt&gt; as separator ( no spaces or &lt;tt&gt;"-"&lt;/tt&gt; allowed )
@@ -260,7 +332,7 @@ some_new_fancy_category         is correct
 - Filepaths will be used to dynamically create a directory of our algorithms.
 - Filepath validation will run on GitHub Actions to ensure compliance.
 
-@paragraph autotoc_md33 Integrating CMake in a new directory
+@paragraph autotoc_md34 Integrating CMake in a new directory
 
 In case a new directory is 100% required, &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file in the root directory needs to be updated, and a new &lt;tt&gt;CMakeLists.txt&lt;/tt&gt; file needs to be created within the new directory.
 
@@ -294,7 +366,7 @@ add_subdirectory(divide_and_conquer)
 add_subdirectory(&lt;foldername&gt;)
 @endicode
 
-@subsubsection autotoc_md34 Commit Guidelines
+@subsubsection autotoc_md35 Commit Guidelines
 
 - It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilled across multiple commits. Try to modify just one or two files in the same directory. Pull requests that span multiple directories are often rejected.
 
@@ -321,11 +393,11 @@ Common prefixes:
 - test: Correct existing tests or add new ones
 - chore: Miscellaneous changes that do not match any of the above.
 
-@subsection autotoc_md35 Pull Requests
+@subsection autotoc_md36 Pull Requests
 
 - Checkout our &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.github/pull_request_template.md</a>" target="_blank" &gt;pull request template&lt;/a&gt;
 
-@subsubsection autotoc_md36 Building Locally
+@subsubsection autotoc_md37 Building Locally
 
 Before submitting a pull request,
  build the code locally or using the convenient &lt;a href="<a href="https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus">https://gitpod.io/#https://github.com/TheAlgorithms/C-Plus-Plus</a>" target="_blank" &gt;&lt;img src="<a href="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod">https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod</a>" alt="Gitpod Ready-to-Code"/&gt;&lt;/a&gt; service.
@@ -334,7 +406,7 @@ Before submitting a pull request,
 cmake -B build -S .
 @endicode
 
-@subsubsection autotoc_md37 Static Code Analyzer
+@subsubsection autotoc_md38 Static Code Analyzer
 
 We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://clang.llvm.org/extra/clang-tidy/</a>" target="_blank" &gt;&lt;tt&gt;clang-tidy&lt;/tt&gt;&lt;/a&gt; as a static code analyzer with a configuration in &lt;a href="<a href="https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy">https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/.clang-tidy</a>" target="_blank" &gt;&lt;tt&gt;.clang-tidy&lt;/tt&gt;&lt;/a&gt;.
 
@@ -342,7 +414,7 @@ We use &lt;a href="<a href="https://clang.llvm.org/extra/clang-tidy/">https://cl
 clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
 @endicode
 
-@subsubsection autotoc_md38 Code Formatter
+@subsubsection autotoc_md39 Code Formatter
 
 &lt;a href="<a href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a>" target="_blank" &gt;&lt;tt&gt;clang-format&lt;/tt&gt;&lt;/a&gt; is used for code formatting.
 
@@ -353,7 +425,7 @@ clang-tidy --fix --quiet -p build subfolder/file_to_check.cpp --
   - Linux (Debian): &lt;tt&gt;sudo apt-get install clang-format-10 clang-tidy-10&lt;/tt&gt;
 - Running (all platforms): &lt;tt&gt;clang-format -i -style="file" my_file.cpp&lt;/tt&gt;
 
-@subsubsection autotoc_md39 GitHub Actions
+@subsubsection autotoc_md40 GitHub Actions
 
 - Enable GitHub Actions on your fork of the repository.
 After enabling, it will execute &lt;tt&gt;clang-tidy&lt;/tt&gt; and &lt;tt&gt;clang-format&lt;/tt&gt; after every push (not a commit).

@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"dc/d61/classgraph_1_1_graph.html#a59940c462861f2fcf4951d1b6c084e6a":[9,0,34,0,5],
 "dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19":[9,0,34,0,1],
 "dc/d61/classgraph_1_1_graph.html#a877b2cba40d8d46dde6fb4209effed19":[10,0,5,1,1],
 "dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5":[10,0,5,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a64815f10cf9fb9fdb4cc92731ccf10ba":[10,0,7,0,1,11],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a94f794bf44f424b1b0ca6ef9f4f6ebd3":[10,0,7,0,1,5],
 "dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a9517e162e2988f7db052296bd550a742":[10,0,7,0,1,16],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915":[10,0,7,0,1,15],
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa5c0486c7f29f323a2aced2ab33af420":[10,0,7,0,1,7]
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#aa17e0227321b109ed91e156ac1332915":[10,0,7,0,1,15]
 };
