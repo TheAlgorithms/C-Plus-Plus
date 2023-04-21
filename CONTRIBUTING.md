@@ -124,6 +124,7 @@ static void tests() {
  */
 int main() {
     tests(); // run self-test implementations
+    return 0;
 }
 ```
 
