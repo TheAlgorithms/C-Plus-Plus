@@ -24,8 +24,8 @@
  * @author [Mann Mehta](https://github.com/mann2108)
  */
 
-#include <iostream> // for io operations
-#include <cassert> // for assert
+#include <iostream> /// for IO operations
+#include <cassert> ///for assert
 
 /**
  * @brief Mathematical algorithms
