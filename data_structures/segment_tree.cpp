@@ -31,7 +31,7 @@ class SegmentTree {
 private:
     const T ID = 0;   ///< Comb(ID, x) = x
     std::vector<T> t; ///< Vector to represent the tree
-    int size = 0;
+    int size = 0;     ///< Number of elements available for querying in the tree
 private:
     /**
      * @brief Any associative function that combines x and y
