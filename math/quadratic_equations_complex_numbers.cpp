@@ -149,8 +149,6 @@ static void test() {
         std::complex<long double>{-0.5, -0.8660254038},
         std::complex<long double>{-0.5, 0.8660254038}};
     assertArray(quadraticEquation(1, 1, 1), ifloatCase);
-
-    return;
 }
 
 /**
