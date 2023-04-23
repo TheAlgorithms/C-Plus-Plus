@@ -6,7 +6,7 @@
  *
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
- * Calculates any quadratic equation in form ax^2 + bx + c.
+ * @description Calculates any quadratic equation in form ax^2 + bx + c.
  *
  * Quadratic equation:
  * x = (-b +/- sqrt(b^2 - 4ac)) / 2a
@@ -96,8 +96,6 @@ void assertArray(std::array<std::complex<long double>, 2> input,
     expected[1].imag(std::round(expected[1].imag() * exponent));
 
     assert(input == expected);
-
-    return;
 }
 
 /**
