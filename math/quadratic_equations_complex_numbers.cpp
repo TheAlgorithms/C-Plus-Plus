@@ -1,8 +1,6 @@
 /**
  * @file
  * @brief Calculate quadratic equation with complex roots, i.e. b^2 - 4ac < 0.
- * @see https://en.wikipedia.org/wiki/Quadratic_equation,
- * https://en.wikipedia.org/wiki/Quadratic_equation#discriminant
  *
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
@@ -12,8 +10,11 @@
  * x = (-b +/- sqrt(b^2 - 4ac)) / 2a
  *
  * @example
- * using namespace std;
  * int main() {
+ *   using std::array;
+ *   using std::complex;
+ *   using std::cout;
+ *
  *   array<complex<long double, 2> solutions = quadraticEquation(1, 2, 1);
  *   cout << solutions[0] << " " << solutions[1] << "\n";
  *
@@ -36,6 +37,12 @@
 #include <iostream>   /// std::cout
 
 /**
+ * @namespace
+ * @brief Mathematical algorithms
+ */
+namespace math {
+
+/**
  * @brief Quadratic equation calculator.
  * @param a quadratic coefficient.
  * @param b linear coefficient.
@@ -46,8 +53,9 @@
 std::array<std::complex<long double>, 2> quadraticEquation(long double a,
                                                            long double b,
                                                            long double c) {
-    if (a == 0)
+    if (a == 0) {
         throw std::invalid_argument("quadratic coefficient cannot be 0");
+    }
 
     long double discriminant = b * b - 4 * a * c;
     std::array<std::complex<long double>, 2> solutions{0, 0};
@@ -75,6 +83,8 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     return solutions;
 }
 
+}  // namespace math
+
 /**
  * @brief Asserts an array of complex numbers.
  * @param input Input array of complex numbers. .
@@ -84,7 +94,7 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
 void assertArray(std::array<std::complex<long double>, 2> input,
                  std::array<std::complex<long double>, 2> expected,
                  size_t precision = 10) {
-    long exponent = std::pow(10, precision);
+    long double exponent = std::pow(10, precision);
     input[0].real(std::round(input[0].real() * exponent));
     input[1].real(std::round(input[1].real() * exponent));
     input[0].imag(std::round(input[0].imag() * exponent));
@@ -113,7 +123,7 @@ static void test() {
                  "(1, 0), (1, 0)\n\n";
     std::array<std::complex<long double>, 2> equalCase{
         std::complex<long double>{1, 0}, std::complex<long double>{1, 0}};
-    assert(quadraticEquation(1, -2, 1) == equalCase);
+    assert(math::quadraticEquation(1, -2, 1) == equalCase);
 
     // Values are equal and complex.
     std::cout << "Input: \n"
@@ -124,7 +134,7 @@ static void test() {
                  "(-2, -1), (-2, 1)\n\n";
     std::array<std::complex<long double>, 2> complexCase{
         std::complex<long double>{-2, -1}, std::complex<long double>{-2, 1}};
-    assert(quadraticEquation(1, 4, 5) == complexCase);
+    assert(math::quadraticEquation(1, 4, 5) == complexCase);
 
     // Values are real.
     std::cout << "Input: \n"
@@ -136,7 +146,7 @@ static void test() {
     std::array<std::complex<long double>, 2> floatCase{
         std::complex<long double>{-4.7912878475, 0},
         std::complex<long double>{-0.2087121525, 0}};
-    assertArray(quadraticEquation(1, 5, 1), floatCase);
+    assertArray(math::quadraticEquation(1, 5, 1), floatCase);
 
     // Values are complex.
     std::cout << "Input: \n"
@@ -148,7 +158,7 @@ static void test() {
     std::array<std::complex<long double>, 2> ifloatCase{
         std::complex<long double>{-0.5, -0.8660254038},
         std::complex<long double>{-0.5, 0.8660254038}};
-    assertArray(quadraticEquation(1, 1, 1), ifloatCase);
+    assertArray(math::quadraticEquation(1, 1, 1), ifloatCase);
 }
 
 /**
