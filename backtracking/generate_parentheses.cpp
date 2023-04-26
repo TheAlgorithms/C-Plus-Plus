@@ -71,7 +71,7 @@ void backtracking::generate_parentheses::makeStrings(std::string str, int n,
 std::vector<std::string> backtracking::generate_parentheses::generate(int n) {
     backtracking::generate_parentheses::res.clear();
     std::string str = "(";
-    backtracking::generate_parentheses::makeStrings(str, n, 0, 1);
+    generate_parentheses::makeStrings(str, n, 0, 1);
     return res;
 }
 }  // namespace backtracking
