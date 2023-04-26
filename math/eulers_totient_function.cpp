@@ -25,7 +25,7 @@
  */
 
 #include <iostream> /// for IO operations
-#include <cassert> ///for assert
+#include <cassert> /// for assert
 
 /**
  * @brief Mathematical algorithms
