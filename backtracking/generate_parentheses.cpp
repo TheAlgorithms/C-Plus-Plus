@@ -48,8 +48,8 @@ void backtracking::generate_parentheses::makeStrings(std::string str, int n,
     if (closed > open)  // We can never have more closed than open
         return;
 
-    if (str.length() == 2 * n and
-        closed != open)  // closed and open must be the same
+    if ((str.length() == 2 * n) &&
+        (closed != open)) {  // closed and open must be the same
         return;
 
     if (str.length() == 2 * n) {
