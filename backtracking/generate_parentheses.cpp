@@ -32,7 +32,6 @@ class generate_parentheses {
  public:
     std::vector<std::string> generate(int n);
 };
-}  // namespace backtracking
 
 /**
  * @brief function that implements backtracking
