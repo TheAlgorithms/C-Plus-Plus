@@ -51,6 +51,7 @@ void backtracking::generate_parentheses::makeStrings(std::string str, int n,
     if ((str.length() == 2 * n) &&
         (closed != open)) {  // closed and open must be the same
         return;
+    }
 
     if (str.length() == 2 * n) {
         res.push_back(str);
