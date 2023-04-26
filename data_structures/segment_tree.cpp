@@ -119,6 +119,8 @@ static void test() {
     assert(t.range_comb(1, 3) == 6); // 1 + 2 + 3 = 6
     t.update(1, 3);
     assert(t.range_comb(1, 3) == 8); // 3 + 2 + 3 = 8
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
