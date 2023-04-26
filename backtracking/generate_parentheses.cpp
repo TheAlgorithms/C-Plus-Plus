@@ -68,7 +68,7 @@ void backtracking::generate_parentheses::makeStrings(std::string str, int n,
  * @param n number of pairs of parentheses
  * @return all well-formed pattern of parentheses
  */
-std::vector<std::string> backtracking::generate_parentheses::generate(int n) {
+std::vector<std::string> generate_parentheses::generate(int n) {
     backtracking::generate_parentheses::res.clear();
     std::string str = "(";
     generate_parentheses::makeStrings(str, n, 0, 1);
