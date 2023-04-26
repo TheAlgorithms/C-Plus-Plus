@@ -81,7 +81,7 @@ std::vector<std::string> generate_parentheses::generate(int n) {
  * @returns void
  */
 static void test() {
-    int n;
+    int n = 0;
     std::vector<std::string> patterns;
     backtracking::generate_parentheses p;
 
