@@ -116,6 +116,8 @@ static void tests() {
 
     assert(is_number_on_array(arr, 9) == true);
     assert(is_number_on_array(arr, 4) == false);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
@@ -192,6 +194,9 @@ static void test() {
     assert(func(...) == ...); // this ensures that the algorithm works as expected
 
     // can have multiple checks
+
+    // this lets the user know that the tests have passed
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
