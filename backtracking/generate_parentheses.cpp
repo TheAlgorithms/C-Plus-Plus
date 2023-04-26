@@ -43,7 +43,7 @@ class generate_parentheses {
  * @param open number of open parentheses
  */
 
-void backtracking::generate_parentheses::makeStrings(std::string str, int n,
+void generate_parentheses::makeStrings(std::string str, int n,
                                                      int closed, int open) {
     if (closed > open)  // We can never have more closed than open
         return;
