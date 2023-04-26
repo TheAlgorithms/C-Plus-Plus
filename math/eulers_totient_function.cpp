@@ -62,6 +62,8 @@ static void test() {
     assert(math::phiFunction(808017424794) == 263582333856);
     assert(math::phiFunction(3141592) == 1570792);
     assert(math::phiFunction(27182818) == 12545904);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
