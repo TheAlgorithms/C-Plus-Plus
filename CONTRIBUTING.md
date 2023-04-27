@@ -116,6 +116,8 @@ static void tests() {
 
     assert(is_number_on_array(arr, 9) == true);
     assert(is_number_on_array(arr, 4) == false);
+    assert(is_number_on_array(arr, 98) == true);
+    assert(is_number_on_array(arr, 512) == false);
 
     std::cout << "All tests have successfully passed!\n";
 }
