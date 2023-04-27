@@ -34,7 +34,7 @@ class generate_parentheses {
 };
 
 /**
- * @brief function that implements backtracking
+ * @brief function that adds parenthesis to the string.
  *
  * @param str string build during backtracking
  * @param n number of pairs of parentheses
