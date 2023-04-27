@@ -179,8 +179,9 @@ assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
 3. Small C++ program that showcases and explains the use of tests.
 
 @icode{cpp} 
-#include &lt;vector&gt;   /// for std::vector
-#include &lt;cassert&gt;  /// for assert
+#include &lt;iostream&gt;  /// for IO operations
+#include &lt;vector&gt;    /// for std::vector
+#include &lt;cassert&gt;   /// for assert
 
 /**
  * @brief Verifies if the given array
@@ -198,7 +199,7 @@ bool is_number_on_array(const std::vector&lt;T&gt; &amp;arr, const int &amp;numb
             return true;
         }
         else {
-            return false;
+            // Number not in the current index, keep searching.
         }
     }
 
