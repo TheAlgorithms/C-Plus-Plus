@@ -49,6 +49,7 @@ var dir_296d53ceaeaa7e099814a6def439fe8a =
     [ "prime_factorization.cpp", "db/d0d/prime__factorization_8cpp.html", "db/d0d/prime__factorization_8cpp" ],
     [ "prime_numbers.cpp", "de/d9b/prime__numbers_8cpp.html", "de/d9b/prime__numbers_8cpp" ],
     [ "primes_up_to_billion.cpp", "d4/d9c/primes__up__to__billion_8cpp.html", "d4/d9c/primes__up__to__billion_8cpp" ],
+    [ "quadratic_equations_complex_numbers.cpp", "da/d18/quadratic__equations__complex__numbers_8cpp.html", "da/d18/quadratic__equations__complex__numbers_8cpp" ],
     [ "realtime_stats.cpp", "d0/d08/realtime__stats_8cpp.html", "d0/d08/realtime__stats_8cpp" ],
     [ "sieve_of_eratosthenes.cpp", "d8/ddf/sieve__of__eratosthenes_8cpp.html", "d8/ddf/sieve__of__eratosthenes_8cpp" ],
     [ "sqrt_double.cpp", "da/d24/sqrt__double_8cpp.html", "da/d24/sqrt__double_8cpp" ],

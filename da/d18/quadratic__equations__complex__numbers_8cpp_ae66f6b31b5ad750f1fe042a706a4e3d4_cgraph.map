@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,80,55,106"/>
+<area shape="rect" id="node2" href="$da/d18/quadratic__equations__complex__numbers_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations to test quadraticEquation function." alt="" coords="103,80,146,106"/>
+<area shape="rect" id="node3" href="$da/d18/quadratic__equations__complex__numbers_8cpp.html#af7a6d4e3dc85a6288c8f1f7094830c5a" title="Asserts an array of complex numbers." alt="" coords="231,55,319,80"/>
+<area shape="rect" id="node6" href="$dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb" title="Quadratic equation calculator." alt="" coords="194,104,356,130"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="408,5,480,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/round.html#" title=" " alt="" coords="404,55,484,80"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="409,104,479,130"/>
+</map>

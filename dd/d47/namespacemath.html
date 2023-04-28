@@ -211,6 +211,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb">power_of_two</a> (int n)</td></tr>
 <tr class="memdesc:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds whether a number is power of 2 or not.  <br /></td></tr>
 <tr class="separator:a8a48be4d7f14e34c5c92925bc1cbf3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb1411ef2029e81f249c21e17c96fdb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; long double &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb">quadraticEquation</a> (long double a, long double b, long double c)</td></tr>
+<tr class="memdesc:aacb1411ef2029e81f249c21e17c96fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadratic equation calculator.  <br /></td></tr>
+<tr class="separator:aacb1411ef2029e81f249c21e17c96fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ae1ca505751f5a6d3977b86372cfe75ea">binomialCoeffSum</a> (uint64_t n)</td></tr>
 <tr class="separator:ae1ca505751f5a6d3977b86372cfe75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae413098478fa38acaac887b7654f0725"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -1365,6 +1368,99 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   81</span>    <span class="keywordflow">return</span> length * width * height / 3;</div>
 <div class="line"><span class="lineno">   82</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="aacb1411ef2029e81f249c21e17c96fdb" name="aacb1411ef2029e81f249c21e17c96fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb1411ef2029e81f249c21e17c96fdb">&#9670;&#160;</a></span>quadraticEquation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a>&lt; long double &gt;, 2 &gt; math::quadraticEquation </td>
+          <td>(</td>
+          <td class="paramtype">long double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quadratic equation calculator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>quadratic coefficient. </td></tr>
+    <tr><td class="paramname">b</td><td>linear coefficient. </td></tr>
+    <tr><td class="paramname">c</td><td>constant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array containing the roots of quadratic equation, incl. complex root. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../df/dcd/_2_users_2runner_2work_2_c-_plus-_plus_2_c-_plus-_plus_2math_2quadratic_equations_complex_numbers_8cpp-example.html#a1">/Users/runner/work/C-Plus-Plus/C-Plus-Plus/math/quadratic_equations_complex_numbers.cpp</a>.</dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                                                                          {</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (a == 0) {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>(<span class="stringliteral">&quot;quadratic coefficient cannot be 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">long</span> <span class="keywordtype">double</span> discriminant = b * b - 4 * a * c;</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::complex&lt;long double&gt;</a>, 2&gt; solutions{0, 0};</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (discriminant == 0) {</div>
+<div class="line"><span class="lineno">   64</span>        solutions[0] = -b * 0.5 / a;</div>
+<div class="line"><span class="lineno">   65</span>        solutions[1] = -b * 0.5 / a;</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> solutions;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="line"><span class="lineno">   68</span>    </div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// Complex root (discriminant &lt; 0)</span></div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// Note that the left term (-b / 2a) is always real. The imaginary part</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// appears when b^2 - 4ac &lt; 0, so sqrt(b^2 - 4ac) has no real roots. So,</span></div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// the imaginary component is i * (+/-)sqrt(abs(b^2 - 4ac)) / 2a.</span></div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (discriminant &gt; 0) {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">// Since discriminant &gt; 0, there are only real roots. Therefore,</span></div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// imaginary component = 0.</span></div>
+<div class="line"><span class="lineno">   76</span>        solutions[0] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
+<div class="line"><span class="lineno">   77</span>            (-b - <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(discriminant)) * 0.5 / a, 0};</div>
+<div class="line"><span class="lineno">   78</span>        solutions[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
+<div class="line"><span class="lineno">   79</span>            (-b + <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(discriminant)) * 0.5 / a, 0};</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> solutions;</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">// Since b^2 - 4ac is &lt; 0, for faster computation, -discriminant is</span></div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// enough to make it positive.</span></div>
+<div class="line"><span class="lineno">   84</span>    solutions[0] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
+<div class="line"><span class="lineno">   85</span>        -b * 0.5 / a, -<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(-discriminant) * 0.5 / a};</div>
+<div class="line"><span class="lineno">   86</span>    solutions[1] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a>{</div>
+<div class="line"><span class="lineno">   87</span>        -b * 0.5 / a, <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(-discriminant) * 0.5 / a};</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> solutions;</div>
+<div class="line"><span class="lineno">   90</span>}</div>
+<div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+<div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
+<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+<div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d47/namespacemath_aacb1411ef2029e81f249c21e17c96fdb_cgraph.svg" width="291" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="ab31d141f7c5b551746b1eee0eb4dedca" name="ab31d141f7c5b551746b1eee0eb4dedca"></a>

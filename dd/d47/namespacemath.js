@@ -25,6 +25,7 @@ var namespacemath =
     [ "power_of_two", "dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb", null ],
     [ "print_primes", "dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4", null ],
     [ "pyramid_volume", "dd/d47/namespacemath.html#a94db02b3c9e55a69ac1696f30e2f761c", null ],
+    [ "quadraticEquation", "dd/d47/namespacemath.html#aacb1411ef2029e81f249c21e17c96fdb", null ],
     [ "rect_area", "dd/d47/namespacemath.html#ab31d141f7c5b551746b1eee0eb4dedca", null ],
     [ "rect_perimeter", "dd/d47/namespacemath.html#a428769a16e9525e56588d7c7709d25a6", null ],
     [ "rect_prism_volume", "dd/d47/namespacemath.html#a3fdc74c24697ec5bb5c3698c96117c12", null ],
