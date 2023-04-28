@@ -61,8 +61,8 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     std::array<std::complex<long double>, 2> solutions{0, 0};
 
     if (discriminant == 0) {
-        solution[0] = -b * 0.5 / a;
-        solution[1] = -b * 0.5 / a;
+        solutions[0] = -b * 0.5 / a;
+        solutions[1] = -b * 0.5 / a;
         return solutions;
     }
     
