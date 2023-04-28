@@ -186,6 +186,5 @@ static void test() {
  */
 int main() {
     test();  // Run self-test implementation.
-
     return 0;
 }

@@ -81,8 +81,9 @@ assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
 3. Small C++ program that showcases and explains the use of tests.
 
 ```cpp
-#include <vector>   /// for std::vector
-#include <cassert>  /// for assert
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
+#include <cassert>   /// for assert
 
 /**
  * @brief Verifies if the given array
@@ -100,7 +101,7 @@ bool is_number_on_array(const std::vector<T> &arr, const int &number) {
             return true;
         }
         else {
-            return false;
+            // Number not in the current index, keep searching.
         }
     }
 
@@ -116,6 +117,10 @@ static void tests() {
 
     assert(is_number_on_array(arr, 9) == true);
     assert(is_number_on_array(arr, 4) == false);
+    assert(is_number_on_array(arr, 98) == true);
+    assert(is_number_on_array(arr, 512) == false);
+
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
@@ -192,6 +197,9 @@ static void test() {
     assert(func(...) == ...); // this ensures that the algorithm works as expected
 
     // can have multiple checks
+
+    // this lets the user know that the tests have passed
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
