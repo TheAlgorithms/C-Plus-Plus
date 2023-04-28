@@ -64,6 +64,16 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     // Note that the left term (-b / 2a) is always real. The imaginary part
     // appears when b^2 - 4ac < 0, so sqrt(b^2 - 4ac) has no real roots. So,
     // the imaginary component is i * (+/-)sqrt(abs(b^2 - 4ac)) / 2a.
+    if (discriminant > 0) {
+        // Since discriminant > 0, there are only real roots. Therefore,
+        // imaginary component = 0.
+        solutions[0] = std::complex<long double>{
+            (-b - std::sqrt(discriminant)) * 0.5 / a, 0};
+        solutions[1] = std::complex<long double>{
+            (-b + std::sqrt(discriminant)) * 0.5 / a, 0};
+        return solutions;
+    }
+
     if (discriminant < 0) {
         // Since b^2 - 4ac is < 0, for faster computation, -discriminant is
         // enough to make it positive.
@@ -71,14 +81,11 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
             -b * 0.5 / a, -std::sqrt(-discriminant) * 0.5 / a};
         solutions[1] = std::complex<long double>{
             -b * 0.5 / a, std::sqrt(-discriminant) * 0.5 / a};
-    } else {
-        // Since discriminant > 0, there are only real roots. Therefore,
-        // imaginary component = 0.
-        solutions[0] = std::complex<long double>{
-            (-b - std::sqrt(discriminant)) * 0.5 / a, 0};
-        solutions[1] = std::complex<long double>{
-            (-b + std::sqrt(discriminant)) * 0.5 / a, 0};
+        return solutions;
     }
+
+    solutions[0] = std::complex<long double>{-b * 0.5 / a, 0};
+    solutions[1] = std::complex<long double>{-b * 0.5 / a, 0};
 
     return solutions;
 }
@@ -159,6 +166,18 @@ static void test() {
         std::complex<long double>{-0.5, -0.8660254038},
         std::complex<long double>{-0.5, 0.8660254038}};
     assertArray(math::quadraticEquation(1, 1, 1), ifloatCase);
+
+    std::cout << "Exception test: \n"
+                 "Input: \n"
+                 "a=0 \n"
+                 "b=0 \n"
+                 "c=0\n"
+                 "Expected output: Exception thrown \n";
+    try {
+        math::quadraticEquation(0, 0, 0);
+    } catch (std::invalid_argument& e) {
+        std::cout << "Exception thrown successfully \n";
+    }
 }
 
 /**
