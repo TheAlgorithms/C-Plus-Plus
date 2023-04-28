@@ -1,7 +1,7 @@
 <map id="math::print_primes" name="math::print_primes">
-<area shape="rect" id="node1" title="Prints all the indexes of true values in the passed std::vector." alt="" coords="5,55,136,80"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="206,5,278,31"/>
-<area shape="rect" id="node3" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="211,55,273,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="184,104,300,129"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="348,55,524,80"/>
+<area shape="rect" id="node1" title="Prints all the indexes of true values in the passed std::vector." alt="" coords="5,55,135,80"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="205,5,276,31"/>
+<area shape="rect" id="node3" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="210,55,271,80"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="183,104,298,130"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="346,55,521,80"/>
 </map>

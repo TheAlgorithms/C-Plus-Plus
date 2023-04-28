@@ -1,6 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,72,56,97"/>
-<area shape="rect" id="node2" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="196,29,275,55"/>
-<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="104,72,148,97"/>
-<area shape="rect" id="node4" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="205,109,266,135"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,72,55,98"/>
+<area shape="rect" id="node2" href="$d2/d45/segtree_8cpp.html#ae752659b7c1719d68fdb2ca538a93696" title="for std::vector" alt="" coords="194,29,272,55"/>
+<area shape="rect" id="node3" href="$d2/d45/segtree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="103,72,146,98"/>
+<area shape="rect" id="node4" href="$d2/d45/segtree_8cpp.html#abd3e818681fb2e29cf08f4f60f82c8e0" title="Updates a range of the segment tree." alt="" coords="203,109,263,135"/>
 </map>

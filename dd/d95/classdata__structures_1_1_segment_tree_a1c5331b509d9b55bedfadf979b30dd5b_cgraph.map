@@ -1,0 +1,8 @@
+<map id="data_structures::SegmentTree::range_comb" name="data_structures::SegmentTree::range_comb">
+<area shape="rect" id="node1" title="Returns comb across all values between l and r." alt="" coords="5,92,177,133"/>
+<area shape="rect" id="node2" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8fecc48e8e3f6f5f6e728495a4282e52" title="Helper method for range_comb method below." alt="" coords="225,92,396,133"/>
+<area shape="rect" id="node3" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a8d22286b7be3dcbb701ac5c7d9c79841" title="Any associative function that combines x and y." alt="" coords="444,5,615,46"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="494,70,566,96"/>
+<area shape="rect" id="node5" href="$dd/d95/classdata__structures_1_1_segment_tree.html#a6d3beccc936af2377c8eeb17067fd141" title="Gives the midpoint between two integers." alt="" coords="444,120,615,161"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="496,185,564,211"/>
+</map>

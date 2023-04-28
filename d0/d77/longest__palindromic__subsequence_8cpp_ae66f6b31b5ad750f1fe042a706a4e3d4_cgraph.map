@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="104,55,148,80"/>
-<area shape="rect" id="node3" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4" title=" " alt="" coords="196,55,235,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="283,5,401,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="287,55,397,80"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="305,104,379,129"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,55,80"/>
+<area shape="rect" id="node2" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="103,55,146,80"/>
+<area shape="rect" id="node3" href="$d0/d77/longest__palindromic__subsequence_8cpp.html#a6f73ddd8cd83d784036f131dfc6540c4" title=" " alt="" coords="194,55,232,80"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/begin.html#" title=" " alt="" coords="280,5,399,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/end.html#" title=" " alt="" coords="285,55,394,80"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="303,104,376,130"/>
 </map>

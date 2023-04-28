@@ -1,6 +1,6 @@
 <map id="binary_search_tree::remove" name="binary_search_tree::remove">
 <area shape="rect" id="node1" title="Remove a specified value from the BST." alt="" coords="5,59,137,99"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="185,59,317,99"/>
-<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="365,29,497,69"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="391,94,471,119"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#af4a865ce5244608819b169fc78a41153" title="Recursive function to remove a value from the BST." alt="" coords="185,59,316,99"/>
+<area shape="rect" id="node3" href="$d9/dde/classbinary__search__tree.html#a75f897af6aa732a9901454401c869bcb" title="Recursive function to find the maximum value in the BST." alt="" coords="364,29,495,70"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="390,94,469,120"/>
 </map>

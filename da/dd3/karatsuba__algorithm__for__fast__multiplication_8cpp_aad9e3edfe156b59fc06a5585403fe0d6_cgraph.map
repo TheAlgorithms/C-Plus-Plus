@@ -1,5 +1,5 @@
 <map id="divide_and_conquer::karatsuba_algorithm::safe_substr" name="divide_and_conquer::karatsuba_algorithm::safe_substr">
-<area shape="rect" id="node1" title="Wrapper function for substr that considers leading zeros." alt="" coords="5,29,152,84"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="206,19,318,44"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="200,68,324,93"/>
+<area shape="rect" id="node1" title="Wrapper function for substr that considers leading zeros." alt="" coords="5,29,152,85"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="206,19,317,45"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="200,68,323,94"/>
 </map>

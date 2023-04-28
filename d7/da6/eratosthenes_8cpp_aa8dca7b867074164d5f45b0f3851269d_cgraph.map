@@ -1,7 +1,7 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title="Self&#45;tests the sieve function for major inconsistencies." alt="" coords="5,31,49,56"/>
-<area shape="rect" id="node2" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="112,5,173,31"/>
-<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f" title="Performs the sieve." alt="" coords="97,55,188,80"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="236,5,412,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="266,55,382,80"/>
+<area shape="rect" id="node2" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="111,5,172,31"/>
+<area shape="rect" id="node4" href="$dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f" title="Performs the sieve." alt="" coords="97,55,186,80"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="234,5,409,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="264,55,379,80"/>
 </map>

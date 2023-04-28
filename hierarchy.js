@@ -12,8 +12,8 @@ var hierarchy =
     [ "Btree", "d9/d90/struct_btree.html", null ],
     [ "operations_on_datastructures::circular_linked_list::CircularLinkedList", "d8/d7c/classoperations__on__datastructures_1_1circular__linked__list_1_1_circular_linked_list.html", null ],
     [ "cll", "d5/d15/classcll.html", null ],
-    [ "compare", "d1/db3/structcompare.html", null ],
     [ "Compare< S, T, E >", "de/d4a/class_compare.html", null ],
+    [ "compare", "d1/db3/structcompare.html", null ],
     [ "machine_learning::aystar_search::AyStarSearch< Puzzle >::comparison_operator", "d3/d2a/structmachine__learning_1_1aystar__search_1_1_ay_star_search_1_1comparison__operator.html", null ],
     [ "Complex", "da/d5a/class_complex.html", null ],
     [ "geometry::jarvis::Convexhull", "d4/dde/classgeometry_1_1jarvis_1_1_convexhull.html", null ],
@@ -82,6 +82,7 @@ var hierarchy =
     [ "data_structures::queue_using_array::Queue_Array", "d6/d04/classdata__structures_1_1queue__using__array_1_1_queue___array.html", null ],
     [ "RBtree", "d8/d72/class_r_btree.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
+    [ "data_structures::SegmentTree< T >", "dd/d95/classdata__structures_1_1_segment_tree.html", null ],
     [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
       [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],

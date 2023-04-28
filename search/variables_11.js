@@ -6,7 +6,7 @@ var searchData=
   ['set_3',['set',['../dc/dd4/classdata__structures_1_1_bloom_filter.html#a90268d7901e2c1ab5f8bf8b24a30e119',1,'data_structures::BloomFilter']]],
   ['setsize_4',['setSize',['../dd/d1f/classdsu.html#ac0dc3e17e49fe19b159b4ea4096d7b55',1,'dsu']]],
   ['side_5',['side',['../de/d00/classgraph_1_1is__graph__bipartite_1_1_graph.html#a9d10768f927baa8a4d4a5ffce295b6b6',1,'graph::is_graph_bipartite::Graph']]],
-  ['size_6',['size',['../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e',1,'stack']]],
+  ['size_6',['size',['../dd/d95/classdata__structures_1_1_segment_tree.html#a167fd91b68048e49e97859a8947690f3',1,'data_structures::SegmentTree::size()'],['../d1/dc2/classstack.html#a0a6b2b93ec970296940798ee98a5072e',1,'stack::size()']]],
   ['size_5f_7',['size_',['../d9/dde/classbinary__search__tree.html#a07ba32ce1a2af6e357600ac8c8e98dbc',1,'binary_search_tree']]],
   ['sret_5finit_8',['sret_init',['../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5',1,'range_queries::heavy_light_decomposition::SG']]],
   ['st_9',['ST',['../da/d37/structdata__structures_1_1sparse__table_1_1_sparse__table.html#ad36b9a20fed47b068e407008c04e9f81',1,'data_structures::sparse_table::Sparse_table']]],

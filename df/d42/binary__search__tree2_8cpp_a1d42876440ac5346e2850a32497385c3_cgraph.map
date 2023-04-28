@@ -1,6 +1,6 @@
 <map id="test_contains" name="test_contains">
-<area shape="rect" id="node1" title="Function for testing contains()." alt="" coords="5,94,105,119"/>
-<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="153,29,285,69"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,94,255,119"/>
-<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,168,285,208"/>
+<area shape="rect" id="node1" title="Function for testing contains()." alt="" coords="5,94,105,120"/>
+<area shape="rect" id="node2" href="$d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2" title="Recursive function to check if a value is in the BST." alt="" coords="153,29,284,70"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="183,94,254,120"/>
+<area shape="rect" id="node4" href="$d9/dde/classbinary__search__tree.html#a9d1e7e10efa74d741bf48cf032df3778" title="Recursive function to insert a value into the BST." alt="" coords="153,168,284,209"/>
 </map>

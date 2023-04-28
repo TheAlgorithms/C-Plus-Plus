@@ -1,5 +1,5 @@
 <map id="probability::windowed_median::WindowedMedian" name="probability::windowed_median::WindowedMedian">
-<area shape="rect" id="node1" title="A class to calculate the median of a leading sliding window at the back of a stream of integer values..." alt="" coords="36,108,219,148"/>
+<area shape="rect" id="node1" title="A class to calculate the median of a leading sliding window at the back of a stream of integer values..." alt="" coords="37,109,218,150"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/list.html" title=" " alt="" coords="5,5,108,31"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/multiset.html" title=" " alt="" coords="132,5,264,31"/>
 </map>

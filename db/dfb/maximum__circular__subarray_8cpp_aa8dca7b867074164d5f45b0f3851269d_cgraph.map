@@ -1,7 +1,7 @@
 <map id="test" name="test">
 <area shape="rect" id="node1" title="Self&#45;test implementation." alt="" coords="5,55,49,80"/>
-<area shape="rect" id="node2" href="$dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb" title="returns the maximum contiguous circular sum of an array" alt="" coords="97,47,251,87"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="320,5,393,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="322,55,391,80"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="299,104,415,129"/>
+<area shape="rect" id="node2" href="$dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb" title="returns the maximum contiguous circular sum of an array" alt="" coords="97,47,249,88"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="319,5,391,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="321,55,389,80"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="297,104,412,130"/>
 </map>

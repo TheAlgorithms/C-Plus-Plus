@@ -1,7 +1,7 @@
 <map id="test1" name="test1">
-<area shape="rect" id="node1" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="5,70,56,95"/>
-<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="104,70,193,95"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="241,5,373,45"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="272,70,343,95"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="268,119,347,145"/>
+<area shape="rect" id="node1" title="Test function to find minima for the function &#160;in the interval &#160;&#160;&#160;Expected result = 2." alt="" coords="5,70,56,96"/>
+<area shape="rect" id="node2" href="$d6/d7a/golden__search__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="104,70,192,96"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="240,5,371,46"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="271,70,340,96"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="267,120,345,145"/>
 </map>

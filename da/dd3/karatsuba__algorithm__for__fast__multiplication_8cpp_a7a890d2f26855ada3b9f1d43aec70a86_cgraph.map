@@ -1,9 +1,9 @@
 <map id="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm" name="divide_and_conquer::karatsuba_algorithm::karatsuba_algorithm">
-<area shape="rect" id="node1" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,94,152,149"/>
-<area shape="rect" id="node2" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#ad76f5cac3ef8dc034f6abb99b64c2b20" title="Binary addition." alt="" coords="200,61,347,116"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="420,6,493,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="401,141,513,166"/>
-<area shape="rect" id="node6" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aad9e3edfe156b59fc06a5585403fe0d6" title="Wrapper function for substr that considers leading zeros." alt="" coords="200,216,347,270"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="407,76,506,101"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="395,230,519,256"/>
+<area shape="rect" id="node1" title="The main function implements Karatsuba&#39;s algorithm for fast multiplication." alt="" coords="5,94,152,150"/>
+<area shape="rect" id="node2" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#ad76f5cac3ef8dc034f6abb99b64c2b20" title="Binary addition." alt="" coords="200,61,346,116"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="420,6,492,32"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="400,141,511,167"/>
+<area shape="rect" id="node6" href="$da/dd3/karatsuba__algorithm__for__fast__multiplication_8cpp.html#aad9e3edfe156b59fc06a5585403fe0d6" title="Wrapper function for substr that considers leading zeros." alt="" coords="200,215,346,271"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/at.html#" title=" " alt="" coords="407,76,505,101"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/substr.html#" title=" " alt="" coords="394,230,517,256"/>
 </map>

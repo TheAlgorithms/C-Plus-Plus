@@ -1,12 +1,12 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,157,56,183"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/duration/duration_cast.html#" title=" " alt="" coords="109,5,282,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="344,56,416,81"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/high_resolution_clock/now.html#" title=" " alt="" coords="104,309,287,349"/>
-<area shape="rect" id="node5" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="349,157,411,183"/>
-<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4" title="Prints all the indexes of true values in the passed std::vector." alt="" coords="130,107,261,132"/>
-<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f" title="Performs the sieve." alt="" coords="335,208,425,233"/>
-<area shape="rect" id="node10" href="$d7/da6/eratosthenes_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;tests the sieve function for major inconsistencies." alt="" coords="173,208,217,233"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="473,157,649,183"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="503,108,619,133"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,157,55,183"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/duration/duration_cast.html#" title=" " alt="" coords="107,5,280,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="341,56,412,82"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/high_resolution_clock/now.html#" title=" " alt="" coords="103,309,284,349"/>
+<area shape="rect" id="node5" href="$de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a" title=" " alt="" coords="347,157,407,183"/>
+<area shape="rect" id="node7" href="$dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4" title="Prints all the indexes of true values in the passed std::vector." alt="" coords="129,107,258,132"/>
+<area shape="rect" id="node9" href="$dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f" title="Performs the sieve." alt="" coords="332,208,421,234"/>
+<area shape="rect" id="node10" href="$d7/da6/eratosthenes_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;tests the sieve function for major inconsistencies." alt="" coords="172,208,215,234"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="469,157,645,183"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="499,108,615,134"/>
 </map>

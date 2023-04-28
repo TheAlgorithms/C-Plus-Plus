@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,56,56,81"/>
-<area shape="rect" id="node2" href="$df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;implementations, 1st test." alt="" coords="104,31,155,56"/>
-<area shape="rect" id="node9" href="$df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="104,80,155,105"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="209,5,311,31"/>
-<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="203,55,317,80"/>
-<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="209,104,311,129"/>
-<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="508,79,600,104"/>
-<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="365,53,460,79"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="373,155,452,180"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,56,55,82"/>
+<area shape="rect" id="node2" href="$df/d28/dsu__union__rank_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;implementations, 1st test." alt="" coords="103,31,153,56"/>
+<area shape="rect" id="node9" href="$df/d28/dsu__union__rank_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="103,80,153,106"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="207,5,309,31"/>
+<area shape="rect" id="node4" href="$dd/d1f/classdsu.html#ab8ee27083a3c2e2df80755165a2ec280" title="Method to print all the parents of i, or the path from i to representative." alt="" coords="201,55,314,80"/>
+<area shape="rect" id="node5" href="$dd/d1f/classdsu.html#a81897528bdb53fd5e796d75d7dbc430f" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="207,104,308,130"/>
+<area shape="rect" id="node6" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="505,79,596,104"/>
+<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="362,53,457,79"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="370,155,449,180"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="numerical_methods/ode_semi_implicit_euler.cpp" name="numerical_methods/ode_semi_implicit_euler.cpp">
-<area shape="rect" id="node1" title="Solve a multivariable first order ordinary differential equation (ODEs) using semi implicit Euler met..." alt="" coords="119,5,283,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,93,64,119"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,93,143,119"/>
-<area shape="rect" id="node4" title=" " alt="" coords="168,93,235,119"/>
-<area shape="rect" id="node5" title=" " alt="" coords="259,93,331,119"/>
-<area shape="rect" id="node6" title=" " alt="" coords="355,93,423,119"/>
+<area shape="rect" id="node1" title="Solve a multivariable first order ordinary differential equation (ODEs) using semi implicit Euler met..." alt="" coords="116,5,280,46"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,94,63,120"/>
+<area shape="rect" id="node3" title=" " alt="" coords="87,94,141,120"/>
+<area shape="rect" id="node4" title=" " alt="" coords="165,94,231,120"/>
+<area shape="rect" id="node5" title=" " alt="" coords="254,94,326,120"/>
+<area shape="rect" id="node6" title=" " alt="" coords="350,94,417,120"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,35,56,60"/>
-<area shape="rect" id="node2" href="$dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,35,148,60"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="245,5,317,31"/>
-<area shape="rect" id="node4" href="$d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f" title="The main function implements check for power of 2." alt="" coords="196,55,367,95"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,35,55,60"/>
+<area shape="rect" id="node2" href="$dc/d6d/power__of__2_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,35,146,60"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="244,5,315,31"/>
+<area shape="rect" id="node4" href="$d7/d81/namespacebit__manipulation.html#a5032470c9974bbd6ec254bf296530a5f" title="The main function implements check for power of 2." alt="" coords="194,55,364,96"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="operations_on_datastructures::trie_operations::Tnode::Delete" name="operations_on_datastructures::trie_operations::Tnode::Delete">
-<area shape="rect" id="node1" title="Function to verify presence and hence delete an entry from the trie." alt="" coords="5,120,199,175"/>
-<area shape="rect" id="node2" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#adef6940391f981ab86767775176b7169" title="Function recursively deletes the substring character by character iterating through the string to be ..." alt="" coords="247,29,440,84"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="488,77,600,103"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="307,160,379,185"/>
-<area shape="rect" id="node5" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0" title="Function to count the number of children a node in the trie has." alt="" coords="247,209,440,264"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/count.html#" title=" " alt="" coords="504,224,584,249"/>
+<area shape="rect" id="node1" title="Function to verify presence and hence delete an entry from the trie." alt="" coords="5,120,198,176"/>
+<area shape="rect" id="node2" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#adef6940391f981ab86767775176b7169" title="Function recursively deletes the substring character by character iterating through the string to be ..." alt="" coords="246,29,438,85"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="486,78,597,103"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="306,160,378,186"/>
+<area shape="rect" id="node5" href="$d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html#afca808362c13273ca8c8ae7d58e8eee0" title="Function to count the number of children a node in the trie has." alt="" coords="246,211,438,266"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/count.html#" title=" " alt="" coords="502,226,581,251"/>
 </map>

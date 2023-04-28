@@ -1,31 +1,31 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,235,56,260"/>
-<area shape="rect" id="node2" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6" title="function that will create new node for insertion." alt="" coords="104,5,261,60"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="124,84,241,109"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="352,156,424,181"/>
-<area shape="rect" id="node5" href="$d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;test implementations, 1st test." alt="" coords="157,412,208,437"/>
-<area shape="rect" id="node17" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="157,363,208,388"/>
-<area shape="rect" id="node18" href="$dd/d0c/hamiltons__cycle_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="157,512,208,537"/>
-<area shape="rect" id="node21" href="$d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2" title="Test the computed preorder with the actual preorder on negative value." alt="" coords="157,133,208,159"/>
-<area shape="rect" id="node26" href="$d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8" title="Test the computed postorder with the actual postorder on negative value." alt="" coords="157,235,208,260"/>
-<area shape="rect" id="node28" href="$d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89" title="Test the computed inorder with the actual inorder on negative value." alt="" coords="157,284,208,309"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="337,363,439,388"/>
-<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="353,412,423,437"/>
-<area shape="rect" id="node12" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="335,513,441,539"/>
-<area shape="rect" id="node8" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="541,313,643,339"/>
-<area shape="rect" id="node10" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="543,363,641,388"/>
-<area shape="rect" id="node11" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="555,412,629,437"/>
-<area shape="rect" id="node9" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="717,412,809,437"/>
-<area shape="rect" id="node13" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="545,513,639,539"/>
-<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="555,661,629,687"/>
-<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="557,563,627,588"/>
-<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="553,612,631,637"/>
-<area shape="rect" id="node19" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="333,636,443,661"/>
-<area shape="rect" id="node20" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="515,711,669,736"/>
-<area shape="rect" id="node22" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae" title="preOrderIterative() function that will perform the preorder traversal iteratively,..." alt="" coords="309,77,467,132"/>
-<area shape="rect" id="node23" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="551,165,633,191"/>
-<area shape="rect" id="node24" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="547,215,637,240"/>
-<area shape="rect" id="node25" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="552,264,632,289"/>
-<area shape="rect" id="node27" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="309,205,467,260"/>
-<area shape="rect" id="node29" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="309,284,467,339"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,236,55,262"/>
+<area shape="rect" id="node2" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6" title="function that will create new node for insertion." alt="" coords="103,5,259,61"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="123,86,239,111"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="350,155,421,181"/>
+<area shape="rect" id="node5" href="$d3/dae/dsu__path__compression_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title="Self&#45;test implementations, 1st test." alt="" coords="156,415,206,441"/>
+<area shape="rect" id="node17" href="$d3/dae/dsu__path__compression_8cpp.html#a45d94ead4cf4e1ff9f87c38bc99f59ae" title="Self&#45;implementations, 2nd test." alt="" coords="156,366,206,391"/>
+<area shape="rect" id="node18" href="$dd/d0c/hamiltons__cycle_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="156,515,206,541"/>
+<area shape="rect" id="node21" href="$d8/d90/iterative__tree__traversals_8cpp.html#a038b236fe900f7bb7e57164f5bed66c2" title="Test the computed preorder with the actual preorder on negative value." alt="" coords="156,135,206,161"/>
+<area shape="rect" id="node26" href="$d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8" title="Test the computed postorder with the actual postorder on negative value." alt="" coords="156,236,206,262"/>
+<area shape="rect" id="node28" href="$d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89" title="Test the computed inorder with the actual inorder on negative value." alt="" coords="156,286,206,311"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/at.html#" title=" " alt="" coords="334,366,436,391"/>
+<area shape="rect" id="node7" href="$dd/d1f/classdsu.html#a0ce2672c570f4235eafddb0c9a58115a" title="prints the minimum, maximum and size of the set to which i belongs to" alt="" coords="351,415,419,441"/>
+<area shape="rect" id="node12" href="$dd/d1f/classdsu.html#a6ac30c07abca2aaa3b291504c25c3559" title="Method that combines two disjoint sets to which i and j belongs to and make a single set having a com..." alt="" coords="333,516,437,542"/>
+<area shape="rect" id="node8" href="$dd/d1f/classdsu.html#a696141b8b092466767f4bfe1c5e46cde" title="A utility function that returns the max element of the set to which i belongs to." alt="" coords="538,316,639,342"/>
+<area shape="rect" id="node10" href="$dd/d1f/classdsu.html#ac713a5b496d0405c82e2808a85e58415" title="A utility function that returns the min element of the set to which i belongs to." alt="" coords="540,366,637,391"/>
+<area shape="rect" id="node11" href="$dd/d1f/classdsu.html#a1c24228b0f2f49220133fb8c3566a55c" title="A utility function that returns the size of the set to which i belongs to." alt="" coords="551,415,626,441"/>
+<area shape="rect" id="node9" href="$dd/d1f/classdsu.html#a16851f78fe390fc1430905c83d6a2f1c" title="Method to find the representative of the set to which i belongs to, T(n) = O(1)" alt="" coords="714,415,805,441"/>
+<area shape="rect" id="node13" href="$dd/d1f/classdsu.html#a64d25c5986742f7c234ed449b2ff7303" title="A utility function which check whether i and j belongs to same set or not." alt="" coords="541,516,636,542"/>
+<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="552,664,625,690"/>
+<area shape="rect" id="node15" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="554,566,623,591"/>
+<area shape="rect" id="node16" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="549,615,628,641"/>
+<area shape="rect" id="node19" href="$dd/d0c/hamiltons__cycle_8cpp.html#abcf824e347eecfeeb69ea0280f34f3e4" title=" " alt="" coords="331,639,439,665"/>
+<area shape="rect" id="node20" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="511,714,666,739"/>
+<area shape="rect" id="node22" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ad4c6a8e67fb8267a65439b035666b5ae" title="preOrderIterative() function that will perform the preorder traversal iteratively,..." alt="" coords="307,75,463,130"/>
+<area shape="rect" id="node23" href="$d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0" title=" " alt="" coords="547,168,630,194"/>
+<area shape="rect" id="node24" href="$d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d" title=" " alt="" coords="544,218,633,243"/>
+<area shape="rect" id="node25" href="$d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709" title=" " alt="" coords="549,267,628,293"/>
+<area shape="rect" id="node27" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a636a07c90b7f312bb86d2ec104efca25" title="postOrderIterative() function that will perform the postorder traversal iteratively,..." alt="" coords="307,205,463,261"/>
+<area shape="rect" id="node29" href="$d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a0c33f2c1a3a3deb486a1c33ee5239499" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul..." alt="" coords="307,285,463,341"/>
 </map>

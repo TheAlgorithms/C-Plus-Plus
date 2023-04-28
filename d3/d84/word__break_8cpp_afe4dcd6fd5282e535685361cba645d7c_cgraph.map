@@ -1,9 +1,9 @@
 <map id="dynamic_programming::word_break::wordBreak" name="dynamic_programming::word_break::wordBreak">
 <area shape="rect" id="node1" title="Function that checks if the string passed in param can be segmented into the strings present in the v..." alt="" coords="5,87,172,127"/>
-<area shape="rect" id="node2" href="$d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a" title="Function that checks if the string passed in param can be segmented from position &#39;pos&#39;,..." alt="" coords="220,29,373,69"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="437,94,559,119"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/insert.html#" title=" " alt="" coords="231,144,362,184"/>
-<area shape="rect" id="node3" href="$d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81" title="Function that checks if the string passed in param is present in the the unordered_set passed." alt="" coords="421,29,575,69"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/end.html#" title=" " alt="" coords="623,9,781,34"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/find.html#" title=" " alt="" coords="637,59,767,99"/>
+<area shape="rect" id="node2" href="$d3/d84/word__break_8cpp.html#a272b0f5cdb4e41fd6dee4538b808c06a" title="Function that checks if the string passed in param can be segmented from position &#39;pos&#39;,..." alt="" coords="220,29,372,70"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="435,94,557,120"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/insert.html#" title=" " alt="" coords="231,144,361,185"/>
+<area shape="rect" id="node3" href="$d3/d84/word__break_8cpp.html#a1cc9dd6e6190d10a010fdcdfe7a21a81" title="Function that checks if the string passed in param is present in the the unordered_set passed." alt="" coords="420,29,572,70"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/end.html#" title=" " alt="" coords="620,9,779,35"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set/find.html#" title=" " alt="" coords="635,59,764,99"/>
 </map>

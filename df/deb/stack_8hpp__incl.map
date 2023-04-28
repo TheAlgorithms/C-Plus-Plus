@@ -1,8 +1,8 @@
 <map id="data_structures/stack.hpp" name="data_structures/stack.hpp">
-<area shape="rect" id="node1" title="This class specifies the basic operation on a stack as a linked list." alt="" coords="9,5,182,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,84,104"/>
-<area shape="rect" id="node3" href="$d3/d09/node_8hpp.html" title="Provides Node class and related utilities." alt="" coords="109,79,183,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="15,152,87,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="111,152,181,177"/>
-<area shape="rect" id="node6" title=" " alt="" coords="205,152,263,177"/>
+<area shape="rect" id="node1" title="This class specifies the basic operation on a stack as a linked list." alt="" coords="8,5,180,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,84,105"/>
+<area shape="rect" id="node3" href="$d3/d09/node_8hpp.html" title="Provides Node class and related utilities." alt="" coords="107,79,182,105"/>
+<area shape="rect" id="node4" title=" " alt="" coords="16,153,87,178"/>
+<area shape="rect" id="node5" title=" " alt="" coords="110,153,179,178"/>
+<area shape="rect" id="node6" title=" " alt="" coords="203,153,260,178"/>
 </map>

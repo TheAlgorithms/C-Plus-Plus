@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,80,56,105"/>
-<area shape="rect" id="node2" href="$d8/d7a/sha1_8cpp.html#ac9e1a11f44135b890dd10a00e73b5661" title="Puts user in a loop where inputs can be given and SHA&#45;1 hash will be computed and printed." alt="" coords="104,55,187,80"/>
-<area shape="rect" id="node6" href="$d8/d7a/sha1_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations of well&#45;known SHA&#45;1 hashes." alt="" coords="123,104,167,129"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/compare.html#" title=" " alt="" coords="235,5,373,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="268,104,340,129"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline.html#" title=" " alt="" coords="261,55,347,80"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,80,55,106"/>
+<area shape="rect" id="node2" href="$d8/d7a/sha1_8cpp.html#ac9e1a11f44135b890dd10a00e73b5661" title="Puts user in a loop where inputs can be given and SHA&#45;1 hash will be computed and printed." alt="" coords="103,55,184,80"/>
+<area shape="rect" id="node6" href="$d8/d7a/sha1_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations of well&#45;known SHA&#45;1 hashes." alt="" coords="122,104,165,130"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/compare.html#" title=" " alt="" coords="232,5,369,31"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="265,104,336,130"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/getline.html#" title=" " alt="" coords="258,55,343,80"/>
 </map>

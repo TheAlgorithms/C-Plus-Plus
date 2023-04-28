@@ -1,8 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,55,56,80"/>
-<area shape="rect" id="node2" href="$db/dfb/maximum__circular__subarray_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="104,55,148,80"/>
-<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb" title="returns the maximum contiguous circular sum of an array" alt="" coords="196,47,349,87"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="419,5,492,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="421,55,490,80"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="397,104,513,129"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,55,55,80"/>
+<area shape="rect" id="node2" href="$db/dfb/maximum__circular__subarray_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementation." alt="" coords="103,55,146,80"/>
+<area shape="rect" id="node3" href="$dd/d24/namespacedynamic__programming.html#a5239174fa0d987f2c67edc1f2af82beb" title="returns the maximum contiguous circular sum of an array" alt="" coords="194,47,346,88"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="416,5,488,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="418,55,486,80"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="394,104,510,130"/>
 </map>

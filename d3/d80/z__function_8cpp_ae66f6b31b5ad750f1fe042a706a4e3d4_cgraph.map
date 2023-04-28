@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,56,56,81"/>
-<area shape="rect" id="node2" href="$d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="104,56,148,81"/>
-<area shape="rect" id="node3" href="$d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" title="Using Z_function to find a pattern in a text." alt="" coords="196,56,311,81"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="359,5,513,31"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="561,57,673,83"/>
-<area shape="rect" id="node6" href="$d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" title="for IO operations" alt="" coords="395,107,477,132"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="583,107,652,132"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,56,55,82"/>
+<area shape="rect" id="node2" href="$d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,56,146,82"/>
+<area shape="rect" id="node3" href="$d3/d80/z__function_8cpp.html#ac186ca3ac3a69b5e52543bb13fe46db8" title="Using Z_function to find a pattern in a text." alt="" coords="194,56,307,82"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="355,5,510,31"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="558,57,669,83"/>
+<area shape="rect" id="node6" href="$d3/d80/z__function_8cpp.html#ac044c4794349a8cff6256b99950d5773" title="for IO operations" alt="" coords="391,107,474,132"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="579,107,648,132"/>
 </map>

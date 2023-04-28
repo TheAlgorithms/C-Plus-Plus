@@ -1,7 +1,7 @@
 <map id="search/text_search.cpp" name="search/text_search.cpp">
-<area shape="rect" id="node1" title="Search for words in a long textual paragraph." alt="" coords="91,5,249,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,71,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="95,79,155,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,79,251,104"/>
-<area shape="rect" id="node5" title=" " alt="" coords="275,79,337,104"/>
+<area shape="rect" id="node1" title="Search for words in a long textual paragraph." alt="" coords="88,5,246,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,70,105"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,79,153,105"/>
+<area shape="rect" id="node4" title=" " alt="" coords="177,79,248,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="271,79,332,105"/>
 </map>

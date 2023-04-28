@@ -1,6 +1,6 @@
 <map id="graph::bidirectional_dijkstra::Bidijkstra" name="graph::bidirectional_dijkstra::Bidijkstra">
-<area shape="rect" id="node1" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,47,139,87"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="214,5,322,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="191,55,345,80"/>
-<area shape="rect" id="node4" href="$d7/d07/bidirectional__dijkstra_8cpp.html#a22f1b7277e1dd4190f25014b48487ce6" title="This function returns the shortest distance from the source to the target if there is path between ve..." alt="" coords="187,128,349,183"/>
+<area shape="rect" id="node1" title="Function runs the dijkstra algorithm for some source vertex and target vertex in the graph and return..." alt="" coords="5,47,138,88"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/pair/make_pair.html#" title=" " alt="" coords="213,5,320,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="189,55,344,80"/>
+<area shape="rect" id="node4" href="$d7/d07/bidirectional__dijkstra_8cpp.html#a22f1b7277e1dd4190f25014b48487ce6" title="This function returns the shortest distance from the source to the target if there is path between ve..." alt="" coords="186,129,347,185"/>
 </map>

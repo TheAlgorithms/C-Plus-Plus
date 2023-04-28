@@ -1,6 +1,6 @@
 <map id="graph::disjoint_union::no_of_connected_components" name="graph::disjoint_union::no_of_connected_components">
 <area shape="rect" id="node1" title="Find total no. of connected components." alt="" coords="5,87,212,127"/>
-<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="260,29,401,69"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/insert.html#" title=" " alt="" coords="277,94,384,119"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/size.html#" title=" " alt="" coords="281,143,380,169"/>
+<area shape="rect" id="node2" href="$d8/d99/connected__components__with__dsu_8cpp.html#a469384d8a4197a9b24482ce7c321a85e" title="Find the component where following node belongs to." alt="" coords="260,29,400,70"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/insert.html#" title=" " alt="" coords="277,94,383,120"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/set/size.html#" title=" " alt="" coords="281,144,379,169"/>
 </map>

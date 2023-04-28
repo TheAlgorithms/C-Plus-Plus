@@ -1,5 +1,5 @@
 <map id="sorting::merge_insertion::mergeSort" name="sorting::merge_insertion::mergeSort">
-<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes sorting::merge_insertion::InsertionSort if window length..." alt="" coords="5,29,167,69"/>
-<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="215,29,376,69"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="424,37,535,62"/>
+<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes sorting::merge_insertion::InsertionSort if window length..." alt="" coords="5,29,166,70"/>
+<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="214,29,374,70"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="422,37,531,63"/>
 </map>

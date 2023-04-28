@@ -1,5 +1,5 @@
 <map id="backtracking::minimax" name="backtracking::minimax">
-<area shape="rect" id="node1" title="Check which is the maximum/minimum number in the array." alt="" coords="5,31,159,56"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="207,5,280,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="209,55,278,80"/>
+<area shape="rect" id="node1" title="Check which is the maximum/minimum number in the array." alt="" coords="5,31,158,56"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="206,5,278,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="208,55,276,80"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="deleteNode" name="deleteNode">
 <area shape="rect" id="node1" title="removes a given element from AVL tree" alt="" coords="5,43,93,68"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="141,5,259,31"/>
-<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="163,79,237,104"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="141,5,257,31"/>
+<area shape="rect" id="node3" href="$d8/dee/avltree_8cpp.html#a5fa160a678a34dd51c0aea1c0c00ed5e" title=" " alt="" coords="162,79,236,104"/>
 </map>

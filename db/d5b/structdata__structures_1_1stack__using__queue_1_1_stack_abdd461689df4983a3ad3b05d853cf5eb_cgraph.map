@@ -1,5 +1,5 @@
 <map id="data_structures::stack_using_queue::Stack::pop" name="data_structures::stack_using_queue::Stack::pop">
-<area shape="rect" id="node1" title="Removes the topmost element from the stack." alt="" coords="5,23,179,63"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="227,5,353,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="234,55,346,80"/>
+<area shape="rect" id="node1" title="Removes the topmost element from the stack." alt="" coords="5,23,178,64"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="226,5,352,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="233,55,345,80"/>
 </map>

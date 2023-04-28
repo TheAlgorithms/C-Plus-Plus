@@ -1,13 +1,13 @@
 <map id="numerical_methods/qr_eigen_values.cpp" name="numerical_methods/qr_eigen_values.cpp">
-<area shape="rect" id="node1" title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method." alt="" coords="109,5,260,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,93,71,119"/>
-<area shape="rect" id="node3" title=" " alt="" coords="33,167,91,192"/>
-<area shape="rect" id="node4" title=" " alt="" coords="116,167,176,192"/>
-<area shape="rect" id="node5" title=" " alt="" coords="399,93,453,119"/>
-<area shape="rect" id="node6" title=" " alt="" coords="201,167,273,192"/>
-<area shape="rect" id="node7" href="$d4/d68/qr__decompose_8h.html" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="248,93,375,119"/>
-<area shape="rect" id="node8" title=" " alt="" coords="559,167,626,192"/>
-<area shape="rect" id="node9" title=" " alt="" coords="297,167,350,192"/>
-<area shape="rect" id="node10" title=" " alt="" coords="375,167,443,192"/>
-<area shape="rect" id="node11" title=" " alt="" coords="467,167,535,192"/>
+<area shape="rect" id="node1" title="Compute real eigen values and eigen vectors of a symmetric matrix using QR decomposition method." alt="" coords="108,5,258,46"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,94,70,120"/>
+<area shape="rect" id="node3" title=" " alt="" coords="34,168,92,193"/>
+<area shape="rect" id="node4" title=" " alt="" coords="116,168,175,193"/>
+<area shape="rect" id="node5" title=" " alt="" coords="395,94,448,120"/>
+<area shape="rect" id="node6" title=" " alt="" coords="199,168,271,193"/>
+<area shape="rect" id="node7" href="$d4/d68/qr__decompose_8h.html" title="Library functions to compute QR decomposition of a given matrix." alt="" coords="246,94,371,120"/>
+<area shape="rect" id="node8" title=" " alt="" coords="554,168,620,193"/>
+<area shape="rect" id="node9" title=" " alt="" coords="294,168,346,193"/>
+<area shape="rect" id="node10" title=" " alt="" coords="371,168,438,193"/>
+<area shape="rect" id="node11" title=" " alt="" coords="463,168,530,193"/>
 </map>
