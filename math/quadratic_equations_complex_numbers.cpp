@@ -63,6 +63,7 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     if (discriminant == 0) {
         solution[0] = -b * 0.5 / a;
         solution[1] = -b * 0.5 / a;
+        return solutions;
     }
     
     // Complex root (discriminant < 0)
