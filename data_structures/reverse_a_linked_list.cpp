@@ -24,7 +24,6 @@
 
 #include <cassert>   /// for assert
 #include <iostream>  /// for I/O operations
-#include <memory>    /// for dynamic memory
 #include <new>       /// for managing  dynamic storage
 
 /**
@@ -43,29 +42,47 @@ namespace linked_list {
 class Node {
  public:
     int32_t val;  /// value of the current link
-    Node *next;   /// pointer to the next value on the list
+    Node* next;   /// pointer to the next value on the list
 };
+
+/**
+ *  @brief creates a deep copy of a list starting at the input node
+ *  @param[in] node pointer to the first node/head of the list to be copied
+ *  @return pointer to the first node/head of the copied list or nullptr
+ */
+Node* copy_all_nodes(const Node* const node) {
+    if (node) {
+        // NOLINTNEXTLINE(cppcoreguidelines-owning-memory)
+        Node* res = new Node();
+        res->val = node->val;
+        res->next = copy_all_nodes(node->next);
+        return res;
+    }
+    return nullptr;
+}
 
 /**
  * A list class containing a sequence of links
  */
+// NOLINTNEXTLINE(cppcoreguidelines-special-member-functions)
 class list {
  private:
-    Node *head;  // link before the actual first element
+    Node* head = nullptr;  // link before the actual first element
+    void delete_all_nodes();
+    void copy_all_nodes_from_list(const list& other);
+
  public:
-    /**
-     * List constructor. Initializes the first link.
-     */
-    list() {
-        head = nullptr;  // Initialize the first link
-    }
-    bool isEmpty();
+    bool isEmpty() const;
     void insert(int32_t new_elem);
     void reverseList();
-    void display();
-    int32_t top();
-    int32_t last();
-    int32_t traverse(int32_t index);
+    void display() const;
+    int32_t top() const;
+    int32_t last() const;
+    int32_t traverse(int32_t index) const;
+    ~list();
+    list() = default;
+    list(const list& other);
+    list& operator=(const list& other);
 };
 
 /**
@@ -73,7 +90,7 @@ class list {
  * @returns true if the list is empty
  * @returns false if the list is not empty
  */
-bool list::isEmpty() { return head == nullptr; }
+bool list::isEmpty() const { return head == nullptr; }
 
 /**
  * @brief Utility function that adds a new element at the end of the list
@@ -81,8 +98,9 @@ bool list::isEmpty() { return head == nullptr; }
  */
 void list::insert(int32_t n) {
     try {
-        Node *new_node = new Node();
-        Node *temp = nullptr;
+        // NOLINTNEXTLINE(cppcoreguidelines-owning-memory)
+        Node* new_node = new Node();
+        Node* temp = nullptr;
         new_node->val = n;
         new_node->next = nullptr;
         if (isEmpty()) {
@@ -94,7 +112,7 @@ void list::insert(int32_t n) {
             }
             temp->next = new_node;
         }
-    } catch (std::bad_alloc &exception) {
+    } catch (std::bad_alloc& exception) {
         std::cerr << "bad_alloc detected: " << exception.what() << "\n";
     }
 }
@@ -105,8 +123,9 @@ void list::insert(int32_t n) {
  * @returns void
  */
 void list::reverseList() {
-    Node *curr = head;
-    Node *prev = nullptr, *next_node = nullptr;
+    Node* curr = head;
+    Node* prev = nullptr;
+    Node* next_node = nullptr;
     while (curr != nullptr) {
         next_node = curr->next;
         curr->next = prev;
@@ -120,7 +139,7 @@ void list::reverseList() {
  * @brief Utility function to find the top element of the list
  * @returns the top element of the list
  */
-int32_t list::top() {
+int32_t list::top() const {
     if (!isEmpty()) {
         return head->val;
     } else {
@@ -131,9 +150,9 @@ int32_t list::top() {
  *  @brief Utility function to find the last element of the list
  *  @returns the last element of the list
  */
-int32_t list::last() {
+int32_t list::last() const {
     if (!isEmpty()) {
-        Node *t = head;
+        Node* t = head;
         while (t->next != nullptr) {
             t = t->next;
         }
@@ -146,8 +165,8 @@ int32_t list::last() {
  *  @brief Utility function to find the i th element of the list
  *  @returns the i th element of the list
  */
-int32_t list::traverse(int32_t index) {
-    Node *current = head;
+int32_t list::traverse(int32_t index) const {
+    Node* current = head;
 
     int count = 0;
     while (current != nullptr) {
@@ -161,6 +180,42 @@ int32_t list::traverse(int32_t index) {
     /* if we get to this line,the caller was asking for a non-existent element
     so we assert fail */
     exit(1);
+}
+
+/**
+ *  @brief calls delete operator on every node in the represented list
+ */
+void list::delete_all_nodes() {
+    while (head != nullptr) {
+        const auto tmp_node = head->next;
+        delete head;
+        head = tmp_node;
+    }
+}
+
+list::~list() { delete_all_nodes(); }
+
+void list::copy_all_nodes_from_list(const list& other) {
+    assert(isEmpty());
+    head = copy_all_nodes(other.head);
+}
+
+/**
+ *  @brief copy constructor creating a deep copy of every node of the input
+ */
+list::list(const list& other) { copy_all_nodes_from_list(other); }
+
+/**
+ *  @brief assignment operator creating a deep copy of every node of the input
+ */
+list& list::operator=(const list& other) {
+    if (this == &other) {
+        return *this;
+    }
+    delete_all_nodes();
+
+    copy_all_nodes_from_list(other);
+    return *this;
 }
 
 }  // namespace linked_list
@@ -194,11 +249,58 @@ static void test() {
     std::cout << "All tests have successfully passed!" << std::endl;
 }
 
+void test_copy_constructor() {
+    data_structures::linked_list::list L;
+    L.insert(10);
+    L.insert(20);
+    L.insert(30);
+    data_structures::linked_list::list otherList(L);
+    otherList.insert(40);
+
+    L.insert(400);
+
+    assert(L.top() == 10);
+    assert(otherList.top() == 10);
+    assert(L.traverse(1) == 20);
+    assert(otherList.traverse(1) == 20);
+
+    assert(L.traverse(2) == 30);
+    assert(otherList.traverse(2) == 30);
+
+    assert(L.last() == 400);
+    assert(otherList.last() == 40);
+}
+
+void test_assignment_operator() {
+    data_structures::linked_list::list L;
+    data_structures::linked_list::list otherList;
+    L.insert(10);
+    L.insert(20);
+    L.insert(30);
+    otherList = L;
+
+    otherList.insert(40);
+    L.insert(400);
+
+    assert(L.top() == 10);
+    assert(otherList.top() == 10);
+    assert(L.traverse(1) == 20);
+    assert(otherList.traverse(1) == 20);
+
+    assert(L.traverse(2) == 30);
+    assert(otherList.traverse(2) == 30);
+
+    assert(L.last() == 400);
+    assert(otherList.last() == 40);
+}
+
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
+    test_copy_constructor();
+    test_assignment_operator();
     return 0;
 }
