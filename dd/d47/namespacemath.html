@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad09d59850865012a6fd95d89954c82e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4">print_primes</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; bool &gt; const &amp;<a class="el" href="../../de/d9b/prime__numbers_8cpp.html#a9575f3a51eeb8a57d657b3db6a4b441a">primes</a>)</td></tr>
 <tr class="memdesc:ad09d59850865012a6fd95d89954c82e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the indexes of true values in the passed <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>.  <br /></td></tr>
 <tr class="separator:ad09d59850865012a6fd95d89954c82e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">phiFunction</a> (uint64_t n)</td></tr>
+<tr class="memdesc:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate Euler's Totient.  <br /></td></tr>
+<tr class="separator:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec65db4e5c7317323227f026fe50ef11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#aec65db4e5c7317323227f026fe50ef11">integral_approx</a> (double lb, double ub, const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;func, double delta=.0001)</td></tr>
 <tr class="memdesc:aec65db4e5c7317323227f026fe50ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes integral approximation.  <br /></td></tr>
 <tr class="separator:aec65db4e5c7317323227f026fe50ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1164,6 +1167,44 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><span class="lineno">   75</span>                                            {</div>
 <div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> 2 * (base + height);</div>
 <div class="line"><span class="lineno">   77</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac37d3ba52eb296597d7a024ba8c4a5a5" name="ac37d3ba52eb296597d7a024ba8c4a5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37d3ba52eb296597d7a024ba8c4a5a5">&#9670;&#160;</a></span>phiFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t math::phiFunction </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to calculate Euler's Totient. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>the number to find the Euler's Totient of </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                 {</div>
+<div class="line"><span class="lineno">   40</span>    uint64_t result = n;</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (uint64_t i = 2; i * i &lt;= n; i++) {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (n % i != 0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">while</span> (n % i == 0) n /= i;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>        result -= result / i;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (n &gt; 1) result -= result / n;</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   50</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

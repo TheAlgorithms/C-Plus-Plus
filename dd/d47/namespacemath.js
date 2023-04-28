@@ -21,6 +21,7 @@ var namespacemath =
     [ "n_polygon_surface_perimeter", "dd/d47/namespacemath.html#aa8592c3279c41a2c6d4d64eeb488f63f", null ],
     [ "parallelogram_area", "dd/d47/namespacemath.html#a5de184925e68658f15415dd53954df4f", null ],
     [ "parallelogram_perimeter", "dd/d47/namespacemath.html#a0efb235330ff48e14fd31faaccbcebb3", null ],
+    [ "phiFunction", "dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5", null ],
     [ "power", "dd/d47/namespacemath.html#afcd07701d73ed65cd616bcba02737f3d", null ],
     [ "power_of_two", "dd/d47/namespacemath.html#a8a48be4d7f14e34c5c92925bc1cbf3bb", null ],
     [ "print_primes", "dd/d47/namespacemath.html#ad09d59850865012a6fd95d89954c82e4", null ],

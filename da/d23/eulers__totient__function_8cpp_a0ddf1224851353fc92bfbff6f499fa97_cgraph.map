@@ -1,4 +1,5 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0" title=" " alt="" coords="103,5,191,31"/>
+<area shape="rect" id="node2" href="$da/d23/eulers__totient__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="103,5,146,31"/>
+<area shape="rect" id="node3" href="$dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5" title="Function to calculate Euler&#39;s Totient." alt="" coords="194,5,319,31"/>
 </map>

@@ -41,7 +41,7 @@ var searchData=
   ['persegtree_38',['perSegTree',['../d8/d28/classrange__queries_1_1per_seg_tree.html',1,'range_queries']]],
   ['persistent_5fseg_5ftree_5flazy_5fprop_2ecpp_39',['persistent_seg_tree_lazy_prop.cpp',['../d5/d58/persistent__seg__tree__lazy__prop_8cpp.html',1,'']]],
   ['peta_40',['peta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
-  ['phifunction_41',['phiFunction',['../da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0',1,'eulers_totient_function.cpp']]],
+  ['phifunction_41',['phiFunction',['../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5',1,'math']]],
   ['physics_42',['physics',['../d5/dd0/namespacephysics.html',1,'']]],
   ['pico_43',['pico',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',0,'std']]],
   ['piecewise_5fconstant_5fdistribution_44',['piecewise_constant_distribution',['http://en.cppreference.com/w/cpp/numeric/random/piecewise_constant_distribution/piecewise_constant_distribution.html',0,'std::piecewise_constant_distribution::piecewise_constant_distribution()'],['http://en.cppreference.com/w/cpp/numeric/random/piecewise_constant_distribution.html',0,'std::piecewise_constant_distribution']]],

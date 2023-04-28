@@ -98,33 +98,44 @@ $(document).ready(function(){initNavTree('da/d23/eulers__totient__function_8cpp.
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">eulers_totient_function.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++ Program to find <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" target="_blank">Euler's Totient</a> function.  
+<p>Implementation of <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" target="_blank">Euler's Totient</a> @description Euler Totient Function is also known as phi function.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for eulers_totient_function.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d5b/eulers__totient__function_8cpp__incl.svg" width="166" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d5b/eulers__totient__function_8cpp__incl.svg" width="171" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:dd/d47/namespacemath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for IO operations <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a35e4874a3e1d67eb708dc57944c8aea0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0">phiFunction</a> (uint64_t n)</td></tr>
-<tr class="separator:a35e4874a3e1d67eb708dc57944c8aea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a> (uint64_t n)</td></tr>
+<tr class="memdesc:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate Euler's Totient.  <br /></td></tr>
+<tr class="separator:ac37d3ba52eb296597d7a024ba8c4a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d23/eulers__totient__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
+<tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d23/eulers__totient__function_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ Program to find <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" target="_blank">Euler's Totient</a> function. </p>
-<p>Euler Totient Function is also known as phi function.  </p><p class="formulaDsp">
+<div class="textblock"><p>Implementation of <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" target="_blank">Euler's Totient</a> @description Euler Totient Function is also known as phi function. </p>
+<p class="formulaDsp">
 \[\phi(n) =
 \phi\left({p_1}^{a_1}\right)\cdot\phi\left({p_2}^{a_2}\right)\ldots\]
 </p>
@@ -143,7 +154,8 @@ Some known values are:</p><ul>
 <li>\(\phi(100) = 40\)</li>
 <li>\(\phi(1) = 1\)</li>
 <li>\(\phi(17501) = 15120\)</li>
-<li>\(\phi(1420) = 560\) </li>
+<li>\(\phi(1420) = 560\) <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/mann2108" target="_blank">Mann Mehta</a> </dd></dl>
+</li>
 </ul>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -173,62 +185,73 @@ Some known values are:</p><ul>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                 {</div>
-<div class="line"><span class="lineno">   49</span>    uint64_t n;</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (argc &lt; 2) {</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter the number: &quot;</span>;</div>
-<div class="line"><span class="lineno">   52</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   53</span>        n = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/strtoul.html">strtoull</a>(argv[1], <span class="keyword">nullptr</span>, 10);</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0">phiFunction</a>(n);</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="aeulers__totient__function_8cpp_html_a35e4874a3e1d67eb708dc57944c8aea0"><div class="ttname"><a href="../../da/d23/eulers__totient__function_8cpp.html#a35e4874a3e1d67eb708dc57944c8aea0">phiFunction</a></div><div class="ttdeci">uint64_t phiFunction(uint64_t n)</div><div class="ttdef"><b>Definition:</b> eulers_totient_function.cpp:32</div></div>
-<div class="ttc" id="astrtoul_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strtoul.html">std::strtoull</a></div><div class="ttdeci">T strtoull(T... args)</div></div>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>commandline argument count (ignored) </td></tr>
+    <tr><td class="paramname">argv</td><td>commandline array of arguments (ignored) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                 {</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="../../da/d23/eulers__totient__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aeulers__totient__function_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../da/d23/eulers__totient__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> eulers_totient_function.cpp:57</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d23/eulers__totient__function_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d23/eulers__totient__function_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="326" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a35e4874a3e1d67eb708dc57944c8aea0" name="a35e4874a3e1d67eb708dc57944c8aea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35e4874a3e1d67eb708dc57944c8aea0">&#9670;&#160;</a></span>phiFunction()</h2>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t phiFunction </td>
+          <td class="memname">static void test </td>
           <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Function to caculate Euler's totient phi </p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                 {</div>
-<div class="line"><span class="lineno">   33</span>    uint64_t <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = n;</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (uint64_t i = 2; i * i &lt;= n; i++) {</div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">if</span> (n % i == 0) {</div>
-<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">while</span> (n % i == 0) {</div>
-<div class="line"><span class="lineno">   37</span>                n /= i;</div>
-<div class="line"><span class="lineno">   38</span>            }</div>
-<div class="line"><span class="lineno">   39</span>            <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> -= <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> / i;</div>
-<div class="line"><span class="lineno">   40</span>        }</div>
-<div class="line"><span class="lineno">   41</span>    }</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (n &gt; 1)</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> -= <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> / n;</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><span class="lineno">   45</span>}</div>
-<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
-</div><!-- fragment -->
+
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                   {</div>
+<div class="line"><span class="lineno">   58</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(1) == 1);</div>
+<div class="line"><span class="lineno">   59</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(2) == 1);</div>
+<div class="line"><span class="lineno">   60</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(10) == 4);</div>
+<div class="line"><span class="lineno">   61</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(123456) == 41088);</div>
+<div class="line"><span class="lineno">   62</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(808017424794) == 263582333856);</div>
+<div class="line"><span class="lineno">   63</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(3141592) == 1570792);</div>
+<div class="line"><span class="lineno">   64</span>    assert(<a class="code hl_function" href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a>(27182818) == 12545904);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="anamespacemath_html_ac37d3ba52eb296597d7a024ba8c4a5a5"><div class="ttname"><a href="../../dd/d47/namespacemath.html#ac37d3ba52eb296597d7a024ba8c4a5a5">math::phiFunction</a></div><div class="ttdeci">uint64_t phiFunction(uint64_t n)</div><div class="ttdoc">Function to calculate Euler's Totient.</div><div class="ttdef"><b>Definition:</b> eulers_totient_function.cpp:39</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d23/eulers__totient__function_8cpp_aa8dca7b867074164d5f45b0f3851269d_cgraph.svg" width="228" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
