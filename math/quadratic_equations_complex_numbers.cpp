@@ -60,6 +60,11 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
     long double discriminant = b * b - 4 * a * c;
     std::array<std::complex<long double>, 2> solutions{0, 0};
 
+    if (discriminant == 0) {
+        solution[0] = -b * 0.5 / a;
+        solution[1] = -b * 0.5 / a;
+    }
+    
     // Complex root (discriminant < 0)
     // Note that the left term (-b / 2a) is always real. The imaginary part
     // appears when b^2 - 4ac < 0, so sqrt(b^2 - 4ac) has no real roots. So,
@@ -73,19 +78,12 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
             (-b + std::sqrt(discriminant)) * 0.5 / a, 0};
         return solutions;
     }
-
-    if (discriminant < 0) {
-        // Since b^2 - 4ac is < 0, for faster computation, -discriminant is
-        // enough to make it positive.
-        solutions[0] = std::complex<long double>{
-            -b * 0.5 / a, -std::sqrt(-discriminant) * 0.5 / a};
-        solutions[1] = std::complex<long double>{
-            -b * 0.5 / a, std::sqrt(-discriminant) * 0.5 / a};
-        return solutions;
-    }
-
-    solutions[0] = std::complex<long double>{-b * 0.5 / a, 0};
-    solutions[1] = std::complex<long double>{-b * 0.5 / a, 0};
+    // Since b^2 - 4ac is < 0, for faster computation, -discriminant is
+    // enough to make it positive.
+    solutions[0] = std::complex<long double>{
+        -b * 0.5 / a, -std::sqrt(-discriminant) * 0.5 / a};
+    solutions[1] = std::complex<long double>{
+        -b * 0.5 / a, std::sqrt(-discriminant) * 0.5 / a};
 
     return solutions;
 }
