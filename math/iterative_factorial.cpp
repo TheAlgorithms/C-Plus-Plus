@@ -7,8 +7,10 @@
  * @description Calculates factorial iteratively.
  * https://en.wikipedia.org/wiki/Factorial
  *
- * Factorial formula:
- * n! = n * (n - 1) * (n - 2) * ... * 2 * 1
+ * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
+ *       = n\times(n-1)!\f]
+ * for example:
+ * \f$4! = 4\times3! = 4\times3\times2\times1 = 24\f$
  *
  * @example
  *
