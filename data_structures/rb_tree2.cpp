@@ -5,7 +5,7 @@
  * @brief A Red-Black Tree (RBT) program with test cases.
  * @version 0.1
  * @date 2022-12-29
- * 
+ *
  * Copyright (no copyright)
  */
 
@@ -136,7 +136,9 @@ class RedBlackTree {
                 "Insert(): Node is already in tree"
                 ", duplicate nodes not allowed.");
         }
-        RBTNode* node_to_insert = new RBTNode();
+        // using 'auto' specifier since type already known from 'new RBTNode'
+        auto node_to_insert = new RBTNode();
+
         node_to_insert->val = value;
         nodes_order_added.push_back(value);
 
@@ -239,8 +241,8 @@ class RedBlackTree {
                 replacement_node->color == COLOR_RED) {
                 replacement_node->color = COLOR_BLACK;
             } else if (node_to_delete->color == COLOR_BLACK &&
-                     (replacement_node->color == COLOR_BLACK ||
-                      replacement_node->treatAsNull)) {
+                       (replacement_node->color == COLOR_BLACK ||
+                        replacement_node->treatAsNull)) {
                 // deleted node was black and replacement node is black/null,
                 // causes
                 // double-blackness problem in tree that needs to be fixed
