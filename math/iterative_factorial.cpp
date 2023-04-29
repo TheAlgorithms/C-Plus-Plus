@@ -36,12 +36,13 @@ namespace math {
  * @warning Maximum=20 because there are no 128-bit integers in C++. 21!
  * returns 1.419e+19, which is not 21! but (21! % UINT64_MAX).
  */
-unsigned long long iterativeFactorial(unsigned short n) {
-    if (n > 20)
+uint64_t iterativeFactorial(uint8_t n) {
+    if (n > 20) {
         throw new std::invalid_argument("Maximum n value is 20");
+    }
 
     // 1 because it is the identity number of multiplication.
-    unsigned long long accumulator = 1;
+    uint64_t accumulator = 1;
 
     while (n > 0) {
         accumulator *= n;
