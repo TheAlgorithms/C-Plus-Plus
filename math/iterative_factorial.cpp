@@ -5,22 +5,28 @@
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
  * @description Calculates factorial iteratively.
+ * https://en.wikipedia.org/wiki/Factorial
+ *
+ * Factorial formula:
+ * n! = n * (n - 1) * (n - 2) * ... * 2 * 1
  *
  * @example
- * int main() {
- *     using std::cout;
  *
- *     cout << "10! = " math::iterativeFactorial(10);
- * }
+ * 5! = 5 * 4 * 3 * 2 * 1
  *
- * Output:
- * 10! = 3,628,800
+ * Recursive implementation of factorial pseudocode:
+ *
+ * function factorial(n):
+ *     if n == 1:
+ *         return 1
+ *     else:
+ *         return factorial(n-1)
  *
  */
 
-#include <cassert>
-#include <exception>
-#include <iostream>
+#include <cassert>    // For assert
+#include <exception>  // For std::invalid_argument
+#include <iostream>   // for std::cout
 
 /**
  * @namespace
