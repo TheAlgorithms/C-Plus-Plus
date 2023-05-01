@@ -15,7 +15,7 @@
 * \f$ d_i = \frac{n mod b^{i+1} - n mod b^{i}}{b^{i}} \f$
 *
 * @author [Neeraj Cherkara](https://github.com/iamnambiar)
- */
+*/
 #include <cassert> /// for assert
 #include <cmath> /// for std::pow
 
@@ -23,7 +23,7 @@
 * @brief Function to calculate the total number of digits in the number.
 * @param num Number
 * @return Total number of digits.
- */
+*/
 int number_of_digits(int num) {
     int total_digits = 0;
     while (num > 0) {
@@ -38,7 +38,7 @@ int number_of_digits(int num) {
 * @param number to be checked
 * @return `true` if the number is armstrong.
 * @return `false` if the number is not armstrong.
- */
+*/
 bool is_armstrong(int number) {
     // If the number is less than 0, then it is not an armstrong number.
     if (number < 0) {
@@ -62,7 +62,7 @@ bool is_armstrong(int number) {
 /**
 * @brief Self-test implementations
 * @returns void
- */
+*/
 static void test() {
     // is_armstrong(370) returns true.
     assert(is_armstrong(370) == true);
@@ -81,7 +81,7 @@ static void test() {
 /**
 * @brief Main Function
 * @returns 0 on exit
- */
+*/
 int main() {
     test(); // run self-test implementations
     return 0;
