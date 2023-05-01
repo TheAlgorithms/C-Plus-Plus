@@ -7,6 +7,7 @@
  * Boyer–Moore uses information gained by preprocessing P to skip as many
  * alignments as possible.
  *
+ * @description
  * The key insight in this algorithm is that if the end of the pattern is
  * compared to the text, then jumps along the text can be made rather than
  * checking every character of the text. The reason that this works is that in
@@ -206,7 +207,10 @@ bool is_prefix(const char* str, const char* pat, size_t len) {
 }
 }  // namespace boyer_moore
 }  // namespace strings
-
+/**
+ * @brief A test case in which we search for every appearance of the word 'and'
+ * @param text The text in which we search for appearance of the word 'and'
+ */
 void and_test(const char* text) {
     strings::boyer_moore::pattern ands;
     strings::boyer_moore::init_pattern("and", ands);
@@ -217,6 +221,10 @@ void and_test(const char* text) {
     assert(strings::boyer_moore::is_prefix(text + indexes[1], "and", 3));
 }
 
+/**
+ * @brief  A test case in which we search for every appearance of the word 'pat'
+ * @param text The text in which we search for appearance of the word 'pat'
+ */
 void pat_test(const char* text) {
     strings::boyer_moore::pattern pat;
     strings::boyer_moore::init_pattern("pat", pat);
@@ -247,7 +255,6 @@ static void tests() {
 
 /**
  * @brief Main function
- *
  * @return 0 on exit
  */
 int main() {
