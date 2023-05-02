@@ -375,6 +375,7 @@
   * [Shell Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/shell_sort.cpp)
   * [Shell Sort2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/shell_sort2.cpp)
   * [Slow Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/slow_sort.cpp)
+  * [Stooge Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/stooge_sort.cpp)
   * [Strand Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/strand_sort.cpp)
   * [Swap Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/swap_sort.cpp)
   * [Tim Sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/sorting/tim_sort.cpp)
