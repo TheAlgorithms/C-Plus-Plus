@@ -9,13 +9,33 @@
 #include <queue>     /// for storing node in level order traversal
 #include <sstream>   /// for converting expected output to a string
 
+/**
+ * @namespace
+ * @brief Data structures
+ */
+namespace data_structures {
+
+/**
+ * @class Node
+ * @brief Represents a node in a binary tree.
+ * 
+ * This class stores an integer value and pointers to the left and right child nodes.
+ */
+
 class Node {
 public:
-    int data;    // data stored in this node
-    Node *left;  // pointer to the left node
-    Node *right; // pointer to the right node
+    int data = 0;    ///< data stored in this node
+    Node *left;      ///< pointer to the left node
+    Node *right;     ///< pointer to the right node
 };
 
+/**
+ * @class BinaryTree
+ * @brief Represents a binary tree.
+ * 
+ * This class provides operations for inserting nodes into the tree and traversing the nodes in
+ * order.
+ */
 class BinaryTree {
 public:
     /**
@@ -28,10 +48,10 @@ public:
         // create a new node
         Node *newNode = new Node;
         newNode->data = val;
-        newNode->left = NULL;
-        newNode->right = NULL;
+        newNode->left = nullptr;
+        newNode->right = nullptr;
 
-        if (root == NULL) {
+        if (root == nullptr) {
             // point root to the new node if root is NULL
             root = newNode;
             return;
@@ -71,21 +91,22 @@ public:
     * @returns void
     */
     void inorderTraversal(Node *node) {
-        if (node == NULL) return;       // stop traversal if node is NULL
+        if (node == nullptr) return;       // stop traversal if node is NULL
 
         inorderTraversal(node->left);   // recursively traverse current node's left subtree
         std::cout << node->data << " ";      // print the current node's data
         inorderTraversal(node->right);  // recursively traverse current node's right subtree
     }
 };
+} // namespace data_structures
 
 /**
 * @brief [Self-tests for inorder tree traversal]
 * @returns void
 */
-void test() {
-    BinaryTree tree;    // create a tree
-    Node *root = NULL;  // root node
+static void test() {
+    data_structures::BinaryTree tree;    // create a tree
+    data_structures::Node *root = nullptr;  // root node
 
     /* without any nodes (including root) */
     std::stringstream expected_output;
@@ -149,8 +170,8 @@ int main() {
     // Testing inorder traversal
     test();
 
-    BinaryTree tree;    // create a tree
-    Node *root = NULL;  // root node
+    data_structures::BinaryTree tree;    // create a tree
+    data_structures::Node *root = nullptr;  // root node
     
     for(int i = 0; i < 15; i++) tree.insertNode(root, i);
     std::cout << "Inorder Traversal: ";
