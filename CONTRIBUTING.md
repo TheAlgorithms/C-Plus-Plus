@@ -33,7 +33,7 @@ You can add new algorithms or data structures that are **not present in the repo
 - Make sure the file extensions are `*.hpp`, `*.h` or `*.cpp`.
 - Don't use **`bits/stdc++.h`** because this is quite Linux-specific and slows down the compilation process.
 - Organize your code using **`struct`**, **`class`**, and/or **`namespace`** keywords.
-- If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
+- If an implementation of the algorithm already exists, please refer to the [file-name section below](#file-name-guidelines).
 - You can suggest reasonable changes to existing algorithms.
 - Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
@@ -54,13 +54,91 @@ You can add new algorithms or data structures that are **not present in the repo
 - Make sure to add examples and test cases in your `main()` function.
 - If you find an algorithm or document without tests, please feel free to create a pull request or issue describing suggested changes.
 - Please try to add one or more `test()` functions that will invoke the algorithm implementation on random test data with the expected output. Use the `assert()` function to confirm that the tests will pass. Requires including the `cassert` library.
+- Test cases should fully verify that your program works as expected. Rather than asking the user for input, it's best to make sure the given output is the correct output.
+
+##### Self-test examples
+
+1. [Quick sort](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/sorting/quick_sort.cpp#L137) testing (complex).
+
+```cpp
+// Let's make sure the array of numbers is ordered after calling the function.
+std::vector<uint64_t> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
+std::vector<uint64_t> arr_sorted = sorting::quick_sort::quick_sort(
+    arr, 0, int(std::end(arr) - std::begin(arr)) - 1);
+
+assert(std::is_sorted(std::begin(arr_sorted), std::end(arr_sorted)));
+```
+
+2. [Subset Sum](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/backtracking/subset_sum.cpp#L58) testing (medium).
+
+```cpp
+std::vector<int32_t> array1 = {-7, -3, -2, 5, 8};  // input array
+assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
+    2);  // first argument in subset_sum function is the required sum and
+         // second is the input array
+```
+
+3. Small C++ program that showcases and explains the use of tests.
+
+```cpp
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
+#include <cassert>   /// for assert
+
+/**
+ * @brief Verifies if the given array
+ * contains the given number on it.
+ * @tparam T the type of array (e.g., `int`, `float`, etc.)
+ * @param arr the array to be used for checking
+ * @param number the number to check if it's inside the array
+ * @return false if the number was NOT found in the array
+ * @return true if the number WAS found in the array
+ */
+template <typename T>
+bool is_number_on_array(const std::vector<T> &arr, const int &number) {
+    for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+        if (arr[i] == number) {
+            return true;
+        }
+        else {
+            // Number not in the current index, keep searching.
+        }
+    }
+
+    return false;
+}
+
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void tests() {
+    std::vector<int> arr = { 9, 14, 21, 98, 67 };
+
+    assert(is_number_on_array(arr, 9) == true);
+    assert(is_number_on_array(arr, 4) == false);
+    assert(is_number_on_array(arr, 98) == true);
+    assert(is_number_on_array(arr, 512) == false);
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    tests(); // run self-test implementations
+    return 0;
+}
+```
 
 #### Typical structure of a program
 
 ```cpp
 /**
  * @file
- * @brief Add one line description here. Should contain a Wikipedia
+ * @brief Add one-line description here. Should contain a Wikipedia
  * link or another source explaining the algorithm/implementation.
  * @details
  * This is a multi-line
@@ -74,7 +152,7 @@ You can add new algorithms or data structures that are **not present in the repo
 #include             /// for `some function here`
 
 /**
- * @namespace <folder name>
+ * @namespace
  * @brief <namespace description>
  */
 namespace name {
@@ -119,6 +197,9 @@ static void test() {
     assert(func(...) == ...); // this ensures that the algorithm works as expected
 
     // can have multiple checks
+
+    // this lets the user know that the tests have passed
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
