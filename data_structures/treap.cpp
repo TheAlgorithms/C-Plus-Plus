@@ -147,7 +147,7 @@ struct Treap {
         if (k == key[x])
             return size[childs[x][0]] + 1;
         else if (k < key[x])
-            return _getRank(childs[x][0], k);
+            return _get_rank(childs[x][0], k);
         else
             return size[childs[x][0]] + cnt[x] + _getRank(childs[x][1], k);
     }
