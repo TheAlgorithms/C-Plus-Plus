@@ -67,7 +67,7 @@ struct Treap {
         x = y;
     }
     /**
-     * @brief Insert internal method
+     * @brief Insert a value into the specified subtree
      * @param x Insert into the subtree of node x (Usually x=root)
      * @param k key
      */
