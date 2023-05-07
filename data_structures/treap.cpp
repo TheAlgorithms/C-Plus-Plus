@@ -17,25 +17,22 @@
  * @author [Kairao ZHENG](https://github.com/fgmn)
  */
 
+#include <cassert>   /// For assert
 #include <iostream>  /// For IO operations
 
-const int maxNode = 1e6 + 5; //< maximum number of nodes
+const int maxNode = 1e6 + 5;  //< maximum number of nodes
 /**
  * @brief Struct representation of the treap
  */
 struct Treap {
-    /**
-     * @brief Basic data definition
-     * root The root of the treap
-     * treapCnt Total number of current nodes in the treap
-     * key Node identifier
-     * priority Random priority
-     * childs [i][0] represents left child of node i, and [i][1] represents
-     * right size Maintains the subtree size for ranking query cnt The number of
-     * copies per node
-     */
-    int root, treapCnt, key[maxNode], priority[maxNode];
-    int childs[maxNode][2], cnt[maxNode], size[maxNode];
+    int root;                //< root of the treap
+    int treapCnt;            //< Total number of current nodes in the treap
+    int key[maxNode];        //< Node identifier
+    int priority[maxNode];   //< Random priority
+    int childs[maxNode][2];  //< [i][0] represents the left child of node i, and
+                             //[i][1] represents the right
+    int cnt[maxNode];        //< Maintains the subtree size for ranking query
+    int size[maxNode];       //< The number of copies per node
     /**
      * @brief Initialization
      */
@@ -53,7 +50,7 @@ struct Treap {
         size[x] = size[childs[x][0]] + cnt[x] + size[childs[x][1]];
     }
     /**
-     * @brief Rotate
+     * @brief Rotate without breaking the property of BST
      * @param x The node to rotate
      * @param t 0 represent left hand, while 1 right hand
      */
@@ -67,9 +64,9 @@ struct Treap {
         x = y;
     }
     /**
-     * @brief Insert a value into the specified subtree
+     * @brief Insert a value into the specified subtree (internal method)
      * @param x Insert into the subtree of node x (Usually x=root)
-     * @param k key
+     * @param k Key to insert
      */
     void _insert(int &x, int k) {
         if (x) {
@@ -94,9 +91,9 @@ struct Treap {
         update(x);
     }
     /**
-     * @brief Erase internal method
+     * @brief Erase a value from the specified subtree (internal method)
      * @param x Erase from the subtree of node x (Usually x=root)
-     * @param k key
+     * @param k Key to erase
      */
     void _erase(int &x, int k) {
         if (key[x] == k) {
@@ -120,10 +117,10 @@ struct Treap {
         update(x);
     }
     /**
-     * @brief Find the KTH largest value (Also internal method)
+     * @brief Find the KTH largest value (internal method)
      * @param x Query the subtree of node x (Usually x=root)
      * @param k The queried rank
-     * @return The element ranked x
+     * @return The element ranked number k
      */
     int _get_k_th(int &x, int k) {
         if (k <= size[childs[x][0]]) {
@@ -136,7 +133,7 @@ struct Treap {
         return _get_k_th(childs[x][1], k);
     }
     /**
-     * @brief Query the rank of specified element (Also internal method)
+     * @brief Query the rank of specified element (internal method)
      * @param x Query the subtree of node x (Usually x=root)
      * @param k The queried element
      * @return The rank of element k
@@ -149,14 +146,14 @@ struct Treap {
         else if (k < key[x])
             return _get_rank(childs[x][0], k);
         else
-            return size[childs[x][0]] + cnt[x] + _getRank(childs[x][1], k);
+            return size[childs[x][0]] + cnt[x] + _get_rank(childs[x][1], k);
     }
     /**
      * @brief Get the predecessor node of element k
      * @param k The queried element
      * @return The predecessor
      */
-   int get_predecessor(int k) {
+    int get_predecessor(int k) {
         int x = root, pre;
         while (x) {
             if (key[x] < k) {
@@ -182,43 +179,28 @@ struct Treap {
         return next;
     }
     /**
-     * @brief External methods to set opertion object to be the whole tree
+     * @brief Insert element (External method)
+     * @param k Key to insert
      */
     void insert(int k) { _insert(root, k); }
+    /**
+     * @brief Erase element (External method)
+     * @param k Key to erase
+     */
     void erase(int k) { _erase(root, k); }
+    /**
+     * @brief Get the KTH largest value (External method)
+     * @param k The queried rank
+     * @return The element ranked number x
+     */
     int get_k_th(int k) { return _get_k_th(root, k); }
+    /**
+     * @brief Get the rank of specified element (External method)
+     * @param k The queried element
+     * @return The rank of element k
+     */
     int get_rank(int k) { return _get_rank(root, k); }
 } mTreap;
-
-// The solution to luogu P3369
-// Problem Link: https://www.luogu.com.cn/problem/P3369
-void solve() {
-    int n;
-    std::cin >> n;
-    int op, x;
-    while (std::cin >> op >> x) {
-        switch (op) {
-            case 1:
-                mTreap.insert(x);
-                break;
-            case 2:
-                mTreap.erase(x);
-                break;
-            case 3:
-                std::cout << mTreap.getRank(x) << '\n';
-                break;
-            case 4:
-                std::cout << mTreap.getKth(x) << '\n';
-                break;
-            case 5:
-                std::cout << mTreap.getPre(x) << '\n';
-                break;
-            case 6:
-                std::cout << mTreap.getNxt(x) << '\n';
-                break;
-        }
-    }
-}
 /**
  * @brief Main function
  * @returns 0 on exit
@@ -227,5 +209,15 @@ int main() {
     std::ios::sync_with_stdio(0);
     std::cin.tie(0);
     std::cout.tie(0);
-    solve();
+
+    mTreap.insert(106465);
+    assert(mTreap.get_k_th(1) == 106465);
+    mTreap.insert(317721);
+    mTreap.insert(460929);
+    mTreap.insert(644985);
+    mTreap.insert(84185);
+    mTreap.insert(89851);
+    assert(mTreap.get_next(81968) == 84185);
+    mTreap.insert(492737);
+    assert(mTreap.get_predecessor(493598) == 492737);
 }
