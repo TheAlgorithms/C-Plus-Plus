@@ -186,7 +186,7 @@ struct Treap {
      */
     void insert(int k) { _insert(root, k); }
     void erase(int k) { _erase(root, k); }
-    int getKth(int k) { return _getKth(root, k); }
+    int get_k_th(int k) { return _get_k_th(root, k); }
     int getRank(int k) { return _getRank(root, k); }
 } mTreap;
 
