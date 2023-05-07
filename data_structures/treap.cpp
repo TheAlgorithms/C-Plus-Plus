@@ -179,7 +179,7 @@ struct Treap {
             } else
                 x = childs[x][1];
         }
-        return nxt;
+        return next;
     }
     /**
      * @brief External methods to set opertion object to be the whole tree
