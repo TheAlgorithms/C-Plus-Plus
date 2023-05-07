@@ -133,7 +133,7 @@ struct Treap {
         if (k <= 0) {
             return key[x];
         }
-        return _getKth(childs[x][1], k);
+        return _get_k_th(childs[x][1], k);
     }
     /**
      * @brief Query the rank of specified element (Also internal method)
