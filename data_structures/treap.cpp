@@ -127,7 +127,7 @@ struct Treap {
      */
     int _getKth(int &x, int k) {
         if (k <= size[childs[x][0]]) {
-            return _getKth(childs[x][0], k);
+            return _get_k_th(childs[x][0], k);
         }
         k -= size[childs[x][0]] + cnt[x];
         if (k <= 0) {
