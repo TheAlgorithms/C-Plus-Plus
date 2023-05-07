@@ -19,7 +19,7 @@
 
 #include <iostream>  /// For IO operations
 
-const int maxNode = 1e6 + 5;
+const int maxNode = 1e6 + 5; //< maximum number of nodes
 /**
  * @brief Struct representation of the treap
  */
