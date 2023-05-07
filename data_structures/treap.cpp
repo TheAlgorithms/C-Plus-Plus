@@ -172,7 +172,7 @@ struct Treap {
      * @return The successor
      */
     int get_next(int k) {
-        int x = root, nxt;
+        int x = root, next;
         while (x) {
             if (key[x] > k) {
                 next = key[x], x = childs[x][0];
