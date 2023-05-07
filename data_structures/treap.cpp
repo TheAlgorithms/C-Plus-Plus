@@ -141,7 +141,7 @@ struct Treap {
      * @param k The queried element
      * @return The rank of element k
      */
-    int _getRank(int x, int k) {
+    int _get_rank(int x, int k) {
         if (!x)
             return 0;
         if (k == key[x])
