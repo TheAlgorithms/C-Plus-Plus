@@ -171,7 +171,7 @@ struct Treap {
      * @param k The queried element
      * @return The successor
      */
-    int getNxt(int k) {
+    int get_next(int k) {
         int x = root, nxt;
         while (x) {
             if (key[x] > k) {
