@@ -219,7 +219,10 @@ void solve() {
         }
     }
 }
-
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
     std::ios::sync_with_stdio(0);
     std::cin.tie(0);
