@@ -156,7 +156,7 @@ struct Treap {
      * @param k The queried element
      * @return The predecessor
      */
-    int getPre(int k) {
+   int get_predecessor(int k) {
         int x = root, pre;
         while (x) {
             if (key[x] < k) {
