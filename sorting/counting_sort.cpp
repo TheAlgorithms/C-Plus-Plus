@@ -37,6 +37,7 @@ int *Counting_Sort(int Arr[], int N) {
         Count[Arr[i] - min]--;
     }
 
+    delete[] Count;
     return Sorted_Arr;
 }
 
@@ -53,5 +54,6 @@ int main() {
     Print(Sorted_Arr, N);
     cout << endl;
 
+    delete[] Sorted_Arr;
     return 0;
 }
