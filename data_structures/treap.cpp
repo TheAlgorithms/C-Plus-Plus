@@ -175,7 +175,7 @@ struct Treap {
         int x = root, nxt;
         while (x) {
             if (key[x] > k) {
-                nxt = key[x], x = childs[x][0];
+                next = key[x], x = childs[x][0];
             } else
                 x = childs[x][1];
         }
