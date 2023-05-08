@@ -202,14 +202,10 @@ struct Treap {
     int get_rank(int k) { return _get_rank(root, k); }
 } mTreap;
 /**
- * @brief Main function
- * @returns 0 on exit
+ * @brief Self-test implementations
+ * @returns void
  */
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
-    std::cout.tie(0);
-
+ static void test() 
     mTreap.insert(106465);
     assert(mTreap.get_k_th(1) == 106465);
     mTreap.insert(317721);
@@ -219,5 +215,16 @@ int main() {
     mTreap.insert(89851);
     assert(mTreap.get_next(81968) == 84185);
     mTreap.insert(492737);
-    assert(mTreap.get_predecessor(493598) == 492737);
+    assert(mTreap.get_predecessor(493598) == 492737);{
+ }
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+int main() {
+    std::ios::sync_with_stdio(0);
+    std::cin.tie(0);
+    std::cout.tie(0);
+    test(); // run self-test implementations
+    return 0;
 }
