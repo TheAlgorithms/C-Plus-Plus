@@ -205,26 +205,29 @@ struct Treap {
  * @brief Self-test implementations
  * @returns void
  */
- static void test() 
-    mTreap.insert(106465);
-    assert(mTreap.get_k_th(1) == 106465);
-    mTreap.insert(317721);
-    mTreap.insert(460929);
-    mTreap.insert(644985);
-    mTreap.insert(84185);
-    mTreap.insert(89851);
-    assert(mTreap.get_next(81968) == 84185);
-    mTreap.insert(492737);
-    assert(mTreap.get_predecessor(493598) == 492737);{
- }
+static void test() {
+    mTreap.insert(1);
+    mTreap.insert(2);
+    mTreap.insert(3);
+    assert(mTreap.get_k_th(2) == 2);
+    mTreap.insert(4);
+    mTreap.insert(5);
+    mTreap.insert(6);
+    assert(mTreap.get_next(4) == 5);
+    mTreap.insert(7);
+    assert(mTreap.get_predecessor(7) == 6);
+    mTreap.erase(4);
+    assert(mTreap.get_k_th(4) == 5);
+    assert(mTreap.get_rank(5) == 4);
+    mTreap.insert(10);
+    assert(mTreap.get_rank(10) == 7);
+    assert(mTreap.get_predecessor(10) == 7);
+}
 /**
  * @brief Main function
  * @returns 0 on exit
  */
 int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
-    std::cout.tie(0);
-    test(); // run self-test implementations
+    test();  // run self-test implementations
     return 0;
 }
