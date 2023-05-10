@@ -73,10 +73,10 @@ static void tests() {
  * returns 0 on exit
  */
 int main() {
-    tests(); // perform self-tests implementations
+    tests();  // perform self-tests implementations
     int num = 0;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
-    std::cin >> num; // take user chosen number and store in variable num
+    std::cin >> num;  // take user chosen number and store in variable num
     bool result = is_prime(num);
     if (result) {
         std::cout << num << " is a prime number" << std::endl;
