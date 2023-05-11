@@ -13,11 +13,10 @@
  * @author [Anjali Jha](https://github.com/anjali1903)
  */
 
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <type_traits>
-#include <vector>
+#include <cassert>      /// for assert
+#include <string>       /// for std::string
+#include <type_traits>  /// for std::remove_const
+#include <vector>       /// for std::vector
 
 /**
  * Function that returns the longest palindromic
