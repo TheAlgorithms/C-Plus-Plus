@@ -70,7 +70,7 @@ static void tests() {
 
 /**
  * Main function
- * returns 0 on exit
+ * @returns 0 on exit
  */
 int main() {
     tests();  // perform self-tests implementations
