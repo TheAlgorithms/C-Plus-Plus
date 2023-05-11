@@ -24,8 +24,7 @@
  * subsequence of a string
  */
 std::string lps(const std::string& a) {
-    std::string b = a;
-    reverse(b.begin(), b.end());
+    const auto b = std::string(a.rbegin(), a.rend());
     const auto m = a.length();
     using ind_type = std::remove_const<decltype(m)>::type;
     std::vector<std::vector<ind_type> > res(m + 1,
