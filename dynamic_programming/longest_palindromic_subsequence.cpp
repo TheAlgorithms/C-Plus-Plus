@@ -26,7 +26,7 @@ std::string lps(std::string a) {
     std::string b = a;
     reverse(b.begin(), b.end());
     int m = a.length();
-    std::vector<std::vector<int> > res(m + 1);
+    std::vector<std::vector<int> > res(m + 1, std::vector<int>(m + 1));
 
     // Finding the length of the longest
     // palindromic subsequence and storing
@@ -45,7 +45,7 @@ std::string lps(std::string a) {
     // Length of longest palindromic subsequence
     int idx = res[m][m];
     // Creating string of index+1 length
-    std::string ans(idx + 1, '\0');
+    std::string ans(idx, '\0');
     int i = m, j = m;
 
     // starting from right-most bottom-most corner
