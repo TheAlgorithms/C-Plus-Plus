@@ -13,10 +13,9 @@
  * @author [Anjali Jha](https://github.com/anjali1903)
  */
 
-#include <cassert>      /// for assert
-#include <string>       /// for std::string
-#include <type_traits>  /// for std::remove_const
-#include <vector>       /// for std::vector
+#include <cassert>  /// for assert
+#include <string>   /// for std::string
+#include <vector>   /// for std::vector
 
 /**
  * Function that returns the longest palindromic
@@ -25,7 +24,7 @@
 std::string lps(const std::string& a) {
     const auto b = std::string(a.rbegin(), a.rend());
     const auto m = a.length();
-    using ind_type = std::remove_const<decltype(m)>::type;
+    using ind_type = std::string::size_type;
     std::vector<std::vector<ind_type> > res(m + 1,
                                             std::vector<ind_type>(m + 1));
 
