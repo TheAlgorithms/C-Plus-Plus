@@ -22,7 +22,7 @@
  * Function that returns the longest palindromic
  * subsequence of a string
  */
-std::string lps(std::string a) {
+std::string lps(const std::string& a) {
     std::string b = a;
     reverse(b.begin(), b.end());
     int m = a.length();
