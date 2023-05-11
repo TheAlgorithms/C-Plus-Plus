@@ -3,10 +3,14 @@
  *
  * @file
  * @brief
- * A simple program to check if the given number if prime or not.
+ * A simple program to check if the given number is a prime or not.
  * https://en.wikipedia.org/wiki/Primality_test
  * @details
- * additional ways to solve the prime check problem
+ * A prime number is any number that can be divided only by itself and 1. It must
+ * be positive and a whole number, therefore any prime number is part of the
+ * set of natural numbers. The majority of prime numbers are even numbers, with
+ * the exception of 2. This algorithm finds prime numbers using this information.
+ * additional ways to solve the prime check problem:
  * https://cp-algorithms.com/algebra/primality_tests.html#practice-problems
  */
 
@@ -19,8 +23,7 @@
  * @return true if number is a prime
  * @return false if number is not a prime.
  */
-template <typename T>
-bool is_prime(T num) {
+bool is_prime(long long num) {
     /*!
      * Reduce all possibilities of a number which cannot be prime with the first
      * 3 if, else if conditionals. Example: Since no even number, except 2 can
@@ -37,7 +40,7 @@ bool is_prime(T num) {
     } else if (num % 2 == 0 || num % 3 == 0) {
         return false;
     } else {
-        for (T i = 5; i * i <= num; i = i + 6) {
+        for (long long i = 5; i * i <= num; i = i + 6) {
             if (num % i == 0 || num % (i + 2) == 0) {
                 return false;
             }
@@ -59,8 +62,9 @@ static void tests() {
     assert(is_prime(2) == true);
     assert(is_prime(3) == true);
     assert(is_prime(4) == false);
-    assert(is_prime(4) == false);
+    assert(is_prime(-4) == false);
     assert(is_prime(7) == true);
+    assert(is_prime(-7) == false);
     assert(is_prime(19) == true);
     assert(is_prime(50) == false);
     assert(is_prime(115249) == true);
@@ -74,7 +78,7 @@ static void tests() {
  */
 int main() {
     tests();  // perform self-tests implementations
-    int num = 0;
+    long long num = 0;
     std::cout << "Enter the number to check if it is prime or not" << std::endl;
     std::cin >> num;  // take user chosen number and store in variable num
     bool result = is_prime(num);
