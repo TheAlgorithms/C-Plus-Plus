@@ -73,12 +73,10 @@ std::string lps(std::string a) {
 
 /** Test function */
 void test() {
-    // lps("radar") return "radar"
     assert(lps("radar") == "radar");
-    // lps("abbcbaa") return "abcba"
     assert(lps("abbcbaa") == "abcba");
-    // lps("bbbab") return "bbbb"
     assert(lps("bbbab") == "bbbb");
+    assert(lps("") == "");
 }
 
 /**
