@@ -45,7 +45,7 @@ std::string lps(const std::string& a) {
         }
     }
     // Length of longest palindromic subsequence
-    ind_type idx = res[m][m];
+    auto idx = res[m][m];
     // Creating string of index+1 length
     std::string ans(idx, '\0');
     ind_type i = m, j = m;
