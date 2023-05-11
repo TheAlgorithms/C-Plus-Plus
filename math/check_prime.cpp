@@ -69,7 +69,7 @@ static void tests() {
 }
 
 /**
- * Main function
+ * @brief Main function
  * @returns 0 on exit
  */
 int main() {
