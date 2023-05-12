@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Iterative implementation of factorial
+ * @brief Iterative implementation of [Factorial](https://en.wikipedia.org/wiki/Factorial)
  *
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
