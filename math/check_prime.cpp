@@ -53,10 +53,6 @@ bool is_prime(long long num) {
  * @returns void
  */
 static void tests() {
-    /*!
-     * each assert test checks if the is_prime function returns the expected
-     * boolean value to whether its argument is prime
-     */
     assert(is_prime(1) == false);
     assert(is_prime(2) == true);
     assert(is_prime(3) == true);
