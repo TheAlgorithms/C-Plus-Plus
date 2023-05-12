@@ -9,7 +9,8 @@
 
 #include <cassert>  /// for assert
 #include <string>   /// for std::string
-#include <vector>   /// for std::vector
+#include <utility>
+#include <vector>  /// for std::vector
 
 /**
  * @brief computes the length of the longest common string created from input
@@ -47,10 +48,10 @@ struct TestCase {
     const std::string str_b;
     const std::size_t common_string_len;
 
-    TestCase(const std::string& in_str_a, const std::string& in_str_b,
+    TestCase(std::string in_str_a, std::string in_str_b,
              const std::size_t in_common_string_len)
-        : str_a(in_str_a),
-          str_b(in_str_b),
+        : str_a(std::move(in_str_a)),
+          str_b(std::move(in_str_b)),
           common_string_len(in_common_string_len) {}
 };
 
