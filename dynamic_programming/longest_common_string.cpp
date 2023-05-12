@@ -9,8 +9,8 @@
 
 #include <cassert>  /// for assert
 #include <string>   /// for std::string
-#include <utility>
-#include <vector>  /// for std::vector
+#include <utility>  /// for std::move
+#include <vector>   /// for std::vector
 
 /**
  * @brief computes the length of the longest common string created from input
