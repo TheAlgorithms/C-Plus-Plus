@@ -10,6 +10,7 @@
  * the exception of 2. This algorithm finds prime numbers using this information.
  * additional ways to solve the prime check problem:
  * https://cp-algorithms.com/algebra/primality_tests.html#practice-problems
+ * @author [Omkar Langhe](https://github.com/omkarlanghe)
  */
 
 #include <cassert>   /// for assert
