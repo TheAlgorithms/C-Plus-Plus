@@ -1,53 +1,110 @@
-#include <iosrteam>
-using namespace std;
+/**
+ * @file
+ * @brief contains the definition of the function longest_common_string_length
+ * @details
+ * the function longest_common_string_length computes the length
+ * of the longest common string which can be created of two input strings
+ * by removing characters from them
+ */
 
-int max(int a, int b) { return (a > b) ? a : b; }
+#include <cassert>  /// for assert
+#include <string>   /// for std::string
+#include <vector>   /// for std::vector
 
-int main() {
-    char str1[] = "DEFBCD";
-    char str2[] = "ABDEFJ";
-    int i, j, k;
-    int n = strlen(str1) + 1;
-    int m = strlen(str2) + 1;
-    // cout<<n<<" "<<m<<"\n";
-    int a[m][n];
+/**
+ * @brief computes the length of the longest common string created from input
+ * strings
+ * @details has O(str_a.size()*str_b.size()) time and memory complexity
+ * @param str_a first input string
+ * @param str_b second input string
+ * @returns the length of the longest common string which can be strated from
+ * str_a and str_b
+ */
+std::size_t longest_common_string_length(const std::string& str_a,
+                                         const std::string& str_b) {
+    const auto size_a = str_a.size();
+    const auto size_b = str_b.size();
+    std::vector<std::vector<std::size_t>> sub_sols(
+        size_a + 1, std::vector<std::size_t>(size_b + 1, 0));
 
-    for (i = 0; i < m; i++) {
-        for (j = 0; j < n; j++) {
-            if (i == 0 || j == 0)
-                a[i][j] = 0;
-
-            else if (str1[i - 1] == str2[j - 1])
-                a[i][j] = a[i - 1][j - 1] + 1;
-
-            else
-                a[i][j] = 0;
-        }
-    }
-
-    /*for(i=0;i<m;i++)
-        {
-            for(j=0;j<n;j++)
-                cout<<a[i][j]<<" ";
-            cout<<"\n";
-        }*/
-
-    int ma = -1;
-    int indi, indj;
-    for (i = 0; i < m; i++) {
-        for (j = 0; j < n; j++) {
-            if (a[i][j] > ma) {
-                ma = a[i][j];
-                indi = i;
-                indj = j;
+    const auto limit = static_cast<std::size_t>(-1);
+    for (std::size_t pos_a = size_a - 1; pos_a != limit; --pos_a) {
+        for (std::size_t pos_b = size_b - 1; pos_b != limit; --pos_b) {
+            if (str_a[pos_a] == str_b[pos_b]) {
+                sub_sols[pos_a][pos_b] = 1 + sub_sols[pos_a + 1][pos_b + 1];
+            } else {
+                sub_sols[pos_a][pos_b] = std::max(sub_sols[pos_a + 1][pos_b],
+                                                  sub_sols[pos_a][pos_b + 1]);
             }
         }
     }
 
-    cout << str1 << "\n";
-    cout << str2 << "\n";
+    return sub_sols[0][0];
+}
 
-    cout << "longest string size = " << ma /*<<" "<<indi<<" "<<indj*/ << "\n";
-    for (i = indi - 3; i < indi; i++) cout << str1[i];
-    cout << "\n";
+struct TestCase {
+    const std::string str_a;
+    const std::string str_b;
+    const std::size_t common_string_len;
+
+    TestCase(const std::string& in_str_a, const std::string& in_str_b,
+             const std::size_t in_common_string_len)
+        : str_a(in_str_a),
+          str_b(in_str_b),
+          common_string_len(in_common_string_len) {}
+};
+
+std::vector<TestCase> get_test_cases() {
+    return {TestCase("", "", 0),
+            TestCase("ab", "ab", 2),
+            TestCase("ab", "ba", 1),
+            TestCase("", "xyz", 0),
+            TestCase("abcde", "ace", 3),
+            TestCase("BADANA", "ANADA", 3),
+            TestCase("BADANA", "CANADAS", 3),
+            TestCase("a1a234a5aaaa6", "A1AAAA234AAA56AAAAA", 6),
+            TestCase("123x", "123", 3),
+            TestCase("12x3x", "123", 3),
+            TestCase("1x2x3x", "123", 3),
+            TestCase("x1x2x3x", "123", 3),
+            TestCase("x12x3x", "123", 3)};
+}
+
+void test_longest_common_string_length() {
+    for (const auto& cur_tc : get_test_cases()) {
+        assert(longest_common_string_length(cur_tc.str_a, cur_tc.str_b) ==
+               cur_tc.common_string_len);
+    }
+}
+
+void test_longest_common_string_length_is_symmetric() {
+    for (const auto& cur_tc : get_test_cases()) {
+        assert(longest_common_string_length(cur_tc.str_b, cur_tc.str_a) ==
+               cur_tc.common_string_len);
+    }
+}
+
+/**
+ * @brief reverses a given string
+ * @param in_str input string
+ * @return the string in which the characters appear in the reversed order as in
+ * in_str
+ */
+std::string reverse_str(const std::string& in_str) {
+    return {in_str.rbegin(), in_str.rend()};
+}
+
+void test_longest_common_string_length_for_reversed_inputs() {
+    for (const auto& cur_tc : get_test_cases()) {
+        assert(longest_common_string_length(reverse_str(cur_tc.str_a),
+                                            reverse_str(cur_tc.str_b)) ==
+               cur_tc.common_string_len);
+    }
+}
+
+int main() {
+    test_longest_common_string_length();
+    test_longest_common_string_length_is_symmetric();
+    test_longest_common_string_length_for_reversed_inputs();
+    return 0;
 }
