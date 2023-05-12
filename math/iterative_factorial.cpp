@@ -5,7 +5,6 @@
  * @author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
  * @description Calculates factorial iteratively.
- * https://en.wikipedia.org/wiki/Factorial
  *
  * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
  *       = n\times(n-1)!\f]
