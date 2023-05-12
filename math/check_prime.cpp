@@ -1,6 +1,4 @@
 /**
- * Copyright 2020 @author omkarlanghe
- *
  * @file
  * @brief
  * A simple program to check if the given number is a prime or not.
