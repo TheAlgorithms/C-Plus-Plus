@@ -16,9 +16,6 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
- * @return true if number is a prime
- * @return false if number is not a prime.
- */
 namespace math {
     bool is_prime(long long num) {
         /*!
