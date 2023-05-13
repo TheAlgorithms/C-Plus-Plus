@@ -16,6 +16,10 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
+/**
+ * @brief Mathematical algorithms
+ * @namespace
+ */
 namespace math {
     bool is_prime(long long num) {
         /*!
