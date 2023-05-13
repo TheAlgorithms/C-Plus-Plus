@@ -52,7 +52,7 @@ namespace math {
         }
         return true;
     }
-}
+}  // namespace math
 
 /**
  * @brief Self-test implementations
