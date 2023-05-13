@@ -21,6 +21,12 @@
  * @namespace
  */
 namespace math {
+    /**
+     * @brief Function to check if the given number is prime or not.
+     * @param num number to be checked.
+     * @return true if number is a prime
+     * @return false if number is not a prime.
+     */
     bool is_prime(long long num) {
         /*!
          * Reduce all possibilities of a number which cannot be prime with the first
