@@ -22,30 +22,32 @@
  * @return true if number is a prime
  * @return false if number is not a prime.
  */
-bool is_prime(long long num) {
-    /*!
-     * Reduce all possibilities of a number which cannot be prime with the first
-     * 3 if, else if conditionals. Example: Since no even number, except 2 can
-     * be a prime number and the next prime we find after our checks is 5,
-     * we will start the for loop with i = 5. then for each loop we increment
-     * i by +6 and check if i or i+2 is a factor of the number; if it's a factor
-     * then we will return false. otherwise, true will be returned after the
-     * loop terminates at the terminating condition which is i*i <= num
-     */
-    if (num <= 1) {
-        return false;
-    } else if (num == 2 || num == 3) {
-        return true;
-    } else if (num % 2 == 0 || num % 3 == 0) {
-        return false;
-    } else {
-        for (long long i = 5; i * i <= num; i = i + 6) {
-            if (num % i == 0 || num % (i + 2) == 0) {
-                return false;
+namespace math {
+    bool is_prime(long long num) {
+        /*!
+         * Reduce all possibilities of a number which cannot be prime with the first
+         * 3 if, else if conditionals. Example: Since no even number, except 2 can
+         * be a prime number and the next prime we find after our checks is 5,
+         * we will start the for loop with i = 5. then for each loop we increment
+         * i by +6 and check if i or i+2 is a factor of the number; if it's a factor
+         * then we will return false. otherwise, true will be returned after the
+         * loop terminates at the terminating condition which is i*i <= num
+         */
+        if (num <= 1) {
+            return false;
+        } else if (num == 2 || num == 3) {
+            return true;
+        } else if (num % 2 == 0 || num % 3 == 0) {
+            return false;
+        } else {
+            for (long long i = 5; i * i <= num; i = i + 6) {
+                if (num % i == 0 || num % (i + 2) == 0) {
+                    return false;
+                }
             }
         }
+        return true;
     }
-    return true;
 }
 
 /**
