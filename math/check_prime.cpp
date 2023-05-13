@@ -16,7 +16,6 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
-/**
  * @brief Function to check if the given number is prime or not.
  * @param num number to be checked.
  * @return true if number is a prime
