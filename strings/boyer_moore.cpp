@@ -164,7 +164,7 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
 
     while (index_position < str.length()) {
         size_t index_string = index_position;
-        size_t index_pattern = arg.pat.size() - 1;
+        int index_pattern = arg.pat.size() - 1;
 
         while (index_pattern >= 0 &&
                str[index_string] == arg.pat[index_pattern]) {
