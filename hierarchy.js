@@ -29,6 +29,7 @@ var hierarchy =
     [ "quadratic_probing::Entry", "da/dd1/structquadratic__probing_1_1_entry.html", null ],
     [ "FCFS< S, T, E >", "dd/dca/class_f_c_f_s.html", null ],
     [ "FenwickTree", "dd/d91/class_fenwick_tree.html", null ],
+    [ "backtracking::generate_parentheses", "df/de5/classbacktracking_1_1generate__parentheses.html", null ],
     [ "probability::geometric_dist::geometric_distribution", "da/d19/classprobability_1_1geometric__dist_1_1geometric__distribution.html", null ],
     [ "Graph", "da/d9a/class_graph.html", null ],
     [ "graph::Graph< T >", "dc/d61/classgraph_1_1_graph.html", [
@@ -60,8 +61,8 @@ var hierarchy =
     [ "data_structures::Node", "d9/d49/structdata__structures_1_1_node.html", null ],
     [ "data_structures::tree_234::Node", "dd/d40/classdata__structures_1_1tree__234_1_1_node.html", null ],
     [ "data_structures::trie_using_hashmap::Trie::Node", "d5/d12/structdata__structures_1_1trie__using__hashmap_1_1_trie_1_1_node.html", null ],
-    [ "node", "d5/da1/structnode.html", null ],
     [ "Node< ValueType >", "db/d8b/struct_node.html", null ],
+    [ "node", "d5/da1/structnode.html", null ],
     [ "operations_on_datastructures::circular_linked_list::Node", "da/d16/structoperations__on__datastructures_1_1circular__linked__list_1_1_node.html", null ],
     [ "operations_on_datastructures::inorder_traversal_of_bst::Node", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html", null ],
     [ "operations_on_datastructures::reverse_binary_tree::Node", "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html", null ],

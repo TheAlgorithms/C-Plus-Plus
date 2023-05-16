@@ -1,6 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node2" href="$d7/d89/double__factorial_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,5,153,31"/>
-<area shape="rect" id="node3" href="$d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="201,5,244,31"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="292,5,364,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,47,55,72"/>
+<area shape="rect" id="node2" href="$d7/d89/double__factorial_8cpp.html#a88ec9ad42717780d6caaff9d3d6977f9" title=" " alt="" coords="103,47,153,72"/>
+<area shape="rect" id="node3" href="$dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="201,47,244,72"/>
+<area shape="rect" id="node4" href="$df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160" title="wrapper interface" alt="" coords="292,39,450,80"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="528,5,648,31"/>
+<area shape="rect" id="node6" href="$df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" title="function that adds parenthesis to the string." alt="" coords="498,79,678,120"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="742,61,864,87"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="726,111,880,136"/>
 </map>

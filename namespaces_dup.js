@@ -5,9 +5,7 @@ var namespaces_dup =
     [ "activations", "d5/d39/namespaceactivations.html", null ],
     [ "atbash", "de/db3/namespaceatbash.html", null ],
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
-    [ "backtracking", "db/dc0/namespacebacktracking.html", [
-      [ "minimax", "db/dc0/namespacebacktracking.html#a78540bcb5ef3473b2348cbc34748ec50", null ]
-    ] ],
+    [ "backtracking", "db/dc0/namespacebacktracking.html", "db/dc0/namespacebacktracking" ],
     [ "base64_encoding", "d9/dc9/namespacebase64__encoding.html", null ],
     [ "bidirectional_dijkstra", "d4/d13/namespacebidirectional__dijkstra.html", null ],
     [ "binomial", "d7/d7a/namespacebinomial.html", null ],

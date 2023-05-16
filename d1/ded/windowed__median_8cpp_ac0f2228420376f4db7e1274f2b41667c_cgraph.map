@@ -1,11 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,153,55,179"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="120,5,240,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="103,55,257,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="144,104,216,130"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="113,153,247,179"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="140,203,220,228"/>
-<area shape="rect" id="node7" href="$d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="158,252,202,278"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="144,301,216,327"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="305,252,376,278"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,177,55,202"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="521,77,640,102"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="719,67,873,93"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/rand.html#" title=" " alt="" coords="134,127,206,153"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="103,177,237,202"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/random/srand.html#" title=" " alt="" coords="130,226,210,252"/>
+<area shape="rect" id="node7" href="$dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="148,275,192,301"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/chrono/c/time.html#" title=" " alt="" coords="134,325,206,350"/>
+<area shape="rect" id="node8" href="$df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160" title="wrapper interface" alt="" coords="285,150,442,191"/>
+<area shape="rect" id="node9" href="$df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" title="function that adds parenthesis to the string." alt="" coords="490,150,671,191"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="735,158,857,184"/>
 </map>

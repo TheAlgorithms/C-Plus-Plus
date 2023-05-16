@@ -1,8 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,105,55,131"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atof.html#" title=" " alt="" coords="103,5,172,31"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atoi.html#" title=" " alt="" coords="103,55,172,80"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="220,156,291,182"/>
-<area shape="rect" id="node5" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="118,156,157,182"/>
-<area shape="rect" id="node6" href="$d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="116,205,159,231"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,104,55,130"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atof.html#" title=" " alt="" coords="104,5,173,31"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/byte/atoi.html#" title=" " alt="" coords="104,55,173,80"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="103,104,174,130"/>
+<area shape="rect" id="node5" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="119,153,158,179"/>
+<area shape="rect" id="node6" href="$dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d" title="Self&#45;test implementations." alt="" coords="117,203,160,228"/>
+<area shape="rect" id="node7" href="$df/de5/classbacktracking_1_1generate__parentheses.html#af39c03d80ce0ba9fbf659b420980d160" title="wrapper interface" alt="" coords="222,195,379,236"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/clear.html#" title=" " alt="" coords="458,161,577,187"/>
+<area shape="rect" id="node9" href="$df/de5/classbacktracking_1_1generate__parentheses.html#ac1489edd65374f22fe04851051f0a2ec" title="function that adds parenthesis to the string." alt="" coords="427,235,608,276"/>
+<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="672,217,794,243"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="656,267,810,292"/>
 </map>

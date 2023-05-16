@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "backtracking", "db/dc0/namespacebacktracking.html", [
+      [ "generate_parentheses", "df/de5/classbacktracking_1_1generate__parentheses.html", "df/de5/classbacktracking_1_1generate__parentheses" ]
+    ] ],
     [ "ciphers", "d6/d4e/namespaceciphers.html", [
       [ "elliptic_curve_key_exchange", "df/d6b/namespaceciphers_1_1elliptic__curve__key__exchange.html", [
         [ "Point", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html", "d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point" ]
@@ -180,8 +183,8 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", null ],
     [ "mst", "d1/d77/structmst.html", null ],
-    [ "node", "d5/da1/structnode.html", null ],
     [ "Node", "db/d8b/struct_node.html", null ],
+    [ "node", "d5/da1/structnode.html", null ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", null ],
     [ "Queue", "dc/db5/struct_queue.html", null ],
