@@ -4,6 +4,7 @@
  * @brief A balanced binary search tree (BST) on the basis of binary search tree
  * and heap: the [Treap](https://en.wikipedia.org/wiki/Treap) algorithm
  * implementation
+ *
  * @details
  * Implementation of the treap data structre
  *
